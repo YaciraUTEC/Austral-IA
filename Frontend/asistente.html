@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Austral Asistente</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="chat.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="assets\logo1.png" alt="Austral Logo" class="logo">
+      <button class="new-chat">
+        <span class="icon">+</span>
+        <span class="text">Nueva conversación</span>
+      </button>
+
+      <div class="section">
+        <h4>Reciente</h4>
+        
+      </div>
+
+      <ul class="menu">
+        <li class="menu-item active">🤖 Asistente</li>
+      </ul>
+      
+      <div class="top-menu">
+        <ul class="menu">
+          <li>❓ Ayuda</li>
+          <li>⚙️ Ajustes</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="menu-icon">☰</div>
+        <div>
+          <p class="gpt-title">GPT-4</p>
+          <p class="gpt-sub">GPT-4 Omni</p>     
+        </div>
+        <div class="user">Bienvenido a Austral IA 👤</div>
+      
+      </header>
+
+      <div class="welcome">
+        <h1><span>Hola Yacira Nicol</span></h1>
+        <p class="subtitle">Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</p>
+        <p class="description">Consulta rápida acerca de proyectos de energía.</p>
+      </div>
+
+      <div id="chat-messages" class="chat-container">
+      </div>
+
+      <form class="chat-input" id="chat-form">
+        <input type="text" id="user-query" placeholder="🌐 Escribe tu consulta" />
+        <button type="submit" id="send-button">
+            <span class="button-icon">➤</span>
+        </button>
+    </form>
+    </main>
+  </div>
+</body>
+</html>

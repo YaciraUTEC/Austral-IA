@@ -1,0 +1,328 @@
+:root {
+  --primary-color: #063970;
+  --secondary-color: #4882ca;
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.top-menu {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.top-menu .menu li {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.top-menu .menu li:hover {
+  opacity: 1;
+  background-color: var(--secondary-color);
+}
+
+/* Eliminamos las clases .bottom-menu que ya no necesitamos */
+.bottom-menu {
+  margin-top: auto; /* Empuja el menú hacia abajo */
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bottom-menu .menu li {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.bottom-menu .menu li:hover {
+  opacity: 1;
+}
+.logo {
+  width: 100%;
+  max-width: 160px;
+  margin-bottom: 20px;
+}
+
+.new-chat {
+  background-color: #5a6b7e7c;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.section h4 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.menu li:hover {
+  background-color: var(--secondary-color);
+}
+
+.menu-item.active {
+  background-color: var(--secondary-color);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.gpt-title {
+  font-weight: 700;  /* Hace el texto negrita */
+  font-size: 1.2em;  /* Aumenta ligeramente el tamaño */
+  color: #333333;  /* Usa el color primario */
+  margin-bottom: 4px;
+}
+
+.gpt-sub {
+  font-size: 0.9em;
+  color: #666;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.welcome {
+  text-align: center;
+  padding: 100px 20px 60px;  /* Aumentamos el padding superior */
+  max-width: 800px;
+  margin: 0 auto;  /* Centra el contenedor */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;  /* Asegura que el contenedor tenga una altura mínima */
+}
+
+.welcome h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(45deg, #063970, #800080);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.welcome h1 span {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.welcome .subtitle {
+  font-size: 1.2em;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  text-align: center;
+  max-width: 600px;  /* Limita el ancho del texto */
+}
+
+.welcome .description {
+  color: #666;
+  text-align: center;
+  max-width: 500px;  /* Limita el ancho del texto */
+}
+
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 900px;  /* Limita el ancho máximo */
+  margin: 0 auto;    /* Centra el contenedor */
+  width: 100%;       /* Asegura que tome el ancho disponible */
+}
+
+.mensaje {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;  /* Aumentamos el padding horizontal */
+  border-radius: 8px;
+  max-width: 80%;      /* Ajustamos el ancho máximo de los mensajes */
+  margin: 0 40px;      /* Añadimos margen a los lados */
+}
+
+.chat-input {
+  padding: 20px;
+  border-top: 1px solid #9c9898;
+  display: flex;
+  gap: 10px;
+  max-width: 900px;    /* Mismo ancho máximo que el contenedor */
+  margin: 0 auto;      /* Centra el input */
+  width: 100%;         /* Asegura que tome el ancho disponible */
+}
+
+
+.mensaje.usuario {
+  margin-left: auto;
+  background-color: #0e3466e7;
+  color: white;
+}
+
+.mensaje.asistente {
+  margin-right: auto;
+  background-color: #f0f0f0;
+}
+
+.mensaje-icono {
+  font-size: 1.2em;
+  margin-top: 2px;  /* Ajusta la posición vertical del icono */
+  line-height: 1;   /* Evita espacio extra alrededor del emoji */
+  display: flex;    /* Asegura que el icono se alinee correctamente */
+  align-items: center;
+  justify-content: center;
+  min-width: 24px; /* Ancho fijo para mantener alineación */
+}
+.mensaje p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-right: auto;
+  min-width: 52px;
+  width: fit-content;
+}
+
+.loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.chat-input {
+  padding: 20px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #f8f8f8;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #807f7fc5;
+  color: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.chat-input button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.chat-input button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.button-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.chat-input button.loading {
+  background-color: #2f2f2f;
+}
+
+.chat-input button.loading .button-icon {
+  content: "⏹";
+  animation: pulse 1.5s infinite;
+}
+
+
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
