@@ -1,13 +1,13 @@
-from fastapi import APIRouter, Body
+from fastapi import APIRouter
+from pydantic import BaseModel
 from austral.services.asistente import responder_asistente
 
 router = APIRouter()
 
+class PreguntaRequest(BaseModel):
+    pregunta: str
+
 @router.post("/asistente")
-def chat(pregunta: str = Body(..., embed=True)):
-    try:
-        respuesta = responder_asistente(pregunta)
-        return {"respuesta": respuesta}
-    except Exception as e:
-        print("❌ Error en /asistente:", str(e))
-        return {"error": str(e)}
+def preguntar_al_asistente(req: PreguntaRequest):
+    respuesta = responder_asistente(req.pregunta)
+    return {"respuesta": respuesta}

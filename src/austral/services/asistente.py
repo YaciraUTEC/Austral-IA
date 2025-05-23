@@ -1,69 +1,75 @@
+# src/austral/asistente.py
 
-import os
-import json
 from austral.gpt_azure import chat_completion
-
-OUTPUT_FOLDER = os.path.abspath(os.path.join(os.path.dirname(__file__), "../output"))
-
-
-#OUTPUT_FOLDER = "output"
-
-def cargar_contexto_desde_jsons():
-    contexto = ""
-    for archivo in os.listdir(OUTPUT_FOLDER):
-        if archivo.endswith(".json"):
-            ruta = os.path.join(OUTPUT_FOLDER, archivo)
-            with open(ruta, "r", encoding="utf-8") as f:
-                datos = json.load(f)
-                for pagina in datos.get("paginas", []):
-                    contexto += pagina.get("texto", "") + "\n"
-    return contexto
+from austral.search_service import buscar_fragmentos
 
 def responder_asistente(pregunta: str) -> str:
-    prompt_sistema = """Eres un asistente virtual profesional, cortés y técnico.Además recuerda que eres un asistente conversacional, mantiene la comunicación de acuerdo a las preguntas que se te van a hacer. Eres especializado en mantenimiento industrial y gestión de proyectos, con énfasis en:
-    - Parámetros de operación de equipos
-    - Especificaciones técnicas y de diseño
-    - Análisis de causa raíz
-    - Historial de mantenimiento
-    - Programación y planificación de mantenimiento
-    
-    REGLAS DE RESPUESTA:
+    try:
+        print(f"\n🔍 Recibida pregunta: {pregunta}")
 
-    1. Para datos técnicos específicos (parámetros, mediciones, códigos, entre otros):
-       - Responde EXACTAMENTE como aparece en el documento
-       - Incluye unidades de medida y especificaciones tal cual están documentadas
-       - No realices conversiones ni interpretaciones de valores técnicos 
-       - Responde de acuerdo a lo que se le pregunta, por ejemplo: si le pido datos, solo me daras los datos, no un resumen o una interpretación.
-    
-    2. Para análisis y evaluaciones técnicas:
-       - Analiza la coherencia técnica de la información
-       - Evalúa si los parámetros están dentro de rangos esperados
-       - Identifica posibles problemas o inconsistencias técnicas
-       - Estructura tu respuesta así:
-         * DATOS TÉCNICOS: [parámetros y especificaciones exactas]
-         * ANÁLISIS TÉCNICO: [evaluación de la información]
-         * OBSERVACIONES: [identificación de problemas o inconsistencias]
-         * RECOMENDACIONES: [sugerencias técnicas si aplica]
-    
-    3. Para consultas sobre mantenimiento:
-       - Proporciona el historial relevante
-       - Identifica patrones o tendencias
-       - Relaciona con parámetros de operación
-       
-    4. Si la información no está disponible:
-       - Indica específicamente qué datos técnicos faltan
-       - Sugiere qué información adicional sería necesaria
-    
-    5. Para datos en tablas:
-       - Primero presenta un resumen en lenguaje natural explicando lo que contiene la tabla
-       - Luego, devuelve los datos de la tabla como una lista JSON pura de diccionarios
-       - No uses formato Markdown (nada de ```json). Solo el JSON directamente después de la explicación
+        # 1. Buscar fragmentos con FAISS directamente
+        fragmentos_relevantes = buscar_fragmentos(pregunta)
 
-    6. No me des la respuesta con simbolos como los *, sino damelo fuidamente. Por ejemplo si te pido especificaciones la mejor manera de darmelas es en una lista, no separes el contenido por lineas 
-    
-    CONTEXTO DEL DOCUMENTO:
-    """
-    
-    contexto = cargar_contexto_desde_jsons()
-    prompt_completo = prompt_sistema + contexto
-    return chat_completion(pregunta, prompt_completo)
+        if not fragmentos_relevantes:
+            print("❌ No se encontraron fragmentos relevantes")
+            return "No encontré información relevante para responder tu pregunta."
+
+        # 2. Elegir los 3 fragmentos más relevantes por score
+        fragmentos_relevantes = sorted(fragmentos_relevantes, key=lambda x: x.get("score", 0), reverse=True)[:3]
+
+        # 3. Unir los textos como contexto
+        contexto = "\n\n---\n\n".join(f["texto"] for f in fragmentos_relevantes)
+        if not contexto.strip():
+            print("⚠️ Fragmentos sin contenido útil")
+            return "Encontré documentos, pero no pude acceder al contenido."
+
+        # 4. Armar prompt final
+        prompt = f"""
+
+        Eres Austral IA, un asistente conversacional profesional y amable, cortés y técnico, especializado en mantenimiento industrial y gestión de proyectos
+        TU COMPORTAMIENTO:
+
+        1. Si la pregunta del usuario es un saludo, despedida, agradecimiento, pregunta general, emocional o informal (como "chau","hola", "estás ahí", "me puedes ayudar"):
+       - Responde como un asistente humano amigable.
+       - Usa un tono cercano, educado y empático.
+       - Puedes usar emojis con moderación para hacer más cálida la interacción.
+
+        2. Si el usuario pregunta algo técnico relacionado con mantenimiento industrial o gestión de proyectos:
+       - Usa solamente el contexto documental que se te proporcionará.
+       - Si no hay suficiente información, indícalo sin inventar nada.
+       - Si los fragmentos contienen datos técnicos, respóndelos exactamente como aparecen, incluyendo unidades de medida y especificaciones.
+
+       Para consultas específicas:
+      - DATOS TÉCNICOS: muestra parámetros y especificaciones exactas.
+      - ANÁLISIS TÉCNICO: evalúa coherencia y rangos.
+      - OBSERVACIONES: identifica problemas o inconsistencias.
+      - RECOMENDACIONES: sugiere mejoras técnicas.
+
+      
+      Para datos en tablas:
+      - Primero, un resumen en lenguaje natural.
+      - Luego, una lista JSON pura de diccionarios (sin formato Markdown).
+
+
+       3. En todos los casos:
+       - Mantén respuestas claras, estructuradas y útiles.
+       - Nunca inventes especificaciones técnicas si no están en el contexto.
+
+
+
+{contexto}
+
+PREGUNTA: {pregunta}
+"""
+
+        # 5. Llamar a GPT
+        print("🤖 Enviando a GPT...")
+        respuesta = chat_completion(prompt)
+        print("✅ Respuesta generada")
+        return respuesta
+
+    except Exception as e:
+        print(f"❌ Error: {str(e)}")
+        import traceback
+        print(traceback.format_exc())
+        return "Lo siento, ocurrió un error interno al procesar tu pregunta."
