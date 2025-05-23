@@ -27,8 +27,8 @@ def chat_completion(prompt: str, contexto: str = "") -> str:
                     "content": prompt
                 }
             ],
-            temperature=0.3,  # Aumentamos ligeramente para permitir más análisis crítico
-            max_tokens=1000  # Aumentamos para respuestas más detalladas
+            temperature=0.0,  # Aumentamos ligeramente para permitir más análisis crítico
+            max_tokens=600  # Aumentamos para respuestas más detalladas
         )
         return response.choices[0].message.content
     except Exception as e:
