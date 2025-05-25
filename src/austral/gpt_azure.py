@@ -12,6 +12,7 @@ client = AzureOpenAI(
 )
 
 deployment_name = os.getenv("AZURE_OPENAI_DEPLOYMENT")
+embedding_deplyment_name = os.getenv("AZURE_EMBEDDING_DEPLOYMENT")
 
 def chat_completion(prompt: str, contexto: str = "") -> str:
     try:
@@ -27,9 +28,22 @@ def chat_completion(prompt: str, contexto: str = "") -> str:
                     "content": prompt
                 }
             ],
-            temperature=0.0,  # Aumentamos ligeramente para permitir más análisis crítico
-            max_tokens=600  # Aumentamos para respuestas más detalladas
+            temperature=0.1,  # Aumentamos ligeramente para permitir más análisis crítico
+            max_tokens=1000  # Aumentamos para respuestas más detalladas
         )
         return response.choices[0].message.content
     except Exception as e:
         return f"Error al procesar la solicitud: {str(e)}"
+    
+
+def embed_text(text: str) -> list[list[float]]:
+    try:
+        response = client.embeddings.create(
+            model=embedding_deplyment_name,
+            input=text
+        )
+        return response.data[0].embedding
+    except Exception as e:
+        raise RuntimeError(f"Error al generar embedding: {str(e)}")
+
+

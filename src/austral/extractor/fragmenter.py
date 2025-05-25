@@ -1,19 +1,8 @@
 import os
 from PyPDF2 import PdfReader, PdfWriter
 
-def fragmentar_pdf(path_pdf: str, output_dir: str, max_paginas: int = 50) -> list:
-    """
-    Divide un PDF en fragmentos de hasta `max_paginas` páginas.
-    Devuelve una lista de metadatos de fragmento.
-
-    Parámetros:
-    - path_pdf: ruta del archivo PDF original.
-    - output_dir: carpeta donde guardar los fragmentos.
-    - max_paginas: máximo de páginas por fragmento (por defecto 50).
-
-    Retorna:
-    - lista de diccionarios con metadatos de cada fragmento.
-    """
+def fragmentar_pdf(path_pdf: str, output_dir: str, max_paginas: int = 10) -> list:
+ 
     reader = PdfReader(path_pdf)
     total_paginas = len(reader.pages)
     fragmentos = []
@@ -21,7 +10,6 @@ def fragmentar_pdf(path_pdf: str, output_dir: str, max_paginas: int = 50) -> lis
     document_id = os.path.basename(path_pdf).replace(".pdf", "")
 
     if total_paginas <= max_paginas:
-        # Documento pequeño: único fragmento sin crear nuevo archivo
         fragment_id = document_id
         fragment_path = path_pdf
         fragmentos.append({
