@@ -1,5 +1,3 @@
-# src/austral/asistente.py
-
 from austral.gpt_azure import chat_completion
 from austral.search_service import buscar_fragmentos
 
@@ -30,7 +28,7 @@ Reglas de comportamiento:
 2. Si la respuesta no está textual pero se puede deducir, hazlo de forma lógica, sin inventar.
 3. Si no hay forma razonable de responder, indícalo claramente sin agregar información externa.
 4. Para preguntas emocionales, saludos o agradecimientos, responde de forma cálida, profesional y empática.
-5. Para tablas, proporciona primero un resumen breve en texto natural y luego una lista JSON de diccionarios.
+5. Para tablas, proporciona primero un resumen breve en texto natural y luego una tabla estructurada y dividida con lineas. 
 
 ---
 

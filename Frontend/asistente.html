@@ -7,6 +7,7 @@
   <script src="chat.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <body>
   <div class="container">
     <aside class="sidebar">
@@ -22,7 +23,10 @@
       </div>
 
       <ul class="menu">
-        <li class="menu-item active">🤖 Asistente</li>
+        <li class="menu-item active"><span class="menu-icono"><img src="assets/IA.png" alt="  Asistente" class="icono-imagen" />
+  </span>
+  Asistente
+</li>
       </ul>
       
       <div class="top-menu">
@@ -54,7 +58,7 @@
       </div>
 
       <form class="chat-input" id="chat-form">
-        <input type="text" id="user-query" placeholder="🌐 Escribe tu consulta" />
+        <input type="text" id="user-query" placeholder="🌐︎  Escribe tu consulta" />
         <button type="submit" id="send-button">
             <span class="button-icon">➤</span>
         </button>
