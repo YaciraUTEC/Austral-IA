@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const newChatBtn = document.querySelector('.new-chat');
     const sendButton = document.getElementById('send-button');
     const buttonIcon = sendButton.querySelector('.button-icon');
+  const sidebar = document.querySelector('.sidebar');
+  const menuIcon = document.querySelector('.menu-icon');
+  
+  menuIcon.style.cursor = 'pointer';
+
+ 
+  menuIcon.addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+  });
+
 
     let controladorAbort = null;
 
@@ -135,16 +145,34 @@ document.addEventListener('DOMContentLoaded', () => {
     chatForm.addEventListener('submit', manejarSubmit);
 
     newChatBtn.addEventListener('click', () => {
-        chatMessages.innerHTML = '';
-        const welcome = document.createElement('div');
-        welcome.className = 'welcome';
-        welcome.innerHTML = `
-            <h1><span>Hola Yacira Nicol</span></h1>
-            <p class="subtitle">Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</p>
-            <p class="description">Consulta rápida acerca de proyectos de energía.</p>
-        `;
-        chatMessages.parentElement.insertBefore(welcome, chatMessages);
-    });
+    // Verifica si ya no hay mensajes (chat vacío)
+    const isChatEmpty = chatMessages.children.length === 0;
+
+    // Verifica si el mensaje de bienvenida ya está presente
+    const welcomeExists = document.querySelector('.welcome') !== null;
+
+    if (isChatEmpty && welcomeExists) {
+        // No hacer nada si ya está el mensaje de bienvenida y no hay mensajes
+        return;
+    }
+
+    // Si hay mensajes o no hay mensaje de bienvenida, limpiar y crear uno nuevo
+    chatMessages.innerHTML = '';
+
+    // Remover mensaje de bienvenida anterior si existe (por seguridad)
+    const existingWelcome = document.querySelector('.welcome');
+    if (existingWelcome) existingWelcome.remove();
+
+    // Crear nuevo mensaje de bienvenida
+    const welcome = document.createElement('div');
+    welcome.className = 'welcome';
+    welcome.innerHTML = `
+        <h1><span>Hola Yacira Nicol</span></h1>
+        <p class="subtitle">Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</p>
+        <p class="description">Consulta rápida acerca de proyectos de energía.</p>
+    `;
+    chatMessages.parentElement.insertBefore(welcome, chatMessages);
+});
 
     chatInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter' && !e.shiftKey) {

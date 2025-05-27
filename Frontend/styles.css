@@ -20,10 +20,18 @@ body {
 .container {
   display: flex;
   height: 100vh;
+  width: 100%;
+  overflow: hidden; /* evitar scroll horizontal */
 }
 
+.user {
+  margin-left: auto; /* Empuja el elemento hacia la derecha */
+  padding-left: 20px; /* Ajusta si quieres más espacio a la izquierda */
+}
+
+
 .sidebar {
-  width: 260px;
+  width: 280px;
   background-color: var(--primary-color);
   color: white;
   padding: 20px;
@@ -31,8 +39,10 @@ body {
   flex-direction: column;
   gap: 20px;
   position: relative;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  flex-shrink: 0; 
 }
-
 .top-menu {
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -64,6 +74,9 @@ body {
   width: 100%;
   max-width: 160px;
   margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: auto;
+
 }
 
 .new-chat {
@@ -78,6 +91,7 @@ body {
   gap: 10px;
   width: 100%;
   font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .section h4 {
@@ -88,6 +102,7 @@ body {
 
 .menu {
   list-style: none;
+
 }
 
 .menu li {
@@ -120,10 +135,13 @@ body {
 }
 
 .main {
-  flex: 1;
+  flex: 5;
   display: flex;
+  transition: margin-left 0.3s ease;
   flex-direction: column;
   height: 100vh;
+  padding: 20px;
+  overflow-y: auto;
 }
 
 .header {
@@ -131,8 +149,47 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #908c8cbf;
+  background-color: rgba(255, 255, 255, 0.616);
+  width: 100%;
+   
 }
+
+
+
+.sidebar {
+  width: 280px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 60px !important; /* fuerza ancho pequeño */
+}
+
+.sidebar.collapsed .new-chat,
+.sidebar.collapsed .menu li,
+.sidebar.collapsed .section h4,
+.sidebar.collapsed .logo {
+  /* Oculta el texto y reduce tamaño logo */
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: -9999px;
+  width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.sidebar.collapsed .logo {
+  width: 40px !important;
+  max-width: 40px !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block !important;
+  margin-left: auto ;
+  margin-right: auto;
+}
+
 
 .gpt-title {
   font-weight: 700;
@@ -210,7 +267,7 @@ body {
   flex: 1;
   padding: 12px 16px;
   border: 1px solid #f8f8f8;
-  border: none;           /* ✅ Elimina el borde */
+  border: none;        
   outline: none; 
   border-radius: 8px;
   font-size: 14px;
@@ -263,14 +320,14 @@ body {
   margin-left: auto;
   background-color: #2d7fe4; /* Azul tipo iOS */
   color: rgb(239, 239, 239) !important;
-  padding: 10px 16px;
+  padding: 6px 16px;
   border-radius: 18px 18px 4px 18px;
   display: flex;                   /* 🔁 Cambiado de inline-block a flex */
   align-items: center;            /* ✅ Centrado vertical */
   justify-content: center;        /* ✅ Centrado horizontal */
   max-width: 50%;
   min-width: 20px;
-  min-height: 38px;               /* ✅ Asegura altura para centrado */
+  min-height: 20px;               /* ✅ Asegura altura para centrado */
   font-size: 14px;
   line-height: 1.4;
   word-wrap: break-word;
@@ -285,7 +342,7 @@ body {
   padding: 2px 20px;
   border-radius: 4px 18px 18px 18px;;
   position: relative;
-  max-width: 65%;
+  max-width: 80%;
   display:flex;   
   align-items: flex-start;                /* 🔁 Cambiado de inline-block a flex */
   font-family:'Inter', sans-serif;
