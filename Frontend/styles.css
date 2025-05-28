@@ -320,19 +320,15 @@ body {
   margin-left: auto;
   background-color: #2d7fe4; /* Azul tipo iOS */
   color: rgb(239, 239, 239) !important;
-  padding: 6px 16px;
+  padding: 5px 12px; /* Espaciado interno ajustado */
   border-radius: 18px 18px 4px 18px;
-  display: flex;                   /* 🔁 Cambiado de inline-block a flex */
-  align-items: center;            /* ✅ Centrado vertical */
-  justify-content: center;        /* ✅ Centrado horizontal */
-  max-width: 50%;
-  min-width: 20px;
-  min-height: 20px;               /* ✅ Asegura altura para centrado */
+  display: inline-block; /* Cambia a inline-block para ajustar al contenido */
+  max-width: 75%; /* Limita el ancho máximo */
+  word-wrap: break-word; /* Permite que las palabras largas se ajusten */
+  word-break: break-word; /* Rompe palabras largas si es necesario */
   font-size: 14px;
   line-height: 1.4;
-  word-wrap: break-word;
-  word-break: break-word;
-  text-align: center;
+  text-align: left;
 }
 
 
