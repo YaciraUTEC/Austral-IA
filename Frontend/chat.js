@@ -114,7 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
         chatInput.disabled = true;
 
         try {
-            const response = await fetch('http://localhost:8000/api/asistente', {
+            const response = await fetch('https://assistant-australia-dmangjedg6adffcu.brazilsouth-01.azurewebsites.net/api/asistente', {
+
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ user_id: userId, pregunta }), // Enviamos user_id también
