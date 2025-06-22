@@ -510,7 +510,45 @@ body {
 .loading-dots .dot:nth-child(3) {
   animation-delay: 0.4s;
 }
+/* Personaliza el scroll horizontal dentro del contenedor */
+.tabla-scrollable {
+  overflow-x: auto;
+  max-width: 100%;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
 
+.tabla-scrollable::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tabla-scrollable::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 4px;
+}
+
+.tabla-scrollable::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.mensaje-contenido table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: 100%;
+  font-size: 0.95em;
+  background: #ffffffad;
+}
+
+.mensaje-contenido th {
+  background-color: #bdbbbb78 !important; /* color de fondo para encabezado */
+  font-weight: 600;
+}
+.mensaje-contenido td {
+  border: 1px solid #bbb;
+  padding: 8px 10px;
+  text-align: center;
+}
 @keyframes dotFlashing {
   0% { opacity: 0; }
   50% { opacity: 1; }

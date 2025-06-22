@@ -1,0 +1,529 @@
+{
+  "archivo": "Evaluación AUSTRAL PLANTA COISHCO_p11_20.pdf",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Evaluación del Sistema de vapor y Condensado Austral Planta Coishco\nAustral Group S.A.A.\nCAMBIOS GENERADOS DEBIDO AL REEMPLAZO DE LAS 4 COCINAS\nEXISTENTES\nActualmente se encuentran en proceso de fabricación 4 cocinas de 60 Ton/hr que\nreemplazaran las cocinas existentes, todas estas cocinas consumen vapor tanto por\nchaqueta como por rotores, esta condición de por sí ya genera una condición\noperacional diferente a las cocinas 1 y 2 actuales, las cuales operan con condensado\nde los Secadores Rotatubos Enercom, por lo mismo, pasaremos a enumerar que\ncambios genera en el reemplazo de las cocinas en el sistema de vapor y condensado\nactual:\n· Reemplazo de Cocinas 1 y 2: trae como consecuencia el dejar de usar\ncondensado en las chaquetas proveniente de los Secadores Rotatubos 1 y\n2, como consecuencia se dispone de más condensado para generar más\nvapor flash que será empleado en las chaquetas de las nuevas cocinas\n· Se aprovechará el sistema de flash actual a fin de incorporarlo como fuente\nde alimentación de vapor para las nuevas cocinas.\n· Incorporar un nuevo sistema reductor de presión de vapor que se empleará\nen arranques de la planta cuando no se disponga de vapor flash\n(adicionalmente este sistema también servirá para ecualizar el tanque\ngenerador de vapor flash principal)\n· Redimensionar el sistema de distribución de vapor flash a las chaquetas de\nlas nuevas cocinas\n· Se dispone de más condensado tanto en el tanque flash (proveniente de los\nsecadores rotatubos 1 y 2 como de las chaquetas de las cocinas 1 y 2) para\nser usado en los calentadores de caldos\n· Se dispone del condensado de los rotores 2 a 4.5 Bar que será empleado\npara generar vapor flash en calentadores de espuma (Nueva fuente de\ncalentamiento)\n· Se genera un nuevo sistema de distribución de vapor flash que alimentará a\ncalentadores de espuma\n· A fin de optimizar la instalación actual se propone realizar modificaciones que\ngeneren un mínimo impacto, operacional y económico. Esto implica:\nRedimensionamiento de tanques flash existentes, redimensionamiento de\ntuberías de distribución de vapor y condensado, implementación de nuevo\nsistema de vapor flash, implementación de nuevo sistema de recuperación\nde condensado, etc.\nHMF\nHMF Sistemas y Control de Fluidos EIRL\nJr. José Gregorio Paredes 2746 - Pueblo Libre Teléfono: +51 1758-8890",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Evaluación del Sistema de vapor y Condensado Austral Planta Coishco\nAustral Group S.A.A.\nConsumo de Vapor en nuevas cocinas\nDe acuerdo a los datos brindados por Cometal tenemos:\nRPM\nPRESION\nDE VAPOR\n(Bar)\nKg/hora\nVapor\nrequerido\ncapacidad\nTM de\nMP/HORA\n35\n2.5 Bar\n5774\n37\n4.5 Bar\n5904\n37\n6.5 Bar\n6017\n37\n55\n2.5 Bar\n9051\n58\n4.5 Bar\n9255\n58\n6.5 Bar\n9432\n58\n65\n2.5 Bar\n10611\n68\n4.5Bar\n10850\n68\n6.5Bar\n11058\n68\nPara el caso se plantea el escenario que las cocinas operaran en un rango de\npresión de 2.5 a 4.5 Bar, considerando que la planta actualmente tiene licencia\npara procesar 160 TM /hr se plantea el escenario que todas trabajen a 40 TM o\nque si por algún motivo una línea deja de procesar se tendría un escenario en\nque 3 cocinas procesen las 160 TM que se requieren, por lo tanto, considerando\nesto último es preferible dimensionar el sistema de transporte de vapor y\ncondensado con la máxima capacidad requerida en cada cocina a 60 TM, ya en\nproducción se regularán las rpm para que procesen los 40 TM que se quieran\ncuando se dispongan de todos los equipos.\nEl consumo de vapor estaría distribuido de manera similar a las cocinas 3 y 4\nexistentes, es decir, con vapor flash a 1.5 Bar (Se puede incrementar la presión)\npor las chaquetas y con vapor reducido por los rotores en el rango de 2.5 hasta\n4.5 Bar. Considerando esto tenemos:\nConsumo de la cocina procesando 60 TM: 9575 Kg/hr\nCapacidad de línea de distribución hacia rotor: 7180 Kg/hr\nCapacidad de línea de vapor de 1.5 bar a chaquetas: 2395 Kg/hr\nEs decir, las tuberías se dimensionan para la capacidad indicada y si las 4\ncocinas están operando a la vez al regular las revoluciones, se limita el consumo\nde vapor para la carga procesada (40 TPM), en este caso sólo debemos\nasegurarnos de que el vapor se alimente a la presión requerida.\nA fin de asegurarnos que las cocinas sean abastecidas con vapor en cualquier\ncondición de carga los rotores serán abastecidos con las líneas de vapor\nexistentes (2 de 10\" existente, con una línea sería suficiente) y las chaquetas\nserán abastecidas con vapor flash ( cuando no se disponga de vapor flash las\nchaquetas se abastecerán de vapor con las 2 estaciones reductoras de\necualización, actualmente existe una y la siguiente se tiene que implementar con\nHMF\nHMF Sistemas y Control de Fluidos EIRL\nJr. Jose Gregorio Paredes 2746 - Pueblo Libre Teléfono: +51 1758-8890",
+      "tablas": [
+        [
+          [
+            "RPM",
+            "PRESION DE VAPOR (Bar)",
+            "Kg/hora Vapor requerido",
+            "capacidad TM de MP/HORA"
+          ],
+          [
+            "35",
+            "2.5 Bar",
+            "5774",
+            "37"
+          ],
+          [
+            "4.5 Bar",
+            "5904",
+            "37"
+          ],
+          [
+            "6.5 Bar",
+            "6017",
+            "37"
+          ],
+          [
+            "55",
+            "2.5 Bar",
+            "9051",
+            "58"
+          ],
+          [
+            "4.5 Bar",
+            "9255",
+            "58"
+          ],
+          [
+            "6.5 Bar",
+            "9432",
+            "58"
+          ],
+          [
+            "65",
+            "2.5 Bar",
+            "10611",
+            "68"
+          ],
+          [
+            "4.5Bar",
+            "10850",
+            "68"
+          ],
+          [
+            "6.5Bar",
+            "11058",
+            "68"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Evaluación del Sistema de vapor y Condensado Austral Planta Coishco\nAustral Group S.A.A.\nlas modificaciones del sistema de generación de vapor flash a partir de la\ninstalación de las 4 cocinas Cometal).\nModificaciones del sistema actual de vapor flash para adecuarlo a las\nnuevas necesidades de la planta (Reemplazo de cocinas).\nYa anteriormente pudimos ver que se dispone de entre 2542 Kg/hr y 3106 Kg/hr\nde vapor flash proveniente de 1 Secador Rotatubos Fima, 3 Secadores Rotadisk\ny los Rotores de las cocinas 3 y 4, con el reemplazo de las cocinas el nuevo\nescenario de generación de vapor flash sería:\n01 Secador Rotatubos Fima: 11475 kg/hr @ 90 psi\n02 Secadores Rotatubos Enercom: 20250 Kg/hr @ 90 psi\n03 Secadores Rotadisk: 24375 kg/hr @ 5.5 Bar\nLa Incorporación del condensado de los rotatubos Enercom al sistema de\ngeneración de vapor flash nos permiten adicionar de manera constante (cuando\nla planta opere a máxima carga) 1555 kg/hr, es decir, el condensado de los\nrotores de las cocinas 3 y 4 ya no se alimentarán al tanque flash, como\nconsecuencia se genera un sistema que nos brinda 4097 Kg/hr de vapor a 1.5\nbar que se alimentará a las chaquetas de las cocinas Cometal (Las cocinas\ncomental para procesar 160 TM requieren 6384 Kg/hr de vapor por las\nchaquetas), esto significa que el sistema de flash podrá suministrar mas del 64%\ndel vapor requerido por las chaquetas, la diferencia será abastecido por las\nlíneas de ecualización del tanque flash (vapor reducido).\nEs necesario hacer notar que las líneas de alimentación de vapor y condensado\npara las nuevas cocinas deberán tener el dimensionamiento para máxima\ncapacidad de procesamiento, esto implica una línea de alimentación al rotor que\nnos brinde 7180 kg/hr y una línea de abastecimiento de vapor flash de 2395\nKg/hr.\nDe lo anterior tenemos que considerando que el tanque flash actual tiene un\ndiámetro de 1 mt, para el nuevo flujo de 4097 kg/hr @ 1.5 Bar, la velocidad del\nvapor en el tanque flash es de 1.03 m/s la cual es excelente para una buena\nseparación del vapor y condensado. Debido al incremento del ingreso de\ncondensado se debe reemplazar la línea de ingreso de condensado de las\ncocinas 3 y 4 existentes (6\") por una de 8\" que transporte el condensado de los\nsecadores Enercom, este cambio también involucra el ingreso al tanque de 6\" a\n8\".\nRespecto al sistema de trampeo tenemos que las 5 trampas existentes tienen\nuna capacidad en conjunto de 100 ton/hr de evacuación de condensado con un\ndiferencial de 5 psi, para el caso se requiere evacuar cerca de 52 ton/hr, con ello\nel factor de seguridad es de 1.92, bastante cercano a 2 que es el recomendado.\nDe lo anterior no se requiere modificar el sistema de purga del tanque flash.\nRespecto al condensado que enviamos a los calentadores se genera un\nincremento de 13 ton/hr (Se incluye el condensado de las chaquetas de las\ncocinas Cometal), generando un incremento de capacidad de calentamiento de\n20% (hay que hacer notar que la planta tenía una configuración operacional 1 y\nHMF\nHMF Sistemas y Control de Fluidos EIRL\nJr. José Gregorio Paredes 2746 - Pueblo Libre Teléfono: +51 1758-8890",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Evaluación del Sistema de vapor y Condensado Austral Planta Coishco\nAustral Group S.A.A.\n3, 1 y 4, 2 y 3, 2 y 4 o todas las cocinas a la vez, esto quiere decir que las cocinas\n1 o 2 solo trabajaban juntas cuando la planta estaba a full carga, en baja carga\ntrabajaba cocina 1 o 2 con cocinas 3 o 4, esto para aprovechar el vapor flash\ngenerado en los secadores.\nEl reemplazo de las cocinas nos genera una oportunidad de reaprovechar el\nexceso de energía que posee el condensado de todos los secadores tanto para\ngenerar vapor flash como para los calentadores de espuma.\nDentro de los consumos actuales tenemos los cuaguladores, según cálculos\nestos requieren aprox. 2 ton/hr de vapor, a fin de suplir esta necesidad,\nemplearemos el condensado de los rotores de las cocinas Cometal para poder\ngenerar vapor flash de 0.7 bar para abastecer este consumo.\nEquipo Coagulador (Sistema de Calentamiento con Vapor Vivo)\nTenemos que el consumo de vapor en los rotores es de 19147 kg/hr con una\npresión de 2.5 a 4.5 bar, a partir de ello podemos generar entre 895 kg/hr y 1512\nkg/hr, con ello podemos afirmar que el empleo del condensado de los rotores\npara generar vapor flash para los coaguladores son una gran oportunidad.\nEl tanque flash requerido tiene las siguientes dimensiones: 0.9 mt de diámetro,\n2.2 mt de altura, ingreso de condensado 12\", venteo de 10\" y 6\" de toma para la\npurga. A fin de complementar la evacuación de condensado, se requiere instalar\nun nuevo tanque de condensado de 1.2 mt de diámetro x 1.8 mt de altura\nHMF\nHMF Sistemas y Control de Fluidos EIRL\nJr. José Gregorio Paredes 2746 - Pueblo Libre Teléfono: +51 1758-8890",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Evaluación del Sistema de vapor y Condensado Austral Planta Coishco\nAustral Group S.A.A.\n(Tanque de condensado no menor de 1.2 M3, venteo de 8\", succión de la bomba\nde 6\".\nDebido a los cambios en las cargas y la nueva redistribución de condensados se\ndebe de reemplazar las bombas del tanque de condensado existente, las nuevas\nbombas deberán tener una capacidad de no menos de 80 M3/hr, las bombas\nque se estarían retirando se emplearán en el nuevo sistema de retorno de\ncondensado que retornará el condensado del nuevo tanque flash (condensado\nde rotores de cocinas Cometal). Adicionalmente es necesario incrementar el\nventeo del tanque de condensado actual de 14\" a 18\" ó 20\", lo que\ncomercialmente sea mejor en el manejo de materiales.\nHMF\nHMF Sistemas y Control de Fluidos EIRL\nJr. José Gregorio Paredes 2746 - Pueblo Libre Teléfono: +51 1758-8890",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Evaluación del Sistema de vapor y Condensado Austral Planta Coishco\nAustral Group S.A.A.\nLISTADO DE COMPONENTES REQUERIDOS PARA IMPLEMENTACION\n· Modificacion del sistema de vapor flash tanque principal:\no Estación Reductora de presión para vapor que consta de los\nsiguientes elementos:\n\" Separador de humedad marca SPIRAX SARCO modelo S13\nde 4\" ANSI 250\n· Paquete de purga con trampa tipo flotador FT14-10 de 1\"\n(Incluye filtro, visor, check y 2 válvulas de aislamiento)\n· Válvula esférica M40S2 de 4\" (1 Unidad)\n· Filtro tipo Y marca SPIRAX SARCO de 4\" bridado ANSI 250\n· Válvula Reductora de presión tipo pilotada para vapor marca\nSPIRAX SARCO modelo 25P de 2.5\" ANSI 250\n· Manómetro 0-100 psi con tubo sifón y válvula de aislamiento\no Válvula Check tipo duocheck para vapor marca NEWAY de 12\" para\ninstalación entre bridas ANSI 150.\n· Implementación Manifold A sistema de Generación de vapor:\no Válvula Mariposa en alta performance de 16\" con caja reductora para\ninstalar entre bridas ANSI 150\no Válvula Mariposa en alta performance de 14\" con caja reductora para\ninstalar entre bridas ANSI 150\no Válvula Mariposa en alta performance de 12\" con caja reductora para\ninstalar entre bridas ANSI 150\nVálvula tipo globo en acero al carbono marca NEWAY de 8\" conexión\nbridada ANSI 150\no Válvula tipo globo en acero al carbono marca NEWAY de 3\" conexión\nbridada ANSI 150\no Accesorios para bolsa de purga de condensado con trampa flotador\nde 2\" marca SPIRAX SARCO que incluye (1 válvula de purga de 1-\n1/2\" M10S2, 2 válvulas M10S2 de 2\", 1 Filtro Y modelo IT de 2\", 1\nvisor SGD de 2\", 1 Válvula check disco DCV4 de 2\")\no Manómetro de 4\" 0 a 200 psi, válvula corte y tubo sifón.\no Venteador de aire de alta capacidad en sistemas de vapor marca\nSPIRAX SARCO con válvula de corte en 3/4\"\n· Implementación Manifold B sistema de Generación de vapor:\nVálvula Mariposa en alta performance de 16\" con caja reductora para\ninstalar entre bridas ANSI 150\nVálvula Mariposa en alta performance de 12\" con caja reductora para\ninstalar entre bridas ANSI 150 (2 Unidades)\nVálvula tipo globo en acero al carbono marca NEWAY de 8\" conexión\nbridada ANSI 150\nVálvula tipo globo en acero al carbono marca NEWAY de 3\" conexión\nbridada ANSI 150\nHMF\nHMF Sistemas y Control de Fluidos EIRL\nJr. José Gregorio Paredes 2746 - Pueblo Libre Teléfono: +51 1758-8890",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Evaluación del Sistema de vapor y Condensado Austral Planta Coishco\nAustral Group S.A.A.\no Accesorios para bolsa de purga de condensado con trampa flotador\nde 2\" marca SPIRAX SARCO que incluye (1 válvula de purga de 1-\n1/2\" M10S2, 2 válvulas M10S2 de 2\", 1 Filtro Y modelo IT de 2\", 1\nvisor SGD de 2\", 1 Válvula check disco DCV4 de 2\")\no Manómetro de 4\" 0 a 200 psi, válvula corte y tubo sifón.\no Venteador de aire de alta capacidad en sistemas de vapor marca\nSPIRAX SARCO con válvula de corte en 3/4\"\n· Implementación de sistema de vapor flash para Coaguladores:\no Estación Reductora de presión para vapor que consta de los\nsiguientes elementos:\n\" Separador de humedad marca SPIRAX SARCO modelo S13\nde 3\" ANSI 250\n· Paquete de purga con trampa tipo flotador FT14-10 de 1\"\n(Incluye filtro, visor, check y 2 válvulas de aislamiento)\n· Válvula esférica M40S2 de 3\" (1 Unidad)\n\" Filtro tipo Y marca SPIRAX SARCO de 3\" bridado ANSI 250\n· Válvula Reductora de presión tipo pilotada para vapor marca\nSPIRAX SARCO modelo 25P de 2\" ANSI 250\n· Manómetro 0-100 psi con tubo sifón y válvula de aislamiento\no Válvula Check tipo duocheck para vapor marca NEWAY de 8\" para\ninstalación entre bridas ANSI 150.\nVálvula de Seguridad marca SPIRAX SARCO de 2\" (2 unidades)\n02 Paquete de purga de 2-1/2\" con trampa marca SPIRAX SARCO\nmodelo FTD (Incluye 02 Válvula M10S2 , filtro Y modelo IT, Visor para\ncondensado SGD, Válvula check tipo Disco DCV)\nManómetro de 4\" 0 a 30 psi, válvula corte y tubo sifón.\no Venteador de aire de alta capacidad en sistemas de vapor marca\nSPIRAX SARCO con válvula de corte en 3/4\"\nEn el caso de las cocinas es necesario verificar el listado de componentes con que se\nestán suministrando, esto principalmente porque se tiene que evaluar las trampas y su\ndimensionamiento puesto que se está modificando la contrapresión de las mismas al\nincorporarlas como alimentadoras de condensado del nuevo sistema de vapor flash\n(rotores) y para el sistema de alimentación de condensado a calentadores de caldos\n(Chaquetas).\nHMF\nHMF Sistemas y Control de Fluidos EIRL\nJr. José Gregorio Paredes 2746 - Pueblo Libre Teléfono: +51 1758-8890",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Evaluación del Sistema de vapor y Condensado Austral Planta Coishco\nAustral Group S.A.A.\nANALISIS DE PERFORMANCE DEL SISTEMA DE EVACUACION DE\nCONDENSADO DE NUEVAS COCINAS AL INCORPORARSE AL SNUEVO SISTEMA\nDE VAPOR FLASH\nAlimentación\nVapo\n18\n18\n18\n18\n1\n18\n2\n15\n3\n4\n16\n17\n6\n5\n8\n9\nDrenaje -\n7\n10\nCondensado\nNo Condensables\nCondensado\n11\n(12\n13\n14\nDe acuerdo al diagrama remitido por Cometal donde se visualiza tanto el ingreso de\nvapor al rotor y las chaquetas, y la evacuación de condensado de ambos consumos\nhacemos notar lo siguiente:\n· El rotor tiene alimentación de 6\", este diámetro nos sirve cuando las 4 cocinas\ntrabajan a la vez (tener en cuenta que las cocinas trabajan entre 2.5 y 4.5 Bar) y\nel consumo de vapor es menor que a full carga, si por algún motivo sale una\ncocina de operación y se quedan operando con 3 se requeriría más vapor en el\nrotor por lo cual se sugiere que después de la válvula globo de 6\", la tubería se\nagrande a 8\" hasta el ingreso del rotor.\n· Respecto a la evacuación de condensado, el rotor incorpora una trampa\nArmstrong de 3\" M12, considerando que el condensado que evacuara esta\ntrampa será enviado al nuevo tanque flash para coaguladores, podemos afirmar\nque no es necesario reemplazar la trampa, es decir, tiene suficiente capacidad\npara operar sin problemas con la nueva contrapresión.\n· Con respecto a las chaquetas, estamos realizando modificaciones en la\nalimentación de vapor, en este caso, a diferencia del diagrama mostrado todas\nlas chaquetas serán alimentadas con vapor flash y poseerá dos estaciones\nreductoras que abastecerán de vapor en los arranques hasta disponer de\ncondensado en secadores. Esto quiere decir que tanto chaquetas como rotores\nposeerán ingresos de vapor independientes en cualquier condición de trabajo.\n· Respecto a la distribución de la alimentación de vapor a las chaquetas tenemos\nel siguiente análisis:\n· El ingreso del pescado está en contracorriente con el vapor, esto quiere\ndecir, que el pescado ingresa por el extremo opuesto de la alimentación\nde vapor al rotor.\no El pescado actualmente puede venir refrigerado y puede ingresar a la\ncocina entre 9º\ny 10°C, para ser calentados\nhasta 90ºC\naproximadamente.\no El consumo de vapor en chaquetas depende del diferencial de\ntemperatura entre el vapor y el pescado, teniendo este último un\nincremento progresivo de temperatura desde su ingreso hasta su salida.\no De lo anterior el consumo de vapor es mayor en la primera chaqueta y va\ndecayendo en función al desplazamiento del pescado en la cocina, a\nHMF\nHMF Sistemas y Control de Fluidos EIRL\nJr. Jose Gregorio Paredes 2746 - Pueblo Libre Teléfono: +51 1758-8890",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Evaluación del Sistema de vapor y Condensado Austral Planta Coishco\nAustral Group S.A.A.\npartir de ello podemos aplicar la siguiente figura para calcular el consumo\nde vapor en cada etapa:\nSingle Section t.\nSingle Section\n1.0\n0.9\n1\n0.8\n0.7\nProportion of Load on First Section\nTemp.\nAt\ntį,\nInlet Temp.\nFigure 49\nTemperature Distribution in Multi-Coil Heater\nAt.\nOutlet Temp.\n0.6\nTwo Section\n0.5\nThree Section\n0.4\n0.3\nFour Section\nFive Section\n0.2\n0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9\nRatio At\nFigure 50\nLoad on First Section of Multi-Coil Heater\nDe acuerdo a lo mostrado tenemos que el consumo de vapor en las\nchaquetas a full carga sería el siguiente:\nChaqueta 1: 865 Kg/hr\nChaqueta 2: 552.5 Kg/hr\nChaqueta 3: 414.3 Kg/hr\nChaqueta 4: 310.8 Kg/hr\nChaqueta 5: 259.0 Kg/hr\nEsto quiere decir que el consumo de vapor en la primera chaqueta\n(ingreso) es 3.34 veces mayor a la ultima chaqueta, por lo anterior, las\ntrampas no pueden ser iguales, y una sola trampa para todo el sistema\npuede afectar la normal evacuación de condensado de las chaquetas que\nconsumen más vapor.\nDe lo anterior se sugiere reemplazar el sistema de evacuación de\ncondensado (1 sola trampa) por el sistema de evacuación con trampeo\nindependiente en cada chaqueta.\nAccesorios para sistema de evacuación de condensado en chaquetas:\n· 08 Paquete de purga con trampa tipo flotador SPIRAX SARCO\nmodelo FT14 de 1-1/2\" con accesorios (2 válvulas M10S2, 1 Filtro\nIT, Visor de condensado SGD, Válvula check DCV4)\n· 12 Paquete de purga con trampa tipo flotador SPIRAX SARCO\nmodelo FT14 de 1\" con accesorios (2 válvulas M10S2, 1 Filtro IT,\nVisor de condensado SGD, Válvula check DCV4)\n· 20 Válvulas de interrupción para vapor de paso total 3\" bridadas.\nHMF Sistemas y Control de Fluidos EIRL\nJr. José Gregorio Paredes 2746 - Pueblo Libre Teléfono: +51 1758-8890\nHMF",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Evaluación del Sistema de vapor y Condensado Austral Planta Coishco\nAustral Group S.A.A.\nAPENDICE DE CALCULOS\n1. Capacidad de Generación en Calderas.\nRespecto a las calderas y a nuestra sugerencia de instalar manifolds\ndistribuidores de vapor tenemos las siguientes consideraciones:\nFlujo de vapor real entregado por calderas:\nDe acuerdo a lo indicado por los fabricantes de calderas los flujos teóricamente\nlos brindan a 212ºF lo que es 0 psi, lo real es que las calderas operan a presiones\nmayores y antes de generar vapor tienen que llegar a su punto de ebullición que\nnormalmente es mayor que 212ºF y el vapor normalmente a mas presión tiene\nmas energía, esto se puede corroborar en la tabla de vapor que compartimos\nlíneas abajo.\nConsiderando que en planta Coishco trabajan a 105 psi tenemos que:\nTABLA DE VAPOR\nENTALPIA ESPECIFICA\n(kcal x 4,18 = kJ)\nVolumen\nespecifico\nvapor\nsaturado\n(m3/kg)\nPeso\nespecifico\nvapor\nsaturado\n(kg/m3)\nPresión de\nmanómetro\n(relativa)\n(bar-g)\nTemperatura | sensible agua\nCalor\n(kcal/kg)\nCalor\nlatente\nvaporización\n(kcal/kg)\nCalor total\nvapor\nsaturado\n(kcal/kg)\n-0,963\n32.88\n32,9\n578,9\n611,8\n28,192\n0,035\n-0,913\n45,81\n45,8\n571,5\n617,3\n14,674\n0,068\n-0,813\n60,06\n60,0\n563,3\n623,3\n7,649\n0,131\n-0,713\n69,1\n69,1\n558,0\n627,0\n5,229\n0,191\n-0,613\n75,87\n75,9\n553,9\n629,8\n3,993\n0,250\n0101\n-0,513\n81,33\n81,3\n550,6\n632,0\n3,240\n0,309\n-0,413\n85,94\n86,0\n547,8\n633,8\n2,732\n0,366\n-0,313\n89,95\n90,0\n545,4\n635,3\n2,365\n0,423\n-0,213\n93,5\n93,6\n543,2\n636,7\n2,087\n0,479\n-0,113\n96,71\n96,8\n541,2\n637,9\n1,869\n0,535\n-0,013\n99,63\n99,7\n539,3\n639,0\n1.694\n0,590\n0\n100\n100,1\n539,1\n639,2\n1,673\n0,598\n0,1\n102,66\n102,8\n537,5\n640,2\n1,533\n0,652\n0,2\n105,1\n105,3\n535,8\n641,1\n1,414\n0,707\n0,3\n107,39\n107,6\n534,3\n641,9\n1,312\n0,762\n0,4\n109,55\n109,8\n532,9\n642,7\n1,225\n0,816\n0,5\n111,61\n111,9\n531,6\n643,4\n1,149\n0,870\n0,6\n113,56\n113,8\n530,3\n644,1\n1,083\n0,923\n0,8\n117,14\n117,4\n528,0\n645,4\n0,971\n1,030\n1\n120,42\n120,8\n525,7\n646,5\n0,881\n1,135\n1,5\n127,62\n128,0\n520,9\n649,0\n0,714\n1,401\n2\n133,69\n134,3\n516,7\n651,0\n0,603\n1,658\n2,5\n139,02\n139,7\n512,9\n652,7\n0,522\n1,916\n3\n143,75\n144,6\n509,6\n654,1\n0,461\n2,169\n3,5\n148,02\n148,9\n506,4\n655,4\n0,413\n2.421\n4\n151,96\n153,0\n503,5\n656,5\n0,374\n2,674\n4,5\n155,55\n156,8\n500,8\n657,5\n0,342\n2,924\n5\n158,92\n160,2\n498,2\n658,5\n0,315\n3,175\n5,5\n162,08\n163,5\n495,8\n659,3\n0,292\n3,425\n6\n165,04\n166,6\n493,5\n660,1\n0,272\n3,676\n6,5\n167,83\n169,5\n491,3\n660,8\n0,255\n3,922\n7\n170,5\n172,3\n489,1\n661,4\n0,240\n4,167\n7,5\n173,02\n175,0\n487,1\n662,0\n0,227\n4,405\n8\n175,43\n177,5\n485,1\n662,6\n0,215\n4,651\n8,5\n177,75\n179,9\n483,2\n663,1\n0,204\n4,902\n9\n179,97\n182,2\n481,3\n663,5\n0,194\n5,155\n9,5\n182,1\n184,5\n479,5\n664,0\n0,185\n5,405\n10\n184,13\n186,7\n477,7\n664,4\n0,177\n5,650\n11\n188,02\n190,8\n474,3\n665,1\n0,163\n6,135\n12\n191,68\n194,7\n471,1\n665,8\n0,151\n6,623\nHMF\nHMF Sistemas y Control de Fluidos EIRL\nJr. Jose Gregorio Paredes 2746 - Pueblo Libre Teléfono: +51 1758-8890",
+      "tablas": [
+        [
+          [
+            "",
+            "ENTALPIA ESPECIFICA (kcal x 4,18 = kJ)",
+            "Volumen especifico vapor saturado (m3/kg)",
+            "Peso especifico vapor saturado (kg/m3)"
+          ],
+          [
+            "",
+            "Presión de manómetro (relativa) (bar-g)",
+            "Temperatura |",
+            "sensible agua Calor (kcal/kg)",
+            "Calor latente vaporización (kcal/kg)",
+            "Calor total vapor saturado (kcal/kg)"
+          ],
+          [
+            "",
+            "-0,963",
+            "32.88",
+            "32,9",
+            "578,9",
+            "611,8",
+            "28,192",
+            "0,035"
+          ],
+          [
+            "",
+            "-0,913",
+            "45,81",
+            "45,8",
+            "571,5",
+            "617,3",
+            "14,674",
+            "0,068"
+          ],
+          [
+            "",
+            "-0,813",
+            "60,06",
+            "60,0",
+            "563,3",
+            "623,3",
+            "7,649",
+            "0,131"
+          ],
+          [
+            "",
+            "-0,713",
+            "69,1",
+            "69,1",
+            "558,0",
+            "627,0",
+            "5,229",
+            "0,191"
+          ],
+          [
+            "",
+            "-0,613",
+            "75,87",
+            "75,9",
+            "553,9",
+            "629,8",
+            "3,993",
+            "0,250"
+          ],
+          [
+            "",
+            "-0,513",
+            "81,33",
+            "81,3",
+            "550,6",
+            "632,0",
+            "3,240",
+            "0,309"
+          ],
+          [
+            "0101",
+            "-0,413",
+            "85,94",
+            "86,0",
+            "547,8",
+            "633,8",
+            "2,732",
+            "0,366"
+          ],
+          [
+            "",
+            "-0,313",
+            "89,95",
+            "90,0",
+            "545,4",
+            "635,3",
+            "2,365",
+            "0,423"
+          ],
+          [
+            "",
+            "-0,213",
+            "93,5",
+            "93,6",
+            "543,2",
+            "636,7",
+            "2,087",
+            "0,479"
+          ],
+          [
+            "",
+            "-0,113",
+            "96,71",
+            "96,8",
+            "541,2",
+            "637,9",
+            "1,869",
+            "0,535"
+          ],
+          [
+            "",
+            "-0,013",
+            "99,63",
+            "99,7",
+            "539,3",
+            "639,0",
+            "1.694",
+            "0,590"
+          ],
+          [
+            "",
+            "0",
+            "100",
+            "100,1",
+            "539,1",
+            "639,2",
+            "1,673",
+            "0,598"
+          ],
+          [
+            "",
+            "0,1",
+            "102,66",
+            "102,8",
+            "537,5",
+            "640,2",
+            "1,533",
+            "0,652"
+          ],
+          [
+            "",
+            "0,2",
+            "105,1",
+            "105,3",
+            "535,8",
+            "641,1",
+            "1,414",
+            "0,707"
+          ],
+          [
+            "",
+            "0,3",
+            "107,39",
+            "107,6",
+            "534,3",
+            "641,9",
+            "1,312",
+            "0,762"
+          ],
+          [
+            "",
+            "0,4",
+            "109,55",
+            "109,8",
+            "532,9",
+            "642,7",
+            "1,225",
+            "0,816"
+          ],
+          [
+            "",
+            "0,5",
+            "111,61",
+            "111,9",
+            "531,6",
+            "643,4",
+            "1,149",
+            "0,870"
+          ],
+          [
+            "",
+            "0,6",
+            "113,56",
+            "113,8",
+            "530,3",
+            "644,1",
+            "1,083",
+            "0,923"
+          ],
+          [
+            "",
+            "0,8",
+            "117,14",
+            "117,4",
+            "528,0",
+            "645,4",
+            "0,971",
+            "1,030"
+          ],
+          [
+            "",
+            "1",
+            "120,42",
+            "120,8",
+            "525,7",
+            "646,5",
+            "0,881",
+            "1,135"
+          ],
+          [
+            "",
+            "1,5",
+            "127,62",
+            "128,0",
+            "520,9",
+            "649,0",
+            "0,714",
+            "1,401"
+          ],
+          [
+            "",
+            "2",
+            "133,69",
+            "134,3",
+            "516,7",
+            "651,0",
+            "0,603",
+            "1,658"
+          ],
+          [
+            "",
+            "2,5",
+            "139,02",
+            "139,7",
+            "512,9",
+            "652,7",
+            "0,522",
+            "1,916"
+          ],
+          [
+            "",
+            "3",
+            "143,75",
+            "144,6",
+            "509,6",
+            "654,1",
+            "0,461",
+            "2,169"
+          ],
+          [
+            "",
+            "3,5",
+            "148,02",
+            "148,9",
+            "506,4",
+            "655,4",
+            "0,413",
+            "2.421"
+          ],
+          [
+            "",
+            "4",
+            "151,96",
+            "153,0",
+            "503,5",
+            "656,5",
+            "0,374",
+            "2,674"
+          ],
+          [
+            "",
+            "4,5",
+            "155,55",
+            "156,8",
+            "500,8",
+            "657,5",
+            "0,342",
+            "2,924"
+          ],
+          [
+            "",
+            "5",
+            "158,92",
+            "160,2",
+            "498,2",
+            "658,5",
+            "0,315",
+            "3,175"
+          ],
+          [
+            "",
+            "5,5",
+            "162,08",
+            "163,5",
+            "495,8",
+            "659,3",
+            "0,292",
+            "3,425"
+          ],
+          [
+            "",
+            "6",
+            "165,04",
+            "166,6",
+            "493,5",
+            "660,1",
+            "0,272",
+            "3,676"
+          ],
+          [
+            "",
+            "6,5",
+            "167,83",
+            "169,5",
+            "491,3",
+            "660,8",
+            "0,255",
+            "3,922"
+          ],
+          [
+            "",
+            "7",
+            "170,5",
+            "172,3",
+            "489,1",
+            "661,4",
+            "0,240",
+            "4,167"
+          ],
+          [
+            "",
+            "7,5",
+            "173,02",
+            "175,0",
+            "487,1",
+            "662,0",
+            "0,227",
+            "4,405"
+          ],
+          [
+            "",
+            "8",
+            "175,43",
+            "177,5",
+            "485,1",
+            "662,6",
+            "0,215",
+            "4,651"
+          ],
+          [
+            "",
+            "8,5",
+            "177,75",
+            "179,9",
+            "483,2",
+            "663,1",
+            "0,204",
+            "4,902"
+          ],
+          [
+            "",
+            "9",
+            "179,97",
+            "182,2",
+            "481,3",
+            "663,5",
+            "0,194",
+            "5,155"
+          ],
+          [
+            "",
+            "9,5",
+            "182,1",
+            "184,5",
+            "479,5",
+            "664,0",
+            "0,185",
+            "5,405"
+          ],
+          [
+            "",
+            "10",
+            "184,13",
+            "186,7",
+            "477,7",
+            "664,4",
+            "0,177",
+            "5,650"
+          ],
+          [
+            "",
+            "11",
+            "188,02",
+            "190,8",
+            "474,3",
+            "665,1",
+            "0,163",
+            "6,135"
+          ],
+          [
+            "",
+            "12",
+            "191,68",
+            "194,7",
+            "471,1",
+            "665,8",
+            "0,151",
+            "6,623"
+          ]
+        ]
+      ]
+    }
+  ]
+}

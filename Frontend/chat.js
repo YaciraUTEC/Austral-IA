@@ -6,20 +6,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const newChatBtn = document.querySelector('.new-chat');
     const sendButton = document.getElementById('send-button');
     const buttonIcon = sendButton.querySelector('.button-icon');
-  const sidebar = document.querySelector('.sidebar');
-  const menuIcon = document.querySelector('.menu-icon');
-  
-  menuIcon.style.cursor = 'pointer';
+    const sidebar = document.querySelector('.sidebar');
+    const menuIcon = document.querySelector('.menu-icon');
 
- 
-  menuIcon.addEventListener('click', () => {
-    sidebar.classList.toggle('collapsed');
-  });
-
+    menuIcon.style.cursor = 'pointer';
+    menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+    });
 
     let controladorAbort = null;
 
-    // ✅ Ícono personalizado también en loading
+    // 🔐 IDENTIFICADOR DE USUARIO
+    const userId = "usuario_test_1"; // Puedes cambiar esto dinámicamente si tienes login
+
     function crearLoading() {
         const loadingDiv = document.createElement('div');
         loadingDiv.className = 'mensaje asistente';
@@ -39,11 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const spinner = document.createElement('div');
         spinner.className = 'loading-spinner';
 
-        
         const texto = document.createElement('div');
-    texto.className = 'mensaje-contenido loading-dots';
-    texto.innerHTML = 'Generando respuesta<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>';
-        
+        texto.className = 'mensaje-contenido loading-dots';
+        texto.innerHTML = 'Generando respuesta<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>';
 
         container.appendChild(spinner);
         container.appendChild(texto);
@@ -73,7 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const contenido = document.createElement('div');
         contenido.classList.add('mensaje-contenido');
-        contenido.innerHTML = window.marked ? marked.parse(texto) : texto;
+
+        const scrollWrapper = document.createElement('div');
+        scrollWrapper.classList.add('tabla-scrollable');
+        scrollWrapper.innerHTML = window.marked ? marked.parse(texto) : texto;
+
+        contenido.appendChild(scrollWrapper);
 
         mensajeDiv.appendChild(icono);
         mensajeDiv.appendChild(contenido);
@@ -115,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch('http://localhost:8000/api/asistente', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ pregunta }),
+                body: JSON.stringify({ user_id: userId, pregunta }), // Enviamos user_id también
                 signal: controladorAbort.signal
             });
 
@@ -145,34 +147,27 @@ document.addEventListener('DOMContentLoaded', () => {
     chatForm.addEventListener('submit', manejarSubmit);
 
     newChatBtn.addEventListener('click', () => {
-    // Verifica si ya no hay mensajes (chat vacío)
-    const isChatEmpty = chatMessages.children.length === 0;
+        // 🔁 Reiniciar conversación en backend
+        fetch("http://localhost:8000/api/asistente/reiniciar", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ user_id: userId })
+        });
 
-    // Verifica si el mensaje de bienvenida ya está presente
-    const welcomeExists = document.querySelector('.welcome') !== null;
+        // 💬 Limpiar mensajes en el frontend
+        chatMessages.innerHTML = '';
+        const existingWelcome = document.querySelector('.welcome');
+        if (existingWelcome) existingWelcome.remove();
 
-    if (isChatEmpty && welcomeExists) {
-        // No hacer nada si ya está el mensaje de bienvenida y no hay mensajes
-        return;
-    }
-
-    // Si hay mensajes o no hay mensaje de bienvenida, limpiar y crear uno nuevo
-    chatMessages.innerHTML = '';
-
-    // Remover mensaje de bienvenida anterior si existe (por seguridad)
-    const existingWelcome = document.querySelector('.welcome');
-    if (existingWelcome) existingWelcome.remove();
-
-    // Crear nuevo mensaje de bienvenida
-    const welcome = document.createElement('div');
-    welcome.className = 'welcome';
-    welcome.innerHTML = `
-        <h1><span>Hola Yacira Nicol</span></h1>
-        <p class="subtitle">Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</p>
-        <p class="description">Consulta rápida acerca de proyectos de energía.</p>
-    `;
-    chatMessages.parentElement.insertBefore(welcome, chatMessages);
-});
+        const welcome = document.createElement('div');
+        welcome.className = 'welcome';
+        welcome.innerHTML = `
+            <h1><span>Hola Yacira Nicol</span></h1>
+            <p class="subtitle">Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</p>
+            <p class="description">Consulta rápida acerca de proyectos de energía.</p>
+        `;
+        chatMessages.parentElement.insertBefore(welcome, chatMessages);
+    });
 
     chatInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter' && !e.shiftKey) {
