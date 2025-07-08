@@ -48,12 +48,5 @@ El asistente sigue un flujo RAG (Retrieval-Augmented Generation):
 - 📉 Reducción del tiempo de acceso a información de 10-20 minutos a menos de 5 segundos.
 - 👥 100% de aceptación en sesiones de prueba con personal técnico.
 
-## 🧪 Funcionalidades Implementadas
-
-- Consulta técnica libre
-- Diagnóstico de fallas
-- Extracción de datos estructurados
-- Seguimiento de proyectos de energía
-- Hilo conversacional de hasta 5 interacciones
 
 
