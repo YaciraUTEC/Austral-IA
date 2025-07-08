@@ -2,9 +2,9 @@
 
 Este proyecto es un piloto funcional de un **asistente virtual especializado** en el área de mantenimiento y gestión de proyectos energéticos de **Austral Group**, desarrollado como parte del curso de Proyecto Preprofesional en la Universidad de Ingeniería y Tecnología (UTEC).
 
-## 🚀 Propósito del Proyecto
+## 🚀 Objetivo del Proyecto
 
-Desarrollar un asistente virtual capaz de automatizar tareas operativas, apoyar el diagnóstico técnico de fallas y centralizar el acceso a información técnica mediante tecnologías de **inteligencia artificial**, facilitando una toma de decisiones más ágil, eficiente y basada en datos.
+Desarrollar e implementar un pilot asistente virtual capaz de automatizar tareas operativas, apoyar el diagnóstico técnico de fallas y centralizar el acceso a información técnica mediante tecnologías de **inteligencia artificial**, facilitando una toma de decisiones más ágil, eficiente y basada en datos.
 
 ## 🎯 Objetivos SMART
 
@@ -39,10 +39,9 @@ El asistente sigue un flujo RAG (Retrieval-Augmented Generation):
 4. Indexación y búsqueda con FAISS
 5. Respuestas generadas por GPT-4o con contexto técnico relevante
 
-![Arquitectura Austral IA](ruta/a/tu/imagen)
 
 
-## 📈 Resultados del Piloto
+## 📈 Resultados
 
 - 💬 Asistente funcional en entorno real con respuesta en lenguaje natural.
 - 🧾 Consulta automatizada de documentos técnicos PDF, Word y Excel.
