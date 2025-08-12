@@ -1,15 +1,16 @@
-import os
+from io import BytesIO
 import pandas as pd
 import openpyxl
 from typing import List, Dict
+import os
 
-def obtener_hojas_visibles(path_excel: str) -> List[str]:
-    """Devuelve solo las hojas visibles del Excel."""
-    wb = openpyxl.load_workbook(path_excel, read_only=True, data_only=True)
+def obtener_hojas_visibles_bytesio(excel_bytes: BytesIO) -> List[str]:
+    """Devuelve solo las hojas visibles del archivo Excel en memoria."""
+    wb = openpyxl.load_workbook(excel_bytes, read_only=True, data_only=True)
     return [ws.title for ws in wb.worksheets if ws.sheet_state == "visible"]
 
 def fila_a_frase_semantica(fila: List[str], encabezados: List[str]) -> str:
-    """Convierte una fila en una oración de clave: valor, ignorando vacíos."""
+    """Convierte una fila en una oración clave:valor, ignorando vacíos."""
     partes = []
     for i, valor in enumerate(fila):
         valor = valor.strip()
@@ -46,14 +47,17 @@ def analizar_rango_filas(df_rango: pd.DataFrame, fila_inicio: int, fila_fin: int
 
     return contenido
 
-def fragmentar_excel(path_excel: str, filas_por_fragmento: int = 100) -> List[Dict]:
-    """Fragmenta un archivo Excel, solo considerando hojas visibles."""
-    document_id = os.path.basename(path_excel).rsplit(".", 1)[0]
+def fragmentar_excel_memoria(excel_bytes: BytesIO, nombre_archivo: str, filas_por_fragmento: int = 100) -> List[Dict]:
+    """Fragmenta un archivo Excel en memoria, retornando su contenido como lista de fragmentos."""
+    document_id = os.path.splitext(nombre_archivo)[0]
     fragmentos = []
 
     try:
-        xls = pd.ExcelFile(path_excel)
-        hojas_visibles = obtener_hojas_visibles(path_excel)
+        # Reset de puntero por si otro lector consumió parte del stream
+        excel_bytes.seek(0)
+        xls = pd.ExcelFile(excel_bytes, engine="openpyxl")
+        excel_bytes.seek(0)
+        hojas_visibles = obtener_hojas_visibles_bytesio(excel_bytes)
     except Exception as e:
         print(f"❌ Error al leer el Excel: {e}")
         return []
@@ -92,13 +96,3 @@ def fragmentar_excel(path_excel: str, filas_por_fragmento: int = 100) -> List[Di
                 })
 
     return fragmentos
-
-def procesar_excel_completo(path_excel: str, filas_por_fragmento: int = 100) -> Dict:
-    """Procesa un Excel y devuelve un único JSON agrupado por documento."""
-    fragmentos = fragmentar_excel(path_excel, filas_por_fragmento)
-    document_id = os.path.basename(path_excel).rsplit(".", 1)[0]
-    return {
-        "document_id": document_id,
-        "tipo": "excel",
-        "fragmentos": fragmentos
-    }

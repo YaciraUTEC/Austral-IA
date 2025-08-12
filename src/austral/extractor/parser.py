@@ -1,10 +1,12 @@
 import os
 import json
+from io import BytesIO
 from azure.ai.formrecognizer import DocumentAnalysisClient
 from azure.core.credentials import AzureKeyCredential
 from dotenv import load_dotenv
 
 load_dotenv()
+
 AZURE_ENDPOINT = os.getenv("AZURE_FORMRECOGNIZER_ENDPOINT")
 AZURE_KEY = os.getenv("AZURE_FORMRECOGNIZER_KEY")
 
@@ -13,13 +15,17 @@ client = DocumentAnalysisClient(
     credential=AzureKeyCredential(AZURE_KEY)
 )
 
-def extraer_texto_a_json(pdf_path: str, output_path: str):
-    with open(pdf_path, "rb") as f:
-        poller = client.begin_analyze_document("prebuilt-document", document=f)
-        result = poller.result()
+def extraer_texto_a_json(nombre_archivo: str, contenido_bytes: bytes, output_path: str = None) -> dict:
+    """
+    Extrae texto y tablas desde un fragmento PDF en memoria y lo convierte a estructura JSON.
+    Si se indica 'output_path', guarda el resultado como archivo .json.
+    """
+    archivo_stream = BytesIO(contenido_bytes)
+    poller = client.begin_analyze_document("prebuilt-document", document=archivo_stream)
+    result = poller.result()
 
     data = {
-        "archivo": os.path.basename(pdf_path),
+        "archivo": nombre_archivo,
         "paginas": []
     }
 
@@ -30,20 +36,20 @@ def extraer_texto_a_json(pdf_path: str, output_path: str):
             "texto": texto,
             "tablas": []
         }
-        # Extraer tablas si existen
         for table in result.tables:
-            # Solo tablas que pertenezcan a esta página
             if table.bounding_regions and any(region.page_number == page.page_number for region in table.bounding_regions):
                 filas = []
-                # table.cells está en orden secuencial, hay que reconstruir filas por row_index
                 max_row = max(cell.row_index for cell in table.cells)
                 for row_idx in range(max_row + 1):
                     fila = [cell.content for cell in table.cells if cell.row_index == row_idx]
                     filas.append(fila)
                 pagina["tablas"].append(filas)
-
         data["paginas"].append(pagina)
 
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    if output_path:
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        print(f"✅ Guardado JSON: {output_path}")
+
+    return data
