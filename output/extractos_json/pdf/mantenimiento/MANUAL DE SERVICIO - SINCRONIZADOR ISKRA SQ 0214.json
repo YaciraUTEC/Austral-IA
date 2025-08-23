@@ -1,0 +1,160 @@
+{
+  "archivo": "MANUAL DE SERVICIO - SINCRONIZADOR ISKRA SQ 0214",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Iskra\nIskra MIS, d.d.\nSERVICE MANUAL\nE K22.480.850\nSYNCHROSCOPE\nSQ0204, SQ0214\nNaziv\nIme in priimek\nPodpis\nDatum\nIzdelal\nProjektni razvijalec\nJanez Humar\n04.03.05\nPregledal\nVišji razvijalec\nRafko Bertoncelj\n04.03.05\nOdobril\nVišji razvijalec\nRafko Bertoncelj\n04.03.05",
+      "tablas": [
+        [
+          [
+            "",
+            "Naziv",
+            "Ime in priimek",
+            "Podpis",
+            "Datum"
+          ],
+          [
+            "Izdelal",
+            "Projektni razvijalec",
+            "Janez Humar",
+            "",
+            "04.03.05"
+          ],
+          [
+            "Pregledal",
+            "Višji razvijalec",
+            "Rafko Bertoncelj",
+            "",
+            "04.03.05"
+          ],
+          [
+            "Odobril",
+            "Višji razvijalec",
+            "Rafko Bertoncelj",
+            "",
+            "04.03.05"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "CONTENTS\n1.\nSAFETY SECTION\n3\n1.1.\nHealth and safety\n3\n1.2.\nExplanation of symbols and labels\n3\n1.3.\nWarnings, regular information and remarks referring to CE-marking\n3\n2. SETTING SPECIAL FUNCTIONS\n4\n2.1.\nDisassembling and assembling the SQ\n4\n2.2.\nSetting proper special function jumper\n5\n2.2.1.\nDead bus-bar functionality\n5\n2.2.2.\nOver and under frequency synchronising\n5\n2.2.3.\nLength of a SYNC pulse.\n6\n3. SETING PROGRAMABLE PARAMETERS\n7\n3.1.\nDisassembling and assembling the SQ\n7\n3.2.\nConnecting SQ to a PC.\n7\n3.3.\nUsing SQset program\n7\n4.\nFLASH UPGRADE\n10\n2",
+      "tablas": [
+        [
+          [
+            "1. SAFETY SECTION",
+            "3"
+          ],
+          [
+            "1.1.",
+            "Health and safety",
+            "3"
+          ],
+          [
+            "1.2.",
+            "Explanation of symbols and labels",
+            "3"
+          ],
+          [
+            "1.3.",
+            "Warnings, regular information and remarks referring to CE-marking",
+            "3"
+          ],
+          [
+            "2. SETTING SPECIAL FUNCTIONS",
+            "4"
+          ],
+          [
+            "2.1.",
+            "Disassembling and assembling the SQ",
+            "4"
+          ],
+          [
+            "2.2.",
+            "Setting proper special function jumper",
+            "5"
+          ],
+          [
+            "2.2.1.",
+            "Dead bus-bar functionality",
+            "5"
+          ],
+          [
+            "2.2.2.",
+            "Over and under frequency synchronising",
+            "5"
+          ],
+          [
+            "2.2.3.",
+            "Length of a SYNC pulse.",
+            "6"
+          ],
+          [
+            "3. SETING PROGRAMABLE PARAMETERS",
+            "7"
+          ],
+          [
+            "3.1.",
+            "Disassembling and assembling the SQ",
+            "7"
+          ],
+          [
+            "3.2.",
+            "Connecting SQ to a PC.",
+            "7"
+          ],
+          [
+            "3.3.",
+            "Using SQset program",
+            "7"
+          ],
+          [
+            "4. FLASH UPGRADE",
+            "10"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1.\nSAFETY SECTION\nThis Safety Section should be read before commencing any work on the equipment.\n1.1. Health and safety\nThe information in the Safety Section of the product documentation is intended to ensure that products are\nproperly installed and handled in order to maintain them in a safe condition. It is assumed that everyone who will\nbe associated with the equipment will be familiar with the contents of the Safety Section.\n1.2. Explanation of symbols and labels\nThe meaning of symbols and labels that may be used on the equipment or in the product documentation is given\nbelow.\nCaution: refer to product documentation\nDouble isolation\nFunctional earth terminal\nNOTE - this symbol may also be used for a protective/safety earth terminal if that terminal is a part of a terminal\nblock or sub-assembly eg. power supply.\n1.3. Warnings, regular information and remarks referring to CE-marking\nIn this manual installations and service instructions for the synchroscope SQ0204 and SQ0214 are to be found.\nInstallation as well as use of the SQ will involve working with dangerous currents and voltages. Professionals\nmust handle these areas. ISKRA Instrumenti d.d. does not take on responsibility for the use and installation. If\nany doubt comes up concerning the installation or use of the system, on which the SQ is to be used for\nmeasurement, the person responsible for the power installation should be contacted.\nSynchroscopes SQ0204 and SQ0214 are CE-marked according to the LV-directive and EMC-directive for\nhousing and light industry, which normally covers the most common use of the SQ.\nBefore energising the equipment, the following should be checked:\nCorrect UGEN and UBB connection for a proper display of U, fand Ap ;\nCaution: Improper voltage connection may lead to a malfunction or even permanent damage of the SQ\nDisposal\nIt is recommended that incineration and disposal to watercourses is avoided. The product should be disposed of\nin a safe manner.\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "2.\nSETTING SPECIAL FUNCTIONS\n2.1. Disassembling and assembling the SQ\nTo set special functions, SQ has to be disassembled.\n· disconnect all terminals.\n1\nCaution: risk of electric shock.\n· remove a cover from the top of all three buttons at the SQ rear side\n· unscrew and remove all three buttons (see figure 1)\n· remove a front panel frame (see figure 2)\n· remove a front panel (see figure 3)\nAfter special functions are set, SQ has to be assembled.\n· put a front panel together with the rest of the SQ (see figure 3)\n· put on a front panel frame (see figure 2)\n· turn all three potentiometers to the uttermost left end\n· put on all three buttons at the SQ rear side (do not fasten the buttons at this point yet)\n· turn a button pointer to the uttermost left line\n· fasten the buttons with a screw and put on the button covers (see figure 1)\n· set the button positions to a desired value\n•\nconnect all terminals\nfigure 1: Buttons removal\n52 0254\nfigure 3: Front panel removal\nA\n.........\nfigure 2: Front panel frame removal\n4",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "2.2. Setting proper special function jumper\nSpecial functions are set with three jumpers (see figure 4)\nfigure 4: Position of jumpers on a SQ PCB\nSQ is equipped with three special functions:\n> DEAD BUS-BAR FUNCTIONALITY\n> OVER AND UNDER FREQUENCY SYNCHRONISING\n> ADJUSTABLE LENGTH OF A SYNC PULSE\n2.2.1. Dead bus-bar functionality\nWith dead bus-bar function enabled, the synchronisation relay will be activated and the green SYNC LED will\nbe lit, when the bus-bar voltage is below the dead bus-bar offset level and the generator voltage exceeds 80% of\nnominal voltage.\nIF UGEN > 80%UN AND UBUS < UBUS OFFSET > SYNC ACTIVATED\nDB\na At ba Ap b\nDead bus-bar functionality jumper position\n(see also figure 4)\n2.2.2. Over and under frequency synchronising\nIf a jumper for over and under frequency synchronising is not set, Ap window of LED display is set\nsymmetrically around 0°. Ap setting button is used to set Ap difference from +20° to -20° thus synchronising\nwith fGEN < fBus and fGEN > fBUS is possible.\n5",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "UNDER FREQUENCY SYNC\n· Ap window of LED dispaly is set asymmetrically.\n· only synchronising with IGEN < IBUS is possible\n· Ap setting button is used to set Ap difference from -2° to -20°\n| DB a At ba Ap b\nOVER FREQUENCY SYNC\n· Ap window od LED dispaly is set asymmetrically.\n· only synchronising with fGEN > fBus is possible\n· Ap setting buton is used to set Ap difference from +2° to +20°\nDB a At ba Ap b\nUnder frequency synchronising jumper\nposition (see also figure 4)\nOver frequency synchronising jumper\nposition (see also figure 4)\n2.2.3. Length of a SYNC pulse\nIf a jumper for the length of a SYNC pulse is not set, the synchronisation relay will be active as long as\nsynchronisation conditions are set (continuous). This function also applies when a dead bus-bar function is set.\nDB\na At ba Ap b\nDB\na At ba Ap b\n100 ms\nSynchronisation pulse length jumper\nposition (see also figure 4)\n300 ms\nSynchronisation pulse length jumper\nposition (see also figure 4)\n6",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "3.\nSETING PROGRAMABLE PARAMETERS\n3.1. Disassembling and assembling the SQ\nSee section 2.1.\n3.2. Connecting SQ to a PC\nIn order to set programmable parameters on a SQ, it has to be connected to a PC via special communication\nadapter MIPack® (for details about MIpack® see MIpack® user's manual)\nfigure 5: Connecting a communication adapter\nMIpack® to the SQ\n3.3. Using SQset program\nMinimum hardware and system requirements:\n-\nIntel PENTIUM 90Mhz and compatible with at least 16Mb RAM\n-\n5Mb of free disk space\n-\n1 free serial port\n-\nWINDOWS 95\nParameters are set with SQset program.\nNOTE - SQ has to be turned on in order to set programmable parameters.\nCaution: risk of electric shock. Only authorised personnel should perform following procedures\nParameters that can be set with SQset program are:\n1. Required voltage on LCD display when UNOMINAL is applied\n2. Dead bus bar offset level\n3. Variable length of a SYNC pulse\nWhen SQset program is launched, a window in figure 6 appears. In order to start setting parameters, a proper\nserial port and communication properties have to be set.\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "SQSet\nver. 1.02\nSQSet\nSN#:\nx\n4\nCOM1\nCommunication is not established!\nVer .:\n9600,n,8,1\nUnom:\nUlcd :\nRelay\n300ms\nCONTINUOUS\nPROGRAMMABLE\nWRITE\nOK\nfigure 7: Communication error warning. Check if\ncommunication adapter is connected to the SQ and\nthe SQ is turned on\n200ms\nREAD\nDead bus bar\nI ACTIVE\n20%\nEXIT\nfigure 6: SQset start-up window\nTo start setting parameters, first press READ button.\nIf communication adapter is not connected to the SQ or the SQ is not turned on or a communication port is false,\na communication error warning is displayed (see figure 7).\nProgram reads serial number, program version and all parameters currently written in SQ (see figure 8). At this\npoint, writing parameters is disabled. Writing is disabled as long as parameters are unchanged (see figure 8).\nSQSet\nver. 1.02\nSQSet\nver. 1.02\nSN#: 00000109\nVer .: ¥1.16\nUnom: 110V\nCOM1\n9600,n,8,1\nSN#: 00000109\nVer .: ¥1.16\nUnom: 110V\nCOM1\n9600,n,8,1\nUlcd :\n110\nV\nUlcd :\n400\nV\nRelay\n@ 300ms\nCONTINUOUS\nPROGRAMMABLE\nREAD\nWRITE\nRelay\n300ms\nCONTINUOUS\nPROGRAMMABLE\nWRITE\n200ms\n100ms\nREAD\nDead bus bar\nACTIVE\n20%\nDead bus bar\nACTIVE\n10%\nEXIT\nEXIT\nfigure 8: Reading parameters\ncurrently written in SQ\nfigure 9: Changed parameters are\nmarked with red colour\nSQSet\nver. 1.02\nSN#: 00000109\nVer .: ¥1.16\nUnom: 110V\nUlcd :\n400\n1\nV\nRelay\n300ms\nCONTINUOUS\nPROGRAMMABLE\n100ms\nREAD\nDead bus bar\nACTIVE\n10%\n.\nEXIT\nCOM1\n9600,n,8,1\nWRITE\nfigure 10: Changed parameters are\nsaved and active\nWhen a parameter is changed, it is marked with a red colour and WRITE button is enabled (see figure 9).\nNOTE - some parameters have additional setting beside check-box (relay set to programmable, Dead bus bar).\nWhen all parameters are set as required, press the WRITE button.\nBesides setting parameters, SQset program checks if jumpers are set according to required functionality and if\nchosen voltage range for a LCD display is regular.\n8",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "If jumper is set/reset incorrectly, a warning is displayed and a program waits until jumper is reset/set (see figure\n11 for example).\nSET JUMPERS\nx\nfigure 11: Some parameters require correct jumper setting.\nSet jumper on t-a.\nRetry\nCancel\nThe highest voltage set in ULCD droplist is 800V, or 800kV. (If, for example, 900V is to be displayed when\nnominal voltage is measured, one should set 0.90kV in ULCD droplist). Otherwise warning will be displayed (see\nfigure 12).\nSQSet\nX\nNumber is greater then 800!\nfigure 12: Incorrect ULCD voltage set warning.\nOK\nThe lowest ULCD voltage that can be set is 30V. If less than that is set, warning will be displayed (see figure 13).\nSQSet\n×\nUlcd out of range!\nfigure 13: ULCD voltage too low warning.\nÖK\nAs fast as the write sequence is complete, changed parameters are no longer marked with a red colour. It means\nthat parameters are now saved and active (see figure 10). WRITE is again disabled as long as parameters are\nunchanged.\nTo set parameters to another SQ, SQset need not to be restarted. When communication adapter is connected to\nnew SQ and it is turned on, first press READ and then set required parameters as described.\n9",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "4.\nFLASH UPGRADE\nIn case if flash upgrade will be required, software and documentation will be delivered. Hardware is the same as\nfor setting programmable parameters (MIpack).\nIskra\nIskra MIS, d.d.\nLjubljanska c. 24a\nSI-4000 Kranj\nSlovenia\ntel .: +386 4 237 21 40\nfax: +386 4 237 21 29\ne-mail: info@iskra-mis.si\nwww.iskra-mis.si\nTÜV\nBO 9001\nCE\nCRS",
+      "tablas": []
+    }
+  ]
+}

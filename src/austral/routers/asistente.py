@@ -8,12 +8,13 @@ router = APIRouter()
 class PreguntaRequest(BaseModel):
     user_id: str  # Incluye el user_id para manejar el contexto
     pregunta: str
+    categoria: str = None  # Parámetro opcional para filtrar por categoría
 
 @router.post("/asistente")
 def preguntar_al_asistente(req: PreguntaRequest):
     try:
-        # Llamamos al asistente pasándole la pregunta y el user_id
-        respuesta = responder_asistente(req.pregunta, req.user_id)
+        # Llamamos al asistente pasándole la pregunta, el user_id y la categoría
+        respuesta = responder_asistente(req.pregunta, req.user_id, req.categoria)
         return {"respuesta": respuesta}
     except Exception as e:
         # En caso de error, se retorna un mensaje adecuado

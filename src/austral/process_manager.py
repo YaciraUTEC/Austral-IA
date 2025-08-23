@@ -9,14 +9,27 @@ from austral.extractor.parser_excel import guardar_fragmentos_excel
 
 OUTPUT_FOLDER = "output"
 FRAGMENTS_FOLDER = os.path.join(OUTPUT_FOLDER, "fragmentos")
-EXTRACTED_JSON_FOLDER_PDF = os.path.join(OUTPUT_FOLDER, "extractos_json", "pdf")
-EXTRACTED_JSON_FOLDER_EXCEL = os.path.join(OUTPUT_FOLDER, "extractos_json", "excel")
-METADATA_PATH = os.path.join(FRAGMENTS_FOLDER, "fragmentos_metadata.json")
-REGISTRO_PROCESADOS_PATH = os.path.join(OUTPUT_FOLDER, "procesados.json")
 
+# Ahora estas serán rutas base y se completarán con la categoría
+EXTRACTED_JSON_BASE_PDF = os.path.join(OUTPUT_FOLDER, "extractos_json", "pdf")
+EXTRACTED_JSON_BASE_EXCEL = os.path.join(OUTPUT_FOLDER, "extractos_json", "excel")
+
+# La metadata y registros también se separan por categoría
+METADATA_BASE_PATH = os.path.join(FRAGMENTS_FOLDER, "fragmentos_metadata_{}.json")
+REGISTRO_BASE_PATH = os.path.join(OUTPUT_FOLDER, "procesados_{}.json")
+
+# Categorías disponibles
+CATEGORIAS = ["mantenimiento", "proyectos"]
+
+# Crear directorios base
 os.makedirs(FRAGMENTS_FOLDER, exist_ok=True)
-os.makedirs(EXTRACTED_JSON_FOLDER_PDF, exist_ok=True)
-os.makedirs(EXTRACTED_JSON_FOLDER_EXCEL, exist_ok=True)
+os.makedirs(EXTRACTED_JSON_BASE_PDF, exist_ok=True)
+os.makedirs(EXTRACTED_JSON_BASE_EXCEL, exist_ok=True)
+
+# Crear directorios para cada categoría
+for categoria in CATEGORIAS:
+    os.makedirs(os.path.join(EXTRACTED_JSON_BASE_PDF, categoria), exist_ok=True)
+    os.makedirs(os.path.join(EXTRACTED_JSON_BASE_EXCEL, categoria), exist_ok=True)
 
 def cargar_json(path):
     if os.path.exists(path):
@@ -33,23 +46,44 @@ def filtrar_contenido_metadato(frag: dict) -> dict:
     return {k: v for k, v in frag.items() if k in campos_permitidos}
 
 def eliminar_fragmentos_y_jsons(nombre_base):
-    for carpeta in [FRAGMENTS_FOLDER, EXTRACTED_JSON_FOLDER_PDF, EXTRACTED_JSON_FOLDER_EXCEL]:
+    for carpeta in [FRAGMENTS_FOLDER, EXTRACTED_JSON_BASE_PDF, EXTRACTED_JSON_BASE_EXCEL]:
         for archivo in os.listdir(carpeta):
             if archivo.startswith(nombre_base):
                 os.remove(os.path.join(carpeta, archivo))
 
 
 
-def run():
-    inicio = time.perf_counter()
-    archivos = obtener_archivos_sharepoint()
+def obtener_rutas_categoria(categoria):
+    """
+    Devuelve las rutas específicas para una categoría
+    """
+    return {
+        "pdf": os.path.join(EXTRACTED_JSON_BASE_PDF, categoria),
+        "excel": os.path.join(EXTRACTED_JSON_BASE_EXCEL, categoria),
+        "metadata": METADATA_BASE_PATH.format(categoria),
+        "registro": REGISTRO_BASE_PATH.format(categoria)
+    }
 
-    registro_procesados = cargar_json(REGISTRO_PROCESADOS_PATH)
-    metadatos = cargar_json(METADATA_PATH)
+def procesar_categoria(categoria):
+    """
+    Procesa todos los documentos de una categoría específica
+    """
+    inicio_categoria = time.perf_counter()
+    print(f"\n🔍 Procesando categoría: {categoria.upper()}")
+    
+    # Obtener rutas específicas para esta categoría
+    rutas = obtener_rutas_categoria(categoria)
+    
+    # Cargar registros y metadatos de esta categoría
+    registro_procesados = cargar_json(rutas["registro"])
+    metadatos = cargar_json(rutas["metadata"])
     metadatos_actualizados = []
-
+    
+    # Obtener archivos solo de esta categoría
+    archivos = obtener_archivos_sharepoint(categoria)
+    
     ids_actuales = set()
-
+    
     for archivo in archivos:
         nombre = archivo["filename"]
         contenido = archivo["content"]
@@ -71,26 +105,32 @@ def run():
                     with open(fragment_path, "rb") as f:
                         fragment_bytes = f.read()
 
-                    output_path = os.path.join(EXTRACTED_JSON_FOLDER_PDF, f"{frag['fragment_id']}.json")
+                    output_path = os.path.join(rutas["pdf"], f"{frag['fragment_id']}.json")
                     extraer_texto_a_json(frag["fragment_id"], fragment_bytes, output_path=output_path)
 
-                    metadatos_actualizados.append(filtrar_contenido_metadato(frag))
+                    # Añadir la categoría a los metadatos
+                    frag_data = filtrar_contenido_metadato(frag)
+                    frag_data["categoria"] = categoria
+                    metadatos_actualizados.append(frag_data)
 
             elif nombre.lower().endswith((".xlsx", ".xls")):
-                guardar_fragmentos_excel(fragmentos, EXTRACTED_JSON_FOLDER_EXCEL)
+                guardar_fragmentos_excel(fragmentos, rutas["excel"])
                 for frag in fragmentos:
-                    metadatos_actualizados.append(filtrar_contenido_metadato(frag))
+                    frag_data = filtrar_contenido_metadato(frag)
+                    frag_data["categoria"] = categoria
+                    metadatos_actualizados.append(frag_data)
 
             registro_procesados[item_id] = {
                 "filename": nombre,
                 "lastModified": ultima_fecha,
-                "procesado": True
+                "procesado": True,
+                "categoria": categoria
             }
 
         except Exception as e:
             print(f"❌ Error al procesar {nombre}: {e}")
 
-    # 🔁 Eliminar archivos locales de documentos eliminados de SharePoint
+    # Eliminar archivos de documentos eliminados en SharePoint
     ids_guardados = set(registro_procesados.keys())
     ids_eliminados = ids_guardados - ids_actuales
     for id_eliminado in ids_eliminados:
@@ -99,9 +139,25 @@ def run():
         eliminar_fragmentos_y_jsons(nombre_base)
         del registro_procesados[id_eliminado]
 
-    guardar_json(registro_procesados, REGISTRO_PROCESADOS_PATH)
+    # Guardar registros y metadatos actualizados
+    guardar_json(registro_procesados, rutas["registro"])
+    guardar_json(metadatos_actualizados, rutas["metadata"])
     
-    guardar_json(metadatos_actualizados, METADATA_PATH)
+    fin_categoria = time.perf_counter()
+    print(f"✅ Tiempo procesando {categoria}: {fin_categoria - inicio_categoria:.2f} segundos")
+
+def run():
+    inicio = time.perf_counter()
+    
+    # Procesar cada categoría por separado
+    for categoria in CATEGORIAS:
+        procesar_categoria(categoria.lower())
+    
+    ids_actuales = set()    # Este bloque ahora está incluido en procesar_categoria()
+    # y hemos eliminado el código redundante
+
+    fin = time.perf_counter()
+    print(f"✅ Tiempo total para todas las categorías: {fin - inicio:.2f} segundos")
 
     fin = time.perf_counter()
     print(f"✅ Tiempo total: {fin - inicio:.2f} segundos")

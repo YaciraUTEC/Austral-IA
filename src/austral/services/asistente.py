@@ -8,7 +8,7 @@ HISTORIAL_CONVERSACION = {}
 MAX_MENSAJES_HISTORIAL = 5
 
 SYSTEM_PROMPT= f"""
-   "Eres Austral IA, un asistente técnico confiable y profesional, especializado en mantenimiento industrial y gestión de proyectos. Eres capaz de mantener un hilo conversacional. Tu tarea es proporcionar respuestas claras, bien redactadas y útiles, usando únicamente el contexto proporcionado.
+   Eres Austral IA, un asistente técnico confiable y profesional, especializado en mantenimiento industrial y gestión de proyectos. Eres capaz de mantener un hilo conversacional. Tu tarea es proporcionar respuestas claras, bien redactadas y útiles, usando únicamente el contexto proporcionado.
 
         La información proviene de documentos PDF (como informes técnicos y reportes de avance) y hojas Excel (como cronogramas, presupuestos y seguimientos). Estos pueden incluir texto libre, tablas numéricas y descripciones detalladas de actividades.
 
@@ -188,9 +188,9 @@ def es_cambio_de_tema(historial, pregunta_actual):
     veredicto = chat_completion(mensajes).strip().lower()
     return veredicto.startswith("s")
 
-def responder_asistente(pregunta: str, user_id: str) -> str:
+def responder_asistente(pregunta: str, user_id: str = "default", categoria: str = None) -> str:
     try:
-        print(f"\n🔍 Pregunta recibida de {user_id}: {pregunta}")
+        print(f"\n🔍 Pregunta recibida de {user_id}: {pregunta}{f' (categoría: {categoria})' if categoria else ''}")
         
         # Inicializar historial si es la primera vez del usuario
         if user_id not in HISTORIAL_CONVERSACION:
@@ -198,10 +198,26 @@ def responder_asistente(pregunta: str, user_id: str) -> str:
 
         historial = HISTORIAL_CONVERSACION[user_id]
 
-        # Buscar nuevos fragmentos relacionados con la pregunta
-        print("🔎 Buscando nuevos fragmentos...")
-        fragmentos_relevantes = buscar_fragmentos(pregunta)
+        # Verificar si se especificó una categoría
+        if categoria:
+            print(f"🔎 Buscando fragmentos específicamente en la categoría '{categoria}'...")
+            # Buscar fragmentos solo en la categoría especificada
+            fragmentos_relevantes = buscar_fragmentos(pregunta, categoria=categoria)
+            
+            # Si no hay fragmentos relevantes en esta categoría específica, responder apropiadamente
+            if not fragmentos_relevantes:
+                print(f"⚠️ No se encontraron fragmentos relevantes en la categoría '{categoria}'.")
+                respuesta = f"No se encontró información relevante en la categoría '{categoria}' para responder tu pregunta. Esta consulta podría estar relacionada con otra área."
+                historial.append({"role": "user", "content": pregunta})
+                historial.append({"role": "assistant", "content": respuesta})
+                HISTORIAL_CONVERSACION[user_id] = historial[-MAX_MENSAJES_HISTORIAL:]
+                return respuesta
+        else:
+            # Si no se especificó categoría, buscar en todas
+            print("🔎 Buscando fragmentos en todas las categorías...")
+            fragmentos_relevantes = buscar_fragmentos(pregunta)
 
+        # Verificar si se encontraron fragmentos (este bloque se ejecuta solo si la categoría no está especificada o si se encontraron fragmentos)
         if not fragmentos_relevantes:
             print("⚠️ No se encontraron fragmentos relevantes.")
             respuesta = "No se encontró información relevante en los documentos para responder tu pregunta."

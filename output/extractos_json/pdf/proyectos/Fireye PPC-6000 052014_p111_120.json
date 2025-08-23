@@ -1,0 +1,497 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p111_120",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nThis option parameter is only available if option 30.0 is non-zero.\nThis option parameter must be used when calibrating the oxygen probe.\nThere are three possible values:\nOption parameter 30.6\nvalue\nMeaning\n0\nNo calibrate. This is the normal operating condition, where the probe is\nused to measure the oxygen concentration in the flue.\n1\nCalibrate in air. The probe will be calibrated for 'offset' at the normal\natmospheric oxygen concentration.\n2\nCalibrate in reference gas. The probe will be calibrated for 'gain' in a\nreference gas with a nominal oxygen concentration the level specified in\noption parameter 30.3 (typically 3.0%).\nOnce this calibration has been successfully completed the values in 30.1 and 30.2 will be automatically\nupdated.\nO2\nOption 30.7 - Boiler transport delay (5 - 60 seconds) LV3\nBoiler transport delay is the time taken for 'gas' to travel from the burner to the oxygen probe. This delay\nvaries with burner fire rate.\nIn order for the oxygen trim control loop to be stable, this parameter must be set accurately to the transport\ndelay of the boiler when at low fire. This option may be set between 5 and 60 seconds inclusive.\n. To measure the transport delay, ignite the burner and enter adjust ratio mode. Select the low fire setpoint\nand allow time for the flue oxygen reading to settle. Once the oxygen reading is steady, make a step\nchange to the fuel/air ratio and start a timer. As soon as the measured oxygen reading begins to change,\nstop the timer. Set the option parameter to the recorded timer value in seconds.\n. Automatic trim commissioning (option 30.9) will attempt to set this automatically. However the value must\nbe checked by the engineer.\nOption 30.8 - Reset oxygen trim profile (0/1) LV3\nDuring full automatic operation, the O2 trim system will learn and store the percentage of trim applied to\nvarious firing rates. This provides a \"feed forward\" aspect to O2 trim. If any changes to target O2 values are\nmade after the system has been in operation, the trim profile must be reset so as to not apply previous trim\nfeed forward. A new trim profile will be learned as the burner modulates. Only the trim profile is affected. The\nOxygen setpoints and flow values are not changed.\nThis option parameter allows the learned trim profile to be reset. If the option is set to 1 any learned profile\ncurrently held in memory will be reset and the trim drives will return to their commissioned positions for the\ncorresponding modulation position. Once the profile has been reset this option parameter will automatically be\nreset to 0.\nOption 30.9 - Automatic trim commissioning (0 / 1) LV3\n111",
+      "tablas": [
+        [
+          [
+            "Option parameter 30.6 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "No calibrate. This is the normal operating condition, where the probe is used to measure the oxygen concentration in the flue."
+          ],
+          [
+            "1",
+            "Calibrate in air. The probe will be calibrated for 'offset' at the normal atmospheric oxygen concentration."
+          ],
+          [
+            "2",
+            "Calibrate in reference gas. The probe will be calibrated for 'gain' in a reference gas with a nominal oxygen concentration the level specified in option parameter 30.3 (typically 3.0%)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nThe unit is able to automate the manual calculation procedures (option parameter 34.5), automatically\ncalculating and entering flow values, oxygen trim setpoints, and boiler transport delay. The automatic\ncommissioning procedure will only work if the following conditions are met:\n· Option parameter 30.9 (automatic trim commissioning) is set to 1\n· An oxygen probe is fitted and fully operational\n· The unit is in adjust ratio with the burner firing a single fuel only\n· A hydrocarbon ratio has been entered for the current fuel (see option parameters 35.1 - 35.4).\nThe auto commissioning procedure will usually take between 10 and 30 minutes (depending on number of\nsetpoints), and is performed by the unit as follows:\n1.\nBeginning with high fire, the unit moves the drives to each point in the firing range. The display\nwill show O2.\n2.\nWhen the measured oxygen reading settles, the unit stores the measured oxygen reading as the\nnew oxygen setpoint.\n3\nThe drives are moved to the next position directly below high fire (Ph-1) and wait for the oxygen to\nstabilize.\n4.\nThe unit moves the air drives up to the point above the current setpoint, leaving the fuel drive in\nthe same position. The display will show 'Flow calc An + 1'.\n5.\nWhen the new oxygen reading settles, the unit calculates and stores the new flow value. If the\noxygen reading exceeds 15.0% during this stage, the unit shuts the burner down with F77.\n6\nWhen the unit has completed the low fire point, the measured boiler transport delay (at low fire) is\nstored in option parameter 30.7. Option parameter 30.5 (oxygen trim enable) is set to zero.\n7.\nIMPORTANT:\nYou must use \"adjust ratio\" mode to confirm each position from P3 (low\nfire) to Ph (high fire). If the flow values appear reasonable (about 4 to 6% change at each position)\nonce you have finished, setting option 30.5 to 1 will enable O2 trim. There is a one-minute delay\nafter exiting commissioning mode before trim will enable. If the flow values are unreasonable, they\nmay be adjusted manually by placing the cursor to the \"FLO\" position and using the up/down\narrows set the desired flow value. Using EK44 verify the O2 levels at each position and adjust to\nmatch if required. EK46 will help troubleshoot O2 trim issues.\nBEFORE ENABLING TRIM, USE ADJUST RATIO MODE TO MANUALLY CHECK THE CALCULATED\nFLOW VALUES, OXYGEN SETPOINTS AND TRANSPORT DELAY. THE LOW FIRE PERCENTAGE\nFLOW VALUE SHOULD CONFORM APPROXIMATELY TO THE TURN-DOWN RATIO OF THE BURNER.\nSUMMARY\nTo perform automatic trim commissioning, follow the procedure below:\n1.\nIf the probe is new, enter the offset and gain values in option parameters 30.1 and 30.2 which are\nsupplied with the probe. To re-calibrate the probe refer to section 8.\n2.\nEnter adjust ratio mode (See section 5).\n3.\nEnable automatic trim commissioning by setting option parameter 30.9 to 1.\n4.\nWait for procedure to finish.\n5.\nCheck that the 02, flow and transport delay values are sensible. Use EK44 for O2 value.\n6.\nCheck calibration of the oxygen probe.\n112",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\n7.\nConfirm setup using \"adjust ratio\" mode.\nNOTE: If the boiler shuts off for any reason during automatic commissioning, the sequence will continue\nwhen the boiler re-starts.\nOption parameter\n30.9 value\nMeaning\n0\nNot selected.\n1\nPerform automatic trim characterization. The control will attempt to\ncharacterize the burner profile by calculating flow values and selecting oxygen\nsetpoints to match the currently commissioned points.\nAutomatic trim commissioning will be performed under the following conditions:\n. An oxygen probe is fitted and fully operational\n· The control is in adjust ratio mode.\n· A hydrocarbon ratio has been entered for the current fuel (see option\nparameters 35.1 - 35.4).\nOption 31.0 - Limit Modulation Range (0 to 1) LV3\nBy default, the control modulates the burner between the set-points P3 (low fire) and Ph (high fire), where Ph is\nthe last set-point entered in commission ratio mode. If oxygen trim is fitted, it is not possible for any drive\nposition to be trimmed lower than point P3 (low fire) or higher than point Ph (high fire). Basically, you can't take\nfuel or air off at low fire, and you can't add fuel or air at high fire.\nThis option parameter allows the engineer to overcome this limitation in one of two ways. First the modulation\nrange of the burner can be limited so that the burner may only modulate between points P4 (one set-point\nabove low fire) and Ph-1 (one set-point below high fire). Since oxygen trim is not affected by this limitation, each\ndrive may be trimmed between the points P3 and Ph. This means that it is not possible to over-fire or under-fire\nthe burner but a degree of trim may still be achieved at high and low fire. Note that this option may reduce the\nturn down of the boiler.\nOption parameter\n31.0 value\nMeaning\n0\nModulation not limited. Burner modulates from P3 to Ph-\nOxygen trim works over full range from P3 to Ph, but may not be able to apply\ntrim at high fire, or low fire - depending on trim direction.\nThe burner always modulates to the desired modulation rate, which may limit\nthe system's ability to maintain the desired oxygen value.\n1\nNormal modulation range limited to P4 to Ph-1 always.\nOxygen trim works over full range from P3 to Ph, and can apply extra trim at low\nand high fire - limited by P3 and Ph-\nThis setting is useful when there is extra capacity (usually air flow) available for\nthe burner, but otherwise it will reduce the turn-down ratio of the boiler.\nOptions 31.1 to 31.4 - Trim Type for profiles 1 to 4 (0 to 2) LV3\nO2\n113",
+      "tablas": [
+        [
+          [
+            "Option parameter 30.9 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "Not selected."
+          ],
+          [
+            "1",
+            "Perform automatic trim characterization. The control will attempt to characterize the burner profile by calculating flow values and selecting oxygen setpoints to match the currently commissioned points. Automatic trim commissioning will be performed under the following conditions: . An oxygen probe is fitted and fully operational · The control is in adjust ratio mode. · A hydrocarbon ratio has been entered for the current fuel (see option parameters 35.1 - 35.4)."
+          ]
+        ],
+        [
+          [
+            "Option parameter 31.0 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "Modulation not limited. Burner modulates from P3 to Ph- Oxygen trim works over full range from P3 to Ph, but may not be able to apply trim at high fire, or low fire - depending on trim direction. The burner always modulates to the desired modulation rate, which may limit the system's ability to maintain the desired oxygen value."
+          ],
+          [
+            "1",
+            "Normal modulation range limited to P4 to Ph-1 always. Oxygen trim works over full range from P3 to Ph, and can apply extra trim at low and high fire - limited by P3 and Ph- This setting is useful when there is extra capacity (usually air flow) available for the burner, but otherwise it will reduce the turn-down ratio of the boiler."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nThese option parameters determine which drive will be trimmed (Air or Fuel) in profiles 1 to 4. These\nparameters are used together with the parameters entered in option parameters 2.0 to 2.9 to determine which\ndrives are trimmed, and in which direction.\nParameter\nMeaning\n31.1\nTrim Type for profile 1\n31.2\nTrim Type for profile 2\n31.3\nTrim Type for profile 3\n31.4\nTrim Type for profile 4\nParameter value in\n31.X\nMeaning\n0\nNo Trim. Do not apply oxygen trim when running on this profile.\n1\nAir Trim. Trim 'Air' drives when running on this profile (see option parameters 2.0\nto 2.9.)\n2\nFuel Trim. Trim 'Fuel' drives when running on this profile (see option parameters\n2.0 to 2.9.)\nO2\nOption 32.0 - Trim limit default (0/1) LV3\n0 = Default Trim Limit of + 5%\n1 = Enables options 32.1 to 32.4\nO2\nOptions 32.1 to 32.4 - Trim limits (0.0 - 25.0) LV3\nOption 32.0 is only available if option 30.5 (oxygen input function) has been set for closed loop oxygen trim.\nIt is possible for the system to trim the air or fuel drives up to a maximum deviation of +25.0% of the total air or\nfuel flow for the chosen trim drives.\nIf option 32.0 is set to 0, the default trim limit will be + 5.0% for all profile selections. Option parameters 32.1 to\n32.4 will not be available.\nIf option 32.0 is set to 1, it is possible to individually adjust the trim limit for each profile selection using option\nparameters 32.1 to 32.4. The trim limit may be adjusted from 0.0% (no trim) up to a maximum of + 25.0%\n(maximum allowable trim).\nIt is the responsibility of the commissioning engineer to ensure the trim limit set will not allow a\nhazardous combustion condition to occur in the event of an oxygen probe failure. Where oxygen is to\nbe considered safety critical, option parameters 31.X should be used to setup a second oxygen\nmonitor. When a second oxygen monitoring system is used, the oxygen can be considered fail-safe,\nand the trim limits can be set up to 50% instead of 25%.\nO2\nOptions 33.1 to 33.4 - Trim integral gain (Default 10%) LV3\nOptions 33.1 to 33.4 are only available if option 30.5 (oxygen input function) has been set for closed loop\noxygen trim.\n114",
+      "tablas": [
+        [
+          [
+            "Parameter",
+            "Meaning"
+          ],
+          [
+            "31.1",
+            "Trim Type for profile 1"
+          ],
+          [
+            "31.2",
+            "Trim Type for profile 2"
+          ],
+          [
+            "31.3",
+            "Trim Type for profile 3"
+          ],
+          [
+            "31.4",
+            "Trim Type for profile 4"
+          ]
+        ],
+        [
+          [
+            "Parameter value in 31.X",
+            "Meaning"
+          ],
+          [
+            "0",
+            "No Trim. Do not apply oxygen trim when running on this profile."
+          ],
+          [
+            "1",
+            "Air Trim. Trim 'Air' drives when running on this profile (see option parameters 2.0 to 2.9.)"
+          ],
+          [
+            "2",
+            "Fuel Trim. Trim 'Fuel' drives when running on this profile (see option parameters 2.0 to 2.9.)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nIn order for the oxygen trim control loop to be stable, the integral gain must be set correctly. Options 33.1 to\n33.4 allow the integral gain to be set individually for each profile combination to any value between 0.0 and\n99.9%. As a general recommendation, the integral gain should be initially set to 10.0%. This value must be set\nabove 0.0 for the system to apply trim.\nIf the burner is firing, it is only possible to make an adjustment to the option parameter that relates to the\nselected profile. If the burner is not firing, the integral gain for any profile selection may be adjusted.\nOption 34.0 - Trim proportional gain (0/1) LV3\nOptions 34.1 to 34.4 - Trim proportional gain (0.0 - 99.9%) LV3\nOptions 34.0 to 34.4 are only available if option 30.5 (oxygen input function) has been set for closed loop\noxygen trim.\nIf oxygen trim proportional gain is not required for any profile selection, set option parameter 34.0 to 0.\nIf oxygen trim proportional gain is required, set option parameter 34.0 to 1. Option parameters 34.1 to 34.4 will\nthen become available. Options 34.1 to 34.4 allow the loop gain to be set individually for each profile selection\nto any value between 0.0 and 99.9%.\nOxygen trim proportional gain is not normally required.\nOption 34.5 - Calculating and entering the flow values manually LV3\nIf the flow values are to be calculated manually, the procedure below must be followed.\nEnter Adjust Ratio Mode with oxygen trim disabled as outlined above.\n1. Select the high fire position. This will cause the display to show A(n), where n is the number of the high fire\nprofile point.\n2. Wait until the oxygen reading has stabilized, the value can be viewed using the engineer's key.\n3. Record the excess air value at location x in the table. For single fuel profiles, this value may be found\nusing the Engineer's Key parameter EK48 (provided the hydrocarbon ratio has been entered into the\nappropriate option parameter (35.1 - 35.4) for this fuel). For multiple fuel profiles, Refer to NOTE under\nsection Options 35.1 to 35.4.\n4. Select the profile position immediately below high fire. This will cause the display to show A(n -1).\n5. Wait until the oxygen reading has stabilized and record the excess air value at location a1 in the table\n6. Move air dampers 1 and 2 (if fitted) up until they stop, so that they are at the setpoint immediately above\nthe current position. Do not press enter.\n7. Wait until the oxygen reading has stabilized, then record the excess air value at location b1 in the table,\nrelating to the current profile position\n115",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\n8. Repeat the above for all other profile positions including low fire (profile position A3), recording each time\nthe values at locations a and b in the table. When extra air is added at P3, the time taken before the flue\noxygen reading starts to increase should be measured and entered into option parameter 30.7.\n9. After completing the table for all Excess Air values a and b, complete the Excess Air + 100 column, by\nadding 100 (i.e. y = x + 100, c = a + 100 and d = b + 100.\n10.Complete the Ratio column by dividing c by d (i.e. e = c/d).\n11.Complete the Airflow column by multiplying e by the previous value of f (i.e. fx = ex fo.).\n12. If the system will be applying trim to the fuel, the fuel flow column must be completed. This is achieved by\nmultiplying the airflow at each point by the ratio of excess air + 100 at high fire divided by the excess air +\n100 at the actual point (i.e. gx = fx(y/cx)).\nExample of table completed for A10 (high fire) to A8. In practice, the table must be filled out down to A3 (low\nfire).\nProfile\nposition\nExcess Air\nEx. Air + 100\ny = x + 100\nc = a + 100\nd = b + 100\nRatio\nAirflow\nFuel flow\nHigh fire\n= A10\nx\n10\ny\n110\n99.9%\n99.9%\n1 = A9\na1\n8\nC.\n108\ne1 = C1/d1\nf1 = e1 (99.9)\n91 = f1 (y/c1)\nb1\n33\n133\n0.812\n81.1%\n82.6%\n2 = A8\na2\n9\nC2\n109\n℮2 = C2/d2\nf2 = e2 (f1)\n92 = f2 (y/c2)\nb2\n20\nd2\n120\n0.908\n73.7%\n74.4%\n1\n1\n1\n1\n1\nI\nI\n1\n1\n-\n116",
+      "tablas": [
+        [
+          [
+            "Profile position",
+            "Excess Air",
+            "Ex. Air + 100 y = x + 100 c = a + 100 d = b + 100",
+            "Ratio",
+            "Airflow",
+            "Fuel flow"
+          ],
+          [
+            "High fire = A10",
+            "x\n:selected:",
+            "10",
+            "y\n:selected:",
+            "110",
+            "",
+            "99.9%",
+            "99.9%"
+          ],
+          [
+            "1 = A9",
+            "a1",
+            "8",
+            "C.",
+            "108",
+            "e1 = C1/d1",
+            "f1 = e1 (99.9)",
+            "91 = f1 (y/c1)"
+          ],
+          [
+            "",
+            "b1",
+            "33",
+            "",
+            "133",
+            "0.812",
+            "81.1%",
+            "82.6%"
+          ],
+          [
+            "2 = A8",
+            "a2",
+            "9",
+            "C2",
+            "109",
+            "℮2 = C2/d2",
+            "f2 = e2 (f1)",
+            "92 = f2 (y/c2)"
+          ],
+          [
+            "b2",
+            "20",
+            "d2",
+            "120",
+            "0.908",
+            "73.7%",
+            "74.4%"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1 1\n1 I I 1 1",
+            "",
+            "",
+            "",
+            "",
+            "1 1",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\nTable: Flow calculation table\nProfile\nposition\nExcess Air\nEx. Air + 100\ny = x + 100\nc = a + 100\nd = b + 100\nRatio\nAirflow\nFuel flow\nHigh fire\n= A\nx\ny\n1 = A\na1\nb1\nC1\nd1\ne1 = C1/d1\nf1 = e1 (99.9)\n91 = f1 (y/c1)\n2 = A\na2\nb2\nC2\nd2\ne2 = C2/d2\nf2 = e2 (f1)\n92 = f2 (y/c2)\n3 = A\na3\nb3\nC3\nd3\ne3 = C3/d3\nf3 = e3 (f2)\n93 = f3 (y/c3)\n4 = A\na4\nb4\nC4\nd4\ne4= C4/d4\nf4 = e4 (f3)\n94= f4 (y/c4)\n5 = A\na5\nb5\nC5\nd5\ne5 = C5/d5\nf5 = e5 (f4)\n95 = f5 (y/c5)\n6 = A\na6\nb6\nC6\nd6\nf6 = e6 (f5)\n96 = f6 (y/c6)\n7 = A\na7\nb7\nC7\nd7\ne7 = C7/d7\nf7 = e7 (f6)\n97 = f7 (y/c7)\n8 = A\nag\nb8\nC8\nd8\neg = Cg/d8\nf8 = eg (f7)\n98 = f8 (y/cg)\n9 = A\nag\nbg\nCg\ndg\neg = Cg/dg\nfg = eg (fg)\n9g = fg (y/cg)\n10 = A\na10\nb10\nC10\nd10\ne10 = C10/d10\nf10 = e10 (fg)\ng10 = f10 (y/c10)\n11 = A\na11\nb11\nC11\nd11\ne11= C11/d11\nf11 = e11 (f10)\n911 = f11 (y/c11)\n12 = A\na12\nb12\nC12\nd12\ne12= C12/d12\nf12 = e12 (f11)\n912 = f12 (y/c12)\n13 = A\na13\nb13\nC13\nd13\ne13 = C13/d13\nf13 = e13 (f12)\n913 = f13 (y/c13)\n14 = A\na14\nb14\nC14\nd14\ne14= C14/d14\nf14 = e14 (f13)\n914= f14 (y/c14)\n15 = A\na15\nb15\nC15\nd15\ne15 = C15/d15\nf15 = e15 (f14)15\n915 = f15 (y/c15)\n16 = A\na16\nb16\nC16\nd16\ne16= C16/d16\nf16 = e16 (f15)\n916 = f16 (y/c16)\n17 = A\na17\nb17\nC17\nd17\ne17= C17/d17\nf17 = e17 (f16)\n917 = f17 (y/c17)\n18 = A\na18\nb18\nC18\nd18\ne18= C18/d18\nf18 = e18 (f17)\n918 = f18 (y/c18)\n19 = A\na19\nb19\nC19\nd19\ne19 = C19/d19\nf19 = e19 (f18)\ng19 = f19 (y/c19)\n20 = A\n@20\nb20\nC20\nd20\nE20= C20/d20\nf20 = e20 (f19)\n920 = f20 (y/c20)\nNOTE: For the following Options 35.x, see procedure in\nSection 9.5.\n117",
+      "tablas": [
+        [
+          [
+            "Profile position",
+            "Excess Air",
+            "Ex. Air + 100 y = x + 100 c = a + 100 d = b + 100",
+            "Ratio",
+            "Airflow",
+            "Fuel flow"
+          ],
+          [
+            "High fire = A",
+            "x\n:selected:",
+            "",
+            "y\n:selected:",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1 = A",
+            "a1 b1",
+            "",
+            "C1 d1",
+            "",
+            "e1 = C1/d1",
+            "f1 = e1 (99.9)",
+            "91 = f1 (y/c1)"
+          ],
+          [
+            "2 = A",
+            "a2 b2",
+            "",
+            "C2 d2",
+            "",
+            "e2 = C2/d2",
+            "f2 = e2 (f1)",
+            "92 = f2 (y/c2)"
+          ],
+          [
+            "3 = A",
+            "a3 b3",
+            "",
+            "C3 d3",
+            "",
+            "e3 = C3/d3",
+            "f3 = e3 (f2)",
+            "93 = f3 (y/c3)"
+          ],
+          [
+            "4 = A",
+            "a4 b4",
+            "",
+            "C4 d4",
+            "",
+            "e4= C4/d4",
+            "f4 = e4 (f3)",
+            "94= f4 (y/c4)"
+          ],
+          [
+            "5 = A",
+            "a5 b5",
+            "",
+            "C5 d5",
+            "",
+            "e5 = C5/d5",
+            "f5 = e5 (f4)",
+            "95 = f5 (y/c5)"
+          ],
+          [
+            "6 = A",
+            "a6 b6",
+            "",
+            "C6 d6",
+            "",
+            "",
+            "f6 = e6 (f5)",
+            "96 = f6 (y/c6)"
+          ],
+          [
+            "7 = A",
+            "a7 b7",
+            "",
+            "C7 d7",
+            "",
+            "e7 = C7/d7",
+            "f7 = e7 (f6)",
+            "97 = f7 (y/c7)"
+          ],
+          [
+            "8 = A",
+            "ag b8",
+            "",
+            "C8 d8",
+            "",
+            "eg = Cg/d8",
+            "f8 = eg (f7)",
+            "98 = f8 (y/cg)"
+          ],
+          [
+            "9 = A",
+            "ag bg",
+            "",
+            "Cg dg",
+            "",
+            "eg = Cg/dg",
+            "fg = eg (fg)",
+            "9g = fg (y/cg)"
+          ],
+          [
+            "10 = A",
+            "a10 b10",
+            "",
+            "C10 d10",
+            "",
+            "e10 = C10/d10",
+            "f10 = e10 (fg)",
+            "g10 = f10 (y/c10)"
+          ],
+          [
+            "11 = A",
+            "a11 b11",
+            "",
+            "C11 d11",
+            "",
+            "e11= C11/d11",
+            "f11 = e11 (f10)",
+            "911 = f11 (y/c11)"
+          ],
+          [
+            "12 = A",
+            "a12 b12",
+            "",
+            "C12 d12",
+            "",
+            "e12= C12/d12",
+            "f12 = e12 (f11)",
+            "912 = f12 (y/c12)"
+          ],
+          [
+            "13 = A",
+            "a13 b13",
+            "",
+            "C13 d13",
+            "",
+            "e13 = C13/d13",
+            "f13 = e13 (f12)",
+            "913 = f13 (y/c13)"
+          ],
+          [
+            "14 = A",
+            "a14 b14",
+            "",
+            "C14 d14",
+            "",
+            "e14= C14/d14",
+            "f14 = e14 (f13)",
+            "914= f14 (y/c14)"
+          ],
+          [
+            "15 = A",
+            "a15 b15",
+            "",
+            "C15 d15",
+            "",
+            "e15 = C15/d15",
+            "f15 = e15 (f14)15",
+            "915 = f15 (y/c15)"
+          ],
+          [
+            "16 = A",
+            "a16 b16",
+            "",
+            "C16 d16",
+            "",
+            "e16= C16/d16",
+            "f16 = e16 (f15)",
+            "916 = f16 (y/c16)"
+          ],
+          [
+            "17 = A",
+            "a17 b17",
+            "",
+            "C17 d17",
+            "",
+            "e17= C17/d17",
+            "f17 = e17 (f16)",
+            "917 = f17 (y/c17)"
+          ],
+          [
+            "18 = A",
+            "a18 b18",
+            "",
+            "C18 d18",
+            "",
+            "e18= C18/d18",
+            "f18 = e18 (f17)",
+            "918 = f18 (y/c18)"
+          ],
+          [
+            "19 = A",
+            "a19 b19",
+            "",
+            "C19 d19",
+            "",
+            "e19 = C19/d19",
+            "f19 = e19 (f18)",
+            "g19 = f19 (y/c19)"
+          ],
+          [
+            "20 = A",
+            "@20 b20",
+            "",
+            "C20 d20",
+            "",
+            "E20= C20/d20",
+            "f20 = e20 (f19)",
+            "920 = f20 (y/c20)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\nO2\nOption 35.0 - Inlet temperature sensor serial number LV3\nEach CANbus device connected to the system has a unique serial number allocated to it during production\ntesting. This number cannot be changed and is used to uniquely identify each device.\nWhen the system is in commissioning mode the serial number of all the connected devices is read by the\nPPC6000 and displayed as a 'list' to allow the selection of the relevant serial number unit to be made.\nScrolling the list in an upward direction will scroll through all temperature sensor options available until '0,\nnothing' is displayed. Enter this value to disconnect the specified device from any hardware.\nScrolling the list in a downward direction will stop when the currently selected item is displayed, and the value\nwill stop flashing.\nThe display will show type information for each device present (such as 'air temp'), but the commissioning\nengineer should be aware of which serial number device is being used for which function.\nO2\nOptions 35.1 to 35.4-Hydrocarbon ratios of each fuel respectively (0.00 - 9.99) LV3\nIf a display of calculated burner efficiency, or 'automatic trim commissioning' is required, the hydrocarbon\nratios for the required fuels must be entered. These may be set between 0.0 and 9.99 inclusive, where the\nvalue entered is the hydrocarbon ratio x 10. For example, for a hydrocarbon ratio of 0.157, a value of 1.57\nshould be entered.\nNote: When firing multiple fuels, the mixture between the fuels fired may vary across the firing range of the\nburner. When this happens, the effective hydrocarbon ratio and calorific value of the fuel combination will\nchange. The accuracy of the calculated efficiency and the 'automatic trim commissioning' procedure will be\nadversely affected by this. It maybe that these functions should not be used, in which case these values\nshould be entered as zero.\nSee Option Table 35.x A on page 119.\nO2\nOptions 35.5 to 35.8-Calorific values of fuels/profiles 1 to 4 respectively (0.0 - 99.9)\nLV3\nThese option parameters are only available if option 35.0 (inlet temperature sensor) is not set to zero.\nIf a display of calculated burner efficiency is required, the calorific value of the required fuels must be entered.\nMay be set between 0.0 and 99.9 MJkg-1 inclusive.\nNote: When firing multiple fuels, the mixture between the fuels fired may vary across the firing range of the\nburner. When this happens, the effective hydrocarbon ratio and calorific value of the fuel combination will\nchange. The accuracy of the calculated efficiency and the 'automatic trim commissioning' procedure will be\nadversely affected by this. It maybe that these functions should not be used, in which case these values\nshould be entered as zero.\nThe following table shows the calorific values and hydrocarbon ratios of several common fuels. These values\nshould be used as a guide only. If the display is required to show gross efficiency in addition to entering the\ngross calorific values a non zero value for the boiler radiated heat loss MUST be entered.\nSee Option Table 35.x A on page 119.\n118",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\nOption Table 35.x A\nFuel\nGross calorific value\nNet calorific value\nHydrocarbon ratio\n(x10)\nGas\n52.8\n47.6\n3.20\nLight oil\n45.6\n42.8\n1.57\nMedium oil\n43.1\n40.8\n1.35\nHeavy oil\n42.9\n40.5\n1.28\nO2\nOption 35.9 - Boiler radiated heat loss (0.0 - 9.9%) LV3\nThis option parameter is only available if option 35.0 (inlet temperature sensor) is not set to zero.\nIf this option parameter is set to zero the unit will calculate the net efficiency, if non-zero it will calculate gross\nefficiency.\nFor accurate calculation of boiler gross efficiency, this option parameter must be set to the value of the heat\nlost through the shell of the boiler at high fire as a percentage of the burner's output at high fire. The range of\nthis parameter is 0.0 to 9.9%.\nOption 36.0 - Flue temperature alarm select (0/1) LV3\nThis option parameter is only available if option 30.0 is non zero.\nIf option 36.0 is set to 0, the flue temperature high and low alarms are disabled.\nIf option 36.0 is set to 1, the flue temperature high and low alarms are enabled and option parameters 36.1 to\n36.4 and 37.1 to 37.4 become available.\nOptions 36.1 to 36.4 - Flue temperature low alarm values (0 - 999) LV3\nUsing option parameters 36.1 to 36.4, it is possible to set a different flue temperature low alarm value for each\nprofile combination. Each option parameter may be set to any value between 0 and 999 inclusive. The\ntemperature units should be set with respect to option parameter 30.4.\nIf the burner is firing, it is only possible to make an adjustment to the option parameter that relates to the\nselected profile. If the burner is not firing, the low alarm value for any profile selection may be adjusted.\nWhen the flue temperature drops below the low alarm value for the selected profile, a fault number will appear.\nOptions 37.1 to 37.4 - Flue temperature high alarm values (0 - 999) LV3\nUsing option parameters 37.1 to 37.4, it is possible to set a different flue temperature high alarm value for\neach profile selection. Each option parameter may be set to any value between 0 and 999 inclusive. The\ntemperature units should be set with respect to option parameter 30.4.\nIf the burner is firing, it is only possible to make an adjustment to the option parameter that relates to the\nselected profile. If the burner is not firing, the high alarm value for any profile selection may be adjusted.\nWhen the flue temperature rises above the high alarm value for the selected profile combination, a fault\nnumber will appear.\n119",
+      "tablas": [
+        [
+          [
+            "Fuel",
+            "Gross calorific value",
+            "Net calorific value",
+            "Hydrocarbon ratio (x10)"
+          ],
+          [
+            "Gas",
+            "52.8",
+            "47.6",
+            "3.20"
+          ],
+          [
+            "Light oil",
+            "45.6",
+            "42.8",
+            "1.57"
+          ],
+          [
+            "Medium oil",
+            "43.1",
+            "40.8",
+            "1.35"
+          ],
+          [
+            "Heavy oil",
+            "42.9",
+            "40.5",
+            "1.28"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\nO2\nOption 38.0 - Oxygen alarm select (0 - 2) LV3\n!\nCAUTION\nThis parameter is not required, but highly recommended.\nOption parameter 38.0 is only available when option 30.5 (oxygen input select) is not set to zero and the\noptional oxygen probe interface unit is connected.\nSince the oxygen alarm values relate to the oxygen setpoint values, oxygen setpoint values must first be\nentered in adjust ratio mode.\nOption parameter\n38.0 value\nMeaning\n0\nAlarms disabled. Oxygen low and high alarms are disabled.\n1\nAlarms enabled, no non-volatile lockout. Oxygen low and high alarms are\nenabled and option parameters 38.1 to 41.4 will become available. If an alarm\nvalue is exceeded, a fault number will appear but no non-volatile lockout will\noccur.\n2\nAlarms enabled with non-volatile lockout. Oxygen low and high alarms are\nenabled and option parameters 38.1 to 41.4 will become available. If an alarm\nvalue is exceeded, a fault number will appear and a non-volatile lockout will\noccur.\nO2\nOptions 38.1 to 38.4 - Oxygen low alarm values at low fire (0.0 - 99.9%) LV3\nO2\nOptions 39.1 to 39.4 - Oxygen low alarm values at high fire (0.0 - 99.9%) LV3\nO2\nOptions 40.1 to 40.4 - Oxygen high alarm values at low fire (0.0 - 99.9%) LV3\nO2\nOptions 41.1 to 41.4 - Oxygen high alarm values at high fire (0.0 - 99.9%) LV3\nUsing option parameters 38.1 to 41.4, it is possible to set different oxygen alarm values at high fire and low fire\nfor each profile.\nAt firing positions other than high and low fire, the alarm limit is interpolated between the two points. For\nexample, if the oxygen limit has been entered as 5% of setpoint at low fire and 10% of setpoint at high fire, the\nlimit at mid fire will be 7.5%.\n120",
+      "tablas": [
+        [
+          [
+            "Option parameter 38.0 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "Alarms disabled. Oxygen low and high alarms are disabled."
+          ],
+          [
+            "1",
+            "Alarms enabled, no non-volatile lockout. Oxygen low and high alarms are enabled and option parameters 38.1 to 41.4 will become available. If an alarm value is exceeded, a fault number will appear but no non-volatile lockout will occur."
+          ],
+          [
+            "2",
+            "Alarms enabled with non-volatile lockout. Oxygen low and high alarms are enabled and option parameters 38.1 to 41.4 will become available. If an alarm value is exceeded, a fault number will appear and a non-volatile lockout will occur."
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -3,22 +3,43 @@ import json
 import faiss
 import numpy as np
 from pathlib import Path
+import sys
 from austral.gpt_azure import embed_text
 from austral.utils.index_config import get_faiss_index_type
 
-# Rutas
+# Configuración base
 BASE_DIR = Path(__file__).resolve().parents[2]
-FRAGMENTOS_PATH = BASE_DIR / "output" / "extractos_json" / "excel"
-ENRIQUECIDO_PATH = BASE_DIR / "output" / "fragmentos_enriquecido_excel.json"
-INDEX_PATH = BASE_DIR / "output" / "faiss_index_excel.bin"
 
-def cargar_fragmentos():
+# Función para obtener rutas según la categoría
+def get_paths_for_category(categoria):
+    """Devuelve las rutas de archivos para una categoría específica"""
+    return {
+        "fragmentos": BASE_DIR / "output" / "extractos_json" / "excel" / categoria,
+        "enriquecido": BASE_DIR / "output" / f"fragmentos_enriquecido_{categoria}_excel.json",
+        "index": BASE_DIR / "output" / f"faiss_index_{categoria}_excel.bin"
+    }
+
+def cargar_fragmentos(categoria):
+    """Carga los fragmentos JSON de Excel de la categoría especificada"""
     fragmentos = []
-    for archivo in os.listdir(FRAGMENTOS_PATH):
+    fragmentos_path = get_paths_for_category(categoria)["fragmentos"]
+    
+    if not os.path.exists(fragmentos_path):
+        print(f"⚠️ No se encontró la carpeta {fragmentos_path}")
+        return []
+    
+    for archivo in os.listdir(fragmentos_path):
         if archivo.endswith(".json"):
-            with open(FRAGMENTOS_PATH / archivo, "r", encoding="utf-8") as f:
-                frag = json.load(f)
-                fragmentos.append(frag)
+            try:
+                with open(fragmentos_path / archivo, "r", encoding="utf-8") as f:
+                    frag = json.load(f)
+                    fragmentos.append(frag)
+            except json.JSONDecodeError:
+                print(f"⚠️ Error al cargar {archivo}: formato JSON incorrecto")
+            except Exception as e:
+                print(f"⚠️ Error al procesar {archivo}: {str(e)}")
+    
+    print(f"✅ Cargados {len(fragmentos)} fragmentos Excel de la categoría '{categoria}'")
     return fragmentos
 
 def tabla_a_texto_lineal(tabla: list[list[str]]) -> str:
@@ -35,7 +56,8 @@ def tabla_a_texto_lineal(tabla: list[list[str]]) -> str:
         resultado.append(" - ".join(columnas))
     return "\n".join(resultado)
 
-def procesar_y_indexar(fragmentos):
+def procesar_y_indexar(fragmentos, categoria):
+    """Procesa e indexa los fragmentos Excel de una categoría específica"""
     enriquecidos = []
     textos = []
 
@@ -59,23 +81,63 @@ def procesar_y_indexar(fragmentos):
                 "fragment_id": fragment_id,
                 "document_id": document_id,
                 "sheet_name": sheet_name,
-                "texto": texto_unificado.strip()
+                "texto": texto_unificado.strip(),
+                "categoria": categoria
             })
             textos.append(texto_unificado.strip())
 
+    # Solo proceder si hay textos para indexar
+    if not textos:
+        print(f"⚠️ No hay contenido para indexar en la categoría '{categoria}'")
+        return 0
+        
+    # Generar embeddings para cada texto
+    print(f"Generando embeddings para {len(textos)} hojas de Excel...")
     embeddings = [embed_text(texto) for texto in textos]
+    
+    # Crear y guardar el índice
     embeddings_np = np.array(embeddings, dtype=np.float32)
     faiss.normalize_L2(embeddings_np)
 
     index = get_faiss_index_type(embeddings_np)
     index.add(embeddings_np)
-    faiss.write_index(index, str(INDEX_PATH))
+    
+    # Obtener rutas para esta categoría
+    paths = get_paths_for_category(categoria)
+    faiss.write_index(index, str(paths["index"]))
 
-    with open(ENRIQUECIDO_PATH, "w", encoding="utf-8") as f:
+    with open(paths["enriquecido"], "w", encoding="utf-8") as f:
         json.dump(enriquecidos, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Indexación completada para {len(enriquecidos)} fragmentos Excel.")
+    print(f"✅ Indexación completada para {len(enriquecidos)} fragmentos Excel en categoría '{categoria}'.")
+    return len(enriquecidos)
+
+def procesar_todas_categorias(categorias):
+    """Procesa todas las categorías especificadas"""
+    total_fragmentos = 0
+    
+    for categoria in categorias:
+        print(f"\n🔍 Procesando categoría Excel: {categoria.upper()}")
+        fragmentos = cargar_fragmentos(categoria)
+        if fragmentos:
+            total = procesar_y_indexar(fragmentos, categoria)
+            total_fragmentos += total
+    
+    print(f"\n✅ Indexación global completada para {total_fragmentos} fragmentos Excel en {len(categorias)} categorías")
 
 if __name__ == "__main__":
-    fragmentos = cargar_fragmentos()
-    procesar_y_indexar(fragmentos)
+    # Permitir especificar categoría desde la línea de comandos
+    categorias = ["mantenimiento", "proyectos"]  # Categorías por defecto
+    
+    if len(sys.argv) > 1:
+        categoria_arg = sys.argv[1].lower()
+        if categoria_arg in categorias:
+            print(f"Procesando solo la categoría: {categoria_arg}")
+            fragmentos = cargar_fragmentos(categoria_arg)
+            procesar_y_indexar(fragmentos, categoria_arg)
+        else:
+            print(f"Categoría no reconocida: {categoria_arg}")
+            print(f"Categorías disponibles: {', '.join(categorias)}")
+    else:
+        # Procesar todas las categorías
+        procesar_todas_categorias(categorias)

@@ -1,0 +1,541 @@
+{
+  "archivo": "10043213 - Manual-Victron-Phoenix-Smart-1600VA-3000VA_p21_30",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "3. BEDIENING\n3.1 Aan-/Uitschakelaar\nEN\nWanneer geschakeld op \"on\" met de drukknop,is het product volledig functioneel. De\nomvormer zal gaan functioneren en de LED \"omvormer\" zal gaan branden. Door\nvervolgens op de drukknop te drukken, binnen een korte tijdsperiode, zal de omvormer\nschakelen tussen \"on\", \"ECO\" en \"off\"\nBuiten de drukknop om; de omvormer kan tevens worden in- en uitgeschakeld (normaal\nof ECO) met Bluetooth op een mobiel apparaat met iOS of Android en de Victron\nConnect-app. Echter wanneer uitgeschakeld via Bluetooth of de drukknop; het apparaat\nkan niet opnieuw worden in- en uitgeschakeld via de bedrade VE.Direct-poort.\nNL\nFR\nDE\n3.2 Afstandsbediening\nES\nAfstandsbediening is mogelijk met een simpele aan-/uitschakelaar of met een Phoenix\nOmvormer bedieningspaneel. Een schakelaar voor afstandsbediening (aan/uit) kan\nworden aangesloten op een tweepolige connector (gemarkeerd met \"H\"; zie bijlage A).\nDe schakelaar kan worden aangesloten tussen batterij plus en het linkercontact van de\ntweepolige connector of tussen batterij minus en het rechtercontact van de tweepolige\nconnector (gemarkeerd met \"L\", zie bijlage A).\nSE\nAppendix\nVanwege veiligheidsredenen kan dit product volledig worden uitgeschakeld (dat\nwil zeggen, de omvormer kan niet worden ingeschakeld via de drukknop of\nBluetooth) door de externe connector te verwijderen en de standaard\ngeïnstalleerde draadbrug (of schakel de externe aan / uit-schakelaar uit indien\ngeinstalleerd). De gebruiker kan er dan zeker van zijn dat de omvormer niet per\nongeluk via Bluetooth kan worden ingeschakeld door een onverwachte andere\ngebruiker.\n!\n3.3 LED definities\nGroen LED\nStatus\nProbleemoplossing\nBrandt\nstabiel\nOmvormer\ningeschakeld\nRode LED Uitgeschakeld\nStatus INGESCHAKELD\nRode LED INGESCHAKELD of knippert:\nDe omvormer is nog steeds ingeschakeld, maar wordt\nuitgeschakeld als de toestand verslechtert. Zie rode LED-\ntabel voor waarschuwingsreden\nLangzame enkele puls\nECO-modus\nWanneer de omvormer blijft in- en uitschakelen terwijl er\neen belasting is aangesloten, kan de belasting te klein zijn\nin vergelijking met de werkelijke ECO-modusinstellingen.\nVerhoog de belasting of verander de instellingen van de\nECO-modus. (minimum ECO-modusinstelling: 15W)\nSnelle\ndubbele puls\nUitgeschakeld\nen wachten\nOmvormer is uitgeschakeld vanwege een beveiliging. De\nomvormer start automatisch opnieuw zodra alle\nalarmcondities zijn gewist. Zie rode LED-status voor de\nreden van de uitschakeling.\nvictron energy\n5",
+      "tablas": [
+        [
+          [
+            "Groen LED",
+            "Status",
+            "Probleemoplossing"
+          ],
+          [
+            "Brandt stabiel",
+            "Omvormer ingeschakeld",
+            "Rode LED Uitgeschakeld Status INGESCHAKELD Rode LED INGESCHAKELD of knippert: De omvormer is nog steeds ingeschakeld, maar wordt uitgeschakeld als de toestand verslechtert. Zie rode LED- tabel voor waarschuwingsreden"
+          ],
+          [
+            "Langzame enkele puls",
+            "ECO-modus",
+            "Wanneer de omvormer blijft in- en uitschakelen terwijl er een belasting is aangesloten, kan de belasting te klein zijn in vergelijking met de werkelijke ECO-modusinstellingen. Verhoog de belasting of verander de instellingen van de ECO-modus. (minimum ECO-modusinstelling: 15W)"
+          ],
+          [
+            "Snelle dubbele puls",
+            "Uitgeschakeld en wachten",
+            "Omvormer is uitgeschakeld vanwege een beveiliging. De omvormer start automatisch opnieuw zodra alle alarmcondities zijn gewist. Zie rode LED-status voor de reden van de uitschakeling."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Uitgeschakeld\nomvormer\nuitgeschakeld\nRode LED Uitgeschakeld\nControleer de op afstand bedienbare aan/uit-connector\nControleer de DC-kabelaansluitingen en zekeringen.\nControleer de bedieningsmodus door eenmaal op de\ndrukknop te drukken.\nRode LED INGESCHAKELD of knippert:\nDe omvormer is uitgeschakeld vanwege een beveiliging.\nHet zal niet meer opnieuw automatisch worden gestart. De\nrode LED geeft de reden voor het uitschakelen aan. De\noorzaak oplossen en start de omvormer opnieuw op door\ndeze uit en weer in te schakelen.\nSnel\nknipperen\nUitschakelen\nen firmware\nupdate wordt\nuitgevoerd of\nmislukt\nRode LED Knippert (-\nFirmware update wordt uitgevoerd firmware update mislukt.\nWanneer misluk, de firmware update opnieuw proberen.\nGele LED\nStatus\nProbleemoplossing\nBlijft\nbranden\nECO-modus\nRode LED Uitgeschakeld\nStatus INGESCHAKELD\nRode LED INGESCHAKELD of knippert:\nDe omvormer is nog steeds ingeschakeld, maar wordt\nuitgeschakeld als de toestand verslechtert. Zie rode LED-\ntabel voor waarschuwingsreden\nUitgeschakeld\nECO-modus\nuitgeschakeld\nRode LED Uitgeschakeld\nControleer de bedieningsmodus door eenmaal op de\ndrukknop te drukken.\nControleer de op afstand bedienbare aan/uit-connector.\nControleer de DC-kabelaansluitingen en zekeringen.\nRode LED INGESCHAKELD of knippert:\nDe omvormer is uitgeschakeld vanwege een beveiliging.\nHet zal niet meer opnieuw automatisch worden gestart. De\nrode LED geeft de reden voor het uitschakelen aan. De\noorzaak oplossen en start de omvormer opnieuw op door\ndeze uit en weer in te schakelen.\nRode LED\nDefinitie\nProbleemoplossing\nBlijft\nbranden\nOverbelasting\nBelasting reduceren\nLangzaam knipperen\nBatterij bijna\nleeg\nLaad de batterij op of vervang deze\nControleer de DC-kabelaansluitingen\nControleer de kabeldoorsnede aangezien deze mogelijk\nonvoldoende is.\nZie paragraaf 4.2 Beveiligingen en automatische herstarten\nvoor handmatig en automatisch herstartgedrag.\nSnel\nknipperen\nVolle batterij\nVerlaag de DC-ingangsspanning, controleer op defecte\nacculader\nDubbele\npuls\nHoge\ntemperatuur.\nReduceer de belasting en/of verplaats de omvormer naar\neen beter geventileerde ruimte\nSnelle\nenkelvoudige puls\nHoge DC-\nrimpel\nControleer de DC-kabelverbindingen en de\nkabeldoorsnede.\n6\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Uitgeschakeld",
+            "omvormer uitgeschakeld",
+            "Rode LED Uitgeschakeld Controleer de op afstand bedienbare aan/uit-connector Controleer de DC-kabelaansluitingen en zekeringen. Controleer de bedieningsmodus door eenmaal op de drukknop te drukken."
+          ],
+          [
+            "Rode LED INGESCHAKELD of knippert: De omvormer is uitgeschakeld vanwege een beveiliging. Het zal niet meer opnieuw automatisch worden gestart. De rode LED geeft de reden voor het uitschakelen aan. De oorzaak oplossen en start de omvormer opnieuw op door deze uit en weer in te schakelen."
+          ],
+          [
+            "Snel knipperen",
+            "Uitschakelen en firmware update wordt uitgevoerd of mislukt",
+            "Rode LED Knippert (- Firmware update wordt uitgevoerd firmware update mislukt. Wanneer misluk, de firmware update opnieuw proberen."
+          ]
+        ],
+        [
+          [
+            "Gele LED",
+            "Status",
+            "Probleemoplossing"
+          ],
+          [
+            "Blijft branden",
+            "ECO-modus",
+            "Rode LED Uitgeschakeld Status INGESCHAKELD Rode LED INGESCHAKELD of knippert: De omvormer is nog steeds ingeschakeld, maar wordt uitgeschakeld als de toestand verslechtert. Zie rode LED- tabel voor waarschuwingsreden"
+          ],
+          [
+            "Uitgeschakeld",
+            "ECO-modus uitgeschakeld",
+            "Rode LED Uitgeschakeld"
+          ],
+          [
+            "Controleer de bedieningsmodus door eenmaal op de drukknop te drukken. Controleer de op afstand bedienbare aan/uit-connector. Controleer de DC-kabelaansluitingen en zekeringen."
+          ],
+          [
+            "Rode LED INGESCHAKELD of knippert: De omvormer is uitgeschakeld vanwege een beveiliging. Het zal niet meer opnieuw automatisch worden gestart. De rode LED geeft de reden voor het uitschakelen aan. De oorzaak oplossen en start de omvormer opnieuw op door deze uit en weer in te schakelen."
+          ]
+        ],
+        [
+          [
+            "Rode LED",
+            "Definitie",
+            "Probleemoplossing"
+          ],
+          [
+            "Blijft branden",
+            "Overbelasting",
+            "Belasting reduceren"
+          ],
+          [
+            "Langzaam knipperen",
+            "Batterij bijna leeg",
+            "Laad de batterij op of vervang deze Controleer de DC-kabelaansluitingen Controleer de kabeldoorsnede aangezien deze mogelijk onvoldoende is. Zie paragraaf 4.2 Beveiligingen en automatische herstarten voor handmatig en automatisch herstartgedrag."
+          ],
+          [
+            "Snel knipperen",
+            "Volle batterij",
+            "Verlaag de DC-ingangsspanning, controleer op defecte acculader"
+          ],
+          [
+            "Dubbele puls",
+            "Hoge temperatuur.",
+            "Reduceer de belasting en/of verplaats de omvormer naar een beter geventileerde ruimte"
+          ],
+          [
+            "Snelle enkelvoudige puls",
+            "Hoge DC- rimpel",
+            "Controleer de DC-kabelverbindingen en de kabeldoorsnede."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "3.4 Beveiligingen en automatische herstarten\nOverbelasting\nSommige belastingen zoals motoren of pompen trekken grote inschakelstromen in een\nopstartsituatie. In dergelijke omstandigheden is het mogelijk dat de startstroom hoger is\ndan het overstroomniveau van de omvormer. In dit geval zal de uitgangsspanning snel\nafnemen om de uitgangsstroom van de omvormer te begrenzen. Indien te hoge\nstroomniveau overschreden wordt, wordt de omvormer uitgeschakeld: wacht 30\nseconden herstart vervolgens.\nEN\nNL\nFR\nNa drie herstarts gevolgd door een nieuwe overbelasting binnen 30 seconden na het\nherstarten, zal de omvormer worden uitgeschakeld en uitgeschakeld blijven. De LED's\nsignaleren uitschakeling vanwege overbelasting. Om de omvormer opnieuw te starten,\ndeze uitschakelen en vervolgens weer inschakelen.\nLage batterijspanning (instelbaar)\nDe omvormer wordt uitgeschakeld als de DC-ingangsspanning daalt tot onder het\nuitschakelingsniveau van de batterij. Na een minimale vertraging van 30 seconden zal de\nomvormer herstarten wanneer de spanningen boven het herstartniveau van de bijna lege\nbatterij komen.\nDE\nES\nSE\nNa drie herstarts gevolgd door een bijna lege batterij binnen 30 seconden na het\nherstarten, zal de omvormer uitschakelen en opnieuw proberen te stoppen. De LED's\nduiden aan dat de batterij bijna leeg is. Als u de omvormer wilt herstarten, schakelt u\ndeze uit en vervolgens weer in, of laad de batterij op: zodra de batterij wordt geladen en\nhet niveau stijgt en vervolgens gedurende 30 seconden boven het ladingsdetectieniveau\nblijft, schakelt deze in.\nAppendix\nZie de tabel Technische gegevens voor standaardinstellingen voor het afsluiten en herstarten\nvan de batterij. Ze kunnen worden gewijzigd met de VictronConnect-app.\nHoge batterijspanning\nVerlaag de DC-ingangsspanning en/of controleer op een defecte batterij- of zonne-lader in het\nsysteem. Na het uitschakelen vanwege een hoge batterijspanning, wacht de omvormer eerst\n30 seconden en probeert te herstarten zodra de batterijspanning is gedaald tot een\nacceptabel niveau. De omvormer blijft niet uitgeschakeld na meerdere pogingen.\nHoge temperatuur\nEen hoge omgevingstemperatuur of een blijvende hoge belasting kan ertoe leiden dat de\ntemperatuur te hoog wordt. De omvormer zal na 30 seconden herstarten. De omvormer blijft\nniet uitgeschakeld na meerdere pogingen. Reduceer de belasting en/of verplaats de\nomvormer naar een beter geventileerde ruimte.\nHoge DC-rimpel\nHoge DC-rimpel wordt meestal veroorzaakt door losse DC-kabelverbindingen en / of te dunne\nDC-bedrading. Nadat de omvormer is uitgeschakeld wegens een hoge\ngelijkstroomrimpelspanning, wacht deze 30 seconden en herstart vervolgens.\nNa drie herstarts gevolgd door een uitschakeling vanwege een hoge DC-rimpel binnen 30\nseconden na het opnieuw opstarten, zal de omvormer worden uitgeschakeld en zal het\nvictron energy\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "opnieuw proberen te stoppen. Om de omvormer te herstarten, schakelt u hem uit en\nvervolgens weer in.\nContinue hoge DC-rimpel vermindert de levensduur van de omvormer.\n4. INSTALLATIE\n!\nDit product moet door een gekwalificeerde elektricien worden geïnstalleerd.\nTijdens de installatie controleert u of de externe connector met draadbrug is\nverwijderd (of schakel de externe aan/uit-schakelaar uit indien geinstalleerd)\nteneinde er zeker van te zijn dat de omvormer niet onverwacht kan worden\ningeschakeld.\n?\n4.1 Locatie\nHet product moet worden geinstalleerd in een droge en goed geventileerde ruimte, en zo\ndicht mogelijk bij de batterijen. Er moet een vrije ruimte van minimaal 10 cm rond het\napparaat blijven om te koelen.\nEen hoge omgevingstemperatuur resulteert in het volgende:\nKortere levensduur.\nGereduceerde laadstroom.\nVerminderde piekvermogen, of uitschakelen van de omvormer.\nHet apparaat nooit direct boven de batterijen monteren.\n?\nHet product is geschikt voor wandmontage. Voor de montage zie bijlage A.\nHet apparaat kan zowel horizontaal als verticaal worden gemonteerd; verticale montage heeft\nechter de voorkeur. De verticale positie biedt optimale koeling.\n!\nDe binnenkant van het product moet na installatie toegankelijk blijven.\nProbeer de afstand tussen het product en de batterij tot een minimum te beperken teneinde\nkabelspanningsverliezen tot een minimum te houden.\n8\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "4.2 Aansluiting van batterijkabels\nTeneinde de volledige capaciteit van het product volledig te benutten, moeten batterijen\nmet voldoende capaciteit en batterijkabels met geschikte doorsnede worden gebruikt. Zie\ntabel.\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nAanbevolen\ndoorsnede (mm2)\nlengte tot 6 m\n50\n25\n25\n70\n35\n25\n12/3000\n24/3000\n48/3000\nAanbevolen\ndoorsnede (mm2)\n0-5 m\n95\n50\n35\n5 - 10 m\n120\n95\n70\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nAanbevolen\nbatterijcapaciteit\n(Ah)\n300 - 800\n150 - 400\n75 - 200\n350 - 1000\n200 - 500\n100 - 250\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\n12/3000\n24/3000\n48/3000\nAanbevolen\nbatterijcapaciteit\n(Ah)\n400 - 1200\n200 - 700\n100 - 400\nOpmerking: Interne weerstand is de belangrijkste factor bij het werken met batterijen met een\nlage capaciteit. Gelieve uw leverancier of de relevante paragrafen van ons boek \"elektriciteit\naan boord\", raadplegen, welke is te downloaden van onze website.\nProcedure\nGa als volgt te werk om de batterijkabels aan te sluiten:\nGebruik een geïsoleerde pijpsleutel om kortsluiting van de batterij te voorkomen.\nVermijd het inkorten van de batterijkabels.\n!\nDe batterijkabels aansluiten: de + (rode) en de - (zwarte), op de batterij zie bijlage A.\nVerbinding met omgekeerde polariteit (+ naar - en - naar +) veroorzaakt schade aan het\nproduct.\nDe moeren stevig vastzetten om de contactweerstand zoveel mogelijk te verminderen.\nvictron energy\n9",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen doorsnede (mm2)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "lengte tot 6 m",
+            "50",
+            "25",
+            "25",
+            "70",
+            "35",
+            "25"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen doorsnede (mm2)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "0-5 m",
+            "95",
+            "50",
+            "35"
+          ],
+          [
+            "5 - 10 m",
+            "120",
+            "95",
+            "70"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen batterijcapaciteit (Ah)",
+            "300 - 800",
+            "150 - 400",
+            "75 - 200",
+            "350 - 1000",
+            "200 - 500",
+            "100 - 250"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen batterijcapaciteit (Ah)",
+            "400 - 1200",
+            "200 - 700",
+            "100 - 400"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "4.3 DC-veiligheidszekering\nEr zit geen veiligheidszekering in de omvormer; dit moet extern worden geinstalleerd. De\naanbevolen veiligheidszekeringen zijn te vinden in de onderstaande tabel\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nAanbevolen DC-\nzekering\n250A\n125A\n60A\n300A\n150A\n80A\n12/3000\n24/3000\n48/3000\nAanbevolen DC-\nzekering\n400A\n250A\n125A\n4.4 Aansluiting van de AC-bekabeling\nDit is een product van Veiligheidsklasse I (geleverd met een beschermende\naardingsterminal).\nDe neutrale draad van de AC-uitgang van deze omvormer is verbonden\nmet het chassis (zie bijlage B voor 1600VA / 2000VA en bijlage C voor\n3000VA).\n!\nDit is om te zorgen voor een goede werking van een GFCI (of RCCB) die\nmoet worden geinstalleerd in de AC-uitgang van de omvormer.\nHet chassis van het product moet worden aangesloten op de grond, op het\nframe (van een voertuig) of de grondplaat of romp (van een boot).\nProcedure\nDe eindpunten zijn duidelijk aangegeven. Van links naar rechts: \"L\" (fase), \"N\" (neutraal) en\n\"PE\" (aarding).\n4.5 Optionele Verbindingen\nEen aantal optionele verbindingen zijn mogelijk:\n4.5.1 Op afstand bedienbare aan-/uitschakelaar & afstandsbedieningspaneel\nHet product kan op drie manieren op afstand worden bestuurd.\n-\nMet een smartphone (iOS of Android) en de Victron Connect-app.\n-\nMet een externe schakelaar (aangesloten op de tweepolige externe connector).\nFunctioneert alleen als de schakelaar op de omvormer is ingesteld op \"on\".\n-\nMet een Phoenix Omvormer Control VE.Direct-paneel (aangesloten op de tweepolige\nafstandsconnector, zie bijlage A). Functioneert alleen als de schakelaar op de omvormer\nis ingesteld op \"on\".\n4.5.2. Programmable relay\nDe omvormers zijn uitgerust met een multifunctioneel relais dat standaard is geprogrammeerd\nin de normale bedrijfsmodus. (VictronConnect software is nodig om de relay functionaliteit te\nwijzigen). De verschillende relaismodi kunnen zoals hieronder beschreven worden\nsamengevat:\n10\nvictron energy",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen DC- zekering",
+            "250A",
+            "125A",
+            "60A",
+            "300A",
+            "150A",
+            "80A"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen DC- zekering",
+            "400A",
+            "250A",
+            "125A"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "-\nNormale werking (\"omvormer\" in VictronConnect app) - standaard\nRelais gesloten tijdens normale werking, en open als de omvormer zichzelf in alarm\nheeft uitgeschakeld, of is uitgeschakeld door een gebruiker en tevens geopend\n(natuurlijk) als er geen stroom beschikbaar is op de terminals, d.w.z. batterij\nontkoppeld. In de ECO modus, het relais zal zowel worden gesloten wanneer een\nlading wordt gezocht en als deze volledig is ingeschakeld, d.w.z. belasting\ngedetecteerd.\nGebruik deze optie als u wilt dat het relais aanduidt dat er stroom beschikbaar is op\nde uitgang van de omvormer.\n-\nWaarschuwingen en alarmen (\"alarm\" in VictronConnect app)\nNet als bij bovenstaande, maar dan wordt het relais ook geopend als er een\nwaarschuwing is. Bijvoorbeeld, omdat de batterij spanning gedaald is tot de\ngrenswaarde, of wanneer het wordt geladen tot het punt waarop het bijna wordt\nafgesloten als gevolg van overbelasting. In de ECO modus, wordt het relais zowel\ntijdens het zoeken (zonder ladingt) als volledig ingeschakeld (laden gedetecteerd)\ngesloten, behalve wanneer er een waarschuwing is.\nGebruik deze optie als u wilt dat het relais aanduidt dat het tijd is om actie te\nondernemen (laden van de batterij, lading verminderen, enzovoort), teneinde\nstroomuitval te voorkomen.\n-\nBatterij bijna leeg (\"Batterij bijna leeg\" in VictronConnect app)\nRelais ingeschakeld tijdens normaal bedrijf. Het relais schakelt uit zodra er een\nwaarschuwing voor bijna lege batterij is. Het blijft uitgeschakeld wanneer de\nfrequentieregelaar wordt uitgeschakeld als gevolg van lage spanning, en zal slechts\nweer inschakelen als de omvormer in werking is en de batterijspanning boven het\nvooringstelde-alarm reset-niveau is. Gebruik deze optie voor load shedding of om\neen generator automatisch te starten. Houd er rekening mee dat dit uitsluitend kan\nworden beschouwd als een start /stop van een poor-mans generator. Voor meer en\nbetere opties, zie hier.\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\n-\nExterne ventilator (\"ventilator\" in VictronConnect app)\nRelais is uitgeschakeld, tenzij de ventilator in de omvormer in bedrijf is. Gebruik deze\noptie om een externe ventilator in te schakelen, voor situaties waarin de omvormer zich\nin een kleine afgesloten ruimte bevindt.\n-\nUitgeschakeld relais (\"uitgeschakeld\" in VictronConnect app)\nMet deze optie wordt het relais in de OPEN-positie gezet. Gebruik deze optie als u niet\nvan plan bent om de relais-functie te gebruiken.\nvictron energy\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "5. CONFIGURATIE\nInstellingen kunnen slechts door een gekwalificeerde technicus worden\ngewijzigd.\n!\nLees de instructies zorgvuldig door alvorens u wijzigingen aanbrengt.\nBatterijen moeten tijdens het laden in een droge en goed geventileerde ruimte\nworden geplaatst.\n5.1 Standaardinstellingen: klaar voor gebruik\nBij levering is de Phoenix omvormer ingesteld op standaard fabriekswaarden. Over het\nalgemeen zijn deze instellingen geschikt voor stand-alone bediening.\nStandaard fabrieksinstellingen\nOmvormer frequentie\n50 Hz\nOmvormerspanning\n230 VAC\nZoekmodus\nuitgeschakeld\nProgrammeerbaar relais\nalarmfunctie\nDynamische cut-off\nuitgeschakeld\n5.2 Verklaring van instellingen\nOmvormer frequentie\nUitgangsfrequentie\nAanpasbaarheid: 50Hz; 60Hz\nOmvormerspanning\nAanpasbaarheid: 210 - 245V\nECO Modus\nIndien de ECO modus is 'on', zal het stroomverbruik in nullast worden verlaagd met circa\n80 ... 90%. In deze modus de Phoenix Omvormer Smart, Wanneer werkende in de\nomvormermodus, is uitgeschakeld bij onbelaste of zeer lage belasting en schakelt om de twee\nen een halve seconde voor een korte periode (aanpasbaar). Indien de uitgangsstroom een\ningesteld niveau overschrijdt, blijft de omvormer werken. Wanneer dit niet het geval is, wordt\nde omvormer opnieuw uitgeschakeld.\nDe ECO-modus kan worden ingesteld met de drukknop aan de voorkant van de omvormer.\nDe ECO-modus \"shut down\" en \"remain on\" laadniveaus kunnen worden ingesteld met\nVictron Connect.\nDe fabrieksinstellingen zijn:\nUitschakelen: 50 Watt (lineaire belasting).\nInschakelen: 100 Watt (lineaire belasting).\nProgrammeerbaar relais\nStandaard is het programmeerbare relais ingesteld als een alarmrelais, d.w.z. het relais zal\nspanningsloos worden in geval van een alarm of een vooralarm (omvormer bijna te heet,\nrimpel op de ingang bijna te hoog, batterijspanning bijna te laag).\n12\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Standaard fabrieksinstellingen",
+            ""
+          ],
+          [
+            "Omvormer frequentie",
+            "50 Hz"
+          ],
+          [
+            "Omvormerspanning",
+            "230 VAC"
+          ],
+          [
+            "Zoekmodus",
+            "uitgeschakeld"
+          ],
+          [
+            "Programmeerbaar relais",
+            "alarmfunctie"
+          ],
+          [
+            "Dynamische cut-off",
+            "uitgeschakeld"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Appendix\nDynamische Cut-off\nGebruik VictronConnect voor activeren en Dynamische Cut-off configureren (zie\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-dynamic-cutoff voor\ndetails).\nGebruik de Dynamische Cut-off niet in een installatie die ook andere belastingen op\ndezelfde batterij heeft aangesloten: de batterijspanning zal dalen vanwege de extra\nbelasting, maar de Dynamische Cut-off algoritme in de omvormer neemt die belasting\nnier waar: daarom wordt de omvormer te vroeg uitgeschakeld met een\nonderspanningsalarm.\nEN\nNL\nFR\n5.3 Configuratie per computer\nAlle instellingen kunnen worden gewijzigd door middel van een smartphone, tablet of\ncomputer.\nVoor het wijzigen van instellingen met een smartphone of tablet, is het volgende vereist:\n- VictronConnect software: kan gratis worden gedownload op www.victronenergy.com.\nVoor het wijzigen van instellingen met een computer, is het volgende vereist:\n- VictronConnect software: kan gratis worden gedownload op www.victronenergy.com.\n- Een VE.Direct to USB interface.\nDE\nES\nSE\n6. ONDERHOUD\nDe Phoenix Omvormer Smart vereist geen specifiek onderhoud. Het is voldoende om alle\nverbindingen eenmaal per jaar te controleren. Vermijd vocht en olie/roet/dampen en houd het\napparaat schoon.\nvictron energy\n13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "7. Technische gegevens\nPhoenix-omvormer Smart\n12 Volt\n24 Volt\n48 Volt\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\n12/3000\n24/3000\n48/3000\nParallel en driefasig werking\nGeen\nOMVORMER\nIngangsspanningsbereik: (1)\n9,3 - 17V\n18,6 - 34V\n37,2 - 68V\nUitgang\nUitgangsspanning: 230VAC +2% 50 Hz of 60 Hz + 0,1% (1)\nCont. uitgangsvermogen bij 25℃ (2)\n1600VA\n2000VA\n3000VA\nCont. uitgangsvermogen bij 25℃\n1300W\n1600W\n2400W\nCont. uitgangsvermogen bij 40℃\n1200W\n1450W\n2200W\nCont. uitgangsvermogen bij 65℃\n800W\n1000W\n1700W\nPiekvermogen\n3000VA\n4000VA\n6000VA\nDynamisch (belastingafhankelijk) DC-\nlaag uit (volledig configureerbaar)\nDynamic cut-off, zie\ndynamic-cutoff\nMax.rendement 12/ 24 /48 V\n92/94/94 %\n92/94/94 %\n93/94/95%\nNullast in 12 / 24 / 48 V\n8/9/11 W\n8/9/11 W\n12/13/15W\nNullast in ECO modus\n0,6/1,3/2,1 W\n0,6/1,3/2,1 W\n1,5/1,9/2,8W\nALGEMEEN\nProgrammeerbaar relais (2)\nJa\nStop & start vermogen ECO-modus\naanpasbaar\nBeveiliging (3)\na - g\nBluetooth draadloze communicatie\nVoor monitoring op afstand en systeemintegratie\nVE.Direct communicatiepoort\nVoor monitoring op afstand en systeemintegratie\nOp afstand bediende aan/uit-functie\nJa\nGemeenschappelijke kenmerken\nMaximale gebruikstemperatuur -40 tot +65℃ (Ventilator\nondersteunde koeling)\nVochtigheid (niet-condenserend): max 95%\nBEHUIZING\nGemeenschappelijke kenmerken\nMateriaal & kleur: staal (blauw RAL 5012; zwart RAL 9017)\nBeschermingsklasse: IP 21\nAccu-aansluiting\nM8 bouten\nM8 bouten\n2+2 M8 bouten\n230V AC-connectie\nSchroefklemmen\nGewicht\n12kg\n13kg\n19kg\nAfmetingen (hxbxd)\n485 x 219 × 125 mm\n485 × 219 × 125 mm\n533 x 285 × 150mm\n(12V)\n485 × 285 × 150mm\n(24V/48V)\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-\nNORMEN\nVeiligheid\nEN 60335-1\nEmissie, immuniteit\nEN 55014-1 / EN 55014-2/ IEC 61000-6-1 / IEC 61000-6-2 /\nIEC 61000-6-3\nAutomotive richtlijn\nECE R10-5\n1) Niet-lineaire belasting, topfactor 3:1\n3) Beveiligingsmethoden:\n2) Programmeerbaar relais dat o.a. worden\nA) kortsluiting\ningesteld voor algemeen alarm, DC onder\nb) overbelasting\nspanning of generatorset start/stop functie.\nc) batterijspanning te hoog\nd) batterijspanning te laag\nAC-rating: 230V / 3A\ne) temperatuur te hoog\nDC-rating: 3A tot 30VDC, 0.2A tot 70VDC\nf) 230 V AC op omvormer uitgang\ng) ingangsspanning met een te hoge rimpel\n14\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Phoenix-omvormer Smart",
+            "12 Volt 24 Volt 48 Volt",
+            "12/1600 24/1600 48/1600",
+            "12/2000 24/2000 48/2000",
+            "12/3000 24/3000 48/3000"
+          ],
+          [
+            "Parallel en driefasig werking",
+            "",
+            "Geen",
+            ""
+          ],
+          [
+            "",
+            "",
+            "OMVORMER"
+          ],
+          [
+            "Ingangsspanningsbereik: (1)",
+            "9,3 - 17V 18,6 - 34V 37,2",
+            "- 68V"
+          ],
+          [
+            "Uitgang",
+            "Uitgangsspanning: 230VAC +2% 50 Hz of 60 Hz + 0,1% (1)"
+          ],
+          [
+            "Cont. uitgangsvermogen bij 25℃ (2)",
+            "1600VA",
+            "2000VA",
+            "3000VA"
+          ],
+          [
+            "Cont. uitgangsvermogen bij 25℃",
+            "1300W",
+            "1600W",
+            "2400W"
+          ],
+          [
+            "Cont. uitgangsvermogen bij 40℃",
+            "1200W",
+            "1450W",
+            "2200W"
+          ],
+          [
+            "Cont. uitgangsvermogen bij 65℃",
+            "800W",
+            "1000W",
+            "1700W"
+          ],
+          [
+            "Piekvermogen",
+            "3000VA",
+            "4000VA",
+            "6000VA"
+          ],
+          [
+            "Dynamisch (belastingafhankelijk) DC- laag uit (volledig configureerbaar)",
+            "",
+            "Dynamic cut-off, zie dynamic-cutoff\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-",
+            ""
+          ],
+          [
+            "Max.rendement 12/ 24 /48 V",
+            "92/94/94 %",
+            "92/94/94 %",
+            "93/94/95%"
+          ],
+          [
+            "Nullast in 12 / 24 / 48 V",
+            "8/9/11 W",
+            "8/9/11 W",
+            "12/13/15W"
+          ],
+          [
+            "Nullast in ECO modus",
+            "0,6/1,3/2,1 W",
+            "0,6/1,3/2,1 W",
+            "1,5/1,9/2,8W"
+          ],
+          [
+            "",
+            "ALGEMEEN",
+            "",
+            ""
+          ],
+          [
+            "Programmeerbaar relais (2)",
+            "",
+            "Ja",
+            ""
+          ],
+          [
+            "Stop & start vermogen ECO-modus",
+            "aanpasbaar",
+            ""
+          ],
+          [
+            "Beveiliging (3)",
+            "",
+            "a - g",
+            ""
+          ],
+          [
+            "Bluetooth draadloze communicatie",
+            "Voor monitoring op afstand en systeemintegratie"
+          ],
+          [
+            "VE.Direct communicatiepoort",
+            "Voor monitoring op afstand en systeemintegratie"
+          ],
+          [
+            "Op afstand bediende aan/uit-functie",
+            "Ja"
+          ],
+          [
+            "Gemeenschappelijke kenmerken",
+            "Maximale gebruikstemperatuur -40 tot +65℃ (Ventilator ondersteunde koeling) Vochtigheid (niet-condenserend): max 95%"
+          ],
+          [
+            "",
+            "BEHUIZING"
+          ],
+          [
+            "Gemeenschappelijke kenmerken",
+            "Materiaal & kleur: staal (blauw RAL 5012; zwart RAL 9017) Beschermingsklasse: IP 21"
+          ],
+          [
+            "Accu-aansluiting",
+            "M8 bouten",
+            "M8 bouten",
+            "2+2 M8 bouten"
+          ],
+          [
+            "230V AC-connectie",
+            "Schroefklemmen",
+            ""
+          ],
+          [
+            "Gewicht",
+            "12kg",
+            "13kg",
+            "19kg"
+          ],
+          [
+            "Afmetingen (hxbxd)",
+            "485 x 219 × 125 mm",
+            "485 × 219 × 125 mm",
+            "533 x 285 × 150mm (12V) 485 × 285 × 150mm (24V/48V)"
+          ]
+        ],
+        [
+          [
+            "NORMEN"
+          ],
+          [
+            "Veiligheid",
+            "EN 60335-1"
+          ],
+          [
+            "Emissie, immuniteit",
+            "EN 55014-1 / EN 55014-2/ IEC 61000-6-1 / IEC 61000-6-2 / IEC 61000-6-3"
+          ],
+          [
+            "Automotive richtlijn",
+            "ECE R10-5"
+          ],
+          [
+            "1) Niet-lineaire belasting, topfactor 3:1",
+            "3) Beveiligingsmethoden:"
+          ],
+          [
+            "2) Programmeerbaar relais dat o.a. worden",
+            "A) kortsluiting"
+          ],
+          [
+            "ingesteld voor algemeen alarm, DC onder",
+            "b) overbelasting"
+          ],
+          [
+            "spanning of generatorset start/stop functie.",
+            "c) batterijspanning te hoog\n:unselected:"
+          ],
+          [
+            "AC-rating: 230V / 3A",
+            "d) batterijspanning te laag"
+          ],
+          [
+            "DC-rating: 3A tot 30VDC, 0.2A tot 70VDC",
+            "e) temperatuur te hoog\nf) 230 V AC op omvormer uitgang g) ingangsspanning met een te hoge rimpel\n:unselected: :unselected: :unselected:"
+          ]
+        ]
+      ]
+    }
+  ]
+}

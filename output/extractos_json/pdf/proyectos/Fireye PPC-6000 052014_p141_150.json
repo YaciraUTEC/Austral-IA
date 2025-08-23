@@ -1,0 +1,724 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p141_150",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nNo.\nName\nDescription\nEK16\nLow fire hold or warming limit active\n0 - Measured value above warming limit, burner\nfree to modulate.\n1 - Measured value below warming limit, burner\nheld at low fire if the control is in auto or\nsequencing mode.\nEK18\nBoiler status\n0 - Burner will not fire because the temperature /\npressure measured value has exceeded the high\ncontrol value.\n1 - Burner will fire because the temperature /\npressure measured value has fallen below the\nlow control value.\nEK19\nConfirm to adjust\n0 - Control not in commission mode or control is\nin commission mode and drives moving to\nsetpoints.\n1 - Control in commission mode and drives may\nbe adjusted using the UP/DOWN keys.\nEK20\nDrive moved\n0 - Control not in commission mode or control is\nin commission mode and drives have not been\nmoved using the UP/DOWN keys.\n1 - Control in commission mode and drives have\nbeen moved using the UP/DOWN keys.\nEK21\nPositions proved\n0 - Drives have stopped moving, ready for\nposition prove test.\n1 - Ready for position prove test but drives still\nmoving.\nEK22\nFault alarm\n0 - No alarms (faults) present.\n1 - Any Un-muted fault alarm present\nEK23\nOxygen Trim Enable\n0 - Oxygen trim off or not working.\n1 - Oxygen trim on and working.\nNote: EK23 = 1 IF EK46 = 0\nEK25\nCAN_TX Failures\nA count of the number of times the CANbus\ncontroller has failed to send a message since\npower-up. This should be zero unless there has\nbeen a problem.\nEK26\nCommission status\nCurrent commissioning mode, where:\n0 - Normal run mode.\n1 - Adjust ratio mode.\n2 - Commission ratio mode.\n141",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK16",
+            "Low fire hold or warming limit active",
+            "0 - Measured value above warming limit, burner free to modulate. 1 - Measured value below warming limit, burner held at low fire if the control is in auto or sequencing mode."
+          ],
+          [
+            "EK18",
+            "Boiler status",
+            "0 - Burner will not fire because the temperature / pressure measured value has exceeded the high control value."
+          ],
+          [
+            "1 - Burner will fire because the temperature / pressure measured value has fallen below the low control value."
+          ],
+          [
+            "EK19",
+            "Confirm to adjust",
+            "0 - Control not in commission mode or control is in commission mode and drives moving to setpoints."
+          ],
+          [
+            "1 - Control in commission mode and drives may be adjusted using the UP/DOWN keys."
+          ],
+          [
+            "EK20",
+            "Drive moved",
+            "0 - Control not in commission mode or control is in commission mode and drives have not been moved using the UP/DOWN keys."
+          ],
+          [
+            "1 - Control in commission mode and drives have been moved using the UP/DOWN keys."
+          ],
+          [
+            "EK21",
+            "Positions proved",
+            "0 - Drives have stopped moving, ready for position prove test. 1 - Ready for position prove test but drives still moving."
+          ],
+          [
+            "EK22",
+            "Fault alarm",
+            "0 - No alarms (faults) present. 1 - Any Un-muted fault alarm present"
+          ],
+          [
+            "EK23",
+            "Oxygen Trim Enable",
+            "0 - Oxygen trim off or not working. 1 - Oxygen trim on and working. Note: EK23 = 1 IF EK46 = 0"
+          ],
+          [
+            "EK25",
+            "CAN_TX Failures",
+            "A count of the number of times the CANbus controller has failed to send a message since power-up. This should be zero unless there has been a problem."
+          ],
+          [
+            "EK26",
+            "Commission status",
+            "Current commissioning mode, where: 0 - Normal run mode. 1 - Adjust ratio mode. 2 - Commission ratio mode."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nNo.\nName\nDescription\nEK27\nCommission setpoint\nThe current setpoint being commissioned.\n0 - Closed setpoint.\n1 - Purge setpoint.\n2 - Ignition setpoint.\n3 - Low fire setpoint.\n4 - 24 - profile setpoints\nEK28\nCommission Setpoints entered\nThe number of setpoints that have been\nsuccessfully entered during this commission\nratio session.\nEK29\nModulation rate (%)\nThe current modulation rate of the burner.\n0 = Low Fire\n100 = High fire\nEK30\nBurner Status\nStatus of the start-up sequence. See section 4.2\nEK31\nFuel Profile Selected\nThe currently selected fuel profile.\nEK32\nNumber of commission setpoints\nThe number of setpoints entered for the current\nselected profile:\n0 - No setpoints entered.\n1 - Close setpoint only.\n2 - Close and purge setpoints.\n3 - Close, purge and ignition.\n4 - 24 - profile setpoints.\nEK33\nModulation mode\n0 - Auto mode.\n+1 - Manual from keyboard / TSD\n+2 - Low fire hold from keyboard / TSD\n+4 - Local 1.\n+8 - Local 2.\n+12 - OFF from Display\nEx .:\n10 would be local 2, LFH.\n4 would be local1, auto mode.\nEK36\nNearest setpoint\nThe number of the profile setpoint which is\nnearest to the current modulation position.\nEK37\nVoltage reference error (V)\nThe error between the measured voltage\nreference and the calibrated value has been\nexceeded for 3 seconds.\nTypically this value will be < 0.05v and F19 will\noccur if it is > 0.12v. If the value is high, ensure\nnone of the low voltage inputs are above 5 volts\nEK38\nRS485 Communications status\nToggles between 1 and 0 when RS485 is active\non the local interface (not the Modbus interface).\n142",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK27",
+            "Commission setpoint",
+            "The current setpoint being commissioned."
+          ],
+          [
+            "0 - Closed setpoint. 1 - Purge setpoint. 2 - Ignition setpoint. 3 - Low fire setpoint. 4 - 24 - profile setpoints"
+          ],
+          [
+            "EK28",
+            "Commission Setpoints entered",
+            "The number of setpoints that have been successfully entered during this commission ratio session."
+          ],
+          [
+            "EK29",
+            "Modulation rate (%)",
+            "The current modulation rate of the burner. 0 = Low Fire 100 = High fire"
+          ],
+          [
+            "EK30",
+            "Burner Status",
+            "Status of the start-up sequence. See section 4.2"
+          ],
+          [
+            "EK31",
+            "Fuel Profile Selected",
+            "The currently selected fuel profile."
+          ],
+          [
+            "EK32",
+            "Number of commission setpoints",
+            "The number of setpoints entered for the current selected profile:"
+          ],
+          [
+            "0 - No setpoints entered. 1 - Close setpoint only."
+          ],
+          [
+            "2 - Close and purge setpoints. 3 - Close, purge and ignition. 4 - 24 - profile setpoints."
+          ],
+          [
+            "EK33",
+            "Modulation mode",
+            "0 - Auto mode. +1 - Manual from keyboard / TSD +2 - Low fire hold from keyboard / TSD +4 - Local 1."
+          ],
+          [
+            "+8 - Local 2. +12 - OFF from Display"
+          ],
+          [
+            "Ex .: 10 would be local 2, LFH. 4 would be local1, auto mode."
+          ],
+          [
+            "EK36",
+            "Nearest setpoint",
+            "The number of the profile setpoint which is nearest to the current modulation position."
+          ],
+          [
+            "EK37",
+            "Voltage reference error (V)",
+            "The error between the measured voltage reference and the calibrated value has been exceeded for 3 seconds."
+          ],
+          [
+            "Typically this value will be < 0.05v and F19 will occur if it is > 0.12v. If the value is high, ensure none of the low voltage inputs are above 5 volts"
+          ],
+          [
+            "EK38",
+            "RS485 Communications status",
+            "Toggles between 1 and 0 when RS485 is active on the local interface (not the Modbus interface)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\nNo.\nName\nDescription\nEK39\nFuel Swap Status\nIf non zero, the control is in the process of\nperforming a fuel profile swap (without turning\nthe burner off).\nEK40\nShutdown setpoint\nThe nearest setpoint (EK36) when the burner\nlast locked out.\nEK42\nAdjust ratio counter\nThe number of times adjust ratio mode has been\nused.\nEK43\nCommission ratio counter\nThe number of times commission ratio mode has\nbeen used.\nEK44\nOxygen measured value\nThe current flue oxygen value as measured by\nthe ETC Oxygen probe (if fitted).\nEK45\nOxygen probe status\n0 - Probe OK\n+1 - Internal fault.\n+2 - Internal fault.\n+4 - Heater fault. Causes F50.\n+8 - Cell temperature out of range.\n+16 - Cell millivolts out of range.\n+32 - CANbus error.\n+64 - Probe calibrating in reference gas. See\noption parameter 30.6.\n+128 - Probe calibrating in air. See option\nparameter 30.6.\nEK46\nOxygen trim status\n0 - O2 trim working, or\n+1 - no oxygen interface connected.\n+2 - no oxygen probe serial number entered,\nor option 30.5 not 1, or option 30.8 not 0\nor trim not selected via aux input\nor trim not selected via serial comms\n+4 - 02 setpoints or flow values incorrect\n+8 - Option 20.6 not 0\n+16- Not modulating\n+32- In commission mode\n+64- Probe faulty (see EK45)\nEK47\nOxygen setpoint (%)\nCurrent oxygen setpoint. This is only available if\ntrim is enabled and working.\nEK48\nExcess air (%)\nExcess combustion air at the current firing\nposition.\nEK49\nOxygen error (%)\nError between O2 measured value and O2\nsetpoint.\n143",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK39",
+            "Fuel Swap Status",
+            "If non zero, the control is in the process of performing a fuel profile swap (without turning the burner off)."
+          ],
+          [
+            "EK40",
+            "Shutdown setpoint",
+            "The nearest setpoint (EK36) when the burner last locked out."
+          ],
+          [
+            "EK42",
+            "Adjust ratio counter",
+            "The number of times adjust ratio mode has been used."
+          ],
+          [
+            "EK43",
+            "Commission ratio counter",
+            "The number of times commission ratio mode has been used."
+          ],
+          [
+            "EK44",
+            "Oxygen measured value",
+            "The current flue oxygen value as measured by the ETC Oxygen probe (if fitted)."
+          ],
+          [
+            "EK45",
+            "Oxygen probe status",
+            "0 - Probe OK +1 - Internal fault. +2 - Internal fault. +4 - Heater fault. Causes F50."
+          ],
+          [
+            "+8 - Cell temperature out of range."
+          ],
+          [
+            "+16 - Cell millivolts out of range. +32 - CANbus error."
+          ],
+          [
+            "+64 - Probe calibrating in reference gas. See option parameter 30.6."
+          ],
+          [
+            "+128 - Probe calibrating in air. See option parameter 30.6."
+          ],
+          [
+            "EK46",
+            "Oxygen trim status",
+            "0 - O2 trim working, or +1 - no oxygen interface connected. +2 - no oxygen probe serial number entered, or option 30.5 not 1, or option 30.8 not 0 or trim not selected via aux input or trim not selected via serial comms"
+          ],
+          [
+            "+4 - 02 setpoints or flow values incorrect +8 - Option 20.6 not 0 +16- Not modulating +32- In commission mode +64- Probe faulty (see EK45)"
+          ],
+          [
+            "EK47",
+            "Oxygen setpoint (%)",
+            "Current oxygen setpoint. This is only available if trim is enabled and working."
+          ],
+          [
+            "EK48",
+            "Excess air (%)",
+            "Excess combustion air at the current firing position."
+          ],
+          [
+            "EK49",
+            "Oxygen error (%)",
+            "Error between O2 measured value and O2 setpoint."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nNo.\nName\nDescription\nEK50\nTrim deviation (% flow)\nDeviation in air flow imposed by trim (-25 to\n+25%)\nEK55\nMain PCB issue\nThe issue number of the main circuit board that\nthe firmware is expecting. This may be different\nto the actual PCB issue if they are compatible.\nEK56\nSoftware issue.\nThe current revision of the main product\nfirmware.\nEK58\nCPU serial number (low 4 digits)\nThe CPU board serial number.\nEK59\nDrives at setpoint\nRepresents which drives are currently at their\nsetpoints, where:\n0 - All drives are at their setpoints and are not\nmoving.\nNon- zero - One or more drives are not at their\nsetpoint.\nEK60\nDigital (relay) outputs on.\nThe combination of digital outputs currently\nswitched on.\n+1: Digital Output 1 ON. Display, PR3 (COM),\nPR1 (NO), PR2 (NC). Low voltage or line\nvoltage.\n+2: Digital Output 2 ON. Display, PR7 (COM),\nPR5 (NO), PR6 (NC). Low voltage or line\nvoltage.\n+4: Digital Output 3 ON. Display, PR7 (COM),\nPR9 (NO), PR8 (NC). Low voltage or line\nvoltage.\n+8: Digital Output 4 ON. PPC6000, PE4 (line\nvoltage out).\n+16: Digital Output 5 ON. Not implemented.\n+32: Digital Output 6 ON. Not implemented.\n+64: Digital Output 7 ON. Daughterboard, PZ15\n- PZ16. LOW VOLTAGE AND CURRENT\nONLY.\n+128: Digital Output 8 ON. Daughterboard, PZ17\n- PZ17. Not implemented.\nEK61\nAnalogue/Digital Input 1.\nPPC6000 Terminal PA5.\nThe raw ADC counts from analogue/digital input\n1.\n0 to 1023 for 0 to 5.00 volts.\n4mA = 180 counts\n20mA = 900 counts\n144",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK50",
+            "Trim deviation (% flow)",
+            "Deviation in air flow imposed by trim (-25 to +25%)"
+          ],
+          [
+            "EK55",
+            "Main PCB issue",
+            "The issue number of the main circuit board that the firmware is expecting. This may be different to the actual PCB issue if they are compatible."
+          ],
+          [
+            "EK56",
+            "Software issue.",
+            "The current revision of the main product firmware."
+          ],
+          [
+            "EK58",
+            "CPU serial number (low 4 digits)",
+            "The CPU board serial number."
+          ],
+          [
+            "EK59",
+            "Drives at setpoint",
+            "Represents which drives are currently at their setpoints, where:"
+          ],
+          [
+            "0 - All drives are at their setpoints and are not moving."
+          ],
+          [
+            "Non- zero - One or more drives are not at their setpoint."
+          ],
+          [
+            "EK60",
+            "Digital (relay) outputs on.",
+            "The combination of digital outputs currently switched on."
+          ],
+          [
+            "+1: Digital Output 1 ON. Display, PR3 (COM), PR1 (NO), PR2 (NC). Low voltage or line voltage."
+          ],
+          [
+            "+2: Digital Output 2 ON. Display, PR7 (COM), PR5 (NO), PR6 (NC). Low voltage or line voltage."
+          ],
+          [
+            "+4: Digital Output 3 ON. Display, PR7 (COM), PR9 (NO), PR8 (NC). Low voltage or line voltage."
+          ],
+          [
+            "+8: Digital Output 4 ON. PPC6000, PE4 (line voltage out)."
+          ],
+          [
+            "+16: Digital Output 5 ON. Not implemented. +32: Digital Output 6 ON. Not implemented. +64: Digital Output 7 ON. Daughterboard, PZ15 - PZ16. LOW VOLTAGE AND CURRENT ONLY."
+          ],
+          [
+            "+128: Digital Output 8 ON. Daughterboard, PZ17 - PZ17. Not implemented."
+          ],
+          [
+            "EK61",
+            "Analogue/Digital Input 1. PPC6000 Terminal PA5.",
+            "The raw ADC counts from analogue/digital input 1. 0 to 1023 for 0 to 5.00 volts. 4mA = 180 counts 20mA = 900 counts"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nNo.\nName\nDescription\nEK62\nAnalogue/Digital Input 2.\nPPC6000 Terminal PA6.\nThe raw ADC counts from analogue/digital input\n2.\n0 to 1023 for 0 to 5.00 volts.\n4mA = 180 counts\n20mA = 900 counts\nEK63\nAnalogue/Digital Input 3.\nPPC6000 Terminal PA7.\nThe raw ADC counts from analogue/digital input\n3.\n0 to 1023 for 0 to 5.00 volts.\n4mA = 180 counts\n20mA = 900 counts\nEK64\nAnalogue/Digital Input 4.\nPPC6000 Terminal PA8\nThe raw ADC counts from analogue/digital input\n4.\n0 to 1023 for 0 to 5.00 volts.\n4mA = 180 counts\n20mA = 900 counts\nEK65\nAnalogue Input 5.\nPPC6000 Terminal PA12 (also remote\nsetpoint).\nThe raw ADC counts from analogue input 5.\n0 to 1023 for 0 to 5.00 volts.\n4mA = 180 counts\n20mA = 900 counts\nEK66\nAnalogue Input 6.\nPPC6000 Terminal PB9 (also boiler\nmeasured value).\nThe raw ADC counts from analogue input 6.\n0 to 1023 for 0 to 5.00 volts.\n4mA = 180 counts\n20mA = 900 counts\nEK67\nAnalogue input 7.\nDaughterboard terminal PZ12 (-) PZ13\n(+). Also VSD1.\nThe ADC counts from analogue input 7.\n0 to 999 for 4 to 20mA.\nEK68\nAnalogue input 8.\nDaughterboard terminal PZ13 (-) PZ14\n(+). Also VSD2.\nThe ADC counts from analogue input 8.\n0 to 999 for 4 to 20mA.\nNote for EK67 and EK 68:\nTerminal PZ13 alternates + to detect any direct connection between\nthese two inputs.\nEK69\nDaughter board Frequency input 1\n(PZ7). 0 to 12 volts.\nGives the measured frequency in Hz on this\ninput. If the input is not changing, this value will\nbe 0 for OFF (open circuit) and 1 for ON.\nEK70\nDaughter board Frequency input 2\n(PZ9). 0 to 12 volts.\nGives the measured frequency in Hz on this\ninput. If the input is not changing, this value will\nbe 0 for OFF (open circuit) and 1 for ON.\n145",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK62",
+            "Analogue/Digital Input 2. PPC6000 Terminal PA6.",
+            "The raw ADC counts from analogue/digital input 2. 0 to 1023 for 0 to 5.00 volts. 4mA = 180 counts 20mA = 900 counts"
+          ],
+          [
+            "EK63",
+            "Analogue/Digital Input 3. PPC6000 Terminal PA7.",
+            "The raw ADC counts from analogue/digital input 3. 0 to 1023 for 0 to 5.00 volts. 4mA = 180 counts 20mA = 900 counts"
+          ],
+          [
+            "EK64",
+            "Analogue/Digital Input 4. PPC6000 Terminal PA8",
+            "The raw ADC counts from analogue/digital input 4. 0 to 1023 for 0 to 5.00 volts. 4mA = 180 counts 20mA = 900 counts"
+          ],
+          [
+            "EK65",
+            "Analogue Input 5. PPC6000 Terminal PA12 (also remote setpoint).",
+            "The raw ADC counts from analogue input 5. 0 to 1023 for 0 to 5.00 volts. 4mA = 180 counts 20mA = 900 counts"
+          ],
+          [
+            "EK66",
+            "Analogue Input 6. PPC6000 Terminal PB9 (also boiler measured value).",
+            "The raw ADC counts from analogue input 6. 0 to 1023 for 0 to 5.00 volts. 4mA = 180 counts 20mA = 900 counts"
+          ],
+          [
+            "EK67",
+            "Analogue input 7. Daughterboard terminal PZ12 (-) PZ13 (+). Also VSD1.",
+            "The ADC counts from analogue input 7. 0 to 999 for 4 to 20mA."
+          ],
+          [
+            "EK68",
+            "Analogue input 8. Daughterboard terminal PZ13 (-) PZ14 (+). Also VSD2.",
+            "The ADC counts from analogue input 8. 0 to 999 for 4 to 20mA."
+          ],
+          [
+            "Note for EK67 and EK 68: Terminal PZ13 alternates + to detect any direct connection between these two inputs."
+          ],
+          [
+            "EK69",
+            "Daughter board Frequency input 1 (PZ7). 0 to 12 volts.",
+            "Gives the measured frequency in Hz on this input. If the input is not changing, this value will be 0 for OFF (open circuit) and 1 for ON."
+          ],
+          [
+            "EK70",
+            "Daughter board Frequency input 2 (PZ9). 0 to 12 volts.",
+            "Gives the measured frequency in Hz on this input. If the input is not changing, this value will be 0 for OFF (open circuit) and 1 for ON."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nNo.\nName\nDescription\nEK71\nDaughter board Frequency input 3\n(PZ11). 0 to 12 volts.\nGives the measured frequency in Hz on this\ninput. If the input is not changing, this value will\nbe 0 for OFF (open circuit) and 1 for ON.\nEK72\nOxygen probe cell temperature.\nThe temperature of the zirconia cell inside the\nETC oxygen probe, if fitted. This value should be\nvery close to 650ºC for accurate operation.\nEK73\nAmbient temperature.\nThe temperature measured by the inlet\ntemperature sensor, if fitted. Units are ºC.\nEK74\nCPU utilisation (%).\nThe percentage utilisation of the CPU. Should be\nless than 95% at all times.\nEK75\nSecond O2 level (%)\nThe measured flue oxygen level as measured by\nthe second oxygen probe interface. (%)\nEK76\nSecond probe status\nThe same as EK45, but for the second oxygen\nprobe.\nEK77\nProgram size.\nThis is the length of the currently running user /\nmanufacturers program. If a user program is\nselected, this should match the program length\ngiven by the 'abacus' software.\nEK78\nSecond cell temp (°C)\nThe internal zirconia cell temperature of the\nsecond oxygen probe, if fitted.\nEK79\nSecond flue temp (°C)\nThe flue temperature, as measured by the\nsecond oxygen probe, if fitted.\nEK80\n- 89\nDrive Error values for drives 0 to 9.\nThe current error value for drives 0 to 9. These\nvalues will freeze when the control performs a\nsafety shutdown, so it may be possible to look at\nthese values after a lockout to help determine\nthe cause.\nEK90\nBurner cycles\nThe number of times the burner has attempted\nto start.\nEK91\nBurner Lockouts\nThe number of times the burner has locked out.\nEK92\nCommission data backup verification\nprogress\nDescription This counts up as the backup is\nverified when the burner is running. If a\ndifference between the actual commissioning\ndata and the backup is found, it will go to zero. A\nvalue of 999 indicates that the entire backup has\nbeen verified so all commissioning data are\nbacked up in the display.\n146",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK71",
+            "Daughter board Frequency input 3 (PZ11). 0 to 12 volts.",
+            "Gives the measured frequency in Hz on this input. If the input is not changing, this value will be 0 for OFF (open circuit) and 1 for ON."
+          ],
+          [
+            "EK72",
+            "Oxygen probe cell temperature.",
+            "The temperature of the zirconia cell inside the ETC oxygen probe, if fitted. This value should be very close to 650ºC for accurate operation."
+          ],
+          [
+            "EK73",
+            "Ambient temperature.",
+            "The temperature measured by the inlet temperature sensor, if fitted. Units are ºC."
+          ],
+          [
+            "EK74",
+            "CPU utilisation (%).",
+            "The percentage utilisation of the CPU. Should be less than 95% at all times."
+          ],
+          [
+            "EK75",
+            "Second O2 level (%)",
+            "The measured flue oxygen level as measured by the second oxygen probe interface. (%)"
+          ],
+          [
+            "EK76",
+            "Second probe status",
+            "The same as EK45, but for the second oxygen probe."
+          ],
+          [
+            "EK77",
+            "Program size.",
+            "This is the length of the currently running user / manufacturers program. If a user program is selected, this should match the program length given by the 'abacus' software."
+          ],
+          [
+            "EK78",
+            "Second cell temp (°C)",
+            "The internal zirconia cell temperature of the second oxygen probe, if fitted."
+          ],
+          [
+            "EK79",
+            "Second flue temp (°C)",
+            "The flue temperature, as measured by the second oxygen probe, if fitted."
+          ],
+          [
+            "EK80 - 89",
+            "Drive Error values for drives 0 to 9.",
+            "The current error value for drives 0 to 9. These values will freeze when the control performs a safety shutdown, so it may be possible to look at these values after a lockout to help determine the cause."
+          ],
+          [
+            "EK90",
+            "Burner cycles",
+            "The number of times the burner has attempted to start."
+          ],
+          [
+            "EK91",
+            "Burner Lockouts",
+            "The number of times the burner has locked out."
+          ],
+          [
+            "EK92",
+            "Commission data backup verification progress",
+            "Description This counts up as the backup is verified when the burner is running. If a difference between the actual commissioning data and the backup is found, it will go to zero. A value of 999 indicates that the entire backup has been verified so all commissioning data are backed up in the display."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\nNo.\nName\nDescription\nEK93\nFlow value\nThe instantaneous calculated air or fuel flow\nvalue, as used by the oxygen trim function. If\nflow values have been entered during\ncommissioning for the current profile, this value\nwill show the flow rate that corresponds to the\ncurrent modulation rate. At high fire, the value\nwill be 99.9%. At low fire, it will be this divided by\nthe turn down of the boiler. If fuel trim is active,\nthis will track air flow. If air trim is active, this will\ntrack fuel flow.\nEK94\nReserved\nN/A\nEK95-\nEK97\nSpare\nN/A\nEK98\nCombustion air pressure / error (added\nwith firmware version 1.219) (EK56)\nIf a combustion air pressure sensor is used (in\naddition to the main air pressure switch), in\ncommission modes, this will give the measured\ncombustion air pressure. In run mode, this will\ngive the combustion air pressure error which is\nthe difference between the measured and\nexpected air pressure.\nEK99\nSpare\nN/A\nEK100\nFirmware type PT22 ...\nThis shows the last four digits of the firmware\npart number for the PPC6000 software. It is used\nfor product variant identification.\n. The product allows for customization of various non-safety critical functions\nincluding the modulation control. The engineers' keys shown below relate to the\ndefault modulation control function programmed in the control at the factory. To\nverify this has not been replaced by an application specific function check with the\nequipment supplier and / or check option parameter 00.4, if available.\n!\nNOTE: EK101-200 (shown in next table) are controlled by the loaded modulation\nprogram. The values given below are for the latest (version 40 (EK200)) production\nversion but user programs may change / add to these.\nNo.\nName\nDescription\nEK101\nPID1 Active\nIf the value is 1, Setpoint / PID set 1 is active.\nEK102\nPID2 Active\nIf the value is 1, Setpoint / PID set 2 is active.\n147",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK93",
+            "Flow value",
+            "The instantaneous calculated air or fuel flow value, as used by the oxygen trim function. If flow values have been entered during commissioning for the current profile, this value will show the flow rate that corresponds to the current modulation rate. At high fire, the value will be 99.9%. At low fire, it will be this divided by the turn down of the boiler. If fuel trim is active, this will track air flow. If air trim is active, this will track fuel flow."
+          ],
+          [
+            "EK94",
+            "Reserved",
+            "N/A"
+          ],
+          [
+            "EK95- EK97",
+            "Spare",
+            "N/A"
+          ],
+          [
+            "EK98",
+            "Combustion air pressure / error (added with firmware version 1.219) (EK56)",
+            "If a combustion air pressure sensor is used (in addition to the main air pressure switch), in commission modes, this will give the measured combustion air pressure. In run mode, this will give the combustion air pressure error which is the difference between the measured and expected air pressure."
+          ],
+          [
+            "EK99",
+            "Spare",
+            "N/A"
+          ],
+          [
+            "EK100",
+            "Firmware type PT22 ...",
+            "This shows the last four digits of the firmware part number for the PPC6000 software. It is used for product variant identification."
+          ]
+        ],
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK101",
+            "PID1 Active",
+            "If the value is 1, Setpoint / PID set 1 is active."
+          ],
+          [
+            "EK102",
+            "PID2 Active",
+            "If the value is 1, Setpoint / PID set 2 is active."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\nNo.\nName\nDescription\nEK103\nControl Limits Active\nIf the value is 1, the control limits are active\nand will turn the burner on and off as the load\ndictates. The low and high limits are shown on\nEK153 and 154.\nIf the control limits are holding the burner off,\nEK18 will be zero.\nEK104\nUser modulation mode\nThis will normally be zero. A custom\nmodulation program may change this value if\nit is modifying the modulation rate.\nEK105\nPID not required\nIf this value is 1, the internal modulation PID\nis not running. This may be because the\nburner is off, in commission / manual mode or\nfor another reason.\nEK106\nBurner Firing\nIf this value is 1, the burner is firing (fuel\nvalves open), or it is in post-purge.\nEK107\nWarming Limit Active\nIf this value is 1, the warming limit function\n(see option parameter 23.0) is holding the\nburner at low fire (status 15).\nEK108\nTracking Active\nIf this value is 1, the remote tracking function\nis active. See option parameter 20.7. The\nAUTO modulation rate will come from analog\ninput 5.\nEK109\nRemote Setpoint 1 Active\nIf this value is 1, the remote setpoint 1\nfunction is active. See option parameter 20.7.\nThe value of Setpoint 1 will come from analog\ninput 5.\nEK110\nControl limit exceeded.\nEK111 to\nEK114.\nNot used by the standard\nmanufacturers program. May be\nused by a custom program.\nN/A\nEK115\nComms modulation active.\nEK116 to\nEK132.\nNot used by the standard\nmanufacturers program. May be\nused by a custom program.\nN/A\nEK133\nSP2 selected remotely\nIf this value = 1, the second PID modulation\nsetpoint (SP2) has been selected remotely via\nserial communications (including sequencing\nand Modbus).\nEK134\nBoiler sequencing communications\ngood\nIf this value = 1, the control is receiving\nsetpoint selection requests via serial\ncommunications (including Modbus and boiler\nsequencing). This usually indicates that boiler\nsequencing is working.\"\nEK135\nAUX input in use\nThis value = 1 if option parameter 20.7\n(analog input 5 function) is non-zero.\n148",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK103",
+            "Control Limits Active",
+            "If the value is 1, the control limits are active and will turn the burner on and off as the load dictates. The low and high limits are shown on EK153 and 154. If the control limits are holding the burner off, EK18 will be zero."
+          ],
+          [
+            "EK104",
+            "User modulation mode",
+            "This will normally be zero. A custom modulation program may change this value if it is modifying the modulation rate."
+          ],
+          [
+            "EK105",
+            "PID not required",
+            "If this value is 1, the internal modulation PID is not running. This may be because the burner is off, in commission / manual mode or for another reason."
+          ],
+          [
+            "EK106",
+            "Burner Firing",
+            "If this value is 1, the burner is firing (fuel valves open), or it is in post-purge."
+          ],
+          [
+            "EK107",
+            "Warming Limit Active",
+            "If this value is 1, the warming limit function (see option parameter 23.0) is holding the burner at low fire (status 15)."
+          ],
+          [
+            "EK108",
+            "Tracking Active",
+            "If this value is 1, the remote tracking function is active. See option parameter 20.7. The AUTO modulation rate will come from analog input 5."
+          ],
+          [
+            "EK109",
+            "Remote Setpoint 1 Active",
+            "If this value is 1, the remote setpoint 1 function is active. See option parameter 20.7. The value of Setpoint 1 will come from analog input 5."
+          ],
+          [
+            "EK110",
+            "Control limit exceeded.",
+            ""
+          ],
+          [
+            "EK111 to EK114.",
+            "Not used by the standard manufacturers program. May be used by a custom program.",
+            "N/A"
+          ],
+          [
+            "EK115",
+            "Comms modulation active.",
+            ""
+          ],
+          [
+            "EK116 to EK132.",
+            "Not used by the standard manufacturers program. May be used by a custom program.",
+            "N/A"
+          ],
+          [
+            "EK133",
+            "SP2 selected remotely",
+            "If this value = 1, the second PID modulation setpoint (SP2) has been selected remotely via serial communications (including sequencing and Modbus)."
+          ],
+          [
+            "EK134",
+            "Boiler sequencing communications good",
+            "If this value = 1, the control is receiving setpoint selection requests via serial communications (including Modbus and boiler sequencing). This usually indicates that boiler sequencing is working.\""
+          ],
+          [
+            "EK135",
+            "AUX input in use",
+            "This value = 1 if option parameter 20.7 (analog input 5 function) is non-zero."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\nNo.\nName\nDescription\nEK136\nLag on temperature active\nThis value = 1 if the control is currently\nbanking based on a temperature setpoint for\nSP2\nEK137\nRemote lead selected\nThis value = 1 if the another boiler has been\nselected to be lead boiler instead of this one.\nEK138\nSP1 selected remotely\nIf this value = 1, the first PID modulation\nsetpoint (SP1) has been selected remotely via\nserial communications (including sequencing\nand Modbus).\nEK139\npreload lag status\nUsed internally to keep the same boilers firing\nwhen the lead boiler changes.\nEK140 to\nEK 150\nNot used by the standard\nmanufacturers program. May be\nused by a custom program\nN/A\nEK151\nSetpoint 1 control value\nThe actual value of setpoint 1 being applied.\nEK152\nSetpoint 2 control value\nThe actual value of setpoint 2 being applied.\nEK153\nLow control limit\nThe actual value of the low control limit (cut-in\npoint) being applied.\nEK154\nHigh control limit\nThe actual value of the High control limit (cut-\nout point) being applied.\nEK155\nSpare\nN/A\nEK156\nMeasured Value\nThe current boiler measured value (actual\nvalue) shown with increased precision.\nEK157\nAUTO modulation rate\nThe modulation rate that the boiler will fire to if\nin AUTO mode (providing option parameter\n15.0 is not zero or 1).\nEK158\nNot used by the standard\nmanufacturers program. May be\nused by a custom program.\nN/A\nEK159\nBanking water temperature\nActual water temperature measured in °C or\nOF\nEK160 to\nEK199.\nNot used by the standard\nmanufacturers program. May be\nused by a custom program.\nN/A\nEK200\nProg:\nCurrently running manufacturers / custom\n(user) modulation program name and revision\nnumber (if applicable).\n* EK101-200 are controlled by the loaded modulation program. The values given below\nare for the latest (version 40) production version but user programs may change / add\nto these.\n149",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK136",
+            "Lag on temperature active",
+            "This value = 1 if the control is currently banking based on a temperature setpoint for SP2"
+          ],
+          [
+            "EK137",
+            "Remote lead selected",
+            "This value = 1 if the another boiler has been selected to be lead boiler instead of this one."
+          ],
+          [
+            "EK138",
+            "SP1 selected remotely",
+            "If this value = 1, the first PID modulation setpoint (SP1) has been selected remotely via serial communications (including sequencing and Modbus)."
+          ],
+          [
+            "EK139",
+            "preload lag status",
+            "Used internally to keep the same boilers firing when the lead boiler changes."
+          ],
+          [
+            "EK140 to EK 150",
+            "Not used by the standard manufacturers program. May be used by a custom program",
+            "N/A"
+          ],
+          [
+            "EK151",
+            "Setpoint 1 control value",
+            "The actual value of setpoint 1 being applied."
+          ],
+          [
+            "EK152",
+            "Setpoint 2 control value",
+            "The actual value of setpoint 2 being applied."
+          ],
+          [
+            "EK153",
+            "Low control limit",
+            "The actual value of the low control limit (cut-in point) being applied."
+          ],
+          [
+            "EK154",
+            "High control limit",
+            "The actual value of the High control limit (cut- out point) being applied."
+          ],
+          [
+            "EK155",
+            "Spare",
+            "N/A"
+          ],
+          [
+            "EK156",
+            "Measured Value",
+            "The current boiler measured value (actual value) shown with increased precision."
+          ],
+          [
+            "EK157",
+            "AUTO modulation rate",
+            "The modulation rate that the boiler will fire to if in AUTO mode (providing option parameter 15.0 is not zero or 1)."
+          ],
+          [
+            "EK158",
+            "Not used by the standard manufacturers program. May be used by a custom program.",
+            "N/A"
+          ],
+          [
+            "EK159",
+            "Banking water temperature",
+            "Actual water temperature measured in °C or OF"
+          ],
+          [
+            "EK160 to EK199.",
+            "Not used by the standard manufacturers program. May be used by a custom program.",
+            "N/A"
+          ],
+          [
+            "EK200",
+            "Prog:",
+            "Currently running manufacturers / custom (user) modulation program name and revision number (if applicable)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\n6.7 Troubleshooting\n6.7.1\nDisplay / General\nProblem\nPossible cause\nSuggested action\nDisplay shows it's serial\nnumber but not data\nfrom control unit\nDisplay CAN bus wired\nincorrectly.\nPPC6000 not running.\nCheck wiring of CAN bus (PT3 and PT4).\nCheck PPC6000 low voltage electronics\nfuse FS2. If blown, investigate all low\nvoltage external wiring and replace fuse, if\nnecessary, with a new one of the correct\ntype and rating.\nDisplay will not light at\nall.\n24VAC supply to display\nmissing.\nPPC6000 not running.\nCheck for 24VAC on PT1 and PT2.\nCheck fuse FS1. If blown, investigate all\nhigh and low voltage external wiring and\nreplace fuse, if necessary, with a new one\nof the correct type and rating.\nMeasured value\nincorrect.\nWrong sensor voltage.\nWrong sensor input type.\nIncorrect sensor wiring.\nWrong zero or span.\nCheck SENS SUPP link (see 2.5.3).\nCheck SENS IN link (see 2.5.3).\nCheck wiring to terminals PB8 - 10.\nCheck option parameters 15.0, 15.1, 15.2.\nHours run shows ' --- '.\nNo profile selected.\nSelect a profile.\nModulation rate is 1%\nBurner not modulating.\nWait for burner to finish start-up sequence.\nCheck PID proportional band - must be\ngreater than zero to modulate.\nBurner status is flashing.\nControl in non-volatile lockout\nmode.\nBurner status before shutdown displayed.\nSEE ALSO - Operation in Local Mode\nOperation in Local Mode\nNOTE: This function is not available on displays manufactured after September 2007\nSince a common PPC6000 display can be connected up to as many as sixteen PPC6000's at once, a\ncommon display must have the desired PPC6000's address set in order to communicate. This is done by\nentering \"local mode\" at the display and scrolling up or down to the desired address and exiting local mode. If\ncommunications to a display is lost for approximately two seconds, the display enters local mode. If\ncommunications is reestablished the display will revert to normal operation.\nTo enter local mode, press both the left and right arrow keys simultaneously. The display will show the\nfollowing;\nTOP LINE- The address (unit) number it is connected to. N/C indicates the PPC addressed is\nnot present. Set to match PPC6000 (default is zero).\nBOTTOM LINE- Alternates between serial number and software version and the fault logging\nand commissioning backup status. \"FL\" and \"CDBKP\" indicates a fault log and backup of the\nselected address exists.\nTo exit local mode, press either the \"Data\" or \"COM\" key.\n150",
+      "tablas": [
+        [
+          [
+            "Problem",
+            "Possible cause",
+            "Suggested action"
+          ],
+          [
+            "Display shows it's serial number but not data from control unit",
+            "Display CAN bus wired incorrectly. PPC6000 not running.",
+            "Check wiring of CAN bus (PT3 and PT4)."
+          ],
+          [
+            "Check PPC6000 low voltage electronics fuse FS2. If blown, investigate all low voltage external wiring and replace fuse, if necessary, with a new one of the correct type and rating."
+          ],
+          [
+            "Display will not light at all.",
+            "24VAC supply to display missing. PPC6000 not running.",
+            "Check for 24VAC on PT1 and PT2. Check fuse FS1. If blown, investigate all high and low voltage external wiring and replace fuse, if necessary, with a new one of the correct type and rating."
+          ],
+          [
+            "Measured value incorrect.",
+            "Wrong sensor voltage. Wrong sensor input type. Incorrect sensor wiring. Wrong zero or span.",
+            "Check SENS SUPP link (see 2.5.3). Check SENS IN link (see 2.5.3). Check wiring to terminals PB8 - 10. Check option parameters 15.0, 15.1, 15.2."
+          ],
+          [
+            "Hours run shows ' --- '.",
+            "No profile selected.",
+            "Select a profile."
+          ],
+          [
+            "Modulation rate is 1%",
+            "Burner not modulating.",
+            "Wait for burner to finish start-up sequence. Check PID proportional band - must be greater than zero to modulate."
+          ],
+          [
+            "Burner status is flashing.",
+            "Control in non-volatile lockout mode.",
+            "Burner status before shutdown displayed."
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "archivo": "30031431 - FLUJOM MAG MS2420 ISOIL CON TRANS MV210 (MANUAL) (1)_p1_10",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "ISOMAG\nThe friendly magmeter\n®\nOPERATING AND MAINTENANCE\nMANUAL\nMV210\nCE\nISOIL\nINDUSTRIA\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Release number: 210_EN_IT_IS_R1_1.02.0\nThe characters of file name in bold type indicate the software version which the manual refers to; it is visualized at\nthe instrument start up, or by specific function on DIAGNOSTIC menu.\nThe reproduction of this manual and any supplied software is strictly forbidden.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "ISOMAG\nISOIL\nINDUSTRIA\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "ISOMAG\nINDICE\nMV210\n1\nSAFETY INFORMATION\n3\nINTRODUCTION\n3\nSAFETY CONVENTION\n4\nDATA PLATE\n5\nAMBIENT TEMPERATURE\n5\nTECHNICAL CHARACTERISTICS\n5\nDIMENSIONS\n6\nSEPARATE VERSION\n7\nHORIZONTAL VERSION\n8\nVERTICAL VERSION\n8\nMV210 CONSTRUCTION\n10\nINTERNAL LAYOUT\n11\nELECTRICAL CONNECTION AND GROUNDING INSTRUCTIONS\n12\nINTERNAL LITHIUM BATTERY\n13\nDIGITAL INPUT ON/OFF OPERATION\n15\nOUTPUTS WIRING\n16\nDIGITAL OUTPUTS\n16\nANALOG OUTPUTS\n16\nRS485 MODBUS MODULE (OPTIONAL)\n17\nCONNECTORS MIL\n18\nMEANING OF FLAGS\n21\nMEANING OF LED COLORS\n21\nACCESS VIA KEYPAD\n22\nACCESS VIA MCP INTERFACE (VIRTUAL DISPLAY)\n22\nACCESS TO THE CONFIGURATION MENU\n22\nFLOW RATE VISUALIZATION\n23\nFLOW RATE ALERT\n23\nQUICK START MENU\n23\nACCESS CODE SET : MENU 13 SYSTEM\n24\nRESTRICTED ACCESS SET : MENU 13 SYSTEM\n24\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n1 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "MV210",
+            "1"
+          ],
+          [
+            "SAFETY INFORMATION",
+            "3"
+          ],
+          [
+            "INTRODUCTION",
+            "3"
+          ],
+          [
+            "SAFETY CONVENTION",
+            "4"
+          ],
+          [
+            "DATA PLATE",
+            "5"
+          ],
+          [
+            "AMBIENT TEMPERATURE",
+            "5"
+          ],
+          [
+            "TECHNICAL CHARACTERISTICS",
+            "5"
+          ],
+          [
+            "DIMENSIONS",
+            "6"
+          ],
+          [
+            "SEPARATE VERSION",
+            "7"
+          ],
+          [
+            "HORIZONTAL VERSION",
+            "8"
+          ],
+          [
+            "VERTICAL VERSION",
+            "8"
+          ],
+          [
+            "MV210 CONSTRUCTION",
+            "10"
+          ],
+          [
+            "INTERNAL LAYOUT",
+            "11"
+          ],
+          [
+            "ELECTRICAL CONNECTION AND GROUNDING INSTRUCTIONS",
+            "12"
+          ],
+          [
+            "INTERNAL LITHIUM BATTERY",
+            "13"
+          ],
+          [
+            "DIGITAL INPUT ON/OFF OPERATION",
+            "15"
+          ],
+          [
+            "OUTPUTS WIRING",
+            "16"
+          ],
+          [
+            "DIGITAL OUTPUTS",
+            "16"
+          ],
+          [
+            "ANALOG OUTPUTS",
+            "16"
+          ],
+          [
+            "RS485 MODBUS MODULE (OPTIONAL)",
+            "17"
+          ],
+          [
+            "CONNECTORS MIL",
+            "18"
+          ],
+          [
+            "MEANING OF FLAGS",
+            "21"
+          ],
+          [
+            "MEANING OF LED COLORS",
+            "21"
+          ],
+          [
+            "ACCESS VIA KEYPAD",
+            "22"
+          ],
+          [
+            "ACCESS VIA MCP INTERFACE (VIRTUAL DISPLAY)",
+            "22"
+          ],
+          [
+            "ACCESS TO THE CONFIGURATION MENU",
+            "22"
+          ],
+          [
+            "FLOW RATE VISUALIZATION",
+            "23"
+          ],
+          [
+            "FLOW RATE ALERT",
+            "23"
+          ],
+          [
+            "QUICK START MENU",
+            "23"
+          ],
+          [
+            "ACCESS CODE SET : MENU 13 SYSTEM",
+            "24"
+          ],
+          [
+            "RESTRICTED ACCESS SET : MENU 13 SYSTEM",
+            "24"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "ISOMAG\nCONVERTER ACCESS CODE\n24\nFUNCTIONS MENU\n27\nFUNCTIONS DESCRIPTION\n32\nMENU 1 - SENSOR\n33\nMENU 2 - UNITS\n36\nMENU 3 - SCALE\n38\nMENU 4 - MEASURE\n40\nMENU 5 - ALARMS\n42\nMENU 6 - INPUTS\n43\nMENU 7 - OUTPUTS\n44\nBATCHING\n45\nMENU 8 - COMMUNICATION\n50\nMV210 MODBUS PROTOCOL\n50\nMENU 9 - DISPLAY\n53\nMENU 10 - DATA LOGGER\n54\nMENU 11 - FUNCTION\n61\nMENU 12 - DIAGNOSTIC\n62\nMENU 13 - SYSTEM\n65\nMENU 14 - FILE (ONLY MCP)\n71\nMENU 15 - PROCESS DATA (ONLY MCP)\n73\nMETER DATA\n75\nB.I.V. (BUILT-IN VERIFICATOR)\n76\nSOFTWARE ISOBIV\n79\nALARM MESSAGES (CAUSES AND ACTIONS TO BE TAKEN)\n80\nERROR CODE TEST SYSTEM OF SENSOR\n81\nMANUAL REVIEWS\n83\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nISOIL\nINDUSTRIA\n2 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "CONVERTER ACCESS CODE",
+            "24"
+          ],
+          [
+            "FUNCTIONS MENU",
+            "27"
+          ],
+          [
+            "FUNCTIONS DESCRIPTION",
+            "32"
+          ],
+          [
+            "MENU 1 - SENSOR",
+            "33"
+          ],
+          [
+            "MENU 2 - UNITS",
+            "36"
+          ],
+          [
+            "MENU 3 - SCALE",
+            "38"
+          ],
+          [
+            "MENU 4 - MEASURE",
+            "40"
+          ],
+          [
+            "MENU 5 - ALARMS",
+            "42"
+          ],
+          [
+            "MENU 6 - INPUTS",
+            "43"
+          ],
+          [
+            "MENU 7 - OUTPUTS",
+            "44"
+          ],
+          [
+            "BATCHING",
+            "45"
+          ],
+          [
+            "MENU 8 - COMMUNICATION",
+            "50"
+          ],
+          [
+            "MV210 MODBUS PROTOCOL",
+            "50"
+          ],
+          [
+            "MENU 9 - DISPLAY",
+            "53"
+          ],
+          [
+            "MENU 10 - DATA LOGGER",
+            "54"
+          ],
+          [
+            "MENU 11 - FUNCTION",
+            "61"
+          ],
+          [
+            "MENU 12 - DIAGNOSTIC",
+            "62"
+          ],
+          [
+            "MENU 13 - SYSTEM",
+            "65"
+          ],
+          [
+            "MENU 14 - FILE (ONLY MCP)",
+            "71"
+          ],
+          [
+            "MENU 15 - PROCESS DATA (ONLY MCP)",
+            "73"
+          ],
+          [
+            "METER DATA",
+            "75"
+          ],
+          [
+            "B.I.V. (BUILT-IN VERIFICATOR)",
+            "76"
+          ],
+          [
+            "SOFTWARE ISOBIV",
+            "79"
+          ],
+          [
+            "ALARM MESSAGES (CAUSES AND ACTIONS TO BE TAKEN)",
+            "80"
+          ],
+          [
+            "ERROR CODE TEST SYSTEM OF SENSOR",
+            "81"
+          ],
+          [
+            "MANUAL REVIEWS",
+            "83"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "ISOMAG\nINTRODUCTION\n\nThese operating instructions and description of device functions are provided as part of the scope\nof supply.\nThey could be modified without prior notice. The improper use, possible tampering of the instrument\nor parts of it and substitutions of any components not original, renders the warranty automatically void.\n\nThe flow meter realizes a measure with liquids of conductivity greater than 5uS/cm in closed\nconduits, and is composed of a converter (described in this manual) and a sensor (refer to the\nspecific manual).\nThe converter could be coupled directly on the sensor (compact version) or coupled to the sensor\nby cable supplied with it (remote version).\nCONVERTER\nSENSOR\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nC\n0\nC\n0\nC\nSAFETY INFORMATION\nAny use other than described in this manual affects the protection provided by the manufacturer\nand compromises the safety of people and the entire measuring system and is, therefore, not\npermitted. The manufacturer is not liable for damaged caused by improper or non-designated use.\nTransport the measuring device to the measuring point in the original packaging. Do not remove\ncovers or caps until immediately before installation. In case of cartons packaging it is possible to\nplace one above the other but no more than three cartons. In case of wooden packaging do not\nplace one above the other.\nDisposal of this product or parts of it must be carried out according to the local public or private\nwaste collection service regulations.\nThe converter must only be installed, connected and maintained by qualified and authorized\nspecialists (e.g. electrical technicians) in full compliance with the instructions in this Operating\nInstruction, the applicable norms, legal regulations and certificates (depending on the application).\n3 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "ISOMAG\nThe specialists must have read and understood these Operating Instructions and must follow the\ninstructions it contains. The Operating Instructions provide detailed information about the converter. If\nyou are unclear on anything in these Operating Instructions, you must call the ISOIL service department.\nO The converter should only be installed after have verified technical data provided in these operating\ninstructions and on the data plate.\nSpecialists must take care during installation and use personal protective equipment as provided\nby any related security plan or risk assessment.\nNever mount or wire the converter while it is connected to the power supply and avoid any liquid contact\nwith the instrument's internal components. To connect remove the terminals from the terminal block.\nBefore connecting the power supply check the functionality of the safety equipment.\nRepairs may only be performed if a genuine spare parts kit is available and this repair work is\nexpressly permitted.\nFor the cleaning of the device use only a damp cloth, and for the maintenance/repairs contact the\nservice center (for details see the last page).\nBefore starting up the equipment please verify the following:\nPower supply voltage must correspond to that specified on the data plate\nElectric connections must be completed as described\nGround (earth) connections must be completed as specified\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nVerify periodically (every 3-4 months):\nThe power supply cables integrity, wiring and other connected electrical parts\nThe converter housing integrity\nThe suitable tightness of the sealing elements\nThe front panel integrity (display and keyboard)\nThe mechanical fixing of the converter to the pipe or wall stand\nSAFETY CONVENTION\n4\n!\nDANGER ELECTRIC SHOCK\nWARNING\nPRECAUTIONS\nATTENTION\n4 / 85\n210_EN_IT_IS_R1_1.02.0\nISOIL\nINDUSTRIA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "ISOMAG\nTECHNICAL CHARACTERISTICS\nELECTRICAL CHARACTERISTIC\nConverter classification: class I, IP67/68 for aluminum and PA6 housing, installation category\n(overvoltage) II, rated pollution degree 2.\nPower\nsupply\nversions\nPower\nsupply\nvoltage\nPower\nsupply\nfrequency\nMin\nPower\nMax power\nHV\n100-240V~\n45-66HZ\n1,5 W\n(Sensor only)\n5 W\n(all Loads)\nLV\n24-36V ---\n24-36V~\n45-66HZ\nLLV\n12-48V ---\n=\nVoltage variations must not exceed #10% of the nominal one.\nInput/output insulated up to 500V.\nThe output 4-20mA (optional) is electrically connected to the ON/OFF outputs and the output\npower supply (24V --= ).\nVersion LV/LLV : inrush current < 20A\nVersion HV : inrush current < 25A\nENVIRONMENTAL USE CONDITIONS\nThe converter can be installed internally or externally\nAltitude: from -200m to 4000m (from -656 to 6560 feet)\nHumidity range: 0-100%\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nAMBIENT TEMPERATURE\nAluminium\nReinf. Nylon\nMin*\nMax\nMin*\nMax\n-20\n+ 60\n-10\n+ 50\nOF\n-4\n+140\n+14\n+122\nATTENTION\nThe battery will not be charged outside the\nbelow limits :\nT board MV210 < 0 ℃\nT board MV210 > 50 ℃\nIf the converter is supplied in compact version (converter over the sensor), consider the ambient\ntemperatures more restrictive, otherwise refer to the relevant manuals.\n* For discontinuous use, a thermostat heat source installation may be necessary.\nDATA PLATE\nThe instrument label contain the following information:\nMODEL: Convert Model\nS/N: Serial Number of the converter\nSUPPLY: Main power supply\nHz: Supply frequency (AC)\nPOWER: Maximum power consumption\nIP: Protection grade\nT: Operation temperature\nCOUPLING: Serial number of sensor coupled\nITEM: Free for user\n5 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Power supply versions",
+            "Power supply voltage",
+            "Power supply frequency",
+            "Min Power",
+            "Max power"
+          ],
+          [
+            "HV",
+            "100-240V~",
+            "45-66HZ",
+            "1,5 W (Sensor only)",
+            "5 W (all Loads)"
+          ],
+          [
+            "LV",
+            "24-36V ---",
+            ""
+          ],
+          [
+            "24-36V~",
+            "45-66HZ"
+          ],
+          [
+            "LLV",
+            "12-48V ---",
+            "="
+          ]
+        ],
+        [
+          [
+            "AMBIENT TEMPERATURE"
+          ],
+          [
+            "",
+            "Aluminium",
+            "Reinf. Nylon"
+          ],
+          [
+            "",
+            "Min*",
+            "Max",
+            "Min*",
+            "Max"
+          ],
+          [
+            "",
+            "-20",
+            "+ 60",
+            "-10",
+            "+ 50"
+          ],
+          [
+            "OF",
+            "-4",
+            "+140",
+            "+14",
+            "+122"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "DIMENSIONS\nISOMAG\n167\n200\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n180\n114\n164\nO\n114\n195\n290\n0\nISOIL\n6 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "ISOMAG\nSEPARATE VERSION\n142\n28\n295\nØ7\n120\n30\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n7 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    }
+  ]
+}

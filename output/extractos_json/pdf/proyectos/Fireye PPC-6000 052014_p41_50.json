@@ -1,0 +1,153 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p41_50",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nWARNING\n!\nDo not wire the Sensor \"live\" with power on. With JPI in the \"IN\" position a 220 ohm\nresistor is put across terminals PB9 and PB10. Shorting or miss-wiring these\nterminals may damage this resistor. Should the resistor become open, an external\n220 ohm +/- 1% 1/2 watt resistor may be installed across terminals PB9 and PB10.\n2.6.17 Remote Setpoint (Analog Input 5) (PPC6000)\nOUT\n.\nJP 2\nIN\n1 - 5V or 4-20mA\nSIGNAL\n+\n-\nAUX MOD IN PA 12\n00\nAUX MOD GND PA 13\nCABLE CLAMP\n2.6.18 RS485 interface (PPC6000)\nThe auxiliary modulation input cabling must be overall\nscreened PVC insulated minimum 24 AWG (7/0.2mm)\n(number of cores as required by the relevant sensor). Since\nthis cable may be run in conduit with high voltage wiring, it's\nvoltage rating must exceed the maximum voltage carried by\nany other cable connected to the control or run in the same\nconduit. Ensure link JP2 is set to the 'IN' position if the input\nis being connected to a device with a 4-20mA output.\nIncorrect connection may damage or destroy the units\nbeing connected.\nThe RS485 interface included in the basic control is intended to be used for interconnection of several Fireye\nunits or connection of a 'lap-top' computer during commissioning if it is intended to make a permanent\nconnection to a PC or non-Fireye equipment the optional isolated RS485 daughter board should be installed.\nThe RS485 cabling MUST be overall braided shielded (screened) 3-core PVC insulated 24 AWG (7/0.2mm).\nSince this cable may be run adjacent to, and/or in the same conduit as high voltage wiring, its voltage rating\nmust exceed the maximum voltage carried by any other cable connected to the control or run in the same\nconduit.\nTerminate the screen at each control using the cable clamps provided. Incorrect connection or application\nof excess voltage may damage or destroy the units being connected.\nSequencing\nRS485\nCOMMS BUS\nA+\nB-\n0V\nCLAMP BAR\nA+\nPB5\nPB6\nPB7\nB-\nPB5\nPB6\nPB7\nTO PC VIA\nCOMFIRE\n0V\nCLAMP BAR\nA+\nB-\n0V\nCLAMP BAR\nPB7\nPB5\nPB6\n41",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nRS485\nCOMMS BUS\nBuilding Automation\nISOLATE\nTO BAS\nVIA MODBUS\nSee Bulletin\nMOD-6101\nA+\nB-\n0V\nPB11\nPB12\nPB13\nCLAMP BAR\nA+\nB-\n0V\nPB11\nPB12\nPB13\nCLAMP BAR\nA+\nB-\n0V\nPB13\nPB11\nPB12\nCLAMP BAR\nNOTE: Due to differences in communications hardware, it\nmay be necessary to reverse the \"A\" and \"B\" wires.\nRS485 A (+) PB 5\nRS485 B (-) PB 6\nRS 485 GND PB 7\n000000\nFor details on connecting PPC6000 series controls to a PC on the\ncommunications bus, refer to the manual NX-1502 (Comfire2 combustion\nanalysis tool).\nRS 485 ISOL A (+) PB 11\nRS485 ISOL B (-) PB 12\nRS485 ISOL GND PB 13\nNOTE: Isolated RS485 (PB11 thru PB13) for use with Modbus / BAS\nintegration - Requires optional Daughter Board. See MOD-6101\nfor details.\nNOTE: Interposing terminal blocks should be avoided when shielded cable is required. Interposing\nterminals present a risk of electrical noise interference resulting in unreliable operation.\n2.6.19 Variable Speed Drive Selection:\nThe NX6100 may have an optional daughter board within the main enclosure to allow control of 1 or 2 inverter\ndrives. Optionally the daughter board is also available to allow feedback to be taken from directly from\nencoders measuring the speed of the relevant motor, fan or pump shaft. There is also an option to allow the\ncup speed of an additional rotary device, e.g. atomizing cup, to be monitored as an encoder input.\nWhen not configured to control an inverter, the 4-20mA outputs may be configured to transmit system\nvariables as current outputs (4-20mA) such as modulation rate, steam pressure, etc.\nThere are special wiring requirements for inverter feedback. See Caution in Section 2.6.20.\nImportant note: When selecting a VSD or variable frequency drive (VFD) consideration must be given to\nthe size and weight of the blower wheel. While a \"fan\" application is by nature a variable torque load, the\ninertia (weight) of the blower wheel must be considered. Typical HVAC type drives do not speed up or slow\ndown large blower wheels with enough control to operate within the tolerance of the PPC or NX series control.\nTherefore, a VSD (VFD) with some built in breaking capability, such as a constant torque drive, should be\nused. At a minimum, if the drive has a constant torque setting, it must be enabled to minimize faults due to\ndrive hunting. Since VFD's are expected to perform as if they are servomotors, similar positional errors are\napplied to VFD's. See Section 7.\n42",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\n2.6.20 PPC6000 Variable Speed Drive Daughter Board P/N NXDBVSD\n+\nC38\n+\nL7\nC28\nC35 C29\nC33\nR51\nIC12\nIC14\nC43\nIC17\n147\nR43\nR+0\nC28\nR4I\nLB\nR62\nTRZ\nR46 C38 T\nDI\nIC15\nR44\n1\n龙怕\n134\n125\nC13\n2\n245\nC40\nJC1\nC38\nC2\nA4B\n21\nTRI\nA18\n3\n4\nIL7\n132\nA38 A37\nC3B\nL5\nR27 C23\nIC5\nL1\n4\nC2B\nR28\n5\nR1\nC18\nC7\nCI4\nCte\nC11\nR15\n6\nA31\nA24\nL3\nIC13\nC15\nAZ2\nA34\n7\nC18\nAB\nC32\nR19 R17 C18\nIC6\nC1\nIC3\nR2\nIC11\nICB\n8\nL24\nR20\nR18\nLZ\nCB\n9\n10\nD2\nC4\nC5\nC12\nC4B\nIC4A\nA28 A30\nA21 A[B\nIC48\n11\nRB8\nR11\nCB\nC41\nC+2\nX1\n1\n12\nR12 R8\nC47\n13\nR5\nRS4\n14\nJP1\nRLt\nAL2\n15\nIC21\nSee Section 5.4.1 Option 03.x\nfor setup details\nIC48\n16\n17\n258\n.\n18\nJ2\nC56\nCAUTION\n!\nDue to the possibility of High Frequency electrical noise, BOTH\nends of the shielded signal wire to the VSD must be grounded.\nRBB\nAB4 248 R55\nTRC\nC61\nC54\nC62 ABD\nRB1\nRB3\nRB2\nIC22\nASB\nR67\nC50\n4-20mA Output Channel 1 - PZ 1\n4-20mA Output Channel 1 + PZ 2\n4-20mA Output Channel 2 - PZ 3\n4-20mA Output Channel 2 + PZ 4\n4-20mA Output Channel 3 - PZ 5\n4-20mA Output Channel 3 + PZ 6\nØ\nD\nD\nD\nD\n00000000000000000Q\nCounter Input 1 PZ 7\n+12Vdc PZ 8\nCounter Input 2 PZ 9\n+12Vdc PZ 10\nThe cabling for all of these terminals must be 2-conductor (core) overall\nscreened PVC insulated 24 AWG (7/0.2mm). Since this cable may be run\nin conduit with high voltage wiring, it's voltage rating must exceed the\nmaximum voltage carried by any other cable connected to the control or\nrun in the same conduit.\nThe counter inputs are for use with encoder(s) for speed feedback from\nthe devices being controller by the inverter(s) connected to the 4-20mA\noutput(s) on this daughter board.\nThe analog outputs are isolated but the analog inputs are not and\ntherefore special precautions must be taken when using these inputs.\nCounter Input 3 PZ 11\nInput Channel 1 - PZ 12\nInput Channel 1 + PZ13\nInput Channel 2 + PZ14\nRelay 7 common PZ 15\nRelay 7 normally open PZ 16\nRelay 8 common PZ 17\nRelay 8 normally open PZ 18\nThe inputs are for 4-20mA signals must be isolated as the second input\nconnects 'on-top' of the first to ensure 'cross-talks' will be detected.\nTerminal PX13 alternates + to be shared with PZ12 and PZ14. This\n\"switching\" detects a direct link between input 1 and input 2 which is not\nallowed.\nThe function of relay 1 & 2 can be set by option parameter, but please\nnote the maximum rating of these relays is 200mA at 50V.\nIncorrect connection may damage or destroy the units being\nconnected.\n43",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\n2.6.21 LIVE and NEUTRAL supply (optional Oxygen Probe Interface unit)\nWARNING\nIncorrect setting of the Supply Voltage Links WILL damage or destroy the unit.\nMAX 3A\nLIVE PL 1\n00\nNEUTRAL PL2\nH LIVE\nNEUTRAL\nThe LIVE and NEUTRAL supplies must be\nconnected using multi-strand single conductor\n(core) PVC insulated 16 AWG (19/0.3mm) wire.\nThe live connection should be fused with a\nmaximum rating of 3A.\n2.6.22 Oxygen probe connection (optional Oxygen Probe Interface unit), NX02INT\nBussman S504 series\nPN GMA-5\n5 AMP (Fast Acting)\n( to protects transformer primary DC\ncircuit)\nAlternate Source:\nMouser Electronics : PN 504-GMA-5\nPM 9- PROBE HEATER >24VAC\nPM 8- PROBE HEATER >24VAC\nPM 6-FLUE TEMP. THERMOCOUPLE -\nPM 7- FLUE TEMP. THERMOCOUPLE +\nPM 4 - CELL TEMP. -\nPM 5 - CELL TEMP. +\nPM 2 - CELL OUTPUT -\nPM 3 - CELL OUTPUT +\nBussmann - S504 series\nP/N GMD-630 (TIME Delay) for\n115V\nP/N GMD-315 (TIME Delay) for\n230V\n( to protect 24V circuit\nAlternate Source ::\nMouser Electronics\n+\n+\nCA\nJ23\nC25\n9 67 6 5432\nJ22\nTermination for\nscreens from\nOxygen Probe (screw)\nJP\nCANBUS\nIN\n7\nPL 7 0v\nCommon ( - ) see note\nE\nPL 6 I/P 2 4 + 20mA (+) see note\nPL 5\n5\nN/A future use\nJI\nJ7B\n4\nPL 4 CANbus -\n3\nPL 3 CANbus +\n2\nPL 2 Neutral\nPL 1 Live\nJZA\nLK +\n15\n013\n230Y - 315MA ITI\nHIBY - 630mA STY\nL 2 LK3\nIZBY LEI & LEJ\nZJBY LK2 & LF 4\nFSI\nSA FI\nJ10\nJ14\nFIZ\nLKI\n14\nAH221723\nJEFUE\nLINESI\nJ5\nEARTH\nGround\n(Earth) (screw)\nNOTE: 4-20mA O2 input from non-Fireye O2 probe. See sections 30.1 and 30.2\n44",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nCAUTION\nDisconnect the power supply before beginning installation to prevent electrical\nshock, equipment and/or control damage. More than one power disconnect may\nbe involved.\n· Wiring must comply will all applicable codes, ordinances and regulations.\n· Wiring where required, must comply with NEC Class 1 (Line Voltage) wiring.\nThe cabling between the unit and the probe consists of the following:\nCable\nSpecification\nProbe heater cable\n· Max. voltage in use <30V ac\n. Overall braid screened 2-core PVC insulated 16 AWG (19/0.3mm) (300V\n176°F (80℃)).\n· Max. cable length 20 meters between units.\nProbe cell signal cable\n· Max. voltage in use < 15V dc\n· Overall braid screened 2-core PVC insulated 20AWG - 16/0.2mm (300V\n176°F (80℃)).\n.\nMax. cable length 20 meters between units.\nHeater and flue\nthermocouple\ncompensation cable\n· Max. voltage in use <15V dc\n· Cable Colors:\nEU -- 2 PVC insulated cores, green (+ve) and white (-ve) covered by a\ngreen PVC sheath.\nUS -- 2 PVC insulated cores, yellow (+ve) and red (-ve) covered by a\nyellow PVC sheath.\n· Each core consists of 24AWG - 7/32AWG (300V 80℃) solid conductors\ncovered by PVC insulation. (EU cable may be stranded wire.)\n· Type K compensating cable\nNOTE: Thermocouple wires are polarized. Failure to connect the\ncorrect color to the designated terminal will result in a temperature\noffset that will affect the operation. CHECK TWICE to be certain.\n45",
+      "tablas": [
+        [
+          [
+            "Cable",
+            "Specification"
+          ],
+          [
+            "Probe heater cable",
+            "· Max. voltage in use <30V ac"
+          ],
+          [
+            ". Overall braid screened 2-core PVC insulated 16 AWG (19/0.3mm) (300V 176°F (80℃))."
+          ],
+          [
+            "· Max. cable length 20 meters between units."
+          ],
+          [
+            "Probe cell signal cable",
+            "· Max. voltage in use < 15V dc"
+          ],
+          [
+            "· Overall braid screened 2-core PVC insulated 20AWG - 16/0.2mm (300V 176°F (80℃))."
+          ],
+          [
+            ". Max. cable length 20 meters between units."
+          ],
+          [
+            "Heater and flue thermocouple compensation cable",
+            "· Max. voltage in use <15V dc"
+          ],
+          [
+            "· Cable Colors:"
+          ],
+          [
+            "EU -- 2 PVC insulated cores, green (+ve) and white (-ve) covered by a green PVC sheath."
+          ],
+          [
+            "US -- 2 PVC insulated cores, yellow (+ve) and red (-ve) covered by a yellow PVC sheath."
+          ],
+          [
+            "· Each core consists of 24AWG - 7/32AWG (300V 80℃) solid conductors covered by PVC insulation. (EU cable may be stranded wire.) · Type K compensating cable"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nOxygen Probe Wiring\nPM2\nPM3\nPM4\nPM5\nPM6\nPM7\nPM8\nPM9\nGROUND (EARTH)\nscrew in Interface\n0\nOxygen Probe Interface Unit\n1\n2\n3\n4\n5\n6\n7\n8\n9\nOXYGEN PROBE\n10\nD\nGROUND (EARTH)\nscrew in Interface\nINTERNAL PROBE CONNECTORS\n0\n00\n0\nPROBE CONNECTOR\n(REMOVABLE)\n000\nC\n0\nO\nO\nO\n10 9 8 7 6 5 4 3 2 1\nOXYGEN PROBE PCB AND CABLE TYPES\nCABLE TYPE\nPIN CONNECTION\n1\nNO CONNECTION\n2\nZIRCONIA CELL OUTPUT -\n3\nZIRCONIA CELL OUTPUT +\n4\nZIRCONIA CELL TEMP. -\n5\nZIRCONIA CELL TEMP. +\n6\nFLUE TEMP. THERMOCOUPLE -\n7\nFLUE TEMP. THERMOCOUPLE +\n8\nPROBE HEATER >24VAC\n9\nPROBE HEATER >24VAC\n10\nNO CONNECTION\n20AWG (16/0.2mm) BRAIDED SHIELD\n20AWG (16/0.2mm) BRAIDED SHIELD\nTYPE K COMP. CABLE (RED or GREEN)\nTYPE K COMP. CABLE (YELLOW or WHITE)\nTYPE K COMP. CABLE (RED or GREEN)\nTYPE K COMP. CABLE (YELLOW or WHITE)\n16AWG (19/0.3mm) BRAIDED SHIELD\n16AWG (19/0.3mm) BRAIDED SHIELD\nNOTE: Wire Sizes Shown are MINIMUM.\nAfter ensuring all connectors are correctly fitted, secure the probe cap on the probe. The heater supply must\nbe connected using screened 2 conductor (core) 16 AWG (19/0.3mm) PVC insulated cable. The oxygen cell\noutput must be connected using screened 2 conductor (core) 20 AWG (16/0.2mm) PVC insulated cable. Both\nthermocouple connections must be made using type K compensating cable. For screen connection detail\nrefer to section 2.6.2. DO NOT connect the screens at the probe.\nIncorrect connection may damage or destroy the units being connected.\n2.6.23 Inlet temperature sensor (optional)\n24Vac PA/PB 1\n1\n2\nFIREYE\nNXIATS AIR\nTEMPERATURE\nSENSOR\n(See NOTE)\n24Vac PA/PB 2\n0000\nCANbus + PA/PB 3\n3\nCANbus - PA/PB 4\n4\n5\nCABLE CLAMP\nNOTE: Insulate Shield (Terminal 5) to\nprevent accidental shorting to pins on\ncircuit board (J1)\nThe system allows direct connection of an FIREYE\ninlet temperature sensor. The unit is connected via\nCANbus similar to the servo-motors and display, using\noverall screened 4 conductor (core) 24 AWG\n(7/0.2mm) PVC insulated cable. Since this cable is to\nbe run adjacent to, and/or in the same conduit as high\nvoltage wiring, its voltage rating must exceed the\nmaximum voltage carried by any other cable\nconnected to the control or run in the same conduit.\nSee Sections 2.6.1 & 2.6.2.\nIncorrect connection may damage or destroy\nthe units being connected.\n46",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "J1\n0\n5\nShield\nCover shield to\n0\n4\nCANbus -\nprevent short\nCANbus +\n00\n3\n2\n24 VAC\n1\n0\n24 VAC\nNXIATS\nInlet Air Temperature Sensor\n2.7 Final checks\n!\nWARNING\n®\nfireye\nNOTE: Insulate Shield\n(Terminal 5) to prevent\naccidental shorting to\npins on circuit board (J1)\nIncorrect setting of the Supply Voltage Links WILL damage or destroy the unit.\nBefore applying power, make the following checks:\n. The control(s) supply voltage is correctly set, incorrect setting will destroy the unit(s).\n· All other jumper (link) positions are correct.\n. The fuse(s) are of the correct type and value, incorrect type or value may damage or destroy the units.\n. All wiring and connections have been made according to the specifications detailed in this chapter.\n. Before applying power to the control ensure that the probe heater output is not attempting to drive into a\nshort circuit by checking between terminals PM8 and PM9 using a resistance meter. The expected\nresistance with an oxygen probe fitted should be greater than 15ohms.\n· Enclosure lid(s) are fitted before applying power to the control(s).\n47",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\n3 Servo-motor selection and calibration\nCAUTION\n!\n. All servo-motors connected to the PPC6000 control system must be approved as\npart of system.\n. The total electrical load for all connected servo-motors must not exceed 40VA.\n· Valve and motor alignment and calibration must be set in commission ratio mode\nprior to commissioning any profile setpoints.\n3.1 Servo-motor selection\n3.1.1\nMotor requirements\nOnly servo-motors supplied by FIREYE may be used with this equipment, various servo-motors are available,\nto suit differing applications. The information below is intended as a general guide only; ensure that when\ninstalling or adjusting the servo-motors fitted to the appliance that reference is made to the correct instruction\nmanual.\n· All servo-motors must be connected via CANbus, no other possibility exists.\n· All 24V servo-motors operate at 24Vac and are supplied from the PPC6000 (main) unit.\n. All have a 90° maximum movement with an operating time of approximately 30 seconds for 90° travel.\n. All have internal limit switches, which must be adjusted during commissioning to allow the close\nposition check to be performed and to protect the burner/boiler against damage should a failure of the\nelectronics occur.\nNOTE: Any profile must NOT exceed 40VA.\nPPC6000 Servomotor Guide\nModel\nRating FT/LB (Nm)\nVoltage\nVA\nNXC04\n3.0 (4Nm)\n24\n3\nNXC12\n8.75 (12Nm)\n24\n5\nNXC20\n15.0 (20Nm)\n24\n10\nNXC40A\n29.0 (40Nm)\n24\n18\nTable: 3.1.1-A\nExample: The profile requires 1 NXC20, 1 NXC40, 2 NXC04\nMotor\nVA\nNXC04\n6\nNXC20\n10\nNXC40\n18\nTotal\n34\n48",
+      "tablas": [
+        [
+          [
+            "Model",
+            "Rating FT/LB (Nm)",
+            "Voltage",
+            "VA"
+          ],
+          [
+            "NXC04",
+            "3.0 (4Nm)",
+            "24",
+            "3"
+          ],
+          [
+            "NXC12",
+            "8.75 (12Nm)",
+            "24",
+            "5"
+          ],
+          [
+            "NXC20",
+            "15.0 (20Nm)",
+            "24",
+            "10"
+          ],
+          [
+            "NXC40A",
+            "29.0 (40Nm)",
+            "24",
+            "18"
+          ]
+        ],
+        [
+          [
+            "Motor",
+            "VA"
+          ],
+          [
+            "NXC04",
+            "6"
+          ],
+          [
+            "NXC20",
+            "10"
+          ],
+          [
+            "NXC40",
+            "18"
+          ],
+          [
+            "Total",
+            "34"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\n3.2 IMPORTANT: Servo-motor direction warning\nIt is necessary to ensure that each motor travels in the correct direction to match the mechanical configuration\nof the burner. The default setting is for a servo to move counter-clockwise (looking at the output shaft) as the\nmotor is driven 'UP'. Option parameters 5.0 to 5.9 can be used to reverse this.\nServo-motors are shipped with the shaft flat in the 9-12 o'clock (facing motor shaft) position and by default\nrotate counter (anti) clockwise. For applications requiring clockwise rotation the motor must be left\ndisconnected from the device being driven until after the system is powered and the motor set for clockwise\ndirection via Option Parameter 5.x. Setting this option to \"1\" causes the motor to display the maximum travel\ndegree (e.g. 90.0) as set by the internal adjustable end switch. After selecting all motors that are to travel in a\nclockwise direction, switch to the \"adjust motors\" display by pressing the \"Mode\" key. It is now possible to\nmanually drive each of the clockwise motors to the new \"PO\" position (e.g. 1.0) as set by the adjustable end\nswitch. The flat (facing the shaft) will now be in the 6-9 O'clock position. At this point the mechanical\nconnection to the driven device can be made up. Fireye \"D\" hole couplings should be used in order to assure\na secure connection. Set screws alone are not recommended as they can come loose resulting in a\npotentially unsafe condition. Motor shafts are hardened generally preventing set screws from \"biting\" in and\nthus loosening after commissioning. Fireye bulletin NEXBK-1000 provides information on \"D\" hole couplings.\nSetting the option with the motor connected to the device being driven may cause damage to the\ndevice or motor.\nNote: The motor shaft, when directly coupled, will rotate in the opposite direction from the driven\nshaft. For example, if the gas valve rotates counter clockwise to open, then the servomotor MUST be\nset to clockwise rotation in Option 5.x\nShaft Positions as viewed from Shaft End\nFor NXC04, NXC12, NXC20, NXC40 ONLY\n90\n0\n0\n-\n90\nFLAT\n0\nFLAT\nP0\nOption Parameter 5.x\nSet to 0\nP0\nOption Parameter 5.x\nSet to 1\n49",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\nServomotor Shaft Position Warning:\nIt is not possible to reposition the shaft of the servomotor other than to the factory settings of either clockwise\nor counter clockwise. That is, the shaft flat (as viewed from the shaft end) will either be in the 9-12 o'clock or 6-\n9 o'clock position at PO (burner off). Using the \"out of the box\" settings will make future replacement of\nservomotors easier. See previous page.\nSome motors have a clutch release to allow for the driven device to be rotated for inspection after\ncommissioning. It must be noted that releasing the clutch while the motor is powered will cause the servomotor\nto drive back to the commissioned P0 position. Power should be removed if the clutch is used for this purpose.\n3.3 Locking the servo-motor to the valve shaft\nWARNING\n!\n·\nOnce the position of the servo-motor shaft relative to the valve shaft is correct,\neach motor must be locked to its valve shaft, for all air damper(s) and fuel\nvalve(s).\n. In order to prevent the joint between motor and shaft moving, it is recommended\nthat the device used to link the two items is pinned together.\n. It is essential that the motor and valve remain securely connected to ensure safe\noperation of the equipment, since feedback is only taken from the servomotor.\n· Servomotor shafts are hardened; set screws alone are NOT sufficient to guard\nagainst slippage.\nA variety of \"D\" hole couplings are available. Contact your Fireye Distributor, or Fireye, Inc., for\nassistance.\n3.4 Feedback potentiometer\nWARNING\n!\n·\nThe servo-motor internal feedback potentiometer must be secured within the\nservo-motor to ensure that there is no possibility that the potentiometer can\nbecome disconnected from the motor output shaft.\n· For direct drive servo-motor potentiometers (NXC40 only) ensure the\npotentiometer body is secured to the flexible mounting to prevent any movement\nbetween output shaft and potentiometer. Do not adjust the 'nuts' retaining the\nflexible mounting to the metalwork.\n· For gear driven servo-motor potentiometers (4Nm, NXC04, NXc12, NXC20\nservo-motor) ensure the potentiometer is secured to its mounting bracket and\nthat the bracket is correctly attached to the servo-motor body to prevent any\nbacklash between the potentiometer and the output shaft. DO NOT ADJUST!\n50",
+      "tablas": []
+    }
+  ]
+}

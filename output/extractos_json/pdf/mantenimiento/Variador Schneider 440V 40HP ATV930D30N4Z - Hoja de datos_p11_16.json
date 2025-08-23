@@ -1,0 +1,35 @@
+{
+  "archivo": "Variador Schneider 440V 40HP ATV930D30N4Z - Hoja de datos_p11_16",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Hoja de\ncaracterísticas del\nproducto\nConexiones y esquema\nATV930D30N4Z\nFuente de alimentación trifásica con interrupción aguas arriba a través de contactor de\nlínea\nDiagramas de conexión conforme a las normas EN 954-1 categoría 1 e IEC/EN 61508 capacidad SIL1, categoría de\nparada 0 según la norma IEC/EN 60204-1\n-Q2\n-02\n*\n*\n- T1\n-Q3\n- S2\n*\n- KM1\n- S\nA1\n1\nIA2\n- KM1\n- KM1\nRIA RIC\n(1)\nA1\n1\nRIA\n(2)\n.\nR1C\nO\nRIB\n1\nR2A\nR2C\nR3A\nR3C\nQUIT1 R/L10\nOV/T2 S/L20\nOW/T3 TIL30\n+\nSTOB Q\nSTOAQ\n24VO\nATVS ··\n5\n5\nW1\nM\n130\n(1) Inductancia de línea (si procede)\n(2) Utilice el relé R1 ajustado en el estado de funcionamiento de fallo para apagar el producto cuando se detecte un\nerror.\nA1: Unidad\nKM1: Contactor de línea\nQ2, Q3: Interruptores automáticos\nS1, S2: Pulsadores\nT1: Transformador para bloque de control\n5 jul 2025\nLife Is On\n11\nSchneider\nElectric",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Hoja de\ncaracterísticas del\nproducto\nATV930D30N4Z\nFuente de alimentación trifásica con interrupción aguas abajo a través de contactor\nDiagramas de conexión conforme a las normas EN 954-1 categoría 1 e IEC/EN 61508 capacidad SIL1, categoría de\nparada 0 según la norma IEC/EN 60204-1\n-02\n-03\n-82\n-KM1\nA2\n-81\nA1\n.Q2\n-KM1\n- KM1\nRIC\nRIA\n(1)\n(2)\nA1\nRIA\nRICO\nR1B\nRZA\nRIA\nR2C\nSTOBO\nSTOA\n24VO\nQUITI RILIO\nOV/T2 S/L26-\nOW/T3 TIL30-\nATVS ..\nKM1\n5\n5\nW1\nM\n(1) Inductancia de línea (si procede)\n(2) Utilice el relé R1 ajustado en el estado de funcionamiento de fallo para apagar el producto cuando se detecte un\nerror.\nA1: Unidad\nKM1: Contactor\n12\nLife Is On\nSchneider\nElectric\n5 jul 2025",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "5 jul 2025\n-O COM\n(6) Salida digital\n(7) 0-10 V CC, x-20 mA\n(5) Entrada analógica\n(1) Safe Torque Off\n(2) Salida analógica\n(3) Entrada digital\nConexión de sensores\nR3A, R3C: Relé de secuencia\nR2A, R2C: Relé de secuencia\nR1A, R1B, R1C: Relé de fallos\n(4) Potenciómetro de referencia\nCHAI1A3\nEs posible conectar 1 o 3 sensores a los terminales AI1 o AI3\n(8) 0-10 V CC, de -10 V CC a +10 V CC\nOP24\n00V\n+\nIO DI2\n-O DI3\n(3)\nIO DI4\nLife Is On\nSchneider\nElectric\n(4) (5)\nO DI5\nO DI6\nODI7\nODI8\n024V\nO\n10V\nAl1\nCOM\nA12\nAI3\nHI\nDQ+\nO\n+ R1A\nHoja de\nR1B\ncaracterísticas del\nproducto\nR1C\nDiagrama de cableado del bloque de control\nR2A\nR2C\nATV9.0\nR3A\nR3C\nSTOAO\nSTOBO\nATV930D30N4Z\n(1)\n24VO\n(7)\nAQ1\n1\n(8)\n(7)\n0-10 Vdc x-20 mA\n(2)\nAQ2\nCOM\n(6)\nDQ-\n-\n13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Hoja de\ncaracterísticas del\nproducto\nATV930D30N4Z\nConfiguración de conmutador común positivo/negativo\nEl conmutador se utiliza para adaptar el funcionamiento de las entradas lógicas a la tecnología de las salidas del\ncontrolador programable.\n. Coloque el conmutador en la posición Source (ajuste de fábrica) si se utilizan salidas de PLC con transistores\nPNP.\n. Coloque el interruptor en Ext si se utilizan salidas de PLC con transistores NPN.\nConmutador fijado en posición SRC (Source) con la alimentación de salida para las\nentradas digitales\nAt\nATV940\nSRC\n8\nODI3\nODI4\nODIS\nODIS\nODIT\n024V\n-\nConmutador fijado en posición SRC (Source) y uso de una alimentación externa para las\nentradas digitales\nAt\nATV900\nBRC\nDOV\nO DI1\nQDI2\nQDI3\nODI4\nODIS\nODI7\n024V\nODI8\n24 V = source\nOVO\n+24 VO\nConmutador fijado en posición SK (Sink) con la alimentación de salida para las entradas\ndigitales\nDİSK\nBRC\nA1\nATV900\n60V\nODI1\nODI2\n8\nODI4\nODI5\nODIB\n-0017\nQ24V\nODIS\n1\nConmutador fijado en posición EXT con alimentación externa para las entradas digitales\nSW1\nA1\nATV900\nHEXT\nBRO\nbov\n024V\n-ODI1\nQ DI2\nQDI3\nQDI4\nODIS\nODI6\nODI7\n-ÓDI8\n1.\n24 V ... source\nOVO\n+24 VO\n14\nLife Is On\nSchneider\nElectric\n5 jul 2025",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Hoja de\ncaracterísticas del\nproducto\nCurvas de rendimiento\nATV930D30N4Z\nCurvas de desclasificación\nIn = 100 %\n90 %\n80 %\n70 %\n60 %\n50 %\n40 %\n0 kHz\n4 kHz\n8 kHz\n12 kHz\n- SF\n16 kHz\n40 °C (104 ºF) - Tipo de montaje A, B y C\n50 °C (122 °F) - Tipo de montaje A, B y C\n60 °C (140 °F) - Tipo de montaje B y C\nIn: Corriente nominal del variador\nSF: Frecuencia de conmutación\n5 jul 2025\nLife Is On\n15\nSchneider\nElectric",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Hoja de\ncaracterísticas del\nproducto\nATV930D30N4Z\nTechnical Illustration\nDimensions\nmm\n210\n8.3\n174\n261.85\n68\n11\n10.31\n04\nO\nO\n11\n04\n597\n23.50\n1111\nO\n0\n0\n0\n570\n22.44\n.\n0\nO\nO\n0\n0 28\n0.31\n16\nLife Is On\nSchneider\nElectric\n5 jul 2025",
+      "tablas": []
+    }
+  ]
+}

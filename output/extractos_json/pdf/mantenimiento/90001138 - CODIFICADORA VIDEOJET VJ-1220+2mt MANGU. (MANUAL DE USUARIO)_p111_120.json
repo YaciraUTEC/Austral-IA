@@ -1,0 +1,221 @@
+{
+  "archivo": "90001138 - CODIFICADORA VIDEOJET VJ-1220+2mt MANGU. (MANUAL DE USUARIO)_p111_120",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nAgregar información del reloj\nEfectúe las siguientes tareas para agregar información del reloj al campo\nde usuario:\n1 Siga los pasos 1 a 3 en la sección \"Cómo crear un campo de usuario\npersonalizado\" en la página 5-34.\n2 Seleccione la Descripción como Text (Texto) con la ayuda de las teclas\nde flecha Izquierda y Derecha.\n3 Pulse la tecla Enter para abrir el cuadro de diálogo de configuración\npara los campos de usuario de texto (consulte Figura 5-24).\nVTI-\nTexto\nAtributo Información del relojll\nFigura 5-24. Opción de información del reloj\n4 Introduzca el código correcto en el campo Texto. Para obtener más\ninformación, consulte Tabla 5-12 en la página 5-36.\nCuando introduzca el código, recuerde lo siguiente:\na. Estos códigos distinguen entre mayúsculas y minúsculas.\nb. Los códigos de fecha estándar proceden del calendario gregoriano\nque utilizan las naciones occidentales. El calendario árabe utiliza\ndiferentes códigos de fecha.\nc. Es posible agregar otros caracteres, como por ejemplo números,\nespacios y signos de puntuación para dar formato a los códigos.\nPor ejemplo, DE/FG/BC.\nNote: Los códigos horarios con minúscula representan las fechas de\ncaducidad con la misma definición de código.\n5 Seleccione el Attribute (Atributo) como Clock Information (Información\ndel reloj).\n6 Pulse la tecla Enter después de introducir los códigos para guardar la\nconfiguración y salir del cuadro de diálogo Time Insert (Insertar hora).\nLa nueva inserción del reloj se agrega a la lista de campos de usuario\ndefinidos. Pulse la tecla F2 en la pantalla del Message Editor (Editor de\nmensajes). Es posible insertar este nuevo campo en el mensaje actual.\nPrompted Fields (Campos solicitados) define el contenido que puede\ncambiar cada vez que se utiliza el mensaje. El contenido puede incluir un\nmensaje del día u otro contenido relacionado a una ejecución conocida del\nproducto, pero permanece de la misma forma para dicha ejecución\ncompleta. Consulte la \"Cómo definir un campo solicitadoo\" en la\npágina 5-37.\nCómo definir un campo solicitadoo\nCuando tenga lugar cualquiera de los siguientes eventos, al operador se le\nsolicitará que proporcione el contenido del campo:\nManage User Fields\n5-37\nRev AA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\n· Se cargará un mensaje que contiene un campo solicitado.\n· La impresora se configura en el modo de impresión, y el mensaje\nactualmente seleccionado contiene un campo solicitado.\nRealice las siguientes tareas para agregar un campo solicitado en Campos\nde usuario:\n1 Siga los pasos 1 a 3 en la sección \"Cómo crear un campo de usuario\npersonalizado\" en la página 5-34\n2 Resalte la opción Description (Descripción) a través de la tecla flecha\nAbajo.\n3 Seleccione la opción Text (Texto) mediante las teclas de flecha Izquierda\ny Derecha.\n4 Pulse la tecla Enter para abrir el cuadro de diálogo de configuración\npara los campos de usuario de texto (Figura 5-25).\nVTI\nvideojet\nAtributo Campo solicitado\nTexto\nFigura 5-25. Atributo - Campo solicitado\n5 Introduzca un valor predeterminado para el campo solicitado, que\nestá relacionado con el campo de la etiqueta Text (Texto). Este texto se\nmuestra en el campo solicitado hasta que el operador elimina el texto\ne introduce nueva información.\n6 Resalte la opción Attribute (Atributo) utilizando la tecla de flecha Abajo.\n7 Seleccione la opción Prompted Field (Campo solicitado) mediante la\nayuda de las teclas de flecha Izquierda y Derecha.\n8 Pulse la tecla Enter para abrir la ventana Prompted Field Length\n(Longitud de campo solicitado) (consulte Figura 5-26).\nVTI\nLongitud de campo solicitado\nFigura 5-26. Cuadro de diálogo Field Length (Longitud de campo)\n9 Introduzca en el espacio facilitado la longitud máxima del campo\nsolicitado (se permite cualquier número inferior o igual a 50).\nNota: Si se introduce un número mayor que 50, la impresora reduce el\nnúmero automáticamente hasta 50.\n10 Pulse la tecla Enter (Intro) para guardar el campo solicitado creado y\nsalir del cuadro de diálogo Prompted Field Length (Longitud del campo\nsolicitado). Para obtener más información, consulte \"Cómo insertar un\ncampo de usuario\" en la página 5-30.\n5-38 Manage User Fields\nRev AA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nAgregar contador\nLos contadores (serializadores) son campos que cambian su valor por una\ncantidad fija. Cuando tiene lugar un evento determinado, el valor cambia\na dicha cantidad fija. Por ejemplo, los contadores ayudan a imprimir\ndiferentes números de serie en cada uno de los productos que pasan a\ntravés de la línea de producción.\nRealice las siguientes tareas para agregar un contador como Campo de\nusuario:\n1 Siga los pasos 1 a 3 en la sección \"Cómo crear un campo de usuario\npersonalizado\" en la página 5-34.\n2 Resalte la opción Description (Descripción) con la ayuda de la tecla\nflecha Abajo.\n3 Seleccione la opción Counter (Contador) con la ayuda de las teclas de\nflecha Izquierda y Derecha.\n4 Pulse la tecla Enter para abrir el cuadro de diálogo de contador para\nlos contadores (consulte Figura 5-27).\n/TI\nValor de inicio\nValor actual\nEnd Value (Valor final)\nStep Size (Tamaño del intervalo)\nDirección del intervalo\nIncremento\nRepetición de recuento\n1\n1\nLeading Character (Carácter inicial) 0\nInc/Dec\nImprimir\nFigura 5-27. Cuadro de diálogo New Counter (Nuevo contador)\n5 Establezca los valores de todos los campos en el cuadro de diálogo\nCounter Configuration (Configuración del contador) (consulte Figura 5-27).\nNota: Los campos Start Value (Valor de inicio), Current Value (Valor\nactual) y End Value (Valor final) deben contener el mismo número de\ncaracteres. Si un nuevo contador cuenta de 1 a 500, asegúrese de introducir\n001 en lugar de 1 en los campos Start Value (Valor de inicio) y Current\nValue (Valor actual).\nLos contadores tienen formato numérico, alfabético o alfanumérico. El\nsistema selecciona automáticamente el tipo de contador a partir de los valores\nde inicio, actuales y finales configurados. Los contadores alfanuméricos\ncuentan de 0 a 9 y de A a Z.\n6 Pulse la tecla Enter para guardar la configuración, y salga del cuadro\nde diálogo Configuración del contador.\nDefiniciones del campo contador.\nNombre del campo\nDefinición\nStart Value\n(Valor de inicio)\nValor a partir del cual comienza el recuento. Cuando se\nrestaura el valor, el contador vuelve a este valor.\nRev AA\nManage User Fields 5-39",
+      "tablas": [
+        [
+          [
+            "Nombre del campo",
+            "Definición"
+          ],
+          [
+            "Start Value (Valor de inicio)",
+            "Valor a partir del cual comienza el recuento. Cuando se restaura el valor, el contador vuelve a este valor."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nNombre del campo\nDefinición\nCurrent Value\n(Valor actual)\nEl valor actual del contador. Este campo cambia el valor\nactual de un contador que se está utilizando en estos\nmomentos. Al fijar un nuevo contador, el valor aquí\nintroducido debe ser idéntico al Start Value (Valor de inicio).\nEnd Value (Valor final)\nValor que alcanza el contador al final del recuento. El\ncontador se restaura al valor de inicio la próxima vez que\naumenta.\nStep Size\n(Tamaño del intervalo)\nNúmero de unidades con el que el contador aumenta o\ndisminuye. El tamaño es un valor numérico incluso para\ncontadores alfabéticos (un valor de 2 provoca que el contador\nalfabético \"a, c, e, g\").\nStep Direction\n(Dirección del\nintervalo)\nConfigure este valor en Increment (Aumentar) o Decrement\n(Disminuir)\nRepeat Count\n(Repetición de\nrecuento)\nNúmero de veces que se imprime un valor de recuento antes\nde que el valor aumente o disminuya.\nLeading Character\n(Caracter inicial)\nDefine otro caracter para sustituir los ceros iniciales. El ajuste\npredeterminado es \"0\", y los ceros iniciales permanecen sin\ncambios.\nInc/Dec on (Inc/Dism.\nEn)\nEste campo muestra las causas por las que el contador\naumenta o disminuye por sí solo.\nSeleccione Print (Imprimir) para mostrar que el contador ha\naumentado o disminuido si se imprime un mensaje que\ncontiene el contador.\nSeleccione el nombre de otro contador para mostrar que el\ncontador aumenta o disminuye, cuando el contador\nseleccionado alcance su End Value (Valor final)\n7 Pulse la tecla Enter para guardar y cerrar el campo New Counter\n(Nuevo contador).\nCómo agregar un logotipo\nPara obtener más información, consulte \"Cómo insertar un campo de\nusuario\" en la página 5-30.\n1 Siga los pasos 1 a 3 en la sección \"Cómo crear un campo de usuario\npersonalizado\" en la página 5-34.\n2 Si selecciona Logo (Logotipo) como la descripción, aparecerá la pantalla\ndel Logo Editor (Editor de logotipo).\n5-40 Manage User Fields\nRev AA",
+      "tablas": [
+        [
+          [
+            "Nombre del campo",
+            "Definición"
+          ],
+          [
+            "Current Value (Valor actual)",
+            "El valor actual del contador. Este campo cambia el valor actual de un contador que se está utilizando en estos momentos. Al fijar un nuevo contador, el valor aquí introducido debe ser idéntico al Start Value (Valor de inicio)."
+          ],
+          [
+            "End Value (Valor final)",
+            "Valor que alcanza el contador al final del recuento. El contador se restaura al valor de inicio la próxima vez que aumenta."
+          ],
+          [
+            "Step Size (Tamaño del intervalo)",
+            "Número de unidades con el que el contador aumenta o disminuye. El tamaño es un valor numérico incluso para contadores alfabéticos (un valor de 2 provoca que el contador alfabético \"a, c, e, g\")."
+          ],
+          [
+            "Step Direction (Dirección del intervalo)",
+            "Configure este valor en Increment (Aumentar) o Decrement (Disminuir)"
+          ],
+          [
+            "Repeat Count (Repetición de recuento)",
+            "Número de veces que se imprime un valor de recuento antes de que el valor aumente o disminuya."
+          ],
+          [
+            "Leading Character (Caracter inicial)",
+            "Define otro caracter para sustituir los ceros iniciales. El ajuste predeterminado es \"0\", y los ceros iniciales permanecen sin cambios."
+          ],
+          [
+            "Inc/Dec on (Inc/Dism. En)",
+            "Este campo muestra las causas por las que el contador aumenta o disminuye por sí solo. Seleccione Print (Imprimir) para mostrar que el contador ha aumentado o disminuido si se imprime un mensaje que contiene el contador. Seleccione el nombre de otro contador para mostrar que el contador aumenta o disminuye, cuando el contador seleccionado alcance su End Value (Valor final)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\n3 Pulse la barra espaciadora del teclado para encender o\nX\napagar el cursor.\nX\nContraseña Sistema\nConfigure (Configurar) Calib\n-LOGO1-\nFuente: 16 de alto\nAncho: 100\nAltura: 32\n1\n1\nEditor de logotipo\nFigura 5-28. Pantalla Edit Logo (Editar logotipo)\n4 Cree el logotipo trazando líneas con la ayuda de las combinaciones de\nteclas que se muestran en la Tabla 5-13 en la página 5-41.\nCombinación de teclas\nMovimiento del cursor\no\no\no\nMueve el cursor un\npunto cada vez y no\ndibuja una línea.\nalt\n+\no\no\no\nMueve el cursor diez\npuntos cada vez y no\ndibuja una línea.\nshift *\n+\no\no\no\nMueve el cursor un\npunto cada vez y dibuja\nuna línea.\nctrl\n+\no\no\no\nMueve el cursor un\npunto cada vez y\nelimina los puntos\ndibujados.\nTabla 5-13: Combinaciones de teclas para la creación de logotipos\nCuando haya finalizado su logotipo, pulse las teclas Mayús + F1 para\nguardar y cerrar su logotipo.\nRev AA\nManage User Fields 5-41",
+      "tablas": [
+        [
+          [
+            "Combinación de teclas",
+            "Movimiento del cursor"
+          ],
+          [
+            "o",
+            "",
+            "o o",
+            "",
+            "",
+            "Mueve el cursor un punto cada vez y no dibuja una línea."
+          ],
+          [
+            "alt +",
+            ":selected: o o o :selected:",
+            "Mueve el cursor diez puntos cada vez y no dibuja una línea."
+          ],
+          [
+            "shift * + :selected: o o o :selected:\n:selected:",
+            "Mueve el cursor un punto cada vez y dibuja una línea."
+          ],
+          [
+            "ctrl + o o o :selected:",
+            "Mueve el cursor un punto cada vez y elimina los puntos dibujados."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nCómo restablecer un contador de mensajes\nRealice las siguientes tareas para restaurar un contador de mensajes a su\nvalor inicial.\n1 Pulse Alt+U para abrir el menú User Fields (Campos de usuario).\n2 Seleccione la opción Reset Counter (Restablecer contador) (consulte\nFigura 5-29).\nCampos de usuario\nImprim\nEditar campo de usuario\nNuevo campo de usuario\nEliminar campo de usuario\nRestablecer contador\nEstablecer turnos\nFigura 5-29. Seleccione Reset Counter (Restablecer contador)\n3 Aparecerá el menú Select Counter to Reset (Seleccionar contador para su\nrestauración).\nSeleccionar contador para ser restaurado\nFigura 5-30. Seleccionar contador para su restauración\n4 Seleccione el contador que desee restablecer y pulse la tecla Enter.\nCómo ajustar turnos\nUtilice la opción Set Shift (Fijar turno) para definir las horas y los minutos\ndel turno. El operador puede fijar la hora y minuto de cinco turnos. Es\nposible además definir también el caracter para los turnos.\nRealice las siguientes tareas para configurar los turnos:\n1 Seleccione User Fields (Campos de usuario) en la barra de menú y pulse\nla tecla Enter.\n2 Seleccione Set Shifts (Establecer turnos) en el menú Campos de usuario.\n3 Pulse la tecla Enter para abrir el cuadro de diálogo Set Shifts (Establecer\nturnos) (Figura 5-31 en la página 5-43).\n4 Establezca la hora de inicio de cada uno de los turnos que necesita\nutilizar (empiece por el turno 1) con la ayuda de las teclas de flecha\nArriba y Abajo. Por ejemplo, para establecer las 7:15 como la hora de\ninicio del turno 1, establezca la opción Start hour (Hora de inicio) del\nturno 1 en siete y la opción Start minute (Minuto de inicio) del turno 1\nen 15.\n5-42 Manage User Fields\nRev AA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\n5 Seleccione los campos Start time (Hora de inicio) de los turnos\nconsecutivos utilizando las flechas de tecla, e introduzca los valores\nnecesarios (consulte el paso 4).\nNota: Los valores de hora dependen del reloj de 24 horas. Por ejemplo, la\nentrada \"15\" corresponde a las 3:00 PM, hora de inicio del turno.\nNota: La hora de inicio del turno 2 debe ser posterior a la hora de inicio del\nturno 1. Cuando se establece el turno 3, la hora de inicio debe ser posterior a\nlas horas de inicio de los turnos 1 y 2.\nNota: Los turnos deben ser consecutivos (no es posible establecer las horas de\nlos turnos 1 y 3 y excluir el turno 2).\nEstablecer turnos\nHora de inicio del turno 1\n1\nMinuto de inicio del turno 1 0\nHora de inicio del turno 2\n6\nMinuto de inicio del turno 2 0\nHora de inicio del turno 3\n12\nMinuto de inicio del turno 3 0\nHora de inicio del turno 4\n17\nMinuto de inicio del turno 4 0\nHora de inicio del turno 5 22\nMás:\nFigura 5-31. Configuración de los turnos\n6 Introduzca \"0\" para la hora y el minuto de inicio del primer turno que\nno necesite. No se utilizarán los turnos posteriores.\n7 Introduzca el caracter que corresponde al primer turno en el campo\nCharacter for shift 1 (Caracter para el turno 1). Este caracter es para\nel turno actual insertado en los mensajes durante la impresión. La\nimpresora realiza una cuenta hacia delante desde dicho caracter para\nobtener los códigos de turno restantes. La Tabla 5-14 contiene un\nejemplo de los códigos de turno.\nValor\nintroducido\nTurno 1\nTurno 2\nTurno 3\nTurno 4\nTurno 5\nA\nA\nB\nC\nD\nE\n1\n1\n2\n3\n4\n5\n4\n4\n5\n6\n7\n8\nd\nd\ne\nf\ng\nh\nTabla 5-14: Códigos de turno\n8 Pulse la tecla Enter para guardar la configuración y salir del menú Set\nShifts (Establecer turnos).\nManage User Fields\n5-43\nRev AA",
+      "tablas": [
+        [
+          [
+            "Valor introducido",
+            "Turno 1",
+            "Turno 2",
+            "Turno 3",
+            "Turno 4",
+            "Turno 5"
+          ],
+          [
+            "A",
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          [
+            "1",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          [
+            "4",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          [
+            "d",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nGestionar texto\nComo cambiar las mayúsculas y minúsculas de la fuente\nEl mensaje que necesite puede contener caracteres tanto en mayúsculas\ncomo en minúsculas. Las teclas del teclado alfanumérico que controlan si\nlos caracteres se introducen en mayúsculas o en minúsculas se muestran\nen Tabla 5-15.\nTecla\nFunción\ncaps\nLa tecla Caps (Mayús) cambia el siguiente caracter\nintroducido entre mayúsculas y minúsculas\nLa tecla Caps Lock (Bloqueo Mayús) cambia el valor\npredeterminado.\nTabla 5-15: Teclas utilizadas para cambiar la fuente entre mayúscula y minúscula\nCómo seleccionar la altura de la fuente\nEs posible cambiar la altura de la fuente de un mensaje, así como tener\nmás de un tamaño en un mismo mensaje. El número de líneas de un\nmensaje depende del tamaño de la fuente seleccionada y del modelo de la\nimpresora. Acuda a see \"Especificaciones de Fuente y Velocidades de\nLínea\" on page A-9para más información. . Pulse la tecla F1 hasta que\naparezca la altura de fuente que desea (consulte Figura 5-32).\nMensajes Editor Campos de usuario\n-VTI-\nlFuente: Videojet 7 de al\nNo hay texto seleccionado\nFigura 5-32. Select Font Height (Seleccionar altura de la fuente)\nEfectúe las siguientes tareas para fijar la altura de la fuente desde el menú\nEditor (Editor).\n5-44\nGestionar texto\nRev AA",
+      "tablas": [
+        [
+          [
+            "Tecla",
+            "Función"
+          ],
+          [
+            "caps",
+            "La tecla Caps (Mayús) cambia el siguiente caracter introducido entre mayúsculas y minúsculas"
+          ],
+          [
+            "",
+            "La tecla Caps Lock (Bloqueo Mayús) cambia el valor predeterminado."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\n1 Pulse las teclas Alt+E o pulse F1. Aparecerá el menú Editor (Editor)\n(consulte Figura 5-33).\nEditor\nCampos de usuario\nSeleccionar fuente\nInsertar campo de usuario\nModificar atributos\nAtributos en linea\nCopiar texto\nPegar texto\nConfigurar tipo de teclado\nGuardar mensaje\nGuardar y salir\nBorrar mensaje\nAbandonar\nFigura 5-33. Menú Editor (Editor)\n2 Seleccione la opción Select Font (Seleccionar fuente). Aparecerá el\nmenú Select Font (Seleccionar fuente). Utilice las teclas de flecha\nArriba y Abajo para seleccionar la altura de la fuente.\nMensajes Editor Campos de usuario\nSelect Font (Seleccionar fuente)\n5 Alto\n7 Alto\n9 Alto\n12 Alto\n16 Alto\n24 Alto\n34 Alto\nFigura 5-34. Select Font List (Seleccionar lista de fuentes)\n3 Seleccione la altura de la fuente y pulse la tecla Enter.\nCómo seleccionar el contenido\nEl editor selecciona automáticamente el bloque de texto que introduzca. A\nesta función se la conoce con el nombre de Default Text Selection (Selección\nde texto predeterminado) (Figura 5-35 en la página 5-46). Si esta función no\nestá disponible, aparecerá en dicha área el mensaje No Text Selected (No hay\ntexto seleccionado).\nRev AA\nGestionar texto\n5-45",
+      "tablas": [
+        [
+          [
+            "Editor",
+            "Campos de usuario"
+          ],
+          [
+            "Seleccionar fuente"
+          ],
+          [
+            "Insertar campo de usuario"
+          ],
+          [
+            "Modificar atributos\n:selected:"
+          ],
+          [
+            "Atributos en linea"
+          ],
+          [
+            "Copiar texto"
+          ],
+          [
+            "Pegar texto"
+          ],
+          [
+            "Configurar tipo de teclado Guardar mensaje"
+          ],
+          [
+            "Guardar y salir Borrar mensaje"
+          ],
+          [
+            "Abandonar"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nMensajes\nEditor Campos de usuario Imprimir\nC\nVTI-\nVIDEOJET\nSelección\nde texto\npredeterminado\nFuente: Videojet 7 de alto\nVIDEOJET\nF1= Fuente\nFN= Negro\nF2= Insertar campo de usuario\nF3= Modificar atributos\nF4= Parámetros de mensaje\nMayus F1= Guardar y Salir\n`Cabezal de impresión desactivado\nFigura 5-35. Text Selection (Selección de texto)\nPulse Ctrl + la tecla de flecha izquierda o Ctrl + la tecla de flecha derecha para\nresaltar el texto necesario.\nCómo copiar y pegar el texto\nEs posible copiar texto al portapapeles y pegarlo en un área diferente.\nCómo copiar texto\nPara copiar el texto, realice las siguientes tareas.\n1 Pulse las teclas Alt+M. Aparecerá el menú Messages (Mensajes).\n2 Seleccione Edit Message (Editar mensaje). Aparecerá el cuadro de\ndiálogo Select Message To Edit (Seleccionar mensaje para su edición).\nConsulte la Figura 5-36.\nMensajes Editor Campos de usuario Imprimir C\nSeleccionar mensaje impresión\nParámetros de mensaje\nParámetros estandard\nEditar mensale\nNuevo mensaje\nBorrar mensaje\nCopiar mensaje\nBorrar todos los mensajes\nExport message to USB\nImport message from USB\nFN= Negro (Inglés)\nF3= Modificar atributos\nF4= Parámetros de mensaje\nMayús F1= Guardar y Salir\nCahezal de impresión desactivado\nSeleccionar mensaje para editar\narab\nCALYPSO\nch\nEan8\ninvertreverse\njap\nTEST MESSAGE\nFigura 5-36. Opción Edit Message (Editar mensaje)\n3 Seleccione el mensaje y pulse la tecla Enter. Aparecerá la pantalla del\nMessage Editor (Editor de mensajes).\n5-46 Gestionar texto\nRev AA",
+      "tablas": []
+    }
+  ]
+}

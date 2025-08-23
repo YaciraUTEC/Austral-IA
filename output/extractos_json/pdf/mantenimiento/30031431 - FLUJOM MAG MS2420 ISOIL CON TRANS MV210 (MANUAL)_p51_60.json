@@ -1,0 +1,974 @@
+{
+  "archivo": "30031431 - FLUJOM MAG MS2420 ISOIL CON TRANS MV210 (MANUAL)_p51_60",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "ISOMAG\nBATCHING ALARMS\nNAME\nDESCRIPTION\nNOTES\nBatching time-out\nIt activates after 4 seconds from the\nstart command, when any flow is\ndetected\nWhen alarms activate the actuator\nclose automatically\nBoth alarms can be visualized\nremotely, setting the usc2\nfunction on \"HARD W. AL\" or \"ALL\nALARMS\"\nOverflow\nIt activates when the batching\nquantity is more than 20% of the set\none.\nVisualize alarms via display:\nThe presence of a dosage alarm is highlighted by the message: \"ALARM\"\nVisualize alarms via MCP:\nBatching page: The presence of a batching alarm is highlighted by the message: \"ALARM\"\nAlarms page: The presence of a batching alarm is highlighted by the message: \"BATCHING ERR.\"\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nATTENTION !!\nDISABLED FUNCTIONS WHEN BATCHING IS ACTIVATED\n\"1.19\" pag27\n\"4.3\" pag28\n\"4.4\" pag28\n\"9.7\" pag29\n\"9.8\" pag29\n\"9.9\" pag29\n\"12.3\" pag30\n(POS. 7.3-4) Current output option and range [Out mA1/2=X_XX XXX] AL3 [AO1CF] [AO2CF]\nThis function sets the current output 1 and 2. This function is optional and will not appear unless the\noption has been requested. There are three fields to modify for this function:\nScale zero: 4 or 0mA\nFull scale: 20 or 22mA\nField: + = positive, - = negative, blank = both, -0+ = central zero scale\nThe values corresponding to the scale points are shown in the following chart:\nISOIL\nINDUSTRIA\n48 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "NAME",
+            "DESCRIPTION",
+            "NOTES"
+          ],
+          [
+            "Batching time-out",
+            "It activates after 4 seconds from the start command, when any flow is detected",
+            "When alarms activate the actuator close automatically Both alarms can be visualized remotely, setting the usc2 function on \"HARD W. AL\" or \"ALL ALARMS\""
+          ],
+          [
+            "Overflow",
+            "It activates when the batching quantity is more than 20% of the set one."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "ISOMAG\nCURRENT VALUES IN mA ASSOCIATE TO THE % FULL SCALE VALUE\nPOSSIBLE FIELD\nREVERSE FLOW\nVALUE\nZERO\nDIRECT FLOW VALUE\n≤-210%\n-100%\n0%\n+100%\n≥+210%\nOut.mA = 0 + 20 +\n0\n0\n0\n20\n20\nOut.mA = 0 + 22 +\n0\n0\n0\n20\n22\nOut.mA = 4 + 20 +\n4\n4\n4\n20\n20\n*Out.mA = 4 + 22 +\n4\n4\n4\n20\n21.6\nOut.mA = 0 + 20 -\n20\n20\n0\n0\n0\nOut.mA = 0 + 22 -\n22\n20\n0\n0\n0\nOut.mA = 4 + 20 -\n20\n20\n4\n4\n4\nOut.mA = 4 + 22 -\n21.6\n20\n4\n4\n4\nOut.mA = 0 + 20\n20\n20\n0\n20\n20\nOut.mA = 0 + 22\n22\n20\n0\n20\n22\nOut.mA = 4 + 20\n20\n20\n4\n20\n20\nOut.mA = 4 + 22\n21.6\n20\n4\n20\n21.6\nOut.mA = 0 + 20 -0+\n0\n0\n10\n20\n20\nOut.mA = 0 + 22 -0+\n0\n1\n11\n21\n22\n** Out.mA = 4 + 20-0+\n4\n4\n12\n20\n20\nOut.mA = 4 + 22 -0+\n2\n4\n12\n20\n22\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nIn hardware alarm conditions \"HARDW AL.\" (interrupted coils, empty pipe, measure error) the current\nvalue is programmed by the function \"mA v.fault\" (pos. 5.6) and it is expressed as percentage of a fixed\ncurrent range, where: 0% = 0mA and 210% = 22mA.\n* Example 1: out 4-22 +\nExample 2: out 4-20 -0+\nJ (mA)\n22 mA -\nJ (mA) !\n20 mA\n1\n1\n20 mA\n-\n.12 mA\n1\n1\n1\n1\n1\n.4 mA\n1\n_4 mA\n1\n1\n1\n-110% F.S. - 100% F.S.\nzero\n+100% F.S. +112.5% F.S.\n-110% F.S. - 100% F.S.\n+100% F.S. +110% F.S.\nzero\n(POS. 7.5) Analog Output1 full scale\n[A1S= dm/s x.xxxx]\nAL3 [AO1FS]\nIt allows to set the full scale value for analog output 1 independently from the main scale of the\ninstrument.\n(POS. 7.6) Analog Output2 full scale\n[A2S= dm/s x.xxxx]\nAL3 [AO2FS]\nIt allows to set the full scale value for analog output 2 independently from the main scale of the\ninstrument.\n49 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "POSSIBLE FIELD",
+            "REVERSE FLOW VALUE",
+            "ZERO",
+            "DIRECT FLOW VALUE"
+          ],
+          [
+            "",
+            "≤-210%",
+            "-100%",
+            "0%",
+            "+100%",
+            "≥+210%"
+          ],
+          [
+            "Out.mA = 0 + 20 +",
+            "0",
+            "0",
+            "0",
+            "20",
+            "20"
+          ],
+          [
+            "Out.mA = 0 + 22 +",
+            "0",
+            "0",
+            "0",
+            "20",
+            "22"
+          ],
+          [
+            "Out.mA = 4 + 20 +",
+            "4",
+            "4",
+            "4",
+            "20",
+            "20"
+          ],
+          [
+            "*Out.mA = 4 + 22 +",
+            "4",
+            "4",
+            "4",
+            "20",
+            "21.6"
+          ],
+          [
+            "Out.mA = 0 + 20 -",
+            "20",
+            "20",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Out.mA = 0 + 22 -",
+            "22",
+            "20",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Out.mA = 4 + 20 -",
+            "20",
+            "20",
+            "4",
+            "4",
+            "4"
+          ],
+          [
+            "Out.mA = 4 + 22 -",
+            "21.6",
+            "20",
+            "4",
+            "4",
+            "4"
+          ],
+          [
+            "Out.mA = 0 + 20",
+            "20",
+            "20",
+            "0",
+            "20",
+            "20"
+          ],
+          [
+            "Out.mA = 0 + 22",
+            "22",
+            "20",
+            "0",
+            "20",
+            "22"
+          ],
+          [
+            "Out.mA = 4 + 20",
+            "20",
+            "20",
+            "4",
+            "20",
+            "20"
+          ],
+          [
+            "Out.mA = 4 + 22",
+            "21.6",
+            "20",
+            "4",
+            "20",
+            "21.6"
+          ],
+          [
+            "Out.mA = 0 + 20 -0+",
+            "0",
+            "0",
+            "10",
+            "20",
+            "20"
+          ],
+          [
+            "Out.mA = 0 + 22 -0+",
+            "0",
+            "1",
+            "11",
+            "21",
+            "22"
+          ],
+          [
+            "** Out.mA = 4 + 20-0+",
+            "4",
+            "4",
+            "12",
+            "20",
+            "20"
+          ],
+          [
+            "Out.mA = 4 + 22 -0+",
+            "2",
+            "4",
+            "12",
+            "20",
+            "22"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "ISOMAG\nMENU 8 - COMMUNICATION\n(POS. 8.1) Hart Preamble\n[HART pr .= xxxxxx]\nAL3\n[HARTP]\nNumber of preamble (Hart function)\n(POS. 8.2) Hart O.C\n[HART O.C=ON/OFF]\nAL3\n[HRTOC]\nHart bus output control 4-20mA.\nHART\nREGISTERED\n(POS. 8.3) Device Address\n[Dev. Addr=XXXXXX]\nAL3\n[DVADD]\nDevice communication address number.\n(POS. 8.4) Modbus Speed\n[Speed=XXXXXX]\nAL3\n[MDBSP]\nModbus link speed.\n(POS. 8.5) Modbus Parity\n[Parity=XXXXXX]\nAL3\n[MDBPA]\nModbus link parity.\n(POS. 8.6) Modbus Delay\n[Delay=XXXXXX]\nAL3\n[MDBDL]\nModbus replay delay.\n(POS. 8.7) Modbus chars Timeout\n[C. timeout=X]\nAL3\n[MDBCT]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nMaximun delay between chars (frames).\nMV210 MODBUS PROTOCOL\nRS485 HARDWARE CONNECTION\nFor the hardware connection see the relative section in this manual and MODBUS manual.\nDATA WORD FORMAT\nThe data bytes travelling in serial form on the communication line are enclosed in words which have a fixed\nlength of 10 bits:\n1 START BIT\n8 DATA BITS = 1 DATA BYTE\n1 STOP BIT\nEach word contains one byte of data plus additional bits which serve to synchronies and make the\ncommunication safer. These extra bits added automatically in the transmission phase by the transmitter\nintegrated circuit. In the reception phase, the reverse operation is executed by the receiver integrated circuit:\nthe eight data bits are extracted and the others eliminated. These operation are executed entirely on a hardware\nlevel. The 8 data bits must be serialised staring from bit 0 (the least significant one).\nCOMMUNICATION SPEED\nThe millennium series instruments have 4 communication speeds:\n4800 bps\n9600 bps\n19200 bps\n38400 bps\n50 / 85\nISOIL\nINDUSTRIA\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 8.1) Hart Preamble",
+            "[HART pr .= xxxxxx]",
+            "AL3",
+            "[HARTP]"
+          ],
+          [
+            "Number of preamble (Hart function)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.2) Hart O.C",
+            "[HART O.C=ON/OFF]",
+            "AL3",
+            "[HRTOC]"
+          ],
+          [
+            "Hart bus output control 4-20mA. HART REGISTERED",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.3) Device Address",
+            "[Dev. Addr=XXXXXX]",
+            "AL3",
+            "[DVADD]"
+          ],
+          [
+            "Device communication address number.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.4) Modbus Speed",
+            "[Speed=XXXXXX]",
+            "AL3",
+            "[MDBSP]"
+          ],
+          [
+            "Modbus link speed.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.5) Modbus Parity",
+            "[Parity=XXXXXX]",
+            "AL3",
+            "[MDBPA]"
+          ],
+          [
+            "Modbus link parity.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.6) Modbus Delay",
+            "[Delay=XXXXXX]",
+            "AL3",
+            "[MDBDL]"
+          ],
+          [
+            "Modbus replay delay.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.7) Modbus chars Timeout",
+            "[C. timeout=X]",
+            "AL3",
+            "[MDBCT]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "ISOMAG\nSERIAL PORT SETTINGS\nSerial port setting:\nData bits: 8\nParity: Manu < 7-Comunication >, function - < Parity >\nStop bits: 1\nFlow control: none (no control lines no xon/xoff characters used)\nGENERAL DESCRIPTION\nAll data are sent in group of 16 bits registers. The format used is BIG ENDIAN, MSB byte is sent first, LSB is\nsent last. When a variable is more than 16 bits in size, it uses two adjacent registers. The totalizer values are\nexpressed as integer numbers. For the correct representation of the value in case there is a fractional part, the\ndecimal dot must be placed in the position specified by the next variable register following the totalized value.\nAll values relative to the flow rate are averaged. The number of samples that compose the average value varies\ndepending on the measure sample rate and the MODBUS reading requests. Example: measure sample rate = 50\nHz, MODBUS reading frequency = 10 Hz, Number of samples used for average calculation = 50/10 = 5.\nRead process variable : COMMAND 04.\nADDRESS\nSIZE\nTYPE OF DATA\nMEANING\n0000-0001\n2 REGISTERS 32 BITS\nFLOAT\nfull scale flow rate in the unit of measure chosen (as can be seen in the display of the instrument)\n0002-0003\n2 REGISTERS 32 BIT\nFLOAT\nflow rate value in percentage\n0004-0005\n2 REGISTERS 32 BITS\nFLOAT\nflow rate value in the unit of measure chosen\n0006-0007\n2 REGISTERS 32 BITS\nFLOAT\nFlow speed in the unit of measure chosen (m/s or ft/s)\n0008-0009\n2 REGISTERS 32 BITS\nUNSIGNED LONG\nTotalizer T+ value\n0010\n1 REGISTER 8+8 BITS\nTWO BYTES\nFirst byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places\n0011-0012\n2 REGISTERS 32 BITS\nUNSIGNED LONG\nTotalizer P+ value\n0013\n1 REGISTER 8+8 BITS\nTWO BYTES\nFirst byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places\n0014-0015\n2 REGISTERS 32 BITS\nUNSIGNED LONG\ntotalizer T- value\n0016\n1 REGISTER 8+8 BITS\nTWO BYTES\nFirst byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places\n0017-0018\n2 REGISTERS 32 BITS\nUNSIGNED LONG\nTotalizer P- value\n0019\n1 REGISTER 8+8 BITS\nTWO BYTES\nFirst byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places\n0020\n1 REGISTER 8+8 BITS\nTWO BYTES\nfirst byte (MSB): process flags 1, (LSB): process flags 2\n0021\n1 REGISTER 16 BITS\nUNSIGNED SHORT\nNumber of measure samples used for to calculate the latest read average value of flow rate\n0022\n1 REGISTER 16 BITS\nUNSIGNED SHORT\nEquivalent resistance measured between electrode E1 and the common point, in kilo ohm\n0023\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nequivalent resistance measured between electrode E2 and the common point, in kilo ohm\n0024\n1 REGISTER, 16 BITS\nSIGNED SHORT\nvoltage measured between electrode E1 and the common point, in millVolts\n0025\n1 REGISTER, 16 BITS\nSIGNED SHORT\nvoltage measured between electrode E2 and the common point, in millVolts\n0026\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nvoltage measured at rechargeable terminals, in milliVolts\n0027\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nresidual battery capacity in percentage\n0028\n1 REGISTER, 16 BITS\nSIGNED SHORT\nCPU temperature in the unit of measure chosen\n0029\n1 REGISTER, 16 BITS\nSIGNED SHORT\nBoard temperature T1 the unit of measure chosen\n0030\n1 REGISTER, 16 BITS\nSIGNED SHORT\nBoard temperature T2 the unit of measure chosen\n0031\n1 REGISTER, 16 BITS\nSIGNED SHORT\nFlow sensor coil's temperature the unit of measure chosen\n0032\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nlatest sensor test result code\n0033\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nnumber of alarms currently active\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nMeaning and value of the process flags 1 returned with the register 0020 (MSB):\n\nbit 7 (MSB): flow rate alarm MIN (flow rate below the minimum threshold set)\n\nbit 6: flow rate alarm MAX (flow rate over the maximum threshold set)\n\nbit 5: flow rate sign (1 = negative)\n\nbit 4: flow rate below the cut-off value\n\nbit 3: measure range active (0= range 1, 1= range 2)\n\nbit 2: flow rate measure reset value status (1= measure is forcibly reset to zero)\n\nbit 1: volume counters lock status (1= counters are locked)\n\nbit 0 (LSB) : internal use, no meaning\n51 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "ADDRESS",
+            "SIZE",
+            "TYPE OF DATA",
+            "MEANING"
+          ],
+          [
+            "0000-0001",
+            "2 REGISTERS 32 BITS",
+            "FLOAT",
+            "full scale flow rate in the unit of measure chosen (as can be seen in the display of the instrument)"
+          ],
+          [
+            "0002-0003",
+            "2 REGISTERS 32 BIT",
+            "FLOAT",
+            "flow rate value in percentage"
+          ],
+          [
+            "0004-0005",
+            "2 REGISTERS 32 BITS",
+            "FLOAT",
+            "flow rate value in the unit of measure chosen"
+          ],
+          [
+            "0006-0007",
+            "2 REGISTERS 32 BITS",
+            "FLOAT",
+            "Flow speed in the unit of measure chosen (m/s or ft/s)"
+          ],
+          [
+            "0008-0009",
+            "2 REGISTERS 32 BITS",
+            "UNSIGNED LONG",
+            "Totalizer T+ value"
+          ],
+          [
+            "0010",
+            "1 REGISTER 8+8 BITS",
+            "TWO BYTES",
+            "First byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places"
+          ],
+          [
+            "0011-0012",
+            "2 REGISTERS 32 BITS",
+            "UNSIGNED LONG",
+            "Totalizer P+ value"
+          ],
+          [
+            "0013",
+            "1 REGISTER 8+8 BITS",
+            "TWO BYTES",
+            "First byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places"
+          ],
+          [
+            "0014-0015",
+            "2 REGISTERS 32 BITS",
+            "UNSIGNED LONG",
+            "totalizer T- value"
+          ],
+          [
+            "0016",
+            "1 REGISTER 8+8 BITS",
+            "TWO BYTES",
+            "First byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places"
+          ],
+          [
+            "0017-0018",
+            "2 REGISTERS 32 BITS",
+            "UNSIGNED LONG",
+            "Totalizer P- value"
+          ],
+          [
+            "0019",
+            "1 REGISTER 8+8 BITS",
+            "TWO BYTES",
+            "First byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places"
+          ],
+          [
+            "0020",
+            "1 REGISTER 8+8 BITS",
+            "TWO BYTES",
+            "first byte (MSB): process flags 1, (LSB): process flags 2"
+          ],
+          [
+            "0021",
+            "1 REGISTER 16 BITS",
+            "UNSIGNED SHORT",
+            "Number of measure samples used for to calculate the latest read average value of flow rate"
+          ],
+          [
+            "0022",
+            "1 REGISTER 16 BITS",
+            "UNSIGNED SHORT",
+            "Equivalent resistance measured between electrode E1 and the common point, in kilo ohm"
+          ],
+          [
+            "0023",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "equivalent resistance measured between electrode E2 and the common point, in kilo ohm"
+          ],
+          [
+            "0024",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "voltage measured between electrode E1 and the common point, in millVolts"
+          ],
+          [
+            "0025",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "voltage measured between electrode E2 and the common point, in millVolts"
+          ],
+          [
+            "0026",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "voltage measured at rechargeable terminals, in milliVolts"
+          ],
+          [
+            "0027",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "residual battery capacity in percentage"
+          ],
+          [
+            "0028",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "CPU temperature in the unit of measure chosen"
+          ],
+          [
+            "0029",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Board temperature T1 the unit of measure chosen"
+          ],
+          [
+            "0030",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Board temperature T2 the unit of measure chosen"
+          ],
+          [
+            "0031",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Flow sensor coil's temperature the unit of measure chosen"
+          ],
+          [
+            "0032",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "latest sensor test result code"
+          ],
+          [
+            "0033",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "number of alarms currently active"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "ISOMAG\nMeaning and value of the process flags 2 returned with the register 0020 (LSB):\n\nbit 7 (MSB): flow rate overflow (value greater than full scale)\n\nbit 6: pulse channel #2 overflow (frequency greater than maximum possible for the given parameters)\n\nbit 5: pulse channel #1 overflow (frequency greater than maximum possible for the given parameters)\n\nbit 4: measure signal amplitude out of A/D converter range\n\nbit 3: measure signal amplitude out of amplifier capability\n\nbit 2: input signal error (out of input chain capability)\n\nbit 1: coils excitation error\n\nbit 0 (LSB) : pipe empty\nMeaning and value of the sensor test flags returned with the register 0032:\n\nbit 15 (MSB): resistance at electrode E2 is outside the limits respect to the reference value\n\nbit 14 : resistance at electrode E1 is outside the limits respect to the reference value\n\nbit 13: coil time B is outside the limits respect to the reference value\n\nbit 12: coil time A is outside the limits respect to the reference value\n\nbit 11: coil temperature is outside the limits respect to the reference value\n\nbit 10: coil leakage current is outside the limit\n\n\nbit 09: coil driver output 2 voltage is out of tolerance during test phase 3\nbit 08: coil driver output 1 voltage is out of tolerance during test phase 3\n\nbit 07: coil driver output 2 voltage is out of tolerance during test phase 2\n\n\nbit 05: coil driver output 2 voltage is out of tolerance during test phase 1\n\nbit 04: coil driver output 1 voltage is out of tolerance during test phase 1\n\nbit 03: coil driver power generator voltage is out of tolerance during test phase 2\n\nbit 02: coil driver power generator voltage is out of tolerance during test phase 1\n\nbit 01: coil driver power generator value is out of tolerance during test phase 2\nbit 06: coil driver output 1 voltage is out of tolerance during test phase 2\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n\nbit 00 (LSB): coil driver power generator value is out of tolerance during test phase 1\nReset totalizers: COMMAND 05.\nADDRESS\nSIZE\nTYPE OF DATA\nCOMMAND VALUE\nMEANING\n0000\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\n0XFF00 (HEX)\nReset the enabled totalizers (same totalizer enabled for\nreset from digital input).\nDiagnostics: COMMAND 08.\nADDRESS\nSIZE\nTYPE OF DATA\nFUNCTION / VALUE\n0000\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn query data\n0001\n1 REGISTER, 16 BITS\nSIGNED SHORT\nRestart communication\n0004\n1 REGISTER, 16 BITS\nSIGNED SHORT\nActivate listen mode\n0010\n1 REGISTER, 16 BITS\nSIGNED SHORT\nClear counters and Diagnostic Register\nADDRESS\nSIZE\nTYPE OF DATA\nFUNCTION / VALUE\n0011\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Bus Message Count\n0012\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Bus Communication Error Count\n0013\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Bus Exception Error Count with CRC error\n0014\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Server Message Count\n0015\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Server No Response Count\n0016\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Server NAK Count\n0017\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Server Busy Count\n0018\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Bus Character Overrun Count\nISOIL\nINDUSTRIA\n52 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "ADDRESS",
+            "SIZE",
+            "TYPE OF DATA",
+            "COMMAND VALUE",
+            "MEANING"
+          ],
+          [
+            "0000",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "0XFF00 (HEX)",
+            "Reset the enabled totalizers (same totalizer enabled for reset from digital input)."
+          ]
+        ],
+        [
+          [
+            "ADDRESS",
+            "SIZE",
+            "TYPE OF DATA",
+            "FUNCTION / VALUE"
+          ],
+          [
+            "0000",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return query data"
+          ],
+          [
+            "0001",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Restart communication"
+          ],
+          [
+            "0004",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Activate listen mode"
+          ],
+          [
+            "0010",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Clear counters and Diagnostic Register"
+          ]
+        ],
+        [
+          [
+            "ADDRESS",
+            "SIZE",
+            "TYPE OF DATA",
+            "FUNCTION / VALUE"
+          ],
+          [
+            "0011",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Bus Message Count"
+          ],
+          [
+            "0012",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Bus Communication Error Count"
+          ],
+          [
+            "0013",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Bus Exception Error Count with CRC error"
+          ],
+          [
+            "0014",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Server Message Count"
+          ],
+          [
+            "0015",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Server No Response Count"
+          ],
+          [
+            "0016",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Server NAK Count"
+          ],
+          [
+            "0017",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Server Busy Count"
+          ],
+          [
+            "0018",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Bus Character Overrun Count"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "(POS. 9.1) Language for all msn\nMENU 9 - DISPLAY\n[Language= ITA/EN]\nAL1\n[LLANG]\nChoice of the language. There are 8 languages available: GB = English, IT = Italian, TR = Turkish,\nPL = Polish, DE = German, FR = French, PT = Portuguese, ES = Spanish.\nISOMAG\n(POS. 9.2) Display Contrast\n[Contrast=\nx]\nAL1\n[DCNTR]\nDisplay contrast set. The contrast can change according to the room temperature. The allowed range\nis from 0 to 9.\n(POS. 9.3) KeyBoard Timeout Time [Disp. time=s xxx]\nAL1\n[KBTMT]\nThis function set dispay/keyboard inactivity. The set values are from 020 to 255 second.\n(POS. 9.4) Display refresh Frequency\n[D.rate=Hz xx]\nAL1\n[DISRF]\nFrequency of the display data update. This parameter effects only the display layout and not the response\ntime of the meter itself. The possible choices are: 1/2/5/10 Hz.\n(POS. 9.5) Display function number\n[Disp.fn= x]\nAL2\n[DISFN]\nThis function sets the display of the page making it visible when you start the display. For each display\npage is associated with a number that corresponds to the position.\n(POS. 9.6) Display function lock\n[Disp.lock= x]\nAL2\n[DLOKE]\nThis function locks the scrolling of the display pages selected by the setting. POS. 9.5 see page 29\nfunction.\n(POS. 9.7) Partial totalizer\n[Part. tot=\nON]\nAL2\n[PTOTE]\nThis function enables the display of partial totalizer in visualization pages\n(POS. 9.8) Negative totalizer\n[Neg. tot= ON]\nAL2\n[NEGTE]\nThis function enables the display of negative totalizer in visualization pages\n(POS. 9.9) Net totalizer\n[Net. tot=\nON]\nAL2\n[NVTTE]\nThis function enables the display of net totalizer in visualization pages\n(POS. 9.10) Date and Time\n[Disp.Date= ON]\nAL2\n[DATDE]\nThis function enables the display of date and time in visualization pages\n(POS. 9.11) Quick start menu\n[Quick start= ON]\nAL2\n[QSTME]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nThis function enables the quick start menu.\n53 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 9.3) KeyBoard Timeout Time",
+            "[Disp. time=s",
+            "xxx] AL1",
+            "[KBTMT]"
+          ],
+          [
+            "This function set dispay/keyboard inactivity.",
+            "The set values",
+            "are from 020 to 255 second.",
+            ""
+          ]
+        ],
+        [
+          [
+            "(POS. 9.6) Display function lock",
+            "[Disp.lock=",
+            "x]",
+            "AL2",
+            "[DLOKE]"
+          ],
+          [
+            "This function locks the scrolling of the display\nfunction.",
+            "pages selected by the",
+            "setting. POS.",
+            "9.5 see page 29"
+          ],
+          [
+            "(POS. 9.7) Partial totalizer",
+            "[Part. tot=",
+            "ON]",
+            "AL2",
+            "[PTOTE]"
+          ],
+          [
+            "This function enables the display of partial totalizer in visualization pages",
+            "",
+            ""
+          ],
+          [
+            "(POS. 9.8) Negative totalizer",
+            "[Neg. tot=",
+            "ON]",
+            "AL2",
+            "[NEGTE]"
+          ],
+          [
+            "This function enables the display of negative totalizer in visualization pages",
+            ""
+          ],
+          [
+            "(POS. 9.9) Net totalizer",
+            "[Net. tot=",
+            "ON]",
+            "AL2",
+            "[NVTTE]"
+          ],
+          [
+            "This function enables the display of net totalizer in visualization pages",
+            "",
+            ""
+          ],
+          [
+            "(POS. 9.10) Date and Time",
+            "[Disp.Date=",
+            "ON]",
+            "AL2",
+            "[DATDE]"
+          ],
+          [
+            "This function enables the display of date and time in visualization pages",
+            "",
+            ""
+          ],
+          [
+            "(POS. 9.11) Quick start menu",
+            "[Quick start=",
+            "ON]",
+            "AL2",
+            "[QSTME]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "MENU 10 - DATA LOGGER\n(POS. 10.1) Data logger enable\nThis function enables data loger.\n[D.logger en= /OFF]\nAL3\n[DLOGE]\nISOMAG\nThe following functions are activated by [D.loger en= ON]\n(POS. 10.2) Unite of Measure\n[Meas. units= ON]\nAL3\n[DLUME]\nMeasure unit recording enable\n(POS. 10.3) Field separator character\n[Field separ .= ; ]\nAL3\n[DLFSC]\nThis function will set the separator character between data logger data.\n(POS. 10.4) Decimal Separator Char.\n[Decim.separ .= . ]\nAL3\n[DLDSC]\nThis function will set the separator character between data logger number value.\n(POS. 10.5) Sample Interval\n[Interv .= xx:xx:xx]\nAL3\n[DLGSI]\nSampling interval. This function set the log frequency. [Interv .= Hours : Minutes: Seconds]\n(POS. 10.6) Total direct totalizer\n[Log T+= ON]\nAL3\n[DTTPE]\nEnable logging of total direct totalizer.\n(POS. 10.7) Partial direct totalizer\n[Log P+= ON]\nAL3\n[DTPPE]\nEnable logging of partial direct totalizer.\n(POS. 10.8) Total reverse totalizer\n[Log T -= ON]\nAL3\n[DTTNE]\nEnable logging of total reverse totalizer\n(POS. 10.9) Partial reverse totalizer\n[Log P -= ON]\nAL3\n[DTPNE]\nEnable logging of partial reverse totalizer\n(POS. 10.10) Total Net totalizer\n[Log TN= ON]\nAL3\n[DLTNE]\nEnable logging of total net totalizer\n(POS. 10.11) Partial Net totalizer\n[Log PN= ON]\nAL3\n[DLPNE]\nEnable logging of partial net totalizer\n(POS. 10.12) Log Flow rate in measure unit\n[Log Q(UM)= ON]\nAL3\n[DFTUE]\nEnable logging of flow rate in measure unit\n(POS. 10.13) Log Flow rate in percentage\n[Log Q(%)= ON]\nAL3\n[DFPCE]\nEnable recording of the flow rate as a percentage of full scale value set.\n(POS. 10.14) Alarm events\n[Log AL.EV= ON]\nAL3\n[DALEE]\nEnable logging of alarm events\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nISOIL\n54 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "(POS. 10.2) Unite of Measure",
+            "[Meas. units= ON]",
+            "AL3",
+            "[DLUME]"
+          ],
+          [
+            "Measure unit recording enable",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.3) Field separator character",
+            "[Field separ .= ; ]",
+            "AL3",
+            "[DLFSC]"
+          ],
+          [
+            "This function will set the separator character between data logger data.",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.4) Decimal Separator Char.",
+            "[Decim.separ .= . ]",
+            "AL3",
+            "[DLDSC]"
+          ],
+          [
+            "This function will set the separator character between data logger number value.",
+            ""
+          ],
+          [
+            "(POS. 10.5) Sample Interval",
+            "[Interv .= xx:xx:xx]",
+            "AL3",
+            "[DLGSI]"
+          ],
+          [
+            "Sampling interval. This function set the log frequency. [Interv .= Hours : Minutes: Seconds]"
+          ],
+          [
+            "(POS. 10.6) Total direct totalizer",
+            "[Log T+= ON]",
+            "AL3",
+            "[DTTPE]"
+          ],
+          [
+            "Enable logging of total direct totalizer.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.7) Partial direct totalizer",
+            "[Log P+= ON]",
+            "AL3",
+            "[DTPPE]"
+          ],
+          [
+            "Enable logging of partial direct totalizer.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.8) Total reverse totalizer",
+            "[Log T -= ON]",
+            "AL3",
+            "[DTTNE]"
+          ],
+          [
+            "Enable logging of total reverse totalizer",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.9) Partial reverse totalizer",
+            "[Log P -= ON]",
+            "AL3",
+            "[DTPNE]"
+          ],
+          [
+            "Enable logging of partial reverse totalizer",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.10) Total Net totalizer",
+            "[Log TN= ON]",
+            "AL3",
+            "[DLTNE]"
+          ],
+          [
+            "Enable logging of total net totalizer",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.11) Partial Net totalizer",
+            "[Log PN= ON]",
+            "AL3",
+            "[DLPNE]"
+          ],
+          [
+            "Enable logging of partial net totalizer",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.12) Log Flow rate in measure unit",
+            "[Log Q(UM)= ON]",
+            "AL3",
+            "[DFTUE]"
+          ],
+          [
+            "Enable logging of flow rate in measure unit",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.13) Log Flow rate in percentage",
+            "[Log Q(%)= ON]",
+            "AL3",
+            "[DFPCE]"
+          ],
+          [
+            "Enable recording of the flow rate as a percentage of full scale value set.",
+            ""
+          ],
+          [
+            "(POS. 10.14) Alarm events",
+            "[Log AL.EV= ON]",
+            "AL3",
+            "[DALEE]"
+          ],
+          [
+            "Enable logging of alarm events",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "ISOMAG\n(POS. 10.15) Sensor test result\n[Log STR= ON]\nAL6\n[DSTRE]\nEnable logging of sensor test results\n(POS. 10.16) Board temperatures\n[Log BTS= ON]\nAL6\n[DBTSE]\nEnable logging of board temperature\n(POS. 10.17) Internal board voltages\n[Log IBV= ON]\nAL6\n[DIBVE]\nEnable logging of internal board voltage\n(POS. 10.18) Electrodes DC voltages\n[Log EDC= ON]\nAL6\n[DEDVE]\nEnable logging of electrodes DC voltage\n(POS. 10.19) Electrodes AC voltages\n[Log AEC= ON]\nAL6\n[DEAVE]\nEnable logging of electrodes AC voltage\n(POS. 10.20) Electrodessource impedance\n[Log EIZ= ON]\nAL6\n[DESIE]\nEnable logging of electrodes impedance\n(POS. 10.21) Sensor coils values\n[Log SCV= ON]\nAL6\n[DSCVE]\nEnable logging of sensor coils value\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nMENU 10- DATA LOGGER: ONLY MCP FUNCTIONS\nLoG All Information Enable\n[MCP ONLY]\nAL6\n[LGAIE]\nLog all events information. This function save in the event file all MCP commands.\n55 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 10.15) Sensor test result",
+            "[Log STR= ON]",
+            "AL6",
+            "[DSTRE]"
+          ],
+          [
+            "Enable logging of sensor test results",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.16) Board temperatures",
+            "[Log BTS= ON]",
+            "AL6",
+            "[DBTSE]"
+          ],
+          [
+            "Enable logging of board temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.17) Internal board voltages",
+            "[Log IBV= ON]",
+            "AL6",
+            "[DIBVE]"
+          ],
+          [
+            "Enable logging of internal board voltage",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.18) Electrodes DC voltages",
+            "[Log EDC= ON]",
+            "AL6",
+            "[DEDVE]"
+          ],
+          [
+            "Enable logging of electrodes DC voltage",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.19) Electrodes AC voltages",
+            "[Log AEC= ON]",
+            "AL6",
+            "[DEAVE]"
+          ],
+          [
+            "Enable logging of electrodes AC voltage",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.20) Electrodessource impedance",
+            "[Log EIZ= ON]",
+            "AL6",
+            "[DESIE]"
+          ],
+          [
+            "Enable logging of electrodes impedance",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.21) Sensor coils values",
+            "[Log SCV= ON]",
+            "AL6",
+            "[DSCVE]"
+          ],
+          [
+            "Enable logging of sensor coils value",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "LoG All Information Enable [MCP ONLY]",
+            "AL6",
+            "[LGAIE]"
+          ],
+          [
+            "Log all events information. This function save in the event file all MCP commands.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "USING DATA LOGGER BY MCP INTERFACE\nISOMAG\nData are stored on micro SD card; the organization is based on \"tree-structure\": the system\ncreate a daily folder where it save events and data logger . The data can be downloaded by MCP interface.\nMCP INTERFACE\nMcpPro - 1.0.0.162\nConnessione\nOpzioni\nVisualizza\nVista\nTools\nAccesso\nLingua\n?\nLista funzioni:\nMenu:\nData logger\n3- [Data LOGger Enable]\n1-0 [Data logger sampling enable]\n. DLOGE? : 1:'ON'\n. DLOGE =? : 0:'OFF'|1:'ON\"\n· DLOGE-\n340 cmds\n100.\n75\n50\n25\n-\nx\n[ 0.276\n[Data Logger Units of Measure Enable]\n[Data Logger Field Separator Character]\n[Data Logger Decimal Separator Character]\n[Data LoGger Sample Interval]\n[Data logger Totalizer Total Positive Enable]\n[Data logger Totalizer Partial Positive Enable]\n[Data logger Totalizer Total Negative Enable]\n[Data logger Totalizer Partial Negative Enable]\n[Data Logger totalizer Total Net Enable]\n[Data Logger totalizer Partial Net Enable]\n[Data logger Flow rate in Technical Units Enable]\n[Data logger Flow rate in PerCentage Enable]\n[Data logger ALarm Events Enable]\n[Data logger Additional Measures Enable]\n[Data logger Sensor Tel [Board temperatures logging\nM/S\nE1\nV\n-0.000E1R ků\nE2\n+0.039\nM3 /h\n-0.000E2R k^\nConsole Mcp:\n[nº:1]: 23 b\nMCP>\n6 ALARM(S)\nCPU1 RESTART\nCLOCK1 NOT SET\nAINI ERROR\nAIN2 ERROR\nT+M3\n63.9718\n2000/01/09-10:32:12\nA\nDatalogger Log\nFile Config.\nUSB\nDiagnostic\nDownload settings:\nData source:\nQuando:\nOggi:\nEventi\nOgg\nUltmo\nTutto\n)Datalogger\nVerifica Sensore\nFile generico\n)Range data\nPath save:\nc:\\M5data\\\nSelect\nSD memory:\nDownload\nO .\nStop\nUpload\n×\n0\nMV255\nV.1.00.0000.0000 Jul 31 2018 11:58:31 SN:213813\nTipo Conn:USB\n. COM4 . CONNESSO\n· PPP\n+0,44\n10.1\n10.1\nIP dispositivo: 10. 11. 12. 13\nApri cartella\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nClick tab-control data logger to view files.\nThe sampling data backup depends on the value set by the POS function 10.4 page 25.\nB\nC\nDiagnostic Debug RAS\nE\nF\nFile Config.\nDatalogger\nLog\nUSB\nHandles\nDownload settings:\nData source:\nEventi\nDatalogger\nVerifica Sensore\nFile generico\nSD memory:\nQuando:\nOggi\nDownload\nOggi:\nUltmo\nTutto\nRange data\nPath save:\nc:\\M5data\\\nSelect\nO ...\nA\nD\n0\nStop\n×\nA=Data source\nEvents: Save the file system events (Example F-RAM hardware data [WORKING AREA] [SUCCESSFULLY LOADED])\nData logger: Save files of the enabled data logger function.\nSensor Verify: data logged by BIV function\nGeneric file:\nB=When\nToday; It indicates the download file for the current day\nData range; this option allows you to select the date range for download.\nISOIL\nINDUSTRIA\n56 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Download settings:",
+            "",
+            ""
+          ],
+          [
+            "Data source:",
+            "Quando:",
+            "Oggi:"
+          ],
+          [
+            ":unselected: Eventi",
+            ":selected: Ogg",
+            ":selected:\nUltmo"
+          ],
+          [
+            ":selected: )Datalogger :unselected: Verifica Sensore :unselected: File generico",
+            ":unselected: Tutto\n:unselected: )Range data"
+          ],
+          [
+            "Path save:",
+            ""
+          ],
+          [
+            "c:\\M5data\\",
+            "Select"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "ISOMAG\nC=Today\nLast; this option allows to download the latest files, recordered after the laat download\nAll; this option allows the download of all the current day of the file\nD=Save path:\nThis option allows you to save files to the folder on your PC\nE=Download:\nButton to start the download process\nF=Stop:\nButton to stop the download process\nExample: Download Events\nFile Config.\nDatalogger\nLog\nUSB\nDiagnostic\nDownload settings:\nData source:\nQuando:\nOggi:\nEventi\nOggi\nUltmo\nDatalogger\nRange data\nTutto\nVerifica Sensore\nPath save:\nFile generico\nc:\\M5data\\\nSelect\nSD memory:\nDownload\n100 %, 184.4 KB/s, 0.7 sec.\nStop\nX\nRLLDT : 1,223:FT DOWNLOAD READY [120927]\n1,326:FT COMPLETED [DOWNLOAD][120927] [31 ms]\nPer scaricare tutti gli eventi del giorno odierno in\nuna cartella specifica, settare i seguenti parametri\ncome segue:\nData source: Eventi\nQuando: Oggi\nOggi: Tutti\nSave path: C:/ .....\nImpostati i parametri cliccare il tasto Download.\nMcp - 1.0.0.57\nConnection\nOptions\nView\nTools\nAccess\nFunction list:\nMenu\nScales\nSenso\nUnits\nMeasure\nAlarms\nOutputs\nDisplay\nData logger\nInputs\nFunctions\nDiagnostic\nSystem\nProcess data\n260 cmds\n100J\n75.\n25\nc:\\M5data\\999001_2016_06_07_EVENTS.TXT\n812\nVolume counters [LOCKED] by digital input signal\nMeasure signal [LOCKED TO 0] by digital input signal\nVolume counters [RELEASED] by digital input signal\nMeasure signal (RELEASED] by digital input signal\nVolume counter reset: [I+]\n2016/06/07-16:07:59.414\n813\n2016/06/07-16:07:59.414\n814\n2016/06/07-16:08:02.093\n815 2016/06/07-16:08:02.093\n816 2016/06/07-16:08:02.093\n817 2016/06/07-16:08:02.296\nLast event occurred [3] times in the last [14] a\n818 2016/06/07-16:08:02.296\nVolume counters [LOCKED] by digital input signal\nMeasure signal [LOCKED TO 0] by digital input signal\nVolume counters [RELEASED] by digital input signal\nMeasure signal [RELEASED] by digital input signal\nVolume counter reset: [T+]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n819 2016/06/07-16:08:02.296\n820\n2016/06/07-16:08:03.093\n821 2016/06/07-16:08:03.093\n822 2016/06/07-16:08:03.093\n823\n2016/06/07-16:08:03.296\nLast event occurred [3] times in the last [15] s\n824 2016/06/07-16:08:03.296\nVolume counters [LOCKED] by digital input signal\n825 2016/06/07-16:08:03.296\n826\n2016/06/07-16:08:03.492\nMeasure signal [LOCKED TO 0] by digital input signal\nVolume counters [RELEASED] by digital input signal\n827 2016/06/07-16:08:03.492\n828 2016/06/07-16:08:03.492\n829 2016/06/07-16:08:46.664\nMeasure signal [RELEASED] by digital input signal\nVolume counter reset: [T+]\nLast event occurred [3] times in the last [58] 8\nMCP command executed correctly [SRNUM?]\n830 2016/06/07-16:08:46.664\nMCP\nLoad: 2 ms [65686 bytes]. Transform: 22 ms Draw: 92 ms\n7.60\n+1.95.\nO\nDevice IP: 10. 11. 12. 13\nTerminato il Download, viene visualizzata\nuna finestra contenente la lista degli eventi in\ndata odierna. Il file viene salvato in formato\ntxt nella cartella specificata per il download.\nConfig. Files |Datalogger\nDownload settings:\nData source:\n@ Events\nDatalogger\nSensor Verify\nSave path:\nGeneric file\nc:\\M5data\\,\nWhen:\nToday:\nToday\nData Range\n@ Last\nA\nSelect\nDownload\n100%, 78.1 KB/s, 0. 1 sec.\nStop\n×\nRLEVT : 1,223:FT DOWNLOAD READY [6872]\n. 1,226:FT COMPLETED [DOWNLOAD][6872] [29 ms]\nMV110\nV.0.00.1756.FFFF Jun 6 2016 14:16:55 SN:999001\n. COM12 . CONNECTED . PPP\nExample: Download Data Logger\nNote: it is recommended the date synchronization between converter and PC to perform correctly\nthe events and logger reading operations.\nFile Config.\nDatalogger\nLog\nUSB\nDiagnostic\nDownload settings:\nData source:\nQuando:\nEventi\nDatalogger\nWVerifica Sensore\nAile generico\nOgg\nRange data\nOggi:\nUltmo\nTutto\nSD memory:\nDownload\nStop\n×\nPath save:\n100%, 184.4 KB/s, 0.7 sec.\nc:\\M5data\\\nSelect\nRLLDT : 1,223:FT DOWNLOAD READY [120927]\n. 1,226:FT COMPLETED [DOWNLOAD][120927] [31 ms]\nPer scaricare tutti i dati del giorno odierno in una cartella specifica,\nsettare i seguenti parametri come segue:\nData source: Datalogger\nQuando: Oggi\nOggi: Tutti\nSave path: C:/ .....\nImpostati i parametri premere il tasto Download.\n57 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Download settings:"
+          ],
+          [
+            "",
+            "Data source:",
+            "Quando:",
+            "Oggi:"
+          ],
+          [
+            "",
+            ":selected: Eventi",
+            ":selected: Oggi",
+            ":unselected: Ultmo"
+          ],
+          [
+            "",
+            ":unselected: Datalogger",
+            ":unselected: Range data",
+            ":selected: Tutto"
+          ],
+          [
+            "",
+            ":unselected: Verifica Sensore",
+            "Path save:",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            ":unselected: File generico",
+            "c:\\M5data\\",
+            "Select"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    }
+  ]
+}

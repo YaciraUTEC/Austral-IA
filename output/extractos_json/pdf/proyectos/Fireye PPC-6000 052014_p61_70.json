@@ -1,0 +1,464 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p61_70",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "fireye\n®\n5.2\nCommissioning data\n5.2.1\nOption parameters\nThe PPC6000 series is configured by programming Option Parameters (memory registers) that describe the\nconfiguration of the burner and the boiler. Option parameters are set and adjusted in Option Set mode, but it\nmay not be possible to adjust all of them if the burner is on.\n5.2.2\nSetpoints\nSetpoints contain information about required motor positions. There are four profiles (or tables) of setpoints\navailable in a standard control. The profiles may be represented using the diagram below:\nGas position\nAir position\n(*)\n(°)\n2.1\n1.9\n2.1\n88.9\n24.6\n30.6\n21.3\n25.8\n76.8\n85.6\nOil position\n(*)\nAir position\n(°)\nCLOSE (P0)\n1.7\n1.9\nPURGE (P1)\n1.7\n88.9\nIGNITION (P2)\n10.6\n28.7\nLOW FIRE (P3)\n10.6\n28.7\nHIGH FIRE (Px)\n50.2\n83.5\nUp to 24 setpoints may be entered for each profile, including close, purge, and ignition.\nNew setpoints must be entered in commission ratio mode.\nExisting setpoints may be modified in adjust ratio mode or commission ratio mode.\n5.3\nThe Commissioning process\n5.3.1\nNavigation\nThe symbols below will be used throughout the Commissioning Process in this manual to indicate the correct\napplication for each commissioning OPTION, for use by the Commissioning Personnel.\nA convenient check box has been added to the beginning of the symbols so that the Commissioning\nPersonnel can mark each appropriate option as it is completed.\nSYMBOL\nMEANS:\nPPC\nCommissioning Personnel MUST execute this option\nO2\nFor Customers with O2 TRIM option, Commissioning Personnel\nMUST ALSO execute this option\nVSD\nFor Customers with VSD options, Commissioning Personnel MUST\nALSO execute this option\nV\nPPC\nAfter each appropriate option parameter is complete,\nCHECK THE BOX!\n61",
+      "tablas": [
+        [
+          [
+            "Gas position",
+            "Air position"
+          ],
+          [
+            "(*)",
+            "(°)"
+          ],
+          [
+            "2.1",
+            "1.9"
+          ],
+          [
+            "2.1",
+            "88.9"
+          ],
+          [
+            "24.6",
+            "30.6"
+          ],
+          [
+            "21.3",
+            "25.8"
+          ],
+          [
+            ""
+          ],
+          [
+            "76.8",
+            "85.6"
+          ]
+        ],
+        [
+          [
+            "",
+            "Oil position (*)",
+            "Air position (°)"
+          ],
+          [
+            "CLOSE (P0)",
+            "1.7",
+            "1.9"
+          ],
+          [
+            "PURGE (P1)",
+            "1.7",
+            "88.9"
+          ],
+          [
+            "IGNITION (P2)",
+            "10.6",
+            "28.7"
+          ],
+          [
+            "LOW FIRE (P3)",
+            "10.6",
+            "28.7"
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "HIGH FIRE (Px)",
+            "50.2",
+            "83.5"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nThere are two (2) types of Displays available for the PPC6000. The first is the standard 12-key\nkeypad shown below and the second is the optional 10.4\" touchscreen (NXTSD104) described\nin section 5.4. Both displays rely on the information in section 4, and the manual reads as\nthough the standard display is being used, so please read the entire section 4 regardless of the\ntype of display in the configuration being used.\n5.3.1.1 Entering commission ratio mode\nTo enter commission ratio mode, turn the burner off. Once the burner has completely shut down, press the\nkey labeled COM and select the supplier passcode value using the UP/DOWN keys. The supplier passcode is\nnormally two sets of three numbers and is entered as shown below.\nRun mode, burner off\n-\nCOM\nSupplier passcode 1st\nENTER\nset of numbers\n-\nSupplier passcode 2nd\nset of numbers\nENTER\nIf the entered passcode was correct, 'P 0' will be seen on the display. This represents the closed position\nsetpoint.\n5.3.1.2 Changing from Commission / Adjust Ratio mode to Option Set mode\nCommission / Adjust ratio mode\nMODE\nOption set mode\nTo enter option set mode, enter commission ratio mode or adjust ratio mode (see sections 5.3.1 or 5.4.14\nrespectively) and press the key labeled MODE.\n5.3.1.3 Changing from option set to Commission / Adjust ratio modes\nOption set mode\nMODE\nCommission ratio / Adjust ratio mode\n5.3.1.4 Exiting from commission mode\nTo exit from any commission mode to run condition, press the key labeled RUN and then ENTER.\ne.g.\nOption set mode\nRUN\nENTER\nRun mode\nNOTE: Exiting from \"full commissioning\" mode at P3 or higher will erase any point above the displayed Px. If\nthis is undesirable, exit \"full commissioning\" mode at HIGH FIRE.\n62",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\n5.4\nDescription of Touchscreen operation.\n5.4.1\nThe Touchscreen\nThe touchscreen provides all of the functions required to control and monitor the burner, it is also used to\ncommission the control.\nOnce commissioning mode is selected the display background changes to red to alert the user that the control\nis in commissioning mode and therefore unable to monitor certain safety functions such as fuel air ratio\npositions.\nFor a detailed overview of the NXTSD104 - see bulletin NXOGTSD-6101 Operator's Guide.\n5.4.2\nTouchscreen Power on.\nInitialization of the control and display will take approximately 16 seconds, during this initialization period the\nstatus LED will remain red. The display backlight will come on and the relays will be held in their no alarm\nstate to avoid the possibility of nuisance alarms, which may otherwise occur.\nFive (5) seconds after power is applied the Fireye splash screen (shown below) will be displayed for 6\nseconds, after which a period of 5 seconds of a blank white screen will show.\n®\nfireye\nOnce the initialization is complete the touchscreen will show the overview screen (shown in section 5.4.3) and\nthe control will operate normally, changing the LED to green and relays to operate in line with the control\nstatus.\n5.4.3\nThe Operation Mode line and Status messages\nThe line at the top of the screen displays the current burner: operating mode, profile, modulation mode and\nunit address. Burner status, and fault information, if applicable, is displayed in the bottom right corner of the\ndisplay.\nDependent on the actual fault the audible alarm may be active and the control may move to safety shutdown.\n63",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\n13:07:16\n2008-05-20\nR\n1(GAS)\nAUTO\nUnit 0\nBoiler actual\nBoiler setpoint\nModulation rate\nFlame intensity\n(0\n6.2\nbar\n16.4\nbar\n%\n6.2\nbar\nAIR\nOperating hours :\n109\nProfile 1(GAS) SELECTED\nProfile 2 (OIL)\n50\n8 vent\nBurner Start Sequence\nGas valve proving stage 1\nGas valve proving stage 2\nProve air pressure\nPurge position reached\nPurge in progress 0:08\nIgnition position requested\nReset\nStop\nO\nFuel\nControl\nMenu\nPre-purge\nOverview\nDedicated 'buttons' at the lower edge of the screen perform the following functions:\nMute / Reset - used to reset a burner lockout, mute alarms or to test audible alarms. If an alarm is present the\nbutton is yellow and the text on the 'button' changes to Alarm Mute.\nBurner Start/Stop - starts the burner, grayed out if the burner is already operating.\nFuel - allows selection of which fuel/profile is to be used, from a list of fuels/profiles available.\nControl - used to enable selection of modulation mode.\nMenu - used to access configuration, adjustment modes.\nOverview - returns screen to burner overview mode.\nThe following table shows the Icons that are displayed on the touchscreen above the information panels and\ntheir details.\nIcon\nDescription\nDetails\nA\nCAN\nState of CANbus\nconnection\nDisplays when CANbus communication is faulty\nA\n02\nState of Oxygen Interface\nDisplays when Oxygen Interface related fault is\npresent.\n64",
+      "tablas": [
+        [
+          [
+            "Icon",
+            "Description",
+            "Details"
+          ],
+          [
+            "A CAN",
+            "State of CANbus connection",
+            "Displays when CANbus communication is faulty"
+          ],
+          [
+            "A 02",
+            "State of Oxygen Interface",
+            "Displays when Oxygen Interface related fault is present."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nIcon\nDescription\nDetails\nCOM\nIndicates commissioning\nmode\nDisplays when the control is operating in\ncommissioning mode.\nMAN\nIndicates HAND\nmodulation mode.\nDisplays when the control is operating in HAND\nmodulation mode.\nAUTO\nIndicates AUTO\nmodulation mode.\nDisplays when the control is operating in AUTO\nmodulation mode.\nR /\nL(1) / L(2)\nIndicates Boiler Setpoint\nmode\nDisplays Boiler setpoint selected, remote, local\nsetpoint 1 or local setpoint 2.\n1/ 2/3/ 4\nIndicates profile selected\nDisplays the profile number for the selected\nprofile.\n13:07:16\n2008-05-20\nIndicates Time and Date\nDisplays Actual Time and Date, used for fault\nhistory and event logging. Date format is\nyyyy-mm-dd\n5.4.4 Touchscreen Overview display.\n13:07:16\n2008-05-20\n6.2\nbar\nAIR\nOperating hours :\n109\nProfile 1(GAS) SELECTED\nProfile 2(OIL)\n50\n8 vent\n12\nReset\nStop\nO\nFuel\nControl\nMenu\nR\n1(GAS)\nAUTO\nUnit 0\nBoiler actual\n6.2\nbar\nBoiler setpoint\n6.4\nbar\nModulation rate\n%\nFlame intensity\n0\nBurner Start Sequence\nGas valve proving stage 1\nGas valve proving stage 2\nProve air pressure\n· Purge position reached\nPurge in progress 0:08\nIgnition position requested\nPre-purge\nOverview\n65\nWhile the burner is changing 'status'\nthe bottom-right one sixth of the\ndisplay is used to provide a graphical\nindication of changing status.\nThe sequences displayed in this\nmanner include, burner start-up,\nburner shutdown and fuel changeover.\nIn each case there is a 'lamp' for each\nstage, providing a ripple through lamp\nsystem to clearly indicate the progress\nof the change in burner 'status'.\nThe example shown in the picture is\nfor the burner start-up sequence\ndisplay.\nOnce the sequence is complete then\nthe display will return, after a short\ndelay, to the overview screen.",
+      "tablas": [
+        [
+          [
+            "Icon",
+            "Description",
+            "Details"
+          ],
+          [
+            "COM",
+            "Indicates commissioning mode",
+            "Displays when the control is operating in commissioning mode."
+          ],
+          [
+            "MAN",
+            "Indicates HAND modulation mode.",
+            "Displays when the control is operating in HAND modulation mode."
+          ],
+          [
+            "AUTO",
+            "Indicates AUTO modulation mode.",
+            "Displays when the control is operating in AUTO modulation mode."
+          ],
+          [
+            "R / L(1) / L(2)",
+            "Indicates Boiler Setpoint mode",
+            "Displays Boiler setpoint selected, remote, local setpoint 1 or local setpoint 2."
+          ],
+          [
+            "1/ 2/3/ 4",
+            "Indicates profile selected",
+            "Displays the profile number for the selected profile."
+          ],
+          [
+            "13:07:16 2008-05-20",
+            "Indicates Time and Date",
+            "Displays Actual Time and Date, used for fault history and event logging. Date format is yyyy-mm-dd"
+          ]
+        ],
+        [
+          [
+            "Boiler actual",
+            "6.2 bar\n:selected:"
+          ],
+          [
+            "Boiler setpoint",
+            "6.4 bar\n:selected:"
+          ],
+          [
+            "Modulation rate",
+            "%\n:unselected:"
+          ],
+          [
+            "Flame intensity",
+            "0 :unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\n5.4.5 Touchscreen Lockout Reset (Alarm Mute) Function.\nThe Reset (Alarm Mute) 'button' on the touchscreen is multi-functional.\nIn normal operation it may be used to test the alarms, this is achieved by holding the button for in excess of 10\nseconds after which the alarm relays will activate.\nThe Reset (Alarm Mute) button is also used to mute alarms and reset the control following a safety shutdown.\nIf the alarm is sounding, the button will show the text Mute, pressing the button will mute (silence) the alarm,\nand then the text in the button will change to Reset, holding the button for greater than 3 seconds will allow the\nburner to restart if the faults have cleared. Further details of the functionality of this button are defined below.\nThere are three types of fault (alarm):\nAlarm Only This will allow the burner to continue to operate, while the alarm is sounding.\nIf the Reset (Alarm Mute) button is pressed while the control is in this mode and the alarm is sounding the\nalarm will be muted and the burner will continue to operate.\nControlled Shutdown This will cause the burner to perform a controlled shutdown, and the alarm will sound,\nonce the fault clears the burner will restart without the requirement for manual intervention.\nIf the Mute/ Reset button is pressed while the control is in this mode the alarm will be muted and the burner\nwill remain in controlled shutdown.\nIf the Mute/Reset button is pressed after the control has restarted following a controlled shutdown the alarm\nwill be muted and the burner will continue to operate.\nSafety Shutdown This will cause the burner to perform a safety shutdown, and the alarm will sound, once the\nfault has cleared the burner will remain in safety shutdown until a Mute/ Reset is performed.\nIf the Mute/ Reset button is pressed while the control is in safety shutdown and the fault is still present the\nalarm will be muted and the burner will remain in safety shutdown. When the fault clears the alarm will sound\nonce more.\nIf the Mute/ Reset button is pressed while the control is in safety shutdown and the fault has cleared the alarm\nwill be muted and if the button is held for in excess of 3 seconds the burner will re-start.\n5.4.6\nTouchscreen LED Indication.\nThe Touchscreen also houses a multi-functional LED for indication of current status.\nThe LED will be green, permanently on, if no faults or limits are present.\nThe LED will be red, flashing, if there is a limit or an alarm condition present, which does not cause a lockout.\nThe LED will be red, permanently on, if there is a fault present, even if the fault has been muted, which causes\na lockout.\n66",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "fireye\n®\n5.4.7 Touchscreen Fuel/Profile Select.\nOnce the Fuel soft-button is pressed, a pop-up window appears on the right giving the user a choice of\navailable fuels/profiles.\nThe PPC6000 allows for a maximum of four profiles. Any profiles, which are not programmed and therefore\nnot available, will be 'grayed-out'.\n13:09:40\n2008-05-20\nOFF\n1(GAS)\nAUTO\nUnit 0\nProfile 1 (GAS)\nProfile 2 (OIL)\n6.2\nbar\nProfile 3 (N/A)\nProfile 4 (N/A)\nAIR\nOperating hours :\n109\nProfile 1(GAS) SELECTED\nProfile 2(OIL)\n50\nvent\n88\nBurner Off\nReset\nStart\nFuel\nControl\nMenu\nOverview\nThe 'Name' for each available profile will be either the default as set by the relevant option parameter or that\nentered via the Configuration Screen.\nIf the profile change is made while the burner is firing, there are two possibilities dependent on the options set\nin the control.\nIf the unit does not have the option to perform an online changeover enabled (switch profile without the burner\ngoing off) the burner will go through a controlled shutdown on the original profile and then restart on the new\nprofile.\nThe online changeover allows a digital input to be configured to allow a profile swap without turning the burner\noff. If this input is ON and a fuel profile selection change is made, the control will go to low fire then back to\npilot ignition (P2) on the original profile. It will then drop the main fuel valves and run with just the pilot on (and\nthe ignition transformer if option parameter 14.6 is not set to 1). It will then move all drives to the P2 position of\nthe new profile and open the appropriate main fuel valves.\nTo exit this operation window and return to the overview screen press the Overview button.\n67",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "5.4.8 Touchscreen 'Control' screen.\n®\nfireye\nOnce the Control button is pressed, a window appears giving the user a choice of options. If an option is\nunavailable it will be 'grayed out', for example Manual Modulation may be disabled during commissioning.\nAdnane -=\nDisconnect Options Clipboard Sand Ch-4/1-Det\nRetrach\nD:33 43\n2000-01 9\nR\n1\nAUTO\nUnit o\nMY\n22\nSP\n22.2\nCO\n22\n6.7\nCI\n22\n₱\n22\nI\n22\nIf the burner is firing, then the\nmodulation percentage will be\ndisplayed in a window between the\n'Burner off' and 'Auto' boxes.\nUsing the buttons available from this\nwindow will change the way the\nburner is operating.\nR\nD\n22\nNai/ Remote\nTT\n5\nProfile 2(OIL)\nFail\nControl\nPhra\nJava Applet'Window\n5.4.9 Touchscreen 'Menu' button.\nLocal1\nLacalz\nMAN\nLFH\nModulating\nSET\nALITO\nTo exit this control mode window and\nreturn to the overview screen use the\nOverview button.\nOnce the Menu button is pressed, a pop-up window appears on the right giving the user a choice of options. If\nan option is unavailable it will be 'grayed out'.\n13:11:03\n2008-05-20\nOFF\n1(GAS)\nAUTO\nUnit 0\n6.2\nbar\nBurner Settings\nFault / Event Log\nScreen Configuration\nAIR\n8 vent\nOperating hours :\n109\nProfile 1(GAS) SELECTED\n50\nProfile 2 (OIL)\nTrends\nAbout ...\nClean Screen\nBurner Off\nReset\nStart\nFuel\nControl\nMenu\nOverview\n68\nUsing the buttons available after\npressing the Menu button will\ngenerate a new pop-up window in\nthe left hand area of the screen.\nTo exit this operation window and\nreturn to the overview screen\npress the Overview button.\n5.4.10 Touchscreen 'Burner",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\nSettings' button.\nOnce the Burner Settings button is pressed, a window appears giving the user a choice of data types by Tab.\nSelecting, by touching a tab, it as possible to view a variety of data, in the example here the Option\nParameters are available.\n16:45:46\nR\n2008-05-20\nBurner Settings\n×\nBoiler actual\nDrives\nOptions\nEngineers Values\nPro1\nPro2\nPro3\nPro4\nOpt\nValue\nDescription\nSet ...\n21.0\n1\nPID 1 Enable\n21.1\n6.6\nPID 1 Setpoint\n21.2\n2.4\nPID 1P Band\n21.3\n38\nPID 11-time (seconds)\n21.4\n0\nPID 1D-time (seconds)\n21.5\n1\nPID 1 Limit Type (0to 2)\n21.6\n5.6\nPID 1 Low Limit (cut-in)\n21.7\n7.2\nPID 1Hi Limit (cut-out)\n21.8\n0.0\nRemote SP1(AN5) Zero\n21.9\n0.0\nRemote SP1(AN5) Span\nChange / view parameters.\nNEXT\nENTER\nCOM\n1(GAS)\nMAN\nUnit 0\nBoiler setpoint\nModulation rate\nFlame intensity\n6.2\nbar\n6.6\nbar\n%\nBurner Start Sequence\nWait for purge\n· Open fuel valve\nO Gas valve proving stage 1\n· Gas valve proving stage 2\nO Prove air pressure\nPurge position reached\nReset\nO\nStop\nFuel\nControl\nMenu\nOverview\n*** LOCKOUT ***\nC 14 Air pres. not ON\nIn the following example the Engineers Key values are displayed. The scroll bar at the side of the data tab\nallows the user to move up and down the table.\n16:48:35\n2008-05-20\nR\nBurner Settings\n×\nBoiler actual\n6.2\nbar\nDrives\nOptions\nEngineers Values\nPro1\nPro2\nPro3\nPro4\nEK\nValue\nDescription\n10\n0\nDigIN10Profile 2(LV)\n11\n0\nDigIN11Profile 4(LV)\n12\n0\nDigital input 12 (HV)\n13\n0\nDigital input 13 (HV)\n14\n1\nBurner select IN(HV)\n15\n0\nAir flow input\n16\n0\nLow Fire Hold\n17\n0\nFlame detected\n18\n1\nBoiler status (1=go)\n19\n0\nConfirm to adjust\nChange / view parameters.\nNEXT\nENTER\nCOM\n1(GAS)\nMAN\nUnit 0\nBoiler setpoint\n6.6\nbar\nModulation rate\n%\nFlame intensity\n0\nBurner Start Sequence\nWait for purge\nOpen fuel valve\nGas valve proving stage 1\nGas valve proving stage 2\nO Prove air pressure\nPurge position reached\nReset\nO\nStop\nFuel\nControl\nMenu\nOverview\n*** LOCKOUT ***\nC 14 Air pres. not ON\n69",
+      "tablas": [
+        [
+          [
+            "Drives",
+            "Options",
+            "Engineers Values Pro1 Pro2",
+            "Pro3",
+            "Pro4"
+          ],
+          [
+            ""
+          ],
+          [
+            "Opt",
+            "Value",
+            "Description",
+            "",
+            "Set ..."
+          ],
+          [
+            "21.0",
+            "1",
+            "PID 1 Enable",
+            "",
+            ""
+          ],
+          [
+            "21.1",
+            "6.6",
+            "PID 1 Setpoint"
+          ],
+          [
+            "21.2",
+            "2.4",
+            "PID 1P Band"
+          ],
+          [
+            "21.3",
+            "38",
+            "PID 11-time (seconds)"
+          ],
+          [
+            "21.4",
+            "0",
+            "PID 1D-time (seconds)"
+          ],
+          [
+            "21.5",
+            "1",
+            "PID 1 Limit Type (0to 2)"
+          ],
+          [
+            "21.6",
+            "5.6",
+            "PID 1 Low Limit (cut-in)"
+          ],
+          [
+            "21.7",
+            "7.2",
+            "PID 1Hi Limit (cut-out)"
+          ],
+          [
+            "21.8",
+            "0.0",
+            "Remote SP1(AN5) Zero"
+          ],
+          [
+            "21.9",
+            "0.0",
+            "Remote SP1(AN5) Span"
+          ]
+        ],
+        [
+          [
+            "Drives",
+            "Options Engineers Values",
+            "Pro1",
+            "Pro2",
+            "Pro3",
+            "Pro4"
+          ],
+          [
+            "EK",
+            "Value",
+            "Description",
+            "",
+            ""
+          ],
+          [
+            "10",
+            "0",
+            "DigIN10Profile 2(LV)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "11",
+            "0",
+            "DigIN11Profile 4(LV)",
+            "",
+            ""
+          ],
+          [
+            "12",
+            "0",
+            "Digital input 12 (HV)",
+            ""
+          ],
+          [
+            "13",
+            "0",
+            "Digital input 13 (HV)",
+            ""
+          ],
+          [
+            "14",
+            "1",
+            "Burner select IN(HV)",
+            ""
+          ],
+          [
+            "15",
+            "0",
+            "Air flow input",
+            ""
+          ],
+          [
+            "16",
+            "0",
+            "Low Fire Hold",
+            ""
+          ],
+          [
+            "17",
+            "0",
+            "Flame detected",
+            ""
+          ],
+          [
+            "18",
+            "1",
+            "Boiler status (1=go)",
+            ""
+          ],
+          [
+            "19",
+            "0",
+            "Confirm to adjust",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "5.4.11 Touchscreen 'Fault/Event Log' button.\n®\nfireye\nOnce the Fault/Event Log button is pressed, a window appears showing the Fault/Event history. Users may\nselect to see Fault data only, Events data only or a combined history as shown in this example. For more\ninformation on fault codes and fault finding refer to the Fault Finding section of the PPC6000 manual - Fireye\nbulletin NEX-6101.\n15:14:11\n2008-05-21\nR\n1()\nFault / Event Log\nX\nBoiler actual\n6.2\nBoiler setpoint\nShow Fault History\nShow Event Log\nClear All\nItem\nDate/Time\nDescription\nSbst. Pro.\nSP\ninfo\n2008-05-20 16:51:19\nEnter COMMISSIONgode\n1\n...\ninfo\n2008-05-20 16:50:45\nBurner shutdown\n1\ninfo\n2008-05-20 16:50:45\nSwitched OFF\n...\n-\ninfo\n2008-05-20 16:50:08\nBurner startup\n-\n2008-05-20 16:50:04\nRe-start (Mute)\n0\n-\n3\nC14\n2008-05-20 15:10:50\nAir pres. not ON\n0\n-\n3\nF 14\n2008-05-20 15:10:49\nAir pres. not ON\n16\n-\n3\ninfo\n2008-05-20 14:23:40\nBurner startup\n-\n-\ninfo\n2008-05-20 14:23:36\nSwitched ON (REMOTE)\n-\ninfo\n2008-05-20 14:23:30\nBurner shutdown\n-\ninfo\n2008-05-20 14:23:29\nSwitched OFF\n1\ninfo\n2008-05-20 14:23:27\nSwitched ON (REMOTE)\n1\nReset\nO\nStop\nFuel\nControl\nMenu\nOverview\n5.4.12 Touchscreen 'Screen Configuration' button.\nMAN\nUnit 0\nModulationrate\n1\nFlame intensity\n(99\nbar\n6.6\nbar\n%\nBurner Start Sequence\nIgnition active\nPilot ignition interval\nMain ignition\nWait for flame established\nMoving to low fire\nModulation\nModulating\nOnce the Screen Configuration button is pressed, a window appears giving the user a choice of options.\nFrom the General Tab a name may be entered for each profile in use.\n13:17:43\n2008-05-20\nCOM\nOFF\n1(GAS)\nTouchscreen Configuration\n×\nGeneral\nDisplay\nDate & Time\nEthernet\nUnit Addr\nProfile 1Name :\nProfile 2 Name :\nProfile 3 Name:\nProfile 4 Name :\n4-20 IN1Name :\n4-20 IN2 Name :\n4-20mA Input 1\n4-20mA Input 2\n4-20 IN3 Name : |4-20mA Input 3\nModify ...\nunits\nunits\nunits\nReset\nStart\nFuel\nControl\nMenu\nAUTO\nUnit 0\nI CAPS\nNewtext:\nENTER NAME HERE\n1\n2\nabc\n3\ndef\n4\nghi\n5\njkl\n6\nmno\n7\npqrs\n8\ntuv\n9\nwxyz\nDEL\n0\nspace\n.\nCancel\nOK\nBurner Off\nOverview\n70",
+      "tablas": [
+        [
+          [
+            "Show Fault History",
+            "Show Event Log",
+            "Clear All"
+          ],
+          [
+            "Item",
+            "Date/Time",
+            "Description",
+            "Sbst.",
+            "Pro.",
+            "SP"
+          ],
+          [
+            "info",
+            "2008-05-20 16:51:19",
+            "Enter COMMISSIONgode",
+            "",
+            "1",
+            "..."
+          ],
+          [
+            "info",
+            "2008-05-20 16:50:45",
+            "Burner shutdown",
+            "",
+            "1",
+            ""
+          ],
+          [
+            "info",
+            "2008-05-20 16:50:45",
+            "Switched OFF",
+            "...",
+            "-",
+            ""
+          ],
+          [
+            "info",
+            "2008-05-20 16:50:08",
+            "Burner startup",
+            "",
+            "-",
+            ""
+          ],
+          [
+            "",
+            "2008-05-20 16:50:04",
+            "Re-start (Mute)",
+            "0",
+            "-",
+            "3"
+          ],
+          [
+            "C14",
+            "2008-05-20 15:10:50",
+            "Air pres. not ON",
+            "0",
+            "-",
+            "3"
+          ],
+          [
+            "F 14",
+            "2008-05-20 15:10:49",
+            "Air pres. not ON",
+            "16",
+            "-",
+            "3"
+          ],
+          [
+            "info",
+            "2008-05-20 14:23:40",
+            "Burner startup",
+            "-",
+            "-",
+            ""
+          ],
+          [
+            "info",
+            "2008-05-20 14:23:36",
+            "Switched ON (REMOTE)",
+            "",
+            "-",
+            ""
+          ],
+          [
+            "info",
+            "2008-05-20 14:23:30",
+            "Burner shutdown",
+            "",
+            "-",
+            ""
+          ],
+          [
+            "info",
+            "2008-05-20 14:23:29",
+            "Switched OFF",
+            "",
+            "1",
+            ""
+          ],
+          [
+            "info",
+            "2008-05-20 14:23:27",
+            "Switched ON (REMOTE)",
+            "",
+            "1",
+            ""
+          ]
+        ]
+      ]
+    }
+  ]
+}

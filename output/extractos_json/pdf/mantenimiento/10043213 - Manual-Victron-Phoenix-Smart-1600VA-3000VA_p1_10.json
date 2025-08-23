@@ -1,0 +1,290 @@
+{
+  "archivo": "10043213 - Manual-Victron-Phoenix-Smart-1600VA-3000VA_p1_10",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "victron energy\nBLUE POWER\nManual\nHandleiding\nManuel\nAnleitung\nManual\nAnvändarhandbok\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\nPhoenix Inverter Smart\n12 | 1600 230V\n12 | 2000 230V\n12 | 3000 230V\n24 | 1600 230V\n24 | 2000 230V\n24 | 3000 230V\n48 | 1600 230V\n48 | 2000 230V\n48 | 3000 230V",
+      "tablas": [
+        [
+          [
+            "12",
+            "Inverter\n| 1600 230V",
+            "12",
+            "| 2000 230V",
+            "12 |",
+            "3000 230V"
+          ],
+          [
+            "24",
+            "| 1600 230V",
+            "24",
+            "| 2000 230V",
+            "24 |",
+            "3000 230V"
+          ],
+          [
+            "48",
+            "| 1600 230V",
+            "48",
+            "| 2000 230V",
+            "48 | 3000 230V"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1. SAFETY INSTRUCTIONS\nGeneral\nEN\nPlease familiarize yourself with the safety features and instructions by first reading the\ndocumentation supplied with this product before using the equipment. This product has\nbeen designed and tested in accordance with international standards. The equipment\nmust be used exclusively for the purpose for which it was designed.\nWARNING: ELECTRIC SHOCK HAZARD.\nThe product is used in combination with a permanent energy source (battery). Even if the\nequipment is switched off, a dangerous electrical voltage can occur at the input and/or\noutput terminals. Always disconnect the battery before performing maintenance.\nNL\nFR\nDE\nThe product has no internal user-serviceable components. Do not remove the front plate\nor operate the product if any panels have been removed. All servicing must be\nundertaken by qualified personnel.\nES\nNever use the product where there is a risk of gas or dust explosions. Consult the battery\nmanufacturer's information to ascertain that the product is intended for use in conjunction\nwith the battery. Always comply with the battery manufacturer's safety instructions.\nSE\nWARNING: Do not lift heavy loads without assistance.\nInstallation\nAppendix\nRead the installation instructions in the installation manual before installing the\nequipment.\nThis is a Safety Class I product (supplied with a protective grounding terminal). The chassis\nmust be grounded. A grounding point is located on the outside of the product. Whenever it is\nlikely that the grounding protection has been damaged, the product must be turned off and\nsecured against unintended operation; please contact qualified service staff.\nEnsure that the DC and AC input cables are fused and fitted with circuit breakers. There is no\ninternal fuse inside this product. Never replace a safety component with a different type.\nConsult the manual to determine the correct component.\nDuring installation ensure that the remote connector with wire bridge is removed (or swtich off\nthe remote on/off switch if installed) to be sure that the inverter cannot be switched on\nunexpectedly.\nBefore applying power, ensure that the available power source matches the configuration\nsettings of the product as described in the manual.\nEnsure that the equipment is used under the correct ambient conditions. Never operate the\nproduct in a wet or dusty environment. Ensure there is adequate free space for ventilation\naround the product and check that the ventilation vents are not blocked.\nEnsure that the required system voltage does not exceed the product's capacity.\nvictron energy\n1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Transport and Storage\nEnsure that the mains power and battery leads have been disconnected before storing or\ntransporting the product.\nNo liability can be accepted for any transport damage if the equipment is shipped in non-\noriginal packaging.\nStore the product in a dry environment; the storage temperature must be between -20℃ and\n60°C.\nConsult the battery manufacturer's manual in respect of transport, storage, charging,\nrecharging and disposal of the battery.\n2\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "EN\nNL\n2. DESCRIPTION\n2.1 General\nBluetooth built-in: fully configurable with a tablet or smartphone\n· Low battery voltage alarm trip and reset levels\n. Low battery voltage cut-off and restart levels\n. Dynamic cut-off: load dependent cut-off level\n· Output voltage: 210 - 245V\n· Frequency: 50 Hz or 60 Hz\n. ECO mode on/off and ECO mode sense level\n· Alarm relay\nMonitoring:\n· In- and output voltage, % load and alarms\nFR\nDE\nES\nVE.Direct communication port\nThe VE.Direct port can be connected to a computer (VE.Direct to USB interface cable\nneeded) to configure and monitor the same parameters.\nSE\nProven reliability\nThe full bridge plus toroidal transformer topology has proven its reliability over many\nyears.\nAppendix\nThe inverters are short circuit proof and protected against overheating, whether due to\noverload or high ambient temperature.\nHigh start-up power\nNeeded to start loads such as power converters for LED lamps, halogen lamps or electric\ntools.\nECO mode\nWhen in ECO mode, the inverter will switch to standby when the load decreases below a\npreset value (min load turn on level: 10VA; and min load turn off level: 0VA). Once in standby\nthe inverter will switch on for a short period (adjustable, default: every 3 seconds). If the load\nexceeds a preset level, the inverter will remain on.\nRemote on/off\nA remote on/off switch can be connected to a two pole connector, between battery plus and\nthe left hand contact of the two pole connector or between battery minus and the right hand\ncontact of the two pole connector\nLED diagnosis\nSee section 3.3\nTo transfer the load to another AC source: the automatic transfer switch\nFor our low power inverters we recommend our Filax Automatic Transfer Switch. The Filax\nfeatures a very short switchover time (less than 20 milliseconds) so that computers and other\nelectronic equipment will continue to operate without disruption. Alternatively use a MultiPlus\nwith built-in transfer switch.\nvictron energy\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "3. OPERATION\n3.1 On/Off Switch\nWhen switched to \"on\" with the push button, the product is fully functional. The inverter will\ncome into operation and the LED \"inverter\" will light up. By pushing the push button\nsubsequently, within a short period of time, the inverter toggles between \"on\", \"ECO\" and \"off\".\nApart from the pushbutton; the inverter can also be switched on (normal or ECO) and off with\nBluetooth on a mobile device running iOS or Android and the Victron Connect app. However\nwhen switched off via Bluetooth or the push button; the unit cannot be switched on and off\nagain via the wired VE.Direct port.\n3.2 Remote control\nRemote control is possible with a simple on/off switch or with a Phoenix Inverter Control\npanel. A switch for remote control (on/off) can be connected to a two pole connector. The\nswitch can also be connected between battery plus and the left hand contact of the two pole\nconnector (marked \"H\"; see appendix A) or between battery minus and the right hand contact\nof the two pole connector (marked \"L\"; see appendix A).\nFor safety purposes, this product can be turned off completely (i.e. the inverter\ncannot be switched on via the push button or Bluetooth) by removing the remote\nconnector and its default installed wire bridge (or swtich off the remote on/off\nswitch if installed). The user can then be certain that the inverter cannot be\nswitched on accidently via Bluetooth by an unexpected other user.\n!\n3.3 LED definitions\nGreen LED\nStatus\nTrouble shooting\nSolid on\nInverter on\nRed LED Off\nstatus OK\nRed LED On or blinking:\nThe Inverter is still on, but will shut down when the\ncondition gets worse. See red LED table for warning\nreason\nSlow\nsingle pulse\nECO mode\nIf the inverter keeps switching on and off while there is a\nload connected, the load may be too small compared to the\nactual ECO mode settings. Increase the load or change\nECO mode settings. (minimum ECO mode setting: 15W)\nFast\ndouble pulse\nOff and waiting\nInverter did shut down because of a protection. The\ninverter will restart automatically as soon as all alarm\nconditions are cleared. See red LED state for the shutdown\nreason.\nOff\nInverter off\nRed LED Off\nCheck Remote on/off connector.\nCheck DC cable connections and fuses.\nCheck operational mode by pushing push button one time.\nRed LED On or blinking\nThe inverter did shut down because of a protection. It will\nno longer automatically restart. The red LED indicates the\nreason for shutdown. Remove the cause and then restart\nthe inverter by switching it Off, and then back On.\nFast\nOff and\nRed LED Blinking (\n4\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Green LED",
+            "Status",
+            "Trouble shooting"
+          ],
+          [
+            "Solid on",
+            "Inverter on",
+            "Red LED Off status OK Red LED On or blinking: The Inverter is still on, but will shut down when the condition gets worse. See red LED table for warning reason"
+          ],
+          [
+            "Slow single pulse",
+            "ECO mode",
+            "If the inverter keeps switching on and off while there is a load connected, the load may be too small compared to the actual ECO mode settings. Increase the load or change ECO mode settings. (minimum ECO mode setting: 15W)"
+          ],
+          [
+            "Fast double pulse",
+            "Off and waiting",
+            "Inverter did shut down because of a protection. The inverter will restart automatically as soon as all alarm conditions are cleared. See red LED state for the shutdown reason."
+          ],
+          [
+            "Off",
+            "Inverter off",
+            "Red LED Off Check Remote on/off connector. Check DC cable connections and fuses. Check operational mode by pushing push button one time."
+          ],
+          [
+            "Red LED On or blinking The inverter did shut down because of a protection. It will no longer automatically restart. The red LED indicates the reason for shutdown. Remove the cause and then restart the inverter by switching it Off, and then back On."
+          ],
+          [
+            "Fast",
+            "Off and",
+            "Red LED Blinking ("
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "blink\nfrirmware\nupdate in\nprogress or\nfailed\nFirmware update in progress or firmware update failed.\nWhen failed; retry firmware update.\nEN\nYellow LED\nStatus\nTrouble shooting\nSolid on\nECO mode\nRed LED Off\nstatus OK\nRed LED On or blinking:\nThe Inverter is still on, but will shut down when the\ncondition gets worse. See red LED table for warning\nreason\nOff\nECO mode off\nRed LED Off\nCheck operational mode by pushing push button one time.\nCheck Remote on/off connector.\nCheck DC cable connections and fuses.\nRed LED On or blinking\nThe inverter did shut down because of a protection. It will\nno longer automatically restart. The red LED indicates the\nreason for shutdown. Remove the cause and then restart\nthe inverter by switching it Off, and then back On.\nNL\nFR\nDE\nES\nSE\nRed LED\nDefinition\nTrouble shooting\nSolid on\nOverload\nReduce load\nSlow\nblink\nLow batt.\nRecharge or replace battery\nCheck DC cable connections\nCheck cable cross section as it may be insufficient.\nSee section 4.2 Protections and automatic restarts for\nmanual and automatic restart behavior.\nFast\nblink\nHigh batt.\nReduce DC input voltage, check for faulty charger\nDouble\npulse\nHigh temp.\nReduce load and/or move inverter to better ventilated area\nFast\nsingle pulse\nHigh DC ripple\nCheck DC cable connections and cable cross section.\nAppendix\n3.4 Protections and automatic restarts\nOverload\nSome loads like motors or pumps draw large inrush currents in a start-up situation. In such\ncircumstances, it is possible that the start-up current exceeds the over current trip level of the\ninverter. In this case the output voltage will quickly decrease to limit the output current of the\ninverter. If the over current trip level is continuously exceeded, the inverter will shut down: wait\n30 seconds and then restart.\nAfter three restarts followed by another overload within 30 seconds of restarting, the inverter\nwill shutdown and remain off. The LEDs will signal shutdown due to overload. To restart the\ninverter, switch it Off, then On.\nLow battery voltage (adjustable)\nThe inverter will shut down when the DC input voltage drops below the low battery shutdown\nlevel. After a minimum delay of 30 seconds, the inverter will restart if the voltages rise above\nthe low battery restart level.\nvictron energy\n5",
+      "tablas": [
+        [
+          [
+            "Yellow LED",
+            "Status",
+            "Trouble shooting"
+          ],
+          [
+            "Solid on",
+            "ECO mode",
+            "Red LED Off status OK Red LED On or blinking: The Inverter is still on, but will shut down when the condition gets worse. See red LED table for warning reason"
+          ],
+          [
+            "Off",
+            "ECO mode off",
+            "Red LED Off Check operational mode by pushing push button one time. Check Remote on/off connector. Check DC cable connections and fuses."
+          ],
+          [
+            "Red LED On or blinking The inverter did shut down because of a protection. It will no longer automatically restart. The red LED indicates the reason for shutdown. Remove the cause and then restart the inverter by switching it Off, and then back On."
+          ]
+        ],
+        [
+          [
+            "Red LED",
+            "Definition",
+            "Trouble shooting"
+          ],
+          [
+            "Solid on",
+            "Overload",
+            "Reduce load"
+          ],
+          [
+            "Slow blink",
+            "Low batt.",
+            "Recharge or replace battery Check DC cable connections Check cable cross section as it may be insufficient. See section 4.2 Protections and automatic restarts for manual and automatic restart behavior."
+          ],
+          [
+            "Fast blink",
+            "High batt.",
+            "Reduce DC input voltage, check for faulty charger"
+          ],
+          [
+            "Double pulse",
+            "High temp.",
+            "Reduce load and/or move inverter to better ventilated area"
+          ],
+          [
+            "Fast single pulse",
+            "High DC ripple",
+            "Check DC cable connections and cable cross section."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "After three restarts followed by a low battery shutdown within 30 seconds of restarting, the\ninverter will shutdown and stop retrying. The LEDs will signal low battery shutdown. To restart\nthe inverter, switch it Off, and then On, or recharge the battery: as soon as the battery has\nrisen and then stays above the Charge detect level for 30 seconds, it will switch on.\nSee the Technical Data table for default low battery shutdown and restart levels. They can be\nchanged with the VictronConnect App.\nHigh battery voltage\nReduce DC input voltage and/or check for a faulty battery- or solar-charger in the system.\nAfter shutting down due to a high battery voltage, the inverter will first wait 30 seconds and\nthen retry operation as soon as the battery voltage has dropped to acceptable level. The\ninverter will not stay off after multiple retries.\nHigh temperature\nA high ambient temperature or enduring high load may result in shut down to over\ntemperature. The inverter will restart after 30 seconds. The inverter will not stay off after\nmultiple retries. Reduce load and/or move inverter to better ventilated area.\nHigh DC ripple\nHigh DC ripple is usually caused by loose DC cable connections and/or too thin DC wiring.\nAfter the inverter has switched off due to high DC ripple voltage, it waits 30 seconds and then\nrestarts.\nAfter three restarts followed by a shutdown due to high DC ripple within 30 seconds of\nrestarting, the inverter will shutdown and stops retrying. To restart the inverter, switch it Off\nand then On.\nContinuous high DC ripple reduces the inverter life expectancy.\n6\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "4. INSTALLATION\nThis product should be installed by a qualified electrician.\n?\nDuring installation ensure that the remote connector with wire bridge is removed\n(or swtich off the remote on/off switch if installed) to be sure that the inverter\ncannot be switched on unexpectedly.\n4.1 Location\nThe product must be installed in a dry and well-ventilated area, as close as possible to\nthe batteries. There should be a clear space of at least 10cm around the appliance for\ncooling.\nEN\nNL\nFR\nDE\nES\nSE\nExcessively high ambient temperature will result in the following:\nReduced service life.\nReduced charging current.\nReduced peak capacity, or shutdown of the inverter.\nNever mount the appliance directly above the batteries.\nAppendix\n!\nThe product is suitable for wall mounting. For mounting see appendix A.\nThe appliance can be mounted horizontally as well as vertically; vertical mounting is\npreferable. The vertical position offers optimum cooling.\n!\nThe interior of the product must remain accessible after installation.\nTry and keep the distance between the product and the battery to a minimum in order to\nminimize cable voltage losses.\nFor safety purposes, this product should be installed in a heat-resistant\nenvironment if it is used with equipment where a substantial amount of\npower is to be converted. You should prevent the presence of e.g.\nchemicals, synthetic components, curtains or other textiles, etc., in the\nimmediate vicinity.\n!\nvictron energy\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "4.2 Connection of Battery cables\nIn order to fully utilize the full capacity of the product, batteries with sufficient capacity and\nbattery cables with sufficient cross section should be used. See table.\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nRecommended\ncross section (mm2)\nlength up to 6 m\n50\n25\n25\n70\n35\n25\n12/3000\n24/3000\n48/3000\nRecommended\ncross section (mm2)\n0 - 5 m\n95\n50\n35\n5 -10 m\n120\n95\n70\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nRecommended\nbattery capacity\n(Ah)\n300 - 800\n150 - 400\n75 - 200\n350 - 1000\n200 - 500\n100 - 250\n12/3000\n24/3000\n48/3000\nRecommended\nbattery capacity\n(Ah)\n400 - 1200\n200 - 700\n100 - 400\nRemark: Internal resistance is the important factor when working with low capacity batteries.\nPlease consult your supplier or the relevant sections of our book \"electricity on board\",\ndownloadable from our website.\nProcedure\nProceed as follows to connect the battery cables:\nUse an insulated box spanner in order to avoid shorting the battery.\nAvoid shorting the battery cables.\n!\nConnect the battery cables: the + (red) and the - (black), to the battery see appendix A.\nReverse polarity connection (+ to - and - to +) will cause damage to the product.\nSecure the nuts tightly in order to reduce the contact resistance as much as possible.\n8\nvictron energy",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended cross section (mm2)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "length up to 6 m",
+            "50",
+            "25",
+            "25",
+            "70",
+            "35",
+            "25"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended cross section (mm2)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "0 - 5 m",
+            "95",
+            "50",
+            "35"
+          ],
+          [
+            "5 -10 m",
+            "120",
+            "95",
+            "70"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended battery capacity (Ah)",
+            "300 - 800",
+            "150 - 400",
+            "75 - 200",
+            "350 - 1000",
+            "200 - 500",
+            "100 - 250"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended battery capacity (Ah)",
+            "400 - 1200",
+            "200 - 700",
+            "100 - 400"
+          ]
+        ]
+      ]
+    }
+  ]
+}

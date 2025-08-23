@@ -1,0 +1,1478 @@
+{
+  "archivo": "29.12.2024 PROGRAMA DE CONTROL DE DOSIFICADORES PLC 1200_p41_50",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "1\n2\n3\n4\nVisible en HMI Engi- True\nA\nneering\nSupervisión\nNombre\nIN\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nQ\nB\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\n/\nNombre\nTIEMPO_OFF\nValor de arranque\nAccesible desde\nHMI/OPC UA/Web\nAPI\nC\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nPT\nValor de arranque\nT#0ms\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nD\nNombre\nET\nValor de arranque\nT#0ms\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nIN\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nE\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nQ\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nFalse\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nFalse\nEscribible desde\nHMI/OPC UA/Web\nAPI\nFalse\nValor de ajuste\nFalse\nComentario\nTipo de datos\nTON_TIME\nRemanencia\nFalse\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nTrue\nComentario\nTipo de datos\nTime\nRemanencia\nFalse\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nFalse\nComentario\nTipo de datos\nTime\nRemanencia\nFalse\nEscribible desde\nHMI/OPC UA/Web\nAPI\nFalse\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nFalse\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 9 - 3",
+      "tablas": [
+        [
+          [
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "Bool"
+          ],
+          [
+            "Remanencia",
+            "False"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "Bool"
+          ],
+          [
+            "Remanencia",
+            "False"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "False"
+          ],
+          [
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "TON_TIME"
+          ],
+          [
+            "Remanencia",
+            "False"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Valor de ajuste",
+            "True"
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "Time"
+          ],
+          [
+            "Remanencia",
+            "False"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "Time"
+          ],
+          [
+            "Remanencia",
+            "False"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "False"
+          ],
+          [
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "Bool"
+          ],
+          [
+            "Remanencia",
+            "False"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "Bool"
+          ]
+        ],
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location"
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 9 - 3"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "A\nB\nC\nD\nE\nOwner\nOperator\n1\n2\n3\n4\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nRemanencia\nFalse\nEscribible desde\nHMI/OPC UA/Web\nAPI\nFalse\nValor de ajuste\nFalse\nComentario\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nF\nChecked By\nDescription 1st\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 9 - 4",
+      "tablas": [
+        [
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ]
+        ],
+        [
+          [
+            "Remanencia",
+            "False"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "False"
+          ],
+          [
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Comentario",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1\n2\n3\n4\nA\nBloques de programa\nPISTONES_TIEMPO_FIJO [FC4]\nB\nPISTONES_TIEMPO_FIJO Propiedades\nGeneral\nNombre\nPISTONES_TIEMPO_FIJO\nNúmero\n4\nTipo\nFC\nIdioma\nKOP\nNumeración\nAutomático\nInformación\nTítulo\nAutor\nComentario\nFamilia\nVersión\n0.1\nID personalizado\nC\nNombre\nTipo de da- Valor predet.\ntos\nComentario\nInput\nOutput\nInOut\nTemp\nConstant\nReturn\nPISTONES_TIEMPO_FIJO Void\nSegmento 1: TRABAJO TIEMPOS FIJO\n%M80.3\n\"MODO_ANTIGUO\"\nMOVE\nEN\n- ENO\n23 -\nIN\n# OUT1\n%MW82\n\"MOVE\nSETPOINT_SAV1\"\nMOVE\nD\nEN\nENO\n23 - IN\nOUT1\n%MW84\n\"MOVE_\nSETPOINT_SAV2\"\nMOVE\nEN - ENO\n23 - IN\n£ OUT1\n%MW86\n\"MOVE_\nSETPOINT_SAV3\"\nMOVE\nEN-\nENO\n26 - IN\nE\n# OUT1\n%MW88\n\"MOVE\nSETPOINT_SAV4\"\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 10 - 1",
+      "tablas": [
+        [
+          [
+            "PISTONES_TIEMPO_FIJO Propiedades"
+          ],
+          [
+            "General",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Nombre",
+            "PISTONES_TIEMPO_FIJO",
+            "Número",
+            "4"
+          ],
+          [
+            "Tipo",
+            "FC",
+            "Idioma",
+            "KOP"
+          ],
+          [
+            "Numeración",
+            "Automático",
+            "",
+            ""
+          ],
+          [
+            "Información",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Título",
+            "",
+            "Autor",
+            ""
+          ],
+          [
+            "Comentario",
+            "",
+            "Familia",
+            ""
+          ],
+          [
+            "Versión",
+            "0.1",
+            "ID personalizado",
+            ""
+          ]
+        ],
+        [
+          [
+            "Nombre",
+            "Tipo de da-\ntos",
+            "Valor predet.",
+            "Comentario"
+          ],
+          [
+            "Input",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Output",
+            "",
+            "",
+            ""
+          ],
+          [
+            "InOut",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Temp\n:unselected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Constant\n:unselected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Return\n:selected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PISTONES_TIEMPO_FIJO",
+            "Void",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location",
+            ""
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 10 - 1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "1\n2\n3\n4\nA\nBloques de programa / Bloques de sistema /\nRecursos de programa\nCONTADOR_GENERAL [DB1]\nCONTADOR_GENERAL Propiedades\nGeneral\nNombre\nCONTADOR_GENERAL\nNúmero\n1\nTipo\nDB\nIdioma\nDB\nNumeración\nAutomático\nInformación\nB\nTítulo\nComentario\nVersión\n1.0\nAutor\nSimatic\nFamilia\nIEC\nID personalizado\nCNTR\nNombre\nStatic\nValor de arranque\nAccesible desde\nHMI/OPC UA/Web\nAPI\nVisible en HMI Engi-\nneering\nSupervisión\nNombre\nCU\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nCD\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nR\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nLD\nValor de arranque\nfalse\nTipo de datos\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nValor de ajuste\nC\nComentario\nTipo de datos\nBool\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nD\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nFalse\nE\nComentario\nTipo de datos\nBool\nRemanencia\nTrue\nTrue\nTrue\nTrue\nTrue\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 11 - 1",
+      "tablas": [
+        [
+          [
+            "CONTADOR_GENERAL Propiedades"
+          ],
+          [
+            "General"
+          ],
+          [
+            "Nombre",
+            "CONTADOR_GENERAL",
+            "Número",
+            "1"
+          ],
+          [
+            "Tipo",
+            "DB",
+            "Idioma",
+            "DB"
+          ]
+        ],
+        [
+          [
+            "Autor",
+            "Simatic"
+          ],
+          [
+            "Familia",
+            "IEC"
+          ],
+          [
+            "ID personalizado",
+            "CNTR"
+          ]
+        ],
+        [
+          [
+            ""
+          ],
+          [
+            "Nombre",
+            "Static"
+          ],
+          [
+            "Valor de arranque",
+            ""
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            ""
+          ],
+          [
+            "Visible en HMI Engi- neering",
+            ""
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "CU"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "CD"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "R"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "LD"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ]
+        ],
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location"
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 11 - 1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "1\n2\n3\n4\nA\nB\nC\nD\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nQU\nTipo de datos\nBool\nValor de arranque\nfalse\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nQD\nTipo de datos\nBool\nValor de arranque\nfalse\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nPV\nTipo de datos\nInt\nValor de arranque\n0\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nCV\nTipo de datos\nInt\nValor de arranque\n0\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nE\nOwner\nOperator\nDesigned By\nF\nChecked By\nApproved By\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDescription 1st\nDescription 2nd\nLanguage es-ES\n1 st View\nVersion\nSheet 11 - 2",
+      "tablas": [
+        [
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "QU",
+            "Tipo de datos",
+            "Bool"
+          ],
+          [
+            "Valor de arranque",
+            "false",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "QD",
+            "Tipo de datos",
+            "Bool"
+          ],
+          [
+            "Valor de arranque",
+            "false",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "PV",
+            "Tipo de datos",
+            "Int"
+          ],
+          [
+            "Valor de arranque",
+            "0",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "CV",
+            "Tipo de datos",
+            "Int"
+          ],
+          [
+            "Valor de arranque",
+            "0",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "1\n2\n3\n4\nA\nBloques de programa / Bloques de sistema /\nRecursos de programa\nCONTADOR_SAV_1 [DB3]\nCONTADOR_SAV_1 Propiedades\nGeneral\nNombre\nCONTADOR_SAV_1\nNúmero\n3\nTipo\nDB\nIdioma\nDB\nNumeración\nAutomático\nInformación\nB\nTítulo\nComentario\nVersión\n1.0\nAutor\nSimatic\nFamilia\nIEC\nID personalizado\nCNTR\nTipo de datos\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nValor de ajuste\nNombre\nStatic\nValor de arranque\nAccesible desde\nHMI/OPC UA/Web\nAPI\nVisible en HMI Engi-\nneering\nSupervisión\nNombre\nCU\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nCD\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nR\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nLD\nValor de arranque\nfalse\nC\nComentario\nTipo de datos\nBool\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nD\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nFalse\nE\nComentario\nTipo de datos\nBool\nRemanencia\nTrue\nTrue\nTrue\nTrue\nTrue\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 12 - 1",
+      "tablas": [
+        [
+          [
+            "CONTADOR_SAV_1 Propiedades"
+          ],
+          [
+            "General",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Nombre",
+            "CONTADOR_SAV_1",
+            "Número",
+            "3"
+          ],
+          [
+            "Tipo",
+            "DB",
+            "Idioma",
+            "DB"
+          ],
+          [
+            "Numeración",
+            "Automático",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Autor",
+            "Simatic"
+          ],
+          [
+            "Familia",
+            "IEC"
+          ],
+          [
+            "ID personalizado",
+            "CNTR"
+          ]
+        ],
+        [
+          [
+            ""
+          ],
+          [
+            "Nombre",
+            "Static"
+          ],
+          [
+            "Valor de arranque",
+            ""
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            ""
+          ],
+          [
+            "Visible en HMI Engi- neering",
+            ""
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "CU"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "CD"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "R"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "LD"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ]
+        ],
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location"
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 12 - 1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "1\n2\n3\n4\nA\nB\nC\nD\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nQU\nTipo de datos\nBool\nValor de arranque\nfalse\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nQD\nTipo de datos\nBool\nValor de arranque\nfalse\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nPV\nTipo de datos\nInt\nValor de arranque\n0\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nCV\nTipo de datos\nInt\nValor de arranque\n0\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nE\nOwner\nOperator\nDesigned By\nF\nChecked By\nApproved By\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDescription 1st\nDescription 2nd\nLanguage es-ES\n1 st View\nVersion\nSheet 12 - 2",
+      "tablas": [
+        [
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "QU",
+            "Tipo de datos",
+            "Bool"
+          ],
+          [
+            "Valor de arranque",
+            "false",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "QD",
+            "Tipo de datos",
+            "Bool"
+          ],
+          [
+            "Valor de arranque",
+            "false",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "PV",
+            "Tipo de datos",
+            "Int"
+          ],
+          [
+            "Valor de arranque",
+            "0",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "CV",
+            "Tipo de datos",
+            "Int"
+          ],
+          [
+            "Valor de arranque",
+            "0",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "1\n2\n3\n4\nA\nBloques de programa / Bloques de sistema /\nRecursos de programa\nCONTADOR_SAV_2 [DB4]\nCONTADOR_SAV_2 Propiedades\nGeneral\nNombre\nCONTADOR_SAV_2\nNúmero\n4\nTipo\nDB\nIdioma\nDB\nNumeración\nAutomático\nInformación\nB\nTítulo\nComentario\nVersión\n1.0\nAutor\nSimatic\nFamilia\nIEC\nID personalizado\nCNTR\nTipo de datos\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nValor de ajuste\nNombre\nStatic\nValor de arranque\nAccesible desde\nHMI/OPC UA/Web\nAPI\nVisible en HMI Engi-\nneering\nSupervisión\nNombre\nCU\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nCD\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nR\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nLD\nValor de arranque\nfalse\nC\nComentario\nTipo de datos\nBool\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nD\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nFalse\nE\nComentario\nTipo de datos\nBool\nRemanencia\nTrue\nTrue\nTrue\nTrue\nTrue\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 13 - 1",
+      "tablas": [
+        [
+          [
+            "CONTADOR_SAV_2 Propiedades"
+          ],
+          [
+            "General",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Nombre",
+            "CONTADOR_SAV_2",
+            "Número",
+            "4"
+          ],
+          [
+            "Tipo",
+            "DB",
+            "Idioma",
+            "DB"
+          ],
+          [
+            "Numeración",
+            "Automático",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Autor",
+            "Simatic"
+          ],
+          [
+            "Familia",
+            "IEC"
+          ],
+          [
+            "ID personalizado",
+            "CNTR"
+          ]
+        ],
+        [
+          [
+            ""
+          ],
+          [
+            "Nombre",
+            "Static"
+          ],
+          [
+            "Valor de arranque",
+            ""
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            ""
+          ],
+          [
+            "Visible en HMI Engi- neering",
+            ""
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "CU"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "CD"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "R"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "LD"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ]
+        ],
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location"
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 13 - 1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "1\n2\n3\n4\nA\nB\nC\nD\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nQU\nTipo de datos\nBool\nValor de arranque\nfalse\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nQD\nTipo de datos\nBool\nValor de arranque\nfalse\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nPV\nTipo de datos\nInt\nValor de arranque\n0\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nNombre\nCV\nTipo de datos\nInt\nValor de arranque\n0\nRemanencia\nTrue\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nValor de ajuste\nFalse\nSupervisión\nComentario\nE\nOwner\nOperator\nDesigned By\nF\nChecked By\nApproved By\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDescription 1st\nDescription 2nd\nLanguage es-ES\n1 st View\nVersion\nSheet 13 - 2",
+      "tablas": [
+        [
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "QU",
+            "Tipo de datos",
+            "Bool"
+          ],
+          [
+            "Valor de arranque",
+            "false",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "QD",
+            "Tipo de datos",
+            "Bool"
+          ],
+          [
+            "Valor de arranque",
+            "false",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "PV",
+            "Tipo de datos",
+            "Int"
+          ],
+          [
+            "Valor de arranque",
+            "0",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ],
+          [
+            "Nombre",
+            "CV",
+            "Tipo de datos",
+            "Int"
+          ],
+          [
+            "Valor de arranque",
+            "0",
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True",
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True",
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Supervisión",
+            "",
+            "Comentario",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "1\n2\n3\n4\nA\nBloques de programa / Bloques de sistema /\nRecursos de programa\nCONTADOR_SAV_3 [DB5]\nCONTADOR_SAV_3 Propiedades\nGeneral\nNombre\nCONTADOR_SAV_3\nNúmero\n5\nTipo\nDB\nIdioma\nDB\nNumeración\nAutomático\nInformación\nB\nTítulo\nComentario\nVersión\n1.0\nAutor\nSimatic\nFamilia\nIEC\nID personalizado\nCNTR\nTipo de datos\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nValor de ajuste\nNombre\nStatic\nValor de arranque\nAccesible desde\nHMI/OPC UA/Web\nAPI\nVisible en HMI Engi-\nneering\nSupervisión\nNombre\nCU\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nCD\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nR\nValor de arranque\nfalse\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nLD\nValor de arranque\nfalse\nC\nComentario\nTipo de datos\nBool\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nD\nValor de ajuste\nFalse\nComentario\nTipo de datos\nBool\nRemanencia\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nFalse\nE\nComentario\nTipo de datos\nBool\nRemanencia\nTrue\nTrue\nTrue\nTrue\nTrue\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 14 - 1",
+      "tablas": [
+        [
+          [
+            "CONTADOR_SAV_3 Propiedades"
+          ],
+          [
+            "General",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Nombre",
+            "CONTADOR_SAV_3",
+            "Número",
+            "5"
+          ],
+          [
+            "Tipo",
+            "DB",
+            "Idioma",
+            "DB"
+          ],
+          [
+            "Numeración",
+            "Automático",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Autor",
+            "Simatic"
+          ],
+          [
+            "Familia",
+            "IEC"
+          ],
+          [
+            "ID personalizado",
+            "CNTR"
+          ]
+        ],
+        [
+          [
+            ""
+          ],
+          [
+            "Nombre",
+            "Static"
+          ],
+          [
+            "Valor de arranque",
+            ""
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            ""
+          ],
+          [
+            "Visible en HMI Engi- neering",
+            ""
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "CU"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "CD"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "R"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "LD"
+          ],
+          [
+            "Valor de arranque",
+            "false"
+          ]
+        ],
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location"
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 14 - 1"
+          ]
+        ]
+      ]
+    }
+  ]
+}

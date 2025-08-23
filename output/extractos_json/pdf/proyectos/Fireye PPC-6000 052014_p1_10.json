@@ -1,0 +1,1554 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p1_10",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nPPC-6001\nMAY 6, 2014\nNEXUS\nfireye\nPPC6000\nSERIES\nFUEL AIR\nRATIO\nCONTROLLER\nCOM\nMODE\nDESCRIPTION\nThe Fireye PPC6000 is a state of the art stand-alone parallel positioning system for all types of\nliquid or gaseous fuel fired combustion systems. When combined with a Fireye flame safeguard\nsystem such as the Fireye BurnerLogix control, the PPC6000 offers the most compact and\nadvanced parallel positioning system available. Four fuel profiles allow the PPC6000 to\naccommodate a variety of applications such as two fuels, with and without, the optional variable\nspeed drive (VSD). With each profile having up to 24 points entered to assure a smooth \"curve\",\nthe microprocessor interpolates points between entered values and precisely positions fuel and\nair to within +- . 1 degree. This eliminates hysteresis for improved efficiency. The PPC6000 is\ncapable of powering up to ten 24volt servomotors supplied from the integral transformer. All\nservomotors and displays operate on a secure CANbus communications protocol and can be\n\"daisy chained\" together for simplified wiring. Two independent PID control loops for\ntemperature or pressure control provide precise, accurate control of firing rate for unmatched\nresponse to load changes. Four safety rated user definable digital inputs are standard and can\nbe configured for functions such as lead lag, night setback, thermal shock warm up, etc. Digital\ninputs can also be configured as analog inputs via the optional programmable function blocks\nusing Fireye Abacus software. Built in lead lag sequencing for up to four boilers is included in\nevery PPC6000. More elaborate lead lag schemes may be possible using the programmable\nfunction blocks.\nTwo variations of multifunction displays are available:\n. NXTSD104 10.4\" Color Touchscreen display with Ethernet, Modbus TCPIP, 4\nprogrammable relays and backup.\n· NX610 display provides automatic storage of operating parameters and profiles for\nupload/download to the PPC6000. In addition, three line voltage fully programmable relays\nare mounted inside the display.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nOther options include, two Variable speed drive (VSD) outputs via daughter board, Oxygen Trim\nusing Fireye's proven heated zirconia oxide probe and optional interface, a wide variety of\ncommunications platforms such as Modbus is also available.\nAn optional internal freely programmable logic section of the PPC6000 means that external\nPLC's and expensive stand-alone sequencing controls may no longer be needed. Easy to\nprogram and protect, this new feature will make the PPC6000 suitable for many unique or\nunusual applications. Functions such as lead lag, sequencing, feedwater control and draft\ncontrol are just some of the ways this feature can be used.\nOptional ComFire software allows the user to view and control all aspects of the burner system,\nprovides real time trending and logging, upload and download of profiles and options. The user\ncan build custom screens or import actual photographs of the combustion equipment for\nanimation.\nSummary of PPC6000 Features\n. State of the art surface mount technology\n. Smallest footprint available: 7.0\" x 4.5\" x 2.5\"\n· Capable up to ten servomotors powered from the control\n. Two PID loops for precise process control\n. Simple four wire CANbus wiring reduces time and mistakes\n. Optional VSD card provides two VSD's and one Analog output\n· Re-transmittal of most data as 420mA output (requires NXDBVSD\noption)\n· VSD encoder feedback available\n· Standby lag boiler on water temp.\n· Built in lead/lag sequencing for up to four boilers\n· Fully programmable function block programming allows for custom\napplications such as draft control or feedwater control\n· Two levels of displays: 12 Key Keypad with Backup, 10.4\" Color\nTouchscreen\n· Unparalleled worldwide support\n2",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\nSafety information\n!\nWARNING\nThe equipment described in this manual is capable of causing property damage, severe injury, or\ndeath. It is the responsibility of the owner or user to ensure that the equipment described herein is\ninstalled, operated and commissioned in compliance with the requirements of all national and local\nlegislation, which may prevail.\nWhen this equipment is fitted to an appliance due regard must also be given to the requirements of that\nappliance.\nBefore attempting to install, commission or operate this equipment all relevant sections of this\ndocument must be read and fully understood. If in doubt about any requirements consult Fireye.\nInstallation, commissioning or adjustment of this product MUST be carried out by suitably trained\nengineers or personnel qualified by training and experience.\nAfter installation or modifications to the installation all functions of the equipment MUST be checked\nto ensure safe and reliable operation of the control.\nThe manufacturer of this equipment accepts no liability for any consequences resulting from inappropriate,\nnegligent or incorrect installation, commissioning or adjustment of operating parameters of the equipment.\nControl panels must not be left uncovered while power is on. If it is essential to do so while rectifying faults\nonly personnel qualified by training and experience should be involved.\nThe time any covers are off must be kept to a minimum and warning notices must be posted.\nBefore attempting any work on this equipment or any equipment controlled by or connected to this equipment,\nall related electrical supplies must be isolated.\nSafety interlocks must not be removed or over-ridden. Any faults once detected must be corrected before\nthe control is operated.\nCAUTION - SOME VERSIONS OF THIS EQUIPMENT CONTAIN\nA LITHIUM BATTERY IN THE DISPLAY UNIT\nNOTE\nThe manufacturer of this equipment has a policy of continual product improvement and reserves the right to\nchange the specification of the equipment and the contents of this manual without notice.\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nTable of contents\nThis manual describes the installation, commissioning, operation and maintenance of the PPC6000 series fuel\nair ratio controls. It may be used in conjunction with the following other manuals:\n. NEX-1502 - ComFire combustion analysis tool user manual\nPlease read the safety information at the front of this manual before proceeding.\n1\nTechnical specification\n11\n1.1\nGeneral\n11\n1.2\nServo-motor control - IMPORTANT: See Section 3.2\n11\n1.3\nDigital outputs (PPC6000)\n12\n1.4\nAlarm output (PPC6000)\n12\n1.5\nDigital inputs (PPC6000)\n13\n1.6\nPressure/Temperature Input (PPC6000)\n13\n1.7\nCommunications interface (PPC6000)\n13\n1.8\nOptional Oxygen Probe Interface Unit (NXO2INT) - optional\n14\n1.9\nOptional Ambient Air Temperature Unit (NXIATS) - optional\n14\n1.10\nVariable Speed Drive (VSD) Daughter Board (NXDBVSD) - optional\n14\n1.11\nFireye NXC04, NXC12, NXC20, NXC40 Servo Motors\n15\n1.12\nFireye NXO2INT Oxygen Probe Interface Unit (optional)\n15\n1.13\nFireye NXIATS Ambient Air Temperature Sensor (optional)\n16\n1.14\nApprovals\n16\n1.15\nParts List with Description\n16\n2 Installation\n18\n2.1\nMounting details for the PPC6000 control\n19\n2.2\nMounting details for the display module\n20\n2.3\nMounting details for optional Oxygen Probe Interface unit, NX02INT\n21\n2.4\nThe oxygen trim option\n22\n2.4.1\nOxygen Probe description\n22\n2.4.2\nInstallation of oxygen probe\n22\n2.4.3\nMounting the oxygen probe\n23\n2.4.4\nMounting arrangements for Temperature and Steam pressure sensors\n24\n2.4.5\nBoiler temperature sensors\n24\n2.4.6\nSteam pressure sensors\n25\n2.5\nOption link selection (PPC6000)\n26\n2.5.1\nGeneral (Access to jumper's and fuse's is gained by removing the back cover of the PPC6000)\n26\n2.5.2\nLine supply voltage (LK1 - 4) (PPC6000)\n26\n2.5.3\nSENS IN and SENS SUPP (boiler temp/pressure sensor) (PPC6000)\n27\n2.5.4\nREMOTE SETPOINT (PPC6000)\n27\n2.5.5\nRS485 serial communications termination resistor (PPC6000)\n27\n2.5.6\nRS485 serial communications termination resistor (daughter board)\n27\nIN\n27\nIN\n27\nIN\n27\nIN\n27\n2.6\nWiring\n29\n2.6.1\nGeneral\n29\n4",
+      "tablas": [
+        [
+          [
+            "1 Technical specification",
+            "11"
+          ],
+          [
+            "1.1 General",
+            "11"
+          ],
+          [
+            "1.2 Servo-motor control - IMPORTANT: See Section 3.2",
+            "11"
+          ],
+          [
+            "1.3",
+            "Digital outputs (PPC6000)",
+            "12"
+          ],
+          [
+            "1.4",
+            "Alarm output (PPC6000)",
+            "12"
+          ],
+          [
+            "1.5",
+            "Digital inputs (PPC6000)",
+            "13"
+          ],
+          [
+            "1.6",
+            "Pressure/Temperature Input (PPC6000)",
+            "13"
+          ],
+          [
+            "1.7",
+            "Communications interface (PPC6000)",
+            "13"
+          ],
+          [
+            "1.8",
+            "Optional Oxygen Probe Interface Unit (NXO2INT) - optional",
+            "14"
+          ],
+          [
+            "1.9",
+            "Optional Ambient Air Temperature Unit (NXIATS) - optional",
+            "14"
+          ],
+          [
+            "1.10",
+            "Variable Speed Drive (VSD) Daughter Board (NXDBVSD) - optional",
+            "14"
+          ],
+          [
+            "1.11",
+            "Fireye NXC04, NXC12, NXC20, NXC40 Servo Motors",
+            "15"
+          ],
+          [
+            "1.12",
+            "Fireye NXO2INT Oxygen Probe Interface Unit (optional)",
+            "15"
+          ],
+          [
+            "1.13",
+            "Fireye NXIATS Ambient Air Temperature Sensor (optional)",
+            "16"
+          ],
+          [
+            "1.14",
+            "Approvals",
+            "16"
+          ],
+          [
+            "1.15",
+            "Parts List with Description",
+            "16"
+          ],
+          [
+            "2 Installation",
+            "18"
+          ],
+          [
+            "2.1 Mounting details for the PPC6000 control",
+            "19"
+          ],
+          [
+            "2.2 Mounting details for the display module",
+            "20"
+          ],
+          [
+            "2.3",
+            "Mounting details for optional Oxygen Probe Interface unit, NX02INT",
+            "21"
+          ],
+          [
+            "2.4",
+            "The oxygen trim option",
+            "22"
+          ],
+          [
+            "2.4.1 Oxygen Probe description",
+            "22"
+          ],
+          [
+            "2.4.2 Installation of oxygen probe",
+            "22"
+          ],
+          [
+            "2.4.3",
+            "Mounting the oxygen probe",
+            "23"
+          ],
+          [
+            "2.4.4",
+            "Mounting arrangements for Temperature and Steam pressure sensors",
+            "24"
+          ],
+          [
+            "2.4.5",
+            "Boiler temperature sensors",
+            "24"
+          ],
+          [
+            "2.4.6",
+            "Steam pressure sensors",
+            "25"
+          ],
+          [
+            "2.5 Option link selection (PPC6000)",
+            "26"
+          ],
+          [
+            "2.5.1 General (Access to jumper's and fuse's is gained by removing the back cover of the PPC6000) 26"
+          ],
+          [
+            "2.5.2 Line supply voltage (LK1 - 4) (PPC6000)",
+            "26"
+          ],
+          [
+            "2.5.3 SENS IN and SENS SUPP (boiler temp/pressure sensor) (PPC6000)",
+            "27"
+          ],
+          [
+            "2.5.4",
+            "REMOTE SETPOINT (PPC6000)",
+            "27"
+          ],
+          [
+            "2.5.5",
+            "RS485 serial communications termination resistor (PPC6000)",
+            "27"
+          ],
+          [
+            "2.5.6",
+            "RS485 serial communications termination resistor (daughter board)",
+            "27"
+          ],
+          [
+            "IN",
+            "27"
+          ],
+          [
+            "IN",
+            "27"
+          ],
+          [
+            "IN",
+            "27"
+          ],
+          [
+            "IN",
+            "27"
+          ],
+          [
+            "2.6 Wiring",
+            "29"
+          ],
+          [
+            "2.6.1 General",
+            "29"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\n2.6.2\nGrounding cable screens\n32\n2.6.3\nGROUND (EARTH) connection\n32\n2.6.4\nGround (earth) Connection (display unit)\n33\n2.6.5\nTerminal Designation\n33\n2.6.6\nLINE and NEUTRAL supply (PPC6000) PE1 & PE2\n35\n2.6.7\nSafety Shutdown output (PPC6000)\n36\n2.6.8\nControlled Shutdown Relay Output (PPC6000)\n36\n2.6.9\nAlarm Relay output - RELAY 4 (on the PPC6000)\n36\n2.6.10\nAuxiliary Relay Outputs (display)\n37\n2.6.11\nFuel Select /Profile Select Input/Purge and Ignition Prove Outputs (PPC6000)\n37\n2.6.12\nLow Voltage Digital Inputs (PPC6000) - relevant Engineer's Keys EK1-EK4 (Sec. 6.6.2) 38\n2.6.13\nServo-motor and Display Connection (PPC6000)\n38\n2.6.14\nDisplay Connection with PPC6000 and BurnerLogix YB110\n39\n2.6.15\nOxygen Probe Interface Connection (PPC6000)\n40\n2.6.16\nPressure/temperature sensor input (PPC6000)\n40\n2.6.17\nRemote Setpoint (Analog Input 5) (PPC6000)\n41\n2.6.18\nRS485 interface (PPC6000)\n41\n2.6.19\nVariable Speed Drive Selection:\n42\n2.6.20\nPPC6000 Variable Speed Drive Daughter Board P/N NXDBVSD\n43\n2.6.21\nLIVE and NEUTRAL supply (optional Oxygen Probe Interface unit)\n44\n2.6.22\nOxygen probe connection (optional Oxygen Probe Interface unit), NX02INT\n44\n2.6.23\nInlet temperature sensor (optional)\n46\n2.7\nFinal checks\n47\n3 Servo-motor selection and calibration\n48\n3.1\nServo-motor selection\n48\n3.1.1\nMotor requirements\n48\n3.2\nIMPORTANT: Servo-motor direction warning\n49\n3.3\nLocking the servo-motor to the valve shaft\n50\n3.4\nFeedback potentiometer\n50\n3.5\nAdjusting microswitch positions\n51\n3.6\nServomotor Replacement\n52\n4 Description of operation\n53\n4.1\nThe Display / Keypad\n53\n4.2\nStart-up sequence\n54\n4.3\nNon-volatile lockout\n59\n4.4\nModulation\n59\n4.4.1\nNormal/Remote mode.\n59\n4.4.2\nLocal mode. (LOC 1, LOC 2)\n59\n5\nCommissioning the control\n60\n5.1\nGeneral\n60\n5.2\nCommissioning data\n61\n5.2.1\nOption parameters\n61\n5.2.2\nSetpoints\n61\n5.3\nThe Commissioning process\n61\n5.3.1\nNavigation\n61\n5.4\nDescription of Touchscreen operation.\n63\n5.4.1\nThe Touchscreen\n63\n5.4.2\nTouchscreen Power on.\n63\n5.4.3\nThe Operation Mode line and Status messages\n63\n5.4.4\nTouchscreen Overview display.\n65\n5",
+      "tablas": [
+        [
+          [
+            "",
+            "fireye",
+            ""
+          ],
+          [
+            "",
+            "2.6.2",
+            "Grounding cable screens",
+            "32"
+          ],
+          [
+            "",
+            "2.6.3",
+            "GROUND (EARTH) connection",
+            "32"
+          ],
+          [
+            "",
+            "2.6.4",
+            "Ground (earth) Connection (display unit)",
+            "33"
+          ],
+          [
+            "",
+            "2.6.5",
+            "Terminal Designation",
+            "33"
+          ],
+          [
+            "",
+            "2.6.6",
+            "LINE and NEUTRAL supply (PPC6000) PE1 & PE2",
+            "35"
+          ],
+          [
+            "",
+            "2.6.7",
+            "Safety Shutdown output (PPC6000)",
+            "36"
+          ],
+          [
+            "",
+            "2.6.8",
+            "Controlled Shutdown Relay Output (PPC6000)",
+            "36"
+          ],
+          [
+            "",
+            "2.6.9",
+            "Alarm Relay output - RELAY 4 (on the PPC6000)",
+            "36"
+          ],
+          [
+            "",
+            "2.6.10",
+            "Auxiliary Relay Outputs (display)",
+            "37"
+          ],
+          [
+            "",
+            "2.6.11",
+            "Fuel Select /Profile Select Input/Purge and Ignition Prove Outputs (PPC6000)",
+            "37"
+          ],
+          [
+            "2.6.12",
+            "Low Voltage Digital Inputs (PPC6000) - relevant Engineer's Keys EK1-EK4 (Sec.",
+            "6.6.2) 38"
+          ],
+          [
+            "",
+            "2.6.13",
+            "Servo-motor and Display Connection (PPC6000)",
+            "38"
+          ],
+          [
+            "",
+            "2.6.14",
+            "Display Connection with PPC6000 and BurnerLogix YB110",
+            "39"
+          ],
+          [
+            "",
+            "2.6.15",
+            "Oxygen Probe Interface Connection (PPC6000)",
+            "40"
+          ],
+          [
+            "",
+            "2.6.16",
+            "Pressure/temperature sensor input (PPC6000)",
+            "40"
+          ],
+          [
+            "",
+            "2.6.17",
+            "Remote Setpoint (Analog Input 5) (PPC6000)",
+            "41"
+          ],
+          [
+            "",
+            "2.6.18",
+            "RS485 interface (PPC6000)",
+            "41"
+          ],
+          [
+            "",
+            "2.6.19",
+            "Variable Speed Drive Selection:",
+            "42"
+          ],
+          [
+            "",
+            "2.6.20",
+            "PPC6000 Variable Speed Drive Daughter Board P/N NXDBVSD",
+            "43"
+          ],
+          [
+            "",
+            "2.6.21",
+            "LIVE and NEUTRAL supply (optional Oxygen Probe Interface unit)",
+            "44"
+          ],
+          [
+            "",
+            "2.6.22",
+            "Oxygen probe connection (optional Oxygen Probe Interface unit), NX02INT",
+            "44"
+          ],
+          [
+            "2.6.23",
+            "Inlet temperature sensor (optional)",
+            "46"
+          ],
+          [
+            "2.7",
+            "Final checks",
+            "47"
+          ],
+          [
+            "3 Servo-motor selection and calibration",
+            "48"
+          ],
+          [
+            "3.1",
+            "",
+            "Servo-motor selection",
+            "48"
+          ],
+          [
+            "3.1.1",
+            "Motor requirements",
+            "48"
+          ],
+          [
+            "3.2",
+            "",
+            "IMPORTANT: Servo-motor direction warning",
+            "49"
+          ],
+          [
+            "3.3",
+            "",
+            "Locking the servo-motor to the valve shaft",
+            "50"
+          ],
+          [
+            "3.4",
+            "",
+            "Feedback potentiometer",
+            "50"
+          ],
+          [
+            "3.5",
+            "",
+            "Adjusting microswitch positions",
+            "51"
+          ],
+          [
+            "3.6 Servomotor Replacement",
+            "52"
+          ],
+          [
+            "4 Description of operation",
+            "53"
+          ],
+          [
+            "4.1 The Display / Keypad",
+            "53"
+          ],
+          [
+            "4.2",
+            "Start-up sequence",
+            "54"
+          ],
+          [
+            "4.3",
+            "",
+            "Non-volatile lockout",
+            "59"
+          ],
+          [
+            "4.4",
+            "Modulation",
+            "59"
+          ],
+          [
+            "",
+            "4.4.1",
+            "Normal/Remote mode.",
+            "59"
+          ],
+          [
+            "4.4.2",
+            "Local mode. (LOC 1, LOC 2)",
+            "59"
+          ],
+          [
+            "5 Commissioning the control",
+            "60"
+          ],
+          [
+            "5.1 General",
+            "60"
+          ],
+          [
+            "5.2",
+            "",
+            "Commissioning data",
+            "61"
+          ],
+          [
+            "",
+            "5.2.1",
+            "Option parameters",
+            "61"
+          ],
+          [
+            "5.2.2",
+            "Setpoints",
+            "61"
+          ],
+          [
+            "5.3 The",
+            "Commissioning process",
+            "61"
+          ],
+          [
+            "5.3.1",
+            "Navigation",
+            "61"
+          ],
+          [
+            "5.4",
+            "Description of Touchscreen operation.",
+            "63"
+          ],
+          [
+            "5.4.1",
+            "The Touchscreen",
+            "63"
+          ],
+          [
+            "",
+            "5.4.2",
+            "Touchscreen Power on.",
+            "63"
+          ],
+          [
+            "",
+            "5.4.3",
+            "The Operation Mode line and Status messages",
+            "63"
+          ],
+          [
+            "",
+            "5.4.4",
+            "Touchscreen Overview display.",
+            "65"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\n5.4.5\nTouchscreen Lockout Reset (Alarm Mute) Function.\n66\n5.4.6\nTouchscreen LED Indication.\n66\n5.4.7\nTouchscreen Fuel/Profile Select.\n67\n5.4.8\nTouchscreen 'Control' screen.\n68\n5.4.9\nTouchscreen 'Menu' button.\n68\n5.4.10\nTouchscreen 'Burner Settings' button.\n68\n5.4.11\nTouchscreen 'Fault/Event Log' button.\n70\n5.4.12\nTouchscreen 'Screen Configuration' button.\n70\n5.4.13\nCleaning the Touchscreen\n71\n5.4.14\nTouchscreen Commission mode.\n72\n5.5\nUsing option set mode\n74\n5.5.1\nOption parameter list\n74\nOption 00.1 - Site passcode (0 - 999) DEFAULT VALUE is 154. LV3\n74\nOption 00.2 - Serial communications control address (0 - 15) LV3\n74\nOption 00.3 - Reset hours run (0 - 1) LV3\n75\nOption 00.4 - User program select (0 / 1) LV1\n75\nOption 00.6 - Reserved\n75\nOption 00.7 - Modbus device address (1 - 99) LV3\n75\nOption 00.8 - Modbus communications speed (0 - 3) LV3\n76\nOption 01.0 - Power Up Option (0 - 30) LV3\n76\nOption 01.1 - Keyboard Auto/Manual enable (0 - 1) LV3 [Engineer's Key 33]\n76\nOption 01.2 - Mute/Reset Input enable (0 - 2) LV3\n76\nPPC\nOption 02.x - Drive Name LV3\n77\nPPC\nOption 03.x - Drive Serial Number LV3\n78\nPPC\nOption 04.x - Drive Usage Information LV3\n78\nPPC\nOption 05.x - Drive Options LV3\n79\nPPC\nOptions 06.1-06.4 - Profile Naming LV3\n80\nOptions 07.x, 08.x- RESERVED\n80\nOption 09.0 - Inverter control accuracy (0 / 1) LV3\n80\nOption 09.1 - Inverter error tolerance (0 / 1) LV3\n80\nOption 09.2 - Inverter closed loop gain (15 - 125%) LV3\n81\nOption 09.3 - Inverter stop time (0 - 100 seconds) LV3\n81\nOption 09.4 - Inverter acceleration time (0-100 seconds) (60 seconds max. recommended) LV381\nOption 09.6 - VSD2 Speed Encoder Scaler (255 - 999) LV3\n82\nOption 09.7 - Reserved\n82\nOption 09.8 - Reserved\n82\nOption 14.1 - Limit Relay (0 - 8) LV3\n83\nOption 14.2 - Oxygen and Flue Temperature Limit Relay (0 - 8) LV3\n83\nPPC\nOption 15.0 - Modulation sensor input type (0 - 3) LV3\n84\nOption 15.1 - Modulation input decimal places (0 to 2)\n84\nPPC\nOption 15.2 - Modulation input zero value (-999 to +999 / -99.9 to +99.9 / -9.99 to\n+9.99) LV3\n85\nPPC\nOption 15.3 - Modulation input span value (-999 to +999 / -99.9 to +99.9 / -9.99 to\n+9.99) LV3\n85\nPPC\nOption 15.4 - Setpoint display units (0 - 3) LV3\n85\nPPC\nOption 15.5 - Boiler high safety limit (0 - 999 / 0.0 - 99.9 / 0.00 - 9.99) LV3\n85\nOption 15.6 - Modulation Time (0 - 120 seconds) LV3\n85\nOption 15.7 - Bumpless Transfer (0 or 1) LV3\n86\nOption 15.8 - Low before Off (0 or 1) LV3\n86\nOption 15.9 - reserved\n86\nOption 16.2 - Allow profile swap (0 to 16) LV3\n87\nOption 18.1 to 18.4 - Low Voltage Fail-safe Alarm / Lockout Inputs (0 - 460) LV3\n91\n6",
+      "tablas": [
+        [
+          [
+            "5.4.5",
+            "Touchscreen Lockout Reset (Alarm Mute) Function.",
+            "66"
+          ],
+          [
+            "5.4.6",
+            "Touchscreen LED Indication.",
+            "66"
+          ],
+          [
+            "5.4.7",
+            "Touchscreen Fuel/Profile Select.",
+            "67"
+          ],
+          [
+            "5.4.8",
+            "Touchscreen 'Control' screen.",
+            "68"
+          ],
+          [
+            "5.4.9",
+            "Touchscreen 'Menu' button.",
+            "68"
+          ],
+          [
+            "5.4.10",
+            "Touchscreen 'Burner Settings' button.",
+            "68"
+          ],
+          [
+            "5.4.11",
+            "Touchscreen 'Fault/Event Log' button.",
+            "70"
+          ],
+          [
+            "5.4.12",
+            "Touchscreen 'Screen Configuration' button.",
+            "70"
+          ],
+          [
+            "5.4.13 Cleaning",
+            "the Touchscreen",
+            "71"
+          ],
+          [
+            "5.4.14",
+            "Touchscreen Commission mode.",
+            "72"
+          ],
+          [
+            "5.5 Using option set mode",
+            "74"
+          ],
+          [
+            "5.5.1 Option",
+            "parameter list",
+            "74"
+          ],
+          [
+            "Option 00.1 - Site passcode (0 - 999) DEFAULT VALUE is 154. LV3",
+            "74"
+          ],
+          [
+            "Option 00.2",
+            "- Serial communications control address (0 - 15) LV3",
+            "74"
+          ],
+          [
+            "Option 00.3\n:unselected:",
+            "- Reset hours run (0 - 1) LV3",
+            "75"
+          ],
+          [
+            "Option 00.4\n:unselected:",
+            "- User program select (0 / 1) LV1",
+            "75"
+          ],
+          [
+            "Option 00.6\n:unselected:",
+            "- Reserved",
+            "75"
+          ],
+          [
+            "Option 00.7\n:unselected:",
+            "- Modbus device address (1 - 99) LV3",
+            "75"
+          ],
+          [
+            "Option 00.8\n:unselected:",
+            "- Modbus communications speed (0 - 3) LV3",
+            "76"
+          ],
+          [
+            "Option 01.0\n:unselected:",
+            "- Power Up Option (0 - 30) LV3",
+            "76"
+          ],
+          [
+            "Option 01.1\n:unselected:",
+            "- Keyboard Auto/Manual enable (0 - 1) LV3 [Engineer's Key 33]",
+            "76"
+          ],
+          [
+            "Option 01.2\n:unselected:",
+            "- Mute/Reset Input enable (0 - 2) LV3",
+            "76"
+          ],
+          [
+            ":unselected:\nPPC",
+            "Option 02.x - Drive Name LV3",
+            "77"
+          ],
+          [
+            ":unselected: PPC",
+            "Option 03.x - Drive Serial Number LV3",
+            "78"
+          ],
+          [
+            ":unselected: PPC",
+            "Option 04.x - Drive Usage Information LV3",
+            "78"
+          ],
+          [
+            ":unselected: PPC",
+            "Option 05.x - Drive Options LV3",
+            "79"
+          ],
+          [
+            ":unselected: PPC",
+            "Options 06.1-06.4 - Profile Naming LV3",
+            "80"
+          ],
+          [
+            "Options 07.x,",
+            "08.x- RESERVED",
+            "80"
+          ],
+          [
+            "Option 09.0",
+            "- Inverter control accuracy (0 / 1) LV3",
+            "80"
+          ],
+          [
+            "Option 09.1\n:unselected:",
+            "- Inverter error tolerance (0 / 1) LV3",
+            "80"
+          ],
+          [
+            "Option 09.2\n:unselected:",
+            "- Inverter closed loop gain (15 - 125%) LV3",
+            "81"
+          ],
+          [
+            "Option 09.3 - Inverter stop time (0 - 100 seconds) LV3 :unselected:",
+            "81"
+          ],
+          [
+            "Option 09.4 - Inverter acceleration time (0-100 seconds) (60 seconds max. recommended) LV381 :unselected:"
+          ],
+          [
+            "Option 09.6\n:unselected:",
+            "- VSD2 Speed Encoder Scaler (255 - 999) LV3",
+            "82"
+          ],
+          [
+            "Option 09.7\n:unselected:",
+            "- Reserved",
+            "82"
+          ],
+          [
+            "Option 09.8\n:unselected:",
+            "- Reserved",
+            "82"
+          ],
+          [
+            "Option 14.1\n:unselected:",
+            "- Limit Relay (0 - 8) LV3",
+            "83"
+          ],
+          [
+            "Option 14.2\n:unselected:",
+            "- Oxygen and Flue Temperature Limit Relay (0 - 8) LV3",
+            "83"
+          ],
+          [
+            ":unselected:\nPPC",
+            "Option 15.0 - Modulation sensor input type (0 - 3) LV3",
+            "84"
+          ],
+          [
+            "Option 15.1",
+            "- Modulation input decimal places (0 to 2)",
+            "84"
+          ],
+          [
+            ":unselected: PPC",
+            "Option 15.2 - Modulation input zero value (-999 to +999 / -99.9 to +99.9 / -9.99",
+            "to"
+          ],
+          [
+            "+9.99) LV3",
+            "",
+            "85"
+          ],
+          [
+            "PPC",
+            "Option 15.3 - Modulation input span value (-999 to +999 / -99.9 to +99.9 / -9.99",
+            "to"
+          ],
+          [
+            "+9.99) LV3",
+            "",
+            "85"
+          ],
+          [
+            ":unselected:\nPPC",
+            "Option 15.4 - Setpoint display units (0 - 3) LV3",
+            "85"
+          ],
+          [
+            ":unselected: PPC",
+            "Option 15.5 - Boiler high safety limit (0 - 999 / 0.0 - 99.9 / 0.00 - 9.99) LV3",
+            "85"
+          ],
+          [
+            "Option 15.6",
+            "- Modulation Time (0 - 120 seconds) LV3",
+            "85"
+          ],
+          [
+            "Option 15.7\n:unselected:",
+            "- Bumpless Transfer (0 or 1) LV3",
+            "86"
+          ],
+          [
+            "Option 15.8\n:unselected:",
+            "- Low before Off (0 or 1) LV3",
+            "86"
+          ],
+          [
+            "Option 15.9\n:unselected:",
+            "- reserved",
+            "86"
+          ],
+          [
+            "Option 16.2 - Allow profile swap (0 to 16) LV3 :unselected:",
+            "87"
+          ],
+          [
+            "Option 18.1\n:unselected:",
+            "to 18.4 - Low Voltage Fail-safe Alarm / Lockout Inputs (0 - 460) LV3",
+            "91"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\nOption 19.1 to 19.4 - Fail-safe Alarm / Lockout Display Messages LV3\n93\nOption 20.0 - Set-point Select input (0 - 35) LV3\n94\nOption 20.1 - Boiler Shutdown input (0 - 35). LV3\n95\nOption 20.2 - Low Fire Hold input (0 - 35). LV3\n95\nOption 20.3 - Oxygen Trim Disable input (0 - 35). LV3\n95\nOption 20.4 - Ignition Wait input (0 - 35). LV3\n96\nOption 20.5 - Purge Hold input (0 - 35). LV3\n96\nOption 20.6 - Purge Time Start input (0 - 35). LV3\n96\nOption 20.7 - Analog Input 5 function (0 - 2). LV3\n96\nOption 20.8 - Digital Input - Lead Boiler Select (0 - 35) LV3\n97\nPPC\nOption 21.0 - Set-point 1 enable (0 - 1) LV1\n97\nPPC\nOption 21.1 - Set-point 1 control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1 97\nPPC\nOption 21.2 - Set-point 1 proportional band (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV197\nOption 21.3 - Set-point 1 integral time (0 - 999 seconds) LV1\n97\nOption 21.4 - Set-point 1 derivative time (0 - 999 seconds) LV1\n98\nPPC\nOption 21.5 - Setpoint 1 control limit type (0 - 2) LV3\n98\nOption 21.6 - Setpoint 1 low limit control value (Cut In) (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1 98\nOption 21.7 - Setpoint 1 high limit control value (Cut Out) (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV198\nOption 21.8 - Remote Setpoint 1 zero (4ma) value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\n98\nOption 21.9 - Remote Setpoint 1 span (20mA) value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\n98\nOption 22.0 - PID (set-point) 2 enable (0 - 1) LV1\n98\nOption 22.1 - Set-point 2 control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\n99\nOption 22.2 - Set-point 2 proportional band (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\n99\nOption 22.3 - Set-point 2 integral term (0 - 999 seconds) LV1\n99\nOption 22.4 - Set-point 2 derivative term (0 - 100) LV1\n99\nOption 22.5 - Setpoint 2 control limit type (0 - 2) LV3\n99\nOption 22.6 - Setpoint 2 low limit control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\n100\nOption 22.7 - Setpoint 2 high limit control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\n100\nOption 22.8 - Maximum modulation rate\n100\nOption 22.9 - Reserved\n100\nOption 23.0 - Warming Enable (0 or 1) LV1\n100\nOption 23.1 - Warming Limit (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\n100\nOption 23.2 - Warming Time (0 to 999 minutes) LV1\n100\nOptions 24.x - Sequencing\n101\nOption 24.0 Sequence Slaves (number of boilers) (0-3) LV1\n102\nOption 24.1 -24.3 Priority Number(s) LV1\n102\nOption 24.4 - Lead OFF Time LV1\n103\nOption 24.5 - Lead (master) Boiler Select Method LV1\n103\nOption 24.6 - lag (slave) On Rate (0-100%) LV1\n104\nOption 24.7 - lag (slave) On Delay (0-999 minutes) LV1\n104\nOption 24.8 - lag (slave) Off Rate (0-100%) LV3\n104\nOption 24.9 - lag (slave) Off Delay (0-999 minutes) LV3\n104\nOption 25.0 - Banking based on temperature / water temperature standby for steam boiler LV3104\nOption 25.1 - Water temperature zero value LV3\n105\nOption 25.2 - Water temperature span value LV3\n105\nOption 25.3 - Water temperature cut-in LV1\n105\nOption 25.4 - Water temperature cut-out LV1\n105\nOption 25.5 - Temperature based warming limit LV1\n105\nOption 25.6 - Lag wait time LV1\n105\nOption 28.0 - Analog Input decimals (0-2) LV3\n105\nOption 28.1 - Analog Input 1 zero (0-999) LV3\n105\nOption 28.2 - Analog Input 1 span (0-999) LV3\n105\nOption 28.3 - Analog Input 2 decimals (0-2) LV3\n105\nOption 28.4 - Analog Input 2 zero (0-999) LV3\n105\nOption 28.5 - Analog Input 2 span (0-999) LV3\n105\n7",
+      "tablas": [
+        [
+          [
+            "Option 19.1 to 19.4 - Fail-safe Alarm / Lockout Display Messages LV3",
+            "93"
+          ],
+          [
+            "Option 20.0 - Set-point Select input (0 - 35) LV3 :unselected:",
+            "94"
+          ],
+          [
+            "Option 20.1 - Boiler Shutdown input (0 - 35). LV3 :unselected:",
+            "95"
+          ],
+          [
+            "Option 20.2 - Low Fire Hold input (0 - 35). LV3 :unselected:",
+            "95"
+          ],
+          [
+            "Option 20.3 - Oxygen Trim Disable input (0 - 35). LV3 :unselected:",
+            "95"
+          ],
+          [
+            "Option 20.4 - Ignition Wait input (0 - 35). LV3 :unselected:",
+            "96"
+          ],
+          [
+            "Option 20.5 - Purge Hold input (0 - 35). LV3 :unselected:",
+            "96"
+          ],
+          [
+            "Option 20.6 - Purge Time Start input (0 - 35). LV3 :unselected:",
+            "96"
+          ],
+          [
+            "Option 20.7 - Analog Input 5 function (0 - 2). LV3 :unselected:",
+            "96"
+          ],
+          [
+            "Option 20.8 - Digital Input - Lead Boiler Select (0 - 35) LV3 :unselected:",
+            "97"
+          ],
+          [
+            ":unselected:\nPPC Option 21.0 - Set-point 1 enable (0 - 1) LV1",
+            "97"
+          ],
+          [
+            ":unselected: PPC Option 21.1 - Set-point 1 control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1 97"
+          ],
+          [
+            ":unselected: PPC :unselected: Option 21.2 - Set-point 1 proportional band (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99)",
+            "LV197"
+          ],
+          [
+            "Option 21.3 - Set-point 1 integral time (0 - 999 seconds) LV1",
+            "97"
+          ],
+          [
+            "Option 21.4 - Set-point 1 derivative time (0 - 999 seconds) LV1",
+            "98"
+          ],
+          [
+            ":unselected:\nPPC Option 21.5 - Setpoint 1 control limit type (0 - 2) LV3",
+            "98"
+          ],
+          [
+            "Option 21.6 - Setpoint 1 low limit control value (Cut In) (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1",
+            "98"
+          ],
+          [
+            "Option 21.7 - Setpoint 1 high limit control value (Cut Out) (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99)\n:unselected:",
+            "LV198"
+          ],
+          [
+            "Option 21.8 - Remote Setpoint 1 zero (4ma) value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1 :unselected:",
+            "98"
+          ],
+          [
+            "Option 21.9 - Remote Setpoint 1 span (20mA) value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1 :unselected:",
+            "98"
+          ],
+          [
+            "Option 22.0 - PID (set-point) 2 enable (0 - 1) LV1 :unselected:",
+            "98"
+          ],
+          [
+            "Option 22.1 - Set-point 2 control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1 :unselected:",
+            "99"
+          ],
+          [
+            "Option 22.2 - Set-point 2 proportional band (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1 :unselected:",
+            "99"
+          ],
+          [
+            "Option 22.3 - Set-point 2 integral term (0 - 999 seconds) LV1 :unselected:",
+            "99"
+          ],
+          [
+            "Option 22.4 - Set-point 2 derivative term (0 - 100) LV1 :unselected:",
+            "99"
+          ],
+          [
+            "Option 22.5 - Setpoint 2 control limit type (0 - 2) LV3 :unselected:",
+            "99"
+          ],
+          [
+            "Option 22.6 - Setpoint 2 low limit control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1 :unselected:",
+            "100"
+          ],
+          [
+            "Option 22.7 - Setpoint 2 high limit control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1 :unselected:",
+            "100"
+          ],
+          [
+            "Option 22.8 - Maximum modulation rate :unselected:",
+            "100"
+          ],
+          [
+            "Option 22.9 - Reserved :unselected:",
+            "100"
+          ],
+          [
+            "Option 23.0 - Warming Enable (0 or 1) LV1 :unselected:",
+            "100"
+          ],
+          [
+            "Option 23.1 - Warming Limit (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1 :unselected:",
+            "100"
+          ],
+          [
+            "Option 23.2 - Warming Time (0 to 999 minutes) LV1 :unselected:",
+            "100"
+          ],
+          [
+            "Options 24.x - Sequencing :unselected:",
+            "101"
+          ],
+          [
+            "Option 24.0 Sequence Slaves (number of boilers) (0-3) LV1 :unselected:",
+            "102"
+          ],
+          [
+            "Option 24.1 -24.3 Priority Number(s) LV1 :unselected:",
+            "102"
+          ],
+          [
+            "Option 24.4 - Lead OFF Time LV1 :unselected:",
+            "103"
+          ],
+          [
+            "Option 24.5 - Lead (master) Boiler Select Method LV1 :unselected:",
+            "103"
+          ],
+          [
+            "Option 24.6 - lag (slave) On Rate (0-100%) LV1 :unselected:",
+            "104"
+          ],
+          [
+            "Option 24.7 - lag (slave) On Delay (0-999 minutes) LV1 :unselected:",
+            "104"
+          ],
+          [
+            "Option 24.8 - lag (slave) Off Rate (0-100%) LV3 :unselected:",
+            "104"
+          ],
+          [
+            "Option 24.9 - lag (slave) Off Delay (0-999 minutes) LV3 :unselected:",
+            "104"
+          ],
+          [
+            "Option 25.0 - Banking based on temperature / water temperature standby for steam boiler LV3104 :unselected:"
+          ],
+          [
+            "Option 25.1 - Water temperature zero value LV3 :unselected:",
+            "105"
+          ],
+          [
+            "Option 25.2 - Water temperature span value LV3 :unselected:",
+            "105"
+          ],
+          [
+            "Option 25.3 - Water temperature cut-in LV1 :unselected:",
+            "105"
+          ],
+          [
+            "Option 25.4 - Water temperature cut-out LV1 :unselected:",
+            "105"
+          ],
+          [
+            "Option 25.5 - Temperature based warming limit LV1 :unselected:",
+            "105"
+          ],
+          [
+            "Option 25.6 - Lag wait time LV1 :unselected:",
+            "105"
+          ],
+          [
+            "Option 28.0 - Analog Input decimals (0-2) LV3 :unselected:",
+            "105"
+          ],
+          [
+            "Option 28.1 - Analog Input 1 zero (0-999) LV3 :unselected:",
+            "105"
+          ],
+          [
+            "Option 28.2 - Analog Input 1 span (0-999) LV3 :unselected:",
+            "105"
+          ],
+          [
+            "Option 28.3 - Analog Input 2 decimals (0-2) LV3 :unselected:",
+            "105"
+          ],
+          [
+            "Option 28.4 - Analog Input 2 zero (0-999) LV3 :unselected:",
+            "105"
+          ],
+          [
+            "Option 28.5 - Analog Input 2 span (0-999) LV3 :unselected:",
+            "105"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\nOption 28.6 - Analog Input 3 decimals (0-2) LV3\n105\nOption 28.7 - Analog Input 3 zero (0-999) LV3\n106\nOption 28.8 - Analog Input 3 span (0-999) LV3\n106\nOption 29.0 - 4-20mA Output 1 function if not VSD LV3\n106\nOption 29.1 - Output1 zero value (4mA output) LV3\n106\nOption 29.2 - Output1 span value (20mA output) LV3\n106\nOption 29.3 - 4-20mA Output 2 function if not VSD LV3\n107\nOption 29.4 - Output2 zero value (4mA output) LV3\n107\nOption 29.5 - Output2 span value (20mA output) LV3\n107\nOption 29.6 - 4-20mA Output 3 function if not VSD LV3\n107\nOption 29.7 - Output3 zero value (4mA output) LV3\n107\nOption 29.8 - Output3 span value (20mA output) LV3\n107\nOption 30.0 - Oxygen probe interface serial number LV3\n109\nOption 30.1 - Oxygen probe calibration offset value (0 - 999) LV3\n109\nOption 30.2 - Oxygen probe calibration gain value (0 - 999) LV3\n110\nOption 30.4 - Flue and inlet sensor temperature units (0 - 1) LV3\n110\nOption 30.5 - Oxygen input function (0/1) LV3\n110\nOption 30.6 - Oxygen probe calibrate enable (0 - 2) LV3\n110\nOption 30.7 - Boiler transport delay (5 - 60 seconds) LV3\n111\nOption 30.8 - Reset oxygen trim profile (0/1) LV3\n111\nOption 30.9 - Automatic trim commissioning (0 / 1) LV3\n111\nOptions 31.1 to 31.4 - Trim Type for profiles 1 to 4 (0 to 2) LV3\n113\nOption 32.0 - Trim limit default (0/1) LV3\n114\nOptions 33.1 to 33.4 - Trim integral gain (Default 10%) LV3\n114\nOption 34.0 - Trim proportional gain (0/1) LV3\n115\nOptions 34.1 to 34.4 - Trim proportional gain (0.0 - 99.9%) LV3\n115\nOption 34.5 - Calculating and entering the flow values manually LV3\n115\nOption 35.0 - Inlet temperature sensor serial number LV3\n118\nOptions 35.5 to 35.8-Calorific values of fuels/profiles 1 to 4 respectively (0.0 - 99.9) LV3\n118\nOption 35.9 - Boiler radiated heat loss (0.0 - 9.9%) LV3\n119\nOption 36.0 - Flue temperature alarm select (0/1) LV3\n119\nOptions 36.1 to 36.4 - Flue temperature low alarm values (0 - 999) LV3\n119\nOption 38.0 - Oxygen alarm select (0 - 2) LV3\n120\nOptions 38.1 to 38.4 - Oxygen low alarm values at low fire (0.0 - 99.9%) LV3\n120\nOptions 39.1 to 39.4 - Oxygen low alarm values at high fire (0.0 - 99.9%) LV3\n120\nOptions 40.1 to 40.4 - Oxygen high alarm values at low fire (0.0 - 99.9%) LV3\n120\nOptions 41.1 to 41.4 - Oxygen high alarm values at high fire (0.0 - 99.9%) LV3\n120\nOption 42.0 - Second Oxygen probe interface serial number LV3\n121\nOption 42.1 - Second Oxygen probe calibration offset value (0 - 999) LV3\n121\nOption 42.2 - Second Oxygen probe calibration gain value (0 - 999) LV3\n121\nOption 42.3 - Second Oxygen probe calibrate enable (0 - 2) LV3\n122\nOption 42.4 - Max oxygen variation (0 - 9.9 %) LV3\n122\nOption 42.5 - Max flue temp variation (0 to 999 ℃) LV3\n123\nOption 42.7 - Air pressure monitoring* - input number LV3\n123\nOption 42.8 - Air pressure monitoring* - Span LV3\n123\nOption 42.9 - Air pressure monitoring* - max error LV3\n123\nOption 43.0 - Water level / expansion unit ** LV3 - Reserved\n123\nOption 43.1 - Water level / expansion unit ** LV3 - Reserved\n123\nOption 44.0 - Set real time clock (0/1) LV1\n123\nOption 44.1 - Set Year (00 - 99) LV1\n123\nOption 44.2 - Set Month (1 - 12) LV1\n123\nOption 44.3 - Set Day of Month (1 - 31) LV1\n123\nOption 44.4 - Set Day of Week (1 - 7) LV1\n124\nOption 44.5 - Set Hours (0 - 23) LV1\n124\nOption 44.6 - Set Minutes (0 - 59) LV1\n124\nOption 44.7 - Set Seconds (0 - 59) LV1\n124\n8",
+      "tablas": [
+        [
+          [
+            "fireye Option 28.6 - Analog Input 3 decimals (0-2) LV3",
+            "105"
+          ],
+          [
+            "Option 28.7 - Analog Input 3 zero (0-999) LV3",
+            "106"
+          ],
+          [
+            "Option 28.8 - Analog Input 3 span (0-999) LV3 :unselected:",
+            "106"
+          ],
+          [
+            "Option 29.0 - 4-20mA Output 1 function if not VSD LV3 :unselected:",
+            "106"
+          ],
+          [
+            "Option 29.1 - Output1 zero value (4mA output) LV3 :unselected:",
+            "106"
+          ],
+          [
+            "Option 29.2 - Output1 span value (20mA output) LV3 :unselected:",
+            "106"
+          ],
+          [
+            "Option 29.3 - 4-20mA Output 2 function if not VSD LV3 :unselected:",
+            "107"
+          ],
+          [
+            "Option 29.4 - Output2 zero value (4mA output) LV3 :unselected:",
+            "107"
+          ],
+          [
+            "Option 29.5 - Output2 span value (20mA output) LV3 :unselected:",
+            "107"
+          ],
+          [
+            "Option 29.6 - 4-20mA Output 3 function if not VSD LV3 :unselected:",
+            "107"
+          ],
+          [
+            "Option 29.7 - Output3 zero value (4mA output) LV3 :unselected:",
+            "107"
+          ],
+          [
+            "Option 29.8 - Output3 span value (20mA output) LV3 :unselected:",
+            "107"
+          ],
+          [
+            "Option 30.0 - Oxygen probe interface serial number LV3 :unselected:",
+            "109"
+          ],
+          [
+            "Option 30.1 - Oxygen probe calibration offset value (0 - 999) LV3 :unselected:",
+            "109"
+          ],
+          [
+            "Option 30.2 - Oxygen probe calibration gain value (0 - 999) LV3 :unselected:",
+            "110"
+          ],
+          [
+            "Option 30.4 - Flue and inlet sensor temperature units (0 - 1) LV3 :unselected:",
+            "110"
+          ],
+          [
+            "Option 30.5 - Oxygen input function (0/1) LV3 :unselected:",
+            "110"
+          ],
+          [
+            "Option 30.6 - Oxygen probe calibrate enable (0 - 2) LV3 :unselected:",
+            "110"
+          ],
+          [
+            "Option 30.7 - Boiler transport delay (5 - 60 seconds) LV3 :unselected:",
+            "111"
+          ],
+          [
+            "Option 30.8 - Reset oxygen trim profile (0/1) LV3",
+            "111"
+          ],
+          [
+            "Option 30.9 - Automatic trim commissioning (0 / 1) LV3 :unselected:",
+            "111"
+          ],
+          [
+            "Options 31.1 to 31.4 - Trim Type for profiles 1 to 4 (0 to 2) LV3 :unselected:",
+            "113"
+          ],
+          [
+            "Option 32.0 - Trim limit default (0/1) LV3 :unselected:",
+            "114"
+          ],
+          [
+            "Options 33.1 to 33.4 - Trim integral gain (Default 10%) LV3 :unselected:",
+            "114"
+          ],
+          [
+            "Option 34.0 - Trim proportional gain (0/1) LV3 :unselected:",
+            "115"
+          ],
+          [
+            "Options 34.1 to 34.4 - Trim proportional gain (0.0 - 99.9%) LV3 :unselected:",
+            "115"
+          ],
+          [
+            "Option 34.5 - Calculating and entering the flow values manually LV3 :unselected:",
+            "115"
+          ],
+          [
+            "Option 35.0 - Inlet temperature sensor serial number LV3 :unselected:",
+            "118"
+          ],
+          [
+            "Options 35.5 to 35.8-Calorific values of fuels/profiles 1 to 4 respectively (0.0 - 99.9) LV3 :unselected:",
+            "118"
+          ],
+          [
+            "Option 35.9 - Boiler radiated heat loss (0.0 - 9.9%) LV3 :unselected:",
+            "119"
+          ],
+          [
+            "Option 36.0 - Flue temperature alarm select (0/1) LV3 :unselected:",
+            "119"
+          ],
+          [
+            "Options 36.1 to 36.4 - Flue temperature low alarm values (0 - 999) LV3 :unselected:",
+            "119"
+          ],
+          [
+            "Option 38.0 - Oxygen alarm select (0 - 2) LV3 :unselected:",
+            "120"
+          ],
+          [
+            "Options 38.1 to 38.4 - Oxygen low alarm values at low fire (0.0 - 99.9%) LV3 :unselected:",
+            "120"
+          ],
+          [
+            "Options 39.1 to 39.4 - Oxygen low alarm values at high fire (0.0 - 99.9%) LV3 :unselected:",
+            "120"
+          ],
+          [
+            "Options 40.1 to 40.4 - Oxygen high alarm values at low fire (0.0 - 99.9%) LV3 :unselected:",
+            "120"
+          ],
+          [
+            "Options 41.1 to 41.4 - Oxygen high alarm values at high fire (0.0 - 99.9%) LV3 :unselected:",
+            "120"
+          ],
+          [
+            "Option 42.0 - Second Oxygen probe interface serial number LV3 :unselected:",
+            "121"
+          ],
+          [
+            "Option 42.1 - Second Oxygen probe calibration offset value (0 - 999) LV3 :unselected:",
+            "121"
+          ],
+          [
+            "Option 42.2 - Second Oxygen probe calibration gain value (0 - 999) LV3 :unselected:",
+            "121"
+          ],
+          [
+            "Option 42.3 - Second Oxygen probe calibrate enable (0 - 2) LV3",
+            "122"
+          ],
+          [
+            "Option 42.4 - Max oxygen variation (0 - 9.9 %) LV3 :unselected:",
+            "122"
+          ],
+          [
+            "Option 42.5 - Max flue temp variation (0 to 999 ℃) LV3 :unselected:",
+            "123"
+          ],
+          [
+            "Option 42.7 - Air pressure monitoring* - input number LV3 :unselected:",
+            "123"
+          ],
+          [
+            "Option 42.8 - Air pressure monitoring* - Span LV3 :unselected:",
+            "123"
+          ],
+          [
+            "Option 42.9 - Air pressure monitoring* - max error LV3 :unselected:",
+            "123"
+          ],
+          [
+            "Option 43.0 - Water level / expansion unit ** LV3 - Reserved :unselected:",
+            "123"
+          ],
+          [
+            "Option 43.1 - Water level / expansion unit ** LV3 - Reserved :unselected:",
+            "123"
+          ],
+          [
+            "Option 44.0 - Set real time clock (0/1) LV1 :unselected:",
+            "123"
+          ],
+          [
+            "Option 44.1 - Set Year (00 - 99) LV1 :unselected:",
+            "123"
+          ],
+          [
+            "Option 44.2 - Set Month (1 - 12) LV1 :unselected:",
+            "123"
+          ],
+          [
+            "Option 44.3 - Set Day of Month (1 - 31) LV1 :unselected:",
+            "123"
+          ],
+          [
+            "Option 44.4 - Set Day of Week (1 - 7) LV1 :unselected:",
+            "124"
+          ],
+          [
+            "Option 44.5 - Set Hours (0 - 23) LV1 :unselected:",
+            "124"
+          ],
+          [
+            "Option 44.6 - Set Minutes (0 - 59) LV1 :unselected:",
+            "124"
+          ],
+          [
+            "Option 44.7 - Set Seconds (0 - 59) LV1 :unselected:",
+            "124"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\nOption 44.9 - Reset Fault Log (0 - 1) LV3\n124\nOption 45.0 - Erase / Restore enable (0 - 1) LV3\n124\nOption 45.1 - Erase command (0 - 5) LV3\n125\nOption 45.2 - Restore command (0 - 999) LV3\n125\n5.6\nCommission ratio mode\n126\n5.6.1\nDescription\n126\n5.6.2\nUsing commission ratio mode\n126\n5.6.3\nLeaving commission ratio mode\n128\n5.7\nAdjust ratio mode\n128\n5.7.1\nDescription\n128\n5.7.2\nEntering adjust ratio mode\n128\n5.7.3\nUsing adjust ratio mode\n129\n5.7.4\nLeaving adjust ratio mode\n130\n5.8\nInterrogating the software issue\n130\n6 Faults and fault finding\n131\n6.1\nThe fault display\n131\n6.2\nWhat to do when a fault occurs\n131\n6.3\nNon-volatile lockout\n132\n6.4\nFault subsets\n132\n6.5\nFault listing\n132\n6.6\nThe engineer's key\n139\n6.6.1\nFault history\n140\n6.6.2\nEngineer's key parameter list\n140\n6.7\nTroubleshooting\n150\n6.7.1\nDisplay / General\n150\n6.7.2\nStartup\n151\n6.7.3\nCommissioning\n151\n6.7.4\nModulation\n152\n6.7.5\nInverters\n153\n6.8\nYB110/TSD104 Fault Messages\n155\n7 Inverter (variable speed) drives\n157\n7.1\nSystem configuration\n157\n7.2\nDescription of control method\n158\n7.3\nSetting up the inverter for use with the PPC6000 series\n158\n7.4\nSetting up the PPC6000 series for use with a inverter drive\n159\n8 The oxygen trim option\n160\n8.1\nOxygen Pro probe description\n160\n8.1.1\nInstallation of oxygen probe\n160\n8.1.2\nMounting the oxygen probe\n160\n9 Appendix\n163\n9.1\nCalibrating and servicing the oxygen probe\n163\n9.1.1\nProbe calibration\n163\n9.1.2\nOxygen Probe Filter Testing\n164\n9.1.3\nRemoving the oxygen probe from the flue\n164\n9.1.4\nFilter replacement\n165\n9.1.5\nProbe mounted flue thermocouple replacement.\n165\n9.2\nTroubleshooting inverter problems\n167\n9.3\nPID Tutorial\n168\n9",
+      "tablas": [
+        [
+          [
+            "fireye Option 44.9 - Reset Fault Log (0 - 1) LV3",
+            "124"
+          ],
+          [
+            "Option 45.0 - Erase / Restore enable (0 - 1) LV3",
+            "124"
+          ],
+          [
+            "Option 45.1 - Erase command (0 - 5) LV3",
+            "125"
+          ],
+          [
+            "Option 45.2 - Restore command (0 - 999) LV3",
+            "125"
+          ],
+          [
+            "5.6 Commission ratio mode",
+            "126"
+          ],
+          [
+            "5.6.1 Description",
+            "126"
+          ],
+          [
+            "5.6.2",
+            "Using commission ratio mode",
+            "126"
+          ],
+          [
+            "5.6.3 Leaving commission ratio mode",
+            "128"
+          ],
+          [
+            "5.7 Adjust ratio mode",
+            "128"
+          ],
+          [
+            "5.7.1",
+            "Description",
+            "128"
+          ],
+          [
+            "5.7.2",
+            "Entering adjust ratio mode",
+            "128"
+          ],
+          [
+            "5.7.3",
+            "Using adjust ratio mode",
+            "129"
+          ],
+          [
+            "5.7.4",
+            "Leaving adjust ratio mode",
+            "130"
+          ],
+          [
+            "5.8 Interrogating the software issue",
+            "130"
+          ],
+          [
+            "6 Faults and fault finding",
+            "131"
+          ],
+          [
+            "6.1 The fault display",
+            "131"
+          ],
+          [
+            "6.2 What to do when a fault occurs",
+            "131"
+          ],
+          [
+            "6.3 Non-volatile lockout",
+            "132"
+          ],
+          [
+            "6.4 Fault subsets",
+            "132"
+          ],
+          [
+            "6.5 Fault listing",
+            "132"
+          ],
+          [
+            "6.6 The engineer's key",
+            "139"
+          ],
+          [
+            "6.6.1",
+            "Fault history",
+            "140"
+          ],
+          [
+            "6.6.2",
+            "Engineer's key parameter list",
+            "140"
+          ],
+          [
+            "6.7 Troubleshooting",
+            "150"
+          ],
+          [
+            "6.7.1 Display / General",
+            "150"
+          ],
+          [
+            "6.7.2",
+            "Startup",
+            "151"
+          ],
+          [
+            "6.7.3",
+            "Commissioning",
+            "151"
+          ],
+          [
+            "6.7.4",
+            "Modulation",
+            "152"
+          ],
+          [
+            "6.7.5",
+            "Inverters",
+            "153"
+          ],
+          [
+            "6.8 YB110/TSD104 Fault Messages",
+            "155"
+          ],
+          [
+            "7 Inverter (variable speed) drives",
+            "157"
+          ],
+          [
+            "7.1 System configuration",
+            "157"
+          ],
+          [
+            "7.2 Description of control method",
+            "158"
+          ],
+          [
+            "7.3 Setting up the inverter for use with the PPC6000 series",
+            "158"
+          ],
+          [
+            "7.4 Setting up the PPC6000 series for use with a inverter drive",
+            "159"
+          ],
+          [
+            "8 The oxygen trim option",
+            "160"
+          ],
+          [
+            "8.1 Oxygen Pro probe description",
+            "160"
+          ],
+          [
+            "8.1.1",
+            "Installation of oxygen probe",
+            "160"
+          ],
+          [
+            "8.1.2",
+            "Mounting the oxygen probe",
+            "160"
+          ],
+          [
+            "9 Appendix",
+            "163"
+          ],
+          [
+            "9.1 Calibrating and servicing the oxygen probe",
+            "163"
+          ],
+          [
+            "9.1.1 Probe calibration",
+            "163"
+          ],
+          [
+            "9.1.2 Oxygen Probe Filter Testing",
+            "164"
+          ],
+          [
+            "9.1.3",
+            "Removing the oxygen probe from the flue",
+            "164"
+          ],
+          [
+            "9.1.4",
+            "Filter replacement",
+            "165"
+          ],
+          [
+            "9.1.5",
+            "Probe mounted flue thermocouple replacement.",
+            "165"
+          ],
+          [
+            "9.2 Troubleshooting inverter problems",
+            "167"
+          ],
+          [
+            "9.3 PID Tutorial",
+            "168"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\n9.4\nCombustion Profile Setup Guideline\n169\n9.5\nFireye PPC6000 Efficiency Calculations\n170\n9.6\nTypical Wiring Diagrams\n172\n9.7\nOperator's Guide\n179\n9.7.1\nIntroduction\n179\n9.7.2\nGeneral\n179\n9.7.3\nPassword\n179\n9.7.4\nAdjusting Cut IN and Cut OUT\n180\n9.7.5\nManual Modulation\n181\n9.7.6\nResetting the Control\n181\n9.7.7\nFault and Fault Finding\n182\n9.7.8\nFault subsets\n182\n9.7.9\nFault listing\n183\n9.7.10\nPID Tutorial\n183\n9.7.11\nThe startup / shutdown stages are as follows:\n184\n9.7.12\nNon-volatile lockout\n187\n9.8\nFireye Nexus Combustion Curve\n188\n10 Function Block Programming Details\n189\nIntroduction to Fireye's Abacus Programming Software\n189\n1.1. Introduction\n189\n1.4.\nThe schematic toolbar\n193\n1.5. Place Function blocks\n194\n1.6.\nMoving and editing the link lines\n194\n11\nCircuit board connections\n196\n11.1\nInlet Air Temperature Sensor (Optional)\n196\n11.2\nPPC6000 Variable Speed Drive Daughter Board P/N NXDBVSD\n197\n11.3\nOxygen probe connection (optional Oxygen Probe Interface unit)\n198\n11.4\nPPC6000\n199\n10",
+      "tablas": [
+        [
+          [
+            "fireye 9.4 Combustion Profile Setup Guideline",
+            "169"
+          ],
+          [
+            "9.5 Fireye PPC6000 Efficiency Calculations",
+            "170"
+          ],
+          [
+            "9.6 Typical Wiring Diagrams",
+            "172"
+          ],
+          [
+            "9.7 Operator's Guide",
+            "179"
+          ],
+          [
+            "9.7.1 Introduction",
+            "179"
+          ],
+          [
+            "9.7.2 General",
+            "179"
+          ],
+          [
+            "9.7.3 Password",
+            "179"
+          ],
+          [
+            "9.7.4 Adjusting Cut IN and Cut OUT",
+            "180"
+          ],
+          [
+            "9.7.5 Manual Modulation",
+            "181"
+          ],
+          [
+            "9.7.6 Resetting the Control",
+            "181"
+          ],
+          [
+            "9.7.7 Fault and Fault Finding",
+            "182"
+          ],
+          [
+            "9.7.8 Fault subsets",
+            "182"
+          ],
+          [
+            "9.7.9 Fault listing",
+            "183"
+          ],
+          [
+            "9.7.10 PID Tutorial",
+            "183"
+          ],
+          [
+            "9.7.11 The startup / shutdown stages are as follows:",
+            "184"
+          ],
+          [
+            "9.7.12 Non-volatile lockout",
+            "187"
+          ],
+          [
+            "9.8 Fireye Nexus Combustion Curve",
+            "188"
+          ],
+          [
+            "10 Function Block Programming Details",
+            "189"
+          ],
+          [
+            "Introduction to Fireye's Abacus Programming Software",
+            "189"
+          ],
+          [
+            "1.1. Introduction",
+            "189"
+          ],
+          [
+            "1.4. The schematic toolbar",
+            "193"
+          ],
+          [
+            "1.5. Place Function blocks",
+            "194"
+          ],
+          [
+            "1.6. Moving and editing the link lines",
+            "194"
+          ],
+          [
+            "11 Circuit board connections",
+            "196"
+          ],
+          [
+            "11.1 Inlet Air Temperature Sensor (Optional)",
+            "196"
+          ],
+          [
+            "11.2 PPC6000 Variable Speed Drive Daughter Board P/N NXDBVSD",
+            "197"
+          ],
+          [
+            "11.3 Oxygen probe connection (optional Oxygen Probe Interface unit)",
+            "198"
+          ],
+          [
+            "11.4 PPC6000",
+            "199"
+          ]
+        ]
+      ]
+    }
+  ]
+}

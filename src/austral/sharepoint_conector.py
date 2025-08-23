@@ -45,11 +45,24 @@ def obtener_drive_id(token, site_id):
             return d["id"]
     raise Exception("No se encontró el drive")
 
-def listar_archivos(token, drive_id):
-    if SHAREPOINT_FOLDER:
-        url = f"https://graph.microsoft.com/v1.0/drives/{drive_id}/root:/{SHAREPOINT_FOLDER}:/children"
+def listar_archivos(token, drive_id, categoria=None):
+    """
+    Lista archivos en el drive de SharePoint, opcionalmente filtrando por categoría
+    Si se especifica una categoría, buscará en esa subcarpeta.
+    """
+    base_folder = SHAREPOINT_FOLDER or ""
+    
+    if categoria:
+        # Si hay una categoría, la concatenamos a la carpeta base
+        folder_path = f"{base_folder}/{categoria}".strip('/')
+        url = f"https://graph.microsoft.com/v1.0/drives/{drive_id}/root:/{folder_path}:/children"
+    elif base_folder:
+        # Si hay carpeta base pero no categoría
+        url = f"https://graph.microsoft.com/v1.0/drives/{drive_id}/root:/{base_folder}:/children"
     else:
+        # Si no hay ni carpeta base ni categoría
         url = f"https://graph.microsoft.com/v1.0/drives/{drive_id}/root/children"
+    
     headers = {"Authorization": f"Bearer {token}"}
     r = requests.get(url, headers=headers)
     r.raise_for_status()
@@ -63,11 +76,20 @@ def descargar_archivo_bytes(token, drive_id, item_id):
     return r.content  # Devuelve los bytes del archivo
 
 # Función principal para obtener archivos como diccionario de {nombre: bytes}
-def obtener_archivos_sharepoint():
+def obtener_archivos_sharepoint(categoria=None):
+    """
+    Obtiene archivos desde SharePoint, opcionalmente filtrando por categoría.
+    
+    Args:
+        categoria (str, optional): Categoría de documentos (ej. 'Mantenimiento', 'Proyectos')
+        
+    Returns:
+        list: Lista de diccionarios con información de cada archivo
+    """
     token = obtener_token()
     site_id = obtener_site_id(token)
     drive_id = obtener_drive_id(token, site_id)
-    archivos = listar_archivos(token, drive_id)
+    archivos = listar_archivos(token, drive_id, categoria)
 
     archivos_bytes = []
     for item in archivos:
@@ -78,6 +100,7 @@ def obtener_archivos_sharepoint():
                 "filename": nombre,
                 "content": contenido,
                 "id": item["id"],
-                "lastModifiedDateTime": item["lastModifiedDateTime"]
+                "lastModifiedDateTime": item["lastModifiedDateTime"],
+                "categoria": categoria or "general"  # Guardar la categoría con el archivo
             })
     return archivos_bytes

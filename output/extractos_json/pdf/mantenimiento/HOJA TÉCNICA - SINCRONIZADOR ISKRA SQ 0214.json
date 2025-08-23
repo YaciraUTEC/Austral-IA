@@ -1,0 +1,386 @@
+{
+  "archivo": "HOJA TÉCNICA - SINCRONIZADOR ISKRA SQ 0214",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Energy sector\nSQ 0114\n* Iskra\nSQ 0104\nIskra\n+\n+\nSYNC\nSYNC\nBUS BAR\n2250 58.01HZ\n2270 -00\n1-00078\nGENERATOR\nUse C\nOUGEN\nOUGEN\nSQ 0214\n# Iskra\nSQ 0204\n# Iskra\nSYNC\nSYNC\nBUS BAR\n4140 50.02Hz\n419V +000.39\nGENERATOR\nAU\nOUGEN\nAU O\nJUGEN\nSynchronisation meters for manual or\nsemiautomatic synchronisation\nSynchronization Meters SQ0114/SQ0104\nSynchronization Meters SQ0214/SQ0204\no Microprocessor processing\n· Output relay for synchronisation (pulse or continuous)\no \"Dead bus bar or generator\" functionality\no\nDual voltage and frequency display\no Power supply from bus bar or generator\no Standard 96x96 mm or 144x144 mm din housing\no Status output\nIskra®",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "2\nTechnical Documentation\nIlskra®\nPROPERTIES\no Measurement of phase difference between bus bar and\ngenerator\no Five instruments in one (SQ 0x14)\no Circular display of Ao phase difference\no Magnifield display of phase difference Ap = +20 degree\no Microprocessor processing\no Simple synchronization conditions setting\no Output relay for synchronisation (pulse or continuous)\no \"Dead busbar or generator\" functionality\no Power supply from bus bar or generator\no Standard 96x96 mm or 144x144 mm din housting\no LCD with backlight for voltage, frequency and/or Ao\nmonitoring (SQ 0x14 only)\no High immunity to EMC disturbances\nSpecial functions set with three jumpers inside the\ninstruments\no Status output\no Green led for indication of both voltages\no\nShip version (Bureau veritas certificate - SQ 02x4)\nAPPLICATION AND FUNCTIONALITY\nSynchronization meter (SQ0204, SQ0214, SQ0104 and\nSQ0114) is a microprocessor based synchronising unit. It is\nintended for a phase difference (Ap) measurement between\na bus bar and generator. It can be used in any kind of\ninstallation\nwhere a\nmanual or semi-automatic\nsynchronising is required. Circular set of 24 LEDs represents\na phase difference. A lit LED displays momentary phase\ndifference Ap with a resolution of 20°el. (red LEDs). Within\nsynchronising range +15°el., the resolution is increased to\n5°el. (green LEDs).\nSQ0214 and SQ0114 has additional LCD with backlight for a\ndisplay of a generator UGEN and bus-bar UBB voltage and both\nfrequencies fGEN and fBB or Ap.\nSQ0214 and SQ0114 can replace two voltmeters and two\nfrequency meters, which are normally part of the\nsynchronising set.\nStatus output is used to supervise the operation of a\nmicroprocessor inside synchroscope. In case of a\nmicroprocessor malfunction the status output changes state\nfrom low to high impedance.\nOPERATION AND SYNCHRONISING SETTINGS\nThe instrument samples a generator and bus bar voltages\nusing A/D converter inside a microprocessor. Both voltages\nare galvanically separated with measuring transformers. The\nmicroprocessor computes voltages, frequencies and a phase\ndifference between UGEN and UBB. The lit LED in a circular\ndisplay represents an actual phase difference from 0° (top\nposition) to +180° (bottom position).\nLCD (SQ0214 and SQ0114 only) displays voltages and\nfrequencies or phase angle. SQ can be supplied from UGEN or\nUBB side. A synchronising relay is activated when\nsynchronising conditions are set. At the instrument rear side,\nthree potentiometers are provided for adjusting basic\nsynchronising condition setting:\n· phase difference Aq;\n· voltage difference AU;\n· delay of synchronising relay switch-on (DELAY).\nA synchronising condition is set, when the phase difference\nand the voltage difference between UGEN and UBB, for a time\nof delay, are within the set limits. The synchronising check\nrelay is then switched on and a SYNC LED is lit for a preset\npulse time (e.g. 100 ms, 300 ms).\nAdditional settings are set upon customers request in a\nfactory or by authorized dealer.\nDEAD BUS BAR OR GENERATOR SYNCHRONISING\nWhen this function is set, the synchronising relay will be\nactivated and the SYNC LED will be lit, when:\n· (UGEN > 80% UNOM) AND (UBB < preset UBB noise level) or\n· (UBB > 80% UNOM) AND (UGEN < preset UGEN noise level)\nThe allowed UBB / UGEN voltage noise level is set in factory in\nrange from 10% to 40% of nominal voltage.\nWARNING:\nDetection of dead bus bar is done by a single-phase or\nphase-to-phase\nmeasurement.\nAt phase\nto\nphase\nsynchronisation, additional check of other phases is essential\nbefore using that function.\nOVER AND UNDER FREQUENCY SYNCHRONISING\nThis option offers more precise synchronising if the\ninformation, whether the generator frequency is falling or\nrising towards the bus-bar frequency, is available.\nIf the Ao window is set asymmetrically to + Ao only\nsynchronising when the lower generator frequency is rising\ntowards bus bar frequency is possible (under frequency\nsynchronising).\nIf the Ao window is set asymmetrically to -Ap only\nsynchronising when the higher generator frequency is falling\ntowards bus bar frequency is possible (over frequency\nsynchronising).\nT\nSQ0114/0104 & SQ0214/0204 Synchronization Meters",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Technical Documentation\nRELATIVE VOLTAGE DISPLAY ON LCD (SQ0214 AND\nSQ0114 ONLY)\nThis option enables display of a voltage (UBB and UGEN)\nrelative to the actual measured voltage (e.g. if actual\nmeasured nominal voltage UN is 400 V, the displayed\nnominal voltage ULCDN can be set to any voltage in range from\n30 V to 800 kV). LCD resolution depends on measuring range.\nRange\nResolution\n30 V to 800 V\n1 V\n0.81 kV to 8.00 kV\n10 V\n8.1 kV to 80.0 kV\n100 V\n81 kV to 800 kV\n1 kV\nULCD = k x U\n30V / U < k < 8×105 V/ U\nLENGTH OF A SYNC PULSE\nThis value should be set according to the time characteristic\nof an external circuit breaker. It can be set to any value from\n0.1 s to 1 s in 0.1 s steps.\nFor special purposes it can be set to continuous. With this\nsetting enabled, the synchronising relay and the SYNC LED\nwill be activated as long as the basic synchronising\nconditions are met:\n· UBB - UGEN phase difference inside the phase window\n· UBB - UGEN voltage difference inside the setting range\nDEAD BUS BAR / GENERATOR VOLTAGE NOISE LEVEL\nSETTING\nNoise on the line, when BB bar or generator is dead, can\nprevent dead bus bar / generator synchronising. Noise\nrejection level can be set to 10%, 20%, 30% or 40% of\nnominal voltage.\nSUPPLY AND PROPER OPERATION\nSQ is energized from a bus bar and generator input. For a\nproper operation at least one input voltage is required to\nexceed 80% of a nominal voltage.\nskra\nTEHNICAL DATA\nINPUT VOLTAGE\nNominal voltage Un\n(UL-N to ground 400 VMAX.)\n57.7 V, 63.5 V, 100 V ,110 V, 115 V,\n120 V, 220 V, 230 V, 380 V, 400 V,\n415 V, 440 V, 480 V, 500 V, 690 V\nVoltage range\nUn + 20 % (UL-N = 400 VMAX)\nFrequency range\n40 ... 70 Hz\nSelf consumption\n< 4 VA\nOverload\ncont. 1.2 x Un\nshort 2 x Un, 3s\nMEASURING PART\nResolution of Ap display\n20 °el.\nMagnified resolution range\n+ 15 °el.\nMagnified resolution\n5 °el.\nAccuracy at Ap = 0\n+ 3 °el.\nLCD QUANTITIES ACCURACY (SQ0214 AND SQ0114)\nVoltage (UGEN, UBB)\n1.5 %\nFrequency (fGEN, fBB)\n0.5 %\nPhase difference between Ugen and Ubb\n+ 3 °el.\nSYNCHRONISING PART\nVoltage difference setting range\n1 ... 10 %\nAccuracy\n= 2,5 %\nPhase difference setting range\n2 ... 20 °el.\nAccuracy\n+ 3 °el.\nSwitch-on delay time range\n0,1 ... 1 s\nAccuracy\n+ 10 %\nSynchronising pulse duration\nContinuous\n300 ms (default)\nAdjuststabel from 100 ms to 1 s)\nAccuracy\n+ 30ms\nRelay\n250 V, 1 A, 50 Hz, 250 VA\nLED DISPLAY\nRed LED's visual angle\n+ 80 °\nGreen LED's visual angle\n= 30°\nLuminosity\n2500 mcd\nSTATUS OUTPUT\nType\nOpen-collector\nMax. voltage\n24 Vdc + 20%\nMax. current\n30 mA\nHOUSING\nMaterial of housing\nPC/ABS Uninflammable, according to UL 94 V-0\nEnclosure protection\nIP20 for terminals with protective cover\nIP52 for case,\nSafety\nAccording to EN 61 010-1\n400 V, installation category III\nWeight\nPollution degree 2\n0.53 kg (SQ02x4)\n0.60 kg (SQ01x4)\nENVIRONMENTAL CONDITIONS\nTemperature:\nReference temperature\n0 ... 50 °C\nOperating temperature\n-20 ... 55 ℃\nStoring temperature\n-40 ... 70 ℃\nRelative humidity\nUp to 95% (without condensing)\nNOTE!\nSQ should not be directly exposed to the sun.\nSQ0114/0104 & SQ0214/0204 Synchronization Meters\n3",
+      "tablas": [
+        [
+          [
+            "Range",
+            "Resolution"
+          ],
+          [
+            "30 V to 800 V",
+            "1 V"
+          ],
+          [
+            "0.81 kV to 8.00 kV",
+            "10 V"
+          ],
+          [
+            "8.1 kV to 80.0 kV",
+            "100 V"
+          ],
+          [
+            "81 kV to 800 kV",
+            "1 kV"
+          ]
+        ],
+        [
+          [
+            "TEHNICAL DATA",
+            ""
+          ],
+          [
+            "INPUT VOLTAGE",
+            "",
+            ""
+          ],
+          [
+            "Nominal voltage Un",
+            "",
+            ""
+          ],
+          [
+            "(UL-N to ground 400 VMAX.)",
+            "57.7 V, 63.5 V,",
+            "100 V ,110 V, 115 V,"
+          ],
+          [
+            "",
+            "120 V, 220 V, 230 V, 380 V, 400 V,"
+          ],
+          [
+            "",
+            "415 V, 440 V, 480 V, 500 V, 690 V"
+          ],
+          [
+            "Voltage range",
+            "Un + 20",
+            "% (UL-N = 400 VMAX)"
+          ],
+          [
+            "Frequency range",
+            "",
+            "40 ... 70 Hz"
+          ],
+          [
+            "Self consumption",
+            "",
+            "< 4 VA"
+          ],
+          [
+            "Overload",
+            "",
+            "cont. 1.2 x Un"
+          ],
+          [
+            "",
+            "",
+            "short 2 x Un, 3s"
+          ],
+          [
+            "MEASURING PART",
+            "",
+            ""
+          ],
+          [
+            "Resolution of Ap display",
+            "",
+            "20 °el."
+          ],
+          [
+            "Magnified resolution range",
+            "",
+            "+ 15 °el."
+          ],
+          [
+            "Magnified resolution",
+            "",
+            "5 °el."
+          ],
+          [
+            "Accuracy at Ap = 0",
+            "",
+            "+ 3 °el."
+          ],
+          [
+            "LCD QUANTITIES ACCURACY (SQ0214 AND SQ0114)"
+          ],
+          [
+            "Voltage (UGEN, UBB)",
+            "",
+            "1.5 %"
+          ],
+          [
+            "Frequency (fGEN, fBB)",
+            "",
+            "0.5 %"
+          ],
+          [
+            "Phase difference between Ugen and Ubb",
+            "+ 3 °el."
+          ],
+          [
+            "SYNCHRONISING PART",
+            "",
+            ""
+          ],
+          [
+            "Voltage difference setting",
+            "range",
+            "1 ... 10 %"
+          ],
+          [
+            "Accuracy",
+            "",
+            "= 2,5 %"
+          ],
+          [
+            "Phase difference setting range",
+            "",
+            "2 ... 20 °el."
+          ],
+          [
+            "Accuracy",
+            "",
+            "+ 3 °el."
+          ],
+          [
+            "Switch-on delay time range",
+            "",
+            "0,1 ... 1 s"
+          ],
+          [
+            "Accuracy",
+            "",
+            "+ 10 %"
+          ],
+          [
+            "Synchronising pulse duration",
+            "",
+            "Continuous"
+          ],
+          [
+            "",
+            "",
+            "300 ms (default)"
+          ],
+          [
+            "",
+            "Adjuststabel from 100 ms to 1 s)"
+          ],
+          [
+            "Accuracy",
+            "",
+            "+ 30ms"
+          ],
+          [
+            "Relay",
+            "250 V,",
+            "1 A, 50 Hz, 250 VA"
+          ],
+          [
+            "LED DISPLAY",
+            "",
+            ""
+          ],
+          [
+            "Red LED's visual angle",
+            "",
+            "+ 80 °"
+          ],
+          [
+            "Green LED's visual angle",
+            "",
+            "= 30°"
+          ],
+          [
+            "Luminosity",
+            "",
+            "2500 mcd"
+          ],
+          [
+            "STATUS OUTPUT",
+            "",
+            ""
+          ],
+          [
+            "Type",
+            "",
+            "Open-collector"
+          ],
+          [
+            "Max. voltage",
+            "",
+            "24 Vdc + 20%"
+          ],
+          [
+            "Max. current",
+            "",
+            "30 mA"
+          ],
+          [
+            "HOUSING",
+            "",
+            ""
+          ],
+          [
+            "Material of housing PC/ABS Uninflammable, according to UL 94 V-0"
+          ],
+          [
+            "Enclosure protection",
+            "",
+            "IP52 for case,"
+          ],
+          [
+            "IP20 for terminals with protective cover"
+          ],
+          [
+            "Safety",
+            "According to EN 61 010-1"
+          ],
+          [
+            "",
+            "400 V, installation category III"
+          ],
+          [
+            "Weight",
+            "",
+            "Pollution degree 2 0.53 kg (SQ02x4) 0.60 kg (SQ01x4)"
+          ],
+          [
+            "ENVIRONMENTAL CONDITIONS",
+            ""
+          ],
+          [
+            "Temperature:",
+            "",
+            ""
+          ],
+          [
+            "Reference temperature\nOperating temperature",
+            "",
+            "0 ... 50 °C\n-20 ... 55 ℃"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Technical Documentation\nskra\nCONNECTION\nSISTEM\nPhase to phase connection:\nPhase to neutral connection:\nSYNC.\nGEN\nBUS BAR\nSYNC.\nGEN\nBUS BAR\n4\n3\n2\n1\n4\n3\n2\n1\n6\n5\nL2\nL1\nL2\nL1\n6\n5\nL\nN\nN\nGEN\n-\nUS !\nK1\n-0\n-L3\nL2\n-L1\n.\nGEN.\n-\nUs !\nK1\nL\nN\nDIMENSIONAL DRAWING:\nExternal dimensions of SQ0204 and SQ0214 in mm:\n43\nmax 40mm\n. 5.5\nDELAY\nExternal dimensions of SQ0104 and SQ0114 in mm:\n43\nmax 40 mm 8\nDELAY\n-\n.-\n06 0\n1\n0\n092 .0.8\n1136\n060\n--\n=\n10\n28\n53\n81\n96\nCONNECTION TERMINALS:\nTerminal No.\nSignal symbol\nSignal name\n1\nL11 or N2\nBUS bar voltage\n2\nL21 or L12\n3\nL11 or N2\nGenerator voltage\n4\nL21 or L12\n5\nSYNC.\nRelay output\n6\nSYNC.\n7\nSTATUS\nStatus output\n8\nSTATUS\nWARNING:\nWhen a synchronising is done by a single phase\nmeasurement\n(3-phase\nsystem,\nphase\nto neutral\nconnection), a proper connection of the other two phases is\nessential.\nA CE\n10\n22\n53\n75\n144\nDATA FOR ORDERING\nWhen ordering the SQ, all required specifications shall be\nstated in compliance with the ordering code. Also additional\ninformation could be stated. Most typical options are shown\nas an example.\nEXAMPLE OF ORDERING\nSQ in 96 x 96 mm housing, with LCD, phase to phase nominal\nvoltage 400 V, 300 ms relay output, Dead BB bar function\n(Dbb+Dgn) with an offset of 20% Un, standard +/- Ap setting\nand voltage display 28 kV at 400 V input.\nSQ0214 L 400V R3 N 6 S A 28 kV/400 V\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\nDisplay: Default value +/- 2 ... 20 el. *\n|\n|\n|\n28 kV at 400 V input\n|\nFinish: Standard\n|\n|\n|\n|\nDead Busbar Function: DG+DB 20% Un\n|\n|\n|\n1\nStatus output: No *\n|\n|\nRelay output: Impulse 300 ms - Fixed*\n|\n|\n1\nNominal voltage: 400 V\n|\nType of connection: phase to phase\nType: SQ0214\n4\nSQ0114/0104 & SQ0214/0204 Synchronization Meters",
+      "tablas": [
+        [
+          [
+            "Phase to phase connection:",
+            "Phase to neutral connection:"
+          ],
+          [
+            "SYNC.",
+            "GEN BUS BAR",
+            "SYNC.",
+            "",
+            "GEN BUS BAR"
+          ],
+          [
+            "",
+            "4 3",
+            "2",
+            "1",
+            "",
+            "4",
+            "3",
+            "2 1"
+          ],
+          [
+            "6 5",
+            "L2 L1",
+            "L2",
+            "L1",
+            "6 5",
+            "L",
+            "N",
+            "N"
+          ],
+          [
+            "GEN - US !\n:selected:",
+            "K1 -0",
+            "",
+            "-L3 L2 -L1",
+            ".\n- Us !\n:selected:",
+            "GEN.\nK1 L N"
+          ]
+        ],
+        [
+          [
+            "Terminal No.",
+            "Signal symbol",
+            "Signal name"
+          ],
+          [
+            "1",
+            "L11 or N2",
+            "BUS bar voltage"
+          ],
+          [
+            "2",
+            "L21 or L12"
+          ],
+          [
+            "3",
+            "L11 or N2",
+            "Generator voltage"
+          ],
+          [
+            "4",
+            "L21 or L12"
+          ],
+          [
+            "5",
+            "SYNC.",
+            "Relay output"
+          ],
+          [
+            "6",
+            "SYNC."
+          ],
+          [
+            "7",
+            "STATUS",
+            "Status output"
+          ],
+          [
+            "8",
+            "STATUS"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Technical Documentation\nType\nType of\nconnection\nskra\n®\nVoltage Inputs\nRelay Output\nStatus output\nDead Busbar or\ngenerator function\nDelta phi setting\nFinish\n(SQ 0x14 only)\nDisplay\nX\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\nSQ0104\nSQ0104\nSQ0114\nSQ0114\nSQ0204\nSQ0204\nSQ0214\nSQ0214\nX\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n440 V\n440 V\n|\n480 V\n480 V\n|\n500 V\n500 V\n|\n690 V\n690 V\nL\nPhase to Phase\nN\nPhase to Neutral\nX\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n--\n57.7 V\n57.7 V\n63.5 V\n63.5 V\n100 V\n100 V\n110 V\n110 V\n115 V\n115 V\n120 V\n120 V\n220 V\n220 V\n230 V\n230 V\n380 V\n380 V\n400 V\n400 V\n415 V\n415 V\nX\nX\nX\nX\nX\nX\n|\n|\n|\n|\n|\n0\nDefault (displayed value equal to voltage input)\n|\n|\n|\n|\n|\nX\nOther displayed value - to be specified with order\n|\n|\n|\n|\nA\nStandard\n|\n|\n|\n|\nH\nHVE (tropical)\n|\n|\n|\n|\nS\nShip\n|\n|\n|\n|\nP\nIP54\n|\n|\n|\n|\nG\nHVE (tropical) + IP54\n|\n|\n|\n|\nR\nShip + IP54\n|\n|\n|\n|\nT\nShip + HVE (tropical)\n|\n|\n|\nS\nDefault value +/- 2 ... 20 el. *\n|\n|\n|\nV\nSetting range + 2 ... 20 el.\n|\n|\n|\nU\nSetting range - 2 ... 20 el.\n|\n|\nN\nNone *\n|\n|\n1\nDB 10% Un\n|\n|\n2\nDB 20% Un\n|\n|\n3\nDB 30% Un\n|\n|\n4\nDB 40% Un\n|\n|\n5\nDG+DB 10% Un\n|\n|\n6\nDG+DB 20% Un\n|\n|\n7\nDG+DB 30% Un\n|\n|\n8\nDG+DB 40% Un\n|\nN\nNo *\n|\nS\nYes\nRO\nWithout\nRC\nContinual Impulse\nR3\nImpulse 300 ms - Fixed*\n01\nImpulse 100 ms\n02\nImpulse 200 ms\n03\nImpulse 300 ms\n04\nImpulse 400 ms\n05\nImpulse 500 ms\n|\n06\n|\nImpulse 600 ms\n07\nImpulse 700 ms\n08\nImpulse 800 ms\n09\nImpulse 900 ms\n10\nImpulse 1000 ms\nSQ0114/0104 & SQ0214/0204 Synchronization Meters\nT\n5",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Technical Documentation\nskra\nNOTES:\n6\nSQ0114/0104 & SQ0214/0204 Synchronization Meters",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Printed in Slovenia . Subject to change without notice · Version 2.00 / Jul-2016 . GB P 22.480.850\nIskra®\nIskra, d.d.\nStegne 21\nSI-1000 Ljubljana\nSlovenia\nTel .: +386 1 51 31 000\nFax: +386 1 51 11 532\nwww.iskra.eu\ninfo@iskra.eu",
+      "tablas": []
+    }
+  ]
+}

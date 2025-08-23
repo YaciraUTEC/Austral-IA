@@ -1,0 +1,357 @@
+{
+  "archivo": "10043213 - Manual-Victron-Phoenix-Smart-1600VA-3000VA_p11_20",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "EN\nNL\nFR\n4.3 DC safety fuse\nThere is no safety fuse inside the inverter; this should be installed externally. The\nrecommended safety fuses can be found in the table below\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nRecommended\nDC fuse\n250A\n125A\n60A\n300A\n150A\n80A\n12/3000\n24/3000\n48/3000\nRecommended\nDC fuse\n400A\n250A\n125A\nDE\nES\nSE\nAppendix\nvictron energy\n9",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended DC fuse",
+            "250A",
+            "125A",
+            "60A",
+            "300A",
+            "150A",
+            "80A"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended DC fuse",
+            "400A",
+            "250A",
+            "125A"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "4.4 Connection of the AC cabling\nThis is a Safety Class I product (supplied with a protective grounding\nterminal).\nThe neutral wire of the AC output of this inverter is connected to the\nchassis (see appendix B for 1600VA/2000VA and appendix C for\n3000VA).\n?\nThis is to ensure proper functioning of a GFCI (or RCCB) to be installed in the\nAC output of the Inverter.\nThe chassis of the product must be connected to ground, to the frame (of a\nvehicle) or the ground plate or hull (of a boat).\nProcedure\nThe terminal points are indicated clearly. From left to right: \"L\" (phase), \"N\" (neutral) and \"PE\"\n(earth).\n4.5 Optional Connections\nA number of optional connections are possible:\n4.5.1 Remote on/off switch & remote Control panel\nThe product can be remotely controlled in three ways.\n-\nWith a smart phone (iOS or Android) and the Victron Connect app.\n-\nWith an external switch (connected to the two pole remote connector). Operates only if\nthe switch on the Inverter is set to \"on\".\n-\nWith a Phoenix Inverter Control VE.Direct panel (connected to the two pole remote\nconnector; see appendix A). Operates only if the switch on the inverter is set to \"on\".\n4.5.2. Programmable relay\nThe inverters are equipped with a multi-functional relay that by default is programmed in the\nnormal operation mode. (VictronConnect software needed to change relay functionality). The\ndifferent relay modes can be summerized as follows:\n-\nNormal operation (\"inverter\" in VictronConnect app) - default\nRelay closed during normal operation, and open when the inverter has switched off itself\nin alarm, has been switched off by a user and also open (of course) when there is no\npower available on the terminals, ie. battery disconnected. In ECO mode, the relay will\nbe closed both when searching for a load and when fully on, ie. load detected.\nUse this option when you want the relay to signal that there is power available on the\noutput of the inverter.\n-\nWarnings and alarms (\"alarm\" in VictronConnect app)\nSimilar to above, but then the relay will also open when there is a warning. For example\nbecause the battery voltage dropped to the cut-off value, or when loaded to the point\nwhere it will almost shut down due to overload. In ECO mode, the relay will be closed\nboth when searching (no load) and when fully on (load detected), except when there is a\nwarning.\n-\nUse this option when you want the relay to signal that it is time to do something (charge\nthe battery, reduce the load, and-so-forth), in order to prevent a power outage.\nLow battery (\"Low battery\" in VictronConnect app)\n10\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Relay on during normal operation. The relay will switch off once there is a low\nbattery warning. It will remain off in case the inverter shuts down due to low voltage,\nand will only switch back on again once the inverter is operational and the battery\nvoltage is above the pre-alarm reset level. Use this option for load shedding, or to\nautomatically start a generator. Note that this can only be considered a poor-mans\ngenerator start/stop. For more and better options, see here.\n-\nExternal fan (\"fan\" in VictronConnect app)\nRelay is off, unless the fan inside the inverter is running. Use this option to switch an\nexternal fan, for situations when the inverter is in a small enclosed space.\nDisabled relay (\"off\" in VictronConnect app)\n-\nThis option sets the relay in the OPEN position. Use this option if you do not plan to\nuse the relay function.\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\nvictron energy\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "5. CONFIGURATION\nSettings may only be changed by a qualified engineer.\nCarefully read the instructions before changes are made.\nBatteries should be placed in a dry and well-ventilated area during charging.\n!\n5.1 Standard settings: ready for use\nOn delivery, the Phoenix inverter is set to standard factory values. In general, these settings\nare suitable for stand-alone operation.\nStandard factory settings\nInverter frequency\n50 Hz\n230 VAC\nInverter voltage\nSearch mode\noff\nProgrammable relay\nalarm function\nDynamic cut-off\noff\n5.2 Explanation of settings\nInverter frequency\nOutput frequency\nAdjustability: 50Hz; 60Hz\nInverter voltage\nAdjustability: 210 - 245V\nECO Mode\nIf ECO mode is 'on', the power consumption in no-load operation is decreased by approx.\n80 ... 90%. In this mode the Phoenix Inverter Smart, when operating in inverter mode, is\nswitched off in case of no load or very low load, and switches on every two and a half seconds\nfor a short period (adjustable). If the output current exceeds a set level, the inverter will\ncontinue to operate. If not, the inverter will shut down again.\nThe ECO Mode can be set with the push button on the front of the inverter.\nThe ECO Mode \"shut down\" and \"remain on\" load levels can be set with Victron Connect .\nThe factory settings are:\nShut down: 50 Watt (linear load).\nTurn on: 100 Watt (linear load).\nProgrammable relay\nBy default, the programmable relay is set as an alarm relay, i.e. the relay will de-energise in\nthe event of an alarm or a pre-alarm (inverter almost too hot, ripple on the input almost too\nhigh, battery voltage almost too low).\n12\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Dynamic Cut-off\nUse VictronConnect to enable and configure Dynamic Cut-off (see\nEN\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-dynamic-cutoff for details).\nDo not use Dynamic Cut-off in an installation that also has other loads connected to the\nsame battery: the battery voltage will drop because of the extra load, but the Dynamic\nCut-off algorithm in the Inverter is not aware of that load: hence the Inverter will shut\ndown too early with an under voltage alarm.\nNL\n5.3 Configuration by computer\nFR\nAll settings can be changed by means of a smartphone, tablet or computer\nDE\nFor changing settings with a smartphone or tablet, the following is required:\n- VictronConnect software: can be downloaded free of charge at www.victronenergy.com.\nFor changing settings with the computer, the following is required:\n- VictronConnect software: can be downloaded free of charge at www.victronenergy.com.\nES\n- A VE.Direct to USB interface.\nSE\n6. MAINTENANCE\nThe Phoenix Inverter Smart does not require specific maintenance. It will suffice to check\nall connections once a year. Avoid moisture and oil/soot/vapours, and keep the device\nclean.\nAppendix\nvictron energy\n13",
+      "tablas": [
+        [
+          [
+            "Dynamic Cut-off",
+            ""
+          ],
+          [
+            "Use VictronConnect to enable and configure Dynamic Cut-off (see",
+            "EN"
+          ],
+          [
+            "https://www.victronenergy.com/live/ve.direct:phoenix-inverters-dynamic-cutoff for details).",
+            ""
+          ],
+          [
+            "Do not use Dynamic Cut-off in an installation that also has other loads connected to the same battery: the battery voltage will drop because of the extra load, but the Dynamic Cut-off algorithm in the Inverter is not aware of that load: hence the Inverter will shut down too early with an under voltage alarm.",
+            "NL"
+          ],
+          [
+            "5.3 Configuration by computer",
+            "FR"
+          ],
+          [
+            "All settings can be changed by means of a smartphone, tablet or computer",
+            ""
+          ],
+          [
+            "For changing settings with a smartphone or tablet, the following is required:",
+            "DE"
+          ],
+          [
+            "- VictronConnect software: can be downloaded free of charge at www.victronenergy.com.",
+            ""
+          ],
+          [
+            "For changing settings with the computer, the following is required: - VictronConnect software: can be downloaded free of charge at www.victronenergy.com.",
+            "ES"
+          ],
+          [
+            ""
+          ],
+          [
+            "- A VE.Direct to USB interface.",
+            ""
+          ],
+          [
+            "SE"
+          ],
+          [
+            ""
+          ],
+          [
+            "6. MAINTENANCE",
+            ""
+          ],
+          [
+            "The Phoenix Inverter Smart does not require specific maintenance. It will suffice to check all connections once a year. Avoid moisture and oil/soot/vapours, and keep the device",
+            "Appendix"
+          ],
+          [
+            "clean."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "7. Technical data\n12 Volt\nPhoenix Inverter Smart\n24 Volt\n48 Volt\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\n12/3000\n24/3000\n48/3000\nParallel and 3-phase operation\nNo\nINVERTER\nInput voltage range (1)\n9,3 - 17V\n18,6 - 34V\n37,2 - 68V\nOutput\nOutput voltage: 230VAC +2% 50 Hz or 60Hz + 0,1% (1)\nCont. output power at 25ºC (2)\n1600VA\n2000VA\n3000VA\nCont. output power at 25ºC\n1300W\n1600W\n2400W\nCont. output power at 40ºC\n1200W\n1450W\n2200W\nCont. output power at 65ºC\n800W\n1000W\n1700W\nPeak power\n3000VA\n4000VA\n6000VA\nDynamic (load dependent) DC low shut down\n(fully configurable)\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-\nDynamic cut-off, see\ndynamic-cutoff\nMax. efficiency 12/ 24 /48 V\n92/94/94 %\n92/94/94 %\n93/94/95%\nZero load power 12 / 24 / 48 V\n8/9/11 W\n8/9/11 W\n12/13/15 W\nZero load power in ECO mode\n0,6/1,3/2,1 W\n0,6/1,3/2,1 W\n1,5/1,9/2,8 W\nGENERAL\nProgrammable relay (2)\nYes\nStop & start power ECO-mode\nadjustable\nProtection (3)\na - g\nBluetooth wireless communication\nFor remote monitoring and system integration\nVE.Direct communication port\nFor remote monitoring and system integration\nRemote on-off\nYes\nCommon Characteristics\nOperating temperature range: - 40 to +65ºC (fan assisted cooling)\nHumidity (non-condensing): max 95%\nENCLOSURE\nCommon Characteristics\nMaterial & Colour: steel (blue RAL 5012; and black RAL 9017)\nProtection category: IP 21\nBattery-connection\nM8 bolts\nM8 bolts\n2+2 M8 bolts\n230 V AC-connection\nScrew terminals\nWeight\n12kg\n13kg\n19kg\nDimensions (hxwhd)\n485 x 219 × 125mm\n485 x 219 x 125mm\n533x285x150mm (12V)\n485×285×150mm (24/28V)\nSTANDARDS\nSafety\nEN-IEC 60335-1\nEmission Immunity\nEN 55014-1 / EN 55014-2 / EN-IEC 61000-6-1\nEN-IEC 61000-6-2 / EN-IEC 61000-6-3\nAutomotive Directive\nECE R10-5\n1) Non-linear load, crest factor 3:1\n3) Protection key:\n2) Programmable relay that can a.o. be set for general\nalarm, DC under voltage or genset start/stop function.\na) output short circuit\nb) overload\nc) battery voltage too high\nAC rating: 230 V / 3 A\nd) battery voltage too low\nDC rating: 3 A up to 30 VDC, 0.2A up to 70 VDC\ne) temperature too high\nf) 230 V AC on inverter output\ng) input voltage ripple too high\n14\nvictron energy",
+      "tablas": [
+        [
+          [
+            "12 Volt Phoenix Inverter Smart 24 Volt 48 Volt",
+            "12/1600 24/1600 48/1600",
+            "12/2000 24/2000 48/2000",
+            "12/3000 24/3000 48/3000"
+          ],
+          [
+            "Parallel and 3-phase operation",
+            "",
+            "No",
+            ""
+          ],
+          [
+            "INVERTER",
+            ""
+          ],
+          [
+            "Input voltage range (1)",
+            "9,3 - 17V",
+            "18,6 - 34V 37,2",
+            "- 68V"
+          ],
+          [
+            "Output",
+            "Output voltage: 230VAC +2% 50 Hz or 60Hz + 0,1% (1)"
+          ],
+          [
+            "Cont. output power at 25ºC (2)",
+            "1600VA",
+            "2000VA",
+            "3000VA"
+          ],
+          [
+            "Cont. output power at 25ºC",
+            "1300W",
+            "1600W",
+            "2400W"
+          ],
+          [
+            "Cont. output power at 40ºC",
+            "1200W",
+            "1450W",
+            "2200W"
+          ],
+          [
+            "Cont. output power at 65ºC",
+            "800W",
+            "1000W",
+            "1700W"
+          ],
+          [
+            "Peak power",
+            "3000VA",
+            "4000VA",
+            "6000VA"
+          ],
+          [
+            "Dynamic (load dependent) DC low shut down (fully configurable)",
+            "",
+            "https://www.victronenergy.com/live/ve.direct:phoenix-inverters- Dynamic cut-off, see dynamic-cutoff"
+          ],
+          [
+            "Max. efficiency 12/ 24 /48 V",
+            "92/94/94 %",
+            "92/94/94 %",
+            "93/94/95%"
+          ],
+          [
+            "Zero load power 12 / 24 / 48 V",
+            "8/9/11 W",
+            "8/9/11 W",
+            "12/13/15 W"
+          ],
+          [
+            "Zero load power in ECO mode",
+            "0,6/1,3/2,1 W",
+            "0,6/1,3/2,1 W",
+            "1,5/1,9/2,8 W"
+          ]
+        ],
+        [
+          [
+            "",
+            "GENERAL",
+            "",
+            ""
+          ],
+          [
+            "Programmable relay (2)",
+            "",
+            "Yes",
+            ""
+          ],
+          [
+            "Stop & start power ECO-mode",
+            "",
+            "adjustable",
+            ""
+          ],
+          [
+            "Protection (3)",
+            "",
+            "a - g",
+            ""
+          ],
+          [
+            "Bluetooth wireless communication",
+            "For remote monitoring and system integration"
+          ],
+          [
+            "VE.Direct communication port",
+            "For remote monitoring and system integration"
+          ],
+          [
+            "Remote on-off",
+            "Yes"
+          ],
+          [
+            "Common Characteristics",
+            "Operating temperature range: - 40 to +65ºC (fan assisted cooling) Humidity (non-condensing): max 95%"
+          ],
+          [
+            "",
+            "ENCLOSURE"
+          ],
+          [
+            "Common Characteristics",
+            "Material & Colour: steel (blue RAL 5012; and black RAL 9017) Protection category: IP 21"
+          ],
+          [
+            "Battery-connection",
+            "M8 bolts",
+            "M8 bolts",
+            "2+2 M8 bolts"
+          ],
+          [
+            "230 V AC-connection",
+            "",
+            "Screw terminals",
+            ""
+          ],
+          [
+            "Weight",
+            "12kg",
+            "13kg",
+            "19kg"
+          ],
+          [
+            "Dimensions (hxwhd)",
+            "485 x 219 × 125mm",
+            "485 x 219 x 125mm",
+            "533x285x150mm (12V) 485×285×150mm (24/28V)"
+          ]
+        ],
+        [
+          [
+            "STANDARDS"
+          ],
+          [
+            "Safety",
+            "EN-IEC 60335-1"
+          ],
+          [
+            "Emission Immunity",
+            "EN 55014-1 / EN 55014-2 / EN-IEC 61000-6-1 EN-IEC 61000-6-2 / EN-IEC 61000-6-3"
+          ],
+          [
+            "Automotive Directive",
+            "ECE R10-5"
+          ],
+          [
+            "1) Non-linear load, crest factor 3:1",
+            "3) Protection key:"
+          ],
+          [
+            "2) Programmable relay that can a.o. be set for general alarm, DC under voltage or genset start/stop function.",
+            "a) output short circuit b) overload"
+          ],
+          [
+            "AC rating: 230 V / 3 A",
+            "c) battery voltage too high"
+          ],
+          [
+            "DC rating: 3 A up to 30 VDC, 0.2A up to 70 VDC",
+            "d) battery voltage too low\ne) temperature too high f) 230 V AC on inverter output g) input voltage ripple too high"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "1. VEILIGHEIDSINSTRUCTIES\nAlgemeen\nEN\nGelieve op de hoogte te zijn van deze veiligheidskenmerken en instructies door eerst de\nmeegeleverde documentatie bij dit product goed te lezen voordat u de apparatuur in\ngebruik gaat nemen. Dit product is ontworpen en getest in overeenstemming met\ninternationale normen. De apparatuur mag uitsluitend worden gebruikt voor het doel\nwaarvoor deze is ontworpen.\nNL\nFR\nWAARSCHUWING: GEVAAR VOOR ELEKTRISCHE SCHOKKEN.\nHet product wordt in combinatie met een permanente energiebron (batterij) gebruikt.\nIngangs- en / of uitgangsklemmen kunnen nog steeds gevaarlijk onder stroom staan,\nzelfs als de apparatuur is uitgeschakeld. Altijd de AC-voeding en de accu uitschakelen\nalvorens onderhouds- of reparatiewerkzaamheden aan de batterij uit te voeren.\nHet product is niet uitgerust met interne onderdelen die door de gebruiker kunnen worden\nonderhouden. De voorplaat niet verwijderen en bedien het product niet als er panelen zijn\nverwijderd. Alle onderhoudswerkzaamheden moeten door gekwalificeerd personeel\nworden uitgevoerd.\nDE\nES\nSE\nHet product nooit gebruiken op plaatsen waar gas- of stofexplosies kunnen optreden.\nRaadpleeg de informatie van de batterijfabrikant om te controleren of het product is\nbestemd voor gebruik in combinatie met de accu. Altijd de veiligheidsinstructie van de\nbatterijfabrikant opvolgen.\nAppendix\nWAARSCHUWING: Geen zware lasten zonder hulp optillen.\nInstallatie\nLees de installatie-instructies in de installatiehandleiding alvorens u de apparatuur gaat installeren.\nDit is een product van Veiligheidsklasse I (geleverd met een beschermende aardingsterminal). Het\nchassis moet worden geaard. Een aardingspunt bevindt zich aan de buitenzijde van het product.\nWanneer het waarschijnlijk is dat de aardbeveiliging is beschadigd, moet het product worden\nuitgeschakeld en beveiligd tegen onbedoeld gebruik; gelieve contact op te nemen met\ngekwalificeerd onderhoudspersoneel.\nZorg ervoor dat de DC- en AC-ingangskabels zijn beveiligd en voorzien zijn van\nstroomonderbrekers. Dit product is niet uitgerust met een interne zekering. Vervang nooit een\nveiligheidscomponent door een ander type. Raadpleeg de handleiding om het correcte onderdeel\nte bepalen.\nTijdens de installatie moet u controleren of de externe connector met draadbrug is verwijderd (of\nschakel de externe aan / uit-schakelaar uit indien geinstalleerd) teneinde er zeker van te zijn dat de\nomvormer niet onverwacht kan worden ingeschakeld.\nZorg ervoor dat de apparatuur wordt gebruikt onder de juiste omgevingsomstandigheden. Het\nproduct nooit bedienen in een natte of stoffige omgeving. U moet ervoor zorgen dat er\nvoldoende vrije ruimte voor ventilatie rondom het product aanwezig is en controleren of de\nventilatieopeningen niet zijn geblokkeerd.\nvictron energy\n1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Zorg ervoor dat de vereiste systeemspanning de capaciteit van het product niet overschrijdt.\nTransport en Opslag\nZorg ervoor dat de netspanning en batterijkabels zijn losgekoppeld voordat u het product gaat\nopslaan of vervoeren.\nEr wordt geen aansprakelijkheid worden aanvaard voor transportschade als de apparatuur\nwordt verscheept in een niet-originele verpakking.\nHet product opslaan in een droge omgeving; en de opslagtemperatuur moet tussen -20℃ en\n60°℃ zijn.\nRaadpleeg de handleiding van de batterijfabrikant voor transport, opslag, laden, opnieuw\nladen en verwijderen van de batterij.\n2\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "2. BESCHRIJVING\n2.1 Algemeen\nEN\nGeintegreerde Bluetooth: volledig configureerbaar met een tablet of smartphone\n· Lage batterijspanning alarmuitschakeling en resetniveaus\n· Lage batterijspanning-uitschakeling en herstartniveaus\n· Dynamische cut-off: belastingafhankelijk cut-off-niveau\n· Uitgangsspanning: 210 - 245V\n· Frequentie: 50 Hz of 60 Hz\n· ECO modus aan/uit en ECO modus gevoelsniveau\n· Alarmrelais\nBewaking\n· In- en uitgangsspanning,% belasting en alarmen\nVE.Direct communicatiepoort\nDe VE.Direct poort kan op een computer worden verbonden (VE.Direct naar USB\ninterfacekabel nodig) teneinde dezelfde parameters te configureren en te bewaken.\nNL\nFR\nDE\nES\nSE\nBewezen betrouwbaarheid\nDe volledige bridge plus toroïdale transformatortopologie heeft zijn betrouwbaarheid\ngedurende vele jaren bewezen.\nDe omvormers zijn kortsluitvast en beschermd tegen oververhitting, hetzij door\noverbelasting of hoge omgevingstemperatuur.\nAppendix\nHoog startvermogen\nNodig om belastingen te starten, zoals stroomomzetters voor LED-lampen,\nhalogeenlampen of elektrische gereedschappen.\nECO-modus\nIn de ECO-modus schakelt de omvormer naar stand-by wanneer de belasting daalt tot onder\neen vooraf ingestelde waarde (min. ladingniveau inschakelen: 10VA; en min. ladingniveau\nuitschakelen: 0VA). Eenmaal in stand-by schakelt de omvormer voor een korte periode in\n(instelbaar, standaard: elke 3,0 seconden). Indien de belasting een vooraf ingesteld niveau\noverschrijdt, blijft de omvormer ingeschakeld\n.\nAfstandsbediening aan/uit\nEen aan/uit-schakelaar voor afstandsbediening of relaiscontact kan verbonden worden met\neen 2-polige connector.\nAls alternatief kan de H-terminal (links) van de 2-polige connector geschakeld worden aan\nbatterij-plus, of de L-terminal (rechts) van de 2-polige connector kan geschakeld worden aan\nbattery-minus (of het chassis van een voertuig bijvoorbeeld\nLED diagnose\nZie paragraaf 3.3\nRaadpleeg de handleiding voor een beschrijving.\nvictron energy\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Om de belasting over te dragen naar een andere AC-bron: de schakelaar voor\nautomatische overdracht\nVoor onze low-power omvormers raden we onze Filax Automatic Transfer Switch aan. De\nFilax heeft een zeer korte omschakelingstijd (minder dan 20 milliseconden), zodat computers\nen andere elektronische apparatuur zonder onderbreking kunnen blijven werken. Gebruik als\nalternatief een MultiPlus met ingebouwde schakelaar voor overdracht.\n4\nvictron energy",
+      "tablas": []
+    }
+  ]
+}

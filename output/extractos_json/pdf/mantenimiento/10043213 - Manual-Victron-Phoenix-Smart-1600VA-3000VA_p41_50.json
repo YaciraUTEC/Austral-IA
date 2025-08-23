@@ -1,0 +1,244 @@
+{
+  "archivo": "10043213 - Manual-Victron-Phoenix-Smart-1600VA-3000VA_p41_50",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "4.3 Fusible de sécurité CC\nIl n'y a aucun fusible de sécurité à l'intérieur du convertisseur : il faudrait en installer un à\nl'extérieur. Les fusibles de sécurité recommandés sont indiqués dans le tableau ci-\ndessous :\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nFusible CC\nrecommandé\n250 A\n125 A\n60 A\n300 A\n150 A\n80 A\n12/3000\n24/3000\n48/3000\nFusible CC\nrecommandé\n400 A\n250 A\n125 A\n4.4 Raccordement du câblage CA\nCet appareil est un produit de classe de sécurité I (livré avec une borne de\nmise à la terre de protection).\nEN\nNL\nFR\nDE\nES\nSE\nLe câble neutre de la sortie CA de ce convertisseur est connecté au\nchâssis (voir l'annexe B pour 1600VA/2000VA et l'annexe C pour\n3000VA)\nAppendix\n!\nCela permet de garantir le bon fonctionnement d'un GFCI (ou RCCB) devant\nêtre installé sur la sortie CA du convertisseur.\nLe boîtier de l'appareil doit être mis à la terre, au châssis (d'un véhicule), ou à\nla plaque de terre ou à la coque (d'un bateau).\nProcédure\nLes points terminaux sont clairement indiqués. De gauche à droite : « L > (phase), « N »\n(neutre) et « PE » (terre).\n4.5 Raccordements en option\nUn certain nombre de connexions optionnelles sont possibles :\n4.5.1 Tableau de bord à distance et interrupteur on/off à distance\nL'appareil peut être contrôlé à distance de trois façons.\n-\nAvec un smartphone (iOS ou Android) et l'application Victron Connect.\n-\nAvec un interrupteur externe (connecté à un connecteur à deux pôles à distance). Il ne\nfonctionne que si l'interrupteur du convertisseur est en position « on ».\n-\nAvec le tableau de commande VE.Direct d'un Convertisseur Phoenix (raccordé au\nconnecteur à deux pôles, voir l'annexe A). Il ne fonctionne que si l'interrupteur du\nconvertisseur est en position « on »\n4.5.2. Relais programmable\nLes convertisseurs sont équipés d'un relais multifonction, qui est programmé par défaut\ncomme relais d'alarme en mode de fonctionnement normal. (Logiciel VictronConnect\nvictron energy\n9",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Fusible CC recommandé",
+            "250 A",
+            "125 A",
+            "60 A",
+            "300 A",
+            "150 A",
+            "80 A"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Fusible CC recommandé",
+            "400 A",
+            "250 A",
+            "125 A"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "nécessaire pour modifier la fonctionnalité du relais). Les différents modes du relais peuvent\nêtre résumés de la manière suivante :\n-\nFonctionnement normal ( << inverter > dans l'application VictronConnect app) - par défaut\nRelais ferme durant le fonctionnement normal, et ouvert si le convertisseur a soit\ndéclenché lui-même l'alarme, soit été éteint par un utilisateur, et également ouvert\n(évidemment) lorsqu'aucune source d'énergie n'est disponible sur les bornes, c.à.d. que\nla batterie est déconnectée. En mode ECO, le relais sera fermé aussi bien lorsqu'une\ncharge sera recherchée, que lorsqu'il sera entièrement allumé, c'est à dire, une charge\naura été détectée.\nUtilisez cette option lorsque vous souhaitez que le relais signale que de la puissance est\ndisponible sur la sortie du convertisseur.\n-\nAlertes et alarmes (< Alarm > dans l'application VictronConnect).\nDe la même manière que décrit précédemment, mais le relais s'ouvrira également en\ncas de situation d'alerte. Par exemple, car la tension de la batterie a chuté au niveau de\nla valeur de coupure, ou lorsqu'elle est chargée au niveau où elle s'éteindre presque\ntoujours à cause d'une situation de surcharge. En mode ECO, le relais restera fermé\ndans les deux situations suivantes : lorsqu'une charge est recherchée (pas de charge de\nconsommation), ou lorsqu'il est entièrement allumé (charge détectée), sauf si un\navertissement est signalé.\nPar cette option, vous souhaitez que le relais signale qu'il est temps de faire quelque\nchose (charger la batterie, réduire la charge consommatrice, ou autre), afin d'éviter une\ncoupure de courant.\n-\nBatterie faible ( << Low battery > dans l'application VictronConnect)\nRelais allumé durant un fonctionnement normal. Le relais s'éteindre dès que survient un\navertissement de batterie faible. Il restera éteint si le convertisseur s'arrête en raison\nd'une tension faible, et il ne s'allumera à nouveau que lorsque le convertisseur sera\nopérationnel, et que la tension de batterie sera supérieure au niveau de réinitialisation de\npréalarme. Utilisez cette option pour le délestage de charge, ou pour démarrer\nautomatiquement un générateur. Notez que cela est considéré comme une méthode peu\nsatisfaisante pour démarrer/arrêter un générateur. Pour davantage d'options plus\nperformantes, voir ici.\n-\nVentilateur externe (< fan > dans l'application VictronConnect)\nLe relais est éteint, à moins que le ventilateur intérieur soit en marche. Utilisez cette\noption pour allumer un ventilateur externe dans des cas où le convertisseur se trouve\ndans un espace petit et confiné.\n-\nRelais desactive (< Off > dans l'application VictronConnect).\nCette option configure le relais sur la position OUVERT. Utilisez cette option si vous ne\npensez pas utiliser la fonction de relais.\n10\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "5. CONFIGURATION\nEN\nLa modification des réglages ne doit être effectuée que par un technicien\nqualifié.\n!\nLire attentivement les instructions avant toute modification.\nLes batteries doivent être installées dans un lieu sec et bien ventilé pendant la\ncharge.\n5.1 Configuration standard : prêt à l'emploi\nNL\nFR\nÀ la livraison, le convertisseur Phoenix est configuré avec les valeurs d'usine standard.\nEn général, ces réglages sont adaptés à la configuration d'un système indépendant.\nRéglages d'usine standard\nFréquence du convertisseur\nTension du convertisseur\nMode recherche\nRelais programmable\nCoupure dynamique\n50 Hz\n230 VCA\noff\nFonction d'alarme\noff\nDE\nES\nSE\n5.2 Explication des réglages\nAppendix\nFréquence du convertisseur\nFréquence de sortie\nRéglage : 50 Hz ; 60 Hz\nTension du convertisseur\nRéglage : 210 - 245V\nMode ECO\nSi le mode ECO est en position « On », la consommation de puissance se réduit d'environ\n80 ... 90 % si aucune charge n'est disponible. Grâce à ce mode, quand le Convertisseur\nPhoenix Smart fonctionne en mode convertisseur, il est arrêté en cas d'absence de charge ou\nde charge très faible, puis mis en marche toutes les deux secondes et demi pour une courte\npériode. (réglable) Si le courant de charge dépasse le niveau défini, le convertisseur continue\nà fonctionner. Dans le cas contraire, le convertisseur s'arrête à nouveau.\nLe mode ECO peut être configuré avec le bouton-poussoir se trouvant sur le devant du\nconvertisseur.\nLes niveaux de charge du mode ECO « shut down » (déconnecté) et « remain on » (rester\nallumé) peuvent être configurés avec Victron Connect.\nLa configuration standard est :\nDéconnecté : 50 Watt (charge linéaire)\nAllumé : 100 Watt (charge linéaire).\nvictron energy\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Relais programmable\nPar défaut, le relais programmable est configuré en tant que relais d'alarme, c'est-à-dire que\nle relais est désamorcé en cas d'alarme ou de pré-alarme (convertisseur presque trop chaud,\nondulation d'entrée presque trop élevée, tension de batterie presque trop faible).\nCoupure dynamique\nUtilisez VictronConnect pour activer et configurer la Coupure dynamique (consultez\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-dynamic-cutoff pour davantage\nde détails).\nN'utilisez pas la coupure dynamique dans une installation qui dispose d'autres charges\nconnectées à la même batterie : la tension de batterie chutera à cause de la charge\nsupplémentaire, mais l'algorithme de Coupure dynamique dans le convertisseur ne notera\npas cette charge. Le convertisseur s'arrêtera donc trop tôt avec une alarme de sous-tension.\n5.3 Configuration par ordinateur\nTous les paramètres peuvent être modifiés à l'aide d'un smartphone, d'une tablette ou d'un\nordinateur.\nPour modifier les paramètres avec un smartphone ou une tablette, les conditions suivantes\nsont requises :\n- Logiciel VictronConnect : il peut être téléchargé gratuitement sur notre site\nwww.victronenergy.com.\nPour modifier les paramètres par ordinateur, les conditions suivantes sont requises :\n- Logiciel VictronConnect : il peut être téléchargé gratuitement sur notre site\nwww.victronenergy.com.\n- Une interface VE.Direct-USB.\n6. MAINTENANCE\nLe convertisseur Phoenix Smart ne nécessite aucun entretien spécifique. Il suffit de vérifier\nles raccordements une fois par an. Évitez l'humidité et l'huile/suie/vapeur, et conservez\nl'appareil propre.\n12\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "7. Caractéristiques techniques\n12 Volts\n12/1600\n12/2000\n12/3000\nConvertisseur Phoenix Smart\n24 Volts\n48 Volts\n24/1600\n48/1600\n24/2000\n48/2000\n24/3000\n48/3000\nFonctionnement en parallèle et triphasé\nNon\nCONVERTISSEUR\nPlage de tension d'alimentation (1)\n9,3 - 17 V\n18,6 - 34 V\n37,2 - 68 V\nSortie\nTension de sortie : 230 VCA +2 % 50 Hz ou 60 Hz +0,1 %\n(1)\nPuissance de sortie continue à 25°C (2)\n1600 VA\n2000 VA\n3000 VA\nPuissance de sortie continue à 25 ℃\n1300 W\n1600 W\n2400 W\nPuissance de sortie continue à 40 °C\n1200 W\n1450 W\n2200 W\nPuissance de sortie continue à 65 ℃\n800 W\n1000 W\n1700 W\nPuissance de crête\n3000 VA\n4000 VA\n6000 VA\nDynamique (en fonction de la charge)\nArrêt courant CC bas (entièrement\nréglable)\nCoupure dynamique, consultez\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-\ndynamic-cutoff\nEfficacité maxi 12 / 24 / 48 V (%)\n92/94/94 %\n92/94/94 %\n93/94/95 %\nPuissance de charge zéro 12 / 24 / 48 V\n8/9/11 W\n8/9/11 W\n12/13/15 W\nPuissance de charge zéro en mode ECO\n0,6/1,3/2,1 W\n0,6/1,3/2,1 W\n1,5/1,9/2,8 W\nGÉNÉRAL\nRelais programmable (2)\nOui\nArrêter et démarrer la puissance du\nmode ECO\nréglable\nProtection (3)\na - g\nCommunication sans fil Bluetooth\nPour la supervision à distance et l'intégration du système\nPort de communication VE.Direct\nPour la supervision à distance et l'intégration du système\nOn/off à distance\nOui\nCaractéristiques communes\nPlage de température d'exploitation : - 40 à +65 ℃\n(refroidissement par ventilateur)\nHumidité (sans condensation) : 95 % max.\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\nCaractéristiques communes\nRaccordement batterie\nConnexion CA 230 V\nPoids\nDimensions (H x L x P)\nSécurité\nÉmission/Immunité\nDirective sur l'automobile\nBOÎTIER\nMatériau et couleur : acier (bleu RAL 5012; et noir RAL 9017)\nIndice de protection : IP 21\nÉcrous M8\n12 kg\nÉcrous M8\nBornes à vis\n13 kg\n485 × 219 × 125 mm\n485 × 219 × 125 mm\nNORMES\nEN 60335-1\n2+2 Écrous M8\n19 kg\n533 × 285 x 150mm\n(12V)\n485 x 285 xc 150mm\n(24V/48V)\nEN 55014-1 / EN 55014-2/ IEC 61000-6-1 / IEC 61000-6-2 /\nIEC 61000-6-3\nECE R10-5\n1) Charge non linéaire, facteur de crête 3.1\n2) Relais programmable qui peut être configuré en alarme\ngénérale, sous-tension CC ou fonction de démarrage/arrêt du\ngénérateur.\n3) Touche de protection :\nValeur nominale CA : 230 V / 3 A\nValeur nominale CC : 3 A jusqu'à 30 VCC, 1 A jusqu'à\n70 VCC\na) court-circuit en sortie\nb) surcharge\nc) Tension de batterie trop élevée\nd) Tension de batterie trop basse\ne) Température trop élevée\nf) 230 VCA sur la sortie du convertisseur\ng) ondulation de la tension d'entrée trop élevée\nvictron energy\n13",
+      "tablas": [
+        [
+          [
+            "",
+            "12 Volts",
+            "12/1600",
+            "12/2000",
+            "12/3000"
+          ],
+          [
+            "Convertisseur Phoenix Smart",
+            "24 Volts",
+            "24/1600",
+            "24/2000",
+            "24/3000"
+          ],
+          [
+            "48 Volts",
+            "48/1600",
+            "48/2000",
+            "48/3000"
+          ]
+        ],
+        [
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Fonctionnement en parallèle et triphasé",
+            "",
+            "Non",
+            ""
+          ],
+          [
+            "CONVERTISSEUR"
+          ],
+          [
+            "Plage de tension d'alimentation (1)",
+            "9,3 - 17 V",
+            "18,6 - 34 V",
+            "37,2 - 68 V"
+          ],
+          [
+            "Sortie",
+            "Tension de sortie : 230 VCA +2 % 50 Hz ou 60 Hz +0,1 % (1)"
+          ],
+          [
+            "Puissance de sortie continue à 25°C (2)",
+            "1600 VA",
+            "2000 VA",
+            "3000 VA"
+          ],
+          [
+            "Puissance de sortie continue à 25 ℃",
+            "1300 W",
+            "1600 W",
+            "2400 W"
+          ],
+          [
+            "Puissance de sortie continue à 40 °C",
+            "1200 W",
+            "1450 W",
+            "2200 W"
+          ],
+          [
+            "Puissance de sortie continue à 65 ℃",
+            "800 W",
+            "1000 W",
+            "1700 W"
+          ],
+          [
+            "Puissance de crête",
+            "3000 VA",
+            "4000 VA",
+            "6000 VA"
+          ],
+          [
+            "Dynamique (en fonction de la charge) Arrêt courant CC bas (entièrement réglable)",
+            "Coupure dynamique, consultez https://www.victronenergy.com/live/ve.direct:phoenix-inverters-"
+          ],
+          [
+            "dynamic-cutoff"
+          ],
+          [
+            "Efficacité maxi 12 / 24 / 48 V (%)",
+            "92/94/94 %",
+            "92/94/94 %",
+            "93/94/95 %"
+          ],
+          [
+            "Puissance de charge zéro 12 / 24 / 48 V",
+            "8/9/11 W",
+            "8/9/11 W",
+            "12/13/15 W"
+          ],
+          [
+            "Puissance de charge zéro en mode ECO",
+            "0,6/1,3/2,1 W",
+            "0,6/1,3/2,1 W",
+            "1,5/1,9/2,8 W"
+          ]
+        ],
+        [
+          [
+            "",
+            "GÉNÉRAL"
+          ],
+          [
+            "Relais programmable (2)",
+            "Oui"
+          ],
+          [
+            "Arrêter et démarrer la puissance du mode ECO",
+            "réglable"
+          ],
+          [
+            "Protection (3)",
+            "a - g"
+          ],
+          [
+            "Communication sans fil Bluetooth",
+            "Pour la supervision à distance et l'intégration du système"
+          ],
+          [
+            "Port de communication VE.Direct",
+            "Pour la supervision à distance et l'intégration du système"
+          ],
+          [
+            "On/off à distance",
+            "Oui"
+          ],
+          [
+            "Caractéristiques communes",
+            "Plage de température d'exploitation : - 40 à +65 ℃ (refroidissement par ventilateur) Humidité (sans condensation) : 95 % max."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "1) Peut être réglé sur 60 Hz et 240 VisEr 2) ProtectionsEpa. Court-circuit de sortie\nb. Surcharge\nc. Tension de batterie trop élevée\nc. Tension de batterie trop faible\ne. Température trop élevée\nf. 230 VCA sur sortie de convertisseur\ng. Ondulation de tension d'entrée trop élevée\n3) Charge non linéaire, facteur de crête 3:1\n4) Relais programmable qui peut être configuré en alarme générale, sous-tension CC ou fonction de signal\ndu démarrage du générateur\n14\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "1. SICHERHEITSHINWEISE\nAllgemeines\nEN\nLesen Sie erst die mitgelieferte Beschreibung sorgfältig durch, bevor Sie das Gerät in\nBetrieb nehmen und machen Sie sich mit den Sicherheitsvorschriften vertraut. Dieses\nProdukt wurde in Übereinstimmung mit internationalen Normen entworfen und getestet.\nDas Gerät darf ausschließlich für den vorgesehenen Verwendungszweck benutzt\nwerden.\nNL\nFR\nWARNHINWEIS: ES BESTEHT DIE GEFAHR EINES ELEKTRISCHEN SCHLAGS.\nDas Gerät wird in Verbindung mit einer ständigen Spannungsquelle (Batterie) benutzt.\nAuch wenn das Gerät ausgeschaltet ist, können gefährliche Spannungen an den\nAnschlussklemmen anliegen. Trennen Sie deshalb bei allen Wartungsarbeiten das Gerät\nvon der Batterie.\nIm Gerät gibt es keine Teile, die der Verbraucher selbst warten könnte. Nehmen Sie das\nPaneel an der Vorderseite nicht ab und schalten Sie das Gerät nicht ein, wenn nicht alle\nPaneele montiert sind. Arbeiten an dem Gerät, gleich welcher Art, sollten ausschließlich\nvon qualifizierten Fachkräften ausgeführt werden.\nDE\nES\nSE\nBenutzen Sie das Gerät niemals in gas- oder staubexplosionsgefährdeten Räumen.\nLesen Sie die Angaben des Batterieherstellers und vergewissern Sie sich, dass die\nBatterie für das Gerät geeignet ist. Die Sicherheitshinweise des Batterieherstellers sind\nimmer einzuhalten.\nAppendix\nWARNHINWEIS: Heben Sie schwere Lasten nie ohne Hilfe.\nInstallation\nLesen Sie erst die Installationshinweise in der Bedienungsanleitung, bevor Sie das Gerät\nanschließen.\nDieses Produkt entspricht der Sicherheitsklasse I (mit Sicherungserdung) Das Gehäuse\nmuss geerdet werden. Ein Erdungsanschluss ist außen am Gehäuse angebracht. Wenn die\nVermutung besteht, dass die Schutzerdung unterbrochen ist, muss das Gerät außer Betrieb\ngesetzt und gegen jedes unbeabsichtigte Betreiben gesichert werden; ziehen Sie einen\nFachmann zu Rate.\nSorgen Sie dafür, dass die Anschlusskabel abgesichert und mit Leistungsschaltern\nausgestattet sind. In diesem Produkt ist keine interne Sicherung vorhanden. Wechseln\nSie nie ein Sicherungselement gegen eines mit unterschiedlichem Wert aus. Lesen Sie in der\nGebrauchsanweisung nach, welche Typenkennwerte geeignet sind.\nStellen Sie während der Installation sicher, dass der Fernsteuerungsstecker mit Drahtbrücke\nentfernt wurde (oder schalten Sie den ferngesteuerten Ein-/Aus-Schalter aus, sofern\nvorhanden). Auf diese Weise wird verhindert, dass der Wechselrichter plötzlich eingeschaltet\nwird.\nvictron energy\n1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Vergewissern Sie sich vor dem Einschalten des Geräts, dass die Anschlusswerte des Netzes\nmit den in der Bedienungsanleitung angegebenen Werten übereinstimmen.\nSorgen Sie dafür, dass das Gerät nur innerhalb der zulässigen Betriebsbedingungen genutzt\nwird. Betreiben Sie das Gerät niemals in feuchter oder staubiger Umgebung. Sorgen Sie\ndafür, dass Luft frei um das Gerät zirkulieren kann und dass die Belüftungsöffnungen\nfreigehalten werden.\nStellen Sie sicher, dass die geforderte Systemspannung der des Geräts entspricht.\nTransport und Lagerung\nSorgen Sie dafür, dass das Gerät bei der Lagerung oder beim Transport vom Netz und der\nBatterie getrennt ist.\nEs wird keine Haftung für Transportschäden übernommen, wenn das Gerät nicht in der\nOriginalverpackung transportiert wird.\nLagern Sie das Gerät an einem trockenen Ort; die Lagertemperatur muss zwischen -20℃\nund 60°℃ liegen.\nInformieren Sie sich in der Bedienungsanleitung des Batterieherstellers über den Transport,\ndie Lagerung, das Aufladen, Wiederaufladen und das Entsorgen der Batterie.\n2\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "2. BESCHREIBUNG\n2.1 Allgemeines\nEN\nEingebaute Bluetooth-Funktion: Über ein Tablet oder Smartphone vollständig\nkonfigurierbar.\n· Schwellwerte zum Auslösen und Zurücksetzen von Alarmen bei niedrigem\nLadezustand der Batterie.\n· Schwellwerte zum Ausschalten und Neustarten bei niedrigen\nBatteriespannungswerten.\n· Dynamisches Abschalten: lastabhängiger Abschalt-Schwellwert\n· Ausgangsspannung: 210 - 245V\n· Frequenz: 50 Hz oder 60 Hz\n· Schwellwert für ECO-Modus ein/aus und ECO-Modus-Fühler\n· Alarm-Relais\nÜberwachung:\n· Ein- und Ausgangsspannung, % Last und Alarme\nNL\nFR\nDE\nES\nSE\nVE.Direct Kommunikationsanschluss\nDer VE.Direct Port kann an einen Computer angeschlossen werden (es wird ein\nVE.Direct zu USB-Interface-Kabel benötigt), um dieselben Parameter zu konfigurieren\nund zu überwachen.\nAppendix\nBewährte Zuverlässigkeit\nDie vollständige Überbrückung zusätzlich mit einer Ringtransformatorentopologie hat sich\nseit Jahren bewährt.\nDie Wechselrichter sind kurzschlussfest und vor Überhitzung (ob nun durch Überlastung oder\ndurch die Umgebungstemperatur hervorgerufen) geschützt.\nHohe Einschaltleistung\nDiese wird zum Einschalten von Lasten wie zum Beispiel Spannungsumformern für LED-\nLampen, Halogenlampen oder Elektrowerkzeugen benötigt.\nECO-Modus\nIm ECO-Modus schaltet der Wechselrichter auf Standby, sobald die Last unter einen\nvoreingestellten Wert abfällt (Min. Last Schwellwert zum Anschalten: 10 VA; und Min. Last\nSchwellwert zum Ausschalten: 0 VA). Im Standby-Modus schaltet sich der Wechselrichter\ndann für einen kurzen Zeitraum ein (regulierbar, Standardeinstellung: alle 3 Sekunden).\nÜberschreitet dabei die Last einen voreingestellten Schwellwert, bleibt der Wechselrichter\neingeschaltet.\nFerngesteuerte Ein-/Aus-Schaltung\nEin ferngesteuerter Ein-/Ausschalter kann an einen zweipoligen Stecker angeschlossen\nwerden, zwischen dem Pluspol der Batterie und dem linken Kontakt des zweipoligen Steckers\nbzw. zwischen dem Minuspol der Batterie und dem rechten Kontakt des zweipoligen\nSteckers.\nLED-Diagnose\nSiehe Abschnitt 3.3.\nvictron energy\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Lastumschaltung auf eine weitere Wechselstromquelle: der automatische\nTransferschalter\nFür unsere Niedrigleistung-Wechselrichter empfehlen wir unseren Filax Automatic Transfer\nSwitch. Mit dem Filax erfolgt die Umschaltung sehr schnell (in weniger als 20 Millisekunden),\nso dass ein unterbrechungsfreier Betrieb von Computern und anderen elektronischen\nGeräten gewährleistet ist. Alternativ können Sie auch einen MultiPlus mit eingebautem\nTransferschalter verwenden.\n4\nvictron energy",
+      "tablas": []
+    }
+  ]
+}

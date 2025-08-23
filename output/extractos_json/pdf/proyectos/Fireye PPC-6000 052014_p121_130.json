@@ -1,0 +1,193 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p121_130",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nThe alarm limits may set to any value between 0.0 and 99.9%, where the value entered relates to a\npercentage deviation from each oxygen setpoint in the firing range.\nIf the burner is firing, it is only possible to make an adjustment to the option parameters that relate to the\nselected profile. If the burner is not firing, the alarm values for any profile selection may be adjusted.\nAn oxygen low alarm will be caused by one or more of the following events:\n. The level drops below 0.5% 02 for 30 seconds\n. The level drops below the low alarm limit for 2 minutes\n. The level drops below twice the low alarm limit for 30 seconds\nAn oxygen high alarm will be caused by one or more of the following events:\n. The level rises above the high alarm limit for 2 minutes\n. The level rises above twice the high alarm limit for 30 seconds\nWhen 2 probes the low alarm will also be caused by the following event:\n· The difference between the oxygen values exceeds the value set in option parameter 42.4 for 2 minutes\nOption 42.0 - Second Oxygen probe interface serial number LV3\nEach CANbus device connected to the system has a unique serial number allocated to it during production\ntesting. This number cannot be changed and is used to uniquely identify each device.\nWhen the system is in commissioning mode the serial number of all the connected devices is read by the\nPPC6000 and displayed as a 'list' to allow the selection of the relevant serial number unit to be made.\nScrolling the list in an upward direction will scroll through all oxygen probe interface options available until '0,\nnothing' is displayed. Enter this value to disconnect the specified device from any hardware.\nThe FIREYE oxygen probe and associated electronics are not fail-safe. It is for this reason that the maximum\namount of oxygen trim allowed must be limited by the commissioning engineer using option parameters 32.1\nto 32.4. The trim must be limited to ensure that in the event of a probe fault (incorrect O2 level), the\ncombustion does not become unsafe.\nFor applications demanding large amounts of oxygen trim to be applied, or where oxygen monitoring is\nespecially critical, a second oxygen probe and controller can be selected here. The two oxygen readings from\nthe probes can be compared when the burner is running to provide fail-safe oxygen monitoring.\nOption 42.1 - Second Oxygen probe calibration offset value (0 - 999) LV3\nThis option parameter is only available if option 31.0 is non-zero.\nThis option parameter must be set to the calibration offset value that is specified with the probe supplied.\nOption 42.2 - Second Oxygen probe calibration gain value (0 - 999) LV3\n121",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nThis option parameter is only available if option 31.0 is non-zero.\nThis option parameter must be set to the calibration gain value that is specified with the probe supplied.\nOption 42.3 - Second Oxygen probe calibrate enable (0 - 2) LV3\nThis option parameter is only available if option 31.0 is non-zero.\nThis option parameter must be used when calibrating the second FIREYE oxygen probe. There are three\npossible values, as seen on the following chart:\nOption parameter\n31.3 value\nMeaning\n0\nNo calibrate. This is the normal operating condition, where the probe is used to\nmeasure the oxygen concentration in the flue.\n1\nCalibrate in air. The probe will be calibrated for 'offset' at the normal\natmospheric oxygen concentration.\n2\nCalibrate in reference gas. The probe will be calibrated for 'gain' in a reference\ngas with a nominal oxygen concentration the level specified in option parameter\n30.3 (typically 3.0%).\nOnce this calibration has been successfully completed the values in 31.1 and 31.2 will be automatically\nupdated.\nOption 42.4 - Max oxygen variation (0 - 9.9 %) LV3\nWhere the second oxygen probe is being used as a cross-check on the first one, the maximum permitted\nvariation between the two oxygen readings should be entered here. It is suggested that a value of around 0.5\n% be used, but the application may demand a higher setting if the two probes are not in exactly the same part\nof the flue. The control will lockout within 30 seconds of the two oxygen readings being outside the specified\nwindow.\nWhen this parameter is non-zero, the flue oxygen limits will be checked on a 'worst case' basis. This means\nthat the low oxygen limit (see options 38.X, 39.X) is checked against the lower of the two oxygen probe\nreadings, and the high oxygen limit (see options 40.X, 41.X) is checked against the higher of the two oxygen\nprobe readings. If there is a fault with second oxygen probe, the burner will also lockout.\nIf this parameter is left at zero (0.0) no checking will be done, but the oxygen and temperatures associated\nwith second oxygen probe will still be available on the engineers key (EK75-79).\nNote: When fail-safe oxygen monitoring is employed using two probes, each probe must be tested and\ncalibrated at intervals not less frequent that once every six months.\n122",
+      "tablas": [
+        [
+          [
+            "Option parameter 31.3 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "No calibrate. This is the normal operating condition, where the probe is used to measure the oxygen concentration in the flue."
+          ],
+          [
+            "1",
+            "Calibrate in air. The probe will be calibrated for 'offset' at the normal atmospheric oxygen concentration."
+          ],
+          [
+            "2",
+            "Calibrate in reference gas. The probe will be calibrated for 'gain' in a reference gas with a nominal oxygen concentration the level specified in option parameter 30.3 (typically 3.0%)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\nOption 42.5 - Max flue temp variation (0 to 999 ℃) LV3\nIf non-zero, the burner will lockout if the two oxygen probes vary by more that this many degrees (Celsius).\nThis can be used in applications where flue temperature is especially critical.\nOption 42.7 - Air pressure monitoring* - input number LV3\nAvailable on firmware version 1.3 onwards (EK56).\nOption 42.8 - Air pressure monitoring* - Span LV3\nOption 42.9 - Air pressure monitoring* - max error LV3\n* For options 42.7, 42.8, 42.9 - EK98 shows air pressure error if in RUN and MODULATION only. If not\nmodulating or in a commission mode, it shows the actual pressure value otherwise it can't be seen on\nthe NX610 display in commission mode. Air pressure will show as a display value on the NX610\ndisplay and on the touchscreen if updated to 1.039 or later. Currently air pressure setpoints cannot be\nseen in the profile tables in comfire or on the touchscreen.\nOption 43.0 - Water level / expansion unit ** LV3 - Reserved\nOption 43.1 - Water level / expansion unit ** LV3 - Reserved\n* For options 43.0 and 43.1 - Firmware 1.039 or later.\nOption 44.0 - Set real time clock (0/1) LV1\nSetting this option 1 enables the user to set the clock in the control used for fault logging. First set this option\nto 1 then adjust the options 49.1 to 49.6. When these are correct, check that this option is still at 1, then press\nthe RUN key then the ENTER key.\nOption 44.1 - Set Year (00 - 99) LV1\nSee \"SET CLOCK\" Example after Option 44.7\nOption 44.2 - Set Month (1 - 12) LV1\nSee \"SET CLOCK\" Example after Option 44.7\nOption 44.3 - Set Day of Month (1 - 31) LV1\nSee \"SET CLOCK\" Example after Option 44.7\n123",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nOption 44.4 - Set Day of Week (1 - 7) LV1\nFor reference 1=Sunday, 2=Monday through 7=Saturday\nSee \"SET CLOCK\" Example after Option 44.7\nOption 44.5 - Set Hours (0 - 23) LV1\nHours use 24 hour format. AM= 0-11, PM=12-23; For reference 0=midnight, 12=noon, 18= 6 pm (12+6)\nSee \"SET CLOCK\" Example after Option 44.7\nOption 44.6 - Set Minutes (0 - 59) LV1\nSee \"SET CLOCK\" Example after Option 44.7\nOption 44.7 - Set Seconds (0 - 59) LV1\nSee \"SET CLOCK\" Example after Option 44.7\n\"SET CLOCK\" EXAMPLE\nTo Set 6:30:45, PM, Tuesday, December, 25, 2007\nThe Values should be entered as follows:\n44.1 = 7\n(Year)\n44.2 = 12\n(Month)\n44.3 = 25\n(Day of Month)\n44.4 = 3\n(Day of Week)\n44.5 = 18\n(Hours) (12+6)\n44.6 = 30\n(Minutes)\n44.7 = 45\n(Seconds)\nOption 44.9 - Reset Fault Log (0 - 1) LV3\nThis option clears the current the fault history.\nSet the option parameter to 1, then press RUN, than ENTER. The control will erase the fault history and return\nto run mode.\nOption 45.0 - Erase / Restore enable (0 - 1) LV3\n124",
+      "tablas": [
+        [
+          [
+            "\"SET CLOCK\" EXAMPLE"
+          ],
+          [
+            "To Set 6:30:45, PM, Tuesday, December, 25, 2007 The Values should be entered as follows:"
+          ],
+          [
+            "44.1 = 7",
+            "(Year)"
+          ],
+          [
+            "44.2 = 12",
+            "(Month)"
+          ],
+          [
+            "44.3 = 25",
+            "(Day of Month)"
+          ],
+          [
+            "44.4 = 3",
+            "(Day of Week)"
+          ],
+          [
+            "44.5 = 18",
+            "(Hours) (12+6)"
+          ],
+          [
+            "44.6 = 30",
+            "(Minutes)"
+          ],
+          [
+            "44.7 = 45",
+            "(Seconds)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nCAUTION\n!\n· If this value is displayed as a '2', the option parameter data has been 'up-\nloaded' into the control, ensure all option parameters are set to match the\nrequirements of the burner to which it is connected. Failure to do so could\ncause a hazardous condition to occur.\n. After all option parameters have been checked to match the requirements of the\nburner to which it is connected, reset this option parameter to zero to allow the\nsystem to operate.\nIf an attempt is made to operate the system with this option parameter set to '2'\na fault will be generated and the control will perform a non-volatile lockout,\npreventing the burner from firing.\nIn order to erase information in memory for a specific profile selection (see option parameter 45.1), this option\nmust be set to '1'. Once the control has left set-up mode, this parameter will automatically be reset to '0'.\nIn order to restore information to the control from the back-up held in the display (see option parameter 45.2),\nthis option must be set to a '1'. Once the control has left set-up mode, this parameter will automatically be\nreset to '0'.\nIf this option parameter is set to '2' see caution message above.\nOption 45.1 - Erase command (0 - 5) LV3\nWhen erase enable (option 45.0) is set to '1', this option parameter determines which information will be\nerased when the control leaves option set mode.\n0 -\nNo erase.\n1 -\nErase profile 1.\n2 -\nErase profile 2.\n3 -\nErase profile 3.\n4 -\nErase profile 4.\n5 -\nErase all setpoints and initialize all option parameters.\nIf 5 is selected, all profile setpoints will be erased and all option parameters will be set to default values.\nThe control will be initialized to the same state as when it was shipped.\nNOTE: You must exit commissioning mode to begin the erase.\nOption 45.2 - Restore command (0 - 999) LV3\nMEMORY TEST: To determine if the NX610 keypad display contains a valid memory, press both left and right\ncursor (arrow) keys simultaneously. The display will change to LOCAL MODE and toggle between two\ninformation screens. One of these will contain the capitol letters FL CDBKP. If all \"\n\" appear, there is\nno valid memory in the display. If no valid option parameter and profile is available from previous downloads\nusing Comfire 2 software, all data and combustion curves will need to be entered by hand. Please refer to\nFireye bulletin NEX-1502 (Comfire 2), available at www.Fireye.com. Comfire 2 will not restore the servomotor\nserial numbers which will need to be hand entered in Option 3.0 to 3.9 BEFORE restarting the PPC6000. A\nvalid backup is achieved after the burner has been running in \"AUTO\" for approximately 20 minutes.\n125",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nWhen erase / restore enable (option 45.0) is set to '1', this option parameter allows the back-up data held in\nthe display to be loaded into the PPC6000, this may take up to 5 minutes to complete during which time the\ncontrol will not allow the burner to operate.\nIMPORTANT:\nIn order for the restore command to function, the new control must have the\nsame communications address (Option Parameter 0.2) as the original control. That is, if option 0.2 was set to\n2 (boiler #2 for example), the commissioning engineer must set options 0.2 of the new control to 2 BEFORE\nsetting option 45.2 to 100. The default communications address of the control is 0. If multiple PPC6000's\nhave been connected together for sequencing, it is likely that the communications address has been changed\nto match the boiler number.\nTo restore the data from the back-up held in the NX610 or the NXTSD104 display, set this option parameter to\n'100'.\nIf 100 is selected, the data from the back-up data held in the display will be loaded into the PPC6000.\nA back-up of the data held in the PPC6000 is automatically stored in the display when the control is in\nmodulation status.\nNOTE: You must exit commissioning mode to initiate the restore.\n5.6\nCommission ratio mode\n5.6.1\nDescription\nCommission ratio mode is used for entering a new profile or changing an existing profile.\nUsing commission ratio mode, it is possible to step through each setpoint including close, purge and ignition.\nOnce a setpoint has been entered, it is not possible to go back and modify it again in the same commissioning\nsession. To do this, adjust ratio mode must be used after all the required setpoints have been entered.\n5.6.2 Using commission ratio mode\n!\nCAUTION\n. Use extreme care while commissioning the system. While operating in\ncommissioning mode the safety of the system is the sole responsibility of the\ncommissioning engineer.\n· Ensure a pre-purge position is entered for the relevant drives.\n· Incorrect positioning of either fuel or air could cause a hazardous situation to\noccur.\n. If the servo-motor positions have been up-loaded it is essential that the\ncombustion is verified at each firing position to ensure a hazardous condition\ncannot occur, and for the data to be stored in the control.\n. It is recommended that the close position for each servo motor is re-entered as\npart of the burner service regime, to compensate for wear in the servo-motor\nmicro-switch during operation.\n. Once all profile positions have been adjusted/entered it is essential that all\nprofile points are checked to verify that the fuel air ratio is acceptable for the\nappliance being controlled.\n. To adjust the position of a servo motor or inverter, select the motor using the\nscroll kevs. then use the UP/DOWN kevs to change the value.\n126",
+      "tablas": [
+        [
+          [
+            "!",
+            "CAUTION"
+          ],
+          [
+            ". Use extreme care while commissioning the system. While operating in commissioning mode the safety of the system is the sole responsibility of the commissioning engineer."
+          ],
+          [
+            "· Ensure a pre-purge position is entered for the relevant drives. · Incorrect positioning of either fuel or air could cause a hazardous situation to occur."
+          ],
+          [
+            ". If the servo-motor positions have been up-loaded it is essential that the combustion is verified at each firing position to ensure a hazardous condition cannot occur, and for the data to be stored in the control. . It is recommended that the close position for each servo motor is re-entered as part of the burner service regime, to compensate for wear in the servo-motor micro-switch during operation. . Once all profile positions have been adjusted/entered it is essential that all profile points are checked to verify that the fuel air ratio is acceptable for the appliance being controlled. . To adjust the position of a servo motor or inverter, select the motor using the scroll kevs. then use the UP/DOWN kevs to change the value."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\nEach setpoint in the profile is referred to with a letter and number (refer to the table below).\nNo.\nName\nComments\nP0\nClose\nThis defines the positions the motors will move to when the burner is\noff, and must be set to the lowest position each motor can reach.\nP1\nPurge\nThis defines the positions the motor will move to when the burner is\npurging, and can be set as required for each servo-motor.\nP2\nIgnition\nPosition during ignition. May be outside the normal firing range.\nP3\nLow fire\nLow fire setpoint, (unless limited modulation range is selected).\nPx\nHigh fire\nHigh fire setpoint, (unless limited modulation range is selected), which\nis the last setpoint entered (max. P24)\nThe procedure for entering or modifying a profile is as follows :\n1. Enter commission ratio mode (see section 5.3.1). P0 (close) is displayed.\n2. If the close setpoint has recently been entered and no change is required, press NEXT. If servicing the\nburner or the position has not been entered before, move each motor to its lowest position and press\nENTER. P1 (purge) is displayed (flashing).\n3. Select the burner and the required profile. If the purge position has been set before the selected motors\nwill automatically move to their relevant P1 positions and stop, if no change is required press NEXT.\nOtherwise, move each motor to its required pre-purge position and press ENTER. If the purge setpoint has\nnot been entered before the servo-motors will remain at their respective closed (P0) positions until each\nmotor has been moved to its required position. Once all selected motors are at the correct position press\nENTER. P1 (purge) is displayed. Please note that if a purge position for a particular drive has not been\nentered before the drive will remain at its closed position. The engineer must ensure that the main\ncombustion air damper is set to open enough to purge the boiler.\n4. Wait for the pre-purge time to elapse. If the ignition setpoint has been entered before, the drives will move\nto their ignition positions once all drives stop moving P2 (ignition) will be displayed, if a change is required\nor the ignition setpoint has not been entered before, move all the motors being used to their required\nignition positions and press ENTER.\n5. To attempt ignition of the burner, hold down the NEXT key for approximately three seconds. If it is\nwished to change the ignition position adjust the relevant drive(s) and press ENTER, if the position is\nacceptable press NEXT. Once the relevant safety times have elapsed P3 will be displayed.\n6. If the low fire setpoint has been entered before and no change is required, press NEXT. Otherwise, move\neach drive to the required low fire position and press ENTER. P4 (next profile setpoint above low fire) is\ndisplayed.\n7. Repeat step 6 for each required profile setpoint, up to a minimum of P4 and a maximum of P23.\n8. Leave commission ratio mode. The last profile setpoint entered will become the high fire setpoint.\n. If a controlled shutdown occurs, the controller will return to step 2. The setpoints entered in the current\ncommissioning session are not lost and the NEXT key may be used to step through the start-up\nsequence and fire the burner.\n. If a non-volatile lockout occurs, the setpoints are kept in the same way as for a controlled shutdown. It\nwill be necessary to remove all faults before moving further than step 2.\n. If power is removed from the controller the setpoints entered in the current commissioning session will\nbe lost.\n127",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Comments"
+          ],
+          [
+            "P0",
+            "Close",
+            "This defines the positions the motors will move to when the burner is off, and must be set to the lowest position each motor can reach."
+          ],
+          [
+            "P1",
+            "Purge",
+            "This defines the positions the motor will move to when the burner is purging, and can be set as required for each servo-motor."
+          ],
+          [
+            "P2",
+            "Ignition",
+            "Position during ignition. May be outside the normal firing range."
+          ],
+          [
+            "P3",
+            "Low fire",
+            "Low fire setpoint, (unless limited modulation range is selected)."
+          ],
+          [
+            "Px",
+            "High fire",
+            "High fire setpoint, (unless limited modulation range is selected), which is the last setpoint entered (max. P24)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\n5.6.3 Leaving commission ratio mode\nCommission ratio mode\nRUN\nENTER\nRun mode\nTo leave commission ratio mode and return to run mode, press the key labeled RUN followed by the key\nlabeled ENTER.\n. If P3 (or higher) has been commissioned, the existing profile will be overwritten. If you do not wish\nthe existing profile to be overwritten, disconnect the power to the control without pressing RUN and\nENTER.\n. Only the setpoints used in the current commissioning session will be stored. For example, if an\nexisting profile has setpoints up to P15 but only the setpoints up to P10 were viewed or altered, then only\nthe setpoints up to P10 will be stored. Therefore, it is vital that NEXT is pressed to get to the last setpoint\nin the profile before leaving commission ratio mode. This does not apply if only the close, purge or ignition\nsetpoints (P0, P1 or P2) are altered.\n5.7\nAdjust ratio mode\n5.7.1\nDescription\nAdjust ratio mode is used only for changing an existing profile.\n· Using adjust ratio mode, it is possible to modify the motor positions for any setpoint in the firing range from\nlow to high fire (P3 and higher).\n· The setpoints may be chosen in any order.\n. It is not possible to modify any motor position so that it is higher than the high fire setpoint.\n. It is not possible to modify the close, purge or ignition positions (PO, P1 or P2 respectively). For this,\ncommission ratio mode must be used.\n5.7.2\nEntering adjust ratio mode\nRun mode, burner on\nCOM\nSupplier passcode\nENTER\nTo enter adjust ratio mode, turn the burner on. Once the burner begun its startup sequence, press the key\nlabeled COM and obtain the adjust ratio passcode value using the UP/DOWN keys. Once the correct\npasscode value has been obtained, press the key labeled ENTER.\nIf the entered passcode was correct, 'A n' will be seen on the display, where n is the number of the setpoint\ncurrently under adjustment.\nEntering the commission ration passcode wile the burner is ON enters \"Adjust Ratio\" mode\n128",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\n5.7.3 Using adjust ratio mode\nCAUTION\n!\n. Use extreme care while commissioning the system. While operating in adjust\nratio mode the safety of the system is the sole responsibility of the\ncommissioning engineer.\n· Incorrect positioning of any drive could cause a hazardous situation to occur.\n· To adjust the position of a servo-motor or inverter, select the relevant drive and use the UP/DOWN keys.\n. To change the setpoint being modified, using the scroll key select the setpoint and then use the UP/DOWN\nkeys.\nEach setpoint in the profile is referred to with a letter and number.\nNo.\nName\nComments\nA0\nClose\nThe close setpoint cannot be altered in adjust ratio mode.\nA1\nPurge\nThe purge setpoint cannot be altered in adjust ratio mode.\nA2\nIgnition\nThe ignition setpoint cannot be altered in adjust ratio mode.\nA3\nLow fire\nLow fire setpoint.\nAx\nHigh fire\nHigh fire setpoint, which was the last setpoint entered (max P24)\nThe procedure for modifying a setpoint is as follows:\n1. Enter adjust ratio mode. 'A n' is displayed in the window, where n is the number of the setpoint that is\nclosest to the current firing position.\n2. Use the scroll key to select the setpoint and use the UP/DOWN keys to move to the setpoint in the firing\nrange to be altered.\n3. Wait for the 'A n' display to stop flashing and modify the drive(s) as required.\n4. If the modified positions are not required, press the NEXT key to return the drive(s) to their original\npositions or use the scroll key to move to a different setpoint.\n5. Press the ENTER key to store the new drive positions for the current setpoint.\n6. Repeat steps 2-5 as required. Each time step 5 is completed, the new positions will be stored\npermanently.\n7. Leave adjust ratio mode.\nIf the 'A n' display is flashing, it will not be possible to adjust the position of any of the drives. This may be for\none of the following reasons:\n. The burner is not firing. Switch the burner on and wait for the control to begin modulating.\n. The current setpoint is A0, A1 or A2. Use commission ratio mode to adjust these setpoints.\n. The drive(s) are moving to the required positions. Wait for the drive(s) to stop moving.\n129",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Comments"
+          ],
+          [
+            "A0",
+            "Close",
+            "The close setpoint cannot be altered in adjust ratio mode."
+          ],
+          [
+            "A1",
+            "Purge",
+            "The purge setpoint cannot be altered in adjust ratio mode."
+          ],
+          [
+            "A2",
+            "Ignition",
+            "The ignition setpoint cannot be altered in adjust ratio mode."
+          ],
+          [
+            "A3",
+            "Low fire",
+            "Low fire setpoint."
+          ],
+          [
+            "Ax",
+            "High fire",
+            "High fire setpoint, which was the last setpoint entered (max P24)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\n5.7.4 Leaving adjust ratio mode\nAdjust ratio mode\nRUN\nENTER\nRun mode\nTo leave adjust ratio mode and return to run mode, press the key labeled RUN followed by the key labeled\nENTER.\n5.8\nInterrogating the software issue\nThere are two methods for finding the software issue:\n1. From run mode, press the COM key. The Fireye version number will appear.\n2. Use the engineer's key (refer to section 6.6 for details.) and scroll up to EK200 for the current Fireye\noperating version.\n130",
+      "tablas": []
+    }
+  ]
+}

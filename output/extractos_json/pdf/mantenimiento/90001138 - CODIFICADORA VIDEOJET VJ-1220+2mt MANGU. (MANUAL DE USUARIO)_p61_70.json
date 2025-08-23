@@ -1,0 +1,103 @@
+{
+  "archivo": "90001138 - CODIFICADORA VIDEOJET VJ-1220+2mt MANGU. (MANUAL DE USUARIO)_p61_70",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nShaft Encoder\nSource (Fuente del\ncodificador de eje)\nConfigure el codificador de eje en la opción Internal\n(Interno) para obtener una velocidad de línea fija.\nEstablezca la opción External (Externo) para utilizar\nun codificador de eje compatible cuando la velocidad\nde línea sea variable.\nNota: si se utiliza un encoder externo, el usuario debe además\nintroducir el tipo de encoder (sin cuadratura, A entonces B, o\nB entonces A)\nConfigure Auto Encoder (Codificador automático) para\nutilizarlo cuando cambie la velocidad de producto,\nporque el producto se deslice en la cinta.\nPhotocell Source\n(Fuente de la\nfotocélula)\nLa impresora se activa desde la fuente externa 1 (opción\nde conexión estándar), o Externa 2.\nNota: una opción de \"ninguno\" también está disponible en el\ncampo de Fuente de Fotocélula.\nPrint acknowledge\n(Confirmación de\nimpresión)\nEnvía una señal a un sistema de control externo\n(normalmente a través de un conector COMM1).\nExisten cuatro opciones\n1. Off\n(Desactivado)\nNo se envía la señal de confirmación\nde impresión.\n2. After Compile\n(Después de la\ncompilación)\nEl caracter de confirmación de\nimpresión se envía después de que\nse haya realizado la actualización\nde información dinámica, como por\nejemplo Clock Codes (Códigos del\nreloj) o información de contadores\nen el mensaje.\nPrint ACK ASCII\ncode (Imprimir\ncódigo ACK ASCII)\nConfigura el código de caracteres ASCII (0 a 255) que\nse envía al sistema de control.\nThrow distance\n(Distancia de\nlanzamiento)\nDeberá introducir la distancia a configurar entre el\ncabezal de impresión y el producto.\nTabla 4-3: Menú Print Control (Control de impresión)\nManual Print Option (Opción de impresión manual)\nSeleccione Manual Print (Impresión manual) (Figura 4-23 en la página 4-16)\nen el menú Print (Imprimir) si no necesita iniciar la impresión desde una\nfuente externa. Cuando emita el comando de impresión, la impresora\nimprimirá una copia del mensaje.\nRev AA\nConfiguración de la impresora\n4-17",
+      "tablas": [
+        [
+          [
+            "Shaft Encoder Source (Fuente del codificador de eje)",
+            "Configure el codificador de eje en la opción Internal (Interno) para obtener una velocidad de línea fija. Establezca la opción External (Externo) para utilizar un codificador de eje compatible cuando la velocidad de línea sea variable. Nota: si se utiliza un encoder externo, el usuario debe además introducir el tipo de encoder (sin cuadratura, A entonces B, o B entonces A) Configure Auto Encoder (Codificador automático) para utilizarlo cuando cambie la velocidad de producto, porque el producto se deslice en la cinta."
+          ],
+          [
+            "Photocell Source (Fuente de la fotocélula)",
+            "La impresora se activa desde la fuente externa 1 (opción de conexión estándar), o Externa 2. Nota: una opción de \"ninguno\" también está disponible en el campo de Fuente de Fotocélula."
+          ],
+          [
+            "Print acknowledge (Confirmación de impresión)",
+            "Envía una señal a un sistema de control externo (normalmente a través de un conector COMM1). Existen cuatro opciones"
+          ],
+          [
+            "",
+            "1. Off (Desactivado)",
+            "No se envía la señal de confirmación de impresión."
+          ],
+          [
+            "2. After Compile (Después de la compilación)",
+            "El caracter de confirmación de impresión se envía después de que se haya realizado la actualización de información dinámica, como por ejemplo Clock Codes (Códigos del reloj) o información de contadores en el mensaje."
+          ],
+          [
+            "Print ACK ASCII code (Imprimir código ACK ASCII)",
+            "Configura el código de caracteres ASCII (0 a 255) que se envía al sistema de control."
+          ],
+          [
+            "Throw distance (Distancia de lanzamiento)",
+            "Deberá introducir la distancia a configurar entre el cabezal de impresión y el producto."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nCómo utilizar la opción de impresión continua\nSi habilita el modo Impresión continua (Figura 4-23 en la página 4-16), el\nmensaje se imprime de forma continua. El mensaje se imprime sólo si se activa la\ndetección de entrada de producto. Si debe imprimir los mensajes en intervalos de\ntiempo correctos y regulares en productos continuos, esta opción resulta útil.\n1 Seleccione Impresión continua desde el menú Imprimir. Aparecerá el cuadro\nde diálogo Impresión continua (Figura 4-25).\n2 Seleccione Activado por PEC. Esto le permite ver el borde ascendente o\ndescendente en la fotocélula en la que desea iniciar la impresión.\nNota: Si habilita la opción Activado por PEC, la impresora deberá recibir\nuna señal delantera o trasera (del producto) desde la fotocélula para iniciar\nel proceso de impresión.\n3 O seleccione Con enlace PEC. Esto le permite ver una señal fija (es decir, un\nsubstrato) para continuar imprimiendo.\nNota: Si habilita la opción Con enlace PEC, la impresora deberá recibir una\nseñal continua para continuar con el proceso de impresión.\nImpresion continua\nModo continuo\nRetardo de tiempo (mseg)\n200.000\nModo de tiempo\nLimitación de impresión continua\nLimite de impresión continua\nFotocélula activada\n2\nActivar\nFotocélula modo puente\nFigure 4-25: Cuadro de diálogo Impresión continua\n4 Configure la demora del Modo SE para utilizar pulsos del codificador del eje\nexterno y ajustar la distancia entre el inicio de cada una de las impresiones.\nrImpresion continua-\nModo continuo\nPulsos SE\n20320\nModo SE\nLimitación de impresión continua\nActivar\nLimite de impresión continua\nFotocélula activada\n2\nFotocélula modo puente\nFigure 4-26: Mode SE\n5 Si no hay codificador de eje externo, configure el Tiempo de demora del\nmodo para utilizar los pulsos creados de forma interna para configurar la\ndistancia entre cada impresión.\n4-18 Configuración de la impresora\nRev AA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nImpresion continua\nModo de tiempo\n200.000\nActivar\n2\nModo continuo\nRetardo de tiempo (mseg)\nLimitación de impresion continua\nLimite de impresión continua\nFotocélula activada\nFotocélula modo puente\nFigure 4-27: Modo de tiempo\n6 Configure el tiempo de demora requerido para el modo seleccionado dentro\nde un rango de 1 a 10.000.\n7 Ajuste el retardo de Modo de distancia para utilizar un intervalo de distancia\ndefinido por el usuario para fijar la distancia entre el inicio de cada\nimpresión.\nImpresión continua-\nModo continuo\nModo de distancia\nIntervalo de impresión (pulgadas) 8.000\nLimitación de impresión continua\nLimite de impresión continua\nFotocélula activada\nFotocélula modo puente\nActivar\n2\nFigure 4-28: Modo de distancia\nDIN Print (Impresión DIN)\nLa impresión DIN invierte y revierte las impresiones alternativas, de\nforma que el mensaje puede leerse en cualquier dirección. Este método\nse utiliza al imprimir en cables.\nRev AA\nConfiguración de la impresora\n4-19",
+      "tablas": [
+        [
+          [
+            ""
+          ],
+          [
+            "Impresion continua",
+            "Modo de tiempo 200.000 Activar 2 :unselected: :unselected:"
+          ],
+          [
+            "Modo continuo"
+          ],
+          [
+            "Retardo de tiempo (mseg) Limitación de impresion continua Limite de impresión continua Fotocélula activada Fotocélula modo puente"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nCómo imprimir mensajes\nAntes de comenzar el proceso de impresión debe seleccionar un mensaje.\nCómo seleccionar un mensaje\nLa Pantalla rápida muestra el mensaje que está listo para imprimirlo\nen un recuadro en la parte inferior de la pantalla. El nombre del mensaje\npodrá verse en la parte superior del recuadro, que también contendrá\nuna vista preliminar del mismo.\nPara seleccionar un mensaje, realice las siguientes tareas:\n1 Abra el menú Messages (Mensajes) y seleccione la opción Select Print\nMessage (Seleccionar mensaje de impresión). Aparecerá el cuadro de\ndiálogo Select Message to Print (Seleccionar mensaje para su impresión).\nMensajes\nEditor\nCampos de usuaric\nSeleccionar mensaje de impresión\nParámetros de mensaje\nParámetros predeterminados\nEditar mensaje\nNuevo mensaje\nEliminar mensaje\nCopiar mensaje\nFuente de selección de mensaje\nEditar tabla de selección externa\nEliminar todos los mensajes\nMostrar el espacio libre del mensaje\nSeleccionar mensaje para imprimir-\narab\nCALYPSO\nch\nEan8\ninvertreverse\nJap\nTEST MESSAGE\ntime-date\nviet\nvietnam\nFigura 4-29. Select Print Message (Seleccionar mensaje de impresión)\n2 Pulse la tecla flecha Arriba o la tecla flecha Abajo para resaltar el mensaje\nque desee. El mensaje resaltado se muestra en la parte WYSIWYG de\nla pantalla.\nNota: Es posible introducir el nombre del mensaje que seleccionó para\nimprimir. La barra del selector resalta automáticamente el mensaje necesario.\n3 Pulse la tecla Enter para seleccionar el mensaje para su impresión.\nEl mensaje seleccionado se muestra en la parte WYSIWYG\nde la pantalla.\nCómo iniciar la impresión\nLa secuencia predeterminada es Clean Start (Inicio Limpio de Chorro).\nNota: Es posible seleccionar la opción Quick Start (Inicio rápido) para activar\nel inyector. Los técnicos de mantenimiento utilizan esta función. Para obtener\nmás información, consulte el manual de mantenimiento.\n1 Pulse la tecla F1 para empezar la secuencia de arranque de impresión.\n4-20 Cómo imprimir mensajes\nRev AA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nDurante la secuencia, el icono de impresión\nen curso se ilumina en\nel display. La secuencia lleva aproximadamente un minuto. Cuando la\nsecuencia se completa, el icono se enciende continuamente.\n2 Para empezar el proceso de impresión, se requieren las siguientes\noperaciones:\n· La impresión debe estar activada (vaya a Imprimir > Impresión\nactivada. A continuación, aparece el menú Control de impresión.\nSeleccione Activar) (Tecla rápida: ALT + F1).\n· El sensor de producto debe enviar una señal desencadenante.\n· Puede ser necesario ajustar los parámetros del mensaje.\n· Puede que sea necesario modificar el nivel de la fotocélula. (acceda\na Configurar >Niveles de Fotocelda).\nNota: Cuando la impresion está habilitada, el led verde del teclado debe\nquedar prendido siempre.\nSupervisar la impresión\nCuando la impresora esté en funcionamiento, utilice los siguientes\nparámetros para supervisar el estado:\n· Los iconos de estado de la pantalla\n· Los LED del teclado\n· La luz de la pila (opcional)\nCómo detener la impresión\nDesactive la impresión para dejar de imprimir (vaya a Imprimir >\nImpresión activada. A continuación, aparece el menú Control de\nimpresión. Seleccione Desactivar) (Tecla rápida: ALT + F1).\nPuede utilizar las secuencias Parada Limpia o Parada Rápida para detener\nla inyección a la vez que la impresión. La secuencia por defecto es Parada\nLimpia. La secuencia Parada rápida se utiliza por técnicos de servicio.\nAcuda el manual de servicio para más información.\nPulse la tecla F1 para arrancar la secuencia de detención de inyectores.\nNota: cuando se activa la impresión, el LED verde en el teclado se enciende\ncontinuamente.\nRev AA\nCómo imprimir mensajes 4-21",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nDurante la secuencia, el icono de detención de chorro\nX\nparpadeará\nen pantalla. La secuencia tarda un minuto en finalizar. Una vez finalizada\nla secuencia, el icono quedará activado de forma continua.\nLa impresión se detiene automáticamente después de completar la\nsecuencia de detención de chorro.\nNota: No apague la impresora hasta que haya finalizado el ciclo de lavado.\nCómo instalar e imprimir fuentes personalizadas\nEste procedimiento muestra cómo instalar fuentes personalizadas e cómo\nimprimir mensajes usando la fuente personalizada.\n· La altura de la fuente personalizada debe coincidir con la altura de la\nfuente estándar disponible en la impresora. A continuación\nencontrará la lista de alturas de fuente disponibles.\n- altura 5\n- altura 7\n- altura 9\n- altura 12\n- altura 16\n- altura 24\n- altura 34\n· El archivo de fuente personalizada debe estar en formato *. abf2.\n· La convención de nombres de la fuente debe estar en\nxxhigh_custom.abf2. donde xx representa la altura de la fuente.\n(Ejemplo: un archivo de fuente personalizada de altura 16 debe\ndenominarse 16high_custom.abf2).\nInstalación\nPara instalar una fuente personalizada, realice las siguientes tareas:\n1 Copie la fuente personalizada que desee instalar en el directorio raíz\nde una unidad Flash USB.\n2 Inserte la unidad Flash USB en el puerto USB del lateral de la\nimpresora.\n3 Pulse la tecla Ctrl + F4 para mostrar los archivos de la unidad USB.\n4-22\nCómo instalar e imprimir fuentes personalizadas\nRev AA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\n4 Seleccione el archivo de fuente que va a instalar.\n5 Pulse la tecla Intro. Aparecerá el siguiente mensaje en la pantalla para\nconfirmar la actualización.\n-Confirmar\nFavor confirme actualización\nI Pulse Intro para continuar o Esc para salir\n6 Pulse la tecla Intro. Aparecerá el siguiente mensaje en la pantalla.\nNota: El usuario deberá esperar unos segundos hasta que aparezca el mensaje\npara apagar y encender la impresora.\nApague y encienda la impresora\nLoprime cualquier tecla para contin\n7 Apague y encienda la impresora para que las actualizaciones se\nconfiguren.\nCreación e impresión de mensajes\nRealice las siguientes tareas para crear e imprimir un mensaje usando\nfuentes personalizadas:\n1 Pulse la tecla F3 (mientras esté en la pantalla Editor) para que\naparezca la pantalla Atributos del editor.\nAtributos del editor\nInvertir\nRevertir\nUtilizar fuente personalizada\nReloj\nDoble punto\nTriple punto\nImpresión en torre\nCódigo de barras\nDigito de control\nVideo inverso\nNinguna\nFigura 4-30. Atributos del editor\n2 Seleccione Tipo de fuente como personalizada y pulse la tecla Intro.\n3 Pulse la tecla F1 para seleccionar la fuente personalizada.\nNota: Ajuste la altura de la fuente para que coincida con la altura de la fuente\npersonalizada.\nRev AA\nCómo instalar e imprimir fuentes personalizadas\n4-23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\n4 Introduzca el mensaje en el editor de mensajes.\n5 Pulse Shift + F1 para guardar y salir.\nNota: Seleccione el mensaje para imprimir, si el mensaje no se ha cargado.\nApagado de la impresora\nPrecaución\nDAÑOS AL EQUIPO. Apague la impresora después de finalizar el\nciclo de detención de chorro. No seguir esta precaución puede\nderivar en tener que realizar tareas de mantenimiento adicionales.\nPrecaución\nDAÑOS AL EQUIPO. No arranque y detenga la impresora muchas\nveces.\nCuando detiene la impresora, ésta utiliza el fluido diluyente\npara lavar el sistema. Si inicia y detiene la impresora en repetidas\nocasiones, la impresora utilizará grandes cantidades de fluido\ndiluyente. El aumento del uso de disolvente puede provocar un\nerror de Alto Nivel de Tinta en el Core y baja viscosidad de la tinta.\nPara prevenir este problema, haga un arranque y parada rápidos\nPulse el interruptor de encendido principal para apagar la impresora.\nNota: Se recomienda encender la impresora una vez cada 10 días. Si la impresora\npermanece apagada durante más de 10 días, se recomienda seguir la rutina de\napagado prolongado. Consulte \"Cómo preparar la impresora si va a estar apagada\ndurante un periodo largo (almacenamiento) o para transportarla\" en la página 6-2\nsi desea obtener información sobre el procedimiento.\n4-24 Apagado de la impresora\nRev AA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\nRev AA\nApagado de la impresora\n4-25",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Videojet 1220/1520 Bedienungsanleitung\n4-26 Apagado de la impresora\nRev AA",
+      "tablas": []
+    }
+  ]
+}

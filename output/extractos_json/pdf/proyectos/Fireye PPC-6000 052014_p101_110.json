@@ -1,0 +1,343 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p101_110",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nOptions 24.x - Sequencing\nSequencing (lead/lag) is managed by using the \"setpoint select\" function internally to choose between Setpoint\n1 and Setpoint 2 via the communications bus between PPC6000's. The \"lead\" or \"master\" boiler controls the\n\"lag\" or \"slave\" boiler(s) by switching them from setpoint 2 (\"lag stand by\" or \"banking\") to the setpoint 1 values,\nand turns on based on Option 24.6 (lag (slave) On Rate) value. The lead boiler will override the modulation\nrate of the last lag boiler to come on and cause it to modulate in unison with the lead (master) boiler. If both\nthe lead (master) boiler and last lag (slave) boiler remain above the Option 24.6 value another lag (slave)\nboiler will be started after Option 24.7 (lag (slave) on delay) value has expired. Other lags (slaves) that are on\nwill remain at high fire until the last lag is turned off. At this point, the next lag boiler will begin to modulate with\nthe lead (master) and so on until the lead (master) is carrying the load. The sequence in which boilers are\nturned on is set in Option 24.1-24.3 via communications addresses of each PPC6000. When a lead (master)\nboiler is deselected as lead (master) and Option 24.0 has not been changed to 0, the boiler remains as lead\n(master) until a new lead (master) takes control. Once the new lead (master) takes control, the previous lead\n(master) may be turned off based on the demand and Option 24.1-24.3 settings.\nIf the lead (master) boiler is turned off, or fails to come on within three minutes, while operating as the lead,\nsequencing will be disabled and all lag (slave) boilers will revert to their own PID settings. Should a lag boiler\nfail to come on within three minutes, or the PPC6000 is faulted, sequencing will immediately call for the next\nlag in the priority list.\nIf the lead (master) boiler is switched to manual modulation it will remain as lead bringing on lag (slave) boilers\nas required. This will allow the operator to \"base load\" a lead boiler if required.\nThe PPC6000 can be the \"master\" (lead) boiler in a system that has PPC5000 or NX3100/4100 series as the\ncommunications message are the same. The PPC6000 cannot be controlled by the PPC5000 or NX3100/4100\nseries controls as a boiler.\nStand by or Banking values\nThe \"lag stand by\" or \"banking\" temperature or pressure is entered as PID 2 or Setpoint 2 values however,\noptions 22.2, 22.3, 22.4 (the P, I and D) values are unnecessary as the burner will start and remain at low fire\nuntil the \"lag stand by\" or \"banking\" cut out is reached. These values will be entered by;\n1. Setting option parameter 22.0 to 1 (Enable Setpoint 2)\n2.\nSetting option parameter 22.1 to the desired setpoint value when in stand by.\n3. Setting option parameter 22.5 to 1 (Absolute Value)\n4. Setting option parameter 22.6 to the desired cut in value when in stand by.\n5. Setting option parameter 22.7 to the desired cut out value when in stand by.\nFor example: If the normal operating setpoint is 100 PSI, and the desired stand by pressure is 75 PSI. The\nsetup would be:\nOption Parameter\n22.0\n22.1\n22.5\n22.6\n22.7\nSetting\n1\n75\n1\n75 (cut in or minimum pressure)\n80 (cut out or maximum pressure)\n101",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nSTANDBY WATER TEMPERATURE FOR STEAM BOILER\nIf a steam boiler is being banked based on boiler temperature, a temperature sensor must be fitted into the\nboiler water jacket. The temperature sensor must be a 4-20mA device. If this device is to be loop-powered by\nthe PPC6000, it should be connected to the 30V output, \"sensor supply\" on PA16. See option 25.0 - 25.5.\nExample:\nFireye Temp. Sensor - TS350\nPPC6000\nSensor Terminal (1) 4-20mA\nPPC6000 Terminal\nPB8 or PA12\nSensor Terminal (2) Current\nPPC6000 Terminal\nPA5, PA6, PA7, PA8\nThe blocks program needs to be 15 or higher.\nEK200 shows the current version\nOption/Parameters\n20.7 = 0 - If using AUX. input 5. Using inputs 1, 2, 3 will allow the boiler water temperature to be displayed on\nthe TSD104. Input 4 will NOT.\n25.0 = 1 - Analog input 1, (PA5 to PA12 or PB8. Input 2,3 & 4 will also be powered from PA12 or PB8.\n25.1 = 32, Zero value of temp. sensor.\n25.2 = 350, Span value of temp. sensor.\n25.3 = Cut-in temp.\n25.4 = Cut-out temp.\nNo PID involved, lag boiler will turn on and off on low fire.\nRelevant Engineers Keys:\nEK115, EK120 to EK139 and EK159\nNOTE: When using sequencing, setpoint 2 is unavailable for use with any digital input unless the boiler is\nremoved from sequencing completely.\nOption 24.0 Sequence Slaves (number of boilers) (0-3) LV1\nThis option is set to 1, 2 or 3 in each PPC6000 to equal the number of lag \"slave\" boilers in the system. Once\nset, option parameters 24.1, 24.2, and 24.3 will become available. If the value is set to 0 the boiler will be\ntaken out of sequencing and operate on its own PID.\nNOTE: OPTION PARAMETER 00.6 MUST BE SET TO 0 FOR SEQUENCING TO OPERATE. ON NEWER\nPPC6000's, Option 0.6 has been moved to the NX610 display. Press and hold the DATA key for 5 seconds.\nPosition the cursor to NORM for sequencing. See Section 4.1 for details.\nOption 24.1 -24.3 Priority Number(s) LV1\nThe order in which boilers sequence on is entered as the communication address(s) of the boilers in Options\n24.1, 24.2 and 24.3. The first to be turned on will have a priority number one above that of the lead boiler.\nFor example: If the communications address of the four boilers were 1, 2, 3, and 4 (set in Option 0.2), boiler 1\nmaster (lead), with the following entered in Options 24.1-24.3\n102",
+      "tablas": [
+        [
+          [
+            "Example:",
+            ""
+          ],
+          [
+            "Fireye Temp. Sensor - TS350",
+            "PPC6000",
+            ""
+          ],
+          [
+            "Sensor Terminal (1) 4-20mA",
+            "PPC6000 Terminal",
+            "PB8 or PA12"
+          ],
+          [
+            "Sensor Terminal (2) Current",
+            "PPC6000 Terminal",
+            "PA5, PA6, PA7, PA8"
+          ],
+          [
+            "The blocks program needs to be 15 or higher. EK200 shows the current version",
+            "",
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\nOption parameter\n24.x value\nComms. Address\nBoiler\n24.1\n2\n2\n24.2\n3\n3\n24.3\n4\n4\nThe sequencing order would be boiler 2, 3 and 4. If boiler 2 were set to lead via Option 24.5, the order would\nbe boiler 3, 4 and 1. Setting boiler 3 to master (lead), the order would be boiler 4, 1 and 2. Other sequencing\norders can be achieved by changing the communications address entered in Options 24.1-24.3.\nNote: Communications addresses should be changed while the boilers are not in sequencing (more\nthan one boiler on) so as not to disrupt operation.\nOption 24.4 - Lead OFF Time LV1\nDEFAULT 0 (after June 2011)\nNOTE: MUST BE SET TO 3 MINUTES (3) OR GREATER FOR PROPER OPERATION.\nThis option allows the lead boiler to remain in control of all lags up to 999 minutes after the lead is turned off.\nThis may be useful during low water testing or if the burner is recycled for some reason. This is especially\nuseful on low pressure steam boilers.\nOption 24.5 - Lead (master) Boiler Select Method LV1\nThis option parameter selects the lead (master) boiler via the keypad, digital input or communications (Comfire\n2). The values are:\n0 = Not lead, operates on own PID or as commanded by master (lead)\n1 to 3 makes lag boilers modulate to their own setpoint 1 PID when commanded to be\nON as follows:\n1 = lead (master) via Keypad\nNOTE: On newer NX610 Keypads, press and hold the Data key for 5 seconds,\nthen move cursor to for right. The word \"lead\" in lower case indicates the keypad\nhas this boiler set to lag. Pressing the Com key will cause the \"lead\" to switch to\nupper case \"LEAD\". This indicates the boiler is now Lead via Keypad.Pressing\nthe Data key return you to the normal screen.\n2 = lead (master) via digital input. (Digital Input Selected via Option 20.8)\n3 = lead (master) via communications such as Comfire 2.\n4 - Not a lead boiler (lag only) - Same as setting \"0\"\n5 to 7 makes lag boilers modulate in unison with the lead when commanded to be ON\nas follows\n5 = lead (master) via Keypad as above.\n6 = lead (master) via digital input. (Digital Input Selected via Option 20.8)\n7 = lead (master) via communications such as Comfire 2.\nNote: When a lead (master) boiler is deselected as lead (master) and Option 24.0 has not been\nchanged to 0, the boiler remains as lead (master) until a new lead (master) takes control. Once the new\nlead (master) takes control, the previous lead (master) may be turned off based on the demand and\nOption 24.1-24.3 settings.\n103",
+      "tablas": [
+        [
+          [
+            "Option parameter 24.x value",
+            "Comms. Address",
+            "Boiler"
+          ],
+          [
+            "24.1",
+            "2",
+            "2"
+          ],
+          [
+            "24.2",
+            "3",
+            "3"
+          ],
+          [
+            "24.3",
+            "4",
+            "4"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nOption 24.6 - lag (slave) On Rate (0-100%) LV1\nThis value determines the firing rate of the lead (master) boiler at which the first and all subsequent slave(s)\n(lag) boilers come on. The slave(s) (lag) boiler(s) will be delayed in coming on by the time set in Option\nparameter 24.7. At this point, the lead (master) and the last \"lag on\" will begin to modulate in unison. If the\nlead (master) and modulate above this point, the next, as determined by priority number (Option 24.1, 24.2,\n24.3), will be turned on. When more than one boiler is on, the master and last slave will modulate in unison\nwhile the other slaves modulate on their own PID,\nOption 24.7 - lag (slave) On Delay (0-999 minutes) LV1\nThis option sets the time delay between the modulation rate of the lead (master) boiler (and last boiler on if\nany) exceeding the value set in Option 24.6 and the next being turned on.\nThis time may also include additional time as set in Option 25.6.\nOption 24.8 - lag (slave) Off Rate (0-100%) LV3\nWhen the lead (master) boiler and last boiler modulate below this modulation rate and exceed the value set in\nOption 24.9, the last turned on will be turned off. At this point, the lead (master) and the previous (if any) lag\nturned on will begin to modulate in unison until they together are below this setting. This will continue until only\nthe lead (master) boiler remains on.\nOption 24.9 - lag (slave) Off Delay (0-999 minutes) LV3\nThis option sets the time delay between the modulation rate is at or below the value set in Option 24.8 and the\nlast turned on being turned off. This also sets the time delay between successive slaves (lag) being turned off\nshould the modulation rate stay below the setting in Option 24.8.\nOption 25.0 - Banking based on temperature / water temperature standby for steam boiler LV3\nThis option sets which input will be used and the 4-20mA current input from the temperature sensor must be\nconnected into one of the 5 possible current inputs:\n0 = lag banking on temperature is not enabled.\n1 = uses analog input 1 (PB8 to PA5 input)\n2 = uses analog input 2 (PB8 to PA6 input)\n3 = uses analog input 3 (PB8 to PA7 input)\n4 = uses analog input 4 (PB8 to PA8 input)\n5 = uses analog input 5 (PA12 supply to PA13 input)\nNOTE - If a loop-powered sensor is used, the \"+\" to the sensor is taken from PB8/PA12 (\"sensor supply\", JP3\nmust be set to the \"30V\" position) and the \"-\" from the sensor is connected to PA5, PA6, PA7, PA8 or PA13\ndepending on which input number is to be used. If the temperature sensor gives a current feedback that is out of\nrange, i.e. Less than 3.5mA or greater than 21mA, lag banking on temperature will be cancelled and the sequence\nlag boiler will bank based on steam pressure.\n104",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nThe following option parameters are only visible if option 25.0 is non-zero:\nOption 25.1 - Water temperature zero value LV3\nSets the zero value for the 4-20mA input (usually 0 for a 0-xxx degree temperature sensor).\nOption 25.2 - Water temperature span value LV3\nSets the span value for the 4-20mA input (i.e. the sensor range xxx).\nOption 25.3 - Water temperature cut-in LV1\nSets the low banking cut-in temperature.\nOption 25.4 - Water temperature cut-out LV1\nSets the high banking cut-out temperature.\nOption 25.5 - Temperature based warming limit LV1\nThis works independently and in addition to the normal warming limit. If a non-zero value is entered in 25.5,\nthe burner will also hold at low fire, if the temperature drops below this limit.\nOption 25.6 - Lag wait time LV1\nThis option allows for additional time to be added before a second or third lag is started. This allows the\nprevious lag time to contribute to the lead before adding another lag.\nOption 28.0 - Analog Input decimals (0-2) LV3\n(Option 28.x is available on Firmware Version 1.204 and above (EK56))\nSet the number of decimal places for analog input 1 on PA5-PA11.\nOption 28.1 - Analog Input 1 zero (0-999) LV3\nSet the number to be displayed when the input 1 current is 4mA.\nOption 28.2 - Analog Input 1 span (0-999) LV3\nSet the number to be displayed when the input 1 current is 20mA. Setting this parameter to a non-zero value\nalso enables this item.\nNOTE: Setting the span value enables the item.\nOn the 2-line display the values can then be seen by scrolling with the <> keys in RUN mode. They\nwill always show up as \"Analog Input 1\" or \"Analog Input 2\" or \"Analog Input 3\"\nOn the touchscreen, the analog inputs appear on the right hand side list and can be added to the\ntrends chart, etc. Also the touchscreen gives us the flexibility to type in text to name these inputs\nlike the profiles can be (see screen configuration page on the touchscreen).\nOption 28.3 - Analog Input 2 decimals (0-2) LV3\nSet the number of decimal places for analog input 2 on PA6-PA11.\nOption 28.4 - Analog Input 2 zero (0-999) LV3\nSet the number to be displayed when the input 2 current is 4mA.\nOption 28.5 - Analog Input 2 span (0-999) LV3\nSet the number to be displayed when the input 2 current is 20mA. Setting this parameter to a non-zero value\nalso enables this item. See NOTE under Option 28.2.\nOption 28.6 - Analog Input 3 decimals (0-2) LV3\nSet the number of decimal places for analog input 3 on PA7-PA11.\n105",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nOption 28.7 - Analog Input 3 zero (0-999) LV3\nSet the number to be displayed when the input 3 current is 4mA.\nOption 28.8 - Analog Input 3 span (0-999) LV3\nSet the number to be displayed when the input 3 current is 20mA. Setting this parameter to a non-zero value\nalso enables this item. See NOTE under Option 28.2.\nOption 29.0 - 4-20mA Output 1 function if not VSD LV3\nSet this option to a value from the table below to enable an analog output to re-transmit system variables as a\n4-20mA signal.\nFor example, if this output is to represent Flue Gas Temperature, then set a value of 22.\nIf this output has been assigned for VSD control in option 3.x, then this setting will be ignored.\nValue\nFunction\n0\nDrive 0 Position\n1\nDrive 1 Position\n2\nDrive 2 Position\n3\nDrive 3 Position\n4\nDrive 4 Position\n5\nDrive 5 Position\n6\nDrive 6 Position\n7\nDrive 7 Position\n8\nDrive 8 Position\n9\nDrive 9 Position\n10\nSpare\n11\nSpare\n12\nMeasured value\n13\nBoiler Efficiency\n14\nInlet air temperature\n15\nFlue gas oxygen level\n16\nCalculated flue gas CO2 level\n17\nSpare\n18\nSpare\n19\nSpare\nOption 29.0, 29.3 and 29.6 function list:\nValue\nFunction\n20\nSpare\n21\nBoiler operating Setpoint\n22\nFlue gas temperature\n23\nSpare\n24\nSpare\n25\nSpare\n26\nSpare\n27\nSpare\n28\nSpare\n29\nSpare\n30\nBurner modulation rate\n31\nSpare\n32\nSpare\n33\nSpare\n34\nSpare\n35\nGas pressure\n36\nSpare\n37\nFlame signal\n38\nSpare\n39\nSpare\nOption 29.1 - Output1 zero value (4mA output) LV3\nSet this option to the value which a 4mA output represents. Often this will be zero, but non zero values may be\nused. For example, a value of 100 may be better suited for a minimum Flue Gas Temperature to ensure best\nresolution.\nIf this output has been assigned for VSD control in option 3.x, then this setting will be ignored.\nOption 29.2 - Output1 span value (20mA output) LV3\nSet this option to the value which a 20mA output will represent. For example, value of 200 may be better\nsuited for a maximum Flue Gas Temperature to ensure best resolution.\nIf this output has been assigned for VSD control in option 3.x, then this setting will be ignored.\n106",
+      "tablas": [
+        [
+          [
+            "Option 29.0, 29.3"
+          ],
+          [
+            "Value",
+            "Function"
+          ],
+          [
+            "0",
+            "Drive 0 Position"
+          ],
+          [
+            "1",
+            "Drive 1 Position"
+          ],
+          [
+            "2",
+            "Drive 2 Position"
+          ],
+          [
+            "3",
+            "Drive 3 Position"
+          ],
+          [
+            "4",
+            "Drive 4 Position"
+          ],
+          [
+            "5",
+            "Drive 5 Position"
+          ],
+          [
+            "6",
+            "Drive 6 Position"
+          ],
+          [
+            "7",
+            "Drive 7 Position"
+          ],
+          [
+            "8",
+            "Drive 8 Position"
+          ],
+          [
+            "9",
+            "Drive 9 Position"
+          ],
+          [
+            "10",
+            "Spare"
+          ],
+          [
+            "11",
+            "Spare"
+          ],
+          [
+            "12",
+            "Measured value"
+          ],
+          [
+            "13",
+            "Boiler Efficiency"
+          ],
+          [
+            "14",
+            "Inlet air temperature"
+          ],
+          [
+            "15",
+            "Flue gas oxygen level"
+          ],
+          [
+            "16",
+            "Calculated flue gas CO2 level"
+          ],
+          [
+            "17",
+            "Spare"
+          ],
+          [
+            "18",
+            "Spare"
+          ],
+          [
+            "19",
+            "Spare"
+          ]
+        ],
+        [
+          [
+            "29.6 function list:"
+          ],
+          [
+            "Value",
+            "Function"
+          ],
+          [
+            "20",
+            "Spare"
+          ],
+          [
+            "21",
+            "Boiler operating Setpoint"
+          ],
+          [
+            "22",
+            "Flue gas temperature"
+          ],
+          [
+            "23",
+            "Spare"
+          ],
+          [
+            "24",
+            "Spare"
+          ],
+          [
+            "25",
+            "Spare"
+          ],
+          [
+            "26",
+            "Spare"
+          ],
+          [
+            "27",
+            "Spare"
+          ],
+          [
+            "28",
+            "Spare"
+          ],
+          [
+            "29",
+            "Spare"
+          ],
+          [
+            "30",
+            "Burner modulation rate"
+          ],
+          [
+            "31",
+            "Spare"
+          ],
+          [
+            "32",
+            "Spare"
+          ],
+          [
+            "33",
+            "Spare"
+          ],
+          [
+            "34",
+            "Spare"
+          ],
+          [
+            "35",
+            "Gas pressure"
+          ],
+          [
+            "36",
+            "Spare"
+          ],
+          [
+            "37",
+            "Flame signal"
+          ],
+          [
+            "38",
+            "Spare"
+          ],
+          [
+            "39",
+            "Spare"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\nOption 29.3 - 4-20mA Output 2 function if not VSD LV3\nSet this option to a value from the table in 29.0 to enable an analog output to re-transmit system variables as a\n4-20mA signal.\nIf this output has been assigned for VSD control in option 3.x, then this setting will be ignored.\nOption 29.4 - Output2 zero value (4mA output) LV3\nSet this option to the value which a 4mA output will represent. Often this will be zero, but non zero values may\nbe used.\nIf this output has been assigned for VSD control in option 3.x, then this setting will be ignored.\nOption 29.5 - Output2 span value (20mA output) LV3\nSet this option to the value which a 20mA output will represent.\nIf this output has been assigned for VSD control in option 3.x, then this setting will be ignored.\nOption 29.6 - 4-20mA Output 3 function if not VSD LV3\nSet this option to a value from the table in 29.0 to enable an analog output to re-transmit system variables as a\n4-20mA signal.\nOption 29.7 - Output3 zero value (4mA output) LV3\nSet this option to the value which a 4mA output will represent. Often this will be zero, but non zero values may\nbe used.\nOption 29.8 - Output3 span value (20mA output) LV3\nSet this option to the value which a 20mA output will represent.\nCommissioning Oxygen Trim\n!\nCAUTION\n· Use extreme care when entering flow values and oxygen setpoints. Incorrect setting of\neither could cause a hazardous situation to occur.\n. If the flow values and oxygen setpoints have been up-loaded it is essential that the\ncombustion is verified at each firing position to ensure a hazardous condition cannot occur.\n· If using automatic oxygen trim commissioning it is the sole responsibility of the\ncommissioning engineer to ensure the values calculated by the system are correct and will\nnot cause a hazardous condition to occur.\n. Once the oxygen trim is commissioned the trim flow limit must be set to ensure a fault in\nthe oxygen trim will not cause a hazardous condition to occur.\nIn order for the oxygen trim system to function correctly, the following information must be entered:\n1. Enter the appropriate option parameters from 30.0 to 42.6 as required.\nWith the burner off, enter commission mode (See section 5). To get the trim operational it is only\nnecessary to address all option parameters with the\nsymbol\nO 2\nRefer to options 30.0 thru 42.6 inclusive for details of parameters that may be entered.\n107",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\n2. Flow values and O2 setpoints. The flow and O2 values may be entered manually by the engineer\n(option 34.5), or the system can automatically calculate the values and enter them itself by using\nautomatic trim commissioning (option 30.9).\nIf the automatic trim commissioning is performed, the engineer MUST CHECK THAT THE\nVALUES ENTERED ARE VALID AND SAFE AFTER COMPLETION. Additionally, the oxygen\nprobe calibration should be checked before and after the procedure since the results depend\nhighly upon measurements taken using the probe.\nBefore proceeding to enter the oxygen setpoints for each profile, a few points relating to the oxygen trim option\nshould be considered.\nNo trim is applied which would require a drive to move above its high fire position or below its low fire\nposition.\nThe flow for each profile position must be entered to ensure correct operation. The flow can either be\nmeasured for each profile position or calculated as a percentage with respect to the flow at high fire.\nUsing adjust ratio mode to modify and existing oxygen profile manually, follow steps 1 -12\nlisted below.\nCAUTION\n!\nWhen using the adjust ratio mode, it is not possible for the unit to check drive positions at all\ntimes. It is the responsibility of the engineer to check that motors and valves are responding\ncorrectly\nTo adjust an oxygen setpoint or enter an air flow value in the firing range, use the following procedure. The\nmanual calculation of the values to be entered here is covered in the next section.\n1.\nEnter adjust ratio mode (See section 5.6).\n2.\nEnsure oxygen trim is set to monitor only 30.5 = 0.\n3.\nUse the scroll keys to select the desired setpoint and move up and/or down (A4 for example). The\nsystem will modulate to the selected setpoint and the number displayed will flash to indicate that\nthe drives are modulating.\n4.\nWait for the number in the display to be illuminated steadily. This means that the drives have\narrived at the selected setpoint.\n5.\nThe display will allow scrolling sideways to show flow and '02' in addition to the servo-motor\npositions to indicate that the system is expecting a flow value and an oxygen setpoint to be\nentered for the current profile setpoint. To check the current oxygen measured value use the\nengineer's key EK44.\n6.\nOnce the oxygen value is shown on the display use the scroll keys to position the '>' pointing to\nthe 'O2' value use the UP/DOWN keys to adjust the oxygen setpoint as necessary. The display\nwill start flashing to indicate that a change has been made.\n108",
+      "tablas": [
+        [
+          [
+            "1.",
+            "Enter adjust ratio mode (See section 5.6)."
+          ],
+          [
+            "2.",
+            "Ensure oxygen trim is set to monitor only 30.5 = 0."
+          ],
+          [
+            "3.",
+            "Use the scroll keys to select the desired setpoint and move up and/or down (A4 for example). The system will modulate to the selected setpoint and the number displayed will flash to indicate that the drives are modulating."
+          ],
+          [
+            "4.",
+            "Wait for the number in the display to be illuminated steadily. This means that the drives have arrived at the selected setpoint."
+          ],
+          [
+            "5.",
+            "The display will allow scrolling sideways to show flow and '02' in addition to the servo-motor positions to indicate that the system is expecting a flow value and an oxygen setpoint to be entered for the current profile setpoint. To check the current oxygen measured value use the engineer's key EK44."
+          ],
+          [
+            "6.",
+            "Once the oxygen value is shown on the display use the scroll keys to position the '>' pointing to the 'O2' value use the UP/DOWN keys to adjust the oxygen setpoint as necessary. The display will start flashing to indicate that a change has been made."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\n7.\nIf the new oxygen setpoint value is wanted, press the ENTER key. The value will be stored in\nmemory.\n8.\nIf the new oxygen setpoint value is not wanted or an adjustment is not required, press the NEXT\nkey to return to the value stored in memory.\n9.\nOnce the flow value is shown on the display use the scroll keys to position the'>' pointing to the\n'FLO' value use the UP/DOWN keys to adjust the flow value as necessary. The display will show\nthe air flow value, represented as a percentage of the air flow when the drives are at the HIGH\nFIRE position. The display will start flashing to indicate that a change has been made.\n10.\nIf the new flow value is not wanted or an adjustment is not required, press the NEXT key to return\nto the value stored in memory.\n11.\nIf it is necessary to adjust another setpoint in the firing range, repeat the above procedure from\nstep 3.\n12.\nAfter modifying an existing O2 trim profile, use Option 30.8 to reset the feed forward function. See\noption 30.8 for details.\nO2\nOption 30.0 - Oxygen probe interface serial number LV3\nEach CANbus device connected to the system has a unique serial number allocated to it during production\ntesting. This number cannot be changed and is used to uniquely identify each device.\nWhen the system is in commissioning mode the serial number of all the connected devices is read by the\nPPC6000 and displayed as a 'list' to allow the selection of the relevant serial number unit to be made.\nScrolling the list in an upward direction will scroll through all oxygen probe interface options available until '0,\nnothing' is displayed. Enter this value to disconnect the specified device from any hardware.\nScrolling the list in a downward direction will stop when the currently selected item is displayed, and the value\nwill stop flashing.\nThe display will show type information for each device present (such as '02 probe'), but the commissioning\nengineer should be aware of which serial number device is being used for which function.\nO2\nOption 30.1 - Oxygen probe calibration offset value (0 - 999) LV3\nThis option parameter is only available if option 30.0 is non-zero.\nThis option parameter must be set to the calibration offset value that is specified with the Fireye probe\nsupplied.\nWhen using another manufacturer's O2 probe with a 4-20mA signal for 02 value, enter the O2 value for 4.0mA\nin this option parameter. Example 0% O2 = 000.\n109",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\nO2\nOption 30.2 - Oxygen probe calibration gain value (0 - 999) LV3\nThis option parameter is only available if option 30.0 is non-zero.\nThis option parameter must be set to the calibration gain value that is specified with the Fireye probe supplied.\nWhen using another manufacturer's O2 probe with a 4-20mA signal for the 02 value, enter the 02 value for\n20.0mA in this option parameter. Example 21% O2 = 210.\nNOTE: If the value of 30.1 and 30.2 are both below 300, the PPC6000will utilize the analog input on the\nNXO2INT terminals PL6 (+), PL7(-) to determine the O2 signal.\nOption 30.3 - Oxygen probe calibration gas concentration (0.00 - 9.99%) LV3\nThis option parameter is only available if option 30.0 is non-zero.\nThis option parameter must be set to the percentage oxygen concentration of the calibration gas used if the\nprobe is to be calibrated using a reference gas (see option parameter 30.6). The range of this parameter is\n0.00 - 9.99%.\nO2\nOption 30.4 - Flue and inlet sensor temperature units (0 - 1) LV3\nThis option parameter is only available if option 30.0 is non zero.\nThis option parameter must be set to select the units for display of both temperatures on either ºC or ºF.\nOption parameter\n30.4 value\nMeaning\n0\n°C. The temperature value will be displayed in °C.\n1\nºF. The temperature value will be displayed in °F.\nPlease note that temperature limits MUST be set in the correct units.\nIf a 4-20mA input is used for O2 signal, a NXIATS is required to calculate efficiency in conjunction with a K\ntype thermocouple measuring flue temperature, connected to the appropriate inputs in the NX02INT.\nO2\nOption 30.5 - Oxygen input function (0/1) LV3\nThis option parameter can only be set above 1 if option 30.0 is non zero.\nUsing this option parameter, it is possible to configure the oxygen input for a monitoring function or trim\nfunction. The two functions are explained below:\nOption parameter 30.5\nvalue\nMeaning\n0\nMonitor only. The oxygen value is only used to provide a display of the\nmeasured oxygen level.\n1\nClosed loop trim. The oxygen value is used to provide both a display of the\nmeasured oxygen level and a feedback signal for closed loop trim control\nfunction of the PPC6000 series control.\nOption 30.6 - Oxygen probe calibrate enable (0 - 2) LV3\n110",
+      "tablas": [
+        [
+          [
+            "Option parameter 30.4 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "°C. The temperature value will be displayed in °C."
+          ],
+          [
+            "1",
+            "ºF. The temperature value will be displayed in °F."
+          ]
+        ],
+        [
+          [
+            "Option parameter 30.5 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "Monitor only. The oxygen value is only used to provide a display of the measured oxygen level."
+          ],
+          [
+            "1",
+            "Closed loop trim. The oxygen value is used to provide both a display of the measured oxygen level and a feedback signal for closed loop trim control function of the PPC6000 series control."
+          ]
+        ]
+      ]
+    }
+  ]
+}

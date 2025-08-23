@@ -1,0 +1,278 @@
+{
+  "archivo": "30031431 - FLUJOM MAG MS2420 ISOIL CON TRANS MV210 (MANUAL)_p41_50",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "ISOMAG\nMENU 3 - SCALE\n(POS. 3.1-2) Flow Rate Full Scale 1-2\n[FS1-2= l/s xxxx.x]\n[FRFS1-FRFS2]\nThe FS2 (full scale flow rate 2) is active with POS. 6.6 see page 28 , enabled.\nAL2\nThe full scale is used to indicate to the maximum meter's flow rate. The full scale should be chosen\ncarefully as it's parameters are used for several other parameters. There are three fields to fill in order\nto set this parameter, from left to right: 1) measure unit, 2) time unit of measure and 3) numeric\nvalue. The selection is made by positioning the cursor on the field to modify. To change the type unit\nof measure (metric, Imperial units, mass or volume) see POS. 2.3 see page 27 and POS. 2.19 see\npage 27 and POS. 2.20 see page 27. The value of Fs1-2 depend nominal diameter POS. 1.4 see\npage 27. The following tables shown the units of measure available and the conversion factor by\ncomparison with 1dm3 and 1kg. The converter accepts any kind of combination of units of measure\nsatisfying both the following conditions:\nNumeric field value 99999\n1 1/25 fsmax ≤ numeric field value ≤ fsmax.\nWhere fsmax is the maximum full scale value corresponding to the sensor, equal to a 10m/s liquid speed.\nThe measure units are shown as appear on the display. The Imperial units units are diversified by using\ncapital and small characters.\nMETRIC\ncm3\nCubic\ncentimeter\nml\nMilliliter\nl\nLiter\ndm3\nCubic\ndecimeter\ndal\nDecalitre\nhl\nHectolitre\nm3\nCubic meter\nML\nMega Liter\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nNOT METRIC\nin3\nCubic inch\nGal\nAmerican gallon\nft3\nCubic foot\nbbl\nStandard barrel\nBBL\nOil barrel\nhf\nHecto cubic feet\nKGL\nAmerican Kilo gallon\nkf3\nKilo cubic feet\nttG\nTen thousand gallons\nIGL\nImperial gallon\nIKG\nImperial Kilo gallon\nAft\nAcre foot\nMGL\nMega gallon\nIMG\nImperial mega gallon\nMASS UNIT NOT\nMETRIC\nMASS UNIT\nMETRIC\nOz\nOunce\ng\nGram\nLb\nPound\nkg\nKilogram\nTon\nShort tons\nt\nTon\nWhen a measure mass unit is set, the specific gravity function is automatically enabled by the system.\nPlease, note that the mass measure is heavily affected by the temperature. With certain liquids this\nmay cause significant measurement errors. The following measure of time units can be selected: s =\nsecond, m = minute, h = hour, d = day .\nNOTES FOR USING THE MCP INTERFACE\nThe command FRFS1 =? and command FRS2 = ? , edited by MCP software, return a list of only the unit\ncompatible with the nominal diameter set. If the sensor is insertion type and the diameter is zero, the\nonly possible unit is m/s if the flow rate were chosen metric units, else f/s for the unit of measurement\nnon metric.\nISOIL\n38 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "METRIC"
+          ],
+          [
+            "cm3",
+            "Cubic centimeter"
+          ],
+          [
+            "ml",
+            "Milliliter"
+          ],
+          [
+            "l",
+            "Liter"
+          ],
+          [
+            "dm3",
+            "Cubic decimeter"
+          ],
+          [
+            "dal",
+            "Decalitre"
+          ],
+          [
+            "hl",
+            "Hectolitre"
+          ],
+          [
+            "m3",
+            "Cubic meter"
+          ],
+          [
+            "ML",
+            "Mega Liter"
+          ]
+        ],
+        [
+          [
+            "NOT METRIC"
+          ],
+          [
+            "in3",
+            "Cubic inch"
+          ],
+          [
+            "Gal",
+            "American gallon"
+          ],
+          [
+            "ft3",
+            "Cubic foot"
+          ],
+          [
+            "bbl",
+            "Standard barrel"
+          ],
+          [
+            "BBL",
+            "Oil barrel"
+          ],
+          [
+            "hf",
+            "Hecto cubic feet"
+          ],
+          [
+            "KGL",
+            "American Kilo gallon"
+          ],
+          [
+            "kf3",
+            "Kilo cubic feet"
+          ],
+          [
+            "ttG",
+            "Ten thousand gallons"
+          ],
+          [
+            "IGL",
+            "Imperial gallon"
+          ],
+          [
+            "IKG",
+            "Imperial Kilo gallon"
+          ],
+          [
+            "Aft",
+            "Acre foot"
+          ],
+          [
+            "MGL",
+            "Mega gallon"
+          ],
+          [
+            "IMG",
+            "Imperial mega gallon"
+          ]
+        ],
+        [
+          [
+            "MASS UNIT NOT METRIC",
+            "",
+            "MASS UNIT METRIC"
+          ],
+          [
+            "Oz",
+            "Ounce",
+            "g",
+            "Gram"
+          ],
+          [
+            "Lb",
+            "Pound",
+            "kg",
+            "Kilogram"
+          ],
+          [
+            "Ton",
+            "Short tons",
+            "t",
+            "Ton"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "(POS. 3.2) Batching quantity\nThis function is enabled when output1 is set to \"BATCHING\".\nIt allows to set the unit of measure and the batching quantity.\nAL2\nISOMAG\n[BTQTY]\n(POS. 3.3-3.5) Output Pulse 1-2 [Pls1-2= dm3 x.xxxxx]\nAL2\n[OP1PV-OP2PV]\nPls1 and Pls2 is active with POS. 7.1 see page 29 and POS. 7.2 see page 29, enable and setting pulse value on\nchannel 1 and channel 2. This function allows the user to set a signal (a pulse) to be given from the converter when\nadefinedamountofliquidhaspassedthroughthesensor. Tosettheparameter, completethe 2fields, fromlefttoright:\n1)measure unit, 2) numeric value. The selection is performed by positioning the cursor in the field to be\nmodified. To change the unit type (metric, British or American, mass or volume) see POS. 2.4 see page 27\nand POS. 2.5 see page 27, POS. 2.19 see page 27 and POS. 2.20 see page 27. The value of Pls1-\n2 depends on nominal diameter POS. 1.4 see page 27. Only those units described (POS. 3.1 see page\n28-POS. 3.3 see page 28) above are available to be selected.\n(POS. 3.4-3.6) Output1-2 Pulse Time\n[Tpls1-2= ms x.xxxxx]\nAL2 [OP1PT OP2PT]\nTpls1 and Tpls2 is active with POS. 7.1 see page 29 and POS. 7.2 see page 29 enable. Setting\nduration of the pulse generated on channel 1 and 2.\nWith the liquid volume to generate the pulse value (POS. 3.4 see page 28 POS. 3.6 see page 28)\nset by the user. The user must set the corresponding duration of the pulse to be outputed. This value is\nexpressed in milliseconds and has to be between 0.4 and 9999.99. When the high frequency output is\npresent, then the minimum value can type of device is connected to the converter, the user must verify that\nthe set pulse duration is compatible with the external device processing such pulses. If, for example, an\nelectro-mechanical pulse counter is connected, a minimum pulse time of 0.04 milliseconds can be set.\nATTENTION: The converter can not detect problems that may occur; firstly, the pulse is too long the coils\nmay burn out, secondly, if the pulse is too short, the counter may not be able to function, causing damage\nof the output.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 3.7-3.8) Output full scale freq.1-2\n[Frq1-2= x.xxxxx]\nAL2 [OU1FF-OU2FF]\nFrq1 and Frq2 are activated with POS. 7.1 see page 29 and POS. 7.2 see page 29 enabled and set to\nthe value freq+/-/+ -. Setting duration of the pulse generated on channel 1 and 2.\n39 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "ISOMAG\nMENU 4 - MEASURE\n(POS. 4.1) Damping\n[Damping=OFF/SMART/(TIME)]\nAL3\n[MFDMP]\nThis section of manual is extremely important because the correct setting of the filters allows to obtain a proper\nresponse of the instrument to the measured flow rate and the specific requirements of use; as a general rule,\nconsider that, starting from Damping = OFF (no filter applied to the measure), successive values, introduce\nincreasing damping. The following diagrams show the instrument's response to changes in flow rate from 0 to\n100%, using the different settings of the damping function.\nThe SMART is an adaptive filter that adapts automatically to most of the processes (recommended value),\nmaking the response of the meter very ready to fast changes of flow and at the same time extremely precise\nand stable for slow variations. It may be convenient to use a constant damping filter time, where there is a\npulsating flow (for example generated by peristaltic pumps). With longer times you get a mean value stable,\nwhile with short times the measure will closely follow the flow pulses, but consequently more unstable. NOTE:\nIf the rechargeable battery is active, the damping could be set only in \"SMART\".\n.60\nExample with damping to OFF\n50\n40\n30\nFLOW RATE (%)\n20\n.10\nFLOWRATE\nJN\nFILTERS\nDamping = OFF\nOUT\nMEASURE\nDamping function(OFF). the meter follows the\ntrend of fast changes in flow.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n.0\n0\n2 4 6\n8\n10\n12\n14 16 18 20 22\nTIME (Sec)\n60\n50\n40\n30\nFLOW RATE (%)\n20\n.10\n.0\nExample with damping to 5,0sec.\nFLOWRATE\nFILTERS\nIN\nDamping= from 0.2s to 1000s\nOUT\nMEASURE\nDamping mode based on time (fro 0.2s to\n1000s) The measure is averaged over a number\nof samples determined by the value assigned\nto the dampening function. When the damping\nparameter is expressed in seconds, the filter\nworks damping the measurement noise and\nsudden change of flow rate. Increasing the\nparameter of damping increases the stability of\nthe measurement.\n0\n2\n4\n6\n8\n10 12\n14\nTIME (Sec)\n16 18\n20\n22\nISOIL\nINDUSTRIA\n40 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "ISOMAG\n(POS. 4.2) Cut-off threshold\n[Cut-off=% xxx]\nAL3\n[MFCUT]\nSetting the low flow cutoff threshold. This function is useful to avoid that flows close to zero, due to the\nelectrical noises from tiny movements of liquid (due for example to vibrations of the pipe) which cause an\nincreasing of the totalizers. The allowed range for this function is 0-25% of full scale set. For most applications\na value between 0.5 and 1% is recommended.\n(POS. 4.3) Calibration verify\n[Cal.verify=ON]\nAL3\n[ACAVE]\nThis function enables an automatic verification of board's coefficients. As the converter performs\ncontinuously a large number of tests, we recommend to use this function only in presence of wide\nrange of temperature. Instead it is NOT recommended to use it when the instrument is used in\nmetering applications (batch).\n(POS. 4.4) Automatic scale change enable\n[Autorange=ON/OFF]\nAL3\n[ARNGE]\nEnables the automatic change of scale. The meter may have two different working ranges in order to\nsuit to the variable process conditions. In order to get the best results out of this function it is important\nrange N.2 (Fs2) if enabled is bigger than N.1 (Fs1). When the flow rate increases and reaches the 100%\nof the full scale 1, then the meter automatically switches to scale 2. When the flow rate decreases again\nreaching a value on scale 2 equal to the 90% of full scale N.1, then the active scale is 1 again. Allowed\nvalues for this parameter: ON/OFF.\nNotice: when the autorange is enabled, is not allow to use the manual range change (POS. 6.6 see\npage 28 ).\nThis function does NOT increase the accuracy of the measure; its aim is to increase the resolution of 4/20 mA\nwhen the meter work at very low flow rates (typical case the flow rate of water distribution with daytime flow\nmuch higher than the night flow). N.B: this function is disabled if the batching function is active\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 4.5) High immunity INPUTS\n[H.imm. inp.]\nAL4\n[HIINP]\nThe HIINP function (INPut High Immunity filter) introduces a hardware filter to be used ONLY IN CASE\nOF ABSOLUTE NECESSITY, when the measure is absolutely unstable or it is NOT possible to make the\nmeasure, and every possible attempt to reduce or eliminate the noise do not give a positive result, with\nparticular attention of instrument ground connection. When this function is activated (HIINP = ON) the\nmeasure will be influenced by an unavoidable error estimated around 1%.\nMENU 4 - MEASURE: ONLY MCP FUNCTIONS\nMeasure Filter Cut-off Threshold 2\n[MCP ONLY]\nAL3\n[MFCT2]\nSetting the low flow cutoff threshold, it is similar to the function in 4.2. The value of this function is\nNOT visible on diplay but only with MCP command.\nDynamic sample analysis\n[MCP ONLY]\nAL4\n[DYNSA]\nReserved to the service\nDynamic sample time\n[MCP ONLY]\nAL4\n[DYNST]\nReserved to the service\n41 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Measure Filter Cut-off Threshold 2",
+            "[MCP ONLY]",
+            "AL3",
+            "[MFCT2]"
+          ],
+          [
+            "Setting the low flow cutoff threshold, it is similar to the function in 4.2.\nNOT visible on diplay but only with MCP command.",
+            "The value of this function is"
+          ]
+        ],
+        [
+          [
+            "Dynamic sample analysis",
+            "[MCP ONLY]",
+            "AL4",
+            "[DYNSA]"
+          ],
+          [
+            "Reserved to the service",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Dynamic sample time",
+            "[MCP ONLY]",
+            "AL4",
+            "[DYNST]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "ISOMAG\nMENU 5 - ALARMS\n(POS. 5.1) Maximum direct flow rate threshold\n[Max+=XXXXX]\nAL3 [FRAXP]\nMaximum value alarm set for direct flow rate set (expressed in technical units). When the flow rate\nvalue exceeds such a threshold, then an alarm message is generated. Setting this parameter to zero\ndisables the alarm generation.\n(POS. 5.2) Maximum reverse flow rate threshold\n[Max -= xxxxx]\nAL3 [FRAXN]\nMaximum value alarm set for reverse flow rate set (expressed in technical units). When the flow rate\nvalue exceeds such a threshold, then an alarm message is generated. Setting this parameter to zero\ndisables the alarm generation.\n(POS. 5.3) Minimum direct flow rate threshold\n[Min+=XXXXX]\nAL3 [FRANP]\nMinimum value alarm set for reverse flow rate set (expressed in technical units). When the flow rate\nvalue falls below such a threshold, then an alarm message is generated. Setting this parameter to zero\ndisables the alarm generation.\n(POS. 5.4) Minimum reverse flow rate threshold\n[Min -= xxxxx]\nAL3 [FRANN]\nMinimum value alarm set for reverse flow rate set (expressed in technical units). When the flow rate\nvalue falls below such a threshold, then an alarm message is generated. Setting this parameter to zero\ndisables the alarm generation.\n(POS. 5.5) Hysteresis\n[Hysteresis=% XX]\nAL3 [ATHYS]\nHysteresis threshold set for the minimum and maximum flow rate alarms. The value of this parameter\nis expressed as percentage of the full scale value and may be set from 0 to 25%.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 5.6) Current output value in case of failure [mA V.alarm =% XXX]\nAL3 [OCACV]\nThe output current signal can be specified by the user in case of failure of either, empty pipe, coils\ninterrupted, or ADC error. The signal current is set as a percentage (0 to 125%) of the 0/4-20mA current.\n125% corresponds to 24mA and does not depend on the selected range (0-20/4-20mA).\nThe NAMUR NE43 recommendation asks for a alarms signalling value for the current output lower than\n3.6mA (<18%) or bigger than 21mA (>105%). It would then be preferable to set the value of this\nfunction at the 10%, so that the current value in case of the a.m. cases would be 2 mA, allowing the\nfollowing diagnostics:\ncurrent < 2mA - 5%: line interrupted, power supply failure or faulty converter;\n2mA -5% * current * 2mA + 5%: hardware alarm;\n4mA * current * 20mA: normal working range;\n20mA < current * 22mA: out of range, measure above 100% f.s.\n(POS. 5.7) Frequency output value in case of failure\n[Hz V.alarm=%Xxx]\nAL3 [OFACV]\nThis function is active with POS. 7.1 see page 29 and POS. 7.2 see page 29 enable to ( FREQ.+, FREQ .- ,\nFREQ.+) To set the frequency value assigned to the on/off output in one or more of the following failure cases:\nEmpty pipe; Coils interrupted ; ADC error. Allowable range is from 0 to 125% of the frequency\nfull scale value. Although there are no specific rules regulating cases such as these, it would be\nconvenient to use the failure information as follows:\n0% Hz * frequency * 100% f.s .: normal working range;\n100% f.s. < frequency * 210% f.s .: overflow, measure above the 100% of the f.s .;\n115% f.s. * frequency * 125% f.s .: hardware alarm condition.\nISOIL\n42 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "(POS. 5.5) Hysteresis",
+            "[Hysteresis=% XX]",
+            "AL3",
+            "[ATHYS]"
+          ],
+          [
+            "Hysteresis threshold set for the minimum and maximum flow rate alarms. The value\nis expressed as percentage of the full scale value and may be set from 0 to 25%.",
+            "of this parameter"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "ISOMAG\nMENU 6 - INPUTS\nWARNING!\nTHIS MENU IS NOT ENABLED WHEN THE BATCHING FUNCTION IS ACTIVE.\n(POS.6.1-2) T.direct(pos.)flowtot. /part reset enable\n[T/P+/RESET=ON/OFF] AL3 [VTTPE] [VTPPE]\nWhen one of this function is enabled, the related totalizer + may be reset through the on/off input.\n(POS.6.3-4) T.rev. (neg)flowtot. /part reset enable\n[T/P-/RESET=ON/OFF] AL3 [VTTNE] [VTPNE]\nWhen one of this function is enabled, the related totalizer - may be reset through the on/off input.\n(POS. 6.5) Totalizers counting lock command [COUNT LOCK= ON/OFF] AL3\n[TCLIE]\nTotalizers counting lock command enable. When this function is active, applying a voltage on the on/\noff input terminals the system stops the totalizers no matter which is the flow rate.\n(POS. 6.6) Measure zero lock input enable [Meas.lock=ON/OFF]\nAL3\n[MSLIE]\nWhen this function is active (ON), applying a voltage on the on input terminals, the measurement is\nstopped, the meter will display zero flow.\n(POS. 6.7) Calibration Func. input enable [Calibration=ON/OFF] AL3\n[CALIE]\nWhen this function is active, applying a voltage on the on/off input terminals the meter performs a\nautozero calibration cycle. ATTENTION: If the voltage pulse is less than 1 sec., the meter performs a\ncalibration cycle to compensate possible thermal drifts. If the voltage pulse is more 1 sec, the meter\nperforms a zero calibration measure. To perform the calibration it is absolutely necessary for the sensor\nto be full of liquid and that the liquid is perfectly still. Even very small movement of the liquid may affect\nthe result of the calibration, and, consequently, the accuracy of the system.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 6.8) Flow rate range change inp. [RANGECHANGE=ON/OFF] AL3\n[SRCIE]\nRange change external command enable. When this function is enabled, applying a voltage on the on/\noff input terminals the meter switches to the second measuring range (Fs2).\nN.B .: the autorange doesn't allow to use the manual range change see (POS. 4.4 see page 28).\n43 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "ISOMAG\nMENU 7 - OUTPUTS\n(POS. 7.1) Output 1 function selection\n[Out1=xxxxxx]\nAL3 [OUT1F]\nFunction choice corresponding to digital Output 1. The functions are listed in the table below.\n(POS. 7.2) Output 2 function selection\n[Out2=xxxxxx]\nAL3 [OUT2F]\nFunction choice corresponding to digital Output 2. The functions are listed in the table below.\nFUNCTIONS FOR OUTPUTS 1 AND 2\nOFF: DISABLE\nMAX AL. +: MAX DIRECT FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nMIN AL. +: MIN DIRECT FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nMAX/MIN+/ -: MAX/MIN DIRECT FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nMAX AL .-: MAX INVERSE FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nMIN AL .-: MIN INVERSE FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nMAX/MIN -: MAX/MIN INVERSE FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nP.EMPTY: EMPTY PIPE ALLARM OUTPUT (ENERGIZED = AL. OFF)\nHARDWARE AL .: SUM OF ALL ALARMS \"energized interrupted \" AND \"error input signal \"\nOVERFLOW: OUT OF RANGE ALLARM OUTPUT (ENERGIZED = FLOWRATE OK)\nALL ALARMS: SUM OF ALL ALARMS POSSIBLE\nEXT. COMM: OUTPUT MAY TAKE A STATE DEPENDENT ON AN EXTERNAL CONTROL REMOTELY VIA\nMCP\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nFLOW RATE SIGN .: FLOW DIRECTION (ENERGIZED WHEN FLOW IS NEGATIVE)\nSCALE: INDICATION SCALE\nFREQ.+: FREQUENCY POSITIVE FLOWRATE\nFREQ .-: FREQUENCY NEGATIVE FLOWRATE\nFREQ.+/ -: FREQUENCY POSITIVE/NEGATIVE FLOWRATE\nPULSES.+: PULSE POSITIVE FLOW RATE\nPULSES .-: PULSE NEGATIVE FLOW RATE\nPULSES+/ -: PULSE NEGATIVE/POSITIVE FLOW RATE\nBATCHING: IT'S POSSIBLE TO SET A QUANTITY OF VOLUME THAT HAVE TO BE DELIVERED\nDURING AN ACTUATOR (VALVE) OPENING-CLOSING CYCLE\nISOIL\nINDUSTRIA\n44 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "ISOMAG\nBATCHING\nThrough this function, it's possible to set the volume quantity that must be delivered, managing the\nopening and the closing of the valve.\nTo activate it, follow these instructions:\nOUTPUTS\nout1=\nBATCHING\nOFF\nOut MA1=4_22 +/-\nOut MA2=4_22 -0+\nA1S=dm3 /s 5. 0000\nA2S=dr3 /s 5. 0000\nt 1 function selectio\n1.\nEnter to the main menu;\n2.\nSelect Output menu;\n3.\nSet the Out1 function on \"BATCHING\"\nWith batching activated, the display visualizes one main page:\nPredetermined quantity\nQuantity actually delivered\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n4.0632\n7. 00005\n4.06323\nSET\ndm3\nQTY\n2\nA\nAlarms\nBatching in progress\nThe batching parameters settings can be customized according to what the instrument use and\napplication is thought to.\nFUNCTION\nFUNCTION Nº POS.\nSETTING\nCut-off\n\"4.2\" pag28\nIt must be set so that the flow is stably zero\nwhen the valve is closed\nDamping\n\"4.1\" pag28\nIt must be set on the minimum value\nallowed.\nIf T batching ≤ 1s, filters must be disabled\n45 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "FUNCTION",
+            "FUNCTION Nº POS.",
+            "SETTING"
+          ],
+          [
+            "Cut-off",
+            "\"4.2\" pag28",
+            "It must be set so that the flow is stably zero when the valve is closed"
+          ],
+          [
+            "Damping",
+            "\"4.1\" pag28",
+            "It must be set on the minimum value allowed. If T batching ≤ 1s, filters must be disabled"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "BATCHING QUANTITY SETTINGS:\nBy display\nBy MCP command\nBy ModBus interface\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nBATCHING OPERATIONS:\nEnter to the 3. Scale\nmenu;\nSet the B.qty (batching\nquantity) value\n\"BTQTY?\"\nThrough this command it\ncan be set both the unit\nmeasure or the quantity\n(see MCP manual)\nUsing the ModBus\ncommand 16 (see\nMODbus manual)\nISOMAG\nSCALES\nFS1=dM3 /s 5.0000\nB. qtydm=1. 00000\nBatching quantity\nVALUES:\n0:'ml'| 1:'cm3'|2:''|3:'dm3'|4:'dal'|5:'hl'\n|6:'m3'|7:'MI',0.00001 <> 99999.9\nACTION:\nOPERATION:\nNOTES:\nStart/stop by display\nPress \"UP\" key on the keyboard\nWhen the batching process is\nmanually stopped, the OUT1\nfunction is disabled and the\nbatching cycle is interrupted with\nthe valve closing.\nEvery time the batching cycle\nstarts, the set quantity counter\nand the alarms are reset.\nStart/stop by MCP\nType MCP command \"BTACT\"\nStart/stop by ingresso\nExternal signal connected to digital\ninput 1.\nN.B: The signal must be a pulse and its\nduration must be greater than the time of the\nmeasurement cycle.\nSee \"DIGITAL INPUT ON/OFF OPERATION\" page\n15\nStart/stop by ModBus\nSend the MODbus command 5 (see\nMODbus manual)\nVisualize batching\nstatus by display\nBatching in progress symbol on\nthe display\nVisualize batching\nstatus by MCP\nType the MCP command \"BTACT?\"\nIf = 0 the actuator is closed\nIf = 1 the actuator is open (batching\nin progress)\nISOIL\n46 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "ACTION:",
+            "OPERATION:",
+            "NOTES:"
+          ],
+          [
+            "Start/stop by display",
+            "Press \"UP\" key on the keyboard",
+            "When the batching process is manually stopped, the OUT1 function is disabled and the batching cycle is interrupted with the valve closing. Every time the batching cycle starts, the set quantity counter and the alarms are reset."
+          ],
+          [
+            "Start/stop by MCP",
+            "Type MCP command \"BTACT\""
+          ],
+          [
+            "Start/stop by ingresso",
+            "External signal connected to digital input 1. N.B: The signal must be a pulse and its duration must be greater than the time of the measurement cycle. See \"DIGITAL INPUT ON/OFF OPERATION\" page 15"
+          ],
+          [
+            "Start/stop by ModBus",
+            "Send the MODbus command 5 (see MODbus manual)"
+          ],
+          [
+            "Visualize batching status by display",
+            "Batching in progress symbol on the display :selected:",
+            ""
+          ],
+          [
+            "Visualize batching status by MCP",
+            "Type the MCP command \"BTACT?\" If = 0 the actuator is closed If = 1 the actuator is open (batching in progress)",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "ISOMAG\nThe batching process automatically stops the valve when the batching quantity reaches the set value.\nIf the delivered volume doesn't match to the required one, It is necessary to notice empirically the\nvalue to set. In this way It is possible to compensate any \"delays\" in the process after the stop signal.\nEXAMPLE WITH DELIVERED VOLUME = 1 dm3\nCOMPANSATED BATCHING\nDelivered volume\nSet volume\nNOT COMPASATED BATCHING\n/$0.1328\nSET am3\n1.00000\nQTYam3\n1.30000\nNO ALARMS\nDelivered volume\nSet volume\nam3\n/$0.1328\nSEI am3\n0.70000\nQTY am3\n1.00000\nNO ALARMS\n11\n11\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n11\nSTOP\nSTART\n47 / 85\n0.3 dm3\nClosing valve\nTime\n0.3 dm3\nSTOP\nClosing valve\nTime\n1 dm3\n0.7 dm3\nSTART\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    }
+  ]
+}

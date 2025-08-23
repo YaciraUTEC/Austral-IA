@@ -1,0 +1,351 @@
+{
+  "archivo": "10043213 - Manual-Victron-Phoenix-Smart-1600VA-3000VA_p51_60",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "3. BETRIEB\n3.1 Ein/Aus-Schalter\nEN\nNachdem Sie das Gerät über den Druckknopf auf \"ON\" geschaltet haben, ist es voll\nbetriebsbereit. Der Wechselrichter arbeitet und die LED-Anzeige „inverter“ leuchtet auf.\nBei mehrmaligem Betätigen des Druckknopfes in kurzen Abständen schaltet der\nWechselrichter zwischen \"ON\", \"ECO\" und \"OFF\" hin und her.\nAbgesehen von der Drucktaste kann der Wechselrichter auch per Bluetooth über ein\nMobilgerät mit iOS oder Android Betriebssystem und der Victron Connect App ein-\n(Normal- der ECO-Modus) und Ausgeschaltet werden. Wenn das Gerät jedoch entweder\nper Bluetooth oder mit der Drucktaste ausgeschaltet wurde, lässt es sich nicht wieder\nüber den verdrahteten VE.Direct Port ein- und ausschalten.\n3.2 Fernbedienung\nNL\nFR\nDE\nES\nDie Fernbedienung kann über einen einfachen „Ein/Aus“-Schalter oder das Phoenix\nWechselrichter Bedienpaneel erfolgen. Ein Schalter für die Fernsteuerung (ein/aus) kann\nan einen zweipoligen Stecker angeschlossen werden. Der Schalter kann auch zwischen\ndem Pluspol der Batterie und dem linken Kontakt des zweipoligen Steckers (mit „H“\nmarkiert, siehe Anhang A) bzw. zwischen dem Minuspol der Batterie und dem rechten\nKontakt des zweipoligen Steckers (mit „L“ markiert, siehe Anhang A) angeschlossen\nwerden.\nSE\nAppendix\nAus Sicherheitsgründen kann dieses Produkt gänzlich ausgeschaltet werden\n(damit der Wechselrichter z. B. nicht über die Drucktaste oder per Bluetooth\neingeschaltet werden kann), wenn der Fernsteuerungs-Stecker und seine\nstandardmäßige Drahtbrücke entfernt werden (oder durch Ausschalten des\nferngesteuerten Ein-/Aus-Schalters, sofern vorhanden). So kann der Nutzer\nsicher gehen, dass der Wechselrichter nicht aus Versehen per Bluetooth\nplötzlich durch einen anderen Nutzer eingeschaltet wird.\n!\n3.3 LED Beschreibung\nGrüne LED:\nStatus\nStörungssuche\nLeuchtet dauerhaft\nWechselrichter\nan\nRote LED aus\nStatus OK\nRote LED an oder blinkt:\nDer Wechselrichter ist noch in Betrieb, schaltet jedoch ab,\nwenn der Zustand sich verschlimmert. Siehe Tabelle über\nrote LED für die Ursachen der Warnung\nlangsames einmaliges\nPulsieren\nECO-Modus\nWenn der Wechselrichter sich immer wieder ein- und\nausschaltet, während eine Last angeschlossen ist, kann es\nsein, dass die Last im Vergleich zu den derzeitigen ECO-\nModus-Einstellungen zu gering ist. Erhöhen Sie die Last\noder ändern Sie die ECO-Modus-Einstellungen.\nMindesteinstellung ECO-Modus: 15 W)\nAus und in\nDer Wechselrichter hat sich aus Schutzgründen\nvictron energy\n5",
+      "tablas": [
+        [
+          [
+            "Grüne LED:",
+            "Status",
+            "Störungssuche"
+          ],
+          [
+            "Leuchtet dauerhaft",
+            "Wechselrichter an",
+            "Rote LED aus Status OK"
+          ],
+          [
+            "Rote LED an oder blinkt: Der Wechselrichter ist noch in Betrieb, schaltet jedoch ab, wenn der Zustand sich verschlimmert. Siehe Tabelle über rote LED für die Ursachen der Warnung"
+          ],
+          [
+            "langsames einmaliges Pulsieren",
+            "ECO-Modus",
+            "Wenn der Wechselrichter sich immer wieder ein- und ausschaltet, während eine Last angeschlossen ist, kann es sein, dass die Last im Vergleich zu den derzeitigen ECO- Modus-Einstellungen zu gering ist. Erhöhen Sie die Last oder ändern Sie die ECO-Modus-Einstellungen. Mindesteinstellung ECO-Modus: 15 W)"
+          ],
+          [
+            "",
+            "Aus und in",
+            "Der Wechselrichter hat sich aus Schutzgründen"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Schnelles, doppeltes\nPulsieren\nWartestellung\nabgeschaltet. Der Wechselrichter wird sich nach\nBeseitigung aller Alarmbedingungen automatisch neu\nstarten. Siehe Status rote LED für die Ursachen des\nAbschaltens.\nAus\nWechselrichter\naus\nRote LED aus\nÜberprüfen Sie den Stecker für ferngesteuerte Ein-/Aus-\nSchaltung.\nÜberprüfen Sie die Gleichstrom-Kabelanschlüsse und\nSicherungen.\nÜberprüfen Sie den Betriebsmodus durch einmaliges\nBetätigen des Druckknopfes.\nRote LED an oder blinkt:\nDer Wechselrichter hat sich aus Schutzgründen\nabgeschaltet. Er schaltet sich nicht mehr automatisch ein.\nDie rote LED gibt die Ursache für das Abschalten an.\nBeheben Sie die Ursache und starten Sie den\nWechselrichter erneut, indem Sie ihn zunächst AUS- und\ndann wieder EIN-schalten.\nSchnelles Blinken\nAus und\nFirmware-\nUpdate wird\ndurchgeführt\noder ist\nfehlgeschlagen\nRote LED blinkt (-\n-0\nFirmware-Update wird durchgeführt oder ist\nfehlgeschlagen. Wenn fehlgeschlagen, Firmware-Update\nerneut versuchen.\nGelbe LED\nStatus\nStörungssuche\nLeuchtet\nununterbrochen\nECO-Modus\nRote LED aus\nStatus OK\nRote LED an oder blinkt:\nDer Wechselrichter ist noch in Betrieb, schaltet jedoch ab,\nwenn der Zustand sich verschlimmert. Siehe Tabelle über\nrote LED für die Ursachen der Warnung\nAus\nECO-Modus\naus\nRote LED aus\nÜberprüfen Sie den Betriebsmodus durch einmaliges\nBetätigen des Druckknopfes.\nÜberprüfen Sie den Stecker für ferngesteuerte Ein-/Aus-\nSchaltung.\nÜberprüfen Sie die Gleichstrom-Kabelanschlüsse und\nSicherungen.\nRote LED an oder blinkt:\nDer Wechselrichter hat sich aus Schutzgründen\nabgeschaltet. Er schaltet sich nicht mehr automatisch ein.\nDie rote LED gibt die Ursache für das Abschalten an.\nBeheben Sie die Ursache und starten Sie den\nWechselrichter erneut, indem Sie ihn zunächst AUS- und\ndann wieder EIN-schalten.\nRote LED\nBeschreibung\nStörungssuche\nLeuchtet\nununterbrochen\nÜberlastung\nLast verringern.\nLangsames Blinken\nLadezustand\nniedrig\nBatterie aufladen oder ersetzen.\nÜberprüfen Sie die Gleichstrom-Kabelanschlüsse.\nÜberprüfen Sie den Kabelquerschnitt, da dieser\nmöglicherweise nicht ausreicht.\nSiehe Abschnitt 4.2 Schutzvorkehrungen und\nautomatische Neustartbedingungen für einen manuellen\nund automatischen Neustart.\nSchnelles Blinken\nBatterieladezustand Verringern Sie die DC-Eingangsspannung. Überprüfen\nhoch\nSie, ob das Ladegerät defekt ist.\n6\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Schnelles, doppeltes Pulsieren",
+            "Wartestellung",
+            "abgeschaltet. Der Wechselrichter wird sich nach Beseitigung aller Alarmbedingungen automatisch neu starten. Siehe Status rote LED für die Ursachen des Abschaltens."
+          ],
+          [
+            "Aus",
+            "Wechselrichter aus",
+            "Rote LED aus Überprüfen Sie den Stecker für ferngesteuerte Ein-/Aus- Schaltung. Überprüfen Sie die Gleichstrom-Kabelanschlüsse und Sicherungen. Überprüfen Sie den Betriebsmodus durch einmaliges Betätigen des Druckknopfes. Rote LED an oder blinkt: Der Wechselrichter hat sich aus Schutzgründen abgeschaltet. Er schaltet sich nicht mehr automatisch ein. Die rote LED gibt die Ursache für das Abschalten an. Beheben Sie die Ursache und starten Sie den Wechselrichter erneut, indem Sie ihn zunächst AUS- und dann wieder EIN-schalten."
+          ],
+          [
+            "Schnelles Blinken",
+            "Aus und Firmware- Update wird durchgeführt oder ist fehlgeschlagen",
+            "Rote LED blinkt (- -0 Firmware-Update wird durchgeführt oder ist fehlgeschlagen. Wenn fehlgeschlagen, Firmware-Update erneut versuchen."
+          ]
+        ],
+        [
+          [
+            "Gelbe LED",
+            "Status",
+            "Störungssuche"
+          ],
+          [
+            "Leuchtet ununterbrochen",
+            "ECO-Modus",
+            "Rote LED aus Status OK"
+          ],
+          [
+            "Rote LED an oder blinkt: Der Wechselrichter ist noch in Betrieb, schaltet jedoch ab, wenn der Zustand sich verschlimmert. Siehe Tabelle über rote LED für die Ursachen der Warnung"
+          ],
+          [
+            "Aus",
+            "ECO-Modus aus",
+            "Rote LED aus Überprüfen Sie den Betriebsmodus durch einmaliges Betätigen des Druckknopfes. Überprüfen Sie den Stecker für ferngesteuerte Ein-/Aus- Schaltung. Überprüfen Sie die Gleichstrom-Kabelanschlüsse und Sicherungen. Rote LED an oder blinkt: Der Wechselrichter hat sich aus Schutzgründen abgeschaltet. Er schaltet sich nicht mehr automatisch ein. Die rote LED gibt die Ursache für das Abschalten an. Beheben Sie die Ursache und starten Sie den Wechselrichter erneut, indem Sie ihn zunächst AUS- und dann wieder EIN-schalten."
+          ]
+        ],
+        [
+          [
+            "Rote LED",
+            "Beschreibung",
+            "Störungssuche"
+          ],
+          [
+            "Leuchtet ununterbrochen",
+            "Überlastung",
+            "Last verringern."
+          ],
+          [
+            "Langsames Blinken",
+            "Ladezustand niedrig",
+            "Batterie aufladen oder ersetzen. Überprüfen Sie die Gleichstrom-Kabelanschlüsse. Überprüfen Sie den Kabelquerschnitt, da dieser möglicherweise nicht ausreicht. Siehe Abschnitt 4.2 Schutzvorkehrungen und automatische Neustartbedingungen für einen manuellen und automatischen Neustart."
+          ],
+          [
+            "Schnelles Blinken",
+            "Batterieladezustand\nhoch",
+            "Verringern Sie die DC-Eingangsspannung. Überprüfen\nSie, ob das Ladegerät defekt ist."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Doppeltes Pulsieren\nTemperatur hoch\nVerringern Sie die Last und/oder verlagern Sie den\nStandort des Wechselrichters an einen besser\nbelüfteten Ort.\n-.\nSchnelles einmaliges\nPulsieren\nDC-\nBrummspannung\nhoch\nÜberprüfen Sie die DC-Kabelanschlüsse und den\nKabelquerschnitt.\n3.4 Schutzvorkehrungen und automatische Neustartbedingungen\nEN\nNL\nÜberlastung\nEinige Lasten wie Motoren oder Pumpen nehmen bei der Inbetriebnahme hohe\nEinschaltströme auf. In diesen Fällen kann es sein, dass der Einschaltstrom den\nGrenzwert für Überstrom-Fehler des Wechselrichters übersteigt. In einem solchen Fall\nverringert sich die Ausgangsspannung schnell, um den Ausgangsstrom des\nWechselrichters zu begrenzen. Wird der Grenzwert für Überstrom-Fehler fortwährend\nüberschritten, schaltet sich der Wechselrichter ab und startet nach 30 Sekunden neu.\nNach drei Neustarts gefolgt von einer weiteren Überlastung innerhalb der ersten 30\nSekunden nach dem Neustart schaltet sich der Wechselrichter aus und bleibt\nausgeschaltet. Die LED zeigen ein Abschalten aufgrund von Überlastung an. Um den\nWechselrichter erneut zu starten, müssen Sie ihn erst AUS- und dann wieder EIN-\nschalten.\nFR\nDE\nES\nSE\nniedrige Batteriespannung (regulierbar)\nDer Wechselrichter schaltet sich ab, wenn die DC-Eingangsspannung unter den\nSchwellwert für das Abschalten aufgrund eines niedrigen Ladezustandes abfällt. Nach\neiner Mindestverzögerung von 30 Sekunden startet der Wechselrichter erneut, wenn die\nSpannung den Schwellwert zum Neustarten nach niedrigem Ladezustand überschreitet.\nAppendix\nNach drei Neustarts gefolgt von einem weiteren Abschalten innerhalb der ersten 30\nSekunden nach dem Neustart aufgrund eines niedrigen Ladezustands, schaltet sich der\nWechselrichter aus und versucht es nicht erneut. Die LED zeigen an, dass es zu einem\nAbschalten aufgrund eines niedrigen Ladezustands gekommen ist. Um den Wechselrichter\nerneut zu starten, schalten Sie ihn zunächst AUS und dann wieder EIN oder laden Sie die\nBatterie wieder auf. Sobald der Ladezustand der Batterie angestiegen ist und mindestens\n30 Sekunden über dem Schwellwert zum Laden bleibt, schaltet er sich ein.\nDie Standardschwellwerte für das Abschalten aufgrund eines niedrigen Ladezustandes und\nfür das Neustarten finden Sie in den Technischen Angaben. Sie lassen sich mit der\nVictronConnect App anpassen.\nHohe Batteriespannung\nVerringern Sie die DC-Eingangsspannung und/oder überprüfen Sie, ob eine Batterie oder ein\nSolar-Ladegerät im System fehlerhaft ist. Wir der Wechselrichter aufgrund einer zu hohen\nBatteriespannung abgeschaltet, wartet er zunächst 30 Sekunden und versucht dann, erneut\nzu starten, sobald die Batteriespannung auf einen annehmbaren Wert gesunken ist. Der\nWechselrichter bleibt nach mehrmaligen Versuchen nicht aus.\nHohe Temperatur\nEine hohe Umgebungstemperatur oder eine andauernde hohe Last kann zu einem\nAbschalten aufgrund einer Übertemperatur führen. Der Wechselrichter startet nach 30\nSekunden erneut. Der Wechselrichter bleibt nach mehrmaligen Versuchen nicht aus.\nvictron energy\n7",
+      "tablas": [
+        [
+          [
+            "Doppeltes Pulsieren",
+            "Temperatur hoch",
+            "Verringern Sie die Last und/oder verlagern Sie den Standort des Wechselrichters an einen besser belüfteten Ort."
+          ],
+          [
+            "-. Schnelles einmaliges Pulsieren",
+            "DC- Brummspannung hoch",
+            "Überprüfen Sie die DC-Kabelanschlüsse und den Kabelquerschnitt."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Verringern Sie die Last und/oder verlagern Sie den Standort des Wechselrichters an einen\nbesser belüfteten Ort.\nDC-Brummspannung hoch\nEine hohe DC-Brummspannung wird normalerweise durch lose DC-Kabelverbindungen\nund/oder eine zu dünne DC-Verkabelung verursacht. Nachdem der Wechselrichter sich\naufgrund einer zu hohen DC-Brummspannung abgeschaltet hat, wartet er 30 Sekunden und\nstartet dann erneut.\nNach drei Neustarts gefolgt von einem weiteren Abschalten innerhalb der ersten 30\nSekunden nach dem Neustart aufgrund einer zu hohen DC-Brummspannung, schaltet sich\nder Wechselrichter aus und versucht es nicht erneut. Um den Wechselrichter erneut zu\nstarten, müssen Sie ihn erst AUS- und dann wieder EIN-schalten.\nEine anhaltende hohe DC-Brummspannung verringert die Lebenserwartung des\nWechselrichters.\n4. INSTALLATION\n?\nDieses Produkt darf nur von einer qualifizierten Elektrofachkraft installiert\nwerden.\n!\nStellen Sie während der Installation sicher, dass der Fernsteuerungsstecker mit\nDrahtbrücke entfernt wurde (oder schalten Sie den ferngesteuerten Ein-/Aus-\nSchalter aus, sofern vorhanden). Auf diese Weise wird verhindert, dass der\nWechselrichter plötzlich eingeschaltet wird.\n8\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "4.1 Einbauort\nEN\nDas Gerät soll an einem trockenen und gut belüfteten Platz möglichst nahe zur Batterie\ninstalliert werden. Ein Abstand von ca.10 cm sollte aus Kühlungsgründen um das Gerät\nherum frei bleiben.\nÜbermäßig hohe Umgebungstemperatur führt zu:\nVerkürzter Lebensdauer.\nGeringerem Ladestrom.\n!\nReduzierter Spitzenkapazität oder Abschaltung des Gerätes.\nMontieren Sie das Gerät niemals direkt über den Batterien.\nNL\nFR\nDE\nDas Produkt ist auch zur Wandmontage geeignet. Zur Montage, siehe Anhang A.\nDas Gerät kann sowohl horizontal wie auch vertikal montiert werden. Allerdings sollte es,\nwenn möglich, vertikal montiert werden, da dies eine optimale Kühlung des Geräts\ngewährleistet.\n!\nNach dem Einbau muss das Gerät innen zugänglich bleiben.\nES\nSE\nUm den Spannungsverlust über die Kabel möglichst gering zu halten, sollte der Abstand\nzwischen dem Gerät und der Batterie möglichst kurz sein.\nAppendix\nAus Sicherheitsgründen sollte dieses Gerät wie alle elektrischen\nVerbraucher, die eine bestimmte elektrische Leistung umsetzen, in einer\nhitzebeständigen Umgebung installiert werden. Stellen Sie sicher, dass keine\nbrennbaren Chemikalien, Plastikteile, Vorhänge oder andere Textilien in\nunmittelbarer Nähe sind.\n!\nvictron energy\n9",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "4.2 Batteriekabel anschließen\nUm die Leistung des Produkts voll ausnützen zu können, sollten nur Batterien mit\nausreichender Kapazität und Batteriekabel mit dem richtigen Querschnitt verwendet werden.\nSiehe Tabelle.\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nEmpfohlener\nKabelquerschnitt\n(mm2)\nLänge bis zu 6 m\n50\n25\n25\n70\n35\n25\n12/3000\n24/3000\n48/3000\nEmpfohlener\nKabelquerschnitt\n(mm2)\n0 - 5 m\n95\n50\n35\n5 - 10 m\n120\n95\n70\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nEmpfohlene\nBatteriekapazität\n(Ah)\n300 - 800\n150 - 400\n75 - 200\n350 - 1000\n200 - 500\n100 - 250\n12/3000\n24/3000\n48/3000\nEmpfohlene\nBatteriekapazität\n(Ah)\n400 - 1200\n200 - 700\n100 - 400\nAnmerkung: Innerer Widerstand ist der wesentliche Faktor bei der Nutzung von Batterien mit\ngeringer Kapazität. Lassen Sie sich bitte von Ihrem Lieferanten beraten oder lesen Sie die\nentsprechenden Abschnitte in unserem schon oben erwähnten Buch „Immer Strom“.\nVorgehensweise\nBezüglich der Kabelanschlüsse gehen Sie bitte wie folgt vor:\nBenutzen Sie zur Vermeidung von Kurzschlüssen isolierte Maulschlüssel!\nVermeiden Sie Kabelkurzschlüsse!\n!\nSchließen Sie die Batteriekabel an: das rote an den + Pol, das schwarze an den - Pol der\nBatterie (siehe Anhang A).\nEin verpolter Anschluss (+ an - und - an +) beschädigt das Gerät.\nZiehen Sie alle Muttern stramm an, um den Kontaktwiderstand weitestgehend zu reduzieren.\n10\nvictron energy",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Empfohlener Kabelquerschnitt (mm2)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Länge bis zu 6 m",
+            "50",
+            "25",
+            "25",
+            "70",
+            "35",
+            "25"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Empfohlener Kabelquerschnitt (mm2)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "0 - 5 m",
+            "95",
+            "50",
+            "35"
+          ],
+          [
+            "5 - 10 m",
+            "120",
+            "95",
+            "70"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Empfohlene Batteriekapazität (Ah)",
+            "300 - 800",
+            "150 - 400",
+            "75 - 200",
+            "350 - 1000",
+            "200 - 500",
+            "100 - 250"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Empfohlene Batteriekapazität (Ah)",
+            "400 - 1200",
+            "200 - 700",
+            "100 - 400"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "EN\nFR\n4.3 DC-Schmelzsicherung\nIm Wechselrichter ist keine Schmelzsicherung vorhanden. Diese sollte extern installiert\nwerden. Die empfohlenen Schmelzsicherungen entnehmen Sie bitte der folgenden\nTabelle.\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nEmpfohlene DC-\nSicherung\n250A\n125A\n60A\n300A\n150A\n80A\n12/3000\n24/3000\n48/3000\nEmpfohlene DC-\nSicherung\n400A\n250A\n125A\nNL\nDE\nES\nSE\nAppendix\nvictron energy\n11",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Empfohlene DC- Sicherung",
+            "250A",
+            "125A",
+            "60A",
+            "300A",
+            "150A",
+            "80A"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Empfohlene DC- Sicherung",
+            "400A",
+            "250A",
+            "125A"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "4.4 Anschluss der Wechselstromkabel\nDieses Produkt entspricht der Sicherheitsklasse I (mit Sicherungserdung)\nDer Neutralleiter des Wechselstromausgangs dieses Wechselrichters\nist mit dem Chassis verbunden (siehe Anhang B für 1600VA/2000VA\nund Anhang C für 3000VA).\n?\nDamit wird die einwandfreie Funktion des FI-Schutzschalters, der am\nWechselstromausgang des Wechselrichters anzuschließen ist, gewährleistet.\nDas Gehäuse des Gerätes muss mit der Erde, dem Fahrzeugrahmen\n(Landfahrzeug) oder der Erdungsplatte bez. dem Rumpf des Bootes\nverbunden werden.\nVorgehensweise\nDie Anschlusspunkte sind deutlich gekennzeichnet. Von links nach rechts: \"L\" (Phase), \"N\"\n(Nullleiter), \"PE\" (Erde).\n4.5 Weitere Anschlussmöglichkeiten\nEs gibt eine Anzahl weiterer Anschlussmöglichkeiten:\n4.5.1 Ferngesteuerter Ein-/Aus-Schalter & ferngesteuertes Bedienpaneel\nDie Fernbedienung des Gerätes ist auf dreifache Weise möglich:\n-\nMit einem Smartphone (iOS oder Android) und der Victron Connect App.\n-\nMit einem externen Schalter (der mit dem zweipoligen Fernbedienungsstecker\nverbunden ist). Der Hauptschalter am Wechselrichter muss auf \"on\" stehen.\n-\nMit einem Phoenix-Wechselrichter VE.Direct Bedien-Paneel (Anschluss an den\nzweipoligen Fernbedienungsstecker, siehe Anhang A). Der Hauptschalter am\nWechselrichter muss auf \"on\" stehen.\n4.5.2. Programmierbares Relais\nDie Wechselrichter sind mit einem multifunktionalen Relais ausgestattet, dass standardmäßig\nim Normalbetriebs-Modus programmiert ist. (Zur Änderung der Funktion des Relais wird die\nVictronConnect Software benötigt.) Die verschiedenen Relais-Modi lassen sich wie folgt\nzusammenfassen:\n-\nNormalbetrieb („Wechselrichter“ in der VictronConnect App) - Standardeinstellung\nWährend es Normalbetriebs ist das Relais geschlossen. Es ist offen, wenn der\nWechselrichter sich bei einem Alarm ausgeschaltet hat oder durch einen Nutzer\nausgeschaltet wurde. Es ist (natürlich) auch offen, wenn kein Strom an den Anschlüssen\nanliegt, z. B. weil die Batterie nicht angeschlossen ist. Im ECO-Modus ist das Relais\ngeschlossen, sowohl wenn nach einer Last gesucht wird als auch, wenn das Gerät\nvollständig an ist, z. B, wenn eine Last erkannt wurde.\nVerwenden Sie diese Option, wenn Sie möchten, dass das Relais signalisiert, dass an\nden Ausgängen des Wechselrichters Strom vorhanden ist.\n-\nÄhnlich wie oben, jedoch öffnet sich das Relais auch, wenn ein Warnhinweis vorliegt.\nZum Beispiel, weil die Batteriespannung auf den Abschalt-Wert abgefallen ist, oder wenn\ndie Batterie so viel geladen wurde, dass ein Abschalten aufgrund von Überlast bald\nbevorsteht. Im ECO-Modus ist das Relais geschlossen, sowohl wenn nach einer Last\nWarnhinweise und Alarme („Alarm“ in der VictronConnect App)\n12\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "EN\nAppendix\ngesucht wird als auch, wenn das Gerät vollständig an ist, (d. h., wenn eine Last\nerkannt wurde). Ausgenommen ist hier der Fall, wenn ein Warnhinweis vorliegt.\nVerwenden Sie diese Option, wenn Sie möchten, dass das Relais signalisiert, dass\neine Handlung erforderlich ist (Laden der Batterie, Reduzierung der Last, etc.), um\neinen Stromausfall zu verhindern.\n-\nBatterie schwach („Batterie schwach“ in der VictronConnect App)\nDas Relais ist im Normalbetrieb an. Es schaltet sich ab, wenn ein Warnhinweis\n„Batterie schwach“ vorliegt. Es bleibt aus, wenn der Wechselrichter aufgrund einer\nzu schwachen Spannung abschaltet. Es schaltet sich erst wieder ein, wenn der\nWechselrichter in Betrieb ist und die Batteriespannung den Schwellwert zum\nZurücksetzen des Vor-Alarms überschreitet Verwenden Sie diese Option zum Last-\nAbwurf oder, um automatisch einen Generator zu starten. Beachten Sie bitte, dass\nes sich hierbei eher um eine behelfsmäßige Option zum Starten/Stoppen eines\nGenerators handelt. Weitere und besser geeignete Optionen finden Sie hier.\nExterner Lufter („Lufter“ in der VictronConnect App)\n-\nDas Relais ist aus, es sei denn, der Lüfter im Inneren des Wechselrichters ist in\nBetrieb. Verwenden Sie diese Option zum Steuern eines externen Lüfters, zum\nBeispiel, wenn sich der Wechselrichter in einem engen, geschlossenen Bereich\nbefindet.\n-\nDeaktiviertes Relais („aus“ in der VictronConnect App)\nDiese Option stellt das Relais in die Position OPEN. Verwenden Sie diese Option,\nwenn Sie die Relais-Funktion nicht verwenden möchten.\nNL\nFR\nDE\nES\nSE\nvictron energy\n13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "5. Konfiguration\nDie Einstellungen dürfen nur von einer qualifizierten Elektrofachkraft geändert\nwerden.\n!\nLesen Sie vor eventuellen Änderungen erst die Anweisungen.\nDie Batterien müssen während des Ladevorgangs in einem trockenen, gut\nbelüfteten Raum stehen.\n5.1 Standardeinstellung: betriebsbereit\nPhoenix-Wechselrichter werden ab Fabrik mit Standardeinstellungen ausgeliefert. Diese\nbeziehen sich auf den Betrieb als Einzelgerät.\nStandard-Fabrikeinstellungen\nWechselrichterfrequenz\n50 Hz\nWechselrichterspannung\n230 VAC\nSuchmodus\naus\nProgrammierbares Relais\nAlarmfunktion\nDynamisches Abschalten\naus\n5.2 Erläuterungen zu den Einstellungen\nWechselrichter-Frequenz\nFrequenz am Ausgang\nEinstellbar: 50Hz; 60Hz\nWechselrichter-Spannung\nEinstellbar: 210 - 245 V\nECO-Modus\nSteht der ECO-Modus auf \"on\", wird der Stromverbrauch bei Nulllastbetrieb um ungefähr\n80 ... 90 % reduziert. In diesem Modus schaltet sich der Phoenix Wechselrichter Smart, wenn\ner im Wechselrichter-Modus betrieben wird, bei Nulllast bzw. bei nur geringer Last ab und\nschaltet sich alle zweieinhalb Sekunden für einen kurzen Zeitraum (anpassbar) wieder ein.\nÜberschreitet der Ausgangsstrom einen eingestellten Grenzwert, nimmt der Wechselrichter\nden Betrieb wieder auf. Ist dies nicht der Fall, schaltet sich der Wechselrichter wieder ab.\nDer ECO-Modus lässt sich mit dem Druckknopf an der Vorderseite des Wechselrichters\neinstellen.\nDie Last-Schwellwerte \"shut down\" (abschalten) und \"remain on\" (eingeschaltet bleiben)\nlassen sich für den ECO-Modus mit Victron Connect einstellen.\nDie werksseitigen Standard-Einstellungen sind:\nAbschalten: 50 Watt (lineare Last)\nEinschalten: 100 Watt (lineare Last)\nProgrammierbares Relais\nIn der Grundeinstellung wirkt das Multifunktions-Relais als Alarmrelais d.h. es schaltet das\nGerät bei Störungen ab (Gerät wird zu heiß, Brummspannung am Eingang zu hoch,\nBatteriespannung zu niedrig).\n14\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Standard-Fabrikeinstellungen",
+            ""
+          ],
+          [
+            "Wechselrichterfrequenz",
+            "50 Hz"
+          ],
+          [
+            "Wechselrichterspannung",
+            "230 VAC"
+          ],
+          [
+            "Suchmodus",
+            "aus"
+          ],
+          [
+            "Programmierbares Relais",
+            "Alarmfunktion"
+          ],
+          [
+            "Dynamisches Abschalten",
+            "aus"
+          ]
+        ]
+      ]
+    }
+  ]
+}

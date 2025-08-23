@@ -1,0 +1,427 @@
+{
+  "archivo": "10043213 - Manual-Victron-Phoenix-Smart-1600VA-3000VA_p61_70",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Dynamisches Abschalten\nVerwenden Sie VictronConnect, um das dynamische Abschalten zu aktivieren und zu\nkonfigurieren (siehe https://www.victronenergy.com/live/ve.direct:phoenix-inverters-\ndynamic-cutoff für zusätzliche Angaben).\nVerwenden Sie das dynamische Abschalten nicht in Installationen, bei denen auch\nandere Lasten an dieselbe Batterie angeschlossen sind: Die Batteriespannung fällt dann\naufgrund der zusätzlichen Last ab, der Algorithmus des dynamischen Abschaltens im\nWechselrichter berücksichtigt diese Last jedoch nicht. Daher schaltet sich der\nWechselrichter zu früh mit einem Unterspannungs-Alarm ab.\nEN\nNL\nFR\n5.3 Konfiguration mit dem Computer\nSämtliche Einstellungen lassen sich mit einem Smartphone, Tablet oder Computer\nverändern.\nDE\nBei der Änderung von Einstellungen mit einem Smartphone oder Tablet wird Folgendes\nbenötigt:\nES\n- Die VictronConnect: Sie steht zum kostenlosen Download unter www.victronenergy.com\nbereit.\nSE\nBei Einstellungen mit dem PC wird Folgendes benötigt:\n- Die VictronConnect: Sie steht zum kostenlosen Download unter www.victronenergy.com\nbereit.\n- Eine VE.Direct zu USB-Schnittstelle\nAppendix\n6. WARTUNG\nDer Phoenix Wechselrichter Smart bedarf keiner speziellen Wartung. Es reicht aus, wenn die\nAnschlüsse einmal jährlich kontrolliert werden. Feuchtigkeit sowie Staub, Öl- und sonstige\nDämpfe sollten vermieden werden. Halten Sie die Geräte sauber.\nvictron energy\n15",
+      "tablas": [
+        [
+          [
+            "5.3 Konfiguration mit dem Computer",
+            ""
+          ],
+          [
+            "Sämtliche Einstellungen lassen sich mit einem Smartphone, Tablet oder Computer verändern.",
+            "DE"
+          ],
+          [
+            "Bei der Änderung von Einstellungen mit einem Smartphone oder Tablet wird Folgendes benötigt:",
+            "ES"
+          ],
+          [
+            "- Die VictronConnect: Sie steht zum kostenlosen Download unter www.victronenergy.com bereit.",
+            "SE"
+          ],
+          [
+            ""
+          ],
+          [
+            "Bei Einstellungen mit dem PC wird Folgendes benötigt:",
+            ""
+          ],
+          [
+            "- Die VictronConnect: Sie steht zum kostenlosen Download unter www.victronenergy.com bereit.",
+            ""
+          ],
+          [
+            "- Eine VE.Direct zu USB-Schnittstelle",
+            "Appendix"
+          ],
+          [
+            "6. WARTUNG"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "7. Technische Daten\nPhoenix Wechselrichter\nSmart\n12 Volt\n24 Volt\n48 Volt\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\n12/3000\n24/3000\n48/3000\nParallelschaltung und Drei-Phasen-\nBetrieb\nNein\nWECHSELRICHTER\nEingangsspannungsbereich (1)\n9,3 - 17 V\n18,6 - 34 V\n37,2 - 68 V\nAusgang\nAusgangsspannung: 230 VAC +2 % 50 Hz oder 60 Hz +\n0,1 % (1)\nKont. Ausgangsleistung bei 25℃ (2)\n1600VA\n2000VA\n3000VA\nKont. Ausgangsleistg. bei 25℃\n1300W\n1600W\n2400W\nKont. Ausgangsleistg. bei 40℃\n1200W\n1450W\n2200W\nKont. Ausgangsleistg. bei 65℃\n800W\n1000W\n1700W\nSpitzenleistung\n3000VA\n4000VA\n6000VA\nDynamisches (lastabhängiges)\nDynamisches Abschalten, siehe\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-\nHerunterfahren aufgrund von niedrigem\nDC (vollständig konfigurierbar)\ndynamic-cutoff\nMax. Wirkungsgrad 12/ 24 /48 V\n92/94/94 %\n92/94/94 %\n93/94/95 %\nNull-Last Leistung 12 / 24 / 48 V\n8/9/11 W\n8/9/11 W\n12/13/15 W\nNull-Last Leistung im ECO-Modus\n0,6/1,3/2,1 W\n0,6/1,3/2,1 W\n1,5/1,9/2,8 W\nALLGEMEINES\nProgrammierbares Relais (2)\nJa\nStopp-& Start-Leistung ECO-Modus\nregelbar\nSchutz (3)\na - g\nDrahtlose Bluetooth Kommunikation\nFür Fernüberwachung und Systemintegration\nVE.Direct Kommunikationsanschluss\nFür Fernüberwachung und Systemintegration\nFerngesteuerte Ein-/Aus-Schaltung\nJa\nGemeinsame Merkmale\nBetriebstemperaturbereich: - 40 bis +50℃ (Gebläselüftung)\nFeuchte (nicht kondensierend): max. 95 %\nGEHÄUSE\nGemeinsame Merkmale\nMaterial & Farbe: Stahl (Blau RAL 5012; und Schwarz RAL\n9017)\nSchutzklasse: IP 21\nBatterie-Anschluss\nM8 Bolzen\nM8 Bolzen\n2+2 M8 Bolzen\n230 V AC Anschluss\nSchraubklemmen\nGewicht\n12kg\n13kg\n19kg\nAbmessungen (HxBxT)\n485 x 219 × 125 mm\n485 × 219 × 125 mm\n533 x 285 × 1500mm\n(12V)\n485 x 285 x 150mm\n(24V/48V)\nNORMEN\nSicherheit\nEN 60335-1\nEmissionen Immunität\nEN 55014-1 / EN 55014-2/ IEC 61000-6-1 / IEC 61000-6-2 /\nIEC 61000-6-3\nAutomobil-Richtlinie\nECE R10-5\n1) Nichtlineare Last, Spitzenfaktor 3:1\n3) Schutzschlüssel:\n2) Relais u. a. einstellbar als allgemeines Alarm-Relais,\na) Ausgangskurzschluss\nDC-Unterspannungs-Alarm oder Start- /Stopp-Funktion\nb) Überlast\nfür ein Aggregat\nc) Batteriespannung zu hoch\nWechselstrom Nenn-Leistung: 230 V / 3 A\nd) Batterie-Spannung zu niedrig\nGleichstrom Nennwert: 3 A bis zu 30 VDC, 0,2A bis\nzu 70 VDC\ne) Temperatur zu hoch\nf) 120 V AC am Wechselrichterausgang\ng) Zu hohe Brummspannung am Eingang\n16\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Phoenix Wechselrichter Smart",
+            "12 Volt 24 Volt 48 Volt",
+            "12/1600 24/1600 48/1600",
+            "12/2000 24/2000 48/2000",
+            "12/3000 24/3000 48/3000"
+          ],
+          [
+            "Parallelschaltung und Drei-Phasen- Betrieb",
+            "",
+            "Nein",
+            ""
+          ],
+          [
+            "",
+            "",
+            "WECHSELRICHTER",
+            ""
+          ],
+          [
+            "Eingangsspannungsbereich (1)",
+            "9,3 - 17 V",
+            "18,6 - 34 V 37,2",
+            "- 68 V"
+          ],
+          [
+            "",
+            "Ausgangsspannung: 230 VAC +2 % 50 Hz oder 60 Hz +"
+          ],
+          [
+            "Ausgang",
+            "",
+            "",
+            "0,1 % (1)",
+            ""
+          ],
+          [
+            "Kont. Ausgangsleistung bei 25℃ (2)",
+            "1600VA",
+            "2000VA",
+            "3000VA"
+          ],
+          [
+            "Kont. Ausgangsleistg. bei 25℃",
+            "1300W",
+            "1600W",
+            "2400W"
+          ],
+          [
+            "Kont. Ausgangsleistg. bei 40℃",
+            "1200W",
+            "1450W",
+            "2200W"
+          ],
+          [
+            "Kont. Ausgangsleistg. bei 65℃",
+            "800W",
+            "1000W",
+            "1700W"
+          ],
+          [
+            "Spitzenleistung",
+            "3000VA",
+            "4000VA",
+            "6000VA"
+          ],
+          [
+            "Dynamisches (lastabhängiges)",
+            "Dynamisches Abschalten, siehe https://www.victronenergy.com/live/ve.direct:phoenix-inverters-"
+          ],
+          [
+            "Herunterfahren aufgrund von niedrigem"
+          ],
+          [
+            "DC (vollständig konfigurierbar)",
+            "",
+            "dynamic-cutoff",
+            ""
+          ],
+          [
+            "Max. Wirkungsgrad 12/ 24 /48 V",
+            "92/94/94 %",
+            "92/94/94 %",
+            "93/94/95 %"
+          ],
+          [
+            "Null-Last Leistung 12 / 24 / 48 V",
+            "8/9/11 W",
+            "8/9/11 W",
+            "12/13/15 W"
+          ],
+          [
+            "Null-Last Leistung im ECO-Modus",
+            "0,6/1,3/2,1 W",
+            "0,6/1,3/2,1 W",
+            "1,5/1,9/2,8 W"
+          ],
+          [
+            "",
+            "",
+            "ALLGEMEINES",
+            "",
+            ""
+          ],
+          [
+            "Programmierbares Relais (2)",
+            "",
+            "Ja",
+            ""
+          ],
+          [
+            "Stopp-& Start-Leistung ECO-Modus",
+            "",
+            "regelbar",
+            ""
+          ],
+          [
+            "Schutz (3)",
+            "",
+            "",
+            "a - g",
+            ""
+          ],
+          [
+            "Drahtlose Bluetooth Kommunikation",
+            "Für Fernüberwachung und Systemintegration"
+          ],
+          [
+            "VE.Direct Kommunikationsanschluss",
+            "Für Fernüberwachung und",
+            "Systemintegration"
+          ],
+          [
+            "Ferngesteuerte Ein-/Aus-Schaltung",
+            "Ja",
+            ""
+          ],
+          [
+            "Gemeinsame Merkmale",
+            "Betriebstemperaturbereich: - 40 bis +50℃ (Gebläselüftung) Feuchte (nicht kondensierend): max. 95 %"
+          ],
+          [
+            "",
+            "",
+            "GEHÄUSE"
+          ],
+          [
+            "Gemeinsame Merkmale",
+            "Material & Farbe: Stahl (Blau RAL 5012;\n9017) Schutzklasse: IP",
+            "und Schwarz RAL\n21"
+          ],
+          [
+            "Batterie-Anschluss",
+            "",
+            "M8 Bolzen",
+            "M8 Bolzen",
+            "2+2 M8 Bolzen"
+          ],
+          [
+            "230 V AC Anschluss",
+            "",
+            "Schraubklemmen",
+            ""
+          ],
+          [
+            "Gewicht",
+            "12kg",
+            "13kg",
+            "19kg"
+          ],
+          [
+            "Abmessungen (HxBxT)",
+            "485 x 219 × 125 mm",
+            "485 × 219 × 125 mm",
+            "533 x 285 × 1500mm (12V) 485 x 285 x 150mm (24V/48V)"
+          ],
+          [
+            "",
+            "",
+            "NORMEN",
+            "",
+            ""
+          ],
+          [
+            "Sicherheit",
+            "",
+            "",
+            "EN 60335-1",
+            ""
+          ],
+          [
+            "Emissionen Immunität",
+            "EN 55014-1 / EN 55014-2/ IEC 61000-6-1\nIEC 61000-6-3",
+            "/ IEC 61000-6-2 /"
+          ],
+          [
+            "Automobil-Richtlinie",
+            "",
+            "",
+            "ECE R10-5",
+            ""
+          ],
+          [
+            "1) Nichtlineare Last, Spitzenfaktor 3:1",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2) Relais u. a. einstellbar als allgemeines Alarm-Relais,",
+            "3) Schutzschlüssel:"
+          ],
+          [
+            "DC-Unterspannungs-Alarm oder Start- /Stopp-Funktion",
+            "a)\nb)",
+            "Ausgangskurzschluss\nÜberlast",
+            ""
+          ],
+          [
+            "für ein Aggregat",
+            "",
+            "c)",
+            "Batteriespannung zu hoch",
+            ""
+          ],
+          [
+            "Wechselstrom Nenn-Leistung: 230 V / 3 A",
+            "d)",
+            "Batterie-Spannung zu niedrig",
+            ""
+          ],
+          [
+            "Gleichstrom Nennwert: 3 A bis zu 30 VDC, 0,2A\nzu 70 VDC",
+            "bis\ne) Temperatur zu hoch f) 120 V AC am Wechselrichterausgang g) Zu hohe Brummspannung am Eingang\n:unselected: :unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1) Kann auf 60 Hz und 240 V eingestellt werden\n2) Schutz\na. Ausgangskurzschluss\nb. Überlast\nc. Batteriespannung zu hoch\nd. Batteriespannung zu niedrig\ne. Temperatur zu hoch\nf. 230 VAC am Wechselrichterausgang\ng. Brummspannung am Eingang zu hoch\n3) Nichtlineare Last, Spitzenfaktor 3:1\n4) Relais einstellbar als allgemeines Alarm-Relais, DC-Unterspannungs-Alarm- oder Start-Relais für ein Aggregat\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\nvictron energy\n17",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "1. INSTRUCCIONES DE SEGURIDAD\nGeneral\nEN\nAntes de utilizar este equipo lea la documentación suministrada con este producto para\nfamiliarizarse con las instrucciones y medidas de seguridad. Este producto ha sido\ndiseñado y comprobado de acuerdo con las normas internacionales. El equipo debe\nutilizarse exclusivamente para los fines para los que ha sido diseñado.\nNL\nFR\nADVERTENCIA: PELIGRO DE DESCARGA ELÉCTRICA.\nEl producto se usa junto con una fuente de alimentación permanente (batería). Aunque el\nequipo esté apagado, puede producirse una tensión eléctrica peligrosa en los terminales\nde entrada y salida. Desconecte siempre la batería antes de realizar tareas de\nmantenimiento.\nDE\nES\nEl producto no tiene componentes internos que puedan ser manipulados por el usuario.\nNo retire el panel frontal ni encienda el producto si cualquiera de los paneles ha sido\nretirado. Cualquier reparación deberá llevarla a cabo personal cualificado.\nSE\nNo utilice este producto en lugares con riesgo de explosión de gas o polvo. Consulte la\ninformación del fabricante de la batería para asegurarse de que el producto es\ncompatible para su uso con la batería. Deberán cumplirse siempre las instrucciones de\nseguridad del fabricante.\nADVERTENCIA: No levante cargas pesadas sin ayuda.\nAppendix\nInstalación\nLea atentamente las instrucciones de instalación en el manual de instalación antes de\ninstalar el equipo.\nEste producto es un dispositivo de clase de seguridad I (suministrado con terminal de puesta\na tierra). El chasis debe estar conectado a tierra. Hay un punto de puesta a tierra en la\nparte exterior del producto. Si sospecha que la puesta a tierra pueda estar dañada, deberá\ndesconectar el equipo y asegurarse de que no se puede poner en marcha de forma\naccidental; póngase en contacto con personal técnico cualificado.\nCompruebe que los cables de entrada CC y CA disponen de fusibles y de disyuntores. Este\nproducto no tiene fusible interno en su interior. No sustituya nunca un componente de\nseguridad con uno de otro tipo. Consulte el manual para determinar cuál es el componente\nadecuado.\nDurante la instalación, asegúrese de que se retira el conector remoto con puente (o apague\nel interruptor de encendido/apagado remoto si está instalado) para estar seguro de que el\ninversor no puede encenderse de forma inesperada.\nAntes de conectarlo a la corriente, asegúrese de que la fuente eléctrica disponible coincide\ncon la configuración del producto descrita en el manual.\nCompruebe que el equipo se utiliza en las condiciones ambientales correctas. No utilice el\nproducto en un ambiente húmedo o polvoriento. Compruebe que hay suficiente espacio\nalrededor del producto para su ventilación y que los orificios de ventilación no están tapados.\nCompruebe que la tensión necesaria para el sistema no exceda la capacidad del producto.\nvictron energy\n1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Transporte y almacenamiento\nAsegúrese de que los cables de alimentación y los de la batería han sido desconectados\npara su almacenamiento o transporte.\nNo se aceptará ninguna responsabilidad por cualquier daño ocasionado al equipo durante el\ntransporte si este no lleva su embalaje original.\nGuarde el producto en un entorno seco, la temperatura de almacenamiento debe oscilar\nentre -20°C y 60°C.\nConsulte el manual del fabricante de la batería para obtener información sobre el transporte,\nalmacenamiento, carga, recarga y eliminación de la batería.\n2\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "2. DESCRIPCIÓN\n2.1 General\nEN\nBluetooth incorporado: totalmente configurable con una tableta o smartphone\n· Niveles de disparo de la alarma y reseteo por tensión baja de la batería.\n· Niveles de desconexión y reinicio por tensión baja de la batería.\n· Desconexión dinámica: nivel de desconexión dependiente de la carga\n· Tensión de salida: 210 - 245V\n· Frecuencia: 50 Hz o 60 Hz\nOn/off del modo ECO y sensor de nivel del modo ECO\n· Relé de alarma\nSeguimiento:\n· Tensión de entrada y salida, % de carga y alarmas\nPuerto de comunicación VE.Direct\nEl puerto VE.Direct puede conectarse a un ordenador (se necesita un cable de interfaz\nVE.Direct) para configurar y monitorizar los mismos parámetros.\nFiabilidad probada\nLa topología de puente completo más transformador toroidal ha demostrado su fiabilidad\na lo largo de muchos años.\nLos inversores están a prueba de cortocircuitos y protegidos contra el\nsobrecalentamiento, ya sea debido a una sobrecarga o a una temperatura ambiente\nelevada.\nNL\nFR\nDE\nES\nSE\nAppendix\nAlta potencia de arranque\nNecesaria para arrancar cargas como convertidores para lámparas LED, halógenas o\nherramientas eléctricas.\nModo ECO\nEn modo ECO, el inversor se pondrá en espera cuando la carga descienda por debajo de un\nvalor predeterminado (nivel mínimo de encendido de la carga: 10 VA; y nivel mínimo de\napagado de la carga: 0 VA). Una vez en espera, el inversor se activará brevemente\n(ajustable; por defecto: cada 3 segundos). Si la carga excede el nivel predeterminado, el\ninversor permanecerá encendido.\nInterruptor on/off remoto\nSe puede conectar un interruptor On/Off remoto a un conector bifásico.\nAlternativamente, el terminal H (izquierda) del conector bifásico puede cambiarse al positivo\nde la batería, o el terminal L (derecha) del conector bifásico puede cambiarse al negativo de\nla batería (o al chasis de un vehículo, por ejemplo).\nDiagnóstico LED\nVéase la sección 3.3\nPara transferir la carga a otra fuente CA: el conmutador de transferencia automático\nPara nuestros inversores de menor potencia recomendamos nuestro conmutador de\ntransferencia automático Filax. El tiempo de conmutación del \"Filax\" es muy corto (menos de\n20 milisegundos), de manera que los ordenadores y demás equipos electrónicos continuarán\nfuncionando sin interrupción. Como alternativa, utilice un MultiPlus con interruptor de\ntransferencia incorporado.\nvictron energy\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "3. FUNCIONAMIENTO\n3.1 Conmutador On/Off\nAl poner el conmutador en \"on\" con el pulsador, el producto es plenamente operativo. El\ninversor se pondrá en marcha y el LED \"inverter\" se encenderá. Si posteriormente se pulsa el\npulsador, en un breve periodo de tiempo, el inversor cambiará entre \"on\", \"ECO\" y \"off\".\nAparte del botón, el inversor también puede encenderse (normal o ECO) y apagarse por\nBluetooth en un dispositivo móvil con iOS o Android y la aplicación VictronConnect. Sin\nembargo, cuando se apaga por Bluetooth o con el botón, la unidad no puede volver a\nencenderse y apagarse a través del puerto VE.Direct con cable.\n3.2 Control remoto\nEs posible utilizar un control remoto con un interruptor on/off sencillo o con el panel de control\ndel inversor Phoenix. Se puede conectar un interruptor de control remoto (on/off) a un\nconector bifásico. El interruptor también puede conectarse entre el positivo de la batería y el\ncontacto de la izquierda del conector bifásico (marcado con la letra \"H\"; véase el apéndice A)\no entre el negativo de la batería y el contacto de la derecha del conector bifásico (marcado\ncon la letra \"L\"; véase el apéndice A).\nPor motivos de seguridad, este producto puede apagarse completamente (es\ndecir, de modo que el inversor no puede encenderse con el botón o por\nBluetooth), retirando el conector remoto y el correspondiente puente instalado\npor defecto (o apagando el interruptor de encendido/apagado remoto si está\ninstalado). El usuario puede tener entonces la seguridad de que otro usuario no\npuede encender el inversor por accidente a través del Bluetooth de forma\ninesperada.\n!\n3.3 Significado de los LED\nLED verde\nEstado\nResolución de problemas\nEncendido fijo\nInverter on\nLED Rojo apagado\nestado OK\nLED rojo encendido o parpadeando:\nEl inversor sigue encendido, pero se apagará si la\ncondición empeora Ver el motivo del aviso en la tabla de\nLED rojo\nParpadeo sencillo\nlento\nModo ECO\nSi el inversor se enciende y apaga continuamente con una\ncarga conectada, puede que la carga sea demasiado\npequeña para el ajuste actual del modo ECO. Incremente\nla carga o cambie los parámetros del modo ECO. (ajuste\nmínimo del modo ECO: 15W)\nParpadeo doble rápido\nApagado y en\nespera\nEl inversor se ha apagado para su protección. El inversor\nse reiniciará automáticamente tan pronto como se eliminen\ntodas las condiciones de alarma. Ver el motivo por el que\nse ha apagado en el estado del LED rojo.\nOff\nInversor\napagado\nLED rojo apagado\nCompruebe el conector On/Off remoto.\nCompruebe las conexiones del cable CC y los fusibles.\nCompruebe el modo operativo pulsando el pulsador una\nvez.\nLED rojo encendido o parpadeando\n4\nvictron energy",
+      "tablas": [
+        [
+          [
+            "LED verde",
+            "Estado",
+            "Resolución de problemas"
+          ],
+          [
+            "Encendido fijo",
+            "Inverter on",
+            "LED Rojo apagado estado OK LED rojo encendido o parpadeando: El inversor sigue encendido, pero se apagará si la condición empeora Ver el motivo del aviso en la tabla de LED rojo"
+          ],
+          [
+            "Parpadeo sencillo lento",
+            "Modo ECO",
+            "Si el inversor se enciende y apaga continuamente con una carga conectada, puede que la carga sea demasiado pequeña para el ajuste actual del modo ECO. Incremente la carga o cambie los parámetros del modo ECO. (ajuste mínimo del modo ECO: 15W)"
+          ],
+          [
+            ":selected: :selected: Parpadeo doble rápido",
+            "Apagado y en espera",
+            "El inversor se ha apagado para su protección. El inversor se reiniciará automáticamente tan pronto como se eliminen todas las condiciones de alarma. Ver el motivo por el que se ha apagado en el estado del LED rojo."
+          ],
+          [
+            "Off",
+            "Inversor apagado",
+            "LED rojo apagado Compruebe el conector On/Off remoto. Compruebe las conexiones del cable CC y los fusibles. Compruebe el modo operativo pulsando el pulsador una vez. LED rojo encendido o parpadeando"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "El inversor se ha apagado debido para su protección. Ya\nno se reiniciará automáticamente. El LED rojo indica el\nmotivo por el que se ha apagado. Solucione el error y\nreinicie el inversor poniendo el interruptor en Off y de\nnuevo en On.\n-.-\nParpadeo rápido\nApagado y\nactualización\nde firmware en\nprogreso o\nfallida.\nParpadeo del LED rojo (-\n·)\nActualización de firmware en progreso o actualización de\nfirmware fallida. Si falla, volver a intentar la actualización\nde firmware.\nLED amarillo\nEstado\nResolución de problemas\nEncendido fijo\nModo ECO\nLED Rojo apagado\nestado OK\nLED rojo encendido o parpadeando:\nEl inversor sigue encendido, pero se apagará si la\ncondición empeora Ver el motivo del aviso en la tabla de\nLED rojo\nOff\nModo ECO off\nLED rojo apagado\nCompruebe el modo operativo pulsando el pulsador una\nvez.\nCompruebe el conector On/Off remoto.\nCompruebe las conexiones del cable CC y los fusibles.\nLED rojo encendido o parpadeando\nEl inversor se ha apagado debido para su protección. Ya\nno se reiniciará automáticamente. El LED rojo indica el\nmotivo por el que se ha apagado. Solucione el error y\nreinicie el inversor poniendo el interruptor en Off y de\nnuevo en On.\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\nLED Rojo\nDefinición\nResolución de problemas\nEncendido fijo\nOverload\nReduzca la carga\nParpadeo lento\nBatería baja\nRecargue o sustituya la batería\nCompruebe las conexiones del cable CC.\nCompruebe la sección del cable, ya que puede ser\ninsuficiente.\nConsulte en la sección 4.2 Protecciones y reinicios\nautomáticos los detalles sobre los reinicios manual y\nautomático.\nParpadeo rápido\nBatería alta\nReduzca la tensión de entrada CC, compruebe que el\ncargador no tenga algún fallo\nParpadeo doble\nTemperatura\nalta\nReduzca la carga y/o coloque el inversor en un sitio mejor\nventilado\nParpadeo sencillo\nrápido\nTensión de\nondulación CC\nalta\nCompruebe las conexiones del cable CC y la sección del\ncable.\nvictron energy\n5",
+      "tablas": [
+        [
+          [
+            "",
+            "",
+            "El inversor se ha apagado debido para su protección. Ya no se reiniciará automáticamente. El LED rojo indica el motivo por el que se ha apagado. Solucione el error y reinicie el inversor poniendo el interruptor en Off y de nuevo en On."
+          ],
+          [
+            "-.- Parpadeo rápido",
+            "Apagado y actualización de firmware en progreso o fallida.",
+            "Parpadeo del LED rojo (- ·) Actualización de firmware en progreso o actualización de firmware fallida. Si falla, volver a intentar la actualización de firmware."
+          ]
+        ],
+        [
+          [
+            "LED amarillo",
+            "Estado",
+            "Resolución de problemas"
+          ],
+          [
+            "Encendido fijo",
+            "Modo ECO",
+            "LED Rojo apagado estado OK"
+          ],
+          [
+            "LED rojo encendido o parpadeando: El inversor sigue encendido, pero se apagará si la condición empeora Ver el motivo del aviso en la tabla de LED rojo"
+          ],
+          [
+            "Off",
+            "Modo ECO off",
+            "LED rojo apagado Compruebe el modo operativo pulsando el pulsador una vez. Compruebe el conector On/Off remoto. Compruebe las conexiones del cable CC y los fusibles."
+          ],
+          [
+            "LED rojo encendido o parpadeando El inversor se ha apagado debido para su protección. Ya no se reiniciará automáticamente. El LED rojo indica el motivo por el que se ha apagado. Solucione el error y reinicie el inversor poniendo el interruptor en Off y de nuevo en On."
+          ]
+        ],
+        [
+          [
+            "LED Rojo",
+            "Definición",
+            "Resolución de problemas"
+          ],
+          [
+            "Encendido fijo",
+            "Overload",
+            "Reduzca la carga"
+          ],
+          [
+            "Parpadeo lento",
+            "Batería baja",
+            "Recargue o sustituya la batería Compruebe las conexiones del cable CC. Compruebe la sección del cable, ya que puede ser insuficiente. Consulte en la sección 4.2 Protecciones y reinicios automáticos los detalles sobre los reinicios manual y automático."
+          ],
+          [
+            "Parpadeo rápido",
+            "Batería alta",
+            "Reduzca la tensión de entrada CC, compruebe que el cargador no tenga algún fallo"
+          ],
+          [
+            "Parpadeo doble",
+            "Temperatura alta",
+            "Reduzca la carga y/o coloque el inversor en un sitio mejor ventilado"
+          ],
+          [
+            "Parpadeo sencillo rápido",
+            "Tensión de ondulación CC alta",
+            "Compruebe las conexiones del cable CC y la sección del cable."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "3.4 Protecciones y reinicios automáticos\nOverload\nAlgunas cargas, como motores o bombas, requieren elevadas cantidades de corriente de\nentrada cuando tienen que arrancar. En tales circunstancias, es posible que la corriente de\narranque exceda la tensión de conmutación de red del inversor. En este caso, la tensión de\nsalida disminuirá rápidamente para limitar la corriente de salida del inversor. Si se excede\ncontinuamente la tensión de conmutación, el inversor se apagará: espere 30 segundos y\nreinicie.\nDespués de tres reinicios, seguidos de otra desconexión producida por sobrecarga en los 30\nsegundos siguientes al reinicio, el inversor se apagará y permanecerá apagado. Los LED\nseñalarán desconexión por sobrecarga. Para reiniciar el inversor, ponga el interruptor en Off\ny de nuevo en On.\nTensión baja de la batería (ajustable)\nEl inversor se apagará cuando la tensión de entrada CC caiga por debajo del nivel de\ndesconexión por tensión baja de la batería. Tras un intervalo mínimo de 30 segundos, el\ninversor se reiniciará si la tensión sube por encima del nivel de reinicio por tensión baja de la\nbatería.\nDespués de tres reinicios, seguidos de una desconexión producida por tensión baja de la\nbatería en los 30 segundos siguientes al reinicio, el inversor se apagará y no volverá a\nintentarlo. Los LED señalarán desconexión por tensión baja de la batería. Para reiniciar el\ninversor, ponga el interruptor en Off y de nuevo en On, o recargue la batería: tan pronto como\nla batería alcance el nivel de detección de carga y permanezca por encima de este durante\n30 segundos, se activará.\nConsulte en la tabla de Información técnica los niveles predeterminados de desconexión y\nreinicio por tensión baja de la batería. Pueden modificarse con la app VictronConnect.\nTensión alta de la batería\nReduzca la tensión de entrada CC y/o compruebe que no haya una batería o cargador solar\ndefectuoso en el sistema. Después de que se produzca la desconexión por tensión alta de la\nbatería, el inversor primero esperará 30 segundos y después volverá a intentar ponerse en\nmarcha tan pronto como la tensión de la batería haya bajado a un nivel aceptable. El inversor\nno permanecerá apagado después de múltiples reintentos.\nTemperatura alta\nUna temperatura ambiente alta o soportar grandes cargas podría provocar la desconexión\npor temperatura alta. El inversor se reiniciará pasados 30 segundos. El inversor no\npermanecerá apagado después de múltiples reintentos. Reduzca la carga y/o coloque el\ninversor en un sitio mejor ventilado\nTensión de ondulación CC alta\nLa tensión de ondulación CC alta viene dada normalmente por conexiones flojas del cable\nCC y/o por cables CC demasiado finos. Después de que el inversor se haya desconectado\npor tensión de ondulación CC alta, volverá a reiniciarse pasados 30 segundos.\n6\nvictron energy",
+      "tablas": []
+    }
+  ]
+}

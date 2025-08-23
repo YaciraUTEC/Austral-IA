@@ -1,0 +1,121 @@
+{
+  "archivo": "CONTROLADOR RICE LAKE AD 920I",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "920i® Programmable HMI Indicator/Controller\nSingle-Channel A/D Card Installation Instructions\nPN 68532\nUse the following procedure to install single-channel\nA/D cards in 920i indicators:\n1. Disconnect indicator from power source.\nDisconnect power before\nremoving\nWarning indicator backplate.\n!\n2.\nPlace indicator face-down on an antistatic\nwork mat. Remove screws that hold the\nbackplate to the enclosure body.\nUse a wrist strap to ground yourself and\nCaution protect components from electrostatic\ndischarge (ESD) when working inside the\nindicator enclosure.\n3. Carefully align the large option card\nconnector with connector J5 or J6 on the CPU\nboard. Press down to seat the option card in\nthe CPU board connector.\n4. Use the screws and lockwashers provided in\nthe option kit to secure the other end of the\noption card to the threaded standoffs on the\nCPU board (see Figure 1).\n6. Next, remove connector J1 from the A/D\ncard. The connector plugs into a header on the\ncard (see Figure 2). Wire the load cell cable\nfrom the load cell or junction box to\nconnector J1 as shown in Table 1.\nIf using 6-wire load cell cable (with sense\nwires), remove jumpers JP1 and JP2 before\nreinstalling connector J1. For 4-wire\ninstallation, leave jumpers JP1 and JP2 on.\nAAAA\nOU\nJ5\nO\n0\n0\nJ6\nJ1\nC\nO\n0\nJP1 JP2\nSIG+\nSIG-\nSEN+\nSEN-\nEXC-\nEXC+\n0)\nFigure 2. Single-Channel A/D Card\n0\nFigure 1. Installing Option Card Onto CPU Board\n5. To attach cables from load cells or junction\nboxes to the A/D card, route the cables\nthrough the cord grips and wrap the shield\nwires around the ground stud on the\nenclosure. Secure shield wires to the ground\nstud with the kep nut included in the parts kit.\nSee the 920i Installation Manual, PN 67887,\nfor more information about grounding cables.\nJ1\nConnector Pin\nFunction\n1\n+SIG\n2\n-SIG\n3\n+SENSE\n4\n-SENSE\n5\n+EXC\n6\n-EXC\nFor 6-wire load cell connections, remove jumpers JP1 and\nJP2.\nTable 1. A/D Card Pin Assignments\nRICE LAKE\nWEIGHING SYSTEMS\nTo be the best by every measure®\nDecember 2010\n69092",
+      "tablas": [
+        [
+          [
+            "J1 Connector Pin",
+            "Function"
+          ],
+          [
+            "1",
+            "+SIG"
+          ],
+          [
+            "2",
+            "-SIG"
+          ],
+          [
+            "3",
+            "+SENSE"
+          ],
+          [
+            "4",
+            "-SENSE"
+          ],
+          [
+            "5",
+            "+EXC"
+          ],
+          [
+            "6",
+            "-EXC"
+          ],
+          [
+            "For 6-wire load cell connections, remove jumpers JP1 and JP2."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "7. When connections are complete, reinstall load\ncell connector on the A/D card and use cable\nties to secure the load cell cable to the inside of\nthe enclosure.\n8. Position the backplate over the enclosure and\nreinstall the backplate screws. Use the torque\npattern shown in Figure 3 to prevent distorting\nthe backplate gasket. Torque screws to 15 in-lb\n(1.7 N-m).\n16\n12\n8\n10\n18\n14\n13\nTorque backplate screws\nto 15 in-lb (1.7 N-m)\n5\n6\n3\n2\n1\n®\n4\n17\n9\n7\n11\n15\nFigure 3. 920i Enclosure Backplate\n9. Ensure no excess cable is left inside the\nenclosure and tighten cord grips.\n10. Reconnect power to the indicator.\n11. The 920i automatically recognizes all installed\noption cards when the unit is powered on. No\nhardware-specific configuration is required to\nidentify the newly-installed card to the system.\nCalibrate the A/D card using the procedures\ndescribed in the 920i Installation Manual, PN\n67887.\nSpecifications\nExcitation Voltage\n10 + 0.5 VDC,\n16 x 3503/4 or 32 × 700W load\ncells per A/D card\nSense Amplifier\nDifferential amplifier with\n4- and 6-wire sensing\nAnalog Signal Input Range\n-10 mV/V to +70 mV/V\nAnalog Signal Sensitivity\n0.3 uV/grad minimum @ 7.5 Hz\n1.0 uV/grad typical @ 120 Hz\n4.0 uV/grad typical @ 960 Hz\nA/D Sample Rate\n7.5-960 Hz, software selectable\nInput Impedance\n>35 M3/4 typical\nInternal Resolution\n8 000 000 counts\nWt Display Resolution\n9,999,999\nInput Sensitivity\n10 nV per internal count\nSystem Linearity\n+0.01% of full scale\nZero Stability\n+150 nV/°C, maximum\nSpan Stability\n+ 3.5 ppm/°C, maximum\nInput Voltage Differential\n+800 mV referenced to earth\nground\nInput Overload\nLoad cell signal lines +10 V\ncontinuous, ESD protected\nRFI/EMI Protection\nSignal, excitation, and sense\nlines protected\n2\n920i Single-Channel A/D Card Installation Instructions",
+      "tablas": [
+        [
+          [
+            "Excitation Voltage",
+            "10 + 0.5 VDC,"
+          ],
+          [
+            "16 x 3503/4 or 32 × 700W load cells per A/D card"
+          ],
+          [
+            "Sense Amplifier",
+            "Differential amplifier with 4- and 6-wire sensing"
+          ],
+          [
+            "Analog Signal Input Range",
+            "-10 mV/V to +70 mV/V"
+          ],
+          [
+            "Analog Signal Sensitivity",
+            "0.3 uV/grad minimum @ 7.5 Hz"
+          ],
+          [
+            "1.0 uV/grad typical @ 120 Hz"
+          ],
+          [
+            "4.0 uV/grad typical @ 960 Hz"
+          ],
+          [
+            "A/D Sample Rate",
+            "7.5-960 Hz, software selectable"
+          ],
+          [
+            "Input Impedance",
+            ">35 M3/4 typical"
+          ],
+          [
+            "Internal Resolution",
+            "8 000 000 counts"
+          ],
+          [
+            "Wt Display Resolution",
+            "9,999,999"
+          ],
+          [
+            "Input Sensitivity",
+            "10 nV per internal count"
+          ],
+          [
+            "System Linearity",
+            "+0.01% of full scale"
+          ],
+          [
+            "Zero Stability",
+            "+150 nV/°C, maximum"
+          ],
+          [
+            "Span Stability",
+            "+ 3.5 ppm/°C, maximum"
+          ],
+          [
+            "Input Voltage Differential",
+            "+800 mV referenced to earth ground"
+          ],
+          [
+            "Input Overload",
+            "Load cell signal lines +10 V continuous, ESD protected"
+          ],
+          [
+            "RFI/EMI Protection",
+            "Signal, excitation, and sense lines protected"
+          ]
+        ]
+      ]
+    }
+  ]
+}

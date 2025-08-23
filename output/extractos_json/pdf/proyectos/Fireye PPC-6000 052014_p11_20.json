@@ -1,0 +1,389 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p11_20",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\n1 Technical specification\n1.1 General\nSupply voltage\n120/230Vac +10% - 15%\nPower consumption\nApprox. 60VA\nSupply frequency\n50/60 Hz +5%\nAmbient temperature range\n0 to 60°C (32 to 140°F)\nControl unit protection category\nIP20. The control must be situated in a clean environment\naccording to EN6730-1.\nIndoor: Control must be mounted in an NEMA1 (IP40) enclosure\nOutdoor: Control must be mounted in an NEMA3 (IP54) enclosure\nUnit dimensions\nWeight\nControl unit 176 x 115 x 92mm (6.93 × 4.53 x 3.62 in) deep\nDisplay 132 x132 x 36mm (5.20 × 5.20 × 1.42 in) deep\nControl unit 1.55kg (3.42 lbs)\nDisplay 0.90Kg (1.98 lbs)\nType of display\n2 lines x 20 characters, vacuum fluorescent display with membrane\nkeypad.\n1.2 Servo-motor control - IMPORTANT: See Section 3.2\nType\nMaximum (total) number of servo-motors\nMaximum number of fuel profiles\nMax. number of setpoints per profile\nPositioning accuracy\nResponse time to positioning error\nNumber of fuel motors\nNumber of air (non fuel) motors\nCANbus\n10 (see section 3 regarding servo-motors)\n4\n24 including close, purge and ignition\n+/-0.1°\n15s for +1.0°, 1s for +5.0°\nNot Limited by profile (e.g. 2 or 3 fuel motors). All\nnon-monotonic.\nNot Limited by profile (e.g. 2 or 3 fuel motors). All\nnon-monotonic.\nNOTE: Number of servomotors is limited in all\nprofiles by VA rating. See Section 3.1\n11",
+      "tablas": [
+        [
+          [
+            "Supply voltage",
+            "120/230Vac +10% - 15%"
+          ],
+          [
+            "Power consumption",
+            "Approx. 60VA"
+          ],
+          [
+            "Supply frequency",
+            "50/60 Hz +5%"
+          ],
+          [
+            "Ambient temperature range",
+            "0 to 60°C (32 to 140°F)"
+          ],
+          [
+            "Control unit protection category",
+            "IP20. The control must be situated in a clean environment according to EN6730-1. Indoor: Control must be mounted in an NEMA1 (IP40) enclosure Outdoor: Control must be mounted in an NEMA3 (IP54) enclosure"
+          ],
+          [
+            "Unit dimensions Weight",
+            "Control unit 176 x 115 x 92mm (6.93 × 4.53 x 3.62 in) deep Display 132 x132 x 36mm (5.20 × 5.20 × 1.42 in) deep"
+          ],
+          [
+            "Control unit 1.55kg (3.42 lbs) Display 0.90Kg (1.98 lbs)"
+          ],
+          [
+            "Type of display",
+            "2 lines x 20 characters, vacuum fluorescent display with membrane keypad."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Interface to PPC6000\nSpeed\nMicroswitches\nTorque\nVoltage:\nVA rating\nProtection Category\nTypical accuracy\nAccuracy (as specified by EN12067)\n1.3 Digital outputs (PPC6000)\nControlled Shutdown, Safety Shutdown\nType\nMinimum current\nMaximum current (per output)\nMaximum voltage\n1.4\nAlarm output (PPC6000)\n®\nfireye\nCANbus\n30 seconds for 90 degrees.\nOpen & close positions\nDriving\nHolding\nNXC04\n4Nm/ 3 ft/lb\n2Nm\nNXC12\n12Nm/ 9 ft/lb\n18Nm\nNXC20\n20Nm/ 14.7 ft/lb\n18Nm\nNXC40\n40Nm/ 29 ft/lb\n20Nm\n24-30Vac supplied from control only\nNXC04 = 3VA\nNXC12 = 5VA\nNXC20 = 10VA\nNXC40 = 18VA\nNXC04 = IP40, NEMA 1\nNXC12, NXC20 = IP54, NEMA 3S\nNXC40 = IP65, NEMA 4\n+/-0.1°\n+/-0.5°\nOn-off relay, de-energize for off.\n200mA rms\n8A rms\n250Vac rms\nAlarm\nType\nOn-off relay, de-energize for off.\nMinimum current\n200mA rms\nMaximum current (per output)\n4A rms\nMaximum voltage\n250Vac rms\n12",
+      "tablas": [
+        [
+          [
+            "",
+            "Driving",
+            "Holding"
+          ],
+          [
+            "NXC04",
+            "4Nm/ 3 ft/lb",
+            "2Nm"
+          ],
+          [
+            "NXC12",
+            "12Nm/ 9 ft/lb",
+            "18Nm"
+          ],
+          [
+            "NXC20",
+            "20Nm/ 14.7 ft/lb",
+            "18Nm"
+          ],
+          [
+            "NXC40",
+            "40Nm/ 29 ft/lb",
+            "20Nm"
+          ]
+        ],
+        [
+          [
+            "Alarm",
+            ""
+          ],
+          [
+            "Type",
+            "On-off relay, de-energize for off."
+          ],
+          [
+            "Minimum current",
+            "200mA rms"
+          ],
+          [
+            "Maximum current (per output)",
+            "4A rms"
+          ],
+          [
+            "Maximum voltage",
+            "250Vac rms"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\n1.5 Digital inputs (PPC6000)\nLow Voltage digital inputs 1 to 4, HIGH\ninput, AUTO input.\nDigital, Switching 0V to 5V pulsed. Feed must be taken from\nthe correct terminal as indicted in this manual. Inputs 1-4\nconfigurable for 4-20Ma. Via function block programming.\nLess than 25mA\n+10V absolute maximum\nProfile Select High voltage inputs\nDigital, 0V for off, 90-264Vac for on.\n1.6 Pressure/Temperature Input (PPC6000)\n0-5V\nMaximum current\nLess than 2mA\nMaximum voltage\n0 to 5.0 volts maximum.\nInput accuracy (typical)\n+0.1%\nInput accuracy (as specified by EN12067)\n+0.3%\n4-20mA\n2 wire loop or ext. powered\nMaximum current\n0 to 25mA maximum\nBurden (load) resistor\n220 Ohm nominal\nInput accuracy (typical)\n+1.0%\nInput accuracy (as specified by EN12067)\n+1.1%\n1.7 Communications interface (PPC6000)\n2-wire RS485 plus ground, with termination resistor selected using a link. See Section 2.5.5.\nAn isolated 2-wire RS485 interface is available as an option. See Section 2.5.6.\nSee MOD-6101 (FIREYE serial communications protocol manual) for details.\n13",
+      "tablas": [
+        [
+          [
+            "Low Voltage digital inputs 1 to 4, HIGH input, AUTO input.",
+            "Digital, Switching 0V to 5V pulsed. Feed must be taken from the correct terminal as indicted in this manual. Inputs 1-4 configurable for 4-20Ma. Via function block programming. Less than 25mA +10V absolute maximum"
+          ],
+          [
+            "Profile Select High voltage inputs",
+            "Digital, 0V for off, 90-264Vac for on."
+          ]
+        ],
+        [
+          [
+            "0-5V",
+            ""
+          ],
+          [
+            "Maximum current",
+            "Less than 2mA"
+          ],
+          [
+            "Maximum voltage",
+            "0 to 5.0 volts maximum."
+          ],
+          [
+            "Input accuracy (typical)",
+            "+0.1%"
+          ],
+          [
+            "Input accuracy (as specified by EN12067)",
+            "+0.3%"
+          ],
+          [
+            "4-20mA",
+            "2 wire loop or ext. powered"
+          ],
+          [
+            "Maximum current",
+            "0 to 25mA maximum"
+          ],
+          [
+            "Burden (load) resistor",
+            "220 Ohm nominal"
+          ],
+          [
+            "Input accuracy (typical)",
+            "+1.0%"
+          ],
+          [
+            "Input accuracy (as specified by EN12067)",
+            "+1.1%"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\n1.8 Optional Oxygen Probe Interface Unit (NXO2INT) - optional\nSupply voltage\nPower consumption\nSupply frequency\nAmbient temperature range\nProtection category\n160 x 98 x 63mm (6.30 x 3.86 x 2.48\") deep\n1.34Kg (2.95 lbs)\nUnit dimensions\nWeight\nInterface to PPC6000 series.\nInterface to oxygen probe.\n115/230Vac + 15%\nApproximately 60VA\n50/60Hz + 5%\n0 to 60°C (32 to 140°F)\nNEMA4 (IP65).\nFIREYE specific CANbus.\nFIREYE specific or 4-20mA\n1.9 Optional Ambient Air Temperature Unit (NXIATS) - optional\nType\nCANbus\nAmbient temperature range\n0 to 60°C (32 to 140°F)\nProtection category\nNEMA3 (IP54)\nUnit dimensions\n57 x 63 x 35 mm (2.25 × 2.5 x 1.37 inches)\nWeight\n0.15 kg (5.4 oz.)\nInterface to PPC6000 series.\nFIREYE specific CANbus.\n1.10 Variable Speed Drive (VSD) Daughter Board (NXDBVSD) - optional\nAmbient temperature range\nProtection category\nAnalog inputs (4 - 20mA)\nInput impedance\nAnalog outputs (4 - 20mA)\nMaximum loop resistance\nIsolation voltage\nRS485 communications.\n0 to 60°C (32 to 140°F)\nNot applicable (fits inside PPC6000 unit).\n3 max (non-isolated)\n120ohms\n3 max (isolated)\n250 ohms\n50v\nModbus RTU\n14",
+      "tablas": [
+        [
+          [
+            "Type",
+            "CANbus"
+          ],
+          [
+            "Ambient temperature range",
+            "0 to 60°C (32 to 140°F)"
+          ],
+          [
+            "Protection category",
+            "NEMA3 (IP54)"
+          ],
+          [
+            "Unit dimensions",
+            "57 x 63 x 35 mm (2.25 × 2.5 x 1.37 inches)"
+          ],
+          [
+            "Weight",
+            "0.15 kg (5.4 oz.)"
+          ],
+          [
+            "Interface to PPC6000 series.",
+            "FIREYE specific CANbus."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\n1.11 Fireye NXC04, NXC12, NXC20, NXC40 Servo Motors\nInterface to PPC6000\nSpeed\nMicroswitches\nTorque\nVoltage:\n24-30Vac supplied from control only\nVA rating\nProtection Category\nTypical accuracy\nAccuracy (as specified by EN12067)\n+/-0.1°\n+/-0.5°\nCANbus\n30 seconds for 90 degrees.\nOpen & close positions\nDriving\nHolding\nNXC04\n4Nm/ 3 ft/lb\n2Nm\nNXC12\n12Nm/ 9 ft/lb\n18Nm\nNXC20\n20Nm/ 14.7 ft/lb\n18Nm\nNXC40\n40Nm/ 29 ft/lb\n20Nm\nNXC04 = 3VA\nNXC12 = 5VA\nNXC20 = 10VA\nNXC40 = 18VA\nNXC04 = IP40, NEMA 1\nNXC12, NXC20 = IP54, NEMA 3S\nNXC40 = IP65, NEMA 4\n1.12 Fireye NXO2INT Oxygen Probe Interface Unit (optional)\nSupply voltage\nPower consumption\nSupply frequency\nAmbient temperature range\nProtection category\nUnit dimensions\nWeight\nInterface to PPC6000 / NX6100\nInterface to oxygen probe.\n115/230Vac + 15%\nApproximately 60VA\n50/60Hz + 5%\n0 to 60°C (32 to 140°F)\nNEMA4 (IP65).\n160 x 98 x 63mm (6.30 × 3.86 × 2.48\") deep\n1.34Kg (2.95 lbs)\nFIREYE specific CANbus.\nFIREYE specific or 4-20mA\n15",
+      "tablas": [
+        [
+          [
+            "",
+            "Driving",
+            "Holding"
+          ],
+          [
+            "NXC04",
+            "4Nm/ 3 ft/lb",
+            "2Nm"
+          ],
+          [
+            "NXC12",
+            "12Nm/ 9 ft/lb",
+            "18Nm"
+          ],
+          [
+            "NXC20",
+            "20Nm/ 14.7 ft/lb",
+            "18Nm"
+          ],
+          [
+            "NXC40",
+            "40Nm/ 29 ft/lb",
+            "20Nm"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\n1.13 Fireye NXIATS Ambient Air Temperature Sensor (optional)\nType\nAmbient temperature range\nProtection category\nUnit dimensions\nWeight\nInterface to PPC6000 / NX6100\n1.14 Approvals\nCANbus\n-29°℃ to 60°℃ (-20°F to 140°F)\nNOTE: Accuracy below 0℃ (32ºF) may\nvary slightly. Agency testing conducted to\n0°C only.\nNEMA3 (IP54)\nFIREYE specific CANbus.\nTested in accordance with the Gas Appliance Directive (GAD 90/396 EEC), encompassing the following\nstandards:\n. SIL Level 3 - Kiwa Gastec Report #123836\n. ANSI/UL 462, Heat Reclaimers for Gas, Oil, or Solid Fuel-Fired Appliances\n· ANSI/UL 1995, Heating and Cooling Equipment\n· ANSI/UL 1998, Software in Programmable Components\n· CAN/CSA-C22.2 No. 236, Heating and Cooling Equipment\n· FM\n. ENV1954, Internal and external behavior of safety related electronic parts\n· EN60730-1, Automatic electrical controls for household and similar use\n· prEN12067, Gas/air ratio controls for gas burners as gas burning appliances\n. SIL level 3 per Kiwa report #123836\n1.15 Parts List with Description\nPART NO*\nDESCRIPTION\nPPC6000 FUEL AIR RATIO CONTROLLER\nPPC6000\nStand-alone parallel positioning controller, with up to ten (10) selectable function\nCANbus servo-motor outputs. Includes user configurable function blocks for\ncustom applications. Display ordered separately.\nDISPLAY MODULES FOR PPC6000\nNX610\nCANbus display for PPC6000 with upload/download of PPC6000 data and three\nprogrammable relays\nNXTSD104 **\n10.4\" Touchscreen Display with upload/download, full commissioning, data log,\ninternet connection, four programmable relays, 10 line voltage Digital Inputs.\nSERVO-MOTORS FOR PPC6000\nNXC04\n4 wire CANbus Servo-motor, 3 ft lbs. torque, 4 Nm, 50/60 Hz, 24 VAC.\n16",
+      "tablas": [
+        [
+          [
+            "PART NO*",
+            "DESCRIPTION"
+          ],
+          [
+            "PPC6000 FUEL AIR RATIO CONTROLLER"
+          ],
+          [
+            "PPC6000",
+            "Stand-alone parallel positioning controller, with up to ten (10) selectable function CANbus servo-motor outputs. Includes user configurable function blocks for custom applications. Display ordered separately."
+          ],
+          [
+            "DISPLAY MODULES FOR PPC6000"
+          ],
+          [
+            "NX610",
+            "CANbus display for PPC6000 with upload/download of PPC6000 data and three programmable relays"
+          ],
+          [
+            "NXTSD104 **",
+            "10.4\" Touchscreen Display with upload/download, full commissioning, data log, internet connection, four programmable relays, 10 line voltage Digital Inputs."
+          ],
+          [
+            "SERVO-MOTORS FOR PPC6000"
+          ],
+          [
+            "NXC04",
+            "4 wire CANbus Servo-motor, 3 ft lbs. torque, 4 Nm, 50/60 Hz, 24 VAC."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\nPART NO*\nDESCRIPTION\nNXC12\n4 wire CANbus Servo-motor, 9 ft lbs. torque, 12 Nm, 50/60 Hz, 24 VAC.\nNXC20\n4 wire CANbus Servo-motor, 14.75 ft lbs. torque, 20 Nm, 50/60 Hz, 24 VAC.\nNXC40\n4 wire CANbus Servo-motor, 29.5 ft lbs. torque, 40 Nm, 50/60 Hz, 24 VAC.\nEXPANSION INTERFACE MODULES FOR PPC6000\nNXDBMB\nModbus RTU communications card\nNXDBVSD\nVSD interface daughter board with two VSD channels, one analog output, two\ncounter inputs, two programmable relays, isolated RS485, Modbus RTU\ncommunications\nNXO2INT\nCANbus O2 interface module with Fireye and generic (4-20mA) probe inputs.\nO2 PROBES FOR PPC6000\nNXO2PK4\nO2 probe assembly (for flues 300mm to 1000mm). Includes NXIATS CANbus\nambient temperature sensor, flange kit.\nNXO2PK6\nO2 probe assembly (for flues 600mm to 2000mm). Includes NXIATS CANbus\nambient temperature sensor, flange kit.\nNXO2PK8\nO2 probe assembly (for flues 1200mm to 4000mm). Includes NXIATS CANbus\nambient temperature sensor, flange kit.\nNXIATS\nPPC6000 CANbus Inlet (ambient) Air Temperature Sensor Sensor -29℃ to\n60ºC (-20°F to 140°F)\nSENSORS FOR PPC6000\nPXMS-15\nSteam Pressure Sensor: 0 - 15 PSI, 0 - 1 bar, 4-20mA output, 1/2\" NPT, non\nself-check (for use with PPC6000).\nPXMS-200\nSteam Pressure Sensor: 0 - 200 PSI, 0 - 14 bar, 4-20mA output, 1/2\" NPT, non\nself-check (for use with PPC6000).\nPXMS-300\nSteam Pressure Sensor: 0 - 300 PSI, 0 - 21 bar, 4-20mA output, 1/2\" NPT, non\nself-check (for use with PPC6000).\nBLPS-15\nSteam Pressure Sensor: 0 - 15 PSI, 0 - 1 bar, 4-20mA output, 1/2\" NPT, non\nself-check (for use with PPC5000 / PPC6000 / NX3100 / NX4100 / NX6100).\nBLPS-30\nSteam Pressure Sensor: 0 - 30 PSI, 0 - 1 bar, 4-20mA output, 1/2\" NPT, non\nself-check (for use with PPC5000 / PPC6000 / NX3100 / NX4100 / NX6100).\nBLPS-200\nSteam Pressure Sensor: 0 - 200 PSI, 0 - 14 bar, 4-20mA output, 1/2\" NPT, non\nself-check (for use with PPC5000 / PPC6000 / NX3100 / NX4100 / NX6100).\nBLPS-300\nSteam Pressure Sensor: 0 - 300 PSI, 0 - 21 bar, 4-20mA output, 1/2\" NPT, non\nself-check (for use with PPC5000 / PPC6000 / NX3100 / NX4100 / NX6100).\nTS350 (-2), (-4), (-8)\nTemperature Sensor, Range 32ºF-350ºF (0-176℃), 4-20mA linear\noutput, includes 1/2 - 14 NPT well. See bulletin BLZPTS-1 for\ncomplete description.\nTS752 (-2), (-4), (-8)\nTemperature Sensor, Range 32ºF-752ºF (0-400℃), 4-20mA linear\noutput, includes 1/2 - 14 NPT well. See bulletin BLZPTS-1 for\ncomplete description.\nSOFTWARE\nNXAM\nComFire communications software on CD for Nexus and PPC controls.\nCOMMUNICATION INTERFACE GATEWAY\nNXDBVSD\nVSD interface daughter board with two VSD channels, one analog output, two\ncounter inputs, two programmable relays, isolated RS485 - Modbus RTU\ncommunications\nNXMBIV2\nModbus RTU Communications daughter board.\n*\nFOR ADDITIONAL PARTS SEE FIREYE PRICE BOOK CG-14\n**\nSOME FEATURES INCLUDED ON NXTSD MANUFACTURED AFTER MAY 2011.\n17",
+      "tablas": [
+        [
+          [
+            "PART NO*",
+            "DESCRIPTION"
+          ],
+          [
+            "NXC12",
+            "4 wire CANbus Servo-motor, 9 ft lbs. torque, 12 Nm, 50/60 Hz, 24 VAC."
+          ],
+          [
+            "NXC20",
+            "4 wire CANbus Servo-motor, 14.75 ft lbs. torque, 20 Nm, 50/60 Hz, 24 VAC."
+          ],
+          [
+            "NXC40 4 wire CANbus Servo-motor, 29.5 ft lbs. torque, 40 Nm, 50/60 Hz, 24 VAC."
+          ],
+          [
+            "EXPANSION INTERFACE MODULES FOR PPC6000"
+          ],
+          [
+            "NXDBMB",
+            "Modbus RTU communications card"
+          ],
+          [
+            "NXDBVSD",
+            "VSD interface daughter board with two VSD channels, one analog output, two counter inputs, two programmable relays, isolated RS485, Modbus RTU communications"
+          ],
+          [
+            "NXO2INT",
+            "CANbus O2 interface module with Fireye and generic (4-20mA) probe inputs."
+          ],
+          [
+            "O2 PROBES FOR PPC6000"
+          ],
+          [
+            "NXO2PK4",
+            "O2 probe assembly (for flues 300mm to 1000mm). Includes NXIATS CANbus ambient temperature sensor, flange kit."
+          ],
+          [
+            "NXO2PK6",
+            "O2 probe assembly (for flues 600mm to 2000mm). Includes NXIATS CANbus ambient temperature sensor, flange kit."
+          ],
+          [
+            "NXO2PK8",
+            "O2 probe assembly (for flues 1200mm to 4000mm). Includes NXIATS CANbus ambient temperature sensor, flange kit."
+          ],
+          [
+            "NXIATS",
+            "PPC6000 CANbus Inlet (ambient) Air Temperature Sensor Sensor -29℃ to 60ºC (-20°F to 140°F)"
+          ],
+          [
+            "SENSORS FOR PPC6000"
+          ],
+          [
+            "PXMS-15",
+            "Steam Pressure Sensor: 0 - 15 PSI, 0 - 1 bar, 4-20mA output, 1/2\" NPT, non self-check (for use with PPC6000)."
+          ],
+          [
+            "PXMS-200",
+            "Steam Pressure Sensor: 0 - 200 PSI, 0 - 14 bar, 4-20mA output, 1/2\" NPT, non self-check (for use with PPC6000)."
+          ],
+          [
+            "PXMS-300",
+            "Steam Pressure Sensor: 0 - 300 PSI, 0 - 21 bar, 4-20mA output, 1/2\" NPT, non self-check (for use with PPC6000)."
+          ],
+          [
+            "BLPS-15",
+            "Steam Pressure Sensor: 0 - 15 PSI, 0 - 1 bar, 4-20mA output, 1/2\" NPT, non self-check (for use with PPC5000 / PPC6000 / NX3100 / NX4100 / NX6100)."
+          ],
+          [
+            "BLPS-30",
+            "Steam Pressure Sensor: 0 - 30 PSI, 0 - 1 bar, 4-20mA output, 1/2\" NPT, non self-check (for use with PPC5000 / PPC6000 / NX3100 / NX4100 / NX6100)."
+          ],
+          [
+            "BLPS-200",
+            "Steam Pressure Sensor: 0 - 200 PSI, 0 - 14 bar, 4-20mA output, 1/2\" NPT, non self-check (for use with PPC5000 / PPC6000 / NX3100 / NX4100 / NX6100)."
+          ],
+          [
+            "BLPS-300",
+            "Steam Pressure Sensor: 0 - 300 PSI, 0 - 21 bar, 4-20mA output, 1/2\" NPT, non self-check (for use with PPC5000 / PPC6000 / NX3100 / NX4100 / NX6100)."
+          ],
+          [
+            "TS350 (-2), (-4), (-8)",
+            "Temperature Sensor, Range 32ºF-350ºF (0-176℃), 4-20mA linear output, includes 1/2 - 14 NPT well. See bulletin BLZPTS-1 for complete description."
+          ],
+          [
+            "TS752 (-2), (-4), (-8)",
+            "Temperature Sensor, Range 32ºF-752ºF (0-400℃), 4-20mA linear output, includes 1/2 - 14 NPT well. See bulletin BLZPTS-1 for complete description."
+          ],
+          [
+            "SOFTWARE",
+            ""
+          ],
+          [
+            "NXAM",
+            "ComFire communications software on CD for Nexus and PPC controls."
+          ],
+          [
+            "COMMUNICATION INTERFACE GATEWAY"
+          ],
+          [
+            "NXDBVSD",
+            "VSD interface daughter board with two VSD channels, one analog output, two counter inputs, two programmable relays, isolated RS485 - Modbus RTU communications"
+          ],
+          [
+            "NXMBIV2",
+            "Modbus RTU Communications daughter board."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\n2 Installation\nThis section contains basic installation information concerning choice of control and servomotor environment,\nwiring specification and connection details.\nWARNING\nEXPLOSION OR FIRE HAZARD\nCAN CAUSE PROPERTY DAMAGE,\nSEVERE INJURY OR DEATH\nTo prevent possible hazardous burner operation, verification of safety\nrequirements must be performed each time a control is installed on a burner, or\nthe installation modified in any way.\nThis manual may cover more than one model in the PPC6000 controls. Check for\nAdditional Information at the end of this chapter.\nThis control must not be directly connected to any part of a Safety Extra Low\nVoltage (SELV) circuit.\nWHEN INSTALLING THIS PRODUCT:\n. Read these instructions carefully and ensure you fully understand the product requirements. Failure to\nfollow them could damage the product or cause a hazardous condition.\n. Check the ratings given in these instructions to ensure the product is suitable for your application.\n. After installation is complete, check the product operation is as described in these instructions\n!\nCAUTION\n· Disconnect the power supply before beginning installation to prevent electrical\nshock, equipment and/or control damage. More than one power supply\ndisconnect may be involved.\n· Wiring must comply with all applicable codes, ordinances and regulations.\n. Loads connected to the PPC6000 series must not exceed those listed in the\nspecifications as given in this manual.\n. All external components connected to the control must be approved for the\nspecific purpose for which they are used.\n18",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\n2.1 Mounting details for the PPC6000 control\n6.26\" (159mm)\n0.75\"\n(19mm)\n0\n3.15\"\n(80mm)\n4.65\"\n(118mm)\n0\n7\n6.93\" (176mm)\nA Template for mounting is provided at the end of this manual for convenience. See Section 8.\nThere are two versions of the control, one that is intended to be mounted inside of a burner control cabinet, the\nother which has provision for conduit storage of field wiring etc. that can be mounted without the need for a\nburner control cabinet. If the version which is designed to be fitted inside of a burner control cabinet is being\nused the cabinet should have a minimum protection level of NEMA1 (IP40) for indoor use or NEMA3 (IP54) for\noutdoor use.\nThe control can be mounted in any attitude; clearances of a least 2.36-inch (60mm) should be left around the\nunit to allow sufficient space for wiring and to ensure reliable operation.\nThe ambient operating temperature range of the equipment is 0 to 60℃ (32 to 140°F). Refer to section 7 for\nmore details.\nTerminal Block PB\nTerminal Block PA\n1009348\n45/04 C\nTerminal Block PE\nScreen\nTermination\nClamps\n19",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\n4 HOLES (M4 CLEAR)\nPANEL FRONT\n1\n1\n3 26/32\" (97mm)\n4 1/8\" (105mm)\nPANEL CUT-OUT\nV\n8mm\n8mm\n3 7/16\" (87mm)\n4 1/4\" (108mm)\nA\nREMOVE AND REUSE\nFor Mounting\n1 5/8\" (40mm)\n-\nThe display is held in using the four brass standoffs. The panel is cut out inside the four mounting holes only.\nRemove the four brass standoffs, insert the screw studs through the mounting holes, then re-install the brass\nstandoffs. Do not over tighten the standoffs.\nA Template for mounting is provided at the end of this manual for convenience. See Section 8.\n20",
+      "tablas": []
+    }
+  ]
+}

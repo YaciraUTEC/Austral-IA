@@ -1,0 +1,316 @@
+{
+  "archivo": "29.12.2024 PROGRAMA DE CONTROL DE DOSIFICADORES PLC 1200_p11_20",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "1\n2\n3\n4\nA\nSegmento 3: ACTIVAR MANUAL AUTO PISTON 2 (4.1 / 4.1)\n3.1 ( Página4 - 6)\nB\nMOVE\n> 5\nEN\n-\nENO\n0-\nIN\n£OUT1\n%MW62\n\"CUENTA_REAL\nSAV_2\"\nC\nMOVE\n> 6\nEN\n-\nENO\n%MW70\n\"SUB_CUENTA_\nSAV_2\" _\nIN\n£ OUT1\n%MW62\n\"CUENTA_REAL_\nSAV_2\"\nD\nE\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 4 - 7",
+      "tablas": [
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location",
+            ""
+          ],
+          [
+            "Designed By",
+            "Description 1st",
+            ""
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES",
+            ""
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 4 - 7"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "1\n2\n3\n4\nA\nSegmento 4: ACTIVAR MANUAL AUTO PISTON 3\nB\nC\nD\nE\nOwner\nOperator\nDesigned By\nF\nChecked By\nApproved By\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDescription 1st\nDescription 2nd\nLanguage es-ES\n1 st View\nVersion\nSheet 4 - 8",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1\n2\n3\n4\nA\nSegmento 4: ACTIVAR MANUAL AUTO PISTON 3 (1.1 / 4.1)\n%M80.5\n\"MODO_MANUAL\"\n-VI\n%10.0\n“TH\nDISTRIBUIDOR\nSAV\"\nH\n%10.3\n\"START\nDOSIFICADOR_3\"\n%M3.4\n\"M_PISTON_TH\nDOSIFICADOR_4\"\n%M3.0\n\"ON\nAUTOMÁTICO\nPISTONES\"\nVI\n%M2.4\n\"M_PISTON_TH_\nDOSIFICADOR_3\"\n%M3.4\n\"M_PISTON_TH\nDOSIFICADOR_4\"\nPISTONES\"\n%M3.0\n\"ON\nAUTOMÁTICO_\n1\nB\n%M2.4\n\"M_PISTON_TH_\nDOSIFICADOR_3\"\n%MW4\n\"REAL_CUENTA_\nGENERAL\"\nInt\n2\n%MW16\n\"SUMA_TIEMPO_\nPISTON_TH\nDOSIFICADOR_3\"\nC\n%10.3\n\"START_\nDOSIFICADOR_3\"\nMOVE\n%M80.5\n\"MODO_MANUAL\"\nEN\nENO\n0 - IN\nOUT1\n3\n%MW18\n\"TIEMPO\nPISTON_TH_\nDOSIFICADOR_3\"\nD\n%M80.5\n\"MODO_MANUAL\"\n%M3.5\n\"A_PISTON_TH\nDOSIFICADOR_3\"\n%M81.7\n\"SEGUNDOS\"\n%MW64\n\"CUENTA_REAL\nSAV_3\"\nInt\n4\n%MW18\n\"TIEMPO.\nPISTON_TH\nDOSIFICADOR_3\"\nE\n2.1 ( Página4 - 10)\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 4 - 9",
+      "tablas": [
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE",
+            "CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location",
+            ""
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 4 - 9"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "1\n2\n3\n4\nA\nSegmento 4: ACTIVAR MANUAL AUTO PISTON 3 (2.1 / 4.1)\n1.1 ( Página4 - 9)\n%DB5\n\"CONTADOR\nSAV_3\"\nCTU\nInt\nCU\n%M3.2\n\"RESET\" - R\nQ\n%MW72\nCV -\"CTU_SAV_3\"\n%MW16\n\"SUMA_TIEMPO\nPISTON_TH\nDOSIFICADOR_3\"\nB\n- PV\n%M80.4\n\"MODO.\nMODERNO\"\n%MW4\n\"REAL_CUENTA\nGENERAL\"\nInt\n0\n\"VALORES\nDEFINIDOS\".\nSETPOINT\nTIEMPO_PISTON_\nTH\nDOSIFICADOR_3\nMOVE\nEN-\nENO\nOUT1\nIN\n%MW86\n\"MOVE\nSETPOINT_SAV3\"\nC\n%M80.5\n\"MODO_MANUAL\"\nMOVE\nEN\n- ENO\n0\nIN\nOUT1\n%MW74\n\"SUB_CUENTA_\nSAV_3\"\nMOVE\nEN - ENO\n0\nIN\nOUT1\nOUT2\n%MW74\n\"SUB_CUENTA\nSAV_3\"\n%MW64\n\"CUENTA_REAL_\nSAV_3\"\n# OUT2\n%MW64\n\"CUENTA_REAL_\nSAV_3\"\nD\nMOVE\n> 1\nEN\nENO\nADD\nAuto (Int)\nEN - ENO\n%MW86\n\"MOVE_\nSETPOINT_SAV3\"\n-\nIN\nOUT1\n%MW18\n\"TIEMPO\nPISTON_TH\nDOSIFICADOR_3\"\n%MW18\n\"TIEMPO\nPISTON_TH_\nDOSIFICADOR_3\"\nIN1\nOUT\n%MW16\n\"SUMA_TIEMPO_\nPISTON_TH\nDOSIFICADOR_3\"\nE\n%M3.5\n\"A_PISTON_TH_\nnaciricanan 3\n%MW12\n\"TIEMPO\nPISTON_TH_\nDOSIFICADOR ?\"\n3.1 ( Página4 - 11)\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate\n29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 4 - 10",
+      "tablas": [
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location"
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 4 - 10"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "1\n2\n3\n4\nA\nSegmento 4: ACTIVAR MANUAL AUTO PISTON 3 (3.1 / 4.1)\nDOSIFICADOR_3\"\n22\n-\n2.1 ( Página4 - 10)\nDUSIFILADUK_2\nIN2\n%MW8\n\"TIEMPO_\nPISTON_TH_\nDOSIFICADOR_1\"\nIN3 %\n> 3\nB\n%MW18\n\"TIEMPO_\nPISTON_TH_\nDOSIFICADOR_3\"\nADD\nAuto (Int)\nEN\n- ENO\nIN1\nOUT\n%MW16\n\"SUMA_TIEMPO_\nPISTON_TH\nDOSIFICADOR_3\"\n%MW12\n\"TIEMPO_\nPISTON_TH_\nDOSIFICADOR_2\"\nIN2\n%MW8\n“TIEMPO_\nPISTON_TH\nDOSIFICADOR_1\"\nIN3\nC\n> 4\nD\nSUB\nInt\nEN\n-\nENO\n%MW72\n\"CTU_SAV_3\" -\n%MW14\n\"SUMA_TIEMPO_\nPISTON_TH_\nDOSIFICADOR_2\"\nIN1\nIN2\nOUT\n%MW74\n\"SUB_CUENTA_\n- SAV_3\"\n%MW74\n\"SUB_CUENTA_\nSAV_3\"\n<\nInt\n5\n0\n%MW74\n\"SUB_CUENTA_\nSAV_3\"\n>=\n6\nInt\n0\nE\n4.1 ( Página4 - 12)\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 4 - 11",
+      "tablas": [
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location",
+            ""
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 4 - 11"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "1\n2\n3\n4\nA\nSegmento 4: ACTIVAR MANUAL AUTO PISTON 3 (4.1 / 4.1)\n3.1 ( Página4 - 11)\nB\nC\n> 5\n0\nMOVE\nEN\n- ENO\nIN\nOUT1\n%MW64\n\"CUENTA_REAL_\nSAV_3\"\nD\n> 6\nMOVE\nEN -\nENO\n%MW74\n\"SUB_CUENTA_\nSAV_3\"-\nIN\n£OUT1\n%MW64\n\"CUENTA_REAL_\nSAV_3\"\nE\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 4 - 12",
+      "tablas": [
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE",
+            "CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location",
+            ""
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 4 - 12"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "1\n2\n3\n4\nA\nSegmento 5: ACTIVAR MANUAL AUTO PISTON 4\nB\nC\nD\nE\nOwner\nOperator\nDesigned By\nF\nChecked By\nApproved By\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDescription 1st\nDescription 2nd\nLanguage es-ES\n1 st View\nVersion\nSheet 4 - 13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "1\n2\n3\n4\nA\nSegmento 5: ACTIVAR MANUAL AUTO PISTON 4 (1.1 / 5.1)\n%M80.5\n\"MODO_MANUAL\"\n-VI\n%10.0\n“TH\nDISTRIBUIDOR\nSAV\"\nH\n%10.4\n\"START_\nDOSIFICADOR_4\"\n%MW4\n\"REAL_CUENTA\nGENERAL\"\n<\nInt\n%MW26\n\"SUMA_TIEMPO_\nPISTON_TH_\nDOSIFICADOR_4\"\n%M3.4\n\"M_PISTON_TH_\nDOSIFICADOR_4\"\n-\nB\n%M3.0\n\"ON\nAUTOMÁTICO\nPISTONES\"\n1\n%MW4\n\"REAL_CUENTA_\nGENERAL\"\n%M3.7\n\"A_PISTON_TH_\nDOSIFICADOR_4\"\nInt\n%MW26\n\"SUMA_TIEMPO_\nPISTON_TH_\nDOSIFICADOR_4\"\nC\n%10.4\n\"START_\nDOSIFICADOR_4\"\nVI\n%M80.5\n\"MODO_MANUAL\"\nMOVE\nEN\n- ENO\n0\nIN\nOUT1\n2\n%MW22\n\"TIEMPO\nPISTON_TH\nDOSIFICADOR_4\"\nD\n%M80.5\n\"MODO_MANUAL\"\nE\n%M3.7\n\"A_PISTON_TH\nDOSIFICADOR_4\"\n%M81.7\n\"SEGUNDOS\"\n%MW66\n\"CUENTA_REAL_\nSAV_4\"\nInt\n3\n%MW22\n\"TIEMPO\n2.1 ( Página4 - 15)\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate\n29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 4 - 14",
+      "tablas": [
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location",
+            ""
+          ],
+          [
+            "Designed By",
+            "Description 1st",
+            ""
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES",
+            ""
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 4 - 14"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "1\n2\n3\n4\nA\nSegmento 5: ACTIVAR MANUAL AUTO PISTON 4 (2.1 / 5.1)\n1.1 ( Página4 - 14)\nPISTON_TH\nDOSIFICADOR_4\"\n%DB6\n\"CONTADOR_\nSAV_4\"\nCTU\nInt\nCU\n%M3.2\nB\n\"RESET\" - R\nQ\n%MW76\nCV -\"CTU_SAV_4\"\n%MW26\n\"SUMA_TIEMPO_\nPISTON_TH\nDOSIFICADOR_4\"\nPV\n%M80.4\n\"MODO_\nMODERNO\"\nH\nC\n%M80.5\n\"MODO_MANUAL\"\n0\n%M80.4\n\"MODO_\nMODERNO\"\nH\nMOVE\nEN\n- ENO\nIN\nOUT1\nOUT2\n%MW4\n\"REAL_CUENTA_\nGENERAL\"\nInt\n0\n%MW78\n\"SUB_CUENTA_\nSAV_4\"\n%MW66\n\"CUENTA_REAL\nSAV_4\"\n\"VALORES\nDEFINIDOS\".\nSETPOINT_\nTIEMPO_PISTON_\nTH_\nDOSIFICADOR_4\nMOVE\nEN\nENO\n£OUT1\nIN\nMOVE\nEN-\nENO\n0 - IN\nOUT1\n£OUT2\n%MW88\n\"MOVE_\nSETPOINT_SAV4\"\n%MW78\n\"SUB_CUENTA_\nSAV_4\"\n%MW66\n\"CUENTA_REAL_\nSAV_4\"\nD\nMOVE\n- ENO\n> 1\nEN\nADD\nAuto (Int)\n- ENO\nEN\nE\n%MW88\n\"MOVE_\nGETRAINT CAVIAR\n%MW22\n\"TIEMPO_\n%MW22\n\"TIEMPO_\n%MW26\n\"SUMA_TIEMPO_\n3.1 ( Página4 - 16)\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 4 - 15",
+      "tablas": [
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location"
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 4 - 15"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "1\n2\n3\n4\nA\nSegmento 5: ACTIVAR MANUAL AUTO PISTON 4 (3.1 / 5.1)\nSETPOINT_SAV4\" - IN\nOUT1\n2.1 ( Página4 - 15)\nPISTON_TH\nDOSIFICADOR_4\"\nPISTON_TH_\nDOSIFICADOR_4\".\nIN1\nOUT\nPISTON_TH\nDOSIFICADOR_4\"\n%MW18\n\"TIEMPO\nPISTON_TH_\nDOSIFICADOR_3\"\nIN2\nB\n> 2\n%MW22\n\"TIEMPO\nPISTON_TH_\nDOSIFICADOR_4\"\nADD\nAuto (Int)\nEN\n-\nENO\nIN1\nOUT\n%MW26\n\"SUMA_TIEMPO_\nPISTON_TH\nDOSIFICADOR_4\"\n%MW12\n\"TIEMPO_\nPISTON_TH_\nDOSIFICADOR_2\"\nIN3\n%MW8\n“TIEMPO\nPISTON_TH_\nDOSIFICADOR_1\"\nIN4 %\n%MW18\n\"TIEMPO\nPISTON_TH_\nDOSIFICADOR_3\"\nIN2\n%MW12\n\"TIEMPO\nPISTON_TH_\nDOSIFICADOR_2\"\nIN3\nC\n%MW8\n\"TIEMPO\nPISTON_TH_\nDOSIFICADOR_1\"\nIN4 %\n> 3\nD\n%MW76\n\"CTU_SAV_4\".\nIN1\n%MW16\n\"SUMA_TIEMPO_\nPISTON_TH_\nDOSIFICADOR_3\"\nSUB\nInt\nEN\n-\nENO\n%MW78\n\"SUB_CUENTA_\n- SAV_4\"\nOUT\nIN2\n%MW78\n\"SUB_CUENTA_\nSAV_4\"\n<\n4\nInt\n0\n%MW78\n\"SUB_CUENTA\nSAV_4\"\n>=\n5\nInt\n0\nE\n4.1 ( Página4 - 17)\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 4 - 16",
+      "tablas": [
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE",
+            "CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location",
+            ""
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 4 - 16"
+          ]
+        ]
+      ]
+    }
+  ]
+}

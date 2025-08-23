@@ -1,0 +1,268 @@
+{
+  "archivo": "10043213 - Manual-Victron-Phoenix-Smart-1600VA-3000VA_p31_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "1) Kan worden aangepast tot 60Hz en tot 240V\n2) Bescherming\na. Uitgang kortsluiting\nb. Overbelasting\nc. Batterijspanning te hoog\nd. Batterijspanning te laag\ne. Temperatuur te hoog\nf. 230VAC op omvormer uitgang\ng. Ingangsspanningsrimpel te hoog\n3) Niet-lineaire belasting, topfactor 3:1\n4) Programmeerbaar relais dat kan worden ingesteld voor algemeen alarm, DC-onderspanning of\ngenset-startsignaalfunctie\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\nvictron energy\n15",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1. CONSIGNES DE SÉCURITÉ\nEN\nGénéral\nLisez toute la documentation fournie avec l'appareil afin de vous familiariser avec les\nrègles de sécurité avant toute utilisation. Cet appareil a été conçu et testé selon les\nstandards internationaux. Cet appareil ne doit être utilisé que pour l'application à laquelle\nil est destiné.\nNL\nATTENTION : RISQUE D'ÉLECTROCUTION.\nFR\nLe produit est utilisé avec une source d'énergie permanente (batterie). Même s'il est hors\ntension, les bornes d'entrée et/ou de sortie peuvent encore présenter une tension\nélectrique dangereuse. Toujours débrancher la batterie avant d'effectuer toute activité\nmaintenance.\nDE\nES\nL'appareil ne contient aucun élément interne pouvant être réparé par l'utilisateur. Ne\njamais retirer le panneau frontal et ne jamais mettre l'appareil en service si tous les\npanneaux ne sont pas montés. Tout entretien doit être effectué par du personnel qualifié.\nNe pas utiliser l'appareil dans un endroit présentant un risque d'explosion de gaz ou de\npoussière. Consulter les indications du fabriquant des batteries pour vous assurer de la\ncompatibilité des batteries avec l'appareil. Respectez les instructions de sécurité du\nfabricant de la batterie.\nSE\nATTENTION : Ne jamais soulever de charges lourdes sans aide.\nAppendix\nInstallation\nLire attentivement les consignes d'installation avant de mettre l'appareil en service.\nCet appareil est un produit de classe de sécurité I (livré avec une borne de mise à la terre de\nprotection). Le châssis doit être mis à la masse. Un point de mise à la terre est situé à\nl'extérieur du boîtier de l'appareil Si vous suspectez la protection par prise de terre d'être\nendommagée, l'appareil doit être mis hors tension et protégé contre toute mise en service\ninvolontaire ; faire appel à du personnel qualifié.\nAssurez-vous que tous les câbles de raccordement CC et CA sont équipés de fusibles et\ndisjoncteurs. Il n'y a pas de fusible interne à l'intérieur de ce produit. Ne jamais remplacer\nles protections par d'autres d'un type différent. Consultez les manuels pour utiliser les\nprotections appropriées.\nPendant l'installation, assurez-vous de retirer le connecteur à distance avec le fil de point (ou\nbien éteignez l'interrupteur d'allumage/arrêt à distance s'il est installé) afin de vous assurer\nque le convertisseur ne puisse pas s'allumer de manière inattendue.\nAvant de mettre l'appareil en service, contrôlez que la source d'alimentation corresponde à la\nconfiguration de l'appareil tel que décrite dans le manuel.\nAssurez-vous que l'appareil est utilisé dans des conditions d'exploitation appropriées. Ne\njamais l'utiliser dans un environnement humide ou poussiéreux. Conservez toujours\nsuffisamment d'espace libre autour de l'appareil pour la ventilation et assurez-vous que les\norifices de ventilation ne sont pas obstrués.\nAssurez-vous que la puissance souhaitée ne soit pas supérieure à la capacité de l'appareil.\nvictron energy\n1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Transport et stockage\nAssurez-vous que les câbles de secteur et de batterie sont déconnectés pour le transport et\nle stockage.\nNous n'acceptons aucune responsabilité pour des dommages liés au transport lorsque\nl'appareil n'est pas transporté dans son emballage d'origine.\nStocker l'appareil dans un endroit sec ; la température de stockage doit être comprise entre -\n20°C et +60℃\nSe référer au manuel du fabricant de la batterie pour tout ce qui concerne le transport, le\nstockage, la charge, la décharge et l'élimination de la batterie.\n2\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "2. DESCRIPTION\n2.1 Généralités\nEN\nBluetooth intégré : entièrement configurable à l'aide d'une tablette ou d'un\nsmartphone\n•\nNiveaux de réinitialisation et de déclenchement de l'alarme en cas de tension de\nbatterie faible.\n. Niveaux de redémarrage et de coupure en cas de tension de batterie faible.\n.\n. Coupure dynamique : niveau de coupure en fonction de la charge\n.\n. Tension de sortie : 210 - 245 V\n•\nFréquence : 50 Hz ou 60 Hz\n•\nNiveau de détection du mode ECO et Allumage/arrêt du mode ECO\n•\nRelais d'alarme\nNL\nFR\nDE\nSurveillance :\n•\nTension d'entrée et de sortie, % de charge et alarmes\nES\nPort de communication VE.Direct\nLe port VE.Direct peut être connecté à un ordinateur (câble d'interface VE.Direct-USB\nnécessaire) pour configurer et surveiller les mêmes paramètres.\nSE\nFiabilité reconnue\nLa topologie de pont complet avec un transformateur toroïdal a démontré sa fiabilité\ndepuis des années.\nLes convertisseurs sont protégés contre les courts-circuits et la surchauffe, que ce soit en\ncas de surcharge ou de température ambiante élevée.\nAppendix\nForte puissance de démarrage\nNécessaire pour démarrer des charges telles que des convertisseurs de puissance pour\ndes ampoules LED, halogènes ou des outils électriques.\nMode ECO\nEn mode ECO, le convertisseur commutera sur pause si la charge chute en dessous d'une\nvaleur prédéterminée (charge minimale pour qu'il s'allume : 10 VA et charge minimale pour\nqu'il s'éteigne :0 VA). Une fois sur pause, le convertisseur s'allumera une courte période de\ntemps (réglable ; par défaut : toutes les 3 secondes). Si la charge dépasse un niveau\npréconfiguré, le convertisseur restera allumé.\nAllumage/Arrêt à distance.\nUn interrupteur d'allumage/arrêt à distance ou un contact de relais peut être raccordé à un\nconnecteur à deux pôles.\nAutrement, la borne H (à gauche) du connecteur à deux pôles peut être commutée sur la\nborne positive de la batterie ; ou bien la borne L (à droite) du connecteur à deux pôles peut\nêtre commutée sur la borne négative de la batterie (ou du châssis d'un véhicule par exemple.)\nLED de diagnostic\nVeuillez consulter la section 3.3.\nPour transférer la charge vers une autre source CA : le commutateur de transfert\nautomatique\nPour nos convertisseurs de faible puissance, nous recommandons l'utilisation de notre\ncommutateur de transfert automatique Filax. Le Filax bénéficie d'un temps de transfert très\nrapide (inférieur à 20 millisecondes) afin que les ordinateurs et les autres équipements\nélectroniques puissent continuer de fonctionner sans interruption. Sinon, veuillez utiliser un\nMultiPlus équipé d'un commutateur de transfert intégré.\nvictron energy\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "3. FONCTIONNEMENT\n3.1 Commutateur on/off\nLorsque le commutateur est positionné sur « on » à l'aide du bouton-poussoir, l'appareil est\nentièrement fonctionnel. Le convertisseur se met en marche et le voyant LED « inverter »\ns'allume. En appuyant ensuite sur le bouton-poussoir, au bout d'un court instant, le\nconvertisseur bascule entre « On », « ECO > et « Off ».\nEn dehors du bouton-poussoir, le convertisseur peut également être allumé (normal ou ECO)\net éteint via Bluetooth depuis un dispositif mobile fonctionnant sous iOS ou Android et avec\nl'application Victron Connect. Cependant, lorsqu'il est éteint via Bluetooth ou le bouton-\npoussoir, l'unité ne peut pas être à nouveau éteinte ou allumée au moyen du câble du port\nVE.Direct.\n3.2 Commande à distance\nIl est possible de piloter l'appareil à distance avec un simple interrupteur marche/arrêt ou avec\nun tableau de commande Phoenix Inverter Control. Un interrupteur d'allumage/arrêt à\ndistance peut être connecté à un connecteur à deux pôles. L'interrupteur peut également être\nconnecté entre le pôle positif de la batterie et le contact de gauche du connecteur à deux\npôles (signalé par « H » ; voir Annexe A), ou entre le pôle négatif de la batterie et le contact\nde droite du contact du connecteur à deux pôles (signalé par « L » ; voir Annexe A).\nPour des raisons de sécurité, ce produit peut être complètement éteint (c.à.d. le\nconvertisseur ne peut pas être allumé à l'aide du bouton-poussoir, ni par\nBluetooth) en retirant le connecteur à distance et son fil de pont installé par\ndéfaut (ou en éteignant l'interrupteur d'allumage/arrêt à distance s'il est installé).\nL'utilisateur peut être sûr que le convertisseur ne pourra pas être allumé\naccidentellement par Bluetooth par un autre utilisateur.\n!\n3.3 Définitions des voyants LED\nVoyant LED Vert\nÉtat\nRésolutions des problèmes\nAllumé\nfixe\nConvertisseur\nallumé\nVoyant LED rouge éteint\nétat OK\nVoyant LED rouge allumé ou clignotant :\nLe convertisseur est encore allumé, mais il s'arrêtera si les\nconditions empirent. Voir le tableau des LED rouges pour\nles causes d'avertissement\nClignotement simple\nlent\nMode ECO\nSi le convertisseur continue de s'allumer et de s'éteindre,\nalors qu'une charge est connectée, la charge peut être trop\npetite par rapport aux paramètres réels du mode ECO.\nAugmentez la charge ou modifiez les paramètres du Mode\nECO. (Paramètre minimal du mode ECO : 15 W\nClignotement double\nrapide\nÉteint et en\nattente\nLe convertisseur s'est éteint suite à l'activation d'une\nprotection. Le convertisseur redémarrera automatiquement\ndès que toutes les conditions d'alarme auront été\nsupprimées. Voir le tableau de l'état des LED rouges pour\nles causes d'avertissement.\nOff\nConvertisseur\nLED rouge éteinte\n4\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Voyant LED Vert",
+            "État",
+            "Résolutions des problèmes"
+          ],
+          [
+            "Allumé fixe",
+            "Convertisseur allumé",
+            "Voyant LED rouge éteint état OK Voyant LED rouge allumé ou clignotant : Le convertisseur est encore allumé, mais il s'arrêtera si les conditions empirent. Voir le tableau des LED rouges pour les causes d'avertissement"
+          ],
+          [
+            "Clignotement simple lent",
+            "Mode ECO",
+            "Si le convertisseur continue de s'allumer et de s'éteindre, alors qu'une charge est connectée, la charge peut être trop petite par rapport aux paramètres réels du mode ECO. Augmentez la charge ou modifiez les paramètres du Mode ECO. (Paramètre minimal du mode ECO : 15 W"
+          ],
+          [
+            "Clignotement double rapide",
+            "Éteint et en attente",
+            "Le convertisseur s'est éteint suite à l'activation d'une protection. Le convertisseur redémarrera automatiquement dès que toutes les conditions d'alarme auront été supprimées. Voir le tableau de l'état des LED rouges pour les causes d'avertissement."
+          ],
+          [
+            "Off",
+            "Convertisseur",
+            "LED rouge éteinte"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "éteint\nVérifiez l'interrupteur on/off à distance.\nVérifiez les fusibles et les connexions du câble CC.\nVérifiez le mode opérationnel en appuyant une fois sur le\nbouton-poussoir.\nLED rouge allumée ou clignotante\nLe convertisseur s'est éteint suite à l'activation d'une\nprotection. Il ne redémarrera plus automatiquement. La\nLED rouge indique la raison de l'arrêt. Supprimez la cause\net redémarrez ensuite le convertisseur en l'éteignant puis\nen le rallumant.\n-.-\nClignotement rapide\nÉteint ou mise\nà jour\nmicrologicielle\nen cours ou\nratée\nClignotement LED rouge ( -.-\nMise à jour micrologicielle en cours ou ratée. En cas\nd'échec, essayez à nouveau la mise à jour micrologicielle.\nEN\nNL\nFR\nDE\nLED jaune\nÉtat\nRésolutions des problèmes\nAllumé\nFixe\nMode ECO\nVoyant LED rouge éteint\nétat OK\nVoyant LED rouge allumé ou clignotant :\nLe convertisseur est encore allumé, mais il s'arrêtera si les\nconditions empirent. Voir le tableau des voyants LED\nrouges indiquant les causes d'avertissement\nOff\nMode ECO\néteint\nVoyant LED rouge éteint\nVérifiez le mode opérationnel en appuyant une fois sur le\nbouton-poussoir.\nVérifiez l'interrupteur on/off à distance.\nVérifiez les fusibles et les connexions du câble CC.\nLED rouge allumée ou clignotante\nLe convertisseur s'est éteint suite à l'activation d'une\nprotection. Il ne redémarrera plus automatiquement. La\nLED rouge indique la raison de l'arrêt. Supprimez la cause\net redémarrez ensuite le convertisseur en l'éteignant puis\nen le rallumant.\nES\nSE\nAppendix\nVoyant LED rouge\nDéfinition\nRésolutions des problèmes\nAllumé\nFixe\nSurcharge\nRéduisez la charge\nClignotement lent\nNiveau de\nbatterie bas\nRechargez ou remplacez la batterie\nVérifiez les connexions du câble CC\nVérifiez la section efficace de câble car elle peut être\ninsuffisante.\nVoir la section 4.2 Protections et redémarrages\nautomatiques pour un comportement de redémarrage\nautomatique et manuel.\nClignotement rapide\nNiveau de\nbatterie élevé\nRéduisez la tension d'entrée CC. Contrôlez le chargeur\ndéfaillant.\nDouble\nclignotement\nTemp.élevée\nRéduisez la charge et/ou déplacez le convertisseur vers\nune zone mieux aérée\nClignotement unique\nrapide\nOndulation CC\nélevée\nVérifiez les connexions du câble CC et la section de câble.\nvictron energy\n5",
+      "tablas": [
+        [
+          [
+            "",
+            "éteint",
+            "Vérifiez l'interrupteur on/off à distance. Vérifiez les fusibles et les connexions du câble CC. Vérifiez le mode opérationnel en appuyant une fois sur le bouton-poussoir."
+          ],
+          [
+            "LED rouge allumée ou clignotante Le convertisseur s'est éteint suite à l'activation d'une protection. Il ne redémarrera plus automatiquement. La LED rouge indique la raison de l'arrêt. Supprimez la cause et redémarrez ensuite le convertisseur en l'éteignant puis en le rallumant."
+          ],
+          [
+            "-.- Clignotement rapide",
+            "Éteint ou mise à jour micrologicielle en cours ou ratée",
+            "Clignotement LED rouge ( -.- Mise à jour micrologicielle en cours ou ratée. En cas d'échec, essayez à nouveau la mise à jour micrologicielle."
+          ]
+        ],
+        [
+          [
+            "LED jaune",
+            "État",
+            "Résolutions des problèmes"
+          ],
+          [
+            "Allumé Fixe",
+            "Mode ECO",
+            "Voyant LED rouge éteint état OK Voyant LED rouge allumé ou clignotant : Le convertisseur est encore allumé, mais il s'arrêtera si les conditions empirent. Voir le tableau des voyants LED rouges indiquant les causes d'avertissement"
+          ],
+          [
+            "Off",
+            "Mode ECO éteint",
+            "Voyant LED rouge éteint Vérifiez le mode opérationnel en appuyant une fois sur le bouton-poussoir. Vérifiez l'interrupteur on/off à distance. Vérifiez les fusibles et les connexions du câble CC. LED rouge allumée ou clignotante Le convertisseur s'est éteint suite à l'activation d'une protection. Il ne redémarrera plus automatiquement. La LED rouge indique la raison de l'arrêt. Supprimez la cause et redémarrez ensuite le convertisseur en l'éteignant puis en le rallumant."
+          ]
+        ],
+        [
+          [
+            "Voyant LED rouge",
+            "Définition",
+            "Résolutions des problèmes"
+          ],
+          [
+            "Allumé Fixe",
+            "Surcharge",
+            "Réduisez la charge"
+          ],
+          [
+            "Clignotement lent",
+            "Niveau de batterie bas",
+            "Rechargez ou remplacez la batterie Vérifiez les connexions du câble CC Vérifiez la section efficace de câble car elle peut être insuffisante. Voir la section 4.2 Protections et redémarrages automatiques pour un comportement de redémarrage automatique et manuel."
+          ],
+          [
+            "Clignotement rapide",
+            "Niveau de batterie élevé",
+            "Réduisez la tension d'entrée CC. Contrôlez le chargeur défaillant."
+          ],
+          [
+            "Double clignotement",
+            "Temp.élevée",
+            "Réduisez la charge et/ou déplacez le convertisseur vers une zone mieux aérée"
+          ],
+          [
+            "Clignotement unique rapide",
+            "Ondulation CC élevée",
+            "Vérifiez les connexions du câble CC et la section de câble."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "3.4 Protection et redémarrages automatiques\nSurcharge\nCertaines charges, telles que des moteurs ou des pompes, font appel à de grandes quantités\nde courants lors des démarrages. Dans de telles circonstances, il est possible que le courant\nde démarrage dépasse le niveau de déclenchement de surintensité du convertisseur. Dans\nce cas, la tension de sortie baissera rapidement pour limiter le courant de sortie du\nconvertisseur. Si le niveau de déclenchement de surintensité est dépassé continuellement, le\nconvertisseur s'éteindre, attendra 30 secondes et il redémarrera.\nAprès trois redémarrages suivis d'une autre surcharge dans les 30 secondes suivant le\nredémarrage, le convertisseur s'arrêtera et il restera éteint. Les voyants LED indiqueront un\narrêt dû à une surcharge. Pour redémarrer le convertisseur, éteignez-le, et ensuite allumez-le.\nTension de batterie faible (réglable)\nLe convertisseur s'éteindre, puis la tension d'entrée CC descendra en dessous du niveau\nd'arrêt en cas de batterie basse. Après un délai minimal de 30 secondes, le convertisseur\nredémarrera si la tension dépasse le niveau de redémarrage en cas de batterie basse.\nAprès trois redémarrages suivis d'un arrêt dû à un niveau de batterie bas dans les 30\nsecondes suivant le redémarrage, le convertisseur s'arrêtera et il restera éteint. Les LED\nsignaleront un arrêt dû à un niveau de batterie bas. Pour redémarrer le convertisseur,\néteignez-le puis rallumez-le. Sinon, rechargez la batterie : dès que le niveau de la batterie\nmontera et qu'il restera au-dessus du niveau de détection de charge pendant 30 secondes, le\nconvertisseur s'allumera.\nConsultez le tableau des spécifications techniques pour les seuils par défaut d'arrêt et de\nredémarrage en cas de niveau de batterie bas. Ils peuvent être modifiés à l'aide de l'App.\nVictronConnect.\nTension de batterie élevée\nRéduisez la tension d'entrée CC et/ou recherchez la batterie ou le chargeur solaire défaillant\ndans le système. Après un arrêt dû à une tension élevée, le convertisseur attendra d'abord 30\nsecondes, et il essayera à nouveau de démarrer dès que la tension de batterie descendra à\nun niveau acceptable. Le convertisseur ne restera pas éteint après plusieurs tentatives.\nTempérature élevée\nUne température ambiante élevée ou une charge élevée durable peut entraîner un arrêt dû à\nune surchauffe. Le convertisseur redémarrera au bout de 30 secondes. Le convertisseur ne\nrestera pas éteint après plusieurs tentatives. Réduisez la charge et/ou déplacez le\nconvertisseur vers une zone mieux aérée.\nOndulation CC élevée\nUne ondulation CC élevée est généralement causée par des pertes sur les connexions du\ncâble CC et/ou des fils CC trop fins. Si le convertisseur s'est éteint à cause d'une tension\nd'ondulation CC élevée, il attendra 30 secondes, et il redémarrera.\nAprès trois redémarrages suivis d'un arrêt dû à une ondulation CC élevée dans les 30\nsecondes suivant le redémarrage, le convertisseur s'arrêtera et il arrêtera d'essayer. Pour\nredémarrer le convertisseur, éteignez-le, et ensuite allumez-le.\nUne ondulation CC élevée constante réduit la durée de vie du convertisseur.\n6\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "4. INSTALLATION\nEN\nCe produit doit être installé par un technicien qualifié.\n?\nNL\n!\nPendant l'installation, assurez-vous de retirer le connecteur à distance avec le fil\nde pont (ou bien éteignez l'interrupteur d'allumage/arrêt à distance s'il est\ninstallé) afin de vous assurer que le convertisseur ne puisse pas s'allumer de\nmanière inattendue.\nFR\nDE\n4.1 Emplacement\nLe produit doit être installé dans un endroit sec et bien ventilé, aussi près que possible\ndes batteries. Conservez un espace d'au moins 10 cm autour de l'appareil pour son\nrefroidissement.\nES\nSE\nUne température ambiante trop élevée aura les conséquences suivantes :\nRéduction de la longévité.\n!\nCourant de charge réduit.\nPuissance de crête réduite ou arrêt total du convertisseur.\nNe jamais placer l'appareil directement au-dessus des batteries.\nAppendix\nLe produit peut être fixé au mur. Pour l'installation, voir l'annexe A.\nL'appareil peut être monté horizontalement ou verticalement, mais le montage vertical est\npréférable. Le refroidissement est meilleur dans cette position.\n!\nL'intérieur de l'appareil doit rester accessible après l'installation.\nConservez une distance minimale entre l'appareil et les batteries afin de réduire les pertes de\ntension dans les câbles.\nPour des raisons de sécurité cet appareil doit être installé dans un\nenvironnement résistant à la chaleur s'il va être utilisé avec un équipement dont\nune quantité importante d'énergie va être convertie. Évitez la présence de\nproduits tels que des produits chimiques, des composants synthétiques, des\nrideaux ou d'autres textiles, à proximité de l'appareil.\n!\nvictron energy\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "4.2 Raccordement des câbles de batterie\nPour bénéficier de la puissance maximale de l'appareil, il est nécessaire d'utiliser des\nbatteries de capacité suffisante et des câbles de section suffisante. Voir tableau.\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nSection de câbles\nrecommandée (mm2)\nLongueur de câble\njusqu'à 6 m\n50\n25\n25\n70\n35\n25\n12/3000\n24/3000\n48/3000\nSection de câbles\nrecommandée (mm2)\nLongueur de câble\n0 - 5 m\n95\n50\n35\n5 - 10 m\n120\n95\n70\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nCapacité de\nbatterie\nrecommandée\n(Ah)\n300 - 800\n150 - 400\n75 - 200\n350 - 1000\n200 - 500\n100 - 250\n12/3000\n24/3000\n48/3000\nCapacité de\nbatterie\nrecommandée\n(Ah)\n400 - 1200\n200 - 700\n100 - 400\nRemarque : la résistance interne est un facteur important si vous utilisez des batteries de\nfaible capacité. Veuillez consulter votre fournisseur ou les chapitres appropriés de notre livre\n« Électricité à bord », en téléchargement sur notre site web.\nProcédure\nProcédez comme suit pour raccorder les câbles de batterie :\nUtilisez une clé à pipe isolante afin d'éviter de court-circuiter la batterie.\nÉvitez de court-circuiter les câbles de batterie.\n!\nConnectez les câbles de batterie : le + (rouge) et le - (noir) à la batterie, voir l'annexe A.\nInverser la polarité (le + au -, et le - au +) pourrait endommager l'appareil.\nSerrez fermement les écrous afin de réduire la résistance de contact autant que possible.\n8\nvictron energy",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Section de câbles recommandée (mm2)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Longueur de câble jusqu'à 6 m",
+            "50",
+            "25",
+            "25",
+            "70",
+            "35",
+            "25"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Section de câbles recommandée (mm2)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Longueur de câble 0 - 5 m",
+            "95",
+            "50",
+            "35"
+          ],
+          [
+            "5 - 10 m",
+            "120",
+            "95",
+            "70"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Capacité de batterie recommandée (Ah)",
+            "300 - 800",
+            "150 - 400",
+            "75 - 200",
+            "350 - 1000",
+            "200 - 500",
+            "100 - 250"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Capacité de batterie recommandée (Ah)",
+            "400 - 1200",
+            "200 - 700",
+            "100 - 400"
+          ]
+        ]
+      ]
+    }
+  ]
+}

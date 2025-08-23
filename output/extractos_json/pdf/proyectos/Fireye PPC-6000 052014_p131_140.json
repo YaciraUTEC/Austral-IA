@@ -1,0 +1,625 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p131_140",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\n6 Faults and fault finding\n6.1 The fault display\nThe PPC6000 series carry out a number of internal and external checks during operation. If a fault is found, a\nfault number (displayed with a text description) is used to identify the type of problem. A list of fault numbers\nmay be found later in this chapter.\nMany of the faults detected and displayed by the control will cause a non-volatile lockout of the burner, that is\nto say that removing the power to the control will not cancel a fault. Other faults will be displayed as a warning\nbut operation of the burner will not be affected.\nEach fault number is prefixed on the display by a letter as follows:\nF\nThis means that a fault has occurred and is still present.\nThe fault may be internal or external to the control.\nC\nThis means that a fault did occur but has now cleared.\nL\nThis means a programmed limit has been exceeded.\nFor example:\n217 PSI Actual AUTO\nF23:Drive 3 Fault\nMany of the faults detected and displayed by the control will cause a non-volatile lockout of the burner. Other\nfaults will be displayed as a warning but operation of the burner will not be affected. A complete list of faults\nmay be found later in this chapter.\nA fault history is available through the Engineers Key, the standard fault history is lost if the power is removed\nfrom the unit but as an option the fault history may be displayed with a date and time stamp, and retained in\nthe unit memory in the event of a power loss to the control. For further information see section 6.6.1.\nNOTE: LED on PPC6000: STATUS LED: Flashing LED indicates the control is OK. OFF = possible open\nfuse 2 (F32 see Section 2.6.1) Also, OFF = possible fatal processor fault.\n6.2 What to do when a fault occurs\nIf faults or limits are present and either the alarm or limit relay is closed, press the MUTE/RESET key to mute\nthe alarm (open the relay).\nTake note of the fault message and use the Fault Listing to identify why the fault occurred.\nIf the faults, which cause a non-volatile lockout, are still present when the alarm is muted, the alarm will\noperate again when the alarm clears, to indicate to the operator that the control may be restarted.\nOnce all faults have been diagnosed, rectified and cleared, press the MUTE/RESET key for approximately\nthree seconds to remove the fault messages and re-start the burner.\n131",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nThe function of the MUTE/RESET key may also be achieved via ComFire or using the MUTE/RESET input.\nSee option parameter 1.2.\n6.3 Non-volatile lockout\nIf power is removed from the control while a fault is still present, the fault will be stored in non-volatile memory.\nWhen power is restored to the control, the fault number will still be present and it will be necessary to remove\nthe fault before restarting the burner.\n6.4 Fault subsets\nAs an aid to fault finding, most faults also have a fault subset that gives additional information about the type of\nfault or what the burner was doing when the fault occurred. Where applicable, the subsets are given in the\nfault listing in section 6.5\n6.5 Fault listing\nFault\nNumber\nCause\nDescription\nF01\nExternal Alarm\nFault 1\nOne of the low voltage alarm / lockout inputs is causing an\nalarm.\nF02\nExternal Alarm\nFault 2\nThe fault may be prefixed by either an 'L' or an 'F' and may or may\nnot shutdown / lockout the burner.\nF03\nExternal Alarm\nFault 3\nSee Option parameters 19.1 to 19.4.\nSubset: burner status.\nF04\nExternal Alarm\nFault 4\nF18\nNot enough\nsetpoints entered\nA fuel/air ratio profile has been selected which does not have at\nleast four setpoints commissioned.\n· Use commission ratio mode to enter more setpoints.\nSubset: fuel code\nF19\nCircuit board\nvoltage reference\nfault\nThe circuit board has an incorrect on-board reference level.\n· Ensure ALL analog inputs (4-20mA, 0 - 5v) are in the\nrange 0 to 5.0 volts. It is critical that none of the inputs are\nhigher than 5.0 volts.\n· If the problem persists even when all analog inputs are\ndisconnected, check EK37 and contact supplier.\nSubset: +1 out of range, +2 zero check failed, +4 span check\nfailed.\nSee EK37 for more details.\n132",
+      "tablas": [
+        [
+          [
+            "Fault Number",
+            "Cause",
+            "Description"
+          ],
+          [
+            "F01",
+            "External Alarm Fault 1",
+            "One of the low voltage alarm / lockout inputs is causing an alarm."
+          ],
+          [
+            "F02",
+            "External Alarm Fault 2",
+            "The fault may be prefixed by either an 'L' or an 'F' and may or may not shutdown / lockout the burner."
+          ],
+          [
+            "F03",
+            "External Alarm Fault 3",
+            "See Option parameters 19.1 to 19.4."
+          ],
+          [
+            "Subset: burner status."
+          ],
+          [
+            "F04",
+            "External Alarm Fault 4",
+            ""
+          ],
+          [
+            "F18",
+            "Not enough setpoints entered",
+            "A fuel/air ratio profile has been selected which does not have at least four setpoints commissioned."
+          ],
+          [
+            "· Use commission ratio mode to enter more setpoints. Subset: fuel code"
+          ],
+          [
+            "F19",
+            "Circuit board voltage reference fault",
+            "The circuit board has an incorrect on-board reference level."
+          ],
+          [
+            "· Ensure ALL analog inputs (4-20mA, 0 - 5v) are in the range 0 to 5.0 volts. It is critical that none of the inputs are higher than 5.0 volts."
+          ],
+          [
+            "· If the problem persists even when all analog inputs are disconnected, check EK37 and contact supplier."
+          ],
+          [
+            "Subset: +1 out of range, +2 zero check failed, +4 span check failed."
+          ],
+          [
+            "See EK37 for more details."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\nFault\nNumber\nCause\nDescription\nF20\nDrive 0 position\nfault\nA drive-positioning fault has occurred, which will cause a non-\nvolatile lockout of the burner. This fault has occurred for one of the\nfollowing reasons:\nF21\nDrive 1 position\nfault\n1. During close position prove, when a drive stops at a position\nthat is outside the close set position by more than five degrees.\n2. During purge position prove, when a drive stops at a position\nthat is outside the purge set position by more than five degrees.\n3. During pre-purge, ignition or post-purge, when a drive moves\nfrom its setpoint.\nF22\nDrive 2 position\nfault\nF23\nDrive 3 position\nfault\n4. During modulation, when a drive is not at its correct setpoint as\ndefined by the commissioned fuel/air ratio for the selected\nprofile.\nF24\nDrive 4 position\nfault\nA drive is defined as having moved from its setpoint if its positional\nerror is more than 1° for 15s, or more than 5° for 1s. For positional\nerrors between 1° and 5°, the detection time is variable between\n15s and 1s.\nF25\nDrive 5 position\nfault\nNote: Only the selected drives are checked, i.e. used on the\ncurrent fuel/ air profile. The other drives are ignored.\nSubset: burner status.\n000 - 016 = Position fault at the status number\n032 - 048 = CAN communications error. Display shows ERR1\nunder drive name.\nF26\nDrive 6 position\nfault\nF27\nDrive 7 position\nfault\n> 064 = Internal servo fault., Display shows ERR2 - ERR7 under\nthe drive name.\nNote: A message ERR1, ERR2, ERR3 on the display indicates\na communications failure with a given servo-motor. This\ncould be caused by a wiring error or an incorrectly\nselected serial number. Verify selections in Option\nparameter 03.x.\nF28\nDrive 8 position\nfault\nF29\nDrive 9 position\nfault\nF32\nSafety input fault\nOne or more of the fail-safe low voltage inputs is registering a fault.\nSubset: Combination of failed inputs.\nSubset #\nInput I\n0\nN/A\n1\n1\n2\n2\n4\n3\n8\n4\n128\nAir pressure input\n133",
+      "tablas": [
+        [
+          [
+            "Fault Number",
+            "Cause",
+            "Description",
+            ""
+          ],
+          [
+            "F20",
+            "Drive 0 position fault",
+            "A drive-positioning fault has occurred, which will cause a non- volatile lockout of the burner. This fault has occurred for one of the following reasons:"
+          ],
+          [
+            "F21",
+            "Drive 1 position fault",
+            "1. During close position prove, when a drive stops at a position that is outside the close set position by more than five degrees."
+          ],
+          [
+            "",
+            "2. During purge position prove, when a drive stops at a position that is outside the purge set position by more than five degrees. 3. During pre-purge, ignition or post-purge, when a drive moves from its setpoint."
+          ],
+          [
+            "F22",
+            "Drive 2 position fault"
+          ],
+          [
+            "F23",
+            "Drive 3 position fault",
+            "4. During modulation, when a drive is not at its correct setpoint as defined by the commissioned fuel/air ratio for the selected profile."
+          ],
+          [
+            "F24",
+            "Drive 4 position fault",
+            "A drive is defined as having moved from its setpoint if its positional error is more than 1° for 15s, or more than 5° for 1s. For positional errors between 1° and 5°, the detection time is variable between 15s and 1s."
+          ],
+          [
+            "F25",
+            "Drive 5 position fault",
+            "Note: Only the selected drives are checked, i.e. used on the current fuel/ air profile. The other drives are ignored."
+          ],
+          [
+            "",
+            "",
+            "Subset: burner status. 000 - 016 = Position fault at the status number 032 - 048 = CAN communications error. Display shows ERR1 under drive name."
+          ],
+          [
+            "F26",
+            "Drive 6 position fault"
+          ],
+          [
+            "F27",
+            "Drive 7 position fault",
+            "> 064 = Internal servo fault., Display shows ERR2 - ERR7 under the drive name."
+          ],
+          [
+            "",
+            "",
+            "Note: A message ERR1, ERR2, ERR3 on the display indicates a communications failure with a given servo-motor. This could be caused by a wiring error or an incorrectly selected serial number. Verify selections in Option parameter 03.x."
+          ],
+          [
+            "F28",
+            "Drive 8 position fault"
+          ],
+          [
+            "F29",
+            "Drive 9 position fault",
+            "",
+            ""
+          ],
+          [
+            "F32",
+            "Safety input fault",
+            "One or more of the fail-safe low voltage inputs is registering a fault."
+          ],
+          [
+            "",
+            "",
+            "Subset: Combination of failed inputs."
+          ],
+          [
+            "",
+            "",
+            "Subset #",
+            "Input I"
+          ],
+          [
+            "",
+            "0",
+            "N/A"
+          ],
+          [
+            "",
+            "1",
+            "1"
+          ],
+          [
+            "",
+            "2",
+            "2"
+          ],
+          [
+            "",
+            "",
+            "4",
+            "3"
+          ],
+          [
+            "",
+            "",
+            "8",
+            "4"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nFault\nNumber\nCause\nDescription\nF33\nBurner input fault\nOne or more of the high voltage (profile select) inputs is registering\na fault.\nSubset: Failure mode.\nF34\nPrimary relay fault\nOne or more of the internal relays is not responding correctly.\nSubset : 1 - 10 = Failed relay number\nF35\nADC fault\nOne of the internal checks on the analog to digital converter has\nfailed.\nSubset: Failure mode.\nF36\nReset fault\nThis fault occurs if the control receives more than 5 'false'\nrestart requests within a 15 minute period.\nA false restart request occurs then the fault mute key / input is held\nfor more then three seconds when there is no fault present. This is\nto protect against a failure in an external device continually re-\nstarting the control, which could cause un-attended burner restarts\nin the event of a genuine burner problem. This is important since\nthe fault mute function can come from anywhere via a digital input\nor serial communications.\nTo clear the fault, either enter a commission mode, or cycle the\npower to the control.\nThe subset in not applicable for this fault\nF37\nRAM test fault\nThe main memory in the control has malfunctioned.\n· Interrupt power to the control.\n. This could be due to high levels of electrical interference getting\ninto the product. Check all cables are correctly screened, and\nscreens are terminated correctly. Ensure the mains supply is\nnot excessively noisy.\n. If this fault persists, the control must be returned to the supplier.\nSubset: Failed Page.\n134",
+      "tablas": [
+        [
+          [
+            "Fault Number",
+            "Cause",
+            "Description"
+          ],
+          [
+            "F33",
+            "Burner input fault",
+            "One or more of the high voltage (profile select) inputs is registering a fault. Subset: Failure mode."
+          ],
+          [
+            "F34",
+            "Primary relay fault",
+            "One or more of the internal relays is not responding correctly."
+          ],
+          [
+            "Subset : 1 - 10 = Failed relay number"
+          ],
+          [
+            "F35",
+            "ADC fault",
+            "One of the internal checks on the analog to digital converter has failed."
+          ],
+          [
+            "Subset: Failure mode."
+          ],
+          [
+            "F36",
+            "Reset fault",
+            "This fault occurs if the control receives more than 5 'false' restart requests within a 15 minute period."
+          ],
+          [
+            "A false restart request occurs then the fault mute key / input is held for more then three seconds when there is no fault present. This is to protect against a failure in an external device continually re- starting the control, which could cause un-attended burner restarts in the event of a genuine burner problem. This is important since the fault mute function can come from anywhere via a digital input or serial communications."
+          ],
+          [
+            "To clear the fault, either enter a commission mode, or cycle the power to the control."
+          ],
+          [
+            "The subset in not applicable for this fault"
+          ],
+          [
+            "F37",
+            "RAM test fault",
+            "The main memory in the control has malfunctioned."
+          ],
+          [
+            "· Interrupt power to the control."
+          ],
+          [
+            ". This could be due to high levels of electrical interference getting into the product. Check all cables are correctly screened, and screens are terminated correctly. Ensure the mains supply is not excessively noisy."
+          ],
+          [
+            ". If this fault persists, the control must be returned to the supplier."
+          ],
+          [
+            "Subset: Failed Page."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nFault\nNumber\nCause\nDescription\nF38\nProgram memory\nCRC fault\nThe program memory in the control has been corrupted.\n· Interrupt power to the control.\n. This could be due to high levels of electrical interference getting\ninto the product. Check all cables are correctly screened, and\nscreens are terminated correctly. Ensure the mains supply is\nnot excessively noisy.\n. If this fault persists, the control must be returned to the supplier.\nSubset: Failed Page.\nF39\nProfile table CRC\nfault\nThe profile table memory in the control has been corrupted.\n· Interrupt power to the control.\n. Erase the system using option parameter 45.1 = 5 and re\ncommission (or restore with option parameter 45.2).\n. This could be due to high levels of electrical interference getting\ninto the product. Check all cables are correctly screened, and\nscreens are terminated correctly. Ensure the mains supply is\nnot excessively noisy.\n. If this fault persists, the control must be returned to the supplier.\nSubset: Failed Page.\nF40\nSpare\nN/A\nF41\nBoiler safety limit\nexceeded\nThe boiler's measured value has exceeded the\npressure/temperature safety limit.\nSubset: 4 - safety limit exceeded\nF42\nReserved\nF43\nReserved\nF44\nBurner not OFF.\nThis fault will lock the burner out if the AUTO input (PA10 - PA11)\nis made when the control thinks the burner should not be firing. It\nwill also occur if the AUTO input stays ON for three seconds after\nthis control has opened the 'controlled shutdown relay' - i.e. tried\nto turn the burner off.\nSubset: burner status.\nF45\nReserved\n135",
+      "tablas": [
+        [
+          [
+            "Fault Number",
+            "Cause",
+            "Description"
+          ],
+          [
+            "F38",
+            "Program memory CRC fault",
+            "The program memory in the control has been corrupted."
+          ],
+          [
+            "· Interrupt power to the control. . This could be due to high levels of electrical interference getting into the product. Check all cables are correctly screened, and screens are terminated correctly. Ensure the mains supply is not excessively noisy."
+          ],
+          [
+            ". If this fault persists, the control must be returned to the supplier. Subset: Failed Page."
+          ],
+          [
+            "F39",
+            "Profile table CRC fault",
+            "The profile table memory in the control has been corrupted. · Interrupt power to the control. . Erase the system using option parameter 45.1 = 5 and re commission (or restore with option parameter 45.2)."
+          ],
+          [
+            ". This could be due to high levels of electrical interference getting into the product. Check all cables are correctly screened, and screens are terminated correctly. Ensure the mains supply is not excessively noisy. . If this fault persists, the control must be returned to the supplier. Subset: Failed Page."
+          ],
+          [
+            "F40",
+            "Spare",
+            "N/A"
+          ],
+          [
+            "F41",
+            "Boiler safety limit exceeded",
+            "The boiler's measured value has exceeded the pressure/temperature safety limit. Subset: 4 - safety limit exceeded"
+          ],
+          [
+            "F42",
+            "Reserved",
+            ""
+          ],
+          [
+            "F43",
+            "Reserved",
+            ""
+          ],
+          [
+            "F44",
+            "Burner not OFF.",
+            "This fault will lock the burner out if the AUTO input (PA10 - PA11) is made when the control thinks the burner should not be firing. It will also occur if the AUTO input stays ON for three seconds after this control has opened the 'controlled shutdown relay' - i.e. tried to turn the burner off. Subset: burner status."
+          ],
+          [
+            "F45",
+            "Reserved",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nFault\nNumber\nCause\nDescription\nF46\nEEPROM memory\nCRC fault\nThe EEPROM memory in the control has been corrupted. This\nmemory is used to store the option parameters,\n· Interrupt power to the control.\n. Erase the system using option parameter 45.1 = 5 and re\ncommission (or restore with option parameter 45.2).\n. This could be due to high levels of electrical interference\ngetting into the product. Check all cables are correctly\nscreened, and screens are terminated correctly. Ensure\nthe mains supply is not excessively noisy.\n. If this fault persists, the control must be returned to the\nsupplier.\nSubset: Failed Page.\nF50\nOxygen probe\nheater fault\nThe probe heater has failed to heat to the correct temperature after\n30 minutes of system power up.\n· Is the probe heater wiring correct?\n. Is the probe cell thermocouple wiring correct?\nOnce the fault is rectified, it will be necessary to interrupt the\npower to the oxygen probe interface to make it attempt to heat the\nprobe once more.\nSubset: O2 probe status.\nL52\nOxygen low limit\nalarm\nThe oxygen level measured value is below the oxygen setpoint low\nalarm value for the current profile.\nSubset: 0 = Limit violation, 1 = Probe Failed.\nL53\nOxygen high limit\nalarm\nThe oxygen level measured value has exceeded the oxygen\nsetpoint high alarm value for the current profile.\nSubset: 0 = Limit violation, 1 = Probe Failed.\nF54\nOxygen probes\nmismatch fault\nThis fault occurs when two oxygen probes are used to give fail-\nsafe oxygen monitoring. If this fault occurs, check and calibrate\nboth oxygen probes. It may be necessary to increase option\nparameter 42.4 or 42.5 (within safe limits) if the oxygen probes are\nin different parts of the flue.\nSubset:\n1 = Oxygen values don't match,\n2 = Flue temperatures don't match\n3 = Neither flue temperature or oxygen levels match\n255 = Second oxygen probe is faulty / not ready. See EK 76.\n136",
+      "tablas": [
+        [
+          [
+            "Fault Number",
+            "Cause",
+            "Description"
+          ],
+          [
+            "F46",
+            "EEPROM memory CRC fault",
+            "The EEPROM memory in the control has been corrupted. This memory is used to store the option parameters,"
+          ],
+          [
+            "",
+            "· Interrupt power to the control."
+          ],
+          [
+            ". Erase the system using option parameter 45.1 = 5 and re commission (or restore with option parameter 45.2)."
+          ],
+          [
+            ". This could be due to high levels of electrical interference getting into the product. Check all cables are correctly screened, and screens are terminated correctly. Ensure the mains supply is not excessively noisy."
+          ],
+          [
+            ". If this fault persists, the control must be returned to the supplier."
+          ],
+          [
+            "Subset: Failed Page."
+          ],
+          [
+            "F50",
+            "Oxygen probe heater fault",
+            "The probe heater has failed to heat to the correct temperature after 30 minutes of system power up."
+          ],
+          [
+            "· Is the probe heater wiring correct? . Is the probe cell thermocouple wiring correct?"
+          ],
+          [
+            "Once the fault is rectified, it will be necessary to interrupt the power to the oxygen probe interface to make it attempt to heat the probe once more."
+          ],
+          [
+            "Subset: O2 probe status."
+          ],
+          [
+            "L52",
+            "Oxygen low limit alarm",
+            "The oxygen level measured value is below the oxygen setpoint low alarm value for the current profile."
+          ],
+          [
+            "Subset: 0 = Limit violation, 1 = Probe Failed."
+          ],
+          [
+            "L53",
+            "Oxygen high limit alarm",
+            "The oxygen level measured value has exceeded the oxygen setpoint high alarm value for the current profile."
+          ],
+          [
+            "Subset: 0 = Limit violation, 1 = Probe Failed."
+          ],
+          [
+            "F54",
+            "Oxygen probes mismatch fault",
+            "This fault occurs when two oxygen probes are used to give fail- safe oxygen monitoring. If this fault occurs, check and calibrate both oxygen probes. It may be necessary to increase option parameter 42.4 or 42.5 (within safe limits) if the oxygen probes are in different parts of the flue."
+          ],
+          [
+            "Subset: 1 = Oxygen values don't match, 2 = Flue temperatures don't match"
+          ],
+          [
+            "3 = Neither flue temperature or oxygen levels match 255 = Second oxygen probe is faulty / not ready. See EK 76."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\nFault\nNumber\nCause\nDescription\nL55\nTrim limit alarm\nThe trim drive has reached the allowed maximum deviation limit.\n· Change trim limit.\n. Re-commission fuel / air ratio.\nSubset: Not applicable.\nF57\nAuto trim\ncommissioning\nfault\nThe measured oxygen level exceeded 15.0% during auto trim\ncommissioning. The burner is shutdown.\nSubset: Last auto trim commission setpoint (+32 if adding air).\nL58\nFlue temperature\nlow alarm value\nexceeded\nThe measured flue temperature is below the low alarm value for\nthe current profile, or the flue thermocouple is faulty.\nSubset: Not applicable.\nL59\nFlue temperature\nhigh alarm value\nexceeded\nThe measured flue temperature has exceeded the high alarm\nvalue for the current profile.\nSubset: Not applicable.\nF60\nSpare\nCurrently unassigned\nF61\nCombustion air\npressure fault\nApplicable if combustion air pressure monitoring is used (using a\n4-20mA pressure sensor). This fault will lock out the burner if the\nmeasured combustion air pressure does not match that expected\nfor the current firing rate for six (6) seconds.\nSubset is not used (will be zero).\nF62\nSpare\nCurrently unassigned\nF63\nOption parameters\nuploaded\nThe option parameters have been uploaded via serial\ncommunications. Check all values are correct and match the\napplication, then set option parameter 45.0 to 0.\nSubset : Not applicable.\n137",
+      "tablas": [
+        [
+          [
+            "Fault Number",
+            "Cause",
+            "Description"
+          ],
+          [
+            "L55",
+            "Trim limit alarm",
+            "The trim drive has reached the allowed maximum deviation limit. · Change trim limit. . Re-commission fuel / air ratio."
+          ],
+          [
+            "Subset: Not applicable."
+          ],
+          [
+            "F57",
+            "Auto trim commissioning fault",
+            "The measured oxygen level exceeded 15.0% during auto trim commissioning. The burner is shutdown. Subset: Last auto trim commission setpoint (+32 if adding air)."
+          ],
+          [
+            "L58",
+            "Flue temperature low alarm value exceeded",
+            "The measured flue temperature is below the low alarm value for the current profile, or the flue thermocouple is faulty. Subset: Not applicable."
+          ],
+          [
+            "L59",
+            "Flue temperature high alarm value exceeded",
+            "The measured flue temperature has exceeded the high alarm value for the current profile. Subset: Not applicable."
+          ],
+          [
+            "F60",
+            "Spare",
+            "Currently unassigned"
+          ],
+          [
+            "F61",
+            "Combustion air pressure fault",
+            "Applicable if combustion air pressure monitoring is used (using a 4-20mA pressure sensor). This fault will lock out the burner if the measured combustion air pressure does not match that expected for the current firing rate for six (6) seconds."
+          ],
+          [
+            "Subset is not used (will be zero)."
+          ],
+          [
+            "F62",
+            "Spare",
+            "Currently unassigned"
+          ],
+          [
+            "F63",
+            "Option parameters uploaded",
+            "The option parameters have been uploaded via serial communications. Check all values are correct and match the application, then set option parameter 45.0 to 0. Subset : Not applicable."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\nFault\nNumber\nCause\nDescription\nF64\nProfile Invalid\nThis fault means that the control can't fire the currently selected\nprofile because it isn't sure it still matches the burner / site\nconfiguration. It could lead to a hazardous situation.\nThere are three possible causes to this fault:\n1 - A drive has been commissioned in this profile but has now\nbeen deselected. If a profile is commissioned with two air dampers\nbut then the second air damper is de-selected with option\nparameter 4.0 to 4.9, the profile is no longer valid.\nSubset: Drive number (0 to 9)\n2 - Servo / Drive changed. If the system is commissioned then\nlater one of the servos is changed for a new one (i.e. different\nserial number), any profiles that use that servo are now considered\ninvalid. This is to force the engineer to ensure the new servo is\nmechanically connected the same way as the original one.\nSubset: Invalid profile + 100 (101 to 104).\n3 - The selected profile has been uploaded from a PC, but has not\nbeen verified on this burner.\nSubset: Invalid profile + 100 (101 to 104).\nIn all cases the F74 can be cleared by switching to another (good)\nprofile, or by re-commissioning the profile in 'commission ratio'\nmode, making sure all points up to and including high fire are\nacknowledged using the 'NEXT' key (or 'ENTER' if the points are\nadjusted).\nF65\nPower-up Lockout\nThe control has locked out on power-up. This will normally be\nbecause option parameter 1.0 is set to 1.\nSubset:\n1 - See option parameter 1.0.\n254 - Serial EEPROM write failure.\n255 - NV Lockout verification failed.\nF66\nSpare\nCurrently unassigned\nF67\nSecondary relay\nfault\nA secondary fault has occurred with the non-volatile lockout relay.\nA Self check is performed once an hour and two consecutive\nfailures will cause the fault to appear and the burner to lock-out\nimmediately.\n· Contact supplier\nSubset: Failed relay number.\n138",
+      "tablas": [
+        [
+          [
+            "Fault Number",
+            "Cause",
+            "Description"
+          ],
+          [
+            "F64",
+            "Profile Invalid",
+            "This fault means that the control can't fire the currently selected profile because it isn't sure it still matches the burner / site configuration. It could lead to a hazardous situation."
+          ],
+          [
+            "There are three possible causes to this fault:"
+          ],
+          [
+            "1 - A drive has been commissioned in this profile but has now been deselected. If a profile is commissioned with two air dampers but then the second air damper is de-selected with option parameter 4.0 to 4.9, the profile is no longer valid."
+          ],
+          [
+            "Subset: Drive number (0 to 9)"
+          ],
+          [
+            "2 - Servo / Drive changed. If the system is commissioned then later one of the servos is changed for a new one (i.e. different serial number), any profiles that use that servo are now considered invalid. This is to force the engineer to ensure the new servo is mechanically connected the same way as the original one."
+          ],
+          [
+            "Subset: Invalid profile + 100 (101 to 104)."
+          ],
+          [
+            "3 - The selected profile has been uploaded from a PC, but has not been verified on this burner."
+          ],
+          [
+            "Subset: Invalid profile + 100 (101 to 104)."
+          ],
+          [
+            "In all cases the F74 can be cleared by switching to another (good) profile, or by re-commissioning the profile in 'commission ratio' mode, making sure all points up to and including high fire are acknowledged using the 'NEXT' key (or 'ENTER' if the points are adjusted)."
+          ],
+          [
+            "F65",
+            "Power-up Lockout",
+            "The control has locked out on power-up. This will normally be because option parameter 1.0 is set to 1."
+          ],
+          [
+            "Subset:"
+          ],
+          [
+            "1 - See option parameter 1.0."
+          ],
+          [
+            "254 - Serial EEPROM write failure. 255 - NV Lockout verification failed."
+          ],
+          [
+            "F66",
+            "Spare",
+            "Currently unassigned"
+          ],
+          [
+            "F67",
+            "Secondary relay fault",
+            "A secondary fault has occurred with the non-volatile lockout relay. A Self check is performed once an hour and two consecutive failures will cause the fault to appear and the burner to lock-out immediately."
+          ],
+          [
+            "· Contact supplier"
+          ],
+          [
+            "Subset: Failed relay number."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\nFault\nNumber\nCause\nDescription\nF68\nSecondary\nprogram memory\nchecksum fault\nA fault has occurred with the program memory in the control. A\nSelf check is performed once an hour and two consecutive failures\nwill cause the fault to appear and the burner to lock-out\nimmediately.\n· Contact supplier\nSubset: Not applicable.\nF69\nSecondary\nwatchdog fault\nA fault has occurred with the CPU watchdog. A Self check is\nperformed once an hour and two consecutive failures will cause\nthe fault to appear and the burner to lock-out immediately.\n· Contact supplier\nSubset:\n1 = Late test failed.\n2 = Early test failed.\nF70 - F79\nUser Faults\nThese fault numbers are generated by the user programmable\nsection of the control and will vary with the application.\n6.6 The engineer's key\nBy selecting the engineer's key it is possible to read the values of internal system variables and external input\nand output states. It is also possible to see the values of fault subsets, in order to obtain more detailed\ninformation about a fault that has occurred.\nWhen using the engineer's key it is not possible to change any parameters. Therefore, it is not possible to\naffect the operation of the burner.\nAfter pressing the Engineer's Key:\n· The top line of the display will show an EK (data register) number and the value of the register.\n. The bottom line of the display will show the EK description.\nFor example:\nEK025= 2\nBurner Status\n. If there is a fault present, this will be shown on the right hand side of the top line in the format Fnn, sss\nwhere nn = fault number, and sss = fault subset value. Note, this fault information will only be shown when\nviewing EK numbers 1 to 100.\n. Use the UP/DOWN keys to change the EK number and view its corresponding data.\n. Press the EK to index back to the normal display. The control will revert automatically to the normal run\ndisplay if a key has not been pressed for one minute.\n139",
+      "tablas": [
+        [
+          [
+            "Fault Number",
+            "Cause",
+            "Description"
+          ],
+          [
+            "F68",
+            "Secondary program memory checksum fault",
+            "A fault has occurred with the program memory in the control. A Self check is performed once an hour and two consecutive failures will cause the fault to appear and the burner to lock-out immediately."
+          ],
+          [
+            "· Contact supplier"
+          ],
+          [
+            "Subset: Not applicable."
+          ],
+          [
+            "F69",
+            "Secondary watchdog fault",
+            "A fault has occurred with the CPU watchdog. A Self check is performed once an hour and two consecutive failures will cause the fault to appear and the burner to lock-out immediately."
+          ],
+          [
+            "· Contact supplier"
+          ],
+          [
+            "Subset:"
+          ],
+          [
+            "1 = Late test failed."
+          ],
+          [
+            "2 = Early test failed."
+          ],
+          [
+            "F70 - F79",
+            "User Faults",
+            "These fault numbers are generated by the user programmable section of the control and will vary with the application."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\n6.6.1 Fault history\nThe PPC6000 series stores information on faults. The memory in the unit will store the last 128 faults and\nassociated status data and as an option a date and time stamp. The 100 most recent faults are available via\nthe display unit and all 128 are available through ComFire. The Engineers Key gives access to the fault\nhistory.\nTo view the fault history scroll up through the EK's numbers until EK200 then by scrolling once more the most\nrecently occurring fault is displayed, indicated by 00 in the top left corner of the display.\nFor example:\nFault log number\nDate and time\n00 01Jun 03 13:05 014\nF04:Dig. Input 4\nFault subset\nEarlier faults are displayed by indexing using the UP key. The fault log can be navigated using the UP/DOWN\nkeys\n6.6.2\nEngineer's key parameter list\nNo.\nName\nDescription\nEK1\nLow Voltage Digital Input 1 (PA5-PA11)\nShows the state of each input.\nEK2\nLow Voltage Digital Input 2 (PA6-PA11)\nWhere:\nEK3\nLow Voltage Digital Input 3 (PA7-PA11)\n0 = OFF (Open circuit)\n1 = ON\nEK4\nLow Voltage Digital Input 4 (PA8-PA11)\nEK5\nLow Voltage 'HIGH' input (PA9-PA11)\nEK6\nLow Voltage 'AUTO input (P10-PA11)\nEK8\nProfile 1 Select - Line Voltage (PE9)\nEK9\nProfile 3 Select - Line Voltage (PE11)\nEK10\nProfile 2 Select - Line Voltage (PE10)\nEK11\nProfile 4 Select - Line Voltage (PE12)\n140",
+      "tablas": [
+        [
+          [
+            "No.",
+            "Name",
+            "Description"
+          ],
+          [
+            "EK1",
+            "Low Voltage Digital Input 1 (PA5-PA11)",
+            "Shows the state of each input."
+          ],
+          [
+            "EK2",
+            "Low Voltage Digital Input 2 (PA6-PA11)",
+            "Where:"
+          ],
+          [
+            "EK3",
+            "Low Voltage Digital Input 3 (PA7-PA11)",
+            "0 = OFF (Open circuit) 1 = ON"
+          ],
+          [
+            "EK4",
+            "Low Voltage Digital Input 4 (PA8-PA11)"
+          ],
+          [
+            "EK5",
+            "Low Voltage 'HIGH' input (PA9-PA11)"
+          ],
+          [
+            "EK6",
+            "Low Voltage 'AUTO input (P10-PA11)"
+          ],
+          [
+            "EK8",
+            "Profile 1 Select - Line Voltage (PE9)"
+          ],
+          [
+            "EK9",
+            "Profile 3 Select - Line Voltage (PE11)"
+          ],
+          [
+            "EK10",
+            "Profile 2 Select - Line Voltage (PE10)"
+          ],
+          [
+            "EK11",
+            "Profile 4 Select - Line Voltage (PE12)"
+          ]
+        ]
+      ]
+    }
+  ]
+}

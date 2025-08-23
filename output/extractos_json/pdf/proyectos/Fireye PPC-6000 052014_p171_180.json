@@ -1,0 +1,74 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p171_180",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nWhen comparing the values of efficiency displayed by the PPC6000 equipment and hand held equipment,\nfirst check that the following values are the same or very close:\n1) Inlet temperature.\n2) Flue gas temperature.\n3) Calorific value\n4) Hydro-carbon ratio.\n5) Oxygen value (after making correction for dry to wet on the hand held).\n6)\nSelection of net or gross.\n7) If a radiated heat loss value is being included ensure the hand held equipment has corrected the value\nfor the current firing rate of the burner.\nOther points to remember:\nIn a typical package boiler radiation losses are usually in the order of 3%, blow down losses typically 2% and\nflue gas losses 15% to 20%.\nGiving a typical overall efficiency of 100 - 3 - 2 - 20 = 75%.\nThe major area for attention to improve boiler efficiency is the flue gas losses, with the object of minimizing\nexcess air, within the bounds of safe and reliable boiler operation. O2 Trim is the best tool for ensuring\nconsistent optimum combustion and minimization of excess air.\nThe PPC6000 ensures consistent fuel: air ratios.\nThe Fireye O2 Trim option continuously compensates for changes that affect efficient combustion due to such\nvariables as: viscosity of liquid fuels, density of gaseous fuels, changes in temperature of fuels, changes in gas\nand oil pressures, worn and damaged burners, dirty burners, scaling if boiler tubes, ambient temperature,\nbarometric pressure and tramp air.\n171",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\n9.6 Typical Wiring Diagrams\nTypical Wiring Diagram / YB110\nPE\nIMPORTANT:\nLow Voltage (vertical terminal strips)\nAll low voltage circuits and communication wire must be fully shielded braided\ntype wire of the specified gauge and number of conductors. Table 2.6.1-A\nprovides the only approved wire for this application. No \"or equal\" is\nprovided. Use of wire not approved by Fireye may VOID warranty.\nAll wiring to terminal block \"PA\" & \"PB\" as well as to any optional daughter board\n(e.g. VSD) and the Power/CANbus wiring to the display, must be fully shielded\nbraided wire per Table 2.6.1-A.\nUnder no circumstances should these input/outputs be connected to mains\npotential. Connection of any voltage above 5 volts to these terminals will damage\nor destroy the unit.\nPPC6000\nTA\n24 VAC Sup.\n24 VAC Sup.\nCANOUS *\nCANOUS -\nD/A Input 1\nD/A Imput 2\nD/A Input 3\nD/A Input 4\nHigh Purge\nAuto\nConnon\nAnolog I/P\n0 VDC\nBurnerLogix\nX\n11\nCABLE CLAMP\nM\n3 L1\nM 8 D P\n₺\nPROFILE SELECT\n!\nPURGE POSITION PROVE\nIGNITION POSITION (L.F.S.) PROVE\nNON RECYCLE\nLIMITS\nO\nO\nBURNER\nSWITCH\nRECYCLE LIMITS\nCAUTION\nDue to the possibility\nof High Frequency\nelectrical noise, BOTH\nends of the shielded\nsignal wire to the VSD\nmust be grounded.\nALARM\n8A FUSE\n* Refer to bulletin BL-1001 for remaining BurnerLogix I/0 connections.\nA complete schematic can be found at http://fireve.net/pdf/JC1109.pdf.\n* * Note: PE7 and PE8 provide purge and low fire position signals to the flame\nsafeguard control. These outputs MUST NOT have a load greater than 30mA (i.e.\nrelays, lamp, etc.), damage to the PPC6000 will result.\n172",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\nTypical Wiring Diagram / E110\nIMPORTANT:\nLow Voltage (vertical terminal strips)\nAll low voltage circuits and communication wire must be fully shielded braided\ntype wire of the specified gauge and number of conductors. Table 2.6.1-A\nprovides the only approved wire for this application. No \"or equal\" is\nprovided. Use of wire not approved by Fireye may VOID warranty.\nAll wiring to terminal block \"PA\" & \"PB\" as well as to any optional daughter board\n(e.g. VSD) and the Power/CANbus wiring to the display, must be fully shielded\nbraided wire per Table 2.6.1-A.\nUnder no circumstances should these input/outputs be connected to mains\npotential. Connection of any voltage above 5 volts to these terminals will damage\nor destroy the unit.\nPPC6000\nTA\n24 VAC Sup.\n24 VAC Sup.\nCANOUS +\nCANbus -\nD/A Input 1\nD/A Input 2\nD/A Input 3\nD/A Input 4\nHigh Purge\nAuto\nCommon\nAnalog I/P\n0 VDC\nFlame Monitor\nX\n11\nCABLE CLAMP\nx\nM 8 D P 3\nLa\n13\nPROFILE SELECT\n!\nPURGE POSITION PROVE\nIGNITION POSITION (L.F.S.) PROVE\nCAUTION\nNON RECYCLE\nLIMITS\nO\nO\nBURNER\nSWITCH\nRECYCLE LIMITS\nDue to the\npossibility of High\nFrequency electrical\nnoise, BOTH ends of\nthe shielded signal\nwire to the VSD must\nbe grounded.\n₺\nALARM\n8A FUSE\n* Refer to bulletin E-1101 for remaining Flame Monitor I/0 connections.\nA complete schematic can be found at http://fireve.net/pdf/JC1109.pdf.\n* * Note: PE7 and PE8 provide purge and low fire position signals to the flame\nsafeguard control. These outputs MUST NOT have a load greater than 30mA (i.e.\nrelays, lamp, etc.), damage to the PPC6000 will result.\n173",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nNOTE: These templates should be measured for accuracy as distortion from printing may occur. See\nsection 2.0 for details.\nPPC 6000\n3.15\" (80 mm)\n)\nO\n0\n0\n6.26\"\n(159mm)\n0\n0\nD\n174",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\n175",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nNX600, NX610\n3 7/16\" (87 mm)\n4 1/8\"\n(105 mm)\n9 KEY DISPLAY\nPANEL CUT-OUT\n8 mm\n8 mm\nTEMPLATE: Remove to use\nNOTE: These templates should be measured for accuracy as distortion from printing may occur.\nSee section 2.0 for details.\n176",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\n177",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "TEMPLATE: Remove to use\nNOTE: These templates should be measured for accuracy as distortion from printing may occur. See section 2.0 for details.\n5.50\" (139.7mm)\n178\n4.058\"(103.1mm)\n$\nO2 INTERFACE\nMOUNTING\nTEMPLATE\n5.50\" (139.7mm)\nCONDUIT ENTRY\n.188\"(4.8mm)\nNX02INT\n4.925\" (125.1mm)\nfireye\n®",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\n9.7 Operator's Guide\n9.7.1\nIntroduction\nThis guide can be downloaded from the Fireye web site at www.Fireye.com. Search bulletins for NXOG-6001\nunder the Nexus products family.\nAs an operator there are generally only a few items of interest as far as operating the Nexus PPC6000. They\nare:\n· Setting the system's operating pressure or temperature.\n· Adjusting the cut in or cut out value.\n· Manually modulating the boiler.\n· Resetting the control after a safety shut down.\n. Finding the Fault that caused the shut down.\nAll of the other options and adjustments should be done by the combustion technician, as changes to certain parameters could result in an\nunsafe operating mode.\n9.7.2\nGeneral\nThe Nexus display and keypad allows the operator (or combustion technician) access to all setpoints and\noption parameters for commissioning and operating the Nexus PPC6000. The keys are labeled with their\nprimary function on the key, their secondary function under the key. E.g .: COM/ENTER.\nSeveral levels of passwords protect the integrity of the control. These passwords are numbers entered by\nusing the up/down arrow keys after pressing the COM (commissioning) key. To enter the password start by\npressing the COM (commissioning) key. You will have 30 seconds to reach the password value and press the\nENTER (COM) key.\n9.7.3\nPassword\nThe only password an operator should require is the \"site Passcode.\" This can be set as a number from 0-\n999. The factory default number is 154. The site Passcode can be changed if desired, however, this requires\nthe use of a higher-level Passcode.\nWarning: Should the Passcode be changed and forgotten, the PPC6000 will have to be reprogrammed\nby using the higher-level Passcode. Until then, no adjustments are possible.\nOperating Pressure - PID (setpoint) 1 or (2)*\n* NOTE: () Parentheses indicate setpoint 2 option parameter. E.g. Day/night.\nTo set or adjust the boiler's operating pressure follow steps 1 thru 7:\n1. Press the COM key.\n2. Use the UP key to raise the value to 154 (or new Site Passcode, if changed).\n3. Press the ENTER key. This is the same key as COM.\n4. If the display shows the angular positions of the servomotors, press the MODE key to change to\noption parameters. Using the up or down key move to OPTION 21.1 (22.1). This is the control\nvalue the Nexus will modulate the burner to maintain.\n179",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\n5. Use the left or right arrow key to move the cursor to the lower portion of the display, then using the\nup/down arrow key change the setting.\n6. Press the ENTER key to accept the new setpoint.\n7. To exit and return to the normal run mode, press the RUN key followed by the ENTER key.\nNote: The next time you enter the site password you will return to the last option selected.\n9.7.4 Adjusting Cut IN and Cut OUT\nFollow steps 1 through 3 above.\n4. If the display shows the angular positions of the servomotors, press the MODE key to change to\noption parameters. Using the up or down key, move to OPTION 21.6 (22.6) for Low Limit (Cut\nIn) or 21.7 (22.7) for High Limit (Cut Out). This is the control value the Nexus will start/stop the\nburner after reaching the cut in/out value. This value is a differential value when option parameter\n21.5 (22.5) is set at 2. That is, it is subtracted/added from/to the operating setpoint. Once set, this\nvalue will follow any change in the setpoint programmed in option 21.1 (22.1). These values are\nactual values if 21.5 (22.5) are set to 1. (see table below)\nOption parameter\n21.5 (22.5) value\nMeaning\n0\nNo limits. The burner will run until another method is used to switch\nit off.\n1\nAbsolute limit. The values entered in option parameters 21.6\n(22.6) and 21.7 (22.7) are the actual limit values.\n2\nDeviation limit. The values entered in option parameters 21.6\n(22.6) and 21.7 (22.7) represent a deviation (i.e. offset) from the\nsetpoint 1 control value. This means that if the setpoint control\nvalue is changed, the limits are automatically changed\ncorrespondingly.\n5. Use the left or right arrow key to move the cursor to the lower portion of the display then - using\nthe up/down arrow key, change the setting.\n6. Press the ENTER key to accept the new setpoint.\n7. To exit and return to the normal run mode press the RUN key followed by the ENTER key.\nDeviation Example - setting Opt 21.5 to 2\nTo maintain 100 psi on the boiler, cut out at 115 psi, cut in at 95 psi.\nNOTE: Opt 15.5 - Boiler High Safety Limit - If this option is set to a non-\nzero, exceeding this value causes a non-volatile lockout.\n180\nOpt 21.1 (22.1)*\nset to\n100 psi\nOpt 21.5\nset to\n2\nOpt 21.6 (22.6)*\nset to\n15\nOpt 21.7 (22.7)*\nset to\n5\nRESULTS:\nBoiler OFF (Cut Out) at ..\n115 psi\nBoiler ON (Cut In) at\n95 psi\nBoiler maintains (Setpoint).\n100 psi via PID\nChanging ONLY the Setpoint -\nOpt 21.1 (22.2)\nchange to\n60 psi\nNEW RESULTS from Setpoint Change:",
+      "tablas": [
+        [
+          [
+            "Option parameter 21.5 (22.5) value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "No limits. The burner will run until another method is used to switch it off."
+          ],
+          [
+            "1",
+            "Absolute limit. The values entered in option parameters 21.6 (22.6) and 21.7 (22.7) are the actual limit values."
+          ],
+          [
+            "2",
+            "Deviation limit. The values entered in option parameters 21.6 (22.6) and 21.7 (22.7) represent a deviation (i.e. offset) from the setpoint 1 control value. This means that if the setpoint control value is changed, the limits are automatically changed correspondingly."
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,834 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p81_90",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nVSD\nOption 09.2 - Inverter closed loop gain (15 - 125%) LV3\nDEFAULT: 100\nThis option parameter affects all inverters connected to the control.\nFor normal operation, use 100%. If the inverter control is unstable, reducing this value has the effect of\ndamping the inverter's response as its speed approaches its setpoint.\nVSD\nOption 09.3 - Inverter stop time (0 - 100 seconds) LV3\nDetermines the minimum time between a burner shutdown and subsequent startup. Set this parameter to give\nthe inverter sufficient time to stop before the burner restarts. This parameter will increase the time the burner is\nheld in status 5.\nVSD\nOption 09.4 - Inverter acceleration time (0-100 seconds) (60 seconds max.\nrecommended) LV3\nDEFAULT 30\nThe value entered for this parameter should be the time in seconds for the inverter(s) to move from minimum\nto maximum speed.\nThe inverter(s) should also be able to move from maximum to minimum speed in the same time, if this is not\nthe case adjust the time in the inverter(s) to ensure the time to accelerate and de-accelerate are the same.\nIf this option parameter does not match the true VSD acceleration / deceleration times, drive positioning will be\ncompromised and position faults will be likely.\nNote: This parameter can be set to values between 60 and 100, but this should only be used as a last resort if\nrequired, and is not recommended. If a very slow inverter is used, care must be taken during commissioning\nthat UP / DOWN keys are not held for more than a few seconds. It is possible that the control could get out of\nstep with the inverter and cause a position fault during the commission process. This control is not designed to\nwork with inverters that take more than 60 seconds to drive from zero to maximum speed.\nVSD\nOption 09.5 - VSD1 Speed Encoder Scaler (255 - 999) LV3\nWhen using encoder feedback for VSD1, this option should be programmed to ensure that the feedback signal\ngives between 950 and 995 when the motor is at maximum speed (drive signal at 20mA). The value for the\nparameter may be calculated using the following formula:\n(Motor Max RPM x No of teeth on encoder) = Scaler\n60\nThe value may need adjustment once the unit has been tested. Specifically, it must be ensured that the\nfeedback received never exceeds this value. In practice this may mean adding 2% to 5% to this value. See\nsection 9.2for more details.\n81",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nOption 09.6 - VSD2 Speed Encoder Scaler (255 - 999) LV3\nVSD\nWhen using encoder feedback for VSD2, this option should be programmed to ensure that the feedback signal\ngives between 950 and 995 when the motor is at maximum speed (drive signal at 20mA). The value for the\nparameter may be calculated using the following formula:\n(Motor Max RPM x No of teeth on encoder) = Scaler\n60\nThe value may need adjustment once the unit has been tested. Specifically, it must be ensured that the\nfeedback received never exceeds this value. In practice this may mean adding 2% to 5% to this value. See\nsection 9.2 for more details.\nOption 09.7 - Reserved\nOption 09.8 - Reserved\nOption 14.0 - Primary Fault Relay (0 - 8) LV3\nDEFAULT: Relay 4 (PD5)\nThis option parameter assigns the primary faults to a specific relay. Relays 2 & 3 share a common connection\non the NX610 display. NXTSD104 relays are independent.\nOption parameter 14.0\nvalue\nMeaning\nConnection Details NX610\n0\nPrimary faults not assigned to any relay.\nN/A\n1\nPrimary faults assigned to relay 1\nDisplay, PR3(COM), PR1(NC),\nPR2(NO). Low voltage or line voltage.\n2\nPrimary faults assigned to relay 2\nDisplay, PR7(COM), PR5(NC),\nPR6(NO). Low voltage or line voltage.\n3\nPrimary faults assigned to relay 3\nDisplay, PR7(COM), PR9(NC),\nPR8(NO). Low voltage or line voltage.\n4\nPrimary faults assigned to relay 4\nPPC6000, PE1(COM), PE4(NO).\nLow voltage or line voltage.\n5\nReserved for future expansion\nN/A\n6\nReserved for future expansion\nN/A\n7\nPrimary faults assigned to relay 7\nDaughterboard, PZ15 - PZ16. LOW\nVOLTAGE AND CURRENT ONLY.\n8\nPrimary faults assigned to relay 8\nDaughterboard, PZ17 - PZ18. LOW\nVOLTAGE AND CURRENT ONLY.\nThese relays MUST NOT be used to provide a safety function.\nA relay can be used to indicate any combination of fault conditions from 14.0, 14.1 and 14.2 - this means that\none relay could be used for all faults. When used for an alarm function, the relay will de-energize when in the\nfault condition, so an alarm bell would be wired in series with the normally closed contacts.\n82",
+      "tablas": [
+        [
+          [
+            "Option parameter 14.0 value",
+            "Meaning",
+            "Connection Details NX610"
+          ],
+          [
+            "0",
+            "Primary faults not assigned to any relay.",
+            "N/A"
+          ],
+          [
+            "1",
+            "Primary faults assigned to relay 1",
+            "Display, PR3(COM), PR1(NC), PR2(NO). Low voltage or line voltage."
+          ],
+          [
+            "2",
+            "Primary faults assigned to relay 2",
+            "Display, PR7(COM), PR5(NC), PR6(NO). Low voltage or line voltage."
+          ],
+          [
+            "3",
+            "Primary faults assigned to relay 3",
+            "Display, PR7(COM), PR9(NC), PR8(NO). Low voltage or line voltage."
+          ],
+          [
+            "4",
+            "Primary faults assigned to relay 4",
+            "PPC6000, PE1(COM), PE4(NO). Low voltage or line voltage."
+          ],
+          [
+            "5",
+            "Reserved for future expansion",
+            "N/A"
+          ],
+          [
+            "6",
+            "Reserved for future expansion",
+            "N/A"
+          ],
+          [
+            "7",
+            "Primary faults assigned to relay 7",
+            "Daughterboard, PZ15 - PZ16. LOW VOLTAGE AND CURRENT ONLY."
+          ],
+          [
+            "8",
+            "Primary faults assigned to relay 8",
+            "Daughterboard, PZ17 - PZ18. LOW VOLTAGE AND CURRENT ONLY."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\nOption 14.1 - Limit Relay (0 - 8) LV3\nDEFAULT: Relay 4 (PD5)\nThis option parameter assigns the limits to a specific relay. Relays 2 & 3 share a common connection on the\nNX610 display. NXTSD104 relays are independent.\nOption parameter 14.1\nvalue\nMeaning\nConnection Details NX610\n0\nLimits not assigned to any relay.\nN/A\n1\nLimits assigned to relay 1\nDisplay, PR3(COM), PR1(NC),\nPR2(NO). Low voltage or line voltage.\n2\nLimits assigned to relay 2\nDisplay, PR7(COM), PR5(NC),\nPR6(NO). Low voltage or line voltage.\n3\nLimits assigned to relay 3\nDisplay, PR7(COM), PR9(NC),\nPR8(NO). Low voltage or line voltage.\n4\nLimits assigned to relay 4\nPPC6000, PE1(COM), PE4(NO). Low\nvoltage or line voltage.\n5\nReserved for future expansion\nN/A\n6\nReserved for future expansion\nN/A\n7\nLimits assigned to relay 7\nDaughterboard, PZ15 - PZ16. LOW\nVOLTAGE AND CURRENT ONLY.\n8\nLimits assigned to relay 8\nDaughterboard, PZ17 - PZ18. LOW\nVOLTAGE AND CURRENT ONLY.\nThese relays MUST NOT be used to provide a safety function.\nA relay can be used to indicate any combination of fault conditions from 14.0, 14.1 and 14.2 - this means that\none relay could be used for all faults. When used for an alarm function, the relay will de-energize when in the\nfault condition, so an alarm bell would be wired in series with the normally closed contacts.\nOption 14.2 - Oxygen and Flue Temperature Limit Relay (0 - 8) LV3\nDEFAULT: Relay 4 (PD5)\nThis option parameter assigns the limits to a specific relay. Relays 2 & 3 share a common connection on the\nNX610 display. NXTSD104 relays are independent.\nOption parameter 14.2\nvalue\nMeaning\nConnection Details NX610\n0\nFlue Limits not assigned to any relay.\nN/A\n1\nFlue Limits assigned to relay 1\nDisplay, PR3(COM), PR1(NC),\nPR2(NO). Low voltage or line\nvoltage.\n2\nFlue Limits assigned to relay 2\nDisplay, PR7(COM), PR5(NC),\nPR6(NO). Low voltage or line\nvoltage.\n3\nFlue Limits assigned to relay 3\nDisplay, PR7(COM), PR9(NC),\nPR8(NO). Low voltage or line\nvoltage.\n4\nFlue Limits assigned to relay 4\nPPC6000, PE1(COM), PE4(NO).\nLow voltage or line voltage.\n5\nReserved for future expansion\nN/A\n6\nReserved for future expansion\nN/A.\n7\nFlue Limits assigned to relay 7\nDaughterboard, PZ15 - PZ16. LOW\nVOLTAGE AND CURRENT ONLY.\n8\nFlue Limits assigned to relay 8\nDaughterboard, PZ17 - PZ18. LOW\nVOLTAGE AND CURRENT ONLY.\n83",
+      "tablas": [
+        [
+          [
+            "Option parameter 14.1 value",
+            "Meaning",
+            "Connection Details NX610"
+          ],
+          [
+            "0",
+            "Limits not assigned to any relay.",
+            "N/A"
+          ],
+          [
+            "1",
+            "Limits assigned to relay 1",
+            "Display, PR3(COM), PR1(NC), PR2(NO). Low voltage or line voltage."
+          ],
+          [
+            "2",
+            "Limits assigned to relay 2",
+            "Display, PR7(COM), PR5(NC), PR6(NO). Low voltage or line voltage."
+          ],
+          [
+            "3",
+            "Limits assigned to relay 3",
+            "Display, PR7(COM), PR9(NC), PR8(NO). Low voltage or line voltage."
+          ],
+          [
+            "4",
+            "Limits assigned to relay 4",
+            "PPC6000, PE1(COM), PE4(NO). Low voltage or line voltage."
+          ],
+          [
+            "5",
+            "",
+            "Reserved for future expansion",
+            "N/A"
+          ],
+          [
+            "6",
+            "",
+            "Reserved for future expansion",
+            "N/A"
+          ],
+          [
+            "7",
+            "",
+            "Limits assigned to relay 7",
+            "Daughterboard, PZ15 - PZ16. LOW VOLTAGE AND CURRENT ONLY."
+          ],
+          [
+            "8",
+            "Limits assigned to relay 8",
+            "Daughterboard, PZ17 - PZ18. LOW VOLTAGE AND CURRENT ONLY."
+          ]
+        ],
+        [
+          [
+            "Option parameter 14.2 value",
+            "Meaning",
+            "Connection Details NX610"
+          ],
+          [
+            "0",
+            "Flue Limits not assigned to any relay.",
+            "N/A"
+          ],
+          [
+            "1",
+            "Flue Limits assigned to relay 1",
+            "Display, PR3(COM), PR1(NC), PR2(NO). Low voltage or line voltage."
+          ],
+          [
+            "2",
+            "Flue Limits assigned to relay 2",
+            "Display, PR7(COM), PR5(NC), PR6(NO). Low voltage or line voltage."
+          ],
+          [
+            "3",
+            "Flue Limits assigned to relay 3",
+            "Display, PR7(COM), PR9(NC), PR8(NO). Low voltage or line voltage."
+          ],
+          [
+            "4",
+            "Flue Limits assigned to relay 4",
+            "PPC6000, PE1(COM), PE4(NO). Low voltage or line voltage."
+          ],
+          [
+            "5",
+            "Reserved for future expansion",
+            "N/A"
+          ],
+          [
+            "6",
+            "Reserved for future expansion",
+            "N/A."
+          ],
+          [
+            "7",
+            "Flue Limits assigned to relay 7",
+            "Daughterboard, PZ15 - PZ16. LOW VOLTAGE AND CURRENT ONLY."
+          ],
+          [
+            "8",
+            "Flue Limits assigned to relay 8",
+            "Daughterboard, PZ17 - PZ18. LOW VOLTAGE AND CURRENT ONLY."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nA relay can be used to indicate any combination of fault conditions from 14.0, 14.1 and 14.2 - this means that\none relay could be used for all faults. When used for an alarm function, the relay will de-energize when in the\nfault condition, so an alarm bell would be wired in series with the normally closed contacts.\nPPC\nOption 15.0 - Modulation sensor input type (0 - 3) LV3\nThe modulation sensor input caters for connection to a standard 0-5V, 4-20mA signal or a Fireye fail-safe\npressure/temperature sensor. When using a Fireye fail safe sensor, the control may be used to monitor the\nboiler high safety limit and perform a non-volatile lockout if it is exceeded. Ensure that the links on the circuit\nboard are set to correspond with the requirements of the sensor/signal being used.\nIf a 4.20mA sensor (Fireye PXMSxxx) is used it is still possible to set a safety limit, but an external limit device\nmust be fitted to protect the boiler.\nOption parameter\n15.0 value\nMeaning\n0\n0 - 5V operation. Set the JP1 link to 'OUT'. Set the JP3 link as\nrequired. This option is used to provide a 0 to 5 volt tracking input only.\nThe burner modulation will track the voltage applied, going to high fire\nfor 5 volts. There is no 'measured value', just a tracking setpoint.\nOption parameters 15.0 to 15.5 are unavailable.\n1\n4 - 20mA operation. Set the JP1 link to 'IN'. Set the JP3 link to'30V'.\nThis option allows for connection to a 4 to 20mA pressure or\ntemperature sensor. The burner modulation will track the current\napplied, going to high fire for 20mA and low fire for 4mA. If the current\ngoes outside the range, the burner will go to low fire. There is no\n'measured value', just a tracking setpoint. Option parameters 15.1 to\n15.5 are unavailable.\n2\n4 - 20mA operation. Set the JP1 link to 'IN'. Set the JP3 link to'30V'.\nThis option allows for connection to a 4-20mA measured value input\ndevice such as a pressure or temperature sensor. The internal PID will\nbe used, if selected.\nOption 15.1 - Modulation input decimal places (0 to 2)\nThis parameter specified the number of decimal places to which the measured value and setpoint are\ndisplayed. It also affects the scaling of the zero, span and safety limit - it is vital that this parameter is set\nbefore parameters 15.2, 15,3 and 15.5\nOption parameter\n15.1 value\nMeaning\n0\nMeasure value and setpoint displayed with no decimal places. Range\nof values is from 000 to 999.\n1\nMeasure value and setpoint displayed with one decimal place. Range\nof values is from 00.0 to 99.9.\n2\nMeasure value and setpoint displayed with two decimal places. Range\nof values is from 0.00 to 9.99.\n84",
+      "tablas": [
+        [
+          [
+            "Option parameter 15.0 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "0 - 5V operation. Set the JP1 link to 'OUT'. Set the JP3 link as required. This option is used to provide a 0 to 5 volt tracking input only. The burner modulation will track the voltage applied, going to high fire for 5 volts. There is no 'measured value', just a tracking setpoint. Option parameters 15.0 to 15.5 are unavailable."
+          ],
+          [
+            "1",
+            "4 - 20mA operation. Set the JP1 link to 'IN'. Set the JP3 link to'30V'. This option allows for connection to a 4 to 20mA pressure or temperature sensor. The burner modulation will track the current applied, going to high fire for 20mA and low fire for 4mA. If the current goes outside the range, the burner will go to low fire. There is no 'measured value', just a tracking setpoint. Option parameters 15.1 to 15.5 are unavailable."
+          ],
+          [
+            "2",
+            "4 - 20mA operation. Set the JP1 link to 'IN'. Set the JP3 link to'30V'. This option allows for connection to a 4-20mA measured value input device such as a pressure or temperature sensor. The internal PID will be used, if selected."
+          ]
+        ],
+        [
+          [
+            "Option parameter 15.1 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "Measure value and setpoint displayed with no decimal places. Range of values is from 000 to 999."
+          ],
+          [
+            "1",
+            "Measure value and setpoint displayed with one decimal place. Range of values is from 00.0 to 99.9."
+          ],
+          [
+            "2",
+            "Measure value and setpoint displayed with two decimal places. Range of values is from 0.00 to 9.99."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nPPC\nOption 15.2 - Modulation input zero value (-999 to +999 / -99.9 to +99.9 / -9.99 to +9.99)\nLV3\nThis value will normally be left at zero. It is the measured value to be displayed when the sensor connected is\nat its minimum value.\nIf a 4-20mA sensor is used, this parameter should be set to the 4mA value (usually zero).\nNOTE: This option has been modified to allow for vacuum systems (available after June 2011).\nPPC\nOption 15.3 - Modulation input span value (-999 to +999 / -99.9 to +99.9 / -9.99 to +9.99)\nLV3\nThis value is the measured value to be displayed when the sensor connected is at its maximum value.\nIf a 4-20mA sensor is used, this parameter should be set to the 20mA value.\nNOTE: This option has been modified to allow for vacuum systems (available after June 2011).\nPPC\nOption 15.4 - Setpoint display units (0 - 3) LV3\nThis option selects the displayed units for setpoint and measured value.\nOption parameter\n15.4 value\nMeaning\n0\nShow measured value as 'PSI'.\n1\nShow measured value as 'bar'.\n2\nShow measured value as \"F'\n3\nShow measured value as \"℃'\n4\nShow measured value as '%'\n5\nShow measured value as 'no units'\nPPC\nOption 15.5 - Boiler high safety limit (0 - 999 / 0.0 - 99.9 / 0.00 - 9.99) LV3\nIf a 4-20mA sensor is used, and this parameter is set to a value other than zero, PPC6000 will lockout when\nthe value is exceeded. Note: When a 4-20mA sensor is used, external limits must be in place to protect\nthe boiler in case of sensor failure. Zero disables this parameter.\nOption 15.6 - Modulation Time (0 - 120 seconds) LV3\nThis option parameter sets the minimum time the burner will take to modulate from low to high fire or vice\nversa. Note - only the modulation speed in AUTO mode is affected. The burner may modulate slower than this\nsetting if the drive speeds dictate this at any point in the range.\n85",
+      "tablas": [
+        [
+          [
+            "Option parameter 15.4 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "Show measured value as 'PSI'."
+          ],
+          [
+            "1",
+            "Show measured value as 'bar'."
+          ],
+          [
+            "2",
+            "Show measured value as \"F'"
+          ],
+          [
+            "3",
+            "Show measured value as \"℃'"
+          ],
+          [
+            "4",
+            "Show measured value as '%'"
+          ],
+          [
+            "5",
+            "Show measured value as 'no units'"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nOption 15.7 - Bumpless Transfer (0 or 1) LV3\nThis parameter affects the burner operation while in MANUAL mode only.\nOption parameter\n15.7 value\nMeaning\n0\nWhen the burner comes back on after going off, it will remain at low fire.\n1\nWhen the burner comes back on after going off, it will go to the last\nmodulation rate that it was set to in manual mode and stay there.\nOption 15.8 - Low before Off (0 or 1) LV3\nWhen set to 1, this parameter will change the way a normal controlled shutdown works.\nOption parameter\n15.8 value\nMeaning\n0\nThe burner will turn off immediately when it is expected / required to.\n1\nThe burner will modulate down for up to 30 seconds (or until low fire is\nreached) and then turn off.\nNote: This function works for shutdowns caused by control limits for the currently selected setpoint and for\nshutdowns caused by option parameter 20.1 (aux shutdown) only. Lockouts / shutdowns caused by the alarm\ninputs in parameters 18.X will always work immediately.\nOption 15.9 - reserved\nOption 16.1 - Go back to pilot (0 to 15) LV3\nThis option allows a digital input to be configured to force the control to modulate down to low fire (if not\nalready there) and then move to the ignition position (P2) and close the main fuel valves. When at P2 the\nignition-prove output (LFS) comes on. The burner will continue to run with only the pilot on (in status 12) until\nthe digital input is removed. The ignition transformer will not come on during the time that the 'go back to pilot'\ninput is on, however it may come on briefly when the input is removed as part of the normal start-up\nprocedure, as determined by option parameter 14.6.\nThis function can be used to prevent the burner from having to go off when the demand is low, meaning that it\nis ready to immediately respond to a sudden increase in demand (no pre-purge required).\nThe digital input number to use for this function is entered as the option parameter value.\nNOTE: This option should only be used if the pilot is designed for continuous operation. Consult the\nburner manufacturer, national, state and local codes.\n86",
+      "tablas": [
+        [
+          [
+            "Option parameter 15.7 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "When the burner comes back on after going off, it will remain at low fire."
+          ],
+          [
+            "1",
+            "When the burner comes back on after going off, it will go to the last modulation rate that it was set to in manual mode and stay there."
+          ]
+        ],
+        [
+          [
+            "Option parameter 15.8 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "The burner will turn off immediately when it is expected / required to."
+          ],
+          [
+            "1",
+            "The burner will modulate down for up to 30 seconds (or until low fire is reached) and then turn off."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\nNumber entered in parameter 16.1\nDigital input used:\n0\nNone.\n1\nInput 1, PA5 to PA11 Low Voltage supplied from PA11 ONLY\n2\nInput 2, PA6 to PA11 Low Voltage supplied from PA11 ONLY\n3\nInput 3, PA7 to PA11 Low Voltage supplied from PA11 ONLY\n4\nInput 4, PA8 to PA11 Low Voltage supplied from PA11 ONLY\n5\nDo not use.\n6\nDo not use.\n7\nNot a real input. Used for custom applications.\n8\nNot a real input. Used for custom applications\n9\nNot a real input. Used for custom applications\n10\nNot a real input. Used for custom applications\n11\nNot a real input. Used for custom applications\n12\nNot a real input. Used for custom applications\n13\nNot a real input. Used for custom applications\n14\nNot a real input. Used for custom applications\n15\nNot a real input. Used for custom applications\nOption 16.2 - Allow profile swap (0 to 16) LV3\nThis option allows a digital input to be configured to allow a profile swap without turning the burner off. If this\ninput is ON and a fuel profile selection change is made, the control will go to low fire then back to pilot ignition\n(P2) on the original profile. It will then close the main fuel valves and run with just the pilot on (and the ignition\ntransformer if option parameter 14.6 is not set to 1). It will then move all drives to the P2 position of the new\nprofile and open the appropriate main fuel valves.\nThe digital input number to use for this function is entered as the option parameter value.\nNumber entered in parameter 16.1\nDigital input used:\n0\nNone.\n1\nInput 1, PA5 to PA11 Low Voltage supplied from PA11 ONLY\n2\nInput 2, PA6 to PA11 Low Voltage supplied from PA11 ONLY\n3\nInput 3, PA7 to PA11 Low Voltage supplied from PA11 ONLY\n4\nInput 4, PA8 to PA11 Low Voltage supplied from PA11 ONLY\n5\nDo not use.\n6\nDo not use.\n7\nNot a real input. Used for custom applications.\n8\nNot a real input. Used for custom applications\n9\nNot a real input. Used for custom applications\n10\nNot a real input. Used for custom applications\n11\nNot a real input. Used for custom applications\n12\nNot a real input. Used for custom applications\n13\nNot a real input. Used for custom applications\n14\nNot a real input. Used for custom applications\n15\nNot a real input. Used for custom applications\n87",
+      "tablas": [
+        [
+          [
+            "Number entered in parameter 16.1",
+            "Digital input used:"
+          ],
+          [
+            "0",
+            "None."
+          ],
+          [
+            "1",
+            "Input 1, PA5 to PA11 Low Voltage supplied from PA11 ONLY"
+          ],
+          [
+            "2",
+            "",
+            "Input 2, PA6 to PA11 Low Voltage supplied from PA11 ONLY"
+          ],
+          [
+            "3",
+            "",
+            "Input 3, PA7 to PA11 Low Voltage supplied from PA11 ONLY"
+          ],
+          [
+            "4",
+            "",
+            "Input 4, PA8 to PA11 Low Voltage supplied from PA11 ONLY"
+          ],
+          [
+            "5",
+            "",
+            "Do not use."
+          ],
+          [
+            "6",
+            "",
+            "Do not use."
+          ],
+          [
+            "7",
+            "Not a real input. Used for custom applications."
+          ],
+          [
+            "8",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "9",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "10",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "11",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "12",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "13",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "14",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "15",
+            "Not a real input. Used for custom applications"
+          ]
+        ],
+        [
+          [
+            "Number entered in parameter 16.1",
+            "Digital input used:"
+          ],
+          [
+            "0",
+            "None."
+          ],
+          [
+            "1",
+            "Input 1, PA5 to PA11 Low Voltage supplied from PA11 ONLY"
+          ],
+          [
+            "2",
+            "Input 2, PA6 to PA11 Low Voltage supplied from PA11 ONLY"
+          ],
+          [
+            "3",
+            "Input 3, PA7 to PA11 Low Voltage supplied from PA11 ONLY"
+          ],
+          [
+            "4",
+            "Input 4, PA8 to PA11 Low Voltage supplied from PA11 ONLY"
+          ],
+          [
+            "5",
+            "Do not use."
+          ],
+          [
+            "6",
+            "Do not use."
+          ],
+          [
+            "7",
+            "Not a real input. Used for custom applications."
+          ],
+          [
+            "8",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "9",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "10",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "11",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "12",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "13",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "14",
+            "Not a real input. Used for custom applications"
+          ],
+          [
+            "15",
+            "Not a real input. Used for custom applications"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\nOption 17.0 - Relay output function LV3\nThis option parameter assigns 'events' to the relay outputs. Set option parameter 17.1 to select the function for\nrelay output 1, option 17.2 to select the function for relay 2 etc.\nOption parameter\n17.x value\nMeaning\n0\nNo function set from this option parameter\n1\nDigital Input 1 (PB9 to PB10 Low Voltage)\n2\nDigital Input 2 (PB9 to PB11 Low Voltage)\n3\nDigital Input 3 (PB9 to PB12 Low Voltage)\n4\nDigital Input 4 (PB9 to PB13 Low Voltage)\n5\nDigital Input 5 (PB14 to PB15 Low Voltage)\n6\nDigital Input 6 (PB14 to PB16 Low Voltage)\n7\nDigital Input 7, (PB14 to PB17 Low Voltage)\n8\nDigital Input 8, (PB5 to PB6 Low Voltage)\n9\nDigital Input 9, (PB5 to PB7 Low Voltage)\n10\nProfile 2 select (PB6 - PB8) ONLY\n11\nProfile 4 select (PB7 - PB8) ONLY\n12\ni/p 12, PE4 to live High Voltage\n13\ni/p 13, PE5 to live High Voltage\n14\ni/p Burner Select (PE6)\n15\nAir Flow On\n16\nWarming limit exceeded\n17\nFlame Detected\n18\nBoiler Below Control Limit\n19\nGas Profile Selected (profile fires gas)\n20\nOil Profile Selected (profile fires oil)\n21\nController in 'Lockout'\n22\nBurner is Shutdown from a Limit or Input event\n23\nBurner on/off from the keypad (only applicable to touchscreen with NX6100)\n24\nN/A\n25\nBurner modulating\n26\nVSD Run\n27\nFan Run\n28\nGas booster function (ON status 6 to 16 inclusive if profile selected fires gas)\n29\nLockout or shutdown as selection 21 or 22.\n30\nDraft control relay (ON at status 15-18 inclusive)\n31\nProfile 1 selected - same as 8\n32\nProfile 3 selected - same as 9\n33\nProfile 2 selected - same as 10\n34\nProfile 4 selected - same as 11\n35\nSpare\n36\nSpare\n37\nSpare\n38\nBurner Available - ON unless locked out or held OFF by fault or burner select or\nkeypad is off.\n39\nPurging - burner status = 8\n(Firmware Version 1.204 and above)\n40\nPurge Complete - burner status = 9\n(Firmware Version 1.204 and above)\n41\nBurner NOT turned off from keyboard / touchscreen.\n42\nRelay de-energized\n43\nRelay on if in normal mode (inverse of 23). Relay off if in local mode, or control\npowered off.\n44\nRelay on if control is powered up.\n88",
+      "tablas": [
+        [
+          [
+            "Option parameter 17.x value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "No function set from this option parameter"
+          ],
+          [
+            "1",
+            "Digital Input 1 (PB9 to PB10 Low Voltage)"
+          ],
+          [
+            "2",
+            "Digital Input 2 (PB9 to PB11 Low Voltage)"
+          ],
+          [
+            "3",
+            "Digital Input 3 (PB9 to PB12 Low Voltage)"
+          ],
+          [
+            "4",
+            "Digital Input 4 (PB9 to PB13 Low Voltage)"
+          ],
+          [
+            "5",
+            "Digital Input 5 (PB14 to PB15 Low Voltage)"
+          ],
+          [
+            "6",
+            "Digital Input 6 (PB14 to PB16 Low Voltage)"
+          ],
+          [
+            "7",
+            "Digital Input 7, (PB14 to PB17 Low Voltage)"
+          ],
+          [
+            "8",
+            "Digital Input 8, (PB5 to PB6 Low Voltage)"
+          ],
+          [
+            "9",
+            "Digital Input 9, (PB5 to PB7 Low Voltage)"
+          ],
+          [
+            "10",
+            "Profile 2 select (PB6 - PB8) ONLY"
+          ],
+          [
+            "11",
+            "Profile 4 select (PB7 - PB8) ONLY"
+          ],
+          [
+            "12",
+            "i/p 12, PE4 to live High Voltage"
+          ],
+          [
+            "13",
+            "i/p 13, PE5 to live High Voltage"
+          ],
+          [
+            "14",
+            "i/p Burner Select (PE6)"
+          ],
+          [
+            "15",
+            "Air Flow On"
+          ],
+          [
+            "16",
+            "Warming limit exceeded"
+          ],
+          [
+            "17",
+            "Flame Detected"
+          ],
+          [
+            "18",
+            "Boiler Below Control Limit"
+          ],
+          [
+            "19",
+            "Gas Profile Selected (profile fires gas)"
+          ],
+          [
+            "20",
+            "Oil Profile Selected (profile fires oil)"
+          ],
+          [
+            "21",
+            "Controller in 'Lockout'"
+          ],
+          [
+            "22",
+            "Burner is Shutdown from a Limit or Input event"
+          ],
+          [
+            "23",
+            "Burner on/off from the keypad (only applicable to touchscreen with NX6100)"
+          ],
+          [
+            "24",
+            "N/A"
+          ],
+          [
+            "25",
+            "Burner modulating"
+          ],
+          [
+            "26",
+            "VSD Run"
+          ],
+          [
+            "27",
+            "Fan Run"
+          ],
+          [
+            "28",
+            "Gas booster function (ON status 6 to 16 inclusive if profile selected fires gas)"
+          ],
+          [
+            "29",
+            "Lockout or shutdown as selection 21 or 22."
+          ],
+          [
+            "30",
+            "Draft control relay (ON at status 15-18 inclusive)"
+          ],
+          [
+            "31",
+            "Profile 1 selected - same as 8"
+          ],
+          [
+            "32",
+            "Profile 3 selected - same as 9"
+          ],
+          [
+            "33",
+            "Profile 2 selected - same as 10"
+          ],
+          [
+            "34",
+            "Profile 4 selected - same as 11"
+          ],
+          [
+            "35",
+            "Spare"
+          ],
+          [
+            "36",
+            "Spare"
+          ],
+          [
+            "37",
+            "Spare"
+          ],
+          [
+            "38",
+            "Burner Available - ON unless locked out or held OFF by fault or burner select or keypad is off."
+          ],
+          [
+            "39",
+            "Purging - burner status = 8 (Firmware Version 1.204 and above)"
+          ],
+          [
+            "40",
+            "Purge Complete - burner status = 9 (Firmware Version 1.204 and above)"
+          ],
+          [
+            "41",
+            "Burner NOT turned off from keyboard / touchscreen."
+          ],
+          [
+            "42",
+            "Relay de-energized"
+          ],
+          [
+            "43",
+            "Relay on if in normal mode (inverse of 23). Relay off if in local mode, or control powered off."
+          ],
+          [
+            "44",
+            "Relay on if control is powered up."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\nOption parameter\n17.x value\nMeaning\n45\nRelay ON status 2 onwards and during lockout post-purge (Fan on if burner on or\nwaiting for burner select.)\n46\nBurner available. Relay on status 2 to 16 inclusive.\n47\nLow fire output.\n48\nHigh fire output.\n49 - 100\n+\n101 - 199\nFault numbers 1 - 99 control the relay\n200\nRelay de-energized\n201 - 250\nEK101 - EK150 control the relay\nDetails of the relay connection details are shown below. Relays 2 & 3 on the display share a common\nconnection and 4 & 5 on the PPC6000ler share a common connection. When used to indicate a fault or limit\nthe N/O contacts will be closed when NO alarm is present, to ensure the alarm indication is fail-safe, therefore\nalarm devices should be wired to the normally closed contacts.\nAbbreviations: Com .= Common, N.C. = normally closed, N.O. or N. Open = normally Open\nA) For NX610 - 9-key keypad, if set as Alarm, no alarm present, at power up, relays change state as follows ::\nNOTE: No connection to terminal 4 on NX610 display\nOption\nParameter Output\nRelay\nALARM Function Connection Detail for NX610 Only\n17.1\n1\nDisplay, Low or Line voltage\nPR1\nNormally Closed\nPR2\nNormally Open\nPR3\nCommon\n17.2\n2\nDisplay, Low or Line voltage.\nPR5\nNormally Closed\nPR6\nNormally Open\nPR7*\nCommon\n17.3\n3\nDisplay, Low or Line voltage\nPR7*\nCommon\nPR8\nNormally Open\nPR9\nNormally Closed\n17.4\n4\nPPC6000, PE1 PE4 Line voltage output ONLY\n17.5\n5\nN/A\n17.6\n6\nN/A\n17.7\n7\nNXDBVSD, PZ15, PZ16, Low voltage <50V AC/DC, 200mA\n17.8\n8\nNXDBVSD, PZ17, PZ18, Low voltage <50V AC/DC, 200mA\n17.9\n9\nAvailable on NXTSD104 Touchscreen display ONLY\n* common to relays 2 and 3\nB) For NX610, if set as General Purpose relay, connections are as follows ::\nNOTE: You MUST recycle power to reset relay function first\n89",
+      "tablas": [
+        [
+          [
+            "Option parameter 17.x value",
+            "Meaning"
+          ],
+          [
+            "45",
+            "Relay ON status 2 onwards and during lockout post-purge (Fan on if burner on or waiting for burner select.)"
+          ],
+          [
+            "46",
+            "Burner available. Relay on status 2 to 16 inclusive."
+          ],
+          [
+            "47",
+            "Low fire output."
+          ],
+          [
+            "48",
+            "High fire output."
+          ],
+          [
+            "49 - 100",
+            "+"
+          ],
+          [
+            "101 - 199",
+            "Fault numbers 1 - 99 control the relay"
+          ],
+          [
+            "200",
+            "Relay de-energized"
+          ],
+          [
+            "201 - 250",
+            "EK101 - EK150 control the relay"
+          ]
+        ],
+        [
+          [
+            "Option Parameter",
+            "Output Relay",
+            "ALARM Function Connection Detail for NX610 Only"
+          ],
+          [
+            "17.1",
+            "1",
+            "Display, Low or Line voltage",
+            "PR1 Normally Closed"
+          ],
+          [
+            "PR2 Normally Open"
+          ],
+          [
+            "PR3 Common"
+          ],
+          [
+            "17.2",
+            "2",
+            "Display, Low or Line voltage.",
+            "PR5 Normally Closed"
+          ],
+          [
+            "",
+            "PR6 Normally Open"
+          ],
+          [
+            "",
+            "PR7* Common"
+          ],
+          [
+            "17.3",
+            "3",
+            "Display, Low or Line voltage",
+            "PR7* Common"
+          ],
+          [
+            "PR8 Normally Open"
+          ],
+          [
+            "PR9 Normally Closed"
+          ],
+          [
+            "17.4",
+            "4",
+            "PPC6000, PE1 PE4 Line voltage output ONLY"
+          ],
+          [
+            "17.5",
+            "5",
+            "N/A"
+          ],
+          [
+            "17.6",
+            "6",
+            "N/A"
+          ],
+          [
+            "17.7",
+            "7",
+            "NXDBVSD, PZ15, PZ16, Low voltage <50V AC/DC, 200mA"
+          ],
+          [
+            "17.8",
+            "8",
+            "NXDBVSD, PZ17, PZ18, Low voltage <50V AC/DC, 200mA"
+          ],
+          [
+            "17.9",
+            "9",
+            "Available on NXTSD104 Touchscreen display ONLY"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\nOption\nParameter\nRelay\nOutput\nGENERAL PURPOSE Connection Detail for NX610 Only\n17.1\n1\nDisplay, Low or Line voltage\nPR1\nNormally Open\nPR2\nNormally Closed\nPR3\nCommon\n17.2\n2\nDisplay, Low or Line voltage\nPR5\nNormally Open\nPR6\nNormally Closed\nPR7*\nCommon\n17.3\n3\nDisplay, Low or Line voltage.\nPR7*\nCommon\nPR8\nNormally Closed\nPR9\nNormally Open\n17.4\n4\nPPC6000, PE1 PE4 Line voltage output ONLY\n17.5\n5\nN/A\n17.6\n6\nN/A\n17.7\n7\nNXDBVSD, PZ15, PZ16, Low voltage <50V AC/DC, 200mA\n17.8\n8\nNXDBVSD, PZ17, PZ18, Low voltage <50V AC/DC, 200mA\n17.9\n9\nAvailable on NXTSD104 Touchscreen display ONLY\n* common to relays 2 and 3\nFor Example:\nIf you want an indicator light to illuminate when the warming limit is exceeded (released to\nmodulate) -\n1. Use one of the three display relays - for this example #1\n2. Set 17.1 (for relay 1) to 16 (value for warming limit exceeded)\n3. The contacts between PR3 and PR2 close when this is true.\nL1\nPR3\nPR1\nL2\nLight\nWarming Limit Exceeded\nAbbreviations: Com .=\nN.O. or N. Open = normally Open\nCommon, N.C. = normally closed,\nC) For NXTSD104, if set as Alarm, no alarm present, at power up, relays change state as follows ::\n90",
+      "tablas": [
+        [
+          [
+            "Option Parameter",
+            "Relay Output",
+            "GENERAL PURPOSE Connection Detail for NX610 Only"
+          ],
+          [
+            "17.1",
+            "1",
+            "Display, Low or Line voltage",
+            "PR1 Normally Open"
+          ],
+          [
+            "PR2 Normally Closed"
+          ],
+          [
+            "PR3 Common"
+          ],
+          [
+            "17.2",
+            "2",
+            "Display, Low or Line voltage",
+            "PR5 Normally Open"
+          ],
+          [
+            "PR6 Normally Closed"
+          ],
+          [
+            "PR7* Common"
+          ],
+          [
+            "17.3",
+            "3",
+            "Display, Low or Line voltage.",
+            "PR7* Common"
+          ],
+          [
+            "PR8 Normally Closed"
+          ],
+          [
+            "PR9 Normally Open"
+          ],
+          [
+            "17.4",
+            "4",
+            "PPC6000, PE1 PE4 Line voltage output ONLY"
+          ],
+          [
+            "17.5",
+            "5",
+            "N/A"
+          ],
+          [
+            "17.6",
+            "6",
+            "N/A"
+          ],
+          [
+            "17.7",
+            "7",
+            "NXDBVSD, PZ15, PZ16, Low voltage <50V AC/DC, 200mA"
+          ],
+          [
+            "17.8",
+            "8",
+            "NXDBVSD, PZ17, PZ18, Low voltage <50V AC/DC, 200mA"
+          ],
+          [
+            "17.9",
+            "9",
+            "Available on NXTSD104 Touchscreen display ONLY"
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p91_100",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nOption\nParameter Output\nRelay\nALARM Function Connection Detail for NXTSD104 Only\n17.1\n1\nDisplay, Low or Line voltage\nPR1\nCommon\nPR2\nNormally Open\nPR3\nNormally Closed\n17.2\n2\nDisplay, Low or Line voltage\nPR4\nCommon\nPR5\nNormally Open\nPR6\nNormally Closed\n17.3\n3\nDisplay, Low or Line voltage\nPR7\nCommon\nPR8\nNormally Open\nPR9\nNormally Closed\n17.4\n4\nPPC6000, PE1 PE4 Line voltage output ONLY\n17.5\n5\nN/A\n17.6\n6\nN/A\n17.7\n7\nNXDBVSD, PZ15, PZ16, Low voltage <50V AC/DC, 200mA\n17.8\n8\nNXDBVSD, PZ17, PZ18, Low voltage <50V AC/DC, 200mA\n17.9\n9\nAvailable on NXTSD104 display ONLY\nPR10\nCommon\nPR11\nNormally Open\nPR12\nNormally Closed\nD) For NXTSD104, if set as General Purpose relay, connections are as follows:\nNOTE: If any relay has been previously selected for alarm purpose, power MUST be recycled to\nreset the relay AFTER changing that relay to general purpose.\nOption\nParameter\nRelay\nOutput\nGENERAL PURPOSE Connection Detail for NXTSD104 Only\n17.1\n1\nDisplay, Low or Line voltage\nPR1\nCommon\nPR2\nNormally Closed\nPR3\nNormally Open\n17.2\n2\nDisplay, Low or Line voltage\nPR4\nCommon\nPR5\nNormally Closed\nPR6\nNormally Open\n17.3\n3\nDisplay, Low or Line voltage\nPR7\nCommon\nPR8\nNormally Closed\nPR9\nNormally Open\n17.4\n4\nPPC6000, PE1 PE4 Line voltage output ONLY\n17.5\n5\nN/A\n17.6\n6\nN/A\n17.7\n7\nNXDBVSD, PZ15, PZ16, Low voltage <50V AC/DC, 200mA\n17.8\n8\nNXDBVSD, PZ17, PZ18, Low voltage <50V AC/DC, 200mA\n17.9\n9\nAvailable on NXTSD104 display ONLY\nPR10\nCommon\nPR11\nNormally Closed\nPR12\nNormally Open\nOption 18.1 to 18.4 - Low Voltage Fail-safe Alarm / Lockout Inputs (0 - 460) LV3\nThese functions are all fail-safe and may be used to lockout or shutdown the burner.\nThe fault number generated always relates directly to the input that caused the fault (by going open circuit).\nThus F1 references input 1, F4 references input 4.\nThe lockout functions themselves are activated by putting a number into option parameters 18.1 to 18.4 for\ninputs 1 to 4. The number is a one, two or three digit number defined as follows (zero gives no function).\n91",
+      "tablas": [
+        [
+          [
+            "Option Parameter",
+            "Output Relay",
+            "ALARM Function Connection Detail for NXTSD104 Only"
+          ],
+          [
+            "17.1",
+            "1",
+            "Display, Low or Line voltage",
+            "PR1",
+            "Common"
+          ],
+          [
+            "PR2",
+            "Normally Open"
+          ],
+          [
+            "PR3 Normally Closed"
+          ],
+          [
+            "17.2",
+            "2",
+            "Display, Low or Line voltage",
+            "PR4 Common"
+          ],
+          [
+            "PR5",
+            "Normally Open"
+          ],
+          [
+            "PR6 Normally Closed"
+          ],
+          [
+            "17.3",
+            "3",
+            "Display, Low or Line voltage",
+            "PR7 Common"
+          ],
+          [
+            "PR8",
+            "Normally Open"
+          ],
+          [
+            "PR9",
+            "Normally Closed"
+          ],
+          [
+            "17.4",
+            "4",
+            "PPC6000, PE1 PE4 Line voltage output ONLY"
+          ],
+          [
+            "17.5",
+            "5",
+            "N/A"
+          ],
+          [
+            "17.6",
+            "6",
+            "N/A"
+          ],
+          [
+            "17.7",
+            "7",
+            "NXDBVSD, PZ15, PZ16, Low voltage <50V AC/DC, 200mA"
+          ],
+          [
+            "17.8",
+            "8",
+            "NXDBVSD, PZ17, PZ18, Low voltage <50V AC/DC, 200mA"
+          ],
+          [
+            "17.9",
+            "9",
+            "Available on NXTSD104 display ONLY PR10 Common PR11 Normally Open PR12 Normally Closed"
+          ]
+        ],
+        [
+          [
+            "Option Parameter",
+            "Relay Output",
+            "GENERAL PURPOSE Connection Detail for NXTSD104 Only"
+          ],
+          [
+            "17.1",
+            "1",
+            "Display, Low or Line voltage PR1 Common PR2 Normally Closed PR3 Normally Open"
+          ],
+          [
+            "17.2",
+            "2",
+            "Display, Low or Line voltage PR4 Common PR5 Normally Closed PR6 Normally Open"
+          ],
+          [
+            "17.3",
+            "3",
+            "Display, Low or Line voltage PR7 Common PR8 Normally Closed PR9 Normally Open"
+          ],
+          [
+            "17.4",
+            "4",
+            "PPC6000, PE1 PE4 Line voltage output ONLY"
+          ],
+          [
+            "17.5",
+            "5",
+            "N/A"
+          ],
+          [
+            "17.6",
+            "6",
+            "N/A"
+          ],
+          [
+            "17.7",
+            "7",
+            "NXDBVSD, PZ15, PZ16, Low voltage <50V AC/DC, 200mA"
+          ],
+          [
+            "17.8",
+            "8",
+            "NXDBVSD, PZ17, PZ18, Low voltage <50V AC/DC, 200mA"
+          ],
+          [
+            "17.9",
+            "9",
+            "Available on NXTSD104 display ONLY PR10 Common PR11 Normally Closed PR12 Normally Open"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nNOTE: In order to enable any Digital Input, a value greater than 0 MUST be entered in one of the three\ncolumns.\nHUNDREDS\n(fault type)\nTENS\n(fuel type)\nUNITS\n(burner status type)\n0 - This alarm will lockout the\nburner and shows on the display\nas 'FXX'. Manual intervention\n(fault mute) is required to restart\nthe burner once the fault\ncondition has cleared. The\nburner will lockout within one\nsecond.\n0 or 1 - Fault will be active for\nany fuel selection (including\nno fuel selected at all).\n0 or 1 - Fault will be active\nregardless of the current\nburner status (i.e. all the\ntime).\n1 - This alarm will shutdown the\nburner and show on the display\nas 'FXX'. When the fault\ncondition clears, this fault will\nchange to 'CXX' and the burner\nwill restart without manual\nintervention. The burner will\nshutdown within one second.\n2 - Fault will be active only\nwhen the currently selected\nprofile fires GAS.\n2 - Fault will be active after\nthe fan has started, the air\npressure switch has made\nand the drives have made\ntheir purge positions (i.e.\nonce pre-purge starts). Not\nactive during post purge.\n2 - This alarm is for indication\nonly. It will appear on the\ndisplay as 'LXX' but will not stop\nthe burner operating. The limit\nwill operate within three\nseconds.\n3 - Fault will be active only\nwhen the currently selected\nprofile fires OIL.\n3 - Fault will be active after\npre-purge has finished (i.e.\ndrives moving to the ignition\nposition). Not active during\npost purge.\n3 - This operates the same as\nselection 1 in this column, but\nthe fault will be generated when\nthe input closes. This should not\nbe used for any safety function\nbecause if the wire breaks, it\ncannot be detected.\n4 - Fault will be active only\nwhen there is a fuel profile\ncurrently selected (either\nfiring GAS or OIL).\n4 - Fault will be active after\npilot ignition has started\n(status 11 onwards). Not\nactive during post purge.\n4 - This alarm will shutdown the\nburner and show on the display\nas 'FXX'. When the fault\ncondition clears, this fault will\nchange to 'CXX' and the burner\nwill restart without manual\nintervention. The burner will\nshutdown within three seconds.\nAll other values will work like\nselection 1 (including zero). 5\nto 9 are spare so new\nfunctions can be added later.\n5 - Fault will be active after\nmain ignition has started\n(status 13 onwards). Not\nactive during post purge.\n5 to 9 are spare and can't be\nselected.\n6 - Fault will be active after\nthe drives have reached their\nlow fire positions and the\nburner is ready to modulate\n(status 16). Not active during\npost purge.\n7 -- fault activates at ignition\nonly (status 10 to 14\ninclusive)\ncontinued on next page\n92",
+      "tablas": [
+        [
+          [
+            "HUNDREDS (fault type)",
+            "",
+            "TENS (fuel type)",
+            "",
+            "UNITS (burner status type)"
+          ],
+          [
+            "0 - This alarm will lockout the burner and shows on the display as 'FXX'. Manual intervention (fault mute) is required to restart the burner once the fault condition has cleared. The burner will lockout within one second.",
+            "",
+            "0 or 1 - Fault will be active for any fuel selection (including no fuel selected at all).",
+            "",
+            "0 or 1 - Fault will be active regardless of the current burner status (i.e. all the time)."
+          ],
+          [
+            "1 - This alarm will shutdown the burner and show on the display as 'FXX'. When the fault condition clears, this fault will change to 'CXX' and the burner will restart without manual intervention. The burner will shutdown within one second.",
+            "",
+            "2 - Fault will be active only when the currently selected profile fires GAS.",
+            "2 - Fault will be active after the fan has started, the air pressure switch has made and the drives have made their purge positions (i.e. once pre-purge starts). Not active during post purge."
+          ],
+          [
+            "2 - This alarm is for indication only. It will appear on the display as 'LXX' but will not stop the burner operating. The limit will operate within three seconds.",
+            "3 - Fault will be active only when the currently selected profile fires OIL.",
+            "3 - Fault will be active after pre-purge has finished (i.e. drives moving to the ignition position). Not active during post purge."
+          ],
+          [
+            "3 - This operates the same as selection 1 in this column, but the fault will be generated when the input closes. This should not be used for any safety function because if the wire breaks, it cannot be detected.",
+            "",
+            "4 - Fault will be active only when there is a fuel profile currently selected (either firing GAS or OIL).",
+            "4 - Fault will be active after pilot ignition has started (status 11 onwards). Not active during post purge."
+          ],
+          [
+            "4 - This alarm will shutdown the burner and show on the display as 'FXX'. When the fault condition clears, this fault will change to 'CXX' and the burner will restart without manual intervention. The burner will shutdown within three seconds.",
+            "",
+            "All other values will work like selection 1 (including zero). 5 to 9 are spare so new functions can be added later.",
+            "",
+            "5 - Fault will be active after main ignition has started (status 13 onwards). Not active during post purge."
+          ],
+          [
+            "5 to 9 are spare and can't be selected.",
+            "",
+            "",
+            "",
+            "6 - Fault will be active after the drives have reached their low fire positions and the burner is ready to modulate (status 16). Not active during post purge."
+          ],
+          [
+            "7 -- fault activates at ignition only (status 10 to 14 inclusive)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "HUNDREDS\n(fault type)\nTENS\n(fuel type)\n®\nfireye\nUNITS\n(burner status type)\n8 - fault activates at pre-purge\nonly (status 8)\nAll other values will work like\nselection 1 (including zero). 7\nto 9 are spare so new\nfunctions can be added later.\nNOTE: In order to enable any Digital Input, a value greater than 0 MUST be entered in one of the three\ncolumns.\nOption\nparameter\nnumber\nDigital Input Number / Terminals\nFault number\n18.1\nInput 1 - PA5 to PA11 LOW VOLTAGE supplied from PA11 ONLY\nF1 or L1\n18.2\nInput 2 - PA6 to PA11 LOW VOLTAGE supplied from PA11 ONLY\nF2 or L2\n18.3\nInput 3 - PA7 to PA11 LOW VOLTAGE supplied from PA11 ONLY\nF3 or L3\n18.4\nInput 4 - PA8 to PA11 LOW VOLTAGE supplied from PA11 ONLY\nF4 or L4\nOption 19.1 to 19.4 - Fail-safe Alarm / Lockout Display Messages LV3\nThe lockout functions are completely separate from the lockout messages. The messages are chosen from a\nlist of 32 possible items using option parameters 19.1 to 19.4 (for inputs 1 to 4) and option parameters 16.5 &\n16.6 for the high voltage inputs (12 & 13). These are the default messages, but at least some of them can be\nmodified using serial communications and a PC.\nOption parameter\n19.X (or 16.5 / 16.6)\nvalue\nMeaning\n0\nAlarm Input Open\n1\nLow Water\n2\nExtra Low Water\n3\nHigh Water\n4\nHigh Gas Pressure\n5\nLow Gas Pressure\n6\nHigh Oil Pressure\n7\nLow Oil Pressure\n8\nHigh Oil Temp.\n9\nLow Oil Temp.\n10\nLow Atom. Media\n11\nHigh Temperature\n12\nLow Temperature\n13\nHigh Pressure\n14\nLow Pressure\n15\nPanel Switch Open\n16\nHigh Stack Temp.\n17\nFan Interlock\n18\nEnd Switch Open\n19\nOil Interlock\n20\nGas Interlock\n21\nForced Lockout\n22\nHigh High Water\n23\nOilGun Interlock\n93",
+      "tablas": [
+        [
+          [
+            "Option parameter number",
+            "Digital Input Number / Terminals",
+            "Fault number"
+          ],
+          [
+            "18.1",
+            "Input 1 - PA5 to PA11 LOW VOLTAGE supplied from PA11 ONLY",
+            "F1 or L1"
+          ],
+          [
+            "18.2",
+            "Input 2 - PA6 to PA11 LOW VOLTAGE supplied from PA11 ONLY",
+            "F2 or L2"
+          ],
+          [
+            "18.3",
+            "Input 3 - PA7 to PA11 LOW VOLTAGE supplied from PA11 ONLY",
+            "F3 or L3"
+          ],
+          [
+            "18.4",
+            "Input 4 - PA8 to PA11 LOW VOLTAGE supplied from PA11 ONLY",
+            "F4 or L4"
+          ]
+        ],
+        [
+          [
+            "Option parameter 19.X (or 16.5 / 16.6) value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "Alarm Input Open"
+          ],
+          [
+            "1",
+            "Low Water"
+          ],
+          [
+            "2",
+            "Extra Low Water"
+          ],
+          [
+            "3",
+            "High Water"
+          ],
+          [
+            "4",
+            "High Gas Pressure"
+          ],
+          [
+            "5",
+            "Low Gas Pressure"
+          ],
+          [
+            "6",
+            "High Oil Pressure"
+          ],
+          [
+            "7",
+            "Low Oil Pressure"
+          ],
+          [
+            "8",
+            "High Oil Temp."
+          ],
+          [
+            "9",
+            "Low Oil Temp."
+          ],
+          [
+            "10",
+            "Low Atom. Media"
+          ],
+          [
+            "11",
+            "High Temperature"
+          ],
+          [
+            "12",
+            "Low Temperature"
+          ],
+          [
+            "13",
+            "High Pressure"
+          ],
+          [
+            "14",
+            "Low Pressure"
+          ],
+          [
+            "15",
+            "Panel Switch Open"
+          ],
+          [
+            "16",
+            "High Stack Temp."
+          ],
+          [
+            "17",
+            "Fan Interlock"
+          ],
+          [
+            "18",
+            "End Switch Open"
+          ],
+          [
+            "19",
+            "Oil Interlock"
+          ],
+          [
+            "20",
+            "Gas Interlock"
+          ],
+          [
+            "21",
+            "Forced Lockout"
+          ],
+          [
+            "22",
+            "High High Water"
+          ],
+          [
+            "23",
+            "OilGun Interlock"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nOption parameter\n19.X (or 16.5 / 16.6)\nvalue\nMeaning\n24\nLow Draft\n25\nBurnerDoorSwitch\n26\nEmergency Stop\n27\nExitDamperClosed\n28 to 31\n(spare)\n!\nCAUTION\n. The product allows for customization of various non-safety critical functions\nincluding the modulation control. The option parameters shown below relate to\nthe default modulation control function programmed in the control at the factory.\nTo verify this has not been replaced by an application specific function check with\nthe equipment supplier and / or check option parameter 00.4, if available.\nOption 20.0 - Set-point Select input (0 - 35) LV3\nThis option parameter allows for a digital input to be used to select between modulation setpoint sets 1 and 2\n(see option parameters 21.0 and 22.0.\n(1 - 4)\nOpen = Setpoint 1, Closed = Setpoint 2\n(16 or 20) Permanently Closed = Setpoint 2\n(21 - 24)\nClosed = Setpoint 1, Open = Setpoint 2\nNOTE: Options 20.0 to 20.6 and 20.8 have two operational modes. In one case\na \"high,\" level or voltage present, as would be the case of a closed switch, will\nresult in the action specified. In the other case, a \"low\" level or open switch\nwould cause the action specified.\nFor example:\n> If option 20.1 [boiler shut down] is wired to input 2 (low voltage PA6-PA11)\nand programmed as 20.1 = 2, the boiler would stay off as long as the\nswitch is closed. In this case if the wire fell off, the boiler would START.\n> To reverse this function, option 20.1 would be set as 20.1 = 22. This would\nrequire the switch be closed to start the boiler. In this case, if the wire fell\noff, the boiler would SHUT DOWN.\nThe table below indicates the value for each of these inputs to affect the desired\ncondition.\nPlease consider the \"broken wire\" condition when programming these options.\n94",
+      "tablas": [
+        [
+          [
+            "Option parameter 19.X (or 16.5 / 16.6) value",
+            "Meaning"
+          ],
+          [
+            "24",
+            "Low Draft",
+            ""
+          ],
+          [
+            "25",
+            "BurnerDoorSwitch"
+          ],
+          [
+            "26",
+            "Emergency Stop"
+          ],
+          [
+            "27",
+            "ExitDamperClosed"
+          ],
+          [
+            "28 to 31",
+            "(spare)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nOption Table 20.0 A\nDigital Input Numbers\nInput CLOSED\nPowered ON\nDigital input used:\nDigital Input Numbers\nInput OPEN\nPowered OFF\n0\nNone. Input disabled.\n20\n1\nInput 1, PA5 to PA11 LOW VOLTAGE\nsupplied from PA11 ONLY\n21\n2\nInput 2, PA6 to PA11 LOW VOLTAGE\nsupplied from PA11 ONLY\n22\n3\nInput 3, PA7 to PA11 LOW VOLTAGE\nsupplied from PA11 ONLY\n23\n4\nInput 4, PA8 to PA11 LOW VOLTAGE\nsupplied from PA11 ONLY\n24\nOption 20.1 - Boiler Shutdown input (0 - 35). LV3\n(1 - 4)\nA high level on the input specified here will cause the boiler to go off and stay off until it is\nremoved. No fault / alarm is generated.\n(16 or 20)\nWill cause the burner to SHUT OFF permanently. Should NOT be used.\n(21 - 24)\nA low level on the input specified here will cause the boiler to go off and stay off until it is switched\nhigh (ON). No fault / alarm is generated.\nThe input numbers are as specified in Option Table 20.0 A above. This is useful when integration to a building\nmanagement system is required.\nOption 20.2 - Low Fire Hold input (0 - 35). LV3\n(1 - 4)\nA high level on the input specified here will cause the boiler to go to low fire and stay there until it\nis removed.\n(16 or 20) Should NOT be used.\n(21 - 24)\nA low level on the input specified here will cause the boiler to go to low fire and stay there until it is\nswitched high (ON).\nThe input numbers are as specified in Option Table 20.0 A above.\nOption 20.3 - Oxygen Trim Disable input (0 - 35). LV3\n(1 - 4)\nA high level on the input specified here will cause the oxygen trim function to switch off (if it is\nselected) until it is removed.\n(16 or 20)\nShould NOT be used.\n(21 - 24)\nA low level on the input specified here will cause the oxygen trim function to switch off (if it is\nselected) until it is switched high (ON).\nThe input numbers are as specified in Option Table 20.0 A above. See option parameter 30.5.\n95",
+      "tablas": [
+        [
+          [
+            "Digital Input Numbers Input CLOSED Powered ON",
+            "Digital input used:",
+            "Digital Input Numbers Input OPEN Powered OFF"
+          ],
+          [
+            "0",
+            "None. Input disabled.",
+            "20"
+          ],
+          [
+            "1",
+            "Input 1, PA5 to PA11 LOW VOLTAGE supplied from PA11 ONLY",
+            "21"
+          ],
+          [
+            "2",
+            "Input 2, PA6 to PA11 LOW VOLTAGE supplied from PA11 ONLY",
+            "22"
+          ],
+          [
+            "3",
+            "Input 3, PA7 to PA11 LOW VOLTAGE supplied from PA11 ONLY",
+            "23"
+          ],
+          [
+            "4",
+            "Input 4, PA8 to PA11 LOW VOLTAGE supplied from PA11 ONLY",
+            "24"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nOption 20.4 - Ignition Wait input (0 - 35). LV3\n(1 - 4)\nA high level on the input specified here will prevent the burner from igniting. The drives stay at\ntheir ignition positions, but the light up sequence will not start until this input is removed.\n(16 or 20)\nShould NOT be used.\n(21 - 24)\nA low level on the input specified here will prevent the burner from igniting. The drives stay at their\nignition positions, but the light up sequence will not start until this input is switched high (ON).\nThe input numbers are as specified in Option Table 20.0 A above.\nOption 20.5 - Purge Hold input (0 - 35). LV3\n(1 - 4)\nA high level on the input specified here will prevent the burner moving on past pre-purge. The\ndrives stay at their purge positions, until this input is removed.\n(16 or 20)\nShould NOT be used.\n(21 - 24) A low level on the input specified here will prevent the burner moving on past pre-purge. The\ndrives stay at their purge positions, until this input is switched high (ON).\nThe input numbers are as specified in Option Table 20.0 A above.\nOption 20.6 - Purge Time Start input (0 - 35). LV3\n(1 - 4)\nA high level on the input specified here will prevent the pre-purge time from starting. The drives\nstay at their purge positions, until this input is removed and the specified pre-purge time has\nelapsed.\n(16 or 20) Should NOT be used.\n(21 - 24)\nA low level on the input specified here will prevent the pre-purge time from starting. The drives\nstay at their purge positions, until this input is switched high (ON) and the specified pre-purge time\nhas elapsed.\nThe input numbers are as specified in Option Table 20.0 A above.\nOption 20.7 - Analog Input 5 function (0 - 2). LV3\nThis parameter allows analog input 5 (the second modulation input PA12 and PA13 to perform specific\nfunctions.\nOption parameter\n20.7 Value\nDigital input used:\n0\nThis input does nothing.\n1\nRemote tracking input. If the control is in AUTO modulation mode accepting remote\ninputs, and a valid 4-20mA signal is applied, the control will modulate so as to track\nthis input. 4mA = Low fire, 20mA = High fire. If the signal goes below 3.5mA or\nabove 21mA, this mode will be cancelled and normal PID modulation will resume.\n2\nRemote Setpoint 1 Input. If the control is in AUTO modulation mode accepting\nremote inputs, the value of setpoint 1 can be overridden when a valid 4-20mA signal\nis applied to this input. The zero and span are set in option parameters 21.8 and\n21.9. If deviation limits are set (see option parameter 21.5), then the high and low\ncontrol limits will also move with the setpoint. If the signal goes below 3.5mA or\nabove 21mA, this mode will be cancelled and normal setpoint 1 value will be applied.\n96",
+      "tablas": [
+        [
+          [
+            "Option parameter 20.7 Value",
+            "Digital input used:"
+          ],
+          [
+            "0",
+            "This input does nothing."
+          ],
+          [
+            "1",
+            "Remote tracking input. If the control is in AUTO modulation mode accepting remote inputs, and a valid 4-20mA signal is applied, the control will modulate so as to track this input. 4mA = Low fire, 20mA = High fire. If the signal goes below 3.5mA or above 21mA, this mode will be cancelled and normal PID modulation will resume."
+          ],
+          [
+            "2",
+            "Remote Setpoint 1 Input. If the control is in AUTO modulation mode accepting remote inputs, the value of setpoint 1 can be overridden when a valid 4-20mA signal is applied to this input. The zero and span are set in option parameters 21.8 and 21.9. If deviation limits are set (see option parameter 21.5), then the high and low control limits will also move with the setpoint. If the signal goes below 3.5mA or above 21mA, this mode will be cancelled and normal setpoint 1 value will be applied."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\nOption 20.8 - Digital Input - Lead Boiler Select (0 - 35) LV3\n(1 - 4)\nA high level on the input specified here will select the lead boiler when closed.\n(16 or 20)\nShould NOT be used.\n(21-24)\nA low level on the input specified here will select the lead boiler when open.\nThe input numbers are as specified in Option Table 20.0 A above.\nNOTE: For the following Options 21.x and 22.x,\nsee Section 9.7.10 for PID Tutorial.\nPPC\nOption 21.0 - Set-point 1 enable (0 - 1) LV1\nThis option parameter is used to select setpoint 1.\nPPC\nOption 21.1 - Set-point 1 control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nThis is the desired pressure or temperature control value used in the PID control loop for setpoint 1. When the\ncontrol is in auto mode, the PID control loop will modulate the boiler to maintain the measured value at the\nsame level as set by this parameter.\nPPC\nOption 21.2 - Set-point 1 proportional band (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nThis is the width of the proportional (modulation) band that is used by the PID control loop for setpoint 1. For\nexample, if the setpoint was 100 psi, and this term was set to 10 psi, then the proportional band would be from\n90 psi to 100 psi. A measured value of 90 psi would give high fire, and 100 psi would give low fire, assuming\nno integral or derivative terms were entered.\nA value of 0 means no proportional band - the burner would stay at low fire until the high limit (Cut Out) is\nreached, then turn off. Proportional control is therefore needed to allow the burner to modulate.\nOption 21.3 - Set-point 1 integral time (0 - 999 seconds) LV1\nThis is the integral time used in the PID control loop for setpoint 1. It may be set to any value from 0 to 999,\nseconds. If a value of 0 is entered the integral function is disabled, otherwise the time entered is the number of\nseconds the control will take to give an additional modulation change equal to that currently given by the\nproportional term. The lower the number (apart from zero), the more affect the integral function has. A large\nnumber will cause the integral term to act very slowly.\nIntegral control is required for the burner to accurately reach its setpoint.\n97",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\nOption 21.4 - Set-point 1 derivative time (0 - 999 seconds) LV1\nThis is the derivative time used in the PID control loop for setpoint 1. It may be set to any value from 0 to 999.\nA value of zero will disable the derivative function. A non-zero value will have the effect of 'advancing' the\nmodulation rate change caused by a constantly changing measured value by the number of seconds given. A\nlow value will have little effect; a large value will cause a large effect.\nDerivative control is seldom needed for boilers, but can improve the response of the modulation system to\nsudden load changes. Too much can cause control instability.\nPPC\nOption 21.5 - Setpoint 1 control limit type (0 - 2) LV3\nThis option parameter defines the control limit type for setpoint 1. The control limits are used to automatically\nturn the burner off when it is not needed, and bring it back on when it is needed.\nOption parameter\n21.5 value\nMeaning\n0\nNo limits. The burner will run until another method is used to switch it\noff.\n1\nAbsolute limit. The values entered in option parameters 21.6 and\n21.7 are the actual limit values.\n2\nDeviation limit. The values entered in option parameters 21.6 and\n21.7 represent a deviation (i.e. offset) from the setpoint 1 control value.\nThis means that if the setpoint control value is changed, the limits are\nautomatically changed correspondingly.\nOption 21.6 - Setpoint 1 low limit control value (Cut In) (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nIf the boiler is off due to a controlled shutdown, this parameter defines the measured value at which the boiler\nwill be turned on again.\nOption 21.7 - Setpoint 1 high limit control value (Cut Out) (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nIf the boiler is on and firing, this parameter defines the measured value at which the boiler will be turned off via\na controlled shutdown.\nOption 21.8 - Remote Setpoint 1 zero (4ma) value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nThis is the zero value for the remote setpoint function specified by option parameter 20.7.\nOption 21.9 - Remote Setpoint 1 span (20mA) value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nThis is the span value for the remote setpoint function specified by option parameter 20.7.\nOption 22.0 - PID (set-point) 2 enable (0 - 1) LV1\nThis option parameter is used to select setpoint 2.\n98",
+      "tablas": [
+        [
+          [
+            "Option parameter 21.5 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "No limits. The burner will run until another method is used to switch it off."
+          ],
+          [
+            "1",
+            "Absolute limit. The values entered in option parameters 21.6 and 21.7 are the actual limit values."
+          ],
+          [
+            "2",
+            "Deviation limit. The values entered in option parameters 21.6 and 21.7 represent a deviation (i.e. offset) from the setpoint 1 control value. This means that if the setpoint control value is changed, the limits are automatically changed correspondingly."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\nOption 22.1 - Set-point 2 control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nThis is the control value used in the PID control loop for setpoint 2. When the control is in auto mode, the PID\ncontrol loop will modulate the boiler to maintain the measured value at the same level as set by this parameter.\nOption 22.2 - Set-point 2 proportional band (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nThis is the width of the proportional (modulation) band that is used by the PID control loop for setpoint 2. For\nexample, if the setpoint was 100 psi, and this term was set to 10 psi, then the proportional band would be from\n90 to 100 psi. A measured value of 90 psi would give high fire, and 100 psi would give low fire, assuming no\nintegral or derivative terms were entered.\nA value of 0 means no proportional band - the burner would stay at low fire until the high limit (Cut Out) is\nreached, then turn off. Proportional control is therefore needed to allow the burner to modulate.\nOption 22.3 - Set-point 2 integral term (0 - 999 seconds) LV1\nThis is the integral time used in the PID control loop for setpoint 2. It may be set to any value from 0 to 999,\nseconds. If a value of 0 is entered the integral function is disabled, otherwise the time entered is the number of\nseconds the control will take to give an additional modulation change equal to that currently given by the\nproportional term. The lower the number (apart from zero), the more affect the integral function has. A large\nnumber will cause the integral term to act very slowly.\nIntegral control is required for the burner to accurately reach its setpoint.\nOption 22.4 - Set-point 2 derivative term (0 - 100) LV1\nThis is the derivative time used in the PID control loop for setpoint 2. It may be set to any value from 0 to 999.\nA value of zero will disable the derivative function. A non-zero value will have the effect of 'advancing' the\nmodulation rate change caused by a constantly changing measured value by the number of seconds given. A\nlow value will have little effect; a large value will cause a large effect.\nDerivative control is seldom needed for boilers, but can improve the response of the modulation system to\nsudden load changes. Too much can cause control instability.\nOption 22.5 - Setpoint 2 control limit type (0 - 2) LV3\nThis option parameter defines the control limit type for setpoint 2. The control limits are used to automatically\nturn the burner off when it is not needed, and bring it back on when it is needed.\nOption parameter\n22.5 value\nMeaning\n0\nNo limits. The burner will run until another method is used to switch it\noff.\n1\nAbsolute limit. The values entered in option parameters 22.6 and\n22.7 are the actual limit values.\n2\nDeviation limit. The values entered in option parameters 22.6 and\n22.7 represent a deviation (i.e. offset) from the setpoint 1 control value.\nThis means that if the setpoint control value is changed, the limits are\nautomatically changed correspondingly.\n99",
+      "tablas": [
+        [
+          [
+            "Option parameter 22.5 value",
+            "Meaning"
+          ],
+          [
+            "0",
+            "No limits. The burner will run until another method is used to switch it off."
+          ],
+          [
+            "1",
+            "Absolute limit. The values entered in option parameters 22.6 and 22.7 are the actual limit values."
+          ],
+          [
+            "2",
+            "Deviation limit. The values entered in option parameters 22.6 and 22.7 represent a deviation (i.e. offset) from the setpoint 1 control value. This means that if the setpoint control value is changed, the limits are automatically changed correspondingly."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\nOption 22.6 - Setpoint 2 low limit control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nIf the boiler is off due to a controlled shutdown, this parameter defines the measured value at which the boiler\nwill be turned on again.\nOption 22.7 - Setpoint 2 high limit control value (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nIf the boiler is on and firing, this parameter defines the measured value at which the boiler will be turned off via\na controlled shutdown.\nOption 22.8 - Maximum modulation rate\nDEFAULT 0 - unlimited / Range 1 - 100%\nValues represent:\n0 = unlimited\n1 - 100 is maximum %\nOption 22.9 - Reserved\nOption 23.0 - Warming Enable (0 or 1) LV1\nThis parameter allows a warming function to be applied to the boiler, and makes option parameters 23.1 and\n23.2 available. If zero is entered, no warming limit is applied.\nOption 23.1 - Warming Limit (0 - 999 / 00.0 - 99.9 / 0.00 - 9.99) LV1\nIf, when the burner starts up and reaches modulation, the measured pressure / temperature value is lower\nthan that specified here, the control will hold the boiler at low fire until the value specified is reached. The\ncontrol will hold the boiler at low fire (in status 15) indefinitely unless a non-zero time has been entered in\noption parameter 23.2.\nNote: If during normal modulation, the measured value falls below this limit having once been above it, the\nwarming function will not be re-applied. The warming function is only applied on a burner start-up.\nOption 23.2 - Warming Time (0 to 999 minutes) LV1\nThis parameter specifies a maximum time to hold the burner at low fire for, before ignoring the warming limit\nand allowing normal modulation.\nAdditionally, when the burner goes off (for any reason other than power interruption), and the measured value\nfalls below the warming limit, the warming function will not be activated again until this time has passed.\nNOTE: Further parameters (up to 29.9) may be available here if they are part of a users program or\nnon-standard manufacturers program.\n100",
+      "tablas": []
+    }
+  ]
+}

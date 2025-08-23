@@ -1,0 +1,537 @@
+{
+  "archivo": "29.12.2024 PROGRAMA DE CONTROL DE DOSIFICADORES PLC 1200_p21_30",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "1\n2\n3\n4\nA\nSegmento 5: ACTIVAR MANUAL AUTO PISTON 4 (4.1 / 5.1)\n3.1 ( Página4 - 16)\nB\nC\nD\n> 4\n> 5\nMOVE\nEN\n- ENO\n0\nIN\nOUT1\nMOVE\nEN\nENO\n%MW66\n\"CUENTA_REAL\nSAV_4\"\n%MW78\n\"SUB_CUENTA\nSAV_4\" - IN\nE\nSOUT1\n%MW66\n\"CUENTA_REAL_\nSAV_4\"\n5.1 ( Página4 - 18)\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 4 - 17",
+      "tablas": [
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE",
+            "CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location"
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 4 - 17"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "1\n2\n3\n4\nA\nSegmento 5: ACTIVAR MANUAL AUTO PISTON 4 (5.1 / 5.1)\n4.1 ( Página4 - 17)\nIIV\nB\nC\nD\nE\nF\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 4 - 18",
+      "tablas": [
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE",
+            "CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location",
+            ""
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 4 - 18"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1\n2\nA\nSegmento 6: PISTON 1\n%M2.0\n\"M_PISTON_TH\nDOSIFICADOR_1\"\n%M3.1\n\"A_PISTON_TH_\nDOSIFICADOR_1\"\nB\n%M81.0\n\"MANUAL\nPISTON_4\"\nSegmento 7: PISTON 2\n%M2.1\n\"M_PISTON_TH\nDOSIFICADOR_2\"\nC\n%M3.3\n\"A_PISTON_TH_\nDOSIFICADOR_2\"\n%M81.3\n\"MANUAL\nPISTON_3\"\nD\nSegmento 8: PISTON 3\nE\nOwner\n3\n4\n%Q0.0\n\"PISTON_4\"\n%Q0.1\n\"PISTON_3\"\n1\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nOperator\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nDesigned By\nF\nChecked By\nApproved By\nLocation\nDescription 1st\nDescription 2nd\n1 st View\nLanguage es-ES\nVersion\nSheet 4 - 19",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "1\n2\n3\n4\nA\n%M2.4\n\"M_PISTON_TH_\nDOSIFICADOR_3\"\n%M3.5\n\"A_PISTON_TH_\nDOSIFICADOR_3\"\n%M81.6\n\"MANUAL\nPISTON_2\"\nB\nSegmento 9: PISTON 4\n%M3.4\n\"M_PISTON_TH\nDOSIFICADOR_4\"\n%M3.7\n\"A_PISTON_TH_\nDOSIFICADOR_4\"\nC\nD\nE\nOwner\nOperator\n%Q0.2\n\"PISTON_2\"\n1\n-\n%Q0.3\n\"PISTON_1\"\n1\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nDesigned By\nF\nChecked By\nApproved By\nLocation\nDescription 1st\nDescription 2nd\nLanguage es-ES\n1 st View\nVersion\nSheet 4 - 20",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "1\n2\n3\n4\nA\nBloques de programa\nESCALAMIENTO_INPUT [FC2]\nB\nESCALAMIENTO_INPUT Propiedades\nGeneral\nNombre\nESCALAMIENTO_INPUT\nNúmero\n2\nTipo\nFC\nIdioma\nKOP\nNumeración\nAutomático\nInformación\nTítulo\nAutor\nComentario\nFamilia\nVersión\n0.1\nID personalizado\nC\nNombre\nTipo de da- Valor predet.\ntos\nComentario\nInput\nOutput\nInOut\nTemp\nConstant\nReturn\nESCALAMIENTO_INPUT Void\nSegmento 1: CORRIENTE SAV 1\nD\nE\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nF\nChecked By\nDescription 1st\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 5 - 1",
+      "tablas": [
+        [
+          [
+            "ESCALAMIENTO_INPUT Propiedades"
+          ],
+          [
+            "General",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Nombre",
+            "ESCALAMIENTO_INPUT",
+            "Número",
+            "2"
+          ],
+          [
+            "Tipo",
+            "FC",
+            "Idioma",
+            "KOP"
+          ],
+          [
+            "Numeración",
+            "Automático",
+            "",
+            ""
+          ],
+          [
+            "Información",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Título",
+            "",
+            "Autor",
+            ""
+          ],
+          [
+            "Comentario",
+            "",
+            "Familia",
+            ""
+          ],
+          [
+            "Versión",
+            "0.1",
+            "ID personalizado",
+            ""
+          ]
+        ],
+        [
+          [
+            "Nombre",
+            "Tipo de da-\ntos",
+            "Valor predet.",
+            "Comentario"
+          ],
+          [
+            "Input",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Output",
+            "",
+            "",
+            ""
+          ],
+          [
+            "InOut",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Temp\n:unselected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Constant\n:unselected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Return\n:selected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ESCALAMIENTO_INPUT",
+            "Void",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "1\n2\nA\nSegmento 1: CORRIENTE SAV 1\nNORM_X\nInt to LReal\n0\nEN\nMIN\n%IW96\n\"INPUT_\nCORRIENTE\nSAV1\"\n27648 .\nVALUE\nMAX\nB\n%IW96\n\"INPUT_\nCORRIENTE\nSAV1\"\nENO\n%MD36\n\"NORM\nCORRIENTE\nOUT _SAV1\"\nMOVE\n<\nInt\nEN\n0\n0.0 - IN\n· ENO\nOUT1\n%MD28\n\"CORRIENTE_\nSAV1\"\nC\nReal\n20.0\nSCALE_X\nReal to Real\n> 1\nEN\n\"VALORES\nDEFINIDOS\".\nSCALE_MIN_\nCORRIENTE_SAV1\nD\nMIN\n%MD36\n\"NORM_\nCORRIENTE\nSAV1\"\nVALUE\n\"VALORES\nDEFINIDOS\".\nSCALE_MAX_\nCORRIENTE_SAV1\nMAX\nSegmento 2: CORRIENTE SAV 2\nE\nOwner\n%MD36\n\"NORM\nCORRIENTE\nSAV1\"\nENO\n%MD28\n\"CORRIENTE_\nSAV1\"\nOUT\n3\n4\n%IW96\n\"INPUT_\nCORRIENTE\nSAV1\"\n1\nInt\n0\n%M3.6\n\"SAV1_ON\"\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nOperator\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nF\nChecked By\nDescription 1st\nDescription 2nd\nApproved By\n1 st View\nLanguage es-ES\nVersion\nSheet 5 - 2",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "1\n2\n3\n4\nA\nSegmento 2: CORRIENTE SAV 2\n%IW98\n\"INPUT_\nCORRIENTE_\nSAV2\"\nNORM_X\nInt to LReal\n0\nEN\nMIN\n%IW98\n\"INPUT_\nCORRIENTE\nSAV2\"\n27648 .\nENO\n%MD32\n\"NORM\nCORRIENTE_\nOUT _SAV2\"\nVALUE\nMAX\nB\n%IW98\n\"INPUT_\nCORRIENTE\nSAV2\"\n<\nInt\n0\nMOVE\nEN\n-\nENO\n0.0 - IN\nOUT1\n%MD40\n\"CORRIENTE_\nSAV2\"\nC\n>=\nReal\n20.0\nSCALE_X\nReal to Real\n> 1\nEN\n\"VALORES\nDEFINIDOS\".\nSCALE_MIN\nCORRIENTE_SAV2\nD\nMIN\n%MD32\n\"NORM_\nCORRIENTE\nSAV2\"\nVALUE\n\"VALORES\nDEFINIDOS\".\nSCALE_MAX\nCORRIENTE_SAV2\nMAX\nSegmento 3: CORRIENTE SAV 3\nE\nOwner\nENO\nOUT\n%MD32\n\"NORM.\nCORRIENTE\nSAV2\"\n%MD40\n\"CORRIENTE_\nSAV2\"\n%M80.0\n\"SAV2_ON\"\n1\nInt\n0\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nOperator\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nF\nChecked By\nDescription 1st\nApproved By\nDescription 2nd\nLanguage es-ES\n1 st View\nVersion\nSheet 5 - 3",
+      "tablas": [
+        [
+          [
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "1 st View",
+            "Version",
+            "Sheet 5 - 3"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "1\n2\nA\nSegmento 3: CORRIENTE SAV 3\nNORM_X\nInt to LReal\nEN\nMIN\n0\nENO\n%IW100\n\"INPUT_\nCORRIENTE\nSAV3\"\n27648 -\n%MD44\n\"NORM\nCORRIENTE\nOUT 7-SAV3\"\nVALUE\nMAX\nB\n%IW100\n\"INPUT_\nCORRIENTE\nSAV3\"\n<\nInt\n0\nMOVE\nEN -\nENO\n0.0 - IN\nOUT1\n%MD48\n\"CORRIENTE\nSAV3\"\nC\nReal\n20.0\nSCALE_X\nReal to Real\n> 1\nEN\nENO\n\"VALORES\nDEFINIDOS\".\nSCALE_MIN_\nCORRIENTE_SAV3\nD\nOUT\nMIN\n%MD44\n\"NORM_\nCORRIENTE\nSAV3\"\nVALUE\n\"VALORES\nDEFINIDOS\".\nSCALE_MAX\nCORRIENTE_SAV3\nMAX\nSegmento 4: CORRIENTE SAV 4\nE\nOwner\n%MD44\n\"NORM\nCORRIENTE\nSAV3\"\n%MD48\n\"CORRIENTE_\nSAV3\"\n3\n4\n%IW100\n\"INPUT_\nCORRIENTE_\nSAV3\"\n1\nIn\n0\n%M80.1\n\"SAV3_ON\"\nT\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nOperator\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nF\nChecked By\nDescription 1st\nApproved By\nDescription 2nd\nLanguage es-ES\n1 st View\nVersion\nSheet 5 - 4",
+      "tablas": [
+        [
+          [
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "1 st View",
+            "Version",
+            "Sheet 5 - 4"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "1\n2\nA\nSegmento 4: CORRIENTE SAV 4\nEN\nMIN\n0\n%IW102\n\"INPUT_\nCORRIENTE\nSAV4\"\n27648 .\nVALUE\nMAX\nB\n%IW102\n\"INPUT_\nCORRIENTE\nSAV4\"\n<\nInt\n0\n%MD56\n\"CORRIENTE_\nSAV4\"\nC\n>=\nReal\n20.0\n> 1\nEN\n\"VALORES\nDEFINIDOS\".\nSCALE_MIN_\nCORRIENTE_SAV4\nD\n- MIN\n%MD52\n\"NORM_\nCORRIENTE\nSAV4\"\nVALUE\n\"VALORES\nDEFINIDOS\".\nSCALE_MAX\nCORRIENTE_SAV4\nMAX\nE\nOwner\nNORM_X\nInt to LReal\nENO\n%MD52\n\"NORM\nCORRIENTE\nOUT _SAV4\"\nMOVE\nEN\nENO\n0.0 - IN\nOUT1\n%MD52\n\"NORM\nCORRIENTE\nSAV4\"\nSCALE_X\nReal to Real\nENO\nOUT\n%MD56\n\"CORRIENTE_\nSAV4\"\n3\n4\n%IW102\n\"INPUT_\nCORRIENTE\nSAV4\"\n1\nInt\n0\n%M80.2\n\"SAV4_ON\"\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nOperator\nDate 29/12/2024\nProject path\nC:\\Users\\Caldera\\DesktopIPROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nDesigned By\nF\nChecked By\nApproved By\nLocation\nDescription 1st\nDescription 2nd\nLanguage es-ES\n1 st View\nVersion\nSheet 5 - 5",
+      "tablas": [
+        [
+          [
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "1 st View",
+            "Version",
+            "Sheet 5 - 5"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "1\n2\n3\n4\nA\nBloques de programa\nVALORES_DEFINIDOS [DB2]\nVALORES_DEFINIDOS Propiedades\nGeneral\nNombre\nVALORES_DEFINIDOS\nTipo\nDB\nNumeración\nAutomático\nNúmero\nIdioma\nB\nC\nD\nE\nF\nInformación\nTítulo\nComentario\nVersión\n0.1\nNombre\nStatic\nValor de arranque\nAccesible desde\nHMI/OPC UA/Web\nAPI\nVisible en HMI Engi-\nneering\nSupervisión\nNombre\nSCALE_MIN_CORRIENTE_SAV1\nValor de arranque\n0.0\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nSCALE_MAX_CORRIENTE_SAV1\nValor de arranque\n200.0\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nSCALE_MIN_CORRIENTE_SAV2\nValor de arranque\n0.0\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\nVisible en HMI Engi- True\nneering\nSupervisión\nNombre\nSCALE_MAX_CORRIENTE_SAV2\nValor de arranque\n200.0\nAccesible desde\nHMI/OPC UA/Web\nAPI\nTrue\n2\nDB\nAutor\nFamilia\nID personalizado\nTipo de datos\nRemanencia\nEscribible desde\nHMI/OPC UA/Web\nAPI\nValor de ajuste\nComentario\nTipo de datos\nReal\nRemanencia\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nFalse\nComentario\nTipo de datos\nReal\nRemanencia\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nFalse\nComentario\nTipo de datos\nReal\nRemanencia\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nValor de ajuste\nFalse\nComentario\nTipo de datos\nReal\nRemanencia\nTrue\nEscribible desde\nHMI/OPC UA/Web\nAPI\nTrue\nOwner\nProjectname\nPROGRAMA INGRESO DE CARGA_SAV\nDate 29/12/2024\nOperator\nProject path\nC:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE\nCARGA_SAV - Backup 040924\nLocation\nDesigned By\nDescription 1st\nChecked By\nDescription 2nd\nLanguage es-ES\nApproved By\n1 st View\nVersion\nSheet 6 - 1",
+      "tablas": [
+        [
+          [
+            "General",
+            ""
+          ],
+          [
+            "Nombre",
+            "VALORES_DEFINIDOS"
+          ],
+          [
+            "Tipo",
+            "DB"
+          ],
+          [
+            "Numeración",
+            "Automático"
+          ]
+        ],
+        [
+          [
+            "Información",
+            ""
+          ],
+          [
+            "Título",
+            ""
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Versión",
+            "0.1"
+          ]
+        ],
+        [
+          [
+            ""
+          ],
+          [
+            "Nombre",
+            "Static"
+          ],
+          [
+            "Valor de arranque",
+            ""
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            ""
+          ],
+          [
+            "Visible en HMI Engi- neering",
+            ""
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "SCALE_MIN_CORRIENTE_SAV1"
+          ],
+          [
+            "Valor de arranque",
+            "0.0"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "SCALE_MAX_CORRIENTE_SAV1"
+          ],
+          [
+            "Valor de arranque",
+            "200.0"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "SCALE_MIN_CORRIENTE_SAV2"
+          ],
+          [
+            "Valor de arranque",
+            "0.0"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Visible en HMI Engi-\nneering",
+            "True"
+          ],
+          [
+            "Supervisión",
+            ""
+          ],
+          [
+            "Nombre",
+            "SCALE_MAX_CORRIENTE_SAV2"
+          ],
+          [
+            "Valor de arranque",
+            "200.0"
+          ],
+          [
+            "Accesible desde HMI/OPC UA/Web API",
+            "True"
+          ]
+        ],
+        [
+          [
+            "Autor",
+            ""
+          ],
+          [
+            "Familia",
+            ""
+          ],
+          [
+            "ID personalizado",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "Tipo de datos",
+            ""
+          ],
+          [
+            "Remanencia",
+            ""
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            ""
+          ],
+          [
+            "Valor de ajuste",
+            ""
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "Real"
+          ],
+          [
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "Real"
+          ],
+          [
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "Real"
+          ],
+          [
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ],
+          [
+            "Valor de ajuste",
+            "False"
+          ],
+          [
+            "Comentario",
+            ""
+          ],
+          [
+            "Tipo de datos",
+            "Real"
+          ],
+          [
+            "Remanencia",
+            "True"
+          ],
+          [
+            "Escribible desde HMI/OPC UA/Web API",
+            "True"
+          ]
+        ],
+        [
+          [
+            "Owner",
+            "Projectname PROGRAMA INGRESO DE CARGA_SAV",
+            "Date 29/12/2024"
+          ],
+          [
+            "Operator",
+            "Project path C:\\Users\\Caldera\\Desktop\\PROYECTOS_TIA_PORTALIPROGRAMA INGRESO DE CARGA_SAV - Backup 040924"
+          ],
+          [
+            "",
+            "Location"
+          ],
+          [
+            "Designed By",
+            "Description 1st"
+          ],
+          [
+            "Checked By",
+            "Description 2nd",
+            "Language es-ES"
+          ],
+          [
+            "Approved By",
+            "1 st View",
+            "Version",
+            "Sheet 6 - 1"
+          ]
+        ]
+      ]
+    }
+  ]
+}

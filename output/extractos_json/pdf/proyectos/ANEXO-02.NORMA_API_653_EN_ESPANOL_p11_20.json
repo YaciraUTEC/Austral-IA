@@ -1,0 +1,724 @@
+{
+  "archivo": "ANEXO-02.NORMA_API_653_EN_ESPANOL_p11_20",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "c. El inspector autorizado deberá decidir visualmente o de\nacuerdo a las áreas que son comúnmente afectadas por la\ncorrosión, los planos verticales a inspeccionar. Las mediciones\nen los perfiles deberán ser tomadas a lo largo de cada plano\nvertical para una distancia, L. En los planos, determine el\npromedio de espesor más bajo, t1, promediado sobre una\nlongitud de L, usando al menos cinco medidas con igual\nespaciamiento sobre la longitud L.\nd. Refiérase a 4.3.3.1 para los valores mínimos permitidos\npara t1 y t2. Las cargas adicionales consideradas en 4.3.3.4\ndeberán ser tenidas en cuenta.\ne. Los criterios para continuar en operaciones son los\nsiguientes:\ni. El valor t1 deberá ser mayor o igual a tmin (Ver 4.3.3 o\n4.3.4), sujeto a verificación de todas las otras cargas\nlistadas en 4.3.3.5, y\nii. El valor de t2 deberá ser mayor o igual al 60% del tmin,; y,\niii. Cualquier corrosión permitida requerida para servicio hasta\nel tiempo de la próxima inspección deberá ser añadida a\ntmin y al 60% de tmin-\n4.3.2.2 Picaduras esparcidas ampliamente pueden ser\nignoradas sí:\na. Ninguna profundidad de los puntos de picadura resultante\nen el espesor del cuerpo es menor que la mitad del espesor\nmínimo aceptable del cuerpo excluyendo la corrosión\npermitida; y,\nb. La suma de sus dimensiones a lo largo de cualquier línea\nvertical no excede 2 pulgadas en una longitud de 8 pulgadas\n(Ver Fig. 4.2)\n4.3.3\nCALCULO DEL ESPESOR MÍNIMO\nCUERPO DE TANQUES SOLDADOS\nPARA\nNota: En general, el espesor mínimo aceptable (tmin) para\ntodos los anillos del cuerpo se determina usando 4.3.3.1(a)\ncon un H determinado desde el fondo de cada anillo del\ncuerpo y los resultados usados como una base para juzgar la\ndisponibilidad para continuar el tanque en servicio. Si áreas\nlocalmente adelgazadas son identificadas o si áreas\nespecíficas son investigadas (tal como para una instalación de\nuna boquilla en el cuerpo), el método 4.3.3.1 (b) debe ser\nusado para completar la evaluación con un H determinado\npara esas localizaciones en particular.\nt min\n2.6(HDG)\nSE\nDonde\ntmin= El espesor mínimo aceptable, en pulgadas calculado\nde la fórmula anterior; sin embargo, tmin no deberá ser\nmenor a 0.1 pulgadas para ningún anillo del tanque.\nD= Diámetro nominal del tanque, en pies.\nH= Altura desde el fondo del anillo en consideración\nhasta el nivel de liquido máximo, cuando se evalúa\nun anillo entero, en pies, ó\n= Altura, en pies, desde el fondo de la longitud L (Ver\n4.3.2.1) desde el punto mas bajo del fondo de L del\nárea adelgazada\nlocalmente, hasta el nivel de\nliquido máximo, ó\n= Altura desde el punto mas bajo dentro de cualquier\nlocalización de interés hasta el máximo nivel de\nlíquido, en pies,\nG= La gravedad específica más alta de los contenidos,\nS= Máximo esfuerzo permisible en libras por pulgada\ncuadrada (psi); use el menor de 0.80Y ó 0.429T\npara el primero y el segundo anillo; use el menor\nentre 0.88 Y ó 0.472T para los otros anillos. Los\nesfuerzos permisibles del cuerpo son mostrados en\nla tabla 4.1 para materiales listados en la actual y\npasada edición de API 12C y API 650.\nNota: Para tanques reconstruidos, S deberá estar de\nacuerdo con el estándar aplicable actual.\nY= Esfuerzo de Fluencia mínimo especificado de la\nlámina; use 30.000 lb/pulg2 si no es conocido.\ndự\n4.3.3.1 El espesor mínimo aceptable de una lámina de\ncuerpo debe ser determinado por uno o más de los métodos\nanotados a continuación. Estos métodos están limitados para\ntanques con diámetros iguales o menores a 200 pies.\n8ª\na. Para determinar el espesor mínimo para todos los anillos\ndel cuerpo, tmin, es calculado así\nmin\n=\n2.6(H-1)DG\nSE\nb. Cuando se esta determinando el espesor mínimo aceptable\npar cualquier otra porción de un anillo del cuerpo (tal como un\nárea localmente adelgazada o cualquier otra locación de\ninterés), tmin es calculado así:\ndị + d2 + d3 ... ≤2\nFigura 4-2 Medición del Pitting\nPágina 11 de 98",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Tabla 4.1 Máximos esfuerzos permitidos del cuerpo\n(No es para uso de reconstrucción de tanques, ver nota 6)\n01\nMaterial Specification\nand Grade\nMinimum\nSpecified\nTensile\nStrength,\nT (lbf/in.2)\nAllowable Product\nStress, S (Ibf/in.2) (7)\nAllowable Hydrostatic\nTest Stress, St (Ibf/in.2) (7)\nMinimum\nSpecified\nYield Stress,\nY (lbf/in.2)\nLower Two\nCourses\nUpper Courses\nLower Two\nCourses\nUpper Courses\nASTM Specifications\nA 283-C\n30,000\n55,000\n23,600\n26,000\n26,000\n27,000\nA285-C\n30,000\n55,000\n23,600\n26,000\n26,000\n27,000\nA36\n36,000\n58,000\n24,900\n27,400\n27,400\n30,100\nA131-A, B, CS\n34,000\n58,000\n24,900\n27,400\n27,400\n30,100\nA131-EH 36\n51,000\n71,000\n30,500\n33,500\n33,500\n36,800\nA573-58\n32,000\n58,000\n24,900\n27,400\n27,400\n28,800\nA573-65\n35,000\n65,000\n27,900\n30,700\n30,700\n31,500\nA573-70\n42,000\n70,000\n30,000\n33,000\n33,000\n36,300\nA516-55\n30,000\n55,000\n23,600\n26,000\n26,000\n27,000\nA516-60\n32,000\n60,000\n25,600\n28,200\n28,200\n28,800\nA516-65\n35,000\n65,000\n27,900\n30,700\n30,700\n31,500\nA516-70\n38,000\n70,000\n30,000\n33,000\n33,000\n34,200\nA662-B\n40,000\n65,000\n27,900\n30,700\n30,700\n33,700\nA662-C\n43,000\n70,000\n30,000\n33,000\n33,000\n36,300\nA537- Class 1\n50,000\n70,000\n30,000\n33,000\n33,000\n36,300\nA537- Class 2\n60,000\n80,000\n34,300\n37,800\n37,800\n41,500\nA633-C, D\n50,000\n70,000\n30,000\n33,000\n33,000\n36,300\nA678-A\n50,000\n70,000\n30,000\n33,000\n33,000\n36,300\nA678-B\n60,000\n80,000\n34,300\n37,800\n37,800\n41,500\nA737-B\n50,000\n70,000\n30,000\n33,000\n33,000\n36,300\nA841\n50,000\n70,000\n30,000\n33,000\n33,000\n36,300\nA10 (1)\n30,000\n55,000\n23,600\n26,000\n26,000\n27,000\nA7 (1)\n33,000\n60,000\n25,700\n28,300\n28,300\n29,700\nA442-55 (1)\n30,000\n55,000\n23,600\n26,000\n26,000\n27,000\nA442-60 (1)\n32,000\n60,000\n25,600\n28,200\n28,200\n28,800\nCSA Specifications\nG40.21M, 260W\n37,700\n59,500\n25,500\n28,100\n28,100\n30,900\nG40.21M, 300W\n43,500\n65,300\n28,000\n30,800\n30,800\n33,900\nG40.21M, 350W\n50,800\n65,300\n28,000\n30,800\n30,800\n33,900\nG40.21M, 350WT\n50,800\n69,600\n29,900\n32,900\n32,900\n36,100\nUnknown (2)\n30,000\n55,000\n23,600\n26,000\n26,000\n27,000\nRiveted Tanks:\nA7, A9 or A10 (1,3)\nNA\nNA\n21,000\n21,000\n21,000\n21,000\nKnown (4)\nY\nT\nNote 4\nNote 4\nNote 4\nNote 4\nUnknown (5)\nNA\nNA\n21,000\n21,000\n21,000\n21,000\nNota:\n5. Esta disposición esta dada para tanques remachados\nconstruidos de un material de grado desconocido,\nevaluado por 4.3.4.2 de este estándar.\n6. Los esfuerzos permisibles para tanques reconstruidos\nestán tabulados en API 650, Tabla 3-2 o calculado por\n8.4 de este estándar.\n1. ASTM A7, A9, A10 y A442 son especificaciones de\nmateriales obsoletos anteriormente\nlistado en API\nEstándar 12C y 650.\n2. Los esfuerzos de fluencia y los valores de esfuerzos de\ntensión mostrados están por API 653 para materiales AST\nsoldados de origen desconocido.\n3. Esta disposición esta dada para tanques remachados,\nconstruidos para cualquier grado de material, evaluados\npor 4.3.4.1 de este estándar.\n4. Esta disposición esta dada para tanques remachados,\nconstruidos de un material de grado conocido, evaluado\npor 4.3.4.2 de este estándar. Para todos los anillos, el\nmáximo esfuerzo permisible tanto para el producto como\npara condiciones de prueba hidrostática están listadosE= La eficiencia original de la junta soldada para el tanque.\ndebajo de la columna\npara esfuerzos de productoUse la tabla 4.2 si el E original es desconocido. E=1.0\npermisible, S.\ncuando evalúe el espesor en una lámina corroída que haya\n7. Los esfuerzos permisibles están calculados en 4.3.3.1\nde este estándar, a menos de que se anote lo contrario.\nLos esfuerzos permisibles calculados son redondeados al\nmás cercano a 100 lbf/in.2\nT=\nEl menor del esfuerzo mínimo de tensión\nespecificado de la lámina o 80.000 lb/pulg.2; use 55.000\nlibras por pulgada cuadrada si no es conocido.\nPágina 12 de 98",
+      "tablas": [
+        [
+          [
+            "Material Specification and Grade",
+            "(No es para uso",
+            "de reconstrucción\nMinimum Specified Tensile Strength, :unselected: T (lbf/in.2)",
+            "de tanques, ver nota\nAllowable Product Stress, S (Ibf/in.2) (7)",
+            "6)\nAllowable Hydrostatic Test Stress, St (Ibf/in.2) (7)"
+          ],
+          [
+            "Minimum Specified Yield Stress, Y (lbf/in.2)",
+            "Lower Two Courses",
+            "Upper Courses",
+            "Lower Two Courses",
+            "Upper Courses"
+          ],
+          [
+            "ASTM Specifications"
+          ],
+          [
+            "A 283-C",
+            "30,000",
+            "55,000",
+            "23,600",
+            "26,000",
+            "26,000",
+            "27,000"
+          ],
+          [
+            "A285-C",
+            "30,000",
+            "55,000",
+            "23,600",
+            "26,000",
+            "26,000",
+            "27,000"
+          ],
+          [
+            "A36",
+            "36,000",
+            "58,000",
+            "24,900",
+            "27,400",
+            "27,400",
+            "30,100"
+          ],
+          [
+            "A131-A, B, CS",
+            "34,000",
+            "58,000",
+            "24,900",
+            "27,400",
+            "27,400",
+            "30,100"
+          ],
+          [
+            "A131-EH 36",
+            "51,000",
+            "71,000",
+            "30,500",
+            "33,500",
+            "33,500",
+            "36,800"
+          ],
+          [
+            "A573-58",
+            "32,000",
+            "58,000",
+            "24,900",
+            "27,400",
+            "27,400",
+            "28,800"
+          ],
+          [
+            "A573-65",
+            "35,000",
+            "65,000",
+            "27,900",
+            "30,700",
+            "30,700",
+            "31,500"
+          ],
+          [
+            "A573-70",
+            "42,000",
+            "70,000",
+            "30,000",
+            "33,000",
+            "33,000",
+            "36,300"
+          ],
+          [
+            "A516-55",
+            "30,000",
+            "55,000",
+            "23,600",
+            "26,000",
+            "26,000",
+            "27,000"
+          ],
+          [
+            "A516-60",
+            "32,000",
+            "60,000",
+            "25,600",
+            "28,200",
+            "28,200",
+            "28,800"
+          ],
+          [
+            "A516-65",
+            "35,000",
+            "65,000",
+            "27,900",
+            "30,700",
+            "30,700",
+            "31,500"
+          ],
+          [
+            "A516-70",
+            "38,000",
+            "70,000",
+            "30,000",
+            "33,000",
+            "33,000",
+            "34,200"
+          ],
+          [
+            "A662-B",
+            "40,000",
+            "65,000",
+            "27,900",
+            "30,700",
+            "30,700",
+            "33,700"
+          ],
+          [
+            "A662-C",
+            "43,000",
+            "70,000",
+            "30,000",
+            "33,000",
+            "33,000",
+            "36,300"
+          ],
+          [
+            "A537- Class 1",
+            "50,000",
+            "70,000",
+            "30,000",
+            "33,000",
+            "33,000",
+            "36,300"
+          ],
+          [
+            "A537- Class 2",
+            "60,000",
+            "80,000",
+            "34,300",
+            "37,800",
+            "37,800",
+            "41,500"
+          ],
+          [
+            "A633-C, D",
+            "50,000",
+            "70,000",
+            "30,000",
+            "33,000",
+            "33,000",
+            "36,300"
+          ],
+          [
+            "A678-A",
+            "50,000",
+            "70,000",
+            "30,000",
+            "33,000",
+            "33,000",
+            "36,300"
+          ],
+          [
+            "A678-B",
+            "60,000",
+            "80,000",
+            "34,300",
+            "37,800",
+            "37,800",
+            "41,500"
+          ],
+          [
+            "A737-B",
+            "50,000",
+            "70,000",
+            "30,000",
+            "33,000",
+            "33,000",
+            "36,300"
+          ],
+          [
+            "A841",
+            "50,000",
+            "70,000",
+            "30,000",
+            "33,000",
+            "33,000",
+            "36,300"
+          ],
+          [
+            "A10 (1)",
+            "30,000",
+            "55,000",
+            "23,600",
+            "26,000",
+            "26,000",
+            "27,000"
+          ],
+          [
+            "A7 (1)",
+            "33,000",
+            "60,000",
+            "25,700",
+            "28,300",
+            "28,300",
+            "29,700"
+          ],
+          [
+            "A442-55 (1)",
+            "30,000",
+            "55,000",
+            "23,600",
+            "26,000",
+            "26,000",
+            "27,000"
+          ],
+          [
+            "A442-60 (1)",
+            "32,000",
+            "60,000",
+            "25,600",
+            "28,200",
+            "28,200",
+            "28,800"
+          ],
+          [
+            "CSA Specifications"
+          ],
+          [
+            "G40.21M, 260W",
+            "37,700",
+            "59,500",
+            "25,500",
+            "28,100",
+            "28,100",
+            "30,900"
+          ],
+          [
+            "G40.21M, 300W",
+            "43,500",
+            "65,300",
+            "28,000",
+            "30,800",
+            "30,800",
+            "33,900"
+          ],
+          [
+            "G40.21M, 350W",
+            "50,800",
+            "65,300",
+            "28,000",
+            "30,800",
+            "30,800",
+            "33,900"
+          ],
+          [
+            "G40.21M, 350WT",
+            "50,800",
+            "69,600",
+            "29,900",
+            "32,900",
+            "32,900",
+            "36,100"
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "Unknown (2)",
+            "30,000",
+            "55,000",
+            "23,600",
+            "26,000",
+            "26,000",
+            "27,000"
+          ],
+          [
+            ""
+          ],
+          [
+            "Riveted Tanks:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "A7, A9 or A10 (1,3)",
+            "NA",
+            "NA",
+            "21,000",
+            "21,000",
+            "21,000",
+            "21,000"
+          ],
+          [
+            "Known (4)",
+            "Y",
+            "T",
+            "Note 4",
+            "Note 4",
+            "Note 4",
+            "Note 4"
+          ],
+          [
+            "Unknown (5)",
+            "NA",
+            "NA",
+            "21,000",
+            "21,000",
+            "21,000",
+            "21,000"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "sido retirada, cuando esté separada de soldaduras o juntas\nsoldadas al menos en una pulgada o dos veces el espesor de\nla lámina, la mayor de las condiciones.\n4.3.3.2 Si el tanque será probado hidrostáticamente, la altura\nde prueba hidrostática Ht deberá estar limitado por uno o más\nde los siguiente métodos. El tanque no deberá ser llenado por\nencima del nivel determinado por el menor valor de Ht\ncalculado a continuación:\na. Después de determinar el espesor de un anillo del\ncuerpo, Ht, es calculado de la siguiente manera\nS, Et min\n+1\nH1 =-\n2.6D\nb. Después de determinar el espesor por 4.3.2.1 para un\nárea adelgazada localmente, o para cualquier otro lugar de\ninterés en un anillo del cuerpo, Ht, es calculada así:\nH, =\nS, Et min\n2.6D\nDonde:\nHt = Altura, en pies, desde el fondo del anillo del cuerpo en\nconsideración hasta la altura de la prueba hidrostática cuando\nse evalúa un anillo completo del cuerpo; ó\n= Altura, en pies, desde el fondo de la longitud, L; (Ver 4.3.2.1)\npara las áreas de adelgazamiento más severas en cada anillo\ndel cuerpo hasta la altura de la prueba hidrostática; o\n= Altura, en pies, desde el punto más bajo en cualquier lugar\nde interés hasta la altura de la prueba hidrostática\nSt = Esfuerzo máximo de la prueba hidrostática permitido en\npsi (lb/pulg2), use el menor entre 0.88Y o 0.472T para el\nprimer y segundo anillo; use el menor entre 0.9Y o 0.519T para\nlos otros anillos.\nNota:\n1. Dependiendo de la gravedad específica del contenido\nusado para determinar el tmin, Ht puede ser menor que H.\nProbando el tanque hasta H puede llegar al límite de fluencia\nen el área corroída.\n2. Si Ht es menor que H, el propietario/operador deberá\ndeterminar la consecuencia y aceptabilidad de operación del\ntanque a H, su nivel\nmáximo de diseño de líquido.\nReparaciones para secciones por arriba de Ht deberá cumplir\ncon los requerimientos 12.3.2.\n3. Para tanques reconstruidos, St deberá estar de acuerdo\ncon el estándar aplicable.\nTabla 4.2- Eficiencias de uniones para uniones soldadas.\nEstándar\nEdición\ny año\nTipo\njunta\nde\nEficiencia\nde\nla\njunta\nAplicabilidad\no límites\nAPI 650\n7ª\ny\nA tope\n1.00\nEstándar\ndespués\nBásico\n1980-\nA tope\n0.85\nApéndice A\npresente\n- lugar RT\nA tope\n0.70\nApéndice A\n- No.RT\n1™ª - 6ª\nA tope\n0.85\nEstándar\nBásico\n(1961-\nA tope\n1.00\nApéndice\n1978)\nD&G\nAPI 12C\n14ª\ny\nA tope\n0.85\n15ª\n(1957\n-\n1958)\n3™ª-13ava\nTraslapado\na\n0.75\n3/8\"\nmáximo. t.\n(1940-\nA tope º\n0.85\n1956)\n1ero y 2do\nTraslapado\na\n0.70\n7/16\"\nmáximo. t.\n(1936-\nTraslapado\nb\n0.50+k/5\n1/4\" máximo.\n1939)\nt.\nA tope c\n0.85\nDesconocido\nTraslapado\n0.70\n7/16\" max.t.\na\nTraslapado\nb\n0.50+K/5\n1/4\" max.t\nA tope c\n0.70\nTraslapado\nd\n0.35\nNotas:\na. Doble traslape soldado completo\nb. Soldadura a filete completa con al menos 25 % un\nlado opuesto intermitente a filete completo; k = porcentaje\nde la soldadura intermitente expresado en forma decimal.\nc. Juntas a tope simple con una platina de respaldo\npermitida en los años de 1936 a 1940 y 1948 a 1954.\nd. Traslape soldado simple únicamente.\n(Texto removido)\n4.3.3.3 Alternativamente, el espesor de lámina mínimo\naceptable para tanques con diámetro igual o menor que\n200 pies podrían ser calculados de acuerdo con el\nmétodo variable de punto de diseño del estándar API\n650,3.6.4, sustituyendo \"S x E\" por \"S\"; E y S puede ser\ndefinida como en 4.3.3.1.\n4.3.3.4 El método de punto de diseño variable deberá\nser usado para tanques mayores a 200 pies de diámetro,\ncon todas las variables definidas como en 4.3.3.1\n4.3.3.5 La determinación del espesor de 4.3.3.1, 4.3.3.2\ny 4.3.3.3 considera carga por líquido solamente. Todas\nlas otras cargas deberán ser evaluadas de acuerdo al\nestándar original de construcción; y el juicio de ingeniería\ndeberá ser usado para evaluar diferente condición o\nnueva información. Cuando sea aplicable, las siguientes\ncargas deberán ser tomadas en cuenta:\nPandeo inducido por vientos\na.\nb. Cargas sísmicas.\nc.\nOperaciones con temperatura por encima de 200° F\nd. Presión externa inducida por Vacío.\nPágina 13 de 98",
+      "tablas": [
+        [
+          [
+            "Estándar",
+            "Edición y año",
+            "Tipo junta",
+            "de",
+            "Eficiencia de la junta",
+            "Aplicabilidad o límites"
+          ],
+          [
+            "API 650",
+            "7ª y",
+            "A tope",
+            "",
+            "1.00",
+            "Estándar"
+          ],
+          [
+            "después",
+            "",
+            "",
+            "",
+            "Básico"
+          ],
+          [
+            "1980-",
+            "A tope",
+            "",
+            "0.85",
+            "Apéndice A"
+          ],
+          [
+            "presente",
+            "",
+            "",
+            "",
+            "- lugar RT"
+          ],
+          [
+            "",
+            "A tope",
+            "",
+            "0.70",
+            "Apéndice A"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "- No.RT"
+          ],
+          [
+            "",
+            "1™ª - 6ª",
+            "A tope",
+            "",
+            "0.85",
+            "Estándar"
+          ],
+          [
+            "",
+            "Básico"
+          ],
+          [
+            "",
+            "(1961-",
+            "A tope",
+            "",
+            "1.00",
+            "Apéndice"
+          ],
+          [
+            "1978)",
+            "",
+            "",
+            "",
+            "D&G"
+          ],
+          [
+            "API 12C",
+            "14ª y",
+            "A tope",
+            "",
+            "0.85",
+            ""
+          ],
+          [
+            "15ª",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(1957 -",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1958)",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3™ª-13ava",
+            "Traslapado a",
+            "",
+            "0.75",
+            "3/8\" máximo. t."
+          ],
+          [
+            ""
+          ],
+          [
+            "",
+            "(1940-",
+            "A tope º",
+            "",
+            "0.85",
+            ""
+          ],
+          [
+            "1956)",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1ero y 2do",
+            "Traslapado",
+            "",
+            "0.70",
+            "7/16\""
+          ],
+          [
+            "",
+            "a",
+            "",
+            "",
+            "máximo. t."
+          ],
+          [
+            "",
+            "(1936-",
+            "Traslapado",
+            "",
+            "0.50+k/5",
+            "1/4\" máximo."
+          ],
+          [
+            "1939)",
+            "b",
+            "",
+            "",
+            "t."
+          ],
+          [
+            "",
+            "A tope c",
+            "",
+            "0.85",
+            ""
+          ],
+          [
+            "Desconocido",
+            "",
+            "Traslapado",
+            "",
+            "0.70",
+            "7/16\" max.t."
+          ],
+          [
+            "",
+            "a",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "Traslapado b",
+            "",
+            "0.50+K/5",
+            "1/4\" max.t"
+          ],
+          [
+            "",
+            "A tope c",
+            "",
+            "0.70",
+            ""
+          ],
+          [
+            "",
+            "Traslapado",
+            "",
+            "0.35",
+            ""
+          ],
+          [
+            "",
+            "d",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "e. Cargas externas causadas por tuberías, equipos\nmontados en tanques, accesorios soportados, etc.\nf.\nVolcaduras inducidas por Vientos.\ng.\nCargas debido a asentamientos.\n4.3.3.6 Como alternativa a los procedimientos descritos\narriba, cualquier adelgazamiento del cuerpo del tanque\npor debajo del grosor mínimo de pared requerido, debido\na la corrosión u otro desgaste, puede ser evaluado para\ndeterminar la suficiencia para servicio continuo empleando\nel diseño por los métodos de análisis definidos en la\nsección VIII, división 2, apéndice 4 de el código ASME; o\nAPI RP 579, sección 4, 5 o 6 según aplique. Al usar los\ncriterios de ASME, el valor de la tensión utilizada en el\ndiseño original del tanque será substituido para el valor\nSm de la división 2, si la tensión de diseño es menor o\nigual a el menor entre 2/3Y (fuerza de producción mínima\nespecificada)\no\n1/3T (mínimo\nfuerza\nextensible\nespecificada). Si el diseño original la tensión es mayor que\n2/3Y o 1/3T, entonces el menor de 1/3Y o 1/3T será\nsubstituido para Sm.\n4.3.4\nCALCULO DE ESPESOR MÍNIMO PARA\nCUERPO DE TANQUE REMACHADO\n4.3.4.1 El espesor mínimo aceptable para tanque con\ncuerpo remachado deberán ser calculados usando la\nfórmula 4.3.3.1 excepto que los siguientes criterios de\nesfuerzos permisibles y la eficiencia de las uniones\ndeberán ser utilizados:\nS= 21.000 libras por pulgada cuadrada.\nE= 1.0 para 6\" de láminas de cuerpo o más zona de\nremaches. Ver tabla 4-3 para eficiencia de unión\ndentro de los 6\" de remaches.\n4.3.4.2 La eficiencia de la unión con remaches dada en la\nTabla 4-3 son mínimos conservativos para construcción\nde tanques remachados y son incluidos para simplificar la\nevaluación de tanques remachados. Sin embargo, en\nalgunos casos esto puede ser ventajoso para calcular la\neficiencia de la unión remachada usando métodos\ncomputacionales aplicables a las uniones remachadas a\ntope o traslapadas. Cuando esta alternativa del cálculo de\nla eficiencia de las uniones remachadas es usada, deberá\nser aplicado el siguiente esfuerzo máximo permisible:\na. Para el esfuerzo de tensión máximo en la sección\ncompleta de la lámina, use el menor de 0.80Y o 0.429T;\nuse 21.000 libras por pulgada cuadrada si desconoce T ó\nY.\nb. Para el máximo esfuerzo cortante en la sección del\nremache, use 16.000 libras por pulgada cuadrada.\nc. Para el máximo esfuerzo cortante sobre la lámina o el\nremache, use 32.000 psi para remaches en un solo\ncortante y 35.000 psi, para remaches a doble cortante.\nNotas:\n4.3.4.3 Para tanques con uniones remachadas,\nse\ndeben tener consideraciones sobre como afecta la\ncorrosión tales uniones. Si los cálculos muestran que el\nexceso de espesor existe, este exceso puede ser tomado\ncomo corrosión permitida.\n4.3.4.4 Cargas no líquidas (Ver 4.3.3.5) deberá ser\nconsiderada en el análisis de los tanques remachados.\n4.3.5\nDISTORSIONES\n4.3.5.1 Las distorsiones en el cuerpo incluyen falta de\nredondez, áreas pandeadas, espacios planos, y altibajos\nen juntas soldadas.\n4.3.5.2 Las distorsiones en el cuerpo pueden ser\ncausadas por muchas condiciones tales como\nasentamientos en la fundación, falta o exceso de\npresión, fuerte vientos, una pobre fabricación o malas\ntécnicas de reparación del cuerpo, etc.\n4.3.5.3 La distorsión en el cuerpo deberá ser evaluada\nsobre una base individual para determinar si las\ncondiciones específicas son consideradas aceptables\npara que el tanque continúe en servicio y/o tomar\nacciones correctivas.\n4.3.6\nIMPERFECTOS\nLos defectos tales como grietas o laminaciones serán\nexaminados a fondo y evaluados para determinar su\nnaturaleza y grado y necesidad de reparación. Si una\nreparación es necesaria, un procedimiento de reparación\nserá desarrollado y puesto en ejecución. Los requisitos\npara reparar marcas como una cicatriz por ejemplo\ngolpes del arco, gouges, o rebabas de accesorios\nsoldados temporalmente se deben evaluar caso por caso.\nGrietas en la soldadura del cuerpo-fondo deben ser\nremovidas.\n4.3.7. Vigas de vientos y refuerzos del cuerpo\nLa evaluación del cuerpo de un tanque existente para\ndisponibilidad de servicio debe también considerar los\ndetalles y condición para cualquier viga de viento y\nrefuerzos del cuerpo. La degradación por corrosión de\nesos elementos estructurales o los elementos soldados al\ncuerpo pueden volver inadecuado esos elementos de\nacuerdo a las condiciones de diseño.\nTabla 4-3 Eficiencia de uniones para uniones\nremachadas\nTipo de\nunión\nNúmero de filas\nremachadas\nEficiencia de la\nunión E\nTraslapo\n1\n0.45\nTraslapo\n2\n0.60\nTraslapo\n3\n0.70\nTraslapo\n4\n0.75\nA tope\n2b\n0.75\nA tope\n3b\n0.85\nA tope\n45\n0.90\nA tope\n5b\n0.91\nA tope\n6º\n0.92\na Todas las uniones a tope listadas tienen refuerzo tanto\npor dentro como por fuera\n6 Número de fila en cada lado de la línea central de la\nunión\n4.3.8\nSoldaduras del Cuerpo\nPágina 14 de 98",
+      "tablas": [
+        [
+          [
+            "Tipo de unión",
+            "",
+            "Número de filas remachadas",
+            "Eficiencia de la unión E"
+          ],
+          [
+            "Traslapo",
+            "1",
+            "",
+            "0.45"
+          ],
+          [
+            "Traslapo",
+            "2",
+            "",
+            "0.60"
+          ],
+          [
+            "Traslapo",
+            "3",
+            "",
+            "0.70"
+          ],
+          [
+            "Traslapo",
+            "4",
+            "",
+            "0.75"
+          ],
+          [
+            "A tope",
+            "2b",
+            "",
+            "0.75"
+          ],
+          [
+            "A tope",
+            "3b",
+            "",
+            "0.85"
+          ],
+          [
+            "A tope",
+            "45",
+            "",
+            "0.90"
+          ],
+          [
+            "A tope",
+            "5b",
+            "",
+            "0.91"
+          ],
+          [
+            "Notas:\nA tope",
+            "6º",
+            "",
+            "0.92"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "La condición de las soldaduras del cuerpo del tanque\ndeberá ser evaluada para adecuación para servicio.\nCualquier deterioro de la soldadura existente que resulta\npor corrosión o picaduras deberá ser evaluada y\nestablecerse apropiados procedimientos de reparación o\nel tanque reevaluado si es necesario.\nAlgunos desperfectos típicos en las soldaduras a tope y\nlos procedimientos recomendados para reparaciones son\ndados en 9.6.\n4.3.9 Penetraciones Del Cuerpo\n4.3.9.1 La condición y los detalles de penetraciones\nexistentes del cuerpo (inyectores, entradas de persona,\naberturas de puertas de limpieza cleanout, etc.) serán\nrevisadas para determinar la integridad del cuerpo de un\ntanque existente. Detalles tales como tipo y grado de\nrefuerzo,\nsoldadura,\nespaciamiento, y grosor\nde\ncomponentes (reforzando la lámina, cuello inyector,\nreborde que se emperna, y tapadera), son las\nconsideraciones importantes y serán revisadas para\nsuficiencia estructural y conformidad con el estándar\ncomo-construido. Las soldaduras existentes en el cuerpo\ndel tanque que no deben ser modificadas o afectadas por\nreparaciones y estén más cercanas a lo requerido por API\nStd 650 (séptima edición o posterior) son aceptables para\nservicio continuo si las soldaduras son examinadas por el\nmétodo de partículas magnéticas y que no tenga defectos\nrechazables o indicaciones de ello. El pulir para eliminar\nlos defectos de la soldadura es permitido si el perfil que\nresulta, satisface los requisitos de espesor de la base y\ntamaño de la soldadura. Reparaciones por soldadura no\npueden ser utilizadas para aceptar los espaciamientos de\nsoldadura más cercanos que lo permitido por API Std 650\n(séptima edición o posterior) excepto lo permitido por\n9.10.2.7. Para cualquier otra no conformidad, o deterioro\ndebido a la corrosión, se deben determinar y establecer\nlos procedimientos de reparación cuando sea apropiado o\nel tanque reratiado, como se necesite.\n4.3.9.2 El espesor de pared de las boquillas deberá ser\nevaluado para presión y otras cargas.\n4.3.10 Operación en temperaturas elevadas\nTanques de construcción soldada que operan en\ntemperaturas elevadas (excediendo 200°F, pero menos\nque 500ºF) deben ser evaluados para la continuidad del\nservicio. Los requisitos de esta sección se basan en parte\nen los requisitos de API Std. 650, Apéndice M.\n4.3.10.1 Operación continuada en Temperaturas\nelevadas\n4.3.10.1.1 Tanques existentes que eran diseñados\noriginalmente y construidos bajo los requisitos de API\nStd650. Apéndice M, serán evaluado para el servicio\ncontinuado, como sigue.\na. El cuerpo del tanque será evaluado bajo conformidad\ncon 4.3.3. Exceptuando que la tensión permisible para\ntodos los anillos del cuerpo no excederá 0.80Y. El valor de\nY será tomado como el esfuerzo de fluencia mínimo\nespecificado del material del cuerpo multiplicado por el\nfactor de reducción del esfuerzo de fluencia dentro de\nAPI Std 650, Tabla M-1. Cuando el mínimo esfuerzo de\nfluencia específico del material\ndel\ncuerpo es\ndesconocido, la evaluación será basada sobre un valor\nasumido de 30.000 lbf/in.2.\nb. Si el material de la lámina del fondo en la zona crítica\nha sido reducido en grosor más allá de las provisiones\ndel permiso inferior de la corrosión permitida, si existe, el\nempalme cuerpo-fondo será evaluado para temperatura\nelevada, cabeza líquida y ciclos termales. La técnica del\nanálisis simplificado recomendada en API Std 650, M.4.\nse puede utilizar para satisfacer este requisito.\n4.3.10.2\nConversion a Operación a Temperaturas\nelevadas\nTanques existentes que no estaban originalmente\ndiseñados y construidos bajo los requisitos de API Std\n650, Apéndice M serán evaluados para un cambio del\nservicio a temperaturas elevadas como sigue.\na. El cuerpo del tanque será evaluado en conformidad\ncon el API Std 650, Apéndice M. El esfuerzo permisible\ndel cuerpo de este estándar (API Std 653) no deberá ser\nutilizado.\nb. La necesidad de un anillo anular soldado a tope con\nsoldadura será determinado en conformidad a API Std\n650, apéndice M e instalado si es requerido.\nc. El empalme cuerpo-fondo será evaluado para\ncondiciones de fatiga. Además, la suficiencia de la\nlámina del fondo en la zona crítica se basará en los\nrequisitos de este estándar.\n4.4 EVALUACIÓN DEL FONDO DEL TANQUE\n4.4.1 General\nLas estrategias para la inspección del fondo del tanque\ndeben proveer información adecuada la cual, cuando se\nutilice con los procedimientos en este estándar,\ndetermine la integridad del fondo del tanque necesaria\npara prevenir fuga de fluidos que puedan causar daño\nambiental. Se debe examinar cada aspecto del fenómeno\nde corrosión, y otra fuga potencial o mecanismo de falla.\nSe debe realizar una evaluación periódica de la\nintegridad del fondo del tanque en adición a inspecciones\ninternas especificadas en 6.4. El periodo de evaluación\ndebe ser menor o igual al intervalo de inspección interna\napropiado dado en 6.4.2 o 6.4.3. El uso de pruebas de\ndetección de fuga o sistemas de monitoreo (tales como\ndobles fondos o líneas con tuberías de detección de fuga\nbajo los fondos de tanques) satisfacerán el requerimiento\npara evaluación periódica entre inspecciones internas.\nEl asentamiento excesivo de la fundación de los tanques\nde almacenamiento puede afectar la integridad de los\ncuerpos y fondos del tanque. Para esto, existe una\npráctica reconocida que consiste en el monitoreo del\nasentamiento para evaluar la integridad de los fondos del\ntanque. Refiérase al Apéndice B para técnicas de\nevaluación del asentamiento del fondo del tanque.\nPágina 15 de 98",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "4.4.2 Causas para fallas del fondo\nLa siguiente lista muestra algunas causas históricas de\nfugas o falla del fondo del tanque que se deben considerar\nen la decisión de alinear, reparar o reemplazar este\nmismo:\na. Picaduras internas y ratas de picaduras en el servicio\nanterior.\nb. Corrosión de las uniones de soldadura (soldadura y\nzona afectada por el calor).\nc. Historia de agrietamiento de la junta de la soldadura.\nd. Esfuerzos aplicados en las láminas del fondo por\ncargas del soporte del techo y asentamiento del cuerpo.\ne. Corrosión en la parte inferior (normalmente en forma de\npicadura).\nf. Drenaje inadecuado que resulta en una superficie de\nagua fluyendo bajo el fondo del tanque.\ng. La falta de un anillo de la lámina anular cuando es\nrequerido.\nh. Asentamiento desigual que resulta en esfuerzos altos\nlocalizados en las láminas del tanque.\ni. Columnas del soporte del techo y otros soportes\nsoldados al fondo del tanque sin tener en cuenta los\nmovimientos adecuados permisibles.\nj. Rellenos de gravas o rocas de la fundación con vacíos\nen la superficie sin un adecuado llenado.\nk. Relleno no homogéneo bajo el fondo del tanque (por\nejemplo un trozo de arcilla en un relleno de fundación de\narena.\nl. Sumideros inadecuadamente soportados.\n4.4.3\nProtección Catodica de los Fondos del\nTanque\nLa fundación para la selección de los sistemas de\nprotección catódica bajo los fondos del tanque se\nencuentra en API RP 651.\n4.4.4\nProtección Interna de las Paredes del Fondo\ndel Tanque\nLa aplicación de recubrimientos para las superficies\ninternas para los fondos del tanque se encuentra en API\nRP 652.\n4.4.5\nDetección de Fuga del Fondo\nSi se va a reemplazar el fondo del tanque, se debe dar\nuna consideración para instalar un sistema de detección\nde fuga (indicador) que canalizará cualquier fuga en el\nfondo hacia una localización donde se pueda observar\ndesde la parte exterior del tanque.\n4.4.6\nMedidas del Espesor de la Lámina del fondo\nExisten varios métodos para determinar la corrosión bajo\nla lámina de fondo del tanque. Los métodos varían de\nacuerdo a la extensión que estos pueden medir de la\ncorrosión general y picaduras. Una combinación de estos\nmétodos puede ser requerida junto con técnicas de\nextrapolación y análisis para establecer las condiciones\nposibles del fondo del tanque entero. Herramientas de\nmedición como MFL (Magnetic Flux Leakage) y UT\n(Ultrasonic Thickness) son comúnmente usadas para\nexaminar fondos de tanques. Técnicas de medición UT\nson a menudo usadas para confirmar y confirmar mas\nadelante los datos obtenidos por evaluación con MFL,\npero\nestas técnicas\npodrían\nno ser requeridas\ndependiendo de los procedimientos específicos y su\naplicación. La calidad de los datos obtenidos tanto por\nlas técnicas MFL o UT depende del personal, del equipo\ny de los procedimientos. El anexo G podría ser usado\ncomo guía en calificación de personal y procedimientos\npara la obtención de datos de espesor.\n4.4.7 Espesor mínimo para las láminas del fondo del\ntanque\nLa cuantificación del espesor mínimo remanente del\nfondo del tanque basado en los resultados de las\nmediciones se puede realizar por el método descrito en\n4.4.7.1. Puede ser usada otra aproximación tal como el\nmétodo probabilístico del numeral 4.4.7.2.\n4.4.7.1. Un método aceptable para calcular el espesor\nmínimo aceptable para el fondo del tanque en general o\npor porciones es el siguiente:\nMRT=(mínimoRTb(ÓRTip) -O, (S,P, + UP,)\nDonde:\nMRT = es el espesor remanente mínimo al final de un\nintervalo Or. Este valor debe alcanzar los\nrequerimientos de la tabla 6.1 y 4.4.7.4 y 4.4.8.\nOr =\nIntervalo de operación en servicio (años a la\npróxima inspección interna) los cuales\ndeberán exceder lo permitido por 6.4.2.\nno\nRTbc = Espesor mínimo remanente del fondo del lado\nde la corrosión después de las reparaciones.\nRTip = Espesor mínimo remanente de corrosión interna\ndespués de reparaciones\nStPr = máxima rata de corrosión no reparada sobre el\nlado superior. StPr= 0 para áreas recubiertas del\nfondo. La expectativa de vida del recubrimiento\ndebe ser igual o exceder Or para usar S¡P = 0.\nUPr =\nmáxima rata de corrosión en el fondo. Para\ncalcular la rata de corrosión, use el espesor\nmínimo remanente después de reparaciones.\nAsuma una rata lineal basada en la edad de los\ntanques. UP=0 para áreas con protección\ncatódica efectiva.\nNota: Para áreas de un fondo que ha sido escaneado por\nflujo magnético (MFL) y no tiene protección catódica\nefectiva, el espesor usado para calcular UPr debe ser el\nmenor del umbral MFL o el espesor mínimo de áreas\ncorroídas que no han sido reparadas. El umbral de MFL\nes definido como el \"mínimo espesor remanente\" a ser\ndetectado en las áreas inspeccionadas. Este valor es\nPágina 16 de 98",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "predeterminado por el dueño del tanque basado en\nintervalos de inspección deseados.\nLas áreas con corrosión en el fondo del tanque que son\nreparadas\ndeberían ser evaluadas con la rata de\ncorrosión para el área reparada a menos que la causa de\nla corrosión haya sido eliminada. La evaluación es hecha\nusando la rata de corrosión del área reparada para UPr y\nagregando el espesor de un parche al término\n\"mínimoRTb(ÓRTip ·\"\nNota: Corrosión en el fondo incluye pérdidas de metal\naislado o corrosión general.\n4.4.7.2. Por el método probabilístico, un análisis\nestadístico es hecho de los datos de espesor medidos\n(ver 4.4.6) proyectando espesores remanentes, basados\nen muestras escaneadas del fondo.\n4.4.7.3 Si los mínimos espesores del fondo en el final de\nun periodo de operación son calculados para ser menor\nque el espesor mínimo del fondo renovado dado en la\ntabla 6.1, o menor que el espesor mínimo del fondo\nrenovado que provee un aceptable riesgo como se\ndetermina por una metodología de inspección, el fondo\ndeberá ser recubierto, reparado, reemplazado o el\nintervalo de tiempo a la siguiente inspección acortada.\n4.4.7.4 A menos que un análisis de esfuerzos sea\nrealizado, el espesor mínimo del las láminas del fondo del\ntanque en la zona crítica del fondo del tanque definido en\nel parágrafo 9.10.1.2 deberá ser el más pequeño de la\nmitad del espesor original de la lámina\n(Sin incluir la corrosión permitida originalmente) o el 50\npor ciento del tmin del anillo del cuerpo más bajo por el\nparágrafo 4.3.3.1 pero no menos\nde 0.1 pulgadas.\nPicaduras aisladas no afectarán apreciablemente los\nesfuerzos en la lámina.\n4.4.7.5 La reparación de picaduras internas, cuando es\nrealizado para extender el periodo de operación en\nservicio, deberá ser por soldadura de la cavidad, o un\nrecubrimiento de soldadura o un parche seguido por\ninspecciones y ensayos. La extensión de las soldaduras\nreparadas esta limitada en la zona crítica de acuerdo con\n9.10.1.2\n4.4.7.6 El tratamiento de la picadura en el fondo usando\nmétodos diferentes a reparación por soldadura (por\nejemplo, recubrimientos, uniones (caulking) no puede ser\nusado para incrementar RTip para calcular el MRT.\n4.4.7.7 El espesor de la proyección de la láminas del\nfondo justo después del cuerpo medido en el borde de la\nparte exterior del filete de soldadura entre el fondo y el\ncuerpo no deberá ser menor de 0.1 pulgada. La\nproyección de la lámina del fondo después borde de la\nsoldadura exterior entre el cuerpo y el fondo deberá ser\nal menos de 3/8\".\n4.4.8\nEspesor Mínimo Para Anillos De Láminas\nAnulares\n4.4.8.1 Debido a los requisitos de esfuerzos, el espesor\nmínimo de un anillo de lámina anular es usualmente\nmayor a 0.10 pulgadas. Las picaduras aisladas no\nafectarán apreciablemente la resistencia de la lámina. A\nmenos que un análisis de esfuerzos sea realizado, el\nespesor de la lámina anular no deberá ser menor a lo\ndeterminado en la sección 4.4.8.2 o 4.4.8.3, la que\naplique.\n4.4.8.2 Para tanque en servicio con un producto cuya\ngravedad específica sea menor a 1.0, el cual requiere\nláminas anulares para otras consideraciones como\ncargas sísmicas, el espesor de las láminas anulares no\ndeberá ser menor que el espesor dado en la tabla 4-4,\nmás cualquier tolerancia por corrosión especificada.\n4.4.8.3 Para tanques en servicio con un producto cuya\ngravedad específica sea igual o mayor a 1.0, el cual\nrequerirá láminas anulares para otras consideraciones\ncomo carga sísmica, el espesor de la lámina anular\ndeberá estar de acuerdo con la tabla 3-1 del estándar API\n650 más cualquier corrosión permitida especificada.\n4.4.8.4 Para tanques que utilicen láminas anulares para\nconsideraciones sísmicas, una evaluación sísmica\ndeberá realizarse de acuerdo a los requisitos del\nestándar aplicable, usando el espesor actual de las\nláminas anulares existentes.\n4.4.8.5 Para el espesor y proyección de la lámina anular\ndespués del cuerpo refiérase a 4.4.7.7.\n4.5 EVALUACIÓN DE LA FUNDACIÓN DEL TANQUE\n4.5.1 General\n4.5.1.1 Las principales causas del deterioro de la\nfundación son el asentamiento, erosión, agrietamiento, y\ndeterioro del concreto que se inician por: calcinamiento,\nataque por agua bajo el fondo, ataques por heladas,\nalcalinos y ácidos. Para asegurar la adecuación al\nservicio, todas las fundaciones del tanque se deben\nexaminar periódicamente (Ver 6.3).\n4.5.1.2 Algunos mecanismos de deterioro del concreto se\ndescriben brevemente aquí:\na. El calcinamiento (pérdida de agua de hidratación)\npuede ocurrir cuando el concreto se expone a una\ntemperatura suficientemente alta por un periodo de\ntiempo. Durante periodos intermedios de enfriamiento, el\nconcreto puede absorber la humedad, puede hincharse,\nperder su resistencia y agrietarse.\nb.\nEl deterioro del\nconcreto\nexpuesto al agua\nsubterránea puede causarse por ataque químico, por\ncambios cíclicos en la temperatura, y por humedad.\nPágina 17 de 98",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Tabla 4-4 - Espesor de la lámina anular del fondo (pulg.)\n(Gravedad específica del producto<1.0)\nEspesor de\nlámina ª para\nel primer\ncuerpo\nEsfuerzos º en el Primer anillo del\ncuerpo\n(Libras por pulgada cuadrada)\nAnillos\n<24.300\n<27.000\n<29.700\n<32.400\n(pulg.)\nT <= 0.75\n0.17\n0.20\n0.23\n0.30\n0.75 <<= 1.00\n0.17\n0.22\n0.31\n0.38\n1.00<t <= 1.25\n0.17\n0.26\n0.38\n0.48\n1.25<t <= 1.5\n0.22\n0.34\n0.47\n0.59\nt>1.50\n0.27\n0.40\n0.53\n0.68\nNota: El espesor especificado en la tabla esta basado en\nla fundación suministrando un soporte uniforme bajo todo\nel ancho de la lámina anular. A menos que la fundación\neste apropiadamente compactada, particularmente en el\nlado interior del anillo pared de concreto, asentamiento\nproducirá adicionales esfuerzos en la lámina anular.\na\nEspesor de lámina se refiere al cuerpo del tanque como\nse construyó.\n\" Los esfuerzos son calculados de [2.34 D (H-1)]/t\nc. La expansión de mezclas congeladas en concreto\nporoso, o en concreto con grietas por asentamientos\nmenores o por temperatura, puede resultar en\nresquebrajamiento y/o desarrollo de grietas estructurales\ngraves.\nd. Los alcalinos de tipo sulfato, y en menor extensión\nlos cloros, pueden actuar corrosivamente para destruir la\nunión /adhesión del concreto.\ne. Las grietas de temperatura (grietas finas de ancho\nuniforme) no afectan seriamente la fuerza de la estructura\nde la fundación de concreto; sin embargo estas grietas\npueden ser puntos de acceso potenciales para humedad\no filtraciones de agua que pueden resultar eventualmente\nen corrosión del acero de refuerzo.\n4.5.2 Reparación O Reemplazo De La Fundación\n4.5.2.1 Si es necesario reemplazar o reparar, se deben\nrestaurar las fundaciones de acuerdo con los límites de\ntolerancia de 10.5.6.\n4.5.2.2 Las bases de concreto, paredes del anillo, y raíz\nque muestran la evidencia de desmoronamiento, grietas\nestructurales o deterioro general, se deben reparar para\nprevenir que entre agua a la estructura de concreto y\ncorroa el acero de refuerzo.\n4.5.3\nTornillos De Anclaje\nLa distorsión de los tornillos de anclaje y agrietamiento\nexcesivo de las estructuras de concreto en las cuales se\nencuentran incrustados, pueden ser indicaciones de\nserios asentamientos de la fundación o una indicación de\nlevantamiento de sobre presión en el tanque.\nPágina 18 de 98",
+      "tablas": [
+        [
+          [
+            "Espesor de lámina ª para el primer cuerpo",
+            "Esfuerzos º en el Primer anillo del cuerpo (Libras por pulgada cuadrada)"
+          ],
+          [
+            "Anillos",
+            "<24.300",
+            "<27.000",
+            "<29.700",
+            "<32.400"
+          ],
+          [
+            "(pulg.)",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "T <= 0.75",
+            "0.17",
+            "0.20",
+            "0.23",
+            "0.30"
+          ],
+          [
+            "0.75 <<= 1.00",
+            "0.17",
+            "0.22",
+            "0.31",
+            "0.38"
+          ],
+          [
+            "1.00<t <= 1.25",
+            "0.17",
+            "0.26",
+            "0.38",
+            "0.48"
+          ],
+          [
+            "1.25<t <= 1.5",
+            "0.22",
+            "0.34",
+            "0.47",
+            "0.59"
+          ],
+          [
+            "t>1.50",
+            "0.27",
+            "0.40",
+            "0.53",
+            "0.68"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "SECCIÓN 5 - CONSIDERACIONES DE FRACTURA FRÁGIL\n5.1 GENERAL\nEsta sección provee un procedimiento para asegurar\nque tanques existentes\npuedan continuar su\noperación o cambiar de servicio con respecto al\nriesgo de fractura por fragilidad aunque no es\nsuplemento o reemplaza los requerimientos de la\nSección 10 para la prueba hidrostática de tanques\nreparados, modificados o reconstruidos.\nEste\nprocedimiento\naplica\na\ntanto\ntanques\nel\nremachados como soldados, sin embargo,\nprocedimiento esta basado primordialmente en la\nexperiencia y datos obtenidos de tanques soldados.\n5.2 CONSIDERACIONES BÁSICAS\n5.2.1 Un diagrama de flujo se muestra en la figura 5-\n1, el cual se utiliza para presentar el procedimiento\naseguramiento para fallas causadas por una fractura\nfrágil. El diagrama de flujo esta basado en los\nsiguientes principios:\n5.2.2 En todos los incidentes reportados de la falla de\nun tanque debido a una fractura por fragilidad, la falla\nocurrió poco después del montaje durante la prueba\nhidrostática así como también en el primer llenado\nen clima frío, después de un cambio a un servicio de\ntemperatura más baja, o después\nde una\nreparación/alteración. Esta experiencia muestra que\nuna vez que el tanque demuestra su capacidad de\nresistir los efectos combinados del nivel máximo de\nlíquido (mayores tensiones) y temperaturas bajas de\noperación sin ninguna pérdida, el riesgo debido a una\nfractura por fragilidad en servicio continuado es\nmínimo.\n5.2.3 Se debe evaluar cualquier cambio en el servicio\npara determinar si este incrementa el riesgo de falla\ndebido a una fractura por fragilidad. En el evento de\nun cambio a un servicio más severo (tal como\noperaciones a baja temperatura o manejo de un\nproducto a una gravedad específica más alta), es\nnecesario considerar la necesidad de una prueba\nhidrostática para demostrar el buen estado para un\nservicio nuevo más severo. Se deben considerar los\nsiguientes aspectos:\na. La posibilidad de reparaciones o alteraciones\ndesde la prueba hidrostática original que no\ncumpla los requerimientos para este estándar.\nb. Deterioro del tanque desde la prueba hidrostática\noriginal.\n5.3 PROCEDIMIENTO DE ASEGURAMIENTO\n5.3.1 El procedimiento de evaluación ilustrado en el\ncuadro 5-1 será utilizado. Cada uno de los pasos\nclaves, numerados del 1 al 11 en el árbol de decisión,\ncorresponde secuencialmente a las explicaciones\nproporcionadas luego.\n5.3.2 Paso 1- Los tanques cumplen los requisitos de API\nStd 650 (séptima edición o más adelante) o API Std 650.\nApéndice G (quinto y sextas ediciones) para reducir al\nmínimo el riesgo de fractura frágil. Alternativamente, los\ntanques pueden cumplir con los requerimientos de\ndureza según API Std650 (séptima edición o posterior)\npor ensayo de impacto en muestras de un número\nrepresentativo de láminas del cuerpo.\n5.3.3 Paso 2- Muchos tanques que continúan\nfuncionando con exito en el mismo servicio no fueron\nconstruidos a bajo API Std 650 (véase las ediciones y\napendices nombrados en 5.3.2)\nEstos tanques son\npotencialmente susceptibles a fallar debido a fractura\nfrágil y requieren una evaluación según lo ilustrado en el\nárbol de decisión.\n5.3.4 Paso 3- Para el propósito de este aseguramiento, la\nprueba hidrostática demuestra la aptitud para continuar\nen servicio con el mínimo riesgo de falla por fractura por\nfragilidad si todos los requerimientos de reparaciones,\nalteraciones, reconstrucción, o cambio en el servicio\nestán de acuerdo con este estándar (incluyendo la\nnecesidad de una prueba hidrostática después de\nreparaciones, modificaciones o Alteraciones mayores).\nLa efectividad de ésta prueba para demostrar el buen\nestado para continuar en servicio es respaldado por la\nexperiencia industrial.\n5.3.5 Paso 4 - Si el espesor del cuerpo del tanque es\nmenor a 0.5 pulg., el riesgo de falla por fragilidad es\nmínimo, previendo que se ha realizado una evaluación\npara disponibilidad de servicio del tanque de acuerdo con\nla Sección 4. Se debe usar para el aseguramiento el\nespesor nominal original de la lámina más gruesa del\ncuerpo del tanque.\n5.3.6 Paso 5 - Ninguna de las fallas conocidas del tanque\ndebido a una fractura por fragilidad han ocurrido a\ntemperaturas del metal del cuerpo de 60º F o mayores.\nAspectos similares en contra de esta falla se pueden\nmejorar incrementando la temperatura del metal\ncalentando los contenidos del tanque.\n5.3.7 Paso 6- La experiencia en la industria y las pruebas\nde laboratorio han mostrado que se requiere una tensión\nde membrana en las láminas del cuerpo del tanque de al\nmenos 7 ksi para causar falla por fragilidad.\n5.3.8 Paso 7- Los tanques construidos de aceros listados\nen la figura 2-1 de API Std 650 se pueden usar de\nacuerdo a sus curvas de excepción, teniendo en cuenta\nque una evaluación de disponibilidad de servicio\nconforme a la Sección 4 de este estándar ha sido\nrealizada. Adicionalmente, tanques construidos\nde\nacuerdo con otros códigos nacionalmente reconocidos o\nestándares conteniendo reglas de dureza (por ejemplo el\nAPI Std 620) pueden ser utilizados de acuerdo con las\nreglas de dureza actual de ese estándar. Tanques\nPágina 19 de 98",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "fabricados\ncon\naceros\nde\nespecificaciones\ndesconocidas, de mayor espesor a 1/2 pulgada y\noperando en un temperatura del metal del cuerpo\ndebajo de 60ºF, puede ser utilizada si el tanque\ncumple los requerimientos de la figura 5-2. Se debe\nusar el espesor nominal original para lámina de\ncuerpo de mayor espesor del tanque para el juicio.\nPara los tanques que no se calientan, la temperatura\ndel metal del cuerpo debe ser la temperatura del\nmetal del diseño como se define en API Std 650,\n2.2.9.3.\n5.3.9 Paso 8- El riesgo de pérdida debido a una\nfractura inelástica es mínimo una vez el tanque haya\ndemostrado que puede operar a un nivel del líquido\nmáximo especificado a la temperatura más baja sin\nfalla. Para el propósito de este juicio, la expectativa\nde temperatura más baja se define como la\ntemperatura más baja del primer día, como se\nmuestra en la figura 2-2 de API Std 650.\nEs\nnecesario chequear los registros recolectados del\ntanque y los registros metereológicos para asegurar\nque el tanque haya operado al nivel del líquido\nmáximo especificado cuando la temperatura del\nprimer día era tan baja como se muestra en API Std\n650, figura 2-2.\nNota: Para tanques bajo calor, la temperatura del\nmetal del cuerpo debe ser igual a la temperatura del\nmetal de diseño como se define en 2.2.9.3 de API Std\n650. El espesor nominal original para lámina del\ncuerpo del tanque de mayor espesor se debe usar\npara la fijación.\n5.3.10 Paso 9- Se puede realizar una evaluación para\nestablecer un cubrimiento de operación seguro para\nun tanque basado en la historia de la operación. Esta\nevaluación se debe basar en la combinación más severa\nde temperatura y nivel del líquido experimentado por el\ntanque durante su servicio.\nLa evaluación debería\nmostrar que el tanque necesita ser reparado u operado\nde manera distinta; existen muchas opciones:\na. Restrinja el nivel del líquido.\nb.\nRestrinja la temperatura mínima del metal.\nC.\nCambie el servicio a un producto almacenado con\nuna gravedad específica inferior.\nd.\nCombinaciones de a, b, y c, arriba mencionadas.\nEl propietario u operador también puede realizar un\nanálisis más riguroso para determinar el riesgo de falla\nhaciendo un análisis mecánico de fractura basado en\nprincipios y prácticas establecidas. Los procedimientos y\ncriterios de aceptación para la conducir un análisis\nalterno no se incluyen en este estándar.\n5.3.11 Paso 10 - Todas las reparaciones, alteraciones, y\nreposiciones se deben hacer conforme a este estándar.\n5.3.12 Paso 11- Se debe realizar un juicio para\ndeterminar si el cambio de sitio en el servicio proporciona\nun mayor riesgo de pérdida debido a una fractura\ninelástica. El servicio se debe considerara más severo y\ncrea un mayor riesgo de una fractura inelástica si la\ntemperatura del servicio se reduce (por ejemplo, cambiar\nde un servicio caliente de aceito a un producto de\ntemperatura ambiente), o el producto se cambia uno con\nuna gravedad específica mayor y así se incrementan las\ntensiones\nPágina 20 de 98",
+      "tablas": []
+    }
+  ]
+}

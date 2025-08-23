@@ -1,0 +1,975 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p31_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\n300V\n600V\nAlpha\n(conductors)\nCarol\n(conductors)\nBelden\n(conductors)\n4\n2\n4\n2\n4\n2\n25164\n25162\n---\n9940\n25524\n25522\nC2688\n7895A*\n* NOTE: If Belden 7895A wire is used it will be necessary to use 2 conduit\nadapters per device if wired as a \"daisy chain.\"\nSee Table 2.6.1-D\nTable 2.6.1-A\nIMPORTANT: Line Voltage (horizontal terminal bottom (PE) must NOT be shielded wire.\nAll line voltage wiring must be no greater than 16 AWG (19/0.3mm) THHN, TFFN or equal.\nThe following table provides a guide for converting from NEMA Enclosure Type Numbers of IEC Enclosure Classification Designations.\nThe NEMA Types meet or exceed the test requirements for the associated IEC Classifications; for this reason the table should not be used\nto convert from IEC classifications to NEMA Types and the NEMA to IEC conversion should be verified by test.\nNEMA Enclosure Type\nNumber\nIEC Enclosure\nDesignation\n1\nIP10/IP40/IP20\n2\nIP11\n3\nIP54\n3R\nIP14\n3S\nIP54\n4 and 4X\nIP56\n5\nIP52\n6 and 6P\nIP67\n12 and 12K\nIP52\n13\nIP54\nTable 2.6.1-B\nInternational Wire Size Conversion Table: All dimensions shown are as accurate as possible, however, when converting\nAWG, SWG, inches and metric dimensions, round-off errors do occur. Wire and cable also vary depending upon\nmanufacturer.\nAmerican or\nBrown &\nSharpe's\nAWG\nBritish\nStandard\nSWG\nNominal\nConductor\nDiameter (0)\n(inches)\nFractional\nEquivalent\n(inches)\nNominal\nConductor\nDiameter (0)\n(mm)\nCross Sectional\nConductor Area\nSq mm\n(mm2)\n**\nStranded Wire Construction\nNumber of Strands\nx Diameter of Strands\n(inches)\n(mm)\n16\n-\n0.051\n-\n1.30\n1.33\n26 x .010\n19 x .30\n18\n19\n0.040\n-\n1.02\n0.82\n16 x .010\n7 × .4\n20\n21\n0.032\n-\n0.81\n0.52\n10 x .010\n16 x .2\n24\n25\n0.020\n-\n0.51\n0.20\n7 x .008\n7 × .2\nTable 2.6.1-C\n31",
+      "tablas": [
+        [
+          [
+            "Alpha (conductors)",
+            "Carol (conductors)",
+            "Belden (conductors)"
+          ],
+          [
+            "4",
+            "2",
+            "4",
+            "2",
+            "4",
+            "2"
+          ],
+          [
+            "25164",
+            "25162",
+            "---",
+            "",
+            "9940",
+            ""
+          ],
+          [
+            "25524",
+            "25522",
+            "C2688",
+            "",
+            "7895A*",
+            ""
+          ]
+        ],
+        [
+          [
+            "NEMA Enclosure Type Number",
+            "IEC Enclosure Designation"
+          ],
+          [
+            "1",
+            "IP10/IP40/IP20"
+          ],
+          [
+            "2",
+            "IP11"
+          ],
+          [
+            "3",
+            "IP54"
+          ],
+          [
+            "3R",
+            "IP14"
+          ],
+          [
+            "3S",
+            "IP54"
+          ],
+          [
+            "4 and 4X",
+            "IP56"
+          ],
+          [
+            "5",
+            "IP52"
+          ],
+          [
+            "6 and 6P",
+            "IP67"
+          ],
+          [
+            "12 and 12K",
+            "IP52"
+          ],
+          [
+            "13",
+            "IP54"
+          ]
+        ],
+        [
+          [
+            "American or Brown & Sharpe's AWG",
+            "British Standard SWG",
+            "Nominal Conductor Diameter (0) (inches)",
+            "Fractional Equivalent (inches)",
+            "Nominal Conductor Diameter (0) (mm)",
+            "Cross Sectional Conductor Area Sq mm (mm2)",
+            "** Stranded Wire Construction Number of Strands x Diameter of Strands (inches) (mm)"
+          ],
+          [
+            "16",
+            "-",
+            "0.051",
+            "-",
+            "1.30",
+            "1.33",
+            "26 x .010",
+            "19 x .30"
+          ],
+          [
+            "18",
+            "19",
+            "0.040",
+            "-",
+            "1.02",
+            "0.82",
+            "16 x .010",
+            "7 × .4"
+          ],
+          [
+            "20",
+            "21",
+            "0.032",
+            "-",
+            "0.81",
+            "0.52",
+            "10 x .010",
+            "16 x .2"
+          ],
+          [
+            "24",
+            "25",
+            "0.020",
+            "-",
+            "0.51",
+            "0.20",
+            "7 x .008",
+            "7 × .2"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nCONDUIT CONNECTOR ADAPTERS\nMetric to 1/2 inch NPSL Female\nDevice\nFireye Part Number\nNXC04 Servomotor\n35-321\nNXC12 Servomotor\n35-321\nNXC20 Servomotor\n35-322\nNXC40 Servomotor\n35-372\nNXIATS Inlet Air Sensor\n35-336\nNXO2INT Oxygen Interface\n35-372\nAll O2 Probe Assembly\n35-372\nTable 2.6.1-D\n2.6.2\nGrounding cable screens\nTwo screen termination clamps are provided on the PPC6000 for termination of cable screens (copper braid\ntype) where necessary, if the unit is used with a daughter board the screens of these cables MUST also be\nterminated to the cable clamps and the screen and associated insulation left on the cable until as close as\npossible to the terminals to which they are connected. Where screened cables are required to run through one\nunit to connect to another a terminal is provided to allow the screens to be connected, by forming a 'tail' with\nthe braided screen of each cable, the length of unscreened cable should be kept as short as possible but in\nany case MUST not exceed 13/16\" (30mm), per cable 'tail'.\nConnect all signal cable 'braid' screens to ground (earth) using the screen termination clamps provided on the\ncontrol. Connect all cable screens to ground (earth) at the control only, with the exception of the cables that\nconnect the temperature and pressure sensors where fitted. Where the wiring is 'run through' one unit to\nconnect to another terminals are provided to ensure the screen connection is maintained.\n(1)\nThe cable should be prepared by cutting around the\nouter insulation, taking care not to damage the screen\n(1).\n|+- 3/8in. (10mm)\nO\nO\n(2)\nPull the insulation apart to expose 3/8 in. (10 mm) of the\nscreen (2).\nSlide the exposed braid screen down between the\nvertical cable clamps on the PPC6000. The conductive\ncushion provides grounding (earthing).\n(3)\n2.6.3 GROUND (EARTH) connection\nThe PPC6000 MUST be connected to ground (earth); the connection should be made at the stud with the tag\nshowing the Ground (earth) symbol. This connection is required to maintain the overall electrical safety of the\ninstallation and ensure the EMC performance of the equipment; failure to comply with the wiring requirements\nwill affect the performance of the system and may cause a hazardous condition to occur. Ensure that a good\nelectrical connection is made between both the unit and the burner panel then between the burner panel and\nground (earth). Where necessary, scrape any paint away from connection points and use shake-proof\nwashers to ensure a reliable electrical connection. Always use the largest cross-sectional area ground (earth)\nwire possible.\n32",
+      "tablas": [
+        [
+          [
+            "CONDUIT CONNECTOR ADAPTERS Metric to 1/2 inch NPSL Female"
+          ],
+          [
+            "Device",
+            "Fireye Part Number"
+          ],
+          [
+            "NXC04 Servomotor",
+            "35-321"
+          ],
+          [
+            "NXC12 Servomotor",
+            "35-321"
+          ],
+          [
+            "NXC20 Servomotor",
+            "35-322"
+          ],
+          [
+            "NXC40 Servomotor",
+            "35-372"
+          ],
+          [
+            "NXIATS Inlet Air Sensor",
+            "35-336"
+          ],
+          [
+            "NXO2INT Oxygen Interface",
+            "35-372"
+          ],
+          [
+            "All O2 Probe Assembly",
+            "35-372"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\n2.6.4\nGround (earth) Connection (display unit)\nThe display unit MUST be connected to ground (earth); the connection should be made at the stud with the tag\nshowing the Ground (earth) symbol. This connection is required to maintain the overall electrical safety of the\ninstallation and ensure the EMC performance of the equipment; failure to comply with the wiring requirements\nwill affect the performance of the system and may cause a hazardous condition to occur. Ensure that a good\nelectrical connection is made between both the unit and the burner panel then between the burner panel and\nground (earth). Where necessary, scrape any paint away from connection points and use shake-proof\nwashers to ensure a reliable electrical connection. The screen of the signal cable MUST not be used to\nprovide the electrical safety ground (earth), a separate connection using the largest cross-sectional area\nground (earth) wire possible MUST be made.\nIf the display unit is mounted into a burner cabinet door ensure there is a good electrical connection between\nthe door and the main cabinet in addition to a good electrical contact between the display unit and the door.\n2.6.5\nTerminal Designation\nAll terminals within the system have 'unique' terminal designations to reduce the possibility of wiring errors.\nThis information is tabulated below:\nTerminal Number\nLocation\nFunction\nVoltage Range\nPA1\nPPC6000\n24Vac Supply for Servos, Display etc.\n24 - 40Vac\nPA2\nPPC6000\n24Vac Supply for Servos, Display etc.\n24 - 40Vac\nPA3\nPPC6000\nCAN + (CANbus)\n0 - 5V\nPA4\nPPC6000\nCAN - (CANbus)\n0 - 5V\nPA5\nPPC6000\nDigital Input 1\n0 - 5Vdc\nPA6\nPPC6000\nDigital Input 2\n0 - 5Vdc\nPA7\nPPC6000\nDigital Input 3\n0 - 5Vdc\nPA8\nPPC6000\nDigital Input 4\n0 - 5Vdc\nPA9\nPPC6000\nHigh purge request\n0 - 5Vdc\nPA10\nPPC6000\nAuto\n0 - 30Vdc\nPA11\nPPC6000\nDigital Input Common\n0 -5V\nPA12\nPPC6000\nAnalog Input 5 (Aux mod./remote\nSetpoint)\n0 - 5Vdc\nPA13\nPPC6000\nSensor Supply (+30Vdc)\n0-30Vdc\nPB1\nPPC6000\n24Vac Supply for Servos, Display etc.\n24 - 40Vac\nPB2\nPPC6000\n24Vac Supply for Servos, Display etc.\n24 - 40Vac\nPB3\nPPC6000\nCAN + (CANbus)\n0 - 5V\nPB4\nPPC6000\nCAN - (CANbus)\n0 - 5V\nPB5\nPPC6000\nRS485 comms A (+)\n0 - 5V\nPB6\nPPC6000\nRS485 comms B (-)\n0- 5V\nPB7\nPPC6000\nRS485 comms 0 Volt (not shield)\n0 - 5V\nPB8\nPPC6000\nSensor Supply (30V)\n0 - 5V\nPB9\nPPC6000\nSensor Input\n0 - 5V\nPB10\nPPC6000\nSensor 0 Volt (not shield)\n0 - 5V\nPB11\nPPC6000\nIsolated comms (Modbus) A+\n0 - 5V\nPB12\nPPC6000\nIsolated comms (Modbus) B -\n0 - 5V\nPB13\nPPC6000\nIsolated 0 Volt (Modbus)\n0 - 5V\nPE1\nPPC6000\nPPC6000 neutral (L2)\n115 - 230Vac\nPE2\nPPC6000\nPPC6000 live (L1)\n115 - 230Vac\nPE3\nPPC6000\nControlled Shutdown relay output\n0 - 230Vac\nPE4\nPPC6000\nAlarm Relay\n0 - 230Vac\nPE5\nPPC6000\nS/S Relay\n0 - 230Vac\n33",
+      "tablas": [
+        [
+          [
+            "Terminal Number",
+            "Location",
+            "Function",
+            "Voltage Range"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PA1",
+            "PPC6000",
+            "24Vac Supply for Servos, Display etc.",
+            "24 - 40Vac"
+          ],
+          [
+            "PA2",
+            "PPC6000",
+            "24Vac Supply for Servos, Display etc.",
+            "24 - 40Vac"
+          ],
+          [
+            "PA3",
+            "PPC6000",
+            "CAN + (CANbus)",
+            "0 - 5V"
+          ],
+          [
+            "PA4",
+            "PPC6000",
+            "CAN - (CANbus)",
+            "0 - 5V"
+          ],
+          [
+            "PA5",
+            "PPC6000",
+            "Digital Input 1",
+            "0 - 5Vdc"
+          ],
+          [
+            "PA6",
+            "PPC6000",
+            "Digital Input 2",
+            "0 - 5Vdc"
+          ],
+          [
+            "PA7",
+            "PPC6000",
+            "Digital Input 3",
+            "0 - 5Vdc"
+          ],
+          [
+            "PA8",
+            "PPC6000",
+            "Digital Input 4",
+            "0 - 5Vdc"
+          ],
+          [
+            "PA9",
+            "PPC6000",
+            "High purge request",
+            "0 - 5Vdc"
+          ],
+          [
+            "PA10",
+            "PPC6000",
+            "Auto",
+            "0 - 30Vdc"
+          ],
+          [
+            "PA11",
+            "PPC6000",
+            "Digital Input Common",
+            "0 -5V"
+          ],
+          [
+            "PA12",
+            "PPC6000",
+            "Analog Input 5 (Aux mod./remote Setpoint)",
+            "0 - 5Vdc"
+          ],
+          [
+            "PA13",
+            "PPC6000",
+            "Sensor Supply (+30Vdc)",
+            "0-30Vdc"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PB1",
+            "PPC6000",
+            "24Vac Supply for Servos, Display etc.",
+            "24 - 40Vac"
+          ],
+          [
+            "PB2",
+            "PPC6000",
+            "24Vac Supply for Servos, Display etc.",
+            "24 - 40Vac"
+          ],
+          [
+            "PB3",
+            "PPC6000",
+            "CAN + (CANbus)",
+            "0 - 5V"
+          ],
+          [
+            "PB4",
+            "PPC6000",
+            "CAN - (CANbus)",
+            "0 - 5V"
+          ],
+          [
+            "PB5",
+            "PPC6000",
+            "RS485 comms A (+)",
+            "0 - 5V"
+          ],
+          [
+            "PB6",
+            "PPC6000",
+            "RS485 comms B (-)",
+            "0- 5V"
+          ],
+          [
+            "PB7",
+            "PPC6000",
+            "RS485 comms 0 Volt (not shield)",
+            "0 - 5V"
+          ],
+          [
+            "PB8",
+            "PPC6000",
+            "Sensor Supply (30V)",
+            "0 - 5V"
+          ],
+          [
+            "PB9",
+            "PPC6000",
+            "Sensor Input",
+            "0 - 5V"
+          ],
+          [
+            "PB10",
+            "PPC6000",
+            "Sensor 0 Volt (not shield)",
+            "0 - 5V"
+          ],
+          [
+            "PB11",
+            "PPC6000",
+            "Isolated comms (Modbus) A+",
+            "0 - 5V"
+          ],
+          [
+            "PB12",
+            "PPC6000",
+            "Isolated comms (Modbus) B -",
+            "0 - 5V"
+          ],
+          [
+            "PB13",
+            "PPC6000",
+            "Isolated 0 Volt (Modbus)",
+            "0 - 5V"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PE1",
+            "PPC6000",
+            "PPC6000 neutral (L2)",
+            "115 - 230Vac"
+          ],
+          [
+            "PE2",
+            "PPC6000",
+            "PPC6000 live (L1)",
+            "115 - 230Vac"
+          ],
+          [
+            "PE3",
+            "PPC6000",
+            "Controlled Shutdown relay output",
+            "0 - 230Vac"
+          ],
+          [
+            "PE4",
+            "PPC6000",
+            "Alarm Relay",
+            "0 - 230Vac"
+          ],
+          [
+            "PE5",
+            "PPC6000",
+            "S/S Relay",
+            "0 - 230Vac"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nTerminal Number\nLocation\nFunction\nVoltage Range\nPE6\nPPC6000\nS/S Relay\n0 - 230Vac\nPE7\nPPC6000\nIgn Prove (Low Fire output)\n0 - 230Vac\nPE8\nPPC6000\nPurge Prove (High Purge output)\n0 - 230Vac\nPE9\nPPC6000\nProfile 1 Select\n0 - 230Vac\nPE10\nPPC6000\nProfile 2 Select\n0 - 230Vac\nPE11\nPPC6000\nProfile 3 Select\n0 - 230Vac\nPE12\nPPC6000\nProfile 4 Select\n0 - 230Vac\nPK1\nOn Servomotor\n24Vac Supply\n24 - 40Vac\nPK2\nOn Servomotor\n24Vac Supply\n24 - 40Vac\nPK3\nOn Servomotor\nCAN +\n0 - 5V\nPK4\nOn Servomotor\nCAN -\n0 - 5V\nPK5\nOn Servomotor\nScreen connection\nNot applicable\nPL1\nOxygen Interface\nUnit Supply (live L1)\n115 - 230Vac\nPL2\nOxygen Interface\nUnit Supply (neutral L2)\n115 - 230Vac\nPL3\nOxygen Interface\nCAN +\n0 - 5V\nPL4\nOxygen Interface\nCAN -\n0 - 5V\nPL5\nOxygen Interface\nAnalog input 2 (NA - future)\n0 - 5V\nPL6\nOxygen Interface\nAnalog input 1 (4 - 20mA O2 third\nparty probe.\n0 - 5V\nPL7\nOxygen Interface\nAnalog input 0v\n0 - 5V\nPM2\nOxygen Interface\nOxygen Cell mV (-)\n0 - 100mVdc\nPM3\nOxygen Interface\nOxygen Cell mV (+)\n0 - 100mVdc\nPM4\nOxygen Interface\nOxygen Cell Temperature (-)\n0 - 100mVdc\nPM5\nOxygen Interface\nOxygen Cell Temperature (+)\n0 - 100mVdc\nPM6\nOxygen Interface\nFlue Temperature (-)\n0 - 100mVdc\nPM7\nOxygen Interface\nFlue Temperature (+)\n0 - 100mVdc\nPM8\nOxygen Interface\nHeater Output\n0 - 40Vac\nPM9\nOxygen Interface\nHeater output\n0 - 40Vac\nNX610 Display Relays - General Purpose Shown\nFor Alarm, see Section 5.5.1 Option 17.x Table A\nPR1\nDisplay Unit\nRelay output 1 normally open\n0 - 250V\nPR2\nDisplay Unit\nRelay output 1 normally closed\n0 - 250V\nPR3\nDisplay Unit\nRelay output 1 common\n0 - 250V\nPR4\nDisplay Unit\nNO CONNECTION\nN/A\nPR5\nDisplay Unit\nRelay output 2 normally open\n0 - 250V\nPR6\nDisplay Unit\nRelay output 2 normally closed\n0 - 250V\nPR7\nDisplay Unit\nRelay outputs 2 & 3 common\n0 - 250V\nPR8\nDisplay Unit\nRelay output 3 normally closed\n0 - 250V\nPR9\nDisplay Unit\nRelay output 3 normally open\n0 - 250V\nNXTSD104 Touchscreen Display Relays - General Purpose Shown\nFor Alarm, see Section 5.5.1 Option 17.x Table C\nPR1\nDisplay Unit\nRelay output 1 common\n0 - 250V\nPR2\nDisplay Unit\nRelay output 1 normally closed\n0 - 250V\nPR3\nDisplay Unit\nRelay output 1 normally open\n0 - 250V\nPR4\nDisplay Unit\nRelay output 2 common\n0 - 250V\nPR5\nDisplay Unit\nRelay output 2 normally closed\n0 - 250V\nPR6\nDisplay Unit\nRelay output 2 normally open\n0 - 250V\n34",
+      "tablas": [
+        [
+          [
+            "Terminal Number",
+            "Location",
+            "Function",
+            "Voltage Range"
+          ],
+          [
+            "PE6",
+            "PPC6000",
+            "S/S Relay",
+            "0 - 230Vac"
+          ],
+          [
+            "PE7",
+            "PPC6000",
+            "Ign Prove (Low Fire output)",
+            "0 - 230Vac"
+          ],
+          [
+            "PE8",
+            "PPC6000",
+            "Purge Prove (High Purge output)",
+            "0 - 230Vac"
+          ],
+          [
+            "PE9",
+            "PPC6000",
+            "Profile 1 Select",
+            "0 - 230Vac"
+          ],
+          [
+            "PE10",
+            "PPC6000",
+            "Profile 2 Select",
+            "0 - 230Vac"
+          ],
+          [
+            "PE11",
+            "PPC6000",
+            "Profile 3 Select",
+            "0 - 230Vac"
+          ],
+          [
+            "PE12",
+            "PPC6000",
+            "Profile 4 Select",
+            "0 - 230Vac"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PK1",
+            "On Servomotor",
+            "24Vac Supply",
+            "24 - 40Vac"
+          ],
+          [
+            "PK2",
+            "On Servomotor",
+            "24Vac Supply",
+            "24 - 40Vac"
+          ],
+          [
+            "PK3",
+            "On Servomotor",
+            "CAN +",
+            "0 - 5V"
+          ],
+          [
+            "PK4",
+            "On Servomotor",
+            "CAN -",
+            "0 - 5V"
+          ],
+          [
+            "PK5",
+            "On Servomotor",
+            "Screen connection",
+            "Not applicable"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PL1",
+            "Oxygen Interface",
+            "Unit Supply (live L1)",
+            "115 - 230Vac"
+          ],
+          [
+            "PL2",
+            "Oxygen Interface",
+            "Unit Supply (neutral L2)",
+            "115 - 230Vac"
+          ],
+          [
+            "PL3",
+            "Oxygen Interface",
+            "CAN +",
+            "0 - 5V"
+          ],
+          [
+            "PL4",
+            "Oxygen Interface",
+            "CAN -",
+            "0 - 5V"
+          ],
+          [
+            "PL5",
+            "Oxygen Interface",
+            "Analog input 2 (NA - future)",
+            "0 - 5V"
+          ],
+          [
+            "PL6",
+            "Oxygen Interface",
+            "Analog input 1 (4 - 20mA O2 third party probe.",
+            "0 - 5V"
+          ],
+          [
+            "PL7",
+            "Oxygen Interface",
+            "Analog input 0v",
+            "0 - 5V"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PM2",
+            "Oxygen Interface",
+            "Oxygen Cell mV (-)",
+            "0 - 100mVdc"
+          ],
+          [
+            "PM3",
+            "Oxygen Interface",
+            "Oxygen Cell mV (+)",
+            "0 - 100mVdc"
+          ],
+          [
+            "PM4",
+            "Oxygen Interface",
+            "Oxygen Cell Temperature (-)",
+            "0 - 100mVdc"
+          ],
+          [
+            "PM5",
+            "Oxygen Interface",
+            "Oxygen Cell Temperature (+)",
+            "0 - 100mVdc"
+          ],
+          [
+            "PM6",
+            "Oxygen Interface",
+            "Flue Temperature (-)",
+            "0 - 100mVdc"
+          ],
+          [
+            "PM7",
+            "Oxygen Interface",
+            "Flue Temperature (+)",
+            "0 - 100mVdc"
+          ],
+          [
+            "PM8",
+            "Oxygen Interface",
+            "Heater Output",
+            "0 - 40Vac"
+          ],
+          [
+            "PM9",
+            "Oxygen Interface",
+            "Heater output",
+            "0 - 40Vac"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "PR1",
+            "Display Unit",
+            "Relay output 1 normally open",
+            "0 - 250V"
+          ],
+          [
+            "PR2",
+            "Display Unit",
+            "Relay output 1 normally closed",
+            "0 - 250V"
+          ],
+          [
+            "PR3",
+            "Display Unit",
+            "Relay output 1 common",
+            "0 - 250V"
+          ],
+          [
+            "PR4",
+            "Display Unit",
+            "NO CONNECTION",
+            "N/A"
+          ],
+          [
+            "PR5",
+            "Display Unit",
+            "Relay output 2 normally open",
+            "0 - 250V"
+          ],
+          [
+            "PR6",
+            "Display Unit",
+            "Relay output 2 normally closed",
+            "0 - 250V"
+          ],
+          [
+            "PR7",
+            "Display Unit",
+            "Relay outputs 2 & 3 common",
+            "0 - 250V"
+          ],
+          [
+            "PR8",
+            "Display Unit",
+            "Relay output 3 normally closed",
+            "0 - 250V"
+          ],
+          [
+            "PR9",
+            "Display Unit",
+            "Relay output 3 normally open",
+            "0 - 250V"
+          ]
+        ],
+        [
+          [
+            "PR1",
+            "Display Unit",
+            "Relay output 1 common",
+            "0 - 250V"
+          ],
+          [
+            "PR2",
+            "Display Unit",
+            "Relay output 1 normally closed",
+            "0 - 250V"
+          ],
+          [
+            "PR3",
+            "Display Unit",
+            "Relay output 1 normally open",
+            "0 - 250V"
+          ],
+          [
+            "PR4",
+            "Display Unit",
+            "Relay output 2 common",
+            "0 - 250V"
+          ],
+          [
+            "PR5",
+            "Display Unit",
+            "Relay output 2 normally closed",
+            "0 - 250V"
+          ],
+          [
+            "PR6",
+            "Display Unit",
+            "Relay output 2 normally open",
+            "0 - 250V"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nTerminal Number\nLocation\nFunction\nVoltage Range\nPR7\nDisplay Unit\nRelay output 3 common\n0 - 250V\nPR8\nDisplay Unit\nRelay output 3 normally closed\n0 - 250V\nPR9\nDisplay Unit\nRelay output 3 normally open\n0 - 250V\nPR10\nDisplay Unit\nRelay output 9 common (TSD104\nonly)\n0 - 250V\nPR11\nDisplay Unit\nRelay output 9 normally closed\n(TSD104 only)\n0 - 250V\nPR12\nDisplay Unit\nRelay output 9 normally open\n(TSD104 only)\n0- 250V\nPT1\nDisplay Unit\n24Vac Supply\n24 - 40Vac\nPT2\nDisplay Unit\n24Vac Supply\n24 - 40Vac\nPT3\nDisplay Unit\nCAN +\n0 - 5V\nPT4\nDisplay Unit\nCAN -\n0 - 5V\nSTUD\nDisplay Unit\nScreen connection\nNot applicable\nPZ1\nDaughter Board\nChannel 1 output [4-20mA] (-)\n0 - 20V\nPZ2\nDaughter Board\nChannel 1 output [4-20mA] (+)\n0 - 20V\nPZ3\nDaughter Board\nChannel 2 output [4-20mA] (-)\n0 - 20V\nPZ4\nDaughter Board\nChannel 2 output [4-20mA] (+)\n0 - 20V\nPZ5\nDaughter Board\nChannel 3 output [4-20mA] (-)\n0- 20V\nPZ6\nDaughter Board\nChannel 3 output [4-20mA] (+)\n0 - 20V\nPZ7\nDaughter Board\nEncoder (proximity counter)\nFeedback 1\n0 - 12V\nPZ8\nDaughter Board\nEncoder Supply\n12Vdc\nPZ9\nDaughter Board\nEncoder (proximity counter)\nFeedback 2\n0 - 12V\nPZ10\nDaughter Board\nEncoder Supply\n12Vdc\nPZ11\nDaughter Board\nEncoder Feedback 3\n0 - 12V\nPZ12\nDaughter Board\nChannel 1 Feedback [4-20mA] (-)\n0 - 5Vdc\nPZ13\nDaughter Board\nChannel 1 (+) & Channel 2 (-)\n0 - 5Vdc\nPZ14\nDaughter Board\nChannel 2 Feedback [4-20mA] (+)\n0 - 5Vdc\nPZ15\nDaughter Board\nRelay output 7 common\n0 - 40V\nPZ16\nDaughter Board\nRelay output 7 normally open\n0 - 40V\nPZ17\nDaughter Board\nRelay output 8 common\n0 - 40V\nPZ18\nNXDBVSD\nRelay output 8 normally open\n0 - 40V\n2.6.6 LINE and NEUTRAL supply (PPC6000) PE1 & PE2\n!\nWARNING\nIncorrect setting of the Supply Voltage Links WILL damage or destroy the unit.\nPE1\n7\nNEUTRAL\nMAX 8A\nLIVE\nT\nO\nPE 2\n0\nThe LINE and NEUTRAL supplies must be connected using\nmulti-strand single conductor (core) PVC insulated 16 AWG\n(19/0.3mm) wire. The live connection MUST be fused with a\nmaximum rating as shown.\n35",
+      "tablas": [
+        [
+          [
+            "Terminal Number",
+            "Location",
+            "Function",
+            "Voltage Range"
+          ],
+          [
+            "PR7",
+            "Display Unit",
+            "Relay output 3 common",
+            "0 - 250V"
+          ],
+          [
+            "PR8",
+            "Display Unit",
+            "Relay output 3 normally closed",
+            "0 - 250V"
+          ],
+          [
+            "PR9",
+            "Display Unit",
+            "Relay output 3 normally open",
+            "0 - 250V"
+          ],
+          [
+            "PR10",
+            "Display Unit",
+            "Relay output 9 common (TSD104 only)",
+            "0 - 250V"
+          ],
+          [
+            "PR11",
+            "Display Unit",
+            "Relay output 9 normally closed (TSD104 only)",
+            "0 - 250V"
+          ],
+          [
+            "PR12",
+            "Display Unit",
+            "Relay output 9 normally open (TSD104 only)",
+            "0- 250V"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PT1",
+            "Display Unit",
+            "24Vac Supply",
+            "24 - 40Vac"
+          ],
+          [
+            "PT2",
+            "Display Unit",
+            "24Vac Supply",
+            "24 - 40Vac"
+          ],
+          [
+            "PT3",
+            "Display Unit",
+            "CAN +",
+            "0 - 5V"
+          ],
+          [
+            "PT4",
+            "Display Unit",
+            "CAN -",
+            "0 - 5V"
+          ],
+          [
+            "STUD",
+            "Display Unit",
+            "Screen connection",
+            "Not applicable"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PZ1",
+            "Daughter Board",
+            "Channel 1 output [4-20mA] (-)",
+            "0 - 20V"
+          ],
+          [
+            "PZ2",
+            "Daughter Board",
+            "Channel 1 output [4-20mA] (+)",
+            "0 - 20V"
+          ],
+          [
+            "PZ3",
+            "Daughter Board",
+            "Channel 2 output [4-20mA] (-)",
+            "0 - 20V"
+          ],
+          [
+            "PZ4",
+            "Daughter Board",
+            "Channel 2 output [4-20mA] (+)",
+            "0 - 20V"
+          ],
+          [
+            "PZ5",
+            "Daughter Board",
+            "Channel 3 output [4-20mA] (-)",
+            "0- 20V"
+          ],
+          [
+            "PZ6",
+            "Daughter Board",
+            "Channel 3 output [4-20mA] (+)",
+            "0 - 20V"
+          ],
+          [
+            "PZ7",
+            "Daughter Board",
+            "Encoder (proximity counter) Feedback 1",
+            "0 - 12V"
+          ],
+          [
+            "PZ8",
+            "Daughter Board",
+            "Encoder Supply",
+            "12Vdc"
+          ],
+          [
+            "PZ9",
+            "Daughter Board",
+            "Encoder (proximity counter) Feedback 2",
+            "0 - 12V"
+          ],
+          [
+            "PZ10",
+            "Daughter Board",
+            "Encoder Supply",
+            "12Vdc"
+          ],
+          [
+            "PZ11",
+            "Daughter Board",
+            "Encoder Feedback 3",
+            "0 - 12V"
+          ],
+          [
+            "PZ12",
+            "Daughter Board",
+            "Channel 1 Feedback [4-20mA] (-)",
+            "0 - 5Vdc"
+          ],
+          [
+            "PZ13",
+            "Daughter Board",
+            "Channel 1 (+) & Channel 2 (-)",
+            "0 - 5Vdc"
+          ],
+          [
+            "PZ14",
+            "Daughter Board",
+            "Channel 2 Feedback [4-20mA] (+)",
+            "0 - 5Vdc"
+          ],
+          [
+            "PZ15",
+            "Daughter Board",
+            "Relay output 7 common",
+            "0 - 40V"
+          ],
+          [
+            "PZ16",
+            "Daughter Board",
+            "Relay output 7 normally open",
+            "0 - 40V"
+          ],
+          [
+            "PZ17",
+            "Daughter Board",
+            "Relay output 8 common",
+            "0 - 40V"
+          ],
+          [
+            "PZ18",
+            "NXDBVSD",
+            "Relay output 8 normally open",
+            "0 - 40V"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nNOTE: Line (live) is term PE2. If a fuse greater than 8A is fitted, each relay (safety shutdown and\ncontrolled shutdown) output supplied via this terminal MUST be separately fused at 8A maximum, to\nprotect the relay contacts from 'welding'. It is also recommended that the alarm relay be fused at 4A\nmaximum to protect the relay contacts from 'welding', which may cause incorrect alarm indication.\n2.6.7\nSafety Shutdown output (PPC6000)\nSAFETY SHUTDOWN PE 5\nMAX 8A *\nBURNER\nCONTROLLER\nSAFETY SHUTDOWN PE 6\n0\n2.6.8 Controlled Shutdown Relay Output (PPC6000)\nThe safety shutdown relay output must be\nconnected using multi-strand single conductor\n(core) PVC insulated 16 AWG (19/0.3mm) wire.\nThis output must be connected to ensure the\nburner will shutdown if no output is present.\n*\nIf a control panel fuse greater than 8A is\nfitted, the safety shutdown output terminal\nMUST be separately fused at 8A maximum.\nWARNING\n!\n. Any external limit device, if fitted must be connected into the controlled shutdown\ncircuit, unless connected into the auxiliary inputs and the correct function selected.\n. If a limit device is fitted into the controlled shutdown circuit it must be capable of\nsupplying the total current required by devices connected to this circuit.\n. Any limit device connected to the PPC6000 series control must be approved for\nthe specific purpose for which it is being used.\n· Wiring must comply with all applicable codes, ordinances and regulations.\nMAX 8A*\n0\nSHUTDOWN PE3\nBURNER\nCONTROLLER\nThe controlled shutdown relay output must be\nconnected using multi-strand single conductor\n(core) PVC insulated 16 AWG (19/0.3mm) wire.\nIf a control panel fuse greater than\n8A is fitted, the controlled shutdown circuit MUST be separately fused at 8A maximum to\nprotect the relay contacts from 'welding'.\n2.6.9\nAlarm Relay output - RELAY 4 (on the PPC6000)\n(See option parameter 14.7 for further programming options.)\nNEUTRAL (N) PE 1\nThe alarm relay output must be connected\nusing multi-strand single core PVC\ninsulated 16 AWG (19/0.3mm) wire. This\n(line voltage) output must only be used for\nindication, as it is not fail-safe. If a fuse\ngreater than 4A is fitted in the supply to\nFAULT\nINDICATION\n21\nALARM OUTPUT PE 4\nthe control, it is recommended the alarm relay output be separately fused at 4A maximum.\nNOTE: Relays 1 to 3 are (optionally) provided on the display board. Relays 5 and 6 are reserved for\nfuture products. Relays 7 and 8 are (optionally) provided on the daughter board.\n36",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "RELAY 1 NORMALLY OPEN PR 1\nRELAY 1 NORMALLY CLOSED PR 2\nRELAY OUTPUTS 1 COMMON PR 3\nNO CONNECTION PR 4\nRELAY 2 NORMALLY OPEN PR 5\nRELAY 2 NORMALLY CLOSED PR 6\nRELAY 2 & 3 COMMON PR 7\nRELAY 3 NORMALLY CLOSED PR 8\nRELAY NORMALLY OPEN PR9\nNOTE: The above is for Alarm\nFunction - See Option\n14.1, 14.2 and 17.x for\nimportant details\n®\nfireye\n2.6.10 Auxiliary Relay Outputs (display)\nFuses not exceeding 4A must protect all relay outputs. If a control\npanel fuse greater than 4A is fitted, the relay common MUST be\nseparately fused at 4A maximum. Where the total relay current\nexceeds 4A, fit a separate fuse on each relay output to achieve this.\nThese outputs must be connected using multi-strand single core PVC\ninsulated 16 AWG (19/0.3mm) wire. Since this cable may be run in\nconduit with high voltage wiring, its voltage rating must exceed the\nmaximum voltage carried by any other cable connected to the control or\nrun in the same conduit.\nThe 3 auxiliary relays provide volt free change over contacts. Two of the\nrelays (2&3) share a common voltage source. The relays are separated\non the circuit board to allow either the pair sharing the common or the\nsingle relay to operate at high voltage while the other(s) operate at low\nvoltage. Alternatively all relays may operate at the same voltage.\nThe relay functions can be set via the option parameter, or via the\nprogrammable blocks. See Option 17.x for important details\nregarding these relays.\n2.6.11 Fuel Select /Profile Select Input/Purge and Ignition Prove Outputs (PPC6000)\nThe four fuel-profile select inputs are designed for operation at between 120 & 230Vac. (relevant Engineer's\nKeys EK11-EK14, section 6.6.2)\nPE\n1 2 3 4 5 6 7\nThese inputs must be connected using multi-strand single\ncore PVC insulated 16 AWG (19/0.3mm) wire.\nSince this cable is to be run adjacent to, and/or in the same\nconduit as high voltage wiring, its voltage rating must\nexceed the maximum voltage carried by any other cable\nconnected to the control or run in the same conduit.\nIGNITION PROVE ~\nPURGE PROVE 80\nFUEL/PROFILE 1 6\nFUEL/PROFILE 2\nZ -\nFUEL/PROFILE 3 =\nFUEL/PROFILE 4 ৳\nO\n/\nNote: PE7 and PE8 provide purge and low fire position signals to the flame safeguard control. These outputs\nMUST NOT have a load greater than 30mA (i.e. relays, lamp, etc.), damage to the PPC6000 will result.\nREAD THIS FIRST !!!!\nThere are numerous mentions of \" .... overall braided shielded (screened) wire\"\nthroughout this manual. This is an important aspect to reliable operation. Table\n2.6.1-A lists THE ONLY APPROVED WIRE for this control. While one of the\nspecifications relating to shielded wire indicates the amount of coverage (0-100%),\nthis is not the only factor in selecting wire. While it is true, \"foil and drain\" shielded\nwire specifications indicate 100% coverage as compared to approximately 85% for\nbraided type, the cross sectional area of the braid provides the required noise\nimmunity. Also, the special grounding clamp bars on this control do not provide\nadequate connection to foil shield. In fact most foil shields do not conduct on the\nsurface. Using the \"drain\" wire to a ground stud does not properly protect the control.\nNOTE: If wire entrances to terminals face inward (under the cover), then these\nwires require braided shielded wire. If the terminals face outward, NO braided\nwire is to be used.\n37",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\n2.6.12 Low Voltage Digital Inputs (PPC6000) - relevant Engineer's Keys EK1-EK4 (Sec. 6.6.2)\n(See option parameter 16.1 and 18.1-18.4 for further details.\nDIGITAL INPUT 1 PA 5\no\nDIGITAL INPUT 2 PA 6\n0-\nDIGITAL INPUT 3 PA 7\n00000\n0-\nDIGITAL INPUT 4 PA 8\n0-\nDIGITAL COM PA 11\nNOTE: All digital inputs\nMUST BE BELDEN 9940-cut\nunused conductors off.\nGROUND CLAMP\nThese inputs must be connected\nusing multi-strand overall\nscreened two conductor PVC\ninsulated 24 AWG (7/0.2mm) wire.\n(See Table 2.6.1-A, Section 2.6.1)\nNote that these inputs are dynamic\nlow voltage (0/5V) signals and must\nbe connected between the relevant\nterminals provided. Measuring the\nvoltage between any input and PA11\nwill indicate 0 volts with input closed,\nup to 5V with input open. As it is a dynamic input, the voltage will not be a steady 5V DC. Since this cable is\nto be run adjacent to, and/or in the same conduit as high voltage wiring, its voltage rating must exceed the\nmaximum voltage carried by any other cable connected to the control or run in the same conduit. (See\nSection 2.6.1, IMPORTANT Wiring Guidelines)\nThese functions are all fail-safe and may be used to lockout or shutdown the burner. The fault number\ngenerated always relates directly to the input that caused the fault (by going open circuit). Thus F1 comes from\ninput 1, F2 comes from input 2 and F4 comes from input 4. The lockout functions themselves are activated by\nputting a number into option parameters 18.1 to 18.4 for inputs 1 to 4. The number is a one, two or three digit\nnumber. See option parameter 18.1 to 18.4 for settings.\nUnder no circumstances should these input/outputs be connected to mains potential.\nConnection of any voltage above 5 volts to these terminals will damage or destroy the unit.\n2.6.13 Servo-motor and Display Connection (PPC6000)\n24Vac PB 1\n24Vac PA 1\nThere are 2 sets of terminals available for the CANbus\nconnection - both sets are identical.\n24Vac PB 2\n24Vac PA 2\n0000\n0000\nCANbus allows several options for connecting the\nunits together, based on the actual position of each\nunit relative to the PPC6000 and the current required\nby each unit. The recommended cable, overall\nCANbus + PB 3\nCANbus + PA 3\nCANbus - PB 4\nCANbus - PA 4\nscreened 4-core PVC insulated minimum 24 AWG (7/0.2mm) wire, has a maximum current capability at 60℃\n(140°F) of 600mA (Belden 7895A or equal) which will limit the maximum number of units which can be\nconnected via a single 'bus'. Since this cable is to be run adjacent to, and/or in the same conduit as high\nvoltage wiring, its voltage rating must exceed the maximum voltage carried by any other cable connected to\nthe control or run in the same conduit. (See Table Section 2.6.1)\nOnce the location of each unit is defined (usually by the mechanics of the burner/boiler the 'best' cable route to\neach device can be selected. If required several cables can be run directly from the PPC6000 or a single cable\ncan be 'looped through' (daisy chain) all the connected units, providing the maximum current capability of the\ncable is not exceeded.\nWhere the maximum current required on the cable exceeds 600mA (for example when using 50Nm servo -\nmotors which are rated at 15VA) suitable overall screened 4 conductor (core) cable must be substituted. Use\nof 2 overall screened cables (one for the CAN and one for the power is not recommended since this would\nincrease the number of 'screens' to be connected in each device for which there is no provision.\nConnect the screen with the use of the screen termination clamp, at the PPC6000. If wiring is being 'looped\nthrough' units, ensure that the screen of the cable is connected to the terminals provided to ensure continuity\nof the screen. Incorrect connection may damage or destroy the units being connected.\n38",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\nPPC6000\n\"PA\" or \"PB\"\nServo Motor\n\"PK\"\nDisplay\n\"PT\"\nServo Motor\n\"PK\"\nServo Motor\n\"PK\"\n1\n3\n4\n= At Clamp Bar\nNOTE: Interposing terminal blocks should be avoided when shielded cable is required. Interposing\nterminals present a risk of electrical noise interference resulting in unreliable operation.\n2.6.14 Display Connection with PPC6000 and BurnerLogix YB110\nConnect the touchscreen display (TSD) to the PPC6000 using shielded cable from positions PA1-PA4 or PB1-\nPB4. Terminate wires to the 4 position terminal block on the back of the touch-screen display.\nConnect the YB110 using the three terminal connector labeled A+, B-, 0 volt. The A+ & B- connections are\nconnected to the Fireye ED610 terminal block (purchased separately) on terminals 10 & 9 (A & B), the 0 volt\nconnection is not used. The ED610 is connected to the YB110 via an ED512-4 cable (purchased separately).\nLeave in \"in\"\nposition.\nTerm Resistor\nIN++OUT\nFerrite core\nYB110\nED512-4\nB- A+ OV\nPPC6000\nBurnerlogix\nModbus to\n-\nJ1\nED610\n10 9 8 7 6 5 4 3 2 1\nScreen\nconnection\nTSD104 setup for use with YB110\nB- A+ 0V\n1\nWARNING\nNo other connections\nallowed on ED610.\nDamage to YB110 will\nAfter wiring the YB110 to the TSD as shown above, the TSD must be told to communicate to the YB110 via\nModbus. With the burner off, enter full commissioning mode. (see section 5.3.1.1) by pressing: Menu, Burner\nSetting (enter suppliers passcode LV3), then , Menu, Screen Configuration, Display. Press the Modbus\nConfiguration button. The default is Integrated NX6100. Next set the Modbus Node id to match the YB110, for\nexample, 1. See Fireye bulletin BL-1001 for details as to configuring the Modbus in the BurnerLogix. At this\npoint you will set the current Modbus configuration to PPC/BurnerLogix. When the dialog box appears, press\n39",
+      "tablas": [
+        [
+          [
+            "PPC6000 \"PA\" or \"PB\"",
+            "Servo Motor \"PK\"",
+            "Display \"PT\"",
+            "Servo Motor \"PK\"",
+            "Servo Motor \"PK\""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "3",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "4",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\nChange. Next, press the RS485 Comms button and select the baud rate that matches the BurnerLogix YB110.\nThe default is 9600,N, 1. The currently displayed message from the YB110 display should now appear in the\nlower right section of the TSD. Any status or lockout messages for the YB110 will be displayed here also. The\nfault numbers assigned to YB110 lockouts is the Modbus message number (found in BL-1001) plus 200. For\nexample, if the YB110 locked out during PTFI, the message on the TSD104 would be: F207 LOCKOUT\nFLAME FAILURE_PTFI. That is, Modbus message number 7+200= F207. See Section 6.8 for a list of TSD\nFault messages.\nCaution\n!\nDo NOT mechanically connect the servomotor to the driven shaft until the servo-motor\ndirection has been established and set. See section 3.2 for details.\n2.6.15 Oxygen Probe Interface Connection (PPC6000)\nThe Oxygen Probe Interface is not powered from the PPC6000; therefore only CANbus signals need to be\nderived from the PPC6000 and not the power.\n0000\n0000\nCANbus + PB 3\nCANbus + PA 3\nCANbus - PB 4\nCANbus - PA 4\nThe recommended cable, for this (CANbus) connection is\noverall screened 2-core PVC insulated minimum 24 AWG\n(7/0.2mm) cable, since this cable is to be run adjacent to,\nand/or in the same conduit as high voltage wiring, its\nvoltage rating must exceed the maximum voltage carried by\nany other cable connected to the control or run in the same\nconduit.\nConnect the screen with the use of the screen termination clamp, at the PPC6000 and be cut back and\ninsulated at the Oxygen Probe Interface.\nIncorrect connection may damage or destroy the units being connected.\nFOR MORE DETAILS: See section 2.6.18 thru 2.6.20\n2.6.16 Pressure/temperature sensor input (PPC6000)\nLOOP POWERED\nPXMSxxxx 4-20mA SENSOR\nor\nother 2-WIRED LOOP POWERED SENSOR\nRed +\n- Blue *\nSENSOR SUPPLY PB 8\n000\nSENSOR IN PB 9\nSENSOR GND PB10\n+\nOR EXT. SELF-\nPOWERED\n4-20mA /0-5V\n-\nThe pressure/temperature cabling must be overall\nscreened PVC insulated minimum 24 AWG\n(7/0.2mm) (number of conductors (cores) as\nrequired by the relevant sensor). Since this cable\nmay be run in conduit with high voltage wiring, its\nvoltage rating must exceed the maximum voltage\ncarried by any other cable connected to the control\nor run in the same conduit.\nThe input is suitable for use with 0-5V or 4-20mA\nsignals (externally or internally powered).\nRefer to section 2.5.3 for details on setting the\noption links for the correct voltage and input type.\nCABLE CLAMP\n* NOTE: Do NOT use the Black wire of the PXMS\nSensor\nIncorrect connection may damage or destroy\nthe units being connected.\n40",
+      "tablas": []
+    }
+  ]
+}

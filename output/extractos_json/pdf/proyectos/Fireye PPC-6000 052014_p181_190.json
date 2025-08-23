@@ -1,0 +1,655 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p181_190",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Boiler OFF (Cut Out) at\n75 psi\nBoiler ON (Cut In) at\n55 psi\nBoiler maintains (Setpoint)\n60 psi via PID\n®\nfireye\nNOTE: NEW I (integral time) and D (derivative\ntime) values - Option Parameters 21.3(22.3) and\n21.4(22.4), may be required to achieve desired\nresults.\nAbsolute Example - setting Opt 21.5 to 1:\nOpt 21.1 (22.1)*\nset to\n100 psi\nOpt 21.5.\nset to\n1\nOpt 21.6 (22.6)*\nset to\n115\nOpt 21.7 (22.7)*\nset to\n95\nRESULTS:\nBoiler OFF (Cut Out) at\nBoiler ON (Cut In) at\n95 psi\nBoiler maintains (Setpoint)\n100 psi via PID\nChanging ONLY the Setpoint -\nOpt 21.1 (22.2)\n.change to\n60 psi\nNEW RESULTS from Setpoint Change:\nBoiler OFF (Cut Out) at\n115 psi\nBoiler ON (Cut In) at\n95 psi\nBoiler maintains (Setpoint)\n115 psi\n60 psi via PID\nNOTE: NEW Cut In and Cut Out values as well as new\nI (integral time) and D (derivative time) values - Option\nParameters 21.3(22.3) and 21.4(22.4), may be required\nto achieve desired results.\nIn BOTH examples ( * ) represents PID2\n9.7.5\nManual Modulation\nPressing AUTO/MAN key toggles the burner in and out of manual or automatic modulation. To place the\nboiler in manual from automatic no password is required.\n1. Press the AUTO/MAN key\n2. Use the up/down arrow keys to set the firing rate.\n3. Press the AUTO/MAN key again to place in automatic\nNote: The firing rate will be shown on the display. This function can be disabled via option\nparameter 1.1. To do so requires the suppliers (highest) passcode.\n9.7.6\nResetting the Control\n181",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\nTo reset the Nexus, the MUTE/RESET key will have to be pressed and held for three seconds to first silence\n(mute) the alarm and then a second press for three seconds to clear the fault. A prolonged key press will do\nboth.\nIf for some reason the Nexus detects a fault, the cause of the fault will be displayed if still present. If not\ndisplayed, pressing the ENGINEERS key once will reveal the fault, a second press will reveal the fault and\nsubset in the upper right hand corner. The ENGINEERS key is hidden behind the Fireye® logo on the display.\nPressing the logo will show the EK # to the right of which will be the fault # and any subset. Using the\nup/down arrow keys scrolls through the EK #'s to view other information. For specific Engineer's Key listing\nsee Section 6.6 of Fireye Bulletin PPC6001.\n9.7.7\nFault and Fault Finding\nShould the Nexus determine a fault has occurred that required the burner be shut down, the bottom portion of\nthe display will indicate the cause. Pressing the ENGINEERS key will display more information, which will be\nfound in the upper right of the display. See Section 6.0 of Fireye Bulletin PPC-6001 for more details. Using the\nENGINEERS key the last 33 faults or limits can be reviewed. The fault history begins with the most recent\nwhich can be found after EK200 and will be date and time stamped. There are three aspects to each record;\nwhen it was reset, when it changed from a fault to a cleared fault and when the fault occurred. The portion of\nthe record at the \"Fxx\" will also include the subset if any. See Fault Subsets.\nMany of the faults detected and displayed by the unit will cause a safety shutdown of the burner. Other faults\nwill be displayed as a warning, but operation of the burner will not be affected.\nAll fault numbers are prefixed by a letter. This letter describes the status of the fault:\nF -\nThis means that a fault (e.g. PSU calibration fault) has occurred and is still present. The fault\nmay be internal or external to the unit.\nL -\nThis means that an alarm limit fault (e.g. smoke level exceeding the high limit) has occurred\nand is still present.\nC -\nThis means that a fault or alarm limit did occur but has been cleared.\nFor example:\nF60 - Means fault 60 has occurred and still exists.\nL75 - Means alarm limit 75 has been exceeded and is still being exceeded\nC73 - Means fault or alarm limit 73 has occurred but has subsequently been cleared.\nWhen the unit is in a safety shutdown state both the controlled shutdown triac and safety shutdown relay will\nbe turned off, to prevent the burner from firing.\n9.7.8\nFault subsets\nAs an aid to fault finding, most faults have a fault subset that gives additional information about the type of fault\nor what the burner was doing when the fault occurred. Where applicable, the subsets are given in the fault\nlisting in section 0 of Fireye Bulletin PPC6001. For details of how to view a subset, refer to Section 6.0 of\nFireye Bulletin PPC6001.\n182",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\n9.7.9\nFault listing\nFor specific Fault listing see Section 6.5 of Fireye Bulletin PPC-6001.\n9.7.10 PID Tutorial\nPID Adjustment\nThe PPC6000 utilizes and advanced algorithm in order to maintain setpoint over a variety of load conditions.\nThis three term PID can be infinitely adjusted to suit almost any application. The operator should have a basic\nunderstanding of the relationship between the three terms; proportional, integral and derivative.\nProportional\nTypical older modulating systems employ only proportional control. This would be similar to the slide wire type\nfound on most steam boilers. When using only a proportional control the system rarely achieves setpoint as\nthe burner firing rate is lowered as the pressure comes up. At some point the input meets the actual demand\nand the pressure no longer raises or lowers, thus an offset between desired setpoint and actual operating\npressure occurs. The only time the pressure and setpoint are the same is if the actual load equals the lowest\nfiring rate of the burner, this is rare. An example of proportional only set up might be; Setpoint is 100 PSI,\nproportional range is 10 PSI. That is low fire is at 100 PSI, high fire is at 90 PSI with a 1:1 relationship in\nbetween, e.g .: 95PSI equals 50% rate. A good starting point for the \"P\" value, in most cases is about 10% of\nsetpoint.\nIntegral\nIf the integral term is turned on, the control compares the actual pressure against setpoint at an adjustable\ninterval. If there is an offset, the firing rate is increased by a small percentage until the next interval. This will\ncontinue until the pressure equals the setpoint. The same routine occurs as the pressure rises above the\nsetpoint. Too much or too little integral will cause over and undershoot of the setpoint. Integral is set in\nseconds per repeat in the PPC6000.\nFor example, if the P were set at 10 psi with a boiler setpoint of 100 psi, the burner would first remain at high\nfire until the pressure reached 90 psi, and then start to modulate down. If the load was equal to 50% firing\nrate, the pressure would stall at 95 psi. Adding and \"I\" value of 10 would ramp the output up to 100% (high\nfire) in 10 seconds, assuming no change in the boiler pressure. Setting and \"I\" value of 300 increases the\noutput up to 100% (high fire) in 5 minute (300 seconds). As the boiler reaches setpoint, the same timing effect\noccurs above setpoint. Therefore, too much \"I\" can cause over/under shoot as loads change. Too little \"I\" may\ncause rapid hunting. A good starting point for the \"I\" value, in most cases is 50.\nDerivative\nEnabling the derivative has the effect of sensing the rate of change in the process variable (pressure or\ntemperature) and increasing or holding up the firing rate output despite the integral term. This in effect\namplifies the output to anticipate the effect of a sudden change in load demand. Derivative acts inversely when\nthe setpoint is exceeded. Derivative is set in seconds on the PPC6000. A good starting point for the \"D\" value,\nin most cases is 2.\nA rule of thumb is; start with a P value of about 10% of setpoint, an I value of 50 seconds and a D value of 2\nseconds. After observing the operation through normal load swings, adjust each value, usually one at a time,\nand observe the results. When making a change it is recommended the value be doubled or halved to\ndetermine which direction you need to go. Bear in mind, the burner should not continuously hunt or swing to\n183",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nmaintain the desired setpoint. It is normal for a slight over and undershoots of setpoint during serious load\nchanges.\nThe values for the PID's are found at option parameters 21.2, 21.3 and 21.4 for setpoint 1 (PID1), and 22.2,\n22.3 and 22.4 for setpoint 2 (PID2). These values are adjustable using the Site Passcode 154.\n9.7.11 The startup / shutdown stages are as follows:\nStage\nno.\nStage name\nDescription\n0.\nNon-volatile\nlockout / safety\nThe burner is held in this state until all faults are removed.\nshutdown\nThe 'safety shutdown' output (PE5 - PE6) will be open. The\n'controlled shutdown' output on PE3 will also be OFF during this time,\nhowever if the burner was running when the fault occurred, the 'safety\nshutdown' output will have opened first.\n1.\nBurner off\n(EK18)\nThe burner is checked to make sure that it has switched off\ncompletely. The fuel/profile select inputs must all go OFF when the\nburner is switched off (or at the end of post-purge). This provides a\nfeedback to confirm that the burner is off, and ensures that this control\nis always synchronized with the burner controller.\nThe 'controlled shutdown' output on PE3 will be OFF during this time,\nhowever the 'safety shutdown' output PE5 - PE6 will be closed during\nthis time.\nThe control will advance to status 2 when:\n-\nAll fuel/profile select inputs are OFF\n-\nThe 'boiler status' is equal to 1 (call for heat). See engineers key\n18.\n-\nThe 'AUTO' input (PA10 - PA11) is OFF (open).\n2.\nWait for purge\nThe 'controlled shutdown' output on PE3 will be switched on, to tell\nthe burner controller there is a call for heat.\n(EK5)\n(EK11-14)\n(EK31)\nThis control waits for a fuel/profile select signal on one of the (line\nvoltage) terminals PE9, PE10, PE11 or PE12 and a purge request\n(HIGH input, PA9 - PA11 closed. This input is low voltage). This\nwould normally come from the burner controller.\nIf the fuel/profile select input is removed (PE9, 10, 11 or 12), the\ncontrol will immediately move to status 1.\n184",
+      "tablas": [
+        [
+          [
+            "Stage no.",
+            "Stage name",
+            "Description"
+          ],
+          [
+            "0.",
+            "Non-volatile",
+            "The burner is held in this state until all faults are removed."
+          ],
+          [
+            "lockout / safety\nshutdown",
+            "The 'safety shutdown' output (PE5 - PE6) will be open. The 'controlled shutdown' output on PE3 will also be OFF during this time, however if the burner was running when the fault occurred, the 'safety shutdown' output will have opened first."
+          ],
+          [
+            "1.",
+            "Burner off (EK18)",
+            "The burner is checked to make sure that it has switched off completely. The fuel/profile select inputs must all go OFF when the burner is switched off (or at the end of post-purge). This provides a feedback to confirm that the burner is off, and ensures that this control is always synchronized with the burner controller."
+          ],
+          [
+            "The 'controlled shutdown' output on PE3 will be OFF during this time, however the 'safety shutdown' output PE5 - PE6 will be closed during this time."
+          ],
+          [
+            "",
+            "The control will advance to status 2 when: - All fuel/profile select inputs are OFF - The 'boiler status' is equal to 1 (call for heat). See engineers key 18. - The 'AUTO' input (PA10 - PA11) is OFF (open)."
+          ],
+          [
+            "2.",
+            "Wait for purge",
+            "The 'controlled shutdown' output on PE3 will be switched on, to tell the burner controller there is a call for heat."
+          ],
+          [
+            "(EK5) (EK11-14) (EK31)",
+            "This control waits for a fuel/profile select signal on one of the (line voltage) terminals PE9, PE10, PE11 or PE12 and a purge request (HIGH input, PA9 - PA11 closed. This input is low voltage). This would normally come from the burner controller."
+          ],
+          [
+            "If the fuel/profile select input is removed (PE9, 10, 11 or 12), the control will immediately move to status 1."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\nStage\nno.\nStage name\nDescription\n3. & 4.\nN/A\nNot Applicable to PPC6000\nNote: Statuses 3 and 4 are reserved for a gas valve proving system\nand are not implemented on this control. This control will advance\ndirectly to status 5 once the conditions above have been met.\n5.\nProve closed\npositions\nThe fuel and air motors are moved down until they are stopped by the\n'closed position' micro-switches in the servos. The final positions are\ncompared with the closed positions stored in memory, and must be\nwithin +5° of the stored values otherwise the control will lockout.\n(EK80-89)\nVariable speed drives must read zero. (4 mA)\nWhen all drives have stopped moving, the control will advance to\nstatus 7. The 'HIGH' input (PA9 to PA11)still must be made during\nthis time.\nIf the fuel/profile select input is removed (PE9, 10, 11 or 12), the\ncontrol will immediately move to status 1.\n6.\nN/A\nNot Applicable to PPC6000\nNote: Status 6 is reserved for air pressure detection, and is not\nimplemented in this control. This function must be provided by the\nburner controller.\n7.\nMoving to Purge\nThe selected motors are moved up towards the purge position. When\nthe drives have all stopped, the control moves to status 8.\nIf the fuel/profile select input is removed (PE9, 10, 11 or 12), the\ncontrol will immediately move to status 1.\n8.\nPre-purge\nThe controller confirms all required drives are at their purge positions,\nand gives a 'purge proved' signal by providing (line voltage) to\nterminal PE8 (high-fire-switch).\nThe control will remain in this status until the burner controller signals\nthe end of pre-purge by breaking PA11 - PA9 ('HIGH' input).\nIf the fuel/profile select input is removed (PE9, 10, 11 or 12), the\ncontrol will immediately move to status 1.\n9.\nMove to ignition\npositions\nThe selected motors are moved to their ignition positions. The 'purge\nproved' signal is switched off. When the drives have all stopped\nmoving, the control advances to status 10.\nIf the fuel/profile select input is removed (PE9, 10, 11 or 12), the\ncontrol will immediately move to status 1.\n185",
+      "tablas": [
+        [
+          [
+            "Stage no.",
+            "Stage name",
+            "Description"
+          ],
+          [
+            "3. & 4.",
+            "N/A",
+            "Not Applicable to PPC6000"
+          ],
+          [
+            "Note: Statuses 3 and 4 are reserved for a gas valve proving system and are not implemented on this control. This control will advance directly to status 5 once the conditions above have been met."
+          ],
+          [
+            "5.",
+            "Prove closed positions",
+            "The fuel and air motors are moved down until they are stopped by the 'closed position' micro-switches in the servos. The final positions are compared with the closed positions stored in memory, and must be within +5° of the stored values otherwise the control will lockout."
+          ],
+          [
+            "(EK80-89)",
+            "Variable speed drives must read zero. (4 mA)"
+          ],
+          [
+            "When all drives have stopped moving, the control will advance to status 7. The 'HIGH' input (PA9 to PA11)still must be made during this time."
+          ],
+          [
+            "If the fuel/profile select input is removed (PE9, 10, 11 or 12), the control will immediately move to status 1."
+          ],
+          [
+            "6.",
+            "N/A",
+            "Not Applicable to PPC6000"
+          ],
+          [
+            "Note: Status 6 is reserved for air pressure detection, and is not implemented in this control. This function must be provided by the burner controller."
+          ],
+          [
+            "7.",
+            "Moving to Purge",
+            "The selected motors are moved up towards the purge position. When the drives have all stopped, the control moves to status 8."
+          ],
+          [
+            "If the fuel/profile select input is removed (PE9, 10, 11 or 12), the control will immediately move to status 1."
+          ],
+          [
+            "8.",
+            "Pre-purge",
+            "The controller confirms all required drives are at their purge positions, and gives a 'purge proved' signal by providing (line voltage) to terminal PE8 (high-fire-switch)."
+          ],
+          [
+            "The control will remain in this status until the burner controller signals the end of pre-purge by breaking PA11 - PA9 ('HIGH' input)."
+          ],
+          [
+            "If the fuel/profile select input is removed (PE9, 10, 11 or 12), the control will immediately move to status 1."
+          ],
+          [
+            "9.",
+            "Move to ignition positions",
+            "The selected motors are moved to their ignition positions. The 'purge proved' signal is switched off. When the drives have all stopped moving, the control advances to status 10."
+          ],
+          [
+            "If the fuel/profile select input is removed (PE9, 10, 11 or 12), the control will immediately move to status 1."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nStage\nno.\nStage name\nDescription\n10.\nIgnition\nThe controller confirms all required drives are at their ignition\npositions, and gives an 'ignition proved' signal by supplying line\nvoltage to terminal PE7 (low-fire-switch).\nThe controller will hold the drives at their respective ignition positions\nuntil the signal to modulate is received from the burner controller. This\nis performed by closing the circuit on PA10 - PA11 (AUTO input).\nIf the fuel/profile select input is removed (PE9, 10, 11 or 12), the\ncontrol will immediately move to status 1.\n11-14\nN/A\nNOTE: Statuses 11 to 14 control the light-up sequence of the burner\nand are provided by the 'burner controller' device used for the\napplication. This control will jump from status 10 to status 15 when the\nlight up is completed.\nNot Applicable to PPC6000\n15.\nMoving to low fire\nOnce the AUTO signal is received the fuel and air motors are moved\nfrom their ignition positions to their low fire positions. These positions\nmay or may not be the same as the ignition positions. The 'ignition\nprove' terminal PE7 (low-fire-switch) is switched off.\nIf the fuel/profile select input is removed (PE9, 10, 11 or 12), the\ncontrol will immediately move to status 1.\nOnce the drives have reached their low fire positions, and an AUTO\nsignal is received (PA10 - PA11), the control will advance to status\n16.\nIF Option 23.0 (warming limit) is enabled, drive will remain at low fire\nuntil time set by Option 23.0 expires.\nNOTE: terminal PE7 will always be OFF during status 15.\n186",
+      "tablas": [
+        [
+          [
+            "Stage no.",
+            "Stage name",
+            "Description"
+          ],
+          [
+            "10.",
+            "Ignition",
+            "The controller confirms all required drives are at their ignition positions, and gives an 'ignition proved' signal by supplying line voltage to terminal PE7 (low-fire-switch)."
+          ],
+          [
+            "The controller will hold the drives at their respective ignition positions until the signal to modulate is received from the burner controller. This is performed by closing the circuit on PA10 - PA11 (AUTO input)."
+          ],
+          [
+            "If the fuel/profile select input is removed (PE9, 10, 11 or 12), the control will immediately move to status 1."
+          ],
+          [
+            "11-14",
+            "N/A",
+            "NOTE: Statuses 11 to 14 control the light-up sequence of the burner and are provided by the 'burner controller' device used for the application. This control will jump from status 10 to status 15 when the light up is completed. Not Applicable to PPC6000"
+          ],
+          [
+            "15.",
+            "Moving to low fire",
+            "Once the AUTO signal is received the fuel and air motors are moved from their ignition positions to their low fire positions. These positions may or may not be the same as the ignition positions. The 'ignition prove' terminal PE7 (low-fire-switch) is switched off."
+          ],
+          [
+            "If the fuel/profile select input is removed (PE9, 10, 11 or 12), the control will immediately move to status 1."
+          ],
+          [
+            "Once the drives have reached their low fire positions, and an AUTO signal is received (PA10 - PA11), the control will advance to status 16."
+          ],
+          [
+            "IF Option 23.0 (warming limit) is enabled, drive will remain at low fire until time set by Option 23.0 expires."
+          ],
+          [
+            "NOTE: terminal PE7 will always be OFF during status 15."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\nStage\nno.\nStage name\nDescription\n16.\nModulation\n(EK33)\nOnce the fuel and air motors reach their low fire positions, they are\nmodulated according to the demand placed on the burner.\nIn this burner status the 'high-fire-switch' and 'low-fire-switch' outputs\n(PE8 & PE7) will come on at high and low fire respectively and may\nbe used for indication purposes.\nIf a 'HIGH' input is provided by closing PA9 - PA11, this control will\nmove to status 17.\nIf the 'AUTO' input is removed by opening PA10 - PA11, this control\nwill modulate down to low fire then jump to status 15. Note: Terminal\nPE7 will not be energized in this case. This may be used to provide a\nlow fire post purge, or a low fire hold function.\nIf the fuel/profile select input is removed (PE9, 10, 11 or 12), the\ncontrol will immediately move to status 1.\nIf this control wishes to turn the burner off (there is no call for heat, for\nexample), it will open the 'controlled shutdown' relay, removing power\nfrom PE3. It will remain in modulation status however, until one of the\nconditions above is met.\n17.\nMove to post-\npurge\nThe selected motor(s) are moved to their purge positions all others\nare moved to their closed positions. When the drives have all\nstopped, the control will move to status 18.\n18.\nPost-purge\nThe controller confirms all required drives are at their purge positions,\nand gives a 'purge proved' signal by providing (line voltage) to\nterminal PE8 (high-fire-switch).\nThe control will remain in this status until the burner controller signals\nthe end of pre-purge by breaking PA9 - PA11 ('HIGH' input), or the\nfuel/profile select input is removed (PE9, 10, 11 or 12). In either case,\nthe control will immediately move to status 1.\n9.7.12 Non-volatile lockout\nNon Volatile lockouts cannot be cleared without operator intervention and are remembered in the event of\npower being removed from the control.\nA non-volatile lockout will occur under the following conditions:\n· In any stage the interface signals are incorrect.\n· In stages 5, 7 and 8, stages 10-16 (inclusive) and stage 18 if a motor is not in the correct position\n. In any stage, if an internal or external fault not previously mentioned occurs which may affect the\nsafe operation of the burner (see section 0 of Fireye Bulletin PPC6001)\n187",
+      "tablas": [
+        [
+          [
+            "Stage no.",
+            "Stage name",
+            "Description"
+          ],
+          [
+            "16.",
+            "Modulation (EK33)",
+            "Once the fuel and air motors reach their low fire positions, they are modulated according to the demand placed on the burner. In this burner status the 'high-fire-switch' and 'low-fire-switch' outputs (PE8 & PE7) will come on at high and low fire respectively and may be used for indication purposes."
+          ],
+          [
+            "If a 'HIGH' input is provided by closing PA9 - PA11, this control will move to status 17."
+          ],
+          [
+            "If the 'AUTO' input is removed by opening PA10 - PA11, this control will modulate down to low fire then jump to status 15. Note: Terminal PE7 will not be energized in this case. This may be used to provide a low fire post purge, or a low fire hold function."
+          ],
+          [
+            "If the fuel/profile select input is removed (PE9, 10, 11 or 12), the control will immediately move to status 1."
+          ],
+          [
+            "If this control wishes to turn the burner off (there is no call for heat, for example), it will open the 'controlled shutdown' relay, removing power from PE3. It will remain in modulation status however, until one of the conditions above is met."
+          ],
+          [
+            "17.",
+            "Move to post- purge",
+            "The selected motor(s) are moved to their purge positions all others are moved to their closed positions. When the drives have all stopped, the control will move to status 18."
+          ],
+          [
+            "18.",
+            "Post-purge",
+            "The controller confirms all required drives are at their purge positions, and gives a 'purge proved' signal by providing (line voltage) to terminal PE8 (high-fire-switch)."
+          ],
+          [
+            "The control will remain in this status until the burner controller signals the end of pre-purge by breaking PA9 - PA11 ('HIGH' input), or the fuel/profile select input is removed (PE9, 10, 11 or 12). In either case, the control will immediately move to status 1."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\n9.8 Fireye Nexus Combustion Curve\nSite:\nDate:\nProfile:\nFuel:\nNAM\nE\nDrive\nDrive\nDrive\nDrive\nDrive\nDrive\nDrive\nDrive\nDrive\nDrive\n9\nO2\nCO\nNOX\n0\n1\n2\n3\n4\n5\n6\n7\n8\nP 0\nP 1\nP 2\nP 3\nP4\nP 5\nP6\nP 7\nP 8\nP 9\nP 10\nP 11\nP 12\nP 13\nP 14\nP 15\nP 16\nP 17\nP 18\nP 19\nP 20\nP 21\nP 22\nP23\nNotes:\nPID Setup:\nP =\nI =\nD =\n188",
+      "tablas": [
+        [
+          [
+            "NAM E",
+            "Drive",
+            "Drive",
+            "Drive",
+            "Drive",
+            "Drive",
+            "Drive",
+            "Drive",
+            "Drive",
+            "Drive",
+            "Drive 9",
+            "O2",
+            "CO",
+            "NOX"
+          ],
+          [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          [
+            "P 0",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":unselected:",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 1",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 2",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 3",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P4",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P6",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 7",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 8",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 9",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 10",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 11",
+            "",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 12",
+            "",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 13",
+            "",
+            ":unselected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 14",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 15",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 16",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 17",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P 18",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":unselected:",
+            "",
+            ""
+          ],
+          [
+            "P 19",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":unselected:",
+            "",
+            ":unselected:",
+            "",
+            ":unselected:",
+            ":unselected:",
+            "",
+            ""
+          ],
+          [
+            "P 20",
+            "",
+            "",
+            "",
+            "",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "",
+            ":unselected:",
+            "",
+            ""
+          ],
+          [
+            "P 21",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "",
+            "",
+            ":unselected:",
+            "",
+            ""
+          ],
+          [
+            "P 22",
+            "",
+            "",
+            "",
+            "",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "",
+            ":unselected:",
+            ":unselected:",
+            "",
+            ""
+          ],
+          [
+            "P23",
+            "",
+            "",
+            "",
+            "",
+            ":unselected:",
+            ":unselected:",
+            "",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\n10 Function Block Programming Details\nBelow is an overview of the capabilities of the function block program - Abacus. This overview is intended to\ngive the user insight into what can be accomplished with function block programming.\nNOTE: For a more complete description on Abacus, see Fireye Bulletin NXAB-1001.\nIntroduction to Fireye's Abacus Programming Software\n1.1. Introduction\nAbacus is a powerful software package that is used to program Fireye PPC6000 and NX6100 series controls.\nThe software allows the user to define special functions such as draft or feed water control to be implemented\nwithin the control using standard or optional inputs and outputs. The designer can assign option parameters\nand engineer's key's as well as levels of password protection to the custom options. After the program is\ncompleted it is then uploaded to the control via optional Fireye Comfire software. The user can run the optional\nprogram by selection in option parameter 00.4. The factory default program is always available as a back up\nby deselecting the user program.\nThe programs are entered graphically by drawing and connecting blocks on schematic pages. These\nschematics are then sent to the controls where they operate as a program.\nHere is a preview of a simple program.\nDI\nINPUT\n×1\nOR2\nOUT\nHIN1\n+CIN2\nDO\n+COUTPUT\nDI\n×3\nx4\nINPUT\n×2\nBriefly, this program will give a relay closure (digital output, DO) if either of the digital inputs (DI-1 or DI-2) is\nactivated. These inputs could come from relay closures on other equipment.\nThe details of which inputs are read, which output is activated are covered in Fireye Bulletin NXAB-1001.\n!\nWARNING: ON NO ACCOUNT MUST THE PROGRAMMABLE BLOCKS BE USED FOR ANY SAFETY CRITICAL FUNCTION.\nThe operation of the burner management / drive positioning system in the basic control is fail-safe however the\nprogrammable blocks system is not. If the programmable blocks are used to control a safety related item (such\nas water level) then appropriate external limit checking must be provided to maintain safety if the user program\nshould fail to operate.\nAfter loading and executing the Abacus software and following the required steps, a blank schematic page will\nappear. The toolbar on the right hand side of the main abacus window is used to place blocks on the screen.\n189",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\n0:Test Unit - New Schematic\nDI\nINPUT\n×2\nDI\nINPUT\nOR2\nIN1\nOUT\nIN2\nx4\nDO\n+D OUTPUT\n×3\n×1\nFirst draw the blocks, then connect them.\nUsing the toolbar, click the top button\n+D\ntwice to bring up two digital input blocks.\nYou will notice that the blocks always appear in the middle of the visible window. In this case, one is on top of\nthe other. Move these to the left hand side of the screen by dragging with the mouse. To do this, you must\nclick within the block area, not on one of the pins (square nodes).\nYou will also notice that each block has an x-number by its bottom left corner. This is simply a reference\nnumber for the block. Each block on a page will have a unique x-number.\nOn the toolbar, click the second button from the top\nonce. This will give up a digital output block. Move\nthis towards the right hand side of the screen.\nDA\nOn the toolbar, click the OR gate symbol\nonce to create an OR function block. Move this to the middle\nof the other blocks, roughly as on the example.\nTo connect the blocks together:\nMove the mouse pointer over the output pin of the block the signal is to originate from.\nThe output pins are those which have a description shown in blue. They are always on the right hand side of a\nblock. The term 'output pin' refers to the output from this block to the next one, not an output from the control\nitself.\nPress and hold the left mouse button.\nMove the mouse pointer over an 'input pin' of the block the signal is to arrive at, keeping the left mouse\nbutton pushed.\nRelease the mouse button. A link should be drawn.\nLinks must always be drawn like this - starting from an output, finishing at an input.\nNote: Some of the blocks have a sloped top-left corner and some do not. These blocks require parameters.\n190",
+      "tablas": []
+    }
+  ]
+}

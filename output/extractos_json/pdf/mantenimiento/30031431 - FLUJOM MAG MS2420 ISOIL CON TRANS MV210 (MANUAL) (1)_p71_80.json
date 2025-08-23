@@ -1,0 +1,929 @@
+{
+  "archivo": "30031431 - FLUJOM MAG MS2420 ISOIL CON TRANS MV210 (MANUAL) (1)_p71_80",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Access CODE\nInput the right access code\nFunction list:\nMenu\n251 cmds\nSensor\nUnits\nScales\n-Measure\nAlarms\nInputs\nOutputs\n00000000000000\nExemple set quick start\nFile\nmenù function for mcp.\nProcess data\nDisplay\nData logger\nFunctions\nDiagnostic\nSystem\nMCPI> ACODE =*; FOODS\"DATDE; QSFNS-0\n2, 0:08; 3, 0:0K\nlast tx: 27 char, last nc: 13 char\nMCP:\nACODE=0; FOODS=DATDE; QSFNS=0\n27 char\nISOMAG\n[MCP ONLY]\nAL0\n[ACODE]\n100\nTO %\n10.0008\n-0.02.\nM/S\n-0.002+dm3 /s\n0.010\nEL\nU\n0.008\nE2\nNO\nALARMS\nT+dm3\n13.949\nIn *: 11: 29 b\nDevice IP: 10.11.12.13\nACODE=0; FCODS=[MCP COMMAND]; QSFNS=1\nAccess Code\nINSERT MCP Command\nof the function to be\nactivated in the QS menu.\nQuick Start Function Selection\nLINK Terminate\n[MCP ONLY]\nAL0\n[LTERM]\nTerminate the PPP data link\nMCPI session QUIT\n[MCP ONLY]\nAL0\n[MQUIT]\nQuit the MCPI connection\nFunctions LIST\n[MCP ONLY]\nAL0\n[FLIST]\nView list of all available converter functions.\nFunctions LISt Compact\n[MCP ONLY]\nAL0\n[FLISC]\nView compact list of all available converter functions.\nFunctions Menu SELection\n[MCP ONLY]\nAL0\n[FMSEL]\nSelect menu for functions list\nConFiguration LiST\n[MCP ONLY]\nAL0\n[CFLST]\nConfiguration parameter list. The list with the status / values of the converter parameter.\nVolume Totalizer Total Positive Set\n[MCP ONLY]\nAL4\n[VTTPS]\nTotaliz. T+ value set\nVolume Totalizer Partial Positive Set\n[MCP ONLY]\nAL4\n[VTPPS]\nTotaliz.P+ value set\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nISOIL\nINDUSTRIA\n68 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "LINK Terminate",
+            "[MCP ONLY]",
+            "AL0",
+            "[LTERM]"
+          ],
+          [
+            "Terminate the PPP data link",
+            "",
+            "",
+            ""
+          ],
+          [
+            "MCPI session QUIT",
+            "[MCP ONLY]",
+            "AL0",
+            "[MQUIT]"
+          ],
+          [
+            "Quit the MCPI connection",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Functions LIST",
+            "[MCP ONLY]",
+            "AL0",
+            "[FLIST]"
+          ],
+          [
+            "View list of all available converter functions.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Functions LISt Compact",
+            "[MCP ONLY]",
+            "AL0",
+            "[FLISC]"
+          ],
+          [
+            "View compact list of all available converter functions.",
+            "",
+            ""
+          ],
+          [
+            "Functions Menu SELection",
+            "[MCP ONLY]",
+            "AL0",
+            "[FMSEL]"
+          ],
+          [
+            "Select menu for functions list",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ConFiguration LiST",
+            "[MCP ONLY]",
+            "AL0",
+            "[CFLST]"
+          ],
+          [
+            "Configuration parameter list. The list with the status / values of the converter parameter."
+          ],
+          [
+            "Volume Totalizer Total Positive Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTTPS]"
+          ],
+          [
+            "Totaliz. T+ value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Partial Positive Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTPPS]"
+          ],
+          [
+            "Totaliz.P+ value set",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "ISOMAG\nVolume Totalizer Total Negative Set\n[MCP ONLY]\nAL4\n[VTTNS]\nTotaliz. T- value set\nVolume Totalizer Partial Negative Set\n[MCP ONLY]\nAL4\n[VTPNS]\nTotaliz.P- value set\nVolume Total Positive Overflow Set\n[MCP ONLY]\nAL4\n[VTPOS]\nTotaliz.T+ overflow value set\nVolume Partial Positive Overflow Set\n[MCP ONLY]\nAL4\n[VPPOS]\nTotaliz.P+ overflow value set\nVolume Total Negative Overflow Set\n[MCP ONLY]\nAL4\n[VTNOS]\nTotaliz.T- overflow value set\nVolume Partial Negative Overflow Set\n[MCP ONLY]\nAL4\n[VPNOS]\nTotaliz.P- overflow value set\nCPU MaX.recorded temperature\n[MCP ONLY]\nAL6\n[CPUMX]\nCPU max.recorded temperature\nCPU MiN.recorded temperature\n[MCP ONLY]\nAL6\n[CPUMN]\nCPU min.recorded temperature\nBoard T1 MaX.recorded temperature\n[MCP ONLY]\nAL6\n[BT1MX]\nT1 max.recorded temperature\nBoard T1 MiN.recorded temperature\n[MCP ONLY]\nAL6\n[BT1MN]\nT1 min.recorded temperature\nBoard T2 MaX.recorded temperature\n[MCP ONLY]\nAL6\n[BT2MX]\nT2 max.recorded temperature\nBoard T2 MiN.recorded temperature\n[MCP ONLY]\nAL6\n[BT2MN]\nT2 min.recorded temperature\nCalibration OFset Register 0\n[MCP ONLY]\nAL6\n[COFR0]\nCalibration offset register 0\nCalibration OFset Register 1\n[MCP ONLY]\nAL6\n[COFR1]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nCalibration offset register 1\n69 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Volume Totalizer Total Negative Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTTNS]"
+          ],
+          [
+            "Totaliz. T- value set"
+          ],
+          [
+            "Volume Totalizer Partial Negative Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTPNS]"
+          ],
+          [
+            "Totaliz.P- value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Total Positive Overflow Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTPOS]"
+          ],
+          [
+            "Totaliz.T+ overflow value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Partial Positive Overflow Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VPPOS]"
+          ],
+          [
+            "Totaliz.P+ overflow value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Total Negative Overflow Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTNOS]"
+          ],
+          [
+            "Totaliz.T- overflow value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Partial Negative Overflow Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VPNOS]"
+          ],
+          [
+            "Totaliz.P- overflow value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CPU MaX.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[CPUMX]"
+          ],
+          [
+            "CPU max.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CPU MiN.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[CPUMN]"
+          ],
+          [
+            "CPU min.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board T1 MaX.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[BT1MX]"
+          ],
+          [
+            "T1 max.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board T1 MiN.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[BT1MN]"
+          ],
+          [
+            "T1 min.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board T2 MaX.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[BT2MX]"
+          ],
+          [
+            "T2 max.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board T2 MiN.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[BT2MN]"
+          ],
+          [
+            "T2 min.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration OFset Register 0",
+            "[MCP ONLY]",
+            "AL6",
+            "[COFR0]"
+          ],
+          [
+            "Calibration offset register 0",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration OFset Register 1",
+            "[MCP ONLY]",
+            "AL6",
+            "[COFR1]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "ISOMAG\nCalibration GAin Register 0\n[MCP ONLY]\nAL6\n[CGAR0]\nCalibration gain register 0\nCalibration GAin Register 1\n[MCP ONLY]\nAL6\n[CGAR1]\nCalibration gain register 1\nCalibration GAin Register 2\n[MCP ONLY]\nAL6\n[CGAR2]\nCalibration gain register 2\nCalibration GAin Register 3\n[MCP ONLY]\nAL6\n[CGAR3]\nCalibration gain register 3\nCalibration GAin Register C\n[MCP ONLY]\nAL6\n[CGARC]\nCalibration gain register C\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nISOIL\nINDUSTRIA\n70 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Calibration GAin Register 0",
+            "[MCP ONLY]",
+            "AL6",
+            "[CGAR0]"
+          ],
+          [
+            "Calibration gain register 0",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration GAin Register 1",
+            "[MCP ONLY]",
+            "AL6",
+            "[CGAR1]"
+          ],
+          [
+            "Calibration gain register 1",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration GAin Register 2",
+            "[MCP ONLY]",
+            "AL6",
+            "[CGAR2]"
+          ],
+          [
+            "Calibration gain register 2",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration GAin Register 3",
+            "[MCP ONLY]",
+            "AL6",
+            "[CGAR3]"
+          ],
+          [
+            "Calibration gain register 3",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration GAin Register C",
+            "[MCP ONLY]",
+            "AL6",
+            "[CGARC]"
+          ],
+          [
+            "Calibration gain register C",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "ISOMAG\nMENU 14 - FILE (ONLY MCP)\nFile Transfer ABoRt\n[MCP ONLY]\nAL2\n[FTABR]\nAbort the current File Transfer\nFile Transfer STAte\n[MCP ONLY]\nAL0\n[FTSTA]\nShow the File Transfer state\nRead Last EVenTs\n[MCP ONLY]\nAL2\n[RLEVT]\nRead the latest system events\nRead All EVenTs\n[MCP ONLY]\nAL2\n[RAEVT]\nRead all current system events\nRead Last Logged DaTa\n[MCP ONLY]\nAL2\n[RLLDT]\nRead the latest logged data\nRead All Logged DaTa\n[MCP ONLY]\nAL2\n[RLLDT]\nRead all current logged data\nRead Last Sensor Verify Data\n[MCP ONLY]\nAL2\n[RLSVD]\nRead the latest sensor ver. data\nRead All Sensor Verify Data\n[MCP ONLY]\nAL2\n[RASVD]\nRead all sensor verify data\nFile SEND\n[MCP ONLY]\nAL2\n[FSEND]\nSet file name for read operation\nFile ReCeiVE\n[MCP ONLY]\nAL5\n[FRCVE]\nSet file name for write operation\nFile Receive APpend mode\n[MCP ONLY]\nAL5\n[FRCAP]\nSet file name for write-append\nFile OFFSet position\n[MCP ONLY]\nAL2\n[FOFFS]\nSet file offset position\nConFiGuration file WRite\n[MCP ONLY]\nAL2\n[CFGWR]\nSave the configuration to a file\nConFiGuration file ReaD\n[MCP ONLY]\nAL2\n[CFGRD]\nRead the configuration from file\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n71 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "File Transfer ABoRt",
+            "[MCP ONLY]",
+            "AL2",
+            "[FTABR]"
+          ],
+          [
+            "Abort the current File Transfer",
+            "",
+            "",
+            ""
+          ],
+          [
+            "File Transfer STAte",
+            "[MCP ONLY]",
+            "AL0",
+            "[FTSTA]"
+          ],
+          [
+            "Show the File Transfer state",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read Last EVenTs",
+            "[MCP ONLY]",
+            "AL2",
+            "[RLEVT]"
+          ],
+          [
+            "Read the latest system events",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read All EVenTs",
+            "[MCP ONLY]",
+            "AL2",
+            "[RAEVT]"
+          ],
+          [
+            "Read all current system events",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read Last Logged DaTa",
+            "[MCP ONLY]",
+            "AL2",
+            "[RLLDT]"
+          ],
+          [
+            "Read the latest logged data",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read All Logged DaTa",
+            "[MCP ONLY]",
+            "AL2",
+            "[RLLDT]"
+          ],
+          [
+            "Read all current logged data",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read Last Sensor Verify Data",
+            "[MCP ONLY]",
+            "AL2",
+            "[RLSVD]"
+          ],
+          [
+            "Read the latest sensor ver. data",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read All Sensor Verify Data",
+            "[MCP ONLY]",
+            "AL2",
+            "[RASVD]"
+          ],
+          [
+            "Read all sensor verify data",
+            "",
+            "",
+            ""
+          ],
+          [
+            "File SEND",
+            "[MCP ONLY]",
+            "AL2",
+            "[FSEND]"
+          ],
+          [
+            "Set file name for read operation",
+            "",
+            "",
+            ""
+          ],
+          [
+            "File ReCeiVE",
+            "[MCP ONLY]",
+            "AL5",
+            "[FRCVE]"
+          ],
+          [
+            "Set file name for write operation",
+            "",
+            "",
+            ""
+          ],
+          [
+            "File Receive APpend mode",
+            "[MCP ONLY]",
+            "AL5",
+            "[FRCAP]"
+          ],
+          [
+            "Set file name for write-append",
+            "",
+            "",
+            ""
+          ],
+          [
+            "File OFFSet position",
+            "[MCP ONLY]",
+            "AL2",
+            "[FOFFS]"
+          ],
+          [
+            "Set file offset position",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ConFiGuration file WRite",
+            "[MCP ONLY]",
+            "AL2",
+            "[CFGWR]"
+          ],
+          [
+            "Save the configuration to a file",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ConFiGuration file ReaD",
+            "[MCP ONLY]",
+            "AL2",
+            "[CFGRD]"
+          ],
+          [
+            "Read the configuration from file",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "ISOMAG\nFuNCtion list file WRite\n[MCP ONLY]\nAL2\n[FNCWR]\nSave the functions list to file\nFunction Enable Status WRite\n[MCP ONLY]\nAL6\n[FESWR]\nSave function enable status to file\nQuick Start function Status WRite\n[MCP ONLY]\nAL6\n[QSSWR]\nSave quick start function enable.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nISOIL\nINDUSTRIA\n72 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "FuNCtion list file WRite",
+            "[MCP ONLY]",
+            "AL2",
+            "[FNCWR]"
+          ],
+          [
+            "Save the functions list to file",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Function Enable Status WRite",
+            "[MCP ONLY]",
+            "AL6",
+            "[FESWR]"
+          ],
+          [
+            "Save function enable status to file",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Quick Start function Status WRite",
+            "[MCP ONLY]",
+            "AL6",
+            "[QSSWR]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "ISOMAG\nMENU 15 - PROCESS DATA (ONLY MCP)\nOUTput 1 Set\n[MCP ONLY]\nAL0\n[OUT1S]\nSet value for digital output 1\nOUTput 2 Set\n[MCP ONLY]\nAL0\n[OUT2S]\nSet value for digital output 2\nDigital INput 1 Status\n[MCP ONLY]\nAL0\n[DIN1S]\nDigital input 1 status read\nFlow Rate Full Scale in chosen Units\n[MCP ONLY]\nAL0\n[FRFSU]\nF.rate f.scale in chosen units\nFlow Rate Value PerCentage\n[MCP ONLY]\nAL0\n[FRVPC]\nFlow rate value in percentage\nFlow Rate Value Percentage without cut-off\n[MCP ONLY]\nAL0\n[FRVPX]\nF.rate in perc.without cut-off\nFlow Rate Value Binary without cut-off\n[MCP ONLY]\nAL0\n[FRVBX]\nF.rate in binary.without cut-off\nFlow Rate Value Technical Unit\n[MCP ONLY]\nAL0\n[FRVTU]\nF.rate value in unit of measure\nVolume Totalizer Total Positive Value\n[MCP ONLY]\nAL0\n[VTTPV]\nTotaliz. T+ read value\nVolume Totalizer Partial Positive Value\n[MCP ONLY]\nAL0\n[VTPPV]\nTotaliz.P+ read value\nVolume Totalizer Total Negative Value\n[MCP ONLY]\nAL0\n[VTTNV]\nTotaliz. T- read value\nVolume Totalizer Partial Negative Value\n[MCP ONLY]\nAL0\n[VTPNV]\nTotaliz.P- read value\nVolume Totalizer Total Positive Overflow\n[MCP ONLY]\nAL0\n[VTTPO]\nTotaliz. T+ number of overflows\nVolume Totalizer Partial Positive Overflow\n[MCP ONLY]\nAL0\n[VTPPO]\nTotaliz.P+ number of overflows\nVolume Totalizer Total Negative Overflow\n[MCP ONLY]\nAL0\n[VTTNO]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nTotaliz. T- number of overflows\n73 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "OUTput 1 Set",
+            "[MCP ONLY]",
+            "AL0",
+            "[OUT1S]"
+          ],
+          [
+            "Set value for digital output 1",
+            "",
+            "",
+            ""
+          ],
+          [
+            "OUTput 2 Set",
+            "[MCP ONLY]",
+            "AL0",
+            "[OUT2S]"
+          ],
+          [
+            "Set value for digital output 2",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Digital INput 1 Status",
+            "[MCP ONLY]",
+            "AL0",
+            "[DIN1S]"
+          ],
+          [
+            "Digital input 1 status read",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flow Rate Full Scale in chosen Units",
+            "[MCP ONLY]",
+            "AL0",
+            "[FRFSU]"
+          ],
+          [
+            "F.rate f.scale in chosen units",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flow Rate Value PerCentage",
+            "[MCP ONLY]",
+            "AL0",
+            "[FRVPC]"
+          ],
+          [
+            "Flow rate value in percentage",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flow Rate Value Percentage without cut-off",
+            "[MCP ONLY]",
+            "AL0",
+            "[FRVPX]"
+          ],
+          [
+            "F.rate in perc.without cut-off",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flow Rate Value Binary without cut-off",
+            "[MCP ONLY]",
+            "AL0",
+            "[FRVBX]"
+          ],
+          [
+            "F.rate in binary.without cut-off",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flow Rate Value Technical Unit",
+            "[MCP ONLY]",
+            "AL0",
+            "[FRVTU]"
+          ],
+          [
+            "F.rate value in unit of measure",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Total Positive Value",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTTPV]"
+          ],
+          [
+            "Totaliz. T+ read value",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Partial Positive Value",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTPPV]"
+          ],
+          [
+            "Totaliz.P+ read value",
+            ""
+          ],
+          [
+            "Volume Totalizer Total Negative Value",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTTNV]"
+          ],
+          [
+            "Totaliz. T- read value",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Partial Negative Value",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTPNV]"
+          ],
+          [
+            "Totaliz.P- read value",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Total Positive Overflow",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTTPO]"
+          ],
+          [
+            "Totaliz. T+ number of overflows",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Partial Positive Overflow",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTPPO]"
+          ],
+          [
+            "Totaliz.P+ number of overflows",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Total Negative Overflow",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTTNO]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "ISOMAG\nVolume Totalizer Partial Negative Overflow\n[MCP ONLY]\nAL0\n[VTPNO]\nTotaliz.P- number of overflows\nBoard TeMPeratures\n[MCP ONLY]\nAL0\n[BTMPS]\nBoard temperatures\nCPU temperature\n[MCP ONLY]\nAL0\n[CPUTP]\nCPU temperature\nSensor Coils Temperature\n[MCP ONLY]\nAL0\n[SCLTP]\nsensor's coils temperature\nLiQuid VELocity\n[MCP ONLY]\nAL0\n[LQVEL]\nLiquid velocity\nAVeraGe process data Samples Number\n[MCP ONLY]\nAL0\n[AVGSN]\nN.of samples for averaged values\nALARM status\n[MCP ONLY]\nAL0\n[ALARM]\nActive alarm(s) status\nSensor TeSt Result Code\n[MCP ONLY]\nAL0\n[STSRC]\nSensor test result code\nMain power status\n[MCP ONLY]\nAL0\n[MPWRS]\nStatus of main power supply\nINput RESistance\n[MCP ONLY]\nAL0\n[INRES]\nEquivalent Input resistance\nINput VoltageS\n[MCP ONLY]\nAL0\n[INVLS]\nElectrodes input voltages\nSystem Battery Voltage\n[MCP ONLY]\nAL0\n[SBVLT?]\nView battery voltage\nSystem Battery Charge Status\n[MCP ONLY]\nAL0\n[SBCHS?]\nView system battery charge status\nMeasure BUFFers\n[MCP ONLY]\nAL0\n[MBUFF]\nMeasure buffers data read\nSEQuence NumBer\n[MCP ONLY]\nAL0\n[SEQNB]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nSequence number\nISOIL\nINDUSTRIA\n74 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Volume Totalizer Partial Negative Overflow",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTPNO]"
+          ],
+          [
+            "Totaliz.P- number of overflows",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board TeMPeratures",
+            "[MCP ONLY]",
+            "AL0",
+            "[BTMPS]"
+          ],
+          [
+            "Board temperatures",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CPU temperature",
+            "[MCP ONLY]",
+            "AL0",
+            "[CPUTP]"
+          ],
+          [
+            "CPU temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Sensor Coils Temperature",
+            "[MCP ONLY]",
+            "AL0",
+            "[SCLTP]"
+          ],
+          [
+            "sensor's coils temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "LiQuid VELocity",
+            "[MCP ONLY]",
+            "AL0",
+            "[LQVEL]"
+          ],
+          [
+            "Liquid velocity",
+            "",
+            "",
+            ""
+          ],
+          [
+            "AVeraGe process data Samples Number",
+            "[MCP ONLY]",
+            "AL0",
+            "[AVGSN]"
+          ],
+          [
+            "N.of samples for averaged values",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ALARM status",
+            "[MCP ONLY]",
+            "AL0",
+            "[ALARM]"
+          ],
+          [
+            "Active alarm(s) status",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Sensor TeSt Result Code",
+            "[MCP ONLY]",
+            "AL0",
+            "[STSRC]"
+          ],
+          [
+            "Sensor test result code",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Main power status",
+            "[MCP ONLY]",
+            "AL0",
+            "[MPWRS]"
+          ],
+          [
+            "Status of main power supply",
+            "",
+            "",
+            ""
+          ],
+          [
+            "INput RESistance",
+            "[MCP ONLY]",
+            "AL0",
+            "[INRES]"
+          ],
+          [
+            "Equivalent Input resistance",
+            "",
+            "",
+            ""
+          ],
+          [
+            "INput VoltageS",
+            "[MCP ONLY]",
+            "AL0",
+            "[INVLS]"
+          ],
+          [
+            "Electrodes input voltages",
+            "",
+            "",
+            ""
+          ],
+          [
+            "System Battery Voltage",
+            "[MCP ONLY]",
+            "AL0",
+            "[SBVLT?]"
+          ],
+          [
+            "View battery voltage",
+            "",
+            "",
+            ""
+          ],
+          [
+            "System Battery Charge Status",
+            "[MCP ONLY]",
+            "AL0",
+            "[SBCHS?]"
+          ],
+          [
+            "View system battery charge status",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Measure BUFFers",
+            "[MCP ONLY]",
+            "AL0",
+            "[MBUFF]"
+          ],
+          [
+            "Measure buffers data read",
+            "",
+            "",
+            ""
+          ],
+          [
+            "SEQuence NumBer",
+            "[MCP ONLY]",
+            "AL0",
+            "[SEQNB]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "ISOMAG\nMETER DATA\nThis function allows the import of data from one converter to another up to level 4 included.\nThe hardware configurations and the corresponding calibration values are not restored.\nThe \"data import\" procedure can be performed one time only, since the directory, according to the\nboard's SERIAL NUMBER, will be renamed.\nOPERATING PROCEDURE TO CHANGE THE CONVERTER BOARD\nRemove the 4 screws (see \"MV210 construction\" page10) to remove the main housing.\nAttention of any electrical cables.\n!\n0\n0\nQ\nRemove the 4 screws (see \"MV210 construction\" page10) to remove the MV210 board. Attention\nof any electrical cables. Remove the SD card and insert the new MV210 board.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nPush Remove SDcard\nNew board MV210\nC\nC\n10\nAssembled the card turn on the converter and enable [Save Conv. F. def.] function to restore data.\nFUNCTIONS\nT+ reset\nP+ reset\nI- reset\np- reset\nLoad Sens. f. def\n44++\nLoad Conv.f.def\nSave Sens.f.def\nSave Conv.f. def\nCalibration\n11-Functions\n12-Diagnostic\n13-System\nView function \"11.8\" page30.\n75 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "ISOMAG\nB.I.V. (BUILT-IN VERIFICATOR)\nBIV, abbreviation for Built In Verificator, is available as option for MV210 converters and must be\nenabled by the manufacturer. It is also necessary that the SD card is activated to store saved data. The\nanalysis of collected data performed by a dedicated IsoBIV software running on another device (PC).\nThe simplicity of test procedures minimize the risk of handling errors; maximum safety and reliability\nthanks to the traceable factory calibration and internal references complement the safety by design\nprinciple with minimal failure rates\nIsoBIV allows to create and print a report as validation of device functionality/measure error.\nOperation and Conditions of Use.\nThe system is based on periodic measurements performed every hour or using a manual command\n(MCP command = SVERC). The sensor parameters are measured and compared with previously\nmeasured and stored reference values. Each time the system performs a series of measurements on\nthe sensor and records them in a file called \"STESTLOG.CSV\", which resides in the main directory of\nthe SD memory of the converter.\nThe sensor test can also be carried out without the active BIV system, but in this case only the presence\nof isolation losses and the overall good functioning of the sensor such the coil resistance, the excitation\ncurrent and the rising times of the current within the generic limits that guarantee operation.\nInstead if BIV is active, the measurements are deeper and the measured values are tested by comparing\nthem with a set of characteristic sensor parameters measured at the time of installation.\nSaving Reference Values (Characteristic Parameters)\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nAfter sensor installation, the parameters that will be used as reference for the BIV system and the IsoBIV\ndata analysis software must to be measured.\nThe characteristic values of the coil circuits are saved in the converter memory at the factory before to\nship the instrument. For the reference measure of the electrodes circuits, there is a specific function that\nperform the measures of voltage and resistance at the installation site. This function is managed ONLY by\nthe IsoBIV program, which through a simple wizard will set the converter to perform the measures in the\nspecific measurement point where the meter is installed.\nTo activate BIV, these functions must be verified:\nQ [ASVFE=1] : It enable the sensor's automatic test every hour. The ASVFE function in Menu 1 with\naccess level 3 can be also activated using the instrument's display.\nThis feature can be enabled even if the SD card is not installed and if the BIV function is not active; in\nsuch a case the sensor file is NOT created and any alarms will be generated either if the data deviation\nfrom the reference data is outside the sesnor's limits.\nPractically, in the absence of the necessary hardware permissions, this function is useful to test the\ninsulation of the coils.\n76 / 85\n210_EN_IT_IS_R1_1.02.0\nISOIL\nINDUSTRIA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "ISOMAG\nOpening and reading manually the files STESTLOG.CSV\nThe list below describes the steps for saving and reading STESTLOG.CSV file.\n\nOPEN INTERFACE STARTING THE PROGRAM MCP\nFOLLOW THE STEPS HERE BELOW\nConnection\nOptions\nView\nTools\nAccess\nFunction list:\nMenu\n+\nSensore\nUnita'misura\nScale\nMisura\nAlarm\nIngressi\nUscite\n1-0-0-0-0-000-0-0-0-00\nDisplay\nData logger\nFunzioni\nDiagnostica\nSistema\nFile\nDati processo\nMcp console:\nMCP\nConfig. Files\nDatalogger\nDownload settings:\nData source:\nWhen:\nToday:\nEvents\nDatalogger\n@ Today\nData Range\n@ Last\nSensor Verify\nSave path:\nO Generic file\nC:\\Users'\nO Al\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n77 / 85\n260 cmds\n100\n1.0893\n.M/S\nE1\nE2\n9:003E2R kč\n+2.219 dm3/s\n+21.79/\n1\n- Select Sensor Verify\n- Choose the date or reference period of the\nwhich one wants to carry out the evaluation of the (\n- Choose the directory where to save the file\nNESSUN ALLARME\nT+dm3\n87768.277\n2\nPress Download to download the file.\nPress Download to download the file.\nAt the end of the download the stestlog.csv file\nwill be automatically opened by the program\nDevice IP: 10.11. 12. 13\nDownload\nStop\n×\nOpen folder\nSelect\nO .\nSearch for the consultation of the files inside\nof the drive SD card.\nPath structure for searching the files in the SD card of the converter\nSensor serial number\n>\nReference year\nReference month\nReference day\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    }
+  ]
+}

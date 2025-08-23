@@ -1,0 +1,678 @@
+{
+  "archivo": "Hoja de datos de polipasto grúa puente_p1_10",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "PARAMETROS CAMBIADOS GHA12- ATV-320 ELEVACION\nLEER ATENTAMENTE EL MANUAL DE PROGRAMACION DEL VARIADOR ANTES DE EMPEZAR LA PROGRAMACION.\nCONF - Configuracion\nFCs - Ajustes de fábrica\nFry - Grupo parametros\nALL - Todos\nRetorno preventivo a parametros de fábrica\nGFS - Ret. ajustes fábrica\nYES\nPulsar ENT durante más de 2 segundos\nFULL\nLAC - Nivel acceso (*)\nEPr - Experto\nSIM - Arranque Rápido\nCFG - Macro configuración\nHSt - Elevación\nPulsar ENT durante más de 2 segundos\nFLt - Gestión de fallos\nrSt - Borrado de fallos\nrSF - Borrado fallos\nNO\nEtF - Fallo externo\nEtF - Asignación fallo externo\nNO\nSIM - Arranque Rápido\nbFr - Frec. estandar motor\n50 Hz\nnPr - Pot. nominal motor\n3 Kw\nUnS - Tensión nominal motor\n400 V\nnCR - Int. nominal motor\n7,1 A\nFrS - Frec. nominal motor\n50 Hz\nnSP - Vel. nominal motor\n2875 Rpm\ntFr - Frecuencia Máxima\n72 HZ\ntUn - Autoajuste\nYES\nPulsar ENT durante más de 2 segundos\ntUS - Estado autoajuste\nYES\nCambiara a 'dOnE' en cuanto haya terminado sin fallos el autoajuste\nItH - I Térmica motor\n7,1 A\nACC - Rampa aceleración\n2 SEG\ndEC - Rampa deceleración\n0,8SEG\nLSP - Velocidad mínima\n6,5 HZ\nHSP - Velocidad máxima\n40 HZ\nSET - Ajustes\nSPG - Ganancia prop. Vel.\n40%\nFun - Funciones aplicación\nAdC - Inyección DC auto\nAdC - Inyección DC Auto\nNO\nPSS - Velocidad preselec.\nPS2 - 2 Vel. Preselec.\nLI3\nSP2 - Vel. Preselecc. 2\n64 HZ\nbLC - Control de freno\nbLC - Control lógica de freno\nLO1\nbSt - Tipo de movimiento\nUer - Elevación\nbCI - Contaco freno\nLAI2\nbIP - Imp. apertura freno\n2Ibr - 2 Int freno\nIbr - I apert. freno subida\n7,1 A\nIrd - I apert. freno bajada\n1,3 A\nbrt - Tiempo apert. freno\n0,15 SEG\nbIr - Frec. apertura freno\n3 HZ\nbEn - Frec. cierre freno\n2,9 HZ\ntbE - Ret. cierre freno\n0 SEG\nbEt - Tiempo cierre freno\n0,15 SEG\nbrH1 - BRH b1\n1\nHsH - Elev. alta velocidad\nHSO - Elev. alta velocidad\nCSO - Lim. Intes.\nCOr - Coef. Veloc. Baja\n100%\ntOS - Tiempo de medida\n0,5 Seg.\nOSP - Vel. de medida\n6,5 Hz\nCLO - Limit. int. alta velocidad\n9,5 A\nSCL - Frec. limitacion I\n40 Hz\nCHS - Conmutación HSP\nSH2 - 2 Velocidades altas\nLI5\nHSP2 - Vel. Máxima 2\n64 HZ\nI_O - Entradas/Salidas\nIEn - Configuración encoder\nEnU - Uso encoder\nSEC - Fdbk monit.\nFAnF - Margen de error\n4 Hz\nLAnF - Umbral activ. Control\n0 Hz\ndAnF - Dirección de chequeo\nbOtH\nTAnF - Tiempo detec. Fallo\n1,5 Seg.\nCOn - Comunicación\nCnO - CANopen\nAdCO - Direc. CANopen\n2\nbdCO - Velocidad CANopen\n125 Kbps\n(*)\nNivel acceso mediante consola\nitF\nLAC\nEPr - Experto\nGH\nCranes & Components\nREF.\nCÓDIGO / CODE\nPVA1232E\nFecha / Date\nRev.\nDiseñado / Designed\nA. Palacios\n26/11/2021\n07\nAprobado / Approved\nJ.Munarriz\n26/11/2021",
+      "tablas": [
+        [
+          [
+            "CONF - Configuracion",
+            "FCs - Ajustes de fábrica",
+            "Fry - Grupo parametros",
+            "ALL - Todos",
+            "Retorno preventivo a parametros de fábrica"
+          ],
+          [
+            "GFS - Ret. ajustes fábrica",
+            "YES",
+            "Pulsar ENT durante más de 2 segundos"
+          ],
+          [
+            "FULL",
+            "LAC - Nivel acceso (*)",
+            "",
+            "EPr - Experto",
+            ""
+          ],
+          [
+            "SIM - Arranque Rápido",
+            "CFG - Macro configuración",
+            "",
+            "HSt - Elevación",
+            "Pulsar ENT durante más de 2 segundos"
+          ],
+          [
+            "FLt - Gestión de fallos",
+            "rSt - Borrado de fallos",
+            "rSF - Borrado fallos",
+            "NO",
+            ""
+          ],
+          [
+            "EtF - Fallo externo",
+            "EtF - Asignación fallo externo",
+            "NO",
+            ""
+          ],
+          [
+            "SIM - Arranque Rápido",
+            "bFr - Frec. estandar motor",
+            "50 Hz",
+            ""
+          ],
+          [
+            "nPr - Pot. nominal motor",
+            "3 Kw",
+            ""
+          ],
+          [
+            "UnS - Tensión nominal motor",
+            "400 V",
+            ""
+          ],
+          [
+            "nCR - Int. nominal motor",
+            "7,1 A",
+            ""
+          ],
+          [
+            "FrS - Frec. nominal motor",
+            "50 Hz",
+            ""
+          ],
+          [
+            "nSP - Vel. nominal motor",
+            "2875 Rpm",
+            ""
+          ],
+          [
+            "tFr - Frecuencia Máxima",
+            "72 HZ",
+            ""
+          ],
+          [
+            "tUn - Autoajuste",
+            "YES",
+            "Pulsar ENT durante más de 2 segundos"
+          ],
+          [
+            "tUS - Estado autoajuste",
+            "YES",
+            "Cambiara a 'dOnE' en cuanto haya terminado sin fallos el autoajuste"
+          ],
+          [
+            "ItH - I Térmica motor",
+            "7,1 A",
+            ""
+          ],
+          [
+            "ACC - Rampa aceleración",
+            "2 SEG",
+            ""
+          ],
+          [
+            "dEC - Rampa deceleración",
+            "0,8SEG",
+            ""
+          ],
+          [
+            "LSP - Velocidad mínima",
+            "6,5 HZ",
+            ""
+          ],
+          [
+            "HSP - Velocidad máxima",
+            "40 HZ",
+            ""
+          ],
+          [
+            "SET - Ajustes",
+            "SPG - Ganancia prop. Vel.",
+            "40%",
+            ""
+          ],
+          [
+            "Fun - Funciones aplicación",
+            "AdC - Inyección DC auto",
+            "AdC - Inyección DC Auto",
+            "NO",
+            ""
+          ],
+          [
+            "PSS - Velocidad preselec.",
+            "PS2 - 2 Vel. Preselec.",
+            "LI3",
+            ""
+          ],
+          [
+            "SP2 - Vel. Preselecc. 2",
+            "64 HZ",
+            ""
+          ],
+          [
+            "bLC - Control de freno",
+            "bLC - Control lógica de freno",
+            "LO1",
+            ""
+          ],
+          [
+            "bSt - Tipo de movimiento",
+            "Uer - Elevación",
+            ""
+          ],
+          [
+            "bCI - Contaco freno",
+            "LAI2",
+            ""
+          ],
+          [
+            "bIP - Imp. apertura freno",
+            "2Ibr - 2 Int freno",
+            ""
+          ],
+          [
+            "Ibr - I apert. freno subida",
+            "7,1 A",
+            ""
+          ],
+          [
+            "Ird - I apert. freno bajada",
+            "1,3 A",
+            ""
+          ],
+          [
+            "brt - Tiempo apert. freno",
+            "0,15 SEG",
+            ""
+          ],
+          [
+            "bIr - Frec. apertura freno",
+            "3 HZ",
+            ""
+          ],
+          [
+            "bEn - Frec. cierre freno",
+            "2,9 HZ",
+            ""
+          ],
+          [
+            "tbE - Ret. cierre freno",
+            "0 SEG",
+            ""
+          ],
+          [
+            "bEt - Tiempo cierre freno",
+            "0,15 SEG",
+            ""
+          ],
+          [
+            "brH1 - BRH b1",
+            "1",
+            ""
+          ],
+          [
+            "HsH - Elev. alta velocidad",
+            "HSO - Elev. alta velocidad",
+            "CSO - Lim. Intes.",
+            ""
+          ],
+          [
+            "COr - Coef. Veloc. Baja",
+            "100%",
+            ""
+          ],
+          [
+            "tOS - Tiempo de medida",
+            "0,5 Seg.",
+            ""
+          ],
+          [
+            "OSP - Vel. de medida",
+            "6,5 Hz",
+            ""
+          ],
+          [
+            "CLO - Limit. int. alta velocidad",
+            "9,5 A",
+            ""
+          ],
+          [
+            "SCL - Frec. limitacion I",
+            "40 Hz",
+            ""
+          ],
+          [
+            "CHS - Conmutación HSP",
+            "SH2 - 2 Velocidades altas",
+            "LI5",
+            ""
+          ],
+          [
+            "",
+            "HSP2 - Vel. Máxima 2",
+            "64 HZ",
+            ""
+          ],
+          [
+            "I_O - Entradas/Salidas",
+            "IEn - Configuración encoder",
+            "EnU - Uso encoder",
+            "SEC - Fdbk monit.",
+            ""
+          ],
+          [
+            "FAnF - Margen de error",
+            "4 Hz",
+            ""
+          ],
+          [
+            "LAnF - Umbral activ. Control",
+            "0 Hz",
+            ""
+          ],
+          [
+            "dAnF - Dirección de chequeo",
+            "bOtH",
+            ""
+          ],
+          [
+            "TAnF - Tiempo detec. Fallo",
+            "1,5 Seg.",
+            ""
+          ],
+          [
+            "COn - Comunicación",
+            "CnO - CANopen",
+            "AdCO - Direc. CANopen",
+            "2",
+            ""
+          ],
+          [
+            "",
+            "bdCO - Velocidad CANopen",
+            "125 Kbps",
+            ""
+          ]
+        ],
+        [
+          [
+            "",
+            "Fecha / Date",
+            "Rev."
+          ],
+          [
+            "Diseñado / Designed",
+            "A. Palacios",
+            "26/11/2021",
+            "07"
+          ],
+          [
+            "Aprobado / Approved",
+            "J.Munarriz",
+            "26/11/2021"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "GHA12 PARAMETROS CAMBIADOS - ATV-320 TRASLACIÓN CARRO\nLEER ATENTAMENTE EL MANUAL DE PROGRAMACION DEL VARIADOR ANTES DE EMPEZAR LA PROGRAMACION.\n1 x VB0 60S\nCONF - Configuracion |FCs - Ajustes de fábrica\nFry - Grupo parametros\nALL - Todos\nRetorno preventivo a parametros de fábrica. Pulsar enter (.).\nGFS - Ret. ajustes fábrica\nYES\nPulsar ENT durante más de 4 segundos; se pondrán fijos los 2 puntos.\nFULL\nSIM - Arranque Rápido\nCFG - Macro configuración\nHSt - Elevación\nPulsar ENT durante más de 4 segundos; se pondrán fijos los 2 puntos.\nFLt - Gestión de fallos\nrSt - Borrado de fallos\nrSF - Borrado fallos\nNO\nEtF - Fallo externo\nEtF - Asignación fallo externo\nNO\nSIM - Arranque Rápido\nbFr - Frec. estandar motor\n50 Hz\nnPr - Pot. nominal motor\n0,37 KW\nUnS - Tensión nominal motor\n400 V\nnCR - Int. nominal motor\n1,5 A\nFrS - Frec. nominal motor\n50 Hz\nnSP - Vel. nominal motor\n1358 rpm\ntFr - Frecuencia Máxima\n75 HZ\nItH - I Térmica motor\n1,5 A\nACC - Rampa aceleración\n4 s\ndEC - Rampa deceleración\n4 s\nLSP - Velocidad mínima\n10 Hz\nHSP - Velocidad máxima\n40 Hz\nFun - Funciones aplicación\nPSS - Velocidad preselec.\nPS2 - 2 Vel. Preselec.\nLI3\nSP2 - Vel. Preselecc. 2\n40 Hz\nbLC - Control de freno\nbLC - Control lógica de freno\nNO\nI_O - Entradas/Salidas\nr2 - Configuración R2\nr2 - Asignación R2\nrUn - Var. Marcha\ndrC - Control motor\nCtt -Tipo control motor\nU/F 5punt.\nSPGU - Com. Inercia UF\n0 %\nUFr - Compensación RI\n150 %\nU1 - Ajuste del perfil U/F\n51 V\nF1 - Ajuste del perfil U/F\n5 Hz\nU2 - Ajuste del perfil U/F\n95 V\nF2 - Ajuste del perfil U/F\n10 Hz\nCOn - Comunicacion\nCnO - CANopen\nAdCO - Direc. CANopen\n3\nbdCO - Velocidad CANopen\n125 Kbps\n(.)\nSeleccionado\nNo seleccionado\n(4) Intensidad nominal motor; nCR\n(*) Sustituir por valores de pegatina variador\nGH\nCranes & Components\nREF.\nCÓDIGO / CODE\nDiseñado / Designed\nAprobado / Approved\nA. Palacios\n25/11/2022\n25/11/2022\nJ. Munarriz\nPVA1232C\nFecha / Date\nRev.\n02",
+      "tablas": [
+        [
+          [
+            "",
+            "",
+            "1 x VB0 60S",
+            ""
+          ],
+          [
+            "CONF - Configuracion",
+            "|FCs - Ajustes de fábrica",
+            "Fry - Grupo parametros",
+            "ALL - Todos",
+            "Retorno preventivo a parametros de fábrica. Pulsar enter (.)."
+          ],
+          [
+            "GFS - Ret. ajustes fábrica",
+            "YES",
+            "Pulsar ENT durante más de 4 segundos; se pondrán fijos los 2 puntos."
+          ],
+          [
+            "FULL",
+            "SIM - Arranque Rápido",
+            "CFG - Macro configuración",
+            "HSt - Elevación",
+            "Pulsar ENT durante más de 4 segundos; se pondrán fijos los 2 puntos."
+          ],
+          [
+            "FLt - Gestión de fallos",
+            "rSt - Borrado de fallos",
+            "rSF - Borrado fallos",
+            "NO",
+            ""
+          ],
+          [
+            "EtF - Fallo externo",
+            "EtF - Asignación fallo externo",
+            "NO",
+            ""
+          ],
+          [
+            "SIM - Arranque Rápido",
+            "bFr - Frec. estandar motor",
+            "50 Hz",
+            ""
+          ],
+          [
+            "nPr - Pot. nominal motor",
+            "0,37 KW",
+            ""
+          ],
+          [
+            "UnS - Tensión nominal motor",
+            "400 V",
+            ""
+          ],
+          [
+            "nCR - Int. nominal motor",
+            "1,5 A",
+            ""
+          ],
+          [
+            "FrS - Frec. nominal motor",
+            "50 Hz",
+            ""
+          ],
+          [
+            "nSP - Vel. nominal motor",
+            "1358 rpm",
+            ""
+          ],
+          [
+            "tFr - Frecuencia Máxima",
+            "75 HZ",
+            ""
+          ],
+          [
+            "ItH - I Térmica motor",
+            "1,5 A",
+            ""
+          ],
+          [
+            "ACC - Rampa aceleración",
+            "4 s",
+            ""
+          ],
+          [
+            "dEC - Rampa deceleración",
+            "4 s",
+            ""
+          ],
+          [
+            "LSP - Velocidad mínima",
+            "10 Hz",
+            ""
+          ],
+          [
+            "HSP - Velocidad máxima",
+            "40 Hz",
+            ""
+          ],
+          [
+            "Fun - Funciones aplicación",
+            "PSS - Velocidad preselec.",
+            "PS2 - 2 Vel. Preselec.",
+            "LI3",
+            ""
+          ],
+          [
+            "SP2 - Vel. Preselecc. 2",
+            "40 Hz",
+            ""
+          ],
+          [
+            "bLC - Control de freno",
+            "bLC - Control lógica de freno",
+            "NO",
+            ""
+          ],
+          [
+            "I_O - Entradas/Salidas",
+            "r2 - Configuración R2",
+            "r2 - Asignación R2",
+            "rUn - Var. Marcha",
+            ""
+          ],
+          [
+            "drC - Control motor",
+            "Ctt -Tipo control motor",
+            "U/F 5punt.",
+            ""
+          ],
+          [
+            "SPGU - Com. Inercia UF",
+            "0 %",
+            ""
+          ],
+          [
+            "UFr - Compensación RI",
+            "150 %",
+            ""
+          ],
+          [
+            "U1 - Ajuste del perfil U/F",
+            "51 V",
+            ""
+          ],
+          [
+            "F1 - Ajuste del perfil U/F",
+            "5 Hz",
+            ""
+          ],
+          [
+            "U2 - Ajuste del perfil U/F",
+            "95 V",
+            ""
+          ],
+          [
+            "F2 - Ajuste del perfil U/F",
+            "10 Hz",
+            ""
+          ],
+          [
+            "COn - Comunicacion",
+            "CnO - CANopen",
+            "AdCO - Direc. CANopen",
+            "3",
+            ""
+          ],
+          [
+            "",
+            "bdCO - Velocidad CANopen",
+            "125 Kbps",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\nA\nMARCHA\n14\n15\n16\n17\n18\n19\n20\nRAPIDA ELEVACION\nPE\nB\nL/-\nN / +\n-STOP1\n-STOP2\n-K1\n-K2\nSUBIR\n-K3\n-K4\n15 10\nC\n20\n3 C\nI3\n10\n20\n30\n40\n50\n60\n70\n8009\n11 10\n20\n30\nCARRO DERECHA\nCARRO RAPIDA\nA\nCARRO IZQUIERDA\nGIRO IZQUIERDA\nGIRO RAPIDA\nGIRO DERECHA\nBAJAR\n-K5\n-K6\n-K7\n-K8\n-K9\n-K10\n-K11\n-K12\n-K13\nB\n-\n40\n50\nD\n-CB\n-CB\nT PE\n-CB\n16\n1\nU.\n-CB\n2\n-CB\n-CB\n60\n7 C\n80 90\nI2 1\n2 0\nO\n3 0\n40\n500\n6\n7C\nC\n8009\n-CB\n12\nE\nCB - 16pins\n18G1\n3\n5\n-CB\n-CB\n-CB\n-CB\n-CB\n-CB\n4\n7\n8\n6\n9\nT 11\n-CB\nD\n10\nE\nGH81-IK\nTM80 - 1.13\nF\nF\n-1\nG\nG\n0\nH\n0\n0\nI\n5\nH\nI\nJ\nJ\n+\nCLIENTE\nCORPORACION ACEROS AREQUIPA\n(PERU)\nDIBUJADO\nM.A.\nFECHA\n06/06/2024\nAPROBADO\nF.G.\nINDUSTRIAS ELECTROMECANICAS GH. S.A.\nTELS: (943)805660 - FAX 888721\nOLABERRIA -BEASAIN (GUIPUZCOA)- ESPAÑA\nGH\nREF:\n128107\nTITULO:\nRADIO\nREV:\n00\nHOJA Nº\n01\nREF. ELECTRICA\nDE\n01",
+      "tablas": [
+        [
+          [
+            "",
+            "DIBUJADO",
+            "M.A."
+          ],
+          [
+            "",
+            "FECHA",
+            "06/06/2024"
+          ],
+          [
+            "",
+            "APROBADO",
+            "F.G."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n-CFC PE\nA1\nA\n460V / 60Hz\nA2\nB1\nPE\nD (301-1)\nL11\nD (301-1)\nL13\nA\nD (301-1)\nL15\nD (301-1)\n1\n3\n5\n-F101\nB\n10 A\n2\n4\n6\nI\n.\nB\nC\n-QF102 H-\n2,5 A\n*\n*\n*\nC\n(102-17)\n-\n-\nD\nI>\nI> I>\nD\n8\nL1\nE\nL2\nL3\n1\n0\nPE\n-KM102\n(102-19)\n1\n3\n2\n4\n5\n7\n6\n8\nE\n-A101\nATV320U40N4BEM\n-R112\n33 Ohm - 150 W\nU\nV\nW\nPE\nF\nQ\nG\n>Q\nQ\nQ-\n1\n1\nPBe\ne\n1\n-R101\n40 Ohm - 1150 W\n2\nPB\n0\nF\nU1\nV1\nW1\n-V101\nGH010601\nS1\nS2 +\n-\n000000\nG\n55\n-KM102\n(102-19)\n56\nH\nH\n11\nT2\nT3\n-C101\nÎPE\n-C101\n7\n8\nI\n-M101\n3Kw\n7,11A\n3000rpm\nU\nV\nM\n3~\nW\n.\nI\n1\n/\nPE\n-Y101\nJ\nJ\n+\nCLIENTE\nCORPORACION ACEROS AREQUIPA\n(PERU)\nDIBUJADO\nM.A.\nFECHA\n06/06/2024\nAPROBADO\nF.G.\nINDUSTRIAS ELECTROMECANICAS GH. S.A.\nTELS: (943)805660 - FAX 888721\nOLABERRIA -BEASAIN (GUIPUZCOA)- ESPAÑA\nGH\nREF:\n128107\nTITULO:\nELEVACION\nREV:\n00\nREF. ELECTRICA\nHOJA Nº\n101\nDE\n06",
+      "tablas": [
+        [
+          [
+            "DIBUJADO",
+            "M.A."
+          ],
+          [
+            "FECHA",
+            "06/06/2024"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "1\n2\n3\nSUBIR\n9\n4\n5\nBAJAR\n6\nV. RAPIDA\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\nVALIDACION\nFRENO\n-CC\nA\n110V\nD (302-1) !\n13\n33\n13\n33\n-S101\n14\n34\n-S102\n14\n34\nNOTA:\nA101\nCOM\n5V\n-B\nB\n-A\nA\nMONORRAIL\nWH\nBN\nPK\nGY\nYE\nGN\nBIRRAIL\nWH\nBN\nYE\nGN\nPK\nGY\nB\n-C\n-C\n-\n4\n-C\n3\n5\n-CB\n-CB\n-CB\n3\n» (103-1)\nA\n-CC\n1\n-X11\n4\n41\n-S103\n(102-4)\n42\nB\n11\n-KA112\n(102-18)\n12\nC\n3\n5\n-A106\nBAUMER\n4\n-CP\n13\n-CP\n4\n-CP\n5\n-CC\n13\n-CC\nT4\n-CC\nD\n5\n-X11\n-X11\n-X11\n13\nX11\n5\n14\nC\n13\n-QF102;>\n(101-14)\n14\nD\n21\n-KM102\n(102-19)\n-\n101\n>\n103\n105\n.\n1\n-\n-KM102\n(102-19)\n14\n1\n31 -\nE\n-S103\n(102-4)\n32\n11 -\n-S103\n-\n-\n(102-6)\n(102-2)\n(102-17)\n12\n-S103\n(102-4)\n41\n21 .\n-KA102\n(102-4)\n22\n7\n42 44\nAI2\nQ\nCOM\nAI1\n+10V\n0\nCOM\n5V\n-B\nB\n-A\nA\nATV320U40N4BEM\nF\n-X11\n-X11\n104\n-X11\n106\nSTO\n-A101\n102\nP24\n+24V\n0\nDI1\n0\nDI2\n0\nDI3\n0\nDI4\n0\nDI5\n0\nDI6\n0\n<1(103-11)\nG\n102,\nD (103-10)\n32 34\n32 34\n32 34\n-KA101\n-KA102\n31 (102-4)\n-KA103\n31 (102-6)\n(102-2)\n31\n>(103-11)\n(103-11)\nH\n11\n-KA102\n(102-4)\n12 14\n11\n-KA101\n(102-2)\n12 14\nI\n0V\n-KA101\n-KA102\n-KA103\n-CC\n16\nNO\n(102-4)\n(103-5)\n(102-10)\n-\n-\nNC\nNO\nNC\nNO\n(102-2)\n(103-6)\n( 102-11)\n( 102-7)\nNC\n-\n-\n( 103-7)\n(102-12)\n-\n-\nJ\n+\nCLIENTE\nDIBUJADO\nM.A.\nCORPORACION ACEROS AREQUIPA\n(PERU)\nFECHA\n06/06/2024\nAPROBADO\nF.G.\nGH\nINDUSTRIAS ELECTROMECANICAS GH. S.A.\nTELS: (943)805660 - FAX 888721\nOLABERRIA -BEASAIN (GUIPUZCOA)- ESPAÑA\nREF:\n128107\nTITULO:\nELEVACION\n22\n-CC\n2\n0\nR1A\nE\nDQ+\nCOM Q\nF\nDQ-\nØ\nR1C\n0\n-KA112\nG\nH\n-CC\n10\nNO\nNC\n( 102-19)\n1 s\nX-KM102\nI\n1\nNO\nNČ\n$ (103-1)\n(101-14)\n( 101-14)\n(101-14)\n(101-14)\nNA/( 102-9)\n(102-16)\n(101-14)\nJ\n-\n-\nREF. ELECTRICA\nREV:\n00\nHOJA Nº\n102\nDE\n06",
+      "tablas": [
+        [
+          [
+            "",
+            "NOTA:",
+            "A101"
+          ],
+          [
+            "COM",
+            "5V",
+            "-B",
+            "B",
+            "-A",
+            "A"
+          ],
+          [
+            "MONORRAIL",
+            "WH",
+            "BN",
+            "PK",
+            "GY",
+            "YE",
+            "GN"
+          ],
+          [
+            "BIRRAIL",
+            "WH",
+            "BN",
+            "YE",
+            "GN",
+            "PK",
+            "GY"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "1\n3\nA\n(102-20) \\\n2\n3\n4\n5\nSUBIR\n6\n7\n8\n9\n10\n11\n12\n13\nBAJAR\nV. RAPIDA\n21\n21\n21\n13\n-KA101\n(102-2) 22\n-KA102\n-KA103\n-KM302\n(302-18)\n24\n(102-4) 22 24\n(102-6)\n22 24\n14\n-CC\n-11\n(102-3) 7\n14\n15\n16\n17\n18\n19\n20\n3\nD\n(302-1)\nA\nB\n(102-14) <\n(102-14) D\nB\n102\n(102-3) D\n-CC 12\nC\nC\n1\n-\n7\nUP Q\nCOM Q\nD\nDOWN Q\nFAST Q\nUP Q\nDOWN Q\nFAST Q\nCOM Q\nS.C. Q\nALARM Q\nALARM Q\nS.C. Q\nOTE Q\nOTE Q\nLQ-\nN Q\nGND Q\nTARE Q\nTROL. Q\nCRANE Q\nBRAKE Q\nBRAKE Q\nOVER. O\nOVER. O\nT\nD\nINPUTS\nOUTPUTS\nOUTPUTS\nPOWER\n48V ... 220V AC\nE\n-A102\nCOREBOX\nE\nLOAD CELL\nPTC\nRS-485\nF\n@ SHIELD\n-Q OUT -\nQ OUT +\nQ IN +\nQ IN -\n-Q GND\nZ\n0\nQ GND\n+\n000\nCANOPEN TERMINAL\nUSB\nSWITCH\nON\nF\nOFF\n1\n-R111\n470 Ohm - 1/4 W\nG\nG\n2\nK\n.\nH\nWH\nGN\nBK\nRD\n-C101\n9\nH\n-B101\nI\n1\n-RT101\n2\nI\n1\n(102-20) D\n1\nD (302-1)\nJ\nJ\n+\nCLIENTE\nDIBUJADO\nM.A.\nFECHA\n06/06/2024\nAPROBADO\nF.G.\nCORPORACION ACEROS AREQUIPA\n(PERU)\nGH\nINDUSTRIAS ELECTROMECANICAS GH. S.A.\nTELS: (943)805660 - FAX 888721\nOLABERRIA -BEASAIN (GUIPUZCOA)- ESPAÑA\nREF:\n128107\nTITULO:\nELEVACION\nREV:\n00\nREF. ELECTRICA\nHOJA Nº\n103\nDE\n06",
+      "tablas": [
+        [
+          [
+            "",
+            "DIBUJADO",
+            "M.A."
+          ],
+          [
+            "",
+            "FECHA",
+            "06/06/2024"
+          ],
+          [
+            "",
+            "APROBADO",
+            "F.G."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\nA\nA\nB\nB\n0\nJ4\nH L +V GND Shield\nWeidmuller\n7508001930\nR1\nC\nRon\nDỎa P1\n000\nC\n-Z1\nRoff\n000\nJ\nJ2\nJ3\nD\n+X 11\nD\nCANOPEN\nE\nE\n-A102\nCOREBOX\nRS-485\n-A101\n-A301\nF\nF\nOGND\n+\n-\n000\nATV320\nATV320\nG\nG\nH\nH\nI\nI\nJ\nJ\n+\nCLIENTE\nDIBUJADO\nM.A.\nFECHA\n06/06/2024\nAPROBADO\nF.G.\nCORPORACION ACEROS AREQUIPA\n(PERU)\nGH\nINDUSTRIAS ELECTROMECANICAS GH. S.A.\nTELS: (943)805660 - FAX 888721\nOLABERRIA -BEASAIN (GUIPUZCOA)- ESPAÑA\nREF:\n128107\nTITULO:\nCOMUNICACIONES\nREV:\n00\nREF. ELECTRICA\nHOJA Nº\n104\nDE\n06",
+      "tablas": [
+        [
+          [
+            "DIBUJADO",
+            "M.A."
+          ],
+          [
+            "FECHA",
+            "06/06/2024"
+          ],
+          [
+            "APROBADO",
+            "F.G."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\nPE\n(101-20) >>\nA\n(101-20) \\\nL11\nL13\nA\n(101-20) \\\n(101-20) D\nL15\n1\nB\n-F301\n4 A\n1\n3\n2\n4\n5\n1\n6\n1\nB\nC\nC\nD\nD\nQ\nE\nL1\nL2\nL3\n-A301\nPE\nATV320U15N4C\n-KM302\n(302-18)\n1\n, 3\nD\n2\n4\nE\n5\n6\nF\nU\n>Q\nV\nW\nPE\nQ\nPBe / PO\n0\nPB\nF\n0\nG\nG\nH\n7\n-C301\n8\nH\n1. 12\nT3\n-C301\nÎPE\n-V301\nI\n-M301\n0,37Kw\n1,46A\n1500rpm\nU\nV\nM\n3~\nW\n.\nI\nJ\n.\n-Y301\nPE\nJ\nJ\n+\nCLIENTE\nDIBUJADO\nM.A.\nFECHA\n06/06/2024\nCORPORACION ACEROS AREQUIPA\n(PERU)\nAPROBADO\nF.G.\nGH\nINDUSTRIAS ELECTROMECANICAS GH. S.A.\nTELS: (943)805660 - FAX 888721\nOLABERRIA -BEASAIN (GUIPUZCOA)- ESPAÑA\nREF:\n128107\nTITULO:\nTRASLACION CARRO\nREV:\n00\nREF. ELECTRICA\nHOJA Nº\n301\nDE\n06",
+      "tablas": [
+        [
+          [
+            "",
+            "DIBUJADO",
+            "M.A."
+          ],
+          [
+            "",
+            "FECHA",
+            "06/06/2024"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "1\n2\nIZQUIERDA\n3\n4\nDERECHA\n5\n6\nV. RAPIDA\n7\n8\n9\n10\n11\nAVISADOR ACUSTICO-LUMINOSO\n12\n13\n14\n15\n16\n17\nA\n(103-20) >\n3\n(102-6), D>\n13\n33\n-S301\n14\n13\n33\n34\n-S302\nB\n-C\n6\n-CB\n14\n34\nC\n7\n-CB\nJ\n-C\n8\nNOTA:\nIZQUIERDA\nS303\nDERECHA\n-CB MONORRAIL\nB\nA\nBIRRAIL\nA\nB\n8\n6\nC\n-CP\n6\n-CC\n16\nD\n7\n-CP\n17\n-CC\nÎ7\n-CP\n18\n-CC\n8\n-KM302\n(302-18)\n53\n54\nCOM\n-X11\n301\nE\n-X11\n303\n-X11\n305\nAI1\nSTO\nP24\n0\n+10V\n-A301\nATV320U15N4C\n11 -\n-S303\n(302-6)\n-\n-\n21\n-KA302\n(302-4)\n22 24\n+24V\nDI1\n0\n0\n-S303\n(302-6)\n21 .\n22\nF\n12\n-X11_306\n-S303\n(302-6)\n21 -\nTA\n22\n(302-2)\n(302-4)\n11\n-S303\nA\n(302-6)\n12\n-X11\n8\n-X11\n8\nDI2\n0\nDI3\n0\n32 34\n32 34\n32 34\n-KA301\n-KA302\n-KA303\n31 (302-6)\n(302-2)\n31 (302-4)\n31\n-X11\n302\nG\n-X11\n304\n-X11\n307\n21\n-KA301\n(302-2)\n22 24\n-HA1\n1\n-H1\n2\nDI4\n0\nR1A\nR1C\n0\n18\nFRENO\n19\n20\nA\nB\nC\n8\nD\nR2A\nR2C\n0\nE\nF\nG\n-X11\n1\nH\nH\n11\n-KA302\n(302-4)\n12 14\nI\n-KA301\n1\n(103-20) >\nNO\n( 302-4)\n(302-8)\n(302-13)\nJ\n-\n-\nNC\n+\n11\n-KA301\n(302-2)\n12 14\n-KA302\nNO\nNC\nNO\n( 302-2)\n(302-8)\n(302-14)\n-\n-\n-KA303\nNC\n-\n-\n-\n-\n(302-15)\n-\n-\n-KM302\nNO\nNC\n(301-15)\n-\n-\n(301-15)\n( 301-15)\n( 103-9)\n(302-9)\n-\n-\nCLIENTE\nDIBUJADO\nM.A.\nCORPORACION ACEROS AREQUIPA\n(PERU)\nFECHA\n06/06/2024\nAPROBADO\nF.G.\nINDUSTRIAS ELECTROMECANICAS GH. S.A.\nTELS: (943)805660 - FAX 888721\nOLABERRIA -BEASAIN (GUIPUZCOA)- ESPAÑA\nGH\nREF:\n128107\nREF. ELECTRICA\nTITULO:\nTRASLACION CARRO\nREV:\n00\nI\nJ\nHOJA Nº\n302\nDE\n06",
+      "tablas": [
+        [
+          [
+            "",
+            "NOTA:\nS303",
+            "IZQUIERDA",
+            "DERECHA"
+          ],
+          [
+            "",
+            "MONORRAIL",
+            "B",
+            "A"
+          ],
+          [
+            "",
+            "BIRRAIL",
+            "",
+            "A",
+            "B"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\nA\nA\nB\nB\nC\nC\nD\nD\n-X11\nE\n1\n00\n00\n3\n4\n5\n101\n102\n103\n104\n105\n106\n301\n302\n303\n304\n305\n306\n307\n608\nPTC\nIF\n1\n2\n00\nA/V\n4G4\n-CFC\nE\nPA-1 1 A-2 TB-1 1 B-2 1 PE\nF\nF\n3G 12\n10G12\n8G 12\nG\nW10\nW11\nG\nW12\nS303\nHA1, H1\nS103\nH\nH\nI\nI\nJ\nJ\n+\nCLIENTE\nDIBUJADO\nM.A.\nFECHA\n06/06/2024\nAPROBADO\nF.G.\nCORPORACION ACEROS AREQUIPA\n(PERU)\nGH\nINDUSTRIAS ELECTROMECANICAS GH. S.A.\nTELS: (943)805660 - FAX 888721\nOLABERRIA -BEASAIN (GUIPUZCOA)- ESPAÑA\nREF:\n128107\nTITULO:\nBORNERO X11\nREV:\n00\nREF. ELECTRICA\nHOJA Nº\n01\nDE\n01",
+      "tablas": [
+        [
+          [
+            "",
+            "DIBUJADO",
+            "M.A."
+          ],
+          [
+            "",
+            "FECHA",
+            "06/06/2024"
+          ],
+          [
+            "APROBADO",
+            "F.G."
+          ]
+        ]
+      ]
+    }
+  ]
+}

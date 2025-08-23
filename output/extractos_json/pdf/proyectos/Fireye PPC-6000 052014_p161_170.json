@@ -1,0 +1,222 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p161_170",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nThe probe must be mounted in a manner that ensures that the flue gases pass into the gas tube at its open\nend and out of the tube at the flange end. Furthermore, if possible, the flange should be vertical with the gas\ntube angled downwards to ensure that particulates do not build up within the sample tube. Probe mounting\nwith the flange horizontal is acceptable. Inverted probe mounting is not acceptable.\n--\nC\nVERTICAL FLUE\nPROBE MOUNTED ON SIDE\nPREFERRED MOUNTING\n1\nD\nTOP VIEW\nSECTION ON E-E.\n2\nACCEPTABLE MOUNTING\nHORIZONTAL FLUE\nPROBE MOUNTED ON SIDE.\nFLUE\nGAS\n-90\nF\nF\nE\nE\nFLUE\nGAS\nD\nFLUE\nGAS\nSECTION\nON D-D.\nPROBE MOUNT HOLES SHOWN\n(SEE HG220371)\nNOTE ORIENTATION RELATIVE\nTO FLUE GAS FLOW.\nFLUE\nGAS\nSIDE VIEW\nSECTION ON F-F.\nC\nSECTION ON C-C\nTOP VIEW\nSECTION ON A-A.\nB\nFLUE\nGAS\nA\nFLUE\nGAS\nPROBE MOUNT HOLES(SEE HG220371)\nNOTE ORIENTATION RELATIVE TO\nFLUE GAS FLOW.\nB\n3\nA\nNON-PREFERRED MOUNTING\nHORIZONTAL FLUE\nPROBE MOUNTED ON TOP.\nSECTION ON B-B\nSIDE VIEW.\nPROBE MOUNT HOLES SHOWN\n(SEE HG220371). HOLE ORIENTATION\nRELATIVE TO FLUE GAS FLOW.\nY\n30\nSIDE VIEW\nUNACCEPTABLE MOUNTING\nHORIZONTAL FLUE\nPROBE MOUNTED UNDERNEATH.\nFLUE\nGAS\n4\nDO NOT FIT PROBE IN\nTHIS POSITION.\nThere are two types of flange available (see the drawing over the page). With either flange the vertical center\nline of the flange shown on the drawing should correspond to the gas flow direction.\n6 stainless steel M6 x 20mm socket cap screws are provided for probe attachment.\nThe probe flange temperature must be maintained at the temperature of the flue wall by repacking or adding\nlagging, which may have been removed to mount the probe. Sulfate condensation will occur if the flue wall of\noil fired boiler falls below approximately 130℃. The sulfate problem does not occur in gas-fired installations,\nbut vapor may cause problems due to condensation if the temperature of the flue gas falls below 100℃.\nThe maximum flue gas temperature is 1004ºF (540℃).\n161",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "FLUE WALL\nPART A\nDIRECTION OF\nFLUE GAS FLOW\nMOUNTING\nBE220069\nFLUE WALL\nØ 63.5(2.5\")\nCUT OUT IN FLUE\nFLUE APERTURE\nCOVER BE220059\nØ M6x25 ST.STL.\nSCREW - TAP\nFLUE WALL IN 6\nPOS'NS ON 80\n(3.15\") PCD TO\nSUIT\nX\n8\nM6 PROBE\n0\nMOUNT HOLES\nE\nØ 73.0(2.87\")\nCUT OUT IN FLUE.\nVIEW OF MOUNTING PLATE\nWITH COVER REMOVED.\nGASKET BE220060\nIN 2 POS'NS.\n®\nfireye\nPART B\nDIRECTION OF\nFLUE GAS FLOW\n3 (1/8\") FILLET WELD\nALL ROUND\n30!\nFLUE APERTURE\nCOVER BE220059\nM6 PROBE\nQ\n0\nMOUNT HOLES\nC\nGASKET BE220060\n20\nVIEW OF MOUNTING PLATE\nWITH COVER\n(0.78\")\nWELD FLANGE\nPROBE MOUNT\nBE220345\nMATERIAL: MILD STEEL\nFINISH: ZINC PLATE.\nPROBE MOUNT SYSTEM - FLAT WALL FLUE.\nALL DIMENSIONS IN MILLIMETRES\nINCH EQUIVALENTS ARE IN ()\nPROBE MOUNT SYSTEM - CYLINDRICAL\nOR FLAT WALL FLUE.\n`\nThe probe end cap carries a removable 20mm (3/4\") flexible conduit fitting to enable probe replacement\nwithout wiring. The 2 hexagonal caps visible on the probe rear face are there to cover the calibration gas port\nand the sample gas port. The latter is merely a tube that passes directly into the flue to enable gas samples to\nbe drawn or flue temperatures to be taken using other instrumentation. Both ports must be kept sealed during\nnormal operation for safety and accurate performance.\n162",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "®\nfireye\n9 Appendix\n9.1 Calibrating and servicing the oxygen probe\n9.1.1 Probe calibration\nWARNING\n!\nBefore proceeding with probe calibration, ensure you have a suitable air and\nreference gas supply, since both are required to complete the calibration\nprocedure. The calibration gas concentration must be entered as option parameter\n30.3 and the oxygen trim function must be disabled using option parameter 30.5.\nDepending on the system configuration there may be 2 oxygen probes connected\nto the system, in which case please ensure the calibration gas is being supplied to\nthe correct probe.\nIf the probe calibration is to be checked while the burner is firing ensure that\noxygen limits have not been set (option 38.0) which may cause a burner lock-out\nto occur while the calibration is being performed.\nProceed with probe calibration as follows :-\n1. Enter option set mode using the site or adjust ratio passcodes. (see section 5).\n2. Select option parameter 30.3 and set the value to be the same as the concentration of the calibration gas\nto be used.\n3. Select option parameter 30.5 in the display and ensure it is set to 0.\n4. Select option parameter 30.6 and change the value of the parameter to 1 and then press ENTER. The\noxygen trim function will be disabled and the system is in \"calibrate air\" mode.\n5. Apply the calibration air supply to the oxygen probe calibration port. Once this has been connected, select\noption parameter 30.1, and view the probe offset value.\n6. Allow the offset value to settle and then select option 30.6 and increment the value to 2 and then press\nENTER. The oxygen trim function will remain disabled and the system will be in \"calibrate reference gas\"\nmode.\n7. Apply the calibration gas to the oxygen probe calibration port. Once this has been connected, select\noption parameter 30.2, and view the probe gain value.\n8. Once this has been connected, select option parameter 30.2, and view the probe gain value.\n9. Before enabling the oxygen trim function using option parameter 30.5, ensure that the calibration gas\nsupply is removed from the probe and that the probe calibration port end cap is fitted, to prevent incorrect\noxygen measurements.\n163",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\n9.1.2 Oxygen Probe Filter Testing\nThe filter can be tested without removing the probe from the flue. Before proceeding, ensure the oxygen trim\nfunction is disabled using option parameter 30.5.\nThe check is carried out by passing air at 350cc/min (22cu. ins/min) into the calibration gas connection on the\nrear of the probe adjacent to the flexible conduit fitting, and checking the pressure drop.\nThe pressure drop can be found by connecting a manometer or similar in the flow line to the calibration gas\nconnection, as shown below.\nCalibration air pump.\n<\n350cc/min\nSee\nNOTE\nbelow\n150mm (6ins)\nmax\nIf the pressure is 150mm (6ins) water gauge or more the filter must be replaced.\nNOTE: Fireye offers a calibration pump kit, part number CAP-1. See your local Fireye Distributor for details.\n9.1.3\nRemoving the oxygen probe from the flue\nCAUTION\n!\n. Before attempting to remove the probe, switch off the system and the boiler. It is\nessential to switch the burner off since dangerous levels of carbon monoxide may\nbe present in the flue.\n. Since the body of the probe will be hot, it will be necessary to use heat resistant\ngloves to hold the probe.\n. Do not operate the boiler without the probe or blanking plate fitted since\ndangerous levels of carbon monoxide may be present in the flue.\nThe Fireye Oxygen Probe is retained in the flue by six 6mm stainless steel socket head cap screws.\n. Loosen the 3 screws securing the probe end cap and slide the cap down the flexible conduit. Use caution\nthe end cap unit may be hot.\n164",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\n. Access is now available to the electrical terminations. Remove the plug from the printed circuit board\nallowing the flexible conduit fitting to slide out of the probe body complete with the plug.\nSince the body of the probe will be hot, it will be necessary to use heat resistant gloves to hold the\nprobe.\n· Remove the six retaining screws. The probe can be extracted from the flue taking care not to damage the\nsealing gasket.\n. The only customer replaceable items are the flue thermocouple and oxygen filter.\n. If it is necessary to operate the boiler while the probe is removed, the blanking plate supplied with the\nequipment must be fitted to the probe flange.\n. Refitting is the reverse of the removal procedure. Ensure that the screws are tightened sequentially.\n9.1.4 Filter replacement\n. Remove the oxygen probe from the flue as detailed in section 9.1.3, and unscrew the insulating flue\nthermocouple mounting blocks from the snout.\n. Before removing the three 6mm stainless steel nuts and spring washers which retain the snout, it is\nimportant to hold the body horizontal or snout down to prevent soot or other deposits from falling into the\nprobe body.\n. When the 3 nuts and washers have been removed, the snout can be drawn off the mounting studs to allow\nthe captive filter assembly to be removed.\n. The new filter assembly (part number 19-117) can then be inserted into the snout, beveled side inwards.\n. The snout can be refitted, ensuring that the filter locates into the probe body. The retaining washers and\nnuts should be tightened sequentially to seal the filter assembly to the flange.\n9.1.5 Probe mounted flue thermocouple replacement.\n· Remove the oxygen probe from the flue as detailed in section 9.1.3.\n. Disconnect the internal connections to the thermocouple.\n. Unscrew the 2 thermocouple-mounting blocks from the probe snout to allow the thermocouple to be\nstraightened.\n. Remove the hexagonal nut securing the thermocouple into the probe and withdraw the thermocouple\nthrough the probe body.\n. Refitting is the reverse of the removal procedure. The electrical connection and polarity of the\nthermocouple are detailed on the following page.\n165",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nFireye O2 Probe Connector\nINTERNAL\nCONNECTIONS\n*02-\n02+\nPROBE T/C-\nPROBE T/C+\n0\n0\n0\n0\nFLUE T/C-\nFLUE T/C+\nHEATER\nHEATER\n0\n0\n0\nCOMPONENT SIDE VIEW OF INTERNAL\nELECTRICAL INTERCONNECTION PCB\n166\nEXTERNAL\nCONNECTIONS",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\n9.2 Troubleshooting inverter problems\nProblem\nPossible Cause\nSolution\nSPEED\nTIME\n· Inverter does not start because it\ndoes not receive a RUN signal.\n. Ensure that the inverter receives\na RUN signal from the burner\ncontroller at the same time as\nthe PPC6000.\nSPEED\n· Inverter has a slow start.\n. Ensure that the inverter's slow\nstart feature is disabled.\n· Late RUN signal.\n· Non-linear output from inverter or\ninverter's PID is enabled\n. Ensure that the inverter receives\na RUN signal from the burner\ncontroller at the same time as\nTIME\nthe PPC6000.\n. Check that the inverters output\nis selected to be linear, and that\nthe inverters own PID loop is\ndisabled.\nSPEED\n· Current limit reached\n· Slow down the inverter by\nincreasing its acceleration /\ndeceleration time settings.\n·\nNoise\n· Check cable screens.\nTIME\nSPEED\nTIME\n. Current limit reached.\n· Non-linear output from inverter or\ninverter's PID is enabled.\n. Slow down the inverter by\nincreasing its acceleration /\ndeceleration time settings.\n. Check that the inverters output\nis selected to be linear, and that\nthe inverters own PID loop is\ndisabled.\nSPEED\n· Fan failed to stop before restart.\n. Increase the inverter stop time\nby increasing option parameter\n9.3 on the PPC6000.\nTIME\nSPEED\n· Control is unstable\n· Adjust option parameters 9.0, 9.2\nand 9.3 on the PPC6000 control to\nreduce accuracy & slow down\ncontrol response.\n.\nCheck Option parameter 9.4\nmatches the acceleration /\ndeceleration time programmed into\nthe VSD.\nTIME\n·\nVSD is current limiting. Increase\nacceleration / deceleration time in\nVSD and option parameter 9.4.\nIn extreme cases, it may be necessary to increase the inverter error tolerance to prevent safety shutdowns\ncaused by positioning faults (set option 9.1 = 1). This must only be done if an inverter error of +55 will not\ncause unsafe combustion.\n167",
+      "tablas": [
+        [
+          [
+            "Problem",
+            "Possible Cause",
+            "Solution"
+          ],
+          [
+            "SPEED",
+            "TIME",
+            "· Inverter does not start because it does not receive a RUN signal.",
+            ". Ensure that the inverter receives a RUN signal from the burner controller at the same time as the PPC6000."
+          ],
+          [
+            "SPEED",
+            "",
+            "· Inverter has a slow start.",
+            ". Ensure that the inverter's slow start feature is disabled."
+          ],
+          [
+            "",
+            "· Late RUN signal. · Non-linear output from inverter or inverter's PID is enabled",
+            ". Ensure that the inverter receives a RUN signal from the burner controller at the same time as"
+          ],
+          [
+            "TIME",
+            "the PPC6000."
+          ],
+          [
+            ". Check that the inverters output is selected to be linear, and that the inverters own PID loop is disabled."
+          ],
+          [
+            "SPEED",
+            "",
+            "· Current limit reached",
+            "· Slow down the inverter by increasing its acceleration / deceleration time settings."
+          ],
+          [
+            "",
+            "· Noise",
+            "· Check cable screens."
+          ],
+          [
+            "TIME"
+          ],
+          [
+            "SPEED",
+            "TIME",
+            ". Current limit reached. · Non-linear output from inverter or inverter's PID is enabled.",
+            ". Slow down the inverter by increasing its acceleration / deceleration time settings."
+          ],
+          [
+            ". Check that the inverters output is selected to be linear, and that the inverters own PID loop is disabled."
+          ],
+          [
+            "SPEED",
+            "",
+            "· Fan failed to stop before restart.",
+            ". Increase the inverter stop time by increasing option parameter 9.3 on the PPC6000."
+          ],
+          [
+            "TIME",
+            ""
+          ],
+          [
+            "SPEED",
+            "",
+            "· Control is unstable",
+            "· Adjust option parameters 9.0, 9.2 and 9.3 on the PPC6000 control to reduce accuracy & slow down control response."
+          ],
+          [
+            ". Check Option parameter 9.4 matches the acceleration / deceleration time programmed into the VSD."
+          ],
+          [
+            "TIME"
+          ],
+          [
+            "· VSD is current limiting. Increase acceleration / deceleration time in VSD and option parameter 9.4."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\n9.3 PID Tutorial\nPID Adjustment\nThe PPC6000 utilizes and advanced algorithm in order to maintain setpoint over a variety of load conditions.\nThis three term PID can be infinitely adjusted to suit almost any application. The operator should have a basic\nunderstanding of the relationship between the three terms - proportional, integral and derivative.\nProportional\nTypical older modulating systems employ only proportional control. This would be similar to the slide wire type\nfound on most steam boilers. When using only a proportional control the system rarely achieves setpoint as\nthe burner firing rate is lowered as the pressure comes up. At some point the input meets the actual demand\nand the pressure no longer raises or lowers, thus an offset between desired setpoint and actual operating\npressure occurs. The only time the pressure and setpoint are the same is if the actual load equals the lowest\nfiring rate of the burner, this is rare. An example of proportional only set up might be; Setpoint is 100 PSI,\nproportional range is 10 PSI. That is low fire is at 100 PSI, high fire is at 90 PSI with a 1:1 relationship in\nbetween, e.g .: 95PSI equals 50% rate. A good starting point for the \"P\" value, in most cases is about 10% of\nsetpoint.\nIntegral\nIf the integral term is turned on, the control compares the actual pressure against setpoint at an adjustable\ninterval. If there is an offset, the firing rate is increased by a small percentage until the next interval. This will\ncontinue until the pressure equals the setpoint. The same routine occurs as the pressure rises above the\nsetpoint. Too much or too little integral will cause over and undershoot of the setpoint. Integral is set in\nseconds per repeat in the PPC6000.\nFor example, if the P were set at 10 psi with a boiler setpoint of 100 psi, the burner would first remain at high\nfire until the pressure reached 90 psi, and then start to modulate down. If the load was equal to 50% firing\nrate, the pressure would stall at 95 psi. Adding and \"I\" value of 10 would ramp the output up to 100% (high\nfire) in 10 seconds, assuming no change in the boiler pressure. Setting and \"I\" value of 300 increases the\noutput up to 100% (high fire) in 5 minute (300 seconds). As the boiler reaches setpoint, the same timing effect\noccurs above setpoint. Therefore, too much \"I\" can cause over/under shoot as loads change. Too little \"I\" may\ncause rapid hunting. A good starting point for the \"I\" value, in most cases is 50.\nDerivative\nEnabling the derivative has the effect of sensing the rate of change in the process variable (pressure or\ntemperature) and increasing or holding up the firing rate output despite the integral term. This in effect\namplifies the output to anticipate the effect of a sudden change in load demand. Derivative acts inversely when\nthe setpoint is exceeded. Derivative is set in seconds on the PPC6000. A good starting point for the \"D\" value,\nin most cases is 2.\nStart with a P value of about 10% of setpoint, and value of 50 seconds and a D value of 2 seconds. After\nobserving the operation through normal load swings, adjust each value, usually one at a time, and observe the\nresults. When making a change it is recommended the value be doubled or halved to determine which\ndirection you need to go. Bear in mind, the burner should not continuously hunt or swing to maintain the\ndesired setpoint. It is normal for a slight over and undershoots of setpoint during serious load changes.\nThe values for the PID's are found at option parameters 21.2, 21.3 and 21.4 for setpoint 1 (PID1), and 22.2,\n22.3 and 22.4 for setpoint 2 (PID2). These values are adjustable using the Site Passcode 154.\n168",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\n9.4 Combustion Profile Setup Guideline\nIt is safe to say that most burners do not have fuel and air control devices that have linear flow characteristics.\nWhen commissioning the Fireye Nexus/PPC parallel positioning system, the following procedure will help\nassure the maximum benefit will be realized. Before starting the installation, the commissioning engineer\nshould try to verify the maximum combustion air damper (flow) position so as to know the \"target\" high fire\nposition. This can be done by rotating the original jack shaft before it is removed and measuring the air\ndamper opening. If possible, it should be marked for reference.\nThere are 24 points available for creating a profile, P0 (closed/off) to P23 (high fire). The first three positions,\nP0, P1&P2 are required to reach ignition which may or may not be the same as low fire (P3). After establishing\na good low fire and entering the values at P3, the display will now indicate P4 with the drives at the P3\nposition. At this time the main air drive or drives should be increased a minimum of one degree or until the\nobserved oxygen level increases approximately 1.0 to 1.5%, do not press enter at this time. At this point the\nfuel drive should be increased slowly to bring the oxygen level back down to the desired level and entered at\nthis time. Following this procedure from low to high fire will yield a relatively linear profile. That is to say, each\nposition will increase the fuel and air flows by nearly equal amounts from low to high fire, thus making the\nprofile somewhat linear. This will aid in setting up O2 trim. NOTE: On very high turndown burners, the O2\nincrease may need to be greater in higher firing rates to avoid running out of 'P' positions.\nThe PPC6000's Engineers Key 44 (see section 6.6.2) displays the actual 02 value of the Fireye oxygen\nprobe when fitted. It should be noted that the reading of the Fireye probe will be between 1 and 1.5% lower\nthan most portable combustion analyzers. This is normal and due to the difference between wet and dry\nsamples. Bear in mind the PPC6000 will trim to the value of the Fireye probe, not to the value of a portable\nanalyzer. Also, when using adjust ratio mode to re-tune an existing profile, do not simply charge the O2 target\nvalue. Adjust the fuel or air to achieve the desired O2 setpoint, then enter that value.\nFor example:\nPosition\nAir Drive\nFuel Drive\nObserved O2%\nIncreased O2%\nP3\n5.0\n15.0\n7.0\n9.0\nP4\n7.5\n18.0\n7.0\n9.0\nP5\n12.0\n22.0\n6.0\n8.0\nP6\n17.0\n28.0\n5.0\n7.0\nP7\n24.0\n33.0\n4.0\n6.0\nP8\n29.0\n38.0\n4.0\n6.0\nP9\n35.0\n45.0\n4.0\n6.0\nP10\n43.0\n55.0\n3.5\n5.0\nP11\n53.0\n67.0\n3.5\n5.5\nP12\n66.0\n79.0\n3.5\n5.0\nP13\n80.0\n88.0\n3.5\nHigh Fire\nNOTE: The angular change in the air drive position required to achieve the 1.0 to 1.5% increase in observed\noxygen level may increase as the burner fires at higher rates. This is normal as the air \"damper\" will not likely\nbe linear. When approaching high fire large increases in the air drive servomotor travel may be required to\nincrease the oxygen reading by 1.0 to 1.5%. As a rule, this should be avoided as the burner is potentially \"out\nof air\" and in so doing, the effective input to the boiler will be negligible. This would also affect the operation of\noxygen trim should this option be used.\n169",
+      "tablas": [
+        [
+          [
+            "Position",
+            "Air Drive",
+            "Fuel Drive",
+            "Observed O2%",
+            "Increased O2%"
+          ],
+          [
+            "P3",
+            "5.0",
+            "15.0",
+            "7.0",
+            "9.0"
+          ],
+          [
+            "P4",
+            "7.5",
+            "18.0",
+            "7.0",
+            "9.0"
+          ],
+          [
+            "P5",
+            "12.0",
+            "22.0",
+            "6.0",
+            "8.0"
+          ],
+          [
+            "P6",
+            "17.0",
+            "28.0",
+            "5.0",
+            "7.0"
+          ],
+          [
+            "P7",
+            "24.0",
+            "33.0",
+            "4.0",
+            "6.0"
+          ],
+          [
+            "P8",
+            "29.0",
+            "38.0",
+            "4.0",
+            "6.0"
+          ],
+          [
+            "P9",
+            "35.0",
+            "45.0",
+            "4.0",
+            "6.0"
+          ],
+          [
+            "P10",
+            "43.0",
+            "55.0",
+            "3.5",
+            "5.0"
+          ],
+          [
+            "P11",
+            "53.0",
+            "67.0",
+            "3.5",
+            "5.5"
+          ],
+          [
+            "P12",
+            "66.0",
+            "79.0",
+            "3.5",
+            "5.0"
+          ],
+          [
+            "P13",
+            "80.0",
+            "88.0",
+            "3.5",
+            "High Fire"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\n9.5 Fireye PPC6000 Efficiency Calculations\nFireye PPC6000 controls can display calculated combustion efficiency.\nFor the displayed efficiency to be meaningful the correct values for Calorific Value and Hydro-Carbon Ratio for\nthe fuel in use must be entered in the related Fireye PPC6000 option parameters.\nEfficiency may be displayed as Net or Gross.\nThe calorific value of a fuel is the heat given out when unit quantity of the fuel is completely burnt, any fuel\ncontaining hydrogen has two calorific values, these being the gross or higher calorific value and the net or\nlower calorific value.\nThe gross calorific value is the heat given out when unit quantity of fuel at 15.6 ℃ (60 ºF) is completely burnt\nand the products of combustion are cooled to 15.6 ℃ (60 ºF), as such any steam present in the products of\ncombustion due to the burning of the hydrogen will be condensed to water, giving up its latent heat of\nvaporization and some of its sensible heat loss.\nThis heat recovery is not possible under practical conditions and the net value is approximately the gross\nvalue less this quantity of heat which is usually taken at 2.45 MJ/Kg of steam formed.\nTherefore if gross efficiency is required, gross calorific value is used and the latent heat of vaporization due to\nany steam present in the products of combustion is taken as a loss in the efficiency calculation.\nHowever, if net efficiency is required, net calorific value is used and therefore the latent heat of vaporization\ndue to any steam present in the products of combustion is already taken into account, so the latent heat loss in\nthe efficiency equation is set to zero.\nIn addition when considering gross efficiency it is normal to also take account to the boiler radiated heat loss.\nThis will be a fixed heat loss from the boiler shell in the order of 1% to 3% of the boiler high fire output, which if\nthe burner is operating with say a 6 to 1 turn down would equate to a 6% to 18% loss at low fire.\nComparison of Fireye PPC6000 with Hand Held Equipment\nWhen comparing the efficiency as displayed by the PPC6000 control and other equipment it is important to\nensure the same parameters are being used by both units.\n1) Ensure the efficiency is selected to be either net or gross in both units, hand held equipment usually\nuses net since it is rare for hand held equipment to have knowledge of the boiler firing rate to include\nthe radiated heat loss.\n2) Ensure the same calorific value is being used by both units.\n3) Ensure the same value for hydro-carbon ratio is being used by both units.\n4) Ensure the ambient (inlet) temperature being measured by the hand held is physically at the air intake\nto the burner, as it should be for the PPC6000. If the hand held equipment does not measure the inlet\ntemperature, ensure the value it is using for ambient air temperature is representative of the\napplication.\n5) Ensure the flue temperature and oxygen value are being measured at the same location in the flue to\nreduce the possibility of errors being introduced due to stratification of the flue gas.\n6) Fireye O2 probes measure oxygen in the flue without extracting and drying flue gases. If attempting to\ncompare the oxygen values being measured by the PPC6000 and a hand held equipment ensure the\nvalue being given by the hand held is corrected from a dry to a 'wet' value, as it will almost certainly be\nmeasured as a 'dry' value. The water being removed to prevent damage to the sensor cells in the\nhand held equipment.\n170",
+      "tablas": []
+    }
+  ]
+}

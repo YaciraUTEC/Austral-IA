@@ -1,0 +1,724 @@
+{
+  "archivo": "Fireye PPC-6000 052014_p151_160",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "®\nfireye\nA display can only log the faults of up to eight PPC's, therefore the fault log range is selected by holding down\nthe right arrow key and the Engineers Key (Fireye logo) simultaneously. The ranges are as follows;\nFault Mode on CANbus\nFault Log Range\n0\nNo Logging\n1\nAddress 0-7\n2\nAddress 8-15\n6.7.2\nStartup\nProblem\nPossible cause\nSuggested action\nBurner will not start.\nControl in non-volatile lockout.\nHigh control limit exceeded.\nControl in commission ratio\nmode.\nHold MUTE/RESET key when faults clear.\nCheck EK18 and wait for press/temp to drop.\nPress NEXT to advance to next setpoint.\nBurner off via serial comms.\nTurn the burner ON using ComFire software\n(if fitted).\nWaiting for burner controller.\nUse section 4.2 and burner status (EK30) to\nsee what the control is waiting for.\nDrive positioning fault\noccurs before drives\nmove to purge.\nStored close positions do not\nmatch actual close positions.\nCheck feedback potentiometers and motor\nmicro-switches.\nReset close positions using commission ratio\nmode.\nDrive positioning fault\noccurs when drives reach\npurge.\nStored purge positions cannot\nbe reached.\nCheck feedback potentiometers and motor\nmicro-switches.\nReset purge positions using commission\nratio mode.\nDrives stuck at ignition\nand burner has not fired.\nDrives cannot reach ignition\nposition.\nCheck motor micro-switches and linkages.\n6.7.3\nCommissioning\nProblem\nPossible cause\nSuggested action\nCannot get past P0.\nSee 'burner will not start' above.\nSee 'burner will not start' above.\n'Px' or 'Ax' display flashes\nconstantly and motor\npositions cannot be\naltered.\nDrives moving to position.\nBurner off in adjust ratio mode.\nA0, A1, A2 displayed.\nWaiting for burner controller.\nWait for drives to position.\nTurn burner on if you need to adjust points\na3 onwards.\nUse section 4.2 and burner status (EK30) to\nsee what the control is waiting for.\nOption parameter not\navailable.\nAnother option parameter must\nbe set first.\nSet option parameter (usually XX.0) to a\nnon-zero value to enable other params. in\ngroup.\nOption parameter not\nadjustable.\nWrong passcode entered or\nburner firing.\nEnter the supplier passcode and/or turn the\nburner off before changing the value.\nNot possible to enter\ncommission ratio mode.\nSupplier passcode incorrect.\nBurner firing (goes into adjust\nratio mode).\nEnter correct passcode.\nTurn burner off and try again.\nNot possible to enter\nadjust ratio mode.\nSupplier passcode incorrect.\nEnter supplier passcode with the burner on.\n151",
+      "tablas": [
+        [
+          [
+            "Fault Mode on CANbus",
+            "Fault Log Range"
+          ],
+          [
+            "0",
+            "No Logging"
+          ],
+          [
+            "1",
+            "Address 0-7"
+          ],
+          [
+            "2",
+            "Address 8-15"
+          ]
+        ],
+        [
+          [
+            "Problem",
+            "Possible cause",
+            "Suggested action"
+          ],
+          [
+            "Burner will not start.",
+            "Control in non-volatile lockout. High control limit exceeded. Control in commission ratio mode.",
+            "Hold MUTE/RESET key when faults clear. Check EK18 and wait for press/temp to drop. Press NEXT to advance to next setpoint."
+          ],
+          [
+            "Burner off via serial comms.",
+            "Turn the burner ON using ComFire software (if fitted)."
+          ],
+          [
+            "Waiting for burner controller.",
+            "Use section 4.2 and burner status (EK30) to see what the control is waiting for."
+          ],
+          [
+            "Drive positioning fault occurs before drives move to purge.",
+            "Stored close positions do not match actual close positions.",
+            "Check feedback potentiometers and motor micro-switches."
+          ],
+          [
+            "Reset close positions using commission ratio mode."
+          ],
+          [
+            "Drive positioning fault occurs when drives reach purge.",
+            "Stored purge positions cannot be reached.",
+            "Check feedback potentiometers and motor micro-switches. Reset purge positions using commission ratio mode."
+          ],
+          [
+            "Drives stuck at ignition and burner has not fired.",
+            "Drives cannot reach ignition position.",
+            "Check motor micro-switches and linkages."
+          ]
+        ],
+        [
+          [
+            "Problem",
+            "Possible cause",
+            "Suggested action"
+          ],
+          [
+            "Cannot get past P0.",
+            "See 'burner will not start' above.",
+            "See 'burner will not start' above."
+          ],
+          [
+            "'Px' or 'Ax' display flashes constantly and motor positions cannot be altered.",
+            "Drives moving to position. Burner off in adjust ratio mode. A0, A1, A2 displayed. Waiting for burner controller.",
+            "Wait for drives to position. Turn burner on if you need to adjust points a3 onwards."
+          ],
+          [
+            "Use section 4.2 and burner status (EK30) to see what the control is waiting for."
+          ],
+          [
+            "Option parameter not available.",
+            "Another option parameter must be set first.",
+            "Set option parameter (usually XX.0) to a non-zero value to enable other params. in group."
+          ],
+          [
+            "Option parameter not adjustable.",
+            "Wrong passcode entered or burner firing.",
+            "Enter the supplier passcode and/or turn the burner off before changing the value."
+          ],
+          [
+            "Not possible to enter commission ratio mode.",
+            "Supplier passcode incorrect. Burner firing (goes into adjust ratio mode).",
+            "Enter correct passcode. Turn burner off and try again."
+          ],
+          [
+            "Not possible to enter adjust ratio mode.",
+            "Supplier passcode incorrect.",
+            "Enter supplier passcode with the burner on."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "®\nfireye\n6.7.4 Modulation\nProblem\nPossible cause\nSuggested action\nSensor or modulation rate\ninaccurate.\nV/I input setting incorrect.\nCheck option parameter.\n5/24V supply setting incorrect.\nCheck SENSOR IN and SUPPLY links.\nIntermittent positioning\nfaults.\nProfile too close to micro-switch.\nMove end points further away from high/low.\nPoor Ground (earth) or\nscreening.\nFeedback potentiometer faulty.\nCheck wiring.\nMove motor across range and check the\nfeedback in commission ratio mode with the\nburner off.\nCommunication to servo-\nmotor(s).\nCheck wiring.\nControl stuck at low fire.\nMeas. value exceeds setpoint.\nWarming limit active\nControl in manual.\nExternal low fire hold, or missing\nAUTO input from burner\ncontroller.\nNo fault.\nWait for boiler to warm up. Check EK16.\nPress the AUTO key to change to auto mode\nRemove feed from Aux inputs (if selected).\nCheck EK 6.\nIn manual mode.\nIncrease the mod. rate using 'UP' key.\nCheck PID, proportional band must be\ngreater than zero to modulate.\nControl stuck at a\nmodulation rate.\nSerial communications.\nDisable or change modulation slider in\nComputer software.\nControl in commission mode.\nPress RUN then ENTER to enter run mode.\n152",
+      "tablas": [
+        [
+          [
+            "Problem",
+            "Possible cause",
+            "Suggested action"
+          ],
+          [
+            "Sensor or modulation rate inaccurate.",
+            "V/I input setting incorrect.",
+            "Check option parameter."
+          ],
+          [
+            "5/24V supply setting incorrect.",
+            "Check SENSOR IN and SUPPLY links."
+          ],
+          [
+            "Intermittent positioning faults.",
+            "Profile too close to micro-switch.",
+            "Move end points further away from high/low."
+          ],
+          [
+            "Poor Ground (earth) or screening. Feedback potentiometer faulty.",
+            "Check wiring. Move motor across range and check the"
+          ],
+          [
+            "feedback in commission ratio mode with the burner off."
+          ],
+          [
+            "Communication to servo- motor(s).",
+            "Check wiring."
+          ],
+          [
+            "Control stuck at low fire.",
+            "Meas. value exceeds setpoint. Warming limit active Control in manual. External low fire hold, or missing AUTO input from burner controller.",
+            "No fault. Wait for boiler to warm up. Check EK16."
+          ],
+          [
+            "Press the AUTO key to change to auto mode"
+          ],
+          [
+            "Remove feed from Aux inputs (if selected). Check EK 6."
+          ],
+          [
+            "In manual mode.",
+            "Increase the mod. rate using 'UP' key."
+          ],
+          [
+            "Check PID, proportional band must be greater than zero to modulate."
+          ],
+          [
+            "Control stuck at a modulation rate.",
+            "Serial communications.",
+            "Disable or change modulation slider in Computer software."
+          ],
+          [
+            "Control in commission mode.",
+            "Press RUN then ENTER to enter run mode."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "6.7.5 Inverters\n®\nfireye\nCAUTION\n!\nDue to the possibility of High Frequency electrical noise, BOTH\nends of the shielded signal wire to the VSD must be grounded.\nProblem\nPossible Cause\nSolution\nSPEED\nTIME\n· Inverter does not start because it\ndoes not receive a RUN signal.\nEnsure that the inverter receives a\nRUN signal from the burner fan\nmotor output on the PPC6000\nseries control.\nSPEED\n· Inverter has a slow start.\n. Ensure that the inverter's slow start\nfeature is disabled.\n· Late RUN signal.\n. Ensure that the inverter receives a\nRUN signal from the burner\ncontroller at the same time as the\nTIME\nPPC6000.\n· Non-linear output from inverter or\ninverter's PID is enabled\n·\nCheck that the inverter's output is\nselected to be linear, and that the\ninverter's own PID loop is disabled.\nSPEED\n. Current limit reached\n· Slow down the inverter by\nincreasing its acceleration /\ndeceleration time settings.\n·\nNoise\n. Check cable screens.\nTIME\nSPEED\n·\nCurrent limit reached.\n. Slow down the inverter by\nincreasing its acceleration /\ndeceleration time settings.\n· Non-linear output from inverter or\ninverter's PID is enabled.\n· Check that the inverter's output is\nselected to be linear, and that the\nTIME\ninverters own PID loop is disabled.\nSPEED\n· Fan failed to stop before restart.\n. Increase the inverter stop time by\nincreasing option parameter 9.3 on\nthe PPC6000 series control.\nTIME\nSPEED\n· Control is unstable\n· Adjust option parameters 9.0, 9.2 and\n9.3 on the PPC6000 series control to\nreduce accuracy & slow down control\nresponse.\nTIME\n· Check Option parameter 9.4 matches\nthe acceleration / deceleration time\nprogrammed into the VSD.\n· VSD is current limiting. Increase\nacceleration / deceleration time in VSD\nand option parameter 9.4.\n153",
+      "tablas": [
+        [
+          [
+            "Problem",
+            "Possible Cause",
+            "Solution"
+          ],
+          [
+            "SPEED",
+            "TIME",
+            "· Inverter does not start because it does not receive a RUN signal.",
+            "Ensure that the inverter receives a RUN signal from the burner fan motor output on the PPC6000 series control."
+          ],
+          [
+            "SPEED",
+            "",
+            "· Inverter has a slow start.",
+            ". Ensure that the inverter's slow start feature is disabled."
+          ],
+          [
+            "",
+            "· Late RUN signal.",
+            ". Ensure that the inverter receives a RUN signal from the burner controller at the same time as the"
+          ],
+          [
+            "TIME",
+            "PPC6000."
+          ],
+          [
+            "",
+            "· Non-linear output from inverter or inverter's PID is enabled",
+            "· Check that the inverter's output is selected to be linear, and that the inverter's own PID loop is disabled."
+          ],
+          [
+            "SPEED",
+            "",
+            ". Current limit reached",
+            "· Slow down the inverter by increasing its acceleration /"
+          ],
+          [
+            "deceleration time settings."
+          ],
+          [
+            "",
+            "· Noise",
+            ". Check cable screens."
+          ],
+          [
+            "TIME",
+            ""
+          ],
+          [
+            "SPEED",
+            "",
+            "· Current limit reached.",
+            ". Slow down the inverter by increasing its acceleration / deceleration time settings."
+          ],
+          [
+            "",
+            "· Non-linear output from inverter or inverter's PID is enabled.",
+            "· Check that the inverter's output is selected to be linear, and that the"
+          ],
+          [
+            "TIME",
+            "inverters own PID loop is disabled."
+          ],
+          [
+            "SPEED",
+            "",
+            "· Fan failed to stop before restart.",
+            ". Increase the inverter stop time by increasing option parameter 9.3 on"
+          ],
+          [
+            "the PPC6000 series control."
+          ],
+          [
+            "TIME",
+            ""
+          ],
+          [
+            "SPEED",
+            "",
+            "· Control is unstable",
+            "· Adjust option parameters 9.0, 9.2 and"
+          ],
+          [
+            "9.3 on the PPC6000 series control to reduce accuracy & slow down control response."
+          ],
+          [
+            "TIME",
+            "· Check Option parameter 9.4 matches the acceleration / deceleration time programmed into the VSD."
+          ],
+          [
+            "· VSD is current limiting. Increase acceleration / deceleration time in VSD and option parameter 9.4."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "®\nfireye\nIn extreme cases, it may be necessary to increase the inverter error tolerance to prevent non-volatile lockouts\ncaused by positioning faults (set option 9.1 = 1). This must only be changed if an inverter error of +55 will\nnot cause unsafe combustion.\nVariable Speed Drive Selection:\nImportant Note: When selecting a VSD or variable frequency drive (VFD) consideration must be given to the\nsize and weight of the blower wheel. While a \"fan\" application is by nature a variable torque load, the inertia\n(weight) of the blower wheel must be considered. Typical HVAC type drives do not speed up or slow down\nlarge blower wheels with enough control to operate within the tolerance of the PPC or NX series control.\nTherefore, a VSD (VFD) with some built in breaking capability, such as a constant torque drive, should be\nused. At a minimum, if the drive has a constant torque setting, it must be enabled to minimize faults due to\ndrive hunting.\nProblem\nPossible cause\nSuggested action\nOxygen display not\navailable.\nNo oxygen probe interface unit\nserial number entered.\nEnter serial number into option parameter\n30.0\nNo inlet temperature\ndisplay\nNo inlet temperature unit serial\nnumber entered.\nEnter serial number into option parameter\n35.0\nInlet or flue temperature\ndisplay flashes 'Hi'\nInlet air temperature sensor / O2\nprobe not installed and wired\ncorrectly.\nCheck wiring.\nNo efficiency display or\nefficiency incorrect.\nNo oxygen display.\nNo inlet temperature display.\nNo calorific value for the current\nfuel been entered into 35.X?\nSee 'No oxygen display'\nSee 'No inlet temperature display'\nEnter the value for the fuel in use.\nOxygen display shows ' ---\n‘\nProbe not heated up yet, or\nother probe fault.\nCheck EK45. Check EK73 - must be above\n600°C to work.\nOxygen trim will not work\nTrim is not operative.\nBoiler just fired up.\nUse EK45 and 46 to decide if trim is\noperative.\nCheck that option 30.5 =1.\nCheck option parameter 31.1 to 31.4.\nWait for the boiler transport time (after\nignition). Wait for modulation.\nProbe calibration values not\nentered correctly.\nProbe not heated up yet.\nProbe installed incorrectly.\nSet to monitor only.\nRe enter values (options 20.1,20.2)\nCheck EK75 - must be above 600℃ to\nwork.\nCheck wiring.\nProbe in calibration.\nTrim being reset.\nCheck option parameter 30.5 set to 1.\nCheck option parameter 30.6 set to 0.\nCheck option parameter 30.8 set to 0.\nTrim limits set to 0.0% of flow.\nCheck option parameters 32.X.\nTrim integral gain set to zero.\nCommissioning data missing.\nCheck option parameters 33.X are non zero.\nCheck oxygen and flow values been entered\nfor all profile points in the firing range.\n154",
+      "tablas": [
+        [
+          [
+            "Problem",
+            "Possible cause",
+            "Suggested action"
+          ],
+          [
+            "Oxygen display not available.",
+            "No oxygen probe interface unit serial number entered.",
+            "Enter serial number into option parameter 30.0"
+          ],
+          [
+            "No inlet temperature display",
+            "No inlet temperature unit serial number entered.",
+            "Enter serial number into option parameter 35.0"
+          ],
+          [
+            "Inlet or flue temperature display flashes 'Hi'",
+            "Inlet air temperature sensor / O2 probe not installed and wired correctly.",
+            "Check wiring."
+          ],
+          [
+            "No efficiency display or efficiency incorrect.",
+            "No oxygen display. No inlet temperature display. No calorific value for the current fuel been entered into 35.X?",
+            "See 'No oxygen display' See 'No inlet temperature display' Enter the value for the fuel in use."
+          ],
+          [
+            "Oxygen display shows ' --- ‘",
+            "Probe not heated up yet, or other probe fault.",
+            "Check EK45. Check EK73 - must be above 600°C to work."
+          ],
+          [
+            "Oxygen trim will not work",
+            "Trim is not operative. Boiler just fired up.",
+            "Use EK45 and 46 to decide if trim is operative."
+          ],
+          [
+            "Check that option 30.5 =1. Check option parameter 31.1 to 31.4. Wait for the boiler transport time (after ignition). Wait for modulation."
+          ],
+          [
+            "",
+            "Probe calibration values not entered correctly. Probe not heated up yet. Probe installed incorrectly. Set to monitor only.",
+            "Re enter values (options 20.1,20.2) Check EK75 - must be above 600℃ to work."
+          ],
+          [
+            "Check wiring."
+          ],
+          [
+            "Probe in calibration. Trim being reset.",
+            "Check option parameter 30.5 set to 1. Check option parameter 30.6 set to 0. Check option parameter 30.8 set to 0."
+          ],
+          [
+            "Trim limits set to 0.0% of flow.",
+            "Check option parameters 32.X.\n:selected:"
+          ],
+          [
+            "Trim integral gain set to zero. Commissioning data missing."
+          ],
+          [
+            "Check option parameters 33.X are non zero."
+          ],
+          [
+            "Check oxygen and flow values been entered for all profile points in the firing range."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "®\nfireye\n6.8 YB110/TSD104 Fault Messages\nDue to the increased use of the Nexus Touchscreen in combination with the Burnerlogix, the numbering format\nfor fault messages is formatted as below. The fault numbers are taken from table 7 in the BurnerLogix manual\nBL-1001-pdf, but with 200 added to the message number. The 200 is added because there are codes\nassociated with the PPC6000 that utilize the lower levels codes. The list of touchscreen alarm codes\nassociated with the BurnerLogix is listed below:\nFault\nNumber\nDescription\n201\nT16 M-D LIMIT OPEN-AUTO\n202\nHOLD FALSE FLAME-STANDBY\n203\nLOW FIRE PURGE\n204\nHOLD M-8 LIMT OPEN-PURGE\n205\nAIR FLOW OPEN\n206\nT16 M-D LOW LIMIT-AUTO\n207\nLOCKOUT FLAME FAIL-PTFI\n208\nT16 INPUT CLOSED\n209\nHOLD M-D LIMIT OPEN\n210\nIGNITION TIMING-PTFI\n211\nCHECK FLAME SIGNAL-MTFI\n212\nFLAME SIGNAL - AUTO\n213\nCYCLE COMPLETE-POSTPURGE\n214\nSTANDBY L1-3 OPEN\n215\nT21 INPUT CLOSED\n216\nLOCKOUT M-D LT OPEN-PTFI\n217\nLOCKOUT LT M-8 LIMIT OPEN\n218\nLOCKOUT LIMIT M-D OPEN\n219\nLOCKOUT FLAME FAIL - MTFI\n220\nLOCKOUT FALSE FLAME\n221\nLOCKOUT 3-P INTLK OPEN(P)\n222\nLOCKOUT 3-PINTLK CLOSED\n223\nHOLD 3-P INTLK CLSED STBY\n224\nHIGH FIRE PURGE\n225\nLOCKOUT M-D LT OPEN-MTFI\n226\nLOCKOUT 3-P INTLK O AUTO\n227\nLOCKOUT 3-P INTLK O MTFI\n228\nLOCKOUT 3-P INTLK O PTFI\n229\nLOCKOUT T13 FVES OPEN\n230\nLOCKOUT 3-P INTLK O - PP\n231\nCHECK FLAME SIGNAL-PTFI\n232\nCHECK M-8 HI LIMIT (HFP)\n233\nCHECK M-D LOW LIMIT (LFS)\n234\nFLAME SIGNAL - PTFI\n235\nHOLD T21 OR CHK LF AUTO\n236\nFLAME SIGNAL - MTFI\n237\nLOCKOUT FLAME FAIL AUTO\n238\nHOLD 3-P INTLK O - PP\n239\nLOCKOUT FUELVLVE ST CH\n263\nHIGH WATER\n264\nLOW WATER\n265\nHIGH GAS PRESSURE\n266\nLOW GAS PRESSURE\n295\nAUX GAS\n155",
+      "tablas": [
+        [
+          [
+            "Fault Number",
+            "Description"
+          ],
+          [
+            "201",
+            "T16 M-D LIMIT OPEN-AUTO"
+          ],
+          [
+            "202",
+            "HOLD FALSE FLAME-STANDBY"
+          ],
+          [
+            "203",
+            "LOW FIRE PURGE"
+          ],
+          [
+            "204",
+            "HOLD M-8 LIMT OPEN-PURGE"
+          ],
+          [
+            "205",
+            "AIR FLOW OPEN"
+          ],
+          [
+            "206",
+            "T16 M-D LOW LIMIT-AUTO"
+          ],
+          [
+            "207",
+            "LOCKOUT FLAME FAIL-PTFI"
+          ],
+          [
+            "208",
+            "T16 INPUT CLOSED"
+          ],
+          [
+            "209",
+            "HOLD M-D LIMIT OPEN"
+          ],
+          [
+            "210",
+            "IGNITION TIMING-PTFI"
+          ],
+          [
+            "211",
+            "CHECK FLAME SIGNAL-MTFI"
+          ],
+          [
+            "212",
+            "FLAME SIGNAL - AUTO"
+          ],
+          [
+            "213",
+            "CYCLE COMPLETE-POSTPURGE"
+          ],
+          [
+            "214",
+            "STANDBY L1-3 OPEN"
+          ],
+          [
+            "215",
+            "T21 INPUT CLOSED"
+          ],
+          [
+            "216",
+            "LOCKOUT M-D LT OPEN-PTFI"
+          ],
+          [
+            "217",
+            "LOCKOUT LT M-8 LIMIT OPEN"
+          ],
+          [
+            "218",
+            "LOCKOUT LIMIT M-D OPEN"
+          ],
+          [
+            "219",
+            "LOCKOUT FLAME FAIL - MTFI"
+          ],
+          [
+            "220",
+            "LOCKOUT FALSE FLAME"
+          ],
+          [
+            "221",
+            "LOCKOUT 3-P INTLK OPEN(P)"
+          ],
+          [
+            "222",
+            "LOCKOUT 3-PINTLK CLOSED"
+          ],
+          [
+            "223",
+            "HOLD 3-P INTLK CLSED STBY"
+          ],
+          [
+            "224",
+            "HIGH FIRE PURGE"
+          ],
+          [
+            "225",
+            "LOCKOUT M-D LT OPEN-MTFI"
+          ],
+          [
+            "226",
+            "LOCKOUT 3-P INTLK O AUTO"
+          ],
+          [
+            "227",
+            "LOCKOUT 3-P INTLK O MTFI"
+          ],
+          [
+            "228",
+            "LOCKOUT 3-P INTLK O PTFI"
+          ],
+          [
+            "229",
+            "LOCKOUT T13 FVES OPEN"
+          ],
+          [
+            "230",
+            "LOCKOUT 3-P INTLK O - PP"
+          ],
+          [
+            "231",
+            "CHECK FLAME SIGNAL-PTFI"
+          ],
+          [
+            "232",
+            "CHECK M-8 HI LIMIT (HFP)"
+          ],
+          [
+            "233",
+            "CHECK M-D LOW LIMIT (LFS)"
+          ],
+          [
+            "234",
+            "FLAME SIGNAL - PTFI"
+          ],
+          [
+            "235",
+            "HOLD T21 OR CHK LF AUTO"
+          ],
+          [
+            "236",
+            "FLAME SIGNAL - MTFI"
+          ],
+          [
+            "237",
+            "LOCKOUT FLAME FAIL AUTO"
+          ],
+          [
+            "238",
+            "HOLD 3-P INTLK O - PP"
+          ],
+          [
+            "239",
+            "LOCKOUT FUELVLVE ST CH"
+          ],
+          [
+            "263",
+            "HIGH WATER"
+          ],
+          [
+            "264",
+            "LOW WATER"
+          ],
+          [
+            "265",
+            "HIGH GAS PRESSURE"
+          ],
+          [
+            "266",
+            "LOW GAS PRESSURE"
+          ],
+          [
+            "295",
+            "AUX GAS"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "®\nfireye\nFault\nNumber\nDescription\n267\nLOW OIL PRESSURE\n296\nHIGH OIL TEMPERATURE\n268\nLOW OIL TEMPERATURE\n269\nLOW ATOMIZING MEDIA\n270\nHIGH PRESSURE\n271\nHIGH TEMPERATURE\n272\nAUX #4 OPEN\n273\nAUX #5 OPEN\n274\nAUX #6 OPEN\n275\nAUX #7 OPEN\nInterlock annunciation messages THESE CAN BE MODIFIED BY THE USER\nFault\nNumber\nDescription\n241\nHIGH WATER\n242\nLOW WATER\n243\nHIGH GAS PRESSURE\n244\nLOW GAS PRESSURE\n292\nAUX GAS\n245\nLOW OIL PRESSURE\n256\nHIGH OIL TEMPERATURE\n246\nLOW OIL TEMPERATURE\n247\nLOW ATOMIZING MEDIA\n248\nHIGH PRESSURE\n249\nHIGH TEMPERATURE\n250\nAUX #4 OPEN\n251\nAUX #5 OPEN\n252\nAUX #6 OPEN\n253\nAUX #7 OPEN\n240\nAIR FLOW OPEN\n294\nOP CONTROL OPEN\n260\nL1-3 AUX #1 OPEN\n26\nL1-3 AUX #2 OPEN\n262\nL1-3 AUX #3 OPEN\n156",
+      "tablas": [
+        [
+          [
+            "Fault Number",
+            "Description"
+          ],
+          [
+            "267",
+            "LOW OIL PRESSURE"
+          ],
+          [
+            "296",
+            "HIGH OIL TEMPERATURE"
+          ],
+          [
+            "268",
+            "LOW OIL TEMPERATURE"
+          ],
+          [
+            "269",
+            "LOW ATOMIZING MEDIA"
+          ],
+          [
+            "270",
+            "HIGH PRESSURE"
+          ],
+          [
+            "271",
+            "HIGH TEMPERATURE"
+          ],
+          [
+            "272",
+            "AUX #4 OPEN"
+          ],
+          [
+            "273",
+            "AUX #5 OPEN"
+          ],
+          [
+            "274",
+            "AUX #6 OPEN"
+          ],
+          [
+            "275",
+            "AUX #7 OPEN"
+          ]
+        ],
+        [
+          [
+            "Fault Number",
+            "Description"
+          ],
+          [
+            "241",
+            "HIGH WATER"
+          ],
+          [
+            "242",
+            "LOW WATER"
+          ],
+          [
+            "243",
+            "HIGH GAS PRESSURE"
+          ],
+          [
+            "244",
+            "LOW GAS PRESSURE"
+          ],
+          [
+            "292",
+            "AUX GAS"
+          ],
+          [
+            "245",
+            "LOW OIL PRESSURE"
+          ],
+          [
+            "256",
+            "HIGH OIL TEMPERATURE"
+          ],
+          [
+            "246",
+            "LOW OIL TEMPERATURE"
+          ],
+          [
+            "247",
+            "LOW ATOMIZING MEDIA"
+          ],
+          [
+            "248",
+            "HIGH PRESSURE"
+          ],
+          [
+            "249",
+            "HIGH TEMPERATURE"
+          ],
+          [
+            "250",
+            "AUX #4 OPEN"
+          ],
+          [
+            "251",
+            "AUX #5 OPEN"
+          ],
+          [
+            "252",
+            "AUX #6 OPEN"
+          ],
+          [
+            "253",
+            "AUX #7 OPEN"
+          ],
+          [
+            "240",
+            "AIR FLOW OPEN"
+          ],
+          [
+            "294",
+            "OP CONTROL OPEN"
+          ],
+          [
+            "260",
+            "L1-3 AUX #1 OPEN"
+          ],
+          [
+            "26",
+            "L1-3 AUX #2 OPEN"
+          ],
+          [
+            "262",
+            "L1-3 AUX #3 OPEN"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "®\nfireye\n7 Inverter (variable speed) drives\nThis manual may cover more than one model in the PPC6000 series. Check for additional information\nat the end of this chapter.\n7.1 System configuration\nThe PPC6000 control can control one or two inverter drive(s) to control a fuel and/or air drive(s) using a\ndaughter board (fitted within the PPC6000 enclosure). The daughter board controls the inverter(s) using 4-\n20mA output channel(s). The output(s) are the speed reference signal to the inverter(s). A 4-20mA or encoder\ninput is used to monitor the feedback signal from each inverter, representing the speed of the motor(s).\nIn addition to the 4-20mA signals, the inverter(s) also require motor start signal(s) that can be taken from the\nvolt-free relay contact(s) on the daughter board, please ensure its function is set correctly using the relevant\noption parameter.\nINVERTER\nRUN/STOP\nNXDBVSD\nDaughter\nBoard\nSPEED\nREFERENCE\nSPEED\nFEEDBACK\nRelay Output\n4-20mA OUT\n4-20mA IN\nAlternative\nspeed\nfeedback\nOPTIONAL\nSPEED\nSENSOR\nMOTOR\n157",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "®\nfireye\n7.2 Description of control method\nDuring start-up of the burner, and before any drives move to purge, the PPC6000 control, moves all drives to\ntheir minimum positions by driving servo-motors down and setting an output current of 4mA to each inverter\ndrive. The control waits for the inverter stop time Option 9.3 and then monitors the feedback signals of all\ndrives and compares them to the values which were stored in memory at commission time. If the values do\nnot match those stored in memory, a positioning fault is given and the control performs a non-volatile lockout.\nThis test proves the feedback from each drive is operating correctly and that the potentiometer (where fitted)\nhas not moved on the servo-motor shaft.\nIf the test is successful, the control moves all selected drives to their commissioned pre-purge positions\n(outputs 20MA to all inverters). If the drives cannot achieve their pre-purge positions as set during\ncommissioning, a positioning fault is given and the control performs a non-volatile lockout.\nIf the burner start-up is successful, the control will control the frequency of the inverter during modulation. A\nclosed loop method is employed, where adjustments to the speed reference signal are made based on the\nvalue of the feedback signal.\nIf the feedback signal from the drive is lost during a run condition (e.g. the loop current drops below 3.5mA or\nencoder feedback fails) the control will perform a non-volatile lockout.\n7.3 Setting up the inverter for use with the PPC6000 series\nThe PPC6000 will work with most inverters that meet the following criteria:\n· 4-20mA speed reference input.\n· 4-20mA speed feedback output or use separate encoder.\n· Remote run/stop command.\n. The inverter must be powerful enough to accelerate / decelerate the motor as required. A good industrial\ninverter will have a significant overload capability meaning that it can supply well above the rated motor\nload for some time. This might be something like 150% (or more) for 1 minute. An HVAC inverter typically\nwill have no (or very limited) overload capability and may not be able to accelerate / decelerate the motor\nquickly without current limiting. This can cause drive position faults when driving to purge.\nAnalog inputs and outputs:\nThe analog inputs and outputs (i.e. the 4-20mA reference and feedback signals) on the inverter should be\nconfigured in the following way:\n· 4-20mA signal (this may be an option parameter and/or a board jumper)\n· Speed reference input\n· Speed reference output (unless using encoder)\n. Minimum frequency 0Hz for 4mA signal\n· Maximum reference frequency as required (nominally 60Hz) for 20mA signal\n· Maximum feedback frequency same as reference for 20mA signal (unless using encoder)\n. No filtering (time constant = 0.0) and no rate limiting\nDigital input:\nThe digital input (i.e. the RUN/STOP) on the inverter should be configured in the following way:\n· RUN/STOP from external input (NOT inverter keyboard)\n· RUN/STOP active high (i.e. energize to start)\n158",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "®\nfireye\nControl characteristics:\nThe control characteristics of the inverter should be configured in the following way:\n· Acceleration and deceleration time approximately 25 - 40 seconds, must be the same.\n· Straight line (linear) acceleration between reference points\n. Motor to coast to a stop when RUN signal is removed\n· No critical frequencies\n· DC braking may be needed if motor deceleration is not linear\nMotor characteristics:\nThe following motor characteristics should be entered into the inverter's option parameter list:\n· Motor nominal voltage, power, current and frequency (see motor plate and/or supplier data)\n. Motor current and temperature limits\n· U/F ratio. Use the 'SQUARED' option for fans and pumps.\n· Motor slip ratio. Use drive default, if unknown\n7.4 Setting up the PPC6000 series for use with a inverter drive\nIn order to use a inverter drive with a 4-20mA interface, the optional inverter interface daughter board\nmust be fitted. The following steps must then be taken:\n· Enter commission mode.\n· Enter option set mode.\n. Look at the display for the inverter output. The display should show 0 for a feedback signal of zero speed\n(4mA) and 999 for a feedback signal of 20mA. If using an encoder feedback, the value displayed will\ndepend on the frequency measured by the input on the daughterboard. See note below. If the display is\nflashing 'High', the feedback signal is less than 3.5mA or more than 21.0mA, the polarity of the wiring is\nreversed or the encoder is faulty. In all these cases, check the wiring and/or the option parameters on the\ninverter.\n. Monitor the reference signal from the PPC6000 daughter board. With the inverter drive selected, the UP\nkey should increase the current gradually up to 20mA and the DOWN key should decrease the current\ngradually down to 4mA.\n· For encoder feedback signals, run the inverter to its maximum value (normally 50Hz or 60Hz, depending on\nmotor rating / local mains frequency). Look at engineers key 69 or 70 (depending on VSD1 or VSD2). This\nwill give you a measured pulse frequency in Hertz. Add about 2% to 5% to this value (to ensure it is the\nmaximum you would ever expect to get) and enter this value into option parameter 9.5 or 9.6. The\ndisplayed value for this drive should now be 950 to 990 (i.e. 95% to 99%). For reliability it should be\nensured that the feedback can't go over 99.9% (999). This is why a small percentage is added to the 100%\nscale value entered in the option parameter. See option parameter 9.5 for a way to check this value using a\ncalculation.\n. For the rest of the commissioning procedure, treat the inverter drive in the same way as a motor. The\ninverter drive has a closed position (4mA), a maximum position (20mA), a pre-purge position, an ignition\nposition and up to 20 profile positions.\n159",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "®\nfireye\n8 The oxygen trim option\nCAUTION\n!\n· Use extreme care when handling the oxygen probe and wear heatproof gloves.\n. Ensure the burner is off before removing the oxygen probe from the flue.\n. If the boiler is to be operated with the probe removed, fit the blanking cover\nsupplied since dangerous levels of carbon monoxide may be present in the flue.\n8.1 Oxygen Pro probe description\nThe oxygen trim / monitoring function is designed to be used with an NX2012 oxygen probe. This probe offers\nfast, accurate response and good reliability when mounted in accordance with the guidelines in this section\nThe probe is available in three different sizes.\n8.1.1\nInstallation of oxygen probe\n8.1.2\nMounting the oxygen probe\nSEE DIM. B.\nCLEARANCE REQUIRED TO INSTALL\n& REMOVE FROM FLUE. SEE DIM.C.\nModel\nno\nDimension\nA\nB\nC\nD\nNXO2PK4\n173(6.81)\n215(8.5)\n295(11.6)\n470(18.5)\nNXO2PK6\n362(14.25)\n406(15.99)\n486(19.13)\n659(25.95)\nNXO2PK8\n716(28.19)\n757(29.8)\n873(32.95)\n1013(39.88)\n246(9.7)\n_ 30°\nØ 20 FLEXIBLE\nCONDUIT ENTRY.\n0\n2 TYP.(0.08)\nO\n96(3.8)\nO\nSEE DIM. A.\nSIDE VIEW\nCALIBRATION GAS CONNECTION.\n-\n35(1.4)\nCASE MATERIAL: CORROSION RESISTING STEEL.\nFINISH: SELF.\n& REMOVE FROM FLUE. SEE DIM. D.\nCLEARANCE REQUIRED TO\nTOTAL ASSEMBLY WEIGHTS: MODEL NXO2PK4 - 2.95kg (6.5lb)\nMODEL NXO2PK6 _ 3.40kg (7.5lb)\nMODEL NXO2PK8 - 4.24kg (9.4lb)\nINTERNAL\nCONNECTIONS\n*02-\n0\n-\nCUSTOMER\nCONNECTIONS\n02\n0000\nPROBE T/C-\nPROBE T/C+\n0000000000\nFLUE T/C-\nFLUE T/C+\nHEATER\n....\nHEATER\nFLUE GAS\nTO MOUNT ON FLAT WALL FLUES (STACKS) SEE DRG. No.HG220371E PART A.\nTO MOUNT ON CYLINDRICAL WALL FLUES SEE DRG. No.HG220371E PART B.\nFOR PROBE MOUNTING POSITIONS SEE DRG. HG220559E.\nO\nCOMPONENT SIDE VIEW OF INTERNAL\nELECTRICAL INTERCONNECTION PCB.\nALL DIMENSIONS IN MILLIMETRES\nINCH EQUIVALENTS ARE IN ( )\n* NOTE: 02- CONNECTED TO PROBE BODY. ie. GROUND\n160",
+      "tablas": [
+        [
+          [
+            "Model no",
+            "Dimension"
+          ],
+          [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          [
+            "NXO2PK4",
+            "173(6.81)",
+            "215(8.5)",
+            "295(11.6)",
+            "470(18.5)"
+          ],
+          [
+            "NXO2PK6",
+            "362(14.25)",
+            "406(15.99)",
+            "486(19.13)",
+            "659(25.95)"
+          ],
+          [
+            "NXO2PK8",
+            "716(28.19)",
+            "757(29.8)",
+            "873(32.95)",
+            "1013(39.88)"
+          ]
+        ]
+      ]
+    }
+  ]
+}
