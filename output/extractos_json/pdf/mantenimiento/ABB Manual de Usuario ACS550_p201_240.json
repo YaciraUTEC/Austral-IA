@@ -1,0 +1,2854 @@
+{
+  "archivo": "ABB Manual de Usuario ACS550_p201_240",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Manual del usuario del ACS550-01/U1\n201\nCódigo Descripción\n5 = ED5 - Activa la función Enclavamientos, y asigna una entrada digital (empezando por ED5) a la señal de\nenclavamiento para cada relé PFC. Estas asignaciones se definen en la tabla siguiente y dependen de:\n· el número de relés PFC [número de parámetro 1401 ... 1403 y 1410 ... 1412 con el valor = 31 PFC)]\n· el estado de la función Autocambio (desactivada si 8118 INTERV AUTOCAMB = 0.0, y activada en caso contrario).\nNº relés\nPFC\nAutocambio desactivado\n(P 8118)\nAutocambio activado\n(P 8118)\n0\nED1 ... ED4: Libre\nED5: Motor reg velocidad\nED6: Libre\nNo se permite\n1\nED1 ... ED4: Libre\nED5: Motor reg velocidad\nED6: Primer relé PFC\nED1 ... ED4: Libre\nED5: Primer relé PFC\nED6: Libre\n2\nNo se permite\nED1 ... ED4: Libre\nED5: Primer relé PFC\nED6: Segundo relé PFC\n3 ... 6\nNo se permite\nNo se permite\n6 = ED 6 - Activa la función Enclavamientos, y asigna la entrada digital ED6 a la señal de enclavamiento para el\nmotor regulado por velocidad.\n· Requiere 8118 INTERV AUTOCAMB = 0.0.\nNº relés\nPFC\nAutocambio desactivado\nAutocambio activado\n0\nED1 ... ED5: Libre\nED6: Motor reg velocidad\nNo se permite\n1\nNo se permite\nED1 ... ED5: Libre\nED6: Primer relé PFC\n2 ... 6\nNo se permite\nNo se permite",
+      "tablas": [
+        [
+          [
+            "Nº relés PFC",
+            "Autocambio desactivado (P 8118)",
+            "Autocambio activado (P 8118)"
+          ],
+          [
+            "0",
+            "ED1 ... ED4: Libre ED5: Motor reg velocidad ED6: Libre",
+            "No se permite"
+          ],
+          [
+            "1",
+            "ED1 ... ED4: Libre ED5: Motor reg velocidad ED6: Primer relé PFC",
+            "ED1 ... ED4: Libre ED5: Primer relé PFC ED6: Libre"
+          ],
+          [
+            "2",
+            "No se permite",
+            "ED1 ... ED4: Libre ED5: Primer relé PFC ED6: Segundo relé PFC"
+          ],
+          [
+            "3 ... 6",
+            "No se permite",
+            "No se permite"
+          ]
+        ],
+        [
+          [
+            "",
+            "Nº relés PFC",
+            "Autocambio desactivado",
+            "Autocambio activado"
+          ],
+          [
+            "",
+            "0",
+            "ED1 ... ED5: Libre ED6: Motor reg velocidad",
+            "No se permite"
+          ],
+          [
+            "",
+            "1",
+            "No se permite",
+            "ED1 ... ED5: Libre ED6: Primer relé PFC"
+          ],
+          [
+            "2 ... 6",
+            "No se permite",
+            "No se permite"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "202\nManual del usuario del ACS550-01/U1\nCódigo Descripción\n8121\nCONT BYPASS REG\nSelecciona el control bypass del Regulador. Cuando está activado, el control bypass del Regulador proporciona un\nmecanismo de control simple sin un regulador PID.\n· Utilice el control bypass del Regulador sólo en\naplicaciones especiales.\n0 = NO - Desactiva el control bypass del Regulador. El\nconvertidor utiliza la referencia PFC normal: 1106\nSELEC REF2.\n1 = SI - Activa el control bypass del Regulador.\n· Se lleva a cabo el bypass del regulador PID de\nproceso.\nEl valor actual de PID se utiliza como la referencia\nPFC (entrada). Normalmente, REF EXT2 se utiliza\ncomo la referencia PFC.\n· El convertidor utiliza la señal de realimentación\ndefinida por 4014 SEL REALIM (o 4114) para la\nreferencia de frecuencia PFC.\n· La figura muestra la relación entre la señal de\ncontrol 4014 SEL REALIM (0 4114) y la frecuencia del\nmotor regulado por velocidad en un sistema de tres\nmotores.\nEjemplo: en el diagrama siguiente, el flujo de salida de\nla estación de bombeo se controla a través del flujo de\nentrada medido (A).\nfSAL\nfMAX\nP 8110\nP 8109\nP 8113\nP 8112\nfMIN\nP 4014\n+ A\nB\nC\n(%)\nA = No hay motores auxiliares en funcionamiento\nB = Hay un motor auxiliar en funcionamiento\nC = Hay dos motores auxiliares en funcionamiento\nRed 3~\n3\nContactores\nP1\n3\n73\nACS550\nP2\n3\nM\nP3\n3\n3-\n3\nP1\nA\nDepósito de\naguas residuales\nM\n3~\nP2\nTubo de entrada\nM\n3~\nP3\nTubo de salida 1\nTubo de salida 2\nTubo de salida 3\n8122\nRETAR MARCH PFC\nAjusta la demora de marcha para motores regulados por velocidad en el sistema. Al utilizar la demora, el convertidor\nopera de este modo:\n· Conecta el contactor del motor regulado por velocidad - conectando el motor a la salida de potencia del ACS550.\n· Retrasa la marcha del motor durante el tiempo 8122 RETAR MARCH PFC.\n· Arranca el motor regulado por velocidad.\n· Arranca los motores auxiliares. Véase el parámetro 8115 acerca de la demora.\nADVERTENCIA: los motores equipados con arrancadores en estrella-triángulo requieren un Retar march\nPFC.\n· Después de que la salida de relé del ACS550 conecte un motor, el arrancador en estrella-triángulo debe cambiar a la\nconexión en estrella y, seguidamente, a la conexión en triángulo antes de que el convertidor suministre potencia.\n· Así, Retar march PFC debe ser mayor que el ajuste de tiempo del arrancador en estrella-triángulo.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Manual del usuario del ACS550-01/U1\n203\nCódigo Descripción\nACTIVAR PFC\n8123\nSelecciona control PFC. Cuando está activado, el control PFC:\n· Conecta o desconecta motores auxiliares de velocidad constante a medida que aumenta o disminuye la demanda\nde salida. Los parámetros 8109 MARCHA FREC 1 a 8114 BAJA FREC 3 definen los puntos de conmutación en\ntérminos de la frecuencia de salida del convertidor.\n· Efectúa un ajuste a la baja de la salida del motor regulado por velocidad, al añadirse motores auxiliares, y ajusta al\nalta la salida del motor regulado por velocidad a medida que los motores auxiliares pasan a estar fuera de línea.\n· Proporciona funciones de Enclavamientos, si se han activado.\n· Requiere el parámetro 9904 MODO CTRL MOTOR = 3 (ESCALAR:FREC).\n0 = SIN SEL - Desactiva el control PFC.\n1 = ACTIVO - Activa el control PFC.\n8124\nPARO AUX EN ACE\nAjusta el tiempo de aceleración PFC para una rampa de\nla frecuencia cero a la máxima. Esta rampa de\naceleración PFC:\nfSAL\nA\n· Se aplica al motor regulado por velocidad, cuando se\ndesconecta un motor auxiliar.\nB\n· sustituye a la rampa de aceleración definida en el\nGrupo 22: ACEL/DECEL:\n· Se aplica solamente hasta que la salida del motor\nregulado aumenta en una cantidad equivalente a la\nsalida del motor auxiliar desconectado. Entonces se\naplica la rampa de aceleración definida en el Grupo 22:\nACEL/DECEL.\nP 8125\nP 8124\nt\nMotor\naux.\n1-\nt\n0 = SIN SEL.\n0,1 ... 1800 - Activa esta función utilizando el valor\nintroducido como el tiempo de aceleración.\nMARCH AUX EN DEC\n0\n· A = motor regulado por velocidad que acelera según los\nparámetros del Grupo 22: ACEL/DECEL (2202 o 2205).\nAjusta el tiempo de deceleración PFC para una rampa de |· B = motor regulado por velocidad que decelera según los\nparámetros del Grupo 22: ACEL/DECEL (2203 o 2206).\n· Al arrancar el motor aux., el motor regulado por\n8125\nla frecuencia máxima a la cero. Esta rampa de\ndeceleración PFC:\n· Se aplica al motor regulado por velocidad, cuando se\nconecta un motor auxiliar.\nvelocidad decelera según 8125 MARCH AUX EN DEC.\n· Al parar el motor aux., el motor regulado por velocidad\nacelera según 8124 PARO AUX EN ACE.\n· Sustituye a la rampa de deceleración definida en el\nGrupo 22: ACEL/DECEL:\n· Se aplica solamente hasta que la salida del motor\nregulado disminuye en una cantidad equivalente a la\nsalida del motor auxiliar. Entonces se aplica la rampa\nde deceleración definida en el Grupo 22: ACEL/DECEL.\n0 = SIN SEL.\n0,1 ... 1800 - Activa esta función utilizando el valor\nintroducido como el tiempo de deceleración.\nAUTOCAMB TEMPOR\n8126\n8127\nAjusta el autocambio utilizando una Función temporizada. Véase el parámetro 8119 NIVEL AUTOCAMB.\n0 = SIN SEL.\n1 = FUNC TEMP 1 - Habilita el autocambio cuando la Función temporizada 1 está activa.\n2 ... 4 = FUNC TEMP 2 ... 4 - Habilita el autocambio cuando la Función temporizada 2 ... 4 está activa.\nMOTORES\nAjusta el número actual de motores controlados por el PFC (máximo 7 motores, 1 regulado por velocidad, 3\nconectados directamente en línea y 3 de recambio).\n· Este valor también incluye el motor regulado por velocidad.\n· Este valor debe ser compatible con el número de relés asignados al PFC si se usa la función Autocambio.\n· Si no se usa la función Autocambio, el motor regulado por velocidad no precisa una salida de relé asignada al\nPFC, sino que precisa ser incluido en este valor.\n8128\nORDEN MARCHA AUX\nAjusta el orden de marcha de los motores auxiliares.\n1 = A TIEMPO RUN - Tiempo compartido activo. Iguala el tiempo de marcha acumulado de los motores auxiliares. El\norden de marcha depende del tiempo de marcha. El motor auxiliar cuyo tiempo de marcha acumulado es el menor\nse pone en marcha en primer lugar, a continuación el motor cuyo tiempo de marcha acumulado es el segundo\nmenor, y así sucesivamente. Cuando la demanda se reduce, el primer motor que se detiene es aquel con el mayor\ntiempo de marcha acumulado.\n2 = ORDEN RELE - El orden de marcha está fijado para ser el orden de los relés.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción",
+            ""
+          ],
+          [
+            "8123",
+            "ACTIVAR PFC"
+          ],
+          [
+            "",
+            "Selecciona control PFC. Cuando está activado, el control PFC:"
+          ],
+          [
+            "· Conecta o desconecta motores auxiliares de velocidad constante a medida que aumenta o disminuye la demanda de salida. Los parámetros 8109 MARCHA FREC 1 a 8114 BAJA FREC 3 definen los puntos de conmutación en términos de la frecuencia de salida del convertidor."
+          ],
+          [
+            "· Efectúa un ajuste a la baja de la salida del motor regulado por velocidad, al añadirse motores auxiliares, y ajusta al alta la salida del motor regulado por velocidad a medida que los motores auxiliares pasan a estar fuera de línea. · Proporciona funciones de Enclavamientos, si se han activado. · Requiere el parámetro 9904 MODO CTRL MOTOR = 3 (ESCALAR:FREC). 0 = SIN SEL - Desactiva el control PFC. 1 = ACTIVO - Activa el control PFC."
+          ],
+          [
+            "8124",
+            "PARO AUX EN ACE",
+            ""
+          ],
+          [
+            "Ajusta el tiempo de aceleración PFC para una rampa de la frecuencia cero a la máxima. Esta rampa de aceleración PFC:",
+            "fSAL A",
+            ""
+          ],
+          [
+            "· Se aplica al motor regulado por velocidad, cuando se desconecta un motor auxiliar.",
+            "B"
+          ],
+          [
+            "· sustituye a la rampa de aceleración definida en el Grupo 22: ACEL/DECEL:"
+          ],
+          [
+            "· Se aplica solamente hasta que la salida del motor regulado aumenta en una cantidad equivalente a la salida del motor auxiliar desconectado. Entonces se aplica la rampa de aceleración definida en el Grupo 22: ACEL/DECEL.",
+            "P 8125 P 8124 t Motor aux. 1-"
+          ],
+          [
+            "0 = SIN SEL."
+          ],
+          [
+            "0,1 ... 1800 - Activa esta función utilizando el valor introducido como el tiempo de aceleración.",
+            "t\n0 · A = motor regulado por velocidad que acelera según los parámetros del Grupo 22: ACEL/DECEL (2202 o 2205).\n|· B = motor regulado por velocidad que decelera según los parámetros del Grupo 22: ACEL/DECEL (2203 o 2206). · Al arrancar el motor aux., el motor regulado por"
+          ],
+          [
+            "8125",
+            "MARCH AUX EN DEC"
+          ],
+          [
+            "Ajusta el tiempo de deceleración PFC para una rampa de\nla frecuencia máxima a la cero. Esta rampa de deceleración PFC:"
+          ],
+          [
+            "· Se aplica al motor regulado por velocidad, cuando se conecta un motor auxiliar.",
+            "velocidad decelera según 8125 MARCH AUX EN DEC. · Al parar el motor aux., el motor regulado por velocidad acelera según 8124 PARO AUX EN ACE."
+          ],
+          [
+            "· Sustituye a la rampa de deceleración definida en el Grupo 22: ACEL/DECEL:"
+          ],
+          [
+            "· Se aplica solamente hasta que la salida del motor regulado disminuye en una cantidad equivalente a la salida del motor auxiliar. Entonces se aplica la rampa de deceleración definida en el Grupo 22: ACEL/DECEL. 0 = SIN SEL. 0,1 ... 1800 - Activa esta función utilizando el valor introducido como el tiempo de deceleración."
+          ],
+          [
+            "8126",
+            "AUTOCAMB TEMPOR",
+            ""
+          ],
+          [
+            "Ajusta el autocambio utilizando una Función temporizada. Véase el parámetro 8119 NIVEL AUTOCAMB. 0 = SIN SEL."
+          ],
+          [
+            "1 = FUNC TEMP 1 - Habilita el autocambio cuando la Función temporizada 1 está activa."
+          ],
+          [
+            "2 ... 4 = FUNC TEMP 2 ... 4 - Habilita el autocambio cuando la Función temporizada 2 ... 4 está activa."
+          ],
+          [
+            "8127",
+            "MOTORES"
+          ],
+          [
+            "Ajusta el número actual de motores controlados por el PFC (máximo 7 motores, 1 regulado por velocidad, 3 conectados directamente en línea y 3 de recambio). · Este valor también incluye el motor regulado por velocidad."
+          ],
+          [
+            "· Este valor debe ser compatible con el número de relés asignados al PFC si se usa la función Autocambio. · Si no se usa la función Autocambio, el motor regulado por velocidad no precisa una salida de relé asignada al PFC, sino que precisa ser incluido en este valor."
+          ],
+          [
+            "8128",
+            "ORDEN MARCHA AUX"
+          ],
+          [
+            "Ajusta el orden de marcha de los motores auxiliares. 1 = A TIEMPO RUN - Tiempo compartido activo. Iguala el tiempo de marcha acumulado de los motores auxiliares. El orden de marcha depende del tiempo de marcha. El motor auxiliar cuyo tiempo de marcha acumulado es el menor se pone en marcha en primer lugar, a continuación el motor cuyo tiempo de marcha acumulado es el segundo menor, y así sucesivamente. Cuando la demanda se reduce, el primer motor que se detiene es aquel con el mayor tiempo de marcha acumulado."
+          ],
+          [
+            "2 = ORDEN RELE - El orden de marcha está fijado para ser el orden de los relés."
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "204\nManual del usuario del ACS550-01/U1\nGrupo 98: OPCIONES\nEste grupo permite configurar opciones, en particular la habilitación de la\ncomunicación serie con el convertidor.\nCódigo Descripción\n9802\nSEL PROT COM\nSelecciona el protocolo de comunicación.\n0 = SIN SEL - Sin selección de protocolo de comunicación.\n1 = MODBUS EST - El convertidor se comunica con Modbus mediante el canal RS485 (comunicaciones X1, terminal).\n· Véase también el Grupo 53: PROTOCOLO BCI.\n4 = ABC EXT - El convertidor se comunica a través de un módulo adaptador de bus de campo en la ranura de\nopción 2 del convertidor.\n· Véase también el Grupo 51: MOD COMUNIC EXT.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "9802",
+            "SEL PROT COM Selecciona el protocolo de comunicación. 0 = SIN SEL - Sin selección de protocolo de comunicación. 1 = MODBUS EST - El convertidor se comunica con Modbus mediante el canal RS485 (comunicaciones X1, terminal). · Véase también el Grupo 53: PROTOCOLO BCI. 4 = ABC EXT - El convertidor se comunica a través de un módulo adaptador de bus de campo en la ranura de opción 2 del convertidor. · Véase también el Grupo 51: MOD COMUNIC EXT."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Manual del usuario del ACS550-01/U1\n205\nBus de campo encajado\nSinopsis\nEl ACS550 puede configurarse para aceptar el control desde un sistema externo\nutilizando protocolos de comunicación serie estándar. Al utilizar comunicación serie,\nel ACS550 puede:\n· recibir toda su información de control del bus de campo, o\n· controlarse desde alguna combinación de control por bus de campo y otros lugares de\ncontrol disponibles, como entradas analógicas o digitales, y el panel de control.\nControlador de bus de campo\nBus de campo\nEfectúe la conexión con:\n· un bus de campo encajado (BCE)\nestándar en los terminales X1:28 ... 32\n· un módulo adaptador de bus de campo\n(ABC) montado en la ranura 2 (opción\nRxxx)\nOtros dispositivos\nEstán disponibles dos configuraciones de comunicaciones serie básicas:\n· bus de campo encajado (BCE) - Al emplear la interfase RS485 en los terminales\nX1:28 ... 32 en la tarjeta de control, un sistema de control puede comunicarse con el\nconvertidor empleando el protocolo Modbus®. (Acerca de las descripciones del perfil\ny el protocolo, véanse los apartados Datos técnicos del protocolo Modbus y Datos\ntécnicos de los perfiles de control ABB más adelante en este capítulo.)\n· adaptador de bus de campo (ABC) - Véase el capítulo Adaptador de bus de\ncampo en la página 241.\nInterfase de control\nEn general, la interfase de control básica entre Modbus y el convertidor consta de:\n· Códigos de salida\n- Código de control\n- Referencia 1\n- Referencia 2\n· Códigos de entrada\n- Código de estado\n- Valor actual 1\n- Valor actual 2\nBus de campo encajado",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "206\nManual del usuario del ACS550-01/U1\n- Valor actual 3\n- Valor actual 4\n- Valor actual 5\n- Valor actual 6\n- Valor actual 7\n- Valor actual 8\nEl contenido de estos códigos se define a través de perfiles. Para más información\nsobre los perfiles utilizados, véase el apartado Datos técnicos de los perfiles de\ncontrol ABB en la página 227.\nNota: las palabras \"salida\" y \"entrada\" se utilizan desde el punto de vista del\ncontrolador de bus de campo. Por ejemplo, una salida describe el flujo de datos del\ncontrolador de bus de campo al convertidor y aparece como una entrada desde el\npunto de vista del convertidor.\nPlanificación\nLa planificación de la red deberá tener en cuenta las cuestiones siguientes:\n· Qué tipos y cantidades de dispositivos deben conectarse a la red.\n· Qué información de control debe enviarse a los convertidores.\n· Qué información de realimentación debe enviarse de los convertidores al sistema\ncontrolador.\nInstalación mecánica y eléctrica - BCE\nADVERTENCIA: las conexiones sólo deben efectuarse con el convertidor\ndesconectado de la fuente de alimentación.\nLos terminales 28 ... 32 se destinan a comunicaciones RS485.\n. Utilice Belden 9842 o equivalente. Belden 9842 es un cable doble de par\napantallado con una impedancia característica de 120 ohmios.\n· Utilice uno de estos pares trenzados apantallados para el enlace RS485. Utilice este\npar para conectar todos los terminales A (-) juntos y todos los terminales B (+) juntos.\n· Utilice uno de los hilos en el otro par para tierra lógica (terminal 31), dejando un\nhilo sin usar.\n. No conecte directamente a tierra la red RS485 en ningún punto. Conecte a tierra\ntodos los dispositivos de la red empleando sus terminales de conexión a tierra\ncorrespondientes.\n· Como siempre, los hilos de conexión a tierra no deben formar bucles cerrados, y\ntodos los dispositivos deben conectarse a un tierra común.\n· Conecte el enlace RS485 en un bus en cadena de margarita, sin líneas desprendidas.\nBus de campo encajado",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Manual del usuario del ACS550-01/U1\n207\n· Para reducir el ruido en la red, realice la terminación de la red RS485 empleando\nresistencias de 120 22 en ambos extremos de la red. Utilice el conmutador DIP para\nconectar o desconectar las resistencias de terminación. Véase el diagrama siguiente.\nEstación\nterminada\nEstación\nEstación\n00000\n00000\n00000\nConvertidor RS485\nBloque de terminales X1\nVéase la\nNota 1\nPantalla SCR\nB + Positivo\nON ON\nPantalla SCR\nAGND\nA - Negativo\nDI\nON\n28\n29\n30\n31\n32\nEstación\nterminada\n00000\nVéase Nota 2: Pantalla\nNotas:\n1. Ajuste el conmutador J2 a OFF. La posición ON\ndebería activar la red (las resistencias\n[POLARIZACIÓN] se encuentran en el panel del\nconvertidor).\n2. Una los cables apantallados al convertidor - NO\nrealice la terminación en SCR.\n3. Conecte el cable apantallado SOLO en el terminal\nde \"Tierra\" en el regulador de automatización.\n4. Conecte el cable AGND al terminal de \"Referencia\"\nen el regulador de automatización.\nVéase la Nota 3:>\nG\nR\nTierra\n-\n+\nVéase Nota 4: Referencia/\nComún\nControlador\n· Para obtener información de configuración, véanse los apartados siguientes:\n- Configuración para la comunicación - BCE en la página 207\n- Activación de las funciones de control del convertidor - BCE en la página 209\n- Los datos técnicos específicos del protocolo BCE apropiado. Por ejemplo,\nDatos técnicos del protocolo Modbus en la página 218.\nConfiguración para la comunicación - BCE\nSelección de la comunicación serie\nPara activar la comunicación serie, ajuste el parámetro 9802 SEL PROT COM = 1 (MODBUS EST).\nNota: si no puede ver la selección deseada en el panel, su convertidor no dispone\nde ese software de protocolo en la memoria de aplicación.\nBus de campo encajado",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "208\nManual del usuario del ACS550-01/U1\nConfiguración de la comunicación serie\nEl ajuste de 9802 ajusta automáticamente los valores por defecto apropiados en los\nparámetros que definen el proceso de comunicación. A continuación se definen\ntales parámetros y descripciones. En particular, observe que el id de estación podría\nrequerir un ajuste.\nCódigo\nDescripción\nReferencia de protocolo\nModbus\n5301\nID PROTOCO-LO BCI\nContiene la identificación y la versión de programa\ndel protocolo.\nNo editar. Cualquier valor distinto de\ncero introducido para el parámetro 9802\nSEL PROT COM ajusta este parámetro\nautomáticamente. El formato es: XXYY,\ndonde XX = ID de protocolo, e YY =\nversión de programa.\n5302\nID ESTACION BCI\nDefine la dirección de nodo del enlace RS485.\nAjuste cada convertidor en la red con un\nvalor exclusivo para este parámetro.\nCuando se selecciona este protocolo, el\nvalor por defecto para este parámetro es: 1\nNota: Para que una nueva dirección tenga efecto, debe efectuarse el ciclo de la alimentación del\nconvertidor o 5302 debe ajustarse previamente a 0 antes de seleccionar una nueva dirección. Si se\ndeja 5302 = 0 el canal RS485 se sitúa en restauración, lo que desactiva la comunicación.\n5303\nVEL TRANSM BCI\nDefine la velocidad de comunicación del enlace\nRS485 en kbits por segundo (kbits/s).\nCuando se selecciona este protocolo, el\nvalor por defecto para este parámetro\nes: 9.6\n1,2 kb/s\n19,2 kb/s\n2,4 kb/s\n38,4 kb/s\n4,8 kb/s\n57,6 kb/s\n9,6 kb/s\n76,8 kb/s\n5304\nPARIDAD BCI\nDefine la longitud de datos, paridad y bits de paro\na utilizar con la comunicación RS485.\n· Deben utilizarse los mismos ajustes en todas\nlas estaciones en línea.\n0 = 8 N 1 - 8 bits de datos, sin paridad, un bit de paro.\n1 = 8 N 2 - 8 bits de datos, sin paridad, dos bits de paro.\n2 = 8 E 1 - 8 bits de datos, paridad par, un bit de paro.\n3 = 8 0 1 - 8 bits de datos, paridad impar, un bit de paro.\nCuando se selecciona este protocolo, el\nvalor por defecto para este parámetro es: 1\n5305\nPERFIL CTRL BCI\nSelecciona el perfil de comunicación utilizado por\nel protocolo BCE.\nCuando se selecciona este protocolo, el\nvalor por defecto para este parámetro es: 0\n0 = ABB DRV LIM - El funcionamiento del Código de\ncontrol/estado se ajusta al perfil ABB Drives,\nutilizado en el ACS400.\n1 = DCU PROFILE - El funcionamiento del Código de\ncontrol/estado se ajusta al perfil DCU de 32 bits.\n2 = ABB DRV FULL - El funcionamiento del Código de\ncontrol/estado se ajusta al perfil ABB Drives,\nutilizado en el ACS600/800.\nNota: tras cualquier cambio en los ajustes de comunicación, el protocolo debe\nreactivarse conectando y desconectando la alimentación del convertidor o borrando\ny restaurando la Id de la estación (5302).\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción",
+            "Referencia de protocolo"
+          ],
+          [
+            "Modbus"
+          ],
+          [
+            "5301",
+            "ID PROTOCO-LO BCI Contiene la identificación y la versión de programa del protocolo.",
+            "No editar. Cualquier valor distinto de cero introducido para el parámetro 9802 SEL PROT COM ajusta este parámetro automáticamente. El formato es: XXYY, donde XX = ID de protocolo, e YY = versión de programa."
+          ],
+          [
+            "5302",
+            "ID ESTACION BCI Define la dirección de nodo del enlace RS485.",
+            "Ajuste cada convertidor en la red con un valor exclusivo para este parámetro. Cuando se selecciona este protocolo, el valor por defecto para este parámetro es: 1"
+          ],
+          [
+            "Nota: Para que una nueva dirección tenga efecto, debe efectuarse el ciclo de la alimentación del convertidor o 5302 debe ajustarse previamente a 0 antes de seleccionar una nueva dirección. Si se deja 5302 = 0 el canal RS485 se sitúa en restauración, lo que desactiva la comunicación."
+          ],
+          [
+            "5303",
+            "VEL TRANSM BCI Define la velocidad de comunicación del enlace RS485 en kbits por segundo (kbits/s).",
+            "Cuando se selecciona este protocolo, el valor por defecto para este parámetro es: 9.6"
+          ],
+          [
+            "1,2 kb/s 19,2 kb/s"
+          ],
+          [
+            "2,4 kb/s 38,4 kb/s"
+          ],
+          [
+            "4,8 kb/s 57,6 kb/s 9,6 kb/s 76,8 kb/s"
+          ],
+          [
+            "5304",
+            "PARIDAD BCI Define la longitud de datos, paridad y bits de paro a utilizar con la comunicación RS485. · Deben utilizarse los mismos ajustes en todas las estaciones en línea. 0 = 8 N 1 - 8 bits de datos, sin paridad, un bit de paro. 1 = 8 N 2 - 8 bits de datos, sin paridad, dos bits de paro. 2 = 8 E 1 - 8 bits de datos, paridad par, un bit de paro. 3 = 8 0 1 - 8 bits de datos, paridad impar, un bit de paro.",
+            "Cuando se selecciona este protocolo, el valor por defecto para este parámetro es: 1"
+          ],
+          [
+            "5305",
+            "PERFIL CTRL BCI Selecciona el perfil de comunicación utilizado por el protocolo BCE.",
+            "Cuando se selecciona este protocolo, el valor por defecto para este parámetro es: 0"
+          ],
+          [
+            "0 = ABB DRV LIM - El funcionamiento del Código de control/estado se ajusta al perfil ABB Drives, utilizado en el ACS400."
+          ],
+          [
+            "1 = DCU PROFILE - El funcionamiento del Código de control/estado se ajusta al perfil DCU de 32 bits. 2 = ABB DRV FULL - El funcionamiento del Código de control/estado se ajusta al perfil ABB Drives, utilizado en el ACS600/800."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Manual del usuario del ACS550-01/U1\n209\nActivación de las funciones de control del convertidor - BCE\nControl del convertidor\nEl control por bus de campo de diversas funciones del convertidor requiere que la\nconfiguración:\n· ordene al convertidor que acepte el control por bus de campo de la función\n· defina como una entrada de bus de campo cualquier dato del convertidor\nrequerido para el control\n· defina como una salida de bus de campo cualquier dato de control requerido por\nel convertidor\nLos apartados siguientes describen, a un nivel general, la configuración requerida\npara cada función de control. Acerca de los detalles específicos de cada protocolo,\nvéase el documento suministrado con el módulo ABC.\nControl de Marcha/Paro/Dirección\nEl uso del bus de campo para el control de marcha/paro/dirección del convertidor requiere:\n· el ajuste de los valores de parámetros del convertidor definido a continuación\n· comando(s) suministrado(s) por el controlador de bus de campo en el lugar apropiado.\n(El lugar es definido por la Referencia de protocolo, que depende del protocolo.)\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de protocolo\nModbus1\nABB DRV\nDCU PROFILE\n1001\nCOMANDOS EXT1\n10\n(COMUNIC)\nMarcha/Paro por bus de\ncampo con Ext1\nseleccionado.\n40001 bits 0 ... 3\n40031 bits 0, 1\n1002\nCOMANDOS EXT2\n10\n(COMUNIC)\nMarcha/Paro por bus de\ncampo con Ext2\nseleccionado.\n40001 bits 0 ... 3\n40031 bits 0, 1\n1003\nDIRECCIÓN\n3 (PETICION)\nDirección por bus de\ncampo.\n4002/40032\n40031 bit 3\n1\nPara Modbus, la referencia de protocolo puede depender del perfil utilizado, de ahí las dos\ncolumnas en estas tablas. Una columna hace referencia al perfil ABB Drives, seleccionado cuando\nel parámetro 5305 = 0 (ABB DRV LIM) o 5305 = 2 (ABB DRV FULL). La otra columna hace referencia al\nperfil DCU seleccionado cuando el parámetro 5305 = 1 (DCU PROFILE). Véase el apartado Datos\ntécnicos de los perfiles de control ABB en la página 227.\n2 La referencia proporciona control de dirección - una referencia negativa proporciona giro inverso.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo Modbus1"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "1001",
+            "COMANDOS EXT1",
+            "10 (COMUNIC)",
+            "Marcha/Paro por bus de campo con Ext1 seleccionado.",
+            "40001 bits 0 ... 3",
+            "40031 bits 0, 1"
+          ],
+          [
+            "1002",
+            "COMANDOS EXT2",
+            "10 (COMUNIC)",
+            "Marcha/Paro por bus de campo con Ext2 seleccionado.",
+            "40001 bits 0 ... 3",
+            "40031 bits 0, 1"
+          ],
+          [
+            "1003",
+            "DIRECCIÓN",
+            "3 (PETICION)",
+            "Dirección por bus de campo.",
+            "4002/40032",
+            "40031 bit 3"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "210\nManual del usuario del ACS550-01/U1\nSelección de referencia de entrada\nEl uso del bus de campo para proporcionar referencias de entrada al convertidor requiere:\n· el ajuste de los valores de parámetros del convertidor definido a continuación\n· código(s) de referencia suministrado(s) por el controlador de bus de campo en el\nlugar apropiado. (El lugar es definido por la Referencia de protocolo, que\ndepende del protocolo.)\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de protocolo\nModbus\nABB DRV\nDCU PROFILE\n1102\nSELEC EXT1/\nEXT2\n8\n(COMUNIC)\nSelección de serie de referencias\npor bus de campo.\n40001 bit 11\n40031 bit 5\n1103\nSELEC REF1\n8\n(COMUNIC)\nReferencia de entrada 1 por bus de\ncampo.\n40002\n1106\nSELEC REF2\n8\n(COMUNIC)\nReferencia de entrada 2 por bus de\ncampo.\n40003\nEscalado de referencia\nCuando se requiera, las REFERENCIAS pueden escalarse. Véase lo siguiente, según\nproceda:\n· Registro Modbus 40002 en el apartado Datos técnicos del protocolo Modbus de\nla página 218\n· Escalado de referencia en el apartado Datos técnicos de los perfiles de control\nABB de la página 227.\nControl heterogéneo del convertidor\nEl uso del bus de campo para el control heterogéneo del convertidor requiere:\n· el ajuste de los valores de parámetros del convertidor definido a continuación\n· comando(s) suministrado(s) por el controlador de bus de campo en el lugar apropiado.\n(El lugar es definido por la Referencia de protocolo, que depende del protocolo.)\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de protocolo\nModbus\nABB DRV\nDCU PROFILE\n1601\nPERMISO\nMARCHA\n7\n(COMUNIC)\nPermiso de marcha por bus de\ncampo\n40001 bit 3\n40031 bit 6\n(inverso)\n1604\nSEL REST FALLO\n8\n(COMUNIC)\nRestauración de fallos por bus de\ncampo.\n40001 bit 7\n40031 bit 4\n1606\nBLOQUEO LOCAL\n8\n(COMUNIC)\nLa fuente para la selección del\nbloqueo local es el bus de campo.\nNo procede.\n40031 bit 14\n1607\nSALVAR PARAM\n1\n(SALVAR)\nGuarda los parámetros alterados en\nla memoria (y el valor vuelve a 0).\n41607\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo Modbus"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "1102",
+            "SELEC EXT1/ EXT2",
+            "8 (COMUNIC)",
+            "Selección de serie de referencias por bus de campo.",
+            "40001 bit 11",
+            "40031 bit 5"
+          ],
+          [
+            "1103",
+            "SELEC REF1",
+            "8 (COMUNIC)",
+            "Referencia de entrada 1 por bus de campo.",
+            "40002"
+          ],
+          [
+            "1106",
+            "SELEC REF2",
+            "8 (COMUNIC)",
+            "Referencia de entrada 2 por bus de campo.",
+            "40003"
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo Modbus"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "1601",
+            "PERMISO MARCHA",
+            "7 (COMUNIC)",
+            "Permiso de marcha por bus de campo",
+            "40001 bit 3",
+            "40031 bit 6 (inverso)"
+          ],
+          [
+            "1604",
+            "SEL REST FALLO",
+            "8 (COMUNIC)",
+            "Restauración de fallos por bus de campo.",
+            "40001 bit 7",
+            "40031 bit 4"
+          ],
+          [
+            "1606",
+            "BLOQUEO LOCAL",
+            "8 (COMUNIC)",
+            "La fuente para la selección del bloqueo local es el bus de campo.",
+            "No procede.",
+            "40031 bit 14"
+          ],
+          [
+            "1607",
+            "SALVAR PARAM",
+            "1 (SALVAR)",
+            "Guarda los parámetros alterados en la memoria (y el valor vuelve a 0).",
+            "41607"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Manual del usuario del ACS550-01/U1\n211\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de protocolo\nModbus\nABB DRV\nDCU PROFILE\n1608\nPERMISO DE INI\n1\n7\n(COMUNIC)\nLa fuente para el permiso de\nmarcha 1 es el Código de comando\ndel bus de campo.\nNo procede.\n40032 bit 2\n1609\nPERMISO DE INI\n2\n7\n(COMUNIC)\nLa fuente para el permiso de\nmarcha 2 es el Código de comando\ndel bus de campo.\n40032 bit 3\n2013\nSEL PAR MINIMO\n7\n(COMUNIC)\nLa fuente para la selección del par\nmínimo es el bus de campo.\n40031 bit 15\n2014\nSEL PAR MAXIMO\n7\n(COMUNIC)\nLa fuente para la selección del par\nmáximo es el bus de campo.\n2201\nSEL ACE/DEC 1/2\n7\n(COMUNIC)\nLa fuente para la selección del par\nde rampas es el bus de campo.\n40031 bit 10\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo Modbus"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "1608",
+            "PERMISO DE INI 1",
+            "7 (COMUNIC)",
+            "La fuente para el permiso de marcha 1 es el Código de comando del bus de campo.",
+            "No procede.",
+            "40032 bit 2"
+          ],
+          [
+            "1609",
+            "PERMISO DE INI 2",
+            "7 (COMUNIC)",
+            "La fuente para el permiso de marcha 2 es el Código de comando del bus de campo.",
+            "40032 bit 3"
+          ],
+          [
+            "2013",
+            "SEL PAR MINIMO",
+            "7 (COMUNIC)",
+            "La fuente para la selección del par mínimo es el bus de campo.",
+            "40031 bit 15"
+          ],
+          [
+            "2014",
+            "SEL PAR MAXIMO",
+            "7 (COMUNIC)",
+            "La fuente para la selección del par máximo es el bus de campo."
+          ],
+          [
+            "2201",
+            "SEL ACE/DEC 1/2",
+            "7 (COMUNIC)",
+            "La fuente para la selección del par de rampas es el bus de campo.",
+            "40031 bit 10"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "212\nManual del usuario del ACS550-01/U1\nControl de salidas de relé\nEl uso del bus de campo para el control de salidas de relé requiere:\n· el ajuste de los valores de parámetros del convertidor definido a continuación\n· comando(s) de relé, con codificación binaria, suministrado(s) por el controlador\nde bus de campo en el lugar apropiado. (El lugar es definido por la Referencia de\nprotocolo, que depende del protocolo.)\nParámetro de convertidor\nValor\nDescripción\nReferencia de protocolo\nModbus\nABB DRV\nDCU PROFILE\n1401\nSALIDA RELÉ SR1\n35\n(COMUNIC)\nSalida de relé 1 controlada\npor bus de campo.\n40134 bit 0 o 00033\n1402\nSALIDA RELÉ SR2\n35\n(COMUNIC)\nSalida de relé 2 controlada\npor bus de campo.\n40134 bit 1 o 00034\n1403\nSALIDA RELÉ SR3\n35\n(COMUNIC)\nSalida de relé 3 controlada\npor bus de campo.\n40134 bit 2 o 00035\n14101\nSALIDA RELE SR4\n35\n(COMUNIC)\nSalida de relé 4 controlada\npor bus de campo.\n40134 bit 3 o 00036\n14111\nSALIDA RELE SR5\n35\n(COMUNIC)\nSalida de relé 5 controlada\npor bus de campo.\n40134 bit 4 o 00037\n14121\nSALIDA RELÉ 6\n35\n(COMUNIC)\nSalida de relé 6 controlada\npor bus de campo.\n40134 bit 5 o 00038\n1\nMás de 3 relés requieren la adición de un módulo de ampliación de relés.\nNota: la realimentación del estado de relé se produce sin la configuración definida a\ncontinuación.\nParámetro de convertidor\nDescripción\nReferencia de protocolo\nModbus\nABB DRV\nDCU PROFILE\n0122\nESTADO SR 1-3\nEstado del relé 1 ... 3.\n40122\n0123\nESTADO SR 4-6\nEstado del relé 4 ... 3.\n40123\nControl de salidas analógicas\nEl uso del bus de campo para el control de salidas analógicas (p. ej., punto de\nconsigna PID) requiere:\n· el ajuste de los valores de parámetros del convertidor definido a continuación\n· valor(es) analógico(s) suministrado(s) por el controlador de bus de campo en el\nlugar apropiado. (El lugar es definido por la Referencia de protocolo, que\ndepende del protocolo.)\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de\nprotocolo Modbus\nABB DRV\nDCU PROFILE\n1501\nSEL CONTENID SA1\n135 (VALOR COMUNIC. 1)\nSalida analógica 1\ncontrolada escribiendo en\n–\n0135\nVALOR COMUNIC. 1\n–\nel parámetro 0135.\n40135\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo Modbus"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "1401",
+            "SALIDA RELÉ SR1",
+            "35 (COMUNIC)",
+            "Salida de relé 1 controlada por bus de campo.",
+            "40134 bit 0 o 00033"
+          ],
+          [
+            "1402",
+            "SALIDA RELÉ SR2",
+            "35 (COMUNIC)",
+            "Salida de relé 2 controlada por bus de campo.",
+            "40134 bit 1 o",
+            "00034"
+          ],
+          [
+            "1403",
+            "SALIDA RELÉ SR3",
+            "35 (COMUNIC)",
+            "Salida de relé 3 controlada por bus de campo.",
+            "40134 bit 2 o",
+            "00035"
+          ],
+          [
+            "14101",
+            "SALIDA RELE SR4",
+            "35 (COMUNIC)",
+            "Salida de relé 4 controlada por bus de campo.",
+            "40134 bit 3 o",
+            "00036"
+          ],
+          [
+            "14111",
+            "SALIDA RELE SR5",
+            "35 (COMUNIC)",
+            "Salida de relé 5 controlada por bus de campo.",
+            "40134 bit 4 o 00037"
+          ],
+          [
+            "14121",
+            "SALIDA RELÉ 6",
+            "35 (COMUNIC)",
+            "Salida de relé 6 controlada por bus de campo.",
+            "40134 bit 5 o 00038"
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Descripción",
+            "Referencia de protocolo Modbus"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "0122",
+            "ESTADO SR 1-3",
+            "Estado del relé 1 ... 3.",
+            "40122"
+          ],
+          [
+            "0123",
+            "ESTADO SR 4-6",
+            "Estado del relé 4 ... 3.",
+            "40123"
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo Modbus"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "1501",
+            "SEL CONTENID SA1",
+            "135 (VALOR COMUNIC. 1)",
+            "Salida analógica 1",
+            "",
+            "–"
+          ],
+          [
+            "0135",
+            "VALOR COMUNIC. 1",
+            "–",
+            "controlada escribiendo en\nel parámetro 0135.",
+            "40135"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Manual del usuario del ACS550-01/U1\n213\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de\nprotocolo Modbus\nABB DRV\nDCU PROFILE\n1507\nSEL CONTENID SA2\n136 (VALOR COMUNIC. 2)\nSalida analógica 2 controlada\nescribiendo en el parámetro\n–\n0136\nVALOR COMUNIC. 2\n–\n0136.\n40136\nFuente del punto de consigna del control PID\nUtilice los ajustes siguientes para seleccionar el bus de campo como la fuente de\npunto de consigna para los bucles PID:\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de protocolo\nModbus\nABB DRV\nDCU PROFILE\n4010\nSEL PUNTO CONSIG\n(Serie 1)\n8 (VALOR COMUNIC. 1)\n9 (COMUNIC+EA1)\n10 (COMUNIC*EA1)\nEl punto de consigna es la\nreferencia de entrada 2\n(+/-/* EA1)\n40003\n4110\nSEL PUNTO CONSIG\n(Serie 2)\n4210\nSEL PUNTO\nCONSIG (Trim/Ext)\nFallo de comunicación\nAl utilizar control por bus de campo, especifique la acción del convertidor si se\npierde la comunicación serie.\nParámetro de\nconvertidor\nValor\nDescripción\n3018\nFUNC FALLO COMUN\n0 (SIN SEL)\n1 (FALLO)\n2 (VEL CONST 7)\n3 (ULTIMA VELOC)\nAjuste para obtener la respuesta apropiada del\nconvertidor.\n3019\nTIEM FALLO COMUN\nAjuste la demora de tiempo antes de actuar en una pérdida de\ncomunicación.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo Modbus"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "1507",
+            "SEL CONTENID SA2",
+            "136 (VALOR COMUNIC. 2)",
+            "Salida analógica 2 controlada",
+            "",
+            "–"
+          ],
+          [
+            "0136",
+            "VALOR COMUNIC. 2",
+            "–",
+            "escribiendo en el parámetro\n0136.",
+            "40136"
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo Modbus"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "4010",
+            "SEL PUNTO CONSIG (Serie 1)",
+            "8 (VALOR COMUNIC. 1) 9 (COMUNIC+EA1) 10 (COMUNIC*EA1)",
+            "El punto de consigna es la referencia de entrada 2 (+/-/* EA1)",
+            "40003"
+          ],
+          [
+            "4110",
+            "SEL PUNTO CONSIG (Serie 2)"
+          ],
+          [
+            "4210",
+            "SEL PUNTO CONSIG (Trim/Ext)"
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción"
+          ],
+          [
+            "3018",
+            "FUNC FALLO COMUN",
+            "0 (SIN SEL) 1 (FALLO) 2 (VEL CONST 7) 3 (ULTIMA VELOC)",
+            "Ajuste para obtener la respuesta apropiada del convertidor."
+          ],
+          [
+            "3019",
+            "TIEM FALLO COMUN",
+            "Ajuste la demora de tiempo antes de actuar en una pérdida de comunicación."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "214\nManual del usuario del ACS550-01/U1\nRealimentación del convertidor - BCE\nRealimentación predefinida\nLas entradas del controlador (salidas del convertidor) tienen significados predefinidos\nestablecidos por el protocolo. Esta realimentación no requiere configuración del\nconvertidor. La tabla siguiente muestra un ejemplo de datos de realimentación. Para\nobtener una lista completa, véanse las listas de códigos/puntos/objetos en los datos\ntécnicos acerca del protocolo apropiado a partir de la página 218.\nParámetro de convertidor\nReferencia de protocolo\nModbus\nABB DRV\nDCU PROFILE\n0102\nVELOCIDAD\n40102\n0103\nFREC SALIDA\n40103\n0104\nINTENSIDAD\n40104\n0105\nPAR\n40105\n0106\nPOTENCIA\n40106\n0107\nTENSION BUS CC\n40107\n0109\nTENSION SALIDA\n40109\n0301\nCOD ORDEN BC1 - bit 0 (PARO)\n40301 bit 0\n0301\nCOD ORDEN BC1 1 - bit 2 (INV)\n40301 bit 2\n0118\nED 1-3 ESTADO - bit 0 (ED3)\n40118\nNota: con Modbus, es posible acceder a cualquier parámetro utilizando el formato:\n\"4\" seguido del número de parámetro.\nAdaptación a escala del valor actual\nLa adaptación a escala de valores actuales puede depender de protocolo. En\ngeneral, para valores actuales, escale el valor entero de realimentación utilizando la\nresolución del parámetro. (Véase el apartado Lista de parámetros completa en la\npágina 95 acerca de las resoluciones de parámetros.) Por ejemplo:\nEntero de\nrealimentación\nResolución de\nparámetro\n(Entero de realimentación) (Resolución de parámetro) = Valor escalado\n1\n0,1 mA\n1 · 0,1 mA = 0,1 mA\n10\n0,1%\n10 · 0,1% = 1%\nCuando los parámetros son un porcentaje, el apartado Descripciones completas de\nlos parámetros especifica qué parámetro corresponde al 100%. En tales casos, para\nefectuar la conversión de un porcentaje a unidades de ingeniería, multiplique por el\nvalor del parámetro que defina el 100% y divida por 100%.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Parámetro de convertidor",
+            "Referencia de protocolo Modbus"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "0102",
+            "VELOCIDAD",
+            "40102"
+          ],
+          [
+            "0103",
+            "FREC SALIDA",
+            "40103"
+          ],
+          [
+            "0104",
+            "INTENSIDAD",
+            "40104"
+          ],
+          [
+            "0105",
+            "PAR",
+            "40105"
+          ],
+          [
+            "0106",
+            "POTENCIA",
+            "40106"
+          ],
+          [
+            "0107",
+            "TENSION BUS CC",
+            "40107"
+          ],
+          [
+            "0109",
+            "TENSION SALIDA",
+            "40109"
+          ],
+          [
+            "0301",
+            "COD ORDEN BC1 - bit 0 (PARO)",
+            "40301 bit 0"
+          ],
+          [
+            "0301",
+            "COD ORDEN BC1 1 - bit 2 (INV)",
+            "40301 bit 2"
+          ],
+          [
+            "0118",
+            "ED 1-3 ESTADO - bit 0 (ED3)",
+            "40118"
+          ]
+        ],
+        [
+          [
+            "Entero de realimentación",
+            "Resolución de parámetro",
+            "(Entero de realimentación) (Resolución de parámetro) = Valor escalado"
+          ],
+          [
+            "1",
+            "0,1 mA",
+            "1 · 0,1 mA = 0,1 mA"
+          ],
+          [
+            "10",
+            "0,1%",
+            "10 · 0,1% = 1%"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Manual del usuario del ACS550-01/U1\n215\nPor ejemplo:\nEntero de\nrealimentación\nResolución\nde\nparámetro\nValor del\nparámetro que\ndefine el 100%.\n(Entero de realimentación) (Resolución de parámetro)\n(Valor de ref. 100%) / 100% = Valor escalado\n10\n0,1%\n1500 rpm1\n10 - 0,1% · 1500 RPM / 100% = 15 rpm\n100\n0,1%\n500 Hz2\n100 - 0,1% · 500 Hz / 100% = 50 Hz\n1 Suponiendo para este ejemplo que el valor actual utilice el parámetro 9908 VELOC NOM MOT como la\nreferencia al 100%, y que 9908 = 1500 rpm.\n2 Suponiendo para este ejmplo que el valor actual utilice el parámetro 9907 FREC NOM MOT como la referencia\nal 100%, y que 9907 = 500 Hz.\nDiagnósticos - BCI\nCola de fallos para el diagnóstico del convertidor\nAcerca de la información de diagnóstico general del ACS550, véase el capítulo\nDiagnósticos en la página 263. Los tres fallos más recientes del ACS550 se\ncomunican al bus de campo como se define a continuación.\nParámetro de convertidor\nReferencia de protocolo\nModbus\nABB DRV\nDCU PROFILE\n0401\nLAST FAULT\n40401\n0412\nFALLO ANTERIOR 1\n40412\n0413\nFALLO ANTERIOR 2\n40413\nDiagnóstico de la comunicación serie\nLos problemas de red pueden ser provocados por múltiples causas. Algunas de ellas son:\n· conexiones flojas\n· cableado incorrecto (incluyendo cables intercambiados)\n· mala conexión a tierra\n· números de estación duplicados\n· configuración incorrecta de los convertidores u otros dispositivos de la red.\nLas principales características de diagnóstico para el análisis de fallos en una red\nBCI incluyen los parámetros del Grupo 53: PROTOCOLO BCI 5306 ... 5309. El\napartado Descripciones completas de los parámetros de la página 109 describe\nestos parámetros en detalle.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Entero de realimentación",
+            "Resolución de parámetro",
+            "Valor del parámetro que define el 100%.",
+            "(Entero de realimentación) (Resolución de parámetro) (Valor de ref. 100%) / 100% = Valor escalado"
+          ],
+          [
+            "10",
+            "0,1%",
+            "1500 rpm1",
+            "10 - 0,1% · 1500 RPM / 100% = 15 rpm"
+          ],
+          [
+            "100",
+            "0,1%",
+            "500 Hz2",
+            "100 - 0,1% · 500 Hz / 100% = 50 Hz"
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Referencia de protocolo Modbus"
+          ],
+          [
+            "ABB DRV",
+            "DCU PROFILE"
+          ],
+          [
+            "0401",
+            "LAST FAULT",
+            "40401"
+          ],
+          [
+            "0412",
+            "FALLO ANTERIOR 1",
+            "40412"
+          ],
+          [
+            "0413",
+            "FALLO ANTERIOR 2",
+            "40413"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "216\nManual del usuario del ACS550-01/U1\nSituaciones de diagnóstico\nLos subapartados siguientes describen diversas situaciones de diagnóstico, los\nsíntomas del problema y las acciones de corrección.\nFuncionamiento normal\nDurante el funcionamiento normal de la red, los valores de parámetro 5306 ... 5309\nactúan del modo siguiente en cada convertidor:\n· 5306 MENSAJ CORR BCI avanza (avanza para cada mensaje recibido correctamente y\ndirigido a este convertidor).\n· 5307 ERRORES CRC BCI no avanza en absoluto (avanza cuando se recibe un mensaje\nCRC no válido).\n· 5308 ERRORES UART BCI no avanza en absoluto (avanza cuando se detectan errores\nde formato de caracteres, como errores de paridad o trama).\n· 5309 El valor de ESTADO BCI varía en función del tráfico de la red.\nPérdida de comunicación\nEl comportamiento del ACS550, si se perdió la comunicación, se configuró anteriormente\nen el apartado Fallo de comunicación de la página 213. Los parámetros son 3018 FUNC\nFALLO COMUN y 3019 TIEM FALLO COMUN. El apartado Descripciones completas de los\nparámetros de la página 109 describe estos parámetros en detalle.\nSin una estación maestra en línea\nSin una estación maestra en línea, ni los MENSAJ CORR BCI ni los errores (5307 ERRORES CRC\nBCI y 5308 ERRORES UART BCI) aumentan en ninguna de las estaciones.\nPara corregirlo:\n· Compruebe que esté conectado un maestro de red y que esté correctamente\nprogramado en la red.\n· Verifique que el cable esté conectado y que no esté cortado o cortocircuitado.\nEstaciones duplicadas\nSi dos o más estaciones tienen números duplicados:\n· No es posible dirigirse a dos o más convertidores.\n· Cada vez que se efectúa una lectura o escritura en una estación determinada, el\nvalor de 5307 ERRORES CRC BCI o 5308 ERRORES UART BCI avanza.\nPara corregirlo: Verifique los números de estación de todas las estaciones. Cambie\nlos números de estación conflictivos.\nHilos intercambiados\nSi se intercambian los hilos de comunicación (el terminal A en un convertidor se\nconecta al terminal B en otro):\n· El valor de 5306 MENSAJ CORR BCI no avanza.\n· Los valores de 5307 ERRORES CRC BCI y 5308 ERRORES UART BCI están avanzando.\nPara corregirlo: Compruebe que las líneas RS-485 no se hayan intercambiado.\nBus de campo encajado",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Manual del usuario del ACS550-01/U1\n217\nFallo 28 - Err serie 1\nSi el panel de control del convertidor muestra el código de fallo 28, ERROR SERIE 1,\ncompruebe si se da uno de los supuestos siguientes:\n· El sistema maestro no funciona. Para corregirlo, resuelva el problema del\nsistema maestro.\n· La conexión de comunicación no es buena. Para corregirlo, compruebe la\nconexión de comunicación en el convertidor.\n· La selección de final de espera para el convertidor es demasiado breve para la\ninstalación en cuestión. El maestro no interroga al convertidor dentro de la\ndemora de final de espera especificada. Para corregirlo, incremente el tiempo\najustado por el parámetro 3019 TIEM FALLO COMUN.\nFallos 31 ... 33 - BCI1 ... BCI3\nLos tres códigos de fallo BCI listados para el convertidor en el capítulo Diagnósticos\nen la página 263 (códigos de fallo 31 ... 33) no se utilizan.\nSucesos intermitentes de desconexión de la línea\nLos problemas descritos anteriormente son los problemas más comunes apreciados\nen la comunicación serie del ACS550. También pueden surgir problemas\nintermitentes provocados por:\n· conexiones levemente flojas\n· desgaste de los hilos provocado por vibraciones del equipo\n· conexión a tierra y apantallamiento insuficientes en los dispositivos y los cables\nde comunicación.\nBus de campo encajado",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "218\nManual del usuario del ACS550-01/U1\nDatos técnicos del protocolo Modbus\nSinopsis\nEl protocolo Modbus® fue introducido por Modicon, Inc. para su uso en entornos de\ncontrol con controladores programables Modicon. Debido a su facilidad de uso e\nimplementación, este lenguaje PLC común se adoptó rápidamente como una norma\nde facto para la integración de una amplia variedad de controladores maestros y\ndispositivos esclavos.\nModbus es un protocolo serie y asíncrono. Las transacciones son de tipo\nsemidúplex, con un solo Maestro que controla uno o más Esclavos. Aunque es\nposible emplear RS232 para la comunicación punto a punto entre un solo Maestro y\nun solo Esclavo, una implementación más común comprende una red RS485\nmultipunto con un solo Maestro que controla varios Esclavos. El ACS550 incorpora\nRS485 como su interfase física Modbus.\nRTU\nLa especificación Modbus define dos modos de transmisión diferenciados: ASCII y\nRTU. El ACS550 sólo soporta RTU.\nResumen de características\nEl ACS550 soporta los siguientes códigos de función Modbus.\nFunción\nCód. (hex)\nDescripción\nLeer estado de\nbobina\n0x01\nLeer estado de salida discreta. Para el ACS550, los bits\nindividuales del código de control se correlacionan con las\nBobinas 1 ... 16. Las salidas de relé se correlacionan\nsecuencialmente con la Bobina 33 (p. ej. SR1=Bobina 33).\nLeer estado de\nentrada discreta\n0x02\nLeer estado de entradas discretas. Para el ACS550, los bits\nindividuales del código de estado se correlacionan con las\nEntradas 1 ... 16 o 1 ... 32, en función del perfil activo. Las\nentradas terminales se correlacionan secuencialmente\nempezando por la Entrada 33 (p. ej. ED1=Entrada 33).\nLeer varios\nregistros de\nretención\n0x03\nLeer varios registros de retención. Para el ACS550, todo el\nconjunto de parámetros se correlaciona como registros de\nretención, así como los valores de comando, estado y referencia.\nLeer varios\nregistros de entrada\n0x04\nLeer varios registros de entrada. Para el ACS550, los 2 canales de\nentrada analógica se correlacionan como registros de entrada 1 y 2.\nForzar una única\nbobina\n0x05\nEscribir una única salida discreta. Para el ACS550, los bits\nindividuales del código de control se correlacionan con las\nBobinas 1 ... 16. Las salidas de relé se correlacionan\nsecuencialmente con la Bobina 33 (p. ej. SR1=Bobina 33).\nEscribir un único\nregistro de\nretención\n0x06\nEscribir un único registro de retención. Para el ACS550, todo el\nconjunto de parámetros se correlaciona como registros de\nretención, así como los valores de comando, estado y referencia.\nDiagnósticos\n0x08\nRealizar diagnósticos Modbus. Se soportan subcódigos para\nConsulta (0x00), Reinicio (0x01) & Sólo escuchar (0x04).\nForzar varias\nbobinas\n0x0F\nEscribir varias salidas discretas. Para el ACS550, los bits\nindividuales del código de control se correlacionan con las\nBobinas 1 ... 16. Las salidas de relé se correlacionan\nsecuencialmente con la Bobina 33 (p. ej. SR1=Bobina 33).\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Función",
+            "Cód. (hex)",
+            "Descripción"
+          ],
+          [
+            "Leer estado de bobina",
+            "0x01",
+            "Leer estado de salida discreta. Para el ACS550, los bits individuales del código de control se correlacionan con las Bobinas 1 ... 16. Las salidas de relé se correlacionan secuencialmente con la Bobina 33 (p. ej. SR1=Bobina 33)."
+          ],
+          [
+            "Leer estado de entrada discreta",
+            "0x02",
+            "Leer estado de entradas discretas. Para el ACS550, los bits individuales del código de estado se correlacionan con las Entradas 1 ... 16 o 1 ... 32, en función del perfil activo. Las entradas terminales se correlacionan secuencialmente empezando por la Entrada 33 (p. ej. ED1=Entrada 33)."
+          ],
+          [
+            "Leer varios registros de retención",
+            "0x03",
+            "Leer varios registros de retención. Para el ACS550, todo el conjunto de parámetros se correlaciona como registros de retención, así como los valores de comando, estado y referencia."
+          ],
+          [
+            "Leer varios registros de entrada",
+            "0x04",
+            "Leer varios registros de entrada. Para el ACS550, los 2 canales de entrada analógica se correlacionan como registros de entrada 1 y 2."
+          ],
+          [
+            "Forzar una única bobina",
+            "0x05",
+            "Escribir una única salida discreta. Para el ACS550, los bits individuales del código de control se correlacionan con las Bobinas 1 ... 16. Las salidas de relé se correlacionan secuencialmente con la Bobina 33 (p. ej. SR1=Bobina 33)."
+          ],
+          [
+            "Escribir un único registro de retención",
+            "0x06",
+            "Escribir un único registro de retención. Para el ACS550, todo el conjunto de parámetros se correlaciona como registros de retención, así como los valores de comando, estado y referencia."
+          ],
+          [
+            "Diagnósticos",
+            "0x08",
+            "Realizar diagnósticos Modbus. Se soportan subcódigos para Consulta (0x00), Reinicio (0x01) & Sólo escuchar (0x04)."
+          ],
+          [
+            "Forzar varias bobinas",
+            "0x0F",
+            "Escribir varias salidas discretas. Para el ACS550, los bits individuales del código de control se correlacionan con las Bobinas 1 ... 16. Las salidas de relé se correlacionan secuencialmente con la Bobina 33 (p. ej. SR1=Bobina 33)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Manual del usuario del ACS550-01/U1\n219\nFunción\nCód. (hex)\nDescripción\nEscribir varios\nregistros de\nretención\n0x10\nEscribir varios registros de retención. Para el ACS550, todo el\nconjunto de parámetros se correlaciona como registros de\nretención, así como los valores de comando, estado y referencia.\nEscribir/leer varios\nregistros de\nretención\n0x17\nEsta función combina las funciones 0x03 y 0x10 en un único\ncomando.\nResumen de correlaciones\nLa tabla siguiente resume la correlación entre el ACS550 (parámetros y E/S) y el\nespacio de referencia Modbus. Para obtener detalles, véase Direccionamiento\nModbus a continuación.\nACS550\nReferencia Modbus\nCódigos de función soportados\n•\nBits de control\n· Salidas de relé\nBobinas (0xxxx)\n· 01 - Leer estado de bobina\n· 05 - Forzar una única bobina\n· 15 - Forzar varias bobinas\n· Bits de estado\n· Entradas discretas\nEntradas discretas (1xxxx)\n· 02 - Leer el estado de entrada\n· Entradas analog\nRegistros de entrada\n(3xxxx)\n· 04 - Leer registros de entrada\n· Parámetros\n· Códigos de control/\nestado\n· Referencias\nRegistros de retención\n(4xxxx)\n· 03 - Leer registros 4X\n· 06 - Preajustar un solo registro 4X\n· 16 - Preajustar varios registros 4X\n· 23 - Leer/escribir registros 4X\nPerfiles de comunicación\nAl efectuar la comunicación a través de Modbus, el ACS550 soporta varios perfiles\npara información de control y estado. El parámetro 5305 PERFIL CTRL BCI selecciona el\nperfil empleado.\n· ABB DRV LIM - El perfil primario (y de fábrica) es el perfil ABB DRV LIM. Esta\nimplementación del Perfil ABB Drives estandariza la interfase de control con\nconvertidores ACS400. El perfil ABB Drives se basa en la interfase PROFIBUS.\nSe comenta en detalle en los apartados siguientes.\n· DCU PROFILE - El perfil DCU PROFILE amplía la interfase de control y estado a 32 bits. Se\ntrata de la interfase interna entre la aplicación del convertidor principal y el\nentorno del bus de campo encajado.\n· ABB DRV FULL - ABB DRV FULL es la implementación del perfil ABB Drives que estandariza\nla interfase de control con convertidores ACS600 y ACS800. Esta\nimplementación soporta dos bits de código de control no soportados por la\nimplementación ABB DRV LIM.\nDireccionamiento Modbus\nCon Modbus, cada código de función implica acceso a una serie de referencias\nModbus específica. Por ello, el primer dígito no se incluye en el campo de dirección\nde un mensaje Modbus.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Función",
+            "Cód. (hex)",
+            "Descripción"
+          ],
+          [
+            "Escribir varios registros de retención",
+            "0x10",
+            "Escribir varios registros de retención. Para el ACS550, todo el conjunto de parámetros se correlaciona como registros de retención, así como los valores de comando, estado y referencia."
+          ],
+          [
+            "Escribir/leer varios registros de retención",
+            "0x17",
+            "Esta función combina las funciones 0x03 y 0x10 en un único comando."
+          ]
+        ],
+        [
+          [
+            "ACS550",
+            "Referencia Modbus",
+            "Códigos de función soportados"
+          ],
+          [
+            "• Bits de control · Salidas de relé",
+            "Bobinas (0xxxx)",
+            "· 01 - Leer estado de bobina · 05 - Forzar una única bobina · 15 - Forzar varias bobinas"
+          ],
+          [
+            "· Bits de estado · Entradas discretas",
+            "Entradas discretas (1xxxx)",
+            "· 02 - Leer el estado de entrada"
+          ],
+          [
+            "· Entradas analog",
+            "Registros de entrada (3xxxx)",
+            "· 04 - Leer registros de entrada"
+          ],
+          [
+            "· Parámetros · Códigos de control/ estado · Referencias",
+            "Registros de retención (4xxxx)",
+            "· 03 - Leer registros 4X · 06 - Preajustar un solo registro 4X · 16 - Preajustar varios registros 4X · 23 - Leer/escribir registros 4X\n:selected: :selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "220\nManual del usuario del ACS550-01/U1\nNota: el ACS550 soporta el direccionamiento basado en cero de la especificación Modbus.\nEl registro de retención 40002 está direccionado como 0001 en un mensaje Modbus. De\nmanera similar, la bobina 33 se direcciona como 0032 en un mensaje Modbus.\nVéase una vez más el Resumen de correlaciones anterior. Los apartados siguientes\ndescriben en detalle la correlación con cada serie de referencias Modbus.\nCorrelación 0xxxx - Entradas Modbus. El convertidor correlaciona la información\nsiguiente con la serie Modbus 0xxxx llamada Entradas discretas Modbus:\n· correlación en bits del CÓDIGO CONTROL (seleccionado con el parámetro 5305 PERFIL\nCTRL BCI). Las primeras 32 bobinas se reservan para este cometido.\n· estados de salida de relé, numerados secuencialmente empezando por la bobina 00033.\nLa tabla siguiente resume la serie de referencias 0xxxx:\nRef.\nModbus\nUbicación interna\n(todos los perfiles)\nABB DRV LIM\n(5305 = 0)\nDCU PROFILE\n(5305 = 1)\nABB DRV FULL\n(5305 = 2)\n00001\nCODIGO CONTROL - Bit 0\nOFF11\nPARO\nOFF11\n00002\nCODIGO CONTROL - Bit 1\nOFF21\nFUNCIONAR\nOFF21\n00003\nCODIGO CONTROL - Bit 2\nOFF31\nREVERSE\nOFF31\n00004\nCODIGO CONTROL - Bit 3\nFUNCIONAR\nLOCAL\nFUNCIONAR\n00005\nCODIGO CONTROL - Bit 4\nN/D\nRESET\nRAMP_OUT_ZERO1\n00006\nCODIGO CONTROL - Bit 5\nRAMP_HOLD1\nEXT2\nRAMP_HOLD1\n00007\nCODIGO CONTROL - Bit 6\nRAMP_IN_ZERO1\nRUN_DISABLE\nRAMP_IN_ZERO1\n00008\nCODIGO CONTROL - Bit 7\nRESET\nSTPMODE_R\nRESET\n00009\nCODIGO CONTROL - Bit 8\nN/D\nSTPMODE_EM\nN/D\n00010\nCODIGO CONTROL - Bit 9\nN/D\nSTPMODE_C\nN/D\n00011\nCODIGO CONTROL - Bit 10\nN/D\nRAMP_2\nREMOTE_CMD1\n00012\nCODIGO CONTROL - Bit 11\nEXT2\nRAMP_OUT_0\nEXT2\n00013\nCODIGO CONTROL - Bit 12\nN/D\nRAMP_HOLD\nN/D\n00014\nCODIGO CONTROL - Bit 13\nN/D\nRAMP_IN_0\nN/D\n00015\nCODIGO CONTROL - Bit 14\nN/D\nREQ_LOCALLOCK\nN/D\n00016\nCODIGO CONTROL - Bit 15\nN/D\nTORQLIM2\nN/D\n00017\nCODIGO CONTROL - Bit 16\nNo procede.\nFBLOCAL_CTL\nNo procede.\n00018\nCODIGO CONTROL - Bit 17\nFBLOCAL_REF\n00019\nCODIGO CONTROL - Bit 18\nSTART_DISABLE1\n00020\nCODIGO CONTROL - Bit 19\nSTART_DISABLE2\n00021 ...\n00032\nReservado\nReservado\nReservado\nReservado\n00033\nSALIDA RELÉ 1\nsalida relé 1\nsalida relé 1\nsalida relé 1\n00034\nSALIDA RELÉ 2\nsalida relé 2\nsalida relé 2\nsalida relé 2\n00035\nSALIDA RELÉ 3\nsalida relé 3\nsalida relé 3\nsalida relé 3\n00036\nSALIDA RELE 4\nsalida rele 4\nsalida rele 4\nsalida rele 4\n00037\nSALIDA RELE 5\nsalida rele 5\nsalida rele 5\nsalida rele 5\n00038\nSALIDA RELÉ 6\nsalida relé 6\nsalida relé 6\nsalida relé 6\n1 = Baja activa\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Ref. Modbus",
+            "Ubicación interna (todos los perfiles)",
+            "ABB DRV LIM (5305 = 0)",
+            "DCU PROFILE (5305 = 1)",
+            "ABB DRV FULL (5305 = 2)"
+          ],
+          [
+            "00001",
+            "CODIGO CONTROL - Bit 0",
+            "OFF11",
+            "PARO",
+            "OFF11"
+          ],
+          [
+            "00002",
+            "CODIGO CONTROL - Bit 1",
+            "OFF21",
+            "FUNCIONAR",
+            "OFF21"
+          ],
+          [
+            "00003",
+            "CODIGO CONTROL - Bit 2",
+            "OFF31",
+            "REVERSE",
+            "OFF31"
+          ],
+          [
+            "00004",
+            "CODIGO CONTROL - Bit 3",
+            "FUNCIONAR",
+            "LOCAL",
+            "FUNCIONAR"
+          ],
+          [
+            "00005",
+            "CODIGO CONTROL - Bit 4",
+            "N/D",
+            "RESET",
+            "RAMP_OUT_ZERO1"
+          ],
+          [
+            "00006",
+            "CODIGO CONTROL - Bit 5",
+            "RAMP_HOLD1",
+            "EXT2",
+            "RAMP_HOLD1"
+          ],
+          [
+            "00007",
+            "CODIGO CONTROL - Bit 6",
+            "RAMP_IN_ZERO1",
+            "RUN_DISABLE",
+            "RAMP_IN_ZERO1"
+          ],
+          [
+            "00008",
+            "CODIGO CONTROL - Bit 7",
+            "RESET",
+            "STPMODE_R",
+            "RESET"
+          ],
+          [
+            "00009",
+            "CODIGO CONTROL - Bit 8",
+            "N/D",
+            "STPMODE_EM",
+            "N/D"
+          ],
+          [
+            "00010",
+            "CODIGO CONTROL - Bit 9",
+            "N/D",
+            "STPMODE_C",
+            "N/D"
+          ],
+          [
+            "00011",
+            "CODIGO CONTROL - Bit 10",
+            "N/D",
+            "RAMP_2",
+            "REMOTE_CMD1"
+          ],
+          [
+            "00012",
+            "CODIGO CONTROL - Bit 11",
+            "EXT2",
+            "RAMP_OUT_0",
+            "EXT2"
+          ],
+          [
+            "00013",
+            "CODIGO CONTROL - Bit 12",
+            "N/D",
+            "RAMP_HOLD",
+            "N/D"
+          ],
+          [
+            "00014",
+            "CODIGO CONTROL - Bit 13",
+            "N/D",
+            "RAMP_IN_0",
+            "N/D"
+          ],
+          [
+            "00015",
+            "CODIGO CONTROL - Bit 14",
+            "N/D",
+            "REQ_LOCALLOCK",
+            "N/D"
+          ],
+          [
+            "00016",
+            "CODIGO CONTROL - Bit 15",
+            "N/D",
+            "TORQLIM2",
+            "N/D"
+          ],
+          [
+            "00017",
+            "CODIGO CONTROL - Bit 16",
+            "No procede.",
+            "FBLOCAL_CTL",
+            "No procede."
+          ],
+          [
+            "00018",
+            "CODIGO CONTROL - Bit 17",
+            "FBLOCAL_REF"
+          ],
+          [
+            "00019",
+            "CODIGO CONTROL - Bit 18",
+            "START_DISABLE1"
+          ],
+          [
+            "00020",
+            "CODIGO CONTROL - Bit 19",
+            "START_DISABLE2"
+          ],
+          [
+            "00021 ... 00032",
+            "Reservado",
+            "Reservado",
+            "Reservado",
+            "Reservado"
+          ],
+          [
+            "00033",
+            "SALIDA RELÉ 1",
+            "salida relé 1",
+            "salida relé 1",
+            "salida relé 1"
+          ],
+          [
+            "00034",
+            "SALIDA RELÉ 2",
+            "salida relé 2",
+            "salida relé 2",
+            "salida relé 2"
+          ],
+          [
+            "00035",
+            "SALIDA RELÉ 3",
+            "salida relé 3",
+            "salida relé 3",
+            "salida relé 3"
+          ],
+          [
+            "00036",
+            "SALIDA RELE 4",
+            "salida rele 4",
+            "salida rele 4",
+            "salida rele 4"
+          ],
+          [
+            "00037",
+            "SALIDA RELE 5",
+            "salida rele 5",
+            "salida rele 5",
+            "salida rele 5"
+          ],
+          [
+            "00038",
+            "SALIDA RELÉ 6",
+            "salida relé 6",
+            "salida relé 6",
+            "salida relé 6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Manual del usuario del ACS550-01/U1\n221\nPara los registros 0xxxx:\n· El estado siempre es legible.\n· Es posible forzar a través de la configuración de usuario del convertidor para\ncontrol por bus de campo.\n· Las salidas de relé adicionales se añaden secuencialmente.\nEl ACS550 soporta los siguientes códigos de función Modbus para bobinas:\nCódigo de función\nDescripción\n01\nLeer estado de bobina\n05\nForzar una única bobina\n15 (0x0F Hex)\nForzar varias bobinas\nCorrelación 1xxxx - Entradas discretas Modbus. El convertidor correlaciona la\ninformación siguiente con la serie Modbus 1xxxx llamada Entradas discretas Modbus:\n· correlación en bits del CÓDIGO ESTADO (seleccionado con el parámetro 5305 PERFIL CTRL\nBCI). Las primeras 32 entradas se reservan para este cometido.\n· entradas de hardware discretas, numeradas secuencialmente empezando por la\nentrada 33.\nLa tabla siguiente resume la serie de referencias 1xxxx:\nRef.\nModbus\nUbicación interna\n(todos los perfiles)\nABB DRV\n(5305 = 0 OR 2)\n(5305 = 1)\nDCU PROFILE\n10001\nCODIGO ESTADO - Bit 0\nRDY_ON\nLISTO\n10002\nCODIGO ESTADO - Bit 1\nRDY_RUN\nHABILITADO\n10003\nCODIGO ESTADO - Bit 2\nRDY_REF\nSTARTED\n10004\nCODIGO ESTADO - Bit 3\nTRIPPED\nEN FUNC.\n10005\nCODIGO ESTADO - Bit 4\nOFF_2_STA1\nZERO_SPEED\n10006\nCODIGO ESTADO - Bit 5\nOFF_3_STA1\nACCELERATE\n10007\nCODIGO ESTADO - Bit 6\nSWC_ON_INHIB\nDECELERATE\n10008\nCODIGO ESTADO - Bit 7\nALARM\nAT_SETPOINT\n10009\nCODIGO ESTADO - Bit 8\nAT_SETPOINT\nLIMIT\n10010\nCODIGO ESTADO - Bit 9\nREMOTE\nSUPERVISION\n10011\nCODIGO ESTADO - Bit 10\nABOVE_LIMIT\nREV_REF\n10012\nCODIGO ESTADO - Bit 11\nEXT2\nREV_ACT\n10013\nCODIGO ESTADO - Bit 12\nRUN_ENABLE\nPANEL_LOCAL\n10014\nCODIGO ESTADO - Bit 13\nN/D\nFIELDBUS_LOCAL\n10015\nCODIGO ESTADO - Bit 14\nN/D\nEXT2_ACT\n10016\nCODIGO ESTADO - Bit 15\nN/D\nFALLO\n10017\nCODIGO ESTADO - Bit 16\nReservado\nALARM\n10018\nCODIGO ESTADO - Bit 17\nReservado\nREQ_MAINT\n10019\nCODIGO ESTADO - Bit 18\nReservado\nDIRLOCK\n10020\nCODIGO ESTADO - Bit 19\nReservado\nLOCALLOCK\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Código de función",
+            "Descripción"
+          ],
+          [
+            "01",
+            "Leer estado de bobina"
+          ],
+          [
+            "05",
+            "Forzar una única bobina"
+          ],
+          [
+            "15 (0x0F Hex)",
+            "Forzar varias bobinas"
+          ]
+        ],
+        [
+          [
+            "Ref. Modbus",
+            "Ubicación interna (todos los perfiles)",
+            "ABB DRV (5305 = 0 OR 2)",
+            "(5305 = 1) DCU PROFILE"
+          ],
+          [
+            "10001",
+            "CODIGO ESTADO - Bit 0",
+            "RDY_ON",
+            "LISTO"
+          ],
+          [
+            "10002",
+            "CODIGO ESTADO - Bit 1",
+            "RDY_RUN",
+            "HABILITADO"
+          ],
+          [
+            "10003",
+            "CODIGO ESTADO - Bit 2",
+            "RDY_REF",
+            "STARTED"
+          ],
+          [
+            "10004",
+            "CODIGO ESTADO - Bit 3",
+            "TRIPPED",
+            "EN FUNC."
+          ],
+          [
+            "10005",
+            "CODIGO ESTADO - Bit 4",
+            "OFF_2_STA1",
+            "ZERO_SPEED"
+          ],
+          [
+            "10006",
+            "CODIGO ESTADO - Bit 5",
+            "OFF_3_STA1",
+            "ACCELERATE"
+          ],
+          [
+            "10007",
+            "CODIGO ESTADO - Bit 6",
+            "SWC_ON_INHIB",
+            "DECELERATE"
+          ],
+          [
+            "10008",
+            "CODIGO ESTADO - Bit 7",
+            "ALARM",
+            "AT_SETPOINT"
+          ],
+          [
+            "10009",
+            "CODIGO ESTADO - Bit 8",
+            "AT_SETPOINT",
+            "LIMIT"
+          ],
+          [
+            "10010",
+            "CODIGO ESTADO - Bit 9",
+            "REMOTE",
+            "SUPERVISION"
+          ],
+          [
+            "10011",
+            "CODIGO ESTADO - Bit 10",
+            "ABOVE_LIMIT",
+            "REV_REF"
+          ],
+          [
+            "10012",
+            "CODIGO ESTADO - Bit 11",
+            "EXT2",
+            "REV_ACT"
+          ],
+          [
+            "10013",
+            "CODIGO ESTADO - Bit 12",
+            "RUN_ENABLE",
+            "PANEL_LOCAL"
+          ],
+          [
+            "10014",
+            "CODIGO ESTADO - Bit 13",
+            "N/D",
+            "FIELDBUS_LOCAL"
+          ],
+          [
+            "10015",
+            "CODIGO ESTADO - Bit 14",
+            "N/D",
+            "EXT2_ACT"
+          ],
+          [
+            "10016",
+            "CODIGO ESTADO - Bit 15",
+            "N/D",
+            "FALLO"
+          ],
+          [
+            "10017",
+            "CODIGO ESTADO - Bit 16",
+            "Reservado",
+            "ALARM"
+          ],
+          [
+            "10018",
+            "CODIGO ESTADO - Bit 17",
+            "Reservado",
+            "REQ_MAINT"
+          ],
+          [
+            "10019",
+            "CODIGO ESTADO - Bit 18",
+            "Reservado",
+            "DIRLOCK"
+          ],
+          [
+            "10020",
+            "CODIGO ESTADO - Bit 19",
+            "Reservado",
+            "LOCALLOCK"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "222\nManual del usuario del ACS550-01/U1\nRef.\nModbus\nUbicación interna\n(todos los perfiles)\nABB DRV\n(5305 = 0 OR 2)\n(5305 = 1)\nDCU PROFILE\n10021\nCODIGO ESTADO - Bit 20\nReservado\nCTL_MODE\n10022\nCODIGO ESTADO - Bit 21\nReservado\nReservado\n10023\nCODIGO ESTADO - Bit 22\nReservado\nReservado\n10024\nCODIGO ESTADO - Bit 23\nReservado\nReservado\n10025\nCODIGO ESTADO - Bit 24\nReservado\nReservado\n10026\nCODIGO ESTADO - Bit 25\nReservado\nReservado\n10027\nCODIGO ESTADO - Bit 26\nReservado\nREQ_CTL\n10028\nCODIGO ESTADO - Bit 27\nReservado\nREQ_REF1\n10029\nCODIGO ESTADO - Bit 28\nReservado\nREQ_REF2\n10030\nCODIGO ESTADO - Bit 29\nReservado\nREQ_REF2EXT\n10031\nCODIGO ESTADO - Bit 30\nReservado\nACK_STARTINH\n10032\nCODIGO ESTADO - Bit 31\nReservado\nACK_OFF_ILCK\n10033\nED1\nED1\nED1\n10034\nED2\nED2\nED2\n10035\nED3\nED3\nED3\n10036\nED4\nED4\nED4\n10037\nED5\nED5\nED5\n10038\nED6\nED6\nED6\n1 = Baja activa\nPara los registros 1xxxx:\n· Las entradas discretas adicionales se añaden secuencialmente.\nEl ACS550 soporta los siguientes códigos de función Modbus para entradas discretas:\nCódigo de\nfunción\nDescripción\n02\nLeer el estado de entrada\nCorrelación 3xxxx - Entradas Modbus. El convertidor correlaciona la información\nsiguiente con las direcciones Modbus 3xxxx llamadas registros de entrada Modbus:\n· cualquier entrada analógica definida por el usuario.\nLa tabla siguiente resume los registros de entrada:\nReferencia\nModbus\nACS550\ntodos los\nperfiles\nComentarios\n30001\nEA1\nEste registro comunicará el nivel de la Entrada analógica 1 (0 ... 100%).\n30002\nEA2\nEste registro comunicará el nivel de la Entrada analógica 2 (0 ... 100%).\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Ref. Modbus",
+            "Ubicación interna (todos los perfiles)",
+            "ABB DRV (5305 = 0 OR 2)",
+            "(5305 = 1) DCU PROFILE"
+          ],
+          [
+            "10021",
+            "CODIGO ESTADO - Bit 20",
+            "Reservado",
+            "CTL_MODE"
+          ],
+          [
+            "10022",
+            "CODIGO ESTADO - Bit 21",
+            "Reservado",
+            "Reservado"
+          ],
+          [
+            "10023",
+            "CODIGO ESTADO - Bit 22",
+            "Reservado",
+            "Reservado"
+          ],
+          [
+            "10024",
+            "CODIGO ESTADO - Bit 23",
+            "Reservado",
+            "Reservado"
+          ],
+          [
+            "10025",
+            "CODIGO ESTADO - Bit 24",
+            "Reservado",
+            "Reservado"
+          ],
+          [
+            "10026",
+            "CODIGO ESTADO - Bit 25",
+            "Reservado",
+            "Reservado"
+          ],
+          [
+            "10027",
+            "CODIGO ESTADO - Bit 26",
+            "Reservado",
+            "REQ_CTL"
+          ],
+          [
+            "10028",
+            "CODIGO ESTADO - Bit 27",
+            "Reservado",
+            "REQ_REF1"
+          ],
+          [
+            "10029",
+            "CODIGO ESTADO - Bit 28",
+            "Reservado",
+            "REQ_REF2"
+          ],
+          [
+            "10030",
+            "CODIGO ESTADO - Bit 29",
+            "Reservado",
+            "REQ_REF2EXT"
+          ],
+          [
+            "10031",
+            "CODIGO ESTADO - Bit 30",
+            "Reservado",
+            "ACK_STARTINH"
+          ],
+          [
+            "10032",
+            "CODIGO ESTADO - Bit 31",
+            "Reservado",
+            "ACK_OFF_ILCK"
+          ],
+          [
+            "10033",
+            "ED1",
+            "ED1",
+            "ED1"
+          ],
+          [
+            "10034",
+            "ED2",
+            "ED2",
+            "ED2"
+          ],
+          [
+            "10035",
+            "ED3",
+            "ED3",
+            "ED3"
+          ],
+          [
+            "10036",
+            "ED4",
+            "ED4",
+            "ED4"
+          ],
+          [
+            "10037",
+            "ED5",
+            "ED5",
+            "ED5"
+          ],
+          [
+            "10038",
+            "ED6",
+            "ED6",
+            "ED6"
+          ]
+        ],
+        [
+          [
+            "Código de función",
+            "Descripción"
+          ],
+          [
+            "02",
+            "Leer el estado de entrada"
+          ]
+        ],
+        [
+          [
+            "Referencia Modbus",
+            "ACS550 todos los perfiles",
+            "Comentarios"
+          ],
+          [
+            "30001",
+            "EA1",
+            "Este registro comunicará el nivel de la Entrada analógica 1 (0 ... 100%)."
+          ],
+          [
+            "30002",
+            "EA2",
+            "Este registro comunicará el nivel de la Entrada analógica 2 (0 ... 100%)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Manual del usuario del ACS550-01/U1\n223\nEl ACS550 soporta los siguientes códigos de función Modbus para registros 3xxxx:\nCódigo de\nfunción\nDescripción\n04\nLeer el estado de entrada\n3xxxx\nCorrelación del registro 4xxxx. El convertidor correlaciona sus parámetros y otros\ndatos con los registros de retención 4xxxx del modo siguiente:\n. 40001 ... 40099 se correlacionan con el control del convertidor y los valores\nactuales. Estos registros se describen en la tabla siguiente.\n· 40101 ... 49999 se correlacionan con los parámetros del convertidor 0101 ... 9999. Las\ndirecciones de registro que no corresponden a parámetros del convertidor no son\nválidas. Si se intenta efectuar la lectura o la escritura fuera de las direcciones de los\nparámetros, la interfase Modbus remite un código de excepción al controlador.\nLa tabla siguiente resume los registros de control del convertidor 4xxxx\n40001 ... 40099 (para registros 4xxxx por encima de 40099, véase la lista de\nparámetros del convertidor, p. ej. 40102 es el parámetro 0102):\nRegistro Modbus\nAcceso\nComentarios\n40001\nCÓDIGO DE CONTROL\nL/E\nSe correlaciona directamente con el código de controlDEL\nPERFIL. Soportado solamente si 5305 = 0 o 2 (perfil ABB Drives).\nEl parámetro 5319 conserva una copia en formato hexadecimal.\nSi 5305 = 1 (perfil DCU seleccionado), el registro permanece\nvacío.\n40002\nReferencia 1\nL/E\nRango = 0 ... +20000 (escalado a 0 ... 1105 REF1 MAXIMO), O\n-20000 ... 0 (escalado a 1105 REF1 MAXIMO ... 0).\n40003\nReferencia 2\nL/E\nRango = 0 ... +10000 (escalado a 0 ... 1108 REF2 MAXIMO), O\n-10000 ... 0 (escalado a 1108 REF2 MAXIMO ... 0).\n40004\nCÓDIGO DE ESTADO\nR\nSe correlaciona directamente con el código de estadoDEL\nPERFIL. Soportado solamente si 5305 = 0 o 2 (perfil ABB Drives).\nEl parámetro 5320 conserva una copia en formato hexadecimal.\nSi 5305 = 1 (perfil DCU seleccionado), el registro permanece\nvacío.\n40005\nActual 1\n(selección mediante\n5310)\nR\nPor defecto, guarda una copia de 0103 FREC SALIDA. Utilice el\nparámetro 5310 para seleccionar un valor actual distinto\npara este registro.\n40006\nActual 2\n(selección mediante\n5311)\nR\nPor defecto, guarda una copia de 0104 INTENSIDAD. Utilice el\nparámetro 5311 para seleccionar un valor actual distinto\npara este registro.\n40007\nActual 3\n(selección mediante\n5312)\nR\nPor defecto, no guarda nada. Utilice el parámetro 5312 para\nseleccionar un valor actual para este registro.\n40008\nActual 4\n(selección mediante\n5313)\nR\nPor defecto, no guarda nada. Utilice el parámetro 5313 para\nseleccionar un valor actual para este registro.\n40009\nActual 5\n(selección mediante\n5314)\nR\nPor defecto, no guarda nada. Utilice el parámetro 5314 para\nseleccionar un valor actual para este registro.\n40010\nActual 6\n(selección mediante\n5315)\nR\nPor defecto, no guarda nada. Utilice el parámetro 5315 para\nseleccionar un valor actual para este registro.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Código de función",
+            "Descripción"
+          ],
+          [
+            "04",
+            "Leer el estado de entrada 3xxxx"
+          ]
+        ],
+        [
+          [
+            "Registro Modbus",
+            "Acceso",
+            "Comentarios"
+          ],
+          [
+            "40001",
+            "CÓDIGO DE CONTROL",
+            "L/E",
+            "Se correlaciona directamente con el código de controlDEL PERFIL. Soportado solamente si 5305 = 0 o 2 (perfil ABB Drives). El parámetro 5319 conserva una copia en formato hexadecimal. Si 5305 = 1 (perfil DCU seleccionado), el registro permanece vacío."
+          ],
+          [
+            "40002",
+            "Referencia 1",
+            "L/E",
+            "Rango = 0 ... +20000 (escalado a 0 ... 1105 REF1 MAXIMO), O -20000 ... 0 (escalado a 1105 REF1 MAXIMO ... 0)."
+          ],
+          [
+            "40003",
+            "Referencia 2",
+            "L/E",
+            "Rango = 0 ... +10000 (escalado a 0 ... 1108 REF2 MAXIMO), O -10000 ... 0 (escalado a 1108 REF2 MAXIMO ... 0)."
+          ],
+          [
+            "40004",
+            "CÓDIGO DE ESTADO",
+            "R",
+            "Se correlaciona directamente con el código de estadoDEL PERFIL. Soportado solamente si 5305 = 0 o 2 (perfil ABB Drives). El parámetro 5320 conserva una copia en formato hexadecimal. Si 5305 = 1 (perfil DCU seleccionado), el registro permanece vacío."
+          ],
+          [
+            "40005",
+            "Actual 1 (selección mediante 5310)",
+            "R",
+            "Por defecto, guarda una copia de 0103 FREC SALIDA. Utilice el parámetro 5310 para seleccionar un valor actual distinto para este registro."
+          ],
+          [
+            "40006",
+            "Actual 2 (selección mediante 5311)",
+            "R",
+            "Por defecto, guarda una copia de 0104 INTENSIDAD. Utilice el parámetro 5311 para seleccionar un valor actual distinto para este registro."
+          ],
+          [
+            "40007",
+            "Actual 3 (selección mediante 5312)",
+            "R",
+            "Por defecto, no guarda nada. Utilice el parámetro 5312 para seleccionar un valor actual para este registro."
+          ],
+          [
+            "40008",
+            "Actual 4 (selección mediante 5313)",
+            "R",
+            "Por defecto, no guarda nada. Utilice el parámetro 5313 para seleccionar un valor actual para este registro."
+          ],
+          [
+            "40009",
+            "Actual 5 (selección mediante 5314)",
+            "R",
+            "Por defecto, no guarda nada. Utilice el parámetro 5314 para seleccionar un valor actual para este registro."
+          ],
+          [
+            "40010",
+            "Actual 6 (selección mediante 5315)",
+            "R",
+            "Por defecto, no guarda nada. Utilice el parámetro 5315 para seleccionar un valor actual para este registro."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "224\nManual del usuario del ACS550-01/U1\nRegistro Modbus\nAcceso\nComentarios\n40011\nActual 7\n(selección mediante\n5316)\nR\nPor defecto, no guarda nada. Utilice el parámetro 5316 para\nseleccionar un valor actual para este registro.\n40012\nActual 8\n(selección mediante\n5317)\nR\nPor defecto, no guarda nada. Utilice el parámetro 5317 para\nseleccionar un valor actual para este registro.\n40031\nLSW DEL CÓDIGO DE\nCONTROL ACS550\nL/E\nSe correlaciona directamente con el Código Menos\nSignificativo (LSW) del CÓDIGO DE CONTROL DEL PERFIL DCU.\nSoportado tan sólo si 5305 = 1.\nVéase el parámetro 0301.\n40032\nMSW DEL CÓDIGO DE\nCONTROL ACS550\nR\nSe correlaciona directamente con el Código Más\nSignificativo (MSW) del código de CONTROL DEL PERFIL DCU ..\nSoportado tan sólo si 5305 = 1.\nVéase el parámetro 0302.\n40033\nLSW DEL CÓDIGO DE\nESTADO ACS550\nR\nSe correlaciona directamente con el Código Menos\nSignificativo (LSW) del CÓDIGO DE ESTADO DEL PERFIL DCU.\nSoportado tan sólo si 5305 = 1.\nVéase el parámetro 0303.\n40034\nMSW DEL CÓDIGO DE\nESTADO ACS550\nR\nSe correlaciona directamente con el Código Más\nSignificativo (MSW) del CÓDIGO DE ESTADO DEL PERFIL DCU.\nSoportado tan sólo si 5305 = 1.\nVéase el parámetro 0304.\n40045\nREFERENCE 1\nLSW\nL/E\nEl código menos significativo de la referencia 1. Admitido\nsolamente por el perfil DCU, es decir, cuando 5305 PERFIL\nCTRL BCI está ajustado a DCU PROFILE.\n40046\nREFERENCE 1\nMSW\nL/E\nEl código más significativo de la referencia 1. Admitido\nsolamente por el perfil DCU, es decir, cuando 5305 PERFIL\nCTRL BCI está ajustado a DCU PROFILE.\n40047\nREFERENCE 2\nLSW\nL/E\nEl código menos significativo de la referencia 2. Admitido\nsolamente por el perfil DCU, es decir, cuando 5305 PERFIL\nCTRL BCI está ajustado a DCU PROFILE.\n40048\nREFERENCE 2\nMSW\nL/E\nEl código más significativo de la referencia 2. Admitido\nsolamente por el perfil DCU, es decir, cuando 5305 PERFIL\nCTRL BCI está ajustado a DCU PROFILE.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Registro Modbus",
+            "Acceso",
+            "Comentarios"
+          ],
+          [
+            "40011",
+            "Actual 7 (selección mediante 5316)",
+            "R",
+            "Por defecto, no guarda nada. Utilice el parámetro 5316 para seleccionar un valor actual para este registro."
+          ],
+          [
+            "40012",
+            "Actual 8 (selección mediante 5317)",
+            "R",
+            "Por defecto, no guarda nada. Utilice el parámetro 5317 para seleccionar un valor actual para este registro."
+          ],
+          [
+            "40031",
+            "LSW DEL CÓDIGO DE CONTROL ACS550",
+            "L/E",
+            "Se correlaciona directamente con el Código Menos Significativo (LSW) del CÓDIGO DE CONTROL DEL PERFIL DCU. Soportado tan sólo si 5305 = 1. Véase el parámetro 0301."
+          ],
+          [
+            "40032",
+            "MSW DEL CÓDIGO DE CONTROL ACS550",
+            "R",
+            "Se correlaciona directamente con el Código Más Significativo (MSW) del código de CONTROL DEL PERFIL DCU .. Soportado tan sólo si 5305 = 1. Véase el parámetro 0302."
+          ],
+          [
+            "40033",
+            "LSW DEL CÓDIGO DE ESTADO ACS550",
+            "R",
+            "Se correlaciona directamente con el Código Menos Significativo (LSW) del CÓDIGO DE ESTADO DEL PERFIL DCU. Soportado tan sólo si 5305 = 1. Véase el parámetro 0303."
+          ],
+          [
+            "40034",
+            "MSW DEL CÓDIGO DE ESTADO ACS550",
+            "R",
+            "Se correlaciona directamente con el Código Más Significativo (MSW) del CÓDIGO DE ESTADO DEL PERFIL DCU. Soportado tan sólo si 5305 = 1. Véase el parámetro 0304."
+          ],
+          [
+            "40045",
+            "REFERENCE 1 LSW",
+            "L/E",
+            "El código menos significativo de la referencia 1. Admitido solamente por el perfil DCU, es decir, cuando 5305 PERFIL CTRL BCI está ajustado a DCU PROFILE."
+          ],
+          [
+            "40046",
+            "REFERENCE 1 MSW",
+            "L/E",
+            "El código más significativo de la referencia 1. Admitido solamente por el perfil DCU, es decir, cuando 5305 PERFIL CTRL BCI está ajustado a DCU PROFILE."
+          ],
+          [
+            "40047",
+            "REFERENCE 2 LSW",
+            "L/E",
+            "El código menos significativo de la referencia 2. Admitido solamente por el perfil DCU, es decir, cuando 5305 PERFIL CTRL BCI está ajustado a DCU PROFILE."
+          ],
+          [
+            "40048",
+            "REFERENCE 2 MSW",
+            "L/E",
+            "El código más significativo de la referencia 2. Admitido solamente por el perfil DCU, es decir, cuando 5305 PERFIL CTRL BCI está ajustado a DCU PROFILE."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Manual del usuario del ACS550-01/U1\n225\nPara el protocolo Modbus, los parámetros de convertidor en el Grupo 53:\nPROTOCOLO BCI comunican la correlación de parámetros a Registros 4xxxx.\nCódigo\nDescripción\n5310\nPAR BCI 10\nEspecifica el parámetro correlacionado con el registro Modbus 40005.\n5311\nPAR BCI 11\nEspecifica el parámetro correlacionado con el registro Modbus 40006.\n5312\nPAR BCI 12\nEspecifica el parámetro correlacionado con el registro Modbus 40007.\n5313\nPAR BCI 13\nEspecifica el parámetro correlacionado con el registro Modbus 40008.\n5314\nPAR BCI 14\nEspecifica el parámetro correlacionado con el registro Modbus 40009.\n5315\nPAR BCI 15\nEspecifica el parámetro correlacionado con el registro Modbus 40010.\n5316\nPAR BCI 16\nEspecifica el parámetro correlacionado con el registro Modbus 40011.\n5317\nPAR BCI 17\nEspecifica el parámetro correlacionado con el registro Modbus 40012.\n5318\nPAR BCI 18\nAjusta una demora adicional en milisegundos antes de que el ACS550\nempiece a transmitir la respuesta a la petición del maestro.\n5319\nPAR BCI 19\nConserva una copia (en hexadecimal) del CÓDIGO CONTROL, registro\nModbus 40001.\n5320\nPAR BCI 20\nConserva una copia (en hexadecimal) del CÓDIGO ESTADO, registro\nModbus 40004.\nExcepto en los casos restringidos por el propio convertidor, todos los parámetros están\ndisponibles tanto para lectura como para escritura. Las escrituras de parámetro se\nverifican en cuanto a su valor correcto, y en cuanto a direcciones de registro válidas.\nNota: las escrituras de parámetros a través de Modbus estándar siempre son\nvolátiles, es decir, que los valores modificados no se guardan automáticamente en\nla memoria permanente. Utilice el parámetro 1607 SALVAR PARAM para guardar todos los\nvalores alterados.\nEl ACS550 soporta los siguientes códigos de función Modbus para registros 4xxxx:\nCódigo de\nfunción\nDescripción\n03\nLeer registros de retención 4xxxx\n06\nPreajustar un solo registro 4xxxx\n16 (0x10 Hex)\nPreajustar varios registros 4xxxx\n23 (0x17 Hex)\nLeer/escribir registros 4xxxx\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "5310",
+            "PAR BCI 10 Especifica el parámetro correlacionado con el registro Modbus 40005."
+          ],
+          [
+            "5311",
+            "PAR BCI 11 Especifica el parámetro correlacionado con el registro Modbus 40006."
+          ],
+          [
+            "5312",
+            "PAR BCI 12 Especifica el parámetro correlacionado con el registro Modbus 40007."
+          ],
+          [
+            "5313",
+            "PAR BCI 13 Especifica el parámetro correlacionado con el registro Modbus 40008."
+          ],
+          [
+            "5314",
+            "PAR BCI 14 Especifica el parámetro correlacionado con el registro Modbus 40009."
+          ],
+          [
+            "5315",
+            "PAR BCI 15 Especifica el parámetro correlacionado con el registro Modbus 40010."
+          ],
+          [
+            "5316",
+            "PAR BCI 16 Especifica el parámetro correlacionado con el registro Modbus 40011."
+          ],
+          [
+            "5317",
+            "PAR BCI 17 Especifica el parámetro correlacionado con el registro Modbus 40012."
+          ],
+          [
+            "5318",
+            "PAR BCI 18 Ajusta una demora adicional en milisegundos antes de que el ACS550 empiece a transmitir la respuesta a la petición del maestro."
+          ],
+          [
+            "5319",
+            "PAR BCI 19 Conserva una copia (en hexadecimal) del CÓDIGO CONTROL, registro Modbus 40001."
+          ],
+          [
+            "5320",
+            "PAR BCI 20 Conserva una copia (en hexadecimal) del CÓDIGO ESTADO, registro Modbus 40004."
+          ]
+        ],
+        [
+          [
+            "Código de función",
+            "Descripción"
+          ],
+          [
+            "03",
+            "Leer registros de retención 4xxxx"
+          ],
+          [
+            "06",
+            "Preajustar un solo registro 4xxxx"
+          ],
+          [
+            "16 (0x10 Hex)",
+            "Preajustar varios registros 4xxxx"
+          ],
+          [
+            "23 (0x17 Hex)",
+            "Leer/escribir registros 4xxxx"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "226\nManual del usuario del ACS550-01/U1\nValores actuales\nLos contenidos de las direcciones de registro 40005 ... 40012 son VALORES ACTUALES y\nson:\n· especificados mediante los parámetros 5310 ... 5317\n· valores de sólo lectura que contienen información acerca del funcionamiento del\nconvertidor\n· códigos de 16 bits que contienen un bit de signo y un entero de 15 bits\n· cuando son valores negativos, se escriben como el complemento del dos del\nvalor positivo correspondiente\n· escalados como se ha descrito anteriormente en el apartado Adaptación a escala\ndel valor actual de la página 214.\nCódigos de excepción\nLos códigos de excepción son respuestas de comunicación serie del convertidor. El\nACS550 soporta los códigos de excepción de Modbus estándar definidos a\ncontinuación.\nCódigo de\nexcepción\nNombre\nSignificado\n01\nILLEGAL FUNCTION\nComando no soportado\n02\nILLEGAL DATA ADDRESS\nLa dirección de datos recibida en la consulta no es permisible.\nNo se trata de un grupo/parámetro definido.\n03\nILLEGAL DATA VALUE\nUn valor del campo de datos de consulta no es un valor permisible\npara el ACS550, puesto que se da uno de los casos siguientes:\n· Se encuentra fuera de los límites mín. o máx.\n· El parámetro es de sólo lectura.\n· El mensaje es demasiado largo.\n· No se permite la escritura en el parámetro cuando la marcha\nestá activa.\n· No se permite la escritura en el parámetro cuando se ha\nseleccionado la macro fábrica.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Código de excepción",
+            "Nombre",
+            "Significado"
+          ],
+          [
+            "01",
+            "ILLEGAL FUNCTION",
+            "Comando no soportado"
+          ],
+          [
+            "02",
+            "ILLEGAL DATA ADDRESS",
+            "La dirección de datos recibida en la consulta no es permisible. No se trata de un grupo/parámetro definido."
+          ],
+          [
+            "03",
+            "ILLEGAL DATA VALUE",
+            "Un valor del campo de datos de consulta no es un valor permisible para el ACS550, puesto que se da uno de los casos siguientes: · Se encuentra fuera de los límites mín. o máx."
+          ],
+          [
+            "· El parámetro es de sólo lectura."
+          ],
+          [
+            "· El mensaje es demasiado largo."
+          ],
+          [
+            "· No se permite la escritura en el parámetro cuando la marcha está activa."
+          ],
+          [
+            "· No se permite la escritura en el parámetro cuando se ha seleccionado la macro fábrica."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Manual del usuario del ACS550-01/U1\n227\nDatos técnicos de los perfiles de control ABB\nSinopsis\nPerfil ABB Drives\nEl perfil ABB Drives proporciona un perfil estándar que puede utilizarse en varios\nprotocolos, incluyendo Modbus y los protocolos disponibles en el módulo ABC.\nEstán disponibles dos implementaciones del perfil ABB Drives:\n· ABB DRV FULL - Esta implementación estandariza la interfase de control con\nconvertidores ACS600 y ACS800.\n· ABB DRV LIM - Esta implementación estandariza la interfase de control con\nconvertidores ACS400. Esta implementación no soporta dos bits de código de\ncontrol soportados por ABB DRV FULL.\nExceptuando los casos indicados, las siguientes descripciones del \"Perfil ABB\nDrives\" se aplican a ambas implementaciones.\nPerfil DCU\nEl perfil DCU amplía la interfase de control y estado a 32 bits. Se trata de la interfase\ninterna entre la aplicación del convertidor principal y el entorno del bus de campo\nencajado.\nCódigo de control\nEl CÓDIGO CONTROL es el medio principal de controlar el convertidor desde un sistema de bus\nde campo. La estación maestra de bus de campo envía el CÓDIGO CONTROL al convertidor. El\nconvertidor cambia entre estados de conformidad con las instrucciones codificadas en\nbits del CÓDIGO CONTROL. El uso del CÓDIGO CONTROL requiere que:\n· El convertidor se encuentre en control remoto (REM).\n· El canal de comunicación serie se defina como la fuente para controlar\ncomandos (ajustados con parámetros como 1001 COMANDOS EXT1, 1002 COMANDOS EXT2\ny 1102 SELEC EXT1/EXT2).\n· El canal de comunicación serie empleado se configura para utilizar un perfil de\ncontrol ABB. Por ejemplo, para utilizar el perfil de control ABB DRV FULL, se requiere el\nparámetro 9802 SEL PROT COM = 1 (MODBUS EST), y el parámetro 5305 PERFIL CTRL BCI = 2\n(ABB DRV FULL).\nBus de campo encajado",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "228\nManual del usuario del ACS550-01/U1\nPerfil ABB Drives\nLa tabla siguiente y el diagrama de estado que figura más adelante en este\nsubapartado describen el contenido del CÓDIGO CONTROL para el perfil ABB Drives.\nCÓDIGO CONTROL del perfil ABB Drives (véase el parámetro 5319)\nBit\nNombre\nValor\nEstado ordenado\nComentarios\n0\nOFF1\nCONTROL\n1\nREADY TO OPERATE\nIntroducir READY TO OPERATE\n0\nEMERGENCY OFF\nEl convertidor para en rampa de conformidad\ncon la rampa de deceleración actualmente\nactiva (2203 o 2205).\nSecuencia normal de comandos:\n· Introducir OFF1 ACTIVE\n· Seguir con READY TO SWITCH ON, a menos\nque haya otros enclavamientos (OFF2, OFF3)\nactivos.\n1\nOFF2\nCONTROL\n1\nOPERATING\nContinuar con el funcionamiento (OFF2 inactivo)\n0\nEMERGENCY OFF\nEl convertidor para por sí solo.\nSecuencia normal de comandos:\n· Introducir OFF2 ACTIVE\n· Seguir con SWITCHON INHIBITED\n2\nOFF3\nCONTROL\n1\nOPERATING\nContinuar con el funcionamiento (OFF3 inactivo)\n0\nSTOP EMERGENCIA\nEl convertidor se para dentro del tiempo\nespecificado por el parámetro 2208.\nSecuencia normal de comandos:\n· Introducir OFF3 ACTIVE\n· Seguir con SWITCH ON INHIBITED\nADVERTENCIA: Verifique que el\nmotor y el equipo accionado puedan\npararse con este modo de paro.\n3\nINHIBIT\nOPERATION\n1\nFUNCIONAMIENTO\nHABILITADO\nIntroducir OPERATION ENABLED (Observe que la\nseñal de permiso de marcha debe estar activa.\nVéase el parámetro 1601. Si el parámetro 1601\nse ajusta en COMUNIC, este bit también activa la\nseñal de permiso de marcha.)\n0\nFUNCIONAMIENTO\nINHIBIDO\nInhibir el funcionamiento. Introducir OPERATION\nINHIBITED\n4\nSin usar (ABB DRV LIM)\nRAMP_OUT\nZERO\n(ABB DRV FULL)\n1\n1\nNORMAL OPERATION\nIntroducir RAMP FUNCTION GENERATOR:\nACCELERATION ENABLED\n0\nRFG OUT ZERO\nForzar a cero la salida del generador de\nfunción de rampa. El convertidor para en\nrampa (con los límites de intensidad y tensión\nde CC aplicados).\n5\nRAMP_HOLD\n1\nRFG OUT ENABLED\nHabilitar la función de rampa.\nIntroducir RAMP FUNCTION GENERATOR:\nACCELERATOR ENABLED\n0\nRFG OUT HOLD\nDetener la rampa (retención de la salida del\ngenerador de función de rampa)\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "CÓDIGO CONTROL del perfil ABB Drives (véase el parámetro 5319)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Estado ordenado",
+            "Comentarios"
+          ],
+          [
+            "0",
+            "OFF1 CONTROL",
+            "1",
+            "READY TO OPERATE",
+            "Introducir READY TO OPERATE"
+          ],
+          [
+            "0",
+            "EMERGENCY OFF",
+            "El convertidor para en rampa de conformidad con la rampa de deceleración actualmente activa (2203 o 2205). Secuencia normal de comandos: · Introducir OFF1 ACTIVE"
+          ],
+          [
+            "· Seguir con READY TO SWITCH ON, a menos que haya otros enclavamientos (OFF2, OFF3) activos."
+          ],
+          [
+            "1",
+            "OFF2 CONTROL",
+            "1",
+            "OPERATING",
+            "Continuar con el funcionamiento (OFF2 inactivo)"
+          ],
+          [
+            "0",
+            "EMERGENCY OFF",
+            "El convertidor para por sí solo. Secuencia normal de comandos: · Introducir OFF2 ACTIVE · Seguir con SWITCHON INHIBITED"
+          ],
+          [
+            "2",
+            "OFF3 CONTROL",
+            "1",
+            "OPERATING",
+            "Continuar con el funcionamiento (OFF3 inactivo)"
+          ],
+          [
+            "0",
+            "STOP EMERGENCIA",
+            "El convertidor se para dentro del tiempo especificado por el parámetro 2208. Secuencia normal de comandos: · Introducir OFF3 ACTIVE · Seguir con SWITCH ON INHIBITED ADVERTENCIA: Verifique que el motor y el equipo accionado puedan pararse con este modo de paro."
+          ],
+          [
+            "3",
+            "INHIBIT OPERATION",
+            "1",
+            "FUNCIONAMIENTO HABILITADO",
+            "Introducir OPERATION ENABLED (Observe que la señal de permiso de marcha debe estar activa. Véase el parámetro 1601. Si el parámetro 1601 se ajusta en COMUNIC, este bit también activa la señal de permiso de marcha.)"
+          ],
+          [
+            "0",
+            "FUNCIONAMIENTO INHIBIDO",
+            "Inhibir el funcionamiento. Introducir OPERATION INHIBITED"
+          ],
+          [
+            "4",
+            "Sin usar (ABB DRV LIM)",
+            "",
+            ""
+          ],
+          [
+            "RAMP_OUT ZERO (ABB DRV FULL)",
+            "1 1",
+            "NORMAL OPERATION",
+            "Introducir RAMP FUNCTION GENERATOR: ACCELERATION ENABLED"
+          ],
+          [
+            "0",
+            "RFG OUT ZERO",
+            "Forzar a cero la salida del generador de función de rampa. El convertidor para en rampa (con los límites de intensidad y tensión de CC aplicados)."
+          ],
+          [
+            "5",
+            "RAMP_HOLD",
+            "1",
+            "RFG OUT ENABLED",
+            "Habilitar la función de rampa. Introducir RAMP FUNCTION GENERATOR: ACCELERATOR ENABLED"
+          ],
+          [
+            "0",
+            "RFG OUT HOLD",
+            "Detener la rampa (retención de la salida del generador de función de rampa)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Manual del usuario del ACS550-01/U1\n229\nCÓDIGO CONTROL del perfil ABB Drives (véase el parámetro 5319)\nBit\nNombre\nValor\nEstado ordenado\nComentarios\n6\nRAMP_IN\nZERO\n1\nRFG INPUT ENABLED\nFuncionamiento normal. Introducir OPERATING\n0\nRFG INPUT ZERO\nForzar a cero la entrada del generador de\nfunción de rampa.\n7\nRESET\n0=>1\nRESET\nRestauración de fallos si existe un fallo activo.\n(Introducir SWITCH-ON INHIBITED). Efectivo si\n1604 = COMUNIC\n0\nOPERATING\nContinuar con el funcionamiento normal\n8 ... 9\nSin usar\n10\nSin usar (ABB DRV LIM)\nREMOTE_CMD\n(ABB DRV FULL)\n1\nControl por bus de campo habilitado.\n0\n· CW # 0 o Ref # 0: Conservar último CW y Ref.\n· CW = 0 y Ref = 0: Control por bus de\ncampo habilitado.\n· La referencia y la rampa de aceleración/\ndeceleración se bloquean.\n11\nEXT CTRL LOC\n1\nEXT2 SELECT\nSeleccionar el lugar de control externo 2\n(EXT2). Efectivo si 1102 = COMUNIC\n0\nEXT1 SELECT\nSeleccionar el lugar de control externo 1\n(EXT1). Efectivo si 1102 = COMUNIC\n12 ...\n15\nSin usar\nPerfil DCU\nLas tablas siguientes describen el contenido del CODIGO CONTROL para el perfil DCU.\nCÓDIGO CONTROL del perfil DCU (véase el parámetro 0301)\nBit\nNombre\nValor\nComando/Pet.\nComentarios\n0\nPARO\n1\nParo\nPara de conformidad con el parámetro de\nmodo de paro o las peticiones de modo de\nparo (bits 7 y 8).\nLos comandos MARCHA y PARO simultáneos\ndan lugar a un comando de paro.\n0\n(sin func.)\n1\nFUNCIONAR\n1\nMarcha\n0\n(sin func.)\n2\nREVERSE\n1\nDirección inversa\nEste bit con XOR con el signo de la\nreferencia define la dirección.\n0\nDirección de\navance\n3\nLOCAL\n1\nModo local\nCuando el bus de campo ajusta este bit, se\napropia del control y el convertidor pasa a\nmodo de control local por bus de campo.\n0\nModo externo\n4\nRESET\n-> 1\nReset\nSensible al extremo.\notro\n(sin func.)\n5\nEXT2\n1\nCambiar a EXT2\n0\nCambiar a EXT1\n6\nRUN_DISABLE\n1\nInhabilitación de\nmarcha\nPermiso de marcha inverso.\n0\nPermiso de\nmarcha activado\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "CÓDIGO CONTROL del perfil ABB Drives (véase el parámetro 5319)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Estado ordenado",
+            "Comentarios"
+          ],
+          [
+            "6",
+            "RAMP_IN ZERO",
+            "1",
+            "RFG INPUT ENABLED",
+            "Funcionamiento normal. Introducir OPERATING"
+          ],
+          [
+            "0",
+            "RFG INPUT ZERO",
+            "Forzar a cero la entrada del generador de función de rampa."
+          ],
+          [
+            "7",
+            "RESET",
+            "0=>1",
+            "RESET",
+            "Restauración de fallos si existe un fallo activo. (Introducir SWITCH-ON INHIBITED). Efectivo si 1604 = COMUNIC"
+          ],
+          [
+            "0",
+            "OPERATING",
+            "Continuar con el funcionamiento normal"
+          ],
+          [
+            "8 ... 9",
+            "Sin usar",
+            "",
+            ""
+          ],
+          [
+            "10",
+            "Sin usar (ABB DRV LIM)",
+            "",
+            ""
+          ],
+          [
+            "REMOTE_CMD",
+            "1",
+            "",
+            "Control por bus de campo habilitado."
+          ],
+          [
+            "(ABB DRV FULL)",
+            "0",
+            "",
+            "· CW # 0 o Ref # 0: Conservar último CW y Ref. · CW = 0 y Ref = 0: Control por bus de campo habilitado."
+          ],
+          [
+            "· La referencia y la rampa de aceleración/ deceleración se bloquean."
+          ],
+          [
+            "11",
+            "EXT CTRL LOC",
+            "1",
+            "EXT2 SELECT",
+            "Seleccionar el lugar de control externo 2 (EXT2). Efectivo si 1102 = COMUNIC"
+          ],
+          [
+            "0",
+            "EXT1 SELECT",
+            "Seleccionar el lugar de control externo 1 (EXT1). Efectivo si 1102 = COMUNIC"
+          ],
+          [
+            "12 ... 15",
+            "Sin usar",
+            ""
+          ]
+        ],
+        [
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Comando/Pet.",
+            "Comentarios"
+          ],
+          [
+            "0",
+            "PARO",
+            "1",
+            "Paro",
+            "Para de conformidad con el parámetro de modo de paro o las peticiones de modo de paro (bits 7 y 8). Los comandos MARCHA y PARO simultáneos dan lugar a un comando de paro."
+          ],
+          [
+            "0",
+            "(sin func.)"
+          ],
+          [
+            "1",
+            "FUNCIONAR",
+            "1",
+            "Marcha"
+          ],
+          [
+            "0",
+            "(sin func.)"
+          ],
+          [
+            "2",
+            "REVERSE",
+            "1",
+            "Dirección inversa",
+            "Este bit con XOR con el signo de la referencia define la dirección."
+          ],
+          [
+            "0",
+            "Dirección de avance"
+          ],
+          [
+            "3",
+            "LOCAL",
+            "1",
+            "Modo local",
+            "Cuando el bus de campo ajusta este bit, se apropia del control y el convertidor pasa a modo de control local por bus de campo."
+          ],
+          [
+            "0",
+            "Modo externo"
+          ],
+          [
+            "4",
+            "RESET",
+            "-> 1",
+            "Reset",
+            "Sensible al extremo."
+          ],
+          [
+            "otro",
+            "(sin func.)",
+            ""
+          ],
+          [
+            "5",
+            "EXT2",
+            "1",
+            "Cambiar a EXT2",
+            ""
+          ],
+          [
+            "0",
+            "Cambiar a EXT1",
+            ""
+          ],
+          [
+            "6",
+            "RUN_DISABLE",
+            "1",
+            "Inhabilitación de marcha",
+            "Permiso de marcha inverso."
+          ],
+          [
+            "0",
+            "Permiso de marcha activado"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "230\nManual del usuario del ACS550-01/U1\nCÓDIGO CONTROL del perfil DCU (véase el parámetro 0301)\nBit\nNombre\nValor\nComando/Pet.\nComentarios\n7\nSTPMODE_R\n1\nModo de paro en\nrampa normal\n0\n(sin func.)\n8\nSTPMODE_EM\n1\nModo de paro en\nrampa de\nemergencia\n0\n(sin func.)\n9\nSTPMODE_C\n1\nModo de paro libre\n0\n(sin func.)\n10\nRAMP_2\n1\nPar de rampas 2\n0\nPar de rampas 1\n11\nRAMP_OUT_0\n1\nSalida de rampa a 0\n0\n(sin func.)\n12\nRAMP_HOLD\n1\nCongelación de\nrampa\n0\n(sin func.)\n13\nRAMP_IN_0\n1\nEntrada de rampa\na 0\n0\n(sin func.)\n14\nRREQ_LOCALL\nOC\n1\nBloqueo de modo\nlocal\nEn bloqueo, el convertidor no cambiará a\nmodo local.\n0\n(sin func.)\n15\nTORQLIM2\n1\nPar de límites de\npar 2\n0\nPar de límites de\npar 1\nCÓDIGO CONTROL del perfil DCU (véase el parámetro 0302)\nBit\nNombre\nValor\nFunción\nComentarios\n16 ... 26\nReservado\n27\nREF_CONST\n1\nRef. de velocidad\nconstante\nEstos bits sólo son para\nsupervisión.\n0\n(sin func.)\n28\nREF_AVE\n1\nRef. media de\nvelocidad\n0\n(sin func.)\n29\nLINK_ON\n1\nMaestro detectado en\nel enlace\n0\nEnlace no disponible\n30\nREQ_STARTINH\n1\nPetición de inhibición\nde marcha pendiente\n0\nPetición de inhibición\nde marcha desactivada\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "CÓDIGO CONTROL del perfil DCU (véase el parámetro 0301)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Comando/Pet.",
+            "Comentarios"
+          ],
+          [
+            "7",
+            "STPMODE_R",
+            "1",
+            "Modo de paro en rampa normal",
+            ""
+          ],
+          [
+            "0",
+            "(sin func.)",
+            ""
+          ],
+          [
+            "8",
+            "STPMODE_EM",
+            "1",
+            "Modo de paro en rampa de emergencia",
+            ""
+          ],
+          [
+            "0",
+            "(sin func.)",
+            ""
+          ],
+          [
+            "9",
+            "STPMODE_C",
+            "1",
+            "Modo de paro libre",
+            ""
+          ],
+          [
+            "0",
+            "(sin func.)",
+            ""
+          ],
+          [
+            "10",
+            "RAMP_2",
+            "1",
+            "Par de rampas 2",
+            ""
+          ],
+          [
+            "0",
+            "Par de rampas 1",
+            ""
+          ],
+          [
+            "11",
+            "RAMP_OUT_0",
+            "1",
+            "Salida de rampa a 0",
+            ""
+          ],
+          [
+            "0",
+            "(sin func.)",
+            ""
+          ],
+          [
+            "12",
+            "RAMP_HOLD",
+            "1",
+            "Congelación de rampa",
+            ""
+          ],
+          [
+            "0",
+            "(sin func.)",
+            ""
+          ],
+          [
+            "13",
+            "RAMP_IN_0",
+            "1",
+            "Entrada de rampa a 0",
+            ""
+          ],
+          [
+            "0",
+            "(sin func.)",
+            ""
+          ],
+          [
+            "14",
+            "RREQ_LOCALL OC",
+            "1",
+            "Bloqueo de modo local",
+            "En bloqueo, el convertidor no cambiará a modo local."
+          ],
+          [
+            "0",
+            "(sin func.)",
+            ""
+          ],
+          [
+            "15",
+            "TORQLIM2",
+            "1",
+            "Par de límites de par 2",
+            ""
+          ],
+          [
+            "0",
+            "Par de límites de par 1",
+            ""
+          ]
+        ],
+        [
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Función",
+            "Comentarios"
+          ],
+          [
+            "16 ... 26",
+            "Reservado"
+          ],
+          [
+            "27",
+            "REF_CONST",
+            "1",
+            "Ref. de velocidad constante",
+            "Estos bits sólo son para supervisión."
+          ],
+          [
+            "0",
+            "(sin func.)"
+          ],
+          [
+            "28",
+            "REF_AVE",
+            "1",
+            "Ref. media de velocidad"
+          ],
+          [
+            "0",
+            "(sin func.)"
+          ],
+          [
+            "29",
+            "LINK_ON",
+            "1",
+            "Maestro detectado en el enlace",
+            ""
+          ],
+          [
+            "0",
+            "Enlace no disponible",
+            ""
+          ],
+          [
+            "30",
+            "REQ_STARTINH",
+            "1",
+            "Petición de inhibición de marcha pendiente",
+            ""
+          ],
+          [
+            "0",
+            "Petición de inhibición de marcha desactivada",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Manual del usuario del ACS550-01/U1\n231\nCÓDIGO CONTROL del perfil DCU (véase el parámetro 0302)\nBit\nNombre\nValor\nFunción\nComentarios\n31\nOFF_INTERLOCK\n1\nBotón de desconexión\ndel panel pulsado\nPara el panel de control (o\nherramienta PC) se trata del\nenclavamiento del botón de\ndesconexión.\n0\n(sin func.)\nCódigo de estado\nEl contenido del CÓDIGO ESTADO es información de estado, enviada por el convertidor a\nla estación maestra.\nPerfil ABB Drives\nLa tabla siguiente y el diagrama de estado que figura más adelante en este\nsubapartado describen el contenido del CÓDIGO ESTADO para el perfil ABB Drives.\nCÓDIGO ESTADO del perfil ABB DRIVES (BCI) (Véase el parámetro 5320)\nBit\nNombre\nValor\nDescripción\n(Corresponde a estados/cuadros en el diagrama de estado)\n0\nRDY_ON\n1\nLISTO PARA ENCENDIDO\n0\nNO LISTO PARA ENCENDIDO\n1\nRDY_RUN\n1\nREADY TO OPERATE\n0\nOFF1 ACTIVO\n2\nRDY_REF\n1\nFUNCIONAMIENTO HABILITADO\n0\nFUNCIONAMIENTO INHIBIDO\n3\nTRIPPED\n0 ... 1\nFALLO\n0\nSin fallo\n4\nOFF_2_STA\n1\nOFF2 INACTIVO\n0\nOFF2 ACTIVO\n5\nOFF_3_STA\n1\nOFF3 INACTIVO\n0\nOFF3 ACTIVO\n6\nSWC_ON_INHIB\n1\nENCENDIDO INHIBIDO ACTIVO\n0\nENCENDIDO INHIBIDO NO ACTIVO\n7\nALARM\n1\nAlarma (véase el apartado Listado de alarmas en la página 271\npara obtener más datos sobre las alarmas).\n0\nSin alarma\n8\nAT_SETPOINT\n1\nEN FUNCIONAMIENTO. El valor actual equivale al valor de referencia\n(dentro de los límites de tolerancia).\n0\nEl valor actual está fuera de los límites de tolerancia (no\nequivale al valor de referencia).\n9\nREMOTE\n1\nLugar de control del convertidor: REMOTO (EXT1 o EXT2).\n0\nLugar de control del convertidor: LOCAL.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "CÓDIGO CONTROL del perfil DCU (véase el parámetro 0302)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Función",
+            "Comentarios"
+          ],
+          [
+            "31",
+            "OFF_INTERLOCK",
+            "1",
+            "Botón de desconexión del panel pulsado",
+            "Para el panel de control (o herramienta PC) se trata del enclavamiento del botón de desconexión."
+          ],
+          [
+            "0",
+            "(sin func.)",
+            ""
+          ]
+        ],
+        [
+          [
+            "CÓDIGO ESTADO del perfil ABB DRIVES (BCI) (Véase el parámetro 5320)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Descripción (Corresponde a estados/cuadros en el diagrama de estado)"
+          ],
+          [
+            "0",
+            "RDY_ON",
+            "1",
+            "LISTO PARA ENCENDIDO"
+          ],
+          [
+            "0",
+            "NO LISTO PARA ENCENDIDO"
+          ],
+          [
+            "1",
+            "RDY_RUN",
+            "1",
+            "READY TO OPERATE"
+          ],
+          [
+            "0",
+            "OFF1 ACTIVO"
+          ],
+          [
+            "2",
+            "RDY_REF",
+            "1",
+            "FUNCIONAMIENTO HABILITADO"
+          ],
+          [
+            "0",
+            "FUNCIONAMIENTO INHIBIDO"
+          ],
+          [
+            "3",
+            "TRIPPED",
+            "0 ... 1",
+            "FALLO"
+          ],
+          [
+            "0",
+            "Sin fallo"
+          ],
+          [
+            "4",
+            "OFF_2_STA",
+            "1",
+            "OFF2 INACTIVO"
+          ],
+          [
+            "0",
+            "OFF2 ACTIVO"
+          ],
+          [
+            "5",
+            "OFF_3_STA",
+            "1",
+            "OFF3 INACTIVO"
+          ],
+          [
+            "0",
+            "OFF3 ACTIVO"
+          ],
+          [
+            "6",
+            "SWC_ON_INHIB",
+            "1",
+            "ENCENDIDO INHIBIDO ACTIVO"
+          ],
+          [
+            "0",
+            "ENCENDIDO INHIBIDO NO ACTIVO"
+          ],
+          [
+            "7",
+            "ALARM",
+            "1",
+            "Alarma (véase el apartado Listado de alarmas en la página 271 para obtener más datos sobre las alarmas)."
+          ],
+          [
+            "0",
+            "Sin alarma"
+          ],
+          [
+            "8",
+            "AT_SETPOINT",
+            "1",
+            "EN FUNCIONAMIENTO. El valor actual equivale al valor de referencia (dentro de los límites de tolerancia)."
+          ],
+          [
+            "0",
+            "El valor actual está fuera de los límites de tolerancia (no equivale al valor de referencia)."
+          ],
+          [
+            "9",
+            "REMOTE",
+            "1",
+            "Lugar de control del convertidor: REMOTO (EXT1 o EXT2)."
+          ],
+          [
+            "0",
+            "Lugar de control del convertidor: LOCAL."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "232\nManual del usuario del ACS550-01/U1\nCÓDIGO ESTADO del perfil ABB DRIVES (BCI) (Véase el parámetro 5320)\nBit\nNombre\nValor\nDescripción\n(Corresponde a estados/cuadros en el diagrama de estado)\n10\nABOVE_LIMIT\n1\nValor del parámetro supervisado ≥ límite alto de supervisión.\nEl bit sigue siendo \"1\" hasta que el valor del parámetro\nsupervisado < límite bajo de supervisión.\nVéase el Grupo 32: SUPERVISION.\n0\nValor del parámetro supervisado < límite bajo de supervisión.\nEl bit sigue siendo \"0\" hasta que el valor del parámetro\nsupervisado > límite alto de supervisión.\nVéase el Grupo 32: SUPERVISION.\n11\nEXT CTRL LOC\n1\nLugar de control externo 2 (EXT2) seleccionado.\n0\nLugar de control externo 1 (EXT1) seleccionado.\n12\nEXT RUN ENABLE\n1\nSeñal de Permiso de Marcha externa recibida.\n0\nSeñal de Permiso de Marcha externa no recibida.\n13 ...\n15\nSin usar\nPerfil DCU\nLas tablas siguientes describen el contenido del CODIGO ESTADO para el perfil DCU.\nCÓDIGO ESTADO del perfil DCU (véase el parámetro 0303)\nBit\nNombre\nValor\nEstado\n0\nLISTO\n1\nEl convertidor está listo para recibir el comando de marcha.\n0\nEl convertidor no está listo.\n1\nHABILITADO\n1\nSeñal de Permiso de Marcha externa recibida.\n0\nSeñal de Permiso de Marcha externa no recibida.\n2\nSTARTED\n1\nEl convertidor ha recibido el comando de marcha.\n0\nEl convertidor no ha recibido el comando de marcha.\n3\nEN FUNC.\n1\nEl convertidor está modulando.\n0\nEl convertidor no está modulando.\n4\nZERO_SPEED\n1\nEl convertidor está a velocidad cero.\n0\nEl convertidor no ha alcanzado velocidad cero.\n5\nACCELERATE\n1\nLa unidad está acelerando.\n0\nLa unidad no está acelerando.\n6\nDECELERATE\n1\nLa unidad está decelerando.\n0\nLa unidad no está decelerando.\n7\n7\nAT_SETPOINT\n1\nEl convertidor está en el punto de consigna.\n0\nEl convertidor no ha alcanzado el punto de consigna.\n8\nLIMIT\n1\nEl funcionamiento está limitado por los ajustes del Grupo 20:\nLIMITS.\n0\nEl funcionamiento está dentro de los ajustes del Grupo 20: LIMITS.\n9\nSUPERVISION\n1\nUn parámetro supervisado (Grupo 32: SUPERVISION) está\nfuera de sus límites.\n0\nTodos los parámetros supervisados están dentro de los límites.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "CÓDIGO ESTADO del perfil ABB DRIVES (BCI) (Véase el parámetro 5320)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Descripción (Corresponde a estados/cuadros en el diagrama de estado)"
+          ],
+          [
+            "10",
+            "ABOVE_LIMIT",
+            "1",
+            "Valor del parámetro supervisado ≥ límite alto de supervisión. El bit sigue siendo \"1\" hasta que el valor del parámetro supervisado < límite bajo de supervisión. Véase el Grupo 32: SUPERVISION."
+          ],
+          [
+            "0",
+            "Valor del parámetro supervisado < límite bajo de supervisión. El bit sigue siendo \"0\" hasta que el valor del parámetro supervisado > límite alto de supervisión. Véase el Grupo 32: SUPERVISION."
+          ],
+          [
+            "11",
+            "EXT CTRL LOC",
+            "1",
+            "Lugar de control externo 2 (EXT2) seleccionado."
+          ],
+          [
+            "0",
+            "Lugar de control externo 1 (EXT1) seleccionado."
+          ],
+          [
+            "12",
+            "EXT RUN ENABLE",
+            "1",
+            "Señal de Permiso de Marcha externa recibida."
+          ],
+          [
+            "0",
+            "Señal de Permiso de Marcha externa no recibida."
+          ]
+        ],
+        [
+          [
+            "CÓDIGO ESTADO del perfil DCU (véase el parámetro 0303)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Estado"
+          ],
+          [
+            "0",
+            "LISTO",
+            "1",
+            "El convertidor está listo para recibir el comando de marcha."
+          ],
+          [
+            "0",
+            "El convertidor no está listo."
+          ],
+          [
+            "1",
+            "HABILITADO",
+            "1",
+            "Señal de Permiso de Marcha externa recibida."
+          ],
+          [
+            "0",
+            "Señal de Permiso de Marcha externa no recibida."
+          ],
+          [
+            "2",
+            "STARTED",
+            "1",
+            "El convertidor ha recibido el comando de marcha."
+          ],
+          [
+            "0",
+            "El convertidor no ha recibido el comando de marcha."
+          ],
+          [
+            "3",
+            "EN FUNC.",
+            "1",
+            "El convertidor está modulando."
+          ],
+          [
+            "0",
+            "El convertidor no está modulando."
+          ],
+          [
+            "4",
+            "ZERO_SPEED",
+            "1",
+            "El convertidor está a velocidad cero."
+          ],
+          [
+            "0",
+            "El convertidor no ha alcanzado velocidad cero."
+          ],
+          [
+            "5",
+            "ACCELERATE",
+            "1",
+            "La unidad está acelerando."
+          ],
+          [
+            "0",
+            "La unidad no está acelerando."
+          ],
+          [
+            "6",
+            "DECELERATE",
+            "1",
+            "La unidad está decelerando."
+          ],
+          [
+            "0",
+            "La unidad no está decelerando."
+          ],
+          [
+            "7 7",
+            "AT_SETPOINT",
+            "1",
+            "El convertidor está en el punto de consigna."
+          ],
+          [
+            "0",
+            "El convertidor no ha alcanzado el punto de consigna."
+          ],
+          [
+            "8",
+            "LIMIT",
+            "1",
+            "El funcionamiento está limitado por los ajustes del Grupo 20: LIMITS."
+          ],
+          [
+            "0",
+            "El funcionamiento está dentro de los ajustes del Grupo 20: LIMITS."
+          ],
+          [
+            "9",
+            "SUPERVISION",
+            "1",
+            "Un parámetro supervisado (Grupo 32: SUPERVISION) está fuera de sus límites."
+          ],
+          [
+            "0",
+            "Todos los parámetros supervisados están dentro de los límites."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Manual del usuario del ACS550-01/U1\n233\nCÓDIGO ESTADO del perfil DCU (véase el parámetro 0303)\nBit\nNombre\nValor\nEstado\n10\nREV_REF\n1\nLa referencia del convertidor tiene dirección inversa.\n0\nLa referencia del convertidor tiene dirección de avance.\n11\nREV_ACT\n1\nEl convertidor funciona en dirección inversa.\n0\nEl convertidor funciona en dirección de avance.\n12\nPANEL_LOCAL\n1\nEl control se encuentra en modo local del panel de control\n(o herramienta PC).\n0\nEl control no se encuentra en modo local del panel de control.\n13\nFIELDBUS_LOCAL\n1\nEl control se encuentra en modo local del bus de campo\n(se apropia del panel de control local).\n0\nEl control no se encuentra en modo local del bus de campo.\n14\nEXT2_ACT\n1\nEl control se encuentra en modo EXT2.\n0\nEl control se encuentra en modo EXT1.\n15\nFALLO\n1\nEl convertidor está en un estado de fallo.\n0\nEl convertidor no está en un estado de fallo.\nCÓDIGO ESTADO del perfil DCU (véase el parámetro 0304)\nBit\nNombre\nValor\nEstado\n16\nALARM\n1\nHay una alarma activa.\n0\nNo hay alarmas activas.\n17\nREQ_MAINT\n1\nPetición de mantenimiento pendiente.\n0\nNo hay una petición de mantenimiento pendiente.\n18\nDIRLOCK\n1\nBloqueo de dirección activado. (El cambio de dirección está\nbloqueado.)\n0\nBloqueo de dirección desactivado.\n19\nLOCALLOCK\n1\nBloqueo de modo local activado. (El modo local está bloqueado.)\n0\nBloqueo de modo local desactivado.\n20\nCTL_MODE\n1\nEl convertidor está en modo de control vectorial.\n0\nEl convertidor está en modo de control escalar.\n21 ... 25\nReservado\n26\nREQ_CTL\n1\nCopiar el código de control\n0\n(sin func.)\n27\nREQ_REF1\n1\nReferencia 1 solicitada en este canal.\n0\nReferencia 1 no solicitada en este canal.\n28\nREQ_REF2\n1\nReferencia 2 solicitada en este canal.\n0\nReferencia 2 no solicitada en este canal.\n29\nREQ_REF2EXT\n1\nReferencia externa PID 2 solicitada en este canal.\n0\nReferencia externa PID 2 no solicitada en este canal.\n30\nACK_STARTINH\n1\nInhibición de marcha de este canal otorgada.\n0\nInhibición de marcha de este canal no otorgada.\n31\nACK_OFF_ILCK\n1\nInhibición de marcha debida al botón OFF.\n0\nFuncionamiento normal.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "CÓDIGO ESTADO del perfil DCU (véase el parámetro 0303)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Estado"
+          ],
+          [
+            "10",
+            "REV_REF",
+            "1",
+            "La referencia del convertidor tiene dirección inversa."
+          ],
+          [
+            "0",
+            "La referencia del convertidor tiene dirección de avance."
+          ],
+          [
+            "11",
+            "REV_ACT",
+            "1",
+            "El convertidor funciona en dirección inversa."
+          ],
+          [
+            "0",
+            "El convertidor funciona en dirección de avance."
+          ],
+          [
+            "12",
+            "PANEL_LOCAL",
+            "1",
+            "El control se encuentra en modo local del panel de control (o herramienta PC)."
+          ],
+          [
+            "0",
+            "El control no se encuentra en modo local del panel de control."
+          ],
+          [
+            "13",
+            "FIELDBUS_LOCAL",
+            "1",
+            "El control se encuentra en modo local del bus de campo (se apropia del panel de control local)."
+          ],
+          [
+            "0",
+            "El control no se encuentra en modo local del bus de campo."
+          ],
+          [
+            "14",
+            "EXT2_ACT",
+            "1",
+            "El control se encuentra en modo EXT2."
+          ],
+          [
+            "0",
+            "El control se encuentra en modo EXT1."
+          ],
+          [
+            "15",
+            "FALLO",
+            "1",
+            "El convertidor está en un estado de fallo."
+          ],
+          [
+            "0",
+            "El convertidor no está en un estado de fallo."
+          ]
+        ],
+        [
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Estado"
+          ],
+          [
+            "16",
+            "ALARM",
+            "1",
+            "Hay una alarma activa."
+          ],
+          [
+            "0",
+            "No hay alarmas activas."
+          ],
+          [
+            "17",
+            "REQ_MAINT",
+            "1",
+            "Petición de mantenimiento pendiente."
+          ],
+          [
+            "0",
+            "No hay una petición de mantenimiento pendiente."
+          ],
+          [
+            "18",
+            "DIRLOCK",
+            "1",
+            "Bloqueo de dirección activado. (El cambio de dirección está bloqueado.)"
+          ],
+          [
+            "0",
+            "Bloqueo de dirección desactivado."
+          ],
+          [
+            "19",
+            "LOCALLOCK",
+            "1",
+            "Bloqueo de modo local activado. (El modo local está bloqueado.)"
+          ],
+          [
+            "0",
+            "Bloqueo de modo local desactivado."
+          ],
+          [
+            "20",
+            "CTL_MODE",
+            "1",
+            "El convertidor está en modo de control vectorial."
+          ],
+          [
+            "0",
+            "El convertidor está en modo de control escalar."
+          ],
+          [
+            "21 ... 25",
+            "Reservado"
+          ],
+          [
+            "26",
+            "REQ_CTL",
+            "1",
+            "Copiar el código de control"
+          ],
+          [
+            "0",
+            "(sin func.)"
+          ],
+          [
+            "27",
+            "REQ_REF1",
+            "1",
+            "Referencia 1 solicitada en este canal."
+          ],
+          [
+            "0",
+            "Referencia 1 no solicitada en este canal."
+          ],
+          [
+            "28",
+            "REQ_REF2",
+            "1",
+            "Referencia 2 solicitada en este canal."
+          ],
+          [
+            "0",
+            "Referencia 2 no solicitada en este canal."
+          ],
+          [
+            "29",
+            "REQ_REF2EXT",
+            "1",
+            "Referencia externa PID 2 solicitada en este canal."
+          ],
+          [
+            "0",
+            "Referencia externa PID 2 no solicitada en este canal."
+          ],
+          [
+            "30",
+            "ACK_STARTINH",
+            "1",
+            "Inhibición de marcha de este canal otorgada."
+          ],
+          [
+            "0",
+            "Inhibición de marcha de este canal no otorgada."
+          ],
+          [
+            "31",
+            "ACK_OFF_ILCK",
+            "1",
+            "Inhibición de marcha debida al botón OFF."
+          ],
+          [
+            "0",
+            "Funcionamiento normal."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "234\nManual del usuario del ACS550-01/U1\nDiagrama de estado\nPerfil ABB Drives\nPara ilustrar el funcionamiento del diagrama de estado, el siguiente ejemplo\n(implementación ABB DRV LIM del perfil ABB Drives) utiliza el código de control para\narrancar el convertidor:\n· En primer lugar, deben satisfacerse los requisitos para utilizar el CÓDIGO CONTROL.\nVéase más arriba.\n· Al conectar la alimentación por vez primera, el estado del convertidor es no listo para\nencendido. Véase la línea punteada ( --- ) en el diagrama de estado siguiente.\n· Utilice el CÓDIGO CONTROL para desplazarse por los estados de la máquina hasta alcanzar\nel estado OPERATING (en funcionamiento), lo que significa que el convertidor está en\nmarcha y sigue la referencia facilitada. Véase la tabla siguiente.\nPaso\nValor del CÓDIGO CONTROL\nDescripción\n1\nCW = 0000 0000 0000 0110\n-\nI\nbit 15\nbit 0\nEste valor del CW cambia el estado del convertidor a READY\nTO SWITCH ON(listo para encendido).\n2\nEspere como mínimo 100 ms antes de continuar.\n3\nCW = 0000 0000 0000 0111\nEste valor del CW cambia el estado del convertidor a READY\nTO OPERATE (listo para funcionamiento).\n4\nCW = 0000 0000 0000 1111\nEste valor del CW cambia el estado del convertidor a\nOPERATION ENABLED(funcionamiento habilitado). El convertidor\nse pone en marcha pero no acelerará.\n5\nCW = 0000 0000 0010 1111\nEste valor de CW libera la salida del generador de función de\nrampa (RFG) , y cambia el estado del convertidor a RFG:\nACCELERATOR ENABLED.\n6\nCW = 0000 0000 0110 1111\nEste valor de CW libera la salida del generador de función de\nrampa (RFG) , y cambia el estado del convertidor a\nOPERATING: El convertidor acelera hasta la referencia\nproporcionada y la sigue.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Valor del CÓDIGO CONTROL",
+            "Descripción"
+          ],
+          [
+            "1",
+            "CW = 0000 0000 0000 0110 - I bit 15 bit 0",
+            "Este valor del CW cambia el estado del convertidor a READY TO SWITCH ON(listo para encendido)."
+          ],
+          [
+            "2",
+            "",
+            "Espere como mínimo 100 ms antes de continuar."
+          ],
+          [
+            "3",
+            "CW = 0000 0000 0000 0111",
+            "Este valor del CW cambia el estado del convertidor a READY TO OPERATE (listo para funcionamiento)."
+          ],
+          [
+            "4",
+            "CW = 0000 0000 0000 1111",
+            "Este valor del CW cambia el estado del convertidor a OPERATION ENABLED(funcionamiento habilitado). El convertidor se pone en marcha pero no acelerará."
+          ],
+          [
+            "5",
+            "CW = 0000 0000 0010 1111",
+            "Este valor de CW libera la salida del generador de función de rampa (RFG) , y cambia el estado del convertidor a RFG: ACCELERATOR ENABLED."
+          ],
+          [
+            "6",
+            "CW = 0000 0000 0110 1111",
+            "Este valor de CW libera la salida del generador de función de rampa (RFG) , y cambia el estado del convertidor a OPERATING: El convertidor acelera hasta la referencia proporcionada y la sigue."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Manual del usuario del ACS550-01/U1\n235\nEl diagrama de estado siguiente describe la función de marcha-paro de los bits del\nCÓDIGO CONTROL (CW) y el CÓDIGO ESTADO (SW) para el perfil ABB Drives.\nDesde cualquier estado Desde cualquier estado\nDesde cualquier estado\nParo de emergencia\nOFF2 (Bit 1 del CW=0)\nParo de emergencia\nFallo\nOFF3 (Bit 2 del CW=0)\nOFF3\nACTIVO\n(Bit 5 del SW=0)-\nOFF2\nACTIVO\nFALLO\n(Bit 3 del SW=1)\n(Bit 4 del SW=0)\n(Bit 7 del CW=1) **\nn(f)=0 / I=0\nDesde cualquier estado\nOFF1 (Bit 0 del CW=0)\nALIM. DESC.\n(Bit 1 del SW=0)\nOFF1\nACTIVO\nn(f)=0 / I=0\nConexión\nA B* C D\n(Bit 3 del CW=0)\n(Bit 2 del SW=0)\nSWITCH-ON\nINHIBIDO\n(Bit 6 del SW=1)\n(Bit 0 del CW=0)\nNO LISTO\nPARA CONEXIÓN\n(Bit 0 del SW=0)\n(CW xxxx x1xx xxxx x110)\nFUNCIONAMIENTO\nINHIBIDO\nFUNCIONAMIENTO INHIBIDO\nLISTO PARA\nCONEXIÓN\n(Bit 0 del SW=1)\n(CW= xxxx x1xx xxxx x111)\nB* C* D*\n(Bit 4 del CW=0)*\nCD\n(Bit 5 del CW=0)\nLEYENDA\nEstado\nD\nCambio de estado\n(Bit 6 del CW=0)\nRuta descrita en el ejemplo\nCW = CÓDIGO CONTROL\nSW = CÓDIGO ESTADO\nRFG = Generador de función de la rampa\nI = Parám. 0104 INTENSIDAD\nf = Parám. 0103 FREC SALIDA\nn = Velocidad\n* Indica las características no incluidas en ABB DRV\nLIM\n** Esta transición de estado también se produce\nsi se restaura el fallo desde cualquier otra fuente\nLISTO PARA\nFUNCIONAR\n(Bit 1 del SW=1)\n(Bit 3 del CW=1 y\nBit 12 del SW=1)\nFUNCIONAMIENTO\nHABILITADO\n(Bit 2 del SW=1)\nA\n(CW=xxxx x1xx xxx1* 1111\no sea Bit 4=1)*\nSALIDA RFG\nHABILITADA*\nB*\n(CW=xxxx x1xx xx11* 1111\no sea Bit 5=1)\nRFG: ACELERADOR\nHABILITADO\nC\n(CW=xxxx x1xx x111* 1111\no sea Bit 6=1)\nEN FUNCIONAM. - (Bit 8 del SW=1)\nD\nBus de campo encajado",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "236\nManual del usuario del ACS550-01/U1\nEscalado de referencia\nLas referencias de bus de campo REF1 y REF2 se escalan tal como se muestra en\nla tablas siguientes.\nEscalado de bus de campo para perfil ABB Drives\nReferencia\nIntervalo\nTipo de\nreferencia\nEscalado\nComentarios\nREF1\n-32767\n…\n+32767\nVelocidad\no\nfrecuencia\n-20000 = - (par. 1105)\n0 = 0\n+20000 = (par. 1105)\n(20000 corresponde al 100%)\nReferencia final limitada por\n1104/1105. Velocidad actual\ndel motor limitada por 2001/\n2002 (velocidad) o por 2007/\n2008 (frecuencia).\nREF2\n-32767\n…\n+32767\nVelocidad\no\nfrecuencia\n-10000 = - (par. 1108)\n0 = 0\n+10000 = (par. 1108)\n(10000 corresponde al 100%)\nReferencia final limitada por\n1107/1108. Velocidad actual\ndel motor limitada por 2001/\n2002 (velocidad) o por 2007/\n2008 (frecuencia).\nPar\n-10000 = - (par. 1108)\n0 = 0\n+10000 = (par. 1108)\n(10000 corresponde al 100%)\nReferencia final limitada por\n2015/2017 (par 1) o 2016/\n2018 (par 2).\nReferencia\nPID\n-10000 = - (par. 1108)\n0 = 0\n+10000 = (par. 1108)\n(10000 corresponde al 100%)\nReferencia final limitada por\n4012/4013 (conj PID 1) o\n4112/4113 (conj PID 2).\nNota: el ajuste del parámetro 1104 REF1 MINIMO y 1107 REF2 MINIMO no tiene ningún\nefecto sobre el escalado de las referencias.\nEscalado de bus de campo para perfil DCU\nReferencia\nIntervalo\nTipo de\nreferencia\nEscalado\nComentarios\nREF1\n-214783648\n…\n+214783647\nVelocidad\no\nfrecuencia\n1000 = 1 rpm / 1 Hz\nReferencia final limitada por\n1104/1105. Velocidad actual del\nmotor limitada por\n2001/2002 (velocidad) o por\n2007/2008 (frecuencia).\nREF2\n-214783648\n…\n+214783647\nVelocidad\no\nfrecuencia\n1000 = 1%\nReferencia final limitada por\n1107/1108. Velocidad actual del\nmotor limitada por\n2001/2002 (velocidad) o por\n2007/2008 (frecuencia).\nPar\n1000 = 1%\nReferencia final limitada por\n2015/2017 (par 1) o\n2016/2018 (par 2).\nReferencia\nPID\n1000 = 1%\nReferencia final limitada por\n4012/4013 (serie PID 1) o\n4112/4113 (serie PID 2).\nNota: el ajuste del parámetro 1104 REF1 MINIMO y 1107 REF2 MINIMO no tiene ningún\nefecto sobre el escalado de las referencias.\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Referencia",
+            "Intervalo",
+            "Tipo de referencia",
+            "Escalado",
+            "Comentarios"
+          ],
+          [
+            "REF1",
+            "-32767 … +32767",
+            "Velocidad o frecuencia",
+            "-20000 = - (par. 1105) 0 = 0 +20000 = (par. 1105) (20000 corresponde al 100%)",
+            "Referencia final limitada por 1104/1105. Velocidad actual del motor limitada por 2001/ 2002 (velocidad) o por 2007/ 2008 (frecuencia)."
+          ],
+          [
+            "REF2",
+            "-32767 … +32767",
+            "Velocidad o frecuencia",
+            "-10000 = - (par. 1108) 0 = 0 +10000 = (par. 1108) (10000 corresponde al 100%)",
+            "Referencia final limitada por 1107/1108. Velocidad actual del motor limitada por 2001/ 2002 (velocidad) o por 2007/ 2008 (frecuencia)."
+          ],
+          [
+            "Par",
+            "-10000 = - (par. 1108) 0 = 0 +10000 = (par. 1108) (10000 corresponde al 100%)",
+            "Referencia final limitada por 2015/2017 (par 1) o 2016/ 2018 (par 2)."
+          ],
+          [
+            "Referencia PID",
+            "-10000 = - (par. 1108) 0 = 0 +10000 = (par. 1108) (10000 corresponde al 100%)",
+            "Referencia final limitada por 4012/4013 (conj PID 1) o 4112/4113 (conj PID 2)."
+          ]
+        ],
+        [
+          [
+            "Referencia",
+            "Intervalo",
+            "Tipo de referencia",
+            "Escalado",
+            "Comentarios"
+          ],
+          [
+            "REF1",
+            "-214783648 … +214783647",
+            "Velocidad o frecuencia",
+            "1000 = 1 rpm / 1 Hz",
+            "Referencia final limitada por 1104/1105. Velocidad actual del motor limitada por 2001/2002 (velocidad) o por 2007/2008 (frecuencia)."
+          ],
+          [
+            "REF2",
+            "-214783648 … +214783647",
+            "Velocidad o frecuencia",
+            "1000 = 1%",
+            "Referencia final limitada por 1107/1108. Velocidad actual del motor limitada por 2001/2002 (velocidad) o por 2007/2008 (frecuencia)."
+          ],
+          [
+            "Par",
+            "1000 = 1%",
+            "Referencia final limitada por 2015/2017 (par 1) o 2016/2018 (par 2)."
+          ],
+          [
+            "Referencia PID",
+            "1000 = 1%",
+            "Referencia final limitada por 4012/4013 (serie PID 1) o 4112/4113 (serie PID 2)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Manual del usuario del ACS550-01/U1\n237\nEjemplos de escalado\nCuando el parámetro 1103 SELEC REF1 o 1106 SELEC REF2 se ajusta a COMUNIC+EA1 o\nCOMUNIC*EA1, la referencia se escala de la siguiente manera:\nPerfiles ABB Drives y DCU\nReferencia\nAjuste de\nvalor\nEscalado de referencia de EA\nREF1\nCOMUNIC+EA1\nCOMUNIC (%) + (EA (%) - 0,5 · REF1 MAXIMO (%))\nCoeficiente de correc.\nde referencia de bus de campo\n(100 + 0,5 · (Par. 1105)%\nI\n1\n1\n1\n100%\n-1\nSeñal de entrada\nEA1\n(100 - 0,5 · (par. 1105))%\n0%\n50%\n100%\nREF1\nCOMUNIC*EA1\nCOMUNIC (%) · (EA (%) / 0,5 · REF1 MAXIMO (%))\nCoeficiente de correc.\nde referencia de bus de campo\n200%\n1\n100%\nSeñal de entrada\nEA1\n(100 - 0,5 · (par. 1105))% 0%\n50%\n100%\nREF2\nCOMUNIC+EA1\nCOMUNIC (%) + (EA (%) - 0,5 · REF1 MAXIMO (%))\nCoeficiente de correc.\nde referencia de bus de campo\n(100 + 0,5 · (Par. 1108)%\n1\nI\nI\n1\n100%\n1\n1\nSeñal de\nentrada EA1\n(100 - 0,5 · (par. 1108)%\n0%\n50%\n100%\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Perfiles ABB Drives y DCU"
+          ],
+          [
+            "Referencia",
+            "Ajuste de valor",
+            "Escalado de referencia de EA"
+          ],
+          [
+            "REF1",
+            "COMUNIC+EA1",
+            "COMUNIC (%) + (EA (%) - 0,5 · REF1 MAXIMO (%)) Coeficiente de correc. de referencia de bus de campo (100 + 0,5 · (Par. 1105)% I 1 1 1 100% -1 Señal de entrada EA1\n:selected:"
+          ],
+          [
+            "(100 - 0,5 · (par. 1105))% 0% 50% 100%"
+          ],
+          [
+            "REF1",
+            "COMUNIC*EA1",
+            "COMUNIC (%) · (EA (%) / 0,5 · REF1 MAXIMO (%)) Coeficiente de correc. de referencia de bus de campo 200% 1 100% Señal de entrada EA1 (100 - 0,5 · (par. 1105))% 0% 50% 100%\n:unselected: :unselected: :selected: :unselected:"
+          ],
+          [
+            "REF2",
+            "COMUNIC+EA1",
+            "COMUNIC (%) + (EA (%) - 0,5 · REF1 MAXIMO (%)) Coeficiente de correc. de referencia de bus de campo (100 + 0,5 · (Par. 1108)% 1 I I 1 100% 1\n:selected:"
+          ],
+          [
+            "1 Señal de entrada EA1 (100 - 0,5 · (par. 1108)% 0% 50% 100%"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "238\nManual del usuario del ACS550-01/U1\nPerfiles ABB Drives y DCU\nReferencia\nAjuste de\nvalor\nEscalado de referencia de EA\nREF2\nCOMUNIC*EA1\nCOMUNIC (%) · (EA (%) / 0,5 · REF2 MAXIMO (%))\nCoeficiente de correc.\nde referencia de bus de campo\n200%\n1\nI\n1\n100%\nSeñal de\nentrada EA1\n0%\n'0%\n50%\n100%\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Perfiles ABB Drives y DCU"
+          ],
+          [
+            "Referencia",
+            "Ajuste de valor",
+            "Escalado de referencia de EA"
+          ],
+          [
+            "REF2",
+            "COMUNIC*EA1",
+            "COMUNIC (%) · (EA (%) / 0,5 · REF2 MAXIMO (%)) Coeficiente de correc. de referencia de bus de campo 200% 1 I 1\n:unselected: :unselected: :unselected: :unselected:"
+          ],
+          [
+            ""
+          ],
+          [
+            "",
+            "",
+            "100% Señal de entrada EA1 0% '0% 50% 100%\n:selected: :unselected:"
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Manual del usuario del ACS550-01/U1\n239\nTratamiento de referencias\nUtilice los parámetros del Grupo 10: MARCHA/PARO/DIR para configurar el control\nde la dirección de giro de cada lugar de control (EXT1 and EXT2). Los siguientes\ndiagramas ilustran cómo los parámetros del grupo 10 y el signo de la referencia de\nbus de campo interactúan para producir valores de REFERENCIA (REF1 y REF2). Tenga en\ncuenta que las referencias de bus de campo son bipolares, es decir, que pueden ser\nnegativas o positivas.\nPerfil ABB Drives\nParámetro\nAjuste de\nvalor\nEscalado de referencia de EA\n1003 DIRECCIÓN\n1 (AVANCE)\nRef. resultante\nRef. máx.\n1\n-\n-\n- -\n1\n-\n-\n1\nBus de campo\n-\n-\nde campo\n-163% -100%\n100% 163%\n-(Ref. máx.)\n1003 DIRECCIÓN\n2 (RETROCESO)\nRef. máx.\nRef. resultante\nBus de campo -163% -100%\n100% 163%\n-\n-\n-\n-\n- +\n-\nde campo\n-\n-\n-\n-\n-\n-(Ref. máx.) - -\n1003 DIRECCIÓN\n3 (PETICION)\nRef. resultante\nRef. máx.\n1\n-\n-\n1\n-\n1\n-\n-163% -100%\nBus de campo\n1\n-\nde campo\n100% 163%\n--\n-\n-(Ref. máx.) -\nBus de campo encajado",
+      "tablas": [
+        [
+          [
+            "Perfil ABB Drives"
+          ],
+          [
+            "Parámetro",
+            "Ajuste de valor",
+            "Escalado de referencia de EA"
+          ],
+          [
+            "1003 DIRECCIÓN",
+            "1 (AVANCE)",
+            "Ref. resultante Ref. máx. 1 - - - - 1 -"
+          ],
+          [
+            "",
+            "",
+            "- 1 Bus de campo - - de campo -163% -100% 100% 163% -(Ref. máx.)"
+          ],
+          [
+            "1003 DIRECCIÓN",
+            "2 (RETROCESO)",
+            "Ref. máx. Ref. resultante"
+          ],
+          [
+            "Bus de campo -163% -100%",
+            "100% 163% - - - - - + -"
+          ],
+          [
+            "de campo - - - - - -(Ref. máx.) - -"
+          ],
+          [
+            "1003 DIRECCIÓN",
+            "3 (PETICION)",
+            "Ref. resultante Ref. máx. 1 - - 1 - 1 - -163% -100% Bus de campo 1 -"
+          ],
+          [
+            "de campo 100% 163% -- - -(Ref. máx.) -"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "240\nManual del usuario del ACS550-01/U1\nBus de campo encajado",
+      "tablas": []
+    }
+  ]
+}

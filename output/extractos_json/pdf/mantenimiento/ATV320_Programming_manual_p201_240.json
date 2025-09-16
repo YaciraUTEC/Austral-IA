@@ -1,0 +1,2631 @@
+{
+  "archivo": "ATV320_Programming_manual_p201_240",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Modo Configuración (ConF)\nTensado del cable\nLa función de tensado del cable permite evitar un arranque a alta velocidad cuando una carga está preparada\npara su levantamiento pero el cable aún no está tensado (como se muestra en la ilustración).\nVelocidad 4\nV\nV\nOSP\nCarga\ntOS\nrStL\nEl escalón de velocidad (parámetros OSP) que se describe en la página 203 se utiliza para medir la carga. El\nciclo de medición real no se activará hasta que la carga alcance el nivel ajustable\n[Niv. Par cable dest.] (~ 5 ₺ L ) que corresponde al peso del gancho.\nSe puede asignar una salida lógica o un relé a la indicación del estado del tensado del cable en el menú\n[ENTRADAS/SALIDAS] ( , _ o - ).\nNVE41298 04/2018\n205",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > HSH-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nHSH -\n[ELEV. ALTA VELOCIDAD]\nNota:Esta función no puede utilizarse con algunas de las demás funciones disponibles. Siga las instrucciones de la página 164.\nHSO\n[Elev. alta velocidad]\n[No] (nO)\n[No] (na): Función inactiva\n550\n[Ref. veloc.] ( 5 5 a): Modo de referencia de velocidad\n[Lim.Intens.] ( [ 5 a): Modo de limitación de corriente\nCOF\n[Coef.veloc. subida]\nDe 0 a 100%\n100%\ng\nC\nCoeficiente de reducción de la velocidad calculado por el variador en sentido ascendente.\nSe puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) se establece en [Ref. veloc.] ( 5 5 a).\nCOr\n[Coef.veloc. bajada]\nDe 0 a 100%\n50%\ng\nC\nCoeficiente de reducción de la velocidad calculado por el variador en sentido descendente.\nSe puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) no se establece en [No] (na).\n[Tiempo de medida]\nDe 0,1 s a 65 s\n0,5 s\ng\nDuración del escalón de velocidad para la medición.\nSe puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) no se establece en [No] (na).\nOSP\n[Vel. de medida]\nDe 0 a [Frec. nom.Motor]\n(Fr 5)\n40 Hz\ng\nVelocidad constante para la medición.\nSe puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) no se establece en [No] (na).\nCLO\n[Limit.Int.alta veloc.]\nDe 0 a 1,5 In (1)\nIn (1)\ng\nC\nLimitación de la corriente a alta velocidad.\nSe puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) se establece en [Lim.Intens.] ([ 5 a).\nNota: Si el valor es inferior a 0,25 In, el variador puede bloquearse en el modo de fallo [Pérdida fase motor] ( a PL ) si éste se\nha activado (consulte la página 260).\nSCL\n[Frec. limitación I]\nDe 0 a 599 Hz según el calibre\n40 Hz\ng\nUmbral de frecuencia por encima del cual la corriente de limitación de alta velocidad está activa.\nSe puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) se establece en [Lim.Intens.] ([ 5 a).\n[Conf.cable destens.]\n[No] (nO)\ng\nFunción de tensado del cable.\nSe puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) no se establece en [No] (na).\n[No] (na): Función inactiva\ndr .\nPES\n[Estim. Var] (dr .): Medición de la carga mediante la estimación del par generada por el variador\n[Medid peso] (P E 5): Medición de la carga mediante un sensor de peso; sólo se puede asignar si el valor de [Asig. pesado carga]\n(PE 5), página 201, no es [No] (na)\n206\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Fun -\n:unselected:",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            ""
+          ],
+          [
+            "HSH -\n:unselected:",
+            "[ELEV. ALTA VELOCIDAD] Nota:Esta función no puede utilizarse con algunas de las demás funciones disponibles. Siga las instrucciones",
+            "de la página 164."
+          ],
+          [
+            "HSO\n:unselected:",
+            "[Elev. alta velocidad]",
+            "",
+            "[No] (nO)"
+          ],
+          [
+            ":unselected:",
+            "[No] (na): Función inactiva",
+            "",
+            ""
+          ],
+          [
+            "550\n:unselected:",
+            "[Ref. veloc.] ( 5 5 a): Modo de referencia de velocidad",
+            ""
+          ],
+          [
+            "",
+            "[Lim.Intens.] ( [ 5 a): Modo de limitación de corriente",
+            ""
+          ],
+          [
+            "COF\n:unselected:",
+            "[Coef.veloc. subida]",
+            "De 0 a 100%",
+            "100%"
+          ],
+          [
+            "g C\n:selected:\n:unselected:",
+            "Coeficiente de reducción de la velocidad calculado por el variador en sentido ascendente. Se puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) se establece en [Ref. veloc.] ( 5 5 a)."
+          ],
+          [
+            "COr\n:unselected:",
+            "[Coef.veloc. bajada]",
+            "De 0 a 100%",
+            "50%"
+          ],
+          [
+            "g C\n:selected:\n:unselected:",
+            "Coeficiente de reducción de la velocidad calculado por el variador en sentido descendente. Se puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) no se establece en [No] (na).",
+            ""
+          ],
+          [
+            ":unselected:",
+            "[Tiempo de medida]",
+            "De 0,1 s a 65 s",
+            "0,5 s"
+          ],
+          [
+            "g\n:selected:\n:unselected:",
+            "Duración del escalón de velocidad para la medición. Se puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) no se establece en [No] (na).",
+            ""
+          ],
+          [
+            "OSP\n:unselected: :unselected: :unselected:",
+            "[Vel. de medida]",
+            "De 0 a [Frec. nom.Motor] (Fr 5)",
+            "40 Hz"
+          ],
+          [
+            "g\n:selected:\n:unselected:",
+            "Velocidad constante para la medición. Se puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) no se establece en [No] (na).",
+            ""
+          ],
+          [
+            "CLO",
+            "[Limit.Int.alta veloc.]",
+            "De 0 a 1,5 In (1)",
+            "In (1)"
+          ],
+          [
+            "g C\n:selected:\n:unselected:",
+            "Limitación de la corriente a alta velocidad. Se puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) se establece en [Lim.Intens.] ([ 5 a). Nota: Si el valor es inferior a 0,25 In, el variador puede bloquearse en el modo de fallo [Pérdida fase motor] ( a PL ) si éste se ha activado (consulte la página 260)."
+          ],
+          [
+            "SCL\n:unselected:",
+            "[Frec. limitación I]",
+            "De 0 a 599 Hz según el calibre",
+            "40 Hz"
+          ],
+          [
+            "g\n:selected:\n:unselected:",
+            "Umbral de frecuencia por encima del cual la corriente de limitación de alta velocidad está activa. Se puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) se establece en [Lim.Intens.] ([ 5 a)."
+          ],
+          [
+            "",
+            "[Conf.cable destens.]",
+            "",
+            "[No] (nO)"
+          ],
+          [
+            "",
+            "Función de tensado del cable.",
+            "",
+            ""
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si [Elev. alta velocidad] (H 5 a) no se establece en [No] (na).",
+            ""
+          ],
+          [
+            "",
+            "[No] (na): Función inactiva",
+            ""
+          ],
+          [
+            "dr . PES",
+            "[Estim. Var] (dr .): Medición de la carga mediante la estimación del par generada por el variador [Medid peso] (P E 5): Medición de la carga mediante un sensor de peso; sólo se puede asignar si el valor de [Asig. pesado carga] (PE 5), página 201, no es [No] (na)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > HSH-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nr SEL\n[Niv.Par cable dest.]\nDe 0 a 100%\n0%\nNivel de ajuste que corresponde a una carga con un peso ligeramente inferior al del gancho sin carga, como % de la carga\nnominal.\ng\nSe puede acceder a este parámetro si [Niv.Par cable dest.] (- 5 d) se ha asignado.\n(1) Corresponde a la corriente nominal del variador que se indica en el Manual de instalación y en la placa de características\ndel variador.\ng\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\nC\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\nNVE41298 04/2018\n207",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "r SEL",
+            "[Niv.Par cable dest.]",
+            "De 0 a 100%",
+            "0%"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Modo Configuración (ConF)\nREGULADOR PID\nDiagrama de bloques\nLa función se activa mediante la asignación de una entrada analógica al retorno PID (medición).\nLI\nReferencia\ninterna\nrPI\nYES\nPr2\nPr4\nnO\nRampa\nA\nReferencia A\nPáginas 148\ny 149\nHnO\nP IF\nrP2\nrP3\nrP4\nPrP\nInversión\nde error\nPIC\nnO\n+\nx(-1)\n-\nYES\nUmbral de error\nde rearranque\n(inicio)\nAutomático/manual\nPAU\nELS\nrdG\nPOH\n'AC2'\nrSL\n0\nVIG\nrPG\nGanancias\nPOL\n(1) +\n+\n(manu)\nB\nPáginas\n148 y 149\nnO\nAI1\n.....\nRP\nReferencias PID\npreseleccionadas\nEscalado\nPIF1 / PIF2\nPIP1 / PIP2\nReferencia\nde velocidad\npredictiva\nx PSr\nRampas\nACC DEC\nRed AIU2\nRetorno\nPID\nReferencias manuales preseleccionadas\nReferencia\nnO\nmanual\nPIN\nSP2\nLeyenda:\nSP16\n--\nParámetro:\nEl cuadrado negro\nrepresenta la asignación\nsegún el ajuste de fábrica.\n(1) La rampa AC2 sólo está activa cuando se inicia la función PID y durante el inicio del PID.\nRetorno PID:\nEl retorno PID debe asignarse a una entrada analógica de AI1 a AI3 y a la entrada de pulsos, en función de\nsi se ha insertado alguna tarjeta de extensión.\nReferencia PID:\nLa referencia PID debe asignarse a los parámetros siguientes: Referencias preseleccionadas a través de\nentradas lógicas (r P 2, ~ P 3, - P 4)\nEn función de la configuración de [Ref. Interna PID] (P , ,), página 212:\nReferencia interna (~ P 1) o\nReferencia A ([Canal Ref.1] (Fr1) o [Canal Ref.1B] (Fr1b), consulte la página 155).\nTabla de combinaciones de las referencias PID preseleccionadas:\nLI (Pr 4)\nLI (Pr 2)\nPr2 = nO\nReferencia\nrPI o A\n0\n0\nrPI o A\n0\n1\nrP2\n1\n0\nrP3\n1\n1\nrP4\nPuede utilizarse una referencia de velocidad predictiva para inicializar la velocidad al reiniciar el proceso.\n208\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "LI (Pr 4)",
+            "LI (Pr 2)",
+            "Pr2 = nO",
+            "Referencia"
+          ],
+          [
+            "",
+            "rPI o A"
+          ],
+          [
+            "0",
+            "0",
+            "",
+            "rPI o A"
+          ],
+          [
+            "0",
+            "1",
+            "",
+            "rP2"
+          ],
+          [
+            "1",
+            "0",
+            "",
+            "rP3"
+          ],
+          [
+            "1",
+            "1",
+            "",
+            "rP4"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Modo Configuración (ConF)\nEscalado del retorno y las referencias:\n· Los parámetros [Retorno mínimo PID] (P , F 1) y [Ret. máximo PID] (P , F 2) permiten escalar el\nretorno PID (rango del sensor). Esta escala DEBE mantenerse para todos los demás parámetros.\n· Los parámetros [Ref. mínima PID] (P , P I) y [Ref. máxima PID] (P , P 2) permiten escalar el rango de\najuste; por ejemplo, la referencia. El rango de ajuste DEBE permanecer dentro del rango del sensor.\nEl valor máximo de los parámetros de escalado es de 32.767. Para facilitar la instalación, se recomienda\nutilizar valores lo más cercanos posibles a este nivel máximo, pero manteniendo idénticas las cifras\nsignificativas.\nEjemplo (consulte el gráfico siguiente): Ajuste del volumen de un tanque de entre 6 m3 y 15 m3.\n· Sensor de 4-20 mA utilizado, 4,5 m3 para 4 mA y 20 m3 para 20 mA, con el resultado siguiente: P , F | =\n4.500 y P . F 2 = 20.000.\n· Rango de ajuste de 6 a 15 m3 con el resultado siguiente: P , P | = 6.000 (referencia mínima) y P , P 2 =\n15.000 (referencia máxima).\n· Referencias de ejemplo:\n- rP1 (referencia interna) = 9.500\n- rP2 (referencia preseleccionada) = 6.500\n- rP3 (referencia preseleccionada) = 8.000\n- rP4 (referencia preseleccionada) = 11.200\nEl menú [3.4 CONFIG. VISUALIZACIÓN] permite personalizar el nombre de la unidad visualizada y su\nformato.\nRango de ajuste +\n(referencia)\nPIP2 (15.000)\nPIP1 (6.000)\nPIF1\n(4,500)\nPIF2\n(20,000)\nRetorno PID\nOtros parámetros:\n· Parámetro [Niv.rearranque PID] (- 5 L ): Permite establecer el umbral de error PID por encima del cual\nel regulador PID se reactivará (inicio) después de una parada causada por un rebasamiento del umbral de\ntiempo máximo a baja velocidad [Tpo a Vel. mínima] ( E L 5).\n· Inversión del sentido de corrección [PID inverso] (P , C): Si [PID inverso] (P , C) se establece en [No]\n(na), la velocidad del motor aumentará cuando el error sea positivo (por ejemplo: regulación de la presión\ncon un compresor). Si [PID inverso] (P , C ) se establece en [Sí] ( y E 5), la velocidad del motor disminuirá\ncuando el error sea positivo (por ejemplo: regulación de la temperatura con un ventilador de refrigeración).\n· Una entrada lógica puede cortocircuitar la ganancia integral.\n· Una salida lógica puede configurar e indicar una alarma de retorno PID.\n· Una salida lógica puede configurar e indicar una alarma de error PID.\nNVE41298 04/2018\n209",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Modo Configuración (ConF)\nFuncionamiento manual/automático con PID\nEsta función combina el regulador PID, las velocidades preseleccionadas y una referencia manual. En función\ndel estado de la entrada lógica, la referencia de velocidad se obtiene mediante las velocidades\npreseleccionadas o mediante una entrada de referencia manual a través de la función PID.\nReferencia manual [Referencia manual] (P , 77):\n· Entradas analógicas de la Al1 a la Al3\n· Entrada de pulsos\nReferencia de velocidad predictiva [Asign. ref. velocidad] (F P ,):\n· [Al1] (A , I): Entrada analógica\n· [Al2] (A , 2): Entrada analógica\n· [Al3] (A , 3): Entrada analógica\n· [RP] (P .): Entrada de pulsos\n· [HMI] (L [ C): Terminal gráfico o terminal remoto\n· [Modbus] (n d b): Modbus integrado\n· [CANopen] ([ An): CANopen® integrado\n· [Carta COM.] (n E E): Tarjeta de comunicaciones (si se ha insertado)\nConfiguración del regulador PID\n1. Configuración en modo PID.\nConsulte el diagrama de la página 208.\n2. Realización de una prueba en modo de ajustes de fábrica.\nPara optimizar el variador, ajuste [Ganancia Prop.(PID)] (- P G) o [Ganancia Int.(PID)] (r , G) de forma\ngradual e independiente y observe los efectos en el retorno PID en relación con la referencia.\n3. Si los ajustes de fábrica son inestables o la referencia no es correcta.\n· Realice una prueba con una referencia de velocidad en modo manual (sin el regulador PID) y con el\nvariador cargado para determinar el rango de velocidad del sistema:\n- En régimen permanente, la velocidad debe ser estable y conforme a la referencia, y la señal de\nretorno PID también debe ser estable.\n- En régimen transitorio, la velocidad debe seguir la rampa y estabilizarse rápidamente, y el retorno\nPID debe seguir la velocidad. En caso contrario, consulte los ajustes del variador y/o la señal del\nsensor y el cableado.\n· Cambie a modo PID.\n· Establezca [Adapt.rampa dec.] (br A) en [No] (na) (sin autoadaptación de la rampa).\n· Establezca la [Rampa PID] (Pr P) en el mínimo permitido por el mecanismo sin activar un [Frenado\nexcesivo] ( a 6 F ).\n· Ajuste la ganancia integral [Ganancia Int.(PID)] (r , G) al mínimo.\n· Deje la ganancia derivada [Ganancia deriv. PID] (r d G) a 0.\n· Observe el retorno PID y la referencia.\n· Encienda y apague el variador varias veces o cambie la carga o la referencia rápidamente varias veces.\n· Ajuste la ganancia proporcional [Ganancia Prop.(PID)] (- P G) para encontrar un equilibrio entre tiempo\nde respuesta y estabilidad en las fases transitorias (un pequeño rebasamiento y 1 ó 2 oscilaciones antes\nde estabilizarse).\n· Si la referencia es distinta del valor preseleccionado en el régimen permanente, aumente progresivamente la\nganancia integral [Ganancia Int.(PID)] (r , G), reduzca la ganancia proporcional [Ganancia Prop.(PID)]\n(~ P G) en caso de inestabilidad (aplicaciones de bomba) y encuentre un equilibrio entre el tiempo de\nrespuesta y la precisión estática (consulte el diagrama).\n· Por último, la ganancia derivada puede reducir el rebasamiento y mejorar el tiempo de respuesta, aunque\nobtener un equilibrio en términos de estabilidad puede resultar más difícil porque esto depende de las tres\nganancias.\n· Realice pruebas en producción en todo el rango de referencias.\n210\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Modo Configuración (ConF)\nValor\nregulado\nTiempo de estabilización\nrPG alto\nRebasamiento\nReferencia\nGanancia\nproporcional\n7\nError estático\nrPG bajo\nTiempo de subida\nGanancia\nintegral\nReferencia\nrIG alto\nTiempo\nrIG bajo\nReferencia\nrPG y rIG correctos\nTiempo\nrdG aumentado\nTiempo\nLa frecuencia de oscilación depende de la cinemática del sistema.\nParámetro\nTiempo de subida\nRebasamiento\nTiempo de\nestabilización\nError estático\n1\nrPG\n1\n=\n1\nrIG\n11\n1\n1\nrdG\n=\n=\nNVE41298 04/2018\n211",
+      "tablas": [
+        [
+          [
+            "Parámetro\n:unselected:",
+            "Tiempo de subida\n:unselected:",
+            "Rebasamiento",
+            "Tiempo de estabilización",
+            "Error estático"
+          ],
+          [
+            "1 rPG\n:selected:",
+            ":selected:",
+            "1\n:selected:",
+            "=\n:unselected:",
+            ":selected:"
+          ],
+          [
+            "1 rIG\n:selected:",
+            ":selected:",
+            "11\n:selected:",
+            "1\n:selected:",
+            ":selected:"
+          ],
+          [
+            "1 rdG\n:selected:",
+            "=\n:unselected:",
+            ":selected:",
+            ":selected:",
+            "=\n:unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > PID-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nPid -\n[REGULADOR PID]\nNota: Esta función no puede utilizarse con algunas de las demás funciones disponibles. Siga las instrucciones de la página 164.\nPIF\n[Retorno PID]\n[No] (na)\n[No] (na): No asignado\nAll\n[Al1] (A11): Entrada analógica A1\nA 12\n[Al2] (A 12): Entrada analógica A2\nA13 [Al3] (A13): Entrada analógica A3\n[RP] (P .): Entrada de pulsos\n[Al red 1] (A 1 u I): Entrada analógica virtual 1 por el bus de comunicaciones\nA102\n[Al red 2] ( A , u 2): Entrada analogica virtual 2 por el bus de comunicaciones\n[OA01] ( a AD I): Bloques funcionales: Salida analógica 01\n[OA10] (a A 10): Bloques funcionales: Salida analógica 10\nAC2\n[Canal AI2 - Red]\n[No] (nO)\ng\nSe puede acceder a este parámetro si [Retorno PID] (P , F) se establece en [Al red 2] (A , u 2). También se puede acceder\na este parámetro desde el menú [ENTRADAS/SALIDAS] ( , - a -).\n[No] (na): No asignado\n[Modbus] ([ d b): Modbus integrado\nCAn\n[CANopen] ([ An): CANopen® integrado\nnEt\n[Carta COM.] (n E E): Tarjeta de comunicaciones (si se ha insertado)\n[Retorno mínimo PID]\nDe 0 a [Ret. máximo PID] (P , F 2) (2)\n100\ng\nValor del retorno mínimo.\n(1)\nPIF 2\n[Ret. máximo PID]\nDe [Retorno mínimo PID] (P , F |) a\n32.767 (2)\n1,000\ng\nValor del retorno máximo.\nC\n(1)\nPIP1\n[Ref. mínima PID]\nDe [Retorno mínimo PID] (P , F I) a\n[Ref. máxima PID] (P , P 2) (2)\n150\ng\nValor mínimo del proceso.\n(1)\nPIP2\n[Ref. máxima PID]\nDe [Ref. mínima PID] (P , P I) a\n[Ret. máximo PID] (P , F 2) (2)\n900\ng\nValor máximo del proceso.\nC\n(1)\n[Ref. Interna PID]\n[No] (nO)\ng\nReferencia interna del regulador PID.\nyES\n[No] (na): La referencia del regulador PID viene determinada por [Canal Ref.1] (Fr |) o [Canal Ref.1B] (Fr | b) con las\nfunciones de suma/resta/multiplicación (consulte el diagrama de la página 208).\n[Sí] ( y E 5): La referencia del regulador PID es interna a través de [Ref. Interna PID] (~ P .).\n212\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            ""
+          ],
+          [
+            "Pid -",
+            "[REGULADOR PID] Nota: Esta función no puede utilizarse con algunas de las demás funciones disponibles. Siga las instrucciones",
+            ""
+          ],
+          [
+            "de la página 164."
+          ],
+          [
+            "PIF",
+            "[Retorno PID]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "[No] (na): No asignado",
+            "",
+            ""
+          ],
+          [
+            "All",
+            "[Al1] (A11): Entrada analógica A1",
+            "",
+            ""
+          ],
+          [
+            "A 12",
+            "[Al2] (A 12): Entrada analógica A2",
+            "",
+            ""
+          ],
+          [
+            "A13",
+            "[Al3] (A13): Entrada analógica A3",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[RP] (P .): Entrada de pulsos",
+            ""
+          ],
+          [
+            "",
+            "[Al red 1] (A 1 u I): Entrada analógica virtual 1 por el bus de comunicaciones",
+            ""
+          ],
+          [
+            "A102",
+            "[Al red 2] ( A , u 2): Entrada analogica virtual 2 por el bus de comunicaciones"
+          ],
+          [
+            "",
+            "[OA01] ( a AD I): Bloques funcionales: Salida analógica 01",
+            ""
+          ],
+          [
+            "",
+            "[OA10] (a A 10): Bloques funcionales: Salida analógica 10",
+            "",
+            ""
+          ],
+          [
+            "AC2",
+            "[Canal AI2 - Red]",
+            "",
+            "[No] (nO)"
+          ],
+          [
+            "g",
+            "Se puede acceder a este parámetro si [Retorno PID] (P , F) se establece en [Al red 2] (A , u 2). También se puede acceder a este parámetro desde el menú [ENTRADAS/SALIDAS] ( , - a -)."
+          ],
+          [
+            "",
+            "[No] (na): No asignado",
+            ""
+          ],
+          [
+            "",
+            "[Modbus] ([ d b): Modbus integrado",
+            "",
+            ""
+          ],
+          [
+            "CAn",
+            "[CANopen] ([ An): CANopen® integrado",
+            ""
+          ],
+          [
+            "nEt",
+            "[Carta COM.] (n E E): Tarjeta de comunicaciones (si se ha insertado)",
+            ""
+          ],
+          [
+            "",
+            "[Retorno mínimo PID]",
+            "De 0 a [Ret. máximo PID] (P , F 2) (2)",
+            "100"
+          ],
+          [
+            "g\n:selected:",
+            "Valor del retorno mínimo.",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "(1)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PIF 2",
+            "[Ret. máximo PID]",
+            "De [Retorno mínimo PID] (P , F |) a 32.767 (2)",
+            "1,000"
+          ],
+          [
+            "g\n:selected:",
+            "Valor del retorno máximo.",
+            ""
+          ],
+          [
+            "C\n:unselected:",
+            "",
+            ""
+          ],
+          [
+            "(1)\n:unselected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PIP1",
+            "[Ref. mínima PID]",
+            "De [Retorno mínimo PID] (P , F I) a [Ref. máxima PID] (P , P 2) (2)",
+            "150"
+          ],
+          [
+            "g\n:selected:",
+            "Valor mínimo del proceso.",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "(1)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PIP2",
+            "[Ref. máxima PID]",
+            "De [Ref. mínima PID] (P , P I) a [Ret. máximo PID] (P , F 2) (2)",
+            "900"
+          ],
+          [
+            "g\n:selected:",
+            "Valor máximo del proceso.",
+            "",
+            ""
+          ],
+          [
+            "C\n:unselected:",
+            "",
+            ""
+          ],
+          [
+            "(1)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[Ref. Interna PID]",
+            "",
+            "[No] (nO)"
+          ],
+          [
+            "g\n:selected:",
+            "Referencia interna del regulador PID.",
+            "",
+            ""
+          ],
+          [
+            "yES",
+            "[No] (na): La referencia del regulador PID viene determinada por [Canal Ref.1] (Fr |) o [Canal Ref.1B] (Fr | b) con las funciones de suma/resta/multiplicación (consulte el diagrama de la página 208). [Sí] ( y E 5): La referencia del regulador PID es interna a través de [Ref. Interna PID] (~ P .)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > PID-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\n[Ref. Interna PID]\nDe [Ref. mínima PID] (P , P I) a\n[Ref. máxima PID] (P , P 2)\n150\ng\nC\nReferencia interna del regulador PID.\nTambién se puede acceder a este parámetro desde el menú [1.2 SUPERVISIÓN] (non - ).\nr PG\ng\nC\n[Ganancia Prop.(PID)]\nDe 0,01 a 100\n1\nGanancia proporcional.\nFIG\n[Ganancia Int.(PID)]\nDe 0,01 a 100\n1\ng\nGanancia integral.\nrd G\ng\n[Ganancia deriv. PID]\nGanancia derivada.\nDe 0,00 a 100\n0\nPr P\n[Rampa PID]\nDe 0 a 99,9 s\n0 s\ng\nC\nRampa de aceleración/deceleración del PID definida para ir de [Ref. mínima PID] (P , P I) a [Ref. máxima PID] (P , P 2) y\nviceversa.\n(1)\nPIC\n[PID inverso]\n[No] (na)\ng\nInversión del sentido de corrección [PID inverso] (P , C):\nSi [PID inverso] (P , C) se establece en [No] (na), la velocidad del motor aumentará cuando el error sea positivo (ejemplo:\nregulación de la presión con un compresor).\nSi [PID inverso] (P , C )se establece en [Sí] ( y E 5), la velocidad del motor disminuirá cuando el error sea positivo (ejemplo:\nregulación de la temperatura con un ventilador de refrigeración).\nYES\n[No] (na): No\n[Sí] ( y E 5): Sí\nPOL\n[Salida mínima PID]\nDe - 599 a 599 Hz\n0 Hz\ng\nValor mínimo de la salida del regulador en Hz.\nC\n(1)\nPOH\n[Salida máxima PID]\nDe 0 a 599 Hz\n60 Hz\ng\nValor máximo de la salida del regulador en Hz.\nC\n(1)\nPAL\ng\n[Al. retorno mínimo]\nDe [Retorno mínimo PID] (P , F I) a\n[Ret. máximo PID] (P , F 2) (2)\n100\nUmbral mínimo de supervisión del retorno del regulador.\n(1)\nNVE41298 04/2018\n213",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "",
+            "[Ref. Interna PID]",
+            "De [Ref. mínima PID] (P , P I) a [Ref. máxima PID] (P , P 2)",
+            "150"
+          ],
+          [
+            "g C\n:selected:\n:unselected:",
+            "Referencia interna del regulador PID. También se puede acceder a este parámetro desde el menú [1.2 SUPERVISIÓN] (non - )."
+          ],
+          [
+            "r PG g C\n:selected:\n:unselected:",
+            "[Ganancia Prop.(PID)]",
+            "De 0,01 a 100",
+            "1"
+          ],
+          [
+            "Ganancia proporcional.",
+            "",
+            ""
+          ],
+          [
+            "FIG",
+            "[Ganancia Int.(PID)]",
+            "De 0,01 a 100",
+            "1"
+          ],
+          [
+            "g\n:selected:",
+            "Ganancia integral.",
+            "",
+            ""
+          ],
+          [
+            ":unselected:"
+          ],
+          [
+            "rd G g\n:selected:\n:unselected:",
+            "[Ganancia deriv. PID] Ganancia derivada.",
+            "De 0,00 a 100",
+            "0"
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "Pr P\n:unselected:",
+            "[Rampa PID]",
+            "De 0 a 99,9 s",
+            "0 s"
+          ],
+          [
+            "g C\n:selected:\n:unselected:",
+            "Rampa de aceleración/deceleración del PID definida para ir de [Ref. mínima PID] (P , P I) a [Ref. máxima PID] (P , P 2) y viceversa."
+          ],
+          [
+            "(1)\n:unselected:"
+          ],
+          [
+            "PIC",
+            "[PID inverso]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "g\n:selected:",
+            "Inversión del sentido de corrección [PID inverso] (P , C): Si [PID inverso] (P , C) se establece en [No] (na), la velocidad del motor aumentará cuando el error sea positivo (ejemplo: regulación de la presión con un compresor). Si [PID inverso] (P , C )se establece en [Sí] ( y E 5), la velocidad del motor disminuirá cuando el error sea positivo (ejemplo: regulación de la temperatura con un ventilador de refrigeración)."
+          ],
+          [
+            "YES",
+            "[No] (na): No [Sí] ( y E 5): Sí",
+            "",
+            ""
+          ],
+          [
+            "POL",
+            "[Salida mínima PID]",
+            "De - 599 a 599 Hz",
+            "0 Hz"
+          ],
+          [
+            "g\n:selected:",
+            "Valor mínimo de la salida del regulador en Hz.",
+            "",
+            ""
+          ],
+          [
+            "C\n:unselected:",
+            ""
+          ],
+          [
+            "(1)\n:unselected:"
+          ],
+          [
+            "POH",
+            "[Salida máxima PID]",
+            "De 0 a 599 Hz",
+            "60 Hz"
+          ],
+          [
+            "g\n:selected:",
+            "Valor máximo de la salida del regulador en Hz."
+          ],
+          [
+            "C\n:unselected:",
+            ""
+          ],
+          [
+            "(1)\n:unselected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PAL g\n:selected:",
+            "[Al. retorno mínimo]",
+            "De [Retorno mínimo PID] (P , F I) a [Ret. máximo PID] (P , F 2) (2)",
+            "100"
+          ],
+          [
+            ":unselected:",
+            "Umbral mínimo de supervisión del retorno del regulador."
+          ],
+          [
+            "(1)\n:unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > PID-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nPAH\n[Al. retorno máximo]\nDe [Retorno mínimo PID] (P , F 1) a\n[Ret. máximo PID] (P , F 2) (2)\n1,000\ng\nUmbral máximo de supervisión del retorno del regulador.\nC\n(1)\nPEr\n[Alarma error PID]\nDe 0 a 65.535 (2)\n100\ng\nUmbral de supervisión de errores del regulador.\n(1)\nP.S\n[Inhibir integral PID]\n[No] (na)\ng\nSi la entrada o el bit asignado se encuentra en posición 0, la función está inactiva (la integral del PID está activada).\nSi la entrada o el bit asignado se encuentra en posición 1, la función está activa (la integral del PID está desactivada).\nno [No] (na): No asignado\nL | | |[LI1] (L + 1): Entrada lógica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\nFPI\n[Asign. ref. velocidad]\n[No] (na)\ng\nEntrada de velocidad predictiva del regulador PID.\n[No] (na): Sin asignar\n[Al1] (A11): Entrada analógica A1\nA 12\n[Al2] (A12): Entrada analógica A2\nA , 3\n[Al3] (A 1 3): Entrada analógica A3\nLCC\n[HMI] (L C C): Fuente del terminal gráfico o del terminal remoto\n[Modbus] ([ d b): Modbus integrado\n[An\n[CANopen] ([ An): CANopen® integrado\nnEt\n[Carta COM.] (n E E ): Fuente de la placa de opciones de comunicación\nPI\n[RP] (PI): Entrada de pulsos\n[Al red 1] (A 1 u I): Entrada analógica virtual 1 con el selector giratorio\n[OA01] ( a RO I): Bloques funcionales: Salida analógica 01\n[OA10] (a A 10): Bloques funcionales: Salida analógica 10\nPSr\n[% ref. velocidad]\nDe 1 a 100%\n100%\ng\nC\nCoeficiente multiplicador para la entrada de velocidad predictiva.\nNo se puede acceder a este parámetro si [Asign. ref. velocidad] (F P ,) se establece en [No] (na).\n(1)\nPAU\n[Asig. auto/manu]\n[No] (na)\ng\nSi la entrada o el bit asignado se encuentra en posición 0, el PID está activo.\nSi la entrada o el bit asignado se encuentra en posición 1, el funcionamiento manual está activo.\nno [No] (na): No asignado\nL 1 1\n[LI1] (L , I): Entrada lógica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\nAC 2\n[Aceleración 2]\nDe 0,00 a 6.000 s (3)\n5 s\ng\nC\nTiempo necesario para acelerar desde 0 hasta la [Frec. nom.Motor] (F - 5). Para tener repetibilidad en las rampas, el valor\nde este parámetro debe establecerse de acuerdo con las posibilidades de la aplicación.\nLa rampa AC2 sólo está activa cuando se inicia la función PID y durante el inicio del PID.\n(1)\n214\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "PAH",
+            "[Al. retorno máximo]",
+            "De [Retorno mínimo PID] (P , F 1) a [Ret. máximo PID] (P , F 2) (2)",
+            "1,000"
+          ],
+          [
+            "g\n:selected:",
+            "Umbral máximo de supervisión del retorno del regulador.",
+            ""
+          ],
+          [
+            "C\n:unselected:",
+            "",
+            ""
+          ],
+          [
+            "(1)\n:unselected:",
+            "",
+            ""
+          ],
+          [
+            "PEr",
+            "[Alarma error PID]",
+            "De 0 a 65.535 (2)",
+            "100"
+          ],
+          [
+            "g\n:selected:",
+            "Umbral de supervisión de errores del regulador.",
+            ""
+          ],
+          [
+            ":unselected:",
+            "",
+            ""
+          ],
+          [
+            "(1)\n:unselected:",
+            "",
+            ""
+          ],
+          [
+            "P.S",
+            "[Inhibir integral PID]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "g\n:selected:",
+            "Si la entrada o el bit asignado se encuentra en posición 0, la función está inactiva (la integral del PID está activada). Si la entrada o el bit asignado se encuentra en posición 1, la función está activa (la integral del PID está desactivada)."
+          ],
+          [
+            "no",
+            "[No] (na): No asignado",
+            ""
+          ],
+          [
+            "L | |",
+            "|[LI1] (L + 1): Entrada lógica LI1",
+            ""
+          ],
+          [
+            "",
+            "[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            ""
+          ],
+          [
+            "FPI",
+            "[Asign. ref. velocidad]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "g\n:selected:",
+            "Entrada de velocidad predictiva del regulador PID.",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[No] (na): Sin asignar",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[Al1] (A11): Entrada analógica A1",
+            "",
+            ""
+          ],
+          [
+            "A 12",
+            "[Al2] (A12): Entrada analógica A2",
+            "",
+            ""
+          ],
+          [
+            "A , 3",
+            "[Al3] (A 1 3): Entrada analógica A3",
+            "",
+            ""
+          ],
+          [
+            "LCC",
+            "[HMI] (L C C): Fuente del terminal gráfico o del terminal remoto",
+            ""
+          ],
+          [
+            "",
+            "[Modbus] ([ d b): Modbus integrado",
+            ""
+          ],
+          [
+            "[An",
+            "[CANopen] ([ An): CANopen® integrado",
+            ""
+          ],
+          [
+            "nEt",
+            "[Carta COM.] (n E E ): Fuente de la placa de opciones de comunicación",
+            ""
+          ],
+          [
+            "PI",
+            "[RP] (PI): Entrada de pulsos",
+            ""
+          ],
+          [
+            "",
+            "[Al red 1] (A 1 u I): Entrada analógica virtual 1 con el selector giratorio",
+            ""
+          ],
+          [
+            "",
+            "[OA01] ( a RO I): Bloques funcionales: Salida analógica 01",
+            ""
+          ],
+          [
+            "",
+            "[OA10] (a A 10): Bloques funcionales: Salida analógica 10",
+            ""
+          ],
+          [
+            "PSr",
+            "[% ref. velocidad]",
+            "De 1 a 100%",
+            "100%"
+          ],
+          [
+            "g C\n:selected:\n:unselected:",
+            "Coeficiente multiplicador para la entrada de velocidad predictiva. No se puede acceder a este parámetro si [Asign. ref. velocidad] (F P ,) se establece en [No] (na).",
+            ""
+          ],
+          [
+            "(1)\n:unselected:",
+            ""
+          ],
+          [
+            "PAU",
+            "[Asig. auto/manu]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "g\n:selected:",
+            "Si la entrada o el bit asignado se encuentra en posición 0, el PID está activo. Si la entrada o el bit asignado se encuentra en posición 1, el funcionamiento manual está activo."
+          ],
+          [
+            "no",
+            "[No] (na): No asignado",
+            ""
+          ],
+          [
+            "L 1 1",
+            "[LI1] (L , I): Entrada lógica LI1",
+            ""
+          ],
+          [
+            "",
+            "[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            ""
+          ],
+          [
+            "AC 2",
+            "[Aceleración 2]",
+            "De 0,00 a 6.000 s (3)",
+            "5 s"
+          ],
+          [
+            "g C\n:selected:\n:unselected:",
+            "Tiempo necesario para acelerar desde 0 hasta la [Frec. nom.Motor] (F - 5). Para tener repetibilidad en las rampas, el valor de este parámetro debe establecerse de acuerdo con las posibilidades de la aplicación. La rampa AC2 sólo está activa cuando se inicia la función PID y durante el inicio del PID."
+          ],
+          [
+            "(1)\n:unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > PID-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nPin\n[Referencia manual]\n[No] (na)\ng\nEntrada de velocidad manual. Se puede acceder a este parámetro si [Asig. auto/manu] (P A u) no se establece en [No] (na).\nLas velocidades preseleccionadas están activas en la referencia manual si se han configurado.\nnO\n[No] (na): Sin asignar\nA , I [Al1] (A | I): Entrada analógica A1\nA 12\n[Al2] (A12): Entrada analógica A2\nAI3\n[Al3] (A13): Entrada analógica A3\nP .\n[RP] (P .): Entrada de pulsos\n[Al red 1] (A 1 u I): Entrada analógica virtual 1 con el selector giratorio\n[OA01] ( a RO I): Bloques funcionales: Salida analógica 01\n[OA10] ( a A 10): Bloques funcionales: Salida analógica 10\nEL 5\n[Tpo a Vel. mínima]\nDe 0 a 999,9 s\n0 s\nTiempo máximo de funcionamiento a [Velocidad Mínima] (L 5 P) (consulte [Velocidad Mínima] (L 5 P), página 89).\nTras su funcionamiento a [Velocidad Mínima] (L S P) durante un periodo de tiempo establecido, se solicita automáticamente\n(1)\nuna parada del motor. El motor volverá a arrancar si la referencia es superior a la [Velocidad Mínima] (L 5 P) y si la orden de\nmarcha sigue estando presente.\nNota: Un valor 0 indica un periodo de tiempo ilimitado.\nSi [Tpo a Vel. mínima] ( E L 5) no se encuentra en posición 0, [Tipo de parada] ( 5 ₺ E ), página 174, se fuerza a [Paro rampa]\n(- NP) (sólo si se puede configurar una parada de rampa).\nParámetro [Niv.rearranque PID]\nDe 0,0 a 100,0\n0\ng\nADVERTENCIA\n2 s\nFUNCIONAMIENTO INESPERADO DEL EQUIPO\nCompruebe que al activar esta función, no se producirán situaciones de riesgo.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nSi las funciones \"PID\" y \"Tiempo de funcionamiento a velocidad mínima\" [Tpo a Vel. mínima] (L L 5) se configuran al mismo\ntiempo, es posible que el regulador PID intente establecer una velocidad inferior a la [Velocidad Mínima] (L S P).\nEsto puede provocar un funcionamiento incorrecto que consiste en arrancar, avanzar a baja velocidad y parar, y así\nsucesivamente.\nEl parámetro [Niv.rearranque PID] (- 5 L ) (umbral de error de rearranque) puede utilizarse para establecer un nivel de error\nPID mínimo para volver a arrancar después de una parada prolongada a [Velocidad Mínima] (L 5 P). [Niv.rearranque PID]\n(- 5 L ) es un porcentaje del error PID (el valor depende de [Retorno mínimo PID] (P , F 1) y [Ret. máximo PID] (P , F 2),\nconsulte [Retorno mínimo PID] (P , F I) en la página 212).\nLa función está inactiva si [Tpo a Vel. mínima] (E L 5) = 0 o si [Niv.rearranque PID] (~ 5 L ) = 0.\n(1) También se puede acceder a este parámetro desde el menú [AJUSTES] ( 5 E E -).\n(2) Cuando no se utiliza un terminal gráfico, los valores superiores a 9999 se mostrarán en la pantalla de 4 dígitos con un\npunto después del dígito de millares, por ejemplo: 15.65 en lugar de 15560.\n(3) Rango de 0,01 a 99,99 s, de 0,1 a 999,9 s o de 1 a 6.000 s en función del [Incremento rampa] ( , nr ), página 171.\ng\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\n2 s\nPara cambiar la asignación de este parámetro, pulse la tecla ENT durante 2 segundos.\nNVE41298 04/2018\n215",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Pin",
+            "[Referencia manual]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "g",
+            "Entrada de velocidad manual. Se puede acceder a este parámetro si [Asig. auto/manu] (P A u) no se establece en [No] (na). Las velocidades preseleccionadas están activas en la referencia manual si se han configurado."
+          ],
+          [
+            "nO",
+            "[No] (na): Sin asignar",
+            "",
+            ""
+          ],
+          [
+            "A , I",
+            "[Al1] (A | I): Entrada analógica A1",
+            "",
+            ""
+          ],
+          [
+            "A 12",
+            "[Al2] (A12): Entrada analógica A2",
+            "",
+            ""
+          ],
+          [
+            "AI3",
+            "[Al3] (A13): Entrada analógica A3",
+            ""
+          ],
+          [
+            "P .",
+            "[RP] (P .): Entrada de pulsos",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[Al red 1] (A 1 u I): Entrada analógica virtual 1 con el selector giratorio [OA01] ( a RO I): Bloques funcionales: Salida analógica 01"
+          ],
+          [
+            ""
+          ],
+          [
+            "",
+            "[OA10] ( a A 10): Bloques funcionales: Salida analógica",
+            "10",
+            ""
+          ],
+          [
+            "EL 5",
+            "[Tpo a Vel. mínima]",
+            "De 0 a 999,9 s",
+            "0 s"
+          ],
+          [
+            "",
+            "Tiempo máximo de funcionamiento a [Velocidad Mínima] (L 5 P) (consulte [Velocidad Mínima] (L 5 P), página 89). Tras su funcionamiento a [Velocidad Mínima] (L S P) durante un periodo de tiempo establecido, se solicita automáticamente"
+          ],
+          [
+            "(1)",
+            "una parada del motor. El motor volverá a arrancar si la referencia es superior a la [Velocidad Mínima] (L 5 P) y si la orden de marcha sigue estando presente."
+          ],
+          [
+            "",
+            "Nota: Un valor 0 indica un periodo de tiempo ilimitado. Si [Tpo a Vel. mínima] ( E L 5) no se encuentra en posición 0, [Tipo de parada] ( 5 ₺ E ), página 174, se fuerza a [Paro rampa] (- NP) (sólo si se puede configurar una parada de rampa)."
+          ],
+          [
+            "",
+            "Parámetro [Niv.rearranque PID]",
+            "De 0,0 a 100,0",
+            "0"
+          ],
+          [
+            "g",
+            "ADVERTENCIA"
+          ],
+          [
+            "2 s",
+            "FUNCIONAMIENTO INESPERADO DEL EQUIPO"
+          ],
+          [
+            "",
+            "Compruebe que al activar esta función, no se producirán situaciones de riesgo. El incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo."
+          ],
+          [
+            "",
+            "Si las funciones \"PID\" y \"Tiempo de funcionamiento a velocidad mínima\" [Tpo a Vel. mínima] (L L 5) se configuran al mismo tiempo, es posible que el regulador PID intente establecer una velocidad inferior a la [Velocidad Mínima] (L S P). Esto puede provocar un funcionamiento incorrecto que consiste en arrancar, avanzar a baja velocidad y parar, y así sucesivamente."
+          ],
+          [
+            "El parámetro [Niv.rearranque PID] (- 5 L ) (umbral de error de rearranque) puede utilizarse para establecer un nivel de error PID mínimo para volver a arrancar después de una parada prolongada a [Velocidad Mínima] (L 5 P). [Niv.rearranque PID] (- 5 L ) es un porcentaje del error PID (el valor depende de [Retorno mínimo PID] (P , F 1) y [Ret. máximo PID] (P , F 2), consulte [Retorno mínimo PID] (P , F I) en la página 212). La función está inactiva si [Tpo a Vel. mínima] (E L 5) = 0 o si [Niv.rearranque PID] (~ 5 L ) = 0."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nREFERENCIAS PID PRESELECCIONADAS\nDRI- > CONF > FULL > FUN- > PRI-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de\nfábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nPri-\n[CONSIG.PID PRESELECC.]\nSe puede acceder a esta función si [Retorno PID] (P , F), página 212, se ha asignado.\nPr2\n[2 ref. PID preselec.]\n[No] (na)\nSi la entrada o el bit asignado se encuentra en posición 0, la función está inactiva.\nSi la entrada o el bit asignado se encuentra en posición 1, la función está activa.\n[No] (na): No asignado\nL | ||[LI1] (L , I): Entrada lógica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\nPr 4\n[4 ref. PID preselec.]\n[No] (na)\nAsegúrese de que [2 ref. PID preselec.] (Pr 2) se haya asignado antes de asignar esta función.\nIgual que [2 ref. PID preselec.] (Pr 2).\nSi la entrada o el bit asignado se encuentra en posición 0, la función está inactiva.\nSi la entrada o el bit asignado se encuentra en posición 1, la función está activa.\nrP2\n[Ref.presel.2 PID]\nDe [Ref. mínima PID] ( P , P I) a\n[Ref. máxima PID] (P , P 2) (2)\n300\ng\nSe puede acceder a este parámetro si [2 ref. PID preselec.] (Pr 2) se ha asignado.\nC\n(1)\nrP3\n[Ref.presel.3 PID]\nDe [Ref. mínima PID] (P , P I) a\n[Ref. máxima PID] (P , P 2) (2)\n600\ng\nSe puede acceder a este parámetro si [3 ref. PID preselec.] (Pr 3) se ha asignado.\nC\n(1)\nrP4\n[Ref.presel.4 PID]\nDe [Ref. mínima PID] (P , P I) a\n[Ref. máxima PID] (P , P 2) (2)\n900\ng\nSe puede acceder a este parámetro si [4 ref. PID preselec.] (Pr 4) se ha asignado.\n(1)\n(1) También se puede acceder a este parámetro desde el menú [AJUSTES] ( 5 E E - ).\n(2) Cuando no se utiliza un terminal gráfico, los valores superiores a 9999 se mostrarán en la pantalla de 4 dígitos con un\npunto después del dígito de millares, por ejemplo: 15.65 en lugar de 15560.\ng\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\n216\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            "",
+            ""
+          ],
+          [
+            "Pri-",
+            "[CONSIG.PID PRESELECC.] Se puede acceder a esta función si [Retorno PID] (P , F), página 212, se ha asignado.",
+            ""
+          ],
+          [
+            "Pr2",
+            "[2 ref. PID preselec.]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "Si la entrada o el bit asignado se encuentra en posición 0, la función está inactiva. Si la entrada o el bit asignado se encuentra en posición 1, la función está activa.",
+            ""
+          ],
+          [
+            "",
+            "[No] (na): No asignado",
+            ""
+          ],
+          [
+            "L |",
+            "||[LI1] (L , I): Entrada lógica LI1 [ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "Pr 4",
+            "[4 ref. PID preselec.]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "Asegúrese de que [2 ref. PID preselec.] (Pr 2) se haya asignado antes de asignar esta función. Igual que [2 ref. PID preselec.] (Pr 2). Si la entrada o el bit asignado se encuentra en posición 0, la función está inactiva. Si la entrada o el bit asignado se encuentra en posición 1, la función está activa.",
+            ""
+          ],
+          [
+            "rP2",
+            "[Ref.presel.2 PID]",
+            "De [Ref. mínima PID] ( P , P I) a [Ref. máxima PID] (P , P 2) (2)",
+            "300"
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si [2 ref. PID preselec.] (Pr 2) se ha asignado.",
+            ""
+          ],
+          [
+            "C\n:unselected:",
+            "",
+            ""
+          ],
+          [
+            "(1)\n:unselected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "rP3",
+            "[Ref.presel.3 PID]",
+            "De [Ref. mínima PID] (P , P I) a [Ref. máxima PID] (P , P 2) (2)",
+            "600"
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si [3 ref. PID preselec.] (Pr 3) se ha asignado.",
+            ""
+          ],
+          [
+            "C\n:unselected:",
+            "",
+            ""
+          ],
+          [
+            "(1)\n:unselected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "rP4",
+            "[Ref.presel.4 PID]",
+            "De [Ref. mínima PID] (P , P I) a [Ref. máxima PID] (P , P 2) (2)",
+            "900"
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si [4 ref. PID preselec.] (Pr 4) se ha asignado.",
+            ""
+          ],
+          [
+            ":unselected:",
+            "",
+            ""
+          ],
+          [
+            "(1)\n:unselected:",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Modo Configuración (ConF)\nLIMITACIÓN DE PAR\nExisten dos tipos de limitación de par:\n· Con un valor fijado por un parámetro\n· Con un valor establecido por una entrada analógica (Al o pulso)\nCuando ambos tipos están activados, se tiene en cuenta el valor más bajo. Ambos tipos de limitación pueden\nconfigurarse o cambiarse a distancia mediante una entrada lógica o un bus de comunicaciones.\n[Act.limitación par] ( E L A)\n[Limit. par motor]\n( EL , 7)\n[Limit.par\ngenerador]\n(EL , G)\nLimitación\nde par\nmediante\nparámetro\nLI\n[Sí]\n( YES)\n[LI]\n[No]\n(na)\nValor de limitaciór\n[Act. limit.analógica] ( L L C)\nValor más bajo\nque se tiene en\ncuenta\nC\n[AI.] (AI.)\n[RP] (PI)\nLimitación\nde par\nmediante\nentrada\nanalógica o\nRP\nLI\n[Sí]\n(YES)\n[LI]\n[AI]\n[No]\n(nO)\n[Asig. ref. de par] ( & AA)\nNVE41298 04/2018\n217",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > TOL-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\ntol -\n[LIMITACIÓN PAR]\nELA\n[Act.limitación par]\n[No] (nO)\nSi la entrada o el bit asignado se encuentra en posición 0, la función está inactiva.\nSi la entrada o el bit asignado se encuentra en posición 1, la función está activa.\nno [No] (na): Función inactiva\nyES\n[Sí] ( y E 5): Función siempre activa\nL .1\n[LI1] (L , I): Entrada lógica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\nInEP\n[Incremento par]\n[1%] ( 1)\ng\nNo se puede acceder a este parámetro si [Act.limitación par] (L L A) se establece en [No] (na).\nSelección de las unidades de los parámetros [Limit. par motor] (EL , 7) y [Limit.par generador] (E L , G).\n0. | |[0,1%] (D. I): Unidad al 0,1%\n1\n[1%] (1): Unidad al 1%\nEL In\n[Limit. par motor]\nDe 0 a 300%\n100%\ng\nNo se puede acceder a este parámetro si [Act.limitación par] (E L A) se establece en [No] (na).\nLimitación del par en régimen de motor como un % o en incrementos del 0,1% del par nominal en función del parámetro\n[Incremento par] ( In t P).\n(1)\nELIG\n[Limit.par generador]\nDe 0 a 300%\n100%\ng\nC\nNo se puede acceder a este parámetro si [Act.limitación par] (L L A) se establece en [No] (na).\nLimitación del par en régimen de generador como un % o en incrementos del 0,1% del par nominal en función del parámetro\n[Incremento par] ( In t P).\n(1)\n[Asig. ref. de par]\n[No] (na)\nSi la función está asignada, la limitación varía entre el 0 y el 300% del par nominal en función de la señal del 0 al 100% aplicada\na la entrada asignada.\nEjemplos:\n12 mA en una entrada de 4-20 mA da como resultado una limitación del 150% del par nominal.\n2,5 V en una entrada de 10 V da como resultado un 75% del par nominal.\nno [No] (na): Sin asignar (función inactiva)\nA : | |[Al1] (A , I): Entrada analógica\nA 1 2 [Al2] (A , 2): Entrada analógica\nA , 3 [Al3] ( A , 3): Entrada analógica\nP : [RP] (P .): Entrada de pulsos\nA iu | [Al red 1] (A , u I): Entrada analógica virtual 1 con el selector giratorio\nA 102\n[Al red 2] (A , u 2): Entrada virtual a través del bus de comunicaciones para configurarse mediante [Canal Al2 - Red]\n(A , [ 2), página 136.\nORD | |[OA01] ( a RO I): Bloques funcionales: Salida analógica 01\n[OA10] (= R 10): Bloques funcionales: Salida analógica 10\n218\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            ""
+          ],
+          [
+            "tol -",
+            "[LIMITACIÓN PAR]",
+            "",
+            ""
+          ],
+          [
+            "ELA",
+            "[Act.limitación par]",
+            "",
+            "[No] (nO)"
+          ],
+          [
+            "",
+            "Si la entrada o el bit asignado se encuentra en posición 0, la función está inactiva. Si la entrada o el bit asignado se encuentra en posición 1, la función está activa."
+          ],
+          [
+            "no",
+            "[No] (na): Función inactiva",
+            ""
+          ],
+          [
+            "yES",
+            "[Sí] ( y E 5): Función siempre activa",
+            ""
+          ],
+          [
+            "L .1",
+            "[LI1] (L , I): Entrada lógica LI1",
+            ""
+          ],
+          [
+            "",
+            "[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            ""
+          ],
+          [
+            "InEP",
+            "[Incremento par]",
+            "",
+            "[1%] ( 1)"
+          ],
+          [
+            "g\n:selected:",
+            "No se puede acceder a este parámetro si [Act.limitación par] (L L A) se establece en [No] (na). Selección de las unidades de los parámetros [Limit. par motor] (EL , 7) y [Limit.par generador] (E L , G)."
+          ],
+          [
+            "0. |\n1",
+            "|[0,1%] (D. I): Unidad al 0,1%\n[1%] (1): Unidad al 1%"
+          ],
+          [
+            "EL In",
+            "[Limit. par motor]",
+            "De 0 a 300%",
+            "100%"
+          ],
+          [
+            "g\n:selected:\n:unselected:",
+            "No se puede acceder a este parámetro si [Act.limitación par] (E L A) se establece en [No] (na). Limitación del par en régimen de motor como un % o en incrementos del 0,1% del par nominal en\n[Incremento par] ( In t P).",
+            "función del parámetro"
+          ],
+          [
+            "(1)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ELIG",
+            "[Limit.par generador]",
+            "De 0 a 300%",
+            "100%"
+          ],
+          [
+            "g C\n:selected:\n:unselected:",
+            "No se puede acceder a este parámetro si [Act.limitación par] (L L A) se establece en [No] (na). Limitación del par en régimen de generador como un % o en incrementos del 0,1% del par nominal en función del parámetro [Incremento par] ( In t P)."
+          ],
+          [
+            "(1)\n:unselected:"
+          ],
+          [
+            "",
+            "[Asig. ref. de par]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "Si la función está asignada, la limitación varía entre el 0 y el 300% del par nominal en función de la señal del 0 al 100% aplicada a la entrada asignada. Ejemplos: 12 mA en una entrada de 4-20 mA da como resultado una limitación del 150% del par nominal. 2,5 V en una entrada de 10 V da como resultado un 75% del par nominal."
+          ],
+          [
+            "no",
+            "[No] (na): Sin asignar (función inactiva)",
+            ""
+          ],
+          [
+            "A : |",
+            "|[Al1] (A , I): Entrada analógica",
+            ""
+          ],
+          [
+            "A 1 2",
+            "[Al2] (A , 2): Entrada analógica",
+            ""
+          ],
+          [
+            "A , 3",
+            "[Al3] ( A , 3): Entrada analógica",
+            ""
+          ],
+          [
+            "P :",
+            "[RP] (P .): Entrada de pulsos",
+            ""
+          ],
+          [
+            "A iu |",
+            "[Al red 1] (A , u I): Entrada analógica virtual 1 con el selector giratorio",
+            ""
+          ],
+          [
+            "A 102",
+            "[Al red 2] (A , u 2): Entrada virtual a través del bus de comunicaciones para configurarse mediante [Canal Al2 - Red] (A , [ 2), página 136."
+          ],
+          [
+            "ORD |",
+            "|[OA01] ( a RO I): Bloques funcionales: Salida analógica 01"
+          ],
+          [
+            "",
+            "[OA10] (= R 10): Bloques funcionales: Salida analógica 10",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > TOL-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nELC\n[Act. limit.analógica]\n[Si] ( y E 5)\nNo se puede acceder a este parámetro si [Act.limitación par] (L L A) se establece en [No] (na).\nIgual que [Act.limitación par] (L L A), página 218.\ng\nSi la entrada o el bit asignado se encuentra en posición 0:\nLa limitación viene determinada por los parámetros [Limit. par motor] (E L , 77) y [Limit.par generador] ( & L , G) si\n[Act. limitación par] ( L L A) no se establece en [No] (na).\nNo hay limitación si [Act.limitación par] ( L L A) se establece en [No] (na).\nSi la entrada o el bit asignado se encuentra en posición 1:\nLa limitación depende de la entrada asignada por [Asig. ref. de par] ( & AA).\nNota: Si [Limit. par] (E L A) y [Asig. ref. de par] ( & AA) se activan al mismo tiempo, se tendrá en cuenta el valor más bajo.\n(1) También se puede acceder a este parámetro desde el menú [AJUSTES] ( SE E - ).\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\ng\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\nNVE41298 04/2018\n219",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "ELC",
+            "[Act. limit.analógica]",
+            "",
+            "[Si] ( y E 5)"
+          ],
+          [
+            "",
+            "No se puede acceder a este parámetro si [Act.limitación par] (L L A) se establece en [No] (na). Igual que [Act.limitación par] (L L A), página 218."
+          ],
+          [
+            "g",
+            "Si la entrada o el bit asignado se encuentra en posición 0: La limitación viene determinada por los parámetros [Limit. par motor] (E L , 77) y [Limit.par generador] ( & L , G) si [Act. limitación par] ( L L A) no se establece en [No] (na). No hay limitación si [Act.limitación par] ( L L A) se establece en [No] (na). Si la entrada o el bit asignado se encuentra en posición 1: La limitación depende de la entrada asignada por [Asig. ref. de par] ( & AA). Nota: Si [Limit. par] (E L A) y [Asig. ref. de par] ( & AA) se activan al mismo tiempo, se tendrá en cuenta el valor más bajo."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > CLI-\nSEGUNDA LIMITACIÓN DE INTENSIDAD\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nCLI -\n[SEGUNDA LIMIT.INTENS.]\nLC2\n[Act. Limitación Int.2]\n[No] (na)\nSi la entrada o el bit asignado se encuentra en posición 0, la primera limitación de corriente está activa.\nSi la entrada o el bit asignado se encuentra en posición 1, la segunda limitación de corriente está activa.\nno [No] (na): Función inactiva\nL | | |[LI1] (L , I): Entrada lógica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\nCL2\n[Limit. intensidad 2]\nDe 0 a 1,5 In (1)\n1,5 In (1)\nAVISO\ng\nSOBRECALENTAMIENTO Y DAÑOS EN EL MOTOR\nC\n· Compruebe que el motor tenga un valor nominal adecuado para la corriente máxima que se aplicará al\nmismo.\n· Tenga en cuenta el ciclo de servicio del motor y todos los factores de su aplicación, incluidos los\nrequisitos de reducción de potencia, a la hora de determinar el límite de corriente.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nSegunda limitación de intensidad.\nSe puede acceder a este parámetro si [Act. Limitación Int.2] (L [ 2) no se establece en [No] (na).\nEl rango de ajuste está limitado a 1,5 In.\nNota: Si el valor es inferior a 0,25 In, el variador puede bloquearse en el modo de fallo [Pérdida fase motor] ( a PL ) si éste\nse ha activado (consulte [Pérdida fase motor] (OPL) en la página 260). Si el valor es inferior a la intensidad del motor en\nvacío, el motor no puede funcionar.\nCL\n[Limit. Intensidad]\nDe 0 a 1,5 In (1)\n1,5 In (1)\nAVISO\ng\nSOBRECALENTAMIENTO Y DAÑOS EN EL MOTOR\n· Compruebe que el motor tenga un valor nominal adecuado para la corriente máxima que se aplicará al\nmismo.\n· Tenga en cuenta el ciclo de servicio del motor y todos los factores de su aplicación, incluidos los\nrequisitos de reducción de potencia, a la hora de determinar el límite de corriente.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nPrimera limitación de intensidad.\nSe puede acceder a este parámetro si [Act. Limitación Int.2] (L [ 2) no se establece en [No] (na).\nEl rango de ajuste está limitado a 1,5 In.\nNota: Si el valor es inferior a 0,25 In, el variador puede bloquearse en el modo de fallo [Pérdida fase motor] ( a PL ) si este\nse ha activado (consulte [Pérdida fase motor] ( a PL ) en la página 260). Si el valor es inferior a la intensidad del motor en\nvacío, el motor no puede funcionar.\n(1) Corresponde a la corriente nominal del variador que se indica en el Manual de instalación y en la placa de características\ndel variador.\ng\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\n220\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            "",
+            ""
+          ],
+          [
+            "CLI -",
+            "[SEGUNDA LIMIT.INTENS.]",
+            "",
+            ""
+          ],
+          [
+            "LC2",
+            "[Act. Limitación Int.2]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "Si la entrada o el bit asignado se encuentra en posición 0, la primera limitación de corriente está activa. Si la entrada o el bit asignado se encuentra en posición 1, la segunda limitación de corriente está activa."
+          ],
+          [
+            "no\nL | |",
+            "[No] (na): Función inactiva\n|[LI1] (L , I): Entrada lógica LI1 [ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "CL2",
+            "[Limit. intensidad 2]",
+            "De 0 a 1,5 In (1)",
+            "1,5 In (1)"
+          ],
+          [
+            "",
+            "AVISO"
+          ],
+          [
+            "g",
+            "SOBRECALENTAMIENTO Y DAÑOS EN EL MOTOR"
+          ],
+          [
+            "C",
+            "· Compruebe que el motor tenga un valor nominal adecuado para la corriente máxima que se aplicará al mismo."
+          ],
+          [
+            "",
+            "· Tenga en cuenta el ciclo de servicio del motor y todos los factores de su aplicación, incluidos los requisitos de reducción de potencia, a la hora de determinar el límite de corriente. Si no se respetan estas instrucciones, pueden producirse daños en el equipo."
+          ],
+          [
+            "",
+            "Segunda limitación de intensidad. Se puede acceder a este parámetro si [Act. Limitación Int.2] (L [ 2) no se establece en [No] (na). El rango de ajuste está limitado a 1,5 In. Nota: Si el valor es inferior a 0,25 In, el variador puede bloquearse en el modo de fallo [Pérdida fase motor] ( a PL ) si éste se ha activado (consulte [Pérdida fase motor] (OPL) en la página 260). Si el valor es inferior a la intensidad del motor en vacío, el motor no puede funcionar."
+          ],
+          [
+            "CL\n:unselected:",
+            "[Limit. Intensidad]",
+            "De 0 a 1,5 In (1)",
+            "1,5 In (1)"
+          ],
+          [
+            "",
+            "AVISO"
+          ],
+          [
+            "g\n:selected:",
+            "SOBRECALENTAMIENTO Y DAÑOS EN EL MOTOR"
+          ],
+          [
+            ":unselected:",
+            "· Compruebe que el motor tenga un valor nominal adecuado para la corriente máxima que se aplicará al mismo."
+          ],
+          [
+            "",
+            "· Tenga en cuenta el ciclo de servicio del motor y todos los factores de su aplicación, incluidos los requisitos de reducción de potencia, a la hora de determinar el límite de corriente. Si no se respetan estas instrucciones, pueden producirse daños en el equipo."
+          ],
+          [
+            "",
+            "Primera limitación de intensidad. Se puede acceder a este parámetro si [Act. Limitación Int.2] (L [ 2) no se establece en [No] (na). El rango de ajuste está limitado a 1,5 In. Nota: Si el valor es inferior a 0,25 In, el variador puede bloquearse en el modo de fallo [Pérdida fase motor] ( a PL ) si este se ha activado (consulte [Pérdida fase motor] ( a PL ) en la página 260). Si el valor es inferior a la intensidad del motor en vacío, el motor no puede funcionar."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > I2T-\nACTIVAR MODEL I2T\nEl DTM ATV320 está disponible con SoMove para ajustar los motores BMP. Para instalar el Altivar 320 DTM (device type\nmanager), puede descargar e instalar nuestra FDT (field device tool): SoMove lite en www.schneider-electric.com.\n12En\n[Nivel sobrecarg.I2t]\n90%*max 212t\ncorriente\nlimitación\nde corriente\nCLI\nInMotor\nCode\nName / Description\nAdjustment range\nFactory setting\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\n12E -\n[ACTIVAR MODEL IT]\n[Activación model I2t]\n[No] (na)\ng\nActivación del modelo de I2t para la limitación de corriente\n0\n[No] (na):\nyES [Si] (yE 5):\nCuando i2t ≥Máx Zi2t, [Nivel sobrecarg.12t] ( , 2 L /7) = 100 y la limitación de corriente se establece en InMotor\nCuando i2t ≤ Máx Zi2t*90%, [Nivel sobrecarg.12t] ( , 2 E 1) < 90 y la limitación de corriente se establece en CLI\nSe puede acceder a este parámetro si [T.retraso 12t] ( , 2 L E ) no se establece en [0.00 ] (0.0 0)\n126 1\n[ i2t Inten.máx]\n1.5 In +1 (1)\nCorriente máxima del modelo I2t.\n[T.retraso I2t]\n0.00 a 655.35\n[0.00 ] (0.00)\nTiempo máximo del modelo I2t.\n(1) Corresponde a la corriente nominal del variador que se indica en el Manual de instalación y en la placa de características\ndel variador.\ng\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\nNVE41298 04/2018\n221",
+      "tablas": [
+        [
+          [
+            "Code",
+            "Name / Description",
+            "Adjustment range",
+            "Factory setting"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            "",
+            ""
+          ],
+          [
+            "12E -",
+            "[ACTIVAR MODEL IT]",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[Activación model I2t]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "g",
+            "Activación del modelo de I2t para la limitación de corriente",
+            "",
+            ""
+          ],
+          [
+            "0",
+            "[No] (na):",
+            "",
+            ""
+          ],
+          [
+            "yES",
+            "[Si] (yE 5):",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cuando i2t ≥Máx Zi2t, [Nivel sobrecarg.12t] ( , 2 L /7) = 100 y la limitación de corriente se establece en InMotor Cuando i2t ≤ Máx Zi2t*90%, [Nivel sobrecarg.12t] ( , 2 E 1) < 90 y la limitación de corriente se establece en CLI"
+          ],
+          [
+            "",
+            "Se puede acceder a este parámetro si [T.retraso 12t] ( , 2 L E ) no se establece en [0.00 ] (0.0 0)"
+          ],
+          [
+            "126 1",
+            "[ i2t Inten.máx]",
+            "",
+            "1.5 In +1 (1)"
+          ],
+          [
+            "",
+            "Corriente máxima del modelo I2t.",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[T.retraso I2t]",
+            "0.00 a 655.35",
+            "[0.00 ] (0.00)"
+          ],
+          [
+            "",
+            "Tiempo máximo del modelo I2t.",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Modo Configuración (ConF)\nCONTROL DE UN CONTACTOR DE LÍNEA\nEl contactor de línea se cierra cada vez que se envía una orden de marcha (hacia delante o hacia atrás), y se\nabre después de cada parada en cuanto el variador queda bloqueado. Por ejemplo, si el modo de parada es\nde parada en rampa, el contactor se abrirá cuando el motor alcance la velocidad nula.\nNota: La alimentación eléctrica del control del variador debe provenir de una fuente externa de 24 V.\nCircuito de ejemplo:\nParada de\nemergencia 0-7\nLínea de\n~3\nMarcha/\nRearme E-\nK11\nK10\nK11\nKM1\n-O\nC\n0\nL1\nL2\nL3\nATV ··\nU\n0\nV\nO\nW\nP24\nCOM\nLIo\nLIn +24;\nC\n0\nM\n3\n1 24 V = source\n+24 VO\novo\nK10\nK11\nHacia delante\no\nhacia atrás\nAlimentación eléctrica de 24 V\nNota: La tecla \"Marcha/Rearme\" debe pulsarse cuando la tecla \"Parada de emergencia\" se haya soltado.\nLI. = Orden de marcha [Marcha Adelante] (Fr d) o [Marcha atrás] (~ ~ 5)\nLO-/LO+ = [Superv.contac.línea] (L L [)\nLIn = [Asignación bloqueo] (L E 5)\nAVISO\nDAÑOS EN EL VARIADOR\nNo utilice esta función a intervalos inferiores a 60 segundos.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\n222\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > LLC-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nLLC -\n[CTRL CONTACT. LÍNEA]\nLLC\n[Superv.contac.línea]\n[No] (nO)\nSalida lógica o relé de control.\nno [No] (na): Función no asignada (en este caso, no se puede acceder a ninguno de los parámetros de la función)\nLa | [LO1] (L a I): Salida lógica LO1\n~ 2 [R2] (~ 2): Relé r2\nde | [DO1] (do l): Salida analógica AO1 que funciona como una salida lógica. Se puede realizar la selección si [Asignación AO1]\n(Ao I), página 145, se establece en [No] (na)\nLES\n[Asignación bloqueo]\n[No] (na)\ng\nSe puede acceder a este parámetro si [Superv.contac.línea] (L L C ) no se establece en [No] (na).\nEl variador se bloquea cuando la entrada o el bit asignado se cambia a 0.\nno [No] (na): Función inactiva\nL , | |[LI1] (L , I): Entrada lógica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\nLCE\n[Time out U.línea]\nDe 5 a 999 s\n5 s\ng\nTiempo de supervisión del cierre del contactor de línea. Si, una vez transcurrido este tiempo, no hay tensión en el circuito de\npotencia del variador, el variador se bloqueará por un fallo en el [Contactor de línea] (L [ F ).\ng\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\nNVE41298 04/2018\n223",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            "",
+            ""
+          ],
+          [
+            "LLC -",
+            "[CTRL CONTACT. LÍNEA]",
+            "",
+            ""
+          ],
+          [
+            "LLC",
+            "[Superv.contac.línea]",
+            "",
+            "[No] (nO)"
+          ],
+          [
+            "",
+            "Salida lógica o relé de control.",
+            "",
+            ""
+          ],
+          [
+            "no",
+            "[No] (na): Función no asignada (en este caso, no se puede acceder a ninguno de los parámetros de la función)"
+          ],
+          [
+            "La |\n:unselected:",
+            "[LO1] (L a I): Salida lógica LO1"
+          ],
+          [
+            "~ 2\n:unselected:",
+            "[R2] (~ 2): Relé r2",
+            ""
+          ],
+          [
+            "de |\n:unselected:",
+            "[DO1] (do l): Salida analógica AO1 que funciona como una salida lógica. Se puede realizar la selección si [Asignación AO1] (Ao I), página 145, se establece en [No] (na)"
+          ],
+          [
+            "LES",
+            "[Asignación bloqueo]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "g",
+            "Se puede acceder a este parámetro si [Superv.contac.línea] (L L C ) no se establece en [No] (na). El variador se bloquea cuando la entrada o el bit asignado se cambia a 0."
+          ],
+          [
+            "no",
+            "[No] (na): Función inactiva",
+            ""
+          ],
+          [
+            "L , |",
+            "|[LI1] (L , I): Entrada lógica LI1",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            "",
+            ""
+          ],
+          [
+            "LCE",
+            "[Time out U.línea]",
+            "De 5 a 999 s",
+            "5 s"
+          ],
+          [
+            "g\n:selected:",
+            "Tiempo de supervisión del cierre del contactor de línea. Si, una vez transcurrido este tiempo, no hay tensión en el circuito de potencia del variador, el variador se bloqueará por un fallo en el [Contactor de línea] (L [ F )."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Modo Configuración (ConF)\nCONTROL DEL CONTACTOR DE SALIDA\nPermite al variador controlar un contactor situado entre el variador y el motor. El contactor se cierra cuando\nse aplica una orden de marcha. El contactor se abre cuando ya no hay corriente en el motor.\nNota: Si se utiliza la función de frenado por inyección de CC, el contactor de salida no se cerrará mientras la\ninyección esté activa\nRetorno del contactor de salida\nLa entrada lógica correspondiente debe estar en posición 1 cuando no hay ninguna orden de marcha y en\nposición 0 cuando está en funcionamiento.\nEn caso de incoherencia, el variador se dispara en FCF2 si el contactor de salida no se cierra (LIx en posición\n1) y en FCF1 si se bloquea (LIx en posición 0).\nEl parámetro [T. cierre contactor] ( d b 5) permite retrasar los disparos en modo de fallo cuando se envía\nuna orden de marcha y el parámetro [T. apert.contactor] ( d A 5) retrasa el fallo detectado cuando se define\nun comando de parada.\nNota: El fallo FCF2 (el contactor no se cierra) puede rearmarse al cambiar el estado de la orden de marcha\nde 1 a 0 (0 -- > 1 -- > 0 en control 3 hilos).\nATV ...\nU\nV\nW\nControl\n0\nLO./Ro\n-0\nO\nRetorno\n+24\nLI\n0\nO\nKM2\nK20\nKM2\nK20\nKM2\nM\n3~\nLas funciones [Superv.contac.mot.] ( a [ [) y [Ret.contactor mot.] (~ [ A) pueden utilizarse por separado\no de forma conjunta.\n224\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > OCC-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nOCC -\n[CTRL CONTACT. MOTOR]\n[Superv.contac.mot.]\n[No] (na)\nSalida lógica o relé de control.\nno [No] (na): Función no asignada (en este caso, no se puede acceder a ninguno de los parámetros de la función)\nLa | [LO1] (La I): Salida lógica LO1\n- 2 [R2] (~ 2): Relé r2\nde | [DO1] (da l): Salida analógica AO1 que funciona como una salida lógica. Se puede realizar la selección si [Asignación AO1]\n(Ao 1), página 145, se establece en [No] (na)\nCA\n[Ret.contactor mot.]\n[No] (na)\nEl motor arranca cuando la entrada o el bit asignado se cambia a 0.\nL 1 1\n[No] (na): Función inactiva\n[LI1] (L , I): Entrada lógica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\n59P\n[T. cierre contactor]\nDe 0,05 a 60 s\n0,15 s\nRetardo de:\ng\nControl del motor tras el envío de una orden de marcha\nSupervisión del estado del contactor de salida si se ha asignado el retorno. Si el contactor no se cierra una vez transcurrido el\ntiempo establecido, el variador se bloqueará en modo FCF2.\nSe puede acceder a este parámetro si se ha asignado [Superv.contac.mot.] (a [ [) o [Ret.contactor mot.] (~ [ A).\nEl tiempo de retardo debe ser superior al tiempo de cierre del contactor de salida.\ndAS\n[T. apert.contactor]\nDe 0 a 5,00 s\n0,10 s\ng\nRetardo del control de apertura del contactor de salida tras la parada del motor.\nSe puede acceder a este parámetro si [Ret.contactor mot.] (~ [ A) se ha asignado.\nEl tiempo de retardo debe ser superior al tiempo de apertura del contactor de salida. Si se establece en 0, el fallo detectado no\nse supervisará.\nSi el contactor no se abre una vez transcurrido el tiempo establecido, el variador se bloqueará en modo de fallo FCF1.\ng\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\nNVE41298 04/2018\n225",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            "",
+            ""
+          ],
+          [
+            "OCC -",
+            "[CTRL CONTACT. MOTOR]",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[Superv.contac.mot.]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "Salida lógica o relé de control.",
+            "",
+            ""
+          ],
+          [
+            "no",
+            "[No] (na): Función no asignada (en este caso, no se puede acceder a ninguno de los parámetros de la función)"
+          ],
+          [
+            "La |",
+            "[LO1] (La I): Salida lógica LO1"
+          ],
+          [
+            "- 2",
+            "[R2] (~ 2): Relé r2",
+            ""
+          ],
+          [
+            "de |",
+            "[DO1] (da l): Salida analógica AO1 que funciona como una salida lógica. Se puede realizar la selección si [Asignación AO1] (Ao 1), página 145, se establece en [No] (na)"
+          ],
+          [
+            "CA",
+            "[Ret.contactor mot.]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "El motor arranca cuando la entrada o el bit asignado se cambia a 0.",
+            "",
+            ""
+          ],
+          [
+            "L 1 1",
+            "[No] (na): Función inactiva",
+            ""
+          ],
+          [
+            "[LI1] (L , I): Entrada lógica LI1 [ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            "",
+            ""
+          ],
+          [
+            "59P",
+            "[T. cierre contactor]",
+            "De 0,05 a 60 s",
+            "0,15 s"
+          ],
+          [
+            "",
+            "Retardo de:",
+            "",
+            ""
+          ],
+          [
+            "g\n:selected:\n:unselected:",
+            "Control del motor tras el envío de una orden de marcha Supervisión del estado del contactor de salida si se ha asignado el retorno. Si el contactor no se cierra una vez transcurrido el tiempo establecido, el variador se bloqueará en modo FCF2. Se puede acceder a este parámetro si se ha asignado [Superv.contac.mot.] (a [ [) o [Ret.contactor mot.] (~ [ A). El tiempo de retardo debe ser superior al tiempo de cierre del contactor de salida."
+          ],
+          [
+            "dAS",
+            "[T. apert.contactor]",
+            "De 0 a 5,00 s",
+            "0,10 s"
+          ],
+          [
+            "g\n:selected:",
+            "Retardo del control de apertura del contactor de salida tras la parada del motor. Se puede acceder a este parámetro si [Ret.contactor mot.] (~ [ A) se ha asignado."
+          ],
+          [
+            ":unselected:",
+            "El tiempo de retardo debe ser superior al tiempo de apertura del contactor de salida. Si se establece en 0, el fallo detectado no se supervisará. Si el contactor no se abre una vez transcurrido el tiempo establecido, el variador se bloqueará en modo de fallo FCF1."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "Modo Configuración (ConF)\nPOSICIONAMIENTO MEDIANTE SENSORES\nEsta función permite gestionar el posicionamiento mediante sensores de posición o contactos de final de\ncarrera conectados a entradas lógicas o mediante bits de palabra de control:\n· Ralentización\n· Parada\nLa lógica de acción de las entradas y de los bits puede configurarse en un flanco ascendente (cambio de 0 a\n1) o en un flanco descendente (cambio de 1 a 0). En el ejemplo siguiente, la configuración se ha realizado en\nun flanco ascendente:\nOrden de marcha\nhacia delante\n0\nOrden de marcha\nhacia atrás\n0\n[F.C ralen.adelante]\n0\n[F.C.paro adelante]\n0\nVelocidad\n[Velocidad Mínima]\n(LSP)\n0\nLos modos de ralentización y de parada pueden configurarse.\nEl funcionamiento es el mismo para ambos sentidos de la marcha. La ralentización y la parada funcionan\nsegún una misma lógica, la cual se describe a continuación.\n226\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "0",
+            ""
+          ],
+          [
+            "Orden de marcha hacia atrás 0",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "[F.C ralen.adelante]",
+            ""
+          ],
+          [
+            "0"
+          ],
+          [
+            "[F.C.paro adelante]",
+            ""
+          ],
+          [
+            "0",
+            ""
+          ],
+          [
+            "Velocidad",
+            ""
+          ],
+          [
+            "[Velocidad Mínima] (LSP)",
+            ""
+          ],
+          [
+            "0",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Modo Configuración (ConF)\nEjemplo: Ralentización hacia delante en flanco ascendente\n· La ralentización hacia delante se lleva a cabo en un flanco ascendente (cambio de 0 a 1) de la entrada o\ndel bit asignado a la ralentización hacia delante si este flanco ascendente se produce en marcha hacia\ndelante. A continuación, la orden de ralentización se memoriza aunque se produzca un corte de suministro\neléctrico. Se permite la marcha en sentido contrario a alta velocidad. La orden de ralentización se elimina\nen un flanco descendente (cambio de 1 a 0) de la entrada o del bit asignado a la ralentización hacia delante\nsi este flanco descendente se produce en marcha hacia atrás.\n· Se puede asignar un bit o una entrada lógica para desactivar esta función.\n· Aunque la ralentización hacia delante esté desactivada mientras la entrada o el bit de desactivación se\nencuentra en posición 1, los cambios del sensor se siguen supervisando y memorizando.\nEjemplo: Posicionamiento en un final de carrera en flanco ascendente\nParada\nhacia atrás\n7\n7\nO\nRalentización\nhacia atrás\nMarcha\nMarcha\natrás\nadelante\n0\n-C\nRalentización\nhacia delante\nParada\nhacia\ndelante\nA\nADVERTENCIA\nPÉRDIDA DEL CONTROL\n· Compruebe que los interruptores de posición estén correctamente conectados.\n· Compruebe que los interruptores de posición estén correctamente instalados. Los interruptores de\nposición deben montarse en una posición lo suficientemente alejada de la parada mecánica para permitir\nuna distancia de parada adecuada.\n· Deberá liberar los interruptores de posición para poder usarlos.\n· Compruebe el funcionamiento correcto de los interruptores de posición.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nFuncionamiento con levas cortas:\nA\nADVERTENCIA\nPÉRDIDA DEL CONTROL\nDurante su utilización por primera vez o tras el restablecimiento de la configuración de los ajustes de fábrica,\nel motor deberá arrancar siempre fuera de los rangos de ralentización y parada.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nADVERTENCIA\nPÉRDIDA DEL CONTROL\nCuando apague el variador, guarde el rango que estuviese usando en ese momento.\nSi el sistema se mueve manualmente mientras el variador está apagado, debe restablecer la posición\noriginal antes de encenderlo de nuevo.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nNVE41298 04/2018\n227",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Modo Configuración (ConF)\nEn este caso, cuando se utiliza el variador por primera vez o después de restablecer los ajustes de fábrica,\ndebe arrancarse inicialmente fuera de las zonas de ralentización y de parada para iniciar la función.\nZona de ralentización hacia delante\nRalentización hacia\ndelante\nZona de parada hacia delante\nParada hacia delante\nFuncionamiento con levas largas:\nEn este caso, no existe ninguna restricción, lo que significa que la función se inicia en toda la trayectoria.\nZona de ralentización hacia delante\nRalentización hacia\ndelante\nZona de parada hacia delante\nParada hacia delante\nParada a la distancia calculada tras el final de carrera de deceleración\nEsta función permite controlar la parada de la pieza móvil automáticamente una vez que se ha recorrido una\ndistancia preestablecida tras el final de carrera de ralentización.\nEn función de la velocidad lineal nominal y la velocidad estimada por el variador cuando se dispara el contacto\nde final de carrera de ralentización, el variador provocará la parada a la distancia configurada.\nSe puede usar esta función cuando hay un final de carrera (rebasamiento) común a los dos sentidos de la\nmarcha, con rearme manual. Actúa únicamente por seguridad si se sobrepasa la distancia. El final de carrera\nde parada tiene prioridad sobre la función.\nEl parámetro [Tipo deceleración] ( d 5 F ) puede configurarse para obtener una de las funciones que se\ndescriben a continuación:\nFrecuencia\n[Tipo deceleración] ( d 5 F) = [Estándar] ( 5 t d)\nFrecuencia de\nralentización\nFrecuencia\nDistancia\nA\nB\n[Distancia de parada] ( 5 t d)\nA: Final de carrera de ralentización\nalcanzado\nB: Parada automática a una distancia\n[Tipo deceleración] ( d 5 F) = [Optimizado] ( o P E )\nFrecuencia de\nralentización\nNota:\nA\nB\nDistancia\n228\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > LPO-\n· Esta distancia no se respetará si la rampa de deceleración se modifica mientras la parada a distancia está\nen curso.\n· Esta distancia no se respetará si el sentido de la marcha se modifica mientras la parada a distancia está\nen curso.\nADVERTENCIA\nPÉRDIDA DEL CONTROL\nVerifique que la distancia configurada sea realmente posible.\nEsta función no reemplaza al interruptor de posición.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nLPO-\n[POSIC.POR CAPTADOR.]\nNota:Esta función no puede utilizarse con algunas de las demás funciones disponibles. Siga las instrucciones de la página 164.\nSAF\n[F.C.paro av.]\n[No] (nO)\nConmutador de parada hacia delante.\nno [No] (na): No asignado\nL | | |[11] (L , I): Entrada lógica LI1\n...\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\n(Si [Perfil] (CHCF) está ajustado en [No separad.] (SIM) o [Separados] (SEP) entonces [CD11] (Cd11) hasta [CD15] (Cd15),\n[C111] (C111) hasta [C115] (C115), [C211] (C211) hasta [C215] (C215) y [C311] (C311) hasta [C315] (C315) no están\ndisponibles).\n5 Ar\n[F.C. paro rv]\n[No] (na)\nConmutador de parada hacia atrás.\nIgual que el parámetro [F.C.paro adelante] ( 5 A F ) anterior.\nSAL\n[Conf.FdC de paro]\n[Activo a 0] (L a)\nA ADVERTENCIA\ng\nPÉRDIDA DEL CONTROL\nSi [Conf.FdC de paro] ( 5 AL ) se encuentra ajustado en [Activo a 1] (H , G), el comando de parada se\nactivará en la señal activa y el comando de parada no se aplicará si se desconecta la conexión.\nCompruebe que al utilizar este ajuste, no se producirán situaciones de riesgo.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nNivel de activación del conmutador de parada.\nSe puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor de parada. Define la lógica\npositiva o negativa de los bits o las entradas asignadas a la parada.\nLo\nH , G\n[Activo a 0] (L a): Parada controlada en un flanco descendente (cambio de 1 a 0) de los bits o las entradas asignadas\n[Activo a 1] (H , G): Parada controlada en un flanco ascendente (cambio de 0 a 1) de los bits o las entradas asignadas\ndAF\n[F.C ralen.adelante]\n[No] (na)\nRalentización hacia delante alcanzada.\nIgual que el parámetro [F.C.paro adelante] ( 5 A F ) anterior.\n[F.C ralen.atrás]\n[No] (na)\nRalentización hacia atrás alcanzada.\nIgual que el parámetro [F.C.paro adelante] ( 5 A F ) anterior.\nNVE41298 04/2018\n229",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            "",
+            ""
+          ],
+          [
+            "LPO-",
+            "[POSIC.POR CAPTADOR.]",
+            ""
+          ],
+          [
+            "Nota:Esta función no puede utilizarse con algunas de las demás funciones disponibles. Siga las instrucciones de la página 164."
+          ],
+          [
+            "SAF",
+            "[F.C.paro av.]",
+            "",
+            "[No] (nO)"
+          ],
+          [
+            "",
+            "Conmutador de parada hacia delante.",
+            "",
+            ""
+          ],
+          [
+            "no",
+            "[No] (na): No asignado",
+            "",
+            ""
+          ],
+          [
+            "L | |",
+            "|[11] (L , I): Entrada lógica LI1",
+            "",
+            ""
+          ],
+          [
+            "...",
+            "[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154. (Si [Perfil] (CHCF) está ajustado en [No separad.] (SIM) o [Separados] (SEP) entonces [CD11] (Cd11) hasta [CD15] (Cd15), [C111] (C111) hasta [C115] (C115), [C211] (C211) hasta [C215] (C215) y [C311] (C311) hasta [C315] (C315) no están disponibles)."
+          ],
+          [
+            "5 Ar",
+            "[F.C. paro rv]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "Conmutador de parada hacia atrás. Igual que el parámetro [F.C.paro adelante] ( 5 A F ) anterior.",
+            "",
+            ""
+          ],
+          [
+            "SAL",
+            "[Conf.FdC de paro]",
+            "",
+            "[Activo a 0] (L a)"
+          ]
+        ],
+        [
+          [
+            "",
+            "A ADVERTENCIA"
+          ],
+          [
+            "g",
+            "PÉRDIDA DEL CONTROL Si [Conf.FdC de paro] ( 5 AL ) se encuentra ajustado en [Activo a 1] (H , G), el comando de parada se activará en la señal activa y el comando de parada no se aplicará si se desconecta la conexión. Compruebe que al utilizar este ajuste, no se producirán situaciones de riesgo. El incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo."
+          ],
+          [
+            "",
+            "Nivel de activación del conmutador de parada."
+          ],
+          [
+            "Se puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor de parada. Define la lógica positiva o negativa de los bits o las entradas asignadas a la parada."
+          ],
+          [
+            "Lo H , G",
+            "[Activo a 0] (L a): Parada controlada en un flanco descendente (cambio de 1 a 0) de los bits o las entradas asignadas [Activo a 1] (H , G): Parada controlada en un flanco ascendente (cambio de 0 a 1) de los bits o las entradas asignadas"
+          ],
+          [
+            "dAF",
+            "[F.C ralen.adelante]",
+            "[No] (na)"
+          ],
+          [
+            "Ralentización hacia delante alcanzada. Igual que el parámetro [F.C.paro adelante] ( 5 A F ) anterior.",
+            ""
+          ],
+          [
+            "",
+            "[F.C ralen.atrás]",
+            "[No] (na)"
+          ],
+          [
+            "Ralentización hacia atrás alcanzada. Igual que el parámetro [F.C.paro adelante] ( 5 A F ) anterior."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > LPO-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\ndAL\n[Conf.FdC ralent.]\n[Activo a 0] (L a)\nAVISO\ng\nRIESGO DE DAÑOS EN EL EQUIPO\nSi [Conf.FdC ralent.] ( d AL ) se establece en [Activo a 1] (H , G), la orden de ralentización se activara al\nactivar la señal (no se enviará ninguna orden de ralentización si la señal no se aplica por alguna razón).\nNo seleccione [Activo a 1] (H , G) a no ser que esté seguro de que la señal se activará en cualquier caso.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nSe puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor de ralentización. Define la lógica\npositiva o negativa de los bits o las entradas asignadas a la ralentización.\nLa\nH . G\n[Activo a 0] (L a): Ralentización controlada en un flanco descendente (cambio de 1 a 0) de los bits o las entradas asignadas\n[Activo a 1] (H , G): Ralentización controlada en un flanco ascendente (cambio de 0 a 1) de los bits o las entradas asignadas\nCLS\n[Desac.limit.]\n[No] (na)\nATENCIÓN\ng\nPÉRDIDA DEL CONTROL\nSi [Desact. final carrera] (C L 5) está ajustado en una entrada y activado, se inhibirá la gestión del\ninterruptor de posición.\nCompruebe que al activar esta función, no se producirán situaciones de riesgo.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nSe puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor.\nLa acción de los finales de carrera se desactiva cuando la entrada o el bit asignado se encuentra en posición 1. Si en este\nmomento el variador está parado o se está ralentizando por finales de carrera, el variador vuelve a arrancar hasta su referencia\nde velocidad.\n[No] (na): Función inactiva\nL . 1\n...\n[LI1] (L , 1): Entrada logica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\nPAS\n[Tipo de parada]\n[Paro rampa] (~ n P)\ng\nSe puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor.\nrnP\n[Paro rampa] (r n P): En rampa\nF SE\n[Parad.rápid] (F 5 E ): Parada rápida (tiempo de rampa reducido por [Coef. parada rápida] (d [ F); consulte [Coef. parada\nrápida] (d [ F ) en la página 95)\n[Rueda libre] (n 5 E ): Parada en rueda libre\ndSF\n[Tipo deceleración]\n[Estándar] ( 5 t d)\ng\nSe puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor.\nStd\nOPE\n[Estándar] (5 E d): Utiliza la rampa[Rampa deceleración] ( d E [) o [Deceleración 2] ( d E 2) (en función de la que se haya\nactivado).\n[Optimizado] (a P E ): El tiempo de rampa se calcula en función de la velocidad real cuando se conmuta el contacto de\nralentización, a fin de limitar el tiempo de marcha a baja velocidad (optimización del tiempo de ciclo: el tiempo de ralentización\nes constante independientemente de la velocidad inicial).\n5Ed\n[Distancia de parada]\n[No] (na)\ng\nSe puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor.\nActivación y ajuste de la función de parada a la distancia calculada tras el final de carrera de ralentización.\n-\n[No] (na): Función inactiva (de manera que no se podrá acceder a los dos parámetros siguientes)\nDe 0,01 a 10,00: Rango de distancia de parada en metros\n230\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "dAL",
+            "[Conf.FdC ralent.]",
+            "",
+            "[Activo a 0] (L a)"
+          ],
+          [
+            "",
+            "AVISO",
+            ""
+          ],
+          [
+            "g",
+            "RIESGO DE DAÑOS EN EL EQUIPO Si [Conf.FdC ralent.] ( d AL ) se establece en [Activo a 1] (H , G), la orden de ralentización se activara al activar la señal (no se enviará ninguna orden de ralentización si la señal no se aplica por alguna razón). No seleccione [Activo a 1] (H , G) a no ser que esté seguro de que la señal se activará en cualquier caso. Si no se respetan estas instrucciones, pueden producirse daños en el equipo."
+          ],
+          [
+            "",
+            "Se puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor de ralentización. Define la lógica positiva o negativa de los bits o las entradas asignadas a la ralentización."
+          ],
+          [
+            "La H . G",
+            "[Activo a 0] (L a): Ralentización controlada en un flanco descendente (cambio de 1 a 0) de los bits o las entradas asignadas [Activo a 1] (H , G): Ralentización controlada en un flanco ascendente (cambio de 0 a 1) de los bits o las entradas asignadas"
+          ],
+          [
+            "CLS",
+            "[Desac.limit.]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "ATENCIÓN",
+            ""
+          ],
+          [
+            "",
+            "PÉRDIDA DEL CONTROL",
+            ""
+          ],
+          [
+            "g",
+            "Si [Desact. final carrera] (C L 5) está ajustado en una entrada y activado, se inhibirá\ninterruptor de posición.",
+            "la gestión del"
+          ],
+          [
+            "",
+            "Compruebe que al activar esta función, no se producirán situaciones de riesgo. El incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo."
+          ],
+          [
+            "",
+            "Se puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor. La acción de los finales de carrera se desactiva cuando la entrada o el bit asignado se encuentra en posición 1. Si en este momento el variador está parado o se está ralentizando por finales de carrera, el variador vuelve a arrancar hasta su referencia de velocidad."
+          ],
+          [
+            "",
+            "[No] (na): Función inactiva",
+            "",
+            ""
+          ],
+          [
+            "L . 1 ...",
+            "[LI1] (L , 1): Entrada logica LI1 [ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            "",
+            ""
+          ],
+          [
+            "PAS",
+            "[Tipo de parada]",
+            "",
+            "[Paro rampa] (~ n P)"
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor.",
+            ""
+          ],
+          [
+            "rnP",
+            "[Paro rampa] (r n P): En rampa",
+            "",
+            ""
+          ],
+          [
+            "F SE",
+            "[Parad.rápid] (F 5 E ): Parada rápida (tiempo de rampa reducido por [Coef. parada rápida] (d\nrápida] (d [ F ) en la página 95)",
+            "[ F); consulte [Coef. parada"
+          ],
+          [
+            "[Rueda libre] (n 5 E ): Parada en rueda libre",
+            ""
+          ],
+          [
+            "dSF",
+            "[Tipo deceleración]",
+            "",
+            "[Estándar] ( 5 t d)"
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor.",
+            ""
+          ],
+          [
+            "Std OPE",
+            "[Estándar] (5 E d): Utiliza la rampa[Rampa deceleración] ( d E [) o [Deceleración 2] ( d E 2) (en función de la que se haya activado)."
+          ],
+          [
+            "[Optimizado] (a P E ): El tiempo de rampa se calcula en función de la velocidad real cuando se\nralentización, a fin de limitar el tiempo de marcha a baja velocidad (optimización del tiempo de\nes constante independientemente de la velocidad inicial).",
+            "conmuta el contacto de\nciclo: el tiempo de ralentización"
+          ],
+          [
+            "5Ed\n:unselected:",
+            "[Distancia de parada]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor. Activación y ajuste de la función de parada a la distancia calculada tras el final de carrera de ralentización."
+          ],
+          [
+            "-\n:unselected: :unselected:",
+            "[No] (na): Función inactiva (de manera que no se podrá acceder a los dos parámetros siguientes) De 0,01 a 10,00: Rango de distancia de parada en metros"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > LPO-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nALS\n[Velocidad lineal]\nDe 0,20 a 5,00 m/s\n1,00 m/s\ng\nSe puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor y si [Distancia de parada]\n(5 E d) se ha establecido en [No] (na).\nVelocidad lineal nominal en metros/segundo.\n5 F d\n[Corrector de parada]\nDe 50 a 200%\n100%\ng\nSe puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor y si [Distancia de parada]\n(5 L d) se ha establecido en [No] (na).\nFactor de escalado aplicado a la distancia de parada para compensar, por ejemplo, una rampa no lineal.\nnSEP\n[Parada Memo]\n[No] (na)\ng\nSe puede acceder a este parámetro si se ha asignado al menos un sensor o interruptor de posición.\nCon o sin conmutador de parada de memorización\n0\n[No] (na): Sin memorización del interruptor de posición\nyES\n[Sí] ( y E 5): Memorización del interruptor de posición\nPrSE\n[Reinicio prioridad]\n[No] (no)\ng\nSe puede acceder a este parámetro si se ha asignado al menos un sensor o interruptor de posición.\nPrioridad asignada al arranque aunque se active el conmutador de parada.\nyE 5\nno [No] (na): Sin prioridad de rearranque si se activa el conmutador de parada\n[Sí] ( y E 5): Prioridad de arranque aunque se active el conmutador de parada\nEste parámetro se fuerza a [No] (na) si [Parada Memo] (77 5 ₺ P) se establece en [Sí] ( y E 5).\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\ng\nNVE41298 04/2018\n231",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "ALS",
+            "[Velocidad lineal]",
+            "De 0,20 a 5,00 m/s",
+            "1,00 m/s"
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor y si [Distancia de parada] (5 E d) se ha establecido en [No] (na). Velocidad lineal nominal en metros/segundo."
+          ],
+          [
+            "5 F d",
+            "[Corrector de parada]",
+            "De 50 a 200%",
+            "100%"
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si se ha asignado al menos un final de carrera o un sensor y si [Distancia de parada] (5 L d) se ha establecido en [No] (na). Factor de escalado aplicado a la distancia de parada para compensar, por ejemplo, una rampa no lineal."
+          ],
+          [
+            "nSEP",
+            "[Parada Memo]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si se ha asignado al menos un sensor o interruptor de posición. Con o sin conmutador de parada de memorización"
+          ],
+          [
+            "0",
+            "[No] (na): Sin memorización del interruptor de posición"
+          ],
+          [
+            "yES",
+            "[Sí] ( y E 5): Memorización del interruptor de posición"
+          ],
+          [
+            "PrSE",
+            "[Reinicio prioridad]",
+            "",
+            "[No] (no)"
+          ],
+          [
+            "g",
+            "Se puede acceder a este parámetro si se ha asignado al menos un sensor o interruptor de posición. Prioridad asignada al arranque aunque se active el conmutador de parada."
+          ],
+          [
+            "yE 5 no",
+            "[No] (na): Sin prioridad de rearranque si se activa el conmutador de parada [Sí] ( y E 5): Prioridad de arranque aunque se active el conmutador de parada Este parámetro se fuerza a [No] (na) si [Parada Memo] (77 5 ₺ P) se establece en [Sí] ( y E 5)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Modo Configuración (ConF)\nCONMUTACIÓN DEL CONJUNTO DE PARÁMETROS\nSe puede seleccionar un conjunto de 1 a 15 parámetros desde el menú [AJUSTES] ( 5 E E -), página 91, y\nse pueden asignar dos o tres valores distintos. A continuación, estos dos o tres conjuntos de valores pueden\nconmutarse mediante una o dos entradas lógicas o bits de palabra de control. Esta conmutación puede\nrealizarse en funcionamiento (con el motor en marcha).\nTambién puede controlarse en función de uno o dos umbrales de frecuencia, cada uno de los cuales actúa\ncomo una entrada lógica (0 = umbral no alcanzado, 1 = umbral alcanzado).\nValores 1\nValores 2\nValores 3\nParámetro 1\nParámetro 2\nParámetro 1\nParámetro 2\nParámetro 3\nParámetro 1\nParámetro 2\nParámetro 3\nParámetro 4\nParámetro 5\nParámetro 6\nParámetro 7\nParámetro 8\nParámetro 9\nParámetro 10\nParámetro 11\nParámetro 12\nParámetro 13\nParámetro 14\nParámetro 15\nParámetro 1\nParámetro 2\nParámetro 3\nParámetro 3\nParámetro 4\nParámetro 4\nParámetro 4\nParámetro 5\nParámetro 5\nParámetro 5\nParámetro 6\nParámetro 6\nParámetro 6\nParámetro 7\nParámetro 7\nParámetro 7\nParámetro 8\nParámetro 8\nParámetro 8\nParámetro 9\nParámetro 9\nParámetro 9\nParámetro 10\nParámetro 10\nParámetro 11\nParámetro 12\nParámetro 13\nParámetro 10\nParámetro 11\nParámetro 11\nParámetro 12\nParámetro 12\nParámetro 13\nParámetro 13\nParámetro 14\nParámetro 14\nParámetro 14\nParámetro 15\nParámetro 15\nParámetro 15\nEntrada LI, bit o umbral de frecuencia\n2 valores\n0\n1\n0 ó 1\nEntrada LI, bit o umbral de frecuencia\n3 valores\n0\n0\n1\nNota: No modifique los parámetros del menú [AJUSTES] ( 5 E E - ) porque todas las modificaciones que se\nrealicen en este menú ([AJUSTES] ( 5 E E - )) se perderán en el próximo encendido. Los parámetros pueden\najustarse durante el funcionamiento desde el menú [CONMUT. JUEGO PARÁM.] (NL P - ) en la\nconfiguración activa.\nNota: La conmutación del conjunto de parámetros no se puede configurar desde el terminal integrado.\nLos parámetros sólo se pueden ajustar desde el terminal integrado si la función se ha configurado\npreviamente a través del terminal gráfico mediante el software del ordenador o a través del bus o la red de\ncomunicaciones. Si no se ha configurado la función, el menú [CONMUT. JUEGO PARÁM.] (NL P - ) y los\nsubmenus [JUEGO 1] (P 5 |-), [JUEGO 2] (P 5 2 - ) y [JUEGO 3] (P 5 3 - ) no aparecerán.\n232\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "",
+            "Valores 1",
+            "Valores 2",
+            "Valores 3"
+          ],
+          [
+            "Parámetro 1 Parámetro 2",
+            "Parámetro 1 Parámetro 2 Parámetro 3",
+            "Parámetro 1 Parámetro 2 Parámetro 3 Parámetro 4 Parámetro 5 Parámetro 6 Parámetro 7 Parámetro 8 Parámetro 9 Parámetro 10 Parámetro 11 Parámetro 12 Parámetro 13 Parámetro 14 Parámetro 15",
+            "Parámetro 1"
+          ],
+          [
+            "Parámetro 2"
+          ],
+          [
+            "Parámetro 3",
+            "Parámetro 3"
+          ],
+          [
+            "Parámetro 4",
+            "Parámetro 4",
+            "Parámetro 4"
+          ],
+          [
+            "Parámetro 5",
+            "Parámetro 5",
+            "Parámetro 5"
+          ],
+          [
+            "Parámetro 6",
+            "Parámetro 6",
+            "Parámetro 6"
+          ],
+          [
+            "Parámetro 7",
+            "Parámetro 7",
+            "Parámetro 7"
+          ],
+          [
+            "Parámetro 8",
+            "Parámetro 8",
+            "Parámetro 8"
+          ],
+          [
+            "Parámetro 9",
+            "Parámetro 9",
+            "Parámetro 9"
+          ],
+          [
+            "Parámetro 10",
+            "Parámetro 10 Parámetro 11 Parámetro 12 Parámetro 13",
+            "Parámetro 10"
+          ],
+          [
+            "Parámetro 11",
+            "Parámetro 11"
+          ],
+          [
+            "Parámetro 12",
+            "Parámetro 12"
+          ],
+          [
+            "Parámetro 13",
+            "Parámetro 13"
+          ],
+          [
+            "Parámetro 14",
+            "Parámetro 14",
+            "Parámetro 14"
+          ],
+          [
+            "Parámetro 15",
+            "Parámetro 15",
+            "Parámetro 15"
+          ],
+          [
+            "Entrada LI, bit o umbral de frecuencia 2 valores",
+            "0",
+            "1",
+            "0 ó 1"
+          ],
+          [
+            "Entrada LI, bit o umbral de frecuencia 3 valores",
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > MLP-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nnLP -\n[CONMUT. JUEGO PARÁM.]\nCHA I\n[2 juegos paramet.]\n[No] (na)\nConmutación de 2 conjuntos de parámetros.\nnO\n[No] (na): No asignado\nFER\n[N. frec.alcan] (F & A): Conmutación a través de [Nivel Frecuencia] (F & d), página 256\nF 2A\n[Nivel frec.2 alcanz.] (F 2 A): Conmutación a través de [Nivel Frecuencia 2] (F 2 d), página 256\nL . 1\n[LI1] (L , I): Entrada lógica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\nCHA2\n[3 juegos parámet.]\n[No] (na)\nIgual que [2 juegos parámet.] ([ HA I), página 233.\nConmutación de 3 conjuntos de parámetros.\nNota: Para obtener tres conjuntos de parámetros, también se tiene que configurar [2 juegos parámet.] (CHA1) .\nSPS\n[SELECC. PARÁMETROS]\nSólo se puede acceder a este parámetro desde el terminal gráfico si [2 juegos parámet.] (C H A I) no se establece en [No] (na).\nCuando se realiza una entrada en este parámetro, se abre una ventana con todos los parámetros de ajuste disponibles.\nSeleccione de 1 a 15 parámetros mediante ENT (a continuación, aparecerá el símbolo / junto al parámetro). También puede\ndeseleccionarlos mediante ENT.\nEjemplo:\nSELECC. PARÁMETROS\nAJUSTES\nIncremento rampa\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\nnLP -\nPS / -\ng\nC\n[CONMUT. JUEGO PARÁM.] (continuación)\n[JUEGO 1]\nSe puede acceder a este parámetro si se ha seleccionado al menos un parámetro en [SELECC. PARÁMETROS].\nAl realizar una entrada en este parámetro, se abre una ventana de ajustes que contiene los parámetros seleccionados según\nel orden en que se han seleccionado.\nPara el terminal gráfico:\nRDY\nTerm\n+0,0 Hz 0,0 A\nJUEGO 1\nRampa aceleración:\n9,51 S ENT\nDeceleración:\n9,67 s\nAceleración 2:\n12,58 s\nDeceleración 2:\n13,45 s\nCoef. red.inicio ACC:\n2,3 s\nCode\nQuick\nRDY\n+0,0 Hz 0,0 A\nTerm\nRampa aceleración\n5101\n9,51 s\n...\n5115\nMín. = 0,1\nMáx. = 999,9\nQuick\n<<\nnLP -\nP52 -\ng\nSe puede acceder a este parámetro si se ha seleccionado al menos un parámetro en [SELECC. PARÁMETROS].\nCon el terminal integrado:\nProceda del mismo modo que en el menú Ajustes con los parámetros que aparecen.\n[CONMUT. JUEGO PARÁM.] (continuación)\n[JUEGO 2]\nIgual que [JUEGO 1] (P 5 | -), página 233.\n5201\n52 15\nNVE41298 04/2018\n233",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            "",
+            ""
+          ],
+          [
+            "nLP -",
+            "[CONMUT. JUEGO PARÁM.]",
+            "",
+            ""
+          ],
+          [
+            "CHA I",
+            "[2 juegos paramet.]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "Conmutación de 2 conjuntos de parámetros.",
+            "",
+            ""
+          ],
+          [
+            "nO",
+            "[No] (na): No asignado",
+            "",
+            ""
+          ],
+          [
+            "FER",
+            "[N. frec.alcan] (F & A): Conmutación a través de [Nivel Frecuencia] (F & d), página 256",
+            ""
+          ],
+          [
+            "F 2A",
+            "[Nivel frec.2 alcanz.] (F 2 A): Conmutación a través de [Nivel Frecuencia 2] (F 2 d), página 256"
+          ],
+          [
+            "L . 1",
+            "[LI1] (L , I): Entrada lógica LI1",
+            ""
+          ],
+          [
+            "",
+            "[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            "",
+            ""
+          ],
+          [
+            "CHA2",
+            "[3 juegos parámet.]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "Igual que [2 juegos parámet.] ([ HA I), página 233.",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Conmutación de 3 conjuntos de parámetros. Nota: Para obtener tres conjuntos de parámetros, también se tiene que configurar [2 juegos parámet.] (CHA1) ."
+          ],
+          [
+            "SPS",
+            "[SELECC. PARÁMETROS]",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Sólo se puede acceder a este parámetro desde el terminal gráfico si [2 juegos parámet.] (C H A I) no\nCuando se realiza una entrada en este parámetro, se abre una ventana con todos los parámetros de\nSeleccione de 1 a 15 parámetros mediante ENT (a continuación, aparecerá el símbolo / junto al\ndeseleccionarlos mediante ENT. Ejemplo:\n:selected:",
+            "se establece en [No] (na).\najuste disponibles.\nparámetro). También puede"
+          ]
+        ],
+        [
+          [
+            "",
+            "RDY",
+            "Term +0,0 Hz",
+            "0,0 A"
+          ],
+          [
+            "",
+            "JUEGO 1"
+          ],
+          [
+            "",
+            "Rampa aceleración:",
+            "9,51 S"
+          ],
+          [
+            "",
+            "Deceleración:",
+            "9,67 s"
+          ],
+          [
+            "Aceleración",
+            "2:",
+            "12,58 s"
+          ],
+          [
+            "",
+            "Deceleración",
+            "2:",
+            "13,45 s"
+          ],
+          [
+            "",
+            "Coef.",
+            "red.inicio ACC:",
+            "2,3 s"
+          ],
+          [
+            "",
+            "Code",
+            "",
+            "Quick"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > MLP-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nnLP -\n[CONMUT. JUEGO PARÁM.] (continuación)\nPS 3 -\n[JUEGO 3]\ng\nSe puede acceder a este parámetro si [3 juegos parámet.] (C H A 2) no se ha establecido en [No] (n a) y si se ha seleccionado\nal menos un parámetro en [SELECC. PARÁMETROS].\nIgual que [JUEGO 1] (P 5 | - ), página 233.\n530 1\n...\n5315\ng\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\nNota: Se recomienda realizar una prueba de conmutación del conjunto de parámetros en parada y comprobar\nque se haya realizado correctamente.\nAlgunos parámetros son dependientes entre sí, por lo que podrían tener restricciones al realizar la\nconmutación.\nSe deben respetar las dependencias entre parámetros, incluso entre distintos conjuntos.\nEjemplo: La [Velocidad Mínima] (L 5 P) más alta debe ser inferior a la [Vel.máxima] (H 5 P) más baja.\n234\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "nLP -",
+            "[CONMUT. JUEGO PARÁM.] (continuación)",
+            "",
+            ""
+          ],
+          [
+            "PS 3 -",
+            "[JUEGO 3]",
+            "",
+            ""
+          ],
+          [
+            "g\n:selected:",
+            "Se puede acceder a este parámetro si [3 juegos parámet.] (C H A 2) no se ha establecido en [No] (n a) y si se ha seleccionado al menos un parámetro en [SELECC. PARÁMETROS]. Igual que [JUEGO 1] (P 5 | - ), página 233."
+          ],
+          [
+            "530 1 ... 5315",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Modo Configuración (ConF)\nMULTIMOTORES/MULTICONFIGURACIONES\nConmutación de motores o de configuraciones [CONFIG.MULTIMOTOR] (nn c -)\nEl variador puede contener hasta tres configuraciones que pueden memorizarse mediante el menú\n[AJUSTES DE FÁBRICA] (F [ 5 - ), página 83.\nCada una de estas configuraciones puede activarse a distancia, lo que permite adaptarse a:\n· Dos o tres motores o mecanismos distintos (modo multimotor)\n· Dos o tres configuraciones distintas para un mismo motor (modo multiconfiguración)\nNo se pueden combinar ambos modos de conmutación.\nNota: Se DEBEN tener en cuenta las condiciones siguientes:\n· La conmutación sólo se puede realizar en parada (variador bloqueado). Si se envía una solicitud de\nconmutación durante el funcionamiento, no se ejecutará hasta la próxima parada.\n· En la conmutación de motores, se aplican las condiciones adicionales siguientes:\n- Cuando se conmutan los motores, también se deben conmutar correctamente las bornas de potencia\ny de control pertinentes.\n- Ninguno de los motores debe superar la potencia máxima del variador.\n· Todas las configuraciones que se quieran conmutar deben haberse definido y guardado previamente en la\nmisma configuración de hardware, que será la configuración definitiva (tarjetas de comunicaciones y\nopcionales). Si no se siguen estas instrucciones, es posible que el variador se bloquee con el estado\n[Config. incorrecta] (C F F).\nMenús y parámetros conmutados en modo multimotor\n· [AJUSTES] ( SE E - )\n· [CONTROL MOTOR] ( dr [ - )\n· [ENTRADAS/SALIDAS] ( 1 - a -)\n. [CONTROL] (C EL -)\n· [FUNCIONES APLICACIÓN] (F un -), excepto la función [CONFIG.MULTIMOTOR] (que sólo se debe\nconfigurar una vez)\n· [GESTIÓN DE FALLOS] (FL E )\n· [MENÚ USUARIO]\n· [CONF. USUARIO]: El nombre de la configuración especificada por el usuario en el menú\n[AJUSTES DE FÁBRICA] (F [ 5 - )\nMenús y parámetros conmutados en modo multiconfiguración\nLos mismos que en el modo multimotor, excepto los parámetros de motor que son comunes a las tres\nconfiguraciones:\n· Corriente nominal\n· Corriente térmica\n· Tensión nominal\n· Frecuencia nominal\n· Velocidad nominal\n· Potencia nominal\n· Compensación RI\n· Compensación de deslizamiento\n· Parámetros de motores síncronos\n· Tipo de protección térmica\n· Estado térmico\n· Parámetros de autoajuste y parámetros de motor a los que se puede acceder en modo experto\n· Tipo de control del motor\nNota: No se puede conmutar ningún otro menú o parámetro.\nNVE41298 04/2018\n235",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "Modo Configuración (ConF)\nTransferencia de la configuración de un variador a otro con el terminal gráfico cuando el variador utiliza la función\n[CONFIG.MULTIMOTOR] (nn c - )\nConfigure el variador A para que sea el variador de origen y el variador B para que sea el de destino. En este\nejemplo, la conmutación está controlada por una entrada lógica.\n1. Conecte el terminal gráfico al variador A.\n2. Ponga las entradas lógicas LI ([2 configuraciones] ([ n F I)) y ([3 configuraciones] ([ n F 2) a 0.\n3. Descargue la configuración 0 en un archivo del terminal gráfico (ejemplo: archivo 1 del terminal gráfico).\n4. Cambie la entrada lógica LI ([2 configuraciones] ([ n F I) a 1 y deje la entrada lógica LI ([3\nconfiguraciones] ([ n F 2)) a 0.\n5. Descargue la configuración 1 en un archivo del terminal gráfico (ejemplo: archivo 2 del terminal gráfico).\n6. Cambie la entrada lógica LI ([3 configuraciones] ([ n F 2)) a 1 y deje la entrada lógica LI ([2\nconfiguraciones] ([ n F I)) a 1.\n7. Descargue la configuración 2 en un archivo del terminal gráfico (ejemplo: archivo 3 del terminal gráfico).\n8. Conecte el terminal gráfico al variador B.\n9. Ponga las entradas lógicas LI ([2 configuraciones] ([ n F I)) y ([3 configuraciones] ([ n F 2)) a 0.\n10. Establezca el ajuste de fábrica del variador B.\n11. Descargue el archivo de configuración 0 y guárdelo en el variador (archivo 1 del terminal gráfico en este\nejemplo).\n12. Cambie la entrada lógica LI ([2 configuraciones] (CnF1)) a 1 y deje la entrada lógica LI\n([3 configuraciones] ([ n F 2)) a 0.\n13. Descargue el archivo de configuración 1 y guárdelo en el variador (archivo 2 del terminal gráfico en este\nejemplo).\n14. Cambie la entrada lógica LI ([3 configuraciones] ([ n F 2) a 1 y deje la entrada lógica LI\n([2 configuraciones] ([ n F I)) a 1.\n15. Descargue el archivo de configuración 2 y guárdelo en el variador (archivo 3 del terminal gráfico en este\nejemplo).\nNota: Los pasos 6, 7, 14 y 15 sólo son necesarios si la función [CONFIG.MULTIMOTOR] (nn c - ) se utiliza\ncon tres configuraciones o tres motores.\nTerminal gráfico\nConfiguración\nactual\nRed\nModbus\n[2 configuraciones] ([ n F I)\n[3 configuraciones] ([ n F 2)\nCANopen®\nBorna\nCnF1 = 0, CnF2 = 0\nCnF1 = 1, CnF2 = 0\nCnF1 = 0, CnF2 = 1\no\nCnF1 = 1, CnF2 = 1\nConfiguración 0\no motor 0\nConfiguración 1\no motor 1\nConfiguración 2\no motor 2\n236\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Modo Configuración (ConF)\nControl de conmutación\nEl control de conmutación se envía mediante una o dos entradas lógicas en función del número de motores\no de configuraciones seleccionadas (2 ó 3). En la tabla siguiente se indican las combinaciones posibles.\nLI\n2 motores o configuraciones\nLI\n3 motores o configuraciones\nNúmero de configuraciones\no motores activos\n0\n0\n0\n1\n0\n1\n0\n1\n2\n-\n1\n1\n2\nDiagrama esquemático del modo multimotor\nFUNCIONAMIENTO INESPERADO DEL EQUIPO\nAVISO\nEl estado térmico de cada motor no se guarda cuando se apaga el variador.\nCuando se enciende el variador, este no es consciente del estado térmico del motor o motores conectados.\n· Para permitir la supervisión de la temperatura correcta de los motores, instale un sensor de temperatura\nexterno para cada motor.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nATV ...\nConfiguración 0\nsi los 2 contactos\nestán abiertos\nConfiguración 1\nConfiguración 2\nLI\n+ 24 V\nLI\nConfiguración 0\nConfiguración 1\nConfiguración 2\nLO o R\nLO o R\n¡LO OR\nM0\nM1\nM2\nAutoajuste en modo multimotor\nEl autoajuste puede realizarse:\n· Manualmente, mediante una entrada lógica cuando el motor cambia.\n· Automáticamente, cada vez que se activa el motor por primera vez tras encender el variador, si el\nparámetro [Autoajuste autom.] (A u E ), página 110, se establece en [Sí] ( y E 5).\nEstados térmicos de los motores en modo multimotor:\nEl variador permite proteger los tres motores por separado. Cada estado térmico tiene en cuenta todos los\ntiempos de parada si la alimentación del variador no está desconectada.\nNVE41298 04/2018\n237",
+      "tablas": [
+        [
+          [
+            "LI 2 motores o configuraciones",
+            "LI 3 motores o configuraciones",
+            "Número de configuraciones o motores activos"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "2"
+          ],
+          [
+            "- 1",
+            "1",
+            "2"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN- > MMC-\nSalida de la información de configuración\nAVISO\nRIESGO DE DAÑOS EN EL MOTOR\nEl estado térmico de cada motor no se memoriza cuando se desconecta la alimentación.\nPara mantener la protección de los motores, es necesario:\n· Realizar un autoajuste en cada motor cada vez que se conecta la alimentación\no\n· Utilizar una protección contra sobrecargas externa en cada motor\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nEn el menú [ENTRADAS/SALIDAS] ( , - a -), se puede asignar una salida lógica a cada configuración o\nmotor (2 6 3) para transmitir la información a distancia.\nNota: Cuando se conmuta el menú [ENTRADAS/SALIDAS] ( , - a - ), estas salidas deben asignarse a todas\nlas configuraciones que necesiten información.\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nAnc -\n[CONFIG.MULTIMOTOR]\nCHN\n[Multimotor]\n[No] (nO)\nAVISO\nSOBRECALENTAMIENTO DEL MOTOR\nCuando se apaga el variador, no se guardan los estados térmicos de los motores conectados.\nCuando se enciende de nuevo el variador, este no es consciente de los estados térmicos de los motores\nconectados.\n· Utilice sensores de temperatura individuales para la supervisión térmica de cada motor conectado.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nno [No] (na): Multiconfiguraciones posibles\nYES\n[Sí] ( y E 5): Multimotores posibles\n[2 configuraciones]\n[No] (na)\nConmutación de dos motores o dos configuraciones.\nnO\n[No] (na): Sin conmutación\nL 1 1\n[LI1] (L , I): Entrada lógica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\n([CD00] ([ d 00) hasta [CD15] ([ d | 5), [C101] ([ 10 1) hasta [C110] (C | 10), [C201] ([ 2 0 1) hasta [C210] ([ 2 10)\ny [C301] ([ 30 1) hasta [C310] ([ 3 10) no están disponibles).\nCnF 2\n[3 configuraciones]\n[No] (nO)\nConmutación de tres motores o tres configuraciones.\nIgual que [2 configuraciones] (CnF1), página 238.\nNota: Para obtener tres motores o tres configuraciones, también se debe configurar [2 configuraciones] (CnF1).\n238\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción Rango de",
+            "ajuste Ajuste de fábrica"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)"
+          ],
+          [
+            "Anc -",
+            "[CONFIG.MULTIMOTOR]",
+            ""
+          ],
+          [
+            "CHN",
+            "[Multimotor]",
+            "[No] (nO)"
+          ],
+          [
+            "",
+            "AVISO"
+          ],
+          [
+            "",
+            "SOBRECALENTAMIENTO DEL MOTOR",
+            ""
+          ],
+          [
+            "Cuando se apaga el variador, no se guardan los estados térmicos de los motores conectados. Cuando se enciende de nuevo el variador, este no es consciente de los estados térmicos de los motores conectados."
+          ],
+          [
+            "· Utilice sensores de temperatura individuales para la supervisión térmica de cada motor conectado. Si no se respetan estas instrucciones, pueden producirse daños en el equipo."
+          ],
+          [
+            "no\nYES",
+            "[No] (na): Multiconfiguraciones posibles",
+            ""
+          ],
+          [
+            "[Sí] ( y E 5): Multimotores posibles",
+            ""
+          ],
+          [
+            "",
+            "[2 configuraciones]",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "Conmutación de dos motores o dos configuraciones.",
+            ""
+          ],
+          [
+            "nO",
+            "[No] (na): Sin conmutación",
+            ""
+          ],
+          [
+            "L 1 1",
+            "[LI1] (L , I): Entrada lógica LI1",
+            ""
+          ],
+          [
+            "",
+            "[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            ""
+          ],
+          [
+            "([CD00] ([ d 00) hasta [CD15] ([ d | 5), [C101] ([ 10 1) hasta [C110] (C | 10), [C201] ([ 2 0 1) hasta [C210] ([ 2 10) y [C301] ([ 30 1) hasta [C310] ([ 3 10) no están disponibles)."
+          ],
+          [
+            "CnF 2",
+            "[3 configuraciones]",
+            "[No] (nO)"
+          ],
+          [
+            "",
+            "Conmutación de tres motores o tres configuraciones.",
+            ""
+          ],
+          [
+            "Igual que [2 configuraciones] (CnF1), página 238.",
+            ""
+          ],
+          [
+            "Nota: Para obtener tres motores o tres configuraciones, también se debe configurar [2 configuraciones] (CnF1)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Modo Configuración (ConF)\nAcceda a los parámetros que se describen en esta página mediante:\nAUTOAJUSTE POR ENTRADA LÓGICA\nDRI- > CONF > FULL > FUN- > TNL-\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nEnL -\n[AUTOAJUSTE POR LI]\nEUL\n[Asig. autoajuste]\n[No] (na)\nEl autoajuste se realiza cuando la entrada o el bit asignado cambia a 1.\nNota: El autoajuste hace que el motor arranque.\nnO\nL | | |[LI1] (L / 1): Entrada lógica LI1\n...\n[No] (na): No asignado\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.\nNVE41298 04/2018\n239",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)",
+            "",
+            ""
+          ],
+          [
+            "EnL -",
+            "[AUTOAJUSTE POR LI]",
+            "",
+            ""
+          ],
+          [
+            "EUL",
+            "[Asig. autoajuste]",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "El autoajuste se realiza cuando la entrada o el bit asignado cambia a 1. Nota: El autoajuste hace que el motor arranque.",
+            "",
+            ""
+          ],
+          [
+            "nO L | |\n...",
+            "[No] (na): No asignado",
+            "",
+            ""
+          ],
+          [
+            "|[LI1] (L / 1): Entrada lógica LI1\n[ ... ] ( ... ): Consulte las condiciones de asignación en la página 154.",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "Modo Configuración (ConF)\nGUIADO DE HILO\nFunción de bobinado de bobinas de hilo (en aplicaciones textiles):\nVariador de\nVariador de\nbobinado\nguiado de hilo\nATV320\nATV320\nBobina de hilo\nReductor\nEje principal\nMotor de\nbobinado\nGuía de hilo\nHilo\nReductor\n16\nMotor de guiado de hilo\nLeva\nLa velocidad de rotación de la leva debe seguir un perfil determinado para garantizar que la bobina sea\nestable, compacta y lineal:\nOrden de\nmarcha\nt\nLI o bit de control\nde guiado de hilo\n- t\nVelocidad del\nmotor\nReferencia básica\nRampa\nACC\nRampa DEC\nt\nBit 15 de la palabra LRS1\n(guiado de hilo en curso)\nInicio de la función\nFin de la función\nt\nLa función se inicia cuando el variador alcanza su referencia básica y se activa el control de guiado de hilo.\nCuando se desactiva el control de guiado de hilo, el variador vuelve a su referencia básica siguiendo la rampa\ndeterminada por la función de guiado de hilo. A continuación, la función se detiene en cuanto vuelve a esta\nreferencia.\nEl bit 15 de la palabra LRS1 permanece en posición 1 mientras la función está activa.\n240\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Modo Configuración (ConF)\nParámetros de la función\nDefinen el ciclo de variaciones de frecuencia en torno a la referencia básica, como se muestra en el diagrama\nsiguiente:\nVelocidad del motor\ntdn\ntUP\nSalto de frecuencia\nReferencia\nbásica\nqSH\ntrH\ntrL\nJaSL\nSalto de frecuencia\n0\nt\n[Guiado de hilo] (E r C): Asignación del control de guiado de hilo a una entrada lógica o a un bit de palabra\nde control del bus de comunicaciones\nEr H\n[Frec.alta G. hilo] (E r H): en hercios\nErL\n[Frec. baja G.hilo] (E r L ): en hercios\n95H\n[Despl. rápido arriba] ( 9 5 H): en hercios\n95L\n[Despl. rápido abajo] ( 9 5 L ): en hercios\nEuP\n[Acel.en guiado hilo] (L u P): tiempo en segundos\nEdn\n[Decel. guiado hilo] (L d n): tiempo en segundos\nParámetros de la bobina:\ndEF\n[Tpo realizar bobina] (E b a): Tiempo necesario para realizar una bobina en minutos.\nEste parámetro sirve para indicar el final del bobinado. Cuando el tiempo de funcionamiento del guiado de hilo\ndesde el control [Guiado de hilo] (E r C) alcanza el valor de [Tpo realizar bobina] ( b a), la salida lógica o\nuno de los relés cambia al estado 1 si se ha asignado la función correspondiente [Fin bobina] ( E b a).\nEl tiempo de funcionamiento del guiado de hilo E b a E puede supervisarse en línea mediante un bus de\ncomunicaciones.\n[Decrec.referencia] (d E F): Disminución de la referencia básica.\nEn ciertos casos, la referencia básica va disminuyendo a medida que el tamaño de la bobina aumenta. El valor\nde [Decrec. referencia] ( d E F ) corresponde al tiempo de [Tpo realizar bobina] (E b a). Una vez transcurrido\neste periodo de tiempo, la referencia sigue bajando siguiendo la misma rampa. Si la velocidad mínima\n[Velocidad Mínima] (L 5 P) se encuentra en posición 0 (es decir, la velocidad es de 0 Hz), el variador se\ndetiene y debe rearmarse con una nueva orden de marcha.\nSi la velocidad mínima [Velocidad Mínima] (L 5 P) no se encuentra en posición 0, la función de guiado de hilo\nsigue funcionando por encima de la [Velocidad Mínima] (L S P).\nVelocidad del motor\nReferencia básica\nA\ndtF\nCon LSP = 0\n0\ntbO\n- t\nVelocidad del motor\nReferencia básica\nA\ndtF\nCon LSP > 0\nLSP\n1\n0\ntbO\nt\nNVE41298 04/2018\n241",
+      "tablas": [
+        [
+          [
+            "",
+            "[Guiado de hilo] (E r C): Asignación del control de guiado de hilo a una entrada lógica o a un bit de palabra de control del bus de comunicaciones"
+          ],
+          [
+            "Er H",
+            "[Frec.alta G. hilo] (E r H): en hercios"
+          ],
+          [
+            "ErL",
+            "[Frec. baja G.hilo] (E r L ): en hercios"
+          ],
+          [
+            "95H",
+            "[Despl. rápido arriba] ( 9 5 H): en hercios"
+          ],
+          [
+            "95L",
+            "[Despl. rápido abajo] ( 9 5 L ): en hercios"
+          ],
+          [
+            "EuP",
+            "[Acel.en guiado hilo] (L u P): tiempo en segundos"
+          ],
+          [
+            "Edn",
+            "[Decel. guiado hilo] (L d n): tiempo en segundos"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "Modo Configuración (ConF)\nrtr\n[Iniciar guiado hilo]: Reinicialización del guiado de hilo.\nEste control puede asignarse a una entrada lógica o a un bit de palabra de control del bus de comunicaciones.\nVuelve a poner la alarma E b o y el tiempo de funcionamiento E b o E a 0 y reinicializa la referencia según la\nreferencia básica. Mientras r E r se encuentra a 1, la función de guiado de hilo permanece desactivada y la\nvelocidad se mantiene igual que la referencia básica. Este control se utiliza principalmente a la hora de cambiar\nlas bobinas.\nVelocidad del motor\nReferencia\nbásica\nAA\ndtF\n0\nt\ntbO\nRun\n0\n-\nt\ntrC\n0\nt\nEbOt +\ntbO\n4\nt\n0\nBit 15 de\nLRS1\n0\nt\nEbO +\n0\nt\nrtr 4\n0\nt\n242\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "",
+            "Vuelve a poner la alarma E b o y el tiempo de funcionamiento E b o E a 0 y reinicializa la referencia según la referencia básica. Mientras r E r se encuentra a 1, la función de guiado de hilo permanece desactivada y la velocidad se mantiene igual que la referencia básica. Este control se utiliza principalmente a la hora de cambiar las bobinas. Velocidad del motor"
+          ],
+          [
+            ""
+          ],
+          [
+            "",
+            "Referencia básica",
+            "",
+            ""
+          ],
+          [
+            "",
+            "dtF",
+            "AA",
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "0",
+            "",
+            "t"
+          ],
+          [
+            "",
+            "",
+            "tbO",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Run",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "0",
+            "",
+            "",
+            "",
+            "- t"
+          ],
+          [
+            "trC",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "0",
+            "",
+            "",
+            "t"
+          ],
+          [
+            "",
+            "EbOt + tbO",
+            "",
+            "",
+            "",
+            "4 t"
+          ],
+          [
+            "0",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Bit 15 de LRS1 0",
+            "",
+            "",
+            "",
+            "t"
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "EbO + 0",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "rtr 4",
+            "",
+            "",
+            "t"
+          ],
+          [
+            "",
+            "0",
+            "",
+            "t"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Modo Configuración (ConF)\nContador de vaivén\nVariador\nprincipal\nVariador\nsecundario\nATV320\nATV320\ntSY\nSnC\nSincronización\nBobina de hilo\nReductor\nEje principal\nMotor de\nbobinado\nGuía de hilo\nHilo\nMotor de guiado de hilo\nReductor\n16\nLeva\nLa función de contador de vaivén se utiliza en ciertas aplicaciones para obtener una tensión de hilo constante\ncuando la función de guiado de hilo provoca variaciones de velocidad considerables en el motor de guía de\nhilo ([Frec.alta G. hilo] (E r H) y [Frec.baja G.hilo] ( E r L ); consulte [Frec.alta G. hilo] ( E r H) en la página\n245).\nSe deben utilizar dos variadores (uno principal y otro secundario).\nEl principal controla la velocidad de la guía de hilo y el secundario controla la velocidad de bobinado. La\nfunción asigna al secundario un perfil de velocidad con una fase opuesta a la del principal. Esto significa que\nse debe realizar una sincronización con una de las salidas lógicas del principal y una de las entradas lógicas\ndel secundario.\nNVE41298 04/2018\n243",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "Modo Configuración (ConF)\nOrden de marcha\npara principal y\nsecundario\nt\nControl de guiado de\nhilo en principal y\nsecundario\n- t\nVelocidad del motor\nde guía de hilo\n(variador principal)\ntrH\ntrL\nSincronización de\ntSY/SnC\n- t\n- t\nVelocidad del motor de\nbobinado\n(variador secundario)\ntrH\ntrL\n-\nt\nConexión de las entradas y salidas de sincronización\nVariador principal\nVariador secundario\nATV320\nATV320\n(SnCO) LO· Q\nLlo (SnCI)\nCOM O\nCOM\nLas condiciones de arranque de la función son:\n· Velocidades básicas alcanzadas en ambos variadores\n· Entrada [Guiado de hilo] (E r C ) activada\n· Señal de sincronización presente\nNota: Los parámetros [Despl. rápido arriba] ( 9 5 H) y [Despl. rápido abajo] ( 9 5 L ) normalmente se deben\ndejar a 0.\n244\nNVE41298 04/2018",
+      "tablas": []
+    }
+  ]
+}

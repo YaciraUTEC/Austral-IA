@@ -1,0 +1,2371 @@
+{
+  "archivo": "ATV320_Programming_manual_p281_320",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Interfaz (ItF)\nInterfaz (ItF)\n6\nContenido de este capítulo\nEste capítulo trata los siguientes temas:\nTema\nPágina\nNivel acceso (LAC)\n286\nIdioma (LnG)\n288\nPantalla supervisión (MCF)\n289\nConfiguración de visualización (dCF)\n293\nNVE41298 04/2018\n285",
+      "tablas": [
+        [
+          [
+            "Tema",
+            "Página"
+          ],
+          [
+            "Nivel acceso (LAC)",
+            "286"
+          ],
+          [
+            "Idioma (LnG)",
+            "288"
+          ],
+          [
+            "Pantalla supervisión (MCF)\n:unselected:",
+            "289"
+          ],
+          [
+            "Configuración de visualización (dCF)",
+            "293"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Interfaz (ItF)\nAcceda a los parámetros que se describen en esta página mediante:\nITF-\nNivel acceso (LAC)\nCon terminal integrado:\nDesde el menú , E F -\n+\n-\n= ENT\nESC ) = ESC\nIEF -\nENT\nESC\n+\nLAC\nENT\nESC\nNIVEL ACCESO\n+\nESC\nICF -\n-\n+\nESC\ndCF -\n+\nCódigo\nNombre/Descripción\nAjuste de fábrica\nIEF -\n[3 INTERFACE]\nLAC\n[3.1 NIVEL ACCESO]\n[Estándar] ( 5 t d)\n6 A 5 [Básico] ( 6 A 5): Acceso limitado a los menús [ARRANQUE RÁPIDO] ( 5 , 77 - ), [1.2 SUPERVISIÓN] (nan - ), [AJUSTES]\n(SEE - ), [AJUSTES DE FÁBRICA] ( F [ 5 - ), [5 CÓDIGO DE ACCESO] (C a d) y [3.1 NIVEL ACCESO] (L AC - ). Sólo puede\nasignarse una función a cada entrada.\nEPr\n5 L d [Estándar] ( 5 E d): Acceso a todos los menús del terminal integrado. Sólo puede asignarse una función a cada entrada.\nAdu [Avanzado] (A du): Acceso a todos los menús del terminal integrado. Pueden asignarse varias funciones a cada entrada.\n[Experto] (E Pr ): Acceso a todos los menús del terminal integrado y acceso a parámetros adicionales. Pueden asignarse varias\nfunciones a cada entrada.\nC\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\n286\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Ajuste de fábrica"
+          ],
+          [
+            "IEF -",
+            "[3 INTERFACE]"
+          ],
+          [
+            "LAC",
+            "[3.1 NIVEL ACCESO]",
+            "[Estándar] ( 5 t d)"
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "6 A 5",
+            "[Básico] ( 6 A 5): Acceso limitado a los menús [ARRANQUE RÁPIDO] ( 5 , 77 - ), [1.2 SUPERVISIÓN] (nan - ), [AJUSTES] (SEE - ), [AJUSTES DE FÁBRICA] ( F [ 5 - ), [5 CÓDIGO DE ACCESO] (C a d) y [3.1 NIVEL ACCESO] (L AC - ). Sólo puede asignarse una función a cada entrada."
+          ],
+          [
+            "EPr 5 L d\nAdu",
+            "[Estándar] ( 5 E d): Acceso a todos los menús del terminal integrado. Sólo puede asignarse una función a cada entrada.\n[Avanzado] (A du): Acceso a todos los menús del terminal integrado. Pueden asignarse varias funciones a cada entrada. [Experto] (E Pr ): Acceso a todos los menús del terminal integrado y acceso a parámetros adicionales. Pueden asignarse varias funciones a cada entrada."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Interfaz (ItF)\nComparación de los menús a los que puede accederse en el terminal gráfico/terminal integrado\n[1 MENÚ VARIADOR] (dr ; - )\n[1.1 REFERENCIA VELOCIDAD] (~ E F -)\n[1.2 SUPERVISIÓN] (n an -)\nnno - (Supervisión de motor)\n1 0 nl - (IMAGEN E/S)\n5 AF - (Supervisión de seguridad)\nNF b - (Supervisión de bloques funcionales)\ncnn - (Imagen de comunicación)\nnP , - (Supervisión de PI)\nPE E - (Supervisión de tiempo de tensión)\nAL r - (Alarmas) (1)\n5 5 ₺ - (Otros estados) (1)\nCad - (Código de acceso)\n[1.3 CONFIGURACIÓN] (COnF)\nnynn - (Menú usuario)\nF C 5 - (Ajustes de fábrica)\nFULL (Completo)\n5 . 7 - (Arranque rápido)\n5 E E - (Ajustes)\nF bn - (Bloques funcionales)\nBásico 6 A 5\n[2 IDENTIFICACIÓN] ( a , d - ) (1)\n[3 INTERFACE] ( , E F - ) (1)\n[3.1 NIVEL ACCESO] (L A C)\n[3.2 IDIOMA] (L n G)\n[4 ABRIR/GUARDAR] ( E r A - ) (1)\n[5 CÓDIGO DE ACCESO] (C a d - ) (1)\nPuede asignarse una única función a cada entrada.\nNivel de\nacceso\nEstándar 5 t d\nAvanzado A d u\nExperto E Pr\n[1 MENÚ VARIADOR]\n( dr , - )\n[1.2 SUPERVISIÓN] (non -)\nd GE - (Diagnóstico)\n[1.3 CONFIGURACIÓN] ([ an F)\nFULL (Completo)\ndr C - (Control motor)\n1 - a - (Configuración de\nentradas y salidas)\nCEL - (Control)\nFun - (Función de\naplicación)\nFLE - (Gestión de fallos)\nCon - (Comunicación)\n[3 INTERFACE] ( , E F - )\n(1)\n[3.3 PANTALLA SUPERVISIÓN] (n C F - )\nPuede asignarse una única función a cada entrada.\n[3.4 CONFIG. VISUALIZACIÓN] ( d [ F -) (1)\nParámetros de Experto\nPueden asignarse varias funciones a cada entrada.\nPueden asignarse varias funciones a cada entrada.\n(1) Sólo puede accederse a éste con el terminal gráfico.\nNVE41298 04/2018\n287",
+      "tablas": [
+        [
+          [
+            "",
+            ""
+          ],
+          [
+            "[1 MENÚ VARIADOR] (dr ; - )",
+            ""
+          ],
+          [
+            "",
+            "[1.1 REFERENCIA VELOCIDAD] (~ E F -)"
+          ],
+          [
+            "",
+            "[1.2 SUPERVISIÓN] (n an -)"
+          ],
+          [
+            "",
+            "",
+            "nno - (Supervisión de motor)"
+          ],
+          [
+            "",
+            "",
+            "1 0 nl - (IMAGEN E/S)"
+          ],
+          [
+            "",
+            "",
+            "5 AF - (Supervisión de seguridad)"
+          ],
+          [
+            "",
+            "",
+            "NF b - (Supervisión de bloques funcionales)"
+          ],
+          [
+            "",
+            "",
+            "cnn - (Imagen de comunicación)"
+          ],
+          [
+            "",
+            "",
+            "nP , - (Supervisión de PI)"
+          ],
+          [
+            "",
+            "",
+            "PE E - (Supervisión de tiempo de tensión)"
+          ],
+          [
+            "",
+            "",
+            "AL r - (Alarmas) (1)"
+          ],
+          [
+            "",
+            "",
+            "5 5 ₺ - (Otros estados) (1)"
+          ],
+          [
+            "",
+            "",
+            "Cad - (Código de acceso)"
+          ],
+          [
+            "",
+            "[1.3 CONFIGURACIÓN] (COnF)"
+          ],
+          [
+            "",
+            "",
+            "nynn - (Menú usuario)"
+          ],
+          [
+            "",
+            "",
+            "F C 5 - (Ajustes de fábrica)"
+          ],
+          [
+            "",
+            "",
+            "FULL (Completo)"
+          ],
+          [
+            "",
+            "",
+            "",
+            "5 . 7 - (Arranque rápido)"
+          ],
+          [
+            "",
+            "",
+            "",
+            "5 E E - (Ajustes)"
+          ],
+          [
+            "",
+            "",
+            "",
+            "F bn - (Bloques funcionales)"
+          ]
+        ],
+        [
+          [
+            "[1 MENÚ VARIADOR] ( dr , - )",
+            "[1.2 SUPERVISIÓN] (non -)",
+            "d GE - (Diagnóstico)"
+          ],
+          [
+            "",
+            "[1.3 CONFIGURACIÓN] ([ an F)",
+            "FULL (Completo)",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "dr C - (Control motor)"
+          ],
+          [
+            "",
+            "",
+            "",
+            "1 - a - (Configuración de entradas y salidas)"
+          ],
+          [
+            "",
+            "",
+            "",
+            "CEL - (Control)"
+          ],
+          [
+            "",
+            "",
+            "",
+            "Fun - (Función de aplicación)"
+          ],
+          [
+            "",
+            "",
+            "",
+            "FLE - (Gestión de fallos)"
+          ],
+          [
+            "",
+            "",
+            "",
+            "Con - (Comunicación)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Interfaz (ItF)\nAcceda a los parámetros que se describen en esta página mediante:\nITF-\nIdioma (LnG)\nRDY\nEnglish\nFrançais\nDeutsch\nEspañol\nItaliano\nChinese\nРусский\nTürkçe\nTerm\n+0,0 Hz\n0,0 A\n3.2 IDIOMA\n1\n<<\n>>\nQuick\nCuando sólo es posible realizar una selección, la selección realizada se indica mediante el\nsímbolo\nEjemplo: Sólo puede seleccionarse un idioma.\nCódigo\nNombre/Descripción\nAjuste de fábrica\nLAG\n[3.2 IDIOMA]\n[Idioma 0] (LnG0)\nÍndice de idiomas actuales.\nLnG0 [Idioma 0] (LnG0)\nLG9\n[Idioma 9] (L n G 9)\nC\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\n288\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Ajuste de fábrica"
+          ],
+          [
+            "LAG",
+            "[3.2 IDIOMA]",
+            "[Idioma 0] (LnG0)"
+          ],
+          [
+            "",
+            "Índice de idiomas actuales.",
+            ""
+          ],
+          [
+            "LnG0",
+            "[Idioma 0] (LnG0)",
+            ""
+          ],
+          [
+            "LG9",
+            "[Idioma 9] (L n G 9)",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Interfaz (ItF)\nPantalla supervisión (MCF)\nSólo puede accederse a este menú con el terminal gráfico.\nRDY\nTerm\n+0,0 Hz 0,0 A\n3 INTERFACE\n3.1 NIVEL ACCESO\n3.2 IDIOMA\n3.3 PANTALLA SUPERVISIÓN\nCódigo\n<<\n>>\nQuick\nENT\nRUN\nTerm\n+0,0 Hz 0,0 A\n3.3 PANTALLA SUPERVISIÓN\nSEL. LÍNEA PARÁMETROS\nTIPO PANTALLA SUPERV.\nCONFIG. IMAGEN COM.\nCódigo\n<<\n>>\nQuick\nPuede utilizarse para configurar la información que debe visualizarse en la pantalla del terminal gráfico\ndurante el funcionamiento.\nRUN\nTerm\n+0,0 Hz\n0,0 A\n3.3 PANTALLA SUPERVISIÓN\nSEL. LÍNEA PARÁMETROS\nTIPO PANTALLA SUPERV.\nCONFIG. IMAGEN COM.\nCódigo\n<<\nQuick\n[SEL. LÍNEA PARÁMETROS]: Selección de la visualización de 1 ó 2 parámetros en la línea\nsuperior (los dos primeros no pueden modificarse).\n[TIPO PANTALLA SUPERV.]: Selección de los parámetros que deben visualizarse en la parte\ncentral de la pantalla y modo de visualización (valores digitales o formato de barra gráfica).\n[CONFIG. IMAGEN COM.]: Selección de las palabras que deben visualizarse y el formato de\néstas.\nNVE41298 04/2018\n289",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Interfaz (ItF)\nAcceda a los parámetros que se describen en esta página mediante:\nITF- > MCF-\nCódigo\nNombre/Descripción\nNCF -\n[3.3 PANTALLA SUPERVISIÓN]\nCódigo\nNombre/Descripción\nP 6 5 -\n[SEL. LÍNEA PARÁMETROS]\n[AI1]\n[AI2]\n[AI3]\n[AO1]\n[Palabra estado ETA]\n[Grupos de alarma]\n[Referencia frec.]\n[Frecuencia de salida]\n[Intensidad motor]\n[Velocidad motor]\n[Tensión motor]\n[Pot. salida motor]\n[Par motor]\n[Tensión red]\n[Est. térmico motor]\n[Est. térm. var.]\n[Consumo potencia]\n[T. funcionamiento]\n[T. equipo en tensión]\n[Tiemp.alarma IGBT]\n[Tiempo frec.min.]\n[Referencia PID]\n[Retorno PID]\n[Error PID]\n[Salida PID]\n[Config. activa]\n[Juego param. usado]\nen V\nen V\nen mA\nen V\nen Hz: parámetro que se visualiza en la configuración de fábrica\nen Hz\nen A: parámetro que se visualiza en la configuración de fábrica\nen rpm\nen V\nen W\ncomo %\nen V\ncomo %\ncomo %\nen Wh o kWh, en función del calibre del variador\nen horas (periodo de tiempo que el motor ha estado encendido)\nen horas (periodo de tiempo que el variador ha estado encendido)\nen segundos (tiempo total de alarmas de sobrecalentamiento IGBT)\nen segundos\ncomo %\ncomo %\ncomo %\nen Hz\nCNF0, 1 ó 2 (consulte la página 235)\nSET1, 2 ó 3 (consulte la página 233)\nSeleccione el parámetro mediante ENT (a continuación, aparecerá un símbolo\njunto al parámetro).\nTambién puede deseleccionarlo mediante ENT.\nPueden seleccionarse 1 ó 2 parámetros.\nEjemplo:\nSEL. LÍNEA PARÁMETROS\nSUPERVISIÓN\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n290\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción"
+          ],
+          [
+            "NCF -",
+            "[3.3 PANTALLA SUPERVISIÓN]"
+          ]
+        ],
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            ""
+          ],
+          [
+            "P 6 5 -",
+            "[SEL. LÍNEA PARÁMETROS]"
+          ],
+          [
+            "",
+            "[AI1] [AI2] [AI3] [AO1] [Palabra estado ETA] [Grupos de alarma] [Referencia frec.] [Frecuencia de salida] [Intensidad motor] [Velocidad motor] [Tensión motor] [Pot. salida motor] [Par motor] [Tensión red] [Est. térmico motor] [Est. térm. var.] [Consumo potencia] [T. funcionamiento] [T. equipo en tensión] [Tiemp.alarma IGBT] [Tiempo frec.min.] [Referencia PID] [Retorno PID] [Error PID] [Salida PID] [Config. activa] [Juego param. usado]",
+            "en V en V en mA en V"
+          ],
+          [
+            "en Hz: parámetro que se visualiza en la configuración de fábrica en Hz en A: parámetro que se visualiza en la configuración de fábrica en rpm en V en W como % en V como % como % en Wh o kWh, en función del calibre del variador en horas (periodo de tiempo que el motor ha estado encendido) en horas (periodo de tiempo que el variador ha estado encendido) en segundos (tiempo total de alarmas de sobrecalentamiento IGBT) en segundos como %"
+          ],
+          [
+            "como % como % en Hz CNF0, 1 ó 2 (consulte la página 235) SET1, 2 ó 3 (consulte la página 233)"
+          ],
+          [
+            "",
+            "Seleccione el parámetro mediante ENT (a continuación, aparecerá un símbolo :selected: junto al parámetro). También puede deseleccionarlo mediante ENT."
+          ],
+          [
+            "Pueden seleccionarse 1 ó 2 parámetros."
+          ],
+          [
+            "Ejemplo:"
+          ],
+          [
+            "SEL. LÍNEA PARÁMETROS"
+          ],
+          [
+            "SUPERVISIÓN - - - - - - - - - :selected: - - - - - - - - - :unselected: - - - - - - - - - :unselected: - - - - - - - - - :selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Interfaz (ItF)\nAcceda a los parámetros que se describen en esta página mediante:\nITF- > MCF- > MSC-\nTipo de pantalla de supervisión\nCódigo\nNombre/Descripción\nAjuste de fábrica\nnSC -\n[TIPO PANTALLA SUPERV.]\nndt\n[Tipo de pantalla]\n[Val.digitales] ( d E C)\n[Val.digitales] ( d E C)\n[Barr.gráfica] (b A r )\n[List.valores] (L , 5 E)\n[SELECC. PARÁMETROS]\ng\n[AI1]\n[AI2]\n[AI3]\n[AO1]\n[Palabra estado ETA]\n[Grupos de alarma]\n[Referencia frec.]\n[Frecuencia de salida]\n[Frec.trabajo ent.puls]\n[Intensidad motor]\n[Velocidad motor]\n[Tensión motor]\n[Pot. salida motor]\n[Par motor]\n[Tensión red]\n[Est. térmico motor]\n[Est. term. var.]\n[Consumo potencia]\n[T. funcionamiento]\n[T. equipo en tensión]\n[Tiemp.alarma IGBT]\n[Tiempo frec.min.]\n[Referencia PID]\n[Retorno PID]\n[Error PID]\nen V\nen V\nen mA\nen V\nen Hz: parámetro que se visualiza en la configuración de fábrica\nen Hz\nen A: parámetro que se visualiza en la configuración de fábrica\nen Hz\nen rpm\nen V\nen W\ncomo %\nen V\ncomo %\ncomo %\nen Wh o kWh, en función del calibre del variador\nen horas (periodo de tiempo que el motor ha estado encendido)\nen horas (periodo de tiempo que el variador ha estado encendido)\nen segundos (tiempo total de alarmas de sobrecalentamiento IGBT)\nen segundos\ncomo %\ncomo %\n[Salida PID]\ncomo %\nen Hz\nSeleccione el parámetro mediante ENT (a continuación, aparecerá un símbolo\n/ junto al parámetro). También puede\ndeseleccionarlo mediante ENT.\nSELECC. PARÁMETROS\nSUPERVISIÓN\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\nPor ejemplo:\nVisualización de dos valores\ndigitales\nVisualización de dos barras\ngráficas\nVisualización de una lista\nde cinco valores\nRUN\nTerm\n+35,0 Hz 80,0 A\nVelocidad motor\n1250 rpm\nIntensidad motor\n80 A\nRUN\nTerm\n+35,0 Hz 80,0 A\nMín\nVelocidad motor\nMáx\n0\n1250 rpm\n1500\nMín\nIntensidad motor\nMáx\n0\n80 A\n150\nRUN\nTerm\n+35,0 Hz 80,0 A\n1.2 SUPERVISIÓN\nReferencia frec.\n:\n50,1Hz\nIntensidad motor:\n80 A\nVelocidad motor:\n1250 rpm\nEst.térmico motor:\n80%\nEst. term. var.\n. .\n80%\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\ng\nC\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\nNVE41298 04/2018\n291",
+      "tablas": [
+        [
+          [
+            "nSC -",
+            "[TIPO PANTALLA SUPERV.]",
+            ""
+          ],
+          [
+            "ndt",
+            "[Tipo de pantalla]",
+            "[Val.digitales] ( d E C)"
+          ],
+          [
+            "",
+            "[Val.digitales] ( d E C) [Barr.gráfica] (b A r ) [List.valores] (L , 5 E)",
+            ""
+          ],
+          [
+            "",
+            "[SELECC. PARÁMETROS]",
+            ""
+          ],
+          [
+            "g\n:selected:",
+            "[AI1] [AI2] [AI3] [AO1] [Palabra estado ETA] [Grupos de alarma] [Referencia frec.] [Frecuencia de salida] [Frec.trabajo ent.puls] [Intensidad motor] [Velocidad motor] [Tensión motor] [Pot. salida motor] [Par motor] [Tensión red] [Est. térmico motor] [Est. term. var.] [Consumo potencia] [T. funcionamiento] [T. equipo en tensión] [Tiemp.alarma IGBT] [Tiempo frec.min.] [Referencia PID] [Retorno PID]",
+            "en V en V en mA en V en Hz: parámetro que se visualiza en la configuración de fábrica en Hz en A: parámetro que se visualiza en la configuración de fábrica en Hz en rpm en V en W como % en V como % como % en Wh o kWh, en función del calibre del variador en horas (periodo de tiempo que el motor ha estado encendido) en horas (periodo de tiempo que el variador ha estado encendido) en segundos (tiempo total de alarmas de sobrecalentamiento IGBT) en segundos como % como %"
+          ],
+          [
+            "[Error PID]\n[Salida PID]",
+            "como % en Hz"
+          ]
+        ],
+        [
+          [
+            "RUN",
+            "Term +35,0 Hz",
+            "80,0 A"
+          ],
+          [
+            "Mín",
+            "Velocidad motor",
+            "Máx"
+          ],
+          [
+            "0",
+            "1250 rpm",
+            "1500"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "Mín",
+            "Intensidad motor",
+            "Máx"
+          ],
+          [
+            "0",
+            "80 A",
+            "150"
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "",
+            "RUN",
+            "Term",
+            "+35,0",
+            "Hz 80,0 A"
+          ],
+          [
+            "",
+            "1.2 SUPERVISIÓN"
+          ],
+          [
+            "",
+            "Referencia frec.",
+            ":",
+            "50,1Hz"
+          ],
+          [
+            "",
+            "Intensidad motor:",
+            "",
+            "80 A"
+          ],
+          [
+            "",
+            "Velocidad",
+            "motor:",
+            "",
+            "1250 rpm"
+          ],
+          [
+            "",
+            "Est.térmico",
+            "motor:",
+            "",
+            "80%"
+          ],
+          [
+            "",
+            "Est. term. var.",
+            ". .",
+            "80%"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Interfaz (ItF)\nAcceda a los parámetros que se describen en esta página mediante:\nITF- > MCF- > ADL-\nConfiguración de la imagen de comunicación\nCódigo\nNombre/Descripción\nAjuste de fábrica\nAdL -\n[CONFIG. IMAGEN COM.]\nIAd1\n[Sel.direcc.palabra 1]\n0\nSeleccione la dirección de la palabra que debe visualizarse pulsando las teclas << y >> (F2 y F3) y girando el selector giratorio.\nFAd1\n[Formato palabra 1]\n[Hexadec.] (H E )\nFormato de palabra 1.\nHE\n[Hexadec.] (H E )\n5 , G\nn SG\n[Con signo] ( 5 , G)\n[Sin signo] (n 5 G)\nI Ad2\n[Sel.direcc.palabra 2]\n0\nC\nSeleccione la dirección de la palabra que debe visualizarse pulsando las teclas << y >> (F2 y F3) y girando el selector giratorio.\nF Ad2\n[Formato palabra 2]\n[Hexadec.] (H E )\nC\nFormato de palabra 2.\nHE\n[Hexadec.] (H E )\nS , G\n[Con signo] ( 5 , G)\n[Sin signo] (n 5 G)\n, Ad3\n[Sel.direcc.palabra 3]\n0\nC\nSeleccione la dirección de la palabra que debe visualizarse pulsando las teclas << y >> (F2 y F3) y girando el selector giratorio.\nFAd3\n[Formato palabra 3]\n[Hexadec.] (H E )\nFormato de palabra 3.\nHE\n[Hexadec.] ( H E )\n5 . G\n[Con signo] ( 5 , G)\n[Sin signo] (n 5 G)\n, A d 4\n[Sel.direcc.palabra 4]\n0\nC\nSeleccione la dirección de la palabra que debe visualizarse pulsando las teclas << y >> (F2 y F3) y girando el selector giratorio.\nF Ad4\n[Formato palabra 4]\n[Hexadec.] ( H E )\nC\nFormato de palabra 4.\nHE\n[Hexadec.] (H E )\n5 , G\n[Con signo] ( 5 , G)\n[Sin signo] (n 5 G)\nASG\nA continuación, se podrán ver las palabras seleccionadas en el submenú [IMAGEN COMUNICACIÓN] del menú [1.2 SUPERVISIÓN].\nEjemplo:\nRUN\nTerm\n+35,0 Hz 80,0 A\nIMAGEN COMUNICACIÓN\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\nW3141:\nF230 Hexadec.\n>>\nQuick\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\n292\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Ajuste de fábrica"
+          ],
+          [
+            "AdL -",
+            "[CONFIG. IMAGEN COM.]",
+            ""
+          ],
+          [
+            "IAd1",
+            "[Sel.direcc.palabra 1]",
+            "0"
+          ],
+          [
+            "",
+            "Seleccione la dirección de la palabra que debe visualizarse pulsando las teclas << y >> (F2 y F3) y girando el selector giratorio."
+          ],
+          [
+            "FAd1",
+            "[Formato palabra 1]",
+            "[Hexadec.] (H E )"
+          ],
+          [
+            "",
+            "Formato de palabra 1.",
+            ""
+          ],
+          [
+            "HE",
+            "[Hexadec.] (H E )",
+            ""
+          ],
+          [
+            "5 , G n SG",
+            "[Con signo] ( 5 , G) [Sin signo] (n 5 G)",
+            ""
+          ],
+          [
+            "I Ad2",
+            "[Sel.direcc.palabra 2]",
+            "0"
+          ],
+          [
+            "C",
+            "Seleccione la dirección de la palabra que debe visualizarse pulsando las teclas << y >> (F2 y F3) y girando el selector giratorio."
+          ],
+          [
+            "F Ad2",
+            "[Formato palabra 2]",
+            "[Hexadec.] (H E )"
+          ],
+          [
+            "C",
+            "Formato de palabra 2.",
+            ""
+          ],
+          [
+            "HE",
+            "[Hexadec.] (H E )",
+            ""
+          ],
+          [
+            "S , G",
+            "[Con signo] ( 5 , G) [Sin signo] (n 5 G)",
+            ""
+          ],
+          [
+            ", Ad3",
+            "[Sel.direcc.palabra 3]",
+            "0"
+          ],
+          [
+            "C",
+            "Seleccione la dirección de la palabra que debe visualizarse pulsando las teclas << y >> (F2 y F3) y girando el selector giratorio."
+          ],
+          [
+            "FAd3",
+            "[Formato palabra 3]",
+            "[Hexadec.] (H E )"
+          ],
+          [
+            "",
+            "Formato de palabra 3.",
+            ""
+          ],
+          [
+            "HE",
+            "[Hexadec.] ( H E )",
+            ""
+          ],
+          [
+            "5 . G",
+            "[Con signo] ( 5 , G) [Sin signo] (n 5 G)",
+            ""
+          ],
+          [
+            ", A d 4",
+            "[Sel.direcc.palabra 4]",
+            "0"
+          ],
+          [
+            "C",
+            "Seleccione la dirección de la palabra que debe visualizarse pulsando las teclas << y >> (F2 y F3) y girando el selector giratorio."
+          ],
+          [
+            "F Ad4",
+            "[Formato palabra 4]",
+            "[Hexadec.] ( H E )"
+          ],
+          [
+            "C",
+            "Formato de palabra 4.",
+            ""
+          ],
+          [
+            "HE",
+            "[Hexadec.] (H E )",
+            ""
+          ],
+          [
+            "5 , G",
+            "[Con signo] ( 5 , G)",
+            ""
+          ],
+          [
+            "ASG",
+            "[Sin signo] (n 5 G)",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Interfaz (ItF)\nConfiguración de visualización (dCF)\nSólo puede accederse a este menú con el terminal gráfico. Puede utilizarse para personalizar parámetros o\nun menú y para acceder a los parámetros.\nRDY\nTerm\n0,0 Hz\n0,0 A\nMENÚ GENERAL\n1 MENÚ VARIADOR\n2 IDENTIFICACIÓN\n3 INTERFACE\n4 ABRIR/GUARDAR\n5 CÓDIGO DE ACCESO\nCódigo\nQuick\nENT\nRDY\nTerm\n0,0 Hz\n0,0 A\n3 INTERFACE\n3.1 NIVEL ACCESO\n3.2 IDIOMA\n3.3 PANTALLA SUPERVISIÓN\n3.4 CONFIG. VISUALIZACIÓN\nCódigo\n<<\n>>\nQuick\nENT\nRDY\nTerm\n0,0 Hz\n0,0 A\n3.4 CONFIG. VISUALIZACIÓN\nPARÁMETROS USUARIO\nCONFIG. MENÚ USUARIO\nACCESO A PARÁMETROS\nPARÁMETROS CONSOLA\nCódigo\n<<\n>>\nQuick\n· PARÁMETROS USUARIO: Personalización de 1 a 15 parámetros.\n· MENÚ USUARIO: Creación de un menú personalizado.\n· ACCESO A PARÁMETROS: Personalización de los mecanismos de visibilidad y protección de los menús\ny parámetros.\n· PARÁMETROS CONSOLA: Ajuste del contraste y del modo de espera del terminal gráfico (parámetros\nalmacenados en el terminal en lugar de en el variador).\nCódigo\nNombre/Descripción\nd CF -\n[3.4 CONFIG. VISUALIZACIÓN]\nNVE41298 04/2018\n293",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción"
+          ],
+          [
+            "d CF -",
+            "[3.4 CONFIG. VISUALIZACIÓN]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Interfaz (ItF)\nParámetros del usuario\nSi [Ret.nombre estánd.] se establece en [Sí], la visualización vuelve al modo estándar, pero los ajustes de\npersonalización siguen almacenados.\nRDY\nTerm\n0,0 Hz\n0,0 A\nPARÁMETROS USUARIO\nRet.nombre estánd. :\nSELECC. PARÁMETROS\nPERSONALIZ.SELECCIÓN\nMENÚ USUARIO\nNOMBRE EQUIPO\nNo ENT\nCódigo\n<<\n>>\nQuick\nMENSAJE DE SERVICIO\nCONFIGURACIÓN 0\nCONFIGURACIÓN 1\nCONFIGURACIÓN 2\nNº DE SERIE\nEstándar: utilización de la\nunidad del ajuste de fábrica.\nPerson .: personalización de la\nunidad.\n%, mA, etc .: selección a partir\nde la lista desplegable.\nSELECC. PARÁMETROS\nFULL\nARRANQUE RÁPIDO\nAJUSTES\nCONTROL MOTOR\nENTRADAS/SALIDAS\nCOMANDO\nList\nENT\nSELECC. PARÁMETROS\nAJUSTES\nIncremento rampa\nRampa aceleración\nRampa deceleración\nAceleración 2\nDeceleración 2\nList\nSelección de 1 a 15 parámetros\npara su personalización.\nENT\nList\nRDY\nTerm\n+0,0 Hz 0,0 A\nPERSONALIZ.SELECCIÓN\nIncremento rampa\nRampa aceleración\nDeceleración 2\nNota: La 1ª línea es [SELECC. PARÁMETROS] o\n[RDY Term +0,0 Hz 0,0 A], en función de la ruta (ENT o List).\nLista de parámetros personalizados.\nEliminar\nENT\nRDY\nTerm\n+0,0 Hz\n0,0 A\nIncremento rampa\nNombre usuario\nUnidad\nMultiplicador\nDivisor\nOffset\nLos offsets y los coeficientes son\nvalores numéricos. No utilice un\nmultiplicador demasiado largo\n(99.999 es la visualización\nmáxima).\nENT\nRDY\nTerm\n+0,0 Hz\n0,0 A\nNombre usuario\nSi no se ha realizado ningún\najuste de personalización,\naparecen los valores estándar\n(nombres, unidades, etc.).\nVisualización en 1 ó 2 líneas de\ncaracteres.\nFLOW REFERENCE\nNº max. de caracteres\n13\nABC\n<<\nUtilice F1 para cambiar a ABC, abc, 123, *[ -.\nENT RDY\nTerm\n+0,0 Hz 0,0 A\nUnidad\nEstándar\nPerson.\n%\nmA\nQuick\nUtilice el selector giratorio para avanzar a los siguientes caracteres\n(orden alfabético) y << y >> (F2 y F3) con el fin de conmutar al carácter\nsiguiente o anterior respectivamente.\nRDY\nTerm\n+0,0 Hz 0,0 A\nPerson.\nLBS\nDespués de haber especificado la\nunidad, si pulsa ENT, volverá a\naparecer la pantalla Incremento\nrampa para visualizar el nombre.\nPulse ESC para volver a Unidad.\nNº max. de caracteres\n3\nABC\n<<\nENT\nRDY\nTerm +0,0 Hz 0,0 A\nMENSAJE DE SERVICIO\nENT\nRDY\nTerm\n+0,0 Hz\n0,0 A\nLÍNEA 2\nLÍNEA 1\nLÍNEA 2\nLÍNEA 3\nLÍNEA 4\nLÍNEA 5\nView\nQuick\nEl mensaje especificado aparece\nmientras se pulsa la tecla de la\nvista.\nNº máx. de caracteres\n23\nFor any service, dial:\nABC\n<<\nQuick\nRDY\nTerm\n+0,0 Hz 0,0 A\nNOMBRE MENÚ USUARIO\nFLOW REFERENCE\nNº max. de caracteres\n18\nABC\n<<\n>>\nQuick\nLos nombres (el nombre de menú del usuario, el nombre del variador, la configuración, el número de\nserie, las líneas de los mensajes, los nombres de las unidades, etc.) se personalizan tal como se indica\nen el ejemplo del nombre de parámetro que se muestra en el lado opuesto.\nSi no se ha realizado ningún ajuste de personalización, aparecen los valores estándar (nombres,\nunidades, etc.).\nVisualización en 1 ó 2 líneas de caracteres.\nUtilice F1 para cambiar a ABC, abc, 123, *[ -.\nUtilice el selector giratorio para avanzar a los siguientes caracteres (orden alfabético) y\n<< y >> (F2 y F3) con el fin de conmutar al carácter siguiente o anterior respectivamente.\n294\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "SELECC. PARÁMETROS"
+          ],
+          [
+            "AJUSTES"
+          ],
+          [
+            "Incremento rampa",
+            ":selected:"
+          ],
+          [
+            "Rampa aceleración",
+            ":selected:"
+          ],
+          [
+            "Rampa deceleración",
+            ":unselected:"
+          ],
+          [
+            "Aceleración 2",
+            ":unselected:"
+          ],
+          [
+            "Deceleración 2",
+            ":selected:"
+          ],
+          [
+            "List"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Interfaz (ItF)\nAcceda a los parámetros que se describen en esta página mediante:\nITF- > DCF- > CUP-\nCódigo\nNombre/Descripción\nAjuste de fábrica\nCUP -\n[PARÁMETROS USUARIO]\nGSP\n[Ret.nombre estánd.]\n[No] (na)\nVisualización de parámetros estándar en lugar de parámetros personalizados.\n0\nyES\n[No] (na)\n[Si] ( YES)\n[MENÚ USUARIO]\nPAn\n[NOMBRE EQUIPO]\nS Er -\n[MENSAJE DE SERVICIO]\nSOLOI\n[LÍNEA 1]\nSOLO2\n[LÍNEA 2]\nSOLO3\n[LÍNEA 3]\nSOLO4\n[LÍNEA 4]\nSOLOS\n[LÍNEA 5]\nCFAOl\n[CONFIGURACIÓN 0]\nCFA02\n[CONFIGURACIÓN 1]\nCFA03\n[CONFIGURACIÓN 2]\nP5n\n[Nº DE SERIE]\nC\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\nNVE41298 04/2018\n295",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Ajuste de fábrica"
+          ],
+          [
+            "CUP -",
+            "[PARÁMETROS USUARIO]",
+            ""
+          ],
+          [
+            "GSP",
+            "[Ret.nombre estánd.]",
+            "[No] (na)"
+          ],
+          [
+            "",
+            "Visualización de parámetros estándar en lugar de parámetros personalizados.",
+            ""
+          ],
+          [
+            "0 yES",
+            "[No] (na) [Si] ( YES)",
+            ""
+          ],
+          [
+            "",
+            "[MENÚ USUARIO]",
+            ""
+          ],
+          [
+            "PAn",
+            "[NOMBRE EQUIPO]",
+            ""
+          ],
+          [
+            "S Er -",
+            "[MENSAJE DE SERVICIO]",
+            ""
+          ],
+          [
+            "SOLOI",
+            "[LÍNEA 1]",
+            ""
+          ],
+          [
+            "SOLO2",
+            "[LÍNEA 2]",
+            ""
+          ],
+          [
+            "SOLO3",
+            "[LÍNEA 3]",
+            ""
+          ],
+          [
+            "SOLO4",
+            "[LÍNEA 4]",
+            ""
+          ],
+          [
+            "SOLOS",
+            "[LÍNEA 5]",
+            ""
+          ],
+          [
+            "CFAOl",
+            "[CONFIGURACIÓN 0]",
+            ""
+          ],
+          [
+            "CFA02",
+            "[CONFIGURACIÓN 1]",
+            ""
+          ],
+          [
+            "CFA03",
+            "[CONFIGURACIÓN 2]",
+            ""
+          ],
+          [
+            "P5n",
+            "[Nº DE SERIE]",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Configuración del Menú usuario\nRDY\nTerm +0,0 Hz 0,0 A\nCONFIG. MENÚ USUARIO\nSELECC. PARÁMETROS\nLISTA SELECCIONADA\nCode\n<<\nQuick\nENT\nSELECC. PARÁMETROS\nFULL\nARRANQUE RÁPIDO\nAJUSTES\nCONTROL MOTOR\nENTRADAS/SALIDAS\nCOMANDO\nList\nENT\nCódigo\nNombre/Descripción\nnyc -\n[CONFIG. MENÚ USUARIO]\nENT\nSELECC. PARÁMETROS\nAJUSTES\nIncremento rampa\n>\nRampa aceleración\nRampa deceleración\nAceleración 2\nDeceleración 2\nList\nList\n-\nRDY\nTerm\n0,0 Hz\n0,0 A\nLISTA SELECCIONADA\nIncremento rampa\nRampa aceleración\nDeceleración 2\nDel\nUp\nDown\nUtilice las teclas F2 y F3 para\norganizar los parámetros de\nla lista (en el ejemplo\nsiguiente se utiliza F3).\nRDY\nTerm +0,0 Hz 0,0 A\nLISTA SELECCIONADA\nRampa aceleración\nIncremento rampa\nGanancia prop.vel.\nDel\nUp\nDown\nInterfaz (ItF)\nSelección de parámetros\nincluidos en el menú de\nusuario.\nNota: La 1ª línea es\n[SELECC. PARÁMETROS]\no\n[RDY Term +0,0 Hz 0,0 A],\nen función de la ruta (ENT o\nList).\nLista de parámetros que\ncomponen el menú de\nusuario.\n296\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Interfaz (ItF)\nAcceso a parámetros\nRDY\nTerm\n0,0 Hz\n0,0 A\nACCESO A PARÁMETROS\nPROTECCIÓN\nVISIBILIDAD\nCode\n<<\n>>\nQuick\nENT\nRDY\nTerm\nVISIBILIDAD\nENT\nRDY\n0,0 Hz\nTerm\nPROTECCIÓN\nCANALES PROTEGIDOS\nPARÁM. PROTEGIDOS\nCode\nQuick\n0,0 Hz\n0,0 A\nENT\nRDY\nTerm\n0,0 Hz\n0,0 A\nPARÁMETROS\nPARÁMETROS\nMENÚS\nActivo\nTodos\nCode\nQuick\nQuick\nENT\nMENÚS\n1 MENÚ VARIADOR\n1.1 REFERENCIA VELOCIDAD\n1.2 SUPERVISIÓN\n1.3 CONFIGURACIÓN\n0,0 A\nENT\nSelección para visualizar\ntodos los parámetros o\nsólo los parámetros\nactivos.\nPulse ESC para salir de\nesta pantalla.\nSeguirá de forma\nexclusiva en el menú [1\nMENÚ VARIADOR]. De\nforma predeterminada,\nestarán seleccionados\ntodos los menús.\nPulse ENT para eliminar\nla selección de un menú.\nPulse ENT para volver a\nseleccionar un menú.\nRDY\nTerm\n0,0 Hz\n0,0 A\nCANALES PROTEGIDOS\nHMI\nSoftware PC\n/\nModbus\nCANopen\nCARTA COM.\nCode\nQuick\nNota: Deberán seleccionarse el canal o los canales\nprotegidos, pues en los canales que no se seleccionen\nseguirá siendo posible acceder a un parámetro protegido\nde un canal seleccionado.\nENT\nPARÁM. PROTEGIDOS\n1 MENÚ VARIADOR\n1.1 REFERENCIA VELOCIDAD\n1.2 SUPERVISIÓN\n1.3 CONFIGURACIÓN\nENT\nTodos Ninguna\nPARÁM. PROTEGIDOS\n1.3 CONFIGURACIÓN\nMENÚ USUARIO\nAJUSTES DE FÁBRICA\nMacro configuración\nFULL\nTodos Ninguna\nNo podrá realizarse ninguna selección en\nesta pantalla si no existe ningún parámetro.\nPARÁM. PROTEGIDOS\nFUNCIONES APLICACIÓN\nOPERACION CONSIGNAS\nRAMPA\nCONFIGURACIÓ PARADA\nINYECCIÓN DC AUTO\nENT\nJOG\nPARÁM. PROTEGIDOS\nJOG\nJOG\nFrecuencia Jog\nTiempoJog\nEn estas pantallas, todos\nlos parámetros del menú\n[1 MENÚ VARIADOR]\npueden protegerse, y se\nvisualizan para permitir\nsu selección, a\nexcepción de los\nparámetros de Experto.\nPulse la tecla Todos\npara seleccionar todos\nlos parámetros. Vuelva a\npulsar la tecla Todos\npara eliminar la\nselección de todos los\nparámetros.\nNota: Ya no podrá accederse a los parámetros protegidos y, por lo tanto, éstos no se visualizarán para los\ncanales seleccionados.\nNVE41298 04/2018\n297",
+      "tablas": [
+        [
+          [
+            "ACCESO A PARÁMETROS"
+          ],
+          [
+            "",
+            "PROTECCIÓN",
+            ""
+          ],
+          [
+            "",
+            "VISIBILIDAD",
+            ""
+          ],
+          [
+            "",
+            "Code <<",
+            ">>",
+            "Quick"
+          ]
+        ],
+        [
+          [
+            "RDY",
+            "Term",
+            "0,0 Hz 0,0 A"
+          ],
+          [
+            "CANALES PROTEGIDOS"
+          ],
+          [
+            "HMI",
+            "",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Software PC",
+            "",
+            "",
+            ":selected: /"
+          ],
+          [
+            "Modbus",
+            "",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "CANopen",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "CARTA COM.",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Code",
+            "",
+            "",
+            "Quick",
+            ""
+          ]
+        ],
+        [
+          [
+            "PARÁM. PROTEGIDOS"
+          ],
+          [
+            "JOG"
+          ],
+          [
+            "JOG",
+            ":selected:"
+          ],
+          [
+            "Frecuencia Jog",
+            ":unselected:"
+          ],
+          [
+            "TiempoJog",
+            ":unselected:"
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Interfaz (ItF)\nAcceda a los parámetros que se describen en esta página mediante:\nITF- > DCF- > PAC- > PRO- > PCD-\nCódigo\nNombre/Descripción\nAjuste de fábrica\nPAC -\n[ACCESO A PARÁMETROS]\nPro -\n[PROTECCIÓN]\nPC d -\n[CANALES PROTEGIDOS]\nCOn\n[HMI] (COn): Terminal gráfico o terminal remoto\nPS\n[Software PC] (P 5): Software de PC\n[Modbus] ( d b): Modbus integrado\nCAn\n[CANopen] ([ An): CANopen® integrado\nnEL\n[Carta COM.] (n E E ): Tarjeta de comunicaciones (si se ha insertado)\n[VISIBILIDAD]\nPul5\n[PARÁMETROS]\n[Activos] (AC E)\nVisibilidad de parámetros: sólo parámetros activos o bien todos los parámetros.\nACE\n[Activos] ( A C E)\nALL\n[Todos] ( ALL)\nC\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\n298\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Ajuste de fábrica"
+          ],
+          [
+            "PAC -",
+            "[ACCESO A PARÁMETROS]",
+            ""
+          ],
+          [
+            "Pro -",
+            "[PROTECCIÓN]",
+            ""
+          ],
+          [
+            "PC d -",
+            "[CANALES PROTEGIDOS]",
+            ""
+          ],
+          [
+            "COn",
+            "[HMI] (COn): Terminal gráfico o terminal remoto",
+            ""
+          ],
+          [
+            "PS",
+            "[Software PC] (P 5): Software de PC",
+            ""
+          ],
+          [
+            "",
+            "[Modbus] ( d b): Modbus integrado",
+            ""
+          ],
+          [
+            "CAn",
+            "[CANopen] ([ An): CANopen® integrado",
+            ""
+          ],
+          [
+            "nEL",
+            "[Carta COM.] (n E E ): Tarjeta de comunicaciones (si se ha insertado)",
+            ""
+          ],
+          [
+            "",
+            "[VISIBILIDAD]",
+            ""
+          ],
+          [
+            "Pul5",
+            "[PARÁMETROS]",
+            "[Activos] (AC E)"
+          ],
+          [
+            "",
+            "Visibilidad de parámetros: sólo parámetros activos o bien todos los parámetros.",
+            ""
+          ],
+          [
+            "ACE",
+            "[Activos] ( A C E)",
+            ""
+          ],
+          [
+            "ALL",
+            "[Todos] ( ALL)",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Interfaz (ItF)\nAcceda a los parámetros que se describen en esta página mediante:\nITF- > DCF- > CNL-\nParámetros de la consola\nRDY\nTerm\n0,0 Hz\n0,0 A\nPARÁMETROS CONSOLA\nContraste Consola :\n50%\nTpo.salvapantallas :\n5 min\nCode\n<<\nQuick\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nCAL -\n[PARÁMETROS CONSOLA]\n[Contraste Consola]\nDe 0 a 100%\n50%\nC\nContraste de la consola.\n[ 569\n[Tpo.salvapantallas]\n[No] (na) a 10 m\n5 min\nČ\nRetardo de espera de la consola gráfica.\n[No] (na): No\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\nNVE41298 04/2018\n299",
+      "tablas": [
+        [
+          [
+            "RDY",
+            "Term",
+            "0,0 Hz",
+            "0,0 A"
+          ],
+          [
+            "PARÁMETROS CONSOLA"
+          ],
+          [
+            "Contraste Consola",
+            ":",
+            "50%"
+          ],
+          [
+            "",
+            "Tpo.salvapantallas",
+            ":",
+            "5 min"
+          ],
+          [
+            "Code",
+            "<<",
+            "",
+            "Quick"
+          ]
+        ],
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "CAL -",
+            "[PARÁMETROS CONSOLA]",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[Contraste Consola]",
+            "De 0 a 100%",
+            "50%"
+          ],
+          [
+            "C",
+            "Contraste de la consola.",
+            "",
+            ""
+          ],
+          [
+            "[ 569",
+            "[Tpo.salvapantallas]",
+            "[No] (na) a 10 m",
+            "5 min"
+          ],
+          [
+            "Č",
+            "Retardo de espera de la consola gráfica.",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[No] (na): No",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Interfaz (ItF)\n300\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Abrir/Guardar (trA)\nAbrir/Guardar (trA)\nSólo puede accederse a este menú con el terminal gráfico.\nRDY\nTerm\n0,0 Hz\n0,0 A\nMENÚ GENERAL\n1 MENÚ VARIADOR\n2 IDENTIFICACIÓN\n3 INTERFACE\n4 ABRIR/GUARDAR\n5 CÓDIGO DE ACCESO\nCode\nQuick\nENT\nRDY\nTerm\n0,0 Hz\n0,0 A\n4 ABRIR/GUARDAR\n4.1 ABRIR\n4.2 GUARDAR\nCode\n<<\n>>\nQuick\n7\n[4.1 ABRIR]: Para descargar uno de los cuatro archivos desde el terminal gráfico hasta el variador.\nNVE41298 04/2018\n301",
+      "tablas": [
+        [
+          [
+            "RDY Term",
+            "0,0 Hz",
+            "0,0 A"
+          ],
+          [
+            "MENÚ GENERAL"
+          ],
+          [
+            "1 MENÚ VARIADOR",
+            ""
+          ],
+          [
+            "2 IDENTIFICACIÓN",
+            "",
+            ""
+          ],
+          [
+            "3 INTERFACE",
+            "",
+            ""
+          ],
+          [
+            "4 ABRIR/GUARDAR",
+            "",
+            ""
+          ],
+          [
+            "5 CÓDIGO DE ACCESO",
+            ""
+          ],
+          [
+            "Code",
+            "",
+            "Quick"
+          ]
+        ],
+        [
+          [
+            "RDY",
+            "Term",
+            "0,0 Hz",
+            "0,0 A"
+          ],
+          [
+            "4 ABRIR/GUARDAR"
+          ],
+          [
+            "4.1 ABRIR",
+            "",
+            ""
+          ],
+          [
+            "4.2",
+            "",
+            "GUARDAR",
+            "",
+            ""
+          ],
+          [
+            "Code",
+            "",
+            "<<",
+            ">>",
+            "Quick"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Abrir/Guardar (trA)\n[4.2 GUARDAR]: Para descargar la configuración actual del variador en el terminal gráfico.\nRDY\nTerm\n0,0 Hz\n0,0 A\n4. ABRIR/GUARDAR\n4.1 ABRIR\n4.2 GUARDAR\nCode\n<<\n>>\nQuick\nENT\nENT\nRDY\nTerm\n0,0 Hz\n0,0 A\n4.1 ABRIR\nFichero 1\nOcupado\nFichero 2\nVacío\nFichero 3\nVacío\nFichero 4\nVacío\nCode\n<<\n>>\nQuick\nENT\nNota: La apertura de un\narchivo vacío no produce\nRDY\nTerm\n4.2 GUARDAR\n0,0 Hz\n0,0 A\nFichero 1\nOcupado\nENT\nFichero 2\nLibre\nFichero 3\nLibre\nFichero 4\nLibre\nCode\nQuick\nEl guardado en un archivo\nocupado conlleva la\nsupresión y sustitución de la\nconfiguración contenida en\nRDY\nTerm\n0,0 Hz\n0,0 A\nGRUPO A TRANSFERIR\nNinguno\nTodos\nConfig.variador\nParámetros motor\nComunicación\nCode\nQuick\nConsulte los detalles\nen la página siguiente.\nENT\nRDY\nTerm\n0,0 Hz\n0,0 A\nTRANSFERENCIA\nVERIFICAR QUE\nEL CABLEADO DEL VARIADOR\nES CORRECTO\nESC = anular ENT = continuar\nCode\nQuick\nENT\nRDY\nTerm\n0,0 Hz 0,0 A\nTRANSFERENCIA\nTRANSFERENCIA EN CURSO\nRDY\nTerm\n0,0 Hz\n0,0 A\nTRANSFERENCIA\nTERMINADA\nENT o ESC para continuar\nCuando se solicita la descarga, puede que aparezcan diversos mensajes:\n· [TRANSFERENCIA EN CURSO]\n· [TERMINADA]\n· Mensajes de error si la descarga no es posible\n· [Los parámetros motor NO SON COMPATIBLES. ¿ Quiere continuar?]: En este caso, la descarga es\nposible, pero los parámetros estarán restringidos.\n302\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "RDY",
+            "Term 0,0",
+            "Hz",
+            "0,0 A"
+          ],
+          [
+            "4.1 ABRIR"
+          ],
+          [
+            "Fichero 1",
+            "",
+            "",
+            "",
+            "Ocupado"
+          ],
+          [
+            "Fichero 2",
+            "",
+            "",
+            "",
+            "Vacío"
+          ],
+          [
+            "Fichero 3",
+            "",
+            "",
+            "",
+            "",
+            "Vacío"
+          ],
+          [
+            "Fichero 4",
+            "",
+            "",
+            "",
+            "",
+            "Vacío"
+          ],
+          [
+            "Code",
+            "<<",
+            ">>",
+            "",
+            "Quick"
+          ]
+        ],
+        [
+          [
+            "Fichero 2",
+            "Libre"
+          ],
+          [
+            "",
+            "Fichero 3",
+            "Libre"
+          ],
+          [
+            "",
+            "Fichero 4",
+            "Libre"
+          ],
+          [
+            "",
+            "Code",
+            "Quick"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Abrir/Guardar (trA)\nGRUPO A TRANSFERIR\n[Ninguno]:\nNingún parámetro\n[Todos]:\nTodos los parámetros de todos los menús\n[Config.variador]:\nLa totalidad de [1 MENÚ VARIADOR] sin\n[COMUNICACIÓN]\n[Parámetros motor]:\n[Tensión Nom. Motor] ( un 5)\nEn el menú [CONTROL MOTOR] ( dr [ -)\n[Frec. nom.Motor] (F - 5)\n[Int.max.alin.PSI] (n [ r )\n[Vel. Nominal Motor] (n 5 P)\n[Motor 1 cos fi] ([ @ 5)\n[Pot. nominal motor] (n P r )\n[Elecc. parám motor] (n P [)\n[Autoajuste usado] ( 5 t un)\n[ Térmica motor] ( 1 5 H)\n[Compensación RI] ( u F r )\n[Compens.Desliz.] ( 5 L P)\n[Ajust.resist.estátor] (~ 5 A)\n[Ajust.Induc.dispers.] (L F A)\n[Aj.cte.tiempo rotor] (t r A)\n[Int.nominal sincrono] (n [ r 5)\n[Vel.nominal sincron] (n 5 P 5)\n[Pares polos sinc.] (PP n 5)\n[Constante FEM sínc.] (PH 5)\n[Inductancia eje d] (L d 5)\n[Inductancia eje q] (L 95)\n[Frec.nom. sincrono] (F r 5 5)\n[Res. estátor sinc.] (~ 5 A 5)\n[Par motor] (₺ 95)\n[U1] (u I)\n[F1] (F1)\n[U2] (u 2)\n[F2] (F 2)\n[U3] (u 3)\n[F3] (F 3)\n[4] (u 4)\n[F4] (F 4)\n[U5] (u 5)\n[F5] (F 5)\nLos parámetros de motor a los que puede accederse en el\nmodo [Experto] (E Pr ), página 265.\n[I Térmica motor] ( , & H)\nEn el menú [AJUSTES] (5 E Ł -)\n[Comunicación] :\nTodos los parámetros del menú [COMUNICACIÓN]\nNVE41298 04/2018\n303",
+      "tablas": [
+        [
+          [
+            "[Ninguno]:",
+            "Ningún parámetro"
+          ],
+          [
+            "[Todos]:",
+            "Todos los parámetros de todos los menús"
+          ],
+          [
+            "[Config.variador]:",
+            "",
+            "La totalidad de [1 MENÚ VARIADOR] sin [COMUNICACIÓN]"
+          ],
+          [
+            "[Parámetros motor]:",
+            "[Tensión Nom. Motor] ( un 5)",
+            "En el menú [CONTROL MOTOR] ( dr [ -)"
+          ],
+          [
+            "",
+            "[Frec. nom.Motor] (F - 5)",
+            ""
+          ],
+          [
+            "",
+            "[Int.max.alin.PSI] (n [ r )",
+            ""
+          ],
+          [
+            "",
+            "[Vel. Nominal Motor] (n 5 P)",
+            ""
+          ],
+          [
+            "",
+            "[Motor 1 cos fi] ([ @ 5)",
+            ""
+          ],
+          [
+            "",
+            "[Pot. nominal motor] (n P r )",
+            ""
+          ],
+          [
+            "",
+            "[Elecc. parám motor] (n P [)",
+            ""
+          ],
+          [
+            "",
+            "[Autoajuste usado] ( 5 t un)",
+            ""
+          ],
+          [
+            "",
+            "[ Térmica motor] ( 1 5 H)",
+            ""
+          ],
+          [
+            "",
+            "[Compensación RI] ( u F r )",
+            ""
+          ],
+          [
+            "",
+            "[Compens.Desliz.] ( 5 L P)",
+            ""
+          ],
+          [
+            "",
+            "[Ajust.resist.estátor] (~ 5 A)",
+            ""
+          ],
+          [
+            "",
+            "[Ajust.Induc.dispers.] (L F A)",
+            ""
+          ],
+          [
+            "",
+            "[Aj.cte.tiempo rotor] (t r A)",
+            ""
+          ],
+          [
+            "",
+            "[Int.nominal sincrono] (n [ r 5)",
+            ""
+          ],
+          [
+            "",
+            "[Vel.nominal sincron] (n 5 P 5)",
+            ""
+          ],
+          [
+            "",
+            "[Pares polos sinc.] (PP n 5)",
+            ""
+          ],
+          [
+            "",
+            "[Constante FEM sínc.] (PH 5)",
+            ""
+          ],
+          [
+            "",
+            "[Inductancia eje d] (L d 5)",
+            ""
+          ],
+          [
+            "",
+            "[Inductancia eje q] (L 95)",
+            ""
+          ],
+          [
+            "",
+            "[Frec.nom. sincrono] (F r 5 5)",
+            ""
+          ],
+          [
+            "",
+            "[Res. estátor sinc.] (~ 5 A 5)",
+            ""
+          ],
+          [
+            "",
+            "[Par motor] (₺ 95)",
+            ""
+          ],
+          [
+            "",
+            "[U1] (u I)",
+            ""
+          ],
+          [
+            "",
+            "[F1] (F1)",
+            ""
+          ],
+          [
+            "",
+            "[U2] (u 2)",
+            ""
+          ],
+          [
+            "",
+            "[F2] (F 2)",
+            ""
+          ],
+          [
+            "",
+            "[U3] (u 3)",
+            ""
+          ],
+          [
+            "",
+            "[F3] (F 3)",
+            ""
+          ],
+          [
+            "",
+            "[4] (u 4)",
+            ""
+          ],
+          [
+            "",
+            "[F4] (F 4)",
+            ""
+          ],
+          [
+            "",
+            "[U5] (u 5)",
+            ""
+          ],
+          [
+            "",
+            "[F5] (F 5)",
+            ""
+          ],
+          [
+            "",
+            "Los parámetros de motor a los que puede accederse en el modo [Experto] (E Pr ), página 265.",
+            ""
+          ],
+          [
+            "",
+            "[I Térmica motor] ( , & H)",
+            "En el menú [AJUSTES] (5 E Ł -)"
+          ],
+          [
+            "[Comunicación] :",
+            "Todos los parámetros del menú [COMUNICACIÓN]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Abrir/Guardar (trA)\n304\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Código de acceso (COd)\nCódigo de acceso (COd)\n8\nCon terminal gráfico\nRDY\nTerm\n0,0 Hz\n0,0 A\nMENÚ GENERAL\n1 MENÚ VARIADOR\n2 IDENTIFICACIÓN\n3 INTERFACE\n4 ABRIR/GUARDAR\n5 CÓDIGO DE ACCESO\nCode\nQuick\nENT\nRUN\nTerm\n+50,0 Hz 0,0 A\n5 CÓDIGO DE ACCESO\nEstado\n:\nNo bloq.\nCódigo PIN 1\n:\nOFF\nCódigo PIN 2\n:\nOFF\nDerecho copia\nconf.\n:\nPermitido\nDerechos\ndescarga\n. .\nVar.no bloq.\nCon terminal integrado\n+\n= ENT\nESC\n= ESC\n+\n1-\ndrI-\n-\n+\nIEF -\n+\nErA -\n+\n- POJ\n+\nENT\nESC\nCÓDIGO DE ACCESO\nPermite proteger la configuración con un código de acceso o una contraseña que deberá especificarse para\npoder acceder a la configuración protegida.\nEjemplo con terminal gráfico:\nRUN\nTerm\n+50,0 Hz 0,0 A\n5 CÓDIGO DE ACCESO\nEstado\n:\nNo bloq.\nCódigo PIN 1\n:\nOFF\nDerecho copia conf. :\nPermitido\nDerechos descarga :\nVar.no bloq.\nCode\n<<\nQuick\nENT\nRUN\nTerm\n+50,0 Hz 0,0 A\nCódigo PIN 1\n9520\nMin =OFF\nMáx =9999\n<<\n>>\nQuick\n· El variador está desbloqueado cuando los códigos PIN se han establecido en [No bloq.] ( a F F) (ninguna\ncontraseña) o cuando se ha especificado el código correcto. Todos los menús son visibles.\n· Antes de proteger la configuración con un código de acceso, debe realizar lo siguiente:\n- Definir [Derecho copia conf.] ( u L r ) y [Derechos descarga] ( dLr ).\n- Tomar buena nota del código y guardarlo en un lugar donde pueda encontrarlo cuando sea\nnecesario.\nNVE41298 04/2018\n305",
+      "tablas": [
+        [
+          [
+            "RUN",
+            "Term",
+            "+50,0 Hz",
+            "0,0 A"
+          ],
+          [
+            "5 CÓDIGO DE ACCESO"
+          ],
+          [
+            "Estado",
+            ":",
+            "",
+            "No bloq."
+          ],
+          [
+            "Código",
+            "PIN 1",
+            ":",
+            "",
+            "OFF"
+          ],
+          [
+            "Código",
+            "PIN 2",
+            ":",
+            "",
+            "OFF"
+          ],
+          [
+            "Derecho\nconf.",
+            "copia",
+            ":",
+            "",
+            "Permitido"
+          ],
+          [
+            "Derechos descarga",
+            ". . Var.no bloq."
+          ]
+        ],
+        [
+          [
+            "RUN",
+            "Term",
+            "+50,0",
+            "Hz 0,0 A"
+          ],
+          [
+            "5 CÓDIGO DE ACCESO"
+          ],
+          [
+            "Estado",
+            ": No bloq."
+          ],
+          [
+            "Código PIN 1",
+            ":",
+            "OFF"
+          ],
+          [
+            "Derecho copia conf.",
+            ":\n:unselected:",
+            "Permitido"
+          ],
+          [
+            "Derechos descarga",
+            ":\n:unselected:",
+            "Var.no bloq."
+          ],
+          [
+            "Code",
+            "<<",
+            "",
+            "Quick"
+          ]
+        ],
+        [
+          [
+            "RUN",
+            "Term",
+            "+50,0",
+            "Hz 0,0 A"
+          ],
+          [
+            "",
+            "Código PIN 1"
+          ],
+          [
+            "9520"
+          ],
+          [
+            "Min =OFF",
+            "",
+            "Máx =9999"
+          ],
+          [
+            "",
+            "<<",
+            ">>",
+            "Quick"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "Código de acceso (COd)\n· El variador dispone de dos códigos de acceso, lo que permite configurar dos niveles de acceso:\n- El código PIN 1 es un código de desbloqueo público: 6969.\n- El código PIN 2 es un código de desbloqueo que sólo conoce el soporte técnico de Schneider Electric.\nSólo puede accederse a éste en el modo [Experto] ( E Pr ).\n- Solamente puede utilizarse un código, PIN1 o PIN2; el otro debe mantenerse establecido en [OFF]\n(OFF).\nNota: Cuando se especifica el código de desbloqueo, aparece el código de acceso de usuario.\nA continuación se indican los elementos cuyo acceso está protegido:\n· La vuelta al menú de ajustes de fábrica ([AJUSTES DE FÁBRICA] (F [ 5 - ).\n· Los canales y parámetros protegidos mediante [MENÚ USUARIO] (ny în -), así como el propio menú.\n· El menú de los ajustes de visualización personalizada ([3.4 CONFIG. VISUALIZACIÓN] ( d [ F -)).\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de fábrica\nCOd-\n[5 CÓDIGO DE ACCESO]\nCSE\n[Estado]\n[No bloq.] ( u L C)\nParámetro de información; no puede modificarse.\nLC\n[Bloqueado] (L C): El variador está bloqueado mediante una contraseña.\n[No bloq.] ( u L C): El variador no está bloqueado mediante una contraseña.\nCOd\n[Código PIN 1]\n[OFF] (OFF) hasta\n9.999\n[OFF] (OFF)\nPrimer código de acceso. El valor [OFF] (a F F) indica que no se ha establecido ninguna contraseña, [No bloq.] ( u L C). El\nvalor [ON] (a n) indica que el variador se ha protegido y que debe especificarse un código de acceso para poder desbloquearlo.\nTras haber especificado el código correcto, éste permanece en la pantalla, y el variador estará desbloqueado hasta la próxima\nvez que se desconecte la alimentación eléctrica.\nEl código PIN 1 es un código de desbloqueo público: 6969.\nCOd2\n[Código PIN 2]\n[OFF] (OFF) hasta\n9.999\n[OFF] (OFF)\nA este parámetro sólo puede accederse en el modo [Experto] (E Pr ).\nSegundo código de acceso. El valor [OFF] ( a F F) indica que no se ha establecido ninguna contraseña, [No bloq.] ( u L C). El\nvalor [ON] (a n) indica que el variador se ha protegido y que debe especificarse un código de acceso para poder desbloquearlo.\nTras haber especificado el código correcto, éste permanece en la pantalla, y el variador estará desbloqueado hasta la próxima\nvez que se desconecte la alimentación eléctrica.\nEl código PIN 2 es un código de desbloqueo que sólo conoce el soporte técnico de Schneider Electric.\nCuando [Código PIN 2] (C a d 2) no se ha establecido en [OFF] ( a F F), el único menú que se visualiza es [1.2\nSUPERVISIÓN] (Non - ). Por lo tanto, si\n[Código PIN 2] (C o d 2) se establece en [OFF] ( a F F) (variador desbloqueado), se visualizan todos los menús.\nSi los ajustes de visualización se modifican en el menú [3.4 CONFIG. VISUALIZACIÓN] ( d [ F - ), y si [Código PIN 2]\n(C o d 2) no se establece en [OFF] ( o F F), se conserva la visibilidad configurada. Así pues, si [Código PIN 2] (C a d 2) se\nestablece en OFF (variador desbloqueado), se conserva la visibilidad configurada en el menú [3.4 CONFIG. VISUALIZACIÓN]\n( d [ F -).\nULr\n[Derecho copia conf.]\n[Permitido] ( u L - 0)\nLee o copia la configuración actual en el variador.\nULFI\nuL - O [Permitido] ( u L - 0): La configuración actual del variador puede cargarse en el terminal gráfico o en el software de PC.\n[No permit.] (u L r I): La configuración actual del variador sólo puede cargarse en el terminal gráfico o en el software de PC\nsi el variador no se ha protegido mediante un código de acceso o si se ha especificado el código correcto.\ndlr\n[Derechos descarga]\n[Var.no bloq.]\n(dLr1)\nGraba la configuración actual en el variador o descarga una configuración en el variador.\ndLr0\n[Var.bloq.] (d L - 0): Un archivo de configuración sólo puede descargarse en el variador si éste se ha protegido mediante un\ncódigo de acceso, que es igual al código de acceso para la configuración que se desea descargar.\ndlr l\n[Var.no bloq.] (dLr1): Puede descargarse un archivo de configuración en el variador o bien puede modificarse una\nconfiguración del variador si éste está desbloqueado (tras especificar un código de acceso) o si éste no se ha protegido\ndLr2\ndLr 3\nmediante un código de acceso.\n[No permit.] (d Lr 2): No se dispone de autorización para realizar la descarga.\n[Bloq. o no] (dL - 3): Combinación de [Var.bloq.] ( d L - 0) y de [Var.no bloq.] (dLr I).\n306\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "COd-",
+            "[5 CÓDIGO DE ACCESO]",
+            "",
+            ""
+          ],
+          [
+            "CSE",
+            "[Estado]",
+            "",
+            "[No bloq.] ( u L C)"
+          ],
+          [
+            "",
+            "Parámetro de información; no puede modificarse.",
+            "",
+            ""
+          ],
+          [
+            "LC",
+            "[Bloqueado] (L C): El variador está bloqueado mediante una contraseña. [No bloq.] ( u L C): El variador no está bloqueado mediante una contraseña.",
+            ""
+          ],
+          [
+            "COd",
+            "[Código PIN 1]",
+            "[OFF] (OFF) hasta 9.999",
+            "[OFF] (OFF)"
+          ],
+          [
+            "",
+            "Primer código de acceso. El valor [OFF] (a F F) indica que no se ha establecido ninguna contraseña, [No bloq.] ( u L C). El valor [ON] (a n) indica que el variador se ha protegido y que debe especificarse un código de acceso para poder desbloquearlo. Tras haber especificado el código correcto, éste permanece en la pantalla, y el variador estará desbloqueado hasta la próxima vez que se desconecte la alimentación eléctrica. El código PIN 1 es un código de desbloqueo público: 6969."
+          ],
+          [
+            "COd2",
+            "[Código PIN 2]",
+            "[OFF] (OFF) hasta 9.999",
+            "[OFF] (OFF)"
+          ],
+          [
+            "",
+            "A este parámetro sólo puede accederse en el modo [Experto] (E Pr ). Segundo código de acceso. El valor [OFF] ( a F F) indica que no se ha establecido ninguna contraseña, [No bloq.] ( u L C). El valor [ON] (a n) indica que el variador se ha protegido y que debe especificarse un código de acceso para poder desbloquearlo. Tras haber especificado el código correcto, éste permanece en la pantalla, y el variador estará desbloqueado hasta la próxima vez que se desconecte la alimentación eléctrica. El código PIN 2 es un código de desbloqueo que sólo conoce el soporte técnico de Schneider Electric."
+          ],
+          [
+            "",
+            "Cuando [Código PIN 2] (C a d 2) no se ha establecido en [OFF] ( a F F), el único menú que se visualiza es [1.2 SUPERVISIÓN] (Non - ). Por lo tanto, si [Código PIN 2] (C o d 2) se establece en [OFF] ( a F F) (variador desbloqueado), se visualizan todos los menús."
+          ],
+          [
+            "Si los ajustes de visualización se modifican en el menú [3.4 CONFIG. VISUALIZACIÓN] ( d [ F - ), y si [Código PIN 2] (C o d 2) no se establece en [OFF] ( o F F), se conserva la visibilidad configurada. Así pues, si [Código PIN 2] (C a d 2) se establece en OFF (variador desbloqueado), se conserva la visibilidad configurada en el menú [3.4 CONFIG. VISUALIZACIÓN] ( d [ F -)."
+          ],
+          [
+            "ULr",
+            "[Derecho copia conf.]",
+            "",
+            "[Permitido] ( u L - 0)"
+          ],
+          [
+            "",
+            "Lee o copia la configuración actual en el variador.",
+            "",
+            ""
+          ],
+          [
+            "ULFI uL - O",
+            "[Permitido] ( u L - 0): La configuración actual del variador puede cargarse en el terminal gráfico o\n[No permit.] (u L r I): La configuración actual del variador sólo puede cargarse en el terminal gráfico\nsi el variador no se ha protegido mediante un código de acceso o si se ha especificado el código",
+            "en el software de PC.\no en el software de PC\ncorrecto."
+          ],
+          [
+            "dlr",
+            "[Derechos descarga]",
+            "",
+            "[Var.no bloq.] (dLr1)"
+          ],
+          [
+            "",
+            "Graba la configuración actual en el variador o descarga una configuración en el variador.",
+            ""
+          ],
+          [
+            "dLr0",
+            "[Var.bloq.] (d L - 0): Un archivo de configuración sólo puede descargarse en el variador si éste se\ncódigo de acceso, que es igual al código de acceso para la configuración que se desea descargar.",
+            "ha protegido mediante un"
+          ],
+          [
+            "dlr l",
+            "[Var.no bloq.] (dLr1): Puede descargarse un archivo de configuración en el variador o bien puede modificarse una configuración del variador si éste está desbloqueado (tras especificar un código de acceso) o si éste no se ha protegido"
+          ],
+          [
+            "dLr2 dLr 3",
+            "mediante un código de acceso.",
+            ""
+          ],
+          [
+            "[No permit.] (d Lr 2): No se dispone de autorización para realizar la descarga. [Bloq. o no] (dL - 3): Combinación de [Var.bloq.] ( d L - 0) y de [Var.no bloq.] (dLr I)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Pantalla Multipunto\nPantalla Multipunto\n9\nPantalla Multipunto\nEs posible establecer comunicación entre un terminal gráfico y varios variadores conectados en el mismo bus.\nLas direcciones de los variadores deben configurarse previamente en el menú [COMUNICACIÓN] (C o n -)\nmediante el parámetro [Direc.Modbus] (A d d), página 281.\nCuando se han conectado varios variadores al mismo terminal gráfico, éste visualiza automáticamente las\npantallas siguientes:\nCONEXIÓN EN CURSO\nVxxxxxx\nDIRECC. MULTIPUNTO\nDirección 1\nDirección 2\nDirección 3\nDirección 4\nDirección 5\nDirección 6\nSelección de variadores para el cuadro de diálogo de la conexión multipunto\n(seleccione cada dirección y\nmarque el cuadro pulsando ENT).\nEsta pantalla sólo aparece la primera vez que se enciende el variador o si\nse ha pulsado la tecla de función \"Cfg Add\" en PANTALLA MULTI-PUNTO\n(véase a continuación).\nESC\nPANTALLA MULTI-PUNTO\nRdy\n0 rpm\nESC\n0 A\n2\nRUN\n101 A\n3\n+952 rpm\nVelocidad motor\n+952 rpm\nRUN\n+952 rpm\n101 A\n3\nNLP\n+1500 rpm\n1.250 A\n4\nNo conectado\n5\nRdy\n+\n0 rpm\n0 A\n6\nCfg Add\nENT\nIntensidad motor\n101 A\nINICIO\nConsola\nSelección de un variador para el cuadro de\ndiálogo de la conexión multipunto.\nCfg Add\nEn el modo multipunto, no se visualiza el canal de control. De izquierda a derecha, aparecerán el estado, los\ndos parámetros seleccionados y, finalmente, la dirección del variador.\nEn el modo multipunto es posible acceder a todos los menús. Únicamente el control de variadores mediante\nel terminal gráfico no está autorizado, salvo la tecla Stop, que bloquea todos los variadores.\nSi se produce un disparo en un variador, se visualiza ese variador.\nNVE41298 04/2018\n307",
+      "tablas": [
+        [
+          [
+            "DIRECC. MULTIPUNTO"
+          ],
+          [
+            "Dirección 1",
+            "",
+            "",
+            ":unselected:",
+            ""
+          ],
+          [
+            "Dirección 2",
+            "",
+            "",
+            ":selected:",
+            ""
+          ],
+          [
+            "Dirección 3",
+            "",
+            "",
+            ":unselected:",
+            ""
+          ],
+          [
+            "Dirección 4",
+            "",
+            "",
+            ":unselected:",
+            ""
+          ],
+          [
+            "Dirección 5",
+            "",
+            "",
+            ":unselected:",
+            ""
+          ],
+          [
+            "Dirección 6",
+            "",
+            "",
+            ":unselected:",
+            ""
+          ],
+          [
+            ""
+          ]
+        ],
+        [
+          [
+            "",
+            "RUN",
+            "+952 rpm",
+            "101 A",
+            "3"
+          ],
+          [
+            "",
+            "NLP",
+            "+1500 rpm",
+            "1.250 A",
+            "4"
+          ],
+          [
+            "",
+            "",
+            "No conectado",
+            "",
+            "5"
+          ],
+          [
+            "",
+            "Rdy",
+            "+ 0 rpm",
+            "0 A",
+            "6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Pantalla Multipunto\n308\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Mantenimiento y diagnóstico\nIII\nContenido de esta parte\nEsta parte consta de los siguientes capítulos:\nCapítulo\nNombre del capítulo\nPágina\n10\nMantenimiento\n311\n11\nDiagnóstico y resolución de problemas\n313\nA APELIGRO\nPELIGRO DE DESCARGA ELÉCTRICA, EXPLOSIÓN O ARCO ELÉCTRICO\nLea y comprenda las instrucciones del capítulo Información de seguridad antes de realizar cualquier\nprocedimiento de este capítulo.\nSi no se respetan estas instrucciones, se pueden producir lesiones personales graves o la muerte.\nNVE41298 04/2018\n309",
+      "tablas": [
+        [
+          [
+            "Capítulo",
+            "Nombre del capítulo",
+            "Página"
+          ],
+          [
+            "10",
+            "Mantenimiento",
+            "311"
+          ],
+          [
+            "11",
+            "Diagnóstico y resolución de problemas",
+            "313"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "310\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Mantenimiento\nMantenimiento\n10\nGarantía limitada\nLa apertura del producto anula la garantía, excepto si dicha apertura la realiza un técnico de Schneider\nElectric.\nRevisión\nAVISO\nRIESGO DE DAÑOS EN EL VARIADOR\nSiga las siguientes recomendaciones en función de las condiciones ambientales: temperatura, compuestos\nquímicos y polvo.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nPara optimizar la continuidad del funcionamiento, se recomienda seguir las instrucciones que aparecen a\ncontinuación.\nMedio ambiente\nParte\nAcción\nPeriodicidad\nGolpe al producto\nCarcasa, bloque de control\n(indicadores LED, pantalla)\nCompruebe el aspecto del\nvariador.\nAnual como mínimo\nCorrosión\nBornas, conector, tornillos, placa\nCEM\nInspeccione y limpie lo que\nsea necesario.\nPolvo\nBornas, ventiladores, orificios de\nventilación\nTemperatura\nZona circundante del producto\nCompruebe y corrija lo que\nsea necesario.\nRefrigeración\nVentilador\nCompruebe el\nfuncionamiento del\nventilador.\nSustituya el ventilador.\nAl cabo de 3 a 5 años, según\nlas condiciones de\nfuncionamiento.\nVibración\nBorneros\nCompruebe que están\napretados con el par\nrecomendado.\nAnual como mínimo\nNota: El funcionamiento del ventilador depende del estado térmico del variador. Cabe la posibilidad de que el variador\nfuncione con el ventilador parado.\nRecambios y reparaciones\nProducto reparable. Consulte a su centro de asistencia al cliente.\nAlmacenamiento prolongado\nSi no se ha conectado el variador a la red eléctrica durante un período de tiempo prolongado, deberá\nrestablecerse el rendimiento completo de los condensadores antes de poner el motor en marcha. Consulte la\npágina 41.\nNVE41298 04/2018\n311",
+      "tablas": [
+        [
+          [
+            "Medio ambiente",
+            "Parte",
+            "Acción",
+            "Periodicidad"
+          ],
+          [
+            "Golpe al producto",
+            "Carcasa, bloque de control (indicadores LED, pantalla)",
+            "Compruebe el aspecto del variador.",
+            "Anual como mínimo"
+          ],
+          [
+            "Corrosión",
+            "Bornas, conector, tornillos, placa CEM",
+            "Inspeccione y limpie lo que sea necesario."
+          ],
+          [
+            "Polvo",
+            "Bornas, ventiladores, orificios de ventilación",
+            "",
+            ""
+          ],
+          [
+            "Temperatura",
+            "Zona circundante del producto",
+            "Compruebe y corrija lo que sea necesario.",
+            ""
+          ],
+          [
+            "Refrigeración",
+            "Ventilador",
+            "Compruebe el funcionamiento del ventilador."
+          ],
+          [
+            "Sustituya el ventilador.",
+            "Al cabo de 3 a 5 años, según las condiciones de funcionamiento."
+          ],
+          [
+            "Vibración",
+            "Borneros",
+            "Compruebe que están apretados con el par recomendado.",
+            "Anual como mínimo"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Mantenimiento\nSustitución del ventilador\nExiste la posibilidad de pedir un ventilador nuevo para el mantenimiento del ATV320; consulte las referencias\ncomerciales en www.schneider-electric.com.\nEs posible que los ventiladores continúen funcionando durante un determinado período de tiempo incluso\ndespués de haber desconectado el producto.\nAVISO\nVENTILADORES EN FUNCIONAMIENTO\nCompruebe que los ventiladores se hayan detenido completamente antes de manipularlos.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\n312\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Diagnóstico y resolución de problemas\nDiagnóstico y resolución de problemas\n11\nContenido de este capítulo\nEste capítulo trata los siguientes temas:\nTema\nPágina\nCódigo de error\n314\nBorrado del fallo detectado\n314\nCódigos de detección de fallos que necesitan rearme de tensión tras haberse borrado el fallo detectado\n315\nCódigos de detección de fallos que pueden borrarse con la función de rearranque automático tras haberse\nsolucionado la causa\n317\nCódigos de detección de fallos que se borran en cuanto se ha solucionado su causa\n320\nCambio o extracción de la tarjeta opcional.\n320\nCambio de bloque de control\n320\nCódigos de detección de fallos que se visualizan en el terminal remoto\n321\nA APELIGRO\nPELIGRO DE DESCARGA ELÉCTRICA, EXPLOSIÓN O ARCO ELÉCTRICO\nLea detenidamente las precauciones del capítulo \"Acerca de este libro\" antes de seguir los procedimientos\nque se indican en esta sección.\nSi no se respetan estas instrucciones, se pueden producir lesiones personales graves o la muerte.\nNVE41298 04/2018\n313",
+      "tablas": [
+        [
+          [
+            "Tema",
+            "Página"
+          ],
+          [
+            "Código de error",
+            "314"
+          ],
+          [
+            "Borrado del fallo detectado",
+            "314"
+          ],
+          [
+            "Códigos de detección de fallos que necesitan rearme de tensión tras haberse borrado el fallo detectado",
+            "315"
+          ],
+          [
+            "Códigos de detección de fallos que pueden borrarse con la función de rearranque automático tras haberse solucionado la causa",
+            "317"
+          ],
+          [
+            "Códigos de detección de fallos que se borran en cuanto se ha solucionado su causa",
+            "320"
+          ],
+          [
+            "Cambio o extracción de la tarjeta opcional.",
+            "320"
+          ],
+          [
+            "Cambio de bloque de control",
+            "320"
+          ],
+          [
+            "Códigos de detección de fallos que se visualizan en el terminal remoto",
+            "321"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Diagnóstico y resolución de problemas\nCódigo de error\n· Si la pantalla no se ilumina, compruebe la alimentación eléctrica que recibe el variador.\n· La asignación de las funciones de parada rápida o de rueda libre contribuirá a que el variador no se inicie\nsi no se han encendido las entradas lógicas correspondientes. El ATV320 visualizará entonces [Rueda\nlibre] (n 5 E ) en el modo de parada en rueda libre y [Parad.rapid] (F 5 E ) en el modo de parada rápida.\nEsta situación es normal, puesto que dichas funciones se activan en el momento del rearme con vistas a\nconseguir la mayor seguridad en la parada en caso de que se corte el cable.\n· Compruebe que la entrada de la orden de marcha se ha activado de acuerdo con los parámetros del modo\nde control seleccionado ([Control 2 / 3 Hilos] ( E [ C) y [Tipo Control 2 Hilos] ( & C E ), página 87).\n· Si se asigna una entrada a la función de interruptor de posición y esta entrada se establece en la posición\ncero, el variador sólo puede iniciarse enviando un comando para el sentido opuesto (consulte la página\n226).\n· Si el canal de referencia o el canal de control se asigna a un bus de comunicaciones, cuando se conecte\nla alimentación eléctrica, el variador visualizará [Rueda libre] (n 5 E ) y permanecerá en modo de parada\nhasta que el bus de comunicaciones envíe un comando.\nCódigo\nNombre/Descripción\nd GE -\n[DIAGNÓSTICO]\nSólo puede accederse a este menú con el terminal gráfico. Muestra los fallos detectados y su causa en texto sin formato, y puede\nutilizarse para realizar pruebas; consulte la página 67.\nBorrado del fallo detectado\nSi se trata de un fallo detectado no borrable:\n· Desconecte toda la alimentación eléctrica, incluida la alimentación del control externo.\n· Bloquee todos los seccionadores en la posición abierta.\n· Espere 15 minutos para que se descarguen los condensadores del bus de CC (los LED del variador no\nindican la ausencia de tensión del bus de CC).\n· Mida la tensión del bus de CC entre las bornas PA/+ y PC/- para asegurarse de que la tensión sea inferior\na 42 V CC.\n· Si los condensadores del bus de CC no se descargan completamente, póngase en contacto con su\nrepresentante local de Schneider Electric. No repare ni haga funcionar el variador.\n· Localice y corrija el fallo detectado.\n· Vuelva a conectar la alimentación del variador para confirmar que el fallo detectado se ha rectificado.\nEn caso de que el fallo detectado admita un rearme, el variador podrá rearmarse tras haberse solucionado la\ncausa:\n- Mediante la desconexión del variador, hasta que la visualización desaparezca por completo, y la\nposterior reconexión de éste.\n- Automáticamente en las situaciones que se describen para la función [REARRANQUE AUTO]\n(A Er - ), página 256.\n- Mediante la asignación de una entrada lógica o un bit de control a la función [BORRADO DE\nFALLOS] ( ~ 5 E - ), página 254.\n- Mediante la pulsación de la tecla STOP/RESET del teclado del terminal gráfico si el control de canal\nactivo es HMI (consulte [Canal de control 1] (Cd1), página 156).\n314\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción"
+          ],
+          [
+            "d GE -",
+            "[DIAGNÓSTICO] Sólo puede accederse a este menú con el terminal gráfico. Muestra los fallos detectados y su causa en texto sin formato, y puede utilizarse para realizar pruebas; consulte la página 67."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Diagnóstico y resolución de problemas\nCódigos de detección de fallos que necesitan rearme de tensión tras haberse borrado el fallo\ndetectado\nLa causa del fallo detectado debe solucionarse antes de realizar el rearme mediante apagado y encendido.\nLos fallos ASF, br F, SoF, SPF y En F detectados también pueden borrarse de forma remota por\nmedio de un parámetro de entrada lógica o bit de control ([Borrar fallo] (~ 5 F), página 254).\nFallo\ndetectado\nNombre\nCausa probable\nSolución\nAnF\n[Perdi. carga]\n· La diferencia entre la frecuencia de salida\ny la realimentación de velocidad no es\ncorrecta.\n· Compruebe el motor y los parámetros de ganancia y\nestabilidad.\n· Añada una resistencia de frenado.\n· Compruebe el dimensionamiento del motor/variador/carga.\n· Compruebe el acoplamiento mecánico del codificador y su\ncableado.\n· Compruebe la configuración de los parámetros\nASF\n[Error ángulo]\n· Esto ocurre durante la medición del\nángulo de fase, si la fase del motor se\ndesconecta o si la inductancia del motor\nes demasiado alta.\n· Compruebe los parámetros del lazo de velocidad.\n· Compruebe las fases del motor y la corriente máxima que\nadmite el variador.\nbr F\n[Retor freno]\n· El contacto del retorno de freno no se\ncorresponde con el control de la lógica de\nfreno.\n· El freno no detiene el motor con suficiente\nrapidez (detectado midiendo la velocidad\nde la entrada de pulsos).\n· Compruebe el circuito de retorno y el circuito de control de\nla lógica de freno.\n· Compruebe el estado mecánico del freno.\n· Compruebe la guarnición del freno.\nCrF1\n[CCPrecarga]\n· Detectado fallo en control del relé de\ncarga o resistencia de carga deteriorada.\n· Apague el variador y, a continuación, vuelva a encenderlo.\n· Compruebe las conexiones internas.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nEEF1\n[EEprom Ctrl]\n· Detectado fallo de memoria interna,\nbloque de control.\n· Compruebe el entorno (compatibilidad electromagnética).\n· Apague, rearme y vuelva a establecer los ajustes de\nEEF 2\n[EEprom Pot]\n· Detectado fallo de memoria interna,\ntarjeta de potencia.\nfábrica.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nFCF1\n[C.Mot.Cerr.]\n· El contactor de salida sigue cerrado\naunque se cumplen las condiciones de\napertura.\n· Compruebe el contactor y su cableado.\n· Compruebe el circuito de retorno.\nHdF\n[Desat. IGBT]\n· Cortocircuito o puesta a tierra en la salida\ndel variador.\n· Compruebe los cables que conectan el variador al motor,\nasí como el aislamiento del motor.\nILF\n[Comm.inter]\n· Interrupción de la comunicación entre la\ntarjeta opcional y el variador.\n· Compruebe el entorno (compatibilidad electromagnética).\n· Compruebe las conexiones.\n· Cambie la tarjeta opcional.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nInFI\n[Error calibr]\n· La tarjeta de potencia es distinta de la\ntarjeta almacenada.\n· Compruebe la referencia de la tarjeta de potencia.\nInF2\n[Pot. incompatible]\n· La tarjeta de potencia no es compatible\ncon el bloque de control.\n· Compruebe la referencia de la tarjeta de potencia y su\ncompatibilidad.\nInF3\n[Comunic. interna]\n· Interrupción de comunicación entre las\ntarjetas internas.\n· Compruebe las conexiones internas.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nIn F 4\n[Interno-zona fab.]\n· Incoherencia de datos internos.\n· Vuelva a calibrar el variador (tarea que realiza el soporte\ntécnico de Schneider Electric).\nInF 6\n[Interno-opción]\n· La opción instalada en el variador no se\nreconoce.\n· Compruebe la referencia y compatibilidad de la opción.\nInF9\n[Int.medida I]\n· Las mediciones actuales no son\ncorrectas.\n· Sustituya los sensores actuales o la tarjeta de potencia.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nInFA\n[Int.circ. red]\n· La fase de entrada no funciona\ncorrectamente.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nNVE41298 04/2018\n315",
+      "tablas": [
+        [
+          [
+            "Fallo detectado",
+            "Nombre",
+            "Causa probable",
+            "Solución"
+          ],
+          [
+            "AnF",
+            "[Perdi. carga]",
+            "· La diferencia entre la frecuencia de salida y la realimentación de velocidad no es correcta.",
+            "· Compruebe el motor y los parámetros de ganancia y estabilidad. · Añada una resistencia de frenado. · Compruebe el dimensionamiento del motor/variador/carga. · Compruebe el acoplamiento mecánico del codificador y su cableado. · Compruebe la configuración de los parámetros"
+          ],
+          [
+            "ASF",
+            "[Error ángulo]",
+            "· Esto ocurre durante la medición del ángulo de fase, si la fase del motor se desconecta o si la inductancia del motor es demasiado alta.",
+            "· Compruebe los parámetros del lazo de velocidad. · Compruebe las fases del motor y la corriente máxima que admite el variador."
+          ],
+          [
+            "br F",
+            "[Retor freno]",
+            "· El contacto del retorno de freno no se corresponde con el control de la lógica de freno. · El freno no detiene el motor con suficiente rapidez (detectado midiendo la velocidad de la entrada de pulsos).",
+            "· Compruebe el circuito de retorno y el circuito de control de la lógica de freno. · Compruebe el estado mecánico del freno. · Compruebe la guarnición del freno."
+          ],
+          [
+            "CrF1",
+            "[CCPrecarga]",
+            "· Detectado fallo en control del relé de carga o resistencia de carga deteriorada.",
+            "· Apague el variador y, a continuación, vuelva a encenderlo. · Compruebe las conexiones internas. · Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "EEF1",
+            "[EEprom Ctrl]",
+            "· Detectado fallo de memoria interna, bloque de control.",
+            "· Compruebe el entorno (compatibilidad electromagnética). · Apague, rearme y vuelva a establecer los ajustes de"
+          ],
+          [
+            "EEF 2",
+            "[EEprom Pot]",
+            "· Detectado fallo de memoria interna, tarjeta de potencia.",
+            "fábrica. · Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "FCF1",
+            "[C.Mot.Cerr.]",
+            "· El contactor de salida sigue cerrado aunque se cumplen las condiciones de apertura.",
+            "· Compruebe el contactor y su cableado. · Compruebe el circuito de retorno."
+          ],
+          [
+            "HdF",
+            "[Desat. IGBT]",
+            "· Cortocircuito o puesta a tierra en la salida del variador.",
+            "· Compruebe los cables que conectan el variador al motor, así como el aislamiento del motor."
+          ],
+          [
+            "ILF",
+            "[Comm.inter]",
+            "· Interrupción de la comunicación entre la tarjeta opcional y el variador.",
+            "· Compruebe el entorno (compatibilidad electromagnética). · Compruebe las conexiones. · Cambie la tarjeta opcional. · Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "InFI",
+            "[Error calibr]",
+            "· La tarjeta de potencia es distinta de la tarjeta almacenada.",
+            "· Compruebe la referencia de la tarjeta de potencia."
+          ],
+          [
+            "InF2",
+            "[Pot. incompatible]",
+            "· La tarjeta de potencia no es compatible con el bloque de control.",
+            "· Compruebe la referencia de la tarjeta de potencia y su compatibilidad."
+          ],
+          [
+            "InF3",
+            "[Comunic. interna]",
+            "· Interrupción de comunicación entre las tarjetas internas.",
+            "· Compruebe las conexiones internas. · Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "In F 4",
+            "[Interno-zona fab.]",
+            "· Incoherencia de datos internos.",
+            "· Vuelva a calibrar el variador (tarea que realiza el soporte técnico de Schneider Electric)."
+          ],
+          [
+            "InF 6",
+            "[Interno-opción]",
+            "· La opción instalada en el variador no se reconoce.",
+            "· Compruebe la referencia y compatibilidad de la opción."
+          ],
+          [
+            "InF9",
+            "[Int.medida I]",
+            "· Las mediciones actuales no son correctas.",
+            "· Sustituya los sensores actuales o la tarjeta de potencia. · Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "InFA",
+            "[Int.circ. red]",
+            "· La fase de entrada no funciona correctamente.",
+            "· Póngase en contacto con el soporte técnico de Schneider Electric."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "Diagnóstico y resolución de problemas\nFallo\ndetectado\nNombre\nCausa probable\nSolución\ninFb\n[F temp. int.]\n· El sensor de temperatura del variador no\nfunciona correctamente.\n· Sustituya el sensor de temperatura del variador.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nInFE\n[Fallo CPU]\n· Detectado fallo del microprocesador\ninterno.\n· Apague y rearme.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nOCF\n[Sobreinten.]\n· Los parámetros de los menús\n[AJUSTES] ( 5 E E - ) y [CONTROL\nMOTOR] (dr [ - ) no son correctos.\n· Inercia o carga demasiado alta.\n· Bloqueo mecánico.\n· Compruebe los parámetros.\n· Compruebe el dimensionamiento del motor/variador/carga.\n· Compruebe el estado de la mecánica.\n· Reduzca [Limit. Intensidad] (CL ,).\n· Aumente la frecuencia de conmutación.\nSAFF\n[Fallo Segur.]\n· Tiempo de rebote excedido.\n· Umbral de disparo de SS1 excedido.\n· Configuración incorrecta.\n· Sobrevelocidad del disparo detectada de\ntipo SLS\n· Compruebe la configuración de las funciones de seguridad.\n· Compruebe el Manual de funciones de seguridad\nintegradas del ATV320\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nSCF1\n[Corto.motor]\n· Cortocircuito o puesta a tierra en la salida\ndel variador.\n· Compruebe los cables que conectan el variador al motor,\nasí como el aislamiento del motor.\n· Reduzca la frecuencia de conmutación.\n· Instale inductancias en serie con el motor.\n· Compruebe el ajuste del lazo de velocidad y el freno.\n· Aumente el valor de [Tpo de rearranque] (L E r ), página\n102.\n· Aumente la frecuencia de conmutación.\nSCF3\n[Corto.tierra]\n· Corriente de fuga a tierra importante en la\nsalida del variador, en el caso de varios\nmotores en paralelo.\n· Compruebe los cables que conectan el variador al motor,\nasí como el aislamiento del motor.\n· Reduzca la frecuencia de conmutación.\n· Instale inductancias en serie con el motor.\n· Compruebe el ajuste del lazo de velocidad y el freno.\n· Aumente el valor de [Tpo de rearranque] (t E r ), página\n102.\n· Reduzca la frecuencia de conmutación.\n5 OF\n[Sobreveloci]\n· Inestabilidad o carga arrastrante\ndemasiado elevada.\n· Compruebe el motor y los parámetros de ganancia y\nestabilidad.\n· Añada una resistencia de frenado.\n· Compruebe el dimensionamiento del motor/variador/carga.\n· Compruebe los ajustes de los parámetros de la función\n[CONTADOR FRECUENCIA] (F 9 F - ), página 271, si se\nha configurado.\nSPF\n[P.retorn.vel.]\n· Falta la señal de entrada de pulsos, si la\nentrada se utiliza para la medición de la\nvelocidad.\n· Falta la señal de realimentación del\ncodificador\n· Compruebe los parámetros de configuración del\ncodificador.\n· Compruebe el cableado entre el codificador y el variador.\n· Compruebe el codificador.\n· Compruebe la conexión del cable de entrada y el detector\nutilizado.\nEnF\n[Autoajuste]\n· Motor especial o motor con una potencia\ninadecuada para el variador.\n· Motor no conectado con el variador.\n· Motor no parado.\n· Compruebe que el motor y el variador sean compatibles.\n· Compruebe la presencia del motor durante el autoajuste.\n· En caso de utilizar un contactor de salida, ciérrelo durante\nel autoajuste.\n· Compruebe que el motor esté parado durante la operación\nde autoajuste.\n316\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Fallo detectado",
+            "Nombre",
+            "Causa probable",
+            "Solución"
+          ],
+          [
+            "inFb",
+            "[F temp. int.]",
+            "· El sensor de temperatura del variador no funciona correctamente.",
+            "· Sustituya el sensor de temperatura del variador. · Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "InFE",
+            "[Fallo CPU]",
+            "· Detectado fallo del microprocesador interno.",
+            "· Apague y rearme. · Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "OCF",
+            "[Sobreinten.]",
+            "· Los parámetros de los menús [AJUSTES] ( 5 E E - ) y [CONTROL MOTOR] (dr [ - ) no son correctos. · Inercia o carga demasiado alta. · Bloqueo mecánico.",
+            "· Compruebe los parámetros. · Compruebe el dimensionamiento del motor/variador/carga. · Compruebe el estado de la mecánica. · Reduzca [Limit. Intensidad] (CL ,). · Aumente la frecuencia de conmutación."
+          ],
+          [
+            "SAFF",
+            "[Fallo Segur.]",
+            "· Tiempo de rebote excedido. · Umbral de disparo de SS1 excedido. · Configuración incorrecta. · Sobrevelocidad del disparo detectada de tipo SLS",
+            "· Compruebe la configuración de las funciones de seguridad. · Compruebe el Manual de funciones de seguridad integradas del ATV320 · Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "SCF1",
+            "[Corto.motor]",
+            "· Cortocircuito o puesta a tierra en la salida del variador.",
+            "· Compruebe los cables que conectan el variador al motor, así como el aislamiento del motor. · Reduzca la frecuencia de conmutación. · Instale inductancias en serie con el motor. · Compruebe el ajuste del lazo de velocidad y el freno. · Aumente el valor de [Tpo de rearranque] (L E r ), página 102. · Aumente la frecuencia de conmutación."
+          ],
+          [
+            "SCF3",
+            "[Corto.tierra]",
+            "· Corriente de fuga a tierra importante en la salida del variador, en el caso de varios motores en paralelo.",
+            "· Compruebe los cables que conectan el variador al motor, así como el aislamiento del motor. · Reduzca la frecuencia de conmutación. · Instale inductancias en serie con el motor. · Compruebe el ajuste del lazo de velocidad y el freno. · Aumente el valor de [Tpo de rearranque] (t E r ), página 102. · Reduzca la frecuencia de conmutación."
+          ],
+          [
+            "5 OF",
+            "[Sobreveloci]",
+            "· Inestabilidad o carga arrastrante demasiado elevada.",
+            "· Compruebe el motor y los parámetros de ganancia y estabilidad. · Añada una resistencia de frenado."
+          ],
+          [
+            "· Compruebe el dimensionamiento del motor/variador/carga. · Compruebe los ajustes de los parámetros de la función [CONTADOR FRECUENCIA] (F 9 F - ), página 271, si se ha configurado."
+          ],
+          [
+            "SPF",
+            "[P.retorn.vel.]",
+            "· Falta la señal de entrada de pulsos, si la entrada se utiliza para la medición de la velocidad. · Falta la señal de realimentación del codificador",
+            "· Compruebe los parámetros de configuración del codificador. · Compruebe el cableado entre el codificador y el variador. · Compruebe el codificador. · Compruebe la conexión del cable de entrada y el detector utilizado."
+          ],
+          [
+            "EnF",
+            "[Autoajuste]",
+            "· Motor especial o motor con una potencia inadecuada para el variador. · Motor no conectado con el variador. · Motor no parado.",
+            "· Compruebe que el motor y el variador sean compatibles. · Compruebe la presencia del motor durante el autoajuste. · En caso de utilizar un contactor de salida, ciérrelo durante el autoajuste. · Compruebe que el motor esté parado durante la operación de autoajuste."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Diagnóstico y resolución de problemas\nCódigos de detección de fallos que pueden borrarse con la función de rearranque automático tras\nhaberse solucionado la causa\nEstos fallos detectados también pueden borrarse mediante el apagado y encendido o bien mediante un\nparámetro de entrada lógica o bit de control ([Borrar fallo] (- 5 F), página 254).\nFallo\ndetectado\nNombre\nCausa probable\nSolución\nbLF\n[Contrl freno]\n· Corriente de apertura de freno no\nalcanzada.\n· El umbral de frecuencia de cierre de\nfreno [Frec.cierre freno] (b E n)\nsólo se regula cuando se ha\nasignado un control de lógica de\nfreno.\n· Compruebe la conexión del variador/motor.\n· Compruebe los devanados del motor.\n· Compruebe los ajustes de [I apert.freno subida] ( , br ) e\n[I apert. freno bajada] ( I r d) , página 195.\n· Aplique los ajustes recomendados para\n[Frec. cierre freno] ( b E n).\nCnF\n[Red comuni]\n· Interrupción de la comunicación en la\ntarjeta de comunicaciones.\n· Compruebe el entorno (compatibilidad electromagnética).\n· Compruebe el cableado.\n· Compruebe el time out.\n· Cambie la tarjeta opcional.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nCOF\n[Com. CANopen]\n· Interrupción de la comunicación en el\nbus CANopen®.\n· Compruebe el bus de comunicaciones.\n· Compruebe el time out.\n· Consulte el manual del usuario de CANopen®.\nEPF1\n[Fallo LI/Bit]\n· Suceso desencadenado por un\ndispositivo externo, en función del\nusuario.\n· Compruebe el dispositivo que ha provocado el disparo y\nrealice el rearme.\nEPF 2\n[Fall.ext.com]\n· Suceso desencadenado por una red\nde comunicaciones.\n· Compruebe la causa que ha provocado el disparo y realice el\nrearme.\nFbES\n[Err. paro FB]\n· Los bloques de funciones se han\nparado mientras el motor estaba en\nmarcha.\n. Compruebe la configuración de [Parar FB para.motor]\n(F 6 5n).\nFCF 2\n[C.Moto. Abi.]\n· El contactor de salida sigue abierto\naunque se cumplen las condiciones\nde cierre.\n· Compruebe el contactor y su cableado.\n· Compruebe el circuito de retorno.\nLCF\n[Conta.línea]\n· El variador no se enciende aunque\nha transcurrido el valor especificado\nen [Time out U.línea] (L C E ).\n· Compruebe el contactor y su cableado.\n· Compruebe el time out.\n· Compruebe la conexión de la línea/contactor/variador.\nLFF3\n[No señal AI3]\n· Pérdida de la referencia 4-20 mA en\nla entrada analógica AI3.\n· Compruebe la conexión de las entradas analógicas.\nObF\n[Sobrefrenad]\n· Frenado excesivamente repentino o\ncarga arrastrante.\n· Tensión de red demasiado elevada.\n· Aumente el tiempo de deceleración.\n· Si es necesario, instale una resistencia de frenado.\n· Active la función [Adapt.rampa dec.] (br A), página 173, si\nes compatible con la aplicación.\n. Compruebe la tensión de red.\n[Overcurrent]\n· Parameters in the [SETTINGS]\n( SE E - ) and [MOTOR CONTROL]\n(dr [ - ) menus are not correct.\n· Inertia or load too high.\n· Mechanical locking.\n· Check the parameters.\n. Check the size of the motor/drive/load.\n. Check the state of the mechanism.\n· Decrease [Current limitation] (CL ,).\n. Increase the switching frequency.\nOHF\n[Sobretemp.]\n· Temperatura del variador demasiado\nelevada.\n· Compruebe la carga del motor, la ventilación del variador y la\ntemperatura ambiente. Espere hasta que el variador se enfríe\nantes de volver a arrancarlo.\n[Fallo Sobrecarga]\n· Sobrecarga del proceso.\n· Compruebe qué ha causado la sobrecarga y solucione la\ncausa de ésta.\n· Compruebe los parámetros de la función\n[SOBRECARGA] ( a L d -), página 277.\nNVE41298 04/2018\n317",
+      "tablas": [
+        [
+          [
+            "Fallo detectado",
+            "Nombre",
+            "Causa probable",
+            "Solución"
+          ],
+          [
+            "bLF",
+            "[Contrl freno]",
+            "· Corriente de apertura de freno no alcanzada. · El umbral de frecuencia de cierre de freno [Frec.cierre freno] (b E n) sólo se regula cuando se ha asignado un control de lógica de freno.",
+            "· Compruebe la conexión del variador/motor. · Compruebe los devanados del motor. · Compruebe los ajustes de [I apert.freno subida] ( , br ) e [I apert. freno bajada] ( I r d) , página 195. · Aplique los ajustes recomendados para [Frec. cierre freno] ( b E n)."
+          ],
+          [
+            "CnF",
+            "[Red comuni]",
+            "· Interrupción de la comunicación en la tarjeta de comunicaciones.",
+            "· Compruebe el entorno (compatibilidad electromagnética). · Compruebe el cableado. · Compruebe el time out. · Cambie la tarjeta opcional. · Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "COF",
+            "[Com. CANopen]",
+            "· Interrupción de la comunicación en el bus CANopen®.",
+            "· Compruebe el bus de comunicaciones. · Compruebe el time out. · Consulte el manual del usuario de CANopen®."
+          ],
+          [
+            "EPF1",
+            "[Fallo LI/Bit]",
+            "· Suceso desencadenado por un dispositivo externo, en función del usuario.",
+            "· Compruebe el dispositivo que ha provocado el disparo y realice el rearme."
+          ],
+          [
+            "EPF 2",
+            "[Fall.ext.com]",
+            "· Suceso desencadenado por una red de comunicaciones.",
+            "· Compruebe la causa que ha provocado el disparo y realice el rearme."
+          ],
+          [
+            "FbES",
+            "[Err. paro FB]",
+            "· Los bloques de funciones se han parado mientras el motor estaba en marcha.",
+            ". Compruebe la configuración de [Parar FB para.motor] (F 6 5n)."
+          ],
+          [
+            "FCF 2",
+            "[C.Moto. Abi.]",
+            "· El contactor de salida sigue abierto aunque se cumplen las condiciones de cierre.",
+            "· Compruebe el contactor y su cableado. · Compruebe el circuito de retorno."
+          ],
+          [
+            "LCF",
+            "[Conta.línea]",
+            "· El variador no se enciende aunque ha transcurrido el valor especificado en [Time out U.línea] (L C E ).",
+            "· Compruebe el contactor y su cableado. · Compruebe el time out. · Compruebe la conexión de la línea/contactor/variador."
+          ],
+          [
+            "LFF3",
+            "[No señal AI3]",
+            "· Pérdida de la referencia 4-20 mA en la entrada analógica AI3.",
+            "· Compruebe la conexión de las entradas analógicas."
+          ],
+          [
+            "ObF",
+            "[Sobrefrenad]",
+            "· Frenado excesivamente repentino o carga arrastrante. · Tensión de red demasiado elevada.",
+            "· Aumente el tiempo de deceleración. · Si es necesario, instale una resistencia de frenado. · Active la función [Adapt.rampa dec.] (br A), página 173, si es compatible con la aplicación. . Compruebe la tensión de red."
+          ],
+          [
+            "",
+            "[Overcurrent]",
+            "· Parameters in the [SETTINGS] ( SE E - ) and [MOTOR CONTROL] (dr [ - ) menus are not correct. · Inertia or load too high. · Mechanical locking.",
+            "· Check the parameters. . Check the size of the motor/drive/load. . Check the state of the mechanism. · Decrease [Current limitation] (CL ,). . Increase the switching frequency."
+          ],
+          [
+            "OHF\n:unselected:",
+            "[Sobretemp.]",
+            "· Temperatura del variador demasiado elevada.",
+            "· Compruebe la carga del motor, la ventilación del variador y la temperatura ambiente. Espere hasta que el variador se enfríe antes de volver a arrancarlo."
+          ],
+          [
+            "",
+            "[Fallo Sobrecarga]",
+            "· Sobrecarga del proceso.",
+            "· Compruebe qué ha causado la sobrecarga y solucione la causa de ésta. · Compruebe los parámetros de la función [SOBRECARGA] ( a L d -), página 277."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "Diagnóstico y resolución de problemas\nFallo\ndetectado\nNombre\nCausa probable\nSolución\nOLF\n[Sobr. motor]\n· Disparo por intensidad de motor\ndemasiado elevada.\n· Verifique los ajustes de la protección térmica del motor y\ncompruebe la carga de éste. Espere hasta que el motor se\nenfríe antes de volver a arrancarlo.\nOPF1\n[Perd. 1f mot]\n· Pérdida de una fase en la salida del\nvariador.\n· Compruebe las conexiones del variador al motor.\nOPF2\n[Perd.3fases mot.]\n· El motor no está conectado o la\npotencia del motor es demasiado\nbaja.\n· Contactor de salida abierto.\n· Inestabilidades instantáneas de la\nintensidad de motor.\n· Compruebe las conexiones del variador al motor.\n· Si se utiliza un contactor de salida, establezca\n[Perdida fase motor] ( a PL ) en [C.fase mot.] ( a AC),\npágina 260.\n· Pruebe en un motor con alimentación baja o sin motor: En el\nmodo de ajustes de fábrica, la detección de pérdida de fase\ndel motor está activa [Pérdida fase motor] ( a PL ) = [Si]\n( y E 5). Para comprobar el variador en un entorno de prueba\no de mantenimiento, sin tener que utilizar un motor con el\nmismo calibre que el variador (en particular para los\nvariadores de alta potencia), desactive la detección de pérdida\nde fase de motor [Pérdida fase motor] ( a PL ) = [No] (na);\nconsulte las instrucciones que se facilitan en la página 260.\n· Compruebe y optimice los parámetros siguientes:\n[Compensación RI] ( u F r ), página 92, [Tensión\nNom.Motor] ( un 5) e [Int. Nominal Motor] (n [ r ), página\n88, y ejecute la función [Autoajuste] (L u n), página 89.\n25 F\n[Sobret. red]\n· Tensión de red demasiado elevada.\n· Red perturbada.\n· Compruebe la tensión de red.\nDEFL\n[Sobrecalent.\nLI6=PTC]\n· Detectado sobrecalentamiento de\nsondas PTC en entrada LI6.\n· Compruebe la carga y el tamaño del motor.\n· Compruebe la ventilación del motor.\n· Espere a que se enfríe el motor para volverlo a arrancar.\n· Compruebe el tipo y el estado de las sondas PTC.\nPEFL\n[So.LI6=PTC]\n· Sonda PTC en salida LI6 abierta o\ncortocircuitada.\n· Compruebe la sonda PTC y el cableado existente entre ésta y\nel motor/variador.\nSCF1\n[Cortocirc.motor]\n· Cortocircuito o puesta a tierra en la\nsalida del variador.\n· Compruebe los cables de conexión del variador al motor y el\naislamiento del motor.\n· Reduzca la frecuencia de conmutación.\n· Conecte inductancias en serie con el motor.\n· Compruebe el ajuste del freno y el bucle de velocidad.\n. Aumente el [Tiempo de rearranque] (t E r ).\n· Aumente la frecuencia de conmutación.\nSCF3\n[Cortircuito tierra]\n· Corriente de fuga a tierra significativa\nen la salida del variador si varios\nmotores se conectan en paralelo.\n. Compruebe los cables de conexión del variador al motor y el\naislamiento del motor.\n· Reduzca la frecuencia de conmutación.\n· Conecte inductancias en serie con el motor.\n· Compruebe el ajuste del freno y el bucle de velocidad.\n· Aumente el [Tiempo de rearranque] (t E r ).\n· Reduzca la frecuencia de conmutación.\n5 CF 4\n[Corto. IGBT]\n· Detectado fallo de componente de\npotencia.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nSCFS\n[Corto.motor]\n· Cortocircuito en salida del variador.\n· Verifique los cables que conectan el variador al motor, así\ncomo el aislamiento del motor.\n· Póngase en contacto con el soporte técnico de Schneider\nElectric.\nSLF1\n[C.Modbus]\n· Interrupción de la comunicación en el\nbus Modbus.\n· Compruebe el bus de comunicaciones.\n· Compruebe el time out.\n. Consulte el manual del usuario de Modbus.\nSLF2\n[C.PwSuite]\n· Interrupción de la comunicación con\nel software de PC.\n· Compruebe el cableado de las conexiones del software de PC.\n· Compruebe el time out.\nSLF3\n[Com. HMI]\n· Interrupción de la comunicación con\nel terminal gráfico o el terminal\nremoto.\n· Verifique la conexión del terminal.\n. Compruebe el time out.\n318\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Fallo detectado",
+            "Nombre",
+            "Causa probable",
+            "Solución"
+          ],
+          [
+            "OLF\n:unselected:",
+            "[Sobr. motor]",
+            "· Disparo por intensidad de motor demasiado elevada.",
+            "· Verifique los ajustes de la protección térmica del motor y compruebe la carga de éste. Espere hasta que el motor se enfríe antes de volver a arrancarlo."
+          ],
+          [
+            "OPF1",
+            "[Perd. 1f mot]",
+            "· Pérdida de una fase en la salida del variador.",
+            "· Compruebe las conexiones del variador al motor."
+          ],
+          [
+            "OPF2\n:unselected:",
+            "[Perd.3fases mot.]",
+            "· El motor no está conectado o la potencia del motor es demasiado baja. · Contactor de salida abierto. · Inestabilidades instantáneas de la intensidad de motor.",
+            "· Compruebe las conexiones del variador al motor. · Si se utiliza un contactor de salida, establezca [Perdida fase motor] ( a PL ) en [C.fase mot.] ( a AC), página 260. · Pruebe en un motor con alimentación baja o sin motor: En el modo de ajustes de fábrica, la detección de pérdida de fase del motor está activa [Pérdida fase motor] ( a PL ) = [Si] ( y E 5). Para comprobar el variador en un entorno de prueba o de mantenimiento, sin tener que utilizar un motor con el mismo calibre que el variador (en particular para los variadores de alta potencia), desactive la detección de pérdida de fase de motor [Pérdida fase motor] ( a PL ) = [No] (na); consulte las instrucciones que se facilitan en la página 260. · Compruebe y optimice los parámetros siguientes: [Compensación RI] ( u F r ), página 92, [Tensión Nom.Motor] ( un 5) e [Int. Nominal Motor] (n [ r ), página 88, y ejecute la función [Autoajuste] (L u n), página 89."
+          ],
+          [
+            ":unselected: 25 F",
+            "[Sobret. red]",
+            "· Tensión de red demasiado elevada. · Red perturbada.",
+            "· Compruebe la tensión de red."
+          ],
+          [
+            "DEFL :unselected:",
+            "[Sobrecalent. LI6=PTC]",
+            "· Detectado sobrecalentamiento de sondas PTC en entrada LI6.",
+            "· Compruebe la carga y el tamaño del motor. · Compruebe la ventilación del motor. · Espere a que se enfríe el motor para volverlo a arrancar. · Compruebe el tipo y el estado de las sondas PTC."
+          ],
+          [
+            "PEFL",
+            "[So.LI6=PTC]",
+            "· Sonda PTC en salida LI6 abierta o cortocircuitada.",
+            "· Compruebe la sonda PTC y el cableado existente entre ésta y el motor/variador."
+          ],
+          [
+            "SCF1",
+            "[Cortocirc.motor]",
+            "· Cortocircuito o puesta a tierra en la salida del variador.",
+            "· Compruebe los cables de conexión del variador al motor y el aislamiento del motor. · Reduzca la frecuencia de conmutación. · Conecte inductancias en serie con el motor. · Compruebe el ajuste del freno y el bucle de velocidad. . Aumente el [Tiempo de rearranque] (t E r ). · Aumente la frecuencia de conmutación."
+          ],
+          [
+            "SCF3",
+            "[Cortircuito tierra]",
+            "· Corriente de fuga a tierra significativa en la salida del variador si varios motores se conectan en paralelo.",
+            ". Compruebe los cables de conexión del variador al motor y el aislamiento del motor. · Reduzca la frecuencia de conmutación. · Conecte inductancias en serie con el motor. · Compruebe el ajuste del freno y el bucle de velocidad. · Aumente el [Tiempo de rearranque] (t E r ). · Reduzca la frecuencia de conmutación."
+          ],
+          [
+            "5 CF 4",
+            "[Corto. IGBT]",
+            "· Detectado fallo de componente de potencia.",
+            "· Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "SCFS",
+            "[Corto.motor]",
+            "· Cortocircuito en salida del variador.",
+            "· Verifique los cables que conectan el variador al motor, así como el aislamiento del motor. · Póngase en contacto con el soporte técnico de Schneider Electric."
+          ],
+          [
+            "SLF1",
+            "[C.Modbus]",
+            "· Interrupción de la comunicación en el bus Modbus.",
+            "· Compruebe el bus de comunicaciones. · Compruebe el time out. . Consulte el manual del usuario de Modbus."
+          ],
+          [
+            "SLF2",
+            "[C.PwSuite]",
+            "· Interrupción de la comunicación con el software de PC.",
+            "· Compruebe el cableado de las conexiones del software de PC. · Compruebe el time out."
+          ],
+          [
+            "SLF3",
+            "[Com. HMI]",
+            "· Interrupción de la comunicación con el terminal gráfico o el terminal remoto.",
+            "· Verifique la conexión del terminal. . Compruebe el time out."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Diagnóstico y resolución de problemas\nFallo\ndetectado\nNombre\nCausa probable\nSolución\n55F\n[Limi.Par/Int.]\n· Conmutación a limitación de par o de\nintensidad.\n· Compruebe si existe algún problema mecánico.\n· Compruebe los parámetros de [LIMITACIÓN PAR] (E a L - ),\npágina 218, y los parámetros de\n[DET. LIM. PAR / INT] (E i d - ), página 269.\nE JF\n[S.tem.IGBT]\n· Sobrecalentamiento del variador.\n· Verifique el dimensionamiento motor/variador/carga.\n· Reduzca la frecuencia de conmutación.\n· Espere a que se enfríe el motor para volverlo a arrancar.\nEnF\n[Auto-tuning]\n· Special motor or motor whose power\nis not suitable for the drive.\n· Motor not connected to the drive.\n· Motor not stopped\n. Check that the motor/drive are compatible.\n. Check that the motor is present during auto-tuning.\n· If an output contactor is being used, close it during auto-tuning.\n. Check that the motor is stopped during tune operation.\nULF\n[Fallo Subcarga]\n· Subcarga del proceso.\n· Compruebe qué ha causado la subcarga y solucione la causa\nde ésta.\n· Compruebe los parámetros de la función\n[SUBCARGA] ( u L d - ), página 275.\nNVE41298 04/2018\n319",
+      "tablas": [
+        [
+          [
+            "Fallo detectado",
+            "Nombre",
+            "Causa probable",
+            "Solución"
+          ],
+          [
+            "55F",
+            "[Limi.Par/Int.]",
+            "· Conmutación a limitación de par o de intensidad.",
+            "· Compruebe si existe algún problema mecánico. · Compruebe los parámetros de [LIMITACIÓN PAR] (E a L - ), página 218, y los parámetros de [DET. LIM. PAR / INT] (E i d - ), página 269."
+          ],
+          [
+            "E JF",
+            "[S.tem.IGBT]",
+            "· Sobrecalentamiento del variador.",
+            "· Verifique el dimensionamiento motor/variador/carga. · Reduzca la frecuencia de conmutación. · Espere a que se enfríe el motor para volverlo a arrancar."
+          ],
+          [
+            "EnF",
+            "[Auto-tuning]",
+            "· Special motor or motor whose power is not suitable for the drive. · Motor not connected to the drive. · Motor not stopped",
+            ". Check that the motor/drive are compatible. . Check that the motor is present during auto-tuning. · If an output contactor is being used, close it during auto-tuning. . Check that the motor is stopped during tune operation."
+          ],
+          [
+            "ULF",
+            "[Fallo Subcarga]",
+            "· Subcarga del proceso.",
+            "· Compruebe qué ha causado la subcarga y solucione la causa de ésta. · Compruebe los parámetros de la función [SUBCARGA] ( u L d - ), página 275."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "Diagnóstico y resolución de problemas\nCódigos de detección de fallos que se borran en cuanto se ha solucionado su causa\nFallo\ndetectado\nNombre\nCausa probable\nSolución\nCFF\n[Config.Incorr.]\n· Cambio o extracción de la tarjeta\nopcional.\n· Compruebe que no exista ningún error de tarjeta.\n· En caso de haber cambiado o extraído deliberadamente la\ntarjeta opcional, lea los comentarios siguientes.\n· Compruebe que no exista ningún error de tarjeta.\n· En caso de haber cambiado deliberadamente el bloque de\ncontrol, lea los comentarios siguientes.\n· Sustitución de bloque de control por un\nbloque de control configurado en un\nvariador con distinto calibre.\n· La configuración actual no es coherente.\n· Vuelva a los ajustes de fábrica o recupere la configuración\nde copia de seguridad, si es válida (consulte la página 83).\n[Config-invalid]\n· Configuración no válida.\nLa configuración cargada en el variador\n· Verifique la configuración cargada previamente.\nCFI2\nmediante el bus o la red de\ncomunicaciones no es coherente.\n· Cargue una configuración compatible.\n[Fallo canal.]\n· Conmutación a canales no válidos.\n· Compruebe los parámetros de la función.\ndLF\n[FalloVariación\ncarga]\n· Variación de carga anómala.\n· Compruebe que ningún obstáculo bloquee la carga.\n· La eliminación de una orden de marcha da lugar a un\nrearme.\nFbE\n[Fallo FB]\n· Error en bloques funcionales.\n· Consulte [Fallo FB] (F & F E ) para obtener más detalles.\nHCF\n[Emp.cartas]\n· Se ha configurado la función\n[EMPAREJA.DE CARTAS] ( PP , - ),\npágina 274, y se ha cambiado una tarjeta\nde variador.\n· En caso de error de tarjeta, vuelva a insertar la tarjeta\noriginal.\n· Confirme la configuración especificando el\n[Código emparejam.] (PP ,) si la tarjeta se ha\ncambiado deliberadamente.\nPHF\n[Perd.fas.red]\n· Variador mal alimentado o fusión de un\nfusible.\n· Verifique la conexión de potencia y los fusibles.\n· Utilice alimentación de red trifásica.\n· Falta una fase.\n· Utilización de un ATV320 trifásico con\nalimentación de red monofásica.\n· Carga excéntrica.\nEsta protección actúa únicamente con el\nvariador en modo de carga.\n· Desactive el fallo detectado estableciendo [Pérdida fase\nred] ( , PL ) = [No] (na), página 88.\n[Subtensión]\n· Alimentación de red demasiado baja.\n· Bajada de tensión transitoria.\n· Compruebe la tensión y los parámetros de\n[GESTIÓN SUBTENSIÓN] ( u 5 b - ), página 263.\nCambio o extracción de la tarjeta opcional.\nCuando una tarjeta opcional se extrae o se sustituye por otra, el variador se bloquea en el modo de fallo\n[Config.Incorr.] ([ F F ) durante el encendido. Si la tarjeta se ha cambiado o extraído deliberadamente, el\nfallo detectado puede eliminarse pulsando la tecla ENT dos veces, lo cual da lugar a la restauración de los\najustes de fábrica (consulte la página 83) para los grupos de parámetros a los que afecta la tarjeta. Son los\nsiguientes:\nSustitución de la tarjeta por otra del mismo tipo\n· Tarjetas de comunicaciones: sólo los parámetros que son específicos de las tarjetas de comunicaciones.\nCambio de bloque de control\nCuando un bloque de control se sustituye por un bloque de control configurado en un variador con un calibre\ndistinto, el variador se bloquea en el modo de fallo [Config.Incorr.] ([ F F ) durante el encendido. Si el bloque\nde control se ha cambiado deliberadamente, el fallo detectado puede eliminarse pulsando la tecla ENT dos\nveces, lo cual da lugar a la restauración de todos los ajustes de fábrica.\n320\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Fallo detectado",
+            "Nombre",
+            "Causa probable",
+            "Solución"
+          ],
+          [
+            "CFF",
+            "[Config.Incorr.]",
+            "· Cambio o extracción de la tarjeta opcional.",
+            "· Compruebe que no exista ningún error de tarjeta. · En caso de haber cambiado o extraído deliberadamente la tarjeta opcional, lea los comentarios siguientes."
+          ],
+          [
+            "",
+            "· Compruebe que no exista ningún error de tarjeta. · En caso de haber cambiado deliberadamente el bloque de control, lea los comentarios siguientes."
+          ],
+          [
+            "· Sustitución de bloque de control por un bloque de control configurado en un variador con distinto calibre."
+          ],
+          [
+            "· La configuración actual no es coherente.",
+            "· Vuelva a los ajustes de fábrica o recupere la configuración de copia de seguridad, si es válida (consulte la página 83)."
+          ],
+          [
+            "",
+            "[Config-invalid]",
+            "· Configuración no válida.",
+            "· Verifique la configuración cargada previamente."
+          ],
+          [
+            "CFI2",
+            "La configuración cargada en el variador\nmediante el bus o la red de comunicaciones no es coherente.",
+            "· Cargue una configuración compatible."
+          ],
+          [
+            "",
+            "[Fallo canal.]",
+            "· Conmutación a canales no válidos.",
+            "· Compruebe los parámetros de la función."
+          ],
+          [
+            "dLF",
+            "[FalloVariación carga]",
+            "· Variación de carga anómala.",
+            "· Compruebe que ningún obstáculo bloquee la carga. · La eliminación de una orden de marcha da lugar a un rearme."
+          ],
+          [
+            "FbE",
+            "[Fallo FB]",
+            "· Error en bloques funcionales.",
+            "· Consulte [Fallo FB] (F & F E ) para obtener más detalles."
+          ],
+          [
+            "HCF",
+            "[Emp.cartas]",
+            "· Se ha configurado la función [EMPAREJA.DE CARTAS] ( PP , - ), página 274, y se ha cambiado una tarjeta de variador.",
+            "· En caso de error de tarjeta, vuelva a insertar la tarjeta original. · Confirme la configuración especificando el [Código emparejam.] (PP ,) si la tarjeta se ha cambiado deliberadamente."
+          ],
+          [
+            "PHF",
+            "[Perd.fas.red]",
+            "· Variador mal alimentado o fusión de un fusible.",
+            "· Verifique la conexión de potencia y los fusibles. · Utilice alimentación de red trifásica."
+          ],
+          [
+            "· Falta una fase. · Utilización de un ATV320 trifásico con alimentación de red monofásica."
+          ],
+          [
+            "· Carga excéntrica. Esta protección actúa únicamente con el variador en modo de carga.",
+            "· Desactive el fallo detectado estableciendo [Pérdida fase red] ( , PL ) = [No] (na), página 88."
+          ],
+          [
+            "",
+            "[Subtensión]",
+            "· Alimentación de red demasiado baja. · Bajada de tensión transitoria.",
+            "· Compruebe la tensión y los parámetros de [GESTIÓN SUBTENSIÓN] ( u 5 b - ), página 263."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Diagnóstico y resolución de problemas\nCódigos de detección de fallos que se visualizan en el terminal remoto\nCódigo\nNombre\nDescripción\n[Inicialización en\ncurso]\nEl microcontrolador está inicializándose.\nBúsqueda de configuración de comunicación en curso.\nCon.E\n(1)\n[Error comunicación]\nDetectado fallo de time out (50 ms).\nEste mensaje se visualiza tras 20 intentos de comunicación.\nA - 17\n(1)\n[Botón Alarm]\nUna tecla se ha mantenido pulsada durante más de 10 segundos.\nEl terminal se desconecta.\nEl terminal vuelve a activarse cuando se pulsa una tecla.\nCLr\n(1)\n[Confirmación de\neliminación de fallo\ndetectado]\nSe visualiza cuando se ha pulsado la tecla STOP una vez si el canal de control activo es el terminal\nremoto.\nd E u.E\n(1)\n[Incompatibilidad\nmarca variador]\nLa marca del variador no se corresponde con la del terminal remoto.\nron.E\n(1)\n[Anomalía de ROM]\nEl terminal remoto detecta una anomalía de ROM en la base del cálculo de suma de comprobación.\nr An.E\n(1)\n[Anomalía de RAM]\nEl terminal remoto detecta una anomalía de RAM.\nCPU.E\n(1)\n[Otros fallos\ndetectados]\nOtros fallos detectados.\n(1) Parpadeando\nNVE41298 04/2018\n321",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre",
+            "Descripción"
+          ],
+          [
+            "",
+            "[Inicialización en curso]",
+            "El microcontrolador está inicializándose. Búsqueda de configuración de comunicación en curso."
+          ],
+          [
+            "Con.E (1)",
+            "[Error comunicación]",
+            "Detectado fallo de time out (50 ms). Este mensaje se visualiza tras 20 intentos de comunicación."
+          ],
+          [
+            "A - 17 (1)",
+            "[Botón Alarm]",
+            "Una tecla se ha mantenido pulsada durante más de 10 segundos. El terminal se desconecta. El terminal vuelve a activarse cuando se pulsa una tecla."
+          ],
+          [
+            "CLr (1)",
+            "[Confirmación de eliminación de fallo detectado]",
+            "Se visualiza cuando se ha pulsado la tecla STOP una vez si el canal de control activo es el terminal remoto."
+          ],
+          [
+            "d E u.E (1)",
+            "[Incompatibilidad marca variador]",
+            "La marca del variador no se corresponde con la del terminal remoto."
+          ],
+          [
+            "ron.E (1)",
+            "[Anomalía de ROM]",
+            "El terminal remoto detecta una anomalía de ROM en la base del cálculo de suma de comprobación."
+          ],
+          [
+            "r An.E (1)",
+            "[Anomalía de RAM]",
+            "El terminal remoto detecta una anomalía de RAM."
+          ],
+          [
+            "CPU.E (1)",
+            "[Otros fallos detectados]",
+            "Otros fallos detectados."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "Diagnóstico y resolución de problemas\n322\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Anexo\nIV\nContenido de esta parte\nEsta parte consta de los siguientes capítulos:\nCapítulo\nNombre del capítulo\nPágina\n12\nÍndice de funciones\n325\n13\nÍndice de códigos de los parámetros\n327\nNVE41298 04/2018\n323",
+      "tablas": [
+        [
+          [
+            "Capítulo",
+            "Nombre del capítulo",
+            "Página"
+          ],
+          [
+            "12",
+            "Índice de funciones",
+            "325"
+          ],
+          [
+            "13",
+            "Índice de códigos de los parámetros",
+            "327"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "324\nNVE41298 04/2018",
+      "tablas": []
+    }
+  ]
+}

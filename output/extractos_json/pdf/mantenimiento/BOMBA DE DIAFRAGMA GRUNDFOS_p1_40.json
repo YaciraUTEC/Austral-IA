@@ -1,0 +1,2180 @@
+{
+  "archivo": "BOMBA DE DIAFRAGMA GRUNDFOS_p1_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "INSTRUCCIONES GRUNDFOS\nDME, Variant AR\n16 to 248 gph (60-940 l/h)\nInstrucciones de instalación y operación\nbe\nthink\ninnovate\nGRUNDFOS\nX",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Español (MX) Instrucciones de instalación y operación\nCONTENIDO\nPágina\n1.\nGARANTIA LIMITADA\n3\n2.\nInstrucciones de seguridad\n3\n2.1\nSímbolos utilizados en este documento\n3\n2.2\nCualificación y formación del personal\n3\n2.3\nInstrucciones de seguridad para el ope-\nrario/usuario\n4\n2.4\nSeguridad del sistema en caso de fallo\nen la bomba dosificadora\n4\n2.5\nDosificación de productos químicos\n4\n2.6\nRotura de la membrana\n5\n2.7\nFuncionamiento con los tornillos de la\ncabeza dosificadora mal apretados\n5\n3.\nDescripción general\n6\n3.1\nAplicaciones\n6\n3.2\nMétodos de funcionamiento inadecua-\ndos\n6\n3.3\nIdentificación\n7\n3.3.1 Nomenclatura\n7\n3.3.2 Placa de características\n8\n4.\nDatos técnicos\n8\n4.1\nDatos mecánicos\n8\n4.2\nDatos eléctricos\n9\n4.3\nDatos de entrada/salida\n9\n4.4\nHomologaciones\n9\n4.5\nDimensiones\n9\n5.\nInstalación\n10\n5.1\nInstrucciones de seguridad\n10\n5.2\nEntorno de la instalación\n10\n5.3\nInstalación de la bomba\n10\n5.4\nEjemplo de instalación\n11\n5.5\nConexión eléctrica\n11\n5.6\nEsquema de conexiones\n12\n6.\nFunciones\n14\n6.1\nPanel de control\n14\n6.2\nArranque/parada de la bomba\n15\n6.3\nCebado/purga de la bomba\n15\n6.4\nControl de nivel\n15\n6.5\nSensor de fugas del diafragma\n15\n6.6\nLuces testigo y salida de alarma\n16\n6.7\nComunicación con fieldbus\n17\n6.8\nMenú\n18\n6.9\nModos de funcionamiento\n19\n6.10\nManual\n19\n6.11\nImpulso\n19\n6.12\nAnalógico\n20\n6.13\nTemporizador\n20\n6.14\nBatch\n22\n6.15\nAnticavitación\n22\n6.16\nLimitación de la capacidad\n23\n6.17\nContadores\n23\n6.18\nRearme\n24\n6.19\nVolver\n24\n6.20\nIdioma\n24\nEspañol (MX)\n2\n6.21\nEstructura de las entradas\n25\n6.22 Tanque vacío (alarma)\n26\n6.23 Unidades de medición\n26\n6.24 Control de dosificación\n27\n6.25\nBloqueo del panel de control\n28\n7.\nPuesta en marcha\n29\n8.\nCalibrado\n30\n8.1\nCalibrado directo\n31\n8.2\nCalibrado por control\n32\n9.\nServicio\n32\n9.1\nMantenimiento periódico\n32\n9.2\nLimpieza\n32\n9.3\nEjecución de una inspección\n33\n9.3.1 Despiece del cabezal dosificador\n33\n9.3.2 Desmontaje de la membrana y las válvu- 33\nlas\n9.3.3 Montaje de la membrana y las válvulas\n34\n9.4\nRotura de la membrana\n34\n9.4.1 Líquido dosificado en la carcasa de la\n35\nbomba\n9.5\nFuncionamiento con los tornillos de la\ncabeza dosificadora mal apretados\n35\n9.6\nReparaciones\n35\n10.\nLocalización de fallos\n36\n11.\nEliminación\n36\nAviso\nLeer estas instrucciones de instalación y\noperación antes de realizar la instalación.\nLa instalación y la operación deben cum-\nplir con las normativas locales en vigor.\n!",
+      "tablas": [
+        [
+          [
+            "CONTENIDO"
+          ],
+          [
+            "",
+            "",
+            "",
+            "Página"
+          ],
+          [
+            "1.",
+            "GARANTIA LIMITADA",
+            "",
+            "3"
+          ],
+          [
+            "2.",
+            "Instrucciones de seguridad",
+            "",
+            "3"
+          ],
+          [
+            "2.1",
+            "Símbolos utilizados en este documento",
+            "",
+            "3"
+          ],
+          [
+            "2.2",
+            "Cualificación y formación del personal",
+            "",
+            "3"
+          ],
+          [
+            "2.3",
+            "Instrucciones de seguridad para el ope- rario/usuario",
+            "",
+            "4"
+          ],
+          [
+            "2.4",
+            "Seguridad del sistema en caso de fallo en la bomba dosificadora",
+            "",
+            "4"
+          ],
+          [
+            "2.5",
+            "Dosificación de productos químicos",
+            "",
+            "4"
+          ],
+          [
+            "2.6",
+            "Rotura de la membrana",
+            "",
+            "5"
+          ],
+          [
+            "2.7",
+            "Funcionamiento con los tornillos de la cabeza dosificadora mal apretados",
+            "",
+            "5"
+          ],
+          [
+            "3.",
+            "Descripción general",
+            "",
+            "6"
+          ],
+          [
+            "3.1",
+            "Aplicaciones",
+            "",
+            "6"
+          ],
+          [
+            "3.2",
+            "Métodos de funcionamiento inadecua-",
+            "",
+            ""
+          ],
+          [
+            "",
+            "dos",
+            "",
+            "6"
+          ],
+          [
+            "3.3",
+            "Identificación",
+            "",
+            "7"
+          ],
+          [
+            "3.3.1",
+            "Nomenclatura",
+            "",
+            "7"
+          ],
+          [
+            "3.3.2",
+            "Placa de características",
+            "",
+            "8"
+          ],
+          [
+            "4.",
+            "Datos técnicos",
+            "",
+            "8"
+          ],
+          [
+            "4.1",
+            "Datos mecánicos",
+            "",
+            "8"
+          ],
+          [
+            "4.2",
+            "Datos eléctricos",
+            "",
+            "9"
+          ],
+          [
+            "4.3",
+            "Datos de entrada/salida",
+            "",
+            "9"
+          ],
+          [
+            "4.4",
+            "Homologaciones",
+            "",
+            "9"
+          ],
+          [
+            "4.5",
+            "Dimensiones",
+            "",
+            "9"
+          ],
+          [
+            "5.",
+            "Instalación",
+            "",
+            "10"
+          ],
+          [
+            "5.1",
+            "Instrucciones de seguridad",
+            "",
+            "10"
+          ],
+          [
+            "5.2",
+            "Entorno de la instalación",
+            "",
+            "10"
+          ],
+          [
+            "5.3",
+            "Instalación de la bomba",
+            "",
+            "10"
+          ],
+          [
+            "5.4",
+            "Ejemplo de instalación",
+            "",
+            "11"
+          ],
+          [
+            "5.5",
+            "Conexión eléctrica",
+            "",
+            "11"
+          ],
+          [
+            "5.6",
+            "Esquema de conexiones",
+            "",
+            "12"
+          ],
+          [
+            "6.",
+            "Funciones",
+            "",
+            "14"
+          ],
+          [
+            "6.1",
+            "Panel de control",
+            "",
+            "14"
+          ],
+          [
+            "6.2",
+            "Arranque/parada de la bomba",
+            "",
+            "15"
+          ],
+          [
+            "6.3",
+            "Cebado/purga de la bomba",
+            "",
+            "15"
+          ],
+          [
+            "6.4",
+            "Control de nivel",
+            "",
+            "15"
+          ],
+          [
+            "6.5",
+            "Sensor de fugas del diafragma",
+            "",
+            "15"
+          ],
+          [
+            "6.6",
+            "Luces testigo y salida de alarma",
+            "",
+            "16"
+          ],
+          [
+            "6.7",
+            "Comunicación con fieldbus",
+            "",
+            "17"
+          ],
+          [
+            "6.8",
+            "Menú",
+            "",
+            "18"
+          ],
+          [
+            "6.9",
+            "Modos de funcionamiento",
+            "",
+            "19"
+          ],
+          [
+            "6.10",
+            "Manual",
+            "",
+            "19"
+          ],
+          [
+            "6.11",
+            "Impulso",
+            "",
+            "19"
+          ],
+          [
+            "6.12",
+            "Analógico",
+            "",
+            "20"
+          ],
+          [
+            "6.13",
+            "Temporizador",
+            "",
+            "20"
+          ],
+          [
+            "6.14",
+            "Batch",
+            "",
+            "22"
+          ],
+          [
+            "6.15",
+            "Anticavitación",
+            "",
+            "22"
+          ],
+          [
+            "6.16",
+            "Limitación de la capacidad",
+            "",
+            "23"
+          ],
+          [
+            "6.17",
+            "Contadores",
+            "",
+            "23"
+          ],
+          [
+            "6.18",
+            "Rearme",
+            "",
+            "24"
+          ],
+          [
+            "6.19",
+            "Volver",
+            "",
+            "24"
+          ],
+          [
+            "6.20",
+            "Idioma",
+            "",
+            "24"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1. GARANTIA LIMITADA\nLos productos fabricados por GRUNDFOS PUMPS\nCORPORATION (Grundfos) se garantizan sola-\nmente al usuario original de estar libres de defectos\nen sus materiales y en su mano de obra por un\nperíodo de 24 meses a partir de la fecha de instala-\nción, pero no más de 30 meses a partir de la fecha\nde fabricación. La responsabilidad legal de Grundfos\nque cubre esta garantía se limitará a reparar o reem-\nplazar a opción de Grundfos, sin cargo, LAB fábrica\nGrundfos o estación de servicio autorizado, cual-\nquier producto manufacturado por Grundfos.\nGrundfos no se hará responsable de ningún costo de\nremoción, instalación, transporte o cualquier otro\ncargo que pueda surgir en relación con un reclamo\nde garantía.\nLos productos vendidos pero no manufacturados por\nGrundfos están sujetos a la garantía proporcionada\npor el fabricante de dichos productos y no por la\ngarantía de Grundfos. Grundfos no será responsable\npor el daño o desgaste de productos provocado por\ncondiciones de operación anormales, accidentes,\nabuso, maltrato, alteraciones o reparaciones no\nautorizadas, o si el producto no fue instalado de\nacuerdo con el instructivo de instalación y operación\nimpreso de Grundfos.\nPara obtener el servicio que cubre esta garantía, el\nproducto defectuoso debe regresarse al distribuidor\nde productos Grundfos a quien se compró junto con\nla prueba de compra y fecha de instalación, fecha de\nfalla y datos de instalación.\nEl distribuidor se pondrá en contacto con Grundfos o\ncon una estación de servicio autorizada para instruc-\nciones. Cualquier producto defectuoso regresado a\nGrundfos o a una estación de servicio autorizada,\ndeberá ser enviado prepagado; con documentación\nque apoye el reclamo de garantía y se debe incluir,\nsi así se pide, una Autorización de Devolución de\nMaterial.\nGRUNDFOS NO SERA RESPONSABLE DE NIN-\nGUN DAÑO, PERDIDA O GASTO SECUNDARIO\nQUE SURJA COMO CONSECUENCIA DE LA INS-\nTALACION, USO, NI DE NINGUNA OTRA CAUSA.\nNO HAY GARANTIAS EXPLICITAS O IMPLICITAS,\nINCLUYENDO LA COMERCIAL PARA UN PROPO-\nSITO PARTICULAR, QUE SE EXTIENDA MAS ALLA\nDE LAS GARANTIAS DESCRITAS O REFERIDAS\nARRIBA.\nAlgunas autoridades no permiten la exclusión o limi-\ntación de daños secundarios o resultantes y algunas\nautoridades no permiten limitar acciones en la dura-\nción de las garantías implicadas. Por lo tanto, las\nlimitaciones o exclusiones de arriba pueden no apli-\ncar. Esta garantía confiere derechos legales especí-\nficos, usted puede contar otros derechos que varían\nde un lugar a otro.\n2. Instrucciones de seguridad\nEstas instrucciones de instalación y funcionamiento\ncontienen instrucciones generales que deben\nseguirse durante la instalación, puesta en marcha y\nmantenimiento de la bomba. Por lo tanto, el instala-\ndor y el operario deben leerlas antes de realizar la\ninstalación y puesta en marcha. Asimismo, deben\nestar disponibles en el lugar de la instalación en todo\nmomento.\nEspañol (MX)\n2.1 Símbolos utilizados en este documento\n!\nAviso\nSi estas instrucciones no son observadas\npuede tener como resultado daños perso-\nnales.\nPrecaución\nSi estas instrucciones de seguridad no\nson observadas pueden producirse ave-\nrías o daños en el equipo.\nNota\nNotas o instrucciones que facilitan el tra-\nbajo y garantizan un funcionamiento\nseguro.\n2.2 Cualificación y formación del personal\nEl personal responsable de la instalación, funciona-\nmiento y mantenimiento debe estar debidamente\ncualificado para estas tareas. El operario debe defi-\nnir de forma precisa las áreas de responsabilidad,\nlos niveles de autoridad y los procedimientos de\nsupervisión del personal. Si es necesario, debe for-\nmarse debidamente al personal.\nRiesgos de no respetar las instrucciones de\nseguridad\nLa inobservancia de las instrucciones de seguridad\npuede tener consecuencias peligrosas para el per-\nsonal, el medio ambiente y la bomba y puede causar\nla pérdida del derecho a cualquier reclamación por\ndaños y perjuicios.\nTodo ello puede provocar los siguientes peligros:\n· Lesiones personales por exposición a las influen-\ncias eléctricas, mecánicas y químicas.\n· Daños al medio ambiente y lesiones personales\npor fugas de sustancias nocivas.\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "2.3 Instrucciones de seguridad para el\noperario/usuario\nDeben seguirse tanto las instrucciones de seguridad\ndescritas en estas instrucciones, como las normati-\nvas nacionales sobre protección de la salud, la pro-\ntección del medio ambiente y la prevención de acci-\ndentes y cualquier otra regulación sobre el trabajo,\nfuncionamiento y seguridad del operario.\nEspañol (MX)\nDebe tenerse en cuenta la información adjunta a la\nbomba.\nLos escapes de sustancias peligrosas, deben elimi-\nnarse de una manera no perjudicial para el personal\no el medio ambiente.\nDeben prevenirse los daños causados por la energía\neléctrica, consulte las normativas de la compañía\nlocal de electricidad.\nAntes de llevar a cabo cualquier opera-\nción relacionada con la bomba, asegúrese\nde que esta se encuentre desconectada\ndel suministro eléctrico. ¡ El sistema no\ndebe contener presión!\nPrecaución\nNota\nLa toma de red es el separador que\nsepara la bomba de la red.\nSolo deberían utilizarse accesorios y recambios ori-\nginales. La utilización de otras piezas puede dar\nlugar a la exención de responsabilidad ante cual-\nquier consecuencia que se produzca.\n2.4 Seguridad del sistema en caso de fallo\nen la bomba dosificadora\nLa bomba dosificadora ha sido diseñada siguiendo\nlas últimas tecnologías y se fabrica y se prueba cui-\ndadosamente.\nSi a pesar de ello se produce algún fallo, la seguri-\ndad del sistema en su conjunto debe estar garanti-\nzada. Para ello, utilice las funciones de control y\nsupervisión pertinentes para ello.\nAsegúrese de que los productos químicos\nque se liberan de la bomba o las tuberías\ndañadas no causan daño a las piezas del\nsistema y a los edificios.\nPrecaución\nSe recomienda la instalación de solucio-\nnes de control de fugas y de bandejas de\ngoteo.\n4\n2.5 Dosificación de productos químicos\nAdvertencia\nAntes de conectar de nuevo el suministro\nde red, las tuberías dosificadoras deben\nconectarse de tal manera que los produc-\ntos químicos situados en el cabezal dosifi-\ncador no puedan pulverizarse y poner en\nriesgo a las personas.\n!\nEl líquido dosificado está presurizado y\npuede ser perjudicial para la salud y el\nmedio ambiente.\nAdvertencia\nCuando se trabaja con productos quími-\ncos, debe seguirse la regulación de pre-\nvención de accidentes aplicable a la insta-\nlación (por ejemplo, llevar ropa\nprotectora).\n!\n¡Tenga en consideración las hojas técni-\ncas y de seguridad del fabricante de los\nproductos químicos cuando se manejan\nproductos químicos!\nAdvertencia\nLa bomba debe equiparse con un disposi-\ntivo de protección contra fugas en la\nmembrana si el líquido bombeado es sus-\nceptible de cristalizarse.\n!\nDebe conectarse una tubería de purga,\nque se lleva a un contenedor, por ejemplo\nuna bandeja de goteo, a la válvula de\npurga.\nPrecaución\nPrecaución\n¡El líquido dosificado debe estar en\nestado líquido agregado!\n¡Tenga en cuenta los puntos de ebullición\ny congelación del fluido dosificado!\nLa resistencia de las piezas que están en\ncontacto con el líquido dosificado, como el\ncabezal dosificador, la válvula esférica,\njuntas y tuberías, depende del líquido, la\npresión de funcionamiento y la tempera-\ntura media.\nPrecaución\n¡Véase el catálogo para asegurarse de\nque las piezas en contacto con el líquido\ndosificado son resistentes a dicho líquido\nen las condiciones de funcionamiento!\nSi tiene cualquier duda respecto a la\nresistencia del material y la idoneidad de\nla bomba para un líquido específico, por\nfavor contacte con Grundfos.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "2.6 Rotura de la membrana\nSi la membrana presenta fugas o se rompe, el\nlíquido dosificado puede escapar a través de la aber-\ntura de drenaje (fig. 2), situada en el cabezal dosifi-\ncador. Consulte la sección 9.4 Rotura de la mem-\nbrana.\nAdvertencia\n¡La penetración del líquido dosificado en\nla carcasa de la bomba representa un\npeligro de explosión!\nEl funcionamiento con una membrana\ndañada puede dar lugar a la penetración\ndel líquido dosificado en la carcasa de la\nbomba.\n¡Si la membrana se rompe, separe inme-\ndiatamente la bomba del punto de sumi-\nnistro eléctrico!\n!\n¡Asegúrese de que la bomba no pueda\nvolver a ponerse en marcha por acci-\ndente!\nDesmonte el cabezal dosificador sin\nconectar la bomba al suministro eléctrico\ny asegúrese de que el líquido dosificado\nno haya penetrado en la carcasa de la\nbomba. Proceda según lo descrito en la\nsección 9.3.2 Desmontaje de la mem-\nbrana y las válvulas.\nRespete lo descrito a continuación para evitar todo\npeligro resultante de una rotura de la membrana:\n· Lleve a cabo operaciones de mantenimiento\nperiódico. Consulte la sección 9.1 Mantenimiento\nperiódico.\n. No haga funcionar la bomba con la abertura de\ndrenaje obstruida o sucia.\n- Si la abertura de drenaje está obstruida o\nsucia, proceda según lo descrito en la sección\n9.3.2 Desmontaje de la membrana y las válvu-\nlas.\n· No conecte una manguera a la abertura de dre-\nnaje. Si lo hace, no podrá determinar si existe un\nescape del líquido dosificado.\n· Tome las precauciones adecuadas para evitar\ndaños personales y materiales resultantes de un\nescape del líquido dosificado.\n. No haga funcionar la bomba con los tornillos del\ncabezal dosificador dañados o sueltos.\n2.7 Funcionamiento con los tornillos de la\ncabeza dosificadora mal apretados\nAdvertencia\nEspañol (MX)\n¡La penetración del líquido dosificado en\nla carcasa de la bomba representa un\npeligro de explosión!\nEl funcionamiento con los tornillos de la\ncabeza dosificadora mal apretados o\ndañados puede dar lugar a la penetración\ndel líquido dosificado en la carcasa de la\nbomba.\nSi la bomba ha funcionado con los torni-\nllos de la cabeza dosificadora mal apreta-\ndos o dañados, desconéctela inmediata-\nmente del suministro eléctrico.\n!\n¡Asegúrese de que la bomba no pueda\nvolver a ponerse en marcha por acci-\ndente!\nDesmonte el cabezal dosificador sin\nconectar la bomba al suministro eléctrico\ny asegúrese de que el líquido dosificado\nno haya penetrado en la carcasa de la\nbomba. Proceda según lo descrito en la\nsección 9.3.2 Desmontaje de la mem-\nbrana y las válvulas.\n5",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "3. Descripción general\nLa bomba dosificadora Grundfos DME es una\nbomba autocebante de diafragma.\nEspañol (MX)\nLa bomba consta de:\n· una caja con equipo de accionamiento y compo-\nnentes electrónicos,\n•\nun cabezal de dosificación con placa posterior,\ndiafragma, válvulas, conexiones y válvula de\npurga,\n•\nun panel de control con pantalla y botones.\nEl panel de control está montado en la parte fron-\ntal o en el lateral de la caja.\nEl motor está controlado para que la dosificación sea\nlo más uniforme y constante posible, independiente-\nmente de la gama de capacidad de la bomba.\nEsto se realiza como sigue:\nLa velocidad de la carrera de aspiración se mantiene\nconstante y la carrera relativamente corta, indepen-\ndientemente de la capacidad. Contrariamente a las\nbombas convencionales, que generan la carrera de\ndosificación como un impulso breve, la duración de\nla carrera de dosificación será lo más larga posible.\nDe este modo se garantiza una dosificación uni-\nforme sin picos. La bomba está siempre dosificando\ncon longitud de carrera máxima, por lo que garantiza\nla misma gran exactitud y capacidad de aspiración,\nindependientemente de la capacidad, que es infinita-\nmente variable de 1:800.\nLa bomba incorpora una pantalla LCD y un panel de\ncontrol de fácil utilización, que da acceso a las fun-\nciones de la bomba.\n3.1 Aplicaciones\nLa bomba es apta para el bombeo de líquidos no\nabrasivos, no inflamables y no combustibles de con-\nformidad estricta con la información que contienen\nestas instrucciones de instalación y funcionamiento.\nÁreas de aplicación (entre otras)\n· Tratamiento de agua potable\n· Tratamiento de aguas residuales\n· Tratamiento de agua de refrigeración\n•\nSistemas de lavado\n· Tratamiento de agua de procesos\n· Industria química.\n6\n3.2 Métodos de funcionamiento\ninadecuados\nLa seguridad de funcionamiento de la bomba está\ngarantizada solo si se utiliza de acuerdo con la sec-\nción 3.1 Aplicaciones.\nAdvertencia\nOtras aplicaciones o el uso de las bombas\nen condiciones ambientales y de funcio-\nnamiento no autorizadas se consideran\nactos inadecuados y no están permitidas.\nGrundfos no se hace responsable de los\ndaños causados por el uso incorrecto.\n!\nAdvertencia\nLa bomba debe equiparse con un disposi-\ntivo de protección contra fugas en la\nmembrana si el líquido bombeado es sus-\nceptible de cristalizarse.\n!\nAdvertencia\n¡La bomba NO está certificada para fun-\ncionamiento en áreas potencialmente\nexplosivas!\nAdvertencia\n¡Para instalaciones al aire libre se\nrequiere un filtro solar!\n!",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "3.3 Identificación\n3.3.1 Nomenclatura\n(No puede utilizarse para la configuración de la bomba.)\nCódigo Ejemplo\nDME 60 - 10 AR - PP/ E/ C - F - 2 1 A3/A3 B\nGama de bomba\nCapacidad máxima [l/h]:\n60\n150\n375\n940\nPresión máxima [bar]:\n4\n10\nVersión de control:\nAR\nEstándar\nAP\nEstándar + Profibus\nMaterial del cabezal de dosificación:\nPP\nPolipropileno\nPV\nPVDF\nSS\n316 acero inoxidable\nMaterial de juntas:\nE\nEPDM\nT\nPTFE\nV\nFKM\nMaterial de la bola de válvula:\nC\nCerámica\nG\nVidrio\nSS\n316 acero inoxidable\nT\nPTFE (sólamente 375 y 940)\nY\nHastelloy\nPanel de control:\nF\nMontaje frontal\nS\nMontaje lateral\nTensión:\n2\n1 x 120 V, 60 Hz\n3\n1 x 100-240 V, 50/60 Hz\nVálvulas:\n1\nVálvula estándar\n2\nVálvula de muelle\nConexión, aspiración/descarga:\nA3\n3/4\" FNPT\nA4\n1 1/4\" FNPT\nClavija:\nB\nEEUU, CAN\nEspañol (MX)\n7",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Ejemplo",
+            "DME 60 -",
+            "10",
+            "AR -",
+            "PP/ E/ C -",
+            "F -",
+            "2",
+            "1",
+            "A3/A3",
+            "B"
+          ],
+          [
+            "",
+            "Gama de bomba",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Capacidad máxima [l/h]:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "60",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "150",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "375",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "940",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Presión máxima [bar]:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "4",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "10",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Versión de control:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "AR",
+            "Estándar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "AP",
+            "Estándar + Profibus",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Material del cabezal de dosificación:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PP",
+            "Polipropileno",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PV",
+            "PVDF",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "SS",
+            "316 acero inoxidable",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Material de juntas:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "E",
+            "EPDM",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "T",
+            "PTFE",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "V",
+            "FKM",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Material de la bola de válvula:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "C",
+            "Cerámica",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "G",
+            "Vidrio",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "SS",
+            "316 acero inoxidable",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "T",
+            "PTFE (sólamente 375 y 940)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Y",
+            "Hastelloy",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Panel de control:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "F",
+            "Montaje frontal",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "S",
+            "Montaje lateral",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Tensión:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2",
+            "1 x 120 V, 60 Hz",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3",
+            "1 x 100-240 V, 50/60 Hz",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Válvulas:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "Válvula estándar",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2",
+            "Válvula de muelle",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Conexión, aspiración/descarga:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "A3",
+            "3/4\" FNPT",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "A4",
+            "1 1/4\" FNPT",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Clavija:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "B",
+            "EEUU, CAN",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "3.3.2 Placa de características\n1\n2\n3\n4 5\n6\n7\nEspañol (MX)\nType\nU\nModel\nV~ f\nHz Imax\nA\nLASSIFIE\nUS\nWATER QUALITY\nC\nUS\nCE\nDosing\nNSF/ANSI 61\nMH26400\nMax. 23℃\nNaOH or NaOCI\nPmax\nW\nIP'65\nQ\nl/h\ngph\nH/\nBar\np.s.i.\n96653890\nMade in France\nTM07 6283 1220\nGRUNDFOS X\nGWT, 76327 Pfinztal, Germany\n10\n9\n8\nFig. 1\nPlaca de características\nPos. Descripción\nPos. Descripción\n1\nDenominación de tipo\n6\nClase de protección\n2\nTensión\n7\nMarcas de homologación\n3\nFrecuencia\n8\nPaís de origen\n4\nConsumo de potencia\n9\nPresión máx. de funcionamiento\n5\nCaudal máx. de dosificación\n10\nModelo\n4. Datos técnicos\n4.1 Datos mecánicos\nDME 60\nDME 150\nDME 375\nDME 940\nCapacidad máxima*1 [gph (l/h)]\n15.8 (60)\n39.6 (150) 99.2 (376)\n248.0 (940)\nCapacidad máxima con anticavitación 75 %*1 [gph (l/h)]\n11.9 (45)\n29.6 (112)\n74.2 (282) 186.0 (705)\nCapacidad máxima con anticavitación 50 %*1 [gph (l/h)]\n8.8 (33.4)\n22.0 (83.5)\n55.4 (210)\n138.5 (525)\nCapacidad máxima con anticavitación 25 %*1\n[gph (l/h)]\n4.2 (16.1)\n10.7 (40.4)\n26.6 (101)\n66.5 (252)\nPresión máxima [psi (bar)]\n145 (10)\n58 (4)\n145 (10)\n58 (4)\nCarreras máximas por minuto [carreras/min.]\n160\nAltura máxima de aspiración durante el funcionamiento\n[ft (m)]\n19.6 (6)\nAltura máxima de aspiración al cebar con válvulas\nmojadas [ft (m)]\n4.9 (1.5)\nViscosidad máxima con válvulas de muelle*2 [mPa s]\n3000 [mPa s] al 50 % de la capacidad\nViscosidad máxima sin válvulas de muelle*2 [mPa s]\n200\nDiámetro del diafragma [mm]\n79\n106\n124\n173\nTemperatura del líquido [°F (C)]\n32 a 122 (0 a 50)\nTemperatura ambiente [°F (C)]\n32 a 113 (0 a 45)\nExactitud de repetibilidad\n+ 1 %\nNivel de ruido [dB(A)]\n< 70\n*1\nIndependientemente de la contrapresión\n*2\nAltura máxima de aspiración 1 metro\n8",
+      "tablas": [
+        [
+          [
+            "Pmax",
+            "",
+            "W",
+            "IP'65"
+          ],
+          [
+            "Q",
+            "l/h",
+            "gph"
+          ],
+          [
+            "H/",
+            "Bar",
+            "p.s.i."
+          ]
+        ],
+        [
+          [
+            "Pos.",
+            "Descripción",
+            "Pos.",
+            "Descripción"
+          ],
+          [
+            "1",
+            "Denominación de tipo",
+            "6",
+            "Clase de protección"
+          ],
+          [
+            "2",
+            "Tensión",
+            "7",
+            "Marcas de homologación"
+          ],
+          [
+            "3",
+            "Frecuencia",
+            "8",
+            "País de origen"
+          ],
+          [
+            "4",
+            "Consumo de potencia",
+            "9",
+            "Presión máx. de funcionamiento"
+          ],
+          [
+            "5",
+            "Caudal máx. de dosificación",
+            "10",
+            "Modelo"
+          ]
+        ],
+        [
+          [
+            "",
+            "DME 60",
+            "DME 150",
+            "DME 375",
+            "DME 940"
+          ],
+          [
+            "Capacidad máxima*1 [gph (l/h)]",
+            "15.8 (60)",
+            "39.6 (150)",
+            "99.2 (376)",
+            "248.0 (940)"
+          ],
+          [
+            "Capacidad máxima con anticavitación 75 %*1 [gph (l/h)]",
+            "11.9 (45)",
+            "29.6 (112)",
+            "74.2 (282)",
+            "186.0 (705)"
+          ],
+          [
+            "Capacidad máxima con anticavitación 50 %*1 [gph (l/h)]",
+            "8.8 (33.4)",
+            "22.0 (83.5)",
+            "55.4 (210)",
+            "138.5 (525)"
+          ],
+          [
+            "Capacidad máxima con anticavitación 25 %*1 [gph (l/h)]",
+            "4.2 (16.1)",
+            "10.7 (40.4)",
+            "26.6 (101)",
+            "66.5 (252)"
+          ],
+          [
+            "Presión máxima [psi (bar)]",
+            "145 (10)",
+            "58 (4)",
+            "145 (10)",
+            "58 (4)"
+          ],
+          [
+            "Carreras máximas por minuto [carreras/min.]",
+            "",
+            "160",
+            ""
+          ],
+          [
+            "Altura máxima de aspiración durante el funcionamiento [ft (m)]",
+            "",
+            "19.6 (6)",
+            ""
+          ],
+          [
+            "Altura máxima de aspiración al cebar con válvulas mojadas [ft (m)]",
+            "",
+            "4.9 (1.5)",
+            ""
+          ],
+          [
+            "Viscosidad máxima con válvulas de muelle*2 [mPa s]",
+            "3000",
+            "[mPa s] al 50",
+            "% de la",
+            "capacidad"
+          ],
+          [
+            "Viscosidad máxima sin válvulas de muelle*2 [mPa s]",
+            "",
+            "200",
+            ""
+          ],
+          [
+            "Diámetro del diafragma [mm]",
+            "79",
+            "106",
+            "124",
+            "173"
+          ],
+          [
+            "Temperatura del líquido [°F (C)]",
+            "",
+            "32 a 122",
+            "(0 a 50)",
+            ""
+          ],
+          [
+            "Temperatura ambiente [°F (C)]",
+            "",
+            "32 a 113",
+            "(0 a 45)",
+            ""
+          ],
+          [
+            "Exactitud de repetibilidad",
+            "",
+            "+",
+            "1 %",
+            ""
+          ],
+          [
+            "Nivel de ruido [dB(A)]",
+            "",
+            "< 70",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Español (MX)\n4.2 Datos eléctricos\nDME 60\nDME 150 DME 375 DME 940\nSuministro eléctrico [VAC]\n1 x 100-240 V\nConsumo máximo de corriente [A]\na 100 V\n1.25\n2.4\na 230 V\n0.67\n1.0\nConsumo máx. de potencia P1 [W]\n67.1\n240\nFrecuencia [Hz]\n50/60\nGrado de protección\nIP 65\nCategoría de sobretensión\n=\nGrado de contaminación\n2\nClase de aislamiento\nB\nCable eléctrico\n1.5 m H05RN-F con clavija\n4.3 Datos de entrada/salida\nLa bomba ofrece varias posibilidades de entrada y salida, dependiendo del tipo de control.\nEntrada de señal\nTensión en la entrada del sensor de nivel [VDC]\n5\nTensión en la entrada del impulso [VDC]\n5\nPeríodo mínimo de repetición de impulso [ms]\n3.3\nImpedancia en entrada analógica 0/4-20 mA [Q]\nLa entrada analógica requiere una señal que está aislada del marco.\nMin. resistencia al marco: 50 kQ\n250\nResistencia máxima de bucle en circuito de señal de impulso [Q]\n250\nResistencia máxima de bucle en circuito de señal de nivel [Q]\n250\nSalida de señal\nCarga máxima de la salida del relé de alarma, a carga ohmica [A]\n2\nTensión máxima, salida del relé de alarma [V]\n42\n4.4 Homologaciones\nHomologaciones\nCE, CSA-US, EAC, NSF61*\n*\nLa homologación NSF61 solo es válida para las bombas estándar DME 375 y DME 940 (sin válvulas accio-\nnadas por resorte).\nLa certificación se basa en un caudal de dosificación que produzca una concentración máxima de\nhidróxido sódico (NaOH) de 200 mg/l en agua potable.\nLa certificación se basa en un caudal de dosificación que produzca una concentración máxima de hipoclo-\nrito sódico (NaOCl) de 84 mg/l en agua potable.\nLa certificación de este producto se ha llevado a cabo de acuerdo con los requisitos de salubridad estable-\ncidos por la norma NSF/ANSI 61, que determinan la aceptabilidad de los posibles extractantes de la\nbomba dosificadora de sustancias químicas. No se evaluaron ni la resistencia ni la eficacia de la sustancia\nquímica dosificada. Las sustancias químicas especificadas no han sido certificadas por UL conforme a los\nrequisitos de la norma NSF/ANSI 60; por lo tanto, el funcionamiento, el mantenimiento y la homogeneidad\nde los materiales de partida pueden afectar al rendimiento de la bomba dosificadora.\n4.5 Dimensiones\nVer dimensiones al final de estas instrucciones.\nTodas las dimensiones están en inches (mm).\n9",
+      "tablas": [
+        [
+          [
+            "",
+            "",
+            "DME 60",
+            "DME 150",
+            "DME 375",
+            "DME 940"
+          ],
+          [
+            "Suministro eléctrico [VAC]",
+            "",
+            "",
+            "",
+            "1 x 100-240 V",
+            ""
+          ],
+          [
+            "Consumo máximo de corriente [A]",
+            "a 100 V",
+            "1.25 2.4",
+            ""
+          ],
+          [
+            "a 230 V",
+            "0.67 1.0",
+            ""
+          ],
+          [
+            "Consumo máx. de potencia P1 [W]",
+            "",
+            "67.1",
+            "",
+            "240",
+            ""
+          ],
+          [
+            "Frecuencia [Hz]",
+            "",
+            "",
+            "",
+            "",
+            "50/60",
+            ""
+          ],
+          [
+            "Grado de protección",
+            "",
+            "",
+            "",
+            "IP 65",
+            ""
+          ],
+          [
+            "Categoría de sobretensión",
+            "",
+            "",
+            "=",
+            ""
+          ],
+          [
+            "Grado de contaminación",
+            "",
+            "",
+            "2",
+            ""
+          ],
+          [
+            "Clase de aislamiento",
+            "",
+            "",
+            "B",
+            ""
+          ],
+          [
+            "Cable eléctrico",
+            "",
+            "",
+            "",
+            "1.5 m H05RN-F con clavija",
+            ""
+          ]
+        ],
+        [
+          [
+            "Entrada de señal"
+          ],
+          [
+            "Tensión en la entrada del sensor de nivel [VDC]",
+            "5"
+          ],
+          [
+            "Tensión en la entrada del impulso [VDC]",
+            "5"
+          ],
+          [
+            "Período mínimo de repetición de impulso [ms]",
+            "3.3"
+          ],
+          [
+            "Impedancia en entrada analógica 0/4-20 mA [Q] La entrada analógica requiere una señal que está aislada del marco. Min. resistencia al marco: 50 kQ",
+            "250"
+          ],
+          [
+            "Resistencia máxima de bucle en circuito de señal de impulso [Q]",
+            "250"
+          ],
+          [
+            "Resistencia máxima de bucle en circuito de señal de nivel [Q]",
+            "250"
+          ],
+          [
+            "Salida de señal",
+            ""
+          ],
+          [
+            "Carga máxima de la salida del relé de alarma, a carga ohmica [A]",
+            "2"
+          ],
+          [
+            "Tensión máxima, salida del relé de alarma [V]\n:selected:",
+            "42"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Español (MX)\n5. Instalación\n5.1 Instrucciones de seguridad\n!\n· El líquido tiene presión y puede ser peligroso.\n· Al trabajar con sustancias químicas hay que\ncumplir con las normativas locales de seguridad\n(p.ej. llevar ropas protectoras).\n· Antes de empezar a trabajar en el sistema y la\nbomba dosificadora, desconectar el suministro\neléctrico a la bomba, y comprobar que no puede\nconectarse accidentalmente. Antes de volver a\nconectar el suministro eléctrico, comprobar que\nla manguera de dosificación está colocada de\nmodo que cualquier sustancia química que haya\nquedado en el cabezal de dosificación no es\nexpulsada, siendo peligroso para las personas.\n· Si se utiliza la válvula de purga en el cabezal de\ndosificación, ésta debe conectarse a una man-\nguera que vuelva al tanque.\n· Al cambiar la sustancia química, comprobar que\nlos materiales del sistema y de la bomba dosifi-\ncadora son resistentes a la nueva sustancia quí-\nmica. Si hay riesgo de reacción química entre los\ndos tipos de sustancias químicas, limpiar la\nbomba y el sistema a fondo antes de añadir la\nnueva sustancia química.\nProceder como sigue:\nColocar la manguera de aspiración en el agua y\npulsar el botón (100%) hasta que no queden resíduos\nquímicos.\nNota: Al pulsar los botones (100%)\ny +> simultánea-\nmente, la bomba puede ajustarse para funcionar\ndurante unos segundos a capacidad máxima.\nLos segundos restantes aparecerán en la panta-\nlla. El valor máximo es de 300 segundos.\n5.2 Entorno de la instalación\n· Debe evitarse la exposición a la luz directa del\nsol. Esto se refiere especialmente a bombas con\ncabezales de dosificación de plástico, ya que\neste material puede ser dañado por el sol.\n. Si se instala la bomba en el exterior, se requiere\nuna cubierta o una protección similar para prote-\nger la bomba contra la lluvia y condiciones\nmeteorológicas similares.\n10\n5.3 Instalación de la bomba\n· Ver también el ejemplo de instalación en\nsección 5.4 Ejemplo de instalación.\nEl cabezal de dosificación puede contener\nagua de la prueba en fábrica. Si se va a\ndosificar un líquido que no debe entrar en\ncontacto con el agua, se recomienda dejar\nque la bomba funcione con otro líquido\npara eliminar el agua del cabezal de dosi-\nficación antes de la instalación.\nPrecaución\nApriete los tornillos del cabezal dosifica-\ndor en orden cruzado a torque\n4.06 ft·lb (+ 0.37/- 0 ft-lb)\nPrecaución\n(5.5 N·m (+ 0.5/- 0 N·m)) empleando una\nllave dinamométrica antes de la puesta en\nservicio y, de nuevo, tras 2-5 horas de\nfuncionamiento.\n· Instalar siempre la bomba en el soporte con las\nconexiones de aspiración y descarga en posición\nvertical.\n•\nUtilizar siempre herramientas adecuadas para el\nmontaje de piezas de plástico. Nunca hacer\nfuerza innecesaria.\n· Comprobar que el sistema y la bomba dosifica-\ndora están diseñados de modo que ni el equipo\ndel sistema ni los edificios se dañen en caso de\nfugas de la bomba o rotura de las mangueras/\ntuberías. Se recomienda instalar manguitos y\nbandejas para las pérdidas o fugas.\n•\nComprobar que el orificio de purga del cabezal\nde dosificación esté hacia abajo, ver fig. 2.\nNo conecte una manguera a la abertura\nde drenaje.\nPrecaución\nTM02 7066 0315\nOrificio de purga\nFig. 2",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "5.4 Ejemplo de instalación\nEl dibujo de la fig. 3 muestra un ejemplo de instalación.\nLa bomba DME puede instalarse de muchas formas. Este dibujo muestra un ejemplo con panel de control late-\nral. El tanque es un tanque para sustancias químicas Grundfos con un control de nivel Grundfos.\nFig. 3\n5.5 Conexión eléctrica\n· La conexión eléctrica de la bomba debe reali-\nzarla personal cualificado de acuerdo con las\nnormativas locales.\n· Para los datos eléctricos de la bomba, ver\nsección 4.2 Datos eléctricos.\n· No colocar cables de señales, si los hay, junto\ncon cables de potencia.\n. No conecte bombas DME 375 o 940 a un toma-\ncorriente GFCI o interruptor GFCI.\nEspañol (MX)\nTM02 7065 0604\nAdvertencia\n¡Peligro de muerte debido al no-disparo\ndel dispositivo de corriente residual (RCD,\npor sus siglas en inglés)!\nSi la bomba está conectada a una instala-\nción eléctrica dotada de un dispositivo de\ncorriente residual (RCD) como medio de\nprotección complementario, el RCD\ndeberá dispararse cuando se produzcan\nderivaciones a tierra con contenido de\ncorriente directa (corriente directa pul-\nsante) y derivaciones a tierra de corriente\ndirecta continua. Esto significa que debe\nutilizarse un RCD de tipo B, sensible a la\ncorriente universal.\n4\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "5.6 Esquema de conexiones\nEspañol (MX)\nGRUNDFOS. X\n2\n2\n2\n3\n5\n1\n3\n15\n1\n13\n1\n4\n4\n4\n1\n12\n3\n1\n3\n+ 1\n5\n2\n4\n3\n2\n1\n1\n3\n+5\n2\n4\n1\n2\n3\nCable 1,\nver la siguiente\ntabla\nCable 2,\nver la siguiente\ntabla\nCable 3,\nver la siguiente\ntabla\nCable 4,\nver la siguiente\ntabla\nTM02 7069 0307\nFig. 4\nCable 1: Entrada para señal analógica, señal de impulso y fuga del diafragma\nNúmero / color\n1 / marrón\n2 / blanco\n3 / azul\n4 / negro\n5 / gris\nFunción\nAnalógico\nEntrada\n(-) 4-20 mA\nEntrada\n(+) 4-20 mA\nImpulso\nDe libre\npotencial\nDe libre\npotencial\nImpulso\n5 V\nTierra\nNúmero / color\n2 / negro\n3 / marrón\n4 / azul\nFuga de membrana*\n5 V\nPNP\nTierra\n* Sensor de fuga de membrana Grundfos, código 96534443.\nCable 2: Salida de rele de alarma\nNúmero / color\n1 / marrón\n2 / blanco\n3 / azul\nFunción\nRelé de alarma\nComún\nNormalmente abierto\nNormalmente cerrado\n12",
+      "tablas": [
+        [
+          [
+            "Número / color",
+            "1 / marrón",
+            "2 / blanco",
+            "3 / azul",
+            "4 / negro",
+            "5 / gris"
+          ],
+          [
+            "Función",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Analógico",
+            "",
+            "",
+            "",
+            "Entrada (-) 4-20 mA",
+            "Entrada (+) 4-20 mA"
+          ],
+          [
+            "Impulso",
+            "De libre potencial",
+            "",
+            "De libre potencial",
+            "",
+            ""
+          ],
+          [
+            "Impulso",
+            "5 V",
+            "",
+            "",
+            "Tierra",
+            ""
+          ],
+          [
+            "Número / color",
+            "",
+            "2 / negro",
+            "3 / marrón",
+            "4 / azul",
+            ""
+          ],
+          [
+            "Fuga de membrana*",
+            "",
+            "5 V",
+            "PNP",
+            "Tierra",
+            ""
+          ]
+        ],
+        [
+          [
+            "Número / color",
+            "1 / marrón",
+            "2 / blanco",
+            "3 / azul"
+          ],
+          [
+            "Función",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Relé de alarma",
+            "Común",
+            "Normalmente abierto",
+            "Normalmente cerrado"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Cable 3: Entrada para parada de dosificación y control de dosificación o salida de dosificación\nNúmero / color\n1 / marrón\nFunción\nParada dosificadora (entrada)\n5 V\nParada dosificadora (entrada)\nDe libre\npotencial\nControl de dosificación\nControl de dosificación\nSalida de dosificación\n(bomba funcionando)\n2 / blanco\n3 / azul\nDe libre\npotencial\nDe libre\npotencial\nColector\nabierto\n(NPN)*\n*\nSe puede usar un colector abierto (NPN) para un relé o una lámpara.\n1. Usando la fuente interna de suministro\n5 VDC: Intensidad máx .: 100 mA\n4 / negro\n5 / gris\nTierra\nTierra\nTierra\nEspañol (MX)\nDe libre\npotencial\n5 V\n2.\nUsando una fuente de suministro\nexterna: Máx. 24 VDC - 100 mA\n·3\n1\n5\nRelé\np\nLámpara\n: 5\n-\nTM03 7868 5006\nPotencia\nFig. 5\nCable 4: Entrada de nivel\n24 VDC\n4\n2\nLámpara\nTM03 7869 5006\nNúmero / color\n1 / marrón\n2 / blanco\n3 / azul\n4 / negro\nFunción\nTanque vacío\nDe libre potencial*\nDe libre potencial*\nTanque vacío\n5 V\nTierra\nNivel bajo\nDe libre potencial*\nDe libre potencial*\nNivel bajo\n5 V\nTierra\n*\nLa función de los juegos de contactos de libre potencial puede seleccionarse por medio del panel de con-\ntrol (NO = normalmente abierto y NC = normalmente cerrado), ver sección 6.21 Estructura de las entradas.\n13",
+      "tablas": [
+        [
+          [
+            "Número / color",
+            "1 / marrón",
+            "2 / blanco",
+            "3 / azul",
+            "4 / negro"
+          ],
+          [
+            "Función",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Tanque vacío",
+            "De libre potencial*",
+            "",
+            "De libre potencial*",
+            ""
+          ],
+          [
+            "Tanque vacío",
+            "5 V",
+            "",
+            "",
+            "Tierra"
+          ],
+          [
+            "Nivel bajo",
+            "",
+            "De libre potencial*",
+            "De libre potencial*",
+            ""
+          ],
+          [
+            "Nivel bajo",
+            "",
+            "5 V",
+            "",
+            "Tierra"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "6. Funciones\n6.1 Panel de control\nEspañol (MX)\nPantalla LCD,\nver sección 6.8\nNavegación/\najustes,\nver sección 6.8\nLuz testigo verde,\nver sección 6.6\nCapacidad máxima\n(cebado),\nver sección 6.3\nLuz testigo roja,\nver sección 6.6\n1700\n+\n100%\nGRUNDFOS. XX\n000\nConexión M12\nentrada analógica/\nimpulso/fuga,\nver secciones\n6.11, 6.12, 6.5\nCable para control\nProfibus,\nver sección 6.7\nFig. 6\n14\nConexión\nrelé de alarma,\nver sección 6.6\nMenú,\nver sección 6.8\nNavegación/\najustes,\nver sección 6.8\nBotón on/off,\nver sección 6.8\nConexión M12\nparada de\ndosificación,\nver sección 6.2\nConexión M12\ncontrol de nivel,\nver sección 6.4\nSuministro\neléctrico\nTM02 7068 2503",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "6.2 Arranque/parada de la bomba\nPuede arrancarse/pararse la bomba de dos formas\ndiferentes:\n· Localmente en el panel de control de la bomba.\n· Mediante un interruptor on/off externo.\nVer esquema de conexiones en sección\n5.6 Esquema de conexiones.\nEspañol (MX)\n6.3 Cebado/purga de la bomba\nEl panel de control de la bomba incorpora un\nbotón (100%. Pulsar este botón si se requiere la capaci-\ndad máxima de la bomba durante un breve periodo\nde tiempo, p.ej. durante el arranque. Al soltar el\nbotón, la bomba vuelve automáticamente al modo de\nfuncionamiento anterior.\nDurante el cebado/purga se recomienda dejar que la\nbomba funcione sin contrapresión o abrir la válvula\nde purga.\nNota: Al pulsar los botones (100%)\ny |+\nsimultánea-\nmente, la bomba puede ajustarse para funcionar\ndurante unos segundos a capacidad máxima.\nLos segundos restantes aparecerán en la pantalla.\nEl valor máximo es de 300 segundos.\n6.4 Control de nivel\nPuede montarse en la bomba un control de nivel\npara controlar el nivel de la sustancia química en el\ntanque.\nLa bomba puede reaccionar a dos señales de nivel.\nReaccionará de forma distinta dependiendo de la\ninfluencia en los sensores de nivel individuales.\nSensores\nde nivel\nReacción de la bomba\nSensor superior\nactivado\n(contacto cerrado)\n· Luz testigo roja encen-\ndida.\nBomba funcionando.\n•\nRelé de alarma activado.\nSensor inferior acti-\nvado\n(contacto cerrado)\n•\nLuz testigo roja encen-\ndida.\n•\nBomba parada.\n•\nRelé de alarma activado.\nRespecto a la conexión del control de nivel y salida\nde alarma, ver sección 5.6 Esquema de conexiones.\n6.5 Sensor de fugas del diafragma\nPuede montarse a la bomba un sensor de fugas del\ndiafragma que detecta fugas del mismo.\nEl sensor debe conectarse al orificio de purga del\ncabezal de dosificación.\nSi el diafragma tiene fugas, la señal del sensor\ngenera una alarma y se activará el relé de alarma.\nVer también sección 6.6 Luces testigo y salida de\nalarma.\nRespecto a la conexión del sensor de fugas del dia-\nfragma, ver sección 5.6 Esquema de conexiones.\n15",
+      "tablas": [
+        [
+          [
+            "Sensores de nivel",
+            "Reacción de la bomba"
+          ],
+          [
+            "Sensor superior activado (contacto cerrado)",
+            "· Luz testigo roja encen- dida."
+          ],
+          [
+            "Bomba funcionando. • Relé de alarma activado."
+          ],
+          [
+            "Sensor inferior acti- vado (contacto cerrado)",
+            "• Luz testigo roja encen- dida."
+          ],
+          [
+            "• Bomba parada. • Relé de alarma activado."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "6.6 Luces testigo y salida de alarma\nSe utilizan las luces testigo verde y roja en la bomba\npara indicación de funcionamiento y fallo.\nEn la variante de control \"AR\", la bomba puede acti-\nvar una señal de alarma externa mediante el relé de\nalarma incorporado que sólo debe conectarse a una\nconexión de seguridad de voltaje extra-bajo (SELV).\nEspañol (MX)\nConectar el relé de alarma sólo para volta-\njes que cumplan con los requisitos SELV\nde EN/IEC 60 335-1.\nNota\nLa señal de alarma se activa mediante un contacto\ninterno de libre potencial.\nLas funciones de las luces testigo y del relé de\nalarma incorporado están indicadas en la siguiente\nCondición\nLuz testigo verde\nLuz testigo roja\nPantalla\nSalida de alarma\nBomba funcionando\nEncendida\nApagada\nIndicación\nnormal\n1 2 3\nNC NO C\nAjustada a parada\nIntermitente\nApagada\nIndicación\nnormal\n1 2 3\nNC NO C\nFallo de la bomba\nApagada\nEncendida\nEEPROM\n7\n1 2\nNC NO C\nFallo del suministro\neléctrico\nApagada\nApagada\nOFF\n1 2 3\nNC NO C\nBomba funcio-\nnando, nivel bajo de\nsustancia quí-\nmica *1\nEncendida\nEncendida\nBAJO\n1 2 3\nNC NO C\nTanque vacío*\nApagada\nEncendida\nVACIO\nIT\n1 2 3\nNC NO C\nSeñal analógica\n< 2 mA\nApagada\nEncendida\nNO mA\n1\n1 2 3\nNC NO C\nLa bomba está fun-\ncionando, pero la\ncantidad dosificada\nes demasiado\npequeña de\nacuerdo con la\nseñal del monitor\nde dosificación *2\nEncendida\nEncendida\nSIN CAUD.\nT\n1 2 3\nNC NO C\nSobrecalentamiento\nApagada\nEncendida\nTEMP. MAX.\n1 2 3\nNC NO C\nFallo de comunica-\nción interna\nApagada\nEncendida\nCOM. INT.\n7\n1 2 3\nNC NO C\nFallo interno Hall*3\nApagada\nEncendida\nHALL\n1 2 3\nNC NO C\nFugas del\ndiafragma*4\nApagada\nEncendida\nFUGAS\n1 2 3\nNC NO C\n16",
+      "tablas": [
+        [
+          [
+            "Condición",
+            "Luz testigo verde",
+            "Luz testigo roja",
+            "Pantalla",
+            "Salida de alarma"
+          ],
+          [
+            "Bomba funcionando",
+            "Encendida",
+            "Apagada",
+            "Indicación normal",
+            "1 2 3 NC NO C\n:unselected:"
+          ],
+          [
+            "Ajustada a parada",
+            "Intermitente",
+            "Apagada",
+            "Indicación normal",
+            "1 2 3 NC NO C\n:unselected:"
+          ],
+          [
+            "Fallo de la bomba",
+            "Apagada",
+            "Encendida",
+            "EEPROM",
+            "7 1 2 NC NO C\n:selected:"
+          ],
+          [
+            "Fallo del suministro eléctrico",
+            "Apagada",
+            "Apagada",
+            "OFF",
+            "1 2 3 NC NO C"
+          ],
+          [
+            "Bomba funcio- nando, nivel bajo de sustancia quí- mica *1",
+            "Encendida",
+            "Encendida",
+            "BAJO",
+            "1 2 3 NC NO C\n:selected:"
+          ],
+          [
+            "Tanque vacío*",
+            "Apagada",
+            "Encendida",
+            "VACIO",
+            "IT 1 2 3 NC NO C"
+          ],
+          [
+            "Señal analógica < 2 mA",
+            "Apagada",
+            "Encendida",
+            "NO mA",
+            "1 1 2 3 NC NO C\n:selected:"
+          ],
+          [
+            "La bomba está fun- cionando, pero la cantidad dosificada es demasiado pequeña de acuerdo con la señal del monitor de dosificación *2",
+            "Encendida",
+            "Encendida",
+            "SIN CAUD.",
+            "T 1 2 3 NC NO C\n:selected:"
+          ],
+          [
+            "Sobrecalentamiento",
+            "Apagada",
+            "Encendida",
+            "TEMP. MAX.",
+            "1 2 3 NC NO C"
+          ],
+          [
+            "Fallo de comunica- ción interna",
+            "Apagada",
+            "Encendida",
+            "COM. INT.",
+            "7 1 2 3 NC NO C"
+          ],
+          [
+            "Fallo interno Hall*3",
+            "Apagada",
+            "Encendida",
+            "HALL",
+            "1 2 3 NC NO C"
+          ],
+          [
+            "Fugas del diafragma*4",
+            "Apagada",
+            "Encendida",
+            "FUGAS",
+            "1 2 3 NC NO C"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Español (MX)\nCondición\nLuz testigo verde\nLuz testigo roja\nPantalla\nSalida de alarma\nPresión máx.\nexcedida *4\nApagada*5\nEncendida\nSOBRECAR.\n1 2 3\nNC NO C\nMás impulsos que\ncapacidad\nEncendida\nEncendida\nCAUD. MÁX.\n1 2 3\nNC NO C\nNo se detecta giro\ndel motor *3\nApagada\nEncendida\nORIGO\n1 2\n3\nNC NO C\n*1\n1 Requiere conexión a sensores de nivel. Ver sección 6.22 Tanque vacío (alarma).\n*2 Requiere activación de la función de control de dosificación y conexión a un controlador de dosificación.\n*3 Contactar con un servicio técnico Grundfos.\n*4\nSe pueden rearmar las alarmas\ncuando los fallos estén corregidos.\n*5\nLa bomba intentará rearrancar 10 veces antes de entrar en el modo OFF permanente.\n6.7 Comunicación con fieldbus\nLa bomba puede ser configurada para aplicaciones\ncon fieldbus (Profibus). Además de las instrucciones\nde instalación y funcionamiento usuales, las bombas\nProfibus se suministran con unas instrucciones de\ninstalación y funcionamiento especiales.\n17",
+      "tablas": [
+        [
+          [
+            "Condición",
+            "Luz testigo verde",
+            "Luz testigo roja",
+            "Pantalla",
+            "Salida de alarma"
+          ],
+          [
+            "Presión máx. excedida *4",
+            "Apagada*5",
+            "Encendida",
+            "SOBRECAR.",
+            "1 2 3 NC NO C"
+          ],
+          [
+            "Más impulsos que capacidad",
+            "Encendida",
+            "Encendida",
+            "CAUD. MÁX.",
+            "1 2 3 NC NO C"
+          ],
+          [
+            "No se detecta giro del motor *3",
+            "Apagada",
+            "Encendida",
+            "ORIGO",
+            "1 2 3 NC NO C"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "6.8 Menú\nLa bomba incorpora un menú de fácil utilización que\nse activa al pulsar el botón . Durante la puesta en\nmarcha, todos los textos aparecerán en inglés.\nPara elegir idioma, ver sección 6.20 Idioma.\nEspañol (MX)\nIDIOMA\nTodas las líneas del menú están descritas en las\nsiguientes secciones. Cuando \\ aparece en una\nlínea del menú, esto significa que esta línea está\nactivada. Seleccionando \"VOLVER\" en cualquier\nsitio en la estructura del menú, se vuelve a la panta-\nlla de funcionamiento sin cambios.\nMANUAL\n+\nVOLVER\nE\nVOLVER\nVOLVER\nCRP. MAX.\nENTRADA\nALARMA\nNIVEL\nE\nX\nANALOGIC.\nE\nRJUSTFAR\nCONFIG.\nITE\nBLOD. BOT.\nIMPULSO\nANALOG IC.\nTEMPORIZ.\nBATCH\nLO\nCONTADOR\nE\nFUGRS\nPARATEXT.\nANTI-CRV.\nCALIBR.\n* Se aplica sólo a versiones con Profibus\nFig. 7\nMANUAL\nV\nIMPUL SO\nOLLI\nANALOGIE.\nTEMPORIZ.\nBRICH\nLO\nANTI-CAV.\nCONTADOR\n18\nCONTROL\nVer sección 6.10\nVer sección 6.11\nVer sección 6.12\nVer sección 6.13\nVer sección 6.14\nVer sección 6.15\nVer sección 8.\nVer sección 6.17\nBLOOD. ROT.\nVer sección 6.25\nRJUSTFRE\nVer sección 6.18\nVOLVER\nVer sección 6.19\nVer sección 6.20\nERP. MRX.\nVer sección 6.16\nENTRAIR\nVer sección 6.21\nALARMA\nVer sección 6.22\nVer sección 6.23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "6.9 Modos de funcionamiento\nNota: Los valores de l y ml visualizados son sólo fia-\nbles si la bomba ha sido calibrada para la instalación\nactual, ver sección 8. Calibrado.\nLa bomba puede funcionar en cinco modos de fun-\ncionamiento distintos:\n•\nManual\n· Impulso\n· Analógico\n· Temporizador (control interno del lote)\n· Batch (control externo del lote)\nVer descripción en las siguientes secciones.\n6.10 Manual\nLa bomba dosifica lo más constante y uniforme-\nmente posible, sin señales externas.\nAjustar la cantidad de dosificación en l/h o ml/h.\nLa bomba cambia automáticamente entre las unida-\ndes de medición.\nGama de ajustes:\nDME 60: 0.0198 - 15.8 gph (75 ml/h - 60 l/h)\nDME 150: 0.0528 - 39.2 gph (200 ml/h - 150 l/h)\nDME 375: 0.132 - 99 gph (500 ml/h - 375 l/h)\nDME 940: 0.317 - 248.3 gph (1200 ml/h - 940 l/h)\n1\nMANLARI\nV\nK\n1\n+\nValor\najustado\nml/h\nLa bomba para\n· cuando el tiempo entre dos impulsos es tres\nveces el tiempo entre los dos impulsos anterio-\nres, o\nEspañol (MX)\n· si el tiempo entre dos impulsos es de más de\n2 minutos.\nLa bomba funcionará a la última velocidad calculada\nhasta que ocurra uno de los dos casos.\nLa bomba para en el punto alcanzado en su ciclo de\ntrabajo y vuelve a arrancar en este punto cuando\nreciba dos nuevos impulsos.\nGama de ajustes:\nDME 60: 0.000625 ml/impulso - 120 ml/impulso\nDME 150: 0.00156 ml/impulso - 300 ml/impulso\nDME 375: 0.00392 ml/impulso - 750 ml/impulso\nDME 940: 0.00980 ml/impulso - 1880 ml/impulso\nr\nIMPULSO\nOLLL\n+\nCantidad\najustada en\nml/impulso\nmĮʼ\n+\nOLLL\nCapacidad\nactual en gph,\nml/h o l/h\nmļ/h\nOLLI\n+\nFig. 9\nFig. 8\n6.11 Impulso\nLa bomba dosifica según una señal externa de\nimpulsos, es decir un contador con salida de impul-\nsos o un controlador.\nAjustar la cantidad de dosificación por impulso en\nml/impulso. La bomba ajusta su capacidad según\ndos factores:\n· La frecuencia de impulsos externos.\n· La cantidad ajustada por impulso.\nLa bomba mide el tiempo entre dos impulsos y cal-\ncula a continuación la velocidad que dé la capacidad\nnecesaria (cantidad ajustada por impulso multipli-\ncada por la frecuencia de impulsos).\nLa bomba no arranca hasta que no reciba el\nsegundo impulso, por lo que da un caudal constante\nal igual que en el caso de control \"manual\".\nLa bomba calcula una velocidad para cada impulso\nrecibido.\nSi la cantidad ajustada por impulso multiplicada por\nla frecuencia de impulsos supera la capacidad de la\nbomba, ésta funcionará a su capacidad máxima.\nNo se tendrán en cuenta los impulsos en exceso y la\npantalla indicará \"CAUD. MÁX.\".\n19",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "6.12 Analógico\nLa bomba dosifica según una señal analógica\nexterna. La cantidad dosificada es proporcional al\nvalor de entrada en mA.\nEspañol (MX)\n4-20 (por defecto): 4 mA = 0 %.\n20 mA = 100 %.\n20-4:\n4 mA = 100 %.\n20 mA = 0 %.\n0-20:\n0 mA = 0 %.\n20 mA = 100 %.\n20-0:\n0 mA = 100 %.\n20 mA = 0 %.\nVer fig. 10.\nEsta limitación influirá en la capacidad. El 100 %\ncorresponde a la capacidad máxima de la bomba o a\nla capacidad máxima ajustada, ver sección\n6.16 Limitación de la capacidad.\nLa entrada analógica requiere una señal que está\naislada del marco. Min. resistencia al marco: 50 kQ.\n100\n[%]\n80\n0-20 mA\n60\n4-20 mA\n40\n20\n0\nCambiar el modo analógico como muestra la fig. 12:\nUtilizar los botones\n+\npara navegar\nCONFIG.\nENTRADA\nANALOG :C.\n4-20\n20-4\n0-20\nE\n20-0\nFig. 12\n6.13 Temporizador\nLa bomba dosifica la cantidad ajustada en lotes a la\ncapacidad máxima o a la capacidad máxima ajus-\ntada, ver sección 6.16 Limitación de la capacidad.\n20\nEl tiempo hasta la primera dosificación \"SG\" y los\nintervalos siguientes \"IN\" pueden ajustarse en minu-\ntos, horas y días. El limite máximo es de 9 días,\n23 horas y 59 minutos (9:23:59). El valor mínimo\naceptable es de 1 minuto. El temporizador interno\ncontinua, incluso si se para la bomba mediante el\nbotón on/off, tanque vacío o señal de parada,\nver fig. 13.\nTM02 4498 1102\n0\n4\n8\n12\n16\n20\n[mA]\nFig. 10\n-\nI\n-\nANALOGIC.\n+\nValor de\nacuerdo con la\nseñal analógica\nml/h\nOK\nFig. 11\nSi se selecciona 4-20 mA ó 20-4 mA y la señal cae\npor debajo de 2 mA, la bomba indicará fallo.\nEsta situación ocurre si se interrumpe la conexión,\npor ejemplo si el cable está dañado.\nDurante el funcionamiento \"SG\" contará siempre al\nrevés de \"IN\" a cero. De esta forma se puede siem-\npre leer el tiempo que queda hasta el siguiente lote.\n\"IN\" debe ser superior al tiempo necesario para reali-\nzar un lote. Si es inferior, no se tendrá en cuenta el\nsiguiente lote.\nSi hay un fallo del suministro eléctrico, la cantidad\nde dosificación ajustada, el tiempo \"IN\" y el tiempo\n\"SG\" restante quedan almacenados. Cuando se\nvuelve a conectar el suministro, la bomba arrancará\ncon el tiempo \"SG\" que había cuando se produjo el\nfallo. De esta forma, el ciclo del temporizador conti-\nnuará, pero ha sido retrasado por la duración del\nfallo del suministro.\nCantidad por lote\nSG\nTM01 8942 0900\nIN\nFig. 13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Gama de ajustes, volumen ajustable por lote:\nDME 60: 0.0017 to 31.7 gal (6.25 ml - 120 l)\nDME 150: 0.0041 to 79.3 gal (15.6 ml - 300 l)\nDME 375: 0.01 to 198.1 gal (39.1 ml - 750 I)\nDME 940: 0.025 to 496.7 gal (97.9 ml - 1880 l)\nSólo se pueden seleccionar valores que correspon-\ndan a carreras de dosificación completas\n(de acuerdo con el factor de calibrado). El ajuste\nmínimo depende del factor de calibrado. El ajuste\nmínimo indicado arriba corresponde al valor de cali-\nbrado por defecto.\nEjemplo:\nSi el factor de calibrado es 625 (= 6.25 ml/carrera),\nel valor mínimo ajustable en modo de temporizador o\nlote será 6.25 ml (= 1 carrera) -> el siguiente será\n12.5 ml (= 2 carreras), etc.\nEstos pasos seguirán hasta un valor que corres-\nponde a 100 carreras de dosificación. Por encima de\neste valor la gama de ajustes tiene pasos estándar\nal igual que en otros modos de funcionamiento.\nSi se cambia el factor de calibrado después de ajus-\ntar el modo de temporizador o lote, la bomba recal-\nculará automáticamente un nuevo número de carre-\nras de dosificación por lote y cambiará el valor de la\npantalla al valor más cercano posible comparado\ncon el primer valor ajustado.\nTEMPORIZ.\n1\n+\nEspañol (MX)\nCantidad ajus-\ntada por lote\n+\nValor IN ajus-\ntado en días\n+\nValor IN ajus-\ntado en horas\n+\nValor IN ajus-\ntado en minutos\n-\n+\nValor SG ajus-\ntado en días\n+\nValor SG ajus-\ntado en horas\n56\n+\nValor SG ajus-\ntado en minutos\n56 00000\n-\n+\nFig. 14\n21",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "6.14 Batch\nLa bomba dosifica la cantidad ajustada en lotes a la\ncapacidad máxima o a la capacidad máxima ajus-\ntada, ver sección 6.16 Limitación de la capacidad.\nLa cantidad es dosificada cada vez que la bomba\nrecibe un impulso externo.\nEspañol (MX)\nSi la bomba recibe impulsos nuevos antes de finali-\nzar el lote anterior, estos impulsos no se tendrán en\ncuenta.\nCantidad por lote\n-\nBATCH\nLO\n+\nValor ajustado\npor lote\nml/\n+\nLO\nFig. 16\n6.15 Anticavitación\nFig. 17\n22\nLa bomba incorpora una función anticavitación.\nAl seleccionar esta función, la bomba amplia su\ncarrera de aspiración, dando por resultado un\ncebado óptimo.\nTM01 8947 0900\nImpulso\nFig. 15\nImpulso\nLa gama de ajustes es la misma que para el Tempo-\nrizador, ver sección 6.13 Temporizador.\n-\nANTI-ERV\n+\nANT: 25%\n+\nANTI 50%\nPantalla de funcionamiento\nLa función anticavitación se utiliza:\n· al bombear líquidos de alta viscosidad,\n· en el caso de una manguera de aspiración larga y\n· en el caso de una gran altura de aspiración.\nDependiendo de las circunstancias, la velocidad del\nmotor durante la carrera de aspiración puede redu-\ncirse en un 75 %, 50 % ó 25 % en comparación con\nla velocidad normal del motor durante la carrera de\naspiración.\nLa capacidad máxima de la bomba se reduce\ncuando se selecciona la función anticavitación.\nVer sección 4.1 Datos mecánicos.\nANTI 75%\n+\nOFF\n+",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "6.16 Limitación de la capacidad\nCONTADOR\nEsta función ofrece la posibilidad de reducir la capa-\ncidad máxima de la bomba (CAP. MAX.). Influye en\naquellas funciones en las que la bomba normal-\nmente funciona a la capacidad máxima.\nBajo condiciones de funcionamiento normales, la\nbomba no puede funcionar a una capacidad superior\na la que indica la pantalla. Esto no se refiere al botón\nde capacidad máxima,\n, ver sección 6.3 Cebado/\n-\n+\nEspañol (MX)\npurga de la bomba.\nCONFIG.\nERP. MRX.\n-\n+\n-\nCapacidad\nmáxima\najustada\nV\nml/h\n+\nPantalla de funcionamiento\nFig. 18\n6.17 Contadores\nLa bomba puede visualizar contadores no rearma-\nbles para:\n. \"CANTIDAD\"\nValor acumulado de la cantidad dosificada en\nlitros o galones americanos.\n. \"CARRERAS\"\n•\nNúmero acumulado de carreras de dosificación.\n\"HORAS\"\nNúmero acumulado de horas de funcionamiento.\n•\n\"ENCENDIDO\"\nNúmero acumulado de las veces que se ha\nconectado el suministro eléctrico.\nCantidad\ntotal\ndosificada\nCARRERAS\nNúmero\ntotal de\ncarreras\nHORAS\nNúmero total\nde horas de\nfuncionamiento\nNúmero total\nde arranques\nPantalla de funcionamiento\nFig. 19\n23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "6.18 Rearme\nAjustes por defecto:\nAl activar \"AJUST.FAB.\" la bomba vuelve a los ajus-\ntes de fábrica.\nEspañol (MX)\nNota: El calibrado vuelve también al ajuste por\ndefecto. Esto significa que se necesita un calibrado\nnuevo después de utilizar la función \"AJUST.FAB.\".\nLos ajustes por defecto son los ajustes de fábrica de\nbombas estandar. Seleccionar \"AJUST.FAB.\" del\nmenú \"CONFIG.\".\nModo de funcionamiento:\nManual\nCapacidad:\nCapacidad máx.\nBloqueo del panel de control:\nDesbloqueado\nCódigo por defecto de bloqueo: 2583\nAnticavitación:\nNo activa\nSeñal analógica:\n4-20 mA\nEntradas digitales:\nNO (normalmente\nabierta)\nLimitación de la capacidad:\nCapacidad máx.\nRearme necesario de la alarma para volver a arran-\ncar la bomba\nControl de dosificación:\nOff\nIdioma:\nInglés\nUnidades:\nMétricas\n-\nVOLVER\nCONFIRME\n+\n1\n1\nRJUSTFRE.\n+\nPantalla de\nfuncionamiento\nPantalla de funcionamiento\nsin cambios\nFig. 20\n6.19 Volver\nVOLVER\nFig. 21\nLa función \"VOLVER\" permite volver desde cualquier\nnivel del menú a la pantalla de funcionamiento sin\ncambios después utilizar las funciones del menú.\n24\n6.20 Idioma\nEl texto de la pantalla aparecerá en uno de los\nsiguientes idiomas:\n· Español\n· Inglés\n· Alemán\n•\nFrancés\n· Italiano\n•\nPortugués\n· Holandés\n•\nSueco\n•\nFinlandés\n· Danés\n•\nCheco\n•\nEslovaco\n· Polaco\n•\nRuso.",
+      "tablas": [
+        [
+          [
+            "Modo de funcionamiento:",
+            "Manual"
+          ],
+          [
+            "Capacidad:",
+            "Capacidad máx."
+          ],
+          [
+            "Bloqueo del panel de control:",
+            "Desbloqueado"
+          ],
+          [
+            "Código por defecto de bloqueo:",
+            "2583"
+          ],
+          [
+            "Anticavitación:",
+            "No activa"
+          ],
+          [
+            "Señal analógica:",
+            "4-20 mA"
+          ],
+          [
+            "Entradas digitales:",
+            "NO (normalmente abierta)"
+          ],
+          [
+            "Limitación de la capacidad:",
+            "Capacidad máx."
+          ],
+          [
+            "Rearme necesario de la alarma\ncar la bomba",
+            "para volver a arran-"
+          ],
+          [
+            "Control de dosificación:",
+            "Off"
+          ],
+          [
+            "Idioma:",
+            "Inglés"
+          ],
+          [
+            "Unidades:",
+            "Métricas"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "CONFIG.\n:ILOMA\n+\nENGLISH\nEspañol (MX)\nVOLVER\n+\n+\nPantalla de funcionamiento\nPantalla de funcionamiento\nFig. 22\n6.21 Estructura de las entradas\nLa fig. 23 muestra todos los ajustes posibles.\nLas entradas de nivel, parada de dosificación y fugas\ndel diafragma pueden cambiarse de la función NO\n(normalmente abierta) a NC (normalmente cerrada).\nSi se cambian, hay que puentearlas durante funcio-\nnamiento normal. La entrada de control de dosifica-\nción puede cambiarse de \"OFF\" a \"ON\".\nPantalla de funciona-\nmiento sin cambios\nSe puede seleccionar uno de los siguientes tipos de\nseñal para la entrada analógica:\n· 4-20 mA (por defecto),\n· 20-4 mA,\n•\n0-20 mA,\n· 20-0 mA.\nVer también sección 6.12 Analógico.\nUtilizar los botones\n+\npara navegar\nCONFIG.\nENTRADA\nNIVEL\nE\nANALOGIC.\nPARRER\nNO\nNO\nE\nNO\nE\nNO\n4-20\n20-4\nE\n0-20\n20-0\nFig. 23\nCONTROL\nFUGAS\nON\nE\n'OFF\nNO\nNC\n25",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "6.22 Tanque vacío (alarma)\nLa función de alarma puede ajustarse a\n\"REARM.AUT.\" o \"REARM.MAN.\". Se utiliza esta\nfunción cuando el sensor de nivel indica \"VACIO\".\nLa alarma puede rearmarse automáticamente\n(REARM.AUT.) o a mano (REARM.MAN.).\nEspañol (MX)\nPara más información de otras funciones de la\nalarma, ver sección 6.6 Luces testigo y salida de\nalarma.\n6.23 Unidades de medición\nSe pueden seleccionar unidades métricas\n(litro/mililitro) o unidades americanas (galones/milili-\ntro).\nUnidades de medición métricas:\n· En los modos manual y analógico, ajustar la\ncantidad a dosificar en litros por hora (l/h) o mili-\nlitros por hora (ml/h).\n· En el modo de impulso, ajustar la cantidad a\ndosificar en ml/impulso. La capacidad actual está\nindicada en litros por hora (l/h) o mililitros por\nhora (ml/h).\n· Para el calibrado, ajustar la cantidad a dosificar\nen ml por 100 carreras.\n· En los modos de temporizador y batch, ajustar\nla cantidad a dosificar en litros (l) o mililitros (ml).\n· En \"CANTIDAD\" del menú \"CONTADOR\", la can-\ntidad dosificada está indicada en litros.\nCONFIG.\n+\n1\n1\n3 x\n-\n+\nUnidades de medición americanas:\n· En los modos manual y analógico, ajustar la\ncantidad a dosificar en galones por hora (gph).\n· En el modo de impulso, ajustar la cantidad a\ndosificar en ml/impulso. La capacidad actual está\nindicada en galones por hora (gph).\n· Para el calibrado, ajustar la cantidad a dosificar\nen ml por 100 carreras.\n· En los modos de temporizador y batch, ajustar\nla cantidad a dosificar en galones (gal).\n· En \"CANTIDAD\" del menú \"CONTADOR\", la can-\ntidad dosificada está indicada en galones ameri-\ncanos (gal).\nNota: De acuerdo con lo establecido en la Ley\nNacional 19511 de la Republica Argentina, queda\ntotalmente prohibido la utilización de los equipos de\ndosificación mencionados en este catalogo / manual\nde operaciones, con cualquier unidad ajena a las\nincluidas en el SIMELA (Sistema Métrico Legal\nArgentino). Si bien las bombas dosificadoras marca\nGrundfos, modelos DME poseen la alternativa de\nindicar el caudal en Galones / Hora, por lo antes\nmencionado queda totalmente prohibido utilizar\nestos equipos con dichas unidades de medición den-\ntro del territorio Argentino, sin importar el tipo de ins-\ntalación o aplicación en la cual estén siendo utiliza-\ndos, así como tampoco el personal que los este\noperando. Dentro del territorio Argentino, los equi-\npos deben ser utilizados en todos los casos, indi-\ncando el caudal en la unidad estándar para este país\ny aprobada por el SIMELA, siendo la misma y única\nhabilitada la unidad de Litros / Hora. La misma se\nencuentra disponible en todos los equipos como uni-\ndad primaria.\nUNIBRI\nMETRICO\n+\nUS GRL\nPantalla de\nfuncionamiento\nFig. 24\n26\nPantalla de\nfuncionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "6.24 Control de dosificación\nLa bomba incorpora una entrada para el control de dosificación (ver esquema de conexiones en fig. 4).\nCONFIG.\nEspañol (MX)\n+\n2 x\n+\nENTRAIR\n3 x\nNIVEL\n+\nLUNTRUL\nOFF\nFig. 25\nLa bomba se puede equipar con un monitor de dosi-\nficación capaz de detectar ciclos de dosificación\nineficaces.\nEl monitor de dosificación está diseñado para moni-\ntorizar la dosificación de líquidos que pueden oca-\nsionar acumulación de gases en el cabezal de dosifi-\ncación, parando así el proceso de dosificación,\nincluso si la bomba todavía está funcionando.\nDurante el proceso de dosificación, el monitor de\ndosificación da señales de impulsos a la entrada del\ncontrolador para que la bomba pueda comparar las\ncarreras de dosificación realizadas (desde un sensor\nde dosificación interno) con las carreras físicas\nmedidas externamente (desde el monitor de dosifi-\ncación). Si una carrera de dosificación externa no se\nmide a causa de la carrera de dosificación interna,\nesto se considera como un fallo que puede haberse\nproducido por un tanque vacio o por gases en el\ncabezal de dosificación.\nEl monitor de dosificación debe conectarse a la\nentrada para controlar la dosificación. Esta entrada\ndebe configurarse para controlar la dosificación.\nCuando la entrada está ajustada para controlar la\ndosificación y se ha conectado y ajustado un monitor\nde dosificación, la función de control de dosificación\nestará activa.\n27",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "6.25 Bloqueo del panel de control\nSe pueden bloquear los botones del panel de control\npara evitar un funcionamiento erróneo de la bomba.\nLa función de bloqueo puede ajustarse a \"ON\" u\n\"OFF\". El ajuste por defecto es \"OFF\".\nEspañol (MX)\nDebe introducirse un código PIN para cambiar de\n\"OFF\" a \"ON\". Cuando se selecciona \"ON\" por vez\nprimera, \"0000\" aparecerá en la pantalla. Si ya se ha\nintroducido un código, éste aparecerá al intentar\ncambiar a \"ON\". Se puede volver a introducir este\ncódigo o cambiarlo.\nSi no se ha introducido ningún código hay que ajus-\ntar un código de la misma manera que los valores\n\"SG\" e \"IN\" descritos en sección 6.13 Temporizador.\nSi ya se ha introducido un código, los dígitos activos\nestán intermitentes.\nSi se intenta accionar la bomba en condición blo-\nqueada \"BLOQUEAD\" aparecerá en la pantalla\ndurante 2 segundos, seguido de \"0000\". Hay que\nintroducir un código. Si no se ha empezado a intro-\nducir el código dentro de 10 segundos, aparecerá la\npantalla de funcionamiento sin cambios.\n-\nBLOD. BOT.\n+\nIN\nSi se ha introducido un código erróneo,\n\"BLOQUEAD\" aparecerá en la pantalla durante\n2 segundos, seguido de \"0000\". Hay que introducir\nun código nuevo. Si no se ha empezado a introducir\nel código dentro de 10 segundos, aparecerá la pan-\ntalla de funcionamiento sin cambios. Esta pantalla\naparecerá también si la introducción del código\ncorrecto lleva más de 2 minutos.\nSi se ha activado la función de bloqueo pero el panel\nde control no está bloqueado, éste se bloqueará\nautomáticamente si no funciona durante 2 minutos.\nLa función de bloqueo puede también reactivarse\nseleccionando \"ON\" del menú \"BLOQ.BOT\".\nEl código introducido anteriormente aparecerá y\ndebe ser introducido de nuevo pulsando el botón\ncuatro veces. El código puede también cambiarse.\nEl panel de control puede desbloquearse mediante\nel código seleccionado o el código de fábrica 2583.\nLos siguientes botones y entradas siguen activos\ncon el panel bloqueado:\n· Cebado (botón (100%)\n· Botón on/off.\n· Todas las entradas externas.\nOFF\n+\nPantalla de funcionamiento\nPantalla de funcionamiento\nFig. 26\nActivación de la función de bloqueo y bloqueo\ndel panel de control:\n1. Seleccionar \"BLOQ.BOT\" en el menú.\n2. Seleccionar \"ON\" mediante los botones\ny confirmar con\n.\n+\ny\n3. Introducir o volver a introducir un código\nmediante los botones\n,\n.\n+\ny\nLa función de bloqueo está ahora activada y el panel\nde control está bloqueado.\nDesbloqueo del panel de control (sin desactivar\nla función de bloqueo):\n1. Pulsar () una vez. \"BLOQUEAD\" aparece en la\npantalla durante 2 segundos, seguido de\n\"0000\".\n2. Introducir el código mediante los botones\ny (H) *.\n+\n,\n28\nEl panel de control está ahora desbloqueado y se\nbloqueará automáticamente de nuevo si no se\nacciona durante 2 minutos.\nDesactivación de la función de bloqueo:\n1. Desbloquear el panel de control como descrito\narriba.\n2.\nSeleccionar \"BLOQ.BOT\" en el menú.\n3. Seleccionar \"OFF\" mediante los botones\ny\n+> y confirmar con (E).\nLa función de bloqueo está ahora desactivada y el\npanel de control está desbloqueado.\n* El panel de control puede siempre desbloquearse\nmediante el código 2583.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "7. Puesta en marcha\nPaso\nAcción\n1\nAntes de realizar la puesta en marcha, apretar de nuevo los tor-\nnillos de la cabeza dosificadora.\n· Apriete los tornillos del cabezal dosificador en orden cruzado a\ntorque 4.06 ft·lb (+ 0.37/- 0 ft·lb) (5.5 N·m (+ 0.5/- 0 N·m))\nempleando una llave dinamometrica antes de la puesta en servi-\ncio y, de nuevo, tras 2-5 horas de funcionamiento.\n2\nConectar las mangueras/tuberías:\n· Conectar las mangueras/tuberías de aspiración y dosificación a\nla bomba.\n· Conectar una manguera a la válvula de purga, si es necesaria,\ny llevar la manguera al tanque.\n· No conecte una manguera a la abertura de drenaje.\n3\n2\nConectar los cables:\n· Conectar los cables de control/nivel, si los hay, a la bomba,\nver sección 5.6 Esquema de conexiones.\n4\n+\n100%\nGRUNDFOS.X\nConectar el suministro eléctrico:\n· La pantalla está encendida.\n· La luz testigo verde está intermitente (la bomba ha parado).\n· Elegir idioma, si es necesario, ver sección 6.20 Idioma.\n5\nElegir el modo de funcionamiento (ver sección 6.9 Modos de fun-\ncionamiento):\n· Manual.\n· Impulso.\n· Analógico.\n· Temporizador.\n· Batch.\n6\n+\n100%\nGRUNDFOS.Y\nArrancar la bomba:\n· Pulsar el botón on/off para arrancar la bomba.\n· La luz testigo verde está encendida permanentemente.\n7\n+\nCebado/purga:\n· Pulsar el botón (100%) en el panel de control de la bomba y dejar\nque la bomba funcione sin contrapresión. Abrir la válvula de\n100%\nGRUNDFOS\npurga, si es necesario.\nAl pulsar simultaneamente los botones\n100%\ny |+>\ndurante el\ncebado, puede ajustarse la bomba para funcionar durante unos\nsegundos al rendimiento máximo.\n8\nCALIBR\nCalibrado:\n· Calibrar la bomba cuando ha sido cebada y está funcionando con\nla contrapresión correcta, ver sección 8. Calibrado\nEspañol (MX)\nSi la bomba no funciona satisfactoriamente, ver sección 10. Localización de fallos.\n29",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "",
+            "Acción"
+          ],
+          [
+            "1",
+            "",
+            "Antes de realizar la puesta en marcha, apretar de nuevo los tor- nillos de la cabeza dosificadora. · Apriete los tornillos del cabezal dosificador en orden cruzado a torque 4.06 ft·lb (+ 0.37/- 0 ft·lb) (5.5 N·m (+ 0.5/- 0 N·m)) empleando una llave dinamometrica antes de la puesta en servi- cio y, de nuevo, tras 2-5 horas de funcionamiento."
+          ],
+          [
+            "2",
+            "",
+            "Conectar las mangueras/tuberías: · Conectar las mangueras/tuberías de aspiración y dosificación a la bomba."
+          ],
+          [
+            "· Conectar una manguera a la válvula de purga, si es necesaria, y llevar la manguera al tanque. · No conecte una manguera a la abertura de drenaje."
+          ],
+          [
+            "3",
+            "2",
+            "Conectar los cables: · Conectar los cables de control/nivel, si los hay, a la bomba, ver sección 5.6 Esquema de conexiones."
+          ],
+          [
+            "4",
+            "+ 100% GRUNDFOS.X\n:selected:",
+            "Conectar el suministro eléctrico: · La pantalla está encendida. · La luz testigo verde está intermitente (la bomba ha parado). · Elegir idioma, si es necesario, ver sección 6.20 Idioma."
+          ],
+          [
+            "5",
+            "",
+            "Elegir el modo de funcionamiento (ver sección 6.9 Modos de fun- cionamiento):"
+          ],
+          [
+            ":selected: :unselected: :unselected: :unselected: :unselected:",
+            "· Manual."
+          ],
+          [
+            "· Impulso. · Analógico. · Temporizador. · Batch."
+          ],
+          [
+            "6",
+            ":selected: + :selected: 100% GRUNDFOS.Y",
+            "Arrancar la bomba: · Pulsar el botón on/off para arrancar la bomba. · La luz testigo verde está encendida permanentemente."
+          ],
+          [
+            "7",
+            ":selected: +",
+            "Cebado/purga:"
+          ],
+          [
+            "· Pulsar el botón (100%) en el panel de control de la bomba y dejar que la bomba funcione sin contrapresión. Abrir la válvula de\n:selected:"
+          ],
+          [
+            "100% GRUNDFOS",
+            "purga, si es necesario. Al pulsar simultaneamente los botones 100% y |+> durante el cebado, puede ajustarse la bomba para funcionar durante unos segundos al rendimiento máximo.\n:selected: :selected:"
+          ],
+          [
+            "8",
+            "CALIBR",
+            "Calibrado: · Calibrar la bomba cuando ha sido cebada y está funcionando con la contrapresión correcta, ver sección 8. Calibrado"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "8. Calibrado\nEs importante calibrar la bomba después de la insta-\nlación para asegurar que el valor correcto (ml/h o l/h)\naparezca en la pantalla.\nEspañol (MX)\nEl calibrado puede realizarse en dos formas diferen-\ntes:\n•\nCalibrado directo.\n· La cantidad dosificada de 100 carreras se mide\ndirectamente, ver sección 8.1 Calibrado directo.\n· Calibrado por control. Ver sección\n8.2 Calibrado por control.\nCALIBR.\n+\n1\n1\nI\nARRANQUE\nVALOR\n+\nml/h\nLa bomba\nrealiza\n100 carreras\nPantalla de funcionamiento\nml/h\nVOLVER\n+\nPantalla de funcionamiento\nsin cambios\nValor ajustado,\nver sección 8.2\n-\n+\nPantalla de funcionamiento\nFig. 27\n30",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "8.1 Calibrado directo\nAntes del calibrado, comprobar:\n· que la bomba está instalada con válvula de pie,\nválvula de inyección, etc. en el sistema existente.\n· que la bomba funciona con la contrapresión de\nfuncionamiento supuesta (ajustar la válvula de\ncontrapresión, en caso necesario).\n· que la bomba funciona con la correcta altura de\naspiración.\nEspañol (MX)\nPara realizar un calibrado directo proceder como\nsigue:\nAcción\nPantalla de la bomba\n1. Cebar el cabezal de dosificación y la manguera de\naspiración.\n2. Parar la bomba. La luz verde está intermitente.\n3. Llenar un vaso graduado con líquido de dosifica-\nción, Q1.\nDME 60: aprox. 1.5 l\nDME 150: aprox. 2.5 l\nDME 375: aprox. 6 l\nDME 940: aprox. 14 |\n4. Leer y apuntar la cantidad Q1.\n5. Colocar la manguera de aspiración en el vaso\ngraduado.\nQ1\nTM02 7067 0315\n6. Ir al menú de calibrado, ver sección 6.8 Menú.\n7. Pulsar el botón\ndos veces.\n8. La bomba realiza 100 carreras de dosificación.\n9. El valor de calibrado de fábrica aparece en la pan-\ntalla.\n10. Quitar la manguera de aspiración del vaso gra-\nduado y leer Q2.\n1\nQd\nL\nQ2\n11. Ajustar el valor de la pantalla a Qd = Q1 - Q2.\n12. Confirmar con el botón\n.\n13. La bomba está ahora calibrada y vuelve a la panta-\nlla de funcionamiento.\nValor ajustado\na Qd\nERLIBR.\nL\n+\n-\nARRANQUE\nml/h\n2\n-\n+\nPantalla de funcionamiento\n31",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "8.2 Calibrado por control\nEspañol (MX)\nEn el calibrado por control, el valor del calibrado se\ncalcula leyendo el consumo de la sustancia química\ndurante un periodo de tiempo específico y compa-\nrando éste con el número de carreras de dosifica-\nción realizadas durante el mismo periodo.\nEste método de calibrado es muy exacto y especial-\nmente adecuado para el calibrado por control des-\npués de largos periodos de funcionamiento o si no\nes posible hacer el calibrado directo. El calibrado\npuede, por ejemplo, realizarse al sustituir o llenar el\ntanque químico.\nPara realizar un calibrado por control, proceder\ncomo sigue:\n1. Pulsar el botón\npara parar la bomba.\n2. Leer el contador y apuntar el número de carreras\nde dosificación, ver sección 6.17 Contadores.\n3. Leer y apuntar la cantidad en el tanque químico.\n4. Arrancar la bomba pulsando el botón\ny dejar\nque funcione durante al menos 1 hora.\nCuanto más tiempo funcione más exacto será el\ncalibrado.\n5. Pulsar el botón\npara parar la bomba.\n6. Leer el contador y apuntar el número de carreras\nde dosificación, ver sección 6.17 Contadores.\n7. Leer y apuntar la cantidad en el tanque químico.\n8. Calcular la cantidad de dosificación en ml y el\nnúmero de carreras de dosificación realizadas\ndurante el periodo de funcionamiento.\n9. Calcular el valor de calibrado como sigue:\n(cantidad de dosificación en ml/carreras de dosi-\nficación) x 100.\n10. Ajustar el valor calculado en el menú de cali-\nbrado.\n32\n9. Servicio\nPara asegurar una larga vida útil y una dosificación\nprecisa, deben comprobarse periódicamente las pie-\nzas fungibles, como las membranas y las válvulas,\nen busca de signos de desgaste. Cuando sea nece-\nsario, sustituya las piezas deterioradas por piezas\nde recambio originales fabricadas con los materiales\nadecuados.\nSi tiene cualquier pregunta, póngase en contacto\ncon la empresa responsable del servicio técnico.\n9.1 Mantenimiento periódico\nIntervalo\nTarea\nA diario\nCompruebe si la abertura de drenaje\npresenta fugas de líquido (fig. 2) y si\nestá obstruida o sucia.\nSi es así, siga las instrucciones des-\ncritas en la sección 9.4 Rotura de la\nmembrana.\nCompruebe si el cabezal dosificador\no las válvulas presentan fugas de\nlíquido.\nSi la bomba ha funcionado con los\ntornillos de la cabeza dosificadora\nmal apretados o dañados, desconéc-\ntela inmediatamente del suministro\neléctrico. Siga las instrucciones des-\ncritas en la sección\n9.5 Funcionamiento con los tornillos\nde la cabeza dosificadora mal apreta-\ndos.\nSi es necesario, apriete las tuercas\nde las válvulas y las tapas, o lleve a\ncabo una inspección (consulte la sec-\nción 9.3 Ejecución de una inspec-\nción).\nSemanal-\nmente\nLimpie todas las superficies de la\nbomba empleando un paño seco y\nlimpio.\nCada 3\nmeses\nCompruebe los tornillos del cabezal\ndosificador.\nSi es necesario, apriete los tornillos\ndel cabezal dosificador a\ntorque 4.06 ft·lb (+ 0.37/- 0 ft-lb)\n(5.5 N·m (+ 0.5/- 0 N·m)) empleando\nuna llave dinamométrica. Sustituya\ninmediatamente los tornillos daña-\ndos.\nCada 2\naños u\n8000 horas\nde funcio-\nnamiento*\nSustituya la membrana y las válvulas\n(consulte la sección 9.3 Ejecución de\nuna inspección).\n*\nSi el líquido bombeado incrementa el desgaste,\nreduzca los intervalos de mantenimiento.\n9.2 Limpieza\nSi es necesario, limpie todas las superficies de la\nbomba empleando un paño seco y limpio.",
+      "tablas": [
+        [
+          [
+            "Intervalo",
+            "Tarea"
+          ],
+          [
+            "A diario",
+            "Compruebe si la abertura de drenaje presenta fugas de líquido (fig. 2) y si está obstruida o sucia. Si es así, siga las instrucciones des- critas en la sección 9.4 Rotura de la membrana."
+          ],
+          [
+            "Compruebe si el cabezal dosificador o las válvulas presentan fugas de líquido."
+          ],
+          [
+            "Si la bomba ha funcionado con los tornillos de la cabeza dosificadora mal apretados o dañados, desconéc- tela inmediatamente del suministro eléctrico. Siga las instrucciones des- critas en la sección 9.5 Funcionamiento con los tornillos de la cabeza dosificadora mal apreta- dos. Si es necesario, apriete las tuercas de las válvulas y las tapas, o lleve a cabo una inspección (consulte la sec- ción 9.3 Ejecución de una inspec- ción)."
+          ],
+          [
+            "Semanal- mente",
+            "Limpie todas las superficies de la bomba empleando un paño seco y limpio."
+          ],
+          [
+            "Cada 3 meses",
+            "Compruebe los tornillos del cabezal dosificador. Si es necesario, apriete los tornillos del cabezal dosificador a torque 4.06 ft·lb (+ 0.37/- 0 ft-lb) (5.5 N·m (+ 0.5/- 0 N·m)) empleando una llave dinamométrica. Sustituya inmediatamente los tornillos daña- dos."
+          ],
+          [
+            "Cada 2 años u 8000 horas de funcio- namiento*",
+            "Sustituya la membrana y las válvulas (consulte la sección 9.3 Ejecución de una inspección)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "9.3 Ejecución de una inspección\nLas operaciones de mantenimiento deben llevarse a\ncabo empleando exclusivamente piezas de repuesto\ny accesorios Grundfos. El uso de piezas de repuesto\ny accesorios no originales anula e invalida cualquier\nresponsabilidad derivada de los daños ocasionados.\nSi desea obtener más información acerca de la eje-\ncución de operaciones de mantenimiento, consulte\nel catálogo de kits de servicio o nuestro sitio web\n(www.grundfos.com).\nAdvertencia\n¡Riesgo de quemaduras químicas!\n¡Respete las precauciones descritas en\nlas fichas de seguridad correspondientes\ndurante la dosificación de medios peligro-\nsos!\n!\n¡Use prendas protectoras (guantes y\ngafas de protección) cuando trabaje con\nel cabezal dosificador, las conexiones o\nlas tuberías!\nEvite las fugas de productos químicos en\nla bomba. ¡ Recoja y elimine correcta-\nmente todos los productos químicos!\nAntes de llevar a cabo cualquier opera-\nción relacionada con la bomba, asegúrese\nde que esta se encuentre desconectada\ndel suministro eléctrico. ¡ El sistema no\ndebe contener presión!\nPrecaución\n9.3.1 Despiece del cabezal dosificador\n1\n2\n4\n3\n5\n8\n7\n9.3.2 Desmontaje de la membrana y las válvulas\nAntes del desmontaje, lea íntegramente las seccio-\nnes 9.4 Rotura de la membrana y\n9.5 Funcionamiento con los tornillos de la cabeza\ndosificadora mal apretados.\nEspañol (MX)\nAdvertencia\n¡La penetración del líquido dosificado en\nla carcasa de la bomba representa un\npeligro de explosión!\nSi es posible que la membrana esté\ndañada o si la bomba ha funcionado con\nlos tornillos de la cabeza dosificadora mal\napretados o dañados, no la conecte al\nsuministro eléctrico.\n!\nEsta sección hace referencia a la fig. 28.\n1. Asegúrese de que el sistema no contenga pre-\nsión.\n2. Vacíe el cabezal dosificador antes de llevar a\ncabo el mantenimiento y lávelo si es necesario.\n3. Lleve a cabo los pasos que correspondan para\ngarantizar que el líquido de retorno se recoja con\nseguridad.\n4. Desmonte las mangueras de aspiración, presión\ny purga.\n5. Desenrosque la válvula de purga.\n6. Desmonte las válvulas de los lados de aspiración\ny descarga (4 y 6).\n7. Afloje los tornillos (7) del cabezal dosificador (5).\n8. Retire los tornillos y, si el cabezal dosificador es\nde PP o PVDF, también la placa delantera (8).\n9. Retire el cabezal dosificador (5).\n10. Desenrosque la membrana (3) girándola en sen-\ntido contrario a las agujas del reloj y quítela.\n11. Asegúrese de que la abertura de drenaje (9) no\nse encuentre obstruida ni sucia. Límpiela si es\nnecesario.\n12. Compruebe si la membrana de seguridad (1)\nestá deteriorada o dañada.\nSi nada indica que el líquido dosificado puede haber\npenetrado en la carcasa de la bomba y la membrana\nde seguridad no está deteriorada o dañada, proceda\nsegún lo descrito en la sección 9.3.3 Montaje de la\nmembrana y las válvulas. De lo contrario, proceda\nsegún lo descrito en la sección 9.4.1 Líquido dosifi-\ncado en la carcasa de la bomba.\n9\n6\nTM06 0018 4713\nFig. 28\nCabezal dosificador, despiece\n(sin válvula de purga)\n1\nMembrana de seguridad\n2\nBrida\n3\nMembrana\n4\nVálvula del lado de descarga\n5\nCabezal dosificador\n6\nVálvula del lado de aspiración\n7\nTornillos\n8\nPlaca delantera del cabezal dosificador\n(sólo PP y PVDF)\n9\nAbertura de drenaje\n33",
+      "tablas": [
+        [
+          [
+            "1",
+            "Membrana de seguridad"
+          ],
+          [
+            "2",
+            "Brida"
+          ],
+          [
+            "3",
+            "Membrana"
+          ],
+          [
+            "4",
+            "Válvula del lado de descarga"
+          ],
+          [
+            "5",
+            "Cabezal dosificador"
+          ],
+          [
+            "6",
+            "Válvula del lado de aspiración"
+          ],
+          [
+            "7",
+            "Tornillos"
+          ],
+          [
+            "8",
+            "Placa delantera del cabezal dosificador (sólo PP y PVDF)"
+          ],
+          [
+            "9",
+            "Abertura de drenaje"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "9.3.3 Montaje de la membrana y las válvulas\n¡Respete también lo descrito en las sec-\nciones 5. Instalación, 6.3 Cebado/purga\nde la bomba y 7. Puesta en marcha!\nPrecaución\nEspañol (MX)\nLa bomba sólo se debe volver a montar si nada\nindica que el líquido dosificado puede haber pene-\ntrado en la carcasa de la bomba. De lo contrario,\nproceda según lo descrito en la sección\n9.4.1 Líquido dosificado en la carcasa de la bomba.\nEsta sección hace referencia a la fig. 28.\n1. Enrosque la nueva membrana (3) girandola en el\nsentido de las agujas del reloj.\n2. Coloque el cabezal dosificador (5).\n3. Coloque los tornillos (7) y, si el cabezal dosifica-\ndor es de PP o PVDF, también la placa delantera\n(8); apriete los tornillos en orden cruzado\nempleando una llave dinamometrica.\n- Par de apriete: torque 4.06 ft·lb (+ 0.37/- 0 ft-lb)\n(5.5 N·m (+ 0.5/- 0 N·m).\n4. Instale las válvulas nuevas (4 y 6).\n- ¡ Respete el sentido del flujo, indicado\nmediante una flecha en la válvula!\n5. Instale la válvula de purga.\n6. Conecte las mangueras de aspiración, presión y\npurga.\nApriete los tornillos del cabezal dosifica-\ndor en orden cruzado a\ntorque 4.06 ft-lb (+ 0.37/- 0 ft-lb)\n(5.5 Nm (+ 0.5/- 0 N·m)) empleando una\nllave dinamometrica antes de la puesta en\nservicio y, de nuevo, tras 2-5 horas de\nfuncionamiento.\nPrecaución\n7. Purgue la bomba dosificadora (consulte la sec-\nción 6.3 Cebado/purga de la bomba).\n9.4 Rotura de la membrana\nSi la membrana presenta fugas o se rompe, el\nlíquido dosificado puede escapar a través de la aber-\ntura de drenaje (fig. 28, pos. 9), situada en la brida\ndel cabezal dosificador.\nEn caso de rotura de la membrana, la membrana de\nseguridad (fig. 28, pos. 1) protegerá la carcasa de la\nbomba frente a la penetración del líquido dosificado.\nLa dosificación de líquidos susceptibles de cristali-\nzarse puede dar lugar a la obstrucción de la abertura\nde drenaje por cristalización. Si la bomba no se\ndetiene inmediatamente, puede acumularse presión\nentre la membrana (fig. 28, pos. 3) y la membrana\nde seguridad de la brida (fig. 28, pos. 1). La presión\npuede empujar el líquido dosificado a través de la\nmembrana de seguridad y hacer que penetre en la\ncarcasa de la bomba.\nLa mayoría de los líquidos dosificados no represen-\ntan un peligro al penetrar en la carcasa de la bomba.\nCiertos líquidos, no obstante, pueden dar lugar a\nreacciones químicas al entrar en contacto con las\npiezas internas de la bomba. En el peor de los\ncasos, tales reacciones pueden generar gases\nexplosivos en la carcasa.\n34\nAdvertencia\n¡La penetración del líquido dosificado en la\ncarcasa de la bomba representa un peligro\nde explosión!\nEl funcionamiento con una membrana\ndañada puede dar lugar a la penetración del\nlíquido dosificado en la carcasa de la\nbomba.\n¡Si la membrana se rompe, separe inmedia-\ntamente la bomba del punto de suministro\neléctrico!\n!\n¡Asegúrese de que la bomba no pueda vol-\nver a ponerse en marcha por accidente!\nDesmonte el cabezal dosificador sin conec-\ntar la bomba al suministro eléctrico y asegú-\nrese de que el líquido dosificado no haya\npenetrado en la carcasa de la bomba. Pro-\nceda según lo descrito en la sección\n9.3.2 Desmontaje de la membrana y las vál-\nvulas.\nRespete lo descrito a continuación para evitar todo\npeligro resultante de una rotura de la membrana:\n· Lleve a cabo operaciones de mantenimiento\nperiódico. Consulte la sección 9.1 Mantenimiento\nperiódico.\n. No haga funcionar la bomba con la abertura de\ndrenaje obstruida o sucia.\n- Si la abertura de drenaje está obstruida o\nsucia, proceda según lo descrito en la sección\n9.3.2 Desmontaje de la membrana y las válvu-\nlas.\n· No conecte una manguera a la abertura de dre-\nnaje. Si lo hace, no podrá determinar si existe un\nescape del líquido dosificado.\n· Tome las precauciones adecuadas para evitar\ndaños personales y materiales resultantes de un\nescape del líquido dosificado.\n•\nNo haga funcionar la bomba con los tornillos del\ncabezal dosificador dañados o sueltos.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "9.4.1 Líquido dosificado en la carcasa de la\nbomba\nAdvertencia\n¡Peligro de explosión!\n¡Separe la bomba inmediatamente del\npunto de suministro eléctrico!\n!\n¡Asegúrese de que la bomba no pueda\nvolver a ponerse en marcha por acci-\ndente!\nSi penetra líquido dosificado en la carcasa de la\nbomba o si la membrana de seguridad está dañada\no deteriorada:\n· Envíe la bomba a Grundfos para su reparación\nsiguiendo las instrucciones descritas en la sec-\nción 9.6 Reparaciones.\n· Si la reparación no es una solución económica-\nmente razonable, elimine la bomba de acuerdo\ncon la información incluida en la sección\n11. Eliminación.\n9.5 Funcionamiento con los tornillos de la\ncabeza dosificadora mal apretados\nAdvertencia\n¡La penetración del líquido dosificado en\nla carcasa de la bomba representa un\npeligro de explosión!\nEl funcionamiento con los tornillos de la\ncabeza dosificadora mal apretados o\ndañados puede dar lugar a la penetración\ndel líquido dosificado en la carcasa de la\nbomba.\nSi la bomba ha funcionado con los torni-\nllos de la cabeza dosificadora mal apreta-\ndos o dañados, desconéctela inmediata-\nmente del suministro eléctrico.\n!\n¡Asegúrese de que la bomba no pueda\nvolver a ponerse en marcha por acci-\ndente!\nDesmonte el cabezal dosificador sin\nconectar la bomba al suministro eléctrico\ny asegúrese de que el líquido dosificado\nno haya penetrado en la carcasa de la\nbomba. Proceda según lo descrito en la\nsección 9.3.2 Desmontaje de la mem-\nbrana y las válvulas.\n9.6 Reparaciones\nAdvertencia\n¡ Únicamente el personal autorizado por\nGrundfos puede abrir la caja de la bomba!\nLas reparaciones solo deben realizarlas\npersonal autorizado y cualificado.\nEspañol (MX)\n!\n¡Apague la bomba y desconéctela de la\nde red eléctrica antes de realizar repara-\nciones y tareas de mantenimiento!\nLa sustitución del cable eléctrico debe ser\nrealizada por un Servicio Técnico Oficial\nGrundfos.\nNota\nDespués de consultar con Grundfos, por favor envie\nla bomba, junto con la declaración de seguridad\ncumplimentada por un especialista, a Grundfos.\nLa declaración de seguridad se encuentra al final de\nestas instrucciones. Debe copiarse, completarse y\nadjuntarse a la bomba.\n¡La bomba debe limpiarse antes del\nenvío!\nPrecaución\n¡Si es posible que el líquido dosificado\nhaya penetrado en la carcasa de la\nbomba, indiquelo claramente en la decla-\nración de seguridad! Respete lo descrito\nen la sección 9.4 Rotura de la membrana.\nSi no se cumplen estos requisitos, Grundfos puede\nnegarse a aceptar la entrega de la misma. El remi-\ntente se hará cargo de los costes de envío.\n35",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "10. Localización de fallos\nFallo\nCausa\nSolución\n1. La dosificación ha a)\nparado o es dema-\nsiado baja.\nVálvulas con fugas o bloquea-\ndas.\nComprobar y limpiar las válvulas.\nb)\nVálvulas instaladas incorrec-\ntamente.\nQuitar y montar las válvulas. Comprobar que\nla flecha en el alojamiento de válvula señala\nen el sentido del flujo. Comprobar que todas\nlas juntas tóricas están colocadas correcta-\nmente.\nc) Válvula de aspiración o tube-\nría/manguera de aspiración\ncon fugas o bloqueada.\nLimpiar y sellar la tubería de tubería/\nmanguera de aspiración.\nd) Demasiada altura de aspira-\nción.\nInstalar la bomba en una posición inferior.\nInstalar un tanque de cebado.\ne) Viscosidad demasiado alta.\nSeleccionar la función anticavitación, ver sec-\nción 6.15 Anticavitación.\nInstalar una tubería/manguera de mayor sec-\nción.\nMontar válvulas de muelle.\nf)\nBomba fuera de calibrado.\nCalibrar la bomba, ver sección 8. Calibrado.\n2. La bomba dosifica\npoco o dema-\nsiado.\na)\nBomba fuera de calibrado.\nCalibrar la bomba, ver sección 8. Calibrado.\n3. La bomba dosifica\nirregularmente.\na)\nVálvulas con fugas o bloquea-\ndas.\nComprobar y limpiar las válvulas.\n4. Fugas por el orifi-\ncio de purga.\na)\nDiafragma defectuoso.\nInstalar un nuevo diafragma.\n5. Fallos frecuentes\ndel diafragma.\na)\nDiafragma no sujeto adecua-\ndamente.\nInstalar un nuevo diafragma y comprobar que\nse sujeta adecuadamente.\nb)\nContrapresión demasiado alta\n(medida en la conexión de\ndescarga de la bomba).\nComprobar el sistema. Comprobar la válvula\nde inyección.\nc)\nSedimento en el cabezal de\ndosificación.\nLimpiar/enjuagar el cabezal de dosificación.\nEspañol (MX)\n11. Eliminación\nLa eliminación de este producto o partes de él debe\nrealizarse de forma respetuosa con el medio\nambiente:\n1. Utilice el servicio local, público o privado,\nde recogida de residuos.\n2. Si esto no es posible, contacte con la compañía o\nservicio técnico Grundfos más cercano.\nConsulte también la información disponible en\nwww.grundfos.com/product-recycling en relación con\nel final de la vida útil del producto.\n36",
+      "tablas": [
+        [
+          [
+            "Fallo",
+            "Causa",
+            "Solución"
+          ],
+          [
+            "1. La dosificación ha\nparado o es dema- siado baja.",
+            "a)\nVálvulas con fugas o bloquea- das.",
+            "Comprobar y limpiar las válvulas."
+          ],
+          [
+            "b) Válvulas instaladas incorrec- tamente.",
+            "Quitar y montar las válvulas. Comprobar que la flecha en el alojamiento de válvula señala en el sentido del flujo. Comprobar que todas las juntas tóricas están colocadas correcta- mente."
+          ],
+          [
+            "c) Válvula de aspiración o tube- ría/manguera de aspiración con fugas o bloqueada.",
+            "Limpiar y sellar la tubería de tubería/ manguera de aspiración."
+          ],
+          [
+            "d) Demasiada altura de aspira- ción.",
+            "Instalar la bomba en una posición inferior."
+          ],
+          [
+            "Instalar un tanque de cebado."
+          ],
+          [
+            "e) Viscosidad demasiado alta.",
+            "Seleccionar la función anticavitación, ver sec- ción 6.15 Anticavitación."
+          ],
+          [
+            "Instalar una tubería/manguera de mayor sec- ción."
+          ],
+          [
+            "Montar válvulas de muelle."
+          ],
+          [
+            "f) Bomba fuera de calibrado.",
+            "Calibrar la bomba, ver sección 8. Calibrado."
+          ],
+          [
+            "2. La bomba dosifica poco o dema- siado.",
+            "a) Bomba fuera de calibrado.",
+            "Calibrar la bomba, ver sección 8. Calibrado."
+          ],
+          [
+            "3. La bomba dosifica irregularmente.",
+            "a) Válvulas con fugas o bloquea- das.",
+            "Comprobar y limpiar las válvulas."
+          ],
+          [
+            "4. Fugas por el orifi- cio de purga.",
+            "a) Diafragma defectuoso.",
+            "Instalar un nuevo diafragma."
+          ],
+          [
+            "5. Fallos frecuentes del diafragma.",
+            "a) Diafragma no sujeto adecua- damente.",
+            "Instalar un nuevo diafragma y comprobar que se sujeta adecuadamente."
+          ],
+          [
+            "b) Contrapresión demasiado alta (medida en la conexión de descarga de la bomba).",
+            "Comprobar el sistema. Comprobar la válvula de inyección."
+          ],
+          [
+            "c) Sedimento en el cabezal de dosificación.",
+            "Limpiar/enjuagar el cabezal de dosificación."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "1\nAnexo\nDimensions\nAnexo\nA\nB\nF\nC\n1700\nC\nD\n0\n11\nG\nE\nH\n4xØ 7\nI\nTM02 7062 0315\nDimensions are in inches (mm)\nDME 60\nDME 150\nDME 375\nDME 940\nA\n6.93\n(176)\n6.93\n(176)\n9.37\n(238)\n9.37\n(238)\nB\n7.8\n(198)\n7.8\n(198)\n8.58\n(218)\n8.58\n(218)\nC\n13.03\n(331)\n13.58\n(345)\n18.54\n(471)\n19.53\n(496\nD\n11.18\n(284)\n11.18\n(284)\n14.33\n(364)\n14.33\n(364)\nE\n7.09\n(180)\n7.09\n(180)\n9.06\n(230)\n9.06\n(230)\nF\n17.48\n(444)\n17.48\n(444)\n21.26\n(540)\n21.22\n(539)\nG\n1.61\n(41)\n1.10\n(28)\n1.22\n(31)\n0.24\n(6)\nH\n2.91\n(74)\n2.91\n(74)\n3.74\n(95)\n3.74\n(95)\nI\n7.36\n(187)\n7.36\n(187)\n9.69\n(246)\n9.69\n(246)\n37",
+      "tablas": [
+        [
+          [
+            "DME 60",
+            "DME 150",
+            "DME 375",
+            "DME 940"
+          ],
+          [
+            "A",
+            "6.93",
+            "(176)",
+            "6.93",
+            "(176)",
+            "9.37",
+            "(238)",
+            "9.37",
+            "(238)"
+          ],
+          [
+            "B",
+            "7.8",
+            "(198)",
+            "7.8",
+            "(198)",
+            "8.58",
+            "(218)",
+            "8.58",
+            "(218)"
+          ],
+          [
+            "C",
+            "13.03",
+            "(331)",
+            "13.58",
+            "(345)",
+            "18.54",
+            "(471)",
+            "19.53",
+            "(496"
+          ],
+          [
+            "D",
+            "11.18",
+            "(284)",
+            "11.18",
+            "(284)",
+            "14.33",
+            "(364)",
+            "14.33",
+            "(364)"
+          ],
+          [
+            "E",
+            "7.09",
+            "(180)",
+            "7.09",
+            "(180)",
+            "9.06",
+            "(230)",
+            "9.06",
+            "(230)"
+          ],
+          [
+            "F",
+            "17.48",
+            "(444)",
+            "17.48",
+            "(444)",
+            "21.26",
+            "(540)",
+            "21.22",
+            "(539)"
+          ],
+          [
+            "G",
+            "1.61",
+            "(41)",
+            "1.10",
+            "(28)",
+            "1.22",
+            "(31)",
+            "0.24",
+            "(6)"
+          ],
+          [
+            "H",
+            "2.91",
+            "(74)",
+            "2.91",
+            "(74)",
+            "3.74",
+            "(95)",
+            "3.74",
+            "(95)"
+          ],
+          [
+            "I",
+            "7.36",
+            "(187)",
+            "7.36",
+            "(187)",
+            "9.69",
+            "(246)",
+            "9.69",
+            "(246)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "Anexo\n1\nAnexo\nService kits, DME\nPump size\nValves\nConnectors\nMaterials\nDosing head/\nGaskets/\nValves\nComplete dosing\nhead with\nNPT connectors\n(no hose clamp\nconnectors incl.)\nDME 60\nStandard\nPVC 3/4\"\nNPT\nPP/EPDM/Ceramics\n96549401\nPP/FKM/Ceramics\n96549402\nPVDF/FKM/Ceramics\n96549403\nStainless steel/FKM/Stainless steel\n96549404\nSpring\nloaded\nPP/EPDM/Ceramics\n96549405\nPP/FKM/Ceramics\n96549406\nPVDF/FKM/Ceramics\n96549407\nStainless steel/FKM/Stainless steel\n96549408\nDME 150\nStandard\nPP/EPDM/Ceramics\n96549409\nPP/FKM/Ceramics\n96549431\nPVDF/FKM/Ceramics\n96549432\nStainless steel/FKM/Stainless steel\n96549433\nSpring\nloaded\nPP/EPDM/Ceramics\n96549434\nPP/FKM/Ceramics\n96549435\nPVDF/FKM/Ceramics\n96549436\nStainless steel/FKM/Stainless steel\n96549437\nDME 375\nStandard\nPVC 1 1/4\"\nNPT\nPP/EPDM/Glass\n96561182\nPP/FKM/Glass\n96561183\nPVDF/FKM/Glass\n96561184\nStainless steel/FKM/Stainless steel\n96561185\nSpring\nloaded\nPP/EPDM/Glass\n96561186\nPP/FKM/Glass\n96561187\nPVDF/FKM/Glass\n96561188\nStainless steel/FKM/Stainless steel\n96561189\nDME 940\nStandard\nPP/EPDM/Glass\n96561200\nPP/FKM/Glass\n96561201\nPVDF/FKM/Glass\n96561202\nStainless steel/FKM/Stainless steel\n96561203\nSpring\nloaded\nPP/EPDM/Glass\n96561204\nPP/FKM/Glass\n96561205\nPVDF/FKM/Glass\n96561206\nStainless steel/FKM/Stainless steel\n96561207\nFront cover\n96520502\nVent valve\npos. 1\nPP/EPDM/Ceramics\n96520488\nPP/FKM/Ceramics\n96520489\nPVDF/KFM/Ceramics\n96520500\nSS/KFM/SS\n96520501\n38",
+      "tablas": [
+        [
+          [
+            "Pump size",
+            "Valves",
+            "Connectors",
+            "Materials Dosing head/ Gaskets/ Valves",
+            "Complete dosing head with NPT connectors (no hose clamp connectors incl.)"
+          ],
+          [
+            "DME 60",
+            "Standard",
+            "PVC 3/4\" NPT",
+            "PP/EPDM/Ceramics",
+            "96549401"
+          ],
+          [
+            "PP/FKM/Ceramics",
+            "96549402"
+          ],
+          [
+            "PVDF/FKM/Ceramics",
+            "96549403"
+          ],
+          [
+            "Stainless steel/FKM/Stainless steel",
+            "96549404"
+          ],
+          [
+            "Spring loaded",
+            "PP/EPDM/Ceramics",
+            "96549405"
+          ],
+          [
+            "PP/FKM/Ceramics",
+            "96549406"
+          ],
+          [
+            "PVDF/FKM/Ceramics",
+            "96549407"
+          ],
+          [
+            "Stainless steel/FKM/Stainless steel",
+            "96549408"
+          ],
+          [
+            "DME 150",
+            "Standard",
+            "PP/EPDM/Ceramics",
+            "96549409"
+          ],
+          [
+            "PP/FKM/Ceramics",
+            "96549431"
+          ],
+          [
+            "PVDF/FKM/Ceramics",
+            "96549432"
+          ],
+          [
+            "Stainless steel/FKM/Stainless steel",
+            "96549433"
+          ],
+          [
+            "Spring loaded",
+            "PP/EPDM/Ceramics",
+            "96549434"
+          ],
+          [
+            "PP/FKM/Ceramics",
+            "96549435"
+          ],
+          [
+            "PVDF/FKM/Ceramics",
+            "96549436"
+          ],
+          [
+            "Stainless steel/FKM/Stainless steel",
+            "96549437"
+          ],
+          [
+            "DME 375",
+            "Standard",
+            "PVC 1 1/4\" NPT",
+            "PP/EPDM/Glass",
+            "96561182"
+          ],
+          [
+            "PP/FKM/Glass",
+            "96561183"
+          ],
+          [
+            "PVDF/FKM/Glass",
+            "96561184"
+          ],
+          [
+            "Stainless steel/FKM/Stainless steel",
+            "96561185"
+          ],
+          [
+            "Spring loaded",
+            "PP/EPDM/Glass",
+            "96561186"
+          ],
+          [
+            "PP/FKM/Glass",
+            "96561187"
+          ],
+          [
+            "PVDF/FKM/Glass",
+            "96561188"
+          ],
+          [
+            "Stainless steel/FKM/Stainless steel",
+            "96561189"
+          ],
+          [
+            "DME 940",
+            "Standard",
+            "PP/EPDM/Glass",
+            "96561200"
+          ],
+          [
+            "PP/FKM/Glass",
+            "96561201"
+          ],
+          [
+            "PVDF/FKM/Glass",
+            "96561202"
+          ],
+          [
+            "Stainless steel/FKM/Stainless steel",
+            "96561203"
+          ],
+          [
+            "Spring loaded",
+            "PP/EPDM/Glass",
+            "96561204"
+          ],
+          [
+            "PP/FKM/Glass",
+            "96561205"
+          ],
+          [
+            "PVDF/FKM/Glass",
+            "96561206"
+          ],
+          [
+            "Stainless steel/FKM/Stainless steel",
+            "96561207"
+          ]
+        ],
+        [
+          [
+            "Front cover",
+            "96520502"
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "Vent valve pos. 1",
+            "PP/EPDM/Ceramics",
+            "96520488"
+          ],
+          [
+            "PP/FKM/Ceramics",
+            "96520489"
+          ],
+          [
+            "PVDF/KFM/Ceramics",
+            "96520500"
+          ],
+          [
+            "SS/KFM/SS",
+            "96520501"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Power cord\nSchuko\n96440333\nUS\n96440334\nSchweiz\n96460537\nJapan\n96460769\nAustralia\n96460770\nU.K.\n96460772\nAnexo\n19\n2\n3\nTT\n4\n5\n3\n6\n7\n8\n9\nTM02 7064 0315\n12 -\n-10\n1 1\n39",
+      "tablas": [
+        [
+          [
+            "Power cord",
+            "Schuko",
+            "96440333"
+          ],
+          [
+            "US",
+            "96440334"
+          ],
+          [
+            "Schweiz",
+            "96460537"
+          ],
+          [
+            "Japan",
+            "96460769"
+          ],
+          [
+            "Australia",
+            "96460770"
+          ],
+          [
+            "U.K.",
+            "96460772"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "Anexo\n1\nAnexo\nSafety declaration\nPlease copy, fill in and sign this sheet and attach it to the pump returned for service.\nNota\nFill in this document using english or ger-\nman language.\nProduct type (nameplate)\nModel number (nameplate)\nDosing medium\nFault description\nPlease make a circle around the damaged parts.\nIn the case of an electrical or functional fault, please mark the cabinet.\nHHHHHE\nTM02 8957 0315\nPlease describe the error/cause of the error in brief.\nDosing liquid has possibly entered the pump housing.\nThe pump must not be connected to the power supply! Danger of explosion!\nWe hereby declare that the pump has been cleaned and is completely free from chemical, biological and\nradioactive substances.\nDate and signature\nCompany stamp\n40",
+      "tablas": []
+    }
+  ]
+}

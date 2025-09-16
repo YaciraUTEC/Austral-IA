@@ -1,0 +1,1684 @@
+{
+  "archivo": "Eurodrive MCLTPB 03705A3410_p1_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Accionamientos \\ Automatización de accionamientos \\ Integración de sistemas | Servicios\nInstrucciones de funcionamiento\nSEW\nSEW\nMOVITRAC®\nLTP-B\nO\nSEW\nSEW\nEURODRIVE\nEdición 06/2012\n19440502 / ES",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "SEW-EURODRIVE-Driving the world\nTARE\nCICAP.\nO\nKKFU\n144794 3\n4261\nK\nMAXEW\nTARE\nDU CAP\nTAR\nMA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Índice\n1 Notas importantes\n5\n1.1\nUso de la documentación\n5\n1.2\nEstructura de las notas de seguridad.\n5\n1.3\nDerechos de reclamación en caso de defectos\n7\n1.4\nExclusión de responsabilidad.\n7\n1.5\nDerechos de autor\n7\n1.6\nNombres de productos y marcas\n7\n2 Notas de seguridad\n8\n2.1\nObservaciones preliminares.\n8\n2.2\nInformación general\n8\n2.3\nGrupo de destino\n9\n2.4\nUso indicado\n9\n2.5\nFunciones de seguridad\n9\n2.6\nTransporte y almacenamiento.\n10\n2.7\nMontaje e instalación\n10\n2.8\nConexión eléctrica\n11\n2.9\nDesconexión segura\n11\n2.10\nPuesta en marcha y funcionamiento\n11\n2.11 Temperatura de los aparatos\n12\n3 Información general sobre MOVITRAC® LTP-B\n13\n3.1\nRangos de tensión de entrada\n13\n3.2\nDesignación de modelo\n13\n3.3\nCapacidad de sobrecarga\n14\n3.4\nFunciones de protección\n14\n4 Instalación\n15\n4.1\nInstalación mecánica\n15\n4.2\nDimensiones\n15\n4.3\nCarcasa IP20: Montaje y dimensiones del armario de conexiones\n19\n4.4\nInstalación eléctrica\n21\n5 Puesta en marcha\n35\n5.1\nInterfaz de usuario\n35\n5.2\nPuesta en marcha sencilla de MOVITRAC® LTP-B\n37\n6 Funcionamiento.\n45\n6.1\nEstado del accionamiento\n45\n7 Servicio y códigos de fallo\n47\n7.1\nDiagnóstico de fallos\n47\n7.2\nHistórico de fallos\n47\n7.3\nCódigos de fallo\n48\n7.4\nServicio técnico electrónico de SEW\n50\n8 Parámetros\n51\n8.1\nVista general parámetros\n51\n8.2\nExplicación de los parámetros\n59\n9 Software\n100\n9.1\nControl Modbus\n100\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n3\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "1 Notas",
+            "importantes",
+            "5"
+          ],
+          [
+            "1.1",
+            "Uso de la documentación",
+            "5"
+          ],
+          [
+            "1.2",
+            "Estructura de las notas de seguridad.",
+            "5"
+          ],
+          [
+            "1.3",
+            "Derechos de reclamación en caso de defectos",
+            "7"
+          ],
+          [
+            "1.4",
+            "Exclusión de responsabilidad.",
+            "7"
+          ],
+          [
+            "1.5",
+            "Derechos de autor",
+            "7"
+          ],
+          [
+            "1.6",
+            "Nombres de productos y marcas",
+            "7"
+          ],
+          [
+            "2 Notas de seguridad",
+            "8"
+          ],
+          [
+            "2.1",
+            "Observaciones preliminares.",
+            "8"
+          ],
+          [
+            "2.2",
+            "Información general",
+            "8"
+          ],
+          [
+            "2.3",
+            "Grupo de destino",
+            "9"
+          ],
+          [
+            "2.4",
+            "Uso indicado",
+            "9"
+          ],
+          [
+            "2.5",
+            "Funciones de seguridad",
+            "9"
+          ],
+          [
+            "2.6",
+            "Transporte y almacenamiento.",
+            "10"
+          ],
+          [
+            "2.7",
+            "Montaje e instalación",
+            "10"
+          ],
+          [
+            "2.8",
+            "Conexión eléctrica",
+            "11"
+          ],
+          [
+            "2.9",
+            "Desconexión segura",
+            "11"
+          ],
+          [
+            "2.10",
+            "Puesta en marcha y funcionamiento",
+            "11"
+          ],
+          [
+            "2.11",
+            "Temperatura de los aparatos",
+            "12"
+          ],
+          [
+            "3 Información general sobre MOVITRAC® LTP-B",
+            "13"
+          ],
+          [
+            "3.1",
+            "Rangos de tensión de entrada",
+            "13"
+          ],
+          [
+            "3.2",
+            "Designación de modelo",
+            "13"
+          ],
+          [
+            "3.3",
+            "Capacidad de sobrecarga",
+            "14"
+          ],
+          [
+            "3.4",
+            "Funciones de protección",
+            "14"
+          ],
+          [
+            "4 Instalación",
+            "15"
+          ],
+          [
+            "4.1",
+            "Instalación mecánica",
+            "15"
+          ],
+          [
+            "4.2",
+            "Dimensiones",
+            "15"
+          ],
+          [
+            "4.3",
+            "Carcasa IP20: Montaje y dimensiones del armario de conexiones",
+            "19"
+          ],
+          [
+            "4.4",
+            "Instalación eléctrica",
+            "21"
+          ],
+          [
+            "5 Puesta en marcha",
+            "35"
+          ],
+          [
+            "5.1",
+            "Interfaz de usuario",
+            "35"
+          ],
+          [
+            "5.2",
+            "Puesta en marcha sencilla de MOVITRAC® LTP-B",
+            "37"
+          ],
+          [
+            "6 Funcionamiento.",
+            "45"
+          ],
+          [
+            "6.1",
+            "Estado del accionamiento",
+            "45"
+          ],
+          [
+            "7 Servicio y códigos de fallo",
+            "47"
+          ],
+          [
+            "7.1",
+            "Diagnóstico de fallos",
+            "47"
+          ],
+          [
+            "7.2",
+            "Histórico de fallos",
+            "47"
+          ],
+          [
+            "7.3",
+            "Códigos de fallo",
+            "48"
+          ],
+          [
+            "7.4",
+            "Servicio técnico electrónico de SEW",
+            "50"
+          ],
+          [
+            "8 Parámetros",
+            "51"
+          ],
+          [
+            "8.1",
+            "Vista general parámetros",
+            "51"
+          ],
+          [
+            "8.2",
+            "Explicación de los parámetros",
+            "59"
+          ],
+          [
+            "9 Software",
+            "100"
+          ],
+          [
+            "9.1",
+            "Control Modbus",
+            "100"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Índice\n10 Datos técnicos de MOVITRAC® LTP-B\n103\n10.1 Conformidad\n103\n10.2 Condiciones ambientales\n103\n10.3 Potencia y corriente\n103\n11 Índice de direciones.\n113\nÍndice de palabras clave\n125\n4\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "10 Datos técnicos de MOVITRAC® LTP-B",
+            "103"
+          ],
+          [
+            "10.1 Conformidad",
+            "103"
+          ],
+          [
+            "10.2 Condiciones ambientales",
+            "103"
+          ],
+          [
+            "10.3 Potencia y corriente",
+            "103"
+          ],
+          [
+            "11 Índice de direciones.",
+            "113"
+          ],
+          [
+            "Índice de palabras clave",
+            "125"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Notas importantes\nUso de la documentación\n1\n!\n1\nNotas importantes\n1.1\nUso de la documentación\nEsta documentación es parte integrante del producto y contiene una serie de\nindicaciones importantes para el funcionamiento y el servicio. La documentación está\ndestinada a todas las personas que realizan trabajos de montaje, instalación, puesta en\nmarcha e inspección y mantenimiento en el producto.\nLa documentación debe estar disponible en estado legible. Cerciórese de que los\nresponsables de la instalación o de operación, así como las personas que trabajan en\nel equipo bajo responsabilidad propia han leído y entendido completamente la\ndocumentación. En caso de dudas o necesidad de más información, póngase en\ncontacto con SEW-EURODRIVE.\n1.2\nEstructura de las notas de seguridad\nAtenerse a la documentación correspondiente es imprescindible para:\n· un funcionamiento sin problemas\n· tener derecho a reclamar en caso de defectos en el producto\nPor ello, lea las instrucciones de funcionamiento antes de utilizar el aparato.\nEstas instrucciones de funcionamiento contienen información importante sobre el\nservicio técnico. Por este motivo, mantenga siempre las instrucciones de\nfuncionamiento cerca del aparato.\n1.2.1 Significado de las palabras de indicación\nLa tabla siguiente muestra el escalonamiento y el significado de las palabras de\nindicación para notas de seguridad, advertencias a daños materiales y otras\nindicaciones.\nPalabra de indicación\nSignificado\nConsecuencias si no se respeta\n!\n¡PELIGRO!\nAdvierte de un peligro inminente\nLesiones graves o fatales\nA\n¡ADVERTENCIA!\nPosible situación peligrosa\nLesiones graves o fatales\n¡PRECAUCIÓN!\nPosible situación peligrosa\nLesiones leves\n¡PRECAUCIÓN!\nPosibles daños materiales\nDaños en el sistema de accionamiento\no en su entorno\nNOTA\nIndicación o consejo útil:\nFacilita el manejo del sistema de\naccionamiento.\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n5\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "Palabra de indicación",
+            "Significado",
+            "Consecuencias si no se respeta"
+          ],
+          [
+            "! ¡PELIGRO!",
+            "Advierte de un peligro inminente",
+            "Lesiones graves o fatales"
+          ],
+          [
+            "A ¡ADVERTENCIA!",
+            "Posible situación peligrosa",
+            "Lesiones graves o fatales"
+          ],
+          [
+            "¡PRECAUCIÓN!",
+            "Posible situación peligrosa",
+            "Lesiones leves"
+          ],
+          [
+            "¡PRECAUCIÓN!",
+            "Posibles daños materiales",
+            "Daños en el sistema de accionamiento o en su entorno"
+          ],
+          [
+            "NOTA",
+            "Indicación o consejo útil: Facilita el manejo del sistema de accionamiento.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "1\n!\nNotas importantes\nEstructura de las notas de seguridad\n1.2.2 Estructura de las notas de seguridad referidas a capítulos\nLas notas de seguridad referidas a capítulos son válidas no sólo para una actuación\nconcreta sino para varias acciones dentro de un tema. Los pictogramas empleados\nremiten a un peligro general o específico.\nAquí puede ver la estructura formal de una nota de seguridad referida a un capítulo:\nA\n¡PALABRA DE INDICACIÓN!\nTipo del peligro y su fuente.\n!\nPosible(s) consecuencia(s) si no se respeta.\n· Medida(s) para la prevención del peligro.\nAquí puede ver un ejemplo para una nota de seguridad referida a un capítulo:\n¡ADVERTENCIA!\nCaída de la carga suspendida.\nLesiones graves o fatales.\n· No permanezca debajo de la carga suelta.\n· Asegure el área de peligro.\n1.2.3 Estructura de las notas de seguridad integradas\nLas notas de seguridad integradas están integradas directamente en las instrucciones\nde acción antes del paso de acción peligroso.\nAquí puede ver la estructura formal de una nota de seguridad integrada:\n· A PALABRA DE INDICACIÓN Tipo del peligro y su fuente.\nPosible(s) consecuencia(s) si no se respeta.\n- Medida(s) para la prevención del peligro.\nAquí puede ver un ejemplo para una nota de seguridad integrada:\n. A\n¡PELIGRO! Peligro de aplastamiento por el rearranque accidental del\naccionamiento.\nLesiones graves o fatales.\n- Desconecte el accionamiento de la alimentación de tensión.\n- Asegure el accionamiento contra el rearranque accidental.\n6\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "1\nNotas importantes\nDerechos de reclamación en caso de defectos\n1.3 Derechos de reclamación en caso de defectos\nAtenerse a la documentación de MOVITRAC® B es el requisito previo para que no\nsurjan problemas y para el cumplimiento de posibles derechos de reclamación en caso\nde defectos del producto durante el periodo de garantía. Por ello, lea la documentación\nantes de trabajar con el aparato.\nCerciórese de que los responsables de la instalación o de operación, así como las\npersonas que trabajan en el equipo bajo responsabilidad propia tienen acceso a la\ndocumentación en estado legible.\n1.4\nExclusión de responsabilidad\nAtenerse a la documentación de MOVITRAC® B es el requisito previo básico para un\nfuncionamiento seguro de MOVITRAC® B y para obtener las propiedades del producto\ny las características de rendimiento. SEW-EURODRIVE no asume ninguna\nresponsabilidad por los daños personales, materiales o patrimoniales que se produzcan\npor no tener en cuenta la documentación. La responsabilidad por deficiencias\nmateriales queda excluida en tales casos.\n1.5\nDerechos de autor\nC 2011 - SEW-EURODRIVE. Todos los derechos reservados.\nQueda prohibida la reproducción, copia, distribución o cualquier otro uso completo o\nparcial de este documento.\n1.6\nNombres de productos y marcas\nLas marcas y nombres de productos mencionados en esta documentación son marcas\ncomerciales o marcas comerciales registradas de sus respectivos propietarios.\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n7\nSEW\nEURODRIVE",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "2\n!\nNotas de seguridad\nObservaciones preliminares\n2\nNotas de seguridad\nLos convertidores MOVITRAC® LTP-B no pueden cumplir funciones de seguridad sin\ndisponer de sistemas de seguridad superiores.\nLos convertidores MOVITRAC® LTP-B no pueden utilizarse en aplicaciones de\nelevación como dispositivos de seguridad.\n2.1\nObservaciones preliminares\nLas siguientes notas de seguridad hacen referencia principalmente al uso de\nconvertidores de frecuencia. En caso de utilizar accionamientos con motores o\nmotorreductores, tenga en cuenta también las notas de seguridad para motores y\nreductores que aparecen en las respectivas instrucciones de funcionamiento.\nTenga en cuenta también las notas de seguridad suplementarias de cada uno de los\ncapítulos de estas instrucciones de funcionamiento.\n2.2 Información general\nDurante el funcionamiento y correspondiendo a su tipo de protección, los convertidores\nde frecuencia pueden presentar partes sin recubrimiento, sometidas a tensión.\nLesiones graves o fatales.\n· Cualquier trabajo relacionado con el transporte, almacenamiento, ajustes/montaje,\nconexión, puesta en marcha, mantenimiento y reparación debe ser realizado por\nespecialistas cualificados de conformidad con:\n- las respectivas instrucciones de funcionamiento detalladas\n- las señales de advertencia y de seguridad en el motor/motorreductor\n- toda la documentación adicional de planificación, instrucciones de puesta en\nmarcha y esquemas de conexiones pertenecientes al accionamiento\n- la normativas y los requisitos específicos del sistema\n- las normativas nacionales o regionales de seguridad y prevención de accidentes.\n· No instale nunca productos que presenten daños.\n· Informe inmediatamente de la existencia de desperfectos a la empresa transportista.\nPueden ocasionarse lesiones graves o daños en las instalaciones como consecuencia\nde la extracción no autorizada de la cubierta, uso inadecuado o instalación o manejo\nincorrecto.\nEncontrará más información en la documentación.\n8\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Notas de seguridad\nGrupo de destino\n2\n!\n2.3\nGrupo de destino\nLos trabajos mecánicos deben ser realizados únicamente por personal técnico formado\nadecuadamente. En estas instrucciones de funcionamiento se considera personal\ntécnico a aquellas personas familiarizadas con la estructura, la instalación mecánica, la\nsolución de problemas y el mantenimiento del producto, y que cuentan con la siguiente\ncualificación:\n· Formación en mecánica (por ejemplo, como mecánico o especialista en\nmecatrónica) con el examen de certificación aprobado.\n· Conocimiento de estas instrucciones de funcionamiento.\nLos trabajos electrotécnicos deben ser realizados únicamente por personal electricista\nformado adecuadamente. En estas instrucciones de funcionamiento se considera\npersonal electricista a aquellas personas familiarizadas con la instalación eléctrica, la\npuesta en marcha, la solución de problemas y el mantenimiento del producto, y que\ncuentan con la siguiente cualificación:\n· Formación en electrónica (por ejemplo, como especialista en electrónica o\nmecatrónica) con el examen de certificación aprobado.\n· Conocimiento de estas instrucciones de funcionamiento.\nTodos los trabajos en los demás ámbitos de transporte, almacenamiento,\nfuncionamiento y tratamiento de residuos deben ser efectuados únicamente por\npersonas instruidas de una manera adecuada.\n2.4 Uso indicado\nLos convertidores de frecuencia son componentes para el control de motores de CA\nasíncronos. Los convertidores de frecuencia están concebidos para su instalación en\nmáquinas o sistemas eléctricos. No conecte cargas capacitivas a los convertidores de\nfrecuencia. El funcionamiento con cargas capacitivas produce sobretensiones y puede\ndestruir la unidad.\nSi los convertidores de frecuencia se ponen en circulación en el territorio de EU/EFTA,\nrigen las siguientes normas:\n· En el caso de instalación en máquinas, queda terminantemente prohibido poner en\nmarcha el convertidor de frecuencia (concretamente el inicio del funcionamiento\nconforme a lo prescrito) hasta no constatar que las máquinas cumplen la directiva\nCE 2006/42/CE (directiva sobre máquinas); tenga en cuenta la EN 60204.\n· Se autoriza la puesta en marcha (concretamente el inicio del funcionamiento\nconforme a lo prescrito) únicamente cuando se cumpla la directiva de\nCompatibilidad Electromagnética (2004/108/CE).\n· Los convertidores de frecuencia cumplen los requisitos de la directiva de baja tensión\n2006/95/CE. Se aplican las normativas armonizadas de la serie EN 61800-5-1/\nDIN VDE T105 en combinación con EN 60439-1/DIN VDE 0660 parte 500 y\nEN 60146/DIN VDE 0558 a los convertidores de frecuencia.\nConsulte los datos técnicos y las indicaciones para las condiciones de conexión en la\nplaca de características y en la documentación y respételos.\n2.5\nFunciones de seguridad\nLos convertidores de SEW-EURODRIVE no pueden cumplir funciones de seguridad sin\ndisponer de sistemas de seguridad superiores.\nUtilice sistemas de seguridad de orden superior para garantizar la protección de las\nmáquinas y de las personas.\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n9\nSEW\nEURODRIVE",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "2\n!\nNotas de seguridad\nTransporte y almacenamiento\n2.6\nTransporte y almacenamiento\nInmediatamente después de la recepción, inspeccione el envío en busca de daños\nderivados del transporte. Si detecta daños, informe inmediatamente a la empresa\ntransportista. Puede ser necesario cancelar la puesta en marcha.\n2.7\nMontaje e instalación\nAsegúrese de que la instalación y refrigeración de los equipos se realiza de acuerdo con\nlas normativas incluidas en la documentación correspondiente.\nProteja el aparato MOVITRAC® LT de esfuerzos excesivos. Asegúrese particularmente\ndurante el transporte de que no se deforma ningún componente y que se cumplen las\ndistancias de aislamiento. Los componentes eléctricos no deben ser dañados o\ndestruidos mecánicamente.\nA menos que no se especifique expresamente lo contrario, queda prohibido:\n· Uso en ámbitos potencialmente explosivos\n· Uso en entornos con sustancias nocivas:\n- Aceites\n- Ácidos\n- Gases\n- Vapores\n- Polvo\n- Radiación\n- Otros entornos perjudiciales\n· Uso en aplicaciones en las que se produzcan cargas mecánicas de vibración y\nchoque que excedan de lo establecido en la norma IEC 60068-2-29.\n10\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "2\nNotas de seguridad\nConexión eléctrica\n2.8\nConexión eléctrica\nObserve durante los trabajos en convertidores de frecuencia sometidos a tensión la\nnormativa nacional de prevención de accidentes en vigor (p.ej. BGV A3 en Alemania).\nTenga en cuenta a la hora de la instalación las especificaciones para secciones de\ncable, fusibles y conexión del conductor de puesta a tierra. En estas instrucciones de\nfuncionamiento se incluyen indicaciones adicionales.\nPuede encontrar las instrucciones para la instalación conforme a las medidas de\ncompatibilidad electromagnética (CEM) - tales como apantallado, puesta a tierra,\ndisposición de filtros e instalación del cableado - en estas instrucciones de\nfuncionamiento. El cumplimiento de los valores límite requeridos por la regulación CEM\nes responsabilidad del fabricante de la instalación o de la máquina.\nAsegúrese de que las medidas preventivas y los instrumentos de protección se\ncorresponden con la normativa vigente (p. ej. EN 60204 o EN 61800-5-1).\nConecte a tierra el equipo.\n2.9\nDesconexión segura\nLa unidad satisface todos los requisitos de desconexión segura de conexiones de\npotencia y conexiones electrónicas de acuerdo con la norma EN 61800-5-1. A fin de\ngarantizar esta desconexión, todos los circuitos de corriente conectados deberán\ncumplir también los requisitos para la desconexión segura.\n2.10 Puesta en marcha y funcionamiento\nNo desactive los dispositivos de vigilancia y protección (ni para una marcha de prueba).\nDesconecte el MOVITRAC® LT en caso de duda si se producen cambios respecto al\nfuncionamiento normal (p. ej. incremento de temperatura, ruidos, vibraciones).\nDetermine la causa y diríjase a SEW-EURODRIVE, si fuese preciso.\nEn caso necesario, los sistemas con aparatos MOVITRAC® LT integrados deben\nequiparse con dispositivos de vigilancia y protección adicionales que correspondan a\nlas normativas de seguridad aplicables en cada caso, p. ej. las leyes sobre\nequipamiento técnico, normativas de prevención de accidentes, etc.\nEn aplicaciones con un potencial de riesgo elevado pueden ser necesarias medidas de\nprotección adicionales. Cada vez que se modifique la configuración se ha de comprobar\nla efectividad de la protección.\nDurante el funcionamiento, las conexiones que no se utilicen deben estar tapados con\nlos tapones protectores incluidos en la entrega.\nNo toque de ninguna manera los componentes sometidos a tensión ni las conexiones\nde corriente inmediatamente después de que haya separado el MOVITRAC® LT de la\ntensión de alimentación, ya que posiblemente todavía están cargados algunos\ncondensadores. Respete un tiempo de desconexión mínimo de 10 minutos. Tenga en\ncuenta las correspondientes etiquetas en el MOVITRAC® LT.\nCuando el equipo está conectado están presentes tensiones peligrosas en todas las\nconexiones de corriente y en los cables y bornas del motor conectados a ellos. Esto\ntambién sucede cuando el equipo está bloqueado y el motor se encuentra parado.\nSi ya no están iluminados el LED de estado y otros elementos de indicación, esto no\nsignifica que el aparato está separado de la red y que está exento de tensión.\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n11\nSEW\nEURODRIVE",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "2\n!\nNotas de seguridad\nTemperatura de los aparatos\nUn bloqueo mecánico o las funciones de seguridad internas del aparato pueden\nprovocar la parada del motor. La subsanación de la causa del fallo o un reset pueden\nocasionar el rearranque automático del motor. Si por motivos de seguridad esto no\nestuviera permitido para la máquina accionada, desconecte el aparato del sistema de\nalimentación antes de corregir el fallo.\nImportante - Riesgo de sufrir quemaduras: Las superficies del MOVITRAC® LT y de los\naccesorios externos (p. ej. de la resistencia de frenado) pueden alcanzar durante el\nfuncionamiento temperaturas superiores a 70 °C.\n2.11 Temperatura de los aparatos\nPor regla general, los convertidores de frecuencia MOVITRAC® LTP-B se operan con\nresistencias de frenado. Generalmente, las resistencias de frenado se montan en el\ntecho del armario de conexiones.\nLas resistencias de frenado pueden alcanzar, en su superficie, una temperatura de\nentre 70 ℃ y 250 ℃.\nNo toque nunca las resistencias de frenado durante el funcionamiento ni durante la fase\nde enfriamiento tras la desconexión.\n12\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "3\nInformación general sobre MOVITRAC® LTP-B\nRangos de tensión de entrada\n3\nInformación general sobre MOVITRAC® LTP-B\n3.1\nRangos de tensión de entrada\nSegún el modelo y el rango de potencia, se pueden conectar los accionamientos\ndirectamente a las siguientes redes eléctricas:\nMOVITRAC® LTP-B, tamaño 2 (200-240 V):\n200 V-240 V + 10 %, monofásico*, 50-60 Hz + 5 %\nMOVITRAC® LTP-B, todos los tamaños (200-240 V):\n200 V-240 V + 10 %, trifásico, 50-60 Hz + 5 %\nMOVITRAC® LTP-B, todos los tamaños (380-480 V):\n380 V-480 V + 10 %, trifásico, 50-60 Hz + 5 %\n•\nNOTA\n* Existe también la posibilidad de conectar el MOVITRAC® LTP-B monofásico a dos\nfases de una red trifásica con 200-240 V.\nLos aparatos que se conectan a una red trifásica, están diseñados para un desequilibrio\nde red máximo de 3 % entre las fases. Para redes de alimentación con desequilibrios\nde red superiores a 3 % (típicos en India y regiones de Asia/Pacífico incluida China)\nSEW-EURODRIVE recomienda utilizar reactancias de entrada.\n3.2 Designación de modelo\nMC LTP\nB\n0015\n20 1 4\n00\n(60 Hz)\n60 Hz\nSólo versión americana\nTipo\n00 = carcasa IP20 estándar\n10 = carcasa IP55 / NEMA 12\nCuadrantes\n4 = 4Q (con freno chopper)\nTipo de conexión\n1 = monofásica\n3 = trifásica\nFiltro de red\n0 = clase CEM 0\nA = clase CEM C2\nB = clase CEM C1\nTensión de red\n2 = 200-240 V\n5 = 380-480 V\nPotencia de motor\nrecomendada\n0015 = 1,5 KW\nVersión\nB\nModelo de\nproducto\nMC LTP\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n13\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "60 Hz",
+            "Sólo versión americana"
+          ],
+          [
+            "Tipo",
+            "00 = carcasa IP20 estándar 10 = carcasa IP55 / NEMA 12"
+          ],
+          [
+            "Cuadrantes",
+            "4 = 4Q (con freno chopper)"
+          ],
+          [
+            "Tipo de conexión",
+            "1 = monofásica 3 = trifásica"
+          ],
+          [
+            "Filtro de red",
+            "0 = clase CEM 0 A = clase CEM C2 B = clase CEM C1"
+          ],
+          [
+            "Tensión de red",
+            "2 = 200-240 V 5 = 380-480 V"
+          ],
+          [
+            "Potencia de motor recomendada",
+            "0015 = 1,5 KW"
+          ],
+          [
+            "Versión",
+            "B"
+          ],
+          [
+            "Modelo de producto",
+            "MC LTP"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Información general sobre MOVITRAC® LTP-B\nCapacidad de sobrecarga\n3\n3.3\nCapacidad de sobrecarga\nCapacidad de sobrecarga\nen base a la corriente\nnominal del motor\n60 segundos\n2 segundos\nAjuste de fábrica\n150 %\n175 %\nCMP\n200 %\n250 %1)\nSync 250\n200 %\n250 %\n1) Sólo 200 % para tamaño 3; 5,5 kW\nCapacidad de sobrecarga\nen base a la corriente\nnominal del motor\n300 segundos\n5 segundos\nMGF2 con LTP-B, 1,5 KW\nMGF4 con LTP-B, 2,2 KW\n200 %\n300 %\nLa adaptación de la sobrecarga del motor se describe con el parámetro P1-08 Corriente\nnominal del motor.\n3.4 Funciones de protección\n· Cortocircuito de salida, fase-fase, fase-tierra\n· Sobrecorriente de salida\n· Protección contra sobrecarga\n- El accionamiento trata la sobrecarga tal y como se describe en \"Capacidad de\nsobrecarga\".\n· Fallo de sobretensión\n- Está ajustado en 123 % de la tensión nominal de red máxima del accionamiento.\n· Fallo de subtensión\n· Fallo de sobretemperatura\n· Fallo de subtemperatura\n- El accionamiento se desconecta a una temperatura inferior a -10 °C.\n· Fallo de fase de red\n- Un accionamiento en marcha se desconecta cuando una fase de una red de\ncorriente trifásica falla por más de 15 segundos.\n14\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "Capacidad de sobrecarga en base a la corriente nominal del motor",
+            "60 segundos",
+            "2 segundos"
+          ],
+          [
+            "Ajuste de fábrica",
+            "150 %",
+            "175 %"
+          ],
+          [
+            "CMP",
+            "200 %",
+            "250 %1)"
+          ],
+          [
+            "Sync 250",
+            "200 %",
+            "250 %"
+          ]
+        ],
+        [
+          [
+            "Capacidad de sobrecarga en base a la corriente nominal del motor",
+            "300 segundos",
+            "5 segundos"
+          ],
+          [
+            "MGF2 con LTP-B, 1,5 KW MGF4 con LTP-B, 2,2 KW",
+            "200 %",
+            "300 %"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "4\nInstalación\nInstalación mecánica\n4\nInstalación\n4.1\nInstalación mecánica\n. Antes de la instalación compruebe detenidamente el MOVITRAC® LTP-B y\nasegúrese de que no presenta daños.\n· Guarde el MOVITRAC® LTP-B en su embalaje hasta el momento en que lo utilice.\nEl lugar de almacenamiento ha de estar limpio y seco y tener una temperatura\nambiente de entre -40 ℃ y +60 ℃.\n· Instale el MOVITRAC® LTP-B sobre una superficie plana, vertical, no inflamable, sin\nvibraciones y en una carcasa adecuada. Si es necesario un índice de protección IP\ndeterminado, respete la norma EN 60529.\n· Mantenga alejados del accionamiento materiales inflamables.\n· Evite la entrada de cuerpos extraños con capacidad conductora o inflamables.\n· La temperatura ambiente máxima admisible durante el funcionamiento es de 50 ℃\npara convertidores con IP20 y de 40 °℃ para convertidores con IP55. La temperatura\nambiente mínima admisible durante el funcionamiento es de -10 °C.\nObserve también los datos específicos en el capítulo \"Condiciones del entorno\"\n(-> pág. 103).\n· La humedad relativa del aire ha de mantenerse por debajo de 95 % (no debe haber\ncondensación).\n· Los aparatos MOVITRAC® LTP-B pueden instalarse uno al lado del otro. De esta\nforma se garantiza un espacio libre de ventilación suficiente entre los aparatos. En\ncaso de que se vaya a instalar el MOVITRAC® LTP-B encima de otro accionamiento\nu otro dispositivo que emita calor, la distancia de separación en vertical deberá ser\nde mínimo 150 mm. El armario de conexiones deberá estar dotado de una\nventilación forzada o ser lo suficientemente grande como para posibilitar una\nrefrigeración propia (véase el capítulo \"Carcasa IP20: Montaje y dimensiones del\narmario de conexiones\" (-> pág. 19)).\n· Montaje sobre raíl DIN sólo es posible con convertidores de tamaño 2 (IP20).\n4.2 Dimensiones\nMOVITRAC® LTP-B está disponible en dos modelos de carcasa:\n· Carcasa IP20 para el uso en armarios de conexiones\n· IP55 / NEMA 12 K\nLa carcasa IP55 / NEMA 12 K garantiza la protección frente a la humedad y el polvo.\nEsto posibilita que los convertidores funcionen en condiciones difíciles en espacios\ninteriores. La electrónica de los convertidores es idéntica. Las únicas diferencias\nradican en las dimensiones de la carcasa y en el peso.\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n15\nSEW\nEURODRIVE",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Instalación\nDimensiones\n4\n4.2.1 Dimensiones de la carcasa IP20\nB\nC\na\nc\nd\n-DC L1/L L2/N L3\nOOOOO\n0\nMOVITRACELIP-8\n0\nA\n0\nOIl\nSEW\nb\n2 3 4 5 6 7 8 9 10 11121\n14 15 18 17 18\n+\nBR\nU\nV\nW\nO\n0\n4765982731\nMedida\nTamaño 2\nTamaño 3\nAltura (A)\nmm\n220\n261\nin\n8,66\n10,28\nAnchura (B)\nmm\n110\n132\nin\n4,33\n5,20\nProfundidad (C)\nmm\n185\n205\nin\n7,28\n8,07\nPeso\nkg\n1,8\n3,5\nlb\n3,97\n7,72\na\nmm\n63,0\n80,0\nin\n2,48\n3,15\nb\nmm\n209,0\n247\nin\n8,23\n9,72\nc\nmm\n23\n25,5\nin\n0,91\n1,01\nd\nmm\n7,00\n7,75\nin\n0,28\n0,30\nPar de apriete de las bornas de potencia\nNm\n1,0\n1,0\nlb.in\n8,85\n8,85\nTamaño de tornillo recomendado\n4 x M4\n4 x M4\n16\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "Medida",
+            "Tamaño 2",
+            "Tamaño 3"
+          ],
+          [
+            "Altura (A)",
+            "mm",
+            "220",
+            "261"
+          ],
+          [
+            "in",
+            "8,66",
+            "10,28"
+          ],
+          [
+            "Anchura (B)",
+            "mm",
+            "110",
+            "132"
+          ],
+          [
+            "in",
+            "4,33",
+            "5,20"
+          ],
+          [
+            "Profundidad (C)",
+            "mm",
+            "185",
+            "205"
+          ],
+          [
+            "in",
+            "7,28",
+            "8,07"
+          ],
+          [
+            "Peso",
+            "kg",
+            "1,8",
+            "3,5"
+          ],
+          [
+            "lb",
+            "3,97",
+            "7,72"
+          ],
+          [
+            "a",
+            "mm",
+            "63,0",
+            "80,0"
+          ],
+          [
+            "in",
+            "2,48",
+            "3,15"
+          ],
+          [
+            "b",
+            "mm",
+            "209,0",
+            "247"
+          ],
+          [
+            "in",
+            "8,23",
+            "9,72"
+          ],
+          [
+            "c",
+            "mm",
+            "23",
+            "25,5"
+          ],
+          [
+            "in",
+            "0,91",
+            "1,01"
+          ],
+          [
+            "d",
+            "mm",
+            "7,00",
+            "7,75"
+          ],
+          [
+            "in",
+            "0,28",
+            "0,30"
+          ],
+          [
+            "Par de apriete de las bornas de potencia",
+            "Nm",
+            "1,0",
+            "1,0"
+          ],
+          [
+            "lb.in",
+            "8,85",
+            "8,85"
+          ],
+          [
+            "Tamaño de tornillo recomendado",
+            "4 x M4",
+            "4 x M4"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "4\nInstalación\nDimensiones\n4.2.2 Dimensiones de la carcasa IP55 / NEMA 12 (LTP xxx -10)\nTamaños 2 y 3\nB\nC\nc\na\nd\nA\nb\nSEW\nEURODRIVE\n4+\nd\n4766970251\nMedida\nTamaño 2\nTamaño 3\nAltura (A)\nmm\n257\n310\nin\n10,12\n12,20\nAnchura (B)\nmm\n188\n210,5\nin\n7,40\n8,29\nProfundidad (C)\nmm\n239\n251\nin\n9,41\n2,88\nPeso\nkg\n4,8\n6,4\nlb\n10,5\n14,1\na\nmm\n176\n197,5\nin\n6,93\n7,78\nb\nmm\n200\n251,5\nin\n7,87\n9,90\nc\nmm\n6\n6,5\nin\n0,24\n0,26\nd\nmm\n28,5\n25,1\nin\n1,12\n0,99\nPar de apriete de las bornas de potencia\nNm\n1\nlb.in\n8,85\nPar de apriete de las bornas de control\nNm\n0,8\n0,8\nlb.in\n7,08\n7,08\nTamaño de tornillo recomendado\n4 x M5\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n17\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "Medida",
+            "Tamaño 2",
+            "Tamaño 3"
+          ],
+          [
+            "Altura (A)",
+            "mm",
+            "257",
+            "310"
+          ],
+          [
+            "in",
+            "10,12",
+            "12,20"
+          ],
+          [
+            "Anchura (B)",
+            "mm",
+            "188",
+            "210,5"
+          ],
+          [
+            "in",
+            "7,40",
+            "8,29"
+          ],
+          [
+            "Profundidad (C)",
+            "mm",
+            "239",
+            "251"
+          ],
+          [
+            "in",
+            "9,41",
+            "2,88"
+          ],
+          [
+            "Peso",
+            "kg",
+            "4,8",
+            "6,4"
+          ],
+          [
+            "lb",
+            "10,5",
+            "14,1"
+          ],
+          [
+            "a",
+            "mm",
+            "176",
+            "197,5"
+          ],
+          [
+            "in",
+            "6,93",
+            "7,78"
+          ],
+          [
+            "b",
+            "mm",
+            "200",
+            "251,5"
+          ],
+          [
+            "in",
+            "7,87",
+            "9,90"
+          ],
+          [
+            "c",
+            "mm",
+            "6",
+            "6,5"
+          ],
+          [
+            "in",
+            "0,24",
+            "0,26"
+          ],
+          [
+            "d",
+            "mm",
+            "28,5",
+            "25,1"
+          ],
+          [
+            "in",
+            "1,12",
+            "0,99"
+          ],
+          [
+            "Par de apriete de las bornas de potencia",
+            "Nm",
+            "1",
+            ""
+          ],
+          [
+            "lb.in",
+            "8,85"
+          ],
+          [
+            "Par de apriete de las bornas de control",
+            "Nm",
+            "0,8",
+            "0,8"
+          ],
+          [
+            "lb.in",
+            "7,08",
+            "7,08"
+          ],
+          [
+            "Tamaño de tornillo recomendado",
+            "",
+            "4 x M5"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Instalación\nDimensiones\n4\nTamaños 4-7\nHOWTRAC LTP D\nA\nb\nSEW\nEURODRIVE\nTO\nB\nC\na\n4656351243\n4656355083\n4656358027\nMedida\nTamaño 4\nTamaño 5\nTamaño 6\nTamaño 7\nAltura (A)\nmm\n440\n540\n865\n1280\nin\n17,32\n21,26\n34,06\n50,39\nAnchura (B)\nmm\n171\n235\n330\n330\nin\n6,73\n9,25\n12,99\n12,99\nProfundidad (C)\nmm\n235\n268\n335\n365\nin\n9,25\n10,55\n13,19\n14,37\nPeso\nkg\n11,5\n22,5\n50\n80\nlb\n25,35\n49,60\n110,23\n176,37\na\nmm\n110\n175\n200\n200\nin\n4,33\n6,89\n7,87\n7,87\nb\nmm\n423\n520\n840\n1255\nin\n16,65\n20,47\n33,07\n49,41\nc\nmm\n61\n60\n130\n130\nin\n2,40\n2,36\n5,12\n5,12\nd\nmm\n8\n8\n10\n10\nin\n0,32\n0,32\n0,39\n0,39\nPar de apriete de las bornas\nde potencia\nNm\n1,2-1,5\n2,5-4,5\n8\nlb.in\n10,6-13,3\n22,1-39,8\n70,8\nPar de apriete de las bornas\nde control\nNm\n0,8\n0,8\n0,8\n0,8\nlb.in\n7,08\n7,08\n7,08\n7,08\nTamaño de tornillo recomendado\n4 x M8\n4 x M10\n18\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "Medida",
+            "Tamaño 4",
+            "Tamaño 5",
+            "Tamaño 6",
+            "Tamaño 7"
+          ],
+          [
+            "Altura (A)",
+            "mm",
+            "440",
+            "540",
+            "865",
+            "1280"
+          ],
+          [
+            "in",
+            "17,32",
+            "21,26",
+            "34,06",
+            "50,39"
+          ],
+          [
+            "Anchura (B)",
+            "mm",
+            "171",
+            "235",
+            "330",
+            "330"
+          ],
+          [
+            "in",
+            "6,73",
+            "9,25",
+            "12,99",
+            "12,99"
+          ],
+          [
+            "Profundidad (C)",
+            "mm",
+            "235",
+            "268",
+            "335",
+            "365"
+          ],
+          [
+            "in",
+            "9,25",
+            "10,55",
+            "13,19",
+            "14,37"
+          ],
+          [
+            "Peso",
+            "kg",
+            "11,5",
+            "22,5",
+            "50",
+            "80"
+          ],
+          [
+            "lb",
+            "25,35",
+            "49,60",
+            "110,23",
+            "176,37"
+          ],
+          [
+            "a",
+            "mm",
+            "110",
+            "175",
+            "200",
+            "200"
+          ],
+          [
+            "in",
+            "4,33",
+            "6,89",
+            "7,87",
+            "7,87"
+          ],
+          [
+            "b",
+            "mm",
+            "423",
+            "520",
+            "840",
+            "1255"
+          ],
+          [
+            "in",
+            "16,65",
+            "20,47",
+            "33,07",
+            "49,41"
+          ],
+          [
+            "c",
+            "mm",
+            "61",
+            "60",
+            "130",
+            "130"
+          ],
+          [
+            "in",
+            "2,40",
+            "2,36",
+            "5,12",
+            "5,12"
+          ],
+          [
+            "d",
+            "mm",
+            "8",
+            "8",
+            "10",
+            "10"
+          ],
+          [
+            "in",
+            "0,32",
+            "0,32",
+            "0,39",
+            "0,39"
+          ],
+          [
+            "Par de apriete de las bornas de potencia",
+            "Nm",
+            "1,2-1,5",
+            "2,5-4,5",
+            "",
+            "8"
+          ],
+          [
+            "lb.in",
+            "10,6-13,3",
+            "22,1-39,8",
+            "70,8"
+          ],
+          [
+            "Par de apriete de las bornas de control",
+            "Nm",
+            "0,8",
+            "0,8",
+            "0,8",
+            "0,8"
+          ],
+          [
+            "lb.in",
+            "7,08",
+            "7,08",
+            "7,08",
+            "7,08"
+          ],
+          [
+            "Tamaño de tornillo recomendado",
+            "4 x M8",
+            "4 x M10"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "4\nCarcasa IP20: Montaje y dimensiones del armario de conexiones\nInstalación\n4.3\nCarcasa IP20: Montaje y dimensiones del armario de conexiones\nPara aquellas aplicaciones que requieran un índice de protección superior al IP20, el\nconvertidor deberá colocarse dentro de un armario de conexiones. Obsérvense las\nsiguientes indicaciones:\n· El armario de conexiones debe ser de un material termoconductor, a no ser que se\ninstale una ventilación forzada.\n· En caso de que se utilice un armario de conexiones con aberturas de ventilación,\néstas deberán estar emplazadas debajo y encima del convertidor, para así posibilitar\nuna buena circulación del aire. El aire deberá entrar por debajo del convertidor y salir\npor encima.\n· En caso de que en el entorno haya partículas de suciedad (p. ej. polvo), las aberturas\nde ventilación deberán estar dotadas de un filtro de partículas adecuado y se habrá\nde utilizar una ventilación forzada. En caso necesario se deberá limpiar y realizar un\nmantenimiento adecuado del filtro.\n· En entornos con gran concentración de humedad, sal o productos químicos, se\ndebería utilizar un armario de conexiones cerrado adecuado (sin aberturas de\nventilación).\n4.3.1 Dimensiones de armario metálico sin aberturas de ventilación\nClasificación de potencia\nArmario de conexiones de cierre hermético\nA\nB\nC\nD\nmm\nin\nmm\nin\nmm\nin\nmm\nin\nTamaño 2\n0,75 KW, 1,5 kW 230 V\n0,75 KW, 1,5 KW, 2,2 KW 400 V\n400\n15,75\n300\n11,81\n350\n11,81\n60\n2,36\nTamaño 2\n2,2 KW 230 V\n4,0 KW 400 V\n600\n23,62\n450\n17,72\n350\n11,81\n100\n3,94\nC\nB\nD\nLVL LOIN\n0\nA\nA\nD\n3080168459\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n19\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "Clasificación de potencia",
+            "Armario de conexiones de cierre hermético"
+          ],
+          [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          [
+            "mm",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "in"
+          ],
+          [
+            "Tamaño 2",
+            "0,75 KW, 1,5 kW 230 V 0,75 KW, 1,5 KW, 2,2 KW 400 V",
+            "400",
+            "15,75",
+            "300",
+            "11,81",
+            "350",
+            "11,81",
+            "60",
+            "2,36"
+          ],
+          [
+            "Tamaño 2",
+            "2,2 KW 230 V 4,0 KW 400 V",
+            "600",
+            "23,62",
+            "450",
+            "17,72",
+            "350",
+            "11,81",
+            "100",
+            "3,94"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "4\nInstalación\nCarcasa IP20: Montaje y dimensiones del armario de conexiones\n4.3.2 Dimensiones de armario de conexiones con aberturas de ventilación\nClasificación de\npotencia\nArmario de conexiones con aberturas de ventilación\nA\nB\nC\nD\nmm\nin\nmm\nin\nmm\nin\nmm\nin\nTamaño 2\nTodos los\nrangos de\npotencia\n600\n23,62\n400\n15,75\n300\n11,81\n100\n3,94\nTamaño 3\nTodos los\nrangos de\npotencia\n800\n31,5\n600\n23,62\n350\n13,78\n150\n5,91\nTamaño 4\nTodos los\nrangos de\npotencia\n1000\n39,37\n600\n23,62\n300\n11,81\n250\n9,84\n4.3.3 Dimensiones de armario de conexiones con ventilación forzada\nClasificación de\npotencia\nArmario de conexiones con ventilación forzada (con ventilador)\nA\nB\nC\nD\nCaudal de\naire\nmm\nin\nmm\nin\nmm\nin\nmm\nin\nTamaño 2\nTodos los\nrangos de\npotencia\n400\n15,75\n300\n11,81\n250\n9,84\n100\n3,94\n> 45 m3/h\nTamaño 3\nTodos los\nrangos de\npotencia\n600\n23,62\n400\n15,75\n250\n9,84\n150\n5,91\n> 80 m3/h\nTamaño 4\nTodos los\nrangos de\npotencia\n880\n34,65\n500\n19,69\n300\n11,81\n200\n7,87\n> 300 m3/h\nTamaño 5\nTodos los\nrangos de\npotencia\n1100\n43,31\n600\n23,62\n400\n15,75\n250\n9,84\n> 900 m3/h\nTamaño\n6 / 7\nTodos los\nrangos de\npotencia\n1900\n74,80\n600\n23,62\n500\n19,69\n300\n11,81\n> 1000 m3/h\n20\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "Clasificación de potencia",
+            "Armario de conexiones con aberturas de ventilación"
+          ],
+          [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          [
+            "mm",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "in"
+          ],
+          [
+            "Tamaño 2",
+            "Todos los rangos de potencia",
+            "600",
+            "23,62",
+            "400",
+            "15,75",
+            "300",
+            "11,81",
+            "100",
+            "3,94"
+          ],
+          [
+            "Tamaño 3",
+            "Todos los rangos de potencia",
+            "800",
+            "31,5",
+            "600",
+            "23,62",
+            "350",
+            "13,78",
+            "150",
+            "5,91"
+          ],
+          [
+            "Tamaño 4",
+            "Todos los rangos de potencia",
+            "1000",
+            "39,37",
+            "600",
+            "23,62",
+            "300",
+            "11,81",
+            "250",
+            "9,84"
+          ]
+        ],
+        [
+          [
+            "Clasificación de potencia",
+            "Armario de conexiones con ventilación forzada (con ventilador)"
+          ],
+          [
+            "A",
+            "B",
+            "C",
+            "D",
+            "Caudal de aire"
+          ],
+          [
+            "mm",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "in"
+          ],
+          [
+            "Tamaño 2",
+            "Todos los rangos de potencia",
+            "400",
+            "15,75",
+            "300",
+            "11,81",
+            "250",
+            "9,84",
+            "100",
+            "3,94",
+            "> 45 m3/h"
+          ],
+          [
+            "Tamaño 3",
+            "Todos los rangos de potencia",
+            "600",
+            "23,62",
+            "400",
+            "15,75",
+            "250",
+            "9,84",
+            "150",
+            "5,91",
+            "> 80 m3/h"
+          ],
+          [
+            "Tamaño 4",
+            "Todos los rangos de potencia",
+            "880",
+            "34,65",
+            "500",
+            "19,69",
+            "300",
+            "11,81",
+            "200",
+            "7,87",
+            "> 300 m3/h"
+          ],
+          [
+            "Tamaño 5",
+            "Todos los rangos de potencia",
+            "1100",
+            "43,31",
+            "600",
+            "23,62",
+            "400",
+            "15,75",
+            "250",
+            "9,84",
+            "> 900 m3/h"
+          ],
+          [
+            "Tamaño 6 / 7",
+            "Todos los rangos de potencia",
+            "1900",
+            "74,80",
+            "600",
+            "23,62",
+            "500",
+            "19,69",
+            "300",
+            "11,81",
+            "> 1000 m3/h"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Instalación\nInstalación eléctrica\n4\n4.4 Instalación eléctrica\n¡Es imprescindible tener en cuenta las notas de seguridad del capítulo 2 durante\nel montaje!\n¡ADVERTENCIA!\nPeligro de electrocución. Las altas tensiones pueden persistir en las bornas y dentro\nde la unidad hasta pasados 10 minutos tras desconectar la unidad de la red de\nalimentación.\n4\nLesiones graves o fatales.\n· Espere un mínimo de 10 minutos con MOVITRAC® LTP-B desconectado antes de\nrealizar trabajos en el mismo.\n· Los aparatos MOVITRAC® LTP-B deben instalarse exclusivamente por personal\neléctrico especializado, debiéndose cumplir con las disposiciones y la legislación\nque correspondan.\n· MOVITRAC® LTP-B está clasificado con el índice de protección IP20. Para obtener\nun índice de protección IP más elevado se deberá utilizar una protección adecuada,\no bien la variante IP55 / NEMA 12.\n· En caso de que el convertidor se encuentre conectado a la red mediante un conector\nenchufable, la conexión no se podrá desconectar hasta que pasen un mínimo de\n10 minutos desde la desconexión de la red.\n· Asegúrese de que los aparatos están conectados a tierra correctamente. Tenga en\ncuenta al respecto el esquema de conexiones en el capítulo \"Conexión del\nconvertidor y del motor\" (-> pág. 26).\n· El cable de puesta a tierra ha de estar diseñado para la corriente máxima de fallo de\nred, que normalmente se limita a través de los fusibles o guardamotores.\n¡ADVERTENCIA!\nPeligro de muerte por la caída del mecanismo de elevación.\nLesiones graves o fatales.\n4\n· EI MOVITRAC® LTP-B no puede emplearse en aplicaciones de elevación como\ndispositivo de seguridad. Utilice como dispositivos de seguridad sistemas de\nvigilancia o dispositivos mecánicos de protección.\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n21\nSEW\nEURODRIVE",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "4\nInstalación\nInstalación eléctrica\n4.4.1 Antes de la instalación\n· La tensión de red, la frecuencia de red y el número de fases (monofásico o trifásico)\nhan de coincidir con los valores indicados en el MOVITRAC® LTP-B.\n· Entre la red eléctrica y el convertidor se deberá instalar un seccionador o similar.\n· Las bornas de salida U, V y W del MOVITRAC® LTP-B en ningún caso se deberán\nconectar a la red.\n· Los cables están protegidos mediante el uso de fusibles de alto rendimiento de\nacción lenta o guardamotores (MCB). Encontrará más información en el capítulo\n\"Redes te tensión permitidas\" (-> pág. 22).\n· Entre el convertidor y el motor no se ha de instalar ningún tipo de dispositivo de\nseguridad automático. En caso de que haya cables de control cerca de los cables\nde potencia, se deberá mantener una distancia mínima de seguridad de 100 mm.\nLos cables se han de cruzar con un ángulo de 90°.\n· El apantallado de los cables de potencia ha de realizarse según el esquema de\nconexiones del capítulo \"Conexión del convertidor y del motor\" (-> pág. 26).\n· Atornille todas las bornas con su correspondiente par de apriete.\n. Se recomienda utilizar un cable apantallado de 4 conductores y con aislamiento de\nPVC, colocado en conformidad con las disposiciones y normativas que\ncorrespondan. Para la conexión de los cables de potencia al convertidor se\nnecesitan terminales.\n· La borna de puesta a tierra de cada uno de los MOVITRAC® LTP-B debería estar\nconectada directamentea la barra colectora de puesta a tierra (a través del filtro, en\ncaso de que exista).\nLas conexiones a tierra del MOVITRAC® LTP-B no han de enlazarse de un\nconvertidor a otro ni a otros aparatos. La impedancia de bucle ha de ser acorde con\nla correspondiente normativa de seguridad.\nA efectos de cumplir las disposiciones UL, para todas las conexiones a tierra se\ndeberán utilizar contactos de engarce certificados por UL.\nTarjeta auxiliar\nEn la carcasa IP55 la tarjeta auxiliar está colocada detrás de la cubierta frontal.\nEn la carcasa IP20 la tarjeta auxiliar está colocada en una ranura encima de la pantalla.\nRedes de tensión\npermitidas\n. Sistemas de red con punto neutro conectado a tierra\nMOVITRAC® LTP-B es apto para el funcionamiento en redes de tensión con punto\nneutro conectado a tierra (redes TN y TT).\n· Redes de tensión con conductor exterior conectado a tierra\nEl convertidor sólo se puede utilizar en redes de alimentación con una tensión de\ntierra monofásica máxima de 300 VCA-\n22\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "4\nInstalación\nInstalación eléctrica\nContactores de red\nFusibles de\nentrada\n· Utilice exclusivamente contactores de red con la categoría de uso AC-3 (EN 60947-4-1).\n· Entre 2 conexiones de la red deben pasar al menos 120 segundos.\nTipos de fusible:\n· Tipos de protección de línea de las clases gL, gG:\n- Tensión nominal del fusible ≥ tensión nominal de la red\n- La corriente nominal del fusible debe seleccionarse, dependiendo del grado de\nutilización del convertidor, para el 100 % de la corriente nominal del convertidor.\n· Interruptores automáticos de las características B, C:\n- Tensión nominal del interruptor automático ≥ tensión nominal de red\n- Las corrientes nominales de los interruptores automáticos han de exceder en un\n10 % la corriente nominal de red del convertidor.\nFuncionamiento\nen redes IT\nSe pueden operar en la red IT exclusivamente aparatos IP20. Para este fin hay que\nseparar la conexión de los componentes para la supresión de sobretensión,\ndesenroscando el tornillo VAR, y se ha de desconectar el filtro CEM, desenroscando el\ntornillo CEM (véase abajo):\n[1] [2]\n22\n1\n3034074379\n[1]\n[2]\nTornillo CEM\nTornillo VAR\nSEW-EURODRIVE recomienda utilizar en las redes de tensión con punto neutro no\nconectado a tierra (redes IT) diferenciales contra fugas a base de sensores de impulsos.\nDe esta forma se evitan los disparos erróneos del interruptor diferencial por la\nderivación a tierra del convertidor.\nAdemás, los convertidores con un filtro CEM tienen siempre una corriente de derivación\na tierra más elevada.\nL/L1\nN/L2\nL3\nFiltro\nCEM\ninterno\nProtección\ncontra\nsobretensión\ninterna\nCEM\nVAR\nTierra\n5490852619\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n23\nSEW\nEURODRIVE",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "4\nInstalación\nInstalación eléctrica\nConexión de la\nresistencia de\nfrenado\n· Corte los cables hasta obtener la longitud necesaria.\n· Utilice 2 cables trenzados adyacentes o un cable de potencia apantallado de\n2 conductores. La sección transversal corresponde a la potencia nominal del\nconvertidor.\n· Proteja la resistencia de frenado con un relé bimetálico con clase de disparo 10 ó\n10A (esquema de conexiones).\n· En las resistencias de frenado de la serie BW ..- T puede conectar alternativamente\na un relé bimetálico el interruptor térmico integrado con un cable apantallado de\n2 conductores.\n· Las resistencia de frenado de construcción plana tienen una protección de\nsobrecarga térmica interna (fusible no reemplazable). Monte las resistencias de\nfrenado de construcción plana con la correspondiente protección contra contacto\naccidental.\nInstalación de la\nresistencia de\nfrenado\n•\nA ¡ADVERTENCIA! Peligro de electrocución. En funcionamiento normal, las líneas\nde alimentación a las resistencias de frenado llevan alta tensión continua (aprox.\n900 Vcc).\nLesiones graves o fatales.\n- Espere un mínimo de 10 minutos con el MOVITRAC® LTP-B desconectado antes\nde retirar el cable de alimentación.\n· A ¡PRECAUCIÓN! Riesgo de sufrir quemaduras. Las superficies de las resistencias\nde frenado cargadas con PN alcanzan temperaturas elevadas.\nLesiones leves.\n- Seleccione un lugar de instalación adecuado.\n- No toque las resistencias de frenado.\n- Monte una protección contra contacto accidental adecuada.\n24\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "Conexión de la resistencia de frenado",
+            "· Corte los cables hasta obtener la longitud necesaria."
+          ],
+          [
+            "· Utilice 2 cables trenzados adyacentes o un cable de potencia apantallado de 2 conductores. La sección transversal corresponde a la potencia nominal del convertidor."
+          ],
+          [
+            "",
+            "· Proteja la resistencia de frenado con un relé bimetálico con clase de disparo 10 ó 10A (esquema de conexiones)."
+          ],
+          [
+            "· En las resistencias de frenado de la serie BW ..- T puede conectar alternativamente a un relé bimetálico el interruptor térmico integrado con un cable apantallado de 2 conductores. · Las resistencia de frenado de construcción plana tienen una protección de sobrecarga térmica interna (fusible no reemplazable). Monte las resistencias de frenado de construcción plana con la correspondiente protección contra contacto accidental."
+          ],
+          [
+            "Instalación de la resistencia de frenado",
+            "• A ¡ADVERTENCIA! Peligro de electrocución. En funcionamiento normal, las líneas de alimentación a las resistencias de frenado llevan alta tensión continua (aprox."
+          ],
+          [
+            "900 Vcc)."
+          ],
+          [
+            "Lesiones graves o fatales."
+          ],
+          [
+            "- Espere un mínimo de 10 minutos con el MOVITRAC® LTP-B desconectado antes de retirar el cable de alimentación.\n:unselected:"
+          ],
+          [
+            "· A ¡PRECAUCIÓN! Riesgo de sufrir quemaduras. Las superficies de las resistencias de frenado cargadas con PN alcanzan temperaturas elevadas."
+          ],
+          [
+            "Lesiones leves."
+          ],
+          [
+            "- Seleccione un lugar de instalación adecuado.\n:unselected:"
+          ],
+          [
+            "- No toque las resistencias de frenado.\n:unselected:"
+          ],
+          [
+            "- Monte una protección contra contacto accidental adecuada.\n:unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "4.4.2 Instalación\nConexiones de la\ncaja de bornas del\nmotor\nInstalación\nInstalación eléctrica\n4\nLos motores se han de conectar en estrella, triángulo, doble estrella o estrella (Nema). La\nplaca de características del motor indica el rango de tensión para cada tipo de conexión,\nque deberá coincidir con la tension de funcionamiento del MOVITRAC® LTP-B.\nR13\nR76\nDT/DV\nC\nW2 U2 V2\nO\nW2 U2\nU1\n0\nV1\nO\nV2\nW1\nU1\nPV1 7W1\nU\nV\nW\nBaja tensión A\nU V W\nAlta tensión /\nT6\nW2\nO\nT9\nU3\nT1\nU1\nT4\nU2\nO\nT7\nV3\nT2\nV1\nT5\nV2\nO\nT8\nW3\nT3\nW1\nT6\nT4\nT5\nW2\nU2\nV2\nT9\nT7\nT8\nW3\nU3\nV3\nO\nO\nO\nT1\nT2\nT3\nU1\nO\nV1\nO\nW1\nL1 L2 L1\nBaja tensión\nL1 L2 L1\nAlta tensión\nC\nT4\nT6\nT5\nW2\nU2\nV2\nO\nT7\nC\nU3\nO\nT6\nW2\nC\nT4 OT5\nU2\nT7\nU3\nV2\nT8\nT9\nJW3\nOV3\nU1\nC\nT9\nW3\nT3\nW1\nT2\nV1\nT1\nU1 C\nT3\nW1\nU\nV\nW\nBaja tensión LA\nU V W\nAlta tensión\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n25\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "T6",
+            "T4",
+            "T5"
+          ],
+          [
+            "W2",
+            "U2",
+            "V2"
+          ],
+          [
+            "T9",
+            "T7",
+            "T8"
+          ],
+          [
+            "W3",
+            "U3",
+            "V3"
+          ],
+          [
+            ":unselected: O",
+            ":unselected: O",
+            ":unselected: O"
+          ],
+          [
+            "T1",
+            "T2",
+            "T3"
+          ],
+          [
+            "U1 :unselected: O",
+            "V1 O :unselected:",
+            "W1 :unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "4\nInstalación\nInstalación eléctrica\nConexión del\nconvertidor y\ndel motor\n•\nA ¡ADVERTENCIA! Peligro de electrocución. Un cableado indebido puede resultar\npeligroso a causa de las altas tensiones.\nLesiones graves o fatales.\n- Se ha de respetar obligatoriamente el orden de conexiones que se representa\nabajo.\nL1\n-L2/N\n· PE\nL3 no monofás. 230 V\nF11/F12/F13\nK10\n(AC-3)\n[1]\nL1 L2 L3\nOpción ND .. Reactancia de entrada\nL1' L2' L3'\nVAC\nVDC (BMV)\nVAC (BMK)\nVAC\nSólo si MC LT es la opción\nconectada o con caja de\nconexión opcional montada\nv\nBus CC acceso \"-\"\nF14/F15\nF14/F15\nF14/F15\nL1 L2 L3\n[2]\nK11\n(AC-3)\nK11\n(AC-3)\n+V\nK11\n(AC-3)\nEtapa de potencia\n17\n[V+]\n18\n+V\nU V W\nBR +\n17\n17\n18\n[4]\nK12\n(AC-3)\n[3]\nGND\n18\nGND\nK12\n(AC-3)\nGND\nBW .. / BW ..- T\nConexión de\nresistencia\nde frenado /\nBus CC acceso \"+\"\n1\nBG\n2\n*\n3\nBGE\n4\n5\nDT/DV/D:\nCorte de corriente\nalterna y continua\nBlanco\nRojo\n1\nBMK!\n2\n3\nAzul\nBMV\n4\nRojo\n13\nBlanco\n14\n15\nAzul\nBlanco\nBG\n-NOTDO\nBGE\nRojo\nAzul\nDT/DV/D:\nCorte de corriente\nalterna\nM\nTrifásica\nBW\n3003098763\n[1]\nContactor de red entre red de alimentación y convertidor\n[2]\nAlimentación de red del rectificador de freno, simultáneamente conectado por K10\n[3]\nContactor / relé de control, recibe tensión del contacto de relé interno [4] del convertidor y alimenta con ella el rectificador\nde freno\n[4]\nContacto de relé sin potencial del convertidor\n[V+]\nTensión de alimentación externa para contactor/relé de control\n26\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Protección térmica\ndel motor (TF/TH)\nAccionamiento\nmultimotor /\naccionamiento\nen grupo (sólo\npara motores de\ninducción)\nConexión de\nmotores freno\nde CA\n4\nInstalación\nInstalación eléctrica\n· NOTA\n· Todos los aparatos LTP-B con IP55 tienen en la cara inferior del convertidor una\nentrada de cables de red y del motor.\n· Conecte el rectificador del freno a través de un cable de alimentación de red\nseparado.\n· ¡ No está permitida la alimentación mediante la tensión del motor!\nUtilice siempre la conexión de frenado rápido en:\n· Todas las aplicaciones de mecanismo de elevación\n· Los accionamientos que requieran un tiempo de reacción de frenado rápido\nLos motores con una sonda térmica interna (TF, TH o similar) pueden conectarse\ndirectamente a MOVITRAC® LTP-B. El convertidor indica un error si las sondas\ndetectan sobretemperatura en el motor.\nLa sonda térmica se conecta a la borna 1 (+24 V) y a la entrada binaria 3. Parámetro\nP1-15 debe ajustarse a entrada de error externo para poder reconocer mensajes de\nerror de sobretemperatura. El umbral de disparo está ajustado a 2,5 kQ. Encontrará\ninformación sobre el termistor de motor en el capítulo \"P1-15 Entradas binarias\nselección de funciones\" (-> pág. 95) y en el parámetro P2-33.\nLa suma de las corrientes de motor no deberá exceder la corriente nominal del\nconvertidor. Véase el capítulo \"Datos técnicos de MOVITRAC® LTP-B\" (-> pág. 103).\nEl grupo de motores está limitado a 5 motores, y los motores en un grupo no deben\ndiferir en más de 3 tamaños.\nLa longitud de cable máxima de un grupo está limitada a los valores para\naccionamientos individuales. Véase el capítulo \"Datos técnicos de MOVITRAC® LTP-B\"\n(-> pág. 103).\nPara grupos con más de 3 motores, SEW-EURODRIVE recomienda utilizar una\nreactancia de salida.\nEncontrará indicaciones detalladas sobre el sistema de frenos SEW en el catálogo\n\"Motorreductores\" que pude pedir a SEW-EURODRIVE.\nLos sistemas de freno SEW son frenos de disco CC que se abren de forma magnética\ny frenan por medio de una fuerza de muelle. Un rectificador de freno alimenta la tensión\ncontinua al freno.\ni\nNOTA\nPara el funcionamiento de convertidor, el rectificador de freno debe disponer de un\ncable de alimentación separado del cable de potencia. Está prohibido efectuar la\nalimentación a través de la tensión del motor.\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n27\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "i",
+            "NOTA"
+          ],
+          [
+            "Para el funcionamiento de convertidor, el rectificador de freno debe disponer de un cable de alimentación separado del cable de potencia. Está prohibido efectuar la alimentación a través de la tensión del motor."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Instalación\nInstalación eléctrica\n4\n4.4.3 Vista general de bornas de señal\nBornas principales\nIP20 e IP55\nAO 1 / DO 1\n+24 VIO\nDI 1\nAI 1 / DI 4\nAO 2 / DO 2\nAI 2 / DI 5\nDI 2\nDI 3\n+10 V\n0 V\n0 V\nPSE+\nPSE-\n1\n2\n3\n4\n5\n6\n7\n8\n9 10 11 12 13\n0\nV\n3003175179\nLas bornas de señal disponen de las siguientes conexiones de señal:\nNº de\nborna\nSeñal\nConexión\nDescripción\n1\n+24 VIO\n+24 V tensión de\nreferencia\nRef. para activación de DI1-DI3 (máx. 100 mA)\n2\nDI 1\nEntrada binaria 1\nLógica positiva\nRango de tensión de entrada \"Lógico 1\": 8-30 Vcc\nRango de tensión de entrada \"Lógico 0\": 0-2 Vcc\nCompatible con demanda de PLC si está conectada\n0 V a borna 7 o 9.\n3\nDI 2\nEntrada binaria 2\n4\nDI 3\nEntrada binaria 3 /\ncontacto de sonda\n5\n+10 V\nSalida +10 V tensión de\nreferencia\n10 V ref. para entrada analógica\n(alimentación de pot. +, 10mA máx., 1 kQ mín.)\n6\nAI 1 / DI 4\nEntrada analógica\n(12 bit)\nEntrada binaria 4\n0-10 V, 0-20 mA, 4-20 mA\nRango de tensión de entrada \"Lógico 1\": 8-30 Vcc\n7\n0 V\nPotencial de referencia\n0 V\nPotencial de referencia (alimentación de pot. - ) 0 V\n8\nAO 1 / DO 1\nSalida analógica (10 bit)\nSalida binaria 1\n0-10 V, 20 mA analógica\n24 V, 20 mA digital\n9\n0 V\nPotencial de referencia\n0 V\nTensión de referencia 0 V\n10\nAI 2 / DI 5\nEntrada analógica 2\n(12 bit)\nEntrada binaria 5\n0-10 V, 0-20 mA, 4-20 mA\nRango de tensión de entrada \"Lógico 1\": 8-30 Vcc\n11\nAO 2 / DO 2\nSalida analógica 2\n(10 bit)\nSalida binaria 2\n0-10 V, 20 mA analógica\n24 V, 20 mA digital\n12\nPSE+\nHabilitación de etapa final +24 V debe estar conectada con PSE+\n13\nPSE-\nGND debe estar conectada con PSE-\nTodas las entradas binarias son activadas por una tensión de entrada del rango de 8-30 V,\npor lo tanto, son compatibles con +24 V.\n· ¡ PRECAUCIÓN! Posibles daños materiales.\nEl control podría sufrir daños si se aplican tensiones superiores a 30 V en las bornas\nde señal.\n- La tensión que se aplica a las bornas de señal no debe superar los 30 V.\n•\nNOTA\nLas bornas 7 y 9 pueden usarse como potencial de referencia GND, si el\nMOVITRAC® LTP-B es controlado por un PLC. Conecte +PSE a +24 V y -PSE a 0\nV para habilitar la etapa final de potencia; en caso contrario, el convertidor indica\n\"bloqueado\".\n28\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "Nº de borna",
+            "Señal",
+            "Conexión",
+            "Descripción"
+          ],
+          [
+            "1",
+            "+24 VIO",
+            "+24 V tensión de referencia",
+            "Ref. para activación de DI1-DI3 (máx. 100 mA)"
+          ],
+          [
+            "2",
+            "DI 1",
+            "Entrada binaria 1",
+            "Lógica positiva Rango de tensión de entrada \"Lógico 1\": 8-30 Vcc Rango de tensión de entrada \"Lógico 0\": 0-2 Vcc Compatible con demanda de PLC si está conectada 0 V a borna 7 o 9."
+          ],
+          [
+            "3",
+            "DI 2",
+            "Entrada binaria 2"
+          ],
+          [
+            "4",
+            "DI 3",
+            "Entrada binaria 3 / contacto de sonda"
+          ],
+          [
+            "5",
+            "+10 V",
+            "Salida +10 V tensión de referencia",
+            "10 V ref. para entrada analógica (alimentación de pot. +, 10mA máx., 1 kQ mín.)"
+          ],
+          [
+            "6",
+            "AI 1 / DI 4",
+            "Entrada analógica (12 bit) Entrada binaria 4",
+            "0-10 V, 0-20 mA, 4-20 mA Rango de tensión de entrada \"Lógico 1\": 8-30 Vcc"
+          ],
+          [
+            "7",
+            "0 V",
+            "Potencial de referencia 0 V",
+            "Potencial de referencia (alimentación de pot. - ) 0 V"
+          ],
+          [
+            "8",
+            "AO 1 / DO 1",
+            "Salida analógica (10 bit) Salida binaria 1",
+            "0-10 V, 20 mA analógica 24 V, 20 mA digital"
+          ],
+          [
+            "9",
+            "0 V",
+            "Potencial de referencia 0 V",
+            "Tensión de referencia 0 V"
+          ],
+          [
+            "10",
+            "AI 2 / DI 5",
+            "Entrada analógica 2 (12 bit) Entrada binaria 5",
+            "0-10 V, 0-20 mA, 4-20 mA Rango de tensión de entrada \"Lógico 1\": 8-30 Vcc"
+          ],
+          [
+            "11",
+            "AO 2 / DO 2",
+            "Salida analógica 2 (10 bit) Salida binaria 2",
+            "0-10 V, 20 mA analógica 24 V, 20 mA digital"
+          ],
+          [
+            "12",
+            "PSE+",
+            "Habilitación de etapa final",
+            "+24 V debe estar conectada con PSE+"
+          ],
+          [
+            "13",
+            "PSE-",
+            "GND debe estar conectada con PSE-"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Instalación\nInstalación eléctrica\n4\nVista general de\nlas bornas de relé\ncontacto normalm. abierto\ncontacto normalm. cerrado\ncontacto normalm. abierto\npotencial de referencia\nSalida de relé 1\npotencial de referencia\nSalida de relé 1\nSalida de relé 1\nSalida de relé 2\nSalida de relé 2\n14 15 16 17 18\n00\n000\n3003612555\nNº de\nborna\nSeñal\nDescripción\n14\nSalida de relé 1 referencia\nContacto de relé (250 VCA / 30 Vcc @ 5 A)\n15\nSalida de relé 1 contacto normalm. abierto\n16\nSalida de relé 1 contacto normalm. cerrado\n17\nSalida de relé 2 referencia\n18\nSalida de relé 2 contacto normalm. abierto\n4.4.4 Conector de comunicación RJ45\n[1]\n[2]\n[3]\n[4]\n[5]\n[6]\n[7]\n[8]\n2933413771\n[1]\nRS485+ (Modbus)\n[2]\nRS485- (Modbus)\n[3]\n+24 V\nRS485+ (Engineering)\n[4]\n[5]\nRS485- (Engineering)\n0 V\n[6]\nSBus+ (P1-12 deberá estar ajustado a comunicación SBus)\n[7]\n[8]\nSBus- (P1-12 deberá estar ajustado a comunicación SBus)\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n29\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "Nº de borna",
+            "Señal",
+            "Descripción"
+          ],
+          [
+            "14",
+            "Salida de relé 1 referencia",
+            "Contacto de relé (250 VCA / 30 Vcc @ 5 A)"
+          ],
+          [
+            "15",
+            "Salida de relé 1 contacto normalm. abierto"
+          ],
+          [
+            "16",
+            "Salida de relé 1 contacto normalm. cerrado"
+          ],
+          [
+            "17",
+            "Salida de relé 2 referencia"
+          ],
+          [
+            "18",
+            "Salida de relé 2 contacto normalm. abierto"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "4\nInstalación\nInstalación eléctrica\n4.4.5 Función de la desconexión segura\nCon la función de la desconexión segura (Safe Torque Off, función STO) se bloquea\ncompletamente la etapa final del accionamiento. Al aplicarse entre PSE+ y PSE- una\ntensión de 24 V, tal y como se muestra en el esquema en elcapítulo \"Vista general de\nbornas de señal\" (-> pág. 28), el accionamiento marcha normal. Se puede utilizar\ntambién una tensión de alimentación de 24 V externa. Al retirarse la tensión de\nalimentación de 24 V, se activa la función STO. De este modo se bloquea la salida del\nconvertidor y el motor se detiene por inercia. El convertidor no produce ningún par de\nsalida. El accionamiento sólo puede volver a arrancar si se aplica entre PSE+ y PSE-\nnuevamente una tensión de 24 V.\nLa función STO puede aplicarse siempre cuando es necesario retirar la entrada del\nconvertidor, por ejemplo, en caso de una desconexión de emergencia o un\nmantenimiento de la máquina.\n· A ¡ADVERTENCIA! Por la función STO no es desconectada la corriente de red\naplicada al convertidor. Desconecte la alimentación de red para el convertidor antes\nde comenzar con los trabajos de mantenimiento en las partes eléctricas del\naccionamiento o del motor accionado.\n4.4.6 Instalación conforme a UL\nPara realizar la instalación conforme a UL obsérvense las siguientes indicaciones:\n· Los convertidores pueden funcionar a las siguientes temperaturas ambiente:\nÍndice de protección\nTemperatura ambiente\nIP20\n-10 ℃ hasta 50 ℃\nIP55 / NEMA 12\n-10 ℃ hasta 40 ℃\n· Utilice exclusivamente cables de conexión de cobre apropiados para temperaturas\nambiente de hasta 75 °C.\n· Los pares de apriete admisibles para las bornas de potencia de MOVITRAC® LTP-B\nson los siguientes:\nTamaño\nPar de apriete\n2 y 3\n1 Nm / 8,9 lb.in\n4\n4 Nm / 35,4 lb.in\n5, 6 y 7\n8 Nm / 70 lb.in\nLos convertidores MOVITRAC® LTP-B son aptos para el funcionamiento en sistemas\nde alimentación con punto neutro conectado a tierra (redes TN y TT) que aporten una\ncorriente de red máxima y una tensión de red máxima conforme a las siguientes tablas.\nLos datos de fusibles de las siguientes tablas describen el fusible principal máximo\nadmisible para los respectivos convertidores. Utilice únicamente fusibles.\nComo fuente de alimentación externa de 24 Vcc utilice únicamente aparatos testados\ncon tensión limitada de salida (Umáx = 30 Vcc) y corriente limitada de salida (I ≤ 8 A).\nLa certificación UL no es válida para el funcionamiento en redes de tensión con puntos\nneutros sin conectar a tierra (redes IT).\n30\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "Índice de protección",
+            "Temperatura ambiente"
+          ],
+          [
+            "IP20",
+            "-10 ℃ hasta 50 ℃"
+          ],
+          [
+            "IP55 / NEMA 12",
+            "-10 ℃ hasta 40 ℃"
+          ]
+        ],
+        [
+          [
+            "Tamaño",
+            "Par de apriete"
+          ],
+          [
+            "2 y 3",
+            "1 Nm / 8,9 lb.in"
+          ],
+          [
+            "4",
+            "4 Nm / 35,4 lb.in"
+          ],
+          [
+            "5, 6 y 7",
+            "8 Nm / 70 lb.in"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Instalación\nInstalación eléctrica\n4\nAparatos de 200-240 V\nMOVITRAC® LTP ...\nCorriente alterna de\ncortocircuito de red máx.\nTensión de alimentación máx.\nFusible máx. admisible\n0004\n5000 ACA\n240 VCA\n15 A / 250 VCA\n0008\n5000 ACA\n240 VCA\n30 A / 250 VCA\n0015\n5000 ACA\n240 VCA\n20 A / 250 VCA\n0022, 0040\n5000 ACA\n240 VCA\n30 A / 250 VCA\n0055, 0075\n5000 ACA\n240 VCA\n110 A / 250 VCA\n0110\n5000 ACA\n240 VCA\n175 A / 250 VCA\n0150\n5000 ACA\n240 VCA\n225 A / 250 VCA\n0220\n10000 ACA\n240 VCA\n350 A / 250 VCA\nAparatos de 380-480 V\nMOVITRAC® LTP ...\nCorriente alterna de\ncortocircuito de red máx.\nTensión de alimentación máx.\nFusible máx. admisible\n0008, 0015\n5000 ACA\n480 VCA\n15 A / 600 VCA\n0022, 0040\n5000 ACA\n480 VCA\n20 A / 600 VCA\n0055, 0075\n5000 ACA\n480 VCA\n60 A / 600 VCA\n0110\n5000 ACA\n480 VCA\n110 A / 600 VCA\n0150 / 0220\n5000 ACA\n500 VCA\n175 A / 600 VCA\n0300\n5000 ACA\n500 VCA\n225 A / 600 VCA\n0370, 0450\n10000 ACA\n500 VCA\n350 A / 600 VCA\n0550, 0750\n10000 ACA\n500 VCA\n500 A / 600 VCA\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n31\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "MOVITRAC® LTP ...",
+            "Corriente alterna de cortocircuito de red máx.",
+            "Tensión de alimentación máx.",
+            "Fusible máx. admisible"
+          ],
+          [
+            "0004",
+            "5000 ACA",
+            "240 VCA",
+            "15 A / 250 VCA"
+          ],
+          [
+            "0008",
+            "5000 ACA",
+            "240 VCA",
+            "30 A / 250 VCA"
+          ],
+          [
+            "0015",
+            "5000 ACA",
+            "240 VCA",
+            "20 A / 250 VCA"
+          ],
+          [
+            "0022, 0040",
+            "5000 ACA",
+            "240 VCA",
+            "30 A / 250 VCA"
+          ],
+          [
+            "0055, 0075",
+            "5000 ACA",
+            "240 VCA",
+            "110 A / 250 VCA"
+          ],
+          [
+            "0110",
+            "5000 ACA",
+            "240 VCA",
+            "175 A / 250 VCA"
+          ],
+          [
+            "0150",
+            "5000 ACA",
+            "240 VCA",
+            "225 A / 250 VCA"
+          ],
+          [
+            "0220",
+            "10000 ACA",
+            "240 VCA",
+            "350 A / 250 VCA"
+          ]
+        ],
+        [
+          [
+            "MOVITRAC® LTP ...",
+            "Corriente alterna de cortocircuito de red máx.",
+            "Tensión de alimentación máx.",
+            "Fusible máx. admisible"
+          ],
+          [
+            "0008, 0015",
+            "5000 ACA",
+            "480 VCA",
+            "15 A / 600 VCA"
+          ],
+          [
+            "0022, 0040",
+            "5000 ACA",
+            "480 VCA",
+            "20 A / 600 VCA"
+          ],
+          [
+            "0055, 0075",
+            "5000 ACA",
+            "480 VCA",
+            "60 A / 600 VCA"
+          ],
+          [
+            "0110",
+            "5000 ACA",
+            "480 VCA",
+            "110 A / 600 VCA"
+          ],
+          [
+            "0150 / 0220",
+            "5000 ACA",
+            "500 VCA",
+            "175 A / 600 VCA"
+          ],
+          [
+            "0300",
+            "5000 ACA",
+            "500 VCA",
+            "225 A / 600 VCA"
+          ],
+          [
+            "0370, 0450",
+            "10000 ACA",
+            "500 VCA",
+            "350 A / 600 VCA"
+          ],
+          [
+            "0550, 0750",
+            "10000 ACA",
+            "500 VCA",
+            "500 A / 600 VCA"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "4\nInstalación\nInstalación eléctrica\n4.4.7 Compatibilidad electromagnética\nLa serie de convertidores de frecuencia MOVITRAC® LTP-B está prevista para el uso\nen máquinas e instalaciones. Cumple la normativa de productos CEM EN 61800-3 para\naccionamientos de velocidad variable. Para la instalación conforme a las medidas de\ncompatibilidad electromagnética del sistema de accionamiento deben respetarse las\nespecificaciones de la directiva 2004/108/CE (CEM).\nInmunidad a\ninterferencias\nEmisión de\ninterferencias\n32\nMOVITRAC® LTP-B cumple las especificaciones en cuanto a resistencia a\ninterferencias de la norma EN 61800-3 para entornos industriales y domésticos\n(industria ligera).\nEn cuanto a la emisión de interferencias, el MOVITRAC® LTP-B cumple los valores\nlímite de las normas EN 61800-3 y EN 55014 y, por tanto, puede utilizarse en\naplicaciones industriales y domésticas (industria ligera).\nCon el fin de asegurar la compatibilidad electromagnética lo mejor posible, tiene que\ninstalar los accionamientos de conformidad con las instrucciones de conexión en el\ncapítulo \"Instalación\". Al hacerlo, preste atención a buenas conexiones de puesta a\ntierra para el sistema de accionamiento. Para cumplir las especificaciones de emisión\nde interferencias deberán utilizarse cables de motor apantallados.\nLa tabla de abajo define las condiciones para el uso de MOVITRAC® LTP-B en\naplicaciones de accionamiento:\nTipo / potencia del\nconvertidor\nCat. C1 (clase B)\nCat. C2 (clase A)\nCat. C3\n230 V, monofásica\nLTP-B xxxx 2B1-x-xx\nNo es necesario ningún filtro adicional\nUtilice un cable de motor apantallado.\n230 V / 400 V, trifásica\nLTP-B xxxx 2A3-x-xx\nLTP-B xxxx 5A3-x-xx\nUtilice un filtro externo\nde tipo NF LT 5B3 0xx\nNo es necesaria ningún filtro adicional\nUtilice un cable de motor apantallado.\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "Tipo / potencia del convertidor",
+            "Cat. C1 (clase B)",
+            "Cat. C2 (clase A)",
+            "Cat. C3"
+          ],
+          [
+            "230 V, monofásica LTP-B xxxx 2B1-x-xx",
+            "No es necesario ningún filtro adicional Utilice un cable de motor apantallado."
+          ],
+          [
+            "230 V / 400 V, trifásica LTP-B xxxx 2A3-x-xx",
+            "Utilice un filtro externo de tipo NF LT 5B3 0xx",
+            "No es necesaria ningún filtro adicional"
+          ],
+          [
+            "LTP-B xxxx 5A3-x-xx",
+            "Utilice un cable de motor apantallado."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Instalación\nInstalación eléctrica\n4\nDesconexión\nde filtro CEM y\nvaristor (IP20)\nLos convertidores IP20 con filtro CEM integrado (p. ej. MOVITRAC® LTP-B xxxx xAXX\n00 ó MOVITRAC® LTP-B xxxx xBxx 00) tienen una corriente de derivación a tierra más\nelevada que los aparatos sin filtro CEM. Si se operan más de un MOVITRAC® LTP-B\nconectados a una unidad de control de fallo a tierra, esta unidad de control dispara\nposiblemente un error, sobre todo si se utilizan cables apantallados. Puede desactivar\nel filtro CEM desenroscando el tornillo CEM ubicado en el lateral del aparato.\n· A ¡ADVERTENCIA! Peligro de electrocución. Las altas tensiones pueden persistir\nen las bornas y dentro de la unidad hasta pasados 10 minutos tras desconectar la\nunidad de la red de alimentación.\nLesiones graves o fatales.\n- Espere un mínimo de 10 minutos con MOVITRAC® LTP-B desconectado antes\nde desenroscar el tornillo CEM.\n[1] [2]\n3034074379\n[1]\nTornillo CEM\nTornillo VAR\n[2]\nL1\n0\nL2\n0\nBobina\nde filtro\nL3\n0\n-O\nL1\nO\nL2\nO\nL3\nTierra\nO\nO\nTierra\nTornillo\nVAR\nTornillo\nCEM\n3479228683\nMOVITRAC® LTP-B está equipado con componentes que suprimen sobretensiones\ntransitorias en la entrada. Estos componentes protegen los circuitos de alimentación\ncontra puntas de tensión causadas por rayos u otros equipos en la misma red.\nSi realiza una comprobación de alta tensión para un sistema de accionamiento, los\ncomponentes para la supresión de sobretensiones transitorias pueden hacer que la\ncomprobación no sea válida. Para posibilitar las comprobaciones de alta tensión,\ndesenrosque ambos tornillos ubicados en el lateral del aparato. De este modo se\ndesactivan dichos componentes. Después de haber efectuado la comprobación de alta\ntensión, vuelva a enroscar ambos tornillos y repita la comprobación. Ahora debería\nfallar la comprobación; esto significa que el circuito está protegido de nuevo contra\nsobretensiones transitorias.\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n33\nSEW\nEURODRIVE",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "4\nInstalación\nInstalación eléctrica\n4.4.8 Placa de paso\nEs necesario el uso de un sistema de prensaestopas apropiado para mantener el índice\nde protección IP/NEMA correspondiente. Deben taladrarse agujeros de introducción de\ncables que correspondan a este sistema. A continuación se indican algunos diámetros\nde orientación:\nTamaños y tipos de agujero recomendados para los prensaestopas\nTamaño de agujero\nAngloamericano\nMétrico\nTamaños 2 y 3\n25 mm\nPG16\nM25\nTamaños de agujero para tubos de instalación eléctrica flexibles\nTamaño de agujero\nTamaño comercial\nMétrico\nTamaños 2 y 3\n35 mm\n1 in\nM27\n· ¡ PRECAUCIÓN! Posibles daños materiales.\nTaladre con cuidado para evitar que permanezcan partículas en el producto.\n· Un índice de protección IP (\"Tipo\") conforme a las especificaciones de UL sólo está\ngarantizado si se instalan cables con un conector hembra reconocido por UL para\nun sistema de tubos de instalación eléctrica flexibles con el índice de protección\n(\"Tipo\") requerido.\n· En instalaciones de tubos de instalación eléctrica los agujeros de introducción del\ntubo de instalación eléctrica deben tener unas aberturas estándar para los tamaños\nnecesarios según especificaciones NEC.\n· No está previsto para sistemas de tubos de instalación eléctrica rígidos.\n4.4.9 Retirar la cubierta de bornas\nPara tener acceso a las bornas de conexión, debe quitarse la cubierta frontal del\naccionamiento tal y como se muestra.\nUna vez desenroscados los 2 tornillos en la cara frontal del producto tal y como se\nmuestra abajo. es posible el acceso a las bornas de conexión.\nSEN\n90\n.\nSEW Y\n40\n5647837323\n34\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "",
+            "Tamaño de agujero",
+            "Angloamericano",
+            "Métrico"
+          ],
+          [
+            "Tamaños 2 y 3",
+            "25 mm",
+            "PG16",
+            "M25"
+          ]
+        ],
+        [
+          [
+            "",
+            "Tamaño de agujero",
+            "Tamaño comercial",
+            "Métrico"
+          ],
+          [
+            "Tamaños 2 y 3",
+            "35 mm",
+            "1 in",
+            "M27"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Puesta en marcha\nInterfaz de usuario\nI\n0\n5\n5\nPuesta en marcha\n5.1\nInterfaz de usuario\n5.1.1\nTeclado\nTodos los MOVITRAC® LTP-B están equipados de serie con un teclado que permite\nmanejar y ajustar el accionamiento sin necesidad de más dispositivos adicionales.\nEl teclado dispone de 5 teclas con las siguientes funciones:\nInicio\n(Ejecutar)\n· Habilita el motor.\n· Invierte el sentido de giro si está activado el modo de teclado bidireccional.\nParada /\nReset\n•\nPara el motor.\n· Confirma un fallo.\nNavegar\n· Muestra información en tiempo real.\n· Pulsar y mantener para cambiar al modo de edición de parámetros o bien para salir\ndel mismo.\n· Guarda los cambios de los parámetros.\nAcel\n· Aumenta la velocidad en el modo de tiempo real.\n· Aumenta los valores de parámetros en el modo de modificación de parámetros.\nDecel\nReduce la velocidad en el modo de tiempo real.\n· Reduce los valores de parámetros en el modo de modificación de parámetros.\nCuando los parámetros se encuentran ajustados según la configuración de fábrica, las\nteclas \"Inicio\" y \"Parada\" del teclado están desactivadas. Para habilitar las teclas\n\"Inicio\"/\"Parada\" del teclado, debe ajustarse P1-12 en 1 6 2.\nAl menú de modificación de parámetros únicamente se puede acceder mediante la tecla\n\"Navegar\". Mantenga pulsada esta tecla más de 1 segundo para conmutar entre el menú\nde modificación de parámetros y la indicación en tiempo real (estado de funcionamiento\ndel accionamiento / velocidad). Pulse brevemente esta tecla (< 1 segundo) para\nconmutar entre la velocidad de funcionamiento y la corriente de servicio del\naccionamiento en marcha.\n[1]\nMOVITRAC® LT\n[4]\nC\n[2]\n[5]\n[3]\n[6]\n2933664395\n[1]\nPantalla\n[2]\nInicio\n[3]\nParada / Reset\n[4]\nNavegar\n[5] Acel\n[6] Decel\n•\nNOTA\nAsí restablece el aparato a los ajustes de fábrica:\nConmute el aparato primero al modo de bloqueo. Pulse simultáneamente durante más\nde 2 segundos las teclas \"Acel\", \"Decel\" y \"Parada / Reset\". En la pantalla aparece\n\"P-deF\".\nPulse la tecla \"Parada / Reset\" para confirmar la modificación y resetear el\nconvertidor.\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n35\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "Inicio (Ejecutar)",
+            "· Habilita el motor. · Invierte el sentido de giro si está activado el modo de teclado bidireccional."
+          ],
+          [
+            "Parada / Reset",
+            "• Para el motor. · Confirma un fallo."
+          ],
+          [
+            "Navegar",
+            "· Muestra información en tiempo real. · Pulsar y mantener para cambiar al modo de edición de parámetros o bien para salir del mismo. · Guarda los cambios de los parámetros."
+          ],
+          [
+            "Acel",
+            "· Aumenta la velocidad en el modo de tiempo real. · Aumenta los valores de parámetros en el modo de modificación de parámetros."
+          ],
+          [
+            "Decel",
+            "Reduce la velocidad en el modo de tiempo real. · Reduce los valores de parámetros en el modo de modificación de parámetros."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "I\n5\nPuesta en marcha\nInterfaz de usuario\n0\n5.1.2\nCombinaciones de teclas avanzadas\nFunción\nEl aparato indica ...\nPulse ...\nResultado\nEjemplo\nSelección rápida\nde grupos de\nparámetros1)\nPx-XX\nTeclas \"Navegar\" +\n\"Acel\"\nSe selecciona el\ngrupo de parámetros\ninmediatamente\nsuperior.\n· Se visualiza \"P1-10\".\n· Pulse las teclas \"Navegar\" +\n\"Acel\".\n· Ahora se visualiza \"P2-01\".\nPx-XX\nTeclas \"Navegar\" +\n\"Decel\"\nSe selecciona el\ngrupo de parámetros\ninmediatamente inferior.\n•\nSe visualiza \"P2-26\".\n•\nPulse las teclas \"Navegar\" +\n\"Decel\".\n•\nAhora se visualiza \"P1-01\".\nSelección del\nparámetro de grupo\ninferior\nPx-XX\nTeclas \"Acel\" + \"Decel\"\nSe selecciona el primer\nparámetro de un grupo.\n•\nSe visualiza \"P1-10\".\n•\nPulse las teclas \"Acel\" +\n\"Decel\".\n•\nAhora se visualiza \"P1-01\".\nAjustar el\nparámetro al valor\ninferior\nValor numérico\n(al cambiar un valor\nde parámetro)\nTeclas \"Acel\" + \"Decel\"\nEl parámetro se pone al\nvalor inferior.\nAl cambiar P1-01:\n· Se visualiza \"50,0\".\n•\nPulse las teclas \"Acel\" +\n\"Decel\".\n.\nAhora se visualiza \"0,0\".\nCambiar algunas\ncifras de un valor\nde parámetro\nValor numérico\n(al cambiar un valor\nde parámetro)\nTeclas \"Parada /\nReset\" + \"Navegar\"\nSe pueden cambiar las\ncifras individuales del\nparámetro.\nAl cambiar P1-10:\n· Se visualiza \"0\".\n. Pulse las teclas \"Parada /\nReset\" + \"Navegar\".\n· Ahora se visualiza \"_0\".\n. Pulse la tecla \"Acel\".\n· Ahora se visualiza \"10\".\n· Pulse las teclas \"Parada /\nReset\" + \"Navegar\".\n. Ahora se visualiza \"_10\".\n. Pulse la tecla \"Acel\".\n· Ahora se visualiza \"110\".\netc.\n1) Acceso a grupos de parámetros debe estar activado mediante la puesta de P1-14 a \"101\".\n5.1.3 Indicación\nCada accionamiento dispone de una pantalla de 7 segmentos y 6 caracteres, con la que\npuede controlar las funciones del accionamiento y ajustar los parámetros.\n36\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "Función",
+            "El aparato indica ...",
+            "Pulse ...",
+            "Resultado",
+            "Ejemplo"
+          ],
+          [
+            "Selección rápida de grupos de parámetros1)",
+            "Px-XX",
+            "Teclas \"Navegar\" + \"Acel\"",
+            "Se selecciona el grupo de parámetros inmediatamente superior.",
+            "· Se visualiza \"P1-10\". · Pulse las teclas \"Navegar\" + \"Acel\". · Ahora se visualiza \"P2-01\"."
+          ],
+          [
+            "",
+            "Px-XX",
+            "Teclas \"Navegar\" + \"Decel\"",
+            "Se selecciona el grupo de parámetros inmediatamente inferior.",
+            "• Se visualiza \"P2-26\". • Pulse las teclas \"Navegar\" + \"Decel\". • Ahora se visualiza \"P1-01\"."
+          ],
+          [
+            "Selección del parámetro de grupo inferior",
+            "Px-XX",
+            "Teclas \"Acel\" + \"Decel\"",
+            "Se selecciona el primer parámetro de un grupo.",
+            "• Se visualiza \"P1-10\". • Pulse las teclas \"Acel\" + \"Decel\". • Ahora se visualiza \"P1-01\"."
+          ],
+          [
+            "Ajustar el parámetro al valor inferior",
+            "Valor numérico (al cambiar un valor de parámetro)",
+            "Teclas \"Acel\" + \"Decel\"",
+            "El parámetro se pone al valor inferior.",
+            "Al cambiar P1-01: · Se visualiza \"50,0\". • Pulse las teclas \"Acel\" + \"Decel\". . Ahora se visualiza \"0,0\"."
+          ],
+          [
+            "Cambiar algunas cifras de un valor de parámetro",
+            "Valor numérico (al cambiar un valor de parámetro)",
+            "Teclas \"Parada / Reset\" + \"Navegar\"",
+            "Se pueden cambiar las cifras individuales del parámetro.",
+            "Al cambiar P1-10: · Se visualiza \"0\". . Pulse las teclas \"Parada / Reset\" + \"Navegar\"."
+          ],
+          [
+            "· Ahora se visualiza \"_0\". . Pulse la tecla \"Acel\". · Ahora se visualiza \"10\". · Pulse las teclas \"Parada / Reset\" + \"Navegar\". . Ahora se visualiza \"_10\". . Pulse la tecla \"Acel\". · Ahora se visualiza \"110\". etc."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Puesta en marcha\nPuesta en marcha sencilla de MOVITRAC® LTP-B\nI\n0\n5\n5.2\nPuesta en marcha sencilla de MOVITRAC® LTP-B\n1. Conecte el motor al convertidor, respetando el rango de tensión del motor.\n2. Introduzca los datos de motor de la placa de características del motor:\n· P1-08 = Corriente nominal del motor\n· P1-09 = Frecuencia nominal del motor\n3. Ajuste las velocidades máxima y mínima con P1-01 y P1-02.\n4. Ajuste las rampas de aceleración y deceleración con P1-03 y P1-04.\n5. Configure los datos de la placa de características del motor a través de los\nparámetros P1-07 a P1-10.\n5.2.1 Ajustes del convertidor para motores de imán permanente\nMOVITRAC® LTP-B es apropiado para motores de imán permanente sin encoder, tales\ncomo LSPM. Para motores CMP se precisan los servomódulos AK1H y LTX.\nPuesta en marcha sencilla para motores preajustados de SEW-EURODRIVE\nPuede efectuarse una puesta en marcha sencilla si uno de los siguientes motores está\nconectado al convertidor:\nTipo de motor\nFormato de visualización\nCMP40M\n400\nCMP50S / CMP50M / CMP50L\n505\n500\n50L\nCMP63S / CMP63M / CMP63L\n635\n630\n63L\nCMP71S / CMP71M / CMP71L\n715\n7 16\nMGF® DSM, Tamaño 2\n9F2\nMGF® DSM, Tamaño 4\n9F4\nProcedimiento\n· Ponga P1-14 a \"1\" para el acceso a los parámetros específicos de LTX.\n· Ponga P1-16 al motor preajustado, véase el capítulo \"Parámetros específicos de LTX\n(nivel 1)\" en el \"Anexo a las instrucciones de funcionamiento MOVITRAC® LTX\".\nTodos los parámetros necesarios (tensión, corriente, etc.) se ajustan automáticamente.\n· NOTA\nSi P1-16 está puesto a \"GF2\" o \"GF4\", se ajusta la protección contra sobrecarga a\n\"300 %\" para poner a disposición un alto par de sobrecarga. La sonda térmica KTY\ndebe estar conectada a un dispositivo de vigilancia externo para la protección del\nmotor. Asegure la protección del motor mediante un dispositivo de protección\nexterno.\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n37\nSEW\nEURODRIVE",
+      "tablas": [
+        [
+          [
+            "Tipo de motor",
+            "Formato de visualización"
+          ],
+          [
+            "CMP40M",
+            "400",
+            ""
+          ],
+          [
+            "CMP50S / CMP50M / CMP50L",
+            "505",
+            "500",
+            "50L"
+          ],
+          [
+            "CMP63S / CMP63M / CMP63L",
+            "635",
+            "630",
+            "63L"
+          ],
+          [
+            "CMP71S / CMP71M / CMP71L",
+            "715",
+            "",
+            "7 16"
+          ],
+          [
+            "MGF® DSM, Tamaño 2",
+            "9F2",
+            ""
+          ],
+          [
+            "MGF® DSM, Tamaño 4",
+            "9F4",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "I\n5\n0\nPuesta en marcha\nPuesta en marcha sencilla de MOVITRAC® LTP-B\nPuesta en marcha sencilla para motores de SEW-EURODRIVE y motores no SEW\n· A ¡ADVERTENCIA! Peligro por arranque del motor. Para ejecutar el autoajuste no\nes necesaria ninguna habilitación. Tan pronto como se pone P4-02 a \"1\", se ejecuta\nautomáticamente autoajuste y se conecta el motor. Posiblemente puede arrancarse\nel motor.\nLesiones graves o fatales.\n- El cable no debe retirarse durante el funcionamiento.\n- No toque el eje del motor.\nSi P1-16 se pone a \"In-Syn\", la capacidad de sobrecarga se ajusta a \"150 %\" en\nfunción de P1-08.\nSi se conecta al MOVITRAC® LTP-B otro que un motor preajustado de SEW-\nEURODRIVE, deben ajustarse los siguientes parámetros:\n· P1-14 = 101\n· P1-07 = Tensión fase-fase del motor de iman permanente con velocidad nominal\n· P1-08 = Corriente nominal del motor\n· P1-09 = Frecuencia nominal del motor\n· P1-10 = Velocidad nominal del motor\n· P4-01 = Modo de funcionamiento (velocidad o par del motor de imán permanente)\n· P4-02 = 1 activa autoajuste\n· NOTA\nPara más información sobre los parámetros P1-07, P1-08 y P1-09, véanse las\nsiguientes instrucciones de funcionamiento:\n- \"Servomotores síncronos CMP40-CMP100, CMPZ71-CMPZ100\"\nEl comportamiento de regulación del motor (regulador PI) puede ajustarse a través\nde P4-03 Ganancia proporcional del regulador de velocidad vectorial y P4-04\nConstante de tiempo integral del regulador de velocidad vectorial.\n5.2.2 Control mediante bornas (ajuste de fábrica) P1-12 = 0\nPara el funcionamiento en el control mediante bornas (ajuste de fábrica):\n· P1-12 ha de estar ajustado en \"0\" (ajuste de fábrica).\n· Conecte un interruptor entre las bornas 1 y 2 del bornero de señal.\n· Conecte un potenciómetro (1 k-10 k) entre las bornas 5, 6 y 7, el contacto variable\nse conecta con el pin 6.\n· Habilite el accionamiento estableciendo una conexión entre bornas 1 y 2.\n· Ajuste la velocidad con el potenciómetro.\n· NOTA\nEl ajuste de fábrica (P1-12 = 0 y P1-15 = 1) para el interruptor opcional en la carcasa\nIP55 del tamaño 2 y 3 es FWD / REV. La velocidad del motor puede ajustarse con\nel potenciómetro.\n38\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Puesta en marcha\nPuesta en marcha sencilla de MOVITRAC® LTP-B\nI\n0\n5\n5.2.3\nModo de teclado (P1-12 = 1 o 2)\nPara el funcionamiento en el modo de teclado:\n· Ajuste P1-12 en \"1\" (unidireccional) o \"2\" (bidireccional).\n· Conecte un puente o un interruptor entre las bornas 1 y 2 del bornero de señal para\nhabilitar el accionamiento.\n· Ahora pulse la tecla \"Inicio\". El accionamiento será habilitado con 0,0 Hz.\n· Pulse la tecla \"Acel\" para aumentar la velocidad.\n· Para detener el accionamiento, pulse la tecla \"Parada / Reset\".\n· Si inmediatamente después pulsa la tecla \"Inicio\", el accionamiento volverá a la\nvelocidad original. (En caso de que esté activado el modo bidireccional (P1-12 = 2),\npulsando la tecla \"Inicio\" se invierte la dirección).\n•\nNOTA\nPulsando la tecla \"Parada/Reset\" durante la parada puede preajustar la velocidad de\nconsigna deseada. Si a continuación pulsa la tecla \"Inicio\", el accionamiento\naumenta la velocidad utilizando una rampa hasta llegar a la velocidad deseada.\n5.2.4 Modo de regulador PID (P1-12 = 3)\nEl regulador PID implementado puede utilizarse para regulación de temperatura, de\npresión o para otras aplicaciones.\nLa siguiente figura muestra la instalación del regulador PID.\nTensión de referencia\npreajustada (P3-05)\n+\nConsigna\nAI1\nGanancia\nproporcional\n(P3-01)\n–\nGanancia\nintegral\n(P3-02)\nTiempo diferen-\ncial (P3-03)\nSalida PI\n(valor real)\n3004287371\nPonga el valor real del sensor (temperatura, presión, etc.) a la entrada analógica 1 (AI1).\nPuede escalar el valor real y dotarlo de un offset adaptándolo al rango de trabajo del\nregulador PID. Véase el capítulo \"Modo PID de usuario (nivel 2)\" (-> pág. 71).\nLa frecuencia de consigna para el regulador PID puede ajustarse con P3-05.\nSi el regulador PID está activo, el ajuste de los tiempos de rampa de la velocidad de\nmodo estándar no surte ningún efecto. En función del valor de error PID (la diferencia\nentre consigna y referencia) pueden activarse las rampas a través de P3-11.\n•\nNOTA\nLa referencia PID puede indicarse también a través de SBUS en el parámetro P5-09,\nP5-10 o P5-11. Para poder utilizar una referencia PID a través de SBUS, el\naccionamiento debe operarse en el modo SBUS (P1-12 = 5) y la consigna de\nvelocidad debe ajustarse a PID (P1-15 = 0 y P9-10 = PID). Ajuste a continuación la\nreferencia PID a la referencia de bus de campo (P3-05).\nInstrucciones de funcionamiento - MOVITRAC® LTP-B\n39\nSEW\nEURODRIVE",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "I\n5\n0\nPuesta en marcha\nPuesta en marcha sencilla de MOVITRAC® LTP-B\n5.2.5\nModo maestro-esclavo (P1-12 = 4)\nEl MOVITRAC® LTP-B tiene una función maestro-esclavo integrada. Esto es un\nprotocolo especial para el convertidor con el que se posibilita la comunicación maestro-\nesclavo. Pueden interconectarse mediante conectores enchufables RJ45 hasta\n63 accionamientos en una red de comunicación. Un accionamiento debe configurarse\ncomo maestro, los demás accionamientos se configuran como esclavos. Por cada red\ndebe haber un sólo accionamiento maestro. Este accionamiento maestro transmite su\nestado de servicio (por ejemplo, bloqueado, en marcha) y su frecuencia de salida en\nintervalos de 30 ms. Los accionamientos esclavo siguen entonces al estado del\naccionamiento maestro (en marcha, bloqueado). La frecuencia de salida del\naccionamiento maestro se convierte entonces en la frecuencia de consigna para todos\nlos accionamientos esclavo.\nConfiguración del\naccionamiento\nmaestro\nEl accionamiento maestro de cada red debe tener en ella la dirección de comunicación 1.\n· Ponga P5-01 Dirección del accionamiento (comunicación) a \"12\".\n. Ponga P1-12 a un valor distinto de 4.\nConfiguración de\nlos accionamientos\nesclavo\n· Cada uno de los esclavos conectados debe tener una dirección de comunicación\nesclavo única que se ajusta en P5-01. Pueden asignarse direcciones esclavo de 2 a 63.\n· Ponga P1-12 a \"4\".\n· Ajuste en P2-28 la manera del escalado de velocidad.\n· Ajuste en P2-29 el factor de escalado.\n40\nSEW\nEURODRIVE\nInstrucciones de funcionamiento - MOVITRAC® LTP-B",
+      "tablas": [
+        [
+          [
+            "",
+            "El MOVITRAC® LTP-B tiene una función maestro-esclavo integrada. Esto es un protocolo especial para el convertidor con el que se posibilita la comunicación maestro- esclavo. Pueden interconectarse mediante conectores enchufables RJ45 hasta 63 accionamientos en una red de comunicación. Un accionamiento debe configurarse como maestro, los demás accionamientos se configuran como esclavos. Por cada red debe haber un sólo accionamiento maestro. Este accionamiento maestro transmite su estado de servicio (por ejemplo, bloqueado, en marcha) y su frecuencia de salida en intervalos de 30 ms. Los accionamientos esclavo siguen entonces al estado del accionamiento maestro (en marcha, bloqueado). La frecuencia de salida del accionamiento maestro se convierte entonces en la frecuencia de consigna para todos los accionamientos esclavo."
+          ],
+          [
+            "Configuración del accionamiento maestro",
+            "El accionamiento maestro de cada red debe tener en ella la dirección de comunicación 1. · Ponga P5-01 Dirección del accionamiento (comunicación) a \"12\". . Ponga P1-12 a un valor distinto de 4."
+          ],
+          [
+            "Configuración de los accionamientos esclavo",
+            "· Cada uno de los esclavos conectados debe tener una dirección de comunicación esclavo única que se ajusta en P5-01. Pueden asignarse direcciones esclavo de 2 a 63."
+          ],
+          [
+            "· Ponga P1-12 a \"4\"."
+          ],
+          [
+            "· Ajuste en P2-28 la manera del escalado de velocidad."
+          ],
+          [
+            "· Ajuste en P2-29 el factor de escalado."
+          ]
+        ]
+      ]
+    }
+  ]
+}

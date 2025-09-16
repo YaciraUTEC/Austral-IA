@@ -1,0 +1,1226 @@
+{
+  "archivo": "VACON-100-FLOW-Application-Guide-DPD01083H-EN (1)_p241_280",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nUse this parameter to enable the feedback supervision function. Use the feedback supervision to make sure that the PID feedback\nvalue stays in the set limits.\nC\nA\nD\nB\nE\ne30bg309.10\nF\nG\nIllustration 82: The Feedback Supervision Function\nA\nUpper limit (ID 736)\nE\nDelay (ID 737)\nB\nLower limit (ID 758)\nF\nRegulating mode\nC\nActual value\nG\nAlarm or fault\nD\nReference\n11.15.6.2 (ID 736) Upper Limit\nLocation in the menu: P3.13.6.2\nUse this parameter to set the high limit for the PID feedback signal. If the value of the PID feedback signal goes above this limit for\nlonger than the set time, a feedback supervision fault occurs.\n11.15.6.3 (ID 758) Lower Limit\nLocation in the menu: P3.13.6.3\nUse this parameter to set the low limit for the PID feedback signal. If the value of the PID feedback signal goes below this limit for\nlonger than the set time, a feedback supervision fault occurs.\nSet the upper limit and the lower limit around the reference. When the actual value is less or more than the limits, a counter starts to\ncount up. When the actual value is between the limits, the counter counts down. When the counter gets a value that is higher than\nthe value of P3.13.6.4 Delay, an alarm, or a fault shows. It is possible to select the response with parameter P3.13.6.5 (Response to\nPID1 Supervision Fault).\n11.15.6.4 (ID 737) Delay\nLocation in the menu: P3.13.6.4\nUse this parameter to set the maximum time for the PID feedback signal to stay outside the supervision limits before the feedback\nsupervision fault occurs. If the target value is not reached in this time, a fault or alarm shows.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 241",
+      "tablas": [
+        [
+          [
+            "A",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "D"
+          ],
+          [
+            "B",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            ":selected:\n:unselected:",
+            "",
+            ":selected:",
+            ""
+          ],
+          [
+            "E",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":selected:",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.15.6.5 (ID 749) Response to PID Supervision Fault\nLocation in the menu: P3.13.6.5\nUse this parameter to select the response of the drive to a 'PID Supervision' fault. If the PID feedback value is not in the supervision\nlimits for longer than the supervision delay, a PID supervision fault occurs.\n11.15.7 Pressure Loss Compensation\nWhen pressurizing a long pipe that has many outlets, the best position for the sensor is in the middle of the pipe (the position 2 in\nthe figure). It is also possible to put the sensor directly after the pump. This gives the right pressure directly after the pump, but\nfarther in the pipe, the pressure drops with the flow.\nA\ne30bg310.10\nB\nC\nPT\nD\nPT\nE\nF\nIllustration 83: The Position of the Pressure Sensor\nA\nPressure\nB\nNo flow\nD\nPipe length\nE\nPosition 1\nC\nWith flow\nF\nPosition 2\n11.15.7.1 (ID 1189) Enable Setpoint 1\nLocation in the menu: P3.13.7.1\nUse this parameter to enable the pressure loss compensation in the pump system. In a pressure-controlled system, this function\ncompensates the pressure loss that occurs at the end of the pipe line due to the liquid flow.\n11.15.7.2 (ID 1190) Setpoint 1 Max Compensation\nLocation in the menu: P3.13.7.2\nUse this parameter to set the maximum compensation for PID setpoint value that is applied when the output frequency of the drive\nis at the maximum frequency. The compensation value is added to the actual setpoint value as a function of the output frequency.\nSetpoint compensation = max compensation * (FreqOut-MinFreq)/(MaxFreq-MinFreq).\nThe sensor is put in position 1. The pressure in the pipe stays constant when there is no flow. But with flow, the pressure decreases\nfarther in the pipe. To compensate for this, lift the setpoint as the flow increases. Then the output frequency makes an estimate of\nthe flow, and the setpoint increases linearly with the flow.\n242 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nSetpoint\ne30bg311.10\nSetpoint + Max compensation\nSetpoint\nMin Freq and Flow\nMax Freq and Flow\nPressure\nNo flow\nWith flow and compensation\nPipe length\nPT\nPT\nPosition 1\nPosition 2\nIllustration 84: Enable Setpoint 1 for Pressure Loss Compensation\n11.15.8 Soft Fill\nThe Soft fill function is used to move the process to a set level at a slow speed before the PID controller starts to control. If the\nprocess does not go to the set level during the timeout, a fault shows.\nIt is possible to use the function to fill an empty pipe slowly and prevent strong currents of water that could break the pipe.\nWe recommend always using the Soft fill function when using the Multi-pump function.\n11.15.8.1 (ID 1094) Soft Fill Function\nLocation in the menu: P3.13.8.1\nUse this parameter to enable the Soft Fill function. It is possible to use the function to fill an empty pipe slowly and prevent strong\ncurrents of fluid that could break the pipe.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 243",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nSelec-\ntion\nnumber\nSelection\nname\nDescription\n0\nDisabled\n1\nEnabled (Lev-\nel)\nThe drive operates at a constant frequency (P3.13.8.2 Soft Fill Frequency) until the PID feedback sig-\nnal goes to the soft fill level (P3.13.8.3 Soft Fill Level). The PID controller starts the regulation.\nIn addition, if the PID feedback signal does not go to the soft fill level in the soft fill timeout\n(P3.13.8.4 Soft Fill Timeout), a soft fill fault is shown (P3.13.8.4 Soft Fill Timeout is set to greater than\n0).\nThe soft fill mode is used in vertical installations.\n2\nEnabled\n(Timeout)\nThe drive operates at a constant frequency (P3.13.8.2 Soft Fill Frequency) until the soft fill time\n(P3.13.8.4 Soft Fill Timeout) goes. After the soft fill time, the PID controller starts the regulation.\nIn this mode, the soft fill fault is not available. The soft fill mode is used in horizontal installations.\n11.15.8.2 (ID 1055) Soft Fill Frequency\nLocation in the menu: P3.13.8.2\nUse this parameter to set the frequency reference of the drive when the Soft Fill function is used.\n11.15.8.3 (ID 1095) Soft Fill Level\nLocation in the menu: P3.13.8.3\nUse this parameter to set the level below which the soft fill control is enabled when starting the drive. The drive operates at the PID\nstart frequency until the feedback reaches the set value. Then the PID controller starts to control the drive. This parameter is applied\nif the soft fill function is set to 'Enabled, Level'.\n11.15.8.4 (ID 1096) Soft Fill Timeout\nLocation in the menu: P3.13.8.4.\nUse this parameter to set the timeout time for the Soft Fill function. When the soft fill function is set to 'Enabled, Level', this parame-\nter gives the timeout for the soft fill level, after which the soft fill fault occurs. When the soft fill function is set to 'Enabled, Timeout',\nthe drive operates at the soft fill frequency until the time set by this parameter expires.\nIf the option Enabled (Timeout) is selected in parameter P3.13.8.1 Soft Fill Function, parameter Soft Fill Timeout gives the quantity of\ntime that the drive operates at the constant soft fill frequency (P3.13.8.2 Soft Fill Frequency) before the PID controller starts the\nregulation.\n11.15.8.5 (ID 748) Soft Fill Fault\nLocation in the menu: P3.13.8.5.\nUse this parameter to select the response of the drive to a 'PID Soft Fill' fault. If the PIDFeedback value does not reach the set level in\nthe time limit, a soft fill fault occurs.\nSelection number\nSelection name\nDescription\n0\nNo action\n1\nAlarm\n2\nFault (stop according to stop mode)\n3\nFault (stop by coasting)\n11.15.9 Input Pressure Supervision\nUse the Input pressure supervision to make sure that there is enough water in the inlet of the pump. When there is enough water,\nthe pump does not suck air and there is no suction cavitation. To use the function, install a pressure sensor on the pump inlet.\nIf the input pressure of the pump goes below the set alarm limit, an alarm shows. The setpoint value of the PID controller decreases\nand causes the output pressure of the pump to decrease. If the pressure goes below the fault limit, the pump is stops and a fault\nshows.\n244 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selec- tion number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Disabled",
+            ""
+          ],
+          [
+            "1",
+            "Enabled (Lev- el)",
+            "The drive operates at a constant frequency (P3.13.8.2 Soft Fill Frequency) until the PID feedback sig- nal goes to the soft fill level (P3.13.8.3 Soft Fill Level). The PID controller starts the regulation. In addition, if the PID feedback signal does not go to the soft fill level in the soft fill timeout (P3.13.8.4 Soft Fill Timeout), a soft fill fault is shown (P3.13.8.4 Soft Fill Timeout is set to greater than 0). The soft fill mode is used in vertical installations."
+          ],
+          [
+            "2",
+            "Enabled (Timeout)",
+            "The drive operates at a constant frequency (P3.13.8.2 Soft Fill Frequency) until the soft fill time (P3.13.8.4 Soft Fill Timeout) goes. After the soft fill time, the PID controller starts the regulation. In this mode, the soft fill fault is not available. The soft fill mode is used in horizontal installations."
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "No action",
+            ""
+          ],
+          [
+            "1",
+            "Alarm",
+            ""
+          ],
+          [
+            "2",
+            "Fault (stop according to stop mode)",
+            ""
+          ],
+          [
+            "3",
+            "Fault (stop by coasting)",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\ne30bg313.10\nO\n0\n>\n1\nPT\nB\nC\nIllustration 85: The Location of the Pressure Sensor\nA\nMains\nC\nOutlet\nB\nInlet\nInput Pressure\nSupervision\nAlarm Level\nSupervision\nFault Level\nInput Pressure Monitor\ne30bg314.10\nPID Setpoint\nPID Setpoint\nSupervision;\nFault Delay:\nSupervision'\n'Fault Delay:\nPID Setpoint\nReduction\nInput Pressure Alarm\n(Digital output signal)\nMotor Running\nYes\nNo\nIllustration 86: The Input Pressure Supervision Function\n11.15.9.1 (ID 1685) Enable Supervision\nLocation in the menu: P3.13.9.1\nUse this parameter to enable the Input Pressure Supervision function. Use this function to make sure that there is enough fluid in\nthe inlet of the pump.\n11.15.9.2 (ID 1686) Supervision Signal\nLocation in the menu: P3.13.9.2\nUse this parameter to select the source of the input pressure signal.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 245",
+      "tablas": [
+        [
+          [
+            "A Mains",
+            "C Outlet"
+          ],
+          [
+            "B",
+            "Inlet",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\n11.15.9.3 (ID 1687) Supervision Unit Selection\nLocation in the menu: P3.13.9.3\nUse this parameter to select the unit for the input pressure signal. It is possible to scale the supervision signal (P3.13.9.2) to process\nunits on the panel.\n11.15.9.4 (ID 1688) Supervision Unit Decimals\nLocation in the menu: P3.13.9.4\nUse this parameter to set the number of decimals for the input pressure signal unit. It is possible to scale the supervision signal\n(P3.13.9.2) to process units on the panel.\n11.15.9.5 (ID 1689) Supervision Unit Minimum Value\nLocation in the menu: P3.13.9.5\nUse this parameter to set the minimum value of the input pressure signal. Enter the value in the selected process unit. For example,\nan analog signal of 4 ... 20 mA corresponds to the pressure of 0 ... 10 bar.\n11.15.9.6 (ID 1690) Supervision Unit Maximum Value\nLocation in the menu: P3.13.9.6\nUse this parameter to set the maximum value of the input pressure signal. Enter the value in the selected process unit. For example,\nan analog signal of 4 ... 20 mA corresponds to the pressure of 0 ... 10 bar.\n11.15.9.7 (ID 1691) Supervision Alarm Level\nLocation in the menu: P3.13.9.7\nUse this parameter to set the limit for the input pressure alarm. If the measured input pressure goes below this limit, an input pres-\nsure alarm occurs.\n11.15.9.8 (ID 1692) Supervision Fault Level\nLocation in the menu: P3.13.9.8\nUse this parameter to set the limit for the input pressure fault. If the measured input pressure stays below this level for longer than\nthe set time, an input pressure fault occurs.\n11.15.9.9 (ID 1693) Supervision Fault Delay\nLocation in the menu: P3.13.9.9\nUse this parameter to set the maximum duration for the input pressure to stay below the fault limit before an input pressure fault\noccurs.\n11.15.9.10 (ID 1694) PID Setpoint Reduction\nLocation in the menu: P3.13.9.10\nUse this parameter to set the rate of the reduction of the PID setpoint value when the measured input pressure is below the alarm\nlimit.\n11.15.10 Sleep Function When No Demand Is Detected\nThis function makes sure that the pump does not operate at a high speed when there is no demand in the system.\nThe function becomes active when the PID feedback signal and the output frequency of the drive stay in the specified hysteresis\nareas for longer than set with parameter P3.13.10.4 SNDD Supervision Time.\nThere are different hysteresis settings for the PID feedback signal and the output frequency. The hysteresis for the PID feedback\n(SNDD Error Hysteresis P3.13.10.2) is given in the selected process units around the PID setpoint value.\nWhen the function is active, a short-time bias value (SNDD Actual Add) is added internally to the feedback value.\n. If there is no demand in the system, the PID output, and the output frequency of the drive decrease to the direction of 0. If the\nPID feedback value stays in the hysteresis area, the drive goes to the Sleep mode.\n. If the PID feedback value does not stay in the hysteresis area, the function is deactivated and the drive continues to operate.\n246 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nHz\n1\nA\nH\ne30bi982.10\nT\nT\n1\n1\nJ\nT\n1\nK\nB\nG\nC\nF\nI\nt\n1\nE\n7\nt\nIllustration 87: Sleep, No Demand Detected\nA\nThe output frequency of the drive\nG\nSNDD Supervision Time (P3.13.10.4)\nB\nThe PID feedback value\nH\nThe PID feedback value and the output frequency of\nthe drive are in the hysteresis areas for the set time\nC\nThe PID setpoint value\n(SNDD Supervision Time). A bias value (SNDD Actual\nD\nSNDD Frequency Hysteresis (P3.13.10.3)\nAdd) is added to the PID feedback value.\nE\nSNDD Error Hysteresis (P3.13.10.2) The hysteresis\narea around the PID setpoint value.\nI\nSP1 Sleep Delay Time (P3.13.5.2)\nJ\nThe drive goes to the Sleep mode.\nF\nSNDD Actual Add (P3.13.10.5)\nK\nProcess Unit (P3.13.1.4)\n11.15.10.1 (ID 1649) Sleep No Demand Detection Enable\nLocation in the menu: P3.13.10.1\nUse this parameter to activate the Sleep No Demand Detection (SNDD) function.\n11.15.10.2 (ID 1658) SNDD Error Hysteresis\nLocation in the menu: P3.13.10.2\nUse this parameter to set the hysteresis for the error value of the PID controller.\n11.15.10.3 (ID 1663) SNDD Frequency Hysteresis\nLocation in the menu: P3.13.10.3\nUse this parameter to set the hysteresis for the output frequency of the drive.\n11.15.10.4 (ID 1668) SNDD Supervision Time\nLocation in the menu: P3.13.10.4\nUse this parameter to set the time that the output frequency of the drive and the error value of the PID controller must stay in the\nhysteresis areas before the SNDD function becomes active.\n11.15.10.5 (ID 1669) SNND Actual Add\nLocation in the menu: P3.13.10.5\nUse this parameter to set the value that is added to the actual value of the PID feedback for a short time when the SNDD function is\nactive.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 247",
+      "tablas": [
+        [
+          [
+            "A",
+            "The output frequency of the drive",
+            "G",
+            "SNDD Supervision Time (P3.13.10.4)"
+          ],
+          [
+            "B",
+            "The PID feedback value",
+            "H The PID feedback value and the output frequency of the drive are in the hysteresis areas for the set time"
+          ],
+          [
+            "C",
+            "The PID setpoint value",
+            "(SNDD Supervision Time). A bias value (SNDD Actual"
+          ],
+          [
+            "D",
+            "SNDD Frequency Hysteresis (P3.13.10.3)",
+            "Add) is added to the PID feedback value."
+          ],
+          [
+            "E",
+            "SNDD Error Hysteresis (P3.13.10.2) The hysteresis area around the PID setpoint value.",
+            "I SP1 Sleep Delay Time (P3.13.5.2) J The drive goes to the Sleep mode."
+          ],
+          [
+            "F",
+            "SNDD Actual Add (P3.13.10.5)",
+            "K Process Unit (P3.13.1.4)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.15.11 Multi-setpoint\n11.15.11.1 (ID 15560) Multi-setpoint 0\nLocation in the menu: P3.13.12.1\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.2 (ID 15561) Multi-setpoint 1\nLocation in the menu: P3.13.12.2\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.3 (ID 15562) Multi-setpoint 2\nLocation in the menu: P3.13.12.3\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.4 (ID 15563) Multi-setpoint 3\nLocation in the menu: P3.13.12.4\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.5 (ID 15564) Multi-setpoint 4\nLocation in the menu: P3.13.12.5\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.6 (ID 15565) Multi-setpoint 5\nLocation in the menu: P3.13.12.6\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.7 (ID 15566) Multi-setpoint 6\nLocation in the menu: P3.13.12.7\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.8 (ID 15567) Multi-setpoint 7\nLocation in the menu: P3.13.12.8\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.9 (ID 15569) Multi-setpoint 9\nLocation in the menu: P3.13.12.10\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.10 (ID 15570) Multi-setpoint 10\nLocation in the menu: P3.13.12.11\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.11 (ID 15571) Multi-setpoint 11\nLocation in the menu: P3.13.12.11\n248 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.12 (ID 15572) Multi-setpoint 12\nLocation in the menu: P3.13.12.13\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.13 (ID 15573) Multi-setpoint 13\nLocation in the menu: P3.13.12.13\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.14 (ID 15574) Multi-setpoint 14\nLocation in the menu: P3.13.12.15\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.15 (ID 15575) Multi-setpoint 15\nLocation in the menu: P3.13.12.16\nUse this parameter to set the preset PID setpoint value when the Multi-setpoint function is used. Make the selection of the multi-\nsetpoint with the digital input signals.\n11.15.11.16 (ID 15576) Multi-setpoint Selection 0\nLocation in the menu: P3.13.12.17\nUse this parameter to select the digital input signal that is used as a selector for the PID Multi-setpoint function.\n11.15.11.17 (ID 15577) Multi-setpoint Selection 1\nLocation in the menu: P3.13.12.18\nUse this parameter to select the digital input signal that is used as a selector for the PID Multi-setpoint function.\n11.15.11.18 (ID 15578) Multi-setpoint Selection 2\nLocation in the menu: P3.13.12.19\nUse this parameter to select the digital input signal that is used as a selector for the PID Multi-setpoint function.\n11.15.11.19 (ID 15579) Multi-setpoint Selection 3\nLocation in the menu: P3.13.12.20\nUse this parameter to select the digital input signal that is used as a selector for the PID Multi-setpoint function.\n11.16 External PID Controller\n11.16.1 (ID 1630) Enable External PID\nLocation in the menu: P3.14.1.1\nUse this parameter to enable the PID controller.\nThis controller is for external use only. It can be used with an analog output.\n11.16.2 (ID 1049) Start Signal\nLocation in the menu: P3.14.1.2\nUse this parameter to set the signal for starting and stopping the PID controller 2 for external usage.\nIf the PID2 controller is not enabled in the Basic menu for PID2, this parameter has no effect.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 249",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.17 Multi-pump Function\n11.17.1 The Multi-pump Function\nThe Multi-pump function allows controlling a system where the maximum of 8 motors, for example, pumps, fans or compressors\noperate in parallel. The internal PID controller of the drive operates the necessary quantity of motors and controls the speed of the\nmotors, when there is demand.\n11.17.1.1 Commissioning Multi-pump (Multidrive)\nThe check list helps in the configuration of the basic settings of the Multi-pump (multidrive) system. If the keypad is used for param-\neterization, the application wizard helps to make the basic settings.Start the commissioning with the drives that have the PID feed-\nback signal (pressure sensor, for example) connected to an analog input (default: AI2). Go through all the drives in the system.\nProcedure\n1. Examine the wiring.\n•\nSee the correct power cabling (mains cable, motor cable) of the drive in Installation Guide.\n. See the correct control cabling (I/O, PID feedback sensor, communication) in Illustration 20 and in Illustration 18.\n· If redundancy is necessary, make sure that the PID feedback signal (by default: Al2) is connected to a minimum of 2\ndrives. See the wiring instructions in Illustration 20.\n2.\nDo a power-up of the drive and start the parameterization.\n· Start the parameterization with the drives that have the PID feedback signal connected. These drives can operate as\nthe master of the Multi-pump system.\n•\nParameterization can be done with the keypad or PC the tool.\n3. Select the Multi-pump (multidrive) application configuration with parameter P1.2.\n. Most of the Multi-pump-related settings and configurations are made automatically, when the Multi-pump (multi-\ndrive) application is selected with parameter P1.2 Application (ID 212). See 4.1.5 Multi-pump (Multidrive) Application\nWizard.\n. If the keypad is used for the parameterization, the Application wizard starts when parameter P1.2 Application (ID 212)\nis changed. The Application wizard helps with Multipump-related questions.\n4. Set the motor parameters.\n•\nSet the motor nameplate parameters specified by the nameplate of the motor.\n5.\nSet the total number of drives used in the Multi-pump system.\n. This value is set with parameter P1.35.14 Quick Setup Parameter Menu.\n· The same parameter is in the menu Parameters -> Group 3.15 -> P3.15.2.\n•\nBy default, the Multi-pump system has 3 pumps (drives).\n6. Select the signals that are connected to the drive.\n· Go to parameter P1.35.16 (Quick Setup Parameter Menu).\n· The same parameter is in the menu Parameters -> Group 3.15 -> P3.15.4.\n. If the PID feedback signal is connected, the drive can operate as the master of the Multi-pump system. If the signal is\nnot connected, the drive operates as a slave unit.\n. Select Signals connected, if the start and the PID feedback signals (the pressure sensor, for example) are connected to\nthe drive.\n. Select Start signal only, if only the start signal is connected to the drive (the PID feedback signal is not connected).\n•\nSelect Not connected, if the start or the PID feedback signals are not connected to the drive.\n250 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n7. Set the ID number of the pump.\n· Go to parameter P1.35.15 (Quick Setup Parameter Menu).\n· The same parameter is in the menu Parameters -> Group 3.15 -> P3.15.3.\n. Each drive in the Multi-pump system must have an ID number that no other drive has for the correct communication\nbetween drives. The ID numbers must be in a numerical order and start from number 1.\n· The drives, which have a PID feedback signal connected, have the smallest ID numbers (for example, ID 1 and ID 2). It\ngives the shortest possible start-up delay when doing a power-up of the system.\n8.\nConfigure the Interlock function.\n· Go to parameter P1.35.17 (Quick Setup Parameter Menu).\n· The same parameter is in menu Parameters -> Group 3.15 -> P3.15.5.\n. By default, the interlock function is disabled.\n· Select Enabled, if the interlock signal is connected to the digital input DI5 of the drive. The interlock signal is the digi-\ntal input signal that tells if this pump is available in the Multi-pump system.\n. Select Not Used, if the interlock signal is not connected to the digital input DI5 of the drive. The system sees that all\nthe pumps in the Multi-pump system are available.\n9.\nExamine the source of the PID setpoint signal.\n· By default, the PID setpoint value comes from parameter P1.35.9 Keypad Setpoint 1.\n. If necessary, change the source of the PID setpoint signal with parameter P1.35.8. Select the analog input or Fieldbus\nProcess Data In 1-8, for example.\nThe basic settings of the Multi-pump system are completed. Use the check list also when configuring the next drives in the system.\n11.17.2 System Configuration\n11.17.2.1 Single Drive Configuration\nThe Single drive mode controls a system of 1 variable speed pump and the maximum of 7 auxiliary pumps. The internal PID control-\nler of the drive controls the speed of 1 pump and gives control signals with relay outputs to start or stop the auxiliary pumps. Exter-\nnal contactors are necessary for the switch of the auxiliary pumps to the mains.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 251",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n3~\nII\n-\ne30bi980.10\nA\nRO2\nRO3\nRO8\nM1\nM2\nM3\nM8\nM1\nB\nM2\nM3\nM8\nIllustration 88: Single Drive Configuration\nA\nStart / Stop\nB\nPressure sensor\n11.17.2.2 Multidrive Configuration\nThe Multidrive modes (Multimaster and Multifollower) control a system that has the maximum 8 variable speed pumps. Each pump\nis controlled by a drive. The internal PID controller of the drive controls all pumps. The drives use a communication bus (Modbus\nRTU) for communication.\nThe figure shows the Multidrive configuration principle. See also the general electric diagram of a Multi-pump system in Illustration\n20.\n252 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "A",
+            "Start / Stop"
+          ],
+          [
+            "B",
+            "Pressure sensor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n3~\ne30bi981.10\nA\n0\nM1\nM2\nM3\nM8\nM1\nB\nM2\nM3\nM8\nIllustration 89: Multidrive Configuration\nA\nStart / Stop\nB\nPressure sensor\n11.17.2.3 (ID 1785) Multi-pump Mode\nLocation in the menu: P3.15.1\nUse this parameter to select the configuration and the control mode of the Multi-pump system. The Multi-pump function allows\ncontrolling a maximum of 8 motors (that is, pumps, fans, compressors) with the PID control.\n0 = Single drive\nThe Single drive mode controls a system that has 1 pump that can change speed and the maximum of 7 auxiliary pumps. The inter-\nnal PID controller of the drive controls the speed of 1 pump and gives control signals with relay outputs to start or stop the auxiliary\npumps.\nExternal contactors are necessary for the switch of the auxiliary pumps to the mains. 1 of the pumps is connected to the drive and\ncontrols the system. When the pump in control sees that it is necessary to have more capacity (operates at the maximum frequen-\ncy), the drive gives the control signal with the relay output to start the next auxiliary pump. When the auxiliary pump starts, the\npump in control continues to control and starts from the minimum frequency.\nWhen the pump that controls the system sees that there is too much capacity (operates at the minimum frequency), the pump\nmakes the started auxiliary pump to stop. If no auxiliary pumps operate when the pump in control sees the overcapacity, the pump\ngoes to the Sleep mode (if the Sleep function is enabled).\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 253",
+      "tablas": [
+        [
+          [
+            "A",
+            "Start / Stop"
+          ],
+          [
+            "B",
+            "Pressure sensor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nRPM\nB\nf\nmax\ne30bi983.10\n1\n1\n1\nf\nmin\n-\nt\nP1\nP2\nP3\nIllustration 90: Control in the Single Drive Mode\nP1\nThe pump that controls the system\nB\nThe auxiliary pumps connected to the mains (direct on-line)\n1 = Multifollower\nThe Multifollower mode controls a system that has the maximum 8 pumps that can change speed. Each pump is controlled by a\ndrive. The internal PID controller of the drive controls all the pumps.\n1 of the pumps always controls the system. When the pump in control sees that it is necessary to have more capacity (operates at\nthe maximum frequency), the pump uses the communication bus to make the next pump to start. The next pump increases speed\nand starts to operate at the speed of the pump in control. Auxiliary pumps operate at the speed of the pump that controls the\nsystem.\nWhen the pump that controls the system sees that there is too much capacity (operates at the minimum frequency), it makes the\nstarted pump to stop. If no auxiliary pumps operate when the pump in control sees overcapacity, the pump goes to the Sleep mode\n(if the Sleep function is enabled).\nRPM\nf\n\"max\ne30bi978.10\n=\n11\n=\n=\n=\n11\nA\nf\nmin\n-\n-\nt\nP1\nP2\nP3\nIllustration 91: Control in the Multifollower Mode\nP1\nThe pump controls the system.\nP3\nThe pump follows the speed of P1.\nP2\nThe pump follows the speed of P1.\nA\nCurve A shows the auxiliary pumps that follow the\nspeed of pump 1.\n2 = Multimaster\nThe Multimaster mode controls a system that has the maximum 8 pumps that can change speed. Each pump is controlled by a\ndrive. The internal PID controller of the drive controls all the pumps.\n254 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n1 of the pumps always controls the system. When the pump in control sees that it is necessary to have more capacity (operates at\nthe maximum frequency), it locks to a constant production speed and makes the next pump to start and to control the system.\nWhen the pump that controls the system sees that there is too much capacity (operates at the minimum frequency), it stops. The\npump that operates at a constant production speed starts to control the system. If there are many pumps that operate at a constant\nproduction speed, the started pump starts to control the system. If no pumps operate at a constant production speed when the\npump in control sees the overcapacity, the pump goes to the Sleep mode (if the Sleep function is enabled).\nRPM\nB\ne30bj007.10\nf\nmax\n=\n=\n=\nf\nmin\nA\n-\nt\nP1\nP2\nP3\nIllustration 92: Control in the Multimaster Mode\nA\nCurves A show the control of the pumps\nB\nThe pumps are locked to the constant production frequency\n11.17.2.4 (ID 1001) Number of Pumps\nLocation in the menu: P3.15.2\nUse this parameter to set the total number of motors/pumps used in the Multi-pump system. The maximum number of pumps in\nthe Multi-pump system is 8.\nSet this parameter in the installation. If 1 drive is removed to do the servicing of the pump, for example, it is not necessary to change\nthis parameter.\nIn the Multifollower and Multimaster modes, all drives must have the same value in this parameter for the correct communication\nbetween the drives.\n11.17.2.5 (ID 1500) Pump ID Number\nLocation in the menu: P3.15.3\nUse this parameter to set the ID number of the drive. This parameter is used only in the Multifollower and Multimaster modes.\nEach drive in the Multi-pump system must have a unique sequence (ID) number, always start from 1.\nPump number 1 is always the primary master of the Multi-pump system. Drive number 1 controls the process and the PID controller.\nThe PID feedback and the PID setpoint signals must be connected to the drive number 1.\nIf the drive number 1 is not available in the system, there is a power-down of the drive, for example, the next drive starts to operate\nas a secondary master of the Multi-pump system.\nThe communication between the drives is not correct, if:\n. the Pump ID numbers are not in a numerical order (start from 1), or\n•\n2 drives have the same ID number.\n11.17.2.6 (ID 1782) Start and Feedback Signals\nLocation in the menu: P3.15.4\nUse this parameter to select the signals that are connected to the drive.\n0 = The start and the PID feedback signals not connected to the drive in question\n1 = Only the start signals connected to the drive in question\n2 = The start and the PID feedback signals connected to the drive in question\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 255",
+      "tablas": [
+        [
+          [
+            "A",
+            "Curves A show the control of the pumps"
+          ],
+          [
+            "B",
+            "The pumps are locked to the constant production frequency"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nThis parameter specifies the operation mode (master or slave) in the Multi-pump system. The drives that have the start command\nand the PID feedback signals connected, can operate as the master drive in the Multi-pump system. If there are many drives in the\nMulti-pump system that have all the signals connected, the drive with the lowest Pump ID Number (P3.15.3) starts to operate as the\nmaster.\n11.17.3 Interlocks\nThe interlocks tell the Multi-pump system that a motor is not available. It can occur when the motor is removed from the system for\nmaintenance or bypassed for manual control.\n11.17.3.1 (ID 1032) Pump Interlocking\nLocation in the menu: P3.15.5\nUse this parameter to enable or disable the interlocks. Interlock signal tells to the Multi-pump system if the motor is available or not.\nInterlock signals are given with DI signals. To use the interlocks, enable the parameter P3.15.2. Select the status for each motor with\na digital input (the parameters from P3.5.1.34 to P3.5.1.39). If the value of the input is CLOSED, that is, active, the Multi-pump logic\nconnects the motor to the Multi-pump system.\n11.17.4 Feedback Sensor Connection in a Multi-pump System\nTo get the best precision and redundancy in the Multi-pump system, use the feedback sensors for each drive.\nActual value\n(0)4 .. 20mA\nDrive 1: Standard I/O Board\nTerminal\nSignal\n4\nA12+\nAnalogue input 2+\n5\nA12-\nAnalogue input 2-\n6\n24V out\n24V auxiliary voltage\n7\nGND\nI/O ground\ne30bi984.10\n-\n+\nActual value\n-\n(0)4 .. 20mA\n+\nDrive 2: Standard I/O Board\nTerminal\nSignal\n4\nA12+\nAnalogue input 2+\n5\nA12-\nAnalogue input 2-\n6\n24V out\n24V auxiliary voltage\n7\nGND\nI/O ground\nActual value\n-\n(0)4 .. 20mA\n+\nDrive 3: Standard I/O Board\nTerminal\nSignal\n4\nA12+\nAnalogue input 2+\n5\nA12-\nAnalogue input 2-\n6\n24V out\n24V auxiliary voltage\n7\nGND\nI/O ground\nIllustration 93: Wiring of the Feedback Sensors for Each Drive\nSame sensors can also be used for all the drives. The sensor (transducer) can be supplied by a 24 V external supply or from the\ncontrol board the drive.\n256 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Drive 1: Standard I/O Board"
+          ],
+          [
+            "Terminal",
+            "Signal"
+          ],
+          [
+            "4",
+            "A12+",
+            "Analogue input 2+"
+          ],
+          [
+            "5",
+            "A12-",
+            "Analogue input 2-"
+          ],
+          [
+            "6",
+            "24V out",
+            "24V auxiliary voltage"
+          ],
+          [
+            "7",
+            "GND",
+            "I/O ground"
+          ]
+        ],
+        [
+          [
+            "Drive 2: Standard I/O Board"
+          ],
+          [
+            "Terminal",
+            "Signal"
+          ],
+          [
+            "4",
+            "A12+",
+            "Analogue input 2+"
+          ],
+          [
+            "5",
+            "A12-",
+            "Analogue input 2-"
+          ],
+          [
+            "6",
+            "24V out",
+            "24V auxiliary voltage"
+          ],
+          [
+            "7",
+            "GND",
+            "I/O ground"
+          ]
+        ],
+        [
+          [
+            "Drive 3: Standard I/O Board"
+          ],
+          [
+            "Terminal",
+            "Signal"
+          ],
+          [
+            "4",
+            "A12+",
+            "Analogue input 2+"
+          ],
+          [
+            "5",
+            "A12-",
+            "Analogue input 2-"
+          ],
+          [
+            "6",
+            "24V out",
+            "24V auxiliary voltage"
+          ],
+          [
+            "7",
+            "GND",
+            "I/O ground"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nActual value\n-\n(0)4 .. 20mA\n+\nDrive 1: Standard I/O Board\nTerminal\nSignal\n4\nA12+\nAnalogue input 2+\n5\nA12-\nAnalogue input 2-\n12\n24V\nout\n24V auxiliary voltage\n13\nGND\nI/O ground\n17\nCM\nCommon for DI1-DI6\ne30bi985.10\nDrive 2: Standard I/O Board\nTerminal\nSignal\n4\nA12+\nAnalogue input 2+\n5\nA12-\nAnalogue input 2-\n12\n24V out\n24V auxiliary voltage\n13\nGND\nI/O ground\n17\nCM\nCommon for DI1-DI6\nDrive 3: Standard I/O Board\nTerminal\nSignal\n4\nA12+\nAnalogue input 2+\n5\nA12-\nAnalogue input 2-\n12\n24V\nout\n24V auxiliary voltage\n13\nGND\nI/O ground\n17\nCM\nCommon for DI1-DI6\nIllustration 94: Wiring of the Same Sensor for All Drives (Supplied from the I/O Board of the Drive)\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 257",
+      "tablas": [
+        [
+          [
+            "Drive 1: Standard I/O Board"
+          ],
+          [
+            "Terminal",
+            "Signal"
+          ],
+          [
+            "4",
+            "A12+",
+            "Analogue input 2+"
+          ],
+          [
+            "5",
+            "A12-",
+            "Analogue input 2-"
+          ],
+          [
+            "12",
+            "24V out",
+            "24V auxiliary voltage"
+          ],
+          [
+            "13",
+            "GND",
+            "I/O ground"
+          ],
+          [
+            "17",
+            "CM",
+            "Common for DI1-DI6"
+          ]
+        ],
+        [
+          [
+            "Drive 2: Standard I/O Board"
+          ],
+          [
+            "Terminal",
+            "Signal"
+          ],
+          [
+            "4",
+            "A12+",
+            "Analogue input 2+"
+          ],
+          [
+            "5",
+            "A12-",
+            "Analogue input 2-"
+          ],
+          [
+            "12",
+            "24V out",
+            "24V auxiliary voltage"
+          ],
+          [
+            "13",
+            "GND",
+            "I/O ground"
+          ],
+          [
+            "17",
+            "CM",
+            "Common for DI1-DI6"
+          ]
+        ],
+        [
+          [
+            "",
+            "Drive 3: Standard I/O Board"
+          ],
+          [
+            "",
+            "Terminal",
+            "Signal"
+          ],
+          [
+            "",
+            "4",
+            "A12+",
+            "Analogue input 2+"
+          ],
+          [
+            "",
+            "5",
+            "A12-",
+            "Analogue input 2-"
+          ],
+          [
+            "",
+            "12",
+            "24V out",
+            "24V auxiliary voltage"
+          ],
+          [
+            "",
+            "13",
+            "GND",
+            "I/O ground"
+          ],
+          [
+            "",
+            "17",
+            "CM",
+            "Common for DI1-DI6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nActual value\n(0)4 .. 20mA\n-\n+\nDanfoss\nParameter Descriptions\n-\nExternal 24V Supply\ne30bi986.10\n+\nDrive 1: Standard I/O Board\nTerminal\nSignal\n4\nA12+\nAnalogue input 2+\n5\nA12-\nAnalogue input 2-\n6\n24V out\n24V auxiliary voltage\n7\nGND\nI/O ground\nDrive 2: Standard I/O Board\nTerminal\nSignal\n4\nA12+\nAnalogue input 2+\n5\nA12-\nAnalogue input 2-\n6\n24V out\n24V auxiliary voltage\n7\nGND\nI/O ground\nDrive 3: Standard I/O Board\nTerminal\nSignal\n4\nA12+\nAnalogue input 2+\n5\nA12-\nAnalogue input 2-\n6\n24V out\n24V auxiliary voltage\n7\nGND\nI/O ground\nIllustration 95: Wiring of the Same Sensor for All Drives (Supplied from an External 24 V)\nIf a sensor is supplied from the I/O board of the drive and the diodes are connected between terminals 12 and 17, the digital inputs\nmust be isolated from the ground. Set the isolation DIP switch to Float.\nThe digital inputs are active when they are connected to GND, which is the default condition.\n258 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Drive 1: Standard I/O Board"
+          ],
+          [
+            "Terminal",
+            "Signal"
+          ],
+          [
+            "4",
+            "A12+",
+            "Analogue input 2+"
+          ],
+          [
+            "5",
+            "A12-",
+            "Analogue input 2-"
+          ],
+          [
+            "6",
+            "24V out",
+            "24V auxiliary voltage"
+          ],
+          [
+            "7",
+            "GND",
+            "I/O ground"
+          ]
+        ],
+        [
+          [
+            "",
+            "Drive 2: Standard I/O Board"
+          ],
+          [
+            "Terminal",
+            "Signal"
+          ],
+          [
+            "4",
+            "A12+",
+            "Analogue input 2+"
+          ],
+          [
+            "5",
+            "A12-",
+            "Analogue input 2-"
+          ],
+          [
+            "6",
+            "24V out",
+            "24V auxiliary voltage"
+          ],
+          [
+            "7",
+            "GND",
+            "I/O ground"
+          ]
+        ],
+        [
+          [
+            "Drive 3: Standard I/O Board"
+          ],
+          [
+            "Terminal",
+            "Signal"
+          ],
+          [
+            "4",
+            "A12+",
+            "Analogue input 2+"
+          ],
+          [
+            "5",
+            "A12-",
+            "Analogue input 2-"
+          ],
+          [
+            "6",
+            "24V out",
+            "24V auxiliary voltage"
+          ],
+          [
+            "7",
+            "GND",
+            "I/O ground"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nAl1\nA\nB\ne30bg589.10\nA12\n000000000\nDIO's\n(FLOAT\nDIO's\nFLOAT\nGND\nGND\nC\nIllustration 96: Isolation DIP Switch\nA\nDigital inputs\nC\nConnected to GND (default)\nB\nFloat\n11.17.4.1 (ID 1027) Autochange\nLocation in the menu: P3.15.6\nUse this parameter to enable or disable the rotation of the start sequence and the priority of motors. The autochange changes the\nsequence in which the motors start to wear the motors equally.\nThe monitoring values V2.10.7 Pump 1 Running Time - V2.10.14 Pump 8 Running Time count the run-time of the motors. The au-\ntochange function sets the start sequence according to the run-times. The motor that has the lowest running hours starts first and\nthe motor that has the highest running hours starts last.\nSelection\nnumber\nSelection name\nDescription\n0\nDisabled\nIn normal operation, the sequence of the motors is always 1, 2, 3, 4, 5. The sequence can change\nduring the operation if interlocks are added or removed. After the drive stops, the sequence al-\nways changes back.\n1\nEnabled (inter-\nval)\nThe system changes the sequence at intervals to wear the motors equally. The intervals of the\nautochange can be adjusted with parameter P3.15.8. The timer of the autochange interval oper-\nates only when the Multi-pump system operates.\n2\nEnabled (week-\ndays)\nThe start sequence changes at the selected weekday and time of day. Make the selection with\nparameters P3.15.9 and P3.15.10.\nTo use this mode, an RTC battery must be installed in the drive.\nExample\nAfter an autochange, the first motor is put last. The other motors move up 1 position.\nThe start sequence of the motors: 1, 2, 3, 4, 5\n-- > Autochange -- >\nThe start sequence of the motors: 2, 3, 4, 5, 1\n-- > Autochange -- >\nThe start sequence of the motors: 3, 4, 5, 1, 2\n11.17.4.2 (ID 1028) Autochanged Pumps\nLocation in the menu: P3.15.7\nUse this parameter to include the controlled motor/pump in the autochange and interlock system.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 259",
+      "tablas": [
+        [
+          [
+            "A",
+            "Digital inputs",
+            "C Connected to GND (default)"
+          ],
+          [
+            "B",
+            "Float",
+            ""
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Disabled",
+            "In normal operation, the sequence of the motors is always 1, 2, 3, 4, 5. The sequence can change during the operation if interlocks are added or removed. After the drive stops, the sequence al- ways changes back."
+          ],
+          [
+            "1",
+            "Enabled (inter- val)",
+            "The system changes the sequence at intervals to wear the motors equally. The intervals of the autochange can be adjusted with parameter P3.15.8. The timer of the autochange interval oper- ates only when the Multi-pump system operates."
+          ],
+          [
+            "2",
+            "Enabled (week- days)",
+            "The start sequence changes at the selected weekday and time of day. Make the selection with parameters P3.15.9 and P3.15.10. To use this mode, an RTC battery must be installed in the drive."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nSelection\nnumber\nSelection name\nDescription\n0\nAuxiliary pumps\nThe drive is always connected to Motor 1. The interlocks do not affect Motor 1. Motor 1 is not\nincluded in the autochange logic.\n1\nAll pumps\nIt is possible to connect the drive to any of the motors in the system. The interlocks affect all\nthe motors. All the motors are included in the autochange logic.\nThe connections are different for the parameter values 0 and 1.\nSelection 0, Auxiliary pumps\nThe drive is directly connected to Motor 1. The other motors are auxiliary motors. They are connected to the mains by contactors,\nand controlled by relays of the drive. The autochange or the interlock logic does not affect Motor 1.\nSelection 1, All pumps\nTo include the regulating motor in the autochange or in the interlock logic, obey the instructions in the following figure. 1 relay\ncontrols each motor. The contactor logic always connects the first motor to the drive, and the next motors to the mains.\nA\ne30bg320.10\n0\n-\nK1\nK1.1\nK2\nK2.1\nK3\nK3.1\nM1\nM2\nM3\nB\nC\nD\n-\nK3\nK2\nK3\nK3\nK1\nK3\nK1\nK2\nK1\nK2\nK1\nK2\nK1.1\nK1\nK2.1\nK2\nK3.1\nK3\nK1\nK1.1\nK2\nK2.1\nK3\nK3.1\nIllustration 97: Selection 1\n260 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Auxiliary pumps",
+            "The drive is always connected to Motor 1. The interlocks do not affect Motor 1. Motor 1 is not included in the autochange logic."
+          ],
+          [
+            "1",
+            "All pumps",
+            "It is possible to connect the drive to any of the motors in the system. The interlocks affect all the motors. All the motors are included in the autochange logic."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nA\nMains\nC\nMotor 2 control from relay\nB\nMotor 1 control from relay\nD\nMotor 3 control from relay\n11.17.4.3 (ID 1029) Autochange Interval\nLocation in the menu: P3.15.8\nUse this parameter to adjust the autochange intervals. The Autochange interval is the time after which the autochange function\nstarts if the used capacity is below the set level. The value of this timer does not run when the Multi-pump system is stopped or in\nthe sleep mode. To use the parameter, select Enabled (interval) with parameter P3.15.6 Autochange Mode.\nThe autochange occurs, if:\n· the Multi-pump system operates (the start command is active)\n· the autochange interval time goes\n. the pump that controls the system operates below the frequency specified by parameter P3.15.11 Autochange Frequency Limit\n. the number of pumps that operate is less or equal to the limit specified by parameter P3.15.12 Autochange Pump Limit.\n11.17.4.4 (ID 1786) Autochange Days\nLocation in the menu: P3.15.9\nUse this parameter to set the days of the week when the autochange function starts. The value of this parameter is applied if the\nautochange mode is 'Enabled (Weekdays)'.\n11.17.4.5 (ID 1787) Autochange Time of Day\nLocation in the menu: P3.15.10\nUse this parameter to set the time of the day when the autochange function starts. The value of this parameter is applied if the\nautochange mode is Enabled (Weekdays). To use the parameters, select Enabled (Weekdays) with parameter P3.15.6 Autochange.\nThe autochange occurs, if:\n· the Multi-pump system operates (the start command is active)\n. it is the autochange weekday and the time of day\n· the pump that controls the system operates below the frequency specified by parameter P3.15.11 Autochange Frequency Limit\n. the number of pumps that operate is less or equal to the limit specified by parameter P3.15.12 Autochange Pump Limit.\n11.17.4.6 (ID 1031) Autochange Frequency Limit\nLocation in the menu: P3.15.11\nUse this parameter to set the autochange frequency limit. The autochange frequency limit is the limit below which the output fre-\nquency of the regulating drive must stay for the autochange to start.\n11.17.4.7 (ID 1030) Autochange Pump Limit\nLocation in the menu: P3.15.12\nUse this parameter to set the amount of pumps used in the Multi-pump function. The Autochange Pump Limit is the limit below\nwhich the number of the running motors must stay for the autochange to start.\nIf the number of pumps that operate in the Multi-pump system is less or equal to the limit specified by parameter P3.15.12 and the\npump that controls the system operates below the frequency specified by parameter P3.15.11, the autochange can occur.\nThese parameters are used in the Single drive mode, because the autochange can restart the system (depending on the quantity of\nmotors that operate).\nIn the Multifollower and Multimaster modes, set these parameters to the maximum values to make it possible for the autochange to\noccur immediately at the autochange time. In the Multifollower and Multimaster modes, the quantity of pumps that operate does\nnot affect the autochange.\n11.17.4.8 (ID 1097) Bandwidth\nLocation in the menu: P3.15.13\nUse this parameter to set the bandwidth area around the PID setpoint for starting and stopping of the auxiliary motors. When the\nPID feedback value stays in the bandwidth area, the auxiliary motors do not start or stop. The value of this parameter is given as a\npercentage of the setpoint.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 261",
+      "tablas": [
+        [
+          [
+            "A",
+            "Mains",
+            "C Motor 2 control from relay"
+          ],
+          [
+            "B",
+            "Motor 1 control from relay",
+            "D Motor 3 control from relay"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.17.4.9 (ID 1098) Bandwidth Delay\nLocation in the menu: P3.15.14\nUse this parameter to set the duration before the auxiliary motors start or stop. When the PID feedback is not in the bandwidth area,\nthe time that is set with this parameter must go before the auxiliary motors start or stop. The number of pumps that operate increa-\nses or decreases, if the PID controller cannot keep the process value (feedback) in the specified bandwidth around the setpoint.\nThe bandwidth area is specified as a percentage of the PID setpoint. When the PID feedback value stays in the bandwidth area, it is\nnot necessary to increase or decrease the number of pumps that operate.\nWhen the feedback value goes out of the bandwidth area, the quantity of time specified by parameter P3.15.14 must go before the\nnumber of pumps that operate increases or decreases. More pumps must be available.\nP3.15.14\nP3.15.14\nB\ne30bj009.10\nD\nP3.15.13\nC\nA\n1\n1\n1\n1\n0\n2\n-\nIllustration 98: The Start or Stop of the Auxiliary Pumps (P3.15.13 = Bandwidth, P3.15.14 = Bandwidth delay)\nA\nThe pump that controls the system operates at a fre-\nquency that is near the maximum (-2 Hz). It increa-\nses the number of pumps that operate.\nC\nThe number pumps that operate increases or de-\ncreases, if the PID controller cannot keep the proc-\ness value feedback in the specified bandwidth\naround the setpoint.\nB\nThe pump that controls the system operates at a fre-\nquency that is near the minimum (+2 Hz). It decrea-\nses the number of pumps that operate.\nD\nThe specified bandwidth around the setpoint.\n11.17.4.10 (ID 1513) Constant Production Speed\nLocation in the menu: P3.15.15\nUse this parameter to set the constant speed at which the motor locks when the next motor starts in the Multimaster system. The\nvalue of this parameter is given as a percentage of the minimum frequency to the maximum frequency.\n11.17.4.11 (ID 1187) Running Pumps Limit\nLocation in the menu: P3.15.16\nUse this parameter to set the maximum number of motors that run at the same time in the Multi-pump system.\nIf the value of parameter P3.15.2 Number of Pumps changes, the same value changes automatically to this parameter.\nExample\nThe Multi-pump system has 3 pumps, but only 2 pumps can operate at the same time. The third pump is installed in the system for\nredundancy. The number of pumps that can operate at the same time:\n•\nRunning Pump Limit = 2\n11.17.4.12 (ID 426) Pump 1 Interlock\nLocation in the menu: P3.15.17.1\nUse this parameter to select the digital input signal that is used as interlock signal for the multi-pump system.\n262 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "A",
+            "The pump that controls the system operates at a fre- quency that is near the maximum (-2 Hz). It increa- ses the number of pumps that operate.",
+            "C The number pumps that operate increases or de- creases, if the PID controller cannot keep the proc- ess value feedback in the specified bandwidth around the setpoint.\n:unselected:"
+          ],
+          [
+            "B",
+            "The pump that controls the system operates at a fre- quency that is near the minimum (+2 Hz). It decrea- ses the number of pumps that operate.",
+            "D The specified bandwidth around the setpoint.\n:unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nWhen the Pump interlocking function (P3.15.5) is enabled, the drive reads the statuses of the digital inputs of the pump interlock\n(feedback). When the input is CLOSED, the motor is available for the Multi-pump system.\nWhen the Pump interlocking function (P3.15.5) is disabled, the drive does not read the statuses of the digital inputs of the pump\ninterlock (feedback). The Multi-pump system sees all pumps in the system as available.\n. In the Single drive mode, the digital input signal that is selected with this parameter shows the interlock status of pump 1 in the\nMulti-pump system.\n· In the Multifollower and Multimaster modes, the digital input signal that is selected with this parameter shows the interlock\nstatus of the pump that is connected to this drive.\n11.17.4.13 (ID 427) Pump 2 Interlock\nLocation in the menu: P3.15.17.2\nUse this parameter to select the digital input signal that is used as interlock signal for the multi-pump system.\n11.17.4.14 (ID 428) Pump 3 Interlock\nLocation in the menu: P3.15.17.3\nUse this parameter to select the digital input signal that is used as interlock signal for the multi-pump system.\n11.17.4.15 (ID 429) Pump 4 Interlock\nLocation in the menu: P3.15.17.4\nUse this parameter to select the digital input signal that is used as interlock signal for the multi-pump system.\n11.17.4.16 (ID 430) Pump 5 Interlock\nLocation in the menu: P3.15.17.5\nUse this parameter to select the digital input signal that is used as interlock signal for the multi-pump system.\n11.17.4.17 (ID 486) Pump 6 Interlock\nLocation in the menu: P3.15.17.6\nUse this parameter to select the digital input signal that is used as interlock signal for the multi-pump system.\n11.17.4.18 (ID 487) Pump 7 Interlock\nLocation in the menu: P3.15.17.7\nUse this parameter to select the digital input signal that is used as interlock signal for the multi-pump system.\n11.17.4.19 (ID 488) Pump 8 Interlock\nLocation in the menu: P3.15.17.8\nUse this parameter to select the digital input signal that is used as interlock signal for the multi-pump system.\nThese parameters are used in the Single drive mode only.\nWhen the Pump interlocking function (P3.15.5) is enabled, the drive reads the statuses of the digital inputs of the pump interlock\n(feedback). When the input is CLOSED, the motor is available for the Multi-pump system.\nWhen the Pump interlocking function (P3.15.5) is disabled, the drive does not read the statuses of the digital inputs of the pump\ninterlock (feedback). The Multi-pump system sees all pumps in the system as available.\n11.17.5 Overpressure Supervision\nUse the Overpressure supervision function in a Multi-pump system. For example, when the primary valve of the pump system is\nclosed quickly, the pressure in the pipe lines increases. The pressure can increase too quickly for the PID controller. To prevent that\nthe pipes break, the overpressure supervision stops the auxiliary motors in the Multi-pump system.\n11.17.5.1 (ID 1698) Enable Overpressure Supervision\nLocation in the menu: P3.15.18.1\nUse this parameter to enable the Overpressure supervision.\nThe overpressure supervision monitors the feedback signal of the PID controller, that is, the pressure. If the signal becomes higher\nthan the overpressure level, it stops all the auxiliary pumps immediately. Only the regulating motor continues to operate. When the\npressure decreases, the system continues to operate, and connects the auxiliary motors again one at a time.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 263",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "VACON® 100 FLOW\nDanfoss\nParameter Descriptions\nApplication Guide\nA)\nD\nB\ne30bg321.10\nC\nM2\nE\nF\nM3\nF\nE\nIllustration 99: The Overpressure Supervision Function\nA\nPressure\nD\nPID Feedback (ID21)\nB\nSupervision Alarm Level (ID1699)\nE\nON\nC\nPID Setpoint (ID167)\nF\nOFF\n11.17.5.2 (ID 1699) Supervision Alarm Level\nLocation in the menu: P3.15.16.2\nUse this parameter to set the overpressure limit for the Overpressure supervision. If the PID feedback becomes higher than the set\noverpressure limit, all auxiliary motors stop immediately. Only the regulating motor continues to operate.\n11.17.6 Pump Run-time Counters\nIn the Multi-pump system, the time that each pump operates is monitored by a run-time counter. For example, the order that the\npumps start is specified by the run-time counter values to make the wear of the pumps in the system more equal. The pump run-\ntime counters also tell the operator to do maintenance on a pump (parameters P3.15.19.4 - P3.15.19.5).\nThe Pump run-time counters are in the monitoring menu, see Table 21.\n11.17.6.1 (ID 1673) Set Run-time Counter\nLocation in the menu: P3.15.19.1\nUse this parameter to set the value that is specified by 'Set Run-time: Value' parameter to the run-time counter of the selected\npump.\n11.17.6.2 (ID 1087) Set Run-time Counter: Value\nLocation in the menu: P3.15.19.2\nUse this parameter to set the value of the run-time counter of the selected pump when 'Set Run-time Counter' parameter is selec-\nted.\nIn the Multimaster and Multifollower modes, it is possible to reset or set the necessary value only to the counter Pump (1) Running\nTime. In the Multimaster and Multifollower modes, the monitoring value Pump (1) Running Time shows the hours of the pump that\nis connected to this drive. The ID number of the pump has no effect.\nExample\nIn the Multi-pump (single drive) system, pump number 4 is replaced with a new pump. The counter value of Pump 4 Running Time\nmust be reset.\n1. Select Pump 4 with parameter P3.15.19.3.\n2. Set parameter P3.15.19.2 value to 0 h.\n3. Push the button-type parameter P3.15.19.1.\n4. Pump 4 Running Time is reset.\n264 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "A",
+            "Pressure",
+            "D PID Feedback (ID21)"
+          ],
+          [
+            "B",
+            "Supervision Alarm Level (ID1699)",
+            "E ON"
+          ],
+          [
+            "C",
+            "PID Setpoint (ID167)",
+            "F OFF"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.17.6.3 (ID 1088) Set Run-time Counter: Pump Selection\nLocation in the menu: P3.15.19.3\nUse this parameter to select the pumps for which the run-time counter value is specified by 'Set Run-time: Value' parameter.\nIf the Multi-pump (single drive) mode is selected, the next selections are available:\n•\n0 = All Pumps\n· 1 = Pump (1)\n. 2 = Pump 2\n•\n3 = Pump 3\n•\n4 = Pump 4\n•\n5 = Pump 5\n•\n6 = Pump 6\n. 7 = Pump 7\n•\n8 = Pump 8\nIf the Multifollower or Multimaster mode is selected, only the next selection is available:\n•\n1 = Pump (1)\nIn the Multimaster and Multifollower modes, it is possible to reset or to set a necessary value only for the Pump (1) Running Time. In\nthe Multimaster and Multifollower modes, the monitoring value Pump (1) Running Time shows the hours of the pump that is con-\nnected to this drive. The ID number of the pump has no effect.\nExample\nIn the Multi-pump (single drive) system, pump number 4 is replaced with a new pump. The counter value of Pump 4 Running Time\nmust be reset.\n1. Select Pump 4 with parameter P3.15.19.3.\n2. Set parameter P3.15.19.2 value to 0 h.\n3. Push the button-type parameter P3.15.19.1.\n4. Pump 4 Running Time is reset.\n11.17.6.4 (ID 1109) Pump Run-time Alarm Limit\nLocation in the menu: P3.15.19.4\nUse this parameter to set the alarm limit for the run-time counter of the pump. When the value of the pump run-time counter goes\nabove this limit, a run-time counter alarm occurs.\n11.17.6.5 (ID 1110) Pump Run-time Fault Limit\nLocation in the menu: P3.15.19.5\nUse this parameter to set the fault limit for the run-time counter of the pump. When the value of the pump run-time counter goes\nabove this limit, a run-time counter fault occurs.\n11.17.7 Advanced Settings\n11.17.7.1 (ID 15545) Staging Frequency\nLocation in the menu: P3.15.22.1\nUse this parameter to adjust the output frequency level at which the auxiliary motor starts in the Multi-pump system.\nThe parameter has no effect, if its value is set above Max Frequency Reference (P3.3.1.2).\nBy default, an auxiliary pump starts (is staged), if the PID feedback signal goes below the specified bandwidth area and the pump\nthat controls the system operates at the maximum frequency.\nThe auxiliary pump can start at a lower frequency to get better process values or to use less energy. Then, use the parameter to set\nthe start frequency of the auxiliary pump below the maximum frequency.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 265",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nM\nPID Feedback\nM\nPID Setpoint\nP\nBandwidth\nM\nOutput Freq\nP\nFreq Ref Max\nP\nStaging Freq\nSUB\nIN1\nIN2\nMIN\nIN1\nIN2\nLT\nIN1\nIN2\nAND\nIN1\nIN2\nGT\nIN1\nIN2\nP\nBanwidth Delay\nON-DELAY\nIN\nOUT\nTIME\nV\nStart Aux Pump\ne30bi988.10\nIllustration 100: Staging Frequency\n11.17.7.2 (ID 15546) Destaging Frequency\nLocation in the menu: P3.15.22.2\nUse this parameter to adjust the output frequency level at which the auxiliary motor starts in the Multi-pump system.\nThe parameter has no effect, if its value is set below Min Frequency Reference (P3.3.1.1).\nBy default, an auxiliary pump stops (is destaged), if the PID feedback signal goes above the specified bandwidth area and the pump\nthat controls the system operates at the minimum frequency.\nThe auxiliary pump can stop at a higher frequency to get better process values or to use less energy. Then, use the parameter to set\nthe start frequency of the auxiliary pump above the minimum frequency.\nM\nPID Feedback\nM PID Setpoint\nP\nBandwidth\nM\nOutput Freq\nP\nFreq Ref Min\nP\nDe-Staging Freq\nADD\nIN1\nIN2\nMAX\nIN1\nIN2\nGT\nIN1\nIN2\nLT\nIN1\nIN2\nAND\nIN1\nIN2\nON-DELAY\nIN\nOUT\nTIME\nV\nStop Aux Pump\ne30bi989.10\nP\nBanwidth Delay\nIllustration 101: Destaging Frequency\n11.17.7.3 (ID 15588) Staging Delay\nLocation in the menu: P3.15.22.3\nUse this parameter to give a delay to start the next auxiliary pump in the Multi-pump system.\nWhen PID feedback value goes below the bandwidth area, the time defined by this parameter must elapse before the next auxiliary\npump is started.\n11.17.7.4 (ID 15589) Destaging Delay\nLocation in the menu: P3.15.22.4\nUse this parameter to give a delay to stop auxiliary pump in the Multi-pump system.\nWhen PID feedback value goes above the bandwidth area, the time defined by this parameter must elapse before the next auxiliary\npump is stopped.\n11.18 Maintenance Counters\n11.18.1 The Maintenance Counters\nA maintenance counter tells that maintenance must be done. For example, it is necessary to replace a belt or to replace the oil in a\ngearbox. There are 2 different modes for the maintenance counters, hours, or revolutions*1000. The value of the counters increases\nonly during the RUN status of the drive.\n266 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nACAUTION.\nMAINTENANCE HAZARD\nOnly an approved electrician can do maintenance. There is a risk of injury.\n-\nDo not do maintenance if you are not approved to do it.\nNOTICE\nThe revolutions mode uses motor speed, which is only an estimate. The drive measures the speed every second.\nWhen the value of a counter is more than its limit, an alarm, or a fault shows. It is possible connect the alarm and fault signals to a\ndigital output or a relay output.\nWhen the maintenance is completed, reset the counter with a digital input or parameter P3.16.4 Counter 1 Reset.\n11.18.2 (ID 1104) Counter 1 Mode\nLocation in the menu: P3.16.1\nUse this parameter to enable the maintenance counter. A maintenance counter tells that the maintenance must be done when the\ncounter value goes above the set limit.\n11.18.3 (ID 1105) Counter 1 Alarm Limit\nLocation in the menu: P3.16.2\nUse this parameter to set the alarm limit for the maintenance counter. When the value of the counter goes above this limit, a main-\ntenance alarm occurs.\n11.18.4 (ID 1106) Counter 1 Fault Limit\nLocation in the menu: P3.16.3\nUse this parameter to set the fault limit for the maintenance counter. When the value of the counter goes above this limit, a mainte-\nnance fault occurs.\n11.18.5 (ID 1107) Counter 1 Reset\nLocation in the menu: P3.16.4\nUse this parameter to reset the maintenance counter.\n11.18.6 (ID 490) Counter 1 DI Reset\nLocation in the menu: P3.16.5\nUse this parameter to select the digital input that resets the value of the Maintenance Counter.\n11.19 Fire Mode\n11.19.1 The Fire Mode Function\nWhen Fire mode is active, the drive resets all faults that occur and continues to operate at the same speed until it is not possible.\nThe drive ignores all commands from the keypad, fieldbuses, and the PC tool. It only obeys the signals Fire Mode Activation, Fire\nMode Reverse, Run Enable, Run Interlock 1, and Run Interlock 2 from I/O.\nThe Fire mode function has 2 modes, the Test mode, and the Enabled mode. To select a mode, write a password in parameter\nP3.17.1 (Fire Mode Password). In the Test mode, the drive does not automatically reset the faults, and the drive stops when a fault\noccurs.\nIt is also possible to configure Fire mode with the Fire mode wizard, which can be activated in the Quick Setup menu with parame-\nter B1.1.4.\nWhen the Fire mode function is activated, an alarm shows on the display.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 267",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nNOTICE\nWARRANTY BECOMING VOID\nThe warranty is void if the Fire mode function is activated.\n-\nUse Test mode to test the Fire mode function and the warranty stays valid.\n11.19.2 (ID 1599) Fire Mode Password\nLocation in the menu: P3.17.1\nUse this parameter to enable the fire mode function.\nNOTICE\nAll other fire mode parameters are locked when the fire mode is enabled and correct password is set in this parameter.\nSelection num-\nber\nSelection name\nDescription\n1002\nEnabled mode\nThe drive resets all the faults and continues to operate at the same speed until it is not\npossible.\n1234\nTest mode\nThe drive does not automatically reset the faults, and the drive stops when a fault occurs.\n11.19.3 (ID 1617) Fire Mode Frequency Source\nLocation in the menu: P3.17.2\nUse this parameter to select the frequency reference source when the fire mode is active. This parameter enables the selection of,\nfor example, the AI1, or the PID controller as the reference source when operating the fire mode.\n11.19.4 (ID 1598) Fire Mode Frequency\nLocation in the menu: P3.17.3\nUse this parameter to set the frequency that is used when Fire mode is active. The drive uses this frequency when the value of\nparameter P3.17.2 Fire Mode Frequency Source is Fire Mode Frequency.\n11.19.5 (ID 1596) Fire Mode Activation on Open\nLocation in the menu: P3.17.4\nUse this parameter to select the digital input signal that activates the Fire Mode function. If this digital input signal is activated, an\nalarm shows on the display, and the warranty becomes void. The type of this digital input signal is NC (normally closed).\nIt is possible to try the Fire mode with the password that activates the Test mode. Then the warranty stays valid.\nNOTICE\nIf Fire mode is enabled, and the correct password is given to the parameter Fire Mode Password, all the Fire mode parameters\nbecome locked. To change the Fire mode parameters, change the value of P3.17.1 Fire Mode Password to 0 first.\n268 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection num- ber",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "1002",
+            "Enabled mode",
+            "The drive resets all the faults and continues to operate at the same speed until it is not possible."
+          ],
+          [
+            "1234",
+            "Test mode",
+            "The drive does not automatically reset the faults, and the drive stops when a fault occurs."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nNormal\nStart\n-\n1\n1\n1\nRun\n1\n1\nEnable\n1\nRun\n1\nI\nInterlock 1\n1\n1\nRun\nInterlock 2\n1\n1\n1\n1\n1\nFire Mode\n1\nActivation\n(Close contact)\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\nMotor Speed\n1\n1\n1\n1\nFire Mode\nSpeed\n1\nT\n1\n1\nNormal\n1\n1\n1\nSpeed\nT\nT\n1\n1\n1\n1\n1\n- -\ne30bg322.10\n1\n1\n1\n1\nI\nI\n1\n1\nStopped\nIllustration 102: The Fire Mode Function\n11.19.6 (ID 1619) Fire Mode Activation on Close\nLocation in the menu: P3.17.5\nUse this parameter to select the digital input signal that activates the Fire Mode function. The type of this digital input signal is NO\n(normally open). See the description for P3.17.4 Fire Mode Activation on Open.\n11.19.7 (ID 1618) Fire Mode Reverse\nLocation in the menu: P3.17.6\nUse this parameter to select the digital input signal that gives a command for reverse rotation direction during the Fire Mode. The\nparameter does not affect normal operation.\nIf it is necessary for the motor to operate always FORWARD or always REVERSE in Fire Mode, select the correct digital input.\nDigIn Slot0.1 = always FORWARD\nDigIn Slot0.2 = always REVERSE\n11.19.8 (ID 1597) Fire Mode Status\nLocation in the menu: V3.17.7\nThis monitoring value shows the status of the fire mode function.\n11.19.9 (ID 1679) Fire Mode Counter\nLocation in the menu: V3.17.8\nThis monitoring value shows the number of the fire mode activations.\nThe counter cannot be reset.\n11.19.10 (ID 15580) Fire Mode Run Indication Current\nLocation in the menu: P3.17.9\nUse this parameter to set the current limit for the run indication signal of the relay output.\nThis parameter only affects if the value \"Run indication\" is selected for a relay output and the fire mode is active. The \"Run indica-\ntion\" relay output function tells quickly if current is supplied to the motor during a fire.\nThe value of this parameter is the percentage counted from the motor nominal current. If there is a fire and the current that is sup-\nplied to the motor is more than the nominal current times the value of this parameter, the relay output closes.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 269",
+      "tablas": [
+        [
+          [
+            "Normal\n:unselected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "-"
+          ],
+          [
+            "Start",
+            "",
+            "1",
+            "1",
+            "",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Run\n:unselected:",
+            "",
+            "1",
+            "",
+            "",
+            "1",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Enable",
+            "",
+            "1",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Run\n:unselected:",
+            "",
+            "1",
+            "",
+            "",
+            "",
+            "",
+            "I",
+            "",
+            ""
+          ],
+          [
+            "Interlock 1",
+            "",
+            "1",
+            "",
+            "",
+            "",
+            "",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Run\n:unselected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Interlock 2",
+            "",
+            "1 1",
+            "",
+            "",
+            "",
+            "1",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Fire Mode",
+            "",
+            "",
+            "1 1",
+            "",
+            "",
+            "",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Activation",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "1",
+            "",
+            "",
+            "",
+            "1",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(Close contact)",
+            "",
+            "",
+            "1 1",
+            "",
+            "",
+            "1",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "",
+            ":unselected:",
+            "1",
+            "1 1\n:unselected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "",
+            ":unselected:",
+            "1",
+            "1\n:unselected:",
+            "",
+            "",
+            "",
+            "1",
+            "",
+            "1"
+          ],
+          [
+            "Motor Speed",
+            ":unselected:",
+            "1",
+            "1 1",
+            "",
+            "",
+            "",
+            "1",
+            "",
+            "1"
+          ],
+          [
+            "Fire Mode",
+            "",
+            "1",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "1",
+            ""
+          ],
+          [
+            "Speed",
+            "",
+            "T",
+            "1",
+            "",
+            "",
+            "",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Normal",
+            "",
+            "",
+            "1",
+            "",
+            "",
+            "",
+            "1",
+            "1",
+            ""
+          ],
+          [
+            "Speed",
+            "",
+            "",
+            "T",
+            "",
+            "",
+            "",
+            "T",
+            "- -",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nFor example, if parameter Motor Nominal Current has the value 5 A, and 20% is set as the default value of this parameter, the relay\noutput closes and Fire Mode activates when the output current goes to 1 A.\nThis parameter does not affect if the fire mode is not active. In normal operation, if \"Run indication\" is selected for a relay output, the\nresult is the same as when \"Run\" is selected for the relay output.\n11.20 Motor Preheat Function\n11.20.1 (ID 1225) Motor Preheat Function\nLocation in the menu: P3.18.1\nUse this parameter to enable or disable the Motor Preheat function. The motor preheat function keeps the drive and the motor\nwarm during the STOP status. In the motor preheat, the system gives the motor a DC current. The motor preheat prevents, for ex-\nample, condensation.\nSelec-\ntion\nnumber\nSelection name\nDescription\n0\nNot used\nThe motor preheat function is disabled.\n1\nAlways in Stop state\nThe motor preheat function is activated always when the drive is in the Stop state.\n2\nControlled by digi-\ntal input\nThe motor preheat function is activated by a digital input signal, when the drive is in the Stop\nstate. It is possible to make the selection of the digital input for the activation with parameter\nP3.5.1.18.\n3\nTemperature limit\n(heat sink)\nThe motor preheat function is activated if the drive is in the Stop state, and the temperature of\nthe heat sink of the drive goes below the temperature limit that was set with parameter\nP3.18.2.\n4\nTemperature limit\n(measured motor\ntemperature)\nThe motor preheat function is activated if the drive is in the Stop state, and the measured mo-\ntor temperature goes below the temperature limit that was set with parameter P3.18.2. It is\npossible to set the measurement signal of the motor temperature with parameter P3.18.5.\nNOTE! To use this operation mode, an option board for temperature measurement (for exam-\nple OPTBH) is needed.\n11.20.2 (ID 1226) Preheat Temperature Limit\nLocation in the menu: P3.18.2\nUse this parameter to set the temperature limit of the Motor Preheat function. The motor preheat becomes active when the heat\nsink temperature or the measured motor temperature goes below this level, and when P3.18.1 is set to 3 or 4.\n11.20.3 (ID 1227) Motor Preheat Current\nLocation in the menu: P3.18.3\nUse this parameter to set the DC current of the Motor Preheat function. The DC current for the pre-heating of the motor and the\ndrive in stop state. Activated as in P3.18.1.\n11.20.4 (ID 1044) Motor Preheat ON\nLocation in the menu: P3.18.4\nUse this parameter to select the digital input signal that activates Motor Preheat function. This parameter is used when P3.18.1 is set\nto 2. When the value for P3.18.1 is 2, it is also possible to connect time channels to this parameter.\n11.20.5 (ID 1045) Preheat Motor Temperature\nLocation in the menu: P3.18.5\nUse this parameter to select the temperature signal that is used to measure the motor temperature for motor preheat function.\nNOTICE\nThis parameter is not available if there is no option board for temperature measurement.\n270 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selec- tion number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Not used",
+            "The motor preheat function is disabled."
+          ],
+          [
+            "1",
+            "Always in Stop state",
+            "The motor preheat function is activated always when the drive is in the Stop state."
+          ],
+          [
+            "2",
+            "Controlled by digi- tal input",
+            "The motor preheat function is activated by a digital input signal, when the drive is in the Stop state. It is possible to make the selection of the digital input for the activation with parameter P3.5.1.18."
+          ],
+          [
+            "3",
+            "Temperature limit (heat sink)",
+            "The motor preheat function is activated if the drive is in the Stop state, and the temperature of the heat sink of the drive goes below the temperature limit that was set with parameter P3.18.2."
+          ],
+          [
+            "4",
+            "Temperature limit (measured motor temperature)",
+            "The motor preheat function is activated if the drive is in the Stop state, and the measured mo- tor temperature goes below the temperature limit that was set with parameter P3.18.2. It is possible to set the measurement signal of the motor temperature with parameter P3.18.5. NOTE! To use this operation mode, an option board for temperature measurement (for exam- ple OPTBH) is needed."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Parameter Descriptions\nVACON® 100 FLOW\nDanfoss\nApplication Guide\n11.21 Drive Customizer\n11.21.1 (ID 15001) Operation Mode\nLocation in the menu: P3.19.1\nUse this parameter to select the operation mode of the drive customizer.\nSelection number\nSelection name\nDescription\n0\nExecute Program\nThe Drive customizer is running. Configuration is not allowed for the Drive customizer.\n1\nProgramming\nThe Drive customizer is not running. Configuration is allowed for the Drive customizer.\n11.22 Pump Control\n11.22.1 Auto-Cleaning\nUse the Auto-cleaning function to remove dirt or other material from the pump impeller. It is also possible to use the function to\nclear a blocked pipe or valve. It is possible to use the auto-cleaning, for example, in wastewater systems to keep the performance of\nthe pump satisfactory.\n11.22.1.1 (ID 1714) Cleaning Function\nLocation in the menu: P3.21.1.1\nUse this parameter to enable the Auto-cleaning function.\nSelection\nnumber\nSelection name\nDescription\n0\nDisabled\n1\nEnabled (DIN)\nThe cleaning sequence is started with a digital input signal. If the start command of the drive\nis active, a rising edge of the digital input signal (P3.21.1.2) starts the cleaning sequence. If\nthe drive is in the Sleep mode (PID sleep), the cleaning sequence can also be activated.\n2\nEnabled (Current)\nThe cleaning sequence starts when the motor current goes above the current limit\n(P3.21.1.3) for a longer time than specified by P3.21.1.4.\n3\nEnabled (Real Time)\nThe cleaning sequence agrees with the internal real-time clock of the drive.\nA battery must be installed in the real-time clock.\nNOTICE\nIf the start command of the drive is active, the cleaning sequence starts on the selected weekdays (P3.21.1.5) at the specified time of\nthe day (P3.21.1.6). If the drive is in the Sleep mode (PID sleep), the cleaning sequence can also be activated.\nTo stop the cleaning sequence, deactivate the start command of the drive. When 0 is selected, the cleaning function is not used.\n11.22.1.2 (ID 1715) Cleaning Activation\nLocation in the menu: P3.21.1.2\nUse this parameter to select the digital input signal that starts the Auto-cleaning sequence. The auto-cleaning stops if the activation\nsignal is removed before the sequence is complete.\nIf the input is activated, the drive starts.\nNOTICE\n11.22.1.3 (ID 1712) Cleaning Current Limit\nLocation in the menu: P3.21.1.3\nUse this parameter to set the current limit at which the Auto-cleaning starts. If the current of the motor stays above this limit for\nlonger than the set time, an autocleaning sequence starts.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 271",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Execute Program",
+            "The Drive customizer is running. Configuration is not allowed for the Drive customizer."
+          ],
+          [
+            "1",
+            "Programming",
+            "The Drive customizer is not running. Configuration is allowed for the Drive customizer."
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Disabled",
+            ""
+          ],
+          [
+            "1",
+            "Enabled (DIN)",
+            "The cleaning sequence is started with a digital input signal. If the start command of the drive is active, a rising edge of the digital input signal (P3.21.1.2) starts the cleaning sequence. If the drive is in the Sleep mode (PID sleep), the cleaning sequence can also be activated."
+          ],
+          [
+            "2",
+            "Enabled (Current)",
+            "The cleaning sequence starts when the motor current goes above the current limit (P3.21.1.3) for a longer time than specified by P3.21.1.4."
+          ],
+          [
+            "3",
+            "Enabled (Real Time)",
+            "The cleaning sequence agrees with the internal real-time clock of the drive."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.22.1.4 (ID 1713) Cleaning Current Delay\nLocation in the menu: P3.21.1.4\nUse this parameter to set the time that the motor current must stay above the limit before the auto-cleaning starts.\nParameters P3.21.1.3 and P3.21.1.4 are used only when P3.21.1.1 = 2.\nThe cleaning sequence starts when the motor current goes above the current limit (P3.21.1.3) for longer than specified with\nP3.21.1.4. The current limit is specified as a percentage of the motor nominal current.\n11.22.1.5 (ID 1715) Cleaning Weekdays\nLocation in the menu: P3.21.1.5\nUse this parameter to set the days of the week when the Auto-cleaning is executed. This parameter is used only when P3.21.1.1 = 3.\n11.22.1.6 (ID 1700) Cleaning Time of Day\nLocation in the menu: P3.21.1.6\nUse this parameter to set the time of the day when the Auto-cleaning is executed. This parameter is used only when P3.21.1.1 = 3.\nA battery must be installed in the real-time clock.\nNOTICE\n11.22.1.7 (ID 1716) Cleaning Cycles\nLocation in the menu: P3.21.1.7\nUse this parameter to set the number of forward or reverse cleaning cycles.\n11.22.1.8 (ID 1717) Clean Forward Frequency\nLocation in the menu: P3.21.1.8\nUse this parameter to set the frequency reference of the drive for the forward direction in the Auto-cleaning cycle.\nSet the frequency and time of the cleaning cycle with the parameters P3.21.1.4, P3.21.1.5, P3.21.1.6, and P3.21.1.7.\n11.22.1.9 (ID 1718) Clean Forward Time\nLocation in the menu: P3.21.1.9\nUse this parameter to set the operation time for the forward direction frequency in the Autocleaning cycle. See parameter 11.22.1.8\n(ID 1717) Clean Forward Frequency.\n11.22.1.10 (ID 1719) Clean Reverse Frequency\nLocation in the menu: P3.21.1.10\nUse this parameter to set the frequency reference of the drive for the reverse direction in the Auto-cleaning cycle. See parameter\n11.22.1.8 (ID 1717) Clean Forward Frequency.\n11.22.1.11 (ID 1720) Clean Reverse Time\nLocation in the menu: P3.21.1.11\nUse this parameter to set the operation time for the reverse direction frequency in the Autocleaning cycle. See parameter 11.22.1.8\n(ID 1717) Clean Forward Frequency.\n11.22.1.12 (ID 1721) Cleaning Acceleration Time\nLocation in the menu: P3.21.1.12\nUse this parameter to set the motor acceleration time when the Auto-cleaning is active. It is possible to set acceleration and deceler-\nation ramps for the Auto-cleaning function with parameters P3.21.1.12 and P3.21.1.13.\n11.22.1.13 (ID 1722) Cleaning Deceleration Time\nLocation in the menu: P3.21.1.13\nUse this parameter to set the motor deceleration time when the Auto-cleaning is active. It is possible to set acceleration and decel-\neration ramps for the Auto-cleaning function with parameters P3.21.1.12 and P3.21.1.13.\n272 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nOutput\nFrequency\nCleaning\nForward Frequency\nZero Frequency\nCleaning\nReverse Frequency\nCleaning Cycles\nCleaning\nForward\nTime\nDanfoss\nParameter Descriptions\ne30bg326.10\nCleaning\nReverse\nTime\nCycle1\nCleaning Function\nCleaning Activation\nIllustration 103: The Auto-cleaning Function\n11.22.2 Jockey Pump\nCycle2\n11.22.2.1 (ID 1674) Jockey Function\nLocation in the menu: P3.21.2.1\nUse this parameter to control the Jockey pump function. A Jockey pump is a smaller pump that keeps the pressure in the pipeline,\nwhen the main pump is in the sleep mode. It can occur, for example, in the night.\nThe Jockey pump function controls a jockey pump with a digital output signal. A jockey pump can be used if a PID controller is used\nto control the main pump. The function has 3 operation modes.\nSelection\nnumber\nSelection\nname\nDescription\n0\nNot used\n1\nPID sleep\nThe jockey pump starts when the PID Sleep of the main pump activates. The jockey pump stops\nwhen the main pump wakes up from the sleep mode.\n2\nPID sleep (level)\nThe jockey pump starts when the PID Sleep activates, and the PID feedback signal is less than\nthe level set by parameter P3.21.2.2.\nThe jockey pump stops when the PID feedback signal is more than the level set in parameter\nP3.21.2.3 or the main pump wakes up from the sleep mode.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 273",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Not used",
+            ""
+          ],
+          [
+            "1",
+            "PID sleep",
+            "The jockey pump starts when the PID Sleep of the main pump activates. The jockey pump stops when the main pump wakes up from the sleep mode."
+          ],
+          [
+            "2",
+            "PID sleep (level)",
+            "The jockey pump starts when the PID Sleep activates, and the PID feedback signal is less than the level set by parameter P3.21.2.2. The jockey pump stops when the PID feedback signal is more than the level set in parameter P3.21.2.3 or the main pump wakes up from the sleep mode."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "VACON® 100 FLOW\nDanfoss\nParameter Descriptions\nApplication Guide\nPID Feedback\nJockeyStopLevel\nJockey Start Level\nPID Controller\nWake Up Level\nOutput Freq\nPID Sleep\nDelay\nPID Sleep\nJockey Pump Control\n(Selected value = PID Sleep)\nJockey Pump Control\n(Selected value =-\nPID Sleep (Level))\ne30bg327.10\nIllustration 104: The Jockey Pump Function\n11.22.2.2 (ID 1675) Jockey Start Level\nLocation in the menu: P3.21.2.2\nUse this parameter to set the level of the PID feedback signal at which the jockey pump starts when the main pump is in the sleep\nstate. The jockey pump starts when PID Sleep is active and the PID feedback signal goes below the level set in this parameter.\nThis parameter is used only if P3.21.2.1 = 2 PID sleep (level).\n11.22.2.3 (ID 1676) Jockey Stop Level\nLocation in the menu: P3.21.2.3\nUse this parameter to set the level of the PID feedback signal at which the jockey pump stops when the main pump is in the sleep\nstate.\nThe jockey pump stops when PID Sleep is active and the PID feedback signal goes above the level set in this parameter, or when the\nPID controller wakes up from sleep mode.\nThis parameter is used only if P3.21.2.1 = 2 PID sleep (level).\n11.22.3 Priming Pump\nA priming pump is a smaller pump that primes the inlet of the main pump to prevent suction of air.\nThe priming pump function controls a priming pump with a digital output signal. It is possible to set a delay to start the priming\npump before the main pump starts. The priming pump operates continuously while the main pump operates. If the main pump\ngoes into sleep mode, the priming pump also stops for that time. When waking up from sleep mode, the main pump, and the pri-\nming pump start simultaneously.\n274 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "JockeyStopLevel",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Jockey Start Level PID Controller Wake Up Level",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Output Freq",
+            "PID Sleep Delay",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PID Sleep Jockey Pump Control (Selected value = PID Sleep)",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Jockey Pump Control (Selected value =- PID Sleep (Level))",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\ne30bg328.10\nB\nD\nC\nIllustration 105: The Priming Pump Function\nA\nStart Command (Main Pump)\nC\nOutput Frequency (Main Pump)\nB\nPriming Pump Control (Digital Output Signal)\nD\nPriming Time\n11.22.3.1 (ID 1677) Priming Function\nLocation in the menu: P3.21.3.1\nUse this parameter to enable the Priming pump function. A priming pump is a smaller pump that primes the inlet of the main pump\nto prevent the suction of air. The priming pump function controls a priming pump with a relay output signal.\n11.22.3.2 (ID 1678) Priming Time\nLocation in the menu: P3.21.3.2\nUse this parameter to set the time that the priming pump operates before the main pump starts.\n11.22.4 Anti-blocking Function\nThe Anti-blocking function makes the pump not to get blocked if the pump is stopped in the Sleep mode for a long time. The pump\nstarts at intervals, while it is in the Sleep mode. It is possible to make a configuration of the interval, run-time, and speed for the anti-\nblocking.\n11.22.4.1 (ID 1696) Anti-blocking Interval\nLocation in the menu: P3.21.4.1\nUse this parameter to set the interval for the Anti-blocking function. This parameter gives the time after which the pump starts at\nthe specified speed (P3.21.4.3 Anti-blocking Frequency) and for the specified quantity time (P3.21.4.2 Anti-blocking Run-time).\nThe Anti-blocking function can be used in the Single drive and the Multidrive systems only when the pump is in the sleep mode, or\nin the standby mode (Multidrive system).\nThe Anti-blocking function is enabled when the value of this parameter is more than 0 and disabled when the value is 0.\n11.22.4.2 (ID 1697) Anti-blocking Run-time\nLocation in the menu: P3.21.4.2\nUse this parameter to set the time that the pump operates at the set speed when the Antiblocking function is activated.\n11.22.4.3 (ID 1504) Anti-blocking Frequency\nLocation in the menu: P3.21.4.3\nUse this parameter to set the frequency reference of the drive that is used when the antiblocking function is activated.\n11.22.5 Frost Protection\nUse the Frost protection function to protect the pump from frost damages. If the pump is in sleep mode and the temperature that is\nmeasured in the pump goes below the set protection temperature, operate the pump at a constant frequency. Constant frequency\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 275",
+      "tablas": [
+        [
+          [
+            "A",
+            "Start Command (Main Pump)",
+            "C Output Frequency (Main Pump)\n:unselected:"
+          ],
+          [
+            "B",
+            "Priming Pump Control (Digital Output Signal)",
+            "D Priming Time\n:unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nis set in P3.13.10.6 Frost Protection Frequency. To use the function, a temperature transducer, or a temperature sensor must be\ninstalled on the pump covering or on the pipe line near the pump.\n11.22.5.1 (ID 1704) Frost Protection\nLocation in the menu: P3.21.5.1\nUse this parameter to enable the Frost Protection function. If the measured temperature of the pump goes below the set level and\nthe drive is in sleep state, the frost protection makes the pump start and operate at a constant frequency.\n11.22.5.2 (ID 1705) Temperature Signal\nLocation in the menu: P3.21.5.2\nUse this parameter to select the source of the temperature signal that is used for the Frost Protection function.\n11.22.5.3 (ID 1706) Temperature Signal Minimum\nLocation in the menu: P3.21.5.3\nUse this parameter to set the minimum value of the temperature signal. For example, a temperature signal range of 4 ... 20 mA\nagrees to the temperature of -50 ... 200 °C.\n11.22.5.4 (ID 1707) Temperature Signal Maximum\nLocation in the menu: P3.21.5.4\nUse this parameter to set the maximum value of the temperature signal. For example, a temperature signal range of 4 ... 20 mA\nagrees to the temperature of -50 ... 200 °C.\n11.22.5.5 (ID 1708) Frost Protection Temperature Limit\nLocation in the menu: P3.21.5.5\nUse this parameter to set the temperature limit at which the drive starts. If the temperature of the pump goes below this limit and\nthe drive is in the sleep state, the frost protection function starts the drive.\n11.22.5.6 (ID 1710) Frost Protection Frequency\nLocation in the menu: P3.21.5.6\nUse this parameter to set the frequency reference of the drive that is used when the frost protection function is activated.\n11.22.5.7 (ID 1711) Frost Temperature Monitoring\nLocation in the menu: P3.21.5.7\nThis monitoring value shows the value of the temperature signal that is used for Frost Protection function.\n11.22.6 Flow Switch\n11.22.6.1 (ID 15590) Flow Switch\nLocation in the menu: P3.21.6.1\nUse this parameter to select the digital input signal that is the feedback signal from the Flow Switch.\n11.22.6.2 (ID 15585) Flow Switch Fault Delay\nLocation in the menu: P3.21.6.2\nUse this parameter to set the time that the feedback signal from Flow Switch must stay inactive before the Flow Switch fault occurs.\n11.22.6.3 (ID 15586) Flow Switch Bypass at Start\nLocation in the menu: P3.21.6.3\nUse this parameter to set the time after which the Flow Switch supervision becomes active at the start-up of the drive.\n11.22.6.4 (ID 15587) Flow Switch Minimum Frequency\nLocation in the menu: P3.21.6.4\nUse this parameter to set the output frequency level below which the Flow Switch supervision is disabled.\n276 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.23 Advanced Harmonic Filter\n11.23.1 (ID 15510) Capacitor Disconnection Limit\nUse this parameter to set the disconnection limit for the advanced harmonic filter. The value is in percentage of the drive nominal\npower.\n11.23.2 (ID 15511) Capacitor Disconnection Hysteresis\nUse this parameter to set the disconnection hysteresis for the advanced harmonic filter. The value is in percentage of the drive nom-\ninal power.\n11.23.3 (ID 15513) AHF Over Temperature\n· Location in the menu: P3.5.1.59 (In I/O Configuration parameter menu)\n· Location in the menu: P3.23.3 (In Advanced Harmonic Filter parameter menu)\nUse this parameter to set the digital input signal that activates AHF Over Temp (fault ID 1118).\n11.23.4 (ID 15512) AHF Fault Response\nUse this parameter to select the response of the AC drive to an AHF Over Temp fault.\n11.24 Condition-based Monitoring\n11.24.1 Introduction to Condition-based Monitoring\nCondition-based monitoring in VACON® 100 drives is launched as a factory-flashed licensed firmware, embedded within the drive.\nBenefits of installing the condition-based monitoring firmware are as follows:\n· Reduces unexpected downtime.\n· Optimizes drive or motor working conditions.\n· Eliminates unexpected halts in production.\nCondition-based monitoring enables regularly checks of the condition and performance of the machine when the drive is in service\nand detects mechanical, motor, or application failures in advance. Corrective actions can be performed before the process or appli-\ncation is impacted. Alarm/fault or warnings are triggered in the drive to notify customers or service technicians. Some of the correc-\ntive actions include replacement of faulty motors or bearings and ensuring the motor is running within optimal conditions.\nFollowing are the monitoring capabilities introduced:\n· Motor stator winding monitoring: During monitoring, inter-turn short circuit or unbalance in the motor winding is detected in\nadvance. Damage caused by motor stator winding isolation occurs over time. When more winding turns are impacted, the over-\ncurrent protection is activated due to extensive heating and stops the motor.\n· Vibration monitoring: With the help of external sensors, the drive can monitor vibration levels in a motor. Vibrations affect\nmotor control and can lead to motor failure. During monitoring, early detection of motor misalignment is detected and wear\nand tear of mechanical parts are identified earlier.\nNOTE! ISO 10816 standard provides guidance for evaluating vibration severity for machines operating within 10-200 Hz of fre-\nquency range. The standard must be complied with before commissioning of vibration monitoring function.\n· Load envelope: Mechanical load of an application is monitored by comparing current load curve with expected load curve\nbased on data gathered during commissioning. During monitoring, overload and underload deviations which occur in applica-\ntions are detected.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 277",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nFault\nseverity\nSensitivity of deduction methods (qualitative)\ne30bi557.10\nLoad monitoring\nStator winding fault detection\nVibration levels (RMS)\nmonitoring\nFault types\nElectric motor faults,\ne.g. windings\nMech motor faults,\ne.g. bearings\nMechanic fault e.g.\nShaft misalignment\nApplication specific\nfault e.g. Clogged\npump\nIllustration 106: Condition-based Monitoring\n11.24.1.1 Stages of Condition-based Monitoring\nThe following figure describes the different stages of Condition-based Monitoring.\nBaseline\nComputation\nThreshold\nCalculation\nMonitoring\n· Manual\n· Warnings &\ne30bi558.10\n· Baseline Run\nAlarm/Fault\nIllustration 107: Stages of Condition-based Monitoring\n· Baseline Computation: During the initial stage, baselines for different types of condition-based monitoring are computed,\nbased on the type of baseline mode selected.\n. Threshold Calculation: Once the baseline is computed, the thresholds for warnings (stage 1 and stage 2) and alarm/fault are\ncomputed based on the warning or alarm/fault mode. The threshold and mode are set via parameters.\n· Monitoring: After the thresholds are calculated, condition-based monitoring begins. Alarm/fault and warnings are triggered\nduring deviations to notify customers.\nTo begin condition-based monitoring, a baseline must be generated. During this activity, the system captures motor stator winding\nspeed points for each baseline. Define the duration, minimum and maximum speed for baseline generation. During baseline gener-\nation, 10 speed points are captured. The first and last speed point is captured based on the defined minimum and maximum speed\nrespectively.\nWhen speed points are not captured properly, baseline generation fails, then a new baseline has to be generated. The baseline\nserves as a reference for threshold limits. Using parameters, select the type of baseline measurement.\n•\nBaseline Run: The drive controls the motor speed and monitors required values to derive a baseline. The drive creates a speed\nprofile for baseline measurement. The drive interrupts the application during baseline run to operate on the speed profile cre-\nated for baseline measurement. The duration for baseline calculation can be specified. Baseline measurements can copy to oth-\ner drive or return to same drive after factory reset.\n· Manual Run: The measurement points can be manually configured directly through modified parameters. Manual run can be\nmade before or after baseline run.\n11.24.2 (ID 3501) BaselineRun Start\nLocation in the menu: P3.24.2.1\nUse this parameter to activate baseline run.\nBaseline run is made before normal operation. Idea is to compare actual measurements with measurements taken when the system\nwas in healthy/normal condition. The measurements from healthy condition are called \"baseline\".\nIn baseline run, the measurements of the motor current unbalance for stator winding, vibration, and motor torque are collected.\n278 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nThe baseline run goes through 10 frequency points including 10 steady and 9 ramp states. It collects the minimum, maximum,\nmean, and standard deviation values, and stores the statistical baseline data in arrays. Normal start command is required after base-\nline run start.\nBaseline Start\nFrequency\nBaselineRun Duration\ne30bi555.10\nfBaseN\n(Baseline MaxFreq)\n...\n•\n•\nfBase1\nfBased\n(Baseline MinFreq\nSlow ramps\nNormal ramps\nTime\nIllustration 108: BaselineRun Start\n11.24.3 (ID 3502) BaselineRun MinFreq\nLocation in the menu: P3.24.2.2\nUse this parameter to set frequency point where baseline run is started.\n11.24.4 (ID 3503) BaselineRun MaxFreq\nLocation in the menu: P3.24.2.3\nUse this parameter to set frequency point where baseline run is ended.\n11.24.5 (ID 3504) BaselineRun Duration\nLocation in the menu: P3.24.2.4\nUse this parameter to set the duration of the baseline run.\n11.24.6 Manual Run\nBefore or after baseline run, each measurement point can be modified by parameter. One array includes 10 points in steady state\nand 9 points in ramp state.\n11.24.6.1 (ID 3506) Modified Array\nLocation in the menu: P3.24.2.5\nUse this parameter to select a modified array.\n11.24.6.2 (ID 3507) Modified Point\nLocation in the menu: P3.24.2.6\nUse this parameter to select which measurement point to modify in the array. Steady array includes 10 points and ramp array in-\ncludes 9 points. First point has value 0.\n11.24.6.3 (ID 3508) Modified Value\nLocation in the menu: P3.24.2.7\nUse this parameter to give new value to the point selected with ID 3507.\n11.24.6.4 (ID 3505) Modified Activation\nLocation in the menu: P3.24.2.8\nBefore or after the baseline run, each measurement point can be modified. Use this parameter to activate the Modified value (ID\n3508) of the Modified point (ID 3507).\n11.24.6.5 (ID 3509) Baseline Data Selector\nLocation in the menu: P3.24.2.9\nUse this parameter to select which array points can be monitored in monitor group M2.16.1 Baseline data.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 279",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.24.6.6 (ID 3540) Condition-based Monitoring Fault Mode\nLocation in the menu: P3.24.1\nUse this parameter to set the response of the drive to Exception.\nSelection number\nSelection name\nDescription\n0\nNo Action\n1\nWarnings\nWarning levels S1 and S2 are used.\n2\nFault + Warnings\nWarning S1, warning S2 and alarm/fault levels are used.\n11.24.7 Stator Winding Monitoring\nFor stator winding monitoring, the motor currents are being evaluated for evolving unbalances. For this purpose, current unbalance\nis computed and monitored. If there are the unbalanced grid voltages, a resonance-like oscillation can occur if the motor frequency\nmatches the grid frequency.\n11.24.7.1 (ID 1913) Line Freq\nLocation in the menu: P3.24.3.1\nUse this parameter to set the grid Nominal Frequency.\n11.24.7.2 (ID 1914) Line Freq Hysteresis\nLocation in the menu: P3.24.3.2\nUse this parameter to set the hysteresis of the grid Nominal Frequency. Stator winding monitoring is not used in the hysteresis area.\n11.24.8 Threshold Value\nThe several statistical data points (mean, minimum, maximum, and standard) from the baseline model can be combined one thresh-\nold value.\nThreshold value = MeanFactor * mean + MinFactor * min + MaxFactor * max + StdFactor * stddev\n11.24.8.1 (ID 3511) Current Mean Factor\nLocation in the menu: P3.24.3.3.1.1\nUse this parameter to set the mean factor in the threshold value. If the threshold value is zero, the mean factor is not used.\n11.24.8.2 (ID 3512) Current Min Factor\nLocation in the menu: P3.24.3.3.1.2\nUse this parameter to set min factor in the threshold value. If the threshold value is zero, the min factor is not used.\n11.24.8.3 (ID 3513) Current Max Factor\nLocation in the menu: P3.24.3.3.1.3\nUse this parameter to set the max factor in the threshold value. If the threshold value is zero, the max factor is not used.\n11.24.8.4 (ID 3514) Current Std Factor\nLocation in the menu: P3.24.3.3.1.4\nUse this parameter to set the std factor in the threshold value. If the threshold value is zero, the std factor is not used.\n11.24.8.5 (ID 3515) Current Interpolation Type\nLocation in the menu: P3.24.3.3.1.5\nUse this parameter to select interpolation type for the notification threshold values across frequency points.\n11.24.8.6 (ID 3550) Vibration Mean Factor\nLocation in the menu: P3.24.4.2.1\nUse this parameter to set the mean factor in the threshold value. If the threshold value is zero, the mean factor is not used.\n280 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "No Action",
+            ""
+          ],
+          [
+            "1",
+            "Warnings",
+            "Warning levels S1 and S2 are used."
+          ],
+          [
+            "2",
+            "Fault + Warnings",
+            "Warning S1, warning S2 and alarm/fault levels are used."
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4186 @@
+{
+  "archivo": "ABB Manual de Usuario ACS550_p321_334",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "ACS550-01/U1 Manual del Usuario\n321\nÍndice alfabético\naceleración\nformación sobre productos\n333\n/deceleración, grupo de parámetros.\n142\ncompensación, parámetro\n145\nA\nen paro aux (PFC), parámetro\n203\nABB\nselec. cero rampa, parámetro\n143\nbiblioteca de documentos\n333\nselec. rampa, parámetro\ntiempo rampa (PFC), parámetro\n142\n203\ncomentarios acerca de los manuales\n333\ntiempo, parámetro\n142\nconsultas sobre productos y servicios\n333\ntipo rampa, parámetro\nformación sobre productos .\n333\n142\nABC\nactivación del avance lento, parámetro\n119\nlistado de protocolos\n241\nactivar (PID externo), parámetro.\n180\nABC (adaptador de bus de campo)\n241\nadaptación a escala\nreferencia, ABC, perfil ABB drives\n256\ncódigo de control.\n242\nreferencia, ABC, perfil generico\ncódigo de control, ABB drives .\n252\nvalor actual, ABC, perfil ABB drives\n260\ncódigo de estado.\n243\nvalor actual, ABC, perfil genérico .\n259\ncódigo de estado, ABB drives\n253\nvalores actuales, com. BCE\n261\n214\nconfiguración.\n245\ncontrol de marcha/paro/dirección, activar .\n245\nadaptador de bus de campo\nvéase ABC\ncontrol de salidas analógicas, activar\n247\nvéase ABC, par. convertidor\ncontrol de salidas de relé, activar\n247\ncontrol por bus de campo, activar.\n245\nadhesivo\nde campo\n243\nDesignación de tipo\n16\ndiagnósticos\n249\nnúmero de serie .\n16\ndiagrama de estado, ABB drives.\n255\nadvertencia\nfuente del punto de consigna del control PID,\nconexiones de control en paralelo\n6\nactivar\n248\ndispositivo de desconexión (red)\n7\ninstalación\n244\nELV (muy baja tensión)\n29\nplanificación\n243\nfiltro en red IT.\n6\nrealimentación del convertidor\n249\nfiltro en red TN con conexión a tierra en un vértice\nrespuesta a fallo com .. .\n248\n6\nsel. ref. entrada, activar.\n246\ninstalador cualificado\n5\nvalores actuales\n243\nlistado.\n5\nABC, parámetros de convertidor .\n184\nno reparable en el emplazamiento\n7\ngrupo de parámetros módulo comun. externa 184\npuesta en marcha automática\n7\nactualizar parámetro bus de campo, parámetro .\ntensiones peligrosas.\n6\n184\ntornillos EM1, EM3, F1 y F2\n6\ncódigo salida relé, parámetro de datos.\n112\nAhorro de energía\ncódigos de comando, parámetros de datos\n115\ngrupo de parámetros\n182\ncódigos de estado, parámetros de datos\n.\n115\nCantidad 1 ahorrada, parametro de datos\n114\nestado bus de campo, parámetro\n184\nCantidad 2 ahorrada, parametro de datos\n114\nfunción fallo, parámetro.\n153\nCO2 ahorrado, parámetro de datos\n114\nparámetros bus de campo\n184\nfactoror de conversión de CO2, parámetro . 182\nselec. protocolo, parámetro.\n204\nkWh ahorrados, parámetro de datos\n114\ntiem. fallo, parámetro\n153\nMWh ahorrados, parámetro de datos.\n114\ntipo bus de campo, parámetro\n184\npotencia de la bomba, parámetro.\n182\nvalores, parámetro de datos\n112\nPrecio de la energía, parámetro.\nReinicio de los contadores de energía, parámetro\n182\nversión de firmware CPI del archivo conf.,\nparámetro\n184\n182\nversión de firmware CPI del bus de campo,\nahorro, energía\nparámetro\n184\nveáse ahorro de energía\nversión de id del archivo conf., parámetro .\n184\naislamiento, entre la fuente de alimentación de CA y el\nversión del archivo conf., parámetro .\n184\nconvertidor\n287\nversión del programa de apl. de bus de campo,\nparámetro\n185\najuste (PID), parámetro.\n180\najuste de referencias\nPanel de control asistente\n58\nPanel de control básico\n76\najuste fecha y hora (Panel de control asistente). . 66\najustes de E/S (Panel de control asistente)\n71\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "",
+            "",
+            "aceleración"
+          ],
+          [
+            "formación sobre productos",
+            "333",
+            "/deceleración, grupo de parámetros.",
+            "142"
+          ],
+          [
+            "",
+            "",
+            "compensación, parámetro",
+            "145"
+          ],
+          [
+            "A",
+            "",
+            "en paro aux (PFC), parámetro",
+            "203"
+          ],
+          [
+            "ABB",
+            "",
+            "selec. cero rampa, parámetro",
+            "143"
+          ],
+          [
+            "biblioteca de documentos",
+            "333",
+            "selec. rampa, parámetro",
+            "142"
+          ],
+          [
+            "comentarios acerca de los manuales",
+            "333",
+            "tiempo rampa (PFC), parámetro",
+            "203"
+          ],
+          [
+            "consultas sobre productos y servicios",
+            "333",
+            "tiempo, parámetro",
+            "142"
+          ],
+          [
+            "formación sobre productos .",
+            "333",
+            "tipo rampa, parámetro",
+            "142"
+          ],
+          [
+            "ABC",
+            "",
+            "activación del avance lento, parámetro",
+            "119"
+          ],
+          [
+            "listado de protocolos",
+            "241",
+            "activar (PID externo), parámetro.",
+            "180"
+          ],
+          [
+            "ABC (adaptador de bus de campo)",
+            "241",
+            "adaptación a escala",
+            ""
+          ],
+          [
+            "código de control.",
+            "242",
+            "referencia, ABC, perfil ABB drives",
+            "256"
+          ],
+          [
+            "código de control, ABB drives .",
+            "252",
+            "referencia, ABC, perfil generico",
+            "260"
+          ],
+          [
+            "código de estado.",
+            "243",
+            "valor actual, ABC, perfil ABB drives",
+            "259"
+          ],
+          [
+            "código de estado, ABB drives",
+            "253",
+            "valor actual, ABC, perfil genérico .",
+            "261"
+          ],
+          [
+            "configuración.",
+            "245",
+            "valores actuales, com. BCE",
+            "214"
+          ],
+          [
+            "control de marcha/paro/dirección, activar .",
+            "245",
+            "adaptador de bus de campo",
+            ""
+          ],
+          [
+            "control de salidas analógicas, activar",
+            "247",
+            "véase ABC",
+            ""
+          ],
+          [
+            "control de salidas de relé, activar",
+            "247",
+            "véase ABC, par. convertidor",
+            ""
+          ],
+          [
+            "control por bus de campo, activar.",
+            "245",
+            "adhesivo",
+            ""
+          ],
+          [
+            "de campo",
+            "243",
+            "Designación de tipo",
+            "16"
+          ],
+          [
+            "diagnósticos",
+            "249",
+            "número de serie .",
+            "16"
+          ],
+          [
+            "diagrama de estado, ABB drives.",
+            "255",
+            "advertencia",
+            ""
+          ],
+          [
+            "fuente del punto de consigna del control PID,",
+            "",
+            "conexiones de control en paralelo",
+            "6"
+          ],
+          [
+            "activar",
+            "248",
+            "dispositivo de desconexión (red)",
+            "7"
+          ],
+          [
+            "instalación",
+            "244",
+            "ELV (muy baja tensión)",
+            "29"
+          ],
+          [
+            "planificación",
+            "243",
+            "filtro en red IT.",
+            "6"
+          ],
+          [
+            "realimentación del convertidor",
+            "249",
+            "filtro en red TN con conexión a tierra en un",
+            "vértice"
+          ],
+          [
+            "respuesta a fallo com .. .",
+            "248",
+            "6",
+            ""
+          ],
+          [
+            "sel. ref. entrada, activar.",
+            "246",
+            "instalador cualificado",
+            "5"
+          ],
+          [
+            "valores actuales",
+            "243",
+            "listado.",
+            "5"
+          ],
+          [
+            "ABC, parámetros de convertidor .",
+            "184",
+            "no reparable en el emplazamiento",
+            "7"
+          ],
+          [
+            "grupo de parámetros módulo comun. externa",
+            "184",
+            "puesta en marcha automática",
+            "7"
+          ],
+          [
+            "actualizar parámetro bus de campo, parámetro",
+            ".",
+            "tensiones peligrosas.",
+            "6"
+          ],
+          [
+            "184",
+            "",
+            "tornillos EM1, EM3, F1 y F2",
+            "6"
+          ],
+          [
+            "código salida relé, parámetro de datos.",
+            "112",
+            "Ahorro de energía",
+            ""
+          ],
+          [
+            "códigos de comando, parámetros de datos",
+            "115",
+            "grupo de parámetros",
+            "182"
+          ],
+          [
+            "códigos de estado, parámetros de datos .",
+            "115",
+            "Cantidad 1 ahorrada, parametro de datos",
+            "114"
+          ],
+          [
+            "estado bus de campo, parámetro",
+            "184",
+            "Cantidad 2 ahorrada, parametro de datos",
+            "114"
+          ],
+          [
+            "función fallo, parámetro.",
+            "153",
+            "CO2 ahorrado, parámetro de datos",
+            "114"
+          ],
+          [
+            "parámetros bus de campo",
+            "184",
+            "factoror de conversión de CO2, parámetro .",
+            "182"
+          ],
+          [
+            "selec. protocolo, parámetro.",
+            "204",
+            "kWh ahorrados, parámetro de datos",
+            "114"
+          ],
+          [
+            "tiem. fallo, parámetro",
+            "153",
+            "MWh ahorrados, parámetro de datos.",
+            "114"
+          ],
+          [
+            "tipo bus de campo, parámetro",
+            "184",
+            "potencia de la bomba, parámetro.",
+            "182"
+          ],
+          [
+            "valores, parámetro de datos",
+            "112",
+            "Precio de la energía, parámetro.",
+            "182"
+          ],
+          [
+            "versión de firmware CPI del archivo conf.,",
+            "",
+            "Reinicio de los contadores de energía, parámetro"
+          ],
+          [
+            "parámetro",
+            "184",
+            "182",
+            ""
+          ],
+          [
+            "versión de firmware CPI del bus de campo,",
+            "",
+            "ahorro, energía",
+            ""
+          ],
+          [
+            "parámetro",
+            "184",
+            "veáse ahorro de energía",
+            ""
+          ],
+          [
+            "versión de id del archivo conf., parámetro .",
+            "184",
+            "aislamiento, entre la fuente de alimentación de CA",
+            "y el"
+          ],
+          [
+            "versión del archivo conf., parámetro .",
+            "184",
+            "convertidor",
+            "287"
+          ],
+          [
+            "versión del programa de apl. de bus de campo,",
+            "",
+            "ajuste (PID), parámetro.",
+            "180"
+          ],
+          [
+            "parámetro",
+            "185",
+            "ajuste de referencias",
+            ""
+          ],
+          [
+            "",
+            "",
+            "Panel de control asistente",
+            "58"
+          ],
+          [
+            "",
+            "",
+            "Panel de control básico",
+            "76"
+          ],
+          [
+            "",
+            "",
+            "ajuste fecha y hora (Panel de control asistente). . 66"
+          ],
+          [
+            "",
+            "",
+            "ajustes de E/S (Panel de control asistente) 71"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "322\nACS550-01/U1 Manual del Usuario\nalarma\ncódigos\n271\ncódigos (Panel de control básico).\n274\ncódigos, parámetros de datos\n116\nhabilitar visualización, parámetro\n136\nlistado\n271\nalimentación de entrada\ndispositivo de desconexión (red)\n287\nespecificaciones\n287\nrequisitos de cables/cableado\n290\nalimentación monofásica\nconexión\n23\nderrateo\n286\naltitud\nderrateo\n286\nlímite ambiental.\n313\nlímite de transporte\n313\nanalizador de carga\ngrupo de parámetros\n189\nfecha de reinicio de los registradores .\n190\nhora de reinicio de los registradores ..\n190\nregistrador de amplitud 1, distribución\n190\nregistrador de amplitud 2, distribución\n190\nregistrador de valores pico, fecha del valor pico.\n189\nRegistrador de valores pico, frecuencia en el valor\npico\n190\nregistrador de valores pico, hora del valor pico .\n190\nRegistrador de valores pico, intensidad en el valor\npico\n190\nRegistrador de valores pico, tensión en el valor\npico\n190\nRegistrador de valores pico, valor pico detectado\n189\nreinicio de los registradores, parámetro\n189\nSeñal del registrador de amplitud 2, parámetro .\n189\nseñal del registrador del valor pico, parámetro. .\n189\ntiempo del filtro del registrador de valores pico,\nparámetro\n189\nValor base de la señal del registrador de amplitud\n2, par.\n189\nanalizador, carga\nvéase analizador de carga\nángulo\nmecánico, parámetro de datos\n113\narchivo de configuración\ncódigo de fallo.\n267\nversión de firmware CPI, parámetro .\n184\nversión id, parámetro\n184\nversión, parámetro\n184\narmario\ncódigo de clase de protección\n17\ntipos\n313\nasistente (Panel de control asistente)\npuesta en marcha\n61\n62\ntareas\nautocambio\ncontador de orden de marcha\n197\nintervalo, parámetro\n196\n197\nnivel, parámetro\nsinopsis\n197\nauxiliar\nespecificación, parámetro\n158\ntemperatura, parámetro de datos.\n111\nB\nbaja frecuencia (PFC), parámetros\n194\nbastidor.\n283\nBCE, parámetros del convertidor\n187\nprotocolo, grupo de parámetros .\n187\narchivo de configuración, código de fallo\n267\ncódigo salida relé, parámetro de datos\n112\ncódigos de comando, parámetros de datos. 115\ncódigos de estado, parámetros de datos. .\n115\ncódigos de fallo\n267\nerrores CRC (recuento), parámetro .\n187\nerrores UART (recuento), parámetro\n187\nestado, parámetro\n187\nfunción fallo, parámetro\n153\nid de estación, parámetro.\n187\nid de protocolo, parámetro .\n187\nmensajes correct. (recuento), parámetro\n187\nparámetros .\n188\nparidad, parámetro.\n187\nperfil de control, parámetro\n187\nselec. protocolo, parámetro\n204\ntiem. fallo, parámetro .\n153\nvalores, parámetro de datos\n112\nvel. transm., parámetro\n187\nBCI (bus de campo incrustado)\n205\nadaptación a escala del valor actual\n214\ncódigo de control\n227\ncódigo de estado\n231\ncódigo de fallo 28\n217\ncódigo de fallo 31\n217\ncódigo de fallo 32.\n217\ncódigo de fallo 33.\n217\ncódigos de excepción.\n226\nconfiguración\n207, 208\nconfiguración para pérdida de comunicación 216\ncontrol de marcha/paro/dirección, activar\n.209\ncontrol de salidas analógicas, activar\n212\ncontrol de salidas de relé, activar.\n212\ncontrol del convertidor de las funciones, activar\n209\ncontrol heterog. del convertidor, activar.\n210\ndiagnósticos .\n215\ndiagrama de estado\n235\nfallo, desconexión intermitente de la línea. . 217\nfallo, estaciones duplicadas .\n216\nfallo, hilos intercambiados\n216\nfallo, sin una estación maestra en línea. .\n216\nfuente del punto de consigna del control PID,\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "alarma",
+            ""
+          ],
+          [
+            "códigos",
+            "271"
+          ],
+          [
+            "códigos (Panel de control básico).",
+            "274"
+          ],
+          [
+            "códigos, parámetros de datos",
+            "116"
+          ],
+          [
+            "habilitar visualización, parámetro",
+            "136"
+          ],
+          [
+            "listado",
+            "271"
+          ],
+          [
+            "alimentación de entrada",
+            ""
+          ],
+          [
+            "dispositivo de desconexión (red)",
+            "287"
+          ],
+          [
+            "especificaciones",
+            "287"
+          ],
+          [
+            "requisitos de cables/cableado",
+            "290"
+          ],
+          [
+            "alimentación monofásica",
+            ""
+          ],
+          [
+            "conexión",
+            "23"
+          ],
+          [
+            "derrateo",
+            "286"
+          ],
+          [
+            "altitud",
+            ""
+          ],
+          [
+            "derrateo",
+            "286"
+          ],
+          [
+            "límite ambiental.",
+            "313"
+          ],
+          [
+            "límite de transporte",
+            "313"
+          ],
+          [
+            "analizador de carga",
+            ""
+          ],
+          [
+            "grupo de parámetros",
+            "189"
+          ],
+          [
+            "fecha de reinicio de los registradores .",
+            "190"
+          ],
+          [
+            "hora de reinicio de los registradores ..",
+            "190"
+          ],
+          [
+            "registrador de amplitud 1, distribución",
+            "190"
+          ],
+          [
+            "registrador de amplitud 2, distribución",
+            "190"
+          ],
+          [
+            "registrador de valores pico, fecha del valor pico. 189"
+          ],
+          [
+            "Registrador de valores pico, frecuencia en el valor"
+          ],
+          [
+            "pico",
+            "190"
+          ],
+          [
+            "registrador de valores pico, hora del valor pico . 190"
+          ],
+          [
+            "Registrador de valores pico, intensidad en",
+            "el valor"
+          ],
+          [
+            "pico",
+            "190"
+          ],
+          [
+            "Registrador de valores pico, tensión en el valor"
+          ],
+          [
+            "pico",
+            "190"
+          ],
+          [
+            "Registrador de valores pico, valor pico detectado 189"
+          ],
+          [
+            "reinicio de los registradores, parámetro",
+            "189"
+          ],
+          [
+            "Señal del registrador de amplitud 2, parámetro . 189"
+          ],
+          [
+            "señal del registrador del valor pico, parámetro. . 189"
+          ],
+          [
+            "tiempo del filtro del registrador de valores pico, parámetro 189"
+          ],
+          [
+            "Valor base de la señal del registrador de\n2, par.",
+            "amplitud\n189"
+          ],
+          [
+            "analizador, carga",
+            ""
+          ],
+          [
+            "véase analizador de carga",
+            ""
+          ],
+          [
+            "ángulo",
+            ""
+          ],
+          [
+            "mecánico, parámetro de datos",
+            "113"
+          ],
+          [
+            "archivo de configuración",
+            ""
+          ],
+          [
+            "código de fallo.",
+            "267"
+          ],
+          [
+            "versión de firmware CPI, parámetro .",
+            "184"
+          ],
+          [
+            "versión id, parámetro",
+            "184"
+          ],
+          [
+            "versión, parámetro",
+            "184"
+          ],
+          [
+            "armario",
+            ""
+          ],
+          [
+            "código de clase de protección",
+            "17"
+          ],
+          [
+            "tipos",
+            "313"
+          ],
+          [
+            "asistente (Panel de control asistente)"
+          ],
+          [
+            "puesta en marcha",
+            "61"
+          ],
+          [
+            "tareas",
+            "62"
+          ]
+        ],
+        [
+          [
+            "autocambio",
+            ""
+          ],
+          [
+            "contador de orden de marcha",
+            "197"
+          ],
+          [
+            "intervalo, parámetro",
+            "196"
+          ],
+          [
+            "nivel, parámetro",
+            "197"
+          ],
+          [
+            "sinopsis",
+            "197"
+          ],
+          [
+            "auxiliar",
+            ""
+          ],
+          [
+            "especificación, parámetro",
+            "158"
+          ],
+          [
+            "temperatura, parámetro de datos.",
+            "111"
+          ],
+          [
+            "B",
+            ""
+          ],
+          [
+            "baja frecuencia (PFC), parámetros",
+            "194"
+          ],
+          [
+            "bastidor.",
+            "283"
+          ],
+          [
+            "BCE, parámetros del convertidor",
+            "187"
+          ],
+          [
+            "protocolo, grupo de parámetros .",
+            "187"
+          ],
+          [
+            "archivo de configuración, código de fallo",
+            "267"
+          ],
+          [
+            "código salida relé, parámetro de datos",
+            "112"
+          ],
+          [
+            "códigos de comando, parámetros de datos.",
+            "115"
+          ],
+          [
+            "códigos de estado, parámetros de datos. .",
+            "115"
+          ],
+          [
+            "códigos de fallo",
+            "267"
+          ],
+          [
+            "errores CRC (recuento), parámetro .",
+            "187"
+          ],
+          [
+            "errores UART (recuento), parámetro",
+            "187"
+          ],
+          [
+            "estado, parámetro",
+            "187"
+          ],
+          [
+            "función fallo, parámetro",
+            "153"
+          ],
+          [
+            "id de estación, parámetro.",
+            "187"
+          ],
+          [
+            "id de protocolo, parámetro .",
+            "187"
+          ],
+          [
+            "mensajes correct. (recuento), parámetro",
+            "187"
+          ],
+          [
+            "parámetros .",
+            "188"
+          ],
+          [
+            "paridad, parámetro.",
+            "187"
+          ],
+          [
+            "perfil de control, parámetro",
+            "187"
+          ],
+          [
+            "selec. protocolo, parámetro",
+            "204"
+          ],
+          [
+            "tiem. fallo, parámetro .",
+            "153"
+          ],
+          [
+            "valores, parámetro de datos",
+            "112"
+          ],
+          [
+            "vel. transm., parámetro",
+            "187"
+          ],
+          [
+            "BCI (bus de campo incrustado)",
+            "205"
+          ],
+          [
+            "adaptación a escala del valor actual",
+            "214"
+          ],
+          [
+            "código de control",
+            "227"
+          ],
+          [
+            "código de estado",
+            "231"
+          ],
+          [
+            "código de fallo 28",
+            "217"
+          ],
+          [
+            "código de fallo 31",
+            "217"
+          ],
+          [
+            "código de fallo 32.",
+            "217"
+          ],
+          [
+            "código de fallo 33.",
+            "217"
+          ],
+          [
+            "códigos de excepción.",
+            "226"
+          ],
+          [
+            "configuración 207,",
+            "208"
+          ],
+          [
+            "configuración para pérdida de comunicación",
+            "216"
+          ],
+          [
+            "control de marcha/paro/dirección, activar",
+            ".209"
+          ],
+          [
+            "control de salidas analógicas, activar",
+            "212"
+          ],
+          [
+            "control de salidas de relé, activar.",
+            "212"
+          ],
+          [
+            "control del convertidor de las funciones, activar 209"
+          ],
+          [
+            "control heterog. del convertidor, activar.",
+            "210"
+          ],
+          [
+            "diagnósticos .",
+            "215"
+          ],
+          [
+            "diagrama de estado",
+            "235"
+          ],
+          [
+            "fallo, desconexión intermitente de la línea. .",
+            "217"
+          ],
+          [
+            "fallo, estaciones duplicadas .",
+            "216"
+          ],
+          [
+            "fallo, hilos intercambiados",
+            "216"
+          ],
+          [
+            "fallo, sin una estación maestra en línea. .",
+            "216"
+          ],
+          [
+            "fuente del punto de consigna del control PID,"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "ACS550-01/U1 Manual del Usuario\n323\nactivar\n213\ncableado\ninstalación .\n206\ncontrol.\n28\ninterfase de control\n205\nfallo, parámetro\n154\nparámetros de análisis de fallos\n215\nfases de instalación, IP 21/conducto\n32\nperfiles.\n219\nfases de instalación, IP 54/cables\n33\nplanificación\n206\nfases de instalación, IP 54/conducto\n35\nrealimentación del convertidor\n214\ninstalación\n30\nrespuesta a fallo com ..\n213\npasos de instalación, IP21/cables\n30\nsel. ref. entrada, activar.\n210\nrequisitos, generales\n23\nterminación\n207\nsinopsis\n23\nvalores actuales\n214\ncaída libre, prueba de tensión.\n314\nvalores actuales modbus\n226\ncategoría (definición de IEC/EN 61800-3)\nBCI (bus de campo integrado)\nČ2\n318\nescalado de referencia, perfil ABB drives . .\n236\nC3.\n318\nescalado de referencia, perfil DCU .\n236\nCC\nbiblioteca de documentos\n333\nestabilizador de tensión, parámetro\n149\nbiblioteca, documento\n333\nref. intensidad, parámetro\n140\nbloqueo\nsobretensión, código de fallo\n265\nacceso al panel de control, IP 54\n37\nsubtensión, código de fallo.\n265\ncontrol del convertidor en el panel de control local\ntensión del bus, parámetro de datos\n111\n134\ntiem. frenado, parámetro\n140\nfrecuencia, parámetro de fallo.\n153\ntiempo de magnetización, parámetro .\n139\nfunción, parámetro de fallo\n153\ncero pulsos\nparámetros\n133\ndetectado, parámetro de datos\n113\nregión\n153\nhabilitar, parámetro\n183\ntiempo, parámetro de fallo\n153\nchopper\nbloqueo del modo de control local, parámetro .\n134\nvéase frenado\nbus\ncodificador\nvéase ABC (adaptador de bus de campo)\ngrupo de parámetros\n183\nvéase ABC, par. convertidor\ncero pulsos detectados, parámetro de datos 113\nvéase BCE (bus de campo encajado)\nerror, código de fallo.\n267\nvéase BCE, par. convertidor\nfallo, parámetro\n183\nbus de campo encajado\nhabilitar cero pulsos, parametro\n183\nvéase BCE\nhabilitar rest. posición, parámetro\n183\nbus de campo, encajado\nhabilitar, parámetro\n183\n183\nvéase BCE\nnúmero de pulsos, parámetro\nbus encajado\ncódigo de control\nvéase BCE, par. convertidor\nABB drives, ABC, descripción\n252\n242\nbus, encajado\nABC\nvéase BCE, par. convertidor\nBCI, descripción\n227\nperfil genérico ABC\n260\nC\ncódigo de estado\ncable a motor\nABB drives, ABC, descripción\n253\nlongitud\nABC\n243\n295\ncom. BCI, definición\n231\nlongitud max ..\n295\nperfil genérico ABC\n260\nrequisitos.\n298\ncódigo de estructura\n17\nrequisitos, EMC.\n299\ncódigo de tipo\ncable analógico, requisitos\n307\nvéase designación de tipo\n17\ncable de alimentación\ncódigos de excepción, modbus BCI\n226\ncomprobación del aislamiento.\n30\ncom. RS485\n206\ncable de control\ncomentarios\nconexiones\n28\nacerca de los manuales ABB\n333\nrequisitos.\n306\ncomo realizar tareas comunes\ncable de motor\ncon el Panel de control asistente\n54\ncomprobación del aislamiento.\n30\ncon el Panel de control básico\n73\ncompatibilidad.\n13\nCompensación IR\nfrecuencia, parámetro\n148\nparámetros\n148\ntensión, parámetro\n148\ncomprobación del aislamiento\n30\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "activar",
+            "213",
+            "cableado",
+            ""
+          ],
+          [
+            "instalación .",
+            "206",
+            "control.",
+            "28"
+          ],
+          [
+            "interfase de control",
+            "205",
+            "fallo, parámetro",
+            "154"
+          ],
+          [
+            "",
+            "parámetros de análisis de fallos",
+            "215",
+            "fases de instalación, IP 21/conducto",
+            "32"
+          ],
+          [
+            "",
+            "perfiles.",
+            "219",
+            "fases de instalación, IP 54/cables",
+            "33"
+          ],
+          [
+            "",
+            "planificación",
+            "206",
+            "fases de instalación, IP 54/conducto",
+            "35"
+          ],
+          [
+            "",
+            "realimentación del convertidor",
+            "214",
+            "instalación",
+            "30"
+          ],
+          [
+            "",
+            "respuesta a fallo com ..",
+            "213",
+            "pasos de instalación, IP21/cables",
+            "30"
+          ],
+          [
+            "",
+            "sel. ref. entrada, activar.",
+            "210",
+            "requisitos, generales",
+            "23"
+          ],
+          [
+            "",
+            "terminación",
+            "207",
+            "sinopsis",
+            "23"
+          ],
+          [
+            "",
+            "valores actuales",
+            "214",
+            "caída libre, prueba de tensión.",
+            "314"
+          ],
+          [
+            "",
+            "valores actuales modbus",
+            "226",
+            "categoría (definición de IEC/EN 61800-3)",
+            ""
+          ],
+          [
+            "BCI (bus de campo integrado)",
+            "",
+            "Č2",
+            "318"
+          ],
+          [
+            "",
+            "escalado de referencia, perfil ABB drives . .",
+            "236",
+            "C3.",
+            "318"
+          ],
+          [
+            "",
+            "escalado de referencia, perfil DCU .",
+            "236",
+            "CC",
+            ""
+          ],
+          [
+            "",
+            "biblioteca de documentos",
+            "333",
+            "estabilizador de tensión, parámetro",
+            "149"
+          ],
+          [
+            "biblioteca, documento",
+            "333",
+            "ref. intensidad, parámetro",
+            "140"
+          ],
+          [
+            "bloqueo",
+            "",
+            "sobretensión, código de fallo",
+            "265"
+          ],
+          [
+            "",
+            "acceso al panel de control, IP 54",
+            "37",
+            "subtensión, código de fallo.",
+            "265"
+          ],
+          [
+            "control del convertidor en el panel de control",
+            "local",
+            "tensión del bus, parámetro de datos",
+            "111"
+          ],
+          [
+            "134",
+            "",
+            "tiem. frenado, parámetro",
+            "140"
+          ],
+          [
+            "",
+            "frecuencia, parámetro de fallo.",
+            "153",
+            "tiempo de magnetización, parámetro .",
+            "139"
+          ],
+          [
+            "",
+            "función, parámetro de fallo",
+            "153",
+            "cero pulsos",
+            ""
+          ],
+          [
+            "",
+            "parámetros",
+            "133",
+            "detectado, parámetro de datos",
+            "113"
+          ],
+          [
+            "",
+            "región",
+            "153",
+            "habilitar, parámetro",
+            "183"
+          ],
+          [
+            "",
+            "tiempo, parámetro de fallo",
+            "153",
+            "chopper",
+            ""
+          ],
+          [
+            "bloqueo del modo de control local, parámetro .",
+            "134",
+            "véase frenado",
+            ""
+          ],
+          [
+            "bus",
+            "",
+            "codificador",
+            ""
+          ],
+          [
+            "véase ABC (adaptador de bus de campo)",
+            "",
+            "grupo de parámetros",
+            "183"
+          ],
+          [
+            "véase ABC, par. convertidor",
+            "",
+            "cero pulsos detectados, parámetro de datos",
+            "113"
+          ],
+          [
+            "véase BCE (bus de campo encajado)",
+            "",
+            "error, código de fallo.",
+            "267"
+          ],
+          [
+            "véase BCE, par. convertidor",
+            "",
+            "fallo, parámetro",
+            "183"
+          ],
+          [
+            "bus de campo encajado",
+            "",
+            "habilitar cero pulsos, parametro",
+            "183"
+          ],
+          [
+            "véase BCE",
+            "",
+            "habilitar rest. posición, parámetro",
+            "183"
+          ],
+          [
+            "bus de campo, encajado",
+            "",
+            "habilitar, parámetro",
+            "183"
+          ],
+          [
+            "",
+            "véase BCE",
+            "",
+            "número de pulsos, parámetro",
+            "183"
+          ],
+          [
+            "bus encajado",
+            "",
+            "código de control",
+            ""
+          ],
+          [
+            "véase BCE, par. convertidor",
+            "",
+            "ABB drives, ABC, descripción",
+            "252"
+          ],
+          [
+            "bus, encajado",
+            "",
+            "ABC",
+            "242"
+          ],
+          [
+            "",
+            "véase BCE, par. convertidor",
+            "",
+            "BCI, descripción",
+            "227"
+          ],
+          [
+            "",
+            "",
+            "",
+            "perfil genérico ABC",
+            "260"
+          ],
+          [
+            "C",
+            "",
+            "código de estado",
+            ""
+          ],
+          [
+            "",
+            "",
+            "ABB drives, ABC, descripción",
+            "253"
+          ],
+          [
+            "cable a motor",
+            "",
+            "ABC",
+            "243"
+          ],
+          [
+            "longitud",
+            "295",
+            "com. BCI, definición",
+            "231"
+          ],
+          [
+            "longitud max ..",
+            "295",
+            "perfil genérico ABC",
+            "260"
+          ],
+          [
+            "",
+            "requisitos.",
+            "298",
+            "",
+            "17"
+          ],
+          [
+            "",
+            "requisitos, EMC.",
+            "299",
+            "código de estructura",
+            ""
+          ],
+          [
+            "cable",
+            "analógico, requisitos",
+            "307",
+            "código de tipo",
+            ""
+          ],
+          [
+            "cable de alimentación",
+            "",
+            "véase designación de tipo",
+            "17"
+          ],
+          [
+            "",
+            "comprobación del aislamiento.",
+            "30",
+            "códigos de excepción, modbus BCI",
+            "226"
+          ],
+          [
+            "cable de control",
+            "",
+            "com. RS485",
+            "206"
+          ],
+          [
+            "",
+            "conexiones",
+            "28",
+            "comentarios",
+            ""
+          ],
+          [
+            "",
+            "requisitos.",
+            "306",
+            "acerca de los manuales ABB",
+            "333"
+          ],
+          [
+            "cable de motor",
+            "",
+            "como realizar tareas comunes",
+            ""
+          ],
+          [
+            "",
+            "comprobación del aislamiento.",
+            "30",
+            "con el Panel de control asistente",
+            "54"
+          ],
+          [
+            "",
+            "",
+            "con el Panel de control básico",
+            "73"
+          ],
+          [
+            "",
+            "",
+            "compatibilidad.",
+            "13"
+          ],
+          [
+            "",
+            "",
+            "",
+            "Compensación IR",
+            ""
+          ],
+          [
+            "",
+            "",
+            "frecuencia, parámetro",
+            "148"
+          ],
+          [
+            "",
+            "",
+            "parámetros",
+            "148"
+          ],
+          [
+            "",
+            "",
+            "tensión, parámetro",
+            "148"
+          ],
+          [
+            "",
+            "",
+            "comprobación del aislamiento",
+            "30"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "324\nACS550-01/U1 Manual del Usuario\ncomunicación\nvéase ABC (adaptador de bus de campo)\nvéase ABC, par. convertidor\nvéase BCE (bus de campo encajado)\nvéase BCE, par. convertidor\ncomunicación panel, grupo de parámetros . ..\n186\ncomunicación serie\nvéase ABC (adaptador de bus de campo)\nvéase ABC, par. convertidor\nvéase BCE (bus de campo encajado)\nvéase BCE, par. convertidor\ncondensador\nreacondicionamiento.\n281\nsustitución .\n281\ncondiciones ambientales\n313\nConexión a tierra de PE\npar.\n292\ntamaño de terminal\n292\nconexión de la alimentación de entrada\npar.\n292\nSistema IT.\n292\ntamaño de terminal .\n292\nterminales para R6\n293\nconexión del motor\npar.\n292\ntamaño de terminal .\n292\nterminales para R6\n293\nconexiones\ncom. BCE\n206\ncontrol .\n28\ndiagrama.\n28\nmódulo ABC\n244\nX1\n28\nconjuntos PID de proceso , grupos de parámetros. .\n171\nconmutadores DIP\n25, 28\nconsultas\nsobre productos\n333\ncont. revoluciones, parámetro de datos\n113\ncontador de orden de marcha\n197\ncontraste, panel de control (Asistente)\n58\ncontrol\na través de la interfase de E/S\n47\nespecificaciones de conexión\n306\nespecificaciones de terminal.\n307\nlugar, parámetro de datos.\n111\ncontrol bypass del regulador, parámetro.\n202\ncontrol de dirección, parámetro.\n119\ncontrol de velocidad\ngrupo de parámetros\n144\najuste automático, parámetro .\n144, 145\ncompensación de aceleración, parámetro .\n145\nganancia proporcional, parámetro\n144\nmodo vector:velocidad\n109\ntiemp. integración, parámetro .\n144\ntiempo derivación, parámetro\n144\ncontrol del motor\ngrupo de parámetros\n148\ncompensación IR, parámetros\n148\nmodo de control, parámetro\n109\ncontrol del par\ngrupo de parámetros\n146\n146\naument. rampa, parámetro.\ndismin. rampa, parámetro\n146\nmacro .\n89\nmodo vector:par\n109\ncontroles del sistema, grupo de parámetros\n133\nconvertidor\ndimensiones de montaje\n310\ndimensiones exteriores\n311\nid, código de fallo\n267\ninstalación com. BCE.\n206\ninstalación del módulo ABC\n244\nmontaje\n22\npeso\n312\ncopia de seguridad de parámetros\nPanel de control asistente\n68\nPanel de control básico\n79\ncorrelación\nmodbus BCI\n219\nvalor actual, ABC, perfil genérico\n261\ncortocircuito, código de fallo .\n265\ncubierta\nretirada\n21\ncubierta superior, véase tapa\ncubierta superior, ver tapa\ncubierta, superior, véase tapa\ncubierta, superior, ver tapa\ncurva carga usuario\ngrupo de parámetros\n168\ncódigo de fallo\n268\nfrecuencia, parámetros\n168, 169\nmodo, parámetro\n168\npar, parámetros\n168, 169\ntiempo, parámetro\n168\ncurva de carga, ver curva carga usuario\ncurva sobrecarga\nver curva carga usuario\ncurva subcarga\nver curva carga usuario\nD\ndatos de funcionamiento, grupo de parámetros. 111\nde campo\nseleccionar, grupo de parámetros\n120\ncontrol con el panel, parámetro\n120\ncorrecciones para valores de parámetro\n122\nescalón (PFC), parámetros\n192\nmáximo, parámetros\n123\nmínimo, parámetros .\n123\nmodo (Panel de control básico)\n76\nseleccionar fuente, parámetro\n121\ndeceleración\ngrupo de parámetros\n142\nen la marcha aux. (PFC), parámetro\n203\nselec. cero rampa, parámetro\n143\nselec. rampa, parámetro\n142\ntiempo de emergencia, parámetro\n143\ntiempo rampa (PFC), parámetro\n203\ntiempo, parámetro\n142\ntipo rampa, parámetro\n142\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "control del par",
+            "",
+            ""
+          ],
+          [
+            "grupo de parámetros",
+            "",
+            "146"
+          ],
+          [
+            "aument. rampa, parámetro.",
+            "",
+            "146"
+          ],
+          [
+            "dismin. rampa, parámetro",
+            "",
+            "146"
+          ],
+          [
+            "macro .",
+            "",
+            "89"
+          ],
+          [
+            "modo vector:par",
+            "",
+            "109"
+          ],
+          [
+            "controles del sistema, grupo de parámetros",
+            "",
+            "133"
+          ],
+          [
+            "convertidor",
+            "",
+            ""
+          ],
+          [
+            "dimensiones de montaje",
+            "",
+            "310"
+          ],
+          [
+            "dimensiones exteriores",
+            "",
+            "311"
+          ],
+          [
+            "id, código de fallo",
+            "",
+            "267"
+          ],
+          [
+            "instalación com. BCE.",
+            "",
+            "206"
+          ],
+          [
+            "instalación del módulo ABC",
+            "",
+            "244"
+          ],
+          [
+            "montaje",
+            "",
+            "22"
+          ],
+          [
+            "peso",
+            "",
+            "312"
+          ],
+          [
+            "copia de seguridad de parámetros",
+            "",
+            ""
+          ],
+          [
+            "Panel de control asistente",
+            "",
+            "68"
+          ],
+          [
+            "Panel de control básico",
+            "",
+            "79"
+          ],
+          [
+            "correlación",
+            "",
+            ""
+          ],
+          [
+            "modbus BCI",
+            "",
+            "219"
+          ],
+          [
+            "valor actual, ABC, perfil genérico",
+            "",
+            "261"
+          ],
+          [
+            "cortocircuito, código de fallo .",
+            "",
+            "265"
+          ],
+          [
+            "cubierta",
+            "",
+            ""
+          ],
+          [
+            "retirada",
+            "",
+            "21"
+          ],
+          [
+            "cubierta superior, véase tapa",
+            "",
+            ""
+          ],
+          [
+            "cubierta superior, ver tapa",
+            "",
+            ""
+          ],
+          [
+            "cubierta, superior, véase tapa",
+            "",
+            ""
+          ],
+          [
+            "cubierta, superior, ver tapa",
+            "",
+            ""
+          ],
+          [
+            "curva carga usuario",
+            "",
+            ""
+          ],
+          [
+            "grupo de parámetros",
+            "",
+            "168"
+          ],
+          [
+            "código de fallo",
+            "",
+            "268"
+          ],
+          [
+            "frecuencia, parámetros",
+            "168,",
+            "169"
+          ],
+          [
+            "modo, parámetro",
+            "",
+            "168"
+          ],
+          [
+            "par, parámetros",
+            "168,",
+            "169"
+          ],
+          [
+            "tiempo, parámetro",
+            "",
+            "168"
+          ],
+          [
+            "curva de carga, ver curva carga usuario",
+            "",
+            ""
+          ],
+          [
+            "curva sobrecarga",
+            "",
+            ""
+          ],
+          [
+            "ver curva carga usuario",
+            "",
+            ""
+          ],
+          [
+            "curva subcarga",
+            "",
+            ""
+          ],
+          [
+            "ver curva carga usuario",
+            "",
+            ""
+          ],
+          [
+            "D",
+            ""
+          ],
+          [
+            "datos de funcionamiento, grupo de parámetros.",
+            "111"
+          ],
+          [
+            "de campo",
+            "",
+            ""
+          ],
+          [
+            "seleccionar, grupo de parámetros",
+            "",
+            "120"
+          ],
+          [
+            "control con el panel, parámetro",
+            "",
+            "120"
+          ],
+          [
+            "correcciones para valores de parámetro",
+            "",
+            "122"
+          ],
+          [
+            "escalón (PFC), parámetros",
+            "",
+            "192"
+          ],
+          [
+            "máximo, parámetros",
+            "",
+            "123"
+          ],
+          [
+            "mínimo, parámetros .",
+            "",
+            "123"
+          ],
+          [
+            "modo (Panel de control básico)",
+            "",
+            "76"
+          ],
+          [
+            "seleccionar fuente, parámetro",
+            "",
+            "121"
+          ],
+          [
+            "deceleración",
+            "",
+            ""
+          ],
+          [
+            "grupo de parámetros",
+            "",
+            "142"
+          ],
+          [
+            "en la marcha aux. (PFC), parámetro",
+            "",
+            "203"
+          ],
+          [
+            "selec. cero rampa, parámetro",
+            "",
+            "143"
+          ],
+          [
+            "selec. rampa, parámetro",
+            "",
+            "142"
+          ],
+          [
+            "tiempo de emergencia, parámetro",
+            "",
+            "143"
+          ],
+          [
+            "tiempo rampa (PFC), parámetro",
+            "",
+            "203"
+          ],
+          [
+            "tiempo, parámetro",
+            "",
+            "142"
+          ],
+          [
+            "tipo rampa, parámetro",
+            "",
+            "142"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "ACS550-01/U1 Manual del Usuario\n325\ndefecto a tierra\nnivel de detección\n154\nderrateo\nalimentación monofásica.\n286\naltitud.\n286\nejemplo de ajuste\n286\nfrecuencia de conmutación .\n286\ntemperatura.\n286\nderrateo por temperatura.\n286\ndescargar series de parámetros\naplicación\n68\nserie completa.\n68\nseries de usuario.\n68\ndesembalaje del convertidor de frecuencia\n16\nDesignación de tipo .\n16\ndesignación de tipo\n17\ndespertar\ndemora (PID), parámetro\n177\ndesviación (PID), parámetro\n177\ndiagnósticos.\n263\ncom. BCE\n215\nFBA comm\n249\ndiagrama de estado\ncom. (BCI).\n235\ncom.,ABB drives\n255\ndimensiones\nconvertidor, exterior\n311\nconvertidor, montaje\n310\ndirección de giro\nPanel de control asistente.\n53,57\nPanel de control básico.\n72, 74\nE\nE/S analógica\nconexiones\n28\nespecificaciones\n28\nE/S, control a través\n47\neficiencia\n307\neliminación.\n315\nELV (muy baja tensión) .\n29\nEMC\nMarcado CE\n316\nmarcado C-Tick.\n317\nrequisitos del cable a motor\n299\nemergencia\ndispositivos de paro\n289\nselec. de paro, parámetro .\n140\ntiempo de deceleración, parámetro.\n143\nenclavamientos, parámetro\n198\nenlace OPEX, código de fallo\n266\nentrada actual (PID), parámetros\n176\nentrada analógica\ngrupo de parámetros.\n128\nfiltro, parámetros .\n128\ninferior a min., parametro de fallo\n151\nlímite de fallo, parámetros.\n153\nmáximo, parámetros\n128\nmínimo, parámetros\n128\nparámetro de datos.\n112\npérdida, códigos de fallo.\n265\nrearme. auto. inferior a mín., parámetro\n155\nentrada digital\nconexiones\n28\nen fallo, parametros de historial\n117\nespecificaciones .\n29\nestado, parámetro de datos\n112\nerror serie 1 (código de fallo 28)\n217\nerror serie 1, código de fallo\n267\nerrores CRC (recuento), parámetro\n186\nerrores de trama (recuento), parámetro\n186\nescalado\nreferencia, BCI, perfil ABB drives.\n236\nreferencia, BCI, perfil DCU.\n236\nescalado de referencia\nABC, perfil ABB drives\n256\nABC, perfil genérico\n260\nBCI, perfil ABB Drives\n236\nBCI, perfil DCU.\n236\nespecificaciones\n283\nalimentación de entrada .\n287\nconexiones de control\n306\nred\n287\nEspecificaciones IEC\nvéase especificaciones\nespecificaciones NEMA\nvéase especificaciones\nestado en fallo, parámetro historial.\n117\nEstándar\nmacro Estándar (por defecto).\n82\nF\nfactor conv CO2\nveáse ahorro de energía\nfallo\nfunciones, grupo de parámetros.\n151\nanterior, parámetro de historial\n117\nhistorial, grupo de parámetros\n117\ncódigos .\n264\ncódigos, parámetros de datos\n116\nestado de entrada digital en, parámetro de\nhistorial .\n117\nestado en, parámetro de historial.\n117\nfallo com. (BCE).\n213\nFBA comm\n248\nfrecuencia en, parametro de historial\n117\nhistorial\n271\nintensidad en, parametro de historial\n117\nlistado .\n264\nmodo (Panel de control asistente)\n53, 264\nmodo (Panel de control básico)\n73, 264\npar en, parámetro de historial\n117\nrearme\n270\nregistro (Panel de control asistente).\n65\nrestaurar.\n136\nselec. de restauración, parámetro\n133\ntensión en, parámetro de historial\n117\ntiempo de, parámetros de historial .\n117\núltimo, parámetro de historial .\n117\nvelocidad en, parámetro de historial\n117\nfallo externo\ncódigos de fallo\n266\nparámetros\n151\nrearme automático, parámetro .\n155\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "defecto a tierra",
+            ""
+          ],
+          [
+            "nivel de detección",
+            "154"
+          ],
+          [
+            "derrateo",
+            ""
+          ],
+          [
+            "alimentación monofásica.",
+            "286"
+          ],
+          [
+            "altitud.",
+            "286"
+          ],
+          [
+            "ejemplo de ajuste",
+            "286"
+          ],
+          [
+            "frecuencia de conmutación .",
+            "286"
+          ],
+          [
+            "temperatura.",
+            "286"
+          ],
+          [
+            "derrateo por temperatura.",
+            "286"
+          ],
+          [
+            "descargar series de parámetros",
+            ""
+          ],
+          [
+            "aplicación",
+            "68"
+          ],
+          [
+            "serie completa.",
+            "68"
+          ],
+          [
+            "series de usuario.",
+            "68"
+          ],
+          [
+            "desembalaje del convertidor de frecuencia",
+            "16"
+          ],
+          [
+            "Designación de tipo .",
+            "16"
+          ],
+          [
+            "designación de tipo",
+            "17"
+          ],
+          [
+            "despertar",
+            ""
+          ],
+          [
+            "demora (PID), parámetro",
+            "177"
+          ],
+          [
+            "desviación (PID), parámetro",
+            "177"
+          ],
+          [
+            "diagnósticos.",
+            "263"
+          ],
+          [
+            "com. BCE",
+            "215"
+          ],
+          [
+            "FBA comm",
+            "249"
+          ],
+          [
+            "diagrama de estado",
+            ""
+          ],
+          [
+            "com. (BCI).",
+            "235"
+          ],
+          [
+            "com.,ABB drives",
+            "255"
+          ],
+          [
+            "dimensiones",
+            ""
+          ],
+          [
+            "convertidor, exterior",
+            "311"
+          ],
+          [
+            "convertidor, montaje",
+            "310"
+          ],
+          [
+            "dirección de giro",
+            ""
+          ],
+          [
+            "Panel de control asistente.",
+            "53,57"
+          ],
+          [
+            "Panel de control básico.",
+            "72, 74"
+          ]
+        ],
+        [
+          [
+            "E/S analógica",
+            ""
+          ],
+          [
+            "conexiones",
+            "28"
+          ],
+          [
+            "especificaciones",
+            "28"
+          ],
+          [
+            "E/S, control a través",
+            "47"
+          ],
+          [
+            "eficiencia",
+            "307"
+          ],
+          [
+            "eliminación.",
+            "315"
+          ],
+          [
+            "ELV (muy baja tensión) .",
+            "29"
+          ],
+          [
+            "EMC",
+            ""
+          ],
+          [
+            "Marcado CE",
+            "316"
+          ],
+          [
+            "marcado C-Tick.",
+            "317"
+          ],
+          [
+            "requisitos del cable a motor",
+            "299"
+          ],
+          [
+            "emergencia",
+            ""
+          ],
+          [
+            "dispositivos de paro",
+            "289"
+          ],
+          [
+            "selec. de paro, parámetro .",
+            "140"
+          ],
+          [
+            "tiempo de deceleración, parámetro.",
+            "143"
+          ],
+          [
+            "enclavamientos, parámetro",
+            "198"
+          ],
+          [
+            "enlace OPEX, código de fallo",
+            "266"
+          ],
+          [
+            "entrada actual (PID), parámetros",
+            "176"
+          ],
+          [
+            "entrada analógica",
+            ""
+          ],
+          [
+            "grupo de parámetros.",
+            "128"
+          ],
+          [
+            "filtro, parámetros .",
+            "128"
+          ],
+          [
+            "inferior a min., parametro de fallo",
+            "151"
+          ],
+          [
+            "límite de fallo, parámetros.",
+            "153"
+          ],
+          [
+            "máximo, parámetros",
+            "128"
+          ],
+          [
+            "mínimo, parámetros",
+            "128"
+          ],
+          [
+            "parámetro de datos.",
+            "112"
+          ],
+          [
+            "pérdida, códigos de fallo.",
+            "265"
+          ],
+          [
+            "rearme. auto. inferior a mín., parámetro",
+            "155"
+          ]
+        ],
+        [
+          [
+            "entrada digital",
+            ""
+          ],
+          [
+            "conexiones",
+            "28"
+          ],
+          [
+            "en fallo, parametros de historial",
+            "117"
+          ],
+          [
+            "especificaciones .",
+            "29"
+          ],
+          [
+            "estado, parámetro de datos",
+            "112"
+          ],
+          [
+            "error serie 1 (código de fallo 28)",
+            "217"
+          ],
+          [
+            "error serie 1, código de fallo",
+            "267"
+          ],
+          [
+            "errores CRC (recuento), parámetro",
+            "186"
+          ],
+          [
+            "errores de trama (recuento), parámetro",
+            "186"
+          ],
+          [
+            "escalado",
+            ""
+          ],
+          [
+            "referencia, BCI, perfil ABB drives.",
+            "236"
+          ],
+          [
+            "referencia, BCI, perfil DCU.",
+            "236"
+          ],
+          [
+            "escalado de referencia",
+            ""
+          ],
+          [
+            "ABC, perfil ABB drives",
+            "256"
+          ],
+          [
+            "ABC, perfil genérico",
+            "260"
+          ],
+          [
+            "BCI, perfil ABB Drives",
+            "236"
+          ],
+          [
+            "BCI, perfil DCU.",
+            "236"
+          ],
+          [
+            "especificaciones",
+            "283"
+          ],
+          [
+            "alimentación de entrada .",
+            "287"
+          ],
+          [
+            "conexiones de control",
+            "306"
+          ],
+          [
+            "red",
+            "287"
+          ],
+          [
+            "Especificaciones IEC",
+            ""
+          ],
+          [
+            "véase especificaciones",
+            ""
+          ],
+          [
+            "especificaciones NEMA",
+            ""
+          ],
+          [
+            "véase especificaciones",
+            ""
+          ],
+          [
+            "estado en fallo, parámetro historial.",
+            "117"
+          ],
+          [
+            "Estándar",
+            ""
+          ],
+          [
+            "macro Estándar (por defecto).",
+            "82"
+          ],
+          [
+            "F",
+            ""
+          ],
+          [
+            "factor conv CO2",
+            ""
+          ],
+          [
+            "veáse ahorro de energía",
+            ""
+          ],
+          [
+            "fallo",
+            ""
+          ],
+          [
+            "funciones, grupo de parámetros.",
+            "151"
+          ],
+          [
+            "anterior, parámetro de historial",
+            "117"
+          ],
+          [
+            "historial, grupo de parámetros",
+            "117"
+          ],
+          [
+            "códigos .",
+            "264"
+          ],
+          [
+            "códigos, parámetros de datos",
+            "116"
+          ],
+          [
+            "estado de entrada digital en, parámetro de"
+          ],
+          [
+            "historial .",
+            "117"
+          ],
+          [
+            "estado en, parámetro de historial.",
+            "117"
+          ],
+          [
+            "fallo com. (BCE).",
+            "213"
+          ],
+          [
+            "FBA comm",
+            "248"
+          ],
+          [
+            "frecuencia en, parametro de historial",
+            "117"
+          ],
+          [
+            "historial",
+            "271"
+          ],
+          [
+            "intensidad en, parametro de historial",
+            "117"
+          ],
+          [
+            "listado .",
+            "264"
+          ],
+          [
+            "modo (Panel de control asistente) 53,",
+            "264"
+          ],
+          [
+            "modo (Panel de control básico) 73,",
+            "264"
+          ],
+          [
+            "par en, parámetro de historial",
+            "117"
+          ],
+          [
+            "rearme",
+            "270"
+          ],
+          [
+            "registro (Panel de control asistente).",
+            "65"
+          ],
+          [
+            "restaurar.",
+            "136"
+          ],
+          [
+            "selec. de restauración, parámetro",
+            "133"
+          ],
+          [
+            "tensión en, parámetro de historial",
+            "117"
+          ],
+          [
+            "tiempo de, parámetros de historial .",
+            "117"
+          ],
+          [
+            "último, parámetro de historial .",
+            "117"
+          ],
+          [
+            "velocidad en, parámetro de historial",
+            "117"
+          ],
+          [
+            "fallo externo",
+            ""
+          ],
+          [
+            "códigos de fallo",
+            "266"
+          ],
+          [
+            "parámetros",
+            "151"
+          ],
+          [
+            "rearme automático, parámetro .",
+            "155"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "ACS550-01/U1 Manual del Usuario\n326\nfallo térmico, código de fallo\n266\nfallo tierra\ncódigo de fallo.\n266\nparámetro\n153\nfallos anteriores, parámetros de historial\n117\nfase de red, código de fallo\n267\nfecha\nvéase ajuste fecha y hora (Panel de control\nasistente)\nfecha de prueba, parámetro\n158\nFiltro EMC externo\n292\nFiltro EMC interno\n27, 291, 292, 319\nfirmware\ncompatibilidad .\n13\npanel, versión\n55\nversión, parámetro\n70\nFlashDrop\nconexión\n25\nmacro aplicación, parámetro.\n109\nvista parámetros, parámetro.\n136\nflecha (Panel de control asistente)\n53\nformación.\n333\nformato de visualización (PID), parámetro\n173\nforzar disparo, código de fallo\n267\nfrecuencia de carga, ver curva carga usuario\nfrecuencia de conmutación\n295\ncontrol, parámetro.\n149\nderrateo\n286\nparámetro\n149\nfrecuencia punto ruptura, parámetro de fallo\n152\nfrenado\ncableado\n304\ncomponentes\n301\ndisipación de calor de las resistencias\n304\nprotección frente a una resistencia recalentada .\n305\nselección de choppers/resistencias de frenado .\n301\nfrenado flujo, parámetro\n148\nfuente de corrección (PID), parámetro\n181\nfunciones temporizadas\ngrupo de parámetros\n164\nautocambio, parámetro\n203\ncontrol de velocidad\n127\nfuente, parámetro\n166\nhabilitar, parámetro.\n165\nhora de inicio, parámetro\n165\nhora de paro, parámetro .\n165\nreforzador, parámetro .\n166\nfusibles\nconvertidores 208 ... 240 V\n288\nconvertidores 380 ... 480 V.\n288\nconvertidores 500 ... 600 V.\n289\nG\nganancia (PID), parámetro\n172\nganancia proporcional, parámetro.\n144\ngolpes, prueba de tensión.\n314\nguardar cambios, parámetro\n134\nH\nherramientas.\n18\nhumedad relativa\n313\nlímite ambiental\nlímite de transporte\n313\nI\nid de estación (RS-232), parámetro.\n186\nidioma, parámetro.\n109\ninformación en Internet.\n333\ninformación, grupo de parámetros\n158\ninstalación\ncompatibilidad\n18\ndiagrama de flujo\n15\nentorno.\n19\nherramientas\n18\nlista de comprobación\n36\nmontaje del convertidor\n22\npreparación\n16\nprocedimientos.\n15\nsinopsis del cableado.\n23\nubicación\n19\nintensidad\ncódigo de especificación\n17\nen fallo, parámetro de historial.\n117\nlímite máx., parámetro\n137\nmedición, código de fallo\n267\nparámetro de datos\n111\nInternet, información en\n333\ninversión del valor de error (PID), parámetro .\n173\nK\nkit de conducto\n23\nkit de pasacables\n23\nkWh\ncontador, parámetro de datos\n111\nL\nLED\nen el Panel de control asistente. . . 52, 263, 264\nen la estructura del convertidor . .. 25, 263, 264\nlímite de temperatura del dispositivo, código de fallo\n265\nlímites de radiación, conducida\nEN 61800-3\n300\nlímites, grupo de parámetros\n137\nlistado de rangos de parámetros\n95\nlistado de resoluciones de parámetros .\n95\nLOC (control local)\nindicación en el Panel de control asistente\n. 53\nindicación en el Panel de control básico\n72\nM\nmacro 3 hilos\n83\nmacro alterna\n84\nmacro aplicación, parámetro\n109\nmacro de potenciómetro del motor.\n85\nmacro manual-auto.\n86\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "fallo térmico, código de fallo",
+            "266"
+          ],
+          [
+            "fallo tierra",
+            ""
+          ],
+          [
+            "código de fallo.",
+            "266"
+          ],
+          [
+            "parámetro",
+            "153"
+          ],
+          [
+            "fallos anteriores, parámetros de historial",
+            "117"
+          ],
+          [
+            "fase de red, código de fallo",
+            "267"
+          ],
+          [
+            "fecha"
+          ],
+          [
+            "véase ajuste fecha y hora (Panel de control",
+            ""
+          ],
+          [
+            "asistente)",
+            ""
+          ],
+          [
+            "fecha de prueba, parámetro",
+            "158"
+          ],
+          [
+            "Filtro EMC externo",
+            "292"
+          ],
+          [
+            "Filtro EMC interno 27, 291, 292,",
+            "319"
+          ],
+          [
+            "firmware",
+            ""
+          ],
+          [
+            "compatibilidad .",
+            "13"
+          ],
+          [
+            "panel, versión",
+            "55"
+          ],
+          [
+            "versión, parámetro",
+            "70"
+          ],
+          [
+            "FlashDrop",
+            ""
+          ],
+          [
+            "conexión",
+            "25"
+          ],
+          [
+            "macro aplicación, parámetro.",
+            "109"
+          ],
+          [
+            "vista parámetros, parámetro.",
+            "136"
+          ],
+          [
+            "flecha (Panel de control asistente)",
+            "53"
+          ],
+          [
+            "formación.",
+            "333"
+          ],
+          [
+            "formato de visualización (PID), parámetro",
+            "173"
+          ],
+          [
+            "forzar disparo, código de fallo",
+            "267"
+          ],
+          [
+            "frecuencia de carga, ver curva carga usuario"
+          ],
+          [
+            "frecuencia de conmutación",
+            "295"
+          ],
+          [
+            "control, parámetro.",
+            "149"
+          ],
+          [
+            "derrateo",
+            "286"
+          ],
+          [
+            "parámetro",
+            "149"
+          ],
+          [
+            "frecuencia punto ruptura, parámetro de fallo",
+            "152"
+          ],
+          [
+            "frenado",
+            ""
+          ],
+          [
+            "cableado",
+            "304"
+          ],
+          [
+            "componentes",
+            "301"
+          ],
+          [
+            "disipación de calor de las resistencias",
+            "304"
+          ],
+          [
+            "protección frente a una resistencia recalentada . 305"
+          ],
+          [
+            "selección de choppers/resistencias de frenado ."
+          ],
+          [
+            "301"
+          ],
+          [
+            "frenado flujo, parámetro",
+            "148"
+          ],
+          [
+            "fuente de corrección (PID), parámetro",
+            "181"
+          ],
+          [
+            "funciones temporizadas",
+            ""
+          ],
+          [
+            "grupo de parámetros",
+            "164"
+          ],
+          [
+            "autocambio, parámetro",
+            "203"
+          ],
+          [
+            "control de velocidad",
+            "127"
+          ],
+          [
+            "fuente, parámetro",
+            "166"
+          ],
+          [
+            "habilitar, parámetro.",
+            "165"
+          ],
+          [
+            "hora de inicio, parámetro",
+            "165"
+          ],
+          [
+            "hora de paro, parámetro .",
+            "165"
+          ],
+          [
+            "reforzador, parámetro .",
+            "166"
+          ],
+          [
+            "fusibles",
+            ""
+          ],
+          [
+            "convertidores 208 ... 240 V",
+            "288"
+          ],
+          [
+            "convertidores 380 ... 480 V.",
+            "288"
+          ],
+          [
+            "convertidores 500 ... 600 V.",
+            "289"
+          ],
+          [
+            "G",
+            ""
+          ],
+          [
+            "ganancia (PID), parámetro",
+            "172"
+          ],
+          [
+            "ganancia proporcional, parámetro.",
+            "144"
+          ],
+          [
+            "golpes, prueba de tensión.",
+            "314"
+          ],
+          [
+            "guardar cambios, parámetro",
+            "134"
+          ]
+        ],
+        [
+          [
+            "H",
+            ""
+          ],
+          [
+            "herramientas.",
+            "18"
+          ],
+          [
+            "humedad relativa",
+            ""
+          ],
+          [
+            "límite ambiental",
+            "313"
+          ],
+          [
+            "límite de transporte",
+            "313"
+          ],
+          [
+            "I",
+            ""
+          ],
+          [
+            "id de estación (RS-232), parámetro.",
+            "186"
+          ],
+          [
+            "idioma, parámetro.",
+            "109"
+          ],
+          [
+            "información en Internet.",
+            "333"
+          ],
+          [
+            "información, grupo de parámetros",
+            "158"
+          ],
+          [
+            "instalación",
+            ""
+          ],
+          [
+            "compatibilidad",
+            "18"
+          ],
+          [
+            "diagrama de flujo",
+            "15"
+          ],
+          [
+            "entorno.",
+            "19"
+          ],
+          [
+            "herramientas",
+            "18"
+          ],
+          [
+            "lista de comprobación",
+            "36"
+          ],
+          [
+            "montaje del convertidor",
+            "22"
+          ],
+          [
+            "preparación",
+            "16"
+          ],
+          [
+            "procedimientos.",
+            "15"
+          ],
+          [
+            "sinopsis del cableado.",
+            "23"
+          ],
+          [
+            "ubicación",
+            "19"
+          ],
+          [
+            "intensidad",
+            ""
+          ],
+          [
+            "código de especificación",
+            "17"
+          ],
+          [
+            "en fallo, parámetro de historial.",
+            "117"
+          ],
+          [
+            "límite máx., parámetro",
+            "137"
+          ],
+          [
+            "medición, código de fallo",
+            "267"
+          ],
+          [
+            "parámetro de datos",
+            "111"
+          ],
+          [
+            "Internet, información en",
+            "333"
+          ],
+          [
+            "inversión del valor de error (PID), parámetro .",
+            "173"
+          ],
+          [
+            "K",
+            ""
+          ],
+          [
+            "kit de conducto",
+            "23"
+          ],
+          [
+            "kit de pasacables",
+            "23"
+          ],
+          [
+            "kWh",
+            ""
+          ],
+          [
+            "contador, parámetro de datos",
+            "111"
+          ],
+          [
+            "L",
+            ""
+          ],
+          [
+            "LED",
+            ""
+          ],
+          [
+            "en el Panel de control asistente. . . 52, 263,",
+            "264"
+          ],
+          [
+            "en la estructura del convertidor . .. 25, 263,",
+            "264"
+          ],
+          [
+            "límite de temperatura del dispositivo, código de\n265",
+            "fallo"
+          ],
+          [
+            "límites de radiación, conducida EN 61800-3",
+            ""
+          ],
+          [
+            "300"
+          ],
+          [
+            "límites, grupo de parámetros",
+            "137"
+          ],
+          [
+            "listado de rangos de parámetros",
+            "95"
+          ],
+          [
+            "listado de resoluciones de parámetros .",
+            "95"
+          ],
+          [
+            "LOC (control local)",
+            ""
+          ],
+          [
+            "indicación en el Panel de control asistente",
+            ". 53"
+          ],
+          [
+            "indicación en el Panel de control básico",
+            "72"
+          ],
+          [
+            "M",
+            ""
+          ],
+          [
+            "macro 3 hilos",
+            "83"
+          ],
+          [
+            "macro alterna",
+            "84"
+          ],
+          [
+            "macro aplicación, parámetro",
+            "109"
+          ],
+          [
+            "macro de potenciómetro del motor.",
+            "85"
+          ],
+          [
+            "macro manual-auto.",
+            "86"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "ACS550-01/U1 Manual del Usuario\n327\nmacros\n3 hilos\n83\nalterna\n84\ncontrol del par\n89\ncontrol PID\n87\nEstándar ABB (por defecto)\n82\nmanual-auto\n86\nPFC.\n88\npotenciómetro del motor.\n85\nseries de parámetros de usuario.\n92\nparámetros no modificados.\n81\nvalores por defecto para parámetros\n93\nmacros de aplicación\nvéase macros\nmagnetización de identificación.\n110\nmagnetización, identificación.\n110\nmanejo\nPanel de control asistente.\n53\nPanel de control básico.\n73\nmantenimiento\ncondensadores\n281\ndesencadenantes, grupo de parámetros\n150\ndisipador\n277\nintervalos.\n277\npanel de control.\n281\nventilador interno del armario\n280\nventilador principal\n278\nmantenimiento del ventilador.\n280\nmanuales\ncomentarios.\n333\nlista de manuales del ACS550\n2\nMarcado CE.\n316\nmarcado C-Tick\n317\nMarcado EAC\n318\nmarcado UL/CSA.\n317\nmarcha\ngrupo de parámetros.\n139\ncontrol, com. ABC.\n245\ncontrol, com. BCE\n209\ndemora (PFC), parámetro\n202\ndemora motor aux.\n194\ndemora, parámetro\n141\nfrecuencia (PFC), parámetros.\n193\nfunción, parámetro\n139\ninhibir, parámetro\n140\nintensidad sobrepar, parámetro\n140\nmotor aux. (PFC), parámetros\n193\nseleccionar fuente de inicio, parámetro\n135\ntiempo magnetización CC, parámetro.\n139\nmarcha id\nfallo, código de fallo\n266\nparámetro\n110\nrealización .\n48\nmarcha/paro\ngrupo de parámetros.\n139\ncon el Panel de control asistente\n56\ncon el Panel de control básico\n74\nmarcha/paro/dir, grupo de parámetros\n118\nmateriales\n314\nmáx. actual (PID), parámetros.\n176\nmáxima\nen fallo, parámetro de historial .\n117\nlímite máx., parámetro\n137\nlímite mín., parámetro\n137\nparámetro de datos\n111\ny dirección (con signo), parámetro de datos\n111\nmáximo\nfrecuencia, parámetro\n138\nlímite de par, parámetros\n138\nselec. de par, parámetro\n138\nmecánico\nángulo, parámetro de datos\n113\nrevoluciones, parámetro de datos\n113\nmensajes correct. (recuento), parámetro\n186\nmenú principal\nPanel de control asistente\n54\nPanel de control básico\n73\nmín. actual (PID), parámetros.\n176\nfrecuencia, parámetro\n138\nlímite de par, parámetros\n138\nselec. de par, parámetro\n138\nbobinas BCI\n220\ncaracterísticas soportadas por BCE.\n218\ndatos técnicos BCE\n218\ndetalles de correlación BCI\n219\ndireccionamiento BCI, convención\n219\nentradas discretas BCI.\n221\nregistros de entrada BCI\n222\nregistros de retención BCI\n223\nmínimo\nmodbus\nresumen de correlaciones BCI .\n219\nmodo de Asistentes (Panel de control asistente) . 61\nmodo de control vectorial sin sensor\n109\nmodo de copia (Panel de control básico)\n79\nmodo de marcha\narranque girando\n139\nautomático\n139\nmagnetización CC\n139\nsobrepar automático.\n139\nmodo de parámetro\nPanel de control asistente\n59\nPanel de control básico\n77\nmodo de salida\nPanel de control asistente\n57\nPanel de control básico\n75\nmodo escalar:frecuencia.\n109\nmodo temporiz., parámetro.\n127\nmódulo comun. externa, grupo de parámetros\nvéase ABC, par. convertidor\nmontaje\n20\nbrida .\ndimensiones\n310\nplantilla .\n20\nMontaje con brida\n20\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "macros",
+            ""
+          ],
+          [
+            "3 hilos",
+            "83"
+          ],
+          [
+            "alterna",
+            "84"
+          ],
+          [
+            "control del par",
+            "89"
+          ],
+          [
+            "control PID",
+            "87"
+          ],
+          [
+            "Estándar ABB (por defecto)",
+            "82"
+          ],
+          [
+            "manual-auto",
+            "86"
+          ],
+          [
+            "PFC.",
+            "88"
+          ],
+          [
+            "potenciómetro del motor.",
+            "85"
+          ],
+          [
+            "series de parámetros de usuario.",
+            "92"
+          ],
+          [
+            "parámetros no modificados.",
+            "81"
+          ],
+          [
+            "valores por defecto para parámetros",
+            "93"
+          ],
+          [
+            "macros de aplicación",
+            ""
+          ],
+          [
+            "véase macros",
+            ""
+          ],
+          [
+            "magnetización de identificación.",
+            "110"
+          ],
+          [
+            "magnetización, identificación.",
+            "110"
+          ],
+          [
+            "manejo",
+            ""
+          ],
+          [
+            "Panel de control asistente.",
+            "53"
+          ],
+          [
+            "Panel de control básico.",
+            "73"
+          ],
+          [
+            "mantenimiento",
+            ""
+          ],
+          [
+            "condensadores",
+            "281"
+          ],
+          [
+            "desencadenantes, grupo de parámetros",
+            "150"
+          ],
+          [
+            "disipador",
+            "277"
+          ],
+          [
+            "intervalos.",
+            "277"
+          ],
+          [
+            "panel de control.",
+            "281"
+          ],
+          [
+            "ventilador interno del armario",
+            "280"
+          ],
+          [
+            "ventilador principal",
+            "278"
+          ],
+          [
+            "mantenimiento del ventilador.",
+            "280"
+          ],
+          [
+            "manuales",
+            ""
+          ],
+          [
+            "comentarios.",
+            "333"
+          ],
+          [
+            "lista de manuales del ACS550",
+            "2"
+          ],
+          [
+            "Marcado CE.",
+            "316"
+          ],
+          [
+            "marcado C-Tick",
+            "317"
+          ],
+          [
+            "Marcado EAC",
+            "318"
+          ],
+          [
+            "marcado UL/CSA.",
+            "317"
+          ],
+          [
+            "marcha",
+            ""
+          ],
+          [
+            "grupo de parámetros.",
+            "139"
+          ],
+          [
+            "control, com. ABC.",
+            "245"
+          ],
+          [
+            "control, com. BCE",
+            "209"
+          ],
+          [
+            "demora (PFC), parámetro",
+            "202"
+          ],
+          [
+            "demora motor aux.",
+            "194"
+          ],
+          [
+            "demora, parámetro",
+            "141"
+          ],
+          [
+            "frecuencia (PFC), parámetros.",
+            "193"
+          ],
+          [
+            "función, parámetro",
+            "139"
+          ],
+          [
+            "inhibir, parámetro",
+            "140"
+          ],
+          [
+            "intensidad sobrepar, parámetro",
+            "140"
+          ],
+          [
+            "motor aux. (PFC), parámetros",
+            "193"
+          ],
+          [
+            "seleccionar fuente de inicio, parámetro",
+            "135"
+          ],
+          [
+            "tiempo magnetización CC, parámetro.",
+            "139"
+          ],
+          [
+            "marcha id",
+            ""
+          ],
+          [
+            "fallo, código de fallo",
+            "266"
+          ],
+          [
+            "parámetro",
+            "110"
+          ],
+          [
+            "realización .",
+            "48"
+          ],
+          [
+            "marcha/paro",
+            ""
+          ],
+          [
+            "grupo de parámetros.",
+            "139"
+          ],
+          [
+            "con el Panel de control asistente",
+            "56"
+          ],
+          [
+            "con el Panel de control básico",
+            "74"
+          ],
+          [
+            "marcha/paro/dir, grupo de parámetros",
+            "118"
+          ],
+          [
+            "materiales",
+            "314"
+          ],
+          [
+            "máx. actual (PID), parámetros.",
+            "176"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "328\nACS550-01/U1 Manual del Usuario\nmotor\nbloqueo, código de fallo\n266\ncarga a vel. cero de curva de carga\n152\ncompatibilidad .\n18\ncomprobación del aislamiento\n30\ncurva de carga máx., parámetro de fallo\n152\ndesencadenantes del mantenimiento\n150\nen fallo, parámetro de historial\n117\nfase, código de fallo\n268\nfrecuencia nominal, parámetro\n110\nfrecuencia punto ruptura de curva de carga\n152\nintensidad nominal, parámetro\n110\nmarcha id, parámetro\n110\npotencia nominal, parámetro\n110\nprotección térmica\n298\nrequisitos\n18\ntensión nominal, parámetro\n110\nvelocidad nominal, parámetro.\n110\nmotor auxiliar\nvéase motor, auxiliar\nmotor, auxiliar\ndemora arranque aux. (PFC), parámetro .. 194\ndemora paro aux. (PFC), parámetro.\n194\nnúmero de aux., parámetro\n195\norden marcha aux, parámetro.\n203\nmotores\nvarios\n285, 295\nMWh\nconsumo de potencia, desencadenante de\nmantenimiento.\n150\ncontador, parámetro de datos.\n113\nN\nniveles de contaminación\nlímites ambientales .\n314\nlímites de transporte\n314\nnormas\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n316\nC22.2 N.º 14\n316\nEN 50178\n316\nIEC 60664-1\n316\nIEC/EN 60204-1\n316\nIEC/EN 60529\n316\nIEC/EN 61000-3-12\n316\nIEC/EN 61800-3\n316\nIEC/EN 61800-5-1\n316\nMarcado CE\n316\nmarcado CSA\n317\nmarcado C-Tick.\n317\nMarcado UL\n317\nUL 508C\n316\nNPN.\n29\nnúmero de serie\n16, 17\nO\nopciones\n17\ngrupo de parámetros\n204\ncódigo\n17\noptimización fluj., parámetro\n148\nP\npanel\nvéase panel de control\npanel control (Asistente)\nmodo fecha y hora\n66\npanel de control\n51\nbloqueo de parámetros, parámetro\n133\ncódigo acceso, parámetro\n133\ncompatibilidad del manual\n51\ncontrol de referencia, parámetro\n120\nerror de comunic., parámetro de fallo\n151\ngráfico de barra\n159, 160\nindicación de coma decimal (formato), parámetros\n159\nindicación máx., parámetros\n160\nindicación mín., parámetros .\n160\nmantenimiento\n281\nrequisitos de cables\n307\nselección de visualización, parámetros\n159\nseñal máx., parámetros\n159\nseñal mín., parámetros\n159\nunidades de visualización, parámetros\n160\nvariables de proceso de visualización, grupo de\nparámetros .\n159\npanel de control (Asistente)\n52\nayuda\n55\ncomo realizar tareas comunes .\n54\ncontraste de la pantalla\n58\ndirección de giro.\n53, 57\nflecha\n53\nlínea de estado (LOC/REM, flecha)\n53\nmanejo\n53\nmarcha/paro\n56\nmenu principal\n54\nModo de ajustes de E/S\n71\nmodo de Asistentes\n61\nmodo de copia de seguridad de parámetros . 68\nmodo de fallo\n53, 264\nmodo de parámetro\n59\nmodo de parámetros modificados\n64\nmodo de registrador de fallos.\n65\nmodo de salida.\n57\npila\n281\nsinopsis\n52\nteclas multifunción\n52\npanel de control (Básico)\n72\ncódigos de alarma\n274\ncómo realizar tareas comunes .\n73\ndirección de giro.\n72, 74\nmanejo\n73\nmarcha/paro .\n74\nmenú principal\n73\nmodo de Copia.\n79\nmodo de fallo\n73, 264\nmodo de parámetro\n77\nmodo de Referencia.\n76\nmodo de salida.\n75\nsinopsis\n72\nPanel de control asistente\nvéase panel de control (Asistente)\nPanel de control básico\nvéase panel de control (Básico)\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "motor",
+            ""
+          ],
+          [
+            "bloqueo, código de fallo",
+            "266"
+          ],
+          [
+            "carga a vel. cero de curva de carga",
+            "152"
+          ],
+          [
+            "compatibilidad .",
+            "18"
+          ],
+          [
+            "comprobación del aislamiento",
+            "30"
+          ],
+          [
+            "curva de carga máx., parámetro de fallo",
+            "152"
+          ],
+          [
+            "desencadenantes del mantenimiento",
+            "150"
+          ],
+          [
+            "en fallo, parámetro de historial",
+            "117"
+          ],
+          [
+            "fase, código de fallo",
+            "268"
+          ],
+          [
+            "frecuencia nominal, parámetro",
+            "110"
+          ],
+          [
+            "frecuencia punto ruptura de curva de carga",
+            "152"
+          ],
+          [
+            "intensidad nominal, parámetro",
+            "110"
+          ],
+          [
+            "marcha id, parámetro",
+            "110"
+          ],
+          [
+            "potencia nominal, parámetro",
+            "110"
+          ],
+          [
+            "protección térmica",
+            "298"
+          ],
+          [
+            "requisitos",
+            "18"
+          ],
+          [
+            "tensión nominal, parámetro",
+            "110"
+          ],
+          [
+            "velocidad nominal, parámetro.",
+            "110"
+          ],
+          [
+            "motor auxiliar",
+            ""
+          ],
+          [
+            "véase motor, auxiliar",
+            ""
+          ],
+          [
+            "motor, auxiliar",
+            ""
+          ],
+          [
+            "demora arranque aux. (PFC), parámetro ..",
+            "194"
+          ],
+          [
+            "demora paro aux. (PFC), parámetro.",
+            "194"
+          ],
+          [
+            "número de aux., parámetro",
+            "195"
+          ],
+          [
+            "orden marcha aux, parámetro.",
+            "203"
+          ],
+          [
+            "motores",
+            ""
+          ],
+          [
+            "varios 285,",
+            "295"
+          ],
+          [
+            "MWh",
+            ""
+          ],
+          [
+            "consumo de potencia, desencadenante de",
+            ""
+          ],
+          [
+            "mantenimiento.",
+            "150"
+          ],
+          [
+            "contador, parámetro de datos.",
+            "113"
+          ],
+          [
+            "N",
+            ""
+          ],
+          [
+            "niveles de contaminación",
+            ""
+          ],
+          [
+            "límites ambientales .",
+            "314"
+          ],
+          [
+            "límites de transporte",
+            "314"
+          ],
+          [
+            "normas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+            "316"
+          ],
+          [
+            "C22.2 N.º 14",
+            "316"
+          ],
+          [
+            "EN 50178",
+            "316"
+          ],
+          [
+            "IEC 60664-1",
+            "316"
+          ],
+          [
+            "IEC/EN 60204-1",
+            "316"
+          ],
+          [
+            "IEC/EN 60529",
+            "316"
+          ],
+          [
+            "IEC/EN 61000-3-12",
+            "316"
+          ],
+          [
+            "IEC/EN 61800-3",
+            "316"
+          ],
+          [
+            "IEC/EN 61800-5-1",
+            "316"
+          ],
+          [
+            "Marcado CE",
+            "316"
+          ],
+          [
+            "marcado CSA",
+            "317"
+          ],
+          [
+            "marcado C-Tick.",
+            "317"
+          ],
+          [
+            "Marcado UL",
+            "317"
+          ],
+          [
+            "UL 508C",
+            "316"
+          ],
+          [
+            "NPN.",
+            "29"
+          ],
+          [
+            "número de serie",
+            "16, 17"
+          ],
+          [
+            "O",
+            ""
+          ],
+          [
+            "opciones",
+            "17"
+          ],
+          [
+            "grupo de parámetros",
+            "204"
+          ],
+          [
+            "código",
+            "17"
+          ],
+          [
+            "optimización fluj., parámetro",
+            "148"
+          ]
+        ],
+        [
+          [
+            "panel control (Asistente) modo fecha y hora",
+            "66"
+          ],
+          [
+            "panel de control",
+            "51"
+          ],
+          [
+            "bloqueo de parámetros, parámetro",
+            "133"
+          ],
+          [
+            "código acceso, parámetro",
+            "133"
+          ],
+          [
+            "compatibilidad del manual",
+            "51"
+          ],
+          [
+            "control de referencia, parámetro",
+            "120"
+          ],
+          [
+            "error de comunic., parámetro de fallo",
+            "151"
+          ],
+          [
+            "gráfico de barra 159,",
+            "160"
+          ],
+          [
+            "indicación de coma decimal (formato), parámetros 159"
+          ],
+          [
+            "indicación máx., parámetros",
+            "160"
+          ],
+          [
+            "indicación mín., parámetros .",
+            "160"
+          ],
+          [
+            "mantenimiento",
+            "281"
+          ],
+          [
+            "requisitos de cables",
+            "307"
+          ],
+          [
+            "selección de visualización, parámetros",
+            "159"
+          ],
+          [
+            "señal máx., parámetros",
+            "159"
+          ],
+          [
+            "señal mín., parámetros",
+            "159"
+          ],
+          [
+            "unidades de visualización, parámetros",
+            "160"
+          ],
+          [
+            "variables de proceso de visualización, grupo",
+            "de"
+          ],
+          [
+            "parámetros .",
+            "159"
+          ],
+          [
+            "panel de control (Asistente)",
+            "52"
+          ],
+          [
+            "ayuda",
+            "55"
+          ],
+          [
+            "como realizar tareas comunes .",
+            "54"
+          ],
+          [
+            "contraste de la pantalla",
+            "58"
+          ],
+          [
+            "dirección de giro. 53,",
+            "57"
+          ],
+          [
+            "flecha",
+            "53"
+          ],
+          [
+            "línea de estado (LOC/REM, flecha)",
+            "53"
+          ],
+          [
+            "manejo",
+            "53"
+          ],
+          [
+            "marcha/paro",
+            "56"
+          ],
+          [
+            "menu principal",
+            "54"
+          ],
+          [
+            "Modo de ajustes de E/S",
+            "71"
+          ],
+          [
+            "modo de Asistentes",
+            "61"
+          ],
+          [
+            "modo de copia de seguridad de parámetros",
+            ". 68"
+          ],
+          [
+            "modo de fallo 53,",
+            "264"
+          ],
+          [
+            "modo de parámetro",
+            "59"
+          ],
+          [
+            "modo de parámetros modificados",
+            "64"
+          ],
+          [
+            "modo de registrador de fallos.",
+            "65"
+          ],
+          [
+            "modo de salida.",
+            "57"
+          ],
+          [
+            "pila",
+            "281"
+          ],
+          [
+            "sinopsis",
+            "52"
+          ],
+          [
+            "teclas multifunción",
+            "52"
+          ],
+          [
+            "panel de control (Básico)",
+            "72"
+          ],
+          [
+            "códigos de alarma",
+            "274"
+          ],
+          [
+            "cómo realizar tareas comunes .",
+            "73"
+          ],
+          [
+            "dirección de giro. 72,",
+            "74"
+          ],
+          [
+            "manejo",
+            "73"
+          ],
+          [
+            "marcha/paro .",
+            "74"
+          ],
+          [
+            "menú principal",
+            "73"
+          ],
+          [
+            "modo de Copia.",
+            "79"
+          ],
+          [
+            "modo de fallo 73,",
+            "264"
+          ],
+          [
+            "modo de parámetro",
+            "77"
+          ],
+          [
+            "modo de Referencia.",
+            "76"
+          ],
+          [
+            "modo de salida.",
+            "75"
+          ],
+          [
+            "sinopsis",
+            "72"
+          ],
+          [
+            "Panel de control asistente",
+            ""
+          ],
+          [
+            "véase panel de control (Asistente)",
+            ""
+          ],
+          [
+            "Panel de control básico véase panel de control (Básico)",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "ACS550-01/U1 Manual del Usuario\n329\npar\nPFC\naument. rampa, parámetro\ndismin. rampa, parámetro\n146\ncontrol, grupo de parámetros\n192\n146\nbaja frecuencia, parámetros.\n194\nen fallo, parámetro de historial\n117\ndemora de marcha, parámetro.\n202\nintensidad sobrepar, parámetro\n140\ndemora marcha motor aux., parámetro\n194\nlímite máx., parámetro\n138\ndemora paro motor aux., parámetro.\n194\nlímite mín., parámetros\n138\nescalón de referencia, parámetros.\n192\nparámetro de datos .\n111\nfrecuencia de marcha, parámetros.\n193\nselec. límite máx., parámetro\n138\nhabilitar, parámetro\n203\nselec. límite mín., parámetro.\n138\nmacro .\n88\npar de carga, ver curva carga usuario\nnúmero de motores aux., parámetro\n195\npar de rampas (acel/decel), parámetro\n142\nnúmero de motores, parámetro\norden marcha aux, parámetro\n203\nparámetro\n203\nbus de campo, código de fallo\n269\ntiempo de aceleración, parámetro\ntiempo de deceleración, parámetro\n203\n203\ncambiar bloqueo .\n133\ncurva de carga del usuario, código de fallo.\n270\nPID\nseries de proceso, grupos de parámetros\ndescripciones\n109\n171\nE/S PFC, código de fallo\n270\nexterno / corrección, grupo de parámetros\n0% (señal actual), parámetro .\n180\nescala de entrada analógica, código de fallo 269\n174\nescala de salida analógica, código de fallo. 269\nactivar fuente externa, parámetro\n180\nguardar cambios\n134\najuste, parámetro\n180\nhz rpm, código de fallo\n269\ncoma decimal (señal actual), parámetro\n173\nlistado (rangos, resoluciones, valores por defecto)\ndemora despertar, parámetro.\ndemora dormir, parámetro\n177\n95\n177\nmodo PFC, código de fallo\n269\ndesviación despertar, parámetro\n177\nPCU 1 (unidad de control de potencia), código de\ndesviación, parámetro de datos\n112\nfallo\n269\nescala trim, parámetro\n180\nPCU 2 (unidad de control de potencia), código de\nescalado (0 ... 100%), parámetros\n174\nfallo\n269\nfiltro de derivación, parámetro\n173\nref. PFC neg., código de fallo\n269\nfuente de corrección, parámetro\n181\nsalida de relé externa, código de fallo.\n269\nfuente del punto de consigna, activar com. BCE\nversión de tabla, parámetro\n158\n213\nvista, parámetro\n136\nfuente del punto de consigna, comunic. ABC,\nparámetros modificados (Panel de control asistente)\nactivar .\n248\n64\nganancia, parámetro\n172\nparidad\ninversión de realim. de errores, parámetro\nmacro de control. .\n173\n87\n(RS-232), parámetro\n186\nmodo trim, parámetro .\n180\nerrores (recuento), parámetro\n186\nmultiplicador de realim., parámetro\n175\nparo\nnivel dormir, parámetro\n177\ngrupo de parámetros.\n139\nprocedimiento de ajuste\n172\ncontrol intensidad CC, parámetro\n140\npunto consig. interno, parámetro\n175\ndemora motor aux.\n194\npunto consig. máximo, parámetro\n175\ndispositivos de emergencia.\n289\npunto consig. mínimo, parámetro.\n175\nfrenado flujo, parámetro\n148\npunto de consigna, parámetro de datos.\n112\nfunción, parámetro\n139\nrealimentación, parámetro de datos.\n112\nmotor aux. (PFC), parámetros\n194\nsalida, parámetro de datos.\n112\nref. intensidad CC, parámetro.\n140\nselec. de realim., parámetro.\n175\nselec. emergencia, parámetro.\n140\nselec. entrada actual, parámetros\n176\ntiem. frenado CC, parámetro.\n140\nselec. punto consig., parámetro\n174\nPELV (tensión muy baja de protección)\n29\nselec. serie de parám., parámetro\n178\npérdida del panel, código de fallo\n266\nselección dormir, parámetro.\n177\nperfil genérico, ABC\ntiempo derivación, parámetro.\n173\nadaptación a escala del valor actual .\n261\nunidades (señal actual), parámetro\n173\ncorrelacion del valor actual\n261\nvalor actual máx., parámetros\n176\nescalado de referencia\n260\nvalor actual mín., parámetros.\n176\nespecificaciones técnicas\n260\nvalor com. 1, parámetro de datos.\n114\nsinopsis .\n260\nvalor com. 2, parámetro de datos.\n114\nperfiles, com. BCI\n219\npila (Panel de control asistente)\n281\npeso.\n312\nplanificación\ncom. BCE .\nFBA comm\n206\n243\nplantilla, montaje .\n20\nPNP\n29\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "par",
+            "",
+            "PFC",
+            ""
+          ],
+          [
+            "aument. rampa, parámetro",
+            "146",
+            "control, grupo de parámetros",
+            "192"
+          ],
+          [
+            "dismin. rampa, parámetro",
+            "146",
+            "baja frecuencia, parámetros.",
+            "194"
+          ],
+          [
+            "en fallo, parámetro de historial",
+            "117",
+            "demora de marcha, parámetro.",
+            "202"
+          ],
+          [
+            "intensidad sobrepar, parámetro",
+            "140",
+            "demora marcha motor aux., parámetro",
+            "194"
+          ],
+          [
+            "límite máx., parámetro",
+            "138",
+            "demora paro motor aux., parámetro.",
+            "194"
+          ],
+          [
+            "límite mín., parámetros",
+            "138",
+            "escalón de referencia, parámetros.",
+            "192"
+          ],
+          [
+            "parámetro de datos .",
+            "111",
+            "frecuencia de marcha, parámetros.",
+            "193"
+          ],
+          [
+            "selec. límite máx., parámetro",
+            "138",
+            "habilitar, parámetro",
+            "203"
+          ],
+          [
+            "selec. límite mín., parámetro.",
+            "138",
+            "macro .",
+            "88"
+          ],
+          [
+            "par de carga, ver curva carga usuario",
+            "",
+            "número de motores aux., parámetro",
+            "195"
+          ],
+          [
+            "par de rampas (acel/decel), parámetro",
+            "142",
+            "número de motores, parámetro",
+            "203"
+          ],
+          [
+            "parámetro",
+            "",
+            "orden marcha aux, parámetro",
+            "203"
+          ],
+          [
+            "bus de campo, código de fallo",
+            "269",
+            "tiempo de aceleración, parámetro",
+            "203"
+          ],
+          [
+            "cambiar bloqueo .",
+            "133",
+            "tiempo de deceleración, parámetro",
+            "203"
+          ],
+          [
+            "curva de carga del usuario, código de fallo.",
+            "270",
+            "PID",
+            ""
+          ],
+          [
+            "descripciones",
+            "109",
+            "series de proceso, grupos de parámetros",
+            "171"
+          ],
+          [
+            "E/S PFC, código de fallo",
+            "270",
+            "externo / corrección, grupo de parámetros",
+            "180"
+          ],
+          [
+            "escala de entrada analógica, código de fallo",
+            "269",
+            "0% (señal actual), parámetro .",
+            "174"
+          ],
+          [
+            "escala de salida analógica, código de fallo.",
+            "269",
+            "activar fuente externa, parámetro",
+            "180"
+          ],
+          [
+            "guardar cambios",
+            "134",
+            "ajuste, parámetro",
+            "180"
+          ],
+          [
+            "hz rpm, código de fallo",
+            "269",
+            "coma decimal (señal actual), parámetro",
+            "173"
+          ],
+          [
+            "listado (rangos, resoluciones, valores por",
+            "defecto)",
+            "demora despertar, parámetro.",
+            "177"
+          ],
+          [
+            "95",
+            "",
+            "demora dormir, parámetro",
+            "177"
+          ],
+          [
+            "modo PFC, código de fallo",
+            "269",
+            "desviación despertar, parámetro",
+            "177"
+          ],
+          [
+            "PCU 1 (unidad de control de potencia), código",
+            "de",
+            "desviación, parámetro de datos",
+            "112"
+          ],
+          [
+            "fallo",
+            "269",
+            "escala trim, parámetro",
+            "180"
+          ],
+          [
+            "PCU 2 (unidad de control de potencia), código",
+            "de",
+            "escalado (0 ... 100%), parámetros",
+            "174"
+          ],
+          [
+            "fallo",
+            "269",
+            "filtro de derivación, parámetro",
+            "173"
+          ],
+          [
+            "ref. PFC neg., código de fallo",
+            "269",
+            "fuente de corrección, parámetro",
+            "181"
+          ],
+          [
+            "salida de relé externa, código de fallo.",
+            "269",
+            "fuente del punto de consigna, activar com.",
+            "BCE"
+          ],
+          [
+            "versión de tabla, parámetro",
+            "158",
+            "213",
+            ""
+          ],
+          [
+            "vista, parámetro",
+            "136",
+            "fuente del punto de consigna, comunic. ABC,",
+            ""
+          ],
+          [
+            "parámetros modificados (Panel de control asistente)",
+            "activar .",
+            "248"
+          ],
+          [
+            "64",
+            "",
+            "ganancia, parámetro",
+            "172"
+          ],
+          [
+            "paridad",
+            "",
+            "inversión de realim. de errores, parámetro",
+            "173"
+          ],
+          [
+            "(RS-232), parámetro",
+            "186",
+            "macro de control. .",
+            "87"
+          ],
+          [
+            "errores (recuento), parámetro",
+            "186",
+            "modo trim, parámetro .",
+            "180"
+          ],
+          [
+            "paro",
+            "",
+            "multiplicador de realim., parámetro",
+            "175"
+          ],
+          [
+            "grupo de parámetros.",
+            "139",
+            "nivel dormir, parámetro",
+            "177"
+          ],
+          [
+            "control intensidad CC, parámetro",
+            "140",
+            "procedimiento de ajuste",
+            "172"
+          ],
+          [
+            "demora motor aux.",
+            "194",
+            "punto consig. interno, parámetro",
+            "175"
+          ],
+          [
+            "dispositivos de emergencia.",
+            "289",
+            "punto consig. máximo, parámetro",
+            "175"
+          ],
+          [
+            "frenado flujo, parámetro",
+            "148",
+            "punto consig. mínimo, parámetro.",
+            "175"
+          ],
+          [
+            "función, parámetro",
+            "139",
+            "punto de consigna, parámetro de datos.",
+            "112"
+          ],
+          [
+            "motor aux. (PFC), parámetros",
+            "194",
+            "realimentación, parámetro de datos.",
+            "112"
+          ],
+          [
+            "ref. intensidad CC, parámetro.",
+            "140",
+            "salida, parámetro de datos.",
+            "112"
+          ],
+          [
+            "selec. emergencia, parámetro.",
+            "140",
+            "selec. de realim., parámetro.",
+            "175"
+          ],
+          [
+            "tiem. frenado CC, parámetro.",
+            "140",
+            "selec. entrada actual, parámetros",
+            "176\n174"
+          ],
+          [
+            "PELV (tensión muy baja de protección)",
+            "29",
+            "selec. punto consig., parámetro\nselec. serie de parám., parámetro",
+            "178"
+          ],
+          [
+            "pérdida del panel, código de fallo",
+            "266",
+            "selección dormir, parámetro.",
+            "177"
+          ],
+          [
+            "perfil genérico, ABC",
+            "",
+            "tiempo derivación, parámetro.",
+            "173"
+          ],
+          [
+            "adaptación a escala del valor actual .",
+            "261",
+            "unidades (señal actual), parámetro",
+            "173"
+          ],
+          [
+            "correlacion del valor actual",
+            "261",
+            "valor actual máx., parámetros",
+            "176"
+          ],
+          [
+            "escalado de referencia",
+            "260",
+            "valor actual mín., parámetros.",
+            "176"
+          ],
+          [
+            "especificaciones técnicas",
+            "260",
+            "valor com. 1, parámetro de datos.",
+            "114"
+          ],
+          [
+            "sinopsis .",
+            "260",
+            "valor com. 2, parámetro de datos.",
+            "114"
+          ],
+          [
+            "perfiles, com. BCI",
+            "219",
+            "pila (Panel de control asistente)",
+            "281"
+          ],
+          [
+            "peso.",
+            "312",
+            "planificación",
+            ""
+          ],
+          [
+            "",
+            "",
+            "com. BCE .",
+            "206"
+          ],
+          [
+            "",
+            "",
+            "FBA comm",
+            "243"
+          ],
+          [
+            "",
+            "",
+            "plantilla, montaje .",
+            "20"
+          ],
+          [
+            "",
+            "",
+            "PNP",
+            "29"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "330\nACS550-01/U1 Manual del Usuario\npotencia\nred IT\ndesencadenante de mantenimiento por consumo\nadvertencia acerca de filtros\n6\n(MWh)\n150\nadvertencia acerca de tornillos en EM1, EM3 25\nparámetro de datos.\n111\nadvertencia acerca de tornillos en F1, F2\n. 26\nPotencia bomba\nred sin conexión de neutro a tierra\nveáse ahorro de energía\nvéase red IT\npotencia OPEX, código de fallo.\n267\nred TN con conexión a tierra en un vértice.\n291\nprimer entorno\nadvertencia acerca de filtros\n6\n(C2), cumplimiento de IEC/EN 61800-3\n319\nredes con conexión a tierra no simétrica\n(C2), longitud del cable a motor\n296\nvéase red TN con conexión a tierra en un vértice\ndefinición.\n318\n291\nprotección\nredes TN con conexión a tierra en un vértice\nambiental\n313\nadvertencia acerca de tornillos EM1, EM3. .\n25\ncircuito, requerida con chopper.\n305\nadvertencia acerca de tornillos F1, F2.\n26\ndispositivo de desconexión (red)\n287\nreferencia externa, parámetro de datos\n111\nnorma de cerramiento.\ntérmica del motor\n316\nrefrigeración\n298\ndesencadenantes del mantenimiento del\npruebas de tensión\n314\nventilador\n150\npuesta a tierra\nregistro 0xxxx\nvéase tierra\ncódigos de función BCI\n221\npuesta en marcha\n45,61\ncorrelación BCI.\n220\nasistente\nregistro 1xxxx\ndatos, grupo de parámetros\n109\ncódigos de función BCI\n222\nguiada, Panel de control asistente\n45\ncorrelación BCI.\n221\nlimitada, Panel de control asistente o básico\n39\nregistro 3xxxx\npunto consig. interno (PID), parámetro .\n175\ncódigos de función BCI\n223\npunto consig. máximo (PID), parámetro\n175\ncorrelación BCI.\n222\npunto consig. mínimo (PID), parámetro\n175\nregistro 4xxxx\n225\npunto inicio debil. campo.\n295\ncódigos de función BCI\n223\ncorrelación BCI.\nR\nRegistro de amplitud\nvéase analizador de carga\nrampa curva S, parámetro.\n142\nRegistro de valores pico\nrealim.\nvéase analizador de carga\nmultiplicador (PID), parámetro\n175\nRegistros\nselec. (PID), parámetro.\n175\nvéase analizador de carga\nrearme automático\nregulador PID\nvéase rearme, automático\nconfiguración avanzada\n172\nrearme, automático\nconfiguración básica\n171\ngrupo de parámetros\n155\nrelación compensación desliz., parámetro\n149\nentrada analógica inferior a mín., parámetro 155\nrelación tensión/frecuencia, parámetro\n148\nfallo externo, parámetro\n155\n148\nnúmero de tentativas, parámetro\n155\nrelación U/f, parámetro .\nsobreintens., parámetro\n155\nrelés, especificaciones\n306\nsubtensión, parámetro\n155\nreloj\ntiem. tentativas, parámetro .\n155\nvéase ajuste fecha y hora (Panel de control\ntiempo demora, parámetro\n155\nasistente)\nrecuentos RS-232\nREM (control remoto)\nerrores CRC, parámetro\n186\nindicación en el Panel de control asistente . . 53\nerrores de trama, parámetro.\n186\nindicación en el Panel de control básico\n72\nerrores paridad, parámetro .\n186\nrequisitos de cables\nmensajes correct., parámetro\n186\nalimentación de entrada.\n290\nsobreesc. buffe., parámetro\n186\nconexión a tierra.\n291\nred\ncontrol\n306\nvéase alimentación de entrada\nmotor\n298\nred con conexión a tierra simétrica\nrequisitos de cables digitales\n307\nvéase red TN con conexión a tierra en un vértice\nresonancia (prevención)\n291\nselec., parámetro .\n147\nred conectada a tierra por impedancia\nrestauración de parámetros\nvéase red IT\nPanel de control asistente\n68\nred flotante\nPanel de control básico\n79\nvéase red IT\nretirada de la cubierta.\n21\nrevoluciones, mecánicas, parámetro de datos . . 113\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "potencia",
+            "red IT"
+          ],
+          [
+            "desencadenante de mantenimiento por",
+            "consumo",
+            "advertencia acerca de filtros 6"
+          ],
+          [
+            "(MWh)",
+            "150",
+            "advertencia acerca de tornillos en EM1, EM3 25"
+          ],
+          [
+            "parámetro de datos.",
+            "111",
+            "advertencia acerca de tornillos en F1, F2 . 26"
+          ],
+          [
+            "Potencia bomba",
+            "",
+            "red sin conexión de neutro a tierra"
+          ],
+          [
+            "veáse ahorro de energía",
+            "",
+            "véase red IT"
+          ],
+          [
+            "potencia OPEX, código de fallo.",
+            "267",
+            "red TN con conexión a tierra en un vértice. 291"
+          ],
+          [
+            "primer entorno",
+            "",
+            "advertencia acerca de filtros 6"
+          ],
+          [
+            "(C2), cumplimiento de IEC/EN 61800-3",
+            "319",
+            "redes con conexión a tierra no simétrica"
+          ],
+          [
+            "(C2), longitud del cable a motor",
+            "296",
+            "véase red TN con conexión a tierra en un vértice"
+          ],
+          [
+            "definición.",
+            "318",
+            "291"
+          ],
+          [
+            "protección",
+            "",
+            "redes TN con conexión a tierra en un vértice"
+          ],
+          [
+            "ambiental",
+            "313",
+            "advertencia acerca de tornillos EM1, EM3. . 25"
+          ],
+          [
+            "circuito, requerida con chopper.",
+            "305",
+            "advertencia acerca de tornillos F1, F2. 26"
+          ],
+          [
+            "dispositivo de desconexión (red)",
+            "287",
+            "referencia externa, parámetro de datos 111"
+          ],
+          [
+            "norma de cerramiento.",
+            "316",
+            "refrigeración"
+          ],
+          [
+            "térmica del motor",
+            "298",
+            "desencadenantes del mantenimiento del"
+          ],
+          [
+            "pruebas de tensión",
+            "314",
+            "ventilador 150"
+          ],
+          [
+            "puesta a tierra",
+            "",
+            "registro 0xxxx"
+          ],
+          [
+            "véase tierra",
+            "",
+            "códigos de función BCI 221"
+          ],
+          [
+            "puesta en marcha",
+            "",
+            "correlación BCI. 220"
+          ],
+          [
+            "asistente",
+            "45,61",
+            "registro 1xxxx"
+          ],
+          [
+            "datos, grupo de parámetros",
+            "109",
+            "códigos de función BCI 222"
+          ],
+          [
+            "guiada, Panel de control asistente",
+            "45",
+            "correlación BCI. 221"
+          ],
+          [
+            "limitada, Panel de control asistente o",
+            "básico 39",
+            "registro 3xxxx"
+          ],
+          [
+            "punto consig. interno (PID), parámetro .",
+            "175",
+            "códigos de función BCI 223"
+          ],
+          [
+            "punto consig. máximo (PID), parámetro",
+            "175",
+            "correlación BCI. 222"
+          ],
+          [
+            "punto consig. mínimo (PID), parámetro",
+            "175",
+            "registro 4xxxx"
+          ],
+          [
+            "punto inicio debil. campo.",
+            "295",
+            "225\ncódigos de función BCI"
+          ],
+          [
+            "",
+            "",
+            "223 correlación BCI."
+          ],
+          [
+            "R",
+            "",
+            "Registro de amplitud"
+          ],
+          [
+            "rampa curva S, parámetro.",
+            "142",
+            "véase analizador de carga"
+          ],
+          [
+            "realim.",
+            "",
+            "Registro de valores pico"
+          ],
+          [
+            "multiplicador (PID), parámetro",
+            "175",
+            "véase analizador de carga"
+          ],
+          [
+            "selec. (PID), parámetro.",
+            "175",
+            "Registros"
+          ],
+          [
+            "rearme automático",
+            "",
+            "véase analizador de carga"
+          ],
+          [
+            "véase rearme, automático",
+            "",
+            "regulador PID"
+          ],
+          [
+            "rearme, automático",
+            "",
+            "configuración avanzada 172"
+          ],
+          [
+            "grupo de parámetros",
+            "155",
+            "configuración básica 171"
+          ],
+          [
+            "entrada analógica inferior a mín., parámetro",
+            "155",
+            "relación compensación desliz., parámetro 149"
+          ],
+          [
+            "fallo externo, parámetro",
+            "155",
+            "relación tensión/frecuencia, parámetro 148"
+          ],
+          [
+            "número de tentativas, parámetro",
+            "155",
+            "148\nrelación U/f, parámetro ."
+          ],
+          [
+            "sobreintens., parámetro",
+            "155",
+            "relés, especificaciones 306"
+          ],
+          [
+            "subtensión, parámetro",
+            "155",
+            "reloj"
+          ],
+          [
+            "tiem. tentativas, parámetro .",
+            "155",
+            "véase ajuste fecha y hora (Panel de control"
+          ],
+          [
+            "tiempo demora, parámetro",
+            "155",
+            "asistente)"
+          ],
+          [
+            "recuentos RS-232",
+            "",
+            "REM (control remoto)"
+          ],
+          [
+            "errores CRC, parámetro",
+            "186",
+            "indicación en el Panel de control asistente . . 53"
+          ],
+          [
+            "errores de trama, parámetro.",
+            "186",
+            "indicación en el Panel de control básico 72"
+          ],
+          [
+            "errores paridad, parámetro .",
+            "186",
+            "requisitos de cables"
+          ],
+          [
+            "mensajes correct., parámetro",
+            "186",
+            "alimentación de entrada. 290"
+          ],
+          [
+            "sobreesc. buffe., parámetro",
+            "186",
+            "conexión a tierra. 291"
+          ],
+          [
+            "red",
+            "",
+            "control 306"
+          ],
+          [
+            "véase alimentación de entrada",
+            "",
+            "motor 298"
+          ],
+          [
+            "red con conexión a tierra simétrica",
+            "",
+            "requisitos de cables digitales 307"
+          ],
+          [
+            "véase red TN con conexión a tierra en un vértice",
+            "resonancia (prevención)"
+          ],
+          [
+            "291",
+            "",
+            "selec., parámetro . 147"
+          ],
+          [
+            "red conectada a tierra por impedancia",
+            "",
+            "restauración de parámetros"
+          ],
+          [
+            "véase red IT",
+            "",
+            "Panel de control asistente 68"
+          ],
+          [
+            "red flotante",
+            "",
+            "Panel de control básico 79"
+          ],
+          [
+            "véase red IT",
+            "",
+            "retirada de la cubierta. 21"
+          ],
+          [
+            "",
+            "revoluciones, mecánicas, parámetro de datos . . 113"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "ACS550-01/U1 Manual del Usuario\n331\nRS-232\nid de estación, parámetro\n186\nparidad, parámetro\n186\nvel. transm., parámetro .\n186\nruido\nparámetro de frec. de conmut. aleatorio\n149\nS\nsalida\ncableado, código de fallo\n268\nconmutación, parámetro\n149\nen fallo, parametro de historial\n117\nfrecuencia, parámetro de datos\n111\nlímite máx., parámetro\n138\nlímite mín., parámetro .\n138\nmotor, especificación\n295\nmotor, resolución.\n295\ntensión, parámetro de datos\n111\nsalida analógica\ngrupo de parámetros.\n132\ncontenido de datos, parámetros\n132\ncontenido máx., parámetros\n132\ncontenido mín., parámetros\n132\nfiltro, parámetros .\n132\nintensidad max., parámetros.\n132\nintensidad mín., parámetros\n132\nobtención de 0 ... 10 V\n91\nparámetros de datos\n112\nsalida de relé\ngrupo de parámetros.\n129\ndemora de conex., parámetros .\n130\ndemora de desconex., parámetros\n130\nestado, parámetro de datos\n112\nparámetros de condición de activación.\n129\nsalida del bloque de aplicación, parámetro de datos\n111\nsalida digital\nconexiones\n28\nespecificaciones\n306\nsegundo entorno\n(C3), cumplimiento de IEC/EN 61800-3\n319\n(C3), longitud del cable a motor\n296\ndefinición .\n318\nseguridad\n5\nselec. punto consig. (PID), parámetro\n174\nselección de comandos externos, parámetro\n118\nselección de control externo, parámetro\n120\nselección de referencia de panel, parámetro\n120\nselección dormir (PID), parámetro.\n177\nseleccionar fuente de permiso marcha, parámetro . .\n133\nseñales actuales de BC, grupo de parámetros . 115\nsensor de temperatura PT100.\n162\nsensor de temperatura PTC\n162\nsensor/transmisor de dos hilos, ejemplo de conexión\n90\nsensor/transmisor de tres hilos, ejemplo de conexión\n90\nserie de parámetros de usuario.\n92\ncambiar control, parámetro .\n134\ndescarga .\n68\nservicios.\n333\nSistema IT\nadvertencia relativa a filtros\n300\nconexiones\n292\nsistema TN conectado a tierra simetricamente. . 291\nSistema TN-S\n291\nsistemas multimotor\n149, 285, 295\nsobreesc. buffe. (recuento), parámetro.\n186\nsobreintensidad\ncódigo de fallo\n265\nrearme automatico, parametro\n155\nsobremodulación.\n149\nsobretension\nhabilitar control, parámetro.\n137\nsobrevelocidad, código de fallo.\n267\nsoftware incompatible, código de fallo\n268\nsubtension\nhabilitar control, parámetro.\n137\nrearme automático, parámetro .\n155\ngrupo de parámetros\n156\nlímite bajo de parámetro, parámetros\n156\nselección de parámetro, parámetros\n156\nsupervisión\nT\ntapa (IP 54 / UL tipo 12)\n21, 37\ntarjeta de control\nlímite de temperatura, código de fallo\n268\nlímite de temperatura, parámetro de fallo\n. 154\ntemperatura, parámetro de datos.\n113\nTC\nvéase tarjeta de control\nteclas multifunción (Panel de control asistente) . . 52\ntemperatura ambiente\nderrateo\n286\nlímite ambiental\n313\nlímite de transporte.\n313\ntemperatura del motor\nmedida, grupo de parámetros\n161\nestrés térmico, parámetro de datos\n114\nlímite de alarma, parámetro\n162\nlímite de fallo, parámetro\n163\nparámetro de datos\n113\nprotección térmica\n298\nprotección termica, parametro de fallo\n151\nselección de sensor, parámetro\n162\ntiempo térmico, parámetro de fallo.\n152\ntipo de sensor, parámetro\n162\ncódigo de especificación\n17\nterminación\n207\nterminales\ncirculares, engarzados .\n293\ncontrol, especificaciones\n307\n294\ncontrol, descripción\n28\ndiagrama de ubicación, R1 ... R4.\n25\ndiagrama de ubicación, R5/R6\n26\npara cables de potencia R6\n293\ntensión\nterminal, roscado\n294\nterminales circulares.\n293\nterminales circulares engarzados\n293\nterminales roscados\n294\ntiem. on unidad, datos parámetros .\n113\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "RS-232 id de estación, parámetro",
+            "186"
+          ],
+          [
+            "paridad, parámetro",
+            "186"
+          ],
+          [
+            "vel. transm., parámetro .",
+            "186"
+          ],
+          [
+            "ruido"
+          ],
+          [
+            "parámetro de frec. de conmut. aleatorio",
+            "149"
+          ],
+          [
+            "S",
+            ""
+          ],
+          [
+            "salida",
+            ""
+          ],
+          [
+            "cableado, código de fallo",
+            "268"
+          ],
+          [
+            "conmutación, parámetro",
+            "149"
+          ],
+          [
+            "en fallo, parametro de historial",
+            "117"
+          ],
+          [
+            "frecuencia, parámetro de datos",
+            "111"
+          ],
+          [
+            "límite máx., parámetro",
+            "138"
+          ],
+          [
+            "límite mín., parámetro .",
+            "138"
+          ],
+          [
+            "motor, especificación",
+            "295"
+          ],
+          [
+            "motor, resolución.",
+            "295"
+          ],
+          [
+            "tensión, parámetro de datos",
+            "111"
+          ],
+          [
+            "salida analógica",
+            ""
+          ],
+          [
+            "grupo de parámetros.",
+            "132"
+          ],
+          [
+            "contenido de datos, parámetros",
+            "132"
+          ],
+          [
+            "contenido máx., parámetros",
+            "132"
+          ],
+          [
+            "contenido mín., parámetros",
+            "132"
+          ],
+          [
+            "filtro, parámetros .",
+            "132"
+          ],
+          [
+            "intensidad max., parámetros.",
+            "132"
+          ],
+          [
+            "intensidad mín., parámetros",
+            "132"
+          ],
+          [
+            "obtención de 0 ... 10 V",
+            "91"
+          ],
+          [
+            "parámetros de datos",
+            "112"
+          ],
+          [
+            "salida de relé",
+            ""
+          ],
+          [
+            "grupo de parámetros.",
+            "129"
+          ],
+          [
+            "demora de conex., parámetros .",
+            "130"
+          ],
+          [
+            "demora de desconex., parámetros",
+            "130"
+          ],
+          [
+            "estado, parámetro de datos",
+            "112"
+          ],
+          [
+            "parámetros de condición de activación.",
+            "129"
+          ],
+          [
+            "salida del bloque de aplicación, parámetro de datos 111"
+          ],
+          [
+            "salida digital",
+            ""
+          ],
+          [
+            "conexiones",
+            "28"
+          ],
+          [
+            "especificaciones",
+            "306"
+          ],
+          [
+            "segundo entorno",
+            ""
+          ],
+          [
+            "(C3), cumplimiento de IEC/EN 61800-3",
+            "319"
+          ],
+          [
+            "(C3), longitud del cable a motor",
+            "296"
+          ],
+          [
+            "definición .",
+            "318"
+          ],
+          [
+            "seguridad",
+            "5"
+          ],
+          [
+            "selec. punto consig. (PID), parámetro",
+            "174"
+          ],
+          [
+            "selección de comandos externos, parámetro",
+            "118"
+          ],
+          [
+            "selección de control externo, parámetro",
+            "120"
+          ],
+          [
+            "selección de referencia de panel, parámetro",
+            "120"
+          ],
+          [
+            "selección dormir (PID), parámetro.",
+            "177"
+          ],
+          [
+            "seleccionar fuente de permiso marcha, parámetro . . 133"
+          ],
+          [
+            "señales actuales de BC, grupo de parámetros .",
+            "115"
+          ],
+          [
+            "sensor de temperatura PT100.",
+            "162"
+          ],
+          [
+            "sensor de temperatura PTC",
+            "162"
+          ],
+          [
+            "sensor/transmisor de dos hilos, ejemplo de conexión 90"
+          ],
+          [
+            "sensor/transmisor de tres hilos, ejemplo de conexión 90"
+          ],
+          [
+            "serie de parámetros de usuario.",
+            "92"
+          ],
+          [
+            "cambiar control, parámetro .",
+            "134"
+          ],
+          [
+            "descarga .",
+            "68"
+          ],
+          [
+            "servicios.",
+            "333"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "332\nACS550-01/U1 Manual del Usuario\ntiemp. integración, parámetro\n144\ntiempo derivación (PID), parámetro\n173\ntiempo derivación, parámetro\n144\ntiempo marcha\ndesencadenante del mantenimiento\n150\nparámetro de datos.\n111, 113\ntierra\nprotección contra fallos\n298\nrequisitos de cables/cableado\n291\ntierra PE\nfallo tierra, parámetro\n153\ntipo de convertidor desconocido, código de fallo 268\ntipo de sensor, parámetro\n162\ntornillos EM1 y EM3\n25, 291, 292\nadvertencia\nen redes IT\n27\nen una red TN conectada a tierra con estructura\nsimétrica\n27\nen una red TN conectada a tierra en ángulo\n27\nubicación.\n25\ntornillos F1 y F2\nadvertencia\n26, 291, 292\nen redes IT\n27\nen una red TN conectada a tierra con estructura\nsimétrica\n27\nen una red TN conectada a tierra en ángulo\n27\nvelocidad, constante\ngrupo de parámetros\n124\nparámetro de selec. de entrada digital.\n125\n126\nparámetros .\nventilador\ncontrol\n136\nmantenimiento\n278\nversión\nfirmware\n13\nfirmware del panel\n51,55\nfirmware, parámetro .\n70, 158\npaquete de carga, parámetro\n158\ntabla de parámetros, parámetro.\n158\nversión de firmware del panel.\n51,55\nversion de fw\npanel, versión.\n51\nversión, parámetro\n158\nversión de paquete de carga, parámetro\n158\nvibración, prueba de tensión\n314\nvisualización de fallo\nalarma\n264\nfallo\n264\n264\nnombres de fallo.\nubicación.\n26\ntrim\nescala (PID), parámetro\n180\nmodo (PID), parámetro\n180\nU\nunidades (PID), parámetro\n173\nV\nvalores actuales\nadaptación a escala, com. ABC\n249\nadaptación a escala, com. BCE\n214\ncorrelación, ABC, perfil genérico\n261\nescalado, ABC, perfil ABB drives\n259\nescalado, ABC, perfil genérico\n261\nvalores por defecto\nlistado de parámetros\n95\nlistado para macros\n93\nvariables de proceso, parámetro de datos\n113\nvariables de visualización del panel, grupo de\nparámetros\n159\nvector:\nmodo par.\n109\nmodo velocidad.\n109\nvel transm. (RS-232), parámetro.\n186\nveloc. críticas (prevención)\ngrupo de parámetros\n147\naltas, parámetros\n147\nbajas, parámetros\n147\nselec., parámetro\n147\nvelocidad cero\ncarga, parámetro de fallo\n152\ndemora, parámetro\nvelocidad constante\n141\nvéase velocidad, constante\nÍndice alfabético",
+      "tablas": [
+        [
+          [
+            "velocidad, constante",
+            ""
+          ],
+          [
+            "grupo de parámetros",
+            "124"
+          ],
+          [
+            "parámetro de selec. de entrada digital.",
+            "125"
+          ],
+          [
+            "parámetros .",
+            "126"
+          ],
+          [
+            "ventilador",
+            ""
+          ],
+          [
+            "control",
+            "136"
+          ],
+          [
+            "mantenimiento",
+            "278"
+          ],
+          [
+            "versión",
+            ""
+          ],
+          [
+            "firmware",
+            "13"
+          ],
+          [
+            "firmware del panel",
+            "51,55"
+          ],
+          [
+            "firmware, parámetro .",
+            "70, 158"
+          ],
+          [
+            "paquete de carga, parámetro",
+            "158"
+          ],
+          [
+            "tabla de parámetros, parámetro.",
+            "158"
+          ],
+          [
+            "versión de firmware del panel.",
+            "51,55"
+          ],
+          [
+            "version de fw",
+            ""
+          ],
+          [
+            "panel, versión.",
+            "51"
+          ],
+          [
+            "versión, parámetro",
+            "158"
+          ],
+          [
+            "versión de paquete de carga, parámetro",
+            "158"
+          ],
+          [
+            "vibración, prueba de tensión",
+            "314"
+          ],
+          [
+            "visualización de fallo",
+            ""
+          ],
+          [
+            "alarma",
+            "264"
+          ],
+          [
+            "fallo",
+            "264"
+          ],
+          [
+            "nombres de fallo.",
+            "264"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Información adicional\nConsultas sobre productos y servicios\nPuede dirigir cualquier consulta acerca del producto a su representante local de ABB. Especifique\nla designación de tipo y el número de serie de la unidad. Puede encontrar una lista de contactos de\nventas, asistencia y servicio de ABB entrando en www.abb.com/searchchannels.\nFormación sobre productos\nPara obtener información relativa a la formación sobre productos ABB, entre en\nwww.abb.com/drives y seleccione Training courses.\nComentarios acerca de los manuales de convertidores ABB\nSus comentarios sobre nuestros manuales siempre son bienvenidos. Entre en www.abb.com/drives\ny seleccione Document Library - Manuals feedback form (LV AC drives).\nBiblioteca de documentos en Internet\nEn Internet podrá encontrar manuales y otros documentos sobre productos en formato PDF. Entre\nen www.abb.com/drives y seleccione Document Library. Puede realizar búsquedas en la biblioteca\no introducir criterios de selección, por ejemplo un código de documento, en el campo de búsqueda.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Contacte con nosotros\nwww.abb.com/drives\nwww.abb.com/drivespartners\n3AFE64783661 Rev H / ES\nEFECTIVO: 04/07/2014\nSUSTITUYE A: 3AFE64783661 Rev G 07/07/2009\nABB\nPower and productivity\nfor a better world™",
+      "tablas": []
+    }
+  ]
+}

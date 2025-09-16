@@ -1,0 +1,2406 @@
+{
+  "archivo": "ABB Manual de Usuario ACS550_p41_80",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Manual del usuario del ACS550-01/U1\n41\nSeleccione la macro de aplicación (parámetro 9902). El\nprocedimiento de ajuste de parámetros general se ha facilitado\ncon anterioridad.\nEl valor de fábrica 1 (ESTAND ABB) es adecuado en la mayoría de los casos.\nSeleccione el modo de control del motor (parámetro 9904).\nIntroduzca los datos del motor de la placa de características\ndel motor:\n5. Pulse y mantenga pulsada\ndurante unos dos segundos hasta que se\nmuestre el valor del parámetro con SET bajo el valor.\n6. Cambie el valor con las teclas\n/\n7\nEl valor cambia más rápido\nal mantener la tecla pulsada.\n7. Guarde el valor del parámetro pulsando\n.\n1 (VECTOR:VELOC) es adecuado en la mayoría de los casos. 2 (VECTOR:PAR)\nes adecuado para aplicaciones de control del par. 3 (ESCALAR:FREC) es el\najuste recomendado\n· para convertidores multimotor cuando el número de motores conectados\nal convertidor es variable\n· cuando la intensidad nominal del motor es inferior al 20% de la intensidad\nnominal del convertidor\n· cuando el convertidor se usa con fines de prueba sin un motor conectado.\nABB Motors\nCE\n3~ motor\nM2AA 200 MLA 4\nIEC 200 M/L 55\nTensión de\nalimentación\nde 380 V\n· tensión nominal del motor (parámetro 9905)\n· intensidad nominal del motor (parámetro 9906)\nRango permitido: 0,2 ... 2,0 · /2hd A\n· frecuencia nominal del motor (parámetro 9907)\nNo\nIns.cl. F\nIP 55\nV\nHz\nkW\nr/min\nA\nCOS PIA/IN\nt E/s\n690 Y\n50\n30\n1475\n32.5\n0.83\n400 D\n50\n30\n1475\n56\n0.83\n660 Y\n50\n30\n1470\n34\n0.83\n380 D\n50\n30\n1470\n59\n0.83\n415 D\n50\n30\n1475\n54\n0.83\n440 D\n60\n35\n1770\n59\n0.83\nCat. no\n3GAA 202 001 - ADA\n6312/C3\n6210/C3\n180 kg\nIEC 34-1\nREM\n1500\nREM\n1600\nREM\n2002\nREM\nREM\n9904\nrpm\nPAR SET FWD\nrpm\nPAR SET FWD\nPAR\nFWD\n9902\nPAR\nFWD\nPAR\nFWD\nNota: Ajuste los datos del motor\nexactamente al mismo valor que\nla placa de características del\nmotor. Por ejemplo, si la\nvelocidad nominal del motor es\nde 1470 rpm en la placa, el\najuste del valor del parámetro\n9908 VELOC NOM MOTOR a\n1500 rpm da lugar a un\nfuncionamiento erróneo del\nmotor.\nREM\n9905\nPAR\nREM\n9906\nPAR\nFWD\nREM\n9907\nPAR\nFWD\nFWD\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": [
+        [
+          [
+            "No"
+          ],
+          [
+            "Ins.cl. F",
+            "IP 55"
+          ],
+          [
+            "V",
+            "Hz",
+            "kW",
+            "r/min",
+            "A",
+            "COS",
+            "PIA/IN",
+            "t E/s"
+          ],
+          [
+            "690 Y",
+            "50",
+            "30",
+            "1475",
+            "32.5",
+            "0.83",
+            "",
+            ""
+          ],
+          [
+            "400 D",
+            "50",
+            "30",
+            "1475",
+            "56",
+            "0.83",
+            "",
+            ""
+          ],
+          [
+            "660 Y",
+            "50",
+            "30",
+            "1470",
+            "34",
+            "0.83",
+            "",
+            ""
+          ],
+          [
+            "380 D",
+            "50",
+            "30",
+            "1470",
+            "59",
+            "0.83",
+            "",
+            ""
+          ],
+          [
+            "415 D",
+            "50",
+            "30",
+            "1475",
+            "54",
+            "0.83",
+            "",
+            ""
+          ],
+          [
+            "440 D",
+            "60",
+            "35",
+            "1770",
+            "59",
+            "0.83",
+            "",
+            ""
+          ],
+          [
+            "Cat. no 3GAA 202 001 - ADA",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            ""
+          ],
+          [
+            "6312/C3",
+            "6210/C3",
+            "180 kg"
+          ],
+          [
+            "IEC 34-1\n:selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "42\nManual del usuario del ACS550-01/U1\n· velocidad nominal del motor (parámetro 9908)\n· potencia nominal del motor (parámetro 9909)\nREM\n9908\nPAR\nFWD\nREM\n9909\nPAR\nFWD\nSeleccione el método de identificación del motor (parámetro 9910).\nEl valor de fábrica 0 (OFF/IDMAGN) que utiliza la magnetización de identificación es adecuado\npara la mayoría de las aplicaciones. Se aplica en este procedimiento de puesta en marcha\nbásica. No obstante, tenga en cuenta que requiere que:\n· el parámetro 9904 se ajusta a 1 (VECTOR:VELOC) o 2 (VECTOR:PAR), O\n· el parámetro 9904 se ajuste a 3 (ESCALAR:FREC) y el parámetro 2101 a 3 (FLYSTART ESC) 0\n5 (GIRAR+SOBREP).\nSi su selección es 0 (OFF/IDMAGN), vaya al paso siguiente.\nEl valor 1 (SI), que efectúa una Marcha de ID independiente, debe seleccionarse si:\n· se emplea el modo de control vectorial [parámetro 9904 = 1 (VECTOR:VELOC) 0 2 (VECTOR:PAR)], y/o\n· el punto de funcionamiento está cerca de la velocidad cero, y/o\n· se requiere el funcionamiento en el rango de par por encima del par nominal del motor dentro\nde un amplio rango de velocidad y sin que se requiera realimentación de velocidad medida.\nSi decide realizar la Marcha de ID [valor 1 (SI)], prosiga siguiendo las instrucciones\nfacilitadas en la página 48 del apartado Cómo efectuar la Marcha de ID y vuelva al paso\nDIRECCIÓN DE GIRO DEL MOTOR en la página 43.\nMAGNETIZACIÓN DE IDENTIFICACIÓN CON SELECCIÓN DE MARCHA DE ID 0 (OFF/IDMAGN)\nComo se ha indicado anteriormente, la magnetización de identificación sólo se efectúa si:\n· el parámetro 9904 se ajusta a 1 (VECTOR:VELOC) o 2 (VECTOR:PAR), O\n· el parámetro 9904 se ajuste a 3 (ESCALAR:FREC) y el parámetro 2101 se ajuste a\n3 (FLYSTART ESC) o 5 (GIRAR + SOBREP).\nPulsar la tecla(e) para cambiar a control local (se muestra LOC a la izquierda).\nPulse\npara poner en marcha el convertidor. El modelo del motor se calcula\nmagnetizándolo de 10 a 15 s a velocidad cero (el motor no gira).\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": [
+        [
+          [
+            "REM",
+            "9908 PAR FWD"
+          ],
+          [
+            ""
+          ],
+          [
+            "REM 9909 PAR FWD"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Manual del usuario del ACS550-01/U1\n43\nDIRECCIÓN DE GIRO DEL MOTOR\nCompruebe la dirección de giro del motor.\n· Si el convertidor se encuentra en control remoto (se muestra\nREM a la izquierda), cambie a control local pulsando(9\n.\nLOC\nXXX\nHZ\nSET FWD\n· Para acceder al menú principal, pulse\nsi la línea inferior\nmuestra OUTPUT; en caso contrario, pulse\nrepetidamente hasta que vea MENU en la parte inferior.\n· Pulse las teclas\n/\nhasta que aparezca \"rEF\" y\npulse\n.\n· Aumente la referencia de frecuencia de cero a un valor\npequeño con la tecla\n.\n· Pulse\npara poner en marcha el motor.\n· Compruebe que la dirección real del motor sea la que se indica\nen la pantalla (FWD significa avance y REV retroceso).\n. Pulse\npara parar el motor.\nPara cambiar la dirección de giro del motor:\n· Desconecte la alimentación de entrada del convertidor, y\nespere durante 5 minutos a que los condensadores del\ncircuito intermedio se descarguen. Mida la tensión entre\ncada terminal de entrada (U1, V1 y W1) y efectúe la\nconexión a tierra con un multímetro para verificar que el\nconvertidor de frecuencia se haya descargado.\ndir. de avance\no\ndirección\ninversa\n· Cambie la posición de dos conductores de fase del cable de\nmotor en los terminales de salida del convertidor o en la caja\nde conexiones del motor.\n· Verifique su trabajo suministrando alimentación de entrada y\nrepitiendo la comprobación como se ha descrito anteriormente.\nLÍMITES DE VELOCIDAD Y TIEMPOS DE ACELERACIÓN/DECELERACIÓN\nAjuste la velocidad mínima (parámetro 2001).\nLOC\n2001\nPAR\nFWD\nAjuste la velocidad máxima (parámetro 2002).\nLOC\n2002\nPAR\nFWD\nAjuste el tiempo de aceleración 1 (parámetro 2202).\nNota: compruebe también el tiempo de aceleración 2\n(parámetro 2205) si se van a emplear dos tiempos de\naceleración en la aplicación.\nLOC\n2202\nPAR\nFWD\nAjuste el tiempo de deceleración 1 (parámetro 2203).\nNota: ajuste también el tiempo de deceleración 2 (parámetro 2206)\nsi se van a emplear dos tiempos de deceleración en la aplicación.\nLOC\n2203\nPAR\nFWD\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": [
+        [
+          [
+            "",
+            "DIRECCIÓN DE GIRO DEL MOTOR",
+            ""
+          ],
+          [
+            ":unselected:",
+            "Compruebe la dirección de giro del motor.",
+            ""
+          ],
+          [
+            "· Si el convertidor se encuentra en control remoto (se muestra REM a la izquierda), cambie a control local pulsando(9 .\n:selected:",
+            "LOC XXX HZ SET FWD"
+          ],
+          [
+            "· Para acceder al menú principal, pulse si la línea inferior muestra OUTPUT; en caso contrario, pulse :selected: repetidamente hasta que vea MENU en la parte inferior."
+          ],
+          [
+            "· Pulse las teclas / hasta que aparezca \"rEF\" y pulse ."
+          ],
+          [
+            "· Aumente la referencia de frecuencia de cero a un valor pequeño con la tecla .",
+            ""
+          ],
+          [
+            "· Pulse :selected: para poner en marcha el motor. · Compruebe que la dirección real del motor sea la que se indica en la pantalla (FWD significa avance y REV retroceso). . Pulse :selected: para parar el motor.",
+            ""
+          ],
+          [
+            "Para cambiar la dirección de giro del motor: · Desconecte la alimentación de entrada del convertidor, y espere durante 5 minutos a que los condensadores del circuito intermedio se descarguen. Mida la tensión entre cada terminal de entrada (U1, V1 y W1) y efectúe la conexión a tierra con un multímetro para verificar que el convertidor de frecuencia se haya descargado.",
+            "dir. de avance o dirección inversa"
+          ],
+          [
+            "· Cambie la posición de dos conductores de fase del cable de motor en los terminales de salida del convertidor o en la caja de conexiones del motor. · Verifique su trabajo suministrando alimentación de entrada y repitiendo la comprobación como se ha descrito anteriormente.",
+            ""
+          ],
+          [
+            "LÍMITES DE VELOCIDAD Y TIEMPOS DE ACELERACIÓN/DECELERACIÓN"
+          ],
+          [
+            ":unselected:",
+            "Ajuste la velocidad mínima (parámetro 2001).",
+            "LOC 2001 PAR FWD"
+          ],
+          [
+            ":unselected:",
+            "Ajuste la velocidad máxima (parámetro 2002).",
+            "LOC 2002 PAR FWD"
+          ],
+          [
+            ":unselected:",
+            "Ajuste el tiempo de aceleración 1 (parámetro 2202). Nota: compruebe también el tiempo de aceleración 2 (parámetro 2205) si se van a emplear dos tiempos de aceleración en la aplicación.",
+            "LOC 2202 PAR FWD"
+          ],
+          [
+            ":unselected:",
+            "Ajuste el tiempo de deceleración 1 (parámetro 2203). Nota: ajuste también el tiempo de deceleración 2 (parámetro 2206) si se van a emplear dos tiempos de deceleración en la aplicación.",
+            "LOC 2203 PAR FWD"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "44\nManual del usuario del ACS550-01/U1\nGUARDADO DE UN CONJUNTO DE PARÁMETROS DE USUARIO Y COMPROBACIÓN FINAL\nLa puesta en marcha ha finalizado. No obstante, en este punto\nquizá sea útil ajustar los parámetros requeridos por la\naplicación y guardar los ajustes como un conjunto de\nLOC\n9902\nPAR\nFWD\nparámetros de usuario del modo indicado en el apartado\nSeries de parámetros de usuario de la página 92.\nCompruebe que el estado del convertidor de frecuencia sea el\ncorrecto.\nPanel de control básico: Compruebe que no existan fallos o\nalarmas en pantalla. Si desea comprobar los LED en la parte\nfrontal del convertidor de frecuencia, cambie primero a control\nremoto (si no, se generará un fallo) antes de retirar el panel y\nverificar que el LED rojo no está iluminado y el LED verde está\niluminado pero no parpadea.\nPanel de control asistente: Compruebe que no existan fallos o\nalarmas en pantalla y que el LED del panel esté iluminado en\nverde y no parpadee.\nEl convertidor ya está listo para su uso.\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": [
+        [
+          [
+            "GUARDADO DE UN CONJUNTO DE PARÁMETROS DE USUARIO Y COMPROBACIÓN FINAL"
+          ],
+          [
+            ":unselected:",
+            "La puesta en marcha ha finalizado. No obstante, en este punto quizá sea útil ajustar los parámetros requeridos por la aplicación y guardar los ajustes como un conjunto de",
+            "LOC 9902 PAR FWD"
+          ],
+          [
+            "parámetros de usuario del modo indicado en el apartado Series de parámetros de usuario de la página 92.",
+            ""
+          ],
+          [
+            ":unselected:",
+            "Compruebe que el estado del convertidor de frecuencia sea el correcto.",
+            ""
+          ],
+          [
+            "Panel de control básico: Compruebe que no existan fallos o alarmas en pantalla. Si desea comprobar los LED en la parte frontal del convertidor de frecuencia, cambie primero a control remoto (si no, se generará un fallo) antes de retirar el panel y verificar que el LED rojo no está iluminado y el LED verde está iluminado pero no parpadea. Panel de control asistente: Compruebe que no existan fallos o alarmas en pantalla y que el LED del panel esté iluminado en verde y no parpadee."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Manual del usuario del ACS550-01/U1\n45\nCómo efectuar la puesta en marcha guiada\nPara poder llevar a cabo la puesta en marcha guiada, es necesario el Panel de\ncontrol asistente.\nAntes de empezar, asegúrese de que dispone de los datos de la placa de\ncaracterísticas del motor.\nSEGURIDAD\nLa puesta en marcha sólo puede ser efectuada por un electricista cualificado.\n4\nDeben seguirse las instrucciones de seguridad del capítulo Instrucciones de\nseguridad durante todo el procedimiento de puesta en marcha.\nEl convertidor se pondrá en marcha automáticamente al suministrar alimentación si el\n!\ncomando de marcha externa está activado.\nCompruebe la instalación. Véase la lista de comprobación en el capítulo Instalación, página 36.\nCompruebe que la puesta en marcha del motor no entrañe ningún peligro.\nDesacople la maquinaria accionada si:\n· existe riesgo de daños en caso de una dirección de giro incorrecta, o\n· debe efectuarse una Marcha de ID durante la puesta en marcha del convertidor. La\nMarcha de ID tan sólo es esencial en aplicaciones que requieran un grado máximo de\nprecisión de control del motor.\nALIMENTACIÓN\nSuministre alimentación de entrada. Primero, el panel de control le\npreguntará si desea utilizar el Asistente de arranque.\nREM & CHOICE\n¿Desea\nusar el asistente\nde arranque?\n. Pulse\nOK\n(cuando Sí esté resaltado) para ejecutar el Asistente\nde arranque.\nSí\nNo\nSALIR 00:00\nOK\n· Pulse\nSALIR\nsi no desea ejecutar el Asistente de arranque.\n· Pulse la tecla\npara resaltar No y despues pulse\nOK\nsi\ndesea que el panel pregunte (o no) si debe ejecutarse el\nAsistente de arranque la próxima vez que se conecte la\nalimentación del convertidor.\nREM & CHOICE\n¿Mostrar asistente\nde arranque\nal arrancar?\nSí\nNo\nSALIR 00:00\nOK\nSELECCIÓN DEL IDIOMA\nSi decide ejecutar el Asistente de arranque, la pantalla le pedirá\nque seleccione el idioma. Desplácese hasta el idioma que desee\ncon las teclas\n/\ny pulse GUARDAR\npara aceptar.\nSi pulsa SALIR\n, el Asistente de arranque se detiene.\nREM UPAR EDIT\n9901 IDIOMA\nENGLISH\n[0]\nSALIR 00:00 GUARDAR\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": [
+        [
+          [
+            "",
+            "SEGURIDAD"
+          ],
+          [
+            "",
+            "La puesta en marcha sólo puede ser efectuada por un electricista cualificado. 4 Deben seguirse las instrucciones de seguridad del capítulo Instrucciones de seguridad durante todo el procedimiento de puesta en marcha."
+          ],
+          [
+            "",
+            "El convertidor se pondrá en marcha automáticamente al suministrar alimentación si el ! comando de marcha externa está activado."
+          ],
+          [
+            ":unselected:",
+            "Compruebe la instalación. Véase la lista de comprobación en el capítulo Instalación, página 36."
+          ],
+          [
+            ":unselected:",
+            "Compruebe que la puesta en marcha del motor no entrañe ningún peligro."
+          ],
+          [
+            "Desacople la maquinaria accionada si:"
+          ],
+          [
+            "· existe riesgo de daños en caso de una dirección de giro incorrecta, o · debe efectuarse una Marcha de ID durante la puesta en marcha del convertidor. La Marcha de ID tan sólo es esencial en aplicaciones que requieran un grado máximo de precisión de control del motor."
+          ],
+          [
+            "",
+            "ALIMENTACIÓN"
+          ],
+          [
+            ":unselected:",
+            "Suministre alimentación de entrada. Primero, el panel de control le preguntará si desea utilizar el Asistente de arranque.",
+            "REM & CHOICE ¿Desea usar el asistente"
+          ],
+          [
+            ". Pulse OK (cuando Sí esté resaltado) para ejecutar el Asistente de arranque.",
+            "de arranque?\nSí"
+          ],
+          [
+            "No SALIR 00:00 OK"
+          ],
+          [
+            "· Pulse SALIR :selected: si no desea ejecutar el Asistente de arranque.",
+            ""
+          ],
+          [
+            "· Pulse la tecla para resaltar No y despues pulse OK si desea que el panel pregunte (o no) si debe ejecutarse el Asistente de arranque la próxima vez que se conecte la alimentación del convertidor.",
+            "REM & CHOICE ¿Mostrar asistente de arranque al arrancar? Sí No"
+          ],
+          [
+            "SALIR 00:00 OK"
+          ],
+          [
+            "",
+            "SELECCIÓN DEL IDIOMA",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "46\nManual del usuario del ACS550-01/U1\nINICIO DEL AJUSTE GUIADO\nEl Asistente de arranque le guía por las tareas de ajuste, empezando\npor el ajuste del motor. Ajuste los datos del motor exactamente al\nmismo valor que la placa de características del motor.\nREM & PAR EDIT\n9905 TENSION NOM MOT\n220 V\nDesplácese hasta el valor de parámetro deseado con las teclas\nGUARDAF\nSALIR 00:00 GUARDAR\n/\ny pulse\npara aceptar y continuar con el Asistente\nde arranque.\nNota: en cualquier momento, si pulsa\n, el Asistente de\narranque se detiene y la pantalla pasa a modo de Salida.\nTras completar una tarea de ajuste, el Asistente de arranque\nsugiere la siguiente.\nREM & CHOICE\n¿Desea\ncontinuar con\nel ajuste de\n. Pulse\nOK\n(cuando Continuar esté resaltado) para continuar con\nla tarea sugerida.\n. Pulse la tecla\npara resaltar saltar y despues pulse\nOK\npara\npasar a la tarea siguiente sin realizar la tarea sugerida.\n. Pulse\nSALIR\npara detener el Asistente de arranque.\naplicación? Continuar\nsaltar\nSALIR\n00:00\nOK\nGUARDADO DE UN CONJUNTO DE PARÁMETROS DE USUARIO Y COMPROBACIÓN FINAL\nLa puesta en marcha ha finalizado. No obstante, en este punto\nquizá sea útil ajustar los parámetros requeridos por la aplicación y\nguardar los ajustes como un conjunto de parámetros de usuario\ndel modo indicado en el apartado Series de parámetros de usuario\nde la página 92.\nDespués de efectuar el ajuste en su totalidad, compruebe que no\nexistan fallos o alarmas en pantalla y que el LED del panel esté\niluminado en verde y no parpadee.\nEl convertidor ya está listo para su uso.\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": [
+        [
+          [
+            "INICIO DEL AJUSTE GUIADO"
+          ],
+          [
+            ":unselected:",
+            "El Asistente de arranque le guía por las tareas de ajuste, empezando por el ajuste del motor. Ajuste los datos del motor exactamente al mismo valor que la placa de características del motor.",
+            "REM & PAR EDIT 9905 TENSION NOM MOT 220 V"
+          ],
+          [
+            "Desplácese hasta el valor de parámetro deseado con las teclas",
+            "SALIR 00:00 GUARDAR"
+          ],
+          [
+            "GUARDAF\n/ y pulse para aceptar y continuar con el Asistente de arranque. Nota: en cualquier momento, si pulsa , el Asistente de arranque se detiene y la pantalla pasa a modo de Salida.",
+            ""
+          ],
+          [
+            ":unselected:",
+            "Tras completar una tarea de ajuste, el Asistente de arranque sugiere la siguiente.",
+            "REM & CHOICE ¿Desea continuar con"
+          ],
+          [
+            ". Pulse OK (cuando Continuar esté resaltado) para continuar con la tarea sugerida. . Pulse la tecla para resaltar saltar y despues pulse OK para pasar a la tarea siguiente sin realizar la tarea sugerida. . Pulse SALIR para detener el Asistente de arranque.",
+            "el ajuste de\naplicación? Continuar saltar SALIR 00:00 OK"
+          ],
+          [
+            "GUARDADO DE UN CONJUNTO DE PARÁMETROS DE USUARIO Y COMPROBACIÓN FINAL"
+          ],
+          [
+            ":unselected:",
+            "La puesta en marcha ha finalizado. No obstante, en este punto quizá sea útil ajustar los parámetros requeridos por la aplicación y guardar los ajustes como un conjunto de parámetros de usuario del modo indicado en el apartado Series de parámetros de usuario de la página 92.",
+            ""
+          ],
+          [
+            ":unselected:",
+            "Después de efectuar el ajuste en su totalidad, compruebe que no existan fallos o alarmas en pantalla y que el LED del panel esté iluminado en verde y no parpadee.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Manual del usuario del ACS550-01/U1\n47\nComo controlar el convertidor a través de la interfase de E/S\nLa tabla siguiente facilita información para el manejo del convertidor a través de las\nentradas digitales y analógicas, cuando:\n· se efectúa la puesta en marcha del motor, y\n· los ajustes de parámetros de fábrica (estándar) son válidos.\nComo ejemplo, se muestran pantallas del Panel de control básico.\nAJUSTES PRELIMINARES\nSi tiene que cambiar la dirección de giro, compruebe que el\nparámetro 1003 esté ajustado a 3 (PETICION).\nVerifique que las conexiones de control estén conectadas según el\ndiagrama de conexiones facilitado para la Macro Estándar ABB.\nVéase el apartado Macro\nEstándar ABB en la página 82.\nCompruebe que el convertidor se encuentre en control remoto.\nPulsar la tecla (REM\npara cambiar entre control remoto y local.\nEn control remoto, la pantalla\ndel panel muestra el texto REM.\nARRANQUE Y CONTROL DE LA VELOCIDAD DEL MOTOR\nEmpiece conectando la entrada digital ED1.\nPanel de control asistente: La flecha empieza a girar. Hasta que se\nalcanza el punto de consigna, la flecha es de tipo punteado.\nREM\n0.0\nHZ\nOUTPUT\nFWD\nPanel de control básico: El texto FWD empieza a parpadear\nrápidamente y se detiene después de alcanzar el punto de consigna.\nRegule la frecuencia de salida del convertidor (velocidad del motor)\najustando la tensión de la entrada analógica EA1.\nREM\n50.0\nHZ\nOUTPUT\nFWD\nCAMBIO DE LA DIRECCIÓN DE GIRO DEL MOTOR\nDirección inversa: Conecte la entrada digital ED2.\nREM\n50.0\nHZ\nOUTPUT\nREV\nDirección de avance: Desconecte la entrada digital ED2.\nREM\n50.0\nHz\nOUTPUT\nFWD\nPARO DEL MOTOR\nDesconecte la entrada digital ED1. El motor se para.\nPanel de control asistente: La flecha deja de girar.\nPanel de control básico: El texto FWD empieza a parpadear\nREM\n0.0\nHZ\nOUTPUT\nFWD\nlentamente.\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": [
+        [
+          [
+            "AJUSTES PRELIMINARES"
+          ],
+          [
+            "Si tiene que cambiar la dirección de giro, compruebe que el parámetro 1003 esté ajustado a 3 (PETICION).",
+            ""
+          ],
+          [
+            "Verifique que las conexiones de control estén conectadas según el diagrama de conexiones facilitado para la Macro Estándar ABB.",
+            "Véase el apartado Macro Estándar ABB en la página 82."
+          ],
+          [
+            "Compruebe que el convertidor se encuentre en control remoto. Pulsar la tecla (REM para cambiar entre control remoto y local.\n:selected:",
+            "En control remoto, la pantalla del panel muestra el texto REM."
+          ],
+          [
+            "ARRANQUE Y CONTROL DE LA VELOCIDAD DEL MOTOR"
+          ],
+          [
+            "Empiece conectando la entrada digital ED1. Panel de control asistente: La flecha empieza a girar. Hasta que se alcanza el punto de consigna, la flecha es de tipo punteado.",
+            "REM 0.0 HZ OUTPUT FWD"
+          ],
+          [
+            "Panel de control básico: El texto FWD empieza a parpadear rápidamente y se detiene después de alcanzar el punto de consigna.",
+            ""
+          ],
+          [
+            "Regule la frecuencia de salida del convertidor (velocidad del motor) ajustando la tensión de la entrada analógica EA1.",
+            "REM 50.0 HZ OUTPUT FWD"
+          ],
+          [
+            "CAMBIO DE LA DIRECCIÓN DE GIRO DEL MOTOR"
+          ],
+          [
+            "Dirección inversa: Conecte la entrada digital ED2.",
+            "REM",
+            "50.0 HZ"
+          ],
+          [
+            "OUTPUT",
+            "REV"
+          ],
+          [
+            "Dirección de avance: Desconecte la entrada digital ED2.",
+            "REM 50.0 Hz OUTPUT FWD"
+          ],
+          [
+            "PARO DEL MOTOR"
+          ],
+          [
+            "Desconecte la entrada digital ED1. El motor se para. Panel de control asistente: La flecha deja de girar. Panel de control básico: El texto FWD empieza a parpadear",
+            "REM",
+            "0.0 HZ"
+          ],
+          [
+            "OUTPUT FWD"
+          ],
+          [
+            "lentamente.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "48\nManual del usuario del ACS550-01/U1\nComo efectuar la Marcha de ID\nEl convertidor de frecuencia calcula automáticamente las características del motor\nmediante magnetización de identificación al ponerlo en marcha por vez primera y\ndespués de cambiar cualquier parámetro del motor (Grupo 99: DATOS DE PARTIDA).\nEllo es válido cuando el parámetro 9910 MARCHA ID tiene valor 0 (OFF/IDMAGN), y\n· el parámetro 9904 = 1 (VECTOR:VELOC) o 2 (VECTOR:PAR), 0\n· el parámetro 9904 = 3 (ESCALAR:FREC) y el parámetro 2101 = 3 (FLYSTART ESC) 0\n5 (GIRAR + SOBREP).\nEn la mayoría de las aplicaciones, no existe la necesidad de efectuar una Marcha de ID\npor separado [9910 MARCHA ID = 1 (SI)]. La Marcha de ID debe seleccionarse si:\n· se emplea el modo de control vectorial [parámetro 9904 = 1 (VECTOR:VELOC) 0\n2 (VECTOR:PAR)], y/o\n· el punto de funcionamiento está cerca de la velocidad cero, y/o\n· se requiere el funcionamiento en el rango de par por encima del par nominal del\nmotor dentro de un amplio rango de velocidad y sin que se requiera\nrealimentación de velocidad medida.\nNota: si los parámetros de motor (Grupo 99: DATOS DE PARTIDA) se cambian\ndespués de la Marcha de ID, ésta debe repetirse.\nProcedimiento de Marcha de ID\nEl procedimiento de ajuste de parámetros general no se vuelve a explicar aquí. Para\nel Panel de control asistente véase la página 59, y para el Panel de control básico\nvéase la página 77 del capítulo Paneles de control.\nCOMPROBACIÓN PREVIA\nADVERTENCIA: el motor funcionará hasta aproximadamente un 50 ... 80% de la\n!\nvelocidad nominal durante la Marcha de ID. El motor girará en avance. Verifique que\nsea seguro accionar el motor antes de efectuar la Marcha de ID.\nDesacople el motor del equipo accionado.\nCompruebe que los valores de los parámetros de datos del motor 9905 ... 9909 sean equivalentes\na los de la placa de características del motor, como se muestra en los pasos de la página 41.\nSi los valores de parámetro (Grupo 01: DATOS FUNCIONAM a Grupo 98: OPCIONES) se\ncambian antes de la Marcha de ID, compruebe que los nuevos ajustes satisfagan los\nsiguientes requisitos:\n2001 VELOCIDAD MINIMA ≤ 0 rpm\n2002 VELOCIDAD MAXIMA > 80% de la velocidad nominal del motor\n2003 INTENSID MAXIMA ≥ /2hd\n2017 PAR MAX 1 > 50% o 2018 PAR MAX 2 > 50%, en función de qué límite se esté utilizando\nsegún el parámetro 2014 SEL PAR MAXIMO.\nCompruebe que la señal de Permiso de Marcha esté activada (parámetro 1601).\nVerifique que el panel se halle en control local (se muestra LOC a la izquierda/arriba). Pulsar\nla tecla(e) para cambiar entre control local y remoto.\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": [
+        [
+          [
+            "COMPROBACIÓN PREVIA"
+          ],
+          [
+            ":unselected:",
+            "ADVERTENCIA: el motor funcionará hasta aproximadamente un 50 ... 80% de la ! velocidad nominal durante la Marcha de ID. El motor girará en avance. Verifique que sea seguro accionar el motor antes de efectuar la Marcha de ID. Desacople el motor del equipo accionado."
+          ],
+          [
+            ":unselected:",
+            "Compruebe que los valores de los parámetros de datos del motor 9905 ... 9909 sean equivalentes a los de la placa de características del motor, como se muestra en los pasos de la página 41."
+          ],
+          [
+            ":unselected:",
+            "Si los valores de parámetro (Grupo 01: DATOS FUNCIONAM a Grupo 98: OPCIONES) se cambian antes de la Marcha de ID, compruebe que los nuevos ajustes satisfagan los siguientes requisitos:"
+          ],
+          [
+            ":unselected:",
+            "2001 VELOCIDAD MINIMA ≤ 0 rpm"
+          ],
+          [
+            ":unselected:",
+            "2002 VELOCIDAD MAXIMA > 80% de la velocidad nominal del motor"
+          ],
+          [
+            ":unselected:",
+            "2003 INTENSID MAXIMA ≥ /2hd"
+          ],
+          [
+            ":unselected:",
+            "2017 PAR MAX 1 > 50% o 2018 PAR MAX 2 > 50%, en función de qué límite se esté utilizando según el parámetro 2014 SEL PAR MAXIMO."
+          ],
+          [
+            ":unselected: :unselected:",
+            "Compruebe que la señal de Permiso de Marcha esté activada (parámetro 1601)."
+          ],
+          [
+            "Verifique que el panel se halle en control local (se muestra LOC a la izquierda/arriba). Pulsar la tecla(e) para cambiar entre control local y remoto.\n:selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Manual del usuario del ACS550-01/U1\n49\nMARCHA DE ID CON EL PANEL DE CONTROL ASISTENTE\nCambie el parámetro 9910 MARCHA ID a 1 (SI). Guarde el nuevo\najuste pulsando VARDAF\nLOC UPAR EDIT\n9910 MARCHA ID\nON\n[1]\nCANCELA 00:00 GUARDAR\nSi desea supervisar valores actuales durante la Marcha de ID,\npase a modo de Salida pulsando\nSALIR\n1\nrepetidamente hasta\nllegar a dicho modo.\nLOC\n50, 0HZ\n0.0 Hz\n0.0 A\n0.0 %\nDIR\n00:00\nMENU\nPulse\n<I>\npara iniciar la Marcha de ID. El panel sigue\ncambiando entre la pantalla mostrada al iniciar la Marcha de ID\ny la visualización de alarma mostrada a la derecha.\nLOC &ALARMA\nALARMA 2019\nMarcha ID\nEn general, se recomienda no pulsar ninguna de las teclas del\npanel de control durante la Marcha de ID. No obstante, puede\ndetener la Marcha de ID en cualquier momento pulsando\n.\n00:00\nTras finalizar la Marcha de ID, la alarma deja de visualizarse.\nSi la Marcha de ID no se efectúa satisfactoriamente, se\nvisualiza el fallo de la derecha.\nLOC & FALLO\nFALLO 11\nERR MAR ID\n00:00\nMARCHA DE ID CON EL PANEL DE CONTROL BÁSICO\nCambie el parámetro 9910 MARCHA ID a 1 (SI). Guarde el nuevo\najuste pulsando\n.\nLOC\n9910\nPAR\nFWD\nLOC\n1\nPAR SET FWD\nSi desea supervisar valores actuales durante la Marcha de ID,\npase a modo de Salida pulsando\nrepetidamente hasta\nllegar a dicho modo.\nLOC\nOUTPUT\n0.0\nHZ\nFWD\nPulse\npara iniciar la Marcha de ID. El panel sigue\ncambiando entre la pantalla mostrada al iniciar la Marcha de ID\ny la visualización de alarma mostrada a la derecha.\nLOC\nA2019\nFWD\nEn general, se recomienda no pulsar ninguna de las teclas del\npanel de control durante la Marcha de ID. No obstante, puede\ndetener la Marcha de ID en cualquier momento pulsando\n.\nTras finalizar la Marcha de ID, la alarma deja de visualizarse.\nSi la Marcha de ID no se efectua satisfactoriamente, se\nvisualiza el fallo de la derecha.\nLOC\nF0011\nFWD\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": [
+        [
+          [
+            "MARCHA DE ID CON EL PANEL DE CONTROL ASISTENTE"
+          ],
+          [
+            ":unselected:",
+            "Cambie el parámetro 9910 MARCHA ID a 1 (SI). Guarde el nuevo ajuste pulsando VARDAF",
+            "",
+            "LOC UPAR EDIT 9910 MARCHA ID ON [1]"
+          ],
+          [
+            "",
+            "",
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            ":unselected:",
+            "Si desea supervisar valores actuales durante la Marcha de ID, pase a modo de Salida pulsando SALIR 1 repetidamente hasta llegar a dicho modo.",
+            "",
+            "LOC 50, 0HZ 0.0 Hz 0.0 A 0.0 %"
+          ],
+          [
+            "DIR 00:00 MENU"
+          ],
+          [
+            ":unselected:",
+            "Pulse :selected: <I> para iniciar la Marcha de ID. El panel sigue cambiando entre la pantalla mostrada al iniciar la Marcha de ID y la visualización de alarma mostrada a la derecha.",
+            "",
+            "LOC &ALARMA ALARMA 2019 Marcha ID"
+          ],
+          [
+            "En general, se recomienda no pulsar ninguna de las teclas del panel de control durante la Marcha de ID. No obstante, puede detener la Marcha de ID en cualquier momento pulsando .\n:selected:",
+            "",
+            "00:00"
+          ],
+          [
+            "Tras finalizar la Marcha de ID, la alarma deja de visualizarse. Si la Marcha de ID no se efectúa satisfactoriamente, se visualiza el fallo de la derecha.",
+            "",
+            "LOC & FALLO FALLO 11 ERR MAR ID"
+          ],
+          [
+            "00:00"
+          ],
+          [
+            "MARCHA DE ID CON EL PANEL DE CONTROL BÁSICO"
+          ],
+          [
+            ":unselected:",
+            "Cambie el parámetro 9910 MARCHA ID a 1 (SI). Guarde el nuevo ajuste pulsando :selected: .",
+            "",
+            "LOC 9910 PAR FWD"
+          ],
+          [
+            "",
+            "",
+            "LOC 1 PAR SET FWD"
+          ],
+          [
+            ":unselected:",
+            "Si desea supervisar valores actuales durante la Marcha de ID, pase a modo de Salida pulsando :selected: repetidamente hasta llegar a dicho modo.",
+            "",
+            "LOC OUTPUT 0.0 HZ FWD"
+          ],
+          [
+            ":unselected:",
+            "Pulse :selected: para iniciar la Marcha de ID. El panel sigue cambiando entre la pantalla mostrada al iniciar la Marcha de ID y la visualización de alarma mostrada a la derecha.",
+            "",
+            "LOC A2019 FWD"
+          ],
+          [
+            "",
+            "En general, se recomienda no pulsar ninguna de las teclas del panel de control durante la Marcha de ID. No obstante, puede detener la Marcha de ID en cualquier momento pulsando .\n:selected:",
+            ""
+          ],
+          [
+            "Tras finalizar la Marcha de ID, la alarma deja de visualizarse. Si la Marcha de ID no se efectua satisfactoriamente, se visualiza el fallo de la derecha.",
+            "",
+            "LOC F0011 FWD"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "50\nManual del usuario del ACS550-01/U1\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Manual del usuario del ACS550-01/U1\n51\nPaneles de control\nAcerca de los paneles de control\nUtilice un panel de control para controlar el convertidor, para leer datos de estado y\npara ajustar parámetros. El convertidor de frecuencia funciona con cualquiera de los\ndos tipos de panel de control:\n· Panel de control básico - Este panel (descrito en el apartado Panel de control\nbásico de la página 72) proporciona herramientas básicas para la entrada\nmanual de valores de parámetros.\n· Panel de control asistente - Este panel (descrito a continuación) incluye\nasistentes preprogramados para automatizar las configuraciones de parámetros\nmás comunes. El panel ofrece soporte para idiomas. Está disponible con\ndistintos conjuntos de idiomas.\nCompatibilidad\nEl manual es compatible con las siguientes versiones de panel:\n· Panel de control básico: ACS-CP-C Rev. M o posterior\n· Panel de control asistente (Área 1): ACS-CP-A Rev. F o posterior\n(la nueva serie fabricada desde 2007 con número de serie XYYWWRXXXX,\ndonde el año YY = 07 o superior y la revisión R = F, G, E, ... )\n· Panel de control asistente (Asia): ACS-CP-D Rev. Q o posterior\nVéase la página 55 acerca de cómo determinar la versión de su Panel de control\nasistente. Véase el parámetro 9901 IDIOMA para ver los idiomas soportados por los\ndistintos Paneles de control asistentes.\nPaneles de control",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "52\nManual del usuario del ACS550-01/U1\nPanel de control asistente\nCaracterísticas\nEl Panel de control asistente cuenta con:\n· panel de control alfanumérico con una pantalla LCD\n· selección de idioma para la pantalla\n· asistente de arranque para facilitar la puesta a punto del convertidor\n· función de copia - los parámetros pueden copiarse en la memoria del panel de\ncontrol para una transferencia posterior a otros convertidores, o para la copia de\nseguridad de un sistema concreto.\n· ayuda sensible al contexto\n· reloj de tiempo real.\nSinopsis\n1\n2a LOC\nLa tabla siguiente resume las funciones de las teclas y las pantallas del Panel de\ncontrol asistente.\n49, 1HZ\n49.1 Hz\n0.5 A\n10.7 %\n2b\n2c\nDIR\n00:00\nMENU\n3\n5\n7\nLOC\nREM\nA\n4\n6\n5\n9\nSTOP\nSTART\n?\n8\n10\nN.º\nUso\n1\nLED de estado - Verde para el funcionamiento normal. Si el LED parpadea, o\nestá en rojo, consulte el apartado Indicaciones de diagnóstico en la página 263.\n2\nPantalla LCD - Se divide en tres áreas principales:\na. Línea de estado - variable según el modo de funcionamiento, véase el\napartado Línea de estado en la página 53.\nb. Centro - variable, en general muestra valores de parámetros, menús o listas.\nTambién muestra fallos y alarmas.\nc. Línea inferior - muestra la función actual de las dos teclas multifunción y la\nindicación horaria, si se ha activado.\n3\nTecla multifunción 1 - La función depende del contexto. El texto en la esquina\ninferior izquierda de la pantalla LCD indica la función.\n4\nTecla multifunción 2 - La función depende del contexto. El texto en la esquina\ninferior derecha de la pantalla LCD indica la función.\n5\nArriba -\n· Permite el desplazamiento ascendente por un menú o lista visualizada en la\nparte central de la pantalla LCD.\n· Incrementa un valor si se ha seleccionado un parámetro.\n· Incrementa el valor de referencia si está resaltada la esquina superior derecha.\nMantener la tecla pulsada hace que el valor cambie con mayor rapidez.\n6\nAbajo -\n· Permite el desplazamiento descendente por un menú o lista visualizada en la\nparte central de la pantalla LCD.\n· Reduce un valor si se ha seleccionado un parámetro.\n· Reduce el valor de referencia si está resaltada la esquina superior derecha.\nMantener la tecla pulsada hace que el valor cambie con mayor rapidez.\n7\nLOC/REM - Cambia entre control local y remoto del convertidor.\n8\nAyuda - Muestra información sensible al contexto al pulsar la tecla. La\ninformación visualizada describe el elemento actualmente resaltado en el área\ncentral de la pantalla.\n9\nSTOP - Detiene el convertidor en control local.\n10\nSTART - Arranca el convertidor en control local.\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "N.º",
+            "Uso"
+          ],
+          [
+            "1",
+            "LED de estado - Verde para el funcionamiento normal. Si el LED parpadea, o está en rojo, consulte el apartado Indicaciones de diagnóstico en la página 263."
+          ],
+          [
+            "2",
+            "Pantalla LCD - Se divide en tres áreas principales: a. Línea de estado - variable según el modo de funcionamiento, véase el apartado Línea de estado en la página 53. b. Centro - variable, en general muestra valores de parámetros, menús o listas. También muestra fallos y alarmas. c. Línea inferior - muestra la función actual de las dos teclas multifunción y la indicación horaria, si se ha activado."
+          ],
+          [
+            "3",
+            "Tecla multifunción 1 - La función depende del contexto. El texto en la esquina inferior izquierda de la pantalla LCD indica la función."
+          ],
+          [
+            "4",
+            "Tecla multifunción 2 - La función depende del contexto. El texto en la esquina inferior derecha de la pantalla LCD indica la función."
+          ],
+          [
+            "5",
+            "Arriba - · Permite el desplazamiento ascendente por un menú o lista visualizada en la parte central de la pantalla LCD. · Incrementa un valor si se ha seleccionado un parámetro. · Incrementa el valor de referencia si está resaltada la esquina superior derecha. Mantener la tecla pulsada hace que el valor cambie con mayor rapidez."
+          ],
+          [
+            "6",
+            "Abajo - · Permite el desplazamiento descendente por un menú o lista visualizada en la parte central de la pantalla LCD. · Reduce un valor si se ha seleccionado un parámetro. · Reduce el valor de referencia si está resaltada la esquina superior derecha. Mantener la tecla pulsada hace que el valor cambie con mayor rapidez."
+          ],
+          [
+            "7",
+            "LOC/REM - Cambia entre control local y remoto del convertidor."
+          ],
+          [
+            "8",
+            "Ayuda - Muestra información sensible al contexto al pulsar la tecla. La información visualizada describe el elemento actualmente resaltado en el área central de la pantalla."
+          ],
+          [
+            "9",
+            "STOP - Detiene el convertidor en control local."
+          ],
+          [
+            "10",
+            "START - Arranca el convertidor en control local."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Manual del usuario del ACS550-01/U1\n53\nLínea de estado\nLa línea superior de la pantalla LCD muestra la información de estado básica del\nconvertidor de frecuencia.\nLOC 5\n1 2\n49, 1HZ\n4\nLOC & MENU\n1 2 3\n4\n1\nN.º\nCampo\nAlternativas\nSignificado\n1\nLugar de control\nLOC\nEl control del convertidor es local, es decir, desde\nel panel de control.\nREM\nEl control del convertidor es a distancia, como la\nE/S del convertidor o bus de campo.\n2\nEstado\n2\nDirección de avance del eje\n5\nDirección inversa del eje\nFlecha giratoria\nEl convertidor está funcionando en el punto de\nconsigna.\nFlecha giratoria punteada\nEl convertidor está funcionando pero no en el\npunto de consigna.\nFlecha estacionaria\nEl convertidor está parado.\nFlecha punteada\nestacionaria\nEl comando de marcha está presente pero el\nmotor no funciona, por ejemplo porque falta el\npermiso de inicio.\n3\nModo de manejo\ndel panel\n· Nombre del modo actual\n· Nombre de la lista o menú visualizado\n· Nombre del estado de funcionamiento, p. ej.\nEDICION PAR.\n4\nValor de\nreferencia o\nnúmero del\nelemento\nseleccionado.\n· Valor de referencia en el modo de Salida\n· Número del elemento resaltado, p. ej. modo,\ngrupo de parámetros o fallo.\nManejo\nEl panel de control se maneja mediante menús y teclas. Las teclas incluyen dos\nteclas multifunción sensibles al contexto, cuya función actual se indica mediante el\ntexto mostrado en la pantalla encima de cada tecla.\nPuede seleccionar una opción, p. ej. el modo de funcionamiento o un parámetro,\ndesplazando las teclas de flecha\ny\nhasta que la opción quede resaltada\n(en vídeo inverso) y pulsando la tecla multifunción adecuada. Normalmente, la tecla\nmultifunción derecha permite entrar en un modo, aceptar una opción o guardar los\ncambios. La tecla multifunción izquierda suele utilizarse para cancelar los cambios\nefectuados y volver al nivel anterior de funcionamiento.\nEl Panel de control asistente tiene nueve modos de panel: Salida, Parámetros,\nAsistentes, Parámetros modificados, Registrador de fallos, Fecha y Hora, Copia de\nseguridad de parámetros, Ajustes de E/S y Fallo. El manejo en los ocho primeros\nmodos se describe en este capítulo. Cuando se produce un fallo o una alarma, el\npanel pasa automáticamente al modo de Fallo y muestra el fallo o la alarma. Puede\nrestaurarlo en modo de Salida o Fallo (véase el capítulo Diagnósticos).\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "N.º",
+            "Campo",
+            "Alternativas",
+            "Significado"
+          ],
+          [
+            "1",
+            "Lugar de control",
+            "LOC",
+            "El control del convertidor es local, es decir, desde el panel de control."
+          ],
+          [
+            "REM",
+            "El control del convertidor es a distancia, como la E/S del convertidor o bus de campo."
+          ],
+          [
+            "2",
+            "Estado",
+            "2",
+            "Dirección de avance del eje"
+          ],
+          [
+            "5",
+            "Dirección inversa del eje"
+          ],
+          [
+            "Flecha giratoria",
+            "El convertidor está funcionando en el punto de consigna."
+          ],
+          [
+            "Flecha giratoria punteada",
+            "El convertidor está funcionando pero no en el punto de consigna."
+          ],
+          [
+            "Flecha estacionaria",
+            "El convertidor está parado."
+          ],
+          [
+            "Flecha punteada estacionaria",
+            "El comando de marcha está presente pero el motor no funciona, por ejemplo porque falta el permiso de inicio."
+          ],
+          [
+            "3",
+            "Modo de manejo del panel",
+            "",
+            "· Nombre del modo actual · Nombre de la lista o menú visualizado · Nombre del estado de funcionamiento, p. ej. EDICION PAR."
+          ],
+          [
+            "4",
+            "Valor de referencia o número del elemento seleccionado.",
+            "",
+            "· Valor de referencia en el modo de Salida · Número del elemento resaltado, p. ej. modo, grupo de parámetros o fallo."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "54\nManual del usuario del ACS550-01/U1\nInicialmente el panel se encuentra en modo de Salida, en\nel cual es posible efectuar la puesta en marcha y el paro,\ncambiar la dirección, cambiar entre control remoto y local,\nmodificar el valor de referencia y monitorizar hasta tres\nvalores actuales. Para llevar a cabo otras tareas, vaya\nprimero al Menú principal y seleccione el modo apropiado\nen el menú. La línea de estado (véase el apartado Línea\nde estado en la página 53) muestra el nombre del menú,\nmodo, elemento o estado actual.\nLOC\n49, 1HZ\n49.1 Hz\n0.5 A\n10.7 %\nDIR\n7 00:00 |\nMENU\nLOC UMENU PRPAL -1\nPARAMETROS\nASISTENTES\nPAR CAMBIADO\nSALIR 00:00 INTRO\nCómo realizar tareas comunes\nLa tabla siguiente detalla las tareas comunes, el modo en que es posible efectuarlas y el\nnúmero de la página en que se describen en detalle los pasos para realizar la tarea.\nTarea\nModo\nPágina\nCómo obtener ayuda\nCualquiera\n55\nCómo determinar la versión del panel\nA la conexión\n55\nCómo ajustar el contraste de la pantalla\nSalida\n58\nCómo cambiar entre control local y remoto\nCualquiera\n56\nCómo poner en marcha y detener el convertidor\nCualquiera\n56\nCómo cambiar la dirección de giro del motor\nSalida\n57\nCómo ajustar la velocidad, frecuencia o referencia de par\nSalida\n58\nCómo cambiar el valor de un parámetro\nParámetros\n59\nCómo seleccionar las señales monitorizadas\nParámetros\n60\nCómo realizar tareas guiadas (especificación de conjuntos de\nparámetros relacionados) con asistentes\nAsistentes\n61\nCómo ver y editar parámetros modificados\nParámetros modificados\n64\nCómo ver fallos\nRegistrador de fallos\n65\nCómo restaurar fallos y alarmas\nSalida, Fallo\n270\nCómo mostrar/ocultar el reloj, cambiar los formatos de fecha y hora,\najustar el reloj y activar/desactivar transiciones automáticas del reloj\nsegún los cambios de ahorro con luz diurna\nFecha y Hora\n66\nCómo copiar parámetros del convertidor al panel de control\nCopia de seguridad de\nparámetros\n69\nCómo restaurar parámetros del panel de control al convertidor\nCopia de seguridad de\nparámetros\n69\nCómo ver información de copia de seguridad\nCopia de seguridad de\nparámetros\n70\nCómo editar y cambiar ajustes de parámetros relacionados con\nterminales de E/S\nAjustes de E/S\n71\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Tarea",
+            "Modo",
+            "Página"
+          ],
+          [
+            "Cómo obtener ayuda",
+            "Cualquiera",
+            "55"
+          ],
+          [
+            "Cómo determinar la versión del panel",
+            "A la conexión",
+            "55"
+          ],
+          [
+            "Cómo ajustar el contraste de la pantalla",
+            "Salida",
+            "58"
+          ],
+          [
+            "Cómo cambiar entre control local y remoto",
+            "Cualquiera",
+            "56"
+          ],
+          [
+            "Cómo poner en marcha y detener el convertidor",
+            "Cualquiera",
+            "56"
+          ],
+          [
+            "Cómo cambiar la dirección de giro del motor",
+            "Salida",
+            "57"
+          ],
+          [
+            "Cómo ajustar la velocidad, frecuencia o referencia de par",
+            "Salida",
+            "58"
+          ],
+          [
+            "Cómo cambiar el valor de un parámetro",
+            "Parámetros",
+            "59"
+          ],
+          [
+            "Cómo seleccionar las señales monitorizadas",
+            "Parámetros",
+            "60"
+          ],
+          [
+            "Cómo realizar tareas guiadas (especificación de conjuntos de parámetros relacionados) con asistentes",
+            "Asistentes",
+            "61"
+          ],
+          [
+            "Cómo ver y editar parámetros modificados",
+            "Parámetros modificados",
+            "64"
+          ],
+          [
+            "Cómo ver fallos",
+            "Registrador de fallos",
+            "65"
+          ],
+          [
+            "Cómo restaurar fallos y alarmas",
+            "Salida, Fallo",
+            "270"
+          ],
+          [
+            "Cómo mostrar/ocultar el reloj, cambiar los formatos de fecha y hora, ajustar el reloj y activar/desactivar transiciones automáticas del reloj según los cambios de ahorro con luz diurna",
+            "Fecha y Hora",
+            "66"
+          ],
+          [
+            "Cómo copiar parámetros del convertidor al panel de control",
+            "Copia de seguridad de parámetros",
+            "69"
+          ],
+          [
+            "Cómo restaurar parámetros del panel de control al convertidor",
+            "Copia de seguridad de parámetros",
+            "69"
+          ],
+          [
+            "Cómo ver información de copia de seguridad",
+            "Copia de seguridad de parámetros",
+            "70"
+          ],
+          [
+            "Cómo editar y cambiar ajustes de parámetros relacionados con terminales de E/S",
+            "Ajustes de E/S",
+            "71"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Manual del usuario del ACS550-01/U1\n55\nCómo obtener ayuda\nPaso\nAcción\nPantalla\n1.\nPulse\n? para leer el texto de ayuda sensible al contexto del elemento resaltado.\nSi existe texto de ayuda para el elemento, se muestra en la pantalla.\nLOC & GRUPOS\n-10\n01 DATOS FUNCIONAM\n03 SEÑALES ACT BC\n04 HISTORIAL FALLOS\n10 MARCHA/PARO/DIR\n11 SELEC REFERENCIA\nSALIR 00:00\nSEL\nLOC AYUDA\nEste grupo define\nfuentes externas\n(EXT1 y EXT2) para\nórdenes que activan\ncambios de marcha,\nSALIR | 00:00\n2.\nSi no es posible ver todo el texto, desplace las líneas con las teclas\ny\n.\nLOC &AYUDA\nfuentes externas\n(EXT1 y EXT2) para\nórdenes que activan\ncambios de marcha,\nparo y direccion.\nSALIR | 00:00\n3.\nDespués de leer el texto, vuelva a la pantalla anterior pulsando\nSALIR\n7\n.\nLOC & GRUPOS PARAM -10\n01 DATOS FUNCIONAM\n03 SEÑALES ACT BC\n04 HISTORIAL FALLOS\n10 MARCHA/PARO/DIR\n11 SELEC REFERENCIA\nSALIR 00:00\nSEL\nCómo determinar la versión del panel\nPaso\nAcción\nPantalla\n1.\nSi la alimentación está conectada, desconéctela.\n2.\nMantenga la tecla(\n?\npulsada mientras conecta la alimentación y lee la\ninformación. La pantalla muestra la siguiente información del panel:\nPANEL VERSION INFO\nPanel FW:\nX . XX\nROM CRC:\nXXXXXXXXXX\nFlash Rev:\nX . XX\nXXXX>\nXXXXX\nPanel FW: versión del firmware del panel\nROM CRC: suma de control de la ROM del panel\nFlash Rev: versión del contenido flash\nComentario sobre el contenido flash.\nAl soltar la tecla(\n? ), el panel entra en modo de Salida.\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Pulse ? para leer el texto de ayuda sensible al contexto del elemento resaltado. Si existe texto de ayuda para el elemento, se muestra en la pantalla.",
+            "LOC & GRUPOS -10"
+          ],
+          [
+            "01 DATOS FUNCIONAM 03 SEÑALES ACT BC"
+          ],
+          [
+            "04 HISTORIAL FALLOS"
+          ],
+          [
+            "10 MARCHA/PARO/DIR"
+          ],
+          [
+            "11 SELEC REFERENCIA"
+          ],
+          [
+            "SALIR 00:00 SEL"
+          ],
+          [
+            "LOC AYUDA Este grupo define fuentes externas (EXT1 y EXT2) para órdenes que activan cambios de marcha,"
+          ],
+          [
+            "SALIR | 00:00"
+          ],
+          [
+            "2.",
+            "Si no es posible ver todo el texto, desplace las líneas con las teclas y .",
+            "LOC &AYUDA"
+          ],
+          [
+            "fuentes externas (EXT1 y EXT2) para órdenes que activan cambios de marcha, paro y direccion."
+          ],
+          [
+            "SALIR | 00:00"
+          ],
+          [
+            "3.",
+            "Después de leer el texto, vuelva a la pantalla anterior pulsando SALIR 7 .",
+            "LOC & GRUPOS PARAM -10 01 DATOS FUNCIONAM 03 SEÑALES ACT BC"
+          ],
+          [
+            "04 HISTORIAL FALLOS"
+          ],
+          [
+            "10 MARCHA/PARO/DIR"
+          ],
+          [
+            "11 SELEC REFERENCIA"
+          ],
+          [
+            "SALIR 00:00 SEL"
+          ]
+        ],
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Si la alimentación está conectada, desconéctela.",
+            ""
+          ],
+          [
+            "2.",
+            "Mantenga la tecla( ? pulsada mientras conecta la alimentación y lee la información. La pantalla muestra la siguiente información del panel:",
+            "PANEL VERSION INFO Panel FW: X . XX ROM CRC: XXXXXXXXXX Flash Rev: X . XX XXXX> XXXXX\n:selected: :selected: :selected: :selected: :selected: :selected: :selected: :selected: :selected: :selected: :selected:"
+          ],
+          [
+            "",
+            "Panel FW: versión del firmware del panel ROM CRC: suma de control de la ROM del panel Flash Rev: versión del contenido flash Comentario sobre el contenido flash. Al soltar la tecla( ? ), el panel entra en modo de Salida."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "56\nManual del usuario del ACS550-01/U1\nCómo efectuar la puesta en marcha y el paro y cambiar entre control local y remoto\nPuede efectuar la puesta en marcha y el paro y cambiar entre control local y remoto\nen cualquier modo. Para poder poner en marcha o detener el convertidor, éste debe\nestar en control local.\nPaso\nAcción\nPantalla\n1.\n· Para cambiar entre control remoto (se muestra REM en la línea de estado) y\ncontrol local (se muestra LOC en la línea de estado), pulse(REM)\n.\nLOC &MENSAJE\nCambiando al modo\nde control local\nNota: El cambio a control local pude desactivarse con el parámetro 1606\nBLOQUEO LOCAL.\n00:00\nLa primera vez que se pone en marcha la unidad, está en control remoto\n(REM) y se controla desde los terminales de E/S del convertidor. Para\ncambiar a control local (LOC) y controlar el convertidor con el panel de\ncontrol, pulse(\n. El resultado dependerá del tiempo que mantenga pulsada\nla tecla:\n· Si suelta la tecla inmediatamente (en la pantalla destella el mensaje\n\"Cambiando al modo de control local\"), el convertidor se detiene. Ajuste la\nreferencia de control local como se indica en la página 58.\n· Si pulsa la tecla durante unos dos segundos, el convertidor sigue\nfuncionando como antes. El convertidor copia los valores remotos actuales\npara el estado de marcha/paro y la referencia, y los utiliza como los ajustes\nde control local iniciales.\n· Para detener el convertidor en control local, pulse\n.\n· Para arrancar el convertidor en control local, pulse\n.\nLa flecha (¿ o 3) en la línea\nde estado deja de girar.\nLa flecha (¿ o J) en la línea\nde estado empieza a girar.\nHasta que se alcanza el\npunto de consigna, la flecha\nes de tipo punteado.\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "· Para cambiar entre control remoto (se muestra REM en la línea de estado) y control local (se muestra LOC en la línea de estado), pulse(REM) .\n:selected:",
+            "LOC &MENSAJE Cambiando al modo de control local"
+          ],
+          [
+            "",
+            "Nota: El cambio a control local pude desactivarse con el parámetro 1606 BLOQUEO LOCAL.",
+            ""
+          ],
+          [
+            "00:00"
+          ],
+          [
+            "",
+            "La primera vez que se pone en marcha la unidad, está en control remoto (REM) y se controla desde los terminales de E/S del convertidor. Para cambiar a control local (LOC) y controlar el convertidor con el panel de control, pulse( . El resultado dependerá del tiempo que mantenga pulsada la tecla: · Si suelta la tecla inmediatamente (en la pantalla destella el mensaje \"Cambiando al modo de control local\"), el convertidor se detiene. Ajuste la referencia de control local como se indica en la página 58. · Si pulsa la tecla durante unos dos segundos, el convertidor sigue funcionando como antes. El convertidor copia los valores remotos actuales para el estado de marcha/paro y la referencia, y los utiliza como los ajustes de control local iniciales.\n:selected:",
+            ""
+          ],
+          [
+            "",
+            "· Para detener el convertidor en control local, pulse . · Para arrancar el convertidor en control local, pulse .\n:selected: :selected:",
+            "La flecha (¿ o 3) en la línea de estado deja de girar."
+          ],
+          [
+            "La flecha (¿ o J) en la línea de estado empieza a girar. Hasta que se alcanza el punto de consigna, la flecha es de tipo punteado."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Manual del usuario del ACS550-01/U1\n57\nModo de Salida\nEn el Modo de Salida, puede:\n· monitorizar valores actuales de hasta tres señales en Grupo 01: DATOS\nFUNCIONAM\n· cambiar la dirección de giro del motor\n· ajustar la velocidad, frecuencia o referencia de par\n· ajustar el contraste de la pantalla\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nEs posible acceder al modo de Salida pulsando\nSALIR\nrepetidamente.\nEn la esquina superior derecha\nLOC &\n49, 1HZ\nLOC &\n49.1 HZ\nde la pantalla se muestra el\nHZ\nvalor de referencia. El centro\n0.5 A\n10.7 %\n0.4 A\nDIR\n7 00:00\nMENU\npuede configurarse para\n24.4 %\nDIR\n00:00\nMENU\nmostrar hasta tres valores de\nseñal o gráficos de barras. Si\nsólo se selecciona una o dos señales para visualizar en pantalla, el número y el\nnombre de cada una se muestra además del valor o gráfico de barras. Véase la\npágina 60 para consultar instrucciones en cuanto a la selección y modificación de\nlas señales monitorizadas.\n5, 0HZ\n50%\nCómo cambiar la dirección de giro del motor\nPaso\nAcción\nPantalla\n1.\nSi no se encuentra en el modo de Salida, pulse\nSALIR\nrepetidamente hasta\nllegar a dicho modo.\nREM\n2\n49, 1HZ\n49.1 HZ\n0.5 A\n10.7 %\nDIR\n00:00\nMENU\n2.\nSi el convertidor se encuentra en control remoto (se muestra REM en la línea de\nestado), cambie a control local pulsando(EM). La pantalla muestra un mensaje\nsobre el cambio de modo brevemente, y después vuelve al modo de Salida.\nLOC\n49, 1HZ\n49.1 HZ\n0.5 A\n10.7 %\nDIR\n7 00:00\nMENU\n3.\nPara cambiar la dirección de avance (se muestra & en la línea de estado) a\ninversa (se muestra J en la línea de estado), o viceversa, pulse\nDIR\n.\nNota: El parámetro 1003 DIRECCION debe ajustarse a 3 (PETICION).\nLOC 5\n49,1HZ\n49.1 HZ\n0.5 A\n10.7 %\nDIR\n00:00\nMENU\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Si no se encuentra en el modo de Salida, pulse SALIR repetidamente hasta llegar a dicho modo.",
+            "REM 2 49, 1HZ 49.1 HZ 0.5 A 10.7 %"
+          ],
+          [
+            "DIR 00:00 MENU"
+          ],
+          [
+            "2.",
+            "Si el convertidor se encuentra en control remoto (se muestra REM en la línea de estado), cambie a control local pulsando(EM). La pantalla muestra un mensaje sobre el cambio de modo brevemente, y después vuelve al modo de Salida.\n:selected:",
+            "LOC 49, 1HZ 49.1 HZ 0.5 A 10.7 %"
+          ],
+          [
+            "DIR 7 00:00 MENU"
+          ],
+          [
+            "3.",
+            "Para cambiar la dirección de avance (se muestra & en la línea de estado) a inversa (se muestra J en la línea de estado), o viceversa, pulse DIR . Nota: El parámetro 1003 DIRECCION debe ajustarse a 3 (PETICION).\n:selected:",
+            "LOC 5 49,1HZ 49.1 HZ 0.5 A 10.7 %"
+          ],
+          [
+            "DIR 00:00 MENU"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "58\nManual del usuario del ACS550-01/U1\nCómo ajustar la velocidad, frecuencia o referencia de par\nPaso\nAcción\nPantalla\n1.\nSi no se encuentra en el modo de Salida, pulse\nSALIR\n7\nrepetidamente hasta\nllegar a dicho modo.\nREM U\n49, 1HZ\n49.1 Hz\n0.5 A\n10.7 %\nDIR\n00:00\nMENU\n2.\nSi el convertidor se encuentra en control remoto (se muestra REM en la línea de\nestado), cambie a control local pulsando(29). La pantalla muestra un mensaje\nsobre el cambio de modo brevemente, y después vuelve al modo de Salida.\nNota: con el Grupo 11: SELEC REFERENCIA, puede permitir la modificación\nde referencias en control remoto.\nLOC &\n49, 1HZ\n49.1 Hz\n0.5 A\n10.7 %\nDIR\n00:00 MENU\n3.\n· Para incrementar el valor de referencia resaltado en la esquina superior\nderecha de la pantalla, pulse\n.\nEl valor cambia inmediatamente. Se\nguarda en la memoria permanente del convertidor y se restaura de forma\nautomática tras desconectar la alimentación.\n· Para reducir el valor, pulse\n.\nLOC &\n50, 0HZ\n50.0 Hz\n0.5 A\n10.7 %\nDIR\n00:00 MENU\nCómo ajustar el contraste de la pantalla\nPaso\nAcción\nPantalla\n1.\nSi no se encuentra en el modo de Salida, pulse\nSALIR\n1\nrepetidamente hasta\nLOC &\n49, 1HZ\n49.1 Hz\nllegar a dicho modo.\n0.5 A\n10.7 %\nDIR\n00:00 MENU\n2.\n. Para incrementar el contraste, pulse las teclas\nMENU\ny\nsimultáneamente.\nLOC\n49, 1HZ\n49.1 Hz\n0.5 A\n· Para reducir el contraste, pulse las teclas\nMENU\ny\nsimultáneamente.\n10.7 %\nDIR\n00:00\nMENU\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Si no se encuentra en el modo de Salida, pulse SALIR 7 repetidamente hasta llegar a dicho modo.",
+            "REM U 49, 1HZ 49.1 Hz 0.5 A 10.7 %"
+          ],
+          [
+            "DIR 00:00 MENU"
+          ],
+          [
+            "2.",
+            "Si el convertidor se encuentra en control remoto (se muestra REM en la línea de estado), cambie a control local pulsando(29). La pantalla muestra un mensaje sobre el cambio de modo brevemente, y después vuelve al modo de Salida. Nota: con el Grupo 11: SELEC REFERENCIA, puede permitir la modificación de referencias en control remoto.\n:selected:",
+            "LOC & 49, 1HZ 49.1 Hz 0.5 A 10.7 % DIR 00:00 MENU"
+          ],
+          [
+            "3.",
+            "· Para incrementar el valor de referencia resaltado en la esquina superior derecha de la pantalla, pulse . El valor cambia inmediatamente. Se guarda en la memoria permanente del convertidor y se restaura de forma automática tras desconectar la alimentación. · Para reducir el valor, pulse :selected: .",
+            "LOC & 50, 0HZ 50.0 Hz 0.5 A 10.7 % DIR 00:00 MENU"
+          ]
+        ],
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Si no se encuentra en el modo de Salida, pulse SALIR 1 repetidamente hasta",
+            "LOC & 49, 1HZ"
+          ],
+          [
+            "llegar a dicho modo.",
+            "49.1 Hz\n0.5 A 10.7 %"
+          ],
+          [
+            "DIR 00:00 MENU"
+          ],
+          [
+            "2.",
+            ". Para incrementar el contraste, pulse las teclas MENU y simultáneamente.",
+            "LOC 49, 1HZ"
+          ],
+          [
+            "49.1 Hz"
+          ],
+          [
+            "· Para reducir el contraste, pulse las teclas MENU y simultáneamente.",
+            "0.5 A\n10.7 %"
+          ],
+          [
+            "DIR 00:00 MENU"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Manual del usuario del ACS550-01/U1\n59\nModo de parámetros\nEn el modo de parámetros, puede:\n· ver y cambiar valores de parámetros\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nCómo seleccionar un parámetro y cambiar su valor\nPaso\nAcción\nPantalla\n1.\nVaya al menú principal pulsando\nMENU\nsi se encuentra en el modo de Salida, o\nSALIR\nsi no pulsando\nrepetidamente hasta llegar al menú principal.\nLOC &MENU PRPAL -1\nPARAMETROS\nASISTENTES\nPAR CAMBIADO\nSALIR 00:00 INTRO\n2.\nVaya al modo de Parámetro seleccionando PARAMETROS en el menú con las\nINTRO\nteclas\ny\n, y pulsando\n.\nLOC & GRUPOS\n-01|\n01 DATOS FUNCIONAM\n03 SENALES ACT BC\n04 HISTORIAL FALLOS\n10 MARCHA/PARO/DIR\n11 SELEC REFERENCIA\nSALIR 00:00\nSEL\n3.\nSeleccione el grupo de parámetros adecuado con las teclas\ny\n.\nSEL\nPulse\n.\nLOC &GRUPOS PARAM-99\n99 DATOS DE PARTIDA\n01 DATOS FUNCIONAM\n03 SEÑALES ACT BC\n04 HISTORIAL FALLOS\n10 MARCHA/PARO/DIR\nSALIR | 00:00 |\nSEL\nLOC & PARAMETROS\n9901 IDIOMA\nENGLISH\n9902 MACRO DE APLIC\n9904 MODO CTRL MOTOR\n9905 TENSION NOM MOT\nSALIR | 00:00 [\nEDIT\n4.\nSeleccione el parámetro adecuado con las teclas\ny\n.El valor\nactual del parámetro se muestra debajo del parámetro seleccionado.\nPulse\nEDITAR\n.\nLOC & PARAMETROS\n9901 IDIOMA\n9902 MACRO DE APLIC\nESTAND ABB\n9904 MODO CTRL MOTOR\n9905 TENSION NOM MOT\nSALIR 00:00 EDITAR\nLOC VEDICIÓN PAR\n9902 MACRO DE APLIC\nESTAND ABB\n[1]\nCANCELA 00:00 GUARDAR\n5.\nEspecifique un nuevo valor para el parámetro con las teclas\ny\n.\nUna pulsación de la tecla incrementa o reduce el valor. Mantener la tecla\npulsada hace que el valor cambie con mayor rapidez. Pulsar las teclas\nsimultáneamente sustituye el valor visualizado por el valor de fábrica.\nLOC &EDICIÓN PAR\n9902 MACRO DE APLIC\n3-HILOS\n[2]\nCANCELA 00:00 GUARDAR\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Vaya al menú principal pulsando MENU si se encuentra en el modo de Salida, o SALIR si no pulsando :selected: repetidamente hasta llegar al menú principal.",
+            "LOC &MENU PRPAL -1"
+          ],
+          [
+            "PARAMETROS"
+          ],
+          [
+            "ASISTENTES"
+          ],
+          [
+            "PAR CAMBIADO"
+          ],
+          [
+            "SALIR 00:00 INTRO"
+          ],
+          [
+            "2.",
+            "Vaya al modo de Parámetro seleccionando PARAMETROS en el menú con las INTRO teclas y , y pulsando .",
+            "LOC & GRUPOS -01|"
+          ],
+          [
+            "01 DATOS FUNCIONAM"
+          ],
+          [
+            "03 SENALES ACT BC"
+          ],
+          [
+            "04 HISTORIAL FALLOS"
+          ],
+          [
+            "10 MARCHA/PARO/DIR"
+          ],
+          [
+            "11 SELEC REFERENCIA"
+          ],
+          [
+            "SALIR 00:00 SEL"
+          ],
+          [
+            "3.",
+            "Seleccione el grupo de parámetros adecuado con las teclas y . SEL Pulse .",
+            "LOC &GRUPOS PARAM-99"
+          ],
+          [
+            "99 DATOS DE PARTIDA"
+          ],
+          [
+            "01 DATOS FUNCIONAM"
+          ],
+          [
+            "03 SEÑALES ACT BC 04 HISTORIAL FALLOS"
+          ],
+          [
+            "10 MARCHA/PARO/DIR"
+          ],
+          [
+            "SALIR | 00:00 | SEL"
+          ],
+          [
+            "LOC & PARAMETROS"
+          ],
+          [
+            "9901 IDIOMA ENGLISH"
+          ],
+          [
+            "9902 MACRO DE APLIC"
+          ],
+          [
+            "9904 MODO CTRL MOTOR"
+          ],
+          [
+            "9905 TENSION NOM MOT"
+          ],
+          [
+            "SALIR | 00:00 [ EDIT"
+          ],
+          [
+            "4.",
+            "Seleccione el parámetro adecuado con las teclas y .El valor actual del parámetro se muestra debajo del parámetro seleccionado. Pulse EDITAR .",
+            "LOC & PARAMETROS 9901 IDIOMA"
+          ],
+          [
+            "9902 MACRO DE APLIC ESTAND ABB"
+          ],
+          [
+            "9904 MODO CTRL MOTOR"
+          ],
+          [
+            "9905 TENSION NOM MOT"
+          ],
+          [
+            "SALIR 00:00 EDITAR"
+          ],
+          [
+            "LOC VEDICIÓN PAR"
+          ],
+          [
+            "9902 MACRO DE APLIC ESTAND ABB"
+          ],
+          [
+            "[1]"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "5.",
+            "Especifique un nuevo valor para el parámetro con las teclas y . Una pulsación de la tecla incrementa o reduce el valor. Mantener la tecla pulsada hace que el valor cambie con mayor rapidez. Pulsar las teclas simultáneamente sustituye el valor visualizado por el valor de fábrica.",
+            "LOC &EDICIÓN PAR"
+          ],
+          [
+            "9902 MACRO DE APLIC 3-HILOS"
+          ],
+          [
+            "[2]"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "60\nManual del usuario del ACS550-01/U1\nPaso\nAcción\nPantalla\n6.\n· Para guardar el nuevo valor, pulse VARDAF\n.\n. Para cancelar el nuevo valor y mantener el original, pulse ANCEL!\n.\nLOC & PARAMETROS\n9901 IDIOMA\n9902 MACRO DE APLIC\n3-HILOS\n9904 MODO CTRL MOTOR\n9905 TENSION NOM MOT\nSALIR 00:00 EDITAR\nCómo seleccionar las señales monitorizadas\nPaso\nAcción\nPantalla\n1.\nPuede seleccionar qué señales se monitorizan en el modo de Salida y cómo se\nvisualizan con los parámetros del Grupo 34: PANTALLA PANEL. Véase la página\n59 para obtener instrucciones detalladas sobre el cambio de los valores de\nparámetros.\nLOC EDICIÓN PAR\n3401 PARAM SEÑAL1\nFREC SALIDA\n[103]\nPor defecto, la pantalla muestra tres señales. Las señales de fábrica\nespecíficas dependen del valor del parámetro 9902 MACRO DE APLIC: Para\nmacros cuyo valor de fábrica del parámetro 9904 MODO CTRL MOTOR es\n1 (VECTOR:VELOC), el valor de fábrica para la señal 1 es 0102 VELOCIDAD, o si no\n0103 FREC SALIDA. Los valores de fábrica para las señales 2 y 3 son siempre\n0104 INTENSIDAD y 0105 PAR, respectivamente.\nCANCELA 00:00 GUARDAR\nLOC VEDICIÓN PAR\n3408 PARAM SEÑAL2\nINTENSIDAD\n[104]\nCANCELA 00:00 GUARDAR\nPara cambiar las señales de fábrica, seleccione hasta tres señales del Grupo\n01: DATOS FUNCIONAM a visualizar.\nLOC &EDICIÓN PAR\n3415 PARAM SEÑAL3\nPAR\nSeñal 1: Cambie el valor del parámetro 3401 PARAM SEÑAL 1 al índice del\nparámetro de señal en el Grupo 01: DATOS FUNCIONAM (= número del\nparámetro sin el cero inicial), p. ej. 105 indica el parámetro 0105 PAR. El valor\n100 significa que no se muestra ninguna señal.\nRepita lo mismo para las señales 2 (3408 PARAM SEÑAL2) y 3 (3415 PARAM SEÑAL3).\n[105]\nCANCELA 00:00 GUARDAR\n2.\nSeleccione cómo desea que se muestren las señales: como un número decimal o un\ngráfico de barras. Para los números decimales, puede especificar la ubicación de la\ncoma decimal, o emplear la ubicación de la coma decimal y la unidad de la señal de\norigen [ajuste (9 (DIRECTO)]. Para más detalles, véase el parámetro 3404.\nSeñal 1: parámetro 3404 FORM DSP SALIDA1\nSeñal 2: parámetro 3411 FORM DSP SALIDA2\nSeñal 3: parámetro 3418 FORM DSP SALIDA3.\nLOC &EDICIÓN PAR\n3404 FORM DSP SALIDA1\nDIRECTO\n[9]\nCANCELA 00:00 GUARDAR\n3.\nSeleccione las unidades a visualizar para las señales. Esto no tiene efecto si el\nparámetro 3404/3411/3418 se ajusta a 9 (DIRECTO). Para más detalles, véase el\nparámetro 3405.\nSeñal 1: parámetro 3405 UNIDAD SALIDA1\nSeñal 2: parámetro 3412 UNIDAD SALIDA2\nSeñal 3: parámetro 3419 UNIDAD SALIDA3.\nLOC VEDICIÓN PAR\n3405 UNIDAD SALIDA1\nHZ\n[3]\nCANCELA 00:00 GUARDAR\n4.\nSeleccione el escalado para las señales especificando los valores de visualización\nmínimo y máximo. Esto no tiene efecto si el parámetro 3404/3411/3418 se ajusta a\n9 (DIRECTO). Para más detalles, véanse los parámetros 3406 y 3407.\nSeñal 1: parámetros 3406 SALIDA1 MIN y 3407 SALIDA 1 MAX\nSeñal 2: parámetros 3413 SALIDA2 MIN y 3414 SALIDA2 MAX\nLOC EDICIÓN PAR\n3406 SALIDA1 MIN\n0.0 Hz\nCANCELA 00:00 GUARDAR\nSeñal 3: parámetros 3420SALIDA3 MIN y 3421 SALIDA3 MAX.\nLOC EDICIÓN PAR\n3407 SALIDA1 MAX\n500.0 Hz\nCANCELA 00:00 GUARDAR\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "6.",
+            "· Para guardar el nuevo valor, pulse VARDAF . . Para cancelar el nuevo valor y mantener el original, pulse ANCEL! .",
+            "LOC & PARAMETROS 9901 IDIOMA"
+          ],
+          [
+            "9902 MACRO DE APLIC 3-HILOS"
+          ],
+          [
+            "9904 MODO CTRL MOTOR 9905 TENSION NOM MOT"
+          ],
+          [
+            "SALIR 00:00 EDITAR"
+          ]
+        ],
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Puede seleccionar qué señales se monitorizan en el modo de Salida y cómo se visualizan con los parámetros del Grupo 34: PANTALLA PANEL. Véase la página 59 para obtener instrucciones detalladas sobre el cambio de los valores de parámetros.",
+            "LOC EDICIÓN PAR 3401 PARAM SEÑAL1 FREC SALIDA [103]"
+          ],
+          [
+            "Por defecto, la pantalla muestra tres señales. Las señales de fábrica específicas dependen del valor del parámetro 9902 MACRO DE APLIC: Para macros cuyo valor de fábrica del parámetro 9904 MODO CTRL MOTOR es 1 (VECTOR:VELOC), el valor de fábrica para la señal 1 es 0102 VELOCIDAD, o si no 0103 FREC SALIDA. Los valores de fábrica para las señales 2 y 3 son siempre 0104 INTENSIDAD y 0105 PAR, respectivamente.",
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "LOC VEDICIÓN PAR 3408 PARAM SEÑAL2 INTENSIDAD [104]"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "Para cambiar las señales de fábrica, seleccione hasta tres señales del Grupo 01: DATOS FUNCIONAM a visualizar.",
+            "LOC &EDICIÓN PAR 3415 PARAM SEÑAL3"
+          ],
+          [
+            "Señal 1: Cambie el valor del parámetro 3401 PARAM SEÑAL 1 al índice del parámetro de señal en el Grupo 01: DATOS FUNCIONAM (= número del parámetro sin el cero inicial), p. ej. 105 indica el parámetro 0105 PAR. El valor 100 significa que no se muestra ninguna señal. Repita lo mismo para las señales 2 (3408 PARAM SEÑAL2) y 3 (3415 PARAM SEÑAL3).",
+            "PAR\n[105]"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "2.",
+            "Seleccione cómo desea que se muestren las señales: como un número decimal o un gráfico de barras. Para los números decimales, puede especificar la ubicación de la coma decimal, o emplear la ubicación de la coma decimal y la unidad de la señal de origen [ajuste (9 (DIRECTO)]. Para más detalles, véase el parámetro 3404. Señal 1: parámetro 3404 FORM DSP SALIDA1 Señal 2: parámetro 3411 FORM DSP SALIDA2 Señal 3: parámetro 3418 FORM DSP SALIDA3.",
+            "LOC &EDICIÓN PAR 3404 FORM DSP SALIDA1 DIRECTO [9]"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "3.",
+            "Seleccione las unidades a visualizar para las señales. Esto no tiene efecto si el parámetro 3404/3411/3418 se ajusta a 9 (DIRECTO). Para más detalles, véase el parámetro 3405. Señal 1: parámetro 3405 UNIDAD SALIDA1 Señal 2: parámetro 3412 UNIDAD SALIDA2 Señal 3: parámetro 3419 UNIDAD SALIDA3.",
+            "LOC VEDICIÓN PAR 3405 UNIDAD SALIDA1 HZ [3]"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "4.",
+            "Seleccione el escalado para las señales especificando los valores de visualización mínimo y máximo. Esto no tiene efecto si el parámetro 3404/3411/3418 se ajusta a 9 (DIRECTO). Para más detalles, véanse los parámetros 3406 y 3407. Señal 1: parámetros 3406 SALIDA1 MIN y 3407 SALIDA 1 MAX Señal 2: parámetros 3413 SALIDA2 MIN y 3414 SALIDA2 MAX",
+            "LOC EDICIÓN PAR 3406 SALIDA1 MIN 0.0 Hz"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "Señal 3: parámetros 3420SALIDA3 MIN y 3421 SALIDA3 MAX.",
+            "LOC EDICIÓN PAR"
+          ],
+          [
+            "3407 SALIDA1 MAX 500.0 Hz"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Manual del usuario del ACS550-01/U1\n61\nModo de Asistentes\nAl encender por vez primera al convertidor de frecuencia, el Asistente de arranque\nle guía por la configuración de los parámetros básicos. El Asistente de arranque se\ndivide en asistentes, cada uno de los cuales le guía por la tarea de especificar un\nconjunto de parámetros relacionado, por ejemplo Ajuste del motor o Control PID.\nPuede activar los asistentes uno tras otro como sugiere el Asistente de arranque o\nbien de forma independiente. Las tareas de los asistentes se detallan en la tabla de\nla página 62.\nEn el modo de Asistentes, puede:\n· utilizar asistentes para guiarle por la especificación de un conjunto de parámetros\nbásicos\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nCómo utilizar un asistente\nEn la tabla siguiente se muestra la secuencia básica de acciones que le permite utilizar\nlos asistentes. Se utiliza como ejemplo el Asistente de arranque del motor.\nPaso\nAcción\nPantalla\n1.\nVaya al menú principal pulsando\nMENU\nsi se encuentra en el modo de Salida, o\nSALIR\nsi no pulsando\n7\nrepetidamente hasta llegar al menú principal.\nLOC &MENU PRPAL -1\nPARAMETROS\nASISTENTES\nPAR CAMBIADO\nSALIR 00:00 INTRO\n2.\nVaya al modo de Asistentes seleccionando ASISTENTES en el menú con las\nINTRO\nteclas\ny\n, y pulsando\n.\nLOC ASISTENTES\n-1\nAsistente de arranque\nMotor Set-up\nAplicación\nControl veloc. EXT1\nSALIR 00:00\nSEL\n3.\nSEL\nSeleccione el asistente con las teclas\ny\nV\n, y pulse\n.\nSi selecciona cualquier otro asistente distinto del Asistente de arranque, le\nguiará por la tarea de especificar su conjunto de parámetros como se muestra\nen los pasos 4. y 5. siguientes. Tras ello, puede seleccionar otro asistente en el\nmenú de Asistentes o salir del modo de Asistentes. Se utiliza como ejemplo el\nAsistente de arranque del motor.\nLOC EDICIÓN PAR\n9905 TENSION NOM MOT\n220 V\nSALIR 00:00 GUARDAR\nSi selecciona el Asistente de puesta en marcha, se activa el primer asistente\nque le guía por la tarea de especificar su conjunto de parámetros como se\nmuestra en los pasos 4. y 5. siguientes. Seguidamente, el Asistente de\narranque le pregunta si desea continuar con el siguiente asistente o saltarlo -\nSEL\nseleccione la respuesta apropiada con las teclas\ny\n, y pulse\n.\nSi decide saltarlo, el Asistente de arranque formula la misma pregunta para el\nsiguiente asistente, etc.\nLOC SELECCION\n¿Desea\ncontinuar con\nel ajuste de\napContinua?\nSaltar\nSALIR\n1 00:00\nOK\n4.\n· Para especificar un nuevo valor, pulse las teclas\ny\n.\nLOC &EDICIÓN PAR\n9905 TENSION NOM MOT\n240 V\nSALIR\n00:00 GUARDAR\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Vaya al menú principal pulsando MENU si se encuentra en el modo de Salida, o SALIR si no pulsando 7 repetidamente hasta llegar al menú principal.",
+            "LOC &MENU PRPAL -1"
+          ],
+          [
+            "PARAMETROS"
+          ],
+          [
+            "ASISTENTES"
+          ],
+          [
+            "PAR CAMBIADO"
+          ],
+          [
+            "SALIR 00:00 INTRO"
+          ],
+          [
+            "2.",
+            "Vaya al modo de Asistentes seleccionando ASISTENTES en el menú con las INTRO teclas y , y pulsando .",
+            "LOC ASISTENTES -1"
+          ],
+          [
+            "Asistente de arranque"
+          ],
+          [
+            "Motor Set-up Aplicación Control veloc. EXT1"
+          ],
+          [
+            "SALIR 00:00 SEL"
+          ],
+          [
+            "3.",
+            "SEL Seleccione el asistente con las teclas y :selected: V , y pulse . Si selecciona cualquier otro asistente distinto del Asistente de arranque, le guiará por la tarea de especificar su conjunto de parámetros como se muestra en los pasos 4. y 5. siguientes. Tras ello, puede seleccionar otro asistente en el menú de Asistentes o salir del modo de Asistentes. Se utiliza como ejemplo el Asistente de arranque del motor.",
+            "LOC EDICIÓN PAR"
+          ],
+          [
+            "9905 TENSION NOM MOT 220 V"
+          ],
+          [
+            "SALIR 00:00 GUARDAR"
+          ],
+          [
+            ""
+          ],
+          [
+            "Si selecciona el Asistente de puesta en marcha, se activa el primer asistente que le guía por la tarea de especificar su conjunto de parámetros como se muestra en los pasos 4. y 5. siguientes. Seguidamente, el Asistente de arranque le pregunta si desea continuar con el siguiente asistente o saltarlo - SEL seleccione la respuesta apropiada con las teclas y , y pulse . Si decide saltarlo, el Asistente de arranque formula la misma pregunta para el siguiente asistente, etc.\n:selected:",
+            "LOC SELECCION ¿Desea continuar con"
+          ],
+          [
+            "el ajuste de apContinua? Saltar"
+          ],
+          [
+            "SALIR 1 00:00 OK"
+          ],
+          [
+            ""
+          ],
+          [
+            "4.",
+            "· Para especificar un nuevo valor, pulse las teclas y .",
+            "LOC &EDICIÓN PAR"
+          ],
+          [
+            "9905 TENSION NOM MOT 240 V"
+          ],
+          [
+            "SALIR 00:00 GUARDAR"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "62\nManual del usuario del ACS550-01/U1\nPaso\nAcción\nPantalla\n. Para pedir información acerca del parámetro solicitado, pulse la tecla\n?).\nDesplace el texto de ayuda con las teclas\ny\nCierre la ayuda\npulsando\nSALIR\n1\n.\nLOC &AYUDA\nAjustar exactamente\ncomo indica la placa\ndel motor.\nEl valor de tensión\ndebe\nSALIR 00:00\n5.\n· Para aceptar el nuevo valor y continuar con el ajuste del siguiente parámetro,\npulse CARDAF\n.\n· Para detener el asistente, pulse\nSALIR\n7\n.\nLOC VEDICIÓN PAR\n9906 INTENS NOM MOT\n1,2 A\nSALIR 00:00 GUARDAR\nLa tabla siguiente detalla las tareas de los asistentes y los parámetros relevantes\ndel convertidor. En función de la selección efectuada en la tarea Aplicación\n(parámetro 9902 MACRO DE APLIC), el Asistente de arranque decide qué tareas\nsubsiguientes sugiere.\nNombre\nDescripción\nAjustar parámetros\nSelecc. idioma\nSelección del idioma\n9901\nAjuste del motor\nAjuste de los datos del motor\nRealización de la identificación del motor. (Si los límites de velocidad\nno se encuentran dentro del rango permitido: Ajuste de los límites).\n9904 ... 9909\n9910\nAplicación\nSelección de la macro de aplicación\n9902, parámetros asociados a la\nmacro\nMódulos\nopcionales\nActivación de los módulos opcionales\nGrupo 35: TEMP MOT MED\nGrupo 52: COMUNIC PANEL\n9802\nControl veloc.\nEXT1\nSelección de la fuente de la referencia de velocidad\n1103\n(Si se usa EA1: Ajuste de límites, escala, inversión de la entrada\nanalógica EA1)\n(1301 ... 1303, 3001)\nAjuste de los límites de referencia\n1104, 1105\nAjuste de los límites de velocidad (frecuencia)\n2001, 2002, (2007, 2008)\nAjuste de los tiempos de aceleración y deceleración\n2202, 2203\nControl veloc.\nEXT2\nSelección de la fuente de la referencia de velocidad\n1106\n(Si se usa EA1: Ajuste de límites, escala, inversión de la entrada\nanalógica EA1)\n(1301 ... 1303, 3001)\nAjuste de los límites de referencia\n1107, 1108\nControl del par\nSelección del origen de la referencia de par\n1106\n(Si se usa EA1: Ajuste de límites, escala, inversión de la entrada\nanalógica EA1)\n(1301 ... 1303, 3001)\nAjuste de los límites de referencia\n1107, 1108\nAjuste de los tiempos de aumento y disminución de rampa de par\n2401, 2402\nControl PID\nSelección del origen de la referencia de proceso\n1106\n(Si se usa EA1: Ajuste de límites, escala, inversión de la entrada\nanalógica EA1)\n(1301 ... 1303, 3001)\nAjuste de los límites de referencia\n1107, 1108\nAjuste de los límites de velocidad (referencia)\n2001, 2002, (2007, 2008)\nAjuste del origen y los límites del valor actual de proceso\n4016, 4018, 4019\nControl de\nMarcha/Paro\nSelección de la fuente de las señales de marcha y paro de los dos\nlugares de control externos, EXT1 y EXT2\n1001, 1002\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "",
+            ". Para pedir información acerca del parámetro solicitado, pulse la tecla ?). Desplace el texto de ayuda con las teclas y Cierre la ayuda pulsando SALIR 1 .\n:selected: :selected:",
+            "LOC &AYUDA Ajustar exactamente como indica la placa del motor. El valor de tensión debe"
+          ],
+          [
+            "SALIR 00:00"
+          ],
+          [
+            "5.",
+            "· Para aceptar el nuevo valor y continuar con el ajuste del siguiente parámetro, pulse CARDAF . · Para detener el asistente, pulse SALIR 7 .",
+            "LOC VEDICIÓN PAR 9906 INTENS NOM MOT 1,2 A"
+          ],
+          [
+            "SALIR 00:00 GUARDAR"
+          ]
+        ],
+        [
+          [
+            "Nombre",
+            "Descripción",
+            "Ajustar parámetros"
+          ],
+          [
+            "Selecc. idioma",
+            "Selección del idioma",
+            "9901"
+          ],
+          [
+            "Ajuste del motor",
+            "Ajuste de los datos del motor Realización de la identificación del motor. (Si los límites de velocidad no se encuentran dentro del rango permitido: Ajuste de los límites).",
+            "9904 ... 9909 9910"
+          ],
+          [
+            "Aplicación",
+            "Selección de la macro de aplicación",
+            "9902, parámetros asociados a la macro"
+          ],
+          [
+            "Módulos opcionales",
+            "Activación de los módulos opcionales",
+            "Grupo 35: TEMP MOT MED Grupo 52: COMUNIC PANEL 9802"
+          ],
+          [
+            "Control veloc. EXT1",
+            "Selección de la fuente de la referencia de velocidad",
+            "1103"
+          ],
+          [
+            "(Si se usa EA1: Ajuste de límites, escala, inversión de la entrada analógica EA1)",
+            "(1301 ... 1303, 3001)"
+          ],
+          [
+            "Ajuste de los límites de referencia",
+            "1104, 1105"
+          ],
+          [
+            "Ajuste de los límites de velocidad (frecuencia)",
+            "2001, 2002, (2007, 2008)"
+          ],
+          [
+            "Ajuste de los tiempos de aceleración y deceleración",
+            "2202, 2203"
+          ],
+          [
+            "Control veloc. EXT2",
+            "Selección de la fuente de la referencia de velocidad",
+            "1106"
+          ],
+          [
+            "(Si se usa EA1: Ajuste de límites, escala, inversión de la entrada analógica EA1)",
+            "(1301 ... 1303, 3001)"
+          ],
+          [
+            "Ajuste de los límites de referencia",
+            "1107, 1108"
+          ],
+          [
+            "Control del par",
+            "Selección del origen de la referencia de par",
+            "1106"
+          ],
+          [
+            "(Si se usa EA1: Ajuste de límites, escala, inversión de la entrada analógica EA1)",
+            "(1301 ... 1303, 3001)"
+          ],
+          [
+            "Ajuste de los límites de referencia",
+            "1107, 1108"
+          ],
+          [
+            "Ajuste de los tiempos de aumento y disminución de rampa de par",
+            "2401, 2402"
+          ],
+          [
+            "Control PID",
+            "Selección del origen de la referencia de proceso",
+            "1106"
+          ],
+          [
+            "(Si se usa EA1: Ajuste de límites, escala, inversión de la entrada analógica EA1)",
+            "(1301 ... 1303, 3001)"
+          ],
+          [
+            "Ajuste de los límites de referencia",
+            "1107, 1108"
+          ],
+          [
+            "Ajuste de los límites de velocidad (referencia)",
+            "2001, 2002, (2007, 2008)"
+          ],
+          [
+            "Ajuste del origen y los límites del valor actual de proceso",
+            "4016, 4018, 4019"
+          ],
+          [
+            "Control de Marcha/Paro",
+            "Selección de la fuente de las señales de marcha y paro de los dos lugares de control externos, EXT1 y EXT2",
+            "1001, 1002"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Manual del usuario del ACS550-01/U1\n63\nNombre\nDescripción\nAjustar parámetros\nSelección entre EXT1 y EXT2\nDefinición del control de dirección\n1102\n1003\nDefinición de los modos de marcha y paro\n2101 ... 2103\nSelección del uso de la señal de Permiso de Marcha\n1601\nFunciones\ntemporizadas\nAjuste de las funciones temporizadas\nGrupo 36: FUNCIONES TEMP\nSelección del control temporizado de marcha/paro para los\nlugares de control externo EXT1 y EXT2\n1001, 1002\nSelección del control temporizado EXT1/EXT2\n1102\nActivación de la velocidad constante 1 temporizada\n1201\nSelección del estado de función temporizada indicado a través de\nla salida de relé SR\n1401\nSelección del control temporizado del conjunto de parámetros\nPID1 1/2\n4027\nProtecciones\nAjuste de los límites de par e intensidad\n2003, 2017\nSeñales de salida\nSelección de las señales indicadas a través de la salida de relé SR\nSelección de las señales indicadas a través de la salida analógica SA\nAjuste del mínimo, máximo, escalado e inversión\nGrupo 14: SALIDAS DE RELE\nGrupo 15: SALIDAS ANALOG\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Nombre",
+            "Descripción",
+            "Ajustar parámetros"
+          ],
+          [
+            "Selección entre EXT1 y EXT2 Definición del control de dirección",
+            "1102"
+          ],
+          [
+            "1003"
+          ],
+          [
+            "Definición de los modos de marcha y paro",
+            "2101 ... 2103"
+          ],
+          [
+            "Selección del uso de la señal de Permiso de Marcha",
+            "1601"
+          ],
+          [
+            "Funciones temporizadas",
+            "Ajuste de las funciones temporizadas",
+            "Grupo 36: FUNCIONES TEMP"
+          ],
+          [
+            "Selección del control temporizado de marcha/paro para los lugares de control externo EXT1 y EXT2",
+            "1001, 1002"
+          ],
+          [
+            "Selección del control temporizado EXT1/EXT2",
+            "1102"
+          ],
+          [
+            "Activación de la velocidad constante 1 temporizada",
+            "1201"
+          ],
+          [
+            "Selección del estado de función temporizada indicado a través de la salida de relé SR",
+            "1401"
+          ],
+          [
+            "Selección del control temporizado del conjunto de parámetros PID1 1/2",
+            "4027"
+          ],
+          [
+            "Protecciones",
+            "Ajuste de los límites de par e intensidad",
+            "2003, 2017"
+          ],
+          [
+            "Señales de salida",
+            "Selección de las señales indicadas a través de la salida de relé SR Selección de las señales indicadas a través de la salida analógica SA Ajuste del mínimo, máximo, escalado e inversión",
+            "Grupo 14: SALIDAS DE RELE Grupo 15: SALIDAS ANALOG"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "64\nManual del usuario del ACS550-01/U1\nModo de Parámetros modificados\nEn el modo de Parámetros modificados, puede:\n· ver una lista de todos los parámetros que se han modificado a partir de los\nvalores de fábrica de las macros\n· cambiar estos parámetros\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nCómo ver y editar parámetros modificados\nPaso\nAcción\nPantalla\n1.\nVaya al menú principal pulsando\nMENU\nsi se encuentra en el modo de Salida, o\nSALIR\nsi no pulsando\n7\nrepetidamente hasta llegar al menú principal.\nLOC &MENU PRPAL\n-1\nPARAMETROS\nASISTENTES\nPAR CAMBIADO\nSALIR 00:00 INTRO\n2.\nVaya al modo de Parámetros modificados seleccionando PAR CAMBIADO en\nINTRO\nel menú con las teclas\ny\n, y pulsando\n.\nLOC &PAR CAMBIADO\n1202 VELOC CONST 1\n10,0 HZ\n1203 VELOC CONST 2\n1204 VELOC CONST 3\n9902 MACRO DE APLIC\nSALIR 00:00 EDITAR\n3.\nSeleccione el parámetro modificado de la lista con las teclas\ny\n. El\nEDITAR\nvalor del parámetro seleccionado se muestra debajo de él. Pulse\npara\nmodificar el valor.\nLOC &EDICIÓN PAR\n1202 VELOC CONST 1\n10,0 HZ\nCANCELA 00:00 GUARDAR\n4.\nEspecifique un nuevo valor para el parámetro con las teclas\ny\n.\nUna pulsación de la tecla incrementa o reduce el valor. Mantener la tecla\npulsada hace que el valor cambie con mayor rapidez. Pulsar las teclas\nsimultáneamente sustituye el valor visualizado por el valor de fábrica.\nLOC &EDICIÓN PAR-\n1202 VELOC CONST 1\n15,0 Hz\nCANCELA 00:00 GUARDAR\n5.\n· Para aceptar el nuevo valor, pulse 'VARDAF\n. Si el nuevo valor es el valor por\ndefecto, el parámetro se elimina de la lista de los parámetros modificados.\n· Para cancelar el nuevo valor y mantener el original, pulse\n.\nLOC & PAR CAMBIADO\n1202 VELOC CONST 1\n15,0 HZ\n1203 VELOC CONST 2\n1204 VELOC CONST 3\n9902 MACRO DE APLIC\nSALIR 00:00 EDITAR\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Vaya al menú principal pulsando MENU si se encuentra en el modo de Salida, o SALIR si no pulsando 7 repetidamente hasta llegar al menú principal.",
+            "LOC &MENU PRPAL -1"
+          ],
+          [
+            "PARAMETROS"
+          ],
+          [
+            "ASISTENTES"
+          ],
+          [
+            "PAR CAMBIADO"
+          ],
+          [
+            "SALIR 00:00 INTRO"
+          ],
+          [
+            "2.",
+            "Vaya al modo de Parámetros modificados seleccionando PAR CAMBIADO en INTRO el menú con las teclas y , y pulsando .",
+            "LOC &PAR CAMBIADO"
+          ],
+          [
+            "1202 VELOC CONST 1 10,0 HZ"
+          ],
+          [
+            "1203 VELOC CONST 2"
+          ],
+          [
+            "1204 VELOC CONST 3"
+          ],
+          [
+            "9902 MACRO DE APLIC"
+          ],
+          [
+            "SALIR 00:00 EDITAR"
+          ],
+          [
+            "3.",
+            "Seleccione el parámetro modificado de la lista con las teclas y . El EDITAR valor del parámetro seleccionado se muestra debajo de él. Pulse para modificar el valor.",
+            "LOC &EDICIÓN PAR 1202 VELOC CONST 1 10,0 HZ"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "4.",
+            "Especifique un nuevo valor para el parámetro con las teclas y . Una pulsación de la tecla incrementa o reduce el valor. Mantener la tecla pulsada hace que el valor cambie con mayor rapidez. Pulsar las teclas simultáneamente sustituye el valor visualizado por el valor de fábrica.",
+            "LOC &EDICIÓN PAR-"
+          ],
+          [
+            "1202 VELOC CONST 1 15,0 Hz"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "5.",
+            "· Para aceptar el nuevo valor, pulse 'VARDAF . Si el nuevo valor es el valor por defecto, el parámetro se elimina de la lista de los parámetros modificados. · Para cancelar el nuevo valor y mantener el original, pulse .",
+            "LOC & PAR CAMBIADO"
+          ],
+          [
+            "1202 VELOC CONST 1 15,0 HZ"
+          ],
+          [
+            "1203 VELOC CONST 2 1204 VELOC CONST 3"
+          ],
+          [
+            "9902 MACRO DE APLIC"
+          ],
+          [
+            "SALIR 00:00 EDITAR"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Manual del usuario del ACS550-01/U1\n65\nModo de Registrador de fallos.\nEn el modo de Registrador de fallos, puede:\n· ver el historial de fallos del convertidor con un máximo de diez fallos (tras una\ndesconexión, sólo se guardan en memoria los tres últimos fallos)\n· ver los detalles de los tres últimos fallos (tras una desconexión, sólo se guardan\nen memoria los detalles del fallo más reciente)\n· leer el texto de ayuda para el fallo\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nCómo ver fallos\nPaso\nAcción\nPantalla\n1.\nMENU\nVaya al menú principal pulsando\nsi se encuentra en el modo de Salida, o\nsi no pulsando\nSALIR\nrepetidamente hasta llegar al menú principal.\nLOC &MENU PRPAL -1\nPARAMETROS\nASISTENTES\nPAR CAMBIADO\nSALIR 00:00\nINTRO\n2.\nVaya al modo de Registrador de fallos seleccionando REGISTR FALL en el\nINTRO\nmenú con las teclas\ny\n, y pulsando\n. La pantalla muestra el\nregistro de fallos empezando por el último fallo.\nEl número de la fila es el código de fallo de conformidad con el cual se detallan\nlas causas y las acciones correctoras en el capítulo Diagnósticos.\nLOC REGISTR FALL\n10: PERD PANEL\n19.03. 05 13:04: 57\n6:\nSUBTENS. CC\n6:\nFALLO EA1\nSALIR 00:00 DETALLE\n3.\nPara ver los detalles de un fallo, seleccionelo con las teclas\ny\n, y\npulse ETALLE\n.\nLOC & PERD PANEL\nFALLO\n10\nTIEM FALLO1\n13:04:57\nTIEM FALLO2\nDIAG\nSALIR 00:00\n4.\nPara ver el texto de ayuda, pulse\nDIAG\nDesplace el texto de ayuda con las\nteclas\ny\n.\nTras leer la ayuda, pulse\nOK\npara volver a la pantalla anterior.\nLOC &DIAGNOSTICO\nComprobar: Líneas\ny conexiones de\ncomunic. ,\nparámetro 3002,\nparametros de grupos\nSALIR | 00:00 |\nOK\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "MENU Vaya al menú principal pulsando si se encuentra en el modo de Salida, o si no pulsando SALIR repetidamente hasta llegar al menú principal.\n:selected:",
+            "LOC &MENU PRPAL -1 PARAMETROS"
+          ],
+          [
+            "ASISTENTES PAR CAMBIADO"
+          ],
+          [
+            "SALIR 00:00 INTRO"
+          ],
+          [
+            "2.",
+            "Vaya al modo de Registrador de fallos seleccionando REGISTR FALL en el INTRO menú con las teclas y , y pulsando :selected: . La pantalla muestra el registro de fallos empezando por el último fallo. El número de la fila es el código de fallo de conformidad con el cual se detallan las causas y las acciones correctoras en el capítulo Diagnósticos.",
+            "LOC REGISTR FALL 10: PERD PANEL 19.03. 05 13:04: 57 6: SUBTENS. CC 6: FALLO EA1"
+          ],
+          [
+            "SALIR 00:00 DETALLE"
+          ],
+          [
+            "3.",
+            "Para ver los detalles de un fallo, seleccionelo con las teclas y , y pulse ETALLE .\n:selected:\n:selected:",
+            "LOC & PERD PANEL FALLO 10 TIEM FALLO1 13:04:57 TIEM FALLO2"
+          ],
+          [
+            "DIAG SALIR 00:00"
+          ],
+          [
+            "4.",
+            "Para ver el texto de ayuda, pulse DIAG Desplace el texto de ayuda con las teclas y . Tras leer la ayuda, pulse OK para volver a la pantalla anterior.",
+            "LOC &DIAGNOSTICO Comprobar: Líneas y conexiones de comunic. , parámetro 3002, parametros de grupos SALIR | 00:00 | OK"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "66\nManual del usuario del ACS550-01/U1\nModo de Fecha y Hora\nEn el modo de Fecha y Hora, puede:\n· mostrar u ocultar el reloj\n· cambiar los formatos de visualización de la fecha y la hora\n· ajustar la fecha y la hora\n· activar o desactivar las transiciones automáticas del reloj según los cambios de\nahorro con luz diurna\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nEl Panel de control asistente contiene una pila para garantizar la función del reloj\ncuando el panel no está siendo alimentado por el convertidor.\nCómo mostrar u ocultar el reloj, cambiar los formatos de visualización, ajustar la fecha y la hora,\ny activar o desactivar las transiciones del reloj según los cambios de ahorro con luz diurna\nPaso\nAcción\nPantalla\n1.\nMENU\nVaya al menú principal pulsando\nsi se encuentra en el modo de Salida, o\nsi no pulsando\nSALIR\nrepetidamente hasta llegar al menú principal.\nLOC &MENU PRPAL\n-1\nPARAMETROS\nASISTENTES\nPAR CAMBIADO\nSALIR 00:00 INTRO\n2.\nVaya al modo de Fecha y Hora seleccionando FECHA Y HORA en el menú con\nINTRO\nlas teclas\ny\n, y pulsando\n.\nLOC & FECHA Y HORA -1\nVISIBILIDAD_DEL RELOJ\nFORMATO HORA\nFORMAT FECHA\nAJUST HORA\nAJUST FECHA\n00:00\nSALIR\nSEL\n3.\n. Para mostrar (ocultar) el reloj, seleccione VISIBILIDAD DEL RELOJ en el\nmenú, pulse\nSEL\n, seleccione Mostrar reloj (Ocultar reloj) y pulse\nSEL\n, o, si\ndesea volver a la pantalla anterior sin efectuar cambios, pulse\nSALIR\n.\n· Para especificar el formato de la fecha, seleccione FORMAT FECHA en el\nSEL\nOK\nmenú, pulse\ny seleccione un formato adecuado. Pulse\npara\nguardar o\nCANCEL\npara cancelar sus cambios.\n· Para especificar el formato de la hora, seleccione FORMATO HORA en el\nSEL\ny seleccione un formato adecuado. Pulse\nOK\nmenú, pulse\npara\nguardar o\nCANCEL\npara cancelar sus cambios.\n· Para especificar la hora, seleccione AJUSTAR HORA en el menú y pulse\nSEL\nOK\n. Especifique las horas con las teclas\ny\n, y pulse\nA\nOK\nCANCELA\ncontinuación, especifique los minutos. Pulse\npara guardar o\npara\ncancelar sus cambios.\nLOC &VISIB RELOJ -1\nMostrar reloj\nOcultar reloj\nSALIR\n00:00\nSEL\nLOC & FORMAT FECHA -1\ndd . mm . aa\nmm/dd/aa\ndd . mm . aaaa\nmm/dd/aaaa\nCANCELA 00:00\nOK\nLOC & FORMATO HORA -1\n24 horas\n12 horas\nCANCELA 00:00\nOK\nLOC CAJUST HORA\n15:41\nCANCELA 00:00\nOK\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "MENU Vaya al menú principal pulsando si se encuentra en el modo de Salida, o si no pulsando SALIR repetidamente hasta llegar al menú principal.",
+            "LOC &MENU PRPAL -1"
+          ],
+          [
+            "PARAMETROS"
+          ],
+          [
+            "ASISTENTES PAR CAMBIADO"
+          ],
+          [
+            "SALIR 00:00 INTRO"
+          ],
+          [
+            "2.",
+            "Vaya al modo de Fecha y Hora seleccionando FECHA Y HORA en el menú con INTRO las teclas y , y pulsando .",
+            "LOC & FECHA Y HORA -1"
+          ],
+          [
+            "VISIBILIDAD_DEL RELOJ"
+          ],
+          [
+            "FORMATO HORA FORMAT FECHA AJUST HORA AJUST FECHA"
+          ],
+          [
+            "00:00 SALIR SEL"
+          ],
+          [
+            "3.",
+            ". Para mostrar (ocultar) el reloj, seleccione VISIBILIDAD DEL RELOJ en el menú, pulse SEL , seleccione Mostrar reloj (Ocultar reloj) y pulse SEL , o, si desea volver a la pantalla anterior sin efectuar cambios, pulse SALIR . · Para especificar el formato de la fecha, seleccione FORMAT FECHA en el SEL OK menú, pulse y seleccione un formato adecuado. Pulse para guardar o CANCEL :selected: :selected: para cancelar sus cambios. · Para especificar el formato de la hora, seleccione FORMATO HORA en el SEL y seleccione un formato adecuado. Pulse OK menú, pulse :selected: para guardar o CANCEL para cancelar sus cambios. · Para especificar la hora, seleccione AJUSTAR HORA en el menú y pulse SEL OK . Especifique las horas con las teclas y , y pulse A OK CANCELA continuación, especifique los minutos. Pulse para guardar o :selected: para cancelar sus cambios.\n:selected: :selected:",
+            "LOC &VISIB RELOJ -1"
+          ],
+          [
+            "Mostrar reloj"
+          ],
+          [
+            "Ocultar reloj"
+          ],
+          [
+            "SALIR 00:00 SEL"
+          ],
+          [
+            "LOC & FORMAT FECHA -1 dd . mm . aa mm/dd/aa dd . mm . aaaa mm/dd/aaaa"
+          ],
+          [
+            "CANCELA 00:00 OK"
+          ],
+          [
+            "LOC & FORMATO HORA -1 24 horas 12 horas"
+          ],
+          [
+            "CANCELA 00:00 OK"
+          ],
+          [
+            "LOC CAJUST HORA 15:41"
+          ],
+          [
+            "CANCELA 00:00 OK"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Manual del usuario del ACS550-01/U1\n67\nPaso\nAcción\nPantalla\n· Para especificar la fecha, seleccione AJUSTAR FECHA en el menú y pulse\nSEL\n. Especifique la primera parte de la fecha (día o mes en función del\nOK\nformato de fecha seleccionado) con las teclas\ny\n, y pulse\n.\nOK\nRepítalo para la segunda parte. Tras especificar el año, pulse\n.\nPara\nCANCELA\ncancelar sus cambios, pulse\n.\nLOC CAJUST FECHA\n19.03.05\nCANCELA 00:00\nOK\n· Para activar o desactivar las transiciones automáticas del reloj según los\ncambios de ahorro con luz diurna, seleccione AHORRO DIURNO en el menú\ny pulse\nSEL\n.\nAl pulsar\n?\nse abre la ayuda que muestra las fechas de inicio y final del\nperíodo durante el cual se emplea el horario de ahorro diurno en cada país o\nárea en los que pueden seleccionarse cambios de ahorro diurno.\n· Para desactivar las transiciones automáticas del reloj según los cambios de\nSEL\nahorro con luz diurna, seleccione Desact y pulse\n.\n· Para activar las transiciones automáticas del reloj, seleccione el país o área\ncuyos cambios de ahorro diurno deban seguirse y pulse\nSEL\n.\n· Para volver a la pantalla anterior sin efectuar cambios, pulse\nSALIR\n.\nLOC AHORRO DIURN -1\nDesact\nJUE\nEEUU\nAustralia1: NSW, Viçt. .\nAustralia2 : Tasmania. .\nSALIR 00:00\nSEL\nLOC\nAYUDA\nUE:\nConexión: Mar.,\núltimo domingo\nDesconexión: Oct.,\nultimo_domingo\nSALIR | 00:00 |\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "",
+            "· Para especificar la fecha, seleccione AJUSTAR FECHA en el menú y pulse SEL . Especifique la primera parte de la fecha (día o mes en función del OK formato de fecha seleccionado) con las teclas y , y pulse . OK Repítalo para la segunda parte. Tras especificar el año, pulse . Para CANCELA cancelar sus cambios, pulse :selected: .\n:selected:",
+            "LOC CAJUST FECHA 19.03.05"
+          ],
+          [
+            "CANCELA 00:00 OK"
+          ],
+          [
+            "· Para activar o desactivar las transiciones automáticas del reloj según los cambios de ahorro con luz diurna, seleccione AHORRO DIURNO en el menú y pulse SEL . Al pulsar :unselected: ? se abre la ayuda que muestra las fechas de inicio y final del período durante el cual se emplea el horario de ahorro diurno en cada país o área en los que pueden seleccionarse cambios de ahorro diurno. · Para desactivar las transiciones automáticas del reloj según los cambios de SEL ahorro con luz diurna, seleccione Desact y pulse . · Para activar las transiciones automáticas del reloj, seleccione el país o área cuyos cambios de ahorro diurno deban seguirse y pulse SEL . · Para volver a la pantalla anterior sin efectuar cambios, pulse SALIR .",
+            "LOC AHORRO DIURN -1 Desact"
+          ],
+          [
+            "JUE EEUU Australia1: NSW, Viçt. . Australia2 : Tasmania. ."
+          ],
+          [
+            "SALIR 00:00 SEL"
+          ],
+          [
+            "LOC AYUDA UE:"
+          ],
+          [
+            "Conexión: Mar., último domingo Desconexión: Oct., ultimo_domingo"
+          ],
+          [
+            "SALIR | 00:00 |"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "68\nManual del usuario del ACS550-01/U1\nModo de Copia de seguridad de parámetros\nEl modo de Copia de seguridad de parámetros sirve para exportar parámetros de un\nconvertidor a otro o para efectuar una copia de seguridad de los parámetros del\nconvertidor. La carga en el panel guarda todos los parámetros del convertidor,\nincluyendo hasta dos conjuntos de usuario, en el Panel de control asistente. La serie\ncompleta, la serie de parámetros parcial (aplicación) y las series de usuario pueden\ndescargarse del panel de control a otro convertidor o el mismo convertidor. La carga\ny descarga se puede llevar a cabo en control local.\nLa memoria del Panel de control es permanente y no depende de la pila del panel.\nEn el modo de Copia de seguridad de parámetros, puede:\n· copiar todos los parámetros del convertidor al panel de control (CARGAR A\nPANEL). Esto incluye todas las series de parámetros definidas por el usuario y\nparámetros internos (no ajustables por el usuario) como los creados por la\nMarcha de identificación del motor.\n· ver la información acerca de la copia de seguridad guardada en el panel de\ncontrol con CARGAR A PANEL (INFO COPIA SEGURIDAD). Por ejemplo, ello\nincluye el tipo y la especificación del convertidor en el que se efectuó la copia de\nseguridad. Resulta útil comprobar esta información cuando vaya a copiar los\nparámetros a otro convertidor con DESCARG TODO A UNIDAD para garantizar\nque los convertidores concuerdan.\n· restaurar toda la serie de parámetros del panel de control al convertidor\n(DESCARG TODO A UNIDAD). Esto escribe todos los parámetros, incluyendo\nlos parámetros del motor internos no ajustables por el usuario, en el convertidor.\nNo incluye las series de parámetros de usuario.\nNota: utilice esta función solamente para restaurar un convertidor desde una copia de\nseguridad, o para transferir parámetros a sistemas que sean idénticos al sistema original.\n· copiar una serie parcial de parámetros (parte de la serie completa) del panel de\ncontrol a un convertidor (DESCARGAR APLICACION). La serie parcial no\nincluye las series de usuario, los parámetros internos del motor, los parámetros\n9905 ... 9909, 1605, 1607, 5201, ni ningún parámetro del Grupo 51: MOD\nCOMUNIC EXT y el Grupo 53: PROTOCOLO BCI.\nLos convertidores de origen y destino y sus tamaños de motor no tienen que ser iguales.\n· copiar parámetros de USUARIO S1 del panel de control al convertidor\n(DESCARGA USUARIO1). Una serie de usuario incluye parámetros del Grupo\n99: DATOS DE PARTIDA y los parámetros internos del motor.\nLa función sólo se muestra en el menú cuando la Serie de usuario 1 se ha\nguardado con el parámetro 9902 MACRO DE APLIC (véase el apartado Series de\nparámetros de usuario en la página 92) y se ha cargado en el panel de control\ncon CARGAR A PANEL.\n· copiar parámetros de USUARIO S2 del panel de control al convertidor\n(DESCARGA USUARIO2). Igual que se ha explicado para DESCARGA\nUSUARIO1 anteriormente.\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nPaneles de control",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Manual del usuario del ACS550-01/U1\n69\nCómo cargar y descargar parámetros\nEn cuanto a las funciones de carga y descarga disponibles, véase la información\nanterior. Observe que el convertidor debe estar en control local para la carga y la\ndescarga.\nPaso\nAcción\nPantalla\n1.\nVaya al menú principal pulsando\nMENU\nsi se encuentra en el modo de Salida, o\nSALIR\nsi no pulsando\n7 repetidamente hasta llegar al menu principal. - Si REM se\nmuestra en la línea de estado, pulse\npara cambiar a control local.\nLOC &MENU PRPAL -1\nPARAMETROS\nASISTENTES\nPAR CAMBIADO\nSALIR 00:00 INTRO\n2.\nVaya al modo de Copia de seguridad de parámetros seleccionando SALVAR\nINTRO\nPARAM en el menú con las teclas\ny\nV\n, y pulsando\n.\nLOC &SALVAR PARAM -1\nCARGAR A PANEL\nINFO COPIA SEGURIDAD\nDESCARG TODO A UNIDAD\nDESCARGAR APLICACION\nDESCARGA USUARIO1\nSALIR 00:00\nSEL\n3.\n· Para copiar todos los parámetros (incluyendo series de usuario y parámetros\ninternos) del convertidor al panel de control, seleccione CARGAR A PANEL\nSEL\nen el menú Salvar param con las teclas\ny\n,\ny pulse\n.\nDurante la transferencia, la pantalla muestra el estado de transferencia como\nANULAR\nun porcentaje de finalización. Pulse\nsi desea detener el proceso.\nLOC & SALVAR PARAM\nCopiando parámetros\n50%\nANULAR 00:00\nTras finalizar la carga, la pantalla muestra un mensaje acerca de la\nOK\nfinalización. Pulse\npara volver al menú Salvar param.\nLOC &MENSAJE\nCarga de parámetros\ncompletada\nOK\n00:00\n· Para efectuar descargas, seleccione la operación apropiada (aquí DESCARG\nTODO A UNIDAD se usa como ejemplo) en el menú Salvar param con las\nSEL\nteclas\ny\n, y pulse\n. La pantalla muestra el estado de\ntransferencia como un porcentaje de finalización. Pulse\nANULAR\nsi desea\ndetener el proceso.\nLOC & SALVAR PARAM\nDescargando\nparámetros\n(entero)\n50%\nANULAR 00:00\nTras finalizar la descarga, la pantalla muestra un mensaje acerca de la\nOK\nfinalización. Pulse\npara volver al menú Salvar param.\nLOC &MENSAJE\nDescarga de\nparámetros\nfinalizada\ncon éxito.\nOK\n00:00\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Vaya al menú principal pulsando MENU si se encuentra en el modo de Salida, o SALIR si no pulsando 7 repetidamente hasta llegar al menu principal. - Si REM se muestra en la línea de estado, pulse para cambiar a control local.\n:selected:",
+            "LOC &MENU PRPAL -1"
+          ],
+          [
+            "PARAMETROS"
+          ],
+          [
+            "ASISTENTES"
+          ],
+          [
+            "PAR CAMBIADO"
+          ],
+          [
+            "SALIR 00:00 INTRO"
+          ],
+          [
+            "2.",
+            "Vaya al modo de Copia de seguridad de parámetros seleccionando SALVAR INTRO PARAM en el menú con las teclas y V , y pulsando .",
+            "LOC &SALVAR PARAM -1"
+          ],
+          [
+            "CARGAR A PANEL"
+          ],
+          [
+            "INFO COPIA SEGURIDAD DESCARG TODO A UNIDAD DESCARGAR APLICACION DESCARGA USUARIO1"
+          ],
+          [
+            "SALIR 00:00 SEL"
+          ],
+          [
+            "3.",
+            "· Para copiar todos los parámetros (incluyendo series de usuario y parámetros internos) del convertidor al panel de control, seleccione CARGAR A PANEL SEL en el menú Salvar param con las teclas y , y pulse . Durante la transferencia, la pantalla muestra el estado de transferencia como ANULAR un porcentaje de finalización. Pulse :selected: si desea detener el proceso.\n:selected:",
+            "LOC & SALVAR PARAM Copiando parámetros 50%"
+          ],
+          [
+            ""
+          ],
+          [
+            "ANULAR 00:00"
+          ],
+          [
+            "Tras finalizar la carga, la pantalla muestra un mensaje acerca de la OK finalización. Pulse para volver al menú Salvar param.\n:selected:",
+            "LOC &MENSAJE Carga de parámetros completada"
+          ],
+          [
+            "",
+            "OK 00:00"
+          ],
+          [
+            "· Para efectuar descargas, seleccione la operación apropiada (aquí DESCARG TODO A UNIDAD se usa como ejemplo) en el menú Salvar param con las SEL teclas y :selected: , y pulse :selected: . La pantalla muestra el estado de transferencia como un porcentaje de finalización. Pulse ANULAR :selected: si desea detener el proceso.",
+            "LOC & SALVAR PARAM Descargando parámetros (entero) 50%"
+          ],
+          [
+            "ANULAR 00:00"
+          ],
+          [
+            "Tras finalizar la descarga, la pantalla muestra un mensaje acerca de la OK finalización. Pulse para volver al menú Salvar param.",
+            "LOC &MENSAJE Descarga de parámetros finalizada"
+          ],
+          [
+            "con éxito."
+          ],
+          [
+            "OK 00:00"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "70\nManual del usuario del ACS550-01/U1\nCómo ver información sobre la copia de seguridad\nPaso\nAcción\nPantalla\n1.\nVaya al menú principal pulsando\nMENU\nsi se encuentra en el modo de Salida, o\nLOC &MENU PRPAL -1\nsi no pulsando\nSALIR\n7\nrepetidamente hasta llegar al menú principal.\nPARAMETROS\nASISTENTES\nPAR CAMBIADO\nSALIR 00:00 INTRO\n2.\nVaya al modo de Copia de seguridad de parámetros seleccionando SALVAR\nINTRO\nPARAM en el menú con las teclas\ny\n7, y pulsando\n.\nLOC &SALVAR PARAM -1\nCARGAR A PANEL\nINFO COPIA SEGURIDAD\nDESCARG TODO A UNIDAD\nDESCARGAR APLICACION\nDESCARGA USUARIO1\nSALIR 00:00\nSEL\n3.\nSeleccione INFO COPIA SEGURIDAD en el menú Salvar param con las teclas\n, y pulse\nSEL\ny\n. La pantalla muestra la información siguiente\nacerca del convertidor en el que se efectuó la copia de seguridad:\nLOC UINFO COPIA\nTIPO DE CONVERTIDOR\nACS 550\n3304 ESPECIF UNIDAD\n4A62i\nTIPO DE CONVERTIDOR:tipo de convertidor\nESPECIF UNIDAD: especificación del convertidor en formato XXXYZ, donde\n3301 FIRMWARE\nSALIR 00:00\nXXX: especificación de intensidad nominal. Si está\npresente, una \"A\" indica una coma decimal, p. ej.\n4A6 significa 4,6 A.\nY:\n2 = 200 V\n4 = 400 V\n6 = 600 V\nLOC UINFO COPIA\nACS550\n3304 ESPECIF UNIDAD\n4A62i\n3301 FIRMWARE\n300F hex\nSALIR 00:00\nZ:\ni = Paquete de carga europeo\nn = Paquete de carga EEUU\nFIRMWARE:\nversión de firmware del convertidor.\nPuede desplazar la información con las teclas\ny\n.\n4.\nPulse\nSALIR\npara volver al menú Salvar param.\nLOC & SALVAR PARAM -1\nCARGAR A PANEL\nINFO COPIA SEGURIDAD\nDESCARG TODO A UNIDAD\nDESCARGAR APLICACION\nDESCARGA USUARIO1\nSALIR 00:00\nSEL\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Vaya al menú principal pulsando MENU si se encuentra en el modo de Salida, o",
+            "LOC &MENU PRPAL -1"
+          ],
+          [
+            "si no pulsando SALIR 7 repetidamente hasta llegar al menú principal.",
+            "PARAMETROS"
+          ],
+          [
+            "",
+            "ASISTENTES"
+          ],
+          [
+            "PAR CAMBIADO"
+          ],
+          [
+            "SALIR 00:00 INTRO"
+          ],
+          [
+            "2.",
+            "Vaya al modo de Copia de seguridad de parámetros seleccionando SALVAR INTRO PARAM en el menú con las teclas y 7, y pulsando .",
+            "LOC &SALVAR PARAM -1"
+          ],
+          [
+            "CARGAR A PANEL"
+          ],
+          [
+            "INFO COPIA SEGURIDAD DESCARG TODO A UNIDAD DESCARGAR APLICACION DESCARGA USUARIO1"
+          ],
+          [
+            "SALIR 00:00 SEL"
+          ],
+          [
+            "3.",
+            "Seleccione INFO COPIA SEGURIDAD en el menú Salvar param con las teclas , y pulse SEL y :selected: . La pantalla muestra la información siguiente acerca del convertidor en el que se efectuó la copia de seguridad:",
+            "LOC UINFO COPIA TIPO DE CONVERTIDOR ACS 550 3304 ESPECIF UNIDAD 4A62i"
+          ],
+          [
+            "TIPO DE CONVERTIDOR:tipo de convertidor ESPECIF UNIDAD: especificación del convertidor en formato XXXYZ, donde\n:selected:",
+            "3301 FIRMWARE"
+          ],
+          [
+            "SALIR 00:00"
+          ],
+          [
+            "XXX: especificación de intensidad nominal. Si está presente, una \"A\" indica una coma decimal, p. ej. 4A6 significa 4,6 A. Y: 2 = 200 V 4 = 400 V",
+            "LOC UINFO COPIA ACS550 3304 ESPECIF UNIDAD 4A62i"
+          ],
+          [
+            "3301 FIRMWARE"
+          ],
+          [
+            "300F hex"
+          ],
+          [
+            "SALIR 00:00"
+          ],
+          [
+            "6 = 600 V",
+            ""
+          ],
+          [
+            "Z: i = Paquete de carga europeo n = Paquete de carga EEUU FIRMWARE: versión de firmware del convertidor. Puede desplazar la información con las teclas y .",
+            ""
+          ],
+          [
+            "4.",
+            "Pulse SALIR para volver al menú Salvar param.",
+            "LOC & SALVAR PARAM -1"
+          ],
+          [
+            "CARGAR A PANEL"
+          ],
+          [
+            "INFO COPIA SEGURIDAD DESCARG TODO A UNIDAD DESCARGAR APLICACION DESCARGA USUARIO1"
+          ],
+          [
+            "SALIR 00:00 SEL"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Manual del usuario del ACS550-01/U1\n71\nModo de Ajustes de E/S\nEn el modo de Ajustes de E/S, puede:\n· comprobar los ajustes de parámetros relacionados con cualquier terminal de E/S\n· editar el ajuste de parámetros. Por ejemplo, si \"1103: REF1\" figura debajo de\nAen1 (Entrada analógica 1), es decir, el parámetro 1103 SELEC REF1 tiene el valor\nEA1, puede cambiar su valor a EA2, por ejemplo. No obstante, no puede ajustar el\nvalor del parámetro 1106 SELEC REF2 a EA1.\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nCómo editar y cambiar ajustes de parámetros relacionados con terminales de E/S\nPaso\nAcción\nPantalla\n1.\nIENU\nVaya al menú principal pulsando\nsi se encuentra en el modo de Salida, o\nsi no pulsando\nSALIR\nrepetidamente hasta llegar al menú principal.\nLOC &MENU PRPAL\n-1\nPARAMETROS\nASISTENTES\nPAR CAMBIADO\nSALIR 00:00 INTRO\n2.\nVaya al modo de Ajustes de E/S seleccionando AJUSTES E/S en el menú con\nINTRO\nlas teclas\ny\n, y pulsando\n.\nLOC AJUSTES E/S -1\nENTR DIGITALES (ED)\nENTR ANALOGICAS (EA)\nSALIDAS RELE (SALR)\nSALIDAS ANALOG (SALA)\nPANEL\nSALIR\n00:00\nSEL\n3.\nSeleccione el grupo de E/S, p. ej. ENTR DIGITALES, con las teclas\ny\nSEL\n, y pulse\n. Tras una pausa breve, la pantalla muestra los ajustes\nactuales para la selección.\nLOC AJUSTES E/S\n-ED1-\n1001: MARCHA/PARO (E1)\n-ED2-\n-ED3-\nSALIR\n00:00\n4.\nSeleccione el ajuste (línea con un número de parámetro) con las teclas\nEDITAR\ny\n, y pulse\n.\nLOC VEDICIÓN PAR\n1001 COMANDOŞ EXT1\nED1\n[1]\nCANCELA 00:00\nGUARDAR\n5.\nEspecifique un nuevo valor para el ajuste con las teclas\ny\n.\nUna pulsación de la tecla incrementa o reduce el valor. Mantener la tecla\npulsada hace que el valor cambie con mayor rapidez. Pulsar las teclas\nsimultáneamente sustituye el valor visualizado por el valor de fábrica.\nLOC &EDICIÓN PAR\n1001 COMANDOS EXT1\nED1, 2\n[2]\nCANCELA 00:00 GUARDAR\n6.\n· Para guardar el nuevo valor, pulse\nGUARDAF\n.\n· Para cancelar el nuevo valor y mantener el original, pulse\nCANCELA\n7\n.\nLOC AJUSTES E/S\n-ED1-\n1001: MARCHA/PARO (E1)\n-ED2-\n1001: DIR (E1)\n-ED3-\nSALIR\n00:00\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "IENU Vaya al menú principal pulsando si se encuentra en el modo de Salida, o si no pulsando SALIR repetidamente hasta llegar al menú principal.",
+            "LOC &MENU PRPAL -1"
+          ],
+          [
+            "PARAMETROS"
+          ],
+          [
+            "ASISTENTES"
+          ],
+          [
+            "PAR CAMBIADO"
+          ],
+          [
+            "SALIR 00:00 INTRO"
+          ],
+          [
+            "2.",
+            "Vaya al modo de Ajustes de E/S seleccionando AJUSTES E/S en el menú con INTRO las teclas y , y pulsando .\n:selected:",
+            "LOC AJUSTES E/S -1"
+          ],
+          [
+            "ENTR DIGITALES (ED)\n:selected:"
+          ],
+          [
+            "ENTR ANALOGICAS (EA) SALIDAS RELE (SALR) SALIDAS ANALOG (SALA) PANEL"
+          ],
+          [
+            "SALIR 00:00 SEL"
+          ],
+          [
+            "3.",
+            "Seleccione el grupo de E/S, p. ej. ENTR DIGITALES, con las teclas y SEL , y pulse . Tras una pausa breve, la pantalla muestra los ajustes actuales para la selección.",
+            "LOC AJUSTES E/S -ED1- 1001: MARCHA/PARO (E1)"
+          ],
+          [
+            "-ED2-"
+          ],
+          [
+            "-ED3-"
+          ],
+          [
+            "SALIR 00:00"
+          ],
+          [
+            "4.",
+            "Seleccione el ajuste (línea con un número de parámetro) con las teclas EDITAR y :selected: , y pulse .",
+            "LOC VEDICIÓN PAR 1001 COMANDOŞ EXT1 ED1"
+          ],
+          [
+            "[1]"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "5.",
+            "Especifique un nuevo valor para el ajuste con las teclas y . Una pulsación de la tecla incrementa o reduce el valor. Mantener la tecla pulsada hace que el valor cambie con mayor rapidez. Pulsar las teclas simultáneamente sustituye el valor visualizado por el valor de fábrica.\n:selected:",
+            "LOC &EDICIÓN PAR"
+          ],
+          [
+            "1001 COMANDOS EXT1 ED1, 2 [2]"
+          ],
+          [
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "6.",
+            "· Para guardar el nuevo valor, pulse GUARDAF . · Para cancelar el nuevo valor y mantener el original, pulse CANCELA 7 .",
+            "LOC AJUSTES E/S -ED1- 1001: MARCHA/PARO (E1) -ED2-"
+          ],
+          [
+            "1001: DIR (E1) -ED3-"
+          ],
+          [
+            "SALIR 00:00"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "72\nManual del usuario del ACS550-01/U1\nPanel de control básico\nCaracterísticas\nEl Panel de control básico tiene las siguientes características:\n· panel de control numérico con una pantalla LCD\n· función de copia - los parámetros pueden copiarse en la memoria del panel de\ncontrol para una transferencia posterior a otros convertidores, o para la copia de\nseguridad de un sistema concreto.\nSinopsis\n1a Loc\nLa tabla siguiente resume las funciones de las teclas y las pantallas del Panel de\ncontrol básico.\n1c\n1d) OUTPUT\nRESET\nSALIR\n2\n4\n6\nLOC\nREM\n8\n5\nSTOP\n1.1\nA\n1b\nFWD\n1e\nMENU\nINTRO\n1\n3\n7\n9\nSTART\nN.º\nUso\n1\nPantalla LCD - Se divide en cinco áreas:\na. Parte superior izquierda - Lugar de control:\nLOC: el control del convertidor es local, es decir, desde el panel de control.\nREM: el control del convertidor es a distancia, como la E/S del convertidor\no bus de campo.\nb. Parte superior derecha - Unidad del valor visualizado.\nc. Centro - Variable, en general muestra valores de parámetros y señales,\nmenús o listas. También muestra códigos de fallo y alarma.\nd. Parte inferior izquierda y centro - Estado de funcionamiento del panel:\nOUTPUT: Modo de Salida\nPAR: Modo de Parámetro\nMENU: Menú principal\nFALLO: Modo de Fallo.\ne. Parte inferior derecha - Indicadores:\nFWD (avance) / REV (retroceso): dirección de la rotación del motor\nDestellando lentamente: parado\nDestellando rápidamente: en marcha, no está en el punto de consigna\nFijo: en marcha, está en el punto de consigna\nSER : El valor visualizado puede modificarse (en los modos de Parámetro y\nReferencia).\n2\nRESET/EXIT - Sale al siguiente nivel del menú superior sin guardar los\nvalores cambiados. Restaura los fallos en los modos de Salida y Fallo.\n3\nMENU/ENTER - Permite profundizar en el nivel del menú. En el modo de\nParámetro, guarda el valor visualizado como el nuevo ajuste.\n4\nArriba -\n· Permite desplazarse hacia arriba por un menú o lista.\n· Incrementa un valor si se ha seleccionado un parámetro.\n· Incrementa el valor de la referencia en el modo de Referencia.\nMantener la tecla pulsada hace que el valor cambie con mayor rapidez.\n5\nAbajo -\n· Permite desplazarse hacia abajo por un menú o lista.\n· Reduce un valor si se ha seleccionado un parámetro.\n· Reduce el valor de la referencia en el modo de Referencia.\nMantener la tecla pulsada hace que el valor cambie con mayor rapidez.\n6\nLOC/REM - Cambia entre control local y remoto del convertidor.\n7\nDIR - Cambia la dirección de giro del motor.\n8\nSTOP - Detiene el convertidor en control local.\n9\nSTART - Arranca el convertidor en control local.\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "N.º",
+            "Uso"
+          ],
+          [
+            "1",
+            "Pantalla LCD - Se divide en cinco áreas: a. Parte superior izquierda - Lugar de control: LOC: el control del convertidor es local, es decir, desde el panel de control. REM: el control del convertidor es a distancia, como la E/S del convertidor o bus de campo."
+          ],
+          [
+            "b. Parte superior derecha - Unidad del valor visualizado. c. Centro - Variable, en general muestra valores de parámetros y señales, menús o listas. También muestra códigos de fallo y alarma. d. Parte inferior izquierda y centro - Estado de funcionamiento del panel: OUTPUT: Modo de Salida PAR: Modo de Parámetro MENU: Menú principal FALLO: Modo de Fallo."
+          ],
+          [
+            "e. Parte inferior derecha - Indicadores: FWD (avance) / REV (retroceso): dirección de la rotación del motor Destellando lentamente: parado Destellando rápidamente: en marcha, no está en el punto de consigna Fijo: en marcha, está en el punto de consigna SER : El valor visualizado puede modificarse (en los modos de Parámetro y Referencia)."
+          ],
+          [
+            "2",
+            "RESET/EXIT - Sale al siguiente nivel del menú superior sin guardar los valores cambiados. Restaura los fallos en los modos de Salida y Fallo."
+          ],
+          [
+            "3",
+            "MENU/ENTER - Permite profundizar en el nivel del menú. En el modo de Parámetro, guarda el valor visualizado como el nuevo ajuste."
+          ],
+          [
+            "4",
+            "Arriba - · Permite desplazarse hacia arriba por un menú o lista. · Incrementa un valor si se ha seleccionado un parámetro. · Incrementa el valor de la referencia en el modo de Referencia. Mantener la tecla pulsada hace que el valor cambie con mayor rapidez."
+          ],
+          [
+            "5",
+            "Abajo - · Permite desplazarse hacia abajo por un menú o lista. · Reduce un valor si se ha seleccionado un parámetro. · Reduce el valor de la referencia en el modo de Referencia. Mantener la tecla pulsada hace que el valor cambie con mayor rapidez."
+          ],
+          [
+            "6",
+            "LOC/REM - Cambia entre control local y remoto del convertidor."
+          ],
+          [
+            "7",
+            "DIR - Cambia la dirección de giro del motor."
+          ],
+          [
+            "8",
+            "STOP - Detiene el convertidor en control local."
+          ],
+          [
+            "9",
+            "START - Arranca el convertidor en control local."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Manual del usuario del ACS550-01/U1\n73\nManejo\nEl panel de control se maneja mediante menús y teclas. Puede seleccionar una opción,\np. ej. modo de funcionamiento o parámetro, desplazando las teclas de flecha\ny\nhasta que la opción sea visible en la pantalla y pulsando la tecla\n.\nCon la tecla\n, puede volver al nivel anterior de funcionamiento sin guardar los\ncambios efectuados.\nEl Panel de control básico tiene cinco modos de panel: Salida, Referencia, Parámetro,\nCopia y Fallo. El manejo en los cuatro primeros modos se describe en este capítulo.\nCuando se produce un fallo o una alarma, el panel pasa automáticamente al modo de\nFallo y muestra el código de fallo o alarma. Puede restaurar el fallo o la alarma en el\nmodo de Salida o Fallo (véase el capítulo Diagnósticos).\nTras conectar la alimentación, el panel se encuentra\nen modo de Salida, en el cual es posible efectuar la\npuesta en marcha y el paro, cambiar la dirección,\ncambiar entre control remoto y local, y monitorizar\nhasta tres valores actuales (uno a la vez). Para llevar\na cabo otras tareas, vaya primero al Menú principal y\nseleccione el modo apropiado.\nREM\n49.1\nOUTPUT\nCómo realizar tareas comunes\nREM\nPAr\nHZ\nFWD\nMENU\nFWD\nLa tabla siguiente detalla las tareas comunes, el modo en que es posible efectuarlas y el\nnúmero de la página en que se describen en detalle los pasos para realizar la tarea.\nTarea\nModo\nPágina\nCómo cambiar entre control local y remoto\nCualquiera\n74\nCómo poner en marcha y detener el convertidor\nCualquiera\n74\nCómo cambiar la dirección de giro del motor\nCualquiera\n74\nCómo navegar por las señales monitorizadas\nSalida\n75\nCómo ajustar la velocidad, frecuencia o referencia de par\nReferencia\n76\nCómo cambiar el valor de un parámetro\nParámetro\n77\nCómo seleccionar las señales monitorizadas\nParámetro\n78\nCómo restaurar fallos y alarmas\nSalida, Fallo\n270\nCómo copiar parámetros del convertidor al panel de control\nCopia\n80\nCómo restaurar parámetros del panel de control al convertidor\nCopia\n80\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Tarea",
+            "Modo",
+            "Página"
+          ],
+          [
+            "Cómo cambiar entre control local y remoto",
+            "Cualquiera",
+            "74"
+          ],
+          [
+            "Cómo poner en marcha y detener el convertidor\n:unselected:",
+            "Cualquiera",
+            "74"
+          ],
+          [
+            "Cómo cambiar la dirección de giro del motor\n:unselected:",
+            "Cualquiera",
+            "74"
+          ],
+          [
+            "Cómo navegar por las señales monitorizadas\n:unselected:",
+            "Salida",
+            "75"
+          ],
+          [
+            "Cómo ajustar la velocidad, frecuencia o referencia de par\n:unselected:",
+            "Referencia",
+            "76"
+          ],
+          [
+            "Cómo cambiar el valor de un parámetro\n:unselected:",
+            "Parámetro",
+            "77"
+          ],
+          [
+            "Cómo seleccionar las señales monitorizadas\n:unselected:",
+            "Parámetro",
+            "78"
+          ],
+          [
+            "Cómo restaurar fallos y alarmas\n:unselected:",
+            "Salida, Fallo",
+            "270"
+          ],
+          [
+            "Cómo copiar parámetros del convertidor al panel de control\n:unselected:",
+            "Copia",
+            "80"
+          ],
+          [
+            "Cómo restaurar parámetros del panel de control al convertidor\n:unselected:",
+            "Copia",
+            "80"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "74\nManual del usuario del ACS550-01/U1\nCómo efectuar la puesta en marcha y el paro y cambiar entre control local y remoto\nPuede efectuar la puesta en marcha y el paro y cambiar entre control local y remoto\nen cualquier modo. Para poder poner en marcha o detener el convertidor, éste debe\nestar en control local.\nPaso\nAcción\nPantalla\n1.\n· Para cambiar entre control remoto (se muestra REM a la izquierda) y\ncontrol local (se muestra LOC a la izquierda), pulse\nOL\n.\nLOC\n49.1\nHZ\nNota: el cambio a control local pude desactivarse con el parámetro 1606\nBLOQUEO LOCAL.\nOUTPUT\nFWD\nTras pulsar la tecla, la pantalla muestra brevemente el mensaje \"LoC\" o\n\"rE\", según corresponda, antes de volver a la pantalla anterior.\nLOC\nLoC\nFWD\nLa primera vez que se pone en marcha la unidad, está en control remoto\n(REM) y se controla desde los terminales de E/S del convertidor. Para\ncambiar a control local (LOC) y controlar el convertidor con el panel de\ncontrol, pulse\nŘEM\n. El resultado dependerá del tiempo que mantenga\npulsada la tecla:\n· Si suelta la tecla inmediatamente (en la pantalla destella \"LoC\"), el\nconvertidor se detiene. Ajuste la referencia de control local como se\nindica en la página 76.\n· Si mantiene pulsada la tecla unos dos segundos (y la suelta cuando la\npantalla cambia de \"LoC\" a \"LoC r\"), el convertidor sigue funcionando\ncomo antes. El convertidor copia los valores remotos actuales para el\nestado de marcha/paro y la referencia, y los utiliza como los ajustes de\ncontrol local iniciales.\n· Para detener el convertidor en control local, pulse\n.\nEl texto FWD o REV en la línea\ninferior empieza a destellar\nlentamente.\n· Para arrancar el convertidor en control local, pulse\n<I>\n.\nEl texto FWD o REV en la línea\ninferior empieza a destellar\nrápidamente. Deja de destellar\ncuando el convertidor alcanza el\npunto de consigna.\nCómo cambiar la dirección de giro del motor\nPuede cambiar la dirección de giro del motor en cualquier modo.\nPaso\nAcción\nPantalla\n1.\nSi el convertidor se encuentra en control remoto (se muestra REM a la\nizquierda), cambie a control local pulsando\nREX\n.\nLa pantalla muestra\nbrevemente el mensaje \"LoC\" antes de volver a la pantalla anterior.\nLOC\n49.1\nHZ\nOUTPUT\nFWD\n2.\nPara cambiar la dirección de avance (se muestra FWD en la línea de\nestado) a inversa (se muestra REV en la línea de estado), o viceversa,\npulse\n.\nNota: el parámetro 1003 DIRECCION debe ajustarse a 3 (PETICION).\nLOC\n49.1\nHZ\nOUTPUT\nREV\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "· Para cambiar entre control remoto (se muestra REM a la izquierda) y control local (se muestra LOC a la izquierda), pulse OL .\n:selected:",
+            "LOC 49.1 HZ"
+          ],
+          [
+            "",
+            "Nota: el cambio a control local pude desactivarse con el parámetro 1606 BLOQUEO LOCAL.",
+            "OUTPUT FWD"
+          ],
+          [
+            "",
+            "Tras pulsar la tecla, la pantalla muestra brevemente el mensaje \"LoC\" o \"rE\", según corresponda, antes de volver a la pantalla anterior.",
+            "LOC LoC FWD"
+          ],
+          [
+            "",
+            "La primera vez que se pone en marcha la unidad, está en control remoto (REM) y se controla desde los terminales de E/S del convertidor. Para cambiar a control local (LOC) y controlar el convertidor con el panel de control, pulse ŘEM . El resultado dependerá del tiempo que mantenga pulsada la tecla: · Si suelta la tecla inmediatamente (en la pantalla destella \"LoC\"), el convertidor se detiene. Ajuste la referencia de control local como se indica en la página 76. · Si mantiene pulsada la tecla unos dos segundos (y la suelta cuando la pantalla cambia de \"LoC\" a \"LoC r\"), el convertidor sigue funcionando como antes. El convertidor copia los valores remotos actuales para el estado de marcha/paro y la referencia, y los utiliza como los ajustes de control local iniciales.\n:selected:",
+            ""
+          ],
+          [
+            "· Para detener el convertidor en control local, pulse .",
+            "El texto FWD o REV en la línea inferior empieza a destellar lentamente."
+          ],
+          [
+            "· Para arrancar el convertidor en control local, pulse <I> .",
+            "El texto FWD o REV en la línea inferior empieza a destellar rápidamente. Deja de destellar cuando el convertidor alcanza el punto de consigna."
+          ]
+        ],
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Si el convertidor se encuentra en control remoto (se muestra REM a la izquierda), cambie a control local pulsando REX . La pantalla muestra brevemente el mensaje \"LoC\" antes de volver a la pantalla anterior.\n:selected:",
+            "LOC 49.1 HZ OUTPUT FWD"
+          ],
+          [
+            "2.",
+            "Para cambiar la dirección de avance (se muestra FWD en la línea de estado) a inversa (se muestra REV en la línea de estado), o viceversa, pulse . Nota: el parámetro 1003 DIRECCION debe ajustarse a 3 (PETICION).",
+            "LOC 49.1 HZ OUTPUT REV"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Manual del usuario del ACS550-01/U1\n75\nModo de Salida\nEn el Modo de Salida, puede:\n· monitorizar valores actuales de hasta tres señales en el Grupo 01: DATOS\nFUNCIONAM, una señal a la vez.\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nPuede acceder al modo de Salida pulsando\ntexto OUTPUT en la parte inferior.\nhasta que la pantalla muestre el\nLa pantalla muestra el valor de una señal del Grupo\n01: DATOS FUNCIONAM. La unidad se muestra a la\nderecha. La página 78 explica cómo seleccionar hasta\ntres señales a monitorizar en el modo de Salida. La\ntabla siguiente muestra cómo verlas una a una.\nCómo navegar por las señales monitorizadas\nREM\n49.1\nOUTPUT\nHZ\nFWD\nPaso\nAcción\nPantalla\n1.\nSi ha seleccionado más de una señal a monitorizar (véase la página 78),\npuede navegar por ellas en el modo de Salida.\nPara avanzar por las señales, pulse la tecla\nrepetidamente. Para\nretroceder por las señales, pulse la tecla\nrepetidamente.\nREM\n49.1\nHZ\nOUTPUT\nFWD\nA\nREM\n0.5\nOUTPUT\nFWD\nREM\n10.7\n%\nOUTPUT\nFWD\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Si ha seleccionado más de una señal a monitorizar (véase la página 78), puede navegar por ellas en el modo de Salida. Para avanzar por las señales, pulse la tecla repetidamente. Para retroceder por las señales, pulse la tecla repetidamente.",
+            "REM 49.1 HZ OUTPUT FWD"
+          ],
+          [
+            "A REM 0.5 OUTPUT FWD"
+          ],
+          [
+            "REM 10.7 % OUTPUT FWD"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "76\nManual del usuario del ACS550-01/U1\nModo de Referencia\nEn el Modo de Referencia, puede:\n· ajustar la velocidad, frecuencia o referencia de par\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nCómo ajustar la velocidad, frecuencia o referencia de par\nPaso\nAcción\nPantalla\n1.\nPara acceder al Menú principal, pulse\nsi se encuentra en modo de\nSalida; en caso contrario, pulse\n7 repetidamente hasta que vea MENU\nen la parte inferior.\nREM\nPAr\nMENU\nFWD\n2.\nSi el convertidor se encuentra en control remoto (se muestra REM a la\nizquierda), cambie a control local pulsando\n). La pantalla muestra\nbrevemente \"LoC\" antes de cambiar a control local.\nNota: con el Grupo 11: SELEC REFERENCIA, puede permitir la\nmodificación de referencias en control remoto (REM).\nLOC\nPAr\nMENU\nFWD\n3.\nSi el panel no está en modo de Referencia (\"rEF\" no es visible), pulse la\ntecla\no\nhasta que vea \"rEF\" y entonces pulse\n. Ahora la\npantalla muestra el valor de referencia actual con SET bajo el valor.\nLOC\nrEF\nMENU\nFWD\nLOC\n49.1\nHZ\nSET FWD\n4.\n· Para incrementar el valor de referencia, pulse\n.\n· Para reducir el valor de referencia, pulse\n.\nEl valor cambia inmediatamente al pulsar la tecla. Se guarda en la\nmemoria permanente del convertidor y se restaura de forma automática\ntras desconectar la alimentación.\nLOC\n50.0\nHZ\nSER FWD\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Para acceder al Menú principal, pulse si se encuentra en modo de Salida; en caso contrario, pulse 7 repetidamente hasta que vea MENU en la parte inferior.\n:selected:",
+            "REM PAr MENU FWD"
+          ],
+          [
+            "2.",
+            "Si el convertidor se encuentra en control remoto (se muestra REM a la izquierda), cambie a control local pulsando ). La pantalla muestra brevemente \"LoC\" antes de cambiar a control local. Nota: con el Grupo 11: SELEC REFERENCIA, puede permitir la modificación de referencias en control remoto (REM).\n:selected:",
+            "LOC PAr MENU FWD"
+          ],
+          [
+            "3.",
+            "Si el panel no está en modo de Referencia (\"rEF\" no es visible), pulse la tecla o hasta que vea \"rEF\" y entonces pulse . Ahora la pantalla muestra el valor de referencia actual con SET bajo el valor.",
+            "LOC rEF MENU FWD"
+          ],
+          [
+            "LOC 49.1 HZ SET FWD"
+          ],
+          [
+            "4.",
+            "· Para incrementar el valor de referencia, pulse . · Para reducir el valor de referencia, pulse . El valor cambia inmediatamente al pulsar la tecla. Se guarda en la memoria permanente del convertidor y se restaura de forma automática tras desconectar la alimentación.",
+            "LOC 50.0 HZ SER FWD"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Manual del usuario del ACS550-01/U1\n77\nModo de Parámetro\nEn el modo de Parámetro, puede:\n· ver y cambiar valores de parámetros\n· seleccionar y modificar las señales mostradas en el modo de Salida\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nCómo seleccionar un parámetro y cambiar su valor\nPaso\nAcción\nPantalla\n1.\nPara acceder al Menú principal, pulse\nsi se encuentra en modo de\nSalida; en caso contrario, pulse\nrepetidamente hasta que vea MENU\nen la parte inferior.\nLOC\nrEF\nMENU\nFWD\n2.\nSi el panel no está en modo de Parámetro (\"PAr\" no es visible), pulse la\ntecla\no\nhasta que vea \"PAr\" y entonces pulse\n. La\npantalla muestra el número de uno de los grupos de parámetros.\nLOC\nPAr\nMENU\nFWD\nLOC\n-01-\nPAR\nFWD\n3.\nUtilice las teclas\nA\ny\npara encontrar el grupo de parámetros\ndeseado.\nLOC\n-11-\nPAR\nFWD\n4.\nPulse\n. La pantalla muestra uno de los parámetros del grupo\nseleccionado.\nLOC\n1101\nPAR\nFWD\n5.\nUtilice las teclas\ny\npara encontrar el parámetro deseado.\nLOC\n1103\nPAR\nFWD\n6.\nPulse y mantenga pulsada\ndurante unos dos segundos hasta que la\npantalla muestre el valor del parámetro con SET debajo indicando que ya\nes posible cambiar el valor.\nNota: cuando SET sea visible, pulsar las teclas\ny\nsimultáneamente cambia el valor visualizado al valor de fábrica del\nparámetro.\nLOC\n1\nPAR SET FWD\n7.\nUtilice las teclas\ny\npara seleccionar el valor del parámetro.\nCuando haya cambiado el valor del parámetro, SET empieza a parpadear.\n· Para guardar el valor de parámetro visualizado, pulse\n1\n.\n· Para cancelar el nuevo valor y mantener el original, pulse\n.\nLOC\n2\nPAR SET FWD\nLOC\n1103\nPAR\nFWD\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Para acceder al Menú principal, pulse si se encuentra en modo de Salida; en caso contrario, pulse :selected: repetidamente hasta que vea MENU en la parte inferior.\n:selected:",
+            "LOC rEF MENU FWD"
+          ],
+          [
+            "2.",
+            "Si el panel no está en modo de Parámetro (\"PAr\" no es visible), pulse la tecla o hasta que vea \"PAr\" y entonces pulse :selected: . La pantalla muestra el número de uno de los grupos de parámetros.",
+            "LOC PAr MENU FWD"
+          ],
+          [
+            "LOC -01- PAR FWD"
+          ],
+          [
+            "3.",
+            "Utilice las teclas A y para encontrar el grupo de parámetros deseado.",
+            "LOC -11- PAR FWD"
+          ],
+          [
+            "4.",
+            "Pulse . La pantalla muestra uno de los parámetros del grupo seleccionado.",
+            "LOC 1101 PAR FWD"
+          ],
+          [
+            "5.",
+            "Utilice las teclas y :selected: para encontrar el parámetro deseado.",
+            "LOC 1103 PAR FWD"
+          ],
+          [
+            "6.",
+            "Pulse y mantenga pulsada durante unos dos segundos hasta que la pantalla muestre el valor del parámetro con SET debajo indicando que ya es posible cambiar el valor. Nota: cuando SET sea visible, pulsar las teclas y simultáneamente cambia el valor visualizado al valor de fábrica del parámetro.\n:selected:",
+            "LOC 1 PAR SET FWD"
+          ],
+          [
+            "7.",
+            "Utilice las teclas y para seleccionar el valor del parámetro. Cuando haya cambiado el valor del parámetro, SET empieza a parpadear. · Para guardar el valor de parámetro visualizado, pulse 1 . · Para cancelar el nuevo valor y mantener el original, pulse .\n:selected:",
+            "LOC 2 PAR SET FWD"
+          ],
+          [
+            "LOC 1103 PAR FWD"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "78\nManual del usuario del ACS550-01/U1\nCómo seleccionar las señales monitorizadas\nPaso\nAcción\nPantalla\n1.\nPuede seleccionar qué señales se monitorizan en el modo de Salida y\ncómo se visualizan con los parámetros del Grupo 34: PANTALLA PANEL.\nVéase la página 59 para obtener instrucciones detalladas sobre el cambio\nLOC\n103\nPAR SET FWD\nde los valores de parámetros.\nPor defecto, puede monitorizar tres señales navegando por ellas (véase la\npágina 75). Las señales de fábrica específicas dependen del valor del\nLOC\n104\nPAR SET FWD\nparámetro 9902 MACRO DE APLIC: Para macros cuyo valor de fábrica del\nparámetro 9904 MODO CTRL MOTOR es 1 (VECTOR:VELOC), el valor de fábrica\npara la señal 1 es 0102 VELOCIDAD, o si no 0103 FREC SALIDA. Los valores\nde fábrica para las señales 2 y 3 son siempre 0104 INTENSIDAD y 0105 PAR,\nLOC\n105\nPAR SET FWD\nrespectivamente.\nPara cambiar las señales de fábrica, seleccione en el Grupo 01: DATOS\nFUNCIONAM hasta tres señales por las que navegar.\nSeñal 1: cambie el valor del parámetro 3401 PARAM SEÑAL 1 al índice del\nparámetro de señal en el Grupo 01: DATOS FUNCIONAM (= número del\nparámetro sin el cero inicial), p. ej. 105 indica el parámetro 0105 PAR. El\nvalor 100 significa que no se muestra ninguna señal.\nRepita lo mismo para las señales 2 (3408 PARAM SEÑAL2) y 3 (3415 PARAM\nSEÑAL3). Por ejemplo, si 3401 = 0 y 3415 = 0, se desactiva la navegación y\nsólo aparece la señal especificada por 3408 en la pantalla. Si los tres\nparámetros se ajustan a 0, es decir, no se han seleccionado señales para\nmonitorización, el panel muestra el texto \"n.A\".\n2.\nEspecifique la ubicación de la coma decimal, o utilice la ubicación de la\ncoma decimal y la unidad de la señal de origen [ajuste (9 (DIRECTO)]. Los\ngráficos de barras no están disponibles en el Panel de manejo básico.\nPara más detalles, véase el parámetro 3404.\nSeñal 1: parámetro 3404 FORM DSP SALIDA 1\nSeñal 2: parámetro 3411 FORM DSP SALIDA2\nSeñal 3: parámetro 3418 FORM DSP SALIDA3.\nLOC\n9\nPAR SET\nFWD\n3.\nSeleccione las unidades a visualizar para las señales. Esto no tiene efecto\nsi el parámetro 3404/3411/3418 se ajusta a 9 (DIRECTO). Para más\ndetalles, véase el parámetro 3405.\nLOC\n3\nPAR SET FWD\nSeñal 1: parámetro 3405 UNIDAD SALIDA1\nSeñal 2: parámetro 3412 UNIDAD SALIDA2\nSeñal 3: parámetro 3419 UNIDAD SALIDA3.\n4.\nSeleccione el escalado para las señales especificando los valores de\nvisualización mínimo y máximo. Esto no tiene efecto si el parámetro 3404/\n3411/3418 se ajusta a 9 (DIRECTO). Para más detalles, véanse los\nLOC\n0.0\nHZ\nPAR SET FWD\nparámetros 3406 y 3407.\nSeñal 1: parámetros 3406 SALIDA1 MIN y 3407 SALIDA1 MAX\nSeñal 2: parámetros 3413 SALIDA2 MIN y 3414 SALIDA2 MAX\nSeñal 3: parámetros 3420 SALIDA3 MIN y 3421 SALIDA3 MAX.\nLOC\n500.0\nHZ\nPAR SET FWD\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Puede seleccionar qué señales se monitorizan en el modo de Salida y cómo se visualizan con los parámetros del Grupo 34: PANTALLA PANEL. Véase la página 59 para obtener instrucciones detalladas sobre el cambio",
+            "LOC 103 PAR SET FWD"
+          ],
+          [
+            "de los valores de parámetros. Por defecto, puede monitorizar tres señales navegando por ellas (véase la página 75). Las señales de fábrica específicas dependen del valor del",
+            "LOC 104 PAR SET FWD"
+          ],
+          [
+            "parámetro 9902 MACRO DE APLIC: Para macros cuyo valor de fábrica del parámetro 9904 MODO CTRL MOTOR es 1 (VECTOR:VELOC), el valor de fábrica para la señal 1 es 0102 VELOCIDAD, o si no 0103 FREC SALIDA. Los valores",
+            "LOC 105 PAR SET FWD"
+          ],
+          [
+            "de fábrica para las señales 2 y 3 son siempre 0104 INTENSIDAD y 0105 PAR,\nrespectivamente.",
+            ""
+          ],
+          [
+            "Para cambiar las señales de fábrica, seleccione en el Grupo 01: DATOS FUNCIONAM hasta tres señales por las que navegar. Señal 1: cambie el valor del parámetro 3401 PARAM SEÑAL 1 al índice del parámetro de señal en el Grupo 01: DATOS FUNCIONAM (= número del parámetro sin el cero inicial), p. ej. 105 indica el parámetro 0105 PAR. El valor 100 significa que no se muestra ninguna señal. Repita lo mismo para las señales 2 (3408 PARAM SEÑAL2) y 3 (3415 PARAM SEÑAL3). Por ejemplo, si 3401 = 0 y 3415 = 0, se desactiva la navegación y sólo aparece la señal especificada por 3408 en la pantalla. Si los tres parámetros se ajustan a 0, es decir, no se han seleccionado señales para monitorización, el panel muestra el texto \"n.A\".",
+            ""
+          ],
+          [
+            "2.",
+            "Especifique la ubicación de la coma decimal, o utilice la ubicación de la coma decimal y la unidad de la señal de origen [ajuste (9 (DIRECTO)]. Los gráficos de barras no están disponibles en el Panel de manejo básico. Para más detalles, véase el parámetro 3404. Señal 1: parámetro 3404 FORM DSP SALIDA 1 Señal 2: parámetro 3411 FORM DSP SALIDA2 Señal 3: parámetro 3418 FORM DSP SALIDA3.",
+            "LOC 9 PAR SET FWD"
+          ],
+          [
+            ""
+          ],
+          [
+            "3.",
+            "Seleccione las unidades a visualizar para las señales. Esto no tiene efecto si el parámetro 3404/3411/3418 se ajusta a 9 (DIRECTO). Para más detalles, véase el parámetro 3405.",
+            "LOC 3 PAR SET FWD"
+          ],
+          [
+            "Señal 1: parámetro 3405 UNIDAD SALIDA1 Señal 2: parámetro 3412 UNIDAD SALIDA2 Señal 3: parámetro 3419 UNIDAD SALIDA3.",
+            ""
+          ],
+          [
+            "4.",
+            "Seleccione el escalado para las señales especificando los valores de visualización mínimo y máximo. Esto no tiene efecto si el parámetro 3404/ 3411/3418 se ajusta a 9 (DIRECTO). Para más detalles, véanse los",
+            "LOC 0.0 HZ PAR SET FWD"
+          ],
+          [
+            "parámetros 3406 y 3407. Señal 1: parámetros 3406 SALIDA1 MIN y 3407 SALIDA1 MAX Señal 2: parámetros 3413 SALIDA2 MIN y 3414 SALIDA2 MAX Señal 3: parámetros 3420 SALIDA3 MIN y 3421 SALIDA3 MAX.",
+            "LOC 500.0 HZ PAR SET FWD"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Manual del usuario del ACS550-01/U1\n79\nModo de Copia\nEl Panel de control básico puede almacenar una serie completa de parámetros del\nconvertidor y hasta dos series de usuario de parámetros del convertidor en el panel\nde control. La memoria del panel de control es permanente.\nEn el modo de Copia, puede:\n· copiar todos los parámetros del convertidor al panel de control (uL - Carga). Esto\nincluye todas las series de parámetros definidas por el usuario y parámetros\ninternos (no ajustables por el usuario) como los creados por la Marcha de\nidentificación del motor.\n· restaurar toda la serie de parámetros del panel de control al convertidor (dL A -\nDescargar todo). Esto escribe todos los parámetros, incluyendo los parámetros\ndel motor internos no ajustables por el usuario, en el convertidor. No incluye las\nseries de parámetros de usuario.\nNota: utilice esta función solamente para restaurar un convertidor, o para\ntransferir parámetros a sistemas que sean idénticos al sistema original.\n· copiar una serie de parámetros parcial del panel de control a un convertidor (dL P -\nDescarga parcial). La serie parcial no incluye las series de usuario, los parámetros\ninternos del motor, los parámetros 9905 ... 9909, 1605, 1607, 5201, ni ningún\nparámetro del Grupo 51: MOD COMUNIC EXT y el Grupo 53: PROTOCOLO BCI.\nLos convertidores de origen y destino y sus tamaños de motor no tienen que ser\niguales.\n· copiar parámetros de USUARIO S1 del panel de control al convertidor (dL u1 -\nDescargar serie de usuario 1). Una serie de usuario incluye parámetros del\nGrupo 99: DATOS DE PARTIDA y los parámetros internos del motor.\nLa función sólo se muestra en el menú cuando la Serie de usuario 1 se ha\nguardado con el parámetro 9902 MACRO DE APLIC (véase el apartado Series de\nparámetros de usuario en la página 92) y se ha cargado en el panel.\n· copiar parámetros de USUARIO S2 del panel de control al convertidor (dL u2 -\nDescargar serie de usuario 2). El procedimiento es el mismo que se ha descrito\npara dL u1 - Descargar serie de usuario 1.\n· efectuar la puesta en marcha y el paro, modificar la dirección y cambiar entre\ncontrol local y remoto.\nPaneles de control",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "80\nManual del usuario del ACS550-01/U1\nCómo cargar y descargar parámetros\nEn cuanto a las funciones de carga y descarga disponibles, véase la información\nanterior.\nPaso\nAcción\nPantalla\n1.\nPara acceder al Menú principal, pulse\nsi se encuentra en modo de\nSalida; en caso contrario, pulse\nrepetidamente hasta que vea MENU\nen la parte inferior.\nLOC\nPAr\nMENU\nFWD\n2.\nSi el panel no está en modo de Copia (\"COPY\" no es visible), pulse la tecla\no\nhasta que vea \"COPY\".\nPulse\n.\nLOC\nCoPY\nMENU\nFWD\nLOC\ndL u1\nMENU\nFWD\n3.\n· Para cargar todos los parámetros (incluyendo series de usuario) del\nconvertidor al panel de control, pase a \"uL\" con las teclas\ny\n.\nLOC\nUL\nMENU\nFWD\nPulse\n. Durante la transferencia, la pantalla muestra el estado de\ntransferencia como un porcentaje de finalización.\nLOC\nUL 50\n%\nFWD\n· Para efectuar descargas, pase a la operación apropiada (aquí \"dL A\",\nDescargar todo, se usa como ejemplo) con las teclas\ny\n.\nLOC\ndL A\nMENU\nFWD\nPulse\n. Durante la transferencia, la pantalla muestra el estado de\ntransferencia como un porcentaje de finalización.\nLOC\ndL 50\n%\nFWD\nCódigos de alarma del panel de control básico\nAdemás de los fallos y alarmas generados por el convertidor (véase el capítulo\nDiagnósticos), el Panel de control básico indica las alarmas del panel con un código\nde formato A5xxx. Véase el apartado Códigos de alarma (Panel de control básico)\nen la página 274 para obtener una lista de los códigos de alarma y sus\ndescripciones.\nPaneles de control",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción",
+            "Pantalla"
+          ],
+          [
+            "1.",
+            "Para acceder al Menú principal, pulse si se encuentra en modo de Salida; en caso contrario, pulse :selected: repetidamente hasta que vea MENU en la parte inferior.\n:selected:",
+            "LOC PAr MENU FWD"
+          ],
+          [
+            "2.",
+            "Si el panel no está en modo de Copia (\"COPY\" no es visible), pulse la tecla o :selected: hasta que vea \"COPY\". Pulse .",
+            "LOC CoPY MENU FWD"
+          ],
+          [
+            "LOC dL u1 MENU FWD"
+          ],
+          [
+            "3.",
+            "· Para cargar todos los parámetros (incluyendo series de usuario) del convertidor al panel de control, pase a \"uL\" con las teclas y .\n:selected:",
+            "LOC UL MENU FWD"
+          ],
+          [
+            "Pulse . Durante la transferencia, la pantalla muestra el estado de transferencia como un porcentaje de finalización.",
+            "LOC UL 50 % FWD"
+          ],
+          [
+            "· Para efectuar descargas, pase a la operación apropiada (aquí \"dL A\", Descargar todo, se usa como ejemplo) con las teclas y .\n:selected:",
+            "LOC dL A MENU FWD"
+          ],
+          [
+            "Pulse . Durante la transferencia, la pantalla muestra el estado de transferencia como un porcentaje de finalización.\n:selected:",
+            "LOC dL 50 % FWD"
+          ]
+        ]
+      ]
+    }
+  ]
+}

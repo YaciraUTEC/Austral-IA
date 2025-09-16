@@ -1,0 +1,3448 @@
+{
+  "archivo": "ABB Manual de Usuario ACS550_p281_320",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Manual del usuario del ACS550-01/U1\n281\nCondensadores\nReacondicionamiento\nLos condensadores de enlace de CC del convertidor necesitan un\nreacondicionamiento (reparación) si el convertidor ha estado inactivo durante más\nde un año. Sin este procedimiento, pueden causarse daños en los condensadores\ncuando el convertidor empiece a funcionar. Por ello, se recomienda reacondicionar\nlos condensadores una vez al año. Véase el apartado Número de serie en la\npágina 17 acerca del método de comprobación de la fecha de fabricación a partir del\nnúmero de serie de las etiquetas del convertidor.\nPara obtener más información sobre el reacondicionamiento de los condensadores,\nconsulte la Guide for Capacitor Reforming in ACS50, ACS55, ACS150, ACS310,\nACS350, ACS355, ACS550, ACH550 and R1-R4 OINT-/SINTboards\n(3AFE68735190 [Inglés]), disponible en Internet (visite www.abb.com e introduzca\nel código en el campo de búsqueda).\nSustitución\nEl circuito intermedio del convertidor emplea diversos condensadores electrolíticos.\nLa vida de los condensadores puede prolongarse reduciendo la temperatura\nambiente.\nNo es posible predecir el fallo de un condensador. Tales fallos suelen ir seguidos de\nun fallo de fusibles de alimentación de entrada o un disparo por fallo. Contacte con\nABB si se sospecha la existencia de un fallo de condensador. ABB pone a su\ndisposición recambios para los bastidores R5 y R6. No utilice recambios distintos a\nlos especificados por ABB.\nPanel de control\nLimpieza\nUtilice un paño suave y húmedo para limpiar el panel de control. Evite el uso de\nlimpiadores abrasivos que podrían rayar la ventana de la pantalla.\nPila\nLa pila sólo se utiliza en los paneles de control Asistentes que disponen de la\nfunción de reloj y en los cuales se ha activado. La pila mantiene el funcionamiento\ndel reloj en la memoria durante las interrupciones del suministro eléctrico.\nPara extraer la pila, utilice una moneda para hacer girar su soporte en la parte\nposterior del panel de control. Sustituya la pila por otra de tipo CR2032.\nNota: la pila NO es necesaria para ninguna de las funciones del panel de control o\nel convertidor, exceptuando el reloj.\nMantenimiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "282\nManual del usuario del ACS550-01/U1\nMantenimiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Manual del usuario del ACS550-01/U1\n283\nDatos técnicos\nEspecificaciones\nLa tabla siguiente detalla las especificaciones para el accionamiento de CA de\nvelocidad ajustable ACS550 por código de designación, incluyendo:\n· Especificaciones IEC\n· Especificaciones NEMA (columnas sombreadas)\n· bastidor.\nEspecificaciones, convertidores de 208 ... 240 V\nLos encabezados de columna abreviados se describen en el apartado Símbolos de\nla página 285.\nTipo\nUso normal\nUso en trabajo pesado\nBastidor\nACS550-x1-\nvéase a\ncontinuación\n/2N\nA\nPN\nkW\nPN\nCV\n/2hd\nA\nPhd\nkW\nPhd\nCV\nTensión de alimentación trifásica, 208 ... 240 V\n-04A6-2\n4,6\n0,75\n1\n3,5\n0,55\n0,75\nR1\n-06A6-2\n6,6\n1,1\n1,5\n4,6\n0,75\n1\nR1\n-07A5-2\n7,5\n1,5\n2\n6,6\n1,1\n1.5\nR1\n-012A-2\n11,8\n2,2\n3\n7,5\n1,5\n2\nR1\n-017A-2\n16,7\n4\n5\n11,8\n2,2\n3\nR1\n-024A-2\n24,2\n5,5\n7.5\n16,7\n4\n5\nR2\n-031A-2\n30,8\n7,5\n10\n24,2\n5,5\n7,5\nR2\n-046A-2\n46,2\n11\n15\n30,8\n7,5\n10\nR3\n-059A-2\n59,4\n15\n20\n46,2\n11\n15\nR3\n-075A-2\n74,8\n18,5\n25\n59,4\n15\n20\nR4\n-088A-2\n88,0\n22\n30\n74,8\n18,5\n25\nR4\n-114A-2\n114\n30\n40\n88,0\n22\n30\nR4\n-143A-2\n143\n37\n50\n114\n30\n40\nR6\n-178A-2\n178\n45\n60\n150\n37\n50\nR6\n-221A-2\n221\n55\n75\n178\n45\n60\nR6\n-248A-2\n248\n75\n100\n192\n55\n75\nR6\n00467918.xls C\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Tipo",
+            "Uso normal",
+            "Uso en trabajo pesado",
+            "Bastidor"
+          ],
+          [
+            "ACS550-x1- véase a continuación",
+            "/2N A",
+            "PN kW",
+            "PN CV",
+            "/2hd A",
+            "Phd kW",
+            "Phd CV"
+          ],
+          [
+            "Tensión de alimentación trifásica, 208 ... 240 V"
+          ],
+          [
+            "-04A6-2",
+            "4,6",
+            "0,75",
+            "1",
+            "3,5",
+            "0,55",
+            "0,75",
+            "R1"
+          ],
+          [
+            "-06A6-2",
+            "6,6",
+            "1,1",
+            "1,5",
+            "4,6",
+            "0,75",
+            "1",
+            "R1"
+          ],
+          [
+            "-07A5-2",
+            "7,5",
+            "1,5",
+            "2",
+            "6,6",
+            "1,1",
+            "1.5",
+            "R1"
+          ],
+          [
+            "-012A-2",
+            "11,8",
+            "2,2",
+            "3",
+            "7,5",
+            "1,5",
+            "2",
+            "R1"
+          ],
+          [
+            "-017A-2",
+            "16,7",
+            "4",
+            "5",
+            "11,8",
+            "2,2",
+            "3",
+            "R1"
+          ],
+          [
+            "-024A-2",
+            "24,2",
+            "5,5",
+            "7.5",
+            "16,7",
+            "4",
+            "5",
+            "R2"
+          ],
+          [
+            "-031A-2",
+            "30,8",
+            "7,5",
+            "10",
+            "24,2",
+            "5,5",
+            "7,5",
+            "R2"
+          ],
+          [
+            "-046A-2",
+            "46,2",
+            "11",
+            "15",
+            "30,8",
+            "7,5",
+            "10",
+            "R3"
+          ],
+          [
+            "-059A-2",
+            "59,4",
+            "15",
+            "20",
+            "46,2",
+            "11",
+            "15",
+            "R3"
+          ],
+          [
+            "-075A-2",
+            "74,8",
+            "18,5",
+            "25",
+            "59,4",
+            "15",
+            "20",
+            "R4"
+          ],
+          [
+            "-088A-2",
+            "88,0",
+            "22",
+            "30",
+            "74,8",
+            "18,5",
+            "25",
+            "R4"
+          ],
+          [
+            "-114A-2",
+            "114",
+            "30",
+            "40",
+            "88,0",
+            "22",
+            "30",
+            "R4"
+          ],
+          [
+            "-143A-2",
+            "143",
+            "37",
+            "50",
+            "114",
+            "30",
+            "40",
+            "R6"
+          ],
+          [
+            "-178A-2",
+            "178",
+            "45",
+            "60",
+            "150",
+            "37",
+            "50",
+            "R6"
+          ],
+          [
+            "-221A-2",
+            "221",
+            "55",
+            "75",
+            "178",
+            "45",
+            "60",
+            "R6"
+          ],
+          [
+            "-248A-2",
+            "248",
+            "75",
+            "100",
+            "192",
+            "55",
+            "75",
+            "R6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "284\nManual del usuario del ACS550-01/U1\nEspecificaciones, convertidores de 380 ... 480 V\nLos encabezados de columna abreviados se describen en el apartado Símbolos de\nla página 285.\nTipo\nUso normal\nUso en trabajo pesado\nBastidor\nACS550-x1-\nvéase a\ncontinuación\nI2N\nA\nPN\nkW\nPN\nCV\n/2hd\nA\nPhd\nkW\nPhd\nCV\nTensión de alimentación trifásica, 380 ... 480 V\n-03A3-4\n3,3\n1,1\n1,5\n2,4\n0,75\n1\nR1\n-04A1-4\n4,1\n1,5\n2\n3,3\n1,1\n1,5\nR1\n-05A4-4\n5,4\n2,2\nNota 1\n4,1\n1,5\nNota 1\nR1\n-06A9-4\n6,9\n3\n3\n5,4\n2,2\n3\nR1\n-08A8-4\n8,8\n4\n5\n6,9\n3\n3\nR1\n-012A-4\n11,9\n5,5\n7,5\n8,8\n4\n5\nR1\n-015A-4\n15,4\n7,5\n10\n11,9\n5,5\n7,5\nR2\n-023A-4\n23\n11\n15\n15,4\n7,5\n10\nR2\n-031A-4\n31\n15\n20\n23\n11\n15\nR3\n-038A-4\n38\n18,5\n25\n31\n15\n20\nR3\n-045A-4\n45\n22\n30\n38\n18,5\n25\nR3\n-059A-4\n59\n30\n40\n44\n22\n30\nR4\n-072A-4\n72\n37\n50\n59\n30\n40\nR4\n-078A-4\n77\nNota 2\n60\n72\nNota 2\n50\nR4\n-087A-4\n87\n45\nNota 1\n72\n37\nNota 1\nR4\n-097A-4\n97\nNota 2\n75\n77\nNota 2\n60\nR4\n-125A-4\n125\n55\nNota 1\n87\n45\nNota 1\nR5\n-125A-4\n125\nNota 2\n100\n96\nNota 2\n75\nR5\n-157A-4\n157\n75\n125\n124\n55\n100\nR6\n-180A-4\n180\n90\n150\n156\n75\n125\nR6\n-195A-4\n205\n110\nNota 1\n162\n90\nNota 1\nR6\n-246A-4\n246\n132\n200\n192\n110\n150\nR6\n-290A-4\n290\n160\nNota 1\n246\n132\n200\nR6\n00467918.xls C\n1. No disponible en la serie ACS550-U1.\n2. No disponible en la serie ACS550-01.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Tipo",
+            "Uso normal",
+            "Uso en trabajo pesado",
+            "Bastidor"
+          ],
+          [
+            "ACS550-x1- véase a continuación",
+            "I2N A",
+            "PN kW",
+            "PN CV",
+            "/2hd A",
+            "Phd kW",
+            "Phd CV"
+          ],
+          [
+            "Tensión de alimentación trifásica, 380 ... 480 V"
+          ],
+          [
+            "-03A3-4",
+            "3,3",
+            "1,1",
+            "1,5",
+            "2,4",
+            "0,75",
+            "1",
+            "R1"
+          ],
+          [
+            "-04A1-4",
+            "4,1",
+            "1,5",
+            "2",
+            "3,3",
+            "1,1",
+            "1,5",
+            "R1"
+          ],
+          [
+            "-05A4-4",
+            "5,4",
+            "2,2",
+            "Nota 1",
+            "4,1",
+            "1,5",
+            "Nota 1",
+            "R1"
+          ],
+          [
+            "-06A9-4",
+            "6,9",
+            "3",
+            "3",
+            "5,4",
+            "2,2",
+            "3",
+            "R1"
+          ],
+          [
+            "-08A8-4",
+            "8,8",
+            "4",
+            "5",
+            "6,9",
+            "3",
+            "3",
+            "R1"
+          ],
+          [
+            "-012A-4",
+            "11,9",
+            "5,5",
+            "7,5",
+            "8,8",
+            "4",
+            "5",
+            "R1"
+          ],
+          [
+            "-015A-4",
+            "15,4",
+            "7,5",
+            "10",
+            "11,9",
+            "5,5",
+            "7,5",
+            "R2"
+          ],
+          [
+            "-023A-4",
+            "23",
+            "11",
+            "15",
+            "15,4",
+            "7,5",
+            "10",
+            "R2"
+          ],
+          [
+            "-031A-4",
+            "31",
+            "15",
+            "20",
+            "23",
+            "11",
+            "15",
+            "R3"
+          ],
+          [
+            "-038A-4",
+            "38",
+            "18,5",
+            "25",
+            "31",
+            "15",
+            "20",
+            "R3"
+          ],
+          [
+            "-045A-4",
+            "45",
+            "22",
+            "30",
+            "38",
+            "18,5",
+            "25",
+            "R3"
+          ],
+          [
+            "-059A-4",
+            "59",
+            "30",
+            "40",
+            "44",
+            "22",
+            "30",
+            "R4"
+          ],
+          [
+            "-072A-4",
+            "72",
+            "37",
+            "50",
+            "59",
+            "30",
+            "40",
+            "R4"
+          ],
+          [
+            "-078A-4",
+            "77",
+            "Nota 2",
+            "60",
+            "72",
+            "Nota 2",
+            "50",
+            "R4"
+          ],
+          [
+            "-087A-4",
+            "87",
+            "45",
+            "Nota 1",
+            "72",
+            "37",
+            "Nota 1",
+            "R4"
+          ],
+          [
+            "-097A-4",
+            "97",
+            "Nota 2",
+            "75",
+            "77",
+            "Nota 2",
+            "60",
+            "R4"
+          ],
+          [
+            "-125A-4",
+            "125",
+            "55",
+            "Nota 1",
+            "87",
+            "45",
+            "Nota 1",
+            "R5"
+          ],
+          [
+            "-125A-4",
+            "125",
+            "Nota 2",
+            "100",
+            "96",
+            "Nota 2",
+            "75",
+            "R5"
+          ],
+          [
+            "-157A-4",
+            "157",
+            "75",
+            "125",
+            "124",
+            "55",
+            "100",
+            "R6"
+          ],
+          [
+            "-180A-4",
+            "180",
+            "90",
+            "150",
+            "156",
+            "75",
+            "125",
+            "R6"
+          ],
+          [
+            "-195A-4",
+            "205",
+            "110",
+            "Nota 1",
+            "162",
+            "90",
+            "Nota 1",
+            "R6"
+          ],
+          [
+            "-246A-4",
+            "246",
+            "132",
+            "200",
+            "192",
+            "110",
+            "150",
+            "R6"
+          ],
+          [
+            "-290A-4",
+            "290",
+            "160",
+            "Nota 1",
+            "246",
+            "132",
+            "200",
+            "R6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Manual del usuario del ACS550-01/U1\n285\nEspecificaciones, convertidores de 500 ... 600 V\nLos encabezados de columna abreviados se describen en el apartado Símbolos de\nla página 285.\nTipo\nUso normal\nUso en trabajo pesado\nBastidor\nACS550-U1-\nvéase a\ncontinuación\nI2N\nA\nPN\nkW\nPN\nCV\n/2hd\nA\nPhd\nkW\nPhd\nCV\nTensión de alimentación trifásica, 500 ... 600 V (Nota 1)\n-02A7-6\n2,7\n1,5\n2\n2,4\n1,1\n1,5\nR2\n-03A9-6\n3,9\n2,2\n3\n2,7\n1,5\n2\nR2\n-06A1-6\n6,1\n4\n5\n3,9\n2,2\n3\nR2\n-09A0-6\n9,0\n5,5\n7,5\n6,1\n4\n5\nR2\n-011A-6\n11\n7,5\n10\n9,0\n5,5\n7,5\nR2\n-017A-6\n17\n11\n15\n11\n7,5\n10\nR2\n-022A-6\n22\n15\n20\n17\n11\n15\nR3\n-027A-6\n27\n18,5\n25\n22\n15\n20\nR3\n-032A-6\n32\n22\n30\n27\n18,5\n25\nR4\n-041A-6\n-052A-6\n41\n30\n40\n32\n22\n30\nR4\n52\n37\n50\n41\n30\n40\nR4\n-062A-6\n62\n45\n60\n52\n37\n50\nR4\n-077A-6\n77\n55\n75\n62\n45\n60\nR6\n-099A-6\n99\n75\n100\n77\n55\n75\nR6\n-125A-6\n125\n90\n125\n99\n75\n100\nR6\n-144A-6\n144\n110\n150\n125\n90\n125\nR6\n00467918.xls C\n1. No disponible en la serie ACS550-01.\nSímbolos\nEspecificaciones típicas:\nUso normal (capacidad de sobrecarga del 10%)\nI2N\nIntensidad eficaz continua. Se permite una sobrecarga del 10% durante un minuto cada diez minutos.\nPotencia típica del motor en uso normal. Las especificaciones de potencia en kilovatios se\naplican a la mayoría de motores IEC de 4 polos. Las especificaciones en caballos de vapor\nse aplican a la mayoría de los motores NEMA de 4 polos.\nPN\nUso en trabajo pesado (capacidad de sobrecarga del 50%)\n/2hd\nIntensidad eficaz continua. Se permite una sobrecarga del 50% durante un minuto cada diez minutos.\nPhd\nPotencia típica del motor en uso en trabajo pesado. Las especificaciones de potencia en\nkilovatios se aplican a la mayoría de motores IEC de 4 polos. Las especificaciones en\ncaballos de vapor se aplican a la mayoría de los motores NEMA de 4 polos.\nDimensionado\nLas especificaciones de intensidad son iguales con independencia de la tensión de\nalimentación dentro de un rango de tensión. Para alcanzar la potencia nominal del motor\nespecificada en la tabla, la intensidad nominal del convertidor de frecuencia debe superar\no igualar la intensidad nominal del motor. Tenga también en cuenta que:\n· las especificaciones son aplicables a una temperatura ambiente de 40 ℃ (104 °F)\n· la potencia máxima del eje del motor permitida se limita a 1,5 · Phd. Si se supera el\nlímite, la intensidad y el par motor se restringen de forma automática. La función\nprotege el puente de entrada del convertidor de frecuencia frente a sobrecargas.\nEn sistemas multimotor, la intensidad de salida del convertidor debe ser igual o\nsuperior a la suma de las intensidades de entrada de todos los motores.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Tipo",
+            "Uso normal",
+            "Uso en trabajo pesado",
+            "Bastidor"
+          ],
+          [
+            "ACS550-U1- véase a continuación",
+            "I2N A",
+            "PN kW",
+            "PN CV",
+            "/2hd A",
+            "Phd kW",
+            "Phd CV"
+          ],
+          [
+            "Tensión de alimentación trifásica, 500 ... 600 V (Nota 1)"
+          ],
+          [
+            "-02A7-6",
+            "2,7",
+            "1,5",
+            "2",
+            "2,4",
+            "1,1",
+            "1,5",
+            "R2"
+          ],
+          [
+            "-03A9-6",
+            "3,9",
+            "2,2",
+            "3",
+            "2,7",
+            "1,5",
+            "2",
+            "R2"
+          ],
+          [
+            "-06A1-6",
+            "6,1",
+            "4",
+            "5",
+            "3,9",
+            "2,2",
+            "3",
+            "R2"
+          ],
+          [
+            "-09A0-6",
+            "9,0",
+            "5,5",
+            "7,5",
+            "6,1",
+            "4",
+            "5",
+            "R2"
+          ],
+          [
+            "-011A-6",
+            "11",
+            "7,5",
+            "10",
+            "9,0",
+            "5,5",
+            "7,5",
+            "R2"
+          ],
+          [
+            "-017A-6",
+            "17",
+            "11",
+            "15",
+            "11",
+            "7,5",
+            "10",
+            "R2"
+          ],
+          [
+            "-022A-6",
+            "22",
+            "15",
+            "20",
+            "17",
+            "11",
+            "15",
+            "R3"
+          ],
+          [
+            "-027A-6",
+            "27",
+            "18,5",
+            "25",
+            "22",
+            "15",
+            "20",
+            "R3"
+          ],
+          [
+            "-032A-6",
+            "32",
+            "22",
+            "30",
+            "27",
+            "18,5",
+            "25",
+            "R4"
+          ],
+          [
+            "-041A-6",
+            "41",
+            "30",
+            "40",
+            "32",
+            "22",
+            "30",
+            "R4"
+          ],
+          [
+            "-052A-6",
+            "52",
+            "37",
+            "50",
+            "41",
+            "30",
+            "40",
+            "R4"
+          ],
+          [
+            "-062A-6",
+            "62",
+            "45",
+            "60",
+            "52",
+            "37",
+            "50",
+            "R4"
+          ],
+          [
+            "-077A-6",
+            "77",
+            "55",
+            "75",
+            "62",
+            "45",
+            "60",
+            "R6"
+          ],
+          [
+            "-099A-6",
+            "99",
+            "75",
+            "100",
+            "77",
+            "55",
+            "75",
+            "R6"
+          ],
+          [
+            "-125A-6",
+            "125",
+            "90",
+            "125",
+            "99",
+            "75",
+            "100",
+            "R6"
+          ],
+          [
+            "-144A-6",
+            "144",
+            "110",
+            "150",
+            "125",
+            "90",
+            "125",
+            "R6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "286\nManual del usuario del ACS550-01/U1\nDerrateo\nLa capacidad de carga (intensidad y potencia) disminuye en determinadas\nsituaciones, como se define a continuación. En tales situaciones, en que se requiere\nla potencia completa del motor, sobredimensione el convertidor de manera que el\nvalor derrateado proporcione una capacidad suficiente.\nPor ejemplo, si su aplicación requiere 15,4 A de intensidad del motor y una\nfrecuencia de conmutación de 8 kHz, calcule el requisito de tamaño de convertidor\napropiado de la manera siguiente:\nEl tamaño mínimo requerido = 15,4 A / 0,80 = 19,25 A\nDonde: 0,80 es el derrateo para la frecuencia de conmutación de 8 kHz (véase el apartado\nDerrateo por frecuencia de conmutación en la página 286).\nSi consultamos /2N en las tablas de especificaciones (a partir de la página 283), los\nsiguientes convertidores exceden el requisito /2N de 19,25 A: ACS550-x1-023A-4, o\nACS550-x1-024A-2.\nDerrateo por temperatura\nEn el rango de temperatura +40 ℃ ... 50 ℃ (+104 °F ... 122 ºF), la intensidad nominal\nde salida se reduce un 1% por cada 1 ℃ (1,8 °F) por encima de +40 °℃ (+104 °F).\nLa intensidad de salida se calcula multiplicando la intensidad indicada en la tabla de\nespecificaciones por el factor de derrateo.\nEjemplo Si la temperatura ambiente es de 50 °℃ (+122 °F), el factor de derrateo es\n100% - 1%/°C · 10 °C = 90% or 0,90.\nLa intensidad de salida será de 0,90 · /2N 0 0,90 · /2hd-\nDerrateo por altitud\nEn altitudes de 1.000 ... 4.000 m (3.300 ... 13.200 pies) por encima del nivel del mar, el\nderrateo es del 1% por cada 100 m (330 pies). Si el lugar de instalación está a una\naltitud superior a 2000 m (6600 ft) sobre el nivel del mar, contacte con su\nrepresentante local de ABB para más información.\nDerrateo por alimentación monofásica\nEn convertidores de la serie de 208 ... 240 V, puede utilizarse una alimentación\nmonofásica. En tal caso, el derrateo es del 50%.\nDerrateo por frecuencia de conmutación\nSi se utiliza la frecuencia de conmutación de 8 kHz (parámetro 2606):\n· derratee todas las intensidades y potencias nomianles (incluidas las intensidades\nde sobrecarga del convertidor) a 80%.\nSi se utiliza la frecuencia de conmutación de 12 kHz (parámetro 2606):\n· derratee todas las intensidades y potencias nominales (incluidas las intensidades\nde sobrecarga del convertidor) al 65% (al 50% para 600 V, bastidores R4, es\ndecir, para ACS550-U1-032A-6 ... ACS550-U1-062A-6),\n· y derratee el máximo de temperatura ambiente a 30 °℃ (86 °F).\n· Nota: la intensidad máxima continua está limitada a /2hd-\nNota: ajuste el parámetro 2607 CTRL FREC CONMUT = 1 (ON) que permite que el convertidor\nreduzca la frecuencia de conmutación si/cuando la temperatura interna del convertidor\nsupera los 80 ℃ (con 12 kHz de frecuencia de conmutación) o los 90 ℃ (con 8 kHz de\nfrecuencia de conmutación). Véase la descripción del parámetro 2607 para más detalles.\nDatos técnicos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Manual del usuario del ACS550-01/U1\n287\nConexiones de la alimentación de entrada\nADVERTENCIA: no haga funcionar el convertidor fuera del rango de tensión de red de\nentrada nominal. La sobretensión puede provocar daños permanentes en el convertidor.\nEspecificaciones de la alimentación de entrada\nEspecificaciones de conexión de la alimentación de entrada (red)\nTensión (U1)\n208/220/230/240 V CA trifásica (o monofásica) -15% ... +10% para\nACS550-x1-xxxx-2.\n380/400/415/440/460/480 V CA trifásica -15% ... +10% para ACS550-x1-xxxx-4.\n500/525/575/600 V CA trifásica -15% ... +10% para ACS550-U1-xxxx-6.\nIntensidad de\ncortocircuito\n(IEC 629)\nLa intensidad máxima de cortocircuito que se permite en la alimentación es de\n100 kA siempre que el cable de entrada de alimentación del convertidor de\nfrecuencia esté protegido con fusibles apropiados. EEUU: 100 000 AIC.\nFrecuencia\n48 ... 63 Hz\nDesequilibrio\nMax. + 3% de la tensión de entrada nominal entre fases.\nFactor de potencia\nfundamental (cos fi1)\n0,98 (con carga nominal).\nEspecificación de\ntemperatura del cable\n90 °℃ (194 ºF), especificación mínima.\nDispositivo de desconexión para aislamiento\nInstale un dispositivo de desconexión de entrada accionado manualmente (red)\nentre la fuente de alimentación de CA y el convertidor de frecuencia. El dispositivo\nde desconexión debe ser de un tipo que pueda bloquearse en posición abierta para\nla instalación y las tareas de mantenimiento.\n· Europa: para cumplir las Directivas de la Unión Europea, según la norma\nEN 60204-1, Seguridad de la maquinaria, el dispositivo de desconexión debe ser\nde uno de los tipos siguientes:\n- un desconectador tipo interruptor con categoría de uso AC-23B (EN 60947-3)\n- un desconectador con un contacto auxiliar que, en todos los casos, haga que\nlos dispositivos de conmutación interrumpan el circuito de carga antes de la\napertura de los contactos principales del desconectador (EN 60947-3);\n- un interruptor automático adecuado para el aislamiento según la norma EN 60947-2.\n· Otras regiones: el dispositivo de desconexión debe ajustarse a las normas de\nseguridad aplicables.\nFusibles\nEl usuario final será el responsable de proporcionar la protección de circuitos\nderivados, dimensionada de conformidad con la normativa eléctrica local y nacional.\nLas tablas siguientes facilitan recomendaciones relativas a fusibles para la\nprotección contra cortocircuitos en la alimentación de entrada del convertidor.\nLas intensidades de cortocircuito nominales presentadas en las tablas son los\nvalores máximos para los tipos de fusible correspondientes. Verifique que la\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Especificaciones de conexión de la alimentación de entrada (red)"
+          ],
+          [
+            "Tensión (U1)",
+            "208/220/230/240 V CA trifásica (o monofásica) -15% ... +10% para ACS550-x1-xxxx-2. 380/400/415/440/460/480 V CA trifásica -15% ... +10% para ACS550-x1-xxxx-4. 500/525/575/600 V CA trifásica -15% ... +10% para ACS550-U1-xxxx-6."
+          ],
+          [
+            "Intensidad de cortocircuito (IEC 629)",
+            "La intensidad máxima de cortocircuito que se permite en la alimentación es de 100 kA siempre que el cable de entrada de alimentación del convertidor de frecuencia esté protegido con fusibles apropiados. EEUU: 100 000 AIC."
+          ],
+          [
+            "Frecuencia",
+            "48 ... 63 Hz"
+          ],
+          [
+            "Desequilibrio",
+            "Max. + 3% de la tensión de entrada nominal entre fases."
+          ],
+          [
+            "Factor de potencia fundamental (cos fi1)",
+            "0,98 (con carga nominal)."
+          ],
+          [
+            "Especificación de temperatura del cable",
+            "90 °℃ (194 ºF), especificación mínima."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "288\nManual del usuario del ACS550-01/U1\nespecificación de intensidad eficaz del fusible es superior a la intensidad de entrada\nsi se utilizan especificaciones de fusible inferiores.\nCompruebe que el tiempo de fusión del fusible sea inferior a 0,5 segundos. El\ntiempo de fusión depende del tipo de fusible, de la impedancia de la red de\nalimentación y de la sección transversal, el material y la longitud del cable de\nalimentación. En caso de que se exceda el tiempo de fusión de 0,5 segundos con\nfusibles gG o T, en la mayoría de las ocasiones los fusibles ultrarrápidos (aR)\nreducirán el tiempo de fusión a un nivel aceptable.\nFusibles, convertidores 208 ... 240 V\nACS550-x1-\nvéase a\ncontinuación\nIntensidad de\nentrada\nA\nFusibles de alimentación de entrada (red)\nIEC 60269 gG (A)\nUL Clase T (A)\nTipo Bussmann\n-04A6-2\n4,6\n10\n10\nJJS-10\n-06A6-2\n6,6\n-07A5-2\n7,5\n-012A-2\n11,8\n16\n15\nJJS-15\n-017A-2\n16,7\n25\n25\nJJS-25\n-024A-2\n24,2\n30\nJJS-30\n-031A-2\n30,8\n40\n40\nJJS-40\n-046A-2\n46,2\n63\n60\nJJS-60\n-059A-2\n59,4\n80\nJJS-80\n-075A-2\n74,8\n80\n100\nJJS-100\n-088A-2\n88,0\n100\n110\nJJS-110\n-114A-2\n114\n125\n150\nJJS-150\n-143A-2\n143\n200\n200\nJJS-200\n-178A-2\n178\n250\n250\nJJS-250\n-221A-2\n221\n315\n300\nJJS-300\n-248A-2\n248\n350\nJJS-350\n00467918.xls C\nFusibles, convertidores 380 ... 480 V\nACS550-x1-\nvéase a\ncontinuación\nIntensidad de\nentrada\nA\nFusibles de alimentación de entrada (red)\nIEC 60269 gG (A)\nUL Clase T (A)\nTipo Bussmann\n-03A3-4\n3,3\n10\n10\nJJS-10\n-04A1-4\n4,1\n-05A4-4\n5,4\n-06A9-4\n6,9\n-08A8-4\n8,8\n15\nJJS-15\n-012A-4\n11,9\n16\n-015A-4\n15,4\n20\nJJS-20\n-023A-4\n23\n25\n30\nJJS-30\n-031A-4\n31\n35\n40\nJJS-40\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "ACS550-x1- véase a continuación",
+            "Intensidad de entrada A",
+            "Fusibles de alimentación de entrada (red)"
+          ],
+          [
+            "IEC 60269 gG (A)",
+            "UL Clase T (A)",
+            "Tipo Bussmann"
+          ],
+          [
+            "-04A6-2",
+            "4,6",
+            "10",
+            "10",
+            "JJS-10"
+          ],
+          [
+            "-06A6-2",
+            "6,6"
+          ],
+          [
+            "-07A5-2",
+            "7,5"
+          ],
+          [
+            "-012A-2",
+            "11,8",
+            "16",
+            "15",
+            "JJS-15"
+          ],
+          [
+            "-017A-2",
+            "16,7",
+            "25",
+            "25",
+            "JJS-25"
+          ],
+          [
+            "-024A-2",
+            "24,2",
+            "30",
+            "JJS-30"
+          ],
+          [
+            "-031A-2",
+            "30,8",
+            "40",
+            "40",
+            "JJS-40"
+          ],
+          [
+            "-046A-2",
+            "46,2",
+            "63",
+            "60",
+            "JJS-60"
+          ],
+          [
+            "-059A-2",
+            "59,4",
+            "80",
+            "JJS-80"
+          ],
+          [
+            "-075A-2",
+            "74,8",
+            "80",
+            "100",
+            "JJS-100"
+          ],
+          [
+            "-088A-2",
+            "88,0",
+            "100",
+            "110",
+            "JJS-110"
+          ],
+          [
+            "-114A-2",
+            "114",
+            "125",
+            "150",
+            "JJS-150"
+          ],
+          [
+            "-143A-2",
+            "143",
+            "200",
+            "200",
+            "JJS-200"
+          ],
+          [
+            "-178A-2",
+            "178",
+            "250",
+            "250",
+            "JJS-250"
+          ],
+          [
+            "-221A-2",
+            "221",
+            "315",
+            "300",
+            "JJS-300"
+          ],
+          [
+            "-248A-2",
+            "248",
+            "350",
+            "JJS-350"
+          ]
+        ],
+        [
+          [
+            "ACS550-x1- véase a continuación",
+            "Intensidad de entrada A",
+            "Fusibles de alimentación de entrada (red)"
+          ],
+          [
+            "IEC 60269 gG (A)",
+            "UL Clase T (A)",
+            "Tipo Bussmann"
+          ],
+          [
+            "-03A3-4",
+            "3,3",
+            "10",
+            "10",
+            "JJS-10"
+          ],
+          [
+            "-04A1-4",
+            "4,1"
+          ],
+          [
+            "-05A4-4",
+            "5,4"
+          ],
+          [
+            "-06A9-4",
+            "6,9"
+          ],
+          [
+            "-08A8-4",
+            "8,8",
+            "15",
+            "JJS-15"
+          ],
+          [
+            "-012A-4",
+            "11,9",
+            "16"
+          ],
+          [
+            "-015A-4",
+            "15,4",
+            "20",
+            "JJS-20"
+          ],
+          [
+            "-023A-4",
+            "23",
+            "25",
+            "30",
+            "JJS-30"
+          ],
+          [
+            "-031A-4",
+            "31",
+            "35",
+            "40",
+            "JJS-40"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Manual del usuario del ACS550-01/U1\n289\nACS550-x1-\nvéase a\ncontinuación\nIntensidad de\nentrada\nA\nFusibles de alimentación de entrada (red)\nIEC 60269 gG (A)\nUL Clase T (A)\nTipo Bussmann\n-038A-4\n38\n50\n50\nJJS-50\n-045A-4\n45\n60\nJJS-60\n-059A-4\n59\n63\n80\nJJS-80\n-072A-4\n72\n80\n90\nJJS-90\n-078A-4\n77\n100\nJJS-100\n-087A-4\n87\n125\n125\nJJS-125\n-097A-4\n97\n-125A-4\n125\n160\n175\nJJS-175\n-157A-4\n157\n200\n200\nJJS-200\n-180A-4\n180\n250\n250\nJJS-250\n-195A-4\n205\n-246A-4\n246\n315\n350\nJJS-350\n-290A-4\n290\n00467918.xls C\nFusibles, convertidores de 500 ... 600 V\nACS550-U1-\nvéase a\ncontinuación\nIntensidad de\nentrada\nA\nFusibles de alimentación de entrada (red)\nIEC 60269 gG (A)\nUL Clase T (A)\nTipo Bussmann\n-02A7-6\n2,7\n10\n10\nJJS-10\n-03A9-6\n3,9\n-06A1-6\n6,1\n-09A0-6\n9,0\n16\n15\nJJS-15\n-011A-6\n11\n-017A-6\n17\n25\n25\nJJS-25\n-022A-6\n22\n-027A-6\n27\n35\n40\nJJS-40\n-032A-6\n32\n-041A-6\n41\n50\n50\nJJS-50\n-052A-6\n52\n60\n60\nJJS-60\n-062A-6\n62\n80\n80\nJJS-80\n-077A-6\n77\n100\nJJS-100\n-099A-6\n99\n125\n150\nJJS-150\n-125A-6\n125\n160\n175\nJJS-175\n-144A-6\n144\n200\n200\nJJS-200\n00467918.xls C\nDispositivos de paro de emergencia\nEl diseño global de la instalación debe incluir dispositivos de paro de emergencia y\ncualquier otro equipo de seguridad que pueda ser necesario. Si se pulsa STOP en\nel panel de control del convertidor:\n· No se genera un paro de emergencia del motor\n· No se aísla el convertidor de un potencial peligroso.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "ACS550-x1- véase a continuación",
+            "Intensidad de entrada A",
+            "Fusibles de alimentación de entrada (red)"
+          ],
+          [
+            "IEC 60269 gG (A)",
+            "UL Clase T (A)",
+            "Tipo Bussmann"
+          ],
+          [
+            "-038A-4",
+            "38",
+            "50",
+            "50",
+            "JJS-50"
+          ],
+          [
+            "-045A-4",
+            "45",
+            "60",
+            "JJS-60"
+          ],
+          [
+            "-059A-4",
+            "59",
+            "63",
+            "80",
+            "JJS-80"
+          ],
+          [
+            "-072A-4",
+            "72",
+            "80",
+            "90",
+            "JJS-90"
+          ],
+          [
+            "-078A-4",
+            "77",
+            "100",
+            "JJS-100"
+          ],
+          [
+            "-087A-4",
+            "87",
+            "125",
+            "125",
+            "JJS-125"
+          ],
+          [
+            "-097A-4",
+            "97",
+            ""
+          ],
+          [
+            "-125A-4",
+            "125",
+            "160",
+            "175",
+            "JJS-175"
+          ],
+          [
+            "-157A-4",
+            "157",
+            "200",
+            "200",
+            "JJS-200"
+          ],
+          [
+            "-180A-4",
+            "180",
+            "250",
+            "250",
+            "JJS-250"
+          ],
+          [
+            "-195A-4",
+            "205",
+            ""
+          ],
+          [
+            "-246A-4",
+            "246",
+            "315",
+            "350",
+            "JJS-350"
+          ],
+          [
+            "-290A-4",
+            "290"
+          ]
+        ],
+        [
+          [
+            "ACS550-U1- véase a continuación",
+            "Intensidad de entrada A",
+            "Fusibles de alimentación de entrada (red)"
+          ],
+          [
+            "IEC 60269 gG (A)",
+            "UL Clase T (A)",
+            "Tipo Bussmann"
+          ],
+          [
+            "-02A7-6",
+            "2,7",
+            "10",
+            "10",
+            "JJS-10"
+          ],
+          [
+            "-03A9-6",
+            "3,9"
+          ],
+          [
+            "-06A1-6",
+            "6,1"
+          ],
+          [
+            "-09A0-6",
+            "9,0",
+            "16",
+            "15",
+            "JJS-15"
+          ],
+          [
+            "-011A-6",
+            "11"
+          ],
+          [
+            "-017A-6",
+            "17",
+            "25",
+            "25",
+            "JJS-25"
+          ],
+          [
+            "-022A-6",
+            "22"
+          ],
+          [
+            "-027A-6",
+            "27",
+            "35",
+            "40",
+            "JJS-40"
+          ],
+          [
+            "-032A-6",
+            "32"
+          ],
+          [
+            "-041A-6",
+            "41",
+            "50",
+            "50",
+            "JJS-50"
+          ],
+          [
+            "-052A-6",
+            "52",
+            "60",
+            "60",
+            "JJS-60"
+          ],
+          [
+            "-062A-6",
+            "62",
+            "80",
+            "80",
+            "JJS-80"
+          ],
+          [
+            "-077A-6",
+            "77",
+            "100",
+            "JJS-100"
+          ],
+          [
+            "-099A-6",
+            "99",
+            "125",
+            "150",
+            "JJS-150"
+          ],
+          [
+            "-125A-6",
+            "125",
+            "160",
+            "175",
+            "JJS-175"
+          ],
+          [
+            "-144A-6",
+            "144",
+            "200",
+            "200",
+            "JJS-200"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "290\nManual del usuario del ACS550-01/U1\nCables/cableado de alimentación de entrada\nLa conexión eléctrica de la entrada puede comprender:\n· un cable de cuatro conductores (tres fases y masa/tierra). No se requiere pantalla.\n· cuatro conductores aislados dispuestos a través de un conducto.\nDimensione el cableado de conformidad con las normas de seguridad locales, la\ntensión de entrada apropiada y la intensidad de carga del convertidor de frecuencia.\nNota: el conductor debe tener un valor inferior al limite máximo definido por el\ntamaño de terminal. Compruebe el tamaño máximo de cable de acuerdo con la tabla\ndel apartado Terminales de conexión de alimentación del convertidor en la página\n292).\nLa tabla siguiente especifica tipos de cables de cobre y aluminio para distintas\nintensidades de carga. Estas recomendaciones solamente son aplicables a las\ncondiciones detalladas en la parte superior de la tabla.\nIEC\nBasado en:\n· EN 60204-1 y IEC 60364-5-2\n· Aislamiento de PVC\n· 30 ℃ (86 °F) de temperatura ambiente\n· 70 ℃ (158 °F) de temperatura de superficie\n· cables con pantalla concéntrica de cobre\n· como máximo nueve cables extendidos sobre\nuna bandeja de cable uno al lado del otro.\nNEC\nBasado en:\n· Tabla NEC 310-16 para hilos de cobre\n· 90 ℃ (194 °F) de aislamiento del hilo\n· 40 °℃ (104 ºF) de temperatura ambiente\n· no deben colocarse más de tres conductores\nde corriente en el conducto eléctrico, el cable\no tierra (enterrado directamente)\n· cables de cobre con pantalla concéntrica de\ncobre.\nIntensidad\nde carga\nmáx.\nA\nCable de\nCu\nmm2\nIntensidad\nde carga\nmáx.\nA\nCable de\nAl\nmm2\nIntensidad de\ncarga máx.\nA\nTamaño del hilo de Cu\nAWG/kcmil\n14\n3×1,5\n22,8\n14\n20\n3×2,5\n27,3\n12\n27\n3×4\n36,4\n10\n34\n3 x 6\n50,1\n8\n47\n3×10\n68,3\n6\n62\n3×16\n61\n3×25\n86,5\n4\n79\n3×25\n75\n3×35\n100\n3\n98\n3×35\n91\n3×50\n118\n2\n119\n3×50\n117\n3×70\n137\n1\n153\n3×70\n143\n3×95\n155\n1/0\n186\n3×95\n165\n3×120\n178\n2/0\n215\n3×120\n191\n3×150\n205\n3/0\n249\n3×150\n218\n3×185\n237\n4/0\n284\n3×185\n257\n3×240\n264\n250 MCM o 2 × 1\n330\n3×240\n274\n3× (3×50)\n291\n300 MCM o 2 × 1/0\n285\n2× (3×95)\n319\n350 MCM o 2 × 2/0\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Intensidad de carga máx. A",
+            "Cable de Cu mm2",
+            "",
+            "Intensidad de carga máx. A",
+            "Cable de Al mm2",
+            "Intensidad de carga máx. A",
+            "Tamaño del hilo de Cu AWG/kcmil"
+          ],
+          [
+            "14",
+            "3×1,5",
+            "",
+            "",
+            "22,8",
+            "14"
+          ],
+          [
+            "20",
+            "3×2,5",
+            "27,3",
+            "12"
+          ],
+          [
+            "27",
+            "3×4",
+            "36,4",
+            "10"
+          ],
+          [
+            "34",
+            "3 x 6",
+            "50,1",
+            "8"
+          ],
+          [
+            "47",
+            "3×10",
+            "68,3",
+            "6"
+          ],
+          [
+            "62",
+            "3×16",
+            "61",
+            "3×25",
+            "86,5",
+            "4"
+          ],
+          [
+            "79",
+            "3×25",
+            "75",
+            "3×35",
+            "100",
+            "3"
+          ],
+          [
+            "98",
+            "3×35",
+            "91",
+            "3×50",
+            "118",
+            "2"
+          ],
+          [
+            "119",
+            "3×50",
+            "117",
+            "3×70",
+            "137",
+            "1"
+          ],
+          [
+            "153",
+            "3×70",
+            "143",
+            "3×95",
+            "155",
+            "1/0"
+          ],
+          [
+            "186",
+            "3×95",
+            "165",
+            "3×120",
+            "178",
+            "2/0"
+          ],
+          [
+            "215",
+            "3×120",
+            "191",
+            "3×150",
+            "205",
+            "3/0"
+          ],
+          [
+            "249",
+            "3×150",
+            "218",
+            "3×185",
+            "237",
+            "4/0"
+          ],
+          [
+            "284",
+            "3×185",
+            "257",
+            "3×240",
+            "264",
+            "250 MCM o 2 × 1"
+          ],
+          [
+            "330",
+            "3×240",
+            "274",
+            "3× (3×50)",
+            "291",
+            "300 MCM o 2 × 1/0"
+          ],
+          [
+            "",
+            "",
+            "285",
+            "2× (3×95)",
+            "319",
+            "350 MCM o 2 × 2/0"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Manual del usuario del ACS550-01/U1\n291\nConexiones a tierra\nPara la seguridad del personal, un funcionamiento correcto y para reducir las\nemisiones/absorciones electromagnéticas, el convertidor y el motor deben\nconectarse a tierra en el lugar de instalación.\n· Los conductores deben tener el tamaño adecuado según prescriben las normas\nde seguridad.\n· Los apantallamientos de los cables de potencia deben conectarse al terminal PE\ndel convertidor para satisfacer las normas de seguridad.\n· Los apantallamientos de los cables de potencia son adecuados para su uso\ncomo conductores de conexión a tierra de equipos sólo si los conductores de la\npantalla tienen el tamaño adecuado para satisfacer las normas de seguridad.\n· En instalaciones con varios convertidores, no conecte terminales de convertidor en serie.\nRedes TN con conexión a tierra en un vértice\nADVERTENCIA: no intente ni instalar ni extraer los tornillos EM1, EM3, F1 o F2 del\nfiltro EMC mientras se suministra alimentación a los terminales de entrada del\nconvertidor de frecuencia.\nLas redes TN con conexión a tierra en un vértice se definen en la tabla siguiente.\nEn tales sistemas, desconecte la conexión interna a tierra a través de los\ncondensadores del filtro EMC (hágalo también si se desconoce la configuración de\nconexión a tierra del sistema), véase el apartado Desconexión del filtro EMC interno\nen la página 27.\nRedes TN con conexión a tierra en un vertice - Debe desconectarse el filtro EMC\nConectado a\n·L1\ntierra en la\nesquina del\ntriángulo\n-L2\nL3\nConectado a\ntierra en el punto\nintermedio de un\ntramo de\ntriángulo\nL1\n-L2\nL3\nMonofásica,\nL1\nconectada a\ntierra por un\nextremo\n3\n·N\nTrifásica \"Variac\"\nsin neutro\nconectado a\ntierra\nsólidamente\nL1\nL2-\n-L1\n-L2\nL3-\n-L3\nLos condensadores del filtro EMC realizan una conexión a\ntierra interna que reduce la emisión electromagnética.\nCuando la EMC (compatibilidad electromagnética) supone un\nproblema, y el sistema está conectado a tierra\nsimétricamente, se puede conectar el filtro EMC. A modo de\nreferencia, el diagrama de la derecha ilustra una red TN\nconectada a tierra simétricamente (Sistema TN-S).\n- L1\nL2\nL3\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Conectado a ·L1 tierra en la esquina del triángulo -L2 L3",
+            "",
+            "Conectado a tierra en el punto intermedio de un tramo de triángulo",
+            "L1 -L2 L3"
+          ],
+          [
+            "Monofásica, L1 conectada a tierra por un extremo 3 ·N",
+            "",
+            "Trifásica \"Variac\" sin neutro conectado a tierra sólidamente",
+            "L1 L2-",
+            "-L1 -L2"
+          ],
+          [
+            "",
+            "",
+            "L3- -L3"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "292\nManual del usuario del ACS550-01/U1\nSistema IT\nADVERTENCIA: no intente ni instalar ni extraer los tornillos EM1, EM3, F1 o F2 del\nfiltro EMC mientras se suministra alimentación a los terminales de entrada del\nconvertidor de frecuencia.\n4\nPara redes IT [una red de alimentación sin conexión de neutro a tierra o una red de\nalimentación con conexión de neutro a tierra de alta resistencia (por encima de 30 ohmios)]:\n· Desconecte la conexión a tierra al filtro EMC interno, véase el apartado\nDesconexión del filtro EMC interno en la página 27.\n· Cuando existan requisitos EMC, compruebe si existen emisiones excesivas\npropagadas a redes de baja tensión próximas. En algunos casos basta con la\nsupresión natural causada por los transformadores y los cables. En caso de\nduda, utilice un transformador de alimentación con apantallamiento estático entre\nel arrollamiento primario y el secundario.\n. NO instale un filtro RFI/EMC externo. El uso de un filtro EMC conecta a tierra la\nalimentación de entrada a través de los condensadores del filtro, lo que podría\nsuponer un peligro y dañar el convertidor.\nTerminales de conexión de alimentación del convertidor\nLa tabla siguiente facilita especificaciones de los terminales de conexión de\nalimentación del convertidor\nNota: véanse los tamaños de cable recomendados para diferentes intensidades de\ncarga en el apartado Cables/cableado de alimentación de entrada en la página 290.\nBastidor\nTerminales U1, V1, W1\nU2, V2, W2\nBRK+, UDC+\nTerminal PE de conexión a\ntierra\nTamaño\nmín. de hilo\nTamaño\nmáx. de hilo\nPar de apriete\nTamaño\nmáx. de hilo\nPar de apriete\nmm2\nAWG\nmm2\nAWG\nN·m\nlb ft\nmm2\nAWG\nN·m\nlb ft\nR1\n0,75\n18\n10\n8\n1,4\n1\n10\n8\n1,4\n1\nR2\n0,75\n18\n10\n8\n1,4\n1\n10\n8\n1,4\n1\nR3\n2,5\n14\n25\n3\n2,5\n1,8\n16\n6\n1,8\n1,3\nR4\n6\n10\n50\n1/0\n5,6\n4\n25\n3\n2\n1,5\nR5\n6\n10\n70\n2/0\n15\n11\n70\n2/0\n15\n11\nR6\n951\n3/01\n240\n350 MCM\n40\n30\n95\n3/0\n8\n6\n00467918.xls C\n1\nVéase el apartado Consideraciones sobre los terminales de alimentación - Bastidor R6 en la\npágina 293.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Bastidor",
+            "Terminales U1, V1, W1 U2, V2, W2 BRK+, UDC+",
+            "Terminal PE de conexión a tierra"
+          ],
+          [
+            "Tamaño mín. de hilo",
+            "Tamaño máx. de hilo",
+            "Par de apriete",
+            "Tamaño máx. de hilo",
+            "Par de apriete"
+          ],
+          [
+            "mm2",
+            "AWG",
+            "mm2",
+            "AWG",
+            "N·m",
+            "lb ft",
+            "mm2",
+            "AWG",
+            "N·m",
+            "lb ft"
+          ],
+          [
+            "R1",
+            "0,75",
+            "18",
+            "10",
+            "8",
+            "1,4",
+            "1",
+            "10",
+            "8",
+            "1,4",
+            "1"
+          ],
+          [
+            "R2",
+            "0,75",
+            "18",
+            "10",
+            "8",
+            "1,4",
+            "1",
+            "10",
+            "8",
+            "1,4",
+            "1"
+          ],
+          [
+            "R3",
+            "2,5",
+            "14",
+            "25",
+            "3",
+            "2,5",
+            "1,8",
+            "16",
+            "6",
+            "1,8",
+            "1,3"
+          ],
+          [
+            "R4",
+            "6",
+            "10",
+            "50",
+            "1/0",
+            "5,6",
+            "4",
+            "25",
+            "3",
+            "2",
+            "1,5"
+          ],
+          [
+            "R5",
+            "6",
+            "10",
+            "70",
+            "2/0",
+            "15",
+            "11",
+            "70",
+            "2/0",
+            "15",
+            "11"
+          ],
+          [
+            "R6",
+            "951",
+            "3/01",
+            "240",
+            "350 MCM",
+            "40",
+            "30",
+            "95",
+            "3/0",
+            "8",
+            "6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Manual del usuario del ACS550-01/U1\n293\nConsideraciones sobre los terminales de alimentación - Bastidor R6\nADVERTENCIA: para terminales de alimentación R6, si se suministran terminales\nroscados, sólo pueden utilizarse con tamaños de cable de 95 mm2 (3/0 AWG) o\nmayores. Los cables menores se aflojaran y podrían dañar el convertidor.\nRequieren terminales circulares engarzados como se describe a continuación.\n4\nTerminales circulares engarzados\nEn el bastidor R6, si se suministran terminales\nroscados pero el tamaño de cable utilizado es\ninferior a 95 mm2 (3/0 AWG), o si no se\n5\n3\nsuministran terminales roscados, utilice terminales\ncirculares engarzados de conformidad con el\n4\nprocedimiento siguiente.\n1. Seleccione terminales circulares apropiados en la\ntabla siguiente.\n2. Retire los terminales roscados, si existen.\n3. Instale los terminales circulares suministrados en\nel extremo del convertidor de los cables.\nX60002\n4. Aísle los extremos de los terminales circulares con cinta aislante o tubos retráctiles.\n5. Conecte los terminales circulares al convertidor.\nTamaño del\nhilo\nFabricante\nTerminal\ncircular\nHerramienta\nengarzadora\nN.º de\nengarces\nmm2\nkcmil/\nAWG\n16\n6\nBurndy\nYAV6C-L2\nMY29-3\n1\nIlsco\nCCL-6-38\nILC-10\n2\n25\n4\nBurndy\nYA4C-L4BOX\nMY29-3\n1\nIlsco\nCCL-4-38\nMT-25\n1\n35\n2\nBurndy\nYA2C-L4BOX\nMY29-3\n2\nIlsco\nCRC-2\nIDT-12\n1\nIlsco\nCCL-2-38\nMT-25\n1\n50\n1\nBurndy\nYA1C-L4BOX\nMY29-3\n2\nIlsco\nCRA-1-38\nIDT-12\n1\nIlsco\nCCL-1-38\nMT-25\n1\nThomas & Betts\n54148\nTBM-8\n3\n55\n1/0\nBurndy\nYA25-L4BOX\nMY29-3\n2\nIlsco\nCRB-0\nIDT-12\n1\nIlsco\nCCL-1/0-38\nMT-25\n1\nThomas & Betts\n54109\nTBM-8\n3\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Tamaño del hilo",
+            "Fabricante",
+            "Terminal circular",
+            "Herramienta engarzadora",
+            "N.º de engarces"
+          ],
+          [
+            "mm2",
+            "kcmil/ AWG"
+          ],
+          [
+            "16",
+            "6",
+            "Burndy",
+            "YAV6C-L2",
+            "MY29-3",
+            "1"
+          ],
+          [
+            "Ilsco",
+            "CCL-6-38",
+            "ILC-10",
+            "2"
+          ],
+          [
+            "25",
+            "4",
+            "Burndy",
+            "YA4C-L4BOX",
+            "MY29-3",
+            "1"
+          ],
+          [
+            "Ilsco",
+            "CCL-4-38",
+            "MT-25",
+            "1"
+          ],
+          [
+            "35",
+            "2",
+            "Burndy",
+            "YA2C-L4BOX",
+            "MY29-3",
+            "2"
+          ],
+          [
+            "Ilsco",
+            "CRC-2",
+            "IDT-12",
+            "1"
+          ],
+          [
+            "Ilsco",
+            "CCL-2-38",
+            "MT-25",
+            "1"
+          ],
+          [
+            "50",
+            "1",
+            "Burndy",
+            "YA1C-L4BOX",
+            "MY29-3",
+            "2"
+          ],
+          [
+            "Ilsco",
+            "CRA-1-38",
+            "IDT-12",
+            "1"
+          ],
+          [
+            "Ilsco",
+            "CCL-1-38",
+            "MT-25",
+            "1"
+          ],
+          [
+            "Thomas & Betts",
+            "54148",
+            "TBM-8",
+            "3"
+          ],
+          [
+            "55",
+            "1/0",
+            "Burndy",
+            "YA25-L4BOX",
+            "MY29-3",
+            "2"
+          ],
+          [
+            "Ilsco",
+            "CRB-0",
+            "IDT-12",
+            "1"
+          ],
+          [
+            "Ilsco",
+            "CCL-1/0-38",
+            "MT-25",
+            "1"
+          ],
+          [
+            "Thomas & Betts",
+            "54109",
+            "TBM-8",
+            "3"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "294\nManual del usuario del ACS550-01/U1\nTamaño del\nhilo\nFabricante\nTerminal\ncircular\nHerramienta\nengarzadora\nN.º de\nengarces\nmm2\nkcmil/\nAWG\n70\n2/0\nBurndy\nYAL26T38\nMY29-3\n2\nIlsco\nCRA-2/0\nIDT-12\n1\nIlsco\nCCL-2/0-38\nMT-25\n1\nThomas & Betts\n54110\nTBM-8\n3\n95\n3/0\nBurndy\nYAL27T38\nMY29-3\n2\nIlsco\nCRA-3/0\nIDT-12\n1\nIlsco\nCCL-3/0-38\nMT-25\n1\nThomas & Betts\n54111\nTBM-8\n3\n95\n3/0\nBurndy\nYA28R4\nMY29-3\n2\nIlsco\nCRA-4/0\nIDT-12\n1\nIlsco\nCCL-4/0-38\nMT-25\n2\nThomas & Betts\n54112\nTBM-8\n4\nTerminales roscados\n1\nUtilice el procedimiento siguiente para\nconectar cables si se suministran terminales\nroscados y el tamaño del cable es de\n95 mm2 (3/0 AWG) o mayor.\n1. Instale los terminales roscados\nsuministrados en el extremo del convertidor\nde los cables.\n2. Conecte los terminales roscados al convertidor.\n2\nX60003\nX60001\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Tamaño del hilo",
+            "Fabricante",
+            "Terminal circular",
+            "Herramienta engarzadora",
+            "N.º de engarces"
+          ],
+          [
+            "mm2",
+            "kcmil/ AWG"
+          ],
+          [
+            "70",
+            "2/0",
+            "Burndy",
+            "YAL26T38",
+            "MY29-3",
+            "2"
+          ],
+          [
+            "Ilsco",
+            "CRA-2/0",
+            "IDT-12",
+            "1"
+          ],
+          [
+            "Ilsco",
+            "CCL-2/0-38",
+            "MT-25",
+            "1"
+          ],
+          [
+            "Thomas & Betts",
+            "54110",
+            "TBM-8",
+            "3"
+          ],
+          [
+            "95",
+            "3/0",
+            "Burndy",
+            "YAL27T38",
+            "MY29-3",
+            "2"
+          ],
+          [
+            "Ilsco",
+            "CRA-3/0",
+            "IDT-12",
+            "1"
+          ],
+          [
+            "Ilsco",
+            "CCL-3/0-38",
+            "MT-25",
+            "1"
+          ],
+          [
+            "Thomas & Betts",
+            "54111",
+            "TBM-8",
+            "3"
+          ],
+          [
+            "95",
+            "3/0",
+            "Burndy",
+            "YA28R4",
+            "MY29-3",
+            "2"
+          ],
+          [
+            "Ilsco",
+            "CRA-4/0",
+            "IDT-12",
+            "1"
+          ],
+          [
+            "Ilsco",
+            "CCL-4/0-38",
+            "MT-25",
+            "2"
+          ],
+          [
+            "Thomas & Betts",
+            "54112",
+            "TBM-8",
+            "4"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Manual del usuario del ACS550-01/U1\n295\nConexiones del motor\nADVERTENCIA: no conecte nunca la alimentación de red a los terminales de salida\ndel convertidor: U2, V2 o W2. La tensión de red aplicada a la salida puede provocar\ndaños permanentes en el convertidor. Si se requiere un bypass frecuente, emplee\ninterruptores o contactores enclavados de forma mecánica.\n4\nADVERTENCIA: no conecte ningún motor con una tensión nominal inferior a 1/2 de\nla tensión de entrada nominal del convertidor de frecuencia.\n4\nADVERTENCIA: desconecte el convertidor antes de realizar cualquier prueba de\ntolerancia a tensión (Hi-Pot) o prueba de resistencia de aislamiento (Megger) en el\nmotor o los cables de motor. No realice estas pruebas en el convertidor.\n4\nEspecificaciones de la conexión del motor\nEspecificaciones de la conexión del motor\nTensión (U2)\n0 ... U1, trifásica simétrica, Umax en el inicio del debilitamiento del\ncampo\nFrecuencia\n0 ... 500 Hz\nResolución de frecuencia\n0,01 Hz\nIntensidad\nVéase el apartado Especificaciones en la página 283.\nPunto inicio debil. campo\n10 ... 500 Hz\nFrecuencia de conmutación\nSeleccionable. Véase la disponibilidad en la tabla siguiente.\n1, 2, 4 y 8 kHz\n12 kHz\n208 ... 240 V |Todos los tipos\nBastidores R1 ... R4 en modo\nde control escalar\n380 ... 480 V |Todos los tipos\nBastidores R1 ... R4 (excepto el\nACS550-01-097A-4) en modo\nde control escalar\n500 ... 600 V |Todos los tipos\nBastidores R2 ... R4 en modo\nde control escalar\nEspecificación de\ntemperatura del cable\n90 ℃ (194 ºF), especificación mínima.\nLongitud máxima del cable\nde motor\nVéase el apartado Longitudes del cable de motor en la página 295.\nLongitudes del cable de motor\nLas longitudes máximas del cable de motor para convertidores de 400 V y 600 V\ndrives se facilitan en los siguientes apartados.\nEn sistemas multimotor, la suma de todas las longitudes de los cables de motor no\ndebe exceder la longitud de cable de motor máxima proporcionada en la siguiente\ntabla correspondiente.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Especificaciones de la conexión del motor"
+          ],
+          [
+            "Tensión (U2)",
+            "0 ... U1, trifásica simétrica, Umax en el inicio del debilitamiento del campo"
+          ],
+          [
+            "Frecuencia",
+            "0 ... 500 Hz"
+          ],
+          [
+            "Resolución de frecuencia",
+            "0,01 Hz"
+          ],
+          [
+            "Intensidad",
+            "Véase el apartado Especificaciones en la página 283."
+          ],
+          [
+            "Punto inicio debil. campo",
+            "10 ... 500 Hz"
+          ],
+          [
+            "Frecuencia de conmutación",
+            "Seleccionable. Véase la disponibilidad en la tabla siguiente."
+          ],
+          [
+            "",
+            "1, 2, 4 y 8 kHz",
+            "12 kHz"
+          ],
+          [
+            "208 ... 240 V",
+            "|Todos los tipos",
+            "Bastidores R1 ... R4 en modo de control escalar"
+          ],
+          [
+            "380 ... 480 V",
+            "|Todos los tipos",
+            "Bastidores R1 ... R4 (excepto el ACS550-01-097A-4) en modo de control escalar"
+          ],
+          [
+            "500 ... 600 V",
+            "|Todos los tipos",
+            "Bastidores R2 ... R4 en modo de control escalar"
+          ],
+          [
+            ""
+          ],
+          [
+            "Especificación de temperatura del cable",
+            "90 ℃ (194 ºF), especificación mínima."
+          ],
+          [
+            "Longitud máxima del cable de motor",
+            "Véase el apartado Longitudes del cable de motor en la página 295."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "296\nManual del usuario del ACS550-01/U1\nLongitud del cable de motor para convertidores de 400 V\nLa tabla siguiente muestra las longitudes máximas del cable de motor para\nconvertidores de 400 V con distintas frecuencias de conmutación. También se\nfacilitan ejemplos relativos al uso de la tabla.\nLongitud máxima del cable para convertidores de 400 V\nBastidor\nLímites EMC\nLímites operativos\nSegundo entorno\n(categoría C31)\nPrimer entorno\n(categoría C21)\nUnidad básica\nCon\nfiltros\ndu/dt\n1 kHz\n4 kHz\n8 kHz\n1 kHz\n4 kHz\n8 kHz\n1/4 kHz\n8/12 kHz\nm\npies\nm\npies\nm\npies\nm\npies\nm\npies\nm\npies\nm\npies\nm\npies\nm\npies\nR1\n300\n980\n300\n980\n300\n980\n300\n980\n300\n980\n300\n980\n100\n330\n100\n330\n150\n490\nR2\n300\n980\n300\n980\n300\n980\n300\n980\n100\n330\n30\n98\n200\n660\n100\n330\n250\n820\nR3\n300\n980\n300\n980\n300\n980\n300\n980\n75\n245\n75\n245\n200\n660\n100\n330\n250\n820\nR4\n300\n980\n300\n980\n300\n980\n300\n980\n75\n245\n75\n245\n200\n660\n100\n330\n300\n980\nR5\n100\n330\n100\n330\n100\n330\n100\n330\n100\n330\n100\n330\n300\n980\n1502\n490\n300\n980\nR6\n100\n330\n100\n330\n3\n3\n100\n330\n100\n330\n3\n3\n300\n980\n1502\n4902\n300\n980\n1\nVéanse los nuevos términos en el apartado Definiciones de IEC/EN 61800-3:2004 en la\npágina 318.\n2\nLa frecuencia de conmutación de 12 kHz no está disponible.\n3\nNo probado.\nLos filtros senoidales amplían todavía más las longitudes de cable.\nBajo la cabecera \"Límites operativos\", en las columnas \"Unidad básica\", se definen\nlas longitudes del cable con las que la unidad básica del convertidor funciona sin\nproblemas dentro de las especificaciones del convertidor, sin instalar más opciones.\nEn la columna \"Con filtros du/dt\", se definen las longitudes del cable cuando se\nutiliza un filtro externo du/dt.\nEn las columnas con la cabecera \"Límites EMC\" se indican las longitudes máximas del\ncable con las que las unidades se han probado para las emisiones EMC. La fábrica\ngarantiza que dichas longitudes de cables cumplen con los requisitos de la norma EMC.\nSi se instalan filtros senoidales externos, se pueden emplear longitudes de cables\nsuperiores. Con los filtros senoidales, los factores de limitación son la caída de\ntensión del cable, la cual debe tenerse en cuenta en ingeniería, así como los límites\nEMC (cuando sean aplicables).\nLa frecuencia de conmutación por defecto es 4 kHz.\nADVERTENCIA: el uso de un cable de motor más largo de lo especificado en la\ntabla anterior podría provocar daños permanentes en el convertidor.\n4\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Longitud máxima del cable para convertidores de 400 V"
+          ],
+          [
+            "Bastidor",
+            "Límites EMC",
+            "Límites operativos"
+          ],
+          [
+            "Segundo entorno (categoría C31)",
+            "Primer entorno (categoría C21)",
+            "Unidad básica",
+            "Con filtros du/dt"
+          ],
+          [
+            "1 kHz",
+            "4 kHz",
+            "8",
+            "kHz",
+            "1 kHz",
+            "4 kHz",
+            "8 kHz",
+            "1/4 kHz",
+            "8/12 kHz"
+          ],
+          [
+            "m",
+            "pies",
+            "m",
+            "pies",
+            "m",
+            "pies",
+            "m",
+            "pies",
+            "m",
+            "pies",
+            "m",
+            "pies",
+            "m",
+            "pies",
+            "m",
+            "pies",
+            "m",
+            "pies"
+          ],
+          [
+            "R1",
+            "300",
+            "980",
+            "300",
+            "980",
+            "300",
+            "980",
+            "300",
+            "980",
+            "300",
+            "980",
+            "300",
+            "980",
+            "100",
+            "330",
+            "100",
+            "330",
+            "150",
+            "490"
+          ],
+          [
+            "R2",
+            "300",
+            "980",
+            "300",
+            "980",
+            "300",
+            "980",
+            "300",
+            "980",
+            "100",
+            "330",
+            "30",
+            "98",
+            "200",
+            "660",
+            "100",
+            "330",
+            "250",
+            "820"
+          ],
+          [
+            "R3",
+            "300",
+            "980",
+            "300",
+            "980",
+            "300",
+            "980",
+            "300",
+            "980",
+            "75",
+            "245",
+            "75",
+            "245",
+            "200",
+            "660",
+            "100",
+            "330",
+            "250",
+            "820"
+          ],
+          [
+            "R4",
+            "300",
+            "980",
+            "300",
+            "980",
+            "300",
+            "980",
+            "300",
+            "980",
+            "75",
+            "245",
+            "75",
+            "245",
+            "200",
+            "660",
+            "100",
+            "330",
+            "300",
+            "980"
+          ],
+          [
+            "R5",
+            "100",
+            "330",
+            "100",
+            "330",
+            "100",
+            "330",
+            "100",
+            "330",
+            "100",
+            "330",
+            "100",
+            "330",
+            "300",
+            "980",
+            "1502",
+            "490",
+            "300",
+            "980"
+          ],
+          [
+            "R6",
+            "100",
+            "330",
+            "100",
+            "330",
+            "3",
+            "3",
+            "100",
+            "330",
+            "100",
+            "330",
+            "3",
+            "3",
+            "300",
+            "980",
+            "1502",
+            "4902",
+            "300",
+            "980"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Manual del usuario del ACS550-01/U1\n297\nEjemplos de uso de la tabla:\nRequisitos\nComprobación y conclusiones\nBastidor R1,\n8 KHz fsw,\nCategoría C2,\n150 m (490 pies) de\ncable\nCompruebe los límites operativos para R1 y 8 kHz -> para un cable\nde 150 m (490 pies) se requiere un filtro du/dt.\nCompruebe los límites EMC -> los requisitos EMC para la Categoría\nC2 se cumplen con un cable de 150 m (490 pies).\nBastidor R3,\n4 KHz fsw,\nCategoría C3,\n300 m (980 pies) de\ncable\nCompruebe los límites operativos para R3 y 4 kHz -> no es posible\nemplear un cable de 300 m (980 pies) incluso con un filtro du/dt.\nDebe emplearse un filtro senoidal y debe tenerse en cuenta la caída\nde tensión del cable en la instalación.\nCompruebe los límites EMC -> los requisitos EMC para la Categoría\nC3 se cumplen con un cable de 300 m (980 pies).\nBastidor R5,\n8 KHz fsw,\nCategoría C3,\n150 m (490 pies) de\ncable\nCompruebe los límites operativos para R5 y 8 kHz -> para un cable\nde 150 m (490 pies) la unidad básica es suficiente.\nCompruebe los límites EMC -> los requisitos EMC para la Categoría\nC3 no se cumplen con un cable de 300 m (980 pies). No es posible\nconfigurar la instalación. Se recomienda elaborar un plan EMC para\nresolver esta situación.\nBastidor R6,\n4 KHz fsw,\nlímites EMC no\naplicables,\n150 m (490 pies) de\ncable\nCompruebe los límites operativos para R6 y 4 kHz -> para un cable\nde 150 m (490 pies) la unidad básica es suficiente.\nLos límites EMC no tienen que comprobarse ya que no existen\nrequisitos EMC.\nLongitud de cable de motor para convertidores de 600 V\nLa tabla siguiente muestra las longitudes máximas del cable de motor para\nconvertidores de 600 V con distintas frecuencias de conmutación. Dado que los\nconvertidores de 600 V no cuentan con la aprobación CE, no se facilitan las\nlongitudes de cable para límites EMC.\nLongitud máxima del cable para convertidores\nde 600 V\nBastidor\nLímites operativos\n1/4 kHz\n8/12 kHz\nm\npies\nm\npies\nR2\n100\n330\n100\n330\nR3 ... R4\n200\n660\n100\n330\nR6\n300\n980\n1502\n4902\n2 La frecuencia de conmutación de 12 kHz no está\ndisponible.\nADVERTENCIA: el uso de un cable de motor más largo de lo especificado en la\ntabla anterior podría provocar daños permanentes en el convertidor.\n4\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Requisitos",
+            "Comprobación y conclusiones"
+          ],
+          [
+            "Bastidor R1, 8 KHz fsw, Categoría C2, 150 m (490 pies) de cable",
+            "Compruebe los límites operativos para R1 y 8 kHz -> para un cable de 150 m (490 pies) se requiere un filtro du/dt. Compruebe los límites EMC -> los requisitos EMC para la Categoría C2 se cumplen con un cable de 150 m (490 pies).\n:unselected:"
+          ],
+          [
+            "Bastidor R3, 4 KHz fsw, Categoría C3, 300 m (980 pies) de cable",
+            "Compruebe los límites operativos para R3 y 4 kHz -> no es posible emplear un cable de 300 m (980 pies) incluso con un filtro du/dt. Debe emplearse un filtro senoidal y debe tenerse en cuenta la caída de tensión del cable en la instalación. Compruebe los límites EMC -> los requisitos EMC para la Categoría C3 se cumplen con un cable de 300 m (980 pies)."
+          ],
+          [
+            "Bastidor R5, 8 KHz fsw, Categoría C3, 150 m (490 pies) de cable",
+            "Compruebe los límites operativos para R5 y 8 kHz -> para un cable de 150 m (490 pies) la unidad básica es suficiente. Compruebe los límites EMC -> los requisitos EMC para la Categoría C3 no se cumplen con un cable de 300 m (980 pies). No es posible configurar la instalación. Se recomienda elaborar un plan EMC para resolver esta situación."
+          ],
+          [
+            "Bastidor R6, 4 KHz fsw, límites EMC no aplicables, 150 m (490 pies) de cable",
+            "Compruebe los límites operativos para R6 y 4 kHz -> para un cable de 150 m (490 pies) la unidad básica es suficiente. Los límites EMC no tienen que comprobarse ya que no existen requisitos EMC."
+          ]
+        ],
+        [
+          [
+            "Longitud máxima del cable para convertidores de 600 V"
+          ],
+          [
+            "Bastidor",
+            "Límites operativos"
+          ],
+          [
+            "1/4 kHz",
+            "8/12 kHz"
+          ],
+          [
+            "m",
+            "pies",
+            "m",
+            "pies"
+          ],
+          [
+            "R2",
+            "100",
+            "330",
+            "100",
+            "330"
+          ],
+          [
+            "R3 ... R4",
+            "200",
+            "660",
+            "100",
+            "330"
+          ],
+          [
+            "R6",
+            "300",
+            "980",
+            "1502",
+            "4902"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "298\nManual del usuario del ACS550-01/U1\nProtección térmica del motor\nDe conformidad con la normativa, el motor debe protegerse contra la sobrecarga\ntérmica y la intensidad debe desconectarse al detectarse una sobrecarga. El\nconvertidor de frecuencia incluye una función de protección térmica del motor que lo\nprotege y desconecta la intensidad cuando es necesario. En función de un valor del\nparámetro del convertidor (véase el parámetro 3501 TIPO DE SENSOR), la función\nmonitoriza un valor de temperatura calculado (basado en un modelo térmico del\nmotor, véanse los parámetros 3005 PROT TERMIC MOT ... 3009 PUNTO RUPTURA) O\nuna indicación de temperatura real facilitada por los sensores de temperatura del\nmotor (véase Grupo 35: TEMP MOT MED). El usuario puede efectuar un ajuste\nadicional del modelo térmico introduciendo datos del motor y la carga adicionales.\nLos sensores de temperatura más comunes son:\n· tamaños de motor IEC180 ... 225: interruptor térmico (p. ej. Klixon)\n· tamaños de motor IEC200 ... 250 y mayores: PTC o PT100.\nProtección contra fallos a tierra\nLa lógica de fallos interna del ACS550 detecta los fallos a tierra en el convertidor, el\nmotor o el cable de motor. Esta lógica de fallos:\n· NO supone una función de seguridad personal ni de protección contra incendios\n· puede desactivarse con el parámetro 3017 FALLO TIERRA\nNota: desactivar el fallo a tierra (fallo a tierra) podría invalidar la garantía.\n· podría dispararse por la acción de intensidades de fuga (alimentación de entrada\na tierra) asociadas a cables de motor largos de alta capacitancia.\nConexión a tierra y recorrido\nPantalla del cable de motor\nLos cables de motor requieren un apantallamiento que emplee conducción, cable\ncon armadura o cable apantallado.\n· Conducto - Al utilizar conducto:\n- Cubra los empalmes con un conductor de tierra unido al conducto a cada lado\ndel empalme.\n- Una también el tramo de conducto hacia el armario del convertidor.\n- Utilice un tramo de conducto independiente para los cables de motor (también\ncables de control y alimentación de entrada independientes).\n- Utilice un tramo de conducto independiente para cada convertidor.\n· Cable con armadura - Al utilizar cable con armadura:\n- Utilice cable de seis conductores (3 fases y 3 tierras), con armadura de\naluminio ondulado continuo de tipo MC con tierras simétricos.\n- El cable de motor con armadura puede compartir una bandeja de cables con\nlos cables de alimentación de entrada, pero no con los cables de control.\n· Cable apantallado - Para obtener detalles sobre los cables apantallados, véase\nel apartado Requisitos del cable de motor para el cumplimiento de la normativa\nCE y C-Tick en la página 299.\nDatos técnicos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Manual del usuario del ACS550-01/U1\n299\nConexión a tierra\nVéase el apartado Conexiones a tierra en la página 291.\nPara instalaciones que cumplan con la normativa CE e instalaciones en las que\ndeban minimizarse las emisiones EMC, véase el apartado Pantallas eficaces del\ncable de motor en la página300.\nTerminales de conexión del motor del convertidor\nLos terminales de motor y alimentación de entrada del convertidor tienen las\nmismas especificaciones. Véase el apartado Terminales de conexión de\nalimentación del convertidor en la página 292.\nRequisitos del cable de motor para el cumplimiento de la normativa CE y C-Tick\nLos requisitos en este apartado se aplican al cumplimiento de la normativa CE o C-Tick.\nRequisito mínimo (CE y C-Tick)\nEl cable de motor debe ser un cable simétrico de tres conductores con un conductor\nPE concéntrico o un cable de cuatro conductores con una pantalla concéntrica,\naunque en todos los casos se recomienda un conductor PE de estructura simétrica.\nLa figura siguiente muestra los requisitos mínimos para la pantalla del cable de\nmotor (por ejemplo, MCMK, Draka NK Cables).\nEnvoltura de aislamiento\nPantalla de hilo de cobre\nAisladores internos\nNúcleo del cable\nRecomendación para la disposición de los conductores\nLa figura siguiente compara las características de disposición de los conductores en\ncables de motor.\nRecomendado (CE y C-Tick)\nCable apantallado simétrico: conductores\ntrifásicos con conductor PE concéntrico o de\nconstrucción simétrica, con pantalla.\nPermitido (CE y C-Tick)\nSe necesita un conductor PE aparte si la\nconductividad de la pantalla del cable es < 50%\nde la conductividad del conductor de fase.\nConductor\nPE\ny pantalla\nPantalla\nPantalla\n. PE\nPantalla\nNo permitido en cables de motor (CE y C-Tick)\nSistema de cuatro conductores: tres\nconductores de fase y uno de protección, sin\npantalla.\nPE\nPermitido en cables de motor con un\nconductor de fase con sección\ntransversal máxima de 10 mm2.\nDatos técnicos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "300\nManual del usuario del ACS550-01/U1\nPantallas eficaces del cable de motor\nLa regla general en cuanto a la eficacia de la pantalla de cable es: cuanto mejor sea\nla pantalla del cable y cuanto más cerrada esté, menor será el nivel de emisión por\nradiación. La figura siguiente muestra un ejemplo de una estructura eficaz (por\nejemplo Ölflex-Servo-FD 780 CP, Lappkabel o MCCMK, NK Cables).\nEnvoltura de aislamiento\nAislador interno\nL2\nPantalla metálica trenzada\nL3\nL1\nCables de motor que cumplen EN 61800-3\nEl filtrado EMC más eficiente puede conseguirse siguiendo estas reglas:\n· Los cables de motor deben contar con una pantalla eficaz como la que se\ndescribe en el apartado Pantallas eficaces del cable de motor en la página 300.\n· Los hilos de la pantalla del cable de motor deben retorcerse conjuntamente en un\nmazo (la longitud del mazo debe ser inferior a cinco veces su anchura) y deben\nconectarse al terminal designado + (en la esquina inferior derecha del convertidor).\n· En el extremo del motor, la pantalla del cable de motor debe conectarse a tierra a\n360 grados con un pasacables EMC, o los hilos de la pantalla deben retorcerse\nen un mazo con una longitud no superior a cinco veces su anchura, y deben\nconectarse al terminal PE del motor.\n· Véase el apartado Longitud del cable de motor para convertidores de 400 V,\ncolumnas \"Límites EMC\" en la página 296 para comprobar las longitudes\nmáximas de cable de motor y la necesidad de filtros para convertidores de 400 V\npara cumplimiento IEC/EN 61800-3.\n4\nADVERTENCIA: no utilice filtros RFI/EMC en redes IT.\nDatos técnicos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Manual del usuario del ACS550-01/U1\n301\nComponentes de frenado\nDisponibilidad\nLa disponibilidad del frenado para convertidores ACS550, por bastidor, es:\n· R1 y R2 - chopper de frenado integrado como equipo de serie. Añada una\nresistencia apropiada, determinada de conformidad con el apartado siguiente.\nABB pone resistencias a su disposición.\n. R3 ... R6 - no incluye chopper de frenado interno. Conecte un chopper y una\nresistencia, o una unidad de frenado a los terminales de bus de CC en el\nconvertidor. Póngase en contacto con su representante de ABB para obtener las\npiezas apropiadas:\nSelección de las resistencias de frenado (bastidores R1 y R2)\nLa resistencia de frenado debe cumplir tres requisitos:\n· La resistencia siempre debe ser superior al valor mínimo RMIN definido para el\ntipo de convertidor en las tablas siguientes. Nunca utilice una resistencia inferior\na este valor.\n· La resistencia debe ser lo bastante baja para poder producir el par de frenado deseado.\nPara alcanzar el par de frenado máximo (el valor mayor del 150% del trabajo pesado o\nel 110% del trabajo nominal), la resistencia no debe superar RMAX. Si no se requiere\npar de frenado máximo, los valores de resistencia pueden superar RMAX-\n· La especificación de potencia de la resistencia debe ser lo bastante elevada para\ndisipar la potencia de frenado. Este requisito implica muchos factores:\n- la especificación de potencia continua máxima para la(s) resistencia(s)\n- la velocidad a la que la resistencia cambia de temperatura (constante de\ntiempo térmica de la resistencia)\n- tiempo máximo de frenado conectado - Si la potencia de regeneración\n(frenado) es mayor que la potencia nominal de la resistencia, existe un límite\npara el tiempo de conexión, o la resistencia se recalentará antes de que se\ninicie el período de desconexión.\n- tiempo mínimo de frenado desconectado - Si la potencia de regeneración\n(frenado) es mayor que la potencia nominal de la resistencia, el tiempo de\ndesconexión debe ser lo bastante prolongado para que la resistencia se enfríe\nentre períodos de conexión.\nFrenado conec.\nTiempo\nFrenado descon.\nTiem. conex.\nTiem. descon.\n1\nTiem. conex.\nTiempo de ciclo\nCiclo de servicio =\nTiempo de ciclo\n- el requisito de potencia de frenado máxima\n- el tipo de frenado (deceleración hasta cero respecto a la carga de arrastre) -\nDurante la deceleración hasta cero, la potencia generada aumenta de forma\nDatos técnicos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "302\nManual del usuario del ACS550-01/U1\nconstante, con un valor medio equivalente a la mitad de la potencia máxima.\nPara una carga de arrastre, el frenado está contrarrestando una fuerza\nexterna (por ejemplo la gravedad) y la potencia de frenado es constante. El\ncalor total generado por una carga de arrastre es el doble del calor generado\npor la deceleración hasta velocidad cero (para el mismo par máximo y tiempo\nde conexión).\nPotencia\nPot. de frenado media -\ncarga de arrastre -\nPot. de frenado media -\ndurante la deceleración\nhasta cero\nTemperatura\n2x +\nCurva de deceleración\nCurva de carga\nde arrastre\nTiempo\nI\nI\nx\nTiempo\nLas numerosas variables del requisito anterior se solucionan fácilmente con las\ntablas siguientes.\n· En primer lugar, determine su tiempo máximo de frenado conectado (ONMAX), su\ntiempo mínimo de frenado desconectado (OFFMIN) y el tipo de carga\n(deceleración o carga de arrastre).\n· Calcule el ciclo de servicio:\nCiclo de servicio =\n(ONMAX + OFFMIN)\nONMAX\n· 100%\n· En la tabla apropiada, localice la columna que más se ajuste a sus datos:\n- ONMAX ≤ especificación de la columna y\n- Ciclo de servicio ≤ especificación de la columna\n· Localice la fila que concuerde con su convertidor.\n· La especificación de potencia mínima para la deceleración hasta cero es el valor\nen la fila/columna seleccionada.\n· Para cargas de arrastre, duplique la especificación en la fila/columna\nseleccionada, o utilice la columna \"Conex. continua\".\nDatos técnicos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Manual del usuario del ACS550-01/U1\n303\nConvertidores de 208 ... 240 V\nTipo\nACS550-01/\nU1-\nvéase a\ncontinuación\nResistencia\nEspecificación de potencia continua mínima de la\nresistencia1\nEspecificación de deceleración hasta\ncero\nPrcont\nConex.\ncontinua\n> 60 s conex.\n> 25% servicio\nRMAX\nRMIN\nPr3\n≤3 s\nconex.\n≥27 s\ndesc.\n≤ 10%\nservicio\nPr10\n≤ 10 s\nconex.\n≥ 50 s\ndesc\n≤ 17%\nservicio\nPr30\n≤ 30 s\nconex.\n≥ 180 s\ndesc.\n≤ 14%\nservicio\nPr60\n≤ 60 s\nconex.\n≥ 180 s\ndesc.\n≤ 25%\nservicio\nohmios\nohmios\nW\nW\nW\nW\nW\nTensión de alimentación trifásica, 208 ... 240 V\n-04A6-2\n234\n80\n45\n80\n120\n200\n1100\n-06A6-2\n160\n80\n65\n120\n175\n280\n1500\n-07A5-2\n117\n44\n85\n160\n235\n390\n2200\n-012A-2\n80\n44\n125\n235\n345\n570\n3000\n-017A-2\n48\n44\n210\n390\n575\n950\n4000\n-024A-2\n32\n30\n315\n590\n860\n1425\n5500\n-031A-2\n23\n22\n430\n800\n1175\n1940\n7500\n1\nLa especificación de la constante de tiempo de la resistencia debe ser ≥ 85 segundos.\nConvertidores de 380 ... 480 V\nTipo\nACS550-01/\nU1-\nvéase a\ncontinuación\nResistencia\nEspecificación de potencia continua mínima de la\nresistencia1\nEspecificación de deceleración hasta cero\nPrcont\nConex.\ncontinua\n> 60 s conex.\n> 25% servicio\nRMAX\nRMIN\nPr3\n≤3 s\nconex.\n≥27 s\ndesc.\n≤ 10%\nservicio\nPr10\n≤ 10 s\nconex.\n≥ 50 s\ndesc.\n≤ 17%\nservicio\nPr30\n≤ 30 s\nconex.\n≥ 180 s\ndesc.\n≤ 14%\nservicio\nPr60\n≤ 60 s\nconex.\n≥ 180 s\ndesc.\n≤ 25%\nservicio\nohmios\nohmios\nW\nW\nW\nW\nW\nTensión de alimentación trifásica, 380 ... 480 V\n-03A3-4\n641\n120\n65\n120\n175\n285\n1100\n-04A1-4\n470\n120\n90\n160\n235\n390\n1500\n-05A4-4\n320\n120\n125\n235\n345\n570\n2200\n-06A9-4\n235\n80\n170\n320\n470\n775\n3000\n-08A8-4\n192\n80\n210\n400\n575\n950\n4000\n-012A-4\n128\n80\n315\n590\n860\n1425\n5500\n-015A-4\n94\n63\n425\n800\n1175\n1950\n7500\n-023A-4\n64\n63\n625\n1175\n1725\n2850\n11000\n1\nLa especificación de la constante de tiempo de la resistencia debe ser ≥ 85 segundos.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Tipo ACS550-01/ U1- véase a continuación",
+            "Resistencia",
+            "Especificación de potencia continua mínima de la resistencia1"
+          ],
+          [
+            "",
+            "",
+            "Especificación de deceleración hasta cero",
+            "Prcont Conex. continua > 60 s conex. > 25% servicio"
+          ],
+          [
+            "RMAX",
+            "RMIN",
+            "Pr3 ≤3 s conex. ≥27 s desc. ≤ 10% servicio",
+            "Pr10 ≤ 10 s conex. ≥ 50 s desc ≤ 17% servicio",
+            "Pr30 ≤ 30 s conex. ≥ 180 s desc. ≤ 14% servicio",
+            "Pr60 ≤ 60 s conex. ≥ 180 s desc. ≤ 25% servicio"
+          ],
+          [
+            "ohmios",
+            "ohmios",
+            "W",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          [
+            "Tensión de alimentación trifásica, 208 ... 240 V"
+          ],
+          [
+            "-04A6-2",
+            "234",
+            "80",
+            "45",
+            "80",
+            "120",
+            "200",
+            "1100"
+          ],
+          [
+            "-06A6-2",
+            "160",
+            "80",
+            "65",
+            "120",
+            "175",
+            "280",
+            "1500"
+          ],
+          [
+            "-07A5-2",
+            "117",
+            "44",
+            "85",
+            "160",
+            "235",
+            "390",
+            "2200"
+          ],
+          [
+            "-012A-2",
+            "80",
+            "44",
+            "125",
+            "235",
+            "345",
+            "570",
+            "3000"
+          ],
+          [
+            "-017A-2",
+            "48",
+            "44",
+            "210",
+            "390",
+            "575",
+            "950",
+            "4000"
+          ],
+          [
+            "-024A-2",
+            "32",
+            "30",
+            "315",
+            "590",
+            "860",
+            "1425",
+            "5500"
+          ],
+          [
+            "-031A-2",
+            "23",
+            "22",
+            "430",
+            "800",
+            "1175",
+            "1940",
+            "7500"
+          ]
+        ],
+        [
+          [
+            "Tipo ACS550-01/ U1- véase a continuación",
+            "Resistencia",
+            "Especificación de potencia continua mínima de la resistencia1"
+          ],
+          [
+            "",
+            "",
+            "Especificación de deceleración hasta cero",
+            "Prcont Conex. continua > 60 s conex. > 25% servicio"
+          ],
+          [
+            "RMAX",
+            "RMIN",
+            "Pr3 ≤3 s conex. ≥27 s desc. ≤ 10% servicio",
+            "Pr10 ≤ 10 s conex. ≥ 50 s desc. ≤ 17% servicio",
+            "Pr30 ≤ 30 s conex. ≥ 180 s desc. ≤ 14% servicio",
+            "Pr60 ≤ 60 s conex. ≥ 180 s desc. ≤ 25% servicio"
+          ],
+          [
+            "ohmios",
+            "ohmios",
+            "W",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          [
+            "Tensión de alimentación trifásica, 380 ... 480 V"
+          ],
+          [
+            "-03A3-4",
+            "641",
+            "120",
+            "65",
+            "120",
+            "175",
+            "285",
+            "1100"
+          ],
+          [
+            "-04A1-4",
+            "470",
+            "120",
+            "90",
+            "160",
+            "235",
+            "390",
+            "1500"
+          ],
+          [
+            "-05A4-4",
+            "320",
+            "120",
+            "125",
+            "235",
+            "345",
+            "570",
+            "2200"
+          ],
+          [
+            "-06A9-4",
+            "235",
+            "80",
+            "170",
+            "320",
+            "470",
+            "775",
+            "3000"
+          ],
+          [
+            "-08A8-4",
+            "192",
+            "80",
+            "210",
+            "400",
+            "575",
+            "950",
+            "4000"
+          ],
+          [
+            "-012A-4",
+            "128",
+            "80",
+            "315",
+            "590",
+            "860",
+            "1425",
+            "5500"
+          ],
+          [
+            "-015A-4",
+            "94",
+            "63",
+            "425",
+            "800",
+            "1175",
+            "1950",
+            "7500"
+          ],
+          [
+            "-023A-4",
+            "64",
+            "63",
+            "625",
+            "1175",
+            "1725",
+            "2850",
+            "11000"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "304\nManual del usuario del ACS550-01/U1\nConvertidores de 500 ... 600 V\nTipo\nACS550-U1-\nvéase a\ncontinuación\nResistencia\nEspecificación de potencia continua mínima de la\nresistencia1\nEspecificación de deceleración hasta cero\nPrcont\nConex.\ncontinua\n> 60 s conex.\n> 25% servicio\nRMAX\nRMIN\nPr3\nPr10\nPr30\nPr60\n≤ 60 s\nconex.\n≥ 180 s\ndesc.\n≤ 25%\nservicio\n≤3 s\nconex.\n≥ 27 s\ndesc.\n10%\nservicio\n≤ 10 s\nconex.\n≥ 50 s\ndesc.\n≤ 17%\nservicio\n≤ 30 s\nconex.\n≥ 180 s\ndesc.\n≤ 14%\nservicio\nohmios\nohmios\nW\nW\nW\nW\nW\nTensión de alimentación trifásica, 500 ... 600 V\n-02A7-6\n548\n80\n93\n175\n257\n425\n1462\n-03A9-6\n373\n80\n137\n257\n377\n624\n2144\n-06A1-6\n224\n80\n228\n429\n629\n1040\n3573\n-09A0-6\n149\n80\n342\n643\n943\n1560\n5359\n-011A-6\n110\n60\n467\n877\n1286\n2127\n7308\n-017A-6\n75\n60\n685\n1286\n1886\n3119\n10718\n1\nLa especificación de la constante de tiempo de la resistencia debe ser ≥ 85 segundos.\nADVERTENCIA: no utilice nunca una resistencia de frenado con un valor de\nresistencia por debajo del valor mínimo especificado para el convertidor en\nconcreto. El convertidor y el chopper interno no pueden hacerse cargo de la\nsobreintensidad provocada por el reducido valor de resistencia.\n4\nSímbolos\nRMIN - Resistencia mínima permitida para la resistencia de frenado.\nRMAX - Resistencia máxima permitida si se requiere par de frenado máximo.\nPrx - Especificación de potencia de resistencia basada en ciclo de servicio en el\nfrenado por deceleración, donde \"x\" es el tiempo ONMAX-\nInstalación y conexión de las resistencia\nTodas las resistencias deben instalarse fuera del módulo de accionamiento en un\nlugar en el que puedan disipar calor.\nADVERTENCIA: la temperatura superficial de la resistencia es muy elevada y el\naire procedente de la resistencia está muy caliente. Los materiales cerca de la\nresistencia de frenado deben ser ignífugos. Proporcione protección contra contactos\naccidentales con la resistencia.\n?\nPara garantizar que los fusibles de entrada protejan el cable de resistencia, utilice\ncables de resistencia con la misma especificación que la utilizada para la entrada de\nalimentación del convertidor.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Tipo ACS550-U1- véase a continuación",
+            "Resistencia",
+            "Especificación de potencia continua mínima de la resistencia1"
+          ],
+          [
+            "",
+            "",
+            "Especificación de deceleración hasta cero",
+            "Prcont Conex. continua > 60 s conex. > 25% servicio"
+          ],
+          [
+            "RMAX",
+            "RMIN",
+            "Pr3",
+            "Pr10",
+            "Pr30",
+            "Pr60 ≤ 60 s conex. ≥ 180 s desc. ≤ 25% servicio"
+          ],
+          [
+            "≤3 s conex. ≥ 27 s desc. 10% servicio",
+            "≤ 10 s conex. ≥ 50 s desc. ≤ 17% servicio",
+            "≤ 30 s conex. ≥ 180 s desc. ≤ 14% servicio"
+          ],
+          [
+            "ohmios",
+            "ohmios",
+            "W",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          [
+            "Tensión de alimentación trifásica, 500 ... 600 V"
+          ],
+          [
+            "-02A7-6",
+            "548",
+            "80",
+            "93",
+            "175",
+            "257",
+            "425",
+            "1462"
+          ],
+          [
+            "-03A9-6",
+            "373",
+            "80",
+            "137",
+            "257",
+            "377",
+            "624",
+            "2144"
+          ],
+          [
+            "-06A1-6",
+            "224",
+            "80",
+            "228",
+            "429",
+            "629",
+            "1040",
+            "3573"
+          ],
+          [
+            "-09A0-6",
+            "149",
+            "80",
+            "342",
+            "643",
+            "943",
+            "1560",
+            "5359"
+          ],
+          [
+            "-011A-6",
+            "110",
+            "60",
+            "467",
+            "877",
+            "1286",
+            "2127",
+            "7308"
+          ],
+          [
+            "-017A-6",
+            "75",
+            "60",
+            "685",
+            "1286",
+            "1886",
+            "3119",
+            "10718"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Manual del usuario del ACS550-01/U1\n305\nLa longitud máxima del cable o cables de resistencia es de 10 m (1.005,84 cm).\nVéase el apartado Diagramas de conexiones de alimentación en la página 25 para\nobtener información sobre los puntos de conexión del cable de resistencia.\nProtección de circuitos obligatoria\nLa configuración siguiente es esencial para la seguridad - interrumpe la alimentación\nprincipal en situaciones de fallo que implican cortocircuitos del chopper:\n· Equipe el convertidor con un contactor principal.\n· Conecte el contactor de modo que se abra si se abre el interruptor térmico de la\nresistencia (una resistencia recalentada abre el contactor).\nA continuación se facilita un diagrama de conexiones eléctricas sencillo como\nejemplo.\nL1 L2 L3\n1\nFusibles\nDesact E- -- - -\n2\n1\n3\n0\nC\n2)\n4\n5\n0\n1\n6\n13\n3\nConex. E- - D -\n14\n4\n-\nACS550\nC\n0\n.\n7\n1\nU1 V1 W1\n-\n- -\nQ\nInterruptor térmico (de serie\nen las resistencias ABB)\n-\n-\nK1\nConfiguración de parámetros\nPara activar el frenado dinámico, desconecte el control de sobretensión del\nconvertidor [ajuste el parámetro 2005 = 0 (DESHABILITAD)].\nDatos técnicos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "306\nManual del usuario del ACS550-01/U1\nConexiones de control\nEspecificaciones de la conexión de control\nEspecificaciones de la conexión de control\nEntradas y salidas\nanalógicas\nVéase el apartado Tabla de terminales de control en la página 28.\nEntradas digitales\nImpedancia de entrada digital 1,5 kohmios. La tensión máxima para las\nentradas digitales es de 30 V.\nRelés\n(salidas digitales)\n· Tensión máx. de contacto: 30 V CC, 250 V CA\n· Intens. máx. de contacto/potencia: 6 A, 30 V CC; 1500 VA, 250 V CA\n· Intens. máx. continua: 2 A eficaces (cos q = 1), 1 A eficaz (cos q = 0,4)\n· Carga mínima: 500 mW (12 V, 10 mA)\n· Material de contacto: Plata-níquel (AgN)\n· Aislamiento entre salidas digitales de relé, tensión de prueba: 2,5 kV\neficaces, 1 minuto\nEspecificaciones de\ncable\nVéase el apartado Tabla de terminales de control en la página 28.\nCables de control\nRecomendaciones generales\nUtilice cables multipolares con un apantallamiento de hilo de cobre trenzado, con\nespecificación de temperatura de 60 ℃ (140 °F) o superior:\nPantalla doble\nEjemplo: JAMAK de Draka NK Cables\nPantalla única\nEjemplo: NOMAK de Draka NK Cables\nPara cables de E/S analógicos y digitales, trenze la pantalla del cable en un haz con\nuna longitud no superior a cinco veces su anchura y conectelo al terminal X1-1 en el\nextremo del convertidor. Deje el otro extremo de la pantalla de cable sin conectar.\nPara conectar los hilos de la pantalla del cable RS485, véanse las instrucciones (y\nlas notas) en el apartado Instalación mecánica y eléctrica - BCE en la página 206.\nDisponga los cables de control para minimizar la radiación hacia el cable:\n· Colóquelos lo más lejos posible de los cables de motor y de potencia de entrada\n[como mínimo 20 cm (8 pulg.)].\n· En los puntos en que los cables de control deban cruzarse con los cables de\npotencia, asegúrese de que lo hacen en un ángulo lo más próximo posible a los\n90 grados.\n· Mantenga una distancia mínima de 20 cm (8 pulg.) respecto a los laterales del\nconvertidor.\nEvite mezclar tipos de señal en el mismo cable:\n· No mezcle señales controladas por relé que utilicen más de 30 V y otras señales\nde control en el mismo cable.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Especificaciones de la conexión de control"
+          ],
+          [
+            "Entradas y salidas analógicas",
+            "Véase el apartado Tabla de terminales de control en la página 28."
+          ],
+          [
+            "Entradas digitales",
+            "Impedancia de entrada digital 1,5 kohmios. La tensión máxima para las entradas digitales es de 30 V."
+          ],
+          [
+            "Relés (salidas digitales)",
+            "· Tensión máx. de contacto: 30 V CC, 250 V CA · Intens. máx. de contacto/potencia: 6 A, 30 V CC; 1500 VA, 250 V CA · Intens. máx. continua: 2 A eficaces (cos q = 1), 1 A eficaz (cos q = 0,4) · Carga mínima: 500 mW (12 V, 10 mA) · Material de contacto: Plata-níquel (AgN) · Aislamiento entre salidas digitales de relé, tensión de prueba: 2,5 kV eficaces, 1 minuto"
+          ],
+          [
+            "Especificaciones de cable",
+            "Véase el apartado Tabla de terminales de control en la página 28."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Manual del usuario del ACS550-01/U1\n307\n· Disponga los tramos de señales controladas por relé mediante pares trenzados\n(sobre todo si la tensión > 48 V). Las señales controladas por relé pueden\ntransmitirse por los mismos cables que las señales de entrada digital, siempre\nque su tensión no sobrepase los 48 V.\nNota: nunca deben mezclarse señales de 24 V CC y 115/230 V CA en el mismo cable.\nCables analógicos\nRecomendaciones para tramos de señales analógicas:\n· Debe utilizarse cable de par trenzado doblemente apantallado.\n· Utilice un par protegido individualmente para cada señal.\n· No utilice un retorno combinado para señales analógicas diferentes.\nCables digitales\nRecomendación para tramos de señales digitales: la mejor alternativa es un cable\ncon pantalla doble, pero también puede utilizarse cable de varios pares trenzados\ncon pantalla única.\nCable del panel de control\nSi el panel de control está conectado al convertidor a través de un cable, emplee\nsolamente cable Ethernet de conexión de Categoría 5. La longitud máxima probada\nque cumple las especificaciones EMC es de 3 m (9,8 pies). Los cables más largos\nson susceptibles al ruido electromagnético y deben ser probados por el usuario para\nverificar que se satisfagan los requisitos EMC. Cuando se requieran tramos largos\n[especialmente para tramos superiores a unos 12 m (40 pies)], utilice un convertidor\nRS232/RS485 en cada extremo y disponga cable RS485.\nTerminales de conexión de control del convertidor\nLa tabla siguiente facilita especificaciones de los terminales de control del\nconvertidor.\nBastidor\nControl\nTamaño máximo del\nhilo 1\nPar de apriete\nmm2\nAWG\nN·m\nlb-ft\nTodos\n1,5\n16\n0,4\n0,3\n1 Valores facilitados para cables sólidos.\nPara cables trenzados, el tamaño máximo es 1 mm2.\nRendimiento\nAproximadamente el 98% al nivel nominal de potencia.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Bastidor",
+            "Control"
+          ],
+          [
+            "Tamaño máximo del hilo 1",
+            "Par de apriete"
+          ],
+          [
+            "mm2",
+            "AWG",
+            "N·m",
+            "lb-ft"
+          ],
+          [
+            "Todos",
+            "1,5",
+            "16",
+            "0,4",
+            "0,3"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "308\nManual del usuario del ACS550-01/U1\nPérdidas, datos de refrigeración y ruido\nEspecificaciones de refrigeración\nMétodo\nVentilador interno, dirección del flujo de abajo a arriba.\nRequisito\nEspacio libre por encima y por debajo del convertidor ACS550. 200 mm (8 pulg).\nNo se requiere espacio libre en los laterales del convertidor - los convertidores\nACS550 pueden montarse uno al lado de otro.\nFlujo de aire, convertidores de 208 ... 240 V\nLa tabla siguiente especifica los requerimientos para el flujo de aire de refrigeración\npara convertidores de 208 ... 240 V a plena carga y en todas las condiciones\nambientales enumeradas en Condiciones ambientales en la página 313.\nConvertidor\nDisipación de calor\nFlujo de aire\nRuido\nACS550-x1-\nBastidor\nW\nBTU/h\nm3/h\npies3/min\ndB\n-04A6-2\nR1\n55\n189\n44\n26\n52\n-06A6-2\nR1\n73\n249\n44\n26\n52\n07A5-2\nR1\n81\n276\n44\n26\n52\n-012A-2\nR1\n118\n404\n44\n26\n52\n-017A-2\nR1\n161\n551\n44\n26\n52\n-024A-2\nR2\n227\n776\n88\n52\n66\n-031A-2\nR2\n285\n973\n88\n52\n66\n-046A-2\nR3\n420\n1434\n134\n79\n67\n-059A-2\nR3\n536\n1829\n134\n79\n67\n-075A-2\nR4\n671\n2290\n280\n165\n75\n-088A-2\nR4\n786\n2685\n280\n165\n75\n-114A-2\nR4\n1014\n3463\n280\n165\n75\n-143A-2\nR6\n1268\n4431\n405\n238\n77\n-178A-2\nR6\n1575\n5379\n405\n238\n77\n-221A-2\nR6\n1952\n6666\n405\n238\n77\n-248A-2\nR6\n2189\n7474\n405\n238\n77\n00467918.xls C\nFlujo de aire, convertidores de 380 ... 480 V\nLa tabla siguiente especifica los requerimientos para el flujo de aire de refrigeración\npara convertidores de 380 ... 480 V a plena carga y en todas las condiciones\nambientales enumeradas en Condiciones ambientales en la página 313\nConvertidor\nDisipación de calor\nFlujo de aire\nRuido\nACS550-x1-\nBastidor\nW\nBTU/h\nm3/h\npies3/min\ndB\n-03A3-4\nR1\n40\n137\n44\n26\n52\n-04A1-4\nR1\n52\n178\n44\n26\n52\n-05A4-4\nR1\n73\n249\n44\n26\n52\n-06A9-4\nR1\n97\n331\n44\n26\n52\n08A8-4\nR1\n127\n434\n44\n26\n52\n-012A-4\nR1\n172\n587\n44\n26\n52\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Especificaciones de refrigeración"
+          ],
+          [
+            "Método",
+            "Ventilador interno, dirección del flujo de abajo a arriba."
+          ],
+          [
+            "Requisito",
+            "Espacio libre por encima y por debajo del convertidor ACS550. 200 mm (8 pulg). No se requiere espacio libre en los laterales del convertidor - los convertidores ACS550 pueden montarse uno al lado de otro."
+          ]
+        ],
+        [
+          [
+            "Convertidor",
+            "Disipación de calor",
+            "Flujo de aire",
+            "Ruido"
+          ],
+          [
+            "ACS550-x1-",
+            "Bastidor",
+            "W",
+            "BTU/h",
+            "m3/h",
+            "pies3/min",
+            "dB"
+          ],
+          [
+            "-04A6-2",
+            "R1",
+            "55",
+            "189",
+            "44",
+            "26",
+            "52"
+          ],
+          [
+            "-06A6-2",
+            "R1",
+            "73",
+            "249",
+            "44",
+            "26",
+            "52"
+          ],
+          [
+            "07A5-2",
+            "R1",
+            "81",
+            "276",
+            "44",
+            "26",
+            "52"
+          ],
+          [
+            "-012A-2",
+            "R1",
+            "118",
+            "404",
+            "44",
+            "26",
+            "52"
+          ],
+          [
+            "-017A-2",
+            "R1",
+            "161",
+            "551",
+            "44",
+            "26",
+            "52"
+          ],
+          [
+            "-024A-2",
+            "R2",
+            "227",
+            "776",
+            "88",
+            "52",
+            "66"
+          ],
+          [
+            "-031A-2",
+            "R2",
+            "285",
+            "973",
+            "88",
+            "52",
+            "66"
+          ],
+          [
+            "-046A-2",
+            "R3",
+            "420",
+            "1434",
+            "134",
+            "79",
+            "67"
+          ],
+          [
+            "-059A-2",
+            "R3",
+            "536",
+            "1829",
+            "134",
+            "79",
+            "67"
+          ],
+          [
+            "-075A-2",
+            "R4",
+            "671",
+            "2290",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-088A-2",
+            "R4",
+            "786",
+            "2685",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-114A-2",
+            "R4",
+            "1014",
+            "3463",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-143A-2",
+            "R6",
+            "1268",
+            "4431",
+            "405",
+            "238",
+            "77"
+          ],
+          [
+            "-178A-2",
+            "R6",
+            "1575",
+            "5379",
+            "405",
+            "238",
+            "77"
+          ],
+          [
+            "-221A-2",
+            "R6",
+            "1952",
+            "6666",
+            "405",
+            "238",
+            "77"
+          ],
+          [
+            "-248A-2",
+            "R6",
+            "2189",
+            "7474",
+            "405",
+            "238",
+            "77"
+          ]
+        ],
+        [
+          [
+            "Convertidor",
+            "Disipación de calor",
+            "Flujo de aire",
+            "Ruido"
+          ],
+          [
+            "ACS550-x1-",
+            "Bastidor",
+            "W",
+            "BTU/h",
+            "m3/h",
+            "pies3/min",
+            "dB"
+          ],
+          [
+            "-03A3-4",
+            "R1",
+            "40",
+            "137",
+            "44",
+            "26",
+            "52"
+          ],
+          [
+            "-04A1-4",
+            "R1",
+            "52",
+            "178",
+            "44",
+            "26",
+            "52"
+          ],
+          [
+            "-05A4-4",
+            "R1",
+            "73",
+            "249",
+            "44",
+            "26",
+            "52"
+          ],
+          [
+            "-06A9-4",
+            "R1",
+            "97",
+            "331",
+            "44",
+            "26",
+            "52"
+          ],
+          [
+            "08A8-4",
+            "R1",
+            "127",
+            "434",
+            "44",
+            "26",
+            "52"
+          ],
+          [
+            "-012A-4",
+            "R1",
+            "172",
+            "587",
+            "44",
+            "26",
+            "52"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Manual del usuario del ACS550-01/U1\n309\nConvertidor\nDisipación de calor\nFlujo de aire\nRuido\nACS550-x1-\nBastidor\nW\nBTU/h\nm3/h\npies3/min\ndB\n-015A-4\nR2\n232\n792\n88\n52\n66\n-023A-4\nR2\n337\n1151\n88\n52\n66\n-031A-4\nR3\n457\n1561\n134\n79\n67\n-038A-4\nR3\n562\n1919\n134\n79\n67\n-045A-4\nR3\n667\n2278\n134\n79\n67\n-059A-4\nR4\n907\n3098\n280\n165\n75\n-072A-4\nR4\n1120\n3825\n280\n165\n75\n-078A-4\nR4\n1295\n4423\n250\n147\n75\n-087A-4\nR4\n1440\n4918\n280\n165\n75\n-097A-4\nR4\n1440\n4918\n280\n165\n75\n-125A-4\nR5\n1940\n6625\n350\n205\n75\n-157A-4\nR6\n2310\n7889\n405\n238\n77\n-180A-4\nR6\n2810\n9597\n405\n238\n77\n-195A-4\nR6\n3050\n10416\n405\n238\n77\n-246A-4\nR6\n3260\n11134\n405\n238\n77\n-290A-4\nR6\n3850\n13125\n405\n238\n77\n00467918.xls C\nFlujo de aire, convertidores de 500 ... 600 V\nLa tabla siguiente especifica los requerimientos para el flujo de aire de refrigeración\npara convertidores de 500 ... 600 V a plena carga y en todas las condiciones\nambientales enumeradas en Condiciones ambientales en la página 313.\nConvertidor\nDisipación de calor\nFlujo de aire\nRuido\nACS550-U1-\nBastidor\nW\nBTU/h\nm3/h\npies3/min\ndB\n-02A7-6\nR2\n52\n178\n88\n52\n66\n-03A9-6\nR2\n73\n249\n88\n52\n66\n-06A1-6\nR2\n127\n434\n88\n52\n66\n-09A0-6\nR2\n172\n587\n88\n52\n66\n-011A-6\nR2\n232\n792\n88\n52\n66\n-017A-6\nR2\n337\n1151\n88\n52\n66\n-022A-6\nR3\n457\n1561\n134\n79\n67\n-027A-6\nR3\n562\n1919\n134\n79\n67\n-032A-6\nR4\n667\n2278\n280\n165\n75\n-041A-6\nR4\n907\n3098\n280\n165\n75\n-052A-6\nR4\n1117\n3815\n280\n165\n75\n-062A-6\nR4\n1357\n4634\n280\n165\n75\n-077A-6\nR6\n2310\n7889\n405\n238\n77\n-099A-6\nR6\n2310\n7889\n405\n238\n77\n-125A-6\nR6\n2310\n7889\n405\n238\n77\n-144A-6\nR6\n2310\n7889\n405\n238\n77\n00467918.xls C\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Convertidor",
+            "Disipación de calor",
+            "Flujo de aire",
+            "Ruido"
+          ],
+          [
+            "ACS550-x1-",
+            "Bastidor",
+            "W",
+            "BTU/h",
+            "m3/h",
+            "pies3/min",
+            "dB"
+          ],
+          [
+            "-015A-4",
+            "R2",
+            "232",
+            "792",
+            "88",
+            "52",
+            "66"
+          ],
+          [
+            "-023A-4",
+            "R2",
+            "337",
+            "1151",
+            "88",
+            "52",
+            "66"
+          ],
+          [
+            "-031A-4",
+            "R3",
+            "457",
+            "1561",
+            "134",
+            "79",
+            "67"
+          ],
+          [
+            "-038A-4",
+            "R3",
+            "562",
+            "1919",
+            "134",
+            "79",
+            "67"
+          ],
+          [
+            "-045A-4",
+            "R3",
+            "667",
+            "2278",
+            "134",
+            "79",
+            "67"
+          ],
+          [
+            "-059A-4",
+            "R4",
+            "907",
+            "3098",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-072A-4",
+            "R4",
+            "1120",
+            "3825",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-078A-4",
+            "R4",
+            "1295",
+            "4423",
+            "250",
+            "147",
+            "75"
+          ],
+          [
+            "-087A-4",
+            "R4",
+            "1440",
+            "4918",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-097A-4",
+            "R4",
+            "1440",
+            "4918",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-125A-4",
+            "R5",
+            "1940",
+            "6625",
+            "350",
+            "205",
+            "75"
+          ],
+          [
+            "-157A-4",
+            "R6",
+            "2310",
+            "7889",
+            "405",
+            "238",
+            "77"
+          ],
+          [
+            "-180A-4",
+            "R6",
+            "2810",
+            "9597",
+            "405",
+            "238",
+            "77"
+          ],
+          [
+            "-195A-4",
+            "R6",
+            "3050",
+            "10416",
+            "405",
+            "238",
+            "77"
+          ],
+          [
+            "-246A-4",
+            "R6",
+            "3260",
+            "11134",
+            "405",
+            "238",
+            "77"
+          ],
+          [
+            "-290A-4",
+            "R6",
+            "3850",
+            "13125",
+            "405",
+            "238",
+            "77"
+          ]
+        ],
+        [
+          [
+            "Convertidor",
+            "Disipación de calor",
+            "Flujo de aire",
+            "Ruido"
+          ],
+          [
+            "ACS550-U1-",
+            "Bastidor",
+            "W",
+            "BTU/h",
+            "m3/h",
+            "pies3/min",
+            "dB"
+          ],
+          [
+            "-02A7-6",
+            "R2",
+            "52",
+            "178",
+            "88",
+            "52",
+            "66"
+          ],
+          [
+            "-03A9-6",
+            "R2",
+            "73",
+            "249",
+            "88",
+            "52",
+            "66"
+          ],
+          [
+            "-06A1-6",
+            "R2",
+            "127",
+            "434",
+            "88",
+            "52",
+            "66"
+          ],
+          [
+            "-09A0-6",
+            "R2",
+            "172",
+            "587",
+            "88",
+            "52",
+            "66"
+          ],
+          [
+            "-011A-6",
+            "R2",
+            "232",
+            "792",
+            "88",
+            "52",
+            "66"
+          ],
+          [
+            "-017A-6",
+            "R2",
+            "337",
+            "1151",
+            "88",
+            "52",
+            "66"
+          ],
+          [
+            "-022A-6",
+            "R3",
+            "457",
+            "1561",
+            "134",
+            "79",
+            "67"
+          ],
+          [
+            "-027A-6",
+            "R3",
+            "562",
+            "1919",
+            "134",
+            "79",
+            "67"
+          ],
+          [
+            "-032A-6",
+            "R4",
+            "667",
+            "2278",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-041A-6",
+            "R4",
+            "907",
+            "3098",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-052A-6",
+            "R4",
+            "1117",
+            "3815",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-062A-6",
+            "R4",
+            "1357",
+            "4634",
+            "280",
+            "165",
+            "75"
+          ],
+          [
+            "-077A-6",
+            "R6",
+            "2310",
+            "7889",
+            "405",
+            "238",
+            "77"
+          ],
+          [
+            "-099A-6",
+            "R6",
+            "2310",
+            "7889",
+            "405",
+            "238",
+            "77"
+          ],
+          [
+            "-125A-6",
+            "R6",
+            "2310",
+            "7889",
+            "405",
+            "238",
+            "77"
+          ],
+          [
+            "-144A-6",
+            "R6",
+            "2310",
+            "7889",
+            "405",
+            "238",
+            "77"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "310\nManual del usuario del ACS550-01/U1\nDimensiones y pesos\nLas dimensiones y la masa del ACS550 dependen del bastidor y del tipo de armario.\nSi no sabe con seguridad cuál es el bastidor, determine la designación de \"Tipo\" en\nlas etiquetas del convertidor (véanse los apartados Designación de tipo en la página\n17 y Etiquetas del convertidor en la página 16). Seguidamente, consulte esa\ndesignación de tipo en las tablas de especificaciones (véase el capítulo Datos\ntécnicos en la página 283) para determinar el bastidor.\nDimensiones de montaje\nW1\n-W2-\nVéase la ampliación A\nA\n+\n001\nH1\na\nc\nF\nVéase la ampliación B\n®\n- b\nd\nAmpliación A\nAmpliación B\nX0032\nIP 21 / UL tipo 1 e IP 54 / UL tipo 12 - Dimensiones para cada bastidor\nRef.\nR1\nR2\nR3\nR4\nR5\nR6\nmm\npulg.\nmm\npulg.\nmm\npulg.\nmm\npulg.\nmm\npulg.\nmm\npulg.\nW11\n98,0\n3,9\n98,0\n3,9\n160\n6,3\n160\n6,3\n238\n9,4\n263\n10,4\nW21\n--\n--\n--\n--\n98,0\n3,9\n98,0\n3,9\n--\n--\n--\n--\nH11\n318\n12,5\n418\n16,4\n473\n18,6\n578\n22,8\n588\n23,2\n675\n26,6\na\n5,5\n0,2\n5,5\n0,2\n6,5\n0,25\n6,5\n0,25\n6,5\n0,25\n9,0\n0,35\nb\n10,0\n0,4\n10,0\n0,4\n13,0\n0.5\n13,0\n0,5\n14,0\n0,55\n18,0\n0,71\nc\n5,5\n0,2\n5,5\n0,2\n8,0\n0.3\n8,0\n0,3\n8,5\n0,3\n8,5\n0,3\nd\n5,5\n0,2\n5,5\n0,2\n6,5\n0.25\n6,5\n0,25\n6,5\n0,25\n9,0\n0,35\n1\nDimensiones de centro a centro.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Ref.",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6"
+          ],
+          [
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg."
+          ],
+          [
+            "W11",
+            "98,0",
+            "3,9",
+            "98,0",
+            "3,9",
+            "160",
+            "6,3",
+            "160",
+            "6,3",
+            "238",
+            "9,4",
+            "263",
+            "10,4"
+          ],
+          [
+            "W21",
+            "--",
+            "--",
+            "--",
+            "--",
+            "98,0",
+            "3,9",
+            "98,0",
+            "3,9",
+            "--",
+            "--",
+            "--",
+            "--"
+          ],
+          [
+            "H11",
+            "318",
+            "12,5",
+            "418",
+            "16,4",
+            "473",
+            "18,6",
+            "578",
+            "22,8",
+            "588",
+            "23,2",
+            "675",
+            "26,6"
+          ],
+          [
+            "a",
+            "5,5",
+            "0,2",
+            "5,5",
+            "0,2",
+            "6,5",
+            "0,25",
+            "6,5",
+            "0,25",
+            "6,5",
+            "0,25",
+            "9,0",
+            "0,35"
+          ],
+          [
+            "b",
+            "10,0",
+            "0,4",
+            "10,0",
+            "0,4",
+            "13,0",
+            "0.5",
+            "13,0",
+            "0,5",
+            "14,0",
+            "0,55",
+            "18,0",
+            "0,71"
+          ],
+          [
+            "c",
+            "5,5",
+            "0,2",
+            "5,5",
+            "0,2",
+            "8,0",
+            "0.3",
+            "8,0",
+            "0,3",
+            "8,5",
+            "0,3",
+            "8,5",
+            "0,3"
+          ],
+          [
+            "d",
+            "5,5",
+            "0,2",
+            "5,5",
+            "0,2",
+            "6,5",
+            "0.25",
+            "6,5",
+            "0,25",
+            "6,5",
+            "0,25",
+            "9,0",
+            "0,35"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Manual del usuario del ACS550-01/U1\n311\nDimensiones exteriores\nConvertidores con armarios IP21 / UL tipo 1\nTipos ACS550 x1 221A 2,\nACS550 x1 246A 4, ACS550 x1 248A 2 y\nACS550 01 290A 4, bastidor R6\nD\nW\nD\nW\nH\nH2\nO\nH\nH3\nC\n- H3\ne\n5\n. Ot\nX0031\nIP 21 / UL tipo 1 - Dimensiones para cada bastidor\nRef.\nR1\nR2\nR3\nR4\nR5\nR6\nmm\npulg.\nmm\npulg.\nmm\npulg.\nmm\npulg.\nmm\npulg.\nmm\npulg.\nW\n125\n4,9\n125\n4,9\n203\n8,0\n203\n8,0\n265\n10,4\n302\n11,9\nH\n330\n13,0\n430\n16,9\n490\n19,3\n596\n23,5\n602\n23,7\n700\n27,6\nH2\n315\n12,4\n415\n16,3\n478\n18,8\n583\n23,0\n578\n22,8\n698\n27,5\nH3\n369\n14,5\n469\n18,5\n583\n23,0\n689\n27,1\n736\n29,0\n8881\n35,01\nD\n212\n8,3\n222\n8,7\n231\n9,1\n262\n10,3\n286\n11,3\n400\n15,8\n00467918.xls C\n1. ACS550-x1-221A-2, ACS550-x1-246A-4, ACS550 x1 248A 2 y ACS550-x1-290A-4: 981 mm /\n38,6 in.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "IP 21 / UL tipo 1 - Dimensiones para cada bastidor"
+          ],
+          [
+            "Ref.",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6"
+          ],
+          [
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg."
+          ],
+          [
+            "W",
+            "125",
+            "4,9",
+            "125",
+            "4,9",
+            "203",
+            "8,0",
+            "203",
+            "8,0",
+            "265",
+            "10,4",
+            "302",
+            "11,9"
+          ],
+          [
+            "H",
+            "330",
+            "13,0",
+            "430",
+            "16,9",
+            "490",
+            "19,3",
+            "596",
+            "23,5",
+            "602",
+            "23,7",
+            "700",
+            "27,6"
+          ],
+          [
+            "H2",
+            "315",
+            "12,4",
+            "415",
+            "16,3",
+            "478",
+            "18,8",
+            "583",
+            "23,0",
+            "578",
+            "22,8",
+            "698",
+            "27,5"
+          ],
+          [
+            "H3",
+            "369",
+            "14,5",
+            "469",
+            "18,5",
+            "583",
+            "23,0",
+            "689",
+            "27,1",
+            "736",
+            "29,0",
+            "8881",
+            "35,01"
+          ],
+          [
+            "D",
+            "212",
+            "8,3",
+            "222",
+            "8,7",
+            "231",
+            "9,1",
+            "262",
+            "10,3",
+            "286",
+            "11,3",
+            "400",
+            "15,8"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "312\nManual del usuario del ACS550-01/U1\nConvertidores con armarios IP 54 / UL tipo 12\nTipo ACS550-01-290 A-4, IP 54\n(UL tipo 12 no disponible), bastidor R6\nW2\nW2\nA\nHI.\nH3\nH3\n..\nTF\n1\nW\nD\nW\nD\nIP 54 / UL tipo 12 - Dimensiones para cada bastidor\nRef.\nR1\nR2\nR3\nR4\nR5\nR62\nmm\npulg.\nmm\npulg.\nmm\npulg.\nmm\npulg.\nmm\npulg.\nmm\npulg.\nW\n213\n8,4\n213\n8,4\n257\n10,1\n257\n10,1\n369\n14,5\n410\n16,1\nW2\n222\n8,8\n222\n8,8\n267\n10,5\n267\n10,5\n369\n14,5\n410\n16,1\nH3\n461\n18,2\n561\n22,1\n629\n24,8\n760\n29,9\n775\n30,5\n9241\n36,41\nD\n234\n9,2\n245\n9,7\n254\n10,0\n284\n11,2\n309\n12,2\n423\n16,7\n00467918.xls C\n1. ACS550-01-290 A-4: 1119 mm (44,1 pulg.).\n2. UL tipo 12 no está disponible para el tipo ACS550-01-290A-4.\nPeso\nLa tabla siguiente detalla los pesos máximos típicos para cada bastidor. Las\nvariaciones para cada bastidor (debido a los componentes asociados a las\nespecificaciones de tensión/intensidad y las opciones) son menores.\nArmario\nPeso\nR1\nR2\nR3\nR4\nR5\nR6\nkg\nlb\nkg\nlb\nkg\nlb\nkg\nlb\nkg\nlb\nkg\nlb\nIP 21 / UL tipo 1\n6,5\n14,3\n9,0\n19,8\n16\n35\n24\n53\n34\n75\n691\n1521\nIP 54 / UL tipo 12\n8,0\n17,6\n11,0\n24,3\n17,0\n37,5\n26,0\n57,3\n42,0\n93,0\n86,02\n1902\n00467918.xls C\n1. ACS550 x1 221A 2, IP21 / UL tipo 1: 70 kg / 154 lb\nACS550-x1-246A-4, IP21 / UL tipo 1: 70 kg / 154 lb\nACS550 x1 248A 2, IP21 / UL tipo 1: 80 kg / 176 lb.\nACS550-01-290A-4, IP21 / UL tipo 1: 80 kg / 176 lb\n2. ACS550-x1-246A-4, IP 54 / UL tipo 12: 80 kg / 176 lb\nACS550-01-290A-4, IP 54: 90 kg / 198 lb (UL tipo 12 no disponible).\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "IP 54 / UL tipo 12 - Dimensiones para cada bastidor"
+          ],
+          [
+            "Ref.",
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R62"
+          ],
+          [
+            "",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg.",
+            "mm",
+            "pulg."
+          ],
+          [
+            "W",
+            "213",
+            "8,4",
+            "213",
+            "8,4",
+            "257",
+            "10,1",
+            "257",
+            "10,1",
+            "369",
+            "14,5",
+            "410",
+            "16,1"
+          ],
+          [
+            "W2",
+            "222",
+            "8,8",
+            "222",
+            "8,8",
+            "267",
+            "10,5",
+            "267",
+            "10,5",
+            "369",
+            "14,5",
+            "410",
+            "16,1"
+          ],
+          [
+            "H3",
+            "461",
+            "18,2",
+            "561",
+            "22,1",
+            "629",
+            "24,8",
+            "760",
+            "29,9",
+            "775",
+            "30,5",
+            "9241",
+            "36,41"
+          ],
+          [
+            "D",
+            "234",
+            "9,2",
+            "245",
+            "9,7",
+            "254",
+            "10,0",
+            "284",
+            "11,2",
+            "309",
+            "12,2",
+            "423",
+            "16,7"
+          ]
+        ],
+        [
+          [
+            "Armario",
+            "Peso"
+          ],
+          [
+            "R1",
+            "R2",
+            "R3",
+            "R4",
+            "R5",
+            "R6"
+          ],
+          [
+            "kg",
+            "lb",
+            "kg",
+            "lb",
+            "kg",
+            "lb",
+            "kg",
+            "lb",
+            "kg",
+            "lb",
+            "kg",
+            "lb"
+          ],
+          [
+            "IP 21 / UL tipo 1",
+            "6,5",
+            "14,3",
+            "9,0",
+            "19,8",
+            "16",
+            "35",
+            "24",
+            "53",
+            "34",
+            "75",
+            "691",
+            "1521"
+          ],
+          [
+            "IP 54 / UL tipo 12",
+            "8,0",
+            "17,6",
+            "11,0",
+            "24,3",
+            "17,0",
+            "37,5",
+            "26,0",
+            "57,3",
+            "42,0",
+            "93,0",
+            "86,02",
+            "1902"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Manual del usuario del ACS550-01/U1\n313\nGrados de protección\nArmarios disponibles:\n· Armario IP 21 / UL tipo 1: el emplazamiento debe estar libre de polvo en\nsuspensión, líquidos o gases corrosivos y contaminantes conductores como\ncondensación, polvo de carbón y partículas metálicas.\n· Armario IP 54 / UL tipo 12: este armario facilita protección del polvo en\nsuspensión y de agua rociada o salpicada desde cualquier dirección.\nNota: el armario UL tipo 12 no está disponible para el tipo ACS550-01-290A-4.\nEn contraste con el armario IP 21 / UL tipo 1, el armario IP 54 / UL tipo 12 tiene:\n· el mismo armazón interno de plástico que el armario IP 21\n· una cubierta exterior de plástico distinta\n· un ventilador interno adicional para mejorar la refrigeración\n· unas dimensiones mayores\n· la misma especificación (no requiere un derrateo).\nCondiciones ambientales\nLa tabla siguiente detalla los requisitos ambientales del ACS550.\nRequisitos ambientales\nLugar de instalación\nAlmacenamiento y transporte en el\nembalaje protector\nAltitud\n· 0 ... 1.000 m (0 ... 3.300 pies)\n· 1.000 ... 2.000 m (3.300 ... 6.600 pies)\ncon un derrateo de PN e /2N del 1%\ncada 100 m por encima de\n1.000 m (300 pies por encima de\n3.300 pies)\nTemperatura\nambiente\n· Mín. - 15 ℃ (5 °F) - no se permite\nescarcha\n· Máx. (fsw = 1 0 4) 40 ℃ (104 °F);\n50 °℃ (122 °F) si\nPN e /2N se derratean al 90%\n· Máx. (fsw = 8) 40 ℃ (104 °F) si\nPN e /2N se derratean al 80%\n· Máx. (fsw = 12) 30 ℃ (86 °F) si\nPN e /2N se derratean al 65% (al\n50% para 600 V, bastidores R4, es\ndecir, para el ACS550-U1-032A-6 ...\nACS550-U1-062A-6)\n-40 ... 70 °℃ (-40 ... 158 °F)\nHumedad\nrelativa\n5 ... 95%, no se permite condensación\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Requisitos ambientales"
+          ],
+          [
+            "",
+            "Lugar de instalación",
+            "Almacenamiento y transporte en el embalaje protector"
+          ],
+          [
+            "Altitud",
+            "· 0 ... 1.000 m (0 ... 3.300 pies) · 1.000 ... 2.000 m (3.300 ... 6.600 pies) con un derrateo de PN e /2N del 1% cada 100 m por encima de 1.000 m (300 pies por encima de 3.300 pies)",
+            ""
+          ],
+          [
+            "Temperatura ambiente",
+            "· Mín. - 15 ℃ (5 °F) - no se permite escarcha · Máx. (fsw = 1 0 4) 40 ℃ (104 °F); 50 °℃ (122 °F) si PN e /2N se derratean al 90% · Máx. (fsw = 8) 40 ℃ (104 °F) si PN e /2N se derratean al 80% · Máx. (fsw = 12) 30 ℃ (86 °F) si PN e /2N se derratean al 65% (al 50% para 600 V, bastidores R4, es decir, para el ACS550-U1-032A-6 ... ACS550-U1-062A-6)",
+            "-40 ... 70 °℃ (-40 ... 158 °F)"
+          ],
+          [
+            "Humedad relativa",
+            "5 ... 95%, no se permite condensación",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "314\nManual del usuario del ACS550-01/U1\nRequisitos ambientales\nLugar de instalación\nAlmacenamiento y transporte en el\nembalaje protector\nNiveles de\ncontaminación\n(IEC 60721-3-3)\n· No se permite polvo conductor.\n· EI ACS550 deberá ser instalado en\nuna atmósfera limpia de\nconformidad con la clasificación del\narmario.\n· El aire de refrigeración deberá estar\nlimpio, fuera del alcance de\nmateriales corrosivos y polvo\nconductor de electricidad.\n· Gases químicos: Clase 3C2\n· Partículas sólidas: Clase 3S2\nAlmacenamiento\n· No se permite polvo conductor.\n· Gases químicos: Clase 1C2\n· Partículas sólidas: Clase 1S2\nTransporte\n· No se permite polvo conductor.\n· Gases químicos: Clase 2C2\n· Partículas sólidas: Clase 2S2\nLa tabla siguiente detalla las pruebas de tensión estándar que ha pasado con éxito\nel ACS550.\nPruebas de tensión\nSin el embalaje\nDentro del embalaje\nVibración\nsinusoidal\nCondiciones mecánicas: De\nconformidad con IEC 60721-3-3, Clase\n3M4\n· 2 ... 9 Hz 3,0 mm (0,12 pulg.)\n· 9 ... 200 Hz 10 m/s2 (33 pies/s2)\nDe conformidad con las\nespecificaciones ISTA 1A y 1B.\nGolpes\nNo se permite\nIDe conformidad con IEC 68-2-29:\nmáx. 100 m/s2 (330 pies/s2), 11ms\nCaída libre\nNo se permite\n· 76 cm (30 pulg.), bastidor R1\n· 61 cm (24 pulg.), bastidor R2\n· 46 cm (18 pulg.), bastidor R3\n· 31 cm (12 pulg.), bastidor R4\n· 25 cm (10 pulg.), bastidor R5\n· 15 cm (6 pulg.), bastidor R6\nMateriales\nEspecificaciones de materiales\nArmario del\nconvertidor\n. PC/ABS 2,5 mm, color NCS 1502-Y o NCS 7000-N\n· Lámina de acero galvanizado de 1,5 ... 2 mm, grosor del galvanizado de 20\nmicrómetros. Si la superficie está pintada, el grosor total del recubrimiento\n(zinc y pintura) es de 80 ... 100 micrómetros.\n· Aleación de aluminio fundido AISi\n· Aleación de aluminio extruido AISi\nEmbalaje\nCartón ondulado, poliestireno expandido, contrachapado, madera en bruto\n(secada al calor). El envoltorio del embalaje consta de uno o más de los\nsiguientes elementos: Envoltorio plástico de polietileno de baja densidad, cintas\nde polipropileno o acero.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Requisitos ambientales"
+          ],
+          [
+            "",
+            "Lugar de instalación",
+            "Almacenamiento y transporte en el embalaje protector"
+          ],
+          [
+            "Niveles de contaminación (IEC 60721-3-3)",
+            "· No se permite polvo conductor. · EI ACS550 deberá ser instalado en una atmósfera limpia de conformidad con la clasificación del armario. · El aire de refrigeración deberá estar limpio, fuera del alcance de materiales corrosivos y polvo conductor de electricidad. · Gases químicos: Clase 3C2 · Partículas sólidas: Clase 3S2",
+            "Almacenamiento · No se permite polvo conductor. · Gases químicos: Clase 1C2 · Partículas sólidas: Clase 1S2 Transporte · No se permite polvo conductor. · Gases químicos: Clase 2C2 · Partículas sólidas: Clase 2S2"
+          ]
+        ],
+        [
+          [
+            "Pruebas de tensión"
+          ],
+          [
+            "",
+            "Sin el embalaje",
+            "Dentro del embalaje"
+          ],
+          [
+            "Vibración sinusoidal",
+            "Condiciones mecánicas: De conformidad con IEC 60721-3-3, Clase 3M4 · 2 ... 9 Hz 3,0 mm (0,12 pulg.) · 9 ... 200 Hz 10 m/s2 (33 pies/s2)",
+            "De conformidad con las especificaciones ISTA 1A y 1B."
+          ],
+          [
+            "Golpes",
+            "No se permite",
+            "IDe conformidad con IEC 68-2-29: máx. 100 m/s2 (330 pies/s2), 11ms"
+          ],
+          [
+            "Caída libre",
+            "No se permite",
+            "· 76 cm (30 pulg.), bastidor R1 · 61 cm (24 pulg.), bastidor R2 · 46 cm (18 pulg.), bastidor R3 · 31 cm (12 pulg.), bastidor R4 · 25 cm (10 pulg.), bastidor R5 · 15 cm (6 pulg.), bastidor R6"
+          ]
+        ],
+        [
+          [
+            "",
+            "Especificaciones de materiales"
+          ],
+          [
+            "Armario del convertidor",
+            ". PC/ABS 2,5 mm, color NCS 1502-Y o NCS 7000-N · Lámina de acero galvanizado de 1,5 ... 2 mm, grosor del galvanizado de 20 micrómetros. Si la superficie está pintada, el grosor total del recubrimiento (zinc y pintura) es de 80 ... 100 micrómetros. · Aleación de aluminio fundido AISi · Aleación de aluminio extruido AISi"
+          ],
+          [
+            "Embalaje",
+            "Cartón ondulado, poliestireno expandido, contrachapado, madera en bruto (secada al calor). El envoltorio del embalaje consta de uno o más de los siguientes elementos: Envoltorio plástico de polietileno de baja densidad, cintas de polipropileno o acero."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Manual del usuario del ACS550-01/U1\n315\nEspecificaciones de materiales\nEliminación\nEl convertidor de frecuencia contiene materiales que deberían ser reciclados\npara respetar los recursos energéticos y naturales. El embalaje está compuesto\npor materiales reciclables y compatibles con el medio ambiente. Todas las\npiezas metálicas son reciclables. Las piezas de plástico pueden ser recicladas\no bien incineradas de forma controlada, según disponga la normativa local. La\nmayoría de las piezas reciclables cuenta con símbolos de reciclaje.\nSi el reciclado no es viable, todas las piezas pueden ser arrojadas a un\nvertedero, a excepción de los condensadores electrolíticos y las tarjetas de\ncircuito impreso. Los condensadores de CC contienen electrolitos y, si el\nconvertidor no cuenta con el marcado RoHS, las tarjetas de circuito impreso\ncontienen plomo, y ambos se clasifican como residuos tóxicos en la UE.\nEstos elementos deberán ser extraídos y manipulados según dispongan las\nnormativas locales.\nPara obtener más información acerca de los aspectos medioambientales\ne instrucciones de reciclaje más detalladas, póngase en contacto con su\nrepresentante de ABB local.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Especificaciones de materiales"
+          ],
+          [
+            "Eliminación",
+            "El convertidor de frecuencia contiene materiales que deberían ser reciclados para respetar los recursos energéticos y naturales. El embalaje está compuesto por materiales reciclables y compatibles con el medio ambiente. Todas las piezas metálicas son reciclables. Las piezas de plástico pueden ser recicladas o bien incineradas de forma controlada, según disponga la normativa local. La mayoría de las piezas reciclables cuenta con símbolos de reciclaje. Si el reciclado no es viable, todas las piezas pueden ser arrojadas a un vertedero, a excepción de los condensadores electrolíticos y las tarjetas de circuito impreso. Los condensadores de CC contienen electrolitos y, si el convertidor no cuenta con el marcado RoHS, las tarjetas de circuito impreso contienen plomo, y ambos se clasifican como residuos tóxicos en la UE. Estos elementos deberán ser extraídos y manipulados según dispongan las normativas locales. Para obtener más información acerca de los aspectos medioambientales e instrucciones de reciclaje más detalladas, póngase en contacto con su representante de ABB local."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "316\nManual del usuario del ACS550-01/U1\nNormas aplicables\nEl cumplimiento de las normas siguientes por parte del convertidor se identifica\nmediante las \"marcas\" de las normas en la etiqueta de designación de tipo.\nEl convertidor de frecuencia cumple las normas siguientes:\nMarca\nNormas aplicables\nCE\nEN 50178 (1997)\nEquipo electrónico para el uso en instalaciones de potencia.\nIEC/EN 60204-1 (2005)\nSeguridad en la maquinaria. Equipos eléctricos de máquinas.\nParte 1: Requisitos generales. Disposiciones que hay que\ncumplir:El ensamblador final de la máquina es responsable de\ninstalar:\n· un dispositivo de paro de emergencia\n· un dispositivo de desconexión de la fuente de alimentación.\nIEC/EN 60529:1989 +\nA1:1999 + A2:2013\nGrados de protección proporcionados por los armarios (código IP).\nIEC 60664-1 (2002)\nCoordinación del aislamiento para el equipo en sistemas de\nbaja tensión. Parte 1: Principios, requisitos y pruebas.\nIEC/EN 61800-5-1:2007\nSistemas de accionamiento de potencia eléctricos de velocidad\najustable.\nParte 5-1: Requisitos de seguridad. Eléctrica, térmica y energía.\nIEC/EN 61800-3:2004\n+A1:2012\nSistemas de accionamiento de potencia eléctricos de\nvelocidad ajustable.\nParte 3: Requisitos EMC y métodos de prueba específicos.\nIEC/EN 61000-3-12:2011\nCompatibilidad electromagnética (EMC).\nParte 3-12: Límites - Límites para corrientes de armónicos\nprovocados por equipos que se conectan a sistemas públicos de\nbaja tensión con intensidad de entrada > 16 A y = 75 A por fase.\nIEC/EN 61800-3:2004\n+A1:2012\nSistemas de accionamiento de potencia eléctricos de\nvelocidad ajustable.\nParte 3: Requisitos EMC y métodos de prueba específicos.\nC\nUL\nUS\nLISTED\nUL 508C\nNorma UL para la Seguridad, Equipo de Conversión de\nPotencia, tercera edición.\nC22.2 N.º 14\nNorma CSA para equipo de control industrial (sólo para\nconvertidores ACS550-U1).\nMarcado\nMarcado CE\nCE\nEl convertidor cuenta con el marcado CE para verificar que el convertidor cumple las\ndisposiciones de las Directivas Europeas de Baja Tensión, de EMC y RoHS.\nNota: los convertidores ACS550-U1 de 600 V no están homologados.\nCumplimiento de la Directiva Europea de Baja Tensión\nEl cumplimiento de la Directiva Europea de Baja Tensión se ha verificado de\nconformidad con las normas IEC/EN 60204-1:2005 y EN 50178:1997.\nDatos técnicos",
+      "tablas": [
+        [
+          [
+            "Marca",
+            "Normas aplicables"
+          ],
+          [
+            "CE",
+            "EN 50178 (1997)",
+            "Equipo electrónico para el uso en instalaciones de potencia."
+          ],
+          [
+            "IEC/EN 60204-1 (2005)",
+            "Seguridad en la maquinaria. Equipos eléctricos de máquinas. Parte 1: Requisitos generales. Disposiciones que hay que cumplir:El ensamblador final de la máquina es responsable de instalar: · un dispositivo de paro de emergencia · un dispositivo de desconexión de la fuente de alimentación."
+          ],
+          [
+            "IEC/EN 60529:1989 + A1:1999 + A2:2013",
+            "Grados de protección proporcionados por los armarios (código IP)."
+          ],
+          [
+            "IEC 60664-1 (2002)",
+            "Coordinación del aislamiento para el equipo en sistemas de baja tensión. Parte 1: Principios, requisitos y pruebas."
+          ],
+          [
+            "IEC/EN 61800-5-1:2007",
+            "Sistemas de accionamiento de potencia eléctricos de velocidad ajustable. Parte 5-1: Requisitos de seguridad. Eléctrica, térmica y energía."
+          ],
+          [
+            "IEC/EN 61800-3:2004 +A1:2012",
+            "Sistemas de accionamiento de potencia eléctricos de velocidad ajustable. Parte 3: Requisitos EMC y métodos de prueba específicos."
+          ],
+          [
+            "",
+            "IEC/EN 61000-3-12:2011",
+            "Compatibilidad electromagnética (EMC). Parte 3-12: Límites - Límites para corrientes de armónicos provocados por equipos que se conectan a sistemas públicos de baja tensión con intensidad de entrada > 16 A y = 75 A por fase."
+          ],
+          [
+            "",
+            "IEC/EN 61800-3:2004 +A1:2012",
+            "Sistemas de accionamiento de potencia eléctricos de velocidad ajustable. Parte 3: Requisitos EMC y métodos de prueba específicos."
+          ],
+          [
+            "C UL US LISTED",
+            "UL 508C",
+            "Norma UL para la Seguridad, Equipo de Conversión de Potencia, tercera edición."
+          ],
+          [
+            "",
+            "C22.2 N.º 14",
+            "Norma CSA para equipo de control industrial (sólo para convertidores ACS550-U1)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Manual del usuario del ACS550-01/U1\n317\nCumplimiento de la Directiva Europea de EMC\nEsta Directiva define los requisitos de inmunidad y de emisiones de los equipos eléctricos\nutilizados en la Unión Europea. La norma de producto IEC/EN 61800-3:2004 +A1:2012\ncubre los requisitos especificados para los convertidores de frecuencia.\nCumplimiento de la norma IEC/EN 61800-3:2004 +A1:2012\nVéase la página 319.\nMarcado C-Tick\nEl convertidor cuenta con marcado C-Tick.\nEl marcado C-tick es obligatorio en Australia y Nueva Zelanda. Se ha pegado una\netiqueta C-Tick en cada convertidor de frecuencia para verificar el cumplimiento de\nla normativa relevante (IEC/EN 61800-3:2004 - Sistemas de accionamiento de\nenergía eléctrica de velocidad ajustable - Parte 3: Norma de producto EMC que\nincluye métodos específicos de prueba), según el Esquema de Compatibilidad\nElectromagnética Transtasmano.\nEl Esquema de Compatibilidad Electromagnética Transtasmano (EMCS) fue\npresentado por la Autoridad de Comunicación Australiana (ACA) y el Grupo de\nGestión del Espectro de Radiofrecuencias (RSM) del Ministerio de desarrollo\neconómico de Nueva Zelanda (NZMED) en noviembre de 2001. El objetivo del\nesquema es proteger el espectro de radiofrecuencias con la introducción de límites\ntécnicos para la emisión de productos eléctricos/electrónicos.\nCumplimiento de la norma IEC/EN 61800-3:2004\nVéase la página 319.\nMarcado UL/CSA\nC\nUL\nSe asigna una marca UL a los convertidores ACS550 para corroborar que el\nconvertidor cumple las disposiciones de UL 508C.\nUS\nLISTED\nSe asigna una marca CSA a los convertidores ACS550-tipo U1 para corroborar que\nel convertidor cumple las disposiciones de C22.2 N.º 14.\nEl ACS550 es apto para ser usado en circuitos que no proporcionen más de\n100 kA amperios eficades simétricos, 600 V como máximo. La especificación de\namperios se basa en las pruebas realizadas de conformidad con UL 508.\nLa protección de los circuitos derivados debe facilitarse según las normas locales.\nEl ACS550 dispone de una característica de protección electrónica del motor que\ncumple los requisitos de UL 508C y, para el ACS550-U1, C22.2 N.º 14. Al\nseleccionar y ajustar correctamente esta característica, no se requerirá protección\ncontra sobrecargas adicional a menos que se haya conectado más de un motor al\nconvertidor o a menos que la normativa de seguridad relevante requiera una\nprotección adicional. Véanse los parámetros 3005 (PROT TERMIC MOT) y 3006\n(TIEMPO TERM MOT).\nDatos técnicos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "318\nManual del usuario del ACS550-01/U1\nLos convertidores de frecuencia deben utilizarse en un entorno controlado. Véase el\napartado Condiciones ambientales en la página 313 acerca de los límites específicos.\nNota: para armarios de tipo abierto, es decir, convertidores sin la caja de\nconducción y/o la cubierta para convertidores IP 21 / UL tipo 1, o sin la placa de\nconducción y/o la tapa para convertidores IP 54 / UL tipo 12, el convertidor debe\nmontarse dentro de un armario de conformidad con el Código Nacional Eléctrico y\nlos códigos eléctricos locales.\nLos choppers de frenado, cuando se aplican con resistencias de frenado de tamaño\nadecuado, permiten a la unidad disipar la energía regenerativa (asociada normalmente a\nla deceleración rápida de un motor). Los bastidores R1 y R2 disponen de un chopper de\nfrenado integrado como equipo de serie. Para bastidores R3 ... R6, póngase en contacto\ncon su representante local de ABB para las piezas adecuadas. Véase el apartado\nComponentes de frenado en la página 301.\nMarcado EAC\nEl convertidor posee la certificación EAC. El marcado EAC es necesario en Rusia,\nBielorrusia y Kazajistán.\nDefiniciones de IEC/EN 61800-3:2004\nEMC son las siglas en inglés de Electromagnetic Compatibility (compatibilidad\nelectromagnética). Se trata de la capacidad del equipo eléctrico/electrónico de\nfuncionar sin problemas dentro de un entorno electromagnético. A su vez, estos\nequipos no deben interferir con otros productos o sistemas situados a su alrededor.\nEl primer entorno incluye establecimientos conectados a una red de baja tensión\nque alimenta a edificios empleados con fines domésticos.\nEl segundo entorno incluye establecimientos conectados a una red que no alimenta\ninstalaciones domésticas directamente.\nConvertidor de categoría C2: convertidor de tensión nominal inferior a 1.000 V y\ndestinado a ser instalado y puesto a punto solamente por un profesional al utilizarlo\nen el primer entorno.\nNota: Un profesional es una persona u organización que tiene las capacidades\nnecesarias para instalar y/o poner en marcha sistemas de accionamiento de\npotencia, incluyendo sus aspectos de EMC.\nLa categoría C2 tiene los mismos límites de emisión EMC que la distribución restringida en\nel primer entorno de la clase anterior. La norma EMC IEC/EN 61800-3 ya no restringe la\ndistribución del convertidor, pero se definen el uso, la instalación y la puesta a punto.\nConvertidor de categoría C3: convertidor de tensión nominal inferior a 1000 V,\ndestinado a ser utilizado en el segundo entorno y no en el primero.\nLa categoría C3 tiene los mismos límites de emisión EMC que la distribución no\nrestringida en el segundo entorno de la clase anterior.\nDatos técnicos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Manual del usuario del ACS550-01/U1\n319\nCumplimiento de la norma IEC/EN 61800-3:2004 +A1:2012\nEl rendimiento de inmunidad del convertidor cumple las exigencias de IEC/\nEN 61800-3, categoría C2 (véase la página 318 acerca de las definiciones de IEC/\nEN 61800-3). Los límites de emisión de IEC/EN 61800-3 se cumplen con las\ndisposiciones descritas a continuación.\nPrimer entorno (convertidores de categoría C2)\n1. El filtro EMC interno está conectado.\n2. Los cables de control y motor se seleccionan según se especifica en este manual.\n3. El convertidor de frecuencia se instala según las instrucciones de este manual.\n4. La longitud del cable de motor no supera la longitud máxima permitida especificada\nen el apartado Longitud del cable de motor para convertidores de 400 V de la\npágina 296 para el bastidor y la frecuencia de conmutación en uso.\nADVERTENCIA: en un entorno doméstico este producto puede provocar\nradiointerferencia, en cuyo caso quizá se requieran acciones correctoras\ncomplementarias.\nSegundo entorno (convertidores de categoría C3)\n1. El filtro EMC interno está conectado.\n2. Los cables de control y motor se seleccionan según se especifica en este manual.\n3. El convertidor de frecuencia se instala según las instrucciones de este manual.\n4. La longitud del cable de motor no supera la longitud máxima permitida especificada\nen el apartado Longitud del cable de motor para convertidores de 400 V de la\npágina 296 para el bastidor y la frecuencia de conmutación en uso.\nADVERTENCIA: un convertidor de categoría C3 no debe emplearse en una red pública\nde baja tensión que alimente instalaciones domésticas. Si el convertidor se usa en este\ntipo de red, cabe esperar que se produzcan interferencias por radiofrecuencia.\nNota: no se permite instalar un convertidor equipado con el filtro EMC interno en\nredes IT (sin conexión de neutro a tierra). La red de alimentación se conecta al\npotencial de tierra a través de los condensadores del filtro EMC, lo que puede\nconllevar peligro o daños en el convertidor.\nNota: no se permite instalar un convertidor equipado con el filtro EMC interno en redes\nTN con conexión a tierra por un vértice, puesto que puede dañar el convertidor.\nDatos técnicos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "320\nManual del usuario del ACS550-01/U1\nDatos técnicos",
+      "tablas": []
+    }
+  ]
+}

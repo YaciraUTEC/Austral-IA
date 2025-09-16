@@ -1,0 +1,642 @@
+{
+  "archivo": "ABB Guia Técnica 5 - Corrientes de los cojinetes",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Guía técnica Nº 5\nCorrientes de los cojinetes en\nsistemas de accionamiento de\nCA modernos\nABB",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "2\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Índice\n1\nIntroducción\n5\nGeneralidades\n5\nCómo evitar las corrientes de los cojinetes\n5\n2\nGeneración de corrientes de los cojinetes\n6\nPulsos de corriente de alta frecuencia\n6\nConmutación más rápida\n6\n¿Cómo se generan las corrientes de los cojinetes\nde AF?\n7\nCorriente de circulación\n7\nCorriente de conexión a tierra del eje\n7\nCorriente de descarga capacitativa\n7\nCircuito de modo común\n7\nCapacitancias parásitas\n9\n¿Cómo circula la corriente por el sistema?\n10\nCaídas de tensión\n10\nTransformador de modo común\n11\nDistribuidor de tensión capacitativo\n13\n3\nComo impedir los daños por corriente de los\ncojinetes de alta frecuencia\n15\nTres enfoques\n15\nCables a motor multipolares\n15\nRuta de impedancia corta\n16\nConexiones de unión de alta frecuencia\n17\nSiga las instrucciones específicas para el producto . 17\nSoluciones adicionales\n17\nMedición de corrientes de los cojinetes de alta\nfrecuencia\n18\nDeje que los especialistas efectúen las mediciones . 19\n4\nReferencias\n20\n5\nÍndice\n21\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n3",
+      "tablas": [
+        [
+          [
+            "1",
+            "Introducción",
+            "5"
+          ],
+          [
+            "",
+            "Generalidades",
+            "5"
+          ],
+          [
+            "",
+            "Cómo evitar las corrientes de los cojinetes",
+            "5"
+          ],
+          [
+            "2",
+            "Generación de corrientes de los cojinetes",
+            "6"
+          ],
+          [
+            "",
+            "Pulsos de corriente de alta frecuencia",
+            "6"
+          ],
+          [
+            "",
+            "Conmutación más rápida",
+            "6"
+          ],
+          [
+            "¿Cómo se generan las corrientes de los cojinetes de AF?",
+            "7"
+          ],
+          [
+            "",
+            "Corriente de circulación",
+            "7"
+          ],
+          [
+            "",
+            "Corriente de conexión a tierra del eje",
+            "7"
+          ],
+          [
+            "",
+            "Corriente de descarga capacitativa",
+            "7"
+          ],
+          [
+            "",
+            "Circuito de modo común",
+            "7"
+          ],
+          [
+            "",
+            "Capacitancias parásitas",
+            "9"
+          ],
+          [
+            "",
+            "¿Cómo circula la corriente por el sistema?",
+            "10"
+          ],
+          [
+            "",
+            "Caídas de tensión",
+            "10"
+          ],
+          [
+            "",
+            "Transformador de modo común",
+            "11"
+          ],
+          [
+            "",
+            "Distribuidor de tensión capacitativo",
+            "13"
+          ],
+          [
+            "3",
+            "Como impedir los daños por corriente de los",
+            ""
+          ],
+          [
+            "cojinetes de alta frecuencia",
+            "15"
+          ],
+          [
+            "",
+            "Tres enfoques",
+            "15"
+          ],
+          [
+            "",
+            "Cables a motor multipolares",
+            "15"
+          ],
+          [
+            "",
+            "Ruta de impedancia corta",
+            "16"
+          ],
+          [
+            "",
+            "Conexiones de unión de alta frecuencia",
+            "17"
+          ],
+          [
+            "",
+            "Siga las instrucciones específicas para el producto .",
+            "17"
+          ],
+          [
+            "",
+            "Soluciones adicionales",
+            "17"
+          ],
+          [
+            "",
+            "Medición de corrientes de los cojinetes de alta frecuencia",
+            "18"
+          ],
+          [
+            "",
+            "Deje que los especialistas efectúen las mediciones .",
+            "19"
+          ],
+          [
+            "4",
+            "Referencias",
+            "20"
+          ],
+          [
+            "5",
+            "Índice",
+            "21"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "4\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Capítulo 1 - Introducción\nGeneralidades\nAlgunas nuevas instalaciones de convertidores pueden\npresentar fallos en los cojinetes apenas unos meses después\nde su puesta en marcha. Los fallos pueden ser provocados\npor corrientes de alta frecuencia que circulan a través de los\ncojinetes del motor.\nAunque las corrientes de los cojinetes se han venido dando\ndesde la invención de los motores eléctricos, la incidencia de\nlos daños que provocan se ha incrementado durante los últimos\naños. Ello se debe a que los convertidores de velocidad variable\nmodernos con sus pulsos de tensión de rápido aumento y\naltas frecuencias de conmutación pueden provocar pulsos de\ncorriente a través de los cojinetes cuya descarga repetida\npuede desgastar de forma gradual los anillos guía de los\ncojinetes.\nCómo evitar\nlas corrientes\nde los\ncojinetes\nPara evitar que se produzcan daños, es esencial proporcionar\nvías de conexión a tierra adecuadas y permitir que las\ncorrientes de fuga vuelvan al bastidor del inversor sin tener\nque pasar a través de los cojinetes. La magnitud de las\ncorrientes puede reducirse empleando cables a motor\nsimétricos o filtrado en la salida del inversor. El correcto\naislamiento de la construcción de los cojinetes del motor\ninterrumpe la ruta de la corriente de los cojinetes.\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n5",
+      "tablas": [
+        [
+          [
+            "Generalidades",
+            "Algunas nuevas instalaciones de convertidores pueden presentar fallos en los cojinetes apenas unos meses después de su puesta en marcha. Los fallos pueden ser provocados por corrientes de alta frecuencia que circulan a través de los cojinetes del motor."
+          ],
+          [
+            "",
+            "Aunque las corrientes de los cojinetes se han venido dando desde la invención de los motores eléctricos, la incidencia de los daños que provocan se ha incrementado durante los últimos años. Ello se debe a que los convertidores de velocidad variable modernos con sus pulsos de tensión de rápido aumento y altas frecuencias de conmutación pueden provocar pulsos de corriente a través de los cojinetes cuya descarga repetida puede desgastar de forma gradual los anillos guía de los cojinetes."
+          ],
+          [
+            "Cómo evitar las corrientes de los cojinetes",
+            "Para evitar que se produzcan daños, es esencial proporcionar vías de conexión a tierra adecuadas y permitir que las corrientes de fuga vuelvan al bastidor del inversor sin tener que pasar a través de los cojinetes. La magnitud de las corrientes puede reducirse empleando cables a motor simétricos o filtrado en la salida del inversor. El correcto aislamiento de la construcción de los cojinetes del motor interrumpe la ruta de la corriente de los cojinetes."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Capítulo 2 - Generación de corrientes de los cojinetes\nPulsos de\ncorriente de alta\nfrecuencia\nConmutación\nmás rápida\n6\nLas corrientes de los cojinetes se presentan de distintos modos.\nDe todas formas, aunque las prácticas modernas de diseño de\nmotores y fabricación casi han eliminado las corrientes de los\ncojinetes de baja frecuencia inducidas por la asimetría del motor,\nla conmutación rápida en los sistemas de accionamiento de CA\nmodernos puede generar pulsos de corriente de alta frecuencia a\ntravés de los cojinetes. Si la energía de estos pulsos es lo bastante\nelevada, se lleva a cabo la transferencia de metal del cojinete y\nlos rodillos guía al lubricante. Ello se conoce como maquinado de\ndescarga eléctrica o EDM. El efecto de un solo pulso es\ninsignificante, pero una pequeña caída EDM es una discontinuidad\nque aglutina más pulsos y se convierte en una gran caída típica\nEDM. La frecuencia de conmutación de los accionamientos de\nCA modernos es muy alta y el gran número de pulsos provoca\nuna rápida acumulación del desgaste. Como resultado, es posible\nque tenga que sustituirse el cojinete aunque no lleve demasiado\ntiempo en servicio.\nLas corrientes de los cojinetes de alta frecuencia han sido\ninvestigadas por ABB desde 1987. La importancia del diseño del\nsistema se ha recalcado en los últimos años. Cada elemento\nindividual implicado, como el motor, la caja de engranajes o el\ncontrolador del convertidor, son el producto de técnicas de\nfabricación sofisticadas y normalmente presentan un tiempo medio\nentre fallos (MTBF) favorable. Sólo cuando se combinan estos\ncomponentes y se observa el sistema como un todo se hace\nevidente que se requieren ciertas prácticas para la instalación.\nFigura 1: Las corrientes de los cojinetes pueden provocar \"estrías\nde los cojinetes\", un patrón rítmico en los anillos guía de los\ncojinetes.\nLa tecnología de accionamiento de CA actual, que incorpora\ntransistores bipolares de puerta aislada (IGBT), crea situaciones\nde conmutación 20 veces más rápidas que las que se consideraban\nnormales hace diez años. Recientemente, el número de fallos en\nlos cojinetes de tipo EDM ha aumentado en los sistemas de\naccionamiento de CA relativamente pronto después de la puesta\nen marcha, en un espacio de uno a seis meses. La incidencia\ndepende de la arquitectura del sistema de accionamiento de CA y\nde las técnicas de instalación empleadas.\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Generación de corrientes de los cojinetes\n¿Cómo se\ngeneran las\ncorrientes de\nlos cojinetes de\nAF?\nLa fuente de las corrientes de los cojinetes es la tensión que\nse induce en el cojinete. En el caso de las corrientes de los\ncojinetes de alta frecuencia, esta tensión puede generarse de\ntres modos distintos. Los factores más importantes que definen\nel mecanismo relevante son el tamaño del motor y cómo se\nhallan conectados a tierra el bastidor y el eje del motor. La\ninstalación eléctrica, es decir, el tipo de cable adecuado y las\nuniones adecuadas de los conductores protectores y del\napantallamiento eléctrico, juega un papel importante. Du/dt de\nlos componentes de la etapa de potencia del accionamiento\nde CA y el nivel de tensión del enlace de CC afectan al nivel\nde las corrientes de los cojinetes.\nCorriente de\ncirculación\nEn motores grandes, la tensión de alta frecuencia se induce\nentre los extremos del eje del motor por el flujo de alta\nfrecuencia que circula alrededor del estator. El flujo lo causa\nuna asimetría neta de corriente capacitativa que se transmite\ndel bobinado hacia el bastidor del estator a lo largo de la\ncircunferencia del estator. La tensión entre los extremos del\neje afecta a los cojinetes. Si es suficiente para superar la\nimpedancia de la película de aceite de los cojinetes, una\ncorriente que intenta compensar el flujo neto en el estator\nempieza a circular en el bucle formado por el eje, los cojinetes\ny el bastidor del estator. Esta corriente es una corriente de los\ncojinetes de alta frecuencia de tipo de circulación.\nCorriente de\nconexión a tierra\ndel eje\nLa fuga de corriente al bastidor del estator tiene que circular\nde vuelta al inversor, que es la fuente de esta corriente.\nCualquier ruta de vuelta contiene impedancia, y por ello la\ntensión del bastidor del motor aumenta en comparación con\nel nivel de tierra de la fuente. Si el eje del motor se conecta a\ntierra a través de la maquinaria accionada, el incremento de la\ntensión del bastidor del motor se aprecia por encima de los\ncojinetes. Si la tensión aumenta lo bastante para superar la\nimpedancia de la película de aceite del cojinete del extremo\ndel convertidor, parte de la corriente podría circular a través\ndel cojinete del extremo del convertidor, el eje y la máquina\naccionada de vuelta al inversor. Esta corriente de los cojinetes\nes de un tipo de conexión a tierra del eje.\nCorriente de\ndescarga\ncapacitativa\nEn motores pequeños, la división de tensión interna de la\ntensión de modo común sobre las capacitancias de fuga\ninternas del motor puede provocar tensiones en el eje lo\nbastante elevadas para crear pulsos de corriente de los\ncojinetes de alta frecuencia. Ello puede ocurrir si el eje no se\nconecta a tierra a través de la maquinaria accionada mientras\nque el bastidor del motor se conecta a tierra en el modo estándar\nde protección.\nCircuito de\nmodo común\nLas corrientes de los cojinetes de alta frecuencia son una\nconsecuencia de la circulación de corriente en el circuito de\nmodo común del sistema de accionamiento de CA.\nUna fuente de alimentación sinusoidal trifásica típica está\nequlibrada y es simétrica en condiciones normales. Es decir,\nla suma de vectores de las tres fases siempre es igual a cero.\nPor ello, es normal que el neutro este en cero voltios. De todas\nformas, este no es el caso con una fuente de alimentación\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n7",
+      "tablas": [
+        [
+          [
+            "¿Cómo se generan las corrientes de los cojinetes de AF?",
+            "La fuente de las corrientes de los cojinetes es la tensión que se induce en el cojinete. En el caso de las corrientes de los cojinetes de alta frecuencia, esta tensión puede generarse de tres modos distintos. Los factores más importantes que definen el mecanismo relevante son el tamaño del motor y cómo se hallan conectados a tierra el bastidor y el eje del motor. La instalación eléctrica, es decir, el tipo de cable adecuado y las uniones adecuadas de los conductores protectores y del apantallamiento eléctrico, juega un papel importante. Du/dt de los componentes de la etapa de potencia del accionamiento de CA y el nivel de tensión del enlace de CC afectan al nivel de las corrientes de los cojinetes."
+          ],
+          [
+            "Corriente de circulación",
+            "En motores grandes, la tensión de alta frecuencia se induce entre los extremos del eje del motor por el flujo de alta frecuencia que circula alrededor del estator. El flujo lo causa una asimetría neta de corriente capacitativa que se transmite del bobinado hacia el bastidor del estator a lo largo de la circunferencia del estator. La tensión entre los extremos del eje afecta a los cojinetes. Si es suficiente para superar la impedancia de la película de aceite de los cojinetes, una corriente que intenta compensar el flujo neto en el estator empieza a circular en el bucle formado por el eje, los cojinetes y el bastidor del estator. Esta corriente es una corriente de los cojinetes de alta frecuencia de tipo de circulación."
+          ],
+          [
+            "Corriente de conexión a tierra del eje",
+            "La fuga de corriente al bastidor del estator tiene que circular de vuelta al inversor, que es la fuente de esta corriente. Cualquier ruta de vuelta contiene impedancia, y por ello la tensión del bastidor del motor aumenta en comparación con el nivel de tierra de la fuente. Si el eje del motor se conecta a tierra a través de la maquinaria accionada, el incremento de la tensión del bastidor del motor se aprecia por encima de los cojinetes. Si la tensión aumenta lo bastante para superar la impedancia de la película de aceite del cojinete del extremo del convertidor, parte de la corriente podría circular a través del cojinete del extremo del convertidor, el eje y la máquina accionada de vuelta al inversor. Esta corriente de los cojinetes es de un tipo de conexión a tierra del eje."
+          ],
+          [
+            "Corriente de descarga capacitativa",
+            "En motores pequeños, la división de tensión interna de la tensión de modo común sobre las capacitancias de fuga internas del motor puede provocar tensiones en el eje lo bastante elevadas para crear pulsos de corriente de los cojinetes de alta frecuencia. Ello puede ocurrir si el eje no se conecta a tierra a través de la maquinaria accionada mientras que el bastidor del motor se conecta a tierra en el modo estándar de protección."
+          ],
+          [
+            "Circuito de modo común",
+            "Las corrientes de los cojinetes de alta frecuencia son una consecuencia de la circulación de corriente en el circuito de modo común del sistema de accionamiento de CA."
+          ],
+          [
+            "Una fuente de alimentación sinusoidal trifásica típica está equlibrada y es simétrica en condiciones normales. Es decir, la suma de vectores de las tres fases siempre es igual a cero. Por ello, es normal que el neutro este en cero voltios. De todas formas, este no es el caso con una fuente de alimentación"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Generación de corrientes de los cojinetes\ntrifásica conmutada PWM, en la que una tensión de cc se\nconvierte a una tensión trifásica. Aunque los componentes\nfundamentales de frecuencia de las tensiones de salida son\nsimétricos y equilibrados, es imposible obtener la suma de\ntres tensiones de salida de forma instantánea igualándola a\ncero con dos posibles niveles de salida disponibles. La tensión\nresultante de punto neutro no es cero. Esta tensión puede\ndefinirse como una fuente de tensión de modo común. Puede\nmedirse en el punto cero de cualquier carga, por ejemplo el\npunto estrella del bobinado del motor.\n1\nVu [Udc]\n0\n-1\n0\n0.005\n0.01\n0.015\n0.02\n0.025\n1\n1\n0.03\nVv [Udc]\n1\n1\nOF-\n- -\n1\n-1\n0\n0.005\n0.01\n0.015\n1\n1\n0.02\n0.025\n0.03\nI\n-1\nVcomun [Udc] Vw [Udc]\n0\n1\n0.005\n0.01\n!\n0.015\n0.02\n0.025\n0.03\n0\n-1\n0\n0.005\n0.01\n0.015\ntiempo [s]\n0.02\n0.025\n0.03\nFigura 2: Este esquema muestra las tensiones de fase de una fuente\nde alimentación trifásica PWM típica y la media de las tres, o tensión\nen punto neutro, en un sistema de accionamiento de CA moderno.\nLa tensión neutra es claramente distinta de cero y su presencia\npuede definirse como una fuente de tensión de modo común. La\ntensión es proporcional a la tensión de bus de CC, y tiene una\nfrecuencia igual a la frecuencia de conmutación del inversor\nSiempre que se cambia una de las tres salidas del inversor de\nuno de los posibles potenciales a otro, se fuerza a una corriente\nproporcional a esta tensión a circular a tierra a través de las\ncapacitancias de tierra de todos los componentes del circuito\nde salida. La corriente circula de vuelta a la fuente a través\ndel conductor de tierra y las capacitancias de fuga del invesor,\nque son externas al sistema trifásico. Este tipo de corriente,\nque circula por el sistema en un bucle que está cerrado\nexternamente al sistema, se denomina intensidad de modo\ncomún.\n8\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Generatción de corrientes de los cojinetes\n80\n60\n40\n20\n0\nCorriente en modo común [A]\n-20\n-40\n-60\n-80\n0\n10\n20\n30\n40\n50\n60\nTiempo [us]\n70\n80\n90\n100\nFigura 3: Un ejemplo de la intensidad de modo común en la salida\ndel inversor. El pulso es una superposición de diversas frecuencias\ndebido a las distintas frecuencias naturales de las rutas paralelas de\nla intensidad de modo común.\nCapacitancias\nde fuga\nUna capacitancia se crea siempre que dos componentes\nconductores están separados por un aislador. Por ejemplo, el\nhilo de fase de cable tiene capacitancia al hilo de PE separado\nmediante aislamiento de PVC, por ejemplo, y el arrollamiento\ndel bobinado del motor está aislado del bastidor por una capa\nde barniz y por aislamiento de ranura, por lo que tiene un\nvalor de capacitancia al bastidor del motor. Las capacitancias\ndentro de un cable y especialmente dentro del motor son muy\nreducidas. Una capacitancia reducida significa una elevada\nimpedancia para altas frecuencias, con lo que se bloquean\nlas corrientes de fuga de baja frecuencia. De todas formas,\nlos pulsos de aumento rápido producidos por las fuentes de\nalimentación modernas contienen frecuencias tan elevadas\nque incluso las capacitancias pequeñas dentro del motor\nproporcionan una ruta de baja impedancia para que circule la\ncorriente.\nFuente\nInversor\nCable\nAlimentación\nSistema\nL\nBobinados\nde motor\nL\n\"m\nCMC\nCm\nV.\ncm\nCMC\nC\nCin\nFigura 4: Bucle simplificado de la intensidad de modo común de un\ninversor PWM y el motor de inducción. La fuente de alimentación del\ninversor actúa como una fuente de tensión de modo común (Vcm). La\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n9",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Generación de corrientes de los cojinetes\n¿ Cómo\ncircula la\ncorriente por\nel sistema?\nintensidad de modo común (CMC) circula a través del cable de modo\ncomun y las inductancias de motor, L. L\" y a través de las\ncapacitancias de fuga entre los bobinados del motor y el bastidor\ndel motor, combinadas para ser C .. Desde el bastidor del motor, la\ncorriente pasa a través del circuito de tierra de la fábrica que tiene la\ninductancia L. L. también recibe alimentación de intensidad de\nmodo común desde la capacitancia de cable de fuga C. El bastidor\ndel inversor se conecta a tierra de fábrica y acopla la intensidad de\nmodo común/corrientes de tierra a través del inversor de fuga a las\ncapacitancias de bastidor, combinadas como C., de vuelta a la fuente\nde tensión de modo común.\nEl camino de vuelta de la corriente de fuga del bastidor del\nmotor de vuelta al bastidor del inversor consta del bastidor del\nmotor, el apantallamiento de cable o conductortes PE y\nposiblemente de las piezas de aluminio o acero de la estructura\ndel edificio de la fábrica. Todos estos elementos contienen\ninductancia. La circulación de la intensidad de modo común a\ntravés de esta inductancia provocará una caída de tensión\nque eleva el potencial del bastidor del motor por encima del\npotencial de tierra de la fuente en el bastidor del inversor. Esta\ntensión del bastidor del motor es una parte de la tensión de\nmodo común del inversor. La intensidad de modo común\nbuscará una ruta con la menor impedancia. Si hay una gran\ncantidad de impedancia en las rutas previstas, como la\nconexión PE del bastidor del motor, la tensión del bastidor del\nmotor hará que se desvíe una parte de la intensidad de modo\ncomún por una ruta no prevista a través del edificio. En las\ninstalaciones prácticas existen diversas rutas paralelas.\nMuchas tienen un efecto menor sobre el valor de la intensidad\nde modo común o las corrientes de los cojinetes, pero pueden\nser importantes para satisfacer los requisitos de EMC.\nCaídas de\ntensión\nSi el valor de esta inductancia es lo bastante elevado, la\nreactancia en el rango superior de las frecuencias de intensidad\nde modo común típicas, 50 kHz a 1 MHz, puede soportar\ncaídas de tensión de más de 100 voltios entre el bastidor del\nmotor y el bastidor dle inversor. Si, en tal caso, el eje del\nmotor se conecta a través de un acoplamiento metálico a la\ncaja de engranajes u otra maquinaria accionada que esté\nconectada a tierra sólidamente y cerca del mismo potencial\nde tierra que el bastidor del inversor, entonces es posible que\nparte de la intensidad de modo común del inversor circule a\ntravés de los cojinetes del motor, el eje y la maquinaria\naccionada de vuelta al inversor.\n10\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": [
+        [
+          [
+            "¿ Cómo circula la corriente por el sistema?",
+            "intensidad de modo común (CMC) circula a través del cable de modo comun y las inductancias de motor, L. L\" y a través de las capacitancias de fuga entre los bobinados del motor y el bastidor del motor, combinadas para ser C .. Desde el bastidor del motor, la corriente pasa a través del circuito de tierra de la fábrica que tiene la inductancia L. L. también recibe alimentación de intensidad de modo común desde la capacitancia de cable de fuga C. El bastidor del inversor se conecta a tierra de fábrica y acopla la intensidad de modo común/corrientes de tierra a través del inversor de fuga a las capacitancias de bastidor, combinadas como C., de vuelta a la fuente de tensión de modo común. El camino de vuelta de la corriente de fuga del bastidor del motor de vuelta al bastidor del inversor consta del bastidor del motor, el apantallamiento de cable o conductortes PE y posiblemente de las piezas de aluminio o acero de la estructura del edificio de la fábrica. Todos estos elementos contienen inductancia. La circulación de la intensidad de modo común a través de esta inductancia provocará una caída de tensión que eleva el potencial del bastidor del motor por encima del potencial de tierra de la fuente en el bastidor del inversor. Esta tensión del bastidor del motor es una parte de la tensión de modo común del inversor. La intensidad de modo común buscará una ruta con la menor impedancia. Si hay una gran cantidad de impedancia en las rutas previstas, como la conexión PE del bastidor del motor, la tensión del bastidor del motor hará que se desvíe una parte de la intensidad de modo común por una ruta no prevista a través del edificio. En las instalaciones prácticas existen diversas rutas paralelas. Muchas tienen un efecto menor sobre el valor de la intensidad de modo común o las corrientes de los cojinetes, pero pueden ser importantes para satisfacer los requisitos de EMC."
+          ],
+          [
+            "Caídas de tensión",
+            "Si el valor de esta inductancia es lo bastante elevado, la reactancia en el rango superior de las frecuencias de intensidad de modo común típicas, 50 kHz a 1 MHz, puede soportar caídas de tensión de más de 100 voltios entre el bastidor del motor y el bastidor dle inversor. Si, en tal caso, el eje del motor se conecta a través de un acoplamiento metálico a la caja de engranajes u otra maquinaria accionada que esté conectada a tierra sólidamente y cerca del mismo potencial de tierra que el bastidor del inversor, entonces es posible que parte de la intensidad de modo común del inversor circule a través de los cojinetes del motor, el eje y la maquinaria accionada de vuelta al inversor."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Generación de corrientes de los cojinetes\nInversor\n1\nCable Motor\n2\nMOTOR\nReductor\n4\nCarga\n7\n3\n5\n6\n1\nPulso tensión\nmodo común\n-DC\n2\nCORRIENTE EN\nMODO COMÚN DE ALTA\nFRECUENCIA\n1\n1\n1\n3\nCORRIENTE - PE\n+DC\n4\nDE ALTA FRECUENCIA\nTENSIÓN EN EJE\n6\nTENSIÓN DE CARCASA\nDE ALTA FRECUENCIA\n5\nDE ALTA FRECUENCIA\nCORRIENTE CIRCULANTE\n7\nCORRIENTE A TIERRA\nDEL EJE\nFigura 5: Una presentación esquemática que muestra la corriente\nde circulación y la corriente de conexión a tierra del eje; ésta\núltima resulta de una tension del bastidor del motor elevada con\nunma conexión a tierra superior de la máquina.\nSi el eje de la maquinaria no tiene contacto directo con el nivel\nde tierra, la corriente puede circular a través de la caja de\nengranajes o de los cojinetes de la máquina. Estos cojinetes\npueden resultar dañados antes que los cojinetes del motor.\nİ+Ai\nD\ni-Ai\nN\nAi\nFigura 6: Fuente de la corriente de los cojinetes de circulación de\nalta frecuencia. La fuga de corriente a través de las capacitancias de\nestator distribuidas da una suma de corriente que no es cero en\ntoda la circunferencia del estator. Ello lleva a un efecto de\nmagnetización neto y a flujo alrededor del eje del motor.\nTransformador\nde modo\ncomún\nLa mayor proporción de la capacitancia de fuga del motor se\nforma entre los bobinados del estator y el bastidor del motor.\nEsta capacitancia se distribuye alrededor de la circunferencia\ny a lo largo del estator. A medida que la corriente pasa al\nestator por la espira, el contenido de alta frecuencia de la\ncorriente que entra en la espira del estator es mayor que la\ncorriente saliente.\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Generación de corrientes de los cojjinetes\nEsta corriente neta produce un flujo magnético de alta\nfrecuencia que circulará en las laminaciones del estator,\ninduciendo una tensión axial en los extremos del eje. Si la\ntensión se convierte en lo suficientemente elevada, puede\ncircular una corriente de circulación de alta frecuencia interna\nal motor a través del eje y ambos cojinetes. En este caso, el\nmotor puede considerarse un transformador, en el que la\nintensidad de modo común que circula en el bastidor del estator\nactúa como primario e induce la corriente de circulación al\ncircuito del rotor o secundario. Esta corriente de los cojinetes\nse considera la más dañina con valores de cresta típicos de\n3 a 20 amperios dependiendo de la potencia nominal del motor,\ndu/dt de los componentes de la etapa de potencia del\naccionamiento de CA y nivel de tensión del enlace de CC.\nFuente\nAlimentación\nInversor\nCMC\nV.\ncm\nCable\nSistema\nCircuito Motor\nEstator\nRotor\nLC\nacoplamiento mutuo\nde inductancia >\nLs\nL\nEJE\nRodamientos\nC. T\nC.7\n'ws\nK\n7\nCorriente\nde Circulation\nL\ng\nFigura 7: La tension en el eje axial de alta frecuencia puede\nconsiderarse una resultante del efecto de transformador, en el que la\nintensidad de modo comun que circula en el bastidor del estator\nactúa como un primario e induce la corriente de circulación hacia el\ncircuito de rotor o secundario.\nOtra versión de la corriente de los cojinetes de circulación\nocurre cuando la corriente, en lugar de circular completamente\ndentro del motor, circula a través del eje y los cojinetes de la\ncaja de engranajes o la maquinaria accionada y en un elemento\nestructural que es externo y común al motor y a la máquina\naccionada. El origen de la corriente es el mismo que para la\ncorriente circulando dentro del motor. Un ejemplo de esta\ncorriente de los cojinetes de circulación \"vagabunda\" se muestra\nen la figura 8.\n12\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Generación de corrientes de los cojinetes\nAcoplamiento\nBohba\nMaqutna\naccionada\nFigura 8: Corriente de los cojinetes de circulación \"vagabunda\",\ndonde el bucle de corriente es externo al motor.\nDistribuidor\nde tensión\ncapacitativo\nTambién están presentes otras capacitancias de fuga en el\nmotor, como la capacitancia entre los bobinados del estator y\nel rotor, o la que existe en el vacío de aire del motor entre el\nhierro del estator y el rotor. Incluso los cojinetes mismos pueden\nllegar a tener capacitancia de fuga.\nLa existencia de capacitancia entre los bobinados del estator\ny el rotor acopla de forma efectiva los bobinados del estator al\nhierro del rotor, que está también conectado al eje y a los\nanillos guía internos del cojinete. Los cambios rápidos en la\nintensidad de modo común desde el inversor pueden dar lugar\na corrientes en la capacitancia alrededor de la circunferencia\ny a lo largo del motor, y además entre los bobinados del estator\ny el rotor hacia los cojinetes.\nFuente\nAlimentación\nInversor\nCMC\nV cm\nCable\nSistema\nLc\nCircuito Motor\nHE\nwr\nm\nRotor\nRodamientos\nK\nEJE\nC. T\n\"ws\nC\nmb\nFigura 9: Bucle de modo común de un convertidor de velocidad\nvariable, con capacitancias de fuga del estator, rotor y cojinete.\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Generación de corrientes de los cojinetes\nLa circulación de corriente hacia los cojinetes puede cambiar\ncon rapidez, ya que ello depende del estado físico del cojinete\nen un momento dado. Por ejemplo, la presencia de una\ncapacitancia de fuga en los cojinetes sólo se mantiene\nmientras las bolas de los cojinetes están cubiertas de aceite\no grasa y no son conductoras. Esta capacitancia, en la que la\ntensión del eje inducida aumenta, puede cortocircuitarse si la\ntensión de los cojinetes supera el umbral de su valor de\ntransición conductiva o si un \"punto elevado\" en una bola\natraviesa la película de aceite y entra en contacto con ambos\nanillos guía del cojinete. A una velocidad muy baja, los\ncojinetes tienen contacto metálico ya que las bolas no se han\nelevado por encima de la película de aceite.\nGeneralmente, la impedancia de los cojinetes gobierna el nivel\nde tensión en el que los cojinetes empiezan a conducir. Esta\nimpedancia es una función no lineal de la carga de los cojinetes,\nla temperatura, la velocidad de rotación y el lubricante\nempleado, y la impedancia varía entre casos distintos.\n14\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Capítulo 3 - Cómo impedir los daños por\ncorrientes de los cojinetes de alta frecuencia\nTres\nenfoques\nExisten tres enfoques para afectar a las corrientes de los\ncojinetes de alta frecuencia: un sistema de cableado y\nconexión a tierra correcto; la interrupción de los bucles de\ncorriente de los cojinetes; y una amortiguación de la intensidad\nde modo común de alta frecuencia. Todos estos factores\ncontribuyen a reducir la tensión de los cojinetes a valores que\nno inducen pulsos de corriente de los cojinetes de alta\nfrecuencia en absoluto, o que amortiguan el valor de los pulsos\na un nivel que no tiene efecto alguno sobre la vida de los\ncojinetes. Deben tomarse distintas medidas para cada tipo de\ncorriente de los cojinetes de alta frecuencia.\nLa base del dominio de las corrientes de los cojinetes de alta\nfrecuencia radica en un sistema de cableado correcto. Las\nprácticas de conexión a tierra estándar para los equipos se\nhan diseñado principalmente para proporcionar una conexión\nde impedancia lo suficientemente baja para proteger al personal\ny al equipo contra fallos de la frecuencia del sistema. Un\nconvertidor de velocidad variable puede conectarse a tierra\neficazmente en las frecuencias elevadas de intensidad de modo\ncomún si la instalación sigue tres prácticas:\nCab_les a motor\nmultipolares\nEmplee solamente cables a motor simétricos multipolares. La\ndisposición del conector a tierra (protección a tierra, PE) en el\ncable a motor tiene que ser simétrica para evitar las corrientes\na frecuencia fundamental. La simetría del conductor PE se\nlogra con un conductor alrededor de todas las conexiones de\nfase de un cable que contiene una disposición simétrica de\ntres conexiones de fase y tres conductores de tierra.\nIPE\nPantalla\nConductor y pantalla\nFigura 10: Cable de motor recomendado con configuración de\nnúcleos simétrica.\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n15",
+      "tablas": [
+        [
+          [
+            "Tres enfoques",
+            "Existen tres enfoques para afectar a las corrientes de los cojinetes de alta frecuencia: un sistema de cableado y conexión a tierra correcto; la interrupción de los bucles de corriente de los cojinetes; y una amortiguación de la intensidad de modo común de alta frecuencia. Todos estos factores contribuyen a reducir la tensión de los cojinetes a valores que no inducen pulsos de corriente de los cojinetes de alta frecuencia en absoluto, o que amortiguan el valor de los pulsos a un nivel que no tiene efecto alguno sobre la vida de los cojinetes. Deben tomarse distintas medidas para cada tipo de corriente de los cojinetes de alta frecuencia."
+          ],
+          [
+            "",
+            "La base del dominio de las corrientes de los cojinetes de alta frecuencia radica en un sistema de cableado correcto. Las prácticas de conexión a tierra estándar para los equipos se han diseñado principalmente para proporcionar una conexión de impedancia lo suficientemente baja para proteger al personal y al equipo contra fallos de la frecuencia del sistema. Un convertidor de velocidad variable puede conectarse a tierra eficazmente en las frecuencias elevadas de intensidad de modo común si la instalación sigue tres prácticas:"
+          ],
+          [
+            "Cab_les a motor multipolares",
+            "Emplee solamente cables a motor simétricos multipolares. La disposición del conector a tierra (protección a tierra, PE) en el cable a motor tiene que ser simétrica para evitar las corrientes a frecuencia fundamental. La simetría del conductor PE se logra con un conductor alrededor de todas las conexiones de fase de un cable que contiene una disposición simétrica de tres conexiones de fase y tres conductores de tierra."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Cómo impedir los daños por corrientes de los cojinetes de alta frecuencia\nRuta de impedancia\ncorta\nDefina una ruta de impedancia corta y baja para que la\nintensidad de modo común vuelva al inversor. El mejor modo,\ny el más sencillo, es emplear cables a motor apantallados. El\napantallamiento debe ser continuo y de un buen material\nconductor, como cobre o aluminio, y las conexiones en ambos\nextremos tienen que efectuarse con una terminación de 360º.\nLas figuras 11a y 11b muestran terminaciones de 360° para\nprácticas de cableado europeas y americanas.\nO\n0\n0\nPantalla del cable\nTerminal PE\nAbrazadera\nEMC manguito\nPelar esta parte\ndel cable\n2777ZZZZZ\nPlaca base\nzzZZZZI\nPlaca de acceso\nFigure 11 a: Terminación de 360° correcta para práctica de\ncableado europea. El apantallamiento se conecta con un cable\nflexible lo más corto posible al terminal PE. Para efectuar una\nconexión de 360º de alta frecuencia entre el manguito EMC y el\napantallamiento del cable, el aislamiento exterior del cable se\nretira.\nCables Potencia (3)\nConexión a tierra\nde PE\nCables Tierra (3)\nConexión Tierra\nSuperficie\nMontaje\nFisación\nCuerpo Fijación Cable\nCable con capa\nconcentrica de hilos\nde aluminio continua y\nrecubrimiento de PVC\nFigura 11 b: Terminación de 360° correcta para práctica de\ncableado americana. Debería emplearse un pasatapas aislado de\nconexión a tierra en ambos extremos del cable a motor para\nconectar eficazmente los cables de tierra a la armadura o\nconducto.\n16\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Cómo impedir los daños por corrientes de los cojinetes de alta frecuencia\nConexiones de\nunión de alta\nfrecuencia\nSiga las\ninstrucciones\nespecíficas para el\nproducto\nSoluciones\nadicionales\nAñada conexiones de unión de alta frecuencia entre la\ninstalación y los puntos de referencia de tierra conocidos para\nigualar el potencial de los elementos afectados, empleando\ncintas trenzadas de cobre de 50 - 100 mm de anchura; los\nconductores planos proporcionarán una ruta de inductancia\nmenor que los cables redondos. Ello debe realizarse en los\npuntos en los que se sospecha que existe una discontinuidad\nentre el nivel de tierra del inversor y el del motor. Además, es\nposible que sea necesario igualar el potencial entre los\nbastidores del motor y de la maquinaria accionada para puentear\nla ruta de corriente a través de los cojinetes de la máquina\naccionada y del motor.\nFigura 12: Cinta de unión de AF.\nAunque los principios básicos de las instalaciones son los\nmismos, las prácticas de instalación idóneas para productos\ndiferentes pueden diferir. Por ello, es vital que siga atentamente\nlas instrucciones de instalación que se facilitan en los\nmanuales específicos para el producto.\nLa interrupción de los bucles de corriente de los cojinetes se\nlogra aislando la construcción de los cojinetes. La intensidad\nde modo común de alta frecuencia puede amortiguarse\nempleando filtros dedicados. Como fabricante de inversores y\nmotores, ABB puede ofrecer la solución más apropiada en\ncada caso así como instrucciones detalladas acerca de las\nprácticas correctas de conexión a tierra y cableado.\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n17",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Cómo impedir los daños por corrientes de los cojinetes de alta frecuencia\nMedición de\nlas corrientes\nde los\ncojinetes de\nalta frecuencia\nLa monitorización del estado de los cojinetes debe llevarse\na cabo con mediciones de vibración establecidas.\nEs imposible medir las corrientes de los cojinetes directamente\ndesde un motor estándar. Sin embargo, si se sospecha que\nexisten corrientes de los cojinetes de alta frecuencia, pueden\ntomarse mediciones de campo para verificar la existencia de\nbucles de corriente que se sospecha que existen. El equipo\nde medición debe tener un ancho de banda amplio (mínimo\n10kHz a 2 MHz) capaz de detectar valores de cresta de al\nmenos 150 a 200A y valores RMS de por lo menos 10mA. El\nfactor de cresta de las señales medidas no suele ser menor a\n20. La corriente puede circular en lugares poco usuales, como\nlos ejes en giro. Por ello, se requieren equipos y personal con\nexperiencia.\nABB emplea un sensor flexible de corriente especialmente\ndiseñado con núcleo de aire de tipo Rogowski con accesorios\ndedicados y posee una amplia experiencia con más de mil\nconvertidores medidos en distintas aplicaciones en todo el\nmundo.\nLos puntos de medición más importantes están dentro del\nmotor. Durante las mediciones, la velocidad del motor tiene\nque estar al menos a un 10% del valor nominal para que los\ncojinetes se levanten por encima de la película de aceite. Como\nejemplo, las mediciones básicas se muestran en la figura 13.\nLa figura 14 muestra ejemplos de ondas de tensión de corriente\nmedidas. Los inversores GTO se emplearon principalmente\nen los años 80 y en la actualidad se emplean los inversores\nIGBT. Observe las diferencias en la escala en los gráficos.\nB\nA\nFigura 13: Mediciones básicas: A) Intensidad de circulación\nmedida con un jumper; B) Corriente de conexión a tierra del eje.\n18\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Cómo impedir los daños por corrientes de los cojinetes de alta frecuencia\nA) Corriente de circulación\nInversor GTO, 5us/div, 2A/div\nInversor IGBT, 5us/div, 2A/div\nB) Corriente de conexión a tierra del eje\nM\nInversor GTO, 2us/div, 10A/div\nInversor IGBT, 5us/div, 500mA/div\nFigura 14: Ejemplos de ondas de tensión de corriente en los\npuntos de medición mostrados en la figura 13.\nDeje que los\nespecialistas\nefectúen las\nmediciones\nDado que el equipo de medición adecuado no está disponible\nde forma comercial en el mercado y se requiere una experiencia\nespecializada para llevar a cabo las mediciones e interpretar\nlos resultados, se aconseja que las mediciones de la corriente\nde los cojinetes sean realizadas solamente por personal\nespecializado.\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n19",
+      "tablas": [
+        [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "M",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Capítulo 4 - Referencias\n1. Conexión a tierra y cableado del sistema de accionamiento,\nABB Industry Oy, 3AFY 61201998 R0125\n2. Una nueva razón para los daños por corriente de los\ncojinetes en accionamientos de CA de velocidad variable\npor J. Ollila, T. Hammar, J. Iisakkala, H. Tuusa. EPE 97, 7ª\nConferencia europea sobre la electrónica y aplicaciones\nde potencia, 8-10 septiembre 1997. Trondheim, Noruega.\n3. Acerca de las corrientes de los cojinetes en los\naccionamientos de CA de velocidad variable y potencia\nmedia por J. Ollila, T. Hammar, J. Iisakkala, H. Tuusa.\nprocedimientos de la IEEE IEDMC en Milwaukee, mayo\nde 1997.\n4. Minimización de las corrientes eléctricas de los cojinetes\nen sistemas de accionamiento de velocidad ajustable\npor Patrick Link. Conferencia sobre pulpa y papel IEEE\nIAS en Portland, ME, EEUU. Junio de 1998.\n5. Instrucción sobre la medición de corrientes de los cojinetes\ncon una espira Rogowski, ABB Industry Oy, 3BFA\n61363602.EN.\n6. Laakerivirta ja sen minimoiminen säädettyjen\nvaihtovirtakäyttöjen moottoreissa,\nI. Erkkila, Automaatio 1999, 16.9.1999, Helsinki, Finlandia.\n(en finlandés).\n7. Corrientes de los cojinetes de alta frecuencia en motores\nasíncronos de baja tensión,\nABB Motors Oy y ABB Industry Oy, 00018323.doc.\n8. Corrientes de los cojinetes en accionamientos de CA\npor ABB Industry Oy y ABB Motors Oy. Conjunto de\nencabezados en la base de datos LN \"Intranet de\ndirectorios de documentos\" en ABB_FI01_SPK08/FI01/\nABB\n9. La guía del motor\nGB 98-12.\nVéanse también los manuales de instalación específicos para\nlos productos.\n20\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Capítulo 5 - Índice\nA\ncráter EDM 6\nABB 17, 18\nD\nAccionamiento de CA 6, 7, 8\ndistribución de tensión interna 7\nacoplamiento metálico 10\ndominio de la corriente de alta\nanillos guía 6, 14\nfrecuencia 15\nanillos guía de los cojinetes 5\nE\napantallamiento 16\neje 7, 12, 13\napantallamiento del cable 16\neje del motor 5, 7, 10\napantallamiento eléctrico 7\nestator 7, 11, 13\narmadura 16\nextremos del eje 12\nB\nF\nbastidor 17\nfactor de cresta 18\nbastidor del estator 7, 11, 12\nfiltrado de la salida del\nbastidor del inversor 5, 10\ninversor 5\nbastidor del motor 7, 9, 10, 11\nfiltros dedicados 17\nbobinado 7, 8, 9, 10, 11, 13\nflujo de alta frecuencia 7\nbobinados del estator 11, 13\nflujo magnético 12\nbobinados del motor 10\nfrecuencia de conmutación del\nbola 14\ninversor 8\nBucle de modo común 9, 13\nfrecuencias de conmutación\nbucles de corriente de los\nelevadas 5\ncojinetes 15, 17\nC\nfuente de alimentación del\ninversor 9\ncable 15\nfuente de alimentación\ncable a motor 15, 16\ntrifásica 7, 8\ncable de modo común 10\nI\ncables a motor simétricos 5, 15\nintensidad de modo común 8, 9,\ncaída de tensión 10\n10, 11, 12, 13, 15, 16, 17\ncaja de engranajes 6, 10, 12\ninversor 7, 8, 9, 10, 13, 16, 17\ncapacitancia de fuga 7, 8, 10,\ninversores GTO 18\n11, 13, 14\ninversores IGBT 18\ncapacitancia del cable 10\nL\ncintas trenzadas 17\nlaminaciones del estator 12\ncircuito de modo común 7\nM\ncircuito del rotor 12\nmáquina accionada 7, 17\ncojinetes 5, 6, 7, 12, 13, 14\nmaquinado de descarga\ncojinetes del motor 5\neléctrica (EDM) 6\nconducto 16\nmaquinaria accionada 7, 10, 12\nconductores planos 17\nmediciones de campo 18\nconexiones de unión 17\nmotor 6, 7, 9, 10, 11, 12, 13, 15,\ncontrolador del convertidor 6\n17, 18\nconvertidor de velocidad\nmotores eléctricos 5\nvariable 5, 13, 15\nP\ncorriente de circulación 12\npelícula de aceite 7, 18\ncorriente de circulación de alta\nprimario 12\nfrecuencia 12\npulsos de corriente 5\ncorrientes de fuga 5\npulsos de tensión 5\ncorrientes de los cojinetes 5, 6,\nPWM 7,9\nR\n7, 12, 15, 18, 19\ncorrientes de los cojinetes de\nranuras de los cojinetes 6\nalta frecuencia 6, 7\nrotor 12, 13\ncorrientes de los cojinetes de\nrutas de corriente de los\nbaja frecuencia 6\ncojinetes 5\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n21",
+      "tablas": [
+        [
+          [
+            "A",
+            "cráter EDM 6"
+          ],
+          [
+            "ABB 17, 18",
+            "D"
+          ],
+          [
+            "Accionamiento de CA 6, 7, 8",
+            "distribución de tensión interna 7"
+          ],
+          [
+            "acoplamiento metálico 10",
+            "dominio de la corriente de alta"
+          ],
+          [
+            "anillos guía 6, 14",
+            "frecuencia 15"
+          ],
+          [
+            "anillos guía de los cojinetes 5",
+            "E"
+          ],
+          [
+            "apantallamiento 16",
+            "eje 7, 12, 13"
+          ],
+          [
+            "apantallamiento del cable 16",
+            "eje del motor 5, 7, 10"
+          ],
+          [
+            "apantallamiento eléctrico 7",
+            "estator 7, 11, 13"
+          ],
+          [
+            "armadura 16",
+            "extremos del eje 12"
+          ],
+          [
+            "B",
+            "F"
+          ],
+          [
+            "bastidor 17",
+            "factor de cresta 18"
+          ],
+          [
+            "bastidor del estator 7, 11, 12",
+            "filtrado de la salida del"
+          ],
+          [
+            "bastidor del inversor 5, 10",
+            "inversor 5"
+          ],
+          [
+            "bastidor del motor 7, 9, 10, 11",
+            "filtros dedicados 17"
+          ],
+          [
+            "bobinado 7, 8, 9, 10, 11, 13",
+            "flujo de alta frecuencia 7"
+          ],
+          [
+            "bobinados del estator 11, 13",
+            "flujo magnético 12"
+          ],
+          [
+            "bobinados del motor 10",
+            "frecuencia de conmutación del"
+          ],
+          [
+            "bola 14",
+            "inversor 8"
+          ],
+          [
+            "Bucle de modo común 9, 13",
+            "frecuencias de conmutación"
+          ],
+          [
+            "bucles de corriente de los",
+            "elevadas 5"
+          ],
+          [
+            "cojinetes 15, 17 C",
+            "fuente de alimentación del inversor 9"
+          ],
+          [
+            "cable 15",
+            "fuente de alimentación"
+          ],
+          [
+            "cable a motor 15, 16",
+            "trifásica 7, 8"
+          ],
+          [
+            "cable de modo común 10",
+            "I"
+          ],
+          [
+            "cables a motor simétricos 5, 15",
+            "intensidad de modo común 8, 9,"
+          ],
+          [
+            "caída de tensión 10",
+            "10, 11, 12, 13, 15, 16, 17"
+          ],
+          [
+            "caja de engranajes 6, 10, 12",
+            "inversor 7, 8, 9, 10, 13, 16, 17"
+          ],
+          [
+            "capacitancia de fuga 7, 8, 10,",
+            "inversores GTO 18"
+          ],
+          [
+            "11, 13, 14",
+            "inversores IGBT 18"
+          ],
+          [
+            "capacitancia del cable 10",
+            "L"
+          ],
+          [
+            "cintas trenzadas 17",
+            "laminaciones del estator 12"
+          ],
+          [
+            "circuito de modo común 7",
+            "M"
+          ],
+          [
+            "circuito del rotor 12",
+            "máquina accionada 7, 17"
+          ],
+          [
+            "cojinetes 5, 6, 7, 12, 13, 14",
+            "maquinado de descarga"
+          ],
+          [
+            "cojinetes del motor 5",
+            "eléctrica (EDM) 6"
+          ],
+          [
+            "conducto 16",
+            "maquinaria accionada 7, 10, 12"
+          ],
+          [
+            "conductores planos 17",
+            "mediciones de campo 18"
+          ],
+          [
+            "conexiones de unión 17",
+            "motor 6, 7, 9, 10, 11, 12, 13, 15,"
+          ],
+          [
+            "controlador del convertidor 6",
+            "17, 18"
+          ],
+          [
+            "convertidor de velocidad",
+            "motores eléctricos 5"
+          ],
+          [
+            "variable 5, 13, 15",
+            "P"
+          ],
+          [
+            "corriente de circulación 12",
+            "película de aceite 7, 18"
+          ],
+          [
+            "corriente de circulación de alta",
+            "primario 12"
+          ],
+          [
+            "frecuencia 12",
+            "pulsos de corriente 5"
+          ],
+          [
+            "corrientes de fuga 5",
+            "pulsos de tensión 5"
+          ],
+          [
+            "corrientes de los cojinetes 5, 6,",
+            "PWM 7,9 R"
+          ],
+          [
+            "7, 12, 15, 18, 19"
+          ],
+          [
+            "corrientes de los cojinetes de",
+            "ranuras de los cojinetes 6"
+          ],
+          [
+            "alta frecuencia 6, 7",
+            "rotor 12, 13"
+          ],
+          [
+            "corrientes de los cojinetes de",
+            "rutas de corriente de los"
+          ],
+          [
+            "baja frecuencia 6",
+            "cojinetes 5"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "S\nsecundario 12\nsensor de corriente tipo\nRogowski 18\nT\ntensión axial 12\ntensión de los cojinetes 14\ntensión de modo común 7, 8, 10\ntensión de punto neutro 8\nTensión de los cojinetes de alta\nfrecuencia 7\ntensión del bus de CC 8\ntensión del eje axial 12, 13\ntensión del eje inducida 14\ntensiones del eje 7\nTerminación de 360° 16\nTiempo medio entre fallos\n(MTBF) 6\ntransformador 12\nTransistores bipolares de puerta\naislada (IGBT) 6\nV\nvías de conexión a tierra 5\n22\nGuía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Guía técnica Nº 5 - Corrientes de los cojinetes en sistemas de accionamiento de CA modernos\n23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "LABEL\n014\nENVIRONMENTAL\nPrinted matter\n441\nCopyright GABB Automation Group Ltd, 2000 3BFE 64312413 R0106 Especificaciones sujetas a cambios sin notificación previa\nES 6.3.2000\nABB\nABB Sistemas Industriales, S.A.\nDivisión Accionamientos\nPolígono Industrial Suroeste, s/n\n08192 Sant Quirze del Vallès\nBarcelona\nTel:\n93 728 87 00\nFax:\n93 728 87 43\nInternet: http://www.abb.com/es",
+      "tablas": []
+    }
+  ]
+}

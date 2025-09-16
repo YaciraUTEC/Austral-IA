@@ -1,0 +1,1422 @@
+{
+  "archivo": "ABB Guía Técnica 6 - Armónicos",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Guía técnica n° 6\nGuía de los armónicos con accionamientos de CA\nABB",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "2\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Contenido\n1.\nIntroducción\n5\n2.\nFundamentos de los fenómenos por armónicos\n6\n3.\nFuentes de distorsión por armónicos y efectos\n8\n4.\nCálculo de la distorsión por armónicos\nmediante el software DriveSize\n9\n4.1 Diagrama de circuitos para el ejemplo de cálculo\n9\n4.2\nDatos de entrada para la carga del motor\n9\n4.3\nSelección del motor\n10\n4.4 Selección del inversor\n10\n4.5\nDatos de la unidad de alimentación del inversor\n10\n4.6\nEntrada de datos de red y transformador\n10\n4.7\nCorriente y tension armónicas calculadas\n11\n4.8\nCorrientes armónicas calculadas en formato\ngráfico\n11\n4.9\nParte del informe impreso\n11\n5.\nNormas para los límites de armónicos\n12\n5.1\nEN61800-3 (IEC 1800-3) Sistemas de accionamiento\nde potencia eléctricos de velocidad ajustable\n12\n5.2\nIEC1000-2-2,\nCompatibilidad electromagnética (EMC)\n13\n5.3\nIEC1000-2-4,\nCompatibilidad electromagnética (EMC)\n13\n5.4\nIEC1000-3-2,\nCompatibilidad electromagnética (EMC)\n13\n5.5\nIEC1000-3-4,\nCompatibilidad electromagnética (EMC)\n13\n5.6\nIEEE 519, Prácticas recomendadas y requisitos\nIEEE para el control de armónicos en sistemas de\npotencia eléctrica\n14\n6.\nEvaluación de armónicos\n16\n7.\nReducción de armónicos con modificaciones\nestructurales en el sistema de accionamiento\nde CA\n17\n7.1\nFactores en el accionamiento de CA que tienen\nefecto en los armónicos\n17\n7.2\nTabla: Lista de los distintos factores y sus efectos\n18\n7.3\nEmpleo de un rectificador de diodos de 6 pulsos .\n18\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n3",
+      "tablas": [
+        [
+          [
+            "",
+            "1.",
+            "Introducción",
+            "5"
+          ],
+          [
+            "",
+            "2.",
+            "Fundamentos de los fenómenos por armónicos",
+            "6"
+          ],
+          [
+            "",
+            "3.",
+            "Fuentes de distorsión por armónicos y efectos",
+            "8"
+          ],
+          [
+            "4.",
+            "Cálculo de la distorsión por armónicos",
+            ""
+          ],
+          [
+            "mediante el software DriveSize",
+            "9"
+          ],
+          [
+            "4.1",
+            "Diagrama de circuitos para el ejemplo de cálculo",
+            "9"
+          ],
+          [
+            "4.2",
+            "Datos de entrada para la carga del motor",
+            "9"
+          ],
+          [
+            "4.3",
+            "Selección del motor",
+            "10"
+          ],
+          [
+            "4.4",
+            "Selección del inversor",
+            "10"
+          ],
+          [
+            "4.5",
+            "Datos de la unidad de alimentación del inversor",
+            "10"
+          ],
+          [
+            "4.6",
+            "Entrada de datos de red y transformador",
+            "10"
+          ],
+          [
+            "4.7",
+            "Corriente y tension armónicas calculadas",
+            "11"
+          ],
+          [
+            "4.8",
+            "Corrientes armónicas calculadas en formato gráfico",
+            "11"
+          ],
+          [
+            "4.9",
+            "Parte del informe impreso",
+            "11"
+          ],
+          [
+            "5.",
+            "Normas para los límites de armónicos",
+            "12"
+          ],
+          [
+            "5.1",
+            "EN61800-3 (IEC 1800-3) Sistemas de accionamiento de potencia eléctricos de velocidad ajustable",
+            "12"
+          ],
+          [
+            "5.2",
+            "IEC1000-2-2, Compatibilidad electromagnética (EMC)",
+            "13"
+          ],
+          [
+            "5.3",
+            "IEC1000-2-4,",
+            ""
+          ],
+          [
+            "Compatibilidad electromagnética (EMC)",
+            "13"
+          ],
+          [
+            "5.4",
+            "IEC1000-3-2, Compatibilidad electromagnética (EMC)",
+            ""
+          ],
+          [
+            "13"
+          ],
+          [
+            "5.5",
+            "IEC1000-3-4, Compatibilidad electromagnética (EMC)",
+            ""
+          ],
+          [
+            "13"
+          ],
+          [
+            "",
+            "5.6",
+            "IEEE 519, Prácticas recomendadas y requisitos IEEE para el control de armónicos en sistemas de",
+            ""
+          ],
+          [
+            "potencia eléctrica",
+            "14"
+          ],
+          [
+            "6.",
+            "Evaluación de armónicos",
+            "16"
+          ],
+          [
+            "7.",
+            "Reducción de armónicos con modificaciones estructurales en el sistema de accionamiento de CA",
+            "17"
+          ],
+          [
+            "",
+            "7.1",
+            "Factores en el accionamiento de CA que tienen efecto en los armónicos",
+            "17"
+          ],
+          [
+            "7.2",
+            "Tabla: Lista de los distintos factores y sus efectos",
+            "18"
+          ],
+          [
+            "7.3",
+            "Empleo de un rectificador de diodos de 6 pulsos .",
+            "18"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "7.4\nEmpleo de un rectificador de diodos de 12 pulsos\no 24 pulsos\n19\n7.5\nEmpleo de un rectificador de tiristores controlado\npor fase\n19\n7.6\nEmpleo de un puente de IGBT\n20\n7.7\nEmpleo de un inductor de CA o CC mayor\n21\n8.\nOtros métodos para la reducción de\narmónicos\n24\n8.1\nFiltro pasivo de una sola rama ajustada\n24\n8.2\nFiltro pasivo de múltiples ramas ajustadas\n24\n8.3\nFiltro activo externo\n25\n9.\nResumen de la atenuación de armónicos\n26\n9.1\nRectificador de 6 pulsos sin inductor\n26\n9.2\nRectificador de 6 pulsos con inductor\n26\n9.3\nRectificador de 12 pulsos con transformador\npolycon\n26\n9.4\nRectificador de 12 pulsos con transformador de\nbobinado doble\n26\n9.5\nRectificador de 24 pulsos\n26\n9.6\nRectificador de IGBT activo\n27\n10. Definiciones\n28\n11. Índice\n30\n4\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA",
+      "tablas": [
+        [
+          [
+            "7.4",
+            "Empleo de un rectificador de diodos de 12 pulsos o 24 pulsos",
+            "19"
+          ],
+          [
+            "7.5",
+            "Empleo de un rectificador de tiristores controlado por fase",
+            "19"
+          ],
+          [
+            "7.6",
+            "Empleo de un puente de IGBT",
+            "20"
+          ],
+          [
+            "7.7",
+            "Empleo de un inductor de CA o CC mayor",
+            "21"
+          ],
+          [
+            "8.",
+            "Otros métodos para la reducción de armónicos",
+            "24"
+          ],
+          [
+            "8.1",
+            "Filtro pasivo de una sola rama ajustada",
+            "24"
+          ],
+          [
+            "8.2",
+            "Filtro pasivo de múltiples ramas ajustadas",
+            "24"
+          ],
+          [
+            "8.3",
+            "Filtro activo externo",
+            "25"
+          ],
+          [
+            "9.",
+            "Resumen de la atenuación de armónicos",
+            "26"
+          ],
+          [
+            "9.1",
+            "Rectificador de 6 pulsos sin inductor",
+            "26"
+          ],
+          [
+            "9.2",
+            "Rectificador de 6 pulsos con inductor",
+            "26"
+          ],
+          [
+            "9.3",
+            "Rectificador de 12 pulsos con transformador polycon",
+            "26"
+          ],
+          [
+            "9.4",
+            "Rectificador de 12 pulsos con transformador de bobinado doble",
+            "26"
+          ],
+          [
+            "9.5",
+            "Rectificador de 24 pulsos",
+            "26"
+          ],
+          [
+            "9.6",
+            "Rectificador de IGBT activo",
+            "27"
+          ],
+          [
+            "10.",
+            "Definiciones",
+            "28"
+          ],
+          [
+            "11.",
+            "Índice",
+            "30"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Generalidades\nEsta guía constituye una adición a la serie de guías técnicas\nde ABB, y en ella se describe la distorsión provocada por\nlos armónicos, sus fuentes y sus efectos, así como el cálculo\nde la distorsión y su evaluación. Se ha prestado una especial\natención a los métodos relativos a la reducción de armónicos\nen los accionamientos de CA.\nCapítulo 1 - Introducción\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n5",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Capítulo 2 - Fundamentos de los\nfenómenos por armónicos\nLas intensidades y tensiones de armónicos se crean a partir\nde cargas no lineales conectadas al sistema de distribución\nde potencia. La distorsión por armónicos es una forma de\ncontaminación en la planta eléctrica que puede provocar\nproblemas si la suma de las intensidades de armónicos supera\nciertos límites.\nTodos los convertidores electrónicos de potencia empleados\nen distintos tipos de sistemas electrónicos pueden aumentar\nlas perturbaciones por armónicos introduciendo intensidades\nde armónicos directamente hacia la red. La Figura 2.1 muestra\ncómo los armónicos en intensidad (ih) en la intensidad de\nentrada (is) de un convertidor electrónico de potencia afectan\na la tensión de alimentación (ut).\nis(t) = i1 (t) + 2 ih(t)\nRs\nLs\nCarga del\nconvertidor\nu(t) Punto de acoplam.\ncomún (PCC)\nTransformador de red\nOtras\ncargas\nFigura 2.1 Planta con carga del convertidor, transformador de red y\notras cargas\nLa intensidad de red de un rectificador puede calcularse a\npartir de la intensidad de salida directa mediante la fórmula\nsiguiente.\n2\n* a, donde\nI1 = la intensidad de red fundamental y\nI a = salida de intensidad directa del rectificador.\n6\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Fundamentos de los fenómenos por armónicos\nEn un caso teórico en el que la intensidad de salida puede\nestimarse como intensidad de cc limpia, las frecuencias de\nintensidad de armónicos de un rectificador trifásico de 6\npulsos es n veces la frecuencia fundamental (50 ó 60 Hz).\nLos números de orden n se calculan con la fórmula siguiente:\nn = 6k + 1, donde k = 1,2,3, ...\nLos valores eficaces de los componentes armónicos son:\nn\ny los componentes armónicos son los que se muestran en\nla Figura 2.2.\n100\n100\n90\n80\n70\nIntensidad de\n60\narmónicos (%) 50\n40\n30\n20\n10\n0\n1\n20\n14\n5\n7\n11\n9\n8\n13\n6\n5\n4\n17\n19\n4\n23\n25\nOrden de los componentes armónicos\nFigura 2.2 Contenido de armónicos en la intensidad rectangular de\nun rectificador de 6 pulsos\nEl principio del modo en el que los componentes armónicos\nse suman a la intensidad fundamental se muestran en la Figura\n2.3, en la que solamente se muestra el quinto armónico.\n1,5 T\n1 +\n0,5 +\n..\n10\n0 -\n5º\n1°+5°\n-0,5 +\n-1 +\n-1,5 -\nFigura 2.3 La intensidad total como la suma de la fundamental y el\nquinto armónico\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Capítulo 3 - Fuentes de distorsión por\narmónicos y efectos\nLas cargas no lineales comunes incluyen los arrancadores\nde motores, los convertidores de velocidad variable, los\nordenadores y otros dispositivos electrónicos, la iluminación\nelectrónica, las alimentaciones para soldadura y las fuentes\nde alimentación ininterrumpida.\nLos efectos de los armónicos pueden consistir en el\nsobrecalentamiento de los transformadores, cables,\nmotores, generadores y condensadores conectados a la\nmisma fuente de alimentación que los dispositivos que\ngeneran los armónicos. Es posible que las pantallas\nelectrónicas y la iluminación experimenten fluctuaciones, que\nse disparen los interruptores, que fallen los ordenadores y\nque las mediciones arrojen valores falsos.\nSi se desconoce la causa de los síntomas anteriores,\nentonces se justifica la investigación de la distorsión por\narmónicos en la distribución eléctrica de la planta. Es\nprobable que los efectos se manifiesten en la planta del\ncliente antes que en el sistema de utilidad. Esta Guía Técnica\nse ha publicado para ayudar a los clientes a comprender\nlos posibles problemas provocados por los armónicos y a\nasegurarse de que los niveles de distorsión por armónicos\nno son excesivos.\n8\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Capítulo 4 - Cálculo de la distorsión por\narmónicos mediante el software DriveSize\nLas corrientes armónicas provocan una distorsión de la\ntensión de red. En principio, los armónicos de la tensión\npueden calcularse en cualquier punto de la red si se conocen\nlas corrientes armónicas y la impedancia de fuente\ncorrespondiente. Los diagramas de circuitos en la\nFigura 4.1. muestran la red que alimenta al convertidor y las\ndemás partes esenciales de la instalación. El software ABB\nDriveSize se emplea en el ejemplo de cálculo.\n4.1 Diagrama\nde circuitos\npara el ejemplo\nde cálculo\nAlimentación\nSk = 150 MVA\nU = 22 kV\nTransformador:\nS = 400 kVA\nU1 = 22 kV\nU2 = 415 V\nZ = 4,5 %\nS'k\nXk\nX\nCable:\nLongitud = 60 m\nR = 0,007 m2/m\nXʻk\nI\nMotor:\nP = 100 KW\nM\nIN = 200 A\n3~\nFigura 4.1. Red que alimenta a un convertidor de frecuencia en la parte\ncentral y su diagrama equivalente a la derecha. Los datos del\nejemplo se encuentran a la izquierda.\n4.2 Datos de\nentrada para la\ncarga del motor\nCarga motor\nTipo carga\nPar/potencia const.\nTipo sobrec.\nUna sobrecarga\nmín\nbase\nmáx\nVeloc. [rpm]\n0\n1450\n1500\nPot. [KW]\n0\n100\n100\nSobrec. [%]\n100\n100\nTpo. sobrec. [s]\n60\ncada [s]\n600\nFigura 4.2. Los datos de carga del motor más importantes para el\ncálculo de armónicos son la potencia base en kW.\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n9",
+      "tablas": [
+        [
+          [
+            "mín base",
+            "máx"
+          ],
+          [
+            "Veloc. [rpm]",
+            "0",
+            "1450",
+            "1500"
+          ],
+          [
+            "Pot. [KW]",
+            "0",
+            "100",
+            "100"
+          ],
+          [
+            "Sobrec. [%]",
+            "",
+            "",
+            "100",
+            "100"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Ejemplo de cálculo de distorsión por armónicos\n4.3 Selección\ndel motor\nDatos motor selecc.\nM2BA 315 SMC 6\nSelección\nDriveSize\nTensión MV\n415\nConexión\nD\nFrecuencia [Hz]\n50\nPotencia [KW]\n110\nPolos\n6\nVelocidad [rpm]\n992\nVel. máx. mec. [rpm]\n2300\nIntensidad [A]\n197\nPar [Nm]\n1060\nT máx/Tn\n3,2\nFactor de potencia\n0,82\nRendimiento [%]\n95,6\nClase aislamiento\nF\nFigura 4.3. El software realiza la selección del motor para la carga\ndefinida. Si es necesario, hay una opción disponible para\nseleccionar un motor distinto del seleccionado por DriveSize.\n4.4 Selección\ndel inversor\nDatos inversor selecc.\nACS607-0140-3\nSelección\nUsuario\nMétodo de selecc.\nIntens. (normal)\nTensión [V]\n400\nPot. convert. [KVA]\n140\nPn [KW]\n110\nIcont normal [A]\n216\nImáx normal [A]\n238\nPtp [kW]\n90\nIcont Trab. pes. [A]\n178\nImáx Trab. pes. [A]\n267\nPulso\n6\nTipo bastidor\nR8\nP&F 12Ncuad [A]\n260\n4.5 Datos de la\nunidad de\nalimentación\ndel inversor\nFigura 4.4. La selección del inversor se basa en la anterior selección\ndel motor y, en este caso, el usuario también tiene la opción de seleccionar\nel inversor manualmente.\nDatos udad. alim.\nNº pulsos\n6\nLv [uH]\n110\nCcc [mF]\n4,95\nUcc [V]\n560\nIcc [A]\n191\nFigura 4.5. Los datos de la unidad de alimentación los define\nDriveSize según el tipo de inversor seleccionado.\n4.6 Entrada de\ndatos de red y\ntransformador\nDatos de red y transformador\n22000\nTensión secundario [V] 415\nTensión primario [V]\nFrecuencia [Hz]\n50\nSk red [MVA]\n150\nSn transform. [kVA]\n400\nPk transform. [KW]\n3,0\nZk transform. [%]\n3,8\nTipo de cable alim.\n@ Cable\ndesconocido\nCantidad de cables\n3\nLongitud cable [m]\n60\nEmbarrado\nImpedancia [u[2]\n70\nFigura 4.6. Esta es la entrada de datos de red y transformador. Para\nlos transformadores ABB estándar, los datos se muestran de forma\nautomática.\n10\nGuía técnica nº 6 - Guia de los armónicos con accionamientos de CA",
+      "tablas": [
+        [
+          [
+            "Datos motor selecc."
+          ],
+          [
+            "",
+            "M2BA 315 SMC 6"
+          ],
+          [
+            "",
+            "Selección",
+            "DriveSize"
+          ],
+          [
+            "",
+            "Tensión MV",
+            "415"
+          ],
+          [
+            "Conexión",
+            "D"
+          ],
+          [
+            "",
+            "Frecuencia [Hz]",
+            "50"
+          ],
+          [
+            "",
+            "Potencia [KW]",
+            "110"
+          ],
+          [
+            "",
+            "Polos",
+            "6"
+          ],
+          [
+            "",
+            "Velocidad [rpm]",
+            "992"
+          ],
+          [
+            "Vel. máx. mec. [rpm]",
+            "2300"
+          ],
+          [
+            "Intensidad [A]",
+            "197"
+          ],
+          [
+            "",
+            "Par [Nm]",
+            "1060"
+          ],
+          [
+            "",
+            "T máx/Tn",
+            "3,2"
+          ],
+          [
+            "Factor de potencia",
+            "0,82"
+          ],
+          [
+            "Rendimiento [%]",
+            "95,6"
+          ],
+          [
+            "Clase aislamiento",
+            "F"
+          ]
+        ],
+        [
+          [
+            "Datos inversor selecc. ACS607-0140-3"
+          ],
+          [
+            "Selección",
+            "Usuario"
+          ],
+          [
+            "Método de selecc.",
+            "Intens. (normal)"
+          ],
+          [
+            "Tensión [V]",
+            "400"
+          ],
+          [
+            "Pot. convert. [KVA]",
+            "140"
+          ],
+          [
+            "Pn [KW]",
+            "110"
+          ],
+          [
+            "Icont normal [A]",
+            "216"
+          ],
+          [
+            "Imáx normal [A]",
+            "238"
+          ],
+          [
+            "Ptp [kW]",
+            "90"
+          ],
+          [
+            "Icont Trab. pes. [A]",
+            "178"
+          ],
+          [
+            "Imáx Trab. pes. [A]",
+            "267"
+          ],
+          [
+            "Pulso",
+            "6"
+          ],
+          [
+            "Tipo bastidor",
+            "R8"
+          ],
+          [
+            "P&F 12Ncuad [A]",
+            "260"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Ejemplo de cálculo de distorsión por armónicos\n4.7 Corriente y\ntensión\narmónicas\ncalculadas\n4.8 Corrientes\narmónicas\ncalculadas en\nformato gráfico\nDTH\nIntens.\nTensión\nResult.\n47,1%\n0,2%\nCálc IEEE 0,2%/\n0,2%/\nLím. IEEE 15,0%\n0,5%\nDatos\nParte del primario\nParte del secundario\nModo vista\nTabla\nGráfico\nn\nf [Hz]\nIntens. [A]\nIn/I1\nTensión [V]\n1\n50\n2,8\n100,0 %\n21996,6\n5\n250\n1,2\n41,2 %\n32,9\n7\n350\n0,6\n19,5 %\n21,7\n11\n550\n0,2\n8,6 %\n15,1\n13\n650\n0,2\n5,6 %\n11,7\n17\n850\n0,1\n4,2 %\n11,3\n19\n950\n0,1\n2,7 %\n8,1\n23\n1150\n0,1\n2,3 %\n8,2\n25\n1250\n0,0\n1,4 %\n5,5\n29\n1450\n0,0\n1,2 %\n5,3\n31\n1550\n0,0\n0,8 %\n3,7\n35 1750\n0,0\n0,5 %\n3,0\n37 1850\n0,0\n0,6 %\n3,3\nFigura 4.7. Los armónicos se calculan efectuando una transformación\nde Fourier discreta a la intensidad de fase simulada de la unidad de\nentrada.\nSe utilizan varias clases de modelos de circuito, uno para\nSingleDrive con inductores de CA y uno para la alimentación por\ndiodos y tiristores con inductores de CC.\nTambién existen modelos para conexiones de 6, 12 y 24 pulsos.\n50\n40\n30\n[%]\n20\n10\n0\n250\n350\n550\n650\n850\n950\n1150\n1450\n1250\n1550\n1750\n1850\nFrecuencia [Hz]\nFigura 4.8. Los resultados de los cálculos pueden visualizarse en\nformato tabular, como se muestra en este ejemplo, o como un gráfico.\n4.9 Parte del\ninforme\nimpreso\nABB\nComprobación de red\nACS607-0140-3\nDatos de red y transformador\nDatos udad. aliment.\nTensión normal [V]\n22000 (parte primario)\nNº pulsos\n6\nFrecuencia [Hz]\n50\nLv [uH]\n110\nSk red [MVA]\n150\nCcc [mF]\n4,95\nSn transform. [kVA]\n400\nUcc [V]\n560\nPk transform. [KW]\n3,0\nIcc [A]\n191\nZk transform. [%]\n3,8\nTipo de cable alim.\nCable\nCantidad de cables\n3\nLongitud de cable\n60\nResultado\nLímites IEEE 519\ncálc/límite\nCosfii\n0,999\nIntens. DTH\n47,1 % Intens. DTH\n0,2 %/15,0 %\nFactor potencia tot.\n0,90\nTensión DTH\n0,2 % Tensión DTH\n0,2 %/5,0 %\nUnmax mot.\n98 %\nFigura 4.9. Los datos de entrada y los resultados calculados\npueden imprimirse como un informe, que aquí se muestra en parte.\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n11",
+      "tablas": [
+        [
+          [
+            "n",
+            "f [Hz]",
+            "Intens. [A]",
+            "In/I1",
+            "Tensión [V]"
+          ],
+          [
+            "1",
+            "50",
+            "2,8",
+            "100,0 %",
+            "21996,6"
+          ],
+          [
+            "5",
+            "250",
+            "1,2",
+            "41,2 %",
+            "32,9"
+          ],
+          [
+            "7",
+            "350",
+            "0,6",
+            "19,5 %",
+            "21,7"
+          ],
+          [
+            "11",
+            "550",
+            "0,2",
+            "8,6 %",
+            "15,1"
+          ],
+          [
+            "13",
+            "650",
+            "0,2",
+            "5,6 %",
+            "11,7"
+          ],
+          [
+            "17",
+            "850",
+            "0,1",
+            "4,2 %",
+            "11,3"
+          ],
+          [
+            "19",
+            "950",
+            "0,1",
+            "2,7 %",
+            "8,1"
+          ],
+          [
+            "23",
+            "1150",
+            "0,1",
+            "2,3 %",
+            "8,2"
+          ],
+          [
+            "25",
+            "1250",
+            "0,0",
+            "1,4 %",
+            "5,5"
+          ],
+          [
+            "29",
+            "1450",
+            "0,0",
+            "1,2 %",
+            "5,3"
+          ],
+          [
+            "31",
+            "1550",
+            "0,0",
+            "0,8 %",
+            "3,7"
+          ],
+          [
+            "35",
+            "1750",
+            "0,0",
+            "0,5 %",
+            "3,0"
+          ],
+          [
+            "37",
+            "1850",
+            "0,0",
+            "0,6 %",
+            "3,3"
+          ]
+        ],
+        [
+          [
+            "ABB",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Comprobación de red",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "ACS607-0140-3"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Datos de red y transformador",
+            "",
+            "Datos udad. aliment.",
+            "",
+            ""
+          ],
+          [
+            "Tensión normal [V]",
+            "22000 (parte primario)",
+            "Nº pulsos",
+            "",
+            "6",
+            ""
+          ],
+          [
+            "Frecuencia [Hz]",
+            "50",
+            "",
+            "Lv [uH]",
+            "",
+            "110",
+            ""
+          ],
+          [
+            "Sk red [MVA]",
+            "150",
+            "",
+            "Ccc [mF]",
+            "",
+            "4,95",
+            ""
+          ],
+          [
+            "Sn transform. [kVA]",
+            "400",
+            "",
+            "Ucc [V]",
+            "",
+            "560",
+            ""
+          ],
+          [
+            "Pk transform. [KW]",
+            "3,0",
+            "",
+            "Icc [A]",
+            "",
+            "191",
+            ""
+          ],
+          [
+            "Zk transform. [%]",
+            "3,8",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Tipo de cable alim.",
+            "Cable",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cantidad de cables",
+            "3",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Longitud de cable",
+            "60",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Resultado",
+            "",
+            "",
+            "",
+            "",
+            "Límites IEEE 519 cálc/límite"
+          ],
+          [
+            "Cosfii",
+            "0,999",
+            "",
+            "Intens. DTH",
+            "47,1 %",
+            "Intens. DTH",
+            "0,2 %/15,0 %"
+          ],
+          [
+            "Factor potencia tot.",
+            "0,90",
+            "",
+            "Tensión DTH",
+            "0,2 %",
+            "Tensión DTH",
+            "0,2 %/5,0 %"
+          ],
+          [
+            "Unmax mot.",
+            "98 %",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Capítulo 5 - Normas para los límites de\narmónicos\n5.1\nEN61800-3\n(IEC 1800-3)\nSistemas de\naccionamiento\nde potencia\neléctricos de\nvelocidad\najustable\nLas normas nacionales e internacionales más comunes que\ndefinen límites para los armónicos se describen a continuación.\nLa Figura 5.1 se muestra como un ejemplo de los límites de\ndistorsión por armónicos.\nParte 3: Norma de producto EMC que incluye métodos\nde comprobación específicos\nLos países en el Área Económica Europea (AEE) han acordado\nunos requisitos reglamentarios mínimos para garantizar la libre\ncirculación de productos dentro del AEE. El Etiquetaje CE indica\nque el producto funciona de conformidad con las directivas que\nson válidas para el producto. Las directivas indican los principios\nque deben observarse, y las normas especifican los requisitos\nque deben satisfacerse. EN61800-3 es la norma de producto\nEMC de los sistemas de accionamiento de potencia eléctricos\nde velocidad ajustable (PDS). La condición mínima para la libre\ncomercialización de los convertidores electrónicos de potencia\ndentro del AEE es el cumplimiento de esta norma.\nEN61800-3 indica que el fabricante deberá proporcionar, dentro\nde la documentación del PDS o bajo petición, el nivel de\narmónicos en intensidad, en condiciones nominales y en forma\nde porcentaje de la intensidad nominal fundamental en la entrada\nde potencia. Los valores referenciados se calcularán para cada\norden por lo menos hasta el vigesimoquinto. La THD de\nintensidad (órdenes hasta el 40 inclusive) y su PHD de\ncomponentes de alta frecuencia (órdenes del 14 al 40, ambos\ninclusive) deberán evaluarse. Para estos cálculos estándar, se\nasumirá que el PDS está conectado a un PC con Rsc = 250 y\ncon una distorsión de tensión inicial menor que el 1%. La\nimpedancia interna de la red se asumirá como una reactancia\npura.\nEn una red de alimentación pública de baja tensión, los límites y\nlos requisitos de IEC 1000-3-2 se aplican al equipo con una\nintensidad nominal ≤ 16 A. El uso de la próxima IEC 1000-3-4 se\nrecomienda para los equipos con intensidad nominal > 16 A.\nSi el PDS se utiliza en una instalación industrial, debe emplearse\nun enfoque económico razonable que tenga en cuenta la totalidad\nde la instalación. Este enfoque se basa en la potencia acordada,\nque puede proporcionar la fuente de alimentación en cualquier\nmomento. El método para el cálculo de los armónicos de la\ninstalación total se acuerda, así como los límites de la distorsión\nde tensión o de la emisión total de intensidad de armónicos.\nLos límites de compatibilidad facilitados en IEC1000-2-4 pueden\nemplearse como límites de la distorsión de tensión.\n12\nGuía técnica nº 6 - Guia de los armónicos con accionamientos de CA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Límites de armónicos definidos en las normas\n5.2\nIEC1000-2-2,\nCompatibilidad\nelectromagnética\n(EMC)\nParte 2: Entorno - Sección 2: Niveles de\ncompatibilidad para perturbaciones conducidas de\nbaja frecuencia y señales en sistemas de\nalimentación públicos de baja tensión\nEsta norma define los límites de compatibilidad para las\nperturbaciones conducidas de baja frecuencia y las señales\nen sistemas de alimentación públicos de baja tensión.\nLos fenómenos de perturbación incluyen los armónicos, los\ninterarmónicos, las fluctuaciones de tensión, las caídas de\ntensión y las interrupciones breves, los desequilibrios de\ntensión, etc. Básicamente, esta norma define los criterios\nde diseño para el fabricante del equipo, y establece los\nrequisitos mínimos de inmunidad del equipo. IEC1000-2-2\nse equipara a los límites definidos en EN50160 para la calidad\nde la tensión que el propietario de la utilidad debe\nproporcionar en los terminales de alimentación del cliente.\n5.3\nIEC1000-2-4,\nCompatibilidad\nelectromagnética\n(EMC)\nParte 2: Entorno - Sección 4: Niveles de\ncompatibilidad en plantas industriales para\nperturbaciones conducidas de baja frecuencia\nIEC1000-2-4 es similar a IEC1000-2-2, pero proporciona\nniveles de compatibilidad para redes industriales y de tipo\nno público. Cubre las redes de baja tensión así como las\nalimentaciones de tensión media, excluyendo las redes para\nbarcos, aviones, plataformas marinas y vias de ferrocarril.\n5.4\nIEC1000-3-2,\nCompatibilidad\nelectromagnética\n(EMC)\nParte 3: Límites - Sección 2: Límites para las\nemisiones de intensidad de armónicos (intensidad del\nequipo <16 A por fase)\nEsta norma se centra en los límites de emisión de intensidad\nde armónicos del equipo individual conectado a las redes\npúblicas. La fecha de implementación de esta norma es el 1\nde enero de 2001, pero se han emprendido tareas\nexhaustivas para revisar la norma antes de esta fecha. Las\ndos razones principales para la revisión son la necesidad\nde que la norma cubra asimismo la tensión por debajo de\n230 V y las dificultades y las contradicciones en la aplicación\nde la categorización del equipo facilitada en la norma.\n5.5\nIEC1000-3-4,\nCompatibilidad\nelectromagnética\n(EMC)\nEsta norma se ha publicado como un Informe técnico de\ntipo II. Se está trabajando para convertirlo en una norma.\nProporciona los límites de emisión de intensidad de\narmónicos para equipos individuales con una intensidad\nnominal de más de 16 A hasta 75 A. Se aplica a las redes\npúblicas con tensiones nominales de 230 V y una fase hasta\n600 V trifásicas.\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n13",
+      "tablas": [
+        [
+          [
+            "5.2 IEC1000-2-2, Compatibilidad electromagnética (EMC)",
+            "Parte 2: Entorno - Sección 2: Niveles de compatibilidad para perturbaciones conducidas de baja frecuencia y señales en sistemas de alimentación públicos de baja tensión Esta norma define los límites de compatibilidad para las perturbaciones conducidas de baja frecuencia y las señales en sistemas de alimentación públicos de baja tensión. Los fenómenos de perturbación incluyen los armónicos, los interarmónicos, las fluctuaciones de tensión, las caídas de tensión y las interrupciones breves, los desequilibrios de tensión, etc. Básicamente, esta norma define los criterios de diseño para el fabricante del equipo, y establece los requisitos mínimos de inmunidad del equipo. IEC1000-2-2 se equipara a los límites definidos en EN50160 para la calidad de la tensión que el propietario de la utilidad debe proporcionar en los terminales de alimentación del cliente."
+          ],
+          [
+            "5.3 IEC1000-2-4, Compatibilidad electromagnética (EMC)",
+            "Parte 2: Entorno - Sección 4: Niveles de compatibilidad en plantas industriales para perturbaciones conducidas de baja frecuencia IEC1000-2-4 es similar a IEC1000-2-2, pero proporciona niveles de compatibilidad para redes industriales y de tipo no público. Cubre las redes de baja tensión así como las alimentaciones de tensión media, excluyendo las redes para barcos, aviones, plataformas marinas y vias de ferrocarril."
+          ],
+          [
+            "5.4 IEC1000-3-2, Compatibilidad electromagnética (EMC)",
+            "Parte 3: Límites - Sección 2: Límites para las emisiones de intensidad de armónicos (intensidad del equipo <16 A por fase) Esta norma se centra en los límites de emisión de intensidad de armónicos del equipo individual conectado a las redes públicas. La fecha de implementación de esta norma es el 1 de enero de 2001, pero se han emprendido tareas exhaustivas para revisar la norma antes de esta fecha. Las dos razones principales para la revisión son la necesidad de que la norma cubra asimismo la tensión por debajo de 230 V y las dificultades y las contradicciones en la aplicación de la categorización del equipo facilitada en la norma."
+          ],
+          [
+            "5.5 IEC1000-3-4, Compatibilidad electromagnética (EMC)",
+            "Esta norma se ha publicado como un Informe técnico de tipo II. Se está trabajando para convertirlo en una norma. Proporciona los límites de emisión de intensidad de armónicos para equipos individuales con una intensidad nominal de más de 16 A hasta 75 A. Se aplica a las redes públicas con tensiones nominales de 230 V y una fase hasta 600 V trifásicas."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Límites de armónicos definidos en las normas\nLa norma proporciona tres etapas diferentes para los\nprocedimientos de conexión del equipo. Al satisfacerse los\nlímites de armónicos individuales en la Etapa 1 es posible\nefectuar la conexión del equipo en cualquier punto en el\nsistema de alimentación. La Etapa 2 proporciona límites de\nintensidad de armónicos individuales así como la THD y su\nPWHD de contrapartida de alta frecuencia ponderada. Los\nlímites se clasifican y se tabulan mediante el coeficiente de\ncortocircuito. La tercera etapa de la conexión se basa en el\nacuerdo entre el usuario y la autoridad que suministra la\nalimentación, basado en la potencia activa acordada de la\ninstalación del consumidor. Si la intensidad nominal se sitúa\npor encima de 75 A, se aplica siempre la Etapa 3.\nLa estructura de esta norma suele considerarse adecuada,\npero es legítimo preguntarse si el equipo de una fase y\ntrifásico debería tener límites distintos en la Etapa 2. Es muy\nprobable que la estructura de la norma no experimente\ncambios, pero la versión con el estado de la norma real\ncontendrá límites distintos para el equipo de una fase y\ntrifásico.\nRed 132 kV\n(600 MVA asumidos)\nRed 33 kV\n(400 MVA asumidos)\nRed 11 kV\n(100 MVA asumidos)\nCARGA MÁXIMA\n12p\n6p\n# 6,66 MW # 2,50 MW\n(5,0 MW)\n(5,0 MW)\n#\nValores típicos\n# 4,40 MW # 1,65 MW\n(3,3 MW)\n(3,3 MW)\nLÍMITES ETAPA 2\n% I1\n**\nRsce\nMín.\nTENSIÓN\n% THD\n15\n11\nI13\n66\n12\n10\n9\n6\n2,36\n120\n15\n12\n12\n8\n1,69\n20\n14\n175\n12\n8\n1,25\n250\n30\n18\n13\n8\n1,06\n# 1,11 MW # 415 KW\n350\n40\n25\n15\n10\n0,97\n(830 kW)\n(830 KW)\n450\n50\n35\n20\n15\n1,02\nRed 400 kV\n(26 MVA asumidos)\n# 760 kW\n(215 kW)\n(215 KW))\nPCC\n>600\n# 108 KW\n60\n40\n25\n18\n<= 0,91\n** Contribución al nivel\nTHD existente en el\nPCC seleccionado\nFigura 5.1 Límites de los armónicos en la EN61000-3-4 propuesta\n5.6 IEEE 519,\nPrácticas\nrecomendadas\ny requisitos\nIEEE para el\ncontrol de\narmónicos en\nsistemas de\npotencia\neléctrica\nLa filosofía de desarrollo de límites de armónicos en esta\npráctica recomendada es limitar la inyección de armónicos\nde clientes individuales con el fin de que no provoquen niveles\nde distorsión de tensión inaceptables para características\nde sistema normales y limitar la distorsión por armónicos\nglobal de la tensión de sistema suministrada por la utilidad.\nEsta norma se reconoce también como una Norma Nacional\nAmericana y se utiliza ampliamente en los EE.UU.,\nespecialmente en el ámbito de obras públicas municipales.\n14\nGuía técnica nº 6 - Guia de los armónicos con accionamientos de CA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Límites de armónicos definidos en las normas\nLa norma no proporciona límites para equipos individuales,\nsino para clientes individuales. Los clientes se clasifican por\nel coeficiente de intensidad de cortocircuito disponible (Isc)\ny su intensidad de carga de demanda máxima (IL) en el punto\nde acoplamiento común. La intensidad de carga de demanda\ntotal es la suma de las cargas lineales y no lineales. Dentro\nde una planta industrial, el PCC se define claramente como\nel punto entre la carga no lineal y otras cargas.\nLas intensidades de armónicos individuales permitidas y la\ndistorsion por armónicos total se tabulan mediante el\ncoeficiente de intensidad de cortocircuito disponible y la\nintensidad de carga de demanda total (Isc/IL) en el punto de\nacoplamiento común. Los límites son un porcentaje de IL\npara todos los armónicos pares e impares de 2 a infinito. La\ndistorsión total por armónicos se denomina distorsión total\nde demanda y debería calcularse asimismo hasta infinito.\nMuchos autores limitan el cálculo de los componentes\nindividuales y la TDD a 50.\nLa tabla 10.3 de la norma se malinterpreta algunas veces\ncomo límites para las emisiones de armónicos de un solo\naparato empleando Rsc del equipo en lugar de Isc/IL de la\ntotalidad de la instalación. Los límites de la tabla no deberían\nemplearse de este modo, dado que el coeficiente de la\nintensidad de cortocircuito y la intensidad de carga de\ndemanda total de una instalación deberían emplearse\nsiempre.\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n15",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Capítulo 6 - Evaluación de armónicos\nLa \"Guía para la aplicación de limites de armónicos en\nsistemas de potencia\" P519A/D6 Ene 1999 introduce reglas\ngenerales para evaluar límites de armónicos en instalaciones\nindustriales. El procedimiento se muestra en la siguiente\nfigura.\nUTILIDAD\nEscoja PCC\nCalcule la capacidad\ncortocircuito (Ssc, lsc)\nCalcule Intensidad de carga\nde demanda máx. media (I)\nCalcule coef. de cortocircuito\n(SCR=(Isc /1)\nEtapa 2:\n¿Instalación dentro de\nlímites de armónicos?\nSí\nSí\n¿Corrección de factor\nde potencia existente o\nplanificada?\nNo\nSí\nEtapa 1:\n¿Se requiere evaluación\ndetallada?\nCaracterice niveles armónicos\n(mediciones, análisis)\nNo\nDiseñe corrección de factor de\npotencia y/o equipo de control de\narmónicos\nincluya aspectos de resonancia)\nMediciones y cálculos de\nverificación (si es necesario)\nCLIENTE\nEstime la Potencia de\nperturbación ponderada (Spw) o\nel % de carga no lineal\nNo\nFigura 6.1 Evaluación de la distorsión por armónicos\n16\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Capítulo 7 - Reducción de armónicos con\nmodificaciones estructurales en el sistema\nde accionamiento de CA\nLa reducción de armónicos puede realizarse mediante\nmodificaciones estructurales en el sistema de accionamiento\no empleando filtrado externo. Las modificaciones\nestructurales pueden consistir en reforzar la alimentación,\nen emplear un accionamiento de 12 pulsos o más, en emplear\nun rectificador controlado o en mejorar el filtrado interno en\nel convertidor.\n7.1 Factores\nen el\naccionamiento\nde CA que\ntienen efecto\nen los\narmónicos\nLa Figura 7.1 muestra los factores en el sistema de\naccionamiento de CA que tienen algún efecto en los\narmónicos. Los armónicos en intensidad dependen de la\nestructura del convertidor y los armónicos en tensión son\nlos armónicos en intensidad multiplicados por las\nimpedancias de alimentación.\nRED\nTRANSFORMADOR\nACCIONAM.\nCA\nCARGA\nInversor\nMotor\nPotencia cortocircuito\nMVA\nPotencia nominal e\nimpedancia\n%\nMVA\nAlternativa\nTipo rectificador\n6-p, 12-p, 24-p\nDIODO, TIRISTOR; INVERSOR:\nInductancia de reactor\nmH\nTipo de inversor\nPWM;CSI\nPotencia nominal y\ncarga\nkW\n%\nFigura 7.1 Características del sistema de accionamiento que\nafectan a los armónicos\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n17",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Reducción de armónicos con modificaciones estructurales en el sistema de\naccionamiento de CA\n7.2 Tabla:\nLista de los\ndistintos\nfactores y sus\nefectos\nCausa\nEfecto\nPara un motor mayor ...\nmayores armónicos en intensidad\nPara una mayor carga del motor ...\nmayores armónicos en intensidad\nA más inductancia de CC o CA ...\nmenores armónicos en intensidad\nPara un número mayor de pulsos en\nel rectificador ...\nmenores armónicos en intensidad\nCable de alimentación más largo ...\nmayores armónicos en tensión\nCon un transformador mayor ...\nmenores armónicos en tensión\nMenor impedancia del transformador ...\nmenores armónicos en tensión\nPara una capacidad de cortocircuito\nmayor de la alimentación ...\nmenores armónicos en tensión\n7.3 Empleo de\nun rectificador\nde diodos de 6\npulsos\nLas conexiones para las distintas soluciones de rectificadores\nse muestran en la Figura 7.2. El circuito rectificador más\ncomún en los accionamientos de CA trifásicos es un puente\nde diodos de 6 pulsos. Consta de seis rectificadores o\ndiodos no controlables y un inductor, que junto con un\ncondensador de CC forman un filtro de paso bajo para filtrar\nla intensidad de CC. El inductor puede hallarse en la etapa\nde CC o CA o puede dejarse completamente en el exterior.\nEl rectificador de 6 pulsos es sencillo y barato pero genera\nuna gran cantidad de armónicos del orden bajo quinto,\nséptimo y undécimo, especialmente con una inductancia de\nfiltrado reducido.\nEl modo de la intensidad se muestra en la Figura 7.2. Si la\nmayor parte de la carga consiste en convertidores con un\nrectificador de 6 pulsos, el transformador de alimentación\ntienen que sobredimensionarse y el cumplimiento de los\nrequisitos en las normas puede llegar a complicarse. Suele\nser necesario algún tipo de filtrado de armónicos.\nRectificador 6 pulsos\nRectific. 12 pulsos\nRectific. 24 pulsos\nA\nA\nz\nA\nz\nH\nOnda de intensidad\nOnda de intensidad\nOnda de intensidad\nFigura 7.2 Armónicos en la intensidad de red con distintas\nestructuras de rectificadores\n18\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA",
+      "tablas": [
+        [
+          [
+            "Causa",
+            "Efecto"
+          ],
+          [
+            "Para un motor mayor ...",
+            "mayores armónicos en intensidad"
+          ],
+          [
+            "Para una mayor carga del motor ...",
+            "mayores armónicos en intensidad"
+          ],
+          [
+            "A más inductancia de CC o CA ...",
+            "menores armónicos en intensidad"
+          ],
+          [
+            "Para un número mayor de pulsos en el rectificador ...",
+            "menores armónicos en intensidad"
+          ],
+          [
+            "Cable de alimentación más largo ...",
+            "mayores armónicos en tensión"
+          ],
+          [
+            "Con un transformador mayor ...",
+            "menores armónicos en tensión"
+          ],
+          [
+            "Menor impedancia del transformador ...",
+            "menores armónicos en tensión"
+          ],
+          [
+            "Para una capacidad de cortocircuito mayor de la alimentación ...",
+            "menores armónicos en tensión"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Reducción de armónicos con modificaciones estructurales en el sistema de\naccionamiento de CA\n7.4 Empleo de\nun rectificador\nde diodos de\n12 pulsos o 24\npulsos\nEl rectificador de diodos de 12 pulsos se forma conectando\ndos rectificadores de 6 pulsos en paralelo para alimentar un\nbus de CC común. La entrada a los rectificadores se realiza\nmediante un transformador de tres bobinados (de doble\nsecundario). Los secundarios del transformador están\ndesfasados 30°. Las ventajas de esta disposición consisten en\nque en la etapa de alimentación algunos de los armónicos se\nhallan en la fase opuesta y por lo tanto se eliminan. En teoría, el\ncomponente armónico con la frecuencia más baja que se aprecia\nen el primario del transformador es el undécimo.\nLas principales desventajas son los transformadores especiales\ny un coste más elevado que con el rectificador de 6 pulsos.\nEl principio para el rectificador de 24 pulsos se muestra también\nen la Figura 7.2. Este consta de dos rectificadores de 12 pulsos\nen paralelo alimentados por dos transformadores de doble\nsecundario con un desfase de 15°. La ventaja es que\nprácticamente se eliminan todos los armónicos de baja frecuencia\npero el inconveniente es el elevado coste. En el caso de un solo\nconvertidor de elevada potencia o una gran instalación con varios\nconvertidores, un sistema de 24 pulsos puede ser la solución\nmás económica con la menor distorsión por armónicos.\n] Rectif. 6 pulsos\nRectif. 12 pulsos\nRectif. 24 pulsos\n0,3\n0,25\n0,2\n0,15\n0,1\n0,05\n0\n5\n7\n11\n13\n17\n19\nOrden de armónicos\n23\n25\nFigura 7.3 Componentes armónicos con distintos rectificadores\n7.5 Empleo de\nun rectificador\nde tiristores\ncontrolado por\nUn rectificador controlado por fase se obtiene sustituyendo los\ndiodos en un rectificador de 6 pulsos por tiristores. Dado que\nun tiristor requiere un pulso de disparo para efectuar la transición\nde estado no conductor a conductor, el ángulo de fase en el que\nel tiristor empieza a conducir puede retardarse. Al retardar el\nfase\nángulo de disparo por encima de 90°, la tensión del bus de CC\npasa a ser negativa. Ello permite el flujo regenerativo de potencia\ndesde el bus de CC de vuelta a la fuente de alimentación.\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n19",
+      "tablas": [
+        [
+          [
+            "7.5 Empleo de un rectificador de tiristores",
+            "Un rectificador controlado por fase se obtiene sustituyendo los diodos en un rectificador de 6 pulsos por tiristores. Dado que un tiristor requiere un pulso de disparo para efectuar la transición de estado no conductor a conductor, el ángulo de fase en el que el tiristor empieza a conducir puede retardarse. Al retardar el"
+          ],
+          [
+            "controlado por"
+          ],
+          [
+            "fase",
+            "ángulo de disparo por encima de 90°, la tensión del bus de CC pasa a ser negativa. Ello permite el flujo regenerativo de potencia desde el bus de CC de vuelta a la fuente de alimentación."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Reducción de armónicos con modificaciones estructurales en el sistema de\naccionamiento de CA\nLas configuraciones estándar de bus de CC e inversor no\npermiten el cambio de polaridad de la tensión de CC y es más\ncomún conectar otro puente de tiristores antiparalelo respecto\nal primero para permitir la inversión de la polaridad de la\nintensidad. En esta configuración el primer puente conduce en\nmodo de rectificación y el otro en modo regenerativo.\nLas ondas de intensidad de los rectificadores controlados por\nfase son similares a las de los rectificadores de diodos de 6\npulsos, pero dado que absorben potencia con un factor de\npotencia de desplazamiento alternante, el factor de potencia\ntotal con carga parcial es bastante bajo. El factor de potencia\nbajo provoca una intensidad aparente elevada y las\nintensidades de armónicos absolutas son más elevadas que\nlas propias de un rectificador de diodos.\nAdemás de estos problemas, los convertidores controlados\npor fase provocan interrupciones de conmutación en la onda\nde tensión de la utilidad. La posición angular de las\ninterrupciones varía con el ángulo de disparo.\nTipo de\nalimentac.\nTDH de\n(%)\nTDH de\nRSC=20\nTDH de\nRSC=100\nOnda de\nintensidad\nRectificador\nde 6 pulsos\n30\n10\n2\nRectificador\nde 12 pulsos\n10\n6\n1,2\nUnidad de\nalimentación\nIGBT\n4\n8\n1,8\nDistorsión en % de valores eficaces\nintensidad tensión (%) tensión (%)\nFigura 7.4 Distorsión de distintos tipos de unidades de\nalimentación. Los valores pueden variar según el caso.\n7.6 Empleo de\nun puente de\nIGBT\nLa introducción de un puente rectificador, formado por\ncomponentes autoconmutados, aporta diversas ventajas y\noportunidades en comparación con los conmutados por\nfase. Al igual que un rectificador conmutado por fase, este\nequipo permite la rectificación y la regeneración, pero\nposibilita el control del nivel de tensión de CC y el factor de\npotencia de desplazamiento de forma separada con\nindependencia de la dirección del flujo de potencia.\nLas principales ventajas son:\n- Función segura en caso de desaparición de la alimentación\nde red.\n- Elevada dinámica del control del convertidor incluso en el\nrango de debilitamiento de campo.\n20\nGuía técnica nº 6 - Guia de los armónicos con accionamientos de CA",
+      "tablas": [
+        [
+          [
+            "Tipo de alimentac.",
+            "TDH de (%)\nintensidad",
+            "TDH de RSC=20\ntensión (%)",
+            "TDH de RSC=100\ntensión (%)",
+            "Onda de intensidad"
+          ],
+          [
+            "Rectificador de 6 pulsos",
+            "30",
+            "10",
+            "2",
+            ""
+          ],
+          [
+            "Rectificador de 12 pulsos",
+            "10",
+            "6",
+            "1,2",
+            ""
+          ],
+          [
+            "Unidad de alimentación IGBT",
+            "4",
+            "8",
+            "1,8",
+            ""
+          ],
+          [
+            "Distorsión en % de valores eficaces"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Reducción de armónicos con modificaciones estructurales en el sistema de\naccionamiento de CA\n- Posibilidad de generar potencia reactiva.\n- Intensidad de alimentación casi sinusoidal con un bajo\ncontenido en armónicos. Los resultados medidos para un\nconvertidor se muestran en la Figura 7.5. Al efectuar la\ncomparación con 7.3 se puede apreciar una clara diferencia.\nUn IGBT tiene armónicos muy bajos a frecuencias menores,\npero son bastante más elevados a frecuencias más altas.\n- Capacidad de sobrepar de tensión. En caso de tensión de\nalimentación baja, la tensión de CC puede incrementarse para\nmantener la tensión del motor a un nivel mayor que la tensión\nde alimentación.\nEl inconveniente principal es el elevado coste del puente de IGBT\ny el filtrado extra requerido.\nUnidad generadora de\nred\nIn\n30.0%\nUnidad generadora\nde red\n3~111 --\n111\n25.0%-\n20.0%\n15.0%\n10.0%\n5.0%\n0.0%+\n5 7 11 13 17 19 23 25 29 31 35 37 41 47 49 53 55 71 77\nOrden de armónicos\nFigura 7.5 Armónicos en la intensidad de red de la unidad\ngeneradora de red IGBT\n7.7 Empleo de\nun inductor de\nCC o CA\nmayor\nLos armónicos de un accionamiento de CA como fuente de\ntensión pueden reducirse considerablemente conectando un\ninductor lo bastante grande en su entrada de CA o bus de\nCC. La tendencia ha sido reducir el tamaño del convertidor y\ntambién del inductor, o en bastantes casos se ha omitido. El\nefecto puede verse en las curvas en la Figura 7.4.\nIntensidad sin\ninductor\nIntensidad con\ninductor\nFigura 7.6 El efecto del inductor en la intensidad de red\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n21",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "Reducción de armónicos con modificaciones estructurales en el sistema de\naccionamiento de CA\nEl gráfico en la Figura 7.5 muestra el efecto del tamaño del\ninductor de CC en los armónicos. Para los 25 primeros\ncomponentes armónicos el mínimo teórico de la THD es del\n29%. Este valor se alcanza prácticamente cuando la\ninductancia es de 100 mH dividida por los Kw del motor o\nde 1 mH para un motor de 100 KW (415 V, 50 Hz). No debería\nseleccionarse una mayor inductancia, pero unos 25 mH\ndivididos por los kW del motor proporcionan una THD de\nun 45%. El valor es de 0,25 mH para un motor de 100 kW.\n1,4\n1,2\n45°\n1\n0,8\nIntensidad de armónicos (pu)\n0,6\n0,4\n0,2\n415 V, 50 Hz\n₹-70\n-+-11º\n-I-13º\n-0-17º\n-~ 19°\n-+23°\n₩_25°\n.THD\n0\n1\n10\n100\n1000\nInductancia de CC/mH = Esta Figura/kW del motor\n10000\nFigura 7.7 Intensidad de armónicos como función de la inductancia\nde CC\nLa distorsión de tensión con una cierta distorsión de\nintensidad depende del coeficiente de cortocircuito Rsc de\nla alimentación. Cuanto mayor sea el coeficiente, menor será\nla distorsión de tensión. Ello puede apreciarse en la Figura\n7.8.\nCarga de 60 A, potencia del transformador de 50-315 kVA, nivel de\nfallo de red de 150 MVA\n30\nSin inductor, 6 pulsos\n25\n+ Inductor pequeño,\n6 pulsos\n20\nTHD de tensión (%)\n15\n- Inductor grande,\n6 pulsos\n* Inductor grande,\n12 pulsos\n10\n5\n×\n0 -\n20\n40\n60\n80\n100\n120\nCoeficiente de cortocircuito\n1X\n140\n160\nFigura 7.8 Tensión THD frente a tipo de accionamiento de CA y\ntamaño de transformador\n22\nGuía técnica nº 6 - Guia de los armónicos con accionamientos de CA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Reducción de armónicos con modificaciones estructurales en el sistema de\naccionamiento de CA\nLa Figura 7.9 introduce un nomograma simple para estimar\nlas tensiones de armónicos. En el siguiente gráfico, a la\nderecha, seleccione los kilovatios del motor y los kVA del\ntransformador y desplácese horizontalmente hasta la línea\ndiagonal, desde la que seguirá en dirección ascendente, y\ndeténgase en la curva válida para su aplicación. Desplácese\na la izquierda hacia el eje y lea la distorsión total de tensión\nde armónicos.\nDatos de entrada para cálculos:\n30\n· Motor nominal para convert.\n25\n-\nSin inductor de\nCC, 6 pulsos\n20\nDistorsión total de tensión por\nFINAL\narmónicos\n1!\n10\n5\n0\n0\n50\nGIRO IZQ.\n100\n50\nInductor de CC\npequeño, 6 p.\nInductor de CC\ngrande, 6 p.\nInductor de CC\ngrande, 12\npulsos\n. Carga de par constante\n· Tensión 415 V\n· Rendimiento convert. = 97%\n· Impedancia aliment. = 10%\nde la impedancia del\ntransformador\nTransformador\nde alimentación\n(KVA)\n50\nGIRO ARR.\n100\nGIRO DCHA.\n50\n- 100\n- 200\n- 500\n-1000\n0\n-I- 2000\n2.2\n3\n5.5\n7.5\n11\nINICIO\n15\n18.5\n22\n30\n55\n75\n8 45\n0 90\n110\n132\n160\n200\n315\n250\n400\n500\n630\nkW del motor\nEjemplo: Motor de 45 KW conectado a \"un\ntransformador de 200 kVA.\"THD = alrededor del\n3% con un \"Convertidor inductor grande\" y del\n11% para \"Sin convertidor inductor\"\nFigura 7.9 Nomograma de distorsión total por armónicos\nLos resultados de las pruebas de laboratorio con unidades\nde accionamiento de distintos fabricantes se muestran en la\nFigura 7.10. El convertidor A con un inductor de CC grande\ntiene la menor distorsión de intensidad de armónicos, y los\nconvertidores sin inductor tienen la mayor distorsión.\nTHD 15\n17\n111 113 117 119\nA =\nGran inductancia de CC\nB, C = Pequeña inductancia de CC\nD, E = Sin inductancia de CC\n140\n120\n100\n80\n60\n40\n20\n0\nA\nB\nC\nD\nE\nFigura 7.10. Intensidad de armónicos con distintas inductancias\nde CC\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Capítulo 8 - Otros métodos para la\nreducción de armónicos\nEl filtrado es un método para la reducción de armónicos en\nuna planta industrial cuando se ha aumentado gradualmente\nla distorsión por armónicos o como una solución total en\nuna nueva planta. Hay dos métodos básicos: filtros activos\ny pasivos.\n8.1 Filtro\nEl principio de un filtro pasivo de rama ajustada se muestra\nen la Figura 8.1. Este filtro debería aplicarse en el\ncomponente armónico menor cuando existe una generación\nde armónicos significativa en el sistema. Para sistemas que\nsuministran principalmente una carga industrial\nprobablemente sea el quinto armónico. Por encima de la\nfrecuencia ajustada los armónicos se absorben, pero por\ndebajo de ella quizá se amplifiquen.\npasivo de una\nsola rama\najustada\nIf\nH\nIs\nIh\nIs\nIf\nIh\n· Desajuste - Una sola frecuencia de ajuste\n· Armónicos absorbidos por encima de la frecuencia ajustada\n· Posible amplificación de armónicos por debajo de ésta\n. Reducción de armónicos limitada por KVAr y la red\nFigura 8.1 Filtro pasivo de una sola rama ajustada\nEste tipo de filtro consta de un inductor en serie con un\nbanco de condensadores y la mejor ubicación para el filtro\npasivo es cerca de las cargas generadoras de armónicos.\nEsta solución no suele emplearse para nuevas instalaciones.\n8.2 Filtro\npasivo de\nmúltiples\nramas\najustadas\nEl principio de este filtro se muestra en la Figura 8.2. Tiene\nvarias ramas ajustadas a dos o más componentes\narmónicos que deberían ser las frecuencias de armónicos\nsignificativas menores en el sistema . El filtro múltiple tiene\nmejor absorción de armónicos que el sistema de una rama.\n,\nIf3\nY\nIf2\n>\nIf1\nIs\nIh\nIs\nIf(1-3)\nIh\n· Capacitativo por debajo frec. ajustada/Inductivo por encima\n· Mejor absorción de armónicos\n· Consideraciones de diseño para armónicos de amplificación\npor filtro\n· Limitado por KVAr y la red\nFigura 8.2 Filtro pasivo de múltiples ramas ajustadas\n24\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA",
+      "tablas": [
+        [
+          [
+            "",
+            "El filtrado es un método para la reducción de armónicos en una planta industrial cuando se ha aumentado gradualmente la distorsión por armónicos o como una solución total en una nueva planta. Hay dos métodos básicos: filtros activos y pasivos."
+          ],
+          [
+            "8.1 Filtro",
+            "El principio de un filtro pasivo de rama ajustada se muestra en la Figura 8.1. Este filtro debería aplicarse en el componente armónico menor cuando existe una generación de armónicos significativa en el sistema. Para sistemas que suministran principalmente una carga industrial probablemente sea el quinto armónico. Por encima de la frecuencia ajustada los armónicos se absorben, pero por debajo de ella quizá se amplifiquen."
+          ],
+          [
+            "pasivo de una sola rama ajustada"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Otros métodos para la reducción de armónicos\nLos filtros pasivos de múltiples ramas se suelen emplear en\ngrandes instalaciones de accionamientos de CC en las que\nun transformador dedicado alimenta a toda la instalación.\n8.3 Filtro activo\nexterno\nUn filtro pasivo ajustado introduce nuevas resonancias que\npueden provocar problemas por armónicos adicionales. Las\nnuevas tecnologías de electrónica de potencia brindan\nproductos que pueden controlar la distorsión por armónicos\ncon control activo. Estos filtros activos, véase la Figura 8.3,\nproporcionan compensación para los componentes\narmónicos en el sistema de utilidad basada en la generación\nde armónicos existente en cualquier momento.\nAliment.\nSólo fundamental\ni\ndistorsión\nCarga\ni\ncompensación\nFiltro\nactivo\n1.3\n1.3\n360\n360\n360\n-1.2\n-1.2\nOndas de intensidad\nFigura 8.3 Diagrama del principio del filtro activo externo\nEl filtro activo compensa los armónicos generados por\ncargas no lineales generando los mismos componentes\narmónicos en la fase opuesta como se muestra en la Figura\n8.4. Los filtros activos externos son los más adecuados para\nvarios convertidores pequeños. Son relativamente caros en\ncomparación con otros métodos.\n1.\n1.3\n1.3\nOndas\n360\n0\n360\n1.3\n-13\n-1.3\nIntensidad\nalimentadora\nlimpia\nIntensidad\nde carga\nIntensidad\nde filtro\nactivo\n+\n40\n40\n40\n20\nArmónicos\n0\n20\n20\n-20\n5\n7\n11\n13\n17\n5\n-\n7\n11\n13\n17\n1\n7\n11 13 17 19\nFigura 8.4 Ondas y armónicos del filtro activo externo\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n25",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Capítulo 9 - Resumen de la atenuación\nde armónicos\nExisten muchas opciones para la atenuación de armónicos\ndentro del sistema de accionamiento o de forma externa.\nTodos tienen ventajas y desventajas e implicaciones en\ncuanto al coste. La mejor solución dependerá de la carga\ntotal, de la alimentación al emplazamiento y de la distorsión.\nEn las tablas siguientes se comparan las distintas acciones\ninternas con el sistema básico sin inductor. El contenido de\narmónicos se facilita con una carga del 100%. Los costes\nson válidos para convertidores pequeños. Para varios\nconvertidores la solución de 12 pulsos es mucho más barata.\n9.1 Rectificador\nde 6 pulsos sin\ninductor\n9.2 Rectificador\nde 6 pulsos con\ninductor\nCoste de fabricación del 100%\nComponentes de intensidad de armónicos típicos.\nFundamental\n5°\n7º\n11°\n13°\n17°\n19°\n100%\n63% 54% 10% 6,1% 6,7% 4,8%\nCoste de fabricación del 120%. Reactancia de CA y CC\nañadida\nComponentes de intensidad de armónicos tipicos.\nFundamental\n5º\n7º\n11º\n13º 17º 19º\n100%\n30% 12% 8,9% 5,6% 4,4% 4,1%\n9.3 Rectificador\nde 12 pulsos\ncon transfor-\nmador polycon\nCoste de fabricación del 200%\nComponentes de intensidad de armónicos tipicos.\nFundamental\n5°\n7º\n11°\n13°\n17°\n19\n100%\n11% 5,8% 6,2% 4,7% 1,7% 1,4%\n9.4 Rectificador\nde 12 pulsos\ncon transfor-\nmador de\nbobinado doble\nCoste de fabricación del 210%\nComponentes de intensidad de armónicos tipicos.\nFundamental\n5°\n7°\n11°\n13°\n17°\n19°\n100%\n3,6% 2,6% 7,5% 5,2% 1,2% 1,3%\n26\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA",
+      "tablas": [
+        [
+          [
+            "Fundamental",
+            "5°",
+            "7º",
+            "11°",
+            "13°",
+            "17°",
+            "19°"
+          ],
+          [
+            "100%",
+            "63%",
+            "54%",
+            "10%",
+            "6,1%",
+            "6,7%",
+            "4,8%"
+          ]
+        ],
+        [
+          [
+            "Fundamental",
+            "5º",
+            "7º",
+            "11º",
+            "13º",
+            "17º",
+            "19º"
+          ],
+          [
+            "100%",
+            "30%",
+            "12%",
+            "8,9%",
+            "5,6%",
+            "4,4%",
+            "4,1%"
+          ]
+        ],
+        [
+          [
+            "Fundamental",
+            "5°",
+            "7º",
+            "11°",
+            "13°",
+            "17°",
+            "19"
+          ],
+          [
+            "100%",
+            "11%",
+            "5,8%",
+            "6,2%",
+            "4,7%",
+            "1,7%",
+            "1,4%"
+          ]
+        ],
+        [
+          [
+            "Fundamental",
+            "5°",
+            "7°",
+            "11°",
+            "13°",
+            "17°",
+            "19°"
+          ],
+          [
+            "100%",
+            "3,6%",
+            "2,6%",
+            "7,5%",
+            "5,2%",
+            "1,2%",
+            "1,3%"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Resumen de la atenuación de armónicos\n9.5 Rectificador Coste de fabricación del 250%\nde 24 pulsos\ncon dos\ntransformadores\nde doble\nsecundario\nComponentes de intensidad de armónicos tipicos.\nFundamental\n5º 7º\n11°\n13°\n17º\n19°\n100%\n4,0% 2,7% 1,0% 0,7% 1,4% 1,4%\n9.6 Rectificador Coste de fabricación del 250%. No es significativo si aún\nde IGBT activo\nasí se requiere frenado eléctrico.\nComponentes de intensidad de armónicos tipicos.\nFundamental\n5°\n7º\n11º 13º 17º\n19°\n100%\n2,6% 3,4% 3,0% 0,1% 2,1% 2,2%\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n27",
+      "tablas": [
+        [
+          [
+            "Fundamental",
+            "5º",
+            "7º",
+            "11°",
+            "13°",
+            "17º",
+            "19°"
+          ],
+          [
+            "100%",
+            "4,0%",
+            "2,7%",
+            "1,0%",
+            "0,7%",
+            "1,4%",
+            "1,4%"
+          ]
+        ],
+        [
+          [
+            "Fundamental",
+            "5°",
+            "7º",
+            "11º",
+            "13º",
+            "17º",
+            "19°"
+          ],
+          [
+            "100%",
+            "2,6%",
+            "3,4%",
+            "3,0%",
+            "0,1%",
+            "2,1%",
+            "2,2%"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Capítulo 10 - Definiciones\nS:\nPotencia aparente\nP:\nPotencia activa\nQ:\nPotencia reactiva\nRsc: El coeficiente de cortocircuito se define como la\npotencia de cortocircuito de la alimentación en el PCC\ny la potencia nominal aparente del equipo bajo\nconsideración.\nRsc = Ss / Sn.\n01:\nFrecuencia angular del componente fundamental\n@1 = 2*T*f1, con f1 como la frecuencia fundamental\n(por ejemplo 50 Hz o 60 Hz).\nn:\nValor entero n = 2, 3, ... . Las frecuencias de\narmónicos se definen como wn = n*@1.\nIn:\nValor eficaz del componente armónico n:th de la\nintensidad de red.\nZn:\nImpedancia a frecuencia n*@1.\n%Un: Componente de la tensión de armónicos como un\nporcentaje de la tensión fundamental (de red).\nTHD: La Distorsión total por armónicos en la intensidad de\nentrada se define como:\n00\n>\nTHD :\n2\nh=2\nI\ndonde li es el valor eficaz de la intensidad de frecuencia\nfundamental. La THD en la tensión puede calcularse de forma\nsimilar. Este es un ejemplo para los 25 componentes\narmónicos menores con los valores teóricos:\nTHD\n1202 + 14,32 + 9,12 + 7,72 + 5,92 + 5,32 + 4,42 + 42\n100\nTHD = 29 %\nPWHD: La distorsión por armónicos parcial ponderada se\ndefine como:\n2\n40\nPWHD =\n-\nh\nh\nn=14\n1\n28\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Definiciones\nPCC: El Punto de acoplamiento común se define en este\ntexto como un punto de alimentación de la utilidad que\npuede ser común para el equipo en cuestión y para\notros equipos. Existen diversas definiciones del PCC\nen distintas normas e incluso más interpretaciones de\nestas definiciones en las publicaciones. La definición\nque se ha seleccionado aquí es la más coherente\ntécnicamente.\nPF:\nFactor de potencia definido como PF = P/S (potencia\n/ voltio-amperio) = I1 / Is * DPF (Con intensidad\nsinusoidal PF equivalente a DPF).\nDPF: Factor de potencia de desplazamiento definido como\ncoso1, donde 01 es el ángulo de fase entre la\nintensidad de frecuencia fundamental obtenida por el\nequipo y el componente de frecuencia fundamental de\nla tensión de alimentación.\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n29",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Capítulo 11 - Índice\n5º armónico 7\ndistorsión total de tensión 11\ndistorsión total por armónicos\nA\n10, 15, 23, 28\nABB 6\ndistribución de potencia 6\nalimentación para\nsoldadura\n8\nE\nalimentación pública 12\nefecto 5, 6, 8, 17, 18, 21, 22\nantiparalelo 20\nefecto de la conmutación 10\nÁrea Económica Europea\n12\nentrada de potencia 12\narmónico teórico\n10\nEtiquetaje CE\n12\narrancador de motor 8\nevaluación de armónicos\n16\natenuación 5, 26\nautoridad de alimentación\n14\nF\nfactor de potencia 16, 20, 29\nB\nfactor de potencia de\nbus de CC común 19\ndesplazamiento 20, 29\nfenómenos de armónicos\n6, 7\nC\nfiltrado 17, 18, 21, 24\ncable de alimentación 9, 18\nfiltrado externo\n17\ncálculo 5, 9, 10, 11, 12, 15, 16,\nfiltro activo 5, 24, 25\n23\nfiltro de paso bajo 18\ncálculo de distorsión\n5, 6\nfiltro pasivo 24, 25\ncarga del convertidor\n6\nfiltro pasivo de múltiples\ncarga no lineal 6, 8, 15, 16\nramas 5, 24, 25\ncoeficiente de corrección\n10\nfiltro pasivo de rama\ncoeficiente de\najustada 24\ncortocircuito\n22, 28\nfrecuencia 9, 12, 13, 14, 19,\ncompatibilidad\n24, 28, 29\nelectromagnética (EMC)\n22\nfrecuencia fundamental 7, 28,\ncomponente armónico 7, 19,\n29\n22, 24, 25, 28\nfuente 6, 8, 9, 21\ncondensador de CC 18\nfuente de alimentación\nconvertidor 6, 9, 10, 12, 18,\n20, 21\nininterrumpida 8\nconvertidores de velocidad\nI\nvariable 8\niluminación electrónica\n8\ncoste de fabricación 26, 27\nimpedancia de\ncortocircuito\n9\nD\nimpedancia de fuente 4, 9\ndispositivo electrónico 8\ninductancia 17, 18, 22, 23\ndistorsión por armónicos\n6,\ninductor 5, 18, 21, 22, 23, 24,\n8, 9, 10, 11, 12, 14, 15, 16, 19,\n26\n23, 25, 28\ninductor de CA\n21\ndistorsión total de\ninstalación 9, 12, 14, 15, 19,\ndemanda 15\n24, 25\ndistorsión total de\ninstalación del consumidor 14\nintensidad 11\ninstalación industrial 12\n30\nGuía técnica nº 6 - Guia de los armónicos con accionamientos de CA",
+      "tablas": [
+        [
+          [
+            "5º armónico 7",
+            "distorsión total de tensión 11 distorsión total por armónicos"
+          ],
+          [
+            "A",
+            "10, 15, 23, 28"
+          ],
+          [
+            "ABB 6",
+            "distribución de potencia 6"
+          ],
+          [
+            "alimentación para",
+            ""
+          ],
+          [
+            "soldadura 8",
+            "E"
+          ],
+          [
+            "alimentación pública 12",
+            "efecto 5, 6, 8, 17, 18, 21, 22"
+          ],
+          [
+            "antiparalelo 20",
+            "efecto de la conmutación 10"
+          ],
+          [
+            "Área Económica Europea 12",
+            "entrada de potencia 12"
+          ],
+          [
+            "armónico teórico 10",
+            "Etiquetaje CE 12"
+          ],
+          [
+            "arrancador de motor 8",
+            "evaluación de armónicos 16"
+          ],
+          [
+            "atenuación 5, 26",
+            ""
+          ],
+          [
+            "autoridad de alimentación 14",
+            "F"
+          ],
+          [
+            "",
+            "factor de potencia 16, 20, 29"
+          ],
+          [
+            "B",
+            "factor de potencia de"
+          ],
+          [
+            "bus de CC común 19",
+            "desplazamiento 20, 29"
+          ],
+          [
+            "",
+            "fenómenos de armónicos 6, 7"
+          ],
+          [
+            "C",
+            "filtrado 17, 18, 21, 24"
+          ],
+          [
+            "cable de alimentación 9, 18",
+            "filtrado externo 17"
+          ],
+          [
+            "cálculo 5, 9, 10, 11, 12, 15, 16,",
+            "filtro activo 5, 24, 25"
+          ],
+          [
+            "23",
+            "filtro de paso bajo 18"
+          ],
+          [
+            "cálculo de distorsión 5, 6",
+            "filtro pasivo 24, 25"
+          ],
+          [
+            "carga del convertidor 6",
+            "filtro pasivo de múltiples"
+          ],
+          [
+            "carga no lineal 6, 8, 15, 16",
+            "ramas 5, 24, 25"
+          ],
+          [
+            "coeficiente de corrección 10",
+            "filtro pasivo de rama"
+          ],
+          [
+            "coeficiente de",
+            "ajustada 24"
+          ],
+          [
+            "cortocircuito 22, 28",
+            "frecuencia 9, 12, 13, 14, 19,"
+          ],
+          [
+            "compatibilidad",
+            "24, 28, 29"
+          ],
+          [
+            "electromagnética (EMC) 22",
+            "frecuencia fundamental 7, 28,"
+          ],
+          [
+            "componente armónico 7, 19,",
+            "29"
+          ],
+          [
+            "22, 24, 25, 28",
+            "fuente 6, 8, 9, 21"
+          ],
+          [
+            "condensador de CC 18",
+            "fuente de alimentación"
+          ],
+          [
+            "convertidor 6, 9, 10, 12, 18, 20, 21",
+            "ininterrumpida 8"
+          ],
+          [
+            "convertidores de velocidad",
+            "I"
+          ],
+          [
+            "variable 8",
+            "iluminación electrónica 8"
+          ],
+          [
+            "coste de fabricación 26, 27",
+            "impedancia de cortocircuito 9"
+          ],
+          [
+            "D",
+            "impedancia de fuente 4, 9"
+          ],
+          [
+            "dispositivo electrónico 8",
+            "inductancia 17, 18, 22, 23"
+          ],
+          [
+            "distorsión por armónicos 6,",
+            "inductor 5, 18, 21, 22, 23, 24,"
+          ],
+          [
+            "8, 9, 10, 11, 12, 14, 15, 16, 19,",
+            "26"
+          ],
+          [
+            "23, 25, 28",
+            "inductor de CA 21"
+          ],
+          [
+            "distorsión total de",
+            "instalación 9, 12, 14, 15, 19,"
+          ],
+          [
+            "demanda 15",
+            "24, 25"
+          ],
+          [
+            "distorsión total de",
+            "instalación del consumidor 14"
+          ],
+          [
+            "intensidad 11",
+            "instalación industrial 12"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Índice\nintensidad de CC\n18\nR\nintensidad de red\n6, 18, 21\nrectificador 5, 6, 7, 10, 17, 18,\nintensidad rectangular\n7\n19, 20, 26, 27\nintensidades de armónicos 6,\nrectificador conmutado por\n7, 9, 10, 11, 12, 13, 15, 20, 21,\nfase 20\n22, 23, 26, 27\nrectificador de 6 pulsos\n7, 10,\ninterrupción de\n18, 19, 20\nconmutación 20\nrectificador de 12 pulsos\n10,\ninterruptor\n8\n18, 19, 20\nrectificador de 24 pulsos\n18,\nL\n19\nlímite de armónicos 12, 13,\nrectificador trifásico de 6\n14, 15, 16\npulsos 7\nlímite de compatibilidad\n12,\nreducción de armónicos 17,\n13\n24, 25\nM\nS\nmedición\n8\nsistema de accionamiento de\nmodificación estructural\n17,\npotencia 12\n18, 19, 20, 21, 22, 23\nsobrecalentamiento\n8\nmodo de rectificación 20\nsobrepar de tensión\n21\nmodo regenerativo 20\nT\nN\nTDD 15\nnomograma de distorsión 23\ntensión 6, 9, 10, 11, 12, 13, 14,\nnorma 12, 13, 14, 15, 18, 20,\n29\n17, 18, 19, 20, 21, 22, 23\ntension de alimentación\n6,\nnorma de producto EMC 12\n21, 29\nNorma Nacional Americana 14\ntensión de armónicos 10, 23,\n28\nO\nTHD 12, 14, 22, 23, 28\nordenador 8\ntiristor 17, 19, 20\ntransformador de\nalimentación 9, 18\nP\npantalla electrónica\n8\ntransformador de bobinado\nPHD 12\ndoble 19\npotencia activa 14, 28\ntransformador de red 6\npotencia aparente 28\ntransformador de triple\npotencia de cortocircuito\n9,\n14, 16, 17, 28\nbobinado 19\npotencia reactiva 21, 28\nprueba de laboratorio\n23\npuente IGBT 20, 21\npunto de acoplamiento común\n15, 29\nPWHD 14, 28\nGuía técnica nº 6 - Guía de los armónicos con accionamientos de CA\n31",
+      "tablas": [
+        [
+          [
+            "intensidad de CC 18",
+            "R"
+          ],
+          [
+            "intensidad de red 6, 18, 21",
+            "rectificador 5, 6, 7, 10, 17, 18,"
+          ],
+          [
+            "intensidad rectangular 7",
+            "19, 20, 26, 27"
+          ],
+          [
+            "intensidades de armónicos 6,",
+            "rectificador conmutado por"
+          ],
+          [
+            "7, 9, 10, 11, 12, 13, 15, 20, 21,",
+            "fase 20"
+          ],
+          [
+            "22, 23, 26, 27",
+            "rectificador de 6 pulsos 7, 10,"
+          ],
+          [
+            "interrupción de",
+            "18, 19, 20"
+          ],
+          [
+            "conmutación 20",
+            "rectificador de 12 pulsos 10,"
+          ],
+          [
+            "interruptor 8",
+            "18, 19, 20 rectificador de 24 pulsos 18,"
+          ],
+          [
+            "L",
+            "19"
+          ],
+          [
+            "límite de armónicos 12, 13,",
+            "rectificador trifásico de 6"
+          ],
+          [
+            "14, 15, 16",
+            "pulsos 7"
+          ],
+          [
+            "límite de compatibilidad 12,",
+            "reducción de armónicos 17,"
+          ],
+          [
+            "13",
+            "24, 25"
+          ],
+          [
+            "M",
+            "S"
+          ],
+          [
+            "medición 8",
+            "sistema de accionamiento de"
+          ],
+          [
+            "modificación estructural 17,",
+            "potencia 12"
+          ],
+          [
+            "18, 19, 20, 21, 22, 23",
+            "sobrecalentamiento 8"
+          ],
+          [
+            "modo de rectificación 20",
+            "sobrepar de tensión 21"
+          ],
+          [
+            "modo regenerativo 20",
+            ""
+          ],
+          [
+            "",
+            "T"
+          ],
+          [
+            "N",
+            "TDD 15"
+          ],
+          [
+            "nomograma de distorsión 23",
+            "tensión 6, 9, 10, 11, 12, 13, 14,"
+          ],
+          [
+            "norma 12, 13, 14, 15, 18, 20, 29",
+            "17, 18, 19, 20, 21, 22, 23"
+          ],
+          [
+            "tension de alimentación 6,"
+          ],
+          [
+            "norma de producto EMC 12",
+            "21, 29"
+          ],
+          [
+            "Norma Nacional Americana 14",
+            "tensión de armónicos 10, 23, 28"
+          ],
+          [
+            "O",
+            "THD 12, 14, 22, 23, 28"
+          ],
+          [
+            "ordenador 8",
+            "tiristor 17, 19, 20"
+          ],
+          [
+            "transformador de alimentación 9, 18"
+          ],
+          [
+            "P"
+          ],
+          [
+            "pantalla electrónica 8",
+            "transformador de bobinado"
+          ],
+          [
+            "PHD 12",
+            "doble 19"
+          ],
+          [
+            "potencia activa 14, 28",
+            "transformador de red 6"
+          ],
+          [
+            "potencia aparente 28",
+            "transformador de triple"
+          ],
+          [
+            "potencia de cortocircuito 9, 14, 16, 17, 28",
+            "bobinado 19"
+          ],
+          [
+            "potencia reactiva 21, 28",
+            ""
+          ],
+          [
+            "prueba de laboratorio 23",
+            ""
+          ],
+          [
+            "puente IGBT 20, 21",
+            ""
+          ],
+          [
+            "punto de acoplamiento común",
+            ""
+          ],
+          [
+            "15, 29",
+            ""
+          ],
+          [
+            "PWHD 14, 28",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "NORDICO\n014\nSO AMBIENTAL\nImpresos\nA\nM\n441\n3AFE 64328930 REV B ES 29.4.2002 Especificaciones sujetas a cambios sin previo aviso.\nABB\nABB Automation Products S.A.\nAccionamientos\nPolígono Industrial S.O.\n08192 Sant Quirze del Vallès\nBarcelona\nEspaña\nTeléfono 93 728 8700\nFax\n93 728 8743\nInternet http://www.abb.com/motors&drives",
+      "tablas": []
+    }
+  ]
+}

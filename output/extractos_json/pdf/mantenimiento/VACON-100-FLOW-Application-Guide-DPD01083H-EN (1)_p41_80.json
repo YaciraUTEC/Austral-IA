@@ -1,0 +1,3546 @@
+{
+  "archivo": "VACON-100-FLOW-Application-Guide-DPD01083H-EN (1)_p41_80",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.11\nMotor Nominal Speed\n24\n19200\nRPM\nVaries\n112\nFind this value nn on the nameplate of the mo-\ntor.\n1.12\nMotor Nominal Cur-\nrent\nIH * 0.1\nIH * 2\nA\nVaries\n113\nFind this value In on the nameplate of the mo-\ntor.\n1.13\nMotor Cos Phi (Power\nFactor)\n0.30\n1.00\nVaries\n120\nFind this value on the nameplate of the motor.\n1.14\nEnergy Optimization\n0\n1\n0\n666\n0 = Disabled\n1 = Enabled\n1.15\nIdentification\n0\n2\n0\n631\n0 = No action\n1 = At standstill\n2 = With rotation\n1.16\nStart Function\n0\n1\n0\n505\n0 = Ramping\n1 = Flying Start\n1.17\nStop Function\n0\n1\n0\n506\n0 = Coasting\n1 = Ramping\n1.18\nAutomatic Reset\n0\n1\n0\n731\n0 = Disabled\n1 = Enabled\n1.19\nResponse to External\nFault\n0\n3\n2\n701\n0 = No action\n1 = Alarm\n2 = Fault (Stop according to stop mode)\n3 = Fault (Stop by coasting)\n1.20\nResponse to AI Low\nFault\n0\n5\n0\n700\n0 = No action\n1 = Alarm\n2 = Alarm+preset fault frequency (P3.9.1.13)\n3 = Alarm + previous frequency\n4 = Fault (Stop according to stop mode)\n5 = Fault (Stop by coasting)\n1.21\nRemote Control Place\n0\n1\n0\n172\n0 = I/O control\n1 = Fieldbus control\n1.22\nI/O Control Reference\nA Selection\n1\n20\n6\n117\n1 = Preset Frequency 0\n2 = Keypad reference\n3 = Fieldbus\n4 = AI1\n5 = AI2\n6 = AI1+AI2\n7 = PID reference\n8 = Motor potentiometer\n11 = Block Out. 1\n12 = Block Out.2\n13 = Block Out.3\n14 = Block Out.4\n15 = Block Out.5\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 41",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.11",
+            "Motor Nominal Speed",
+            "24",
+            "19200",
+            "RPM",
+            "Varies",
+            "112",
+            "Find this value nn on the nameplate of the mo- tor."
+          ],
+          [
+            "1.12",
+            "Motor Nominal Cur- rent",
+            "IH * 0.1",
+            "IH * 2",
+            "A",
+            "Varies",
+            "113",
+            "Find this value In on the nameplate of the mo- tor."
+          ],
+          [
+            "1.13",
+            "Motor Cos Phi (Power Factor)",
+            "0.30",
+            "1.00",
+            "",
+            "Varies",
+            "120",
+            "Find this value on the nameplate of the motor."
+          ],
+          [
+            "1.14",
+            "Energy Optimization",
+            "0",
+            "1",
+            "",
+            "0",
+            "666",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "1.15",
+            "Identification",
+            "0",
+            "2",
+            "",
+            "0",
+            "631",
+            "0 = No action 1 = At standstill 2 = With rotation"
+          ],
+          [
+            "1.16",
+            "Start Function",
+            "0",
+            "1",
+            "",
+            "0",
+            "505",
+            "0 = Ramping 1 = Flying Start"
+          ],
+          [
+            "1.17",
+            "Stop Function",
+            "0",
+            "1",
+            "",
+            "0",
+            "506",
+            "0 = Coasting 1 = Ramping"
+          ],
+          [
+            "1.18",
+            "Automatic Reset",
+            "0",
+            "1",
+            "",
+            "0",
+            "731",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "1.19",
+            "Response to External Fault",
+            "0",
+            "3",
+            "",
+            "2",
+            "701",
+            "0 = No action 1 = Alarm 2 = Fault (Stop according to stop mode) 3 = Fault (Stop by coasting)"
+          ],
+          [
+            "1.20",
+            "Response to AI Low Fault",
+            "0",
+            "5",
+            "",
+            "0",
+            "700",
+            "0 = No action 1 = Alarm 2 = Alarm+preset fault frequency (P3.9.1.13) 3 = Alarm + previous frequency 4 = Fault (Stop according to stop mode) 5 = Fault (Stop by coasting)"
+          ],
+          [
+            "1.21",
+            "Remote Control Place",
+            "0",
+            "1",
+            "",
+            "0",
+            "172",
+            "0 = I/O control 1 = Fieldbus control"
+          ],
+          [
+            "1.22",
+            "I/O Control Reference A Selection",
+            "1",
+            "20",
+            "",
+            "6",
+            "117",
+            "1 = Preset Frequency 0 2 = Keypad reference 3 = Fieldbus 4 = AI1 5 = AI2 6 = AI1+AI2 7 = PID reference 8 = Motor potentiometer 11 = Block Out. 1 12 = Block Out.2 13 = Block Out.3 14 = Block Out.4 15 = Block Out.5"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplications\nApplication Guide\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n16 = Block Out.6\n17 = Block Out.7\n18 = Block Out.8\n19 = Block Out.9\n20 = Block Out. 10\n1.23\nKeypad Control Refer-\nence Selection\n1\n20\n1\n121\nSee P1.22.\n1.24\nFieldbus Control Ref-\nerence Selection\n1\n20\n2\n122\nSee P1.22.\n1.25\nAI1 Signal Range\n0\n1\n0\n379\n0= 0 ... 10 V/0 ... 20 mA\n1= 2 ... 10 V/4 ... 20 mA\n1.26\nAI2 Signal Range\n0\n1\n1\n390\n0= 0 ... 10 V/0 ... 20 mA\n1= 2 ... 10 V/4 ... 20 mA\n1.27\nRO1 Function\n0\n74\n2\n11001\nSee P3.5.3.2.1.\n1.28\nRO2 Function\n0\n74\n3\n11004\nSee P3.5.3.2.1.\n1.29\nRO3 Function\n0\n74\n1\n11007\nSee P3.5.3.2.1.\n1.30\nAO1 Function\n0\n31\n2\n10050\nSee P3.5.4.1.1.\nTable 8: M1.34 Multi-pump (Single Drive)\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.34.1\nPID Gain\n0.00\n100.00\n%\n100.00\n118\n1.34.2\nPID Integration Time\n0.00\n600.00\ns\n1.00\n119\n1.34.3\nPID Derivation Time\n0.00\n100.00\ns\n0.00\n132\n1.34.4\nProcess Unit Selection\n1\n44\n1\n1036\nSee P3.13.1.4\n1.34.5\nProcess Unit Min\nVaries\nVaries\nVaries\n1033\n1.34.6\nProcess Unit Max\nVaries\nVaries\nVaries\n1034\n1.34.7\nFeedback 1 Source Selection\n0\n30\n2\n334\nSee P3.13.3.3\n1.34.8\nSetpoint 1 Source Selection\n0\n32\n1\n332\nSee P3.13.2.6\n1.34.9\nKeypad Setpoint 1\nVaries\nVaries\nVaries\n0\n167\n1.34.10\nSP1 Sleep Frequency Limit\n0.0\n320.0\nHz\n0.0\n1016\n1.34.11\nSP1 Sleep Delay\n0\n3000\ns\n0\n1017\n0 = Not used\n1.34.12\nSP1 Wake Up Level\nVaries\nVaries\nVaries\nVaries\n1018\n0 = Not used\n1.34.13\nMulti-pump Mode\n0\n2\n0\n1785\n0= Single drive\n1= Multifollower\n2= Multimaster\n1.34.14\nNumber of Pumps\n1\n8\n1\n1001\n1.34.15\nPump Interlocking\n0\n1\n1\n1032\n0 = Disabled\n42 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "16 = Block Out.6 17 = Block Out.7 18 = Block Out.8 19 = Block Out.9 20 = Block Out. 10"
+          ],
+          [
+            "1.23",
+            "Keypad Control Refer- ence Selection",
+            "1",
+            "20",
+            "",
+            "1",
+            "121",
+            "See P1.22."
+          ],
+          [
+            "1.24",
+            "Fieldbus Control Ref- erence Selection",
+            "1",
+            "20",
+            "",
+            "2",
+            "122",
+            "See P1.22."
+          ],
+          [
+            "1.25",
+            "AI1 Signal Range",
+            "0",
+            "1",
+            "",
+            "0",
+            "379",
+            "0= 0 ... 10 V/0 ... 20 mA 1= 2 ... 10 V/4 ... 20 mA"
+          ],
+          [
+            "1.26",
+            "AI2 Signal Range",
+            "0",
+            "1",
+            "",
+            "1",
+            "390",
+            "0= 0 ... 10 V/0 ... 20 mA 1= 2 ... 10 V/4 ... 20 mA"
+          ],
+          [
+            "1.27",
+            "RO1 Function",
+            "0",
+            "74",
+            "",
+            "2",
+            "11001",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.28",
+            "RO2 Function",
+            "0",
+            "74",
+            "",
+            "3",
+            "11004",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.29",
+            "RO3 Function",
+            "0",
+            "74",
+            "",
+            "1",
+            "11007",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.30",
+            "AO1 Function",
+            "0",
+            "31",
+            "",
+            "2",
+            "10050",
+            "See P3.5.4.1.1."
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.34.1",
+            "PID Gain",
+            "0.00",
+            "100.00",
+            "%",
+            "100.00",
+            "118",
+            ""
+          ],
+          [
+            "1.34.2",
+            "PID Integration Time",
+            "0.00",
+            "600.00",
+            "s",
+            "1.00",
+            "119",
+            ""
+          ],
+          [
+            "1.34.3",
+            "PID Derivation Time",
+            "0.00",
+            "100.00",
+            "s",
+            "0.00",
+            "132",
+            ""
+          ],
+          [
+            "1.34.4",
+            "Process Unit Selection",
+            "1",
+            "44",
+            "",
+            "1",
+            "1036",
+            "See P3.13.1.4"
+          ],
+          [
+            "1.34.5",
+            "Process Unit Min",
+            "Varies",
+            "Varies",
+            "",
+            "Varies",
+            "1033",
+            ""
+          ],
+          [
+            "1.34.6",
+            "Process Unit Max",
+            "Varies",
+            "Varies",
+            "",
+            "Varies",
+            "1034",
+            ""
+          ],
+          [
+            "1.34.7",
+            "Feedback 1 Source Selection",
+            "0",
+            "30",
+            "",
+            "2",
+            "334",
+            "See P3.13.3.3"
+          ],
+          [
+            "1.34.8",
+            "Setpoint 1 Source Selection",
+            "0",
+            "32",
+            "",
+            "1",
+            "332",
+            "See P3.13.2.6"
+          ],
+          [
+            "1.34.9",
+            "Keypad Setpoint 1",
+            "Varies",
+            "Varies",
+            "Varies",
+            "0",
+            "167",
+            ""
+          ],
+          [
+            "1.34.10",
+            "SP1 Sleep Frequency Limit",
+            "0.0",
+            "320.0",
+            "Hz",
+            "0.0",
+            "1016",
+            ""
+          ],
+          [
+            "1.34.11",
+            "SP1 Sleep Delay",
+            "0",
+            "3000",
+            "s",
+            "0",
+            "1017",
+            "0 = Not used"
+          ],
+          [
+            "1.34.12",
+            "SP1 Wake Up Level",
+            "Varies",
+            "Varies",
+            "Varies",
+            "Varies",
+            "1018",
+            "0 = Not used"
+          ],
+          [
+            "1.34.13",
+            "Multi-pump Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "1785",
+            "0= Single drive 1= Multifollower 2= Multimaster"
+          ],
+          [
+            "1.34.14",
+            "Number of Pumps",
+            "1",
+            "8",
+            "",
+            "1",
+            "1001",
+            ""
+          ],
+          [
+            "1.34.15",
+            "Pump Interlocking",
+            "0",
+            "1",
+            "",
+            "1",
+            "1032",
+            "0 = Disabled"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1 = Enabled\n1.34.16\nAutochange\n0\n2\n1\n1027\n0 = Disabled\n1 = Enabled (interval)\n2 = Enabled (weekdays)\n1.34.17\nAutochanged Pump\n0\n1\n1\n1028\n0 = Auxiliary Pump\n1 = All Pumps\n1.34.18\nAutochange Interval\n0.0\n3000.0\nh\n48.0\n1029\n1.34.19\nAutochange Days\n0\n127\n15904\nB0 = Sunday\nB1 = Monday\nB2 = Tuesday\nB3 = Wednesday\nB4 = Thursday\nB5 = Friday\nB6 = Saturday\n1.34.20\nAutochange Time of Day\n00:00:00\n23:59:59\nTime\n15905\nRange: 00:00:00-23:59:59\n1.34.21\nAutochange: Frequency Limit\n0.00\nP3.3.1.2\nHz\n25:00\n1031\n1.34.22\nAutochange: Pump Limit\n1\n4\n1030\n1.34.23\nBandwidth\n0\n100\n%\n10\n1097\n1.34.24\nBandwidth Delay\n0\n3600\ns\n10\n1098\n1.34.25\nPump 1 Interlock\nDigIN Slot0.1\n426\nOPEN = Not active\nCLOSED = Active\n1.34.26\nPump 2 Interlock\nDigIN Slot0.1\n427\nSee 1.34.25\n1.34.27\nPump 3 Interlock\nDigIN Slot0.1\n428\nSee 1.34.25\n1.34.28\nPump 4 Interlock\nDigIN Slot0.1\n429\nSee 1.34.25\n1.34.29\nPump 5 Interlock\nDigIN Slot0.1\n430\nSee 1.34.25\n1.34.30\nPump 6 Interlock\nDigIN Slot0.1\n486\nSee 1.34.25\n1.34.31\nPump 7 Interlock\nDigIN Slot0.1\n487\nSee 1.34.25\n1.34.32\nPump 8 Interlock\nDigIN Slot0.1\n488\nSee 1.34.25\n3.5 Multi-pump (Multidrive) Application\nUse the Multi-pump (multidrive) application in a system that has the maximum of 8 parallel speed motors with different speeds, for\nexample, pumps, fans or compressors. By default, the Multi-pump (Multidrive) application is configured for 3 parallel motors.\nThe checklist for the commissioning a Multi-pump (multidrive) system is in 11.17.1.1 Commissioning Multi-pump (Multidrive).\nEach motor has a drive controls that applicable motor. The drives of the system communicate with each other by Modbus RTU com-\nmunication.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 43",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "1 = Enabled"
+          ],
+          [
+            "1.34.16",
+            "Autochange",
+            "0",
+            "2",
+            "",
+            "1",
+            "1027",
+            "0 = Disabled 1 = Enabled (interval) 2 = Enabled (weekdays)"
+          ],
+          [
+            "1.34.17",
+            "Autochanged Pump",
+            "0",
+            "1",
+            "",
+            "1",
+            "1028",
+            "0 = Auxiliary Pump 1 = All Pumps"
+          ],
+          [
+            "1.34.18",
+            "Autochange Interval",
+            "0.0",
+            "3000.0",
+            "h",
+            "48.0",
+            "1029",
+            ""
+          ],
+          [
+            "1.34.19",
+            "Autochange Days",
+            "0",
+            "127",
+            "",
+            "",
+            "15904",
+            "B0 = Sunday B1 = Monday B2 = Tuesday B3 = Wednesday B4 = Thursday B5 = Friday B6 = Saturday"
+          ],
+          [
+            "1.34.20",
+            "Autochange Time of Day",
+            "00:00:00",
+            "23:59:59",
+            "Time",
+            "",
+            "15905",
+            "Range: 00:00:00-23:59:59"
+          ],
+          [
+            "1.34.21",
+            "Autochange: Frequency Limit",
+            "0.00",
+            "P3.3.1.2",
+            "Hz",
+            "25:00",
+            "1031",
+            ""
+          ],
+          [
+            "1.34.22",
+            "Autochange: Pump Limit",
+            "1",
+            "4",
+            "",
+            "",
+            "1030",
+            ""
+          ],
+          [
+            "1.34.23",
+            "Bandwidth",
+            "0",
+            "100",
+            "%",
+            "10",
+            "1097",
+            ""
+          ],
+          [
+            "1.34.24",
+            "Bandwidth Delay",
+            "0",
+            "3600",
+            "s",
+            "10",
+            "1098",
+            ""
+          ],
+          [
+            "1.34.25",
+            "Pump 1 Interlock",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "426",
+            "OPEN = Not active CLOSED = Active"
+          ],
+          [
+            "1.34.26",
+            "Pump 2 Interlock",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "427",
+            "See 1.34.25"
+          ],
+          [
+            "1.34.27",
+            "Pump 3 Interlock",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "428",
+            "See 1.34.25"
+          ],
+          [
+            "1.34.28",
+            "Pump 4 Interlock",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "429",
+            "See 1.34.25"
+          ],
+          [
+            "1.34.29",
+            "Pump 5 Interlock",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "430",
+            "See 1.34.25"
+          ],
+          [
+            "1.34.30",
+            "Pump 6 Interlock",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "486",
+            "See 1.34.25"
+          ],
+          [
+            "1.34.31",
+            "Pump 7 Interlock",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "487",
+            "See 1.34.25"
+          ],
+          [
+            "1.34.32",
+            "Pump 8 Interlock",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "488",
+            "See 1.34.25"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\n3~\n-\ne30bi977.10\nA\n0\n0\n0\n0\nM\nM2\nM3\nM\nM2\nB\nM3\nIllustration 15: Multi-pump (Multidrive) Configuration\nA\nStart / Stop\nB\nPressure sensor\nIt is possible to control a process variable, the pressure, for example, by the control of the speed of the regulating motor and by the\nnumber of motors that operate. The internal PID controller in the drive of the regulating motor controls the speed, the start and\nstop of the motors.\nThe selected operation mode specifies the operation of the system. In the Multifollower mode, auxiliary motors follow the speed of\nthe regulating motor.\nPump 1 controls and pumps 2 and 3 follow the speed of pump 1, as the curves A show.\nRPM\nf\nmax\ne30bi978.10\n1\n== =\nA\nf\nmin\nt\nP1\nP2\nP3\nIllustration 16: Control in the Multifollower Mode\n44 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "A",
+            "Start / Stop"
+          ],
+          [
+            "B",
+            "Pressure sensor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nThe figure Illustration 17 shows an example of the Multimaster mode, where the speed of the regulating motor locks to the con-\nstant production speed B, when next motor starts. Curves A show the regulating of the pumps.\nRPM\nB\ne30bj007.10\nf\nmax\n=\nA\nf\nmin\nt\nP1\nP2\nP3\nIllustration 17: Control in the Multimaster Mode\nA\nCurves A show the control of the pumps\nB\nThe pumps are locked to the constant production frequency\nAutochange function (change of start order) makes the wear of the motors in the system more equal. Autochange function moni-\ntors the running hours and sets the start order of each motor. The motor that has the lowest running hours starts first and the motor\nthat has the highest running hours starts last. It is possible to configure the autochange to start based on the autochange interval\ntime or on the internal real-time clock of the drive (an RTC battery needed).\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 45",
+      "tablas": [
+        [
+          [
+            "A",
+            "Curves A show the control of the pumps"
+          ],
+          [
+            "B",
+            "The pumps are locked to the constant production frequency"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "VACON® 100 FLOW\nApplication Guide\n2-wire transducer\nActual value\n(0)4 ... 20 mA\n-\n+\nmA\n1\nRUN\nTo terminal\nA on other\ndrives\nTo terminal\nB on other\ndrives\nFAULT\nDanfoss\nApplications\nStandard I/O board\nTerminal\nSignal\nDescription\n1\n+10 Vref\nReference output\n2\nAI1+\nAnalog input 1 +\nNot in use by default\n(default: 0 ... 10 V)\n3\nAI1-\nAnalog input 1 -\n4\nAI2+\nAnalog input 2 +\nPID feedback\n(actual value)\n(Default 4 ... 20 mA)\n5\nAI2-\nAnalog input 2 -\n6\n24 Vout\n24 V auxiliary voltage\n7\nGND\nI/O ground\n8\nDI1\nDigital input 1\nStart forward\n9\nDI2\nDigital input 2\nFlushing\n(StartForward + Flushing Freg.)\n10\nDI3\nDigital input 3\nPID Setpoint Selection\n(Open =Keypad SP1, Closed =Keypad SP2)\n11\nCM\nCommon for DI1-DI6\n12\n24 Vout\n24 V auxiliary voltage\n13\nGND\nI/O ground\n14\nDI4\nDigital input 4\nFault reset\n15\nDI5\nDigital input 5\nPump Interlock\n(Open=Not Available, Closed =Available)\n16\nDI6\nDigital input 6\nExternal Fault\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nAnalog output 1 +\nOutput\nfrequency\n(0 ... 20 mA)\n19\nAO1-\nAnalog output 1 -\n30\n+24 Vin\n24 V auxiliary\ninput voltage\nA\nRS485\nSerial bus, negative\nDrive-to-Drive\nCommunication\n(Modbus RTU )\nB\nRS485\nSerial bus, positive\n21\nRO1/1 NC\nRelay output 1\nRUN\n22\nRO1/2 CM\n23\nRO1/3 NO\n24\nRO2/1 NC\nRelay output 2\nFAULT\n25\nRO2/2 CM\n26\nRO2/3 NO\n28\nTI1+\nThermistor input\n*)\n29\nTI1-\n32\nRO3/2 CM\nRelay output 3\n** )\nREADY\n33\nRO3/3 NO\ne30bj006.10\nIllustration 18: The Default Control Connections of the Multi-pump (Multidrive) Application\n*) Available only in VACON® 100 X. ** ) For the DIP switch configurations in VACON® 100 X, see the VACON® 100 X Installation man-\nual.\n46 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Standard I/O board"
+          ],
+          [
+            "Terminal",
+            "Signal",
+            "Description"
+          ],
+          [
+            "1",
+            "+10 Vref",
+            "",
+            "Reference output",
+            ""
+          ],
+          [
+            "2",
+            "AI1+",
+            "",
+            "Analog input 1 +",
+            "Not in use by default (default: 0 ... 10 V)"
+          ],
+          [
+            "3",
+            "AI1-",
+            "",
+            "Analog input 1 -"
+          ],
+          [
+            "4",
+            "AI2+",
+            "",
+            "Analog input 2 +",
+            "PID feedback (actual value) (Default 4 ... 20 mA)"
+          ],
+          [
+            "5",
+            "AI2-",
+            "",
+            "Analog input 2 -"
+          ],
+          [
+            "6",
+            "24 Vout",
+            "",
+            "24 V auxiliary voltage",
+            ""
+          ],
+          [
+            "7",
+            "GND\n:selected:",
+            "",
+            "I/O ground",
+            ""
+          ],
+          [
+            "8",
+            "DI1\n:unselected:",
+            "",
+            "Digital input 1",
+            "Start forward"
+          ],
+          [
+            "9",
+            "DI2\n:unselected:",
+            "",
+            "Digital input 2",
+            "Flushing (StartForward + Flushing Freg.)"
+          ],
+          [
+            "10",
+            "DI3\n:unselected: :unselected:",
+            "",
+            "Digital input 3",
+            "PID Setpoint Selection (Open =Keypad SP1, Closed =Keypad SP2)"
+          ],
+          [
+            "11",
+            "CM\n:selected:\n:unselected:",
+            "",
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "12",
+            "24 Vout :unselected:\n:unselected:",
+            "",
+            "24 V auxiliary voltage",
+            ""
+          ],
+          [
+            "13",
+            "GND :selected:",
+            "",
+            "I/O ground",
+            ""
+          ],
+          [
+            "14",
+            "DI4\n:unselected: :unselected:",
+            "",
+            "Digital input 4",
+            "Fault reset"
+          ],
+          [
+            "15",
+            "DI5 :unselected:\n:unselected:",
+            "",
+            "Digital input 5",
+            "Pump Interlock (Open=Not Available, Closed =Available)"
+          ],
+          [
+            "16",
+            "DI6\n:unselected: :unselected:",
+            "",
+            "Digital input 6",
+            "External Fault"
+          ],
+          [
+            "17",
+            "CM\n:unselected:",
+            "",
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "18",
+            "AO1+\n:unselected:",
+            "",
+            "Analog output 1 +",
+            "Output frequency (0 ... 20 mA)"
+          ],
+          [
+            "19",
+            "AO1- :selected:",
+            "",
+            "Analog output 1 -"
+          ],
+          [
+            "30",
+            "+24 Vin",
+            "",
+            "24 V auxiliary input voltage",
+            ""
+          ],
+          [
+            "A",
+            "RS485",
+            "",
+            "Serial bus, negative",
+            "Drive-to-Drive Communication (Modbus RTU )"
+          ],
+          [
+            "B",
+            "RS485",
+            "Serial bus, positive"
+          ],
+          [
+            "21",
+            "RO1/1 NC",
+            ":unselected: Relay output 1",
+            "RUN"
+          ],
+          [
+            "22",
+            "RO1/2 CM"
+          ],
+          [
+            "23",
+            "RO1/3 NO"
+          ],
+          [
+            "24",
+            "RO2/1 NC",
+            "",
+            "Relay output 2",
+            "FAULT"
+          ],
+          [
+            "25",
+            "RO2/2 CM"
+          ],
+          [
+            "26",
+            "RO2/3 NO"
+          ],
+          [
+            "28",
+            "TI1+",
+            "",
+            "Thermistor input",
+            "*)"
+          ],
+          [
+            "29",
+            "TI1-"
+          ],
+          [
+            "32",
+            "RO3/2 CM",
+            "",
+            "Relay output 3",
+            "** ) READY"
+          ],
+          [
+            "33",
+            "RO3/3 NO"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nA\nB\ne30bg589.10\nAl1\nA12\n000000000\nDIO's\n(FLOAT\nDIO's\nFLOAT\nGND\nGND\nC\n300000\nIllustration 19: The DIP Switch\nA\nDigital input DIP switch\nC\nConnected to GND (Default)\nB\nFloating\nEach drive has a pressure sensor. When the redundancy level is high, the drive and the pressure sensors are redundant.\n· If there is a drive failure, the next drive starts to operate as master.\n· If there is a sensor failure, the next drive (that has a separate sensor) starts to operate as master.\nAn individual switch that has an auto, off and man setting controls each drive.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 47",
+      "tablas": [
+        [
+          [
+            "A",
+            "Digital input DIP switch",
+            "C Connected to GND (Default)"
+          ],
+          [
+            "B",
+            "Floating",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDRIVE 1\nVACON 100 FLOW\n1\n=\n=\n1\n=\n1\nP\nI\n1\nDanfoss\nApplications\nDRIVE 2\nVACON 100 FLOW\n=\n=\n2\n=\nP\nI\n1\n0\n15\n1\n3\n2\n4\n2\n1\n3\n4\nFO PEROANCE\n5\n1\n6\n7\n8\n9\nFLUSHING\nCM\nFAULT BESET\n25\nPUMA ATTALDCE\nDRIVE 3\nVACON 100 FLOW\n=\n=\nP\nI\n3\n=\ne30bi990.10\n2\n3\n4\n5\n6\n7\n8\n9\n0\n1\n3\n2\n4\nPam INATTALOCK\n1\nA\nB\n1\n0\n35\nA\nB\n1\n2\n[\n3\n4\n5\n6\n7\n8\n9\n1\n3\n2\n4\nPUMP ITTALOCK\nA\nB\nU\nU\nU\nI\nI\nU\nU\nU\nI\nI\nI\nI\nU\nU\nU\nI\nI\nI\n2-WIRE\nTRANSMITTER\nP\nPRESSURE\nSENSOR 1\nI\n+\n-\n0\nAUTO · MAN\n1\n3\n1S1\n2\n4\nDRIVE 1\nVACON 100 FLOW\nP1.2\nP3.15.3\nApplication\nPump ID Number\nStart & Feedback\nP3.15.4\n= Multipump(MultiDrive)\n= 1\n= Signals Connected\n1\n+10VeF\nVref\nAI2+\nReference voltage\n2\nNOT USED (0 ... 10V)\n3\nAI1-\n4\nAI2+\nPID FEEDBACK (4 ... 20mA)\n5\nAI2-\n6\n. +24Vou\n7\nGND .\nDIN1\n24V auxilary voltage out\nI/O ground\nSTART FORWARD\n8\n9\nDIN2\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n10\nDIN3\n11\nCM\n24V auxilary voltage out\n+24 out\n12\n13\n.\nGND\nI/O ground\n14\nDIN4\nFAULT RESET\nPUMP INTERLOCK\n(Not in use by default)\n15\nDIN5\n16\nDIN6\nEXTERNAL FAULT\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nOUTPUT FREQUENCY\nJ(0 ... 20mA)\n19\nAO1- ·\n30\n+24V\n24V auxilary voltage in\nA\nRS485\n] Drive-To-Drive\nCommunication\n(Modbus RTU)\nB\nRS485\n21\nRO1\n22\nRO1\n23\nRO1\nRelay Output 1\n(RUN)\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nAI1\nFLOAT\nU\nAO\nI\nGND\nU\nI\nI\nRS485\ntermination\nOFF\nAI2\nU\nI\nON\nIllustration 20: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 1A\n48 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nDRIVE 1\nVACON 100 FLOW\n=\n=\n1\n=\nP\nI\n1\n1\nP\nI\nDRIVE 2\nVACON 100 FLOW\n=\n2\n=\n1\nDRIVE 3\nVACON 100 FLOW\n=\n=\n3\n1\ne30bi991.10\n0\n15\n1\n3\n2\n4\n2\n1\n3\n4\n1\n5\n6\n7\n8\n9\n1 25\nSAULTABLET\n1\nA\nB\n1\nPZPUT PARQUE NICH\n2\n1\n3\n1\n1\n4\nHO FEEDBACK\n5\n6\n7\n8\n9\n1\n0\n1\n3\n2\n4\n1 35\nCH\nINTERNAL FAULT\nNTPUT FRE QUEINCH\nA\nB\n1\nP\nI\n0\n1\n3\n2\n4\n=\n1\n2\n3\n4\n5\n6\n7\n8\n9\nA\nB\nU\nU\nU\nI\nI\nU\nU\nU\nI\nI\nI\nI\nU\nI\nU\nU\nI\nI\nDRIVE 1\n2-WIRE\nTRANSMITTER\nP\nPRESSURE\nI\nSENSOR 1\nVACON 100 FLOW\nP1.2\nP3.15.3\nApplication\nPump ID Number\n= Multipump(MultiDrive)\n=1\nP3.15.4\nStart & Feedback\n= Signals Connected\n1\n+10Vef\nReference voltage\n+\n-\n2\nAI2+\nNOT USED (0 ... 10V)\n3\nAI1-\n4\nAI2+\nPID FEEDBACK (4 ... 20mA)\n5\nAI2-\n6\n+24V\nout\n24V auxilary voltage out\n7\nGND ,\nI/O ground\nMAN\n8\nDIN1\nSTART FORWARD\nFLUSHING\n9\nDIN2\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n10\nDIN3\n(Open=Keypad SP1, Closed=Keypad SP2)\nAUTO 0\n1\n3\n11\nCM\nCommon for DI1-DI6\n1S1\n12\n+ +24 out\n24V auxilary voltage out\n2\n4\n13\nGND\n.\nI/O ground\n14\nDIN4\nFAULT RESET\nPUMP INTERLOCK\n15\nDIN5\n(Not in use by default)\n16\nDIN6\nEXTERNAL FAULT\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nOUTPUT FREQUENCY\n19\nAO1-\n(0 ... 20mA)\n30\n+24V\n24V auxilary voltage in\nA\nRS485\nDrive-To-Drive\nCommunication\nB\nRS485\n(Modbus RTU)\n21\nRO1\nRelay Output 1\n22\nRO1\n(RUN)\n23\nRO1\n24\nRO2\nRelay Output 2\n25\nRO2\n(FAULT)\n26\nRO2\nRelay Output 3\n32\nRO3\n(READY)\n33\nRO3\nDIO'S\nAI1\nAO\nFLOAT\nU\nU\nI\nGND\nI\nAI2\nRS485\ntermination\nU\nI\nOFF\nON\nIllustration 21: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 1B\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 49",
+      "tablas": [
+        [
+          [
+            "",
+            "DRIVE 1"
+          ],
+          [
+            "2-WIRE TRANSMITTER P PRESSURE I SENSOR 1\n:selected:",
+            "VACON 100 FLOW"
+          ],
+          [
+            "",
+            "P1.2 P3.15.3 Application Pump ID",
+            "Number = Multipump(MultiDrive) =1\n:unselected: :unselected:"
+          ],
+          [
+            "",
+            "P3.15.4 Start & Feedback = Signals Connected\n:unselected: :unselected:"
+          ],
+          [
+            "",
+            "1",
+            "+10Vef",
+            "Reference voltage",
+            ":unselected: :unselected:"
+          ],
+          [
+            "",
+            "",
+            "+",
+            "",
+            "-",
+            "",
+            "2",
+            "AI2+",
+            "NOT USED (0 ...",
+            ":unselected:"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "3",
+            "AI1-",
+            "10V)",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "4",
+            "AI2+",
+            "PID FEEDBACK (4 ... 20mA)",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "5",
+            "AI2-",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "6",
+            "+24V out",
+            "24V auxilary voltage out",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "7",
+            "GND ,",
+            "I/O ground",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "8",
+            "DIN1",
+            "START FORWARD"
+          ],
+          [
+            "",
+            "",
+            "",
+            "9",
+            "DIN2",
+            "FLUSHING\n(Start Forward + Flushing Freq.)"
+          ],
+          [
+            "",
+            "",
+            "",
+            "10",
+            "DIN3",
+            "PID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad",
+            "SP2)"
+          ],
+          [
+            "",
+            "1 3",
+            "",
+            "11",
+            "CM",
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "1S1",
+            "AUTO 0",
+            "MAN",
+            "",
+            "",
+            "",
+            "12",
+            "+ +24 out",
+            "24V auxilary voltage out",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "2 4",
+            "",
+            "13",
+            "GND .",
+            "I/O ground",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "14",
+            "DIN4",
+            "FAULT RESET",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "15",
+            "DIN5",
+            "PUMP INTERLOCK\n(Not in use by default)",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "16",
+            "DIN6",
+            "EXTERNAL FAULT",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "17",
+            "CM",
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "18",
+            "AO1+",
+            "OUTPUT FREQUENCY",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "19",
+            "AO1-",
+            "(0 ... 20mA)",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "30",
+            "+24V",
+            "24V auxilary voltage in",
+            ""
+          ],
+          [
+            "",
+            "",
+            "A",
+            "RS485",
+            "Drive-To-Drive Communication",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "B",
+            "RS485",
+            "(Modbus RTU)",
+            ""
+          ],
+          [
+            "21",
+            "RO1",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "22",
+            "RO1",
+            "Relay Output 1\n(RUN)",
+            ""
+          ],
+          [
+            "23",
+            "RO1",
+            "",
+            ""
+          ],
+          [
+            "24",
+            "RO2",
+            "",
+            ""
+          ],
+          [
+            "25",
+            "RO2",
+            "Relay Output 2\n(FAULT)",
+            ""
+          ],
+          [
+            "26",
+            "RO2",
+            "",
+            ""
+          ],
+          [
+            "32",
+            "RO3",
+            "Relay Output 3\n(READY)",
+            ""
+          ],
+          [
+            "",
+            "33",
+            "RO3",
+            "",
+            ""
+          ],
+          [
+            "",
+            "DIO'S AI1 AO"
+          ],
+          [
+            "",
+            "FLOAT U",
+            "U I"
+          ],
+          [
+            "GND I"
+          ],
+          [
+            "",
+            "",
+            "AI2",
+            "RS485 termination"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "U",
+            "OFF ON",
+            ""
+          ],
+          [
+            "",
+            "",
+            "I",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDRIVE 1\nVACON 100 FLOW\n=\n=\n1\n=\nP\nI\n1\nDanfoss\nApplications\nDRIVE 2\nVACON 100 FLOW\n=\n=\n2\n=\nP\nI\n1\n0\n15\n1\n3\n2\n4\n2\n3\n4\nRO PEROANCE\n5\n6\n7\n8\n9\n0\n25\nA\nB\n1\n3\n2\n4\nDRIVE 3\nVACON 100 FLOW\n-\n=\n=\nP\nI\n3\n=\ne30bi992.10\n2\n3\n4\n5\n6\n7\n8\n9\n1\n2\n3\n4\n5\n6\n7\n8\nSTART POURNAD\n9\nPam INATTALOCK\n0\n1\n35\n3\n2\n1\n4\nPRI QUINCY\nA\nB\nPUMP INTERLOCK\nPATPVC PRI QUINCY\nA\nB\nU\nU\nU\nU\nI\nI\nI\nI\nU\nU\nI\nI\n2-WIRE\nTRANSMITTER\nP\nPRESSURE\nSENSOR 1\nI\n+\n-\n1S1\nAUTO\n2\n4\n1\n3\nMAN\nU\nU\nI\nI\nU\n-\nI\nDRIVE 1\nVACON 100 FLOW\nP1.2\nP3.15.3\nP3.15.4\nApplication\nPump ID Number\nStart & Feedback\n= Multipump(MultiDrive)\n= 1\n= Signals Connected\n1\nVref\nAI2+\nReference voltage\n2\nNOT USED (0 ... 10V)\n3\nAI1-\n4\nAI2+\nPID FEEDBACK (4 ... 20mA)\n5\nAI2-\n6\n. +24V\n24V auxilary voltage out\n7\nGND .\nDIN1\nI/O ground\nSTART FORWARD\n8\n9\nDIN2\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n10\nDIN3\n11\nCM\n12\n+24Vout\n24V auxilary voltage out\n13\n.\nGND\nI/O ground\n14\nDIN4\nFAULT RESET\n15\nDIN5\nPUMP INTERLOCK\n(Not in use by default)\n16\nDIN6\nEXTERNAL FAULT\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nOUTPUT FREQUENCY\n19\nAO1- ·\n(0 ... 20mA)\n30\n+24V\n24V auxilary voltage in\nA\nRS485\n] Drive-To-Drive\nCommunication\n(Modbus RTU)\nB\nRS485\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1\n(RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nFLOAT\nGND\nAI1\nAO\nU\nI\nU\nI\nI\nRS485\nAI2\ntermination\nU\nOFF\nI\nI\nON\nIllustration 22: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 1C\n1 sensor is connected to all the drives. The redundancy level of the system is low because only the drives are redundant.\n· If there is a drive failure, the next drive starts to operate as master.\n· If there is a sensor failure, the system stops.\n50 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nAn individual switch that has an auto, off and man setting controls each drive. Terminal 17 connects +24 V between the drive 1 and\n2. External diodes are connected between terminals 1 and 2. The digital input signals use negative logic (ON = OV).\nDRIVE 1\nDRIVE 2\nDRIVE 3\nVACON 100 FLOW\nVACON 100 FLOW\nVACON 100 FLOW\ne30bi993.10\n-\n125\n351\n1\n2\n3\n4\n5\n6\n7\n8\n9\nA\nB\n0\nP\nI\n2\n4\n1\n3\n0\n2\n4\n1\n3\n0\n2\n4\n1\n3\nU\nI\nU\nI\nU\nU\nU\nI\nU\nI\n1\n2\n3\n4\n5\n6\n7\n8\n9\nA\nB\n1\n2\n4\n5\n6\n7\n8\n9\nA\nB\n=\n=\n1\n=\n=\n=\n3\n+\n-\n3\nI\nI\nU\nU\nU\nI\nI\nI\n2-WIRE\nTRANSMITTER\nP\nPRESSURE\nSENSOR 1\nI\n+\n-\n0\nMAN\n'151\nAUTO\n1\n3\n2\n4\nDRIVE 1\nVACON 100 FLOW\nP1.2\nP3.15.3\nApplication\n= Multipump(MultiDrive)\nPump ID Number\nStart & Feedback\nP3.15.4\n=\n1\n= Signals Connected\n1\n+10Vf\nYer\nAI2+\n2\n3\nAI1-\n4\nAI2+\n5\nAI2-\n6\nReference voltage\nNOT USED (0 ... 10V)\nPID FEEDBACK (4 ... 20mA)\n· +24Vout\n7\nGND\n8\nDIN1\n9\nDIN2\n10\nDIN3\n11\nCM\n24V auxilary voltage out\nI/O ground\nSTART FORWARD\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n12\n. +24V\nout\n13\nGND\n.\n14\nDIN4\n15\nDIN5\n16\nDIN6\n17\nCM\n.\n18\nAO1+\n19\nAO1- ·\n30\n+24V\nA\nRS485\nB\nRS485\n24V auxilary voltage out\nI/O ground\nFAULT RESET\nPUMP INTERLOCK\n(Not in use by default)\nEXTERNAL FAULT\nCommon for DI1-DI6\nOUTPUT FREQUENCY\n(0 ... 20mA)\n24V auxilary voltage in\nDrive-To-Drive\nCommunication\n(Modbus RTU)\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1\n(RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nFLOAT\nGND\nAI1\nAO\nU\nI\nU\nI\nRS485\ntermination\nOFF\nAI2\nU\nI\nON\nIllustration 23: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 2A\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 51",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nP\nI\n+\n-\n0\n1\n3\n15\n2\n4\nDRIVE 1\nVACON 100 FLOW\n=\n=\n1\n1\n2\n3\n4\n5\n6\n7\n8\n9\n1\n0\n1\n125\n3\n2\n-\n4\nDRIVE 2\nVACON 100 FLOW\n1\n=\n=\n1\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n351\ne30bi994.10\nDRIVE 3\nVACON 100 FLOW\n=\n3\n1\n2\n3\n4\n5\n6\n7\n8\n9\n1\n3\n2\n4\nA\nA\nB\nB\n----\nA\nB\n-\nU\nU\nU\nU\nU\nU\nI\nI\nI\nI\nI\nI\nU\nU\nU\nI\nI\nI\nDRIVE 2\nVACON 100 FLOW\nP1.2\nP3.15.3\nApplication\nPump ID Number\n= Multipump(MultiDrive)\n= 2\nP3.15.4\nStart & Feedback\n= Signals Connected\n1\n3\n1\nref\n+10VF\nReference voltage\n2\nAI2+\nNOT USED (0 ... 10V)\n3\nAI1-\n4\nAI2+\nPID FEEDBACK (4 ... 20mA)\n24V auxilary voltage out\n5\nAI2-\n6\n+24\\out\n7\nGND .\nI/O ground\n8\nDIN1\nSTART FORWARD\n9\nDIN2\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n24V auxilary voltage out\n251\n10\nDIN3\n11\nCM .\nAUTO\n0\nMAN\n12\n· +24V\nout\n2\n4\n13\nGND\n.\nI/O ground\nFAULT RESET\nPUMP INTERLOCK\n14\nDIN4\n15\nDIN5\n(Not in use by default)\n16\nDIN6\nEXTERNAL FAULT\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nOUTPUT FREQUENCY\n19\nAO1-\n(0 ... 20mA)\n30\n+24V\n24V auxilary voltage in\nA\nRS485\nDrive-To-Drive\nCommunication\nB\nRS485\n(Modbus RTU)\nRelay Output 1\n(RUN)\nRelay Output 2\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n(FAULT)\nRelay Output 3\n(READY)\n26\nRO2\n32\nRO3\n33\nRO3\nDIO'S\nAI1\nAO\nFLOAT\nU\nU\nI\nGND\nI\nAI2\nRS485\ntermination\nU\nOFF\nI\nON\nIllustration 24: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 2B\n52 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "DRIVE 2",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "VACON 100 FLOW",
+            ":unselected: :unselected:"
+          ],
+          [
+            "",
+            "",
+            "",
+            "P1.2 P3.15.3",
+            "Application Pump ID Number",
+            "= Multipump(MultiDrive) = 2",
+            ":unselected: :unselected:"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "P3.15.4 Start & Feedback",
+            "= Signals Connected",
+            ":unselected: :unselected:"
+          ],
+          [
+            "",
+            "",
+            "",
+            "1",
+            "ref +10VF",
+            "Reference voltage",
+            ":unselected: :unselected:"
+          ],
+          [
+            "",
+            "",
+            "2",
+            "AI2+",
+            "NOT USED (0 ... 10V)",
+            ":unselected:"
+          ],
+          [
+            "",
+            "",
+            "3",
+            "AI1-",
+            ":unselected: :unselected:"
+          ],
+          [
+            "",
+            "4",
+            "AI2+",
+            "PID FEEDBACK (4 ... 20mA) 24V auxilary voltage out",
+            ":unselected:"
+          ],
+          [
+            "",
+            "",
+            "5",
+            "AI2-",
+            ":unselected: :unselected:"
+          ],
+          [
+            "",
+            "",
+            "6",
+            "+24\\out",
+            ":unselected:"
+          ],
+          [
+            "",
+            "",
+            "",
+            "7",
+            "GND .",
+            "I/O ground",
+            ":unselected: :unselected:"
+          ],
+          [
+            "",
+            "",
+            "",
+            "8",
+            "DIN1",
+            "START FORWARD",
+            ":unselected:"
+          ],
+          [
+            "",
+            "",
+            "",
+            "9",
+            "DIN2",
+            "FLUSHING (Start Forward + Flushing Freq.) PID SETPOINT SELECT. (Open=Keypad SP1, Closed=Keypad\nCommon for DI1-DI6 24V auxilary voltage out",
+            ""
+          ],
+          [
+            "",
+            "251",
+            "",
+            "10",
+            "DIN3",
+            "SP2)"
+          ],
+          [
+            "",
+            "",
+            "11",
+            "CM .",
+            ""
+          ],
+          [
+            "",
+            "1 3\nAUTO 0 MAN",
+            "",
+            "12",
+            "· +24V out",
+            ""
+          ],
+          [
+            "",
+            "2 4\n:selected:",
+            "",
+            "13",
+            "GND .",
+            "I/O\nFAULT",
+            "ground",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "14",
+            "DIN4",
+            "RESET",
+            ""
+          ],
+          [
+            "",
+            "",
+            "15",
+            "DIN5",
+            "PUMP\n(Not",
+            "INTERLOCK\nin use by default)",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "16",
+            "DIN6",
+            "EXTERNAL FAULT",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "17",
+            "CM",
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "18",
+            "AO1+",
+            "OUTPUT FREQUENCY",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "19",
+            "AO1-",
+            "(0 ... 20mA)",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "30",
+            "+24V",
+            "24V auxilary voltage in",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "A",
+            "RS485",
+            "Drive-To-Drive",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "B",
+            "RS485",
+            "Communication\n(Modbus RTU) Relay Output 1 (RUN)",
+            ""
+          ],
+          [
+            "",
+            "21",
+            "RO1",
+            ""
+          ],
+          [
+            "",
+            "",
+            "22",
+            "RO1",
+            ""
+          ],
+          [
+            "",
+            "",
+            "23",
+            "RO1",
+            ""
+          ],
+          [
+            "",
+            "24",
+            "RO2",
+            ""
+          ],
+          [
+            "",
+            "",
+            "25",
+            "RO2",
+            "Relay Output 2\n(FAULT) Relay Output 3 (READY)",
+            ""
+          ],
+          [
+            "",
+            "",
+            "26",
+            "RO2",
+            ""
+          ],
+          [
+            "",
+            "32",
+            "RO3",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "33",
+            "RO3",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "DIO'S AI1",
+            "AO",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "FLOAT U",
+            "U",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "GND",
+            "I",
+            "I",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "AI2",
+            "RS485 termination",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "U",
+            "OFF",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "I",
+            "ON",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nP\nI\n+\n-\n0\n1\n3\n151\n2\n4\nDRIVE 1\nVACON 100 FLOW\n=\n=\n1\n1\n2\n3\n4\n5\n6\n7\n8\n9\n0\n1\n251\n3\n2\n4\nDRIVE 2\nVACON 100 FLOW\n=\n=\n1\n2\n3\n4\n5\n6\n7\n8\n9\nDRIVE 3\nVACON 100 FLOW\n=\n3\n1\n2\ne30bi995.10\n1\n3\n4\n5\n6\n7\n8\n9\n3\n2\n4\nA\nA\nB\nB\n1\nA\nB\n-\nU\nU\nU\nU\nU\nU\nI\nI\nI\nI\nI\nI\nU\nU\nU\nI\nI\nI\nDRIVE 3\nVACON 100 FLOW\nP1.2\nApplication\nP3.15.3\nPump ID Number\n=3\nP3.15.4\nStart & Feedback\n= Signals Connected\n= Multipump(MultiDrive)\n1\n+10V\nref\nAI2+\n2\n3\nAI1-\n4\nAI2+\n5\nAI2-\n6\nReference voltage\n-\nNOT USED (0 ... 10V)\n-\nPID FEEDBACK (4 ... 20mA)\n+ +24V\n7\n8\n9\n10\n1\n11\nCM .\n3\nGND .\nDIN1\nDIN2\nDIN3\n24V auxilary voltage out\nI/O ground\nSTART FORWARD\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\nAUTO\nMAN\n3S1\n12\n· +24Vout\n12\n74\n13\nGND .\n14\nDIN4\n15\nDIN5\n16\n17\n18\nAO1+\n19\n30\nA\nB\n24V auxilary voltage out\nI/O ground\nFAULT RESET\nPUMP INTERLOCK\n(Not in use by default)\nEXTERNAL FAULT\nDIN6\nCM\nCommon for DI1-DI6\nOUTPUT FREQUENCY\nAO1- ·\n(0 ... 20mA)\n+24V\n24V auxilary voltage in\nRS485\nDrive-To-Drive\nCommunication\n(Modbus RTU)\nRS485\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1\n(RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nAI1\nFLOAT\nGND\nAC\nU\nU\nI\nI\nRS485\ntermination\nAI2\nU\nOF\nI\nON\nIllustration 25: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 2C\n2 drives have individual pressure sensors. The redundancy level of the system is medium because the drives and the pressure sen-\nsors are duplicated.\n· If there is a drive failure, the second drive starts to operate as master.\n· If there is a sensor failure, the second drive (that has a separate sensor) starts to operate as master.\n0\n1\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 53",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nAn individual switch that has an auto, off and man setting controls each drive.\nDRIVE 1\nVACON 100 FLOW\n=\nP\nI\n1\n+\n-\n0\n151\n1\n3\n2\n4\n2\n3\n4\n5\n1\n6\n7\n8\n9\nP\nI\n+\n-\n0\n1\n3\n2\n4\nDRIVE 2\nVACON 100 FLOW\n=\n=\n2\n1\nDRIVE 3\nVACON 100 FLOW\n=\n=\n3\n=\n1\ne30bi996.10\n2\n3\n4\n5\n6\n7\n8\n9\n0\n1\n35\n2\n2\n3\n4\n5\n6\n7\n8\n9\n3\n4\nA\nA\nA\nB\nB\nB\nU\nU\nU\nU\nU\nU\nI\nI\nI\nI\nI\nI\nU\nU\nU\nI\nI\nI\n2-WIRE\nTRANSMITTER\nI\nP\nPRESSURE\nSENSOR 1\n+\n-\n1S1\nAUTO\n12\n4\n1\n0\n3\nMAN\nDRIVE 1\nVACON 100 FLOW\nP1.2\nApplication\nPump ID Number\nStart & Feedback\nP3.15.3\nP3.15.4\n= Multipump(MultiDrive)\n=1\n= Signals Connected\n1\nN\n2\n+10V\nref\nReference voltage\nAI2+\nNOT USED (0 ... 10V)\n3\nAI1-\n4\nAI2+\nPID FEEDBACK (4 ... 20mA)\n5\nAI2-\n6\n+24 out\n24V auxilary voltage out\n7\nGND\nDIN1\nI/O ground\n8\nSTART FORWARD\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n9\nDIN2\n10\nDIN3\n11\nCM ·\n12\n· +24 out\n24V auxilary voltage out\n13\nGND\n.\nI/O ground\n14\nDIN4\nFAULT RESET\nPUMP INTERLOCK\n(Not in use by default)\nEXTERNAL FAULT\n15\nDIN5\n16\nDIN6\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nOUTPUT FREQUENCY\n(0 ... 20mA)\n19\nAO1-\n30\n+24V\n24V auxilary voltage in\nA\nRS485\nDrive-To-Drive\nCommunication\n(Modbus RTU)\nB\nRS485\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1\n(RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIOʼS\nAI1\nFLOAT\nGND\nAO\nU\nU\nI\nI\nRS485\ntermination\nOFF\nAI2\nU\nI\nON\nIllustration 26: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 3A\n54 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\n+\n0\n15\nP\nI\nApplications\nDRIVE 1\nVACON 100 FLOW\n=\nDRIVE 2\n1\nVACON 100 FLOW\nMALL\n=\n=\n2\nDRIVE 3\n-\nVACON 100 FLOW\n=\n3\ne30bi997.10\nP\nI\n1\n1\n1\n=\n2\n1\n+\n-\n3\n4\n1\n5\n6\n7\nமகிழவார்\n1\n8\n9\n1\n1\n3\n0\n251\n2\n4\n1\n2\n-\n3\n1\n4\n1\nr\n5\n6\n7\n8\n9\n1\n1\n3\n0\n351\n2\n4\n1\n1\n1\nA\n1\nB\n1\n1\n1\n1\n2\n3\n4\n5\n6\n7\n8\n9\n1\n3\n2\n4\nA\nB\nA\nB\nU\nU\nU\nU\nU\nU\nI\nI\nI\nI\nI\nI\nU\nU\nU\nI\nI\nI\nDRIVE 1\n2-WIRE\nTRANSMITTER\nP\nPRESSURE\nSENSOR 1\nI\nVACON 100 FLOW\nP1.2\nApplication\nPump ID Number\nP3.15.3\nP3.15.4\nStart & Feedback\n= Signals Connected\n= Multipump(MultiDrive)\n=\n1\n+\n-\n1\n+10V\nref\n2\nAI2+\n3\nAI1-\nReference voltage\nNOT USED (0 ... 10V)\n4\nAI2+\n5\nAI2-\n6\nPID FEEDBACK (4 ... 20mA)\n7\nGND\nDIN1\n8\n9\nDIN2\n10\nDIN3\n11\nCM\n· +24V\n\"out\n24V auxilary voltage out\nI/O ground\nSTART FORWARD\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n1\n'1S1\n0\nAUTO\nMAN\n3\n12\n.\n12\n4\n13\n14\nDIN4\n15\nDIN5\n16\nDIN6\n17\nCM\n18\n19\n30\nA\nB\nRS485\n24V auxilary voltage out\n.\nGND\nI/O ground\nFAULT RESET\nPUMP INTERLOCK\n(Not in use by default)\nEXTERNAL FAULT\nCommon for DI1-DI6\nAO1+\nOUTPUT FREQUENCY\n(0 ... 20mA)\nAO1- .\n+24V\n24V auxilary voltage in\nRS485\nDrive-To-Drive\nCommunication\n(Modbus RTU)\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1\n(RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nFLOAT\nGND\nAI1\nAC\nU\nU\nI\nI\nRS485\nAI2\ntermination\nOFF\nU\nI\nON\nIllustration 27: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 3B\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 55",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nP\nI\n+\n-\n0\n1\n151\n3\n2\n4\nDRIVE 1\nVACON 100 FLOW\n=\n1\n2\n3\n4\n5\n6\n7\n8\n9\nA\nB\nP\nI\n+\n-\n0\n25\n1\n3\n2\n4\nDRIVE 2\nVACON 100 FLOW\n=\n=\n2\n1\n1\n2\n3\n4\n1\n5\n6\n7\n8\n9\n1\n1\nA\nB\n0\n1\n3\n2\n4\nDRIVE 3\ne30bi998.10\nVACON 100 FLOW\n=\n=\n3\n-\n=\n1\n2\n3\n4\n5\n6\n7\n8\n9\nA\nB\nU\nU\nU\nU\nU\nU\nI\nI\nI\nI\nI\nI\nU\nU\nU\nI\nI\nI\nDRIVE 3\nVACON 100 FLOW\nP1.2\nApplication\n= Multipump(MultiDrive)\nP3.15.3\nPump ID Number\n=3\nP3.15.4\nStart & Feedback\n= Signals Connected\n1\nReference voltage\n2\nAI2+\nNOT USED (0 ... 10V)\n3\nAI1-\n4\nAI2+\nPID FEEDBACK (4 ... 20mA)\n5\nAI2-\n6\n· +24V\n24V auxilary voltage out\n7\nGND\n·\n8\nDIN1\n9\nDIN2\n10\nDIN3\n11\nCM\nI/O ground\nSTART FORWARD\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n0\nAUTO\nMAN\n3S1\n1\n3\n12\n· +24 out\n2\n4\n13\nGND\n14\nDIN4\n15\nDIN5\n16\nDIN6\n17\nCM\n18\nAO1+\n19\nAO1-\n30\nA\nB\n.\n+24V\nRS485\nRS485\n24V auxilary voltage out\nI/O ground\nFAULT RESET\nPUMP INTERLOCK\n(Not in use by default)\nEXTERNAL FAULT\nCommon for DI1-DI6\nOUTPUT FREQUENCY\n(0 ... 20mA)\n24V auxilary voltage in\nDrive-To-Drive\nCommunication\n(Modbus RTU)\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1\n(RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nFLOAT\nGND\nAI1\nAO\nU\nU\nI\nAI2\nI\nRS485\ntermination\nOFF\nU\nI\nON\nIllustration 28: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 3C\n1 common pressure sensor is connected to 2 drives. The redundancy level of the system is low because only the drives are redun-\ndant.\n· If there is a drive failure, the second drive starts to operate as master.\n· If there is a sensor failure, the system stops.\n56 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nAn individual switch that has an auto, off and man setting controls each drive. Terminal 17 connects +24V between the drive 1 and\n2. External diodes are connected between terminals 1 and 2. The digital input signals use negative logic (ON = OV).\nDRIVE 1\nVACON100FLOW\nSMART FORVAR\nCM\n23 ROI\n2-WIRE\nTRANSMITTER\nRS\nP\nPRESSURE\nSENSOR 1\nI\n+\n-\n0\nMAN\nAUTO\n'1S1\n1\n13\n2\n4\nDRIVE 2\nDRIVE 3\ne30bi999.10\nVACON 100 FLOW\nVACON 100 FLOW\n3\nFYLLT RIET\nFLIP INTERLOCK\n35\nTHULTRENT\n22\nROI\nDRIVE 1\nVACON 100 FLOW\nP1.2\nP3.15.3\nApplication\nPump ID Number\nP3.15.4\nStart & Feedback\n= Multipump(MultiDrive)\n= 1\n= Signals Connected\n1\n+10V\nReference voltage\n2\nAI2+\n3\nAI1-\n4\nAI2+\n5\nAI2-\n6\n· +24Vout\nNOT USED (0 ... 10V)\nPID FEEDBACK (4 ... 20mA)\n24V auxilary voltage out\n7\nGND\n.\nI/O ground\n8\nDIN1\nSTART FORWARD\n9\nDIN2\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n10\nDIN3\n11\nCM\n12\n. +24Vou\nYout\n24V auxilary voltage out\n13\nGND\nI/O ground\n14\nDIN4\nFAULT RESET\n15\nDIN5\n16\nDIN6\nPUMP INTERLOCK\n(Not in use by default)\nEXTERNAL FAULT\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nOUTPUT FREQUENCY\n(0 ... 20mA)\n19\nAO1- ·\n30\n+24V\nVin\n24V auxilary voltage in\nA\nRS485\nB\nRS485\nDrive-To-Drive\nCommunication\n(Modbus RTU)\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1 (RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nFLOAT\nGND\nAI1\nAO\nU\nU\nI\nI\nRS485\nAI2\ntermination\nU\nOFF\nI\nON\nIllustration 29: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 4A\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 57",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nDRIVE 1\nDRIVE 2\nDRIVE 3\ne30bj001.10\nVACON100FLOW\nVACON 100 FLOW\nVACON 100FLOW\nCOPIECBAD\nALITO - MAN\n251\n351\nTHULT RIGHT\nTHULT RESET\nFHLET REST\nMuluh HTỘ\n22 ROI\nDRIVE 2\nVACON 100 FLOW\nP1.2\nApplication\n= Multipump(MultiDrive)\nP3.15.3\nPump ID Number\n=2\nP3.15.4\nStart & Feedback\n= Signals Connected\n1\n+10V.\nReference voltage\n0\nTAUTO\n1\nMAN\n2S1\n12\n2\nAI2+\nNOT USED (0 ... 10V)\n3\nAI1-\n4\nAI2+\nPID FEEDBACK (4 ... 20mA)\n5\nAI2-\n6\n*+24V\n`out\n24V auxilary voltage out\n7\nGND ·\nI/O ground\nSTART FORWARD\n8\nDIN1\n9\nDIN2\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n24V auxilary voltage out\n10\nDIN3\n11\n3\nCM ·\n12\n.+24V\nout\n4\n13\nGND\n.\nI/O ground\nFAULT RESET\nPUMP INTERLOCK\n(Not in use by default)\nEXTERNAL FAULT\n14\nDIN4\n15\nDIN5\n16\nDIN6\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nOUTPUT FREQUENCY\n19\nAO1- ·\n30\n(0 ... 20mA)\n+24V in\nA\nRS485\nB\nRS485\n24V auxilary voltage in\nDrive-To-Drive\nCommunication\n(Modbus RTU)\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1 (RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nFLOAT\nGND\nAI1\nAO\nU\nU\nI\nI\nRS485\nAI2\ntermination\nU\nOFF\nI\nON\nIllustration 30: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 4B\n58 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDRIVE 1\nVACON100FLOW\nTHULT RESET\nDanfoss\nApplications\nDRIVE 2\nDRIVE 3\ne30bj002.10\nVACON 100 FLOW\nVACON 100 FLOW\n1\n1\n1\n1\nITTART FORVARDI\n1\nPS1\n------\nDINI\n15\nII THULTRESET\nHULT RESET\nPLEP INTERLOCK\nUSPUT FREQUENCY\nEM\n21 ROI\nDRIVE 3\nVACON 100 FLOW\nP1.2\nApplication\n= Multipump(MultiDrive)\nP3.15.3\nPump ID Number\n= 3\nP3.15.4\nStart & Feedback\n= Signals Connected\n1\n+10VeF\nAI2+\nReference voltage\n2\n3\nAI1-\n4\nAI2+\n5\nAI2-\n6\n· +24Vou\nNOT USED (0 ... 10V)\nPID FEEDBACK (4 ... 20mA)\n24V auxilary voltage out\n7\nGND\n·\nI/O ground\nSTART FORWARD\nFLUSHING\n8\nDIN1\n9\nDIN2\n10\nDIN3\n11\n3\nCM ,\n1\n3S1\n0\nAUTO\nMAN\n12\n4\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n12\n· +24V\n24V auxilary voltage out\n13\nGND\n.\nI/O ground\n14\nDIN4\nFAULT RESET\n15\nDIN5\n16\nDIN6\nPUMP INTERLOCK\n(Not in use by default)\nEXTERNAL FAULT\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nOUTPUT FREQUENCY\n19\nAO1- ·\n(0 ... 20mA)\n30\n+24V\nVin\n24V auxilary voltage in\nA\nRS485\nB\nRS485\nDrive-To-Drive\nCommunica\n(Modbus RfU)\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1 (RUND\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nAI1\nFLOAT\nGND\nU\nI\nAO\nU\nI\nRS485\nAI2\ntermination\nU\nOFF\nI\nON\nIllustration 31: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 4C\n1 pressure sensor is connected to the first drive. The system is not redundant, because the system stops if there is a drive or sensor\nfailure.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 59",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nEMMAAND\nNS1\nSTOSTART\nDRIVE 1\nVACON 100 FLOW\n25154 Star Woodback # Sional Connecist\nARF\nND FEEDBACK\n24' solaryvolagı out\npround\nDINI\nSTART FORMAND\nCommon for DI HDE\nDanfoss\nApplications\nDRIVE 2\nDRIVE 3\nVACON 100 FLOW\nVACON 100 FLOW\nF5-2 54 Staril Twedback\n=Niot Camnechit\ne30bj003.10\nN1+\n5\n24/ mcxlaryvoltage out\nGHD\nSTART FORMIDAND\nSTART FORMAND\nM Common for DIS-DE\n1\n124' salary voltage out\nground\nWALT RIZET\nBUUP INTERLOCK\nEXTERNAL FAULT\nCommon for DI KE\nAOI+\nOUTPUT FREQUENCY\n25\nBOR\n2-WIRE\nTRANSMITTER\nP\nPRESSURE\nI\nSENSOR 1\n+\n-\nSYSTEM START\nCOMMAND\nSTOP\n1\n1S1\nSTART\n$2\nNO SZTPOINT SELECT\nDIN || FAULT RESET\nPUMP INTERLOCK\nMULTIMESET\nJUMP INTERLOCK\nESTEFINAL FAULT\nLWD\nLM Lammon TOP LI-LID\n1+ 11\nRUPPUT FREQUENCY\nADTE & IP\nOUTPUT FREQUENCY\n34' aodary stage in\n1 22\nBOL\nDRIVE 1\nVACON 100 FLOW\nP1.2\nP3.15.3\nP3.15.4\nApplication\nPump ID Number\nStart & Feedback\n= Multipump(MultiDrive)\n= 1\n= Signals Connected\nNOT USED (0 ... 10V)\nPID FEEDBACK (4 ... 20mA)\n1\n+10VeF\nref\nReference voltage\nAI2+\n2\n3\nAI1-\n4\nAI2+\n5\nAI2-\n6\n. +24Vo\nGND ,\n7\n8\nDIN1\n9\nDIN2\n10\nDIN3\n11\nCM\n12\n· +24 out\n13\nGND\n14\nDIN4\n15\nDIN5\n16\nDIN6\n17\nCM\n24V auxilary voltage out\nI/O ground\nSTART FORWARD\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n24V auxilary voltage out\nI/O ground\nFAULT RESET\nPUMP INTERLOCK\n(Not in use by default)\nEXTERNAL FAULT\nCommon for DI1-DI6\n18\nAO1+\n19\nAO1- ·\nOUTPUT FREQUENCY\nJ (0 ... 20mA)\n30\n+24V\n24V auxilary voltage in\nA\nRS485\nB\nRS485\nDrive-To-Drive\nCommunication\n(Modbus RTU)\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1 (RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nAI1\nAO\nFLOAT\nU\nI\nI\nGND\nU\nI\nRS485\ntermination\nAI2\nU\nOFF\nI\nON\nIllustration 32: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 5A\n60 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDRIVE 1\nVACON 100 FLOW\n1\nNOT USEO\n1\nNO FEEDBACK\n1\n34' soilaryvoltage out\n1\nGAD\n10 ground\nSTART FORMIAMO\nOMIAAND\nAO SETPOINT SELEC\n15\nCommon for DHC 6\n1\nGND 10\nFAULT RIZET\nPUUR INTERILOOK\nEXTERNAL FAULT\nCommon for DIX: 6\nDanfoss\nApplications\nDRIVE 2\nDRIVE 3\nVACON 100 FLOW\nVACON 100 FLOW\ne30bj004.10\nF515/ Start Medback\n. Not Camnechut\n2\npor usto\nTương\nNO FEEDBACK\nDINI\nSTART FORMISANO\n34' solaryvolgi out\nGAD\n10 pround\nSTART FORMAND\nCommonitor DI HC6\n24' soiluryvolage out\nGAD\n10 pound\nFAULT RESET\nCommon ter 21-26\nFAULT NESET\nPUMP INTERLOCK\nLommon of LITH/D.\n1\nAU1+\nRUEPUT FREQUENCY\nModbus RT00\nEXTERNAL FAULT\nCommon ter 3106\nACI+\nOUTPUT FREQUENCY\n34' solary voltage in\nDivaAs-Din\nModbus RTU0\n21\n22\n22\n4\nBalay Outputs\nBalay Output 1\nBale Output 3\nDRIVE 2\nVACON 100 FLOW\nP1.2\nApplication\nP3.15.3\nPump ID Number\n= 1\nP3.15.4\nStart & Feedback\n= Multipump(MultiDrive)\n= Signals Connected\n1\nReference voltage\n2\nAI2+\nNOT USED (0 ... 10V)\n3\nAI1-\n4\nAI2+\nPID FEEDBACK (4 ... 20mA)\n5\nAI2-\n6\n+24V\nTout\n24V auxilary voltage out\n7\nGND\nI/O ground\nSTART FORWARD\n8\nDIN1\n9\nDIN2\n10\nDIN3\n11\nCM\nFLUSHING\n(Start Forward + Flushing Freq.)\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nCommon for DI1-DI6\n12\n৳ +24Vout\n24V auxilary voltage out\n13\n.\nGND\nI/O ground\n14\nDIN4\nFAULT RESET\n15\nDIN5\nPUMP INTERLOCK\n(Not in use by default)\n16\nDIN6\nEXTERNAL FAULT\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\n19\nAO1-\nOUTPUT FREQUENCY\nJ(0.20mA)\n30\n+24V\n24V auxilary voltage in\nA\nRS485\n] Drive-To-Drive\nCommunication\n(Modbus RTU)\nB\nRS485\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nRelay Output 1 (RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nDIO'S\nAI1\nFLOAT\nU\nGND\nI\nAO\nU\nI\nRS485\nAI2\nU\ntermination\nOFF\nI\nON\nIllustration 33: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 5B\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 61",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDMAAND\nSTOFFANT\nDRIVE 1\nVACON 100 FLOW\n25153 fung ID Number\nN\nARF\nIND FEEDBACK\n24' moilaryvoltage out\n7\nground\nSTART FORMIAMO\nDRIVE 2\nVACON 100 FLOW\nF5-/5-4Staril Feedback mint Connected\nN1+\n1\nPIO FEEDBACK\n1\n14/ auslary vilage sul\nGHD\nSTART FORNIAMO\nDanfoss\nApplications\nDRIVE 3\nVACON 100 FLOW\ne30bj005.10\n2\nND FEEDBACK\n24/ mpilary voltage out\n/ ground\nSTART FORMAND\n1\nNO SZTPOINT SELECT\n10 ground\nWALT RIZET\nBUP INTERLOCK\nout |||24' moxlaryvoltage out\nGHD + 10ground\nDIN TAULT RESET\nPUMP INTERLOCK\nLWD\n1\nMULTINESET\nJUMP INTERLOCK\nEXTERNAL FAULT\nEXTERNAL FAULT\nCommon for DI KOE\nOUTPUT FREQUENCY\nOUTPUT FREQUENCY\n1\nA\n34' wodary vatage in\n22\nDRIVE 3\nVACON 100 FLOW\nP1.2\nApplication\nP3.15.3\nPump ID Number\nP3.15.4\nStart & Feedback\n1\n+10VF\nVref\nReference voltage\n2\nAI2+\n3\nAI1-\n4\nAI2+\n5\nAI2-\n6\n. +24Vo\n24V auxilary voltage out\n7\nGND .\nI/O ground\n8\nDIN1\nSTART FORWARD\n9\nDIN2\n(Start Forward + Flushing Freq.)\n10\nDIN3\n11\nCM\nCommon for DI1-DI6\n12\n+24 out\n24V auxilary voltage out\n13\nGND\nI/O ground\n14\nDIN4\nFAULT RESET\n15\nDIN5\n16\nDIN6\nEXTERNAL FAULT\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nOUTPUT FREQUENCY\n19\nAO1- ·\n(0 ... 20mA)\n30\n+24V\n24V auxilary voltage in\nA\nRS485\nB\nRS485\nNOT USED (0 ... 10V)\nPID FEEDBACK (4 ... 20mA)\nFLUSHING\nPID SETPOINT SELECT.\n(Open=Keypad SP1, Closed=Keypad SP2)\nPUMP INTERLOCK\n(Not in use by default)\nDrive-To-Drive\nCommunication\n(Modbus RTU)\n21\nRO1\n22\nRO1\n23\nRO1\n24\nRO2\n25\nRO2\n26\nRO2\n32\nRO3\n33\nRO3\nDIOʼS\nFLOAT\nAI1\n= Multipump(MultiDrive)\n=1\n= Signals Connected\nRelay Output 1 (RUN)\nRelay Output 2\n(FAULT)\nRelay Output 3\n(READY)\nAO\nU\nI\nGND\nU\nI\nI\nRS485\ntermination\nOFF\nAI2\nU\nI\nON\nIllustration 34: Electric Wiring Diagram of the Multi-pump (Multidrive) System, Example 5C\nSee information on the Startup, and Fire mode wizards in 4.2.1 Wizards in Menu 1.1.\n62 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "VACON 100 FLOW P1.2 Application P3.15.3 Pump ID Number P3.15.4 Start & Feedback"
+          ],
+          [
+            "",
+            "1",
+            "+10VF Vref",
+            "Reference"
+          ],
+          [
+            "",
+            "2",
+            "AI2+",
+            "NOT"
+          ],
+          [
+            "3",
+            "AI1-"
+          ],
+          [
+            "4",
+            "AI2+",
+            "PID"
+          ],
+          [
+            "5",
+            "AI2-",
+            ""
+          ],
+          [
+            "6",
+            ". +24Vo",
+            "24V"
+          ],
+          [
+            "7",
+            "GND .",
+            "I/O"
+          ],
+          [
+            "",
+            "8",
+            "DIN1",
+            "START"
+          ],
+          [
+            "",
+            "9",
+            "DIN2",
+            "(Start\nFLUSHING"
+          ],
+          [
+            "",
+            "10",
+            "DIN3",
+            "PID\n(Open=Keypad"
+          ],
+          [
+            "",
+            "11",
+            "CM",
+            "Common"
+          ],
+          [
+            "",
+            "12",
+            "+24 out",
+            "24V"
+          ],
+          [
+            "13",
+            "GND",
+            "I/O"
+          ],
+          [
+            "14",
+            "DIN4",
+            "FAULT"
+          ],
+          [
+            "15",
+            "DIN5",
+            "PUMP\n(Not"
+          ],
+          [
+            "16",
+            "DIN6",
+            "EXTERNAL"
+          ],
+          [
+            "17",
+            "CM",
+            "Common"
+          ],
+          [
+            "18",
+            "AO1+",
+            "OUTPUT"
+          ],
+          [
+            "",
+            "19",
+            "AO1- ·",
+            "(0 ..."
+          ],
+          [
+            "",
+            "30",
+            "+24V",
+            "24V auxilary"
+          ],
+          [
+            "",
+            "A",
+            "RS485",
+            "Drive-To-Drive Communication (Modbus"
+          ],
+          [
+            "",
+            "B",
+            "RS485"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nTable 9: M1 Quick Setup\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.2\nApplication\n0\n4\n2\n212\n0 = Standard\n1 = HVAC\n2 = PID Control\n3 = Multi-pump (single drive)\n4 = Multi-pump (multidrive)\n1.3\nMinimum Frequency\nReference\n0.00\nP1.4\nHz\n0.0\n101\n1.4\nMaximum Frequency\nReference\nP1.3\n320.0\nHz\n50.0/60.0\n102\n1.5\nAcceleration Time 1\n0.1\n3000.0\ns\n5.0\n103\n1.6\nDeceleration Time 1\n0.1\n3000.0\ns\n5.0\n104\n1.7\nMotor Current Limit\nIH*0.1\nIs\nA\nVaries\n107\n1.8\nMotor Type\n0\n2\n0\n650\n0 = Induction Motor\n1 = Permanent Magnet Motor\n2 = Reluctance Motor\n1.9\nMotor Nominal Volt-\nage\nVaries\nVaries\nV\nVaries\n110\nFind this value Un on the nameplate of the mo-\ntor.\nNOTE! Find out if the motor connection is Delta\nor Star.\n1.10\nMotor Nominal Fre-\nquency\n8.0\n320.0\nHz\n50/60\n111\nFind this value fn on the nameplate of the mo-\ntor.\n1.11\nMotor Nominal Speed\n24\n19200\nRPM\nVaries\n112\nFind this value nn on the nameplate of the mo-\ntor.\n1.12\nMotor Nominal Cur-\nrent\nIH * 0.1\nIs\nA\nVaries\n113\nFind this value In on the nameplate of the mo-\ntor.\n1.13\nMotor Cos Phi (Power\nFactor)\n0.30\n1.00\nVaries\n120\nFind this value on the nameplate of the motor.\n1.14\nEnergy Optimization\n0\n1\n0\n666\n0 = Disabled\n1 = Enabled\n1.15\nIdentification\n0\n2\n0\n631\n0 = No action\n1 = At standstill\n2 = With rotation\n1.16\nStart Function\n0\n1\n0\n505\n0 = Ramping\n1 = Flying Start\n1.17\nStop Function\n0\n1\n0\n506\n0 = Coasting\n1 = Ramping\n1.18\nAutomatic Reset\n0\n1\n0\n731\n0 = Disabled\n1 = Enabled\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 63",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.2",
+            "Application",
+            "0",
+            "4",
+            "",
+            "2",
+            "212",
+            "0 = Standard 1 = HVAC 2 = PID Control 3 = Multi-pump (single drive) 4 = Multi-pump (multidrive)"
+          ],
+          [
+            "1.3",
+            "Minimum Frequency Reference",
+            "0.00",
+            "P1.4",
+            "Hz",
+            "0.0",
+            "101",
+            ""
+          ],
+          [
+            "1.4",
+            "Maximum Frequency Reference",
+            "P1.3",
+            "320.0",
+            "Hz",
+            "50.0/60.0",
+            "102",
+            ""
+          ],
+          [
+            "1.5",
+            "Acceleration Time 1",
+            "0.1",
+            "3000.0",
+            "s",
+            "5.0",
+            "103",
+            ""
+          ],
+          [
+            "1.6",
+            "Deceleration Time 1",
+            "0.1",
+            "3000.0",
+            "s",
+            "5.0",
+            "104",
+            ""
+          ],
+          [
+            "1.7",
+            "Motor Current Limit",
+            "IH*0.1",
+            "Is",
+            "A",
+            "Varies",
+            "107",
+            ""
+          ],
+          [
+            "1.8",
+            "Motor Type",
+            "0",
+            "2",
+            "",
+            "0",
+            "650",
+            "0 = Induction Motor 1 = Permanent Magnet Motor 2 = Reluctance Motor"
+          ],
+          [
+            "1.9",
+            "Motor Nominal Volt- age",
+            "Varies",
+            "Varies",
+            "V",
+            "Varies",
+            "110",
+            "Find this value Un on the nameplate of the mo- tor. NOTE! Find out if the motor connection is Delta or Star."
+          ],
+          [
+            "1.10",
+            "Motor Nominal Fre- quency",
+            "8.0",
+            "320.0",
+            "Hz",
+            "50/60",
+            "111",
+            "Find this value fn on the nameplate of the mo- tor."
+          ],
+          [
+            "1.11",
+            "Motor Nominal Speed",
+            "24",
+            "19200",
+            "RPM",
+            "Varies",
+            "112",
+            "Find this value nn on the nameplate of the mo- tor."
+          ],
+          [
+            "1.12",
+            "Motor Nominal Cur- rent",
+            "IH * 0.1",
+            "Is",
+            "A",
+            "Varies",
+            "113",
+            "Find this value In on the nameplate of the mo- tor."
+          ],
+          [
+            "1.13",
+            "Motor Cos Phi (Power Factor)",
+            "0.30",
+            "1.00",
+            "",
+            "Varies",
+            "120",
+            "Find this value on the nameplate of the motor."
+          ],
+          [
+            "1.14",
+            "Energy Optimization",
+            "0",
+            "1",
+            "",
+            "0",
+            "666",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "1.15",
+            "Identification",
+            "0",
+            "2",
+            "",
+            "0",
+            "631",
+            "0 = No action 1 = At standstill 2 = With rotation"
+          ],
+          [
+            "1.16",
+            "Start Function",
+            "0",
+            "1",
+            "",
+            "0",
+            "505",
+            "0 = Ramping 1 = Flying Start"
+          ],
+          [
+            "1.17",
+            "Stop Function",
+            "0",
+            "1",
+            "",
+            "0",
+            "506",
+            "0 = Coasting 1 = Ramping"
+          ],
+          [
+            "1.18",
+            "Automatic Reset",
+            "0",
+            "1",
+            "",
+            "0",
+            "731",
+            "0 = Disabled 1 = Enabled"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.19\nResponse to External\nFault\n0\n3\n2\n701\n0 = No action\n1 = Alarm\n2 = Fault (Stop according to stop mode)\n3 = Fault (Stop by coasting)\n1.20\nResponse to AI Low\nFault\n0\n5\n0\n700\n0 = No action\n1 = Alarm\n2 = Alarm+preset fault frequency (P3.9.1.13)\n3 = Alarm + previous frequency\n4 = Fault (Stop according to stop mode)\n5 = Fault (Stop by coasting)\n1.21\nRemote Control Place\n0\n1\n0\n172\n0 = I/O control\n1 = Fieldbus control\n1.22\nI/O Control Reference\nA Selection\n1\n20\n6\n117\n1 = Preset Frequency 0\n2 = Keypad reference\n3 = Fieldbus\n4 = AI1\n5 = AI2\n6 = AI1+AI2\n7 = PID reference\n8 = Motor potentiometer\n11 = Block Out. 1\n12 = Block Out.2\n13 = Block Out.3\n14 = Block Out.4\n15 = Block Out.5\n16 = Block Out.6\n17 = Block Out.7\n18 = Block Out.8\n19 = Block Out.9\n20 = Block Out. 10\n1.23\nKeypad Control Refer-\nence Selection\n1\n20\n1\n121\nSee P1.22.\n1.24\nFieldbus Control Ref-\nerence Selection\n1\n20\n2\n122\nSee P1.22.\n1.25\nAI1 Signal Range\n0\n1\n0\n379\n0= 0 ... 10 V/0 ... 20 mA\n1= 2 ... 10 V/4 ... 20 mA\n1.26\nAI2 Signal Range\n0\n1\n1\n390\n0= 0 ... 10 V/0 ... 20 mA\n1= 2 ... 10 V/4 ... 20 mA\n1.27\nRO1 Function\n0\n74\n2\n11001\nSee P3.5.3.2.1.\n1.28\nRO2 Function\n0\n74\n3\n11004\nSee P3.5.3.2.1.\n1.29\nRO3 Function\n0\n74\n1\n11007\nSee P3.5.3.2.1.\n1.30\nAO1 Function\n0\n31\n2\n10050\nSee P3.5.4.1.1.\n64 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.19",
+            "Response to External Fault",
+            "0",
+            "3",
+            "",
+            "2",
+            "701",
+            "0 = No action 1 = Alarm 2 = Fault (Stop according to stop mode) 3 = Fault (Stop by coasting)"
+          ],
+          [
+            "1.20",
+            "Response to AI Low Fault",
+            "0",
+            "5",
+            "",
+            "0",
+            "700",
+            "0 = No action 1 = Alarm 2 = Alarm+preset fault frequency (P3.9.1.13) 3 = Alarm + previous frequency 4 = Fault (Stop according to stop mode) 5 = Fault (Stop by coasting)"
+          ],
+          [
+            ""
+          ],
+          [
+            "1.21",
+            "Remote Control Place",
+            "0",
+            "1",
+            "",
+            "0",
+            "172",
+            "0 = I/O control 1 = Fieldbus control"
+          ],
+          [
+            "1.22",
+            "I/O Control Reference A Selection",
+            "1",
+            "20",
+            "",
+            "6",
+            "117",
+            "1 = Preset Frequency 0 2 = Keypad reference 3 = Fieldbus 4 = AI1 5 = AI2 6 = AI1+AI2 7 = PID reference 8 = Motor potentiometer 11 = Block Out. 1 12 = Block Out.2 13 = Block Out.3 14 = Block Out.4 15 = Block Out.5 16 = Block Out.6 17 = Block Out.7 18 = Block Out.8 19 = Block Out.9 20 = Block Out. 10"
+          ],
+          [
+            "1.23",
+            "Keypad Control Refer- ence Selection",
+            "1",
+            "20",
+            "",
+            "1",
+            "121",
+            "See P1.22."
+          ],
+          [
+            "1.24",
+            "Fieldbus Control Ref- erence Selection",
+            "1",
+            "20",
+            "",
+            "2",
+            "122",
+            "See P1.22."
+          ],
+          [
+            "1.25",
+            "AI1 Signal Range",
+            "0",
+            "1",
+            "",
+            "0",
+            "379",
+            "0= 0 ... 10 V/0 ... 20 mA 1= 2 ... 10 V/4 ... 20 mA"
+          ],
+          [
+            "1.26",
+            "AI2 Signal Range",
+            "0",
+            "1",
+            "",
+            "1",
+            "390",
+            "0= 0 ... 10 V/0 ... 20 mA 1= 2 ... 10 V/4 ... 20 mA"
+          ],
+          [
+            "1.27",
+            "RO1 Function",
+            "0",
+            "74",
+            "",
+            "2",
+            "11001",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.28",
+            "RO2 Function",
+            "0",
+            "74",
+            "",
+            "3",
+            "11004",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.29",
+            "RO3 Function",
+            "0",
+            "74",
+            "",
+            "1",
+            "11007",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.30",
+            "AO1 Function",
+            "0",
+            "31",
+            "",
+            "2",
+            "10050",
+            "See P3.5.4.1.1."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nTable 10: M1.34 Multi-pump (Multidrive)\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.35.1\nPID Gain\n0.00\n100.00\n%\n100.00\n118\n1.35.2\nPID Integration Time\n0.00\n600.00\ns\n1.00\n119\n1.35.3\nPID Derivation Time\n0.00\n100.00\ns\n0.00\n132\n1.35.4\nProcess Unit Selection\n1\n44\n1\n1036\nSee P3.13.1.4\n1.35.5\nProcess Unit Min\nVaries\nVaries\nVaries\n1033\n1.35.6\nProcess Unit Max\nVaries\nVaries\nVaries\n1034\n1.35.7\nFeedback 1 Source Selection\n0\n30\n2\n334\nSee P3.13.3.3\n1.35.8\nSetpoint 1 Source Selection\n0\n32\n1\n332\nSee P3.13.2.6\n1.35.9\nKeypad Setpoint 1\nVaries\nVaries\nVaries\n0\n167\n1.35.10\nSP1 Sleep Frequency Limit\n0.0\n320.0\nHz\n0.0\n1016\n1.35.11\nSP1 Sleep Delay\n0\n3000\ns\n0\n1017\n0 = Not used\n1.35.12\nSP1 Wake Up Level\nVaries\nVaries\nVaries\nVaries\n1018\n0 = Not used\n1.35.13\nMulti-pump Mode\n0\n2\n0\n1785\n0= Single drive\n1= Multifollower\n2= Multimaster\n1.35.14\nNumber of Pumps\n1\n8\n1\n1001\n1.35.15\nPump ID Number\n1\n8\n1\n1500\n1.35.16\nStart and Feedback Signals\n0\n2\n1\n1782\n0 = Not connected\n1 = Only Start Signal Con-\nnected\n2 = Both Signals Connec-\nted\n1.35.17\nPump Interlocking\n0\n1\n1\n1032\n0 = Disabled\n1 = Enabled\n1.35.18\nAutochange\n0\n2\n1\n1027\n0 = Disabled\n1 = Enabled (interval)\n2 = Enabled (weekdays)\n1.35.19\nAutochanged Pump\n0\n1\n1\n1028\n0 = Auxiliary Pump\n1 = All Pumps\n1.35.20\nAutochange Interval\n0.0\n3000.0\nh\n48.0\n1029\n1.35.21\nAutochange Days\n0\n127\n1786\n1.35.22\nAutochange Time of Day\nTime\n1787\n1.35.23\nAutochange: Frequency Limit\n0.00\nP3.3.1.2\nHz\n25:00\n1031\n1.35.24\nAutochange: Pump Limit\n1\n6\n1030\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 65",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.35.1",
+            "PID Gain",
+            "0.00",
+            "100.00",
+            "%",
+            "100.00",
+            "118",
+            ""
+          ],
+          [
+            "1.35.2",
+            "PID Integration Time",
+            "0.00",
+            "600.00",
+            "s",
+            "1.00",
+            "119",
+            ""
+          ],
+          [
+            "1.35.3",
+            "PID Derivation Time",
+            "0.00",
+            "100.00",
+            "s",
+            "0.00",
+            "132",
+            ""
+          ],
+          [
+            "1.35.4",
+            "Process Unit Selection",
+            "1",
+            "44",
+            "",
+            "1",
+            "1036",
+            "See P3.13.1.4"
+          ],
+          [
+            "1.35.5",
+            "Process Unit Min",
+            "Varies",
+            "Varies",
+            "",
+            "Varies",
+            "1033",
+            ""
+          ],
+          [
+            "1.35.6",
+            "Process Unit Max",
+            "Varies",
+            "Varies",
+            "",
+            "Varies",
+            "1034",
+            ""
+          ],
+          [
+            "1.35.7",
+            "Feedback 1 Source Selection",
+            "0",
+            "30",
+            "",
+            "2",
+            "334",
+            "See P3.13.3.3"
+          ],
+          [
+            "1.35.8",
+            "Setpoint 1 Source Selection",
+            "0",
+            "32",
+            "",
+            "1",
+            "332",
+            "See P3.13.2.6"
+          ],
+          [
+            "1.35.9",
+            "Keypad Setpoint 1",
+            "Varies",
+            "Varies",
+            "Varies",
+            "0",
+            "167",
+            ""
+          ],
+          [
+            "1.35.10",
+            "SP1 Sleep Frequency Limit",
+            "0.0",
+            "320.0",
+            "Hz",
+            "0.0",
+            "1016",
+            ""
+          ],
+          [
+            "1.35.11",
+            "SP1 Sleep Delay",
+            "0",
+            "3000",
+            "s",
+            "0",
+            "1017",
+            "0 = Not used"
+          ],
+          [
+            "1.35.12",
+            "SP1 Wake Up Level",
+            "Varies",
+            "Varies",
+            "Varies",
+            "Varies",
+            "1018",
+            "0 = Not used"
+          ],
+          [
+            "1.35.13",
+            "Multi-pump Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "1785",
+            "0= Single drive 1= Multifollower 2= Multimaster"
+          ],
+          [
+            "1.35.14",
+            "Number of Pumps",
+            "1",
+            "8",
+            "",
+            "1",
+            "1001",
+            ""
+          ],
+          [
+            "1.35.15",
+            "Pump ID Number",
+            "1",
+            "8",
+            "",
+            "1",
+            "1500",
+            ""
+          ],
+          [
+            "1.35.16",
+            "Start and Feedback Signals",
+            "0",
+            "2",
+            "",
+            "1",
+            "1782",
+            "0 = Not connected 1 = Only Start Signal Con- nected 2 = Both Signals Connec- ted"
+          ],
+          [
+            "1.35.17",
+            "Pump Interlocking",
+            "0",
+            "1",
+            "",
+            "1",
+            "1032",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "1.35.18",
+            "Autochange",
+            "0",
+            "2",
+            "",
+            "1",
+            "1027",
+            "0 = Disabled 1 = Enabled (interval) 2 = Enabled (weekdays)"
+          ],
+          [
+            "1.35.19",
+            "Autochanged Pump",
+            "0",
+            "1",
+            "",
+            "1",
+            "1028",
+            "0 = Auxiliary Pump 1 = All Pumps"
+          ],
+          [
+            "1.35.20",
+            "Autochange Interval",
+            "0.0",
+            "3000.0",
+            "h",
+            "48.0",
+            "1029",
+            ""
+          ],
+          [
+            "1.35.21",
+            "Autochange Days",
+            "0",
+            "127",
+            "",
+            "",
+            "1786",
+            ""
+          ],
+          [
+            "1.35.22",
+            "Autochange Time of Day",
+            "",
+            "",
+            "Time",
+            "",
+            "1787",
+            ""
+          ],
+          [
+            "1.35.23",
+            "Autochange: Frequency Limit",
+            "0.00",
+            "P3.3.1.2",
+            "Hz",
+            "25:00",
+            "1031",
+            ""
+          ],
+          [
+            "1.35.24",
+            "Autochange: Pump Limit",
+            "1",
+            "6",
+            "",
+            "",
+            "1030",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.35.25\nBandwidth\n0\n100\n%\n10\n1097\n1.35.26\nBandwidth Delay\n0\n3600\ns\n10\n1098\n1.35.27\nConstant Production Speed\n0\n100\n%\n100\n1513\n1.35.28\nPump 1 Interlock\nDigIN\nSlot0.1\n426\nOPEN = Not active\nCLOSED = Active\n1.35.29\nFlushing Reference\nMaximum\nreference\nMaximum\nreference\nHz\n50.00\n1239\n66 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.35.25",
+            "Bandwidth",
+            "0",
+            "100",
+            "%",
+            "10",
+            "1097",
+            ""
+          ],
+          [
+            "1.35.26",
+            "Bandwidth Delay",
+            "0",
+            "3600",
+            "s",
+            "10",
+            "1098",
+            ""
+          ],
+          [
+            "1.35.27",
+            "Constant Production Speed",
+            "0",
+            "100",
+            "%",
+            "100",
+            "1513",
+            ""
+          ],
+          [
+            "1.35.28",
+            "Pump 1 Interlock",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "426",
+            "OPEN = Not active CLOSED = Active"
+          ],
+          [
+            "1.35.29",
+            "Flushing Reference",
+            "Maximum reference",
+            "Maximum reference",
+            "Hz",
+            "50.00",
+            "1239",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Wizards\nVACON® 100 FLOW\nDanfoss\nApplication Guide\n4 Wizards\n4.1 Application Wizards\n4.1.1 Standard Application Wizard\nThe application wizard helps to set the basic parameters that are related to the application.\nTo start the Standard application wizard, set the value Standard to parameter P1.2 Application (ID 212) in the keypad.\nIf the application wizard is started from the Start-up wizard, the wizard goes directly to step 11.\nSee the range of values of the parameters in 6.1 Group 3.1: Motor Settings, 6.3 Group 3.3: References, 6.4 Group 3.4: Ramps and\nBrakes Setup.\nProcedure\n1. Set a value for P3.1.2.2 Motor Type (so that it agrees with the nameplate of the motor).\nIf Motor Type is set to Induction Motor, also step 6 is shown. If the selection is PM Motor, the value of parameter\nP3.1.1.5 Motor Cos Phi is set to 1.00, and the wizard skips step 6.\n2.\nSet a value for P3.1.1.1 Motor Nominal Voltage (so that it agrees with the nameplate of the motor).\n3.\nSet a value for P3.1.1.2 Motor Nominal Frequency (so that it agrees with the nameplate of the motor).\n4.\nSet a value for P3.1.1.3 Motor Nominal Speed (so that it agrees with the nameplate of the motor).\n5. Set a value for P3.1.1.4 Motor Nominal Current (so that it agrees with the nameplate of the motor).\n6.\nSet a value for P3.1.1.5 Motor Cos Phi (so that it agrees with the nameplate of the motor).\n7. Set a value for P3.3.1.1 Minimum Frequency Reference.\n8.\nSet a value for P3.3.1.2 Maximum Frequency Reference.\n9.\nSet a value for P3.4.1.2 Acceleration Time 1.\n10. Set a value for P3.4.1.3 Deceleration Time 1.\n11. Select the a control place (where to give the start and stop commands, and the frequency reference of the drive).\nThe Standard application wizard is completed.\n4.1.2 HVAC Application Wizard\nThe application wizard helps to set the basic parameters that are related to the application.\nTo start the HVAC application wizard, set the value Standard to parameter P1.2 Application (ID 212) in the keypad.\nSee the range of values of the parameters in 6.2 Group 3.2: Start/Stop Setup, 6.1 Group 3.1: Motor Settings, 6.3 Group 3.3: Referen-\nces, 6.4 Group 3.4: Ramps and Brakes Setup.\nProcedure\n1. Select the type or process (or application) to control.\n-\nCompressor\n-\nFan\n-\nPump\n-\nOther\nSome parameters have preset values specified by the selection. See the parameters and their values in the following table.\nTable 11: Preset Values of Parameters\nIndex\nParameter\nProcess type\nPump\nFan\nCompressor\nP3.1.4.1\nU/f Ratio\nLinear\nSquared\nLinear\nP3.2.4\nStart Function\nRamping\nFlying start\nRamping\nP3.2.5\nStop Function\nRamping\nCoasting\nRamping\nP3.4.1.2\nAcceleration Time\n5.0 s\n30.0 s\n3.0 s\nP3.4.1.3\nDeceleration Time\n5.0 s\n30.0 s\n3.0 s\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 67",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Process type"
+          ],
+          [
+            "Pump",
+            "Fan",
+            "Compressor"
+          ],
+          [
+            "P3.1.4.1",
+            "U/f Ratio",
+            "Linear",
+            "Squared",
+            "Linear"
+          ],
+          [
+            "P3.2.4",
+            "Start Function",
+            "Ramping",
+            "Flying start",
+            "Ramping"
+          ],
+          [
+            "P3.2.5",
+            "Stop Function",
+            "Ramping",
+            "Coasting",
+            "Ramping"
+          ],
+          [
+            "P3.4.1.2",
+            "Acceleration Time",
+            "5.0 s",
+            "30.0 s",
+            "3.0 s"
+          ],
+          [
+            "P3.4.1.3",
+            "Deceleration Time",
+            "5.0 s",
+            "30.0 s",
+            "3.0 s"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nWizards\n1\nIf process is set to Compressor, also step 2 is shown. If the selection is anything else, the wizard skips step 2. If\nprocess is set to Other, also steps 11 and 12 are shown.\n2. Set a value for P3.2.11 Restart Delay.\n3. Set a value for P3.1.2.2 Motor Type (so that it agrees with the nameplate of the motor).\nIf Motor Type is set to Induction Motor, also step 8 is shown. If the selection is PM Motor, the value of parameter\nP3.1.1.5 Motor Cos Phi is set to 1.00, and the wizard skips step 8.\n4.\nSet a value for P3.1.1.1 Motor Nominal Voltage (so that it agrees with the nameplate of the motor).\n5.\nSet a value for P3.1.1.2 Motor Nominal Frequency (so that it agrees with the nameplate of the motor).\n6.\nSet a value for P3.1.1.3 Motor Nominal Speed (so that it agrees with the nameplate of the motor).\n7.\nSet a value for P3.1.1.4 Motor Nominal Current (so that it agrees with the nameplate of the motor).\n8. Set a value for P3.1.1.5 Motor Cos Phi (so that it agrees with the nameplate of the motor).\n9.\nSet a value for P3.3.1.1 Minimum Frequency Reference.\n10. Set a value for P3.3.1.2 Maximum Frequency Reference.\n11. Set a value for P3.4.1.2 Acceleration Time 1.\n12. Set a value for P3.4.1.3 Deceleration Time 1.\nT\nThe wizard goes to steps specified by the application.\n13. Select the control place (where to give the start and stop commands, and the frequency reference of the drive).\nT\nThe HVAC application wizard is completed.\n4.1.3 PID Control Application Wizard\nThe application wizard helps to set the basic parameters that are related to the application.\nTo start the PID Control application wizard, set the value PID Control to parameter P1.2 Application (ID 212) in the keypad.\nIf the application wizard is started from the Start-up wizard, the wizard goes directly to step 11.\nSee the range of values of the parameters in 6.1 Group 3.1: Motor Settings, 6.3 Group 3.3: References, 6.4 Group 3.4: Ramps and\nBrakes Setup, 6.13 Group 3.13: PID Controller.\nProcedure\n1. Set a value for P3.1.2.2 Motor Type (so that it agrees with the nameplate of the motor).\nIf Motor Type is set to Induction Motor, also step 6 is shown. If the selection is PM Motor, the value of parameter\nP3.1.1.5 Motor Cos Phi is set to 1.00, and the wizard skips step 6.\n2. Set a value for P3.1.1.1 Motor Nominal Voltage (so that it agrees with the nameplate of the motor).\n3.\nSet a value for P3.1.1.2 Motor Nominal Frequency (so that it agrees with the nameplate of the motor).\n4.\n5.\nSet a value for P3.1.1.3 Motor Nominal Speed (so that it agrees with the nameplate of the motor).\nSet a value for P3.1.1.4 Motor Nominal Current (so that it agrees with the nameplate of the motor).\n6. Set a value for P3.1.1.5 Motor Cos Phi (so that it agrees with the nameplate of the motor).\n7.\nSet a value for P3.3.1.1 Minimum Frequency Reference.\n8. Set a value for P3.3.1.2 Maximum Frequency Reference.\n9. Set a value for P3.4.1.2 Acceleration Time 1.\n10. Set a value for P3.4.1.3 Deceleration Time 1.\n11. Select a control place (where to give the start and stop commands, and the frequency reference of the drive).\n12. Set a value for P3.13.1.4 Process Unit Selection.\nT\nIf the selection is other than %, the next steps are shown. If the selection is %, the wizard goes directly to step 16.\n13. Set a value for P3.13.1.5 Process Unit Min.\nThe range depends on the selection in step 12.\n14. Set a value for P3.13.1.6 Process Unit Max.\nThe range depends on the selection in step 12.\n15. Set a value for P3.13.1.7 Process Unit Decimals.\n68 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nWizards\n16. Set a value for P3.13.3.3 Feedback 1 Source Selection.\nSee the table Feedback settings in chapter 6.13 Group 3.13: PID Controller.\nT\nIf analog input signal is selected, step 18 is shown. With other selections, the wizard goes to step 19.\n17. Set the signal range of the analog input.\n18. Set a value for P3.13.1.8 Error Inversion.\n19. Set a value for P3.13.2.6 Setpoint Source Selection.\nSee table Setpoints in chapter 6.13 Group 3.13: PID Controller.\nIf analog input signal is selected, step 21 is shown. With other selections, the wizard goes to step 23. If Keypad\nSetpoint 1 or Keypad Setpoint 2 are set for the value, the wizard goes directly to step 22.\n20. Set the signal range of the analog input.\n21. Set a value for P3.13.2.1 (Keypad Setpoint 1) and P3.13.2.2 (Keypad Setpoint 2).\nDepends on the range set in step 20.\n22. Using the sleep function.\n1\nIf value Yes is set for step 22, the next 3 steps are shown. If the value No is selected, the wizard is completed.\n23. Set a value for P3.13.5.1 SP1 Sleep Frequency Limit.\n24. Set a value for P3.13.5.2 SP1 Sleep Delay.\n25. Set a value for P3.13.5.3 SP1 Wake-up Level.\nThe range depends on the set process unit.\nThe PID Control application wizard is completed.\n4.1.4 Multi-pump (Single Drive) Application Wizard\nThe application wizard helps to set the basic parameters that are related to the application.\nTo start the Multi-pump (single drive application wizard, set the value PID Control to parameter P1.2 Application (ID 212) in the\nkeypad.\nIf the application wizard is started from the Start-up wizard, the wizard goes directly to step 11.\nSee the range of values of the parameters in 6.1 Group 3.1: Motor Settings, 6.3 Group 3.3: References, 6.4 Group 3.4: Ramps and\nBrakes Setup, 6.13 Group 3.13: PID Controller.\nProcedure\n1. Set a value for P3.1.2.2 Motor Type (so that it agrees with the nameplate of the motor).\nIf Motor Type is set to Induction Motor, also step 6 is shown. If the selection is PM Motor, the value of parameter\nP3.1.1.5 Motor Cos Phi is set to 1.00, and the wizard skips step 6.\n2.\nSet a value for P3.1.1.1 Motor Nominal Voltage (so that it agrees with the nameplate of the motor).\n3.\nSet a value for P3.1.1.2 Motor Nominal Frequency (so that it agrees with the nameplate of the motor).\n4.\nSet a value for P3.1.1.3 Motor Nominal Speed (so that it agrees with the nameplate of the motor).\n5.\nSet a value for P3.1.1.4 Motor Nominal Current (so that it agrees with the nameplate of the motor).\n6.\nSet a value for P3.1.1.5 Motor Cos Phi (so that it agrees with the nameplate of the motor).\n7.\nSet a value for P3.3.1.1 Minimum Frequency Reference.\n8.\nSet a value for P3.3.1.2 Maximum Frequency Reference.\n9. Set a value for P3.4.1.2 Acceleration Time 1.\n10. Set a value for P3.4.1.3 Deceleration Time 1.\n11. Select a control place (where to give the start and stop commands, and the frequency reference of the drive).\n12. Set a value for P3.13.1.4 Process Unit Selection.\n1\nIf the selection is other than %, the next steps are shown. If the selection is %, the wizard goes directly to step 16.\n13. Set a value for P3.13.1.5 Process Unit Min.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 69",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nWizards\n14. Set a value for P3.13.1.6 Process Unit Max.\n15. Set a value for P3.13.1.7 Process Unit Decimals.\n16. Set a value for P3.13.3.3 Feedback 1 Source Selection.\nSee the table Feedback settings in chapter 6.13 Group 3.13: PID Controller.\n1\nIf analog input signal is selected, step 17 is shown. With other selections, the wizard goes to step 18.\n17. Set the signal range of the analog input.\nSee table Analog inputs in chapter 6.5 Group 3.5: I/O Configuration.\n18. Set a value for P3.13.1.8 Error Inversion.\n19. Set a value for P3.13.2.6 Setpoint Source Selection.\nSee table Setpoints in chapter 6.13 Group 3.13: PID Controller.\n1\nIf analog input signal is selected, step 20 is shown. With other selections, the wizard goes to step 21. If Keypad\nSetpoint 1 or Keypad Setpoint 2 is selected for the value, step 22 is shown.\n20. Set the signal range of the analog input.\nSee table Analog inputs in chapter 6.5 Group 3.5: I/O Configuration.\n21. Set a value for P3.13.2.1 (Keypad setpoint 1) and P3.13.2.2 (Keypad setpoint 2).\n22. Using the sleep function.\nIf the value \"Yes\" is given step 22, the next 3 steps are shown.\n23. Set a value for P3.13.5.1 SP1 Sleep Frequency Limit.\n24. Set a value for P3.13.5.2 SP1 Sleep Delay.\n25. Set a value for P3.13.5.3 SP1 Wake-up Level.\n26. Set a value for P3.15.2 Number of pumps.\n27. Set a value for P3.15.5 Pump Interlocking.\n28. Set a value for P3.15.6 Autochange.\nIf the value Enabled (Interval or Weekdays) is set to parameter Autochange, the next 6 steps are shown. If the Au-\ntochange function is not used, the wizard goes directly to step 21.\n29. Set a value for P3.15.7 Autochanged pumps.\nT\nIf the value Enabled (Interval) is set to parameter Autochange in step 28, the next step is shown.\n30. Set a value for P3.15.8 Autochange Interval.\n1\nIf the value Enabled (Weekdays) is set to parameter Autochange in step 28, the next 2 steps are shown.\n31. Set a value for P3.15.9 Autochange Days.\n32. Set a value for P3.15.10 Autochange Time of Day.\n33. Set a value for P3.15.11 Autochange Frequency Limit.\n34. Set a value for P3.15.12 Autochange Pump Limit.\n35. Set a value for P3.15.13 Bandwidth.\n36. Set a value for P3.15.14 Bandwidth Delay.\nT\nThe Multi-pump (single drive) application wizard is completed.\n4.1.5 Multi-pump (Multidrive) Application Wizard\nThe application wizard helps to set the basic parameters that are related to the application.\nTo start the Multi-pump (single drive application wizard, set the value PID Control to parameter P1.2 Application (ID 212) in the\nkeypad.\nIf the application wizard is started from the Start-up wizard, the wizard goes directly to step 11.\n70 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nWizards\nSee the range of values of the parameters in 6.1 Group 3.1: Motor Settings, 6.3 Group 3.3: References, 6.4 Group 3.4: Ramps and\nBrakes Setup, 6.13 Group 3.13: PID Controller.\nProcedure\n1. Set a value for P3.1.2.2 Motor Type (so that it agrees with the nameplate of the motor).\nIf Motor Type is set to Induction Motor, also step 6 is shown. If the selection is PM Motor, the value of parameter\nP3.1.1.5 Motor Cos Phi is set to 1.00, and the wizard skips step 6.\n2. Set a value for P3.1.1.1 Motor Nominal Voltage (so that it agrees with the nameplate of the motor).\n3.\nSet a value for P3.1.1.2 Motor Nominal Frequency (so that it agrees with the nameplate of the motor).\n4.\nSet a value for P3.1.1.3 Motor Nominal Speed (so that it agrees with the nameplate of the motor).\n5.\nSet a value for P3.1.1.4 Motor Nominal Current (so that it agrees with the nameplate of the motor).\n6.\nSet a value for P3.1.1.5 Motor Cos Phi (so that it agrees with the nameplate of the motor).\n7.\nSet a value for P3.3.1.1 Minimum Frequency Reference.\n8. Set a value for P3.3.1.2 Maximum Frequency Reference.\n9.\nSet a value for P3.4.1.2 Acceleration Time 1.\n10. Set a value for P3.4.1.3 Deceleration Time 1.\n11. Select a control place (where to give the start and stop commands, and the frequency reference of the drive).\n12. Set a value for P3.13.1.4 Process Unit Selection.\n1\nIf the selection is other than %, the next steps are shown. If the selection is %, the wizard goes directly to step 16.\n13. Set a value for P3.13.1.5 Process Unit Min.\n14. Set a value for P3.13.1.6 Process Unit Max.\n15. Set a value for P3.13.1.7 Process Unit Decimals.\n16. Set a value for P3.13.3.3 Feedback 1 Source Selection.\nSee the table Feedback settings in chapter 6.13 Group 3.13: PID Controller.\n1\nIf analog input signal is selected, step 17 is shown. With other selections, the wizard goes to step 18.\n17. Set the signal range of the analog input.\nSee table Analog inputs in chapter 6.5 Group 3.5: I/O Configuration.\n18. Set a value for P3.13.1.8 Error Inversion.\n19. Set a value for P3.13.2.6 Setpoint Source Selection.\nSee table Setpoints in chapter 6.13 Group 3.13: PID Controller.\nIf analog input signal is selected, step 20 is shown. With other selections, the wizard goes to step 21. If Keypad\nSetpoint 1 or Keypad Setpoint 2 is selected for the value, step 22 is shown.\n20. Set the signal range of the analog input.\nSee table Analog inputs in chapter 6.5 Group 3.5: I/O Configuration.\n21. Set a value for P3.13.2.1 (Keypad setpoint 1) and P3.13.2.2 (Keypad setpoint 2).\n22. Using the sleep function.\n1\nIf the value \"Yes\" is given step 22, the next 3 steps are shown.\n23. Set a value for P3.13.5.1 SP1 Sleep Frequency Limit.\n24. Set a value for P3.13.5.2 SP1 Sleep Delay.\n25. Set a value for P3.13.5.3 SP1 Wake-up Level.\n26. Set a value for P3.15.1 Multi-pump Mode.\n27. Set a value for P3.15.3 Pump ID Number.\n28. Set a value for P3.15.4 Start and Feedback.\n29. Set a value for P3.15.2 Number of pumps.\n30. Set a value for P3.15.5 Pump Interlocking.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 71",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nWizards\n31. Set a value for P3.15.6 Autochange.\n1\nIf the value Enabled (Interval) is set to parameter Autochange, step 33 shows. If the value Enabled (Weekdays) is set\nto parameter Autochange, step 34 shows. If the Autochange function is not used, the wizard goes directly to step\n36.\n32. Set a value for P3.15.7 Autochanged pumps.\nT\nIf the value Enabled (Interval) is set to parameter Autochange in step 31, the next step is shown.\n33. Set a value for P3.15.8 Autochange Interval.\n1\nIf the value Enabled (Weekdays) is set to parameter Autochange in step 31, the next 2 steps are shown.\n34. Set a value for P3.15.9 Autochange Days.\n35. Set a value for P3.15.10 Autochange Time of Day.\n36. Set a value for P3.15.13 Bandwidth.\n37. Set a value for P3.15.14 Bandwidth Delay.\nThe Multi-pump (single drive) application wizard is completed.\n4.2 Function Wizards\n4.2.1 Wizards in Menu 1.1\nTable 12: M1.1 Wizards\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.1.1\nStart-up wizard\n0\n1\n0\n1171\n0 = Do not activate\n1 = Activate\nThe selection Activate starts the Start-up wizard (see 1.6.1\nStart-Up Wizard).\n1.1.2\nFire mode Wizard\n0\n1\n0\n1672\nThe selection Activate starts the Fire mode wizard (see 4.2.2\nFire Mode Wizard).\n4.2.2 Fire Mode Wizard\nTo start the Fire Mode Wizard, make the selection Activate for parameter B1.1.4 in the Quick setup menu. See 11.19.1 The Fire Mode\nFunction for information on the password and warranty.\nSee the range of values of the parameters in 6.17 Group 3.17: Fire Mode.\nNOTICE\nBefore continuing, read about the password and warranty.\nProcedure\n1. Set a value for parameter P3.17.2 Fire Mode Frequency Source.\nIf other value than Fire mode frequency is selected, the wizard goes directly to step 3.\n2. Set a value for parameter P3.17.3 Fire Mode Frequency.\n3. Activate the signal when the contact opens or when it closes.\n4.\nSet a value for parameters P3.17.4 Fire Mode Activation on OPEN/P3.17.5 Fire Mode Activation on CLOSE.\nSee also chapter 11.7.1.1 General Information on the Programming.\n5. Set a value for parameter P3.17.6 Fire Mode Reverse.\n6.\nSet a value for P3.17.1 Fire Mode Password.\n72 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.1.1",
+            "Start-up wizard",
+            "0",
+            "1",
+            "",
+            "0",
+            "1171",
+            "0 = Do not activate 1 = Activate The selection Activate starts the Start-up wizard (see 1.6.1 Start-Up Wizard)."
+          ],
+          [
+            "1.1.2",
+            "Fire mode Wizard",
+            "0",
+            "1",
+            "",
+            "0",
+            "1672",
+            "The selection Activate starts the Fire mode wizard (see 4.2.2 Fire Mode Wizard)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "VACON® 100 FLOW\nDanfoss\nMonitor Menu\nApplication Guide\n5 Monitor Menu\n5.1 Uses of the Monitor Menu\nMonitor Menu allows monitoring the actual values of the parameters and signals. It also allows monitoring the statuses and meas-\nurements. Some of the values to be monitored can be customized.\n5.2 Multimonitor Monitoring\n5.2.1 Changing the Items to Monitor\nOn the Multimonitor page, 4-9 items to monitor can be collected. Select the number of items with the parameter 3.11.4 Multimoni-\ntor View. See more in 6.11 Group 3.11: Application Settings.\nProcedure\n1. Go into the Monitor menu with the [OK] button.\n2. Go into Multimonitor.\n3.\nTo replace an old item, activate it. Use the arrow buttons.\nT\nSTOP\nC\nREADY\nI/O\nMultimonitor\nID:25\nFreqReference\nFreqReference\n20.0 Hz\nOutput Freq\n0.00 Hz\nMotor Speed\n0.0 rpm\nMotor Curre\nMotor Torque\nMotor Voltage\n0.00A\n0.00 %\n0.0V\nDC-link volt\nUnit Tempera\nMotor Tempera\n0.0V\n81.9°C\n0.0%\ne30bg686.10\n4. To select a new item in the list, push [OK].\nT\nSTOP\nC\nREADY\nI/O\nFreqReference\nID:1\nM2.1.1.1\nOutput frequency\n0.00 Hz\nFreqReference\n10.00 Hz\nMotor Speed\n0.00 rpm\nMotor Current\n0.00 A\nMotor Torque\n0.00 %\nMotor Power\n0.00 %\ne30bg687.10\n5.3 Trend Curve Monitoring\n5.3.1 Uses of the Trend Curve\nThe Trend curve is a graphical presentation of 2 monitor values.\nWhen a value is selected, the drive starts to record the values. The Trend curve submenu allows examining the trend curve, and\nmaking the signal selections. Also the minimum and maximum settings and the sampling interval, and use autoscaling can be given\nthere.\n5.3.2 Changing the Values in Trend Curve Monitoring\nProcedure\n1. In the Monitor menu, find the Trend curve submenu and push [OK].\n2. Go into the submenu View trend curve with the [OK] button.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 73",
+      "tablas": [
+        [
+          [
+            "STOP",
+            ":selected: C",
+            "READY",
+            "",
+            "I/O"
+          ],
+          [
+            "",
+            "",
+            "Multimonitor ID:25 FreqReference"
+          ],
+          [
+            "FreqReference 20.0 Hz",
+            "",
+            "Output Freq 0.00 Hz",
+            "Motor Speed 0.0 rpm"
+          ],
+          [
+            "Motor Curre",
+            "",
+            "Motor Torque",
+            "Motor Voltage"
+          ],
+          [
+            "0.00A",
+            "0.00 %",
+            "0.0V"
+          ],
+          [
+            "DC-link volt",
+            "",
+            "Unit Tempera",
+            "Motor Tempera"
+          ],
+          [
+            "0.0V",
+            "81.9°C",
+            "0.0%"
+          ]
+        ],
+        [
+          [
+            "STOP",
+            "C\n:selected:",
+            "READY",
+            "I/O"
+          ],
+          [
+            "FreqReference"
+          ],
+          [
+            "",
+            "",
+            "",
+            "ID:1",
+            "M2.1.1.1"
+          ],
+          [
+            "",
+            ":selected: Output frequency",
+            "0.00 Hz"
+          ],
+          [
+            "",
+            ":selected: FreqReference",
+            "10.00 Hz"
+          ],
+          [
+            ":selected: Motor Speed",
+            "",
+            "0.00 rpm"
+          ],
+          [
+            "",
+            ":selected: Motor Current",
+            "0.00 A"
+          ],
+          [
+            "",
+            ":selected: Motor Torque",
+            "0.00 %"
+          ],
+          [
+            "",
+            ":unselected: Motor Power",
+            "0.00 %"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitor Menu\n3. To select the current value that to change, use the arrow buttons up and down. Push [OK].\nOnly 2 values as trend curves can be monitored at the same time. The current selections, FreqReference, and Motor speed,\nare at the bottom of the display.\nC\nSTOP\nREADY\nI/O\ne30bg688.10\n+\nFreqReference\n0.00Hz\nMotor Speed\n0rpm\n4. Go through the list of the monitoring values with the arrow buttons.\nSTOP\nREADY\nI/O\ne30bg689.10\nFreqReference\nID:3\nV2.2.1.1.4\n5. Make a selection and push [OK].\nOutput frequency\nFreqReference\nMotor Speed\nMotor Current\nMotor Torque\nMotor Shaft Power\n5.3.3 Stopping the Progression of the Curve\nThe Trend curve function allows stopping the curve and reading the current values. After, the progression of the curve can be restar-\nted.\nProcedure\n1. In Trend curve view, activate a curve with the arrow button Up.\nT\nThe frame of the display turns bold.\nRUN\nREADY\nALARM\nI/O\ne30bg690.10\nMotor Current\nMotor Speed\n0.02A\n-317rpm\n2. Push [OK] at the target point of the curve.\nT\nA vertical line comes into view on the display. The values at the bottom of the display agree to the location of the\nline.\n74 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            ":unselected:",
+            "Output frequency"
+          ],
+          [
+            ":selected:",
+            "FreqReference"
+          ],
+          [
+            ":selected:",
+            "Motor Speed"
+          ],
+          [
+            ":selected:",
+            "Motor Current"
+          ],
+          [
+            ":unselected:",
+            "Motor Torque"
+          ],
+          [
+            ":unselected:",
+            "Motor Shaft Power"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitor Menu\nRUN\nREADY\nALARM\nI/O\ne30bg691.10\nMotor Current\nMotor Speed\n0.01A\n-252rpm\n3. To move the line to see the values of some other location, use the arrow buttons Left and Right.\n5.3.4 Trend Curve Parameters\nTable 13: The Trend Curve Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nM2.2.1\nView Trend curve\nGo into this menu to monitor values in a curve form.\nP2.2.2\nSampling interval\n100\n432000\nms\n100\n2368\nP2.2.3\nChannel 1 min\n-214748\n1000\n-1000\n2369\nP2.2.4\nChannel 1 max\n-1000\n214748\n1000\n2370\nP2.2.5\nChannel 2 min\n-214748\n1000\n-1000\n2371\nP2.2.6\nChannel 2 max\n-1000\n214748\n1000\n2372\nP2.2.7\nAutoscale\n0\n1\n0\n2373\n0 = Disabled\n1 = Enabled\n5.4 Basic Monitoring\n5.4.1 Uses of the Basic Monitoring\nOnly the standard I/O board statuses are available in the Monitor menu. For the statuses of all the I/O board signals as raw data, see\nthe I/O and Hardware menu.\nCheck the statuses of the expander I/O board in the I/O and Hardware menu when the system asks.\n5.4.2 Basic Monitoring Parameters\nTable 14: Items in the Basic Monitoring Menu\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nV2.3.1\nOutput frequency\nHz\n0.01\n1\nV2.3.2\nFrequency reference\nHz\n0.01\n25\nV2.3.3\nMotor speed\nRPM\n1\n2\nV2.3.4\nMotor current\nA\nVaries\n3\nV2.3.5\nMotor torque\n%\n0.1\n4\nV2.3.7\nMotor shaft power\n%\n0.1\n5\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 75",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "M2.2.1",
+            "View Trend curve",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Go into this menu to monitor values in a curve form."
+          ],
+          [
+            "P2.2.2",
+            "Sampling interval",
+            "100",
+            "432000",
+            "ms",
+            "100",
+            "2368",
+            ""
+          ],
+          [
+            "P2.2.3",
+            "Channel 1 min",
+            "-214748",
+            "1000",
+            "",
+            "-1000",
+            "2369",
+            ""
+          ],
+          [
+            "P2.2.4",
+            "Channel 1 max",
+            "-1000",
+            "214748",
+            "",
+            "1000",
+            "2370",
+            ""
+          ],
+          [
+            "P2.2.5",
+            "Channel 2 min",
+            "-214748",
+            "1000",
+            "",
+            "-1000",
+            "2371",
+            ""
+          ],
+          [
+            "P2.2.6",
+            "Channel 2 max",
+            "-1000",
+            "214748",
+            "",
+            "1000",
+            "2372",
+            ""
+          ],
+          [
+            "P2.2.7",
+            "Autoscale",
+            "0",
+            "1",
+            "",
+            "0",
+            "2373",
+            "0 = Disabled 1 = Enabled"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "V2.3.1",
+            "Output frequency",
+            "Hz",
+            "0.01",
+            "1",
+            ""
+          ],
+          [
+            "V2.3.2",
+            "Frequency reference",
+            "Hz",
+            "0.01",
+            "25",
+            ""
+          ],
+          [
+            "V2.3.3",
+            "Motor speed",
+            "RPM",
+            "1",
+            "2",
+            ""
+          ],
+          [
+            "V2.3.4",
+            "Motor current",
+            "A",
+            "Varies",
+            "3",
+            ""
+          ],
+          [
+            "V2.3.5",
+            "Motor torque",
+            "%",
+            "0.1",
+            "4",
+            ""
+          ],
+          [
+            "V2.3.7",
+            "Motor shaft power",
+            "%",
+            "0.1",
+            "5",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitor Menu\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nV2.3.8\nMotor shaft power\nkW/hp\nVaries\n73\nV2.3.9\nMotor voltage\nV\n0.1\n6\nV2.3.10\nDC-link voltage\nV\n1\n7\nV2.3.11\nUnit temperature\nPC\n0.1\n8\nV2.3.12\nMotor temperature\n%\n0.1\n9\nV2.3.13\nMotor Preheat\n1\n1228\n0 = OFF\n1 = Heating (feeding DC-current)\nV2.3.15\nkWh Trip Counter Low\nkWh\n1\n1054\nV2.3.14\nkWh Trip Counter High\n1\n1067\n5.5 I/O Monitoring\nTable 15: I/O Signal Monitoring\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nV2.4.1\nSlot A DIN 1, 2, 3\n1\n15\nV2.4.2\nSlot A DIN 4, 5, 6\n1\n16\nV2.4.3\nSlot B RO 1, 2, 3\n1\n17\nV2.4.4\nAnalog input 1\n%\n0.01\n59\nSlot A.1 as default.\nV2.4.5\nAnalog input 2\n%\n0.01\n60\nSlot A.2 as default.\nV2.4.6\nAnalog input 3\n%\n0.01\n61\nSlot D.1 as default.\nV2.4.7\nAnalog input 4\n%\n0.01\n62\nSlot D.2 as default.\nV2.4.8\nAnalog input 5\n%\n0.01\n75\nSlot E.1 as default.\nV2.4.9\nAnalog input 6\n%\n0.01\n76\nSlot E.2 as default.\nV2.4.10\nSlot A AO1\n%\n0.01\n81\n5.6 Temperature Inputs\nTable 16: Monitoring the Temperature Inputs\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nV2.5.1(1)\nTemperature input 1\n℃\n0.1\n50\nV2.5.2(1)\nTemperature input 2\n0.1\n51\nV2.5.3(1)\nTemperature input 3\nU\n0.1\n52\n76 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "V2.3.8",
+            "Motor shaft power",
+            "kW/hp",
+            "Varies",
+            "73",
+            ""
+          ],
+          [
+            "V2.3.9",
+            "Motor voltage",
+            "V",
+            "0.1",
+            "6",
+            ""
+          ],
+          [
+            "V2.3.10",
+            "DC-link voltage",
+            "V",
+            "1",
+            "7",
+            ""
+          ],
+          [
+            "V2.3.11",
+            "Unit temperature",
+            "PC",
+            "0.1",
+            "8",
+            ""
+          ],
+          [
+            "V2.3.12",
+            "Motor temperature",
+            "%",
+            "0.1",
+            "9",
+            ""
+          ],
+          [
+            "V2.3.13",
+            "Motor Preheat",
+            "",
+            "1",
+            "1228",
+            "0 = OFF 1 = Heating (feeding DC-current)"
+          ],
+          [
+            "V2.3.15",
+            "kWh Trip Counter Low",
+            "kWh",
+            "1",
+            "1054",
+            ""
+          ],
+          [
+            "V2.3.14",
+            "kWh Trip Counter High",
+            "",
+            "1",
+            "1067",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "V2.4.1",
+            "Slot A DIN 1, 2, 3",
+            "",
+            "1",
+            "15",
+            ""
+          ],
+          [
+            "V2.4.2",
+            "Slot A DIN 4, 5, 6",
+            "",
+            "1",
+            "16",
+            ""
+          ],
+          [
+            "V2.4.3",
+            "Slot B RO 1, 2, 3",
+            "",
+            "1",
+            "17",
+            ""
+          ],
+          [
+            "V2.4.4",
+            "Analog input 1",
+            "%",
+            "0.01",
+            "59",
+            "Slot A.1 as default."
+          ],
+          [
+            "V2.4.5",
+            "Analog input 2",
+            "%",
+            "0.01",
+            "60",
+            "Slot A.2 as default."
+          ],
+          [
+            "V2.4.6",
+            "Analog input 3",
+            "%",
+            "0.01",
+            "61",
+            "Slot D.1 as default."
+          ],
+          [
+            "V2.4.7",
+            "Analog input 4",
+            "%",
+            "0.01",
+            "62",
+            "Slot D.2 as default."
+          ],
+          [
+            "V2.4.8",
+            "Analog input 5",
+            "%",
+            "0.01",
+            "75",
+            "Slot E.1 as default."
+          ],
+          [
+            "V2.4.9",
+            "Analog input 6",
+            "%",
+            "0.01",
+            "76",
+            "Slot E.2 as default."
+          ],
+          [
+            "V2.4.10",
+            "Slot A AO1",
+            "%",
+            "0.01",
+            "81",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "V2.5.1(1)",
+            "Temperature input 1",
+            "℃",
+            "0.1",
+            "50",
+            ""
+          ],
+          [
+            "V2.5.2(1)",
+            "Temperature input 2",
+            "",
+            "0.1",
+            "51",
+            ""
+          ],
+          [
+            "V2.5.3(1)",
+            "Temperature input 3",
+            "U",
+            "0.1",
+            "52",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Monitor Menu\nVACON® 100 FLOW\nDanfoss\nApplication Guide\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nV2.5.4(1)\nTemperature input 4\n0.1\n69\nV2.5.5(1)\nTemperature input 5\n0.1\n70\nV2.5.6(1)\nTemperature input 6\nºC\n0.1\n71\n1 This parameter group is visible with an option board for temperature measurement (OPTBH).\n5.7 Extras and Advanced\nTable 17: Monitoring of the Advanced Values\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nV2.6.1\nDrive Status Word\n1\n43\nB1 = Ready\nB2 = Run\nB3 = Fault\nB6 = Run Enable\nB7 = Alarm Active\nB10 = DC current in stop\nB11 = DC brake active\nB12 = Run Request\nB13 = Motor Regulator Active\nB15 = Brake Chopper Active\nV2.6.2\nReady status\n1\n78\nB0 = Run Enable high\nB1 = No fault active\nB2 = Charge switch closed\nB3 = DC voltage OK\nB4 = Power unit OK\nB5 = Power unit is not blocking start\nB6 = System software is not blocking start\nV2.6.3\nApplication Status Word1\n1\n89\nB0 = Interlock 1\nB1 = Interlock 2\nB2 = Ramp 2 active\nB3 = Reserved\nB4 = I/O A control active\nB5 = I/O B control active\nB6 = Fieldbus Control Active\nB7 = Local control active\nB8 = PC control active\nB9 = Preset frequencies active\nB10 = Flushing active\nB11 = Fire Mode active\nB12 = Motor Preheat active\nB13 = Quick stop active\nB14 = Drive stopped from keypad\nV2.6.4\nApplication Status Word2\n1\n90\nB0 = Acc/Dec prohibited\nB1 = Motor switch open\nB2 = PID running\nB3 = PID sleep\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 77",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "V2.5.4(1)",
+            "Temperature input 4",
+            "",
+            "0.1",
+            "69",
+            ""
+          ],
+          [
+            "V2.5.5(1)",
+            "Temperature input 5",
+            "",
+            "0.1",
+            "70",
+            ""
+          ],
+          [
+            "V2.5.6(1)",
+            "Temperature input 6",
+            "ºC",
+            "0.1",
+            "71",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "V2.6.1",
+            "Drive Status Word",
+            "",
+            "1",
+            "43",
+            "B1 = Ready B2 = Run B3 = Fault B6 = Run Enable B7 = Alarm Active B10 = DC current in stop B11 = DC brake active B12 = Run Request B13 = Motor Regulator Active B15 = Brake Chopper Active"
+          ],
+          [
+            "V2.6.2",
+            "Ready status",
+            "",
+            "1",
+            "78",
+            "B0 = Run Enable high B1 = No fault active B2 = Charge switch closed B3 = DC voltage OK B4 = Power unit OK B5 = Power unit is not blocking start B6 = System software is not blocking start"
+          ],
+          [
+            "V2.6.3",
+            "Application Status Word1",
+            "",
+            "1",
+            "89",
+            "B0 = Interlock 1 B1 = Interlock 2 B2 = Ramp 2 active B3 = Reserved B4 = I/O A control active B5 = I/O B control active B6 = Fieldbus Control Active B7 = Local control active B8 = PC control active B9 = Preset frequencies active B10 = Flushing active B11 = Fire Mode active B12 = Motor Preheat active B13 = Quick stop active B14 = Drive stopped from keypad"
+          ],
+          [
+            "V2.6.4",
+            "Application Status Word2",
+            "",
+            "1",
+            "90",
+            "B0 = Acc/Dec prohibited B1 = Motor switch open B2 = PID running B3 = PID sleep"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nMonitor Menu\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nB4 = PID soft fil\nB5 = Autocleaning active\nB6 = Jockey pump\nB7 = Priming pump\nB8 = Anti-blocking\nB9 = Input pressure alarm\nB10 = Frost protection alarm\nB11 = Overpressure alarm\nB14 = Supervision 1\nB15 = Supervision 2\nV2.6.5\nDIN Status Word 1\n1\n56\nV2.6.6\nDIN Status Word 2\n1\n57\nV2.6.7\nMotor current 1 decimal\n0.1\n45\nV2.6.8\nFrequency reference source\n1\n1495\n0 = PC\n1 = Preset Freqs\n2 = Keypad Reference\n3 = Fieldbus\n4 = AI1\n5 = AI2\n6 = AI1+AI2\n7 = PID Controller\n8 = Motor Potentiom.\n10 = Flushing\n11 = Block Out. 1\n12 = Block Out.2\n13 = Block Out.3\n14 = Block Out.4\n15 = Block Out.5\n16 = Block Out.6\n17 = Block Out.7\n18 = Block Out.8\n19 = Block Out.9\n20 = Block Out. 10\n100 = Not defined\n101 = Alarm, PresetFreq\n102 = Auto-cleaning\nV2.6.9\nLast active fault code\n1\n37\nV2.6.10\nLast active fault ID\n1\n95\nV2.6.11\nLast active alarm code\n1\n74\nV2.6.12\nLast active alarm ID\n1\n94\nV2.6.13\nMotor regulator status\n1\n77\nB0 = Current Limit (Motor)\nB1 = Current Limit (Generator)\nB2 = Torque Limit (Motor)\nB3 = Torque Limit (Generator)\nB4 = Overvoltage Control\n78 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "B4 = PID soft fil B5 = Autocleaning active B6 = Jockey pump B7 = Priming pump B8 = Anti-blocking B9 = Input pressure alarm B10 = Frost protection alarm B11 = Overpressure alarm B14 = Supervision 1 B15 = Supervision 2"
+          ],
+          [
+            "V2.6.5",
+            "DIN Status Word 1",
+            "",
+            "1",
+            "56",
+            ""
+          ],
+          [
+            "V2.6.6",
+            "DIN Status Word 2",
+            "",
+            "1",
+            "57",
+            ""
+          ],
+          [
+            "V2.6.7",
+            "Motor current 1 decimal",
+            "",
+            "0.1",
+            "45",
+            ""
+          ],
+          [
+            "V2.6.8",
+            "Frequency reference source",
+            "",
+            "1",
+            "1495",
+            "0 = PC 1 = Preset Freqs 2 = Keypad Reference 3 = Fieldbus 4 = AI1 5 = AI2 6 = AI1+AI2 7 = PID Controller 8 = Motor Potentiom. 10 = Flushing 11 = Block Out. 1 12 = Block Out.2 13 = Block Out.3 14 = Block Out.4 15 = Block Out.5 16 = Block Out.6 17 = Block Out.7 18 = Block Out.8 19 = Block Out.9 20 = Block Out. 10 100 = Not defined 101 = Alarm, PresetFreq 102 = Auto-cleaning"
+          ],
+          [
+            "V2.6.9",
+            "Last active fault code",
+            "",
+            "1",
+            "37",
+            ""
+          ],
+          [
+            "V2.6.10",
+            "Last active fault ID",
+            "",
+            "1",
+            "95",
+            ""
+          ],
+          [
+            "V2.6.11",
+            "Last active alarm code",
+            "",
+            "1",
+            "74",
+            ""
+          ],
+          [
+            "V2.6.12",
+            "Last active alarm ID",
+            "",
+            "1",
+            "94",
+            ""
+          ],
+          [
+            "V2.6.13",
+            "Motor regulator status",
+            "",
+            "1",
+            "77",
+            "B0 = Current Limit (Motor) B1 = Current Limit (Generator) B2 = Torque Limit (Motor) B3 = Torque Limit (Generator) B4 = Overvoltage Control"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitor Menu\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nB5 = Undervoltage Control\nB6 = Power Limit (Motor)\nB7 = Power Limit (Generator)\nV2.6.14\nMotor Shaft Power 1 Decimal\nkW/hp\n98\n5.8 Timer Functions Monitoring\nTable 18: Monitoring of the Timer Functions\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nV2.7.1\nTC 1, TC 2, TC 3\n1\n1441\nV2.7.2\nInterval 1\n1\n1442\nV2.7.3\nInterval 2\n1\n1443\nV2.7.4\nInterval 3\n1\n1444\nV2.7.5\nInterval 4\n1\n1445\nV2.7.6\nInterval 5\n1\n1446\nV2.7.7\nTimer 1\ns\n1\n1447\nV2.7.8\nTimer 2\ns\n1\n1448\nV2.7.9\nTimer 3\ns\n1\n1449\nV2.7.10\nReal-time clock\n1450\n5.9 PID Controller Monitoring\nTable 19: Monitoring of the Values of the PID Controller\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nV2.8.1\nPID setpoint\nVaries\nAs is set in P3.13.1.7 (See 6.13 Group 3.13:\nPID Controller.)\n20\nV2.8.2\nPID feedback\nVaries\nAs is set in P3.13.1.7\n21\nV2.8.3\nPID Feedback (1)\nVaries\nAs is set in P3.13.1.7\n15541\nV2.8.4\nPID Feedback (2)\nVaries\nAs is set in P3.13.1.7\n15542\nV2.8.5\nPID Error\nVaries\nAs is set in P3.13.1.7\n22\nV2.8.6\nPID Output\n%\n0.01\n23\nV2.8.7\nPID Status\n1\n24\n0 = Stopped\n1 = Running\n3 = Sleep mode\n4 = In dead band (see 6.13 Group\n3.13: PID Controller)\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 79",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "B5 = Undervoltage Control B6 = Power Limit (Motor) B7 = Power Limit (Generator)"
+          ],
+          [
+            "V2.6.14",
+            "Motor Shaft Power 1 Decimal",
+            "kW/hp",
+            "",
+            "98",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "V2.7.1",
+            "TC 1, TC 2, TC 3",
+            "",
+            "1",
+            "1441",
+            ""
+          ],
+          [
+            "V2.7.2",
+            "Interval 1",
+            "",
+            "1",
+            "1442",
+            ""
+          ],
+          [
+            "V2.7.3",
+            "Interval 2",
+            "",
+            "1",
+            "1443",
+            ""
+          ],
+          [
+            "V2.7.4",
+            "Interval 3",
+            "",
+            "1",
+            "1444",
+            ""
+          ],
+          [
+            "V2.7.5",
+            "Interval 4",
+            "",
+            "1",
+            "1445",
+            ""
+          ],
+          [
+            "V2.7.6",
+            "Interval 5",
+            "",
+            "1",
+            "1446",
+            ""
+          ],
+          [
+            "V2.7.7",
+            "Timer 1",
+            "s",
+            "1",
+            "1447",
+            ""
+          ],
+          [
+            "V2.7.8",
+            "Timer 2",
+            "s",
+            "1",
+            "1448",
+            ""
+          ],
+          [
+            "V2.7.9",
+            "Timer 3",
+            "s",
+            "1",
+            "1449",
+            ""
+          ],
+          [
+            "V2.7.10",
+            "Real-time clock",
+            "",
+            "",
+            "1450",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "V2.8.1",
+            "PID setpoint",
+            "Varies",
+            "As is set in P3.13.1.7 (See 6.13 Group 3.13: PID Controller.)",
+            "20",
+            ""
+          ],
+          [
+            "V2.8.2",
+            "PID feedback",
+            "Varies",
+            "As is set in P3.13.1.7",
+            "21",
+            ""
+          ],
+          [
+            "V2.8.3",
+            "PID Feedback (1)",
+            "Varies",
+            "As is set in P3.13.1.7",
+            "15541",
+            ""
+          ],
+          [
+            "V2.8.4",
+            "PID Feedback (2)",
+            "Varies",
+            "As is set in P3.13.1.7",
+            "15542",
+            ""
+          ],
+          [
+            "V2.8.5",
+            "PID Error",
+            "Varies",
+            "As is set in P3.13.1.7",
+            "22",
+            ""
+          ],
+          [
+            "V2.8.6",
+            "PID Output",
+            "%",
+            "0.01",
+            "23",
+            ""
+          ],
+          [
+            "V2.8.7",
+            "PID Status",
+            "",
+            "1",
+            "24",
+            "0 = Stopped 1 = Running 3 = Sleep mode 4 = In dead band (see 6.13 Group 3.13: PID Controller)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nMonitor Menu\n5.10 External PID Controller Monitoring\nTable 20: Monitoring of the Values of the External PID Controller\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nV2.9.1\nExtPID Setpoint\nVaries\nAs set in P3.14.1.10 (See 6.14 Group 3.14:\nExternal PID Controller.)\n83\nV2.9.2\nExtPID Feedback\nVaries\nAs set in P3.14.1.10\n84\nV2.9.3\nExtPID Error\nVaries\nAs set in P3.14.1.10\n85\nV2.9.4\nExtPID Output\n%\n0.01\n86\nV2.9.5\nExtPID Status\n1\n87\n0 = Stopped\n1 = Running\n2 = In dead band (See 6.14 Group 3.14:\nExternal PID Controller.)\n5.11 Multi-pump Monitoring\nTable 21: Multi-pump Monitoring\nIndex\nMonitoring value\nUnit\nScale\nID\nDescription\nV2.10.1\nMotors Running\n1\n30\nV2.10.2\nAutochange\n1\n1114\nV2.10.3\nNext Autochange\nh\n0.1\n1503\nV2.10.4\nOperate Mode\n1\n1505\n0 = Slave\n1 = Master\nV2.10.5\nMulti-pump Status\n1\n1628\n0 = Not used\n10 = Stopped\n20 = Sleep\n30 = Anti-blocking\n40 = Auto-cleaning\n50 = Flushing60 = Soft filling 70 = Regulating\n80 = Following\n90 = Const. producing200 = Unknown\nV2.10.6\nCommunicationStatus\nh\n0.1\n1629\n0 = Not used (Multi-pump multidrive function)\n10 = Fatal communication errors occurred (or no communication)\n11 = Errors occurred (data sending)\n12 = Errors occurred (data receiving)\n20 = Communication operational, no errorsoccurred\n30 = Status unknown\nV2.10.7\nPump (1) Running Time\nh\n0.1\n1620\nV2.10.8\nPump 2 Running Time\nh\n0.1\n1621\nV2.10.9\nPump 3 Running Time\nh\n0.1\n1622\nV2.10.10\nPump 4 Running Time\nh\n0.1\n1623\nV2.10.11\nPump 5 Running Time\nh\n0.1\n1624\n80 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "V2.9.1",
+            "ExtPID Setpoint",
+            "Varies",
+            "As set in P3.14.1.10 (See 6.14 Group 3.14: External PID Controller.)",
+            "83",
+            ""
+          ],
+          [
+            "V2.9.2",
+            "ExtPID Feedback",
+            "Varies",
+            "As set in P3.14.1.10",
+            "84",
+            ""
+          ],
+          [
+            "V2.9.3",
+            "ExtPID Error",
+            "Varies",
+            "As set in P3.14.1.10",
+            "85",
+            ""
+          ],
+          [
+            "V2.9.4",
+            "ExtPID Output",
+            "%",
+            "0.01",
+            "86",
+            ""
+          ],
+          [
+            "V2.9.5",
+            "ExtPID Status",
+            "",
+            "1",
+            "87",
+            "0 = Stopped 1 = Running 2 = In dead band (See 6.14 Group 3.14: External PID Controller.)"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Monitoring value",
+            "Unit",
+            "Scale",
+            "ID",
+            "Description"
+          ],
+          [
+            "V2.10.1",
+            "Motors Running",
+            "",
+            "1",
+            "30",
+            ""
+          ],
+          [
+            "V2.10.2",
+            "Autochange",
+            "",
+            "1",
+            "1114",
+            ""
+          ],
+          [
+            "V2.10.3",
+            "Next Autochange",
+            "h",
+            "0.1",
+            "1503",
+            ""
+          ],
+          [
+            "V2.10.4",
+            "Operate Mode",
+            "",
+            "1",
+            "1505",
+            "0 = Slave 1 = Master"
+          ],
+          [
+            "V2.10.5",
+            "Multi-pump Status",
+            "",
+            "1",
+            "1628",
+            "0 = Not used 10 = Stopped 20 = Sleep 30 = Anti-blocking 40 = Auto-cleaning 50 = Flushing60 = Soft filling 70 = Regulating 80 = Following 90 = Const. producing200 = Unknown"
+          ],
+          [
+            "V2.10.6",
+            "CommunicationStatus",
+            "h",
+            "0.1",
+            "1629",
+            "0 = Not used (Multi-pump multidrive function) 10 = Fatal communication errors occurred (or no communication) 11 = Errors occurred (data sending) 12 = Errors occurred (data receiving) 20 = Communication operational, no errorsoccurred 30 = Status unknown"
+          ],
+          [
+            "V2.10.7",
+            "Pump (1) Running Time",
+            "h",
+            "0.1",
+            "1620",
+            ""
+          ],
+          [
+            "V2.10.8",
+            "Pump 2 Running Time",
+            "h",
+            "0.1",
+            "1621",
+            ""
+          ],
+          [
+            "V2.10.9",
+            "Pump 3 Running Time",
+            "h",
+            "0.1",
+            "1622",
+            ""
+          ],
+          [
+            "V2.10.10",
+            "Pump 4 Running Time",
+            "h",
+            "0.1",
+            "1623",
+            ""
+          ],
+          [
+            "V2.10.11",
+            "Pump 5 Running Time",
+            "h",
+            "0.1",
+            "1624",
+            ""
+          ]
+        ]
+      ]
+    }
+  ]
+}

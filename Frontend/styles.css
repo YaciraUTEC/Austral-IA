@@ -1,0 +1,1055 @@
+:root {
+  --primary-color: #063970;
+  --secondary-color: #4882ca;
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+
+/* Layout principal */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; /* evitar scroll horizontal */
+}
+
+.user {
+  margin-left: auto; /* Empuja el elemento hacia la derecha */
+  padding-left: 20px; /* Ajusta si quieres más espacio a la izquierda */
+}
+
+
+.sidebar {
+  width: 280px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  flex-shrink: 0; 
+}
+.top-menu {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  padding-top: 250px;
+}
+
+.top-menu .menu li,
+.bottom-menu .menu li {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.top-menu .menu li:hover,
+.bottom-menu .menu li:hover {
+  opacity: 1;
+  background-color: var(--secondary-color);
+
+}
+
+.bottom-menu {
+  margin-top: auto;
+  padding-top: 100px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 100px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 160px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: auto;
+
+}
+
+.new-chat {
+  background-color: #5a6b7e7c;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.section h4 {
+  font-size: 10px; /* Reducido para disminuir el tamaño de las palabras */
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.menu {
+  list-style: none;
+
+}
+
+.menu li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.menu li:hover {
+  background-color: var(--secondary-color);
+}
+
+.menu-item.active {
+  background-color: var(--secondary-color);
+  position: relative;
+  padding-left: 55px;
+}
+
+.menu-icono {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px; /* Ajustar para mover el ícono más a la izquierda con espacio */
+}
+
+.main {
+  flex: 5;
+  display: flex;
+  transition: margin-left 0.3s ease;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #908c8cbf;
+  background-color: rgba(255, 255, 255, 0.616);
+  width: 103%;
+  box-sizing: border-box;
+  margin-left: -19px;
+}
+
+
+
+.sidebar {
+  width: 280px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 60px !important; /* fuerza ancho pequeño */
+}
+
+.sidebar.collapsed .new-chat,
+.sidebar.collapsed .menu li,
+.sidebar.collapsed .section h4,
+.sidebar.collapsed .logo {
+  /* Oculta el texto y reduce tamaño logo */
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: -9999px;
+  width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.sidebar.collapsed .logo {
+  width: 40px !important;
+  max-width: 40px !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  display: block !important;
+  margin-left: auto ;
+  margin-right: auto;
+}
+
+
+.gpt-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #333333;
+  margin-bottom: 4px;
+}
+
+.gpt-sub {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Bienvenida */
+.welcome {
+  text-align: center;
+  padding: 100px 20px 60px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 60vh;
+}
+
+.welcome2 {
+  text-align: center;
+  padding: 80px 20px 40px; /* Aumentado el padding superior para bajar un poco el contenido */
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Cambiado a center para centrar verticalmente */
+  min-height: 70vh; /* Altura mínima para asegurar centrado vertical */
+  height: auto; /* Cambiado para mejor adaptabilidad */
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Específico para la sección de proyectos */
+#proyectos-section.welcome2 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 700px;
+  padding-top: 140px; /* Aumentado para bajar más el contenido */
+  margin-top: 40px; /* Añade espacio adicional desde arriba */
+  min-height: 75vh; /* Aumenta altura mínima para mayor espacio vertical */
+  padding-left: 80px; /* Desplaza todo el contenido a la derecha */
+  font-size: 1em; /* Reducido aún más para disminuir el tamaño de la letra */
+}
+
+/* Específico para la sección de mantenimiento */
+#mantenimiento-section.welcome2 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 700px;
+  padding-top: 140px; /* Aumentado para bajar más el contenido */
+  margin-top: 40px; /* Añade espacio adicional desde arriba */
+  min-height: 75vh; /* Aumenta altura mínima para mayor espacio vertical */
+  padding-left: 80px; /* Desplaza todo el contenido a la derecha */
+  font-size: 1em; /* Reducido aún más para disminuir el tamaño de la letra */
+}
+
+#mantenimiento-section.welcome2,
+#proyectos-section.welcome2 {
+  background: none !important;
+}
+
+/* Ajuste del título en sección mantenimiento */
+#mantenimiento-section.welcome2 h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Ajuste del título en sección proyectos */
+#proyectos-section.welcome2 h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.welcome h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #063970, #800080);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.welcome2 h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  background: linear-gradient(45deg, #063970, #800080);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.welcome .subtitle {
+  font-size: 1.2em;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  max-width: 600px;
+}
+
+.welcome2 .description {
+  margin-bottom: 30px;
+  color: #666;
+  text-align: center;
+  max-width: 500px;
+}
+
+/* Específico para la descripción en la sección mantenimiento */
+#mantenimiento-section .description {
+  margin-bottom: 40px; /* Mayor espacio debajo de la descripción */
+  margin-top: 20px; /* Mayor espacio encima de la descripción */
+  margin: 20px auto 40px; /* Margen arriba, auto horizontal, abajo */
+  max-width: 80%; /* Ajusta el ancho máximo del texto */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+/* Específico para la descripción en la sección proyectos */
+#proyectos-section .description {
+  margin-bottom: 40px; /* Mayor espacio debajo de la descripción */
+  margin-top: 20px; /* Mayor espacio encima de la descripción */
+  margin: 20px auto 40px; /* Margen arriba, auto horizontal, abajo */
+  max-width: 80%; /* Ajusta el ancho máximo del texto */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.welcome .description {
+  color: #666;
+  text-align: center;
+  max-width: 500px;
+}
+
+/* Contenedor del chat */
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.welcome2 .chat-container {
+  min-height: 300px;
+  max-height: 50vh;
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.chat-input {
+  padding: 20px;
+  border-top: none;
+  display: flex;
+  gap: 10px;
+  max-width: 850px; /* Ampliado para coincidir con el contenedor de chat */
+  margin: 20px auto; /* Añadido margen vertical */
+  width: 100%;
+  justify-content: center; /* Centrar el contenido horizontalmente */
+}
+
+/* Específico para el formulario de mantenimiento */
+#mantenimiento-form.chat-input {
+  width: 80%;
+  max-width: 850px; /* Ampliado para coincidir con el contenedor de chat */
+  margin: 40px auto 0; /* Aumentado para dar más espacio vertical */
+  position: static; /* Cambiar a posición estática para evitar movimiento */
+  bottom: auto; /* Eliminar cualquier posición fija */
+  display: flex;
+  justify-content: center;
+}
+
+/* Específico para el formulario de proyectos */
+#proyectos-form.chat-input {
+  width: 90%;
+  max-width: 850px; /* Ampliado para coincidir con el contenedor de chat */
+  margin: 40px auto 0; /* Aumentado para dar más espacio vertical */
+  position: relative;
+  bottom: -20px; /* Desplaza el formulario hacia abajo */
+  display: flex;
+  justify-content: center;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #f8f8f8;
+  border: none;        
+  outline: none; 
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #c7c1c198;
+  color: #393939;
+  transition: border-color 0.3s ease;
+  max-width: 800px; /* Ampliado para mejor coincidencia con el contenedor */
+  width: 100%; /* Asegura que ocupe todo el espacio disponible */
+}
+
+/* Específico para el input de mantenimiento */
+#mantenimiento-form.chat-input input {
+  width: 100%;
+  max-width: 750px; /* Ampliado para coincidir mejor con el contenedor de chat */
+}
+
+/* Específico para el input de proyectos */
+#proyectos-form.chat-input input {
+  width: 100%;
+  max-width: 800px; /* Ampliado para coincidir mejor con el contenedor de chat */
+}
+
+/* Específico para el input del formulario persistente */
+#chat-form-persistente input {
+  width: 100%;
+  max-width: 850px; /* Ampliado para coincidir con el contenedor */
+  flex: 1;
+}
+
+.chat-input button {
+  background-color: #2d7fe4;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.button-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.chat-input button.loading {
+  background-color: #2f2f2f;
+  animation: blink 1.5s infinite;
+}
+
+.chat-input button.loading .button-icon {
+  animation: pulse 1.5s infinite;
+}
+
+/* Mensajes */
+.mensaje {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 5px 20px;
+  width: fit-content;
+  box-shadow: none;
+  z-index: 1; /* Asegura que el mensaje esté por encima de otros elementos */
+}
+
+.mensaje.usuario {
+  margin-left: auto;
+  margin-right: 10px !important; /* Reducir el margen derecho para mover más a la izquierda */
+  background-color: #2d7fe4; /* Azul tipo iOS */
+  color: rgb(239, 239, 239) !important;
+  padding: 7px 20px !important; /* Aumentar el espacio interno */
+  border-radius: 18px 18px 4px 18px;
+  display: inline-block; /* Cambia a inline-block para ajustar al contenido */
+  max-width: 60% !important; /* Incrementar el ancho máximo del fondo */
+  word-wrap: break-word; /* Permite que las palabras largas se ajusten */
+  word-break: break-word; /* Rompe palabras largas si es necesario */
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+
+.mensaje.asistente {
+  margin-left: 10px !important; /* Reducir el margen izquierdo para mover más a la izquierda */
+  margin-right: auto;
+  background-color: #f6f6f6;
+  padding: 8px 20px;
+  border-radius: 4px 18px 18px 18px;;
+  position: relative;
+  max-width: 80%;
+  display:flex;   
+  align-items: flex-start;                /* 🔁 Cambiado de inline-block a flex */
+  font-family:'Inter', sans-serif;
+}
+
+.mensaje.asistente.loading {
+  display: flex !important; /* Asegurar que use flexbox */
+  flex: 1 !important; /* Forzar que ocupe todo el espacio disponible */
+  flex-grow: 1 !important; /* Permitir que el mensaje crezca para ocupar más espacio */
+  width: auto !important; /* Ajustar automáticamente el ancho */
+  max-width: 100% !important; /* Asegurar que ocupe todo el ancho disponible */
+  padding: 20px 40px !important; /* Aumentar el espacio interno */
+  box-sizing: border-box; /* Asegurar que el padding no afecte el ancho */
+}
+
+/* Icono de mensaje */
+.mensaje-icono {
+  position: absolute;
+  left: -40px; /* Posicionado fuera del mensaje */
+  top: 2px; /* Posición más arriba, alineada con la parte superior */
+  transform: translateY(0); /* Eliminar transformación vertical */
+  width: 32px;
+  height: 32px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Contenido de los mensajes */
+.mensaje-contenido {
+  flex: 1;
+  line-height: 1.25;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #fffefe;
+}
+
+.mensaje-contenido p,
+.mensaje-contenido ul,
+.mensaje-contenido ol {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+
+.mensaje.asistente .mensaje-contenido,
+.mensaje.asistente .mensaje-contenido p {
+  color: black !important;
+}
+.mensaje-contenido p {
+  margin: 0.4em 0;
+  font-size: 14px;
+}
+
+.mensaje-contenido h1,
+.mensaje-contenido h2,
+.mensaje-contenido h3,
+.mensaje-contenido h4,
+.mensaje-contenido h5 {
+  margin: 1em 0 0.5em;
+  font-weight: 600;
+  font-size: 1.15em;
+  color: #222;
+}
+
+.mensaje-contenido ul,
+.mensaje-contenido ol {
+  margin: 0.5em 0;
+  padding-left: 1.2em;
+  font-size: 0.95em;
+}
+
+.mensaje-contenido pre {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  padding: 1em;
+  margin: 1em 0;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.mensaje-contenido code {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+}
+
+.mensaje-contenido table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: 100%;
+  font-size: 0.9em;
+  table-layout: auto;
+}
+
+.mensaje-contenido th,
+.mensaje-contenido td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.mensaje-contenido th {
+  background-color: #e4e4e4;
+  font-weight: 600;
+}
+
+/* Loading */
+.loading-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background-color: transparent; /* ← importante */
+  border-radius: 8px;
+  margin-right: auto;
+  min-width: 52px;
+  width: fit-content;
+}
+.loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+
+.chat-input input::placeholder {
+  color: #a19c9c;    
+  opacity: 1;           /* Asegura que se vea completo */
+}
+
+.icono-imagen {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Ajuste para alinear imagen y texto correctamente */
+.menu-item-parent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+  padding: 10px 0 10px 90px; /* Mucho más a la derecha */
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 0; /* Sin bordes redondeados */
+  transition: background 0.2s, box-shadow 0.2s;
+  position: relative;
+  width: calc(100% + 40px); /* 280px sidebar - 20px padding izquierdo - 20px padding derecho */
+  min-width: 0;
+  box-sizing: border-box;
+  margin-left: -17px; /* Compensa el padding del sidebar */
+}
+
+.menu-item-parent:hover, .menu-item-parent.active {
+  background-color: #042c58 !important; /* color igual a la foto 2 */
+  box-shadow: 0 2px 8px 0 #0000000a;
+  border-radius: 0; /* Sin bordes redondeados en el sombreado */
+}
+
+.menu-text {
+  font-size: 14px; /* Más pequeño */
+  color: #e0e0e0;
+  margin-left: 0;
+  flex: 1;
+}
+
+/* Submenú */
+.submenu {
+  list-style: none;
+  margin: 0 0 0 30px; /* Desplaza todo el submenú a la derecha */
+  padding-left: 0;
+  background: none;
+}
+
+.submenu-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 0 6px 35px; /* Espacio interno solo para el punto */
+  font-size: 0.6rem; /* Disminuir el tamaño de la letra */
+  cursor: pointer;
+  color: #b0b0b0;
+  background: none !important;
+  border-radius: 0;
+  font-weight: 400;
+  transition: color 0.2s, background 0.2s;
+}
+
+.submenu-item .dot {
+  color: #fff !important;
+  margin-right: 15px; /* Espacio entre el punto y el texto */
+  min-width: 8px;
+  text-align: left;
+}
+
+.submenu-item:hover {
+  color: #fff !important; /* texto blanco en hover */
+  background: none !important;
+  font-weight: 600;
+}
+
+.submenu-item.active {
+  color: #fff !important; /* texto blanco en activo */
+  background: none !important;
+  font-weight: 600;
+}
+
+.submenu-item:focus {
+  color: #fff !important; /* texto blanco en focus */
+  background: none !important;
+}
+
+.submenu-item#side-mantenimiento {
+  font-size: 0.80rem !important; /* Reducir el tamaño de la palabra 'Mantenimiento' */
+  padding-left: -70px !important; /* Mover más a la izquierda */
+  margin-left: -13px !important; /* Mover más a la izquierda */
+}
+
+.submenu-item#side-proyectos {
+  font-size: 0.8rem !important; /* Reducir el tamaño de la palabra 'Proyectos' */
+  padding-left: -70px !important; /* Mover más a la izquierda */
+  margin-left: -13px !important; /* Mover más a la izquierda */
+}
+
+.oculto {
+  display: none;
+}
+
+.chat-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 10px;
+  gap: 16px;
+  background-color: #ffffff;
+  border-radius: 0;
+  height: calc(100vh - 180px);
+  box-shadow: none;
+}
+
+/* Estilo para las burbujas de chat */
+.mensaje.usuario {
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 10px !important; /* Reducir el margen derecho para mover más a la izquierda */
+  background-color: #2d7fe4;
+  color: white;
+  border-radius: 18px 18px 4px 18px;
+  padding: 5px 12px;
+  margin: 5px 0;
+  max-width: 50%;
+  word-wrap: break-word; /* Permite que las palabras largas se ajusten */
+  word-break: break-word; /* Rompe palabras largas si es necesario */
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.mensaje.asistente {
+  align-self: flex-start;
+  margin-left: 10px !important; /* Reducir el margen izquierdo para mover más a la izquierda */
+  margin-right: auto;
+  background-color: #f0f0f0;
+  border-radius: 4px 18px 18px 18px; /* Todos los bordes redondeados */
+  padding: 5px 12px;
+  margin: 5px 0 5px 45px; /* Añadir margen a la izquierda para el ícono */
+  max-width: 80%;
+  display: flex;
+  align-items: flex-start;
+  position: relative; /* Para posicionar el ícono */
+  font-family:'Inter', sans-serif;
+}
+
+/* Nuevos estilos propuestos */
+.welcome2.chat-active {
+  padding: 10px;
+}
+
+/* Mejorar la apariencia de la burbuja del asistente */
+.mensaje.asistente .mensaje-contenido {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+/* Eliminar triángulo de la esquina de la burbuja del asistente */
+.mensaje.asistente:before {
+  display: none; /* Ocultar el triángulo */
+}
+
+/* Ajustar el color del texto en la burbuja del usuario */
+.mensaje.usuario {
+  color: white !important;
+}
+
+/* Estilo para asegurar que los contenedores de chat permanezcan separados */
+#mantenimiento-chat,
+#proyectos-chat {
+  width: 100%;
+  height: calc(100vh - 200px); /* Altura ajustada para que sea visible */
+  min-height: 400px; /* Altura mínima para garantizar visibilidad */
+  transition: all 0.3s ease;
+  background-color: white; /* Fondo blanco para eliminar contraste visual */
+  padding: 15px 0 15px 80px; /* Aumenta el padding izquierdo para correr el contenido a la derecha */
+  margin-bottom: 80px; /* Espacio ampliado para el formulario persistente */
+  overflow-y: auto; /* Permitir desplazamiento cuando hay muchos mensajes */
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cuando un contenedor está activo, asegurarnos que ocupe todo el espacio */
+#mantenimiento-chat.active,
+#proyectos-chat.active {
+  display: flex !important;
+  flex-direction: column;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Cuando un contenedor está inactivo, ocultarlo completamente */
+#mantenimiento-chat:not(.active),
+#proyectos-chat:not(.active) {
+  display: none !important;
+}
+
+/* Estilos para el formulario de búsqueda persistente */
+.chat-input-persistente {
+  position: fixed;
+  bottom: 0;
+  left: 288px; /* Mover completamente hacia la izquierda */
+  right: 0;
+  background-color: white;
+  padding: 15px 20px;
+  z-index: 100;
+  border: none;
+  display: flex;
+  justify-content: center; /* Centrar el formulario horizontalmente */
+  max-width: 100%; /* Asegurar que no se exceda del ancho de la pantalla */
+  width: calc(100% - 280px); /* Ajustar el ancho para que coincida con el diseño */
+}
+
+/* Específico para el formulario persistente cuando está en modo mantenimiento */
+.chat-input-persistente #chat-form-persistente[data-categoria="mantenimiento"] {
+  width: 90%;
+  max-width: 850px; /* Ampliado para coincidir con el contenedor de chat */
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+}
+
+/* Específico para el formulario persistente cuando está en modo proyectos */
+.chat-input-persistente #chat-form-persistente[data-categoria="proyectos"] {
+  width: 90%;
+  max-width: 850px; /* Ampliado para coincidir con el contenedor de chat */
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+}
+
+/* Ajustar el área de chat para dejar espacio al formulario persistente */
+.chat-container.with-persistente {
+  padding-bottom: 80px; /* Espacio para el formulario persistente */
+}
+
+/* --- Corrección visual submenú: eliminar fondo en todos los estados --- */
+.menu .submenu-item,
+.menu .submenu-item:hover,
+.menu .submenu-item.active,
+.menu .submenu-item:focus {
+  background: none !important; /* Elimina cualquier fondo heredado */
+  color: #fff; /* gris claro por defecto */
+  font-weight: 400;
+}
+.menu .submenu-item:hover,
+.menu .submenu-item:focus {
+  color: #b0b0b0 !important; /* texto blanco en hover/focus */
+  font-weight: 600;
+}
+.menu .submenu-item.active {
+  color: #b0b0b0 !important; /* texto blanco en activo */
+  font-weight: 600;
+}
+.submenu-item .dot {
+  color: #b0b0b0!important; /* punto siempre blanco */
+}
+/* --- Fin corrección visual submenú --- */
+
+/* --- Fuerza máxima: elimina fondo de submenús incluso si el padre tiene fondo --- */
+.menu li .submenu-item,
+.menu li.active .submenu-item,
+.menu li:hover .submenu-item,
+.menu li:focus .submenu-item,
+.menu li .submenu-item.active,
+.menu li .submenu-item:hover,
+.menu li .submenu-item:focus {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.arrow {
+  font-weight: bold; /* Hacer el símbolo más grueso */
+  margin-left: -40px; /* Mover el símbolo más a la izquierda */
+  position: relative; /* Asegurar que se pueda ajustar con margen */
+  left: -16px; /* Ajustar aún más hacia la izquierda */
+}
+
+#mantenimiento-section .mensaje,
+#proyectos-section .mensaje {
+  padding: 15px 25px !important; /* Aumentar el grosor del fondo */
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.mensaje.asistente.loading .dots span {
+  display: inline-block;
+  animation: blink 1.4s infinite;
+}
+
+.mensaje.asistente.loading .dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.mensaje.asistente.loading .dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.mensaje.asistente.loading .dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+
+.dot {
+  animation: blink 1.5s infinite;
+}
+
+.dot.stop-blink {
+  animation: none; /* Detiene la animación */
+}
+
+/* Estilos para la página de login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('assets/background.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.login-box {
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.login-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.login-box h1 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.input-icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+  color: #666;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+.login-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.login-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}

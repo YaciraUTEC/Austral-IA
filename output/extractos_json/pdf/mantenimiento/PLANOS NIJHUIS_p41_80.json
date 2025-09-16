@@ -1,0 +1,2798 @@
+{
+  "archivo": "PLANOS NIJHUIS_p41_80",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n39.19/24VDC+\n+ 24VDC/41.2\n421\n16F14\n16.45\n22\n16K1\\\n11\n16.8\n14\n1\n11\n55K2\n55.18\n55K11\n55.7\n2\n14\n17F15_T\n17.45\n21\n22\n21\n11\n11\n57K1\n57K2\n56K11\n56.5\n57,7\n24\n57.11\n14\n14\n21\n56K2\n56.6\n24\n27CPU1C\n27.4\nDIO16\n2 12\nE125.0\n30.8\nCircuit breaker\ndosing pump\nflocculant\nP1801\nP 13\n0\n£125.1\n30.8\nRunning detection\ndosing pump\nflocculant\nP1801\n? 14\nE125.2\nRun dry protection\ndosing pump\nflocculant\nP1801\nP 15\nE125.3\n30.8\nFlow switch\npost dilution\nflocculant\nFS1802\n₹ 16\n6\nE125.4\n30.8\nMotor protection\nrecirculation\npump flotation\nunit P2501\n17\nE125.5\n30.8\nAuxiliary\ncontacts\nlocal isolator\nP2501\n18\n0-0\n19\nE125.7\n30.8\nPressure\nswitch\ncompressed air\nPS2502\nE125.6\n30.8\nPressure switch\nrecirculation\npump\nPS2501\nVibrator\nflocculant\nM1801\n30.10\nA125.0\n? 32\nDosing screw\nflocculant\nDD1801\n30.10\nA125.1\n0\n9 33\nTransfer pump\nflocculant\nP1802\n30.10\nA125.2\n0-\n9 34\nDosing pump\nflocculant\nP1801\n30.10\nA125.3\n₱ 35\nSolenoid valve\npost dilution\nV1813\n30.10\nA125.4\n9\n0 36\nRecirculation\npump\nflotation unit\nP2501\n30.10\nA125.5\n9\nP 37\nAeration valve\nflotation unit\nV2513\n30.10\nA125.6\n0\n9 38\nTop skimmer 1\nflotation unit\nSC2501A\n30.10\nA 125.7\n9\n0 39\nAl\n40K1\n40K2\nA2\nAT\nA2\n40K3\n40K4\nAT\nA2\nAT\nA2\nA\nA1\n40K5L\n40K6\nA2\nA2\nA1\nA1\n40K7L\n40K8\nA2\nA2\n39.19/0VDC -\n11 - 14 15.12\n11 -/ 14 54.9\n11 - 14 54.13\n11 - 14 16.6\n11 - 14 55.14\n11 - 14 56.8\n11 - 14 57.15\nw> OVDC/41.2\n11 - 14 18.6\nProject\n: Austral llo - 112048\nRevision\n: A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : KRM\nTitle\n: PLC wiring\nRevision date : 28.12.12\nPage\n: 40 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nilhuls-water.com - T +31 (0)315 655 466",
+      "tablas": [
+        [
+          [
+            "Order : 112048.145",
+            "Remarks : PLC controlled panel",
+            "Revision by : PAV",
+            "Check : PAV"
+          ],
+          [
+            "Engineer : KRM",
+            "Title : PLC wiring",
+            "Revision date : 28.12.12",
+            "Page : 40 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n40.19/24VDC +\n40.19/0VDC +-\n+ 24VDC/42.2\n+ DVDC/42.2\nPE\nPE\nPE\nPE\nX41 13 14 1 PE\nX4 15\n7 16 PE\nX41 17 18 T PE\nX4. 19 7 20 + PE\nCL\nID-\n.\nCL\nC\n2\n1\n41U1\n1+\n2-\n-\nVEGAWELL\n52\n41U2\nBN+ WH-\nIFM\nPL2658\n.\n41U3\nBN+ WH-\nIFM\nPL2658\n.\n2-wkro 10]\n24VDC\n2-wire tDs\n24VDC\n2-wie jDJ\n24VDC\n2-tre [D]\n24VDC\n4.20ml\n4-20m\n4-20mA\n4-201LA\n32AIN_1\n32.7\n0 0\n3\n0-0\n0\n7\n0\n9\n2\n4\n6\n8\nPEW256\nPEW258\nPEW260\nPEW262\n32.8\n32.8\n32.8\n32.8\nLevel measuring\nLevel measuring\nLevel measuring\nSpare\nbalance tank\nsludge compartment\nsludge compartment\n2-wire [D]\nLC0201\nLC2502A\nLC2502B\nanalog input\nProject : Austral lio - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nEngineer : KRM\nTitle\n: PLC wiring\nRevision\n: A\nCreated on\n: 17.07.06\nVISION ON SUSTAINABILITY\nRevision by\n: PAV\nCopyright reserved\nwww.nithuis-water.com - T +31 (0)315 65 466\nRevision date : 28.12.12\nCheck\n: PAV\nPage\n: 41 / 78\nnuhuis\nRATET TEENNOLOCT",
+      "tablas": [
+        [
+          [
+            "0\n3",
+            "0-0 0",
+            "7 0",
+            "9"
+          ],
+          [
+            "0\n2",
+            "4",
+            "6",
+            "8"
+          ],
+          [
+            "PEW256",
+            "PEW258",
+            "PEW260 PEW262"
+          ],
+          [
+            "32.8",
+            "32.8",
+            "32.8",
+            "32.8"
+          ],
+          [
+            "Level measuring",
+            "Level measuring",
+            "Level measuring",
+            "Spare"
+          ],
+          [
+            "balance tank",
+            "sludge compartment sludge compartment 2-wire [D]"
+          ],
+          [
+            "LC0201",
+            "LC2502A LC2502B analog input"
+          ]
+        ],
+        [
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 41 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1\n2\n3\n1\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n41.19/24VDC +\n41.19/0VDC -\n+ 24VDC/43.2\n+OVDC143.2\nPE\nPE\n-0 ---\nX47 21 # 22 APE\nX47 23 + 24 + PE\n4-wire [C]\nDVDC\n1-20mÃ\n2-20mA\n24VDC\n32AIN_1\n32.7\n? 13\n0\n15 0\n16\n17\n19\n12\n14\n-0\nPEW264\nPEW266\nPEW268\n32.8\nPEW270\n32.8\n32.8\n32.8\nSpare\nSpare\nSpare\nSpare\n2-wire [D]\n2-wire [D]\n4-wire [C]\n4-wire [C]\nanalog input\nanalog input\nanalog input\nanalog input\nProject\n: Austral llo - 112048\nOrder\n: 112048.145\nEngineer : KRM\nRemarks : PLC controlled panel\nTitle\n: PLC wiring\nRevision\n: A\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 42 / 78\nVISION ON SUSTAINABILITY\nRevision by\n: PAV\nCopyright reserved\nwww. nlhuis-water.com - T +31 (0)315 655 456\nRevision date : 28.12.12\nnijhuis\nRATEN TLENSOLOAT",
+      "tablas": [
+        [
+          [
+            "? 13 0",
+            "15 0",
+            "16",
+            ""
+          ],
+          [
+            "12",
+            "14",
+            "17",
+            "19\n-0"
+          ],
+          [
+            "PEW264",
+            "PEW266",
+            "PEW268",
+            "PEW270"
+          ],
+          [
+            "32.8",
+            "32.8",
+            "32.8",
+            "32.8"
+          ],
+          [
+            "Spare",
+            "Spare",
+            "Spare",
+            "Spare"
+          ],
+          [
+            "2-wire [D]",
+            "2-wire [D]",
+            "4-wire [C]",
+            "4-wire [C]"
+          ],
+          [
+            "analog input analog input",
+            "analog input",
+            "analog input"
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 42 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n42.19/24VDC\n42.19/0VDC +\n13.11/ P1401.AIN+ +\n14.11/ P1501.AIN+ +\n18.11/ P1801.AIN+ +\n18.11/ SC2501A.AIN-\n13.11/ P1401.AIN- 4\n14.11/P1501,AIN- +\n16.11/ P1801.AIN- ****\n18.11/ SC2501A.AIN+ 4\n33AOU_1\n33.7\n0-0\n0\n2 11 6\n9 15 0\n18\n6\n10\n14\nPAW272\nPAW274\nPAW276\nPAW278\n33.8\n33.8\n33.8\n33.8\nDesired capacity\nDesired capacity\nFrequency controller\nFrequency controller\ndosing pump\ndosing pump\ndosing pump\ntop skimmer 1\nP1401\nP1501\nP1801\nSC2501A\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\n19\n20\n+24VDC/44.2\n+ OVDC/44.2\nnijhuis\nMATEI TEENSGLOST\nEngineer : KRM\nTitle\n: PLC wiring\nRevision\n: A\nCreated on\n: 17.07.06\nRevision by\n: PAV\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.allhuls-wator.com - T +31 (0)315 655 466\nRevision date : 28.12.12\nCheck\n: PAV\nPage\n: 43 / 78",
+      "tablas": [
+        [
+          [
+            "0-0 0",
+            "",
+            "2 11 6",
+            "9 15 0"
+          ],
+          [
+            "6",
+            "10",
+            "14",
+            "18"
+          ],
+          [
+            "PAW272 PAW274 PAW276 PAW278 33.8 33.8 33.8 33.8"
+          ],
+          [
+            "Desired capacity",
+            "Desired capacity",
+            "Frequency controller",
+            "Frequency controller"
+          ],
+          [
+            "dosing pump",
+            "dosing pump",
+            "dosing pump",
+            "top skimmer 1"
+          ],
+          [
+            "P1401",
+            "P1501",
+            "P1801",
+            "SC2501A"
+          ]
+        ],
+        [
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 43 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n43.19/24VDC\n+ 24VDC/45.2\n43.19/0VDC 4\n- DVDC/45.2\n19.11/ SC2501B.AIN- 4\n20.11/ SC2502.AIN+ ~\n19.11/ SC2501B.AIN+ www\n20.11/ SC2502.AIN- 4\n33AOU_1\n33.7\n23 0\n9 27\n1 31 0\n-0\n935 0\n26\n-0\n30\n34\n38\nPAW280\nPAW282\nPAW284\nPAW286\n33.8\n33.8\n33.8\n33.8\nFrequency controller\nFrequency controller\nSpare\nSpare\ntop skimmer 2\nbottom skimmer\nanalog output\nanalog output\nSC2501B\nSC2602\nProject : Austral Ilo - 112048\nRevision\n: A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : KRM\nTitle\n: PLC wiring\nRevision date : 28.12.12\nPage\n44 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nlihuis:water.com - T +31 (0)315 655 466\nHATLE TEERKOLOST",
+      "tablas": [
+        [
+          [
+            "23 0",
+            "9 27",
+            "1 31 0",
+            "935 0"
+          ],
+          [
+            "26",
+            "-0 30",
+            "-0\n34",
+            "38"
+          ],
+          [
+            "PAW280 PAW282 PAW284 PAW286"
+          ],
+          [
+            "33.8",
+            "33.8",
+            "33.8",
+            "33.8"
+          ],
+          [
+            "Frequency controller",
+            "Frequency controller Spare",
+            "Spare"
+          ],
+          [
+            "top skimmer 2",
+            "bottom skimmer analog output analog output"
+          ],
+          [
+            "SC2501B",
+            "SC2602"
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks : PLC controlled panel",
+            "Revision by : PAV",
+            "Check : PAV"
+          ],
+          [
+            "Engineer : KRM",
+            "Title : PLC wiring",
+            "Revision date : 28.12.12",
+            "Page 44 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n44.19/24VDC +\n*> 24VDC+46.2\n21\n18F15\n18.45\n22\n11\n18K1\\\n18.8\n14\n21\n19F1 -_\n19.45\n22\n11\n19K1\\\n19.8\n14\n20F15 ...\n20.4\nL21\n22\n11\n11\n11\n:\n51K1\n52K1\n20K1\\\n20.8\n14\n51.5\n14\n52.5\n14\n34DIO_1\n34.8\nE8.0\n34.8\nCircuit breaker\ntop skimmer 1\nflotation unit\nSC2501A\nP3\n€8,1\n34.8\nRun detection\nfreq. controller\nSC2501A\n0-0\n4\nEB.2\n34.8\nCircuit breaker\ntop skimmer 2\nflotation unit\nSC2501B\n95\nE8.3\n34.8\nRun detection\nfreq. controller\nSC2501B\nEB.4\n34.8\nCircuit breaker\nbottom skimmer\nflotation unit\nSC2502\n7\n00\nE8.5\n34.8\nRun detection\nfreq. controller\nSC2502\n0\nE8.6\n34.8\nLow level detection\nferric\nLS1401\n0\n28.7\n34.8\nLow level detection\nneutralisant\nLS1501\nTop skimmer 2\nflotation unit\nSC2501B\nBottom skimmer\nflotation unit\nSC2502\nSand drain 1\nflotation unit\nV2505A\nSand drain 2\nflotation unit\nV2505B\nSand drain 3\nflotation unit\nV2505C\nSand drain 4\nflotation unit\nV2505D\nSludge drain 1\nflotation unit\nV2508A\nSludge drain 2\nflotation unit\nV2508B\n34.10\nAB.0\n9\n9 22\n34.10\nA8.1\n9\n? 23\n34.10\nAB.2\n34.10\nA8.3\n9\n9 24\n0 25\n34.10\nA8.4\n34.10\nA8.5\n34.10\nA8.6\n9\n9\n0 26\n9 27\n9 28\n34.10\nA8.7\n0\n9 29\nAT\n45K1\nA2\nA1\n45K2\nA2\nA1\n45K3\nA2\nA1\n45K4\nA2\n45K5L\nA1\n45K6L\nA2\nA1\nA1\n45K7L\nA2\nA2\n45K8\nA1\nA2\n44.19/DVDC 4\n11 - 14 19.6\n11 - 14 20.6\n11 -~ 14 59.5\n11 -/= 14 59.9\n11 - 14 59.13\n11 - 14 59.17\n11 - 14 60.5\n-+ OVDC/46.2\n11 - 14 60.9\nProject\n: Austral Ilo - 112048\nRevision\n: A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks\n: PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : KRM\nTitle\n: PLC wiring\nRevision date\n: 28.12.12\nPage\n: 45 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nilhuis-weler.com - T +31 (0)315 655 456\nnijhuis\nMATEY YEENEGLODY",
+      "tablas": [
+        [
+          [
+            "Order : 112048.145",
+            "Remarks",
+            ": PLC controlled panel",
+            "Revision by : PAV",
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Engineer : KRM",
+            "Title",
+            ": PLC wiring",
+            "Revision date : 28.12.12",
+            "Page",
+            ": 45 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "-\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n45.19/24VDC -*\n+ 24VDC/47.2\n9\n26K1\n26.3\n11\n21\n21F15.\n21.55\n22\n1\n61K1\\\n51.7\n2\n21\n21F25\n21.127\n22\n1\n61K2\\\n61.15\n2\n21\n11\n36K1\n63K1\n36.4\n63.16\n14\n24\n13\n46S1E4-\n14\n13\n46$2E4A\n14\n34DIO_1\n34.8\n9 12\n6\nE9.0\n34.8\nMotor protection\nsludge pump 1\nflotation unit\nP2502A\n9 13\n0\n€9.1\n34.8\nRun dry\nprotection\nP2502A\n9 14\n0\nE9.2\n34.8\nMotor protection\nsludge pump 2\nflotation unit\nP2502B\n9 15\nE9.3\n34.8\nRun dry\nprotection\nP2502B\n0 16\nE9.4\n34.8\nFlow pulses\nflow measuring\ninfluent water flotation\nunit FIC0201\n0 17\n€9.5\n34,8\nDetection\ncontrol voltage\n24Vac\n18\nE9.6\n34.8\nReset\nCentral\nAlarm\n0 19\n0\n£9.7\n34.8\nReset\nBuzzer\nSludge drain 3\nStop feeding\nbalance tank\nSpare\nSpare\nManual\noperation\nContact\nCentral\nLamp Red\nAlarm\nBuzzer\nflotation unit\nAlarm\nV2508C\ndue to high level\nactive\nAlarm\nSignal\nSignal\nLC0201 (to client)\n34.10\n34,10\n34.10\n34.10\n34.10\n34.10\nA9.1\n34.10\nA9.2\n34.10\nA9.3\nA9.4\nA9.5\nA9.6\nA9.7\nA9.0\n9\n0\no\n9\n0-\n9\n9\nP\n9 32\n0\n33\n-0\n34\n35\n936\n37\n9 38\n0 39\n45.19/0VDC 4-\nA1\n46K1\nA2\n11 - 14 60.13\nA1\n46K2\nA2\n11 -- 14 49,5\nA1\n46K3\nA2\n11 - 14 49.7\nAT\n46K4\nA2\n11 - 14 49.9\nX1\n46H100\nOrange\nX2\nA1\n46K5L\nA2\n123 11 63.4\nX1\n46H2\nRed\nX2\nA1\n46K6\nA2\n*0VDC/47.2\n11 - 14 63.9\n24 7\n22 21 63.12\nProject\n: Austral Ilo - 112048\nOrder\n: 112048.145\nEngineer : KRM\nRemarks\n: PLC controlled panel\nTitle\n: PLC wiring\nRevision\n: A\nVISION ON SUSTAINABILITY\nRevision by\n: PAV\nCopyright reserved\nRevision date : 28.12.12\nwww.nllbuls-water.com - T +31 (0)315 555 466\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 46 / 78\nnijhuis\nRATER TECHNOLOGY",
+      "tablas": [
+        [
+          [
+            "",
+            "Sludge drain 3",
+            "Stop feeding balance tank",
+            "Spare",
+            "Spare",
+            "Manual operation",
+            "Contact Central",
+            "Lamp Red Alarm",
+            "Buzzer"
+          ],
+          [
+            "flotation unit",
+            "",
+            "Alarm"
+          ],
+          [
+            "V2508C",
+            "due to high level",
+            "",
+            "",
+            "active",
+            "Alarm",
+            "Signal",
+            "Signal"
+          ],
+          [
+            "",
+            "",
+            "LC0201 (to client)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "34.10",
+            "34.10",
+            "34.10",
+            "34.10",
+            "34.10",
+            "34,10",
+            "34.10",
+            "34.10"
+          ],
+          [
+            "",
+            "A9.0",
+            "A9.1",
+            "A9.2",
+            "A9.3",
+            "A9.4",
+            "A9.5",
+            "A9.6",
+            "A9.7"
+          ],
+          [
+            "",
+            "o",
+            "9",
+            "0-",
+            "9",
+            "9",
+            "9",
+            "P",
+            "0"
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 46 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "1\n2\n46.19/24VDC\n35DIO_1\n35.7\n46.19/0VDC +\n3\n4\n5\n6\n7\n8\n11\n36K21\n36.16\n14\n17\n11\n49K1\n11K2\n11.1.10\n14\n49.11\n14\n2\n0\nE12.0\n35.8\nFlow pulses\nflow measuring\nsludge pumps flotation\nunit FIC2502\n3\n6\n€12.1\n35.8\nClosed detection\nInfluent control valve\nflotation unit\nV0203\n4\n0-0 :\nE12.2\n35.8\nEnable start\nsludge pumps\nP2502A/B\n(From client)\nSludge pump 1\nflotation unit\nP2502A\nSludge pump 2\nflotation unit\nP2502B\n35.10\nA12.0\n35.10\nA12.1\n9\n9 23\n9 22\nAT\nA1\n47K1W\n47K2\nA2\nA2\n11 - 14 61.5\n11 - 14 61,13\nNEW\nProject : Austral llo - 112048\nOrder\n: 112048.145\nEngineer : KRM\nRemarks : PLC controlled panel\nTitle\n: PLC wiring\nSpare\noutput\n35.10\nA12.2\n9 24\n9\n10\n11\n12\n13\n14\n15\n16\n17\n21\n11\n50K2\n50.5\n49K21\n49.13\n24\n14\n21\n50K3\n50.6\n24\n7 6\nE12.4\n35.8\nE12.5\n35.8\nAuxiliary\nSpare\ncontacts\ninput\nlocal isolator\nB\nE12.3\n35.8\nSpare\ninput\n7\ntão\nE12.8\n35.8\nSpare\ninput\n99\n0\n£12.7\n35.8\nSpare\ninput\nSpare\noutput\nSpare\noutput\nSpare\noutput\nSpare\noutput\n35.10\nA12.3\n9\n9 25\n35.10\nA12.4\n9\n9 26\n35.10\nA12.5\n9\n35.10\nA12.6\n9\n9 28\n9 27\nRevision\n: A\nRevision by\n: PAV\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nlihuls-water.com - T +31 (0)315 65 466\nRevision date : 13.03.13\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 47 / 78\n18\n19\n20\n+24VDC/46.2\nSpare\noutput\n35.10\nA12.7\n9 29\n+OVDC/48.2\nWATER TECHNOLOGY",
+      "tablas": [
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 47 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n47.19/24VDC\n35DIO_1\n35.7\n12\n-0\nE13.0\n35.8\nSpare\ninput\n2 13\nto-0\nE13.1\n35.8\nSpare\ninput\nSpare\noutput\n35.10\nA13.0\n9\n9 32\n47.19/0VDC 4\nProject : Austral llo - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nEngineer : KRM\nTitle\n: PLC wiring\nSpare\noutput\n35.10\nA13.1\n9\n9 33\n? 14\nE13.2\n35.8\nSpare\ninput\nSpare\noutput\n35.10\nA13.2\n9\n9 34\n11\n12\n13\n14\n15\n16\n17\n0.\n16\n9 17\n€13.5\n35.8\nSpare\ninput\n18\n0 -- 0\nE13.6\n35.8\nSpare\ninput\n15\n0\nE13,3\n35.8\nSpare\ninput\nE13.4\n35.8\nSpare\nInput\n9 19\n0\nE13.7\nSpare\ninput\nSpare\noutput\nSpare\noutput\nSpare\noutput\nSpare\noutput\n35.10\nA13.4\n35.10\nA13.5\n9\n35.10\nA13.3\n9\n9 35\n9 38\n35.10\nA13.6\n9\n9 38\n9 37\nRevision\n: A\nVISION ON SUSTAINABILITY\nRevision by\n: KRM\nCopyright reserved\nwww.nijhuis-water.com - T +31 (0)315 655 466\nRevision date : 06.04.12\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 48 / 78\n18\n19\n20\n+ 24VDC/57.3\nSpare\noutput\n35.10\nA13.7\n9\n9 39\n* DVDC/57.3\nnijhuis\nMATER TICAROSOST",
+      "tablas": [
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 48 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n25.5/24VAC-A 4\n**** + 24VAC-A/50.2\nX1017 13\nX101 1\n49U1\nClient\n?\n?\ncontrol panel\n?\n?\nX1019 7\n8\n9\n10\n11\n₹ 12\n14\nX101 2\n11\n11\n46K2\n46K3\n46.7\n46.9\n14\n14\n11\n46K4\\\n46.11\n14\nA1\n49K1\nA2\nA1\n49K2\nA2\n25.5/ 24VAC-B +\n+24VAC-B/50.2\nStop feeding\nbalance tank\ndue to high level\nLC0201\n(To client)\nSpare\nSpare\nEnable start\nsludge pumps\nP2502A/B\n(From client)\n11 - 14 47.8\nSpare\n11 - 14 47.10\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nEngineer : KRM\nTitle\n: Control wiring\nRevision\n: A\nVISION ON SUSTAINABILITY\nRevision by\n: PAV\nCopyright reserved\nwww.nijhuis-water.com - T +31 (0)315 655 466\nRevision date : 10.01.13\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 49 / 78\nMATOU. TEERASLOUT",
+      "tablas": [
+        [
+          [
+            "1 2 3 4 5",
+            "6 7 8 9 10",
+            "11 12",
+            "13 14 15",
+            "16 17",
+            "18 19",
+            "20"
+          ],
+          [
+            "25.5/24VAC-A 4",
+            "",
+            "",
+            "**** + 24VAC-A/50.2"
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 49 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n49.18/24VAC-A 4\n+ 24VAC-A/50.1.2\n11.13/P0201.WS1 +\n11.13/P0201.WS2 4\n11\n50K2\n50.5\n14\n13\n11F151\n11.5\n14\n=\n39K1\\\n39.1\n14\n53\n13\n50KM1Y\n50.12\n50KM1N\\\n50.8\n54\n14\n15\n50K46\n50.10\nY\n25\n50K4g\n50.10\nD\n28\n50KM1D4\n50.14\n22\n50KM1Y 1\n50.12 22\nA1\n50K21\nA2\nA1\n50K3\nA2\nA1\n50KM1N\nA2\n50K4\nAT\nA2\n50KM1YL\nA2\nA1\n50KM1D\nA2\n11.13/ P0201.WS3 4\n14\n11.13/P0201.WS4 +\n50K3\n50.6\n11\n49.18/24VAC-8 4-\n+24VAC-8/50.1.2\nAuxiliary contacts\nlocal isolator\nP0201\nFeed pump\nflotation unit\nP0201\n11 -= 14 50,8\n21 - 24 47.12\n11-/ 14 50.8\n21 - 24 47.12\n1 - 2 11.5\n3 -\n- 4 11.5\n5- - 6 11.5\n13 - 14 50.9\n15 -T\n18 50.12\n1->\n2 11.9\n1 -~ 2 11.7\n3- 4 11.9\n3- 4 11.7\n25\n28 50.14\n5-\n6 11.9\n5 - 6 11.7\n21 J_ 22 50.14\n21 ~~ 22 50.12\n53 -54 50.8\nProject : Austral Ilo - 112048\nRevision\nA\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : KRM\nTitle\n: Control wiring\nRevision date : 13.03.13\nPage\n: 50 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nijhuis-water.com - T +31 (0)315 655 466\nnijhuis",
+      "tablas": [
+        [
+          [
+            "15 -T 18 50.12",
+            "1-> 2 11.9",
+            "1 -~ 2 11.7"
+          ],
+          [
+            "",
+            "3- 4 11.9",
+            "3- 4 11.7"
+          ],
+          [
+            "25 28 50.14",
+            "5- 6 11.9",
+            "5 - 6 11.7"
+          ],
+          [
+            "",
+            "21 J_ 22 50.14",
+            "21 ~~ 22 50.12"
+          ],
+          [
+            "",
+            "53 -54 50.8",
+            ""
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks",
+            ": PLC controlled panel",
+            "Revision by : PAV",
+            "Check : PAV"
+          ],
+          [
+            "Engineer : KRM",
+            "Title",
+            ": Control wiring",
+            "Revision date : 13.03.13",
+            "Page : 50 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": ".\n.\n1\n2\n3\n4\n5\n6\n7\n8\ng\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n50.18/24VAC-A 4\n+24VAC-A/51.2\nX101 3\n50LS1\n11\n12F1 54\n12.5\n14\nX101 4\nAT\n50K1\nA2\nA1\n50KM2\nA2\n50.18/24VAC-B 4\n-> 24VAC-8/51.2\nLow level detection\ncoagulant\nLS1201\nDosing pump\ncoagulant\nP1201\n11 -/- 14 38.14\n1 -~ 2 12.5\n3 -~ 4 12.5\n5 - 6 12.5\nProject : Austral Ilo - 112048\nRevision\n: A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: RKH\nCheck\n: PAV\nEngineer : RKH\nTitle\n: Control wiring\nRevision date : 10.01.13\nPage\n: 50.1 / 78\nVISION ON SUSTAINABILITY\nCopyright raserved\nwww.nulhuls-water.com - T +31 (0)315 65 466\nMATCE TEERARSONT",
+      "tablas": [
+        [
+          [
+            "Order : 112048.145",
+            "Remarks",
+            ": PLC controlled panel",
+            "Revision by : RKH",
+            "Check : PAV"
+          ],
+          [
+            "Engineer : RKH",
+            "Title",
+            ": Control wiring",
+            "Revision date : 10.01.13",
+            "Page : 50.1 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": ".......\n.......\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n50.1.18/24VAC-A\n+ 24VAC-A/52.2\n50.1.18/24VAC-B <<-*****-\nProject\n: Austral Ilo - 112048\nOrder\n: 112048.145\nX101 5\n51LS10-1\nX107 6\n₹\n51K1L\nA2\nLow level detection\nferric\nLS1401\n11 - 14 45.16\nRemarks : PLC controlled panel\nEngineer : KRM\nTitle\n: Control wiring\n11\n13F1 41\n13.5\n14\nAT\n51KM1\nA2\nDosing pump\nferric\nP1401\n1- 2 13.5\n4 13.5\n~~ $ 13.5\n3 -\n11\n39K4\\\n39.11\n14\nX101 7\n1\nX\n51Y1\n2\nX107 B PE\nSafey valve\nferric\nV1411\nRevision\n: A\nRevision by\n: RKH\nVISION ON SUSTAINABILITY\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n:\n51 / 78\nCopyright reserved\nwww.nl/huls-walar.com - T +31 (0)315 655 466\nRevision date : 10.01.13\n+24VAC-8/52.2\nnijhuis\nWATER TECHNOLOGY",
+      "tablas": [
+        [
+          [
+            "1 2 3 4 5",
+            "6 7 8",
+            "9 10",
+            "11 12 13",
+            "14 15",
+            "16 17 18",
+            "19",
+            "20"
+          ],
+          [
+            "50.1.18/24VAC-A + 24VAC-A/52.2"
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 51 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n1\n51.18/24VAC-A\nX101 9\n52LS10-\n51.18/24VAC-8 -\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nX101 10\nAT\n52K1\nA2\nLow level detection\nneutraliser\nLS1501\n11 - 14 45.18\nRemarks : PLC controlled panel\nEngineer : KRM\nTitle\n: Control wiring\n12\n13\n14\n15\n16\n17\n18\n19\n20\n+ 24VAC-A/53.2\n11\n1\n39K6\n39.15\n14F1 31\n14.5\n14\n14\n52KM1\nX101 11\n1\nA1\n52Y1\n2\nDA\nA2\nX107 12 + PE\n******* 24VAC-B/53.2\nDosing pump\nneutraliser\nP1501\nSafety valve\nneutraliser\nV1511\n1 - - 2 14.5\n3 - 4 14.5\n5- 6 14.5\nnijhuis\nMATER TECHNOLOGY\nRevision\n: A\nVISION ON SUSTAINABILITY\nRevision by\n: PAV\nCopyright reserved\nwww.nilhuis-water.com - T +31 (0)315 655 466\nRevision date\n: 28.12.12\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 52 / 78",
+      "tablas": [
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 52 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n52.18/24VAC-A\n24.13/230VAC-L 4\n+ 24VAC-A/54.2\nWWWWWW* 230VAC-L/55.7\n53K1\n39.4\n2\n10\n5 6\n7 11\nCLP2 ..\nSetting\nEmpty\n39K7\n39.17\n11\n53K2\n2\n10\n14\n39.6\nCLP2 ..\nSetting\nEmpty\n6 6\n7 11\nX17 1\nB\n12\nN\nR\n1\n53FC1\n2\nalarm\nN\nX11 6 ×7 × PE\nX11 4\nY\n0\n53LS1\nstart\nR\nref.\nB\n1\n-X\n53Y1\n2\n53K3\n2\n5 6 7 11\n39.8\nCLP2 ..\nSetting\nEmpty\nX1175 YPE\n24.13/230VAC-N\n52.15/24VAC-B\nLevel detection\nflocculant station\nLS1801\nFilling water valve\nflocculant make\nup unit\nV1803\nFlow switch\nflocculant\nFS1801\nProject : Austral llo - 112048\nRevision\nA\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : KRM\nTitle\n: Control wiring\nRevision date : 28.12.12\nPage\n: 53 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.niihuls-water.com - T +31 (0)315 655 466\n+ 230VAC-N/55.7\n+ 24VAC-B/54.2\nnijhuis\nWATET TEEKROLOST",
+      "tablas": [
+        [
+          [
+            "1 2",
+            "3 4 5 6 7 8 9 10 11",
+            "12 13 14 15",
+            "16 17 18",
+            "19",
+            "20"
+          ],
+          [
+            "52.18/24VAC-A 24.13/230VAC-L",
+            "4",
+            "",
+            "+ 24VAC-A/54.2 WWWWWW* 230VAC-L/55.7"
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks",
+            ": PLC controlled panel",
+            "Revision by : PAV",
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Engineer : KRM",
+            "Title",
+            ": Control wiring",
+            "Revision date : 28.12.12",
+            "Page",
+            ": 53 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n53.18/24VAC-A\n+ 24VAC-A/55.2\nX11 8\n11\n39K8\\\n39.19\n14\n| 11\n11\n40K2\n40.7\n40K31\n40.9\n14\n14\n54L10-1\nX119 PE\n13\n15F1 +1\n15.4\n14\n| 13\n15F2 y\n15.8\n14\n13\n15F4 5\n15.17\n14\n54KM1\n54KM2\nA2\nA1\nA1\n54KM3L\nA2\nA2\n54K1L\nA2\nA1\n53.18/24VAC-B 4\nMixer\nflocculant\nMX1801\nDosing screw\nflocculant\nDD1801\nTransfer pump\nflocculant\nP1802\nDetection\nlow level\nflocculant\nLS1802\n1 -/ 2 15.4\n3 - - 4 15.4\n5 - - 6 15.4\n1 -~ 2 15.8\n3- 4 15.8\n5 - - 6 15.6\n1-/ 2 15.17\n3 -/- 4 15.17\n5- 6 15.17\n11 - 14 39.18\nProject : Austral Ilo - 112048\nRevision\nA\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : KRM\nTitle\n: Control wiring\nRevision date : 28.12.12\nPage\n54 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nlihuls-wuler.com - T +31 (0)315 655 465\n+24VAC-B/55.2\nnijhuis",
+      "tablas": [
+        [
+          [
+            "1 2 3 4",
+            "5 6 7 8",
+            "9 10",
+            "11 12 13 14",
+            "15 16",
+            "17 18 19",
+            "20"
+          ],
+          [
+            "53.18/24VAC-A",
+            "",
+            "",
+            "",
+            "",
+            "+ 24VAC-A/55.2"
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks",
+            ": PLC controlled panel",
+            "Revision by : PAV",
+            "Check : PAV"
+          ],
+          [
+            "Engineer : KRM",
+            "Title",
+            ": Control wiring",
+            "Revision date : 28.12.12",
+            "Page 54 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n+24VAC-A/56.2\n54.18/24VAC-A 4\n11\n16F1 SA\n16.4 ~\n14\n53.18/230VAC-L\n16.11/P1801.T1+\n16.11/P1801.T2 4\n55K1\n5\n4\nL1\n40.8\nPT100\nZ\nN\n54.18/24VAC-B<\nA1\n55KM1\nA2\nDosing pump\nflocculant\nP1801\n1 - 2 16.4\n3 - 4 16.4\n- 6 16.4\n53.18/230VAC-N\nRun dry protection\ndosing pump\nP1801\n+ 230VAC-L/61.7\n+ 230VAC-N/61.7\n11\n40K5\n40.13\n14\nX11, 10\n1\n55Y1\n->\n2\nX11 11 PE\nSolenoid valve\npost dilution\nV1813\nX19 12\n55FS1 0-1\nX11 13 * PE\n55K2\nAT\nA2\n+ 24VAC-B/56.2\nFlow switch\npost dilution\nFS1802\n11 - 14 40.10\nProject : Austral Ilo - 112048\nRevision\n:A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : KRM\nTitle\n: Control wiring\nRevision date\n: 28.12.12\nPage\n: 55 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nljhuls-water.com - T +31 (0)315 655 466\nMATER TEENAOLOGY",
+      "tablas": [
+        [
+          [
+            "1 2 3 4",
+            "5 6",
+            "7 8 9 10 11",
+            "12 13 14",
+            "15 16 17",
+            "18 19",
+            "20"
+          ],
+          [
+            "+24VAC-A/56.2 54.18/24VAC-A 4"
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks : PLC controlled panel",
+            "Revision by : PAV",
+            "Check : PAV"
+          ],
+          [
+            "Engineer : KRM",
+            "Title : Control wiring",
+            "Revision date : 28.12.12",
+            "Page : 55 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "1\n2\n3\n1\n5\n6\n.........\n7\n8\n9\n10\n55.18/24VAC-A\n17.15/ P2501.WS1 4\n17.15/ P2501.WS2 4\n11\n56K1\n56.5\n14\n13\n17F154\n17.4\n14\n40K61\n40.15\n1 11\n14\n53\n53\n56KM2Y\n56.12\n56KM1N\n54\n56.8\n54\nA1\n56K1\nA2\nAT\n56K2L\nA2\n41\n56K3X\nA2\n17.15/ P2501.WS3\n17.15/ P2501.WS4 **\n55.18/24VAC-B +\nAuxiliary contacts\nlocal isolator\nP2501\n14 56.8\n11 -/\n21 - 24 40.14\n56KM1N\n14\n56K2\\\n56.6\n11\nRecirculation pump\nflotation unit\nP2501\n11 - 14 56.8\n21 -/ 24 40.14\n1-\n2 17.4\n4 17.4\n3 -\n5 - 6 17.4\n53 - 54 56.9\n11\n12\n13\n14\n15\n16\n17\n15\n25\n56K3\n56.10\nD\n56K3g\n56.10\nY\n18\n28\n56KM3D-1\n56.14 62\n56KM2Y7\n56.12\n$1\n62\nA1\n56KM2Y\nA2\nAT\nAT\n56KM3DI\nA2\nA2\n18 56.12\n15 -4\n26 56.14\n25 -1\n2 17.8\n3 --\n4 17.8\n5- - 6 17.8\n53 - - 54 55.6\n61 ~~ 62 56.14\n18\n19\n20\nA1\n56K4\nA2\nDetection\ncontrol voltage\n24Vac\n1 == 2 17.6\n3- 4 17.6\n5- 6 17.6\n61 - 62 56.12\n11 - 14 63.16\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nEngineer : KRM\nTitle\n: Control wiring\nRevision\n: A\nVISION ON SUSTAINABILITY\nRevision by\n: PAV\nCopyright reserved\nwww.olihuls-water.com - T +31 (0)315 655 466\nRevision date : 10.01.13\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n56 / 78\nnijhuis\nWATER TECHNOLOGY",
+      "tablas": [
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            "56 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n25.7/24VAC-C #\n48.19/24VDC +\n+24VAC-C/58.2\n++ 24VDC/63.8\n48.19/0VDC +\n25,7/24VAC-D\n57F1|I\n1A\n2\nX127 1\nX2001 .\nBR\nBU\n\"+\n57S1\n1\nBK\nX2001 2\n1\nX12 2\nA1\n57K1\nA2\nPressure switch\nrecirculation pump\nPS2501\n11 - 14 40.16\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nEngineer : KRM\nRemarks : PLC controlled panel\nTitle\n: Control wiring\n11\n40K71\n40.17\n14\nPneumatic panel\nflotation unit\n4\nX2007 4\nBR\n57S2\nBK\n1\n57Y1\n2\nPE\nX2007 3\nX200 5\nX200T PE\n-\nPE\n13\nA1\n57K2\nA2\nPressure\nswitch\ncompressed air\nPS2502\nAeration valve\nflotation unit\nV2513\n11 -/ 14 40.18\nRevision\n: A\nRevision by\n: PAV\nRevision date : 10.01.13\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 57 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nijhuis-water.com - T +31 (0)315 65 466\n** OVDC/63.8\n\"> 24VAC-D/58.2\nnijhuis\nPATEN TEEANDLOOT",
+      "tablas": [
+        [
+          [
+            "1 2",
+            "3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19",
+            "20"
+          ],
+          [
+            "25.7/24VAC-C # 48.19/24VDC +",
+            "+24VAC-C/58.2 ++ 24VDC/63.8",
+            ""
+          ]
+        ],
+        [
+          [
+            "Revision",
+            ": A"
+          ],
+          [
+            "Revision by",
+            ": PAV"
+          ],
+          [
+            "Revision date",
+            ": 10.01.13"
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 57 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n+ 24VAC-C/59.2\n57.18/24VAC-CM\n11\n18F1 41\n18.4\n14\n58KM1\nA2\n11\n19F1 5.\n19.4\n14\nA1\n58KM2\nA2\n11\n20F1 54\n20.4\n14\nA1\n58KM3L\nA1\nA2\n57.18/ 24VAC-D\nProject : Austral llo - 112048\nOrder\n: 112048.145\nTop skimmer 1\nflotation unit\nSC2501A\n1 -~ 2 18.4\n-2 4 18.4\n5 - 6 18.4\nRemarks\n: PLC controlled panel\nEngineer : KRM\nTitle\n: Control wiring\nTop skimmer 2\nflotation unit\nSC25018\n1- 2 19.4\n3 - 4 19.4\n5- 6 19.4\n+24VAC-D/59.2\nBottom skimmer\nflotation unit\nSC2502\n1 - 2 20.4\n-> 4 20.4\n5 - 6 20.4\nnijhuis\nDATES TECHNOLOGY\nRevision\n: A\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n58 / 78\nVISION ON SUSTAINABILITY\nRevision by\n: PAV\nCopyright reserved\nwww.nlhuis.water.com - T +31 (0)315 65 466\nRevision date : 28.12.12",
+      "tablas": [
+        [
+          [
+            "1 2 3 4",
+            "5 6",
+            "7 8",
+            "9 10 11 12 13",
+            "14 15 16",
+            "17 18 19",
+            "20"
+          ],
+          [
+            "57.18/24VAC-CM",
+            "",
+            "+ 24VAC-C/59.2",
+            ""
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            "58 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "-\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n+ 24VAC-C/60.2\n58.18/24VAC-C 4\n11\n11\n11\n11\n45K4\n45.11\n45K5\n45.13\n45K6\n45K31\n45.9\n14\n14\n45.15\n14\n14\nX12 6\n1\n-x\n59Y1\n2\nX12 8\n1\nX\n59Y2\n2\nX121 10\n1\n59Y3\n2\nX127 12\nDX\n59Y4\n8\n2\nX1277 ŤPE\nX1219 + PE\nX121 11 - PE\nX127 13 4 PE\n58.18/24VAC-D +\nSand drain 1\nflotation unit\nV2505A\nSand drain 2\nflotation unit\nV25058\nSand drain 3\nflotation unit\nV2505C\nSand drain 4\nflotation unit\nV2505D\nProject : Austral llo - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nEngineer : KRM\nTitle\n: Control wiring\nRevision\n: A\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nilhuis-water.com - T +31 (0)315 655 466\nRevision by\n: PAV\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 59 / 78\nRevision date : 28.12.12\n-+ 24VAC-D/60,2\nnijhuis\nMATER TESANDLODY",
+      "tablas": [
+        [
+          [
+            "1 2",
+            "3 4 5 6 7 8 9 10 11 12",
+            "13 14 15 16 17 18",
+            "19",
+            "20"
+          ],
+          [
+            "+\n58.18/24VAC-C 4",
+            "24VAC-C/60.2",
+            ""
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 59 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "1\n2\n3\n4\n5\n6\n........\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n59.18/24VAC-C\n19\n20\n+ 24VAC-C/61.2\n11\n11\n46K1\n11\n45K7\n45K8\n45.17\n14\n45.19\n14\n46.5\n14\n59.18/ 24VAC-D\nX127 14\n1\n60Y1\n2\nX121 15 + PE\nX12, 16\n60Y2\n1\ni\n2\nX121 18\n1\n60Y3\n2\n->\nDI\nX127 17 + PE\nX121 19 PPE\n+24VAC-D/61,2\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nSludge drain 1\nflotation unit\nV2505A\nSludge drain 2\nflotation unit\nV2505B\nSludge drain 3\nflotation unit\nV2505C\nRemarks : PLC controlled panel\nEngineer : KRM\nTitle\n: Control wiring\nRevision\nA\nRevision by\n: PAV\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nithuls-water.com - T +31 (0)315 655 466\nRevision date : 28.12.12\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 60 / 78\nnijhuis\nMATEE TEENSOLDAT",
+      "tablas": [
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 60 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "1\n2\n3\n4\n5\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n60.18/24VAC-C\n55.10/230VAC-L <=\n18\n19\n20\n+24VAC-C/62.2\n11\n11\n47K1\n47K2\n47.5\n47.7\n14\n14\n13\n21F15\n21.5\n14\n21.9/ P2502A.T1 ==\n21.9/ P2502A.T2\n61K1\n46.6\nAT\n61KM1\nA2\n5\n55.10/230VAC-N\n60.18/24VAC-D -\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nSludge pump 1\nflotation unit\nP2502A\n1 ~~ 221.5\n3 - 4 21.5\n5 - - 6 21.5\nRemarks : PLC controlled panel\nEngineer : KRM\nTitle\n: Control wiring\n4\nL1\nPT100\n₦\nRun dry protection\nP2502A\n13\n21F2 53\n21.12\n14\n21.16/P25028.11 +\n21.16/P25028.12 ***\n5\n4\nL1\nPT100\nN\n61K2\n46.10\nA1\n61KM2\nA2\n*** + 24VAC-D/62.2\nSludge pump 2\nflotation unit\nP2502B\nRun dry protection\nP25028\n1 - 2 21.12\n3 - - 4 21.12\n5- 6 21.12\nRevision\n: A\nRevision by\n: PAV\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nlhuls-water.com - T +31 (0)315 655 466\nRevision date\n: 28.12.12\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n..\n61 / 78",
+      "tablas": [
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ".. 61 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n61.18/24VAC-C 4\n+24VAC-C/63.2\n61.18/24VAC-D\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nEngineer : KRM\nRemarks : PLC controlled panel\nTitle\n: Control wiring\nSpare page\n+24VAC-D/63.2\nWATER TECHNOLOGY\nRevision\n: A\nVISION ON SUSTAINABILITY ,\nRevision by\n: PAV\nCopyright reserved\nwww.nijhuis-water.com - T +31 (0)315 655 466\nRevision date : 28.12.12\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 62 / 78",
+      "tablas": [
+        [
+          [
+            "1 2",
+            "3 4 5 6",
+            "7 8 9",
+            "10 11",
+            "12 13",
+            "14 15 16",
+            "17 18 19",
+            "20"
+          ],
+          [
+            "61.18/24VAC-C 4",
+            "",
+            "",
+            "",
+            "",
+            "+24VAC-C/63.2"
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 62 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n62.18/24VAC-C 4\nX20 1\n57.18/24VDC\n11\n12\n13\n14\n15\n16\n17\nX201 4\n€\n46K57\n46.15\n14\n11\n46K6\n46.19\n11\n14\n18\n19\n20\n46K67\n22\n124\n11\n11\n56K4\n56.19\n63K1\n63.16\n46.19 21\n14\n14\nX201 2\nContact central alarm\n62.16/24VAC-0 4*\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nRemarks\n: PLC controlled panel\nEngineer : KRM\nTitle\n: Control wiring\n63H1D\nBuzzer\n57.18/DVDC 4-\nX201 5\nContact alarm signal\n63K1\nA2\n11 -\n14 63.19\n21 -- 24 46.14\nRevision\n: A\nRevision by\n: PAV\nVISION ON SUSTAINABILITY\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 63 / 78\nCopyright reserved\nwww.nilhula-wpler.com - T +31 (0)315 555 466\nRevision date : 28.12.12\nX1\n63H2X\nwhite\nX2\nControl voltage\n24VAC\nnijhuis\nWATEN TEERSOLORY",
+      "tablas": [
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 63 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n\" Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX1\nCross\nReference\n10.3\n10,3\n10.3\n10,4\nTerminal\n1\n2\n3\nPE\n1\n2\n3\nPE\nW1 OELFLEX\nCLASSIC 110\n4×70mm'\n1\n2\n3\nPE\nL1\nL2 L3\nPE\n10U1\nL1\nL2\nL3\nPE\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nEngineer : PAV\nTitle\n: Main power supply\nRevision\n: A\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 64 / 78\nRevision by\n: PAV\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nilhuis-weler.com - T +31 (0)315 655 465\nRevision date : 13.03.13\nnijhuis",
+      "tablas": [
+        [
+          [
+            "1 2",
+            "3",
+            "4",
+            "5 6 7 8 9 10",
+            "11 12 13 14 15 16 17",
+            "18 19",
+            "20"
+          ],
+          [
+            ""
+          ],
+          [
+            "",
+            "* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details \" Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions"
+          ],
+          [
+            "",
+            "X1\n:selected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ""
+          ],
+          [
+            "",
+            "Cross Reference",
+            "10.3",
+            "10,3",
+            "10.3",
+            "10,4",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Terminal",
+            "1",
+            "2",
+            "3",
+            "PE",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 64 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "1\n2\n3\n+\n5\n6\n7\nCO\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX2\nCross\nReference\n11.5\n11.5\n11.5\n11.6\n11.7\n11.7\n11,7\n11.8\n11.1,5\n11.1.5\n11.1.6\n11.1.7\n11.1.8\n11.1.8\n11.1.9\n11.1.10\n11.1.10\n12.5\n12.5\n12.6\n13.5\n13,5\n13.6\n14.5\n14.5\n4.6\n5.4\n15.4\n15.4\n15.5\n15.8\n15.8\n15,8\n15,9\nTerminal\n1\n2\n3\nPE\n4\n5\n6\nPE\n7\n8\nPE\n9\n10\nPE\n11\n12\nPE\n13\n14\nPE\n15\n16\nPE\n17\n18\nPE\n19\n20\n21\nPE\n22\n23\n24\nPE\n7\n2\n3\nm\n4\n5\n2\nPE\n3\n4\n5\n6\n-\nN\nPE\n1\n2\nm\n-\nN\nm\n1\n₦\n3\nPE\nN\n3\nPE\nW2 OELFLEX\nCLASSIC 110\n7x6mm\nW3 OELFLEX\nCLASSIC 110\n7x1.5mm2\nCLASSIC 110\nW6 DELFLEX\n3x1.5mm2\nW9 OELFLEX\nCLASSIC 110\n3x1,5mm7\nW12 OELFLEX\nCLASSIC 110\n3×1.5mm2\nW15 OELFLEX\nCLASSIC 110\n4x2,5mm2\nW16 OELFLEX\nCLASSIC 110\n4x2,5mm2\n-\n2\n3\nPE\n4\n5\n6\nU2 V2\nU1 V1 W1\nPE W2\nU1 , V1\nW1\nPE\n3\nV2 U2\nW2\n11M1\nT\n2\nm\n3\n4\nL1 L2(N) PE\n-\n2\n0\n11U1\n5\n6\n20\n21\n1\nN\nPE\nL1\nN\nPE\nZ\n0-\n12U1\n1\n2\nPE\nL1\nZ\nm\n0-\n13U1\n1\n2\nPE\n17\nZ\nm\n14U1\n1\n2.\n3\nPE\nV\n₩\nPE\nC\n<\nW\nM\n3\nPE\n15M1\n1\n2\n3\nPE\nV\nW PE\nU\nV\nW\nM\n3\n1\nPE\nm\n15M2\nFeed pump flotation unit P0201\nDetection failure control valve\nDosing pump coagulant P1201\nDosing pump neutraliser P1501\nDosing screw flocculant DD1801\nInfluent control valve flotation\nDelection closed V0203\nDosing pump ferric P1401\nMixer flocculant MX1801\nunit V0203\n=\nV0203\n=\n=\nH\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nRemarks\n: PLC controlled panel\nEngineer : PAV\nTitle\n: Motor groups\nRevision\n: A\nRevision by\n: PAV\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nilhuis-water .com - T +31 (0)315 655 466\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n65 / 78\nRevision date : 13.03.13\nWATER TECHNOLOGY",
+      "tablas": [
+        [
+          [
+            "X2\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross Reference",
+            "11.5",
+            "11.5",
+            "11.5",
+            "11.6",
+            "11.7",
+            "11.7",
+            "11,7",
+            "11.8",
+            "11.1,5",
+            "11.1.5",
+            "11.1.6",
+            "11.1.7",
+            "11.1.8",
+            "11.1.8",
+            "11.1.9",
+            "11.1.10",
+            "11.1.10",
+            "12.5",
+            "12.5",
+            "12.6",
+            "",
+            "13.5",
+            "13,5",
+            "13.6",
+            "",
+            "14.5",
+            "14.5",
+            "4.6",
+            "",
+            "5.4",
+            "15.4",
+            "15.4",
+            "15.5",
+            "",
+            "15.8",
+            "15.8",
+            "15,8",
+            "15,9",
+            ""
+          ],
+          [
+            "Terminal",
+            "1",
+            "2",
+            "3",
+            "PE",
+            "4",
+            "5",
+            "6",
+            "PE",
+            "7",
+            "8",
+            "PE",
+            "9",
+            "10",
+            "PE",
+            "11",
+            "12",
+            "PE",
+            "13",
+            "14",
+            "PE",
+            "",
+            "15",
+            "16",
+            "PE",
+            "",
+            "17",
+            "18",
+            "PE",
+            "",
+            "19",
+            "20",
+            "21",
+            "PE",
+            "",
+            "22",
+            "23",
+            "24",
+            "PE",
+            ""
+          ],
+          [
+            "",
+            "7",
+            "2",
+            "3",
+            "m",
+            "4",
+            "5",
+            "",
+            "",
+            "",
+            "2",
+            "PE",
+            "3",
+            "4",
+            "",
+            "5",
+            "6",
+            "",
+            "-",
+            "N PE",
+            "",
+            "1 2 m",
+            "",
+            "-",
+            "N",
+            "m",
+            "",
+            "1",
+            "₦ 3",
+            "PE",
+            "",
+            "",
+            "N",
+            "3",
+            "PE",
+            ""
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            "65 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "1\nIN\n3\n+\n5\n6\n7\n8\n9\n10\n=\n12\n13\n14\n15\n16\n17\n18\n19\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX2\nCross\nReference\n15.12\n15.12\n15.13\n15,14\n15.15\n15.17\n15,17\n15.17\n15.18\n16.4\n16.4\n16,4\n15.5\n16.5\n17.4\n17.4\n17.4\n17.5\n17.6\n17.6\n17.6\n17.7\nB.4\n8.4\n18.4\n18.5\n16.5\n19.4\n19.4\n19.4\n19.5\n19.5\nTerminal\n25\n26\n27\n28\nPE\n29\n30\n31\nPE\n32\n33\n34\nPE\nS\n35\n36\n37\nPE\n38\n39\n40\nPE\n41\n42\n43\nPE\nS\n44\n45\n46\nPE\nS\n3\n4\nPE\n2\n3\nm\n1\n3\nPE\n-\n2\n3\nm\n4\nth\n6\n2\n3\nPE\n1\n2\n3\nm\n1\nN\nW17 OELFLEX\nCLASSIC 110\n5x1.5mm2\nW18 OELFLEX\n4×2.5mm2\nCLASSIC 110\nCLASSIC 110 CY\nW19 OELFLEX\n4×2,5mm'\nW22 OELFLEX\nCLASSIC 110\n7x10mm3\nW24 OELFLEX\nCLASSIC 110 CY\n4×2.5mm2\nCLASSIC 110 CY\nW26 OELFLEX\n4x2.5mm2\n1\n2\n3\n4\nPE\nbrn\nbik\nbrn\nbik\n5\n1\n1\n15M3\n15M3\n1\n2\n3\nPE\nU\n<\nW\nPE\n€\nW\nM\n3\nm\n15M4\n7\n2\n3\nPE\nU\nV W PE\n<\nm\nC\nPE\nV\n$\nW.\nSH\n16M1\n1\n2\n3\nPE\n4\n5\n6\nS\n₩1\nPE W2\nUJ2\nV2\nS\nV1\nW1\nPE\nV2 |U2\nW2\n17M1\n2\n3\nPE\nU\nV\n₹\nPE\nC\n₩\n. PE\n15\nSH\n18M1\n1\n₦\n3\nPE\nČ\n<\nW PE\nU\n5\n≤\nPE\n3.\n13\nSH\n19M1\nTransfer pump flocculant P1802\nDosing pump flocculant P1801\nRecirculation pump flotation unit\nVibrator flocculant M1801\nHeater flocculant HE1801\nTop skimmer 1 flotation unit\nTop skimmer 2 flotation unit\n=\n\"\n₱2501\nSC2501A\nSC25018\nProject : Austral Ilo - 112048\nRevision\n: A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : PAV\nTitle\n: Motor groups\nRevision date : 13.03.13\nPage\n66 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nijhuis-weler.com - T +31 (0)315 655 466\nnuhuis",
+      "tablas": [
+        [
+          [
+            "",
+            "X2\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross Reference",
+            "15.12",
+            "15.12",
+            "15.13",
+            "",
+            "15,14",
+            "15.15",
+            "",
+            "15.17",
+            "15,17",
+            "15.17",
+            "15.18",
+            "",
+            "16.4",
+            "16.4",
+            "16,4",
+            "15.5",
+            "16.5",
+            "",
+            "17.4",
+            "17.4",
+            "17.4",
+            "17.5",
+            "17.6",
+            "17.6",
+            "17.6",
+            "17.7",
+            "B.4",
+            "8.4",
+            "18.4",
+            "18.5",
+            "16.5",
+            "",
+            "19.4",
+            "19.4",
+            "19.4",
+            "19.5",
+            "19.5",
+            ""
+          ],
+          [
+            "Terminal",
+            "25",
+            "26",
+            "27",
+            "",
+            "28",
+            "PE",
+            "",
+            "29",
+            "30",
+            "31",
+            "PE",
+            "",
+            "32",
+            "33",
+            "34",
+            "PE",
+            "S",
+            "",
+            "35",
+            "36",
+            "37",
+            "PE",
+            "38",
+            "39",
+            "40",
+            "PE",
+            "41",
+            "42",
+            "43",
+            "PE",
+            "S",
+            "",
+            "44",
+            "45",
+            "46",
+            "PE",
+            "S",
+            ""
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks : PLC controlled panel",
+            "Revision by : PAV",
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Engineer : PAV",
+            "Title : Motor groups",
+            "Revision date : 13.03.13",
+            "Page",
+            "66 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "1\n2\n3\nA\n5\n6\n7\n8\n6\n0\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX2\nCross\nReference\n20.4\n20,4\n20.4\n20,5\n20.5\n21.6\n21.5\n21.5\n21.6\n21.12\n21.12\n21.12\n21.13\n23.4\n23,5\n23.6\n23.8\n23.9\n23,9\n23.11\n23.12\n23.13\nTerminal\n47\n48\n49\nPE\nS\n50\n51\n52\nPE\n53\n54\n55\nPE\n56\n57\nPE\n58\n59\nPE\n60\n61\nPE\n1\n2\n3\nPE\n-\n2\n3\nPE\n1\nN\n3\nPE\nN\nm\n-\nN\nPE\nH\nPE\nC\nW28 OELFLEX\nCLASSIC 110 CY\n4x2,5mm'\nW30 OELFLEX\nCLASSIC 110\n4×2.5mm\"\nW32 OELFLEX\nCLASSIC 110\n4x2,5mm2\nW34 OELFLEX\nCLASSIC 110\n3x1.5mm2\nW35 OELFLEX\nCLASSIC 110\n3x1.5mm2\nW36 OELFLEX\nCLASSIC 110\n3×1.5mm2\n1\n2\n3\nPE\n1\nN\n3\nO\nm\n1\n2\n3\nm\n1\n2\nPE\n1\n2\nPE\nN\n1\nPE\nC\nV W\nPE\nC\n<\n₩\nPE\nW\nSH\n<\nW\nPE\nC\n<\nW\nM\n3\nPE\nC\nV\n₩\nPE\nC\n<\n₩\nM\n3\nPE\nL1\nZ\nPE\n23U1\nZ\nPE\n23U2\nL1\nN PE\n0-\n23U3\n20M1\n21M1\n21M2\nSludge pump 1 flotation unit P2502A\nSludge pump 2 flotation unit P2502B\nBottom skimmer flotation unit\nPower supply flow measuring sludge\nPower supply pH measuring\ninfluent water FIC0201\nPower supply flow measuring\nflocculator QIC0801\npumps FIC2502\nSC2502\n=\nE\n=\n=\nProject : Austral Ilo - 112048\nRevision\n: A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : PAV\nTitle\n: Motor groups\nRevision date : 13.03.13\nPage\n:\n67 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nlibuls-water.com - T +31 (0)315 655 466\nnijhuis\nHATED VEERNOLOGY",
+      "tablas": [
+        [
+          [
+            "X2\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross Reference",
+            "20.4",
+            "20,4",
+            "20.4",
+            "20,5",
+            "20.5",
+            "",
+            "21.6",
+            "21.5",
+            "21.5",
+            "21.6",
+            "",
+            "21.12",
+            "21.12",
+            "21.12",
+            "21.13",
+            "",
+            "23.4",
+            "23,5",
+            "23.6",
+            "",
+            "23.8",
+            "23.9",
+            "23,9",
+            "",
+            "23.11",
+            "23.12",
+            "23.13",
+            ""
+          ],
+          [
+            "Terminal",
+            "47",
+            "48",
+            "49",
+            "PE",
+            "S",
+            "",
+            "50",
+            "51",
+            "52",
+            "PE",
+            "",
+            "53",
+            "54",
+            "55",
+            "PE",
+            "",
+            "56",
+            "57",
+            "PE",
+            "",
+            "58",
+            "59",
+            "PE",
+            "",
+            "60",
+            "61",
+            "PE",
+            ""
+          ],
+          [
+            "",
+            "1",
+            "2",
+            "3",
+            "PE",
+            "",
+            "",
+            "-",
+            "2",
+            "3 PE",
+            "",
+            "1",
+            "N",
+            "3",
+            "PE",
+            "",
+            "",
+            "N m",
+            "",
+            "- N PE",
+            "",
+            "H",
+            "",
+            "PE",
+            ""
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks : PLC controlled panel",
+            "Revision by : PAV",
+            "Check : PAV"
+          ],
+          [
+            "Engineer : PAV",
+            "Title",
+            ": Motor groups",
+            "Revision date : 13.03.13",
+            "Page : 67 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n6\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX3\nCross\nReference\n26,6\n26.6\n26.7\n26,7\n26,9\n26.9\n26.9\n26.9\n26.11\n26.11\n28.12\n28.12\nTerminal\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n=\n12\n1\n2\n3\n4\n1\n2\n3\n4\n1\n2\n3\n4\nW37 OELFLEX\nCLASSIC 110\n5x1mmP\nW38 OELFLEX\nCLASSIC 110\n5x1mm?\nW39 OELFLEX\nCLASSIC 110\n5x1mm2\n2\n4\n1\n2\n3\n4\n1\n2\n3\n4\n4-7\n7\n0-7\n7\n4 -- 7\n7\n26S1\n26$1\n26S2\n26S2\n26S3\n26S3\nEmergency stop 1\nEmergency stop 2\nEmergency stop 3\n=\nProject\n: Austral llo - 112048\nOrder\n: 112048.145\nEngineer : PAV\nRemarks : PLC controlled panel\nTitle\n: Emergency stop\nRevision\n: A\nRevision by\n: PAV\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.allhuls-waler.com - T +31 (0)315 655 466\nRevision date : 13.03.13\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 68 / 7B\nMATEK. TIENSOLORY",
+      "tablas": [
+        [
+          [
+            "X3",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross Reference",
+            "26,6",
+            "26.6",
+            "",
+            "26.7",
+            "26,7",
+            "",
+            "26,9",
+            "26.9",
+            "",
+            "26.9",
+            "26.9",
+            "",
+            "26.11",
+            "26.11",
+            "",
+            "28.12",
+            "28.12",
+            ""
+          ],
+          [
+            "Terminal",
+            "1",
+            "2",
+            "",
+            "3",
+            "4",
+            "",
+            "5",
+            "6",
+            "",
+            "7",
+            "8",
+            "",
+            "9",
+            "10",
+            "",
+            "=",
+            "12",
+            ""
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 68 / 7B"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Order\nEngineer : PAV\n: 112048.145\n: Austral Ilo - 112048\nProject\n1\n14+\nTerminal\n1\nReference\nCross\nX4\n1\n2\nTitle\nPosition meas, vaive V0203\n0\n1\n11.1.13\n3\nRemarks : PLC controlled pane!\n: Analog input signals\n11U1\n16\n2\nW5 OELFLEX\nU\nCLASSIC 110 CY\n2x1mm2\n2\n2\nPE\n11.1.14\n11.1.14\nA\nFlow measuring influent water\nflotation unit FIC0201\n56+\n0-\n32-\n31+\n57-\n1\n1\n3\n36.4\n2\n2\n4\n36.4\n5\n23U1\n3\nW40 OELFLEX\nCLASSIC 110 CY\n4x1mmt\n3\n5\n36.4\npH measuring flocculator QIC0801\nFlow measuring sludge pumps\nflotation unit FIC2502\n$\n-\n62- 81+\n6\nPE\n36.5\n6\n0-\n7\n36.5\n36.8\n23U2\n₦\nW41 OELFLEX\nCLASSIC 110 CY\n2x1mm2\n₦\n8\nPE\n36.8\n36.8\n7\n57-\n1\nCI\n9\n36.16\nO\n56+\n2\n2\n10\n36.16\n8\n23U3\n32-\n3\nW42 OELFLEX\nCLASSIC 110 CY\n4x1mm?\n7\n3\nA\n11\n36,16\n31+\nA\n12\n36.17\n9\nPE\n36.17\nRevision by\nRevision date : 13.03.13\nRevision\n: PAV\n>\nLevel measuring balance tank LC0201\n0-\n1+\n1\n1\n13\n41.4\n17\n=\n41U1\n2-\n₦\nBN+ WH-\nW43 OELFLEX\nCLASSIC 110 CY\n2x1mm2\n2\n14\n41.4\n10\nLevel measuring sludge compartment\n, C2502A\nC\nPE\n15\n41.4\n41.8\n41U2\n2\nW44 OELFLEX\nCLASSIC 110 CY\n2x 1mm3\n2\n16\nPE\n41.8\n41.8\n11\nLevel measuring sludge compartment\nI.C2502B\nCreated on\n1\n1\n17\n41.12\n12\nPage\nCheck\n: PAV\n69 / 78\n: 17.07.06\n41U3\nBN+ WH-\n2\nW45 OELFLEX\nCLASSIC 110 CY\n2x 1mm2\n2\n18\nPE\n41.12\n41.12\nSpare 2-wire [D] analog input\n19\n41.16\n13\n20\n41.16\nPE\n41.16\n14\n11\n21\n42.4\n22\n12.4\nCopyright reserved\nVISION ON SUSTAINABILITY\nwww.nlihuis-water.com - T +31 (0)315 65 466\n.WATER TECNAGLODY\nnijhuis\n=\nPE\n42.4\n5\nSpare 4-wire [C] analog input\n23\n42.12\n=\n24\n42.12\n16\n=\nPE\n42.12\n17\n00\n19\n20\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details",
+      "tablas": [
+        [
+          [
+            "Engineer : PAV",
+            "Order\n: 112048.145",
+            ": Austral Ilo -\nProject",
+            "",
+            "",
+            "",
+            "1 14+",
+            "1",
+            "Terminal",
+            "Reference Cross",
+            "X4\n:selected:",
+            "* Cables must be selected in\n* Cable diameters are for",
+            "1 2"
+          ],
+          [
+            "112048"
+          ],
+          [
+            "Title",
+            "Remarks",
+            "Position meas, vaive V0203",
+            "",
+            "0",
+            "1",
+            "11.1.13",
+            "",
+            "3"
+          ],
+          [
+            "",
+            "11U1",
+            "16",
+            "2",
+            "W5 OELFLEX\nCLASSIC 110 CY 2x1mm2",
+            "U\n2",
+            "2 PE",
+            "11.1.14 11.1.14",
+            "conformance\nindication",
+            ""
+          ],
+          [
+            ":",
+            ": PLC controlled pane!",
+            "Flow measuring influent water\nFIC0201",
+            "",
+            "0-",
+            "57-",
+            "1",
+            "1",
+            "3",
+            "36.4",
+            "",
+            "only,",
+            "A"
+          ],
+          [
+            "Analog input signals",
+            "flotation unit",
+            "",
+            "56+",
+            "2",
+            "2",
+            "4",
+            "36.4",
+            "",
+            "with\nNWT",
+            ""
+          ],
+          [
+            "",
+            "23U1",
+            "32-",
+            "3",
+            "W40 OELFLEX CLASSIC 110 CY 4x1mmt",
+            "3",
+            "5",
+            "36.4",
+            "",
+            "power\ndoesn't",
+            "5"
+          ],
+          [
+            "pH measuring flocculator QIC0801 Flow measuring sludge pumps flotation unit FIC2502",
+            "",
+            "31+",
+            "$ -",
+            "6",
+            "36.5",
+            "",
+            "take",
+            "6"
+          ],
+          [
+            "",
+            "0-",
+            "62-",
+            "PE\n7",
+            "36.5 36.8",
+            "",
+            "consumption,\nany"
+          ],
+          [
+            "23U2",
+            "81+",
+            "₦",
+            "W41 OELFLEX CLASSIC 110 CY 2x1mm2",
+            "₦",
+            "8 PE",
+            "36.8 36.8",
+            "",
+            "environmental\nresponsibility",
+            "7"
+          ],
+          [
+            "",
+            "",
+            "57-",
+            "1",
+            "",
+            "",
+            "9",
+            "36.16",
+            "",
+            "for it!",
+            ""
+          ],
+          [
+            "",
+            "O",
+            "56+",
+            "2",
+            "CI\n2",
+            "10",
+            "36.16",
+            "",
+            "conditions,\nSee",
+            "8"
+          ],
+          [
+            "23U3",
+            "32-",
+            "3",
+            "W42 OELFLEX CLASSIC 110 CY 4x1mm?",
+            "7 3 A",
+            "11",
+            "36,16",
+            "",
+            "general",
+            ""
+          ],
+          [
+            "",
+            "31+",
+            "A",
+            "12",
+            "36.17",
+            "",
+            "method",
+            ""
+          ],
+          [
+            "",
+            "",
+            "PE",
+            "36.17",
+            "",
+            "",
+            "9"
+          ],
+          [
+            "Revision date :",
+            "",
+            "Revision\n>",
+            "Level measuring balance tank LC0201",
+            "",
+            "0-",
+            "1+",
+            "1",
+            "",
+            "1",
+            "13",
+            "41.4",
+            "",
+            "of\ninstructions",
+            ""
+          ],
+          [
+            "Revision by\n: PAV",
+            "17 =",
+            "41U1",
+            "2-",
+            "₦",
+            "W43 OELFLEX CLASSIC 110 CY 2x1mm2",
+            "2",
+            "14",
+            "41.4",
+            "",
+            "installation,\non page",
+            "10"
+          ],
+          [
+            "Level measuring sludge compartment\nC2502A",
+            "",
+            "",
+            "BN+",
+            "C",
+            "PE 15",
+            "41.4 41.8",
+            "",
+            "local\n6 for"
+          ],
+          [
+            "13.03.13",
+            ",",
+            "41U2",
+            "WH-",
+            "2",
+            "W44 OELFLEX CLASSIC 110 CY 2x 1mm3",
+            "2",
+            "16 PE",
+            "41.8 41.8",
+            "",
+            "regulations\nfurther",
+            "11"
+          ],
+          [
+            "Level measuring sludge compartment I.C2502B",
+            "",
+            "",
+            "BN+",
+            "1",
+            "",
+            "1",
+            "17",
+            "41.12",
+            "",
+            "and\ndetails",
+            "12"
+          ],
+          [
+            "Page\n69 / 78",
+            "Check : PAV",
+            "Created on",
+            "41U3",
+            "",
+            "WH-",
+            "2",
+            "W45 OELFLEX CLASSIC 110 CY 2x 1mm2",
+            "2",
+            "18 PE",
+            "41.12",
+            "",
+            "conditions",
+            ""
+          ],
+          [
+            "Spare 2-wire [D] analog input",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "19",
+            "41.12\n41.16",
+            "",
+            "",
+            "13"
+          ],
+          [
+            ": 17.07.06",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "20",
+            "41.16",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "PE",
+            "41.16",
+            "",
+            "",
+            "14"
+          ],
+          [
+            "11",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "21",
+            "42.4",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "VISION",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "22",
+            "12.4",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Copyright reserved\nON SUSTAINABILITY www.nlihuis-water.com - T +31 (0)315 65 466 .WATER TECNAGLODY",
+            "",
+            "",
+            "=",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "PE",
+            "42.4",
+            "",
+            "",
+            "5"
+          ],
+          [
+            "",
+            "Spare 4-wire [C] analog input",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "23",
+            "42.12",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "=",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "24",
+            "42.12",
+            "",
+            "",
+            "16"
+          ],
+          [
+            "=",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "PE",
+            "42.12",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "17"
+          ],
+          [
+            "nijhuis",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "00"
+          ],
+          [
+            "",
+            "",
+            "19"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "20"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\nCD\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n\" Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX5\nCross\nReference\n11.1.11\n11.1.12\n11.1.12\n12.10\n12.11\n12.11\n13,10\n13.11\n13.11\n14.10\n14.11\n14.11\nTerminal\n1\n2\nPE\n3\n4\nPE\n5\n0\nPE\n7\n8\nPE\n1\n2\n1\n2\n2\n1\n2\n4\nC\nCLASSIC 110 CY\nW4 DELFLEX\nW8 OELFLEX\nW11 OELFLEX\nCLASSIC 110 CY\nW14 OELFLEX\nCLASSIC 110 CY\n2×1mm2\n2x1mm?\nCLASSIC 110 CY\n2x 1mm?\n2x1mm?\n-\n2\n1\n2\n1\n2\n-\n2\n13+\n12-\nWHITBROWN\nGREYBROWN\nGREYBROWN\n0\n6\n11U1\n12U1\n13U1\n14U1\nCapacity control dosing pump P1201\nCapacity control dosing pump P1401\nCapacity control dosing pump P1501\nPosition control. control valve\n¥0203\n11\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nEngineer : PAV\nTitle\n: Analog output signals\nRevision\nA\nVISION ON SUSTAINABILITY\nRevision by\n: PAV\nCopyright reserved\nwww.nilhuis-water.com - T +31 (0)315 655 466\nRevision date : 13.03.13\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 70 / 78\nnijhuis",
+      "tablas": [
+        [
+          [
+            "",
+            "\" Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details"
+          ],
+          [
+            "",
+            "* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions"
+          ],
+          [
+            "",
+            "X5\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cross Reference",
+            "11.1.11",
+            "11.1.12",
+            "11.1.12",
+            "12.10",
+            "12.11",
+            "12.11",
+            "13,10",
+            "13.11",
+            "13.11",
+            "14.10",
+            "14.11",
+            "14.11",
+            ""
+          ],
+          [
+            "Terminal",
+            "1",
+            "2",
+            "PE",
+            "3",
+            "4",
+            "PE",
+            "5",
+            "0",
+            "PE",
+            "7",
+            "8",
+            "PE",
+            ""
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 70 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX6\nCross\nReference\n16.7\n16.7\n16.8\n18.7\n18.7\n18.8\n19.7\n19.7\n19.8\n20.7\n20.7\n20.8\nTerminal\n1\n2\nS\n3\n4\nS\n5\n6\nS\n7\n8\nS\n1\n7\nL\nW20 OELFLEX\nCLASSIC 110 CY\n3×1.5mm2\nW25 OELFLEX\nCLASSIC 110 CY\n3×1.5mm2\nW27 OELFLEX\nCLASSIC 110 CY\n3x1,5mm*\nW29 OELFLEX\nCLASSIC 110 CY\n3x1.5mm2\n2\n1\n2\n2\n1\n2\nC\nV\nW\n13\nPE\nU\nV\nW\n5\nW.\n1.\nPE\nV\nW\n5\nW\nPE\nC\nV\nW\n15\nPE\n16M1\n18M1\n19M1\n20M1\nPTC protection P1801\nPTC protection SC2501A\nPTC protection SC2501B\nPTC protection SC2502\n=\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nEngineer : PAV\nTitle\n: Temperature protections (PTC)\nRevision\n: A\nVISION ON SUSTAINABILITY\nRevision by\n: PAV\nCopyright reserved\nwww.nl/huls-water.com - T +31 (0)315 655 466\nRevision date : 13.03.13\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 71 / 78\nNATEY ZEEANOLOGY",
+      "tablas": [
+        [
+          [
+            "X6",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross Reference",
+            "16.7",
+            "16.7",
+            "16.8",
+            "",
+            "18.7",
+            "18.7",
+            "18.8",
+            "",
+            "19.7",
+            "19.7",
+            "19.8",
+            "",
+            "20.7",
+            "20.7",
+            "20.8",
+            ""
+          ],
+          [
+            "Terminal",
+            "1",
+            "2",
+            "S",
+            "",
+            "3",
+            "4",
+            "S",
+            "",
+            "5",
+            "6",
+            "S",
+            "",
+            "7",
+            "8",
+            "S",
+            ""
+          ]
+        ],
+        [
+          [
+            "P1801",
+            "SC2501A",
+            "SC2501B",
+            "SC2502"
+          ],
+          [
+            "protection",
+            "protection",
+            "protection",
+            "protection"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PTC",
+            "PTC",
+            "PTC\n=",
+            "PTC"
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 71 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n\" Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX8\nCross\nReference\n16.10\n16.10\n16.11\n21.7\n21.8\n21.8\n21.14\n21.15\n21.15\nTerminal\n1\n2\nPE\n3\n4\nPE\n5\n6\nPE\n-\n2\n1\n2\n1\n2\nW21 OELFLEX\nCLASSIC 110\nW31 OELFLEX\nW33 OELFLEX\nCLASSIC 110\n3x1,5mm2\n3x1.5mm2\n3x1.5mm3\nCLASSIC 110\n1\n-\n2\n1\n2\n1\n2\nT1\nT2\nT2\nF1\nT2\n-1\nT2\n16R1\n21R1\n21R2\nRun dry protection P1801\nRun dry protection P2502A\nRun dry protection P2502B\nIT\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nEngineer : PAV\nTitle\n: Temperature protections (PT100)\nRevision\n: A\nRevision by\n: PAV\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nl/huls.water.com - T +31 (0)315 655 466\nRevision date : 13.03.13\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n: 72 / 78\nWATER TICARORODT",
+      "tablas": [
+        [
+          [
+            "",
+            "\" Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details"
+          ],
+          [
+            "* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions"
+          ],
+          [
+            "",
+            "X8\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cross Reference",
+            "16.10",
+            "16.10",
+            "16.11",
+            "21.7",
+            "21.8",
+            "21.8",
+            "21.14",
+            "21.15",
+            "21.15",
+            ""
+          ],
+          [
+            "Terminal",
+            "1",
+            "2",
+            "PE",
+            "3",
+            "4",
+            "PE",
+            "5",
+            "6",
+            "PE",
+            ""
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            ": 72 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "1\nN\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\nCo\n19\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n\" Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX10\nCross\nReference\n49.13\n49.13\n50,1.5\n50.1.5\n51.5\n51,5\n51.13\n51,13\n51.13\n$2.5\n52.5\n52.13\n52.13\n52.13\nTerminal\n1\n2\n3\n4\n5\n6\n7\n8\nPE\n9\n10\n11\n12\nPE\n-\n2\n2\n1\nN\n1\n2\nm\n2\n1\n2\nPE\nW49 OELFLEX\nCLASSIC 110\nW50 OELFLEX\nCLASSIC 110\nW51 OELFLEX\nCLASSIC 110\n5x1,5mm3\n3x1.5mm2\n3×1.5mm'\nW52 OELFLEX\nCLASSIC 110\n3×1.5mm2\nW53 DELFLEX\nCLASSIC 110\n3x1.5mm2\nW54 OELFLEX\nCLASSIC 110\n3x1.5mm2\n2\n1\n2\n1\n2\nPE\n1\n2\n2\nPE\n?\n7\n1\n2\n,\n1\n2\n11\n11\nT25\n49U1\n50LS1\n51LS1\n51Y1\n52LS1\n52Y1\nLow level detection ferric LS1401\nLow level detection coagulant\nLow level detection neutraliser\nSafety valve neutraliser V1511\nSafey valve ferric V1411\nSpare\nĻS1201\n=\nLS1501\nH\n=\nn\nProject : Austral llo - 112048\nRevision\n: A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : PAV\nTitle\n: Process connections group 1\nRevision date : 13.03.13\nPage\n73 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nlihuls-waler.com - T +31 (0)315 655 466",
+      "tablas": [
+        [
+          [
+            "X10\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross Reference",
+            "49.13",
+            "49.13",
+            "",
+            "50,1.5",
+            "50.1.5",
+            "",
+            "51.5",
+            "51,5",
+            "",
+            "51.13",
+            "51,13",
+            "51.13",
+            "",
+            "$2.5",
+            "52.5",
+            "",
+            "52.13",
+            "52.13",
+            "52.13",
+            ""
+          ],
+          [
+            "Terminal",
+            "1",
+            "2",
+            "",
+            "3",
+            "4",
+            "",
+            "5",
+            "6",
+            "",
+            "7",
+            "8",
+            "PE",
+            "",
+            "9",
+            "10",
+            "",
+            "11",
+            "12",
+            "PE",
+            ""
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks",
+            ": PLC controlled panel",
+            "Revision by : PAV",
+            "Check : PAV"
+          ],
+          [
+            "Engineer : PAV",
+            "Title",
+            ": Process connections group 1",
+            "Revision date : 13.03.13",
+            "Page 73 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "1\n2\n3\n4\n5\n0)\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX11\nCross\n53,5\nReference\n53,5\n53.6\n53.12\n53.12\n53,12\n53.16\n53.17\n53,17\n54.17\n54.17\n54.17\n55.14\n55.14\n55.14\n55.18\n55.18\n55.18\nTerminal\n1\n2\n3\n4\n5\nPE\n6\n7\nPE\n8\n9\nPE\n10\n11\nPE\n12\n13\nPE\n2\n3\nNº\nPE\n1\n2\nN\n1\n2\nர்\n-\n2\nW55 OELFLEX\nCLASSIC 110\n4x1.5mm2\nW56 OELFLEX\nCLASSIC 110\n3x1.5mm2\nW58 OELFLEX\nCLASSIC 110\nW59 OELFLEX\nCLASSIC 110\n3x1mm2\n3x1.5mm\nW60 DELFLEX\nCLASSIC 110\n3x1.5mm2\nW61 OELFLEX\nCLASSIC 110\n3×1.5mm2\n1\n2\nPE\nN\n1\n2\n1\n2\nPE\n-\n2\n1\n2\n2\n1\n1\n2\n1 1\n1.\nN\n11\n53Y1\n53FC1\n125\n54L1\n55Y1\n9\n1\n55FS1\n53LS1\n53LS1\n53LS1\nLevel detection flocculant station\nFilling water valve flocculant make\nSolenoid valve post dilution V1813\nFlow switch post dilution FS1802\nLS1801\nup unit V1803\nLS1802\n0\n=\nFlow switch flocculant FS1801\nDetection low level flocculant\n=\n=\nProject\n: Austral Ilo - 112048\nRevision\n: A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\nPAV\nEngineer : PAV\nTitle\n: Process connections group 2\nRevision date : 13.03.13\nPage\n: 74 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nijhuis-water.com - T +31 (0)3 15 655 466\nnijhuis",
+      "tablas": [
+        [
+          [
+            "X11\n:unselected: :selected:",
+            ":unselected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross 53,5 Reference",
+            "",
+            "53,5",
+            "",
+            "53.6",
+            "",
+            "53.12",
+            "53.12",
+            "53,12",
+            "",
+            "53.16",
+            "53.17",
+            "53,17",
+            "54.17",
+            "54.17",
+            "54.17",
+            "55.14",
+            "55.14",
+            "55.14",
+            "",
+            "55.18",
+            "55.18",
+            "55.18",
+            ""
+          ],
+          [
+            "Terminal 1",
+            "",
+            "2",
+            "",
+            "3",
+            "",
+            "4",
+            "5",
+            "PE",
+            "",
+            "6",
+            "7",
+            "PE",
+            "8",
+            "9",
+            "PE",
+            "10",
+            "11",
+            "PE",
+            "",
+            "12",
+            "13",
+            "PE",
+            ""
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks",
+            ": PLC controlled panel",
+            "Revision by : PAV",
+            "Check",
+            "PAV"
+          ],
+          [
+            "Engineer : PAV",
+            "Title",
+            ": Process connections group 2",
+            "Revision date : 13.03.13",
+            "Page",
+            ": 74 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "......\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX12\nCross\nReference\n57.7\n57.7\n57.11\n57.15\n57.15\n57.15\n59.5\n59.5\n59.5\n59.9\n59.9\n59.9\n59.13\n59,13\n59.13\n59.17\n59,17\n59.17\n60.5\n60,5\n60.5\n60.9\n60.9\n60.9\n60.13\n60.13\n60.13\nTerminal\n1\n2\n3\n4\n5\nPE\n6\n7\nPE\n8\n9\nPE\n10\n11\nPE\n12\n13\nPE\n14\n15\nPE\n16\n17\nPE\n18\n19\nPE\n1\n2\n3\n4\n5\nPE\n1\n2\nPE\n1\nN\nPE\n1\n2\nPE\n1\n2\nPE\n-\nV\nm\n1\n2\nPE\n1\n2\nm\nW62 OELFLEX\nCLASSIC 110\n7x1.5mm2\nW63 OELFLEX\nCLASSIC 110\n3×1,5mm\nW54 DELFLEX\nCLASSIC 110\n3×1.5mm2\nCLASSIC 110\nW65 OELFLEX\n3x1.5mm2\nW66 OELFLEX\nCLASSIC 110\n3x1.5mm2\nW67 OELFLEX\nCLASSIC 110\n3x1.5mm2\nW68 OELFLEX\nCLASSIC 110\n3×1.5mm2\nW69 OELFLEX\nCLASSIC 110\n3×1.5mm\n1\n2\n3\n4\n5\nm\nN\nPE\n2\nm\n-\n2\nPE\nm\n1\n2\nPE\n2\nPE\n1\n2\nPE\n1\n2\nPE\n1\n2\n3\n4\n5\nPE\n1\n2\n-\n1\n2\n1\n2\n1\n2\n.\n1\nN\n1\n2\n1\n2\n-\n725.\n2\n11\n11\n12\nT2\n11\n1\nT2\nK\n11\n2\nX200\n59Y1\n59Y2\n59Y3\n59Y4\n60Y1\n60Y2\n60Y3\nPressure switch recirculation pump\nSand drain 1 flotation unit V2505A\nSand drain 2 flotation unit V2505B\nSand drain 3 flotation unit V2505C\nSand drain 4 flotation unit V2505D\nSludge drain 1 flotation unit\nSludge drain 2 flotation unit\nSludge drain 3 flotation unit\nPS2501\nPS2502\nAeration valve flotation unit V2513\nPressure switch compressed air\nV2505A\nY2505B\nY2505C\n=\n=\n=\nProject : Austral lio - 112048\nRevision\n: A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : PAV\nTitle\n: Process connections group 3\nRevision date : 13.03.13\nPage\n: 75 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.odhuis-weler.com - T +31 (0)315 655 466\n„nijhuis\nWATER TEERSGIOGY.",
+      "tablas": [
+        [
+          [
+            "",
+            "X12\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross Reference",
+            "57.7",
+            "57.7",
+            "57.11",
+            "57.15",
+            "57.15",
+            "57.15",
+            "",
+            "59.5",
+            "59.5",
+            "59.5",
+            "",
+            "59.9",
+            "59.9",
+            "59.9",
+            "",
+            "59.13",
+            "59,13",
+            "59.13",
+            "",
+            "59.17",
+            "59,17",
+            "59.17",
+            "",
+            "60.5",
+            "60,5",
+            "60.5",
+            "",
+            "60.9",
+            "60.9",
+            "60.9",
+            "",
+            "60.13",
+            "60.13",
+            "60.13",
+            ""
+          ],
+          [
+            "Terminal",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "PE",
+            "",
+            "6",
+            "7",
+            "PE",
+            "",
+            "8",
+            "9",
+            "PE",
+            "",
+            "10",
+            "11",
+            "PE",
+            "",
+            "12",
+            "13",
+            "PE",
+            "",
+            "14",
+            "15",
+            "PE",
+            "",
+            "16",
+            "17",
+            "PE",
+            "",
+            "18",
+            "19",
+            "PE",
+            ""
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks",
+            ": PLC controlled panel",
+            "Revision by : PAV",
+            "Check : PAV"
+          ],
+          [
+            "Engineer : PAV",
+            "Title",
+            ": Process connections group 3",
+            "Revision date : 13.03.13",
+            "Page : 75 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX20\nCross\nReference\n63.4\n63.4\n63.5\n63.12\n63.12\n63.13\nTerminal\n1\n2\n3\n4\n5\n6\nContact central alarm\nContact alarm signal\n=\nProject : Austral llo - 112048\nRevision\nA\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\nPAV\nEngineer : PAV\nTitle\n: Contacts central alarm\nRevision date\n: 13.03.13\nPage\n76 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nlihule-water.com - T +31 (0)315 65 466\nnijhuis",
+      "tablas": [
+        [
+          [
+            "X20",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross Reference",
+            "63.4",
+            "63.4",
+            "63.5",
+            "63.12",
+            "63.12",
+            "63.13",
+            ""
+          ],
+          [
+            "Terminal",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            ""
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks",
+            ": PLC controlled panel",
+            "Revision by : PAV",
+            "Check PAV"
+          ],
+          [
+            "Engineer : PAV",
+            "Title",
+            ": Contacts central alarm",
+            "Revision date : 13.03.13",
+            "Page 76 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "1\n2\n3\nA\n5\n6\n7\n8\n9\n0\n11\n12\n13\n14\n15\n16\n17\n00\n19\n20\n* Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX101\nCross\nReference\n12.7\n12.8\n12.9\n13.7\n13.8\n13.9\n14.7\n14.8\n14.9\n49,5\n49.5\n49,7\n49.7\n49,9\n49.9\n49.11\n49.11\nTerminal\n1\n2\nPE\n3\n4\nPE\n5\n6\nPE\n7\n8\n9\n10\n11\n12\n13\n14\n-\n2\n1\nN\n1\nN\n1\n2\n1\nN\n2\n3\n4\nW7 OELFLEX\nCLASSIC 110\nW10 OELFLEX\nCLASSIC 110\nW13 OELFLEX\nCLASSIC 110\nW46 OELFLEX\nCLASSIC 110\n3×1,5mm2\n3×1.5mm2\n3x1.5mm2\nW47 OELFLEX\nCLASSIC 110\nW48 OELFLEX\nCLASSIC 110\nW49 OELFLEX\nCLASSIC 110\n3x1.5mm?\n3x1,5mm2\n3x1,5mm2\n5x1.5mm2\n1\n2\n1\n2\n1\n2\n1\n2\n1\n2\n-\n2\n3\n4\nBLUEBROWN\nBLUEBROWN\nBLUEBROWN\n?\n~\n?\nv\n-\n?\n?\n0\n0\n12U1\n13U1\n14U1\n49U1\nEnable start sludge pumps P2502A/B\nStart/stop dosing pump P1201\nStart/stop dosing pump P1401\nStart/stop dosing pump P1501\nhigh level LC0201 (To client)\nStop feeding balance tank due to\nSpare\n(From client)\n=\n=\nProject : Austral Ilo - 112048\nRevision\n: A\nCreated on\n: 17.07.06\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nRevision by\n: PAV\nCheck\n: PAV\nEngineer : PAV\nTitle\n: External start/stop signals\nRevision date : 13.03.13\nPage\n: 77 / 78\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nijhuis-water.com - T +31 (0)315 665 466\nnijhuis\nPATEX TECHNOLOGY",
+      "tablas": [
+        [
+          [
+            "X101\n:selected:",
+            ":unselected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross Reference",
+            "12.7",
+            "12.8",
+            "12.9",
+            "13.7",
+            "13.8",
+            "13.9",
+            "14.7",
+            "14.8",
+            "14.9",
+            "49,5",
+            "49.5",
+            "49,7",
+            "49.7",
+            "49,9",
+            "49.9",
+            "49.11",
+            "49.11",
+            ""
+          ],
+          [
+            "Terminal",
+            "1",
+            "2",
+            "PE",
+            "3",
+            "4",
+            "PE",
+            "5",
+            "6",
+            "PE",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            ""
+          ]
+        ],
+        [
+          [
+            "Order : 112048.145",
+            "Remarks : PLC controlled panel",
+            "Revision by : PAV",
+            "Check : PAV"
+          ],
+          [
+            "Engineer : PAV",
+            "Title",
+            ": External start/stop signals",
+            "Revision date : 13.03.13",
+            "Page : 77 / 78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n\" Cable diameters are for indication only, NWT doesn't take any responsibility for it! See general Instructions on page 6 for further details\n* Cables must be selected in conformance with power consumption, environmental conditions, method of installation, local regulations and conditions\nX102\nCross\nReference\n11.11\n11.11\n11.12\n11.13\n11.13\n17.12\n17.13\n17,13\n17.14\n17.14\nTerminal\n3\n4\nPE\n5\n6\n7\n00\nPE\n-\n2\n3\n4\n1\n2\n3\n4\nW70 OELFLEX\nCLASSIC 110\n5x1.5mm2\nW23 OELFLEX\nCLASSIC 110\n6x1.5mm?\n2\n3\n4\n1\n2\n3\n4\n2\n3\n4\n1\n2\n3\n4\n1\n3\n1.\n4\nT\n1.\n2\n{ 3\n11S1\n11S1\n17S1\n17S1\nAuxiliary contacts local isolator\nAuxiliary contacts local isolator\n₱0201\n1\nP2501\n11\n=\nProject : Austral Ilo - 112048\nOrder\n: 112048.145\nRemarks : PLC controlled panel\nEngineer : PAV\nTitle\n: Local isolators\nRevision\n:A\nRevision by\n: PAV\nVISION ON SUSTAINABILITY\nCopyright reserved\nwww.nlbhuls-waler.com - T +31 (0)315 655 466\nRevision date : 13.03.13\nCreated on\n: 17.07.06\nCheck\n: PAV\nPage\n78 / 78\nnijhuis\nMATER FICANOLOAN",
+      "tablas": [
+        [
+          [
+            "X102\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cross Reference",
+            "11.11",
+            "11.11",
+            "",
+            "11.12",
+            "11.13",
+            "11.13",
+            "17.12",
+            "17.13",
+            "",
+            "17,13",
+            "17.14",
+            "17.14",
+            ""
+          ],
+          [
+            "Terminal",
+            "",
+            "",
+            "",
+            "3",
+            "4",
+            "PE",
+            "5",
+            "6",
+            "",
+            "7",
+            "00",
+            "PE",
+            ""
+          ]
+        ],
+        [
+          [
+            "Created on",
+            ": 17.07.06"
+          ],
+          [
+            "Check",
+            ": PAV"
+          ],
+          [
+            "Page",
+            "78 / 78"
+          ]
+        ]
+      ]
+    }
+  ]
+}

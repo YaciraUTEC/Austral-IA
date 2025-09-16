@@ -1,0 +1,1442 @@
+{
+  "archivo": "ABB Manual de Usuario ACS550_p1_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "ACS550\nManual del Usuario\nConvertidores de frecuencia ACS550-01 (0,75 ... 160 KW)\nConvertidores de frecuencia ACS550-U1 (1 ... 200 CV)\nABB\nPower and productivity\nfor a better world™",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Lista de manuales relacionados\nMANUALES GENERALES\nACS550-01/U1 User's Manual (0.75 ... 160 kW) /\n(1 ... 200 hp)\n3AFE64783661 (3AUA0000001418) (español)\nInstrucciones de montaje con brida\nKit, IP21 / UL tipo 1\nFMK-A-R1\nBastidor\nCódigo (inglés)\nR1\n100000982\nFMK-A-R2\nR2\n100000984\nFMK-A-R3\nR3\n100000986\nFMK-A-R4\nR4\n100000988\nAC8-FLNGMT-R5 1\nR5\nACS800-\nAC8-FLNGMT-R6 1\nR6\nPNTG01U-EN\n1. No disponible para la serie ACS550-01\nKit, IP54 / UL tipo 12\nBastidor\nCódigo (inglés)\nFMK-B-R1\nR1\n100000990\nFMK-B-R2\nR2\n100000992\nFMK-B-R3\nR3\n100000994\nFMK-B-R4\nR4\n100000996\nMANUALES DE OPCIONES\n(entregados con el equipo opcional)\nMFDT-01 FlashDrop User's Manual\n3AFE68591074 (inglés)\nOHDI-01 115/230 V Digital Input Module User's Manual\n3AUA0000003101 (inglés)\nOREL-01 Relay Output Extension Module User's\nManual\n3AUA0000001935 (inglés)\nOTAC-01 User's Manual Pulse Encoder Interface\nModule User's Manual\n3AUA0000001938 (inglés)\nRCAN-01 CANopen Adapter User's Manual\n3AFE64504231 (inglés)\nRCNA-01 ControlNet Adapter User's Manual\n3AFE64506005 (inglés)\nRDNA-01 DeviceNet Adapter User's Manual\n3AFE64504223 (inglés)\nRECA-01 EtherCAT Adapter Module User's Manual\n3AUA0000043520 (inglés)\nREPL-01 Ethernet POWERLINK Adapter Module\nUser's Manual\n3AUA0000052289 (inglés)\nREPL-02 Ethernet POWERLINK Adapter Module\nUser's Manual\n3AUA0000090411 (inglés)\nRETA-01 Ethernet Adapter Module User's Manual\n3AFE64539736 (inglés)\nRETA-02 Ethernet Adapter Module User's Manual\n3AFE68895383 (inglés)\nRPBA-01 PROFIBUS DP Adapter User's Manual\n3AFE64504215 (inglés)\nSREA-01 Ethernet Adapter User's Manual\n3AUA0000042896 (inglés)\nContenido típico\n· Seguridad\n· Instalación\n· Programación / puesta en marcha\n· Diagnósticos\n· Especificaciones técnicas\nMANUALES DE MANTENIMIENTO\nGuide for Capacitor Reforming in ACS50, ACS55,\nACS150, ACS310, ACS350, ACS355, ACS550, ACH550\nand R1-R4 OINT-/SINT-boards\n3AFE68735190 (inglés)\nManuales del ACS550-01\nCANopen es una marca registrada de CAN in Automation\ne.V.\nControlNet™ es una marca registrada de ODVA™\nDeviceNet™ es una marca registrada de ODVA™\nDRIVECOM es una marca registrada de DRIVECOM User\nGroup e.V.\nEtherCAT® es una marca registrada y una tecnología\npatentada de Beckhoff Automation GmbH, Alemania.\nEtherNet/IP™ es una marca registrada de ODVA™\nETHERNET POWERLINK es una marca registrada de\nBernecker + Rainer Industrie-ElektronikGes.m.b.H.\nModbus y Modbus/TCP son marcas registradas de\nSchneider Automation Inc.\nPROFIBUS, PROFIBUS DP y PROFINET IO son marcas\nregistradas de Profibus International.",
+      "tablas": [
+        [
+          [
+            "Kit, IP21 / UL tipo 1",
+            "Bastidor",
+            "Código (inglés)"
+          ],
+          [
+            "FMK-A-R1",
+            "R1",
+            "100000982"
+          ],
+          [
+            "FMK-A-R2",
+            "R2",
+            "100000984"
+          ],
+          [
+            "FMK-A-R3",
+            "R3",
+            "100000986"
+          ],
+          [
+            "FMK-A-R4",
+            "R4",
+            "100000988"
+          ],
+          [
+            "AC8-FLNGMT-R5 1",
+            "R5",
+            "ACS800-"
+          ],
+          [
+            "AC8-FLNGMT-R6 1",
+            "R6",
+            "PNTG01U-EN"
+          ]
+        ],
+        [
+          [
+            "Kit, IP54 / UL tipo 12",
+            "Bastidor",
+            "Código (inglés)"
+          ],
+          [
+            "FMK-B-R1",
+            "R1",
+            "100000990"
+          ],
+          [
+            "FMK-B-R2",
+            "R2",
+            "100000992"
+          ],
+          [
+            "FMK-B-R3",
+            "R3",
+            "100000994"
+          ],
+          [
+            "FMK-B-R4",
+            "R4",
+            "100000996"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Convertidores de frecuencia ACS550-01/U1\n0,75 ... 160 KW\n1 ... 200 CV\nManual del Usuario\nc2014 ABB Oy. Todos los derechos reservados.\n3AFE64783661 Rev H\nES\nEFECTIVO: 04/07/2014\nSUSTITUYE A: 3AFE64783661 Rev G 07/07/2009",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Manual del usuario del ACS550-01/U1\n5\nInstrucciones de seguridad\nUso de las advertencias y notas\nExisten dos tipos de instrucciones de seguridad en este manual:\n· Las notas llaman su atención acerca de un determinado estado o hecho, o\nfacilitan información acerca de un determinado aspecto.\n· Las advertencias le advierten acerca de estados que pueden ser causa de\ngraves lesiones físicas o muerte y/o daños en el equipo. También le aconsejan\nacerca del método para evitar tales peligros. Los símbolos de advertencia se\nemplean del siguiente modo:\nLa advertencia Electricidad previene de peligros relacionados con la electricidad\nque pueden causar lesiones físicas y/o daños al equipo.\n4\nLa advertencia General previene de situaciones que pueden causar lesiones\nfísicas y/o daños al equipo por otros medios no eléctricos.\n!\nSeguridad general\nADVERTENCIA: Siga estrictamente estas instrucciones. Si no se tienen en cuenta\nlas instrucciones, pueden producirse lesiones físicas o la muerte, o daños en el\nequipo.\n!\n· Utilice calzado de seguridad para evitar lesiones en los pies.\n· Manipule el convertidor con cuidado.\n· Cuidado con las superficies calientes. Algunas partes, como los disipadores,\nsiguen estando calientes durante algún tiempo tras la desconexión de la\nalimentación eléctrica. Véase el capítulo Datos técnicos en la página 283.\n· Mantenga el convertidor en su embalaje o protéjalo si no del polvo y las virutas\nresultantes de taladrar y pulir hasta su instalación. Proteja también el convertidor\nya instalado del polvo y las virutas. La presencia de restos conductores dentro\ndel convertidor puede causar daños o un funcionamiento inadecuado.\nSeguridad eléctrica\nADVERTENCIA: el convertidor de CA de velocidad ajustable ACS550 SÓLO\ndeberá ser instalado por un electricista cualificado.\n4\nInstrucciones de seguridad",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "6\nManual del usuario del ACS550-01/U1\nADVERTENCIA: incluso con el motor parado, existe una tensión peligrosa en los\nterminales del circuito de potencia U1, V1, W1 y U2, V2, W2 y, en función del\nbastidor, UDC+ y UDC-, o BRK+ y BRK -.\n4\nADVERTENCIA: existe una tensión peligrosa al conectar la alimentación de\nentrada. Tras desconectar la alimentación, espere como mínimo 5 minutos (para\nque se descarguen los condensadores del circuito intermedio) antes de retirar la\ncubierta.\nADVERTENCIA: incluso al desconectar la alimentación de los terminales de\nentrada del ACS550, es posible que exista una tensión peligrosa (procedente de\nfuentes externas) en los terminales de las salidas de relé SR1 ... SR3.\n4\nADVERTENCIA: cuando se conecten en paralelo los terminales de control de dos\no más convertidores, la tensión auxiliar de estas conexiones de control deberá\ntomarse de una fuente única, que puede ser uno de los convertidores o bien una\nfuente externa.\nADVERTENCIA: Si instala el convertidor en una red IT (sistema de alimentación sin\nconexión a tierra o con conexión a tierra de alta resistencia [superior a 30 ohmios]),\ndesconecte el filtro EMC interno; de lo contrario, el sistema se conectará al potencial\nde tierra a través de los condensadores del filtro EMC. Esto puede entrañar peligro\no provocar daños en el convertidor.\n4\nSi instala el convertidor en una red TN con conexión a tierra en un vértice,\ndesconecte el filtro EMC interno; de lo contrario, el sistema se conectará al potencial\nde tierra a través de los condensadores del filtro EMC. Esto puede provocar daños\nen el convertidor.\nNota: La desconexión del filtro EMC interno aumenta las emisiones conducidas y\nreduce considerablemente la compatibilidad EMC del convertidor.\nVéase el apartado Desconexión del filtro EMC interno en la página 27. Véanse\ntambién los apartados Sistema IT de la página 292 y Redes TN con conexión a\ntierra en un vértice de la página 291.\nADVERTENCIA: no intente instalar ni extraer los tornillos EM1, EM3, F1 o F2 mientras\nse suministra alimentación a los terminales de entrada del convertidor de frecuencia.\nInstrucciones de seguridad",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Manual del usuario del ACS550-01/U1\n7\nMantenimiento\nADVERTENCIA: El ACS550-01/U1 no puede repararse en el emplazamiento.\nNo intente nunca reparar un convertidor defectuoso; póngase en contacto con su\nrepresentante local de ABB para su sustitución.\n!\nControl del convertidor y el motor\nADVERTENCIA: no controle el motor con el dispositivo de desconexión (red); en\nlugar de ello, utilice las teclas de marcha y paro del panel de control\ny\n, o\nlas órdenes a través de la tarjeta de E/S del convertidor de frecuencia. El número\nmáximo permitido de ciclos de carga de los condensadores de CC (es decir, puestas\nen marcha al suministrar alimentación) es de cinco en diez minutos.\n!\nADVERTENCIA: El ACS550 se pone en marcha automáticamente tras una\ninterrupción de la tensión de entrada si el comando de marcha externa está\nactivado.\n!\nNota: Para obtener más información técnica, póngase en contacto con su\nrepresentante local de ABB.\nInstrucciones de seguridad",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "8\nManual del usuario del ACS550-01/U1\nInstrucciones de seguridad",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "ACS550-01/U1 Manual del Usuario\n9\nÍndice\nLista de manuales relacionados\nInstrucciones de seguridad\nUso de las advertencias y notas\n5\nSeguridad general\n5\nSeguridad eléctrica\n5\nMantenimiento\n7\nControl del convertidor y el motor\n7\nÍndice\nContenido del manual\nCompatibilidad\n13\nUso previsto\n13\nDestinatarios previstos\n13\nInstalación\nPasos de la instalación\n15\nPreparación de la instalación\n16\nInstalación del convertidor de frecuencia\n20\nPuesta en marcha, control a través de la E/S\ny Marcha de ID\nComo poner en marcha el convertidor\n39\nCómo controlar el convertidor a través de la interfase de E/S\n47\nCómo efectuar la Marcha de ID\n48\nPaneles de control\nAcerca de los paneles de control\n51\nCompatibilidad\n51\nPanel de control asistente\n52\nPanel de control básico\n72\nMacros de aplicación\nMacro Estándar ABB\n82\nMacro 3 hilos\n83\nMacro alterna\n84\nMacro de Potenciómetro del motor\n85\nMacro Manual-Auto\n86\nMacro de Control PID\n87\nMacro PFC\n88\nMacro de Control del par\n89\nEjemplos de conexión de sensores de dos hilos y tres hilos\n90\nConexión para obtener 0 ... 10 V de las salidas analógicas\n91\nÍndice",
+      "tablas": [
+        [
+          [
+            "Instrucciones de seguridad",
+            ""
+          ],
+          [
+            "Uso de las advertencias y notas",
+            "5"
+          ],
+          [
+            "Seguridad general",
+            "5"
+          ],
+          [
+            "Seguridad eléctrica",
+            "5"
+          ],
+          [
+            "Mantenimiento",
+            "7"
+          ],
+          [
+            "Control del convertidor y el motor",
+            "7"
+          ]
+        ],
+        [
+          [
+            "Contenido del manual",
+            ""
+          ],
+          [
+            "Compatibilidad",
+            "13"
+          ],
+          [
+            "Uso previsto\n:unselected:",
+            "13"
+          ],
+          [
+            "Destinatarios previstos",
+            "13"
+          ],
+          [
+            "Instalación",
+            ""
+          ],
+          [
+            "Pasos de la instalación",
+            "15"
+          ],
+          [
+            "Preparación de la instalación",
+            "16"
+          ],
+          [
+            "Instalación del convertidor de frecuencia",
+            "20"
+          ],
+          [
+            "Puesta en marcha, control a través de la E/S y Marcha de ID",
+            ""
+          ],
+          [
+            "Como poner en marcha el convertidor",
+            "39"
+          ],
+          [
+            "Cómo controlar el convertidor a través de la interfase de E/S",
+            "47"
+          ],
+          [
+            "Cómo efectuar la Marcha de ID",
+            "48"
+          ],
+          [
+            "Paneles de control",
+            ""
+          ],
+          [
+            "Acerca de los paneles de control",
+            "51"
+          ],
+          [
+            "Compatibilidad",
+            "51"
+          ],
+          [
+            "Panel de control asistente",
+            "52"
+          ],
+          [
+            "Panel de control básico",
+            "72"
+          ],
+          [
+            "Macros de aplicación",
+            ""
+          ],
+          [
+            "Macro Estándar ABB",
+            "82"
+          ],
+          [
+            "Macro 3 hilos",
+            "83"
+          ],
+          [
+            "Macro alterna",
+            "84"
+          ],
+          [
+            "Macro de Potenciómetro del motor",
+            "85"
+          ],
+          [
+            "Macro Manual-Auto",
+            "86"
+          ],
+          [
+            "Macro de Control PID",
+            "87"
+          ],
+          [
+            "Macro PFC",
+            "88"
+          ],
+          [
+            "Macro de Control del par",
+            "89"
+          ],
+          [
+            "Ejemplos de conexión de sensores de dos hilos y tres hilos",
+            "90"
+          ],
+          [
+            "Conexión para obtener 0 ... 10 V de las salidas analógicas",
+            "91"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "10\nACS550-01/U1 Manual del Usuario\nSeries de parámetros de usuario\n92\nValores por defecto de las macros para los parámetros\n93\nParámetros\nLista de parámetros completa\n95\nDescripciones completas de los parámetros\n109\nBus de campo encajado\nSinopsis\n205\nPlanificación\n206\nInstalación mecánica y eléctrica - BCE\n206\nConfiguración para la comunicación - BCE\n207\nActivación de las funciones de control del convertidor - BCE\n209\nRealimentación del convertidor - BCE\n214\nDiagnósticos - BCI\n215\nDatos técnicos del protocolo Modbus\n218\nDatos técnicos de los perfiles de control ABB\n227\nAdaptador de bus de campo\nSinopsis\n241\nPlanificación\n243\nInstalación mecánica y eléctrica - ABC\n244\nConfiguración para la comunicación - ABC\n245\nActivación de las funciones de control del convertidor - ABC\n245\nRealimentación del convertidor - ABC\n249\nDiagnósticos - ABC\n249\nDatos técnicos del perfil ABB Drives\n252\nDatos técnicos del perfil genérico\n260\nDiagnósticos\nIndicaciones de diagnóstico\n263\nCorrección de fallos\n264\nCorrección de alarmas\n271\nMantenimiento\nIntervalos de mantenimiento\n277\nDisipador\n277\nSustitución del ventilador principal\n278\nSustitución del ventilador interno del armario\n280\nCondensadores\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n281\nPanel de control\n281\nDatos técnicos\nEspecificaciones\n283\nConexiones de la alimentación de entrada\n287\nConexiones del motor\n295\nComponentes de frenado\n301\nConexiones de control\n306\nRendimiento\n307\nÍndice",
+      "tablas": [
+        [
+          [
+            "Series de parámetros de usuario",
+            "92"
+          ],
+          [
+            "Valores por defecto de las macros para los parámetros",
+            "93"
+          ],
+          [
+            "Parámetros",
+            ""
+          ],
+          [
+            "Lista de parámetros completa",
+            "95"
+          ],
+          [
+            "Descripciones completas de los parámetros",
+            "109"
+          ],
+          [
+            "Bus de campo encajado",
+            ""
+          ],
+          [
+            "Sinopsis",
+            "205"
+          ],
+          [
+            "Planificación",
+            "206"
+          ],
+          [
+            "Instalación mecánica y eléctrica - BCE",
+            "206"
+          ],
+          [
+            "Configuración para la comunicación - BCE",
+            "207"
+          ],
+          [
+            "Activación de las funciones de control del convertidor - BCE",
+            "209"
+          ],
+          [
+            "Realimentación del convertidor - BCE",
+            "214"
+          ],
+          [
+            "Diagnósticos - BCI",
+            "215"
+          ],
+          [
+            "Datos técnicos del protocolo Modbus\n:unselected:",
+            "218"
+          ],
+          [
+            "Datos técnicos de los perfiles de control ABB",
+            "227"
+          ],
+          [
+            "Adaptador de bus de campo",
+            ""
+          ],
+          [
+            "Sinopsis",
+            "241"
+          ],
+          [
+            "Planificación",
+            "243"
+          ],
+          [
+            "Instalación mecánica y eléctrica - ABC",
+            "244"
+          ],
+          [
+            "Configuración para la comunicación - ABC",
+            "245"
+          ],
+          [
+            "Activación de las funciones de control del convertidor - ABC",
+            "245"
+          ],
+          [
+            "Realimentación del convertidor - ABC",
+            "249"
+          ],
+          [
+            "Diagnósticos - ABC",
+            "249"
+          ],
+          [
+            "Datos técnicos del perfil ABB Drives",
+            "252"
+          ],
+          [
+            "Datos técnicos del perfil genérico",
+            "260"
+          ],
+          [
+            "Diagnósticos",
+            ""
+          ],
+          [
+            "Indicaciones de diagnóstico",
+            "263"
+          ],
+          [
+            "Corrección de fallos",
+            "264"
+          ],
+          [
+            "Corrección de alarmas",
+            "271"
+          ],
+          [
+            "Mantenimiento",
+            ""
+          ],
+          [
+            "Intervalos de mantenimiento",
+            "277"
+          ],
+          [
+            "Disipador",
+            "277"
+          ],
+          [
+            "Sustitución del ventilador principal",
+            "278"
+          ],
+          [
+            "Sustitución del ventilador interno del armario",
+            "280"
+          ],
+          [
+            "Condensadores . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+            ". . . . . . 281"
+          ],
+          [
+            "Panel de control",
+            "281"
+          ],
+          [
+            "Datos técnicos",
+            ""
+          ],
+          [
+            "Especificaciones",
+            "283"
+          ],
+          [
+            "Conexiones de la alimentación de entrada",
+            "287"
+          ],
+          [
+            "Conexiones del motor",
+            "295"
+          ],
+          [
+            "Componentes de frenado\n:unselected:",
+            "301"
+          ],
+          [
+            "Conexiones de control\n:unselected:",
+            "306"
+          ],
+          [
+            "Rendimiento",
+            "307"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "ACS550-01/U1 Manual del Usuario\n11\nPérdidas, datos de refrigeración y ruido\n308\nDimensiones y pesos\n310\nGrados de protección\n313\nCondiciones ambientales\n313\nMateriales\n314\nNormas aplicables\n316\nMarcado\n316\nDefiniciones de IEC/EN 61800-3:2004\n318\nCumplimiento de la norma IEC/EN 61800-3:2004 +A1:2012\n319\nÍndice alfabético\nInformación adicional\nConsultas sobre productos y servicios\n333\nFormación sobre productos\n333\nComentarios acerca de los manuales de convertidores ABB\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n333\nBiblioteca de documentos en Internet\n333\nÍndice",
+      "tablas": [
+        [
+          [
+            "Pérdidas, datos de refrigeración y ruido",
+            "308"
+          ],
+          [
+            "Dimensiones y pesos",
+            "310"
+          ],
+          [
+            "Grados de protección",
+            "313"
+          ],
+          [
+            "Condiciones ambientales\n:unselected:",
+            "313"
+          ],
+          [
+            "Materiales",
+            "314"
+          ],
+          [
+            "Normas aplicables",
+            "316"
+          ],
+          [
+            "Marcado",
+            "316"
+          ],
+          [
+            "Definiciones de IEC/EN 61800-3:2004",
+            "318"
+          ],
+          [
+            "Cumplimiento de la norma IEC/EN 61800-3:2004 +A1:2012",
+            "319"
+          ],
+          [
+            "Índice alfabético",
+            ""
+          ],
+          [
+            "Información adicional",
+            ""
+          ],
+          [
+            "Consultas sobre productos y servicios",
+            "333"
+          ],
+          [
+            "Formación sobre productos",
+            "333"
+          ],
+          [
+            "Comentarios acerca de los manuales de convertidores ABB . . . . . .",
+            ". . . . . . 333"
+          ],
+          [
+            "Biblioteca de documentos en Internet",
+            "333"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "12\nACS550-01/U1 Manual del Usuario\nÍndice",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "ACS550-01/U1 User's Manual\n13\nContenido del manual\nCompatibilidad\nEste manual hace referencia a los convertidores ACS550-01/U1. El manual es\ncompatible con la versión de firmware 3.14e o posterior del convertidor de\nfrecuencia ACS550-01/U1. Véase el parámetro 3301 VERSION DE FW en la\npágina 158.\nUso previsto\nEl ACS550-01/U1 es un convertidor de propósito general. Las macros sólo se deben\naplicar a las aplicaciones definidas en las secciones respectivas.\nDestinatarios previstos\nEste manual se destina a los encargados de instalar, poner en marcha, utilizar\ny realizar el servicio del convertidor de frecuencia. Lea el manual antes de realizar\ntareas en el convertidor de frecuencia. Se presupone que el lector conoce los\nfundamentos relativos a la electricidad, las conexiones eléctricas, los componentes\neléctricos y los símbolos esquemáticos eléctricos.\nContenido del manual",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "14\nACS550-01/U1 User's Manual\nContenido del manual",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Manual del usuario del ACS550-01/U1\n15\nInstalación\nLea atentamente estas instrucciones de instalación antes de continuar. La inobservancia\nde las advertencias e instrucciones podría provocar un fallo o suponer un peligro\npersonal.\nADVERTENCIA: Antes de empezar, lea el apartado Instrucciones de seguridad en\nla página 5.\nNota: La instalación debe diseñarse y efectuarse siempre conforme a las leyes y la\nnormativa vigentes. ABB no asume ninguna responsabilidad del tipo que sea por\nuna instalación que incumpla las leyes locales u otras normativas. Además, si no se\nrespetan las recomendaciones efectuadas por ABB, es posible que el convertidor de\nfrecuencia presente anomalías que no cubre la garantía.\nPasos de la instalación\nLa instalación del accionamiento de CA de velocidad ajustable ACS550 incluye\nestos pasos: los pasos deben seguirse en el orden indicado. A la derecha de cada\nuno de los pasos figuran referencias relativas a la información detallada que se\nrequiere para la correcta instalación del convertidor de frecuencia.\nTarea\nPREPARACIÓN de la instalación\nPREPARACIÓN del lugar de montaje\nRETIRADA de la cubierta anterior\nMONTAJE del convertidor\nINSTALACIÓN del cableado\nCOMPROBACIÓN de la instalación\nREINSTALACIÓN de la cubierta\nARRANQUE\nVéase\nPreparación de la instalación en la página 16\nPreparación del lugar de montaje en la página 20\nRetire la cubierta anterior en la página 21\nMonte el convertidor de frecuencia en la página 22\nSinopsis del cableado en la página 23 y\nInstalación del cableado en la página 30\nComprobación de la instalación en la página 36\nReinstalación de la cubierta en la página 37\nCómo poner en marcha el convertidor en la página 39\nInstalación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Manual del usuario del ACS550-01/U1\n16\nPreparación de la instalación\nLevantamiento del convertidor\nLevante el convertidor sólo por\nel chasis de metal.\nDesembalaje del convertidor\n1. Desembale el convertidor de\nfrecuencia.\n2. Compruebe si existen daños y, en\ncaso de detectar componentes\ndañados, notifíquelo\ninmediatamente al transportista.\nIP2040\n3. Verifique el contenido consultando el pedido y la etiqueta de envío para verificar que\nse han recibido todas las piezas.\nIdentificación del convertidor de frecuencia\nEtiquetas del convertidor\nPara determinar el tipo de convertidor que está instalando, véase:\n· la etiqueta de número de serie pegada a la parte superior de la placa de\nreactancia entre los orificios de montaje, o\nDesignación de tipo\nNúmero de serie\n· la etiqueta de designación de tipo pegada al disipador - en la parte derecha de la\ncubierta del convertidor. A continuación se facilitan dos ejemplos de la etiqueta\nde designación de tipo.\nDesignación de tipo\nNúmero de serie\nNúmero de serie\n- Designación de tipo\nInstalación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Manual del usuario del ACS550-01/U1\n17\nLas etiquetas contienen información sobre la Designación de tipo (página 17),\nEspecificaciones y bastidor (página 17), Número de serie (página 17), el grado de\nprotección (véase también Grados de protección en la página 313) y marcas válidas\n(véase también Marcado en la página 316).\nDesignación de tipo\nUtilice el esquema siguiente para interpretar la designación de tipo que aparece\ntanto en el adhesivo de designación de tipo como en el de número de serie.\nACS550-01-08A8-4+J404+ ..\nCA, convertidor estándar - serie de producto 550-\nEstructura (específica de la región)\n01 = Ajuste y piezas específicos para instalación y cumplimiento IEC\nU1 = Ajuste y piezas específicos para instalación USA y cumplimiento NEMA\nEspecificación de intensidad de salida\npor ej., 08A8 = 8,8 A, véase el apartado Especificaciones en la página\n283 para más información\nEspecificación de tensión\n2 = 208 ... 240 V CA\n4 = 380 ... 480 V CA\n6 = 500 ... 600 V CA\nOpciones\nEjemplos de opciones:\nB055 = IP 54 / UL tipo 12 (sin especificación = IP 21 / UL tipo 1).\nUL tipo 12 no está disponible para el tipo ACS550-01-290A-4.\nOJ400 = Sin panel de control\nJ404 = ACS-CP-C Panel de control básico\nL511 = OREL-01 Extensión de salida de relés\nK451 = RDNA-01 DeviceNet\nK454 = RPBA-01\nPROFIBUS DP\nEspecificaciones y bastidor\nLa tabla del apartado Especificaciones en la página 283 enumera las\nespecificaciones técnicas e identifica el bastidor del convertidor: algo significativo,\ndado que algunas instrucciones de este documento varían en función del bastidor\ndel convertidor. Para leer la tabla de especificaciones, necesita la entrada\n\"Especificación de intensidad de salida\" tomada de la designación de tipo.\nAsimismo, al utilizar la tabla de especificaciones, tenga en cuenta que dicha tabla\nestá desglosada en apartados basados en la \"Especificación de tensión\" del\nconvertidor de frecuencia.\nNúmero de serie\nA continuación se describe el formato del número de serie del convertidor mostrado\nen las etiquetas.\nEl número de serie tiene el formato CYYWWXXXXX, donde\nC:\nPaís de fabricación\nYY:\nAño de fabricación\nWW:\nSemana de fabricación; 01, 02, 03, ... para la semana 1, semana 2, semana 3, ...\nXXXXX: Un entero que comienza cada semana a partir del 00001.\nInstalación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "18\nManual del usuario del ACS550-01/U1\nCompatibilidad del motor\nEl motor, el convertidor de frecuencia y la alimentación deben ser compatibles:\nEspecificación del\nmotor\nVerifique\nReferencia\nTipo de motor\nMotor de inducción\ntrifásico\n–\nIntensidad nominal\nEl valor del motor se\nencuentra dentro de este\nrango: 0,2 ... 2,0 · /2hd\n(/2hd = intensidad en\ntrabajo pesado del\nconvertidor)\n· Etiqueta de designación de tipo en el\nconvertidor, datos bajo Salida/2hd, 0\n· Designación en el convertidor y\nespecificaciones en el capítulo Datos técnicos\nen la página 283.\nFrecuencia nominal\n10 ... 500 Hz\n–\nRango de\ntensiones\nEl motor es compatible con\nel rango de tensiones del\nACS550.\n208 ... 240 V (para ACS550-X1-XXXX-2) o\n380 ... 480 V (para ACS550-X1-XXXX-4) o\n500 ... 600 V (para ACS550-U1-XXXX-6)\nAislamiento\nConvertidores de 500 ... 600\nV: El motor cumple NEMA\nMG1 Parte 31, o bien se\nemplea un filtro du/dt entre el\nmotor y el convertidor de\nfrecuencia.\nPara ACS550-U1-XXXX-6\nHerramientas necesarias\nPara instalar el ACS550 necesitará lo siguiente:\n· destornilladores (adecuados para los elementos de montaje utilizados)\n· pelador de cable\n· cinta métrica\n· taladro\n. para instalaciones relativas al ACS550-U1, los bastidores R5 o R6 y los armarios IP\n54 / UL tipo 12: un punzón para crear orificios para el montaje de los conductos\n· para instalaciones relativas al ACS550-U1, bastidor R6: la herramienta\nengarzadora apropiada para los terminales del cable de potencia. Véase el\napartado Consideraciones sobre los terminales de alimentación - Bastidor R6 en\nla página 293.\n· equipo de montaje: tornillos o tuercas y pernos, cuatro de cada. El tipo de equipo\ndepende de la superficie de montaje y del bastidor. Para las dimensiones y pesos\nde los bastidores, véase Dimensiones y pesos en la página 310.\nBastidor\nEquipo de montaje\nR1 ... R4\nM5\n#10\nR5\nM6\n1/4 pulg.\nR6\nM8\n5/16\npulg.\nInstalación",
+      "tablas": [
+        [
+          [
+            "Especificación del motor",
+            "Verifique",
+            "Referencia"
+          ],
+          [
+            "Tipo de motor",
+            "Motor de inducción trifásico",
+            "–"
+          ],
+          [
+            "Intensidad nominal",
+            "El valor del motor se encuentra dentro de este rango: 0,2 ... 2,0 · /2hd (/2hd = intensidad en trabajo pesado del convertidor)",
+            "· Etiqueta de designación de tipo en el convertidor, datos bajo Salida/2hd, 0 · Designación en el convertidor y especificaciones en el capítulo Datos técnicos en la página 283."
+          ],
+          [
+            "Frecuencia nominal",
+            "10 ... 500 Hz",
+            "–"
+          ],
+          [
+            "Rango de tensiones",
+            "El motor es compatible con el rango de tensiones del ACS550.",
+            "208 ... 240 V (para ACS550-X1-XXXX-2) o 380 ... 480 V (para ACS550-X1-XXXX-4) o 500 ... 600 V (para ACS550-U1-XXXX-6)\n:selected:"
+          ],
+          [
+            "Aislamiento",
+            "Convertidores de 500 ... 600 V: El motor cumple NEMA MG1 Parte 31, o bien se emplea un filtro du/dt entre el motor y el convertidor de frecuencia.",
+            "Para ACS550-U1-XXXX-6"
+          ]
+        ],
+        [
+          [
+            "Bastidor",
+            "Equipo de montaje"
+          ],
+          [
+            "R1 ... R4",
+            "M5",
+            "#10"
+          ],
+          [
+            "R5",
+            "M6",
+            "1/4 pulg."
+          ],
+          [
+            "R6",
+            "M8",
+            "5/16 pulg."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Manual del usuario del ACS550-01/U1\n19\nEntorno adecuado y armario\nVerifique que el emplazamiento satisfaga los requisitos ambientales. Para evitar\ndaños antes de la instalación, guarde y transporte el convertidor de frecuencia de\nconformidad con los requisitos ambientales especificados para el almacenamiento y\nel transporte. Véase el apartado Condiciones ambientales en la página 313.\nAsegúrese de que el armario sea apropiado en función del nivel de contaminación\ndel emplazamiento:\n· Armario IP 21 / UL tipo 1: el emplazamiento debe estar libre de polvo en\nsuspensión, líquidos o gases corrosivos y contaminantes conductores como\ngoteo de agua, condensación, polvo de carbón y partículas metálicas.\n· Armario IP 54 / UL tipo 12: este armario facilita protección del polvo en\nsuspensión y de agua rociada o salpicada desde cualquier dirección.\n· Si por alguna razón es necesario instalar un convertidor IP 21 sin la caja de\nconducción o la cubierta, o un convertidor IP 54 sin la placa de conducción o la\ntapa, consulte la nota en el capítulo Datos técnicos, en la página 318.\nUbicación de montaje adecuada\nVerifique que la ubicación de montaje cumpla los criterios siguientes:\n· El convertidor debe montarse verticalmente sobre una superficie lisa y sólida y en\nun entorno adecuado como el que se ha definido anteriormente. Para una\ninstalación en posición horizontal, póngase en contacto con su representante\nlocal de ABB para más información.\n· Los requisitos mínimos de espacio para el convertidor son las dimensiones\nexteriores (véase el apartado Dimensiones exteriores en la página 311), más el\nespacio para la circulación de aire alrededor del convertidor (véase el apartado\nPérdidas, datos de refrigeración y ruido en la página 308).\n· La distancia entre el motor y el convertidor de frecuencia está limitada por la\nlongitud máxima del cable de motor. Véase el apartado Especificaciones de la\nconexión del motor en la página 295.\n· La ubicación de montaje debe poder soportar el peso moderado del convertidor.\nVéase el apartado Peso en la página 312.\nInstalación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "20\nManual del usuario del ACS550-01/U1\nInstalación del convertidor de frecuencia\nADVERTENCIA: antes de instalar el ACS550, compruebe que la alimentación de\nentrada del convertidor de frecuencia esté desconectada.\nPara montaje con brida (montaje del convertidor en un conducto de aire de\nrefrigeración), véanse las instrucciones adecuadas sobre Montaje con brida:\nBastidor\nIP 21 / UL tipo 1\nIP 54 / UL tipo 12\nKit\nCódigo (inglés)\nKit\nCódigo (inglés)\nR1\nFMK-A-R1\n100000982\nFMK-B-R1\n100000990\nR2\nFMK-A-R2\n100000984\nFMK-B-R2\n100000992\nR3\nFMK-A-R3\n100000986\nFMK-B-R3\n100000994\nR4\nFMK-A-R4\n100000988\nFMK-B-R4\n100000996\nR5\nAC8-FLNGMT-R5 1\nACS800-PNTG01U-EN\n-\n-\nR6\nAC8-FLNGMT-R6 1\n-\n-\n1. No disponible en la serie ACS550-01.\nPreparación del lugar de montaje\nEl ACS550 sólo deberá montarse en un lugar en el que\nse satisfagan todos los requisitos definidos en el\napartado Preparación de la instalación en la página 16.\n1. Señale la posición de los orificios de montaje mediante\nla plantilla de montaje que se suministra con el\nconvertidor de frecuencia.\n2. Practique los orificios con un taladro.\n1\nX0002\nNota: los bastidores R3 y R4 tienen cuatro orificios a lo largo de la parte superior.\nUtilice solamente dos. En la medida de lo posible, utilice los dos orificios exteriores\n(para dejar espacio para la extracción del ventilador con fines de mantenimiento).\nNota: los convertidores de frecuencia ACS400 pueden sustituirse empleando los\norificios de montaje originales. Para bastidores R1 y R2, los orificios de montaje son\nidénticos. Para bastidores R3 y R4, los orificios de montaje interiores en la parte\nsuperior de los convertidores de frecuencia ACS550 concuerdan con los puntos de\nmontaje del ACS400.\nInstalación",
+      "tablas": [
+        [
+          [
+            "Bastidor",
+            "IP 21 / UL tipo 1",
+            "IP 54 / UL tipo 12"
+          ],
+          [
+            "Kit",
+            "Código (inglés)",
+            "Kit",
+            "Código (inglés)"
+          ],
+          [
+            "R1",
+            "FMK-A-R1",
+            "100000982",
+            "FMK-B-R1",
+            "100000990"
+          ],
+          [
+            "R2",
+            "FMK-A-R2",
+            "100000984",
+            "FMK-B-R2",
+            "100000992"
+          ],
+          [
+            "R3",
+            "FMK-A-R3",
+            "100000986",
+            "FMK-B-R3",
+            "100000994"
+          ],
+          [
+            "R4",
+            "FMK-A-R4",
+            "100000988",
+            "FMK-B-R4",
+            "100000996"
+          ],
+          [
+            "R5",
+            "AC8-FLNGMT-R5 1",
+            "ACS800-PNTG01U-EN",
+            "-",
+            "-"
+          ],
+          [
+            "R6",
+            "AC8-FLNGMT-R6 1",
+            "-",
+            "-"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Manual del usuario del ACS550-01/U1\n21\nRetire la cubierta anterior\n8\n3\nIP 21 / UL tipo 1\n1. Retire el panel de control, si está montado.\n2\n2. Afloje el tornillo cautivo en la parte superior.\n3. Tire cerca de la parte superior para retirar la\ncubierta.\n1\nO\nIP 54 / UL tipo 12\nR6\nR1 ... R5\nIP2000\n1. Si existe una tapa: retire los tornillos\n(2) que sostienen la tapa.\n2. Si existe una tapa: deslice la tapa\nhacia arriba y retirela de la cubierta.\n3. Afloje los tornillos cautivos alrededor\ndel borde de la cubierta.\n4. Retire la cubierta.\n1\n1\n200\n2\n3\n4\nFM\nInstalación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "22\nManual del usuario del ACS550-01/U1\nMonte el convertidor de frecuencia\n1\nIP 21 / UL tipo 1\n1. Coloque el ACS550 sobre los tornillos o pernos de\nmontaje y apriete firmemente las cuatro esquinas.\nNota: levante el ACS550 por el chasis metálico\n(el bastidor R6 por los orificios para levantamiento\na ambos lados en la parte superior).\n2\n2. En los países en que el inglés no sea el idioma oficial,\npegue una etiqueta de advertencia en el idioma\napropiado sobre la advertencia existente en la parte\nsuperior del módulo.\nIP2002\nIP 54 / UL tipo 12\nPara los armarios IP 54 / UL tipo 12, se requieren tapones de goma en los orificios\nproporcionados para acceder a las ranuras de montaje del convertidor de frecuencia.\n1. Cuando sea necesario disponer de acceso, retire los\ntapones de goma. Presione los tapones hacia fuera\ndesde la parte posterior del convertidor de frecuencia.\n3\n2. R5 y R6: alinee la tapa de lámina de metal (no\nmostrada) delante de los orificios de montaje\nsuperiores del convertidor. (Montar como parte del\npaso siguiente).\n1, 4\n3. Coloque el ACS550 sobre los tornillos o pernos de\nmontaje y apriete firmemente las cuatro esquinas.\n5\nNota: levante el ACS550 por su chasis metálico (el\nbastidor R6 por los orificios para levantamiento a\nambos lados en la parte superior).\n4. Vuelva a instalar los tapones de goma.\n5. En los países en que el inglés no sea el idioma oficial, pegue una etiqueta de\nadvertencia en el idioma apropiado sobre la advertencia existente en la parte\nsuperior del módulo.\nFM\nInstalación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Manual del usuario del ACS550-01/U1\n23\nSinopsis del cableado\nConducto/kit de pasacables\nEl cableado de convertidores con el armario IP21 / UL tipo 1 requiere un conducto/\nkit de pasacables con los elementos siguientes:\n· conducto/caja de pasacables\n· cinco (5) abrazaderas de cable (sólo ACS550-01)\n· tornillos\n· cubierta.\nEl kit se incluye con los armarios IP 21 / UL tipo 1.\nRequisitos del cableado\nADVERTENCIA: compruebe que el motor sea compatible para el uso con el\nACS550. El convertidor debe ser instalado por una persona competente de\nconformidad con las consideraciones definidas en el apartado Preparación de la\ninstalación en la página 16. En caso de duda, póngase en contacto con su\nrepresentante local de ABB.\n4\nAl instalar el cableado, tenga en cuenta lo siguiente:\n· Existen cuatro juegos de instrucciones de cableado: un juego para cada combinación\nde tipo de armario del convertidor (IP 21 / UL tipo 1 e IP 54 / UL tipo 12), y tipo de\ncableado (conducto o cable). Deberá seleccionar el procedimiento apropiado.\n· Determine los requisitos de cumplimiento electromagnético (EMC) según la\nnormativa local. Véase el apartado Requisitos del cable de motor para el\ncumplimiento de la normativa CE y C-Tick en la página 299. En general:\n- Cumpla la normativa local en cuanto al tamaño de los cables.\n- Mantenga estas cuatro clases de cableado separadas: cableado de\nalimentación de entrada, cableado del motor, cableado de control/\ncomunicaciones y cableado de la unidad de frenado.\n· Al instalar el cableado de alimentación de entrada y del motor, consulte lo\nsiguiente si procede:\nTerminal\nDescripción\nEspecificaciones y notas\nU1, V1, W11\nEntrada de alimentación\ntrifásica\nConexiones de la alimentación de entrada en la\npágina 287\nPE\nTierra de protección\nConexiones a tierra en la página 291\nU2, V2, W2\nSalida de potencia a motor\nConexiones del motor en la página 295\n1 EI ACS550 -x1-xxxx-2 (serie 208 ... 240 V) puede utilizarse con una alimentación monofásica si\nla intensidad de salida se derratea en un 50%. Para una tensión de alimentación monofásica,\nconecte la alimentación en U1 y W1.\n· Para localizar los terminales de alimentación de entrada y conexión al motor,\nvéase el apartado Diagramas de conexiones de alimentación en la página 25.\nPara obtener las especificaciones sobre los terminales de alimentación, véase el\nInstalación",
+      "tablas": [
+        [
+          [
+            "Terminal",
+            "Descripción",
+            "Especificaciones y notas"
+          ],
+          [
+            "U1, V1, W11",
+            "Entrada de alimentación trifásica",
+            "Conexiones de la alimentación de entrada en la página 287"
+          ],
+          [
+            "PE",
+            "Tierra de protección",
+            "Conexiones a tierra en la página 291"
+          ],
+          [
+            "U2, V2, W2",
+            "Salida de potencia a motor",
+            "Conexiones del motor en la página 295"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "24\nManual del usuario del ACS550-01/U1\napartado Terminales de conexión de alimentación del convertidor en la\npágina 292.\n· Para redes TN con conexión a tierra en un vértice, véase el apartado Redes TN\ncon conexión a tierra en un vértice en la página 291.\n· Para redes IT, véase el apartado Sistema IT en la página 292.\n· Para el bastidor R6, véase el apartado Consideraciones sobre los terminales de\nalimentación - Bastidor R6 en la página 293 para instalar los terminales de cable\napropiados.\n· Para los convertidores de frecuencia que utilicen frenado (opcional), consulte lo\nsiguiente si procede:\nBastidor\nTerminal\nDescripción\nAccesorio de frenado\nR1, R2\nBRK+, BRK-\nResistencia de\nfrenado\nResistencia de frenado. Véase el\napartado Componentes de frenado\nen la página 301.\nR3, R4, R5, R6\nUDC+, UDC-\nBus de CC\nPóngase en contacto con su\nrepresentante de ABB para encargar:\n· unidad de frenado o\n· chopper y resistencia\n· Al instalar el cableado de control, consulte los siguientes capítulos o apartados, si\nprocede:\n- Tabla de terminales de control en la página 28\n- Conexiones de control en la página 306\n- Macros de aplicación en la página 81\n- Descripciones completas de los parámetros en la página 109\n- Bus de campo encajado en la página 205\n- Adaptador de bus de campo en la página 241.\nInstalación",
+      "tablas": [
+        [
+          [
+            "Bastidor",
+            "Terminal",
+            "Descripción",
+            "Accesorio de frenado"
+          ],
+          [
+            "R1, R2",
+            "BRK+, BRK-",
+            "Resistencia de frenado",
+            "Resistencia de frenado. Véase el apartado Componentes de frenado en la página 301."
+          ],
+          [
+            "R3, R4, R5, R6",
+            "UDC+, UDC-",
+            "Bus de CC",
+            "Póngase en contacto con su representante de ABB para encargar: · unidad de frenado o · chopper y resistencia"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Manual del usuario del ACS550-01/U1\n25\nDiagramas de conexiones de alimentación\nEl diagrama siguiente muestra la disposición de los terminales para el bastidor R3,\nque en general, se aplica a los bastidores R1 ... R6, exceptuando los terminales de\nalimentación y conexión a tierra de R5/R6.\nJ1 - Conmutadores DIP para entradas analógicas (dos tipos posibles)\nJ1\nJ1\nEl diagrama muestra\nel bastidor R3.\nOtros bastidores presentan\ndisposiciones similares.\nON\nEA1: (en posición de tensión)\nEA2: (en posición de intensidad)\n1 2\nON\nON\nN\nConector del panel\nX1 - Entradas y salidas analógicas\n(y salida de tensión de ref. 10 V)\nINTERNA\nFAN\n..\no\nX1 - Entradas digitales\n(y salida de tensión aux. 24 V)\n000000000\n000000000\nOpción FlashDrop\nLED de alimentación (verde)\nLED de fallo (rojo)\nX1 - Salidas de relé\nWarning! Dangerous Voltage\nWait 5 minutes after\ndeconnecting\nsupply before\nproceeding\na User's Marwal\n000 000 000\nSLOT 1]\nJ2 - Conmutador DIP\npara terminación RS485\nMódulo opcional 1\nJ2\nJ2\nON\nO\nSLOT 2\n-\nX1 - Comunicaciones\n(RS485)\nON\npos. desc.\npos. conec.\nMódulo opcional 2\nBastidores\nR5/R6 difieren.\nVéase\nla página siguiente\nEntrada de\npotencia\n(U1, V1, W1)\nEM1\n00\n00\n23\nSalida de potencia a motor\n(U2, V2, W2)\n23\n0\nEM3\nGND\nPE\nPEO\nO\n3AUA0000001571\nFrenado opcional\nBastidor\nEtiquetas de\nterminal\nOpciones de freno\nR1, R2\nBRK+, BRK-\nResistencia de frenado\nR3, R4\nUDC+, UDC-\n· Unidad de frenado\n· Chopper y resistencia\nADVERTENCIA: Para evitar peligros o daños al convertidor, en redes IT y redes TN\ncon conexión a tierra en un vértice, véase el apartado Desconexión del filtro EMC\ninterno en la página 27.\n4\nInstalación",
+      "tablas": [
+        [
+          [
+            "Frenado opcional"
+          ],
+          [
+            "Bastidor",
+            "Etiquetas de terminal",
+            "Opciones de freno"
+          ],
+          [
+            "R1, R2",
+            "BRK+, BRK-",
+            "Resistencia de frenado"
+          ],
+          [
+            "R3, R4",
+            "UDC+, UDC-",
+            "· Unidad de frenado · Chopper y resistencia"
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "26\nManual del usuario del ACS550-01/U1\nEl diagrama siguiente muestra la disposición de los terminales de potencia y tierra\npara los bastidores R5 y R6.\nR5\nR6\nF2\n(O\nF1\n10 0 0!\nA\n000000000 000000000\n9\n000 000\nF2\n00000\nInternal Fan\nO\n00\nO\nPE\nGND\nGND\nX0011\nEntrada de potencia\n(U1, V1, W1)\nSalida de potencia a motor\n(U2, V2, W2)\nF1\nFrenado opcional\nBastidor\nEtiquetas de\nterminal\nOpciones de freno\nR5, R6\nUDC+, UDC-\n· Unidad de frenado\n•\nChopper\ny resistencia\nU1\nFilter Connection 1\nO\nUDC+\nR.\nR+ UDC- U2 V2 W2\nPE\nGND\nX0013\nEntrada de potencia\n(U1, V1, W1)\nSalida de potencia a motor\n(U2, V2, W2)\nADVERTENCIA: Para evitar peligros o daños al convertidor, en redes IT y redes TN\ncon conexión a tierra en un vértice, véase el apartado Desconexión del filtro EMC\ninterno en la página 27.\n4\nInstalación",
+      "tablas": [
+        [
+          [
+            "Frenado opcional"
+          ],
+          [
+            "",
+            "Bastidor",
+            "Etiquetas de terminal",
+            "Opciones de freno"
+          ],
+          [
+            "",
+            "R5, R6",
+            "UDC+, UDC-",
+            "· Unidad de frenado • Chopper y resistencia"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Manual del usuario del ACS550-01/U1\n27\nDesconexión del filtro EMC interno\nEn ciertos tipos de sistemas, se debe desconectar el filtro EMC interno, en caso\ncontrario, el sistema se conectará al potencial de tierra a través de los\ncondensadores del filtro EMC, lo cual puede entrañar peligro o dañar el convertidor.\nNota: La desconexión del filtro EMC interno aumenta las emisiones conducidas y\nreduce considerablemente la compatibilidad EMC del convertidor.\nLa tabla siguiente muestra las reglas de instalación de los tornillos del filtro EMC\npara conectar o desconectar el filtro, en función del tipo de red y del tamaño de\nbastidor. Para más información sobre los diferentes tipos de sistema, véase Sistema\nIT en la página 292 y Redes TN con conexión a tierra en un vértice en la página 291.\nEn el diagrama de la página 25 se muestra la ubicación de los tornillos EM1 y EM3.\nEn el diagrama de la página 26 se muestra la ubicación de los tornillos F1 y F2.\nBastidores\nTornillo\nSistemas TN\nconectados a tierra\ncon estructura\nsimétrica (sistemas\nTN-S)\nSistema TN\nconectado a\ntierra en ángulo\nSistemas IT (sin conexión\na tierra o con conexión a\ntierra de alta resistencia\n[> 30 ohmios])\nR1 ... R3\nEM1\nx\nx\nEM31\nx\n.\nR4\nEM1\nx\nx\n–\nEM31\nx\n–\n–\nR5 ... R6\nF1\nx\nx\n–\nF2\nx\nx\n–\nX = Instale el tornillo. (Se conectará el filtro EMC.)\n· = Sustituya el tornillo por el tornillo de poliamida proporcionado. (Se desconectará el filtro EMC).\n- = Extraiga el tornillo. (Se desconectará el filtro EMC.)\n1 Los convertidores ACS550-U1 se envían con tornillos EM3 ya montados.\nInstalación",
+      "tablas": [
+        [
+          [
+            "Bastidores",
+            "Tornillo",
+            "Sistemas TN conectados a tierra con estructura simétrica (sistemas TN-S)",
+            "Sistema TN conectado a tierra en ángulo",
+            "Sistemas IT (sin conexión a tierra o con conexión a tierra de alta resistencia [> 30 ohmios])"
+          ],
+          [
+            "R1 ... R3",
+            "EM1",
+            "x\n:selected:",
+            "x\n:selected:",
+            ""
+          ],
+          [
+            "EM31",
+            "x\n:selected:",
+            ".",
+            ":selected:"
+          ],
+          [
+            "R4",
+            "EM1",
+            "x\n:selected:",
+            "x\n:selected:",
+            "–\n:unselected:"
+          ],
+          [
+            "EM31",
+            "x\n:selected:",
+            "–",
+            "–\n:unselected:"
+          ],
+          [
+            "R5 ... R6",
+            "F1",
+            "x\n:selected:",
+            "x\n:selected:",
+            "–\n:unselected:"
+          ],
+          [
+            "F2",
+            "x\n:selected:",
+            "x\n:selected:",
+            "–\n:unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "28\nManual del usuario del ACS550-01/U1\nTabla de terminales de control\nA continuación se facilita información para conectar el cableado de control en X1 en\nel convertidor de frecuencia.\nX1\nDescripción del hardware\nE/S analógica\n1\nSCR\nTerminal para la pantalla del cable de señal (apantallamiento). (Conectado\ninternamente a tierra del chasis).\n2\nEA1\nCanal 1 de entrada analógica, programable. Por defecto2 = referencia de\nfrecuencia. Resolución 0,1%, exactitud +1%.\nEs posible utilizar dos tipos distintos de conmutador DIP.\nJ1: EA1 OFF: 0 ... 10 V (Ri = 312 kohmios)\nON\n1\nON\nJ1: EA1 ON: 0 ... 20 mA (Ri = 100 ohmios)\nON\n1\nON\n3\nAGND\nCircuito de entrada analógica común (conectado internamente a tierra del chasis a\ntravés de 1 Mohmio).\n4\n+10 V\nFuente de referencia de potenciómetro: 10 V +2%, max. 10 mA (1 kohmio ≤ R\n≤ 10 kohmios).\n5\nEA2\nCanal 2 de entrada analógica, programable. Por defecto2 = sin usar. Resolución\n0,1%, exactitud +1%.\nEs posible utilizar dos tipos distintos de conmutador DIP.\nJ1: EA2 OFF: 0 ... 10 V (Ri = 312 kohmios)\nON\n1\nON\nJ1: EA2 ON: 0 ... 20 mA (Ri = 100 ohmios)\nON\n1\nON\n6\nAGND\nCircuito de entrada analógica común (conectado internamente a tierra del chasis a\ntravés de 1 Mohmio).\n7\nAO1\nSalida analógica, programable. Por defecto2 = frecuencia. 0 ... 20 mA (carga <\n500 ohmios). Precisión +3%.\n8\nAO2\nSalida analógica, programable. Por defecto2 = intensidad. 0 ... 20 mA (carga <\n500 ohmios). Precisión +3%.\n9\nAGND\nCircuito de salida analógica común (conectado internamente a tierra del chasis a\ntravés de 1 Mohmio).\nEntradas digitales1\n10\n+24V\nSalida de tensión auxiliar de 24 V CC / 250 mA (referencia a GND), protegida\ncontra cortocircuito.\n11\nGND\nSalida de tensión auxiliar común (conectada internamente como flotante).\n12\nDCOM\nEntrada digital común. Para activar una entrada digital, debe haber ≥ +10 V\n(o ≤ -10 V) entre esta entrada y DCOM. Los 24 V pueden ser proporcionados por el\nACS550 (X1-10) o por la fuente externa a 12 ... 24 V de cualquier polaridad.\n13\nED1\nEntrada digital 1, programable. Por defecto2 = marcha/paro.\n14\nED2\nEntrada digital 2, programable. Por defecto2 = avance/retroceso.\n15\nED3\nEntrada digital 3, programable. Por defecto2 = sel. velocidad constante (código).\n16\nED4\nEntrada digital 4, programable. Por defecto2 = sel. velocidad constante (código).\n17\nED5\nEntrada digital 5, programable. Por defecto2 = sel. par de rampas (código).\n18\nED6\nEntrada digital 6, programable. Por defecto2 = sin usar.\nInstalación",
+      "tablas": [
+        [
+          [
+            ":unselected:",
+            "X1",
+            "Descripción del hardware"
+          ],
+          [
+            "E/S analógica",
+            "1",
+            "SCR",
+            "Terminal para la pantalla del cable de señal (apantallamiento). (Conectado internamente a tierra del chasis)."
+          ],
+          [
+            "2",
+            "EA1",
+            "Canal 1 de entrada analógica, programable. Por defecto2 = referencia de frecuencia. Resolución 0,1%, exactitud +1%."
+          ],
+          [
+            "",
+            "",
+            "Es posible utilizar dos tipos distintos de conmutador DIP."
+          ],
+          [
+            "J1: EA1 OFF: 0 ... 10 V (Ri = 312 kohmios) ON 1 ON"
+          ],
+          [
+            "J1: EA1 ON: 0 ... 20 mA (Ri = 100 ohmios) ON 1 ON"
+          ],
+          [
+            "3",
+            "AGND",
+            "Circuito de entrada analógica común (conectado internamente a tierra del chasis a través de 1 Mohmio)."
+          ],
+          [
+            "4",
+            "+10 V",
+            "Fuente de referencia de potenciómetro: 10 V +2%, max. 10 mA (1 kohmio ≤ R ≤ 10 kohmios)."
+          ],
+          [
+            "5",
+            "EA2",
+            "Canal 2 de entrada analógica, programable. Por defecto2 = sin usar. Resolución 0,1%, exactitud +1%."
+          ],
+          [
+            "",
+            "",
+            "Es posible utilizar dos tipos distintos de conmutador DIP."
+          ],
+          [
+            "J1: EA2 OFF: 0 ... 10 V (Ri = 312 kohmios) ON 1 ON"
+          ],
+          [
+            "J1: EA2 ON: 0 ... 20 mA (Ri = 100 ohmios) ON 1 ON"
+          ],
+          [
+            "6",
+            "AGND",
+            "Circuito de entrada analógica común (conectado internamente a tierra del chasis a través de 1 Mohmio)."
+          ],
+          [
+            "7",
+            "AO1",
+            "Salida analógica, programable. Por defecto2 = frecuencia. 0 ... 20 mA (carga < 500 ohmios). Precisión +3%."
+          ],
+          [
+            "8",
+            "AO2",
+            "Salida analógica, programable. Por defecto2 = intensidad. 0 ... 20 mA (carga < 500 ohmios). Precisión +3%."
+          ],
+          [
+            "9",
+            "AGND",
+            "Circuito de salida analógica común (conectado internamente a tierra del chasis a través de 1 Mohmio)."
+          ],
+          [
+            "Entradas digitales1",
+            "10",
+            "+24V",
+            "Salida de tensión auxiliar de 24 V CC / 250 mA (referencia a GND), protegida contra cortocircuito."
+          ],
+          [
+            "11",
+            "GND",
+            "Salida de tensión auxiliar común (conectada internamente como flotante)."
+          ],
+          [
+            "12",
+            "DCOM",
+            "Entrada digital común. Para activar una entrada digital, debe haber ≥ +10 V (o ≤ -10 V) entre esta entrada y DCOM. Los 24 V pueden ser proporcionados por el ACS550 (X1-10) o por la fuente externa a 12 ... 24 V de cualquier polaridad."
+          ],
+          [
+            "13",
+            "ED1",
+            "Entrada digital 1, programable. Por defecto2 = marcha/paro."
+          ],
+          [
+            "14",
+            "ED2",
+            "Entrada digital 2, programable. Por defecto2 = avance/retroceso."
+          ],
+          [
+            "15",
+            "ED3",
+            "Entrada digital 3, programable. Por defecto2 = sel. velocidad constante (código)."
+          ],
+          [
+            "16",
+            "ED4",
+            "Entrada digital 4, programable. Por defecto2 = sel. velocidad constante (código)."
+          ],
+          [
+            "17",
+            "ED5",
+            "Entrada digital 5, programable. Por defecto2 = sel. par de rampas (código)."
+          ],
+          [
+            "18",
+            "ED6",
+            "Entrada digital 6, programable. Por defecto2 = sin usar."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Manual del usuario del ACS550-01/U1\n29\nX1\nDescripción del hardware\nSalidas de rele\n19\nSR1C\nSalida de relé 1, programable. Por defecto2 = Listo\nMáximo: 250 V CA / 30 V CC, 2 A\nMínimo: 500 mW (12 V, 10 mA)\n20\nSR1A\n21\nSR1B\n22\nSR2C\nSalida de relé 2, programable. Por defecto2 = En marcha\nMáximo: 250 V CA / 30 V CC, 2 A\nMínimo: 500 mW (12 V, 10 mA)\n23\nSR2A\n24\nSR2B\n25\nSR3C\nSalida de relé 3, programable. Por defecto2 = Fallo (-1)\nMáximo: 250 V CA / 30 V CC, 2 A\nMínimo: 500 mW (12 V, 10 mA)\n26\nSR3A\n27\nSR3B\n1\nImpedancia de entrada digital 1,5 kohmios. La tensión máxima para las entradas digitales es de\n30 V.\n2 Los valores por defecto dependen de la macro utilizada. Los valores especificados corresponden a\nla macro por defecto. Véase el capítulo Macros de aplicación en la página 81.\nNota: los terminales 3, 6 y 9 se encuentran al mismo potencial.\nNota: por motivos de seguridad, el relé de fallo indica un \"fallo\" al desexcitar el ACS550.\nADVERTENCIA: todos los circuitos ELV (muy baja tensión) conectados al convertidor\ndeben utilizarse dentro de una zona de conexión equipotencial, es decir, dentro de una\nzona en la que todas las partes conductoras accesibles simultáneamente estén\nconectadas eléctricamente para prevenir la aparición de tensiones peligrosas entre\nellas. Esto se consigue con una conexión a tierra adecuada de fábrica.\n4\nLos terminales en la tarjeta de control y en los módulos opcionales que pueden\nconectarse a ella cumplen los requisitos de Tensión muy baja de protección (PELV)\ndetallados en la norma EN 50178, siempre que los circuitos externos conectados a\nlos terminales también cumplan los requisitos y el lugar de instalación esté por\ndebajo de los 2.000 m (6562 pies).\nEs posible conectar los terminales de las entradas digitales en una configuración\nPNP o NPN.\nConexión PNP (fuente)\nConexión NPN (disipador)\nX1\nX1\n10\n+24V\n11\nGND\n12 DCOM\n13\nED1\n14\nED2\n15\nED3\n16\nED4\n17 ED5\n18\nED6\n10\n+24V\n11\nGND\n12 DCOM\n13\nED1\n14 ED2\n15\nED3\n16\nED4\n17\nED5\n18\nED6\nInstalación",
+      "tablas": [
+        [
+          [
+            "",
+            "X1\n:selected:",
+            "",
+            "Descripción del hardware"
+          ],
+          [
+            "Salidas de rele",
+            "19",
+            "SR1C",
+            "",
+            "Salida de relé 1, programable. Por defecto2 = Listo Máximo: 250 V CA / 30 V CC, 2 A Mínimo: 500 mW (12 V, 10 mA)"
+          ],
+          [
+            "20",
+            "SR1A"
+          ],
+          [
+            "21",
+            "SR1B"
+          ],
+          [
+            "22",
+            "SR2C",
+            "",
+            "Salida de relé 2, programable. Por defecto2 = En marcha Máximo: 250 V CA / 30 V CC, 2 A Mínimo: 500 mW (12 V, 10 mA)"
+          ],
+          [
+            "23",
+            "SR2A"
+          ],
+          [
+            "24",
+            "SR2B"
+          ],
+          [
+            "25",
+            "SR3C",
+            "",
+            "Salida de relé 3, programable. Por defecto2 = Fallo (-1) Máximo: 250 V CA / 30 V CC, 2 A Mínimo: 500 mW (12 V, 10 mA)"
+          ],
+          [
+            "26",
+            "SR3A"
+          ],
+          [
+            "27",
+            "SR3B"
+          ]
+        ],
+        [
+          [
+            "X1\n:selected:",
+            "10",
+            "+24V"
+          ],
+          [
+            ":unselected:\n:unselected:",
+            "11",
+            "GND"
+          ],
+          [
+            "12",
+            "DCOM"
+          ],
+          [
+            "13",
+            "ED1"
+          ],
+          [
+            ":unselected:"
+          ],
+          [
+            "14",
+            "ED2"
+          ],
+          [
+            ":unselected:",
+            "15",
+            "ED3"
+          ],
+          [
+            ":unselected:",
+            "16",
+            "ED4"
+          ],
+          [
+            ":selected:\n:unselected:",
+            "17",
+            "ED5"
+          ],
+          [
+            ":selected:\n:unselected:",
+            "18",
+            "ED6"
+          ]
+        ],
+        [
+          [
+            "10",
+            "+24V"
+          ],
+          [
+            "11",
+            "GND"
+          ],
+          [
+            "12",
+            "DCOM"
+          ],
+          [
+            "13",
+            "ED1"
+          ],
+          [
+            "14\n:unselected:",
+            "ED2"
+          ],
+          [
+            "15\n:unselected:",
+            "ED3"
+          ],
+          [
+            "16\n:unselected:",
+            "ED4"
+          ],
+          [
+            "17\n:unselected:",
+            "ED5"
+          ],
+          [
+            "18\n:unselected:",
+            "ED6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "30\nManual del usuario del ACS550-01/U1\nComprobación del aislamiento del conjunto\nConvertidor\nNo realice ninguna prueba de tolerancia a tensión ni de resistencia al aislamiento en\nninguna parte del convertidor de frecuencia, dado que tal prueba puede causar\ndaños al convertidor. El aislamiento de cada convertidor se ha comprobado entre el\ncircuito de potencia y el chasis en fábrica. Además, existen circuitos limitadores de\ntensión en el interior del convertidor que cortan automáticamente la tensión de\nprueba.\nCable de alimentación\nCompruebe el aislamiento del cable de alimentación (entrada) antes de conectar el\nconvertidor a la red.\nMotor y cable de motor\nCompruebe el aislamiento del motor y del cable de motor de la forma siguiente:\n1. Compruebe que el cable de motor esté conectado al motor y desconectado de los\nterminales de salida U2, V2 y W2 del convertidor.\n2. Mida la resistencia de aislamiento entre los\nU1\nconductores de fase y entre el conductor de cada\nM\nV1\nohmios\n3~\nfase y el conductor de tierra de protección con una\ntensión de medición de 1000 V CC. La resistencia de\nW1\nPE\naislamiento de un motor ABB debe ser superior a los\n100 Mohmios (valor de referencia a 25 ℃ o 77 °F).\nEn cuanto a la resistencia de aislamiento de otros motores, véanse las instrucciones\ndel fabricante. Nota: la humedad en el interior de la carcasa del motor reduce la\nresistencia de aislamiento. Si sospecha de la presencia de humedad, seque el\nmotor y repita la medición.\nInstalación del cableado\nCableado armario IP21 / UL tipo 1 con cables\n1. Abra los orificios ciegos apropiados en el conducto/\ncaja de pasacables. (Véase el apartado Conducto/kit\nde pasacables en la página 23.)\n2. Instale las abrazaderas de cable para los cables de\npotencia/motor.\n2\n1\nX0004\nInstalación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Manual del usuario del ACS550-01/U1\n31\n3. En el cable de potencia de entrada, pele el revestimiento\nlo suficiente para separar los distintos hilos.\n4. En el cable de motor, pele el revestimiento lo\nsuficiente para dejar al descubierto la pantalla de hilo\nde cobre de modo que pueda retorcerla en espiral.\nPara minimizar la radiación por ruido, la longitud de\ndicha espiral debe ser como máximo su anchura\nmultiplicada por 5.\nSe recomienda efectuar una conexión a tierra a 360°\nbajo la grapa para minimizar la radiación por ruido en\nel cable de motor. En este caso, retire el\nrevestimiento de la abrazadera de cable.\n5. Haga pasar ambos cables por las abrazaderas.\n6. Pele y conecte los hilos de potencia/motor y el hilo de\nconexión a tierra de potencia a los terminales del\nconvertidor. Véase la tabla situada a la derecha para\nobtener los pares de apriete.\n6\n7\n6\n4\n3\n8\nIP2001\nBastidor\nPar de apriete\nN·m\nlb ft\nR1, R2\n1,4\n1\nR3\n2,5\n1,8\nR4\n5,6; PE 2\n4; PE 1,5\nR5\n15\n11\nR6\n40; PE 8\n30; PE 6\nNota: para el bastidor R6, consulte el apartado\nConsideraciones sobre los terminales de\nalimentación - Bastidor R6 en la página 293.\n7. Conecte la espiral creada a partir de la pantalla del\ncable de motor al terminal GND.\n8. Instale el conducto/caja de pasacables y apriete las\nabrazaderas de cable.\n9. Instale la(s) abrazadera(s) de cable para el/los\ncable(s) de control. (Los cables de potencia/motor y\nlas abrazaderas no se muestran en la figura).\n10. Pele el revestimiento del cable de control y trence la\npantalla de cobre en espiral.\n8\nC\n9\n11. Haga pasar el/los cable(s) de control a través de la(s)\nabrazadera(s) y apriétela(s).\n12\n12. Conecte la espiral de la pantalla de conexión a tierra\npara los cables de E/S digital y analógica en X1-1.\n(Conectar a tierra tan sólo en el extremo del convertidor).\n13-\n13. Pele y conecte los hilos de control individuales a los\nterminales del convertidor. Véase el apartado Tabla\nde terminales de control en la página 28. Utilice un\npar de apriete de 0,4 N·m (0,3 lb-ft).\nX0005\nC\nX0006\n14. Instale la cubierta del conducto/caja de pasacables\n(1 tornillo).\n11\nO\nIP2003\nInstalación",
+      "tablas": [
+        [
+          [
+            "Bastidor",
+            "Par de apriete"
+          ],
+          [
+            "N·m",
+            "lb ft"
+          ],
+          [
+            "R1, R2",
+            "1,4",
+            "1"
+          ],
+          [
+            "R3",
+            "2,5",
+            "1,8"
+          ],
+          [
+            "R4",
+            "5,6; PE 2",
+            "4; PE 1,5"
+          ],
+          [
+            "R5",
+            "15",
+            "11"
+          ],
+          [
+            "R6",
+            "40; PE 8",
+            "30; PE 6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "32\nManual del usuario del ACS550-01/U1\nCableado del armario IP 21 / UL tipo 1 con conducto\n1. Abra los orificios ciegos apropiados en el conducto/\ncaja de pasacables. (Véase el apartado Conducto/kit\nde pasacables en la página 23).\n2. Instale abrazaderas para instalación de conductos\nen paredes finas (no suministradas).\n2\n3. Instale el conducto/caja de pasacables.\n4. Conecte los tramos de conducto a la caja.\n3\n5. Haga pasar el cableado de motor y potencia de\nentrada a través de los conductos (deben ser\ntramos de conducto independientes).\n7\n6. Pele los hilos.\n7\n7. Conecte los hilos de potencia, motor y tierra a los\nterminales del convertidor. Véase la tabla situada a\nla derecha para obtener los pares de apriete.\n5\n4\n0\nbu\n0\nO\nX0007\nX0005\nIP2004\nNota: para el bastidor R6, consulte el apartado\nConsideraciones sobre los terminales de\nalimentación - Bastidor R6 en la página 293.\nBastidor\nPar de apriete\nN·m\nlb ft\nR1, R2\n1,4\n1\nR3\n2,5\n1,8\nR4\n5,6; PE 2\n4; PE 1,5\nR5\n15\n11\nR6\n40; PE 8\n30; PE 6\n8. Haga pasar el cable de control por el conducto\n(debe estar separado de los tramos de conducto del\nmotor y la alimentación de entrada).\n10\n9. Pele el revestimiento del cable de control y trence la\npantalla de cobre en espiral.\n11/\n10. Conecte la espiral de la pantalla de conexión a tierra\npara los cables de E/S digital y analógica en X1-1.\n(Conectar a tierra tan sólo en el extremo del convertidor).\nO\nF\n11. Pele y conecte los hilos de control individuales a los\nterminales del convertidor. Véase el apartado Tabla\nde terminales de control en la página 28. Utilice un\npar de apriete de 0,4 N·m (0,3 lb-ft).\n8\n12. Instale la cubierta del conducto/caja de pasacables\n(1 tornillo).\n0\nIP2005\nInstalación",
+      "tablas": [
+        [
+          [
+            "Bastidor",
+            "Par de apriete"
+          ],
+          [
+            "N·m",
+            "lb ft"
+          ],
+          [
+            "R1, R2",
+            "1,4",
+            "1"
+          ],
+          [
+            "R3",
+            "2,5",
+            "1,8"
+          ],
+          [
+            "R4",
+            "5,6; PE 2",
+            "4; PE 1,5"
+          ],
+          [
+            "R5",
+            "15",
+            "11"
+          ],
+          [
+            "R6",
+            "40; PE 8",
+            "30; PE 6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Manual del usuario del ACS550-01/U1\n33\nCableado del armario IP 54 / UL tipo 12 con cables\n1. Corte los sellos del cable según se requiera para\nlos cables de potencia, motor y control. Los sellos\ndel cable son sellos de goma con forma de cono\nen la parte inferior del convertidor de frecuencia.\nLa parte cónica de los sellos debe estar cara abajo\ncuando éstos se inserten en los orificios de acceso\nde la placa.\n2. En el cable de potencia de entrada, pele el\nrevestimiento lo suficiente para separar los\ndistintos hilos.\n3. En el cable de motor, pele el revestimiento lo\nsuficiente para dejar al descubierto la pantalla de\nhilo de cobre de modo que pueda retorcerla en\nespiral. Para minimizar la radiación por ruido, la\nlongitud de dicha espiral debe ser como máximo\nsu anchura multiplicada por 5.\nSe recomienda efectuar una conexión a tierra a\n360° bajo la grapa para minimizar la radiación por\nruido en el cable de motor. En este caso, retire el\nrevestimiento de la abrazadera de cable.\n4. Haga pasar ambos cables por las abrazaderas y\napriételas.\n5. Pele y conecte los hilos de potencia/motor y el hilo\nde conexión a tierra de potencia a los terminales\ndel convertidor. Véase la tabla situada a la derecha\npara obtener los pares de apriete.\ne\n1\nIP5003\n5\no\n2\n3\n4\n4\nO\nIP5004\nBastidor\nPar de apriete\nN·m\nlb ft\nR1, R2\n1,4\n1\nR3\n2,5\n1,8\nR4\n5,6; PE 2\n4; PE 1,5\nR5\n15\n11\nR6\n40; PE 8\n30; PE 6\nNota: Para el bastidor R6, consulte el apartado Consideraciones sobre los\nterminales de alimentación - Bastidor R6 en la página 293.\nInstalación",
+      "tablas": [
+        [
+          [
+            "Bastidor",
+            "Par de apriete"
+          ],
+          [
+            "N·m",
+            "lb ft"
+          ],
+          [
+            "R1, R2",
+            "1,4",
+            "1"
+          ],
+          [
+            "R3",
+            "2,5",
+            "1,8"
+          ],
+          [
+            "R4",
+            "5,6; PE 2",
+            "4; PE 1,5"
+          ],
+          [
+            "R5",
+            "15",
+            "11"
+          ],
+          [
+            "R6",
+            "40; PE 8",
+            "30; PE 6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "34\nManual del usuario del ACS550-01/U1\n6. Conecte la espiral creada a partir de la pantalla del\ncable de motor al terminal GND.\n7. Pele el revestimiento del cable de control y trence\nla pantalla de cobre en espiral.\n8. Haga pasar el/los cable(s) de control a través de\nla(s) abrazadera(s) y apriétela(s).\n9. Conecte la espiral de la pantalla de conexión a\ntierra para los cables de E/S digital y analógica en\nX1-1. (Conectar a tierra tan sólo en el extremo del\nconvertidor).\n10. Pele y conecte los hilos de control individuales a\nlos terminales del convertidor. Véase el apartado\nTabla de terminales de control en la página 28.\nUtilice un par de apriete de 0,4 N·m (0,3 lb-ft).\nC\n0\nO\n9, 10\n8\nO\nIP5005\nInstalación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Manual del usuario del ACS550-01/U1\n35\nCableado del armario IP 54 / UL tipo 12 con conducto\n1. Retire y deseche los sellos de cable en los puntos\nen los que se instalará el conducto. (Los sellos del\ncable son sellos de goma con forma de cono en la\nparte inferior del convertidor de frecuencia).\n2. Para cada tramo de conducto, instale conectores de\nconducto estancos (no suministrados).\n3. Haga pasar el cableado de potencia por el conducto.\n4. Haga pasar el cableado del motor por el conducto.\n5. Pele los hilos.\n6. Conecte los hilos de potencia, motor y de conexión\na tierra a los terminales del convertidor. Véase la\ntabla situada a la derecha para obtener los pares de\napriete.\nNota: Para el bastidor R6, consulte el apartado\nConsideraciones sobre los terminales de\nalimentación - Bastidor R6 en la página 293.\n1.\n2\n6\n3\n2009\nIP5013\nIP5016\nO\n100000\nO\n4\nIP5007\nBastidor\nPar de apriete\nN·m\nlb ft\nR1, R2\n1,4\n1\nR3\n2,5\n1,8\nR4\n5,6; PE 2\n4; PE 1,5\nR5\n15\n11\nR6\n40; PE 8\n30; PE 6\n7. Haga pasar el cable de control a través del conducto.\n8. Pele el revestimiento del cable de control y trence la\npantalla de cobre en espiral.\n9. Conecte la espiral de la pantalla de conexión a tierra para los cables de E/S digital y\nanalógica en X1-1. (Conectar a tierra tan sólo en el extremo del convertidor).\n10. Pele y conecte los hilos de control individuales a los terminales del convertidor.\nVéase el apartado Tabla de terminales de control en la página 28. Utilice un par de\napriete de 0,4 N·m (0,3 lb-ft).\nInstalación",
+      "tablas": [
+        [
+          [
+            "Bastidor",
+            "Par de apriete"
+          ],
+          [
+            "N·m",
+            "lb ft"
+          ],
+          [
+            "R1, R2",
+            "1,4",
+            "1"
+          ],
+          [
+            "R3",
+            "2,5",
+            "1,8"
+          ],
+          [
+            "R4",
+            "5,6; PE 2",
+            "4; PE 1,5"
+          ],
+          [
+            "R5",
+            "15",
+            "11"
+          ],
+          [
+            "R6",
+            "40; PE 8",
+            "30; PE 6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "36\nManual del usuario del ACS550-01/U1\nComprobación de la instalación\nAntes de suministrar alimentación, compruebe lo siguiente:\nV\nCompruebe:\nQue el entorno de instalación se ajuste a las especificaciones del convertidor para las\ncondiciones ambientales.\nQue el convertidor esté bien sujeto.\nQue el espacio alrededor del convertidor satisfaga sus especificaciones de refrigeración.\nQue el motor y el equipo accionado estén listos para la puesta en marcha.\nPara redes IT y redes TN conectadas a tierra en un vértice: que el filtro EMC interno esté\ndesconectado (véase el apartado Desconexión del filtro EMC interno en la página 27).\nQue el convertidor tenga una buena conexión a tierra.\nQue la tensión de alimentación de entrada (red) coincida con la tensión nominal de entrada del\nconvertidor de frecuencia.\nQue las conexiones de alimentación de entrada (red) U1, V1, W1 estén conectadas y\napretadas según se especifica.\nQue los fusibles de alimentación de entrada (red) estén instalados.\nQue las conexiones a motor U2, V2, W2 estén conectadas y apretadas según se especifica.\nQue el recorrido del cable de motor se mantenga lejos de otros cables.\nQue en el cable de motor NO haya condensadores de compensación del factor de potencia.\nQue las conexiones de control estén conectadas y apretadas según se especifica.\nQue NO haya herramientas ni cuerpos extraños (como virutas del taladro) dentro del convertidor.\nQue NO esté conectada ninguna fuente de alimentación alternativa del motor (como una\nconexión bypass) - no se aplica tensión a la salida del convertidor.\nInstalación",
+      "tablas": [
+        [
+          [
+            "V\n:selected:",
+            "Compruebe:"
+          ],
+          [
+            ":unselected:",
+            "Que el entorno de instalación se ajuste a las especificaciones del convertidor para las condiciones ambientales."
+          ],
+          [
+            ":unselected:",
+            "Que el convertidor esté bien sujeto."
+          ],
+          [
+            ":unselected:",
+            "Que el espacio alrededor del convertidor satisfaga sus especificaciones de refrigeración."
+          ],
+          [
+            ":unselected:",
+            "Que el motor y el equipo accionado estén listos para la puesta en marcha."
+          ],
+          [
+            ":unselected:",
+            "Para redes IT y redes TN conectadas a tierra en un vértice: que el filtro EMC interno esté desconectado (véase el apartado Desconexión del filtro EMC interno en la página 27)."
+          ],
+          [
+            ":unselected:",
+            "Que el convertidor tenga una buena conexión a tierra."
+          ],
+          [
+            ":unselected:",
+            "Que la tensión de alimentación de entrada (red) coincida con la tensión nominal de entrada del convertidor de frecuencia."
+          ],
+          [
+            ":unselected:",
+            "Que las conexiones de alimentación de entrada (red) U1, V1, W1 estén conectadas y apretadas según se especifica."
+          ],
+          [
+            ":unselected:",
+            "Que los fusibles de alimentación de entrada (red) estén instalados."
+          ],
+          [
+            ":unselected:",
+            "Que las conexiones a motor U2, V2, W2 estén conectadas y apretadas según se especifica."
+          ],
+          [
+            ":unselected:",
+            "Que el recorrido del cable de motor se mantenga lejos de otros cables."
+          ],
+          [
+            ":unselected:",
+            "Que en el cable de motor NO haya condensadores de compensación del factor de potencia."
+          ],
+          [
+            ":unselected:",
+            "Que las conexiones de control estén conectadas y apretadas según se especifica."
+          ],
+          [
+            ":unselected:",
+            "Que NO haya herramientas ni cuerpos extraños (como virutas del taladro) dentro del convertidor."
+          ],
+          [
+            ":unselected:",
+            "Que NO esté conectada ninguna fuente de alimentación alternativa del motor (como una conexión bypass) - no se aplica tensión a la salida del convertidor."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Manual del usuario del ACS550-01/U1\n37\nReinstalación de la cubierta\n1\nIP 21 / UL tipo 1\n1. Alinee la cubierta y encajela.\n2. Apriete el tornillo cautivo.\n2\n3. Reinstale el panel de control.\n4. Prosiga con la puesta en marcha. Véase el\ncapítulo Puesta en marcha, control a través de\nla E/S y Marcha de ID en la página 39.\n3\n0\nIP2009\nIP 54 / UL tipo 12\nR6\nR1 ... R5\n1. Alinee la cubierta y encájela.\n108\n2. Apriete los tornillos cautivos\nalrededor del borde de la cubierta.\n4\n3\n4\n3. Deslice la tapa hacia abajo por\nencima de la parte superior de la\ncubierta. (Sólo se requiere en\ninstalaciones UL tipo 12).\n4. Instale los dos tornillos que sujetan\nla tapa. (Sólo se requiere en\ninstalaciones UL tipo 12).\n5\n6\n5. Instale el panel de control.\n1\nNota: la ventana del panel de\ncontrol debe cerrarse para\ngarantizar el cumplimiento de IP 54/UL tipo 12.\n2\nFM\n6. Opcional: añada un candado (no suministrado) para fijar la ventana del panel de control.\n7. Prosiga con la puesta en marcha. Véase el capítulo Puesta en marcha, control a\ntravés de la E/S y Marcha de ID en la página 39.\nInstalación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "38\nManual del usuario del ACS550-01/U1\nInstalación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Manual del usuario del ACS550-01/U1\n39\nPuesta en marcha, control a través de la E/S\ny Marcha de ID\nEl capítulo proporciona instrucciones acerca de cómo:\n· efectuar la puesta en marcha\n· arrancar, detener, cambiar la dirección de giro y ajustar la velocidad del motor a\ntravés de la interfase de E/S\n· efectuar una Marcha de Identificación para el convertidor.\nEn este capítulo se facilita una descripción breve del uso del panel de control para\nllevar a cabo estas tareas. Para obtener detalles acerca del uso del panel de control,\nvéase el capítulo Paneles de control que empieza en la página 51.\nCómo poner en marcha el convertidor\nLa manera de poner en marcha el convertidor de frecuencia depende del tipo de\npanel de control.\n· Si dispone de un Panel de control asistente, puede ejecutar el Asistente para\nla puesta en marcha (véase el apartado Cómo efectuar la puesta en marcha\nguiada en la página 45), o bien realizar una puesta en marcha limitada (véase el\napartado Cómo efectuar la puesta en marcha limitada en la página 39).\nEl Asistente para la puesta en marcha, que solamente se incluye en el Panel de\ncontrol asistente, le guía por todos los ajustes esenciales que deben efectuarse.\nDurante la puesta en marcha limitada, el convertidor no proporciona ninguna\norientación; el usuario efectúa los ajustes más básicos consultando las\ninstrucciones facilitadas en el manual.\n. Si dispone de un Panel de control básico, siga las instrucciones facilitadas en\nel apartado Cómo efectuar la puesta en marcha limitada de la página 39.\nCómo efectuar la puesta en marcha limitada\nPara realizar la puesta en marcha limitada, puede utilizar el Panel de control básico\no el Panel de control asistente. Las instrucciones facilitadas a continuación son\nválidas para ambos paneles de control, pero las pantallas mostradas corresponden\nal Panel de control básico, a menos que la indicación tan sólo sea aplicable al Panel\nde control asistente.\nAntes de empezar, asegúrese de que dispone de los datos de la placa de\ncaracterísticas del motor.\nSEGURIDAD\nLa puesta en marcha sólo puede ser efectuada por un electricista cualificado.\nDeben seguirse las instrucciones de seguridad del capítulo Instrucciones de\nseguridad durante todo el procedimiento de puesta en marcha.\n4\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "40\nManual del usuario del ACS550-01/U1\nEl convertidor se pondrá en marcha automáticamente al suministrar alimentación si\nel comando de marcha externa está activado.\n!\nCompruebe la instalación. Véase la lista de comprobación en el capítulo Instalación, página 36.\nCompruebe que la puesta en marcha del motor no entrañe ningún peligro.\nDesacople la maquinaria accionada si:\n· existe riesgo de daños en caso de una dirección de giro incorrecta, o\n· debe efectuarse una Marcha de ID durante la puesta en marcha del convertidor. La\nMarcha de ID tan sólo es esencial en aplicaciones que requieran un grado máximo de\nprecisión de control del motor.\nALIMENTACIÓN\nSuministre alimentación de entrada.\nREM\n0.0\nHz\nOUTPUT\nFWD\nEl Panel de control básico se conecta en modo de Salida.\nEl Panel de control asistente le preguntará si desea ejecutar el\nAsistente de arranque. Si pulsa , el Asistente de arranque\nno se ejecuta, y puede proseguir con la puesta en marcha\nmanual de un modo similar al descrito a continuación para el\nPanel de control básico.\nREM & CHOICE-\n¿Desea\nusar el asistente\nde arranque?\nSí\nNo\nSALIR 00:00\nOK\nENTRADA MANUAL DE LOS DATOS DE PARTIDA (Grupo 99: DATOS DE PARTIDA)\nSi dispone de un Panel de control asistente, seleccione el\nidioma (el Panel de control básico no es compatible con\ndistintos idiomas). Véase el parámetro 9901 en cuanto a los\nvalores de los distintos idiomas disponibles. Las descripciones\nREM\nPAR EDIT\n9901 IDIOMA\nENGLISH\n[0]\nCANCELA 00:00 GUARDAR\nde los parámetros se facilitan en el apartado Descripciones\ncompletas de los parámetros a partir de la página 109.\nPara el Panel de control básico, el procedimiento de ajuste de parámetros\ngeneral se describe a continuación. En la página 77 se facilitan instrucciones\nmás detalladas relativas al Panel de control básico. En la página 59 se\nfacilitan instrucciones relativas al Panel de control asistente.\nEl procedimiento de ajuste de parámetros general:\nREM\nrEF\nMENU\nFWD\n1. Para acceder al menú principal, pulse\nsi la línea inferior muestra\nOUTPUT; en caso contrario, pulse\nrepetidamente hasta que vea\nMENU en la parte inferior.\n2. Pulse las teclas\n/\nhasta que aparezca \"PAr\" y pulse\n.\nREM\n-01-\nPAR\nFWD\n3. Encuentre el grupo de parámetros adecuado con las teclas\n/\ny pulse\n.\nREM\n2001\nPAR\nFWD\n4. Encuentre el parámetro adecuado del grupo con las teclas\n/\n.\nREM\n2002\nPAR\nFWD\nPuesta en marcha, control a través de la E/S y Marcha de ID",
+      "tablas": [
+        [
+          [
+            ":unselected:",
+            "Compruebe la instalación. Véase la lista de comprobación en el",
+            "capítulo Instalación, página 36."
+          ],
+          [
+            ":unselected:",
+            "Compruebe que la puesta en marcha del motor no entrañe ningún\nDesacople la maquinaria accionada si:",
+            "peligro."
+          ],
+          [
+            "· existe riesgo de daños en caso de una dirección de giro incorrecta, o · debe efectuarse una Marcha de ID durante la puesta en marcha del convertidor. La Marcha de ID tan sólo es esencial en aplicaciones que requieran un grado máximo de precisión de control del motor."
+          ],
+          [
+            "",
+            "ALIMENTACIÓN"
+          ],
+          [
+            ":unselected:",
+            "Suministre alimentación de entrada.",
+            "REM 0.0 Hz OUTPUT FWD"
+          ],
+          [
+            "El Panel de control básico se conecta en modo de Salida."
+          ],
+          [
+            "",
+            "El Panel de control asistente le preguntará si desea ejecutar el Asistente de arranque. Si pulsa , el Asistente de arranque no se ejecuta, y puede proseguir con la puesta en marcha manual de un modo similar al descrito a continuación para el Panel de control básico.",
+            "REM & CHOICE- ¿Desea usar el asistente de arranque? Sí No"
+          ],
+          [
+            "SALIR 00:00 OK"
+          ],
+          [
+            "",
+            "ENTRADA MANUAL DE LOS DATOS DE PARTIDA (Grupo 99: DATOS DE PARTIDA)"
+          ],
+          [
+            ":unselected:",
+            "Si dispone de un Panel de control asistente, seleccione el idioma (el Panel de control básico no es compatible con distintos idiomas). Véase el parámetro 9901 en cuanto a los valores de los distintos idiomas disponibles. Las descripciones",
+            "REM PAR EDIT 9901 IDIOMA ENGLISH [0]"
+          ],
+          [
+            "de los parámetros se facilitan en el apartado Descripciones completas de los parámetros a partir de la página 109.",
+            "CANCELA 00:00 GUARDAR"
+          ],
+          [
+            "Para el Panel de control básico, el procedimiento de ajuste de parámetros general se describe a continuación. En la página 77 se facilitan instrucciones más detalladas relativas al Panel de control básico. En la página 59 se facilitan instrucciones relativas al Panel de control asistente.",
+            ""
+          ],
+          [
+            "El procedimiento de ajuste de parámetros general:",
+            "REM rEF MENU FWD"
+          ],
+          [
+            "1. Para acceder al menú principal, pulse si la línea inferior muestra OUTPUT; en caso contrario, pulse :selected: repetidamente hasta que vea MENU en la parte inferior.\n:selected:"
+          ],
+          [
+            ""
+          ],
+          [
+            "2. Pulse las teclas / hasta que aparezca \"PAr\" y pulse .\n:selected:",
+            "REM -01- PAR FWD"
+          ],
+          [
+            "3. Encuentre el grupo de parámetros adecuado con las teclas / :selected: y pulse .",
+            "REM 2001 PAR FWD"
+          ],
+          [
+            "4. Encuentre el parámetro adecuado del grupo con las teclas / .",
+            "REM 2002 PAR FWD"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    }
+  ]
+}

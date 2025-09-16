@@ -1,0 +1,577 @@
+{
+  "archivo": "ABB Guia Técnica 8 - Frenado Eléctrico",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Guía técnica nº 8\nFrenado eléctrico\nVERBIER\nMONT FORT\nABB",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "2\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Índice general\n1.\nIntroducción\n5\n1.1\nConcepto general\n5\n1.2\nMapa de las aplicaciones de accionamientos\nen función de la velocidad y el par\n5\n2.\nEvaluar la potencia de frenado\n7\n2.1\nPrincipios generales del dimensionado del\nfrenado eléctrico\n7\n2.2\nConceptos básicos de descripción de cargas\n8\n2.2.1 Par constante y par cuadrático\n8\n2.2.2\nCómo evaluar el par y la potencia de frenado\n8\n2.2.3 Resumen y conclusiones\n12\n3.\nSoluciones de frenado eléctrico\nen accionamientos\n13\n3.1\nFrenado de flujo del motor\n13\n3.2\nChopper de frenado y resistencia de frenado\n3.2.1 El almacenamiento de energía en el\nconvertidor de frecuencia\n14\n14\n3.2.2 Principio del chopper de frenado\n15\n3.3\nConfiguración antiparalela de los puentes\nde tiristores\n17\n3.4\nConfiguración con puente IGBT\n19\n3.4.1 Principios generales de las unidades\nde regeneración IGBT\n19\n3.4.2\nRegeneración IGBT: objetivos de\nregulación\n19\n3.4.3\nControl directo del par en forma de\ncontrol directo de la potencia\n20\n3.4.4\nDimensionado de una unidad de\nregeneración IGBT\n22\n3.5\nCC común\n22\n4.\nEvaluar el coste del ciclo de vida de distintos\nfrenados eléctricos\n24\n4.1\nCómo calcular el coste directo de la energía\n24\n4.2\nComo evaluar el coste de la inversión\n24\n4.3\nCómo calcular el coste del ciclo de vida\n25\n5.\nSímbolos y definiciones\n29\n6.\nÍndice\n30\nGuía técnica nº 8 - Frenado eléctrico\n3",
+      "tablas": [
+        [
+          [
+            "1.",
+            "Introducción",
+            "5"
+          ],
+          [
+            "1.1",
+            "Concepto general",
+            "5"
+          ],
+          [
+            "1.2",
+            "Mapa de las aplicaciones de accionamientos en función de la velocidad y el par",
+            "5"
+          ],
+          [
+            "2.",
+            "Evaluar la potencia de frenado",
+            "7"
+          ],
+          [
+            "2.1",
+            "Principios generales del dimensionado del frenado eléctrico",
+            "7"
+          ],
+          [
+            "2.2",
+            "Conceptos básicos de descripción de cargas",
+            "8"
+          ],
+          [
+            "2.2.1 Par constante y par cuadrático",
+            "8"
+          ],
+          [
+            "2.2.2 Cómo evaluar el par y la potencia de frenado",
+            "8"
+          ],
+          [
+            "2.2.3 Resumen y conclusiones",
+            "12"
+          ],
+          [
+            "3.",
+            "Soluciones de frenado eléctrico en accionamientos",
+            "13"
+          ],
+          [
+            "3.1",
+            "Frenado de flujo del motor",
+            "13"
+          ],
+          [
+            "3.2",
+            "Chopper de frenado y resistencia de frenado 3.2.1 El almacenamiento de energía en el convertidor de frecuencia",
+            "14"
+          ],
+          [
+            "14"
+          ],
+          [
+            "",
+            "3.2.2 Principio del chopper de frenado",
+            "15"
+          ],
+          [
+            "3.3",
+            "Configuración antiparalela de los puentes de tiristores",
+            "17"
+          ],
+          [
+            "3.4",
+            "Configuración con puente IGBT",
+            "19"
+          ],
+          [
+            "3.4.1 Principios generales de las unidades de regeneración IGBT",
+            "19"
+          ],
+          [
+            "3.4.2 Regeneración IGBT: objetivos de regulación",
+            "19"
+          ],
+          [
+            "3.4.3 Control directo del par en forma de control directo de la potencia",
+            "20"
+          ],
+          [
+            "3.4.4 Dimensionado de una unidad de regeneración IGBT",
+            "22"
+          ],
+          [
+            "3.5",
+            "CC común",
+            "22"
+          ],
+          [
+            "4.",
+            "Evaluar el coste del ciclo de vida de distintos frenados eléctricos",
+            "24"
+          ],
+          [
+            "4.1",
+            "Cómo calcular el coste directo de la energía",
+            "24"
+          ],
+          [
+            "4.2",
+            "Como evaluar el coste de la inversión",
+            "24"
+          ],
+          [
+            "4.3",
+            "Cómo calcular el coste del ciclo de vida",
+            "25"
+          ],
+          [
+            "5.",
+            "Símbolos y definiciones",
+            "29"
+          ],
+          [
+            "6.",
+            "Índice",
+            "30"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "4\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Capítulo 1 - Introducción\n1.1 Concepto\ngeneral\nEn esta nueva guía técnica de ABB se describen las solu-\nciones prácticas con las que se puede reducir la energía\nalmacenada y volverla a transformar en energía eléctrica. El\nobjetivo de esta guía consiste, asimismo, en dar orienta-\nciones prácticas para distintas soluciones de frenado.\n1.2 Mapa de las\naplicaciones de\naccionamientos\nen función de la\nvelocidad y el\npar\nLas aplicaciones de accionamientos se pueden dividir en\ntres categorías principales en función de la velocidad y el\npar. La aplicación de accionamientos de CA más habitual es\nen un cuadrante, en la que la velocidad y el par siempre\ntienen la misma dirección: el flujo de la potencia (velocidad\nmultiplicada por el par) va del inversor al proceso. En estas\naplicaciones, que suelen ser de bombas y ventiladores, el\npar de la carga tiene un comportamiento cuadrático, por lo\nque se las suele llamar aplicaciones a par variable. Algunas\naplicaciones en un cuadrante como las extrusoras o las cintas\ntransportadoras son aplicaciones a par constante (el par de\nla carga no tiene por qué cambiar al cambiar la velocidad).\nLa segunda categoría son las aplicaciones en dos cuadrantes,\nen las que, sin que cambie la dirección de rotación, puede\ncambiar la dirección del par (el flujo de potencia puede ir del\naccionamiento al motor o viceversa). Un accionamiento en\nun cuadrante puede serlo en dos, por ejemplo, al decelerar\nun ventilador más rápido que de forma natural con las\npérdidas mecánicas. En muchas industrias, un paro de\nemergencia puede precisar de un funcionamiento en dos\ncuadrantes aunque el proceso sea en un cuadrante.\nLa tercera categoría son las aplicaciones en cuatro\ncuadrantes en las que puede cambiar libremente la dirección\nde la velocidad y el par. Las más típicas son ascensores,\ncabrestantes y grúas, si bien muchos procesos de corte,\nplegado, tejeduría y bancos de pruebas de motores pueden\nnecesitar que la velocidad y el par cambien repetidamente.\nTambién cabe mencionar procesos en un cuadrante en los\nque el flujo de potencia va principalmente de la maquinaria\nal inversor, como una bobinadora o una cinta transportadora\ndescendente.\nPor lo general, desde un punto de vista de ahorro de en-\nergía, un motor de CA con un inversor es mejor que los\nmétodos de control mecánico como el estrangulamiento. Sin\nembargo, se presta menos atención al hecho de que mu-\nchos procesos pueden contar con un flujo de la potencia del\nproceso al accionamiento, aunque no se ha estudiado cómo\nutilizar esta energía de frenado de la forma más económica.\nGuía técnica nº 8 - Frenado eléctrico\n5",
+      "tablas": [
+        [
+          [
+            "1.1 Concepto general",
+            "En esta nueva guía técnica de ABB se describen las solu- ciones prácticas con las que se puede reducir la energía almacenada y volverla a transformar en energía eléctrica. El objetivo de esta guía consiste, asimismo, en dar orienta- ciones prácticas para distintas soluciones de frenado."
+          ],
+          [
+            "1.2 Mapa de las aplicaciones de accionamientos en función de la velocidad y el par",
+            "Las aplicaciones de accionamientos se pueden dividir en tres categorías principales en función de la velocidad y el par. La aplicación de accionamientos de CA más habitual es en un cuadrante, en la que la velocidad y el par siempre tienen la misma dirección: el flujo de la potencia (velocidad multiplicada por el par) va del inversor al proceso. En estas aplicaciones, que suelen ser de bombas y ventiladores, el par de la carga tiene un comportamiento cuadrático, por lo que se las suele llamar aplicaciones a par variable. Algunas aplicaciones en un cuadrante como las extrusoras o las cintas transportadoras son aplicaciones a par constante (el par de la carga no tiene por qué cambiar al cambiar la velocidad). La segunda categoría son las aplicaciones en dos cuadrantes, en las que, sin que cambie la dirección de rotación, puede cambiar la dirección del par (el flujo de potencia puede ir del accionamiento al motor o viceversa). Un accionamiento en un cuadrante puede serlo en dos, por ejemplo, al decelerar un ventilador más rápido que de forma natural con las pérdidas mecánicas. En muchas industrias, un paro de emergencia puede precisar de un funcionamiento en dos cuadrantes aunque el proceso sea en un cuadrante. La tercera categoría son las aplicaciones en cuatro cuadrantes en las que puede cambiar libremente la dirección de la velocidad y el par. Las más típicas son ascensores, cabrestantes y grúas, si bien muchos procesos de corte, plegado, tejeduría y bancos de pruebas de motores pueden necesitar que la velocidad y el par cambien repetidamente. También cabe mencionar procesos en un cuadrante en los que el flujo de potencia va principalmente de la maquinaria al inversor, como una bobinadora o una cinta transportadora descendente. Por lo general, desde un punto de vista de ahorro de en- ergía, un motor de CA con un inversor es mejor que los métodos de control mecánico como el estrangulamiento. Sin embargo, se presta menos atención al hecho de que mu- chos procesos pueden contar con un flujo de la potencia del proceso al accionamiento, aunque no se ha estudiado cómo utilizar esta energía de frenado de la forma más económica."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Introducción\nIV\nT\nI\nT\nn\nn\nDeceleración\nAceleración\nAceleración\nT\nDeceleración\nT\nn\nn\n=\nFigura 1.1 Mapa de las aplicaciones de accionamientos en función\nde la velocidad y el par.\n6\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": [
+        [
+          [
+            "IV T",
+            "I T"
+          ],
+          [
+            ""
+          ],
+          [
+            "",
+            "n",
+            "n",
+            ""
+          ],
+          [
+            "Deceleración",
+            "Aceleración",
+            ""
+          ],
+          [
+            "Aceleración T",
+            "Deceleración T"
+          ],
+          [
+            ""
+          ],
+          [
+            "",
+            "n",
+            "n",
+            "="
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Capítulo 2 - Evaluar la potencia de frenado\n2.1 Principios\ngenerales del\ndimensionado\ndel frenado\neléctrico\nLa evaluación de la necesidad de frenado empieza por la\nmecánica. Normalmente se tiene que frenar el sistema\nmecánico en un tiempo concreto, o existen subciclos del\nproceso en los que el motor funciona en el generador a\nvelocidad constante o ligeramente variable.\nEs importante destacar que los dispositivos empleados en\nel frenado eléctrico se dimensionan en función de la potencia\nde frenado. La potencia mecánica de frenado depende del\npar y la velocidad de frenado, fórmula (2.1). Cuando mayor\nsea la velocidad, mayor será la potencia. Esta potencia se\ntransmite a una tensión e intensidad determinadas. Cuanto\nmayor sea la tensión, menos intensidad se necesita para\nuna misma potencia, fórmula (2.2). La intensidad es el\ncomponente principal que define el coste en accionamientos\nde CA de baja tensión.\nEn la fórmula (2.2) podemos observar la expresión coso.\nEsta expresión define la intensidad del motor empleada para\nmagnetizar el motor. La intensidad de magnetización no crea\nningún par y, por tanto, se ignora.\nPor otra parte, esta intensidad de magnetización del motor\nno se toma de la fuente de alimentación de CA que alimenta\nal convertidor (la intensidad al inversor es menor que la\nintensidad al motor). Ello significa que, en la sección de\nalimentación, coso suele ser aproximadamente 1,0. Cabe\ndestacar en la fórmula (2.2) que se ha supuesto que no se\nproduce ninguna pérdida cuando la potencia de CC se\nconvierte en potencia de CA. En esta conversión se producen\nalgunas pérdidas que se pueden ignorar en este contexto.\nn\nP = T * @ = T *\nMecánica\n* 2 T\n(2.1)\n60\nEléctrica = Ucc * 1cc = V 3 * UCA * ICA * COSO\n(2.2)\nGuía técnica nº 8 - Frenado eléctrico\n7",
+      "tablas": [
+        [
+          [
+            "Capítulo 2 - Evaluar la potencia de frenado"
+          ],
+          [
+            "2.1 Principios generales del dimensionado del frenado eléctrico",
+            "La evaluación de la necesidad de frenado empieza por la mecánica. Normalmente se tiene que frenar el sistema mecánico en un tiempo concreto, o existen subciclos del proceso en los que el motor funciona en el generador a velocidad constante o ligeramente variable."
+          ],
+          [
+            "Es importante destacar que los dispositivos empleados en el frenado eléctrico se dimensionan en función de la potencia de frenado. La potencia mecánica de frenado depende del par y la velocidad de frenado, fórmula (2.1). Cuando mayor sea la velocidad, mayor será la potencia. Esta potencia se transmite a una tensión e intensidad determinadas. Cuanto mayor sea la tensión, menos intensidad se necesita para una misma potencia, fórmula (2.2). La intensidad es el componente principal que define el coste en accionamientos de CA de baja tensión."
+          ],
+          [
+            "En la fórmula (2.2) podemos observar la expresión coso. Esta expresión define la intensidad del motor empleada para magnetizar el motor. La intensidad de magnetización no crea ningún par y, por tanto, se ignora. Por otra parte, esta intensidad de magnetización del motor no se toma de la fuente de alimentación de CA que alimenta al convertidor (la intensidad al inversor es menor que la intensidad al motor). Ello significa que, en la sección de alimentación, coso suele ser aproximadamente 1,0. Cabe destacar en la fórmula (2.2) que se ha supuesto que no se produce ninguna pérdida cuando la potencia de CC se convierte en potencia de CA. En esta conversión se producen algunas pérdidas que se pueden ignorar en este contexto. n P = T * @ = T * Mecánica * 2 T (2.1) 60"
+          ],
+          [
+            "Eléctrica = Ucc * 1cc = V 3 * UCA * ICA * COSO (2.2)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Evaluación de la potencia de frenado\n2.2 Conceptos\nbásicos de\ndescripción de\ncargas\nLas cargas se suelen clasificar en cargas a par constante o\na par cuadrático. Una carga a par cuadrático significa que el\npar de la carga es proporcional al cuadrado de la velocidad.\nTambién significa que la potencia es la velocidad elevada al\ncubo. En las aplicaciones a par constante, la potencia es\ndirectamente proporcional a la velocidad.\n2.2.1 Par\nconstante y par\ncuadrático\nT = C\nPar constante:\nC: constante\n(2.3)\nCarga\nP = T * @ = C*0\nCarga\n(2.4)\nPar cuadrático:\nTCaro == C * 002\n(2.5)\nP =T* @=C*W *@=C*83\n(2.6)\nCarga\n2.2.2 Cómo\nevaluar el par y\nla potencia de\nfrenado\nEn caso de funcionamiento en régimen permanente (a (ace-\nleración angular) = cero) el par del motor tiene que hacer que\nel par de rozamiento corresponda proporcionalmente a la\nvelocidad angular y al par de la carga a esa velocidad angu-\nlar. El par y la potencia de frenado necesarios en función del\ntiempo varía mucho en estos dos tipos distintos de carga.\nT = - [J* a +ß * W + T (@)]\nCarga\n(2.7)\nEstudiemos primero el caso en que la carga es a par constante\ny el sistema de accionamiento no puede generar el par de\nfrenado (accionamiento con funcionamiento en un cuadrante).\nPara calcular el tiempo de frenado necesario se puede aplicar\nla siguiente ecuación. Hay que fijarse en que la fórmula (2.7)\ndestaca que el par necesario para la aceleración (o\ndeceleración) inercial, el par de rozamiento y carga está en\ndirección opuesta al par del motor.\nO =- [J* a + B * W + T (@)]\nCarga\n(2.8)\nEn la práctica es difícil definir exactamente el efecto del\nrozamiento. Al asumir que el rozamiento es igual a cero, el\nmargen de error en el tiempo calculado es inexistente.\n8\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Evaluación de la potencia de frenado\nCurva de frenado natural con carga constante\n9\n8\n7\n6\nPotencia [10 * kW], Tiempo [s], Par [100 * Nm]\n5\n4\n3\n2\n1\n0\n1000 900 800 700 600 500 400 300 200 100\nTiempo acumulativo\nPotencia de frenado\nnatural [KW] * 10\nPar de frenado\nnatural [Nm] * 100\n0\nVelocidad [rpm]\nFigura 2.1 Tiempo de frenado acumulativo, potencia y par de\nfrenado en función de la velocidad.\nT () = J * a = J *\n(@Arranque\n3\nFinal\n1\n=J *\n(n\n- n __ )* 2 st\n`Arranque\nFinal\nCarga\nt\nt * 60\n(2.9)\nPara despejar t se deriva la fórmula:\n(2.10)\nt = J *\n60 * TCarga (@)\n(narranque n Final)* 2 Tt\nSuponiendo que la inercia de la carga sea de 60 kgm2 y que\nel par de la carga sea de 800 Nm en todo el rango de\nvelocidades, con una carga a 1000 rpm y el par del motor\npuesto a cero, la carga pasa a velocidad cero en el tiempo:\nt = J *\n(nArranque-N Final) * 2 TL\n= 60 *\n60 * T (@)\nCarga\n60 * 800\n(1000 - 0) * 2 T\n= 7,85 s\n(2.11)\nEsto es así en las aplicaciones en las que el par de la carga\nes constante al empezar el frenado. Cuando desaparece el\npar de la carga (por ej., al romperse una cinta transportadora)\naunque no cambie la energía cinética de la mecánica, el par\nde la carga que deceleraría la mecánica no está activo. En\ntal caso, si el motor no está frenando, la velocidad sólo\ndisminuirá como resultado del rozamiento mecánico.\nSupongamos ahora que tenemos la misma inercia y el mismo\npar de la carga a 1000 rpm, pero que el par de la carga\ncambia de forma cuadrática. Si el par del motor se fuerza\na cero, el par de la carga disminuye en proporción cuadrática\na la velocidad. Si el tiempo de frenado acumulativo se\npresenta en función de la velocidad, vemos que el tiempo\nde frenado natural a la velocidad más baja (de 200 rpm a\n100 rpm) aumenta de forma considerable en comparación\ncon el cambio de velocidad de 1000 rpm a 900 rpm.\nGuía técnica nº 8 - Frenado eléctrico\n9",
+      "tablas": [
+        [
+          [
+            "T\n*\n*",
+            "(@Arranque 3 Final 1 =J *",
+            "(n - n __ )* 2 st `Arranque Final"
+          ],
+          [
+            "() = J\na = J\nCarga",
+            "t",
+            "t * 60",
+            "(2.9)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Evaluación de la potencia de frenado\nCurva de frenado natural con carga cuadrática\n9\n1\n8\n7\n6\n1\n5\nPotencia [10 * kW], Tiempo [s], Par [100 * Nm]\n4\n3\n- -\nPotencia de fre-\n2\nnado [KW] * 10\n1\nPar de frenado\n[Nm] * 100\n0\n1000 900 800\n700\n600 500\n400\n300\n200 100\n0\nVelocidad [rpm]\nFigura 2.2 Curva de frenado natural para un par y una potencia de\nfrenado en funcion de la velocidad de un ventilador de 90 kW.\nSe puede trazar fácilmente una curva de frenado natural\npartiendo de la potencia y la velocidad en el punto nominal\naplicando las fórmulas (2.5) y (2.6).\nCurva de frenado natural con carga cuadrática\n140\n120\n100\n80\nTiempo [s]\n60\n40\n20\n0\n1000 900 800 700 600 500 400 300 200 100\nVelocidad [rpm]\n0\n-Tiempo de frenado\nFigura 2.3 Tiempo de frenado acumulativo de un ventilador de 90 kW.\nAhora pensemos en un caso en el que se exige que el sistema\nmecánico frene en un tiempo determinado a partir de una\nvelocidad concreta.\nEl ventilador de 90 KW tiene una inercia de 60 kgm2. El punto\nde funcionamiento nominal del ventilador es 1000 rpm. El\nventilador se tiene que parar en 20 segundos. El efecto de\nfrenado natural provocado por las características de la carga\nes el máximo al principio del frenado. La energía máxima de\nla inercia se puede calcular con la fórmula (2.12). La potencia\nmedia de frenado se puede calcular dividiendo esta energía\nde frenado por el tiempo. Este valor es, por supuesto, muy\nconservador debido a que no se tienen en cuenta las\ncaracterísticas de carga del ventilador.\n10\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Evaluación de la potencia de frenado\n1\n2\nWin =\n* J * 0'=\n1\nn\n* * ( ~ * 2 )2 = P* t\n(2.12)\n2\nP =*** (60 * 2 TL) *=\n1\n2\n*60+( 60 * 2 TL) *\n1000\n20\n1\n= 16,4 KW\n(2.13)\nCuando se dimensiona el chopper de frenado para este valor\nde 16,4 KW y la capacidad de frenado del motor a una\nvelocidad mayor es muy superior a 16,4 KW, el accionamiento\ndebe incorporar una función de supervisión para obtener la\nmáxima potencia de regeneración, función disponible en\nalgunos accionamientos.\nSi se desea optimizar el dimensionado del chopper de\nfrenado para un tiempo de frenado concreto se puede\nempezar observando la figura (2.3). La velocidad pasa\nrápidamente de 1000 a 500 rpm sin frenado adicional. El\nefecto de frenado natural es el máximo al principio del\nfrenado, lo que indica claramente que no hace falta empezar\na frenar el motor con esta potencia de 16 KW. Tal como puede\nverse en la figura (2.3), la velocidad pasa de 1000 rpm a 500\nrpm sin frenado adicional en menos de 10 segundos. En\neste punto temporal el par de la carga sólo es el 25% del\nnominal y la energía cinética que conserva el ventilador\ntambién es sólo el 25% de la energía a 1000 rpm. Si se repite\na 500 rpm el cálculo realizado a 1000 rpm, puede verse que\nla potencia de frenado para una deceleración de 500 rpm a\n0 rpm es aproximadamente igual a 8 kW. Tal como se ha\ndicho en cálculos anteriores, este valor también es\nconservador porque no se tiene en cuenta la curva de frenado\nnatural provocada por las características de la carga.\nEn resumen, se consigue sin problemas un tiempo de\ndeceleración de 20 segundos de 1000 rpm a 0 rpm con un\nchopper y una resistencia de frenado dimensionados para\n8,2 KW. Fijando el límite de la potencia regenerativa del\naccionamiento a 8,2 KW se fija el nivel de la potencia de\nfrenado a un nivel adecuado.\nWin =2+J = c3= + J * ( = * 2 TL)= P+ t\n(2.14)\nP= 2* ** ( 60 * 2 TL) 2 *=\n*60* ( 60 * 2 TL)2+\n500\n1\n= 8,2 KW\n(2.15)\n10\nGuía técnica nº 8 - Frenado eléctrico\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Evaluación de la potencia de frenado\n2.2.3 Resumen\ny conclusiones\nExisten dos tipos básicos de carga: a par constante y a par\ncuadrático.\nAplicación a par constante:\n· La característica del par de la carga no depende de la\nvelocidad. El par de la carga es aproximadamente el mismo\nen todo el rango completo de velocidades.\n· La potencia aumenta linealmente a medida que aumenta\nla velocidad y viceversa.\n· Aplicaciones a par constante típicas: grúas y cintas\ntransportadoras.\nAplicación a par cuadrático:\n· El par de la carga es proporcional al cuadrado de la\nvelocidad.\n· Cuando aumenta la velocidad, la potencia es igual a la\nvelocidad al cubo.\n· Aplicaciones a par cuadrático típicas: ventiladores y\nbombas.\nEvaluación de la potencia de frenado:\n· Las características de carga cuadrática significan una\ndeceleración natural rápida entre el 50-100% de las\nvelocidades nominales, lo que debe utilizarse al\ndimensionar la potencia de frenado necesaria.\n· El par de la carga cuadrático significa que a velocidades\nbajas la deceleración natural se debe principalmente al\nrozamiento.\n· La característica del par de la carga constante es una\ndeceleración natural constante.\n· La potencia de frenado depende del par y la velocidad al\npunto de funcionamiento concreto. Dimensionar el chopper\nde frenado basándose en la potencia máxima de frenado\nsuele provocar un sobredimensionado.\n· La potencia de frenado no depende de la intensidad (par)\nnominal del motor ni de la potencia tal cual.\n· Si desaparece el par de la carga cuando empieza el frenado\nel efecto de frenado natural es reducido, lo que influye en\nel dimensionado del chopper de frenado.\n12\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Capítulo 3 - Soluciones de frenado\neléctrico en accionamientos\nLos accionamientos de CA modernos constan de un rectifi-\ncador de entrada que convierte la tensión de CA en tensión\nde CC que se almacena en condensadores de CC. El inver-\nsor convierte a su vez la tensión de CC en tensión de CA\nalimentando al motor de CA a la frecuencia deseada. La\npotencia de proceso necesaria fluye a través del rectificador,\nde las barras de CC y el inversor hacia el motor. La cantidad\nde energía almacenada en los condensadores de CC es muy\npequeña en comparación con la potencia necesaria, es decir,\nel rectificador tiene que dar constantemente la potencia que\nnecesita el motor más las pérdidas del sistema de\naccionamiento.\n3.1 Frenado de\nflujo del motor\nEl frenado de flujo es un método que se basa en las pérdidas\ndel motor. Cuando se necesita frenado en el sistema de\naccionamiento, aumenta el flujo del motor y, asimismo, el\ncomponente de intensidad de magnetización empleado en\nel motor. Se puede controlar fácilmente el flujo mediante el\nprincipio de control directo del par (si se desea más\ninformación sobre el DTC véase la Guía técnica nº 1). Con el\nDTC se controla directamente el inversor para obtener el\npar y el flujo del motor deseados. Durante el frenado de\nflujo el motor está bajo control DTC, lo que asegura que se\npueda frenar según la rampa de velocidad especificada. Este\nconcepto es muy distinto al freno por inyección de CC que\nsuele utilizarse en accionamientos. En el método por\ninyección de CC se inyecta intensidad de CC al motor para\nque se pierda el control del flujo del motor durante el frenado.\nEl método de frenado de flujo con DTC permite que el motor\npase rápidamente de frenar a actuar como motor cuando se\nnecesite.\nEn el frenado de flujo el aumento de la intensidad significa\nun aumento de las pérdidas en el motor. La potencia de fre-\nnado también aumenta aunque no aumente la potencia de\nfrenado aplicada al convertidor de frecuencia. El aumento\nde la intensidad genera un aumento de las pérdidas en las\nresistencias del motor. Cuando mayor sea la resistencia,\nmayor será la disipación de la energía de frenado en el mo-\ntor. Normalmente, en motores de baja potencia (menos de\n5 KW) la resistencia del motor es relativamente grande en\nrelación con la intensidad nominal del motor. Cuanto mayor\nsea la potencia o la tensión del motor, menor será la resis-\ntencia del motor en relación con la intensidad del motor.\nDicho de otro modo, el frenado de flujo alcanza su máxima\neficacia en un motor de baja potencia.\nGuía técnica nº 8 - Frenado eléctrico\n13",
+      "tablas": [
+        [
+          [
+            "",
+            "Los accionamientos de CA modernos constan de un rectifi- cador de entrada que convierte la tensión de CA en tensión de CC que se almacena en condensadores de CC. El inver- sor convierte a su vez la tensión de CC en tensión de CA alimentando al motor de CA a la frecuencia deseada. La potencia de proceso necesaria fluye a través del rectificador, de las barras de CC y el inversor hacia el motor. La cantidad de energía almacenada en los condensadores de CC es muy pequeña en comparación con la potencia necesaria, es decir, el rectificador tiene que dar constantemente la potencia que necesita el motor más las pérdidas del sistema de accionamiento."
+          ],
+          [
+            "3.1 Frenado de flujo del motor",
+            "El frenado de flujo es un método que se basa en las pérdidas del motor. Cuando se necesita frenado en el sistema de accionamiento, aumenta el flujo del motor y, asimismo, el componente de intensidad de magnetización empleado en el motor. Se puede controlar fácilmente el flujo mediante el principio de control directo del par (si se desea más información sobre el DTC véase la Guía técnica nº 1). Con el DTC se controla directamente el inversor para obtener el par y el flujo del motor deseados. Durante el frenado de flujo el motor está bajo control DTC, lo que asegura que se pueda frenar según la rampa de velocidad especificada. Este concepto es muy distinto al freno por inyección de CC que suele utilizarse en accionamientos. En el método por inyección de CC se inyecta intensidad de CC al motor para que se pierda el control del flujo del motor durante el frenado. El método de frenado de flujo con DTC permite que el motor pase rápidamente de frenar a actuar como motor cuando se necesite."
+          ],
+          [
+            "En el frenado de flujo el aumento de la intensidad significa un aumento de las pérdidas en el motor. La potencia de fre- nado también aumenta aunque no aumente la potencia de frenado aplicada al convertidor de frecuencia. El aumento de la intensidad genera un aumento de las pérdidas en las resistencias del motor. Cuando mayor sea la resistencia, mayor será la disipación de la energía de frenado en el mo- tor. Normalmente, en motores de baja potencia (menos de 5 KW) la resistencia del motor es relativamente grande en relación con la intensidad nominal del motor. Cuanto mayor sea la potencia o la tensión del motor, menor será la resis- tencia del motor en relación con la intensidad del motor. Dicho de otro modo, el frenado de flujo alcanza su máxima eficacia en un motor de baja potencia."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Soluciones de frenado eléctrico en accionamientos\nPar de frenado (%)\n120\n1\n80\nSin frenado de flujo\n40\n2\n413\n0\n5\n5\n10\n120\nPotencia nom. motor\n1 2,2 KW\n1\n80\n2 15 KW\n3 37 kW\n40\n2\n4 75 KW\n3\n5 250 KW\n+\n4\n0\n1\n(5\n5\n10\n20\n30\n40\n50\nFrenado de flujo\n20\n30\n40\n50\nf (Hz)\nf (Hz)\nFigura 3.1 Porcentaje de par de frenado del motor del par nominal\nen función de la frecuencia de salida.\nPrincipales ventajas del frenado de flujo:\n· Con el método de control DTC no se necesitan componentes\nni costes adicionales.\n· El motor se controla durante el frenado, a diferencia del\nfreno por inyección de CC que se suele usar en\nconvertidores.\nPrincipales desventajas del frenado de flujo:\n· Mayor tensión térmica en el motor si se repite el frenado\ndurante períodos breves.\n· La potencia de frenado está limitada por las características\ndel motor, como por ejemplo la resistencia.\n· El frenado de flujo es útil principalmente en motores de\nbaja potencia.\n3.2 Chopper de En los accionamientos estándar el rectificador suele ser un\nfrenado y\nresistencia de\nfrenado\nrectificador de diodos de 6 pulsos o 12 pulsos que sólo\npuede suministrar alimentación desde la red de CA a las\nbarras de CC, pero no al revés. Si cambia el flujo de la\npotencia como ocurre en las aplicaciones en dos o cuatro\n3.2.1 El\ncuadrantes, la potencia suministrada por el proceso carga\nlos condensadores de CC siguiendo la fórmula (3.1) y\nalmacenamiento\nde energía en el\nconvertidor de\nfrecuencia\nempieza a aumentar la tensión de bus de CC. La capacitancia\nC es un valor relativamente bajo en un accionamiento de CA\nque produce un rápido aumento de la tensión, tensión que\nsólo pueden soportar los componentes de un convertidor\nde frecuencia hasta un nivel determinado.\n14\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Soluciones de frenado eléctrico en accionamientos\nC * U2\nW = P * t =-\n2\n(3.1)\nUcc =\n1\n2 * W\n2 * P * t\nC\n(3.2)\nC\nSe puede impedir un aumento excesivo de la tensión de bus\nde CC de dos formas: el inversor impide el flujo de potencia\ndel proceso al convertidor de frecuencia. Ello se consigue\nlimitando el par de frenado para mantener una tensión de\nbus de CC constante. Esta operación se denomina control\nde sobretensión y es una prestación estándar de la mayoría\nde accionamientos modernos. Sin embargo, ello significa\nque el perfil de frenado de la maquinaria no se realiza según\nla rampa de velocidad especificada por el usuario.\nLa capacidad de almacenamiento de energía del inversor\nsuele ser muy poca. Por ejemplo, en un accionamiento de\n90 KW la capacitancia suele ser de 5 mF. Si el accionamiento\nrecibe alimentación de 400 V CA, las barras de CC tienen\n1,35 * 400 = 565 V CC. Suponiendo que los condensadores\npuedan soportar un máximo de 735 V CC, el tiempo en que\nse puede alimentar una potencia nominal de 90 kW al\ncondensador de CC puede calcularse del siguiente modo:\nt =\nC * U2\n2 * P\n2 * 90 * 103\n5 * 103* (7352 - 5652)\n= 6 ms\n(3.3)\nEste rango de valores se aplica por lo general a todos los\naccionamientos de CA de baja tensión modernos con\nindependencia de su potencia nominal. En la práctica ello\nsignifica que el regulador de sobretensión y su regulador\n'bestia de carga' del par del motor de CA tiene que ser muy\nrápido. También la activación de la regeneración o del\nchopper de frenado tiene que ser muy rápida cuando se usa\nal configurar el accionamiento.\n3.2.2 Principio\ndel chopper de\nfrenado\nLa otra posibilidad de limitar la tensión de bus de CC consiste\nen dirigir la energía de frenado hacia una resistencia a través\nde un chopper de frenado. El chopper de frenado es un\nconmutador eléctrico que conecta la tensión de bus de CC a\nuna resistencia en la que la energía de frenado se transforma\nen calor. Los choppers de frenado se activan\nautomáticamente cuando la tensión de bus de CC actual\nsupera un nivel determinado según la tensión nominal del\ninversor.\nGuía técnica nº 8 - Frenado eléctrico\n15",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Soluciones de frenado eléctrico en accionamientos\nUDC+\nV1\nR+\nCircuito\nde\ncontrol\nC1\no R-\nUDC-\nFigura 3.2 Ejemplo de diagrama de circuitos del chopper de\nfrenado. UDC significa los terminales de las barras de CC y R los\nterminales de las resistencias.\nPrincipales ventajas de la solución con el chopper y la\nresistencia de frenado:\n· Construcción eléctrica sencilla y tecnología bien conocida.\n· Inversión básica baja en el chopper y la resistencia.\n· El chopper funciona aunque se pierda la alimentación de\nCA. Puede resultar necesario el frenado ante un fallo\nmomentáneo de la red principal, como por ejemplo en\nascensores u otras aplicaciones de alta seguridad.\nPrincipales desventajas del chopper y la resistencia de\nfrenado:\n· Se pierde la energía de frenado si no se puede utilizar el\naire calentado.\n· El chopper y las resistencias necesitan más espacio.\n· Puede necesitarse una mayor inversión en el sistema de\nrecuperación de la refrigeración y calefacción.\n· Los choppers de frenado se suelen dimensionar para un\nciclo concreto, por ejemplo, 100% potencia 1/10 minutos,\npara tiempos de frenado más largos se necesita un\ndimensionado más exacto del chopper de frenado.\n· Mayor riesgo de incendios debido al calentamiento de las\nresistencias y a la posible presencia de polvo y\ncomponentes químicos en el ambiente.\n· La mayor tensión de bus de CC durante el frenado causa\nun mayor esfuerzo eléctrico al aislamiento del motor.\nCuándo se debe aplicar un chopper de frenado:\n· El ciclo de frenado se necesita sólo de vez en cuando.\n· La cantidad de energía de frenado en relación con la energía\nde actuación como motor es extremadamente pequeña.\n· El frenado se necesita durante un fallo momentáneo de la\nred principal.\n16\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Soluciones de frenado eléctrico en accionamientos\nCuándo hay que plantearse otras soluciones distintas a un\nchopper y una resistencia de frenado:\n· Frenado continuo o repetido a intervalos regulares.\n· La cantidad total de energía de frenado es elevada en\nrelación con la energía de actuación como motor necesaria.\n· La potencia de frenado instantáneo es alta, por ejemplo,\nvarios centenares de kW durante varios minutos.\n· El aire ambiente incorpora cantidades importantes de\npolvo u otros componentes potencialmente combustibles,\nexplosivos o metálicos.\n3.3 Configura-\nción antiparalela\nde los puentes\nde tiristores\nEn un convertidor de frecuencia, los puentes rectificadores\nde diodos se pueden sustituir por los dos rectificadores\ncontrolados por tiristores en antifase. Esta configuración\npermite cambiar el puente rectificador según el flujo de\npotencia que se necesite en el proceso.\nLos principales componentes de la unidad de alimentación\npor tiristores son dos puentes de tiristores de 6 pulsos. El\npuente directo convierte la alimentación trifásica de CA en\nCC. Suministra alimentación a los convertidores (inversores)\nmediante el circuito intermedio. El puente inverso convierte\nla CC en CA cuando se necesita desviar el poder de frenado\ndel motor sobrante a la red de alimentación.\nDirecto\nInverso\nV V\n3 ~\ncc\nV V V\nFigura 3.3 Diagrama lineal de una unidad de alimentación por\ntitistores antiparalela.\nSólo funciona uno de los puentes mientras el otro está\nbloqueado. El ángulo de disparo del tiristor se controla\nconstantemente para mantener la tensión del circuito\nintermedio al nivel deseado. La selección del puente directo/\ninverso y el control de la tensión del circuito intermedio se\nbasan en la determinación de la intensidad de alimentación,\nla tensión de alimentación y la tensión del circuito intermedio.\nLa reactancia de CC filtra las crestas de intensidad del circuito\nintermedio.\nGuía técnica nº 8 - Frenado eléctrico\n17",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Soluciones de frenado eléctrico en accionamientos\nPrincipales ventajas del puente de tiristores antiparalelo:\n· Solución bien conocida.\n· Inversión menor a la necesaria con una solución IGBT.\n· La tensión de CC se puede regular a un valor inferior que\nla red, lo que en algunas aplicaciones especiales puede\nser ventajoso.\nPrincipales desventajas del puente de tiristores antiparalelo:\n· La tensión de bus de CC siempre es inferior a la tensión de\nalimentación de CA para mantener un margen de\nconmutación. De este modo, la tensión alimentada al motor\nes más baja que la CA de entrada. Sin embargo, esto se\npuede solucionar utilizando un autotransformador\nelevador en la alimentación.\n· Si la CA de alimentación desaparece se corre el riesgo de\nque se fundan los fusibles debido al fallo de conmutación\nde los tiristores.\n· Coso varía con la carga.\n· La distorsión armónica total es más alta que en las unidades\nIGBT regenerativas.\n· La distorsión de la intensidad fluye a través de otras\nimpedancias de la red y puede provocar una distorsión de\nla tensión no deseada en otros dispositivos alimentados\ndesde el punto donde existe la distorsión de tensión.\n· No se dispone de capacidad de frenado durante los\nfallos momentáneos de la red principal.\n900\n600\n300\nTensión / V, Intensidad / A\n0\n100\n104\n108\n116\n. 112\n120\n124\n128\n132\n136\n-300\n\" .... Tensión de fase\nsinusoidal\nTensión de fase no\nsinusoidal\nIntensidad de red\n-600\n-900\nTiempo / ms\nFigura 3.4. Ejemplo de ondas de tensión de intensidad y tensión de\nun puente antiparalelo durante el frenado.\n18\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Soluciones de frenado eléctrico en accionamientos\n3.4 Configura-\nción con puente\nIGBT\n3.4.1 Principios\ngenerales de\nlas unidades de\nregeneración\nIGBT\nLa regeneración IGBT se basa en los mismos principios que\nla transmisión de energía en una red de distribución de\nenergía. En una red de distribución de energía se conectan\nentre sí varios generadores y puntos de carga. Se puede\nsuponer que en el punto de conexión la red de distribución\nde energía es un generador síncrono de gran tamaño con\nuna frecuencia fija. El puente IGBT de entrada del\naccionamiento (más tarde la unidad convertidora) se puede\nconsiderar otro sistema de tensión de CA conectado a través\nde una reactancia al generador. El principio de la transmisión\nde energía entre dos sistemas de CA con una tensión U y\nconectados entre sí se puede calcular con la fórmula (3.4).\n*U\nRec\nP_ Linea\nX\nsin&\n(3.4)\nLa fórmula indica que para transmitir la energía entre estos\ndos sistemas tiene que existir una diferencia de fase en el\nángulo entre las tensiones de los dos sistemas de CA. Para\ncontrolar el flujo de la energía entre los dos sistemas se\ntiene que controlar el ángulo.\nUnidad generadora\n3- 11//mm /\nUnidad generadora\n30,0%\n25,0%\n20,0%\n15,0%\n10,0%\n5,0%\n0,0%\n5 7 11 13 17 19 23 25 29 31 35 37 41 47 49 53 55 71 77\nOrden de los armónicos\nFigura 3.5. Onda de tensión de la intensidad de red y armónicos\ntípicos de una unidad generadora IGBT.\n3.4.2 Regenera-\nción IGBT:\nobjetivos de\nregulación\nEn las unidades de regeneración IGBT existen tres objetivos\nde regulación generales. El primero consiste en mantener\nestable la tensión de bus de CC con independencia del valor\nabsoluto y la dirección del flujo de la potencia. Así se asegura\nque los inversores que alimentan motores de CA puedan\nfuncionar óptimamente independientemente del punto de\nfuncionamiento gracias a una tensión de bus de CC estable.\nLa tensión de bus de CC es estable cuando el flujo de potencia\nhacia las barras de CC es igual al de salida de éstas. Esta\nregulación del flujo de potencia se consigue regulando el\nángulo de potencia entre los dos sistemas de CA.\nGuía técnica nº 8 - Frenado eléctrico\n19",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Soluciones de frenado eléctrico en accionamientos\nEscalón de carga\n80\n60\n40\nPotencia / KW, Tensión / 10 * V\n20\n0\n-20\n-40\n0\n20\n40 Tiempo / ms\nTensión de CC\nPotencia\nFigura 3.6. Cambio rápido de funcionamiento regenerativo a motor.\nLa tensión de bus de CC es muy estable durante esta transición.\nEl segundo objetivo de regulación consiste en minimizar la\nintensidad de alimentación necesaria (funcionar a cosq = 1,0),\nlo que se consigue regulando la tensión de salida de la unidad\nconvertidora. En algunas aplicaciones se desea que la unidad\nconvertidora IGBT también funcione a modo de carga\ninductiva o capacitativa.\nEl tercer objetivo de regulación es minimizar el contenido de\narmónicos de la intensidad de alimentación. Los principales\ncriterios de diseño en este caso son el valor de la reactancia\ny que el método de regulación sea adecuado.\n3.4.3 Control\ndirecto del par\nen forma de\ncontrol directo\nde la potencia\nEl control directo del par (DTC) es una forma de regular un\nmotor de CA alimentado por un inversor. El principio del\ncontrol activa y desactiva los conmutadores IGBT\ndirectamente a partir de la diferencia entre el par actual del\nmotor de CA y el par de referencia del usuario (Guía técnica\nnº 1). El mismo principio se aplica a una unidad convertidora\nque regula el flujo de potencia desde la red de alimentación\nal accionamiento y viceversa. La potencia se multiplica por\nel par por la frecuencia angular, que es constante en la red:\ncontrolar el par significa controlar el flujo de potencia.\np- U. U\nsino =|T|@]\n(3.5)\nPar_REF\nPar directo y flujo\nControl de histéresis\nFlujo_REF\nPar_BITS\nHisteresis\nFlujo_BITS\nControl_BITS\nASICS\nLógica de\nconmuta-\nción óptima\nS1, S2, S3\nFlujo_ACT\nPar_ACT\n0\nModelo de transmi-\nsión de potencia\nTensión CC\nS1, S2, S3\nL\nCalcular los\nvalores actuales\nIntensidad\nControl tensión de CC\n2\nFigura 3.7. Diagrama de control fundamental de la unidad\nregenerativa IGBT con DTC.\n20\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Soluciones de frenado eléctrico en accionamientos\nEl método de control DTC con la tecnología IGBT contribuye\na que se generen pocos armónicos. Por ello, la unidad de\nalimentación IGBT puede sustituir a las configuraciones de\nalimentación de 12 pulsos o 18 pulsos en un cuadrante que\nse suelen utilizar para reducir los armónicos en la sección\nde alimentación. Una unidad de alimentación IGBT también\nes una solución, por tanto, en aquellos casos en los que el\nmayor problema son los armónicos y no cómo canalizar la\nenergía de frenado.\nPrincipales ventajas de una unidad de regeneración IGBT:\n· Pocos armónicos en la alimentación tanto en actuación\ncomo motor como en regeneración.\n· Dinámica alta durante los cambios rápidos de flujo en la\nsección de carga.\n· Posiblidad de aumentar la tensión de CC más que la\nalimentación de CA de entrada, lo que puede usarse para\ncompensar una red débil o aumentar la capacidad de par\nmáximo del motor en la frecuencia de inicio de\ndebilitamiento del campo.\n· Compensación total de las caídas de tensión del sistema\ngracias a la posibilidad de sobrepar de la tensión.\n· Posibilidad de regular el factor de potencia.\n· Funcionamiento con cortes de la red con sincronización\nautomática a la rejilla.\n· La tensión de bus de CC tiene aproximadamente el mismo\nvalor durante la monitorización que durante el frenado. Sin\nesfuerzos de tensión adicionales ni aislamiento del\nbobinado del motor durante el frenado.\n850\n750\nTensión / V\n650\n550\n450\n0 2 4 6 8 10 12 14 16 18 20 22 24\nTiempo / ms\n...\nTensión CC actual\nTensión CC de refer.\nFigura 3.8. Posibilidad de sobrepar de la tensión de alimentación.\nGuía técnica nº 8 - Frenado eléctrico\n21",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "Soluciones de frenado eléctrico en accionamientos\nPrincipales desventajas de una unidad de regeneración IGBT:\n· Mayor coste de compra.\n. No se dispone de la capacidad de frenado durante fallos\nmomentáneos de la red principal.\n· Armónicos de la tensión de alta frecuencia debido a la\nelevada frecuencia de conmutación. Estos componentes\nde la tensión de varios kilohertzios pueden excitar a los\npequeños condensadores que se utilicen en otros\ndispositivos eléctricos. Con un diseño y disposición\nadecuados de los transformadores de alimentación de los\ndistintos dispositivos se evitan estos fenómenos.\nCuándo se debe utilizar una unidad de regeneración IGBT:\n· El frenado es continuo o se repite con regularidad.\n· El poder de frenado es muy alto.\n· Cuando se ahorra espacio es comparación con la solución\na base de resistencias de frenado.\n· Cuando los límites de los armónicos de red son cruciales.\n3.4.4 Dimensio- Para dimensionar la unidad IGBT se parte de la potencia\nnado de una\nunidad de\nregeneración\nIGBT\nnecesaria. Supongamos que la potencia en el eje necesaria\ndurante la actuación como motor es de 130 KW y que la\npotencia de frenado, de 100 KW. Para dimensionar la unidad\nde alimentación IGBT se selecciona el valor máximo de\npotencia de actuación como motor o de frenado, que en\neste caso es de 130 KW. La tensión del motor es de 400 V. El\nvalor mínimo para la red de alimentación es de 370 V.\nEn este caso se puede usar el sobrepar de tensión: se\naumenta la tensión de bus de CC hasta una tensión de CA de\n400 V. Sin embargo, la intensidad de alimentación necesaria\nse calcula partiendo del nivel 370. Suponiendo que existen\npérdidas del 5% del sistema en el motor y el accionamiento,\nla potencia total necesaria de la rejilla es de 136,5 kW. La\nintensidad de alimentación se puede calcular con la fórmula:\nI\nent\nP\nV 3 * U\nent\n136,5 KW\n= 213 A\n(3.6)\n1 3 * 370 V\nLa unidad de regeneración IGBT se selecciona partiendo\núnicamente de la intensidad calculada.\n3.5 CC común\nCuando en un proceso hay varios accionamientos y un motor\nnecesita capacidad de frenado mientras los demás funcionan\ncomo motor, la solución con barras de CC comunes es muy\neficaz para reaprovechar la energía mecánica. Un sistema\nde accionamiento con barras de CC comunes consta de un\nrectificador de alimentación aparte que convierte CA en CC,\ne inversores que alimentan a motores de CA conectados a\nlas barras de CC comunes (las barras de CC son el canal\n22\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Soluciones de frenado eléctrico en accionamientos\nque desplaza la energía de frenado de un motor en beneficio\nde los demás motores). En la figura (3.9) se indica la\nconfiguración básica de las barras de CC comunes.\nEtapa de alimentación\nEtapas de frenado Etapas de accionamiento\nUnidad\nUnidad de Unidad de\nUInidad de Unidad de frenado (opcional)\nde control entrada\nfiltro sólo\nalimentación\ncon alimen- DSU/TSU/\nauxiliar\ntación IGBT IGBT\nBarras de CC comunes\nACU\nICU\nFIU\nUnidad\nde aliment\ntación\n24 V\nChopper\nResistencia\nInversor\nInversor\nCA\nFigura 3.9. Configuración básica de las barras de CC comunes.\nPrincipales ventajas de las barras de CC comunes:\n· Flujo de potencia fácil de equilibrar entre accionamientos.\n· Bajas pérdidas del sistema al convertir la energía de frenado\ngracias a las barras de CC comunes.\n· Aunque la potencia de frenado instantáneo sea mayor que\nla potencia de actuación como motor, no se tienen que\ndimensionar el chopper y la resistencia de frenado para\nobtener una plena potencia de frenado.\n· Si se necesita la potencia de frenado durante períodos\nprolongados se pueden usar varios rectificadores.\nPrincipales desventajas de la solución con barras de CC\ncomunes con un rectificador en un cuadrante:\n· La potencia instantánea de actuación como motor tiene\nque ser mayor que o igual a la potencia de frenado.\n· Se necesitan el chopper y la resistencia de frenado si la\npotencia de frenado instantáneo es mayor que la potencia\nde actuación como motor.\n· Si hay pocos motores, el coste adicional de un inversor\ndedicado que desconecte el dispositivo de las barras de\nCC aumenta el coste de la inversión.\nCuándo utilizar la solución con barras de CC comunes con\nun rectificador en un cuadrante:\n· El número de accionamientos es alto.\n· La potencia de actuación como motor siempre es más alta\nque la potencia de frenado o sólo se necesita una potencia\nde frenado baja para el chopper de frenado.\nGuía técnica nº 8 - Frenado eléctrico\n23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Capítulo 4 - Evaluar el coste del ciclo\nde vida de distintos frenados eléctricos\nCada vez es más importante evaluar el coste del ciclo de\nvida total al invertir en productos para ahorrar energía. El\naccionamiento de CA se emplea para regular la velocidad y\nel par. Esta función básica de los accionamientos de CA\nsignifica ahorros en el consumo de energía en comparación\ncon otros métodos de control. En las aplicaciones de bombas\ny ventiladores apenas se necesita el frenado. Sin embargo,\nlos accionamientos de CA modernos se utilizan cada vez\nmás en aplicaciones que necesitan frenado.\n4.1 Cómo\ncalcular el coste\ndirecto de la\nenergía\nAntes hemos citado diversos criterios técnicos. A conti-\nnuación se analizan los factores económicos de las distintas\nopciones de frenado eléctrico.\nEl coste directo de la energía se puede calcular partiendo,\npor ejemplo, del precio de la energía y del tiempo y la\npotencia de frenado calculados por día. Si bien el precio de\nla energía varía según los países, se puede aplicar un precio\naproximado de 0,05 euros por kilowatio-hora.\n1 Euro ~ 1 USD. El coste anual de la energía se puede calcular\ncon la fórmula:\nCoste = Ciclo Frenado (h/día)* Potencia media frenado (KW) *\nPrecio Energía (Euros/kWh) * 365\n(4.1)\nPor ejemplo, un accionamiento de 100 KW funciona 8000 horas\nal año y frena con una potencia media de 50 KW durante\n5 minutos cada hora, es decir, 667 horas al año. El coste\ndirecto anual de la energía de frenado es de 1668 Euros.\n4.2 Cómo\nevaluar el coste\nde la inversión\nLas inversiones necesarias para los distintos métodos de\nfrenados varían. Deben evaluarse los siguientes componentes\ndel coste de la inversión.\nChopper de frenado:\n· El coste de la inversión adicional que representan el chopper\ny la resistencia de frenado más el coste del espacio\nadicional que se necesita para estos componentes.\n· El coste de la inversión en ventilación adicional necesaria\npara el chopper de frenado.\n24\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Evaluar el coste del ciclo de vida de distintos frenados eléctricos\nFrenado eléctrico por tiristores o IGBT:\n· Coste adicional de la inversión en el frenado regenerativo\nIGBT o por tiristores en comparación con el mismo\naccionamiento sin frenado eléctrico.\nBarras de CC comunes:\n· Coste adicional de la inversión en el chopper y la resistencia\nde frenado, incluyendo el espacio necesario para estos\ncomponentes en una solución con barras de CC comunes.\n· Diferencia del coste de la inversión entre la solución con\nbarras de CC comunes y un único accionamiento.\n4.3 Cómo\ncalcular el coste\ndel ciclo de vida\nEl cálculo del coste del ciclo de vida apoya la decisión\npuramente económica al realizar una inversión. El precio de\nla energía y de los accionamientos varía según el país, la\ncompañía eléctrica, el tamaño de la empresa, los tipos de\ninterés, el tiempo durante el que se utiliza la inversión y la\nsituación macroeconómica global. Los valores absolutos de\nlos precios indicados en los siguientes ejemplos se usan\núnicamente para ilustrar los principios del cálculo.\nCaso 1 - Frenado de vez en cuando\nImaginemos la siguiente aplicación:\nLa potencia continua de actuación como motor es de\n200 kW a una velocidad de eje de 1500 rpm. En caso de que\nse emita un comando de paro de emergencia, la rampa tiene\nque disminuir en 10 segundos. Partiendo de la experiencia\nen el proceso, cada mes se activa un paro de emergencia.\nLa inercia J del sistema de accionamiento es de 122 kgm2.\nCuando se activa el paro de emergencia se puede pasar\npor alto el par de la carga.\nCálculo del par de frenado necesario para el motor:\n(@\n-\nArranque\n'Final'\nJ\nFinal”\nt * 60\n- n_ ) * 2 T\nT = J *\nt\n(n\n*\nArranque\n10 * 60\n: 1915 Nm\n122 *\n(1500 - 0) * 2 x\n(4.2)\nEl par típico de un motor de 200 KW y 1500 rpm es de unos\n1200 Nm. Un motor de CA normal regulado instantáneamente\npor un inversor puede funcionar a un par igual a un 200%\ndel valor nominal. Para obtener pares más altos se necesita\nuna intensidad de motor propocionalmente más alta.\nGuía técnica nº 8 - Frenado eléctrico\n25",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Evaluar el coste del ciclo de vida de distintos frenados eléctricos\nLa potencia de frenado es la máxima al principio del ciclo de\nfrenado.\nFr, max\n= T* 0 = 1915*\n1500\n*2 T ~ 300 KW\n(4.3)\n60\nEl chopper y la resistencia de frenado tienen que soportar\ninstantáneamente la intensidad para una potencia de 300 kW.\nA continuación se calcula la potencia media de frenado.\nWin = * J + co2= 1 * J * ( 2 + 2 x) = P+ t\n(4.4)\nP = =* J * ( 60 * 2 TL) * -\n+\n1\n* 122 * (\n60\n1500\n-* 2 x) *\n1\n10\n= 150,3 KW\n(4.5)\n2\nCoste de la resistencia de frenado:\nEl chopper de frenado necesario debe soportar una potencia\nmáxima de frenado de 300 kW. Si el accionamiento tiene una\nfunción de limitación de potencia se puede dimensionar la\nresistencia de frenado según los 150,3 KW. El coste adicional\ndel chopper y la resistencia de frenado es de 4000 Euros.\nLa resistencia de frenado necesita 0,4 m2 de espacio\nadicional. El coste del espacio es de 500 Euros/m2.\nDebido a la reducida energía total de calefacción y al uso del\nfrenado en caso de emergencia, el coste de la refrigeración\nadicional se considera desdeñable.\nEl coste total adicional de la inversión se compone de:\n· Chopper y resistencia de frenado en armario, 4000 Euros.\n· Espacio de 0,4 m2 * 500 Euros/m2, 200 Euros.\nEl coste total de la energía perdida durante un frenado es:\n3600\n2\n(KW) * 0,5 (Euros/kWh) = 0,02 Euros\nCoste\n10\n- (h) * 300\n(4.6)\nEn este caso el coste de la energía de frenado es desdeñable.\nCoste del accionamiento en cuatro cuadrantes:\nEl coste adicional de la inversión en un frenado eléctrico con\npuente de tiristores antiparalelo comparado con un\naccionamiento con chopper de frenado es de 7000 Euros.\nTal como cabía esperar, el ahorro de energía no puede usarse\ncomo argumento para justificar la inversión adicional.\n26\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Evaluar el coste del ciclo de vida de distintos frenados eléctricos\nCaso 2 - Aplicación en grúas\nImaginemos la siguiente aplicación:\nGrúa con una potencia de elevación de 100 kW. La grúa\nnecesita plena potencia tanto en el motor como en el\ngenerador. El tiempo de funcionamiento de la elevación más\nlargo puede ser de 3 minutos. El tiempo medio en servicio\nde la grúa durante un año es del 20%.\nCoste del frenado por resistencia:\nEl chopper y la resistencia de frenado tienen que\ndimensionarse para un frenado continuo de 100 KW debido\nal tiempo máximo de frenado de 3 minutos. Normalmente,\nel dimensionado del chopper de frenado máximo se realiza\npara un tiempo de frenado de 1 minuto cada 10 minutos.\n· Chopper y resistencia de frenado en armario: 7800 Euros.\nLa construcción mecánica de la grúa permite tener el chopper\nde frenado en armarios. No se necesita más espacio.\nSe supone que el 50% del tiempo de servicio la grúa funciona\nen el lado del generador, un promedio de 2,4 h/día. El coste\ntotal de la energía desperdiciada es:\nCoste = 2,4 (h/día ) *100 (KW) * 0,05(Euros/kWh) * 365 = 4380 Euros\n(4.7)\nCoste del accionamiento en cuatro cuadrantes:\nPara grúas se recomienda el accionamiento IGBT en cuatro\ncuadrantes.\nEl coste adicional de la inversión en el frenado eléctrico con\nun puente de entrada IGBT en comparación con el\naccionamiento con chopper de frenado es de 4000 Euros.\nEl cálculo de la amortización directa indica que con una\ninversión adicional de 4000 Euros se obtiene el mismo ahorro\nde energía durante el primer año de uso.\nCase 3 - Aplicación en una centrífuga\nImaginemos la siguiente aplicación:\nCentrífuga de azúcar con motor de 6 polos y una potencia\nnominal de 160 kW. El motor necesita todo el par durante\nun período de 30 segundos para acelerar el cesto cargado\nhasta una velocidad máxima de 1100 rpm, la centrífuga\nsepara la solución de la carga durante 30 segundos a alta\nvelocidad. Una vez se seca la carga el motor decelera la\nGuía técnica nº 8 - Frenado eléctrico\n27",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Evaluar el coste del ciclo de vida de distintos frenados eléctricos\ncentrífuga tan rápido como le es posible para permitir su\ndescarga y recarga.\nEn un ciclo por lotes los tiempos de carga, separación y\ndescarga son fijos, con lo que la única oportunidad de\naumentar la producción consiste en aumentar las velocidades\nde aceleración y deceleración. Esto se consigue utilizando\nun accionamiento IGBT en cuatro cuadrantes, ya que se puede\naplicar una sobretensión de enlace de CC para su\nfuncionamiento en el rango de frecuencia de inicio de\ndebilitamiento del campo (de 1000 a 1100 rpm). Así se pueden\nahorrar unos 3 segundos por ciclo, con lo que se reduce el\ntiempo de ciclo de 110 segundos a 107 segundos. Ello\npermite aumentar la producción, lo que significa que se\nmejora la productividad del proceso. La ventaja de precio\nque representa el IGBT es del 10%.\n28\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Capítulo 5 - Símbolos y definiciones\nB:\nCoeficiente de rozamiento\nC:\nConstante o coeficiente\nCA:\nCorriente o tensión continua\nCC:\nCorriente o tensión continua\ncoso: Coseno del ángulo eléctrico entre la tensión y la\nintensidad fundamental\nFP:\nFactor de Potencia, que se define como FP = P/S\n(potencia/voltamperio) = 1, / 1 * FPD (Con una\nintensidad sinusoidal, FP es igual al FPD).\nFPD: Factor de Potencia de Desplazamiento, definido como\ncos01; 01 es el ángulo de fase entre la intensidad de\nfrecuencia fundamental usada por el equipo y el\ncomponente de frecuencia fundamental de la tensión\nde alimentación.\nI:\nIntensidad [en Amperios, A]\nJ:\nInercia [kgm2]\nn:\nVelocidad de rotación [revoluciones por minuto,rpm]\nP:\nPotencia [en Vatios, W]\nT:\nPar (Newton metro, Nm)\nt:\nTiempo\nTHD: La Distorsión Armónica Total en la intensidad es:\n40\n2\nTHD =\n1\n2\n(5.1)\ndonde I, es el valor efectivo de la intensidad de\nla frecuencia fundamental. La THD en tensión se puede\ncalcular de forma similar.\nU:\nTensión [V]\nW:\nEnergía [en Julios, J]\nVelocidad angular [radianes/segundo, 1/s]\nGuía técnica nº 8 - Frenado eléctrico\n29",
+      "tablas": [
+        [
+          [
+            "B:",
+            "Coeficiente de rozamiento"
+          ],
+          [
+            "C:",
+            "Constante o coeficiente"
+          ],
+          [
+            "CA: Corriente o tensión continua"
+          ],
+          [
+            "CC: Corriente o tensión continua"
+          ],
+          [
+            "coso: Coseno del ángulo eléctrico entre la tensión y la intensidad fundamental"
+          ],
+          [
+            "FP:",
+            "Factor de Potencia, que se define como FP = P/S (potencia/voltamperio) = 1, / 1 * FPD (Con una intensidad sinusoidal, FP es igual al FPD)."
+          ],
+          [
+            "FPD:",
+            "Factor de Potencia de Desplazamiento, definido como cos01; 01 es el ángulo de fase entre la intensidad de frecuencia fundamental usada por el equipo y el componente de frecuencia fundamental de la tensión de alimentación."
+          ],
+          [
+            "I:",
+            "Intensidad [en Amperios, A]"
+          ],
+          [
+            "J:",
+            "Inercia [kgm2]"
+          ],
+          [
+            "n:",
+            "Velocidad de rotación [revoluciones por minuto,rpm]"
+          ],
+          [
+            "P:",
+            "Potencia [en Vatios, W]"
+          ],
+          [
+            "T: Par (Newton metro, Nm)"
+          ],
+          [
+            "t:",
+            "Tiempo"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Capítulo 6 - Índice\nA\npotencia de frenado 7, 11, 12,\nalmacenamiento de energía 14,\n13, 15, 17, 22, 23, 26\n15\npuente de tiristores 17, 18, 26\nB\nR\nbombas 12\nrectificador 13, 14, 17, 22, 23\nrozamiento 8, 9, 12\nC\nCC común 22, 23, 25\nS\ncentrífuga 27\ncintas transportadoras 12\nsobredimensionado 12\ncontrol de sobretensión 15\nU\ncontrol directo del par 13, 20\ncos¢ 7, 18, 29\nunidad convertidora 19, 20\nchopper de frenado 11, 12, 15,\n16, 17, 23, 24, 25, 26, 27\nV\nventiladores 12\nD\ndistorsión armónica 18, 29\nE\nen cuatro cuadrantes 5\nen dos cuadrantes 5\nen un cuadrante 5, 8, 21, 23\nF\nfrenado de flujo 13, 14\nfrenado natural 10, 11, 12\nfrenado por inyección de CC 13\nG\ngrúa 12, 27\nI\nIGBT 18, 19, 20, 21, 22, 24, 27,\n28\nimpedancia 18, 20\ninercia 9, 10, 25, 29\ninversor 13, 15, 16, 19, 20, 23,\n25\nP\npar constante 8, 12\npar cuadrático 8, 12\npotencia de CA 7\npotencia de CC 7\n30\nGuía técnica nº 8 - Frenado eléctrico",
+      "tablas": [
+        [
+          [
+            "A",
+            "potencia de frenado 7, 11, 12,"
+          ],
+          [
+            "almacenamiento de energía 14,",
+            "13, 15, 17, 22, 23, 26"
+          ],
+          [
+            "15",
+            "puente de tiristores 17, 18, 26"
+          ],
+          [
+            "B",
+            "R"
+          ],
+          [
+            "bombas 12",
+            "rectificador 13, 14, 17, 22, 23 rozamiento 8, 9, 12"
+          ],
+          [
+            "C",
+            ""
+          ],
+          [
+            "CC común 22, 23, 25",
+            "S"
+          ],
+          [
+            "centrífuga 27 cintas transportadoras 12",
+            "sobredimensionado 12"
+          ],
+          [
+            "control de sobretensión 15",
+            "U"
+          ],
+          [
+            "control directo del par 13, 20 cos¢ 7, 18, 29",
+            "unidad convertidora 19, 20"
+          ],
+          [
+            "chopper de frenado 11, 12, 15, 16, 17, 23, 24, 25, 26, 27",
+            "V\n:selected:"
+          ],
+          [
+            "ventiladores 12"
+          ],
+          [
+            "D",
+            ""
+          ],
+          [
+            "distorsión armónica 18, 29",
+            ""
+          ],
+          [
+            "E",
+            ""
+          ],
+          [
+            "en cuatro cuadrantes 5 en dos cuadrantes 5 en un cuadrante 5, 8, 21, 23",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "F",
+            ""
+          ],
+          [
+            "frenado de flujo 13, 14",
+            ""
+          ],
+          [
+            "frenado natural 10, 11, 12",
+            ""
+          ],
+          [
+            "frenado por inyección de CC 13",
+            ""
+          ],
+          [
+            "G",
+            ""
+          ],
+          [
+            "grúa 12, 27",
+            ""
+          ],
+          [
+            "I",
+            ""
+          ],
+          [
+            "IGBT 18, 19, 20, 21, 22, 24, 27, 28",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "impedancia 18, 20",
+            ""
+          ],
+          [
+            "inercia 9, 10, 25, 29 inversor 13, 15, 16, 19, 20, 23,",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "25",
+            ""
+          ],
+          [
+            "P",
+            ""
+          ],
+          [
+            "par constante 8, 12 par cuadrático 8, 12 potencia de CA 7",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "potencia de CC 7",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Guía técnica nº 8 - Frenado eléctrico\n31",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "NÓRDICO\n014\nNO AMBIENTALA\nImpresos\nMARCADO\n441\nCopyright @ ABB Automation Group Ltd, 2001 3BFE 64455575 R0106 Especificaciones sujetas a cambio sin previo aviso.\nES 27.03.2001\nABB\nABB Industria, S.A.\nPolígono Industrial del S.O.\n08192 - Sant Quirze del Vallès\nBarcelona\nEspaña\nTeléfono\n93 728 8700\nFax\n93 712 4243\nInternet\nhttp://www.abb.com/motors&drives",
+      "tablas": []
+    }
+  ]
+}

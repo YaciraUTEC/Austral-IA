@@ -1,0 +1,3786 @@
+{
+  "archivo": "90000541 - MONTACARGA DIESEL 52-8FD 25 DE 2.5 TN (REPAIR MANUAL)_p1_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "TOYOTA\nMANUAL DE REPARACIONES\nREPAIR\nIVIANUAL\n8FG 10, 15, 18, 20, 25, 30\n8FD 10, 15, 18, 20, 25, 30\n8FGK 20, 25, 30 8FGJ 35\n8FDK 20, 25, 30 8FDJ 35\nVOL. 1\nPub. No. CS048",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "PREFACIO\nEste manual abarca los procedimientos de servicio de las series 8FG/8FD10-30 del\nTOYOTA FORKLIFT. Utilice este manual para realizar un servicio rápido y correcto\nde los modelos de montacargas correspondientes.\nEste manual trata con los modelos arriba indicados en fecha de agosto de 2006.\nTenga presente que puede encontrarse discordancias entre las descripciones del\nmanual y los vehículos reales, debido a los cambios realizados en el diseño y las\nespecificaciones. Cualquier cambio o modificación realizados a partir de entonces\nserán informados por el Toyota Industrial Equipment Parts & Service News.\nPara los procedimientos de servicio del motor montado, lea los manuales de\nreparaciones que se enumeran a continuación como referencia, junto con este\nmanual.\n(Referencia)\nLos manuales de reparaciones relacionados con este manual son los siguientes:\nTOYOTA INDUSTRIAL EQUIPMENT 8FG/8FD10-30\nVOL.2 REPAIR MANUAL (No. CS049)\nTOYOTA INDUSTRIAL EQUIPMENT 4Y ENGINE\nREPAIR MANUAL (No. CS663)\nTOYOTA INDUSTRIAL EQUIPMENT 1DZ-II ENGINE\nREPAIR MANUAL (No. CS664)\nTOYOTA INDUSTRIAL EQUIPMENT 2Z ENGINE\nREPAIR MANUAL (No. CE665)\nTOYOTA Material Handling Company\nA Division of TOYOTA INDUSTRIES CORPORATION",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "------",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "ÍNDICE DE SECCIONES\nNOMBRE\nSECCIÓ\nGENERALIDADES\n0\nMOTOR\n1\nEMBRAGUE\n2\nCONVERTIDOR DE PAR Y TRANSMISIÓN\n3\nTRANSMISIÓN MANUAL\n4\nARBOL CARDAN\n5\nDIFERENCIAL\n6\nEJE DELANTERO\n7\nEJE TRASERO\n8\nDIRECCIÓN\n9\nFRENO\n10\nCARROCERÍA\n11\nSISTEMA DE MANIPULACIÓN DE MATERIALES\n12\nMÁSTIL\n13\nCILINDRO\n14\nBOMBA DE ACEITE\n15\nVÁLVULA DE CONTROL DE ACEITE\n16\nMINIPALANCA·PALANCA DE MANDO\n17\nSAS/OPS\n18\nLISTA DE SST·LISTA DE ESTÁNDARES DE SERVICIO\n19\nVISUALIZADOR MULTIFUNCIONAL (OPT)\nLOCALIZACIÓN Y REPARACIÓN DE AVERÍAS DEL SISTEMA ELÉCTRICO\nDIAGRAMA DE CONEXIONES",
+      "tablas": [
+        [
+          [
+            "NOMBRE",
+            "SECCIÓ"
+          ],
+          [
+            "GENERALIDADES",
+            "0"
+          ],
+          [
+            "MOTOR",
+            "1"
+          ],
+          [
+            "EMBRAGUE",
+            "2"
+          ],
+          [
+            "CONVERTIDOR DE PAR Y TRANSMISIÓN",
+            "3"
+          ],
+          [
+            "TRANSMISIÓN MANUAL",
+            "4"
+          ],
+          [
+            "ARBOL CARDAN",
+            "5"
+          ],
+          [
+            "DIFERENCIAL",
+            "6"
+          ],
+          [
+            "EJE DELANTERO",
+            "7"
+          ],
+          [
+            "EJE TRASERO",
+            "8"
+          ],
+          [
+            "DIRECCIÓN",
+            "9"
+          ],
+          [
+            "FRENO",
+            "10"
+          ],
+          [
+            "CARROCERÍA",
+            "11"
+          ],
+          [
+            "SISTEMA DE MANIPULACIÓN DE MATERIALES",
+            "12"
+          ],
+          [
+            "MÁSTIL",
+            "13"
+          ],
+          [
+            "CILINDRO",
+            "14"
+          ],
+          [
+            "BOMBA DE ACEITE",
+            "15"
+          ],
+          [
+            "VÁLVULA DE CONTROL DE ACEITE",
+            "16"
+          ],
+          [
+            "MINIPALANCA·PALANCA DE MANDO",
+            "17"
+          ],
+          [
+            "SAS/OPS",
+            "18"
+          ],
+          [
+            "LISTA DE SST·LISTA DE ESTÁNDARES DE SERVICIO",
+            "19"
+          ],
+          [
+            "VISUALIZADOR MULTIFUNCIONAL (OPT)",
+            ""
+          ],
+          [
+            "LOCALIZACIÓN Y REPARACIÓN DE AVERÍAS DEL SISTEMA ELÉCTRICO",
+            ""
+          ],
+          [
+            "DIAGRAMA DE CONEXIONES",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "44.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "MOTOR\nPágina\nVISTA EXTERIOR DEL MOTOR ..... 1-2\nPARÁMETROS PRINCIPALES\nDEL MOTOR\n1-6\nCURVAS DE RENDIMIENTO DEL\nMOTOR\n1-8\nCONJUNTO DEL MOTOR\n1-12\nEXTRACCIÓN·INSTALACIÓN\n(VEHÍCULOS CON M/T)\n1-12\nEXTRACCIÓN·INSTALACIÓN\n(VEHÍCULOS CON T/C)\n1-15\nPURGA DE AIRE DEL SISTEMA\nDE COMBUSTIBLE\n1-18\nINSPECCIÓN·AJUSTE DEL\nMOTOR\n1-18\nMOTOR 4Y-M (STD)\n1-18\nMOTOR 4Y-E (OPT)\n1-22\nVEHÍCULO CON MOTOR 1DZ-Il·2Z ... 1-23\nFILTRO DE AIRE\n1-25\nESPECIFICACIONES\n1-25\nCOMPONENTES\n1-25\nLIMPIEZA·INSPECCIÓN DEL FILTRO\nDE AIRE\n1-26\nINSPECCIÓN DEL SISTEMA DE ALARMA\nDE OBSTRUCCIONES (OPT)\n1-27\nRADIADOR\n1-28\nCOMPONENTES\n1-28\nESPECIFICACIONES\n1-31\nCAPACIDAD DE LÍQUIDO REFRIGERANTE\nY TABLA DE ANTICONGELANTE .. 1-31\nINSPECCIÓN DEL LÍQUIDO\nREFRIGERANTE\n1-31\nSILENCIADOR Y TUBO DE\nESCAPE\n1-33\nCOMPONENTES\n1-33\nEXTRACCIÓN-INSTALACIÓN\n1-35\nMANTENIMIENTO DE\nSILENCIADORES CATALÍTICOS\n1-35\nBATERÍA\n1-36\nCOMPONENTES\n1-36\nPágina\nESPECIFICACIONES\n1-37\nINSPECCIÓN\n1-38\nAJUSTE DE LA TENSIÓN DE LA\nCORREA EN V\n1-39\nPEDAL DEL ACELERADOR\n1-40\nCOMPONENTES.\n1-40\nINSPECCIÓN·AJUSTE\n1-41\nDISPOSITIVO DE CONTROL DE\nPROPULSIÓN (OPT)\n1-43\nCOMPONENTES\n1-43\nEXTRACCIÓN INSTALACIÓN\n1-44\nAJUSTE DE GRADOS DE ABERTURA\nDE LA MARIPOSA\n1-46\nLOCALIZACIÓN Y REPARACIÓN DE\nAVERIAS\n1-47\nSISTEMA DPF-II (OPT)\n1-49\nCOMPONENTES\n1-49\nDIAGRAMA DE CONECTORES\n1-52\nEXTRACCIÓN-INSTALACIÓN DEL\nSILENCIADOR DPF\n1-54\nDESMONTAJE·INSPECCIÓN·MONTAJE\nDEL SILENCIADOR DPF\n1-55\nEXTRACCIÓN INSTALACIÓN DEL\nCONTROLADOR\n1-57\nEXTRACCIÓN-INSTALACIÓN DEL\nSOPLADOR\n1-58\nEXTRACCIÓN·INSTALACIÓN DE LA\nVÁLVULA DPF\n1-59\nDESMONTAJE-INSPECCIÓN·MONTAJEDE\nLA VÁLVULA DPF\n1-60\nINSPECCIÓN INDIVIDUAL DE PARTES\nFUNCIONALES\n1-61\nMÉTODO DE BORRADO DE CÓDIGOS DE\nERROR DEL CONTROLADOR\n1-65\nMÉTODO DE BORRADO DE LA MEMORIA\nDEL FILTRO DPF\n1-65\nMÉTODO DE REGENERACIÓN\n1-65\nVISUALIZACIÓN DE CÓDIGOS DE ERROR\nANTERIORES\n1-66\nBORRADO DE CÓDIGOS DE ERROR\nANTERIORES\n1-67\nLOCALIZACIÓN Y REPARACIÓN DE\nAVERIAS\n1-68",
+      "tablas": [
+        [
+          [
+            "",
+            "Página"
+          ],
+          [
+            "ESPECIFICACIONES",
+            "1-37"
+          ],
+          [
+            "INSPECCIÓN",
+            "1-38"
+          ],
+          [
+            "AJUSTE DE LA TENSIÓN DE\nCORREA EN V",
+            "LA\n1-39"
+          ],
+          [
+            "PEDAL DEL ACELERADOR",
+            "1-40"
+          ],
+          [
+            "COMPONENTES.",
+            "1-40"
+          ],
+          [
+            "INSPECCIÓN·AJUSTE",
+            "1-41"
+          ],
+          [
+            "DISPOSITIVO DE CONTROL",
+            "DE"
+          ],
+          [
+            "PROPULSIÓN (OPT)",
+            "1-43"
+          ],
+          [
+            "COMPONENTES",
+            "1-43"
+          ],
+          [
+            "EXTRACCIÓN INSTALACIÓN",
+            "1-44"
+          ],
+          [
+            "AJUSTE DE GRADOS DE ABERTURA DE LA MARIPOSA",
+            "1-46"
+          ],
+          [
+            "LOCALIZACIÓN Y REPARACIÓN\nAVERIAS",
+            "DE\n1-47"
+          ],
+          [
+            "SISTEMA DPF-II (OPT)",
+            "1-49"
+          ],
+          [
+            "COMPONENTES",
+            "1-49"
+          ],
+          [
+            "DIAGRAMA DE CONECTORES",
+            "1-52"
+          ],
+          [
+            "EXTRACCIÓN-INSTALACIÓN DEL SILENCIADOR DPF",
+            "1-54"
+          ],
+          [
+            "DESMONTAJE·INSPECCIÓN·MONTAJE DEL SILENCIADOR DPF",
+            "1-55"
+          ],
+          [
+            "EXTRACCIÓN INSTALACIÓN DEL",
+            ""
+          ],
+          [
+            "CONTROLADOR",
+            "1-57"
+          ],
+          [
+            "EXTRACCIÓN-INSTALACIÓN DEL SOPLADOR",
+            "1-58"
+          ],
+          [
+            "EXTRACCIÓN·INSTALACIÓN DE",
+            "LA"
+          ],
+          [
+            "VÁLVULA DPF",
+            "1-59"
+          ],
+          [
+            "DESMONTAJE-INSPECCIÓN·MONTAJEDE LA VÁLVULA DPF",
+            ""
+          ],
+          [
+            "1-60"
+          ],
+          [
+            "INSPECCIÓN INDIVIDUAL DE\nFUNCIONALES",
+            "PARTES\n1-61"
+          ],
+          [
+            "MÉTODO DE BORRADO DE\nERROR DEL CONTROLADOR",
+            "CÓDIGOS DE"
+          ],
+          [
+            "1-65"
+          ],
+          [
+            "MÉTODO DE BORRADO DE LA\nDEL FILTRO DPF",
+            "MEMORIA\n1-65"
+          ],
+          [
+            "MÉTODO DE REGENERACIÓN",
+            "1-65"
+          ],
+          [
+            "VISUALIZACIÓN DE CÓDIGOS DE\nANTERIORES",
+            "ERROR\n1-66"
+          ],
+          [
+            "BORRADO DE CÓDIGOS DE ERROR ANTERIORES",
+            "1-67"
+          ],
+          [
+            "LOCALIZACIÓN Y REPARACIÓN DE AVERIAS 1-68"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "VISTA EXTERIOR DEL MOTOR\nMotor 4Y-M (STD)\n4Y 1224",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "0-1\nGENERALIDADES\nPágina\nVISTAS EXTERIORES\n0-2\nMODELO DE VEHÍCULO\n0-3\nNÚMERO DE BASTIDOR\n0-5\nCÓMO UTILIZAR ESTE\nMANUAL\n0-7\nMÉTODO DE EXPLICACIÓN\n0-7\nTERMINOLOGÍA\n0-8\nABREVIATURAS\n0-8\nCONSEJOS PRÁCTICOS DE\nFUNCIONAMIENTO\n0-9\nELEVACIÓN DEL\nVEHÍCULO\n0-10\nPROBADOR DE\nCIRCUITOS\n0-11\nPAR DE APRETAMIENTO\nESTÁNDAR DE PERNOS Y\nTUERCAS\n0-13\nMÉTODO DE IDENTIFICACIÓN DE\nLA CLASE DE RESISTENCIA DEL\nPERNO\n0-13\nPERNOS\nPRERREVESTIDOS\n0-16\nPAR DE APRETAMIENTO DEL\nACOPLAMIENTO DEL TUBO\nDE ALTA PRESIÓN\n0-16\nPágina\nLISTA DE ÁNGULOS DE\nSUSPENSIÓN DEL CABLE\nMETÁLICO\n0-17\nCARGA SEGURA PARA CADA\nÁNGULO DE SUSPENSIÓN\nDEL CABLE METÁLICO ..... 0-17\nPESO DE LOS\nCOMPONENTES\n.....\n0-18\nCANTIDAD Y TIPOS DE\nLUBRICANTES\nRECOMENDADOS\n0-19\nGRÁFICO DE\n0-21\nLUBRICACIÓN\nMANTENIMIENTO\nPERIÓDICO\n0-23\nMÉTODO DE INSPECCIÓN ...... 0-23\nSUSTITUCIÓN PERIÓDICA\nDE PARTES Y\nLUBRICANTES\n0-28",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "0-2\nVISTAS EXTERIORES\n14.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "0-3\nMODELO DE VEHÍCULO\n----\n0\nClasificación\nModelo de vehículo\nTipo de transmisión\n.\nMotor\nSeries\nModelo\nSeries de 1\ntonelada\nModelo de 1,0\ntonelada\n30-8FG10\nM/T\n4Y\nGasolina\n32-8FG10\nT/C\n60-8FD10\nM/T\n1DZ-II\nDiesel\n62-8FD10\nT/C\nModelo de 1,5\ntoneladas\n30-8FG15\nM/T\n4Y\nGasolina\n32-8FG15\nT/C\n60-8FD15\nM/T\n1DZ-II\nDiesel\n62-8FD15\nT/C\nModelo de 1,75\ntoneladas\n32-8FG18\nT/C\n4Y\nGasolina\n62-8FD18\nT/C\n1DZ-II\nDiesel\nSeries de 2\ntoneladas\nModelo de 2,0\ntoneladas\n30-8FG20\nM/T\n4Y\nGasolina\n32-8FG20\nT/C\n60-8FD20\nM/T\n1DZ-II\nDiesel\n62-8FD20\nT/C\n70-8FD20\nM/T\n2Z\nDiesel\n72-8FD20\nT/C\nModelo de 2,5\ntoneladas\n30-8FG25\nM/T\n4Y\nGasolina\n32-8FG25\nT/C\n60-8FD25\nM/T\n1DZ-II\nDiese!\n62-8FD25\nT/C\n70-8FD25\nM/T\n2Z\nDiesel\n72-8FD25\nT/C\n. .",
+      "tablas": [
+        [
+          [
+            "Clasificación",
+            "Modelo de vehículo",
+            "Tipo de transmisión",
+            ". Motor"
+          ],
+          [
+            "Series",
+            "Modelo"
+          ],
+          [
+            "Series de 1 tonelada",
+            "Modelo de 1,0 tonelada",
+            "30-8FG10",
+            "M/T",
+            "4Y",
+            "Gasolina"
+          ],
+          [
+            "32-8FG10",
+            "T/C"
+          ],
+          [
+            "60-8FD10",
+            "M/T",
+            "1DZ-II",
+            "Diesel"
+          ],
+          [
+            "62-8FD10",
+            "T/C"
+          ],
+          [
+            "Modelo de 1,5 toneladas",
+            "30-8FG15",
+            "M/T",
+            "4Y",
+            "Gasolina"
+          ],
+          [
+            "32-8FG15",
+            "T/C"
+          ],
+          [
+            "60-8FD15",
+            "M/T",
+            "1DZ-II",
+            "Diesel"
+          ],
+          [
+            "62-8FD15",
+            "T/C"
+          ],
+          [
+            "Modelo de 1,75 toneladas",
+            "32-8FG18",
+            "T/C",
+            "4Y",
+            "Gasolina"
+          ],
+          [
+            "62-8FD18",
+            "T/C",
+            "1DZ-II",
+            "Diesel"
+          ],
+          [
+            "Series de 2 toneladas",
+            "Modelo de 2,0 toneladas",
+            "30-8FG20",
+            "M/T",
+            "4Y",
+            "Gasolina"
+          ],
+          [
+            "32-8FG20",
+            "T/C"
+          ],
+          [
+            "60-8FD20",
+            "M/T",
+            "1DZ-II",
+            "Diesel"
+          ],
+          [
+            "62-8FD20",
+            "T/C"
+          ],
+          [
+            "70-8FD20",
+            "M/T",
+            "2Z",
+            "Diesel"
+          ],
+          [
+            "72-8FD20",
+            "T/C"
+          ],
+          [
+            "Modelo de 2,5 toneladas",
+            "30-8FG25",
+            "M/T",
+            "4Y",
+            "Gasolina"
+          ],
+          [
+            "32-8FG25",
+            "T/C"
+          ],
+          [
+            "60-8FD25",
+            "M/T",
+            "1DZ-II",
+            "Diese!"
+          ],
+          [
+            "62-8FD25",
+            "T/C"
+          ],
+          [
+            "70-8FD25",
+            "M/T",
+            "2Z",
+            "Diesel"
+          ],
+          [
+            "72-8FD25",
+            "T/C"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "0-4\nClasificación\nModelo de vehículo\nTipo de transmisión\nMotor\nSeries\nModelo\nSeries de 3\ntoneladas\nModelo de 3,0\ntoneladas\n30-8FG30\nM/T\n4Y\nGasolina\n!\n32-8FG30\nT/C\n60-8FD30\nM/T\n1DZ-II\nDiesel\n62-8FD30\nT/C\n70-8FD30\nM/T\n2Z\nDiesel\n72-8FD30\nT/C\nSeries de K2\ntoneladas\nModelo de K2,0\ntoneladas\n32-8FGK20\nT/C\n4Y\nGasolina\n62-8FDK20\nT/C\n1DZ-II\nDiesel\nModelo de K2,5\ntoneladas\n32-8FGK25\nT/C\n4Y\nGasolina\n62-8FDK25\nT/C\n1DZ-II\nDiesel\nSeries de K3\ntoneladas\nModelo de K3,0\ntoneladas\n32-8FGK30\nT/C\n4Y\nGasolina\n62-8FDK30\nT/C\n1DZ-II\nDiesel\nSeries de J3,5\ntoneladas\nModelo de J3,5\ntoneladas\n30-8FGJ35\nM/T\n4Y\nGasolina\n32-8FGJ35\nT/C\n70-8FDJ35\nM/T\n2Z\nDiesel\n72-8FDJ35\nT/C\nNota:\nLa especificación de control del motor 4Y es la siguiente.\nSTD: 4Y-M (especificación del carburador)\nOPT: 4Y-E (especificación controlada electrónicamente)",
+      "tablas": [
+        [
+          [
+            "Clasificación",
+            "Modelo de vehículo",
+            "Tipo de transmisión",
+            "Motor"
+          ],
+          [
+            "Series",
+            "Modelo"
+          ],
+          [
+            "Series de 3 toneladas",
+            "Modelo de 3,0 toneladas",
+            "30-8FG30",
+            "M/T",
+            "4Y",
+            "Gasolina"
+          ],
+          [
+            "! 32-8FG30",
+            "T/C"
+          ],
+          [
+            "60-8FD30",
+            "M/T",
+            "1DZ-II",
+            "Diesel"
+          ],
+          [
+            "62-8FD30",
+            "T/C"
+          ],
+          [
+            "70-8FD30",
+            "M/T",
+            "2Z",
+            "Diesel"
+          ],
+          [
+            "72-8FD30",
+            "T/C"
+          ],
+          [
+            "Series de K2 toneladas",
+            "Modelo de K2,0 toneladas",
+            "32-8FGK20",
+            "T/C",
+            "4Y",
+            "Gasolina"
+          ],
+          [
+            "62-8FDK20",
+            "T/C",
+            "1DZ-II",
+            "Diesel"
+          ],
+          [
+            "Modelo de K2,5 toneladas",
+            "32-8FGK25",
+            "T/C",
+            "4Y",
+            "Gasolina"
+          ],
+          [
+            "62-8FDK25",
+            "T/C",
+            "1DZ-II",
+            "Diesel"
+          ],
+          [
+            "Series de K3 toneladas",
+            "Modelo de K3,0 toneladas",
+            "32-8FGK30",
+            "T/C",
+            "4Y",
+            "Gasolina"
+          ],
+          [
+            "62-8FDK30",
+            "T/C",
+            "1DZ-II",
+            "Diesel"
+          ],
+          [
+            "Series de J3,5 toneladas",
+            "Modelo de J3,5 toneladas",
+            "30-8FGJ35",
+            "M/T",
+            "4Y",
+            "Gasolina"
+          ],
+          [
+            "32-8FGJ35",
+            "T/C"
+          ],
+          [
+            "70-8FDJ35",
+            "M/T",
+            "2Z",
+            "Diesel"
+          ],
+          [
+            "72-8FDJ35",
+            "T/C"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "0-5\nNÚMERO DE BASTIDOR\nPosición de perforación del N.º de bastidor\n0\nPosición de perforación\nSeries\nMotor\nModelo de\nvehículo\nFormato de\nperforación\nSeries\nMotor\nModelo de\nvehículo\nFormato de\nperforación\nSeries de 1\ntonelada\n4Y\n30-8FG10\n308FG18-10011\nSeries de 2\ntoneladas\n4Y\n30-8FG20\n308FG25-10011\n32-8FG10\n32-8FG20\n30-8FG15\n30-8FG25\n32-8FG15\n32-8FG25\n32-8FG18\n1DZ-II\n60-8FD20\n608FD25-10011\n1DZ-II\n60-8FD10\n608FD18-10011\n62-8FD20\n62-8FD10\n60-8FD25\n60-8FD15\n62-8FD25\n62-8FD15\n2Z\n70-8FD20\n708FD25-10011\n62-8FD18\n72-8FD20\n70-8FD25\n72-8FD25",
+      "tablas": [
+        [
+          [
+            "Series",
+            "Motor",
+            "Modelo de vehículo",
+            "Formato de perforación",
+            "",
+            "Series",
+            "Motor",
+            "Modelo de vehículo",
+            "Formato de perforación"
+          ],
+          [
+            "Series de 1 tonelada",
+            "4Y",
+            "30-8FG10",
+            "308FG18-10011",
+            "",
+            "Series de 2 toneladas",
+            "4Y",
+            "30-8FG20",
+            "308FG25-10011"
+          ],
+          [
+            "32-8FG10",
+            "32-8FG20"
+          ],
+          [
+            "30-8FG15",
+            "30-8FG25"
+          ],
+          [
+            "32-8FG15",
+            "32-8FG25"
+          ],
+          [
+            "32-8FG18",
+            "1DZ-II",
+            "60-8FD20",
+            "608FD25-10011"
+          ],
+          [
+            "1DZ-II",
+            "60-8FD10",
+            "608FD18-10011",
+            "62-8FD20"
+          ],
+          [
+            "62-8FD10",
+            "60-8FD25"
+          ],
+          [
+            "60-8FD15",
+            "62-8FD25"
+          ],
+          [
+            "62-8FD15",
+            "2Z",
+            "70-8FD20",
+            "708FD25-10011"
+          ],
+          [
+            "62-8FD18",
+            "72-8FD20"
+          ],
+          [
+            "",
+            "",
+            "",
+            "70-8FD25"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "0-6\nSeries\nMotor\nModelo de\nvehículo\nFormato de\nperforación\nSeries de 3\ntoneladas,\nJ3.5\ntoneladas\n4Y\n30-8FG30\n308FGJ35-10011\n32-8FG30\n30-8FGJ35\n32-8FGJ35\n1DZ-II\n60-8FD30\n608FD30-10011\n62-8FD30\n2Z\n70-8FD30\n708FDJ35-10011\n72-8FD30\n70-8FDJ35\n72-8FDJ35\nSeries de\nK2·K3\ntoneladas\n4Y\n32-8FGK20\n308FGK30-10011\n32-8FGK25\n32-8FGK30\n1DZ-II\n62-8FDK20\n608FDK30-10011\n62-8FDK25\n62-8FDK30\n....",
+      "tablas": [
+        [
+          [
+            "Series",
+            "Motor",
+            "Modelo de vehículo",
+            "Formato de perforación"
+          ],
+          [
+            "Series de 3 toneladas, J3.5 toneladas",
+            "4Y",
+            "30-8FG30",
+            "308FGJ35-10011"
+          ],
+          [
+            "32-8FG30"
+          ],
+          [
+            "30-8FGJ35"
+          ],
+          [
+            "32-8FGJ35"
+          ],
+          [
+            "1DZ-II",
+            "60-8FD30",
+            "608FD30-10011"
+          ],
+          [
+            "62-8FD30"
+          ],
+          [
+            "2Z",
+            "70-8FD30",
+            "708FDJ35-10011"
+          ],
+          [
+            "72-8FD30"
+          ],
+          [
+            "70-8FDJ35"
+          ],
+          [
+            "72-8FDJ35"
+          ],
+          [
+            "Series de K2·K3 toneladas",
+            "4Y",
+            "32-8FGK20",
+            "308FGK30-10011"
+          ],
+          [
+            "32-8FGK25"
+          ],
+          [
+            "32-8FGK30"
+          ],
+          [
+            "1DZ-II",
+            "62-8FDK20",
+            "608FDK30-10011"
+          ],
+          [
+            "62-8FDK25"
+          ],
+          [
+            "62-8FDK30"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "0-7\nCÓMO UTILIZAR ESTE MANUAL\nMÉTODO DE EXPLICACIÓN\n1. Procedimiento de operación\n(1) E procedimiento de operación se describe en el patrón A o el patrón B, a continuación.\nPatrón A: Explicación de cada paso de la operación con ilustración.\nPatrón B: Explicación del procedimiento de la operación indicando números de pasos en una ilustración,\nseguidos por la explicación de las precauciones y notas resumidas como operaciones\nespecíficas.\nEjemplo de descripción en el patrón B\nDESMONTAJE·INSPECCIÓN·MONTAJE\nPar de apretamiento unidad T = N·m (kgf·cm)\n· Los números de paso en ocasiones se omiten\nparcialmente en las ilustraciones.\n· Cuando una parte que requiere instrucciones de\npar de apretamiento no se indica en la ilustración,\nel nombre de la parte se describe en el marco de\nla ilustración.\n4\n- 1\n2\n3\n5\n6\nT = 46,1 - 48,1\n(470 - 490)\n8-\n5\n9\n1\nProcedimiento de desmontaje\n1\nExtraiga la cubierta. [Punto 1]\n2\nExtraiga el casquillo. [Punto 2] « Operación explicada más adelante\n3\nExtraiga el engranaje.\nOperaciones por puntos\n[Punto 1]\nExplicación del punto clave de la operación con una ilustración\nDesmontaje:\nPonga una marca de correspondencia cuando quite la cubierta de la bomba.\n[Punto 2]\nInspección:\nMida el diámetro interno del casquillo.\nLimite: 19,12 mm",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "0-8\n2. Cómo leer las figuras de los componentes\n(1) La figura de los componentes utiliza la ilustración\nen el catálogo de partes para el modelo del\nvehículo. Consulte el catálogo para comprobar el\nnombre de la parte.\nEl número en la esquina superior derecha de\ncada figura de componentes indica el número de\nFig. en el catálogo de partes.\n3.\nAsuntos omitidos en este manual\n(Ejemplo)\n3201\n1\n(1) Este manual omite la descripción de los siguientes trabajos, pero deben realizarse en una operación real:\nNúmero de FIG en catálogo de partes.\n(a) Limpieza y lavado de las partes extraídas, según sea necesario\n(b) Inspección visual (parcialmente descrita)\nTERMINOLOGÍA\nPrecaución:\nCuestiones importantes cuya negligencia puede provocar peligros para el cuerpo humano. Asegúrese de\nobservarlas.\nNota:\nElementos importantes cuya negligencia puede provocar roturas o averías, o cuestiones del procedimiento\nde la operación que requieren atención especial.\nEstándar: Valores que muestran una gama admisible en inspección y ajuste.\nLímite:\nValor admisible máximo o mínimo en inspección o ajuste.\nABREVIATURAS\nAbreviatura (código)\nSignificado\nAbreviatura (código)\nSignificado\nASC\nControl automático\nde la velocidad\n(Auto Speed Control)\nRR\nParte trasera\nATT\nEnganche\nSAE\nSociety of Automotive\nEngineers (EE.UU.)\nFR\nDelantera\nJ/B\nBloque de empalme\nSAS\nSistema de estabilidad activa\nASSY\nConjunto\nSOL\nSolenoide\nLH\nLado izquierdo\nSST\nHerramienta de servicio\nespecial\nLLC\nLíquido refrigerante\nde larga duración\nSTD\nEstándar\nM/T\nTransmisión manual\nT =\nPar de apretamiento\nNMR\nVelocidad máxima sin carga\nT/C\nConvertidor de par y\ntransmisión\nOPS\nDetección de la presencia de\noperadores (Operator\npresence sensing)\nOPT\nOpción\nOOT\nNúmero de dientes (O O)\nO/S\nSobredimensión\nU/S\nSubtamaño\nPS\nDirección asistida\nW/\nCon\nR/B\nBloque de relés\nSin\nRH\nLado derecho",
+      "tablas": [
+        [
+          [
+            "Abreviatura (código)",
+            "Significado",
+            "Abreviatura (código)",
+            "Significado"
+          ],
+          [
+            "ASC",
+            "Control automático de la velocidad (Auto Speed Control)",
+            "RR",
+            "Parte trasera"
+          ],
+          [
+            "ATT",
+            "Enganche",
+            "SAE",
+            "Society of Automotive Engineers (EE.UU.)"
+          ],
+          [
+            "FR",
+            "Delantera"
+          ],
+          [
+            "J/B",
+            "Bloque de empalme",
+            "SAS",
+            "Sistema de estabilidad activa"
+          ],
+          [
+            "ASSY",
+            "Conjunto",
+            "SOL",
+            "Solenoide"
+          ],
+          [
+            "LH",
+            "Lado izquierdo",
+            "SST",
+            "Herramienta de servicio especial"
+          ],
+          [
+            "LLC",
+            "Líquido refrigerante de larga duración",
+            "STD",
+            "Estándar"
+          ],
+          [
+            "M/T",
+            "Transmisión manual",
+            "T =",
+            "Par de apretamiento"
+          ],
+          [
+            "NMR",
+            "Velocidad máxima sin carga",
+            "T/C",
+            "Convertidor de par y transmisión"
+          ],
+          [
+            "OPS",
+            "Detección de la presencia de operadores (Operator presence sensing)"
+          ],
+          [
+            "OPT",
+            "Opción",
+            "OOT",
+            "Número de dientes (O O)"
+          ],
+          [
+            "O/S",
+            "Sobredimensión",
+            "U/S",
+            "Subtamaño"
+          ],
+          [
+            "PS",
+            "Dirección asistida",
+            "W/",
+            "Con"
+          ],
+          [
+            "R/B",
+            "Bloque de relés",
+            "",
+            "Sin"
+          ],
+          [
+            "RH",
+            "Lado derecho",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "0-9\nCONSEJOS PRÁCTICOS DE FUNCIONAMIENTO\n1\n1. Funcionamiento seguro\n(1) Después de elevar con el gato, sujete siempre con bloques de madera o soportes rígidos.\n(2) Al levantar el vehículo o su componente pesado, utilice cable(s) metálico(s) con una reserva suficiente de\ncapacidad de carga.\n(3) Desconecte siempre el borne de batería antes de la inspección o mantenimiento de las piezas eléctricas.\n2. Operación con cuidado\n(1) Prepare las herramientas mecánicas, los instrumentos de medición (probador del circuito, megóhmetro,\nmedidor de presión del aceite, etc.) y las SST necesarios antes de comenzar la operación.\n(2) Antes de desconectar el cableado, compruebe siempre el color del cable y el estado del cableado.\n(3) Al revisar partes funcionales, partes complicadas o mecanismos relacionados, disponga las partes con\ncuidado para evitar confusiones.\n(4) Al desmontar e inspeccionar una pieza de precisión como por ejemplo la válvula de control, utilice\nherramientas limpias y hágalo en un lugar limpio.\n(5) Siga los procedimientos descritos para desmontaje, inspección y montaje.\n(6)\nSustituya las juntas de estanqueidad, empaquetaduras y juntas tóricas por otras nuevas cada vez que se\ndesmonten.\n(7)\nSustitúyalas por partes originales de Toyota.\n(8) Utilice los pernos y tuercas especificados. Tenga en cuenta el par de apretamiento especificado en el\nmomento de volver a realizar el montaje.\n(Apriete hasta el centro del rango del par de apretamiento especificado.)\nSi no se especifica ningún par de apretamiento, apriete el perno o tuerca de acuerdo con la tabla de par de\napretamiento estándar.\n3.\nComprenda el estado de la avería\nCuando aparece un problema, no intente inmediatamente desmontar o sustituir, primero compruebe si para\nsolucionar el problema es necesario desmontar o solucionarlo.\n4.\nEliminación de líquidos de desecho, etc.\nAl purgar líquido de desecho del vehículo, deposítelo en un contenedor.\nSi se deposita o vierte directamente sin permiso aceite, combustible, líquido refrigerante, filtro del aceite, batería\no cualquier otra sustancia nociva, afectará negativamente a la salud humana o destruirá el medio ambiente.\nClasifique siempre los líquidos de desecho, etc. y trátelos adecuadamente solicitando su eliminación en\nempresas especializadas.\nPara gato\nmecánico\n5.\nPuntos de elevación\nLos puntos de elevación se encuentran en las partes delantera\ny trasera del vehículo. Aplique el gato siempre en los puntos\nde elevación.\nLado delantero:\nDebajo del lado delantero del bastidor hay un surco circular\npara admitir un gato mecánico.\nCuando utilice un gato de taller, aplíquelo en la superficie\ninferior del bastidor.\nLado trasero:\nEn la superficie inferior del contrapeso hay un surco circular\nque admite un gato mecánico o de taller.\nPara gato\nmecánico\n0\n20\nPara gato\nde taller",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "0-10\n6. Procedimiento de inspección del nivel de aceite hidráulico\nComprobando de la cantidad de aceite del tanque interior,\ncomo se muestra a continuación, toque la parte superior del\ncasquete en el retén. (No la empuje dentro del retén.)\n67853-23000-71-A\nELEVACIÓN DEL VEHÍCULO\nAl elevar el vehículo, cuélguelo con cable(s) metálico(s) por los\norificios de los ganchos del mastil y el lado trasero del protector de\nla cabeza.\nAl elevar por el protector de la cabeza, extraiga la cubierta del\ntecho y enganche cable(s) metálico(s) a las posiciones, como se\nmuestra en la ilustración.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "0-11\nPROBADOR DE CIRCUITOS\nHay disponibles probadores de circuitos de tipo analógico y digital. Deberían utilizarse de forma selectiva según el\npropósito de la medición.\nTipo analógico: Este tipo es adecuado para observar el movimiento durante la operación, pero el valor medido sólo\ndebería utilizarse para referencia o para hacer juicios aproximados.\nTipo digital:\nEs posible una lectura bastante precisa, pero resulta difícil observar la variación o movimiento.\n1.\nDiferencia en los resultados de medición con el tipo digital y el tipo analógico\n* El resultado puede ser diferente entre las mediciones con el tipo analógico y el tipo digital.\nUtilice siempre un probador de circuitos conforme a su manual de funcionamiento.\nA continuación se describen las precauciones cuando las polaridades son diferentes entre el tipo analógico y\nel tipo digital.\nDirección de avance\n℮\nDirección de retroceso\n(1) Probador de circuitos analógico\nEjemplo de resultado de medición\nRango del probador: rango kQ\nTipo analógico\nHacia delante\nExiste continuidad\n11 kΩ\nHacia atrás\nNo hay continuidad\nDirección de avance\nDirección de retroceso\n(2) Probador de circuitos digital\nEjemplo de resultado de medición\nRango del probador: rango MS2\nTipo digital\nHacia delante\nNo hay continuidad\n1\nHacia atrás\nExiste continuidad\n2 ΜΩ",
+      "tablas": [
+        [
+          [
+            "",
+            "Tipo analógico"
+          ],
+          [
+            "Hacia delante",
+            "Existe continuidad"
+          ],
+          [
+            "11 kΩ"
+          ],
+          [
+            "Hacia atrás",
+            "No hay continuidad"
+          ],
+          [
+            ""
+          ]
+        ],
+        [
+          [
+            "",
+            "Tipo digital"
+          ],
+          [
+            "Hacia delante",
+            "No hay continuidad"
+          ],
+          [
+            "1"
+          ],
+          [
+            "Hacia atrás",
+            "Existe continuidad"
+          ],
+          [
+            "2 ΜΩ"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "C-12\n2.\nDiferencia en el resultado de la medición con probador de circuitos\nLa tensión del suministro de energía del probador del circuito depende del tipo de probador. Se utilizan 1,5 V,\n3,0 V o 6,0 V.\nLa resistencia de un semiconductor como un diodo varía con la tensión del suministro de energía del probador\ndel circuito. Las características del diodo se muestran en la siguiente figura.\nMA)\n6\n4\nDiodo de\n3\n: germanio\nCorriente directa\n2\n17\nDiodo de silicio\n1\n0\n0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8\nTensión directa\n(V)\nLos valores de resistencia del mismo semiconductor medido con\ndos tipos de probadores del circuito que tienen diferentes\ntensiones de suministro de energía son distintos.\nEste manual describe los resultados de medición con un probador\ndel circuito cuya tensión de suministro de energía es de 3,0 V.\n3. Diferencia en el resultado de la medición por alcance de la medición (tipo analógico)\nEn el probador del circuito de tipo analógico, la modificación del rango de la medición conmuta el circuito interno\npara variar la resistencia del circuito. Incluso cuando se mide el mismo diodo, el resultado de la medición varía\ncon el rango de la medición.\nResistencia\neléctrica\n00\nResistencia variable\nFlujo de corriente\n--\nResistencia\neléctrica\nRango: x 10\nResistencia\neléctrica\n-\nRango: x 1\n℮\nGenerador: 1,5 V\nRojo\nMedidor\n(SW1)\n(SW2)\n0\nNegro\nUtilice siempre el rango descrito en el manual de reparaciones\npara la medición.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "0-13\nPAR DE APRETAMIENTO ESTÁNDAR DE PERNOS Y TUERCAS\nLos pares de apretamiento estándar de pernos y tuercas no se indican.\nJuzgue el par de apretamiento estándar como se muestra a continuación.\n1. Para el par de apretamiento del perno de cabeza hexagonal, perno soldado y perno prisionero con la superficie\nde rodamiento estándar, identifique la clase de perno basándose en el siguiente gráfico y a continuación\ndetermine con la tabla de pares de apretamiento.\n2. Para el par de apretamiento del perno con brida hexagonal, identifique la clase de perno basándose en el\nsiguiente gráfico y a continuación determine con la tabla de pares de apretamiento.\n3. Para el par de apretamiento de tuercas, compruebe el perno de acoplamiento y utilice el método 1.\nMÉTODO DE IDENTIFICACIÓN DE LA CLASE DE RESISTENCIA DEL PERNO\nIdentificación por forma del perno\nForma y clase\nClase\nPerno con cabeza hexagonal\n4\nPerno cabeza N.º\n4 = 4T\n5 = 5T\n6 = 6T\n7 = 7T\n8 = 8T\nSin marca\n4T\nDos líneas salientes\n5T\nTres líneas salientes\n7T\n0\nCuatro líneas salientes\n8T\nPerno soldado\n4T\nPerno prisionero\nSin marca\n4T\nEstriado\n6T",
+      "tablas": [
+        [
+          [
+            "",
+            "Forma y clase",
+            "Clase"
+          ],
+          [
+            "Perno con cabeza hexagonal",
+            "4 Perno cabeza N.º",
+            "4 = 4T"
+          ],
+          [
+            "5 = 5T"
+          ],
+          [
+            "6 = 6T"
+          ],
+          [
+            "7 = 7T"
+          ],
+          [
+            "8 = 8T"
+          ],
+          [
+            ":unselected: Sin marca",
+            "4T"
+          ],
+          [
+            "Dos líneas salientes",
+            "5T"
+          ],
+          [
+            "Tres líneas salientes",
+            "7T"
+          ],
+          [
+            "0 Cuatro líneas salientes",
+            "8T"
+          ],
+          [
+            "Perno soldado",
+            "",
+            "4T"
+          ],
+          [
+            "Perno prisionero",
+            "Sin marca",
+            "4T"
+          ],
+          [
+            "Estriado",
+            "6T"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "0-14\nIdentificación por número de parte\nN.º de parte\nForma\nPerno con cabeza hexagonal\n91611-40625\n-Longitud (mm)\nDiámetro (mm)\nClase\nDiámetro\nLongitu\nPerno prisionero\n92132-40614\nLongitud (mm)\n-Diámetro (mm)\nClase\nDiámetro\n$\nLongitu\nTabla de pares de apretamiento\nClase\nDiámetro\nmm\nSeparación\nmm\nPar especificado\nN·m\nkgf·cm\n4T\n6\n1,0\n5.4\n55\n8\n1,25\n13\n130\n10\n1,25\n25\n260\n12\n1,25\n47\n480\n14\n1,5\n75\n760\n16\n1,5\n113\n1150\n5T\n6\n1,0\n6,5\n65\n8\n1,25\n16\n32\n160\n10\n1,25\n330\n12\n1,25\n59\n91\n600\n14\n1,5\n930\n16\n1,5\n137\n1400\n6T\n6\n1,0\n7,8\n80\n8\n1,25\n19\n190\n10\n1,25\n39\n400\n12\n1,25\n72\n730\n14\n1,5\n108\n1100\n16\n1,5\n172\n1750\n7T\n6\n1,0\n11\n110\n8\n1,25\n25\n260\n10\n1,25\n52\n530\n12\n1,25\n95\n970\n14\n1,5\n147\n1500\n16\n1,5\n226\n2300\n8T\n6\n1,0\n12\n120\n8\n1,25\n29\n300\n10\n1,25\n61\n620\n12\n1,25\n108\n1100\n14\n1,5\n172\n1750\n16\n1,5\n265\n2700",
+      "tablas": [
+        [
+          [
+            "",
+            "N.º de parte",
+            "Forma"
+          ],
+          [
+            "Perno con cabeza hexagonal",
+            "91611-40625 -Longitud (mm) Diámetro (mm) Clase",
+            "Diámetro Longitu"
+          ],
+          [
+            "Perno prisionero",
+            "92132-40614 Longitud (mm) -Diámetro (mm) Clase",
+            "Diámetro $ Longitu"
+          ]
+        ],
+        [
+          [
+            "Clase",
+            "Diámetro mm",
+            "Separación mm",
+            "Par especificado"
+          ],
+          [
+            "N·m",
+            "kgf·cm"
+          ],
+          [
+            "4T",
+            "6",
+            "1,0",
+            "5.4",
+            "55"
+          ],
+          [
+            "8",
+            "1,25",
+            "13",
+            "130"
+          ],
+          [
+            "10",
+            "1,25",
+            "25",
+            "260"
+          ],
+          [
+            "12",
+            "1,25",
+            "47",
+            "480"
+          ],
+          [
+            "14",
+            "1,5",
+            "75",
+            "760"
+          ],
+          [
+            "16",
+            "1,5",
+            "113",
+            "1150"
+          ],
+          [
+            "5T",
+            "6",
+            "1,0",
+            "6,5",
+            "65"
+          ],
+          [
+            "8",
+            "1,25",
+            "16",
+            "160"
+          ],
+          [
+            "10",
+            "1,25",
+            "32",
+            "330"
+          ],
+          [
+            "12",
+            "1,25",
+            "59",
+            "600"
+          ],
+          [
+            "14",
+            "1,5",
+            "91",
+            "930"
+          ],
+          [
+            "16",
+            "1,5",
+            "137",
+            "1400"
+          ],
+          [
+            "6T",
+            "6",
+            "1,0",
+            "7,8",
+            "80"
+          ],
+          [
+            "8",
+            "1,25",
+            "19",
+            "190"
+          ],
+          [
+            "10",
+            "1,25",
+            "39",
+            "400"
+          ],
+          [
+            "12",
+            "1,25",
+            "72",
+            "730"
+          ],
+          [
+            "14",
+            "1,5",
+            "108",
+            "1100"
+          ],
+          [
+            "16",
+            "1,5",
+            "172",
+            "1750"
+          ],
+          [
+            "7T",
+            "6",
+            "1,0",
+            "11",
+            "110"
+          ],
+          [
+            "8",
+            "1,25",
+            "25",
+            "260"
+          ],
+          [
+            "10",
+            "1,25",
+            "52",
+            "530"
+          ],
+          [
+            "12",
+            "1,25",
+            "95",
+            "970"
+          ],
+          [
+            "14",
+            "1,5",
+            "147",
+            "1500"
+          ],
+          [
+            "16",
+            "1,5",
+            "226",
+            "2300"
+          ],
+          [
+            "8T",
+            "6",
+            "1,0",
+            "12",
+            "120"
+          ],
+          [
+            "8",
+            "1,25",
+            "29",
+            "300"
+          ],
+          [
+            "10",
+            "1,25",
+            "61",
+            "620"
+          ],
+          [
+            "12",
+            "1,25",
+            "108",
+            "1100"
+          ],
+          [
+            "14",
+            "1,5",
+            "172",
+            "1750"
+          ],
+          [
+            "16",
+            "1,5",
+            "265",
+            "2700"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "0-15\nIdentificación por forma del perno (Perno con brida hexagonal)\nClase\n4.8T\n6.8T\n8.8T\n10.9T\n11.9T\nPerno con brida hexagonal\nSin marca\n-\n€\n1-\nSin marca\n1\nTabla de pares de apretamiento (Perno con brida hexagonal)\nClase\nDiámetro\nmm\nSeparación\nmm\nPar especificado\nN·m\nkgf·cm\n4.8T\n6\n1,0\n5,5\n56\n8\n1,25\n13\n130\n10\n1,25\n27\n280\n12\n1,25\n50\n510\n14\n1,5\n78\n800\n16\n1,5\n120\n1220\n6.8T\n6\n1,0\n7,5\n80\n8\n1,25\n19\n190\n10\n1,25\n39\n400\n12\n1,25\n71\n110\n720\n14\n1,5\n1120\n16\n1,5\n170\n1730\n8.8T\n6\n1,0\n12\n120\n8\n1,25\n29\n300\n10\n1,25\n61\n620\n12\n1,25\n110\n1120\n14\n1,5\n175\n1780\n16\n1,5\n270\n2750\n10.9T\n6\n1,0\n15,5\n160\n8\n1,25\n38\n390\n10\n1,25\n80\n820\n12\n1,25\n145\n1480\n.\n14\n1,5\n230\n2350\n16\n1,5\n360\n3670\n11.9T\n6\n1,0\n17,5\n180\n8\n1,25\n42\n430\n10\n1,25\n89\n910\n12\n1,25\n160\n1630\n14\n1,5\n260\n2650\n16\n1,5\n400\n4080",
+      "tablas": [
+        [
+          [
+            "Clase",
+            "4.8T",
+            "6.8T",
+            "8.8T",
+            "10.9T",
+            "11.9T"
+          ],
+          [
+            "Perno con brida hexagonal",
+            "Sin marca",
+            "-",
+            "€\n:selected:",
+            "",
+            "1-"
+          ],
+          [
+            "",
+            "Sin marca",
+            "1",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Clase",
+            "Diámetro mm",
+            "Separación mm",
+            "Par especificado"
+          ],
+          [
+            "N·m",
+            "kgf·cm"
+          ],
+          [
+            "4.8T",
+            "6",
+            "1,0",
+            "5,5",
+            "56"
+          ],
+          [
+            "8",
+            "1,25",
+            "13",
+            "130"
+          ],
+          [
+            "10",
+            "1,25",
+            "27",
+            "280"
+          ],
+          [
+            "12",
+            "1,25",
+            "50",
+            "510"
+          ],
+          [
+            "14",
+            "1,5",
+            "78",
+            "800"
+          ],
+          [
+            "16",
+            "1,5",
+            "120",
+            "1220"
+          ],
+          [
+            "6.8T",
+            "6",
+            "1,0",
+            "7,5",
+            "80"
+          ],
+          [
+            "8",
+            "1,25",
+            "19",
+            "190"
+          ],
+          [
+            "10",
+            "1,25",
+            "39",
+            "400"
+          ],
+          [
+            "12",
+            "1,25",
+            "71",
+            "720"
+          ],
+          [
+            "14",
+            "1,5",
+            "110",
+            "1120"
+          ],
+          [
+            "16",
+            "1,5",
+            "170",
+            "1730"
+          ],
+          [
+            "8.8T",
+            "6",
+            "1,0",
+            "12",
+            "120"
+          ],
+          [
+            "8",
+            "1,25",
+            "29",
+            "300"
+          ],
+          [
+            "10",
+            "1,25",
+            "61",
+            "620"
+          ],
+          [
+            "12",
+            "1,25",
+            "110",
+            "1120"
+          ],
+          [
+            "14",
+            "1,5",
+            "175",
+            "1780"
+          ],
+          [
+            "16",
+            "1,5",
+            "270",
+            "2750"
+          ],
+          [
+            "10.9T",
+            "6",
+            "1,0",
+            "15,5",
+            "160"
+          ],
+          [
+            "8",
+            "1,25",
+            "38",
+            "390"
+          ],
+          [
+            "10",
+            "1,25",
+            "80",
+            "820"
+          ],
+          [
+            "12",
+            "1,25",
+            "145",
+            "1480"
+          ],
+          [
+            ". 14",
+            "1,5",
+            "230",
+            "2350"
+          ],
+          [
+            "16",
+            "1,5",
+            "360",
+            "3670"
+          ],
+          [
+            "11.9T",
+            "6",
+            "1,0",
+            "17,5",
+            "180"
+          ],
+          [
+            "8",
+            "1,25",
+            "42",
+            "430"
+          ],
+          [
+            "10",
+            "1,25",
+            "89",
+            "910"
+          ],
+          [
+            "12",
+            "1,25",
+            "160",
+            "1630"
+          ],
+          [
+            "14",
+            "1,5",
+            "260",
+            "2650"
+          ],
+          [
+            "16",
+            "1,5",
+            "400",
+            "4080"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "0-16\nAgente de bloqueo de\nobturación\nPERNOS PRERREVESTIDOS\n(Pernos con recubrimiento de agente de bloqueo de obturación en\nlas roscas)\n1. No utilice el perno prerrevestido en ninguno de los siguientes\ncasos:\n(1) Después de haber sido extraído.\n(2) Cuando el perno prerrevestido se mueve (se afloja o se\naprieta) para comprobar la presión, etc.\nNota:\nPara comprobar el par, utilice el límite inferior del rango de\npares de apretamiento admisibles. Si se mueve el perno,\nvuelva a apretarlo según se expone a continuación.\n2. Método para reutilizar pernos prerrevestidos\n(1) Lave el perno y el orificio roscado. (El orificio roscado\ndebe lavarse incluso para sustituir el perno.)\n1\n(2) Seque totalmente las partes lavadas mediante soplado\nde aire.\n(3) Revista la parte roscada del perno con el agente de\nbloqueo de obturación especificado.\nPAR DE APRETAMIENTO DEL ACOPLAMIENTO DEL TUBO DE\nALTA PRESIÓN\n1. Cuando conecte un tubo de alta presión, seque las superficies de contacto del acoplamiento del tubo y la\nboquilla de acoplamiento con un paño limpio para eliminar materia extraña, como suciedad. Compruebe\ntambién que no hay abolladuras ni otros daños en las superficies de contacto antes de la instalación.\n2. Al conectar un tubo de alta presión, sujete el tubo para alinear el acoplamiento con la boquilla y apretar el\nacoplamiento.\n3. El par de apretamiento máximo no debe superar dos veces de par de apretamiento estándar.\nDiámetro nominal de\ntornillo\nPar de apretamiento estándar N·m (kgf·cm)\nDiámetro interno del\ntubo mm\nEstándar\nRango de apretamiento\n7/16 - 20UNF\n25 (250)\n24 - 26 (240 - 270)\n6\n9/16 - 18UNF\n34 (350)\n32 - 36 (330 - 370)\n9\n3/4 - 16UNF\n59 (600)\n56 - 62 (570 - 630)\n12\n7/8 - 14UNF\n59 (600)\n56 - 62 (570 - 630)\n12\n7/8 - 14UNF\n78 (800)\n74 - 82 (740 - 840)\n15\n1.1/16 - 12UNF\n118 (1200)\n112 - 123 (1140 - 1250)\n19\n1.5/16 - 12UNF\n137 (1400)\n130 - 144 (1330 - 1470)\n25\nPF1/4\n25 (250)\n24 - 26 (240 - 270)\n6\nPF3/8\n34 (350)\n32 - 36 (330 - 370)\n9\nPF1/2\n59 (600)\n56 - 62 (570 - 630)\n12\nPF3/4\n118 (1200)\n112 - 123 (1140 - 1250)\n19\nPF1\n137 (1400)\n130 - 144 (1330 - 1470)\n25",
+      "tablas": [
+        [
+          [
+            "Diámetro nominal de tornillo",
+            "Par de apretamiento estándar N·m (kgf·cm)",
+            "Diámetro interno del tubo mm"
+          ],
+          [
+            "Estándar",
+            "Rango de apretamiento"
+          ],
+          [
+            "7/16 - 20UNF",
+            "25 (250)",
+            "24 - 26 (240 - 270)",
+            "6"
+          ],
+          [
+            "9/16 - 18UNF",
+            "34 (350)",
+            "32 - 36 (330 - 370)",
+            "9"
+          ],
+          [
+            "3/4 - 16UNF",
+            "59 (600)",
+            "56 - 62 (570 - 630)",
+            "12"
+          ],
+          [
+            "7/8 - 14UNF",
+            "59 (600)",
+            "56 - 62 (570 - 630)",
+            "12"
+          ],
+          [
+            "7/8 - 14UNF",
+            "78 (800)",
+            "74 - 82 (740 - 840)",
+            "15"
+          ],
+          [
+            "1.1/16 - 12UNF",
+            "118 (1200)",
+            "112 - 123 (1140 - 1250)",
+            "19"
+          ],
+          [
+            "1.5/16 - 12UNF",
+            "137 (1400)",
+            "130 - 144 (1330 - 1470)",
+            "25"
+          ],
+          [
+            "PF1/4",
+            "25 (250)",
+            "24 - 26 (240 - 270)",
+            "6"
+          ],
+          [
+            "PF3/8",
+            "34 (350)",
+            "32 - 36 (330 - 370)",
+            "9"
+          ],
+          [
+            "PF1/2",
+            "59 (600)",
+            "56 - 62 (570 - 630)",
+            "12"
+          ],
+          [
+            "PF3/4",
+            "118 (1200)",
+            "112 - 123 (1140 - 1250)",
+            "19"
+          ],
+          [
+            "PF1",
+            "137 (1400)",
+            "130 - 144 (1330 - 1470)",
+            "25"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "0-17\nLISTA DE ÁNGULOS DE SUSPENSIÓN DEL CABLE METÁLICO\nÁngulo de\nelevación\nTensión\nCompresión\nMétodo de\nsuspensión\nAngulo de\nelevación\nTensión\nCompresión\nMétodo de\nsuspensión\n0°\nTiempo 1,00\nTiempo 0\n1,0 tf\n2t\n90°\nTiempo 1,41\nTiempo 1,00\n90°\n1,41 tf\n2t\n30°\nTiempo 1,04\nTiempo 0,27\n30°\n1,04 tf\nAmna\n2t\n120°\nTiempo 2,00\nTiempo 1,73\n120°\n2 tf\n2t\n60°\nTiempo 1,16\nTiempo 0,58\n60°\n1,16 tf\n2t\nCARGA SEGURA PARA CADA ÁNGULO DE SUSPENSIÓN DEL\nCABLE METÁLICO\nDiámetro\ndel cable\nCarga\nde corte\nSuspensión\nde un solo\ncable\nSuspensión de dos cables\nSuspensión de cuatro cables\n0º\n0º\n30°\n60°\n90°\n0°\n30°\n60°\n90°\n6 mm\n21380\n(2,18)\n3040\n(0,31).\n6080\n(0,62)\n5880\n(0,6)\n5200\n(0,53)\n4310\n(0,44)\n12160\n(1,24)\n11770\n(1,2)\n10400\n(1,06)\n8630\n(0,88)\n8 mm\n31480\n(3,21)\n4410\n(0,45)\n8830\n(0,9)\n8530\n(0,87)\n7650\n(0,78)\n6280\n(0,64)\n17650\n(1,8)\n17060\n(1,74)\n15300\n(1,56)\n12550\n(1,28)\n10 mm\n49230\n(5,02)\n6960\n(0,71)\n14020\n(1,43)\n13440\n(1,37)\n11770\n(1,2)\n9810\n(1,0)\n27460\n(2,8)\n26480\n(2,7)\n23540\n(2,4)\n19610\n(2,0)\n12,5 mm\n76880\n(7,84)\n10980\n(1,12)\n21570\n(2,2)\n21280\n(2,1)\n18630\n(1,9)\n14710\n(1,5)\n43150\n(4,4)\n41190\n(4,2)\n37270\n(3,8)\n29420\n(3,0)\n14 mm\n96400\n(9,83)\n13730\n(1,4)\n27460\n(2,8)\n26480\n(2,7)\n23540\n(2,4)\n18630\n(1,9)\n54920\n(5.6)\n52960\n(5,4)\n47070\n(4,8)\n37270\n(3,8)\nUnidad: N (tf)",
+      "tablas": [
+        [
+          [
+            "Ángulo de elevación",
+            "Tensión",
+            "Compresión",
+            "Método de suspensión",
+            "Angulo de elevación",
+            "Tensión",
+            "Compresión",
+            "Método de suspensión"
+          ],
+          [
+            "0°",
+            "Tiempo 1,00",
+            "Tiempo 0",
+            "1,0 tf 2t",
+            "90°",
+            "Tiempo 1,41",
+            "Tiempo 1,00",
+            "90° 1,41 tf 2t"
+          ],
+          [
+            "30°",
+            "Tiempo 1,04",
+            "Tiempo 0,27",
+            "30° 1,04 tf Amna 2t",
+            "120°",
+            "Tiempo 2,00",
+            "Tiempo 1,73",
+            "120° 2 tf 2t"
+          ],
+          [
+            "60°",
+            "Tiempo 1,16",
+            "Tiempo 0,58",
+            "60° 1,16 tf 2t",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Diámetro del cable",
+            "Carga de corte",
+            "Suspensión de un solo cable",
+            "Suspensión de dos cables",
+            "Suspensión de cuatro cables"
+          ],
+          [
+            "0º",
+            "0º",
+            "30°",
+            "60°",
+            "90°",
+            "0°",
+            "30°",
+            "60°",
+            "90°"
+          ],
+          [
+            "6 mm",
+            "21380 (2,18)",
+            "3040 (0,31).",
+            "6080 (0,62)",
+            "5880 (0,6)",
+            "5200 (0,53)",
+            "4310 (0,44)",
+            "12160 (1,24)",
+            "11770 (1,2)",
+            "10400 (1,06)",
+            "8630 (0,88)"
+          ],
+          [
+            "8 mm",
+            "31480 (3,21)",
+            "4410 (0,45)",
+            "8830 (0,9)",
+            "8530 (0,87)",
+            "7650 (0,78)",
+            "6280 (0,64)",
+            "17650 (1,8)",
+            "17060 (1,74)",
+            "15300 (1,56)",
+            "12550 (1,28)"
+          ],
+          [
+            "10 mm",
+            "49230 (5,02)",
+            "6960 (0,71)",
+            "14020 (1,43)",
+            "13440 (1,37)",
+            "11770 (1,2)",
+            "9810 (1,0)",
+            "27460 (2,8)",
+            "26480 (2,7)",
+            "23540 (2,4)",
+            "19610 (2,0)"
+          ],
+          [
+            "12,5 mm",
+            "76880 (7,84)",
+            "10980 (1,12)",
+            "21570 (2,2)",
+            "21280 (2,1)",
+            "18630 (1,9)",
+            "14710 (1,5)",
+            "43150 (4,4)",
+            "41190 (4,2)",
+            "37270 (3,8)",
+            "29420 (3,0)"
+          ],
+          [
+            "14 mm",
+            "96400 (9,83)",
+            "13730 (1,4)",
+            "27460 (2,8)",
+            "26480 (2,7)",
+            "23540 (2,4)",
+            "18630 (1,9)",
+            "54920 (5.6)",
+            "52960 (5,4)",
+            "47070 (4,8)",
+            "37270 (3,8)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "0-18\nPESO DE LOS COMPONENTES\nComponente\nPeso kgf\nMotor\n4Y\n134\n1DZ-II\n162\n2Z\n212\nTransmisión\nM/T (Embrague con\nfuncionamiento en seco)\n34\nM/T (Embrague de aceite)\n43\nT/C (1 velocidad)\n62\nT/C (T/C con 2 estatores)\n130\nContrapeso\nModelo de 1,0 tonelada\nAprox. 465\nModelo de 1,5 toneladas\nAprox. 770\nModelo de 1,75 toneladas\nAprox. 900\nModelo de 2,0 toneladas\nAprox. 1165\nModelo de 2,5 toneladas\nAprox. 1520\nModelo de 3,0 toneladas\nAprox. 1915\nModelo de K2,0 toneladas\nAprox. 1260\nModelo de K2,5 toneladas\nAprox. 1650\nModelo de K3,0 toneladas\nAprox. 1995\nModelo de J3,5 toneladas\nAprox. 2215\nConjunto del mástil V menos respaldo y horquilla\n(con cilindro de elevación, altura de elevación máx .:\n3000 mm)\nSeries de 1 tonelada\nAprox. 310\nSeries de 2 toneladas\nAprox. 410\nSeries de 3 toneladas,\nK3 toneladas\nAprox. 500\nSeries de K2 toneladas\nAprox. 400\nSeries de J3,5 toneladas\nAprox. 600",
+      "tablas": [
+        [
+          [
+            "Componente",
+            "Peso kgf"
+          ],
+          [
+            "Motor",
+            "4Y",
+            "134"
+          ],
+          [
+            "1DZ-II",
+            "162"
+          ],
+          [
+            "2Z",
+            "212"
+          ],
+          [
+            "Transmisión",
+            "M/T (Embrague con funcionamiento en seco)",
+            "34"
+          ],
+          [
+            "M/T (Embrague de aceite)",
+            "43"
+          ],
+          [
+            "T/C (1 velocidad)",
+            "62"
+          ],
+          [
+            "T/C (T/C con 2 estatores)",
+            "130"
+          ],
+          [
+            "Contrapeso",
+            "Modelo de 1,0 tonelada",
+            "Aprox. 465"
+          ],
+          [
+            "Modelo de 1,5 toneladas",
+            "Aprox. 770"
+          ],
+          [
+            "Modelo de 1,75 toneladas",
+            "Aprox. 900"
+          ],
+          [
+            "Modelo de 2,0 toneladas",
+            "Aprox. 1165"
+          ],
+          [
+            "Modelo de 2,5 toneladas",
+            "Aprox. 1520"
+          ],
+          [
+            "Modelo de 3,0 toneladas",
+            "Aprox. 1915"
+          ],
+          [
+            "Modelo de K2,0 toneladas",
+            "Aprox. 1260"
+          ],
+          [
+            "Modelo de K2,5 toneladas",
+            "Aprox. 1650"
+          ],
+          [
+            "Modelo de K3,0 toneladas",
+            "Aprox. 1995"
+          ],
+          [
+            "Modelo de J3,5 toneladas",
+            "Aprox. 2215"
+          ],
+          [
+            "Conjunto del mástil V menos respaldo y horquilla (con cilindro de elevación, altura de elevación máx .: 3000 mm)",
+            "Series de 1 tonelada",
+            "Aprox. 310"
+          ],
+          [
+            "Series de 2 toneladas",
+            "Aprox. 410"
+          ],
+          [
+            "Series de 3 toneladas, K3 toneladas",
+            "Aprox. 500"
+          ],
+          [
+            "Series de K2 toneladas",
+            "Aprox. 400"
+          ],
+          [
+            "Series de J3,5 toneladas",
+            "Aprox. 600"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "0-19\nCANTIDAD Y TIPOS DE LUBRICANTES RECOMENDADOS\nDescripción\nAplicación\nCantidad (\nClasificación\nTipo\nMotor\nGasolina\n4Y\n4,0\nAPI\nSH, SJ, SL, SM\nLubricante de motor\nSAE30\nSAE10W-30\nDiesel\n1DZ-II\n7,9\nAPI\nCE, CF, CF-4\nAceite de motor diesel\nSAE30\nSAE10W-30\n2Z\n9,0\nTransmisión\nM/T\n3,6\nAPI\nGL-4\nAceite para engranajes\nhipoidales\nSAE85W-90\nAPI\nGL-3\nEspec. de área fría:\nAceite para engranajes\nSAE75W-90\nT/C (1 velocidad)\n8,0\nATF\nGM Dexron® ||\nT/C (T/C con 2 estatores)\n9,0\nDiferencial\nSeries de 1 tonelada\n5,8\nAPI\nGL-4\nAceite para engranajes\nhipoidales\nSAE85W-90\nSeries de 2 toneladas\n6,1\nSeries de K2 toneladas\n5,8\nSeries de K3 toneladas\n6,1\nSeries de 3 toneladas,\nseries de J3,5\ntoneladas\n8,2\nAceite hidráulico\n(Mástil V, máx. altura de\nelevación 3000 mm)\nSeries de 1 tonelada\n30\nISO\nVG32\nAceite hidráulico\nSeries de 2 toneladas\n33\nSeries de K2 toneladas,\nSeries de K3 toneladas\n33\nSeries de 3 toneladas,\nSeries de J3,5\ntoneladas\n34\nDepósito de combustible\nSeries de 1 tonelada\n45\nSeries de K2 toneladas,\nSeries de K3 toneladas\n55\nSeries de 2-3 toneladas\nSeries de J3,5 toneladas\n60\nTuberías del sistema de\nfrenado y embrague\nTodos los modelos\nCantidad adecuada\nDepósito\n0,2\n-\nSAE J-1703\nDOT-3\nPartes del chasis\nTodos los modelos\nCantidad adecuada\n· Grasa MP\n· Grasa de bisulfuro de\nmolibdeno\nLíquido refrigerante\n(excluido depósito)\nTabla 1 adjunta Volumen de líquido refrigerante\nLLC\n· Mezcla LLC 30-50%\n(para invierno o todas\nlas estaciones)\n· Líquido refrigerante\ncon sustancia\nantioxidante\n(para primavera,\nverano y otoño)\nLiquido refrigerante\n(Depósito)\nTodos los modelos\n0,47\n(a nivel completo)\n1",
+      "tablas": [
+        [
+          [
+            "Descripción",
+            "Aplicación",
+            "Cantidad (",
+            "Clasificación",
+            "Tipo"
+          ],
+          [
+            "Motor",
+            "Gasolina",
+            "4Y",
+            "4,0",
+            "API SH, SJ, SL, SM",
+            "Lubricante de motor SAE30 SAE10W-30"
+          ],
+          [
+            "Diesel",
+            "1DZ-II",
+            "7,9",
+            "API CE, CF, CF-4",
+            "Aceite de motor diesel SAE30 SAE10W-30"
+          ],
+          [
+            "2Z",
+            "9,0"
+          ],
+          [
+            "Transmisión",
+            "M/T",
+            "3,6",
+            "API GL-4",
+            "Aceite para engranajes hipoidales SAE85W-90"
+          ],
+          [
+            "API GL-3",
+            "Espec. de área fría: Aceite para engranajes SAE75W-90"
+          ],
+          [
+            "T/C (1 velocidad)",
+            "8,0",
+            "ATF",
+            "GM Dexron® ||"
+          ],
+          [
+            "T/C (T/C con 2 estatores)",
+            "9,0"
+          ],
+          [
+            "Diferencial",
+            "Series de 1 tonelada",
+            "5,8",
+            "API GL-4",
+            "Aceite para engranajes hipoidales SAE85W-90"
+          ],
+          [
+            "Series de 2 toneladas",
+            "6,1"
+          ],
+          [
+            "Series de K2 toneladas",
+            "5,8"
+          ],
+          [
+            "Series de K3 toneladas",
+            "6,1"
+          ],
+          [
+            "Series de 3 toneladas, series de J3,5 toneladas",
+            "8,2"
+          ],
+          [
+            "Aceite hidráulico (Mástil V, máx. altura de elevación 3000 mm)",
+            "Series de 1 tonelada",
+            "30",
+            "ISO VG32",
+            "Aceite hidráulico"
+          ],
+          [
+            "Series de 2 toneladas",
+            "33"
+          ],
+          [
+            "Series de K2 toneladas, Series de K3 toneladas",
+            "33"
+          ],
+          [
+            "Series de 3 toneladas, Series de J3,5 toneladas",
+            "34"
+          ],
+          [
+            "Depósito de combustible",
+            "Series de 1 tonelada",
+            "45",
+            "",
+            ""
+          ],
+          [
+            "Series de K2 toneladas, Series de K3 toneladas",
+            "55"
+          ],
+          [
+            "Series de 2-3 toneladas Series de J3,5 toneladas",
+            "60"
+          ],
+          [
+            "Tuberías del sistema de frenado y embrague",
+            "Todos los modelos",
+            "Cantidad adecuada Depósito 0,2",
+            "-",
+            "SAE J-1703 DOT-3"
+          ],
+          [
+            "Partes del chasis",
+            "Todos los modelos",
+            "Cantidad adecuada",
+            "",
+            "· Grasa MP · Grasa de bisulfuro de molibdeno"
+          ],
+          [
+            "Líquido refrigerante (excluido depósito)",
+            "Tabla 1 adjunta Volumen de líquido refrigerante",
+            "LLC",
+            "· Mezcla LLC 30-50% (para invierno o todas las estaciones) · Líquido refrigerante con sustancia antioxidante (para primavera, verano y otoño)"
+          ],
+          [
+            "Liquido refrigerante (Depósito)",
+            "Todos los modelos",
+            "0,47 (a nivel completo)",
+            "",
+            "1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "0-20\nNota:\nDado que el volumen de aceite hidráulico varía con la especificación del mástil, asegúrese de comprobarlo\nfinalmente con el indicador de nivel.\nTabla 1 adjunta Volumen de líquido refrigerante .\nUnidad: /\nMotor\nTransmisión\nSeries de 1 tonelada\nSeries de K2·K3\ntoneladas\nSeries de 2 toneladas\nSeries de 3·J3,5\ntoneladas\n4Y\nM/T\n8,2\n8.2\n8,3\n8,3\nT/C\n8,4\n8,4\n8,5\n9,7\n1DZ-II\nM/T\n6,8\n6,8\n7,0\n7,0\nT/C\n7,0\n7,0\n8,4\n8,4\n2Z\nM/T\n7,9\n7,9\nT/C\n8,1\n9,3",
+      "tablas": [
+        [
+          [
+            "Motor",
+            "Transmisión",
+            "Series de 1 tonelada",
+            "Series de K2·K3 toneladas",
+            "Series de 2 toneladas",
+            "Series de 3·J3,5 toneladas"
+          ],
+          [
+            "4Y",
+            "M/T",
+            "8,2",
+            "8.2",
+            "8,3",
+            "8,3"
+          ],
+          [
+            "T/C",
+            "8,4",
+            "8,4",
+            "8,5",
+            "9,7"
+          ],
+          [
+            "1DZ-II",
+            "M/T",
+            "6,8",
+            "6,8",
+            "7,0",
+            "7,0"
+          ],
+          [
+            "T/C",
+            "7,0",
+            "7,0",
+            "8,4",
+            "8,4"
+          ],
+          [
+            "2Z",
+            "M/T",
+            "",
+            "",
+            "7,9",
+            "7,9"
+          ],
+          [
+            "T/C",
+            "",
+            "",
+            "8,1",
+            "9,3"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "0-21\nGRÁFICO DE LUBRICACIÓN\nModelo de transmisión manual\n(14)\n(1)\n(13)\n(3)\n(4)\n(12)\n(10)\n(16).\n(7)\n(6)\nA\n(17)\n(18)\n(11)\nF\nB\nF\nA\nF\nF\nA\nA\nA\nF\nE\n-\nB\nF\nD\nB\nA\nA\nA\nF\n(14)\n(1)\n(13)\nA - (3)\nC\nC - (2)\nA)- (15)\nC\nC - (5)\nF.\n(19)\n- (8)\nB\n(9)\n(7)\nA - (6)\n(17)\n(18)\n=\n=\nIV\nV\n*: Para las calidades de aceite de motor que se enumeran a continuación, cambie el aceite cada 500 horas.\nVehículo de gasolina: API SL, SM y superior\nVehículo diesel: API CF-4 y superior\n0\nInspección\nSustitución\nA\nGrasa MP\nB Aceite de motor\nC Aceite para engranajes hipoidales\nD Aceite hidráulico\nE Líquido de frenos\nF Grasa de bisulfuro de molibdeno\n1\nCadena\n11\nPasador trasero del eje trasero con muñón central\n2\nDiferencial\n12\nMecanismo de bloqueo de la dirección de inclinación\n3\nCojinete de las ruedas delanteras\n13\nCasquillo de apoyo del mástil\n4\nCilindro maestro de freno y embrague\n5\nCaja de la transmisión\n14\nPasador delantero del cilindro de inclinación\n6\nCojinete de las ruedas traseras\n15\nÁrbol cardan\n7\nPivote de dirección de la rótula de\ndirección\n16\nPasador inferior del cilindro de bloqueo de oscilación\n(espec. del SAS)\n8\nTanque de aceite\n17\nPasador final de la barra de acoplamiento\n9\nCaja del cigüeñal del motor\n18\nPasador final del cilindro del eje trasero\n10\nPasador frontal del eje trasero\ncon muñón central\n19\nPalanca de cambio de engranaje\n1\nInspeccione cada 8 horas (diariamente)\nInspeccione cada 40 horas (semanalmente)\nIlI Inspeccione cada 250 horas (6 semanas)\nIV Inspeccione cada 1000 horas (6 mensualmente)\nV Inspeccione cada 2000 horas (anual)",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "0-22\nConvertidor de par y modelo de transmisión\n(14)\n(1)\n(13)-\n(3)\n(4)\n(12)\nG\nB\nG\nA\nB\nG\nF\n(10)\nG\n(16)\nG\n(7)\nA\n(6)\n(17)\nA\n(18)\nA\n(11)\nG\nG\n(14)\n(1)\n(13)\n(3)\nC\nC- (2)\nA - (15)\nD\nB\n1\nE\n(5)\n(8)\n(9)\nA\n- (7)\nA-(6)\nA\n(17)\nA\n(18)\nII\n=\nIV\nV\n\": Para las calidades de aceite de motor que se enumeran a continuación, cambie el aceite cada 500 horas.\nVehículo de gasolina: API SL, SM y superior\nVehículo diesel: API CF-4 y superior\nO Inspección\n· Sustitución\nGrasa MP\nB Aceite de motor\nC Aceite para engranajes hipoidales\nD Aceite hidráulico\nE Líquido de la transmisión automática\nF Líquido de frenos\nG Grasa de bisulfuro de molibdeno\n1\nCadena\n2\nDiferencial\n3\nCojinete de las ruedas delanteras\n4\nCilindro maestro del freno\n5\nCaja del convertidor de par\n6\nCojinete de las ruedas traseras\n7\nPivote de dirección de la rótula de\ndirección\n8\nTanque de aceite\n9\nCaja del cigüeñal del motor\n1\nInspeccione cada 8 horas (diariamente)\nIl Inspeccione cada 40 horas (semanalmente)\nINI Inspeccione cada 250 horas (6 semanas)\nIV Inspeccione cada 1000 horas (6 mensualmente)\nV Inspeccione cada 2000 horas (anual)\n10\nPasador frontal del eje trasero con muñón central\n11\nPasador trasero del eje trasero con muñón central\n12\nMecanismo de bloqueo de la dirección de inclinación\n13\nCasquillo de apoyo del mástil\n14\nPasador delantero del cilindro de inclinación\n15\nÁrbol cardan\n16\nPasador inferior del cilindro de bloqueo de oscilación\n(espec. del SAS)\n17\nPasador final de la barra de acoplamiento\n18\nPasador final del cilindro del eje trasero",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "0-23\nMANTENIMIENTO PERIÓDICO\nMÉTODO DE INSPECCIÓN\nI: Inspección. Repare o reemplace si es necesario.\nM: Medición. Repare o ajuste si es necesario.\nT: Volver a apretar C: Limpiar\nL: Lubricación\n*: Para vehículo nuevo *1: Detector de fisuras\nPeriodo de inspección\nElemento\nCada\n6 semanas\nCada\n3 meses\nCada\n6 meses\nCada\n12 meses\nCada\n250 horas\nCada\n500 horas\nCada\n1000 horas\nCada\n2000 horas\nMOTOR\nCarrocería\npancipa!\nArranque correcto y ruido anormal\n-\n1\n1\n1\nCondición de rotación en régimen mínimo\nM\n1\nCondición de rotación durante la aceleración\nM\n1\nCondición de gases de escape\n1\n-\nElemento del filtro de aire\nC\n6\nHolgura entre válvulas (IDZ-II·2Z)\nM*\nM\nCompresión\nM\nAflojamiento de perno de la culata\nT\nMontaje sobre tacos elásticos del silenciador\n1\nSistema de PCV\nObstrucción y daños en válvula y tuberías de PCV\n1\nRegulador\nRpm máxima sin carga\nM\nSistema de\nlubricación\nPérdida de aceite\n1\nNivel de aceite\n1\n-\nObstrucción y suciedad del filtro de aceite\n1\n1\nSistema de\ncombustible\nPérdida de combustible\n1\n6\nFuncionamiento del mecanismo de conexión del\ncarburador\n1\n1\n1\n1\nSuciedad y obstrucción del filtro y elemento de\ncombustible\n1\n1\n1\n1\nPuesta a punto de la inyección\nM\n1\nPresión de inyección de la boquilla de inyección y\nestado del agua pulverizada\nM\nDrenaje del sedimentador\n1\n1\nSistema de\nrefrigeración\nNivel del líquido refrigerante en el radiador y fuga\n1\n1\n1\nDegradación del tubo de caucho\n1\n1 1\n1 1\nCondición del tapón del radiador\n1\nTensión de la correa del ventilador, afiojamiento y\ndaños\n1\n1\n1\nMontaje sobre tacos elásticos del radiador\nSilenciador DPF\nFiltro\n1\nFiltro alineado (para sensor de contrapresión)\n1\n1\nVálvula DPF\nC\nSistema de\ncombustible LPG\nEscape de gas en conductos y juntas\nI\n1\n1 1\nAvería en conductos y juntas\n1\n1 1 1\nExtracción de alquitrán del regulador\n1\n4\nAflojamiento y daños en la sección de instalación\ndel contenedor LPG\n1\n1\n1.",
+      "tablas": [
+        [
+          [
+            "Periodo de inspección Elemento",
+            "Cada 6 semanas",
+            "Cada 3 meses",
+            "Cada 6 meses",
+            "Cada 12 meses"
+          ],
+          [
+            "Cada 250 horas",
+            "Cada 500 horas",
+            "Cada 1000 horas",
+            "Cada 2000 horas"
+          ],
+          [
+            "MOTOR",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Carrocería pancipa!",
+            "Arranque correcto y ruido anormal",
+            "-",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "Condición de rotación en régimen mínimo",
+            "M\n:selected:",
+            "",
+            "1",
+            ":selected:"
+          ],
+          [
+            "Condición de rotación durante la aceleración",
+            "M\n:selected:",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Condición de gases de escape",
+            "1\n:unselected:",
+            "-",
+            "",
+            ""
+          ],
+          [
+            "Elemento del filtro de aire",
+            "C\n:unselected:",
+            "6",
+            "",
+            ""
+          ],
+          [
+            "Holgura entre válvulas (IDZ-II·2Z)",
+            "M*",
+            "",
+            "",
+            "M"
+          ],
+          [
+            "Compresión",
+            "",
+            "",
+            "",
+            "M"
+          ],
+          [
+            "Aflojamiento de perno de la culata",
+            "",
+            "",
+            "",
+            "T"
+          ],
+          [
+            "Montaje sobre tacos elásticos del silenciador",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Sistema de PCV",
+            "Obstrucción y daños en válvula y tuberías de PCV",
+            "1\n:unselected:",
+            ":selected:",
+            ":selected:",
+            ":selected:"
+          ],
+          [
+            "Regulador",
+            "Rpm máxima sin carga",
+            "M\n:selected:",
+            "",
+            ":selected:",
+            ":selected:"
+          ],
+          [
+            "Sistema de lubricación",
+            "Pérdida de aceite",
+            "1\n:unselected:",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Nivel de aceite",
+            "1",
+            "-\n:selected:",
+            "",
+            ":selected:"
+          ],
+          [
+            "Obstrucción y suciedad del filtro de aceite",
+            "1",
+            "",
+            "1",
+            ":selected:"
+          ],
+          [
+            "Sistema de combustible",
+            "Pérdida de combustible",
+            "",
+            "1",
+            "6",
+            ":selected:"
+          ],
+          [
+            "Funcionamiento del mecanismo de conexión del carburador",
+            "1",
+            "1",
+            "1",
+            "1\n:selected:"
+          ],
+          [
+            "Suciedad y obstrucción del filtro y elemento de combustible",
+            "1",
+            "1",
+            "1",
+            "1\n:selected:"
+          ],
+          [
+            "Puesta a punto de la inyección",
+            "",
+            "",
+            "M",
+            "1"
+          ],
+          [
+            "Presión de inyección de la boquilla de inyección y estado del agua pulverizada",
+            "",
+            "",
+            "",
+            "M"
+          ],
+          [
+            "Drenaje del sedimentador",
+            "",
+            "",
+            "1",
+            "1"
+          ],
+          [
+            "Sistema de refrigeración",
+            "Nivel del líquido refrigerante en el radiador y fuga",
+            "1",
+            "",
+            "1\n:selected:",
+            "1\n:selected:"
+          ],
+          [
+            "Degradación del tubo de caucho",
+            "1",
+            "",
+            "1\n:selected:",
+            "1\n:selected:"
+          ],
+          [
+            "Condición del tapón del radiador",
+            "1",
+            "",
+            "1",
+            "1"
+          ],
+          [
+            "Tensión de la correa del ventilador, afiojamiento y daños",
+            "1",
+            "1",
+            "1",
+            ""
+          ],
+          [
+            "Montaje sobre tacos elásticos del radiador",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Silenciador DPF",
+            "Filtro",
+            "",
+            "",
+            "1",
+            ""
+          ],
+          [
+            "Filtro alineado (para sensor de contrapresión)",
+            "",
+            "1",
+            "1",
+            ""
+          ],
+          [
+            "Válvula DPF",
+            "",
+            "",
+            "",
+            "C :unselected:"
+          ],
+          [
+            "Sistema de combustible LPG",
+            "Escape de gas en conductos y juntas",
+            "I",
+            "1\n:selected:",
+            "1",
+            "1"
+          ],
+          [
+            "Avería en conductos y juntas",
+            "",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "Extracción de alquitrán del regulador",
+            "1",
+            "4",
+            "1",
+            ""
+          ],
+          [
+            "Aflojamiento y daños en la sección de instalación del contenedor LPG",
+            "1",
+            "1",
+            "1.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "0-24\nPeriodo de inspección\nElemento\nCada\n6 semanas\nCada\n3 meses\nCada\n6 meses\nCada\n12 meses\nCada\n250 horas\nCada\n500 horas\nCada\n1000 horas\nCada\n2000 horas\nSistema\nconvertidor\ncatalítico de tres\nvias\nMedición de la concentración de gases de escape\n(monóxido de carbono e hidrocarburo)\nM\n1\n1\nAflojamiento y daños en el tubo del sistema de escape\n1\nDaños en el tubo de vacío\n-\n6\n1\nDaños en el sensor de vacío\n1\nDaños en el sensor de temperatura del líquido\nrefrigerante\n-\nDaños y limpieza del inyector (vehículo LPG)\n-\nDaños en el contador (vehículo LPG)\n-\nControl de\nDaños en el actuador\n+\nmanipulación de\ncarga y\ndesplazamiento\nDaños en el interruptor y sensor del pedal del eje\nDaños en el sensor de velocidad de desplazamiento\n1\n1\n1\nSISTEMA DE TRANSMISIÓN DE ENERGÍA\nEmbrague\nJuego del pedal del embrague\nM\n1. 1\nSonido y funcionamiento anormales (conexión)\n1\nT 1 1\nT. T\nFuncionamiento y escape del cilindro maestro del\nembrague\n1\n1\ni-\nNivel del líquido\n1\n1\n1\n1\nFuncionamiento y escape del mecanismo del\nembrague de aceite (OPT)\n1\n1\nTransmisión\nmanual\nFuga\n1\n1\nNivel del líquido\nTT T\n1\nFuncionamiento y ruido anormal del engranaje\n1\n1\n1\nDaños en el cable de la palanca de cambios\n1\nDiferencial\nFuga\n1\n1\n1\nNivel de aceite\n1\n1\n1\n1 1\nAflojamiento del perno\nConvertidor de\npar y transmisión\nFuga\n1\n+ 1\nNivel del líquido\nFuncionamiento y aflojamiento del mecanismo\noperativo\n1\n1\nFunciones del embrague y válvula de control\n1\n1 1\nFunción de la válvula de marcha lenta\n1\n6\nMedición de la presión hidráulica y de calado\nM\n1\nÁrbol cardan y\npalier\nJunta floja\nT\n‹-\n1\nAflojamiento en conexiones de ranuras\n1\nAflojamiento de junta universal\n1\nTorsión y fisuras del palier\n-\nSISTEMA MOTOR\nRuedas\nPresión de inflado de neumáticos\nM\nCortes, daños y desgaste irregular de neumáticos\n1\n1 1 1\nTuercas de cubo y llanta aflojadas\nT\nProfundidad del dibujo de los neumáticos\nM\n1\nAstillas metálicas, piedras pequeñas y otras materias\nextrañas atrapadas en los surcos de los neumáticos\n1\n1",
+      "tablas": [
+        [
+          [
+            "Periodo de inspección Elemento",
+            "Cada 6 semanas",
+            "Cada 3 meses",
+            "Cada 6 meses",
+            "Cada 12 meses"
+          ],
+          [
+            "Cada 250 horas",
+            "Cada 500 horas",
+            "Cada 1000 horas",
+            "Cada 2000 horas"
+          ],
+          [
+            "Sistema convertidor catalítico de tres vias",
+            "Medición de la concentración de gases de escape (monóxido de carbono e hidrocarburo)",
+            "M",
+            "1",
+            "1",
+            ""
+          ],
+          [
+            "Aflojamiento y daños en el tubo del sistema de escape",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Daños en el tubo de vacío",
+            "-",
+            "6",
+            "",
+            "1"
+          ],
+          [
+            "Daños en el sensor de vacío",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Daños en el sensor de temperatura del líquido refrigerante",
+            "",
+            "",
+            "",
+            "-"
+          ],
+          [
+            "Daños y limpieza del inyector (vehículo LPG)",
+            "",
+            "",
+            "",
+            "-"
+          ],
+          [
+            "Daños en el contador (vehículo LPG)",
+            "",
+            "",
+            "",
+            "-"
+          ],
+          [
+            "Control de",
+            "Daños en el actuador",
+            "",
+            "",
+            "",
+            "+"
+          ],
+          [
+            "manipulación de carga y desplazamiento",
+            "Daños en el interruptor y sensor del pedal del eje Daños en el sensor de velocidad de desplazamiento",
+            "",
+            "",
+            "1",
+            "1 1\n:selected:"
+          ],
+          [
+            "SISTEMA DE TRANSMISIÓN DE ENERGÍA"
+          ],
+          [
+            "Embrague",
+            "Juego del pedal del embrague",
+            "M",
+            "1",
+            "T",
+            "1."
+          ],
+          [
+            "Sonido y funcionamiento anormales (conexión)",
+            "1",
+            "1",
+            "T.",
+            "1"
+          ],
+          [
+            "Funcionamiento y escape del cilindro maestro del embrague",
+            "1",
+            "T",
+            "1",
+            "i-"
+          ],
+          [
+            "Nivel del líquido",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "Funcionamiento y escape del mecanismo del embrague de aceite (OPT)",
+            "",
+            "",
+            "1",
+            "1\n:selected:"
+          ],
+          [
+            "Transmisión manual",
+            "Fuga",
+            "1",
+            "T",
+            "",
+            "1\n:selected:"
+          ],
+          [
+            "Nivel del líquido",
+            "",
+            "",
+            "1\n:selected:",
+            ":selected:"
+          ],
+          [
+            "Funcionamiento y ruido anormal del engranaje",
+            "1",
+            "TT",
+            "1",
+            "1"
+          ],
+          [
+            "Daños en el cable de la palanca de cambios",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Diferencial",
+            "Fuga",
+            "1",
+            "",
+            "1\n:selected:",
+            "1\n:selected:"
+          ],
+          [
+            "Nivel de aceite",
+            "1",
+            "1",
+            "1\n:selected:",
+            "1"
+          ],
+          [
+            "Aflojamiento del perno",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Convertidor de par y transmisión",
+            "Fuga",
+            "",
+            "",
+            "1",
+            "+\n:selected:"
+          ],
+          [
+            "Nivel del líquido",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Funcionamiento y aflojamiento del mecanismo operativo",
+            "1",
+            "",
+            "1",
+            ""
+          ],
+          [
+            "Funciones del embrague y válvula de control",
+            "1",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Función de la válvula de marcha lenta",
+            "1",
+            "1",
+            "",
+            "6\n:selected:"
+          ],
+          [
+            "Medición de la presión hidráulica y de calado",
+            "",
+            "",
+            "M",
+            "1\n:selected:"
+          ],
+          [
+            "Árbol cardan y palier",
+            "Junta floja",
+            "",
+            "T",
+            "‹-",
+            "1\n:selected:"
+          ],
+          [
+            "Aflojamiento en conexiones de ranuras",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Aflojamiento de junta universal",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Torsión y fisuras del palier",
+            "",
+            "",
+            "",
+            "-"
+          ],
+          [
+            "SISTEMA MOTOR"
+          ],
+          [
+            "Ruedas",
+            "Presión de inflado de neumáticos",
+            "M",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Cortes, daños y desgaste irregular de neumáticos",
+            "1",
+            "1",
+            "",
+            ":selected:"
+          ],
+          [
+            "Tuercas de cubo y llanta aflojadas",
+            "T",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Profundidad del dibujo de los neumáticos",
+            "M",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Astillas metálicas, piedras pequeñas y otras materias extrañas atrapadas en los surcos de los neumáticos",
+            "1",
+            "",
+            "1",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "0-25\n----\nPeriodo de inspección\nElemento\nCada\n6 semanas\nCada\n3 meses\nCada\n6 meses\nCada\n12 meses\nCada\n250 horas\nCada\n500 horas\nCada\n1000 horas\nCada\n2000 horas\nRuedas\nDaños en la llanta, cojinete lateral y rueda de disco\n1\n4.\nSonido anormal y aflojamiento del cojinete de las\nruedas delanteras\n1\n1\nSonido anormal y aflojamiento del cojinete de las\nruedas traseras\n1\n1\n1\nEje delantero\nFisuras, daños y deformación de la caja\n1\nSje trasero\nFisuras, daños y deformación de la caja\n1\nAflojamiento del eje con muñón central en la\ndirección longitudinal del vehículo\nM\nSISTEMA DE DIRECCIÓN\nVolante\nJuego y aflojamiento\nFunción\n-\nVálvula de\ndirección\nPérdida de aceite\n1\n1\nAflojamiento del montaje\nT\nDirección asistida\nPérdida de aceite\n1\n1\nAflojamiento del montaje y el varillaje de mando\n-\n1\nDaños en el tubo de la dirección asistida\n1\nRótula\nAflojamiento del pivote de dirección\nFisuras y deformación\n1\n-\n1\n1\n1\nSISTEMA DE FRENOS\nPedal del freno\nJuego y reserva\nM\n1.\n1\n1\nEfecto de frenado\n1\nFreno de\nestacionamiento\nEficacia de funcionamiento\n1\n1\n6\n4-\nEfecto de frenado\n1\n1\n6\nAflojamiento y daños en el cable y el varillaje de\nmando\n1\nTuberia del freno\nFugas, daños y condición de montaje\n1\nDepósito\nFuga y nivel de fluido\n-\n1\nCilindro maestro y\ncilindro de la\nrueda\nFunción, desgaste, daños, fugas y aflojamiento del\nmontaje\n1\nTambor del freno\ny zapata de freno\nHolgura entre tambor y forro\nM\n1\n1\n1\nDesgaste de la parte deslizante de la zapata y el\nforro\n1\nDesgaste y daños en el tambor\n1\nCondición de funcionamiento de la zapata\nOxidación del bulón de anclaje\n1\nFatiga del resorte de retorno\nM\nFunción de ajuste automático\n1\nPlaca de apoyo\nDeformación, fisuras y daños\nMontaje suelto\n1\nT",
+      "tablas": [
+        [
+          [
+            "Periodo de inspección Elemento",
+            "Cada 6 semanas",
+            "Cada 3 meses",
+            "Cada 6 meses",
+            "Cada 12 meses"
+          ],
+          [
+            "Cada 250 horas",
+            "Cada 500 horas",
+            "Cada 1000 horas",
+            "Cada 2000 horas"
+          ],
+          [
+            "Ruedas",
+            "Daños en la llanta, cojinete lateral y rueda de disco",
+            "1",
+            "",
+            "4.",
+            ""
+          ],
+          [
+            "Sonido anormal y aflojamiento del cojinete de las ruedas delanteras",
+            "1",
+            "",
+            "1",
+            ":selected:"
+          ],
+          [
+            "Sonido anormal y aflojamiento del cojinete de las ruedas traseras",
+            "1",
+            "",
+            "1",
+            "1\n:selected:"
+          ],
+          [
+            "Eje delantero",
+            "Fisuras, daños y deformación de la caja",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Sje trasero",
+            "Fisuras, daños y deformación de la caja",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Aflojamiento del eje con muñón central en la dirección longitudinal del vehículo",
+            "",
+            "M"
+          ],
+          [
+            "SISTEMA DE DIRECCIÓN"
+          ],
+          [
+            "Volante",
+            "Juego y aflojamiento Función",
+            "-",
+            "",
+            ":selected:",
+            ":selected:\n:selected:"
+          ],
+          [
+            "Válvula de dirección",
+            "Pérdida de aceite",
+            "1",
+            "",
+            "1",
+            ":selected:"
+          ],
+          [
+            "Aflojamiento del montaje",
+            "T",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Dirección asistida",
+            "Pérdida de aceite",
+            "1",
+            "",
+            "1",
+            ":selected:"
+          ],
+          [
+            "Aflojamiento del montaje y el varillaje de mando",
+            "-",
+            "",
+            "1",
+            ""
+          ],
+          [
+            "Daños en el tubo de la dirección asistida",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Rótula",
+            "Aflojamiento del pivote de dirección Fisuras y deformación",
+            "1",
+            "-",
+            "1",
+            "1 1"
+          ],
+          [
+            "SISTEMA DE FRENOS",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Pedal del freno",
+            "Juego y reserva",
+            "M\n:selected:",
+            "1.",
+            "1",
+            "1\n:selected:"
+          ],
+          [
+            "Efecto de frenado",
+            "1\n:unselected:",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Freno de estacionamiento",
+            "Eficacia de funcionamiento",
+            "1",
+            "1",
+            "6",
+            "4-"
+          ],
+          [
+            "Efecto de frenado",
+            "1\n:unselected:",
+            "1\n:unselected:",
+            "6\n:selected:",
+            ":selected:"
+          ],
+          [
+            "Aflojamiento y daños en el cable y el varillaje de mando",
+            "1",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Tuberia del freno",
+            "Fugas, daños y condición de montaje",
+            "1",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Depósito",
+            "Fuga y nivel de fluido",
+            "-",
+            "",
+            "1\n:selected:",
+            ":selected:"
+          ],
+          [
+            "Cilindro maestro y cilindro de la rueda",
+            "Función, desgaste, daños, fugas y aflojamiento del montaje",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Tambor del freno y zapata de freno",
+            "Holgura entre tambor y forro",
+            "M\n:selected:",
+            "1",
+            "1\n:selected:",
+            "1"
+          ],
+          [
+            "Desgaste de la parte deslizante de la zapata y el forro",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Desgaste y daños en el tambor",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Condición de funcionamiento de la zapata",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Oxidación del bulón de anclaje",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Fatiga del resorte de retorno",
+            "",
+            "",
+            "",
+            "M\n:selected:"
+          ],
+          [
+            "Función de ajuste automático",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Placa de apoyo",
+            "Deformación, fisuras y daños Montaje suelto",
+            "",
+            "",
+            "",
+            "1 T"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "0-26\nPeriodo de inspección\nElemento\nCada\n6 semanas\nCada\n3 meses\nCada\n6 meses\nCada\n12 meses\nCada\n250 horas\nCada\n500 horas\nCada\n1000 horas\nCada\n2000 horas\nSISTEMA DE MANIPULACIÓN DE MATERIALES\nHorquillas\nAnormalidad en horquilla y clavija de retención\n1\n1\nDesalineamiento entre las garras izquierda y\nderecha de la horquilla\n1\n1\nFisuras en la raíz de la horquilla y la parte soldada\n*1\nMástil y consola\nde elevación\nDeformación y daños de cada parte y fisura en la\nparte soldada\n1\n1\nAflojamiento de: mástil y la consola de elevación\n1\n1\n1\nDesgaste y daños en el casquillo de apoyo del\nmástil\nDesgaste, daños y condición de rotación de rodillos\n1\n1\n1\nDesgaste y daños de ejes portarrodillos\nDesgaste y daños del desenganche de mástil\nI\n1\n1\n1\nCadena y polea\nde cadena\nTensión, deformación y daños de la cacena\n1\n1\n1 1\nLubricación de la cadena\n1\n1\nAlargamiento ce la cadena\nAnormalidad del perno de anclaje de la cadena\n-\n1\n1\nDesgaste, daños y condición de rotación de la\npolea de cadena\n1\n1\n1\nVarios enganches\nAnormalidad y condición de montaje de cada parte\n-\n1\nSISTEMA HIDRÁULICO\nCilindro\nAflojamiento y daños en el montaje del cilindro\nT\n1\n1\nDeformación y daños del vástago, el tornillo del\nvástago y el extremo del vástago\n1\n1\nFuncionamiento del cilindro\n1\n-\nCaída natural e inclinación natural hacia delante\n(desplazamiento hidráulico)\nM\n1\nPérdida de aceite y daños\n1\n6\n1\nDesgaste y daños en el pasador y el soporte del\npasador\n1\n1\nVelocidad de elevación\nM\nMovimiento irregular\n1\n1.\nBomba de aceite\nPérdida de aceite y sonido anormal\n1\n1\nTanque de aceite\nhidráulico\nContaminación y nivel de aceite\n-\n1\nDepurador de aceite y tanque\nC\nPérdida de aceite\n1\nPalanca de\ncontrol\nVarillaje de mando suelto\n1\nFuncionamiento\n1\nVálvula de control\nde aceite\nPérdida de aceite\n1\n1\n-\nMedición de la presión de alivio\nM\nFunciones de la válvula de alivio y la válvula de\nbloqueo de inclinación\n1\n1\n-\nTubo hidráulico\nPérdida de aceite\n1\n1\n1.1.\nDeformación y daños\n1\n1\nJunta floja\nT\n1\n1\n1 - 1 -\n1 - 1 1\nTT T",
+      "tablas": [
+        [
+          [
+            "Periodo de inspección Elemento",
+            "Cada 6 semanas",
+            "Cada 3 meses",
+            "Cada 6 meses",
+            "Cada 12 meses"
+          ],
+          [
+            "Cada 250 horas",
+            "Cada 500 horas",
+            "Cada 1000 horas",
+            "Cada 2000 horas"
+          ],
+          [
+            "SISTEMA DE MANIPULACIÓN DE MATERIALES"
+          ],
+          [
+            "Horquillas",
+            "Anormalidad en horquilla y clavija de retención",
+            "1",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Desalineamiento entre las garras izquierda y derecha de la horquilla",
+            "1",
+            "1",
+            "",
+            ""
+          ],
+          [
+            "Fisuras en la raíz de la horquilla y la parte soldada",
+            "",
+            "",
+            "",
+            "*1"
+          ],
+          [
+            "Mástil y consola de elevación",
+            "Deformación y daños de cada parte y fisura en la parte soldada",
+            "",
+            "1\n:selected:",
+            "1\n:selected:",
+            ""
+          ],
+          [
+            "Aflojamiento de: mástil y la consola de elevación",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "Desgaste y daños en el casquillo de apoyo del mástil",
+            "",
+            "",
+            "",
+            "-"
+          ],
+          [
+            "Desgaste, daños y condición de rotación de rodillos",
+            "1",
+            "1",
+            "1\n:selected:",
+            "1"
+          ],
+          [
+            "Desgaste y daños de ejes portarrodillos",
+            "",
+            "",
+            "",
+            "-"
+          ],
+          [
+            "Desgaste y daños del desenganche de mástil",
+            "I",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "Cadena y polea de cadena",
+            "Tensión, deformación y daños de la cacena",
+            "1",
+            "1",
+            "1",
+            "1\n:selected:"
+          ],
+          [
+            "Lubricación de la cadena",
+            "1",
+            "1\n:selected:",
+            "1",
+            "1"
+          ],
+          [
+            "Alargamiento ce la cadena",
+            "",
+            "",
+            "",
+            "-"
+          ],
+          [
+            "Anormalidad del perno de anclaje de la cadena",
+            "-",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "Desgaste, daños y condición de rotación de la polea de cadena",
+            "1",
+            "",
+            "1",
+            "1"
+          ],
+          [
+            "Varios enganches",
+            "Anormalidad y condición de montaje de cada parte",
+            "-",
+            "",
+            "1",
+            ""
+          ],
+          [
+            "SISTEMA HIDRÁULICO"
+          ],
+          [
+            "Cilindro",
+            "Aflojamiento y daños en el montaje del cilindro",
+            "T",
+            "1\n:selected:",
+            "1",
+            ":selected:"
+          ],
+          [
+            "Deformación y daños del vástago, el tornillo del vástago y el extremo del vástago",
+            "1",
+            "1\n:selected:",
+            "",
+            ""
+          ],
+          [
+            "Funcionamiento del cilindro",
+            "1",
+            ":selected:",
+            "-",
+            ""
+          ],
+          [
+            "Caída natural e inclinación natural hacia delante (desplazamiento hidráulico)",
+            "M",
+            "1",
+            "",
+            "T"
+          ],
+          [
+            "Pérdida de aceite y daños",
+            "1",
+            "6\n:selected:",
+            "1",
+            ""
+          ],
+          [
+            "Desgaste y daños en el pasador y el soporte del pasador",
+            "1",
+            "",
+            "1",
+            "TT"
+          ],
+          [
+            "Velocidad de elevación",
+            "M",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Movimiento irregular",
+            "1",
+            ":selected:",
+            "",
+            "1."
+          ],
+          [
+            "Bomba de aceite",
+            "Pérdida de aceite y sonido anormal",
+            "1",
+            ":selected:",
+            "",
+            "1\n:selected:"
+          ],
+          [
+            "Tanque de aceite hidráulico",
+            "Contaminación y nivel de aceite",
+            "-",
+            ":selected:",
+            "1",
+            ""
+          ],
+          [
+            "Depurador de aceite y tanque",
+            "",
+            "",
+            "C",
+            ""
+          ],
+          [
+            "Pérdida de aceite",
+            "1",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Palanca de control",
+            "Varillaje de mando suelto",
+            "1",
+            ":selected:",
+            "",
+            ""
+          ],
+          [
+            "Funcionamiento",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Válvula de control de aceite",
+            "Pérdida de aceite",
+            "1",
+            ":selected:",
+            "1",
+            "-"
+          ],
+          [
+            "Medición de la presión de alivio",
+            "",
+            "",
+            "",
+            "M"
+          ],
+          [
+            "Funciones de la válvula de alivio y la válvula de bloqueo de inclinación",
+            "1",
+            "1\n:selected:",
+            "-",
+            ""
+          ],
+          [
+            "Tubo hidráulico",
+            "Pérdida de aceite",
+            "1",
+            ":selected:",
+            "1",
+            "1.1."
+          ],
+          [
+            "Deformación y daños",
+            "1",
+            ":selected:",
+            "",
+            "1"
+          ],
+          [
+            "Junta floja",
+            "T",
+            ":selected:",
+            "1\n:selected:",
+            "1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "0-27\nElemento\nPeriodo de inspección\nSISTEMA ELECTRICO\nCada\n6 semanas\nCada\n3 meses\nCada\n6 meses\nCada\n12 meses\nCada\n250 horas\nCada\n500 horas\nCada\n1000 horas\nCada\n2000 horas\nPuesta a punto\ndel encendido\nFisuras en la tapa del distribuidor\n-\n1\nBujía de encendido quemada y separada\n-\n1. 1.\nTerminal quemado en el lado del distribuidor\n1\n1\nPieza central de la tapa del distribuidor desgastada\ny dañada\n1\n1\n1.\nDiscontinuidad interna del cable de conexión\n1\nPuesta a punto del encendido\nM\n1\nMotor de\narranque\nEstado de engrane del piñón diferencial\n-\nCargador\nFunción de carga\n1\nجـ\nBatería\nNivel del líquido de la batería\n1\nGravedad específica del liquido de la batería\nM\nCableado\neléctrico\nMazo de cables dañado\n1\n-\nFusibles\n1\nPrecalentador\nCircuito abierto en bujia de incandescencia\nI\n-\nCircuito abierto en calentador de la mezcla de admisión\n1\nSistema de\ndetención del motor\nFunción del dispositivo de detención clave del\nmotor diesel\nDISPOSITIVOS DE SEGURIDAD, ETC.\n1\n-\n1\nFisuras en la parte soldada\nProtección de la\ncabeza\n1\n1\n-\nDeformación y daños\n--\n1\nRespaldo\nAflojamiento del montaje\nT\n1\nDeformación, fisuras y daños\n1\n1\nSistema de\niluminación\nFunción y condición del montaje\n-\nBocina\nFunción y condición del montaje\n1\nIndicador de\ndirección\nFunción y condición del montaje\n-\n€\nInstrumentos\nFunciones\n1\nZumbador de\nmarcha atrás\nFunción y condición del montaje\n1\n1\nEspejo retrovisor\nSuciedad, daños\n-\n-\n1\nEstado de la reflexión trasera\n1\n+\n6\nAsiento\nAflojamiento y daños del montaje\n1\n1\nFunción y daños del cinturón de seguridad\n1\n-\nFunción del interruptor del asiento\n1\nOPS\nFunciones\n1\nجــ\nCarrocería\nDaños y fisuras en el bastidor, travesaños, etc.\nAflojamiento del perno\nT\nSAS\nFunciones\n1\n1 11\nAflojamiento y daños en la parte de montaje de sensores\n-\n1 1\nDaños, deformación, pérdida de aceite y\naflojamiento del montaje de las partes funcionales\n-\n:1 1 1\nAflojamiento y daños de los mazos de cables\n1\n1\nRendimiento del acumulador del cilindro de bloqueo\n=\nOtros\nEngrase\nL\n-\nجـ\n1\n- 1 1",
+      "tablas": [
+        [
+          [
+            "Elemento",
+            "Periodo de inspección",
+            "Cada 6 semanas",
+            "Cada 3 meses",
+            "Cada 6 meses",
+            "Cada 12 meses"
+          ],
+          [
+            "Cada 250 horas",
+            "Cada 500 horas",
+            "Cada 1000 horas",
+            "Cada 2000 horas"
+          ],
+          [
+            "SISTEMA ELECTRICO"
+          ],
+          [
+            "Puesta a punto del encendido",
+            "Fisuras en la tapa del distribuidor",
+            "-",
+            "",
+            "1",
+            ""
+          ],
+          [
+            "Bujía de encendido quemada y separada",
+            "-",
+            "",
+            "1.",
+            ""
+          ],
+          [
+            "Terminal quemado en el lado del distribuidor",
+            "1",
+            "1",
+            "1.",
+            ""
+          ],
+          [
+            "Pieza central de la tapa del distribuidor desgastada y dañada",
+            "1",
+            "1",
+            "1.",
+            ""
+          ],
+          [
+            "Discontinuidad interna del cable de conexión",
+            "",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Puesta a punto del encendido",
+            "",
+            "",
+            "M",
+            "1"
+          ],
+          [
+            "Motor de arranque",
+            "Estado de engrane del piñón diferencial",
+            "-",
+            ":selected:",
+            "",
+            ":selected:"
+          ],
+          [
+            "Cargador",
+            "Función de carga",
+            "1",
+            ":selected:",
+            "جـ",
+            ":selected:"
+          ],
+          [
+            "Batería",
+            "Nivel del líquido de la batería",
+            "1",
+            ":selected:",
+            "",
+            ":selected:"
+          ],
+          [
+            "Gravedad específica del liquido de la batería",
+            "",
+            "",
+            "M",
+            ":selected:"
+          ],
+          [
+            "Cableado eléctrico",
+            "Mazo de cables dañado",
+            "1",
+            "-\n:selected:",
+            "",
+            ":selected:"
+          ],
+          [
+            "Fusibles",
+            "1",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Precalentador",
+            "Circuito abierto en bujia de incandescencia",
+            "",
+            "",
+            "I",
+            "-"
+          ],
+          [
+            "Circuito abierto en calentador de la mezcla de admisión",
+            "",
+            "",
+            "1",
+            ""
+          ],
+          [
+            "Sistema de detención del motor",
+            "Función del dispositivo de detención clave del motor diesel",
+            "1",
+            "",
+            "-\n:selected:",
+            "1\n:selected:"
+          ],
+          [
+            "DISPOSITIVOS DE SEGURIDAD, ETC."
+          ],
+          [
+            "Protección de la cabeza",
+            "Fisuras en la parte soldada",
+            "1",
+            ":selected:",
+            "1",
+            "-"
+          ],
+          [
+            "Deformación y daños",
+            "--",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Respaldo",
+            "Aflojamiento del montaje",
+            "T",
+            ":selected:",
+            "1",
+            ""
+          ],
+          [
+            "Deformación, fisuras y daños",
+            "1",
+            "",
+            "",
+            "1"
+          ],
+          [
+            "Sistema de iluminación",
+            "Función y condición del montaje",
+            "-",
+            ":selected:",
+            ":selected:",
+            ":selected:"
+          ],
+          [
+            "Bocina",
+            "Función y condición del montaje",
+            "1",
+            "",
+            ":selected:",
+            ""
+          ],
+          [
+            "Indicador de dirección",
+            "Función y condición del montaje",
+            "-",
+            ":selected:",
+            "€\n:selected:",
+            ""
+          ],
+          [
+            "Instrumentos",
+            "Funciones",
+            "1",
+            ":selected:",
+            ":selected:",
+            ":selected:"
+          ],
+          [
+            "Zumbador de marcha atrás",
+            "Función y condición del montaje",
+            "1",
+            ":selected:",
+            "1\n:selected:",
+            ":selected:"
+          ],
+          [
+            "Espejo retrovisor",
+            "Suciedad, daños",
+            "-",
+            "-\n:selected:",
+            "",
+            "1\n:selected:"
+          ],
+          [
+            "Estado de la reflexión trasera",
+            "1",
+            "+\n:selected:",
+            "",
+            "6"
+          ],
+          [
+            "Asiento",
+            "Aflojamiento y daños del montaje",
+            "1",
+            ":selected:",
+            "",
+            "1\n:selected:"
+          ],
+          [
+            "Función y daños del cinturón de seguridad",
+            "1",
+            ":selected:",
+            "",
+            "-\n:selected:"
+          ],
+          [
+            "Función del interruptor del asiento",
+            "1",
+            "",
+            "",
+            ""
+          ],
+          [
+            "OPS",
+            "Funciones",
+            "1",
+            ":selected:",
+            "",
+            "جــ"
+          ],
+          [
+            "Carrocería",
+            "Daños y fisuras en el bastidor, travesaños, etc.",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aflojamiento del perno",
+            "",
+            "",
+            "",
+            "T"
+          ],
+          [
+            "SAS",
+            "Funciones",
+            "1",
+            ":selected:",
+            "1",
+            "11"
+          ],
+          [
+            "Aflojamiento y daños en la parte de montaje de sensores",
+            "-",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "Daños, deformación, pérdida de aceite y aflojamiento del montaje de las partes funcionales",
+            "-",
+            "1",
+            ":1",
+            "1"
+          ],
+          [
+            "Aflojamiento y daños de los mazos de cables",
+            "1",
+            "1",
+            "",
+            "1"
+          ],
+          [
+            "Rendimiento del acumulador del cilindro de bloqueo",
+            "",
+            "=",
+            "",
+            "-"
+          ],
+          [
+            "Otros",
+            "Engrase",
+            "L",
+            "-\n:selected:",
+            "جـ",
+            "1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "0-28\nSUSTITUCIÓN PERIÓDICA DE PARTES Y LUBRICANTES\n0: Sustitución\nIntervalo\nElemento\nCada\n6 semanas\nCaca\n3 meses\nCada\n6 meses\nCada\n12 meses\nCada\n250 horas\nCada\n500 horas\nCada\n1000 horas\nCada\n2000 horas\nAceite de motor\n@ *2\nFiltro de aceite de motor\n€\n*1\n1\nLíquido refrigerante del motor (cada 2 años para LLC)\n0\n1\n6\nFiltro de combustible\nAceite del convertidor de par\nFiltro de aceite del convertidor de par\nAceite de la transmisión manual\nAceite del diferencial\nAceite hidráulico\n1\nFiltro de aceite hidráulico\n@ *1\nGrasa del cojinete de las ruedas\nBujías de encendido\n1\nElemento del filtro de aire\nCopas y sellos para cilindros maestros del freno y cilindros de las\nruedas\nLiquido de frenos\nTubos de la dirección asistida\nPartes de caucho de la dirección asistida\nTubos hidráulicos\nTubo del depósito del líquido de frenos\n@ *3\nTubo flexible de alimentación de combustible\nTubos de caucho para convertidor de par\nCadenas\n94\nSello de la bomba de aceite para manipulación de materiales\n*4\nFiltro para silenciador DPF (OPT)\n0'4\nFiltro instalado de retropresión del silenciador DPF (OPT)\nFiltro de aire DPF (OPT)\n*3\nCilindro de bloqueo de oscilación SAS (Espec. del SAS)\n€'5\nSilenciador catalítico (OPT)\nSilenciador catalítico de 3 vías (OPT)\n*6\n*1: Para vehículo nuevo\n*2: Para las calidades de aceite de motor que se enumeran a continuación, cambie el aceite cada 500 horas.\nVehículo de gasolina: API SL, SM y superior\nVehículo diesel: API CF-4 y superior\n*3: Cada 2 años\n*4: Cada 3 años\n*5: Cada 10000 horas\n*6: Cada 5 años o cada 3500 horas\nLa sustitución se realizará según las horas de funcionamiento o los meses, lo que ocurra antes.",
+      "tablas": [
+        [
+          [
+            "Intervalo Elemento",
+            "Cada 6 semanas",
+            "Caca 3 meses",
+            "Cada 6 meses",
+            "Cada 12 meses"
+          ],
+          [
+            "Cada 250 horas",
+            "Cada 500 horas",
+            "Cada 1000 horas",
+            "Cada 2000 horas"
+          ],
+          [
+            "Aceite de motor",
+            "@ *2",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Filtro de aceite de motor",
+            "€ *1",
+            "",
+            "1",
+            ""
+          ],
+          [
+            "Líquido refrigerante del motor (cada 2 años para LLC)",
+            "",
+            "0",
+            "1",
+            "6\n:selected:"
+          ],
+          [
+            "Filtro de combustible",
+            "",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Aceite del convertidor de par",
+            "",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Filtro de aceite del convertidor de par",
+            "",
+            "",
+            ":selected:",
+            ":selected:"
+          ],
+          [
+            "Aceite de la transmisión manual",
+            "",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Aceite del diferencial",
+            "",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Aceite hidráulico",
+            "",
+            "",
+            "",
+            "1\n:selected:"
+          ],
+          [
+            "Filtro de aceite hidráulico",
+            "@ *1",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Grasa del cojinete de las ruedas",
+            "",
+            "",
+            "",
+            ":selected:"
+          ],
+          [
+            "Bujías de encendido",
+            "",
+            "",
+            ":selected:",
+            "1"
+          ],
+          [
+            "Elemento del filtro de aire",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Copas y sellos para cilindros maestros del freno y cilindros de las ruedas",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Liquido de frenos",
+            "",
+            "",
+            ":selected:",
+            ""
+          ],
+          [
+            "Tubos de la dirección asistida",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Partes de caucho de la dirección asistida",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Tubos hidráulicos",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Tubo del depósito del líquido de frenos",
+            "",
+            "",
+            "",
+            "@ *3"
+          ],
+          [
+            "Tubo flexible de alimentación de combustible",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Tubos de caucho para convertidor de par",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Cadenas",
+            "",
+            "",
+            "",
+            "94"
+          ],
+          [
+            "Sello de la bomba de aceite para manipulación de materiales",
+            "",
+            "",
+            "",
+            "*4"
+          ],
+          [
+            "Filtro para silenciador DPF (OPT)",
+            "",
+            "",
+            "",
+            "0'4\n:selected:"
+          ],
+          [
+            "Filtro instalado de retropresión del silenciador DPF (OPT)",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Filtro de aire DPF (OPT)",
+            "",
+            "",
+            "",
+            "*3"
+          ],
+          [
+            "Cilindro de bloqueo de oscilación SAS (Espec. del SAS)",
+            "",
+            "",
+            "",
+            "€'5"
+          ],
+          [
+            "Silenciador catalítico (OPT)",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Silenciador catalítico de 3 vías (OPT)",
+            "",
+            "",
+            "",
+            "*6\n:selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "Motor 4Y-E (Con control electrónico: OPT)\n4Y 122\n1-3\n10",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "1-4\nMotor 1DZ-II\nPOOC\nVo",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "Motor 2Z\n-----\n1-5\nPOO\n0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "1-6\nPARÁMETROS PRINCIPALES DEL MOTOR\nMotor de gasolina\nModelo de vehiculo\nElemento\nSeries de\n1.2·K2.K3\ntoneladas\nSeries de 3·J3.5-\ntoneladas\nSeries de\n1.2.K2.K3\ntoneladas\nSeries de 3-J3,5\ntoneladas\nModelo de motor\n4Y-M\n4Y-E (OPT)\nTipo de motor\nGasolina · 4 ciclos\n-\nNúmero y disposición de los cilindros\n4 cilindros en línea,\nmontados\nlongitudinalmente\n1\n1\nTipo cámara de combustión\nCalzo\n1\n1\nMecanismo de válvulas\nOHV-transmisión\npor cadena\nCalibre x carrera\nmm\n91,0 x 86,0\nDesplazamiento total\ncm 3\n2237\nÍndice de compresión\n8,8\n1\nCapacidad máxima\nKW (PS)/rpm\nExclusivo de\ngasolina\n40 (54)/2400\n43 (58)/2600\n38 (51)/2570\n44 (59)/2570\nLPG convertible/\nGasolina\n35 (48)/2400\n38 (52)/2600\n36 (51)/2570\n43 (58)/2570\nLPG convertible/\nLPG\n35 (48)/2400\n38 (52)/2600\n38 (51)/2570\n42 (57)/2570\nExclusivo LPG\n37 (50)/2400\n40 (54)/2600\n38 (51)/2570\n42 (57)/2570\nPar motor máximo\nN·m (kgf·m)/rpm\nExclusivo de\ngasolina\n162 (16,5)/1800\n160 (16,3)/2100\n165 (16,8)/2570\nLPG convertible/\nGasolina\n147 (15,0)/1600\n-\n160 (16,3)/2100\n6\nLPG convertible/\nLPG\n147 (15,0)/1600\n1\n160 (16,3)/2100\nExclusivo LPG\n157 (16,0)/1800\n160 (16,3)/2100\nConsumo mínimo\nde combustible\ng/kW·h (g/PS-h)/\nrpm\nExclusivo de\ngasolina\n272 (200)/2300\n1\n298 (219)/2000\n310 (228)/1600\nLPG convertible/\nGasolina\n258 (190)/2400\n298 (219)/2000\n310 (228)/1600\nLPG convertible/\nLPG\n258 (190)/2400\n-\n233 (171)/2000\nExclusivo LPG\n252 (185)/2400\n233 (171)/2000\nPeso de trabajo\nkg\n134\n-\n-\nVelocidad máxima sin carga\nrpm\n2600\n2800\n2570\n1\n...",
+      "tablas": [
+        [
+          [
+            "Modelo de vehiculo Elemento",
+            "Series de 1.2·K2.K3 toneladas",
+            "Series de 3·J3.5- toneladas",
+            "Series de 1.2.K2.K3 toneladas",
+            "Series de 3-J3,5 toneladas"
+          ],
+          [
+            "Modelo de motor",
+            "4Y-M",
+            ":selected:",
+            "4Y-E (OPT)",
+            ""
+          ],
+          [
+            "Tipo de motor",
+            "Gasolina · 4 ciclos",
+            ":selected:",
+            "-",
+            ""
+          ],
+          [
+            "Número y disposición de los cilindros",
+            "4 cilindros en línea, montados longitudinalmente",
+            ":selected:",
+            "1\n:selected:",
+            "1\n:selected:"
+          ],
+          [
+            "Tipo cámara de combustión",
+            "Calzo",
+            "",
+            "1",
+            "1"
+          ],
+          [
+            "Mecanismo de válvulas",
+            "OHV-transmisión por cadena",
+            ":selected:",
+            ":selected:",
+            ""
+          ],
+          [
+            "Calibre x carrera mm",
+            "91,0 x 86,0",
+            ":selected:",
+            ":selected:",
+            ":selected:"
+          ],
+          [
+            "Desplazamiento total cm 3",
+            "2237",
+            ":selected:",
+            ":selected:",
+            ":selected:"
+          ],
+          [
+            "Índice de compresión",
+            "8,8",
+            ":selected:",
+            "",
+            "1"
+          ],
+          [
+            "Capacidad máxima KW (PS)/rpm",
+            "Exclusivo de gasolina",
+            "40 (54)/2400",
+            "43 (58)/2600",
+            "38 (51)/2570",
+            "44 (59)/2570"
+          ],
+          [
+            "LPG convertible/ Gasolina",
+            "35 (48)/2400",
+            "38 (52)/2600",
+            "36 (51)/2570",
+            "43 (58)/2570"
+          ],
+          [
+            "LPG convertible/ LPG",
+            "35 (48)/2400",
+            "38 (52)/2600",
+            "38 (51)/2570",
+            "42 (57)/2570"
+          ],
+          [
+            "Exclusivo LPG",
+            "37 (50)/2400",
+            "40 (54)/2600",
+            "38 (51)/2570",
+            "42 (57)/2570"
+          ],
+          [
+            "Par motor máximo N·m (kgf·m)/rpm",
+            "Exclusivo de gasolina",
+            "162 (16,5)/1800",
+            ":selected:",
+            "160 (16,3)/2100",
+            "165 (16,8)/2570"
+          ],
+          [
+            "LPG convertible/ Gasolina",
+            "147 (15,0)/1600",
+            "-",
+            "160 (16,3)/2100",
+            "6\n:selected:"
+          ],
+          [
+            "LPG convertible/ LPG",
+            "147 (15,0)/1600",
+            "1\n:selected:",
+            "160 (16,3)/2100",
+            ""
+          ],
+          [
+            "Exclusivo LPG",
+            "157 (16,0)/1800",
+            ":selected:",
+            "160 (16,3)/2100",
+            ":selected:"
+          ],
+          [
+            "Consumo mínimo de combustible g/kW·h (g/PS-h)/ rpm",
+            "Exclusivo de gasolina",
+            "272 (200)/2300",
+            "1\n:selected:",
+            "298 (219)/2000",
+            "310 (228)/1600"
+          ],
+          [
+            "LPG convertible/ Gasolina",
+            "258 (190)/2400",
+            ":selected:",
+            "298 (219)/2000",
+            "310 (228)/1600"
+          ],
+          [
+            "LPG convertible/ LPG",
+            "258 (190)/2400",
+            "-\n:selected:",
+            "233 (171)/2000",
+            ""
+          ],
+          [
+            "Exclusivo LPG",
+            "252 (185)/2400",
+            ":selected:",
+            "233 (171)/2000",
+            ""
+          ],
+          [
+            "Peso de trabajo kg",
+            "134",
+            "-\n:selected:",
+            "-",
+            ":selected:"
+          ],
+          [
+            "Velocidad máxima sin carga rpm",
+            "2600",
+            "2800",
+            "2570",
+            "1\n:selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "1-7\nMotor diesel\nModelo de vehículo\nElemento\nSeries de 1·K2·K3\ntoneladas\nSeries de 2·3 toneladas\nSeries de 2-3·J3,5\ntoneladas\nModelo de motor\n1DZ-II\n2Z\nTipo de motor\nDiesel · 4 ciclos\nNúmero y disposición de los cilindros\n4 cilindros en línea,\nmontados\nlongitudinalmente\nTipo cámara de combustión\nCámara de turbulencia\nInyección directa\nMecanismo de válvulas\nOHV-transmisión por\nengranajes\nCalibre x carrera\nmm\n86,0 x 107,0\n€\n98,0 x 115,0\nDesplazamiento total\ncm3\n2486\n3469\nindice de compresión\n21,5\n1\n18,6\nCapacidad máxima\nkW (PS)/rpm\n39 (53)/2400\n42 (57)/2500\n42 (57)/2200\nPar motor máximo\nN·m (kgf-m)/rpm\n160 (16,3)/2300\n160 (16,3)/2500\n200 (20,3)/1600\nConsumo mínimo de\ncombustible\ng/kW·h (g/PS:h)/rpm\n247 (181)/1400\n209 (153)/1000\nPeso de trabajo\nkg\n162\n212\nVelocidad máxima sin carga\nrpm\n2600\n2800\n2400",
+      "tablas": [
+        [
+          [
+            "Modelo de vehículo Elemento",
+            "Series de 1·K2·K3 toneladas",
+            "Series de 2·3 toneladas",
+            "Series de 2-3·J3,5 toneladas"
+          ],
+          [
+            "Modelo de motor",
+            "1DZ-II",
+            "",
+            "2Z"
+          ],
+          [
+            "Tipo de motor",
+            "Diesel · 4 ciclos",
+            "",
+            ""
+          ],
+          [
+            "Número y disposición de los cilindros",
+            "4 cilindros en línea, montados longitudinalmente",
+            ":selected:",
+            ""
+          ],
+          [
+            "Tipo cámara de combustión",
+            "Cámara de turbulencia",
+            "",
+            "Inyección directa"
+          ],
+          [
+            "Mecanismo de válvulas",
+            "OHV-transmisión por engranajes",
+            ":selected:",
+            ""
+          ],
+          [
+            "Calibre x carrera mm",
+            "86,0 x 107,0",
+            "€",
+            "98,0 x 115,0"
+          ],
+          [
+            "Desplazamiento total cm3",
+            "2486",
+            ":selected:",
+            "3469"
+          ],
+          [
+            "indice de compresión",
+            "21,5",
+            "1\n:selected:",
+            "18,6"
+          ],
+          [
+            "Capacidad máxima kW (PS)/rpm",
+            "39 (53)/2400",
+            "42 (57)/2500",
+            "42 (57)/2200"
+          ],
+          [
+            "Par motor máximo N·m (kgf-m)/rpm",
+            "160 (16,3)/2300",
+            "160 (16,3)/2500",
+            "200 (20,3)/1600"
+          ],
+          [
+            "Consumo mínimo de combustible g/kW·h (g/PS:h)/rpm",
+            "247 (181)/1400",
+            ":selected:",
+            "209 (153)/1000"
+          ],
+          [
+            "Peso de trabajo kg",
+            "162",
+            "",
+            "212"
+          ],
+          [
+            "Velocidad máxima sin carga rpm",
+            "2600",
+            "2800",
+            "2400"
+          ]
+        ]
+      ]
+    }
+  ]
+}

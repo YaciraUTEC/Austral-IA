@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Austral Asistente</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="chat.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="menu-icon" style="cursor: pointer">☰</div> 
+      <img src="assets/logo1.png" alt="Austral Logo" class="logo">
+
+      <button class="new-chat">
+        <span class="icon">+</span>
+        <span class="text">Nueva conversación</span>
+      </button>
+
+      <ul class="menu">
+        <!-- Menú principal -->
+        <li id="menu-asistente" class="menu-item-parent">
+          <span class="menu-icono">
+            <img src="assets/IA.png" alt="Asistente" class="icono-imagen" />
+          </span>
+          <span class="menu-text">Asistente</span>
+          <span class="arrow">▼</span>
+        </li>
+
+        <!-- Submenú -->
+        <ul id="submenu-asistente" class="submenu oculto">
+          <li id="side-mantenimiento" class="submenu-item active">
+            <span class="dot">●</span> Mantenimiento
+          </li>
+          <li id="side-proyectos" class="submenu-item">
+            <span class="dot">●</span> Proyectos
+          </li>
+        </ul>
+      </ul>
+      
+      <div class="top-menu">
+        <ul class="menu">
+          <li>❓ Ayuda</li>
+          <li>⚙️ Ajustes</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="user">Bienvenido a Austral IA 👤</div>
+      </header>
+
+      <!-- Pantalla de bienvenida -->
+      <section id="welcome" class="welcome">
+        <h1><span class="gradient-text">Hola Yacira Nicol</span></h1>
+        <p class="subtitle">Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</p>
+        <p class="description">Consulta rápida acerca de mantenimiento y proyectos de energía.</p>
+      </section>
+
+      <!-- Sección Mantenimiento -->
+<section id="mantenimiento-section" class="welcome2" style="display: none;">
+  <h1><span class="gradient-text">Mantenimiento</span></h1>
+  <p class="description">Consulta rápida acerca de manuales y planes de mantenimiento.</p>
+  
+  <form class="chat-input" id="mantenimiento-form">
+    <input type="text" class="user-query" placeholder="🌐︎ Consulta sobre mantenimiento" />
+    <button type="submit" class="send-button">
+      <span class="button-icon">➤</span>
+    </button>
+  </form>
+</section>
+
+<!-- Sección Proyectos -->
+<section id="proyectos-section" class="welcome2" style="display: none;">
+  <h1><span class="gradient-text">Proyectos</span></h1>
+  <p class="description">Consulta rápida acerca de presupuestos, avances y planes de ejecución.</p>
+  
+  <form class="chat-input" id="proyectos-form">
+    <input type="text" class="user-query" placeholder="🌐︎ Consulta sobre proyectos" />
+    <button type="submit" class="send-button">
+      <span class="button-icon">➤</span>
+    </button>
+  </form>
+</section>
+
+<!-- Área de conversación (inicialmente oculta) -->
+<section id="chat-section" class="chat-section" style="display: none;">
+  <div id="mantenimiento-chat" class="chat-container" style="display: none;"></div>
+  <div id="proyectos-chat" class="chat-container" style="display: none;"></div>
+</section>
+
+<!-- Formulario de búsqueda persistente -->
+<div id="chat-input-persistente" class="chat-input-persistente" style="display: none;">
+  <form class="chat-input" id="chat-form-persistente" data-categoria="">
+    <input type="text" class="user-query" id="persistente-query" placeholder="Escribe otra consulta..." autofocus />
+    <button type="submit" class="send-button">
+      <span class="button-icon">➤</span>
+    </button>
+  </form>
+</div>
+    </main>
+  </div>
+</body>
+</html>

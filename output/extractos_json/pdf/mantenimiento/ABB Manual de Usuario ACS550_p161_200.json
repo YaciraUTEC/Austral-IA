@@ -1,0 +1,2087 @@
+{
+  "archivo": "ABB Manual de Usuario ACS550_p161_200",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Manual del usuario del ACS550-01/U1\n161\nGrupo 35: TEMP MOT MED\nEste grupo define la detección e informe de un fallo potencial determinado -\nsobrecalentamiento del motor, detectado por un sensor de temperatura. Las\nconexiones típicas se muestran a continuación.\nUn sensor\nTres sensores\nCarga\nEA1\nAGND\nCarga\nEA1\n1\n-\nAGND\nT\n3,3 nF\nSA1\nAGND\nT\nT\nT\n3,3 nF\nSA1\nAGND\nADVERTENCIA: IEC 60664 requiere aislamiento doble o reforzado entre las piezas\ncon corriente y la superficie de las piezas del equipo eléctrico a las que pueda\naccederse que sean no conductoras o conductoras pero que no estén conectadas al\nconductor a tierra.\n4\nPara satisfacer este requisito, conecte un termistor (y otros componentes similares) a los\nterminales de control del convertidor de frecuencia con cualquiera de estas alternativas:\n· Aísle el termistor de las piezas con corriente del motor con aislamiento reforzado doble.\n· Proteja todos los circuitos conectados a las entradas analógicas y digitales del\nconvertidor. Debe protegerse del contacto y aislarse del resto de circuitos de baja\ntensión mediante un aislamiento básico (ajustado a la misma tensión que el\ncircuito principal del convertidor).\n· Utilice un relé de termistores externo. El aislamiento del relé debe ajustarse a la\nmisma tensión que el circuito principal del convertidor.\nLa siguiente figura muestra las conexiones con un sensor PTC y un relé\nde termistores mediante una entrada digital. En el extremo del motor,\nel apantallamiento del cable debe conectarse a tierra a través de un condensador de\n3,3 nF por ejemplo. Si ello no es posible, deje el apantallamiento sin conectar.\nRelé de termistores\n3501 TIPO DE SENSOR = 5 (TERM(0)) o 6 (TERM(1))\nRelé de\ntermist.\nTarjeta de control\nED6\n+24 V CC\nT\nCarga\nSensor PTC\n3501 TIPO DE SENSOR = 5 (TERM(0))\nTarjeta de control\nT\nCarga\n: 3,3 nF\nED6\n+24 V CC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "162\nManual del usuario del ACS550-01/U1\nAcerca de otros fallos, o de la previsión del sobrecalentamiento del motor mediante\nun modelo, véase el Grupo 30: FUNCIONES FALLOS.\nCódigo Descripción\n3501\nTIPO DE SENSOR\nIdentifica el tipo de sensor de temperatura del motor utilizado, PT100 (°C), PTC (ohmios) o termistor.\nVéanse los parámetros 1501 SEL CONTENID SA1 y 1507 SEL CONTENID SA2.\n0 = NINGUNO\n1 = 1 x PT100 - La configuración del sensor utiliza un sensor PT100.\n· La salida analógica SA1 0 SA2 alimenta intensidad constante a través del sensor.\n· La resistencia del sensor crece a medida que aumenta la temperatura del motor, al igual que la tensión en el sensor.\n· La función de medición de temperatura lee la tensión a través de la entrada analógica EA1 0 EA2 y la convierte a\ngrados Celsius.\n2 = 2 x PT100 - La configuración del sensor utiliza dos sensores PT100.\n· El funcionamiento es el mismo que para 1 x PT100.\n3 = 3 x PT100 - La configuración del sensor utiliza tres sensores PT100.\n· El funcionamiento es el mismo que para 1 x PT100.\n4 = PTC - La configuración del sensor utiliza un PTC.\n· La salida analógica alimenta una intensidad constante a través del sensor.\n· La resistencia del sensor crece de forma acusada a medida que\naumenta la temperatura del motor por encima de la temperatura de\nreferencia PTC (Tref), igual que la tensión en la resistencia. La\nfunción de medición de temperatura lee la tensión a través de la\nentrada analógica EA 1 y la convierte a ohmios.\n· La tabla siguiente y la figura muestran la resistencia típica del sensor\nPTC como una función de la temperatura de funcionamiento del motor.\nTemperatura\nResistencia\nNormal\n< 1,5 kohmios\nExcesiva\n> 4 kohmios\n5 = TERM(0) - La configuración del sensor utiliza un termistor.\n- - 1-\nExcesiva\n-\n1\n1\n1\nNormal\n-1 - 1-\n· La protección térmica del motor se activa a través de una entrada\ndigital. Conecte un sensor PTC o un relé de termistores cerrado\nnormalmente a una entrada digital.\nT\n· Cuando la entrada digital indica '0', el motor está sobrecalentado.\n· Véase la figura de conexión de la página 161.\n· La tabla siguiente y la figura muestran los requisitos de resistencia para un sensor PTC conectado entre 24 V y la\nentrada digital como una función de la temperatura de funcionamiento del motor.\nTemperatura\nResistencia\nNormal\n< 3 kohmios\nExcesiva\n> 28 kohmios\n6 = TERM(1) - La configuración del sensor utiliza un termistor.\n· La protección térmica del motor se activa a través de una entrada digital. Conecte un relé de termistores abierto\nnormalmente a una entrada digital.\n· Cuando la entrada digital indica '1', el motor está sobrecalentado.\n· Véase la figura de conexión de la página 161.\n3502\nSELEC DE ENTRADA\nDefine la entrada utilizada para el sensor de temperatura.\n1 = EA1 - PT100 y PTC.\n2 = EA2 - PT100 y PTC.\n3 ... 8 = ED1 ... ED6 - Termistor y PTC\n3503\nLIMITE DE ALARMA\nDefine el límite de alarma para la medición de temperatura del motor.\n· A temperaturas del motor por encima de este límite, el convertidor muestra una alarma (2010, EXC TEMP MOT)\nPara los termistores o PTC conectados a una entrada digital:\n0 - desactivado\n1 - activado",
+      "tablas": [
+        [
+          [
+            "",
+            "Temperatura",
+            "Resistencia"
+          ],
+          [
+            "",
+            "Normal",
+            "< 1,5 kohmios"
+          ],
+          [
+            "",
+            "Excesiva",
+            "> 4 kohmios"
+          ]
+        ],
+        [
+          [
+            "Temperatura",
+            "Resistencia"
+          ],
+          [
+            "Normal",
+            "< 3 kohmios"
+          ],
+          [
+            "Excesiva",
+            "> 28 kohmios"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Manual del usuario del ACS550-01/U1\n163\nCódigo Descripción\n3504\nLIMITE DE FALLO\nDefine el límite de fallo para la medición de temperatura del motor.\n· A temperaturas del motor por encima de este límite, el convertidor muestra un fallo (9, EXC TEMP MOT) y para el convertidor.\nPara los termistores o PTC conectados a una entrada digital:\n0 - desactivado\n1 - activado",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "3504",
+            "LIMITE DE FALLO Define el límite de fallo para la medición de temperatura del motor. · A temperaturas del motor por encima de este límite, el convertidor muestra un fallo (9, EXC TEMP MOT) y para el convertidor. Para los termistores o PTC conectados a una entrada digital: 0 - desactivado 1 - activado"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "164\nManual del usuario del ACS550-01/U1\nGrupo 36: FUNCIONES TEMP\nEste grupo define las funciones temporizadas. Tales funciones incluyen:\n· cuatro horas de marcha y paro diarias\n· cuatro horas de marcha, paro y refuerzo semanales\n· cuatro temporizadores para agrupar períodos seleccionados.\nSe puede conectar un temporizador a varios períodos de tiempo y un período de\ntiempo puede estar en varios temporizadores.\nPeríodo de tiempo 1\n3602 HORA DE INICIO 1\n3603 HORA DE PARO 1\n3604 DIA DE INICIO 1\n3605 DIA DE PARO 1\nPeríodo de tiempo 2\n3606 HORA DE INICIO 2\n3607 HORA DE PARO 2\n3608 DIA DE INICIO 2\n3609 DIA DE PARO 2\nPeríodo de tiempo 3\n3610 HORA DE INICIO 3\n3611 HORA DE PARO 3\n3612 DIA DE INICIO 3\n3613 DIA DE PARO 3\nPeríodo de tiempo 4\n3614 HORA DE INICIO 4\n3615 HORA DE PARO 4\n3616 DIA DE INICIO 4\n3617 DIA DE PARO 4\nReforzador\n3622 SEL REFORZ\n3623 TIEMPO REFORZ\nTemp. 1\n3626 FUEN FUNC TEMP 1\nTemp. 2\n3627 FUEN FUNC TEMP 2\nTemp. 3\n3628 FUEN FUNC TEMP 3\nTemp. 4\n3629 FUEN FUNC TEMP 4\nUn parámetro puede conectarse solamente a un temporizador.\nTemp. 1\n3626 FUEN FUNC TEMP 1\nTemp. 2\n3627 FUEN FUNC TEMP 2\n1001 COMANDOS EXT1\n1002 COMANDOS EXT2\n1102 SELEC EXT1/EXT2\n1201 SEL VELOC CONST\n1401 SALIDA RELE SR1 ... 1403 SALIDA RELE SR3\n1410 SALIDA RELE SR4 ... 1412 SALIDA RELE SR6\n(Disponible si está instalado el OREL-01).\n4027 SERIE PARAM PID1\n4228 ACTIVAR\n1401 AUTOCAMB TEMPOR\nPuede utilizar el asistente de funciones temporizadas para que la configuración\nresulte más sencilla. Para obtener más información acerca de los asistentes, véase\nel apartado Modo de Asistentes en la página 61.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Manual del usuario del ACS550-01/U1\n165\nCódigo\nDescripción\n3601\nHABILITAR TEMPOR\nSelecciona la fuente para la señal de habilitación del temporizador.\n0 = SIN SEL - Funciones temporizadas desactivadas.\n1 = ED1 - Define la entrada digital ED1 como la señal de habilitación de la función temporizada.\n· La entrada digital debe activarse para habilitar la función temporizada.\n2 ... 6 = ED2 ... ED6 - Define la entrada digital ED2 ... ED6 como la señal de habilitación de la función temporizada.\n7 = ACTIVO - Funciones temporizadas activadas.\n-1 = ED1(INV) - Define una entrada digital inversa ED1 como la señal de habilitación de la función temporizada.\n· Esta entrada digital debe desactivarse para habilitar la función temporizada.\n· - 2 ...- 6 = ED2(INV) ... ED6(INV) - Define una entrada digital inversa ED2 ... ED6 como la señal de habilitación de la\nfunción temporizada.\n3602\nHORA DE INICIO 1\nDefine la hora diaria para la puesta en marcha.\n20:30:00\n· La hora puede cambiarse en incrementos de 2 segundos.\n· Si el valor del parámetro es 07:00:00, el temporizador\n17:00:00\nse activa a las 7 de la mañana.\n15:00:00\n· La figura muestra varios temporizadores en distintos\ndías de la semana.\n13:00:00\n12:00:00\n10:30:00\n09:00:00\n00:00:00\nPeríodo de tiempo 2\nPeríodo de tiempo 4\nPeríodo de tiempo 3\nPeríodo de tiempo 1\nLun Mar Mie\nJue Vie Sáb Dom\n3603\nHORA DE PARO 1\nDefine la hora diaria de paro.\n· La hora puede cambiarse en incrementos de 2 segundos.\n· Si el valor del parámetro es 09:00:00, el temporizador se desactiva a las 9 de la mañana.\n3604\nDIA DE INICIO 1\nDefine el día para la puesta en marcha semanal.\n1 = LUNES ... 7 = DOMINGO\n· Si el valor del parámetro es 1, el temporizador semanal 1 está activo a partir de la medianoche del lunes\n(00:00:00).\n3605\nDIA DE PARO 1\nDefine el día de paro semanal.\n1 = LUNES ... 7 = DOMINGO\n· Si el valor del parámetro es 5, el temporizador semanal 1 se desactiva en la medianoche del viernes (23:59:58).\n3606\nHORA DE INICIO 2\nDefine la hora diaria para la puesta en marcha del temporizador 2.\n· Véase el parámetro 3602.\n3607\nHORA DE PARO 2\nDefine la hora diaria de paro del temporizador 2.\n· Véase el parámetro 3603.\n3608\nDIA DE INICIO 2\nDefine el día para la puesta en marcha semanal del temporizador 2.\n· Véase el parámetro 3604.\n3609\nDIA DE PARO 2\nDefine el día de paro semanal del temporizador 2.\n· Véase el parámetro 3605.\n3610\nHORA DE INICIO 3\nDefine la hora diaria para la puesta en marcha del temporizador 3.\n· Véase el parámetro 3602.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción",
+            ""
+          ],
+          [
+            "3601",
+            "HABILITAR TEMPOR"
+          ],
+          [
+            "Selecciona la fuente para la señal de habilitación del temporizador. 0 = SIN SEL - Funciones temporizadas desactivadas. 1 = ED1 - Define la entrada digital ED1 como la señal de habilitación de la función temporizada. · La entrada digital debe activarse para habilitar la función temporizada. 2 ... 6 = ED2 ... ED6 - Define la entrada digital ED2 ... ED6 como la señal de habilitación de la función temporizada. 7 = ACTIVO - Funciones temporizadas activadas. -1 = ED1(INV) - Define una entrada digital inversa ED1 como la señal de habilitación de la función temporizada. · Esta entrada digital debe desactivarse para habilitar la función temporizada. · - 2 ...- 6 = ED2(INV) ... ED6(INV) - Define una entrada digital inversa ED2 ... ED6 como la señal de habilitación de la función temporizada."
+          ],
+          [
+            "3602",
+            "HORA DE INICIO 1 Define la hora diaria para la puesta en marcha. 20:30:00 · La hora puede cambiarse en incrementos de 2 segundos. · Si el valor del parámetro es 07:00:00, el temporizador 17:00:00 se activa a las 7 de la mañana. 15:00:00 · La figura muestra varios temporizadores en distintos días de la semana. 13:00:00 12:00:00 10:30:00 09:00:00 00:00:00",
+            ""
+          ],
+          [
+            "Período de tiempo 2"
+          ],
+          [
+            "Período de tiempo 4 Período de tiempo 3 :unselected: Período de tiempo 1\n:unselected:"
+          ],
+          [
+            "Lun Mar Mie Jue Vie Sáb Dom"
+          ],
+          [
+            "3603",
+            "HORA DE PARO 1 Define la hora diaria de paro. · La hora puede cambiarse en incrementos de 2 segundos. · Si el valor del parámetro es 09:00:00, el temporizador se desactiva a las 9 de la mañana."
+          ],
+          [
+            "3604",
+            "DIA DE INICIO 1 Define el día para la puesta en marcha semanal. 1 = LUNES ... 7 = DOMINGO · Si el valor del parámetro es 1, el temporizador semanal 1 está activo a partir de la medianoche del lunes (00:00:00)."
+          ],
+          [
+            "3605",
+            "DIA DE PARO 1 Define el día de paro semanal. 1 = LUNES ... 7 = DOMINGO · Si el valor del parámetro es 5, el temporizador semanal 1 se desactiva en la medianoche del viernes (23:59:58)."
+          ],
+          [
+            "3606",
+            "HORA DE INICIO 2 Define la hora diaria para la puesta en marcha del temporizador 2. · Véase el parámetro 3602."
+          ],
+          [
+            "3607",
+            "HORA DE PARO 2 Define la hora diaria de paro del temporizador 2. · Véase el parámetro 3603."
+          ],
+          [
+            "3608",
+            "DIA DE INICIO 2 Define el día para la puesta en marcha semanal del temporizador 2. · Véase el parámetro 3604."
+          ],
+          [
+            "3609",
+            "DIA DE PARO 2 Define el día de paro semanal del temporizador 2. · Véase el parámetro 3605."
+          ],
+          [
+            "3610",
+            "HORA DE INICIO 3 Define la hora diaria para la puesta en marcha del temporizador 3. · Véase el parámetro 3602."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "166\nManual del usuario del ACS550-01/U1\nCódigo Descripción\n3611\nHORA DE PARO 3\nDefine la hora diaria de paro del temporizador 3.\n· Véase el parámetro 3603.\n3612\nDIA DE INICIO 3\nDefine el día para la puesta en marcha semanal del temporizador 3.\n· Véase el parámetro 3604.\n3613\nDIA DE PARO 3\nDefine el día de paro semanal del temporizador 3.\n· Véase el parámetro 3605.\n3614\nHORA DE INICIO 4\nDefine la hora diaria para la puesta en marcha del temporizador 4.\n· Véase el parámetro 3602.\n3615\nHORA DE PARO 4\nDefine la hora diaria de paro del temporizador 4.\n· Véase el parámetro 3603.\n3616\nDIA DE INICIO 4\nDefine el día para la puesta en marcha semanal del temporizador 4.\n· Véase el parámetro 3604.\n3617\nDIA DE PARO 4\nDefine el día de paro semanal del temporizador 4.\n· Véase el parámetro 3605.\n3622\nSEL REFORZ\nSelecciona el origen de la señal de refuerzo o sobrecontrol.\n0 = SIN SEL - Señal de reforzador desactivada.\n1 = ED1 - Define ED1 como la señal de refuerzo.\n2 ... 6 = ED2 ... ED6 - Define ED2 ... ED6 como la señal de refuerzo.\n-1 = ED1(INV) - Define una entrada digital inversa ED1 como la señal de refuerzo.\n-2 ...- 6 = ED2(INV) ... ED6(INV) - Define una entrada digital inversa ED2 ... ED6 como la señal de refuerzo.\n3623\nTIEMPO REFORZ\n1\nDefine el tiempo de conexión del reforzador. El tiempo\n1\nempieza a contar al liberarse la señal de selección de\nReforz. activo\nreforzador. Si el valor del parámetro es 01:30:00, el reforzador\nI\nestá activo durante 1 hora y 30 minutos tras la liberación de la\nED de activación.\nED de activación\nTiempo reforz.\n3626\nFUEN FUNC TEMP 1\nDefine los períodos de tiempo utilizados por el temporizador.\n0 = SIN SEL - No se han seleccionado períodos de tiempo.\n1 = T1 - Período de tiempo 1 seleccionado en el temporizador.\n2 = T2 - Período de tiempo 2 seleccionado en el temporizador.\n3 = T1+T2 - Períodos de tiempo 1 y 2 seleccionados en el temporizador.\n4 = T3 - Período de tiempo 3 seleccionado en el temporizador.\n5 = T1+T3 - Períodos de tiempo 1 y 3 seleccionados en el temporizador.\n6 = T2+T3 - Períodos de tiempo 2 y 3 seleccionados en el temporizador.\n7 = T1+T2+T3 - Períodos de tiempo 1, 2 y 3 seleccionados en el temporizador.\n8 = T4 - Período de tiempo 4 seleccionado en el temporizador.\n9 = T1+T4 - Períodos de tiempo 1 y 4 seleccionados en el temporizador.\n10 = T2+T4 - Períodos de tiempo 2 y 4 seleccionados en el temporizador.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "3611",
+            "HORA DE PARO 3 Define la hora diaria de paro del temporizador 3. · Véase el parámetro 3603."
+          ],
+          [
+            "3612",
+            "DIA DE INICIO 3 Define el día para la puesta en marcha semanal del temporizador 3. · Véase el parámetro 3604."
+          ],
+          [
+            "3613",
+            "DIA DE PARO 3 Define el día de paro semanal del temporizador 3. · Véase el parámetro 3605."
+          ],
+          [
+            "3614",
+            "HORA DE INICIO 4 Define la hora diaria para la puesta en marcha del temporizador 4. · Véase el parámetro 3602."
+          ],
+          [
+            "3615",
+            "HORA DE PARO 4 Define la hora diaria de paro del temporizador 4. · Véase el parámetro 3603."
+          ],
+          [
+            "3616",
+            "DIA DE INICIO 4 Define el día para la puesta en marcha semanal del temporizador 4. · Véase el parámetro 3604."
+          ],
+          [
+            "3617",
+            "DIA DE PARO 4 Define el día de paro semanal del temporizador 4. · Véase el parámetro 3605."
+          ],
+          [
+            "3622",
+            "SEL REFORZ Selecciona el origen de la señal de refuerzo o sobrecontrol. 0 = SIN SEL - Señal de reforzador desactivada. 1 = ED1 - Define ED1 como la señal de refuerzo. 2 ... 6 = ED2 ... ED6 - Define ED2 ... ED6 como la señal de refuerzo. -1 = ED1(INV) - Define una entrada digital inversa ED1 como la señal de refuerzo. -2 ...- 6 = ED2(INV) ... ED6(INV) - Define una entrada digital inversa ED2 ... ED6 como la señal de refuerzo."
+          ],
+          [
+            "3623",
+            "TIEMPO REFORZ 1 Define el tiempo de conexión del reforzador. El tiempo 1 empieza a contar al liberarse la señal de selección de Reforz. activo reforzador. Si el valor del parámetro es 01:30:00, el reforzador I está activo durante 1 hora y 30 minutos tras la liberación de la ED de activación. ED de activación Tiempo reforz."
+          ],
+          [
+            "3626",
+            "FUEN FUNC TEMP 1 Define los períodos de tiempo utilizados por el temporizador. 0 = SIN SEL - No se han seleccionado períodos de tiempo. 1 = T1 - Período de tiempo 1 seleccionado en el temporizador. 2 = T2 - Período de tiempo 2 seleccionado en el temporizador. 3 = T1+T2 - Períodos de tiempo 1 y 2 seleccionados en el temporizador. 4 = T3 - Período de tiempo 3 seleccionado en el temporizador. 5 = T1+T3 - Períodos de tiempo 1 y 3 seleccionados en el temporizador. 6 = T2+T3 - Períodos de tiempo 2 y 3 seleccionados en el temporizador. 7 = T1+T2+T3 - Períodos de tiempo 1, 2 y 3 seleccionados en el temporizador. 8 = T4 - Período de tiempo 4 seleccionado en el temporizador. 9 = T1+T4 - Períodos de tiempo 1 y 4 seleccionados en el temporizador. 10 = T2+T4 - Períodos de tiempo 2 y 4 seleccionados en el temporizador."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Manual del usuario del ACS550-01/U1\n167\nCódigo Descripción\n11 = T1+T2+T4 - Períodos de tiempo 1, 2 y 4 seleccionados en el temporizador.\n12 = T3+T4 - Períodos de tiempo 3 y 4 seleccionados en el temporizador.\n13 = T1+T3+T4 - Períodos de tiempo 1, 3 y 4 seleccionados en el temporizador.\n14 = T2+T3+T4 - Períodos de tiempo 2, 3 y 4 seleccionados en el temporizador.\n15 = T1+T2+T3+T4 - Períodos de tiempo 1, 2, 3 y 4 seleccionados en el temporizador.\n16 = REFORZADOR - Reforzador seleccionado en el temporizador.\n17 = T1+B - Reforzador y Período de tiempo 1 seleccionados en el temporizador.\n18 = T2+B - Reforzador y Período de tiempo 2 seleccionados en el temporizador.\n19 = T1+T2+B - Reforzador y Períodos de tiempo 1 y 2 seleccionados en el temporizador.\n20 = T3+B - Reforzador y Período de tiempo 3 seleccionados en el temporizador.\n21 = T1+T3+B - Reforzador y Períodos de tiempo 1 y 3 seleccionados en el temporizador.\n22 = T2+T3+B - Reforzador y Períodos de tiempo 2 y 3 seleccionados en el temporizador.\n23 = T1+T2+T3+B - Reforzador y Períodos de tiempo 1, 2 y 3 seleccionados en el temporizador.\n24 = T4+B - Reforzador y Período de tiempo 4 seleccionados en el temporizador.\n25 = T1+T4+B - Reforzador y Períodos de tiempo 1 y 4 seleccionados en el temporizador.\n26 = T2+T4+B - Reforzador y Períodos de tiempo 2 y 4 seleccionados en el temporizador.\n27 = T1+T2+T4+B - Reforzador y Períodos de tiempo 1, 2 y 4 seleccionados en el temporizador.\n28 = T3+T4+B - Reforzador y Períodos de tiempo 3 y 4 seleccionados en el temporizador.\n29 = T1+T3+T4+B - Reforzador y Períodos de tiempo 1, 3 y 4 seleccionados en el temporizador.\n30 = T2+T3+T4+B - Reforzador y Períodos de tiempo 2, 3 y 4 seleccionados en el temporizador.\n31 = T1+2+3+4+B - Reforzador y Períodos de tiempo 1, 2, 3 y 4 seleccionados en el temporizador.\n3627\nFUEN FUNC TEMP 2\n· Véase el parámetro 3626.\n3628\nFUEN FUNC TEMP 3\n· Véase el parámetro 3626.\n3629\nFUEN FUNC TEMP 4\n· Véase el parámetro 3626.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "",
+            "11 = T1+T2+T4 - Períodos de tiempo 1, 2 y 4 seleccionados en el temporizador. 12 = T3+T4 - Períodos de tiempo 3 y 4 seleccionados en el temporizador. 13 = T1+T3+T4 - Períodos de tiempo 1, 3 y 4 seleccionados en el temporizador. 14 = T2+T3+T4 - Períodos de tiempo 2, 3 y 4 seleccionados en el temporizador. 15 = T1+T2+T3+T4 - Períodos de tiempo 1, 2, 3 y 4 seleccionados en el temporizador. 16 = REFORZADOR - Reforzador seleccionado en el temporizador. 17 = T1+B - Reforzador y Período de tiempo 1 seleccionados en el temporizador. 18 = T2+B - Reforzador y Período de tiempo 2 seleccionados en el temporizador. 19 = T1+T2+B - Reforzador y Períodos de tiempo 1 y 2 seleccionados en el temporizador. 20 = T3+B - Reforzador y Período de tiempo 3 seleccionados en el temporizador. 21 = T1+T3+B - Reforzador y Períodos de tiempo 1 y 3 seleccionados en el temporizador. 22 = T2+T3+B - Reforzador y Períodos de tiempo 2 y 3 seleccionados en el temporizador. 23 = T1+T2+T3+B - Reforzador y Períodos de tiempo 1, 2 y 3 seleccionados en el temporizador. 24 = T4+B - Reforzador y Período de tiempo 4 seleccionados en el temporizador. 25 = T1+T4+B - Reforzador y Períodos de tiempo 1 y 4 seleccionados en el temporizador. 26 = T2+T4+B - Reforzador y Períodos de tiempo 2 y 4 seleccionados en el temporizador. 27 = T1+T2+T4+B - Reforzador y Períodos de tiempo 1, 2 y 4 seleccionados en el temporizador. 28 = T3+T4+B - Reforzador y Períodos de tiempo 3 y 4 seleccionados en el temporizador. 29 = T1+T3+T4+B - Reforzador y Períodos de tiempo 1, 3 y 4 seleccionados en el temporizador. 30 = T2+T3+T4+B - Reforzador y Períodos de tiempo 2, 3 y 4 seleccionados en el temporizador. 31 = T1+2+3+4+B - Reforzador y Períodos de tiempo 1, 2, 3 y 4 seleccionados en el temporizador."
+          ],
+          [
+            "3627",
+            "FUEN FUNC TEMP 2 · Véase el parámetro 3626."
+          ],
+          [
+            "3628",
+            "FUEN FUNC TEMP 3 · Véase el parámetro 3626."
+          ],
+          [
+            "3629",
+            "FUEN FUNC TEMP 4 · Véase el parámetro 3626."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "168\nManual del usuario del ACS550-01/U1\nGrupo 37: CURVA CARGA USUA\nEste grupo define la supervisión de curvas de carga ajustables por el usuario (par\nmotor como función de la frecuencia). La curva se define a través de cinco puntos.\nCódigo Descripción\n3701\nCARGA USUA MOD C\nPar motor (%)\nModo de supervisión para las curvas de carga\najustables por el usuario.\n- -\nÁrea de sobrecarga\nEsta función sustituye a la supervisión de baja\n- -\ncarga anterior en el Grupo 30: FUNCIONES\nP3706\nP3709\n-\nFALLOS. Para emularla, véase el apartado\nP3712\nP3715\nP3718\nCorrespondencia con la supervisión de baja\nP3714\nP3717\ncarga obsoleta en la página 169.\nÁrea de funcionamiento\n0 = SIN SEL - Supervisión inactiva.\npermitida\n1 = BAJA CARGA - La supervisión del par cae por\ndebajo de la curva de baja carga.\nP3711\n2 = SOBRECARGA - La supervisión del par supera\nP3705\nla curva de sobrecarga.\nÁrea de baja carga\n3 = AMBAS - La supervisión del par cae por debajo\nde la curva de baja carga o supera la curva de\nP3708\nsobrecarga.\nP3704\nP3707\nP3710 P3713\nP3716\nFrecuencia de salida (Hz)\n3702\nCARGA USUA FUNC C\nAcción deseada durante la supervisión de la carga.\n1 = FALLO - Se genera un fallo cuando el estado definido por 3701 CARGA USUA MOD C ha sido válido durante más\ntiempo que el definido por 3703 CARG USUA TIEM C.\n2 = AVISO - Se genera una alarma cuando el estado definido por 3701 CARGA USUA MOD C ha sido válido durante más\nde la mitad del tiempo definido por 3703 CARG USUA TIEM C.\n3703\nCARG USUA TIEM C\nDefine el límite de tiempo para generar un fallo.\n· La mitad de este tiempo se emplea como el límite para generar una alarma.\n3704\nCARGA FREC 1\nDefine el valor de frecuencia del primer punto de definición de la curva de carga.\n. Debe ser inferior a 3707 CARGA FREC 2.\n3705\nCARGA BAJO PAR 1\nDefine el valor de par del primer punto de definición de la curva de baja carga.\n. Debe ser inferior a 3706 CARGA ALTO PAR 1.\n3706\nCARGA ALTO PAR 1\nDefine el valor de par del primer punto de definición de la curva de sobrecarga.\n3707\nCARGA FREC 2\nDefine el valor de frecuencia del segundo punto de definición de la curva de carga.\n. Debe ser inferior a 3710 CARGA FREC 3.\n3708\nCARGA BAJO PAR 2\nDefine el valor de par del segundo punto de definición de la curva de baja carga.\n. Debe ser inferior a 3709 CARGA ALTO PAR 2.\n3709\nCARGA ALTO PAR 2\nDefine el valor de par del segundo punto de definición de la curva de sobrecarga.\n3710\nCARGA FREC 3\nDefine el valor de frecuencia del tercer punto de definición de la curva de carga.\n. Debe ser inferior a 3713 CARGA FREC 4.\n3711\nCARGA BAJO PAR 3\nDefine el valor de par del tercer punto de definición de la curva de baja carga.\n. Debe ser inferior a 3712 CARGA ALTO PAR 3.\n3712\nCARGA ALTO PAR 3\nDefine el valor de par del tercer punto de definición de la curva de sobrecarga.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "3701",
+            "CARGA USUA MOD C Par motor (%)"
+          ],
+          [
+            "Modo de supervisión para las curvas de carga ajustables por el usuario. - - Área de sobrecarga\n:unselected:"
+          ],
+          [
+            "Esta función sustituye a la supervisión de baja - - carga anterior en el Grupo 30: FUNCIONES P3706 P3709 - FALLOS. Para emularla, véase el apartado P3712 P3715 P3718\n:unselected: :unselected: :unselected: :unselected:"
+          ],
+          [
+            "Correspondencia con la supervisión de baja P3714 P3717 carga obsoleta en la página 169. Área de funcionamiento"
+          ],
+          [
+            "0 = SIN SEL - Supervisión inactiva. permitida 1 = BAJA CARGA - La supervisión del par cae por debajo de la curva de baja carga. P3711"
+          ],
+          [
+            "2 = SOBRECARGA - La supervisión del par supera P3705 la curva de sobrecarga. Área de baja carga 3 = AMBAS - La supervisión del par cae por debajo de la curva de baja carga o supera la curva de P3708 sobrecarga. P3704 P3707 P3710 P3713 P3716 Frecuencia de salida (Hz)"
+          ],
+          [
+            "3702",
+            "CARGA USUA FUNC C"
+          ],
+          [
+            "Acción deseada durante la supervisión de la carga. 1 = FALLO - Se genera un fallo cuando el estado definido por 3701 CARGA USUA MOD C ha sido válido durante más tiempo que el definido por 3703 CARG USUA TIEM C. 2 = AVISO - Se genera una alarma cuando el estado definido por 3701 CARGA USUA MOD C ha sido válido durante más de la mitad del tiempo definido por 3703 CARG USUA TIEM C."
+          ],
+          [
+            "3703",
+            "CARG USUA TIEM C Define el límite de tiempo para generar un fallo. · La mitad de este tiempo se emplea como el límite para generar una alarma."
+          ],
+          [
+            "3704",
+            "CARGA FREC 1 Define el valor de frecuencia del primer punto de definición de la curva de carga. . Debe ser inferior a 3707 CARGA FREC 2."
+          ],
+          [
+            "3705",
+            "CARGA BAJO PAR 1 Define el valor de par del primer punto de definición de la curva de baja carga. . Debe ser inferior a 3706 CARGA ALTO PAR 1."
+          ],
+          [
+            "3706",
+            "CARGA ALTO PAR 1 Define el valor de par del primer punto de definición de la curva de sobrecarga."
+          ],
+          [
+            "3707",
+            "CARGA FREC 2 Define el valor de frecuencia del segundo punto de definición de la curva de carga. . Debe ser inferior a 3710 CARGA FREC 3."
+          ],
+          [
+            "3708",
+            "CARGA BAJO PAR 2 Define el valor de par del segundo punto de definición de la curva de baja carga. . Debe ser inferior a 3709 CARGA ALTO PAR 2."
+          ],
+          [
+            "3709",
+            "CARGA ALTO PAR 2 Define el valor de par del segundo punto de definición de la curva de sobrecarga."
+          ],
+          [
+            "3710",
+            "CARGA FREC 3 Define el valor de frecuencia del tercer punto de definición de la curva de carga. . Debe ser inferior a 3713 CARGA FREC 4."
+          ],
+          [
+            "3711",
+            "CARGA BAJO PAR 3 Define el valor de par del tercer punto de definición de la curva de baja carga. . Debe ser inferior a 3712 CARGA ALTO PAR 3."
+          ],
+          [
+            "3712",
+            "CARGA ALTO PAR 3 Define el valor de par del tercer punto de definición de la curva de sobrecarga."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Manual del usuario del ACS550-01/U1\n169\nCódigo Descripción\n3713\nCARGA FREC 4\nDefine el valor de frecuencia del cuarto punto de definición de la curva de carga.\n· Debe ser inferior a 3716 CARGA FREC 5.\n3714\nCARGA BAJO PAR 4\nDefine el valor de par del cuarto punto de definición de la curva de baja carga.\n. Debe ser inferior a 3715 CARGA ALTO PAR 4.\n3715\nCARGA ALTO PAR 4\nDefine el valor de par del cuarto punto de definición de la curva de sobrecarga.\n3716\nCARGA FREC 5\nDefine el valor de frecuencia del quinto punto de definición de la curva de carga.\n3717\nCARGA BAJO PAR 5\nDefine el valor de par del quinto punto de definición de la curva de baja carga.\n· Debe ser inferior a 3718 CARGA ALTO PAR 5.\n3718\nCARGA ALTO PAR 5\nDefine el valor de par del quinto punto de definición de la curva de sobrecarga.\nCorrespondencia con la supervisión de baja carga obsoleta\nEl parámetro obsoleto 3015 CURVA SUBCARGA proporcionaba cinco curvas\nseleccionables que se muestran en la figura. Las características del parámetro eran\nlas descritas a continuación.\n· Si la carga cae por debajo\nde la curva ajustada\ndurante más tiempo que el\najustado por el parámetro\n3014 TIEM BAJA CARGA\n(obsoleto), la protección\nde baja carga se activa.\n· Las curvas 1 ... 3 alcanzan\nel máximo a la frecuencia\nnominal del motor\najustada por el parámetro\n9907 FREC NOM MOTOR.\n· TM = par nominal del motor.\n· fN = frecuencia nominal\ndel motor.\nTM\n(%) 4 Tipos de curva de subcarga\n80\n1\n1\n60\n1\n3\n70%\n2\n40\n1\n20\n0\nfN\n50%\n5\n30%\n4\nf\n2.4 . IN\nSi desea emular el comportamiento de una curva de baja carga antigua con los\nparámetros de las columnas sombreadas, ajuste los nuevos parámetros como en\nlas columnas blancas de las dos tablas siguientes:\nSupervisión de baja carga con los\nparámetros 3013 ... 3015\n(obsoletos)\nParámetros obsoletos\nNuevos parámetros\n3013\nFUNC BAJA\nCARGA\n3014 TIEM\nBAJA\nCARGA\n3701\nCARGA\nUSUA MOD\nC\n3702\nCARGA\nUSUA FUN\nC\n3703\nCARG USUA\nTIEM C\nSin funcionalidad de baja carga\n0\n-\n0\n-\n-\nCurva subcarga, fallo generado\n1\nt\n1\n1\nt\nCurva subcarga, alarma generada\n2\nt\n1\n2\n2 · t",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "3713",
+            "CARGA FREC 4 Define el valor de frecuencia del cuarto punto de definición de la curva de carga. · Debe ser inferior a 3716 CARGA FREC 5."
+          ],
+          [
+            "3714",
+            "CARGA BAJO PAR 4 Define el valor de par del cuarto punto de definición de la curva de baja carga. . Debe ser inferior a 3715 CARGA ALTO PAR 4."
+          ],
+          [
+            "3715",
+            "CARGA ALTO PAR 4 Define el valor de par del cuarto punto de definición de la curva de sobrecarga."
+          ],
+          [
+            "3716",
+            "CARGA FREC 5 Define el valor de frecuencia del quinto punto de definición de la curva de carga."
+          ],
+          [
+            "3717",
+            "CARGA BAJO PAR 5 Define el valor de par del quinto punto de definición de la curva de baja carga. · Debe ser inferior a 3718 CARGA ALTO PAR 5."
+          ],
+          [
+            "3718",
+            "CARGA ALTO PAR 5 Define el valor de par del quinto punto de definición de la curva de sobrecarga."
+          ]
+        ],
+        [
+          [
+            "Supervisión de baja carga con los parámetros 3013 ... 3015 (obsoletos)",
+            "Parámetros obsoletos",
+            "Nuevos parámetros"
+          ],
+          [
+            "3013 FUNC BAJA CARGA",
+            "3014 TIEM BAJA CARGA",
+            "3701 CARGA USUA MOD C",
+            "3702 CARGA USUA FUN C",
+            "3703 CARG USUA TIEM C"
+          ],
+          [
+            "Sin funcionalidad de baja carga",
+            "0",
+            "-",
+            "0",
+            "-",
+            "-"
+          ],
+          [
+            "Curva subcarga, fallo generado",
+            "1",
+            "t",
+            "1",
+            "1",
+            "t"
+          ],
+          [
+            "Curva subcarga, alarma generada",
+            "2",
+            "t",
+            "1",
+            "2",
+            "2 · t"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "170\nManual del usuario del ACS550-01/U1\nPar.\nobs.\nNuevos parámetros\n3015\nCURVA\nSUBCA\nRGA\n3704\nCARGA\nFREC 1\n(Hz)\n3705\nCARGA\nBAJO\nPAR 1\n(%)\n3707\nCARGA\nFREC 2\n(Hz)\n3708\nCARGA\nBAJO\nPAR 2\n(%)\n3710\nCARGA\nFREC 3\n(Hz)\n3711\nCARGA\nBAJO\nPAR 3\n(%)\n3713\nCARGA\nFREC 4\n(Hz)\n3714\nCARGA\nBAJO\nPAR 4\n(%)\n3716\nCARGA\nFREC 5\n(Hz)\n3717\nCARGA\nBAJO\nPAR 5\n(%)\nUE\nEEU\nU\nUE\nEEU\nU\nUE EEU\nU\nUE\nEEU\nU\nUE\nEEU\nU\n1\n5\n6\n10\n32\n38\n17\n41\n50\n23\n50\n60\n30\n500\n500\n30\n2\n5\n6\n20\n31\n37\n30\n42\n50\n40\n50\n60\n50\n500\n500\n50\n3\n5\n6\n30\n31\n37\n43\n42\n50\n57\n50\n60\n70\n500\n500\n70\n4\n5\n6\n10\n73\n88\n17\n98\n117\n23\n120\n144\n30\n500\n500\n30\n5\n5\n6\n20\n71\n86\n30\n99\n119\n40\n120\n144\n50\n500\n500\n50",
+      "tablas": [
+        [
+          [
+            "Par. obs.",
+            "Nuevos parámetros"
+          ],
+          [
+            "3015 CURVA SUBCA RGA",
+            "3704 CARGA FREC 1 (Hz)",
+            "3705 CARGA BAJO PAR 1 (%)",
+            "3707 CARGA FREC 2 (Hz)",
+            "3708 CARGA BAJO PAR 2 (%)",
+            "3710 CARGA FREC 3 (Hz)",
+            "3711 CARGA BAJO PAR 3 (%)",
+            "3713 CARGA FREC 4 (Hz)",
+            "3714 CARGA BAJO PAR 4 (%)",
+            "3716 CARGA FREC 5 (Hz)",
+            "3717 CARGA BAJO PAR 5 (%)"
+          ],
+          [
+            "",
+            "UE",
+            "EEU U",
+            "UE",
+            "EEU U",
+            "UE",
+            "EEU U",
+            "UE",
+            "EEU U",
+            "UE",
+            "EEU U"
+          ],
+          [
+            "1",
+            "5",
+            "6",
+            "10",
+            "32",
+            "38",
+            "17",
+            "41",
+            "50",
+            "23",
+            "50",
+            "60",
+            "30",
+            "500",
+            "500",
+            "30"
+          ],
+          [
+            "2",
+            "5",
+            "6",
+            "20",
+            "31",
+            "37",
+            "30",
+            "42",
+            "50",
+            "40",
+            "50",
+            "60",
+            "50",
+            "500",
+            "500",
+            "50"
+          ],
+          [
+            "3",
+            "5",
+            "6",
+            "30",
+            "31",
+            "37",
+            "43",
+            "42",
+            "50",
+            "57",
+            "50",
+            "60",
+            "70",
+            "500",
+            "500",
+            "70"
+          ],
+          [
+            "4",
+            "5",
+            "6",
+            "10",
+            "73",
+            "88",
+            "17",
+            "98",
+            "117",
+            "23",
+            "120",
+            "144",
+            "30",
+            "500",
+            "500",
+            "30"
+          ],
+          [
+            "5",
+            "5",
+            "6",
+            "20",
+            "71",
+            "86",
+            "30",
+            "99",
+            "119",
+            "40",
+            "120",
+            "144",
+            "50",
+            "500",
+            "500",
+            "50"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Manual del usuario del ACS550-01/U1\n171\nGrupo 40: CONJ PID PROCESO 1\nEste grupo define una serie de parámetros que se utilizan con el regulador PID de\nproceso (PID1).\nNormalmente, sólo se requieren los parámetros de este grupo.\nRegulador PID - Configuración básica\nEn modo de control PID, el convertidor compara una señal de referencia (punto de\nconsigna) con una señal actual (realimentación), y ajusta automáticamente la\nvelocidad del convertidor para igualar las dos señales. La diferencia entre las dos\nseñales es el valor de error.\nNormalmente, el modo de control PID se utiliza cuando la velocidad de un motor\nprecisa ser controlada en base a la presión, el flujo o la temperatura. En la mayoría\nde los casos - en los que sólo hay 1 señal de transductor conectada al ACS550 -\nsólo es necesario el grupo de parámetros 40.\nA continuación se presenta un esquema del flujo de señales de punto de consigna/\nrealimentación que utilizan el grupo de parámetros 40.\nREF panel 1\nP1101\nREF1\nREF panel 2\nP1106\n0 ... 17,\n20 ... 21\nREF2\n500%\n-500%\nP. consig. PID\nREF panel 2-\n19\nP4016\nG40\nPID 1\nIntensidad\nEA-\nPANEL\nSelección\nLOC/REM\nPar\nPotencia-\nEA-\nP4017\nP4014\nP4015\nLOC\nIntensidad -\nPar\nValor act PID\nREM\nPotencia\nREF panel 1 -\n-P1103\nED\nEA\nREF Com 1\nG12\nVeloc.\nConst.\nP1104\nP1105\nP1102\nEXT 1\nEXT 2\nREF panel 2 -\nHP1106\nED\nEA\nREF Com 2\nG12\nConst\nVelo-\ncidad\nREF panel 2-\nf P4010\nP. consig. PID\nEA1-\nEA2\ncanal 2\nInterno\nEA-\nP4016\nIntensidad\nPar\nPotencia\nP4012\nP4013\nG40\nPID 1\nP4014\nEA-P4017\nIntensidad\nPar\nP4015\nP1106\n0 ... 17,\n20 ... 21\n19\nSal PID1\nP1107\nP1108\nValor act PID\nPotencia",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "172\nManual del usuario del ACS550-01/U1\nNota: para activar y utilizar el regulador PID, el Parámetro 1106 debe ajustarse al valor 19.\nRegulador PD - Avanzado\nEl ACS550 tiene 2 reguladores PID diferentes:\n· PID de proceso (PID1) y\n· PID externo (PID2)\nEl PID de proceso (PID1) tiene dos series de parámetros diferentes:\n· El Conjunto PID de proceso 1 (PID1), definido en el Grupo 40: CONJ PID PROCESO\n1 y\n· El Conjunto PID de proceso 2 (PID1), definido en el Grupo 41: CONJ PID PROCESO\n2\nEl usuario puede elegir entre las dos series diferentes utilizando el parámetro 4027.\nNormalmente, se utilizan dos series diferentes de reguladores PID cuando la carga\ndel motor cambia considerablemente de una situación a otra.\nEl PID externo (PID2), definido en el Grupo 42: PID TRIM / EXT, se puede utilizar de\ndos maneras distintas:\n· En lugar de utilizar un hardware de regulador PID adicional, puede ajustar salidas\ndel ACS550 para controlar un instrumento de campo como un amortiguador o\nuna válvula. En este caso, el parámetro 4230 se debe ajustar al valor 0 (0 es el\nvalor por defecto).\n· El PID externo (PID2) se puede utilizar para corregir o realizar un ajuste fino de la\nvelocidad del ACS550.\nCódigo\nDescripción\n4001\nGANANCIA\nDefine la ganancia del regulador PID.\n· El rango de ajuste es 0,1 ...\n· En 0,1, la salida del regulador PID cambia una décima parte del valor de error.\n· En 100, la salida del regulador PID cambia cien veces el valor de error.\nUtilice los valores de ganancia proporcional y tiempo de integración para ajustar la sensibilidad del sistema.\n· Un valor bajo de ganancia proporcional y un valor elevado de tiempo integral garantiza un funcionamiento estable,\npero facilita una respuesta lenta.\nSi el valor de ganancia proporcional es demasiado grande o si el tiempo integral es demasiado breve, el sistema\npuede desestabilizarse.\nProcedimiento:\n· Inicialmente, ajuste:\n· 4001 GANANCIA = 0.1.\n· 4002TIEMP INTEGRAC. = 20 segundos.\n· Arranque el sistema y compruebe si alcanza el punto de consigna rápidamente manteniendo un funcionamiento\nestable. En caso negativo, incremente la GANANCIA (4001) hasta que la señal actual (o la velocidad del convertidor)\noscile constantemente. Quizá sea necesario arrancar y detener el convertidor para inducir esta oscilación.\n· Reduzca la GANANCIA (4001) hasta que la oscilación se detenga.\n· Ajuste la GANANCIA (4001) a 0,4-0,6 veces el valor anterior.\n· Reduzca el TIEMP INTEGRAC. (4002) hasta que la señal de realimentación (o la velocidad del convertidor) oscile\nconstantemente. Quizá sea necesario arrancar y detener el convertidor para inducir esta oscilación.\n· Incremente el TIEMP INTEGRAC. (4002) hasta que la oscilación se detenga.\n· Ajuste el TIEMP INTEGRAC. (4002) a 1,15-1,5 veces el valor anterior.\n· Si la señal de realimentación contiene ruido de alta frecuencia, incremente el valor del parámetro 1303 FILTRO EA1\no 1306 FILTRO EA2 hasta que se filtre el ruido de la señal.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "4001",
+            "GANANCIA Define la ganancia del regulador PID. · El rango de ajuste es 0,1 ... · En 0,1, la salida del regulador PID cambia una décima parte del valor de error. · En 100, la salida del regulador PID cambia cien veces el valor de error. Utilice los valores de ganancia proporcional y tiempo de integración para ajustar la sensibilidad del sistema. · Un valor bajo de ganancia proporcional y un valor elevado de tiempo integral garantiza un funcionamiento estable, pero facilita una respuesta lenta. Si el valor de ganancia proporcional es demasiado grande o si el tiempo integral es demasiado breve, el sistema puede desestabilizarse. Procedimiento: · Inicialmente, ajuste: · 4001 GANANCIA = 0.1. · 4002TIEMP INTEGRAC. = 20 segundos. · Arranque el sistema y compruebe si alcanza el punto de consigna rápidamente manteniendo un funcionamiento estable. En caso negativo, incremente la GANANCIA (4001) hasta que la señal actual (o la velocidad del convertidor) oscile constantemente. Quizá sea necesario arrancar y detener el convertidor para inducir esta oscilación. · Reduzca la GANANCIA (4001) hasta que la oscilación se detenga. · Ajuste la GANANCIA (4001) a 0,4-0,6 veces el valor anterior. · Reduzca el TIEMP INTEGRAC. (4002) hasta que la señal de realimentación (o la velocidad del convertidor) oscile constantemente. Quizá sea necesario arrancar y detener el convertidor para inducir esta oscilación. · Incremente el TIEMP INTEGRAC. (4002) hasta que la oscilación se detenga. · Ajuste el TIEMP INTEGRAC. (4002) a 1,15-1,5 veces el valor anterior. · Si la señal de realimentación contiene ruido de alta frecuencia, incremente el valor del parámetro 1303 FILTRO EA1 o 1306 FILTRO EA2 hasta que se filtre el ruido de la señal."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Manual del usuario del ACS550-01/U1\n173\nCódigo\n4002\nDescripción\nTIEMP INTEGRAC.\nDefine el tiempo de integración del regulador PID.\nPor definición, el tiempo de integración es el tiempo necesario\npara incrementar la salida por el valor de error:\n· El valor de error es constante y del 100%.\n· Ganancia = 1.\n· Un tiempo de integración de 1 segundo indica que se alcanza\nun cambio del 100% en 1 segundo.\n0.0 = SIN SEL - Desactiva la integración (parte I del regulador).\n0.1 ... 3600.0 - Tiempo de integración (segundos).\n· Véase 4001 acerca del procedimiento de ajuste.\n4003\nTIEMP DERIVACION\nDefine el tiempo de derivación del regulador PID.\n· Puede sumar la derivada del error a la salida del Regulador PID. La\nderivada es el ritmo de cambio del valor de error. Por ejemplo, si el\nvalor de error de proceso cambia linealmente, la derivada es una\nconstante sumada a la salida del regulador PID.\n· La derivada de error se filtra con un filtro de 1 polo. La\nconstante de tiempo del filtro se define con el parámetro 4004\nFILTRO DERIV PID.\n0.0 ... 10.0 - Tiempo de derivación (segundos).\nA\nB\nD (P 4001 = 10)\nC (P 4001 = 1)\nt\nP 4002\nA = Error\nB = Escalón del valor de error\nC = Salida del regulador con ganancia = 1\nD = Salida del regulador con ganancia = 10\nError\nValor de error de proceso\n100%\n1\nI\n0%\nt\nSalida PID\nParte D de la salida del regulador\nGanancia\nP 4001\nt\nP 4003\n4004\nFILTRO DERIV PID\nDefine la constante de tiempo de filtro para la parte de derivada de error de la salida del regulador PID.\n· Antes de sumarla a la salida del regulador PID, la derivada de error se filtra con un filtro de 1 polo.\n· El incremento del tiempo de filtro estabiliza la derivada de error, lo que reduce el ruido.\n0.0 ... 10,0 - Constante de tiempo de filtro (segundos).\n4005\nINV VALOR ERROR\nSelecciona una relación normal o inversa entre la señal de realimentación y la velocidad del convertidor.\n0 = NO - Normal, una reducción de la señal de realimentación incrementa la velocidad del convertidor. Error = Ref - Real\n1 = SI - Inversa, una reducción de la señal de realimentación reduce la velocidad del convertidor. Error = Real - Ref\n4006\nUNIDADES\nSelecciona la unidad para los valores actuales del regulador PID. (Parámetros PID1 0128, 0130 y 0132).\n· Véase el parámetro 3405 para obtener una lista de unidades disponibles.\n4007\nESCALA UNIDADES\nDefine la posición de la coma decimal en los valores actuales del\nregulador PID.\n· Introduzca la posición contando desde la derecha de la entrada.\n· Véase el ejemplo de la tabla con pi (3,14159).\nValor 4007\nEntrada\nVisualización\n0\n00003\n3\n1\n00031\n3.1\n2\n00314\n3.14\n3\n03142\n3.142\n4\n31416\n3.1416",
+      "tablas": [
+        [
+          [
+            "Valor 4007",
+            "Entrada",
+            "Visualización"
+          ],
+          [
+            "0",
+            "00003",
+            "3"
+          ],
+          [
+            "1",
+            "00031",
+            "3.1"
+          ],
+          [
+            "2",
+            "00314",
+            "3.14"
+          ],
+          [
+            "3",
+            "03142",
+            "3.142"
+          ],
+          [
+            "4",
+            "31416",
+            "3.1416"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "174\nManual del usuario del ACS550-01/U1\nCódigo\nDescripción\n4008\nVALOR 0%\nDefine (junto con el siguiente parámetro) la escala aplicada a los\nvalores reales del regulador PID (parámetros PID1 0128, 0130 y 0132).\n· Las unidades y la escala se definen con los parámetros 4006 y 4007.\nUnidades (P4006)\nEscala (P4007)\nP 4009 -\n+1000.0%\n4009\nVALOR 100%\nDefine (junto con el anterior parámetro) la escala aplicada a los\nvalores reales del regulador PID.\n· Las unidades y la escala se definen con los parámetros 4006 y 4007.\nP 4008-\n1\n0%\n100%\n-1000.0%\nEscala interna (%)\n4010\nSEL PUNTO CONSIG\nDefine la fuente de señal de referencia para el regulador PID.\n· El parámetro no tiene significado si existe un bypass del regulador PID (véase 8121 CONT BYPASS REG).\n0 = PANEL - El panel de control proporciona la referencia.\n1 = EA1 - La entrada analógica 1 proporciona la referencia.\n2 = EA2 - La entrada analógica 2 proporciona la referencia.\n8 = COMUNIC - El bus de campo proporciona la referencia.\n9 = COMUNIC+EA1 - Define una combinación de bus de campo y entrada analógica 1 (EA1) como la fuente de\nreferencia. Véase la Corrección de referencia de entrada analógica a continuación.\n10 = COMUNIC*EA1 - Define una combinación de bus de campo y entrada analógica 1 (EA1) como la fuente de\nreferencia. Véase la Corrección de referencia de entrada analógica a continuación.\n11 = ED3A,4D(RNC) - Las entradas digitales, actuando como control de potenciómetro del motor, proporcionan la referencia.\n· ED3 incrementa la velocidad (la A significa \"arriba\")\n· ED4 reduce la referencia (la D significa \"descenso\").\n· El parámetro 2205 ACCELER TIEMPO 2 controla el ritmo de cambio de las señales de referencia.\n· R = Un comando de paro restaura la referencia a cero.\n· NC = El valor de referencia no se copia.\n12 = ED3A,4D(NC) - Igual que ED3U,4D(RNC), excepto que:\n· Un comando de paro no restaura la referencia a cero. Al rearrancar, el motor acelera en rampa, a la tasa de\naceleración seleccionada, hasta la referencia almacenada.\n13 = ED5A,6D(NC) - Igual que ED3A,4D(NC), excepto que:\n· Utiliza las entradas digitales ED5 y ED6.\n14 = EA1+EA2 - Define una combinación de entrada analógica 1 (EA1) y entrada analógica 2 (EA2) como la fuente de\nreferencia. Véase la Corrección de referencia de entrada analógica a continuación.\n15 = EA1*EA2 - Define una combinación de entrada analógica 1 (EA1) y entrada analógica 2 (EA2) como la fuente de\nreferencia. Véase la Corrección de referencia de entrada analógica a continuación.\n16 = EA1-EA2 - Define una combinación de entrada analógica 1 (EA1) y entrada analógica 2 (EA2) como la fuente de\nreferencia. Véase la Corrección de referencia de entrada analógica a continuación.\n17 = EA1/EA2 - Define una combinación de entrada analógica 1 (EA1) y entrada analógica 2 (EA2) como la fuente de\nreferencia. Véase la Corrección de referencia de entrada analógica a continuación.\n19 = INTERNO - Un valor constante ajustado con el parámetro 4011 proporciona la referencia.\n20 = SALPID2 - Define la salida del regulador PID 2 (parámetro 0127 SALIDA PID 2) como la fuente de referencia.",
+      "tablas": [
+        [
+          [
+            "4008",
+            "VALOR 0% Define (junto con el siguiente parámetro) la escala aplicada a los valores reales del regulador PID (parámetros PID1 0128, 0130 y 0132). · Las unidades y la escala se definen con los parámetros 4006 y 4007.",
+            "Unidades (P4006) Escala (P4007)",
+            "+1000.0%"
+          ],
+          [
+            "4009",
+            "VALOR 100% Define (junto con el anterior parámetro) la escala aplicada a los valores reales del regulador PID. · Las unidades y la escala se definen con los parámetros 4006 y 4007.",
+            "P 4009 -\nP 4008-"
+          ],
+          [
+            "",
+            "1 0% 100% -1000.0% Escala interna (%)"
+          ],
+          [
+            "4010",
+            "SEL PUNTO CONSIG Define la fuente de señal de referencia para el regulador PID. · El parámetro no tiene significado si existe un bypass del regulador PID (véase 8121 CONT BYPASS REG). 0 = PANEL - El panel de control proporciona la referencia. 1 = EA1 - La entrada analógica 1 proporciona la referencia. 2 = EA2 - La entrada analógica 2 proporciona la referencia. 8 = COMUNIC - El bus de campo proporciona la referencia. 9 = COMUNIC+EA1 - Define una combinación de bus de campo y entrada analógica 1 (EA1) como la fuente de referencia. Véase la Corrección de referencia de entrada analógica a continuación. 10 = COMUNIC*EA1 - Define una combinación de bus de campo y entrada analógica 1 (EA1) como la fuente de referencia. Véase la Corrección de referencia de entrada analógica a continuación. 11 = ED3A,4D(RNC) - Las entradas digitales, actuando como control de potenciómetro del motor, proporcionan la referencia. · ED3 incrementa la velocidad (la A significa \"arriba\") · ED4 reduce la referencia (la D significa \"descenso\"). · El parámetro 2205 ACCELER TIEMPO 2 controla el ritmo de cambio de las señales de referencia. · R = Un comando de paro restaura la referencia a cero. · NC = El valor de referencia no se copia. 12 = ED3A,4D(NC) - Igual que ED3U,4D(RNC), excepto que: · Un comando de paro no restaura la referencia a cero. Al rearrancar, el motor acelera en rampa, a la tasa de aceleración seleccionada, hasta la referencia almacenada. 13 = ED5A,6D(NC) - Igual que ED3A,4D(NC), excepto que: · Utiliza las entradas digitales ED5 y ED6. 14 = EA1+EA2 - Define una combinación de entrada analógica 1 (EA1) y entrada analógica 2 (EA2) como la fuente de referencia. Véase la Corrección de referencia de entrada analógica a continuación. 15 = EA1*EA2 - Define una combinación de entrada analógica 1 (EA1) y entrada analógica 2 (EA2) como la fuente de referencia. Véase la Corrección de referencia de entrada analógica a continuación. 16 = EA1-EA2 - Define una combinación de entrada analógica 1 (EA1) y entrada analógica 2 (EA2) como la fuente de referencia. Véase la Corrección de referencia de entrada analógica a continuación. 17 = EA1/EA2 - Define una combinación de entrada analógica 1 (EA1) y entrada analógica 2 (EA2) como la fuente de referencia. Véase la Corrección de referencia de entrada analógica a continuación. 19 = INTERNO - Un valor constante ajustado con el parámetro 4011 proporciona la referencia. 20 = SALPID2 - Define la salida del regulador PID 2 (parámetro 0127 SALIDA PID 2) como la fuente de referencia."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Manual del usuario del ACS550-01/U1\n175\nCódigo\nDescripción\nCorrección de referencia de entrada analógica\nLos valores de parámetro 9, 10, y 14 ... 17 utilizan la fórmula de la tabla siguiente.\nAjuste de valor\nCálculo de la referencia de EA\nC + B\nValor C + (valor B - 50% del valor de referencia)\nC * B\nValor C · (valor B / 50% del valor de referencia)\nC - B\n(Valor C + 50% del valor de referencia) - valor B\nC/B\n(Valor C · 50% del valor de referencia) / valor B\nDonde:\n120-T-\n· C = Valor de referencia principal\n( = COMUNIC para los valores 9, 10 and\n17 (/)\n= EA1 para los valores 14 ... 17)\n100-\n· B = Referencia de corrección\n( = EA1 para los valores 9, 10 and\n80-\n1-\n= EA2 para los valores 14 ... 17).\nEjemplo:\n60-\n1\n-9, 14 (+)\nLa figura muestra las curvas de la fuente de\nreferencia para los ajustes de valor 9, 10 y\n14 ... 17, donde:\n40-\n1\n10, 15 (*)\n· C = 25%.\n· P 4012 PUNTO CONSIG MIN = 0.\n20-\n-\n· P 4013 PUNTO CONSIG MAX = 0.\n16 (-)\n· B varía a lo largo del eje horizontal.\n0 -\n0\n100%\nB\n4011\nPUNTO CONSIG INT\nAjusta un valor constante utilizado para la referencia de proceso.\n· Las unidades y la escala se definen con los parámetros 4006 y 4007.\n4012\nPUNTO CONSIG MIN\nAjusta el valor mínimo para la fuente de la señal de referencia.\n· Véase el parámetro 4010.\n4013\nPUNTO CONSIG MAX\nAjusta el valor máximo para la fuente de la señal de referencia.\n· Véase el parámetro 4010.\n4014\nSEL REALIM\nDefine la realimentación del regulador PID (señal actual).\n· Puede definir una combinación de dos valores actuales (ACT1 y ACT2) como la señal de realimentación.\n· Utilice el parámetro 4016 para definir la fuente para el valor actual 1 (ACT1).\n· Utilice el parámetro 4017 para definir la fuente para el valor actual 2 (ACT2).\n1 = ACT1 - El valor actual 1 (ACT1) proporciona la señal de realimentación.\n2 = ACT1-ACT2 - ACT1 menos ACT2 proporciona la señal de realimentación.\n3 = ACT1+ACT2 - ACT1 más ACT2 proporciona la señal de realimentación.\n4 = ACT1*ACT2 - ACT1 por ACT2 proporciona la señal de realimentación.\n5 = ACT1/ACT2 - ACT1 dividido por ACT2 proporciona la señal de realimentación.\n6 = MIN(A1,A2) - El menor valor de ACT1 0 ACT2 proporciona la señal de realimentación.\n7 = MAX(A1,A2) - El mayor valor de ACT1 0 ACT2 proporciona la señal de realimentación.\n8 = raíz(A1-A2) - La raíz cuadrada del valor de ACT1 menos ACT2 proporciona la señal de realimentación.\n9 = sqA1+sqA2 - La raíz cuadrada de ACT1 más la raíz cuadrada de ACT2 proporcionan la señal de realimentación.\n10 = sqrt(ACT1) - La raíz cuadrada de ACT1 proporciona la señal de realimentación.\n11 = FBK 1 COMUN - La señal 0158 VALOR COM 1 PID proporciona la señal de realimentación.\n12 = FBK 2 COMUN - La señal 0158 VALOR COM 2 PID proporciona la señal de realimentación.\n13 = MEDIA (ACT1,2) - La media de ACT1 y ACT2 proporciona la señal de realimentación.\n4015\nMULTIPLIC REALIM\nDefine un multiplicador extra para el valor REALIM PID definido por el parámetro 4014.\n· Se utiliza sobre todo en aplicaciones donde el flujo se calcula a partir de la diferencia de presión.\n0.000 = SIN SEL - El parámetro no tiene efecto (se utiliza 1.000 como multiplicador).\n-32.768 ... 32.767 - El parámetro 4014 SEL REALIM definido por el multiplicador aplicado a la señal.\nEjemplo: FBK = Multiplicador x A1 - A2",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "",
+            "Corrección de referencia de entrada analógica Los valores de parámetro 9, 10, y 14 ... 17 utilizan la fórmula de la tabla siguiente."
+          ],
+          [
+            "Ajuste de valor",
+            "Cálculo de la referencia de EA"
+          ],
+          [
+            "C + B",
+            "Valor C + (valor B - 50% del valor de referencia)"
+          ],
+          [
+            "C * B",
+            "Valor C · (valor B / 50% del valor de referencia)"
+          ],
+          [
+            "C - B",
+            "(Valor C + 50% del valor de referencia) - valor B"
+          ],
+          [
+            "C/B",
+            "(Valor C · 50% del valor de referencia) / valor B"
+          ],
+          [
+            "Donde:"
+          ],
+          [
+            "120-T- · C = Valor de referencia principal ( = COMUNIC para los valores 9, 10 and 17 (/)"
+          ],
+          [
+            "= EA1 para los valores 14 ... 17) 100-"
+          ],
+          [
+            "· B = Referencia de corrección ( = EA1 para los valores 9, 10 and 80- 1-"
+          ],
+          [
+            "= EA2 para los valores 14 ... 17)."
+          ],
+          [
+            "Ejemplo: 60- 1 -9, 14 (+)"
+          ],
+          [
+            "La figura muestra las curvas de la fuente de referencia para los ajustes de valor 9, 10 y 14 ... 17, donde: 40- 1 10, 15 (*) · C = 25%."
+          ],
+          [
+            "· P 4012 PUNTO CONSIG MIN = 0. 20- - · P 4013 PUNTO CONSIG MAX = 0. 16 (-) · B varía a lo largo del eje horizontal. 0 - 0 100% B"
+          ],
+          [
+            "4011",
+            "PUNTO CONSIG INT Ajusta un valor constante utilizado para la referencia de proceso. · Las unidades y la escala se definen con los parámetros 4006 y 4007."
+          ],
+          [
+            "4012",
+            "PUNTO CONSIG MIN Ajusta el valor mínimo para la fuente de la señal de referencia. · Véase el parámetro 4010."
+          ],
+          [
+            "4013",
+            "PUNTO CONSIG MAX Ajusta el valor máximo para la fuente de la señal de referencia. · Véase el parámetro 4010."
+          ],
+          [
+            "4014",
+            "SEL REALIM"
+          ],
+          [
+            "Define la realimentación del regulador PID (señal actual). · Puede definir una combinación de dos valores actuales (ACT1 y ACT2) como la señal de realimentación. · Utilice el parámetro 4016 para definir la fuente para el valor actual 1 (ACT1). · Utilice el parámetro 4017 para definir la fuente para el valor actual 2 (ACT2). 1 = ACT1 - El valor actual 1 (ACT1) proporciona la señal de realimentación. 2 = ACT1-ACT2 - ACT1 menos ACT2 proporciona la señal de realimentación. 3 = ACT1+ACT2 - ACT1 más ACT2 proporciona la señal de realimentación. 4 = ACT1*ACT2 - ACT1 por ACT2 proporciona la señal de realimentación."
+          ],
+          [
+            "5 = ACT1/ACT2 - ACT1 dividido por ACT2 proporciona la señal de realimentación. 6 = MIN(A1,A2) - El menor valor de ACT1 0 ACT2 proporciona la señal de realimentación. 7 = MAX(A1,A2) - El mayor valor de ACT1 0 ACT2 proporciona la señal de realimentación. 8 = raíz(A1-A2) - La raíz cuadrada del valor de ACT1 menos ACT2 proporciona la señal de realimentación. 9 = sqA1+sqA2 - La raíz cuadrada de ACT1 más la raíz cuadrada de ACT2 proporcionan la señal de realimentación. 10 = sqrt(ACT1) - La raíz cuadrada de ACT1 proporciona la señal de realimentación. 11 = FBK 1 COMUN - La señal 0158 VALOR COM 1 PID proporciona la señal de realimentación. 12 = FBK 2 COMUN - La señal 0158 VALOR COM 2 PID proporciona la señal de realimentación. 13 = MEDIA (ACT1,2) - La media de ACT1 y ACT2 proporciona la señal de realimentación."
+          ],
+          [
+            "4015",
+            "MULTIPLIC REALIM Define un multiplicador extra para el valor REALIM PID definido por el parámetro 4014. · Se utiliza sobre todo en aplicaciones donde el flujo se calcula a partir de la diferencia de presión. 0.000 = SIN SEL - El parámetro no tiene efecto (se utiliza 1.000 como multiplicador). -32.768 ... 32.767 - El parámetro 4014 SEL REALIM definido por el multiplicador aplicado a la señal."
+          ],
+          [
+            "Ejemplo: FBK = Multiplicador x A1 - A2"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "176\nManual del usuario del ACS550-01/U1\nCódigo\n4016\nDescripción\nENTRADA ACT1\nDefine la fuente para el valor actual 1 (ACT1). Véase también el parámetro 4018 ACT1 MINIMO.\n1 = EA1 - Utiliza la entrada analógica 1 para ACT1.\n2 = EA2 - Utiliza la entrada analógica 2 para ACT1.\n3 = INTENSIDAD - Utiliza la intensidad para ACT1.\n4 = PAR - Utiliza el par para ACT1.\n5 = POTENCIA - Utiliza la potencia para ACT1.\n6 = ACT 1 COMUN - Utiliza el valor de la señal 0158 VALOR COM 1 PID para ACT2.\n7 = ACT 2 COMUN - Utiliza el valor de la señal 0159 VALOR COM 2 PID para ACT1.\n4017\nENTRADA ACT2\nDefine la fuente para el valor actual 2 (ACT 2). Véase también el parámetro 4020 ACT2 MINIMO.\n1 = EA 1 - Utiliza la entrada analógica 1 para ACT2.\n2 = EA 2 - Utiliza la entrada analógica 2 para ACT2.\n3 = INTENSIDAD - Utiliza la intensidad para ACT2.\n4 = PAR - Utiliza el par para ACT2.\n5 = POTENCIA - Utiliza la potencia para ACT2.\n6 = ACT 1 COMUN - Utiliza el valor de la señal 0158 VALOR COM 1 PID para ACT2.\n7 = ACT 2 COMUN - Utiliza el valor de la señal 0159 VALOR COM 2 PID para ACT2.\n4018\nACT1 MINIMO\nAjusta el valor mínimo para ACT1.\n· Escala la señal de origen utilizada como el valor actual ACT1\n(definida por el parámetro 4016 ENTRADA ACT1). Para los\nvalores 6 (ACT 1 COMUN) y 7 (ACT 2 COMUN) del parámetro 4016\nno se realiza escalado.\nACT1 (%)\nA\nP 4019\n-\nP 4018\nPar 4016\nOrigen\nOrigen mín.\nOrigen máx.\n1\nEntrada\nanalógica 1\n1301 MINIMO EA1\n1302 MAXIMO EA1\n2\nEntrada\nanalógica 2\n1304 MINIMO EA2\n1305 MAXIMO EA2\n3\nIntensidad\n0\n2 · intensidad\nnominal\n4\nPar\n-2 · par nominal\n2 · par nominal\n5\nPotencia\n-2 · potencia\nnominal\n2 · potencia nominal\n· Véase la figura: A = Normal; B = Inversión (ACT1 MINIMO > ACT1 MAXIMO)\nOrigen mín. Origen máx.\nSeñal de origen\nACT1 (%)A\nB\nP 4018\n4019\nACT1 MAXIMO\nAjusta el valor máximo para ACT1.\n· Véase 4018 ACT1 MINIMO.\n4020\nACT2 MINIMO\nAjusta el valor mínimo para ACT2.\n· Véase 4018 ACT1 MINIMO.\n4021\nACT2 MAXIMO\nAjusta el valor máximo para ACT2.\n· Véase 4018 ACT1 MINIMO.\nP 4019\nOrigen mín. Origen máx.\nSeñal de origen",
+      "tablas": [
+        [
+          [
+            "",
+            "Par 4016",
+            "Origen",
+            "Origen mín.",
+            "Origen máx."
+          ],
+          [
+            "",
+            "1",
+            "Entrada analógica 1",
+            "1301 MINIMO EA1",
+            "1302 MAXIMO EA1"
+          ],
+          [
+            "2",
+            "Entrada analógica 2",
+            "1304 MINIMO EA2",
+            "1305 MAXIMO EA2"
+          ],
+          [
+            "3",
+            "Intensidad",
+            "0",
+            "2 · intensidad nominal"
+          ],
+          [
+            "4",
+            "Par",
+            "-2 · par nominal",
+            "2 · par nominal"
+          ],
+          [
+            "5\n· Véase la",
+            "Potencia\nfigura: A = Normal;",
+            "-2 · potencia nominal\nB = Inversión",
+            "2 · potencia nominal\n(ACT1 MINIMO > ACT1 MAXIMO)"
+          ]
+        ],
+        [
+          [
+            "4019",
+            "ACT1 MAXIMO Ajusta el valor máximo para ACT1. · Véase 4018 ACT1 MINIMO."
+          ],
+          [
+            "4020",
+            "ACT2 MINIMO Ajusta el valor mínimo para ACT2. · Véase 4018 ACT1 MINIMO."
+          ],
+          [
+            "4021",
+            "ACT2 MAXIMO Ajusta el valor máximo para ACT2. · Véase 4018 ACT1 MINIMO."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Manual del usuario del ACS550-01/U1\n177\nCódigo\nDescripción\n4022\nSELECCION DORMIR\nDefine el control para la función dormir PID.\n0 = SIN SEL- Desactiva la función de control dormir PID.\n1 = ED1 - Define la entrada digital ED1 como el control para la función dormir PID.\n· La activación de la entrada digital activa la función dormir.\n· La desactivación de la entrada digital restaura el control PID.\n2 ... 6 = ED2 ... ED6 - Define la entrada digital ED2 ... ED6 como el control para la función dormir PID.\n· Véase ED1 más arriba.\n7 = INTERNO - Define la frecuencia/rpm de salida, la referencia de proceso y el valor actual de proceso como el\ncontrol para la función dormir PID. Véanse los parámetros 4025 NIVEL DESPERTAR y 4023 NIVEL DORM PID.\n-1 = ED1(INV) - Define una entrada digital inversa ED1 como el control para la función dormir PID.\n· La desactivación de la entrada digital activa la función dormir.\n· La activación de la entrada digital restaura el control PID.\n-2 ...- 6 = ED2(INV) ... ED6(INV) - Define una entrada digital inversa ED2 ... ED6 como el control para la función dormir PID.\n· Véase ED1 (INV) más arriba.\n4023\nNIVEL DORM PID\nAjusta la frecuencia/velocidad del motor que habilita la función\ndormir PID - una velocidad del motor por debajo de este nivel,\ncomo mínimo durante el periodo de tiempo 4024 DEMORA DORM PID\nhabilita la función dormir PID (parando el convertidor.)\n· Requiere 4022 = 7 (INTERNO).\n· Véase la figura: A = Nivel de salida PID; B = Realimentación de\nproceso PID.\nt < P 4024\nA\nt > P 4024\nP 4023\nt\nB\n4024\nDEMORA DORM PID\nAjusta la demora temporal para la función dormir PID - una\nvelocidad/frecuencia por debajo de 4023 NIVEL DORM PID como\nmínimo durante este periodo de tiempo habilita la función dormir\nPID (parando el convertidor).\n· Véase 4023 NIVEL DORM PID más arriba.\nP. ajuste\nP 4026\nP 4025\nt\nParo\n1\nMarcha\n4025\nNIVEL DESPERTAR\nDefine la desviación despertar: una desviación del ajuste mayor\nque este valor, durante al menos el periodo indicado por 4026\nC\nNIVEL DESPERTAR reinicia el controlador PID.\nP 4025\n(4005 = 1\n· Los parámetros 4006 y 4007 definen las unidades y la escala.\nP. ajuste\n· Parámetro 4005 = 0,\nP 4025\n4005 = 0\nNivel despertar = P. consig. - Desviación despertar.\n'D\n· Parámetro 4005 = 1,\n- t\nNivel despertar = P. consig. + Desviación despertar.\n· El nivel despertar puede estar por encima o por debajo del punto\nde consigna.\nE\nVéanse las figuras:\n· C = Nivel despertar cuando el parámetro 4005 = 1\n· D = Nivel despertar cuando el parámetro 4005 = 0\n- -- C\n· E = La realimentación está por encima del nivel despertar y dura\n[P 4025\nP 4026\nmás que 4026 DEMORA DESPERT - la función PID despierta.\n- P. ajuste\n· F = La realimentación está por debajo del nivel despertar y dura\nP 4025\nmás que 4026 DEMORA DESPERT - la función PID despierta.\n/-D\nt\n4026\nDEMORA DESPERT\nDefine la demora al despertar - una desviación del punto de\nconsigna superior a 4025 NIVEL DESPERTAR, durante como mínimo\neste periodo, rearranca el regulador PID.\n-P 4026\nF",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "4022",
+            "SELECCION DORMIR Define el control para la función dormir PID. 0 = SIN SEL- Desactiva la función de control dormir PID. 1 = ED1 - Define la entrada digital ED1 como el control para la función dormir PID. · La activación de la entrada digital activa la función dormir. · La desactivación de la entrada digital restaura el control PID."
+          ],
+          [
+            "2 ... 6 = ED2 ... ED6 - Define la entrada digital ED2 ... ED6 como el control para la función dormir PID. · Véase ED1 más arriba. 7 = INTERNO - Define la frecuencia/rpm de salida, la referencia de proceso y el valor actual de proceso como el control para la función dormir PID. Véanse los parámetros 4025 NIVEL DESPERTAR y 4023 NIVEL DORM PID. -1 = ED1(INV) - Define una entrada digital inversa ED1 como el control para la función dormir PID. · La desactivación de la entrada digital activa la función dormir. · La activación de la entrada digital restaura el control PID. -2 ...- 6 = ED2(INV) ... ED6(INV) - Define una entrada digital inversa ED2 ... ED6 como el control para la función dormir PID. · Véase ED1 (INV) más arriba."
+          ],
+          [
+            "4023",
+            "NIVEL DORM PID Ajusta la frecuencia/velocidad del motor que habilita la función dormir PID - una velocidad del motor por debajo de este nivel, como mínimo durante el periodo de tiempo 4024 DEMORA DORM PID habilita la función dormir PID (parando el convertidor.) · Requiere 4022 = 7 (INTERNO). · Véase la figura: A = Nivel de salida PID; B = Realimentación de proceso PID.",
+            "t < P 4024 A t > P 4024 P 4023 t B"
+          ],
+          [
+            "4024",
+            "DEMORA DORM PID Ajusta la demora temporal para la función dormir PID - una velocidad/frecuencia por debajo de 4023 NIVEL DORM PID como mínimo durante este periodo de tiempo habilita la función dormir PID (parando el convertidor). · Véase 4023 NIVEL DORM PID más arriba.",
+            "P. ajuste",
+            "P 4026 P 4025 t Paro 1"
+          ],
+          [
+            "4025",
+            "Marcha\nNIVEL DESPERTAR Define la desviación despertar: una desviación del ajuste mayor que este valor, durante al menos el periodo indicado por 4026 C NIVEL DESPERTAR reinicia el controlador PID. P 4025 (4005 = 1 · Los parámetros 4006 y 4007 definen las unidades y la escala. P. ajuste · Parámetro 4005 = 0, P 4025 4005 = 0 Nivel despertar = P. consig. - Desviación despertar. 'D · Parámetro 4005 = 1, - t Nivel despertar = P. consig. + Desviación despertar. · El nivel despertar puede estar por encima o por debajo del punto de consigna. E Véanse las figuras: · C = Nivel despertar cuando el parámetro 4005 = 1 · D = Nivel despertar cuando el parámetro 4005 = 0 - -- C · E = La realimentación está por encima del nivel despertar y dura [P 4025 P 4026 más que 4026 DEMORA DESPERT - la función PID despierta. - P. ajuste · F = La realimentación está por debajo del nivel despertar y dura P 4025 más que 4026 DEMORA DESPERT - la función PID despierta. /-D t"
+          ],
+          [
+            "4026",
+            "DEMORA DESPERT Define la demora al despertar - una desviación del punto de consigna superior a 4025 NIVEL DESPERTAR, durante como mínimo este periodo, rearranca el regulador PID.",
+            "-P 4026 F"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "178\nManual del usuario del ACS550-01/U1\nCódigo\nDescripción\n4027\nSERIE PARAM PID1\nEl PID de proceso (PID1) tiene dos conjuntos de parámetros diferentes, PID 1 y PID 2.\n· El conjunto PID 1 utiliza los parámetros 4001 ... 4026.\n· El conjunto PID 2 utiliza los parámetros 4101 ... 4126.\nSERIE PARAM PID1 define qué conjunto se selecciona.\n0 = CONJUNTO 1 - El conjunto PID 1 (parámetros 4001 ... 4026) está activo.\n1 = ED1 - Define la entrada digital ED1 como el control para la selección del conjunto PID.\n· La activación de la entrada digital selecciona el Conjunto PID 2.\n· La desactivación de la entrada digital selecciona el Conjunto PID 1.\n2 ... 6 = ED2 ... ED6 - Define la entrada digital ED2 ... ED6 como el control para la selección del conjunto PID.\n· Véase ED1 más arriba.\n7 = CONJUNTO 2 - El conjunto PID 2 (parámetros 4101 ... 4126) está activo.\n8 ... 11 = FUNC TEMP 1 .. 4 - Define la Función temporizada como el control para la selección del Conjunto PID (Función\ntemporizada desactivada = Conjunto PID 1; Función temporizada activada = Conjunto PID 2)\n· Véase el Grupo 36: FUNCIONES TEMP.\n12 = ZONA MIN 2 - El convertidor calcula la diferencia entre el punto de consigna 1 y la realimentación 1 y también el\npunto de consigna 2 y la realimentación 2. El controlador controlará la zona (y seleccionará el conjunto) con una\ndiferencia mayor.\n· Una diferencia positiva (un punto de consigna mayor que la realimentación) siempre es mayor que una diferencia\nnegativa. Ello mantiene los valores de realimentación en el punto de consigna o por encima de él.\n· El regulador no reacciona a la situación de la realimentación por encima del punto de consigna si la\nrealimentación de otra zona está más cerca de su punto de consigna.\n13 = ZONA MAX 2 - El convertidor calcula la diferencia entre el punto de consigna 1 y la realimentación 1 y también el\npunto de consigna 2 y la realimentación 2. El controlador controlará la zona (y seleccionará el conjunto) con una\ndiferencia menor.\n· Una diferencia negativa (un punto de consigna menor que la realimentación) siempre es menor que una\ndiferencia positiva. Ello mantiene los valores de realimentación en el punto de consigna o por debajo de él.\n· El regulador no reacciona a la situación de la realimentación por debajo del punto de consigna si la\nrealimentación de otra zona está más cerca de su punto de consigna.\n14 = ZONA MEDIA 2 - El convertidor calcula la diferencia entre el punto de consigna 1 y la realimentación 1 y también\nel punto de consigna 2 y la realimentación 2. Además, calcula la media de las desviaciones y la emplea para\ncontrolar la zona 1. Por lo tanto, una realimentación se mantiene por encima de su punto de consigna y otra por\ndebajo en el mismo grado.\n-1 = ED1(INV) - Define una entrada digital inversa ED1 como el control para la selección del conjunto PID.\n· La activación de la entrada digital selecciona el Conjunto PID 1.\n· La desactivación de la entrada digital selecciona el Conjunto PID 2.\n2 ...- 6 = ED2(INV) ... ED6(INV) - Define una entrada digital inversa ED2 ... ED6 como el control para la selección del\nconjunto PID.\n· Véase ED1(INV) más arriba.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "4027",
+            "SERIE PARAM PID1 El PID de proceso (PID1) tiene dos conjuntos de parámetros diferentes, PID 1 y PID 2. · El conjunto PID 1 utiliza los parámetros 4001 ... 4026. · El conjunto PID 2 utiliza los parámetros 4101 ... 4126. SERIE PARAM PID1 define qué conjunto se selecciona. 0 = CONJUNTO 1 - El conjunto PID 1 (parámetros 4001 ... 4026) está activo. 1 = ED1 - Define la entrada digital ED1 como el control para la selección del conjunto PID. · La activación de la entrada digital selecciona el Conjunto PID 2. · La desactivación de la entrada digital selecciona el Conjunto PID 1. 2 ... 6 = ED2 ... ED6 - Define la entrada digital ED2 ... ED6 como el control para la selección del conjunto PID. · Véase ED1 más arriba. 7 = CONJUNTO 2 - El conjunto PID 2 (parámetros 4101 ... 4126) está activo. 8 ... 11 = FUNC TEMP 1 .. 4 - Define la Función temporizada como el control para la selección del Conjunto PID (Función temporizada desactivada = Conjunto PID 1; Función temporizada activada = Conjunto PID 2) · Véase el Grupo 36: FUNCIONES TEMP. 12 = ZONA MIN 2 - El convertidor calcula la diferencia entre el punto de consigna 1 y la realimentación 1 y también el punto de consigna 2 y la realimentación 2. El controlador controlará la zona (y seleccionará el conjunto) con una diferencia mayor. · Una diferencia positiva (un punto de consigna mayor que la realimentación) siempre es mayor que una diferencia negativa. Ello mantiene los valores de realimentación en el punto de consigna o por encima de él. · El regulador no reacciona a la situación de la realimentación por encima del punto de consigna si la realimentación de otra zona está más cerca de su punto de consigna. 13 = ZONA MAX 2 - El convertidor calcula la diferencia entre el punto de consigna 1 y la realimentación 1 y también el punto de consigna 2 y la realimentación 2. El controlador controlará la zona (y seleccionará el conjunto) con una diferencia menor. · Una diferencia negativa (un punto de consigna menor que la realimentación) siempre es menor que una diferencia positiva. Ello mantiene los valores de realimentación en el punto de consigna o por debajo de él. · El regulador no reacciona a la situación de la realimentación por debajo del punto de consigna si la realimentación de otra zona está más cerca de su punto de consigna. 14 = ZONA MEDIA 2 - El convertidor calcula la diferencia entre el punto de consigna 1 y la realimentación 1 y también el punto de consigna 2 y la realimentación 2. Además, calcula la media de las desviaciones y la emplea para controlar la zona 1. Por lo tanto, una realimentación se mantiene por encima de su punto de consigna y otra por debajo en el mismo grado. -1 = ED1(INV) - Define una entrada digital inversa ED1 como el control para la selección del conjunto PID. · La activación de la entrada digital selecciona el Conjunto PID 1. · La desactivación de la entrada digital selecciona el Conjunto PID 2. 2 ...- 6 = ED2(INV) ... ED6(INV) - Define una entrada digital inversa ED2 ... ED6 como el control para la selección del conjunto PID. · Véase ED1(INV) más arriba."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Manual del usuario del ACS550-01/U1\n179\nGrupo 41: CONJ PID PROCESO 2\nLos parámetros de este grupo pertenecen al conjunto de parámetros PID 2. El\nfuncionamiento de los parámetros 4101 ... 4126 corresponde al de los parámetros\n4001 ... 4026 del conjunto 1.\nEl conjunto de parámetros PID 2 puede seleccionarse con el parámetro 4027 SERIE\nPARAM PID1.\nCódigo Descripción\n4101\n... Véase 4001 ... 4026\n4126",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "4101 ...\n4126",
+            "Véase 4001 ... 4026"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "180\nManual del usuario del ACS550-01/U1\nGrupo 42: PID TRIM / EXT\nEste grupo define los parámetros utilizados para el segundo regulador PID (PID2),\nque se utiliza para el PID Trim / ext.\nEl funcionamiento de los parámetros 4201 ... 4221 corresponde al de los parámetros\ndel conjunto PID de proceso 1 (PID1) 4001 ... 4021.\nCódigo Descripción\n4201 ...\n4221\nVéase 4001 ... 4021\n4228\nACTIVAR\nDefine la fuente para activar la función PID externo.\n· Requiere 4230 MODO TRIM = 0 (SIN SEL).\n0 = SIN SEL - Desactiva el control PID externo.\n1 = ED1 - Define la entrada digital ED1 como el control para habilitar el control PID externo.\n· La activación de la entrada digital activa el control PID externo.\n· La desactivación de la entrada digital desactiva el control PID externo.\n2 ... 6 = ED2 ... ED6 - Define la entrada digital ED2 ... ED6 como el control para habilitar el control PID externo.\n· Véase ED1 más arriba.\n7 = MARCH UNIDAD - Define el comando de marcha como el control para activar el control PID externo.\n· La activación del comando de marcha (convertidor en funcionamiento) activa el control PID externo.\n8 = SI - Define el encendido como el control para activar el control PID externo.\n· La activación del encendido del convertidor activa el control PID externo.\n9 ... 12 = FUNC TEMP 1 ... 4 - Define la Función temporizada como el control para activar el control PID externo (la\nFunción temporizada activa el control PID externo).\n· Véase el Grupo 36: FUNCIONES TEMP.\n-1 = ED1(INV) - Define una entrada digital inversa ED1 como el control para habilitar el control PID externo.\n· La activación de la entrada digital desactiva el control PID externo.\n· La desactivación de la entrada digital activa el control PID externo.\n-2 ...- 6 = ED2(INV) ... ED6(INV) - Define una entrada digital inversa ED2 ... ED6 como el control para habilitar el control\nPID externo.\n· Véase ED1(INV) más arriba.\n4229\nAJUSTE\nDefine el ajuste para la salida PID.\n· Cuando se activa PID, la salida empieza en este valor.\n· Cuando se desactiva PID, la salida se restaura a este valor.\n· El parámetro está activo cuando 4230 MODO TRIM = 0 (el modo trim no está activo).\n4230\nMODO TRIM\nSelecciona el tipo de corrección, si existe. Con la corrección, es posible combinar un factor de corrección con la\nreferencia del convertidor.\n0 = SIN SEL - Desactiva la función \"trim\".\n1 = PROPORCIONAL - Añade un factor de corrección que es proporcional a la referencia en rpm/Hz.\n2 = DIRECTO - Añade un factor de corrección basado en el límite máximo del bucle de control.\n4231\nESCALA TRIM\nDefine el multiplicador (como un porcentaje, positivo o negativo) utilizado en el modo trim.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "4201 ... 4221",
+            "Véase 4001 ... 4021"
+          ],
+          [
+            "4228",
+            "ACTIVAR Define la fuente para activar la función PID externo. · Requiere 4230 MODO TRIM = 0 (SIN SEL). 0 = SIN SEL - Desactiva el control PID externo. 1 = ED1 - Define la entrada digital ED1 como el control para habilitar el control PID externo. · La activación de la entrada digital activa el control PID externo. · La desactivación de la entrada digital desactiva el control PID externo. 2 ... 6 = ED2 ... ED6 - Define la entrada digital ED2 ... ED6 como el control para habilitar el control PID externo. · Véase ED1 más arriba. 7 = MARCH UNIDAD - Define el comando de marcha como el control para activar el control PID externo. · La activación del comando de marcha (convertidor en funcionamiento) activa el control PID externo. 8 = SI - Define el encendido como el control para activar el control PID externo. · La activación del encendido del convertidor activa el control PID externo. 9 ... 12 = FUNC TEMP 1 ... 4 - Define la Función temporizada como el control para activar el control PID externo (la Función temporizada activa el control PID externo). · Véase el Grupo 36: FUNCIONES TEMP. -1 = ED1(INV) - Define una entrada digital inversa ED1 como el control para habilitar el control PID externo. · La activación de la entrada digital desactiva el control PID externo. · La desactivación de la entrada digital activa el control PID externo. -2 ...- 6 = ED2(INV) ... ED6(INV) - Define una entrada digital inversa ED2 ... ED6 como el control para habilitar el control PID externo. · Véase ED1(INV) más arriba."
+          ],
+          [
+            "4229",
+            "AJUSTE Define el ajuste para la salida PID. · Cuando se activa PID, la salida empieza en este valor. · Cuando se desactiva PID, la salida se restaura a este valor. · El parámetro está activo cuando 4230 MODO TRIM = 0 (el modo trim no está activo)."
+          ],
+          [
+            "4230",
+            "MODO TRIM Selecciona el tipo de corrección, si existe. Con la corrección, es posible combinar un factor de corrección con la referencia del convertidor. 0 = SIN SEL - Desactiva la función \"trim\". 1 = PROPORCIONAL - Añade un factor de corrección que es proporcional a la referencia en rpm/Hz. 2 = DIRECTO - Añade un factor de corrección basado en el límite máximo del bucle de control."
+          ],
+          [
+            "4231",
+            "ESCALA TRIM Define el multiplicador (como un porcentaje, positivo o negativo) utilizado en el modo trim."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Manual del usuario del ACS550-01/U1\n181\nCódigo Descripción\n4232\nFUENTE DE CORREC\nDefine la referencia de corrección para la fuente de corrección.\n1 = REFPID2 - Utiliza el valor apropiado REF MAXIMO (CONMUT. A O B):\n· 1105 REF1 MAXIMO cuando REF1 está activa (A).\n· 1108 REF2 MAXIMO cuando REF2 está activa (B).\n2 = SALIDAPID2 - Utiliza la velocidad o frecuencia máxima absoluta (Conmut. C):\n· 2002 VELOCIDAD MAXIMA si 9904 MODO CTRL MOTOR = 1 (VECTOR:VELOC) o 2 (VECTOR:PAR).\n· 2008 FRECUENCIA MAX si 9904 MODO CTRL MOTOR = 3 (ESCALAR:FREC).\nSuma\nRef rampa\nConmut.\nSelecc.\n(par. 4230)\ndesconec.\nproporcional\nEscala trim\nMul.\nRef ext 1 max (A)\nRef ext 2 max (B)\nVel máx abs/\nfrec (C)\nX\ndirecto\nSelecc.\n(par. 4232)\nCorrec. ref PID2\nRef PID2\nPID 2\nCorrec. sal PID2\nRef. correg.\nMul.\n+\nX",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "182\nManual del usuario del ACS550-01/U1\nGrupo 45: AHORRO ENERGÉTICO\nEste grupo define la configuración del cálculo y la optimización del ahorro de energía.\nNota: los valores de los parámetros de ahorro de energía 0174 KWH AHORRADO,\n0175 MWH AHORRADO, 0176 CANT 1 AHORRADA, 0177 CANT 2 AHORRADA y 0178 co2\nAHORRADO se obtienen a partir de la resta de la energía consumida por el\nconvertidor a consumo DOL (direct-on-line) que se calcula en función del parámetro\n4508 POTENCIA BOMBA. Por esta razón, la exactitud de los valores depende de la\nprecisión en la estimación de potencia introducida en dicho parámetro.\nCódigo Descripción\n4502\nPRECIO ENERGÍA\nPrecio de la energía por kWh.\n· Se utiliza como referencia al calcular el ahorro de energía.\n· Véanse los parámetros 0174 KWH AHORRADO, 0175 MWH AHORRADO, 0176 CANT 1 AHORRADA, 0177 CANT 2\nAHORRADA y 0178 CO2 AHORRADO (reducción en tn de las emisiones de dióxido de carbono).\n4507\nFACTOR CONV CO2\nFactor de conversión para la conversión de la energía en emisiones de CO2 (kg/kWh o tn/MWh). Se utiliza para\nmultiplicar la energía ahorrada en MWh para calcular el valor del parámetro 0178 CO2 AHORRADO (reducción en tn de\nlas emisiones de dióxido de carbono).\n4508\nPOTENCIA BOMBA\nPotencia de la bomba (como porcentaje de la potencia nominal del motor) cuando se conecta directamente a la\nalimentación (DOL).\n· Se utiliza como referencia al calcular el ahorro de energía.\n· Véanse los parámetros 0174 KWH AHORRADO, 0175 MWH AHORRADO, 0176 CANT 1 AHORRADA, 0177 CANT 2\nAHORRADA y 0178 CO2 AHORRADO .\n· También es posible utilizar este parámetro como potencia de referencia para otras aplicaciones que no sean\nbombas. La potencia de referencia también puede ser una potencia constante diferente a la de un motor\nconectado directamente.\n4509\nRESET ENERGIA\nReinicia las calculadoras de la energía de los parámetros 0174 KWH AHORRADO, 0175 MWH AHORRADO, 0176 CANT 1\nAHORRADA, 0177 CANT 2 AHORRADA y 0178 CO2 AHORRADO .",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "4502",
+            "PRECIO ENERGÍA Precio de la energía por kWh. · Se utiliza como referencia al calcular el ahorro de energía. · Véanse los parámetros 0174 KWH AHORRADO, 0175 MWH AHORRADO, 0176 CANT 1 AHORRADA, 0177 CANT 2 AHORRADA y 0178 CO2 AHORRADO (reducción en tn de las emisiones de dióxido de carbono)."
+          ],
+          [
+            "4507",
+            "FACTOR CONV CO2 Factor de conversión para la conversión de la energía en emisiones de CO2 (kg/kWh o tn/MWh). Se utiliza para multiplicar la energía ahorrada en MWh para calcular el valor del parámetro 0178 CO2 AHORRADO (reducción en tn de las emisiones de dióxido de carbono)."
+          ],
+          [
+            "4508",
+            "POTENCIA BOMBA Potencia de la bomba (como porcentaje de la potencia nominal del motor) cuando se conecta directamente a la alimentación (DOL). · Se utiliza como referencia al calcular el ahorro de energía. · Véanse los parámetros 0174 KWH AHORRADO, 0175 MWH AHORRADO, 0176 CANT 1 AHORRADA, 0177 CANT 2 AHORRADA y 0178 CO2 AHORRADO . · También es posible utilizar este parámetro como potencia de referencia para otras aplicaciones que no sean bombas. La potencia de referencia también puede ser una potencia constante diferente a la de un motor conectado directamente."
+          ],
+          [
+            "4509",
+            "RESET ENERGIA Reinicia las calculadoras de la energía de los parámetros 0174 KWH AHORRADO, 0175 MWH AHORRADO, 0176 CANT 1 AHORRADA, 0177 CANT 2 AHORRADA y 0178 CO2 AHORRADO ."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Manual del usuario del ACS550-01/U1\n183\nGrupo 50: ENCODER\nEste grupo define la configuración del uso del generador:\n· Ajusta el número de pulsos de generador por revolución del eje.\n· Habilita el funcionamiento del generador.\n· Define cómo se restauran el ángulo mecánico y los datos de revolución.\nVéase también el Manual del usuario del módulo de interfase del generador de\npulsos OTAC-01 [3AUA0000001938 (en inglés)].\nCódigo Descripción\n5001\nNUM PULSOS\nAjusta el número de pulsos proporcionados por un generador opcional para cada revolución completa del eje del\nmotor (ppr).\n5002\nACTIVO ENCODER\nActiva/desactiva un generador opcional.\n0 = DESHABILITAD - El convertidor emplea una realimentación de velocidad derivada del modelo de motor interno (se\naplica a cualquier ajuste del parámetro 9904 MODO CTRL MOTOR).\n1 = HABILITADO - El convertidor emplea la realimentación de un generador opcional. Esta función requiere el módulo\nde interfase del generador de pulsos (OTAC-01) y un generador. El funcionamiento depende del ajuste del\nparámetro 9904 MODO CTRL MOTOR:\n· 9904 = 1 (VECTOR:VELOC): El generador proporciona una realimentación de velocidad y una precisión de par a\nbaja velocidad mejoradas.\n· 9904 = 2 (VECTOR:PAR): El generador proporciona una realimentación de velocidad y una precisión de par a baja\nvelocidad mejoradas.\n· 9904 = 3 (ESCALAR:FREC): El generador proporciona realimentación de velocidad. (No es una regulación de\nvelocidad en bucle cerrado. No obstante, con el parámetro 2608 RATIO COMP DESL y un generador se mejora la\nprecisión de velocidad en estado estacionario).\n5003\nFALLO ENCODER\nDefine el funcionamiento del convertidor si se detecta un fallo en la comunicación entre el generador de pulsos y el\nmódulo de interfase del generador, o entre el módulo y el convertidor.\n1 = FALLO - El convertidor genera el fallo ENCODER, y el motor para por sí solo.\n2 = AVISO - El convertidor genera la alarma ERROR ENCODER y funciona como si el parámetro 5002 ACTIVO ENCODER\n= 0 (DESHABILITAD), es decir, la realimentación de velocidad deriva del modelo de motor interno.\n5010\nACTIVO Z PLS\nActiva/desactiva el uso de un pulso Z de generador para definir la posición cero del eje del motor. Cuando se activa,\nuna entrada de pulso Z restaura el parámetro 0146 ANGULO MECANICO a cero para definir la posición cero del eje.\nEsta función requiere un generador que proporcione señales de pulso Z.\n0 = DESHABILITAD - La entrada de pulso Z no está presente o se ignora si lo está.\n1 = HABILITADO - Una entrada de pulso Z restaura el parámetro 0146 ANGULO MECANICO a cero.\n5011\nRESET POSICION\nRestaura la realimentación de 'posición del generador. Este parámetro se borra automáticamente.\n0 = DESHABILITAD - Inactivo.\n1 = HABILITADO - Restaura la realimentación de posición del generador. La restauración de los parámetros depende\ndel estado del parámetro 5010 ACTIVO Z PLS:\n· 5010 = 0 (DESHABILITAD) - La restauración se aplica a los parámetros 0147 ATRAS MECANICO y 0146 ANGULO MECANICO.\n· 5010 = 1 (HABILITADO) - La restauración se aplica solamente al parámetro 0147 ATRAS MECANICO.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "5001",
+            "NUM PULSOS Ajusta el número de pulsos proporcionados por un generador opcional para cada revolución completa del eje del motor (ppr)."
+          ],
+          [
+            "5002",
+            "ACTIVO ENCODER Activa/desactiva un generador opcional. 0 = DESHABILITAD - El convertidor emplea una realimentación de velocidad derivada del modelo de motor interno (se aplica a cualquier ajuste del parámetro 9904 MODO CTRL MOTOR). 1 = HABILITADO - El convertidor emplea la realimentación de un generador opcional. Esta función requiere el módulo de interfase del generador de pulsos (OTAC-01) y un generador. El funcionamiento depende del ajuste del parámetro 9904 MODO CTRL MOTOR: · 9904 = 1 (VECTOR:VELOC): El generador proporciona una realimentación de velocidad y una precisión de par a baja velocidad mejoradas. · 9904 = 2 (VECTOR:PAR): El generador proporciona una realimentación de velocidad y una precisión de par a baja velocidad mejoradas. · 9904 = 3 (ESCALAR:FREC): El generador proporciona realimentación de velocidad. (No es una regulación de velocidad en bucle cerrado. No obstante, con el parámetro 2608 RATIO COMP DESL y un generador se mejora la precisión de velocidad en estado estacionario)."
+          ],
+          [
+            "5003",
+            "FALLO ENCODER Define el funcionamiento del convertidor si se detecta un fallo en la comunicación entre el generador de pulsos y el módulo de interfase del generador, o entre el módulo y el convertidor. 1 = FALLO - El convertidor genera el fallo ENCODER, y el motor para por sí solo. 2 = AVISO - El convertidor genera la alarma ERROR ENCODER y funciona como si el parámetro 5002 ACTIVO ENCODER = 0 (DESHABILITAD), es decir, la realimentación de velocidad deriva del modelo de motor interno."
+          ],
+          [
+            "5010",
+            "ACTIVO Z PLS Activa/desactiva el uso de un pulso Z de generador para definir la posición cero del eje del motor. Cuando se activa, una entrada de pulso Z restaura el parámetro 0146 ANGULO MECANICO a cero para definir la posición cero del eje. Esta función requiere un generador que proporcione señales de pulso Z. 0 = DESHABILITAD - La entrada de pulso Z no está presente o se ignora si lo está. 1 = HABILITADO - Una entrada de pulso Z restaura el parámetro 0146 ANGULO MECANICO a cero."
+          ],
+          [
+            "5011",
+            "RESET POSICION Restaura la realimentación de 'posición del generador. Este parámetro se borra automáticamente. 0 = DESHABILITAD - Inactivo. 1 = HABILITADO - Restaura la realimentación de posición del generador. La restauración de los parámetros depende del estado del parámetro 5010 ACTIVO Z PLS: · 5010 = 0 (DESHABILITAD) - La restauración se aplica a los parámetros 0147 ATRAS MECANICO y 0146 ANGULO MECANICO. · 5010 = 1 (HABILITADO) - La restauración se aplica solamente al parámetro 0147 ATRAS MECANICO."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "184\nManual del usuario del ACS550-01/U1\nGrupo 51: MOD COMUNIC EXT\nEste grupo define variables de configuración para un módulo de comunicación\nadaptador de bus de campo (ABC). Para obtener más información sobre estos\nparámetros, véase el manual del usuario facilitado con el módulo\nCódigo Descripción\n5101\nTIPO DE ABC\nMuestra el tipo de módulo adaptador de bus de campo conectado.\n0 = NO DEFINIDO - Módulo no encontrado, o mal conectado, o el parámetro 9802 no está ajustado a 4 (ABC EXT).\n1 = PROFIBUS-DP\n21 = LONWORKS\n32 = CANopen\n37 = DEVICENET\n101 = CONTROLNET\n128 = ETHERNET\n132 = PROFINET\n135 = EtherCAT\n136 = EPL - Ethernet POWERLINK\n5102\n…\n5126\nPAR DE ABC 2 ... PAR DE ABC 26\nConsulte la documentación del módulo de comunicación para más información acerca de estos parámetros.\n5127\nACTUALIZ PAR ABC\nValida cualquier ajuste modificado de parámetros de bus de campo.\n0 = REALIZADO - Actualización realizada.\n1 = REFRESCO - Actualizando.\n· Tras la actualización, el valor vuelve automáticamente a REALIZADO.\n5128\nREV FW CPI ARCH\nMuestra la versión de firmware CPI del archivo de configuración del adaptador de bus de campo del convertidor. El\nformato es xyz, donde:\n· x = número de versión principal\n· y = número de versión secundaria\n· z = número de corrección\nEjemplo: 107 = versión 1.07\n5129\nID CONFIG ARCH\nMuestra la revisión de la identificación del archivo de configuración del módulo adaptador de bus de campo del convertidor.\n· La información de configuración depende del programa de aplicación del convertidor.\n5130\nREV CONFIG ARCH\nContiene la versión del archivo de configuración del módulo adaptador de bus de campo del convertidor.\nEjemplo: 1 = versión 1\n5131\nESTADO DE ABC\nContiene el estado del módulo adaptador.\n0 = INACTIVO - Adaptador no configurado.\n1 = EJECUC. INIC - El adaptador se está inicializando.\n2 = FINAL ESPERA - Se ha producido un final de espera en la comunicación entre el adaptador y el convertidor.\n3 = ERROR CONFIG - Error de configuración del adaptador.\n· El código de revisión de la revisión del firmware CPI del adaptador es anterior a la versión del firmware CPI\nrequerida definida en el archivo de configuración del convertidor (parámetro 5132 < 5128).\n4 = FUERA LINEA - El convertidor está fuera de línea.\n5 = EN LINEA - El convertidor está en línea.\n6 = REARME - El adaptador está efectuando un rearme del hardware.\n5132\nREV FW CPI ABC\nContiene la versión del programa CPI del módulo. El formato es xyz, donde:\n· x = número de versión principal\n· y = número de versión secundaria\n· z = número de corrección\nEjemplo: 107 = versión 1.07",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "5101",
+            "TIPO DE ABC Muestra el tipo de módulo adaptador de bus de campo conectado. 0 = NO DEFINIDO - Módulo no encontrado, o mal conectado, o el parámetro 9802 no está ajustado a 4 (ABC EXT). 1 = PROFIBUS-DP 21 = LONWORKS 32 = CANopen 37 = DEVICENET 101 = CONTROLNET 128 = ETHERNET 132 = PROFINET 135 = EtherCAT 136 = EPL - Ethernet POWERLINK"
+          ],
+          [
+            "5102 … 5126",
+            "PAR DE ABC 2 ... PAR DE ABC 26 Consulte la documentación del módulo de comunicación para más información acerca de estos parámetros."
+          ],
+          [
+            "5127",
+            "ACTUALIZ PAR ABC Valida cualquier ajuste modificado de parámetros de bus de campo. 0 = REALIZADO - Actualización realizada. 1 = REFRESCO - Actualizando. · Tras la actualización, el valor vuelve automáticamente a REALIZADO."
+          ],
+          [
+            "5128",
+            "REV FW CPI ARCH Muestra la versión de firmware CPI del archivo de configuración del adaptador de bus de campo del convertidor. El formato es xyz, donde: · x = número de versión principal · y = número de versión secundaria · z = número de corrección Ejemplo: 107 = versión 1.07"
+          ],
+          [
+            "5129",
+            "ID CONFIG ARCH Muestra la revisión de la identificación del archivo de configuración del módulo adaptador de bus de campo del convertidor. · La información de configuración depende del programa de aplicación del convertidor."
+          ],
+          [
+            "5130",
+            "REV CONFIG ARCH Contiene la versión del archivo de configuración del módulo adaptador de bus de campo del convertidor. Ejemplo: 1 = versión 1"
+          ],
+          [
+            "5131",
+            "ESTADO DE ABC Contiene el estado del módulo adaptador. 0 = INACTIVO - Adaptador no configurado. 1 = EJECUC. INIC - El adaptador se está inicializando. 2 = FINAL ESPERA - Se ha producido un final de espera en la comunicación entre el adaptador y el convertidor. 3 = ERROR CONFIG - Error de configuración del adaptador. · El código de revisión de la revisión del firmware CPI del adaptador es anterior a la versión del firmware CPI requerida definida en el archivo de configuración del convertidor (parámetro 5132 < 5128). 4 = FUERA LINEA - El convertidor está fuera de línea. 5 = EN LINEA - El convertidor está en línea. 6 = REARME - El adaptador está efectuando un rearme del hardware."
+          ],
+          [
+            "5132",
+            "REV FW CPI ABC Contiene la versión del programa CPI del módulo. El formato es xyz, donde: · x = número de versión principal · y = número de versión secundaria · z = número de corrección Ejemplo: 107 = versión 1.07"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Manual del usuario del ACS550-01/U1\n185\nCódigo\nDescripción\n5133\nREV FW APL ABC\nContiene la revisión del programa de aplicación del módulo. El formato es xyz (véase el parámetro 5132).",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "5133",
+            "REV FW APL ABC"
+          ],
+          [
+            "Contiene la revisión del programa de aplicación del módulo. El formato es xyz (véase el parámetro 5132)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "186\nManual del usuario del ACS550-01/U1\nGrupo 52: COMUNIC PANEL\nEste grupo define los ajustes de comunicación para el puerto del panel de control en\nel convertidor. Normalmente, al utilizar el panel de control suministrado, no es\nnecesario cambiar los ajustes en este grupo.\nEn dicho grupo, las modificaciones de parámetros tienen efecto al siguiente encendido.\nCódi Descripción\ngo\n5201 ID DE ESTACION\nDefine la dirección del convertidor.\n· Dos unidades con la misma dirección no pueden estar en línea.\n· Rango: 1 ... 247\n5202\nVEL TRANSM\nDefine la velocidad de comunicación del convertidor en kbits por segundo (kb/s).\n9,6 kb/s\n19,2 kb/s\n38,4 kb/s\n57,6 kb/s\n115,2 kb/s\n5203 PARIDAD\nAjusta el formato de caracteres a utilizar con la comunicación de panel.\n0 = 8N1 - 8 bits de datos, sin paridad, un bit de paro.\n1 = 8N2 - 8 bits de datos, sin paridad, dos bits de paro.\n2 = 8E1 - 8 bits de datos, paridad par, un bit de paro.\n3 = 801 - 8 bits de datos, paridad impar, un bit de paro.\n5204 MENSAJES CORRECT\nContiene un recuento de mensajes Modbus válidos recibidos por el convertidor.\n· Durante el funcionamiento normal, este contador aumenta constantemente.\n5205\nERRORES PARIDAD\nContiene un recuento de los caracteres con un error de paridad que se recibe del bus. Para recuentos elevados,\ncompruebe:\n· Los ajustes de paridad de dispositivos conectados en el bus - no deben diferir.\n· Los niveles de ruido electromagnético ambiental - unos niveles elevados de ruido generan errores.\n5206\nERRORES DE TRAMA\nContiene un recuento de los caracteres con un error de trama que recibe el bus. Para recuentos elevados, compruebe:\n· Los ajustes de velocidad de comunicación de dispositivos conectados en el bus - no deben diferir.\n· Los niveles de ruido electromagnético ambiental - unos niveles elevados de ruido generan errores.\n5207 SOBREESC BUFFE\nContiene un recuento de los caracteres recibidos que no pueden colocarse en el búfer.\n· La longitud máxima posible de mensajes del convertidor es de 128 bytes.\n· Los mensajes recibidos de más de 128 bytes desbordan el búfer. Los caracteres sobrantes se cuentan.\n5208\nERRORES CRC\nContiene un recuento de los mensajes con un error CRC que recibe el convertidor. Para recuentos elevados,\ncompruebe:\n· Los niveles de ruido electromagnético ambiental - unos niveles elevados de ruido generan errores.\n· Los cálculos CRC de posibles errores.",
+      "tablas": [
+        [
+          [
+            "Códi\ngo",
+            "Descripción"
+          ],
+          [
+            "5201",
+            "ID DE ESTACION"
+          ],
+          [
+            "Define la dirección del convertidor. · Dos unidades con la misma dirección no pueden estar en línea. · Rango: 1 ... 247"
+          ],
+          [
+            "5202",
+            "VEL TRANSM Define la velocidad de comunicación del convertidor en kbits por segundo (kb/s). 9,6 kb/s"
+          ],
+          [
+            "19,2 kb/s 38,4 kb/s 57,6 kb/s 115,2 kb/s"
+          ],
+          [
+            "5203",
+            "PARIDAD Ajusta el formato de caracteres a utilizar con la comunicación de panel. 0 = 8N1 - 8 bits de datos, sin paridad, un bit de paro."
+          ],
+          [
+            "1 = 8N2 - 8 bits de datos, sin paridad, dos bits de paro. 2 = 8E1 - 8 bits de datos, paridad par, un bit de paro. 3 = 801 - 8 bits de datos, paridad impar, un bit de paro."
+          ],
+          [
+            "5204",
+            "MENSAJES CORRECT Contiene un recuento de mensajes Modbus válidos recibidos por el convertidor. · Durante el funcionamiento normal, este contador aumenta constantemente."
+          ],
+          [
+            "5205",
+            "ERRORES PARIDAD Contiene un recuento de los caracteres con un error de paridad que se recibe del bus. Para recuentos elevados, compruebe: · Los ajustes de paridad de dispositivos conectados en el bus - no deben diferir. · Los niveles de ruido electromagnético ambiental - unos niveles elevados de ruido generan errores."
+          ],
+          [
+            "5206",
+            "ERRORES DE TRAMA Contiene un recuento de los caracteres con un error de trama que recibe el bus. Para recuentos elevados, compruebe: · Los ajustes de velocidad de comunicación de dispositivos conectados en el bus - no deben diferir. · Los niveles de ruido electromagnético ambiental - unos niveles elevados de ruido generan errores."
+          ],
+          [
+            "5207",
+            "SOBREESC BUFFE Contiene un recuento de los caracteres recibidos que no pueden colocarse en el búfer. · La longitud máxima posible de mensajes del convertidor es de 128 bytes. · Los mensajes recibidos de más de 128 bytes desbordan el búfer. Los caracteres sobrantes se cuentan."
+          ],
+          [
+            "5208",
+            "ERRORES CRC Contiene un recuento de los mensajes con un error CRC que recibe el convertidor. Para recuentos elevados, compruebe: · Los niveles de ruido electromagnético ambiental - unos niveles elevados de ruido generan errores. · Los cálculos CRC de posibles errores."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Manual del usuario del ACS550-01/U1\n187\nGrupo 53: PROTOCOLO BCI\nEste grupo define variables de configuración utilizadas para un protocolo de\ncomunicación de bus de campo encajado (BCE). El protocolo BCE estándar en el\nACS550 es Modbus. Véase el capítulo Bus de campo encajado en la página 205.\nCódigo Descripción\n5301\nID PROTOCOLO BCI\nContiene la identificación y la versión de programa del protocolo.\n· Formato: XXYY, donde xx = ID de protocolo, e YY = versión de programa.\n5302\nID ESTACION BCI\nDefine la dirección de nodo del enlace RS485.\n· La dirección de nodo en cada unidad debe ser exclusiva.\n5303\nVEL TRANSM BCI\nDefine la velocidad de comunicación del enlace RS485 en kbits por segundo (kb/s).\n1,2 kb/s\n2,4 kb/s\n4,8 kb/s\n9,6 kb/s\n19,2 kb/s\n38,4 kb/s\n57,6 kb/s\n76,8 kb/s\n5304\nPARIDAD BCI\nDefine la longitud de datos, paridad y bits de paro a utilizar con la comunicación del enlace RS485.\n· Deben utilizarse los mismos ajustes en todas las estaciones en línea.\n0 = 8N1 - 8 bits de datos, sin paridad, un bit de paro.\n1 = 8N2 - 8 bits de datos, sin paridad, dos bits de paro.\n2 = 8E1 - 8 bits de datos, paridad par, un bit de paro.\n3 = 801 - 8 bits de datos, paridad impar, un bit de paro.\n5305\nPERFIL CTRL BCI\nSelecciona el perfil de comunicación utilizado por el protocolo BCE.\n0 = ABB DRV LIM - El funcionamiento del Código de control/estado se ajusta al perfil ABB Drives, utilizado en el\nACS400.\n1 = DCU PROFILE - El funcionamiento del Código de control/estado se ajusta al perfil DCU de 32 bits.\n2 = ABB DRV FULL - El funcionamiento del Código de control/estado se ajusta al perfil ABB Drives, utilizado en el\nACS600/800.\n5306\nMENSAJ CORR BCI\nContiene un recuento de mensajes válidos recibidos por el convertidor.\n· Durante el funcionamiento normal, este contador aumenta constantemente.\n5307\nERRORES CRC BCI\nContiene un recuento de los mensajes con un error CRC recibidos por el convertidor. Para recuentos elevados,\ncompruebe:\n· Los niveles de ruido electromagnético ambiental - unos niveles elevados de ruido generan errores.\n· Los cálculos CRC de posibles errores.\n5308\nERRORES UART BCI\nContiene un recuento de los mensajes con un error de carácter recibidos por el convertidor.\n5309\nESTADO BCI\nContiene el estado del protocolo BCE.\n0 = INACTIVO - El protocolo BCE se ha configurado, pero no recibe mensajes.\n1 = EJECUC. INIC - El protocolo BCE se está inicializando.\n2 = FINAL ESPERA - Se ha producido un final de espera en la comunicación entre el maestro de la red y el protocolo\nBCE.\n3 = ERROR CONFIG - El protocolo BCE tiene un error de configuración.\n4 = FUERA LINEA - El protocolo BCE recibe mensajes que NO se destinan a este convertidor.\n5 = EN LINEA - El protocolo BCE recibe mensajes que se destinan a este convertidor.\n6 = REARME - El protocolo BCE está efectuando un rearme del hardware.\n7 = SOLO ESCUCH - El protocolo BCE se encuentra en modo de sólo escucha.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "5301",
+            "ID PROTOCOLO BCI Contiene la identificación y la versión de programa del protocolo. · Formato: XXYY, donde xx = ID de protocolo, e YY = versión de programa."
+          ],
+          [
+            "5302",
+            "ID ESTACION BCI Define la dirección de nodo del enlace RS485. · La dirección de nodo en cada unidad debe ser exclusiva."
+          ],
+          [
+            "5303",
+            "VEL TRANSM BCI Define la velocidad de comunicación del enlace RS485 en kbits por segundo (kb/s). 1,2 kb/s 2,4 kb/s 4,8 kb/s 9,6 kb/s 19,2 kb/s 38,4 kb/s 57,6 kb/s 76,8 kb/s"
+          ],
+          [
+            "5304",
+            "PARIDAD BCI Define la longitud de datos, paridad y bits de paro a utilizar con la comunicación del enlace RS485. · Deben utilizarse los mismos ajustes en todas las estaciones en línea. 0 = 8N1 - 8 bits de datos, sin paridad, un bit de paro. 1 = 8N2 - 8 bits de datos, sin paridad, dos bits de paro. 2 = 8E1 - 8 bits de datos, paridad par, un bit de paro. 3 = 801 - 8 bits de datos, paridad impar, un bit de paro."
+          ],
+          [
+            "5305",
+            "PERFIL CTRL BCI Selecciona el perfil de comunicación utilizado por el protocolo BCE. 0 = ABB DRV LIM - El funcionamiento del Código de control/estado se ajusta al perfil ABB Drives, utilizado en el ACS400. 1 = DCU PROFILE - El funcionamiento del Código de control/estado se ajusta al perfil DCU de 32 bits. 2 = ABB DRV FULL - El funcionamiento del Código de control/estado se ajusta al perfil ABB Drives, utilizado en el ACS600/800."
+          ],
+          [
+            "5306",
+            "MENSAJ CORR BCI Contiene un recuento de mensajes válidos recibidos por el convertidor. · Durante el funcionamiento normal, este contador aumenta constantemente."
+          ],
+          [
+            "5307",
+            "ERRORES CRC BCI Contiene un recuento de los mensajes con un error CRC recibidos por el convertidor. Para recuentos elevados, compruebe: · Los niveles de ruido electromagnético ambiental - unos niveles elevados de ruido generan errores. · Los cálculos CRC de posibles errores."
+          ],
+          [
+            "5308",
+            "ERRORES UART BCI Contiene un recuento de los mensajes con un error de carácter recibidos por el convertidor."
+          ],
+          [
+            "5309",
+            "ESTADO BCI Contiene el estado del protocolo BCE. 0 = INACTIVO - El protocolo BCE se ha configurado, pero no recibe mensajes. 1 = EJECUC. INIC - El protocolo BCE se está inicializando. 2 = FINAL ESPERA - Se ha producido un final de espera en la comunicación entre el maestro de la red y el protocolo BCE. 3 = ERROR CONFIG - El protocolo BCE tiene un error de configuración. 4 = FUERA LINEA - El protocolo BCE recibe mensajes que NO se destinan a este convertidor. 5 = EN LINEA - El protocolo BCE recibe mensajes que se destinan a este convertidor. 6 = REARME - El protocolo BCE está efectuando un rearme del hardware. 7 = SOLO ESCUCH - El protocolo BCE se encuentra en modo de sólo escucha."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "188\nManual del usuario del ACS550-01/U1\nCódigo Descripción\n5310\nPAR BCI 10\nEspecifica el parámetro correlacionado con el Registro Modbus 40005.\n5311\nPAR BCI 11\nEspecifica el parámetro correlacionado con el Registro Modbus 40006.\n5312\nPAR BCI 12\nEspecifica el parámetro correlacionado con el Registro Modbus 40007.\n5313\nPAR BCI 13\nEspecifica el parámetro correlacionado con el Registro Modbus 40008.\n5314\nPAR BCI 14\nEspecifica el parámetro correlacionado con el Registro Modbus 40009.\n5315\nPAR BCI 15\nEspecifica el parámetro correlacionado con el Registro Modbus 40010.\n5316\nPAR BCI 16\nEspecifica el parámetro correlacionado con el Registro Modbus 40011.\n5317\nPAR BCI 17\nEspecifica el parámetro correlacionado con el Registro Modbus 40012.\n5318\nPAR BCI 18\nPara Modbus: Ajusta una demora adicional en milisegundos antes de que el ACS550 empiece a transmitir la\nrespuesta a la petición del maestro.\n5319\nPAR BCI 19\nCódigo de control del perfil ABB Drives (ABB DRV LIM o ABB DRV FULL). Copia de sólo lectura del Código de control de\nbus de campo.\n5320\nPAR BCI 20\nCódigo de estado del perfil ABB Drives (ABB DRV LIM o ABB DRV FULL). Copia de sólo lectura del Código de estado de\nbus de campo.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "5310",
+            "PAR BCI 10 Especifica el parámetro correlacionado con el Registro Modbus 40005."
+          ],
+          [
+            "5311",
+            "PAR BCI 11 Especifica el parámetro correlacionado con el Registro Modbus 40006."
+          ],
+          [
+            "5312",
+            "PAR BCI 12 Especifica el parámetro correlacionado con el Registro Modbus 40007."
+          ],
+          [
+            "5313",
+            "PAR BCI 13 Especifica el parámetro correlacionado con el Registro Modbus 40008."
+          ],
+          [
+            "5314",
+            "PAR BCI 14 Especifica el parámetro correlacionado con el Registro Modbus 40009."
+          ],
+          [
+            "5315",
+            "PAR BCI 15 Especifica el parámetro correlacionado con el Registro Modbus 40010."
+          ],
+          [
+            "5316",
+            "PAR BCI 16 Especifica el parámetro correlacionado con el Registro Modbus 40011."
+          ],
+          [
+            "5317",
+            "PAR BCI 17 Especifica el parámetro correlacionado con el Registro Modbus 40012."
+          ],
+          [
+            "5318",
+            "PAR BCI 18 Para Modbus: Ajusta una demora adicional en milisegundos antes de que el ACS550 empiece a transmitir la respuesta a la petición del maestro."
+          ],
+          [
+            "5319",
+            "PAR BCI 19 Código de control del perfil ABB Drives (ABB DRV LIM o ABB DRV FULL). Copia de sólo lectura del Código de control de bus de campo."
+          ],
+          [
+            "5320",
+            "PAR BCI 20 Código de estado del perfil ABB Drives (ABB DRV LIM o ABB DRV FULL). Copia de sólo lectura del Código de estado de bus de campo."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Manual del usuario del ACS550-01/U1\n189\nGrupo 64: ANALIZADOR CARGA\nEste grupo define el analizador de carga, que puede utilizarse para analizar el\nproceso del cliente y ajustar el convertidor y el motor.\nEl valor pico se registra a un nivel de 2 ms, y los registros de distribución se actualizan a\nun nivel de tiempo de 0,2 s (200 ms). Es posible registrar tres valores diferentes.\n1. Registrador de amplitud 1. La intensidad medida se registra continuamente. La\ndistribución como porcentaje de la intensidad nominal /2N se muestra en diez clases.\n2. Registrador de valores pico. Para el valor pico (máximo) puede registrarse una\nseñal en el grupo 1. Se muestran el valor pico de la señal, el tiempo pico\n(momento en que se detectó el valor pico) así como la frecuencia, la intensidad y la\ntensión de CC en el tiempo pico.\n3. Registrador de amplitud 2. Para la distribución de amplitud puede registrarse una señal\nen el grupo 1. El valor base (valor del 100%) puede ser ajustado por el usuario.\nEl primer registrador no puede reiniciarse. Los otros dos registradores son\nreiniciables mediante un método definido por el usuario. También se reinician si las\nseñales o el tiempo del filtro del valor pico cambia.\nCódigo Descripción\n6401\nSEÑAL PVL\nDefine (mediante número) la señal registrada para el valor pico.\n· Es posible seleccionar cualquier número de parámetro del Grupo 01: DATOS FUNCIONAM. Eg 102 = parámetro\n0102 VELOC.\n100 = NO SELECCIÓN - ningún(a) (parámetro de) señal registrado/a para el valor pico.\n101 ... 178 - Registra el parámetro 0101 ... 0178.\n6402\nTIEMPO FIL PVL\nDefine el tiempo del filtro para el registro del valor pico.\n· 0.0 ... 120.0 - Tiempo del filtro (segundos).\n6403\nRESET LOGGER\nDefine la fuente para el reinicio del registrador de valores pico y del registrador de amplitud 2.\n0 = SIN SEL - Ningún reinicio seleccionado.\n1 = ED1 - Reinicia los registradores en el flanco ascendente de la entrada digital ED1.\n2 ... 6 = ED2 ... ED6 - Reinicia los registradores en el flanco ascendente de la entrada digital ED2 ... ED6.\n7 = RESET - Reinicia los registradores. El parámetro se ajusta a SIN SEL.\n-1 = ED1 (INV) - Reinicia los registradores en el flanco descendente de la entrada digital ED1.\n-2 ...- 6 = ED2(INV) ... ED6(INV) - Reinicia los registradores en el flanco descendente de la entrada digital ED2 ... ED6.\n6404\nSEÑAL AL2\nDefine la señal registrada para el registrador de amplitud 2.\n· Es posible seleccionar cualquier número de parámetro del Grupo 01: DATOS FUNCIONAM. Eg 102 = parámetro\n0102 VELOC.\n100 = NO SELECCIÓN - Ningún(a) (parámetro de) señal registrado/a para la distribución de amplitud (registrador de\namplitud 2).\n101 ... 178 - Registra el parámetro 0101 ... 0178.\n6405\nSEÑAL BASE AL2\nDefine el valor base a partir del cual se calcula la distribución del porcentaje.\n· El valor por defecto y la representación depende de la señal seleccionado mediante el parámetro 6404 SEÑAL AL2.\n6406\nVALOR MAX\nValor pico detectado de la señal seleccionada mediante el parámetro 6401 SEÑAL PVL.\n6407\nTIEMPO MAX 1\nFecha de detección del valor pico\n· Formato: Fecha si funciona el reloj de tiempo real (dd.mm.aa.) / El número de días tras la puesta en marcha si no\nse utiliza o no se ha ajustado el reloj de tiempo real (xx d).",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "6401",
+            "SEÑAL PVL Define (mediante número) la señal registrada para el valor pico. · Es posible seleccionar cualquier número de parámetro del Grupo 01: DATOS FUNCIONAM. Eg 102 = parámetro 0102 VELOC. 100 = NO SELECCIÓN - ningún(a) (parámetro de) señal registrado/a para el valor pico. 101 ... 178 - Registra el parámetro 0101 ... 0178."
+          ],
+          [
+            "6402",
+            "TIEMPO FIL PVL Define el tiempo del filtro para el registro del valor pico. · 0.0 ... 120.0 - Tiempo del filtro (segundos)."
+          ],
+          [
+            "6403",
+            "RESET LOGGER Define la fuente para el reinicio del registrador de valores pico y del registrador de amplitud 2. 0 = SIN SEL - Ningún reinicio seleccionado. 1 = ED1 - Reinicia los registradores en el flanco ascendente de la entrada digital ED1. 2 ... 6 = ED2 ... ED6 - Reinicia los registradores en el flanco ascendente de la entrada digital ED2 ... ED6. 7 = RESET - Reinicia los registradores. El parámetro se ajusta a SIN SEL. -1 = ED1 (INV) - Reinicia los registradores en el flanco descendente de la entrada digital ED1. -2 ...- 6 = ED2(INV) ... ED6(INV) - Reinicia los registradores en el flanco descendente de la entrada digital ED2 ... ED6."
+          ],
+          [
+            "6404",
+            "SEÑAL AL2 Define la señal registrada para el registrador de amplitud 2. · Es posible seleccionar cualquier número de parámetro del Grupo 01: DATOS FUNCIONAM. Eg 102 = parámetro 0102 VELOC."
+          ],
+          [
+            "100 = NO SELECCIÓN - Ningún(a) (parámetro de) señal registrado/a para la distribución de amplitud (registrador de amplitud 2). 101 ... 178 - Registra el parámetro 0101 ... 0178."
+          ],
+          [
+            "6405",
+            "SEÑAL BASE AL2 Define el valor base a partir del cual se calcula la distribución del porcentaje. · El valor por defecto y la representación depende de la señal seleccionado mediante el parámetro 6404 SEÑAL AL2."
+          ],
+          [
+            "6406",
+            "VALOR MAX Valor pico detectado de la señal seleccionada mediante el parámetro 6401 SEÑAL PVL."
+          ],
+          [
+            "6407",
+            "TIEMPO MAX 1"
+          ],
+          [
+            "Fecha de detección del valor pico · Formato: Fecha si funciona el reloj de tiempo real (dd.mm.aa.) / El número de días tras la puesta en marcha si no se utiliza o no se ha ajustado el reloj de tiempo real (xx d)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Manual del usuario del ACS550-01/U1\n190\nCódigo Descripción\n6408\nTIEMPO MAX 2\nHora de detección del valor pico\n· Formato: horas:minutos:segundos.\n6409\nCORR MAX\nIntensidad en el momento del valor pico (amperios).\n6410\nUDC MAX\nTensión de CC en el momento del valor pico (voltios).\n6411\nFREQ PICO\nFrecuencia de salida en el momento del valor pico (hercios).\n6412\nTIEMP RESET 1\nÚltima fecha de reinicio del registrador de picos y del registrador de amplitud 2.\n· Formato: fecha si funciona el reloj de tiempo real (dd.mm.aa.) / El número de días tras la puesta en marcha si no\nse utiliza o no se ha ajustado el reloj de tiempo real (xx d).\n6413\nTIEMP RESET 2\nÚltima hora de reinicio del registrador de picos y del registrador de amplitud 2.\n· Formato: horas:minutos:segundos.\n6414\nAL1RANGO0A10\nregistrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 0 ... 10%.\n6415\nAL1RANGO10A20\nregistrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 10 ... 20%.\n6416\nAL1RANGO20A30\nregistrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 20 ... 30%.\n6417\nAL1RANGO30A40\nregistrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 30 ... 40%.\n6418\nAL1RANGO40A50\nregistrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 40 ... 50%.\n6419\nAL1RANGO50A60\nregistrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 50 ... 60%.\n6420\nAL1RANGO60A70\nregistrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 60 ... 70%.\n6421\nAL1RANGO70A80\nregistrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 70 ... 80%.\n6422\nAL1RANGO80A90\nregistrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 80 ... 90%.\n6423\nAL1RANGO90A\nRegistrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución por encima del 90%.\n6424\nAL2RANGO0A10\nRegistrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 0 ... 10%.\n6425\nAL2RANGO10A20\nRegistrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 10 ... 20%.\n6426\nAL2RANGO20A30\nRegistrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 20 ... 30%.\n6427\nAL2RANGO30A40\nRegistrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 30 ... 40%.\n6428\nAL2RANGO40A50\nRegistrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 40 ... 50%.\n6429\nAL2RANGO50A60\nRegistrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 50 ... 60%.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "6408",
+            "TIEMPO MAX 2 Hora de detección del valor pico · Formato: horas:minutos:segundos."
+          ],
+          [
+            "6409",
+            "CORR MAX Intensidad en el momento del valor pico (amperios)."
+          ],
+          [
+            "6410",
+            "UDC MAX Tensión de CC en el momento del valor pico (voltios)."
+          ],
+          [
+            "6411",
+            "FREQ PICO Frecuencia de salida en el momento del valor pico (hercios)."
+          ],
+          [
+            "6412",
+            "TIEMP RESET 1 Última fecha de reinicio del registrador de picos y del registrador de amplitud 2. · Formato: fecha si funciona el reloj de tiempo real (dd.mm.aa.) / El número de días tras la puesta en marcha si no se utiliza o no se ha ajustado el reloj de tiempo real (xx d)."
+          ],
+          [
+            "6413",
+            "TIEMP RESET 2 Última hora de reinicio del registrador de picos y del registrador de amplitud 2. · Formato: horas:minutos:segundos."
+          ],
+          [
+            "6414",
+            "AL1RANGO0A10 registrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 0 ... 10%."
+          ],
+          [
+            "6415",
+            "AL1RANGO10A20 registrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 10 ... 20%."
+          ],
+          [
+            "6416",
+            "AL1RANGO20A30 registrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 20 ... 30%."
+          ],
+          [
+            "6417",
+            "AL1RANGO30A40 registrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 30 ... 40%."
+          ],
+          [
+            "6418",
+            "AL1RANGO40A50 registrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 40 ... 50%."
+          ],
+          [
+            "6419",
+            "AL1RANGO50A60 registrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 50 ... 60%."
+          ],
+          [
+            "6420",
+            "AL1RANGO60A70 registrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 60 ... 70%."
+          ],
+          [
+            "6421",
+            "AL1RANGO70A80 registrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 70 ... 80%."
+          ],
+          [
+            "6422",
+            "AL1RANGO80A90 registrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución 80 ... 90%."
+          ],
+          [
+            "6423",
+            "AL1RANGO90A Registrador de amplitud 1(intensidad en porcentaje de la intensidad nominal /2N) distribución por encima del 90%."
+          ],
+          [
+            "6424",
+            "AL2RANGO0A10 Registrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 0 ... 10%."
+          ],
+          [
+            "6425",
+            "AL2RANGO10A20 Registrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 10 ... 20%."
+          ],
+          [
+            "6426",
+            "AL2RANGO20A30 Registrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 20 ... 30%."
+          ],
+          [
+            "6427",
+            "AL2RANGO30A40 Registrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 30 ... 40%."
+          ],
+          [
+            "6428",
+            "AL2RANGO40A50 Registrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 40 ... 50%."
+          ],
+          [
+            "6429",
+            "AL2RANGO50A60 Registrador de amplitud 2 (selección de la señal mediante el parámetro 6404) Distribución 50 ... 60%."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Manual del usuario del ACS550-01/U1\n191\nCódigo Descripción\n6430\nAL2RANGO60A70\nRegistrador de amplitud 2 (selección de la señal mediante el parámetro 6404). Distribución 60 ... 70%.\n6431\nAL2RANGO70A80\nRegistrador de amplitud 2 (selección de la señal mediante el parámetro 6404). Distribución 70 ... 80%.\n6432\nAL2RANGO80A90\nRegistrador de amplitud 2 (selección de la señal mediante el parámetro 6404). Distribución 80 ... 90%.\n6433\nAL2RANGO90A\nRegistrador de amplitud 2 (selección de la señal mediante el parámetro 6404). Distribución por encima del 90%.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "6430",
+            "AL2RANGO60A70 Registrador de amplitud 2 (selección de la señal mediante el parámetro 6404). Distribución 60 ... 70%."
+          ],
+          [
+            "6431",
+            "AL2RANGO70A80 Registrador de amplitud 2 (selección de la señal mediante el parámetro 6404). Distribución 70 ... 80%."
+          ],
+          [
+            "6432",
+            "AL2RANGO80A90 Registrador de amplitud 2 (selección de la señal mediante el parámetro 6404). Distribución 80 ... 90%."
+          ],
+          [
+            "6433",
+            "AL2RANGO90A Registrador de amplitud 2 (selección de la señal mediante el parámetro 6404). Distribución por encima del 90%."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "192\nManual del usuario del ACS550-01/U1\nGrupo 81: CONTROL PFC\nEste grupo define un modo de funcionamiento de Control de bombas-ventiladores\n(PFC). Las características principales del control PFC son:\n· EI ACS550 controla el motor de la bomba nº 1, variando la velocidad del motor para\ncontrolar la capacidad de la misma. Este motor es el motor regulado por velocidad.\n· Las conexiones de línea directa alimentan el motor de la bomba nº 2 y la bomba\nnº 3, etc. El ACS550 conecta y desconecta la bomba nº 2 (y después la bomba nº\n3, etc.) según se requiera. Estos motores son motores auxiliares.\n· El control PID del ACS550 utiliza dos señales: una referencia de proceso y una\nrealimentación de valor actual. El regulador PID ajusta la velocidad (frecuencia)\nde la primera bomba de modo que el valor actual siga la referencia de proceso.\n· Cuando la demanda (definida por la referencia de proceso) excede la capacidad\ndel primer motor (definida por el usuario como un límite de frecuencia), el PFA\narranca automáticamente una bomba auxiliar. El PFA también reduce la\nvelocidad de la primera bomba para acomodar la aportación de la bomba auxiliar\na la salida total. Seguidamente, como antes, el regulador PID ajusta la velocidad\n(frecuencia) de la primera bomba de modo que el valor actual siga la referencia\nde proceso. Si la demanda sigue aumentando, el PFC añade bombas auxiliares\nadicionales utilizando el mismo proceso.\n· Cuando la demanda se reduce, de modo que la velocidad de la primera bomba\ndesciende por debajo de un límite máximo (definido por el usuario mediante un\nlímite de frecuencia), el control PFC detiene automáticamente una bomba\nauxiliar. El PFC también incrementa la velocidad de la primera bomba para\nacomodar la ausencia de salida de la primera bomba.\n· Una función de Enclavamiento (cuando está habilitada) identifica los motores\nfuera de línea (fuera de servicio), y el control PFC pasa al siguiente motor\ndisponible en la secuencia.\n· Una función de Autocambio (cuando está habilitada y cuenta con el interruptor\napropiado) equipara el tiempo de servicio entre los motores de la bomba. El\nAutocambio incrementa periódicamente la posición de cada motor en la rotación -\nel motor regulado por velocidad se convierte en el último motor auxiliar, el primer\nmotor auxiliar se convierte en el motor regulado por velocidad, etc.\nCódigo Descripción\nREFER ESCALON 1\n8103\nAjusta un valor porcentual que se suma a la referencia de proceso.\n· Sólo es aplicable cuando está funcionando como mínimo un motor auxiliar (velocidad constante).\n· El valor por defecto es el 0%.\nEjemplo: un ACS550 acciona tres bombas en paralelo que mantienen la presión del agua en una tubería.\n· 4011 PUNTO CONSIG INT ajusta una referencia de presión constante que controla la presión en la tubería.\n· La bomba regulada por velocidad funciona sola a niveles de bajo consumo de agua.\n· A medida que aumenta este consumo, primero funciona una bomba de velocidad constante, y después la segunda.\n· A medida que aumenta el flujo, la presión en el extremo de salida de la tubería cae en relación con la presión\nmedida en el extremo de entrada. A medida que intervienen los motores auxiliares para incrementar el flujo, los\najustes siguientes corrigen la referencia para igualar en mayor grado la presión de salida.\n· Cuando funcione la primera bomba auxiliar, incremente la referencia con el parámetro 8103 REFER ESCALON 1.\n· Cuando funcionen dos bombas auxiliares, incremente la referencia con el parámetro 8103 REFER ESCALON 1 + el\nparámetro 8104 REFER ESCALON 2.\n· Cuando funcionen tres bombas auxiliares, incremente la referencia con el parámetro 8103 REFER ESCALON 1 + el\nparámetro 8104 REFER ESCALON 2 + el parámetro 8105 REFER ESCALON 3.",
+      "tablas": [
+        [
+          [
+            "Código Descripción"
+          ],
+          [
+            "8103",
+            "REFER ESCALON 1\nAjusta un valor porcentual que se suma a la referencia de proceso. · Sólo es aplicable cuando está funcionando como mínimo un motor auxiliar (velocidad constante). · El valor por defecto es el 0%. Ejemplo: un ACS550 acciona tres bombas en paralelo que mantienen la presión del agua en una tubería. · 4011 PUNTO CONSIG INT ajusta una referencia de presión constante que controla la presión en la tubería. · La bomba regulada por velocidad funciona sola a niveles de bajo consumo de agua. · A medida que aumenta este consumo, primero funciona una bomba de velocidad constante, y después la segunda. · A medida que aumenta el flujo, la presión en el extremo de salida de la tubería cae en relación con la presión medida en el extremo de entrada. A medida que intervienen los motores auxiliares para incrementar el flujo, los ajustes siguientes corrigen la referencia para igualar en mayor grado la presión de salida. · Cuando funcione la primera bomba auxiliar, incremente la referencia con el parámetro 8103 REFER ESCALON 1. · Cuando funcionen dos bombas auxiliares, incremente la referencia con el parámetro 8103 REFER ESCALON 1 + el parámetro 8104 REFER ESCALON 2. · Cuando funcionen tres bombas auxiliares, incremente la referencia con el parámetro 8103 REFER ESCALON 1 + el parámetro 8104 REFER ESCALON 2 + el parámetro 8105 REFER ESCALON 3."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Manual del usuario del ACS550-01/U1\n193\nCódigo Descripción\n8104\nREFER ESCALON 2\nAjusta un valor porcentual que se suma a la referencia de proceso.\n· Sólo es aplicable cuando están funcionando como mínimo dos motores auxiliares (velocidad constante).\n· Véase el parámetro 8103 REFER ESCALON 1.\nREFER ESCALON 3\n8105\nAjusta un valor porcentual que se suma a la referencia de proceso.\n· Sólo es aplicable cuando están funcionando como mínimo tres motores auxiliares (velocidad constante).\n· Véase el parámetro 8103 REFER ESCALON 1.\nMARCHA FREC 1\n8109\nAjusta el límite de frecuencia utilizado para arrancar el primer motor auxiliar. El primer motor auxiliar arranca si:\n. No hay motores auxiliares en funcionamiento.\nf (Hz)\n· La frecuencia de salida del ACS550 excede el límite:\n8109 + 1 Hz.\nP 8115\n· La frecuencia de salida permanece por encima de un límite\nfMAX-\nrelajado\n(P 8109)+1\n(8109 - 1 Hz) como mínimo durante el período: 8115 RET MAR\nMOT AUX.\nP 8109\nA\nTras el arranque del primer motor auxiliar:\nP 8112\nV\n· La frecuencia de salida disminuye con el valor =\nBA\n(8109 START FREQ 1) - (8112 LOW FREQ 1).\nfMIN\nt\n· En efecto, la salida del motor regulado por velocidad se\nreduce para compensar la entrada del motor auxiliar.\nVéase la figura, donde:\nC\n· A = (8109 MARCHA FREC 1) - (8112 BAJA FREC 1)\n1-\n· B = Incremento de la frecuencia de salida durante la demora\nt\n0\nde marcha.\n· C = Diagrama que muestra el estado de marcha del motor\nauxiliar al aumentar la frecuencia (1 = Activado).\nNota: 8109 MARCHA FREC 1 debe tener un valor entre:\n· 8112 BAJA FREC 1\n· (2008 FRECUENCIA MAX) -1.\n8110\nMARCHA FREC 2\nAjusta el límite de frecuencia utilizado para arrancar el segundo motor auxiliar.\n· Véase 8109 MARCHA FREC 1 para obtener una descripción completa del funcionamiento.\nEl segundo motor auxiliar arranca si:\n. Hay un motor auxiliar en marcha.\n· La frecuencia de salida del ACS550 excede el límite: 8110 + 1.\n· La frecuencia de salida permanece por encima del límite relajado (8110 - 1 Hz) como mínimo durante el período:\n8115 RET MAR MOT AUX.\n8111\nMARCHA FREC 3\nAjusta el límite de frecuencia utilizado para arrancar el tercer motor auxiliar.\n· Véase 8109 MARCHA FREC 1 para obtener una descripción completa del funcionamiento.\nEl tercer motor auxiliar arranca si:\n· Hay dos motores auxiliares en funcionamiento.\n· La frecuencia de salida del ACS550 excede el límite: 8111 + 1 Hz.\n· La frecuencia de salida permanece por encima del límite relajado (8111 - 1 Hz) como mínimo durante el período:\n8115 RET MAR MOT AUX.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción",
+            "",
+            ""
+          ],
+          [
+            "8104",
+            "REFER ESCALON 2"
+          ],
+          [
+            "Ajusta un valor porcentual que se suma a la referencia de proceso. · Sólo es aplicable cuando están funcionando como mínimo dos motores auxiliares (velocidad constante). · Véase el parámetro 8103 REFER ESCALON 1."
+          ],
+          [
+            "8105",
+            "REFER ESCALON 3\nAjusta un valor porcentual que se suma a la referencia de proceso. · Sólo es aplicable cuando están funcionando como mínimo tres motores auxiliares (velocidad constante). · Véase el parámetro 8103 REFER ESCALON 1."
+          ],
+          [
+            "8109",
+            "MARCHA FREC 1"
+          ],
+          [
+            "Ajusta el límite de frecuencia utilizado para arrancar el primer motor auxiliar. El primer motor auxiliar arranca si: . No hay motores auxiliares en funcionamiento. f (Hz)"
+          ],
+          [
+            "· La frecuencia de salida del ACS550 excede el límite: 8109 + 1 Hz. P 8115"
+          ],
+          [
+            "· La frecuencia de salida permanece por encima de un límite fMAX- relajado"
+          ],
+          [
+            "(P 8109)+1 (8109 - 1 Hz) como mínimo durante el período: 8115 RET MAR MOT AUX. P 8109 A"
+          ],
+          [
+            "Tras el arranque del primer motor auxiliar: P 8112 V · La frecuencia de salida disminuye con el valor = BA (8109 START FREQ 1) - (8112 LOW FREQ 1). fMIN t · En efecto, la salida del motor regulado por velocidad se"
+          ],
+          [
+            "reduce para compensar la entrada del motor auxiliar.",
+            ""
+          ],
+          [
+            "Véase la figura, donde:",
+            "C"
+          ],
+          [
+            "· A = (8109 MARCHA FREC 1) - (8112 BAJA FREC 1) 1-"
+          ],
+          [
+            "· B = Incremento de la frecuencia de salida durante la demora t 0 de marcha."
+          ],
+          [
+            "· C = Diagrama que muestra el estado de marcha del motor auxiliar al aumentar la frecuencia (1 = Activado). Nota: 8109 MARCHA FREC 1 debe tener un valor entre: · 8112 BAJA FREC 1 · (2008 FRECUENCIA MAX) -1."
+          ],
+          [
+            "8110",
+            "MARCHA FREC 2"
+          ],
+          [
+            "Ajusta el límite de frecuencia utilizado para arrancar el segundo motor auxiliar. · Véase 8109 MARCHA FREC 1 para obtener una descripción completa del funcionamiento. El segundo motor auxiliar arranca si: . Hay un motor auxiliar en marcha."
+          ],
+          [
+            "· La frecuencia de salida del ACS550 excede el límite: 8110 + 1. · La frecuencia de salida permanece por encima del límite relajado (8110 - 1 Hz) como mínimo durante el período: 8115 RET MAR MOT AUX."
+          ],
+          [
+            "8111",
+            "MARCHA FREC 3"
+          ],
+          [
+            "Ajusta el límite de frecuencia utilizado para arrancar el tercer motor auxiliar. · Véase 8109 MARCHA FREC 1 para obtener una descripción completa del funcionamiento."
+          ],
+          [
+            "El tercer motor auxiliar arranca si: · Hay dos motores auxiliares en funcionamiento. · La frecuencia de salida del ACS550 excede el límite: 8111 + 1 Hz. · La frecuencia de salida permanece por encima del límite relajado (8111 - 1 Hz) como mínimo durante el período: 8115 RET MAR MOT AUX."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "194\nManual del usuario del ACS550-01/U1\nCódigo Descripción\n8112\nBAJA FREC 1\nAjusta el límite de frecuencia utilizado para parar el primer motor auxiliar. El primer motor auxiliar se para si:\n· Sólo hay un motor auxiliar en marcha (el primero).\nf (Hz)\n· La frecuencia de salida del ACS550 desciende por debajo del límite:\n8112 - 1.\n· La frecuencia de salida permanece por debajo del límite relajado\nP 8109\n(8112 +1 Hz) como mínimo durante el período: 8116 RET PAR MOT\nfMAX-\nAUX.\nTras el paro del primer motor auxiliar:\nA\n· La frecuencia de salida aumenta con el valor =\nP 8112\nA\n(8109 START FREQ 1) - (8112 LOW FREQ 1).\n(P 8112)-1\nfMIN\n· En efecto, la salida del motor regulado por velocidad aumenta\nB\nt\npara compensar la pérdida del motor auxiliar.\nVéase la figura, donde:\nP 8116-1\n· A = (8109 MARCHA FREC 1) - (8112 BAJA FREC 1)\n· B = Reducción de la frecuencia de salida durante la demora\nC\nde paro.\n1\n· C = Diagrama que muestra el estado de marcha del motor\nt\nauxiliar a medida que desciende la frecuencia (1 = Sí).\n0\n· Recorrido gris = Muestra la histéresis - si el tiempo se invierte,\nel recorrido hacia atrás no es el mismo. Para obtener detalles acerca del recorrido para el arranque, véase el\ndiagrama en 8109 MARCHA FREC 1.\nNota: 8112 BAJA FREC 1 debe tener un valor entre:\n. (2007 FRECUENCIA MIN) +1.\n. 8109 MARCHA FREC 1\n8113\nBAJA FREC 2\nAjusta el límite de frecuencia utilizado para parar el segundo motor auxiliar.\n· Véase 8112 BAJA FREC 1 para obtener una descripción completa del funcionamiento.\nEl segundo motor auxiliar se para si:\n· Hay dos motores auxiliares en funcionamiento.\n· La frecuencia de salida del ACS550 desciende por debajo del límite: 8113 - 1.\n· La frecuencia de salida permanece por debajo del límite relajado (8113 + 1 Hz) como mínimo durante el período:\n8116 RET PAR MOT AUX.\n8114\nBAJA FREC 3\nAjusta el límite de frecuencia utilizado para parar el tercer motor auxiliar.\n· Véase 8112 BAJA FREC 1 para obtener una descripción completa del funcionamiento.\nEl tercer motor auxiliar se para si:\n. Hay tres motores auxiliares en funcionamiento.\n· La frecuencia de salida del ACS550 desciende por debajo del límite: 8114 - 1.\n· La frecuencia de salida permanece por debajo del límite relajado (8114 + 1 Hz) como mínimo durante el período:\n8116 RET PAR MOT AUX.\nRET MAR MOT AUX\n8115\nAjusta la Demora de marcha para los motores auxiliares.\n· La frecuencia de salida debe mantenerse por encima del límite de frecuencia de marcha (parámetro 8109, 8110 o\n8111) durante este período de tiempo antes de que arranque el motor auxiliar.\n· Véase 8109 MARCHA FREC 1 para obtener una descripción completa del funcionamiento.\n8116\nRET PAR MOT AUX\nAjusta la Demora de paro para los motores auxiliares.\n· La frecuencia de salida debe mantenerse por debajo del límite de frecuencia bajo (parámetro 8112, 8113 o 8114)\ndurante este período de tiempo antes de que se pare el motor auxiliar.\n· Véase 8112 BAJA FREC 1 para obtener una descripción completa del funcionamiento.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "8112",
+            "BAJA FREC 1"
+          ],
+          [
+            "Ajusta el límite de frecuencia utilizado para parar el primer motor auxiliar. El primer motor auxiliar se para si: · Sólo hay un motor auxiliar en marcha (el primero). f (Hz) · La frecuencia de salida del ACS550 desciende por debajo del límite: 8112 - 1."
+          ],
+          [
+            "· La frecuencia de salida permanece por debajo del límite relajado P 8109 (8112 +1 Hz) como mínimo durante el período: 8116 RET PAR MOT fMAX- AUX."
+          ],
+          [
+            "Tras el paro del primer motor auxiliar: A · La frecuencia de salida aumenta con el valor = P 8112 A (8109 START FREQ 1) - (8112 LOW FREQ 1). (P 8112)-1"
+          ],
+          [
+            "fMIN · En efecto, la salida del motor regulado por velocidad aumenta B t para compensar la pérdida del motor auxiliar."
+          ],
+          [
+            "Véase la figura, donde: P 8116-1 · A = (8109 MARCHA FREC 1) - (8112 BAJA FREC 1)"
+          ],
+          [
+            "· B = Reducción de la frecuencia de salida durante la demora C de paro."
+          ],
+          [
+            "1 · C = Diagrama que muestra el estado de marcha del motor t auxiliar a medida que desciende la frecuencia (1 = Sí). 0"
+          ],
+          [
+            "· Recorrido gris = Muestra la histéresis - si el tiempo se invierte, el recorrido hacia atrás no es el mismo. Para obtener detalles acerca del recorrido para el arranque, véase el diagrama en 8109 MARCHA FREC 1. Nota: 8112 BAJA FREC 1 debe tener un valor entre: . (2007 FRECUENCIA MIN) +1. . 8109 MARCHA FREC 1"
+          ],
+          [
+            "8113",
+            "BAJA FREC 2 Ajusta el límite de frecuencia utilizado para parar el segundo motor auxiliar. · Véase 8112 BAJA FREC 1 para obtener una descripción completa del funcionamiento. El segundo motor auxiliar se para si: · Hay dos motores auxiliares en funcionamiento. · La frecuencia de salida del ACS550 desciende por debajo del límite: 8113 - 1. · La frecuencia de salida permanece por debajo del límite relajado (8113 + 1 Hz) como mínimo durante el período: 8116 RET PAR MOT AUX."
+          ],
+          [
+            "8114",
+            "BAJA FREC 3 Ajusta el límite de frecuencia utilizado para parar el tercer motor auxiliar. · Véase 8112 BAJA FREC 1 para obtener una descripción completa del funcionamiento. El tercer motor auxiliar se para si: . Hay tres motores auxiliares en funcionamiento. · La frecuencia de salida del ACS550 desciende por debajo del límite: 8114 - 1. · La frecuencia de salida permanece por debajo del límite relajado (8114 + 1 Hz) como mínimo durante el período: 8116 RET PAR MOT AUX."
+          ],
+          [
+            "8115",
+            "RET MAR MOT AUX\nAjusta la Demora de marcha para los motores auxiliares. · La frecuencia de salida debe mantenerse por encima del límite de frecuencia de marcha (parámetro 8109, 8110 o 8111) durante este período de tiempo antes de que arranque el motor auxiliar. · Véase 8109 MARCHA FREC 1 para obtener una descripción completa del funcionamiento."
+          ],
+          [
+            "8116",
+            "RET PAR MOT AUX Ajusta la Demora de paro para los motores auxiliares. · La frecuencia de salida debe mantenerse por debajo del límite de frecuencia bajo (parámetro 8112, 8113 o 8114) durante este período de tiempo antes de que se pare el motor auxiliar. · Véase 8112 BAJA FREC 1 para obtener una descripción completa del funcionamiento."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Manual del usuario del ACS550-01/U1\n195\nCódigo Descripción\nNUM DE MOT AUX\n8117\nAjusta el número de motores auxiliares.\n· Cada motor auxiliar requiere una salida de relé, que utiliza el convertidor para enviar señales de marcha/paro.\n· La función Autocambio, si se utiliza, requiere una salida de relé adicional para el motor regulado por velocidad.\n· A continuación se describe la configuración de las salidas de relé requeridas.\nSalidas de relé\nComo se indica anteriormente, cada motor auxiliar requiere una salida de relé, que utiliza el convertidor para enviar\nseñales de marcha/paro. A continuación se describe el modo en que el convertidor controla los motores y relés.\n· EI ACS550 proporciona las salidas de relé SR1 ... SR3.\n· Puede añadirse un módulo de salida digital externa (OREL-01) para proporcionar las salidas de relé SR4 ... SR6.\n· Los parámetros 1401 ... 1403 y 1410 ... 1412 definen, respectivamente, cómo se utilizan los relés SR1 ... SR6: el\nvalor de parámetro 31 PFC define cómo se utiliza el relé para PFC.\n· EI ACS550 asigna motores auxiliares a relés en orden ascendente. Si se desactiva la función Autocambio, el\nprimer motor auxiliar es el conectado al primer relé con un ajuste de parámetros = 31 PFC, etc. Si se emplea la\nfunción Autocambio, las asignaciones rotan. Inicialmente, el motor regulado por velocidad es el conectado al\nprimer relé con el ajuste de parámetros = 31 PFC, el primer motor auxiliar es el conectado al segundo relé con un\najuste de parámetros = 31 PFC, etc.\nACS550\nRelé lógico\nACS550\nModo PFC estándar\nPFC con modo Autocambio\n· El cuarto motor auxiliar utiliza los mismos valores de escalón de referencia, baja frecuencia y frecuencia de\nmarcha que el tercer motor auxiliar.",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "8117",
+            "NUM DE MOT AUX\nAjusta el número de motores auxiliares. · Cada motor auxiliar requiere una salida de relé, que utiliza el convertidor para enviar señales de marcha/paro. · La función Autocambio, si se utiliza, requiere una salida de relé adicional para el motor regulado por velocidad. · A continuación se describe la configuración de las salidas de relé requeridas. Salidas de relé Como se indica anteriormente, cada motor auxiliar requiere una salida de relé, que utiliza el convertidor para enviar señales de marcha/paro. A continuación se describe el modo en que el convertidor controla los motores y relés. · EI ACS550 proporciona las salidas de relé SR1 ... SR3. · Puede añadirse un módulo de salida digital externa (OREL-01) para proporcionar las salidas de relé SR4 ... SR6. · Los parámetros 1401 ... 1403 y 1410 ... 1412 definen, respectivamente, cómo se utilizan los relés SR1 ... SR6: el valor de parámetro 31 PFC define cómo se utiliza el relé para PFC. · EI ACS550 asigna motores auxiliares a relés en orden ascendente. Si se desactiva la función Autocambio, el primer motor auxiliar es el conectado al primer relé con un ajuste de parámetros = 31 PFC, etc. Si se emplea la función Autocambio, las asignaciones rotan. Inicialmente, el motor regulado por velocidad es el conectado al primer relé con el ajuste de parámetros = 31 PFC, el primer motor auxiliar es el conectado al segundo relé con un ajuste de parámetros = 31 PFC, etc."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "196\nManual del usuario del ACS550-01/U1\nCódigo Descripción\n· La tabla siguiente muestra las asignaciones del motor PFC del ACS550 para algunos ajustes típicos en los\nparámetros de Salida de relé (1401 ... 1403 y 1410 ... 1412), donde los ajustes son =31 (PFC), 0 =X (cualquier valor\nmenos 31), y donde la función Autocambio está desactivada (8118 INTERV AUTOCAMB = 0.0).\nAjuste de parámetros\nAsignación de relés del ACS550\n1\n1\n4\n1\n4\n1\n4\n1\n4\n1\n4\n8\n1\nAutocambio desactivado\n4\nSR1\nSR2\nSR3\nSR4\nSR5\nSR6\n0\n0\n0\n1\n1\n1\n1\n1\n2\n3\n0\n1\n2\n7\n31\nX\nX\nX\nX\nX\n1\nAux.\nX\nX\nX\nX\nX\n31\n31\nX\nX\nX\nX\n2\nAux.\nAux.\nX\nX\nX\nX\n31\n31\n31\nX\nX\nX\n3\nAux.\nAux.\nAux.\nX\nX\nX\nX\n31\n31\nX\nX\nX\n2\nX\nAux.\nAux.\nX\nX\nX\nX\nX\nX\n31\nX\n31\n2\nX\nX\nX\nAux.\nX\nAux.\n31 31\nX\nX\nX\nX\n1*\nAux.\nAux.\nX\nX\nX\nX\n*= Una salida de relé adicional para el PFC en uso. Un motor \"duerme\"\nmientras el otro gira.\n· La tabla siguiente muestra las asignaciones del motor PFC del ACS550 para algunos ajustes típicos en los\nparámetros de Salida de relé (1401 ... 1403 y 1410 ... 1412), donde los ajustes son =31 (PFC), 0 =X (cualquier valor\nmenos 31), y donde la función Autocambio está activada (8118 INTERV AUTOCAMB = valor > 0.0).\nAjuste de parámetros\nAsignación de relés del ACS550\n1\n1\n1\n1\n1\n1\n8\nAutocambio activado\n4\n4\n4\n4\n4\n4\n1\nSR1\nSR2\nSR3\nSR4\nSR5\nSR6\n0\n0\n0\n1\n1\n1\n1\n1\n2\n3\n0\n1\n2\n7\n31 31\nX\nX\nX\nX\n1\nPFC\nPFC\nX\nX\nX\nX\n31\n31\n31\nX\nX\nX\n2\nPFC\nPFC\nPFC\nX\nX\nX\nX\n31\n31\nX\nX\nX\n1\nX\nPFC\nPFC\nX\nX\nX\nX\nX\n31\n31\n1\nX\nX\nX\nPFC\nX\nPFC\n31\n31\nX\nX\nX\nX\n0 **\nPFC\nPFC\nX\nX\nX\nX\n** = Sin motores auxiliares, pero la función autocambio se está utilizando.\nFunciona como un control PID estándar.\n8118\nINTERV AUTOCAMB\nControla el funcionamiento de la función Autocambio y ajusta\nel intervalo entre cambios.\nRelé lógico\n· El intervalo de tiempo de Autocambio sólo se aplica al tiempo\ndurante el cual funciona el motor regulado por velocidad.\n· Véase el parámetro 8119 NIVEL AUTOCAMB para obtener una\nsinopsis de la función Autocambio.\n· El convertidor siempre para por sí solo cuando se realiza el\nautocambio.\n· El Autocambio habilitado requiere el parámetro 8120\nENCLAVAMIENTOS = valor > 0.\nACS550\n-0.1 = MODO TEST - Fuerza el intervalo al valor 36 ... 48 s.\n0.0 = SIN SEL - Desactiva la función de Autocambio.\n0.1 ... 336 - El intervalo de tiempo de funcionamiento (el tiempo\ndurante el cual la señal de marcha está activada) entre\ncambios automáticos de motor.\nADVERTENCIA: cuando se activa, la función\nAutocambio requiere la habilitación de los\nenclavamientos (8120 ENCLAVAMIENTOS = valor > 0).\nDurante el autocambio, la salida de potencia se\ninterrumpe y el convertidor para por sí solo, evitando\ndaños en los contactos.\nPFC con modo Autocambio",
+      "tablas": [
+        [
+          [
+            "",
+            "Ajuste de parámetros",
+            "Asignación de relés del ACS550"
+          ],
+          [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "8",
+            "Autocambio desactivado"
+          ],
+          [
+            "4",
+            "4",
+            "4",
+            "4",
+            "4",
+            "4",
+            "1",
+            "SR1",
+            "SR2",
+            "SR3",
+            "SR4",
+            "SR5",
+            "SR6"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          [
+            "",
+            "1",
+            "2",
+            "3",
+            "0",
+            "1",
+            "2",
+            "7",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "31",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "1",
+            "Aux.",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:"
+          ],
+          [
+            "31",
+            "31",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "2",
+            "Aux.",
+            "Aux.\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:"
+          ],
+          [
+            "31",
+            "31",
+            "31",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "3",
+            "Aux.\n:selected:",
+            "Aux.\n:selected:",
+            "Aux.\n:unselected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:"
+          ],
+          [
+            "X\n:selected:",
+            "31",
+            "31",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "2",
+            "X\n:selected:",
+            "Aux.\n:selected:",
+            "Aux.\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:"
+          ],
+          [
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "31",
+            "X\n:selected:",
+            "31",
+            "2",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "Aux.\n:selected:",
+            "X\n:selected:",
+            "Aux.\n:selected:"
+          ],
+          [
+            "31",
+            "31",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "1*",
+            "Aux.\n:selected:",
+            "Aux.",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:"
+          ]
+        ],
+        [
+          [
+            "",
+            "Ajuste de parámetros",
+            "Asignación de relés del ACS550"
+          ],
+          [
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "8",
+            "Autocambio activado"
+          ],
+          [
+            "4",
+            "4",
+            "4",
+            "4",
+            "4",
+            "4",
+            "1",
+            "SR1",
+            "SR2",
+            "SR3",
+            "SR4",
+            "SR5",
+            "SR6"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "1",
+            ""
+          ],
+          [
+            "",
+            "1",
+            "2",
+            "3",
+            "0",
+            "1",
+            "2",
+            "7",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "31",
+            "31",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "1",
+            "PFC",
+            "PFC",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:"
+          ],
+          [
+            "31",
+            "31",
+            "31",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "2",
+            "PFC",
+            "PFC",
+            "PFC",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:"
+          ],
+          [
+            "X\n:selected:",
+            "31",
+            "31",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "1",
+            "X\n:selected:",
+            "PFC",
+            "PFC",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:"
+          ],
+          [
+            "X\n:selected:",
+            "X\n:selected:",
+            ":selected:",
+            "31",
+            ":selected:",
+            "31",
+            "1",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "PFC",
+            "X\n:selected:",
+            "PFC"
+          ],
+          [
+            "31",
+            "31",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "0 **",
+            "PFC",
+            "PFC",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:",
+            "X\n:selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Manual del usuario del ACS550-01/U1\n197\nCódigo Descripción\nNIVEL AUTOCAMB\n8119\nAjusta un límite superior, como un porcentaje de la capacidad de salida, para la lógica de autocambio. Cuando la salida del\nbloque de control PID/PFC excede este límite, se inhabilita el autocambio. Por ejemplo, utilice este parámetro para denegar el\nautocambio cuando el sistema de bombas-ventiladores funcione cerca de la máxima capacidad.\nSinopsis del Autocambio\nLa finalidad de la operación de autocambio es equiparar el tiempo de servicio entre varios motores utilizados en un\nsistema. En cada operación de autocambio:\n· Un motor distinto se conecta durante su turno asignado a la salida del ACS550 - el motor regulado por velocidad.\n· El orden de marcha de los demás motores rota.\nLa función Autocambio requiere:\n· Un interruptor externo para cambiar las conexiones de salida a motor del convertidor.\n· El parámetro 8120 ENCLAVAMIENTOS = valor > 0.\nEl Autocambio se realiza cuando:\n· El tiempo de funcionamiento desde el autocambio anterior alcanza al tiempo ajustado por 8118 INTERV AUTOCAMB.\n· La entrada PFC se sitúa por debajo del nivel ajustado por este parámetro, 8119 NIVEL AUTOCAMB.\nNota: el ACS550 siempre para por sí solo cuando se realiza el autocambio.\nEn un autocambio, la función Autocambio hace todo lo\nSalida PID\nsiguiente (véase la figura):\nA\n4PFC\n· Inicia un cambio cuando el tiempo de funcionamiento desde el\núltimo autocambio alcanza 8118 INTERV AUTOCAMB, y la entrada\nPFC está por debajo del límite 8119 NIVEL AUTOCAMB.\n100%-\nP 8119\n2PFC\n· Detiene el motor regulado por velocidad.\n3PFC\n· Desconecta el contactor del motor regulado por velocidad.\n3PFC\n· Incrementa el contador de orden de marcha, para cambiar\nel orden de marcha de los motores.\n2PFC\n4PFC\n· Identifica el siguiente motor en la cola para convertirse en\nel motor regulado por velocidad.\n1PFC\nt\n· Desconecta el contactor del motor anterior si estaba en\n- P 8122\nfincionamiento. Los demás motores en funcionamiento no\nse interrumpen.\nP 8118\n1- P 8118\nB\n· Conecta el contactor del nuevo motor regulado por\nvelocidad. El interruptor de autocambio conecta este motor\nA = Área por encima 8119 NIVEL AUTOCAMB -\na la salida de potencia del ACS550.\nautocambio no permitido.\n· Retrasa la marcha del motor durante el tiempo 8122 RETAR\nB = Ocurre el autocambio.\nMARCH PFC.\n1PFC, etc. = Salida PID asociada a cada motor.\n· Arranca el motor regulado por velocidad.\n· Identifica el siguiente motor de velocidad constante en la\nrotación.\n· Conecta el motor anterior, pero sólo si el nuevo motor regulado por velocidad había estado en funcionamiento\n(como un motor de velocidad constante) - Este paso mantiene un número equivalente de motores en marcha\nantes y después del autocambio.\n. Sigue con el funcionamiento PFC normal.\nContador de orden de marcha\nSalida\nFrec.\n-\n-\nSin mot.\n1 mot.\n2 mot.\nI\nEl funcionamiento del contador de orden de marcha:\naux.\naux.\naux.\nI\n· Las definiciones del parámetro de salida de relé (1401 ... 1403 y\nfMAX\n-\n1410 ... 1412) establecen la secuencia de motor inicial. (El menor\n1\nnúmero de parámetro con un valor 31 (PFC) identifica el relé\nconectado a 1PFC, el primer motor, etc.)\n1\n· Inicialmente, 1PFC = motor regulado por velocidad, 2PFC = 1er\nmotor auxiliar, etc.\n· El primer autocambio desplaza la secuencia a: 2PFC = motor\nregulado por velocidad, 3PFC = 1er motor auxiliar, ... , 1PFC =\nAutocambio\núltimo motor auxiliar.\nde área\n· El siguiente autocambio desplaza la secuencia otra vez, y así\npermitido\nSalida PID\nsucesivamente.\n+\n· Si el autocambio no puede arrancar un motor requerido porque\nP 8119\n100%\ntodos los motores inactivos están enclavados, el convertidor\nmuestra una alarma (2015, BLOQUEO PFC I).\n· Al desconectar la alimentación del ACS550, el contador conserva las posiciones de rotación de Autocambio\nactuales en la memoria permanente. Al volver a suministrar alimentación, la rotación de Autocambio empieza en la\nposición guardada en la memoria.\n· Si se cambia la configuración de relé PFC (o si se cambia el valor de ACTIVAR PFC), la rotación se restaura\n(véase el primer punto anterior).",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción",
+            ""
+          ],
+          [
+            "8119",
+            "NIVEL AUTOCAMB"
+          ],
+          [
+            "",
+            "Ajusta un límite superior, como un porcentaje de la capacidad de salida, para la lógica de autocambio. Cuando la salida del bloque de control PID/PFC excede este límite, se inhabilita el autocambio. Por ejemplo, utilice este parámetro para denegar el autocambio cuando el sistema de bombas-ventiladores funcione cerca de la máxima capacidad. Sinopsis del Autocambio"
+          ],
+          [
+            "",
+            "La finalidad de la operación de autocambio es equiparar el tiempo de servicio entre varios motores utilizados en un"
+          ],
+          [
+            "sistema. En cada operación de autocambio:"
+          ],
+          [
+            "",
+            "· Un motor distinto se conecta durante su turno asignado a la salida del ACS550 - el motor regulado por velocidad."
+          ],
+          [
+            "· El orden de marcha de los demás motores rota."
+          ],
+          [
+            "La función Autocambio requiere:"
+          ],
+          [
+            "",
+            "· Un interruptor externo para cambiar las conexiones de salida a motor del convertidor."
+          ],
+          [
+            "",
+            "· El parámetro 8120 ENCLAVAMIENTOS = valor > 0."
+          ],
+          [
+            "",
+            "El Autocambio se realiza cuando:"
+          ],
+          [
+            "",
+            "· El tiempo de funcionamiento desde el autocambio anterior alcanza al tiempo ajustado por 8118 INTERV AUTOCAMB. · La entrada PFC se sitúa por debajo del nivel ajustado por este parámetro, 8119 NIVEL AUTOCAMB. Nota: el ACS550 siempre para por sí solo cuando se realiza el autocambio."
+          ],
+          [
+            "",
+            "En un autocambio, la función Autocambio hace todo lo Salida PID siguiente (véase la figura): A 4PFC"
+          ],
+          [
+            "",
+            "· Inicia un cambio cuando el tiempo de funcionamiento desde el último autocambio alcanza 8118 INTERV AUTOCAMB, y la entrada PFC está por debajo del límite 8119 NIVEL AUTOCAMB.",
+            "100%-",
+            "2PFC"
+          ],
+          [
+            "",
+            "· Detiene el motor regulado por velocidad.",
+            "P 8119",
+            "3PFC"
+          ],
+          [
+            "",
+            "· Desconecta el contactor del motor regulado por velocidad. 3PFC",
+            ""
+          ],
+          [
+            "",
+            "· Incrementa el contador de orden de marcha, para cambiar el orden de marcha de los motores.",
+            "2PFC",
+            "4PFC"
+          ],
+          [
+            "",
+            "· Identifica el siguiente motor en la cola para convertirse en el motor regulado por velocidad.",
+            "1PFC t"
+          ],
+          [
+            "",
+            "· Desconecta el contactor del motor anterior si estaba en - P 8122 fincionamiento. Los demás motores en funcionamiento no se interrumpen. P 8118 1- P 8118"
+          ],
+          [
+            "",
+            "B · Conecta el contactor del nuevo motor regulado por velocidad. El interruptor de autocambio conecta este motor A = Área por encima 8119 NIVEL AUTOCAMB - a la salida de potencia del ACS550. autocambio no permitido."
+          ],
+          [
+            "",
+            "· Retrasa la marcha del motor durante el tiempo 8122 RETAR B = Ocurre el autocambio. MARCH PFC. 1PFC, etc. = Salida PID asociada a cada motor."
+          ],
+          [
+            "· Arranca el motor regulado por velocidad."
+          ],
+          [
+            "· Identifica el siguiente motor de velocidad constante en la rotación.",
+            ""
+          ],
+          [
+            "· Conecta el motor anterior, pero sólo si el nuevo motor regulado por velocidad había estado en funcionamiento (como un motor de velocidad constante) - Este paso mantiene un número equivalente de motores en marcha antes y después del autocambio. . Sigue con el funcionamiento PFC normal.\nSalida"
+          ],
+          [
+            "Contador de orden de marcha",
+            "Frec. - -\nI"
+          ],
+          [
+            "Sin mot. 1 mot. 2 mot.\nEl funcionamiento del contador de orden de marcha: aux. aux. aux. I"
+          ],
+          [
+            "",
+            "· Las definiciones del parámetro de salida de relé (1401 ... 1403 y fMAX - 1410 ... 1412) establecen la secuencia de motor inicial. (El menor 1 número de parámetro con un valor 31 (PFC) identifica el relé conectado a 1PFC, el primer motor, etc.)"
+          ],
+          [
+            "",
+            "1 · Inicialmente, 1PFC = motor regulado por velocidad, 2PFC = 1er motor auxiliar, etc."
+          ],
+          [
+            "",
+            "· El primer autocambio desplaza la secuencia a: 2PFC = motor regulado por velocidad, 3PFC = 1er motor auxiliar, ... , 1PFC = Autocambio último motor auxiliar. de área"
+          ],
+          [
+            "",
+            "· El siguiente autocambio desplaza la secuencia otra vez, y así permitido Salida PID sucesivamente. +"
+          ],
+          [
+            "",
+            "· Si el autocambio no puede arrancar un motor requerido porque P 8119 100%"
+          ],
+          [
+            "",
+            "todos los motores inactivos están enclavados, el convertidor muestra una alarma (2015, BLOQUEO PFC I)."
+          ],
+          [
+            "· Al desconectar la alimentación del ACS550, el contador conserva las posiciones de rotación de Autocambio actuales en la memoria permanente. Al volver a suministrar alimentación, la rotación de Autocambio empieza en la posición guardada en la memoria. · Si se cambia la configuración de relé PFC (o si se cambia el valor de ACTIVAR PFC), la rotación se restaura (véase el primer punto anterior)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "198\nManual del usuario del ACS550-01/U1\nCódigo Descripción\n8120\nENCLAVAMIENTOS\nDefine el funcionamiento de la función Enclavamientos. Cuando se ha activado la función Enclavamientos:\n· Un enclavamiento está activo cuando no está presente su señal de comando.\n· Un enclavamiento está inactivo cuando está presente su señal de comando.\n· EI ACS550 no arrancará si se da un comando de marcha cuando el enclavamiento del motor regulado por\nvelocidad está activo - el panel de control muestra una alarma (2015, BLOQUEO PFC I).\nConecte cada circuito de enclavamiento de esta manera:\n· Conecte un contacto del interruptor de conexión/desconexión del motor al circuito de enclavamiento - la lógica\nPFC del convertidor podrá reconocer que el motor está desconectado, y arrancar el siguiente motor disponible.\n· Conecte un contacto del relé térmico del motor (u otro dispositivo protector en el circuito del motor) a la entrada de\nenclavamiento - la lógica PFC del convertidor podrá reconocer que hay un fallo de motor activado y detendrá el motor.\n0 = SIN SEL - Desactiva la función Enclavamientos. Todas las entradas digitales están disponibles para otros cometidos.\n· Requiere 8118 INTERV AUTOCAMB = 0.0 (La función Autocambio debe estar desactivada si la función\nEnclavamientos está desactivada.)\n1 = ED1 - Activa la función Enclavamientos, y asigna una entrada digital (empezando por ED1) a la señal de\nenclavamiento para cada relé PFC. Estas asignaciones se definen en la tabla siguiente y dependen de:\n· el número de relés PFC [número de parámetro 1401 ... 1403 y 1410 ... 1412 con el valor = 31 PFC)]\n· el estado de la función Autocambio (desactivada si 8118 INTERV AUTOCAMB = 0.0, y activada en caso contrario).\nNº relés\nPFC\nAutocambio desactivado\n(P 8118)\nAutocambio activado\n(P 8118)\n0\nED1: Motor reg velocidad\nED2 ... ED6: Libre\nNo se permite\n1\nED1: Motor reg velocidad\nED2: Primer relé PFC\nED3 ... ED6: Libre\nED1: Primer relé PFC\nED2 ... ED6: Libre\n2\nED1: Motor reg velocidad\nED2: Primer relé PFC\nED3: Segundo relé PFC\nED4 ... ED6: Libre\nED1: Primer relé PFC\nED2: Segundo relé PFC\nED3 ... ED6: Libre\n3\nED1: Motor reg velocidad\nED2: Primer rele PFC\nED3: Segundo relé PFC\nED4: Tercer relé PFC\nED5 ... ED6: Libre\nED1: Primer relé PFC\nED2: Segundo relé PFC\nED3: Tercer rele PFC\nED4 ... ED6: Libre\n4\nED1: Motor reg velocidad\nED2: Primer relé PFC\nED3: Segundo relé PFC\nED4: Tercer rele PFC\nED5: Cuarto relé PFC\nED6: Libre\nED1: Primer relé PFC\nED2: Segundo relé PFC\nED3: Tercer relé PFC\nED4: Cuarto relé PFC\nED5 ... ED6: Libre\n5\nED1: Motor reg velocidad\nED2: Primer relé PFC\nED3: Segundo relé PFC\nED4: Tercer relé PFC\nED5: Cuarto relé PFC\nED6: Quinto relé PFC\nED1: Primer relé PFC\nED2: Segundo relé PFC\nED3: Tercer relé PFC\nED4: Cuarto relé PFC\nED5: Quinto relé PFC\nED6: Libre\n6\nNo se permite\nED1: Primer relé PFC\nED2: Segundo relé PFC\nED3: Tercer relé PFC\nED4: Cuarto relé PFC\nED5: Quinto relé PFC\nED6: Sexto rele PFC",
+      "tablas": [
+        [
+          [
+            "Nº relés PFC",
+            "Autocambio desactivado (P 8118)",
+            "Autocambio activado (P 8118)"
+          ],
+          [
+            "0",
+            "ED1: Motor reg velocidad ED2 ... ED6: Libre",
+            "No se permite"
+          ],
+          [
+            "1",
+            "ED1: Motor reg velocidad ED2: Primer relé PFC ED3 ... ED6: Libre",
+            "ED1: Primer relé PFC ED2 ... ED6: Libre"
+          ],
+          [
+            "2",
+            "ED1: Motor reg velocidad ED2: Primer relé PFC ED3: Segundo relé PFC ED4 ... ED6: Libre",
+            "ED1: Primer relé PFC ED2: Segundo relé PFC ED3 ... ED6: Libre"
+          ],
+          [
+            "3",
+            "ED1: Motor reg velocidad ED2: Primer rele PFC ED3: Segundo relé PFC ED4: Tercer relé PFC ED5 ... ED6: Libre",
+            "ED1: Primer relé PFC ED2: Segundo relé PFC ED3: Tercer rele PFC ED4 ... ED6: Libre"
+          ],
+          [
+            "4",
+            "ED1: Motor reg velocidad ED2: Primer relé PFC ED3: Segundo relé PFC ED4: Tercer rele PFC ED5: Cuarto relé PFC ED6: Libre",
+            "ED1: Primer relé PFC ED2: Segundo relé PFC"
+          ],
+          [
+            "ED3: Tercer relé PFC ED4: Cuarto relé PFC ED5 ... ED6: Libre"
+          ],
+          [
+            "5",
+            "ED1: Motor reg velocidad ED2: Primer relé PFC ED3: Segundo relé PFC ED4: Tercer relé PFC ED5: Cuarto relé PFC ED6: Quinto relé PFC",
+            "ED1: Primer relé PFC ED2: Segundo relé PFC"
+          ],
+          [
+            "ED3: Tercer relé PFC ED4: Cuarto relé PFC ED5: Quinto relé PFC ED6: Libre"
+          ],
+          [
+            "6",
+            "No se permite",
+            "ED1: Primer relé PFC ED2: Segundo relé PFC"
+          ],
+          [
+            "ED3: Tercer relé PFC"
+          ],
+          [
+            "ED4: Cuarto relé PFC"
+          ],
+          [
+            "ED5: Quinto relé PFC"
+          ],
+          [
+            "ED6: Sexto rele PFC"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Manual del usuario del ACS550-01/U1\n199\nCódigo Descripción\n2 = ED2 - Activa la función Enclavamientos, y asigna una entrada digital (empezando por ED2) a la señal de\nenclavamiento para cada relé PFC. Estas asignaciones se definen en la tabla siguiente y dependen de:\n· el número de relés PFC [número de parámetro 1401 ... 1403 y 1410 ... 1412 con el valor = 31 PFC)]\n· el estado de la función Autocambio (desactivada si 8118 INTERV AUTOCAMB = 0.0, y activada en caso contrario).\nNº relés\nPFC\nAutocambio desactivado\n(P 8118)\nAutocambio activado\n(P 8118)\n0\nED1: Libre\nED2: Motor reg velocidad\nED3 ... ED6: Libre\nNo se permite\n1\nED1: Libre\nED2: Motor reg velocidad\nED3: Primer relé PFC\nED4 ... ED6: Libre\nED1: Libre\nED2: Primer relé PFC\nED3 ... ED6: Libre\n2\nED1: Libre\nED2: Motor reg velocidad\nED3: Primer relé PFC\nED4: Segundo relé PFC\nED5 ... ED6: Libre\nED1: Libre\nED2: Primer relé PFC\nED3: Segundo relé PFC\nED4 ... ED6: Libre\n3\nED1: Libre\nED2: Motor reg velocidad\nED3: Primer rele PFC\nED4: Segundo relé PFC\nED5: Tercer relé PFC\nED6: Libre\nED1: Libre\nED2: Primer relé PFC\nED3: Segundo relé PFC\nED4: Tercer relé PFC\nED5 ... ED6: Libre\n4\nED1: Libre\nED2: Motor reg velocidad\nED3: Primer relé PFC\nED4: Segundo relé PFC\nED5: Tercer relé PFC\nED6: Cuarto relé PFC\nED1: Libre\nED2: Primer relé PFC\nED3: Segundo relé PFC\nED4: Tercer relé PFC\nED5: Cuarto relé PFC\nED6: Libre\n5\nNo se permite\nED1: Libre\nED2: Primer relé PFC\nED3: Segundo relé PFC\nED4: Tercer relé PFC\nED5: Cuarto relé PFC\nED6: Quinto relé PFC\n6\nNo se permite\nNo se permite",
+      "tablas": [
+        [
+          [
+            "",
+            "Nº relés PFC",
+            "Autocambio desactivado (P 8118)",
+            "Autocambio activado (P 8118)"
+          ],
+          [
+            "",
+            "0",
+            "ED1: Libre ED2: Motor reg velocidad ED3 ... ED6: Libre",
+            "No se permite"
+          ],
+          [
+            "",
+            "1",
+            "ED1: Libre ED2: Motor reg velocidad ED3: Primer relé PFC ED4 ... ED6: Libre",
+            "ED1: Libre ED2: Primer relé PFC ED3 ... ED6: Libre"
+          ],
+          [
+            "",
+            "2",
+            "ED1: Libre ED2: Motor reg velocidad ED3: Primer relé PFC ED4: Segundo relé PFC ED5 ... ED6: Libre",
+            "ED1: Libre ED2: Primer relé PFC ED3: Segundo relé PFC ED4 ... ED6: Libre"
+          ],
+          [
+            "",
+            "3",
+            "ED1: Libre ED2: Motor reg velocidad ED3: Primer rele PFC ED4: Segundo relé PFC ED5: Tercer relé PFC ED6: Libre",
+            "ED1: Libre ED2: Primer relé PFC ED3: Segundo relé PFC ED4: Tercer relé PFC ED5 ... ED6: Libre"
+          ],
+          [
+            "",
+            "4",
+            "ED1: Libre ED2: Motor reg velocidad ED3: Primer relé PFC ED4: Segundo relé PFC ED5: Tercer relé PFC ED6: Cuarto relé PFC",
+            "ED1: Libre ED2: Primer relé PFC ED3: Segundo relé PFC ED4: Tercer relé PFC ED5: Cuarto relé PFC ED6: Libre"
+          ],
+          [
+            "",
+            "5",
+            "No se permite",
+            "ED1: Libre ED2: Primer relé PFC ED3: Segundo relé PFC ED4: Tercer relé PFC ED5: Cuarto relé PFC ED6: Quinto relé PFC"
+          ],
+          [
+            "6",
+            "No se permite",
+            "No se permite"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "200\nManual del usuario del ACS550-01/U1\nCódigo Descripción\n3 = ED3 - Activa la función Enclavamientos, y asigna una entrada digital (empezando por ED3) a la señal de\nenclavamiento para cada relé PFC. Estas asignaciones se definen en la tabla siguiente y dependen de:\n· el número de relés PFC [número de parámetro 1401 ... 1403 y 1410 ... 1412 con el valor = 31 PFC)]\n· el estado de la función Autocambio (desactivada si 8118 INTERV AUTOCAMB = 0.0, y activada en caso contrario).\nNº relés\nPFC\nAutocambio desactivado\n(P 8118)\nAutocambio activado\n(P 8118)\n0\nED1 ... ED2: Libre\nED3: Motor reg velocidad\nED4 ... ED6: Libre\nNo se permite\n1\nED1 ... ED2: Libre\nED3: Motor reg velocidad\nED4: Primer rele PFC\nED5 ... ED6: Libre\nED1 ... ED2: Libre\nED3: Primer relé PFC\nED4 ... ED6: Libre\n2\nED1 ... ED2: Libre\nED3: Motor reg velocidad\nED4: Primer rele PFC\nED5: Segundo relé PFC\nED6: Libre\nED1 ... ED2: Libre\nED3: Primer relé PFC\nED4: Segundo relé PFC\nED5 ... ED6: Libre\n3\nED1 ... ED2: Libre\nED3: Motor reg velocidad\nED4: Primer rele PFC\nED5: Segundo relé PFC\nED6: Tercer relé PFC\nED1 ... ED2: Libre\nED3: Primer relé PFC\nED4: Segundo relé PFC\nED5: Tercer relé PFC\nED6: Libre\n4\nNo se permite\nED1 ... ED2: Libre\nED3: Primer relé PFC\nED4: Segundo relé PFC\nED5: Tercer relé PFC\nED6: Cuarto relé PFC\n5 ... 6\nNo se permite\nNo se permite\n4 = ED4 - Activa la función Enclavamientos, y asigna una entrada digital (empezando por ED4) a la señal de\nenclavamiento para cada relé PFC. Estas asignaciones se definen en la tabla siguiente y dependen de:\n· el número de relés PFC [número de parámetro 1401 ... 1403 y 1410 ... 1412 con el valor = 31 PFC)]\n· el estado de la función Autocambio (desactivada si 8118 INTERV AUTOCAMB = 0.0, y activada en caso contrario).\nNº relés\nPFC\nAutocambio desactivado\n(P 8118)\nAutocambio activado\n(P 8118)\n0\nED1 ... ED3: Libre\nED4: Motor reg velocidad\nED5 ... ED6: Libre\nNo se permite\n1\nED1 ... ED3: Libre\nED4: Motor reg velocidad\nED5: Primer relé PFC\nED6: Libre\nED1 ... ED3: Libre\nED4: Primer relé PFC\nED5 ... ED6: Libre\n2\nED1 ... ED3: Libre\nED4: Motor reg velocidad\nED5: Primer relé PFC\nED6: Segundo relé PFC\nED1 ... ED3: Libre\nED4: Primer relé PFC\nED5: Segundo relé PFC\nED6: Libre\n3\nNo se permite\nED1 ... ED3: Libre\nED4: Primer relé PFC\nED5: Segundo relé PFC\nED6: Tercer relé PFC\n4 ... 6\nNo se permite\nNo se permite",
+      "tablas": [
+        [
+          [
+            "",
+            "Nº relés PFC",
+            "Autocambio desactivado (P 8118)",
+            "Autocambio activado (P 8118)"
+          ],
+          [
+            "",
+            "0",
+            "ED1 ... ED2: Libre ED3: Motor reg velocidad ED4 ... ED6: Libre",
+            "No se permite"
+          ],
+          [
+            "",
+            "1",
+            "ED1 ... ED2: Libre ED3: Motor reg velocidad ED4: Primer rele PFC ED5 ... ED6: Libre",
+            "ED1 ... ED2: Libre ED3: Primer relé PFC ED4 ... ED6: Libre"
+          ],
+          [
+            "",
+            "2",
+            "ED1 ... ED2: Libre ED3: Motor reg velocidad ED4: Primer rele PFC ED5: Segundo relé PFC ED6: Libre",
+            "ED1 ... ED2: Libre ED3: Primer relé PFC ED4: Segundo relé PFC ED5 ... ED6: Libre"
+          ],
+          [
+            "",
+            "3",
+            "ED1 ... ED2: Libre ED3: Motor reg velocidad ED4: Primer rele PFC ED5: Segundo relé PFC ED6: Tercer relé PFC",
+            "ED1 ... ED2: Libre ED3: Primer relé PFC ED4: Segundo relé PFC ED5: Tercer relé PFC ED6: Libre"
+          ],
+          [
+            "",
+            "4",
+            "No se permite",
+            "ED1 ... ED2: Libre ED3: Primer relé PFC ED4: Segundo relé PFC ED5: Tercer relé PFC ED6: Cuarto relé PFC"
+          ],
+          [
+            "5 ... 6",
+            "No se permite",
+            "No se permite"
+          ]
+        ],
+        [
+          [
+            "Nº relés PFC",
+            "Autocambio desactivado (P 8118)",
+            "Autocambio activado (P 8118)"
+          ],
+          [
+            "0",
+            "ED1 ... ED3: Libre ED4: Motor reg velocidad ED5 ... ED6: Libre",
+            "No se permite"
+          ],
+          [
+            "1",
+            "ED1 ... ED3: Libre ED4: Motor reg velocidad ED5: Primer relé PFC ED6: Libre",
+            "ED1 ... ED3: Libre ED4: Primer relé PFC ED5 ... ED6: Libre"
+          ],
+          [
+            "2",
+            "ED1 ... ED3: Libre ED4: Motor reg velocidad ED5: Primer relé PFC ED6: Segundo relé PFC",
+            "ED1 ... ED3: Libre ED4: Primer relé PFC ED5: Segundo relé PFC ED6: Libre"
+          ],
+          [
+            "3",
+            "No se permite",
+            "ED1 ... ED3: Libre ED4: Primer relé PFC ED5: Segundo relé PFC ED6: Tercer relé PFC"
+          ],
+          [
+            "4 ... 6",
+            "No se permite",
+            "No se permite"
+          ]
+        ]
+      ]
+    }
+  ]
+}

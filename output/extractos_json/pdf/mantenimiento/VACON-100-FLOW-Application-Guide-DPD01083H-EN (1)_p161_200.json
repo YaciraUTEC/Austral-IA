@@ -1,0 +1,991 @@
+{
+  "archivo": "VACON-100-FLOW-Application-Guide-DPD01083H-EN (1)_p161_200",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\n10.13.1.8 (ID 3608) Baseline Data Element 8\nLocation in the menu: V2.16.1.8\nThis monitoring value shows the baseline data. The baseline data is selected using the baseline data selector.\n10.13.1.9 (ID 3609) Baseline Data Element 9\nLocation in the menu: V2.16.1.9\nThis monitoring value shows the baseline data. The baseline data is selected using the baseline data selector.\n10.13.1.10 (ID 3610) Baseline Data Element 10\nLocation in the menu: V2.16.1.10\nThis monitoring value shows the baseline data. The baseline data is selected using the baseline data selector.\n10.13.1.11 (ID 3622) Baseline Run Status\nLocation in the menu: V2.16.1.11\nThis monitoring value shows the baseline run status.\n10.13.2 Stator Winding Monitor\n10.13.2.1 (ID 3617) Current Unbalance\nLocation in the menu: V2.16.2.1\nThis monitoring value shows the current unbalance when condition-based monitoring is activated.\n10.13.2.2 (ID 3620) Current Unbalance Threshold Value\nLocation in the menu: V2.16.2.2\nThis monitoring value shows the threshold value after interpolating.\n10.13.2.3 (ID 3611) Current Warning S1 High Threshold\nLocation in the menu: V2.16.2.3\nThis monitoring value shows the warning S1 high threshold value.\n10.13.2.4 (ID 3612) Current Warning S2 High Threshold\nLocation in the menu: V2.16.2.4\nThis monitoring value shows the warning S2 high threshold value.\n10.13.2.5 (ID 3613) Current Alarm High Threshold\nLocation in the menu: V2.16.2.5\nThis monitoring value shows the alarm/fault high threshold value.\n10.13.3 Vibration\n10.13.3.1 (ID 3623) Vibration\nLocation in the menu: V2.16.3.1\nThis monitoring value shows the vibration when condition-based monitoring is activated.\n10.13.3.2 (ID 3624) Vibration Threshold Value\nLocation in the menu: V2.16.3.2\nThis monitoring value shows the threshold value after interpolating.\n10.13.3.3 (ID 3625) Vibration S1 High Threshold\nLocation in the menu: V2.16.3.3\nThis monitoring value shows the warning S1 high threshold value.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 161",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\n10.13.3.4 (ID 3626) Vibration S2 High Threshold\nLocation in the menu: V2.16.3.4\nThis monitoring value shows the warning S2 high threshold value.\n10.13.3.5 (ID 3627) Vibration Alarm High Threshold\nLocation in the menu: V2.16.3.5\nThis monitoring value shows the alarm/fault high threshold value.\n10.13.4 Load\n10.13.4.1 (ID 3628) Load Threshold Value\nLocation in the menu: V2.16.4.2\nThis monitoring value shows the threshold value after interpolating.\n10.13.4.2 (ID 3629) Load S1 High Threshold\nLocation in the menu: V2.16.4.3\nThis monitoring value shows the warning S1 high threshold value.\n10.13.4.3 (ID 3630) Load S2 High Threshold\nLocation in the menu: V2.16.4.4\nThis monitoring value shows the warning S2 high threshold value.\n10.13.4.4 (ID 3631) Load Alarm High Threshold\nLocation in the menu: V2.16.4.5\nThis monitoring value shows the alarm/fault high threshold value.\n10.13.4.5 (ID 3632) Load S1 Low Threshold\nLocation in the menu: V2.16.4.6\nThis monitoring value shows the warning S1 low threshold value.\n10.13.4.6 (ID 3633) Load S2 Low Threshold\nLocation in the menu: V2.16.4.7\nThis monitoring value shows the warning S2 low threshold value.\n10.13.4.7 (ID 3634) Load Alarm Low Threshold\nLocation in the menu: V2.16.4.8\nThis monitoring value shows the alarm/fault low threshold value.\n10.13.5 (ID 3619) Condition-based Monitoring Status\nLocation in the menu: V2.16.5\nThis monitoring value shows the fault status of the condition-based monitoring.\n162 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11 Parameter Descriptions\n11.1 (ID 212) Application\nLocation in the menu: P1.2\nUse this parameter to select the application configuration for the drive. The applications include preset application configurations,\nthat is, sets of predefined parameters. The selection of the application makes the commissioning of the drive easy and reduces the\nmanual work with the parameters.\nWARNINGA\nACCIDENTAL START BECAUSE OF CHANGE OF SETTINGS\nRunning the Startup wizard, changing the application or the software can cause the I/O functions to change.\n-\nDisconnect the motor from the drive if an accidental start can be dangerous.\nWhen the value of this parameter changes, a parameter groups get their preset values. The value of this parameter can be changed\nwhen the starting up or commissioning the drive.\nIf this parameter is changed in the control panel, an application wizard starts and helps to set the basic parameters related to the\napplication. The wizard does not start, when using the PC tool to change this parameter. For more data about the application wiz-\nards, see 4.1 Application Wizards.\nThese applications are available:\n· 0 = Standard\n•\n1 = HVAC\n· 3 = PID control\n· 4 = Multi-ump (single drive)\n· 5 = Multi-ump (multidrive)\nNOTICE\nWhen the application is changed, the contents of the Quick Setup menu change.\n11.2 Trend Curve\n11.2.1 (ID 2368) Sampling Interval\nLocation in the menu: P2.2.2\nUse this parameter to set the sampling interval.\n11.2.2 (ID 2369) Channel 1 MIN\nLocation in the menu: P2.2.3\nThis parameter is used in scaling by default. Adjustments can be necessary.\n11.2.3 (ID 2370) Channel 1 MAX\nLocation in the menu: P2.2.4\nThis parameter is used in scaling by default. Adjustments can be necessary.\n11.2.4 (ID 2371) Channel 2 MIN\nLocation in the menu: P2.2.5\nThis parameter is used in scaling by default. Adjustments can be necessary.\n11.2.5 (ID 2372) Channel 2 MAX\nLocation in the menu: P2.2.6\nThis parameter is used in scaling by default. Adjustments can be necessary.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 163",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.2.6 (ID 2373) Autoscale\nLocation in the menu: P2.2.7\nUse this parameter to set autoscaling on or off. If autoscaling is enabled, the signal is automatically scaled between the minimum\nand maximum values.\n11.3 Motor Settings\n11.3.1 Motor Nameplate Parameters\n11.3.1.1 (ID 110) Motor Nominal Voltage\nLocation in the menu: P3.1.1.1\nFind the value Un on the nameplate of the motor. Find out whether the motor connection is Delta or Star.\n11.3.1.2 (ID 111) Motor Nominal Frequency\nLocation in the menu: P3.1.1.2\nFind the value fn on the nameplate of the motor.\nWhen this parameter changes, parameters P3.1.4.2 Field Weakening Point Frequency and P3.1.4.3 Voltage at Field Weakening Point\nstart automatically. The 2 parameters have different values for each motor type. See 11.3.2.1 (ID 650) Motor Type.\n11.3.1.3 (ID 112) Motor Nominal Speed\nLocation in the menu: P3.1.1.3\nFind the value nn on the nameplate of the motor.\n11.3.1.4 (ID 113) Motor Nominal Current\nLocation in the menu: P3.1.1.4\nFind the value In on the nameplate of the motor.\n11.3.1.5 (ID 120) Motor Cos Phi\nLocation in the menu: P3.1.1.5\nFind the value on the nameplate of the motor.\n11.3.1.6 (ID 116) Motor Nominal Power\nLocation in the menu: P3.1.1.6\nFind the value Pn on the nameplate of the motor.\n11.3.2 Motor Control Parameters\n11.3.2.1 (ID 650) Motor Type\nLocation in the menu: P3.1.2.2\nUse this parameter to set the type of motor in the process.\nSelection number\nSelection name\nDescription\n0\nInduction motor (IM)\nMake this selection if an induction motor is in use.\n1\nPermanent Magnet Motor (PM)\nMake this selection if permanent magnet motor is in use.\n2\nReluctance Motor\nMake this selection if a reluctance motor is in use.\nWhen the value of parameter P3.1.2.2 Motor Type is changed, the values of parameters P3.1.4.2 Field Weakening Point Frequency\nand P3.1.4.3 Voltage at Field Weakening Point change automatically. See the following table. The 2 parameters have different values\nfor each motor type.\n164 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Induction motor (IM)",
+            "Make this selection if an induction motor is in use."
+          ],
+          [
+            "1",
+            "Permanent Magnet Motor (PM)",
+            "Make this selection if permanent magnet motor is in use."
+          ],
+          [
+            "2",
+            "Reluctance Motor",
+            "Make this selection if a reluctance motor is in use."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nParameter\nInduction motor (IM)\nPermanent magnet motor (PM)\nP3.1.4.2 (Field Weakening Point Frequency)\nMotor nominal frequency\nInternally calculated\nP3.1.4.3 (Voltage at Field Weakening Point)\n100.0%\nInternally calculated\n11.3.2.2 (ID 601) Switching Frequency\nLocation in the menu: P3.1.2.3\nUse this parameter to set the switching frequency of the AC drive.\nIf the switching frequency is increased, the capacity of the AC drive reduces. To reduce capacitive currents in the motor cable, when\nthe cable is long, we recommend using a low switching frequency. To reduce the motor noise, use a high switching frequency.\n11.3.2.3 (ID 631) Identification\nLocation in the menu: P3.1.2.4\nUse this parameter to find the parameter values that are optimal for the operation of the drive.\nThe identification run calculates or measures the motor parameters that are necessary for a good control of the motor and speed.\nThe identification run helps to adjust the motor-specific and the drive-specific parameters. It is a tool for the commissioning and the\nservicing of the drive.\nNOTICE\nBefore the identification run, set the motor nameplate parameters.\nSelection\nnumber\nSelection name\nDescription\n0\nNo action\nNo identification requested.\n1\nIdentification at\nstandstill\nThe drive operates without speed when doing the identification run for the motor parame-\nters. The motor receives current and voltage, but the frequency is zero. The U/f ratio and start\nmagnetization parameters are identified.\n2\nIdentification with\nrotation\nThe drive operates with speed when doing the identification run for the motor parameters.\nThe U/f ratio, the magnetization current and start magnetization parameters are identified.\nTo get accurate results, do this identification run with no load on the motor shaft.\nTo activate the Identification function, set the parameter P3.1.2.4 and give a start command. The start command must be given in\n20 s. If there is no start command in that time, the identification run does not start. The parameter P3.1.2.4 is reset to the default\nvalue and an identification alarm shows.\nTo stop the identification run before it is completed, give a stop command. This resets the parameter to the default value. If the\nidentification run is not completed, an identification alarm shows.\nNOTICE\nTo start the drive after the identification, a new start command is necessary.\n11.3.2.4 (ID 612) Magnetizing Current\nLocation in the menu: P3.1.2.5\nUse this parameter to set the magnetizing current of the motor.\nThe magnetizing current (no-load current) of the motor identifies the values of the U/f parameters when they are given before the\nidentification run. If the value is set to 0, the magnetizing current is calculated internally.\n11.3.2.5 (ID 653) Motor Switch\nLocation in the menu: P3.1.2.6\nUse this parameter to enable the Motor Switch function. Use the Motor Switch function, if the cable that connects the motor and\nthe drive has a motor switch. The operation of the motor switch makes sure that the motor is isolated from the voltage source and\ndoes not start during the servicing.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 165",
+      "tablas": [
+        [
+          [
+            "Parameter",
+            "Induction motor (IM)",
+            "Permanent magnet motor (PM)"
+          ],
+          [
+            "P3.1.4.2 (Field Weakening Point Frequency)",
+            "Motor nominal frequency",
+            "Internally calculated"
+          ],
+          [
+            "P3.1.4.3 (Voltage at Field Weakening Point)",
+            "100.0%",
+            "Internally calculated"
+          ]
+        ],
+        [
+          [
+            ""
+          ],
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "No action",
+            "No identification requested."
+          ],
+          [
+            "1",
+            "Identification at standstill",
+            "The drive operates without speed when doing the identification run for the motor parame- ters. The motor receives current and voltage, but the frequency is zero. The U/f ratio and start magnetization parameters are identified."
+          ],
+          [
+            "2",
+            "Identification with rotation",
+            "The drive operates with speed when doing the identification run for the motor parameters. The U/f ratio, the magnetization current and start magnetization parameters are identified. To get accurate results, do this identification run with no load on the motor shaft."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nTo activate the function, set the parameter P3.1.2.6 to the value Enabled. The drive stops automatically when the motor switch is\nopened, and the drive starts automatically when the motor switch is closed. The drive does not trip when using the Motor switch\nfunction.\nB\ne30bu030\n1\nA\nIllustration 35: The Motor Switch Between the Drive and the Motor\nA\nThe motor switch\nB\nMains\n11.3.2.6 (ID 607) Overvoltage Control\nLocation in the menu: P3.1.2.10\nUse this parameter to set the overvoltage controller out of operation.\nThe function is necessary when\n. the supply voltage changes, for example, between -15% and +10%, and\n. the controlled process does not have the tolerance for the changes that the undervoltage controller and the overvoltage con-\ntroller make to the output frequency of the drive.\nThe overvoltage controller increases the output frequency of the drive\n· to keep the DC link voltage in the permitted limits, and\n· to make sure that the drive does not trip because of an overvoltage fault.\nNOTICE\nThe drive can trip when the overvoltage and undervoltage controllers are disabled.\n11.3.2.7 (ID 608) Undervoltage Control\nLocation in the menu: P3.1.2.11\nUse this parameter to set the undervoltage controller out of operation.\nThe function is necessary when\n· the supply voltage changes, for example, between -15% and +10%, and\n. the controlled process does not have the tolerance for the changes that the undervoltage controller and the overvoltage con-\ntroller make to the output frequency of the drive.\nThe undervoltage controller decreases the output frequency of the drive\n· to get energy from the motor to keep the DC-link voltage at a minimum level when the voltage is near the lowest permitted\nlimit, and\n· to make sure that the drive does not trip because of an undervoltage fault.\n166 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nNOTICE\nThe drive can trip when the overvoltage and undervoltage controllers are disabled.\n11.3.2.8 (ID 666) Energy Optimization\nLocation in the menu: P3.1.2.12\nUse this parameter to enable the Energy Optimization function. To save energy and to lower the motor noise, the drive searches for\nthe minimum motor current. Use this function, for example in fan and pump processes. Do not use the function with fast PID con-\ntrolled processes.\n11.3.2.9 (ID 659) Stator Voltage Adjust\nLocation in the menu: P3.1.2.13\nUse this parameter to adjust the stator voltage in permanent magnet motors.\nNOTICE\nThe identification run sets a value for this parameter automatically. We recommend the identification run, if it is possible. Make\nthe identification run with the parameter P3.1.2.4.\nIt is possible to use this parameter only when the parameter P3.1.2.2 Motor Type has the value PM motor. If induction motor is\nselected as the motor type, the value is automatically set to 100%, and the value cannot be changed.\nWhen changing the value of P3.1.2.2 (Motor type) to PM Motor, the parameters P3.1.4.2 (Field Weakening Point Frequency) and\nP3.1.4.3 (Voltage at Field Weakening Point) increase automatically to be equal with output voltage of the drive. The set U/f ratio\ndoes not change. This is done to prevent the operation of the PM motor in the field weakening area. The nominal voltage of the PM\nmotor is much lower than the full output voltage of the drive.\nThe nominal voltage of the PM motor agrees to the back EMF voltage of the motor at nominal frequency. But in a different motor\nmanufacturer, it can be equal to, for example, the stator voltage at nominal load.\nStator Voltage Adjust helps to adjust the U/f curve of the drive near the back EMF curve. It is not necessary to change the values of\nmany U/f curve parameters.\nThe parameter P3.1.2.13 gives the output voltage of the drive in percentage of the nominal voltage of the motor at the nominal\nfrequency of the motor. Adjust the U/f curve of the drive above the back EMF curve of the motor. The motor current increases the\nmore the U/f curve is different from the back EMF curve.\nField Weakening\nPoint Voltage\nU [V]\nStator Voltage Adjust\n(50 ... 200%)\n200%\n-\n-\n-\n100%\nback-EMF\ne30bu032\n1\nMotor Nominal\nVoltage\n1.\n/\n/\n50%\n1\n1\n-\nZero Frequency\nVoltage\nf [Hz]\nMotor Nominal\nFrequency\nField\nWeakening\nPoint\nIllustration 36: The Stator Voltage Adjustment\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 167",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.3.2.10 (ID 662) Stator Resistance Voltage Drop\nLocation in the menu: P3.1.2.15\nUse this parameter to set the motor stator phase-resistance value (in star-connection equivalent circuit). The resistance is essential\nfor an accurate motor control.\nThe value is given as a percentage of voltage drop at nominal current.\nNOTICE\nThe identification run sets a value for this parameter automatically. We recommend the identification run, if it is possible. Make\nthe identification run with the parameter P3.1.2.4.\n11.3.2.11 (ID 673) Stator Inductance Voltage Drop\nLocation in the menu: P3.1.2.16\nUse this parameter to set the motor stator phase-inductance value (in star-connection equivalent circuit). The value is the transient\ninductance (for induction motors) or the line-to-neutral inductance (for permanent magnet and reluctance motors).\nThe value is given as a percentage of voltage drop at nominal current and nominal frequency.\nNOTICE\nThe identification run sets a value for this parameter automatically. We recommend the identification run, if it is possible. Make\nthe identification run with the parameter P3.1.2.4.\n11.3.2.12 (ID 674) Motor BEM Voltage\nLocation in the menu: P3.1.2.17\nUse this parameter to set the back electromotive force (back EMF) voltage of a permanent magnet motor. The value of this parame-\nter is the motor terminal voltage when the motor current is zero.\nThe value is given as line-to-line RMS voltage at nominal operating frequency. Identification at standstill uses this parameter to set\nU/f curve in open loop control mode. The back EMF value that is identified in Identification with rotation overwrites the existing\nparameter value.\n11.3.3 Motor Limits\n11.3.3.1 (ID 107) Motor Current Limit\nLocation in the menu: P3.1.3.1\nUse this parameter to set the maximum motor current from the AC drive. The range of values for the parameter is different for each\nenclosure size of the drive.\nWhen the current limit is active, the drive output frequency decreases.\nNOTICE\nThe Motor Current Limit is not an overcurrent trip limit.\n11.3.3.2 (ID 1287) Motor Torque Limit\nLocation in the menu: P3.1.3.2\nUse this parameter to set the maximum torque limit of the motoring side.\nThe range of values for the parameter is different for each enclosure size of the drive.\n11.3.4 Open Loop Parameters\n11.3.4.1 (ID 108) U/F Ratio\nLocation in the menu: P3.1.4.1\nUse this parameter to set the type of the U/f curve between zero frequency and the field weakening point.\n168 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nSelec-\ntion\nnum-\nber\nSelection\nname\nDescription\n0\nLinear\nThe voltage of the motor changes linearly as a function of the output frequency. The voltage changes\nfrom the value of P3.1.4.6 (Zero Frequency Voltage) to the value of P3.1.4.3 (Voltage at Field Weakening\nPoint) at a frequency set in P3.1.4.2 (Field Weakening Point Frequency). Use this default setting if a dif-\nferent setting is not necessary.\n1\nSquared\nThe voltage of the motor changes from the value of P3.1.4.6 (Zero Frequency Voltage) to the value of\nP3.1.4.2 (Field Weakening Point Frequency) at a squared curve. The motor operates undermagnetized\nbelow the field weakening point and produces less torque. Use the squared U/f ratio in applications\nwhere the torque demand is in relation to the square of the speed, for example in centrifugal fans and\npumps.\n2\nProgram-\nmable\nIt is possible to program the U/f curve with 3 different points: the zero frequency voltage (P1), the mid-\npoint voltage/ frequency (P2), and the field weakening point (P3). Use the programmable U/f curve at\nlow frequencies if it is necessary to have more torque. Use the identification run (P3.1.2.4) to find the\noptimal settings automatically.\nUn\nID603\nU[V]\nA\ne30bu033\nB\nC\nD\nE\nf[Hz]\nID602\nIllustration 37: Linear and Squared Change of the Motor Voltage\nA\nDefault: Nominal voltage of the motor\nD\nSquared\nB\nField weakening point\nE\nDefault: Nominal frequency of the motor\nC\nLinear\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 169",
+      "tablas": [
+        [
+          [
+            "Selec- tion num- ber",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Linear",
+            "The voltage of the motor changes linearly as a function of the output frequency. The voltage changes from the value of P3.1.4.6 (Zero Frequency Voltage) to the value of P3.1.4.3 (Voltage at Field Weakening Point) at a frequency set in P3.1.4.2 (Field Weakening Point Frequency). Use this default setting if a dif- ferent setting is not necessary."
+          ],
+          [
+            "1",
+            "Squared",
+            "The voltage of the motor changes from the value of P3.1.4.6 (Zero Frequency Voltage) to the value of P3.1.4.2 (Field Weakening Point Frequency) at a squared curve. The motor operates undermagnetized below the field weakening point and produces less torque. Use the squared U/f ratio in applications where the torque demand is in relation to the square of the speed, for example in centrifugal fans and pumps."
+          ],
+          [
+            "2",
+            "Program- mable",
+            "It is possible to program the U/f curve with 3 different points: the zero frequency voltage (P1), the mid- point voltage/ frequency (P2), and the field weakening point (P3). Use the programmable U/f curve at low frequencies if it is necessary to have more torque. Use the identification run (P3.1.2.4) to find the optimal settings automatically."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nU[V]\nUn-\nID603\nA\nP3\ne30bu034\nB\n1\nID605\nID606\nTP1\nP2\nID604\nC\nID602\nf[Hz]\nIllustration 38: The Programmable U/f Curve\nA\nDefault: Nominal voltage of the motor\nC\nDefault: Nominal frequency of the motor\nB\nField weakening point\nWhen the parameter Motor Type has the value PM motor (Permanent Magnet Motor), this parameter is automatically set to the\nvalue Linear.\nWhen the parameter Motor Type has the value Induction Motor, and when this parameter is changed, these parameters are set to\ntheir default values:\n· P3.1.4.2 Field Weakening Point Frequency\n· P3.1.4.3 Voltage at Field Weakening Point\n· P3.1.4.4 U/f Midpoint Frequency\n•\nP3.1.4.5 U/f Midpoint Voltage\n· P3.1.4.6 Zero Frequency Voltage\n11.3.4.2 (ID 602) Field Weakening Point Frequency\nLocation in the menu: P3.1.4.2\nUse this parameter to set the output frequency at which the output voltage reaches the field weakening point voltage.\n11.3.4.3 (ID 603) Voltage at Field Weakening Point\nLocation in the menu: P3.1.4.3\nUse this parameter to set the voltage at the field weakening point as a percentage of the motor nominal voltage.\nAbove the frequency at the field weakening point, the output voltage stays at the set maximum value. Below the frequency at the\nfield weakening point, the U/f curve parameters control the output voltage. See the U/f parameters P3.1.4.1, P3.1.4.4 and P3.1.4.5.\nWhen setting the parameters P3.1.1.1 (Motor nominal voltage) and P3.1.1.2 (Motor nominal frequency), the parameters P3.1.4.2 and\nP3.1.4.3 automatically receive related values. To have different values for P3.1.4.2 and P3.1.4.3, change these parameters only after\nsetting the parameters P3.1.1.1 and P3.1.1.2.\n11.3.4.4 (ID 604) U/f Midpoint Frequency\nLocation in the menu: P3.1.4.4\nUse this parameter to set the middle point frequency of the U/f curve.\nNOTICE\nThis parameter gives the middle point frequency of the curve if the value of P3.1.4.1 is programmable.\n170 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.3.4.5 (ID 605) U/f Midpoint Voltage\nLocation in the menu: P3.1.4.5\nUse this parameter to set the middle point voltage of the U/f curve.\nNOTICE\nThis parameter gives the middle point voltage of the curve if the value of P3.1.4.1 is programmable.\n11.3.4.6 (ID 606) Zero Frequency Voltage\nLocation in the menu: P3.1.4.6\nUse this parameter to set the zero frequency voltage of the U/f curve. The default value for the parameter is different for each unit\nsize.\n11.3.4.7 (ID 1590) Flying Start Options\nLocation in the menu: P3.1.4.7\nUse this parameter to set the flying start options. The parameter Flying Start Options has a checkbox selection of values.\nThe bits can receive these values.\n. Search the shaft frequency only from the same direction as the frequency reference\n•\nDisable the AC scanning\n· Use the frequency reference for an initial guess\n· Disable the DC pulses\n· Flux build with current control\nThe bit B0 controls the search direction. With the bit set to 0, the shaft frequency is searched in 2 directions, the positive and the\nnegative. With the bit set to 1, the shaft frequency is searched only in the frequency reference direction. It prevents the shaft move-\nments for the other direction.\nThe bit B1 controls the AC scanning that premagnetizes the motor. In the AC scanning, the system sweeps the frequency from the\nmaximum towards zero frequency. The AC scanning stops when an adaptation to the shaft frequency occurs. To disable the AC\nscanning, set the bit B1 to 1. If the value of Motor Type is permanent magnet motor, the AC scanning is disabled automatically.\nUse the bit B5 to disable the DC pulses. The primary function of the DC pulses is to premagnetize the motor and examine the rota-\ntion of the motor. If the DC pulses and the AC scanning are enabled, the slip frequency tells which procedure is applied. If the slip\nfrequency is less than 2 Hz, or the motor type is PM motor, the DC pulses are disabled automatically.\nThe bit B7 controls the rotation direction of the injected high frequency signal, which is used in the flying start of synchronous\nreluctance machines. Signal injection is used to detect the frequency of the rotor. If the rotor is in a blind angle when the signal is\ninjected, the rotor frequency is undetectable. Reversing the rotation direction of the injection signal solves this problem.\n11.3.4.8 (ID 1610) Flying Start Scan Current\nLocation in the menu: P3.1.4.8\nUse this parameter to set the flying start scan current as a percentage of the motor nominal current.\n11.3.4.9 (ID 109) Start Boost\nLocation in the menu: P3.1.4.9\nUse this parameter with a process that has a high starting torque because of friction.\nUse the start boost only when starting the drive. The start boost is deactivated after 10 s or when the output frequency of the drive\nis more than half of the frequency of the field weakening point.\nThe voltage to the motor changes in relation to the necessary torque. It makes the motor give more torque at the start and when\nthe motor operates at low frequencies.\nThe start boost affects a linear U/f curve. To get the best result, do the identification run and activate the programmable U/f curve.\n11.3.5 I/f Start Function\nWith a PM motor, use the I/f Start function to start the motor with constant current control. A high power motor gives the best\neffect. With a high power motor, the resistance is low and it is not easy to change the U/f curve.\nThe I/f Start function can also give a sufficient torque for the motor at start up.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 171",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n[A]\nB\ne30bu035.10\nA\nC\n[s]\nD\nIllustration 39: The I/f Start Parameters\nA\nI/f Start Current\nC\nMotor Current\nB\nOutput Frequency\nD\nI/f Start Frequency\n11.3.5.1 (ID 534) I/f Start\nLocation in the menu: P3.1.4.12.1\nUse this parameter to enable the I/f start function.\nWhen the I/f start function is activated, the drive starts to operate in the current control mode. A constant current is led to the motor\nuntil the output frequency increases above the level that is set in P3.1.4.12.2. When the output frequency increases above I/f Start\nFrequency level, the operation mode changes back to the normal U/f control mode.\n11.3.5.2 (ID 535) I/f Start Frequency\nLocation in the menu: P3.1.4.12.2\nUse this parameter to set the output frequency limit below which the set /f start current is fed to motor.\nWhen the output frequency of the drive is below the limit of this parameter, I/f start function activates. When the output frequency\nis more than the limit, the drive operation mode changes back to the normal U/f control mode.\n11.3.5.3 (ID 536) I/f Start Current\nLocation in the menu: P3.1.4.12.3\nUse this parameter to set the current that is used when the I/f start function is enabled.\n11.3.6 Torque Stabilator Function\n11.3.6.1 (ID 1412) Torque Stabilator Gain\nLocation in the menu: P3.1.4.13.1\nUse this parameter to set the gain of the torque stabilator in an open loop control operation.\n11.3.6.2 (ID 1414) Torque Stabilator Gain at Field Weakening Point\nLocation in the menu: P3.1.4.13.2\nUse this parameter to set the gain of the torque stabilator at field weakening point in an open loop control operation. The torque\nstabilizer stabilizes the possible oscillations in the estimated torque.\nTwo gains are used. TorqStabGainFWP is a constant gain at all the output frequencies. TorqStabGain changes linearly between the\nzero frequency and the field weakening point frequency. The full gain is at 0 Hz and the gain is zero at the field weakening point.\nThe figure shows the gains as a function of output frequency.\n172 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "A",
+            "I/f Start Current",
+            "C Motor Current\n:unselected:"
+          ],
+          [
+            "B",
+            "Output Frequency",
+            "D I/f Start Frequency\n:unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nGain\ne30bu036\nEffective gain\nP\nTorqStabGainFWP\nP\nTorqStabGain\nP\nFieldWeakeningPoint\nFreqOut\nIllustration 40: The Torque Stabilator Gain\n11.3.6.3 (ID 1413) Torque Stabilator Damping Time Constant\nLocation in the menu: P3.1.4.13.3\nUse this parameter to set the damping time constant of the torque stabilizer.\n11.3.6.4 (ID 1735) Torque Stabilator Damping Time Constant for PM Motors\nLocation in the menu: P3.1.4.13.4\nUse this parameter to set the damping time constant of the torque stabilizer for permanent magnet or reluctance motors.\n11.3.6.5 (ID 15650) Torque Stabilator Filter Time Constant\nLocation in the menu: P3.1.4.13.5\nUse this parameter to set the lowpass filtering time constant of the torque stabilizer.\n11.3.6.6 (ID 15651) Torque Stabilator Filter Time Constant for PM Motors\nLocation in the menu: P3.1.4.13.6\nUse this parameter to set the lowpass filtering time constant of the torque stabilizer for permanent magnet or reluctance motors.\n11.4 Start/Stop Setup\n11.4.1 Start and Stop Commands in Different Control Places\nStart and stop commands must be given differently in each control place.\nRemote Control Place (I/O A)\nUse the parameters P3.5.1.1 (Control signal 1 A), P3.5.1.2 (Control signal 2 A) and P3.5.1.3 (Control signal 3 A) to select digital inputs.\nThese digital inputs control the start, stop, and reverse commands. Then select a logic for these inputs with P3.2.6 I/O A Logic.\nRemote Control Place (I/O B)\nUse the parameters P3.5.1.4 (Control signal 1 B), P3.5.1.5 (Control signal 2 B) and P3.5.1.6 (Control signal 3 B) to select digital inputs.\nThese digital inputs control the start, stop, and reverse commands. Then select a logic for these inputs with P3.2.7 I/O B Logic.\nLocal Control Place (Keypad)\nThe start and stop commands come from the keypad buttons. The direction of the rotation is set with parameter P3.3.1.9 Keypad\ndirection.\nRemote Control Place (Fieldbus)\nStart, stop, and reverse commands come from the fieldbus.\n11.4.2 (ID 172) Remote Control Place\nLocation in the menu: P3.2.1\nUse this parameter to select the remote control place (start/stop). Use this parameter to change back to remote control from VA-\nCON® Live, for example if the control panel is broken.\n11.4.3 (ID 211) Local/Remote\nLocation in the menu: P3.2.2\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 173",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Parameter Descriptions\nVACON® 100 FLOW\nApplication Guide\nDanfoss\nUse this parameter to switch between the local and remote control places. Local control place is always keypad control. The remote\ncontrol place can be I/O or Fieldbus, depending on the 'Remote Control Place' parameter value.\n11.4.4 (ID 114) Keypad Stop Button\nLocation in the menu: P3.2.3\nUse this parameter to enable the keypad stop button. When this function is enabled, a press of keypad stop button always stops the\ndrive (regardless of the control place). When this function is disabled, a press of keypad stop button stops the drive in local control\nonly.\nSelection number\nSelection name\nDescription\n0\nYes\nThe keypad stop button is always enabled.\n1\nNo\nLimited function of the keypad stop button.\n11.4.5 (ID 505) Start Function\nLocation in the menu: P3.2.4\nUse this parameter to select the type of the start function.\nSelection number\nSelection name\nDescription\n0\nRamping\nThe drive accelerates from 0 frequency to frequency reference.\n1\nFlying start\nThe drive detects the actual speed of the motor and accelerates from that speed to fre-\nquency reference.\n11.4.6 (ID 506) Stop Function\nLocation in the menu: P3.2.5\nUse this parameter to select the type of the stop function.\nSelection\nnumber\nSelection\nname\nDescription\n0\nCoasting\nThe motor stops on its inertia. When the stop command is given, the control by the drive\nstops and the current from the drive goes to 0.\n1\nRamp\nAfter the stop command, the speed of the motor is decreased to zero speed according to the\ndeceleration parameters.\nNOTICE\nRamp stop cannot be guaranteed in all situations. If ramp stop is selected and the net voltage changes over 20%, the voltage\nestimation fails. In such case, ramp stop is not possible.\n11.4.7 (ID 300) I/O A Start/Stop Logic\nLocation in the menu: P3.2.6\nUse this parameter to control the start and stop of the drive with the digital signals. The selections can include the word 'edge' to\nhelp preventing an accidental start.\nAn accidental start can occur, for example, in these conditions:\n· When the power is connected.\n· When the power is connected again after a power cut.\n· After resetting a fault.\n· After Run Enable stops the drive.\n· When changing the control place to I/O control.\nBefore starting the motor, the Start/Stop contact must be opened.\nIn all the examples of the next pages, the stop mode is coasting. CS = Control signal.\n174 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Yes",
+            "The keypad stop button is always enabled."
+          ],
+          [
+            "1",
+            "No",
+            "Limited function of the keypad stop button."
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Ramping",
+            "The drive accelerates from 0 frequency to frequency reference."
+          ],
+          [
+            "1",
+            "Flying start",
+            "The drive detects the actual speed of the motor and accelerates from that speed to fre- quency reference."
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Coasting",
+            "The motor stops on its inertia. When the stop command is given, the control by the drive stops and the current from the drive goes to 0."
+          ],
+          [
+            "1",
+            "Ramp",
+            "After the stop command, the speed of the motor is decreased to zero speed according to the deceleration parameters."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nV\nControl\nPlace\n1\nCTRLPLACE\nI/O A\nEQ\nIN 1\nIN 2\nV\nStart Allowed\nAND\nIN 1\nIN 2\nP\nI/O A (/B)Logic\ne30bu037\nIO_StartFunction\nEnable\nStartStopLogic\nStart\nReverse\nV\nI/O Ctrl A(/B)\nReverse\nV I/O Ctrl A(/B) Start\nIO\nCtrl Signal 1 A(/B)\nIO\nCtrl Signal 2 A(/B)\nIO\nCtrl Signal 3 A(/B)\nKP\nStartButton\nKeypadStopButton:\nNO=FALSE\nYES=TRUE\nP\nKeypadStopButton\n0\nFALSE\nKP\nStopButton\nSEL\nG\nIN 0\nIN 1\nSignal 1\nForceStopActive\nSignal 2\nSignal 3\nButtonStart\nForceStop\nV Trig Panel Info\nV\nTrig Panel\nInfo\nInfo Message\nDrive has been forced to stop\nstate from keypad\nDrive can be restarted by\npressing start button on\nkeypad, as long as the Run\nsignal is kept continuously\nactive from the original source\nIllustration 41: The Block Diagram of the I/O A Start/Stop Logic\nSelection = 0\nSelection number\nSelection name\nDescription\n0\nCS1 = Forward\nCS2 = Backward\nThe functions activate when the contacts are closed.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 175",
+      "tablas": [
+        [
+          [
+            "IO",
+            "Ctrl Signal 1 A(/B)"
+          ],
+          [
+            "IO",
+            "Ctrl Signal 2 A(/B)"
+          ],
+          [
+            "IO",
+            "Ctrl Signal 3 A(/B)"
+          ],
+          [
+            "KP",
+            "StartButton"
+          ]
+        ],
+        [
+          [
+            "P",
+            "KeypadStopButton"
+          ],
+          [
+            "0",
+            "FALSE"
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "CS1 = Forward CS2 = Backward",
+            "The functions activate when the contacts are closed."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nFWD\nOutput\nfrequency\nSet frequency\nDanfoss\nParameter Descriptions\ne30bu038\nt\n0 Hz\nSet frequency\nREV\nRun enable\nCtrl signal 1\nCtrl signal 2\nKeypad start\nbutton\nKeypad stop\nbutton\n1\n2 3\n4\n5\n1\n1\n6\n7\nIllustration 42: I/O A Start/Stop Logic = 0\n1\nControl signal (CS) 1 activates and causes the output\nfrequency to increase. The motor operates forward.\n2\nCS2 activates, but it does not affect the output fre-\nquency, because the direction that is set first has the\nhighest priority.\n3\nCS1 becomes inactive and causes the direction to\nstart to change (FWD to REV), because CS2 is still ac-\ntive.\n4\nCS2 becomes inactive and the frequency that is fed\nto the motor goes to 0.\n5\nCS2 activates again and causes the motor to acceler-\nate (REV) to the set frequency.\n6\nCS2 becomes inactive and the frequency fed to the\nmotor drops to 0.\n7\nCS1 activates and the motor accelerates (FWD) to\nthe set frequency.\n8\n9\n10)\n11\n12)\n13\n8\nThe Run enable signal is set to OPEN, which causes\nthe frequency to go to 0. Configure the Run enable\nsignal with parameter P3.5.1.15.\n9\nThe Run enable signal is set to CLOSED, which cau-\nses the frequency to increase to the set frequency,\nbecause CS1 is still active.\n10\nThe STOP button on the keypad is pushed, and the\nfrequency that is fed to the motor goes to 0. (This\nsignal only works if the value of P3.2.3 Keypad Stop\nButton is Yes.)\n11\nThe drive starts because the START button on the\nkeypad was pushed.\n12\nThe STOP button on the keypad is pushed again to\nstop the drive.\n13\nThe attempt to start the drive with the START button\nis not successful, because CS1 is inactive.\nSelection = 1\nSelection number\nSelection name\nDescription\n1\nCS1 = Forward (edge)\nCS2 = Inverted stop\nCS3 = Backward (edge)\nFor a 3-wire control (pulse control)\n176 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "1",
+            "CS1 = Forward (edge) CS2 = Inverted stop CS3 = Backward (edge)",
+            "For a 3-wire control (pulse control)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "VACON® 100 FLOW\nDanfoss\nParameter Descriptions\nApplication Guide\nFWD\nOutput\nfrequency\ne30bu039\nSet frequency\nt\n0 Hz\nSet frequency\nREV V\nRun enable\n1\nCtrl signal 1\n1\nCtrl signal 2\n1\nCtrl signal 3\n1\nKeypad stop\nbutton\n-\n-\n-\n-\n1\n2\n3\n4\n1\n-\n-\n1\n1\n6\n(7\n8\n9\n10\n(5\nIllustration 43: I/O A Start/Stop Logic = 1\n1\nControl signal (CS) 1 activates and causes the output\nfrequency to increase. The motor operates forward.\n6\nThe start attempt with CS1 is not successful, be-\ncause the Run enable signal is still OPEN.\n2\nCS2 becomes inactive and causes the frequency to\ngo to 0.\n3\nCS1 activates and causes the output frequency to in-\ncrease again. The motor operates forward.\n4\nCS3 activates and causes the direction to start to\nchange (FWD to REV).\n7\nCS1 activates and the motor accelerates (FWD) to\nthe set frequency, because the Run enable signal\nwas set to CLOSED.\n8\nThe STOP button on the keypad is pushed, and the\nfrequency that is fed to the motor goes to 0. (This\nsignal only works if the value of P3.2.3 Keypad Stop\nButton is Yes.)\n5\nThe Run enable signal is set to OPEN, which causes\nthe frequency to go to 0. Configure the Run enable\nsignal with parameter 3.5.1.15.\n9\nCS3 activates and causes the motor to start and to\noperate in the reverse direction.\n10\nCS2 becomes inactive and causes the frequency to\ngo to 0.\nSelection = 2\nSelection number\nSelection name\nDescription\n2\nCS1 = Forward (edge)\nCS2 = Backward (edge)\nUse this function to prevent an accidental start. Before starting the motor again,\nthe start/stop contact must be opened.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 177",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "2",
+            "CS1 = Forward (edge) CS2 = Backward (edge)",
+            "Use this function to prevent an accidental start. Before starting the motor again, the start/stop contact must be opened."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nFWD\nOutput\nfrequency\nSet\nfrequency\n0 Hz\nSet\nfrequency\nREV\nRun enable\nCtrl signal 1\nCtrl signal 2\nKeypad stop\nbutton\n1)\n(2) (3\n4)\n5\nDanfoss\nParameter Descriptions\ne30bu040\nt\n6\n7\nIllustration 44: I/O A Start/Stop Logic = 2\n1\nControl signal (CS) 1 activates and causes the output\nfrequency to increase. The motor operates forward.\n2\nCS2 activates, but it does not affect the output fre-\nquency, because the direction that is set first has the\nhighest priority.\n3\nCS1 becomes inactive and causes the direction to\nstart to change (FWD to REV), because CS2 is still ac-\ntive.\n4\nCS2 becomes inactive and the frequency that is fed\nto the motor goes to 0.\n5\nCS2 activates again and causes the motor to acceler-\nate (REV) to the set frequency.\n6\nCS2 becomes inactive and the frequency that is fed\nto the motor goes to 0.\n10)\n11\n89\n12\n7\nCS1 activates and the motor accelerates (FWD) to\nthe set frequency.\n8\nThe Run enable signal is set to OPEN, which causes\nthe frequency to go to 0. Configure the Run enable\nsignal with parameter P3.5.1.15.\n9\nThe Run enable signal is set to CLOSED, which does\nnot affect, because a rising edge is necessary for the\nstart, even if CS1 is active.\n10\nThe STOP button on the keypad is pushed and the\nfrequency that is fed to the motor goes to 0. (This\nsignal only works if the value of P3.2.3 Keypad Stop\nButton is Yes.)\n11\nCS1 is opened and closed again, which causes the\nmotor to start.\n12\nCS1 becomes inactive and the frequency that is fed\nto the motor goes to 0.\nSelection = 3\nSelection number\nSelection name\nDescription\n3\nCS1 = Start\nCS2 = Reverse\n178 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "3",
+            "CS1 = Start",
+            ""
+          ],
+          [
+            "",
+            "CS2 = Reverse",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nFWD4\nOutput\nfrequency\ne30bu041\nSet\nfrequency\n1\nt\n0 Hz\nSet\nI\nI\nfrequency\n1\nI\n1\n1\n1\nREV\nI\n1\n1\nRun enable\n1\n1\n1\n1\nI\nCtrl signal 1\nCtrl signal 2\n1\n1\nKeypad start\nbutton\n1\nKeypad stop\nI\n1\n1\nbutton\n1\n2\n3\n4\n6\n7)\n8\n1\n1\n1\nI\nI\n1.\n1.\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\nI\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n9\n10\n11\n12\n5\nIllustration 45: I/O A Start/Stop Logic = 3\n1\nControl signal (CS) 1 activates and causes the output\nfrequency to increase. The motor operates forward.\n2\nCS2 activates and causes the direction to start to\nchange (FWD to REV).\n3\nCS2 becomes inactive, which causes the direction to\nstart to change (REV to FWD), because CS1 is still ac-\ntive.\n4\nCS1 becomes inactive and the frequency goes to 0.\n5\nCS2 activates, but the motor does not start because\nCS1 is inactive.\n6\nCS1 activates and causes the output frequency to in-\ncrease again. The motor operates forward because\nCS2 is inactive.\n7\nThe Run enable signal is set to OPEN, which causes\nthe frequency to go to 0. Configure the Run enable\nsignal with parameter P3.5.1.15.\n8\nThe Run enable signal is set to CLOSED, which cau-\nses the frequency to increase to the set frequency,\nbecause CS1 is still active.\n9\nThe STOP button on the keypad is pushed and the\nfrequency that is fed to the motor goes to 0. (This\nsignal only works if the value of P3.2.3 Keypad Stop\nButton is Yes.)\n10\nThe drive starts because the START button on the\nkeypad was pushed.\n11\nThe drive is stopped again with the STOP button on\nthe keypad.\n12\nThe attempt to start the drive with the START button\nis not successful, because CS1 is inactive.\nSelection = 4\nSelection number\nSelection name\nDescription\n4\nCS1 = Start (edge)\nCS2 = Reverse\nUse this function to prevent an accidental start. Before starting the motor again, the\nstart/stop contact must be opened.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 179",
+      "tablas": [
+        [
+          [
+            "7",
+            "The Run enable signal is set to OPEN, which causes the frequency to go to 0. Configure the Run enable signal with parameter P3.5.1.15."
+          ],
+          [
+            "8",
+            "The Run enable signal is set to CLOSED, which cau- ses the frequency to increase to the set frequency, because CS1 is still active."
+          ],
+          [
+            "9",
+            "The STOP button on the keypad is pushed and the frequency that is fed to the motor goes to 0. (This signal only works if the value of P3.2.3 Keypad Stop Button is Yes.)"
+          ],
+          [
+            "10",
+            "The drive starts because the START button on the keypad was pushed."
+          ],
+          [
+            "11",
+            "The drive is stopped again with the STOP button on the keypad."
+          ],
+          [
+            "12",
+            "The attempt to start the drive with the START button is not successful, because CS1 is inactive."
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "4",
+            "CS1 = Start (edge) CS2 = Reverse",
+            "Use this function to prevent an accidental start. Before starting the motor again, the start/stop contact must be opened."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nFWD\nOutput\nfrequency\nSet\nfrequency\n1\n1\n0 Hz\n1\nSet\nfrequency\n1\n1\nREV\n1\n1\n1\n1\nI\nRun enable\n1\nDanfoss\nParameter Descriptions\ne30bu042\nt\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\nI\n1\n1\n1\n1\nI\nCtrl signal 1\n1\nCtrl signal 2\nKeypad stop\n1\n1\n1\n1\nI\n1\nbutton\n2\n34\n6\n7\n8\n9\n10\n11\n5\nIllustration 46: I/O A Start/Stop Logic = 4\n1\nControl signal (CS) 1 activates and causes the output\nfrequency to increase. The motor operates forward\nbecause CS2 is inactive.\n2\nCS2 activates, which causes the direction to start to\nchange (FWD to REV).\n3\nCS2 becomes inactive, which causes the direction to\nstart to change (REV to FWD), because CS1 is still ac-\ntive.\n4\nCS1 becomes inactive and the frequency goes to 0.\n5\nCS2 activates, but the motor does not start because\nCS1 is inactive.\n6\nCS1 activates and causes the output frequency to in-\ncrease again. The motor operates forward, because\nCS2 is inactive.\n7\nThe Run enable signal is set to OPEN, which causes\nthe frequency to go to 0. Configure the Run enable\nsignal with parameter P3.5.1.15.\n8\nBefore the drive can start, CS1 must be opened and\nclosed again.\n9\nThe STOP button on the keypad is pushed and the\nfrequency that is fed to the motor goes to 0. (This\nsignal only works if the value of P3.2.3 Keypad Stop\nButton is Yes.)\n10\nBefore the drive can start, CS1 must be opened and\nclosed CS1 again.\n11\nCS1 becomes inactive and the frequency goes to 0.\n11.4.8 (ID 363) I/O B Start/Stop Logic\nLocation in the menu: P3.2.7\nUse this parameter to control the start and stop of the drive with the digital signals. The selections can include the word 'edge' to\nhelp to prevent an accidental start. See P3.2.6 for more information.\n11.4.9 (ID 889) Fieldbus Start Logic\nLocation in the menu: P3.2.8\nUse this parameter to set the fieldbus start logic. The selections can include the word 'edge' to help to prevent an accidental start.\nSelection number\nSelection name\nDescription\n0\nA rising edge is necessary\n1\nState\n180 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "A rising edge is necessary",
+            ""
+          ],
+          [
+            "1",
+            "State",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "VACON® 100 FLOW\nParameter Descriptions\nDanfoss\nApplication Guide\n11.4.10 (ID 524) Start Delay\nLocation in the menu: P3.2.9\nUse this parameter to set the delay between the start command and the actual start of the drive.\n11.4.11 (ID 181) Remote to Local Function\nLocation in the menu: P3.2.10\nUse this parameter to set the selection of copy settings when going from Remote to Local (keypad) control.\nSelection number\nSelection name\nDescription\n0\nKeep Run\n1\nKeep Run & Reference\n2\nStop\n11.4.12 (ID 15555) Restart Delay\nLocation in the menu: P3.2.11\nUse this parameter to set the time delay during which the drive cannot be restarted after the drive has been stopped. The parame-\nter is used in compressor applications.\nSelection number\nSelection name\nDescription\n0\nRestart delay not used\n11.5 References\n11.5.1 Frequency Reference\nIt is possible to program the source of the frequency reference in all the control places, except the PC tool. When using PC, it always\ntakes the frequency reference from the PC tool.\nRemote Control Place (I/O A)\nTo set the source of the frequency reference for I/O A, use the parameter P3.3.1.5.\nRemote Control Place (I/O B)\nTo set the source of the frequency reference for I/O B, use the parameter P3.3.1.6.\nLocal Control Place (Keypad)\nIf the default value keypad for the parameter P3.3.1.7 is used, the reference that was set for P3.3.1.8 Keypad Reference applies.\nRemote Control Place (Fieldbus)\nIf the default value fieldbus for the parameter P3.3.1.10 is used, the frequency reference comes from fieldbus.\n11.5.1.1 (ID 101) Minimum Frequency Reference\nLocation in the menu: P3.3.1.1\nUse this parameter to set the minimum frequency reference.\n11.5.1.2 (ID 102) Maximum Frequency Reference\nLocation in the menu: P3.3.1.2\nUse this parameter to set the maximum frequency reference.\n11.5.1.3 (ID 1285) Positive Frequency Reference Limit\nLocation in the menu: P3.3.1.3\nUse this parameter to set the final frequency reference limit for the positive direction.\n11.5.1.4 (ID 1286) Negative Frequency Reference Limit\nLocation in the menu: P3.3.1.4\nUse this parameter to set the final frequency reference limit for the negative direction. Use this parameter for example to prevent\nthe motor from running in the reverse direction.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 181",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Keep Run",
+            ""
+          ],
+          [
+            "1",
+            "Keep Run & Reference",
+            ""
+          ],
+          [
+            "2",
+            "Stop",
+            ""
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Restart delay not used",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.5.1.5 (ID 117) I/O Control Reference A Selection\nLocation in the menu: P3.3.1.5\nUse this parameter to select the reference source when the control place is I/O A. The application set with parameter 1.2 gives the\ndefault value.\n11.5.1.6 (ID 131) I/O Control Reference B Selection\nLocation in the menu: P3.3.1.6\nUse this parameter to select the reference source when the control place is I/O B. See P3.3.1.5 for more information. It is possible to\nforce the I/O B control place to be active only with a digital input (P3.5.1.7).\n11.5.1.7 (ID 121) Keypad Control Reference Selection\nLocation in the menu: P3.3.1.7\nUse this parameter to select the reference source when the control place is keypad.\n11.5.1.8 (ID 184) Keypad Reference\nLocation in the menu: P3.3.1.8\nUse this parameter to adjust the frequency reference on the keypad.\n11.5.1.9 (ID 123) Keypad Direction\nLocation in the menu: P3.3.1.9\nUse this parameter to set the rotation direction of the motor when the control place is keypad.\n11.5.2 Preset Frequencies\nUse the Preset frequencies function in processes where more than 1 fixed frequency reference is necessary. There are 8 preset fre-\nquency references available. The selection of a preset frequency reference can be made with the digital input signals P3.3.3.10,\nP3.3.3.11, and P3.3.3.12.\n11.5.2.1 (ID 182) Preset Frequency Mode\nLocation in the menu: P3.3.3.1\nUse this parameter to set the logic of the digital input preset frequencies.\nWith this parameter, it is possible to set the logic which one of the preset frequencies is selected into use. There is a selection of 2\ndifferent logics. The number of preset speed digital inputs that are active defines the preset frequency.\nSelection\nnumber\nSelection name\nDescription\n0\nBinary coded\nThe mix of the inputs is binary coded. The different sets of active digital inputs de-\ntermine the preset frequency.\n1\nNumber (of inputs used)\nThe number of active inputs tells which preset frequency is used: 1, 2 or 3.\nValue 0 selected\nTo set Preset Frequency 0 as reference, set the value 0 Preset Frequency 0 for P3.3.1.5 (see 11.5.1.5 (ID 117) I/O Control Reference A\nSelection).\nTo select a preset frequency 1-7, give digital inputs to P3.3.3.10 (11.5.2.10 (ID 419) Preset Frequency Selection 0), P3.3.3.11 (11.5.2.11\n(ID 420) Preset Frequency Selection 1), and/or P3.3.3.12 (11.5.2.12 (ID 421) Preset Frequency Selection 2). The different sets of active\ndigital inputs determine the preset frequency. For more data, see the following table. The values of the preset frequencies stay au-\ntomatically between the minimum and maximum frequencies (P3.3.1.1 and P3.3.1.2).\nNecessary step\nActivated frequency\nSelect the value 0 for parameter P3.3.1.5.\nPreset frequency 0\n182 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Binary coded",
+            "The mix of the inputs is binary coded. The different sets of active digital inputs de- termine the preset frequency."
+          ],
+          [
+            "1",
+            "Number (of inputs used)",
+            "The number of active inputs tells which preset frequency is used: 1, 2 or 3."
+          ]
+        ],
+        [
+          [
+            "Necessary step",
+            "Activated frequency"
+          ],
+          [
+            "Select the value 0 for parameter P3.3.1.5.",
+            "",
+            "Preset frequency 0"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nTable 128: The Selection of Preset Frequencies when Preset Frequency Mode is Binary Coded\nDigital input signal Pre-\nset Freq Sel2\n(P3.3.3.12)\nDigital input signal Pre-\nset Freq Sel1\n(P3.3.3.11)\nDigital input signal Pre-\nset Freq Sel0\n(P3.3.3.10)\nActivated frequency reference\nPreset frequency 0\nOnly if Preset Freq 0 is set as frequency refer-\nence source with P3.3.3.1.5, P3.3.1.6, P3.3.1.7 or\nP3.3.1.10.\nActivated\nPreset frequency 1\nActivated\nPreset frequency 2\nActivated\nActivated\nPreset frequency 3\nActivated\nPreset frequency 4\nActivated\nActivated\nPreset frequency 5\nActivated\nActivated\nPreset frequency 6\nActivated\nActivated\nActivated\nPreset frequency 7\nValue 1 selected\nIt is possible to use the Preset Frequencies 1-3 with different sets of active digital inputs. The number of active inputs tells which\none is used.\nTable 129: The Selection of Preset Frequencies when Preset Frequency Mode is Number of Inputs\nDigital input signal Pre-\nset Freq Sel2\n(P3.3.3.12)\nDigital input signal Pre-\nset Freq Sel1\n(P3.3.3.11)\nDigital input signal Pre-\nset Freq Sel0\n(P3.3.3.10)\nActivated frequency reference\nPreset frequency 0\nOnly if Preset Freq 0 is set as frequency refer-\nence source with P3.3.3.1.5, P3.3.1.6, P3.3.1.7 or\nP3.3.1.10.\nActivated\nPreset frequency 1\nActivated\nPreset frequency 1\nActivated\nPreset frequency 1\nActivated\nActivated\nPreset frequency 2\nActivated\nActivated\nPreset frequency 2\nActivated\nActivated\nPreset frequency 2\nActivated\nActivated\nActivated\nPreset frequency 3\n11.5.2.2 (ID 180) Preset Frequency 0\nLocation in the menu: P3.3.3.2\nUse this parameter to set the preset frequency reference when the preset frequencies function is used. Select the preset frequencies\nwith the digital input signals.\nSee more information in 11.5.2.1 (ID 182) Preset Frequency Mode.\n11.5.2.3 (ID 105) Preset Frequency 1\nLocation in the menu: P3.3.3.3\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 183",
+      "tablas": [
+        [
+          [
+            "Digital input signal Pre- set Freq Sel2 (P3.3.3.12)",
+            "Digital input signal Pre- set Freq Sel1 (P3.3.3.11)",
+            "Digital input signal Pre- set Freq Sel0 (P3.3.3.10)",
+            "Activated frequency reference"
+          ],
+          [
+            "",
+            "",
+            "",
+            "Preset frequency 0 Only if Preset Freq 0 is set as frequency refer- ence source with P3.3.3.1.5, P3.3.1.6, P3.3.1.7 or P3.3.1.10."
+          ],
+          [
+            "",
+            "",
+            "Activated",
+            "Preset frequency 1"
+          ],
+          [
+            "",
+            "Activated",
+            "",
+            "Preset frequency 2"
+          ],
+          [
+            "",
+            "Activated",
+            "Activated",
+            "Preset frequency 3"
+          ],
+          [
+            "Activated",
+            "",
+            "",
+            "Preset frequency 4"
+          ],
+          [
+            "Activated",
+            "",
+            "Activated",
+            "Preset frequency 5"
+          ],
+          [
+            "Activated",
+            "Activated",
+            "",
+            "Preset frequency 6"
+          ],
+          [
+            "Activated",
+            "Activated",
+            "Activated",
+            "Preset frequency 7"
+          ]
+        ],
+        [
+          [
+            "Digital input signal Pre- set Freq Sel2 (P3.3.3.12)",
+            "Digital input signal Pre- set Freq Sel1 (P3.3.3.11)",
+            "Digital input signal Pre- set Freq Sel0 (P3.3.3.10)",
+            "Activated frequency reference"
+          ],
+          [
+            "",
+            "",
+            "",
+            "Preset frequency 0 Only if Preset Freq 0 is set as frequency refer- ence source with P3.3.3.1.5, P3.3.1.6, P3.3.1.7 or P3.3.1.10."
+          ],
+          [
+            "",
+            "",
+            "Activated",
+            "Preset frequency 1"
+          ],
+          [
+            "",
+            "Activated",
+            "",
+            "Preset frequency 1"
+          ],
+          [
+            "Activated",
+            "",
+            "",
+            "Preset frequency 1"
+          ],
+          [
+            "",
+            "Activated",
+            "Activated",
+            "Preset frequency 2"
+          ],
+          [
+            "Activated",
+            "",
+            "Activated",
+            "Preset frequency 2"
+          ],
+          [
+            "Activated",
+            "Activated",
+            "",
+            "Preset frequency 2"
+          ],
+          [
+            "Activated",
+            "Activated",
+            "Activated",
+            "Preset frequency 3"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nUse this parameter to set the preset frequency reference when the preset frequencies function is used. Select the preset frequencies\nwith the digital input signals.\nSee more information in 11.5.2.1 (ID 182) Preset Frequency Mode.\n11.5.2.4 (ID 106) Preset Frequency 2\nLocation in the menu: P3.3.3.4\nUse this parameter to set the preset frequency reference when the preset frequencies function is used. Select the preset frequencies\nwith the digital input signals.\nSee more information in 11.5.2.1 (ID 182) Preset Frequency Mode.\n11.5.2.5 (ID 126) Preset Frequency 3\nLocation in the menu: P3.3.3.5\nUse this parameter to set the preset frequency reference when the preset frequencies function is used. Select the preset frequencies\nwith the digital input signals.\nSee more information in 11.5.2.1 (ID 182) Preset Frequency Mode.\n11.5.2.6 (ID 127) Preset Frequency 4\nLocation in the menu: P3.3.3.6\nUse this parameter to set the preset frequency reference when the preset frequencies function is used. Select the preset frequencies\nwith the digital input signals.\nSee more information in 11.5.2.1 (ID 182) Preset Frequency Mode.\n11.5.2.7 (ID 128) Preset Frequency 5\nLocation in the menu: P3.3.3.7\nUse this parameter to set the preset frequency reference when the preset frequencies function is used. Select the preset frequencies\nwith the digital input signals.\nSee more information in 11.5.2.1 (ID 182) Preset Frequency Mode.\n11.5.2.8 (ID 129) Preset Frequency 6\nLocation in the menu: P3.3.3.8\nUse this parameter to set the preset frequency reference when the preset frequencies function is used. Select the preset frequencies\nwith the digital input signals.\nSee more information in 11.5.2.1 (ID 182) Preset Frequency Mode.\n11.5.2.9 (ID 130) Preset Frequency 7\nLocation in the menu: P3.3.3.9\nUse this parameter to set the preset frequency reference when the preset frequencies function is used. Select the preset frequencies\nwith the digital input signals.\nSee more information in 11.5.2.1 (ID 182) Preset Frequency Mode.\n11.5.2.10 (ID 419) Preset Frequency Selection 0\nLocation in the menu: P3.3.3.10\nUse this parameter to select the digital input signal that is used as a selector for the preset frequencies. This parameter is a binary\nselector for Preset speeds (0-7). See parameters P3.3.3.2 to P3.3.3.9.\n11.5.2.11 (ID 420) Preset Frequency Selection 1\nLocation in the menu: P3.3.3.11\nUse this parameter to select the digital input signal that is used as a selector for the preset frequencies. This parameter is a binary\nselector for Preset speeds (0-7). See parameters P3.3.3.2 to P3.3.3.9.\n11.5.2.12 (ID 421) Preset Frequency Selection 2\nLocation in the menu: P3.3.3.12\nUse this parameter to select the digital input signal that is used as a selector for the preset frequencies. This parameter is a binary\nselector for Preset speeds (0-7). See parameters P3.3.3.2 to P3.3.3.9.\n184 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nTo apply Preset frequencies 1-7, connect a digital input to these functions with the instructions in 11.7.1.2 Programming of Digital\nInputs. See more data in 11.5.2.1 (ID 182) Preset Frequency Mode, and also in Table 36, and Table 44.\n11.5.3 Motor Potentiometer Parameters\nThe frequency reference of the Motor Potentiometer is available in all the control places. It is possible to change the motor potenti-\nometer reference only when the drive is in the run state.\nNOTICE\nIf the output frequency is set slower than the Motor Potentiometer Ramp Time, the normal acceleration and deceleration times\ngive limits to it.\n11.5.3.1 (ID 418) Motor Potentiometer UP\nLocation in the menu: P3.3.4.1\nUse this parameter to increase the output frequency with a digital input signal. With a motor potentiometer, it is possible to in-\ncrease and decrease the output frequency. When a digital input is connected to parameter Motor Potentiometer UP, and the digital\ninput signal is active, the output frequency rises. The motor potentiometer reference INCREASES until the contact is opened.\n11.5.3.2 (ID 417) Motor Potentiometer DOWN\nLocation in the menu: P3.3.4.2\nUse this parameter to decrease the output frequency with a digital input signal. With a motor potentiometer, it is possible to in-\ncrease and decrease the output frequency. When a digital input is connected to parameter Motor Potentiometer DOWN, and the\ndigital input signal is active, the output frequency falls. The motor potentiometer reference DECREASES until the contact is opened.\n3 different parameters affect how the output frequency rises or falls when Motor Potentiometer UP or DOWN is active. These param-\neters are Motor Potentiometer Ramp Time (P3.3.4.3), Acceleration Time (P3.4.1.2), and Deceleration Time (P3.4.1.3).\nA\ne30bu047\nB\nD\nC\n-[s]\nE\nF\nG\nIllustration 47: The Motor Potentiometer Parameters\nA\nFrequency Reference\nE\nTime\nB\nMax Frequency\nF\nMotor potentiometer UP\nC\nMin Frequency\nG\nMotor potentiometer DOWN\nD\nMotor potentiometer ramp time\n11.5.3.3 (ID 331) Motor Potentiometer Ramp Time\nLocation in the menu: P3.3.4.3\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 185",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nUse this parameter to set the rate of change in the motor potentiometer reference when it is increased or decreased.\nThe parameter value is entered as Hz/second.\n11.5.3.4 (ID 367) Motor Potentiometer Reset\nLocation in the menu: P3.3.4.4\nUse this parameter to set the logic for the resetting of the frequency reference of the motor potentiometer.\nThis parameter defines when the reference of the motor potentiometer is set to 0. There are 3 selections in the reset function: no\nreset, reset when the drive stops, or reset when the drive is powered down.\nSelection\nnumber\nSelection name\nDescription\n0\nNo reset\nThe last motor potentiometer frequency reference is kept through the stop state and kept in\nmemory when a power-down occurs.\n1\nStop state\nThe motor potentiometer frequency reference is set to 0 when the drive goes to the stop state,\nor when the drive is powered down.\n2\nPowered down\nThe motor potentiometer frequency reference is set to 0 only when a power-down occurs.\n11.5.4 Flushing Parameters\nUse the Flushing function to override the normal control momentarily. Use the function to flush the pipeline or operate the pump\nmanually at the preset constant speed, for example.\nThe Flushing function starts the drive at a selected reference without a start command no matter the control place.\n11.5.4.1 (ID 530) Flushing Reference Activation\nLocation in the menu: P3.3.6.1\nUse this parameter to select the digital input signal that activates the Flushing function. The flushing frequency reference is bidirec-\ntional and a reverse command does not affect the direction of the flushing reference.\nWhen the digital input is activated, the drive starts.\nNOTICE\n11.5.4.2 (ID 1239) Flushing Reference\nLocation in the menu: P3.3.6.2\nUse this parameter to set the frequency reference of the drive when the Flushing function is used.\nThe reference is bidirectional and a reverse command does not affect the direction of the flushing reference. The reference for the\nforward direction is specified as a positive value and the reverse direction is specified as a negative value.\n11.6 Ramps and Brakes Setup\n11.6.1 Ramp 1\n11.6.1.1 (ID 500) Ramp 1 Shape\nLocation in the menu: P3.4.1.1\nUse this parameter to make the start and the end of the acceleration and deceleration ramps smoother.\nWith the parameters Ramp 1 Shape and Ramp 2 Shape, it is possible to make smoother the start and the end of the acceleration and\ndeceleration ramps. The value is set to 0.0% gives a linear ramp shape. The acceleration and deceleration act immediately to the\nchanges in the reference signal.\nThe value set between 1.0% and 100.0% gives an S-shaped acceleration or deceleration ramp. Use this function to reduce mechani-\ncal erosion of the parts and current spikes when the reference changes. The acceleration time can be modified with parameters\nP3.4.1.2 (Acceleration Time 1) and P3.4.1.3 (Deceleration Time 1).\n186 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "No reset",
+            "The last motor potentiometer frequency reference is kept through the stop state and kept in memory when a power-down occurs."
+          ],
+          [
+            "1",
+            "Stop state",
+            "The motor potentiometer frequency reference is set to 0 when the drive goes to the stop state, or when the drive is powered down."
+          ],
+          [
+            "2",
+            "Powered down",
+            "The motor potentiometer frequency reference is set to 0 only when a power-down occurs."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n[Hz]\ne30bu050\nID103, ID104\nID500\nID500\n[t]\nIllustration 48: The Acceleration/Deceleration Curve (S-shaped)\n11.6.1.2 (ID 103) Acceleration Time 1\nLocation in the menu: P3.4.1.2\nUse this parameter to set the time that is necessary for the output frequency to increase from zero frequency to maximum frequen-\ncy.\n11.6.1.3 (ID 104) Deceleration Time 1\nLocation in the menu: P3.4.1.3\nUse this parameter to set the time that is necessary for the output frequency to decrease from maximum frequency to zero frequen-\ncy.\n11.6.2 Ramp 2\n11.6.2.1 (ID 501) Ramp 2 Shape\nLocation in the menu: P3.4.2.1\nUse this parameter to make the start and the end of the acceleration and deceleration ramps smoother.\nWith the parameters Ramp 1 Shape and Ramp 2 Shape, it is possible to make smoother the start and the end of the acceleration and\ndeceleration ramps. The value set to 0.0% gives a linear ramp shape. The acceleration and deceleration act immediately to the\nchanges in the reference signal.\nThe value set between 1.0% and 100.0% gives an S-shaped acceleration or deceleration ramp. Use this function to reduce mechani-\ncal erosion of the parts and current spikes when the reference changes. The acceleration time can be modified with parameters\nP3.4.2.2 (Acceleration Time 2) and P3.4.2.3 (Deceleration Time 2).\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 187",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n[Hz]\ne30bu050\nID103, ID104\nID500\nID500\n[t]\nIllustration 49: The Acceleration/Deceleration Curve (S-shaped)\n11.6.2.2 (ID 502) Acceleration Time 2\nLocation in the menu: P3.4.2.2\nUse this parameter to set the time that is necessary for the output frequency to increase from zero frequency to maximum frequen-\ncy.\n11.6.2.3 (ID 503) Deceleration Time 2\nLocation in the menu: P3.4.2.3\nUse this parameter to set the time that is necessary for the output frequency to decrease from maximum frequency to zero frequen-\ncy.\n11.6.2.4 (ID 408) Ramp 2 Selection\nLocation in the menu: P3.4.2.4\nUse this parameter to select either ramp 1 or ramp 2.\nSelection number\nSelection name\nDescription\n0\nOPEN\nRamp 1 Shape, Acceleration Time 1, and Deceleration Time 1\n1\nCLOSED\nRamp 2 Shape, Acceleration Time 2, and Deceleration Time 2\n11.6.2.5 (ID 533) Ramp 2 Threshold Frequency\nLocation in the menu: P3.4.2.5\nUse this parameter to set the output frequency limit above which the Ramp 2 is used.\nUse the function, for example, in applications for deep well pumps, where faster ramp times are necessary when the pump starts or\nstops (operates below the minimum frequency).\nSecond ramp times are activated when the output frequency of the drive goes above the limit specified by this parameter. To disa-\nble the function, set the value of the parameter to 0.\n188 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "OPEN",
+            "Ramp 1 Shape, Acceleration Time 1, and Deceleration Time 1"
+          ],
+          [
+            "1",
+            "CLOSED",
+            "Ramp 2 Shape, Acceleration Time 2, and Deceleration Time 2"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nf.\nout\n[Hz]\ne30bi979.10\nP3.4.2.2\nP3.4.2.3\nP3.4.5.2\nP3.4.1.2\nP3.4.1.3\nt [s]\nIllustration 50: Ramp 2 Activation when Output Frequency above the Threshold Level\nP.3.4.5.2 Ramp threshold freq\nP3.4.1.3 Dec. time 1\nP3.4.1.2 Acc. time 1\nP3.4.2.3 Dec. time 2\nP3.4.2.2 Acc. time 2\n11.6.3 Start Magnetizing\n11.6.3.1 (ID 517) Start Magnetizing Current\nLocation in the menu: P3.4.3.1\nUse this parameter to set the DC current that is fed into the motor at the start. If the value of this parameter is set to 0, the Start\nMagnetizing function is disabled.\n11.6.3.2 (ID 516) Start Magnetizing Time\nLocation in the menu: P3.4.3.2\nUse this parameter to set the time during which the DC current is fed to the motor before the acceleration starts.\n11.6.4 DC Brake\n11.6.4.1 (ID 507) DC Brake Current\nLocation in the menu: P3.4.4.1\nUse this parameter to set the current that is fed into the motor during DC braking. If the value of this parameter is set to 0, the DC\nbrake function is disabled.\n11.6.4.2 (ID 508) DC Braking Time at Stop\nLocation in the menu: P3.4.4.2\nUse this parameter to set the braking is ON or OFF and to give the braking time when the motor stops. If the value of this parameter\nis set to 0, the DC brake function is disabled.\n11.6.4.3 (ID 515) Frequency to Start DC Braking at Ramp Stop\nLocation in the menu: P3.4.4.3\nUse this parameter to set the output frequency at which the DC-braking starts.\nSee Illustration 63.\n11.6.5 Flux Braking\n11.6.5.1 (ID 520) Flux Braking\nLocation in the menu: P3.4.5.1\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 189",
+      "tablas": [
+        [
+          [
+            "P.3.4.5.2 Ramp threshold freq",
+            "P3.4.1.3 Dec. time 1"
+          ],
+          [
+            "P3.4.1.2 Acc. time 1",
+            "P3.4.2.3 Dec. time 2"
+          ],
+          [
+            "P3.4.2.2 Acc. time 2",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nUse this parameter to enable Flux Braking. It is possible to use flux braking as an alternative to DC-braking. Flux braking increases\nthe braking capacity in conditions where extra brake resistors are not necessary.\nWhen braking is necessary, the system decreases the frequency and increases the flux in the motor. It increases the capacity of the\nmotor to brake. The motor speed is controlled during braking.\nNOTICE\nUse the braking only intermittently. Flux braking converts energy into heat and can damage the motor.\n11.6.5.2 (ID 519) Flux Braking Current\nLocation in the menu: P3.4.5.2\nUse this parameter to set the current level for the flux braking.\n11.7 I/O Configuration\n11.7.1 Programming of Digital and Analog Inputs\n11.7.1.1 General Information on the Programming\nThe programming of inputs of the AC drive is flexible. It is possible to use freely the available inputs of the standard and optional I/O\nfor different functions.\nIt is possible to expand the available capacity of I/O with option boards. It is possible to install the option boards in the slots C, D,\nand E. For more data on the installation of option boards, see the Installation Guide.\n190 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA.1\nA.2\nA. 1 A.2 A.3\nA.JA.5A.6\ne30bg493.10\nSlot A\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 30 A B\nG\nF\nC\nD\n0000000000000000000000\nA\nE\nSlot B\n21 22 23 24 25 26 33 34\n000\n000\nB\n00\nIllustration 51: The Option Board Slots and Programmable Inputs\nA\nStandard board slot A and its terminals\nE\nOption board slot E\nB\nStandard board slot B and its terminals\nF\nProgrammable digital inputs (DI)\nC\nOption board slot C\nG\nProgrammable analog inputs (AI)\nD\nOption board slot D\n11.7.1.2 Programming of Digital Inputs\nFind the applicable functions for digital inputs as parameters in parameter group M3.5.1. To give a digital input to a function, set a\nvalue to the correct parameter. The list of applicable functions shows in Table 44.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 191",
+      "tablas": [
+        [
+          [
+            "A",
+            "Standard board slot A and its terminals",
+            "E Option board slot E"
+          ],
+          [
+            "B",
+            "Standard board slot B and its terminals",
+            "F Programmable digital inputs (DI)"
+          ],
+          [
+            "C",
+            "Option board slot C",
+            "G Programmable analog inputs (AI)"
+          ],
+          [
+            "D",
+            "Option board slot D",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\nB\nREADY\nC\nSTOP\nDigital Inpuls\nID:405\nP3.5.1.11\nI/O\ne30bg692.10\nExt Fault Close\nDigINSlotA.3\nOOO\nExt Fault Open\nDigINSlot0.2\nOOO\nFault Reset Close\nDigINSlotA.6\nIllustration 52: The Digital Inputs Menu in the Graphical Display\nA\nThe graphical display\nB\nThe name of the parameter, that is, the function\nC\nThe value of the parameter, that is, the set digital in-\nput\nA\nB\nREADY\nRUN\nSTOP\nALARM\nFAULT\nP3.5. 1 1TEXT\ne30bg693.10\n-\nFWD\nREV\n1/O\nC\nKEYPAD\nBUS\nIllustration 53: The Digital Inputs Menu in the Text Display\nA\nThe text display\nB\nThe name of the parameter, that is, the function\nC\nThe value of the parameter, that is, the set digital in-\nput\nExample\nIn the standard I/O board compilation, there are 6 digital inputs available: the slot A terminals 8, 9, 10, 14, 15 and 16.\nInput type (graphical\ndisplay)\nInput type\n(text display)\nSlot\nInput #\nExplanation\nDigIN\ndI\nA\n1\nDigital input #1 (terminal 8) on a board in Slot A (standard I/O board).\nDigIN\ndI\nA\n2\nDigital input #2 (terminal 9) on a board in Slot A (standard I/O board).\nDigIN\ndI\nA\n3\nDigital input #3 (terminal 10) on a board in Slot A (standard I/O board).\nDigIN\ndI\nA\n4\nDigital input #4 (terminal 14) on a board in Slot A (standard I/O board).\nDigIN\ndI\nA\n5\nDigital input #5 (terminal 15) on a board in Slot A (standard I/O board).\nDigIN\ndI\nA\n6\nDigital input #6 (terminal 16) on a board in Slot A (standard I/O board).\n192 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Input type (graphical display)",
+            "Input type (text display)",
+            "Slot",
+            "Input #",
+            "Explanation"
+          ],
+          [
+            "DigIN",
+            "dI",
+            "A",
+            "1",
+            "Digital input #1 (terminal 8) on a board in Slot A (standard I/O board)."
+          ],
+          [
+            "DigIN",
+            "dI",
+            "A",
+            "2",
+            "Digital input #2 (terminal 9) on a board in Slot A (standard I/O board)."
+          ],
+          [
+            "DigIN",
+            "dI",
+            "A",
+            "3",
+            "Digital input #3 (terminal 10) on a board in Slot A (standard I/O board)."
+          ],
+          [
+            "DigIN",
+            "dI",
+            "A",
+            "4",
+            "Digital input #4 (terminal 14) on a board in Slot A (standard I/O board)."
+          ],
+          [
+            "DigIN",
+            "dI",
+            "A",
+            "5",
+            "Digital input #5 (terminal 15) on a board in Slot A (standard I/O board)."
+          ],
+          [
+            "DigIN",
+            "dI",
+            "A",
+            "6",
+            "Digital input #6 (terminal 16) on a board in Slot A (standard I/O board)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nThe function External Fault Close, the location of which is the menu M3.5.1, is parameter P3.5.1.11. It gets the default value DigIN\nSlotA.3 in the graphical display, and dI A.3 in the text display. After this selection, a digital signal to the digital input DI3 (terminal 10)\ncontrols External Fault Close.\nIndex\nParameter\nDefault\nID\nDescription\nP3.5.1.11\nExternal fault close\nDigIN SlotA.3\n405\nOPEN = OK\nCLOSED = External fault\nTo change the input from DI3 to, for example, DI6 (terminal 16) on the standard I/O, obey these instructions.\n11.7.1.3 Programming of Digital Inputs in the Graphical Display\nProcedure\n1. Select a parameter. To go into the Edit mode, push the arrow button Right.\n2. In the Edit mode, the slot value DigIN SlotA is underlined and blinks. If there are more digital inputs available in the I/O, for\nexample, because of option boards in slots C, D, or E, select them.\nSTOP\nC\nREADY\nI/O\nExt Fault Close\nID:405\ne30bg705.10\n84\nP3.5.1.11\n1\n- DigIN SlotA\n.3\n-\n-\nMin:\nMax:\n3. To activate the terminal 3, push the arrow button Right again.\n4.\nTo change the terminal to 6, push the arrow button Up 3 times. Accept the change with the [OK] button.\n>\nSTOP\nC\nREADY\nExt Fault Close\nID:405\nI/O\ne30bg706.10\nP3.5.1.11\n< >\nDigIN SlotA.\n`6\n-\nMin:\nMax:\n5. If the digital input DI6 was already used for some other function, a message shows on the display. Change one of these\nselections.\n11.7.1.4 Programming of Digital Inputs in the Text Display\nProcedure\n1. Select a parameter. To go into the Edit mode, push the [OK] button.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 193",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.5.1.11",
+            "External fault close",
+            "DigIN SlotA.3",
+            "405",
+            "OPEN = OK CLOSED = External fault"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n2. In the Edit mode, the letter D blinks. If there are more digital inputs available in the I/O, for example, because of option\nboards in slots C, D or E, select them.\n1\nREADY\nRUN\nSTOP\nALARM\nFAULT\nP3.6. 1. 11 EXT\ne30bg707.10\n7\nFWD\nREV\n1/O\nKEYPAD\nBUS\n3. To activate the terminal 3, push the arrow button Right again. The letter D stops blinking.\n4. To change the terminal to 6, push the arrow button Up 3 times. Accept the change with the [OK] button.\nT\nREADY\nRUN\nSTOP\nALARM\n1\nP3.5. 1.11 EXT\nB1 8.6\nFAULT\ne30bg708.10\nFWD\nREV\n1/O\nKEYPAD\nBUS\n5. If the digital input DI6 was already used for some other function, a message scrolls on the display. Change one of these\nselections.\nIt is also possible to give time channels to digital inputs. There is more data about it in Table 79.\nAfter the steps, a digital signal to the digital input DI6 controls the function External Fault Close. The value of a\nfunction can be DigIN Slot0.1 (in the graphical display) or dI 0.1 (in the text display). In these conditions, a terminal\nwas not given to the function, or the input was set to be always OPEN. It is the default value of most of parameters\nin the group M3.5.1. On the other hand, some inputs have the default value always CLOSED. Their value shows\nDigIN Slot0.2 in the graphical display and dI 0.2 in the text display.\n11.7.1.5 Programming of Analog Inputs\nIt is possible to select the target input for the signal of the analog frequency reference from the available analog inputs.\nA\nB\nSTOP\nC\nREADY\nAnalog Input 1\nID:377\nAI1 Signal Sel\nAnINSlotA. 10\nP3.5.2.1.1\nI/O\ne30bg709.10\nOOC\nOOC\nAI1 Filter Time\n0.10s\nOOO\nAIl Signal Range\n0-10V/0-20mA\nC\nIllustration 54: The Analog Inputs Menu in the Graphical Display\n194 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\nThe graphical display\nB\nThe name of the parameter\nC\nThe value of the parameter, that is, the set analog in-\nput\nB\nFAULT\nREADY\nRUN\nSTOP\nALARM\ne30bg710.10\nP3.5.2. 1. 1 RIT\nAIR.\n1\nFWD\nREV\nA\n1/O\nKEYPAD\nC\nBUS\nIllustration 55: The Analog Inputs Menu in the Text Display\nA\nThe text display\nB\nThe name of the parameter\nC\nThe value of the parameter, that is, the set analog in-\nput\nExample\nIn the standard I/O board compilation, there are 2 analog inputs available: the slot A terminals 2/3 and 4/5.\nInput type (graphi-\ncal display)\nInput type (text\ndisplay)\nSlot\nInput #\nExplanation\nAnIN\nAI\nA\n1\nAnalog input #1 (terminals 2/3) on a board in Slot A (standard I/O\nboard).\nAnIN\nAI\nA\n2\nAnalog input #2 (terminals 4/5) on a board in Slot A (standard I/O\nboard).\nThe location of the parameter P3.5.2.1.1 AI1 Signal Selection is the menu M3.5.2.1. The parameter gets the default value AnIN Slo-\ntA.1 in the graphical display or AI A.1 in the text display. The target input for the signal of the analog frequency reference AI1 is then\nthe analog input in the terminals 2/3. Use the DIP switches to set the signal to be voltage or current. See the Installation manual for\nmore data.\nIndex\nParameter\nDefault\nID\nDescription\nP3.5.2.1.1\nAI1 Signal Selection\nAnIN SlotA.1\n377\nTo change the input from AI1 to, for example, the analog input on your option board in slot C, obey these instructions.\n11.7.1.6 Programming of Analog Inputs in the Graphical Display\nProcedure\n1. To select the parameter, push the arrow button Right.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 195",
+      "tablas": [
+        [
+          [
+            "Input type (graphi- cal display)",
+            "Input type (text display)",
+            "Slot",
+            "Input #",
+            "Explanation"
+          ],
+          [
+            "AnIN",
+            "AI",
+            "A",
+            "1",
+            "Analog input #1 (terminals 2/3) on a board in Slot A (standard I/O board)."
+          ],
+          [
+            "AnIN",
+            "AI",
+            "A",
+            "2",
+            "Analog input #2 (terminals 4/5) on a board in Slot A (standard I/O board)."
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.5.2.1.1",
+            "AI1 Signal Selection",
+            "AnIN SlotA.1",
+            "377",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n2. In the Edit mode, the value AnIN SlotA is underlined and blinks.\nSTOP\nC\nREADY\nI/O\ne30bg711.10\nAI1 Signal Sel\nID:377\nP3.5.2.1.1\n<>\n>AnIN SlotA\n.1<\nMin:\nMax:\n3. To change the value to AnIN SlotC, push the arrow button Up. Accept the change with the [OK] button.\n11.7.1.7 Programming of Analog Inputs in the Text Display\nProcedure\n1. To select the parameter, push the [OK] button.\n2. In the Edit mode, the letter A blinks.\n1\nREADY\nRUN\nSTOP\nALARM\nFAULT\ne30bg712.10\nA3 8. 1\nFWD\nREV\n1/O\nKEYPAD\nBUS\n3. To change the value to C, push the arrow button Up. Accept the change with the [OK] button.\n11.7.2 Descriptions of Signal Sources\nTable 130: Descriptions of Signal Sources\nSource\nFunction\nSlot0.#\nDigital inputs:\nUse this function to set a digital signal to be in a constant OPEN or CLOSED state. The manufacturer set some\nsignals so that they are always in the CLOSED state, for example parameter P3.5.1.15 (Run Enable). The Run Ena-\nble signal is always on if it is not changed.\n# = 1: Always OPEN\n# = 2-10: Always CLOSED\nAnalog inputs (used for testing purposes):\n# = 1: Analog input = 0% of the signal strength\n# = 2: Analog input = 20% of the signal strength\n# = 3: Analog input = 30% of the signal strength, and so on\n# = 10: Analog input = 100% of the signal strength\nSlotA.#\nNumber (#) agrees to a digital input in slot A.\nSlotB.#\nNumber (#) agrees to a digital input in slot B.\nSlotC.#\nNumber (#) agrees to a digital input in slot C.\nSlotD.#\nNumber (#) agrees to a digital input in slot D.\n196 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Source",
+            "Function"
+          ],
+          [
+            "Slot0.#",
+            "Digital inputs: Use this function to set a digital signal to be in a constant OPEN or CLOSED state. The manufacturer set some signals so that they are always in the CLOSED state, for example parameter P3.5.1.15 (Run Enable). The Run Ena- ble signal is always on if it is not changed. # = 1: Always OPEN # = 2-10: Always CLOSED Analog inputs (used for testing purposes): # = 1: Analog input = 0% of the signal strength # = 2: Analog input = 20% of the signal strength # = 3: Analog input = 30% of the signal strength, and so on # = 10: Analog input = 100% of the signal strength"
+          ],
+          [
+            "SlotA.#",
+            "Number (#) agrees to a digital input in slot A."
+          ],
+          [
+            "SlotB.#",
+            "Number (#) agrees to a digital input in slot B."
+          ],
+          [
+            "SlotC.#",
+            "Number (#) agrees to a digital input in slot C."
+          ],
+          [
+            "SlotD.#",
+            "Number (#) agrees to a digital input in slot D."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nSource\nFunction\nSlotE.#\nNumber (#) agrees to a digital input in slot E.\nTimeChan-\nnel.#\n1=Time Channel1, 2=Time Channel2, 3=Time Channel3\nFieldbusCW.#\nNumber (#) refers to a control word bit number.\nFieldbusPD.#\nNumber (#) refers to the process data 1 bit number.\n11.7.3 Default Functions of Programmable Inputs\nTable 131: Default Functions of the Programmable Digital and Analog Inputs\nInput\nTerminal(s)\nReference\nFunction\nParameter index\nDI1\n8\nA.1\nControl Signal 1 A\nP3.5.1.1\nDI2\n9\nA.2\nControl Signal 2 A\nP3.5.1.2\nDI3\n10\nA.3\nExternal Fault Close\nP3.5.1.11\nDI4\n14\nA.4\nPreset Frequency Selection 0\nP3.5.1.21\nDI5\n15\nA.5\nPreset Frequency Selection 1\nP3.5.1.22\nDI6\n16\nA.6\nFault Reset Close\nP3.5.1.13\nAI1\n2/3\nA.1\nAI1 Signal Selection\nP3.5.2.1.1\nAI2\n4/5\nA.2\nAI2 Signal Selection\nP3.5.2.2.1\n11.7.4 Digital Inputs\nThe parameters are functions that can be connected to a digital input terminal. The text DigIn Slot A.2 means the second input on\nthe slot A. It is also possible to connect the functions to time channels. The time channels work as terminals.\nIt is possible to monitor the statuses of the digital inputs and the digital outputs in the Multimonitoring view.\n11.7.4.1 (ID 403) Control Signal 1 A\nLocation in the menu: P3.5.1.1\nUse this parameter to select the digital input signal (Control Signal 1) that starts and stops the drive when the control place is I/O A\n(FWD).\n11.7.4.2 (ID 404) Control Signal 2 A\nLocation in the menu: P3.5.1.2\nUse this parameter to select the digital input signal (Control Signal 2) that starts and stops the drive when the control place is I/O A\n(REV).\n11.7.4.3 (ID 434) Control Signal 3 A\nLocation in the menu: P3.5.1.3\nUse this parameter to select the digital input signal (Control Signal 3) that starts and stops the drive when the control place is I/O A.\n11.7.4.4 (ID 423) Control Signal 1 B\nLocation in the menu: P3.5.1.4\nUse this parameter to select the digital input signal (Control Signal 1) that starts and stops the drive when the control place is I/O B.\n11.7.4.5 (ID 424) Control Signal 2 B\nLocation in the menu: P3.5.1.5\nDanfoss A/S c 2021.05\nAB298035655957en-000101 / DPD01083 | 197",
+      "tablas": [
+        [
+          [
+            "Source",
+            "Function"
+          ],
+          [
+            "SlotE.#",
+            "Number (#) agrees to a digital input in slot E."
+          ],
+          [
+            "TimeChan- nel.#",
+            "1=Time Channel1, 2=Time Channel2, 3=Time Channel3"
+          ],
+          [
+            "FieldbusCW.#",
+            "Number (#) refers to a control word bit number."
+          ],
+          [
+            "FieldbusPD.#",
+            "Number (#) refers to the process data 1 bit number."
+          ]
+        ],
+        [
+          [
+            "Input",
+            "Terminal(s)",
+            "Reference",
+            "Function",
+            "Parameter index"
+          ],
+          [
+            "DI1",
+            "8",
+            "A.1",
+            "Control Signal 1 A",
+            "P3.5.1.1"
+          ],
+          [
+            "DI2",
+            "9",
+            "A.2",
+            "Control Signal 2 A",
+            "P3.5.1.2"
+          ],
+          [
+            "DI3",
+            "10",
+            "A.3",
+            "External Fault Close",
+            "P3.5.1.11"
+          ],
+          [
+            "DI4",
+            "14",
+            "A.4",
+            "Preset Frequency Selection 0",
+            "P3.5.1.21"
+          ],
+          [
+            "DI5",
+            "15",
+            "A.5",
+            "Preset Frequency Selection 1",
+            "P3.5.1.22"
+          ],
+          [
+            "DI6",
+            "16",
+            "A.6",
+            "Fault Reset Close",
+            "P3.5.1.13"
+          ],
+          [
+            "AI1",
+            "2/3",
+            "A.1",
+            "AI1 Signal Selection",
+            "P3.5.2.1.1"
+          ],
+          [
+            "AI2",
+            "4/5",
+            "A.2",
+            "AI2 Signal Selection",
+            "P3.5.2.2.1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nUse this parameter to select the digital input signal (Control Signal 2) that starts and stops the drive when the control place is I/O B.\n11.7.4.6 (ID 435) Control Signal 3 B\nLocation in the menu: P3.5.1.6\nUse this parameter to select the digital input signal (Control Signal 3) that starts and stops the drive when the control place is I/O B.\n11.7.4.7 (ID 425) I/O B Control Force\nLocation in the menu: P3.5.1.7\nUse this parameter to select the digital input signal that switches the control place from I/O A to I/O B.\n11.7.4.8 (ID 343) I/O B Reference Force\nLocation in the menu: P3.5.1.8\nUse this parameter to select the digital input signal that switches the frequency reference source from I/O A to I/O B.\n11.7.4.9 (ID 411) Fieldbus Control Force\nLocation in the menu: P3.5.1.9\nUse this parameter to select the digital input signal that switches the control place and the frequency reference source to Fieldbus\n(from I/O A, I/O B or Local control).\n11.7.4.10 (ID 410) Keypad Control Force\nLocation in the menu: P3.5.1.10\nUse this parameter to select the digital input signal that switches the control place and the frequency reference source to Keypad\n(from any control place).\n11.7.4.11 (ID 405) External Fault Close\nLocation in the menu: P3.5.1.11\nUse this parameter to select the digital input signal that activates an external fault.\n11.7.4.12 (ID 406) External Fault Open\nLocation in the menu: P3.5.1.12\nUse this parameter to select the digital input signal that activates an external fault.\n11.7.4.13 (ID 414) Fault Reset Close\nLocation in the menu: P3.5.1.13\nUse this parameter to select the digital input signal that resets all active faults. Active faults are reset when the state of the digital\ninput changes from open to closed (rising edge).\n11.7.4.14 (ID 213) Fault Reset Open\nLocation in the menu: P3.5.1.14\nUse this parameter to select the digital input signal that resets all active faults. Active faults are reset when the state of the digital\ninput changes from closed to open (falling edge).\n11.7.4.15 (ID 407) Run Enable\nLocation in the menu: P3.5.1.15\nUse this parameter to select the digital input signal that sets the drive to Ready state. When the contact is OPEN, the start of the\nmotor is disabled. When the contact is CLOSED, the start of the motor is enabled.\nThe state of the drive remains in 'Not Ready' if the state of this signal is 'opened'. If the Run Enable signal is used for stopping the\ndrive, the drive will always coast to stop regardless of the selection in parameter P3.2.5 Stop Function.\n11.7.4.16 (ID 1041) Run Interlock 1\nLocation in the menu: P3.5.1.16\nUse this parameter to select the digital input signal that prevents to start the drive. The drive can be ready but start is not possible\nwhen the state of the interlock signal is 'open' (damper interlock).\n198 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.7.4.17 (ID 1042) Run Interlock 2\nLocation in the menu: P3.5.1.17\nUse this parameter to select the digital input signal that prevents starting the drive. The drive can be ready but start is not possible\nwhen the state of the interlock signal is 'open' (damper interlock).\nIf an interlock is active, the drive cannot start.\nIt is possible to use this function to prevent the start of the drive when the damper is closed. If an interlock is activated during the\noperation of the drive, the drive stops.\n11.7.4.18 (ID 1044) Motor Preheat ON\nLocation in the menu: P3.5.1.18\nUse this parameter to select the digital input signal that activates Motor Preheat function. The Motor Preheat function feeds DC-\ncurrent to the motor when the drive is in the stop state.\n11.7.4.19 (ID 408) Ramp 2 Selection\nLocation in the menu: P3.5.1.19\nUse this parameter to select the digital input signal that selects the ramp time to be used.\n11.7.4.20 (ID 415) Acc/Dec Prohibit\nLocation in the menu: P3.5.1.20\nUse this parameter to select the digital input signal that prevents the acceleration and the deceleration of the drive. No acceleration\nor deceleration is possible until the contact is open.\n11.7.4.21 (ID 419) Preset Frequency Selection 0\nLocation in the menu: P3.5.1.21\nUse this parameter to set the digital input signal that selects the preset frequencies.\n11.7.4.22 (ID 420) Preset Frequency Selection 1\nLocation in the menu: P3.5.1.22\nUse this parameter to set the digital input signal that selects the preset frequencies.\n11.7.4.23 (ID 421) Preset Frequency Selection 2\nLocation in the menu: P3.5.1.23\nUse this parameter to set the digital input signal that selects the preset frequencies.\n11.7.4.24 (ID 418) Motor Potentiometer Up\nLocation in the menu: P3.5.1.24\nUse this parameter to increase the output frequency with a digital input signal. The motor potentiometer reference INCREASES until\nthe contact is open.\n11.7.4.25 (ID 417) Motor Potentiometer Down\nLocation in the menu: P3.5.1.25\nUse this parameter to decrease the output frequency with a digital input signal. The motor potentiometer reference DECREASES\nuntil the contact is open.\n11.7.4.26 (ID 1213) Quick Stop Activation\nLocation in the menu: P3.5.1.26\nUse this parameter to select the digital input signal that activates a Quick Stop function. The Quick Stop function stops the drive\nregardless of the control place or the state of the control signals.\n11.7.4.27 (ID 447) Timer 1\nLocation in the menu: P3.5.1.27\nUse this parameter to select the digital input signal that starts the timer. The timer starts when this signal is deactivated (falling\nedge). The output is deactivated when the time defined in the duration parameter has elapsed.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 199",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.7.4.28 (ID 448) Timer 2\nLocation in the menu: P3.5.1.28\nUse this parameter to select the digital input signal that starts the timer. The timer starts when this signal is deactivated (falling\nedge). The output is deactivated when the time defined in the duration parameter has elapsed.\n11.7.4.29 (ID 449) Timer 3\nLocation in the menu: P3.5.1.29\nUse this parameter to select the digital input signal that starts the timer. The timer starts when this signal is deactivated (falling\nedge). The output is deactivated when the time defined in the duration parameter has elapsed.\n11.7.4.30 (ID 1046) PID Setpoint Boost\nLocation in the menu: P3.5.1.30\nUse this parameter to select the digital input signal that activates the boost for the PID setpoint value. The timer starts when this\nsignal is deactivated (falling edge). The output is deactivated when the time defined in the duration parameter has elapsed.\n11.7.4.31 (ID 1047) PID Setpoint Selection\nLocation in the menu: P3.5.1.31\nUse this parameter to set the digital input signal that selects the PID setpoint value to be used.\n11.7.4.32 (ID 1049) External PID Start Signal\nLocation in the menu: P3.5.1.32\nUse this parameter to select the digital input signal that starts and stops the external PID controller.\nNOTICE\nThis parameter has no effect if the external PID controller is not enabled in Group 3.14.\n11.7.4.33 (ID 1048) External PID Setpoint Selection\nLocation in the menu: P3.5.1.33\nUse this parameter to set the digital input signal that selects the PID setpoint value to be used.\n11.7.4.34 (ID 490) Reset Maintenance Counter\nLocation in the menu: P3.5.1.34\nUse this parameter to select the digital input that reset the value of the Maintenance Counter.\n11.7.4.35 (ID 530) Flushing Reference Activation\nLocation in the menu: P3.5.1.36\nUse this parameter to select the digital input signal that activates the Flushing function. The flushing frequency reference is bidirec-\ntional and a reverse command does not affect the direction of the flushing reference.\nNOTICE\nIf the input is activated, the drive starts.\n11.7.4.36 (ID 1596) Fire Mode Activation OPEN\nLocation in the menu: P3.5.1.38\nUse this parameter to select the digital input signal that activates the Fire Mode function. This parameter activates the Fire Mode if it\nis enabled with a correct password.\n11.7.4.37 (ID 1619) Fire Mode Activation CLOSE\nLocation in the menu: P3.5.1.39\nUse this parameter to select the digital input signal that activates the Fire Mode function. This parameter activates the Fire Mode if it\nis enabled with a correct password.\n200 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "NOTICE"
+          ],
+          [
+            "If the input is activated, the drive starts.",
+            ""
+          ]
+        ]
+      ]
+    }
+  ]
+}

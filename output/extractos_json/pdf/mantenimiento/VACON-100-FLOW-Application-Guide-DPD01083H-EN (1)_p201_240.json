@@ -1,0 +1,1167 @@
+{
+  "archivo": "VACON-100-FLOW-Application-Guide-DPD01083H-EN (1)_p201_240",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\n11.7.4.38 (ID 1618) Fire Mode Reverse\nLocation in the menu: P3.5.1.40\nUse this parameter to select the digital input signal that gives a command for reverse rotation direction during the Fire Mode. This\nfunction has no effect in normal operation.\n11.7.4.39 (ID 1715) Auto-Cleaning Activation\nLocation in the menu: P3.5.1.41\nUse this parameter to select the digital input signal that starts the Auto-cleaning. The Auto-cleaning stops if the activation signal is\nremoved before the process is complete.\nNOTICE\nIf the input is activated, the drive starts.\n11.7.4.40 (ID 426) Pump 1 Interlock\nLocation in the menu: P3.5.1.42\nUse this parameter to select the digital input signal that is used as interlock signal for the Multi-pump system. The selection of the\napplication with parameter P1.2 Application gives the default value.\n11.7.4.41 (ID 427) Pump 2 Interlock\nLocation in the menu: P3.5.1.43\nUse this parameter to select the digital input signal that is used as interlock signal for the Multi-pump system. The selection of the\napplication with parameter P1.2 Application gives the default value.\n11.7.4.42 (ID 428) Pump 3 Interlock\nLocation in the menu: P3.5.1.44\nUse this parameter to select the digital input signal that is used as interlock signal for the Multi-pump system. The selection of the\napplication with parameter P1.2 Application gives the default value.\n11.7.4.43 (ID 429) Pump 4 Interlock\nLocation in the menu: P3.5.1.45\nUse this parameter to select the digital input signal that is used as interlock signal for the Multi-pump system. The selection of the\napplication with parameter P1.2 Application gives the default value.\n11.7.4.44 (ID 430) Pump 5 Interlock\nLocation in the menu: P3.5.1.46\nUse this parameter to select the digital input signal that is used as interlock signal for the Multi-pump system. The selection of the\napplication with parameter P1.2 Application gives the default value.\n11.7.4.45 (ID 486) Pump 6 Interlock\nLocation in the menu: P3.5.1.47\nUse this parameter to select the digital input signal that is used as interlock signal for the Multi-pump system. The selection of the\napplication with parameter P1.2 Application gives the default value.\n11.7.4.46 (ID 487) Pump 7 Interlock\nLocation in the menu: P3.5.1.48\nUse this parameter to select the digital input signal that is used as interlock signal for the Multi-pump system. The selection of the\napplication with parameter P1.2 Application gives the default value.\n11.7.4.47 (ID 488) Pump 8 Interlock\nLocation in the menu: P3.5.1.49\nUse this parameter to select the digital input signal that is used as interlock signal for the Multi-pump system. The selection of the\napplication with parameter P1.2 Application gives the default value.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 201",
+      "tablas": [
+        [
+          [
+            "NOTICE"
+          ],
+          [
+            "If the input is activated, the drive starts.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.7.4.48 (ID 1053) Reset kWh Trip Counter\nLocation in the menu: P3.5.1.52\nUse this parameter to select the digital input signal that resets the kWh Trip Counter.\n11.7.4.49 (ID 496) Parameter Set 1/2 Selection\nLocation in the menu: P3.5.1.53\nUse this parameter to set the digital input that selects the parameter set to be used. This function is enabled if any other slot than\n'DigIN Slot0' is selected to this parameter. The parameter set selection is allowed only when the drive is stopped.\n· Contact Open = Parameter Set 1 is loaded as the active set\n. Contact Closed = Parameter Set 2 is loaded as the active set\nParameter values are stored to Set 1 and Set 2 by parameters B6.5.4 Save to Set 1 and B6.5.4 Save to Set 2. These parameters can be\nused either from keypad or VACON® Live PC tool.\n11.7.4.50 (ID 15576) Multi-setpoint Selection 0\nLocation in the menu: P3.5.1.54\nUse this parameter to select the digital input signal that is used as a selector for the PID Multi-setpoint function.\n11.7.4.51 (ID 15577) Multi-setpoint Selection 1\nLocation in the menu: P3.5.1.55\nUse this parameter to select the digital input signal that is used as a selector for the PID Multi-setpoint function.\n11.7.4.52 (ID 15578) Multi-setpoint Selection 2\nLocation in the menu: P3.5.1.56\nUse this parameter to select the digital input signal that is used as a selector for the PID Multi-setpoint function.\n11.7.4.53 (ID 15579) Multi-setpoint Selection 3\nLocation in the menu: P3.5.1.57\nUse this parameter to select the digital input signal that is used as a selector for the PID Multi-setpoint function.\n11.7.4.54 (ID 15590) Flow Switch\nLocation in the menu: P3.5.1.58\nUse this parameter to select the digital input signal that is the feedback signal from the Flow Switch.\n11.7.4.55 (ID 15513) AHF Over Temperature\n· Location in the menu: P3.5.1.59 (In I/O Configuration parameter menu)\n· Location in the menu: P3.23.3 (In Advanced Harmonic Filter parameter menu)\nUse this parameter to set the digital input signal that activates AHF Over Temp (fault ID 1118).\n11.7.5 Analog Inputs\n11.7.5.1 (ID 377) AI1 Signal Selection\nLocation in the menu: P3.5.2.1.1\nUse this parameter to connect the AI signal to the analog input of your selection.\nThis parameter is programmable. See 11.7.3 Default Functions of Programmable Inputs.\n11.7.5.2 (ID 378) AI1 Signal Filter Time\nLocation in the menu: P3.5.2.1.2\nUse this parameter to filter out disturbances in the analog input signal. To activate this parameter, enter a value greater than 0.\nNOTICE\nA long filter time makes the regulation response slow.\n202 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\n[%]\nB\ne30bg486.10\n100%\n63% -\nC\n1\nID378\nt [s]\nIllustration 56: The AI1 Signal Filtering\nA\nAnalog input signal\nC\nFiltered signal\nB\nUnfiltered signal\n11.7.5.3 (ID 379) AI1 Signal Range\nLocation in the menu: P3.5.2.1.3\nUse this parameter to change the range of the analog signal. The value of this parameter is bypassed if the custom scaling parame-\nters are used.\nUse the DIP switches on the control board to set the type of the analog input signal (current or voltage). For more information, see\nthe Installation manual. It is also possible to use the analog input signal as frequency reference. The selection of the value 0 or 1\nchange the scaling of the analog input signal.\nSelection\nnumber\nSelection name\nDescription\n0\n0 ... 10 V/0 ... 20 mA\nThe range of the analog input signal is 0 ... 10 V or 0 ... 20 mA (the DIP switch settings on the\ncontrol board tell which one). The input signal is 0 ... 100%.\n1\n2 ... 10 V/4 ... 20 mA\nThe range of the analog input signal is 2 ... 10 V or 4 ... 20 mA (the DIP switch settings on the\ncontrol board tell which one). The input signal is 20 ... 100%.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 203",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "0 ... 10 V/0 ... 20 mA",
+            "The range of the analog input signal is 0 ... 10 V or 0 ... 20 mA (the DIP switch settings on the control board tell which one). The input signal is 0 ... 100%."
+          ],
+          [
+            "1",
+            "2 ... 10 V/4 ... 20 mA",
+            "The range of the analog input signal is 2 ... 10 V or 4 ... 20 mA (the DIP switch settings on the control board tell which one). The input signal is 20 ... 100%."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\n[Hz]\ne30bg487.10\nB\nC\n0%\n0 mA\n50%\n10 mA\n100%\n20 mA\nD) [%]\nIllustration 57: The Analog Input Signal Range, Selection 0\nA\nFrequency reference\nC\nMin freq reference\nB\nMax freq reference\nD\nAnalog input signal\nA\n[Hz]\ne30bg488.10\nB\nC\n0% 20%\n0 mA 4 mA\n50%\n10 mA\n100%\n20 mA\nD [%]\nIllustration 58: The Analog Input Signal Range, Selection 1\nA\nFrequency reference\nC\nMin freq reference\nD\nAnalog input signal\nB\nMax freq reference\n11.7.5.4 (ID 380) AI1 Custom. MIN\nLocation in the menu: P3.5.2.1.4\nUse this parameter to adjust the range of the analog input signal between -160% and 160%.\n11.7.5.5 (ID 381) AI1 Custom. MAX\nLocation in the menu: P3.5.2.1.5\nUse this parameter to adjust the range of the analog input signal between -160% and 160%.\nUse the analog input signal, for example, as frequency reference, and set the parameters P3.5.2.1.4 and P3.5.2.1.5 between 40 and\n80%. In these conditions, the frequency reference changes between the Minimum frequency reference and the Maximum frequen-\ncy reference, and the analog input signal changes between 8 and 16 mA.\n204 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "A",
+            "Frequency reference",
+            "C Min freq reference"
+          ],
+          [
+            "B",
+            "Max freq reference",
+            "D Analog input signal"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\n[Hz]\ne30bg489.10\nB\nC\n0%\n0 mA\n40%\n8 mA\nE\n80%\n100%\n16 mA 20 mA\nF\nD [%]\nIllustration 59: AI1 Signal Custom. Min/Max\nA\nFrequency reference\nD\nAnalog input signal\nB\nMax freq reference\nE\nAI custom min\nC\nMin freq reference\nF\nAI custom max\n11.7.5.6 (ID 387) AI1 Signal Inversion\nLocation in the menu: P3.5.2.1.6\nUse this parameter to invert the analog input signal. When the analog input signal is inverted, the curve of the signal becomes the\nopposite.\nIt is possible to use the analog input signal as frequency reference. The selection of the value 0 or 1 change scaling of the analog\ninput signal.\nSelection\nnumber\nSelection\nname\nDescription\n0\nNormal\nNo inversion. The value 0% of the analog input signal agrees to the Minimum Frequency Refer-\nence. The value 100% of the analog input signal agrees to the Maximum Frequency Reference.\n1\nInverted\nSignal inversion. The value 0% of the analog input signal agrees to the Maximum Frequency Refer-\nence. The value 100% of the analog input signal agrees to the Minimum Frequency Reference.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 205",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Normal",
+            "No inversion. The value 0% of the analog input signal agrees to the Minimum Frequency Refer- ence. The value 100% of the analog input signal agrees to the Maximum Frequency Reference."
+          ],
+          [
+            "1",
+            "Inverted",
+            "Signal inversion. The value 0% of the analog input signal agrees to the Maximum Frequency Refer- ence. The value 100% of the analog input signal agrees to the Minimum Frequency Reference."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\n[Hz]\ne30bg490.10\nB\nC\n0%\n0 mA\n50%\n10 mA\n100%\n20 mA\nD [%]\nIllustration 60: AI1 Signal Inversion, Selection 0\nA\nFrequency reference\nC\nMinimum frequency reference\nB\nMaximum frequency reference\nD\nAnalog input signal\nA\n[Hz]\ne30bg491.10\nB\nC\n0%\n0 mA\n50%\n10 mA\n100%\n20 mA\nD) [%]\nIllustration 61: AI1 Signal Inversion, Selection 1\nA\nFrequency reference\nC\nMinimum frequency reference\nB\nMaximum frequency reference\nD\nAnalog input signal\n11.7.6 Digital Outputs\n11.7.6.1 (ID 11001) RO1 Function\nLocation in the menu: P3.5.3.2.1\nUse this parameter to select a function or a signal that is connected to the relay output.\n206 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "A",
+            "Frequency reference",
+            "C Minimum frequency reference"
+          ],
+          [
+            "B",
+            "Maximum frequency reference",
+            "D Analog input signal"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nSelection\nnumber\nSelection name\nDescription\n0\nNot used\nThe output is not used.\n1\nReady\nThe AC drive is ready to operate.\n2\nRun\nThe AC drive operates (the motor runs).\n3\nGeneral fault\nA fault trip occurred.\n4\nGeneral fault inverted\nA fault trip did not occur.\n5\nGeneral alarm\nAn alarm occurred.\n6\nReversed\nThe reverse command is given.\n7\nAt speed\nThe output frequency has become the same as the set frequency reference.\n8\nThermistor fault\nA thermistor fault occurred.\n9\nMotor regulator activated\nOne of the limit regulators (for example current limit or torque limit) is activated.\n10\nStart signal active\nThe start command of the drive is active.\n11\nKeypad control active\nThe selection is keypad control (the active control place is keypad).\n12\nI/O control B active\nThe selection is I/O control place B (the active control place is I/O B).\n13\nLimit supervision 1\nThe limit supervision activates if the signal value goes below or above the set su-\npervision limit (P3.8.3 or P3.8.7).\n14\nLimit supervision 2\nThe limit supervision activates if the signal value goes below or above the set su-\npervision limit (P3.8.3 or P3.8.7).\n15\nFire mode active\nThe Fire mode function is active.\n16\nFlushing active\nThe Flushing function is active.\n17\nPreset Frequency active\nThe selection of preset frequency was made with digital input signals.\n18\nQuick Stop active\nThe Quick stop function is activated.\n19\nPID in Sleep mode\nThe PID controller is in the sleep mode.\n20\nPID Soft Fill activated\nThe Soft fill function of the PID controller is activated.\n21\nPID feedback supervision\nThe feedback value of the PID controller is not in the supervision limits.\n22\nExtPID feedback supervision\nThe External PID controller feedback value is not in the supervision limits.\n23\nInput pressure alarm\nThe input pressure of the pump is below the value that was set with parameter\nP3.13.9.7.\n24\nFrost protection alarm\nThe measured temperature of the pump is below the level that was set with pa-\nrameter P3.13.10.5.\n25\nTime channel 1\nThe status of Time channel 1.\n26\nTime channel 2\nThe status of Time channel 2.\n27\nTime channel 3\nThe status of Time channel 3.\n28\nFieldbus Control Word bit 13\nThe digital (relay) output control from the Fieldbus control word bit 13.\n29\nFieldbus Control Word bit 14\nThe digital (relay) output control from the Fieldbus control word bit 14.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 207",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Not used",
+            "The output is not used."
+          ],
+          [
+            "1",
+            "Ready",
+            "The AC drive is ready to operate."
+          ],
+          [
+            "2",
+            "Run",
+            "The AC drive operates (the motor runs)."
+          ],
+          [
+            "3",
+            "General fault",
+            "A fault trip occurred."
+          ],
+          [
+            "4",
+            "General fault inverted",
+            "A fault trip did not occur."
+          ],
+          [
+            "5",
+            "General alarm",
+            "An alarm occurred."
+          ],
+          [
+            "6",
+            "Reversed",
+            "The reverse command is given."
+          ],
+          [
+            "7",
+            "At speed",
+            "The output frequency has become the same as the set frequency reference."
+          ],
+          [
+            "8",
+            "Thermistor fault",
+            "A thermistor fault occurred."
+          ],
+          [
+            "9",
+            "Motor regulator activated",
+            "One of the limit regulators (for example current limit or torque limit) is activated."
+          ],
+          [
+            "10",
+            "Start signal active",
+            "The start command of the drive is active."
+          ],
+          [
+            "11",
+            "Keypad control active",
+            "The selection is keypad control (the active control place is keypad)."
+          ],
+          [
+            "12",
+            "I/O control B active",
+            "The selection is I/O control place B (the active control place is I/O B)."
+          ],
+          [
+            "13",
+            "Limit supervision 1",
+            "The limit supervision activates if the signal value goes below or above the set su- pervision limit (P3.8.3 or P3.8.7)."
+          ],
+          [
+            "14",
+            "Limit supervision 2",
+            "The limit supervision activates if the signal value goes below or above the set su- pervision limit (P3.8.3 or P3.8.7)."
+          ],
+          [
+            "15",
+            "Fire mode active",
+            "The Fire mode function is active."
+          ],
+          [
+            "16",
+            "Flushing active",
+            "The Flushing function is active."
+          ],
+          [
+            "17",
+            "Preset Frequency active",
+            "The selection of preset frequency was made with digital input signals."
+          ],
+          [
+            "18",
+            "Quick Stop active",
+            "The Quick stop function is activated."
+          ],
+          [
+            "19",
+            "PID in Sleep mode",
+            "The PID controller is in the sleep mode."
+          ],
+          [
+            "20",
+            "PID Soft Fill activated",
+            "The Soft fill function of the PID controller is activated."
+          ],
+          [
+            "21",
+            "PID feedback supervision",
+            "The feedback value of the PID controller is not in the supervision limits."
+          ],
+          [
+            "22",
+            "ExtPID feedback supervision",
+            "The External PID controller feedback value is not in the supervision limits."
+          ],
+          [
+            "23",
+            "Input pressure alarm",
+            "The input pressure of the pump is below the value that was set with parameter P3.13.9.7."
+          ],
+          [
+            "24",
+            "Frost protection alarm",
+            "The measured temperature of the pump is below the level that was set with pa- rameter P3.13.10.5."
+          ],
+          [
+            "25",
+            "Time channel 1",
+            "The status of Time channel 1."
+          ],
+          [
+            "26",
+            "Time channel 2",
+            "The status of Time channel 2."
+          ],
+          [
+            "27",
+            "Time channel 3",
+            "The status of Time channel 3."
+          ],
+          [
+            "28",
+            "Fieldbus Control Word bit 13",
+            "The digital (relay) output control from the Fieldbus control word bit 13."
+          ],
+          [
+            "29",
+            "Fieldbus Control Word bit 14",
+            "The digital (relay) output control from the Fieldbus control word bit 14."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nSelection\nnumber\nSelection name\nDescription\n30\nFieldbus Control Word bit 15\nThe digital (relay) output control from the Fieldbus control word bit 15.\n31\nFieldbus Process Data In1 bit 0\nThe digital (relay) output control from the Fieldbus Process Data In1, bit 0.\n32\nFieldbus Process Data In1 bit 1\nThe digital (relay) output control from the Fieldbus Process Data In1, bit 1.\n33\nFieldbus Process Data In1 bit 2\nThe digital (relay) output control from the Fieldbus Process Data In1, bit 2.\n34\nMaintenance counter 1 alarm\nThe maintenance counter reached the alarm limit that is set with parameter\nP3.16.2.\n35\nMaintenance counter 1 fault\nThe maintenance counter reached the alarm limit that is set with parameter\nP3.16.3.\n36\nBlock Out. 1\nThe output of the programmable Block 1. See parameter menu M3.19 Drive cus-\ntomizer.\n37\nBlock Out.2\nThe output of the programmable Block 2. See parameter menu M3.19 Drive cus-\ntomizer.\n38\nBlock Out.3\nThe output of the programmable Block 3. See parameter menu M3.19 Drive cus-\ntomizer.\n39\nBlock Out.4\nThe output of the programmable Block 4. See parameter menu M3.19 Drive cus-\ntomizer.\n40\nBlock Out.5\nThe output of the programmable Block 5. See parameter menu M3.19 Drive cus-\ntomizer.\n41\nBlock Out.6\nThe output of the programmable Block 6. See parameter menu M3.19 Drive cus-\ntomizer.\n42\nBlock Out.7\nThe output of the programmable Block 7. See parameter menu M3.19 Drive cus-\ntomizer.\n43\nBlock Out.8\nThe output of the programmable Block 8. See parameter menu M3.19 Drive cus-\ntomizer.\n44\nBlock Out.9\nThe output of the programmable Block 9. See parameter menu M3.19 Drive cus-\ntomizer.\n45\nBlock Out. 10\nThe output of the programmable Block 10. See parameter menu M3.19 Drive cus-\ntomizer.\n46\nJockey pump control\nThe control signal for the external jockey pump.\n47\nPriming pump control\nThe control signal for the external priming pump.\n48\nAuto-cleaning active\nThe Pump auto-cleaning function is activated.\n49\nMulti-pump K1 control\nThe contactor control for the Multi-pump function.\n50\nMulti-pump K2 control\nThe contactor control for the Multi-pump function.\n51\nMulti-pump K3 control\nThe contactor control for the Multi-pump function.\n52\nMulti-pump K4 control\nThe contactor control for the Multi-pump function.\n53\nMulti-pump K5 control\nThe contactor control for the Multi-pump function.\n54\nMulti-pump K6 control\nThe contactor control for the Multi-pump function.\n208 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "30",
+            "Fieldbus Control Word bit 15",
+            "The digital (relay) output control from the Fieldbus control word bit 15."
+          ],
+          [
+            "31",
+            "Fieldbus Process Data In1 bit 0",
+            "The digital (relay) output control from the Fieldbus Process Data In1, bit 0."
+          ],
+          [
+            "32",
+            "Fieldbus Process Data In1 bit 1",
+            "The digital (relay) output control from the Fieldbus Process Data In1, bit 1."
+          ],
+          [
+            "33",
+            "Fieldbus Process Data In1 bit 2",
+            "The digital (relay) output control from the Fieldbus Process Data In1, bit 2."
+          ],
+          [
+            "34",
+            "Maintenance counter 1 alarm",
+            "The maintenance counter reached the alarm limit that is set with parameter P3.16.2."
+          ],
+          [
+            "35",
+            "Maintenance counter 1 fault",
+            "The maintenance counter reached the alarm limit that is set with parameter P3.16.3."
+          ],
+          [
+            "36",
+            "Block Out. 1",
+            "The output of the programmable Block 1. See parameter menu M3.19 Drive cus- tomizer."
+          ],
+          [
+            "37",
+            "Block Out.2",
+            "The output of the programmable Block 2. See parameter menu M3.19 Drive cus- tomizer."
+          ],
+          [
+            "38",
+            "Block Out.3",
+            "The output of the programmable Block 3. See parameter menu M3.19 Drive cus- tomizer."
+          ],
+          [
+            "39",
+            "Block Out.4",
+            "The output of the programmable Block 4. See parameter menu M3.19 Drive cus- tomizer."
+          ],
+          [
+            "40",
+            "Block Out.5",
+            "The output of the programmable Block 5. See parameter menu M3.19 Drive cus- tomizer."
+          ],
+          [
+            "41",
+            "Block Out.6",
+            "The output of the programmable Block 6. See parameter menu M3.19 Drive cus- tomizer."
+          ],
+          [
+            "42",
+            "Block Out.7",
+            "The output of the programmable Block 7. See parameter menu M3.19 Drive cus- tomizer."
+          ],
+          [
+            "43",
+            "Block Out.8",
+            "The output of the programmable Block 8. See parameter menu M3.19 Drive cus- tomizer."
+          ],
+          [
+            "44",
+            "Block Out.9",
+            "The output of the programmable Block 9. See parameter menu M3.19 Drive cus- tomizer."
+          ],
+          [
+            "45",
+            "Block Out. 10",
+            "The output of the programmable Block 10. See parameter menu M3.19 Drive cus- tomizer."
+          ],
+          [
+            "46",
+            "Jockey pump control",
+            "The control signal for the external jockey pump."
+          ],
+          [
+            "47",
+            "Priming pump control",
+            "The control signal for the external priming pump."
+          ],
+          [
+            "48",
+            "Auto-cleaning active",
+            "The Pump auto-cleaning function is activated."
+          ],
+          [
+            "49",
+            "Multi-pump K1 control",
+            "The contactor control for the Multi-pump function."
+          ],
+          [
+            "50",
+            "Multi-pump K2 control",
+            "The contactor control for the Multi-pump function."
+          ],
+          [
+            "51",
+            "Multi-pump K3 control",
+            "The contactor control for the Multi-pump function."
+          ],
+          [
+            "52",
+            "Multi-pump K4 control",
+            "The contactor control for the Multi-pump function."
+          ],
+          [
+            "53",
+            "Multi-pump K5 control",
+            "The contactor control for the Multi-pump function."
+          ],
+          [
+            "54",
+            "Multi-pump K6 control",
+            "The contactor control for the Multi-pump function."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nSelection\nnumber\nSelection name\nDescription\n55\nMulti-pump K7 control\nThe contactor control for the Multi-pump function.\n56\nMulti-pump K8 control\nThe contactor control for the Multi-pump function.\n69\nSelected parameter set\nShows the active parameter set:\nOPEN = Parameter set 1 active\nCLOSED = Parameter set 2 active\n72\nAHF Capacitor Disconnection\n73\nAHF Capacitor Disconnection\nInverted\n74\nRun Indication\n75\nMotor Switch Open\nThe Motor Switch function has detected that the switch between the drive and\nthe motor is open.\n11.7.6.2 (ID 11002) RO1 ON Delay\nLocation in the menu: P3.5.3.2.2\nUse this parameter to set the ON delay for the relay output.\n11.7.6.3 (ID 11003) RO1 OFF Delay\nLocation in the menu: P3.5.3.2.3\nUse this parameter to set the OFF delay for the relay output.\n11.7.7 Analog Outputs\n11.7.7.1 (ID 10050) AO1 Function\nLocation in the menu: P3.5.4.1.1\nUse this parameter to select a function or a signal that is connected to the analog output. The contents of the analog output signal 1\nare specified in this parameter. The scaling of the analog output signal depends on the signal.\nSelection\nnumber\nSelection name\nDescription\n0\nTest 0% (Not used)\nThe analog output is set to 0% or 20% so that it agrees with parameter P3.5.4.1.3.\n1\nTEST 100%\nThe analog output is set to 100% of the signal (10 V/20 mA).\n2\nOutput frequency\nThe actual output frequency from 0 to Maximum frequency reference.\n3\nFrequency reference\nThe actual frequency reference from 0 to Maximum frequency reference.\n4\nMotor speed\nThe actual motor speed from 0 to Motor nominal speed.\n5\nOutput current\nThe output current of the drive from 0 to Motor nominal current.\n6\nMotor torque\nThe actual motor torque from 0 to motor nominal torque (100%).\n7\nMotor power\nThe actual motor power from 0 to Motor nominal power (100%).\n8\nMotor voltage\nThe actual motor voltage from 0 to Motor nominal voltage.\n9\nDC link voltage\nThe actual DC link voltage 0 ... 1000 V.\n10\nPID Setpoint\nThe actual setpoint value of the PID Controller (0 ... 100%).\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 209",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "55",
+            "Multi-pump K7 control",
+            "The contactor control for the Multi-pump function."
+          ],
+          [
+            "56",
+            "Multi-pump K8 control",
+            "The contactor control for the Multi-pump function."
+          ],
+          [
+            "69",
+            "Selected parameter set",
+            "Shows the active parameter set: OPEN = Parameter set 1 active CLOSED = Parameter set 2 active"
+          ],
+          [
+            "72",
+            "AHF Capacitor Disconnection",
+            ""
+          ],
+          [
+            "73",
+            "AHF Capacitor Disconnection Inverted",
+            ""
+          ],
+          [
+            "74",
+            "Run Indication",
+            ""
+          ],
+          [
+            "75",
+            "Motor Switch Open",
+            "The Motor Switch function has detected that the switch between the drive and the motor is open."
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Test 0% (Not used)",
+            "The analog output is set to 0% or 20% so that it agrees with parameter P3.5.4.1.3."
+          ],
+          [
+            "1",
+            "TEST 100%",
+            "The analog output is set to 100% of the signal (10 V/20 mA)."
+          ],
+          [
+            "2",
+            "Output frequency",
+            "The actual output frequency from 0 to Maximum frequency reference."
+          ],
+          [
+            "3",
+            "Frequency reference",
+            "The actual frequency reference from 0 to Maximum frequency reference."
+          ],
+          [
+            "4",
+            "Motor speed",
+            "The actual motor speed from 0 to Motor nominal speed."
+          ],
+          [
+            "5",
+            "Output current",
+            "The output current of the drive from 0 to Motor nominal current."
+          ],
+          [
+            "6",
+            "Motor torque",
+            "The actual motor torque from 0 to motor nominal torque (100%)."
+          ],
+          [
+            "7",
+            "Motor power",
+            "The actual motor power from 0 to Motor nominal power (100%)."
+          ],
+          [
+            "8",
+            "Motor voltage",
+            "The actual motor voltage from 0 to Motor nominal voltage."
+          ],
+          [
+            "9",
+            "DC link voltage",
+            "The actual DC link voltage 0 ... 1000 V."
+          ],
+          [
+            "10",
+            "PID Setpoint",
+            "The actual setpoint value of the PID Controller (0 ... 100%)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nSelection\nnumber\nSelection name\nDescription\n11\nPID Feedback\nThe actual feedback value of the PID Controller (0 ... 100%).\n12\nPID output\nThe output of the PID controller (0 ... 100%).\n13\nExtPID output\nThe External PID controller output (0 ... 100%).\n14\nFieldbus Process Data In\n1\nFieldbus Process Data In 1: 0 ... 10000 (this agrees with 0 ... 100.00%).\n15\nFieldbus Process Data In\n2\nFieldbus Process Data In 2: 0 ... 10000 (this agrees with 0 ... 100.00%).\n16\nFieldbus Process Data In\n3\nFieldbus Process Data In 3: 0 ... 10000 (this agrees with 0 ... 100.00%).\n17\nFieldbus Process Data In\n4\nFieldbus Process Data In 4: 0 ... 10000 (this agrees with 0 ... 100.00%).\n18\nFieldbus Process Data In\n5\nFieldbus Process Data In 5: 0 ... 10000 (this agrees with 0 ... 100.00%).\n19\nFieldbus Process Data In\n6\nFieldbus Process Data In 6: 0 ... 10000 (this agrees with 0 ... 100.00%).\n20\nFieldbus Process Data In\n7\nFieldbus Process Data In 7: 0 ... 10000 (this agrees with 0 ... 100.00%).\n21\nFieldbus Process Data In\n8\nFieldbus Process Data In 8: 0 ... 10000 (this agrees with 0 ... 100.00%).\n22\nBlock Out. 1\nThe output of the programmable Block 1: 0 ... 10000 (this agrees with 0 ... 100.00%). See\nparameter menu M3.19 Drive customizer.\n23\nBlock Out.2\nThe output of the programmable Block 2: 0 ... 10000 (this agrees with 0 ... 100.00%). See\nparameter menu M3.19 Drive customizer.\n24\nBlock Out.3\nThe output of the programmable Block 3: 0 ... 10000 (this agrees with 0 ... 100.00%). See\nparameter menu M3.19 Drive customizer.\n25\nBlock Out.4\nThe output of the programmable Block 4: 0 ... 10000 (this agrees with 0 ... 100.00%). See\nparameter menu M3.19 Drive customizer.\n26\nBlock Out.5\nThe output of the programmable Block 5: 0 ... 10000 (this agrees with 0 ... 100.00%). See\nparameter menu M3.19 Drive customizer.\n27\nBlock Out.6\nThe output of the programmable Block 6: 0 ... 10000 (this agrees with 0 ... 100.00%). See\nparameter menu M3.19 Drive customizer.\n28\nBlock Out.7\nThe output of the programmable Block 7: 0 ... 10000 (this agrees with 0 ... 100,00%). See\nparameter menu M3.19 Drive customizer.\n29\nBlock Out.8\nThe output of the programmable Block 8: 0 ... 10000 (this agrees with 0 ... 100.00%). See\nparameter menu M3.19 Drive customizer.\n30\nBlock Out.9\nThe output of the programmable Block 9: 0 ... 10000 (this agrees with 0 ... 100.00%). See\nparameter menu M3.19 Drive customizer.\n31\nBlock Out. 10\nThe output of the programmable Block 10: 0 ... 10000 (this agrees with 0 ... 100.00%). See\nparameter menu M3.19 Drive customizer.\n210 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "11",
+            "PID Feedback",
+            "The actual feedback value of the PID Controller (0 ... 100%)."
+          ],
+          [
+            "12",
+            "PID output",
+            "The output of the PID controller (0 ... 100%)."
+          ],
+          [
+            "13",
+            "ExtPID output",
+            "The External PID controller output (0 ... 100%)."
+          ],
+          [
+            "14",
+            "Fieldbus Process Data In 1",
+            "Fieldbus Process Data In 1: 0 ... 10000 (this agrees with 0 ... 100.00%)."
+          ],
+          [
+            "15",
+            "Fieldbus Process Data In 2",
+            "Fieldbus Process Data In 2: 0 ... 10000 (this agrees with 0 ... 100.00%)."
+          ],
+          [
+            "16",
+            "Fieldbus Process Data In 3",
+            "Fieldbus Process Data In 3: 0 ... 10000 (this agrees with 0 ... 100.00%)."
+          ],
+          [
+            "17",
+            "Fieldbus Process Data In 4",
+            "Fieldbus Process Data In 4: 0 ... 10000 (this agrees with 0 ... 100.00%)."
+          ],
+          [
+            "18",
+            "Fieldbus Process Data In 5",
+            "Fieldbus Process Data In 5: 0 ... 10000 (this agrees with 0 ... 100.00%)."
+          ],
+          [
+            "19",
+            "Fieldbus Process Data In 6",
+            "Fieldbus Process Data In 6: 0 ... 10000 (this agrees with 0 ... 100.00%)."
+          ],
+          [
+            "20",
+            "Fieldbus Process Data In 7",
+            "Fieldbus Process Data In 7: 0 ... 10000 (this agrees with 0 ... 100.00%)."
+          ],
+          [
+            "21",
+            "Fieldbus Process Data In 8",
+            "Fieldbus Process Data In 8: 0 ... 10000 (this agrees with 0 ... 100.00%)."
+          ],
+          [
+            "22",
+            "Block Out. 1",
+            "The output of the programmable Block 1: 0 ... 10000 (this agrees with 0 ... 100.00%). See parameter menu M3.19 Drive customizer."
+          ],
+          [
+            "23",
+            "Block Out.2",
+            "The output of the programmable Block 2: 0 ... 10000 (this agrees with 0 ... 100.00%). See parameter menu M3.19 Drive customizer."
+          ],
+          [
+            "24",
+            "Block Out.3",
+            "The output of the programmable Block 3: 0 ... 10000 (this agrees with 0 ... 100.00%). See parameter menu M3.19 Drive customizer."
+          ],
+          [
+            "25",
+            "Block Out.4",
+            "The output of the programmable Block 4: 0 ... 10000 (this agrees with 0 ... 100.00%). See parameter menu M3.19 Drive customizer."
+          ],
+          [
+            "26",
+            "Block Out.5",
+            "The output of the programmable Block 5: 0 ... 10000 (this agrees with 0 ... 100.00%). See parameter menu M3.19 Drive customizer."
+          ],
+          [
+            "27",
+            "Block Out.6",
+            "The output of the programmable Block 6: 0 ... 10000 (this agrees with 0 ... 100.00%). See parameter menu M3.19 Drive customizer."
+          ],
+          [
+            "28",
+            "Block Out.7",
+            "The output of the programmable Block 7: 0 ... 10000 (this agrees with 0 ... 100,00%). See parameter menu M3.19 Drive customizer."
+          ],
+          [
+            "29",
+            "Block Out.8",
+            "The output of the programmable Block 8: 0 ... 10000 (this agrees with 0 ... 100.00%). See parameter menu M3.19 Drive customizer."
+          ],
+          [
+            "30",
+            "Block Out.9",
+            "The output of the programmable Block 9: 0 ... 10000 (this agrees with 0 ... 100.00%). See parameter menu M3.19 Drive customizer."
+          ],
+          [
+            "31",
+            "Block Out. 10",
+            "The output of the programmable Block 10: 0 ... 10000 (this agrees with 0 ... 100.00%). See parameter menu M3.19 Drive customizer."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.7.7.2 (ID 10051) AO1 Filter Time\nLocation in the menu: P3.5.4.1.2\nUse this parameter to set the filtering time for the analog signal. The filtering function is disabled when the filtering time is 0. See\nP3.5.2.1.2.\n11.7.7.3 (ID 10052) AO1 Minimum\nLocation in the menu: P3.5.4.1.3\nUse this parameter to change the range of the analog output signal. For example, if '4 mA' is selected, the range of analog output\nsignal is 4 ... 20 mA. Select the signal type (current/voltage) with the DIP switches. The analog output scaling is different in P3.5.4.1.4.\nSee also P3.5.2.1.3.\n11.7.7.4 (ID 10053) AO1 Minimum Scale\nLocation in the menu: P3.5.4.1.4\nUse this parameter to scale the analog output signal. The scaling values (min and max) are given in the process unit specified by the\nselection of the AO function.\n11.7.7.5 (ID 10054) AO1 Maximum Scale\nLocation in the menu: P3.5.4.1.5\nUse this parameter to scale the analog output signal. The scaling values (min and max) are given in the process unit specified by the\nselection of the AO function.\nSelect, for example, the output frequency of the drive for the contents of the analog output signal, and set parameters P3.5.4.1.4\nand P3.5.4.1.5 between 10 and 40 Hz. Then the output frequency of the drive changes between 10 and 40 Hz, and the analog out-\nput signal changes between 0 and 20 mA.\nA\n[%]\ne30bg492.10\n100%\n20 mA\n50%\n10 mA\n0%\n0 mA\n0 Hz\n10 Hz\nB\n40 Hz\nC\nE) [Hz]\nD)\nIllustration 62: Scaling of the AO1 Signal\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 211",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "VACON® 100 FLOW\nDanfoss\nParameter Descriptions\nApplication Guide\nA\nAnalog output signal\nD\nMaximum frequency reference\nB\nAnalog output minimum scale\nE\nOutput frequency\nC\nAnalog output maximum scale\n11.8 Fieldbus Data\n11.8.1 (ID 852) FB DataOut 1 Selection\nLocation in the menu: P3.6.1\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.2 (ID 853) FB DataOut 2 Selection\nLocation in the menu: P3.6.2\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.3 (ID 854) FB DataOut 3 Selection\nLocation in the menu: P3.6.3\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.4 (ID 855) FB DataOut 4 Selection\nLocation in the menu: P3.6.4\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.5 (ID 856) FB DataOut 5 Selection\nLocation in the menu: P3.6.5\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.6 (ID 857) FB DataOut 6 Selection\nLocation in the menu: P3.6.6\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.7 (ID 858) FB DataOut 7 Selection\nLocation in the menu: P3.6.7\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.8 (ID 859) FB DataOut 8 Selection\nLocation in the menu: P3.6.8\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\n212 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "A",
+            "Analog output signal",
+            "D Maximum frequency reference"
+          ],
+          [
+            "B",
+            "Analog output minimum scale",
+            "E Output frequency"
+          ],
+          [
+            "C",
+            "Analog output maximum scale",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.9 (ID 890) FB DataOut 9 Selection\nLocation in the menu: P3.6.9\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.10 (ID 891) FB DataOut 10 Selection\nLocation in the menu: P3.6.10\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.11 (ID 892) FB DataOut 11 Selection\nLocation in the menu: P3.6.11\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.12 (ID 893) FB DataOut 12 Selection\nLocation in the menu: P3.6.12\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.13 (ID 894) FB DataOut 13 Selection\nLocation in the menu: P3.6.13\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.14 (ID 895) FB DataOut 14 Selection\nLocation in the menu: P3.6.14\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.15 (ID 896) FB DataOut 15 Selection\nLocation in the menu: P3.6.15\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.16 (ID 897) FB DataOut 16 Selection\nLocation in the menu: P3.6.16\nUse this parameter to select the data that is sent to the fieldbus with the ID number of the parameter or monitor value.\nThe data is scaled to an unsigned 16-bit format according to the format on the control panel. For example, value 25.5 on the display\nequals 255.\n11.8.17 (ID 888) Fieldbus Sign of Actual\nLocation in the menu: P3.6.17\nUse this parameter to select the behavior for the sign of the fieldbus Speed Actual.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 213",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nSelec-\ntion\nnumber\nSelection\nname\nDescription\n0\nPositive\nThe sign of the actual is always positive.\nThe running direction is visible from the status word bit 2. A TRUE value corresponds to reversing\nactual speed.\n1\nActual direc-\ntion\nThe sign of the actual follows the running direction. Forward is positive, reverse is negative.\nA TRUE value for status word bit 2 indicates if the direction of the actual differs from the direction\nrequested from FB control commands.\n2\nFollow refer-\nence\nA negative sign of the actual indicates if the direction of the actual differs from the direction re-\nquested from FB control commands.\nThe status word bit 2 corresponds to the direction requested from FB control commands. A TRUE\nvalue corresponds to requested reversing.\n11.9 Prohibit Frequencies\n11.9.1 The Prohibit Frequencies Function\nIn some processes, it can be necessary to avoid some frequencies because they make problems of mechanical resonance. With the\nProhibit frequencies function, it is possible to prevent the usage of these frequencies. When the input frequency reference increa-\nses, the internal frequency reference stays at the low limit, until the input frequency reference is above the high limit.\n11.9.2 (ID 509) Prohibit Frequency Range 1 Low Limit\nLocation in the menu: P3.7.1\nUse this parameter to prevent the drive operating on the prohibited frequencies.\nIn some processes, it can be necessary to avoid some frequencies because they cause mechanical resonance.\n11.9.3 (ID 510) Prohibit Frequency Range 1 High Limit\nLocation in the menu: P3.7.2\nUse this parameter to prevent the drive operating on the prohibited frequencies. In some processes, it can be necessary to avoid\nsome frequencies because they cause mechanical resonance.\n11.9.4 (ID 511) Prohibit Frequency Range 2 Low Limit\nLocation in the menu: P3.7.3\nUse this parameter to prevent the drive operating on the prohibited frequencies. In some processes, it can be necessary to avoid\nsome frequencies because they cause mechanical resonance.\n11.9.5 (ID 512) Prohibit Frequency Range 2 High Limit\nLocation in the menu: P3.7.4\nUse this parameter to prevent the drive operating on the prohibited frequencies. In some processes, it can be necessary to avoid\nsome frequencies because they cause mechanical resonance.\n11.9.6 (ID 513) Prohibit Frequency Range 3 Low Limit\nLocation in the menu: P3.7.5\nUse this parameter to prevent the drive operating on the prohibited frequencies. In some processes, it can be necessary to avoid\nsome frequencies because they cause mechanical resonance.\n11.9.7 (ID 514) Prohibit Frequency Range 3 High Limit\nLocation in the menu: P3.7.6\nUse this parameter to prevent the drive operating on the prohibited frequencies. In some processes, it can be necessary to avoid\nsome frequencies because they cause mechanical resonance.\n214 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selec- tion number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Positive",
+            "The sign of the actual is always positive. The running direction is visible from the status word bit 2. A TRUE value corresponds to reversing actual speed."
+          ],
+          [
+            "1",
+            "Actual direc- tion",
+            "The sign of the actual follows the running direction. Forward is positive, reverse is negative. A TRUE value for status word bit 2 indicates if the direction of the actual differs from the direction requested from FB control commands."
+          ],
+          [
+            "2",
+            "Follow refer- ence",
+            "A negative sign of the actual indicates if the direction of the actual differs from the direction re- quested from FB control commands. The status word bit 2 corresponds to the direction requested from FB control commands. A TRUE value corresponds to requested reversing."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\ne30bu058\nB\nC\nC\nB\nD\nIllustration 63: The Prohibited Frequencies\nA\nActual Reference\nC\nLow Limit\nB\nHigh Limit\nD\nRequested Reference\n11.9.8 (ID 518) Ramp Time Factor\nLocation in the menu: P3.7.7\nUse this parameter to set the multiplier of the selected ramp times when the output frequency of the drive is between the prohibi-\nted frequency limits. The Ramp Time Factor sets the acceleration and the deceleration time when the output frequency is in a pro-\nhibited frequency range. The value of the Ramp Time Factor is multiplied by the value of P3.4.1.2 (Acceleration Time 1) or P3.4.1.3\n(Deceleration Time 1). For example, the value 0.1 makes the acceleration/deceleration time ten times shorter.\nA\n[Hz]\ne30bu059\nB\n/\nD\nC\nE\nF [s]\nIllustration 64: The Parameter Ramp Time Factor\nA\nOutput Frequency\nD\nRamp Time Factor = 0.3\nB\nHigh Limit\nE\nRamp Time Factor = 2.5\nC\nLow Limit\nF\nTime\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 215",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "VACON® 100 FLOW\nDanfoss\nParameter Descriptions\nApplication Guide\n11.10 Supervisions\n11.10.1 (ID 1431) Supervision #1 Item Selection\nLocation in the menu: P3.8.1\nUse this parameter to select the supervision item. The output of the supervision function can be selected to the relay output.\n11.10.2 (ID 1432) Supervision #1 Mode\nLocation in the menu: P3.8.2\nUse this parameter to set the supervision mode.\nWhen the 'Low limit' mode is selected, the output of the supervision function is active when the signal is below the supervision\nlimit.\nWhen the 'High limit' mode is selected, the output of the supervision function is active when the signal is above the supervision\nlimit.\n11.10.3 (ID 1433) Supervision #1 Limit\nLocation in the menu: P3.8.3\nUse this parameter to set the supervision limit for the selected item. The unit shows automatically.\n11.10.4 (ID 1434) Supervision #1 Limit Hysteresis\nLocation in the menu: P3.8.4\nUse this parameter to set the supervision limit hysteresis for the selected item. The unit shows automatically.\n11.10.5 (ID 1435) Supervision #2 Item Selection\nLocation in the menu: P3.8.5\nUse this parameter to select the supervision item. The output of the supervision function can be selected to the relay output.\n11.10.6 (ID 1436) Supervision #2 Mode\nLocation in the menu: P3.8.6\nUse this parameter to set the supervision mode.\n11.10.7 (ID 1437) Supervision #2 Limit\nLocation in the menu: P3.8.7\nUse this parameter to set the supervision limit for the selected item. The unit shows automatically.\n11.10.8 (ID 1438) Supervision #2 Limit Hysteresis\nLocation in the menu: P3.8.8\nUse this parameter to set the supervision limit hysteresis for the selected item. The unit shows automatically.\n11.11 Protections\n11.11.1 General\n11.11.1.1 (ID 701) Response to External Fault\nLocation in the menu: P3.9.1.2\nUse this parameter to select the response of the drive to an 'External Fault'.\nIf a fault occurs, the drive can show a notification of it on the display of the drive. An external fault is activated with a digital input\nsignal. The default digital input is DI3. It is also possible to program the response data into a relay output.\n11.11.1.2 (ID 730) Input Phase Fault\nLocation in the menu: P3.9.1.3\nUse this parameter to select the supply phase configuration of the drive.\nIf the 1-phase supply is used, the value of this parameter must be set to 1-phase support.\n216 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.11.1.3 (ID 727) Undervoltage Fault\nLocation in the menu: P3.9.1.4\nUse this parameter to select if undervoltage faults are saved to the fault history or not.\n11.11.1.4 (ID 702) Response to Output Phase Fault\nLocation in the menu: P3.9.1.5\nUse this parameter to select the response of the drive to an 'Output Phase' fault. If the measurement of the motor current detects\nthat there is no current in 1 motor phase, an output phase fault occurs. See P3.9.1.2.\n11.11.1.5 (ID 733) Response to Fieldbus Communication Fault\nLocation in the menu: P3.9.1.6\nUse this parameter to select the response of the drive to a fieldbus communication fault. If the data connection between the master\nand the fieldbus board is defective, a fieldbus fault occurs.\n11.11.1.6 (ID 734) Slot Communication Fault\nLocation in the menu: P3.9.1.7\nUse this parameter to select the response of the drive to a 'Slot Communication' fault. If the drive detects a defective option board, a\nslot communication fault occurs. See P3.9.1.2.\n11.11.1.7 (ID 732) Thermistor Fault\nLocation in the menu: P3.9.1.8\nUse this parameter to select the response of the drive to a 'Thermistor' fault. If the thermistor detects too high temperature, a ther-\nmistor fault occurs. See P3.9.1.2.\n11.11.1.8 (ID 748) PID Soft Fill Fault\nLocation in the menu: P3.9.1.9\nUse this parameter to select the response of the drive to a 'PID Soft Fill' fault. If the PIDFeedback value does not reach the set level\nwithin the time limit, a soft fill fault occurs. See P3.9.1.2.\n11.11.1.9 (ID 749) Response to PID Supervision Fault\nLocation in the menu: P3.9.1.10\nUse this parameter to select the response of the drive to a 'PID Supervision' fault. If the PID feedback value is not within the supervi-\nsion limits for longer than the supervision delay, a PID supervision fault occurs. See P3.9.1.2.\n11.11.1.10 (ID 757) Response to External PID Supervision Fault\nLocation in the menu: P3.9.1.11\nUse this parameter to select the response of the drive to a 'PID Supervision' fault. If the PID feedback value is not within the supervi-\nsion limits for longer than the supervision delay, a PID supervision fault occurs. See P3.9.1.2.\n11.11.1.11 (ID 703) Earth Fault\nLocation in the menu: P3.9.1.12\nUse this parameter to select the response of the drive to an 'Earth Fault'.\nIf the measurement of the current detects that the sum of the motor phase currents is not 0, an earth fault occurs. See P3.9.1.2.\nNOTICE\nIt is possible configure this fault only in enclosure sizes MR7, MR8, MR9, MR10, MR11, and MR12, and also MR6 600 V & 690 V.\n11.11.1.12 (ID 183) Preset Alarm Frequency\nLocation in the menu: P3.9.1.13\nUse this parameter to set the frequency of the drive when a fault is active and the response to the fault is set to 'Alarm + Preset\nFrequency'.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 217",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.11.1.13 (ID 775) Response to Safe Torque Off (STO) Fault\nLocation in the menu: P3.9.1.14\nUse this parameter to select the response of the drive to a 'STO Fault'.\nThis parameter defines drive operation when Safe Torque Off (STO) function is activated (for example, emergency stop button has\nbeen pressed or some other STO operation has been activated). See P3.9.1.2.\n11.11.1.14 (ID 751) Fieldbus Communication Fault Force Delay\nLocation in the menu: P3.9.1.17\nUse this parameter to set a delay for temporarily forcing the fault-response for fieldbus timeout from 'No Action', 'Alarm' or 'Alarm\nPreset Frequency' to 'Fault'. When a timeout occurs, the drive responds as selected with P3.9.1.6 and keeps running. After the delay\ntime set by this parameter, the drive goes to a fault-state and the stop running.\nIf this parameter is set to 0.00 s, the fault-type remains as it is set with P3.9.1.6 and the drive runs indefinitely. If the fault-type is Fault\nor Fault-Coast, this delay does no affect anything.\n11.11.1.15 (ID 752) Fieldbus Communication Fault Clear Delay\nLocation in the menu: P3.9.1.18\nUse this parameter to set a delay for accepting new fieldbus start, reverse, and refence commands after a timeout has been cleared.\nThe delay starts running after the connection has been re-established, and not after clearing a fieldbus timeout fault.\n11.11.1.16 (ID 753) Unbalance Current Alarm\nLocation in the menu: P3.9.1.19\nUse this parameter to set the response of the drive to an Unbalance Current Alarm. Available options are 'No Action' and 'Alarm'.\nThis option is only available for MR11 and MR12 enclosure sizes.\n11.11.2 Motor Thermal Protections\nThe motor thermal protection prevents the motor from becoming too hot.\nThe AC drive can supply a current that is higher than the nominal current. The high current can be necessary to the load, and it must\nbe used. In these conditions, there is a risk of a thermal overload. Low frequencies have a higher risk. At low frequencies, the cooling\neffect and the capacity of the motor decrease. If the motor has an external fan, the load reduction at low frequencies is small.\nThe motor thermal protection is based on calculations. The protection function uses the output current of the drive to know what is\nthe load on the motor. If the control board is not energized, the calculations are reset.\nTo adjust the thermal protection of the motor, use the parameters from P3.9.2.1 to P3.9.2.5. It is possible to monitor the thermal\nstatus of the motor on the display of the control panel.\nNOTICE\nIf long motor cables (maximum 100 m) are used with small drives (≤1.5 kW), the motor current that the drive measures can be\nmuch higher than the actual motor current. It is because there are capacitive currents in the motor cable.\nNOTICE\nOVERHEATING BECAUSE OF BLOCKED AIRFLOW\nIf the airflow to the motor is blocked, the function does not protect the motor, and the motor can become too hot. It can damage\nthe motor.\n-\nMake sure that the airflow to the motor is not blocked.\n11.11.2.1 (ID 704) Motor Thermal Protection\nLocation in the menu: P3.9.2.1\nUse this parameter to select the response of the drive to a 'Motor Overtemperature' fault. If the motor thermal protection function\ndetects that the temperature of the motor is too high, a motor overtemperature fault occurs.\nIf possible, use a motor thermistor to protect the motor. Set the value of this parameter to 0.\n11.11.2.2 (ID 705) Ambient Temperature\nLocation in the menu: P3.9.2.2\n218 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nUse this parameter to set the ambient temperature where the motor is installed. The temperature value is given in Celsius or Fah-\nrenheit degrees.\n11.11.2.3 (ID 706) Zero Speed Cooling Factor\nLocation in the menu: P3.9.2.3\nUse this parameter to set the cooling factor at 0 speed in relation to the point where the motor operates at nominal speed without\nexternal cooling.\nThe default value is set for conditions where there is no external fan. When using an external fan, the value can be set higher than\nwithout the fan, for example at 90%.\nWhen changing parameter P3.1.1.4 (Motor Nominal Current), parameter P3.9.2.3 is automatically set to its default value.\nChanging this parameter does not affect the maximum output current of the drive. Only parameter P3.1.3.1 Motor Current Limit can\nchange the maximum output current.\nThe corner frequency for the thermal protection is 70% of the value of the parameter P3.1.1.2 Motor Nominal Frequency.\nA\nB\ne30bu060\n100%\nIT\nID706=40%\n0\n(C\nfn\nf\nIllustration 65: The Motor Thermal Current IT Curve\nA\nPCooling\nC\nCorner frequency\nB\nOverload area\n11.11.2.4 (ID 707) Motor Thermal Time Constant\nLocation in the menu: P3.9.2.4\nUse this parameter to set the motor thermal time constant.\nThe time constant is the time within which the calculated thermal stage has reached 63% of its final value. The final thermal stage\nequals to running the motor continuously with nominal load at nominal speed. The length of the time constant is in relation with\nthe dimension of the motor. The bigger the motor, the longer the time constant.\nIn different motors, the motor thermal time constant is different. It also changes between different motor manufacturers. The de-\nfault value of the parameter changes from dimension to dimension.\nThe t6-time is the time in seconds that the motor can safely operate at 6 times the rated current. It is possible that the motor manu-\nfacturer gives the data with the motor. Use this information to set the time constant parameter. Usually, the motor thermal time\nconstant in minutes is 2*t6. When the drive is in the STOP state, the time constant is internally increased to 3 times the set parame-\nter value, because the cooling operates based on convection.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 219",
+      "tablas": [
+        [
+          [
+            "A",
+            "PCooling",
+            "C Corner frequency"
+          ],
+          [
+            "B",
+            "Overload area",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nI\n1\nA\nK\ne30bu061.10\n>\nt\nTA\n100%\n63%\n1\n1\n1\n1\nt\nB\nIllustration 66: The Motor Thermal Time Constant\nA\nCurrent\nB\nMotor thermal time constant\n11.11.2.5 (ID 708) Motor Thermal Loadability\nLocation in the menu: P3.9.2.5\nUse this parameter to set the thermal loadability of the motor. For example, if the value is set to 130%, the motor goes to the nomi-\nnal temperature with 130% of the motor nominal current.\n220 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "VACON® 100 FLOW\nDanfoss\nParameter Descriptions\nApplication Guide\nI\ne30bu062.10\nA\nt\nB\nT\nC\n105%\n1\n.\n-\n1\n1\n1\n1\nt\n80%\n100%\nD\n130%\nIllustration 67: The Calculation of the Motor Temperature\nA\nCurrent\nC\nD\nTrip area\nLoadability\nB\nFault/Alarm\n11.11.3 Motor Stall Protection\nThe motor stall protection function gives protection to the motor against short overloads. An overload can be caused, for example,\nby a stalled shaft. It is possible to set the reaction time of the stall protection shorter than that of the motor thermal protection.\nThe stall status of the motor is specified with parameters P3.9.3.2 Stall Current and P3.9.3.4 Stall Frequency Limit. If the current is\nhigher than the limit, and the output frequency is lower than the limit, the motor is in a stall status.\nThe stall protection is a type of overcurrent protection.\nNOTICE\nIf long motor cables (maximum 100 m) are used with small drives (≤1.5 kW), the motor current that the drive measures can be\nmuch higher than the actual motor current. It is because there are capacitive currents in the motor cable.\n11.11.3.1 (ID 709) Motor Stall Fault\nLocation in the menu: P3.9.3.1\nUse this parameter to select the response of the drive to a 'Motor Stall' fault. If the stall protection detects that the shaft of the motor\nis stalled, a motor stall fault occurs.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 221",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.11.3.2 (ID 710) Stall Current\nLocation in the menu: P3.9.3.2\nUse this parameter to set the limit above which the current of the motor must stay for a stall stage to occur.\nIt is possible to set the value of this parameter between 0.0 and 2*IL. For a stall status to occur, the current must be higher than this\nlimit. If parameter P3.1.3.1 Motor Current Limit changes, this parameter is automatically calculated to 90% of the current limit.\nThe value of the Stall Current must be below the motor current limit.\nAI\ne30bu063\nA\nID710\nf\nID712\nIllustration 68: The Stall Characteristics Settings\nA\nStall area\n11.11.3.3 (ID 711) Stall Time Limit\nLocation in the menu: P3.9.3.3\nUse this parameter to set the maximum time for a stall stage.\nThis parameter is the maximum time for the stall stage to be active before a motor stall fault occurs. The value of this parameter can\nbe set between 1.0 s and 120.0 s. An internal counter counts the stall time. If the stall time counter value goes above this limit, the\nprotection causes the drive to trip.\n11.11.3.4 (ID 712) Stall Frequency Limit\nLocation in the menu: P3.9.3.4\nUse this parameter to set the limit below which the output frequency of the drive must stay for a stall stage to occur.\nFor a stall state to occur, the output frequency must be below this limit for a certain time.\n11.11.4 Underload (Dry Pump) Protection\nThe motor underload protection makes sure that there is a load on the motor when the drive operates. If the motor loses the load, a\nproblem can occur in the process. For example, a belt can break or a pump become dry.\nThe motor underload protection can be adjusted with parameters P3.9.4.2 (Underload Protection: Field Weakening Area Load) and\nP3.9.4.3 (Underload Protection: Zero Frequency Load). The underload curve is a squared curve between the zero frequency and the\nfield weakening point. The protection is not active below 5 Hz. The underload time counter does not operate below 5 Hz.\nThe values of the underload protection parameters are set in percentage of the nominal torque of the motor. To find the scaling\nratio for the internal torque value, use the data in the nameplate data of the motor, the motor nominal current, and the nominal\ncurrent of the drive IH. If another current than the nominal motor current is used, the precision of the calculation decreases.\nNOTICE\nIf long motor cables (maximum 100 m) are used with small drives (≤1.5 kW), the motor current that the drive measures can be\nmuch higher than the actual motor current. It is because there are capacitive currents in the motor cable.\n11.11.4.1 (ID 713) Underload Fault\nLocation in the menu: P3.9.4.1\n222 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nUse this parameter to select the response of the drive to an 'Underload' fault. If the underload protection function detects that there\nis not a sufficient load on the motor, an underload fault occurs.\n11.11.4.2 (ID 714) Underload Protection: Field Weakening Area Load\nLocation in the menu: P3.9.4.2\nUse this parameter to set the minimum torque that the motor needs when the output frequency of the drive is higher than the\nfrequency of the weakening point. It is possible set the value of this parameter between 10.0% and 150.0% x TnMotor. This value is\nthe limit for the minimum torque when the output frequency is above the field weakening point.\nChanging parameter P3.1.1.4 (Motor Nominal Current) restores this parameter automatically to its default value. See 11.11.4 Under-\nload (Dry Pump) Protection.\nA\ne30bu064\nID714\nB\nID715\nf\n5 Hz\nC\nIllustration 69: Setting of the Minimum Load\nA\nTorque\nC\nField weakening point\nB\nUnderload area\n11.11.4.3 (ID 715) Underload Protection: Zero Frequency Load\nLocation in the menu: P3.9.4.3\nUse this parameter to set the minimum torque that the motor needs when the output frequency of the drive is 0.\nChanging the value of parameter P3.1.1.4 restores this parameter automatically to the default value.\n11.11.4.4 (ID 716) Underload Protection: Time Limit\nLocation in the menu: P3.9.4.4\nUse this parameter to set the maximum time for an underload state. It is the maximum time for the underload state to be active\nbefore an underload fault occurs.\nIt is possible to set the time limit between 2.0 s and 600.0 s.\nAn internal counter counts the underload time. If the value of the counter goes above this limit, the protection causes the drive to\ntrip. The drive trips as is set in parameter P3.9.4.1 Underload Fault. If the drive stops, the underload counter goes back to 0.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 223",
+      "tablas": [
+        [
+          [
+            "A",
+            "Torque",
+            "C Field weakening point"
+          ],
+          [
+            "B",
+            "Underload area",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nID716\nA\nB\ne30bu065\nC\nD\nE\nF\nIllustration 70: The Underload Time Counter Function\nA\nUnderload time counter\nD\nTime\nB\nTrip area\nE\nUnderload\nC\nTrip/warning ID 713\nF\nNo underload\n11.11.5 Quick Stop\n11.11.5.1 (ID 1276) Quick Stop Mode\nLocation in the menu: P3.9.5.1\nUse this parameter to select how the drive stops when the quick stop command is given from DI or Fieldbus.\n11.11.5.2 (ID 1213) Quick Stop Activation\nLocation in the menu: P3.9.5.2\nUse this parameter to select the digital input signal that activates a Quick Stop function. The Quick Stop function stops the drive\nregardless of the control place or the state of the control signals.\n11.11.5.3 (ID 1256) Quick Stop Deceleration Time\nLocation in the menu: P3.9.5.3\nUse this parameter to set the time that is necessary for the output frequency to decrease from maximum frequency to 0 when a\nquick stop command is given. The value of this parameter is applied only when the quick stop mode parameter is set to 'Quick Stop\nDeceleration time'.\n11.11.5.4 (ID 744) Response to Quick Stop Fault\nLocation in the menu: P3.9.5.4\nUse this parameter to select the response of the drive to a 'Quick Stop' fault. If the quick stop command is given from DI or Fieldbus,\na quick stop fault occurs.\nWith the quick stop function, it is possible stop the drive in an unusual procedure from I/O or Fieldbus in unusual conditions. When\nthe quick stop function is active, it is possible make the drive decelerate and stop. It is possible to program an alarm or fault to put a\nmark in the fault history that there was a request for a quick stop.\nCAUTIONA\nDo not use the quick stop function as an emergency stop. An emergency stop must stop the power supply to the motor. The\nquick stop function does not do this.\n224 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nFB\nControl Word B12\nI/O\nQuick Stop Activ.\nIllustration 71: The Quick Stop Logic\n11.11.6 AI Low Protection\nOR\nIN 1\nIN 2\nDanfoss\nParameter Descriptions\ne30bg300.10\nNormal\noperation\nQuick Stop\nActivated\nYes\nStart stop\nsequence\naccording to\nQuick Stop Mode\nand Quick Stop\nDeceleration\nTime\nDrive\nstopped?\nNO\nYes\nDrive forced to\nNot Ready status\nand alarm/fault\ntriggered\naccording to\nQuick Stop Fault\nQuick Stop\nActivated\n11.11.6.1 (ID 767) Analog Input Low Protection\nLocation in the menu: P3.9.8.1\nUse this parameter to select when the AI Low supervision is enabled. For example, the AI Low supervision can be enabled only\nwhen the drive is in run state.\nUse the AI Low Protection to find failures in the analog input signals. This function gives protection only to the analog inputs that\nare used as frequency reference, torque reference, or in the PID/ExtPID controllers.\nIt is possible to have the protection on when the drive is in the RUN status, or in the RUN and STOP statuses.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 225",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nSelection num-\nber\nSelection name\nDescription\n0\nProtection disabled\n1\nProtection enabled in RUN status\nThe protection is enabled only when the drive is in the RUN\nstatus.\n2\nProtection enabled in RUN and STOP status\nThe protection is enabled in the 2 statuses, RUN, and STOP.\n11.11.6.2 (ID 700) Analog Input Low Fault\nLocation in the menu: P3.9.8.2\nUse this parameter to select the response of the drive to an 'AI Low' fault. If the analog input signal becomes less than 50% of the\nminimum signal for 500 ms, an AI Low fault occurs.\nIf AI Low Protection is enabled with parameter P3.9.8.1, this parameter gives a response for the fault code 50 (Fault ID 1050).\nThe Al low protection function monitors the signal level of the analog inputs 1-6. If the analog input signal becomes less than 50%\nof the minimum signal for 500 ms, an AI Low fault, or alarm shows.\nNOTICE\nIt is possible to use the value Alarm + previous frequency only when using analog input 1 or analog input 2 as frequency refer-\nence.\nSelection number\nSelection name\nDescription\n0\nNo Action\nAI Low Protection is not used.\n1\nAlarm\n2\nAlarm, preset frequency\nThe frequency reference is set as in P3.9.1.13 Preset Alarm Frequency.\n3\nAlarm, previous frequency\nThe last valid frequency is kept as frequency reference.\n4\nFault\nThe drive stops as is set in P3.2.5 Stop Mode.\n5\nFault, coasting\nThe drive stops by coasting.\n11.12 Automatic Reset\n11.12.1 (ID 731) Automatic Reset\nLocation in the menu: P3.10.1\nUse this parameter to enable the Automatic reset function. To select the faults that are reset automatically, enter the value 0 or 1 to\nparameters from P3.10.6 to P3.10.13.\nNOTICE\nThe automatic reset function is available only for some fault types.\n11.12.2 (ID 719) Restart Function\nLocation in the menu: P3.10.2\nUse this parameter to select the start mode for the Automatic reset function.\n11.12.3 (ID 717) Wait Time\nLocation in the menu: P3.10.3\nUse this parameter to set the wait time before the first reset is done.\n226 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection num- ber",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Protection disabled",
+            ""
+          ],
+          [
+            "1",
+            "Protection enabled in RUN status",
+            "The protection is enabled only when the drive is in the RUN status."
+          ],
+          [
+            "2",
+            "Protection enabled in RUN and STOP status",
+            "The protection is enabled in the 2 statuses, RUN, and STOP."
+          ]
+        ],
+        [
+          [
+            "It is possible to use the value Alarm + previous frequency only when using analog input 1 or analog input 2 as frequency refer- ence."
+          ],
+          [
+            ""
+          ],
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "No Action",
+            "AI Low Protection is not used."
+          ],
+          [
+            "1",
+            "Alarm",
+            ""
+          ],
+          [
+            "2",
+            "Alarm, preset frequency",
+            "The frequency reference is set as in P3.9.1.13 Preset Alarm Frequency."
+          ],
+          [
+            "3",
+            "Alarm, previous frequency",
+            "The last valid frequency is kept as frequency reference."
+          ],
+          [
+            "4",
+            "Fault",
+            "The drive stops as is set in P3.2.5 Stop Mode."
+          ],
+          [
+            "5",
+            "Fault, coasting",
+            "The drive stops by coasting."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.12.4 (ID 718) Trial Time\nLocation in the menu: P3.10.4\nUse this parameter to set the trial time for the automatic reset function. During the trial time, the automatic reset function tries to\nreset the faults that occur.\nThe time count starts from the first automatic reset. The next fault starts the trial time count again.\n11.12.5 (ID 759) Number of Trials\nLocation in the menu: P3.10.5\nUse this parameter to set the total number of auto reset trials. If the number of trials during the trial time is more than the value of\nthis parameter, a permanent fault shows. If not, the fault goes out of view after the trial time is completed. The fault type does not\naffect the maximum number of trials.\nWait\ntime\nWait\ntime\nWait\ntime\nFault trigger\nID717\nID717\nID717\nAlarm\nAutoreset\nReset 1\nReset 2\nTrial time\nTrial time\nID718\nFault active\ne30bg301.10\nNumber of trials: (ID759 = 2)\nIllustration 72: The Automatic Reset Function\n11.12.6 (ID 720) Autoreset: Undervoltage\nLocation in the menu: P3.10.6\nUse this parameter to enable the automatic reset after an undervoltage fault.\n11.12.7 (ID 721) Autoreset: Overvoltage\nLocation in the menu: P3.10.7\nUse this parameter to enable the automatic reset after an overvoltage fault.\n11.12.8 (ID 722) Autoreset: Overcurrent\nLocation in the menu: P3.10.8\nUse this parameter to enable the automatic reset after an overcurrent fault.\n11.12.9 (ID 723) Autoreset: AI Low\nLocation in the menu: P3.10.9\nUse this parameter to enable the automatic reset after a fault caused by low AI signal.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 227",
+      "tablas": [
+        [
+          [
+            "",
+            "Wait time",
+            "",
+            "Wait time",
+            "",
+            "Wait time"
+          ],
+          [
+            "Fault trigger",
+            "ID717",
+            "",
+            "ID717",
+            "",
+            "ID717"
+          ],
+          [
+            "Alarm Autoreset",
+            "",
+            "Reset 1",
+            "Reset 2",
+            ""
+          ],
+          [
+            "Trial time",
+            "",
+            "",
+            "Trial",
+            "time ID718",
+            ""
+          ],
+          [
+            "Fault active",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.12.10 (ID 724) Autoreset: Unit Overtemperature\nLocation in the menu: P3.10.10\nUse this parameter to enable the automatic reset after a fault caused by unit overtemperature.\n11.12.11 (ID 725) Autoreset: Motor Overtemperature\nLocation in the menu: P3.10.11\nUse this parameter to enable the automatic reset after a fault caused by motor overtemperature.\n11.12.12 (ID 726) Autoreset: External Fault\nLocation in the menu: P3.10.12\nUse this parameter to enable the automatic reset after an external fault.\n11.12.13 (ID 738) Autoreset: Underload Fault\nLocation in the menu: P3.10.13\nUse this parameter to enable the automatic reset after an underload fault.\n11.12.14 (ID 776) Autoreset: PID Supervision Fault\nLocation in the menu: P3.10.14\nUse this parameter to enable the automatic reset after a PID supervision fault.\n11.12.15 (ID 777) Autoreset: EXT PID Supervision Fault\nLocation in the menu: P3.10.15\nUse this parameter to enable the automatic reset after an external PID supervision fault.\n11.12.16 (ID 1569) Fault Simulation\nLocation in the menu: P3.10.16\nWith this parameter it is possible to simulate the different faults without them being actually active. For example simulating an over\ncurrent situation. In the drive interface point of view the behavior is identical to actual fault situations.\nSelection\nName\nDescription\nB00\n110\nOver current fault (F1)\nB01\n210\nOver voltage fault (F2)\nB02\n410\nUnder voltage fault (F9)\nB03\n810\nOutput phase supervision fault (F11)\nB04\n1610\nEarth voltage fault (F3)\nB05\n3210\nSystem fault (F8)\nB06\n6410\nOver temperature warning (W14)\nB07\n12810\nOver temperature fault (F14)(1)\nB08\n25610\nReserved\nB09\n51210\nReserved\nB10\n102410\nFan cooling fault (F32)\n1 The warning bit needs to be high also for this fault simulation to work.\n228 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection",
+            "Name",
+            "Description"
+          ],
+          [
+            "B00",
+            "110",
+            "Over current fault (F1)"
+          ],
+          [
+            "B01",
+            "210",
+            "Over voltage fault (F2)"
+          ],
+          [
+            "B02",
+            "410",
+            "Under voltage fault (F9)"
+          ],
+          [
+            "B03",
+            "810",
+            "Output phase supervision fault (F11)"
+          ],
+          [
+            "B04",
+            "1610",
+            "Earth voltage fault (F3)"
+          ],
+          [
+            "B05",
+            "3210",
+            "System fault (F8)"
+          ],
+          [
+            "B06",
+            "6410",
+            "Over temperature warning (W14)"
+          ],
+          [
+            "B07",
+            "12810",
+            "Over temperature fault (F14)(1)"
+          ],
+          [
+            "B08",
+            "25610",
+            "Reserved"
+          ],
+          [
+            "B09",
+            "51210",
+            "Reserved"
+          ],
+          [
+            "B10",
+            "102410",
+            "Fan cooling fault (F32)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.13 Application Settings\n11.13.1 (ID 1806) Password\nLocation in the menu: P3.11.1\nUse this parameter to set the administrator password.\n11.13.2 (ID 1197) C/F Selection\nLocation in the menu: P3.11.2\nUse this parameter to set the temperature measuring unit. The system shows all the temperature-related parameters and monitor-\ning values in the set unit.\n11.13.3 (ID 1198) kW/HP Selection\nLocation in the menu: P3.11.3\nUse this parameter to set the power measuring unit. The system shows all the power-related parameters and monitoring values in\nthe set unit.\n11.13.4 (ID 1196) Multimonitor View\nLocation in the menu: P3.11.4\nUse this parameter to set the division of the display of the control panel into sections in the multimonitor view.\n11.13.5 (ID 1195) [FUNCT] Button Configuration\nLocation in the menu: P3.11.5\nUse this parameter to set the values of the [FUNCT] button. The values set with this parameter are available when pushing the\n[FUNCT] button on the keypad.\n11.13.6 (ID 1807) Set Parameter Lock\nLocation in the menu: P3.11.6\nUse this parameter to set a password for edit-locking all parameters. Parameters are locked if value is set greater than zero. To disa-\nble the lock, open the lock with a correct key, and set the lock-password back to zero.\nNOTE! After setting this parameter to larger than zero (0), the lock is immediately active. Setting a lock also locks and hide this pa-\nrameter itself. Control place cannot be changed over to Local, when the lock is in place.\n11.13.7 (ID 1808) Parameter Lock Key\nLocation in the menu: P3.11.7\nUse this parameter to enter a password for opening the parameter edit-lock. The lock is opened if the values of the Key- and Lock-\npasswords are equal.\n11.14 Timer Functions\n11.14.1 Introduction to Timer Functions\nThe timer functions make it possible for the internal RTC (real-time clock) to control functions. All the functions that can be control-\nled with a digital input, can also be controlled with the RTC, with time channels 1-3. It is not necessary to have an external PLC to\ncontrol a digital input. It is possible program the closed and opened intervals of the input internally.\nTo get the best results of the timer functions, install a battery, and make the settings of the real-time clock carefully in the Start-up\nwizard. The battery is available as an option.\nNOTICE\nIt is not recommended to use the timer functions without an auxiliary battery. The time and date settings of the drive are reset at\neach power down, if there is no battery for the RTC.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 229",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.14.2 Time Channels, Intervals, and Timers\nTime Channels\nIt is possible to assign the output of the interval and/or timer functions to time channels 1-3. It is possible to use the time channels\nto control on/off type functions, for example relay outputs or digital inputs. To configure the on/off logic of the time channels, as-\nsign intervals and/or timers to them. A time channel can be controlled by many different intervals or timers.\nAssigning intervals and timers to time channels is flexible. Every interval and timer has a parameter with which to assign them to a\ntime channel.\nP AssignToChannel\ne30bg302.10\nInterval 1\nTimeChannel 1\nInterval 2\nInterval 3\nInterval 4\nInterval 5\nTimer 1\nTimer 2\nTimer 3\nTimeChannel 2\n1\nI\nTimeChannel 3\nIllustration 73: Assigning Intervals and Timers to time Channels\nIntervals\nUse parameters to give each interval an ON Time and OFF Time. It is the daily active time of the interval during the days set with\nparameters From Day and To Day. For example, with the parameter settings below, the interval is active from 7 am to 9 am from\nMonday to Friday. The time channel is like a digital input, but virtual.\n· ON Time: 07:00:00\n· OFF Time: 09:00:00\n· From Day: Monday\n· To Day: Friday\nTimers\nUse the timers to set a time channel as active for a period with a command from a digital input or a time channel.\nIn the following figure, the activation signal comes from a digital input or a virtual digital input, like a time channel. The timer counts\ndown from the falling edge.\n230 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nA\ne30bg303.10\nD\nB\nC\nE\nIllustration 74: The Activation Signal from Digital Input or Virtual Digital Input\nA\nRemaining time\nD\nTime\nB\nActivation\nE\nOUT\nC\nDuration\nThe following parameters set the timer active when the digital input 1 on the slot A is closed. They will also keep the timer active for\n30 s after it is opened.\n· Duration: 30 s\n· Timer: DigIn SlotA.1\nIt is possible use a duration of 0 s to override a time channel that is activated from a digital input. There is no off delay after the\nfalling edge.\nExample\nProblem: The AC drive is in a warehouse and controls air conditioning. It must operate between 7 am and 5 pm on weekdays and\nbetween 9 am and 1 pm on weekends. It is also necessary for the drive to operate outside these hours, if there are personnel in the\nbuilding. The drive must continue to operate 30 minutes after the personnel has left.\nSolution: Set 2 intervals, 1 for weekdays and 1 for weekends. A timer is also necessary to activate the process outside the set hours.\nSee the following configuration.\nInterval 1\n· P3.12.1.1: ON Time: 07:00:00\n•\nP3.12.1.2: OFF Time: 17:00:00\n· P3.12.1.3: Days: Monday, Tuesday, Wednesday, Thursday, Friday\n· P3.12.1.4: Assign to channel: Time channel 1\nInterval 2\n· P3.12.2.1: ON Time: 09:00:00\n· P3.12.2.2: OFF Time: 13:00:00\n•\nP3.12.2.3: Days: Saturday, Sunday\n· P3.12.2.4: Assign to channel: Time channel 1\nTimer 1\n•\nP3.12.6.1: Duration: 1800 s (30 min)\n· P3.12.6.2: Timer 1: DigIn SlotA.1 (The parameter is in the digital inputs menu.)\n· P3.12.6.3: Assign to channel: Time channel 1\n· P3.5.1.1: Control signal 1 A: Time Channel 1 for the I/O Run command\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 231",
+      "tablas": [
+        [
+          [
+            "A",
+            "Remaining time",
+            "D Time"
+          ],
+          [
+            "B",
+            "Activation",
+            "E OUT"
+          ],
+          [
+            "C",
+            "Duration",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nIn the following figure, Time Channel 1 is used as the control signal for the start command instead of a digital input.\nInterval 1\nDays = Monday to Friday\nON = 07:00:00 hrs OFF = 17:00:00 hrs\nP\nCtrl Signal 1A\ne30bg304.10\nInterval 2\nDays = Saturday and Sunday\nON = 09:00:00 hrs OFF = 13:00:00 hrs\nTime channel 1\nStart/Stop\nDigital input 1\non Slot A\nTimer 1\nDuration = 1800 s\nIllustration 75: Time Channel 1 as the Control Signal for the Start Command\n11.14.3 Editing an Interval\nProcedure\n1. Activate the interval to edit.\n2. Go into parameter Days (ID 1466).\nSTOP\nREADY\nI/O\nInterval 1\nID:1466\nM3.12.1.3\nON Time\n07:00:00\nOFF Time\n17:00:00\nDays\n0\ne30bg714.10\n3.\nGo into the Edit mode.\n4.\nSelect the necessary weekdays in the checkbox selection.\n1\nSTOP\nC\nREADY\nI/O\nOOO\nDays\nID:\nSunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\nM3.12.1.3.1\ne30bg715.10\n11.14.4 (ID 1464) ON Time\nLocation in the menu: P3.12.1.1\nUse this parameter to set the time of day when the output of the interval function is activated.\n11.14.5 (ID 1465) OFF Time\nLocation in the menu: P3.12.1.2\nUse this parameter to set the time of day when the output of the interval function is deactivated.\n232 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "STOP",
+            ":selected:",
+            "READY",
+            "I/O"
+          ],
+          [
+            ":unselected:",
+            "",
+            "Interval 1 ID:1466 M3.12.1.3"
+          ],
+          [
+            "ON Time 07:00:00"
+          ],
+          [
+            "",
+            "OFF",
+            "Time",
+            "17:00:00"
+          ],
+          [
+            "Days 0"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Parameter Descriptions\nVACON® 100 FLOW\nDanfoss\nApplication Guide\n11.14.6 (ID 1466) Days\nLocation in the menu: P3.12.1.3\nUse this parameter to select the days of the week when the interval function is enabled.\n11.14.7 (ID 1468) Assign to Channel\nLocation in the menu: P3.12.1.4\nUse this parameter to select the time channel where the output of the interval function is assigned. It is possible to use the time\nchannels to control the on/off type functions, for example relay outputs or any functions that can be controlled by a DI signal.\n11.14.8 (ID 1489) Duration\nLocation in the menu:P3.12.6.1\nUse this parameter to set the duration that the timer runs when the activation signal is removed (Off-delay).\n11.14.9 (ID 447) Timer 1\nLocation in the menu: P3.12.6.2\nUse this parameter to select the digital input signal that starts the timer. The output of the timer is activated when this signal is\nactivated. The timer starts to count when this signal is deactivated (falling edge). The output is deactivated when the time that is set\nwith the duration parameter has elapsed. The rising edge starts Timer 1 that is programmed in Group 3.12.\n11.14.10 (ID 1490) Assign to Channel\nLocation in the menu: P3.12.6.3\nUse this parameter to select the time channel where the output of the timer function is assigned. It is possible to use the time chan-\nnels to control the on/off type functions, for example relay outputs or any functions that can be controlled by a DI signal.\n11.15 PID Controller\n11.15.1 Basic Settings\n11.15.1.1 (ID 118) PID Gain\nLocation in the menu: P3.13.1.1\nUse this parameter to adjust the gain of the PID controller. If this parameter is set to 100%, a change of 10% in the error value causes\nthe controller output to change by 10%.\n11.15.1.2 (ID 119) PID Integration Time\nLocation in the menu: P3.13.1.2\nUse this parameter to adjust the integration time of the PID controller. If this parameter is set to 1.00 s, a change of 10% in the error\nvalue causes the controller output to change by 10.00%/s.\n11.15.1.3 (ID 132) PID Derivation Time\nLocation in the menu: P3.13.1.3\nUse this parameter to adjust the derivation time of the PID controller. If this parameter is set to 1.00 s, a change of 10% in the error\nvalue during 1.00 s causes the controller output to change by 10.00%.\n11.15.1.4 (ID 1036) Process Unit Selection\nLocation in the menu: P3.13.1.4\nUse this parameter to select the unit for the feedback and the setpoint signals of the PID controller. Select the unit for the actual\nvalue.\n11.15.1.5 (ID 1033) Process Unit MIN\nLocation in the menu: P3.13.1.5\nUse this parameter to set the minimum value of the PID feedback signal. For example, an analog signal of 4 ... 20 mA corresponds to\nthe pressure of 0 ... 10 bar. The value in process units at a 0% feedback or setpoint. This scaling is done for monitoring purposes only.\nThe PID controller still uses the percentage internally for feedbacks and setpoints.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 233",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.15.1.6 (ID 1034) Process Unit MAX\nLocation in the menu: P3.13.1.6\nUse this parameter to set the maximum value of the PID feedback signal. For example, an analog signal of 4 ... 20 mA corresponds to\nthe pressure of 0 ... 10 bar. The value in process units at a 0% feedback or setpoint. This scaling is done for monitoring purposes only.\nThe PID controller still uses the percentage internally for feedbacks and setpoints.\n11.15.1.7 (ID 1035) Process Unit Decimals\nLocation in the menu: P3.13.1.7\nUse this parameter to set the number of decimals for the process unit values. For example, an analog signal of 4 ... 20 mA corre-\nsponds to the pressure of 0 ... 10 bar. The value in process units at a 0% feedback or setpoint. This scaling is done for monitoring\npurposes only. The PID controller still uses the percentage internally for feedbacks and setpoints.\n11.15.1.8 (ID 340) Error Inversion\nLocation in the menu: P3.13.1.8\nUse this parameter to invert the error value of the PID controller.\n11.15.1.9 (ID 1056) Dead Band\nLocation in the menu: P3.13.1.9\nUse this parameter to set the dead band area around the PID setpoint value. The value of this parameter is given in the selected\nprocess unit. The output of the PID controller is locked if the feedback value stays in the dead band area for the set time.\n11.15.1.10 (ID 1057) Dead Band Delay\nLocation in the menu: P3.13.1.10\nUse this parameter to set the time that the feedback value must stay in the dead band area before the output of the PID controller is\nlocked. If the actual value stays in the dead band area for a time set in Dead Band Delay, the PID controller output is locked. This\nfunction prevents wear and unwanted movements of the actuators, for example valves.\nA\nC\ne30bg305.10\nB\nD\nE\nIllustration 76: The Dead Band Function\n234 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            ":selected: :unselected:"
+          ],
+          [
+            "B",
+            "",
+            "D"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "E",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "VACON® 100 FLOW\nDanfoss\nParameter Descriptions\nApplication Guide\nA\nDead band (ID1056)\nD\nActual value\nB\nDead band delay (ID1057)\nE\nOutput locked\nC\nReference\n11.15.2 Setpoints\n11.15.2.1 (ID 167) Keypad Setpoint 1\nLocation in the menu: P3.13.2.1\nUse this parameter to set the setpoint value of the PID controller when the setpoint source is 'Keypad SP'. The value of this parame-\nter is given in the selected process unit.\n11.15.2.2 (ID 168) Keypad Setpoint 2\nLocation in the menu: P3.13.2.2\nUse this parameter to set the setpoint value of the PID controller when the setpoint source is 'Keypad SP'. The value of this parame-\nter is given in the selected process unit.\n11.15.2.3 (ID 1068) Setpoint Ramp Time\nLocation in the menu: P3.13.2.3\nUse this parameter to set the rising and falling ramp times for the setpoint changes. Ramp time is the time that is necessary for the\nsetpoint value to change from minimum to maximum. If the value of this parameter is set to 0, no ramps are used.\n11.15.2.4 (ID 1046) PID Setpoint Boost Activation\nLocation in the menu: P3.13.2.4\nUse this parameter to select the digital input signal that activates the boost for the PID setpoint value.\n11.15.2.5 (ID 1047) PID Setpoint Selection\nLocation in the menu: P3.13.2.5\nUse this parameter to set the digital input signal that selects the PID setpoint value to be used.\n11.15.2.6 (ID 332) Setpoint Source 1 Selection\nLocation in the menu: P3.13.2.6\nUse this parameter to select the source of the PID setpoint signal. The Als and the ProcessDataln are handled as percentages (0.00-\n100.00%) and scaled according to the setpoint minimum and maximum.\nThe ProcessDataIn signals use 2 decimals.\nIf temperature inputs are selected, the values of parameters P3.13.1.5 Process Unit Min and P3.13.1.6 Process Unit Max must be set\nto correspond to the scale of the temperature measurement board: ProcessUnitMin = - 50 ℃ and ProcessUnitMax = 200 ℃.\n11.15.2.7 (ID 1069) Setpoint 1 Minimum\nLocation in the menu: P3.13.2.7\nUse this parameter to set the minimum value of the setpoint signal.\n11.15.2.8 (ID 1070) Setpoint 1 Maximum\nLocation in the menu: P3.13.2.8\nUse this parameter to set the maximum value of the setpoint signal.\n11.15.2.9 (ID 1071) Setpoint 1 Boost\nLocation in the menu: P3.13.2.9\nUse this parameter to set the multiplier for the setpoint boost function. When the setpoint boost command is given, the setpoint\nvalue is multiplied by the factor that is set with this parameter.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 235",
+      "tablas": [
+        [
+          [
+            "A",
+            "Dead band (ID1056)",
+            "D Actual value"
+          ],
+          [
+            "B",
+            "Dead band delay (ID1057)",
+            "E Output locked"
+          ],
+          [
+            "C",
+            "Reference",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.15.3 Feedback\n11.15.3.1 (ID 333) Feedback Function\nLocation in the menu: P3.13.3.1\nUse this parameter to select if the feedback value is taken from a single signal or combined from two signals. It is possible to select\nthe mathematical function that is used when the two feedback signals are combined.\n11.15.3.2 (ID 1058) Feedback Function Gain\nLocation in the menu: P3.13.3.2\nUse this parameter to adjust the gain of the feedback signal. This parameter is used, for example, with the value 2 in Feedback\nFunction.\n11.15.3.3 (ID 334) Feedback 1 Source Selection\nLocation in the menu: P3.13.3.3\nUse this parameter to select the source of the PID feedback signal. The Als and the ProcessDataln are handled as percentages (0.00-\n100.00%) and scaled according to the feedback minimum and maximum.\nThe ProcessDataIn signals use 2 decimals.\nIf temperature inputs are selected, the values of parameters P3.13.1.5 Process Unit Min and P3.13.1.6 Process Unit Max must be set\nto correspond to the scale of the temperature measurement board: ProcessUnitMin = - 50 ℃ and ProcessUnitMax = 200 ℃.\n11.15.3.4 (ID 336) Feedback 1 Minimum\nLocation in the menu: P3.13.3.4\nUse this parameter to set the minimum value of the feedback signal.\n11.15.3.5 (ID 337) Feedback 1 Maximum\nLocation in the menu: P3.13.3.5\nUse this parameter to set the maximum value of the feedback signal.\n11.15.4 Feedforward\n11.15.4.1 (ID 1059) Feedforward Function\nLocation in the menu: P3.13.4.1\nUse this parameter to select if the feedforward value is taken from a single signal or combined from two signals. It is possible to\nselect the mathematical function that is used when the two feedforward signals are combined.\nAccurate process models are necessary for the Feedforward function. In some conditions, a gain and offset type of feedforward is\nsufficient. The feedforward part does not use the feedback measurements of the actual controlled process value. The feedforward\ncontrol uses other measurements that affect the controlled process value.\nExample\nIt is possible to control the water level of a tank with flow control. The target water level is set as a setpoint, and the actual level as\nfeedback. The control signal monitors the flow that comes in.\nThe outflow is like a disturbance that can be measured. With the measurements of the disturbance, it is possible to try to adjust this\ndisturbance with a feedforward control (gain and offset) added to the PID output. The PID controller reacts much faster to changes\nin the outflow than if the level is only measured.\n236 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\nPID\n+\n+\nFFW\ne30bg306.10\nC\nLT\nFT\nB\nIllustration 77: The Feedforward Control\nA\nLevel ref\nC\nOutflow control\nB\nLevel control\n11.15.4.2 (ID 1060) Feedforward Gain\nLocation in the menu: P3.13.4.2\nUse this parameter to adjust the gain of the feedforward signal.\n11.15.4.3 (ID 1061) Feedforward 1 Source Selection\nLocation in the menu: P3.13.4.3\nUse this parameter to select the source of the PID feedforward signal.\n11.15.4.4 (ID 1062) Feedforward 1 Minimum\nLocation in the menu: P3.13.4.4\nUse this parameter to set the minimum value of the feedforward signal.\n11.15.4.5 (ID 1063) Feedforward 1 Maximum\nLocation in the menu: P3.13.4.5\nUse this parameter to set the maximum value of the feedforward signal.\n11.15.5 Sleep Function\n11.15.5.1 (ID 1016) SP1 Sleep Frequency\nLocation in the menu: P3.13.5.1\nUse this parameter to set the limit below which the output frequency of the drive must stay for a set time before the drive goes to\nthe sleep state.\nThe value of this parameter is used when the signal of the PID controller setpoint is taken from the setpoint source 1.\nCriteria for going to sleep mode:\n· Output frequency remains below sleep frequency for longer than defined sleep delay time.\n· PID feedback signal remains above defined wake-up level.\nCriteria for waking from sleep\n· PID feedback signal falls below defined wake-up level.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 237",
+      "tablas": [
+        [
+          [
+            "A",
+            "Level ref",
+            "C Outflow control"
+          ],
+          [
+            "B",
+            "Level control",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nNOTICE\nAn incorrectly set wake-up level can prevent the drive from going into sleep mode.\n11.15.5.2 (ID 1017) SP1 Sleep Delay\nLocation in the menu: P3.13.5.2\nUse this parameter to set the minimum duration that the output frequency of the drive must stay below the set limit before the\ndrive goes to the sleep state. The value of this parameter is used when the signal of the PID controller setpoint is taken from the\nsetpoint source 1.\n11.15.5.3 (ID 1018) SP1 Wake-Up Level\nLocation in the menu: P3.13.5.3\nUse this parameter to set the level at which the drive wakes up from the sleep state. When the PID feedback value goes below the\nlevel that is set with this parameter, drive wakes up from the sleep state. The operation of this parameter is selected with wake-up\nmode parameter.\n11.15.5.4 (ID 1019) SP1 Wake-Up Mode\nLocation in the menu: P3.13.5.4\nUse this parameter to select the operation for the wake-up level parameter. The drive wakes up from the sleep mode when the\nvalue of PID Feedback goes below the Wake-up level.\nThis parameter defines if Wake-up level is used as a static absolute level or as a relative level which follows PID setpoint value.\nSelection num-\nber\nSelection name\nDescription\n0\nAbsolute level\nThe wake-up level is a static level that does not follow the setpoint value.\n1\nRelative setpoint\nThe wake-up level is an offset below the actual setpoint value. The wake-up level follows\nthe actual setpoint.\nA\nB\ne30bg307.10\nt\nC\nIllustration 78: Wake-up Mode: Absolute Level\nA\nSetpoint\nC\nWake-up level\nB\nPID Setpoint\nA\nB\ne30bg308.10\nt\nC\nIllustration 79: Wake-up Mode: Relative Setpoint\n238 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection num- ber",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute level",
+            "The wake-up level is a static level that does not follow the setpoint value."
+          ],
+          [
+            "1",
+            "Relative setpoint",
+            "The wake-up level is an offset below the actual setpoint value. The wake-up level follows the actual setpoint."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nA\nSetpoint\nC\nWake-up level\nB\nPID Setpoint\n11.15.5.5 (ID 1793) SP1 Sleep Boost\nLocation in the menu: P3.13.5.5\nUse this parameter to set the value that is added to the actual setpoint value when the sleep boost function is used. Before the drive\ngoes to the sleep state, the PID regulation setpoint increases automatically, which gives a higher process value. The sleep state is\nlonger, also when there is some moderate leakage.\nThe boost level is used when there is a frequency threshold and delay, and the drive goes to the sleep state. After the increment in\nthe setpoint by the actual value, the boost increment of the setpoint is erased and the drive goes to the sleep state and the motor\nstops. The boost increment is positive with the direct PID regulation (P3.13.1.8 = Normal) and negative with the reverse PID regula-\ntion (P3.13.1.8 =Inverted).\nIf the actual value does not go to the increment setpoint, the boost value is erased after the time set with P3.13.5.5. The drive goes\nto the normal regulation with the normal setpoint.\nIn a Multi-pump setup, if an auxiliary pump starts during the boost, the boost sequence stops and the normal regulation continues.\n11.15.5.6 (ID 1795) SP1 Sleep Boost Maximum Time\nLocation in the menu: P3.13.5.6\nUse this parameter to set the timeout time for the sleep boost function.\n11.15.5.7 (ID 1075) SP2 Sleep Frequency\nLocation in the menu: P3.13.5.5\nUse this parameter to set the limit below which the output frequency of the drive must stay for a set time before the drive goes to\nthe sleep state.\nThe value of this parameter is used when the signal of the PID controller setpoint is taken from the setpoint source 1.\nCriteria for going to sleep mode:\n· Output frequency remains below sleep frequency for longer than defined sleep delay time.\n· PID feedback signal remains above defined wake-up level.\nCriteria for waking from sleep\n· PID feedback signal falls below defined wake-up level.\nNOTICE\nAn incorrectly set wake-up level can prevent the drive from going into sleep mode.\n11.15.5.8 (ID 1076) SP2 Sleep Delay\nLocation in the menu: P3.13.5.6\nUse this parameter to set the minimum duration that the output frequency of the drive must stay below the set limit before the\ndrive goes to the sleep state. The value of this parameter is used when the signal of the PID controller setpoint is taken from the\nsetpoint source 1.\n11.15.5.9 (ID 1077) SP2 Wake-Up Level\nLocation in the menu: P3.13.5.7\nUse this parameter to set the level at which the drive wakes up from the sleep state. When the PID feedback value goes below the\nlevel that is set with this parameter, drive wakes up from the sleep state. The operation of this parameter is selected with wake-up\nmode parameter.\n11.15.5.10 (ID 1020) SP2 Wake-Up Mode\nLocation in the menu: P3.13.5.8\nUse this parameter to select the operation for the wake-up level parameter. The drive wakes up from the sleep mode when the\nvalue of PID Feedback goes below the Wake-up level.\nThis parameter defines if Wake-up level is used as a static absolute level or as a relative level which follows PID setpoint value.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 239",
+      "tablas": [
+        [
+          [
+            "A",
+            "Setpoint",
+            "C Wake-up level"
+          ],
+          [
+            "B",
+            "PID Setpoint",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nSelection num-\nber\nSelection name\nDescription\n0\nAbsolute level\nThe wake-up level is a static level that does not follow the setpoint value.\n1\nRelative setpoint\nThe wake-up level is an offset below the actual setpoint value. The wake-up level follows\nthe actual setpoint.\nA\nB\ne30bg307.10\n-\nt\nC\nIllustration 80: Wake-up Mode: Absolute Level\nA\nSetpoint\nC\nWake-up level\nB\nPID Setpoint\nA\nB\ne30bg308.10\nt\nC\nIllustration 81: Wake-up Mode: Relative Setpoint\nA\nSetpoint\nC\nWake-up level\nB\nPID Setpoint\n11.15.5.11 (ID 1794) SP2 Sleep Boost\nLocation in the menu: P3.13.5.11\nUse this parameter to set the value that is added to the actual setpoint value when the sleep boost function is used.\n11.15.5.12 (ID 1796) SP2 Sleep Boost Maximum Time\nLocation in the menu: P3.13.5.12\nUse this parameter to set the timeout time for the sleep boost function.\n11.15.6 Feedback Supervision\nUse the feedback supervision to make sure that the PID Feedback value (the process value or the actual value) stays in the set limits.\nUse this function, for example, to find a pipe break and stop the flooding.\nThese parameters set the range in which the PID Feedback signal stays in correct conditions. If the PID Feedback signal does not\nstay in the range, and this continues longer than the delay, a Feedback supervision fault (the fault code 101) shows.\n11.15.6.1 (ID 735) Enable Feedback Supervision\nLocation in the menu: P3.13.6.1\n240 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection num- ber",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute level",
+            "The wake-up level is a static level that does not follow the setpoint value."
+          ],
+          [
+            "1",
+            "Relative setpoint",
+            "The wake-up level is an offset below the actual setpoint value. The wake-up level follows the actual setpoint."
+          ]
+        ]
+      ]
+    }
+  ]
+}

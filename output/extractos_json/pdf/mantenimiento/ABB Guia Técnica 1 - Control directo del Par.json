@@ -1,0 +1,856 @@
+{
+  "archivo": "ABB Guia Técnica 1 - Control directo del Par",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Guía Técnica Nº 1\nControl Directo del Par\n- La tecnología de accionamiento de CA más avanzada del mundo\nDLG\nDIRECT TORQUE CONTROL\nABB",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Contenido\n1\nIntroducción\n5\nGeneral\n5\nPropósito de este manual\n5\nCómo utilizar esta guía\n5\n2\nEvolución del Control Directo del Par\n6\n¿Qué es un accionamiento de velocidad variable?\n6\nResumen\n6\nAccionamientos de motor CC\n7\nCaracterísticas\n7\nVentajas\n7\nInconvenientes\n8\nAccionamientos de CA - Introducción\n8\nAccionamientos de CA - Control de frecuencia\ncon PWM\n9\nCaracterísticas\n9\nVentajas\n10\nInconvenientes\n10\nAccionamientos de CA - Control de vector de flujo\nmediante PWM\n10\nCaracterísticas\n10\nVentajas\n11\nInconvenientes\n11\nAccionamientos de CA - Control Directo del Par\n12\nVariables de control\n12\nComparación de accionamientos de velocidad\nvariable\n13\n3\nPreguntas y respuestas\n15\nGeneral\n15\nRendimiento\n16\nFuncionamiento\n22\n4\nTeoría de control básico\n26\n¿ Cómo funciona el DTC?\n26\nBucle de control del par\n27\nPaso 1 Medición de la tensión y la corriente\n27\nPaso 2 Modelo de Motor adaptable\n27\nPaso 3 Comparador de par y comparador de flujo . 28\nPaso 4 Selector de pulsos óptimos\n28\nControl de la velocidad\n29\nPaso 5 Regulador de la referencia del par\n29\nPaso 6 Regulador de la velocidad\n29\nPaso 7 Regulador de la referencia de flujo\n29\n5\nÍndice\n30",
+      "tablas": [
+        [
+          [
+            "",
+            ""
+          ],
+          [
+            "",
+            "1 Introducción",
+            "5"
+          ],
+          [
+            "",
+            "General",
+            "5"
+          ],
+          [
+            "",
+            "Propósito de este manual",
+            "5\n:unselected:"
+          ],
+          [
+            "",
+            "Cómo utilizar esta guía",
+            "5\n:unselected:"
+          ],
+          [
+            "",
+            "2 Evolución del Control Directo del Par",
+            "6\n:unselected:"
+          ],
+          [
+            "",
+            "¿Qué es un accionamiento de velocidad variable?",
+            "6\n:unselected:"
+          ],
+          [
+            "",
+            "Resumen",
+            "6"
+          ],
+          [
+            "",
+            "Accionamientos de motor CC",
+            "7\n:selected:"
+          ],
+          [
+            "",
+            "Características",
+            "7"
+          ],
+          [
+            "",
+            "Ventajas",
+            "7"
+          ],
+          [
+            "",
+            "Inconvenientes",
+            "8"
+          ],
+          [
+            "",
+            "Accionamientos de CA - Introducción",
+            "8"
+          ],
+          [
+            "",
+            "Accionamientos de CA - Control de frecuencia con PWM",
+            "9"
+          ],
+          [
+            "",
+            "Características",
+            "9\n:unselected:"
+          ],
+          [
+            "",
+            "Ventajas",
+            "10\n:unselected:"
+          ],
+          [
+            "",
+            "Inconvenientes",
+            "10\n:unselected:"
+          ],
+          [
+            "",
+            "Accionamientos de CA - Control de vector de flujo",
+            ""
+          ],
+          [
+            "",
+            "mediante PWM",
+            "10\n:unselected:"
+          ],
+          [
+            "",
+            "Características",
+            "10\n:unselected:"
+          ],
+          [
+            "",
+            "Ventajas",
+            "11"
+          ],
+          [
+            "",
+            "Inconvenientes",
+            "11"
+          ],
+          [
+            "",
+            "Accionamientos de CA - Control Directo del Par",
+            "12"
+          ],
+          [
+            "",
+            "Variables de control",
+            "12"
+          ],
+          [
+            "",
+            "Comparación de accionamientos de velocidad variable",
+            "13"
+          ],
+          [
+            "",
+            "3 Preguntas y respuestas",
+            "15"
+          ],
+          [
+            "",
+            "General",
+            "15"
+          ],
+          [
+            "",
+            "Rendimiento",
+            "16"
+          ],
+          [
+            "",
+            "Funcionamiento",
+            "22"
+          ],
+          [
+            "",
+            "4 Teoría de control básico",
+            "26"
+          ],
+          [
+            "",
+            "¿ Cómo funciona el DTC?",
+            "26"
+          ],
+          [
+            "",
+            "Bucle de control del par",
+            "27"
+          ],
+          [
+            "",
+            "Paso 1 Medición de la tensión y la corriente",
+            "27"
+          ],
+          [
+            "",
+            "Paso 2 Modelo de Motor adaptable",
+            "27"
+          ],
+          [
+            "",
+            "Paso 3 Comparador de par y comparador de flujo .",
+            "28"
+          ],
+          [
+            "",
+            "Paso 4 Selector de pulsos óptimos",
+            "28"
+          ],
+          [
+            "",
+            "Control de la velocidad",
+            "29"
+          ],
+          [
+            "",
+            "Paso 5 Regulador de la referencia del par",
+            "29"
+          ],
+          [
+            "",
+            "Paso 6 Regulador de la velocidad",
+            "29"
+          ],
+          [
+            "",
+            "Paso 7 Regulador de la referencia de flujo",
+            "29"
+          ],
+          [
+            "",
+            "5 Índice",
+            "30"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "4\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Capítulo 1 - Introducción\nGeneral\nEl Control Directo del Par - o DTC - es la tecnología de\naccionamiento de CA más desarrollada de las que se fabrican\nen el mundo.\nPropósito de\neste manual\nEl objetivo de la presente Guía Técnica es explicar qué es el\nDTC; por qué y cómo ha evolucionado; la teoría básica que se\nesconde detrás de su éxito y las características y ventajas de\nesta nueva tecnología.\nAunque pretende ser lo más práctica posible, esta guía requiere\nuna comprensión básica de los principios de control del motor\nde CA.\nLa guía está dirigida a los responsables de la toma de\ndecisiones, incluidos los ingenieros, redactores de\nespecificaciones, directores comerciales, fabricantes de\nequipos originales y usuarios finales de todos los sectores,\ncomo el del agua, el químico, el de la pulpa y el papel, el de la\ngeneración de energía, el del tratamiento de materiales y el\ndel aire acondicionado, entre otros.\nDe hecho, cualquier persona que utilice accionamientos de\nvelocidad variable (VSD) y desee aprovechar las ventajas de\nla tecnología VSD comprobará que esta Guía Técnica\nconstituye una lectura fundamental.\nCómo\nutilizar\nesta guía\nEsta guía ha sido diseñada para exponer de forma lógica las\ncausas que llevaron al desarrollo del DTC y la forma en que\nse realizó.\nAquellos lectores que deseen conocer la evolución de los\naccionamientos desde las primeras técnicas de CC, pasando\npor la CA, hasta llegar al DTC deben comenzar la lectura en el\nCapítulo 2 (página 6).\nLos que busquen respuestas sobre el rendimiento del DTC,\nsu funcionamiento y su potencial de aplicación pueden dirigirse\ndirectamente al Capítulo 3 (página 15) Preguntas y respuestas.\nPara comprender la Teoría del control básico del DTC, consulte\nla página 26.\nGuía Técnica Nº 1- Control Directo del Par\n5",
+      "tablas": [
+        [
+          [
+            "General",
+            "El Control Directo del Par - o DTC - es la tecnología de accionamiento de CA más desarrollada de las que se fabrican en el mundo."
+          ],
+          [
+            "Propósito de este manual",
+            "El objetivo de la presente Guía Técnica es explicar qué es el DTC; por qué y cómo ha evolucionado; la teoría básica que se esconde detrás de su éxito y las características y ventajas de esta nueva tecnología."
+          ],
+          [
+            "Aunque pretende ser lo más práctica posible, esta guía requiere una comprensión básica de los principios de control del motor de CA."
+          ],
+          [
+            "La guía está dirigida a los responsables de la toma de decisiones, incluidos los ingenieros, redactores de especificaciones, directores comerciales, fabricantes de equipos originales y usuarios finales de todos los sectores, como el del agua, el químico, el de la pulpa y el papel, el de la generación de energía, el del tratamiento de materiales y el del aire acondicionado, entre otros."
+          ],
+          [
+            "De hecho, cualquier persona que utilice accionamientos de velocidad variable (VSD) y desee aprovechar las ventajas de la tecnología VSD comprobará que esta Guía Técnica constituye una lectura fundamental."
+          ],
+          [
+            "Cómo utilizar esta guía",
+            "Esta guía ha sido diseñada para exponer de forma lógica las causas que llevaron al desarrollo del DTC y la forma en que se realizó."
+          ],
+          [
+            "Aquellos lectores que deseen conocer la evolución de los accionamientos desde las primeras técnicas de CC, pasando por la CA, hasta llegar al DTC deben comenzar la lectura en el Capítulo 2 (página 6)."
+          ],
+          [
+            "Los que busquen respuestas sobre el rendimiento del DTC, su funcionamiento y su potencial de aplicación pueden dirigirse directamente al Capítulo 3 (página 15) Preguntas y respuestas."
+          ],
+          [
+            "Para comprender la Teoría del control básico del DTC, consulte la página 26."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Capítulo 2 - Evolución del Control Directo del Par\n¿Qué es un\naccionamiento\nde velocidad\nvariable?\nPara comprender la respuesta a esta pregunta, es necesario\nentender que la función básica de un accionamiento de\nvelocidad variable (VSD) es controlar el flujo de energía de la\nred al proceso.\nLa energía se suministra al proceso mediante el eje del motor.\nDos cantidades físicas describen el estado del eje: el par y la\nvelocidad. Por tanto, para controlar el flujo de energía debemos\ncontrolar estas cantidades.\nEn la práctica, se controla cualquiera de las dos y se habla de\n\"control del par\" o \"control de la velocidad\". Cuando el VSD\nfunciona en el modo de control del par, la velocidad se determina\npor la carga. Del mismo modo, cuando funciona en el modo de\ncontrol de la velocidad, el par también se determina por la carga.\nEn un principio, los motores de CC se utilizaban como VSD\nporque alcanzaban con facilidad la velocidad y el par requeridos\nsin necesidad de emplear mecanismos electrónicos sofisticados.\nNo obstante, la evolución de la tecnología del accionamiento de\nCA de velocidad variable se ha visto impulsada, en parte, por el\ndeseo de emular el excelente rendimiento del motor de CC como,\npor ejemplo, su rápida respuesta del par y su precisión en la\nvelocidad, pero utilizando motores CA resistentes y económicos\nque no requieran ningún mantenimiento.\nResumen\nEn esta sección estudiaremos la evolución del\nDTC. Para ello estableceremos los cuatro hitos\nde los accionamientos de velocidad variable, a\nsaber:\n. Los accionamientos de motor de CC\n7\n· Los accionamientos de CA, el control de\nfrecuencia, PWM\n9\n· Los accionamientos de CA, el control de vector\nde flujo, PWM\n10\n· Los accionamientos de CA, el control directo\ndel par\n12\nExaminaremos cada uno de estos puntos para obtener una\nvisión global que identifique las diferencias clave existentes\nentre sí.\n6\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": [
+        [
+          [
+            "¿Qué es un accionamiento de velocidad variable?",
+            "Para comprender la respuesta a esta pregunta, es necesario entender que la función básica de un accionamiento de velocidad variable (VSD) es controlar el flujo de energía de la red al proceso."
+          ],
+          [
+            "",
+            "La energía se suministra al proceso mediante el eje del motor. Dos cantidades físicas describen el estado del eje: el par y la velocidad. Por tanto, para controlar el flujo de energía debemos controlar estas cantidades."
+          ],
+          [
+            "",
+            "En la práctica, se controla cualquiera de las dos y se habla de \"control del par\" o \"control de la velocidad\". Cuando el VSD funciona en el modo de control del par, la velocidad se determina por la carga. Del mismo modo, cuando funciona en el modo de control de la velocidad, el par también se determina por la carga."
+          ],
+          [
+            "",
+            "En un principio, los motores de CC se utilizaban como VSD porque alcanzaban con facilidad la velocidad y el par requeridos sin necesidad de emplear mecanismos electrónicos sofisticados."
+          ],
+          [
+            "",
+            "No obstante, la evolución de la tecnología del accionamiento de CA de velocidad variable se ha visto impulsada, en parte, por el deseo de emular el excelente rendimiento del motor de CC como, por ejemplo, su rápida respuesta del par y su precisión en la velocidad, pero utilizando motores CA resistentes y económicos que no requieran ningún mantenimiento."
+          ],
+          [
+            "Resumen",
+            "En esta sección estudiaremos la evolución del DTC. Para ello estableceremos los cuatro hitos de los accionamientos de velocidad variable, a saber:"
+          ],
+          [
+            "",
+            ". Los accionamientos de motor de CC 7 · Los accionamientos de CA, el control de frecuencia, PWM 9 · Los accionamientos de CA, el control de vector de flujo, PWM 10"
+          ],
+          [
+            "· Los accionamientos de CA, el control directo del par 12"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Evolución del Control Directo del Par\nAccionamientos\nde motor CC\nDC Drive\n1\nSpeed\nControl\nTorque\nControl\nM\n=\nT\nFigura 1: Bucle de control de un accionamiento de motor de CC\nCaracterísticas\n· Orientación de campo mediante conmutador mecánico\n· Las variables de control son la corriente del inducido y la\nintensidad de campo, medidas DIRECTAMENTE desde el\nmotor\n· El control del par es directo\nEn un motor de CC, la corriente crea el campo magnético\nmediante las bobinas inductoras del estator. Este campo\nsiempre forma un ángulo recto con el campo creado por el\nbobinado del inducido. Esta situación, denominada orientación\nde campo, es necesaria para generar el par máximo. El grupo\nde escobillas del conmutador garantiza esta situación,\ncualquiera que sea la posición del rotor.\nUna vez se consigue la orientación de campo, el par del motor\nde CC se controla con facilidad variando la corriente del inducido\ny manteniendo constante la corriente de magnetización.\nLa ventaja de los accionamientos de CC es que la velocidad y\nel par - las dos preocupaciones principales del usuario final -\nse controlan directamente mediante la corriente del inducido:\nes decir, el par es el bucle de control interior y la velocidad es\nel bucle de control exterior (véase la Figura 1).\nVentajas\n· Control rápido y preciso del par\n· Respuesta altamente dinámica de la velocidad\n· Fácil de controlar\nEn un principio, los accionamientos de CC se utilizaban para\ncontrolar la velocidad variable porque alcanzaban con facilidad\nun par y una velocidad buenos de alta precisión.\nGuía Técnica Nº 1- Control Directo del Par\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Evolución del Control Directo del Par\nUna máquina de CC puede producir un par que sea:\n· Directo - el par del motor es proporcional a la corriente del\ninducido: por tanto, el par puede controlarse de forma directa\ny precisa.\n· Rápido - el control del par es rápido; el sistema de\naccionamiento puede tener una respuesta muy dinámica de\nla velocidad. El par puede cambiarse de forma instantánea\nsi el motor se alimenta de una fuente de corriente ideal. Un\naccionamiento con alimentación de tensión tiene una\nrespuesta rápida, ya que ésta se determina sólo por la\nconstante de tiempo eléctrico del rotor (es decir, la inductancia\ny resistencia total del circuito del inducido).\n· Simple - la orientación de campo se obtiene mediante un\ndispositivo mécanico simple denominado grupo de escobillas\ndel conmutador. De esto modo, no es necesario utilizar un\ncomplejo conjunto de circuitos de control electrónico que\nincrementaría el coste del regulador del motor.\nInconvenientes\n· Menor fiabilidad del motor\n· Mantenimiento regular\n· Alto precio de compra del motor\n· Necesidad de un codificador para la realimentación\nEl principal inconveniente de esta técnica es la menor fiabilidad\ndel motor de CC; el desgaste de las escobillas y de los\nconmutadores que requieren un mantenimiento regular; el alto\nprecio de compra del motor de CC, y la necesidad de utilizar\ncodificadores para la realimentación de la velocidad y la\nposición.\nMientras que un accionamiento de CC produce un par fácil de\ncontrolar desde cero hasta la velocidad de base y superior, la\nmecánica del motor es más compleja y requiere un\nmantenimiento regular.\nAccionamientos\n· Tamaño reducido\nde CA -\n· Robusto\nIntroducción\n· Diseño simple\n· Ligero y compacto\n· Bajo mantenimiento\n· Bajo coste\nLa evolución de la tecnología del accionamiento de CA de\nvelocidad variable se ha visto impulsada, en parte, por el deseo\nde emular el rendimiento del accionamiento de CC como, por\nejemplo, su respuesta rápida del par y su precisión de la velocidad,\npero utilizando al mismo tiempo las ventajas que ofrece el motor\nde CA estándar.\n8\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": [
+        [
+          [
+            "",
+            "· Directo - el par del motor es proporcional a la corriente del inducido: por tanto, el par puede controlarse de forma directa y precisa. · Rápido - el control del par es rápido; el sistema de accionamiento puede tener una respuesta muy dinámica de la velocidad. El par puede cambiarse de forma instantánea si el motor se alimenta de una fuente de corriente ideal. Un accionamiento con alimentación de tensión tiene una respuesta rápida, ya que ésta se determina sólo por la constante de tiempo eléctrico del rotor (es decir, la inductancia y resistencia total del circuito del inducido). · Simple - la orientación de campo se obtiene mediante un dispositivo mécanico simple denominado grupo de escobillas del conmutador. De esto modo, no es necesario utilizar un complejo conjunto de circuitos de control electrónico que incrementaría el coste del regulador del motor."
+          ],
+          [
+            "Inconvenientes",
+            "· Menor fiabilidad del motor"
+          ],
+          [
+            "· Mantenimiento regular"
+          ],
+          [
+            "· Alto precio de compra del motor"
+          ],
+          [
+            "· Necesidad de un codificador para la realimentación"
+          ],
+          [
+            "El principal inconveniente de esta técnica es la menor fiabilidad del motor de CC; el desgaste de las escobillas y de los conmutadores que requieren un mantenimiento regular; el alto precio de compra del motor de CC, y la necesidad de utilizar codificadores para la realimentación de la velocidad y la posición."
+          ],
+          [
+            "Mientras que un accionamiento de CC produce un par fácil de controlar desde cero hasta la velocidad de base y superior, la mecánica del motor es más compleja y requiere un mantenimiento regular."
+          ],
+          [
+            "Accionamientos",
+            "· Tamaño reducido"
+          ],
+          [
+            "de CA -",
+            "· Robusto"
+          ],
+          [
+            "Introducción",
+            "· Diseño simple"
+          ],
+          [
+            "· Ligero y compacto"
+          ],
+          [
+            "· Bajo mantenimiento"
+          ],
+          [
+            "· Bajo coste"
+          ],
+          [
+            "",
+            "La evolución de la tecnología del accionamiento de CA de velocidad variable se ha visto impulsada, en parte, por el deseo de emular el rendimiento del accionamiento de CC como, por ejemplo, su respuesta rápida del par y su precisión de la velocidad, pero utilizando al mismo tiempo las ventajas que ofrece el motor de CA estándar."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Evolución del Control Directo del Par\nAccionamientos\nde CA -\ncontrol de\nfrecuencia con\nPWM\nFrequency Control\nFreq.\nRef.\nV/f\nratio\nV\nModu-\nlator\nM\nf\n3~\nFigura 2: Bucle de control de un accionamiento de CA con control\nde frecuencia mediante PWM\nCaracterísticas . Las variables de control son la tensión y la frecuencia\n· Simulación de la onda sinusoidal variable de CA mediante\nun modulador\n· Flujo proporcionado con un coeficiente constante de V/f\n· Accionamiento de bucle abierto\n· La carga determina el grado del par\nA diferencia del accionamiento de CC, la técnica de control de\nla frecuencia del accionamiento de CA utiliza como variables\nde control parámetros generados fuera del motor,\nconcretamente la tensión y la frecuencia.\nLas referencias de la tensión y de la frecuencia se introducen\nen un modulador que simula una onda sinusoidal de CA que\nalimenta el bobinado del estator del motor. Esta técnica se\ndenomina Modulación por Anchura de Impulsos (PWM) y se\nbasa en el hecho de que existe un rectificador de diodos hacia\nla red y de que la tensión de CC intermedia permanece\nconstante. El inversor controla el motor a modo de un tren de\nondas PWM que establece la tensión y la frecuencia.\nCabe destacar que este método no utiliza un dispositivo de\nretroalimentación que toma las medidas de velocidad o posición\ndel eje del motor y que las introduce en el bucle de control.\nEste sistema, sin dispositivo de retroalimentación, se denomina\n\"accionamiento de bucle abierto\".\nGuía Técnica Nº 1- Control Directo del Par\n9",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Evolución del Control Directo del Par\nVentajas\n· Bajo coste\n· No requiere un dispositivo de retroalimentación - simple\nDado que no existe un dispositivo de retroalimentación, el\nprincipio de control ofrece una solución simple de bajo coste\npara controlar los motores económicos de inducción de CA.\nEste tipo de accionamiento es apto para aplicaciones que no\nrequieren una alta precisión, tales como bombas o ventiladores.\nInconvenientes\n· No se utiliza la orientación de campo\n· Se ignora el estado del motor\n· No se controla el par\n· Se utiliza un modulador retardatorio\nCon esta técnica, a veces denominada Control Escalar, no se\nutiliza la orientación de campo del motor. En lugar de ello, la\nfrecuencia y la tensión son las variables de control principales\ny se aplican al bobinado del estator. El estado del rotor se\nignora, es decir, no se retroalimenta la señal de velocidad ni\nde posición.\nAccionamientos\nde CA -\ncontrol de\nvector de\nflujo mediante\nPWM\nPor tanto, el par no puede controlarse con precisión. Además,\nla técnica utiliza un modulador que, básicamente, ralentiza la\ncomunicación entre las señales de entrada de tensión y\nfrecuencia y la necesidad del motor de responder a esta señal\ncambiante.\nFlux vector control\nSpeed\nControl\nTorque\nControl\nModu-\nlator\nM\n3~\nT\nFigura 3: Bucle de control de un accionamiento de CA con control\ndel vector de flujo mediante la PWM\nCaracterísticas\n· Control orientado de campo - simula el accionamiento de\nCC\n· Se simulan las características del motor eléctrico\n- \"Modelo de Motor\"\n· Accionamiento de bucle cerrado\n· El par se controla INDIRECTAMENTE\n10\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Evolución del Control Directo del Par\nPara emular las condiciones magnéticas de funcionamiento\nde un motor CC, es decir, para realizar el proceso de orientación\nde campo, el accionamiento de vector de flujo necesita conocer\nla posición espacial angular del flujo del rotor en el interior del\nmotor de inducción de CA.\nCon accionamientos de PWM de vector de flujo, la orientación\nde campo se obtiene por medios electrónicos en lugar de utilizar\nel grupo mecánico de escobillas del conmutador del motor\nCC.\nEn primer lugar, la información sobre el estado del rotor se\nobtiene retroalimentando, mediante un codificador de impulsos,\nla velocidad del rotor y la posición angular referentes al campo\ndel estator. Un accionamiento que utilice codificadores de\nvelocidad se denomina \"accionamiento de bucle cerrado\".\nAdemás, las características eléctricas del motor se modelan\nmatemáticamente con microprocesadores utilizados para\nprocesar los datos.\nEl regulador electrónico de un accionamiento de vector de flujo\ncrea cantidades eléctricas, tales como la tensión, la corriente\ny la frecuencia, que son las variables de control, y las alimenta,\nmediante un modulador, al motor de inducción de CA. Por tanto,\nel par se controla INDIRECTAMENTE.\nVentajas\nInconvenientes\n· Buena respuesta del par\n· Control preciso de la velocidad\n· Todo el par a velocidad cero\n· Rendimiento parecido al del accionamiento de CC\nEl control de vector de flujo alcanza todo el par a velocidad\ncero, con lo cual ofrece un rendimiento muy parecido al del\naccionamiento de CC.\n. Se requiere retroalimentación\n· Coste elevado\n· Se requiere modulador\nPara obtener un alto nivel de respuesta del par y de precisión\nde la velocidad, se requiere un dispositivo de retroalimentación.\nEsto puede resultar costoso y, además, complica el tradicional\nmotor simple de inducción de CA.\nAsimismo, se utiliza un modulador que ralentiza la\ncomunicación entre las señales de entrada de tensión y\nfrecuencia y la necesidad del motor de responder a esta señal\ncambiante.\nA pesar de que el motor es simple desde el punto de vista\nmecánico, el accionamiento es complejo desde el punto de\nvista eléctrico.\nGuía Técnica Nº 1- Control Directo del Par\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Evolución del Control Directo del Par\nAccionamientos\nde CA -\nControl\nDirecto del Par\nDirect Torque Control DTC\nSpeed\nControl\nTorque\nControl\nM\n3~\nVariables de\ncontrol\nFigura 4: Bucle de control de un accionamiento de CA con DTC\nCon la tecnología revolucionaria de DTC desarrollada por ABB,\nla orientación de campo se obtiene sin retroalimentación\nutilizando teorías avanzadas del motor para calcular\ndirectamente el par del motor sin utilizar la modulación. Las\nvariables de control son el flujo magnetizante y el par del\nmotor.\nCon el DTC no hay modulador y no se requiere un tacómetro o\nun codificador de posición para retroalimentar la velocidad o la\nposición del eje del motor.\nEl DTC utiliza el hardware más rápido de señales digitales\ndisponible y un concepto matemático del funcionamiento del\nmotor más avanzado.\nEl resultado es un accionamiento con una respuesta de par 10\nveces más rápida que la de cualquier accionamiento de CA o\nCC. La precisión dinámica de la velocidad de los accionamientos\nDTC será 8 veces superior a la de cualquier accionamiento de\nCA de bucle abierto y comparable a un accionamiento de CC\nque utilice retroalimentación.\nEI DTC produce el primer accionamiento \"universal\" con\ncapacidad para funcionar bien como un accionamiento de CA\no como uno de CC.\nEl resto de secciones de esta guía destacan las características\ny ventajas del DTC.\n12\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Evolución del Control Directo del Par\nComparación\nde acciona-\nmientos de\nvelocidad\nvariable\nAnalicemos con más detenimiento cada uno de estos bloques\nde control para detectar algunas diferencias.\nDC Drive\nFrequency Control\nSpeed\nControl\nTorque\nControl\nM\nFreq.\nRef.\nV/f\nModu-\nM\nratio\nf\nlator\n3~\nT\nFigura 1: Bucle de control de un\naccionamiento de CC\nFigura 2: Bucle de control con\ncontrol de frecuencia\nFlux vector control\nDirect Torque Control DTC\nSpeed\nTorque\nControl\nControl\nModu-\nlator\nM\nSpeed\nControl\n3~\nTorque\nControl\nM\n3~\nT\nFigura 3: Bucle de control con\ncontrol de vector de flujo\nFigura 4: Bucle de control de un\naccionamiento de CA con DTC\nLa primera observación es la similitud entre el bloque de control\ndel accionamiento de CC (Figura 1) y el CDT (Figura 4).\nAmbos utilizan parámetros del motor para control el par\ndirectamente.\nPero el DTC tiene más ventajas, tales como: el hecho de no\nutilizar un dispositivo de retroalimentación; todas las ventajas\nde un motor CA (véase página 8); y el hecho de no necesitar\nexcitación externa.\nDRIVE\nCONTROL VARIABLES\nDC DRIVES\nArmature Current, IA\nMagnetising Current, IM\nAC DRIVES (PWM)\nOutput Voltage, U\nOutput Frequency, f\nDirect Torque Control\nMotor Torque, T\nMotor Magnetising Flux, Y\nTabla 1: Comparación de las variables de control\nGuía Técnica Nº 1- Control Directo del Par\n13",
+      "tablas": [
+        [
+          [
+            "DRIVE",
+            "CONTROL VARIABLES"
+          ],
+          [
+            "DC DRIVES",
+            "Armature Current, IA Magnetising Current, IM"
+          ],
+          [
+            "AC DRIVES (PWM)",
+            "Output Voltage, U Output Frequency, f"
+          ],
+          [
+            "Direct Torque Control",
+            "Motor Torque, T Motor Magnetising Flux, Y"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Evolución del Control Directo del Par\nComo puede comprobarse en la Tabla 1, tanto el accionamiento\nde CC como el DTC utilizan parámetros reales del motor para\ncontrolar el par y la velocidad. Por tanto, el rendimiento dinámico\nes fácil y rápido. Además, con el DTC, no se necesita, para la\nmayoría de las aplicaciones, un tacómetro o codificador para\nretroalimentar una señal de velocidad o posición.\nSi se compara el DTC (Figura 4) con los otros dos bloques de\ncontrol de accionamiento de CA (Figuras 2 & 3) se observan\nvarias diferencias, siendo la principal que, con el DTC, no se\nrequiere un modulador.\nCon los accionamientos de PWM de CA, las variables de\ncontrol son la frecuencia y la tensión, las cuales necesitan\natravesar varias fases antes de aplicarse al motor. Por tanto,\ncon los accionamientos de PWM, el control se realiza dentro\ndel regulador electrónico y no dentro del motor.\n14\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Capítulo 3 - Preguntas y respuestas\nGeneral\n¿Qué es el Control Directo del Par?\nEl Control Directo del Par - o DTC - es lo último de ABB en\ntecnología de accionamiento de CA, y está destinado a sustituir\nen un futuro cercano los tradicionales accionamientos PWM\nde las clases de bucle abierto y de bucle cerrado.\n¿Por qué se denomina Control Directo del Par?\nEl Control Directo del Par describe la manera en la que el\ncontrol del par y de la velocidad se basan directamente en el\nestado electromagnético del motor, de forma similar al motor\nde CC, pero de forma contraria a la manera en la que los\naccionamientos PWM convencionales utilizan la frecuencia y\ntensión de entrada. EI DTC es la primera tecnología que\ncontrola las variables de control \"reales\" de par y de flujo del\nmotor.\n¿Cuál es la ventaja?\nDado que el par y el flujo son parámetros del motor que se\ncontrolan de forma directa, no es necesario utilizar un\nmodulador, como en el caso de los accionamientos PWM,\npara controlar la frecuencia y la tensión. Con ello, por tanto, se\nelimina el intermediario y se acelera considerablemente la\nrespuesta del accionamiento ante cambios en el par requerido.\nAdemás, el DTC ofrece un control preciso del par sin necesidad\nde utilizar un dispositivo de retroalimentación.\n¿Por qué es necesaria otra tecnología de accionamiento de CA?\nEl DTC no es únicamente otra tecnología de accionamiento\nde CA. La industria exige más y la tecnología de accionamiento\nexistente no es capaz de cumplir con estas exigencias.\nPor ejemplo, la industria desea:\n· Una mejor calidad del producto, que puede obtenerse, en\nparte, mediante una mejor precisión de la velocidad y un\ncontrol más rápido del par.\n· Menos tiempo de parada por avería, lo cual significa un\naccionamiento que no se dispare innecesariamente; un\naccionamiento que no sea complejo a causa de los caros\ndispositivos de retroalimentación; y un accionamiento que\nno se vea muy afectado por interferencias tales como los\narmónicos o las RFI.\n· Menos productos. Un accionamiento capaz de cubrir todas\nlas necesidades de las aplicaciones, bien sean de CA, CC o\nservo. Un accionamiento que sea realmente \"universal\".\n· Un entorno de trabajo cómodo con un accionamiento que\nproduzca un sonido mucho menos audible.\nGuía Técnica Nº 1- Control Directo del Par\n15",
+      "tablas": [
+        [
+          [
+            "General",
+            "¿Qué es el Control Directo del Par?"
+          ],
+          [
+            "El Control Directo del Par - o DTC - es lo último de ABB en tecnología de accionamiento de CA, y está destinado a sustituir en un futuro cercano los tradicionales accionamientos PWM de las clases de bucle abierto y de bucle cerrado. ¿Por qué se denomina Control Directo del Par? El Control Directo del Par describe la manera en la que el control del par y de la velocidad se basan directamente en el estado electromagnético del motor, de forma similar al motor de CC, pero de forma contraria a la manera en la que los accionamientos PWM convencionales utilizan la frecuencia y tensión de entrada. EI DTC es la primera tecnología que controla las variables de control \"reales\" de par y de flujo del motor. ¿Cuál es la ventaja? Dado que el par y el flujo son parámetros del motor que se controlan de forma directa, no es necesario utilizar un modulador, como en el caso de los accionamientos PWM, para controlar la frecuencia y la tensión. Con ello, por tanto, se elimina el intermediario y se acelera considerablemente la respuesta del accionamiento ante cambios en el par requerido. Además, el DTC ofrece un control preciso del par sin necesidad de utilizar un dispositivo de retroalimentación. ¿Por qué es necesaria otra tecnología de accionamiento de CA? El DTC no es únicamente otra tecnología de accionamiento de CA. La industria exige más y la tecnología de accionamiento existente no es capaz de cumplir con estas exigencias. Por ejemplo, la industria desea:"
+          ],
+          [
+            "· Una mejor calidad del producto, que puede obtenerse, en parte, mediante una mejor precisión de la velocidad y un control más rápido del par. · Menos tiempo de parada por avería, lo cual significa un accionamiento que no se dispare innecesariamente; un accionamiento que no sea complejo a causa de los caros dispositivos de retroalimentación; y un accionamiento que no se vea muy afectado por interferencias tales como los armónicos o las RFI. · Menos productos. Un accionamiento capaz de cubrir todas las necesidades de las aplicaciones, bien sean de CA, CC o servo. Un accionamiento que sea realmente \"universal\". · Un entorno de trabajo cómodo con un accionamiento que produzca un sonido mucho menos audible."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Preguntas y respuestas\nEstas son sólo algunas de las exigencias de la industria. El\nDTC puede ofrecer soluciones para todos estos requisitos\nademás de aportar nuevas ventajas para muchas de las\naplicaciones estándar.\n¿Quién inventó el DTC?\nABB ha investigado el DTC desde 1988, después de la\npublicación en 1971 y 1985 de la teoría del doctor alemán\nBlaschke y su colega Depenbrock. EI DTC se basa en la teoría\ndel control de orientación de campo de las máquinas de\ninducción y en la teoría del autocontrol directo. ABB ha invertido\nel equivalente de más de 100 años de investigación\ndesarrollando esta tecnología.\nRendimiento\n¿Cuáles son las ventajas principales de la tecnología de\nDTC en comparación con la tecnología tradicional del\naccionamiento de CA?\nSon muchas las ventajas de la tecnología de DTC. Pero la\nmás importante es que los accionamientos que utilizan la\ntecnología DTC tienen las siguientes características\nexcepcionales de rendimiento dinámico, muchas de las cuales\nse obtienen sin necesidad de un codificador o un tacómetro\npara controlar la posición o velocidad del eje:\n· Respuesta del par: - ¿ Con qué rapidez puede el valor de\nsalida del accionamiento alcanzar el valor especificado\ncuando se aplica un escalón de referencia nominal del par\ndel 100%?\nPara el DTC, una respuesta típica del par es de 1 a 2ms por\ndebajo de 40Hz en comparación a los 10-20ms de los\naccionamientos de vector de flujo y de CC con codificador\nintegrado. Con los accionamientos PWM de bucle abierto\n(véase la página 8) el tiempo de respuesta es normalmente\nmuy superior a los 100ms. De hecho, con su respuesta del\npar, el DTC ha conseguido el límite natural. Con la tensión y\ncorrientes disponibles, el tiempo de respuesta no puede ser\ninferior. Incluso en los accionamientos más nuevos \"sin\nsensores\", la respuesta del par es de cientos de\nmilisegundos.\n· Un control del par preciso con bajas frecuencias, incluida\nla velocidad cero, así como un par a plena carga a velocidad\ncero sin la necesidad de un dispositivo de retroalimentación\ncomo, por ejemplo, un codificador o un tacómetro. Con el\nDTC, la velocidad puede controlarse a frecuencias inferiores\na 0,5Hz y ofrecer todavía un par al 100% durante todo el\nproceso hasta llegar a la velocidad cero.\n· Repetitibilidad del par: - Con qué precisión repite el\naccionamiento su par de salida con la misma orden de\nreferencia de par.\nEI DTC, sin un codificador, ofrece una repetitibilidad del par\ndel 1 al 2% del par nominal en toda la gama de velocidades.\nEste porcentaje es la mitad del que ofrecen otros\naccionamientos de CA de bucle abierto y equivalente al de\nlos accionamientos de CA y CC de bucle cerrado.\n16\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": [
+        [
+          [
+            "",
+            "Estas son sólo algunas de las exigencias de la industria. El DTC puede ofrecer soluciones para todos estos requisitos además de aportar nuevas ventajas para muchas de las aplicaciones estándar. ¿Quién inventó el DTC? ABB ha investigado el DTC desde 1988, después de la publicación en 1971 y 1985 de la teoría del doctor alemán Blaschke y su colega Depenbrock. EI DTC se basa en la teoría del control de orientación de campo de las máquinas de inducción y en la teoría del autocontrol directo. ABB ha invertido el equivalente de más de 100 años de investigación desarrollando esta tecnología."
+          ],
+          [
+            "Rendimiento",
+            "¿Cuáles son las ventajas principales de la tecnología de DTC en comparación con la tecnología tradicional del accionamiento de CA?"
+          ],
+          [
+            "Son muchas las ventajas de la tecnología de DTC. Pero la más importante es que los accionamientos que utilizan la tecnología DTC tienen las siguientes características excepcionales de rendimiento dinámico, muchas de las cuales se obtienen sin necesidad de un codificador o un tacómetro para controlar la posición o velocidad del eje:"
+          ],
+          [
+            "· Respuesta del par: - ¿ Con qué rapidez puede el valor de salida del accionamiento alcanzar el valor especificado cuando se aplica un escalón de referencia nominal del par del 100%? Para el DTC, una respuesta típica del par es de 1 a 2ms por debajo de 40Hz en comparación a los 10-20ms de los accionamientos de vector de flujo y de CC con codificador integrado. Con los accionamientos PWM de bucle abierto (véase la página 8) el tiempo de respuesta es normalmente muy superior a los 100ms. De hecho, con su respuesta del par, el DTC ha conseguido el límite natural. Con la tensión y corrientes disponibles, el tiempo de respuesta no puede ser inferior. Incluso en los accionamientos más nuevos \"sin sensores\", la respuesta del par es de cientos de milisegundos."
+          ],
+          [
+            "· Un control del par preciso con bajas frecuencias, incluida la velocidad cero, así como un par a plena carga a velocidad cero sin la necesidad de un dispositivo de retroalimentación como, por ejemplo, un codificador o un tacómetro. Con el DTC, la velocidad puede controlarse a frecuencias inferiores a 0,5Hz y ofrecer todavía un par al 100% durante todo el proceso hasta llegar a la velocidad cero. · Repetitibilidad del par: - Con qué precisión repite el accionamiento su par de salida con la misma orden de referencia de par. EI DTC, sin un codificador, ofrece una repetitibilidad del par del 1 al 2% del par nominal en toda la gama de velocidades. Este porcentaje es la mitad del que ofrecen otros accionamientos de CA de bucle abierto y equivalente al de los accionamientos de CA y CC de bucle cerrado."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Preguntas y respuestas\n· Precisión de la velocidad estática del motor: - Error entre\nla referencia de velocidad y el valor real a carga constante.\nPara el DTC, la precisión de la velocidad es el 10% del\ndeslizamiento del motor, lo cual, con un motor de 11kW es\nequivalente a un 0,3% de precisión de la velocidad estática.\nCon un motor de 110KW, la precisión de velocidad es del\n0,1% sin codificador (bucle abierto). Esto satisface el\nrequisito de precisión del 95% de las aplicaciones industriales\nde los accionamientos. No obstante, para obtener la misma\nprecisión con accionamientos de CC, es necesario un\ncodificador.\nPor el contrario, con los accionamientos PWM de control de\nfrecuencia, la precisión de la velocidad estática suele\nencontrarse entre el 1 y el 3%. Por tanto, el potencial de\nmejora de los procesos de los clientes es notablemente\nsuperior con accionamientos estándar que utilizan la\ntecnología DTC.\nUn accionamiento DTC que utilice un codificador con 1024\nimpulsos/revolución puede alcanzar una precisión de\nvelocidad del 0,01%.\n· Precisión de la velocidad dinámica: - Integral de tiempo\nde la desviación de velocidad cuando se aplica una velocidad\nde par nominal del 100%.\nLa precisión de velocidad dinámica del bucle abierto DTC\nse encuentra entre 0,3 y 0,4%seg. Esto depende del ajuste\nde ganancia del regulador, que puede adaptarse a los\nrequisitos del proceso.\nCon otros accionamientos de CA de bucle abierto, la precisión\ndinámica es ocho veces inferior y, en la práctica, de alrededor\nde 3%seg. Si se dota al regulador DTC de un codificador, la\nprecisión de velocidad dinámica será de 0,1%sec, valor\nequivalente al del rendimiento del servoaccionamiento.\n¿Cuáles son las ventajas prácticas de estos valores de\nrendimiento?\n· Respuesta rápida del par: - Esto reduce de forma\nconsiderable el tiempo de caída de la velocidad durante una\noscilación de la carga, con lo cual se mejora el control del\nproceso y se obtiene una calidad más consistente del\nproducto.\n· Control del par a bajas frecuencias: - Este aspecto es\nespecialmente beneficioso para las grúas y los ascensores,\ndonde la carga debe iniciarse y detenerse de forma regular\nsin sacudidas. Asimismo, con una bobinadora puede\ncontrolarse la tensión de cero a la velocidad máxima. En\ncomparación con los accionamientos de vector de flujo PWM,\nel DTC ofrece una ventaja de ahorro ya que no es necesario\nel uso de un tacómetro.\n· Linealidad del par: - Esto es importante en las aplicaciones\nde precisión, como en el caso de las bobinadoras utilizadas\nen la industria del papel, donde es imprescindible un nivel\npreciso y consistente del bobinado.\nGuía Técnica Nº 1- Control Directo del Par\n17",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Preguntas y respuestas\n· Precisión de la velocidad dinámica: - Después de un\ncambio súbito de la carga, el motor puede recuperarse y\nalcanzar un estado estable con una rapidez considerable.\nFUNCIÓN\nRESULTADO\nVENTAJA\nBuena precisión de la\nvelocidad del motor sin\ntacómetro\nPermite controlar la\nvelocidad de modo que la\nprecisión es superior al\n0,5%. No se necesita\ntacómetro en el 95% de\ntodas las aplicaciones.\nAhorro del coste de\ninversión. Mayor\nfiabilidad. Mejor control\ndel proceso. Mejor calidad\ndel producto. Conduce a\nun accionamiento\nrealmente universal.\nExcelente control del par\nsin tacómetro\nAccionamiento para\naplicaciones exigentes.\nPermite alcanzar siempre\nel par requerido.\nRepetitibilidad del par del\n1%. Tiempo de respuesta\ndel par inferior a 5ms.\nRendimiento similar al\ndel CC pero sin\ntacómetro. Reducción de\nlas averías mecánicas de\nlas máquinas. Menor\ntiempo de paro. Menor\ninversión.\nTodo el par a velocidad\ncero con o sin\ntacómetro/codificador\nNo requiere freno\nmecánico. Transición\nsuave entre el\naccionamiento y el freno.\nPermite utilizar el\naccionamiento en\naplicaciones tradicionales\nde accionamientos de CC.\nAhorro del coste de\ninversión. Mejor control\nde la carga. Puede\nutilizar el accionamiento\ny motor de CA en lugar\nde CC. El motor de CA\nestándar implica un\nmenor mantenimiento y\nun coste más bajo.\nControl de la velocidad\nhasta cero y de la\nposición con codificador.\nRendimiento de\nservoaccionamiento.\nRentable,\naccionamiento de par\nde alto rendimiento;\nofrece control de la\nposición y mejor\nprecisión estática. Alto\ncontrol de precisión\ncon motor estándar\nde CA.\nTabla 2: Funciones de rendimiento dinámico y ventajas ofrecidas\npor la tecnología DTC\n¿Además de unos excelentes valores de rendimiento\ndinámico, ofrece más ventajas la tecnología de\naccionamiento DTC?\nSí, existen muchas ventajas. Por ejemplo, los accionamientos\nDTC no necesitan un tacómetro ni un codificador para controlar\nla velocidad y la posición del eje del motor a fin de obtener la\nrespuesta de par más rápida jamás alcanzada por un\naccionamiento de CA, lo cual representa un ahorro en el coste\ninicial.\n18\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": [
+        [
+          [
+            "FUNCIÓN",
+            "RESULTADO",
+            "VENTAJA"
+          ],
+          [
+            "Buena precisión de la velocidad del motor sin tacómetro",
+            "Permite controlar la velocidad de modo que la precisión es superior al 0,5%. No se necesita tacómetro en el 95% de todas las aplicaciones.",
+            "Ahorro del coste de inversión. Mayor fiabilidad. Mejor control del proceso. Mejor calidad del producto. Conduce a un accionamiento realmente universal."
+          ],
+          [
+            "Excelente control del par sin tacómetro",
+            "Accionamiento para aplicaciones exigentes. Permite alcanzar siempre el par requerido. Repetitibilidad del par del 1%. Tiempo de respuesta del par inferior a 5ms.",
+            "Rendimiento similar al del CC pero sin tacómetro. Reducción de las averías mecánicas de las máquinas. Menor tiempo de paro. Menor inversión."
+          ],
+          [
+            "Todo el par a velocidad cero con o sin tacómetro/codificador",
+            "No requiere freno mecánico. Transición suave entre el accionamiento y el freno. Permite utilizar el accionamiento en aplicaciones tradicionales de accionamientos de CC.",
+            "Ahorro del coste de inversión. Mejor control de la carga. Puede utilizar el accionamiento y motor de CA en lugar de CC. El motor de CA estándar implica un menor mantenimiento y un coste más bajo."
+          ],
+          [
+            "Control de la velocidad hasta cero y de la posición con codificador.",
+            "Rendimiento de servoaccionamiento.",
+            "Rentable, accionamiento de par de alto rendimiento; ofrece control de la posición y mejor precisión estática. Alto control de precisión con motor estándar de CA."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Preguntas y respuestas\nFUNCIÓN\nRESULTADO\nVENTAJA\nControl rápido de la\ntensión de enlace\nde CC\nFuncionamiento con\ncortes de la red.\nEl accionamiento no se\ndispara. Menor tiempo de\nparo. Evita las interrupciones\ndel proceso. Menor desgaste\nen proceso continuo.\nArranque automático\n(Rearranque directo)\nArranque con\ninductancia residual\ndel motor presente. No\nrequiere demora de\nrearranque.\nPuede arrancar en un motor\nque está en funcionamiento\nsin esperar la caída del flujo.\nPuede transferir el motor de\nlínea a accionamiento. Sin\nrearranque ni interrupciones\nen el proceso.\nArranque automático\n(Arranque con\ngirando)\nSincroniza con el motor\nen rotación.\nNo interrumpe el\nproceso. Control suave\nde la maquinaria.\nRecupera el control en\ntodas las situaciones.\nFrenado del flujo\nFrenado controlado\nentre dos puntos de\nvelocidad.\nAhorro en el coste de\ninversión. Mejor control del\nproceso. No requiere\ndemora como en el frenado\nde CC. Puede utilizarse para\ndesacelerar a velocidades\ndistintas de la velocidad cero.\nMenor necesidad de chopper\ny resistencia de frenado.\nOptimización del flujo\nSe minimizan las\npérdidas de motor.\nMenor ruido del motor.\nMotor controlado.\nAutoidentificación/\nAutoajuste\nAjuste del motor para\nel accionamiento a fin\nde obtener el máximo\nrendimiento.\nMontaje fácil y preciso.\nSin ajuste de parámetros.\nMenos tiempo de puesta\nen marcha. Par de\narranque garantizado.\nModificación fácil para\ncualquier sistema de CA.\nSin patrón de\nconmutación\npredeterminado de\nlos dispositivos de\npotencia.\nNivel bajo de ruido. Sin\nsoporte fijo, por tanto\nel ruido es razonable\ndebido a un espectro\nde ruido \"blanco\".\nAhorro de coste en\nbarreras acústicas para\naplicaciones sensibles al\nruido. Sin resonancias\nmecánicas dañinas. Menor\nesfuerzo en engranajes,\nventiladores y bombas.\nSin límites en el\níndice máximo de\naceleración y\ndesaceleración.\nPuede acelerarse y\ndesacelerarse en el tiempo\nmás rápido posible sin\nrestricciones mecánicas.\nMejor control del\nproceso.\nTabla 3: Funciones y ventajas para el usuario ofrecidas por la\ntecnología DTC\nGuía Técnica Nº 1- Control Directo del Par\n19",
+      "tablas": [
+        [
+          [
+            "FUNCIÓN",
+            "RESULTADO",
+            "VENTAJA"
+          ],
+          [
+            "Control rápido de la tensión de enlace de CC",
+            "Funcionamiento con cortes de la red.",
+            "El accionamiento no se dispara. Menor tiempo de paro. Evita las interrupciones del proceso. Menor desgaste en proceso continuo."
+          ],
+          [
+            "Arranque automático (Rearranque directo)",
+            "Arranque con inductancia residual del motor presente. No requiere demora de rearranque.",
+            "Puede arrancar en un motor que está en funcionamiento sin esperar la caída del flujo. Puede transferir el motor de línea a accionamiento. Sin rearranque ni interrupciones en el proceso."
+          ],
+          [
+            "Arranque automático (Arranque con girando)",
+            "Sincroniza con el motor en rotación.",
+            "No interrumpe el proceso. Control suave de la maquinaria. Recupera el control en todas las situaciones."
+          ],
+          [
+            "Frenado del flujo",
+            "Frenado controlado entre dos puntos de velocidad.",
+            "Ahorro en el coste de inversión. Mejor control del proceso. No requiere demora como en el frenado de CC. Puede utilizarse para desacelerar a velocidades distintas de la velocidad cero. Menor necesidad de chopper y resistencia de frenado."
+          ],
+          [
+            "Optimización del flujo",
+            "Se minimizan las pérdidas de motor. Menor ruido del motor.",
+            "Motor controlado."
+          ],
+          [
+            "Autoidentificación/ Autoajuste",
+            "Ajuste del motor para el accionamiento a fin de obtener el máximo rendimiento.",
+            "Montaje fácil y preciso. Sin ajuste de parámetros. Menos tiempo de puesta en marcha. Par de arranque garantizado. Modificación fácil para cualquier sistema de CA."
+          ],
+          [
+            "Sin patrón de conmutación predeterminado de los dispositivos de potencia.",
+            "Nivel bajo de ruido. Sin soporte fijo, por tanto el ruido es razonable debido a un espectro de ruido \"blanco\".",
+            "Ahorro de coste en barreras acústicas para aplicaciones sensibles al ruido. Sin resonancias mecánicas dañinas. Menor esfuerzo en engranajes, ventiladores y bombas."
+          ],
+          [
+            "Sin límites en el índice máximo de aceleración y desaceleración.",
+            "Puede acelerarse y desacelerarse en el tiempo más rápido posible sin restricciones mecánicas.",
+            "Mejor control del proceso."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Preguntas y respuestas\nAdemás, un accionamiento DTC ofrece un arranque rápido en\ntodos los estados electromagnéticos y mecánicos del motor.\nEl motor arranca de inmediato sin demora.\nAl parecer, los accionamientos DTC son los más\nventajosos para aplicaciones de accionamiento de alto\nrendimiento. ¿ Qué ventajas aporta DTC a los\naccionamientos estándar?\nLas aplicaciones estándar representan el 70% de todos los\naccionamientos de velocidad variable instalados en la industria.\nDos de las aplicaciones más comunes son los ventiladores y\nlas bombas para la industria como, por ejemplo, en la industria\nde la calefacción, la ventilación y el aire acondicionado\n(HeVAC), o del agua, de los alimentos y las bebidas.\nEn estas aplicaciones, DTC ofrece soluciones a problemas\ntales como los armónicos y el ruido.\nPor ejemplo, la tecnología DTC puede controlar la unidad\ngeneradora de líneas de entrada del accionamiento en la que\nse sustituye el puente de diodos convencional por un puente\ncontrolado.\nEsto significa que pueden reducirse los armónicos de forma\nnotable con un puente de entrada controlado por DTC. El bajo\nnivel de distorsión de la tensión con un puente controlado por\nDTC será inferior a la configuración convencional de 6 o 12\nimpulsos y el factor de potencia podrá alcanzar la cifra del\n0,99.\nEn las aplicaciones estándar, los accionamientos DTC resisten\ncon facilidad pares de carga enormes y repentinos debidos a\ncambios rápidos del proceso, sin que ello produzca un disparo\npor sobretensión o sobreintensidad.\nAdemás, si hay un fallo momentáneo de la red, el\naccionamiento debe permanecer energizado. La tensión de\nenlace de CC no debe caer por debajo del nivel de control\ninferior del 80%. Para ello, DTC tiene un ciclo de control de 25\nmicrosegundos.\n¿Cuál es el impacto de DTC en el control de bombas?\nDTC tiene un impacto sobre todas las clases de bombas. Dado\nque DTC nos conduce a un accionamiento universal, todas\nlas bombas, bien sean centrífugas o de par constante (bomba\nespiral), pueden controlarse ahora con una configuración de\naccionamiento, al igual que los aireadores y los compresores.\nLa tecnología DTC permite que un accionamiento se autoajuste\na las diferentes necesidades de aplicación.\nPor ejemplo, en las bombas espirales, un accionamiento con\ntecnología DTC se autoajusta para lograr un par de arranque\nsuficiente que garantice el arranque.\n20\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Preguntas y respuestas\nUn mejor funcionamiento con cortes de la red mejora la\ndisponibilidad de bombeo durante fallos momentáneos de la\nred.\nLa función inherente de control de par de la tecnología DTC\npermite limitar el par a fin de evitar esfuerzos mecánicos en\nbombas y tuberías.\n¿Cuál es el impacto de la tecnología DTC sobre el ahorro\nde energía?\nUna característica de DTC que contribuye a un uso eficaz de\nla energía es la denominada optimización del flujo del motor.\nCon esta función, la eficacia del accionamiento completo (es\ndecir, el regulador y el motor) mejora de forma considerable en\nlas aplicaciones de bombas y ventiladores.\nPor ejemplo, con una carga del 25% hay hasta un 10% de\nmejora del uso eficaz de la energía total. Con una carga del\n50% la mejora puede ser del 2%.\nEsto tiene un impacto directo sobre los costes de\nfuncionamiento. Esta función también reduce de forma notable\nel ruido del motor en comparación con el ruido generado por la\nfrecuencia de conmutación de un accionamiento PWM\nconvencional.\n¿Se ha utilizado la tecnología DTC en muchas\ninstalaciones?\nSí, en cientos de miles de instalaciones en activo. Por ejemplo,\nuno de los mayores fabricantes del mundo de máquinas de\nimprimir con papel continuo puso a prueba la tecnología DTC\nen una bobinadora durante un proceso de acabado de una\npelícula.\nEl requisito:\nControl exacto del par de la bobinadora para producir rollos de\nalta calidad.\nLa solución:\nAccionamientos DTC de bucle abierto que sustituyen los\nconvencioanles accionamientos de CC y los posteriores\naccionamientos de CA de control de vector de flujo en los\naccionamientos centrales de la estación de rebobinado.\nGuía Técnica Nº 1- Control Directo del Par\n21",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "Preguntas y respuestas\nLas ventajas:\nEl diseño de la estación bobinadora se simplifica y aumenta\nla fiabilidad. El coste de un tacómetro y del cableado\ncorrespondiente es equivalente al de un motor CA de 30KW\nCA motor. Esto representa un ahorro significativo en el coste\nde la inversión.\nFuncionamiento\n¿Cuál es la diferencia entre el método DTC y el método\ntradicional PWM?\n. Control PWM y vector de flujo PWM\nLos accionamientos PWM tradicionales utilizan la tensión de\nsalida y la frecuencia de salida como las variables de control\nprincipales, pero necesitan modularse por anchura de impulsos\nantes de aplicarse al motor.\nEsta fase del modulador aumenta el tiempo de procesamiento\nde las señales y, por tanto, limita el nivel de respuesta del par\ny de la velocidad posible desde el accionamiento PWM.\nPor regla general, un modulador PWM requiere un tiempo 10\nveces superior que el DTC para responder al cambio real.\n. Control DTC\nDTC permite utilizar el par y el flujo del estator del motor\ncomo variables de control principales, y ambas se obtienen\ndirectamente del propio motor. Por tanto, con DTC, no es\nnecesario un modulador independiente PWM para controlar la\ntensión y la frecuencia.\nOtra gran ventaja del accionamiento DTC es que, en el 95% de\ntodas las aplicaciones de accionamiento, no se requiere un\ndispositivo de retroalimentación.\n¿Por qué no necesita DTC un tacómetro o un codificador\nde posición para identificar la situación exacta del eje del\nmotor en todo momento?\nExisten cuatro razones principales:\n· La precisión del Modelo de Motor (véase página 27).\n· Las variables de control se toman directamente del motor\n(véase página 27).\n· Las velocidades rápidas de procesamiento de DSP y el\nhardware del selector de pulsos óptimo (véase página 28).\n· No es necesario un modulador (véase página 12).\n22\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Preguntas y respuestas\nCuando estas funciones se combinan para formar un\naccionamiento DTC, se obtiene un accionamiento capaz de\ncalcular 40.000 veces por segundo las tensiones de\nconmutación ideales . Es lo bastante rápido como para controlar\nlos impulsos de conmutación individuales. En pocas palabras,\nes el accionamiento más rápido jamás conseguido.\nUna vez cada 25 microsegundos, se suministra un patrón de\nconmutación óptimo a los semiconductores del inversor para\nproducir el par requerido. Este coeficiente de actualización es\nmuy inferior a cualquier constante de tiempo del motor. Por\ntanto, ahora es el motor el componente limitador y no el inversor.\n¿Cuál es la diferencia entre el DTC y otros accionamientos\nsin sensores disponibles en el mercado?\nExisten dos diferencias esenciales entre el DTC y muchos\naccionamientos sin sensores. Pero la más importante es que\nel DTC ofrece un control preciso incluso a bajas velocidades\nhasta cero, sin utilizar la retroalimentación de un codificador.\nCon frecuencias bajas, el escalonado de par nominal puede\naumentarse en menos de 1ms. Es el mejor que existe.\n¿Cómo logra un accionamiento DTC el rendimiento de\nun servoaccionamiento?\nCon bastante facilidad, ya que el motor ahora es el elemento\nque limita el rendimiento y no el accionamiento. Una precisión\nde velocidad dinámica habitual para un servoaccionamiento\nes de 0,1%s. Un accionamiento DTC puede alcanzar esta\nprecisión dinámica con la retroalimentación opcional de\nvelocidad de un tacómetro.\n¿Cómo consigue el DTC estas mejoras significativas en\ncomparación a la tecnología tradicional?\nLa diferencia más destacable es la velocidad con la que\nfunciona el DTC. Tal como se ha mencionado anteriormente,\nla respuesta del par es la más rápida del mercado.\nA fin de obtener un bucle rápido de par, ABB ha utilizado la\núltima tecnología de procesamiento de señales a alta\nvelocidad y ha invertido 100 años hombre desarrollando el\navanzado Modelo de Motor que simula con precisión los\nparámetros reales del motor dentro del regulador.\nPara más información sobre la teoría del control DTC, consulte\nla página 26.\nGuía Técnica Nº 1- Control Directo del Par\n23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Preguntas y respuestas\n¿Un accionamiento DTC utiliza una lógica difusa dentro\ndel bucle de control?\nNo. La lógica difusa se utiliza en algunos accionamientos para\nmantener la corriente de aceleración dentro de los límites de\ncorriente a fin de evitar que el accionamiento se dispare de\nforma innecesaria. Dado que el DTC controla el par de forma\ndirecta, la corriente puede mantenerse dentro de estos límites\nen todas las condiciones de funcionamiento.\nSe dice que un accionamiento que utiliza la tecnología\nDTC no se dispara. ¿ Cómo se ha logrado esto?\nMuchos fabricantes han invertido años en intentar evitar el\ndisparo del accionamiento durante la aceleración y la\ndesaceleración, pero han encontrado el proceso\nextraordinariamente difícil. El DTC logra que el accionamiento\nfuncione sin dispararse controlando el par real del motor.\nLa velocidad y la precisión de un accionamiento, que más\nbien dependen de parámetros de control calculados y no\nde parámetros medidos, nunca pueden ser realistas, pues\nsi no se controla el eje, no se obtiene una visión completa.\n¿Sucede lo mismo con el DTC?\nEl DTC sí que obtiene una visión completa. Tal como se ha\nexplicado anteriormente, gracias a la sofisticación del Modelo\nde Motor y a la habilidad de realizar 40.000 cálculos por\nsegundo, un accionamiento DTC sabe con exactitud lo que\nestá haciendo el eje del motor. Nunca existen dudas acerca\ndel estado del motor. Esto queda reflejado en las cifras\nexcepcionalmente altas de respuesta del par y de precisión\nde la velocidad citadas en las páginas 16 y 17.\nA diferencia de los accionamientos de CA convencionales,\ndonde se desperdiciaba hasta un 30% de los conmutadores,\nun accionamiento que utiliza la tecnología DTC sabe con\nexactitud dónde se encuentra el eje, con lo cual no desperdicia\nninguno de los conmutadores.\nEl DTC puede cubrir el 95% de todas las aplicaciones\nindustriales. Las excepciones, en su mayoría aplicaciones en\nlas que se necesita un control de la velocidad extremadamente\npreciso, se solucionan añadiendo un dispositivo de\nretroalimentación que proporciona un control de bucle cerrado.\nSin embargo, este dispositivo puede ser más sencillo que los\nsensores que se necesitan para los accionamientos de bucle\ncerrado convencionales.\n24\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Preguntas y respuestas\nIncluso con los semiconductores más rápidos, se\nintroduce algún tiempo muerto. Por tanto, cuál es el grado\nde autoajuste de un accionamiento DTC?\nEl autoajuste se utiliza en la marcha de identificación inicial\nde un accionamiento DTC (véase la página 27). El tiempo\nmuerto se mide y es tenido en cuenta por el Modelo de Motor\nal calcular el flujo real. Si lo comparamos con un accionamiento\nPWM, el problema de PWM se encuentra en la fase de 20 a\n30Hz, que causa un rizado del par.\n¿Qué clase de estabilidad tendrá un accionamiento DTC\ncon cargas ligeras y a baja velocidad?\nLa estabilidad hasta la velocidad cero es buena y la precisión\ndel par y de la velocidad pueden mantenerse con velocidades\nbajas y cargas ligeras. Hemos definido las precisiones del modo\nsiguiente:\nPrecisión del par: Con un coeficiente de velocidad del 2 al\n100% y un coeficiente de carga del 10 al 100%, la precisión\ndel par es del 2%.\nPrecisión de la velocidad: Con un coeficiente de velocidad\ndel 2 al 100% y un coeficiente de carga del 10 al 100%, la\nprecisión de la velocidad es del 10% del deslizamiento del\nmotor. El deslizamiento de un motor de 37kW es\naproximadamente del 2%, con lo cual la precisión de la\nvelocidad es del 0,2%.\n¿Cuáles son las limitaciones del DTC?\nSi se conectan varios motores en paralelo en un inversor\ncontrolado por DTC, el grupo funciona como un motor grande.\nNo tiene información sobre el estado de ninguno de los motores.\nSi varía el número de motores o la potencia del motor\npermanece por debajo de 1/8 de la potencia establecida, es\nmejor seleccionar la macro de control escalar.\n¿El DTC puede trabajar con cualquier clase de motor de\ninducción?\nSí, con cualquier motor de jaula de ardilla asíncrono.\nGuía Técnica Nº 1- Control Directo del Par\n25",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "¿ Cómo\nfunciona el\nDTC?\nCapítulo 4 - Teoría de control básico\nEn la figura 5 aparece el diagrama completo de bloques del\nControl Directo del Par (DTC).\nUn recorrido por el bloque\nMains\nRectifier\nSPEED CONTROL\nLOOP\nTorque reference\nSpeed\ncontroller\nSpeed reference\nPID\n+ acceleration\ncompensator\nFlux optimizing\nOn/Off\nFlux braking\n0\nO\nOn/Off\nTORQUE CONTROL\nLOOP\nInternal torque reference\nTorque reference\ncontroller\nDC bus\nTorque\ncomparator\nTorque\nstatus\nControl\nsignals\nFlux\nstatus\nOptimum\npulse\nselector\nFlux\ncomparator\nSwitch\nposition\ncommands\n1.\nInverter\nFlux reference\ncontroller\nU\nActual torque\nActual flux\nif\nU\nAdaptive\nmotor model\nSwitch positions\nDC bus voltage\nInternal flux\nreference\nActual speed\nMotor current\nMotor current\nM\n3~\nFigura 5: El DTC comprende dos bloques clave: Control de la\nvelocidad y control del par\nEl diagrama de bloques muestra que el DTC tiene dos\nsecciones fundamentales: el bucle de control del par y el bucle\nde control de la velocidad. Ahora recorreremos estos bloques,\nexploraremos cada una de las fases y veremos cómo se\nintegran entre sí.\nEmpecemos con el bucle de control del par del DTC.\n26\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Teoría de control básico\nBucle de\ncontrol del par\nTorque control loop\nMains\nRectifier\nInternal torque reference\nTorque\ncomparator\nFlux\ncomparator\nTorque\nstatus\nControl\nsignals\nFlux\nstatus\nDC bus\nOptimum\npulse\nselector\nSwitch\nposition\ncommands\nInverter\nActual torque\n3\nActual flux\nAdaptive\nmotor model\n4\nDC bus voltage\nSwitch positions\nMotor current\nMotor current\n2\n1\nM\n3 ~\nPaso 1 Medición\nde la tensión y la\ncorriente\nDurante el funcionamiento normal, se miden simplemente\ndos intensidades de fase del motor y la tensión de bus de\nCC, junto con las posiciones de los conmutadores del\ninversor.\nPaso 2 Modelo de\nMotor adaptable\nLa información medida del motor se alimenta al Modelo de\nMotor adaptable.\nLa sofisticación de este Modelo de Motor permite calcular datos\nprecisos sobre el motor. Antes de iniciar el accionamiento DTC,\nel Modelo de Motor recibe información sobre el motor, que se\nrecoge durante la marcha de identificación del motor. A este\nproceso se le denomina autoajuste y, junto con la inercia del\nmotor, se determinan datos tales como la resistencia del stator,\nla inductancia mutua y los coeficientes de saturación. La\nidentificación de los parámetros del modelo de motor puede\nefectuarse sin que gire el eje del motor. Ello facilita la aplicación\nde la tecnología DTC incluso en modificaciones. La calibración\nextremadamente precisa del modelo de motor se logra cuando\nla marcha de identificación incluye también el accionamiento\ndel eje del motor durante algunos segundos.\nGuía Técnica Nº 1- Control Directo del Par\n27",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Teoría de control básico\nPaso 3\nComparador de\npar y comparador\nde flujo\nNo es necesario retroalimentar la velocidad o la posición del eje\ncon tacómetros o codificadores si el requisito de precisión de la\nvelocidad es superior al 0,5%, como suele serlo para la mayoría\nde aplicaciones industriales. Esto representa un avance\nsignificativo sobre el resto de tecnologías de accionamiento de\nCA. El Modelo de Motor es, de hecho, la clave para el rendimiento\nsin precedentes del DTC a baja velocidad.\nEl Modelo Motor emite señales de control que representan\ndirectamente el par del motor y el flujo de estator reales. La\nvelocidad del eje también se calcula en el Modelo de Motor.\nLa información para controlar los conmutadores de alimentación\nse produce en el comparador de par y en el de flujo.\nTanto el par real como el flujo real se alimentan a los\ncomparadores, donde son comparados cada 25 microsegundos\ncon un valor de referencia del par y del flujo. Las señales de\nestado del par y del flujo se calculan utilizando un método de\ncontrol de histéresis de dos niveles.\nA continuación, estas señales se alimentan al selector de\npulsos óptimos.\nPaso 4 Selector\nde pulsos\nóptimos\nPara determinar la lógica de conmutación del inversor, en el\nselector de pulsos óptimos se encuentra, junto con el hardware\nASIC, el procesador más avanzado de señales digitales de\n40MHz (DSP). Además, todas las señales de control se\ntransmiten por enlaces ópticos para conseguir una transmisión\nde datos de alta velocidad.\nEsta configuración ofrece una gran velocidad de procesamiento\nde modo que, cada 25 microsegundos, se suministra un pulso\nóptimo a los dispositivos de conmutación del semiconductor\ndel inversor para alcanzar o mantener un par preciso del motor.\nLa combinación correcta de los conmutadores se determina\nen cada ciclo de control. No existe un patrón determinado de\nlos conmutadores. EI DTC también es denominado\nconmutación \"justo a tiempo\", porque, a diferencia de los\naccionamientos PWM convencionales, donde hasta el 30%\nde todos los cambios de conmutación son innecesarios, en el\nDTC, todos y cada uno de los conmutadores son necesarios y\nse utilizan.\nEsta alta velocidad de conmutación es fundamental para el\néxito del DTC. Los principales parámetros de control del motor\nse actualizan 40.000 veces por segundo. Con ello se obtiene\nuna respuesta extremadamente rápida en el eje que es\nnecesaria para que el Modelo de Motor (véase el Paso 2) pueda\nactualizar esta información.\nEs gracias a esta velocidad de procesamiento que se obtienen\ncifras tan elevadas de rendimiento, incluida una precisión de\ncontrol de velocidad estática, sin codificador, de +0,5%, y\nuna respuesta del par inferior a 2ms.\n28\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": [
+        [
+          [
+            "Paso 3 Comparador de par y comparador de flujo",
+            "No es necesario retroalimentar la velocidad o la posición del eje con tacómetros o codificadores si el requisito de precisión de la velocidad es superior al 0,5%, como suele serlo para la mayoría de aplicaciones industriales. Esto representa un avance significativo sobre el resto de tecnologías de accionamiento de CA. El Modelo de Motor es, de hecho, la clave para el rendimiento sin precedentes del DTC a baja velocidad."
+          ],
+          [
+            "El Modelo Motor emite señales de control que representan directamente el par del motor y el flujo de estator reales. La velocidad del eje también se calcula en el Modelo de Motor."
+          ],
+          [
+            "La información para controlar los conmutadores de alimentación se produce en el comparador de par y en el de flujo. Tanto el par real como el flujo real se alimentan a los comparadores, donde son comparados cada 25 microsegundos con un valor de referencia del par y del flujo. Las señales de estado del par y del flujo se calculan utilizando un método de control de histéresis de dos niveles."
+          ],
+          [
+            "A continuación, estas señales se alimentan al selector de pulsos óptimos."
+          ],
+          [
+            "Paso 4 Selector de pulsos óptimos",
+            "Para determinar la lógica de conmutación del inversor, en el selector de pulsos óptimos se encuentra, junto con el hardware ASIC, el procesador más avanzado de señales digitales de 40MHz (DSP). Además, todas las señales de control se transmiten por enlaces ópticos para conseguir una transmisión de datos de alta velocidad."
+          ],
+          [
+            "Esta configuración ofrece una gran velocidad de procesamiento de modo que, cada 25 microsegundos, se suministra un pulso óptimo a los dispositivos de conmutación del semiconductor del inversor para alcanzar o mantener un par preciso del motor. La combinación correcta de los conmutadores se determina en cada ciclo de control. No existe un patrón determinado de los conmutadores. EI DTC también es denominado conmutación \"justo a tiempo\", porque, a diferencia de los accionamientos PWM convencionales, donde hasta el 30% de todos los cambios de conmutación son innecesarios, en el DTC, todos y cada uno de los conmutadores son necesarios y se utilizan."
+          ],
+          [
+            "Esta alta velocidad de conmutación es fundamental para el éxito del DTC. Los principales parámetros de control del motor se actualizan 40.000 veces por segundo. Con ello se obtiene una respuesta extremadamente rápida en el eje que es necesaria para que el Modelo de Motor (véase el Paso 2) pueda actualizar esta información."
+          ],
+          [
+            "Es gracias a esta velocidad de procesamiento que se obtienen cifras tan elevadas de rendimiento, incluida una precisión de control de velocidad estática, sin codificador, de +0,5%, y una respuesta del par inferior a 2ms."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Teoría de control básico\nControl de la\nvelocidad\nSpeed control loop\n6\nTorque reference\nSpeed reference\nSpeed\ncontroller\n5\nTorque reference\ncontroller\nPID\n+ acceleration\ncompensator\n0\nFlux optimising\nOn/Off\nFlux braking\nO\nOn/Off\nFlux reference\ncontroller\nU\nf\nU\nf\nActual speed\n7\nPaso 5\nRegulador de la\nreferencia del par\nEn el regulador de la referencia del par, el valor de salida de\ncontrol de la velocidad está limitado por los límites de par y la\ntensión de bus de CC.\nTambién incluye el control de la velocidad para casos en los\nque se utiliza una señal de par externa. La referencia de par\ninterna de este bloque se alimenta al comparador de par.\nPaso 6\nRegulador de la\nvelocidad\nEl bloque regulador de la velocidad se compone de un regulador\nPID y de un compensador de aceleración. La señal de\nreferencia de velocidad externa se compara con la velocidad\nreal producida por el Modelo de Motor. La señal de error se\nalimenta entonces tanto al regulador PID como al compensador\nde aceleración. El valor de salida es la suma de los valores de\nsalida de ambos.\nPaso 7\nRegulador de la\nreferencia de flujo\nEl regulador de la referencia de flujo puede dar un valor absoluto\ndel flujo del estator al bloque comparador de flujo. La capacidad\nde controlar y modificar este valor absoluto ofrece una manera\nfácil de realizar muchas funciones del inversor, tales como la\noptimización del flujo y el frenado del flujo (véase la página 19).\nGuía Técnica Nº 1- Control Directo del Par\n29",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Capítulo 5 - Índice\nA\nacabado de una película 21\naccionamiento con alimentación\ncontrol de frecuencia 6, 9, 13, 22\ncontrol de histéresis\n28\ncontrol de la posición\n18\n18\nde tensión 8\ncontrol de la precisión\naccionamiento de bucle abierto 9\ncontrol de la velocidad 6, 7, 24,\naccionamiento de bucle cerrado\n26, 28, 29\n10, 11\nControl de Orientación de Campo\n16\naccionamiento de CA\n5, 6, 8, 9,\n10, 12, 13, 14, 15, 16, 17, 18, 21, 24,\n28\ncontrol de vector de flujo 6, 10,\n11, 13\nControl Directo del Par 5, 6, 7, 8,\naccionamiento de CA con control\nde flujo de vector 10\n9, 10, 11, 12, 13, 14, 15, 26\naccionamiento de CA con DTC\n12, 13\ncontrol escalar\n10, 25\ncorriente del inducido\n7\n7\naccionamiento de CC 7, 8, 9, 10,\ncorriente de magnetización\n11, 12, 13, 14,18\naccionamiento de motor de CC 6\ncoste\n8, 10, 11, 18, 19, 21\ncoste inicial\n18\naccionamiento de velocidad\ncoste operativo\n21\nvariable de CA 6, 8\nD\naccionamiento PWM de CA 11,\nDepenbrock\n16\n14, 21, 22, 24, 28\ndisparo 15, 19, 20, 24\naccionamientos de CA de bucle\ndispositivo de retroalimentación\n9, 10, 11, 13, 15, 16, 22, 24\nabierto\n12\nDSP 22, 28\naccionamientos de velocidad\nvariable 5, 6, 13, 20\nDTC 5, 6, 12, 13, 14, 15, 16, 17,\naccionamientos PWM de vector\nde flujo 11\n18, 19, 20, 21, 22, 23, 24, 25, 26,\n27, 28\nagua\n5, 20\nE\nahorro de energía\n21\nengranaje\n19\naire acondicionado\n5, 20\naireador\n20\nenlace óptimo\n28\nesfuerzo\n19, 21\nalimentación\n20\nestabilidad\n25\narmónicos\n15, 20\nF\narranque\n5, 19, 20, 26\nfactor de potencia\n20\narranque\n17, 18, 19\nfallo de la red\n20\nascensor\n17\nfiabilidad\n8, 18\nASIC\n28\n19, 24, 27\nflujo del rotor\n11\nautoajuste\nflujo del stator\n22, 28, 29\nB\nflujo magnetizante del motor\n12\nBlaschke\n16\nfrecuencias bajas\n16, 17, 23\nbobinado del inducido\n7\nfrecuencia de entrada\n15\nbobinado del stator 9, 10\nfrecuencia de salida\n22\nbobinadora\n17, 21, 22\nbomba\nfrenado\n19, 29\n10, 19, 20, 22\nfrenado de flujo\n19, 29\nbucle cerrado\n10, 11, 15, 16\nfreno mecánico\n18\nbucle de control 7, 9, 10, 12, 13,\n24, 26, 27, 29\nbucle de control del par 26\nfuncionamiento con cortes de la\nred\n19, 21\nbucle de control de la velocidad\nG\ngrupo de escobillas del\n26\nconmutador 7\nH\nC\ncalefacción\n20\nHeVAC 20\ncampo del stator\n11\nI\nciclo de control\n28\nimpulsos de conmutación\n23\ncinta transportadora\n20\ninductancia mutua\n27\ncodificador 8, 11, 12, 14, 18, 22,\nindustria del papel\n17\n23, 27, 28\ncodificador de la posición 12, 22\ninercia\n27\ncoeficiente de saturación 27\nintensidad de campo\n7\nL\ncomparador de flujo 28, 29\ncomparador de par 28, 29\ncomparador de par y el de flujo 28\nlogica difusa\n24\nM\ncompensador de aceleración 29\nconstante de tiempo\n8, 23\nconstante de tiempo eléctrico\n8\nmantenimiento\n6, 8, 18\nmáquina de imprimir con papel\ncontinuo 21\n30\nGuía Técnica Nº 1- Control Directo del Par",
+      "tablas": [
+        [
+          [
+            "A acabado de una película 21 accionamiento con alimentación",
+            "control de frecuencia 6, 9, 13, 22 control de histéresis 28 control de la posición 18"
+          ],
+          [
+            "de tensión 8",
+            "18\ncontrol de la precisión"
+          ],
+          [
+            "accionamiento de bucle abierto 9",
+            "control de la velocidad 6, 7, 24,"
+          ],
+          [
+            "accionamiento de bucle cerrado",
+            "26, 28, 29"
+          ],
+          [
+            "10, 11",
+            "Control de Orientación de Campo 16"
+          ],
+          [
+            "accionamiento de CA 5, 6, 8, 9,"
+          ],
+          [
+            "10, 12, 13, 14, 15, 16, 17, 18, 21, 24, 28",
+            "control de vector de flujo 6, 10, 11, 13"
+          ],
+          [
+            "accionamiento de CA con control de flujo de vector 10",
+            "Control Directo del Par 5, 6, 7, 8,\n9, 10, 11, 12, 13, 14, 15, 26"
+          ],
+          [
+            "accionamiento de CA con DTC 12, 13",
+            "control escalar 10, 25 corriente del inducido 7"
+          ],
+          [
+            "accionamiento de CC 7, 8, 9, 10,",
+            "7\ncorriente de magnetización"
+          ],
+          [
+            "11, 12, 13, 14,18",
+            "coste 8, 10, 11, 18, 19, 21"
+          ],
+          [
+            "accionamiento de motor de CC 6",
+            "coste inicial 18"
+          ],
+          [
+            "accionamiento de velocidad",
+            "coste operativo 21"
+          ],
+          [
+            "variable de CA 6, 8",
+            "D"
+          ],
+          [
+            "accionamiento PWM de CA 11,",
+            "Depenbrock 16"
+          ],
+          [
+            "14, 21, 22, 24, 28",
+            "disparo 15, 19, 20, 24"
+          ],
+          [
+            "accionamientos de CA de bucle",
+            "dispositivo de retroalimentación"
+          ],
+          [
+            "abierto 12",
+            "9, 10, 11, 13, 15, 16, 22, 24"
+          ],
+          [
+            "accionamientos de velocidad",
+            "DSP 22, 28"
+          ],
+          [
+            "variable 5, 6, 13, 20",
+            "DTC 5, 6, 12, 13, 14, 15, 16, 17,"
+          ],
+          [
+            "accionamientos PWM de vector de flujo 11",
+            "18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28"
+          ],
+          [
+            "agua 5, 20",
+            "E"
+          ],
+          [
+            "ahorro de energía 21",
+            "engranaje 19"
+          ],
+          [
+            "aire acondicionado 5, 20 aireador 20",
+            "enlace óptimo 28 esfuerzo 19, 21"
+          ],
+          [
+            "alimentación 20",
+            "estabilidad 25"
+          ],
+          [
+            "armónicos 15, 20",
+            "F"
+          ],
+          [
+            "arranque 5, 19, 20, 26",
+            "factor de potencia 20"
+          ],
+          [
+            "arranque 17, 18, 19",
+            "fallo de la red 20"
+          ],
+          [
+            "ascensor 17",
+            "fiabilidad 8, 18"
+          ],
+          [
+            "ASIC 28",
+            "flujo del rotor 11"
+          ],
+          [
+            "19, 24, 27\nautoajuste",
+            "flujo del stator 22, 28, 29"
+          ],
+          [
+            "B",
+            "flujo magnetizante del motor 12"
+          ],
+          [
+            "Blaschke 16",
+            "frecuencias bajas 16, 17, 23"
+          ],
+          [
+            "bobinado del inducido 7",
+            "frecuencia de entrada 15"
+          ],
+          [
+            "bobinado del stator 9, 10",
+            "frecuencia de salida 22"
+          ],
+          [
+            "bobinadora 17, 21, 22",
+            "frenado 19, 29"
+          ],
+          [
+            "bomba\n10, 19, 20, 22",
+            "frenado de flujo 19, 29"
+          ],
+          [
+            "bucle cerrado 10, 11, 15, 16",
+            "freno mecánico 18"
+          ],
+          [
+            "bucle de control 7, 9, 10, 12, 13, 24, 26, 27, 29",
+            "funcionamiento con cortes de la red 19, 21"
+          ],
+          [
+            "bucle de control del par 26",
+            "G"
+          ],
+          [
+            "bucle de control de la velocidad",
+            "grupo de escobillas del"
+          ],
+          [
+            "26",
+            "conmutador 7 H"
+          ],
+          [
+            "C"
+          ],
+          [
+            "calefacción 20",
+            "HeVAC 20"
+          ],
+          [
+            "campo del stator 11",
+            "I"
+          ],
+          [
+            "ciclo de control 28",
+            "impulsos de conmutación 23"
+          ],
+          [
+            "cinta transportadora 20",
+            "inductancia mutua 27"
+          ],
+          [
+            "codificador 8, 11, 12, 14, 18, 22,",
+            "industria del papel 17"
+          ],
+          [
+            "23, 27, 28",
+            "inercia 27"
+          ],
+          [
+            "codificador de la posición 12, 22\ncoeficiente de saturación 27",
+            "intensidad de campo 7 L"
+          ],
+          [
+            "comparador de flujo 28, 29 comparador de par 28, 29",
+            "logica difusa 24 M"
+          ],
+          [
+            "comparador de par y el de flujo 28\ncompensador de aceleración 29 constante de tiempo 8, 23 constante de tiempo eléctrico 8",
+            "mantenimiento 6, 8, 18 máquina de imprimir con papel continuo 21"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Modelo de Motor 10, 22, 23, 24,\n27, 28, 29\nmodificación\n19\nmodulación por anchura de\nimpulsos\n9\nmodulador 9, 10, 11, 12, 14, 22\nmotor de CA\n5, 6, 8, 13, 18\nmotor de CC 6, 7, 8, 11, 15\nmotor de inducción de CA 10, 11\nO\nOEM\n5\noptimización de flujo 19, 21, 29\noptimización del flujo del motor 21\norientación de campo 7, 8, 10,\n11, 12\nP\npar 5, 6, 7, 8, 9, 10, 11, 12, 13,\n14, 15, 16, 17, 18, 19, 20, 21,\n22, 23, 24, 25, 26, 28, 29\n- bucle 23\n- carga total con velocidad cero\n16\n- control 5, 6, 7, 8, 10, 12, 18,\n21, 26\n- control a baja frecuencia\n16\n- linealidad\n17\n- repitibilidad\n18\n- respuesta 6, 8, 11, 12, 18, 23,\n24, 28\n- rizado\n24\npar de carga\n16, 20\npar del motor\n8, 12, 28\npaso nominal del par\n23\npatrón de conmutación 19, 23, 28\nposición angular\n11\nposición del rotor\n7\nprecisión de la velocidad\n6, 8, 11, 12, 15, 17, 18, 23,\n24, 25, 27\nprecisión de la velocidad\ndinámica 12, 17\nprecisión de velocidad estática\n17, 27\nprecisión estática\n18\npredeterminado\n19, 28\nprocesamiento de señales\n12, 22, 23\nprocesamiento de señales\ndigitales\n12\npuente de diodos\n20\npuente de entrada controlado 20\npuesta en marcha\n19\nPWM 6, 9, 10, 11, 14, 15, 16,\n20, 21, 24, 27\nR\nrearranque\n19\nrectificador de diodos\n9\nreferencia externa de la\nvelocidad 29\nregulador de la referencia\nde flujo 29\nregulador de la referencia\nde par 29\nregulador de la velocidad\n29\nregulador del motor\n8\nregulador electrónico\n11, 14\nregulador PID 29\nresistencia del stator 27\nrespuesta de la velocidad\n22\nrespuesta de la velocidad\ndinámica\n8\nretroalimentación de la posición 8\nRFI\n15\nruido\n15, 19, 20, 21\nruido del motor\n19, 21\nS\n7, 8,\nrotor\n7, 8, 10, 11\nselector de pulsos óptimos\n28\nseñal de par externa\n29\nservoaccionamiento\nsin sensores\n23\n18, 23\nstator\n7, 9, 10, 11, 2, 27, 28,\n29\nT\ntacómetro 12, 14, 16, 17, 18, 22,\n23, 27\ntension de bus de CC\n27, 29\ntensión de enlace de CC\n19, 20\ntensión de salida\n22\ntensión 8, 9, 10, 11, 15, 16, 19,\n20, 22, 23, 27, 29\ntiempo de procesamiento de\nseñales\n22\ntuberías\n21\nU\nunidad generadora de líneas de\nentrada del accionamiento\n20\nuniversal\n12, 15, 18, 20\nV\nvalor de salida de control de la\nvelocidad\n29\nvariables de control\n9, 11, 12,\n14, 22\nvariables de control 10, 13, 15, 22\nvector de flujo 6, 10, 11, 13, 16,\n21, 22\nvelocidad 5, 6, 7, 8, 9, 10, 11,\n12, 13, 14, 15, 16, 17, 17, 18, 19,\n20, 22, 23, 24, 25, 26, 27, 28, 29\nvelocidad a cero 11, 16, 18, 19,\n23, 25\nvelocidad del rotor\n11\n17\nvelocidad estática del motor\nventilación\n20\nventilador\n10, 19, 20, 21\nVSD\n5, 6\nGuía Técnica Nº 1- Control Directo del Par\n31",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "014\nNORDICO\nDO AMBIENTAL\nImpresos\nMARCADO\n441\nES 10.1.2000\ncopyright @ ABB Automation Group Ltd. 2000 3BFE 64278011 R0106\nABB\nABB Sistemas Industriales, S.A.\nDivisión Accionamientos\nPolígono Industrial Suroeste, s/n\n08192 Sant Quirze del Vallès\nBarcelona\nTel:\n93 728 87 00\nFax:\n93 728 87 43",
+      "tablas": []
+    }
+  ]
+}

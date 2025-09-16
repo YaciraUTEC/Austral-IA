@@ -1,0 +1,4485 @@
+{
+  "archivo": "30031431 - FLUJOM MAG MS2420 ISOIL CON TRANS MV210 (MANUAL)_p41_80",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "ISOMAG\nMENU 3 - SCALE\n(POS. 3.1-2) Flow Rate Full Scale 1-2\n[FS1-2= l/s xxxx.x]\n[FRFS1-FRFS2]\nThe FS2 (full scale flow rate 2) is active with POS. 6.6 see page 28 , enabled.\nAL2\nThe full scale is used to indicate to the maximum meter's flow rate. The full scale should be chosen\ncarefully as it's parameters are used for several other parameters. There are three fields to fill in order\nto set this parameter, from left to right: 1) measure unit, 2) time unit of measure and 3) numeric\nvalue. The selection is made by positioning the cursor on the field to modify. To change the type unit\nof measure (metric, Imperial units, mass or volume) see POS. 2.3 see page 27 and POS. 2.19 see\npage 27 and POS. 2.20 see page 27. The value of Fs1-2 depend nominal diameter POS. 1.4 see\npage 27. The following tables shown the units of measure available and the conversion factor by\ncomparison with 1dm3 and 1kg. The converter accepts any kind of combination of units of measure\nsatisfying both the following conditions:\nNumeric field value 99999\n1 1/25 fsmax ≤ numeric field value ≤ fsmax.\nWhere fsmax is the maximum full scale value corresponding to the sensor, equal to a 10m/s liquid speed.\nThe measure units are shown as appear on the display. The Imperial units units are diversified by using\ncapital and small characters.\nMETRIC\ncm3\nCubic\ncentimeter\nml\nMilliliter\nl\nLiter\ndm3\nCubic\ndecimeter\ndal\nDecalitre\nhl\nHectolitre\nm3\nCubic meter\nML\nMega Liter\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nNOT METRIC\nin3\nCubic inch\nGal\nAmerican gallon\nft3\nCubic foot\nbbl\nStandard barrel\nBBL\nOil barrel\nhf\nHecto cubic feet\nKGL\nAmerican Kilo gallon\nkf3\nKilo cubic feet\nttG\nTen thousand gallons\nIGL\nImperial gallon\nIKG\nImperial Kilo gallon\nAft\nAcre foot\nMGL\nMega gallon\nIMG\nImperial mega gallon\nMASS UNIT NOT\nMETRIC\nMASS UNIT\nMETRIC\nOz\nOunce\ng\nGram\nLb\nPound\nkg\nKilogram\nTon\nShort tons\nt\nTon\nWhen a measure mass unit is set, the specific gravity function is automatically enabled by the system.\nPlease, note that the mass measure is heavily affected by the temperature. With certain liquids this\nmay cause significant measurement errors. The following measure of time units can be selected: s =\nsecond, m = minute, h = hour, d = day .\nNOTES FOR USING THE MCP INTERFACE\nThe command FRFS1 =? and command FRS2 = ? , edited by MCP software, return a list of only the unit\ncompatible with the nominal diameter set. If the sensor is insertion type and the diameter is zero, the\nonly possible unit is m/s if the flow rate were chosen metric units, else f/s for the unit of measurement\nnon metric.\nISOIL\n38 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "METRIC"
+          ],
+          [
+            "cm3",
+            "Cubic centimeter"
+          ],
+          [
+            "ml",
+            "Milliliter"
+          ],
+          [
+            "l",
+            "Liter"
+          ],
+          [
+            "dm3",
+            "Cubic decimeter"
+          ],
+          [
+            "dal",
+            "Decalitre"
+          ],
+          [
+            "hl",
+            "Hectolitre"
+          ],
+          [
+            "m3",
+            "Cubic meter"
+          ],
+          [
+            "ML",
+            "Mega Liter"
+          ]
+        ],
+        [
+          [
+            "NOT METRIC"
+          ],
+          [
+            "in3",
+            "Cubic inch"
+          ],
+          [
+            "Gal",
+            "American gallon"
+          ],
+          [
+            "ft3",
+            "Cubic foot"
+          ],
+          [
+            "bbl",
+            "Standard barrel"
+          ],
+          [
+            "BBL",
+            "Oil barrel"
+          ],
+          [
+            "hf",
+            "Hecto cubic feet"
+          ],
+          [
+            "KGL",
+            "American Kilo gallon"
+          ],
+          [
+            "kf3",
+            "Kilo cubic feet"
+          ],
+          [
+            "ttG",
+            "Ten thousand gallons"
+          ],
+          [
+            "IGL",
+            "Imperial gallon"
+          ],
+          [
+            "IKG",
+            "Imperial Kilo gallon"
+          ],
+          [
+            "Aft",
+            "Acre foot"
+          ],
+          [
+            "MGL",
+            "Mega gallon"
+          ],
+          [
+            "IMG",
+            "Imperial mega gallon"
+          ]
+        ],
+        [
+          [
+            "MASS UNIT NOT METRIC",
+            "",
+            "MASS UNIT METRIC"
+          ],
+          [
+            "Oz",
+            "Ounce",
+            "g",
+            "Gram"
+          ],
+          [
+            "Lb",
+            "Pound",
+            "kg",
+            "Kilogram"
+          ],
+          [
+            "Ton",
+            "Short tons",
+            "t",
+            "Ton"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "(POS. 3.2) Batching quantity\nThis function is enabled when output1 is set to \"BATCHING\".\nIt allows to set the unit of measure and the batching quantity.\nAL2\nISOMAG\n[BTQTY]\n(POS. 3.3-3.5) Output Pulse 1-2 [Pls1-2= dm3 x.xxxxx]\nAL2\n[OP1PV-OP2PV]\nPls1 and Pls2 is active with POS. 7.1 see page 29 and POS. 7.2 see page 29, enable and setting pulse value on\nchannel 1 and channel 2. This function allows the user to set a signal (a pulse) to be given from the converter when\nadefinedamountofliquidhaspassedthroughthesensor. Tosettheparameter, completethe 2fields, fromlefttoright:\n1)measure unit, 2) numeric value. The selection is performed by positioning the cursor in the field to be\nmodified. To change the unit type (metric, British or American, mass or volume) see POS. 2.4 see page 27\nand POS. 2.5 see page 27, POS. 2.19 see page 27 and POS. 2.20 see page 27. The value of Pls1-\n2 depends on nominal diameter POS. 1.4 see page 27. Only those units described (POS. 3.1 see page\n28-POS. 3.3 see page 28) above are available to be selected.\n(POS. 3.4-3.6) Output1-2 Pulse Time\n[Tpls1-2= ms x.xxxxx]\nAL2 [OP1PT OP2PT]\nTpls1 and Tpls2 is active with POS. 7.1 see page 29 and POS. 7.2 see page 29 enable. Setting\nduration of the pulse generated on channel 1 and 2.\nWith the liquid volume to generate the pulse value (POS. 3.4 see page 28 POS. 3.6 see page 28)\nset by the user. The user must set the corresponding duration of the pulse to be outputed. This value is\nexpressed in milliseconds and has to be between 0.4 and 9999.99. When the high frequency output is\npresent, then the minimum value can type of device is connected to the converter, the user must verify that\nthe set pulse duration is compatible with the external device processing such pulses. If, for example, an\nelectro-mechanical pulse counter is connected, a minimum pulse time of 0.04 milliseconds can be set.\nATTENTION: The converter can not detect problems that may occur; firstly, the pulse is too long the coils\nmay burn out, secondly, if the pulse is too short, the counter may not be able to function, causing damage\nof the output.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 3.7-3.8) Output full scale freq.1-2\n[Frq1-2= x.xxxxx]\nAL2 [OU1FF-OU2FF]\nFrq1 and Frq2 are activated with POS. 7.1 see page 29 and POS. 7.2 see page 29 enabled and set to\nthe value freq+/-/+ -. Setting duration of the pulse generated on channel 1 and 2.\n39 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "ISOMAG\nMENU 4 - MEASURE\n(POS. 4.1) Damping\n[Damping=OFF/SMART/(TIME)]\nAL3\n[MFDMP]\nThis section of manual is extremely important because the correct setting of the filters allows to obtain a proper\nresponse of the instrument to the measured flow rate and the specific requirements of use; as a general rule,\nconsider that, starting from Damping = OFF (no filter applied to the measure), successive values, introduce\nincreasing damping. The following diagrams show the instrument's response to changes in flow rate from 0 to\n100%, using the different settings of the damping function.\nThe SMART is an adaptive filter that adapts automatically to most of the processes (recommended value),\nmaking the response of the meter very ready to fast changes of flow and at the same time extremely precise\nand stable for slow variations. It may be convenient to use a constant damping filter time, where there is a\npulsating flow (for example generated by peristaltic pumps). With longer times you get a mean value stable,\nwhile with short times the measure will closely follow the flow pulses, but consequently more unstable. NOTE:\nIf the rechargeable battery is active, the damping could be set only in \"SMART\".\n.60\nExample with damping to OFF\n50\n40\n30\nFLOW RATE (%)\n20\n.10\nFLOWRATE\nJN\nFILTERS\nDamping = OFF\nOUT\nMEASURE\nDamping function(OFF). the meter follows the\ntrend of fast changes in flow.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n.0\n0\n2 4 6\n8\n10\n12\n14 16 18 20 22\nTIME (Sec)\n60\n50\n40\n30\nFLOW RATE (%)\n20\n.10\n.0\nExample with damping to 5,0sec.\nFLOWRATE\nFILTERS\nIN\nDamping= from 0.2s to 1000s\nOUT\nMEASURE\nDamping mode based on time (fro 0.2s to\n1000s) The measure is averaged over a number\nof samples determined by the value assigned\nto the dampening function. When the damping\nparameter is expressed in seconds, the filter\nworks damping the measurement noise and\nsudden change of flow rate. Increasing the\nparameter of damping increases the stability of\nthe measurement.\n0\n2\n4\n6\n8\n10 12\n14\nTIME (Sec)\n16 18\n20\n22\nISOIL\nINDUSTRIA\n40 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "ISOMAG\n(POS. 4.2) Cut-off threshold\n[Cut-off=% xxx]\nAL3\n[MFCUT]\nSetting the low flow cutoff threshold. This function is useful to avoid that flows close to zero, due to the\nelectrical noises from tiny movements of liquid (due for example to vibrations of the pipe) which cause an\nincreasing of the totalizers. The allowed range for this function is 0-25% of full scale set. For most applications\na value between 0.5 and 1% is recommended.\n(POS. 4.3) Calibration verify\n[Cal.verify=ON]\nAL3\n[ACAVE]\nThis function enables an automatic verification of board's coefficients. As the converter performs\ncontinuously a large number of tests, we recommend to use this function only in presence of wide\nrange of temperature. Instead it is NOT recommended to use it when the instrument is used in\nmetering applications (batch).\n(POS. 4.4) Automatic scale change enable\n[Autorange=ON/OFF]\nAL3\n[ARNGE]\nEnables the automatic change of scale. The meter may have two different working ranges in order to\nsuit to the variable process conditions. In order to get the best results out of this function it is important\nrange N.2 (Fs2) if enabled is bigger than N.1 (Fs1). When the flow rate increases and reaches the 100%\nof the full scale 1, then the meter automatically switches to scale 2. When the flow rate decreases again\nreaching a value on scale 2 equal to the 90% of full scale N.1, then the active scale is 1 again. Allowed\nvalues for this parameter: ON/OFF.\nNotice: when the autorange is enabled, is not allow to use the manual range change (POS. 6.6 see\npage 28 ).\nThis function does NOT increase the accuracy of the measure; its aim is to increase the resolution of 4/20 mA\nwhen the meter work at very low flow rates (typical case the flow rate of water distribution with daytime flow\nmuch higher than the night flow). N.B: this function is disabled if the batching function is active\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 4.5) High immunity INPUTS\n[H.imm. inp.]\nAL4\n[HIINP]\nThe HIINP function (INPut High Immunity filter) introduces a hardware filter to be used ONLY IN CASE\nOF ABSOLUTE NECESSITY, when the measure is absolutely unstable or it is NOT possible to make the\nmeasure, and every possible attempt to reduce or eliminate the noise do not give a positive result, with\nparticular attention of instrument ground connection. When this function is activated (HIINP = ON) the\nmeasure will be influenced by an unavoidable error estimated around 1%.\nMENU 4 - MEASURE: ONLY MCP FUNCTIONS\nMeasure Filter Cut-off Threshold 2\n[MCP ONLY]\nAL3\n[MFCT2]\nSetting the low flow cutoff threshold, it is similar to the function in 4.2. The value of this function is\nNOT visible on diplay but only with MCP command.\nDynamic sample analysis\n[MCP ONLY]\nAL4\n[DYNSA]\nReserved to the service\nDynamic sample time\n[MCP ONLY]\nAL4\n[DYNST]\nReserved to the service\n41 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Measure Filter Cut-off Threshold 2",
+            "[MCP ONLY]",
+            "AL3",
+            "[MFCT2]"
+          ],
+          [
+            "Setting the low flow cutoff threshold, it is similar to the function in 4.2.\nNOT visible on diplay but only with MCP command.",
+            "The value of this function is"
+          ]
+        ],
+        [
+          [
+            "Dynamic sample analysis",
+            "[MCP ONLY]",
+            "AL4",
+            "[DYNSA]"
+          ],
+          [
+            "Reserved to the service",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Dynamic sample time",
+            "[MCP ONLY]",
+            "AL4",
+            "[DYNST]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "ISOMAG\nMENU 5 - ALARMS\n(POS. 5.1) Maximum direct flow rate threshold\n[Max+=XXXXX]\nAL3 [FRAXP]\nMaximum value alarm set for direct flow rate set (expressed in technical units). When the flow rate\nvalue exceeds such a threshold, then an alarm message is generated. Setting this parameter to zero\ndisables the alarm generation.\n(POS. 5.2) Maximum reverse flow rate threshold\n[Max -= xxxxx]\nAL3 [FRAXN]\nMaximum value alarm set for reverse flow rate set (expressed in technical units). When the flow rate\nvalue exceeds such a threshold, then an alarm message is generated. Setting this parameter to zero\ndisables the alarm generation.\n(POS. 5.3) Minimum direct flow rate threshold\n[Min+=XXXXX]\nAL3 [FRANP]\nMinimum value alarm set for reverse flow rate set (expressed in technical units). When the flow rate\nvalue falls below such a threshold, then an alarm message is generated. Setting this parameter to zero\ndisables the alarm generation.\n(POS. 5.4) Minimum reverse flow rate threshold\n[Min -= xxxxx]\nAL3 [FRANN]\nMinimum value alarm set for reverse flow rate set (expressed in technical units). When the flow rate\nvalue falls below such a threshold, then an alarm message is generated. Setting this parameter to zero\ndisables the alarm generation.\n(POS. 5.5) Hysteresis\n[Hysteresis=% XX]\nAL3 [ATHYS]\nHysteresis threshold set for the minimum and maximum flow rate alarms. The value of this parameter\nis expressed as percentage of the full scale value and may be set from 0 to 25%.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 5.6) Current output value in case of failure [mA V.alarm =% XXX]\nAL3 [OCACV]\nThe output current signal can be specified by the user in case of failure of either, empty pipe, coils\ninterrupted, or ADC error. The signal current is set as a percentage (0 to 125%) of the 0/4-20mA current.\n125% corresponds to 24mA and does not depend on the selected range (0-20/4-20mA).\nThe NAMUR NE43 recommendation asks for a alarms signalling value for the current output lower than\n3.6mA (<18%) or bigger than 21mA (>105%). It would then be preferable to set the value of this\nfunction at the 10%, so that the current value in case of the a.m. cases would be 2 mA, allowing the\nfollowing diagnostics:\ncurrent < 2mA - 5%: line interrupted, power supply failure or faulty converter;\n2mA -5% * current * 2mA + 5%: hardware alarm;\n4mA * current * 20mA: normal working range;\n20mA < current * 22mA: out of range, measure above 100% f.s.\n(POS. 5.7) Frequency output value in case of failure\n[Hz V.alarm=%Xxx]\nAL3 [OFACV]\nThis function is active with POS. 7.1 see page 29 and POS. 7.2 see page 29 enable to ( FREQ.+, FREQ .- ,\nFREQ.+) To set the frequency value assigned to the on/off output in one or more of the following failure cases:\nEmpty pipe; Coils interrupted ; ADC error. Allowable range is from 0 to 125% of the frequency\nfull scale value. Although there are no specific rules regulating cases such as these, it would be\nconvenient to use the failure information as follows:\n0% Hz * frequency * 100% f.s .: normal working range;\n100% f.s. < frequency * 210% f.s .: overflow, measure above the 100% of the f.s .;\n115% f.s. * frequency * 125% f.s .: hardware alarm condition.\nISOIL\n42 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "(POS. 5.5) Hysteresis",
+            "[Hysteresis=% XX]",
+            "AL3",
+            "[ATHYS]"
+          ],
+          [
+            "Hysteresis threshold set for the minimum and maximum flow rate alarms. The value\nis expressed as percentage of the full scale value and may be set from 0 to 25%.",
+            "of this parameter"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "ISOMAG\nMENU 6 - INPUTS\nWARNING!\nTHIS MENU IS NOT ENABLED WHEN THE BATCHING FUNCTION IS ACTIVE.\n(POS.6.1-2) T.direct(pos.)flowtot. /part reset enable\n[T/P+/RESET=ON/OFF] AL3 [VTTPE] [VTPPE]\nWhen one of this function is enabled, the related totalizer + may be reset through the on/off input.\n(POS.6.3-4) T.rev. (neg)flowtot. /part reset enable\n[T/P-/RESET=ON/OFF] AL3 [VTTNE] [VTPNE]\nWhen one of this function is enabled, the related totalizer - may be reset through the on/off input.\n(POS. 6.5) Totalizers counting lock command [COUNT LOCK= ON/OFF] AL3\n[TCLIE]\nTotalizers counting lock command enable. When this function is active, applying a voltage on the on/\noff input terminals the system stops the totalizers no matter which is the flow rate.\n(POS. 6.6) Measure zero lock input enable [Meas.lock=ON/OFF]\nAL3\n[MSLIE]\nWhen this function is active (ON), applying a voltage on the on input terminals, the measurement is\nstopped, the meter will display zero flow.\n(POS. 6.7) Calibration Func. input enable [Calibration=ON/OFF] AL3\n[CALIE]\nWhen this function is active, applying a voltage on the on/off input terminals the meter performs a\nautozero calibration cycle. ATTENTION: If the voltage pulse is less than 1 sec., the meter performs a\ncalibration cycle to compensate possible thermal drifts. If the voltage pulse is more 1 sec, the meter\nperforms a zero calibration measure. To perform the calibration it is absolutely necessary for the sensor\nto be full of liquid and that the liquid is perfectly still. Even very small movement of the liquid may affect\nthe result of the calibration, and, consequently, the accuracy of the system.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 6.8) Flow rate range change inp. [RANGECHANGE=ON/OFF] AL3\n[SRCIE]\nRange change external command enable. When this function is enabled, applying a voltage on the on/\noff input terminals the meter switches to the second measuring range (Fs2).\nN.B .: the autorange doesn't allow to use the manual range change see (POS. 4.4 see page 28).\n43 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "ISOMAG\nMENU 7 - OUTPUTS\n(POS. 7.1) Output 1 function selection\n[Out1=xxxxxx]\nAL3 [OUT1F]\nFunction choice corresponding to digital Output 1. The functions are listed in the table below.\n(POS. 7.2) Output 2 function selection\n[Out2=xxxxxx]\nAL3 [OUT2F]\nFunction choice corresponding to digital Output 2. The functions are listed in the table below.\nFUNCTIONS FOR OUTPUTS 1 AND 2\nOFF: DISABLE\nMAX AL. +: MAX DIRECT FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nMIN AL. +: MIN DIRECT FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nMAX/MIN+/ -: MAX/MIN DIRECT FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nMAX AL .-: MAX INVERSE FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nMIN AL .-: MIN INVERSE FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nMAX/MIN -: MAX/MIN INVERSE FLOW RATE OUTPUT (ENERGIZED = AL. OFF)\nP.EMPTY: EMPTY PIPE ALLARM OUTPUT (ENERGIZED = AL. OFF)\nHARDWARE AL .: SUM OF ALL ALARMS \"energized interrupted \" AND \"error input signal \"\nOVERFLOW: OUT OF RANGE ALLARM OUTPUT (ENERGIZED = FLOWRATE OK)\nALL ALARMS: SUM OF ALL ALARMS POSSIBLE\nEXT. COMM: OUTPUT MAY TAKE A STATE DEPENDENT ON AN EXTERNAL CONTROL REMOTELY VIA\nMCP\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nFLOW RATE SIGN .: FLOW DIRECTION (ENERGIZED WHEN FLOW IS NEGATIVE)\nSCALE: INDICATION SCALE\nFREQ.+: FREQUENCY POSITIVE FLOWRATE\nFREQ .-: FREQUENCY NEGATIVE FLOWRATE\nFREQ.+/ -: FREQUENCY POSITIVE/NEGATIVE FLOWRATE\nPULSES.+: PULSE POSITIVE FLOW RATE\nPULSES .-: PULSE NEGATIVE FLOW RATE\nPULSES+/ -: PULSE NEGATIVE/POSITIVE FLOW RATE\nBATCHING: IT'S POSSIBLE TO SET A QUANTITY OF VOLUME THAT HAVE TO BE DELIVERED\nDURING AN ACTUATOR (VALVE) OPENING-CLOSING CYCLE\nISOIL\nINDUSTRIA\n44 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "ISOMAG\nBATCHING\nThrough this function, it's possible to set the volume quantity that must be delivered, managing the\nopening and the closing of the valve.\nTo activate it, follow these instructions:\nOUTPUTS\nout1=\nBATCHING\nOFF\nOut MA1=4_22 +/-\nOut MA2=4_22 -0+\nA1S=dm3 /s 5. 0000\nA2S=dr3 /s 5. 0000\nt 1 function selectio\n1.\nEnter to the main menu;\n2.\nSelect Output menu;\n3.\nSet the Out1 function on \"BATCHING\"\nWith batching activated, the display visualizes one main page:\nPredetermined quantity\nQuantity actually delivered\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n4.0632\n7. 00005\n4.06323\nSET\ndm3\nQTY\n2\nA\nAlarms\nBatching in progress\nThe batching parameters settings can be customized according to what the instrument use and\napplication is thought to.\nFUNCTION\nFUNCTION Nº POS.\nSETTING\nCut-off\n\"4.2\" pag28\nIt must be set so that the flow is stably zero\nwhen the valve is closed\nDamping\n\"4.1\" pag28\nIt must be set on the minimum value\nallowed.\nIf T batching ≤ 1s, filters must be disabled\n45 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "FUNCTION",
+            "FUNCTION Nº POS.",
+            "SETTING"
+          ],
+          [
+            "Cut-off",
+            "\"4.2\" pag28",
+            "It must be set so that the flow is stably zero when the valve is closed"
+          ],
+          [
+            "Damping",
+            "\"4.1\" pag28",
+            "It must be set on the minimum value allowed. If T batching ≤ 1s, filters must be disabled"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "BATCHING QUANTITY SETTINGS:\nBy display\nBy MCP command\nBy ModBus interface\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nBATCHING OPERATIONS:\nEnter to the 3. Scale\nmenu;\nSet the B.qty (batching\nquantity) value\n\"BTQTY?\"\nThrough this command it\ncan be set both the unit\nmeasure or the quantity\n(see MCP manual)\nUsing the ModBus\ncommand 16 (see\nMODbus manual)\nISOMAG\nSCALES\nFS1=dM3 /s 5.0000\nB. qtydm=1. 00000\nBatching quantity\nVALUES:\n0:'ml'| 1:'cm3'|2:''|3:'dm3'|4:'dal'|5:'hl'\n|6:'m3'|7:'MI',0.00001 <> 99999.9\nACTION:\nOPERATION:\nNOTES:\nStart/stop by display\nPress \"UP\" key on the keyboard\nWhen the batching process is\nmanually stopped, the OUT1\nfunction is disabled and the\nbatching cycle is interrupted with\nthe valve closing.\nEvery time the batching cycle\nstarts, the set quantity counter\nand the alarms are reset.\nStart/stop by MCP\nType MCP command \"BTACT\"\nStart/stop by ingresso\nExternal signal connected to digital\ninput 1.\nN.B: The signal must be a pulse and its\nduration must be greater than the time of the\nmeasurement cycle.\nSee \"DIGITAL INPUT ON/OFF OPERATION\" page\n15\nStart/stop by ModBus\nSend the MODbus command 5 (see\nMODbus manual)\nVisualize batching\nstatus by display\nBatching in progress symbol on\nthe display\nVisualize batching\nstatus by MCP\nType the MCP command \"BTACT?\"\nIf = 0 the actuator is closed\nIf = 1 the actuator is open (batching\nin progress)\nISOIL\n46 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "ACTION:",
+            "OPERATION:",
+            "NOTES:"
+          ],
+          [
+            "Start/stop by display",
+            "Press \"UP\" key on the keyboard",
+            "When the batching process is manually stopped, the OUT1 function is disabled and the batching cycle is interrupted with the valve closing. Every time the batching cycle starts, the set quantity counter and the alarms are reset."
+          ],
+          [
+            "Start/stop by MCP",
+            "Type MCP command \"BTACT\""
+          ],
+          [
+            "Start/stop by ingresso",
+            "External signal connected to digital input 1. N.B: The signal must be a pulse and its duration must be greater than the time of the measurement cycle. See \"DIGITAL INPUT ON/OFF OPERATION\" page 15"
+          ],
+          [
+            "Start/stop by ModBus",
+            "Send the MODbus command 5 (see MODbus manual)"
+          ],
+          [
+            "Visualize batching status by display",
+            "Batching in progress symbol on the display :selected:",
+            ""
+          ],
+          [
+            "Visualize batching status by MCP",
+            "Type the MCP command \"BTACT?\" If = 0 the actuator is closed If = 1 the actuator is open (batching in progress)",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "ISOMAG\nThe batching process automatically stops the valve when the batching quantity reaches the set value.\nIf the delivered volume doesn't match to the required one, It is necessary to notice empirically the\nvalue to set. In this way It is possible to compensate any \"delays\" in the process after the stop signal.\nEXAMPLE WITH DELIVERED VOLUME = 1 dm3\nCOMPANSATED BATCHING\nDelivered volume\nSet volume\nNOT COMPASATED BATCHING\n/$0.1328\nSET am3\n1.00000\nQTYam3\n1.30000\nNO ALARMS\nDelivered volume\nSet volume\nam3\n/$0.1328\nSEI am3\n0.70000\nQTY am3\n1.00000\nNO ALARMS\n11\n11\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n11\nSTOP\nSTART\n47 / 85\n0.3 dm3\nClosing valve\nTime\n0.3 dm3\nSTOP\nClosing valve\nTime\n1 dm3\n0.7 dm3\nSTART\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "ISOMAG\nBATCHING ALARMS\nNAME\nDESCRIPTION\nNOTES\nBatching time-out\nIt activates after 4 seconds from the\nstart command, when any flow is\ndetected\nWhen alarms activate the actuator\nclose automatically\nBoth alarms can be visualized\nremotely, setting the usc2\nfunction on \"HARD W. AL\" or \"ALL\nALARMS\"\nOverflow\nIt activates when the batching\nquantity is more than 20% of the set\none.\nVisualize alarms via display:\nThe presence of a dosage alarm is highlighted by the message: \"ALARM\"\nVisualize alarms via MCP:\nBatching page: The presence of a batching alarm is highlighted by the message: \"ALARM\"\nAlarms page: The presence of a batching alarm is highlighted by the message: \"BATCHING ERR.\"\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nATTENTION !!\nDISABLED FUNCTIONS WHEN BATCHING IS ACTIVATED\n\"1.19\" pag27\n\"4.3\" pag28\n\"4.4\" pag28\n\"9.7\" pag29\n\"9.8\" pag29\n\"9.9\" pag29\n\"12.3\" pag30\n(POS. 7.3-4) Current output option and range [Out mA1/2=X_XX XXX] AL3 [AO1CF] [AO2CF]\nThis function sets the current output 1 and 2. This function is optional and will not appear unless the\noption has been requested. There are three fields to modify for this function:\nScale zero: 4 or 0mA\nFull scale: 20 or 22mA\nField: + = positive, - = negative, blank = both, -0+ = central zero scale\nThe values corresponding to the scale points are shown in the following chart:\nISOIL\nINDUSTRIA\n48 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "NAME",
+            "DESCRIPTION",
+            "NOTES"
+          ],
+          [
+            "Batching time-out",
+            "It activates after 4 seconds from the start command, when any flow is detected",
+            "When alarms activate the actuator close automatically Both alarms can be visualized remotely, setting the usc2 function on \"HARD W. AL\" or \"ALL ALARMS\""
+          ],
+          [
+            "Overflow",
+            "It activates when the batching quantity is more than 20% of the set one."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "ISOMAG\nCURRENT VALUES IN mA ASSOCIATE TO THE % FULL SCALE VALUE\nPOSSIBLE FIELD\nREVERSE FLOW\nVALUE\nZERO\nDIRECT FLOW VALUE\n≤-210%\n-100%\n0%\n+100%\n≥+210%\nOut.mA = 0 + 20 +\n0\n0\n0\n20\n20\nOut.mA = 0 + 22 +\n0\n0\n0\n20\n22\nOut.mA = 4 + 20 +\n4\n4\n4\n20\n20\n*Out.mA = 4 + 22 +\n4\n4\n4\n20\n21.6\nOut.mA = 0 + 20 -\n20\n20\n0\n0\n0\nOut.mA = 0 + 22 -\n22\n20\n0\n0\n0\nOut.mA = 4 + 20 -\n20\n20\n4\n4\n4\nOut.mA = 4 + 22 -\n21.6\n20\n4\n4\n4\nOut.mA = 0 + 20\n20\n20\n0\n20\n20\nOut.mA = 0 + 22\n22\n20\n0\n20\n22\nOut.mA = 4 + 20\n20\n20\n4\n20\n20\nOut.mA = 4 + 22\n21.6\n20\n4\n20\n21.6\nOut.mA = 0 + 20 -0+\n0\n0\n10\n20\n20\nOut.mA = 0 + 22 -0+\n0\n1\n11\n21\n22\n** Out.mA = 4 + 20-0+\n4\n4\n12\n20\n20\nOut.mA = 4 + 22 -0+\n2\n4\n12\n20\n22\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nIn hardware alarm conditions \"HARDW AL.\" (interrupted coils, empty pipe, measure error) the current\nvalue is programmed by the function \"mA v.fault\" (pos. 5.6) and it is expressed as percentage of a fixed\ncurrent range, where: 0% = 0mA and 210% = 22mA.\n* Example 1: out 4-22 +\nExample 2: out 4-20 -0+\nJ (mA)\n22 mA -\nJ (mA) !\n20 mA\n1\n1\n20 mA\n-\n.12 mA\n1\n1\n1\n1\n1\n.4 mA\n1\n_4 mA\n1\n1\n1\n-110% F.S. - 100% F.S.\nzero\n+100% F.S. +112.5% F.S.\n-110% F.S. - 100% F.S.\n+100% F.S. +110% F.S.\nzero\n(POS. 7.5) Analog Output1 full scale\n[A1S= dm/s x.xxxx]\nAL3 [AO1FS]\nIt allows to set the full scale value for analog output 1 independently from the main scale of the\ninstrument.\n(POS. 7.6) Analog Output2 full scale\n[A2S= dm/s x.xxxx]\nAL3 [AO2FS]\nIt allows to set the full scale value for analog output 2 independently from the main scale of the\ninstrument.\n49 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "POSSIBLE FIELD",
+            "REVERSE FLOW VALUE",
+            "ZERO",
+            "DIRECT FLOW VALUE"
+          ],
+          [
+            "",
+            "≤-210%",
+            "-100%",
+            "0%",
+            "+100%",
+            "≥+210%"
+          ],
+          [
+            "Out.mA = 0 + 20 +",
+            "0",
+            "0",
+            "0",
+            "20",
+            "20"
+          ],
+          [
+            "Out.mA = 0 + 22 +",
+            "0",
+            "0",
+            "0",
+            "20",
+            "22"
+          ],
+          [
+            "Out.mA = 4 + 20 +",
+            "4",
+            "4",
+            "4",
+            "20",
+            "20"
+          ],
+          [
+            "*Out.mA = 4 + 22 +",
+            "4",
+            "4",
+            "4",
+            "20",
+            "21.6"
+          ],
+          [
+            "Out.mA = 0 + 20 -",
+            "20",
+            "20",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Out.mA = 0 + 22 -",
+            "22",
+            "20",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "Out.mA = 4 + 20 -",
+            "20",
+            "20",
+            "4",
+            "4",
+            "4"
+          ],
+          [
+            "Out.mA = 4 + 22 -",
+            "21.6",
+            "20",
+            "4",
+            "4",
+            "4"
+          ],
+          [
+            "Out.mA = 0 + 20",
+            "20",
+            "20",
+            "0",
+            "20",
+            "20"
+          ],
+          [
+            "Out.mA = 0 + 22",
+            "22",
+            "20",
+            "0",
+            "20",
+            "22"
+          ],
+          [
+            "Out.mA = 4 + 20",
+            "20",
+            "20",
+            "4",
+            "20",
+            "20"
+          ],
+          [
+            "Out.mA = 4 + 22",
+            "21.6",
+            "20",
+            "4",
+            "20",
+            "21.6"
+          ],
+          [
+            "Out.mA = 0 + 20 -0+",
+            "0",
+            "0",
+            "10",
+            "20",
+            "20"
+          ],
+          [
+            "Out.mA = 0 + 22 -0+",
+            "0",
+            "1",
+            "11",
+            "21",
+            "22"
+          ],
+          [
+            "** Out.mA = 4 + 20-0+",
+            "4",
+            "4",
+            "12",
+            "20",
+            "20"
+          ],
+          [
+            "Out.mA = 4 + 22 -0+",
+            "2",
+            "4",
+            "12",
+            "20",
+            "22"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "ISOMAG\nMENU 8 - COMMUNICATION\n(POS. 8.1) Hart Preamble\n[HART pr .= xxxxxx]\nAL3\n[HARTP]\nNumber of preamble (Hart function)\n(POS. 8.2) Hart O.C\n[HART O.C=ON/OFF]\nAL3\n[HRTOC]\nHart bus output control 4-20mA.\nHART\nREGISTERED\n(POS. 8.3) Device Address\n[Dev. Addr=XXXXXX]\nAL3\n[DVADD]\nDevice communication address number.\n(POS. 8.4) Modbus Speed\n[Speed=XXXXXX]\nAL3\n[MDBSP]\nModbus link speed.\n(POS. 8.5) Modbus Parity\n[Parity=XXXXXX]\nAL3\n[MDBPA]\nModbus link parity.\n(POS. 8.6) Modbus Delay\n[Delay=XXXXXX]\nAL3\n[MDBDL]\nModbus replay delay.\n(POS. 8.7) Modbus chars Timeout\n[C. timeout=X]\nAL3\n[MDBCT]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nMaximun delay between chars (frames).\nMV210 MODBUS PROTOCOL\nRS485 HARDWARE CONNECTION\nFor the hardware connection see the relative section in this manual and MODBUS manual.\nDATA WORD FORMAT\nThe data bytes travelling in serial form on the communication line are enclosed in words which have a fixed\nlength of 10 bits:\n1 START BIT\n8 DATA BITS = 1 DATA BYTE\n1 STOP BIT\nEach word contains one byte of data plus additional bits which serve to synchronies and make the\ncommunication safer. These extra bits added automatically in the transmission phase by the transmitter\nintegrated circuit. In the reception phase, the reverse operation is executed by the receiver integrated circuit:\nthe eight data bits are extracted and the others eliminated. These operation are executed entirely on a hardware\nlevel. The 8 data bits must be serialised staring from bit 0 (the least significant one).\nCOMMUNICATION SPEED\nThe millennium series instruments have 4 communication speeds:\n4800 bps\n9600 bps\n19200 bps\n38400 bps\n50 / 85\nISOIL\nINDUSTRIA\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 8.1) Hart Preamble",
+            "[HART pr .= xxxxxx]",
+            "AL3",
+            "[HARTP]"
+          ],
+          [
+            "Number of preamble (Hart function)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.2) Hart O.C",
+            "[HART O.C=ON/OFF]",
+            "AL3",
+            "[HRTOC]"
+          ],
+          [
+            "Hart bus output control 4-20mA. HART REGISTERED",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.3) Device Address",
+            "[Dev. Addr=XXXXXX]",
+            "AL3",
+            "[DVADD]"
+          ],
+          [
+            "Device communication address number.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.4) Modbus Speed",
+            "[Speed=XXXXXX]",
+            "AL3",
+            "[MDBSP]"
+          ],
+          [
+            "Modbus link speed.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.5) Modbus Parity",
+            "[Parity=XXXXXX]",
+            "AL3",
+            "[MDBPA]"
+          ],
+          [
+            "Modbus link parity.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.6) Modbus Delay",
+            "[Delay=XXXXXX]",
+            "AL3",
+            "[MDBDL]"
+          ],
+          [
+            "Modbus replay delay.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 8.7) Modbus chars Timeout",
+            "[C. timeout=X]",
+            "AL3",
+            "[MDBCT]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "ISOMAG\nSERIAL PORT SETTINGS\nSerial port setting:\nData bits: 8\nParity: Manu < 7-Comunication >, function - < Parity >\nStop bits: 1\nFlow control: none (no control lines no xon/xoff characters used)\nGENERAL DESCRIPTION\nAll data are sent in group of 16 bits registers. The format used is BIG ENDIAN, MSB byte is sent first, LSB is\nsent last. When a variable is more than 16 bits in size, it uses two adjacent registers. The totalizer values are\nexpressed as integer numbers. For the correct representation of the value in case there is a fractional part, the\ndecimal dot must be placed in the position specified by the next variable register following the totalized value.\nAll values relative to the flow rate are averaged. The number of samples that compose the average value varies\ndepending on the measure sample rate and the MODBUS reading requests. Example: measure sample rate = 50\nHz, MODBUS reading frequency = 10 Hz, Number of samples used for average calculation = 50/10 = 5.\nRead process variable : COMMAND 04.\nADDRESS\nSIZE\nTYPE OF DATA\nMEANING\n0000-0001\n2 REGISTERS 32 BITS\nFLOAT\nfull scale flow rate in the unit of measure chosen (as can be seen in the display of the instrument)\n0002-0003\n2 REGISTERS 32 BIT\nFLOAT\nflow rate value in percentage\n0004-0005\n2 REGISTERS 32 BITS\nFLOAT\nflow rate value in the unit of measure chosen\n0006-0007\n2 REGISTERS 32 BITS\nFLOAT\nFlow speed in the unit of measure chosen (m/s or ft/s)\n0008-0009\n2 REGISTERS 32 BITS\nUNSIGNED LONG\nTotalizer T+ value\n0010\n1 REGISTER 8+8 BITS\nTWO BYTES\nFirst byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places\n0011-0012\n2 REGISTERS 32 BITS\nUNSIGNED LONG\nTotalizer P+ value\n0013\n1 REGISTER 8+8 BITS\nTWO BYTES\nFirst byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places\n0014-0015\n2 REGISTERS 32 BITS\nUNSIGNED LONG\ntotalizer T- value\n0016\n1 REGISTER 8+8 BITS\nTWO BYTES\nFirst byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places\n0017-0018\n2 REGISTERS 32 BITS\nUNSIGNED LONG\nTotalizer P- value\n0019\n1 REGISTER 8+8 BITS\nTWO BYTES\nFirst byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places\n0020\n1 REGISTER 8+8 BITS\nTWO BYTES\nfirst byte (MSB): process flags 1, (LSB): process flags 2\n0021\n1 REGISTER 16 BITS\nUNSIGNED SHORT\nNumber of measure samples used for to calculate the latest read average value of flow rate\n0022\n1 REGISTER 16 BITS\nUNSIGNED SHORT\nEquivalent resistance measured between electrode E1 and the common point, in kilo ohm\n0023\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nequivalent resistance measured between electrode E2 and the common point, in kilo ohm\n0024\n1 REGISTER, 16 BITS\nSIGNED SHORT\nvoltage measured between electrode E1 and the common point, in millVolts\n0025\n1 REGISTER, 16 BITS\nSIGNED SHORT\nvoltage measured between electrode E2 and the common point, in millVolts\n0026\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nvoltage measured at rechargeable terminals, in milliVolts\n0027\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nresidual battery capacity in percentage\n0028\n1 REGISTER, 16 BITS\nSIGNED SHORT\nCPU temperature in the unit of measure chosen\n0029\n1 REGISTER, 16 BITS\nSIGNED SHORT\nBoard temperature T1 the unit of measure chosen\n0030\n1 REGISTER, 16 BITS\nSIGNED SHORT\nBoard temperature T2 the unit of measure chosen\n0031\n1 REGISTER, 16 BITS\nSIGNED SHORT\nFlow sensor coil's temperature the unit of measure chosen\n0032\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nlatest sensor test result code\n0033\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nnumber of alarms currently active\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nMeaning and value of the process flags 1 returned with the register 0020 (MSB):\n\nbit 7 (MSB): flow rate alarm MIN (flow rate below the minimum threshold set)\n\nbit 6: flow rate alarm MAX (flow rate over the maximum threshold set)\n\nbit 5: flow rate sign (1 = negative)\n\nbit 4: flow rate below the cut-off value\n\nbit 3: measure range active (0= range 1, 1= range 2)\n\nbit 2: flow rate measure reset value status (1= measure is forcibly reset to zero)\n\nbit 1: volume counters lock status (1= counters are locked)\n\nbit 0 (LSB) : internal use, no meaning\n51 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "ADDRESS",
+            "SIZE",
+            "TYPE OF DATA",
+            "MEANING"
+          ],
+          [
+            "0000-0001",
+            "2 REGISTERS 32 BITS",
+            "FLOAT",
+            "full scale flow rate in the unit of measure chosen (as can be seen in the display of the instrument)"
+          ],
+          [
+            "0002-0003",
+            "2 REGISTERS 32 BIT",
+            "FLOAT",
+            "flow rate value in percentage"
+          ],
+          [
+            "0004-0005",
+            "2 REGISTERS 32 BITS",
+            "FLOAT",
+            "flow rate value in the unit of measure chosen"
+          ],
+          [
+            "0006-0007",
+            "2 REGISTERS 32 BITS",
+            "FLOAT",
+            "Flow speed in the unit of measure chosen (m/s or ft/s)"
+          ],
+          [
+            "0008-0009",
+            "2 REGISTERS 32 BITS",
+            "UNSIGNED LONG",
+            "Totalizer T+ value"
+          ],
+          [
+            "0010",
+            "1 REGISTER 8+8 BITS",
+            "TWO BYTES",
+            "First byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places"
+          ],
+          [
+            "0011-0012",
+            "2 REGISTERS 32 BITS",
+            "UNSIGNED LONG",
+            "Totalizer P+ value"
+          ],
+          [
+            "0013",
+            "1 REGISTER 8+8 BITS",
+            "TWO BYTES",
+            "First byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places"
+          ],
+          [
+            "0014-0015",
+            "2 REGISTERS 32 BITS",
+            "UNSIGNED LONG",
+            "totalizer T- value"
+          ],
+          [
+            "0016",
+            "1 REGISTER 8+8 BITS",
+            "TWO BYTES",
+            "First byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places"
+          ],
+          [
+            "0017-0018",
+            "2 REGISTERS 32 BITS",
+            "UNSIGNED LONG",
+            "Totalizer P- value"
+          ],
+          [
+            "0019",
+            "1 REGISTER 8+8 BITS",
+            "TWO BYTES",
+            "First byte (MSB): number of overflows recorded, second byte (LSB): number of decimal places"
+          ],
+          [
+            "0020",
+            "1 REGISTER 8+8 BITS",
+            "TWO BYTES",
+            "first byte (MSB): process flags 1, (LSB): process flags 2"
+          ],
+          [
+            "0021",
+            "1 REGISTER 16 BITS",
+            "UNSIGNED SHORT",
+            "Number of measure samples used for to calculate the latest read average value of flow rate"
+          ],
+          [
+            "0022",
+            "1 REGISTER 16 BITS",
+            "UNSIGNED SHORT",
+            "Equivalent resistance measured between electrode E1 and the common point, in kilo ohm"
+          ],
+          [
+            "0023",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "equivalent resistance measured between electrode E2 and the common point, in kilo ohm"
+          ],
+          [
+            "0024",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "voltage measured between electrode E1 and the common point, in millVolts"
+          ],
+          [
+            "0025",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "voltage measured between electrode E2 and the common point, in millVolts"
+          ],
+          [
+            "0026",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "voltage measured at rechargeable terminals, in milliVolts"
+          ],
+          [
+            "0027",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "residual battery capacity in percentage"
+          ],
+          [
+            "0028",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "CPU temperature in the unit of measure chosen"
+          ],
+          [
+            "0029",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Board temperature T1 the unit of measure chosen"
+          ],
+          [
+            "0030",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Board temperature T2 the unit of measure chosen"
+          ],
+          [
+            "0031",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Flow sensor coil's temperature the unit of measure chosen"
+          ],
+          [
+            "0032",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "latest sensor test result code"
+          ],
+          [
+            "0033",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "number of alarms currently active"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "ISOMAG\nMeaning and value of the process flags 2 returned with the register 0020 (LSB):\n\nbit 7 (MSB): flow rate overflow (value greater than full scale)\n\nbit 6: pulse channel #2 overflow (frequency greater than maximum possible for the given parameters)\n\nbit 5: pulse channel #1 overflow (frequency greater than maximum possible for the given parameters)\n\nbit 4: measure signal amplitude out of A/D converter range\n\nbit 3: measure signal amplitude out of amplifier capability\n\nbit 2: input signal error (out of input chain capability)\n\nbit 1: coils excitation error\n\nbit 0 (LSB) : pipe empty\nMeaning and value of the sensor test flags returned with the register 0032:\n\nbit 15 (MSB): resistance at electrode E2 is outside the limits respect to the reference value\n\nbit 14 : resistance at electrode E1 is outside the limits respect to the reference value\n\nbit 13: coil time B is outside the limits respect to the reference value\n\nbit 12: coil time A is outside the limits respect to the reference value\n\nbit 11: coil temperature is outside the limits respect to the reference value\n\nbit 10: coil leakage current is outside the limit\n\n\nbit 09: coil driver output 2 voltage is out of tolerance during test phase 3\nbit 08: coil driver output 1 voltage is out of tolerance during test phase 3\n\nbit 07: coil driver output 2 voltage is out of tolerance during test phase 2\n\n\nbit 05: coil driver output 2 voltage is out of tolerance during test phase 1\n\nbit 04: coil driver output 1 voltage is out of tolerance during test phase 1\n\nbit 03: coil driver power generator voltage is out of tolerance during test phase 2\n\nbit 02: coil driver power generator voltage is out of tolerance during test phase 1\n\nbit 01: coil driver power generator value is out of tolerance during test phase 2\nbit 06: coil driver output 1 voltage is out of tolerance during test phase 2\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n\nbit 00 (LSB): coil driver power generator value is out of tolerance during test phase 1\nReset totalizers: COMMAND 05.\nADDRESS\nSIZE\nTYPE OF DATA\nCOMMAND VALUE\nMEANING\n0000\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\n0XFF00 (HEX)\nReset the enabled totalizers (same totalizer enabled for\nreset from digital input).\nDiagnostics: COMMAND 08.\nADDRESS\nSIZE\nTYPE OF DATA\nFUNCTION / VALUE\n0000\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn query data\n0001\n1 REGISTER, 16 BITS\nSIGNED SHORT\nRestart communication\n0004\n1 REGISTER, 16 BITS\nSIGNED SHORT\nActivate listen mode\n0010\n1 REGISTER, 16 BITS\nSIGNED SHORT\nClear counters and Diagnostic Register\nADDRESS\nSIZE\nTYPE OF DATA\nFUNCTION / VALUE\n0011\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Bus Message Count\n0012\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Bus Communication Error Count\n0013\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Bus Exception Error Count with CRC error\n0014\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Server Message Count\n0015\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Server No Response Count\n0016\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Server NAK Count\n0017\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Server Busy Count\n0018\n1 REGISTER, 16 BITS\nUNSIGNED SHORT\nReturn Bus Character Overrun Count\nISOIL\nINDUSTRIA\n52 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "ADDRESS",
+            "SIZE",
+            "TYPE OF DATA",
+            "COMMAND VALUE",
+            "MEANING"
+          ],
+          [
+            "0000",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "0XFF00 (HEX)",
+            "Reset the enabled totalizers (same totalizer enabled for reset from digital input)."
+          ]
+        ],
+        [
+          [
+            "ADDRESS",
+            "SIZE",
+            "TYPE OF DATA",
+            "FUNCTION / VALUE"
+          ],
+          [
+            "0000",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return query data"
+          ],
+          [
+            "0001",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Restart communication"
+          ],
+          [
+            "0004",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Activate listen mode"
+          ],
+          [
+            "0010",
+            "1 REGISTER, 16 BITS",
+            "SIGNED SHORT",
+            "Clear counters and Diagnostic Register"
+          ]
+        ],
+        [
+          [
+            "ADDRESS",
+            "SIZE",
+            "TYPE OF DATA",
+            "FUNCTION / VALUE"
+          ],
+          [
+            "0011",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Bus Message Count"
+          ],
+          [
+            "0012",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Bus Communication Error Count"
+          ],
+          [
+            "0013",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Bus Exception Error Count with CRC error"
+          ],
+          [
+            "0014",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Server Message Count"
+          ],
+          [
+            "0015",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Server No Response Count"
+          ],
+          [
+            "0016",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Server NAK Count"
+          ],
+          [
+            "0017",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Server Busy Count"
+          ],
+          [
+            "0018",
+            "1 REGISTER, 16 BITS",
+            "UNSIGNED SHORT",
+            "Return Bus Character Overrun Count"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "(POS. 9.1) Language for all msn\nMENU 9 - DISPLAY\n[Language= ITA/EN]\nAL1\n[LLANG]\nChoice of the language. There are 8 languages available: GB = English, IT = Italian, TR = Turkish,\nPL = Polish, DE = German, FR = French, PT = Portuguese, ES = Spanish.\nISOMAG\n(POS. 9.2) Display Contrast\n[Contrast=\nx]\nAL1\n[DCNTR]\nDisplay contrast set. The contrast can change according to the room temperature. The allowed range\nis from 0 to 9.\n(POS. 9.3) KeyBoard Timeout Time [Disp. time=s xxx]\nAL1\n[KBTMT]\nThis function set dispay/keyboard inactivity. The set values are from 020 to 255 second.\n(POS. 9.4) Display refresh Frequency\n[D.rate=Hz xx]\nAL1\n[DISRF]\nFrequency of the display data update. This parameter effects only the display layout and not the response\ntime of the meter itself. The possible choices are: 1/2/5/10 Hz.\n(POS. 9.5) Display function number\n[Disp.fn= x]\nAL2\n[DISFN]\nThis function sets the display of the page making it visible when you start the display. For each display\npage is associated with a number that corresponds to the position.\n(POS. 9.6) Display function lock\n[Disp.lock= x]\nAL2\n[DLOKE]\nThis function locks the scrolling of the display pages selected by the setting. POS. 9.5 see page 29\nfunction.\n(POS. 9.7) Partial totalizer\n[Part. tot=\nON]\nAL2\n[PTOTE]\nThis function enables the display of partial totalizer in visualization pages\n(POS. 9.8) Negative totalizer\n[Neg. tot= ON]\nAL2\n[NEGTE]\nThis function enables the display of negative totalizer in visualization pages\n(POS. 9.9) Net totalizer\n[Net. tot=\nON]\nAL2\n[NVTTE]\nThis function enables the display of net totalizer in visualization pages\n(POS. 9.10) Date and Time\n[Disp.Date= ON]\nAL2\n[DATDE]\nThis function enables the display of date and time in visualization pages\n(POS. 9.11) Quick start menu\n[Quick start= ON]\nAL2\n[QSTME]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nThis function enables the quick start menu.\n53 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 9.3) KeyBoard Timeout Time",
+            "[Disp. time=s",
+            "xxx] AL1",
+            "[KBTMT]"
+          ],
+          [
+            "This function set dispay/keyboard inactivity.",
+            "The set values",
+            "are from 020 to 255 second.",
+            ""
+          ]
+        ],
+        [
+          [
+            "(POS. 9.6) Display function lock",
+            "[Disp.lock=",
+            "x]",
+            "AL2",
+            "[DLOKE]"
+          ],
+          [
+            "This function locks the scrolling of the display\nfunction.",
+            "pages selected by the",
+            "setting. POS.",
+            "9.5 see page 29"
+          ],
+          [
+            "(POS. 9.7) Partial totalizer",
+            "[Part. tot=",
+            "ON]",
+            "AL2",
+            "[PTOTE]"
+          ],
+          [
+            "This function enables the display of partial totalizer in visualization pages",
+            "",
+            ""
+          ],
+          [
+            "(POS. 9.8) Negative totalizer",
+            "[Neg. tot=",
+            "ON]",
+            "AL2",
+            "[NEGTE]"
+          ],
+          [
+            "This function enables the display of negative totalizer in visualization pages",
+            ""
+          ],
+          [
+            "(POS. 9.9) Net totalizer",
+            "[Net. tot=",
+            "ON]",
+            "AL2",
+            "[NVTTE]"
+          ],
+          [
+            "This function enables the display of net totalizer in visualization pages",
+            "",
+            ""
+          ],
+          [
+            "(POS. 9.10) Date and Time",
+            "[Disp.Date=",
+            "ON]",
+            "AL2",
+            "[DATDE]"
+          ],
+          [
+            "This function enables the display of date and time in visualization pages",
+            "",
+            ""
+          ],
+          [
+            "(POS. 9.11) Quick start menu",
+            "[Quick start=",
+            "ON]",
+            "AL2",
+            "[QSTME]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "MENU 10 - DATA LOGGER\n(POS. 10.1) Data logger enable\nThis function enables data loger.\n[D.logger en= /OFF]\nAL3\n[DLOGE]\nISOMAG\nThe following functions are activated by [D.loger en= ON]\n(POS. 10.2) Unite of Measure\n[Meas. units= ON]\nAL3\n[DLUME]\nMeasure unit recording enable\n(POS. 10.3) Field separator character\n[Field separ .= ; ]\nAL3\n[DLFSC]\nThis function will set the separator character between data logger data.\n(POS. 10.4) Decimal Separator Char.\n[Decim.separ .= . ]\nAL3\n[DLDSC]\nThis function will set the separator character between data logger number value.\n(POS. 10.5) Sample Interval\n[Interv .= xx:xx:xx]\nAL3\n[DLGSI]\nSampling interval. This function set the log frequency. [Interv .= Hours : Minutes: Seconds]\n(POS. 10.6) Total direct totalizer\n[Log T+= ON]\nAL3\n[DTTPE]\nEnable logging of total direct totalizer.\n(POS. 10.7) Partial direct totalizer\n[Log P+= ON]\nAL3\n[DTPPE]\nEnable logging of partial direct totalizer.\n(POS. 10.8) Total reverse totalizer\n[Log T -= ON]\nAL3\n[DTTNE]\nEnable logging of total reverse totalizer\n(POS. 10.9) Partial reverse totalizer\n[Log P -= ON]\nAL3\n[DTPNE]\nEnable logging of partial reverse totalizer\n(POS. 10.10) Total Net totalizer\n[Log TN= ON]\nAL3\n[DLTNE]\nEnable logging of total net totalizer\n(POS. 10.11) Partial Net totalizer\n[Log PN= ON]\nAL3\n[DLPNE]\nEnable logging of partial net totalizer\n(POS. 10.12) Log Flow rate in measure unit\n[Log Q(UM)= ON]\nAL3\n[DFTUE]\nEnable logging of flow rate in measure unit\n(POS. 10.13) Log Flow rate in percentage\n[Log Q(%)= ON]\nAL3\n[DFPCE]\nEnable recording of the flow rate as a percentage of full scale value set.\n(POS. 10.14) Alarm events\n[Log AL.EV= ON]\nAL3\n[DALEE]\nEnable logging of alarm events\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nISOIL\n54 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "(POS. 10.2) Unite of Measure",
+            "[Meas. units= ON]",
+            "AL3",
+            "[DLUME]"
+          ],
+          [
+            "Measure unit recording enable",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.3) Field separator character",
+            "[Field separ .= ; ]",
+            "AL3",
+            "[DLFSC]"
+          ],
+          [
+            "This function will set the separator character between data logger data.",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.4) Decimal Separator Char.",
+            "[Decim.separ .= . ]",
+            "AL3",
+            "[DLDSC]"
+          ],
+          [
+            "This function will set the separator character between data logger number value.",
+            ""
+          ],
+          [
+            "(POS. 10.5) Sample Interval",
+            "[Interv .= xx:xx:xx]",
+            "AL3",
+            "[DLGSI]"
+          ],
+          [
+            "Sampling interval. This function set the log frequency. [Interv .= Hours : Minutes: Seconds]"
+          ],
+          [
+            "(POS. 10.6) Total direct totalizer",
+            "[Log T+= ON]",
+            "AL3",
+            "[DTTPE]"
+          ],
+          [
+            "Enable logging of total direct totalizer.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.7) Partial direct totalizer",
+            "[Log P+= ON]",
+            "AL3",
+            "[DTPPE]"
+          ],
+          [
+            "Enable logging of partial direct totalizer.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.8) Total reverse totalizer",
+            "[Log T -= ON]",
+            "AL3",
+            "[DTTNE]"
+          ],
+          [
+            "Enable logging of total reverse totalizer",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.9) Partial reverse totalizer",
+            "[Log P -= ON]",
+            "AL3",
+            "[DTPNE]"
+          ],
+          [
+            "Enable logging of partial reverse totalizer",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.10) Total Net totalizer",
+            "[Log TN= ON]",
+            "AL3",
+            "[DLTNE]"
+          ],
+          [
+            "Enable logging of total net totalizer",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.11) Partial Net totalizer",
+            "[Log PN= ON]",
+            "AL3",
+            "[DLPNE]"
+          ],
+          [
+            "Enable logging of partial net totalizer",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.12) Log Flow rate in measure unit",
+            "[Log Q(UM)= ON]",
+            "AL3",
+            "[DFTUE]"
+          ],
+          [
+            "Enable logging of flow rate in measure unit",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.13) Log Flow rate in percentage",
+            "[Log Q(%)= ON]",
+            "AL3",
+            "[DFPCE]"
+          ],
+          [
+            "Enable recording of the flow rate as a percentage of full scale value set.",
+            ""
+          ],
+          [
+            "(POS. 10.14) Alarm events",
+            "[Log AL.EV= ON]",
+            "AL3",
+            "[DALEE]"
+          ],
+          [
+            "Enable logging of alarm events",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "ISOMAG\n(POS. 10.15) Sensor test result\n[Log STR= ON]\nAL6\n[DSTRE]\nEnable logging of sensor test results\n(POS. 10.16) Board temperatures\n[Log BTS= ON]\nAL6\n[DBTSE]\nEnable logging of board temperature\n(POS. 10.17) Internal board voltages\n[Log IBV= ON]\nAL6\n[DIBVE]\nEnable logging of internal board voltage\n(POS. 10.18) Electrodes DC voltages\n[Log EDC= ON]\nAL6\n[DEDVE]\nEnable logging of electrodes DC voltage\n(POS. 10.19) Electrodes AC voltages\n[Log AEC= ON]\nAL6\n[DEAVE]\nEnable logging of electrodes AC voltage\n(POS. 10.20) Electrodessource impedance\n[Log EIZ= ON]\nAL6\n[DESIE]\nEnable logging of electrodes impedance\n(POS. 10.21) Sensor coils values\n[Log SCV= ON]\nAL6\n[DSCVE]\nEnable logging of sensor coils value\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nMENU 10- DATA LOGGER: ONLY MCP FUNCTIONS\nLoG All Information Enable\n[MCP ONLY]\nAL6\n[LGAIE]\nLog all events information. This function save in the event file all MCP commands.\n55 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 10.15) Sensor test result",
+            "[Log STR= ON]",
+            "AL6",
+            "[DSTRE]"
+          ],
+          [
+            "Enable logging of sensor test results",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.16) Board temperatures",
+            "[Log BTS= ON]",
+            "AL6",
+            "[DBTSE]"
+          ],
+          [
+            "Enable logging of board temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.17) Internal board voltages",
+            "[Log IBV= ON]",
+            "AL6",
+            "[DIBVE]"
+          ],
+          [
+            "Enable logging of internal board voltage",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.18) Electrodes DC voltages",
+            "[Log EDC= ON]",
+            "AL6",
+            "[DEDVE]"
+          ],
+          [
+            "Enable logging of electrodes DC voltage",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.19) Electrodes AC voltages",
+            "[Log AEC= ON]",
+            "AL6",
+            "[DEAVE]"
+          ],
+          [
+            "Enable logging of electrodes AC voltage",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.20) Electrodessource impedance",
+            "[Log EIZ= ON]",
+            "AL6",
+            "[DESIE]"
+          ],
+          [
+            "Enable logging of electrodes impedance",
+            "",
+            ""
+          ],
+          [
+            "(POS. 10.21) Sensor coils values",
+            "[Log SCV= ON]",
+            "AL6",
+            "[DSCVE]"
+          ],
+          [
+            "Enable logging of sensor coils value",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "LoG All Information Enable [MCP ONLY]",
+            "AL6",
+            "[LGAIE]"
+          ],
+          [
+            "Log all events information. This function save in the event file all MCP commands.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "USING DATA LOGGER BY MCP INTERFACE\nISOMAG\nData are stored on micro SD card; the organization is based on \"tree-structure\": the system\ncreate a daily folder where it save events and data logger . The data can be downloaded by MCP interface.\nMCP INTERFACE\nMcpPro - 1.0.0.162\nConnessione\nOpzioni\nVisualizza\nVista\nTools\nAccesso\nLingua\n?\nLista funzioni:\nMenu:\nData logger\n3- [Data LOGger Enable]\n1-0 [Data logger sampling enable]\n. DLOGE? : 1:'ON'\n. DLOGE =? : 0:'OFF'|1:'ON\"\n· DLOGE-\n340 cmds\n100.\n75\n50\n25\n-\nx\n[ 0.276\n[Data Logger Units of Measure Enable]\n[Data Logger Field Separator Character]\n[Data Logger Decimal Separator Character]\n[Data LoGger Sample Interval]\n[Data logger Totalizer Total Positive Enable]\n[Data logger Totalizer Partial Positive Enable]\n[Data logger Totalizer Total Negative Enable]\n[Data logger Totalizer Partial Negative Enable]\n[Data Logger totalizer Total Net Enable]\n[Data Logger totalizer Partial Net Enable]\n[Data logger Flow rate in Technical Units Enable]\n[Data logger Flow rate in PerCentage Enable]\n[Data logger ALarm Events Enable]\n[Data logger Additional Measures Enable]\n[Data logger Sensor Tel [Board temperatures logging\nM/S\nE1\nV\n-0.000E1R ků\nE2\n+0.039\nM3 /h\n-0.000E2R k^\nConsole Mcp:\n[nº:1]: 23 b\nMCP>\n6 ALARM(S)\nCPU1 RESTART\nCLOCK1 NOT SET\nAINI ERROR\nAIN2 ERROR\nT+M3\n63.9718\n2000/01/09-10:32:12\nA\nDatalogger Log\nFile Config.\nUSB\nDiagnostic\nDownload settings:\nData source:\nQuando:\nOggi:\nEventi\nOgg\nUltmo\nTutto\n)Datalogger\nVerifica Sensore\nFile generico\n)Range data\nPath save:\nc:\\M5data\\\nSelect\nSD memory:\nDownload\nO .\nStop\nUpload\n×\n0\nMV255\nV.1.00.0000.0000 Jul 31 2018 11:58:31 SN:213813\nTipo Conn:USB\n. COM4 . CONNESSO\n· PPP\n+0,44\n10.1\n10.1\nIP dispositivo: 10. 11. 12. 13\nApri cartella\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nClick tab-control data logger to view files.\nThe sampling data backup depends on the value set by the POS function 10.4 page 25.\nB\nC\nDiagnostic Debug RAS\nE\nF\nFile Config.\nDatalogger\nLog\nUSB\nHandles\nDownload settings:\nData source:\nEventi\nDatalogger\nVerifica Sensore\nFile generico\nSD memory:\nQuando:\nOggi\nDownload\nOggi:\nUltmo\nTutto\nRange data\nPath save:\nc:\\M5data\\\nSelect\nO ...\nA\nD\n0\nStop\n×\nA=Data source\nEvents: Save the file system events (Example F-RAM hardware data [WORKING AREA] [SUCCESSFULLY LOADED])\nData logger: Save files of the enabled data logger function.\nSensor Verify: data logged by BIV function\nGeneric file:\nB=When\nToday; It indicates the download file for the current day\nData range; this option allows you to select the date range for download.\nISOIL\nINDUSTRIA\n56 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Download settings:",
+            "",
+            ""
+          ],
+          [
+            "Data source:",
+            "Quando:",
+            "Oggi:"
+          ],
+          [
+            ":unselected: Eventi",
+            ":selected: Ogg",
+            ":selected:\nUltmo"
+          ],
+          [
+            ":selected: )Datalogger :unselected: Verifica Sensore :unselected: File generico",
+            ":unselected: Tutto\n:unselected: )Range data"
+          ],
+          [
+            "Path save:",
+            ""
+          ],
+          [
+            "c:\\M5data\\",
+            "Select"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "ISOMAG\nC=Today\nLast; this option allows to download the latest files, recordered after the laat download\nAll; this option allows the download of all the current day of the file\nD=Save path:\nThis option allows you to save files to the folder on your PC\nE=Download:\nButton to start the download process\nF=Stop:\nButton to stop the download process\nExample: Download Events\nFile Config.\nDatalogger\nLog\nUSB\nDiagnostic\nDownload settings:\nData source:\nQuando:\nOggi:\nEventi\nOggi\nUltmo\nDatalogger\nRange data\nTutto\nVerifica Sensore\nPath save:\nFile generico\nc:\\M5data\\\nSelect\nSD memory:\nDownload\n100 %, 184.4 KB/s, 0.7 sec.\nStop\nX\nRLLDT : 1,223:FT DOWNLOAD READY [120927]\n1,326:FT COMPLETED [DOWNLOAD][120927] [31 ms]\nPer scaricare tutti gli eventi del giorno odierno in\nuna cartella specifica, settare i seguenti parametri\ncome segue:\nData source: Eventi\nQuando: Oggi\nOggi: Tutti\nSave path: C:/ .....\nImpostati i parametri cliccare il tasto Download.\nMcp - 1.0.0.57\nConnection\nOptions\nView\nTools\nAccess\nFunction list:\nMenu\nScales\nSenso\nUnits\nMeasure\nAlarms\nOutputs\nDisplay\nData logger\nInputs\nFunctions\nDiagnostic\nSystem\nProcess data\n260 cmds\n100J\n75.\n25\nc:\\M5data\\999001_2016_06_07_EVENTS.TXT\n812\nVolume counters [LOCKED] by digital input signal\nMeasure signal [LOCKED TO 0] by digital input signal\nVolume counters [RELEASED] by digital input signal\nMeasure signal (RELEASED] by digital input signal\nVolume counter reset: [I+]\n2016/06/07-16:07:59.414\n813\n2016/06/07-16:07:59.414\n814\n2016/06/07-16:08:02.093\n815 2016/06/07-16:08:02.093\n816 2016/06/07-16:08:02.093\n817 2016/06/07-16:08:02.296\nLast event occurred [3] times in the last [14] a\n818 2016/06/07-16:08:02.296\nVolume counters [LOCKED] by digital input signal\nMeasure signal [LOCKED TO 0] by digital input signal\nVolume counters [RELEASED] by digital input signal\nMeasure signal [RELEASED] by digital input signal\nVolume counter reset: [T+]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n819 2016/06/07-16:08:02.296\n820\n2016/06/07-16:08:03.093\n821 2016/06/07-16:08:03.093\n822 2016/06/07-16:08:03.093\n823\n2016/06/07-16:08:03.296\nLast event occurred [3] times in the last [15] s\n824 2016/06/07-16:08:03.296\nVolume counters [LOCKED] by digital input signal\n825 2016/06/07-16:08:03.296\n826\n2016/06/07-16:08:03.492\nMeasure signal [LOCKED TO 0] by digital input signal\nVolume counters [RELEASED] by digital input signal\n827 2016/06/07-16:08:03.492\n828 2016/06/07-16:08:03.492\n829 2016/06/07-16:08:46.664\nMeasure signal [RELEASED] by digital input signal\nVolume counter reset: [T+]\nLast event occurred [3] times in the last [58] 8\nMCP command executed correctly [SRNUM?]\n830 2016/06/07-16:08:46.664\nMCP\nLoad: 2 ms [65686 bytes]. Transform: 22 ms Draw: 92 ms\n7.60\n+1.95.\nO\nDevice IP: 10. 11. 12. 13\nTerminato il Download, viene visualizzata\nuna finestra contenente la lista degli eventi in\ndata odierna. Il file viene salvato in formato\ntxt nella cartella specificata per il download.\nConfig. Files |Datalogger\nDownload settings:\nData source:\n@ Events\nDatalogger\nSensor Verify\nSave path:\nGeneric file\nc:\\M5data\\,\nWhen:\nToday:\nToday\nData Range\n@ Last\nA\nSelect\nDownload\n100%, 78.1 KB/s, 0. 1 sec.\nStop\n×\nRLEVT : 1,223:FT DOWNLOAD READY [6872]\n. 1,226:FT COMPLETED [DOWNLOAD][6872] [29 ms]\nMV110\nV.0.00.1756.FFFF Jun 6 2016 14:16:55 SN:999001\n. COM12 . CONNECTED . PPP\nExample: Download Data Logger\nNote: it is recommended the date synchronization between converter and PC to perform correctly\nthe events and logger reading operations.\nFile Config.\nDatalogger\nLog\nUSB\nDiagnostic\nDownload settings:\nData source:\nQuando:\nEventi\nDatalogger\nWVerifica Sensore\nAile generico\nOgg\nRange data\nOggi:\nUltmo\nTutto\nSD memory:\nDownload\nStop\n×\nPath save:\n100%, 184.4 KB/s, 0.7 sec.\nc:\\M5data\\\nSelect\nRLLDT : 1,223:FT DOWNLOAD READY [120927]\n. 1,226:FT COMPLETED [DOWNLOAD][120927] [31 ms]\nPer scaricare tutti i dati del giorno odierno in una cartella specifica,\nsettare i seguenti parametri come segue:\nData source: Datalogger\nQuando: Oggi\nOggi: Tutti\nSave path: C:/ .....\nImpostati i parametri premere il tasto Download.\n57 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Download settings:"
+          ],
+          [
+            "",
+            "Data source:",
+            "Quando:",
+            "Oggi:"
+          ],
+          [
+            "",
+            ":selected: Eventi",
+            ":selected: Oggi",
+            ":unselected: Ultmo"
+          ],
+          [
+            "",
+            ":unselected: Datalogger",
+            ":unselected: Range data",
+            ":selected: Tutto"
+          ],
+          [
+            "",
+            ":unselected: Verifica Sensore",
+            "Path save:",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            ":unselected: File generico",
+            "c:\\M5data\\",
+            "Select"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "ISOMAG\nISOIL\nINDUSTRIA\nA\nE\n0\nD\nE\nT+\nF\nG\nP-\nT\n2\nK\nP.\nL\nM\nZ\nO\nP\nO\nR\nS\nT\nmc\n<\nW\n×\nY\nN\nAA\nAB AC\nN.RECORD\nDATE\nHOURS\nU.M\nU.M.\nJ.M.\nU.M\nU.M\nTN\nU.M\nPN\nU.M. FLOWRATE U.M. FLOWRATE % U.M. N.ACTIVE ALLARM\nU.M. CPTI U.M.\nT.RISE A\nU.M. T.RISE B\nU.M. CETS\n1\ndd/mm/yy\n00:00:00 | dm3\n0\ndm3\n0\ndm3\n0\ndm3\n0\ndm3\n0\ndm3\n0\ndm3/s\n0\n%\n0\nAL\n0\nmA\n0\nms\n0\nms\n0\nERR\n0\n2\nN\nnº\ndd/mm/yy\n00:00:00 |dm3\n0\ndm3\n0\ndm3\n0\ndm3\n0\ndm3\n0\ndm3\n0\ndm3/s\n0\n%\n0\n₽\n0\nmA\n0\nms\n0\nms\n0\nERR\n0\nTotal positive totalizer value. Form Fields when the send flag is active on the\nTotal negative totalizer value. Form Fields when the send flag is active on the\nPartial positive totalizer value. Form Fields when the send flag is active on\nPartial negative totalizer value. Form Fields when the send flag is active on\nSensor test error code. Available value when recording the sensor test data is\nPartial net totalizer value. Form Fields when the send flag is active on the\nFlow rate. Form Fields present when the send flag is on the flow in units of\nLoss of current measured during insulation test. Available value when\nTime rise B. Available value when recording the sensor test data is active.\nTotal net totalizer value. Form Fields when the send flag is active on the\nDate. The recording date viewing for each record.\nHours. Time recording viewing for each record.\nrecording the sensor test data is active.\nactive.\ntotalizer T+.\nthe totalizer P -.\ntotalizer T -.\nthe totalizer P -.\ntotalizer TN.\ntotalizer PN\nmeasurement.\nNote: The fields are in a fixed position, regardless if the above fields are active or not. The disabled fields\nVisualization of downloaded file. Access Level 2 (diagnostic level) is required in order to download this type of file.\nFlow rate %. Form fields present when the flag of alarm recording is active\nN º active alarms. Form fields present when the flag of alarm recording is\nTime rise A. Available value when recording the sensor test data is active.\nNºRecord. View progressively the number of registered records.\nactive (only N º of present total alarms)\n(only N º of present total alarms)\nare empty (delimited by the separator but without data).\nView downloaded files setting download data logger.\n210_EN_IT_IS_R1_1.02.0\n58 / 85\nThe manufacturer guarantees only English text available on our web site www.isoil.com",
+      "tablas": [
+        [
+          [
+            "A",
+            "E",
+            "0",
+            "D",
+            "",
+            "E",
+            "F",
+            "",
+            "G",
+            "T",
+            "",
+            "2",
+            "",
+            "K",
+            "L",
+            "",
+            "M",
+            "Z",
+            "",
+            "O",
+            "P",
+            "O",
+            "R",
+            "S",
+            "T",
+            "",
+            "<",
+            "W",
+            "×\n:selected:",
+            "Y",
+            "N",
+            "AA",
+            "AB",
+            "AC"
+          ],
+          [
+            "N.RECORD",
+            "DATE",
+            "HOURS",
+            "U.M",
+            "",
+            "T+",
+            "U.M.",
+            "",
+            "P-",
+            "J.M.",
+            "",
+            "U.M",
+            "",
+            "P.",
+            "U.M",
+            "",
+            "TN",
+            "U.M",
+            "",
+            "PN",
+            "U.M.",
+            "FLOWRATE",
+            "U.M.",
+            "FLOWRATE %",
+            "U.M.",
+            "mc\nN.ACTIVE ALLARM",
+            "U.M.",
+            "CPTI",
+            "U.M.",
+            "T.RISE A",
+            "U.M.",
+            "T.RISE B",
+            "U.M.",
+            "CETS"
+          ],
+          [
+            "1",
+            "dd/mm/yy",
+            "00:00:00 |",
+            "dm3",
+            "",
+            "0",
+            "dm3",
+            "",
+            "0",
+            "dm3",
+            "0",
+            "dm3",
+            "",
+            "0",
+            "dm3",
+            "",
+            "0",
+            "dm3",
+            "",
+            "0",
+            "dm3/s",
+            "0",
+            "%",
+            "0",
+            "AL",
+            "0",
+            "mA",
+            "0",
+            "ms",
+            "0",
+            "ms",
+            "0",
+            "ERR",
+            "0"
+          ],
+          [
+            "2",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "N nº",
+            "dd/mm/yy",
+            "00:00:00",
+            "|dm3",
+            "",
+            "0",
+            "dm3",
+            "",
+            "0\n:unselected:",
+            "dm3",
+            "0",
+            "dm3",
+            "",
+            "0\n:unselected:",
+            "dm3",
+            "",
+            "0",
+            "dm3",
+            "",
+            "0",
+            "dm3/s",
+            "0",
+            "%",
+            "0",
+            "₽",
+            "0",
+            "mA",
+            "0",
+            "ms",
+            "0",
+            "ms",
+            "0",
+            "ERR",
+            "0"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "the",
+            "",
+            "",
+            "on",
+            "",
+            "the",
+            "",
+            "",
+            "on",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "is",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "on",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "on",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "the",
+            "",
+            "",
+            "the",
+            "",
+            "of",
+            "",
+            "",
+            "",
+            "",
+            "is",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "data",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "active",
+            "",
+            "",
+            "active",
+            "",
+            "active",
+            "",
+            "",
+            "active",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "on",
+            "",
+            "",
+            "units",
+            "",
+            "active",
+            "",
+            "",
+            "when",
+            "",
+            "",
+            "active.",
+            "",
+            "active.",
+            "test",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "on",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "is",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "is",
+            "",
+            "is",
+            "",
+            "",
+            "is",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "active",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "recording",
+            "value",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "is",
+            "",
+            "",
+            "flag",
+            "",
+            "",
+            "",
+            "",
+            "flag",
+            "",
+            "",
+            "active",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "in",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "is",
+            "",
+            "is",
+            "sensor",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "flag",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "records.",
+            "",
+            "",
+            "",
+            "flag",
+            "",
+            "",
+            "send",
+            "",
+            "",
+            "",
+            "",
+            "send",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "is",
+            "",
+            "flow",
+            "",
+            "",
+            "recording",
+            "",
+            "",
+            "Available",
+            "",
+            "",
+            "data",
+            "",
+            "data",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "is",
+            "",
+            "",
+            "flag",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "test",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "send",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "the",
+            "",
+            "",
+            "",
+            "",
+            "alarm",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "test",
+            "the",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "send",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "the",
+            "",
+            "",
+            "flag",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "the",
+            "",
+            "",
+            "the",
+            "",
+            "the",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "send",
+            "",
+            "",
+            "send",
+            "",
+            "on",
+            "",
+            "",
+            "alarm",
+            "",
+            "of",
+            "",
+            "",
+            "",
+            "sensor",
+            "",
+            "sensor",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "is",
+            "",
+            "",
+            "",
+            "",
+            "flag",
+            "test.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "of",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "registered",
+            "record.",
+            "",
+            "",
+            "when",
+            "",
+            "",
+            "when",
+            "",
+            "when",
+            "",
+            "",
+            "when",
+            "",
+            "",
+            "the",
+            "",
+            "",
+            "the",
+            "",
+            "flag",
+            "",
+            "",
+            "flag",
+            "",
+            "the",
+            "",
+            "",
+            "",
+            "the",
+            "",
+            "the",
+            "recording",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "of",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Fields",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "when",
+            "",
+            "",
+            "send",
+            "",
+            "",
+            "",
+            "when",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "when",
+            ""
+          ],
+          [
+            "",
+            "",
+            "record.",
+            "",
+            "Fields",
+            "",
+            "",
+            "Fields",
+            "",
+            "Fields",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "when",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "the",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "fields present\ntotal alarms)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "number",
+            "for each",
+            "each",
+            "",
+            "Form",
+            "",
+            "",
+            "Form",
+            "",
+            "Form",
+            "",
+            "",
+            "value. Form",
+            "",
+            "",
+            "Fields",
+            "",
+            "",
+            "Fields",
+            "",
+            "",
+            "when the",
+            "",
+            "when",
+            "",
+            "insulation",
+            "active.",
+            "",
+            "recording",
+            "",
+            "recording",
+            "value",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "value.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Form",
+            "",
+            "",
+            "Form",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "progressively the",
+            "viewing",
+            "viewing for",
+            "",
+            "value.",
+            "",
+            "",
+            "",
+            "value.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "present",
+            "",
+            "",
+            "present\nalarms)",
+            "",
+            "during",
+            "is",
+            "",
+            "when",
+            "",
+            "when",
+            "Available",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "data",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "value.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "value",
+            "",
+            "value",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "date",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "value.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "fields",
+            "",
+            "",
+            "",
+            "test",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "totalizer",
+            "",
+            "totalizer",
+            "",
+            "",
+            "totalizer",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "totalizer",
+            "",
+            "Fields",
+            "",
+            "",
+            "total",
+            "",
+            "Form\npresent",
+            "measured",
+            "",
+            "",
+            "Available",
+            "",
+            "Available",
+            "code.",
+            ""
+          ],
+          [
+            "",
+            "recording",
+            "recording",
+            "",
+            "totalizer",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "totalizer",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Form\npresent",
+            "",
+            "of",
+            "",
+            "sensor",
+            "",
+            "",
+            "",
+            "",
+            "error",
+            ""
+          ],
+          [
+            "View",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "-.",
+            "",
+            "",
+            "",
+            "",
+            "-.",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Form",
+            "",
+            "",
+            "",
+            "",
+            "º",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "P",
+            "",
+            "",
+            "",
+            "",
+            "P",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "%.",
+            "",
+            "N º active alarms.\nactive (only N",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Sensor test",
+            ""
+          ],
+          [
+            "NºRecord.",
+            "Date. The",
+            "Hours. Time",
+            "",
+            "Total positive",
+            "totalizer T+.",
+            "",
+            "Partial positive",
+            "the totalizer",
+            "Total negative",
+            "totalizer T -.",
+            "",
+            "Partial negative",
+            "the totalizer",
+            "",
+            "Total net",
+            "totalizer TN.",
+            "",
+            "Partial net",
+            "totalizer PN",
+            "Flow rate.",
+            "measurement.",
+            "",
+            "Flow rate\n(only N º of",
+            "Loss of current",
+            "recording the",
+            "",
+            "Time rise A.",
+            "",
+            "Time rise B.",
+            "active."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "ISOMAG\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nVoltage measured on electrode E1. Form fields when is active the recording of data on the\ninput voltage (diagnostic value).\n<\nV\nAD\nU.M. E1V\n0\n0\nAE\nVoltage measured on electrode E2. Form fields when is active the recording of data on the\ninput voltage (diagnostic value).\nV -0.023\nAF\nV -0.023\nU.M. E2V\nAG\nDifferential voltage between the two electrodes. FForm fields when is active the\nrecording of data on the input voltage (diagnostic value)\n<\n<\nAH\n0\n0\nD\nU.M. VD (E1-E2) U.M. VC (E1+E2)/2\nCommon mode voltage in the electrodes.Form fields when is active the recording of data\non the input voltage (diagnostic value).\n<\nV\nAJ\n0\nC\nAK\nNoise at low frequency measured on the electrodes. FForm fields when is active the\nrecording of data on the input signal noise levels (diagnostic value).\n<\n<\nAL\nU.M. CM LF NOISE\n0\nO\nAM\nDifferential low frequency noise measured on the electrodes. Form fields when is active\nthe recording of data on the input signal noise levels (diagnostic values).\nU.M. DIF LF NOISE |U.M. ADC LF NOISE\n<\n<\n3\n0\n0\nAO\nLow-frequency noise measured input ADC. Form fields when is active the recording of\ndata on the input signal noise levels (diagnostic values).\nmv\nmv\nAP\n0\n0\nAQ\nHigh frequency noise measured input ADC. Form fields when is active the recording of\ndata on the input signal noise levels (diagnostic values).\nmV\nmv\nU.M.\nAR\n0\nADC HF NOISE\n0\nAS\nMeasured equivalent resistance on the electrode 1. Form fields when is active the\nkohm 0\nrecording of data on the electrode resistance measurements (diagnostic values).\nkohm\nU.M. E1R\nAT AU\nC\nMeasured equivalent resistance on the electrode 2. Form fields when is active the\nkohm\nrecording of data on the electrode resistance measurements (diagnostic values).\nkohm\nU.M.\n0\nAV AW AX\n0\nE2 R U.M.\nCoils excitation current. Form fields when is active the recording of data related to the\nsensor excitation circuit measures (diagnostic value)\nmA\nmA\n0\n0\nAY\nohm\nMeasured resistance of the excitation circuit (coil + cable). Form fields when is active\nthe recording of data relative to the sensor excitation circuit measures (diagnostic values).\nohm\nR\n0\n0\nBA\nTemperature measured on the sensor coils (indirect measurement). Form fields when\nthe data transmission flag is active relative to the sensor excitation circuit measures (diagnostic values).\n*C\nBB\n0\n0\nBC\nTemperature T1 (sheet sensor 1). Form fields when the data transmission flag on board the\ninternal temperature measurement is active (diagnostic values).\nU.M.\nBD\n0\n0\nT1\nBE BF\nTemperature T2 (sheet sensor 2). Form fields when the data transmission flag on board the\n.C 0\ninternal temperature measurement is active (diagnostic values).\n.C\nU.M. T2\n0\nCPU temperature. Form fields when the data on the card's internal power supply voltage\n\"C 0\nmeasurements flag is ON (diagnostic value).\nBG BH BI\n0\nPrimary power supply of CPU. Form fields when the data on the card's internal power\nsupply voltage measurements flag is ON (diagnostic value).\n<\n<\n0\nBJ BK BL\n0\nPositive supply voltage of analog circuits. Form fields when the data on the card's internal\npower supply voltage measurements flag is ON (diagnostic values).\n<\n<\n0\n0\nNegative supply voltage of the analog circuits. Form fields when the data on the card's\ninternal power supply voltage measurements flag is ON (diagnostic values).\n<\nBM BN BO\n<\n0\n0\nVoltage measured on the battery B1 (NOT rechargeable battery). Fields when the data on the\ncard's internal power supply voltage measurements flag is ON (diagnostic values).\nBP\nBQ\nVoltage measured on the battery B2 (or rechargeable battery). Form fields when the\ndata on the card's internal power supply voltage measurements flag is ON (diagnostic values).\n<\n<\nBR BS\n0\nC\n% Battery charge. Form fields when the data on the card's internal power supply voltage\nmeasurements flag is ON (diagnostic values).\n%\nBT\n0\nC\nBU\nEXCITATION CUR U.M. R.COILS |U.M. T.COILS\nU.M. T. CPU U.M. V CPU U.M. AVCC+ U.M. AVCC- |U.M. BATT1 V U.M. BATT2 V U.M. % BATTERY CHARGI\n59 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Voltage measured on electrode E1. Form fields when is active the recording of data on the input voltage (diagnostic value).",
+            "< V AD U.M. E1V 0 0 AE"
+          ],
+          [
+            "Voltage measured on electrode E2. Form fields when is active the recording of data on the input voltage (diagnostic value).",
+            "V -0.023 AF V -0.023 U.M. E2V AG"
+          ],
+          [
+            "Differential voltage between the two electrodes. FForm fields when is active the recording of data on the input voltage (diagnostic value)",
+            "< < AH 0 0 D U.M. VD (E1-E2)"
+          ],
+          [
+            "Common mode voltage in the electrodes.Form fields when is active the recording of data on the input voltage (diagnostic value).",
+            "U.M. VC (E1+E2)/2\n< V AJ 0 C AK"
+          ],
+          [
+            "Noise at low frequency measured on the electrodes. FForm fields when is active the recording of data on the input signal noise levels (diagnostic value).",
+            "< < AL U.M. CM LF NOISE 0 O AM"
+          ],
+          [
+            "Differential low frequency noise measured on the electrodes. Form fields when is active the recording of data on the input signal noise levels (diagnostic values).",
+            "U.M. DIF LF NOISE\n< < 3 0 0 AO"
+          ],
+          [
+            "Low-frequency noise measured input ADC. Form fields when is active the recording of data on the input signal noise levels (diagnostic values).",
+            "|U.M. ADC LF NOISE\nmv mv AP 0 0 AQ"
+          ],
+          [
+            "High frequency noise measured input ADC. Form fields when is active the recording of data on the input signal noise levels (diagnostic values).",
+            "mV mv U.M. AR 0 ADC HF NOISE 0 AS"
+          ],
+          [
+            "Measured equivalent resistance on the electrode 1. Form fields when is active the\nrecording of data on the electrode resistance measurements (diagnostic values).",
+            "kohm 0\nkohm U.M. E1R AT AU C"
+          ],
+          [
+            "Measured equivalent resistance on the electrode 2. Form fields when is active the\nrecording of data on the electrode resistance measurements (diagnostic values).",
+            "kohm\nkohm U.M. 0 AV AW\n0 E2 R"
+          ],
+          [
+            "Coils excitation current. Form fields when is active the recording of data related to the sensor excitation circuit measures (diagnostic value)",
+            "AX\nU.M.\nmA mA 0 0 AY\nEXCITATION CUR"
+          ],
+          [
+            "Measured resistance of the excitation circuit (coil + cable). Form fields when is active the recording of data relative to the sensor excitation circuit measures (diagnostic values).",
+            "ohm\nohm R 0 0 BA\nU.M. R.COILS"
+          ],
+          [
+            "Temperature measured on the sensor coils (indirect measurement). Form fields when the data transmission flag is active relative to the sensor excitation circuit measures (diagnostic values).",
+            "*C BB 0 0 BC\n|U.M. T.COILS"
+          ],
+          [
+            "Temperature T1 (sheet sensor 1). Form fields when the data transmission flag on board the internal temperature measurement is active (diagnostic values).",
+            "U.M. BD 0 0 T1 BE"
+          ],
+          [
+            "Temperature T2 (sheet sensor 2). Form fields when the data transmission flag on board the\ninternal temperature measurement is active (diagnostic values).",
+            "BF\n.C 0\n.C U.M. T2 0\nBG"
+          ],
+          [
+            "CPU temperature. Form fields when the data on the card's internal power supply voltage\nmeasurements flag is ON (diagnostic value).",
+            "\"C 0\nBH BI 0\nU.M. T. CPU"
+          ],
+          [
+            "Primary power supply of CPU. Form fields when the data on the card's internal power supply voltage measurements flag is ON (diagnostic value).",
+            "< < 0 BJ BK\n0\nU.M. V CPU"
+          ],
+          [
+            "Positive supply voltage of analog circuits. Form fields when the data on the card's internal power supply voltage measurements flag is ON (diagnostic values).",
+            "BL\n< < 0 0\nBM\nU.M. AVCC+"
+          ],
+          [
+            "Negative supply voltage of the analog circuits. Form fields when the data on the card's internal power supply voltage measurements flag is ON (diagnostic values).",
+            "<\nBN BO < 0 0\nU.M. AVCC-"
+          ],
+          [
+            "Voltage measured on the battery B1 (NOT rechargeable battery). Fields when the data on the card's internal power supply voltage measurements flag is ON (diagnostic values).",
+            "BP BQ\n|U.M. BATT1 V"
+          ],
+          [
+            "Voltage measured on the battery B2 (or rechargeable battery). Form fields when the data on the card's internal power supply voltage measurements flag is ON (diagnostic values).",
+            "< < BR BS 0 C\nU.M. BATT2 V"
+          ],
+          [
+            "% Battery charge. Form fields when the data on the card's internal power supply voltage measurements flag is ON (diagnostic values).",
+            "% BT 0 C BU\nU.M. % BATTERY CHARGI"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "ISOMAG\nExample: Sensor Verify\nThe function \"Sensor Verify\" creates the \"STESTLOG.CSV\" file, according to the following conditions:\n1) Activate the SDC / RTC option in group \"HW Config\" (by factory see the order code)\n2) Activate the \"BIV\" in the group \"PRODUCT CODE\" (by factory see the order code)\n3) Activate the \"Sens.verify\" function in the \"Sensor\" menu\nActivated such conditions, the converter will perform every hour a measure of sensor's parameters and record a line of the file \"STESTLOG.CSV\"; it\nis possible even a manual verification by the command \"sens.verify\" on the menu \"Diagnostic\" or through the MCP command \"SVERC\".\nConfig.\nDatalogger\nLog\nUSB\nownload settings:\nData source:\nEventi\nDatalogger\nVerifica Sensore\nFile generico\nDiagnostic\nQuando:\nOggi\nRange data\nPath save:\nc:\\M5data\\\nOggi:\nUltmo\nTutto\nSelect\nSD memory:\nDownload\nStop\n×\n100%, 184.4 kB/s, 0.7 sec.\nRLLDT : 1,223:FT DOWNLOAD READY [120927]\n. 1,226:FT COMPLETED [DOWNLOAD][120927] [31 ms]\nPer scaricare tutte le verifiche sensore del giorno odierno in una\ncartella specifica, settare i seguenti parametri come segue:\nData source: Verifica sensore\nQuando: Oggi\nOggi: tutti\nSave path: C:/ .....\nImpostati i parametri premere il tasto Download.\nExample: Generic File\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nConfig. Files\nDatalogger\nDownload settings:\nData source:\nGeneric file path:\nEvents\nEVENTS. TXT\nDatalogger\nSensor Verify\nSave path:\nGeneric file\nC:\\M5data\nSelect\nDownload\nStop\n×\n8%, 63.7 KB/s, 1.3 sec.\nRLLDT : 1,223:FT DOWNLOAD READY [1005926]\n· 1,224:FT DOWNLOADING [83220/1005926] [30 ms]\nQuesta Funzione permette di selezionare un file contenuto nella\nmemoria SD del convertitore e scaricarlo.\nNella sezione \"Generic file path\" indicare il nome del file contenuto\nnella SD e indicare in \"Save path\" il percorso di salvataggio del file\nstesso. Impostati tali valori procedere con il download del file\ncliccando sul tasto \"download \".\nISOIL\nINDUSTRIA\n60 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Download settings:",
+            ""
+          ],
+          [
+            "Data source:",
+            "Generic file path:"
+          ],
+          [
+            "Events\n:unselected:",
+            "EVENTS. TXT"
+          ],
+          [
+            "Datalogger\n:unselected:",
+            ""
+          ],
+          [
+            "Sensor Verify\n:unselected:",
+            "Save path:"
+          ],
+          [
+            ":selected: Generic file",
+            "C:\\M5data :selected: Select"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "ISOMAG\nMENU 11 - FUNCTION\nThe following functions are activated by first pressing the \"ENTER\" and then the \"ESC\" when the screen\nappears \"confirm\" to start the function.\n(POS. 11.1) Total direct totalizer reset\n[T+ RESET= ON]\nAL3\n[VTTPR]\nReset total direct totalizer for direct flow rate (+)\n(POS. 11.2) Partial direct totalizer reset\n[P+ RESET= ON]\nAL3\n[VTPPR]\nReset total partial totalizer for direct flow rate (+)\n(POS. 11.3) Total reverse totalizer reset\n[T- RESET= ON]\nAL3\n[VTTNR]\nReset total reverse totalizer for direct flow rate (-)\n(POS. 11.4) Partial reverse totalizer reset\n[P- RESET= ON]\nAL3\n[VTPNR]\nReset partial reverse totalizer for direct flow rate (-)\n(POS. 11.5) Load factory default sensor\n[Load sens.f.def= ON]\nAL3\n[LFDSD]\nThis function resets the parameters of the sensor factory default. To Load the saved files see function (11.7).\n(POS. 11.6) Load factory default converter\n[Load conv.f.def= ON]\nAL3\n[LFDCD]\nThis function resets the parameters of the converter factory default. o Load the saved files see function (11.8).\n(POS. 11.7) Save sensor factory default\n[Save sens.f.def= ON]\nAL6\n[SFDSD]\nThis function save the parameters of the sensor factory default.\n(POS. 11.8) Save convert factory default\n[Save conv.f.def= ON]\nAL6\n[SFDCD]\nThis function loads the data from a converter to another.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 11.9) Calibration Immediate\n[Calibration]\nAL5\n[CALIC]\nPerform manually a board's calibration. Press Enter and the message \" EXECUTE?\" will be visualized on\nthe display then press long the key Enter to proceed. Press any other key to delete the operation.\nIf the sensor table is valid, the calibration is performed also when one of the following paramenter has\nbeen change:\n1. SENSOR DIAMETER -> Menu Sensor1\n2. SENSOR MODEL -> Menu Sensor1\n3. Exc. CURRENT -> Menu Sensor1\n4. S. Freq. - > Menu Sensor1\nTo check the calibration status, active or inactive, type the command MCP Calic? and check as follows:\nCALIC = 1 calibration in progress\nCALIC = 0 calibration terminated\nMENU 11 - FUNCTION: ONLY MCP FUNCTIONS\nSave sensor reference data\n[MCP ONLY]\nAL4\n[SRFDS]\nSave conv.f.def= ON. \"meter data\" page 75\n61 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 11.1) Total direct totalizer reset",
+            "[T+ RESET= ON]",
+            "AL3",
+            "[VTTPR]"
+          ],
+          [
+            "Reset total direct totalizer for direct flow rate (+)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 11.2) Partial direct totalizer reset",
+            "[P+ RESET= ON]",
+            "AL3",
+            "[VTPPR]"
+          ],
+          [
+            "Reset total partial totalizer for direct flow rate (+)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 11.3) Total reverse totalizer reset",
+            "[T- RESET= ON]",
+            "AL3",
+            "[VTTNR]"
+          ],
+          [
+            "Reset total reverse totalizer for direct flow rate (-)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 11.4) Partial reverse totalizer reset",
+            "[P- RESET= ON]",
+            "AL3",
+            "[VTPNR]"
+          ],
+          [
+            "Reset partial reverse totalizer for direct flow rate (-)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 11.5) Load factory default sensor",
+            "[Load sens.f.def= ON]",
+            "AL3",
+            "[LFDSD]"
+          ],
+          [
+            "This function resets the parameters of the sensor factory default. To Load the saved files",
+            "see function (11.7)."
+          ],
+          [
+            "(POS. 11.6) Load factory default converter",
+            "[Load conv.f.def= ON]",
+            "AL3",
+            "[LFDCD]"
+          ],
+          [
+            "This function resets the parameters of the converter factory default. o Load the saved files see function (11.8)."
+          ],
+          [
+            "(POS. 11.7) Save sensor factory default",
+            "[Save sens.f.def= ON]",
+            "AL6",
+            "[SFDSD]"
+          ],
+          [
+            "This function save the parameters of the sensor factory default.",
+            "",
+            ""
+          ],
+          [
+            "(POS. 11.8) Save convert factory default",
+            "[Save conv.f.def= ON]",
+            "AL6",
+            "[SFDCD]"
+          ],
+          [
+            "This function loads the data from a converter to another.",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Save sensor reference data",
+            "[MCP ONLY]",
+            "AL4",
+            "[SRFDS]"
+          ],
+          [
+            "Save conv.f.def= ON. \"meter data\" page 75",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "ISOMAG\nMENU 12 - DIAGNOSTIC\n(POS. 12.1) Self Test Diagnostic\n[Self Test]\nAL3\n[ATSIC]\nMeter auto-test function. This function stops the normal functions of the meter and performs a complete\ntest cycle on the measure input circuits and on the excitation generator. To activate this function, after\nselect it, push key Enter, at the question: \"CONFIRM EXEC .? \" Long Push the same key to start auto-test,\nor any other key for delete operation. At the end of operation the converter will revert to one of the initial\nvisualization pages. This function is automatically performed when switching on the device. This function\nrestarts the converter.\n(POS. 12.2) Test display\n[ Test display ]\nAL1 NO MCP COMMAND\nThis function allows to do a physical test the graphic display. During this operation, 4 sequences are\ndisplayed to test the correct functioning of the device.\n(POS. 12.3) Sensor verify\n[ Sens. verify ]\nAL3\n[SVERC]\nThis function perform a manual sensor verification ( if BIV is active)\n(POS. 12.4) Flow rate simulation\n[Flow sim=ON]\nAL3\n[MSIEN]\nFlow rate simulation enabling. With this function it is possible to generate an internal signal\nthat simulates the flow rate, allowing the outputs and all the connected instruments test.\nAfter enabling it, a \"V' appears in the top left of the screen and the flow rate simulation can be:\nset: by pushing the key Enter from one of visualization pages, to set the required % flow rate (Fl.\nrate=%) and the same key to confirm the value;\nfinished: by pushing the key Enter from visualization pages and then by long pushing the same key.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 12.5) Diagnostic measures\n[Display measures]\nAL5\nDMVLS\nThis Function shows the values of the various internal parameters as listed below :\nUCPU : V\n5.01\nLFN_COM\nV\n0.000\nUPS : V\n41\nLFN_DIF:\n0.000\nVUSB: V\n4.53\nHFN_ADC : MV\n0.000\n+AVCC:\nU\n+10.1 LFN_ADC:\n-9.9\nMU\n0. 001\nAUCC\nMEAS_NB:\nUBATT\nI BATT : A\n0.000\n0.000\nCAL_I :M\n16. 503\nVIN1 : V\nVIN2 : 0\nUIN_C:\nUIN_DU\nU\nC_\nC: MA\n-8.071\n-8. 065\n-8.068\n-0.006\nCAL_U : MU\nCAL_G:\nCAL_O: MA\nCAL_C: MA\nCAL_RO:\nCAL_R1\n530.778\n32.1622\n-0. 055\n-0.055\n1.00000\n00000\nC_UPK: V\n5.0\nCAL_R2\nCAL_R3\n1 .1\n1.\n00000\n. 00000\nC_R: 1\nC_PWR: W\nC_T: ºC\nC_RT : MS\nC_LK: MA\nC_\nST:\n201\n0\n0.1\n126\nSYS_F: MHZ\nCURR_K\nPROC1\n00\nPRO\n1\nPRO\n:3\n50.0512\n1.00000\n46. 4\n3.\nS.VER. RSLT :\nPRO\nDC4\n0000\nPROC5\n9.\n12.\n6\nE1R: k?\nE2R: kf\n0.0\nCPU.\n0.0\n_T\nC\n+33.12\n25.00\n(POS. 12.6) Disp, comm. Diagnostic values\n[ Disp. comm. vars ]\nAL5\nCreate a list of diagnostic values on the instrument communication.\nPPP link status\nPPP_STATUS:\nNETW E_IP_HDR5:\nMCPI socket status\nMCPI_S: ESTABLISH EZ\n_IP_HDR6\nRxCNT\n1477149 E_IP_HDR7\nTxCNT\n6515456 E_IP_HDR8\nE_SR_LINK\n@ E_IP_HDR9\nE_PAKTLEN\n@ E_TCPHDR1\nE_NETLAYR\n@ E_TCPHDR2\nE_TSPLAYR\n@ E_UDPHDR1\n@ E_UDPHDR2\n@ E_UDPHDR3\nELARPHDR1\nE_ARPHDR2\nE_IP_HDR1\n@ E_ICMPHDR:\nE_IP_HDR2\nE_IP_HDR3\nE_IP_HDR4\n62 / 85\n210_EN_IT_IS_R1_1.02.0\n9\nDCVLS\nISOIL\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "(POS. 12.3) Sensor verify",
+            "[ Sens. verify ]",
+            "AL3",
+            "[SVERC]"
+          ],
+          [
+            "This function perform a manual sensor verification ( if BIV is active)",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "(POS. 12.5) Diagnostic measures",
+            "[Display",
+            "",
+            "measures]",
+            "AL5",
+            "DMVLS"
+          ],
+          [
+            "This Function shows the values of the various internal parameters as listed below :",
+            ""
+          ],
+          [
+            "UCPU : V",
+            "5.01 LFN_COM V 0.000\n:selected: :selected:",
+            "",
+            ""
+          ],
+          [
+            "UPS : V",
+            "",
+            "41 LFN_DIF:",
+            "0.000\n:selected: :selected: :selected:",
+            "",
+            ""
+          ],
+          [
+            "",
+            "VUSB: V",
+            "",
+            "4.53 HFN_ADC",
+            "0.000\n:selected: :selected:",
+            "",
+            ""
+          ],
+          [
+            "",
+            "+AVCC: U",
+            "",
+            ": MV\n+10.1 LFN_ADC:\n:selected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "AUCC",
+            "",
+            "-9.9 MU\nMEAS_NB:",
+            "0. 001\n:selected: :selected:\n:selected:",
+            "",
+            ""
+          ],
+          [
+            "UBATT",
+            ":selected:",
+            "0.000\nCAL_I :M\n:selected:",
+            "16. 503 :selected:\n:unselected:",
+            "",
+            ""
+          ],
+          [
+            "I BATT : A\nVIN1 : V VIN2 : 0 UIN_C: UIN_DU U",
+            "-8.\n-8.068 -0.006\n:selected:",
+            "0.000\n-8.071\n065\n:selected: CAL_U : MU CAL_G: CAL_O: MA CAL_C: MA CAL_RO: :selected:\n25.00\n:selected:",
+            "",
+            "530.778 :selected: 32.1622 -0. 055 :selected: -0.055 :selected: :selected: 1.00000 :selected:\n:selected:",
+            "",
+            ""
+          ],
+          [
+            "C_ C: MA\nC_UPK: V",
+            "",
+            "CAL_R1\n5.0 :selected: CAL_R2",
+            "",
+            "00000 :selected:\n1 .1 1. 00000 :selected:\n:selected: :selected: :selected: :selected:",
+            "",
+            ""
+          ],
+          [
+            "C_R: 1 C_PWR: W C_T: ºC C_RT : MS C_LK: MA",
+            "201 0 :selected: 0.1\n:selected:\n:selected:",
+            "CAL_R3\n126 SYS_F: MHZ CURR_K PROC1 00 PRO\nPRO :3",
+            "",
+            ". 00000 :selected:\n50.0512 :selected: 1.00000 46. 4 3.\n:selected: :selected:",
+            "",
+            ""
+          ],
+          [
+            "C_ ST:\nS.VER. RSLT :",
+            "1\nPRO DC4 0000\n:selected:",
+            "9.",
+            "",
+            ""
+          ],
+          [
+            "E1R: k? E2R: kf",
+            "PROC5\n0.0 CPU. 0.0 _T C :selected: :selected:\n:selected:",
+            "12. 6\n+33.12",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Following are the states for the PPP link and MCPI to connect the device.\nPPP link status:\nISOMAG\n\"UNDT\" = undetermined\n\"DEAD\" = dead, link down, persistent condition\n\"LCP\" = LCP phase, transition condition\n\"AUTH\" = Authentication phase, transition condition\n\"IPCP\" = IP and DNS addressess assign phase, transition condition\n\"NETW\" = network established (normal persistent condition when the link is UP)\n\"TERM\" = link termination request, transition condition\nMCPI link status:\n\"CLOSED\" = socket closed\n\"ACCEPT\" = socket awaiting for new connection\n\"ESTABLISH\" = link established\n\"CLS_WAIT\" = waiting for closure\n\"LAST_ACK\" = lask ACK sent\n\"FIN_WAIT\" = (see TCP/IP RFC documentation)\n\"TIME_WAIT\" = (see TCP/IP RFC documentation)\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 12.7) Display graphs\n[ Display graphs ]\nAL5 NO MCP COMMAND\nThis function displays graphs of input Z, C. current, C. Volt, C.Load, Input 1, Input 2, Input1-Input 2,\nAnalog to Digital Converter.\n10M]\n30\n36]\n100\nMA\nU\n0\n0 INPUT Z 100\n0+\n@ C. CURR. 100\n@ C.VOLT. 100\n+2\n+2\n+\n.5\nU\nU\nMU\n-2+\n0\nIN1\n100\n-2+\n0\nIN2\n100\n-. 54\nADC\n100\n0+\n@ C.LOAD 100\n+.5\n-. 54\n0 IN1-IN2 100\n(POS. 12.8) Generic sensor set\n[ Gen.sens. set ]\nAutomatic finding of a parameter set for a generic sensor.\n63 / 85\nAL5 NO MCP COMMAND\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "ISOMAG\n(POS. 12.9) SD card status info.\n[SD card info]\nAL0\nThis function shows the status of the SD card as shown in the following figure.\nSize: 3858.8 MB\nFree: 3822.3 M\nCluster:\n32 KB\n5201:02:47:28\nSDSTA\nTotal Size\nAvailable memory\nCluster Memory\nUse time remaining SD card *\nDay Hours Minutes Seconds\nThe statistical calculation is performed every time the command SDSTA is invoked. The statistical data are\nupdated AUTOMATICALLY every day (24 hours) or manually each time the function is called to display or\nsend the SDSTA command. However, given that for the detection is necessary a minimum of one hour, the\ndata will not be recomputed before this time interval.\nSize: 3858.8 MB\nFree: 3822.3\nCluster:\n1.3 MB\n32 KB\n5201:02:47:28\nSize:\n: 3858.8 MB\nFree :\n2: 3822.3 MB\nCluster: 32 KB\n>0158:21:23:13\nminimum time of 1 hour for the new data update\nThe SD card must be replaced only by the service. The use of commercial cards could disable some\nfunctionality of the instrument.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 12.10) Firmware info\n[Firmware info]\nAL0\nMODSV\nFirmware info version/revision\nMV110\n0.0. 00. 1403 . FFFF\nApr 22 2016\n12:35:47\n(POS. 12.11) Board Serial Number\n[ S/N= xxxxxx ]\nAL0\n[SRNUM?]\nView Board serial number. (read only)\n(POS. 12.12) Working Time\n[ WT= xxxx: xx: xx: xx ] AL0\n[TWKTM?]\nView Total working time instrument. (read only)\n64 / 85\nISOIL\nINDUSTRIA\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 12.10) Firmware info",
+            "[Firmware info]",
+            "AL0",
+            "MODSV"
+          ],
+          [
+            "Firmware info version/revision",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "MV110 0.0. 00. 1403 . FFFF Apr 22 2016 12:35:47",
+            "",
+            ""
+          ],
+          [
+            "(POS. 12.11) Board Serial",
+            "Number [ S/N= xxxxxx ]",
+            "AL0",
+            "[SRNUM?]"
+          ],
+          [
+            "View Board serial number. (read only)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 12.12) Working Time",
+            "[ WT= xxxx: xx: xx: xx ]",
+            "AL0",
+            "[TWKTM?]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "MENU 13 - SYSTEM\n(POS. 13.1) Daylight saving time\nDaylight saving time change.\n[Dayl. Saving= ON]\nAL2\n[DYSTE]\n(POS. 13.2) Time zone\nSet time for geographic area\n[Time zone=h+xx.xx]\nAL2\n[TZONE]\n(POS. 13.3) Date and Time\nSet to system date and time\n[xxxx/xx/xx-xx:xx]\nAL2\n[DTIME]\nISOMAG\n(POS. 13.4-5-6-7-8-9) Access level n° code\n[Ln xxxxxxxx]\n[L1ACD]-> [L6ACD]\nThis function enables or disables, for each access level code, the main menu functions.\nEach level unlocks the functionality of the lower level. (Function 13.10 see page 31 )\nL1 code=\nAccess level value code 1\nL4 code=\n**\nAccess level value code 4\nL5 code=\nAccess level value code 5\nL2 code= ***\nAccess level value code 2\nL3 code= ***\nAccess level value code 3\nL6 code=\nAccess level value code 6\n(POS. 13.10) Restricted access level\n[Restr. access= ON]\nAL6\n[RSARE]\nEnable Or disable access level code. If active displays only the functions related to the level entered access.\nIP ADDRESS SETTING (13.11-12-13)\n(POS. 13.11)Device IP address\n[xxx.xxx.xxx.XXX]\nAL3\n[DIPAD]\nDevice IP network edress\n(POS. 13.12) Client IP address\n[xxx.xxx.xxx.XXX]\nAL3\n[CIPAD]\nClient IP network adress\n(POS. 13.13) Network mask\n[xxx.xxx.xxx.XXX]\nAL3\n[NETMS]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nNetwork mask.\nCaution: Changes to the functions of the points 13.11-13.12-13.13 are enabled after the drive device\nrestart (see function 12.1 Self test for restart converter).\nPC SERVER\nIP ADDRESS INSTRUMENT\nIP CLIENT ADDRESS\n(POS. 13.14) Coefficient KT\n[KF=X.xxxxx]\nGain correction coefficient (calculated automatically)\n(POS. 13.15) Coefficient KS\nCorrection coefficient constant instrumental\n[KF=X.XXXXX]\nAL5\n65 / 85\n210_EN_IT_IS_R1_1.02.0\nAL6\n[CFFKT]\n[CFFKS]",
+      "tablas": [
+        [
+          [
+            "(POS. 13.10) Restricted access level",
+            "[Restr. access= ON]",
+            "AL6",
+            "[RSARE]"
+          ],
+          [
+            "Enable Or disable access level code. If active displays only the functions related to the level entered access. IP ADDRESS SETTING (13.11-12-13)"
+          ],
+          [
+            "(POS. 13.11)Device IP address",
+            "[xxx.xxx.xxx.XXX]",
+            "AL3",
+            "[DIPAD]"
+          ],
+          [
+            "Device IP network edress",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 13.12) Client IP address",
+            "[xxx.xxx.xxx.XXX]\n:selected:",
+            "AL3",
+            "[CIPAD]"
+          ],
+          [
+            "Client IP network adress",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 13.13) Network mask",
+            "[xxx.xxx.xxx.XXX]\n:selected:",
+            "AL3",
+            "[NETMS]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "ISOMAG\n(POS. 13.16) Coefficient KR\nCorrection coefficient constant instrumental\n[KR=X.Xxxxx]\nAL5\n[CFFKR]\nDIGITAL ANALOG CONVERTER (Correction Parameters)(13.17-18-19-20)\nmA +\n20\n4-\n1\n2\nDAC\nThe diagram shows how the DAC4-20mA parameters are setup.\nThe DAC1 value corresponds to 4 mA corresponding to a zero flow\nrate, while the value of 20mA corresponds to a 100% of the flow\nrate.\n(POS. 13.17) DAC1 4mA\n[DAC1 4mA =XXXXX]\nAL5\n[C1CP1]\nDAC1 out 4mA calibration point. (current output1 calibration point 1)\n(POS. 13.18) DAC1 20mA\n[DAC1 20mA=XxXXX]\nAL5\n[C1CP2]\nDAC1 out 20mA calibration point. (current output1 calibration point 2)\n(POS. 13.19) DAC2 4mA\n[DAC1 20mA=XXXXX]\nAL5\n[C2CP1]\nDAC2 out 4mA calibration point. (current output2 calibration point 1)\n(POS. 13.20) DAC2 20mA\n[DAC2 20mA=XXXXX]\nAL5\n[C2CP2]\nDAC2 out 20mA calibration point (current output2 calibration point 2)\n(POS. 13.21) Stand-BY\n[STAND-BY]\nAL3\n[SSTBY]\nEnable the converter standby state. It is enable by selecting chargeable battery in hw confing.\n(POS. 13.22) Firmware Update\n[FW update]\nAL4\n[FWUPD]\nEnable firmware update. The firmware can be upload to the SD card (name.file).\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nMCP interface is activated by the command FWUPD = name.file\nISOIL\nINDUSTRIA\n66 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 13.17) DAC1 4mA [DAC1 4mA =XXXXX]",
+            "AL5",
+            "[C1CP1]"
+          ],
+          [
+            "DAC1 out 4mA calibration point. (current output1 calibration point 1)",
+            "",
+            ""
+          ],
+          [
+            "(POS. 13.18) DAC1 20mA [DAC1 20mA=XxXXX]",
+            "AL5",
+            "[C1CP2]"
+          ],
+          [
+            "DAC1 out 20mA calibration point. (current output1 calibration point 2)",
+            "",
+            ""
+          ],
+          [
+            "(POS. 13.19) DAC2 4mA [DAC1 20mA=XXXXX]",
+            "AL5",
+            "[C2CP1]"
+          ],
+          [
+            "DAC2 out 4mA calibration point. (current output2 calibration point 1)",
+            "",
+            ""
+          ],
+          [
+            "(POS. 13.20) DAC2 20mA [DAC2 20mA=XXXXX]",
+            "AL5",
+            "[C2CP2]"
+          ],
+          [
+            "DAC2 out 20mA calibration point (current output2 calibration point 2)",
+            "",
+            ""
+          ],
+          [
+            "(POS. 13.21) Stand-BY [STAND-BY]",
+            "AL3",
+            "[SSTBY]"
+          ],
+          [
+            "Enable the converter standby state. It is enable by selecting chargeable battery in hw confing."
+          ],
+          [
+            "(POS. 13.22) Firmware Update [FW update]",
+            "AL4",
+            "[FWUPD]"
+          ],
+          [
+            "Enable firmware update. The firmware can be upload to the SD card (name.file)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "ISOMAG\nMENU 13 - SYSTEM: ONLY MCP FUNCTIONS\nUnique Identity KEY\n[MCP ONLY]\nAL0\n[UIKEY]\nDevice Unique Identity key\nHardWare SET\n[MCP ONLY]\nAL0\n[HWSET]\nDevice hardware configuration\nHardWare CODe\n[MCP ONLY]\nAL0\n[HWCOD]\nDevice hardware code\nCalibr. Exec. status Memory\n[MCP ONLY]\nAL6\n[CALXM]\nCalibration Execution status Memory. This function checks the instrument's internal calibration status.\nCALXM=1 instrument calibrated correctly\nCALXM=0 Invalid calibration / Calibration not completed (invalid calibration (if the function is zero, start\nthe calibration function, MCP CALIC command).\nRTC Real time clock\n[MCP ONLY]\nAL2\n[RTCAC]\nRTC is used to set a correction factor for the internal clock.\nFor setting the correction date and time with MCP press\nFunction CODe Selection\n[MCP ONLY]\nAL0\n[FCODS]\nSelect the function code\nFunction Enable State Selection\n[MCP ONLY]\nAL6\n[FNESS]\nSelect the enable state of function\nAll Functions State Selection\n[MCP ONLY]\nAL6\n[AFNSS]\nSelect enable state of ALL function\nQuick Start Function Selection\n[MCP ONLY]\nAL6\n[QSFNS]\nSelect function for quick start menu\nQuick Start All Functions Selection\n[MCP ONLY]\nAL6\n[QSAFS]\nSelect ALL function converter for quick start menu.\nQuick start function Status LiST\n[MCP ONLY]\nAL6\n[QSLST]\nList quick start group functions\nFunction enable Status LiST\n[MCP ONLY]\nAL6\n[FSLST]\nList enable status of functions\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n67 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Unique Identity KEY",
+            "[MCP ONLY]",
+            "AL0",
+            "[UIKEY]"
+          ],
+          [
+            "Device Unique Identity key",
+            "",
+            "",
+            ""
+          ],
+          [
+            "HardWare SET",
+            "[MCP ONLY]",
+            "AL0",
+            "[HWSET]"
+          ],
+          [
+            "Device hardware configuration",
+            "",
+            "",
+            ""
+          ],
+          [
+            "HardWare CODe",
+            "[MCP ONLY]",
+            "AL0",
+            "[HWCOD]"
+          ],
+          [
+            "Device hardware code",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibr. Exec. status Memory",
+            "[MCP ONLY]",
+            "AL6",
+            "[CALXM]"
+          ]
+        ],
+        [
+          [
+            "RTC Real time clock",
+            "[MCP ONLY]",
+            "AL2",
+            "[RTCAC]"
+          ],
+          [
+            "RTC is used to set a correction factor for the internal clock. For setting the correction date and time with MCP press",
+            "",
+            ""
+          ],
+          [
+            "Function CODe Selection",
+            "[MCP ONLY]",
+            "AL0",
+            "[FCODS]"
+          ],
+          [
+            "Select the function code",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Function Enable State Selection",
+            "[MCP ONLY]",
+            "AL6",
+            "[FNESS]"
+          ],
+          [
+            "Select the enable state of function",
+            "",
+            "",
+            ""
+          ],
+          [
+            "All Functions State Selection",
+            "[MCP ONLY]",
+            "AL6",
+            "[AFNSS]"
+          ],
+          [
+            "Select enable state of ALL function",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Quick Start Function Selection",
+            "[MCP ONLY]",
+            "AL6",
+            "[QSFNS]"
+          ],
+          [
+            "Select function for quick start menu",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Quick Start All Functions Selection",
+            "[MCP ONLY]",
+            "AL6",
+            "[QSAFS]"
+          ],
+          [
+            "Select ALL function converter for quick start menu.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Quick start function Status LiST",
+            "[MCP ONLY]",
+            "AL6",
+            "[QSLST]"
+          ],
+          [
+            "List quick start group functions",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Function enable Status LiST",
+            "[MCP ONLY]",
+            "AL6",
+            "[FSLST]"
+          ],
+          [
+            "List enable status of functions",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Access CODE\nInput the right access code\nFunction list:\nMenu\n251 cmds\nSensor\nUnits\nScales\n-Measure\nAlarms\nInputs\nOutputs\n00000000000000\nExemple set quick start\nFile\nmenù function for mcp.\nProcess data\nDisplay\nData logger\nFunctions\nDiagnostic\nSystem\nMCPI> ACODE =*; FOODS\"DATDE; QSFNS-0\n2, 0:08; 3, 0:0K\nlast tx: 27 char, last nc: 13 char\nMCP:\nACODE=0; FOODS=DATDE; QSFNS=0\n27 char\nISOMAG\n[MCP ONLY]\nAL0\n[ACODE]\n100\nTO %\n10.0008\n-0.02.\nM/S\n-0.002+dm3 /s\n0.010\nEL\nU\n0.008\nE2\nNO\nALARMS\nT+dm3\n13.949\nIn *: 11: 29 b\nDevice IP: 10.11.12.13\nACODE=0; FCODS=[MCP COMMAND]; QSFNS=1\nAccess Code\nINSERT MCP Command\nof the function to be\nactivated in the QS menu.\nQuick Start Function Selection\nLINK Terminate\n[MCP ONLY]\nAL0\n[LTERM]\nTerminate the PPP data link\nMCPI session QUIT\n[MCP ONLY]\nAL0\n[MQUIT]\nQuit the MCPI connection\nFunctions LIST\n[MCP ONLY]\nAL0\n[FLIST]\nView list of all available converter functions.\nFunctions LISt Compact\n[MCP ONLY]\nAL0\n[FLISC]\nView compact list of all available converter functions.\nFunctions Menu SELection\n[MCP ONLY]\nAL0\n[FMSEL]\nSelect menu for functions list\nConFiguration LiST\n[MCP ONLY]\nAL0\n[CFLST]\nConfiguration parameter list. The list with the status / values of the converter parameter.\nVolume Totalizer Total Positive Set\n[MCP ONLY]\nAL4\n[VTTPS]\nTotaliz. T+ value set\nVolume Totalizer Partial Positive Set\n[MCP ONLY]\nAL4\n[VTPPS]\nTotaliz.P+ value set\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nISOIL\nINDUSTRIA\n68 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "LINK Terminate",
+            "[MCP ONLY]",
+            "AL0",
+            "[LTERM]"
+          ],
+          [
+            "Terminate the PPP data link",
+            "",
+            "",
+            ""
+          ],
+          [
+            "MCPI session QUIT",
+            "[MCP ONLY]",
+            "AL0",
+            "[MQUIT]"
+          ],
+          [
+            "Quit the MCPI connection",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Functions LIST",
+            "[MCP ONLY]",
+            "AL0",
+            "[FLIST]"
+          ],
+          [
+            "View list of all available converter functions.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Functions LISt Compact",
+            "[MCP ONLY]",
+            "AL0",
+            "[FLISC]"
+          ],
+          [
+            "View compact list of all available converter functions.",
+            "",
+            ""
+          ],
+          [
+            "Functions Menu SELection",
+            "[MCP ONLY]",
+            "AL0",
+            "[FMSEL]"
+          ],
+          [
+            "Select menu for functions list",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ConFiguration LiST",
+            "[MCP ONLY]",
+            "AL0",
+            "[CFLST]"
+          ],
+          [
+            "Configuration parameter list. The list with the status / values of the converter parameter."
+          ],
+          [
+            "Volume Totalizer Total Positive Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTTPS]"
+          ],
+          [
+            "Totaliz. T+ value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Partial Positive Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTPPS]"
+          ],
+          [
+            "Totaliz.P+ value set",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "ISOMAG\nVolume Totalizer Total Negative Set\n[MCP ONLY]\nAL4\n[VTTNS]\nTotaliz. T- value set\nVolume Totalizer Partial Negative Set\n[MCP ONLY]\nAL4\n[VTPNS]\nTotaliz.P- value set\nVolume Total Positive Overflow Set\n[MCP ONLY]\nAL4\n[VTPOS]\nTotaliz.T+ overflow value set\nVolume Partial Positive Overflow Set\n[MCP ONLY]\nAL4\n[VPPOS]\nTotaliz.P+ overflow value set\nVolume Total Negative Overflow Set\n[MCP ONLY]\nAL4\n[VTNOS]\nTotaliz.T- overflow value set\nVolume Partial Negative Overflow Set\n[MCP ONLY]\nAL4\n[VPNOS]\nTotaliz.P- overflow value set\nCPU MaX.recorded temperature\n[MCP ONLY]\nAL6\n[CPUMX]\nCPU max.recorded temperature\nCPU MiN.recorded temperature\n[MCP ONLY]\nAL6\n[CPUMN]\nCPU min.recorded temperature\nBoard T1 MaX.recorded temperature\n[MCP ONLY]\nAL6\n[BT1MX]\nT1 max.recorded temperature\nBoard T1 MiN.recorded temperature\n[MCP ONLY]\nAL6\n[BT1MN]\nT1 min.recorded temperature\nBoard T2 MaX.recorded temperature\n[MCP ONLY]\nAL6\n[BT2MX]\nT2 max.recorded temperature\nBoard T2 MiN.recorded temperature\n[MCP ONLY]\nAL6\n[BT2MN]\nT2 min.recorded temperature\nCalibration OFset Register 0\n[MCP ONLY]\nAL6\n[COFR0]\nCalibration offset register 0\nCalibration OFset Register 1\n[MCP ONLY]\nAL6\n[COFR1]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nCalibration offset register 1\n69 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Volume Totalizer Total Negative Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTTNS]"
+          ],
+          [
+            "Totaliz. T- value set"
+          ],
+          [
+            "Volume Totalizer Partial Negative Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTPNS]"
+          ],
+          [
+            "Totaliz.P- value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Total Positive Overflow Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTPOS]"
+          ],
+          [
+            "Totaliz.T+ overflow value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Partial Positive Overflow Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VPPOS]"
+          ],
+          [
+            "Totaliz.P+ overflow value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Total Negative Overflow Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VTNOS]"
+          ],
+          [
+            "Totaliz.T- overflow value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Partial Negative Overflow Set",
+            "[MCP ONLY]",
+            "AL4",
+            "[VPNOS]"
+          ],
+          [
+            "Totaliz.P- overflow value set",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CPU MaX.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[CPUMX]"
+          ],
+          [
+            "CPU max.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CPU MiN.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[CPUMN]"
+          ],
+          [
+            "CPU min.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board T1 MaX.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[BT1MX]"
+          ],
+          [
+            "T1 max.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board T1 MiN.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[BT1MN]"
+          ],
+          [
+            "T1 min.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board T2 MaX.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[BT2MX]"
+          ],
+          [
+            "T2 max.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board T2 MiN.recorded temperature",
+            "[MCP ONLY]",
+            "AL6",
+            "[BT2MN]"
+          ],
+          [
+            "T2 min.recorded temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration OFset Register 0",
+            "[MCP ONLY]",
+            "AL6",
+            "[COFR0]"
+          ],
+          [
+            "Calibration offset register 0",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration OFset Register 1",
+            "[MCP ONLY]",
+            "AL6",
+            "[COFR1]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "ISOMAG\nCalibration GAin Register 0\n[MCP ONLY]\nAL6\n[CGAR0]\nCalibration gain register 0\nCalibration GAin Register 1\n[MCP ONLY]\nAL6\n[CGAR1]\nCalibration gain register 1\nCalibration GAin Register 2\n[MCP ONLY]\nAL6\n[CGAR2]\nCalibration gain register 2\nCalibration GAin Register 3\n[MCP ONLY]\nAL6\n[CGAR3]\nCalibration gain register 3\nCalibration GAin Register C\n[MCP ONLY]\nAL6\n[CGARC]\nCalibration gain register C\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nISOIL\nINDUSTRIA\n70 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Calibration GAin Register 0",
+            "[MCP ONLY]",
+            "AL6",
+            "[CGAR0]"
+          ],
+          [
+            "Calibration gain register 0",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration GAin Register 1",
+            "[MCP ONLY]",
+            "AL6",
+            "[CGAR1]"
+          ],
+          [
+            "Calibration gain register 1",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration GAin Register 2",
+            "[MCP ONLY]",
+            "AL6",
+            "[CGAR2]"
+          ],
+          [
+            "Calibration gain register 2",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration GAin Register 3",
+            "[MCP ONLY]",
+            "AL6",
+            "[CGAR3]"
+          ],
+          [
+            "Calibration gain register 3",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Calibration GAin Register C",
+            "[MCP ONLY]",
+            "AL6",
+            "[CGARC]"
+          ],
+          [
+            "Calibration gain register C",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "ISOMAG\nMENU 14 - FILE (ONLY MCP)\nFile Transfer ABoRt\n[MCP ONLY]\nAL2\n[FTABR]\nAbort the current File Transfer\nFile Transfer STAte\n[MCP ONLY]\nAL0\n[FTSTA]\nShow the File Transfer state\nRead Last EVenTs\n[MCP ONLY]\nAL2\n[RLEVT]\nRead the latest system events\nRead All EVenTs\n[MCP ONLY]\nAL2\n[RAEVT]\nRead all current system events\nRead Last Logged DaTa\n[MCP ONLY]\nAL2\n[RLLDT]\nRead the latest logged data\nRead All Logged DaTa\n[MCP ONLY]\nAL2\n[RLLDT]\nRead all current logged data\nRead Last Sensor Verify Data\n[MCP ONLY]\nAL2\n[RLSVD]\nRead the latest sensor ver. data\nRead All Sensor Verify Data\n[MCP ONLY]\nAL2\n[RASVD]\nRead all sensor verify data\nFile SEND\n[MCP ONLY]\nAL2\n[FSEND]\nSet file name for read operation\nFile ReCeiVE\n[MCP ONLY]\nAL5\n[FRCVE]\nSet file name for write operation\nFile Receive APpend mode\n[MCP ONLY]\nAL5\n[FRCAP]\nSet file name for write-append\nFile OFFSet position\n[MCP ONLY]\nAL2\n[FOFFS]\nSet file offset position\nConFiGuration file WRite\n[MCP ONLY]\nAL2\n[CFGWR]\nSave the configuration to a file\nConFiGuration file ReaD\n[MCP ONLY]\nAL2\n[CFGRD]\nRead the configuration from file\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n71 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "File Transfer ABoRt",
+            "[MCP ONLY]",
+            "AL2",
+            "[FTABR]"
+          ],
+          [
+            "Abort the current File Transfer",
+            "",
+            "",
+            ""
+          ],
+          [
+            "File Transfer STAte",
+            "[MCP ONLY]",
+            "AL0",
+            "[FTSTA]"
+          ],
+          [
+            "Show the File Transfer state",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read Last EVenTs",
+            "[MCP ONLY]",
+            "AL2",
+            "[RLEVT]"
+          ],
+          [
+            "Read the latest system events",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read All EVenTs",
+            "[MCP ONLY]",
+            "AL2",
+            "[RAEVT]"
+          ],
+          [
+            "Read all current system events",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read Last Logged DaTa",
+            "[MCP ONLY]",
+            "AL2",
+            "[RLLDT]"
+          ],
+          [
+            "Read the latest logged data",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read All Logged DaTa",
+            "[MCP ONLY]",
+            "AL2",
+            "[RLLDT]"
+          ],
+          [
+            "Read all current logged data",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read Last Sensor Verify Data",
+            "[MCP ONLY]",
+            "AL2",
+            "[RLSVD]"
+          ],
+          [
+            "Read the latest sensor ver. data",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Read All Sensor Verify Data",
+            "[MCP ONLY]",
+            "AL2",
+            "[RASVD]"
+          ],
+          [
+            "Read all sensor verify data",
+            "",
+            "",
+            ""
+          ],
+          [
+            "File SEND",
+            "[MCP ONLY]",
+            "AL2",
+            "[FSEND]"
+          ],
+          [
+            "Set file name for read operation",
+            "",
+            "",
+            ""
+          ],
+          [
+            "File ReCeiVE",
+            "[MCP ONLY]",
+            "AL5",
+            "[FRCVE]"
+          ],
+          [
+            "Set file name for write operation",
+            "",
+            "",
+            ""
+          ],
+          [
+            "File Receive APpend mode",
+            "[MCP ONLY]",
+            "AL5",
+            "[FRCAP]"
+          ],
+          [
+            "Set file name for write-append",
+            "",
+            "",
+            ""
+          ],
+          [
+            "File OFFSet position",
+            "[MCP ONLY]",
+            "AL2",
+            "[FOFFS]"
+          ],
+          [
+            "Set file offset position",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ConFiGuration file WRite",
+            "[MCP ONLY]",
+            "AL2",
+            "[CFGWR]"
+          ],
+          [
+            "Save the configuration to a file",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ConFiGuration file ReaD",
+            "[MCP ONLY]",
+            "AL2",
+            "[CFGRD]"
+          ],
+          [
+            "Read the configuration from file",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "ISOMAG\nFuNCtion list file WRite\n[MCP ONLY]\nAL2\n[FNCWR]\nSave the functions list to file\nFunction Enable Status WRite\n[MCP ONLY]\nAL6\n[FESWR]\nSave function enable status to file\nQuick Start function Status WRite\n[MCP ONLY]\nAL6\n[QSSWR]\nSave quick start function enable.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nISOIL\nINDUSTRIA\n72 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "FuNCtion list file WRite",
+            "[MCP ONLY]",
+            "AL2",
+            "[FNCWR]"
+          ],
+          [
+            "Save the functions list to file",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Function Enable Status WRite",
+            "[MCP ONLY]",
+            "AL6",
+            "[FESWR]"
+          ],
+          [
+            "Save function enable status to file",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Quick Start function Status WRite",
+            "[MCP ONLY]",
+            "AL6",
+            "[QSSWR]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "ISOMAG\nMENU 15 - PROCESS DATA (ONLY MCP)\nOUTput 1 Set\n[MCP ONLY]\nAL0\n[OUT1S]\nSet value for digital output 1\nOUTput 2 Set\n[MCP ONLY]\nAL0\n[OUT2S]\nSet value for digital output 2\nDigital INput 1 Status\n[MCP ONLY]\nAL0\n[DIN1S]\nDigital input 1 status read\nFlow Rate Full Scale in chosen Units\n[MCP ONLY]\nAL0\n[FRFSU]\nF.rate f.scale in chosen units\nFlow Rate Value PerCentage\n[MCP ONLY]\nAL0\n[FRVPC]\nFlow rate value in percentage\nFlow Rate Value Percentage without cut-off\n[MCP ONLY]\nAL0\n[FRVPX]\nF.rate in perc.without cut-off\nFlow Rate Value Binary without cut-off\n[MCP ONLY]\nAL0\n[FRVBX]\nF.rate in binary.without cut-off\nFlow Rate Value Technical Unit\n[MCP ONLY]\nAL0\n[FRVTU]\nF.rate value in unit of measure\nVolume Totalizer Total Positive Value\n[MCP ONLY]\nAL0\n[VTTPV]\nTotaliz. T+ read value\nVolume Totalizer Partial Positive Value\n[MCP ONLY]\nAL0\n[VTPPV]\nTotaliz.P+ read value\nVolume Totalizer Total Negative Value\n[MCP ONLY]\nAL0\n[VTTNV]\nTotaliz. T- read value\nVolume Totalizer Partial Negative Value\n[MCP ONLY]\nAL0\n[VTPNV]\nTotaliz.P- read value\nVolume Totalizer Total Positive Overflow\n[MCP ONLY]\nAL0\n[VTTPO]\nTotaliz. T+ number of overflows\nVolume Totalizer Partial Positive Overflow\n[MCP ONLY]\nAL0\n[VTPPO]\nTotaliz.P+ number of overflows\nVolume Totalizer Total Negative Overflow\n[MCP ONLY]\nAL0\n[VTTNO]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nTotaliz. T- number of overflows\n73 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "OUTput 1 Set",
+            "[MCP ONLY]",
+            "AL0",
+            "[OUT1S]"
+          ],
+          [
+            "Set value for digital output 1",
+            "",
+            "",
+            ""
+          ],
+          [
+            "OUTput 2 Set",
+            "[MCP ONLY]",
+            "AL0",
+            "[OUT2S]"
+          ],
+          [
+            "Set value for digital output 2",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Digital INput 1 Status",
+            "[MCP ONLY]",
+            "AL0",
+            "[DIN1S]"
+          ],
+          [
+            "Digital input 1 status read",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flow Rate Full Scale in chosen Units",
+            "[MCP ONLY]",
+            "AL0",
+            "[FRFSU]"
+          ],
+          [
+            "F.rate f.scale in chosen units",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flow Rate Value PerCentage",
+            "[MCP ONLY]",
+            "AL0",
+            "[FRVPC]"
+          ],
+          [
+            "Flow rate value in percentage",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flow Rate Value Percentage without cut-off",
+            "[MCP ONLY]",
+            "AL0",
+            "[FRVPX]"
+          ],
+          [
+            "F.rate in perc.without cut-off",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flow Rate Value Binary without cut-off",
+            "[MCP ONLY]",
+            "AL0",
+            "[FRVBX]"
+          ],
+          [
+            "F.rate in binary.without cut-off",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Flow Rate Value Technical Unit",
+            "[MCP ONLY]",
+            "AL0",
+            "[FRVTU]"
+          ],
+          [
+            "F.rate value in unit of measure",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Total Positive Value",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTTPV]"
+          ],
+          [
+            "Totaliz. T+ read value",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Partial Positive Value",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTPPV]"
+          ],
+          [
+            "Totaliz.P+ read value",
+            ""
+          ],
+          [
+            "Volume Totalizer Total Negative Value",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTTNV]"
+          ],
+          [
+            "Totaliz. T- read value",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Partial Negative Value",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTPNV]"
+          ],
+          [
+            "Totaliz.P- read value",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Total Positive Overflow",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTTPO]"
+          ],
+          [
+            "Totaliz. T+ number of overflows",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Partial Positive Overflow",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTPPO]"
+          ],
+          [
+            "Totaliz.P+ number of overflows",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Volume Totalizer Total Negative Overflow",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTTNO]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "ISOMAG\nVolume Totalizer Partial Negative Overflow\n[MCP ONLY]\nAL0\n[VTPNO]\nTotaliz.P- number of overflows\nBoard TeMPeratures\n[MCP ONLY]\nAL0\n[BTMPS]\nBoard temperatures\nCPU temperature\n[MCP ONLY]\nAL0\n[CPUTP]\nCPU temperature\nSensor Coils Temperature\n[MCP ONLY]\nAL0\n[SCLTP]\nsensor's coils temperature\nLiQuid VELocity\n[MCP ONLY]\nAL0\n[LQVEL]\nLiquid velocity\nAVeraGe process data Samples Number\n[MCP ONLY]\nAL0\n[AVGSN]\nN.of samples for averaged values\nALARM status\n[MCP ONLY]\nAL0\n[ALARM]\nActive alarm(s) status\nSensor TeSt Result Code\n[MCP ONLY]\nAL0\n[STSRC]\nSensor test result code\nMain power status\n[MCP ONLY]\nAL0\n[MPWRS]\nStatus of main power supply\nINput RESistance\n[MCP ONLY]\nAL0\n[INRES]\nEquivalent Input resistance\nINput VoltageS\n[MCP ONLY]\nAL0\n[INVLS]\nElectrodes input voltages\nSystem Battery Voltage\n[MCP ONLY]\nAL0\n[SBVLT?]\nView battery voltage\nSystem Battery Charge Status\n[MCP ONLY]\nAL0\n[SBCHS?]\nView system battery charge status\nMeasure BUFFers\n[MCP ONLY]\nAL0\n[MBUFF]\nMeasure buffers data read\nSEQuence NumBer\n[MCP ONLY]\nAL0\n[SEQNB]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nSequence number\nISOIL\nINDUSTRIA\n74 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Volume Totalizer Partial Negative Overflow",
+            "[MCP ONLY]",
+            "AL0",
+            "[VTPNO]"
+          ],
+          [
+            "Totaliz.P- number of overflows",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Board TeMPeratures",
+            "[MCP ONLY]",
+            "AL0",
+            "[BTMPS]"
+          ],
+          [
+            "Board temperatures",
+            "",
+            "",
+            ""
+          ],
+          [
+            "CPU temperature",
+            "[MCP ONLY]",
+            "AL0",
+            "[CPUTP]"
+          ],
+          [
+            "CPU temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Sensor Coils Temperature",
+            "[MCP ONLY]",
+            "AL0",
+            "[SCLTP]"
+          ],
+          [
+            "sensor's coils temperature",
+            "",
+            "",
+            ""
+          ],
+          [
+            "LiQuid VELocity",
+            "[MCP ONLY]",
+            "AL0",
+            "[LQVEL]"
+          ],
+          [
+            "Liquid velocity",
+            "",
+            "",
+            ""
+          ],
+          [
+            "AVeraGe process data Samples Number",
+            "[MCP ONLY]",
+            "AL0",
+            "[AVGSN]"
+          ],
+          [
+            "N.of samples for averaged values",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ALARM status",
+            "[MCP ONLY]",
+            "AL0",
+            "[ALARM]"
+          ],
+          [
+            "Active alarm(s) status",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Sensor TeSt Result Code",
+            "[MCP ONLY]",
+            "AL0",
+            "[STSRC]"
+          ],
+          [
+            "Sensor test result code",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Main power status",
+            "[MCP ONLY]",
+            "AL0",
+            "[MPWRS]"
+          ],
+          [
+            "Status of main power supply",
+            "",
+            "",
+            ""
+          ],
+          [
+            "INput RESistance",
+            "[MCP ONLY]",
+            "AL0",
+            "[INRES]"
+          ],
+          [
+            "Equivalent Input resistance",
+            "",
+            "",
+            ""
+          ],
+          [
+            "INput VoltageS",
+            "[MCP ONLY]",
+            "AL0",
+            "[INVLS]"
+          ],
+          [
+            "Electrodes input voltages",
+            "",
+            "",
+            ""
+          ],
+          [
+            "System Battery Voltage",
+            "[MCP ONLY]",
+            "AL0",
+            "[SBVLT?]"
+          ],
+          [
+            "View battery voltage",
+            "",
+            "",
+            ""
+          ],
+          [
+            "System Battery Charge Status",
+            "[MCP ONLY]",
+            "AL0",
+            "[SBCHS?]"
+          ],
+          [
+            "View system battery charge status",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Measure BUFFers",
+            "[MCP ONLY]",
+            "AL0",
+            "[MBUFF]"
+          ],
+          [
+            "Measure buffers data read",
+            "",
+            "",
+            ""
+          ],
+          [
+            "SEQuence NumBer",
+            "[MCP ONLY]",
+            "AL0",
+            "[SEQNB]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "ISOMAG\nMETER DATA\nThis function allows the import of data from one converter to another up to level 4 included.\nThe hardware configurations and the corresponding calibration values are not restored.\nThe \"data import\" procedure can be performed one time only, since the directory, according to the\nboard's SERIAL NUMBER, will be renamed.\nOPERATING PROCEDURE TO CHANGE THE CONVERTER BOARD\nRemove the 4 screws (see \"MV210 construction\" page10) to remove the main housing.\nAttention of any electrical cables.\n!\n0\n0\nQ\nRemove the 4 screws (see \"MV210 construction\" page10) to remove the MV210 board. Attention\nof any electrical cables. Remove the SD card and insert the new MV210 board.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nPush Remove SDcard\nNew board MV210\nC\nC\n10\nAssembled the card turn on the converter and enable [Save Conv. F. def.] function to restore data.\nFUNCTIONS\nT+ reset\nP+ reset\nI- reset\np- reset\nLoad Sens. f. def\n44++\nLoad Conv.f.def\nSave Sens.f.def\nSave Conv.f. def\nCalibration\n11-Functions\n12-Diagnostic\n13-System\nView function \"11.8\" page30.\n75 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "ISOMAG\nB.I.V. (BUILT-IN VERIFICATOR)\nBIV, abbreviation for Built In Verificator, is available as option for MV210 converters and must be\nenabled by the manufacturer. It is also necessary that the SD card is activated to store saved data. The\nanalysis of collected data performed by a dedicated IsoBIV software running on another device (PC).\nThe simplicity of test procedures minimize the risk of handling errors; maximum safety and reliability\nthanks to the traceable factory calibration and internal references complement the safety by design\nprinciple with minimal failure rates\nIsoBIV allows to create and print a report as validation of device functionality/measure error.\nOperation and Conditions of Use.\nThe system is based on periodic measurements performed every hour or using a manual command\n(MCP command = SVERC). The sensor parameters are measured and compared with previously\nmeasured and stored reference values. Each time the system performs a series of measurements on\nthe sensor and records them in a file called \"STESTLOG.CSV\", which resides in the main directory of\nthe SD memory of the converter.\nThe sensor test can also be carried out without the active BIV system, but in this case only the presence\nof isolation losses and the overall good functioning of the sensor such the coil resistance, the excitation\ncurrent and the rising times of the current within the generic limits that guarantee operation.\nInstead if BIV is active, the measurements are deeper and the measured values are tested by comparing\nthem with a set of characteristic sensor parameters measured at the time of installation.\nSaving Reference Values (Characteristic Parameters)\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nAfter sensor installation, the parameters that will be used as reference for the BIV system and the IsoBIV\ndata analysis software must to be measured.\nThe characteristic values of the coil circuits are saved in the converter memory at the factory before to\nship the instrument. For the reference measure of the electrodes circuits, there is a specific function that\nperform the measures of voltage and resistance at the installation site. This function is managed ONLY by\nthe IsoBIV program, which through a simple wizard will set the converter to perform the measures in the\nspecific measurement point where the meter is installed.\nTo activate BIV, these functions must be verified:\nQ [ASVFE=1] : It enable the sensor's automatic test every hour. The ASVFE function in Menu 1 with\naccess level 3 can be also activated using the instrument's display.\nThis feature can be enabled even if the SD card is not installed and if the BIV function is not active; in\nsuch a case the sensor file is NOT created and any alarms will be generated either if the data deviation\nfrom the reference data is outside the sesnor's limits.\nPractically, in the absence of the necessary hardware permissions, this function is useful to test the\ninsulation of the coils.\n76 / 85\n210_EN_IT_IS_R1_1.02.0\nISOIL\nINDUSTRIA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "ISOMAG\nOpening and reading manually the files STESTLOG.CSV\nThe list below describes the steps for saving and reading STESTLOG.CSV file.\n\nOPEN INTERFACE STARTING THE PROGRAM MCP\nFOLLOW THE STEPS HERE BELOW\nConnection\nOptions\nView\nTools\nAccess\nFunction list:\nMenu\n+\nSensore\nUnita'misura\nScale\nMisura\nAlarm\nIngressi\nUscite\n1-0-0-0-0-000-0-0-0-00\nDisplay\nData logger\nFunzioni\nDiagnostica\nSistema\nFile\nDati processo\nMcp console:\nMCP\nConfig. Files\nDatalogger\nDownload settings:\nData source:\nWhen:\nToday:\nEvents\nDatalogger\n@ Today\nData Range\n@ Last\nSensor Verify\nSave path:\nO Generic file\nC:\\Users'\nO Al\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n77 / 85\n260 cmds\n100\n1.0893\n.M/S\nE1\nE2\n9:003E2R kč\n+2.219 dm3/s\n+21.79/\n1\n- Select Sensor Verify\n- Choose the date or reference period of the\nwhich one wants to carry out the evaluation of the (\n- Choose the directory where to save the file\nNESSUN ALLARME\nT+dm3\n87768.277\n2\nPress Download to download the file.\nPress Download to download the file.\nAt the end of the download the stestlog.csv file\nwill be automatically opened by the program\nDevice IP: 10.11. 12. 13\nDownload\nStop\n×\nOpen folder\nSelect\nO .\nSearch for the consultation of the files inside\nof the drive SD card.\nPath structure for searching the files in the SD card of the converter\nSensor serial number\n>\nReference year\nReference month\nReference day\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    }
+  ]
+}

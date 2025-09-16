@@ -1,0 +1,1978 @@
+{
+  "archivo": "ATV320_Programming_manual_p1_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Altivar Machine ATV320\nVariadores de velocidad\npara motores síncronos y asíncronos\nManual de programación\n04/2018\nCAN RUN CANERK\nCAN En\nCont\nValue\nCont\nUnit\nESC\nESC\nAA\nDANGER\nMAZAND OF ELECTRIC\nSHOCK DEPLOSION,\nall power wall 15 minutes\nSchneider\nObiectric\nATV320HU15M2\n880944101002\n1.5KW - 2HP - 200-240V-\nNVE41298\nSchneider\nElectric\nwww.schneider-electric.com",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "La información incluida en esta documentación contiene descripciones generales y características técnicas\ndel rendimiento de los productos. Esta documentación no pretende sustituir ni debe utilizarse para determinar\nla adecuación o la fiabilidad de estos productos para aplicaciones específicas de los usuarios. Es obligación\ndel usuario o del integrador realizar el análisis adecuado y completo de los riesgos, así como la evaluación y\nprueba de los productos con respecto a la aplicación o el uso específico en cuestión. Ni Schneider Electric ni\nninguna de sus filiales será responsable del uso indebido de la información contenida en este documento. Si\ntiene sugerencias de mejoras o modificaciones en esta publicación o bien detecta errores en ella, le\nagradeceríamos que nos lo notificara.\nNo se puede reproducir este documento de ninguna forma, ni en su totalidad ni en parte, ya sea por medio\nelectrónico o mecánico, incluida la fotocopia, sin el permiso previo y escrito de Schneider Electric.\nAl instalar y utilizar este producto se deben cumplir todas las normativas de seguridad locales, regionales o\nestatales pertinentes. Por motivos de seguridad y a fin de garantizar la conformidad con los datos del sistema\ndocumentados, únicamente el fabricante puede efectuar reparaciones en los componentes.\nCuando los dispositivos se utilicen para aplicaciones con requisitos técnicos de seguridad, siga las\ninstrucciones pertinentes.\nEn caso de no utilizar software de Schneider Electric o software aprobado por Schneider Electric con nuestros\nproductos de hardware, se pueden producir lesiones en las personas, daños en los equipos o un\nfuncionamiento incorrecto.\nSi no se tiene en cuenta esta información, se pueden producir lesiones personales o daños materiales.\n@ 2017 Schneider Electric. Todos los derechos reservados.\n2\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Tabla de contenidos\nÍndice\nInformación de seguridad\n7\nAcerca de este libro\n11\nDescripción general\n15\nCapítulo 1\nDescripción general .\n19\nConfiguración de fábrica.\n20\nFunciones de aplicación .\n21\nFunciones básicas\n.\n.\n25\nOpción de terminal gráfico\n.\n26\nPrimer encendido del variador\n.\n29\nOpción de terminal remoto\n32\nEstructura de las tablas de parámetros\n33\nBúsqueda de un parámetro en este documento\n.\n.\n34\nDescripción de la HMI\n.\n35\nEstructura de los menús\n37\nCapítulo 2\nConfiguración\n39\nPasos para configurar el variador.\n40\nPasos iniciales.\n41\nProgramación\n43\nCapítulo 3\nModo de referencia (rEF)\n45\nIntroducción\n.\n46\nAcceso a los menús\n47\nMenú\n.\n48\nCapítulo 4\nModo de supervisión (MOn)\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n49\nIntroducción\n50\nAcceso a los menús\n51\nMenú\n52\n[SUPERV. MOTOR]\n52\n[SUPERV. MOTOR] (continuación)\n53\n[IMAGEN E/S]\n53\n[SUPERV. SEGURIDAD]\n56\n[SUPERV. BLOQUES FUN.]\n57\n[IMAGEN COMUNICACIÓN]\n58\n[SUPERV. PI]\n65\n[SUPERV. TIEMP.TENSIÓN]\n65\n[ALARMAS]\n66\n[OTROS ESTADOS]\n67\n[DIAGNÓSTICO]\n67\n[CÓDIGO DE ACCESO]\n78\nNVE41298 04/2018\n3",
+      "tablas": [
+        [
+          [
+            "Índice",
+            ""
+          ],
+          [
+            "",
+            "Información de seguridad",
+            "7"
+          ],
+          [
+            "",
+            "Acerca de este libro",
+            "11"
+          ],
+          [
+            "Descripción general",
+            "15"
+          ],
+          [
+            "Capítulo 1",
+            "Descripción general .",
+            "19"
+          ],
+          [
+            "",
+            "Configuración de fábrica.",
+            "20"
+          ],
+          [
+            "",
+            "Funciones de aplicación .",
+            "21"
+          ],
+          [
+            "",
+            "Funciones básicas .",
+            ". 25"
+          ],
+          [
+            "Opción de terminal gráfico .",
+            "26"
+          ],
+          [
+            "",
+            "Primer encendido del variador",
+            ". 29"
+          ],
+          [
+            "Opción de terminal remoto",
+            "32"
+          ],
+          [
+            "Estructura de las tablas de parámetros",
+            "33"
+          ],
+          [
+            "Búsqueda de un parámetro en este documento .",
+            ". 34"
+          ],
+          [
+            "Descripción de la HMI",
+            ". 35"
+          ],
+          [
+            "",
+            "Estructura de los menús",
+            "37"
+          ],
+          [
+            "Capítulo 2",
+            "Configuración",
+            "39"
+          ],
+          [
+            "",
+            "Pasos para configurar el variador.",
+            "40"
+          ],
+          [
+            "",
+            "Pasos iniciales.",
+            "41"
+          ],
+          [
+            "Programación",
+            "43"
+          ],
+          [
+            "Capítulo 3",
+            "Modo de referencia (rEF)",
+            "45"
+          ],
+          [
+            "",
+            "Introducción .",
+            "46"
+          ],
+          [
+            "",
+            "Acceso a los menús",
+            "47"
+          ],
+          [
+            "",
+            "Menú",
+            ". 48"
+          ],
+          [
+            "Capítulo 4",
+            "Modo de supervisión (MOn) . . . . . . . . .",
+            ". 49"
+          ],
+          [
+            "",
+            "Introducción",
+            "50"
+          ],
+          [
+            "",
+            "Acceso a los menús",
+            "51"
+          ],
+          [
+            "",
+            "Menú",
+            "52"
+          ],
+          [
+            "",
+            "[SUPERV. MOTOR]",
+            "52"
+          ],
+          [
+            "",
+            "[SUPERV. MOTOR] (continuación)",
+            "53"
+          ],
+          [
+            "",
+            "[IMAGEN E/S]",
+            "53"
+          ],
+          [
+            "",
+            "[SUPERV. SEGURIDAD]",
+            "56"
+          ],
+          [
+            "",
+            "[SUPERV. BLOQUES FUN.]",
+            "57"
+          ],
+          [
+            "",
+            "[IMAGEN COMUNICACIÓN]",
+            "58"
+          ],
+          [
+            "",
+            "[SUPERV. PI]",
+            "65"
+          ],
+          [
+            "",
+            "[SUPERV. TIEMP.TENSIÓN]",
+            "65"
+          ],
+          [
+            "",
+            "[ALARMAS]",
+            "66"
+          ],
+          [
+            "",
+            "[OTROS ESTADOS]",
+            "67"
+          ],
+          [
+            "",
+            "[DIAGNÓSTICO]",
+            "67"
+          ],
+          [
+            "",
+            "[CÓDIGO DE ACCESO]",
+            "78"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Tabla de contenidos\nCapítulo 5\nModo Configuración (ConF)\n.\n79\nIntroducción\n80\nAcceso a los menús\n81\nMenú usuario\n.\n.\n.\n.\n.\n82\nAjustes de fábrica\n.\n83\nMacroconfiguración\n.\n.\n.\n84\nFull\n.\n87\n[ARRANQUE RÁPIDO]\n87\n[AJUSTES]\n91\n[CONTROL MOTOR]\n106\n[ENTRADAS/SALIDAS]\n126\n[CONTROL]\n155\n[BLOQUES FUNCION]\n159\n[FUNCIONES APLICACIÓN] (FUn-)\n163\nCONMUTACIÓN DE REFERENCIA\n168\nOPERACIONES CON REFERENCIAS\n169\nRAMPA\n171\nCONFIGURACIÓ PARADA\n174\nINYECCIÓN DC AUTO.\n177\nJOG\n179\nVELOCIDADES PRESELECCIONADAS\n181\n+/- VELOCIDAD\n185\n+/- VELOCIDAD EN TORNO A UNA REFERENCIA\n187\nMEMORIZACIÓN DE REFERENCIAS\n189\nMAGNETIZACIÓN POR ENTRADAS LÓGICAS\n190\nCONTROL DE LÓGICA DE FRENO\n192\nMEDICIÓN DE LA CARGA EXTERNA\n200\nELEVACIÓN A ALTA VELOCIDAD\n202\nREGULADOR PID\n208\nREFERENCIAS PID PRESELECCIONADAS\n216\nLIMITACIÓN DE PAR\n217\nSEGUNDA LIMITACIÓN DE INTENSIDAD\n220\nACTIVAR MODEL I2T.\n221\nCONTROL DE UN CONTACTOR DE LÍNEA\n222\nCONTROL DEL CONTACTOR DE SALIDA.\n224\nPOSICIONAMIENTO MEDIANTE SENSORES\n226\nCONMUTACIÓN DEL CONJUNTO DE PARÁMETROS\n232\nMULTIMOTORES/MULTICONFIGURACIONES\n235\nAUTOAJUSTE POR ENTRADA LÓGICA.\n239\nGUIADO DE HILO\n240\n[GESTIÓN DE FALLOS]\n253\n[COMUNICACIÓN]\n280\nNivel de acceso\n284\nCapítulo 6\nInterfaz (ItF)\n285\nNivel acceso (LAC)\n286\nIdioma (LnG).\n.\n.\n.\n.\n.\n288\nPantalla supervisión (MCF)\n.\n289\nConfiguración de visualización (dCF).\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n293\nCapítulo 7\nAbrir/Guardar (trA)\n301\nCapítulo 8\nCódigo de acceso (COd)\n305\nCapítulo 9\nPantalla Multipunto\n307\n4\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Tabla de contenidos"
+          ],
+          [
+            "Capítulo 5",
+            "Modo Configuración (ConF) .",
+            "79"
+          ],
+          [
+            "Introducción",
+            "80"
+          ],
+          [
+            "Acceso a los menús",
+            "81"
+          ],
+          [
+            "Menú usuario . . .",
+            ". . 82"
+          ],
+          [
+            "Ajustes de fábrica .",
+            "83"
+          ],
+          [
+            "",
+            "Macroconfiguración . .",
+            ". 84"
+          ],
+          [
+            "",
+            "Full",
+            ". 87"
+          ],
+          [
+            "[ARRANQUE RÁPIDO]",
+            "87"
+          ],
+          [
+            "",
+            "[AJUSTES]",
+            "91"
+          ],
+          [
+            "",
+            "[CONTROL MOTOR]",
+            "106"
+          ],
+          [
+            "",
+            "[ENTRADAS/SALIDAS]",
+            "126"
+          ],
+          [
+            "",
+            "[CONTROL]",
+            "155"
+          ],
+          [
+            "",
+            "[BLOQUES FUNCION]",
+            "159"
+          ],
+          [
+            "[FUNCIONES APLICACIÓN] (FUn-)",
+            "163"
+          ],
+          [
+            "",
+            "CONMUTACIÓN DE REFERENCIA",
+            "168"
+          ],
+          [
+            "",
+            "OPERACIONES CON REFERENCIAS",
+            "169"
+          ],
+          [
+            "RAMPA",
+            "171"
+          ],
+          [
+            "",
+            "CONFIGURACIÓ PARADA",
+            "174"
+          ],
+          [
+            "INYECCIÓN DC AUTO.",
+            "177"
+          ],
+          [
+            "JOG",
+            "179"
+          ],
+          [
+            "VELOCIDADES PRESELECCIONADAS",
+            "181"
+          ],
+          [
+            "+/- VELOCIDAD",
+            "185"
+          ],
+          [
+            "+/- VELOCIDAD EN TORNO A UNA REFERENCIA",
+            "187"
+          ],
+          [
+            "",
+            "MEMORIZACIÓN DE REFERENCIAS",
+            "189"
+          ],
+          [
+            "MAGNETIZACIÓN POR ENTRADAS LÓGICAS",
+            "190"
+          ],
+          [
+            "",
+            "CONTROL DE LÓGICA DE FRENO",
+            "192"
+          ],
+          [
+            "MEDICIÓN DE LA CARGA EXTERNA",
+            "200"
+          ],
+          [
+            "ELEVACIÓN A ALTA VELOCIDAD",
+            "202"
+          ],
+          [
+            "REGULADOR PID",
+            "208"
+          ],
+          [
+            "REFERENCIAS PID PRESELECCIONADAS",
+            "216"
+          ],
+          [
+            "LIMITACIÓN DE PAR",
+            "217"
+          ],
+          [
+            "SEGUNDA LIMITACIÓN DE INTENSIDAD",
+            "220"
+          ],
+          [
+            "",
+            "ACTIVAR MODEL I2T.",
+            "221"
+          ],
+          [
+            "CONTROL DE UN CONTACTOR DE LÍNEA",
+            "222"
+          ],
+          [
+            "CONTROL DEL CONTACTOR DE SALIDA.",
+            "224"
+          ],
+          [
+            "POSICIONAMIENTO MEDIANTE SENSORES",
+            "226"
+          ],
+          [
+            "CONMUTACIÓN DEL CONJUNTO DE PARÁMETROS",
+            "232"
+          ],
+          [
+            "MULTIMOTORES/MULTICONFIGURACIONES",
+            "235"
+          ],
+          [
+            "AUTOAJUSTE POR ENTRADA LÓGICA.",
+            "239"
+          ],
+          [
+            "GUIADO DE HILO",
+            "240"
+          ],
+          [
+            "[GESTIÓN DE FALLOS]",
+            "253"
+          ],
+          [
+            "",
+            "[COMUNICACIÓN]",
+            "280"
+          ],
+          [
+            "Nivel de acceso",
+            "284"
+          ],
+          [
+            "Capítulo 6",
+            "Interfaz (ItF)",
+            "285"
+          ],
+          [
+            "Nivel acceso (LAC)",
+            "286"
+          ],
+          [
+            "",
+            "Idioma (LnG). . . .",
+            ". . 288"
+          ],
+          [
+            "Pantalla supervisión (MCF) .",
+            "289"
+          ],
+          [
+            "",
+            "Configuración de visualización (dCF). . . . . . . . . . .",
+            "293"
+          ],
+          [
+            "Capítulo 7",
+            "Abrir/Guardar (trA)",
+            "301"
+          ],
+          [
+            "Capítulo 8",
+            "Código de acceso (COd)",
+            "305"
+          ],
+          [
+            "Capítulo 9",
+            "Pantalla Multipunto",
+            "307"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Tabla de contenidos\nMantenimiento y diagnóstico\n309\nCapítulo 10\nMantenimiento\n311\nCapítulo 11\nDiagnóstico y resolución de problemas\n313\nCódigo de error ..\n314\nBorrado del fallo detectado.\n314\nCódigos de detección de fallos que necesitan rearme de tensión tras\nhaberse borrado el fallo detectado\n315\nCódigos de detección de fallos que pueden borrarse con la función de\nrearranque automático tras haberse solucionado la causa\n317\nCódigos de detección de fallos que se borran en cuanto se ha\nsolucionado su causa\n320\nCambio o extracción de la tarjeta opcional.\n320\nCambio de bloque de control\n320\nCódigos de detección de fallos que se visualizan en el terminal remoto\n321\nAnexo\n323\nCapítulo 12\nÍndice de funciones\n325\nCapítulo 13\nÍndice de códigos de los parámetros\n327\nNVE41298 04/2018\n5",
+      "tablas": [
+        [
+          [
+            "Mantenimiento y diagnóstico",
+            "309"
+          ],
+          [
+            "Capítulo 10",
+            "Mantenimiento",
+            "311"
+          ],
+          [
+            "Capítulo 11",
+            "Diagnóstico y resolución de problemas",
+            "313"
+          ],
+          [
+            "",
+            "Código de error ..",
+            "314"
+          ],
+          [
+            "Borrado del fallo detectado.",
+            "314"
+          ],
+          [
+            "Códigos de detección de fallos que necesitan rearme de tensión tras",
+            ""
+          ],
+          [
+            "haberse borrado el fallo detectado",
+            "315"
+          ],
+          [
+            "Códigos de detección de fallos que pueden borrarse con la función de",
+            ""
+          ],
+          [
+            "rearranque automático tras haberse solucionado la causa",
+            "317"
+          ],
+          [
+            "Códigos de detección de fallos que se borran en cuanto se ha solucionado su causa"
+          ],
+          [
+            "320"
+          ],
+          [
+            "",
+            "Cambio o extracción de la tarjeta opcional.",
+            "320"
+          ],
+          [
+            "Cambio de bloque de control",
+            "320"
+          ],
+          [
+            "",
+            "Códigos de detección de fallos que se visualizan en el terminal remoto",
+            "321"
+          ],
+          [
+            "Anexo",
+            "323"
+          ],
+          [
+            "Capítulo 12",
+            "Índice de funciones",
+            "325"
+          ],
+          [
+            "Capítulo 13",
+            "Índice de códigos de los parámetros",
+            "327"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Tabla de contenidos\n6\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Información de seguridad\nInformación de seguridad\n§\nInformación importante\nAVISO\nLea atentamente estas instrucciones y examine el equipo para familiarizarse con el dispositivo antes de\ninstalarlo, utilizarlo o realizar su mantenimiento. Los mensajes especiales que se ilustran a continuación\npueden aparecer a lo largo de la documentación o en el equipo para advertir de peligros potenciales o para\nofrecer información que aclara o simplifica los distintos procedimientos.\n4\nCuando en una etiqueta de peligro o advertencia aparece este icono, significa que existe peligro\neléctrico que podrá causar lesiones si no se siguen las instrucciones.\n!\nEste es el icono de alerta de seguridad. Se utiliza para advertir de posibles peligros que provocarían\nlesiones personales. Obedezca todos los mensajes de seguridad que sigan a este icono para evitar\nposibles lesiones o incluso la muerte.\nA\nPELIGRO\nPELIGRO indica una situación de peligro inminente que, si no se evita, provocará lesiones graves o incluso\nla muerte.\nATENCIÓN\nATENCIÓN indica una posible situación de peligro que, si no se evita, puede provocar daños en el equipo,\nlesiones graves o incluso la muerte.\n!\nAVISO\nAVISO indica una posible situación de peligro que, si no se evita, puede provocar lesiones o daños en el\nequipo.\nAVISO\nAVISO, utilizado sin el símbolo de alerta de seguridad, indica una posible situación de peligro que, si no se\nevita, puede provocar daños en el equipo.\nTENGA EN CUENTA\nLa instalación, manejo, puesta en servicio y mantenimiento de equipos eléctricos deberán ser realizados sólo\npor personal cualificado. Schneider Electric no se hace responsable de ninguna de las consecuencias del uso\nde este material.\nUna persona cualificada es aquella que cuenta con capacidad y conocimientos relativos a la construcción, el\nfuncionamiento y la instalación de equipos eléctricos y que ha sido formada en materia de seguridad para\nreconocer y evitar los riesgos que conllevan tales equipos.\nNVE41298 04/2018\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Información de seguridad\nCualificación del personal\nSolo el personal cualificado que esté familiarizado y conozca el contenido de este manual y toda la\ndocumentación adicional pertinente tiene autorización para trabajar con este producto. Asimismo, debe haber\nrecibido la formación de seguridad necesaria para reconocer y evitar los peligros que conlleva. El personal\ndebe disponer de suficiente experiencia, conocimientos y formación técnica para prever y detectar los\nposibles peligros que puedan surgir como consecuencia del uso del producto, las modificaciones en los\najustes y el uso del equipo electrónico, eléctrico y mecánico de todo el sistema en el que se emplee el\nproducto. El personal que trabaje con el producto debe estar familiarizado con todas las normas, directivas y\nregulaciones aplicables sobre prevención de accidentes cuando realicen dichos trabajos.\nUso previsto\nDe acuerdo con el manual, este producto es un variador para motores síncronos y asíncronos trifásicos\ndestinado para uso industrial. El producto solo puede utilizarse si se cumplen todas las regulaciones y\ndirectivas de seguridad, los requisitos especificados y los datos técnicos aplicables. Antes de utilizar el\nproducto, debe realizar una evaluación de riesgos según la aplicación prevista. En función de los resultados,\ndeben implementarse las medidas de seguridad apropiadas. Puesto que el producto se utiliza como\ncomponente de un sistema integral, debe garantizar la seguridad del personal a través del diseño de todo el\nsistema (por ejemplo, el diseño de la máquina). Queda terminantemente prohibido cualquier uso distinto al\npermitido de forma explícita, ya que podría generar situaciones de riesgo. La instalación, uso, puesta en\nservicio y mantenimiento de los equipos eléctricos deberán ser realizados únicamente por personal\ncualificado.\nInformación relacionada con el producto\nLea detenidamente estas instrucciones antes de realizar ningún procedimiento con este variador.\nA APELIGRO\nPELIGRO DE DESCARGA ELÉCTRICA, EXPLOSIÓN O ARCO ELÉCTRICO\n· Solo estará autorizado a trabajar con este sistema de variador el personal debidamente formado que esté\nfamiliarizado con el contenido de este manual y el resto de documentación pertinente de este producto,\nlo entienda y haya recibido formación en seguridad para reconocer y evitar los riesgos que implica. La\ninstalación, ajuste, reparación y mantenimiento deben ser realizados por personal cualificado.\n· El integrador del sistema es responsable del cumplimiento de todos los requisitos de los códigos\neléctricos locales y nacionales, así como del resto de reglamentos aplicables relacionados con la correcta\nconexión a tierra de todo el equipo.\n· Muchos componentes del producto, incluidas las placas de circuito impreso, funcionan con tensión de\nred. No los toque. Utilice sólo herramientas con aislante eléctrico.\n· No toque los componentes no apantallados ni los borneros cuando haya tensión.\n· Los motores pueden generar tensión cuando se gira el eje. Antes de realizar cualquier tipo de trabajo en\nel sistema de variador, bloquee el eje del motor para impedir que gire.\n· La tensión de CA puede asociar la tensión a los conductores no utilizados en el cable del motor. Aísle los\ndos extremos de los conductores no utilizados del cable del motor.\n. No cortocircuite entre los borneros del bus CC, los condensadores del bus CC o los borneros de la\nresistencia de frenado.\n· Antes de trabajar en el sistema del variador:\n- Desconecte toda la alimentación eléctrica, incluida la alimentación del control externo que pueda\nestar presente.\n- Coloque una etiqueta con el mensaje No encender en todos los interruptores de alimentación.\n- Bloquee todos los interruptores de alimentación en la posición abierta.\n- Espere 15 minutos para que los condensadores del bus CC se descarguen. El LED del bus CC no\nes un indicador de la ausencia de tensión del bus CC que puede exceder 800 V CC.\n- Mida la tensión del bus CC entre las bornas del bus CC (PA/+, PC/-) usando un voltímetro con la\ncapacidad adecuada para comprobar que la tensión es <42 V CC.\n- Si los condensadores del bus CC no se descargan correctamente, póngase en contacto con su\nrepresentante local de Schneider Electric. No repare ni haga funcionar el producto.\n· Instale y cierre todas las cubiertas antes de aplicar tensión.\nSi no se respetan estas instrucciones, se pueden producir lesiones personales graves o la muerte.\n8\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Información de seguridad\nLos sistemas de variadores pueden realizar movimientos inesperados debido a un cableado incorrecto,\najustes inadecuados, datos incorrectos u otros errores.\n-.\nADVERTENCIA\nFUNCIONAMIENTO IMPREVISTO DEL EQUIPO\n. Instale cuidadosamente el cableado de acuerdo con los requisitos de CEM.\n· No utilice el producto con ajustes o datos desconocidos o inadecuados.\n· Realice una prueba de puesta en servicio completa.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nLos productos o accesorios dañados pueden causar descargas eléctricas o un funcionamiento imprevisto del\nequipo.\nA APELIGRO\nDESCARGA ELÉCTRICA O FUNCIONAMIENTO INESPERADO DEL EQUIPO\nNo utilice productos o accesorios dañados.\nSi no se respetan estas instrucciones, se pueden producir lesiones personales graves o la muerte.\nPóngase en contacto con la oficina de ventas local de Schneider Electric si detecta daños de cualquier tipo.\nA\nADVERTENCIA\nPÉRDIDA DEL CONTROL\n· El diseñador del esquema de control debe tener en cuenta los modos de fallo de rutas de control posibles\ny, para ciertas funciones críticas, proporcionar los medios para lograr un estado seguro durante y\ndespués de un fallo de ruta. Ejemplos de funciones críticas de control son la parada de emergencia, la\nparada de sobrerrecorrido, el corte de corriente y el rearranque.\n· Para las funciones críticas de control deben proporcionarse rutas de control separadas o redundantes.\n· Las rutas de control del sistema pueden incluir enlaces de comunicación. Deben tenerse en cuenta las\nimplicaciones de retardos o fallos de transmisión no anticipados del enlace.\n· Tenga en cuenta todas las reglamentaciones para la prevención de accidentes y las directrices de\nseguridad locales. 1\n· Cada implementación del producto debe probarse de forma individual y exhaustiva para comprobar su\nfuncionamiento correcto antes de ponerse en servicio.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\n1. Para EE. UU .: Para obtener más información, consulte NEMA ICS 1.1 (última edición), \"Safety Guidelines for the\nApplication, Installation, and Maintenance of Solid State Control\" (Directrices de seguridad para la aplicación, la\ninstalación y el mantenimiento del control de estado estático) y NEMA ICS 7.1 (última edición), \"Safety Standards\nfor Construction and Guide for Selection, Installation and Operation of Adjustable-Speed Drive Systems\" (Normas\nde seguridad para la construcción y directrices para la selección, la instalación y el funcionamiento de los variadores\nde velocidad ajustable).\nAVISO\nDESTRUCCIÓN DEBIDO A UNA TENSIÓN DE RED INCORRECTA\n· Antes de encender y configurar el producto, verifique que esté aprobado para la tensión de red\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nNVE41298 04/2018\n9",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Información de seguridad\nA ADVERTENCIA\nSUPERFICIES CALIENTES\n· Evite el contacto con superficies calientes.\n· No deje los componentes inflamables o sensibles a la temperatura cerca de superficies calientes.\n· Asegúrese de que el producto se haya enfriado lo suficiente antes de manipularlo.\n· Compruebe si la disipación de calor es suficiente; para ello, ejecute una prueba en condiciones de carga\nmáxima.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nADVERTENCIA\nENTORNOS EXPLOSIVOS\nUtilice este dispositivo únicamente fuera de zonas peligrosas (entornos explosivos).\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\n10\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Acerca de este libro\nAcerca de este libro\n§\nPresentación\nObjeto\nEl propósito de este documento es:\n· Ayudarle a configurar el variador,\n· Mostrarle cómo programar el variador,\n· Mostrarle los distintos menús, modos y parámetros,\n· Ayudarle a realizar las tareas de mantenimiento y diagnóstico.\nCampo de aplicación\nLas características técnicas de los dispositivos que se describen en este documento también se encuentran\nonline. Para acceder a esta información online:\nPaso\nAcción\n1\nVaya a la página de inicio de Schneider Electric www.schneider-electric.com.\n2\nEn el cuadro Search, escriba la referencia del producto o el nombre de el rango de productos.\n· No incluya espacios en blanco en el número de modelo ni el rango de productos.\n· Para obtener información sobre cómo agrupar módulos similares, utilice los asteriscos (*).\n3\nSi ha introducido una referencia, vaya a los resultados de búsqueda de Product datasheets y\nhaga clic en la referencia deseada.\nSi ha introducido el nombre de un rango de productos, vaya a los resultados de búsqueda de\nProduct Ranges y haga clic en la gama deseada.\n4\nSi aparece más de una referencia en los resultados de búsqueda Products, haga clic en la\nreferencia deseada.\n5\nEn función del tamaño de la pantalla, es posible que deba desplazar la página hacia abajo para\nconsultar la hoja de datos.\n6\nPara guardar o imprimir una hoja de datos como archivo .pdf, haga clic en Download XXX\nproduct datasheet.\nLas características que se indican en este manual deben coincidir con las que figuran online. De acuerdo con\nnuestra política de mejoras continuas, es posible que a lo largo del tiempo revisemos el contenido con el fin\nde elaborar documentos más claros y precisos. En caso de que detecte alguna diferencia entre el manual y\nla información online, utilice esta última para su referencia.\nDocumentos relacionados\nAcceda con rapidez a información detallada y completa sobre todos nuestros productos desde una tableta o\nun PC en www.schneider-electric.com.\nEl sitio de Internet proporciona la información necesaria para todos los productos y soluciones\n· el catálogo completo de guías de selección y características detalladas\n· miles de archivos CAD que le ayudarán a diseñar su instalación, disponibles en más de 20 formatos de\narchivo distintos\n· Todo el software y el firmware para mantener actualizada su instalación\nNVE41298 04/2018\n11",
+      "tablas": [
+        [
+          [
+            "Paso",
+            "Acción"
+          ],
+          [
+            "1",
+            "Vaya a la página de inicio de Schneider Electric www.schneider-electric.com."
+          ],
+          [
+            "2",
+            "En el cuadro Search, escriba la referencia del producto o el nombre de el rango de productos. · No incluya espacios en blanco en el número de modelo ni el rango de productos. · Para obtener información sobre cómo agrupar módulos similares, utilice los asteriscos (*)."
+          ],
+          [
+            "3",
+            "Si ha introducido una referencia, vaya a los resultados de búsqueda de Product datasheets y haga clic en la referencia deseada. Si ha introducido el nombre de un rango de productos, vaya a los resultados de búsqueda de Product Ranges y haga clic en la gama deseada."
+          ],
+          [
+            "4",
+            "Si aparece más de una referencia en los resultados de búsqueda Products, haga clic en la referencia deseada."
+          ],
+          [
+            "5",
+            "En función del tamaño de la pantalla, es posible que deba desplazar la página hacia abajo para consultar la hoja de datos."
+          ],
+          [
+            "6",
+            "Para guardar o imprimir una hoja de datos como archivo .pdf, haga clic en Download XXX product datasheet."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Acerca de este libro\n· Una gran cantidad de libros blancos, documentos ambientales, soluciones de aplicaciones,\nespecificaciones, etc., para comprender mejor nuestros equipos y sistemas eléctricos o de automatización\n· Y, por último, todas las Guías de usuario relacionadas con el variador, y que se indican a continuación:\nTítulo de la documentación\nNúmero de referencia\nATV320 Getting Started\nNVE21763 (English), NVE21771\n(French), NVE21772 (German),\nNVE21773 (Spanish), NVE21774\n(Italian), NVE21776 (Chinese)\nATV320 Getting Started Annex (SCCR)\nNVE21777 (English)\nATV320 Installation manual\nNVE41289 (English), NVE41290\n(French), NVE41291 (German),\nNVE41292 (Spanish), NVE41293\n(Italian), NVE41294 (Chinese)\nATV320 Programming manual\nNVE41295 (English), NVE41296\n(French), NVE41297 (German),\nNVE41298 (Spanish), NVE41299\n(Italian), NVE41300 (Chinese)\nATV320 Modbus Serial Link manual\nNVE41308 (English)\nATV320 Ethernet IP/Modbus TCP manual\nNVE41313 (English)\nATV320 PROFIBUS DP manual (VW3A3607)\nNVE41310 (English)\nATV320 DeviceNet manual (VW3A3609)\nNVE41314 (English)\nATV320 CANopen manual (VW3A3608, 618, 628)\nNVE41309 (English)\nATV320 EtherCAT manual (VW3A3601)\nNVE41315 (English)\nATV320 Communication Parameters\nNVE41316 (English)\nATV320 Safety Functions manual\nNVE50467 (English), NVE50468\n(French), NVE50469 (German),\nNVE50470 (Spanish), NVE50472\n(Italian), NVE50473 (Chinese)\nPuede descargar estas publicaciones técnicas y otra información técnica de nuestro sitio web www.schneider-\nelectric.com ..\nNormativa y terminología\nLos términos técnicos, la terminología y las descripciones correspondientes incluidas en este manual suelen\nemplear los términos o definiciones de las normas pertinentes.\nEn el campo de los sistemas de variadores, eso incluye, entre otras cosas, términos como error, mensaje de\nerror, falla, fallo, borrados de fallos, estado seguro, función de seguridad, advertencia, mensaje de\nadvertencia, etc.\nEntre las diferentes normas, se incluyen las siguientes:\n· Serie IEC 61800: Sistemas de variadores eléctricos de velocidad ajustable\n· Serie IEC 61508 Ed.2: Seguridad funcional de sistemas eléctricos/electrónicos/electrónicos programables\nrelacionados con la seguridad\n· EN 954-1: Seguridad de la maquinaria - Piezas de los sistemas de control relacionadas con la seguridad\n· EN ISO 13849-1 y 2: Seguridad de la maquinaria - Piezas de los sistemas de control relacionadas con la\nseguridad.\n· Serie IEC 61158: Redes de comunicación industriales - Especificaciones del bus de campo\n· Serie IEC 61784: Redes de comunicación industriales - Perfiles\n· IEC 60204-1: Seguridad de la maquinaria - Equipo eléctrico de las máquinas - Parte 1: Requisitos\ngenerales\n12\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Título de la documentación",
+            "Número de referencia"
+          ],
+          [
+            "ATV320 Getting Started",
+            "NVE21763 (English), NVE21771 (French), NVE21772 (German), NVE21773 (Spanish), NVE21774 (Italian), NVE21776 (Chinese)"
+          ],
+          [
+            "ATV320 Getting Started Annex (SCCR)",
+            "NVE21777 (English)"
+          ],
+          [
+            "ATV320 Installation manual",
+            "NVE41289 (English), NVE41290 (French), NVE41291 (German), NVE41292 (Spanish), NVE41293 (Italian), NVE41294 (Chinese)"
+          ],
+          [
+            "ATV320 Programming manual",
+            "NVE41295 (English), NVE41296 (French), NVE41297 (German), NVE41298 (Spanish), NVE41299 (Italian), NVE41300 (Chinese)"
+          ],
+          [
+            "ATV320 Modbus Serial Link manual",
+            "NVE41308 (English)"
+          ],
+          [
+            "ATV320 Ethernet IP/Modbus TCP manual",
+            "NVE41313 (English)"
+          ],
+          [
+            "ATV320 PROFIBUS DP manual (VW3A3607)",
+            "NVE41310 (English)"
+          ],
+          [
+            "ATV320 DeviceNet manual (VW3A3609)",
+            "NVE41314 (English)"
+          ],
+          [
+            "ATV320 CANopen manual (VW3A3608, 618, 628)",
+            "NVE41309 (English)"
+          ],
+          [
+            "ATV320 EtherCAT manual (VW3A3601)",
+            "NVE41315 (English)"
+          ],
+          [
+            "ATV320 Communication Parameters",
+            "NVE41316 (English)"
+          ],
+          [
+            "ATV320 Safety Functions manual",
+            "NVE50467 (English), NVE50468 (French), NVE50469 (German), NVE50470 (Spanish), NVE50472 (Italian), NVE50473 (Chinese)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Descripción general\nI\nContenido de esta parte\nEsta parte consta de los siguientes capítulos:\nCapítulo\nNombre del capítulo\nPágina\n1\nDescripción general\n19\n2\nConfiguración\n39\nNVE41298 04/2018\n15",
+      "tablas": [
+        [
+          [
+            "Capítulo",
+            "Nombre del capítulo",
+            "Página"
+          ],
+          [
+            "1",
+            "Descripción general",
+            "19"
+          ],
+          [
+            "2",
+            "Configuración",
+            "39"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "16\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Descripción general\nDescripción general\n1\nContenido de este capítulo\nEste capítulo trata los siguientes temas:\nTema\nPágina\nConfiguración de fábrica\n20\nFunciones de aplicación\n21\nFunciones básicas\n25\nOpción de terminal gráfico\n26\nOpción de terminal gráfico\n26\nPrimer encendido del variador\n29\nOpción de terminal remoto\n32\nEstructura de las tablas de parámetros\n33\nBúsqueda de un parámetro en este documento\n34\nDescripción de la HMI\n35\nEstructura de los menús\n37\nNVE41298 04/2018\n19",
+      "tablas": [
+        [
+          [
+            "Tema",
+            "Página"
+          ],
+          [
+            "Configuración de fábrica",
+            "20"
+          ],
+          [
+            "Funciones de aplicación",
+            "21"
+          ],
+          [
+            "Funciones básicas\n:unselected:",
+            "25"
+          ],
+          [
+            "Opción de terminal gráfico",
+            "26"
+          ],
+          [
+            "Opción de terminal gráfico",
+            "26"
+          ],
+          [
+            "Primer encendido del variador",
+            "29"
+          ],
+          [
+            "Opción de terminal remoto",
+            "32"
+          ],
+          [
+            "Estructura de las tablas de parámetros",
+            "33"
+          ],
+          [
+            "Búsqueda de un parámetro en este documento",
+            "34"
+          ],
+          [
+            "Descripción de la HMI",
+            "35"
+          ],
+          [
+            "Estructura de los menús",
+            "37"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Descripción general\nConfiguración de fábrica\nAjustes de fábrica\nEl Altivar 320 se entrega preajustado de fábrica para las condiciones de funcionamiento habituales:\n· Visualización: Variador listo [Listo] (r d y) cuando el motor está preparado para su puesta en marcha y\nFrecuencia del motor cuando el motor está en marcha.\n· Las entradas lógicas LI3 a LI6, las entradas analógicas Al2 y Al3, la salida lógica LO1, la salida analógica\nAO1 y el relé R2 no están asignados.\n· Modo Parada cuando se detecta un fallo: rueda libre.\nCódigo\nDescripción\nValores de ajustes de fábrica\nPágina\nbFr\n[Frec.estándar motor]\n[50Hz IEC]\n88\nECC\n[Control 2 / 3 hilos]\n[Ctrl. 2 hilos] (2 C): Control 2 hilos\n87\n[Tipo control motor]\n[Estándar] ( 5 + d): Ley de motor estándar\n106\nACC\n[Rampa aceleración]\n3,0 segundos\n89\ndEC\n[Rampa deceleración]\n3,0 segundos\n89\nLSP\n[Velocidad Mínima]\n0 Hz\n89\nHSP\n[Vel.máxima]\n50 Hz\n89\nICH\n[I Térmica motor]\nIntensidad nominal del motor (valor en función de la capacidad del\nvariador)\n89\nSdC1\n[Nivel Int.DC auto.1]\n0,7 x corriente nominal del variador, durante 0,5 segundos\n95\nSFr\n[Frecuencia de Corte]\n4 kHz\n96\nFrd\n[Marcha Adelante]\n[LI1] (L + 1): Entrada lógica LI1\n127\n[Asig. marcha Atrás]\n[LI2] (L , 2): Entrada lógica LI2\n127\nFr1\n[Canal Ref. 1]\n[Al1] (A , I): Entrada analógica Al1\n155\n[Asignación R1]\n[Sin fallo] (F L E ): El contacto se abre cuando se detecta un fallo o\ncuando se ha desconectado el variador.\n139\nbr A\n[Adapt.rampa dec.]\n[Sí] ( y E 5): Función activa (adaptación automática de rampa de\ndeceleración)\n173\nAEr\n[Rearranque auto.]\n[No] (na): Función inactiva\n256\n[Tipo de parada]\n[Paro rampa] (r n P): En rampa\n174\nCFG\n[Macro configuración]\n[MarchaParo] ( 5 + 5)\n84\nNota: Si desea conservar los preajustes del variador en los valores mínimos, seleccione la macro\nconfiguración [Macro configuración] (C F G) = [MarchaParo] ( 5 + 5) y seleccione\n[Restaurar config] (F [ 5) = [Config. CFG] ( In 1). Para obtener más información, consulte la página 84.\nCompruebe si los valores arriba indicados son compatibles con la aplicación.\n20\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción",
+            "Valores de ajustes de fábrica",
+            "Página"
+          ],
+          [
+            "bFr",
+            "[Frec.estándar motor]",
+            "[50Hz IEC]",
+            "88"
+          ],
+          [
+            "ECC",
+            "[Control 2 / 3 hilos]",
+            "[Ctrl. 2 hilos] (2 C): Control 2 hilos",
+            "87"
+          ],
+          [
+            "",
+            "[Tipo control motor]",
+            "[Estándar] ( 5 + d): Ley de motor estándar",
+            "106"
+          ],
+          [
+            "ACC",
+            "[Rampa aceleración]",
+            "3,0 segundos",
+            "89"
+          ],
+          [
+            "dEC",
+            "[Rampa deceleración]",
+            "3,0 segundos",
+            "89"
+          ],
+          [
+            "LSP",
+            "[Velocidad Mínima]",
+            "0 Hz",
+            "89"
+          ],
+          [
+            "HSP",
+            "[Vel.máxima]",
+            "50 Hz",
+            "89"
+          ],
+          [
+            "ICH",
+            "[I Térmica motor]",
+            "Intensidad nominal del motor (valor en función de la capacidad del variador)",
+            "89"
+          ],
+          [
+            "SdC1",
+            "[Nivel Int.DC auto.1]",
+            "0,7 x corriente nominal del variador, durante 0,5 segundos",
+            "95"
+          ],
+          [
+            "SFr",
+            "[Frecuencia de Corte]",
+            "4 kHz",
+            "96"
+          ],
+          [
+            "Frd",
+            "[Marcha Adelante]",
+            "[LI1] (L + 1): Entrada lógica LI1",
+            "127"
+          ],
+          [
+            "",
+            "[Asig. marcha Atrás]",
+            "[LI2] (L , 2): Entrada lógica LI2",
+            "127"
+          ],
+          [
+            "Fr1",
+            "[Canal Ref. 1]",
+            "[Al1] (A , I): Entrada analógica Al1",
+            "155"
+          ],
+          [
+            "",
+            "[Asignación R1]",
+            "[Sin fallo] (F L E ): El contacto se abre cuando se detecta un fallo o cuando se ha desconectado el variador.",
+            "139"
+          ],
+          [
+            "br A",
+            "[Adapt.rampa dec.]",
+            "[Sí] ( y E 5): Función activa (adaptación automática de rampa de deceleración)",
+            "173"
+          ],
+          [
+            "AEr",
+            "[Rearranque auto.]",
+            "[No] (na): Función inactiva",
+            "256"
+          ],
+          [
+            "",
+            "[Tipo de parada]",
+            "[Paro rampa] (r n P): En rampa",
+            "174"
+          ],
+          [
+            "CFG",
+            "[Macro configuración]",
+            "[MarchaParo] ( 5 + 5)",
+            "84"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Descripción general\nFunciones de aplicación\nEn las tablas de las páginas siguientes se muestran las combinaciones de funciones y aplicaciones con el fin\nde guiarle en su selección.\nLas aplicaciones de estas tablas están relacionadas con las máquinas siguientes, en particular:\n· Elevación: grúas, grúas de techo, grúas pórtico (elevación vertical, traslado, giro), plataformas de\nelevación\n· Manipulación: paletizadores/despaletizadores, cintas transportadoras, mesas de rodillos\n· Embalaje: paquetes de cartón, máquinas de etiquetado\n· Textiles: telares, estructuras de cardado, lavadoras, tornos de hilado, estructuras de hilado\n· Madera: tornos automáticos, sierras, fresadoras\n· Proceso\nCada máquina dispone de funciones especiales propias, y las combinaciones que aquí se indican ni son\nobligatorias ni son las únicas.\nAlgunas funciones se han diseñado específicamente para una aplicación en particular. En este caso, la\naplicación se identifica mediante una ficha en el margen de las páginas de programación relacionadas.\nFunciones de control del motor\nFunciones\nPágina\nElevación\nAplicaciones\nManipulación\nEmbalaje\nTextiles\nMadera\nProceso\nRelación U/F\n106\nb\nb\nControl de vector de flujo sin sensor\n106\nControl vectorial de 2 puntos\n106\nb\nb\nMotor síncrono de lazo abierto\n106\nb\nFrecuencia de salida de hasta 599 Hz\n106\nb\nb\nLímite de sobretensión del motor\n121\nb\nb\nConexión del bus de CC (consulte el manual de instalación)\n-\nb\nb\nMagnetización de motor utilizando una entrada lógica\n190\n.\nFrecuencia de conmutación de hasta 16 kHz\n96\nb\nb\nAutoajuste\n89\n.\nNVE41298 04/2018\n21",
+      "tablas": [
+        [
+          [
+            "Funciones",
+            "Página",
+            "Aplicaciones"
+          ],
+          [
+            "Elevación",
+            "Manipulación",
+            "Embalaje",
+            "Textiles",
+            "Madera",
+            "Proceso"
+          ],
+          [
+            "Relación U/F",
+            "106",
+            "",
+            "b",
+            "",
+            "",
+            "b",
+            ""
+          ],
+          [
+            "Control de vector de flujo sin sensor",
+            "106",
+            "",
+            ":selected:",
+            ":selected:",
+            "",
+            ":selected:",
+            ":selected:"
+          ],
+          [
+            "Control vectorial de 2 puntos",
+            "106",
+            "b\n:selected:",
+            "",
+            "",
+            "b",
+            "",
+            ""
+          ],
+          [
+            "Motor síncrono de lazo abierto",
+            "106",
+            "",
+            "",
+            "",
+            "b",
+            "",
+            ""
+          ],
+          [
+            "Frecuencia de salida de hasta 599 Hz",
+            "106",
+            "",
+            "",
+            "",
+            "b",
+            ":selected: b",
+            ""
+          ],
+          [
+            "Límite de sobretensión del motor",
+            "121",
+            "",
+            "",
+            "",
+            "b",
+            ":selected: b",
+            ""
+          ],
+          [
+            "Conexión del bus de CC (consulte el manual de instalación)",
+            "-",
+            "",
+            "",
+            "",
+            ":selected: b",
+            "",
+            ":selected: b"
+          ],
+          [
+            "Magnetización de motor utilizando una entrada lógica",
+            "190",
+            ":selected:",
+            ". :selected:",
+            ":selected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Frecuencia de conmutación de hasta 16 kHz",
+            "96",
+            "",
+            "",
+            "",
+            "b",
+            "b\n:selected:",
+            ""
+          ],
+          [
+            "Autoajuste",
+            "89",
+            ":selected:",
+            ":selected:",
+            ":selected:",
+            ".\n:selected:",
+            ":selected:",
+            ":selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Descripción general\nFunciones de referencias de velocidad\nFunciones\nPágina\nElevación\nAplicaciones\nManipulación\nEmbalaje\nTextiles\nMadera\nProceso\nReferencia bipolar diferencial\n130\nObtención de característica lineal por tramos de referencia\n(efecto de lupa)\n133\nb\nb\nEntrada de control de frecuencia\n155\nb\nb\nConmutación de referencia\n168\nb\nSuma de referencia\n169\nb\nResta de referencia\n169\nb\nMultiplicación de referencia\n169\nb\nRampa de perfil ajustable\n171\nb\nb\nFuncionamiento Jog\n179\nVelocidades preseleccionadas\n181\n+ velocidad / - velocidad utilizando pulsadores de una acción\n(un paso)\n185\nb\n+ velocidad / - velocidad utilizando pulsadores de doble\nacción (dos pasos)\n185\nb\n+/- velocidad en torno a una referencia\n188\nb\nb\nGuardar referencia\n189\nb\n22\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Funciones",
+            "Página",
+            "Aplicaciones"
+          ],
+          [
+            "Elevación",
+            "Manipulación",
+            "Embalaje",
+            "Textiles",
+            "Madera",
+            "Proceso"
+          ],
+          [
+            "Referencia bipolar diferencial",
+            "130",
+            "",
+            "",
+            ":selected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Obtención de característica lineal por tramos de referencia (efecto de lupa)",
+            "133",
+            ":unselected: b",
+            "b\n:selected:",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Entrada de control de frecuencia",
+            "155",
+            "",
+            "",
+            "",
+            ":selected: b",
+            "",
+            ":selected: b"
+          ],
+          [
+            "Conmutación de referencia",
+            "168",
+            "",
+            "",
+            "b\n:selected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Suma de referencia",
+            "169",
+            "",
+            "",
+            ":selected: b",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Resta de referencia",
+            "169",
+            "",
+            "",
+            ":selected: b",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Multiplicación de referencia",
+            "169",
+            "",
+            "",
+            ":selected: b",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Rampa de perfil ajustable",
+            "171",
+            ":selected: b",
+            "b\n:selected:",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Funcionamiento Jog",
+            "179",
+            "",
+            ":selected:",
+            "",
+            ":selected:",
+            "",
+            ":selected:"
+          ],
+          [
+            "Velocidades preseleccionadas",
+            "181",
+            ":selected:",
+            ":selected:",
+            ":selected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "+ velocidad / - velocidad utilizando pulsadores de una acción (un paso)",
+            "185",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":selected: b"
+          ],
+          [
+            "+ velocidad / - velocidad utilizando pulsadores de doble acción (dos pasos)",
+            "185",
+            "b\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "+/- velocidad en torno a una referencia",
+            "188",
+            "",
+            "",
+            "",
+            ":selected: b",
+            "",
+            ":selected: b"
+          ],
+          [
+            "Guardar referencia",
+            "189",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":selected: b"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Descripción general\nFunciones específicas de la aplicación\nFunciones\nPágina\nElevación\nAplicaciones\nManipulación\nEmbalaje\nTextiles\nMadera\nProceso\nParada rápida\n174\nb\nControl de freno\n192\nb\nb\nMedición de carga\n200\nb\nElevación de alta velocidad\n202\nb\nTensión de cable\n205\nb\nRegulador PID\n208\nb\nLímite de par motor/generador\n217\n.\nEquilibrado de carga\n123\nb\nb\nControl de contactor de línea\n222\nb\nControl de contactor de motor\n225\nb\nPosicionamiento por interruptores de posición o sensores\n226\nParada a la distancia calculada tras interruptor de posición\nde deceleración\n228\nb\nb\nConmutación de parámetros\n232\nConmutación de motor o configuración\n235\nGuiado de hilo\n240\nb\nConfiguración de parada\n174\nb\n.\nNVE41298 04/2018\n23",
+      "tablas": [
+        [
+          [
+            "Funciones",
+            "Página",
+            "Aplicaciones"
+          ],
+          [
+            "Elevación",
+            "Manipulación",
+            "Embalaje",
+            "Textiles",
+            "Madera",
+            "Proceso"
+          ],
+          [
+            "Parada rápida",
+            "174",
+            "",
+            "",
+            "",
+            "",
+            ":selected: b",
+            ""
+          ],
+          [
+            "Control de freno",
+            "192",
+            ":selected: b",
+            ":selected: b",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Medición de carga",
+            "200",
+            ":selected: b",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Elevación de alta velocidad",
+            "202",
+            "b",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Tensión de cable",
+            "205",
+            ":selected: b",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Regulador PID",
+            "208",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":selected: b"
+          ],
+          [
+            "Límite de par motor/generador",
+            "217",
+            "",
+            ". :selected:",
+            "",
+            ":selected:",
+            "",
+            ":selected:"
+          ],
+          [
+            "Equilibrado de carga",
+            "123",
+            "b\n:selected:",
+            ":selected: b",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Control de contactor de línea",
+            "222",
+            ":selected:",
+            ":selected:",
+            "",
+            "",
+            "b\n:selected:",
+            ""
+          ],
+          [
+            "Control de contactor de motor",
+            "225",
+            ":selected: b",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Posicionamiento por interruptores de posición o sensores",
+            "226",
+            ":selected:",
+            ":selected:",
+            ":selected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Parada a la distancia calculada tras interruptor de posición de deceleración",
+            "228",
+            "",
+            ":selected: b",
+            ":selected: b",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Conmutación de parámetros",
+            "232",
+            ":selected:",
+            ":unselected:",
+            ":unselected:",
+            ":selected:",
+            ":selected:",
+            ":selected:"
+          ],
+          [
+            "Conmutación de motor o configuración",
+            "235",
+            ":selected:",
+            ":selected:",
+            ":selected:",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Guiado de hilo",
+            "240",
+            "",
+            "",
+            "",
+            "b\n:selected:",
+            "",
+            ""
+          ],
+          [
+            "Configuración de parada",
+            "174",
+            "",
+            ":selected: b",
+            "",
+            ". :selected:",
+            ":selected:",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Descripción general\nFunciones de seguridad/Gestión de fallos\nFunciones\nPágina\nElevación\nAplicaciones\nManipulación\nEmbalaje\nTextiles\nMadera\nProceso\nSafe Torque Off (STO) (función de seguridad, consulte el\ndocumento específico)\n-\n.\n.\nParada aplazada al generarse alarma térmica\n262\nb\nb\nGestión de alarmas\n146\nGestión de fallos\n253\nTests IGBT\n264\nRecuperación de una carga de giro\n257\nb\nb\nProtección del motor por sondas PTC\n253\n.\nGestión de subtensión\n263\nb\nb\nPérdida 4-20 mA\n264\n.\nCorte de fase de motor sin control (pérdida de fase de motor)\n260\nb\nRearranque auto.\n256\nb\nUso de la entrada de pulsos para medir la velocidad de\nrotación del motor\n270\nb\nb\nDetección de variación de carga\n272\nb\nDetección de subcarga\n275\nb\nDetección de sobrecarga\n277\nb\n24\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "Funciones",
+            "Página",
+            "Aplicaciones"
+          ],
+          [
+            "Elevación",
+            "Manipulación",
+            "Embalaje",
+            "Textiles",
+            "Madera",
+            "Proceso"
+          ],
+          [
+            "Safe Torque Off (STO) (función de seguridad, consulte el documento específico)",
+            "-",
+            ":selected:",
+            ":selected:",
+            ". :selected:",
+            ":selected:",
+            ". :selected:",
+            ""
+          ],
+          [
+            "Parada aplazada al generarse alarma térmica",
+            "262",
+            "b",
+            "",
+            "",
+            "",
+            "",
+            "b"
+          ],
+          [
+            "Gestión de alarmas",
+            "146",
+            ":selected:",
+            ":selected:",
+            ":selected:",
+            ":unselected:",
+            ":unselected:",
+            ":selected:"
+          ],
+          [
+            "Gestión de fallos",
+            "253",
+            ":unselected:",
+            ":selected:",
+            ":unselected:",
+            "",
+            ":unselected:",
+            ":selected:"
+          ],
+          [
+            "Tests IGBT",
+            "264",
+            ":selected:",
+            ":selected:",
+            ":selected:",
+            "",
+            ":unselected:",
+            ":selected:"
+          ],
+          [
+            "Recuperación de una carga de giro",
+            "257",
+            "",
+            "",
+            "",
+            "b",
+            ":unselected: b",
+            ""
+          ],
+          [
+            "Protección del motor por sondas PTC",
+            "253",
+            ":selected:",
+            ". :selected:",
+            ":selected:",
+            ":unselected:",
+            ":unselected:",
+            ":selected:"
+          ],
+          [
+            "Gestión de subtensión",
+            "263",
+            "",
+            "",
+            "",
+            "b",
+            ":unselected: b",
+            ":unselected:"
+          ],
+          [
+            "Pérdida 4-20 mA",
+            "264",
+            ":selected:",
+            ". :selected:",
+            "",
+            "",
+            ":selected:",
+            ":selected:"
+          ],
+          [
+            "Corte de fase de motor sin control (pérdida de fase de motor)",
+            "260",
+            "",
+            ":selected: b",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Rearranque auto.",
+            "256",
+            "",
+            ":selected: b",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Uso de la entrada de pulsos para medir la velocidad de rotación del motor",
+            "270",
+            ":selected: b",
+            ":selected: b",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Detección de variación de carga",
+            "272",
+            "b\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Detección de subcarga",
+            "275",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "b"
+          ],
+          [
+            "Detección de sobrecarga",
+            "277",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ":selected: b"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Descripción general\nFunciones básicas\nVentilación del variador\nEl ventilador se activa automáticamente cuando el estado térmico del variador alcanza el 70% del estado\ntérmico máximo y si el parámetro [Modo ventilador] (F F 77) se ha establecido en [Estándar] ( 5 t d).\nPara ATV320 ..... W(S), [Modo ventilador] ( F F 17) está forzado a [Siempre] (r u n), el ventilador siempre\nestá activado.\nNVE41298 04/2018\n25",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "Opción de terminal gráfico\nDescripción general\nDescripción del terminal gráfico\nCon el terminal gráfico, que funciona con FLASH V1.1IE26 o versiones superiores, es posible visualizar más\ninformación detallada que la que puede mostrarse en el terminal integrado.\n1 Terminal gráfico\n2 Teclas de función\nF1, F2, F3, F4,\nconsulte la página\n158\n3 Tecla\nSTOP/RESET\n4 Tecla RUN\nSchneider\nF1\nF2\nF3\nF4\nEN\nSTOP\n+\nRESET\n-\nESC\nRUN\nFWD\nREV\n7 Tecla ESC: Cancela un valor,\nun parámetro o un menú para\nvolver a la selección anterior\n6 Tecla para invertir la dirección\nde rotación del motor\n5 Selector giratorio:\n· Pulse (ENT):\n- Para guardar el valor actual\n- Para entrar en el menú o parámetro seleccionado\n· Gire hacia +/ -:\n- Para incrementar o reducir un valor\n- Para ir a la línea siguiente o anterior\n- Para incrementar o reducir una referencia si se ha activado el\ncontrol por medio del terminal gráfico\nNota: Las teclas 3, 4, 5 y 6 pueden utilizarse para controlar el variador directamente, si se ha activado el\ncontrol por medio del terminal gráfico.\nPara activar las teclas del terminal remoto, primero debe configurar [Canal Ref.1] (Fr 1) = [HMI] (L [ C).\nPara obtener más información, consulte la página 155.\n26\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Descripción general\nVentanas de configuración de ejemplo:\nSelección única\nEnglish\nIDIOMA\nFrançais\n1\nDeutsch\nItaliano\nEspañol\nAl encender por primera vez el terminal gráfico, el usuario debe seleccionar el idioma\nnecesario.\nCuando sólo se puede realizar una selección, la selección realizada se indica\nmediante el símbolo J.\nEjemplo: Sólo puede seleccionarse un idioma.\nChinese\nРусский\nTürkçe\nSelección múltiple\nSELECC. PARÁMETROS\nAJUSTES\nIncremento rampa\nRampa aceleración --\nRampa deceleración --\nAceleración 2-\nDeceleración 2\nEditar\nCuando se puede realizar una selección múltiple, las selecciones realizadas se\nindican mediante el símbolo / .\nEjemplo: Pueden seleccionarse varios parámetros para formar el [MENÚ USUARIO].\nEjemplo de ventana de configuración para un único valor:\nRDY\nTerm +0,0 Hz 0,0 A\nRampa aceleración\nRDY\nTerm +0,0 Hz 0,0 A\nENT\n9,51 s\nRampa aceleración\n9,51 s\nMín. = 0,00\n<<\nMáx. = 99,99\n>>\nQuick\nMín. = 0,00\n<<\nMáx. = 99,99\n>>\nQuick\nLas flechas << y >> (teclas F2 y F3) se utilizan para seleccionar el dígito que se desea modificar y el selector\ngiratorio, para incrementar o reducir este número.\nEjemplo de visualización del estado de los bloques funcionales:\nRDY\n8\nTerm\n+0,0 Hz 0,0 A\nRampa aceleración\nIndicación luminosa de desactivación: Un programa válido de bloques\nfuncionales se encuentra en modo de parada en el ATV320.\n9,51 s\nMín. = 0,00\n<<\nMáx. = 99,99\nQuick\nIndicación luminosa de activación: Un programa válido de bloques\nfuncionales se encuentra en modo de marcha en el ATV320. Se considera\nque el variador se encuentra en estado de marcha, y los parámetros de\nconfiguración no pueden modificarse.\nNVE41298 04/2018\n27",
+      "tablas": [
+        [
+          [
+            "SELECC. PARÁMETROS"
+          ],
+          [
+            "AJUSTES"
+          ],
+          [
+            "Incremento rampa",
+            ":selected:"
+          ],
+          [
+            "Rampa aceleración --",
+            ":selected:"
+          ],
+          [
+            "Rampa deceleración --",
+            ":unselected:"
+          ],
+          [
+            "Aceleración 2-",
+            ":unselected:"
+          ],
+          [
+            "Deceleración 2",
+            ""
+          ],
+          [
+            "",
+            "Editar"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Descripción general\nPrimer encendido del variador con el terminal gráfico\nAl encender por primera vez el terminal gráfico, el usuario debe seleccionar el idioma necesario.\nEnglish\nIDIOMA\nFrançais\nDeutsch\nItaliano\nEspañol\nPantalla que se visualiza tras haber encendido por primera vez el terminal gráfico.\nSeleccione el idioma deseado y pulse ENT.\n1\nChinese\nРусский\nTürkçe\n-\nENT\nSchneider\nElectric\nAhora aparecerán los detalles de los valores de corriente que utiliza el variador.\nATV320U15M2B\n1,5 KW/2 HP 220VMonof\nConfig. n°0\n3 segundos\nRDY\nTerm\n0,0 Hz\n0,0 A\nNIVEL ACCESO\nBásico\nEstándar\n1\nAvanzado\nExperto\nENT\nRDY\n0,0 Hz 0,0 A\nTerm\n1 MENÚ VARIADOR\n1.1 REFERENCIA VELOCIDAD\n1.2 SUPERVISIÓN\n1.3 CONFIGURACIÓN\nCode\n<< >>\nQuick\n28\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "RDY",
+            "Term",
+            "0,0 Hz 0,0 A"
+          ],
+          [
+            "NIVEL ACCESO"
+          ],
+          [
+            "Básico Estándar",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "1\n:selected:"
+          ],
+          [
+            "Avanzado",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Experto",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Descripción general\nPrimer encendido del variador\nCon el terminal integrado, cuando se enciende por primera vez el variador, el usuario accede inmediatamente\na [Frec.estándar motor] (6 F r ) (consulte la página 88) en el menú (CONF > FULL > SIM).\nSchneider\nElectric\nPantalla que se visualiza tras haber encendido por primera vez el variador.\nATV320U15M2B\n1,5 KW/2 HP 220VMonof\nConfig. n°0\n3 segundos\nRDY\n0,0 Hz\n0,0 A\nTerm\nNIVEL ACCESO\nBásico\nEstándar\nAvanzado\nExperto\nENT\nRDY\nTerm\n1 MENÚ VARIADOR\n0,0 Hz\n0,0 A\n1.1 REFERENCIA VELOCIDAD\n1.2 SUPERVISIÓN\n1.3 CONFIGURACIÓN\nCode\n<<\nQuick\nESC\nMENÚ GENERAL\n1 MENÚ VARIADOR\n2 IDENTIFICACIÓN\n3 INTERFACE\n4 ABRIR/GUARDAR\n5 CÓDIGO DE ACCESO\nA continuación, se visualiza automáticamente la pantalla [NIVEL ACCESO].\nSe produce una conmutación automática al menú [1 MENÚ VARIADOR]\ntranscurridos 3 segundos.\nSeleccione el menú deseado y pulse ENT.\nSi pulsa la tecla ESC, en el terminal gráfico aparece MENÚ GENERAL.\nNVE41298 04/2018\n29",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Descripción general\nEncendidos posteriores\nCon el terminal integrado, al realizar los posteriores encendidos del variador por primera vez, el usuario\naccede inmediatamente al estado del variador (la misma lista que [Estado variador] (H 5 1), página 68).\nEjemplo: Listo (rdY).\nSchneider\nElectric\nPantalla que se visualiza tras el encendido.\nATV320U15M2B\n1,5 KW/2 HP 220VMonof\nConfig. nº0\n3 segundos\nRDY\n0,0 Hz\n0,0 A\nTerm\n1 MENÚ VARIADOR\n1.1 REFERENCIA VELOCIDAD\n1.2 SUPERVISIÓN\n1.3 CONFIGURACIÓN\nPasa automáticamente al menú [1 MENÚ VARIADOR] transcurridos 3 segundos.\nSeleccione el menú deseado y pulse ENT.\nCode\n<<\n>>\nQuick\n10 segundos\nRDY\nTerm +0,0 Hz 0,0 A\nReferencia frec.\n+ 1.3 Hz\nPasa automáticamente a la pantalla de supervisión transcurridos 10 segundos.\nMín. = - 599,0\nQuick\nMáx. = +599,0\n30\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Descripción general\nMenú de identificación\nEl acceso al menú [2 IDENTIFICACIÓN] ( a , d - ) sólo puede realizarse desde el terminal gráfico.\nEs un menú de sólo lectura que no puede configurarse. Permite visualizar la información siguiente:\n· Referencia, potencia y tensión del variador\n· Versión de software del variador\n· Número de serie del variador\n· Estado de la función de seguridad y suma de comprobación\n· Programa de bloques funcionales y versión de catálogo\n· Tipo de opciones existentes, con su versión de software\n· Tipo y versión de terminal gráfico\nRUN\nTerm +50,0 Hz 0,0 A\nMENÚ GENERAL\n1 MENÚ VARIADOR\n2 IDENTIFICACIÓN\n3 INTERFACE\n4 ABRIR/GUARDAR\n5 CÓDIGO DE ACCESO\nENT\nRUN\nTerm\n+50,0 Hz 0,0 A\n2 IDENTIFICACIÓN\nATV320U15M2B\n2,2 KW/3 HP\n220VMonof\nAppl. software V1.1 IE 01\nMC software V1.1 IE 01\nFFFFFFFFF\n<<\n>>\nQuick\nProducto V1.1 IE 01\nFUNCIÓN DE SEGURIDAD\nEsta. segur.variador\nEstándar\nPar. seguridad CRC\n8529\nBLOQUES FUNCION\nTamaño programa\n1\nVersión catálogo\n1\nOPCIÓN 1\nNoC.Opción.\nTERMINAL GRÁFICO\nGRAPHIC S\nV1.2IE07\n00000000000000000\nNVE41298 04/2018\n31",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Descripción general\nOpción de terminal remoto\nDescripción del terminal remoto\nEste terminal remoto es una unidad de control local que puede instalarse en la puerta del armario montado en\nla pared o sobre el suelo. Dispone de un cable con conectores, que se conecta con el enlace serie del variador\n(consulte la documentación que se entrega con el terminal remoto). Con este terminal remoto, la navegación se\nrealiza mediante las flechas hacia arriba y hacia abajo en lugar de utilizarse un selector giratorio.\n1 Pantalla de cuatro dígitos\n2 Tecla MODE (1):\nSe utiliza para conmutar entre los\nmenús [1.1 REFERENCIA\nVELOCIDAD] (~ E F - ),\n[1.2 SUPERVISIÓN] (Nan - ) y\n[1.3 CONFIGURACIÓN] ([ on F - ).\n3 Tecla ESC\nSe utiliza para salir de un\nmenú/parámetro o\npara eliminar el valor actualmente\nvisualizado con el fin de recuperar el\nvalor anterior\nretenido en la memoria.\n4 Tecla RUN\nEjecuta la función,\ndándose por supuesto que se ha\nconfigurado.\nREF\nMON\nCONF\nMODE\nESC\nRUN\nFWD\nREV\nValue\nUnit\nENT\nSTOP\nRESET\n5 Teclas de navegación\n6 Tecla ENT\nSe utiliza para guardar el valor actual o\npara acceder al menú/parámetro\nseleccionado.\n8 Tecla para invertir la dirección de\nrotación del motor\n7 Tecla STOP\nSe utiliza para detener el motor y\nrealizar un rearme.\n(1) Si el variador se ha bloqueado mediante un código ([Código PIN 1] (C a d), página 306), al pulsar la tecla\nMODE podrá pasar del menú [1.2 SUPERVISIÓN] ([ an - ) al menú [1.1 REFERENCIA VELOCIDAD]\n(~ EF - ) y viceversa.\nPara activar las teclas del terminal remoto, primero debe configurar [Canal Ref.1] (F r 1) = [HMI] (L C C).\nPara obtener más información, consulte la página 155.\n32\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Descripción general\nEstructura de las tablas de parámetros\nLas tablas de parámetros contenidas en las descripciones de los diversos menús se han organizado como se\nindica a continuación.\nEjemplo:\nAcceda a los parámetros que se describen en esta página mediante:\nDRI- > CONF > FULL > FUN-\n1\n5\n2\n3\n4\nCódigo\nNombre/Descripción\nRango de ajuste\nAjuste de\nfábrica\nPid -\n[REGULADOR PID]\nNota: Esta función no puede utilizarse con algunas de las demás funciones disponibles. Siga las\ninstrucciones de la página 163.\nP IF\n[Retorno PID]\n6\n[No] (na)\nnO\n[No] (na): No asignado\nAll\n[Al1] (A11): Entrada analógica A1\nA 12\n[Al2] (A 12): Entrada analógica A2\nA 13\n[Al3] (A13): Entrada analógica A3\n[RP] (P .): Entrada de pulsos\nA 102\n[Al red 2] (A , u 2): Entrada analógica virtual 2\no AD | [OA01] ( o AD I): Bloques funcionales: Salida analógica 01\n...\n[OA10] ( a A 10): Bloques funcionales: Salida analógica 10\n7\n1. Forma de acceder a los parámetros que se describen en esta página 5. Nombre del submenú en el terminal gráfico\n2. Código de submenú en pantalla de 4 dígitos y 7 segmentos\n6. Nombre de parámetro en el terminal gráfico\n3. Código de parámetro en pantalla de 4 dígitos y 7 segmentos\n7. Valor de parámetro en el terminal gráfico\n4. Valor de parámetro en pantalla de 4 dígitos y 7 segmentos\nNota: El texto que se muestra entre corchetes [ ] indica lo que verá en el terminal gráfico.\nA veces, un menú puede ir seguido de la palabra \"(continuación)\" para ubicarle en la estructura.\nEjemplo:\nFun -\n[FUNCIONES APLICACIÓN] (continuación)\nPid -\n[REGULADOR PID]\nNota: Esta función no puede utilizarse con algunas de las demás funciones disponibles. Siga las\ninstrucciones de la página 163.\nEn este caso, la palabra \"(continuación)\" indica que el submenú [FUNCIONES APLICACIÓN] se encuentra\npor encima del submenú [REGULADOR PID] en la estructura.\nUn parámetro puede contener varios pictogramas. Cada pictograma tiene su propia leyenda al final de la tabla.\nPictogramas principales:\nEstos parámetros sólo aparecen cuando se ha seleccionado la función correspondiente en otro menú. Cuando se puede\nacceder a los parámetros y ajustarlos desde el menú de configuración de la función correspondiente, su descripción se\ndetalla en las páginas indicadas de estos menús para facilitar la programación.\ng\nParámetro que puede modificarse cuando el dispositivo está en funcionamiento o detenido.\n2 s\nPara cambiar la asignación de este parámetro, pulse la tecla ENT durante 2 segundos.\nNVE41298 04/2018\n33",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Nombre/Descripción",
+            "Rango de ajuste",
+            "Ajuste de fábrica"
+          ],
+          [
+            "Pid -",
+            "[REGULADOR PID]",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Nota: Esta función no puede utilizarse con algunas de las demás\ninstrucciones de la página 163.",
+            "funciones disponibles.",
+            "Siga las"
+          ],
+          [
+            "P IF",
+            "[Retorno PID] 6",
+            "",
+            "[No] (na)"
+          ],
+          [
+            "nO",
+            "[No] (na): No asignado",
+            "",
+            ""
+          ],
+          [
+            "All",
+            "[Al1] (A11): Entrada analógica A1",
+            "",
+            ""
+          ],
+          [
+            "A 12",
+            "[Al2] (A 12): Entrada analógica A2",
+            "",
+            ""
+          ],
+          [
+            "A 13",
+            "[Al3] (A13): Entrada analógica A3",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[RP] (P .): Entrada de pulsos",
+            "",
+            ""
+          ],
+          [
+            "A 102",
+            "[Al red 2] (A , u 2): Entrada analógica virtual 2",
+            "",
+            ""
+          ],
+          [
+            "o AD |",
+            "[OA01] ( o AD I): Bloques funcionales: Salida analógica 01",
+            "",
+            ""
+          ],
+          [
+            "...",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "[OA10] ( a A 10): Bloques funcionales: Salida analógica 10",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Fun -",
+            "[FUNCIONES APLICACIÓN] (continuación)"
+          ],
+          [
+            "Pid -",
+            "[REGULADOR PID] Nota: Esta función no puede utilizarse con algunas de las demás funciones disponibles. Siga las instrucciones de la página 163."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Descripción general\nBúsqueda de un parámetro en este documento\nA continuación se indica cómo buscar las explicaciones de los parámetros:\n· Para el terminal integrado y el terminal remoto: utilice directamente el índice de códigos de parámetros,\npágina 327, para buscar la página en la que se facilitan los detalles del parámetro visualizado.\n· Para el terminal gráfico: seleccione el parámetro deseado y pulse F1\npulsada la tecla se visualizará el código de parámetro en lugar de su nombre.\nF1\n: [Código]. Al mantener\nEjemplo: ACC\nRDY\nTerm\n+0,0 Hz 0,0 A\nAJUSTES\nIncremento rampa\n:\n0.1\nRampa aceleración\n:\n9,51 s\nRampa deceleración :\n9,67 s\nVelocidad Mínima\n:\n0,0 Hz\nVel.máxima\n:\n50,0 Hz\nCode\n<<\n>>\nQuick\nCódigo\n· A continuación, utilice el índice de códigos de parámetros, página 327, para buscar la página en la que se\nfacilitan los detalles del parámetro visualizado.\nRDY\nTerm +0,0 Hz\n0,0 A\nAJUSTES\nIncremento rampa\n..\n0.1\nACC\n:\n9,51 s\nRampa deceleración\n9,67 s\nVelocidad Mínima\n:\n0,0 Hz\nVel.máxima\n:\n50,0 Hz\nCode\n<<\n>>\nQuick\n34\nNVE41298 04/2018",
+      "tablas": [
+        [
+          [
+            "RDY",
+            "Term",
+            "+0,0 Hz",
+            "0,0 A"
+          ],
+          [
+            "",
+            "AJUSTES"
+          ],
+          [
+            "Incremento rampa",
+            ":",
+            "0.1"
+          ],
+          [
+            "Rampa",
+            "aceleración",
+            ":",
+            "",
+            "9,51 s"
+          ],
+          [
+            "Rampa",
+            "deceleración",
+            ":",
+            "",
+            "9,67 s"
+          ],
+          [
+            "Velocidad",
+            "Mínima",
+            ":",
+            "",
+            "0,0 Hz"
+          ],
+          [
+            "Vel.máxima",
+            ":",
+            "",
+            "50,0 Hz"
+          ],
+          [
+            "Code",
+            "<<",
+            "",
+            ">>",
+            "Quick"
+          ]
+        ],
+        [
+          [
+            "RDY",
+            "Term",
+            "+0,0 Hz",
+            "0,0 A"
+          ],
+          [
+            "AJUSTES"
+          ],
+          [
+            "Incremento rampa",
+            "..",
+            "0.1"
+          ],
+          [
+            "ACC",
+            "",
+            "",
+            ":",
+            "",
+            "9,51 s"
+          ],
+          [
+            "Rampa",
+            "deceleración",
+            "",
+            "",
+            "",
+            "9,67 s"
+          ],
+          [
+            "Velocidad",
+            "Mínima",
+            "",
+            ":",
+            "",
+            "0,0 Hz"
+          ],
+          [
+            "Vel.máxima",
+            "",
+            ":",
+            "",
+            "50,0 Hz"
+          ],
+          [
+            "Code",
+            "<<",
+            "",
+            ">>",
+            "",
+            "Quick"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Descripción general\nDescripción de la HMI\nFunciones de la pantalla y las teclas\n1 La tecla ESC se utiliza para navegar por el menú (retroceder) y para realizar ajustes en los parámetros\n(cancelar).\n2 El selector giratorio se utiliza para navegar por el menú (ir arriba o abajo) y para realizar ajustes en los\nparámetros (incrementar/disminuir un valor o una opción de un elemento). Puede utilizarse como la Entrada\nanalógica virtual 1 para la referencia de frecuencia del variador.\n3 La tecla ENT (pulsación en el selector giratorio) se utiliza para navegar por el menú (avanzar) y para\nrealizar ajustes en los parámetros (validar).\nSchneider\n@Electric\nA\nF\nRer\nB\nCent\nO\nCAN Run\nO\nCAN Err\nof Value\nof Unit\nA -\nB\nRef\nMon 9\nF\nC-\nCANRUN CAN.ERR\n.\nD\nE\n8\n8\noValue\nConfo\nUnit\nÉSÒ\n1\nJAVAVA\nAPADOVADA\nG\nJA\n3\nOD\n2\nC-\nD-\nE\n3\nG\nESC\n1\n.\n2\nC\nAltivar\nMachine\nSchneider\nElectric\nMODBUS\nVPIOS\nA\nModo REF seleccionado (r E F - )\nB\nModo MON seleccionado (non -)\nC\nModo CONF seleccionado ([ on F)\nD\nPunto utilizado para mostrar el valor del parámetro\n(centésimas)\nE\nPunto utilizado para mostrar el valor del parámetro\n(décimas)\nF\nLa visualización actual es el valor del parámetro.\nG\nLa visualización actual es la unidad del parámetro.\nVisualización normal, sin mostrar el código de fallo y sin arranque:\nMuestra el parámetro seleccionado en el menú [1.2 SUPERVISIÓN] (Non - ) (valor predeterminado:\n[Referencia frec.] (F - H)).\n· in I E : Secuencia de inicialización (sólo en terminal remoto)\n· E un: Autoajuste\n· d C b: Frenado por inyección\n· r dy: Variador listo\n. n 5 E : Parada en rueda libre\n· CL 1: Limitación de intensidad\n· F 5 E : Parada rápida\n· F L u: Función de magnetización activada\nNVE41298 04/2018\n35",
+      "tablas": [
+        [
+          [
+            "A",
+            "Modo REF seleccionado (r E F - )"
+          ],
+          [
+            "B",
+            "Modo MON seleccionado (non -)"
+          ],
+          [
+            "C",
+            "Modo CONF seleccionado ([ on F)"
+          ],
+          [
+            "D",
+            "Punto utilizado para mostrar el valor del parámetro (centésimas)"
+          ]
+        ],
+        [
+          [
+            "E",
+            "Punto utilizado para mostrar el valor del parámetro (décimas)"
+          ],
+          [
+            "F",
+            "La visualización actual es el valor del parámetro."
+          ],
+          [
+            "G",
+            "La visualización actual es la unidad del parámetro."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "Descripción general\n· n L P: Control encendido, pero bus de CC no cargado\n· C EL : Parada controlada\n· o br : Rampa de deceleración adaptada\n· 5 o C : Corte aguas abajo controlado en curso\n· u S A: Alarma de subtensión\n· 5 5 /: Función de seguridad SS1\n· SL S: Función de seguridad SLS\n· 5 to: Función de seguridad STO\n· 505: Función de seguridad SMS\n· Gdl : Función de seguridad GDL\nEn caso de detectarse un fallo, la pantalla parpadeará para informar de ello al usuario. Si se ha conectado un\nterminal gráfico, se visualizará el nombre del fallo detectado.\n36\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Descripción general\nEstructura de los menús\nEncendido\nSelección de parámetro\n1+\n= ENT\nESC )= ESC\nOOO\nbFr\n+\nEste parámetro sólo se visualiza al\nencender por primera vez el variador.\nEl ajuste podrá modificarse\nposteriormente en el menú\n[CONTROL MOTOR] (dr [ - ) para\n[Frec.estándar motor] (6 F r )\n+\n= ENT\nESC\n= ESC\nESC\nESC\nSEE -\n8\n8\n0.\n4\nENT\nENT\n+\nESC Q\n000\n0.0\nESC\n4\n+\nOOO\nrEF -\n+\nOOO\n+\nOOO\nUnF\n-\n+\n[1.1 REFERENCIA VELOCIDAD]\n(~ EF -)\nOOO\nENT\n000\nFFn\n0.0 1\n+\n[1.2 SUPERVISIÓN] (non -)\n[1.3 CONFIGURACIÓN] ([ on F)\nEn la pantalla de 7 segmentos, se utiliza un guión tras los códigos de menú y de submenú para\ndiferenciar éstos de los códigos de parámetro.\nEjemplo: [FUNCIONES APLICACIÓN] (F un -), que es menú, y [Rampa aceleración] (A [ C), que es\nparámetro.\nSelección de asignaciones múltiples para un único parámetro\nEjemplo: Lista de alarmas del grupo 1 del menú [ENTRADAS/SALIDAS] ( , - a -)\nPueden seleccionarse varias alarmas \"marcando\" éstas tal como se indica a continuación.\nEl dígito de la derecha indica:\nI\nF\n1\nseleccionado\nnc\nseleccionado\nEl mismo principio se utiliza para realizar todas las selecciones múltiples.\nNVE41298 04/2018\n37",
+      "tablas": [
+        [
+          [
+            "Encendido",
+            "",
+            "Selección de parámetro"
+          ],
+          [
+            "1+ = ENT ESC )= ESC OOO bFr +\n:selected:",
+            "Este parámetro sólo se visualiza al encender por primera vez el variador. El ajuste podrá modificarse posteriormente en el menú [CONTROL MOTOR] (dr [ - ) para [Frec.estándar motor] (6 F r )",
+            "+ = ENT ESC = ESC ESC ESC SEE - 8 8 0. 4 ENT ENT + ESC Q 000 0.0 ESC 4\n:selected:"
+          ],
+          [
+            "+ OOO rEF - + OOO + OOO UnF - +",
+            "[1.1 REFERENCIA VELOCIDAD] (~ EF -)",
+            "OOO ENT 000 FFn 0.0 1 +"
+          ],
+          [
+            "[1.2 SUPERVISIÓN] (non -)",
+            ""
+          ],
+          [
+            "[1.3 CONFIGURACIÓN] ([ on F)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "Descripción general\n38\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Configuración\nConfiguración\n2\nContenido de este capítulo\nEste capítulo trata los siguientes temas:\nTema\nPágina\nPasos para configurar el variador\n40\nPasos iniciales.\n41\nNVE41298 04/2018\n39",
+      "tablas": [
+        [
+          [
+            "Tema",
+            "Página"
+          ],
+          [
+            "Pasos para configurar el variador",
+            "40"
+          ],
+          [
+            "Pasos iniciales.",
+            "41"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "Configuración\nPasos para configurar el variador\nINSTALACIÓN\n1. Consulte el manual de instalación.\nPROGRAMACIÓN\n-\n2. Aplique alimentación de entrada al variador, pero no\naplique ninguna orden de marcha.\n3. Configure:\nSugerencias:\n· La frecuencia nominal del motor [Frec. estándar motor] (b Fr )\npágina 88 si no corresponde a 50 Hz.\n· Los parámetros del motor en el menú\n[CONTROL MOTOR] (dr [ -), página 106, sólo si la\nconfiguración de fábrica del variador no es adecuada.\n· Las funciones de aplicación en el menú\n[ENTRADAS / SALIDAS] ( , _ a - ), página 126, el menú\n[CONTROL] ([ E L - ) , página 155, y el menú [FUNCIONES\nAPLICACIÓN] (F un - ), página 168, sólo si la configuración de\nfábrica del variador no es adecuada.\n· Antes de iniciar la programación, complete las tablas de\najustes de cliente, página 327.\n· Utilice el parámetro [Restaurar config] (F [ 5), página\n83, para volver a aplicar los ajustes de fábrica en cualquier\nmomento.\n· Para localizar rápidamente la descripción de una función,\nutilice el índice de funciones, página 325.\n· Antes de configurar una función, lea atentamente la\nsección que trata acerca de la compatibilidad de las\nfunciones, página 166.\nNota: A continuación se indican las operaciones que deberán\nrealizarse para que el rendimiento del variador sea óptimo en\ntérminos de precisión y tiempo de respuesta:\n· Especifique los valores que se indican en la placa de\ncaracterísticas del motor en el menú [CONTROL MOTOR]\n(dr [ - ), página 106.\n· Realice el autoajuste con el motor conectado y en frío\nmediante el parámetro [Autoajuste] (L u n), página 89.\n4. En el menú [AJUSTES] ( S E E - ), ajuste los\nparámetros siguientes:\n· [Rampa aceleración] (A [ C), página 89, y [Rampa\ndeceleración] ( d E C), página 89.\n· [Velocidad Mínima] (L 5 P), página 89 , y\n[Vel. máxima] (H 5 P), página 91.\n· [I Térmica motor] ( , & H), página 89.\n5. Arranque el variador.\n40\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Configuración\nPasos iniciales.\nSi no se ha conectado el variador a la red eléctrica durante un período de tiempo prolongado, deberá\nrestablecerse el rendimiento completo de los condensadores antes de poner el motor en marcha.\nAVISO\nRENDIMIENTO REDUCIDO DEL CONDENSADOR\n· Aplique tensión de la red eléctrica al variador durante una hora antes de arrancar el motor si no se ha\nconectado a la red eléctrica durante los siguientes períodos de tiempo:\n- 12 meses a una temperatura de almacenamiento máxima de +50 °℃ (+122 °F).\n- 24 meses a una temperatura de almacenamiento máxima de +45 ℃ (+113 ºF).\n- 36 meses a una temperatura de almacenamiento máxima de +40 ℃ (+104 °F).\n· Compruebe que no se pueda aplicar ninguna Orden de marcha antes de que haya transcurrido una hora.\n· Compruebe la fecha de fabricación si va a poner en marcha el variador por primera vez y lleve a cabo el\nprocedimiento especificado si la fecha de fabricación es superior a 12 meses.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nSi el procedimiento especificado no se puede llevar a cabo sin una Orden de marcha debido al control del\ncontactor interno de la red eléctrica, realice este procedimiento con la fase de alimentación activada, pero con\nel motor en parada para que no haya corriente de la red apreciable en los condensadores.\nAntes de encender el variador\nA\nADVERTENCIA\nFUNCIONAMIENTO IMPREVISTO DEL EQUIPO\nVerifique que todas las entradas digitales estén inactivas para evitar un funcionamiento imprevisto.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nVariador bloqueado.\nSi hay una Orden de marcha activa (como Marcha hacia delante, Marcha hacia atrás e Inyección de CC)\ndurante:\n· Un restablecimiento del producto a los ajustes de fábrica,\n. I Un \"Rearme tras fallo\" manual mediante [Rearme tras fallo] (~ 5 F),\n· | Un \"Rearme tras fallo\" manual mediante el apagado y encendido de un producto,\n· I Un comando de paro proporcionado por un canal que no sea el comando de canal activo (como la tecla\nde parada del terminal de visualización en el control de 2/3 cables).\nEl variador se encontrará en estado de bloqueo y mostrará el mensaje [Parada en rueda libre] (n 5 E ).\nResultará necesario desactivar todas las Órdenes de marcha activas antes de autorizar una nueva Orden de\nmarcha.\nContactor de red\nRIESGO DE DAÑOS EN EL VARIADOR\nAVISO\nNo encienda el variador a intervalos inferiores a 60 segundos.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nNVE41298 04/2018\n41",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "Configuración\nUtilización con motor de potencia inferior o sin motor\nCon los ajustes de fábrica, la detección de pérdida de fase del motor está activa ([Pérdida fase motor]\n( o PL ) = [Sí] ( yE 5), página 260). Para evitar el uso de un motor con el mismo calibre que el variador\ncuando se compruebe el variador o durante la fase de mantenimiento, desactive la detección de pérdida de\nfase de la salida del motor. ([Pérdida fase motor] ( a PL ) = [No] (na)). Esto puede resultar especialmente\nútil si se prueban variadores muy grandes con un motor pequeño.\nEstablezca [Tipo control motor] (C E E), pagina 106, en [Estándar] ( 5 E d) en [Menú Control motor]\n(dr [ -).\nAVISO\nSOBRECALENTAMIENTO DEL MOTOR\nInstale el equipo de supervisión térmica externo en las siguientes condiciones:\n· Si se conecta un motor con una corriente nominal inferior al 20% de la corriente nominal del variador.\n· Si utiliza la función de conmutación del motor.\nSi no se respetan estas instrucciones, pueden producirse daños en el equipo.\nA APELIGRO\nPELIGRO DE DESCARGA ELÉCTRICA, EXPLOSIÓN O ARCO ELÉCTRICO\nSi se deshabilita la supervisión de las fases de salida, no se detectará la pérdida de fase y, como\nconsecuencia, tampoco la desconexión accidental de los cables.\n· Compruebe que la configuración de este parámetro no cause situaciones de riesgo.\nSi no se respetan estas instrucciones, se pueden producir lesiones personales graves o la muerte.\n42\nNVE41298 04/2018",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Programación\nContenido de esta parte\nEsta parte consta de los siguientes capítulos:\nCapítulo\nNombre del capítulo\nPágina\n3\nModo de referencia (rEF)\n45\n4\nModo de supervisión (MOn)\n49\n5\nModo Configuración (ConF)\n79\n6\nInterfaz (ItF)\n285\n7\nAbrir/Guardar (trA)\n301\n8\nCódigo de acceso (COd)\n305\n9\nPantalla Multipunto\n307\nUn cableado incorrecto y ajustes o datos no adecuados pueden provocar movimientos no anticipados,\nseñales de disparo o daños en las piezas, además de la desactivación de las funciones de supervisión\nADVERTENCIA\nFUNCIONAMIENTO INESPERADO DEL EQUIPO\n· No ponga en funcionamiento un variador con unos ajustes o datos desconocidos.\n· No modifique nunca un parámetro a no ser que entienda dicho parámetro completamente y todos los\nefectos de la modificación.\n· Al poner el producto en servicio, ejecute cuidadosamente las pruebas en todos los modos de\nfuncionamiento y posibles situaciones de error.\n· Compruebe que haya un pulsador de parada de emergencia al alcance de todas las personas implicadas\nen la ejecución de las pruebas.\n· Compruebe las funciones tras sustituir el producto y también tras efectuar cambios en los ajustes o los\ndatos.\n· Anticipe los posibles movimientos en direcciones no intencionadas o la oscilación del motor.\n· Utilice el sistema únicamente cuando no haya personas ni obstáculos en la zona de funcionamiento.\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nSi se desactiva la fase de alimentación de manera no intencionada (por ejemplo, como resultado de un corte\ndel suministro eléctrico, errores o funciones), el motor dejará de desacelerar de manera controlada.\nA ADVERTENCIA\nMOVIMIENTO SIN EFECTO DE FRENADO\nCompruebe que los movimientos sin efecto de frenado no provoquen lesiones o daños en el equipo\nEl incumplimiento de estas instrucciones puede causar la muerte, lesiones serias o daño al equipo.\nNVE41298 04/2018\n43",
+      "tablas": [
+        [
+          [
+            "Capítulo",
+            "Nombre del capítulo",
+            "Página"
+          ],
+          [
+            "3",
+            "Modo de referencia (rEF)",
+            "45"
+          ],
+          [
+            "4",
+            "Modo de supervisión (MOn)",
+            "49"
+          ],
+          [
+            "5",
+            "Modo Configuración (ConF)",
+            "79"
+          ],
+          [
+            "6",
+            "Interfaz (ItF)",
+            "285"
+          ],
+          [
+            "7",
+            "Abrir/Guardar (trA)",
+            "301"
+          ],
+          [
+            "8",
+            "Código de acceso (COd)",
+            "305"
+          ],
+          [
+            "9",
+            "Pantalla Multipunto",
+            "307"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "44\nNVE41298 04/2018",
+      "tablas": []
+    }
+  ]
+}

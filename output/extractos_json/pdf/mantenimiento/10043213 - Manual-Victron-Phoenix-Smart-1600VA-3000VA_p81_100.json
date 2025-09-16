@@ -1,0 +1,687 @@
+{
+  "archivo": "10043213 - Manual-Victron-Phoenix-Smart-1600VA-3000VA_p81_100",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "EN\nNL\n2. BESKRIVNING\n2.1 Allmänt\nInbyggd Bluetooth: fullt konfigurerbar med en surfplatta eller smarttelefon\n· Larmtröskel för låg batterispänning och återställningsnivå\n· Avstängning vid låg batterispänning och omstartsnivå\n· Dynamisk avstängning: belastningsberoende avstängningsnivå\n•\nUtgångsspänning: 210 - 245V\n· Frekvens: 50 Hz eller 60 Hz\n· ECO-läge av/på och ECO-läge sensornivå\n•\nLarmrelä\nÖvervakning:\n· In- och utgångsspänning, % belastning och larm\n- VE.Direct kommunikationsport\nVE-Direct-porten kan kopplas till en dator (VE.Direct till USB-gränsnittskabel krävs) för att\nkonfigurera och övervaka samma parametrar.\nBevisad pålitlighet\nHelvågs- samt toroidala transformatortopologin har visat sig vara pålitlig under många år.\nVäxelriktarna är skyddade mot kortslutning och överhettning, vare sig det beror på\növerbelastning eller hög omgivningstemperatur.\nFR\nDE\nES\nSE\nAppendix\nHög starteffekt\nKrävs för att starta belastningar som strömomvandlare till LED-lampor, halogenlampor\neller elektriska verktyg.\nEco-läge\nNär växelriktaren är i ECO-läge slår den över till standby när belastningen sjunker under ett\nförinställt värde (lägsta tillkopplingsläge för belastning: 10 VA och lägsta frånkopplingsläge 0\nVA). Väl i standby-läge kommer växelriktaren att slås i kortare perioder (justerbart, standard:\nvarje 3:e sekund). Om belastningen överstiger en förinställd nivå kommer växelriktaren att\nfortsätta att vara på.\nFjärrstyrning på/av\nDet är möjligt att koppla en av/på-brytare för fjärrstyrning eller ett relä till ett tvåpoligt\nanslutningsdon.\nAlternativt kan H-terminalen (vänster) på det tvåpoliga anslutningsdonet växlas till batteriets\nplus eller så kan L-terminalen (höger) på det tvåpoliga anslutningsdonet växlas till batteriets\nminus (eller t.ex. ett fordonschassi).\nLED-diagnos\nSe avsnitt 3.3\nFör överföring av belastningen till en annan AC-källa: den automatiska\növerkopplingsbrytaren\nFör våra lågeffektsväxelriktare rekommenderar vi vår överkopplingsbrytare Filax Automatic\nTransfer Switch. Filax har en väldigt kort överkopplingstid (mindre än 20 millisekunder) så\ndatorer och annan elektronisk utrustning kommer att fortsätta att fungera utan avbrott.\nAlternativt kan man använda en MultiPlus med inbyggd överkopplingsbrytare.\nvictron energy\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "3. ANVÄNDNING\n3.1 På/Av-brytare\nNär produkten ändras till \"på\", med tryckknappen är den fullt funktionsduglig. Växelriktaren\nkommer att aktiveras och LED-lampan \"växelriktare\" kommer att tändas. Om du därefter\ntrycker på tryckknappen kommer växelriktaren efter en kort stund att växla mellan \"på\", \"ECO\"\noch \"av\".\nFörutom tryckknappen, kan växelriktaren också slås på(normal eller ECO) och av med\nBluetooth på en mobil enhet med iOS eller Android och appen VictronConnect. Om den slås\nav via Bluetooth eller med tryckknappen kan enheten inte slås på och av igen med den\nkabelanslutna VE.Direct-porten.\n3.2 Fjärrstyrning\nFjärrstyrning är möjlig med en enkel på/av-brytare eller med en kontrollpanel, Control Panel,\nför Phoenix växelriktare. Det är möjligt att koppla en brytare för fjärrstyrning (av/på) på ett\ntvåpoligt anslutningsdon. Brytaren kan också kopplas mellan batteriets plus och den vänstra\nkontakten på det tvåpoliga anslutningsdonet (markerad med H, se bilaga A) eller mellan\nbatteriets minus och den högra kontakten på det tvåpoliga anslutningsdonet (markerad med\nL, se bilaga A).\nAv säkerhetsskäl kan denna product stängas av helt (dvs växelriktaren kan inte\nslås på med tryckknappen eller via Bluetooth) genom att ta bort fjärrkontakten\noch den fabriksinstallerade kabelbrygga (eller ställa in fjärrbrytaren på av om det\nfinns en sådan installerad). Användaren kan då vara säker på att växelriktaren\ninte kan slås på av misstag via Bluetooth av en annan oväntad användare.\n!\n3.3 LED-definitioner\nGrön LED:\nStatus\nFelsökning\nFast på\nVäxelriktare på\nRöd LED av\nstatus OK\nRed LED på eller blinkar:\nVäxelriktare när fortfarande på men kommer att stängas av\nom villkoren försämras. Se tabellen för röd LED för\nvarningsorsaker-\nLångsam\nenkel puls\nEco-läge\nOm växelriktaren fortsätter att slås på och av medan det\nfinns en ansluten belastning kan det bero på att\nbelastningen är för liten jämfört med de nuvarande\ninställningarna för ECO-läge. Öka belastningen eller ändra\ninställningarna för ECO-läge. (Lägsta inställning för ECO-\nläge: 15 W)\nSnabb\ndubbel puls\nAv och i\nvänteläge\nVäxelriktaren har slagits av som skyddsåtgärd. Den\nkommer att starta om så fort alla larmsituationer är\navhjälpta. Se status för röd LED för avstängningsorsaker.\nAv\nVäxelriktare av\nRöd LED av\nKontrollera på/av-fjärrstyrningskontakten.\nKontrollera DC-kabelanslutningar och säkringar.\nKontrollera driftläge genom att trycka på tryckknappen en\ngång.\nRöd LED på eller blinkar\n4\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Grön LED:",
+            "Status",
+            "Felsökning"
+          ],
+          [
+            "Fast på",
+            "Växelriktare på",
+            "Röd LED av status OK Red LED på eller blinkar: Växelriktare när fortfarande på men kommer att stängas av om villkoren försämras. Se tabellen för röd LED för varningsorsaker-"
+          ],
+          [
+            "Långsam enkel puls",
+            "Eco-läge",
+            "Om växelriktaren fortsätter att slås på och av medan det finns en ansluten belastning kan det bero på att belastningen är för liten jämfört med de nuvarande inställningarna för ECO-läge. Öka belastningen eller ändra inställningarna för ECO-läge. (Lägsta inställning för ECO- läge: 15 W)"
+          ],
+          [
+            "Snabb dubbel puls",
+            "Av och i vänteläge",
+            "Växelriktaren har slagits av som skyddsåtgärd. Den kommer att starta om så fort alla larmsituationer är avhjälpta. Se status för röd LED för avstängningsorsaker."
+          ],
+          [
+            "Av",
+            "Växelriktare av",
+            "Röd LED av Kontrollera på/av-fjärrstyrningskontakten. Kontrollera DC-kabelanslutningar och säkringar. Kontrollera driftläge genom att trycka på tryckknappen en gång. Röd LED på eller blinkar"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "EN\nNL\nVäxelriktaren har slagits av som skyddsåtgärd. Den\nkommer inte att startas om automatiskt. Den röda LED-\nlampan indikerar orsaken till avstängning. Avhjälp felet och\nstarta om växelriktaren genom att stänga av den och sedan\npå igen.\nBlinkar snabbt\nAv och\nuppdaterig av\nfast\nprogramvara\npågår eller har\nmisslyckats\nRöd LED blinkar ( -.-.-.-. )\nUppdaterig av fast programvara pågår eller har\nmisslyckats. Vid misslyckande, försök igen.\nFR\nGul LED\nStatus\nFelsökning\nFast på\nEco-läge\nRöd LED av\nstatus OK\nRed LED på eller blinkar:\nVäxelriktare när fortfarande på men kommer att stängas av\nom villkoren försämras. Se tabellen för röd LED för\nvarningsorsaker-\nAv\nECO-läge av\nRöd LED av\nKontrollera driftläge genom att trycka på tryckknappen en\ngång.\nKontrollera på/av-fjärrstyrningskontakten.\nKontrollera DC-kabelanslutningar och säkringar.\nRöd LED på eller blinkar\nVäxelriktaren har slagits av som skyddsåtgärd. Den\nkommer inte att startas om automatiskt. Den röda LED-\nlampan indikerar orsaken till avstängning. Avhjälp felet och\nstarta om växelriktaren genom att stänga av den och sedan\npå igen.\nDE\nES\nSE\nAppendix\nRöd LED\nDefinition\nFelsökning\nFast på\nÖverbelastning\nMinska belastning\nBlinkar\nlångsamt\nLågt batteri\nLadda eller byt batteri\nKontrollera DC-kabelanslutningar.\nKontrollera kabeltvärsnittet eftersom det kan vara\notillräckligt.\nSe avsnitt 4.2 Skydd och automatiks omstart, för manuell\noch automatisk omstart.\nBlinkar\nsnabbt\nHögt batteri.\nMinska DC-ingångsspänningen, kontrollera om laddaren är\nfelaktig.\nDubbel\npuls\nHög\ntemperatur.\nMinska belastning och/eller flytta växelriktaren till en bättre\nventilerad plats.\nSnabb\nenkel puls\nHög DC-brum\nKontrollera DC-kabelanslutningarna och kabeltvärsnitt.\n3.4 Skydd och automatisk omstart\nÖverbelastning\nVissa belastningar som motorer eller pumpar drar stora inkopplingsströmmar i uppstartningen.\nUnder sådana omständigheter är det möjligt att uppstartningsströmmen överskrider den\naktuella utlösningsnivån hos växelriktaren. I detta fall kommer utgångspänningen att snabbt\nminska för att begränsa utgångsströmmen från växelriktaren. Om den aktuella\nutlösningsnivån överskrids kontinuerligt kommer växelriktaren att stänga av och vänta 30\nsekunder för att sen starta om.\nvictron energy\n5",
+      "tablas": [
+        [
+          [
+            "",
+            "",
+            "Växelriktaren har slagits av som skyddsåtgärd. Den kommer inte att startas om automatiskt. Den röda LED- lampan indikerar orsaken till avstängning. Avhjälp felet och starta om växelriktaren genom att stänga av den och sedan på igen."
+          ],
+          [
+            "Blinkar snabbt",
+            "Av och uppdaterig av fast programvara pågår eller har misslyckats",
+            "Röd LED blinkar ( -.-.-.-. ) Uppdaterig av fast programvara pågår eller har misslyckats. Vid misslyckande, försök igen."
+          ]
+        ],
+        [
+          [
+            "Gul LED",
+            "Status",
+            "Felsökning"
+          ],
+          [
+            "Fast på",
+            "Eco-läge",
+            "Röd LED av status OK Red LED på eller blinkar: Växelriktare när fortfarande på men kommer att stängas av om villkoren försämras. Se tabellen för röd LED för varningsorsaker-"
+          ],
+          [
+            "Av",
+            "ECO-läge av",
+            "Röd LED av Kontrollera driftläge genom att trycka på tryckknappen en gång. Kontrollera på/av-fjärrstyrningskontakten. Kontrollera DC-kabelanslutningar och säkringar. Röd LED på eller blinkar Växelriktaren har slagits av som skyddsåtgärd. Den kommer inte att startas om automatiskt. Den röda LED- lampan indikerar orsaken till avstängning. Avhjälp felet och starta om växelriktaren genom att stänga av den och sedan på igen."
+          ]
+        ],
+        [
+          [
+            "Röd LED",
+            "Definition",
+            "Felsökning"
+          ],
+          [
+            "Fast på",
+            "Överbelastning",
+            "Minska belastning"
+          ],
+          [
+            "Blinkar långsamt",
+            "Lågt batteri",
+            "Ladda eller byt batteri Kontrollera DC-kabelanslutningar. Kontrollera kabeltvärsnittet eftersom det kan vara otillräckligt. Se avsnitt 4.2 Skydd och automatiks omstart, för manuell och automatisk omstart."
+          ],
+          [
+            "Blinkar snabbt",
+            "Högt batteri.",
+            "Minska DC-ingångsspänningen, kontrollera om laddaren är felaktig."
+          ],
+          [
+            "Dubbel puls",
+            "Hög temperatur.",
+            "Minska belastning och/eller flytta växelriktaren till en bättre ventilerad plats."
+          ],
+          [
+            "Snabb enkel puls",
+            "Hög DC-brum",
+            "Kontrollera DC-kabelanslutningarna och kabeltvärsnitt."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Efter tre omstartningar som följs av ytterligare överbelastning inom 30 sekunder kommer\nväxelriktaren att stängas av helt. LED-lamporna kommer att signalera avstängning på grund\nav överbelastning. För att starta om växelriktaren måste du stänga av den och sedan slå på\nden igen.\nLåg batterispänning (justerbart)\nVäxelriktaren kommer att stängas av när DC-ingångsspänningen sjunker under nivån för\navstängning vid lågt batteri. Efter en fördröjning på minst 30 sekunder kommer växelriktaren\natt starta på nytt om spänningen stiger över nivån för omstart vid lågt batteri.\nEfter tre omstartningar följda av avstängning på grund av lågt batteri inom 30 sekunder efter\nomstarten kommer växelriktaren att stängas av helt och sluta försöka. LED-lamporna kommer\natt signalera avstängning på grund av lågt batteri. För att starta om växelriktaren kan du ställa\nin den på av och sedan på, eller ladda batteriet. Så fort batteriet har laddats upp och håller sig\növer den inställda laddningsnivån i 30 sekunder kommer växelriktaren att slås på.\nSe tabellen med teknisk data för standardinställningen för avstängning vid lågt batteri och\nomstartsnivåer. Värdena kan anpassas med appen VictronConnect.\nHög batterispänning\nMinska DC-ingångsspänningen och/eller kolla efter en felaktig batteri- eller solcellsladdare i\nsystemet. Efter avstängnings på grund av hög batterispänning kommer växelriktaren först att\nvänta 30 sekunder och sen försöka att återuppta driften så fort batterispänningen har sjunkit\ntill en godtagbar nivå. Växelriktaren kommer inte att förbli avstängd efter ett flertal försök.\nHög temperatur\nEn hög omgivningstemperatur eller varaktiga belastningar kan leda till avstängning på grund\nav övertemperatur. Växelriktaren kommer att starta om efter 30 sekunder. Växelriktaren\nkommer inte att förbli avstängd efter ett flertal försök. Minska belastningen och/eller flytta\nväxelriktaren till en bättre ventilerad plats.\nHög DC-brumspänning\nHög DC-brumspänning beror oftast på lösa kabelanslutningar och/eller för smala DC-kablar.\nEfter att växelriktaren har stängts av på grund av hög DC-brumspänning väntar den 30\nsekunder och startar sen om.\nEfter tre omstartningar som följs av ytterligare avstängning på grund av för hög DC-\nbrumspänning inom 30 sekunder efter omstart kommer växelriktaren att stängas av helt och\nsluta försöka. För att starta om växelriktaren kan du ställa in den på av och sedan på,\nKontinuerlig hög DC-brumspänning förkortar växelriktarens förväntade livslängd.\n6\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "4. INSTALLATION\n?\nVäxelriktaren måste installeras av en kvalificerad elektriker.\n?\nUnder installtionen, se till att fjärrkontakten med kabelbrygga är bortkopplad\n(eller stäng av den installerade av/på-brytaren för fjärrstyrning) för att\nsäkerställa att växelriktaren inte startas oväntat.\n4.1 Placering\nProdukten måste installeras på en torr och välventilerad plats, så nära batterierna som\nmöjligt. Det bör finnas ett fritt utrymme på minst 10cm runt apparaten för avkylning.\nEN\nNL\nFR\nDE\nES\nSE\nFör hög omgivningstemperatur kommer att leda till följande:\nReducerad livslängd\nReducerad laddningsström.\nReducerad toppkapacitet eller nedstängning av växelriktaren.\nInstallera aldrig växelriktaren direkt ovanpå batterierna.\nAppendix\n!\nProdukten passar för väggmontering. För montering, se bilaga A.\nApplikationen kan monteras horisontalt eller vertikalt, vertikal montering är att föredra. Den\nvertikala installationen erbjuder optimal kylning.\n!\nProduktens insida måste förbli åtkomlig efter installationen.\nFörsök att hålla avståndet mellan produkten och batteriet till ett minimum för att minimera\nkabelspänningsförluster.\nAv säkerhetsskäl bör växelriktaren installeras i en värmetålig miljö om den\nanvänds tillsammans med utrustning där en avsevärd mängd kraft skall\nkonverteras. Du bör förhindra närvaron av exempelvis kemikalier, syntetiska\nkomponenter, gardiner eller andra textilier m.m. i den omedelbara närheten.\n!\nvictron energy\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "4.2 Anslutning av batterikablar\nFör att utnyttja produktens fulla kapacitet, bör batterier med tillräcklig kapacitet och\nbatterikablar med tillräckligt tvärsnitt användas. Se tabell.\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nRekommenderat\ntvärsnitt (mm2)\nängd upp till 6 m\n50\n25\n25\n70\n35\n25\n12/3000\n24/3000\n48/3000\nRekommenderat\ntvärsnitt (mm2)\n0 - 5 m\n95\n50\n35\n5 - 10 m\n120\n95\n70\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nRekommenderad\nbatterikapacitet\n(Ah)\n300 - 800\n150 - 400\n75 - 200\n350 - 1000\n200 - 500\n100 - 250\n12/3000\n24/3000\n48/3000\nRekommenderad\nbatterikapacitet\n(Ah)\n400-1200\n200 - 700\n100 - 400\nAnmärkning: Internt motstånd är den viktiga faktorn när man arbetar med batterier med låg\nkapacitet. Var vänlig rådfråga din leverantör eller relevanta avsnitt i vår bok \"Fristående\nelkraft\", som går att ladda ner från vår hemsida.\nProcedur\nGör följande för att ansluta batterikablarna:\nAnvänd en isolerad hylsnyckel för att undvika kortslutning av batteriet.\nUndvik att kortsluta batterikablarna.\n!\nAnslut batterikablarna: + (röd) och - (svart) till batteriet enligt bilaga A.\nAnslutning omvänd polaritet (+ till - och - till +) skadar enheten.\nSpänn åt muttrarna ordentligt för att reducera kontaktmotståndet så mycket som möjligt.\n8\nvictron energy",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Rekommenderat tvärsnitt (mm2)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "ängd upp till 6 m",
+            "50",
+            "25",
+            "25",
+            "70",
+            "35",
+            "25"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Rekommenderat tvärsnitt (mm2)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "0 - 5 m",
+            "95",
+            "50",
+            "35"
+          ],
+          [
+            "5 - 10 m",
+            "120",
+            "95",
+            "70"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Rekommenderad batterikapacitet (Ah)",
+            "300 - 800",
+            "150 - 400",
+            "75 - 200",
+            "350 - 1000",
+            "200 - 500",
+            "100 - 250"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Rekommenderad batterikapacitet (Ah)",
+            "400-1200",
+            "200 - 700",
+            "100 - 400"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "EN\nAppendix\n4.3 DC-säkerhetssäkring\nDet finns ingen säkerhetssäkring inuti växelriktaren, en sådan ska installeras på utsidan,\nRekommenderade säkerhetssäkringar finns i tabellen nedan:\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nRekommenderad\nDC-säkring\n250A\n125A\n60A\n300A\n150A\n80A\n12/3000\n24/3000\n48/3000\nRekommenderad\nDC-säkring\n400A\n250A\n125A\nNL\nFR\nDE\n4.4 Anslutning av AC-kablarna\nES\nDetta är en produkt av säkerhetsklass I (som levereras med en skyddande\njordterminal).\nSE\nDen neutrala ledningen på växelriktarens AC-utgång är ansluten till\nchassit (se bilaga B för 1 600 VA/2 000 VA och bilaga C för 3 000 VA).\nDetta är för att säkerställa korrekt funktion för en GFCI (eller RCCB) som\ninstalleras i växelriktarens AC-utgång.\n?\nProduktens chassi måste anslutas till jordningen, till ramen (på ett fordon)\neller jordplattan eller skrovet (på en båt).\nProcedur\nTerminalkontakterna anges tydligt. Från vänster till höger: \"L\" (fas), \"N\" (neutral), \"PE\" (jord).\n4.5 Extra anslutningar\nEtt antal extra anslutningar är möjliga:\n4.5.1 Fjärrstyrningsbrytare på/av & fjärrkontrollpanel\nProdukten kan fjärrstyras på tre sätt:\n-\nMed en smarttelefon (iOS eller Android) och appen Victron Connect.\n-\nMed en extern brytare (kopplad till det tvåpoliga fjärranslutningsdonet). Fungerar endast\nom brytaren på växelriktaren är inställd till \"på\".\n-\nMed en kontrollpanel Phoenix Inverter Control VE.Direct panel (ansluten till ett av de\ntvåpoliga fjärranslutningsdonen, se bilaga A). Fungerar endast om brytaren på\nväxelriktaren är inställd till \"på\".\nvictron energy\n9",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Rekommenderad DC-säkring",
+            "250A",
+            "125A",
+            "60A",
+            "300A",
+            "150A",
+            "80A"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Rekommenderad DC-säkring",
+            "400A",
+            "250A",
+            "125A"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "4.5.2. Programmerbart rela\nVäxelriktarna är utrustade med ett multifungerande relä som är inställt för normaldrift som\nstandard. (VictronConnect-programvaran behövs för att ändra reläets funktion). De olika\nrelälägena kan sammanfattas enligt följande:\n-\nNormal drift (\"växelriktare\" i appen VictronConnect) - standard\nReläet är stängt under normal drift och öppet när växelriktaren har stängt av sig\nsjälv vid larm, har stängts av av en användare och det är även öppet (självklart) när\ndet inte finns någon ström i terminalerna, dvs batteriet är bortkopplat. I ECO-läge\nkommer reläet att vara stängt både när enheten söker efter en belastning och när\nden är fullt på, dvs när en belastning detekteras. Använd det här alternativet när du\nvill att reläet ska signalera att det finns ström på växelriktarens utgång.\n-\nVarningar och larm (\"larm\" i appen VictronConnect)\nLiknande som funktionen ovan, men reläet kommer även att öppnas när det\nförekommer en varning. Till exempel på grund av att batterispänningen har sjunkit\ntill avstäningsnivån, eller om batteriet är så uppladdat att det nästan stängs av på\ngrund av överladdning. I ECO-läge kommer reläet att vara stängt både när enheten\nsöker (ingen belastning) och när den är fullt på (belastning detekterad), förutom då\ndet förekommer en varning.\nAnvänd det här alternativet när du vill att reläet ska signalera att det är dags att\ngöra någonting (ladda batteriet, minska belastningen osv), för att undvika\nströmavbrott.\n-\nLågt batteri (\"lågt batteri\" i appen VictronConnect)\nReläet på vid normal drift. Reläet kommer att stängas av när det utfärdas en\nvarning för lågt batteri. Det komer att fortsätta att vara avstängt om växelriktaren\nstängs av på grund av låg spänning och kommer endast att slås på igen när\nväxelriktaren åter är i drift och batterispänningen har stigit över återställningsnivån\nföre larm. Använd detta alternativ för belastningsfördelning, eller för att automatiskt\nstarta en generator. Observera att detta endast kan klassas som en start/stopp-\nfunktion för en \"fattigmansgenerator\". För fler och bättre alternativ, se här.\nExtern fläkt (\"fläkt\" i appen VictronConnect)\n-\nReläet är avstängt, om inte fläkten inuti växelriktaren är i drift. Använd det här\nalternativet för att koppla på en extern fläkt, för situationer då växelriktaren är\nplacerad på en liten sluten plats.\nAvaktiverat rela (\"av\" i appen VictronConnect)\n-\nDet här alternativet sätter reläet i ÖPPEN position. Använd det här alternativet o du\ninte har för avsikt att använda reläfunktionen.\n10\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "5. KONFIGURERING\nEN\nInställningarna får enbart utföras av kvalificerad tekniker.\nLäs instruktionerna noggrant innan ändringarana genomförs.\nBatterierna bör placeras på en torr och välventilerad plats under laddningen.\n!\n5.1 Standardinställningar: Färdig att använda\nNL\nFR\nVid leverans är Phoenix växelriktare inställd på standardfabriksvärden. I allmänhet passar\ndessa inställningar för fristående drift.\nStandardfabriksinställningar\nVäxelriktarfrekvens\nVäxelriktarspänning\nSökinställning\nav\nProgrammerbart relä\nlarmfunktion\nDynamisk avstängning\nav\n50 Hz\n230 VAC\n5.2 Förklaring av inställningar\nVäxelriktarens frekvens\nUtgångsfrekvens\nJusterbarhet: 50Hz; 60Hz\nSpänning, växelriktare\nJusterbarhet: 210 - 245V\nDE\nES\nSE\nAppendix\nECO-läge\nOm ECO-läget är aktiverat minskas strömförbrukningen under belastningsfri drift med ungefär\n80 .... 90 %. I detta läge stängs Phoenix Inverter Smart av när den arbetar i växelriktarläge, i\nhändelse av ingen belastning eller väldigt låg belastning och sätts igång var 2,5 sekund under\nen kort period (justerbart). Om utgångsströmmen överskrider en inställd nivå kommer\nväxelriktaren att fortsätta att fungera. Om inte, kommer växelriktaren att stängas av igen.\nECO-läget kan ställas in med tryckknappen på växelriktarens framsida.\nECO-lägets belastningsnivåer för \"stäng av\" och \"förbli påslagen\" kan ställas in med Victron\nConnect.\nStandardinställningen är:\nStäng av: 50 Watt (linjär belastning)\nSlå på: 100 Watt (linjär belastning)\nProgrammerbart rela\nSom standard är det programmerbara reläet inställt som ett larmrelä, dvs. reläet kommer att\ngöras strömlöst i händelse av ett larm eller ett förlarm (växelriktaren är nästan för varm,\nbrumspänningen på ingången är nästan för hög, batterispänningen är nästan för låg).\nvictron energy\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Dynamisk avstängning\nAnvänd VictronConnect för att aktivera och konfigurera dynamisk avstängning (se\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-dynamic-cutoff för fler detaljer).\nAnvänd inte dynamisk avstängning i en installation som även har andra belastningar anslutna\ntill samma batteri: batterispänningen kommer att sjunka på grund av den extra belastningen,\nmen växelriktarens algoritm för dynamisk avstängning är inte medveten om den belastningen\noch därför kommer växelriktaren att stängas av för tidigt med ett larm för underspänning.\n5.3 Konfigurering via dator\nAlla inställningar kan ändras med hjälp av en smarttelefon, surfplatta eller dator.\nFör att ändra inställningar med en smarttelefon eller surfplatta krävs följande:\n- VicronConnect-programvara: kan laddas ner gratis från www.victronenergy.com.\nFör att ändra inställningar med datorn krävs följande:\n- VictronConnect-programvara: kan laddas ner gratis från www.victronenergy.com.\n- Ett VE.Direct till USB-gränssnitt\n6. UNDERHÅLL\nPhoenix Inverter Smart kräver inget särskilt underhåll. Det räcker att inspektera alla\nanslutningar en gång per år. Undvik fukt och olja/sot/ångor och håll apparaten ren.\n12\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "7. Tekniska data\nPhoenix-växelriktare Smart\n12 Volt\n24 Volt\n48 Volt\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\n12/3000\n24/3000\n48/3000\nParallell- och trefasdrift\nNej\nVÄXELRIKTARE\nSpänningsintervall, ingång (1)\n9,3 - 17 V\n18,6 - 34V\n37,2 - 68 V\nUtgång\nUtgångsspänning: 230 VAC +2 % 50 Hz eller 60 Hz + 0,1 %\n(1)\nKont. utgångsström vid 25 ℃ (2)\n1600 VA\n2000 VA\n3000VA\nKont. utgångsström vid 25 ℃\n1300 W\n1600 W\n2400W\nKont. utgångsström vid 40 ℃\n1200 W\n1450 W\n2200W\nKont. utgångsström vid 65 ℃\n800 W\n1000 W\n1700W\nToppeffekt\n3000 VA\n4000 VA\n6000VA\nDynamisk (beroende av belastning) låg\nDC avstängning (fullt konfigurerbar)\nDynamisk avstängning, se\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-\ndynamic-cutoff\nHögsta verkningsgrad 12/ 24/ 48 V\n92/ 94/ 94 %\n92/ 94/ 94 %\n93/ 94/ 95 %\nNollbelastningseffekt 12/ 24/ 48 V\n8/ 9/ 11 W\n8/ 9/ 11 W\n12/ 13/ 15 W\nNollbelastningseffekt i ECO-läge\n0,6/ 1,3/ 2,1 W\n0,6/ 1,3/ 2,1 W\n1,5/ 1,9/ 2,8 W\nALLMÄNT\nProgrammerbart relä\n(2)\nJa\nStop och starteffekt ECO-läge\njusterbar\nSkydd (3)\na - g\nBluetooth trådlös kommunikation\nFör fjärrstyrning och systemintegration\n- VE.Direct kommunikationsport\nFör fjärrstyrning och systemintegration\nFjärrstyrning på/av\nJa\nAllmänna egenskaper\nDriftstemperaturintervall -40 till +50 ℃ (fläktassisterad kylning)\nFuktighet (icke-kondenserande): max 95 %\nHÖLJE\nAllmänna egenskaper\nMaterial och färg: stål (blå RAL 5012 och svart RAL 9017)\nSkyddskategori: IP 21\nBatterianslutning\nM8-bultar\nM8-bultar\n2+2 M8-bultar\n230 VAC-anslutning\nSkruvterminaler\nVikt\n12kg\n13kg\n19kg\n485 X 219 × 125 mm\n533 × 285 × 150 mm\n(12V)\nDimensioner (h x b x d)\n485 X 219 × 125 mm\n485 x 285 × 150 mm\n(24V/48V)\nSTANDARDER\nSäkerhet\nEN 60335-1\nEmission/ Immunitet\nEN 55014-1 / EN 55014-2/ IEC 61000-6-1 / IEC 61000-6-2 /\nIEC 61000-6-3\nMotorfordonsdirektiv\nECE R10-5\n1) Icke-linjär belastning, toppfaktor 3:1\n2) Programmerbart relä som bland annat kan ställas in för\n3) Skyddsnyckel:\nallmänt larm, DC-underspänning eller start-/stoppfunktion\na) utgångskortslutning\nför generator\nb) överbelastning\nAC-kapacitet: 230 V/ 3 A\nc) för hög batterispänning\nDC-kapacitet: 3 A upp till 30 VDC, 0,2 A upp till 70 VDC\nd) för låg batterispänning\ne) temperatur för hög\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\nf) 230 V AC på växelriktarutgång\ng) för hög ingångsbrumspänning\nvictron energy\n13",
+      "tablas": [
+        [
+          [
+            "Phoenix-växelriktare Smart",
+            "12 Volt 24 Volt 48 Volt",
+            "12/1600 24/1600 48/1600",
+            "12/2000 24/2000 48/2000",
+            "12/3000 24/3000 48/3000"
+          ],
+          [
+            "Parallell- och trefasdrift",
+            "",
+            "",
+            "Nej",
+            ""
+          ],
+          [
+            "",
+            "",
+            "VÄXELRIKTARE",
+            "",
+            ""
+          ],
+          [
+            "Spänningsintervall, ingång (1)",
+            "9,3 - 17",
+            "V 18,6 - 34V 37,2",
+            "- 68 V"
+          ],
+          [
+            "Utgång",
+            "",
+            "Utgångsspänning:",
+            "230 VAC +2 % 50 Hz\n(1)",
+            "eller 60 Hz + 0,1 %"
+          ],
+          [
+            "Kont. utgångsström vid 25 ℃ (2)",
+            "1600 VA",
+            "2000 VA",
+            "3000VA"
+          ],
+          [
+            "Kont. utgångsström vid 25 ℃",
+            "1300 W",
+            "1600 W",
+            "2400W"
+          ],
+          [
+            "Kont. utgångsström vid 40 ℃",
+            "1200 W",
+            "1450 W",
+            "2200W"
+          ],
+          [
+            "Kont. utgångsström vid 65 ℃",
+            "800 W",
+            "1000 W",
+            "1700W"
+          ],
+          [
+            "Toppeffekt",
+            "3000 VA",
+            "4000 VA",
+            "6000VA"
+          ],
+          [
+            "Dynamisk (beroende av belastning) låg",
+            "Dynamisk avstängning, se https://www.victronenergy.com/live/ve.direct:phoenix-inverters-"
+          ],
+          [
+            "DC avstängning (fullt konfigurerbar)",
+            "",
+            "dynamic-cutoff",
+            ""
+          ],
+          [
+            "Högsta verkningsgrad 12/ 24/ 48 V",
+            "92/ 94/ 94 %",
+            "92/ 94/ 94 %",
+            "93/ 94/ 95 %"
+          ],
+          [
+            "Nollbelastningseffekt 12/ 24/ 48 V",
+            "8/ 9/ 11 W",
+            "8/ 9/ 11 W",
+            "12/ 13/ 15 W"
+          ],
+          [
+            "Nollbelastningseffekt i ECO-läge",
+            "0,6/ 1,3/ 2,1 W",
+            "0,6/ 1,3/ 2,1 W",
+            "1,5/ 1,9/ 2,8 W"
+          ],
+          [
+            "",
+            "ALLMÄNT",
+            "",
+            ""
+          ],
+          [
+            "Programmerbart relä (2)",
+            "",
+            "Ja",
+            ""
+          ],
+          [
+            "Stop och starteffekt ECO-läge",
+            "",
+            "justerbar",
+            ""
+          ],
+          [
+            "Skydd (3)",
+            "",
+            "",
+            "a - g",
+            ""
+          ],
+          [
+            "Bluetooth trådlös kommunikation",
+            "För fjärrstyrning och systemintegration",
+            ""
+          ],
+          [
+            "- VE.Direct kommunikationsport",
+            "För fjärrstyrning och systemintegration"
+          ],
+          [
+            "Fjärrstyrning på/av",
+            "Ja"
+          ],
+          [
+            "Allmänna egenskaper",
+            "Driftstemperaturintervall -40 till +50 ℃ (fläktassisterad kylning) Fuktighet (icke-kondenserande): max 95 %"
+          ],
+          [
+            "",
+            "",
+            "HÖLJE"
+          ],
+          [
+            "Allmänna egenskaper",
+            "",
+            "Material och färg:",
+            "stål (blå RAL 5012 och svart RAL 9017) Skyddskategori: IP 21"
+          ],
+          [
+            "Batterianslutning",
+            "",
+            "M8-bultar",
+            "M8-bultar",
+            "2+2 M8-bultar"
+          ],
+          [
+            "230 VAC-anslutning",
+            "",
+            "Skruvterminaler",
+            ""
+          ],
+          [
+            "Vikt",
+            "",
+            "12kg",
+            "13kg",
+            "19kg"
+          ],
+          [
+            "",
+            "",
+            "485 X 219 × 125 mm",
+            "",
+            "533 × 285 × 150 mm (12V)"
+          ],
+          [
+            "Dimensioner (h x b x d)",
+            "485 X 219 × 125 mm"
+          ],
+          [
+            "485 x 285 × 150 mm (24V/48V)"
+          ],
+          [
+            "",
+            "",
+            "STANDARDER",
+            "",
+            ""
+          ],
+          [
+            "Säkerhet",
+            "",
+            "",
+            "EN 60335-1",
+            ""
+          ],
+          [
+            "Emission/ Immunitet",
+            "EN 55014-1 / EN 55014-2/ IEC 61000-6-1\nIEC 61000-6-3",
+            "/ IEC 61000-6-2 /"
+          ],
+          [
+            "Motorfordonsdirektiv",
+            "",
+            "",
+            "ECE R10-5",
+            ""
+          ],
+          [
+            "1) Icke-linjär belastning, toppfaktor 3:1",
+            ""
+          ],
+          [
+            "2) Programmerbart relä som bland annat kan ställas",
+            "in för 3)",
+            "Skyddsnyckel:",
+            ""
+          ],
+          [
+            "allmänt larm, DC-underspänning eller start-/stoppfunktion",
+            "",
+            "a) utgångskortslutning"
+          ],
+          [
+            "för generator",
+            "",
+            "b) överbelastning",
+            ""
+          ],
+          [
+            "AC-kapacitet: 230 V/ 3 A",
+            "",
+            "",
+            "c) för hög batterispänning",
+            ""
+          ],
+          [
+            "DC-kapacitet: 3 A upp till 30 VDC, 0,2 A upp till 70 VDC d) för låg batterispänning e) temperatur för hög"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "1) Kan justeras till 60 Hz och till 240 VisEr:2) Skydd\na. Kortslutning utgång\nb. Överbelastning\nc. För hög batterispänning\nd. För låg batterispänning\ne. För hög temperatur\nf. 230 VAC på växelriktarutgång\ng. för hög ingångsbrumspänning\n3) Icke-linjär belastning, toppfaktor 3:1\n4) Programmerbart relä som kan ställas in för allmänt larm, DC-underspänning eller startsignalfunktion för\ngenerator\n14\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "EN\nAppendix A: Inverter control\nNL\nBijlage A: Besturing van de omvormer\nFR\nAnnexe A : Contrôle du convertisseur\nDE\nAnhang A: Wechselrichtersteuerung\nES\nApéndice A: Control del inversor\nSV\nBilaga A: Växelriktarkontroll\nREMOTE\nHL\non\nH\nL\non\noff\nPolarity\nDependent\nFor proper\noperation\nO\nInverter control",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Appendix B: Installation information 1600VA/2000VA\nThis ground wire \"G\" connects the output neutral to ground. It must be repositioned to a\n'dummy' terminal if a floating output is required.\nWhen a floating output is obtained the current reading at no load can show an offset of around\n100 ... 150mA. Also beware that the GFCI (or RCCB) will not function properly.\nG\n×2\ndummy\nNL\nBijlage B: Installatie-informatie\nDeze aardingsdraad \"G\" verbindt de uitgangsneutraal met aarde. Het moet worden\nverplaatst naar een 'dummy' terminal als een zwevende uitgang vereist is.\nWanneer een zwevende uitvoer wordt verkregen, kan de huidige waarde bij nullast een\noffset van ongeveer 100 ... 150mA laten zien. Pas ook op dat de GFCI (of RCCB) niet goed\nzal werken.\nFR\nAnnexe B : Information relative à l'installation\nCe câble de mise à la terre < G > raccorde le neutre de la sortie à la terre. Il doit être\nrepositionné à une borne « fictive » si une sortie flottante est nécessaire.\nSi une sortie flottante est obtenue, la lecture de courant Pas-de-charge peut afficher un\ndécalage d'environ 100 ... 150 mA. Attention : le GFCI (ou RCCB) ne fonctionnera pas\ncorrectement.\nDE\nAnhang B: Information zur Installation\nDieser Erdungsdraht \"G\" verbindet den Nullleiter des Ausgangs mit der Erde. Wenn ein\n\"floating\" (potentialfreier) Ausgang gewünscht wird, muss er an eine \"Dummy\"-\nAnschlussklemme neu angeschlossen werden.\nWenn der „Floating“ Ausgang eingerichtet ist, kann es beim ermittelten Stromwert ohne\nangeschlossene Lasten eine Verschiebung von ca. 100 ... 150 mA geben. Bedenken Sie\naußerdem, dass der FI-Schutzschalter (bzw. der Fehlerstromschutzschalter) nicht\nordnungsgemäß funktionieren wird.\nvictron energy\n3",
+      "tablas": [
+        [
+          [
+            "NL",
+            "Bijlage B: Installatie-informatie Deze aardingsdraad \"G\" verbindt de uitgangsneutraal met aarde. Het moet worden verplaatst naar een 'dummy' terminal als een zwevende uitgang vereist is. Wanneer een zwevende uitvoer wordt verkregen, kan de huidige waarde bij nullast een offset van ongeveer 100 ... 150mA laten zien. Pas ook op dat de GFCI (of RCCB) niet goed zal werken."
+          ],
+          [
+            "FR",
+            "Annexe B : Information relative à l'installation Ce câble de mise à la terre < G > raccorde le neutre de la sortie à la terre. Il doit être repositionné à une borne « fictive » si une sortie flottante est nécessaire. Si une sortie flottante est obtenue, la lecture de courant Pas-de-charge peut afficher un décalage d'environ 100 ... 150 mA. Attention : le GFCI (ou RCCB) ne fonctionnera pas correctement."
+          ],
+          [
+            "DE",
+            "Anhang B: Information zur Installation Dieser Erdungsdraht \"G\" verbindet den Nullleiter des Ausgangs mit der Erde. Wenn ein \"floating\" (potentialfreier) Ausgang gewünscht wird, muss er an eine \"Dummy\"- Anschlussklemme neu angeschlossen werden. Wenn der „Floating“ Ausgang eingerichtet ist, kann es beim ermittelten Stromwert ohne angeschlossene Lasten eine Verschiebung von ca. 100 ... 150 mA geben. Bedenken Sie außerdem, dass der FI-Schutzschalter (bzw. der Fehlerstromschutzschalter) nicht ordnungsgemäß funktionieren wird."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "ES\nApéndice B: Instrucciones de instalación\nEste cable de puesta a tierra \"G\" conecta la salida neutra a tierra. Debe reposicionarse en\nuna conexión ficticia si se necesita una salida flotante.\nCuando se obtiene una salida flotante, la lectura de corriente sin carga puede mostrar una\ndescompensación de entorno a 100 ... 150 mA. Tenga también en cuenta que el GFCI (o\nRCCB) no funcionará correctamente.\nSV\nBilaga B: Installationsinformation\nDen jordade kabeln \"G\" kopplar den neutrala utgången till jord. Den måste flyttas till en falsk\n(dummy) terminal om en flytande utgång krävs.\nNär en flytande utgång är tillgänglig kan strömavläsningen utan belastning visa en avvikelse\npå ca 100 ... 150 mA. Tänk också på att GFCI (eller RCCB) inte kommer att fungera korrekt.",
+      "tablas": [
+        [
+          [
+            "ES",
+            "Apéndice B: Instrucciones de instalación"
+          ],
+          [
+            "Este cable de puesta a tierra \"G\" conecta la salida neutra a tierra. Debe reposicionarse en una conexión ficticia si se necesita una salida flotante."
+          ],
+          [
+            "Cuando se obtiene una salida flotante, la lectura de corriente sin carga puede mostrar una descompensación de entorno a 100 ... 150 mA. Tenga también en cuenta que el GFCI (o RCCB) no funcionará correctamente."
+          ],
+          [
+            "SV",
+            "Bilaga B: Installationsinformation"
+          ],
+          [
+            "Den jordade kabeln \"G\" kopplar den neutrala utgången till jord. Den måste flyttas till en falsk (dummy) terminal om en flytande utgång krävs."
+          ],
+          [
+            "När en flytande utgång är tillgänglig kan strömavläsningen utan belastning visa en avvikelse på ca 100 ... 150 mA. Tänk också på att GFCI (eller RCCB) inte kommer att fungera korrekt."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Appendix C: Installation information 3000VA\nThis ground wire \"G\" connects the output neutral to ground. It must be repositioned to a\n'dummy' terminal if a floating output is required.\nWhen a floating output is obtained the current reading at no load can show an offset of around\n100 ... 150mA. Also beware that the GFCI (or RCCB) will not function properly.\nG\ndummy\nNL\nBijlage C: Installatie-informatie\nDeze aardingsdraad \"G\" verbindt de uitgangsneutraal met aarde. Het moet worden\nverplaatst naar een 'dummy' terminal als een zwevende uitgang vereist is.\nWanneer een zwevende uitvoer wordt verkregen, kan de huidige waarde bij nullast een\noffset van ongeveer 100 ... 150mA laten zien. Pas ook op dat de GFCI (of RCCB) niet goed\nzal werken.\nFR\nAnnexe C : Information relative à l'installation\nCe câble de mise à la terre « G > raccorde le neutre de la sortie à la terre. Il doit être\nrepositionné à une borne « fictive > si une sortie flottante est nécessaire.\nSi une sortie flottante est obtenue, la lecture de courant Pas-de-charge peut afficher un\ndécalage d'environ 100 ... 150 mA. Attention : le GFCI (ou RCCB) ne fonctionnera pas\ncorrectement.\nDE\nAnhang C: Information zur Installation\nDieser Erdungsdraht \"G\" verbindet den Nullleiter des Ausgangs mit der Erde. Wenn ein\n\"floating\" (potentialfreier) Ausgang gewünscht wird, muss er an eine \"Dummy\"-\nAnschlussklemme neu angeschlossen werden.\nvictron energy\n5",
+      "tablas": [
+        [
+          [
+            "NL",
+            "Bijlage C: Installatie-informatie Deze aardingsdraad \"G\" verbindt de uitgangsneutraal met aarde. Het moet worden verplaatst naar een 'dummy' terminal als een zwevende uitgang vereist is. Wanneer een zwevende uitvoer wordt verkregen, kan de huidige waarde bij nullast een offset van ongeveer 100 ... 150mA laten zien. Pas ook op dat de GFCI (of RCCB) niet goed zal werken."
+          ],
+          [
+            "FR",
+            "Annexe C : Information relative à l'installation Ce câble de mise à la terre « G > raccorde le neutre de la sortie à la terre. Il doit être repositionné à une borne « fictive > si une sortie flottante est nécessaire. Si une sortie flottante est obtenue, la lecture de courant Pas-de-charge peut afficher un décalage d'environ 100 ... 150 mA. Attention : le GFCI (ou RCCB) ne fonctionnera pas correctement."
+          ],
+          [
+            "DE",
+            "Anhang C: Information zur Installation"
+          ],
+          [
+            "Dieser Erdungsdraht \"G\" verbindet den Nullleiter des Ausgangs mit der Erde. Wenn ein \"floating\" (potentialfreier) Ausgang gewünscht wird, muss er an eine \"Dummy\"- Anschlussklemme neu angeschlossen werden."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Wenn der „Floating“ Ausgang eingerichtet ist, kann es beim ermittelten Stromwert ohne\nangeschlossene Lasten eine Verschiebung von ca. 100 ... 150 mA geben. Bedenken Sie\naußerdem, dass der FI-Schutzschalter (bzw. der Fehlerstromschutzschalter) nicht\nordnungsgemäß funktionieren wird.\nES\nApéndice C: Instrucciones de instalación\nEste cable de puesta a tierra \"G\" conecta la salida neutra a tierra. Debe reposicionarse en\nuna conexión ficticia si se necesita una salida flotante.\nCuando se obtiene una salida flotante, la lectura de corriente sin carga puede mostrar una\ndescompensación de entorno a 100 ... 150 mA. Tenga también en cuenta que el GFCI (o\nRCCB) no funcionará correctamente.\nSV\nBilaga C: Installationsinformation\nDen jordade kabeln \"G\" kopplar den neutrala utgången till jord. Den måste flyttas till en falsk\n(dummy) terminal om en flytande utgång krävs.\nNär en flytande utgång är tillgänglig kan strömavläsningen utan belastning visa en avvikelse\npå ca 100 ... 150 mA. Tänk också på att GFCI (eller RCCB) inte kommer att fungera korrekt.",
+      "tablas": [
+        [
+          [
+            "",
+            "Wenn der „Floating“ Ausgang eingerichtet ist, kann es beim ermittelten Stromwert ohne angeschlossene Lasten eine Verschiebung von ca. 100 ... 150 mA geben. Bedenken Sie außerdem, dass der FI-Schutzschalter (bzw. der Fehlerstromschutzschalter) nicht ordnungsgemäß funktionieren wird."
+          ],
+          [
+            "ES",
+            "Apéndice C: Instrucciones de instalación"
+          ],
+          [
+            "Este cable de puesta a tierra \"G\" conecta la salida neutra a tierra. Debe reposicionarse en una conexión ficticia si se necesita una salida flotante."
+          ],
+          [
+            "Cuando se obtiene una salida flotante, la lectura de corriente sin carga puede mostrar una descompensación de entorno a 100 ... 150 mA. Tenga también en cuenta que el GFCI (o RCCB) no funcionará correctamente."
+          ],
+          [
+            "SV",
+            "Bilaga C: Installationsinformation"
+          ],
+          [
+            "Den jordade kabeln \"G\" kopplar den neutrala utgången till jord. Den måste flyttas till en falsk (dummy) terminal om en flytande utgång krävs."
+          ],
+          [
+            "När en flytande utgång är tillgänglig kan strömavläsningen utan belastning visa en avvikelse på ca 100 ... 150 mA. Tänk också på att GFCI (eller RCCB) inte kommer att fungera korrekt."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Victron Energy Blue Power\nDistributor:\nSerial number:\nVersion\n: 00\nDate\n: August 26th, 2019\nVictron Energy B.V.\nDe Paal 35 | 1351 JG Almere\nPO Box 50016 | 1305 AA Almere | The Netherlands\nGeneral phone\nE-mail\n: +31 (0)36 535 97 00\n: sales@victronenergy.com\nwww.victronenergy.com",
+      "tablas": []
+    }
+  ]
+}

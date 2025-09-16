@@ -1,0 +1,2276 @@
+{
+  "archivo": "ABB Manual de Usuario ACS550_p241_280",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Manual del usuario del ACS550-01/U1\n241\nAdaptador de bus de campo\nSinopsis\nEl ACS550 puede configurarse para aceptar el control desde un sistema externo utilizando\nprotocolos de comunicación serie estándar. Al utilizar comunicación serie, el ACS550 puede:\n· recibir toda su información de control del bus de campo, o\n· controlarse desde alguna combinación de control por bus de campo y otros lugares de\ncontrol disponibles, como entradas analógicas o digitales, y el panel de control.\nControlador de bus de campo\nEfectúe la conexión con:\n· un bus de campo encajado (BCE)\n· un módulo adaptador de bus de campo\n(ABC) montado en la ranura 2 (opción Rxxx)\n<\nBus de campo\nOtros dispositivos\nestándar en los terminales X1:28 ... 32\n1\nEstán disponibles dos configuraciones de comunicaciones serie básicas:\n· bus de campo encajado (BCE) - Véase el capítulo Bus de campo encajado en la\npágina 205.\n· adaptador de bus de campo (ABC) - Con uno de los módulos opcionales de ABC\nen la ranura de expansión 2 del convertidor, éste puede comunicarse con un\nsistema de control utilizando uno de los protocolos siguientes:\n- PROFIBUS DP\n- Ethernet (Modbus/TCP, EtherNet/IP, EtherCAT, PROFINET IO, POWERLINK)\n- CANopen\n- DeviceNet\n- ControlNet\nEl ACS550 detecta automáticamente el protocolo de comunicación utilizado por el\nadaptador de bus de campo enchufable. Los ajustes por defecto para cada\nprotocolo presuponen que el perfil utilizado es el perfil de convertidor estándar del\nsector para el protocolo (p. ej. PROFIdrive para PROFIBUS, AC/DC Drive para\nDeviceNet). Asimismo, todos los protocolos de ABC también pueden configurarse\npara el perfil ABB Drives.\nLos detalles de la configuración dependen del protocolo y el perfil utilizados. Estos\ndetalles se facilitan en un manual de usuario suministrado con el módulo ABC.\nLos detalles relativos al perfil ABB Drives (que se aplica a todos los protocolos) se\nfacilitan en el apartado Datos técnicos del perfil ABB Drives en la página 252.\nAdaptador de bus de campo",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "242\nManual del usuario del ACS550-01/U1\nInterfase de control\nEn general, la interfase de control básica entre el sistema de bus de campo y el\nconvertidor consta de:\n· Códigos de salida:\n- CÓDIGO CONTROL\n- REFERENCIA (velocidad o frecuencia)\n- Otros: el convertidor ofrece soporte para un máximo de 15 códigos de salida.\nLos límites de los protocolos podrían restringir el total en mayor medida.\n· Códigos de entrada:\n- CÓDIGO ESTADO\n- Valor actual (velocidad o frecuencia)\n- Otros: el convertidor ofrece soporte para un máximo de 15 códigos de entrada. Los\nlímites de los protocolos podrían restringir el total en mayor medida.\nNota: las palabras \"salida\" y \"entrada\" se utilizan desde el punto de vista del\ncontrolador de bus de campo. Por ejemplo, una salida describe el flujo de datos del\ncontrolador de bus de campo al convertidor y aparece como una entrada desde el\npunto de vista del convertidor.\nLos significados de los códigos de interfase del controlador no son restringidos por\nel ACS550. No obstante, el perfil utilizado podría definir significados particulares.\nControlador de bus de campo\nBus de campo\nReferencias\ndel E/S\nde proceso\n(cíclica)\nCódigo de control (CW)\nReferencias\nCódigo de estado (SW)\nValores actuales\nMensajes\nde servicio\n(no cíclicos)\nPeticiones/Respuestas de L/E de parámetros\nCódigo de control\nEl CÓDIGO CONTROL es el medio principal de controlar el convertidor desde un sistema de\nbus de campo. El controlador de bus de campo envía el CÓDIGO CONTROL al convertidor. El\nconvertidor cambia entre estados de conformidad con las instrucciones codificadas en bits\ndel CÓDIGO CONTROL. El uso del CÓDIGO CONTROL requiere que:\n· El convertidor se encuentre en control remoto (REM).\n· El canal de comunicación en serie se defina como la fuente para controlar\ncomandos desde EXT1 (ajustados con los parámetros 1001 COMANDOS EXT1\ny 1102 SELEC EXT1/EXT2 ).\n· Se active el adaptador de bus de campo enchufable externo:\nAdaptador de bus de campo",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Manual del usuario del ACS550-01/U1\n243\n- Parámetro 9802 SEL PROT COM = 4 (ABC EXT).\n- El adaptador de bus de campo enchufable externo se configura para usar el\nmodo de perfil de convertidor o los objetos del perfil de convertidor.\nEl contenido del CÓDIGO CONTROL depende del protocolo/perfil utilizado. Véase el\nmanual del usuario facilitado con el módulo ABC y/o el apartado Datos técnicos del\nperfil ABB Drives en la página 252.\nCódigo de estado\nEl CÓDIGO ESTADO es un código de 16 bits que contiene información de estado enviada\npor el convertidor al controlador de bus de campo. El contenido del CÓDIGO ESTADO\ndepende del protocolo/perfil utilizado. Véase el manual del usuario facilitado con el\nmódulo ABC y/o el apartado Datos técnicos del perfil ABB Drives en la página 252.\nReferencia\nEl contenido de cada código de REFERENCIA :\n· puede utilizarse como referencia de frecuencia o velocidad\n· es un código de 16 bits compuesto de un bit de signo y un entero de 15 bits\n· Las referencias negativas (que indican dirección de giro invertida) se indican a través\ndel complemento del dos a partir del valor de referencia positiva correspondiente.\nEl uso de una segunda referencia (REF2) sólo se soporta cuando un protocolo se\nha configurado para el perfil ABB Drives.\nEl escalado de la referencia es específico para el tipo de bus de campo. Véase el manual\ndel usuario facilitado con el módulo ABC y/o los apartados siguientes según proceda:\n· Escalado de referencia en la página 256 (Datos técnicos del perfil ABB Drives)\n· Escalado de referencia en la página 260 (Datos técnicos del perfil genérico).\nValores actuales\nLos valores actuales son códigos de 16 bits que contienen información acerca de las\noperaciones seleccionadas del convertidor. Los valores actuales del convertidor (por\nejemplo, los parámetros del Grupo 10: MARCHA/PARO/DIR) pueden correlacionarse\ncon códigos de entrada utilizando parámetros del Grupo 51: MOD COMUNIC EXT\n(según cada protocolo, pero normalmente se trata de los parámetros 5104 ... 5126).\nPlanificación\nLa planificación de la red deberá tener en cuenta las cuestiones siguientes:\n· Qué tipos y cantidades de dispositivos deben conectarse a la red.\n· Qué información de control debe enviarse a los convertidores.\n· Qué información de realimentación debe enviarse de los convertidores al sistema\ncontrolador.\nAdaptador de bus de campo",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "244\nManual del usuario del ACS550-01/U1\nInstalación mecánica y eléctrica - ABC\nADVERTENCIA: las conexiones sólo deben efectuarse con el convertidor\ndesconectado de la fuente de alimentación.\n4\nSinopsis\nEl ABC (adaptador de bus de campo) es un módulo enchufable que encaja en la\nranura de expansión 2 del convertidor. El módulo se fija con presillas de sujeción de\nplástico y dos tornillos. Asimismo, los tornillos llevan a cabo la conexión a tierra de la\npantalla del cable del módulo y conectan las señales GND del módulo a la tarjeta de\ncontrol del convertidor.\nAl instalar el módulo, la conexión eléctrica con el convertidor se establece\nautomáticamente a través del conector de 34 clavijas.\nProcedimiento del montaje\n1\nNota: en primer lugar, instale la alimentación de entrada y\nlos cables a motor.\n-\n2\n1. Inserte el módulo cuidadosamente en la ranura de\nexpansión 2 del convertidor hasta que las presillas de\nsujeción bloqueen el módulo en la posición correcta.\n2. Apriete los dos tornillos (incluidos) a los soportes.\nNota: la instalación correcta de los tornillos es esencial\npara cumplir los requisitos EMC y para un funcionamiento\ncorrecto del módulo.\n3. Abra el orificio ciego adecuado en la caja de conducción e\ninstale la abrazadera de cable para el cable de red.\n4. Haga pasar el cable de red por la abrazadera de cable.\n5. Conecte el cable de red al conector de red del módulo.\n6. Apriete la abrazadera de cable.\n7. Instale la cubierta de la caja de conducción (1 tornillo).\n8. Para obtener información de configuración, véase lo siguiente:\n-\n7\nX00301\n5\n6\n3\n4\nX00302\n· el apartado Configuración para la comunicación - ABC en\nla página 245\n· el apartado Activación de las funciones de control del convertidor - ABC en la\npágina 245\n· La documentación específica del protocolo proporcionada con el módulo.\nAdaptador de bus de campo",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Manual del usuario del ACS550-01/U1\n245\nConfiguración para la comunicación - ABC\nSelección de la comunicación serie\nPara activar la comunicación serie, utilice el parámetro 9802 SEL PROT COM. Ajuste\n9802 = 4 (ABC EXT).\nConfiguración de la comunicación serie\nEl ajuste de 9802, junto con el montaje de un módulo ABC específico, ajusta\nautomáticamente los valores por defecto apropiados en los parámetros que definen\nel proceso de comunicación. Estos parámetros y descripciones se definen en el\nmanual del usuario facilitado con el módulo ABC.\n· El parámetro 5101 se configura automáticamente.\n· Los parámetros 5102 ... 5126 dependen de cada protocolo y definen, por ejemplo,\nel perfil utilizado y los códigos de E/S adicionales. Estos parámetros se\ndenominan los parámetros de configuración de bus de campo. Véase el manual\ndel usuario facilitado con el módulo ABC para obtener detalles sobre los\nparámetros de configuración de bus de campo.\n· El parámetro 5127 fuerza la validación de los cambios en los parámetros\n5102 ... 5126. Si no se utiliza el parámetro 5127, los cambios en los parámetros\n5102 ... 5126 tienen efecto tan sólo después de apagar y encender la\nalimentación del convertidor.\n· Los parámetros 5128 ... 5133 proporcionan datos sobre el módulo ABC\nactualmente instalado (p. ej. versiones y estado de los componentes).\nVéase el Grupo 51: MOD COMUNIC EXT para obtener descripciones de los\nparámetros.\nActivación de las funciones de control del convertidor - ABC\nEl control por bus de campo de diversas funciones del convertidor requiere que la\nconfiguración:\n· ordene al convertidor que acepte el control por bus de campo de la función\n· defina como una entrada de bus de campo cualquier dato del convertidor\nrequerido para el control\n· defina como una salida de bus de campo cualquier dato de control requerido por\nel convertidor\nLos apartados siguientes describen, a un nivel general, la configuración requerida\npara cada función de control. La última columna de las tablas siguientes se ha\ndejado en blanco deliberadamente. Véase el manual del usuario facilitado con el\nmódulo ABC acerca de la entrada apropiada.\nControl de Marcha/Paro/Dirección\nEl uso del bus de campo para el control de marcha/paro/dirección del convertidor requiere:\n· el ajuste de los valores de parámetros del convertidor definido a continuación\nAdaptador de bus de campo",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "246\nManual del usuario del ACS550-01/U1\n· comando(s) suministrado(s) por el controlador de bus de campo en el lugar apropiado.\n(El lugar es definido por la Referencia de protocolo, que depende del protocolo.)\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de\nprotocolo\n1001\nCOMANDOS\nEXT1\n10\n(COMUNIC)\nMarcha/Paro controlado por bus de\ncampo con Ext1 seleccionado.\n1002\nCOMANDOS\nEXT2\n10\n(COMUNIC)\nMarcha/Paro controlado por bus de\ncampo con Ext2 seleccionado.\n1003\nDIRECCIÓN\n3 (PETICION)\nDirección controlada por bus de campo.\nSelección de referencia de entrada\nEl uso del bus de campo para proporcionar referencias de entrada al convertidor requiere:\n· el ajuste de los valores de parámetros del convertidor definido a continuación\n· código(s) de referencia suministrado(s) por el controlador de bus de campo en el\nlugar apropiado. (El lugar es definido por la Referencia de protocolo, que\ndepende del protocolo.)\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de\nprotocolo\n1102\nSELEC EXT1/\nEXT2\n8 (COMUNIC)\nRef. seleccionada por bus de campo.\n(Sólo se requiere si se usan 2\nreferencias.)\n1103\nSELEC REF1\n8 (COMUNIC)\n9 (COMUNIC+EA1)\n10 (COMUNIC*EA1)\nReferencia de entrada 1 suministrada\npor bus de campo.\n1106\nSELEC REF2\n8 (COMUNIC)\n9 (COMUNIC+EA)\n10 (COMUNIC*EA)\nReferencia de entrada 2 suministrada por\nbus de campo.\n(Sólo se requiere si se usan 2 referencias.)\nNota: sólo se ofrece soporte para varias referencias al utilizar el perfil ABB Drives.\nEscalado\nCuando se requiera, las REFERENCIAS pueden escalarse. Véanse los apartados\nsiguientes, según proceda:\n· Escalado de referencia en la página 256 (Datos técnicos del perfil ABB Drives)\n· Escalado de referencia en la página 260 (Datos técnicos del perfil genérico).\nControles sistema\nEl uso del bus de campo para el control heterogéneo del convertidor requiere:\n· el ajuste de los valores de parámetros del convertidor definido a continuación\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo"
+          ],
+          [
+            "1001",
+            "COMANDOS EXT1",
+            "10 (COMUNIC)",
+            "Marcha/Paro controlado por bus de campo con Ext1 seleccionado.",
+            ""
+          ],
+          [
+            "1002",
+            "COMANDOS EXT2",
+            "10 (COMUNIC)",
+            "Marcha/Paro controlado por bus de campo con Ext2 seleccionado.",
+            ""
+          ],
+          [
+            "1003",
+            "DIRECCIÓN",
+            "3 (PETICION)",
+            "Dirección controlada por bus de campo.",
+            ""
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo"
+          ],
+          [
+            "1102",
+            "SELEC EXT1/ EXT2",
+            "8 (COMUNIC)",
+            "Ref. seleccionada por bus de campo. (Sólo se requiere si se usan 2 referencias.)",
+            ""
+          ],
+          [
+            "1103",
+            "SELEC REF1",
+            "8 (COMUNIC) 9 (COMUNIC+EA1) 10 (COMUNIC*EA1)",
+            "Referencia de entrada 1 suministrada por bus de campo.",
+            ""
+          ],
+          [
+            "1106",
+            "SELEC REF2",
+            "8 (COMUNIC) 9 (COMUNIC+EA) 10 (COMUNIC*EA)",
+            "Referencia de entrada 2 suministrada por bus de campo. (Sólo se requiere si se usan 2 referencias.)",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Manual del usuario del ACS550-01/U1\n247\n· comando(s) del controlador de bus de campo en el lugar apropiado. (El lugar es\ndefinido por la Referencia de protocolo, que depende del protocolo.)\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de\nprotocolo\n1601\nPERMISO MARCHA\n7 (COMUNIC)\nPermiso de marcha por bus de campo.\n1604\nSEL REST FALLO\n8 (COMUNIC)\nRestauración de fallos por bus de campo.\n1607\nSALVAR PARAM\n1 (SALVAR)\nGuarda los parámetros alterados en la\nmemoria (y el valor vuelve a 0).\nControl de salidas de relé\nEl uso del bus de campo para el control de salidas de relé requiere:\n· el ajuste de los valores de parámetros del convertidor definido a continuación\n· comando(s) de relé, con codificación binaria, suministrado(s) por el controlador\nde bus de campo en el lugar apropiado. (El lugar es definido por la Referencia de\nprotocolo, que depende del protocolo.)\nParámetro de convertidor\nValor\nDescripción\nReferencia\nde\nprotocolo\n1401\nSALIDA RELÉ 1\n35 (COMUNIC)\n36 (COMUNIC(-\n1))\nSalida de relé 1 controlada por bus de\ncampo.\n1402\nSALIDA RELÉ 2\nSalida de relé 2 controlada por bus de\ncampo.\n1403\nSALIDA RELÉ 3\nSalida de relé 3 controlada por bus de\ncampo.\n14101\nSALIDA RELE 4\nSalida de relé 4 controlada por bus de\ncampo.\n14111\nSALIDA RELE 5\nSalida de relé 5 controlada por bus de\ncampo.\n14121\nSALIDA RELÉ 6\nSalida de relé 6 controlada por bus de\ncampo.\n1\nMás de 3 reles requieren la adicion de un modulo de ampliación de relés.\nNota: la realimentación del estado de relé se produce sin la configuración definida a\ncontinuación.\nParámetro de convertidor\nValor\nReferencia de\nprotocolo\n0122\nESTADO SR 1-3\nEstado del relé 1 ... 3.\n0123\nESTADO SR 4-6\nEstado del relé 4 ... 3.\nControl de salidas analógicas\nEl uso del bus de campo para el control de salidas analógicas (p. ej., punto de\nconsigna PID) requiere:\n· el ajuste de los valores de parámetros del convertidor definido a continuación\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo"
+          ],
+          [
+            "1601",
+            "PERMISO MARCHA",
+            "7 (COMUNIC)",
+            "Permiso de marcha por bus de campo.",
+            ""
+          ],
+          [
+            "1604",
+            "SEL REST FALLO",
+            "8 (COMUNIC)",
+            "Restauración de fallos por bus de campo.",
+            ""
+          ],
+          [
+            "1607",
+            "SALVAR PARAM",
+            "1 (SALVAR)",
+            "Guarda los parámetros alterados en la memoria (y el valor vuelve a 0).",
+            ""
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo"
+          ],
+          [
+            "1401",
+            "SALIDA RELÉ 1",
+            "35 (COMUNIC) 36 (COMUNIC(- 1))",
+            "Salida de relé 1 controlada por bus de campo.",
+            ""
+          ],
+          [
+            "1402",
+            "SALIDA RELÉ 2",
+            "Salida de relé 2 controlada por bus de campo.",
+            ""
+          ],
+          [
+            "1403",
+            "SALIDA RELÉ 3",
+            "Salida de relé 3 controlada por bus de campo.",
+            ""
+          ],
+          [
+            "14101",
+            "SALIDA RELE 4",
+            "Salida de relé 4 controlada por bus de campo.",
+            ""
+          ],
+          [
+            "14111",
+            "SALIDA RELE 5",
+            "Salida de relé 5 controlada por bus de campo.",
+            ""
+          ],
+          [
+            "14121",
+            "SALIDA RELÉ 6",
+            "Salida de relé 6 controlada por bus de campo.",
+            ""
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Referencia de protocolo"
+          ],
+          [
+            "0122",
+            "ESTADO SR 1-3",
+            "Estado del relé 1 ... 3.",
+            ""
+          ],
+          [
+            "0123",
+            "ESTADO SR 4-6",
+            "Estado del relé 4 ... 3.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "248\nManual del usuario del ACS550-01/U1\n· valor(es) analógico(s) suministrado(s) por el controlador de bus de campo en el\nlugar apropiado. (El lugar es definido por la Referencia de protocolo, que\ndepende del protocolo.)\nParámetro de\nconvertidor\nValor\nDescripción\nReferencia de\nprotocolo\n1501\nSEL CONTENID SA1\n135 (VALOR\nCOMUNIC. 1)\nSalida analógica 1 controlada\nescribiendo en el parámetro\n0135.\n–\n0135\nVALOR COMUNIC. 1\n–\n1502\n…\n1505\nCONT SA1 MIN\n…\nSA1 MAX\nAjuste los valores\napropiados.\nUtilizado para el escalado.\n–\n1506\nFILTRO SA1\nConstante de tiempo del filtro\npara SA1.\n–\n1507\nSEL CONTENID SA2\n136 (VALOR\nCOMUNIC. 2)\nSalida analógica 2 controlada\nescribiendo en el parámetro\n0136.\n–\n0136\nVALOR COMUNIC. 2\n–\n1508\n…\n1511\nCONT SA2 MIN\n…\nSA2 MAX\nAjuste los valores\napropiados.\nUtilizado para el escalado.\n–\n1512\nFILTRO SA2\nConstante de tiempo del filtro\npara SA2.\n–\nFuente del punto de consigna del control PID\nUtilice los ajustes siguientes para seleccionar el bus de campo como la fuente de\npunto de consigna para los bucles PID:\nParámetro de convertidor\nValor\nAjuste\nReferencia de\nprotocolo\n4010\nSEL PUNTO CONSIG (Serie 1)\n8 (VALOR\nCOMUNIC. 1)\n9 (COMUNIC+EA1)\n10\n(COMUNIC*EA1)\nEl punto de consigna es la\nreferencia de entrada 2\n(+/-/* EA1)\n4110\nSEL PUNTO CONSIG (Serie 2)\n4210\nSEL PUNTO CONSIG (Trim/Ext)\nFallo de comunicación\nAl utilizar control por bus de campo, especifique la acción del convertidor si se\npierde la comunicación serie.\nParámetro de\nconvertidor\nValor\nDescripción\n3018\nFUNC FALLO COMUN\n0 (SIN SEL)\n1 (FALLO)\n2 (VEL CONST 7)\n3 (ULTIMA VELOC)\nAjuste para obtener la respuesta\napropiada del convertidor.\n3019\nTIEM FALLO COMUN\nAjuste la demora de tiempo antes de actuar en una\npérdida de comunicación.\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción",
+            "Referencia de protocolo"
+          ],
+          [
+            "1501",
+            "SEL CONTENID SA1",
+            "135 (VALOR COMUNIC. 1)",
+            "Salida analógica 1 controlada escribiendo en el parámetro 0135.",
+            "–"
+          ],
+          [
+            "0135",
+            "VALOR COMUNIC. 1",
+            "–",
+            ""
+          ],
+          [
+            "1502 … 1505",
+            "CONT SA1 MIN … SA1 MAX",
+            "Ajuste los valores apropiados.",
+            "Utilizado para el escalado.",
+            "–"
+          ],
+          [
+            "1506",
+            "FILTRO SA1",
+            "Constante de tiempo del filtro para SA1.",
+            "–"
+          ],
+          [
+            "1507",
+            "SEL CONTENID SA2",
+            "136 (VALOR COMUNIC. 2)",
+            "Salida analógica 2 controlada escribiendo en el parámetro 0136.",
+            "–"
+          ],
+          [
+            "0136",
+            "VALOR COMUNIC. 2",
+            "–",
+            ""
+          ],
+          [
+            "1508 … 1511",
+            "CONT SA2 MIN … SA2 MAX",
+            "Ajuste los valores apropiados.",
+            "Utilizado para el escalado.",
+            "–"
+          ],
+          [
+            "1512",
+            "FILTRO SA2",
+            "",
+            "Constante de tiempo del filtro para SA2.",
+            "–"
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Ajuste",
+            "Referencia de protocolo"
+          ],
+          [
+            "4010",
+            "SEL PUNTO CONSIG (Serie 1)",
+            "8 (VALOR COMUNIC. 1) 9 (COMUNIC+EA1) 10 (COMUNIC*EA1)",
+            "El punto de consigna es la referencia de entrada 2 (+/-/* EA1)",
+            ""
+          ],
+          [
+            "4110",
+            "SEL PUNTO CONSIG (Serie 2)"
+          ],
+          [
+            "4210",
+            "SEL PUNTO CONSIG (Trim/Ext)"
+          ]
+        ],
+        [
+          [
+            "Parámetro de convertidor",
+            "Valor",
+            "Descripción"
+          ],
+          [
+            "3018",
+            "FUNC FALLO COMUN",
+            "0 (SIN SEL) 1 (FALLO) 2 (VEL CONST 7) 3 (ULTIMA VELOC)",
+            "Ajuste para obtener la respuesta apropiada del convertidor."
+          ],
+          [
+            "3019",
+            "TIEM FALLO COMUN",
+            "Ajuste la demora de tiempo antes de actuar en una pérdida de comunicación."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Manual del usuario del ACS550-01/U1\n249\nRealimentación del convertidor - ABC\nLas entradas del controlador (salidas del convertidor) tienen significados\npredefinidos establecidos por el protocolo. Esta realimentación no requiere\nconfiguración del convertidor. La tabla siguiente muestra un ejemplo de datos de\nrealimentación. Para obtener un listado completo, véanse todos los parámetros\ndetallados en el apartado Descripciones completas de los parámetros en la página\n109.\nParámetro de convertidor\nReferencia de\nprotocolo\n0102\nVELOCIDAD\n0103\nFREC SALIDA\n0104\nINTENSIDAD\n0105\nPAR\n0106\nPOTENCIA\n0107\nTENSION BUS CC\n0109\nTENSION SALIDA\n0301\nCOD ORDEN BC1 - bit 0 (PARO)\n0301\nCOD ORDEN BC1 - bit 2 (INV)\n0118\nED 1-3 ESTADO - bit 0 (ED3)\nEscalado\nPara escalar los valores de parámetro del convertidor, véanse los apartados\nsiguientes según proceda:\n· Escalado del valor actual en la página 259 (Datos técnicos del perfil ABB Drives)\n· Escalado del valor actual en la página 261 (Datos técnicos del perfil genérico).\nDiagnósticos - ABC\nTratamiento de fallos\nEl ACS550 proporciona información de fallos del modo siguiente:\n· La pantalla del panel de control muestra un código de fallo y texto. Véase el\ncapítulo Diagnósticos en la página 263 para obtener una descripción completa.\n· Los parámetros 0401 ULTIMO FALLO, 0412 FALLO ANTERIOR 1 y 0413 FALLO\nANTERIOR 2 almacenan los fallos más recientes.\n· Para el acceso a bus de campo, el convertidor indica los fallos como un valor\nhexadecimal, asignado y codificado según la especificación DRIVECOM. Véase\nla tabla siguiente. No todos los perfiles soportan la petición de códigos de fallo\nque utiliza esta especificación. Para perfiles que soportan esta especificación, la\ndocumentación del perfil define el proceso de petición de fallo adecuado.\nCódigo de fallo del convertidor\nCódigo de fallo de bus de\ncampo (especificación\nDRIVECOM)\n1\nSOBREINTENSIDAD\n2310h\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Parámetro de convertidor",
+            "Referencia de protocolo"
+          ],
+          [
+            "0102",
+            "VELOCIDAD",
+            ""
+          ],
+          [
+            "0103",
+            "FREC SALIDA",
+            ""
+          ],
+          [
+            "0104",
+            "INTENSIDAD",
+            ""
+          ],
+          [
+            "0105",
+            "PAR",
+            ""
+          ],
+          [
+            "0106",
+            "POTENCIA",
+            ""
+          ],
+          [
+            "0107",
+            "TENSION BUS CC",
+            ""
+          ],
+          [
+            "0109",
+            "TENSION SALIDA",
+            ""
+          ],
+          [
+            "0301",
+            "COD ORDEN BC1 - bit 0 (PARO)",
+            ""
+          ],
+          [
+            "0301",
+            "COD ORDEN BC1 - bit 2 (INV)",
+            ""
+          ],
+          [
+            "0118",
+            "ED 1-3 ESTADO - bit 0 (ED3)",
+            ""
+          ]
+        ],
+        [
+          [
+            "Código de fallo del convertidor",
+            "Código de fallo de bus de campo (especificación DRIVECOM)"
+          ],
+          [
+            "1 SOBREINTENSIDAD",
+            "2310h"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "250\nManual del usuario del ACS550-01/U1\nCódigo de fallo del convertidor\nCódigo de fallo de bus de\ncampo (especificación\nDRIVECOM)\n2\nSOBRETENS CC\n3210h\n3\nEXCES TEMP D\n4210h\n4\nCORTOCIRCUIT\n2340h\n5\nReservado\nFF6Bh\n6\nSUBTENS. CC\n3220h\n7\nEA1 FALLO\n8110h\n8\nEA2 FALLO\n8110h\n9\nEXC TEMPMOT\n4310h\n10\nPERD PANEL\n5300h\n11\nERR MAR ID\nFF84h\n12\nMOTOR BLOQ\n7121h\n14\nFALLO EXT 1\n9000h\n15\nFALLO EXT 2\n9001h\n16\nFALLO TIERRA\n2330h\n17\nObsoleto\nFF6Ah\n18\nFALLO TERM\n5210h\n19\nENLACE OPEX\n7500h\n20\nPOT OPEX\n5414h\n21\nMED INTENS\n2211h\n22\nFASE RED\n3130h\n23\nENCODER\n7301h\n24\nSOBREVELOC\n7310h\n25\nReservado\nFF80h\n26\nID UNIDAD\n5400h\n27\nARCHIVO CONF\n630Fh\n28\nERR SERIE 1\n7510h\n29\nARCH CON BCI\n6306h\n30\nFORZAR DISP\nFF90h\n31\nBCI 1\nFF92h\n32\nBCI 2\nFF93h\n33\nBCI 3\nFF94h\n34\nFASE MOTOR\nFF56h\n35\nCABLEADO SAL\nFF95h\n36\nINCOMP SW\n630Fh\n37\nSOBRETEMP CB\n4110h\n38\nCURVA CARGA USUARIO\nFF6Bh\n101\nSERF CORRUPT\nFF55h\n102\nReservado\nFF55h\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Código de fallo del convertidor",
+            "Código de fallo de bus de campo (especificación DRIVECOM)"
+          ],
+          [
+            "2",
+            "SOBRETENS CC",
+            "3210h"
+          ],
+          [
+            "3",
+            "EXCES TEMP D",
+            "4210h"
+          ],
+          [
+            "4",
+            "CORTOCIRCUIT",
+            "2340h"
+          ],
+          [
+            "5",
+            "Reservado",
+            "FF6Bh"
+          ],
+          [
+            "6",
+            "SUBTENS. CC",
+            "3220h"
+          ],
+          [
+            "7",
+            "EA1 FALLO",
+            "8110h"
+          ],
+          [
+            "8",
+            "EA2 FALLO",
+            "8110h"
+          ],
+          [
+            "9",
+            "EXC TEMPMOT",
+            "4310h"
+          ],
+          [
+            "10",
+            "PERD PANEL",
+            "5300h"
+          ],
+          [
+            "11",
+            "ERR MAR ID",
+            "FF84h"
+          ],
+          [
+            "12",
+            "MOTOR BLOQ",
+            "7121h"
+          ],
+          [
+            "14",
+            "FALLO EXT 1",
+            "9000h"
+          ],
+          [
+            "15",
+            "FALLO EXT 2",
+            "9001h"
+          ],
+          [
+            "16",
+            "FALLO TIERRA",
+            "2330h"
+          ],
+          [
+            "17",
+            "Obsoleto",
+            "FF6Ah"
+          ],
+          [
+            "18",
+            "FALLO TERM",
+            "5210h"
+          ],
+          [
+            "19",
+            "ENLACE OPEX",
+            "7500h"
+          ],
+          [
+            "20",
+            "POT OPEX",
+            "5414h"
+          ],
+          [
+            "21",
+            "MED INTENS",
+            "2211h"
+          ],
+          [
+            "22",
+            "FASE RED",
+            "3130h"
+          ],
+          [
+            "23",
+            "ENCODER",
+            "7301h"
+          ],
+          [
+            "24",
+            "SOBREVELOC",
+            "7310h"
+          ],
+          [
+            "25",
+            "Reservado",
+            "FF80h"
+          ],
+          [
+            "26",
+            "ID UNIDAD",
+            "5400h"
+          ],
+          [
+            "27",
+            "ARCHIVO CONF",
+            "630Fh"
+          ],
+          [
+            "28",
+            "ERR SERIE 1",
+            "7510h"
+          ],
+          [
+            "29",
+            "ARCH CON BCI",
+            "6306h"
+          ],
+          [
+            "30",
+            "FORZAR DISP",
+            "FF90h"
+          ],
+          [
+            "31",
+            "BCI 1",
+            "FF92h"
+          ],
+          [
+            "32",
+            "BCI 2",
+            "FF93h"
+          ],
+          [
+            "33",
+            "BCI 3",
+            "FF94h"
+          ],
+          [
+            "34",
+            "FASE MOTOR",
+            "FF56h"
+          ],
+          [
+            "35",
+            "CABLEADO SAL",
+            "FF95h"
+          ],
+          [
+            "36",
+            "INCOMP SW",
+            "630Fh"
+          ],
+          [
+            "37",
+            "SOBRETEMP CB",
+            "4110h"
+          ],
+          [
+            "38",
+            "CURVA CARGA USUARIO",
+            "FF6Bh"
+          ],
+          [
+            "101",
+            "SERF CORRUPT",
+            "FF55h"
+          ],
+          [
+            "102",
+            "Reservado",
+            "FF55h"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Manual del usuario del ACS550-01/U1\n251\nCódigo de fallo del convertidor\nCódigo de fallo de bus de\ncampo (especificación\nDRIVECOM)\n103\nSERF MACRO\nFF55h\n104\nReservado\nFF55h\n105\nReservado\nFF55h\n201\nDSP T1 OVERLOAD\n6100h\n202\nDSP T2 OVERLOAD\n6100h\n203\nDSP T3 OVERLOAD\n6100h\n204\nDSP STACK ERROR\n6100h\n205\nReservado (obsoleto)\n5000h\n206\nOMIO ID ERR\n5000h\n207\nEFB LOAD ERR\n6100h\n1000\nPAR HZRPM\n6320h\n1001\nPAR REF NGPFC\n6320h\n1002\nReservado (obsoleto)\n6320h\n1003\nPAR ESCAL EA\n6320h\n1004\nPAR ESCAL SA\n6320h\n1005\nPAR PCU 2\n6320h\n1006\nPAR SR EXT\n6320h\n1007\nPAR BUS C\n6320h\n1008\nPAR MODO PFC\n6320h\n1009\nPAR PCU 1\n6320h\n1012\nPAR PFC ES 1\n6320h\n1013\nPAR PFC ES 2\n6320h\n1014\nPAR PFC ES 3\n6320h\n1016\nPAR CARG USUA C\n6320h\nDiagnóstico de la comunicación serie\nAdemás de los códigos de fallo del convertidor, el módulo ABC dispone de herramientas\nde diagnóstico. Véase el manual del usuario facilitado con el módulo ABC.\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Código de fallo del convertidor",
+            "Código de fallo de bus de campo (especificación DRIVECOM)"
+          ],
+          [
+            "103",
+            "SERF MACRO",
+            "FF55h"
+          ],
+          [
+            "104",
+            "Reservado",
+            "FF55h"
+          ],
+          [
+            "105",
+            "Reservado",
+            "FF55h"
+          ],
+          [
+            "201",
+            "DSP T1 OVERLOAD",
+            "6100h"
+          ],
+          [
+            "202",
+            "DSP T2 OVERLOAD",
+            "6100h"
+          ],
+          [
+            "203",
+            "DSP T3 OVERLOAD",
+            "6100h"
+          ],
+          [
+            "204",
+            "DSP STACK ERROR",
+            "6100h"
+          ],
+          [
+            "205",
+            "Reservado (obsoleto)",
+            "5000h"
+          ],
+          [
+            "206",
+            "OMIO ID ERR",
+            "5000h"
+          ],
+          [
+            "207",
+            "EFB LOAD ERR",
+            "6100h"
+          ],
+          [
+            "1000",
+            "PAR HZRPM",
+            "6320h"
+          ],
+          [
+            "1001",
+            "PAR REF NGPFC",
+            "6320h"
+          ],
+          [
+            "1002",
+            "Reservado (obsoleto)",
+            "6320h"
+          ],
+          [
+            "1003",
+            "PAR ESCAL EA",
+            "6320h"
+          ],
+          [
+            "1004",
+            "PAR ESCAL SA",
+            "6320h"
+          ],
+          [
+            "1005",
+            "PAR PCU 2",
+            "6320h"
+          ],
+          [
+            "1006",
+            "PAR SR EXT",
+            "6320h"
+          ],
+          [
+            "1007",
+            "PAR BUS C",
+            "6320h"
+          ],
+          [
+            "1008",
+            "PAR MODO PFC",
+            "6320h"
+          ],
+          [
+            "1009",
+            "PAR PCU 1",
+            "6320h"
+          ],
+          [
+            "1012",
+            "PAR PFC ES 1",
+            "6320h"
+          ],
+          [
+            "1013",
+            "PAR PFC ES 2",
+            "6320h"
+          ],
+          [
+            "1014",
+            "PAR PFC ES 3",
+            "6320h"
+          ],
+          [
+            "1016",
+            "PAR CARG USUA C",
+            "6320h"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "252\nManual del usuario del ACS550-01/U1\nDatos técnicos del perfil ABB Drives\nSinopsis\nEl perfil ABB Drives proporciona un perfil estándar que puede utilizarse en varios\nprotocolos, incluyendo protocolos disponibles en el módulo ABC. Este apartado\ndescribe el perfil ABB Drives implementado en los módulos ABC.\nCódigo de control\nComo se ha descrito anteriormente en el apartado Interfase de control de la página\n242, el CÓDIGO CONTROL es el medio principal de controlar el convertidor desde un\nsistema de bus de campo.\nLa tabla siguiente y el diagrama de estado que figura más adelante en este\nsubapartado describen el contenido del CÓDIGO CONTROL para el perfil ABB Drives.\nCÓDIGO CONTROL del perfil ABB Drives (ABC)\nBit\nNombre\nValor\nEstado ordenado\nComentarios\n0\nOFF1\nCONTROL\n1\nREADY TO OPERATE\nIntroducir READY TO OPERATE\n0\nEMERGENCY OFF\nEl convertidor para en rampa de\nconformidad con la rampa de deceleración\nactualmente activa (2203 o 2205).\nSecuencia normal de comandos:\n· Introducir OFF1 ACTIVE\n· Seguir con READY TO SWITCH ON, a\nmenos que haya otros enclavamientos\n(OFF2, OFF3) activos.\n1\nOFF2\nCONTROL\n1\nOPERATING\nContinuar con el funcionamiento (OFF2\ninactivo).\n0\nEMERGENCY OFF\nEl convertidor para por sí solo.\nSecuencia normal de comandos:\n· Introducir OFF2 ACTIVE\n· Seguir con SWITCHON INHIBITED\n2\nOFF3\nCONTROL\n1\nOPERATING\nContinuar con el funcionamiento (OFF3\ninactivo).\n0\nSTOP EMERGENCIA\nEl convertidor se para dentro del tiempo\nespecificado por el parámetro 2208.\nSecuencia normal de comandos:\n· Introducir OFF3 ACTIVE\n· Seguir con SWITCH ON INHIBITED\nADVERTENCIA: Verifique que el\nmotor y el equipo accionado puedan\npararse con este modo de paro.\n3\nINHIBIT\nOPERATION\n1\nFUNCIONAMIENTO\nHABILITADO\nIntroducir OPERATION ENABLED (Observe\nque la señal de permiso de marcha debe\nestar activa. Véase el parámetro 1601. Si\nel parámetro 1601 se ajusta en COMUNIC,\neste bit también activa la señal de\npermiso de marcha.)\n0\nOPERATION\nINHIBITED\nInhibir el funcionamiento. Introducir\nOPERATION INHIBITED\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "CÓDIGO CONTROL del perfil ABB Drives (ABC)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Estado ordenado",
+            "Comentarios"
+          ],
+          [
+            "0",
+            "OFF1 CONTROL",
+            "1",
+            "READY TO OPERATE",
+            "Introducir READY TO OPERATE"
+          ],
+          [
+            "0",
+            "EMERGENCY OFF",
+            "El convertidor para en rampa de conformidad con la rampa de deceleración actualmente activa (2203 o 2205). Secuencia normal de comandos: · Introducir OFF1 ACTIVE"
+          ],
+          [
+            "",
+            "",
+            "· Seguir con READY TO SWITCH ON, a menos que haya otros enclavamientos (OFF2, OFF3) activos."
+          ],
+          [
+            "1",
+            "OFF2 CONTROL",
+            "1",
+            "OPERATING",
+            "Continuar con el funcionamiento (OFF2 inactivo)."
+          ],
+          [
+            "",
+            "0",
+            "EMERGENCY OFF",
+            "El convertidor para por sí solo. Secuencia normal de comandos: · Introducir OFF2 ACTIVE · Seguir con SWITCHON INHIBITED"
+          ],
+          [
+            "2",
+            "OFF3 CONTROL",
+            "1",
+            "OPERATING",
+            "Continuar con el funcionamiento (OFF3 inactivo)."
+          ],
+          [
+            "0",
+            "STOP EMERGENCIA",
+            "El convertidor se para dentro del tiempo especificado por el parámetro 2208. Secuencia normal de comandos: · Introducir OFF3 ACTIVE · Seguir con SWITCH ON INHIBITED ADVERTENCIA: Verifique que el motor y el equipo accionado puedan pararse con este modo de paro."
+          ],
+          [
+            "3",
+            "INHIBIT OPERATION",
+            "1",
+            "FUNCIONAMIENTO HABILITADO",
+            "Introducir OPERATION ENABLED (Observe que la señal de permiso de marcha debe estar activa. Véase el parámetro 1601. Si el parámetro 1601 se ajusta en COMUNIC, este bit también activa la señal de permiso de marcha.)"
+          ],
+          [
+            "0",
+            "OPERATION INHIBITED",
+            "Inhibir el funcionamiento. Introducir OPERATION INHIBITED"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Manual del usuario del ACS550-01/U1\n253\nCÓDIGO CONTROL del perfil ABB Drives (ABC)\nBit\nNombre\nValor\nEstado ordenado\nComentarios\n4\nRAMP_OUT\nZERO\n1\nNORMAL OPERATION\nIntroducir RAMP FUNCTION GENERATOR:\nACCELERATION ENABLED\n0\nRFG OUT ZERO\nForzar a cero la salida del generador de\nfunción de rampa. El convertidor para en\nrampa (con los límites de intensidad y\ntensión de CC aplicados).\n5\nRAMP_HOLD\n1\nRFG OUT ENABLED\nHabilitar la función de rampa.\nIntroducir RAMP FUNCTION GENERATOR:\nACCELERATOR ENABLED\n0\nRFG OUT HOLD\nDetener la rampa (retención de la salida\ndel generador de función de rampa).\n6\nRAMP_IN_\nZERO\n1\nRFG INPUT ENABLED\nFuncionamiento normal. Introducir\nOPERATING\n0\nRFG INPUT ZERO\nForzar a cero la entrada del generador de\nfunción de rampa.\n7\nRESET\n0=>1\nRESET\nRestauración de fallos si existe un fallo\nactivo. (Introducir SWITCH-ON INHIBITED).\nEfectivo si 1604 = COMUNIC\n0\nOPERATING\nContinuar con el funcionamiento normal.\n8 ... 9\nSin usar\n10\nREMOTE_CMD\n1\nControl por bus de campo activado.\n0\n· CW # 0 o Ref # 0: Conservar último\nCW y Ref.\n· CW = 0 y Ref = 0: Control por bus de\ncampo habilitado.\n· La referencia y la rampa de\naceleración/deceleración se bloquean.\n11\nEXT CTRL LOC\n1\nEXT2 SELECT\nSeleccionar el lugar de control externo 2\n(EXT2). Efectivo si 1102 = COMUNIC\n0\nEXT1 SELECT\nSeleccionar el lugar de control externo 1\n(EXT1). Efectivo si 1102 = COMUNIC\n12 ... 15\nSin usar\nCódigo de estado\nComo se ha descrito anteriormente en el apartado Interfase de control en la página\n242, el contenido del CÓDIGO ESTADO es información de estado, enviada por el\nconvertidor a la estación maestra. La tabla siguiente y el diagrama de estado que\nfigura más adelante en este subapartado describen el contenido del código estado.\nCÓDIGO ESTADO del perfil ABB Drives (ABC)\nBit\nNombre\nValor\nDescripción\n(Corresponde a estados/cuadros en el diagrama\nde estado)\n0\nRDY_ON\n1\nLISTO PARA ENCENDIDO\n0\nNO LISTO PARA ENCENDIDO\n1\nRDY_RUN\n1\nREADY TO OPERATE\n0\nOFF1 ACTIVO\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "CÓDIGO CONTROL del perfil ABB Drives (ABC)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Estado ordenado",
+            "Comentarios"
+          ],
+          [
+            "4",
+            "RAMP_OUT ZERO",
+            "1",
+            "NORMAL OPERATION",
+            "Introducir RAMP FUNCTION GENERATOR: ACCELERATION ENABLED"
+          ],
+          [
+            "0",
+            "RFG OUT ZERO",
+            "Forzar a cero la salida del generador de función de rampa. El convertidor para en rampa (con los límites de intensidad y tensión de CC aplicados)."
+          ],
+          [
+            "5",
+            "RAMP_HOLD",
+            "1",
+            "RFG OUT ENABLED",
+            "Habilitar la función de rampa. Introducir RAMP FUNCTION GENERATOR: ACCELERATOR ENABLED"
+          ],
+          [
+            "",
+            "0",
+            "RFG OUT HOLD",
+            "Detener la rampa (retención de la salida del generador de función de rampa)."
+          ],
+          [
+            "6",
+            "RAMP_IN_ ZERO",
+            "1",
+            "RFG INPUT ENABLED",
+            "Funcionamiento normal. Introducir OPERATING"
+          ],
+          [
+            "0",
+            "RFG INPUT ZERO",
+            "Forzar a cero la entrada del generador de función de rampa."
+          ],
+          [
+            "7",
+            "RESET",
+            "0=>1",
+            "RESET",
+            "Restauración de fallos si existe un fallo activo. (Introducir SWITCH-ON INHIBITED). Efectivo si 1604 = COMUNIC"
+          ],
+          [
+            "0",
+            "OPERATING",
+            "Continuar con el funcionamiento normal."
+          ],
+          [
+            "8 ... 9",
+            "Sin usar",
+            "",
+            "",
+            ""
+          ],
+          [
+            "10",
+            "REMOTE_CMD",
+            "1",
+            "",
+            "Control por bus de campo activado."
+          ],
+          [
+            "0",
+            "",
+            "· CW # 0 o Ref # 0: Conservar último CW y Ref."
+          ],
+          [
+            "",
+            "",
+            "· CW = 0 y Ref = 0: Control por bus de campo habilitado."
+          ],
+          [
+            "",
+            "· La referencia y la rampa de aceleración/deceleración se bloquean."
+          ],
+          [
+            "11",
+            "EXT CTRL LOC",
+            "1",
+            "EXT2 SELECT",
+            "Seleccionar el lugar de control externo 2 (EXT2). Efectivo si 1102 = COMUNIC"
+          ],
+          [
+            "0",
+            "EXT1 SELECT",
+            "Seleccionar el lugar de control externo 1 (EXT1). Efectivo si 1102 = COMUNIC"
+          ],
+          [
+            "12 ... 15",
+            "Sin usar",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "CÓDIGO ESTADO del perfil ABB Drives (ABC)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Descripción (Corresponde a estados/cuadros en el diagrama de estado)"
+          ],
+          [
+            "0",
+            "RDY_ON",
+            "1",
+            "LISTO PARA ENCENDIDO"
+          ],
+          [
+            "0",
+            "NO LISTO PARA ENCENDIDO"
+          ],
+          [
+            "1",
+            "RDY_RUN",
+            "1",
+            "READY TO OPERATE"
+          ],
+          [
+            "0",
+            "OFF1 ACTIVO"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "254\nManual del usuario del ACS550-01/U1\nCÓDIGO ESTADO del perfil ABB Drives (ABC)\nBit\nNombre\nValor\nDescripción\n(Corresponde a estados/cuadros en el diagrama\nde estado)\n2\nRDY_REF\n1\nFUNCIONAMIENTO HABILITADO\n0\nOPERATION INHIBITED\n3\nTRIPPED\n0 ... 1\nFALLO\n0\nSin fallo\n4\nOFF_2_STA\n1\nOFF2 inactivo\n0\nOFF2 ACTIVO\n5\nOFF_3_STA\n1\nOFF3 inactivo\n0\nOFF3 ACTIVO\n6\nSWC_ON_INHIB\n1\nENCENDIDO INHIBIDO ACTIVO\n0\nENCENDIDO INHIBIDO NO ACTIVO\n7\nALARM\n1\nAlarma (véase el apartado Listado de alarmas en la\npágina 271 para obtener más datos sobre las alarmas).\n0\nSin alarma\n8\nAT_SETPOINT\n1\nEN FUNCIONAMIENTO. El valor actual equivale al valor de\nreferencia (dentro de los límites de tolerancia).\n0\nEl valor actual está fuera de los límites de tolerancia (no\nequivale al valor de referencia).\n9\nREMOTE\n1\nLugar de control del convertidor: REMOTO (EXT1 o EXT2)\n0\nLugar de control del convertidor: LOCAL\n10\nABOVE_LIMIT\n1\nValor del parámetro supervisado ≥ límite alto de supervisión.\nEl bit sigue siendo \"1\" hasta que el valor del parámetro\nsupervisado < límite bajo de supervisión.\nVéase el Grupo 32: SUPERVISION.\n0\nValor del parámetro supervisado < límite bajo de supervisión.\nEl bit sigue siendo \"0\" hasta que el valor del parámetro\nsupervisado > límite alto de supervisión.\nVéase el Grupo 32: SUPERVISION.\n11\nEXT CTRL LOC\n1\nLugar de control externo 2 (EXT2) seleccionado.\n0\nLugar de control externo 1 (EXT1) seleccionado.\n12\nEXT RUN ENABLE\n1\nSeñal de Permiso de Marcha externa recibida.\n0\nSeñal de Permiso de Marcha externa no recibida.\n13 ... 15\nSin usar\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "CÓDIGO ESTADO del perfil ABB Drives (ABC)"
+          ],
+          [
+            "Bit",
+            "Nombre",
+            "Valor",
+            "Descripción (Corresponde a estados/cuadros en el diagrama de estado)"
+          ],
+          [
+            "2",
+            "RDY_REF",
+            "1",
+            "FUNCIONAMIENTO HABILITADO"
+          ],
+          [
+            "0",
+            "OPERATION INHIBITED"
+          ],
+          [
+            "3",
+            "TRIPPED",
+            "0 ... 1",
+            "FALLO"
+          ],
+          [
+            "0",
+            "Sin fallo"
+          ],
+          [
+            "4",
+            "OFF_2_STA",
+            "1",
+            "OFF2 inactivo"
+          ],
+          [
+            "0",
+            "OFF2 ACTIVO"
+          ],
+          [
+            "5",
+            "OFF_3_STA",
+            "1",
+            "OFF3 inactivo"
+          ],
+          [
+            "0",
+            "OFF3 ACTIVO"
+          ],
+          [
+            "6",
+            "SWC_ON_INHIB",
+            "1",
+            "ENCENDIDO INHIBIDO ACTIVO"
+          ],
+          [
+            "0",
+            "ENCENDIDO INHIBIDO NO ACTIVO"
+          ],
+          [
+            "7",
+            "ALARM",
+            "1",
+            "Alarma (véase el apartado Listado de alarmas en la página 271 para obtener más datos sobre las alarmas)."
+          ],
+          [
+            "0",
+            "Sin alarma"
+          ],
+          [
+            "8",
+            "AT_SETPOINT",
+            "1",
+            "EN FUNCIONAMIENTO. El valor actual equivale al valor de referencia (dentro de los límites de tolerancia)."
+          ],
+          [
+            "0",
+            "El valor actual está fuera de los límites de tolerancia (no equivale al valor de referencia)."
+          ],
+          [
+            "9",
+            "REMOTE",
+            "1",
+            "Lugar de control del convertidor: REMOTO (EXT1 o EXT2)"
+          ],
+          [
+            "0",
+            "Lugar de control del convertidor: LOCAL"
+          ],
+          [
+            "10",
+            "ABOVE_LIMIT",
+            "1",
+            "Valor del parámetro supervisado ≥ límite alto de supervisión. El bit sigue siendo \"1\" hasta que el valor del parámetro supervisado < límite bajo de supervisión. Véase el Grupo 32: SUPERVISION."
+          ],
+          [
+            "0",
+            "Valor del parámetro supervisado < límite bajo de supervisión. El bit sigue siendo \"0\" hasta que el valor del parámetro supervisado > límite alto de supervisión. Véase el Grupo 32: SUPERVISION."
+          ],
+          [
+            "11",
+            "EXT CTRL LOC",
+            "1",
+            "Lugar de control externo 2 (EXT2) seleccionado."
+          ],
+          [
+            "0",
+            "Lugar de control externo 1 (EXT1) seleccionado."
+          ],
+          [
+            "12",
+            "EXT RUN ENABLE",
+            "1",
+            "Señal de Permiso de Marcha externa recibida."
+          ],
+          [
+            "0",
+            "Señal de Permiso de Marcha externa no recibida."
+          ],
+          [
+            "13 ... 15",
+            "Sin usar",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Manual del usuario del ACS550-01/U1\n255\nEl diagrama de estado siguiente describe la función de marcha-paro de los bits del\nCÓDIGO CONTROL (CW) y el CÓDIGO ESTADO (SW).\nDesde cualquier estado\nDesde cualquier estado\nDesde cualquier estado\nParo de emergencia\nOFF3 (Bit 2 del CW=0)\nParo de emergencia\nOFF2 (Bit 1 del CW=0)\nFallo\n(Bit 5 del SW=0)-\nOFF3\nACTIVO\nOFF2\nACTIVO\nFALLO\n(Bit 3 del SW=1)\n·(Bit 4 del SW=0)\n(Bit 7 del CW=1)\nn(f)=0 / I=0\nDesde cualquier estado\nOFF1 (Bit 0 del CW=0)\nOFF1\nACTIVO\n(Bit 1 del SW=0)\nn(f)=0 / I=0\nALIM. DESC.\nConexión\nABCD\n(Bit 3 del CW=0)\n(Bit 2 del SW=0)\nFUNCIONAMIENTO\nINHIBIDO\nFUNCIONAMIENTO INHIBIDO\nBCD\n(Bit 4 del CW=0)\nSWITCH-ON\nDESACTIVADA\n(Bit 6 del SW=1)\n(Bit 0 del CW=0)\nNO LISTO\nPARA CONEXIÓN\n(Bit 0 del SW=0)\n(CW xxxx x1xx xxxx x110)\nLISTO PARA\nCONEXIÓN\n(Bit 0 del SW=1)\n(CW= xxxx x1xx xxxx x111)\nLISTO PARA\nFUNCIONAR\n(Bit 1 del SW=1)\n(Bit 3 del CW=1 y\nBit 12 del SW=1)\nC\nD\nFUNCIONAMIENTO\nHABILITADO\n(Bit 5 del CW=0)\n(Bit 2 del SW=1)\nA\n(CW=xxxx x1xx xxx1 1111 )\nD\nB\n(Bit 6 del CW=0)\nLEYENDA\nEstado\nCambio de estado\nCW = CÓDIGO CONTROL\nSW = CÓDIGO ESTADO\nRFG = Generador de función de la\nrampa\nI = Parám. 0104 INTENSIDAD\nf = Parám. 0103 FREC SALIDA\nn = Velocidad\nC\nD\nSALIDA RFG\nHABILITADA\n(CW=xxxx x1xx xx11 1111 )\nRFG: ACELERADOR\nHABILITADO\n(CW=xxxx x1xx x111 1111 )\nEN FUNCIONAM.\n- (Bit 8 del SW=1)\nAdaptador de bus de campo",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "256\nManual del usuario del ACS550-01/U1\nReferencia\nComo se ha descrito anteriormente en el apartado Interfase de control de la página\n242, el código de REFERENCIA es una referencia de frecuencia o velocidad.\nEscalado de referencia\nLa tabla siguiente describe el escalado de REFERENCIA para el perfil ABB Drives.\nPerfil ABB Drives (ABC)\nReferencia\nIntervalo\nTipo de\nreferencia\nEscalado\nComentarios\nREF1\n-32767 ...\n+32767\nVelocidad\no\nfrecuencia\n-20000 = - (par. 1105)\n0 = 0\n+20000 = (par. 1105)\n(20000 corresponde al 100%)\nReferencia final limitada por\n1104/1105. Velocidad actual\ndel motor limitada por 2001/\n2002 (velocidad) o por 2007/\n2008 (frecuencia).\nREF2\n-32767 ...\n+32767\nVelocidad\no\nfrecuencia\n-10000 = - (par. 1108)\n0 = 0\n+10000 = (par. 1108)\n(10000 corresponde al 100%)\nReferencia final limitada por\n1107/1108. Velocidad actual\ndel motor limitada por 2001/\n2002 (velocidad) o por 2007/\n2008 (frecuencia).\nPar\n-10000 = - (par. 1108)\n0 = 0\n+10000 = (par. 1108)\n(10000 corresponde al 100%)\nReferencia final limitada por\n2015/2017 (par 1) o 2016/\n2018 (par 2).\nReferencia\nPID\n-10000 = - (par. 1108)\n0 = 0\n+10000 = (par. 1108)\n(10000 corresponde al 100%)\nReferencia final limitada por\n4012/4013 (conj PID 1) o\n4112/4113 (conj PID 2).\nNota: el ajuste del parámetro 1104 REF1 MINIMO y 1107 REF2 MINIMO no tiene ningún\nefecto sobre el escalado de las referencias.\nCuando el parámetro 1103 SELEC REF1 o 1106 SELEC REF2 se ajusta a COMUNIC+EA1\no COMUNIC*EA1, la referencia se escala de la siguiente manera:\nPerfil ABB Drives (ABC)\nReferencia\nAjuste de\nvalor\nEscalado de referencia de EA\nREF1\nCOMUNIC+EA1\nCOMUNIC (%) + (EA (%) - 0,5 · REF1 MAXIMO (%))\nCoeficiente de correc.\nde referencia de bus de campo\n(100 + 0,5 · (Par. 1105)%\nI\n1\n100% -\n1\nSeñal de entrada\nEA1\nI\n(100 - 0,5 · (par. 1105))%\n0%\n50% 100%\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Perfil ABB Drives (ABC)"
+          ],
+          [
+            "Referencia",
+            "Intervalo",
+            "Tipo de referencia",
+            "Escalado",
+            "Comentarios"
+          ],
+          [
+            "REF1",
+            "-32767 ... +32767",
+            "Velocidad o frecuencia",
+            "-20000 = - (par. 1105) 0 = 0 +20000 = (par. 1105) (20000 corresponde al 100%)",
+            "Referencia final limitada por 1104/1105. Velocidad actual del motor limitada por 2001/ 2002 (velocidad) o por 2007/ 2008 (frecuencia)."
+          ],
+          [
+            "REF2",
+            "-32767 ... +32767",
+            "Velocidad o frecuencia",
+            "-10000 = - (par. 1108) 0 = 0 +10000 = (par. 1108) (10000 corresponde al 100%)",
+            "Referencia final limitada por 1107/1108. Velocidad actual del motor limitada por 2001/ 2002 (velocidad) o por 2007/ 2008 (frecuencia)."
+          ],
+          [
+            "Par",
+            "-10000 = - (par. 1108) 0 = 0 +10000 = (par. 1108) (10000 corresponde al 100%)",
+            "Referencia final limitada por 2015/2017 (par 1) o 2016/ 2018 (par 2)."
+          ],
+          [
+            "Referencia PID",
+            "-10000 = - (par. 1108) 0 = 0 +10000 = (par. 1108) (10000 corresponde al 100%)",
+            "Referencia final limitada por 4012/4013 (conj PID 1) o 4112/4113 (conj PID 2)."
+          ]
+        ],
+        [
+          [
+            "Perfil ABB Drives (ABC)"
+          ],
+          [
+            "Referencia",
+            "Ajuste de valor",
+            "Escalado de referencia de EA"
+          ],
+          [
+            "REF1",
+            "COMUNIC+EA1",
+            "COMUNIC (%) + (EA (%) - 0,5 · REF1 MAXIMO (%)) Coeficiente de correc. de referencia de bus de campo (100 + 0,5 · (Par. 1105)% I"
+          ],
+          [
+            "",
+            "",
+            "1 100% - 1 Señal de entrada\n:selected:"
+          ],
+          [
+            "EA1 I (100 - 0,5 · (par. 1105))% 0% 50% 100%"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Manual del usuario del ACS550-01/U1\n257\nPerfil ABB Drives (ABC)\nReferencia\nAjuste de\nvalor\nEscalado de referencia de EA\nREF1\nCOMUNIC*EA1\nCOMUNIC (%) · (EA (%) / 0,5 · REF1 MAXIMO (%))\nCoeficiente de correc.\nde referencia de bus de campo\n200%\n1\n1\n1\n100%-\nSeñal de entrada EA1\n(100 - 0,5 · (par. 1105))%\n0%\n50%\n100%\nREF2\nCOMUNIC+EA1\nCOMUNIC (%) + (EA (%) - 0,5 · REF1 MAXIMO (%))\nCoeficiente de correc.\nde referencia de bus de campo\n(100 + 0,5 · (Par. 1108)%\nI\nI\nI\n100%\nJ\n1\n1\nSeñal de entrada EA1\n(100 - 0,5 · (par. 1108)%\n0%\n50%\n100%\nREF2\nCOMUNIC*EA1\nCOMUNIC (%) · (EA (%) / 0,5 · REF2 MAXIMO (%))\nCoeficiente de correc.\nde referencia de bus de campo\n200%\n1\nI\n1\n1\n1\n100%-\n-\n-\n1\nSeñal de entrada EA1\n0%\n0%\n50%\n100%\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Perfil ABB Drives (ABC)"
+          ],
+          [
+            "Referencia",
+            "Ajuste de valor",
+            "Escalado de referencia de EA"
+          ],
+          [
+            "REF1",
+            "COMUNIC*EA1",
+            "COMUNIC (%) · (EA (%) / 0,5 · REF1 MAXIMO (%)) Coeficiente de correc. de referencia de bus de campo 200% 1 1 1 100%- Señal de entrada EA1 (100 - 0,5 · (par. 1105))% 0% 50% 100%\n:unselected: :selected: :unselected:"
+          ],
+          [
+            "REF2",
+            "COMUNIC+EA1",
+            "COMUNIC (%) + (EA (%) - 0,5 · REF1 MAXIMO (%))"
+          ],
+          [
+            "Coeficiente de correc. de referencia de bus de campo (100 + 0,5 · (Par. 1108)% I I I 100% J 1 1 Señal de entrada EA1 (100 - 0,5 · (par. 1108)% 0% 50% 100%\n:unselected: :unselected: :unselected: :selected:"
+          ],
+          [
+            ""
+          ],
+          [
+            "REF2",
+            "COMUNIC*EA1",
+            "COMUNIC (%) · (EA (%) / 0,5 · REF2 MAXIMO (%)) Coeficiente de correc. de referencia de bus de campo 200% 1 I 1 1 1 100%- - - 1 Señal de entrada EA1 0% 0% 50% 100%\n:selected: :unselected: :unselected: :unselected: :selected: :unselected: :unselected: :unselected: :unselected: :unselected: :unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "258\nManual del usuario del ACS550-01/U1\nTratamiento de referencias\nUtilice los parámetros del Grupo 10: MARCHA/PARO/DIR para configurar el control\nde la dirección de giro de cada lugar de control (EXT1 and EXT2). Los siguientes\ndiagramas ilustran cómo los parámetros del grupo 10 y el signo de la referencia de\nbus de campo interactúan para producir valores de REFERENCIA (REF1 y REF2).\nTenga en cuenta que las referencias de bus de campo son bipolares, es decir, que\npueden ser negativas o positivas.\nPerfil ABB Drives\nParámetro\nAjuste de\nvalor\nEscalado de referencia de EA\n1003 DIRECCIÓN\n1 (AVANCE)\nRef. resultante\nRef. máx.\n1\n-\nI\nI\n1\n-\n1\n-\n1\nBus de campo\n-\nde campo\n-163% -100%\n100% 163%\n-(Ref. máx.) -\n1003 DIRECCIÓN\n2 (RETROCESO)\nRef. máx.\nRef. resultante\n100% 163%\n1\n1\nI\n-\n-\nBus de campo -163% -100%\nde campo\n-\n-\n-\n-\n-\n-\n- -\n1\n-(Ref. máx.)\n-\n1003 DIRECCIÓN\n3 (PETICION)\nRef. máx.\nBus de campo -163% -100%\nde campo\n1\n-(Ref. máx.) - -\nRef. resultante\n1\n1\nI\n1\n1\n-\n100% 163%\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Perfil ABB Drives"
+          ],
+          [
+            "Parámetro",
+            "Ajuste de valor",
+            "Escalado de referencia de EA"
+          ],
+          [
+            "1003 DIRECCIÓN",
+            "1 (AVANCE)",
+            "Ref. resultante Ref. máx. 1 - I I 1 - 1 - 1 Bus de campo - de campo -163% -100% 100% 163% -(Ref. máx.) -"
+          ],
+          [
+            "1003 DIRECCIÓN",
+            "2 (RETROCESO)",
+            "Ref. máx.",
+            "Ref. resultante 100% 163% 1 1 I - -"
+          ],
+          [
+            "Bus de campo -163% -100% de campo - - - - - - - - 1 -(Ref. máx.) -"
+          ],
+          [
+            "1003 DIRECCIÓN",
+            "3 (PETICION)",
+            "Ref. máx. Bus de campo -163% -100% de campo 1 -(Ref. máx.) - -",
+            "Ref. resultante 1 1 I 1 1 -"
+          ],
+          [
+            "100% 163%"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Manual del usuario del ACS550-01/U1\n259\nValor actual\nComo se ha descrito anteriormente en el apartado Interfase de control de la página\n242, los valores actuals son códigos que contienen valores del convertidor.\nEscalado del valor actual\nEl escalado de los enteros enviados al bus de campo como valores actuales\ndepende de la resolución del parámetro del convertidor seleccionado. Exceptuando\nlo indicado para ACT1 y ACT2 a continuación, escale el entero de realimentación\nempleando la resolución detallada para el parámetro en el apartado Lista de\nparámetros completa de la página 95. Por ejemplo:\nEntero de\nrealimentación\nResolución de\nparámetro\nValor escalado\n1\n0,1 mA\n1 - 0,1 mA = 0,1 mA\n10\n0,1%\n10 - 0,1% = 1%\nLos códigos 5 y 6 se escalan de la siguiente manera:\nPerfil ABB Drives\nContenido\nEscalado\nACT1\nVELOCIDAD\nACTUAL\n-20000 ... +20000 = - (par. 1105) ... +(par. 1105)\nACT2\nPAR\n-10000 ... +10000 = - 100% ... +100%\nDirecciones virtuales del control del convertidor\nEl área de dirección virtual del control del convertidor se asigna del modo siguiente:\n1\nCódigo de control\n2\nReferencia 1 (REF1)\n3\nReferencia 2 (REF2)\n4\nCódigo de estado\n5\nValor actual 1 (ACT1)\n6\nValor actual 2 (ACT2)\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Entero de realimentación",
+            "Resolución de parámetro",
+            "Valor escalado"
+          ],
+          [
+            "1",
+            "0,1 mA",
+            "1 - 0,1 mA = 0,1 mA"
+          ],
+          [
+            "10",
+            "0,1%",
+            "10 - 0,1% = 1%"
+          ]
+        ],
+        [
+          [
+            "Perfil ABB Drives"
+          ],
+          [
+            "",
+            "Contenido",
+            "Escalado"
+          ],
+          [
+            "ACT1",
+            "VELOCIDAD ACTUAL",
+            "-20000 ... +20000 = - (par. 1105) ... +(par. 1105)"
+          ],
+          [
+            "ACT2",
+            "PAR",
+            "-10000 ... +10000 = - 100% ... +100%"
+          ]
+        ],
+        [
+          [
+            "1",
+            "Código de control"
+          ],
+          [
+            "2",
+            "Referencia 1 (REF1)"
+          ],
+          [
+            "3",
+            "Referencia 2 (REF2)"
+          ],
+          [
+            "4",
+            "Código de estado"
+          ],
+          [
+            "5",
+            "Valor actual 1 (ACT1)"
+          ],
+          [
+            "6",
+            "Valor actual 2 (ACT2)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "260\nManual del usuario del ACS550-01/U1\nDatos técnicos del perfil genérico\nSinopsis\nEl perfil genérico tiene el objetivo de satisfacer los requisitos del perfil de convertidor\nestándar del sector para cada protocolo (p. ej. PROFIdrive para PROFIBUS, AC/DC\nDrive para DeviceNet).\nCódigo de control\nComo se ha descrito anteriormente en el apartado Interfase de control de la página\n242, el CÓDIGO CONTROL es el medio principal de controlar el convertidor desde un\nsistema de bus de campo. Acerca del contenido específico del CÓDIGO CONTROL,\nvéase el manual del usuario facilitado con el módulo ABC.\nCódigo de estado\nComo se ha descrito anteriormente en el apartado Interfase de control en la página\n242, el contenido del CÓDIGO ESTADO es información de estado, enviada por el\nconvertidor a la estación maestra. Acerca del contenido específico del CÓDIGO\nESTADO, véase el manual del usuario facilitado con el módulo ABC.\nReferencia\nComo se ha descrito anteriormente en el apartado Interfase de control de la página\n242, el código de REFERENCIA es una referencia de frecuencia o velocidad.\nNota: REF2 no es compatible con el perfil de convertidor genérico.\nEscalado de referencia\nEl escalado de la REFERENCIA es específico para el tipo de bus de campo. Sin\nembargo, en el convertidor, el significado de un valor de REFERENCIA del 100% se\nfija tal como se describe en la tabla siguiente. Para obtener una descripción\ndetallada sobre el rango y el escalado de la REFERENCIA, véase el manual del\nusuario facilitado con el módulo ABC.\nPerfil genérico\nReferencia\nIntervalo\nTipo de\nreferencia\nEscalado\nComentarios\nREF\nEspecífico\nde bus de\ncampo\nVelocidad\n-100% = - (par. 9908)\n0 = 0\n+100 = (par. 9908)\nReferencia final limitada por\n1104/1105.\nVelocidad actual del motor limitada por\n2001/2002 (velocidad).\nFrecuencia\n-100% = - (par. 9907)\n0 = 0\n+100 = (par. 9907)\nReferencia final limitada por\n1104/1105.\nVelocidad actual del motor limitada por\n2007/2008 (frecuencia).\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Perfil genérico"
+          ],
+          [
+            "Referencia",
+            "Intervalo",
+            "Tipo de referencia",
+            "Escalado",
+            "Comentarios"
+          ],
+          [
+            "REF",
+            "Específico de bus de campo",
+            "Velocidad",
+            "-100% = - (par. 9908) 0 = 0 +100 = (par. 9908)",
+            "Referencia final limitada por 1104/1105. Velocidad actual del motor limitada por 2001/2002 (velocidad)."
+          ],
+          [
+            "Frecuencia",
+            "-100% = - (par. 9907) 0 = 0 +100 = (par. 9907)",
+            "Referencia final limitada por 1104/1105. Velocidad actual del motor limitada por 2007/2008 (frecuencia)."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Manual del usuario del ACS550-01/U1\n261\nValores actuales\nComo se ha descrito anteriormente en el apartado Interfase de control de la página\n242, los valores actuales son códigos que contienen valores del convertidor.\nEscalado del valor actual\nPara valores actuales, escale el valor entero de realimentación utilizando la\nresolución del parámetro (véase el apartado Lista de parámetros completa en la\npágina 95 acerca de las resoluciones de parámetros). Por ejemplo:\nEntero de\nrealimentación\nResolución de\nparámetro\n(Entero de realimentación) · (Resolución de parámetro) =\nValor escalado\n1\n0,1 mA\n1 - 0,1 mA = 0,1 mA\n10\n0,1%\n10 - 0,1% = 1%\nCuando los parámetros son un porcentaje, el apartado Lista de parámetros\ncompleta especifica qué parámetro corresponde al 100%. En tales casos, para\nefectuar la conversión de un porcentaje a unidades de ingeniería, multiplique por el\nvalor del parámetro que defina el 100% y divida por 100%. Por ejemplo:\nEntero de\nrealiment\nación\nResolución\nde parámetro\nValor del\nparámetro que\ndefine el 100%.\n(Entero de realimentación) · (Resolución de\nparámetro) · (Valor de Ref. 100%) / 100% =\nValor escalado\n10\n0,1%\n1500 rpm1\n10 - 0,1% · 1500 RPM / 100% = 15 rpm\n100\n0,1%\n500 Hz2\n100 - 0,1% · 500 Hz / 100% = 50 Hz\n1 Suponiendo para este ejemplo que el valor actual utilice el parámetro 9908 VELOC NOM MOT como\nla referencia al 100%, y que 9908 = 1500 rpm.\n2 Suponiendo para este ejemplo que el valor actual utilice el parámetro 9907 FREC NOM MOT como la\nreferencia al 100%, y que 9907 = 500 Hz.\nCorrelación del valor actual\nVéase el manual del usuario facilitado con el módulo ABC.\nAdaptador de bus de campo",
+      "tablas": [
+        [
+          [
+            "Entero de realimentación",
+            "Resolución de parámetro",
+            "(Entero de realimentación) · (Resolución de parámetro) = Valor escalado"
+          ],
+          [
+            "1",
+            "0,1 mA",
+            "1 - 0,1 mA = 0,1 mA"
+          ],
+          [
+            "10",
+            "0,1%",
+            "10 - 0,1% = 1%"
+          ]
+        ],
+        [
+          [
+            "Entero de realiment ación",
+            "Resolución de parámetro",
+            "Valor del parámetro que define el 100%.",
+            "(Entero de realimentación) · (Resolución de parámetro) · (Valor de Ref. 100%) / 100% = Valor escalado"
+          ],
+          [
+            "10",
+            "0,1%",
+            "1500 rpm1",
+            "10 - 0,1% · 1500 RPM / 100% = 15 rpm"
+          ],
+          [
+            "100",
+            "0,1%",
+            "500 Hz2",
+            "100 - 0,1% · 500 Hz / 100% = 50 Hz"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "262\nManual del usuario del ACS550-01/U1\nAdaptador de bus de campo",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Manual del usuario del ACS550-01/U1\n263\nDiagnósticos\nADVERTENCIA: no intente efectuar ninguna medición, sustitución de piezas u otro\nprocedimiento de servicio que no se describa en este manual. Cualquier acción de\nesta naturaleza invalidará la garantía, podría poner en peligro el funcionamiento\ncorrecto y podría incrementar el tiempo de inactividad y los gastos.\n?\nADVERTENCIA: todas las tareas de instalación eléctrica y mantenimiento descritas en\neste capítulo sólo deberán ser realizadas por personal de servicio cualificado. Deben\nobservarse las instrucciones de seguridad del capítulo Instrucciones de seguridad en la\npágina 5.\nIndicaciones de diagnóstico\nEl convertidor de frecuencia detecta situaciones de error y las comunica a través de:\n· el LED rojo y verde en la estructura principal del convertidor de frecuencia\n· el LED de estado en el panel de control (si se ha instalado un Panel de control\nasistente en el convertidor)\n· la pantalla del panel de control (si se ha instalado un panel de control en el convertidor)\n· los bits de los parámetros de Código de fallo y Código de alarma (parámetros\n0305 a 0309). Véase el Grupo 03: SEÑALES ACT BC en la página 115 en cuanto\na las definiciones de los bits.\nLa forma de la indicación depende de la gravedad del error. Puede especificar la\ngravedad para muchos errores indicando al convertidor que:\n· ignore la situación de error\n· informe de la situación como una alarma\n· informe de la situación como un fallo.\nRojo - Fallos\nEl convertidor indica que ha detectado un error, o fallo, grave:\n· iluminando el LED rojo en el convertidor (el LED está encendido o parpadea)\n· mostrando el LED rojo de estado iluminado en el panel de control (si se ha\ninstalado en el convertidor)\n· ajustando un bit apropiado en un parámetro de Código de fallo (0305 a 0307)\nDiagnósticos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "264\nManual del usuario del ACS550-01/U1\n· mostrando en la pantalla del panel de control la\nvisualización de un código de fallo en el modo de\nFallo (figuras de la derecha)\n· parando el motor (si estaba en marcha).\nEl código de fallo de la pantalla del panel de control es\ntemporal. Al pulsar cualquiera de las teclas siguientes se\nLOC\nF0007\nelimina el mensaje de fallo: MENU, ENTER, la tecla\nARRIBA o la tecla ABAJO. El mensaje vuelve a aparecer\nFWD\ndespués de unos segundos si no se toca el panel de control y el fallo sigue estando activo.\nLOC & FALLO\nFALLO 7\nFALLO EA1\n00:00\nVerde parpadeante - Alarmas\nEn los casos de errores menos graves, llamados alarmas, la pantalla de diagnóstico\nmuestra una sugerencia. En tales situaciones, el convertidor solamente informa de que ha\ndetectado una situación \"inusual.\" En dichas situaciones, el convertidor de frecuencia:\n· enciende y apaga alternativamente el LED verde del convertidor (ello no se\naplica a las alarmas derivadas de errores de manejo del panel de control)\n· enciende y apaga alternativamente el LED verde en el panel de control (si se ha\ninstalado en el convertidor)\n· ajusta un bit apropiado en un parámetro de Código de alarma (0308 o 0309).\nVéase el Grupo 03: SEÑALES ACT BC en la página 115 en cuanto a las\ndefiniciones de los bits.\n· muestra en la pantalla del panel de control la\nvisualización de un código y/o nombre de alarma\nen el modo de Fallo (figuras de la derecha).\nLOC UALARMA\nALARMA 2008\nPERD PANEL\n00:00\nLos mensajes de alarma desaparecen de la pantalla\ndel panel de control tras unos segundos. El mensaje\nvuelve a mostrarse de forma periódica mientras exista\nel estado de alarma.\nLOC\nA2008\nFWD\nCorrección de fallos\nLa acción correctora recomendada para fallos es la siguiente:\n· Utilice la tabla del apartado Listado de fallos a continuación para hallar y\nsolucionar la causa de origen del problema.\n· Restaure el convertidor. Véase el apartado Restauración de fallos en la página 270.\nListado de fallos\nLa tabla siguiente detalla los fallos por número de código y describe cada uno de ellos. El\nnombre del fallo tiene el formato largo mostrado en el modo de Fallo del Panel de control\nasistente cuando ocurre el fallo. Los nombres de fallo mostrados (sólo en el Panel de\nDiagnósticos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Manual del usuario del ACS550-01/U1\n265\ncontrol asistente) en el modo de Registrador de fallos (véase la página 65) y los nombres\nde fallo para el parámetro 0410 ULTIMO FALLO quizá sean más cortos.\nCódigo\nde fallo\nNombre del\nfallo en el\npanel\nDescripción y acción correctora recomendada\n1\n1\nSOBREINTENSID\nAD\nIntensidad de salida excesiva. Compruebe y corrija:\n· Una carga excesiva del motor.\n· Un tiempo de aceleración insuficiente (parámetros 2202 TIEMPO ACELER\n1 y 2205 TIEMPO ACELER 2).\n· Motor, conexiones o cables de motor defectuosos.\n2\nSOBRETENSIÓN\nCC\nTensión de CC del circuito intermedio excesiva. Compruebe y corrija:\n· Sobretensiones estáticas o de oscilación en la fuente de alimentación\nde entrada.\n· Un tiempo de deceleración insuficiente (parámetros 2203 TIEMPO DESAC\n1 y 2206 TIEMPO DESAC 2).\n· Un chopper de frenado subdimensionado (si existe).\n· Compruebe que el regulador de sobretensión esté activado (con el\nparámetro 2005).\n3\nEXC TEMP DISP\nEl disipador del convertidor se ha recalentado. La temperatura se\nencuentra en el límite o por encima de él.\nR1 ... R4: 115 ℃ (239 °F)\nR5, R6: 125 ℃ (257 °F)\nCompruebe y corrija:\n· Un fallo del ventilador.\n· Obstrucciones a la circulación de aire.\n· Una capa de suciedad o polvo sobre el disipador.\n· Una temperatura ambiente excesiva.\n· Una carga excesiva del motor.\n4\nCORTOCIRCUITO\nIntensidad de fallo. Compruebe y corrija:\n· Un cortocircuito en el/los cable(s) de motor o el motor.\n· Perturbaciones en la alimentación.\n5\nRESERVADO\nNo se utiliza.\n6\nSUBTENSIÓN CC\nTensión de CC del circuito intermedio insuficiente. Compruebe y corrija:\n· Una fase ausente en la fuente de alimentación de entrada.\n· Un fusible fundido.\n· Subtensión en la red.\n7\nFALLO EA1\nFallo de entrada analógica 1. El valor de la entrada analógica es inferior a\nEA1 FALLO LIMIT (3021). Compruebe y corrija:\n· La fuente y la conexión de la entrada analógica.\n· Los ajustes de parámtros para EA1 FALLO LIMIT (3021) y 3001 EA<FUNCION MIN.\n8\nFALLO EA2\nFallo de entrada analógica 2. El valor de la entrada analógica es inferior a\nEA2 FALLO LIMIT (3022). Compruebe y corrija:\n· La fuente y la conexión de la entrada analógica.\n· Los ajustes de parámetros para EA2 FALLO LIMIT (3022) y 3001 EA<FUNCION MIN.\n9\nEXCESO TEMP\nMOTOR\nEl motor está demasiado caliente, sobre la base de la estimación\nefectuada por el convertidor o de la realimentación de temperatura.\n· Compruebe si el motor está sobrecargado.\n· Ajuste los parámetros utilizados para la estimación (3005 ... 3009).\n· Compruebe los sensores de temperatura y los parámetros del Grupo 35:\nTEMP MOT MED.\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código de fallo",
+            "Nombre del fallo en el panel",
+            "Descripción y acción correctora recomendada"
+          ],
+          [
+            "1 1",
+            "SOBREINTENSID AD",
+            "Intensidad de salida excesiva. Compruebe y corrija: · Una carga excesiva del motor. · Un tiempo de aceleración insuficiente (parámetros 2202 TIEMPO ACELER 1 y 2205 TIEMPO ACELER 2). · Motor, conexiones o cables de motor defectuosos."
+          ],
+          [
+            "2",
+            "SOBRETENSIÓN CC",
+            "Tensión de CC del circuito intermedio excesiva. Compruebe y corrija: · Sobretensiones estáticas o de oscilación en la fuente de alimentación de entrada."
+          ],
+          [
+            "· Un tiempo de deceleración insuficiente (parámetros 2203 TIEMPO DESAC 1 y 2206 TIEMPO DESAC 2). · Un chopper de frenado subdimensionado (si existe). · Compruebe que el regulador de sobretensión esté activado (con el parámetro 2005)."
+          ],
+          [
+            "3",
+            "EXC TEMP DISP",
+            "El disipador del convertidor se ha recalentado. La temperatura se encuentra en el límite o por encima de él. R1 ... R4: 115 ℃ (239 °F) R5, R6: 125 ℃ (257 °F) Compruebe y corrija: · Un fallo del ventilador. · Obstrucciones a la circulación de aire. · Una capa de suciedad o polvo sobre el disipador. · Una temperatura ambiente excesiva. · Una carga excesiva del motor."
+          ],
+          [
+            "4",
+            "CORTOCIRCUITO",
+            "Intensidad de fallo. Compruebe y corrija: · Un cortocircuito en el/los cable(s) de motor o el motor. · Perturbaciones en la alimentación."
+          ],
+          [
+            "5",
+            "RESERVADO",
+            "No se utiliza."
+          ],
+          [
+            "6",
+            "SUBTENSIÓN CC",
+            "Tensión de CC del circuito intermedio insuficiente. Compruebe y corrija: · Una fase ausente en la fuente de alimentación de entrada. · Un fusible fundido. · Subtensión en la red."
+          ],
+          [
+            "7",
+            "FALLO EA1",
+            "Fallo de entrada analógica 1. El valor de la entrada analógica es inferior a EA1 FALLO LIMIT (3021). Compruebe y corrija: · La fuente y la conexión de la entrada analógica. · Los ajustes de parámtros para EA1 FALLO LIMIT (3021) y 3001 EA<FUNCION MIN."
+          ],
+          [
+            "8",
+            "FALLO EA2",
+            "Fallo de entrada analógica 2. El valor de la entrada analógica es inferior a EA2 FALLO LIMIT (3022). Compruebe y corrija: · La fuente y la conexión de la entrada analógica. · Los ajustes de parámetros para EA2 FALLO LIMIT (3022) y 3001 EA<FUNCION MIN."
+          ],
+          [
+            "9",
+            "EXCESO TEMP MOTOR",
+            "El motor está demasiado caliente, sobre la base de la estimación efectuada por el convertidor o de la realimentación de temperatura. · Compruebe si el motor está sobrecargado."
+          ],
+          [
+            "· Ajuste los parámetros utilizados para la estimación (3005 ... 3009). · Compruebe los sensores de temperatura y los parámetros del Grupo 35: TEMP MOT MED."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "266\nManual del usuario del ACS550-01/U1\nCódigo\nde fallo\nNombre del\nfallo en el\npanel\nDescripción y acción correctora recomendada\n10\nPÉRDIDA DE\nPANEL\nSe ha perdido la comunicación del panel y:\n· El convertidor está en modo de control local (aparece LOC en el panel\nde control), o bien\n· El convertidor está en modo de control remoto (REM) y está\nparametrizado para aceptar una marcha/paro, dirección o referencia\ndesde el panel de control.\nPara corregirlo, compruebe:\n· Las líneas y conexiones de comunicación.\n· Parámetro 3002 ERROR COM PANEL.\n· Los parámetros en el Grupo 10: MARCHA/PARO/DIR y el Grupo 11:\nSELEC REFERENCIA (si el funcionamiento del convertidor es REM).\n11\nERR MAR ID\nLa marcha de ID del motor no se completó correctamente. Compruebe y corrija:\n· Las conexiones del motor.\n· Los parámetros de motor 9905 ... 9909.\n12\nMOTOR\nBLOQUEADO\nBloqueo del motor o el proceso. El motor funciona en la región de bloqueo.\nCompruebe y corrija:\n· Una carga excesiva.\n· Potencia insuficiente del motor.\n· Los parámetros 3010 ... 3012.\n13\nRESERVADO\nNo se utiliza.\n14\nFALLO EXT 1\nLa entrada digital definida para indicar el primer fallo externo está activa.\nVéase el parámetro 3003 FALLO EXTERNO 1.\n15\nFALLO EXT 2\nLa entrada digital definida para indicar el segundo fallo externo está activa.\nVéase el parámetro 3004 FALLO EXTERNO 2.\n16\nFALLO TIERRA\nPosible fallo a tierra detectado en el motor o los cables de motor. El\nconvertidor supervisa los fallos a tierra mientras está funcionando y\nmientras no lo está. La detección es más sensible cuando el convertidor no\nestá funcionando y puede producir falsos positivos.\nCorrecciones posibles:\n· Compruebe/corrija los fallos en el cableado de entrada.\n· Compruebe que el cable de motor no exceda la longitud máxima\nespecificada.\n· Disminuya el nivel de detección de defecto a tierra con el parámetro\n3028 EARTH FAULT LVL.\n· Una fuente de alimentación de entrada conectada a tierra en triángulo y\nunos cables de motor con una alta capacitancia pueden provocar\ninformes de errores incorrectos durante pruebas no realizadas en\nmarcha. Para desactivar la respuesta a la supervisión de fallos cuando\nel convertidor no está funcionando, utilice el parámetro 3023 FALLO\nCABLE. Para desactivar la respuestaa toda supervisión de fallos a tierra,\nutilice el parámetro 3017 FALLO TIERRA.\nNota: Desactivar el fallo a tierra (fallo a tierra) podría invalidar la garantía.\n17\nOBSOLETO\nNo se utiliza.\n18\nFALLO TERM\nFallo interno. El termistor que mide la temperatura interna del convertidor\nde frecuencia está abierto o cortocircuitado. Contacte con su representante\nlocal de ABB.\n19\nENLACE OPEX\nFallo interno. Se ha detectado un problema relacionado con la\ncomunicación en el enlace de fibra óptica entre las tarjetas de control y\nOINT. Contacte con su representante local de ABB.\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código de fallo",
+            "Nombre del fallo en el panel",
+            "Descripción y acción correctora recomendada"
+          ],
+          [
+            "10",
+            "PÉRDIDA DE PANEL",
+            "Se ha perdido la comunicación del panel y: · El convertidor está en modo de control local (aparece LOC en el panel de control), o bien"
+          ],
+          [
+            "· El convertidor está en modo de control remoto (REM) y está parametrizado para aceptar una marcha/paro, dirección o referencia desde el panel de control."
+          ],
+          [
+            "Para corregirlo, compruebe:"
+          ],
+          [
+            "· Las líneas y conexiones de comunicación. · Parámetro 3002 ERROR COM PANEL."
+          ],
+          [
+            "· Los parámetros en el Grupo 10: MARCHA/PARO/DIR y el Grupo 11: SELEC REFERENCIA (si el funcionamiento del convertidor es REM)."
+          ],
+          [
+            "11",
+            "ERR MAR ID",
+            "La marcha de ID del motor no se completó correctamente. Compruebe y corrija: · Las conexiones del motor. · Los parámetros de motor 9905 ... 9909."
+          ],
+          [
+            "12",
+            "MOTOR BLOQUEADO",
+            "Bloqueo del motor o el proceso. El motor funciona en la región de bloqueo. Compruebe y corrija: · Una carga excesiva. · Potencia insuficiente del motor. · Los parámetros 3010 ... 3012."
+          ],
+          [
+            "13",
+            "RESERVADO",
+            "No se utiliza."
+          ],
+          [
+            "14",
+            "FALLO EXT 1",
+            "La entrada digital definida para indicar el primer fallo externo está activa. Véase el parámetro 3003 FALLO EXTERNO 1."
+          ],
+          [
+            "15",
+            "FALLO EXT 2",
+            "La entrada digital definida para indicar el segundo fallo externo está activa. Véase el parámetro 3004 FALLO EXTERNO 2."
+          ],
+          [
+            "16",
+            "FALLO TIERRA",
+            "Posible fallo a tierra detectado en el motor o los cables de motor. El convertidor supervisa los fallos a tierra mientras está funcionando y mientras no lo está. La detección es más sensible cuando el convertidor no está funcionando y puede producir falsos positivos. Correcciones posibles: · Compruebe/corrija los fallos en el cableado de entrada. · Compruebe que el cable de motor no exceda la longitud máxima especificada."
+          ],
+          [
+            "· Disminuya el nivel de detección de defecto a tierra con el parámetro 3028 EARTH FAULT LVL. · Una fuente de alimentación de entrada conectada a tierra en triángulo y unos cables de motor con una alta capacitancia pueden provocar informes de errores incorrectos durante pruebas no realizadas en marcha. Para desactivar la respuesta a la supervisión de fallos cuando el convertidor no está funcionando, utilice el parámetro 3023 FALLO CABLE. Para desactivar la respuestaa toda supervisión de fallos a tierra, utilice el parámetro 3017 FALLO TIERRA. Nota: Desactivar el fallo a tierra (fallo a tierra) podría invalidar la garantía."
+          ],
+          [
+            "17",
+            "OBSOLETO",
+            "No se utiliza."
+          ],
+          [
+            "18",
+            "FALLO TERM",
+            "Fallo interno. El termistor que mide la temperatura interna del convertidor de frecuencia está abierto o cortocircuitado. Contacte con su representante local de ABB."
+          ],
+          [
+            "19",
+            "ENLACE OPEX",
+            "Fallo interno. Se ha detectado un problema relacionado con la comunicación en el enlace de fibra óptica entre las tarjetas de control y OINT. Contacte con su representante local de ABB."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Manual del usuario del ACS550-01/U1\n267\nCódigo\nde fallo\nNombre del\nfallo en el\npanel\nDescripción y acción correctora recomendada\n20\nPOT OPEX\nFallo interno. Tensión excepcionalmente baja detectada en la fuente de\nalimentación OINT. Contacte con su representante local de ABB.\n21\nMED INTENS\nFallo interno. La medición de intensidad se encuentra fuera de rango.\nContacte con su representante local de ABB.\n22\nFASE RED\nLa tensión de rizado en el bus de CC es demasiado elevada. Compruebe y\ncorrija:\n· Una fase de red ausente.\n· Un fusible fundido.\n23\nENCODER\nEl convertidor no detecta una señal válida de codificador. Compruebe y corrija:\n· Presencia del codificador y conexión adecuada (conexión inversa =\ncanal A conectado a la terminal del canal B o viceversa, conexión floja o\ncortocircuito).\n· Si los niveles lógicos de tensión se encuentran fuera del rango especificado.\n· La presencia de un módulo de interfase del generador de pulsos, OTAC-\n01, funcional y bien conectado.\n· La introducción de un valor erróneo en el parámetro 5001 NUM PULSOS.\nSólo será posible detectar un valor incorrecto si el error es de tal\nmagnitud que el deslizamiento calculado es superior a 4 veces el\ndeslizamiento nominal del motor.\n· El codificador no se está utilizando, pero el parámetro 5002 ACTIVO\nENCODER = 1 (ACTIVAR).\n24\nSOBREVELOCIDAD\nLa velocidad del motor es superior al 120% del valor mayor (en magnitud)\nde 2001 VELOCIDAD MINIMA 0 2002 VELOCIDAD MAXIMA. Compruebe y corrija:\n· Los ajustes de parámetros para 2001 y 2002.\n· La idoneidad del par de frenado del motor.\n· La aplicabilidad del control del par.\n· El chopper de frenado y la resistencia.\n25\nRESERVADO\nNo se utiliza.\n26\nID UNIDAD\nFallo interno. El ID del convertidor del Bloque de configuración no es\nválido. Contacte con su representante local de ABB.\n27\nARCHIVO\nCONFIG\nEl archivo de configuración interna tiene un error. Contacte con su\nrepresentante local de ABB.\n28\nERR SERIE 1\nHa transcurrido el tiempo para la comunicación de bus de campo.\nCompruebe y corrija:\n· La configuración de fallos (3018 FUNC FALLO COMUN y 3019 TIEM FALLO\nCOMUN).\n· Los ajustes de comunicación (Grupo 51: MOD COMUNIC EXT o Grupo\n53: PROTOCOLO BCI según proceda).\n· Unas conexiones deficientes y/o ruido en la línea.\n29\nARCH CON BCI\nError en la lectura del archivo de configuración para el bus de campo encajado.\n30\nFORZAR\nDISPARO\nDisparo de fallo forzado por el bus de campo. Véase el Manual del usuario\ndel bus de campo.\n31\nBCI 1\nCódigo de fallo reservado para la aplicación del protocolo de bus de campo\nencajado (BCE). El significado depende del protocolo.\n32\nBCI 2\n33\nBCI 3\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código de fallo",
+            "Nombre del fallo en el panel",
+            "Descripción y acción correctora recomendada"
+          ],
+          [
+            "20",
+            "POT OPEX",
+            "Fallo interno. Tensión excepcionalmente baja detectada en la fuente de alimentación OINT. Contacte con su representante local de ABB."
+          ],
+          [
+            "21",
+            "MED INTENS",
+            "Fallo interno. La medición de intensidad se encuentra fuera de rango. Contacte con su representante local de ABB."
+          ],
+          [
+            "22",
+            "FASE RED",
+            "La tensión de rizado en el bus de CC es demasiado elevada. Compruebe y corrija: · Una fase de red ausente. · Un fusible fundido."
+          ],
+          [
+            "23",
+            "ENCODER",
+            "El convertidor no detecta una señal válida de codificador. Compruebe y corrija: · Presencia del codificador y conexión adecuada (conexión inversa = canal A conectado a la terminal del canal B o viceversa, conexión floja o cortocircuito). · Si los niveles lógicos de tensión se encuentran fuera del rango especificado. · La presencia de un módulo de interfase del generador de pulsos, OTAC- 01, funcional y bien conectado. · La introducción de un valor erróneo en el parámetro 5001 NUM PULSOS. Sólo será posible detectar un valor incorrecto si el error es de tal magnitud que el deslizamiento calculado es superior a 4 veces el deslizamiento nominal del motor. · El codificador no se está utilizando, pero el parámetro 5002 ACTIVO ENCODER = 1 (ACTIVAR)."
+          ],
+          [
+            "24",
+            "SOBREVELOCIDAD",
+            "La velocidad del motor es superior al 120% del valor mayor (en magnitud) de 2001 VELOCIDAD MINIMA 0 2002 VELOCIDAD MAXIMA. Compruebe y corrija: · Los ajustes de parámetros para 2001 y 2002. · La idoneidad del par de frenado del motor. · La aplicabilidad del control del par. · El chopper de frenado y la resistencia."
+          ],
+          [
+            "25",
+            "RESERVADO",
+            "No se utiliza."
+          ],
+          [
+            "26",
+            "ID UNIDAD",
+            "Fallo interno. El ID del convertidor del Bloque de configuración no es válido. Contacte con su representante local de ABB."
+          ],
+          [
+            "27",
+            "ARCHIVO CONFIG",
+            "El archivo de configuración interna tiene un error. Contacte con su representante local de ABB."
+          ],
+          [
+            "28",
+            "ERR SERIE 1",
+            "Ha transcurrido el tiempo para la comunicación de bus de campo. Compruebe y corrija: · La configuración de fallos (3018 FUNC FALLO COMUN y 3019 TIEM FALLO COMUN). · Los ajustes de comunicación (Grupo 51: MOD COMUNIC EXT o Grupo 53: PROTOCOLO BCI según proceda). · Unas conexiones deficientes y/o ruido en la línea."
+          ],
+          [
+            "29",
+            "ARCH CON BCI",
+            "Error en la lectura del archivo de configuración para el bus de campo encajado."
+          ],
+          [
+            "30",
+            "FORZAR DISPARO",
+            "Disparo de fallo forzado por el bus de campo. Véase el Manual del usuario del bus de campo."
+          ],
+          [
+            "31",
+            "BCI 1",
+            "Código de fallo reservado para la aplicación del protocolo de bus de campo encajado (BCE). El significado depende del protocolo."
+          ],
+          [
+            "32",
+            "BCI 2"
+          ],
+          [
+            "33",
+            "BCI 3"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "268\nManual del usuario del ACS550-01/U1\nCódigo\nde fallo\nNombre del\nfallo en el\npanel\nDescripción y acción correctora recomendada\n34\nFASE MOTOR\nFallo en el circuito del motor. Se ha perdido una de las fases del motor.\nCompruebe y corrija:\n· Un fallo del motor.\n· Un fallo del cable de motor.\n· Un fallo de relé térmico (si se utiliza).\n· Fallo interno.\n35\nCABLEADO SAL\nConexión incorrecta de la alimentación de entrada y del cable de motor (es\ndecir, el cable de alimentación está conectado al motor del convertidor). El\nfallo puede declararse de forma errónea si el convertidor es defectuoso o la\npotencia de entrada es una red con conexión a tierra en triángulo y la\ncapacitancia del cable de motor es alta.\nEste fallo puede desactivarse mediante el parámetro 3023 FALLO CABLE.\n· Compruebe las conexiones de la entrada de alimentación. Compruebe\nla conexión a tierra.\n36\nINCOMPATIBLE\nSW\nEl convertidor no puede utilizar el software.\n· Fallo interno.\n· El software cargado no es compatible con el convertidor.\n· Contacte con el representante de soporte.\n37\nSOBRETEMP CB\nLa tarjeta de control del convertidor se ha recalentado. El límite de disparo\npor fallo es de 88 ℃. Compruebe y corrija:\n· Una temperatura ambiente excesiva.\n· Un fallo del ventilador.\n· Obstrucciones a la circulación de aire.\nNo es aplicable a convertidores con una tarjeta de control OMIO.\n38\nCURVA CARGA\nUTIL\nEl estado definido por el parámetro 3701 CARGA USUA MOD C ha sido válido\ndurante más tiempo que el definido por 3703 CARG USUA TIEM C.\n101 ...\n199\nERROR DE\nSISTEMA\nError interno del convertidor. Contacte con su representante local de ABB y\ncomunique el número de error.\n201 ...\n299\nERROR DE\nSISTEMA\nError en el sistema. Contacte con su representante local de ABB y\ncomunique el número de error.\n-\nTIPO\nDESCONOCIDO:\nACS550\nUNIDADES\nSOPORTADAS: X\nUn tipo de panel incorrecto, es decir, un panel compatible con el\nconvertidor X pero no con el ACS550, se ha conectado al ACS550.\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código de fallo",
+            "Nombre del fallo en el panel",
+            "Descripción y acción correctora recomendada"
+          ],
+          [
+            "34",
+            "FASE MOTOR",
+            "Fallo en el circuito del motor. Se ha perdido una de las fases del motor. Compruebe y corrija: · Un fallo del motor. · Un fallo del cable de motor. · Un fallo de relé térmico (si se utiliza). · Fallo interno."
+          ],
+          [
+            "35",
+            "CABLEADO SAL",
+            "Conexión incorrecta de la alimentación de entrada y del cable de motor (es decir, el cable de alimentación está conectado al motor del convertidor). El fallo puede declararse de forma errónea si el convertidor es defectuoso o la potencia de entrada es una red con conexión a tierra en triángulo y la capacitancia del cable de motor es alta. Este fallo puede desactivarse mediante el parámetro 3023 FALLO CABLE. · Compruebe las conexiones de la entrada de alimentación. Compruebe la conexión a tierra."
+          ],
+          [
+            "36",
+            "INCOMPATIBLE SW",
+            "El convertidor no puede utilizar el software. · Fallo interno. · El software cargado no es compatible con el convertidor. · Contacte con el representante de soporte."
+          ],
+          [
+            "37",
+            "SOBRETEMP CB",
+            "La tarjeta de control del convertidor se ha recalentado. El límite de disparo por fallo es de 88 ℃. Compruebe y corrija: · Una temperatura ambiente excesiva. · Un fallo del ventilador. · Obstrucciones a la circulación de aire. No es aplicable a convertidores con una tarjeta de control OMIO."
+          ],
+          [
+            "38",
+            "CURVA CARGA UTIL",
+            "El estado definido por el parámetro 3701 CARGA USUA MOD C ha sido válido durante más tiempo que el definido por 3703 CARG USUA TIEM C."
+          ],
+          [
+            "101 ... 199",
+            "ERROR DE SISTEMA",
+            "Error interno del convertidor. Contacte con su representante local de ABB y comunique el número de error."
+          ],
+          [
+            "201 ... 299",
+            "ERROR DE SISTEMA",
+            "Error en el sistema. Contacte con su representante local de ABB y comunique el número de error."
+          ],
+          [
+            "-",
+            "TIPO DESCONOCIDO: ACS550 UNIDADES SOPORTADAS: X",
+            "Un tipo de panel incorrecto, es decir, un panel compatible con el convertidor X pero no con el ACS550, se ha conectado al ACS550."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Manual del usuario del ACS550-01/U1\n269\nA continuación se muestran los fallos que indican conflictos en los ajustes de\nparámetros.\nCódigo\nde fallo\nNombre del\nfallo en el\npanel\nDescripción y acción correctora recomendada\n1000\nPAR HZRPM\nLos valores de parámetro son incoherentes. Compruebe cualquiera de\nlos elementos siguientes:\n· 2001 VELOCIDAD MINIMA> 2002 VELOCIDAD MAXIMA.\n· 2007 FRECUENCIA MIN> 2008 FRECUENCIA MAX.\n· 2001 VELOCIDAD MINIMA / 9908 VELOC NOM MOTOR está fuera del rango\ncorrecto (> 50).\n· 2002 VELOCIDAD MAXIMA / 9908 VELOC NOM MOTOR está fuera del rango\ncorrecto (> 50).\n· 2007 FRECUENCIA MIN / 9907 FREC NOM MOTOR está fuera del rango\ncorrecto (> 50).\n· 2008 FRECUENCIA MAX / 9907 FREC NOM MOTOR está fuera del rango\ncorrecto (> 50).\n1001\nPAR REFNGPFC\nLos valores de parámetro son incoherentes. Compruebe lo siguiente:\n· 2007 FRECUENCIA MIN es negativo, cuando 8123 ACTIVAR PFC está activo.\n1002\nRESERVADO\nNo se utiliza.\n1003\nPAR ESCAL EA\nLos valores de parámetro son incoherentes. Compruebe cualquiera de\nlos elementos siguientes:\n· 1301 MINIMO EA1 > 1302 MAXIMO EA1.\n· 1304 MINIMO EA2 > 1305 MAXIMO EA2.\n1004\nPAR ESCAL SA\nLos valores de parámetro son incoherentes. Compruebe cualquiera de\nlos elementos siguientes:\n· 1504 MINIMO SA1 > 1505 MAXIMO SA1.\n· 1510 MINIMO SA2 > 1511 MAXIMO SA2.\n1005\nPAR PCU 2\nLos valores de parámetro para el control de potencia son incoherentes:\nkVA nominales del motor o potencia nominal del motor inadecuados.\nCompruebe lo siguiente:\n· 1.1 ≤ (9906 INTENS NOM MOTOR . 9905 TENSION NOM MOTOR · 1,73 / PN) ≤ 3,0\ndonde: PN = 1000 · 9909 POT NOM MOTOR (si se usa kW como unidades)\n0 PN = 746 . 9909 POT NOM MOTOR (si las unidades son CV, p. ej. en EE.UU.).\n1006\nPAR SR EXT\nLos valores de parámetro son incoherentes. Compruebe lo siguiente:\n· Módulo de relé de ampliación desconectado y\n· 1410 ... 1412 SALIDAS RELÉ 4 ... 6 tienen valores distintos de cero.\n1007\nPAR BUS C\nLos valores de parámetro son incoherentes. Compruebe y corrija:\n· Se ha ajustado un parámetro para el control de bus de campo (p.ej.\n1001 COMANDOS EXT1 = 10 (COMUNIC)), pero 9802 SEL PROT COM = 0.\n1008\nPAR MODO PFC\nLos valores de parámetro son incoherentes: MODO CTRL MOTOR debe ser\n= 3 (ESCALAR:FREC), cuando 8123 ACTIVAR PFC está activado.\n1009\nPAR PCU 1\nLos valores de parámetro para el control de potencia son incoherentes:\nVelocidad o frecuencia nominal del motor inadecuadas. Compruebe los\ndos elementos siguientes:\n· 1 ≤ (60 . 9907 FREC NOM MOTOR / 9908 VELOC NOM MOTOR ≤ 16\n· 0.8 ≤ 9908 VELOC NOM MOTOR /\n(120 · 9907 FREC NOM MOTOR / polos del motor) ≤ 0,992.\n1010/\n1011\nRESERVADO\nNo se utiliza.\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código de fallo",
+            "Nombre del fallo en el panel",
+            "Descripción y acción correctora recomendada"
+          ],
+          [
+            "1000",
+            "PAR HZRPM",
+            "Los valores de parámetro son incoherentes. Compruebe cualquiera de los elementos siguientes: · 2001 VELOCIDAD MINIMA> 2002 VELOCIDAD MAXIMA. · 2007 FRECUENCIA MIN> 2008 FRECUENCIA MAX."
+          ],
+          [
+            "· 2001 VELOCIDAD MINIMA / 9908 VELOC NOM MOTOR está fuera del rango correcto (> 50)."
+          ],
+          [
+            "· 2002 VELOCIDAD MAXIMA / 9908 VELOC NOM MOTOR está fuera del rango correcto (> 50)."
+          ],
+          [
+            "· 2007 FRECUENCIA MIN / 9907 FREC NOM MOTOR está fuera del rango correcto (> 50)."
+          ],
+          [
+            "· 2008 FRECUENCIA MAX / 9907 FREC NOM MOTOR está fuera del rango correcto (> 50)."
+          ],
+          [
+            "1001",
+            "PAR REFNGPFC",
+            "Los valores de parámetro son incoherentes. Compruebe lo siguiente: · 2007 FRECUENCIA MIN es negativo, cuando 8123 ACTIVAR PFC está activo."
+          ],
+          [
+            "1002",
+            "RESERVADO",
+            "No se utiliza."
+          ],
+          [
+            "1003",
+            "PAR ESCAL EA",
+            "Los valores de parámetro son incoherentes. Compruebe cualquiera de los elementos siguientes: · 1301 MINIMO EA1 > 1302 MAXIMO EA1. · 1304 MINIMO EA2 > 1305 MAXIMO EA2."
+          ],
+          [
+            "1004",
+            "PAR ESCAL SA",
+            "Los valores de parámetro son incoherentes. Compruebe cualquiera de los elementos siguientes: · 1504 MINIMO SA1 > 1505 MAXIMO SA1. · 1510 MINIMO SA2 > 1511 MAXIMO SA2."
+          ],
+          [
+            "1005",
+            "PAR PCU 2",
+            "Los valores de parámetro para el control de potencia son incoherentes: kVA nominales del motor o potencia nominal del motor inadecuados. Compruebe lo siguiente: · 1.1 ≤ (9906 INTENS NOM MOTOR . 9905 TENSION NOM MOTOR · 1,73 / PN) ≤ 3,0 donde: PN = 1000 · 9909 POT NOM MOTOR (si se usa kW como unidades) 0 PN = 746 . 9909 POT NOM MOTOR (si las unidades son CV, p. ej. en EE.UU.)."
+          ],
+          [
+            "1006",
+            "PAR SR EXT",
+            "Los valores de parámetro son incoherentes. Compruebe lo siguiente: · Módulo de relé de ampliación desconectado y · 1410 ... 1412 SALIDAS RELÉ 4 ... 6 tienen valores distintos de cero."
+          ],
+          [
+            "1007",
+            "PAR BUS C",
+            "Los valores de parámetro son incoherentes. Compruebe y corrija: · Se ha ajustado un parámetro para el control de bus de campo (p.ej. 1001 COMANDOS EXT1 = 10 (COMUNIC)), pero 9802 SEL PROT COM = 0."
+          ],
+          [
+            "1008",
+            "PAR MODO PFC",
+            "Los valores de parámetro son incoherentes: MODO CTRL MOTOR debe ser = 3 (ESCALAR:FREC), cuando 8123 ACTIVAR PFC está activado."
+          ],
+          [
+            "1009",
+            "PAR PCU 1",
+            "Los valores de parámetro para el control de potencia son incoherentes: Velocidad o frecuencia nominal del motor inadecuadas. Compruebe los dos elementos siguientes: · 1 ≤ (60 . 9907 FREC NOM MOTOR / 9908 VELOC NOM MOTOR ≤ 16 · 0.8 ≤ 9908 VELOC NOM MOTOR / (120 · 9907 FREC NOM MOTOR / polos del motor) ≤ 0,992."
+          ],
+          [
+            "1010/ 1011",
+            "RESERVADO",
+            "No se utiliza."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "270\nManual del usuario del ACS550-01/U1\nCódigo\nde fallo\nNombre del\nfallo en el\npanel\nDescripción y acción correctora recomendada\n1012\nPAR PFC ES 1\nLa configuración de E/S no está completa - no se han parametrizado\nsuficientes relés a PFC. O bien existe un conflicto entre el Grupo 14:\nSALIDAS DE RELE, parámetro 8117 NUM DE MOT AUX y el parámetro\n8118 INTERV AUTOCAMB.\n1013\nPAR PFC ES 2\nLa configuración de E/S no está completa - el número real de motores PFC\n(parámetro 8127, MOTORES) no concuerda con los motores PFC en el Grupo\n14: SALIDAS DE RELE y en el parámetro 8118 INTERV AUTOCAMB.\n1014\nPAR PFC ES 3\nLa configuración de E/S no está completa - el convertidor no puede\nasignar una entrada digital (enclavamiento) para cada motor PFC\n(parámetros 8120 ENCLAVAMIENTOS y 8127 MOTORES).\n1015\nRESERVADO\nNo se utiliza.\n1016\nPAR USER LOAD C\nLos valores de parámetro para la curva de carga del usuario son\nincoherentes. Compruebe que se cumplan las siguientes condiciones:\n. 3704 CARGA FREC 1 ≤ 3707 CARGA FREC 2 ≤ 3710 CARGA FREC 3 ≤\n3713 CARGA FREC 4 ≤ 3716 CARGA FREC 5.\n. 3705 CARGA BAJO PAR 1 ≤ 3706 CARGA BAJO PAR 1.\n. 3708 CARGA BAJO PAR 2 < 3709 CARGA BAJO PAR 2.\n. 3711 CARGA BAJO PAR 3 < 3712 CARGA BAJO PAR 3.\n. 3714 CARGA BAJO PAR 4 < 3715 CARGA BAJO PAR 4.\n· 3717 CARGA BAJO PAR 5 ≤ 3718 CARGA BAJO PAR 5.\nRestauración de fallos\nEl ACS550 puede configurarse para la restauración automática de ciertos fallos.\nVéase el parámetro Grupo 31: REARME AUTOMATIC.\nADVERTENCIA: si se selecciona una fuente externa para el comando de marcha y está\nactivo, el ACS550 podría ponerse en marcha de forma inmediata tras restaurarse el fallo.\nLED rojo parpadeante\nPara restaurar el convertidor en caso de fallos indicados con un LED rojo destellante:\n· Desconecte la alimentación durante 5 minutos.\nLED rojo\nPara restaurar el convertidor en caso de fallos indicados con un LED rojo (fijo, no\ndestellante), corrija el problema y adopte una de las acciones siguientes:\n· Pulse RESET desde el panel de control.\n· Desconecte la alimentación durante 5 minutos.\nEn función del valor de 1604 SEL REST FALLO, también podría utilizarse lo siguiente\npara restaurar el convertidor:\n· entrada digital\n· comunicación serie.\nCuando se haya corregido el fallo, podrá arrancar el motor.\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código de fallo",
+            "Nombre del fallo en el panel",
+            "Descripción y acción correctora recomendada"
+          ],
+          [
+            "1012",
+            "PAR PFC ES 1",
+            "La configuración de E/S no está completa - no se han parametrizado suficientes relés a PFC. O bien existe un conflicto entre el Grupo 14: SALIDAS DE RELE, parámetro 8117 NUM DE MOT AUX y el parámetro 8118 INTERV AUTOCAMB."
+          ],
+          [
+            "1013",
+            "PAR PFC ES 2",
+            "La configuración de E/S no está completa - el número real de motores PFC (parámetro 8127, MOTORES) no concuerda con los motores PFC en el Grupo 14: SALIDAS DE RELE y en el parámetro 8118 INTERV AUTOCAMB."
+          ],
+          [
+            "1014",
+            "PAR PFC ES 3",
+            "La configuración de E/S no está completa - el convertidor no puede asignar una entrada digital (enclavamiento) para cada motor PFC (parámetros 8120 ENCLAVAMIENTOS y 8127 MOTORES)."
+          ],
+          [
+            "1015",
+            "RESERVADO",
+            "No se utiliza."
+          ],
+          [
+            "1016",
+            "PAR USER LOAD C",
+            "Los valores de parámetro para la curva de carga del usuario son incoherentes. Compruebe que se cumplan las siguientes condiciones: . 3704 CARGA FREC 1 ≤ 3707 CARGA FREC 2 ≤ 3710 CARGA FREC 3 ≤ 3713 CARGA FREC 4 ≤ 3716 CARGA FREC 5. . 3705 CARGA BAJO PAR 1 ≤ 3706 CARGA BAJO PAR 1. . 3708 CARGA BAJO PAR 2 < 3709 CARGA BAJO PAR 2. . 3711 CARGA BAJO PAR 3 < 3712 CARGA BAJO PAR 3. . 3714 CARGA BAJO PAR 4 < 3715 CARGA BAJO PAR 4. · 3717 CARGA BAJO PAR 5 ≤ 3718 CARGA BAJO PAR 5."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Manual del usuario del ACS550-01/U1\n271\nHistorial\nA efectos de referencia, los tres últimos códigos de fallo se guardan en los\nparámetros 0401, 0402, 0413. Para el fallo más reciente (identificado por el\nparámetro 0401), el convertidor guarda datos adicionales (en los parámetros\n0402 ... 0411) para contribuir a la solución de un problema. Por ejemplo, el parámetro\n0404 guarda la velocidad del motor en el momento del fallo.\nEl Panel de control asistente proporciona información adicional acerca del historial\nde fallos. Véase la sección Modo de Registrador de fallos. en la página 65 para\nobtener más información.\nPara borrar el historial de fallos (la totalidad de los parámetros del Grupo 04:\nHISTORIAL FALLOS):\n1. Mediante el panel de control en modo de Parámetros, seleccione el parámetro 0401.\n2. Pulse EDITAR (o ENTER en el Panel de control básico).\n3. Pulse ARRIBA y ABAJO a la vez.\n4. Pulse GUARDAR.\nCorrección de alarmas\nLa acción correctora recomendada para alarmas es la siguiente:\n· Determine si la alarma requiere una acción correctora (no siempre se requiere\nuna acción).\n· Utilice la tabla del apartado Listado de alarmas a continuación para hallar y\nsolucionar la causa de origen del problema.\nListado de alarmas\nLa tabla siguiente detalla las alarmas por número de código y describe cada una de ellas.\nCódigo\nde\nalarma\nPantalla\nDescripción\n2001\nSOBREINTENSIDAD\nRegulador limitador de intensidad activo. Compruebe y corrija:\n· Una carga excesiva del motor.\n· Un tiempo de aceleración insuficiente (parámetros 2202 TIEMPO\nACELER 1 y 2205 TIEMPO ACELER 2).\n· Motor, conexiones o cables de motor defectuosos.\n2002\nSOBRETENSION\nControlador de sobretensión activo. Compruebe y corrija:\n· Sobretensiones estáticas o de oscilación en la fuente de\nalimentación de entrada.\n· Un tiempo de deceleración insuficiente (parámetros 2203 TIEMPO\nDESAC 1 y 2206 TIEMPO DESAC 2).\n2003\nSUBTENSION\nControlador de subtensión activo. Compruebe y corrija:\n· Subtensión en la red.\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código de alarma",
+            "Pantalla",
+            "Descripción"
+          ],
+          [
+            "2001",
+            "SOBREINTENSIDAD",
+            "Regulador limitador de intensidad activo. Compruebe y corrija: · Una carga excesiva del motor."
+          ],
+          [
+            "· Un tiempo de aceleración insuficiente (parámetros 2202 TIEMPO ACELER 1 y 2205 TIEMPO ACELER 2). · Motor, conexiones o cables de motor defectuosos."
+          ],
+          [
+            "2002",
+            "SOBRETENSION",
+            "Controlador de sobretensión activo. Compruebe y corrija: · Sobretensiones estáticas o de oscilación en la fuente de alimentación de entrada."
+          ],
+          [
+            "· Un tiempo de deceleración insuficiente (parámetros 2203 TIEMPO DESAC 1 y 2206 TIEMPO DESAC 2)."
+          ],
+          [
+            "2003",
+            "SUBTENSION",
+            "Controlador de subtensión activo. Compruebe y corrija: · Subtensión en la red."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "272\nManual del usuario del ACS550-01/U1\nCódigo\nde\nalarma\nPantalla\nDescripción\n2004\nBLOQUEO DE\nDIRECCIÓN\nNo se permite el cambio de dirección que se desea. Adopte una de\nestas acciones:\n· No intente cambiar la dirección del giro del motor, o\n· Cambie el parámetro 1003 DIRECCION para permitir el cambio de\ndirección (si el funcionamiento en inversión es seguro).\n2005\nCOMUNICACIÓN\nES\nHa transcurrido el tiempo para la comunicación de bus de campo.\nCompruebe y corrija:\n· La configuración de fallos (3018 FUNC FALLO COMUN y 3019 TIEM\nFALLO COMUN).\n· Los ajustes de comunicación (Grupo 51: MOD COMUNIC EXT o\nGrupo 53: PROTOCOLO BCI según proceda).\n· Unas conexiones deficientes y/o ruido en la línea.\n2006\nFALLO EA1\nSe ha perdido la entrada analógica 1, o el valor es inferior al ajuste\nmínimo. Compruebe:\n· La fuente de entrada y las conexiones.\n· El parámetro que ajusta el mínimo (3021).\n· El parámetro que ajusta el funcionamiento de la alarma/fallo (3001).\n2007\nFALLO EA2\nSe ha perdido la entrada analógica 2, o el valor es inferior al ajuste\nmínimo. Compruebe:\n· La fuente de entrada y las conexiones.\n· El parámetro que ajusta el mínimo (3022).\n· El parámetro que ajusta el funcionamiento de la alarma/fallo (3001).\n2008\nPÉRDIDA DE\nPANEL\nSe ha perdido la comunicación del panel y:\n· El convertidor está en modo de control local (aparece LOC en el\npanel de control), o bien\n· El convertidor está en modo de control remoto (REM) y está\nparametrizado para aceptar una marcha/paro, dirección o\nreferencia desde el panel de control.\nPara corregirlo, compruebe:\n· Las líneas y conexiones de comunicación.\n· Parámetro 3002 ERROR COM PANEL.\n· Los parámetros en el Grupo 10: MARCHA/PARO/DIR y el Grupo 11:\nSELEC REFERENCIA (si el funcionamiento del convertidor es REM).\n2009\nEXCESO TEMP\nDISP\nEl disipador del convertidor se ha recalentado. Esta alarma advierte\nde que puede ser inminente un fallo EXCESO TEMP DISP.\nR1 ... R4: 100 ℃ (212 °F)\nR5, R6: 110 ℃ (230 °F)\nCompruebe y corrija:\n· Un fallo del ventilador.\n· Obstrucciones a la circulación de aire.\n· Una capa de suciedad o polvo sobre el disipador.\n· Una temperatura ambiente excesiva.\n· Una carga excesiva del motor.\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código de alarma",
+            "Pantalla",
+            "Descripción"
+          ],
+          [
+            "2004",
+            "BLOQUEO DE DIRECCIÓN",
+            "No se permite el cambio de dirección que se desea. Adopte una de estas acciones:"
+          ],
+          [
+            "· No intente cambiar la dirección del giro del motor, o"
+          ],
+          [
+            "· Cambie el parámetro 1003 DIRECCION para permitir el cambio de dirección (si el funcionamiento en inversión es seguro)."
+          ],
+          [
+            "2005",
+            "COMUNICACIÓN ES",
+            "Ha transcurrido el tiempo para la comunicación de bus de campo. Compruebe y corrija:"
+          ],
+          [
+            "· La configuración de fallos (3018 FUNC FALLO COMUN y 3019 TIEM FALLO COMUN)."
+          ],
+          [
+            "· Los ajustes de comunicación (Grupo 51: MOD COMUNIC EXT o Grupo 53: PROTOCOLO BCI según proceda)."
+          ],
+          [
+            "· Unas conexiones deficientes y/o ruido en la línea."
+          ],
+          [
+            "2006",
+            "FALLO EA1",
+            "Se ha perdido la entrada analógica 1, o el valor es inferior al ajuste mínimo. Compruebe: · La fuente de entrada y las conexiones."
+          ],
+          [
+            "· El parámetro que ajusta el mínimo (3021)."
+          ],
+          [
+            "· El parámetro que ajusta el funcionamiento de la alarma/fallo (3001)."
+          ],
+          [
+            "2007",
+            "FALLO EA2",
+            "Se ha perdido la entrada analógica 2, o el valor es inferior al ajuste mínimo. Compruebe: · La fuente de entrada y las conexiones."
+          ],
+          [
+            "· El parámetro que ajusta el mínimo (3022)."
+          ],
+          [
+            "· El parámetro que ajusta el funcionamiento de la alarma/fallo (3001)."
+          ],
+          [
+            "2008",
+            "PÉRDIDA DE PANEL",
+            "Se ha perdido la comunicación del panel y:"
+          ],
+          [
+            "· El convertidor está en modo de control local (aparece LOC en el panel de control), o bien"
+          ],
+          [
+            "· El convertidor está en modo de control remoto (REM) y está parametrizado para aceptar una marcha/paro, dirección o referencia desde el panel de control."
+          ],
+          [
+            "Para corregirlo, compruebe:"
+          ],
+          [
+            "· Las líneas y conexiones de comunicación."
+          ],
+          [
+            "· Parámetro 3002 ERROR COM PANEL."
+          ],
+          [
+            "· Los parámetros en el Grupo 10: MARCHA/PARO/DIR y el Grupo 11: SELEC REFERENCIA (si el funcionamiento del convertidor es REM)."
+          ],
+          [
+            "2009",
+            "EXCESO TEMP DISP",
+            "El disipador del convertidor se ha recalentado. Esta alarma advierte de que puede ser inminente un fallo EXCESO TEMP DISP. R1 ... R4: 100 ℃ (212 °F) R5, R6: 110 ℃ (230 °F)"
+          ],
+          [
+            "Compruebe y corrija: · Un fallo del ventilador."
+          ],
+          [
+            "· Obstrucciones a la circulación de aire."
+          ],
+          [
+            "· Una capa de suciedad o polvo sobre el disipador. · Una temperatura ambiente excesiva."
+          ],
+          [
+            "· Una carga excesiva del motor."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Manual del usuario del ACS550-01/U1\n273\nCódigo\nde\nalarma\nPantalla\nDescripción\n2010\nTEMP MOTOR\nEl motor está caliente, sobre la base de la estimación efectuada por el\nconvertidor o de la realimentación de temperatura. Esta alarma advierte\nde que puede ser inminente un fallo TEMP MOTOR. Compruebe:\n· Compruebe si el motor está sobrecargado.\n· Ajuste los parámetros utilizados para la estimación (3005 ... 3009).\n· Compruebe los sensores de temperatura y el Grupo 35: TEMP\nMOT MED.\n2011\nRESERVADO\nNo se utiliza.\n2012\nMOTOR\nBLOQUEDAO\nEl motor funciona en la región de bloqueo. Esta alarma advierte de\nque puede ser inminente un disparo de fallo por MOTOR BLOQUEADO.\n2013\n(nota 1)\nREARME\nAUTOMÁTICO\nEsta alarma advierte de que el convertidor está a punto de llevar a cabo\nuna restauración de fallos automática, que podría arrancar el motor.\n· Para controlar el rearme automático, utilice el Grupo 31: REARME\nAUTOMATIC.\n2014\n(nota 1)\nAUTOCAMBIO\nEsta alarma advierte de que la función de autocambio PFC está activa.\n· Para controlar PFC, utilice el Grupo 81: CONTROL PFC y el Macro\nPFC en la página 88.\n2015\nBLOQUEO PFC I\nEsta alarma advierte de que están activos los enclavamientos PFC, lo que\nsignifica que el convertidor no puede arrancar los elementos siguientes:\n· Cualquier motor (al utilizar Autocambio).\n· El motor regulado por velocidad (cuando no se utiliza Autocambio).\n2016/\n2017\nRESERVADO\nNo se utiliza.\n2018\n(nota 1)\nDORMIR PID\nEsta alarma advierte de que la función dormir PID está activa, lo que\nsignifica que el motor podría acelerar al finalizar la función dormir PID.\n· Para controlar la función dormir PID, utilice los parámetros\n4022 ... 4026 o 4122 ... 4126.\n2019\nMARCHA ID\nRealizando Marcha ID.\n2020\nRESERVADO\nNo se utiliza.\n2021\nPERMISO DE\nINICIO 1 NO\nDETECTADO\nEsta alarma advierte de la ausencia de la señal de Permiso de inicio 1.\n· Para controlar la función de Permiso de inicio 1, utilice el parámetro 1608.\nPara corregirlo, compruebe:\n· Configuración de la entrada digital.\n· Ajustes de comunicación.\n2022\nPERMISO DE\nINICIO 2 NO\nDETECTADO\nEsta alarma advierte de la ausencia de la señal de Permiso de inicio 2.\n· Para controlar la función de Permiso de inicio 2, utilice el parámetro 1609.\nPara corregirlo, compruebe:\n· Configuración de la entrada digital.\n· Ajustes de comunicación.\n2023\nSTOP\nEMERGENCIA\nParo de emergencia activado.\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código de alarma",
+            "Pantalla",
+            "Descripción"
+          ],
+          [
+            "2010",
+            "TEMP MOTOR",
+            "El motor está caliente, sobre la base de la estimación efectuada por el convertidor o de la realimentación de temperatura. Esta alarma advierte de que puede ser inminente un fallo TEMP MOTOR. Compruebe: · Compruebe si el motor está sobrecargado. · Ajuste los parámetros utilizados para la estimación (3005 ... 3009). · Compruebe los sensores de temperatura y el Grupo 35: TEMP MOT MED."
+          ],
+          [
+            "2011",
+            "RESERVADO",
+            "No se utiliza."
+          ],
+          [
+            "2012",
+            "MOTOR BLOQUEDAO",
+            "El motor funciona en la región de bloqueo. Esta alarma advierte de que puede ser inminente un disparo de fallo por MOTOR BLOQUEADO."
+          ],
+          [
+            "2013 (nota 1)",
+            "REARME AUTOMÁTICO",
+            "Esta alarma advierte de que el convertidor está a punto de llevar a cabo una restauración de fallos automática, que podría arrancar el motor. · Para controlar el rearme automático, utilice el Grupo 31: REARME AUTOMATIC."
+          ],
+          [
+            "2014 (nota 1)",
+            "AUTOCAMBIO",
+            "Esta alarma advierte de que la función de autocambio PFC está activa. · Para controlar PFC, utilice el Grupo 81: CONTROL PFC y el Macro PFC en la página 88."
+          ],
+          [
+            "2015",
+            "BLOQUEO PFC I",
+            "Esta alarma advierte de que están activos los enclavamientos PFC, lo que significa que el convertidor no puede arrancar los elementos siguientes: · Cualquier motor (al utilizar Autocambio). · El motor regulado por velocidad (cuando no se utiliza Autocambio)."
+          ],
+          [
+            "2016/ 2017",
+            "RESERVADO",
+            "No se utiliza."
+          ],
+          [
+            "2018 (nota 1)",
+            "DORMIR PID",
+            "Esta alarma advierte de que la función dormir PID está activa, lo que significa que el motor podría acelerar al finalizar la función dormir PID. · Para controlar la función dormir PID, utilice los parámetros 4022 ... 4026 o 4122 ... 4126."
+          ],
+          [
+            "2019",
+            "MARCHA ID",
+            "Realizando Marcha ID."
+          ],
+          [
+            "2020",
+            "RESERVADO",
+            "No se utiliza."
+          ],
+          [
+            "2021",
+            "PERMISO DE INICIO 1 NO DETECTADO",
+            "Esta alarma advierte de la ausencia de la señal de Permiso de inicio 1. · Para controlar la función de Permiso de inicio 1, utilice el parámetro 1608. Para corregirlo, compruebe: · Configuración de la entrada digital. · Ajustes de comunicación."
+          ],
+          [
+            "2022",
+            "PERMISO DE INICIO 2 NO DETECTADO",
+            "Esta alarma advierte de la ausencia de la señal de Permiso de inicio 2. · Para controlar la función de Permiso de inicio 2, utilice el parámetro 1609. Para corregirlo, compruebe: · Configuración de la entrada digital. · Ajustes de comunicación."
+          ],
+          [
+            "2023",
+            "STOP EMERGENCIA",
+            "Paro de emergencia activado."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "274\nManual del usuario del ACS550-01/U1\nCódigo\nde\nalarma\nPantalla\nDescripción\n2024\nERROR ENCODER\nEl convertidor no detecta una señal válida de codificador. Compruebe\ny corrija:\n· La presencia y la conexión correcta del codificador (una conexión\neléctrica inversa, una conexión floja o un cortocircuito).\n· Si los niveles lógicos de tensión se encuentran fuera del rango\nespecificado.\n· La presencia de un módulo de interfase del generador de pulsos,\nOTAC-01, funcional y bien conectado.\n· La introducción de un valor erróneo en el parámetro 5001 NUM\nPULSOS. Sólo será posible detectar un valor incorrecto si el error es\nde tal magnitud que el deslizamiento calculado es superior a 4\nveces el deslizamiento nominal del motor.\n· El codificador no se está utilizando, pero el parámetro 5002 ACTIVO\nENCODER = 1 (ACTIVAR).\n2025\nPRIMERA MARCHA\nIndica que el convertidor está realizando una evaluación de Primer\narranque de las características del motor. Esto es normal la primera\nvez que funciona el motor tras introducir o modificar los parámetros\ndel mismo. Véase el parámetro 9910 MARCHA ID para obtener una\ndescripción de los modelos de motor.\n2026\nRESERVADO\nNo se utiliza.\n2027\nCURVA CARGA\nUTIL\nEsta alarma advierte de que el estado definido por el parámetro\n3701 CARGA USUA MOD C ha sido válido durante más de la mitad del\ntiempo definido por 3703 CARG USUA TIEM C.\n2028\nRETRASO\nARRANQUE\nSe muestra durante la demora de arranque. Véase el parámetro 2113\nINICIO RETARDO.\nNota 1. Incluso cuando la salida de relé está configurada para indicar estados de alarma (por\nejemplo, el parámetro 1401 SALIDA RELÉ 1 = 5 (ALARMA) or 16 (FALLO/ALARMA)), esta alarma\nno se indica a través de una salida de relé.\nCódigos de alarma (Panel de control básico)\nEl Panel de control básico indica las alarmas del panel de control mediante un\ncódigo, A5xxx. La tabla siguiente detalla los códigos de alarma y sus descripciones.\nCódigo\nDescripción\n5001\nLa unidad no responde.\n5002\nEl perfil de comunicación es incompatible con el convertidor.\n5010\nEl archivo de copia de seguridad de parámetros del panel está corrupto.\n5011\nEl convertidor se controla desde otro origen.\n5012\nDirección de giro bloqueada.\n5013\nBotón inhabilitado porque se ha inhibido la marcha.\n5014\nBotón inhabilitado porque hay un fallo en el convertidor.\n5015\nBotón inhabilitado porque el bloqueo del modo local está activado.\n5018\nNo puede encontrarse el valor por defecto del parámetro.\n5019\nEstá prohibido escribir un valor distinto de cero (sólo puede escribirse un\nvalor cero).\n5020\nEl grupo o parámetro no existe o el valor de parámetro es incoherente.\n5021\nEl grupo o parámetro está oculto.\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código de alarma",
+            "Pantalla",
+            "Descripción"
+          ],
+          [
+            "2024",
+            "ERROR ENCODER",
+            "El convertidor no detecta una señal válida de codificador. Compruebe y corrija: · La presencia y la conexión correcta del codificador (una conexión eléctrica inversa, una conexión floja o un cortocircuito). · Si los niveles lógicos de tensión se encuentran fuera del rango especificado."
+          ],
+          [
+            "· La presencia de un módulo de interfase del generador de pulsos, OTAC-01, funcional y bien conectado. · La introducción de un valor erróneo en el parámetro 5001 NUM PULSOS. Sólo será posible detectar un valor incorrecto si el error es de tal magnitud que el deslizamiento calculado es superior a 4 veces el deslizamiento nominal del motor. · El codificador no se está utilizando, pero el parámetro 5002 ACTIVO ENCODER = 1 (ACTIVAR)."
+          ],
+          [
+            "2025",
+            "PRIMERA MARCHA",
+            "Indica que el convertidor está realizando una evaluación de Primer arranque de las características del motor. Esto es normal la primera vez que funciona el motor tras introducir o modificar los parámetros del mismo. Véase el parámetro 9910 MARCHA ID para obtener una descripción de los modelos de motor."
+          ],
+          [
+            "2026",
+            "RESERVADO",
+            "No se utiliza."
+          ],
+          [
+            "2027",
+            "CURVA CARGA UTIL",
+            "Esta alarma advierte de que el estado definido por el parámetro 3701 CARGA USUA MOD C ha sido válido durante más de la mitad del tiempo definido por 3703 CARG USUA TIEM C."
+          ],
+          [
+            "2028",
+            "RETRASO ARRANQUE",
+            "Se muestra durante la demora de arranque. Véase el parámetro 2113 INICIO RETARDO."
+          ]
+        ],
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "5001",
+            "La unidad no responde."
+          ],
+          [
+            "5002",
+            "El perfil de comunicación es incompatible con el convertidor."
+          ],
+          [
+            "5010",
+            "El archivo de copia de seguridad de parámetros del panel está corrupto."
+          ],
+          [
+            "5011",
+            "El convertidor se controla desde otro origen."
+          ],
+          [
+            "5012",
+            "Dirección de giro bloqueada."
+          ],
+          [
+            "5013",
+            "Botón inhabilitado porque se ha inhibido la marcha."
+          ],
+          [
+            "5014",
+            "Botón inhabilitado porque hay un fallo en el convertidor."
+          ],
+          [
+            "5015",
+            "Botón inhabilitado porque el bloqueo del modo local está activado."
+          ],
+          [
+            "5018",
+            "No puede encontrarse el valor por defecto del parámetro."
+          ],
+          [
+            "5019",
+            "Está prohibido escribir un valor distinto de cero (sólo puede escribirse un valor cero)."
+          ],
+          [
+            "5020",
+            "El grupo o parámetro no existe o el valor de parámetro es incoherente."
+          ],
+          [
+            "5021",
+            "El grupo o parámetro está oculto."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Manual del usuario del ACS550-01/U1\n275\nCódigo\nDescripción\n5022\nEl grupo o parámetro está protegido contra escritura.\n5023\nLa modificación no se permite mientras el convertidor está en marcha.\n5024\nConvertidor ocupado, vuelva a intentarlo.\n5025\nNo se permite la escritura mientras se está realizando la carga o descarga.\n5026\nEl valor se encuentra en el límite bajo o por debajo de él.\n5027\nEl valor se encuentra en el límite alto o por encima de él.\n5028\nEl valor no es válido - no concuerda con ninguno de los valores en la lista de\nvalores discretos.\n5029\nLa memoria no está lista, vuelva a intentarlo.\n5030\nLa petición no es válida.\n5031\nEl convertidor no está listo, p. ej. debido a una baja tensión de CC.\n5032\nError de parámetro detectado.\n5040\nLa serie de parámetros seleccionada no puede encontrarse en la copia de\nseguridad de parámetros actual.\n5041\nLa copia de seguridad de parámetros no cabe en la memoria.\n5042\nLa serie de parámetros seleccionada no puede encontrarse en la copia de\nseguridad de parámetros actual.\n5043\nNo se ha otorgado inhibición de marcha.\n5044\nLas versiones de copia de seguridad de parámetros no concuerdan.\n5050\nSe interrumpió la carga de parámetros.\n5051\nError de archivo detectado.\n5052\nFallo en el intento de carga de parámetros.\n5060\nSe interrumpió la descarga de parámetros.\n5062\nFallo en el intento de descarga de parámetros.\n5070\nSe detectó un error de escritura en la memoria de copia de seguridad del\npanel.\n5071\nSe detectó un error de lectura en la memoria de copia de seguridad del panel.\n5080\nNo se permite el funcionamiento porque el convertidor no está en modo local.\n5081\nNo se permite el funcionamiento porque hay un fallo activo.\n5083\nNo se permite el funcionamiento porque el bloqueo de parámetros no está\nabierto.\n5084\nNo se permite el funcionamiento porque el convertidor está ocupado, vuelva\na intentarlo.\n5085\nNo se permite la descarga porque los tipos de convertidor son incompatibles.\n5086\nNo se permite la descarga porque los modelos de convertidor son incompatibles.\n5087\nNo se permite la descarga porque las series de parámetros no concuerdan.\n5088\nFallo de funcionamiento porque se detectó un error de la memoria del\nconvertidor.\n5089\nFallo de descarga porque se detectó un error CRC.\n5090\nFallo de descarga porque se detectó un error de proceso de datos.\n5091\nFallo de funcionamiento porque se detectó un error de parámetro.\n5092\nFallo de descarga porque las series de parámetros no concuerdan.\nDiagnósticos",
+      "tablas": [
+        [
+          [
+            "Código",
+            "Descripción"
+          ],
+          [
+            "5022",
+            "El grupo o parámetro está protegido contra escritura."
+          ],
+          [
+            "5023",
+            "La modificación no se permite mientras el convertidor está en marcha."
+          ],
+          [
+            "5024",
+            "Convertidor ocupado, vuelva a intentarlo."
+          ],
+          [
+            "5025",
+            "No se permite la escritura mientras se está realizando la carga o descarga."
+          ],
+          [
+            "5026",
+            "El valor se encuentra en el límite bajo o por debajo de él."
+          ],
+          [
+            "5027",
+            "El valor se encuentra en el límite alto o por encima de él."
+          ],
+          [
+            "5028",
+            "El valor no es válido - no concuerda con ninguno de los valores en la lista de valores discretos."
+          ],
+          [
+            "5029",
+            "La memoria no está lista, vuelva a intentarlo."
+          ],
+          [
+            "5030",
+            "La petición no es válida."
+          ],
+          [
+            "5031",
+            "El convertidor no está listo, p. ej. debido a una baja tensión de CC."
+          ],
+          [
+            "5032",
+            "Error de parámetro detectado."
+          ],
+          [
+            "5040",
+            "La serie de parámetros seleccionada no puede encontrarse en la copia de seguridad de parámetros actual."
+          ],
+          [
+            "5041",
+            "La copia de seguridad de parámetros no cabe en la memoria."
+          ],
+          [
+            "5042",
+            "La serie de parámetros seleccionada no puede encontrarse en la copia de seguridad de parámetros actual."
+          ],
+          [
+            "5043",
+            "No se ha otorgado inhibición de marcha."
+          ],
+          [
+            "5044",
+            "Las versiones de copia de seguridad de parámetros no concuerdan."
+          ],
+          [
+            "5050",
+            "Se interrumpió la carga de parámetros."
+          ],
+          [
+            "5051",
+            "Error de archivo detectado."
+          ],
+          [
+            "5052",
+            "Fallo en el intento de carga de parámetros."
+          ],
+          [
+            "5060",
+            "Se interrumpió la descarga de parámetros."
+          ],
+          [
+            "5062",
+            "Fallo en el intento de descarga de parámetros."
+          ],
+          [
+            "5070",
+            "Se detectó un error de escritura en la memoria de copia de seguridad del panel."
+          ],
+          [
+            "5071",
+            "Se detectó un error de lectura en la memoria de copia de seguridad del panel."
+          ],
+          [
+            "5080",
+            "No se permite el funcionamiento porque el convertidor no está en modo local."
+          ],
+          [
+            "5081",
+            "No se permite el funcionamiento porque hay un fallo activo."
+          ],
+          [
+            "5083",
+            "No se permite el funcionamiento porque el bloqueo de parámetros no está abierto."
+          ],
+          [
+            "5084",
+            "No se permite el funcionamiento porque el convertidor está ocupado, vuelva a intentarlo."
+          ],
+          [
+            "5085",
+            "No se permite la descarga porque los tipos de convertidor son incompatibles."
+          ],
+          [
+            "5086",
+            "No se permite la descarga porque los modelos de convertidor son incompatibles."
+          ],
+          [
+            "5087",
+            "No se permite la descarga porque las series de parámetros no concuerdan."
+          ],
+          [
+            "5088",
+            "Fallo de funcionamiento porque se detectó un error de la memoria del convertidor."
+          ],
+          [
+            "5089",
+            "Fallo de descarga porque se detectó un error CRC."
+          ],
+          [
+            "5090",
+            "Fallo de descarga porque se detectó un error de proceso de datos."
+          ],
+          [
+            "5091",
+            "Fallo de funcionamiento porque se detectó un error de parámetro."
+          ],
+          [
+            "5092",
+            "Fallo de descarga porque las series de parámetros no concuerdan."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "276\nManual del usuario del ACS550-01/U1\nDiagnósticos",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Manual del usuario del ACS550-01/U1\n277\nMantenimiento\nADVERTENCIA: lea el capítulo Instrucciones de seguridad en la página 5 antes de\nefectuar cualquier tipo de mantenimiento en el equipo. El incumplimiento de estas\ninstrucciones puede causar lesiones o la muerte.\n4\nIntervalos de mantenimiento\nSi se instala en un entorno apropiado, el convertidor de frecuencia requiere muy\npoco mantenimiento. En esta tabla se enumeran los intervalos de mantenimiento\nrutinario recomendados por ABB.\nMantenimiento\nIntervalo\nInstrucción\nComprobación de la temperatura\ny limpieza del disipador\nDepende de lo polvoriento que\nsea el entorno (cada 6 ... 12 meses)\nVéase Disipador en la página\n277.\nSustitución del ventilador de\nrefrigeración principal\nCada seis años\nVéase Sustitución del ventilador\nprincipal en la página 278.\nSustitución del ventilador de\nrefrigeración interno del armario\n(convertidores IP54 / UL tipo 12)\nCada tres años.\nVéase Sustitución del ventilador\ninterno del armario en la página\n280.\nReacondicionamiento de\ncondensadores\nCada año cuando se almacena\nVéase Reacondicionamiento en\nla página 281.\nSustitución de un condensador\n(bastidores R5 y R6)\nCada nueve años\nVéase Sustitución en la página\n281.\nSustitución de la pila en el\nPanel de control asistente\nCada diez años\nVéase Pila en la página 281.\nConsulte a su representante local de ABB para obtener más detalles acerca del\nmantenimiento. En Internet, visite www.abb.com/drive y seleccione Service -\nMaintenance.\nDisipador\nLas aletas del disipador acumulan polvo del aire de refrigeración. Puesto que un\ndisipador con polvo acumulado es menos eficaz al refrigerar el convertidor, es más\nprobable que se produzcan fallos por exceso de temperatura. En un entorno\n\"normal\" (sin polvo, sucio) el disipador debe comprobarse de forma anual, y en un\nentorno polvoriento con mayor frecuencia.\nLimpie el disipador de este modo (cuando se requiera):\n1. Desconecte la alimentación del convertidor.\n2. Extraiga el ventilador de refrigeración (véase el apartado Sustitución del ventilador\nprincipal en la página 278).\n3. Aplique aire comprimido limpio (no húmedo) de abajo a arriba y, de forma\nsimultánea, utilice una aspiradora en la salida de aire para captar el polvo.\nMantenimiento",
+      "tablas": [
+        [
+          [
+            "Mantenimiento",
+            "Intervalo",
+            "Instrucción"
+          ],
+          [
+            "Comprobación de la temperatura y limpieza del disipador",
+            "Depende de lo polvoriento que sea el entorno (cada 6 ... 12 meses)",
+            "Véase Disipador en la página 277."
+          ],
+          [
+            "Sustitución del ventilador de refrigeración principal",
+            "Cada seis años",
+            "Véase Sustitución del ventilador principal en la página 278."
+          ],
+          [
+            "Sustitución del ventilador de refrigeración interno del armario (convertidores IP54 / UL tipo 12)",
+            "Cada tres años.",
+            "Véase Sustitución del ventilador interno del armario en la página 280."
+          ],
+          [
+            "Reacondicionamiento de condensadores",
+            "Cada año cuando se almacena",
+            "Véase Reacondicionamiento en la página 281."
+          ],
+          [
+            "Sustitución de un condensador (bastidores R5 y R6)",
+            "Cada nueve años",
+            "Véase Sustitución en la página 281."
+          ],
+          [
+            "Sustitución de la pila en el Panel de control asistente",
+            "Cada diez años",
+            "Véase Pila en la página 281."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "278\nManual del usuario del ACS550-01/U1\nNota: si existe el riesgo de que el polvo entre en el equipo adyacente, efectúe la\nlimpieza en otra habitación.\n4. Vuelva a instalar el ventilador de refrigeración.\n5. Vuelva a conectar la alimentación.\nSustitución del ventilador principal\nEl fallo del ventilador puede predecirse por el ruido cada vez mayor que producen los\ncojinetes del ventilador y por el aumento gradual de la temperatura del disipador, a pesar\nde las operaciones de limpieza del mismo. Si el convertidor de frecuencia debe participar\nen una parte crucial de un proceso, se recomienda la sustitución del ventilador cuando\nempiecen a aparecer estos síntomas. ABB pone a su disposición ventiladores de\nrecambio. No utilice recambios distintos a los especificados por ABB.\nBastidores R1 ... R4\nPara sustituir el ventilador:\n3\n1. Desconecte la alimentación del convertidor.\n4\n2. Retire la cubierta del convertidor de frecuencia.\n3. Para el bastidor:\n2\n· R1, R2: Presione las presillas de sujeción a la vez en\nlos laterales de la cubierta del ventilador y levantela.\n· R3, R4: Presione la palanca ubicada en la parte\nizquierda del soporte del ventilador y hágalo girar\nhacia arriba y hacia fuera.\n4. Desconecte el cable del ventilador.\n5. Vuelva a instalar el ventilador en orden inverso.\n6. Vuelva a conectar la alimentación.\nX0021\nBastidor R5\nPara sustituir el ventilador:\n1. Desconecte la alimentación del convertidor.\n2. Retire los tornillos que fijan el ventilador.\n3. Extraiga el ventilador: Desplace el ventilador hacia\nfuera sobre sus bisagras.\n4. Desconecte el cable del ventilador.\n5. Vuelva a instalar el ventilador en orden inverso.\n6. Vuelva a conectar la alimentación.\nVista inferior\n3\n2\nX5023\nLas flechas en el ventilador indican las direcciones de la rotación y la circulación de aire.\nMantenimiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Manual del usuario del ACS550-01/U1\n279\nBastidor R6\nPara sustituir el ventilador:\n1. Desconecte la alimentación del convertidor.\n2. Extraiga el tornillo que fija la carcasa del\nventilador y deje que ésta se deslice hacia los\nlimitadores.\n0\n3. Levante el cable de conexión y desconéctelo.\n4. Quite la carcasa y coloque el ventilador sobre\nlos pines de ésta.\n5. Vuelva a instalar la carcasa en orden inverso.\n6. Vuelva a conectar la alimentación.\n0\n2\n3\n4\nMantenimiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "280\nManual del usuario del ACS550-01/U1\nSustitución del ventilador interno del armario\nLos armarios IP 54 / UL tipo 12 disponen de un ventilador interno adicional para\nhacer circular el aire dentro del armario.\nBastidores R1 ... R4\nPara sustituir el ventilador interno del armario en los\nbastidores R1 a R3 (en la parte superior del convertidor) y\nR4 (en la parte frontal del convertidor):\n1. Desconecte la alimentación del convertidor.\n2. Retire la cubierta anterior.\n3. La carcasa que sostiene el ventilador en su lugar tiene\npresillas de fijación con lengüeta en cada esquina.\nPresione las cuatro presillas hacia el centro para liberar\nlas lengüetas.\n4. Tras liberar las presillas/lengüetas, tire de la carcasa\nhacia arriba para sacarla del convertidor.\n5. Desconecte el cable del ventilador.\n6. Instale el ventilador en orden inverso al indicado\nanteriormente, teniendo en cuenta que:\n3\n5\nR1 ... R3\nR4\n5\nFM\n4\n10\nF\n@\n4\n· La circulación de aire del ventilador tiene sentido\nascendente (véase la flecha en el ventilador).\n· El colector de cables del ventilador se encuentra en la\nparte anterior.\nPE\n3\n· La lengüeta dentada de la carcasa se encuentra en la\nesquina posterior derecha.\n3AUA000000404\n· El cable del ventilador se conecta justo delante del ventilador y en la parte\nsuperior del convertidor.\nBastidores R5 y R6\nPara sustituir el ventilador interno del armario en bastidores R5 o R6:\n1. Desconecte la alimentación del convertidor.\n2. Retire la cubierta anterior.\n3. Extraiga el ventilador y desconecte el cable.\n4. Instale el ventilador en orden inverso.\n5. Vuelva a conectar la alimentación.\nMantenimiento",
+      "tablas": []
+    }
+  ]
+}

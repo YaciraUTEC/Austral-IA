@@ -1,0 +1,479 @@
+{
+  "archivo": "ABB Guia Técnica 10 - Seguridad Funcional_p1_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "ABB Drives\nGuía técnica n.º 10\nSeguridad funcional\nPower and productivity\nfor a better world™\nABB",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "2\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "ABB Drives\nGuía técnica n.º 10\nSeguridad funcional\n@ Copyright 2014 ABB. Todos los derechos reservados.\nLas especificaciones pueden cambiar sin previo aviso.\n3AUA0000163173 REV E 9.9.2014 #17230\nGuía técnica n.º 10 - Seguridad funcional\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "4\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Contenido\nLimitación de responsabilidad\n6\nAcerca de esta guía\n7\nParte 1 - Teoría y marco normativo\n8\nSeguridad y seguridad funcional.\n9\nDirectiva de Máquinas\n10\nJerarquía del sistema de normas armonizadas europeo\n11\nParte 2 - Normativa de Máquinas\n14\nDos normas - IEC e ISO\n14\nNormas para la minimización de riesgos.\n15\nNormas para sistemas de seguridad electrónicos\nNormas de seguridad específicas para productos (normas Tipo C)\n15\nNorma específica para sistemas de convertidor relacionados con la\n17\nseguridad\n18\nFunciones de seguridad normalizadas\n18\nParte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de\nMáquinas\n22\nPASO 1: Gestión de la seguridad funcional\n23\nPASO 2: Evaluación de riesgos\n24\nPASO 3: Reducción de riesgos\n26\nPASO 4: Establecimiento de los requisitos de seguridad\n28\nPASO 5: Implementación de un sistema de seguridad funczional\n32\nPASO 6: Verificación del sistema de seguridad funcional\n34\nPASO 7: Validación de un sistema de seguridad funcional\n38\nPASO 8: Documentación de un sistema de seguridad funcional\n38\nPASO 9: Demostración de la conformidad.\n39\nGlosario\n40\nÍndice\n42\nGuía técnica n.º 10 - Seguridad funcional\n5",
+      "tablas": [
+        [
+          [
+            "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva\nMáquinas",
+            "de\n22"
+          ],
+          [
+            "PASO 1: Gestión de la seguridad funcional",
+            "23"
+          ],
+          [
+            "PASO 2: Evaluación de riesgos",
+            "24"
+          ],
+          [
+            "",
+            "PASO 3: Reducción de riesgos\n:unselected:",
+            "26\n:unselected:"
+          ],
+          [
+            "",
+            "PASO 4: Establecimiento de los requisitos de seguridad\n:unselected:",
+            "28"
+          ],
+          [
+            "PASO 5: Implementación de un sistema de seguridad funczional",
+            "32"
+          ],
+          [
+            "",
+            "PASO 6: Verificación del sistema de seguridad funcional\n:unselected:",
+            "34"
+          ],
+          [
+            "",
+            "PASO 7: Validación de un sistema de seguridad funcional\n:unselected:",
+            "38"
+          ],
+          [
+            "",
+            "PASO 8: Documentación de un sistema de seguridad funcional\n:unselected:",
+            "38\n:unselected:"
+          ],
+          [
+            "PASO 9: Demostración de la conformidad.\n:unselected:",
+            "39\n:unselected:"
+          ],
+          [
+            "Glosario",
+            "40"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Limitación de responsabilidad\nEste documento es una guía informativa que pretende servir de\nayuda a usuarios, especificadores y fabricantes de maquinaria, así\ncomo al personal implicado, para una mejor comprensión de los\nrequisitos de la Directiva de Máquinas de la UE y las medidas nece-\nsarias para respetar dicha directiva con sus normas armonizadas.\nEsta guía se ha elaborado a título informativo.\nLa información y los ejemplos de esta guía únicamente están desti-\nnados a un uso general y no ofrecen todos los detalles necesarios\npara implementar un sistema de seguridad.\nABB Oy Drives no acepta por ello ninguna responsabilidad por\nlesiones o daños directos o indirectos derivados del uso de la\ninformación contenida en este documento. El fabricante de la\nmaquinaria siempre es responsable de la seguridad del producto\ny de su idoneidad conforme a las leyes vigentes. ABB se exime de\ncualquier responsabilidad derivada del uso de este documento.\nNota: parte del contenido de esta guía técnica son extractos de\nlas normas ISO/IEC que están protegidas bajo copyright por la\nComisión Electrotécnica Internacional (IEC) o por la Organización\ninternacional para la estandarización (ISO).\n6\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Acerca de esta guía\nEsta guía presenta la Directiva de Máquinas y las normas que es\nnecesario considerar a la hora de diseñar una máquina con el\nobjetivo de garantizar la seguridad funcional.\nEl propósito de este documento es explicar, en términos generales,\ncómo se lleva a cabo el proceso para cumplir con los requisitos\nde la Directiva de Máquinas y obtener el marcado CE. El marcado\nCE indica que la maquinaria cumple los requisitos de la Directiva.\nNota:\nEste documento solo proporciona una descripción general del\nproceso para cumplir con los requisitos esenciales de la Directiva\nde Máquinas. El fabricante de la maquinaria sigue siendo el res-\nponsable último de la seguridad y la conformidad del producto.\nEl documento se divide en tres partes:\n- Parte 1 - Teoría y marco normativo: presenta la idea subyacen-\nte a la seguridad funcional y cómo cumplir con la Directiva de\nMáquinas. También presenta la Directiva de Máquinas y explica\nla jerarquía del sistema de normas armonizadas europeo.\n–\nParte 2 - Normativa de máquinas - Presenta los dos sistemas\nde normas y enumera algunas normas de seguridad importantes\ny funciones de seguridad.\n- Parte 3 - Pasos a seguir para cumplir con los requisitos de\nla Directiva de Máquinas: presenta nueve pasos para facilitar\nel proceso de cumplimiento de los requisitos esenciales de la\nDirectiva de Máquinas.\nGuía técnica n.º 10 - Seguridad funcional\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Parte 1 - Teoría y marco normativo\nLas leyes nacionales de los países miembros de la Unión Europea\nexigen que las máquinas cumplan los Requisitos Esenciales de Se-\nguridad y Salud (EHSR, Essential Health and Safety Requirements)\ndefinidos en la Directiva de Máquinas y en sus normas armonizadas.\nEsto significa que todas las máquinas nuevas deben cumplir los\nmismos requisitos legales para su comercialización en cualquier\npaís de la UE. Estas mismas normas gozan de reconocimiento en\nmuchas regiones extracomunitarias, por ejemplo mediante tablas\nde equivalencias, lo que facilita el comercio de máquinas y su en-\nvío entre países dentro de la UE e incluso fuera de sus fronteras.\n¿Por qué es necesario que las máquinas cumplan estos requi-\nsitos? Porque su cumplimiento contribuye a evitar accidentes y\nlos daños asociados. Además, la conformidad con la Directiva de\nMáquinas y las normas armonizadas correspondientes garantiza a\nlos fabricantes de maquinaria que han cumplido sus obligaciones\nal diseñar y entregar máquinas seguras de conformidad con las\nleyes nacionales.\nPara los fabricantes, la mejora e innovación en las estrategias de\nseguridad se está convirtiendo en una forma de mejorar su produc-\ntividad y competitividad en el mercado. El objetivo tradicional de los\nsistemas de seguridad convencionales ha sido lograr una seguridad\noperacional completa y satisfacer los requisitos legales. Esto se ha\nllevado a cabo con la incorporación de componentes mecánicos\ny eléctricos auxiliares, incluso en detrimento de la productividad.\nLos operadores pueden, en determinadas circunstancias, anular\nestos sistemas en un intento de aumentar la productividad, lo que\npuede provocar accidentes.\nLos sistemas de seguridad modernos permiten garantizar la se-\nguridad de los procesos y del operario a la vez que se mantiene\nla productividad. Un ejemplo de ello sería mantener una máquina\nen funcionamiento a velocidad baja para preservar la seguridad\noperativa. Gracias a las soluciones de seguridad modernas, la\nseguridad puede integrarse como parte de la funcionalidad de la\nmáquina; las soluciones de seguridad ya no son ideas de última\nhora para cumplir las normas.\nLos sistemas de seguridad pueden implementarse de manera eficaz\nsiguiendo procesos definidos que permiten lograr unas prestacio-\nnes de seguridad concretas y el uso de subsistemas certificados\na modo de bloques modulares para la creación de los sistemas de\nseguridad. El cumplimiento de las normas de seguridad se da por\nsupuesto en el sector industrial, y algunos subsistemas certificados,\ncomo los convertidores de frecuencia, se están convirtiendo en una\n8\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Parte 1 - Teoría y marco normativo\nauténtica exigencia del mercado. La seguridad de las máquinas se\nencuentra entre las áreas que registran un mayor crecimiento en\nel ámbito de la automatización industrial.\nSeguridad y seguridad funcional\nEl objetivo de la seguridad es proteger a las personas y al medio\nambiente frente a los accidentes y, en el caso que nos ocupa, frente\na la maquinaria. Los sistemas de seguridad funcional cumplen esta\nfunción al reducir la probabilidad de que se produzcan situaciones\nindeseadas, minimizándose el número de incidentes al operar la\nmaquinaria. Las normas de seguridad la definen como la no exis-\ntencia de riesgos inaceptables. Los niveles de riesgo aceptables\nson definidos por medio de la reducción de riesgo requerida en\nlas normas de seguridad de máquinas. Los fabricantes de maqui-\nnaria siempre deberían usar el mismo criterio de aceptabilidad (el\nmás estricto) en todos los sectores del mercado, sin importar las\ndiferencias regionales.\nLa forma más efectiva de eliminar riesgos es evitarlos mediante\nel diseño de máquinas intrínsecamente más seguras. Pero si no\nfuera posible o práctico reducir los riesgos en esta fase, a menu-\ndo la mejor opción es el uso de protecciones fijas o de seguridad\nfuncional. Siempre que existe un sistema que permite realizar\nuna parada de una máquina de manera rápida y segura o hacerla\nfuncionar a baja velocidad durante periodos de tiempo concretos\ncon el objetivo de reducir los riesgos, es posible obtener un au-\nmento de la productividad y del tiempo de funcionamiento de la\nmáquina, así como un comportamiento del sistema de seguridad\nmenos brusco. Del mismo modo, se cumple con las obligaciones\nlegales y se garantiza la seguridad de las personas y del entorno.\nEn el caso de las máquinas, la seguridad funcional suele ser si-\nnónimo de sistemas fiables que monitorizan las aplicaciones de la\nmáquina, llegando a asumir el control si el funcionamiento seguro\nse viera comprometido. Un sistema de seguridad es aquel que\nimplementa las funciones de seguridad necesarias. Los sistemas\nde seguridad funcional están diseñados para detectar situaciones\npeligrosas o peticiones del usuario para garantizar seguridad y para\nllevar la maquina o proceso a un estado seguro como, por ejemplo\nun paro de emergencia.\nLa supervisión puede incluir la velocidad, la parada, el sentido de\nrotación y el reposo. Cuando el sistema de seguridad ejecuta una\nfunción de seguridad activa, por ejemplo la supervisión de la velo-\ncidad de arrastre, y el comportamiento del sistema se desvía de su\nobjetivo (por ejemplo, el sistema funciona demasiado deprisa), el\nsistema de seguridad detecta la desviación y actúa para devolver\nla máquina a un estado de funcionamiento seguro. Esto se lleva\na cabo, por ejemplo, parando la máquina de manera segura y\ndisminuyendo el par del eje del motor.\nGuía técnica n.º 10 - Seguridad funcional\n9",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Parte 1 - Teoría y marco normativo\nUn sistema de seguridad no forma parte del funcionamiento están-\ndar de una máquina, pero cualquier fallo en el mismo aumentará\ninmediatamente los riesgos relacionados con la operación de la\nmáquina (la máquina podría estar funcionando normalmente, pero\nla función de seguridad no está disponible y puede ocurrir una\nsituación peligrosa).\nDirectiva de Máquinas\nLa Directiva de Máquinas, junto con las normas armonizadas que\nla desarrollan, define los Requisitos Esenciales de Seguridad y\nSalud (EHSR) para maquinaria en el marco de la Unión Europea.\nLos requisitos EHSR se enumeran en el Anexo I de la Directiva de\nMáquinas.\nEl objetivo de la Directiva de Máquinas es garantizar que una má-\nquina es segura, y que se ha diseñado y fabricado de forma que\npueda ser utilizada, configurada y sometida a mantenimiento a lo\nlargo de todas las fases de su vida útil, minimizando los riesgos\npara las personas y el entorno.\nLos EHSR establecen que, en el proceso de búsqueda de so-\nluciones para el diseño y la fabricación de máquinas seguras,\nlos fabricantes de maquinaria tienen la obligación de aplicar los\nsiguientes principios en el orden establecido (también conocido\ncomo método de los 3 pasos, EN ISO 12100):\n1. Eliminar o minimizar los peligros en la medida de lo posible\nteniendo en cuenta los aspectos de seguridad durante las\nfases de diseño y fabricación de la máquina (diseñar máquinas\nintrínsecamente seguras).\n2. Aplicar las medidas de protección necesarias para hacer frente a\nlos peligros que no es posible eliminar.\n3. Informar a los usuarios acerca de los riesgos aún existentes a pesar\nde la aplicación de todas las medidas de protección posibles, y\nespecificar los requisitos relativos a la formación o al equipo de\nprotección necesarios.\nEl cumplimiento de los EHSR de la Directiva de Máquinas permite\nal fabricante etiquetar la máquina con el marcado CE. El marcado\nCE indica que el fabricante garantiza que su producto cumple todas\nlas normas relativas a la libre circulación de bienes, así como los\nrequisitos esenciales de las Directivas europeas correspondientes,\nen este caso la Directiva de Máquinas.\nNota:\nEs posible que existan otras directivas de obligado cumplimiento,\npor ejemplo la Directiva de Baja Tensión y la Directiva EMC. Esta\nguía sólo cubre los requisitos de la Directiva de Máquinas.\n10\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Parte 1 - Teoría y marco normativo\nNota:\nLa etiqueta del marcado CE conforme a la Directiva de Máquinas\nsólo puede aplicarse a una máquina completa y no a los compo-\nnentes que la forman. Por lo tanto, el fabricante del producto, o el\nrepresentante del fabricante, es el responsable del marcado CE, y\nno el fabricante del componente que está incluido en el producto\nfinal.\nComo excepción, los componentes de seguridad a ser usados en\nlas funciones de seguridad de la máquina, llevan el marcaje CE de\nacuerdo a la Directiva de Máquinas, del fabricante o representante\ndel componente en Europa.\nEl fabricante de la máquina es responsable de llevar a cabo las\nevaluaciones de riesgos correspondientes, siguiendo los pasos\nindicados en la Parte 3, y de garantizar el cumplimiento de los\nrequisitos. El fabricante de componentes es responsable de efec-\ntuar las pruebas de prestaciones de seguridad (nivel SIL/PL) en la\nfunción de seguridad del componente en cuestión, siempre que\nse use correctamente.\nEn este caso, un componente de seguridad podría ser un relé de\nseguridad o un convertidor de frecuencia con funciones de segu-\nridad integradas.\nJerarquía del sistema de normas armonizadas europeo\nEl Comité Europeo de Normalización (CEN) y el Comité Europeo\nde Normalización Electrotécnica (CENELEC) redactan las normas\nEuropeas \"EN\", que pueden ser usadas como normas armoni-\nzadas en todos los païses miembros de la UE. Todas las normas\narmonizadas llevan el prefijo \"EN\" (no todas las normas EN son\narmonizadas).\nEn la página web de la Comisión Europea, http://ec.europa.eu,\npuede encontrarse una lista de las normas armonizadas.\nLa mayoría de las normas armonizadas hacen referencia a una o\nmás directivas. Para garantizar que se siguen los requisitos esencia-\nles de la Directiva de Máquinas, es aconsejable aplicar las normas\neuropeas armonizadas correspondientes. El diseño de máquinas\nconforme a estas normas permite a los fabricantes demostrar que\ncumplen con la Directiva de Máquinas y, en general, no requiere la\ncertificación de terceros.\nNota:\nTenga en cuenta las excepciones para las máquinas enumeradas\nen el Anexo IV de la Directiva de Máquinas.\nGuía técnica n.º 10 - Seguridad funcional\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Parte 1 - Teoría y marco normativo\nA\nBASIC\nSAFETY STANDARDS\nB\nGROUP SAFETY STANDARDS -\nConcrete statements regarding basic standards\nC\nPRODUCT STANDARDS\nFigura 1-1 Jerarquía de las normas armonizadas europeas\n- Las normas del Tipo C son específicas para una máquina o\nclase de máquina. Si existe una norma del Tipo C para una\nmáquina, las normas asociadas del Tipo B, y posiblemente las\ndel Tipo A, pasan a ser secundarias. Al diseñar funciones de\nseguridad, las normas del Tipo C definen requisitos adicionales\nobligatorios para las máquinas a las que están destinadas. Sin\nembargo, si no existe una norma del Tipo C para la máquina,\nlas normas del Tipo A y del Tipo B proporcionan ayuda para el\ndiseño y la fabricación de máquinas que cumplan los requisitos\nde la Directiva de Máquinas.\n- Las normas del Tipo B tratan sobre los requisitos de seguri-\ndad comunes en el diseño de la mayoría de máquinas. Estas\nnormas proporcionan información sobre los posibles riesgos\ny el modo de gestionarlos, con la ayuda de un proceso de\nreducción de riesgos. Las normas del Tipo B se dividen en\ndos grupos, B1 y B2. Las normas del Tipo B1 tratan los\naspectos de seguridad concretos y las normas del Tipo B2\nse encargan de los equipos de seguridad en general. Las\nnormas del Tipo B1 son, por ejemplo, las EN 62061:2005 y\nEN ISO 13849-1:2008. Las normas del Tipo B2 incluyen nor-\nmas para definir los paros de emergencia, como la EN ISO\n13850:2008.\n- Los estándares de tipo A manejan conceptos básicos, termino-\nlogía y principios de diseño. Estos estándares, por sí mismos,\nno son suficientes para asegurar la conformidad con la Directiva\nde Máquinas. El único estándar de tipo A armonizado bajo la\nDirectiva de Máquinas es el estándar básico de seguridad para\nla evaluación y reducción de riesgos, EN ISO 12100.\n12\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Parte 1 - Teoría y marco normativo\nNota:\nLa aplicación de normas armonizadas no es obligatoria, pero ofre-\ncen recomendaciones y orientación para cumplir los requisitos de\nla Directiva de Máquinas, que sí deben cumplirse.\nGuía técnica n.º 10 - Seguridad funcional\n13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Parte 2 - Normativa de Máquinas\nConceptos básicos, terminología y\nevaluación de riesgos :\nEN ISO 12100\nStandard for creating safety system:\nEN ISO 13849-1\nStandard for creating safety system:\nEN/IEC 62061\nProcess for creating safety system\nProcess for creating safety system\nSafety system -> Safe Machine -> CE marking\nFigura 2-1 Introducción de las normas\nDos normas - IEC e ISO\nEs posible seguir dos normas alternativas para implementar los\nsistemas de seguridad funcional de conformidad con la Directiva\nde Máquinas: la norma de la Organización Internacional para la\nNormalización (ISO) y la norma de la Comisión Electrotécnica\nInternacional (IEC).\nEl uso como referencia de cualquiera de estas normas ofrece unos\nresultados muy similares, y tanto los niveles de integridad de la se-\nguridad (SIL) como los niveles de prestaciones (PL) son, de hecho,\ncomparables. Para más información, véase la tabla comparativa\nen la Parte 3, paso 6.\nNota:\nCorresponde al fabricante de la máquina decidir qué norma de\ncreación de sistemas de seguridad usará (EN ISO 13849-1 o EN/\nIEC 62061), y a continuación deberá seguir la norma elegida durante\ntodo el proceso para garantizar la coherencia con dicha norma.\nLas normas CEN se basan en las normas ISO y básicamente son\npara equipos mecánicos (las nuevas normas se numeran en la serie\n1xxxx), mientras que las norma CENELEC se basan en las IEC (las\nnuevas normas se numeran en la serie 6xxxx).\n14\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Parte 2 - Nuevo enfoque\nNota:\nLas normas ISO son presentadas en este documento como EN\nISO, usando la notación de la lista de estándares armonizados. Las\nnormas basadas en IEC son presentadas con EN/IEC, mostrando\nambos prefijos, aunque los estándares IEC IEC se muestran sólo\ncon el prefijo EN en la lista de estándares armonizados (p.e. EN\n62061).\nNormas para la minimización de riesgos\nLas normas de seguridad básica para la minimización de riesgos\nincluyen:\n- EN ISO 12100:2010\n(Seguridad de las máquinas. Principios generales para el diseño)\nEN ISO 12100 proporciona a los diseñadores la terminología bá-\nsica, un marco general y una guía, incluyendo una estrategia para\nla reducción del riesgo (método de los tres pasos).\nNota:\nCualquier otra referencia a estas normas en este documento siem-\npre se aplica a las versiones de estas normas mencionadas arriba.\nNormas para sistemas de seguridad electrónicos\nA continuación se enumeran las normas para sistemas de segu-\nridad electrónicos:\n- EN ISO 13849-1:2008/AC:2009 (Seguridad de las máquinas.\nPartes de los sistemas de mando relativas a la seguridad. Parte\n1: Principios generales para el diseño),\n–\nEN ISO 13849-2:2012 (Seguridad de las máquinas. Partes\nde los sistemas de mando relativas a la seguridad. Parte 2:\nValidación)\n- EN/IEC 62061:2005+AC:2010 (Seguridad de las máquinas.\nSeguridad funcional de sistemas de mando eléctricos, electró-\nnicos y programables relativos a la seguridad),\n- IEC 61508:2010 (Seguridad funcional de sistemas de mando\neléctricos, electrónicos y programables relativos a la seguri-\ndad), y\n- EN/IEC 60204-1:2006+AC:2010 (Seguridad de las máquinas.\nEquipamiento eléctrico de las máquinas. Requisitos generales).\nNota:\nCualquier otra referencia a estas normas en este documento siem-\npre se aplica a las versiones de estas normas mencionadas arriba.\nLa norma EN ISO 13849-1 es una norma que facilita instrucciones\npara que los diseñadores fabriquen máquinas seguras. Dichas\nGuía técnica n.º 10 - Seguridad funcional\n15",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Parte 2 - Nuevo enfoque\ninstrucciones incluyen recomendaciones para el diseño, la integra-\nción y la validación de los sistemas. Esta norma puede utilizarse\npara partes de los sistemas de mando relativas a la seguridad y\nvarios tipos de maquinaria, con independencia de la tecnología o\nla fuente de energía utilizada. Esto incluye también los requisitos\nespecíficos para componentes relacionados con la seguridad que\ncuentan con sistemas electrónicos programables. Esta norma cubre\nla totalidad de la función de seguridad en todos los dispositivos\nincluidos (es decir, una cadena de seguridad completa como por\nejemplo sensor-lógica-actuador).\nLa norma define cómo se determina el Nivel de prestaciones (PL) y\nse verifica el PL alcanzado en un sistema. El PL describe la forma en\nque un sistema de seguridad es capaz de llevar a cabo una función\nde seguridad en situaciones predecibles. Existen cinco posibles\nniveles de prestaciones: a, b, c, d y e. El nivel \"e\" representa la\nmayor fiabilidad de seguridad y el nivel \"a\", la menor.\nEN ISO 13849-2 especifica el proceso de validación de las funcio-\nnes de seguridad diseñadas conforme a EN ISO 13849-1.\nEN/IEC 62061 es una norma para el diseño de sistemas eléctricos\nde seguridad. Se trata de una norma específica para el sector de\nmaquinaria dentro del marco de la norma IEC 61508. EN/IEC 62061\nincluye recomendaciones para el diseño, la integración y la valida-\nción de sistemas de mando eléctricos, electrónicos y electrónicos\nprogramables relativos a la seguridad para máquinas. Esta norma\ncubre toda la cadena de seguridad, por ejemplo sensor-lógica-\nactuador. No es necesario certificar los subsistemas individuales\nsi la función de seguridad en su conjunto cumple los requisitos\ndefinidos. No obstante, se recomienda encarecidamente el uso de\nsubsistemas certificados a modo de bloques modulares, ya que\nesto puede representar un ahorro de esfuerzos considerable en el\nproceso de diseño y de verificación.\nNota:\nAl contrario que la norma EN ISO 13849-1, EN/IEC 62061 no in-\ncluye los requisitos para equipos de mando no eléctricos relativos\na la seguridad para maquinaria.\nEsta norma define cómo determinar el Nivel de Integridad de la\nSeguridad (SIL) para completar funciones de seguridad. En cambio,\npara la subsistemas de seguridad se utiliza el Límite de Reclama-\nciones del Nivel de Integridad de la Seguridad (SIL CL). El SIL y el\nSIL CL son una representación de la capacidad de la reducción\nde riesgos de las funciones y subsistemas de seguridad. Existen\ncuatro niveles SIL posibles: 1, 2, 3 y 4. \"SIL 4\" corresponde al nivel\nmás alto de integridad de la seguridad y \"SIL 1\", al más bajo. En el\ncaso de la maquinaria, sólo se utilizan los niveles de 1 a 3.\n16\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Parte 2 - Nuevo enfoque\nLa IEC 61508 es una norma de seguridad funcional básica. Esta\ncubre el ciclo de vida de los sistemas que contengan componentes\neléctricos y/o electrónicos y/o electrónicos programables usados\npara llevar a cabo funciones de seguridad. La IEC 61508 no es\nuna norma armonizada, pero es la más importante que describe\nlos requisitos y los métodos empleados en el diseño de sistemas\nde mando relacionados con la seguridad que incluyen hardware\ny software complejo. La IEC 61508 se utiliza normalmente en el\ndiseño de subsistemas de seguridad certificables. Las normas EN\nISO 13849-1 y EN/IEC 62061 se basan en los principios estable-\ncidos en IEC 61508.\nLa EN/IEC 60204-1 proporciona recomendaciones y requisitos\npara equipos eléctricos de máquinas con el objetivo de mejorar\nsu seguridad y utilización.\nNormas de seguridad específicas para productos (normas Tipo C)\nLas normas de seguridad específicas para productos, conocidas\ncomo normas del Tipo C, se encargan de una máquina o clase de\nmáquinas concreta y se basan en una presunción de conformidad\nrespecto a los EHSR cubiertos por la norma.\nHay que tener en cuenta que:\n- Los requisitos especificados en las normas del Tipo C normal-\nmente prevalecen sobre los requisitos establecidos por las nor-\nmas de seguridad general EN/IEC 62061, EN ISO 13849-1, etc.).\n- Las normas del Tipo C pueden establecer requisitos SIL/PL para\nalgunas funciones de seguridad específicas. Al menos deben\ncumplirse estos requisitos, independientemente de los resul-\ntados de la evaluación del análisis de riesgos (aunque siempre\nes necesario realizar evaluaciones de riesgo).\nNota:\nIncluso si las listas de posibles peligros que pueden afectar a la\nmáquina, creadas durante la evaluación de riesgos, y la norma\ndel Tipo C son idénticas, la norma puede que no tenga en cuenta\ntodos los EHSR pertinentes. La norma siempre debe inspeccionar-\nse minuciosamente para determinar qué peligros podrían haberse\nexcluido de la lista.\nGuía técnica n.º 10 - Seguridad funcional\n17",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Parte 2 - Nuevo enfoque\nNorma específica para sistemas de convertidor relacionados con\nla seguridad\nLa norma específica para sistemas de convertidor relacionados\ncon la seguridad es:\n- EN/IEC 61800-5-2:2007 (Convertidores eléctricos de velocidad\najustable. Requisitos de seguridad funcional).\nNota:\nCualquier otra referencia a esta norma en este documento sólo se\naplica a la versión de esta norma mencionada arriba.\nEN/IEC 61800-5-2 facilita especificaciones y recomendaciones\npara sistemas de convertidor usados en aplicaciones relacionadas\ncon la seguridad. Se trata de una norma de producto que presenta\naspectos relativos a la seguridad dentro del marco de la IEC 61508\ne introduce requisitos para sistemas de convertidor cuando se usan\ncomo subsistemas en sistemas de seguridad.\nFunciones de seguridad normalizadas\nLa norma EN/IEC 61800-5-2 define funciones de seguridad para\nsistemas con convertidores de frecuencia. Un convertidor de\nfrecuencia puede ofrecer una o más de estas funciones. A conti-\nnuación se muestran algunos ejemplos:\nSafe torque off (STO)\nCuando está activado esta función lleva la máquina a un estado\nsin par de manera segura y/o evita que arranque accidentalmente.\nNota:\nEl Safe torque off no protege contra riesgos eléctricos.\nFunction requested\n드\n0\nt\n+\nParo seguro 1 (SS1, Safe Stop 1)\nCuando está activado la función SS1 para el motor de manera\nsegura, iniciando la función STO por debajo de una velocidad\ndeterminada o tras un límite de tiempo definido.\nFunction requested\n0\nt\n18\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Parte 2 - Nuevo enfoque\nParo seguro 2 (SS2, Safe Stop 2)\nCuando está activado la función SS2 para el motor de manera\nsegura, iniciando la función SOS por debajo de una velocidad\ndeterminada o tras un límite de tiempo definido.\nParo de funcionamiento seguro (SOS, Safe Operating Stop)\nCuando está activada esta función mantiene el motor en un estado\nde reposo seguro, a la vez que mantiene el par del motor.\nVelocidad limitada con seguridad (SLS, Safely-limited speed)\nCuando está activada la función SLS evita que el motor supere el\nlímite de velocidad especificado.\nFunction requested\n0\nt\nDireccionamiento seguro (SDI, Safe direction)\nCuando está activada esta función evita que el eje del motor gire\nen un sentido no deseado.\nFunction requested\n三\n0\nt\nControl seguro de frenos (SBC, Safe brake control)\nLa función SBC proporciona una salida segura para controlar frenos\n(mecánicos) externos.\nMonitorización de velocidad segura (SSM, Safe speed monitor)\nCuando está activada la función SSM proporciona una salida\nsegura que indica que la velocidad está por debajo del límite de\nvelocidad especificado.\nFunction requested\n드\nOutput active\n0\nt\nVéase la norma EN/IEC 61800-5-2 para más ejemplos sobre fun-\nciones de seguridad.\nGuía técnica n.º 10 - Seguridad funcional\n19",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Parte 2 - Nuevo enfoque\nNota:\nLas funciones SOS, SLS y SDI de las funciones mencionadas son\nfunciones de monitorización, esto es, monitorizan de manera segura\nque el movimiento o el paro están dentro de los límites definidos.\nSi estas funciones detectan que el movimiento está fuera de los\nlímites, activan una función de reacción de fallo, que típicamente\nes el Safe torque off (STO).\nOperaciones de emergencia\nLa norma EN/IEC 60204-1 define dos operaciones de emergencia:\nla desconexión de emergencia y el paro de emergencia.\nDesconexión de emergencia\nLa función de desconexión de emergencia desconecta la alimenta-\nción a un sistema, o a parte de este, si surge el riesgo de descarga\neléctrica.\nEsta función requiere el uso de componentes de conmutación\nexternos y no puede lograrse con funciones del convertidor como\nla función Safe torque off (STO).\nParo de emergencia\nLa función de paro de emergencia debe operar de manera que\ncuando se active, se detenga el movimiento peligroso de la\nmaquinaria y se inhabilite el arranque de la máquina en cualquier\ncaso, incluso tras el rearme. El rearme del paro de emergencia sólo\npermite arrancar de nuevo la máquina.\nEsta función puede detener cualquier movimiento peligroso llevando\na cabo las siguientes acciones:\n- tasa de deceleración óptima hasta detención completa de la\nmáquina\n- utilizando una de las dos categorías de paro de emergencia,\n0 o 1, o\n- una secuencia de desconexión predefinida.\nParo de emergencia, paro categoría 0 significa que se interrumpe\ninmediatamente la alimentación al motor. Es equivalente a la función\nSafe torque off (STO), definida por la norma EN 61800-5-2.\nParo de emergencia, paro categoría 1 significa que la velocidad\nde la máquina desciende hasta el reposo mediante una deceleración\ncontrolada, y a continuación se interrumpe la alimentación al motor.\nEs equivalente a la función Paro seguro 1 (SS1), definida por la\nnorma EN 61800-5-2.\nCon su actuación, la función de paro de emergencia no debe crear\nningún peligro adicional o requerir de ninguna acción adicional del\noperador de la máquina.\n20\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Parte 2 - Nuevo enfoque\nNota:\nLa norma EN ISO 13850:2008 presenta los principios de diseño\nde una función de paro de emergencia.\nPrevención de arranque inesperado\nUna de las condiciones más importantes de las máquinas seguras\nes garantizar que una máquina permanezca parada cuando haya\npersonas presentes en una zona peligrosa.\nLa función Safe torque off se puede usar para implementar de\nmanera efectiva la función de prevención de arranque inesperado,\nefectuando por lo tanto paros seguros cortando la alimentación al\nmotor pero manteniéndola en los circuitos principales de mando\ndel convertidor. La función de prevención de arranque inesperado\nrequiere, por ejemplo, de un interruptor que pueda bloquearse\nademás de la función STO.\nLos principios y requisitos de la función de prevención de arranque\ninesperado se describen en la norma EN 1037:1995+A1 2008.\nOtra norma que cubre la prevención de arranque inesperado es\nla ISO 14118:2000.\nGuía técnica n.º 10 - Seguridad funcional\n21",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con\nlos requisitos de la Directiva de Máquinas\nLa Directiva de Máquinas exige que la maquinaria sea segura. Sin\nembargo, nunca es posible eliminar por completo los riesgos. El\nobjetivo es minimizar el riesgo.\nLa conformidad con la Directiva de Máquinas se consigue si:\n- se cumplen los requisitos establecidos en las normas armoni-\nzadas, o\n- un organismo autorizado efectúa un examen para la aprobación\nde la máquina.\nEl proceso de cumplimiento de los EHSR de la Directiva de Má-\nquinas usando las normas armonizadas puede dividirse en nueve\npasos:\n- Paso 1: Gestión de la seguridad funcional. Gestionar la\nseguridad funcional a lo largo del ciclo de vida de la máquina.\n- Paso 2: Evaluación de riesgos. Análisis y evaluación de\nriesgos.\n- Paso 3: Reducción de riesgos. Eliminar o minimizar los riesgos\nmediante el diseño y la documentación.\n–\nPaso 4: Establecimiento de los requisitos de seguridad.\nDefinir la funcionalidad y las prestaciones de seguridad\nnecesarias para eliminar el riesgo o reducirlo hasta un nivel\naceptable.\n- Paso 5: Implementación del sistema de seguridad funcional.\nDiseño y creación de las funciones de seguridad.\n–\nPaso 6: Verificación del sistema de seguridad funcional.\nGarantizar que el sistema de seguridad cumple los requisitos\ndefinidos.\n–\nPaso 7: Validación del sistema de seguridad funcional.\nRevisar el sistema de seguridad implementado contra la\nevaluación de riesgos y para asegurarse de que el sistema de\nseguridad realmente sirve para reducir los riesgos como se\nespera.\n- Paso 8: Documentación del sistema de seguridad funcional.\nDocumentar el diseño y elaborar documentación para el usuario.\n–\nPaso 9: Proporción del cumplimientoz. Demostrar la\nconformidad de la máquina con los EHSR de la Directiva de\nMáquinas mediante evaluaciones de conformidad y documentos\ntécnicos.\nCada uno de estos pasos se explica con más detalle en los capítulos\nsiguientes.\n22\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nActualización de la maquinaria existente\nLas siguientes cuestiones deben considerarse al actualizar los\nrequisitos de seguridad para máquinas existentes:\n- Máquinas que ya poseen el marcado CE: los nuevos\ncomponentes que se añadan a la máquina también deben\nposeer el marcado CE de acuerdo con las directivas relevantes\ntales como la Directiva de Baja Tensión y CEM (también los\ncomponentes de seguridad de acuerdo con la Directiva de\nMáquinas). Deberá definirse en cada caso cómo se aplican los\nnuevos componentes al sistema antiguo de conformidad con\nla Directiva de Máquinas.\n- Máquinas que no poseen el marcado CE: el nivel de seguridad de\nla máquina puede mantenerse sustituyendo viejos componentes\npor nuevos que posean el marcado CE.\nPor último, queda a criterio de la autoridad correspondiente decidir\nsi el cambio ha sido suficientemente amplio como para requerir\nuna actualización del nivel de seguridad.\nLAWS, REQUIREMENTS\nMachinery\nDirective\n(EHSR)\nRISK IDENTIFICATION\nSAFETY FUNCTION\nRisk\nassessment &\nevaluation, risk\nreduction\nsteps\n2 - 3\n>\nSpecification\n- Functionality\n- Safety performance\n(SIL, PL)\nstep 4\n4\nCE\nCompliance\nassessment,\ntechnical file,\ndocumentation\nstep 9\nCOMPLIANCE\nDocumenting\nthe design,\nresidual risk,\nuser instructions\nstep 8\nDoes the\nfunction fulfill the\nrisk reduction\nrequirement?\nVALIDATION\nDOCUMENTATION\nIMPLEMENTATION\nArchitecture,\nsubsystems,\nsafety / reliability\nparameters\nstep 5\nFunctional\ntesting,\nachieved\nSIL / PL level\nstep 6\nVERIFICATION\nstep 7\nFigura 3-1 Diagrama de flujo para el cumplimiento de los requisitos de la Directiva\nde Máquinas\nPASO 1: Gestión de la seguridad funcional\nPara lograr la seguridad funcional requerida, es necesario implementar\ntanto un sistema de gestión de proyectos como de gestión de\ncalidad que cumpla, por ejemplo, con las normas IEC 61508 o\nISO 9001. El sistema de gestión se puede especificar en la forma\nde un plan de seguridad.\nPlan de seguridad\nEn la norma EN/IEC 62061 se especifica un plan de seguridad para\nel proceso que permite cumplir con los requisitos de la Directiva de\nMáquinas. Este plan debe ser creado y documentado para cada\nsistema de seguridad, y actualizarse siempre que sea necesario.\nGuía técnica n.º 10 - Seguridad funcional\n23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nPlan de seguridad:\n- identifica todas las actividades pertinentes,\n- describe la política y la estrategia para cumplir con los requisitos\nde seguridad funcional,\n- identifica las responsabilidades,\n- identifica o establece los procedimientos y los recursos para\nla documentación,\n- describe la estrategia de gestión de la configuración, e\n- incluye planes de verificación y validación.\nNota:\nAunque las actividades enumeradas anteriormente no se especifican\nexhaustivamente en la norma EN ISO 13849-1, es necesario llevar\na cabo actividades similares para cumplir en su totalidad con los\nrequisitos de la Directiva de Máquinas.\nUna vez se ha creado el plan de seguridad (conforme a la norma\nEN/IEC 62061), se inicia la evaluación de riesgos.\nPASO 2: Evaluación de riesgos\nLa evaluación del riesgo es un proceso que analiza y valora los\nriesgos, que son considerados como una combinación de las\nconsecuencias del daño y la probabilidad de que se produzca este\ndaño ante la exposición a un peligro.\nNota:\nSegún la nueva Directiva de Máquinas 2006/42/CE, es obligatorio\ndocumentar y llevar a cabo una evaluación de riesgos de la má-\nquina.\nLa Directiva de Máquinas 2006/42/CE exige a los fabricantes\nllevar a cabo evaluaciones de riesgos, cuyos resultados deben\ntenerse en cuenta a la hora de diseñar una máquina. Cualquier\nriesgo que se considere como \"elevado\" debe reducirse a un nivel\naceptable mediante cambios en el diseño o aplicando las medidas\nde seguridad apropiadas. Los estándares EN 62061 y EN ISO\n13849-1 proporcionan métodos numéricos para la evaluación de\nriesgos y niveles de reducción.\nEl proceso de evaluación de riesgos proporciona a los diseñadores\nlos requisitos para que conciban una maquinaria intrínsecamente\nsegura. La evaluación de los riesgos en la fase de diseño es muy\nimportante, pues siempre resulta más efectivo que proporcionar\ninstrucciones al usuario acerca de cómo operar el equipo de forma\nsegura.\nConforme a la norma EN ISO 12100-1, la evaluación de riesgos\nconsta de dos partes: el análisis de riesgos y la valoración de ries-\ngos. Por análisis de riesgos entendemos identificar y estimar los\n24\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nriesgos, mientras que la valoración de riesgos se refiere a decidir si\nel riesgo es aceptable, o si es necesaria una reducción del mismo.\nLa valoración de riesgos se lleva a cabo sobre la base de los\nresultados del análisis de riesgos. Las decisiones referentes a\nla necesidad de reducir los riesgos se toman de acuerdo con el\nprocedimiento de valoración de riesgos.\nPista: La herramienta de diseño de seguridad funcional de ABB\nes una herramienta PC que proporciona un modo conveniente de\nllevar a cabo la evaluación de riesgo numéricamente de acuerdo\ncon los estándares de maquinaria EN/IEC 62061 o EN ISO 13849-1.\nNota:\nLa valoración de riesgos debe ser realizada de forma independiente\npara cada peligro.\nLos cuatro pasos de la valoración de riesgos:\n1. Determinar los límites y el uso previsto de la máquina.\nEstos límites son:\n- límites de uso\n- límites espaciales\n- límites ambientales o medioambientales\n- límites de vida útil\n2. Identificar los peligros que podría generar la máquina.\n3. Estimar los riesgos identificados uno a uno.\n- Gravedad del riesgo (consecuencias potenciales)\n- Probabilidad del riesgo (frecuencia, probabilidad, evitabilidad)\n4. Evaluar el riesgo: ¿ Es necesario reducir el riesgo?\n- SÍ: Aplicar medidas para la reducción de riesgos y volver al\nPaso 2 del análisis de riesgos.\nNota:\nEl método de los tres pasos para la reducción de riesgo de acuerdo\ncon la EN ISO 12100 se presenta en el próximo capítulo.\n- NO: Se ha cumplido el objetivo de reducción de riesgos y\nel proceso se da por terminado.\nDocumente el proceso de evaluación de riesgos y los resultados\nobtenidos para cada peligro.\nGuía técnica n.º 10 - Seguridad funcional\n25",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nRisk assesment\n1. Determine limits / intended use\nof the machine\n2. Identify Hazards\n3. Estimate risks one at a time\n· Severity & Probability\n4. Evaluate the risk:\nRisk low enough (yes / no)\nYES\nEnd\nNO\n(see figure 3-3)\nTo risk reduction\nFigura 3-2 Evaluación y valoración de riesgos conforme a EN ISO 12100\nUna vez se ha llevado a cabo la evaluación de riesgos, existen dos\nopciones dependiendo del resultado de la evaluación:\nOpción 1\nSi la evaluación concluye que la reducción de riesgos no es ne-\ncesaria, entonces la máquina ha alcanzado el nivel adecuado de\nseguridad requerido por la Directiva de Máquinas.\nNota:\nLos riesgos restantes deben documentarse en los manuales de\noperación y mantenimiento correspondientes. Siempre existe algún\nriesgo residual.\nOpción 2\nSi la evaluación revela que el riesgo continúa siendo inaceptable,\nse inicia el proceso de reducción del riesgo.\nPASO 3: Reducción de riesgos\nLa forma más efectiva de minimizar riesgos es hacerlo durante la\nfase de diseño, por ejemplo, modificando el diseño de la máquina\no el proceso de trabajo. Si esto no fuera posible, deben reducirse\nlos riesgos y asegurarse su conformidad con los requisitos de\nla Directiva de Máquinas mediante la aplicación de sus normas\narmonizadas.\n26\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nSi la evaluación de riesgos concluye que es necesario reducir el\nriesgo, se crea una estrategia de minimización de riesgos. La norma\nEN ISO 12100-1 divide el método para la reducción de riesgos en\ntres pasos principales (método de los tres pasos):\nMétodo de los 3 pasos\n1. Medidas de diseño intrínsecamente seguras: creación de un\ndiseño más seguro, modificación del proceso, eliminación del\nriesgo mediante el diseño.\n2. Medidas de protección y salvaguarda complementarias:\nfunciones de seguridad, protección fija.\n3. Información para el uso (gestión del riesgo residual):\n- dispositivos, señales y signos de aviso en la máquina y\n- en las instrucciones de funcionamiento.\nRisk reduction\nBack to risk assessment\nFrom risk assessment\nApply risk reduction\nmeasures\n1.\nDesign\nchanges\nYES\nRisk reduction\nby design changes\n?\nNO\nNO\n2.\n3 - STEP METHOD\nSafety\ntechnology\n(Functional\nSafety)\nYES\nRisk reduction\nby functional safety\n?\nNO\nAdequate\nreduction\n(Y/N)?\nNO\n3.\nProcesses,\ninformation\nfor use\nYES\nRisk reduction\nby processes & info\nYES\n?\nNO\nNO\nFigura 3-3 Método de reducción de riesgos en 3 pasos conforme a EN ISO 12100-1\nGuía técnica n.º 10 - Seguridad funcional\n27",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nEl riesgo residual es aquel que persiste una vez se han tenido\nen cuenta e implementado todas las medidas de protección.\nLas medidas tecnológicas por sí mismas nunca son capaces de\nconseguir eliminar totalmente los riesgos, por lo que siempre existirá\nalgún riesgo residual.\nEstos riesgos deben documentarse en las instrucciones de\nfuncionamiento.\nLa parte de la reducción de riesgos correspondiente al usuario in-\ncluye información proporcionada por el diseñador (fabricante). Las\nmedidas de reducción de riesgos tomadas por una organización\no usuario son:\n- Las medidas de reducción más comunes adoptadas por la\norganización:\n- implementación de procesos de trabajo seguros\n- supervisión de los trabajos\n- sistemas de permisos de trabajo seguros\n- La disposición y el uso de protecciones adicionales\n- El uso de equipos de protección personal\n- La formación del personal\n- Asegurarse de que las instrucciones de seguridad y de funcio-\nnamiento han sido leídas y se actúa conforme a ellas.\nLos diseñadores siempre deben recoger la valiosa información\nfacilitada por los usuarios al definir medidas de protección.\nTras poner en práctica la reducción de riesgos, es obligatorio\nrevisarla para garantizar que se toman las medidas adecuadas\npara reducir el riesgo a un nivel apropiado. Esto puede hacerse\nrepitiendo el proceso de evaluación de riesgos.\nLos pasos restantes que figuran a continuación describen la opción\n2 del método de los 3 pasos: protecciones mediante una solución\nde seguridad funcional.\nPASO 4: Establecimiento de los requisitos de seguridad\nUna vez se ha llevado a cabo la reducción de riesgos correspondiente\na la introducción de cambios en el diseño, es necesario especificar\nlas protecciones adicionales. Las soluciones de seguridad funcional\npueden usarse en los peligros restantes como medida adicional de\nreducción de riesgos.\nFunciones de seguridad\nUna función de seguridad es una función de una máquina cuyo fallo\npuede provocar un aumento inmediato del riesgo. Explicado de\nforma sencilla, es una medida que debe tomarse para reducir las\nprobabilidades de que tenga lugar un evento indeseado durante una\nexposición a un peligro. Una función de seguridad no es parte del\nfuncionamiento de la máquina en sí. Esto significa que si la función\nde seguridad falla, la máquina sigue funcionando normalmente,\npero el riesgo de lesión asociado a su funcionamiento aumenta.\n28\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nLa definición de una función de seguridad siempre incluye dos\ncomponentes:\n- Acción requerida (lo que debe hacerse para reducir el riesgo) y\n- prestaciones de seguridad (SIL o PL, Nivel de Integridad de\nla Seguridad y Nivel de Prestaciones, respectivamente).\nNota: Es importante también especificar los requerimientos de\ntiempo de la función de seguridad, p.e. el máximo tiempo permitido\npara llevar el sistema a un estado seguro.\nPara poder seleccionar correctamente los componentes de segu-\nridad es necesario especificar el medio del sistema de seguridad.\nNota: Es obligatorio especificar, verificar (prestaciones de seguridad\ny funcionalidad) y validar la función de seguridad para cada uno de\nlos peligros identificados.\nEjemplo de función de seguridad:\nRequisito: un eje en giro desprotegido puede lesionar a una per-\nsona que se acerque demasiado.\nAcción: para evitar que alguna persona resulte herida, el motor\ndebe pararse en un máximo de un (1) segundo tras la apertura de\nla puerta de seguridad.\nUna vez se ha definido la función de seguridad que ejecuta la\nacción, se determina el nivel de seguridad que requiere para ello.\nIntegridad/prestaciones de seguridad\nLa integridad de la seguridad mide las prestaciones de una función\nde seguridad. Ayuda a cuantificar la probabilidad de que active la\nfunción de seguridad cuando así se solicita. La integridad de la\nseguridad que requiere una función se determina durante la eva-\nluación de riesgos y se representa mediante el Nivel de Integridad\nde la Seguridad (SIL) o el Nivel de prestaciones (PL) alcanzado, en\nfunción de la norma utilizada.\nLas dos normas usan diferentes técnicas de evaluación para la\nfunción de seguridad, aunque sus resultados son comparables.\nLos términos y las definiciones son similares en ambas normas.\nDeterminación del SIL requerido (EN/IEC 62061)\nEl proceso para determinar el SIL es el siguiente:\n1. Determine la gravedad de las consecuencias de un evento\npeligroso.\n2. Determine el valor numérico para la frecuencia y el tiempo\ndurante el cual la persona está expuesta al peligro.\nPista: La determinación del SIL requerido puede ser cómodamente\nhecho con la herramienta PC de diseño de seguridad funcional\n(FSDT) de ABB.\nGuía técnica n.º 10 - Seguridad funcional\n29",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\n3. Determina el valor de la probabilidad de que una situación de\nriesgo ocurra cuando se está expuesta a ella.\n4. Determina el valor de la posibilidad de prevenir o limitar el alcance\nde los daños.\nEjemplo:\nLos parámetros utilizados para determinar los valores numéricos\nse presentan en el siguiente ejemplo de una tabla de asignación\ndel SIL.\nPROBABILIDAD DE QUE SE PRODUZCA el daño\nFr\nFrecuencia, duración\n<= hora\n5\n> 1h <= día\n5\n> día <= 2 sem.\n4\n> 2 sem. <= 1 año\n3\n> 1 año\n2\nPr\nProbabilidad del evento peligroso\nMuy alta\n5\nProbable\n4\nPosible\n3\nPoco probable\n2\nDespreciable\n1\nAv\nEvitabilidad\n5\nImposible\n3\nPosible\n1\nProbable\n5+3+3=11\nGRAVEDAD del daño\nSe\nConsecuencias (gravedad)\nMuerte, pérdida de un ojo o un miembro\n4\nPermanente, pérdida de dedos\n3\nReversible, atención médica\n2\nReversible, primeros auxilios\n1\nClasificación SIL\nClasificación\n3-4\n5-7\n8-10\n11-13 14-15\nSIL2\nSIL2\nSIL2\nSIL3\nSIL3\nOM\nSIL2\nSIL3\nOM\nSIL1\nSIL2\nOM\nSIL1\nSe requiere\nuna función\nde seguridad\nSIL2\nFigura 3-4 Ejemplo de una tabla de asignación del SIL (basado en la EN/IEC\n62061, figura A.3)\nEn este ejemplo, el análisis de peligros se lleva a cabo para un eje\nen giro desprotegido.\n1. Gravedad (Se) = 3. La consecuencia del peligro es una lesión\npermanente, con posible pérdida de dedos.\n2. Frecuencia (Fr) = 5. Una persona está expuesta al peligro varias\nveces al día.\n3. Probabilidad (Pr) = 3. Es posible que el peligro se haga realidad.\n4. Evitabilidad (Av) = 3. El peligro es evitable.\n- 5 + 3 + 3 = 11, con la consecuencia determinada, siendo\nigual a un SIL 2.\nLas tablas utilizadas para determinar estos valores forman parte\nde la norma.\nTras haber definido el SIL requerido, es posible iniciar la implemen-\ntación del sistema de seguridad.\n30\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": [
+        [
+          [
+            ""
+          ],
+          [
+            "Fr",
+            ""
+          ],
+          [
+            "Frecuencia, duración"
+          ],
+          [
+            "<= hora",
+            "5"
+          ],
+          [
+            "> 1h <= día",
+            "5"
+          ],
+          [
+            "> día <= 2 sem.",
+            "4"
+          ],
+          [
+            "> 2 sem. <= 1 año",
+            "3"
+          ],
+          [
+            "> 1 año",
+            "2"
+          ]
+        ],
+        [
+          [
+            ""
+          ],
+          [
+            "Pr",
+            ""
+          ],
+          [
+            "Probabilidad del evento peligroso"
+          ],
+          [
+            "Muy alta",
+            "5"
+          ],
+          [
+            "Probable",
+            "4"
+          ],
+          [
+            "Posible",
+            "3"
+          ],
+          [
+            "Poco probable",
+            "2"
+          ],
+          [
+            "Despreciable",
+            "1"
+          ]
+        ],
+        [
+          [
+            "GRAVEDAD del daño"
+          ],
+          [
+            ""
+          ],
+          [
+            "Se",
+            ""
+          ],
+          [
+            "Consecuencias (gravedad)"
+          ],
+          [
+            "Muerte, pérdida de un ojo o un miembro",
+            "4"
+          ],
+          [
+            "Permanente, pérdida de dedos",
+            "3"
+          ],
+          [
+            "Reversible, atención médica",
+            "2"
+          ],
+          [
+            "Reversible, primeros auxilios",
+            "1"
+          ],
+          [
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Clasificación :selected:"
+          ],
+          [
+            "3-4",
+            "5-7",
+            "8-10",
+            "11-13 14-15"
+          ],
+          [
+            "SIL2",
+            "SIL2",
+            "SIL2",
+            "SIL3",
+            "SIL3"
+          ],
+          [
+            "",
+            "OM",
+            "",
+            "SIL2",
+            "SIL3"
+          ],
+          [
+            ""
+          ],
+          [
+            "",
+            "",
+            "OM",
+            "SIL1",
+            "SIL2"
+          ],
+          [
+            "",
+            "",
+            "",
+            "OM",
+            "SIL1"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nDeterminación del PL requerido (EN ISO 13849-1)\nPara determinar el PL requerido, seleccione una de las alternativas\nde entre las siguientes categorías y cree una \"ruta\" hasta el PL\nrequerido en el gráfico.\n1. Determine la gravedad del daño.\nLos parámetros de la gravedad son:\nS1 Leve, lesión normalmente reversible\nS2 Grave, lesión normalmente irreversible, incluida la muerte\n2. Determine la frecuencia y la duración de la exposición al\npeligro.\nLos parámetros de la frecuencia y la duración son:\nF1 Entre poco probable y frecuente y/o exposición breve\nF2 Entre frecuente y continua y/o exposición larga\n3. Determine la posibilidad de evitar el peligro o de limitar el\ndaño ocasionado.\nLos parámetros relacionados con la posibilidad de evitar y de\nlimitar el daño son:\nP1 Posible bajo ciertas condiciones\nP2 Prácticamente imposible\nPista:\nLa determinación del SIL requerido puede ser cómodamente hecho\ncon la herramienta PC de diseño de seguridad funcional (FSDT)\nde ABB.\nEjemplo:\nEl nivel de prestaciones resultante se representa por a, b, c, d y e\nen el ejemplo siguiente del gráfico de riesgos del PL.\nSTART\nHERE\nS1\nSlight\nS2\nSevere\nF1\nF2\nF1\nRare to often\nF2\nFreq. to cont.\nP1\nP2\nP1\nP2\nP1\nP2\nP1\nLow risk\na\nb\nc\nd\nPossible\nP2\ne\nA PL d\nsafety function\nis required\nHardly possible\nHigh risk\nFigura 3-5 Ejemplo del gráfico de riesgos del PL (basado en la EN ISO 13849-1,\nfigura A.1)\nEn este ejemplo, el análisis de peligros se lleva a cabo para un eje\nen giro desprotegido.\nGuía técnica n.º 10 - Seguridad funcional\n31",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\n- La consecuencia del peligro es una lesión grave e irreversible.\nGravedad = S2.\n- Una persona está expuesta al peligro varias veces al día.\nFrecuencia = F2.\n- Es posible evitar o limitar el daño ocasionado por el peligro.\nPosibilidad = P2.\nLa ruta lleva a un valor de PL requerido (PLr) d. Las tablas utilizadas\npara determinar estos valores forman parte de la norma. Tras haber\ndefinido el PL requerido, es posible iniciar la implementación del\nsistema de seguridad.\nPASO 5: Implementación de un sistema de seguridad funcional\nCuando se pretende diseñar y fabricar una función de seguridad,\nla idea es planear y fabricar la función de seguridad para que\nsatisfaga el SIL/PL requerido que se especifica en el capítulo previo.\nEl uso de subsistemas certificados en los sistemas de seguridad\nfuncional puede ahorrar mucho trabajo a los diseñadores de dichos\nsistemas. La implementación de funciones de seguridad resulta\nmás conveniente una vez se han realizado algunos cálculos de\nseguridad y fiabilidad y los subsistemas están certificados.\nNota:\nSi no se utilizan subsistemas certificados, puede ser necesario llevar\na cabo cálculos de seguridad para cada subsistema. Las normas EN/\nIEC 62061 y EN ISO 13849-1 incluyen información sobre el proceso\ny los parámetros de cálculo necesarios.\nPista:\nLa selección de una adecuada arquitectura de una función de\nseguridad que cumpla los cálculos de seguridad requeridos y la\nverificación SIL/PL puede llevarse a cabo convenientemente con\nla herramienta de PC denominada herramienta de diseño de se-\nguridad funcional (FSDT).\nLos procesos de implementación y verificación son iterativos y\nse desarrollan en paralelo. La idea es usar la verificación como\nherramienta durante la implementación para asegurarse de que se\nalcanza la seguridad funcional y el nivel SIL/PL requeridos con el\nsistema implementado. Para más información sobre los procesos\nde verificación, véase el paso siguiente.\nABB dispone de una herramienta PC de diseño de seguridad\nfuncional (FSDT) para establecer un objetivo de SIL/PL para una\nfunción de seguridad, así como para diseñar, verificar el SIL/PL\nalcanzado y documentar la función de seguridad.\nLos pasos generales para la implementación de un sistema de\nseguridad funcional son:\n32\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\n1. Definir los requisitos de seguridad como SIL o PL conforme\na la norma EN/IEC 62061 o a la EN ISO 13849-1.\n2. Seleccionar la arquitectura del sistema que va a utilizarse\npara el sistema de seguridad.\nLas normas EN ISO 13849-1 y EN/IEC 62061 ofrecen arquitec-\nturas básicas con fórmulas de cálculo.\n- la categoría B, 1, 2, 3 o 4 de acuerdo con la norma EN ISO\n13849-1, o\n- la arquitectura designada A, B, C o D de acuerdo con la norma\nEN/IEC 62061 para los subsistemas y para el sistema en su\nconjunto.\nPara obtener más información sobre las arquitecturas designadas,\nconsulte las normas pertinentes.\n3. Fabricar el sistema a partir de subsistemas de seguridad:\nsensor/interruptor, entrada, lógica, salida y actuador.\nAdopte una de estas acciones:\n- use subsistemas certificados (recomendado) o\n- lleve a cabo cálculos de seguridad para cada subsistema.\nEl nivel de seguridad del sistema en su conjunto se establece\nsumando todos los niveles de seguridad de los subsistemas.\n4. Instalar el sistema de seguridad.\nEs necesario que el sistema se instale de forma adecuada para\nevitar un posible fallo común a causa de un cableado indebido,\npor razones medioambientales o por otros factores. Un sistema de\nseguridad que no realiza su tarea correctamente por culpa de una\ninstalación deficiente carece de utilidad, e incluso puede llegar a\nsuponer un riesgo.\n5. Comprobar la funcionalidad del sistema.\nGate limit switches\nSafety logic + I/O\n(Convertidor\nde frecuencia\ncon\nSafe torque\noff (STO))\n.\nSubsystem 1\nSubsystem 2\nSubsystem 3 ;\nFigura 3-6 Estructura de una función de seguridad\nGuía técnica n.º 10 - Seguridad funcional\n33",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nPASO 6: Verificación del sistema de seguridad funcional\nLa verificación del sistema de seguridad funcional demuestra y\ngarantiza que el sistema de seguridad implementado cumple con\nlos requisitos especificados para el sistema en la fase de requisitos\nde seguridad.\nLa verificación no debe llevarse a cabo tras el proceso de\nimplementación, sino de manera paralela a éste como un proceso\niterativo, de modo que se garantice que la implementación genere\nen efecto un sistema que cumplirá los requisitos especificados.\nAdemás de verificar si se ha conseguido el SIL o PL del sistema,\ntambién es necesario verificar el correcto funcionamiento del\nsistema de seguridad efectuando pruebas de funcionalidad.\nVerificación del SIL del sistema de seguridad (EN/IEC 62061)\nPara verificar los niveles de integridad de la seguridad se debe\ncomprobar que las prestaciones de seguridad de la función de\nseguridad creada, es decir su capacidad de reducción de ries-\ngos, sean iguales o mayores al objetivo de prestaciones requerido\nfijado durante la valoración de riesgos. Se recomienda el uso de\nsubsistemas certificados, ya que su fabricante ya ha definido\nvalores para determinar la integridad de seguridad sistemática\n(SILCL) y la probabilidad de fallos peligrosos por hora (PFHd).\nPista: La verificación del SIL alcanzado puede ser llevada a cabo\nconvenientemente con la herramienta PC de diseño de seguridad\nfuncional (FSDT) de ABB.\nPara verificar el SIL de un sistema de seguridad en que se utilizan\nsubsistemas certificados:\n1. Determine la integridad de seguridad sistemática del sistema\nmediante los valores del limite de solicitud de SIL (SILCL, SIL\nClaim Limit) definidos para los subsistemas.\nEl SILCL es el valor máximo del SIL para el que el subsistema\nresulta estructuralmente adecuado. El SILCL es un indicador\npara la determinación del SIL alcanzado: el SILCL de todo el\nsistema no puede ser mayor que el SILCL del subsistema de\nmenor entidad.\n2. Calcule la integridad de seguridad aleatoria del hardware para el\nsistema mediante los valores de Probabilidad de fallo peligroso por\nhora (PFH , Probability of a dangerous Failure per Hour) definidos\npara los subsistemas. Habitualmente, los fabricantes de subsistemas\ncertificados facilitan valores de PFH, para sus sistemas.\nLa PFH, es el valor de fallo aleatorio del hardware que se utiliza\npara determinar el SIL.\n34\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\n3. Utilice la lista de comprobación de Fallos por Causa Común\n(CCF) para asegurarse de que se han tenido en cuenta todos\nlos aspectos necesarios a la hora de crear los sistemas de\nseguridad.\nLas tablas con listas de comprobación de CCF pueden consul-\ntarse en la norma EN/IEC 62061, Anexo F.\nCalcule los puntos según la lista y compare el resultado final\ncon los valores enumerados en la norma EN/IEC 62061 Anexo\nF, y con los resultados de la Tabla F.2 en el factor CCF (B). Este\nvalor se utiliza para estimar el valor de probabilidad de PFH .\n4. Determine el SIL alcanzado con ayuda de la tabla\ncorrespondiente.\nEjemplo de verificación del SIL (Los datos de cálculo son\nficticios):\nVerificación del sistema de seguridad funcional de un eje en giro:\nGate limit switches\nSubsystem 1\nSIL CL = 2\nPFH = 2,4 x 10-7\nSafety logic + I/O\nSubsystem 2\nSIL CL = 3\nPFH = 9,8 x 10-9\n(Convertidor\nde frecuencia\ncon\nSafe torque\noff (STO))\nSubsystem 3 ;\nSIL CL = 3\nPFH = 2,0 x 10-10\nFigura 3-7 Ejemplo de verificación del SIL (basado en EN/IEC 62061, tabla 3)\n- Integridad de seguridad sistemática:\nsist ≤ (SIL CL\nsubsistema mínimo\n-> Límite de solicitud de SIL 2\nSIL CLsis\n- Integridad de seguridad aleatoria del hardware:\nPFH = PFH +PFH +PFH, = 2,5 x 10-7 < 10-6\n= El sistema cumple con el SIL 2.\nTabla para determinar el SIL de acuerdo con el valor de PFHa\nobtenido para todo el sistema de seguridad (en modo continuo/\nalta demanda):\nSIL\nProbabilidad de fallos peligrosos por hora (1/h)\nSIL 1\n≥ 10-6 hasta < 10-5\nSIL 2\n≥ 10-7 hasta < 10-6\nSIL 3\n≥ 10-8 hasta < 10-7\nTabla 3-1 Tabla para determinar el SIL (basado en EN/IEC 62061, tabla 3)\nGuía técnica n.º 10 - Seguridad funcional\n35",
+      "tablas": [
+        [
+          [
+            "SIL",
+            "Probabilidad de fallos peligrosos por hora (1/h)"
+          ],
+          [
+            "SIL 1",
+            "≥ 10-6 hasta < 10-5"
+          ],
+          [
+            "SIL 2",
+            "≥ 10-7 hasta < 10-6"
+          ],
+          [
+            "SIL 3",
+            "≥ 10-8 hasta < 10-7"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nVerificación del PL del sistema de seguridad (EN ISO 13849-1)\nPara verificar el nivel de prestación, compruebe que el PL de la fun-\nción de seguridad correspondiente concuerda con el PLr requerido.\nSi la función de seguridad está formada por varios subsistemas,\nsus niveles de prestaciones deben ser iguales o mayores que el\nnivel de prestaciones requerido para dicha función de seguridad.\nSe recomienda el uso de subsistemas certificados, pues ya tendrán\ndefinidos sus valores de prestaciones de seguridad.\nPista:\nLa verificación del PL alcanzado puede ser llevada a cabo con-\nvenientemente con la herramienta PC de diseño de seguridad\nfuncional (FSDT) de ABB.\nNota:\nDe acuerdo con la EN ISO 13849-1 se usa el MTTFd para definir\nel PL y el PFHd para un subsistema. Sólo se usa el PFHd para\ndeterminar el PL del sistema completo.\nPara verificar el PL de un sistema de seguridad en que se utilizan\nsubsistemas certificados:\n1. Determine la susceptibilidad del sistema a Fallos por Causa\nComún (CCF) mediante la lista de comprobación de CCF.\nLas tablas con listas de comprobación de CCF pueden consul-\ntarse en la norma EN ISO 13849-1:2008, Anexo I. La puntuación\nmínima requerida es de 65 puntos.\n2. Determine el PL alcanzado con ayuda del gráfico de barras y\nutilizando los valores establecidos para:\n- Categoría\n- Tiempo medio hasta fallo peligroso (MTTFa)\n–\nCobertura del diagnóstico (DC)\nEI MTTF. es el tiempo medio que transcurre hasta que tiene\nlugar un fallo peligroso. DC hace referencia al número de fallos\npeligrosos que pueden detectarse mediante diagnóstico.\nEncontrará más información relativa a los detalles de los cálculos\nen la norma EN ISO 13849-1.\n3. Introduzca los valores resultantes en el gráfico de PL, a partir\ndel cual puede determinarse el PL obtenido.\n36\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nEjemplo de verificación del PL:\nVerificación del sistema de seguridad funcional de un eje en giro:\nPL\na\nb\nc\n1\n2\n3\nd\ne\nCat. B\nDCavonone\nCat. 1\nDC vonone\nCat. 2\nCat. 2\nCat. 3\nCat. 3\nCat. 3\nDC low DCav medium DC low DC medium DCavhigh\nFigura 3-8 Ejemplo de verificación del PL\nMTTF. for\neach channel\n1 = Low\n2 = Medium\n3 = High\nPara determinar el PL conseguido definido en el ejemplo anterior:\n- la arquitectura designada es de la Categoría 3,\n- el valor de MTTF. es alto y\n- el valor medio de DC es bajo.\n= el sistema cumple el valor PL d.\nTabla para determinar el PL de acuerdo con el valor de PFHa ob-\ntenido para todo el sistema de seguridad:\nPL\nProbabilidad de fallos peligrosos por hora (1/h)\na\n≥ 10-5 hasta < 10-4\nb\n≥ 3 x 10-6 hasta < 10-5\nc\n≥ 10-6 hasta < 3 x 10-6\nd\n≥ 10-7 hasta < 10-6\ne\n≥ 10-8 hasta < 10-7\nTabla 3-2 Tabla para determinar el PL (basado en la EN ISO 13849-1 tabla 3)\nComparación de los valores de SIL y de PL\nAunque los métodos de evaluación son diferentes para cada norma,\nlos resultados de la evaluación son comparables en función del\nfallo aleatorio de hardware.\nGuía técnica n.º 10 - Seguridad funcional\n37",
+      "tablas": [
+        [
+          [
+            "PL",
+            "Probabilidad de fallos peligrosos por hora (1/h)"
+          ],
+          [
+            "a",
+            "≥ 10-5 hasta < 10-4"
+          ],
+          [
+            "b",
+            "≥ 3 x 10-6 hasta < 10-5"
+          ],
+          [
+            "c",
+            "≥ 10-6 hasta < 3 x 10-6"
+          ],
+          [
+            "d",
+            "≥ 10-7 hasta < 10-6"
+          ],
+          [
+            "e",
+            "≥ 10-8 hasta < 10-7"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nNivel de integridad de la\nseguridad SIL\nNivel de prestaciones PL\nSin correspondencia\na\n1\nb\n1\nc\n2\nd\n3\ne\nTabla 3-3 Comparación entre el SIL y el PL (basado en la EN ISO 13849-1 tabla 4)\nPASO 7: Validación de un sistema de seguridad funcional\nEs obligatorio validar cada función de seguridad para garantizar\nque reduce el riesgo conforme a lo requerido en la fase de eva-\nluación de riesgos.\nPara determinar la validez del sistema de seguridad funcional,\ncotéjelo con el proceso de evaluación de riesgos llevado a cabo\nal inicio del procedimiento para el cumplimiento de los EHSR de\nla Directiva de Máquinas (véase el Paso 2, página 24). El sistema\nes válido si realmente reduce los riesgos analizados y evaluados\nen el proceso de evaluación de riesgos.\nPASO 8: Documentación de un sistema de seguridad funcional\nAntes de que la máquina pueda cumplir con los requisitos de la\nDirectiva de Máquinas, es necesario documentar su diseño y ela-\nborar la documentación para el usuario pertinente.\nLa documentación debe redactarse con rigor. Debe ser exacta y\nconcisa, pero al mismo tiempo informativa y fácil de entender por\nel usuario. La documentación para el usuario debe incluir todos los\nriesgos residuales y ofrecer las instrucciones apropiadas acerca\nde cómo operar la máquina de forma segura. Debe ser accesible y\nfácil de mantener. La documentación para el usuario se suministra\ncon la máquina.\nSi desea más información sobre la documentación requerida y\nsu naturaleza, consulte los EHSR en el Anexo I de la Directiva de\nMáquinas.\n38\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": [
+        [
+          [
+            "Nivel de integridad de la seguridad SIL",
+            "Nivel de prestaciones PL"
+          ],
+          [
+            "Sin correspondencia",
+            "a"
+          ],
+          [
+            "1",
+            "b"
+          ],
+          [
+            "1",
+            "c"
+          ],
+          [
+            "2",
+            "d"
+          ],
+          [
+            "3",
+            "e"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Parte 3 - Pasos a seguir para cumplir con los requisitos de la Directiva de Máquinas\nPASO 9: Demostración de la conformidad\nAntes de comercializar una máquina, el fabricante debe asegurarse\nde que se implementa de conformidad con las normas armoniza-\ndas. También debe probarse que la combinación de partes relativas\na la seguridad cumple los requisitos definidos para cada función\nde seguridad.\nPara probar la conformidad con la Directiva de Máquinas, debe\ndemostrarse que:\n- La maquinaria cumple los Requisitos Esenciales de Seguridad y\nSalud (EHSR) pertinentes definidos en la Directiva de Máquinas.\n- La maquinaria cumple los requisitos de otras Directivas\nrelacionadas.\n- La conformidad con estos requisitos puede garantizarse\nsi se cumple con lo estipulado en las normas armonizadas\ncorrespondientes.\n- El documento técnico está actualizado y disponible.\nEl documento técnico demuestra que la máquina es conforme\ncon las normas de la Directiva de Máquinas.\nNota:\nEl informe técnico tiene que estar disponible en un tiempo ra-\nzonable porque pueder ser requerido por, p.e. las autoridades,\ny la ausencia de un documento técnico es razón suficiente para\ndudar del cumplimento de la máquina con los EHSR.\nEl documento técnico debe incluir el diseño, la fabricación\ny el funcionamiento de la maquinaria en la medida en que\nsea necesario para demostrar su conformidad. Si desea más\ninformación sobre el contenido del documento técnico, consulte\nel Anexo VII de la Directiva de Máquinas 2006/42/CE.\n- Se han aplicado los procedimientos de evaluación de la confor-\nmidad.\nLos requisitos especiales para las máquinas enumeradas en el\nAnexo IV de la Directiva de Máquinas se cumplen cuando es\nnecesario.\n- Se ha emitido la declaración de conformidad CE y se suministra\ncon la máquina.\nUna vez se ha establecido la conformidad, se coloca el marcado CE.\nSe presupone que la maquinaria con el marcado CE, que además\nva acompañada de una declaración de conformidad CE, cumple\nlos requisitos de la Directiva de Máquinas.\nGuía técnica n.º 10 - Seguridad funcional\n39",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "Glosario\nCCF (Common Cause Failure), Fallo por causa común\nSituación en la que varios subsistemas fallan a causa de un único\nevento. Todos los fallos son causados por este evento y no son\nconsecuencia entre sí.\nDaño\nDaño a la salud o lesión física.\nDC (Diagnostic Coverage), Cobertura del diagnóstico\nEfectividad de la monitorización de los fallos de un sistema\no subsistema. Es la relación entre la tasa de fallos peligrosos\ndetectados y la tasa de fallos peligrosos totales.\nEHSR (Essential Health and Safety Requirements), Requisitos\nEsenciales de Seguridad y Salud\nRequisitos que la maquinaria debe satisfacer para ajustarse a la\nDirectiva de Máquinas de la Unión Europea y obtener así el marcado\nCE. Estos requisitos se enumeran en el Anexo I de la Directiva de\nMáquinas.\nEN\nSiglas de Norma Europea ('EuroNorm'). Este prefijo se usa con\nlos estándares europeos (o versiones europeas de los estándares\nIEC/ISO) de las organizaciones europeas CEN y CENELEC. Las\nnormas armonizadas también llevan el prefijo EN.\nFunción de seguridad\nFunción diseñada para aumentar la seguridad de una máquina cuyo\nfallo puede provocar un aumento inmediato del riesgo.\nIEC (International Electrotechnical Commission), Comisión\nElectrotécnica Internacional\nOrganización mundial para la normalización que se compone de\ntodos los comités electrotécnicos nacionales.\nwww.iec.ch\nISO (International Organization for Standardization),\nOrganización Internacional para la Normalización\nFederación internacional de organismos nacionales de\nnormalización.\nwww.iso.org\nMarcado CE\nMarca de conformidad obligatoria para la maquinaria y otros tipos\nde productos que se comercializan en el Área Económica Europea\n(EEA). Mediante la colocación del marcado CE en el producto, el\nfabricante garantiza que dicho producto cumple todos los requisitos\nesenciales de las Directivas Europeas pertinentes.\n40\nGuía técnica n.º 10 - Seguridad funcional",
+      "tablas": []
+    }
+  ]
+}

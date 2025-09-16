@@ -1,0 +1,1589 @@
+{
+  "archivo": "VACON-100-FLOW-Application-Guide-DPD01083H-EN (1)_p281_320",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\n11.24.8.7 (ID 3551) Vibration Min Factor\nLocation in the menu: P3.24.4.2.2\nUse this parameter to set the min factor in the threshold value. If the threshold value is zero, the min factor is not used.\n11.24.8.8 (ID 3552) Vibration Max Factor\nLocation in the menu: P3.24.4.2.3\nUse this parameter to set the max factor in the threshold value. If the threshold value is zero, the max factor is not used.\n11.24.8.9 (ID 3553) Vibration Std Factor\nLocation in the menu: P3.24.4.2.4\nUse this parameter to set the std factor in the threshold value. If the threshold value is zero, the std factor is not used.\n11.24.8.10 (ID 3554) Vibration Interpolation Type\nLocation in the menu: P3.24.4.2.5\nUse this parameter to select interpolation type for the notification threshold values across frequency points.\n11.24.8.11 (ID 3567) Load Mean Factor\nLocation in the menu: P3.24.5.1.1\nUse this parameter to set the mean factor in the threshold value. If the threshold value is zero, the mean factor is not used.\n11.24.8.12 (ID 3568) Load Min Factor\nLocation in the menu: P3.24.5.1.2\nUse this parameter to set the min factor in the threshold value. If the threshold value is zero, the min factor is not used.\n11.24.8.13 (ID 3569) Load Max Factor\nLocation in the menu: P3.24.5.1.3\nUse this parameter to set the max factor in the threshold value. If the threshold value is zero, the max factor is not used.\n11.24.8.14 (ID 3570) Load Std Factor\nLocation in the menu: P3.24.5.1.4\nUse this parameter to set the std factor in the threshold value. If the threshold value is zero, the std factor is not used.\n11.24.8.15 (ID 3571) Load Interpolation Type\nLocation in the menu: P3.24.5.1.5\nUse this parameter to select interpolation type for the notification threshold values across frequency points.\n11.24.9 Warning and Alarm/Fault Stages\nEach of the three detection levels (Warning S1, Warning S2, Alarm/Fault) has a configurable timer associated that delays the re-\nsponse. The timing principle is like an electrical fuse where the response time is long for low levels and it is short for high levels.\n11.24.9.1 (ID 3516) Current Warning S1 Mode\nLocation in the menu: P3.24.3.3.2.1\nUse this parameter to select the warning S1 mode which is used for calculating warning S1 notification threshold.\nSelection number\nSelection name\nDescription\n0\nAbsolute\nAbsolute value is considered as threshold\n1\nOffset\nCalculates threshold as sum of the computed baseline data and the offset values\n2\nFactor\nCalculates threshold as baseline data factor\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 281",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute",
+            "Absolute value is considered as threshold"
+          ],
+          [
+            "1",
+            "Offset",
+            "Calculates threshold as sum of the computed baseline data and the offset values"
+          ],
+          [
+            "2",
+            "Factor",
+            "Calculates threshold as baseline data factor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Parameter Descriptions\nVACON® 100 FLOW\nApplication Guide\nDanfoss\n11.24.9.2 (ID 3517) Current Warning S1 High\nLocation in the menu: P3.24.3.3.2.2\nUse this parameter to set the threshold value for computing the warning 1 high notification threshold. Threshold value range varies\nbased on warning mode selection. This limit is not used when value is zero.\n11.24.9.3 (ID 3518) Current Warning S1 Delay\nLocation in the menu: P3.24.3.3.2.3\nUse this parameter to define how long time the actual value must be above the warning S1 notification level to trigger the warning\nS1. This level is not used when delay is zero.\n11.24.9.4 (ID 3519) Current Warning S2 Mode\nLocation in the menu: P3.24.3.3.2.4\nUse this parameter to select the warning S2 mode which is used for calculating warning S2 notification threshold.\nSelection number\nSelection name\nDescription\n0\nAbsolute\nAbsolute value is considered as threshold\n1\nOffset\nCalculates threshold as sum of the computed baseline data and the offset values\n2\nFactor\nCalculates threshold as baseline data factor\n11.24.9.5 (ID 3520) Current Warning S2 High\nLocation in the menu: P3.24.3.3.2.5\nUse this parameter to set the threshold value for computing the warning 2 high notification threshold. Threshold value range varies\nbased on warning mode selection. This limit is not used when value is zero.\n11.24.9.6 (ID 3521) Current Warning S2 Delay\nLocation in the menu: P3.24.3.3.2.6\nUse this parameter to define how long time the actual value must be above the warning S2 notification level to trigger the warning\nS2. This level is not used when delay is zero.\n11.24.9.7 (ID 3522) Current Alarm/Fault Mode\nLocation in the menu: P3.24.3.3.2.7\nUse this parameter to select the alarm/fault mode which is used for calculating alarm/fault notification threshold.\nSelection number\nSelection name\nDescription\n0\nAbsolute\nAbsolute value is considered as threshold\n1\nOffset\nCalculates threshold as sum of the computed baseline data and the offset values\n2\nFactor\nCalculates threshold as baseline data factor\n11.24.9.8 (ID 3523) Current Alarm/Fault High\nLocation in the menu: P3.24.3.3.2.8\nUse this parameter to set the threshold value for computing the alarm/fault high notification threshold. Threshold value range var-\nies based on alarm/fault mode selection. This limit is not used when value is zero.\n11.24.9.9 (ID 3524) Current Alarm/Fault Delay\nLocation in the menu: P3.24.3.3.2.9\nUse this parameter to define how long time the actual value must be above the alarm/fault notification level to trigger the alarm/\nfault. This level is not used when delay is zero.\n282 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute",
+            "Absolute value is considered as threshold"
+          ],
+          [
+            "1",
+            "Offset",
+            "Calculates threshold as sum of the computed baseline data and the offset values"
+          ],
+          [
+            "2",
+            "Factor",
+            "Calculates threshold as baseline data factor"
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute",
+            "Absolute value is considered as threshold"
+          ],
+          [
+            "1",
+            "Offset",
+            "Calculates threshold as sum of the computed baseline data and the offset values"
+          ],
+          [
+            "2",
+            "Factor",
+            "Calculates threshold as baseline data factor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.24.9.10 (ID 3541) Current Warning S1 Counter\nLocation in the menu: P3.24.3.3.3.1\nUse this parameter to set warning S1 counter value.\n11.24.9.11 (ID 3542) Current Warning S2 Counter\nLocation in the menu: P3.24.3.3.3.2\nUse this parameter to set warning S2 counter value.\n11.24.9.12 (ID 3543) Current Alarm/Fault Counter\nLocation in the menu: P3.24.3.3.3.3\nUse this parameter to set alarm/fault counter value.\n11.24.9.13 (ID 3549) Stop Counter Delay\nLocation in the menu: P3.24.2.3.4, P3.24.4.4.4, and P3.24.5.3.4\nLocation in the menu: P3.23.2.3.4, P3.23.4.4.4, and P3.23.5.3.4\nUse this parameter to set stop counter. The counter is stopped if threshold value is outside of the limit below this time.\n11.24.9.14 (ID 3555) Vibration Warning S1 Mode\nLocation in the menu: P3.24.4.3.1\nUse this parameter to select the warning S1 mode which is used for calculating warning S1 notification threshold.\nSelection number\nSelection name\nDescription\n0\nAbsolute\nAbsolute value is considered as threshold\n1\nOffset\nCalculates threshold as sum of the computed baseline data and the offset values\n2\nFactor\nCalculates threshold as baseline data factor\n11.24.9.15 (ID 3556) Vibration Warning S1 High\nLocation in the menu: P3.24.4.3.2\nUse this parameter to set the threshold value for computing the warning 1 high notification threshold. Threshold value range varies\nbased on warning mode selection. This limit is not used when value is zero.\n11.24.9.16 (ID 3557) Vibration Warning S1 Delay\nLocation in the menu: P3.24.4.3.3\nUse this parameter to define how long time the actual value must be above the warning S1 notification level to trigger the warning\nS1. This level is not used when delay is zero.\n11.24.9.17 (ID 3558) Vibration Warning S2 Mode\nLocation in the menu: P3.24.4.3.4\nUse this parameter to select the warning S2 mode which is used for calculating warning S2 notification threshold.\nSelection number\nSelection name\nDescription\n0\nAbsolute\nAbsolute value is considered as threshold\n1\nOffset\nCalculates threshold as sum of the computed baseline data and the offset values\n2\nFactor\nCalculates threshold as baseline data factor\n11.24.9.18 (ID 3559) Vibration Warning S2 High\nLocation in the menu: P3.24.4.3.5\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 283",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute",
+            "Absolute value is considered as threshold"
+          ],
+          [
+            "1",
+            "Offset",
+            "Calculates threshold as sum of the computed baseline data and the offset values"
+          ],
+          [
+            "2",
+            "Factor",
+            "Calculates threshold as baseline data factor"
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute",
+            "Absolute value is considered as threshold"
+          ],
+          [
+            "1",
+            "Offset",
+            "Calculates threshold as sum of the computed baseline data and the offset values"
+          ],
+          [
+            "2",
+            "Factor",
+            "Calculates threshold as baseline data factor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nUse this parameter to set the threshold value for computing the warning 2 high notification threshold. Threshold value range varies\nbased on warning mode selection. This limit is not used when value is zero.\n11.24.9.19 (ID 3560) Vibration Warning S2 Delay\nLocation in the menu: P3.24.4.3.6\nUse this parameter to define how long time the actual value must be above the warning S2 notification level to trigger the warning\nS2. This level is not used when delay is zero.\n11.24.9.20 (ID 3561) Vibration Alarm/Fault Mode\nLocation in the menu: P3.24.4.3.7\nUse this parameter to select the alarm/fault mode which is used for calculating alarm/fault notification threshold.\nSelection number\nSelection name\nDescription\n0\nAbsolute\nAbsolute value is considered as threshold\n1\nOffset\nCalculates threshold as sum of the computed baseline data and the offset values\n2\nFactor\nCalculates threshold as baseline data factor\n11.24.9.21 (ID 3562) Vibration Alarm/Fault High\nLocation in the menu: P3.24.4.3.8\nUse this parameter to set the threshold value for computing the alarm/fault high notification threshold. Threshold value range var-\nies based on warning mode selection. This limit is not used when value is zero.\n11.24.9.22 (ID 3563) Vibration Alarm/Fault Delay\nLocation in the menu: P3.24.4.3.9\nUse this parameter to define how long time the actual value must be above the alarm/fault notification level to trigger the alarm/\nfault. This level is not used when delay is zero.\n11.24.9.23 (ID 3564) Vibration Warning S1 Counter\nLocation in the menu: P3.24.4.4.1\nUse this parameter to set warning S1 counter value.\n11.24.9.24 (ID 3565) Vibration Warning S2 Counter\nLocation in the menu: P3.24.4.4.2\nUse this parameter to set warning S2 counter value.\n11.24.9.25 (ID 3566) Vibration Alarm/Fault Counter\nLocation in the menu: P3.24.4.4.3\nUse this parameter to set alarm/fault counter value.\n11.24.9.26 (ID 3572) Load Warning S1 Mode\nLocation in the menu: P3.24.5.2.1\nUse this parameter to select the warning S1 mode which is used for calculating warning S1 notification threshold.\nSelection number\nSelection name\nDescription\n0\nAbsolute\nAbsolute value is considered as threshold\n1\nOffset\nCalculates threshold as sum of the computed baseline data and the offset values\n2\nFactor\nCalculates threshold as baseline data factor\n284 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute",
+            "Absolute value is considered as threshold"
+          ],
+          [
+            "1",
+            "Offset",
+            "Calculates threshold as sum of the computed baseline data and the offset values"
+          ],
+          [
+            "2",
+            "Factor",
+            "Calculates threshold as baseline data factor"
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute",
+            "Absolute value is considered as threshold"
+          ],
+          [
+            "1",
+            "Offset",
+            "Calculates threshold as sum of the computed baseline data and the offset values"
+          ],
+          [
+            "2",
+            "Factor",
+            "Calculates threshold as baseline data factor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Parameter Descriptions\nVACON® 100 FLOW\nApplication Guide\nDanfoss\n11.24.9.27 (ID 3573) Load Warning S1 High\nLocation in the menu: P3.24.5.2.3\nUse this parameter to set the threshold value for computing the warning 1 high notification threshold. Threshold value range varies\nbased on warning mode selection. This limit is not used when value is zero.\n11.24.9.28 (ID 3574) Load Warning S1 Delay\nLocation in the menu: P3.24.5.2.4\nUse this parameter to define how long time the actual value must be above the warning S1 notification level to trigger the warning\nS1. This level is not used when delay is zero.\n11.24.9.29 (ID 3575) Load Warning S2 Mode\nLocation in the menu: P3.24.5.2.5\nUse this parameter to select the warning S2 mode which is used for calculating warning S2 notification threshold.\nSelection number\nSelection name\nDescription\n0\nAbsolute\nAbsolute value is considered as threshold\n1\nOffset\nCalculates threshold as sum of the computed baseline data and the offset values\n2\nFactor\nCalculates threshold as baseline data factor\n11.24.9.30 (ID 3576) Load Warning S2 High\nLocation in the menu: P3.24.5.2.7\nUse this parameter to set the threshold value for computing the warning 2 high notification threshold. Threshold value range varies\nbased on warning mode selection. This limit is not used when value is zero.\n11.24.9.31 (ID 3577) Load Warning S2 Delay\nLocation in the menu: P3.24.5.2.8\nUse this parameter to define how long time the actual value must be above the warning S2 notification level to trigger the warning\nS2. This level is not used when delay is zero.\n11.24.9.32 (ID 3578) Load Alarm/Fault Mode\nLocation in the menu: P3.24.5.2.9\nUse this parameter to select the alarm/fault mode which is used for calculating alarm/fault notification threshold.\nSelection number\nSelection name\nDescription\n0\nAbsolute\nAbsolute value is considered as threshold\n1\nOffset\nCalculates threshold as sum of the computed baseline data and the offset values\n2\nFactor\nCalculates threshold as baseline data factor\n11.24.9.33 (ID 3579) Load Alarm/Fault High\nLocation in the menu: P3.24.5.2.11\nUse this parameter to set the threshold value for computing the alarm/fault high notification threshold. Threshold value range var-\nies based on warning mode selection. This limit is not used when value is zero.\n11.24.9.34 (ID 3580) Load Alarm/Fault Delay\nLocation in the menu: P3.24.5.2.12\nUse this parameter to define how long time the actual value must be above the alarm/fault notification level to trigger the alarm/\nfault. This level is not used when delay is zero.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 285",
+      "tablas": [
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute",
+            "Absolute value is considered as threshold"
+          ],
+          [
+            "1",
+            "Offset",
+            "Calculates threshold as sum of the computed baseline data and the offset values"
+          ],
+          [
+            "2",
+            "Factor",
+            "Calculates threshold as baseline data factor"
+          ]
+        ],
+        [
+          [
+            "Selection number",
+            "Selection name",
+            "Description"
+          ],
+          [
+            "0",
+            "Absolute",
+            "Absolute value is considered as threshold"
+          ],
+          [
+            "1",
+            "Offset",
+            "Calculates threshold as sum of the computed baseline data and the offset values"
+          ],
+          [
+            "2",
+            "Factor",
+            "Calculates threshold as baseline data factor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\n11.24.9.35 (ID 3581) Load Warning S1 Counter\nLocation in the menu: P3.24.5.3.1\nUse this parameter to set warning S1 counter value.\n11.24.9.36 (ID 3582) Load Warning S2 Counter\nLocation in the menu: P3.24.5.3.2\nUse this parameter to set warning S2 counter value.\n11.24.9.37 (ID 3583) Load Alarm/Fault Counter\nLocation in the menu: P3.24.5.3.3\nUse this parameter to set alarm/fault counter value.\n11.24.9.38 (ID 3584) Load Warning S1 Low\nLocation in the menu: P3.24.5.2.2\nUse this parameter to set the threshold value for computing the warning 1 low notification threshold. Threshold value range varies\nbased on warning mode selection. This limit is not used when value is zero.\n11.24.9.39 (ID 3585) Load Warning S2 Low\nLocation in the menu: P3.24.5.2.6\nUse this parameter to set the threshold value for computing the warning 2 low notification threshold. Threshold value range varies\nbased on warning mode selection. This limit is not used when value is zero.\n11.24.9.40 (ID 3586) Load Alarm/Fault Low\nLocation in the menu: P3.24.5.2.10\nUse this parameter to set the threshold value for computing the alarm/fault low notification threshold. Threshold value range varies\nbased on warning mode selection. This limit is not used when value is zero.\n11.24.10 (ID 3587) Vibration Input\nLocation in the menu: P3.24.4.1\nUse this parameter to select the analog input to vibration.\n11.25 Default Values of Parameters in the Different Applications\nTable 132: Default Values of Parameters of Group 3.2\nIndex\nParameter\nStandard\napplica-\ntion\nHVAC ap-\nplication\nPID con-\ntrol ap-\nplication\nMulti-pump\n(single\ndrive) appli-\ncation\nMulti-pump\n(multidrive)\napplication\nUnit\nID\nDescription\n3.2.1\nRem Control\nPlace\n0\n0\n0\n0\n0\n172\n0 = I/O Control\n3.2.2\nLocal/Remote\n0\n0\n0\n0\n0\n211\n0 = Remote\n3.2.6\nI/O A Logic\n2\n2\n2\n0\n0\n300\n2 = Forw-Back\n(edge)\n3.2.7\nI/O B Logic\n2\n2\n2\n2\n2\n363\n2 = Forw-Back\n(edge)\n286 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Standard applica- tion",
+            "HVAC ap- plication",
+            "PID con- trol ap- plication",
+            "Multi-pump (single drive) appli- cation",
+            "Multi-pump (multidrive) application",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "3.2.1",
+            "Rem Control Place",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "172",
+            "0 = I/O Control"
+          ],
+          [
+            "3.2.2",
+            "Local/Remote",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "211",
+            "0 = Remote"
+          ],
+          [
+            "3.2.6",
+            "I/O A Logic",
+            "2",
+            "2",
+            "2",
+            "0",
+            "0",
+            "",
+            "300",
+            "2 = Forw-Back (edge)"
+          ],
+          [
+            "3.2.7",
+            "I/O B Logic",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "",
+            "363",
+            "2 = Forw-Back (edge)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nTable 133: Default Values of Parameters of Group 3.3\nIndex\nParameter\nStandard\napplica-\ntion\nHVAC\napplica-\ntion\nPID\ncontrol\napplica-\ntion\nMulti-\npump\n(single\ndrive) ap-\nplication\nMulti-\npump\n(multi-\ndrive) ap-\nplication\nUnit\nID\nDescription\n3.3.1.5\nI/O A Ref Sel\n6\n6\n7\n7\n7\n117\n6 = AI1 + AI2\n7 = PID\n3.3.1.6\nI/O B Ref Sel\n4\n4\n4\n4\n4\n131\n4 = AI1\n3.3.1.7\nKeypad Ref Sel\n2\n2\n2\n2\n2\n121\n2 = Keypad Refer-\nence\n3.3.1.10\nFieldbus Ref Sel\n3\n3\n3\n3\n3\n122\n3 = Fieldbus Ref-\nerence\n3.3.3.1\nPreset Freq Mode\n0\n0\n0\n0\n0\n182\n0 = Binary Coded\n3.3.3.3\nPreset Freq 1\n10.0\n10.0\n10.0\n10.0\n10.0\nHz\n105\n3.3.3.4\nPreset Freq 2\n15.0\n15.0\n15.0\n15.0\n15.0\nHz\n106\n3.3.3.5\nPreset Freq 3\n20.0\n20.0\n20.0\n20.0\n20.0\nHz\n126\nP3.3.6.1\nFlushing Refer-\nence Activation\n0\n0\n0\n0\n101\n530\n0 = DigIN Slot0.1\n101 = DigIN Slo-\ntA.2\nP3.3.6.2\nFlushing Refer-\nence\n0\n0\n0\n0\n0\nHz\n1239\nTable 134: Default Values of Parameters of Group 3.5\nIndex\nParameter\nStand-\nard ap-\nplication\nHVAC\napplica-\ntion\nPID\ncontrol\nappli-\ncation\nMulti-\npump\n(single\ndrive)\napplica-\ntion\nMulti-\npump\n(multi-\ndrive)\napplica-\ntion\nUnit\nID\nDescription\n3.5.1.1\nCtrl Signal 1 A\n100\n100\n100\n100\n100\n403\n100 = DigIN SlotA.1\n3.5.1.2\nCtrl Signal 2 A\n101\n101\n0\n0\n0\n404\n0 = DigIN Slot0.1\n101 = DigIN SlotA.2\n3.5.1.4\nCtrl Signal 1 B\n0\n0\n103\n101\n0\n423\n0 = DigIN Slot0.1\n101 = DigIN SlotA.2\n103 = DigIN SlotA.4\n3.5.1.7\nI/O B Ctrl Force\n0\n0\n105\n102\n0\n425\n0 = DigIN Slot0.1\n102 = DigIN SlotA.3\n105 = DigIN SlotA.6\n3.5.1.8\nI/O B Ref Force\n0\n0\n105\n102\n0\n343\n0 = DigIN Slot0.1\n102 = DigIN SlotA.3\n105 = DigIN SlotA.6\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 287",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Standard applica- tion",
+            "HVAC applica- tion",
+            "PID control applica- tion",
+            "Multi- pump (single drive) ap- plication",
+            "Multi- pump (multi- drive) ap- plication",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "3.3.1.5",
+            "I/O A Ref Sel",
+            "6",
+            "6",
+            "7",
+            "7",
+            "7",
+            "",
+            "117",
+            "6 = AI1 + AI2 7 = PID"
+          ],
+          [
+            "3.3.1.6",
+            "I/O B Ref Sel",
+            "4",
+            "4",
+            "4",
+            "4",
+            "4",
+            "",
+            "131",
+            "4 = AI1"
+          ],
+          [
+            "3.3.1.7",
+            "Keypad Ref Sel",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "",
+            "121",
+            "2 = Keypad Refer- ence"
+          ],
+          [
+            "3.3.1.10",
+            "Fieldbus Ref Sel",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "",
+            "122",
+            "3 = Fieldbus Ref- erence"
+          ],
+          [
+            "3.3.3.1",
+            "Preset Freq Mode",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "182",
+            "0 = Binary Coded"
+          ],
+          [
+            "3.3.3.3",
+            "Preset Freq 1",
+            "10.0",
+            "10.0",
+            "10.0",
+            "10.0",
+            "10.0",
+            "Hz",
+            "105",
+            ""
+          ],
+          [
+            "3.3.3.4",
+            "Preset Freq 2",
+            "15.0",
+            "15.0",
+            "15.0",
+            "15.0",
+            "15.0",
+            "Hz",
+            "106",
+            ""
+          ],
+          [
+            "3.3.3.5",
+            "Preset Freq 3",
+            "20.0",
+            "20.0",
+            "20.0",
+            "20.0",
+            "20.0",
+            "Hz",
+            "126",
+            ""
+          ],
+          [
+            "P3.3.6.1",
+            "Flushing Refer- ence Activation",
+            "0",
+            "0",
+            "0",
+            "0",
+            "101",
+            "",
+            "530",
+            "0 = DigIN Slot0.1 101 = DigIN Slo- tA.2"
+          ],
+          [
+            "P3.3.6.2",
+            "Flushing Refer- ence",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "Hz",
+            "1239",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Stand- ard ap- plication",
+            "HVAC applica- tion",
+            "PID control appli- cation",
+            "Multi- pump (single drive) applica- tion",
+            "Multi- pump (multi- drive) applica- tion",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "3.5.1.1",
+            "Ctrl Signal 1 A",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "",
+            "403",
+            "100 = DigIN SlotA.1"
+          ],
+          [
+            "3.5.1.2",
+            "Ctrl Signal 2 A",
+            "101",
+            "101",
+            "0",
+            "0",
+            "0",
+            "",
+            "404",
+            "0 = DigIN Slot0.1 101 = DigIN SlotA.2"
+          ],
+          [
+            "3.5.1.4",
+            "Ctrl Signal 1 B",
+            "0",
+            "0",
+            "103",
+            "101",
+            "0",
+            "",
+            "423",
+            "0 = DigIN Slot0.1 101 = DigIN SlotA.2 103 = DigIN SlotA.4"
+          ],
+          [
+            "3.5.1.7",
+            "I/O B Ctrl Force",
+            "0",
+            "0",
+            "105",
+            "102",
+            "0",
+            "",
+            "425",
+            "0 = DigIN Slot0.1 102 = DigIN SlotA.3 105 = DigIN SlotA.6"
+          ],
+          [
+            "3.5.1.8",
+            "I/O B Ref Force",
+            "0",
+            "0",
+            "105",
+            "102",
+            "0",
+            "",
+            "343",
+            "0 = DigIN Slot0.1 102 = DigIN SlotA.3 105 = DigIN SlotA.6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nIndex\nParameter\nStand-\nard ap-\nplication\nHVAC\napplica-\ntion\nPID\ncontrol\nappli-\ncation\nMulti-\npump\n(single\ndrive)\napplica-\ntion\nMulti-\npump\n(multi-\ndrive)\napplica-\ntion\nUnit\nID\nDescription\n3.5.1.9\nFieldbus Ctrl\nForce\n0\n0\n0\n0\n0\n411\n3.5.1.10\nKeypad Ctrl\nForce\n0\n0\n0\n0\n0\n410\n3.5.1.11\nExternal Fault\nClose\n102\n102\n101\n0\n105\n405\n0 = DigIN Slot0.1\n101 = DigIN SlotA.2\n102 = DigIN SlotA.3\n105 = DigIN SlotA.6\n3.5.1.13\nFault Reset Close\n105\n105\n102\n0\n103\n414\n0 = DigIN Slot0.1\n102 = DigIN SlotA.3\n103 = DigIN SlotA.4\n105 = DigIN SlotA.6\n3.5.1.21\nPreset Freq Sel0\n103\n103\n104\n0\n0\n419\n0 = DigIN Slot0.1\n103 = DigIN SlotA.4\n104 = DigIN SlotA.5\n3.5.1.22\nPreset Freq Sel1\n104\n104\n0\n0\n0\n420\n0 = DigIN Slot0.1\n104 = DigIN SlotA.5\n3.5.1.23\nPreset Freq Sel2\n0\n0\n0\n0\n0\n421\nP3.5.1.31\nPID Setpoint Se-\nlection\n0\n0\n0\n0\n102\n1047\n0 = DigIN Slot0.1\n102 = DigIN SlotA.3\nP3.5.1.36\nFlushing Refer-\nence Activation\n0\n0\n0\n0\n101\n530\n0 = DigIN Slot0.1\n101 = DigIN SlotA.2\nP3.5.1.42\nPump 1 Interlock\n0\n0\n0\n103\n0\n426\n0 = DigIN Slot0.1\n103 = DigIN SlotA.4\nP3.5.1.43\nPump 2 Interlock\n0\n0\n0\n104\n0\n427\n0 = DigIN Slot0.1\n104 = DigIN SlotA.5\nP3.5.1.44\nPump 3 Interlock\n0\n0\n0\n105\n0\n428\n0 = DigIN Slot0.1 105 =\nDigIN SlotA.6\n3.5.2.1.1\nAI1 Signal Selec-\ntion\n100\n100\n100\n100\n100\n377\n100 = AnIN SlotA.1\n3.5.2.1.2\nAI1 Filter Time\n0.1\n0.1\n0.1\n0.1\n0.1\ns\n378\n3.5.2.1.3\nAI1 Signal Range\n0\n0\n0\n0\n0\n379\n0 = 0 ... 10 V/0 ... 20 mA\n3.5.2.1.4\nAI1 Custom Min\n0.0\n0.0\n0.0\n0.0\n0.0\n%\n380\n3.5.2.1.5\nAI1 Custom Max\n100.0\n100.0\n100.0\n100.0\n100.0\n%\n381\n288 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Stand- ard ap- plication",
+            "HVAC applica- tion",
+            "PID control appli- cation",
+            "Multi- pump (single drive) applica- tion",
+            "Multi- pump (multi- drive) applica- tion",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "3.5.1.9",
+            "Fieldbus Ctrl Force",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "411",
+            ""
+          ],
+          [
+            "3.5.1.10",
+            "Keypad Ctrl Force",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "410",
+            ""
+          ],
+          [
+            "3.5.1.11",
+            "External Fault Close",
+            "102",
+            "102",
+            "101",
+            "0",
+            "105",
+            "",
+            "405",
+            "0 = DigIN Slot0.1 101 = DigIN SlotA.2 102 = DigIN SlotA.3 105 = DigIN SlotA.6"
+          ],
+          [
+            "3.5.1.13",
+            "Fault Reset Close",
+            "105",
+            "105",
+            "102",
+            "0",
+            "103",
+            "",
+            "414",
+            "0 = DigIN Slot0.1 102 = DigIN SlotA.3 103 = DigIN SlotA.4 105 = DigIN SlotA.6"
+          ],
+          [
+            "3.5.1.21",
+            "Preset Freq Sel0",
+            "103",
+            "103",
+            "104",
+            "0",
+            "0",
+            "",
+            "419",
+            "0 = DigIN Slot0.1 103 = DigIN SlotA.4 104 = DigIN SlotA.5"
+          ],
+          [
+            "3.5.1.22",
+            "Preset Freq Sel1",
+            "104",
+            "104",
+            "0",
+            "0",
+            "0",
+            "",
+            "420",
+            "0 = DigIN Slot0.1 104 = DigIN SlotA.5"
+          ],
+          [
+            "3.5.1.23",
+            "Preset Freq Sel2",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "421",
+            ""
+          ],
+          [
+            "P3.5.1.31",
+            "PID Setpoint Se- lection",
+            "0",
+            "0",
+            "0",
+            "0",
+            "102",
+            "",
+            "1047",
+            "0 = DigIN Slot0.1 102 = DigIN SlotA.3"
+          ],
+          [
+            "P3.5.1.36",
+            "Flushing Refer- ence Activation",
+            "0",
+            "0",
+            "0",
+            "0",
+            "101",
+            "",
+            "530",
+            "0 = DigIN Slot0.1 101 = DigIN SlotA.2"
+          ],
+          [
+            "P3.5.1.42",
+            "Pump 1 Interlock",
+            "0",
+            "0",
+            "0",
+            "103",
+            "0",
+            "",
+            "426",
+            "0 = DigIN Slot0.1 103 = DigIN SlotA.4"
+          ],
+          [
+            "P3.5.1.43",
+            "Pump 2 Interlock",
+            "0",
+            "0",
+            "0",
+            "104",
+            "0",
+            "",
+            "427",
+            "0 = DigIN Slot0.1 104 = DigIN SlotA.5"
+          ],
+          [
+            "P3.5.1.44",
+            "Pump 3 Interlock",
+            "0",
+            "0",
+            "0",
+            "105",
+            "0",
+            "",
+            "428",
+            "0 = DigIN Slot0.1 105 = DigIN SlotA.6"
+          ],
+          [
+            "3.5.2.1.1",
+            "AI1 Signal Selec- tion",
+            "100",
+            "100",
+            "100",
+            "100",
+            "100",
+            "",
+            "377",
+            "100 = AnIN SlotA.1"
+          ],
+          [
+            "3.5.2.1.2",
+            "AI1 Filter Time",
+            "0.1",
+            "0.1",
+            "0.1",
+            "0.1",
+            "0.1",
+            "s",
+            "378",
+            ""
+          ],
+          [
+            "3.5.2.1.3",
+            "AI1 Signal Range",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "379",
+            "0 = 0 ... 10 V/0 ... 20 mA"
+          ],
+          [
+            "3.5.2.1.4",
+            "AI1 Custom Min",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "%",
+            "380",
+            ""
+          ],
+          [
+            "3.5.2.1.5",
+            "AI1 Custom Max",
+            "100.0",
+            "100.0",
+            "100.0",
+            "100.0",
+            "100.0",
+            "%",
+            "381",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameter Descriptions\nIndex\nParameter\nStand-\nard ap-\nplication\nHVAC\napplica-\ntion\nPID\ncontrol\nappli-\ncation\nMulti-\npump\n(single\ndrive)\napplica-\ntion\nMulti-\npump\n(multi-\ndrive)\napplica-\ntion\nUnit\nID\nDescription\n3.5.2.1.6\nAI1 Signal Inver-\nsion\n0\n0\n0\n0\n0\n387\n3.5.2.2.1\nAI2 Signal Selec-\ntion\n101\n101\n101\n101\n101\n388\n101 = AnIN SlotA.2\n3.5.2.2.2\nAI2 Filter Time\n0.1\n0.1\n0.1\n0.1\n0.1\ns\n389\n3.5.2.2.3\nAI2 Signal Range\n1\n1\n1\n1\n1\n390\n1 = 2 ... 10 V/4 ... 20 mA\n3.5.2.2.4\nAI2 Custom Min\n0.0\n0.0\n0.0\n0.0\n0.0\n%\n391\n3.5.2.2.5\nAI2 Custom Max\n100.0\n100.0\n100.0\n100.0\n100.0\n%\n392\n3.5.2.2.6\nAI2 Signal Inver-\nsion\n0\n0\n0\n0\n0\n398\n3.5.3.2.1\nRO1 Function\n2\n2\n2\n49\n2\n11001\n2 = Run\n3.5.3.2.4\nRO2 Function\n3\n3\n3\n50\n3\n11004\n3 = Fault\n3.5.3.2.7\nRO3 Function\n1\n1\n1\n51\n1\n11007\n1 = Ready\n3.5.4.1.1\nAO1 Function\n2\n2\n2\n2\n2\n10050\n2 = Output Freq\n3.5.4.1.2\nAO1 Filter Time\n1.0\n1.0\n1.0\n1.0\n1.0\ns\n10051\n3.5.4.1.3\nAO1 Min Signal\n0\n0\n0\n0\n0\n10052\n3.5.4.1.4\nAO1 Min Scale\n0.0\n0.0\n0.0\n0.0\n0.0\n10053\n3.5.4.1.5\nAO1 Max Scale\n0.0\n0.0\n0.0\n0.0\n0.0\n10054\nTable 135: Default Values of Parameters of Group 3.10\nIndex\nParameter\nStandard\napplication\nHVAC ap-\nplication\nPID con-\ntrol appli-\ncation\nMulti-pump\n(single drive)\napplication\nMulti-pump\n(multidrive)\napplication\nUnit\nID\nDescription\nP3.10.1\nAutomatic\nReset\n0\n0\n1\n1\n1\n731\n0 = Disabled\n1 = Enabled\nTable 136: Default Values of Parameters of Group 3.13\nIndex\nParameter\nStandard\napplica-\ntion\nHVAC\napplica-\ntion\nPID\ncontrol\napplica-\ntion\nMulti-\npump\n(single\ndrive) ap-\nplication\nMulti-\npump\n(multi-\ndrive) ap-\nplication\nUnit\nID\nDescription\nP3.13.2.5\nPID Setpoint Se-\nlection\n0\n0\n0\n102\n1047\n0 = DigIN Slot0.1\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 289",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Stand- ard ap- plication",
+            "HVAC applica- tion",
+            "PID control appli- cation",
+            "Multi- pump (single drive) applica- tion",
+            "Multi- pump (multi- drive) applica- tion",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "3.5.2.1.6",
+            "AI1 Signal Inver- sion",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "387",
+            ""
+          ],
+          [
+            "3.5.2.2.1",
+            "AI2 Signal Selec- tion",
+            "101",
+            "101",
+            "101",
+            "101",
+            "101",
+            "",
+            "388",
+            "101 = AnIN SlotA.2"
+          ],
+          [
+            "3.5.2.2.2",
+            "AI2 Filter Time",
+            "0.1",
+            "0.1",
+            "0.1",
+            "0.1",
+            "0.1",
+            "s",
+            "389",
+            ""
+          ],
+          [
+            "3.5.2.2.3",
+            "AI2 Signal Range",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "",
+            "390",
+            "1 = 2 ... 10 V/4 ... 20 mA"
+          ],
+          [
+            "3.5.2.2.4",
+            "AI2 Custom Min",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "%",
+            "391",
+            ""
+          ],
+          [
+            "3.5.2.2.5",
+            "AI2 Custom Max",
+            "100.0",
+            "100.0",
+            "100.0",
+            "100.0",
+            "100.0",
+            "%",
+            "392",
+            ""
+          ],
+          [
+            "3.5.2.2.6",
+            "AI2 Signal Inver- sion",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "398",
+            ""
+          ],
+          [
+            "3.5.3.2.1",
+            "RO1 Function",
+            "2",
+            "2",
+            "2",
+            "49",
+            "2",
+            "",
+            "11001",
+            "2 = Run"
+          ],
+          [
+            "3.5.3.2.4",
+            "RO2 Function",
+            "3",
+            "3",
+            "3",
+            "50",
+            "3",
+            "",
+            "11004",
+            "3 = Fault"
+          ],
+          [
+            "3.5.3.2.7",
+            "RO3 Function",
+            "1",
+            "1",
+            "1",
+            "51",
+            "1",
+            "",
+            "11007",
+            "1 = Ready"
+          ],
+          [
+            "3.5.4.1.1",
+            "AO1 Function",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "",
+            "10050",
+            "2 = Output Freq"
+          ],
+          [
+            "3.5.4.1.2",
+            "AO1 Filter Time",
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "1.0",
+            "s",
+            "10051",
+            ""
+          ],
+          [
+            "3.5.4.1.3",
+            "AO1 Min Signal",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "",
+            "10052",
+            ""
+          ],
+          [
+            "3.5.4.1.4",
+            "AO1 Min Scale",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "",
+            "10053",
+            ""
+          ],
+          [
+            "3.5.4.1.5",
+            "AO1 Max Scale",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "",
+            "10054",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Standard application",
+            "HVAC ap- plication",
+            "PID con- trol appli- cation",
+            "Multi-pump (single drive) application",
+            "Multi-pump (multidrive) application",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.10.1",
+            "Automatic Reset",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "",
+            "731",
+            "0 = Disabled 1 = Enabled"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Standard applica- tion",
+            "HVAC applica- tion",
+            "PID control applica- tion",
+            "Multi- pump (single drive) ap- plication",
+            "Multi- pump (multi- drive) ap- plication",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.13.2.5",
+            "PID Setpoint Se- lection",
+            "0",
+            "0",
+            "0",
+            "102",
+            "",
+            "1047",
+            "",
+            "0 = DigIN Slot0.1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nIndex\nParameter\nStandard\napplica-\ntion\nHVAC\napplica-\ntion\nPID\ncontrol\napplica-\ntion\nMulti-\npump\n(single\ndrive) ap-\nplication\nMulti-\npump\n(multi-\ndrive) ap-\nplication\nUnit\nID\nDescription\n102 = DigIN SlotA.3\n3.13.2.6\nPID Setpoint\nSource 1\n-\n-\n1\n1\n1\n332\n1 = Keypad Setpoint\n1\nP3.13.2.10\nPID Setpoint\nSource 2\n-\n-\n-\n-\n2\n431\n2 = Keypad Setpoint\n2\n3.13.3.1\nPID Feedback\nFunction\n-\n-\n1\n1\n1\n333\n1 = Only Source 1 in\nuse\n3.13.3.3\nPID Feedback\nSource\n-\n-\n2\n2\n2\n334\n2 = AI2\nTable 137: Default Values of Parameters of Group 3.15\nIndex\nParameter\nStandard\napplica-\ntion\nHVAC\napplica-\ntion\nPID\ncontrol\nappli-\ncation\nMulti-\npump\n(single\ndrive) ap-\nplication\nMulti-\npump\n(multi-\ndrive) ap-\nplication\nUnit\nID\nDescription\nP3.15.1\nMulti-pump Mode\n-\n-\n-\n0\n2\n1785\n0= Single drive\n1= Multifollower\n2= Multimaster\nP3.15.2\nNumber of Pumps\n1\n1\n1\n3\n3\n1001\nP3.15.5\nPump Interlocking\n-\n-\n-\n1\n1\n1032\n0 = Disabled\n1 = Enabled\nP3.15.6\nAutochange\n-\n-\n-\n1\n1\n1027\n0 = Disabled\n1 = Enabled (inter-\nval)\n2 = Enabled\n(weekdays)\nP3.15.7\nAutochanged\nPumps\n-\n-\n-\n1\n1\n1028\n0 = Auxiliary Pump\n1 = All Pumps\nP3.15.8\nAutochange Inter-\nval\n-\n-\n-\n48.0\n48.0\nh\n1029\nP3.15.11\nAutochange Fre-\nquency Limit\n-\n-\n-\n25.0\n25.0\nHz\n1031\nP3.15.12\nAutochange Pump\nLimit\n-\n-\n-\n1\n3\n1030\nP3.15.13\nBandwidth\n-\n-\n-\n10.0\n10.0\n%\n1097\n290 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Standard applica- tion",
+            "HVAC applica- tion",
+            "PID control applica- tion",
+            "Multi- pump (single drive) ap- plication",
+            "Multi- pump (multi- drive) ap- plication",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "102 = DigIN SlotA.3"
+          ],
+          [
+            "3.13.2.6",
+            "PID Setpoint Source 1",
+            "-",
+            "-",
+            "1",
+            "1",
+            "1",
+            "",
+            "332",
+            "1 = Keypad Setpoint 1"
+          ],
+          [
+            "P3.13.2.10",
+            "PID Setpoint Source 2",
+            "-",
+            "-",
+            "-",
+            "-",
+            "2",
+            "",
+            "431",
+            "2 = Keypad Setpoint 2"
+          ],
+          [
+            "3.13.3.1",
+            "PID Feedback Function",
+            "-",
+            "-",
+            "1",
+            "1",
+            "1",
+            "",
+            "333",
+            "1 = Only Source 1 in use"
+          ],
+          [
+            "3.13.3.3",
+            "PID Feedback Source",
+            "-",
+            "-",
+            "2",
+            "2",
+            "2",
+            "",
+            "334",
+            "2 = AI2"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Standard applica- tion",
+            "HVAC applica- tion",
+            "PID control appli- cation",
+            "Multi- pump (single drive) ap- plication",
+            "Multi- pump (multi- drive) ap- plication",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.15.1",
+            "Multi-pump Mode",
+            "-",
+            "-",
+            "-",
+            "0",
+            "2",
+            "",
+            "1785",
+            "0= Single drive 1= Multifollower 2= Multimaster"
+          ],
+          [
+            "P3.15.2",
+            "Number of Pumps",
+            "1",
+            "1",
+            "1",
+            "3",
+            "3",
+            "",
+            "1001",
+            ""
+          ],
+          [
+            "P3.15.5",
+            "Pump Interlocking",
+            "-",
+            "-",
+            "-",
+            "1",
+            "1",
+            "",
+            "1032",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "P3.15.6",
+            "Autochange",
+            "-",
+            "-",
+            "-",
+            "1",
+            "1",
+            "",
+            "1027",
+            "0 = Disabled 1 = Enabled (inter- val) 2 = Enabled (weekdays)"
+          ],
+          [
+            "P3.15.7",
+            "Autochanged Pumps",
+            "-",
+            "-",
+            "-",
+            "1",
+            "1",
+            "",
+            "1028",
+            "0 = Auxiliary Pump 1 = All Pumps"
+          ],
+          [
+            "P3.15.8",
+            "Autochange Inter- val",
+            "-",
+            "-",
+            "-",
+            "48.0",
+            "48.0",
+            "h",
+            "1029",
+            ""
+          ],
+          [
+            "P3.15.11",
+            "Autochange Fre- quency Limit",
+            "-",
+            "-",
+            "-",
+            "25.0",
+            "25.0",
+            "Hz",
+            "1031",
+            ""
+          ],
+          [
+            "P3.15.12",
+            "Autochange Pump Limit",
+            "-",
+            "-",
+            "-",
+            "1",
+            "3",
+            "",
+            "1030",
+            ""
+          ],
+          [
+            "P3.15.13",
+            "Bandwidth",
+            "-",
+            "-",
+            "-",
+            "10.0",
+            "10.0",
+            "%",
+            "1097",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameter Descriptions\nIndex\nParameter\nStandard\napplica-\ntion\nHVAC\napplica-\ntion\nPID\ncontrol\nappli-\ncation\nMulti-\npump\n(single\ndrive) ap-\nplication\nMulti-\npump\n(multi-\ndrive) ap-\nplication\nUnit\nID\nDescription\nP3.15.14\nBandwidth Delay\n-\n-\n-\n10\n10\ns\n1098\nP3.15.15\nConstant Produc-\ntion Speed\n-\n-\n-\n-\n100.0\n%\n1513\nP3.15.16\nRunning Pumps\nLimit\n-\n-\n-\n3\n3\n1187\nTable 138: Default Values of Parameters of Group 5.7\nIndex\nParameter\nStandard\napplication\nHVAC ap-\nplication\nPID con-\ntrol appli-\ncation\nMulti-pump\n(single drive)\napplication\nMulti-pump\n(multidrive)\napplication\nUnit\nID\nDescription\nP5.7.1\nTimeout\ntime\n5\n5\n5\n5\n5\nmin\n804\nP5.7.2\nDefault Page\n4\n4\n4\n4\n4\n2318\n4 = Multi-\nmonitor\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 291",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Standard applica- tion",
+            "HVAC applica- tion",
+            "PID control appli- cation",
+            "Multi- pump (single drive) ap- plication",
+            "Multi- pump (multi- drive) ap- plication",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.15.14",
+            "Bandwidth Delay",
+            "-",
+            "-",
+            "-",
+            "10",
+            "10",
+            "s",
+            "1098",
+            ""
+          ],
+          [
+            "P3.15.15",
+            "Constant Produc- tion Speed",
+            "-",
+            "-",
+            "-",
+            "-",
+            "100.0",
+            "%",
+            "1513",
+            ""
+          ],
+          [
+            "P3.15.16",
+            "Running Pumps Limit",
+            "-",
+            "-",
+            "-",
+            "3",
+            "3",
+            "",
+            "1187",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Standard application",
+            "HVAC ap- plication",
+            "PID con- trol appli- cation",
+            "Multi-pump (single drive) application",
+            "Multi-pump (multidrive) application",
+            "Unit",
+            "ID",
+            "Description"
+          ],
+          [
+            "P5.7.1",
+            "Timeout time",
+            "5",
+            "5",
+            "5",
+            "5",
+            "5",
+            "min",
+            "804",
+            ""
+          ],
+          [
+            "P5.7.2",
+            "Default Page",
+            "4",
+            "4",
+            "4",
+            "4",
+            "4",
+            "",
+            "2318",
+            "4 = Multi- monitor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\n12 Fault Tracing\n12.1 Fault Types\nWhen the control diagnostics of the AC drive find an unusual condition in the operation of the drive, the drive shows a notification\nabout it. The notification can be seen on the display of the control panel. The display shows the code, the name, and a short descrip-\ntion of the fault or alarm.\nThe source info tells the source of the fault, what caused it, where it occurred, and other data.\nThere are 3 different types of notification.\n. An info does not affect the operation of the drive. The info must be reset.\n· An alarm informs of unusual operation on the drive. It does not stop the drive. The alarm must be reset.\n· A fault stops the drive. The drive must be reset and find a solution to the problem.\nIt is possible to program different responses for some faults in the application. See more in 6.9 Group 3.9: Protections.\nReset the fault with the [BACK/RESET] button on the keypad, or through the I/O terminal, fieldbus, or PC tool. The faults stay in the\nFault history where they can be examined. See the different fault codes in 12.3 Fault Codes.\nBefore contacting the distributor or the factory because of unusual operation, prepare some data. Write down all the texts on the\ndisplay, the fault code, the fault ID, the source info, the Active Faults list, and the Fault History.\n12.2 Alarms and Warnings\nIn condition-based monitoring, for each feature, the user can define activation stages for warnings and alarms. The interpretation of\nalarm and warning color codes are as follows:\nGreen: No alarms are indicated. Condition-based monitoring operations continue.\nYellow: First indication of warning-stage 1 alarm is visible. Stage 1 warning fault are also shown as Stage 1 Warning (S1). Notification\nto users to plan for maintenance operations. In this stage, condition-based monitoring operations continue.\nOrange: Clear indication of warning-stage 2 alarm is visible. Stage 2 warning fault are also shown as Stage 2 Warning (S2). Notifica-\ntion to users to act as soon as possible before the fault becomes critical.\nRed: A critical alarm has occurred and condition-based monitoring operations has stopped.\n12.3 Fault Codes\n12.3.1 Fault Code 1, ID 1 - Overcurrent (Hardware Fault)\nCause\nThere is too high a current (> 4 x IH) in the motor cable.\n· a sudden heavy load increase\n· a short circuit in the motor cables\n. the motor is not the correct type\n· the parameter settings are not properly made\nTroubleshooting\n· Check the loading.\n. Check the motor.\n•\nCheck the cables and connections.\n· Make an identification run.\n· Set the acceleration time longer (P3.4.1.2 and P3.4.2.2).\n12.3.2 Fault Code 1, ID 2 - Overcurrent (Software Fault)\nCause\nThere is too high a current (> 4 x IH) in the motor cable.\n· a sudden heavy load increase\n· a short circuit in the motor cables\n. the motor is not the correct type\n· the parameter settings are not properly made\n292 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nTroubleshooting\n•\nCheck the loading.\n· Check the motor.\n· Check the cables and connections.\n· Make an identification run.\n· Set the acceleration time longer (P3.4.1.2 and P3.4.2.2).\n12.3.3 Fault Code 2, ID 10 - Overvoltage (Hardware Fault)\nCause\nThe DC link voltage is higher than the limits.\n· too short a deceleration time\n· high overvoltage spikes in the supply\nTroubleshooting\n· Set the deceleration time longer (P3.4.1.3 and P3.4.2.3).\n· Activate the overvoltage controller.\n· Check the input voltage.\n12.3.4 Fault Code 2, ID 11 - Overvoltage (Software Fault)\nCause\nThe DC link voltage is higher than the limits.\n· too short a deceleration time\n· high overvoltage spikes in the supply\nTroubleshooting\n· Set the deceleration time longer (P3.4.1.3 and P3.4.2.3).\n· Activate the overvoltage controller.\n· Check the input voltage.\n12.3.5 Fault Code 3, ID 20 - Earth Fault (Hardware Fault)\nCause\nThe measurement of current tells that the sum of the motor phase current is not zero.\n. an insulation malfunction in the cables or the motor\n· a filter (dU/dt, sine) malfunction\nTroubleshooting\n. Check the motor cables and the motor.\n•\nCheck the filters.\n12.3.6 Fault Code 3, ID 21 - Earth fault (Software Fault)\nCause\nThe measurement of current tells that the sum of the motor phase current is not zero.\n. an insulation malfunction in the cables or the motor\n· a filter (dU/dt, sine) malfunction\nTroubleshooting\n. Check the motor cables and the motor.\n· Check the filters.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 293",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\n12.3.7 Fault Code 5, ID 40 - Charging Switch\nCause\nThe charging switch is closed and the feedback information is OPEN.\n· operation malfunction\n· defective component\nTroubleshooting\n· Reset the fault and restart the drive.\n. Check the feedback signal and the cable connection between the control board and the power board.\n. If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.8 Fault Code 7, ID 60 - Saturation\nCause\n· Defective IGBT.\n•\nDe-saturation short circuit in the IGBT.\n· A short circuit or an overload in the brake resistor.\nTroubleshooting\n. This fault cannot be reset from the control panel.\n· Switch off the power.\n. DO NOT RESTART THE DRIVE or CONNECT THE POWER!\n· Ask for instructions from the factory.\n12.3.9 Fault Code 8, ID 600 - System Fault\nCause\n. There is no communication between the control board and the power unit.\nTroubleshooting\n· Reset the fault and restart the drive.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n. If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.10 Fault Code 8, ID 601 - System Fault\nCause\n. There is no communication between the control board and the power.\nTroubleshooting\n· Reset the fault and restart the drive.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n· If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.11 Fault Code 8, ID 602 - System Fault\nCause\n· Defective component.\n· Operation malfunction.\nTroubleshooting\n· Reset the fault and restart the drive.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n. If the fault occurs again, ask for instructions from your nearest distributor.\n294 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\n12.3.12 Fault Code 8, ID 603 - System Fault\nCause\n· Defective component.\n· Operation malfunction.\n· The voltage of auxiliary power in the power unit is too low.\nTroubleshooting\n· Reset the fault and restart the drive.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n. If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.13 Fault Code 8, ID 604 - System Fault\nCause\n· Defective component.\n· Operation malfunction.\n· Output phase voltage does not agree to the reference.\n· Feedback fault.\nTroubleshooting\n· Reset the fault and restart the drive.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n· If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.14 Fault Code 8, ID 605 - System Fault\nCause\n· Defective component.\n· Operation malfunction.\nTroubleshooting\n· Reset the fault and restart the drive.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n. If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.15 Fault Code 8, ID 606 - System Fault\nCause\n· The software of the control unit is not compatible with the software of the power unit.\nTroubleshooting\n· Reset the fault and restart the drive.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n. If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.16 Fault Code 8, ID 607 - System Fault\nCause\n· The software version cannot be read. There is no software in the power unit.\n· Defective component.\n· Operation malfunction (a problem in the power board or the measurement board).\nTroubleshooting\n· Reset the fault and restart the drive.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n. If the fault occurs again, ask for instructions from your nearest distributor.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 295",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\n12.3.17 Fault Code 8, ID 608 - System Fault\nCause\n· A CPU overload.\nTroubleshooting\n· Reset the fault and restart the drive.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n· If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.18 Fault Code 8, ID 609 - System Fault\nCause\n· Defective component.\n· Operation malfunction.\nTroubleshooting\n· Reset the fault and make a power down of the drive twice.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n12.3.19 Fault Code 8, ID 610 - System Fault\nCause\n· Defective component.\n· Operation malfunction.\nTroubleshooting\n•\nReset the fault and restart.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n. If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.20 Fault Code 8, ID 614 - System Fault\nCause\n•\nConfiguration error.\n· Software error.\n· Defective component (a defective control board).\n· Operation malfunction.\nTroubleshooting\n· Reset the fault and restart.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n· If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.21 Fault Code 8, ID 647 - System Fault\nCause\n· Defective component.\n· Operation malfunction.\nTroubleshooting\n· Reset the fault and restart.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n. If the fault occurs again, ask for instructions from your nearest distributor.\n296 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\n12.3.22 Fault Code 8, ID 648 - System Fault\nCause\n· Operation malfunction.\n· The system software is not compatible with the application.\nTroubleshooting\n· Reset the fault and restart.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n. If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.23 Fault Code 8, ID 649 - System Fault\nCause\n· A resource overload.\n· A parameter loading, restoring or saving malfunction.\nTroubleshooting\n· Load the factory default settings.\n· Download the latest software from the Danfoss Drives website. Update the drive with it.\n12.3.24 Fault Code 8, ID 667 - System Fault\nCause\n· Ethernet PHY is not recognized or it is in the wrong state.\nTroubleshooting\n· Reset the fault and restart the AC drive.\n· Download the newest software from the Danfoss Drives website. Update the drive with it.\n. If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.25 Fault Code 8, ID 670 - System Fault\nCause\n· The output voltage is too low because of overload, a defective component, or a shortcut.\nTroubleshooting\n· Check the loading of the auxiliary output.\n· Reset the fault and restart the AC drive.\n· Download the newest software from the Danfoss Drives website. Update the drive with it.\n· If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.26 Fault Code 8, ID 827 - System Fault\nCause\n· Invalid/incorrect license key provided (via keypad or VCX).\n· The license key is incorrect or not for this drive.\nTroubleshooting\n· Reset the fault and restart the AC drive.\n· Enter the license key to the AC drive again.\n· Download the newest software from the Danfoss Drives website. Update the drive with it.\n· If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.27 Fault Code 8, ID 828 - System Fault\nCause\n· The entered license key was accepted and stored to the drive.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 297",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nTroubleshooting\n-\n12.3.28 Fault Code 8, ID 829 - System Fault\nCause\n· New licenses have been taken into use since the previous start-up.\nTroubleshooting\n-\n12.3.29 Fault Code 8, ID 830 - System Fault\nCause\n· Licenses have been removed from the drive.\nTroubleshooting\n-\n12.3.30 Fault Code 9, ID 80 - Undervoltage (Fault)\nCause\nThe DC link voltage is lower than the limits.\n· too low a supply voltage\n· defective component\n· a defective input fuse\n· the external charge switch is not closed\nNOTE! This fault becomes active only if the drive is in Run state.\nTroubleshooting\n· If there is a temporary supply voltage break, reset the fault and restart the drive.\n· Do a check of the supply voltage. If the supply voltage is sufficient, there is an internal fault.\n· Examine the electrical network for fault.\n· Ask for instructions from your nearest distributor.\n12.3.31 Fault Code 10, ID 91 - Input Phase\nCause\n•\nsupply voltage malfunction\n· a defective fuse or malfunction in the supply cables\nThe load must be a minimum of 10-20% for the supervision to work.\nTroubleshooting\n· Check the supply voltage.\n· Check the fuses.\n· Check the supply cable.\n· Check the rectifying bridge.\n· Check the gate control of the thyristor (MR6->).\n12.3.32 Fault Code 10, ID 92 - Input Phase\nCause\n· Software-based input phase supervision.\nTroubleshooting\n•\nCheck the supply voltage.\n•\nCheck the fuses.\n•\nCheck the supply cable.\n298 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nNOTICE\nThis fault is only used with enclosure sizes MR9B, MR10, MR11, and MR12.\n12.3.33 Fault Code 10, ID 94 - Input Phase\nCause\n· Software-based input phase supervision.\nTroubleshooting\n· Check the supply voltage.\n•\nCheck the fuses.\n· Check the supply cable.\nNOTICE\nThis fault is only used with enclosure sizes MR11 and MR12.\n12.3.34 Fault Code 11, ID 100 - Output Phase Supervision\nCause\nThe current measurement tells that there is no current in 1 motor phase.\n· A motor or motor cables malfunction.\n· Filter (dU/dt, sine wave) malfunction.\nTroubleshooting\n. Check the motor cable and the motor.\n· Check the dU/dt or sine wave filter.\n12.3.35 Fault Code 13, ID 120 - AC Drive Undertemperature (Fault)\nCause\n· Too low a temperature in the heat sink of the power unit or in the power board.\nTroubleshooting\n. The ambient temperature is too low for the drive. Move the drive in a warmer position.\n12.3.36 Fault Code 14, ID 130 - AC Drive Overtemperature (Fault, Heat Sink)\nCause\n. Too high a temperature in the heat sink of the power unit or in the power board.\n· The temperature limits of the heat sink are different in all the enclosure sizes.\nTroubleshooting\n. Check the actual amount and flow of cooling air.\n•\nExamine the heat sink for dust.\n· Check the ambient temperature.\n. Make sure that the switching frequency is not too high in relation to the ambient temperature and the motor load.\n•\nCheck the cooling fan.\n12.3.37 Fault Code 14, ID 131 - AC Drive Overtemperature (Alarm, Heat Sink)\nCause\n· Too high a temperature in the heat sink of the power unit or in the power board.\n· The temperature limits of the heat sink are different in all the enclosure sizes.\nTroubleshooting\n· Check the actual amount and flow of cooling air.\n· Examine the heat sink for dust.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 299",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nFault Tracing\n· Check the ambient temperature.\n. Make sure that the switching frequency is not too high in relation to the ambient temperature and the motor load.\n•\nCheck the cooling fan.\n12.3.38 Fault Code 14, ID 132 - AC Drive Overtemperature (Fault, Board)\nCause\n· Too high a temperature in the heat sink of the power unit or in the power board.\n· The temperature limits of the heat sink are different in all the enclosure sizes.\nTroubleshooting\n. Check the actual amount and flow of cooling air.\n· Examine the heat sink for dust.\n· Check the ambient temperature.\n. Make sure that the switching frequency is not too high in relation to the ambient temperature and the motor load.\n· Check the cooling fan.\n12.3.39 Fault Code 14, ID 133 - AC Drive Overtemperature (Alarm, Board)\nCause\n· Too high a temperature in the heat sink of the power unit or in the power board.\n· The temperature limits of the heat sink are different in all the enclosure sizes.\nTroubleshooting\n· Check the actual amount and flow of cooling air.\n· Examine the heat sink for dust.\n· Check the ambient temperature.\n. Make sure that the switching frequency is not too high in relation to the ambient temperature and the motor load.\n· Check the cooling fan.\n12.3.40 Fault Code 14, ID 134 - AC Drive Overtemperature (Fault)\nCause\n· Power unit auxiliary temperature is too high.\nTroubleshooting\n. Check the actual amount and flow of cooling air.\n· Examine the heat sink for dust.\n· Check the ambient temperature.\n. Make sure that the switching frequency is not too high in relation to the ambient temperature and the motor load.\n· Check the cooling fan.\n12.3.41 Fault Code 14, ID 136 - Overvoltage Protection Circuit Temperature (Alarm)\nCause\n· Too high an output capacitance or a ground fault in the floating network.\nTroubleshooting\n. Check the cables and the motor.\nCause\n12.3.42 Fault Code 14, ID 137 - Overvoltage Protection Circuit Temperature (Fault)\n· Too high an output capacitance or a ground fault in the floating network.\nTroubleshooting\n•\nCheck the cables and the motor.\n300 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\n12.3.43 Fault Code 14, ID 138 - AC Drive Overtemperature (Fault)\nCause\n· Output filter temperature is too high.\nTroubleshooting\n. Check the motor cables and the motor.\n. Check the correct amount and flow of cooling air.\n· Check the ambient temperature.\n12.3.44 Fault Code 14, ID 139 - AC Drive Overtemperature (Fault)\nCause\n· Brake chopper temperature is too high.\nTroubleshooting\n· Check the correct amount and flow of cooling air.\n· Check the heat sink of the brake chopper for dust.\n•\nCheck the ambient temperature.\n12.3.45 Fault Code 15, ID 140 - Motor Stall\nCause\n· The motor stalled.\nTroubleshooting\n. Check the motor and the load.\n12.3.46 Fault Code 16, ID 150 - Motor Overtemperature\nCause\n· There is too heavy a load on the motor.\nTroubleshooting\n. Decrease the motor load. If there is no motor overload, check the motor thermal protection parameters (parameter group 3.9\nProtections).\n12.3.47 Fault Code 17, ID 160 - Motor Underload\nCause\n. There is not a sufficient load on the motor.\nTroubleshooting\n· Check the load.\n· Check the parameters.\n•\nCheck the dU/dt and sine wave filters.\n12.3.48 Fault Code 18, ID 170 - Unbalance\nCause\n· The current is unbalanced between power units.\nTroubleshooting\n. Check the motor cables and connections.\n· Check the output filters (dU/dt filter, sine filter).\n· Reset the fault and restart the drive.\n· If the fault occurs again, ask for instructions from your nearest service center or distributor. Report carefully all the used soft-\nware, application and options.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 301",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nNOTICE\nThis fault is only used with enclosure sizes MR11 and MR12.\n12.3.49 Fault Code 18, ID 171 - Unbalance\nCause\n· The DC voltage is unbalanced between power units.\nTroubleshooting\n· Check the DC link cables between the power units.\n· Check the motor cables and connections.\n· Check the output filters (dU/dt filter, sine filter).\n· Reset the fault and restart the drive.\n. If the fault occurs again, ask for instructions from your nearest service center or distributor. Report carefully all the used soft-\nware, application, and options.\nNOTICE\nThis fault is only used with enclosure sizes MR11 and MR12.\n12.3.50 Fault Code 18, ID 173 - Unbalance (Alarm)\nCause\n· The current is unbalanced between power units.\nTroubleshooting\n. Check the installation and the motor cables.\n•\nRedo the IGBT ID run.\n· The event response can be set to No Action.\nNOTICE\nThis fault is only used with enclosure sizes MR11 and MR12.\n12.3.51 Fault Code 19, ID 180 - Power Overload (Short-time Supervision)\nCause\n· The power of the drive is too high.\nTroubleshooting\n•\nDecrease the load.\n· Examine the dimensions of drive. Examine if it is too small for the load.\n12.3.52 Fault Code 19, ID 181 - Power Overload (Long-time Supervision)\nCause\n· The power of the drive is too high.\nTroubleshooting\n· Decrease the load.\n. Examine the dimensions of drive. Examine if it is too small for the load.\n12.3.53 Fault Code 25, ID 240 - Motor Control Fault\nCause\nThis fault is available only if you use a customer-specific application. A malfunction in the start angle identification.\n· The rotor moves during identification.\n· The new angle does not agree with the old value.\n302 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nTroubleshooting\n•\nReset the fault and restart the drive.\n· Increase the identification current.\n· See the fault history source for more information.\n12.3.54 Fault Code 25, ID 241 - Motor Control Fault\nCause\nThis fault is available only if you use a customer-specific application. A malfunction in the start angle identification.\n· The rotor moves during identification.\n· The new angle does not agree with the old value.\nTroubleshooting\n· Reset the fault and restart the drive.\n· Increase the identification current.\n· See the fault history source for more information.\n12.3.55 Fault Code 26, ID 250 - Start-up Prevented\nCause\n· It is not possible to do a start-up of the drive. When the Run request is ON, a new software (a firmware or an application), a\nparameter setting, or other file that affects the operation of the drive, is loaded to drive.\nTroubleshooting\n· Reset the fault and stop the drive.\n· Load the software and start the drive.\n12.3.56 Fault Code 29, ID 280 - ATEX Thermistor\nCause\n· The ATEX thermistor tells that there is an overtemperature.\nTroubleshooting\n. Reset the fault. Check the thermistor and its connections.\n12.3.57 Fault Code 30, ID 290 - Safe Off\nCause\n. The safe Off signal A does not let you set the drive to the READY state.\nTroubleshooting\n· Reset the fault and restart the drive.\n. Check the signals from the control board to the power unit and the D connector.\n12.3.58 Fault Code 30, ID 291 - Safe Off\nCause\n· The safe Off signal B does not let you set the drive to the READY state.\nTroubleshooting\n· Reset the fault and restart the drive.\n. Check the signals from the control board to the power unit and the D connector.\n12.3.59 Fault Code 30, ID 500 - Safety Configuration\nCause\n· The safety configuration switch was installed.\nTroubleshooting\n•\nRemove the safety configuration switch from the control board.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 303",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\n12.3.60 Fault Code 30, ID 501 - Safety Configuration\nCause\n. There are too many STO option boards. It is possible to have only 1.\nTroubleshooting\n· Keep 1 of the STO option boards. Remove the others. See the safety manual.\n12.3.61 Fault Code 30, ID 502 - Safety Configuration\nCause\n· The STO option board was installed in an incorrect slot.\nTroubleshooting\n. Put the STO option board into the correct slot. See the OPTBJ STO Safety manual.\n12.3.62 Fault Code 30, ID 503 - Safety configuration\nCause\n· There is no safety configuration switch on the control board.\nTroubleshooting\n· Install the safety configuration switch on the control board. See the safety manual.\n12.3.63 Fault Code 30, ID 504 - Safety configuration\nCause\n· The safety configuration switch was installed incorrectly on the control board.\nTroubleshooting\n· Install the safety configuration switch into the correct position on the control board. See the safety manual.\n12.3.64 Fault Code 30, ID 505 - Safety configuration\nCause\n· The safety configuration switch was installed incorrectly on the STO option board.\nTroubleshooting\n· Check the installation of the safety configuration switch on the STO option board. See the safety manual.\n12.3.65 Fault Code 30, ID 506 - Safety configuration\nCause\n· There is no communication with the STO option board.\nTroubleshooting\n· Check the installation of the STO option board. See the safety manual.\nCause\n12.3.66 Fault Code 30, ID 507 - Safety configuration\n· The STO option board is not compatible with the hardware.\nTroubleshooting\n· Reset the drive and restart it. If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.67 Fault Code 30, ID 520 - Safety diagnostics\nCause\n· The STO inputs have a different status.\n304 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nFault Tracing\nTroubleshooting\n· Check the external safety switch. Check the input connection and cable of the safety switch.\n· Reset the drive and restart.\n· If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.68 Fault Code 30, ID 521 - Safety diagnostics\nCause\n· A malfunction in the ATEX thermistor diagnostic. There is no connection in the ATEX thermistor input.\nTroubleshooting\n· Reset the drive and restart.\n. If the fault occurs again, change the option board.\n12.3.69 Fault Code 30, ID 522 - Safety diagnostics\nCause\n· A short circuit in the connection of the ATEX thermistor input.\nTroubleshooting\n· Check the ATEX thermistor input connection.\n•\nCheck the external ATEX connection.\n· Check the external ATEX thermistor.\n12.3.70 Fault Code 30, ID 530 - Safe Torque Off\nCause\n· An emergency stop was connected or some other STO operation was activated.\nTroubleshooting\n· When the STO function is activated, the drive is in safe state.\n12.3.71 Fault Code 32, ID 311 - Fan Cooling\nCause\n· The fan speed does not agree to the speed reference accurately, but the drive operates correctly.\n. This fault shows only in the MR7 and in enclosure sizes bigger than MR7.\nTroubleshooting\n· Reset the fault and restart the drive.\n. Clean or replace the fan.\n12.3.72 Fault Code 32, ID 312 - Fan Cooling\nCause\n· The fan life time (that is, 50 000 h) is complete.\nTroubleshooting\n. Replace the fan and reset the life time counter of the fan.\nCause\n12.3.73 Fault Code 33, ID 320 - Fire Mode Enabled\n. The fire mode of the drive is enabled. The protections of the drive are disabled or autoreset.\nTroubleshooting\n· Check the parameter settings and the signals.\n· This alarm is reset automatically when fire mode is disabled.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 305",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nFault Tracing\n12.3.74 Fault Code 37, ID 361 - Device Changed (Same Type)\nCause\n· The power unit was replaced by a new one that has the same size. The device is ready to be used. The parameters are available\nin the drive.\nTroubleshooting\n· Reset the fault. The drive reboots after you reset the fault.\n12.3.75 Fault Code 37, ID 362 - Device Changed (Same Type)\nCause\n· The option board in slot B was replaced by a new one that you have used before in the same slot. The device is ready to be used.\nTroubleshooting\n· Reset the fault. The drive starts to use the old parameter settings.\n12.3.76 Fault Code 37, ID 363 - Device Changed (Same Type)\nCause\n· The option board in slot C was replaced by a new one that you have used before in the same slot. The device is ready to be\nused.\nTroubleshooting\n· Reset the fault. The drive starts to use the old parameter settings.\n12.3.77 Fault Code 37, ID 364 - Device Changed (Same Type)\nCause\n. The option board in slot D was replaced by a new one that you have used before in the same slot. The device is ready to be\nused.\nTroubleshooting\n•\nReset the fault. The drive starts to use the old parameter settings.\n12.3.78 Fault Code 37, ID 365 - Device Changed (Same Type)\nCause\n. The option board in slot E was replaced by a new one that you have used before in the same slot. The device is ready to be used.\nTroubleshooting\n· Reset the fault. The drive starts to use the old parameter settings.\nCause\n12.3.79 Fault Code 38, ID 372 - Device Added (Same Type)\n· An option board was put into slot B. You have used the option board before in the same slot.\nTroubleshooting\n· The device is ready for use. The drive starts to use the old parameter settings.\n12.3.80 Fault Code 38, ID 373 - Device Added (Same Type)\nCause\n· An option board was put into slot C. You have used the option board before in the same slot.\nTroubleshooting\n· The device is ready for use. The drive starts to use the old parameter settings.\n12.3.81 Fault Code 38, ID 374 - Device Added (Same Type)\nCause\n· An option board was put into slot D. You have used the option board before in the same slot.\n306 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nTroubleshooting\n· The device is ready for use. The drive starts to use the old parameter settings.\n12.3.82 Fault Code 38, ID 375 - Device Added (Same Type)\nCause\n· An option board was put into slot E. You have used the option board before in the same slot.\nTroubleshooting\n· The device is ready for use. The drive starts to use the old parameter settings.\n12.3.83 Fault Code 39, ID 382 - Device Removed\nCause\n. An option board was removed from slot A or B.\nTroubleshooting\n· The device is not available. Reset the fault.\n12.3.84 Fault Code 39, ID 383 - Device Removed\nCause\n· An option board was removed from slot C.\nTroubleshooting\n· The device is not available. Reset the fault.\n12.3.85 Fault Code 39, ID 384 - Device Removed\nCause\n· An option board was removed from slot D.\nTroubleshooting\n· The device is not available. Reset the fault.\n12.3.86 Fault Code 39, ID 385 - Device Removed\nCause\n· An option board was removed from slot E.\nTroubleshooting\n· The device is not available. Reset the fault.\n12.3.87 Fault Code 40, ID 390 - Device Unknown\nCause\n· An unknown device was connected (the power unit/option board).\nTroubleshooting\n· The device is not available. If the fault occurs again, ask for instructions from your nearest distributor.\n12.3.88 Fault Code 41, ID 400 - IGBT Temperature\nCause\nThe calculated IGBT temperature is too high.\n· too high a motor load\n•\ntoo high an ambient temperature\n· hardware malfunction\nTroubleshooting\n· Check the parameter settings.\n· Examine the actual amount and flow of cooling air.\n· Check the ambient temperature.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 307",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nFault Tracing\n· Examine the heatsink for dust.\n. Make sure that the switching frequency is not too high in relation to the ambient temperature and the motor load.\n· Check the cooling fan.\n•\nMake an identification run.\n12.3.89 Fault Code 44, ID 431 - Device Changed (Different Type)\nCause\n· There is a new power unit of a different type. Parameters are not available in the settings.\nTroubleshooting\n· Reset the fault. The drive reboots after you reset the fault.\n· Set the power unit parameters again.\n12.3.90 Fault Code 44, ID 433 - Device Changed (Different Type)\nCause\n· The option board in slot C was replaced by a new one that you have not used before in the same slot. No parameter settings are\nsaved.\nTroubleshooting\n· Reset the fault. Set the option board parameters again.\n12.3.91 Fault Code 44, ID 434 - Device Changed (Different Type)\nCause\n· The option board in slot D was replaced by a new one that you have not used before in the same slot. No parameter settings are\nsaved.\nTroubleshooting\n· Reset the fault. Set the option board parameters again.\n12.3.92 Fault Code 44, ID 435 - Device Changed (Different Type)\nCause\n· The option board in slot E was replaced by a new one that you have not used before in the same slot. No parameter settings are\nsaved.\nTroubleshooting\n· Reset the fault. Set the option board parameters again.\n12.3.93 Fault Code 45, ID 441 - Device Added (Different Type)\nCause\n· There is a new power unit of a different type. Parameters are not available in the settings.\nTroubleshooting\n· Reset the fault. The drive reboots after you reset the fault.\n•\nSet the power unit parameters again.\n12.3.94 Fault Code 45, ID 443 - Device Added (Different Type)\nCause\n· A new option board, that you have not used before in the same slot, was put in slot C. No parameter settings are saved.\nTroubleshooting\n· Set the option board parameters again.\n12.3.95 Fault Code 45, ID 444 - Device Added (Different Type)\nCause\n· A new option board, that you have not used before in the same slot, was put in slot D. No parameter settings are saved.\n308 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "VACON® 100 FLOW\nDanfoss\nFault Tracing\nApplication Guide\nTroubleshooting\n•\nSet the option board parameters again.\n12.3.96 Fault Code 45, ID 445 - Device Added (Different Type)\nCause\n· A new option board, that you have not used before in the same slot, was put in slot E. No parameter settings are saved.\nTroubleshooting\n· Set the option board parameters again.\n12.3.97 Fault Code 46, ID 662 - Real Time Clock\nCause\n· The voltage of the RTC battery is low.\nTroubleshooting\n•\nReplace the battery.\n12.3.98 Fault Code 47, ID 663 - Software Updated\nCause\n· The software of the drive was updated, the full software package or an application.\nTroubleshooting\n· No steps are necessary.\n12.3.99 Fault Code 50, ID 1050 - AI Low Fault\nCause\n· 1 or more of the available analog input signals is below 50% of the minimum signal range.\n· A control cable is defective or loose.\n· A malfunction in a signal source.\nTroubleshooting\n· Replace the defective parts.\n· Check the analog input circuit.\n· Make sure that parameter Al1 Signal Range is set correctly.\n12.3.100 Fault Code 51, ID 1051 - Device External Fault\nCause\n. The digital input signal that is set with parameter P3.5.1.11 or P3.5.1.12 was activated.\nTroubleshooting\n· This is a user-defined fault.\n· Check the digital inputs and schematics.\n12.3.101 Fault Code 52, ID 1052 - Keypad Communication Fault\nCause\n· The connection between the control panel and the drive is defective.\nTroubleshooting\n· Check the control panel connection and the control panel cable if you have it.\n12.3.102 Fault Code 52, ID 1352 - Keypad Communication Fault\nCause\n· The connection between the control panel and the drive is defective.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 309",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nTroubleshooting\n· Check the control panel connection and the control panel cable if you have it.\n12.3.103 Fault Code 53, ID 1053 - Fieldbus Communication Fault\nCause\n. The data connection between the fieldbus master and the fieldbus board is defective.\nTroubleshooting\n· Check the installation and fieldbus master.\n12.3.104 Fault Code 53, ID 1054 - Redundant Switchover\nCause\n. The data connection between controlling fieldbus and the drive has timed out. Redundant control has changed the controlling\nfieldbus connection.\nTroubleshooting\n· Check the installation and the communication cables.\n12.3.105 Fault Code 53, ID 1055 - Redundant Timeout\nCause\n· The data connection between controlling fieldbus protocols and the drive has timed out.\nTroubleshooting\n· Check the installation and the communication cables.\n12.3.106 Fault Code 54, ID 1354 - Slot A fault\nCause\n· A defective option board or slot.\nTroubleshooting\n. Check the board and the slot.\n· Ask for instructions from your nearest distributor.\n12.3.107 Fault Code 54, ID 1454 - Slot B fault\nCause\n· A defective option board or slot.\nTroubleshooting\n. Check the board and the slot.\n· Ask for instructions from your nearest distributor.\n12.3.108 Fault Code 54, ID 1554 - Slot C fault\nCause\n· A defective option board or slot.\nTroubleshooting\n. Check the board and the slot.\n· Ask for instructions from your nearest distributor.\n12.3.109 Fault Code 54, ID 1654 - Slot D fault\nCause\n· A defective option board or slot.\nTroubleshooting\n. Check the board and the slot.\n· Ask for instructions from your nearest distributor.\n310 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nFault Tracing\n12.3.110 Fault Code 54, ID 1754 - Slot E fault\nCause\n· A defective option board or slot.\nTroubleshooting\n· Check the board and the slot.\n· Ask for instructions from your nearest distributor.\n12.3.111 Fault Code 57, ID 1057 - Identification\nCause\n· There was a failure in the identification run.\nTroubleshooting\n. Make sure that the motor is connected to the drive.\n. Make sure that there is no load on the motor shaft.\nMake sure that the start command is not removed before the identification run is complete.\n12.3.112 Fault Code 57, ID 1157 - Identification\nCause\n· During the identification run, drive was not able to reach required frequency reference.\nTroubleshooting\n· Make sure that minimum and maximum frequency references are set correctly. Too low maximum frequency can prevent drive\nfrom reaching required frequency.\n12.3.113 Fault Code 57, ID 1257 - Identification\nCause\n· During the identification run, drive was not able to reach required frequency reference.\nTroubleshooting\n. Make sure that acceleration time is set correctly. Too long acceleration time can prevent drive from reaching required frequency\nin 40 seconds.\n12.3.114 Fault Code 57, ID 1357 - Identification\nCause\n· During the identification run, drive was not able to reach required frequency reference.\nTroubleshooting\n. Make sure that current, torque, and power limits of the drive are set correctly. Too low limit settings can prevent drive from\nreaching required frequency.\n12.3.115 Fault Code 63, ID 1063 - Quick Stop Fault\nCause\n· The quick stop function is activated.\nTroubleshooting\n. Find the cause for the quick stop activation. After you find it, correct it. Reset the fault and restart the drive.\n· See parameter P3.5.1.26 and the quick stop parameters.\n12.3.116 Fault Code 63, ID 1363 - Quick Stop Alarm\nCause\n· The quick stop function is activated.\nTroubleshooting\n. Find the cause for the quick stop activation. After you find it, correct it. Reset the fault and restart the drive.\n· See parameter P3.5.1.26 and the quick stop parameters.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 311",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\n12.3.117 Fault Code 65, ID 1065 - PC Communication Fault\nCause\n· The data connection between the PC and the drive is defective.\nTroubleshooting\n· Check the installation, cable, and terminals between the PC and the drive.\n12.3.118 Fault Code 66, ID 1366 - Thermistor Input 1 Fault\nCause\n· The motor temperature increased.\nTroubleshooting\n. Check the motor cooling and the load.\n· Check the thermistor connection.\n. If the thermistor input is not used, you have to short-circuit it.\n· Ask for instructions from your nearest distributor.\n12.3.119 Fault Code 66, ID 1466 - Thermistor Input 2 Fault\nCause\n· The motor temperature increased.\nTroubleshooting\n. Check the motor cooling and the load.\n. Check the thermistor connection.\n. If the thermistor input is not used, you have to short-circuit it.\n· Ask for instructions from your nearest distributor.\n12.3.120 Fault Code 66, ID 1566 - Thermistor Input 3 Fault\nCause\n· The motor temperature increased.\nTroubleshooting\n. Check the motor cooling and the load.\n. Check the thermistor connection.\n. If the thermistor input is not used, you have to short-circuit it.\n· Ask for instructions from your nearest distributor.\n12.3.121 Fault Code 68, ID 1301 - Maintenance Counter 1 Alarm\nCause\n· The value of the maintenance counter is higher than the alarm limit.\nTroubleshooting\n· Do the necessary maintenance.\n· Reset the counter. See parameter B3.16.4 or P3.5.1.40.\n12.3.122 Fault Code 68, ID 1302 - Maintenance Counter 1 Fault\nCause\n· The value of the maintenance counter is higher than the fault limit.\nTroubleshooting\n· Do the necessary maintenance.\n· Reset the counter. See parameter B3.16.4 or P3.5.1.40.\n312 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nFault Tracing\n12.3.123 Fault Code 68, ID 1303 - Maintenance Counter 2 Alarm\nCause\n· The value of the maintenance counter is higher than the alarm limit.\nTroubleshooting\n· Do the necessary maintenance.\n· Reset the counter. See parameter B3.16.4 or P3.5.1.40.\n12.3.124 Fault Code 68, ID 1304 - Maintenance Counter 2 Fault\nCause\n· The value of the maintenance counter is higher than the fault limit.\nTroubleshooting\n· Do the necessary maintenance.\n· Reset the counter. See parameter B3.16.4 or P3.5.1.40.\n12.3.125 Fault Code 69, ID 1310 - Fieldbus Mapping Error\nCause\n. The ID number that is used to map the values to Fieldbus Process Data Out is not valid.\nTroubleshooting\n· Check the parameters in the Fieldbus Data menu.\n12.3.126 Fault Code 69, ID 1311 - Fieldbus Mapping Error\nCause\n· It is not possible to convert 1 or more values for Fieldbus Process Data Out.\n· The type of the value is undefined.\nTroubleshooting\n· Check the parameters in the Fieldbus Data menu.\n12.3.127 Fault Code 69, ID 1312 - Fieldbus Mapping Error\nCause\n· There is an overflow when the values for Fieldbus Process Data Out (16-bit) are mapped and converted.\nTroubleshooting\n· Check the parameters in the Fieldbus Data menu.\n12.3.128 Fault Code 70, ID 1120 - BaselineRun Failed\nCause\n· There was a failure during the baseline run.\nTroubleshooting\n· Do a check of the parameters in the baseline run settings.\n12.3.129 Fault Code 71, ID 1121 - Stator Winding: Current Warning S1\nCause\n· Current unbalance has exceeded the detection high limit. Early fault detected in motor.\nTroubleshooting\n· Check motor stator windings.\n12.3.130 Fault Code 71, ID 1122 - Stator Winding: Current Warning S2\nCause\n· Current unbalance has exceeded the detection high limit. Severe fault can soon occur in the motor.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 313",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nTroubleshooting\n· Check motor stator windings.\n12.3.131 Fault Code 71, ID 1123 - Stator Winding: Current Alarm/Fault\nCause\n· Current unbalance has exceeded the detection high limit. Severe fault is detected in motor.\nTroubleshooting\n· Check motor stator windings.\n12.3.132 Fault Code 71, ID 1127 - Vibration Warning S1\nCause\n· Vibration has exceeded the detection high limit. Early fault detected in motor.\nTroubleshooting\n· Check root cause for increased vibration.\n12.3.133 Fault Code 71, ID 1128 - Vibration Warning S2\nCause\n· Vibration has exceeded the detection high limit. Severe fault can occur soon in the motor.\nTroubleshooting\n· Check root cause for increased vibration.\n12.3.134 Fault Code 71, ID 1129 - Vibration Alarm/Fault\nCause\n· Vibration has exceeded the detection high limit. Severe fault detected in motor.\nTroubleshooting\n· Check root cause for increased vibration.\n12.3.135 Fault Code 71, ID 1130 - Load Warning S1\nCause\n. Load outside of the window limits. Early fault detected in motor.\nTroubleshooting\n· Check root cause for excessive overload or underload.\n12.3.136 Fault Code 71, ID 1131 - Load Warning S2\nCause\n. Load outside of the window limits. Severe fault can occur soon in the motor.\nTroubleshooting\n· Check root cause for excessive overload or underload.\nCause\n12.3.137 Fault Code 71, ID 1132 - Load Alarm/Fault\n· Load outside of the window limits. Severe fault is detected in motor.\nTroubleshooting\n· Check root cause for excessive overload or underload.\n12.3.138 Fault Code 76, ID 1076 - Start Prevented\nCause\n. The start command is blocked to prevent the accidental rotation of the motor during the first power-up.\n314 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nFault Tracing\nTroubleshooting\n· Reset the drive to start the correct operation. The parameter settings tell if it is necessary to restart the drive.\n12.3.139 Fault Code 77, ID 1077 - > 5 Connections\nCause\n. There are more than 5 active fieldbus or PC tool connections. You can use only 5 connections at the same time.\nTroubleshooting\n· Leave 5 active connections. Remove the other connections.\n12.3.140 Fault Code 78, ID 1078 - Identification Ongoing\nCause\n· The drive is running the identification for the motor.\nTroubleshooting\n. You can stop the identification run at any time by removing the start command. When the identification run is completed, a\nnew start command is needed to start the drive.\n12.3.141 Fault Code 100, ID 1100 - Soft Fill Timeout\nCause\n. There is a timeout in the Soft fill function in the PID controller. The process value was not achieved in the time limit.\n· A pipe that broke can be the cause.\nTroubleshooting\n· Check the process.\n· Check the parameters in the menu M3.13.8.\n12.3.142 Fault Code 101, ID 1101 - Feedback Supervision Fault (PID 1)\nCause\n· The feedback value is not in the supervision limits (P3.13.6.2 and P3.13.6.3) and the delay (P3.13.6.4), if you set the delay.\nTroubleshooting\n· Check the process.\n· Check the parameter settings, the supervision limits, and the delay.\n12.3.143 Fault Code 105, ID 1105 - Feedback Supervision Fault (ExtPID)\nCause\n. The feedback value is not in the supervision limits (P3.14.4.2 and P3.14.4.3) and the delay (P3.14.4.4), if you set the delay.\nTroubleshooting\n· Check the process.\n· Check the parameter settings, the supervision limits, and the delay.\n12.3.144 Fault Code 109, ID 1109 - Input Pressure Supervision\nCause\n· The supervision signal of the input pressure (P3.13.9.2) is lower than the alarm limit (P3.13.9.7).\nTroubleshooting\n· Check the process.\n· Check the parameters in menu M3.13.9.\n· Check the input pressure sensor and connections.\n12.3.145 Fault Code 109, ID 1409 - Input Pressure Supervision\nCause\n· The supervision signal of the input pressure (P3.13.9.2) is lower than the fault limit (P3.13.9.8).\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 315",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nTroubleshooting\n· Check the process.\n· Check the parameters in menu M3.13.9.\n· Check the input pressure sensor and connections.\n12.3.146 Fault Code 111, ID 1315 - Temperature Fault 1\nCause\n· 1 or more of the temperature input signals (set in P3.9.6.1) is higher than the alarm limit (P3.9.6.2).\nTroubleshooting\n· Find the cause of the temperature rise.\n· Check the temperature sensor and connections.\n· If no sensor is connected, make sure that the temperature input is hardwired.\n· See the option board manual for more data.\n12.3.147 Fault Code 111, ID 1316 - Temperature Fault 1\nCause\n· 1 or more of the temperature input signals (set in P3.9.6.1) is higher than the fault limit (P3.9.6.3).\nTroubleshooting\n· Find the cause of the temperature rise.\n· Check the temperature sensor and connections.\n· If no sensor is connected, make sure that the temperature input is hardwired.\n•\nSee the option board manual for more data.\n12.3.148 Fault Code 112, ID 1317 - Temperature Fault 2\nCause\n· 1 or more of the temperature input signals (set in P3.9.6.5) is higher than the fault limit (P3.9.6.6).\nTroubleshooting\n· Find the cause of the temperature rise.\n· Check the temperature sensor and connections.\n· If no sensor is connected, make sure that the temperature input is hardwired.\n. See the option board manual for more data.\n12.3.149 Fault Code 112, ID 1318 - Temperature Fault 2\nCause\n· 1 or more of the temperature input signals (set in P3.9.6.5) is higher than the fault limit (P3.9.6.7).\nTroubleshooting\n· Find the cause of the temperature rise.\n· Check the temperature sensor and connections.\n· If no sensor is connected, make sure that the temperature input is hardwired.\n· See the option board manual for more data.\n12.3.150 Fault Code 113, ID 1113 - Pump Running Time\nCause\n· In the Multi-pump system, 1 or more of the pump run-time counters is above a user-specified alarm limit.\nTroubleshooting\n· Do the necessary maintenance actions, reset the run-time counter, and reset the alarm. See Pump running time counters.\n316 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "VACON® 100 FLOW\nDanfoss\nFault Tracing\nApplication Guide\n12.3.151 Fault Code 113, ID 1313 - Pump Running Time\nCause\n· In the Multi-pump system, 1 or more of the pump run-time counters is above a user-specified alarm limit.\nTroubleshooting\n· Do the necessary maintenance actions, reset the run-time counter, and reset the alarm. See Pump running time counters.\n12.3.152 Fault Code 117, ID 1117 - Flow Switch\nCause\n· The feedback signal from the flow switch was inactive longer than the specified flow switch fault delay time.\nTroubleshooting\n· Do a check of the process.\n· Do a check of the parameter settings.\n12.3.153 Fault Code 118, ID 1118 - AHF Over Temp\nCause\n· The advanced harmonic filter function has caused an overtemperature fault through a digital input.\nTroubleshooting\n· Check the advanced harmonic filter function.\n12.3.154 Fault Code 119, ID 1119 - Auto Cleaning\nCause\n· The motor did not reach the expected speed reference during the auto cleaning sequence.\nTroubleshooting\n· Check the process.\n· Check the auto cleaning parameter settings.\n12.3.155 Fault Code 300, ID 700 - Unsupported\nCause\n· The application is not compatible (it is unsupported).\nTroubleshooting\n· Replace the application.\n12.3.156 Fault Code 300, ID 701 - Unsupported\nCause\n· The option board or the slot is not compatible (it is unsupported).\nTroubleshooting\n· Remove the option board.\n12.4 Total and Trip Counters\nThe AC drive has different counters based on the operation time of the drive and the energy consumption. Some of the counters\nmeasure total values and some can be reset.\nThe energy counters measure the energy that is taken from the supply network. The other counters are used to measure, for exam-\nple, the operation time of the drive or the run-time of the motor.\nIt is possible to monitor all the counter values from the PC, control panel, or fieldbus. When using the PC or the control panel, it is\npossible to monitor the counter values in the Diagnostics menu. When using fieldbus, it is possible to read the counter values with\nthe ID numbers.\n12.4.1 Operating Time Counter\nResetting: not possible\nLocation: submenu Total counters\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 317",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nThe value of the counter has 5 different 16-bit values. To read the value of the counter through fieldbus, use these ID numbers.\nID number\nCounter value\nID 1754\nOperating Time Counter (years)\nID 1755\nOperating Time Counter (days)\nID 1756\nOperating Time Counter (hours)\nID 1757\nOperating Time Counter (minutes)\nID 1758\nOperating Time Counter (seconds)\nExample\nThe value 1a 143d 02:21 is received from the operating time counter from the fieldbus.\n•\nID1754: 1 (years)\n•\nID1755: 143 (days)\n· ID1756: 2 (hours)\n•\nID1757: 21 (minutes)\n•\nID1758: 0 (seconds)\n12.4.2 Operating Time Trip Counter\nThe operating time trip counter of the control unit can be reset. It is in the submenu Trip counters. It is possible to reset the counter\nwith the PC, the control panel, or the fieldbus. The value of the counter has 5 different 16-bit values. To read the value of the coun-\nter through fieldbus, use these ID numbers.\nID number\nCounter value\nID 1766\nOperating Time Trip Counter (years)\nID 1767\nOperating Time Trip Counter (days)\nID 1768\nOperating Time Trip Counter (hours)\nID 1769\nOperating Time Trip Counter (minutes)\nID 1770\nOperating Time Trip Counter (seconds)\nExample\nThe value 1a 143d 02:21 is received from the operating time trip counter from the fieldbus.\n· ID1766: 1 (years)\n•\nID1767: 143 (days)\n•\nID1768: 2 (hours)\n· ID1769: 21 (minutes)\n· ID1770: 0 (seconds)\nID number\nCounter value\nID 2311\nOperating Time Trip Counter Reset\nTo reset the energy trip counter, use the PC, the control panel, or the fieldbus. When using the PC or the control panel, reset the\ncounter in the Diagnostics menu. When using the fieldbus, set a rising edge to ID 2311 Operating Time Trip Counter Reset.\n12.4.3 Run Time Counter\nThe run time counter of the motor cannot be reset. It is in the submenu Total counters. The value of the counter has 5 different 16-\nbit values. To read the value of the counter through fieldbus, use these ID numbers.\n318 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "ID number",
+            "Counter value"
+          ],
+          [
+            "ID 1754",
+            "Operating Time Counter (years)"
+          ],
+          [
+            "ID 1755",
+            "Operating Time Counter (days)"
+          ],
+          [
+            "ID 1756",
+            "Operating Time Counter (hours)"
+          ],
+          [
+            "ID 1757",
+            "Operating Time Counter (minutes)"
+          ],
+          [
+            "ID 1758",
+            "Operating Time Counter (seconds)"
+          ]
+        ],
+        [
+          [
+            "ID number",
+            "Counter value"
+          ],
+          [
+            "ID 1766",
+            "Operating Time Trip Counter (years)"
+          ],
+          [
+            "ID 1767",
+            "Operating Time Trip Counter (days)"
+          ],
+          [
+            "ID 1768",
+            "Operating Time Trip Counter (hours)"
+          ],
+          [
+            "ID 1769",
+            "Operating Time Trip Counter (minutes)"
+          ],
+          [
+            "ID 1770",
+            "Operating Time Trip Counter (seconds)"
+          ]
+        ],
+        [
+          [
+            "ID number",
+            "Counter value"
+          ],
+          [
+            "ID 2311",
+            "Operating Time Trip Counter Reset"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\nID number\nCounter value\nID 1772\nRun Time Counter (years)\nID 1773\nRun Time Counter (days)\nID 1774\nRun Time Counter (hours)\nID 1775\nRun Time Counter (minutes)\nID 1776\nRun Time Counter (seconds)\nExample\nThe value 1a 143d 02:21 is received from the run time counter from the fieldbus.\n· ID1772: 1 (years)\n•\nID1773: 143 (days)\n•\nID1774: 2 (hours)\n· ID1775: 21 (minutes)\n•\nID1776: 0 (seconds)\n12.4.4 Power on Time Counter\nThe power on time counter of the power unit is in the submenu Total counters. It is not possible to reset the counter. The value of\nthe counter has 5 different 16-bit values. To read the value of the counter through fieldbus, use these ID numbers.\nID number\nCounter value\nID 1777\nPower On Time Counter (years)\nID 1778\nPower On Time Counter (days)\nID 1779\nPower On Time Counter (hours)\nID 1780\nPower On Time Counter (minutes)\nID 1781\nPower On Time Counter (seconds)\nExample\nThe value 1a 240d 02:18 is received from the power on time counter from the fieldbus.\n· ID1777: 1 (years)\n· ID1778: 240 (days)\n•\nID1779: 2 (hours)\n•\nID1780: 18 (minutes)\n· ID1781: 0 (seconds)\n12.4.5 Energy Counter\nThe energy counter counts the total quantity of energy that the drive gets from the supply network. The counter cannot be reset. To\nread the value of the counter through fieldbus, use these ID numbers.\nID number\nCounter value\nID 2291\nEnergy Counter\nThe value always has 4 digits. The format and the unit of the counter change to agree with the energy counter value.\nExample\n•\n0.001 kWh\n•\n0.010 kWh\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 319",
+      "tablas": [
+        [
+          [
+            "ID number",
+            "Counter value"
+          ],
+          [
+            "ID 1772",
+            "Run Time Counter (years)"
+          ],
+          [
+            "ID 1773",
+            "Run Time Counter (days)"
+          ],
+          [
+            "ID 1774",
+            "Run Time Counter (hours)"
+          ],
+          [
+            "ID 1775",
+            "Run Time Counter (minutes)"
+          ],
+          [
+            "ID 1776",
+            "Run Time Counter (seconds)"
+          ]
+        ],
+        [
+          [
+            "ID number",
+            "Counter value"
+          ],
+          [
+            "ID 1777",
+            "Power On Time Counter (years)"
+          ],
+          [
+            "ID 1778",
+            "Power On Time Counter (days)"
+          ],
+          [
+            "ID 1779",
+            "Power On Time Counter (hours)"
+          ],
+          [
+            "ID 1780",
+            "Power On Time Counter (minutes)"
+          ],
+          [
+            "ID 1781",
+            "Power On Time Counter (seconds)"
+          ]
+        ],
+        [
+          [
+            "ID number",
+            "Counter value"
+          ],
+          [
+            "ID 2291",
+            "Energy Counter"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nFault Tracing\n•\n0.100 kWh\n•\n1.000 kWh\n•\n10.00 kWh\n•\n100.0 kWh\n•\n1.000 MWh\n•\n10.00 MWh\n•\n100.0 MWh\n•\n1.000 GWh\n•\nand so on\nID number\nCounter value\nID 2303\nEnergy Counter Format\nThe energy counter format gives the position of the decimal point in the value of the Energy Counter.\n· 40 = 4 digits, 0 fractional digits\n· 41 = 4 digits, 1 fractional digit\n· 42 = 4 digits, 2 fractional digits\n· 43 = 4 digits, 3 fractional digits\nExample\n•\n0.001 kWh (Format = 43)\n•\n100.0 kWh (Format = 41)\n· 10.00 MWh (Format = 42)\nID number\nCounter value\nID 2305\nEnergy Counter Unit\nThe energy counter unit gives the unit for the value of the Energy Counter.\n· 0 = kWh\n•\n1 = MWh\n· 2 = GWh\n· 3 = TWh\n•\n4 = PWh\nExample\nIf the value 4500 is received from ID 2291, the value 42 from ID 2303, and the value 0 from ID 2305, the result is 45.00 kWh.\n12.4.6 Energy Trip Counter\nThe energy trip counter counts the quantity of energy that the drive gets from the supply network. The counter is in the submenu\nTrip counters. It is possible to reset the counter with the PC, the control panel, or the fieldbus. To read the value of the counter\nthrough fieldbus, use these ID numbers.\nID number\nCounter value\nID 2296\nEnergy Trip Counter\nThe value has always 4 digits. The format and the unit of the counter change to agree with the energy trip counter value. See the\nfollowing example. It is possible to monitor the energy counter format and unit with ID 2307 Energy Trip Counter Format and ID\n2309 Energy trip Counter unit.\n320 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "ID number",
+            "Counter value"
+          ],
+          [
+            "ID 2303",
+            "Energy Counter Format"
+          ]
+        ],
+        [
+          [
+            "ID number",
+            "Counter value"
+          ],
+          [
+            "ID 2305",
+            "Energy Counter Unit"
+          ]
+        ],
+        [
+          [
+            "ID number",
+            "Counter value"
+          ],
+          [
+            "ID 2296",
+            "Energy Trip Counter"
+          ]
+        ]
+      ]
+    }
+  ]
+}

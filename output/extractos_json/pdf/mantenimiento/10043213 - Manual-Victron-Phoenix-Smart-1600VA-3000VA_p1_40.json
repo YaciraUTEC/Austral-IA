@@ -1,0 +1,1441 @@
+{
+  "archivo": "10043213 - Manual-Victron-Phoenix-Smart-1600VA-3000VA_p1_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "victron energy\nBLUE POWER\nManual\nHandleiding\nManuel\nAnleitung\nManual\nAnvändarhandbok\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\nPhoenix Inverter Smart\n12 | 1600 230V\n12 | 2000 230V\n12 | 3000 230V\n24 | 1600 230V\n24 | 2000 230V\n24 | 3000 230V\n48 | 1600 230V\n48 | 2000 230V\n48 | 3000 230V",
+      "tablas": [
+        [
+          [
+            "12",
+            "Inverter\n| 1600 230V",
+            "12",
+            "| 2000 230V",
+            "12 |",
+            "3000 230V"
+          ],
+          [
+            "24",
+            "| 1600 230V",
+            "24",
+            "| 2000 230V",
+            "24 |",
+            "3000 230V"
+          ],
+          [
+            "48",
+            "| 1600 230V",
+            "48",
+            "| 2000 230V",
+            "48 | 3000 230V"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "1. SAFETY INSTRUCTIONS\nGeneral\nEN\nPlease familiarize yourself with the safety features and instructions by first reading the\ndocumentation supplied with this product before using the equipment. This product has\nbeen designed and tested in accordance with international standards. The equipment\nmust be used exclusively for the purpose for which it was designed.\nWARNING: ELECTRIC SHOCK HAZARD.\nThe product is used in combination with a permanent energy source (battery). Even if the\nequipment is switched off, a dangerous electrical voltage can occur at the input and/or\noutput terminals. Always disconnect the battery before performing maintenance.\nNL\nFR\nDE\nThe product has no internal user-serviceable components. Do not remove the front plate\nor operate the product if any panels have been removed. All servicing must be\nundertaken by qualified personnel.\nES\nNever use the product where there is a risk of gas or dust explosions. Consult the battery\nmanufacturer's information to ascertain that the product is intended for use in conjunction\nwith the battery. Always comply with the battery manufacturer's safety instructions.\nSE\nWARNING: Do not lift heavy loads without assistance.\nInstallation\nAppendix\nRead the installation instructions in the installation manual before installing the\nequipment.\nThis is a Safety Class I product (supplied with a protective grounding terminal). The chassis\nmust be grounded. A grounding point is located on the outside of the product. Whenever it is\nlikely that the grounding protection has been damaged, the product must be turned off and\nsecured against unintended operation; please contact qualified service staff.\nEnsure that the DC and AC input cables are fused and fitted with circuit breakers. There is no\ninternal fuse inside this product. Never replace a safety component with a different type.\nConsult the manual to determine the correct component.\nDuring installation ensure that the remote connector with wire bridge is removed (or swtich off\nthe remote on/off switch if installed) to be sure that the inverter cannot be switched on\nunexpectedly.\nBefore applying power, ensure that the available power source matches the configuration\nsettings of the product as described in the manual.\nEnsure that the equipment is used under the correct ambient conditions. Never operate the\nproduct in a wet or dusty environment. Ensure there is adequate free space for ventilation\naround the product and check that the ventilation vents are not blocked.\nEnsure that the required system voltage does not exceed the product's capacity.\nvictron energy\n1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Transport and Storage\nEnsure that the mains power and battery leads have been disconnected before storing or\ntransporting the product.\nNo liability can be accepted for any transport damage if the equipment is shipped in non-\noriginal packaging.\nStore the product in a dry environment; the storage temperature must be between -20℃ and\n60°C.\nConsult the battery manufacturer's manual in respect of transport, storage, charging,\nrecharging and disposal of the battery.\n2\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "EN\nNL\n2. DESCRIPTION\n2.1 General\nBluetooth built-in: fully configurable with a tablet or smartphone\n· Low battery voltage alarm trip and reset levels\n. Low battery voltage cut-off and restart levels\n. Dynamic cut-off: load dependent cut-off level\n· Output voltage: 210 - 245V\n· Frequency: 50 Hz or 60 Hz\n. ECO mode on/off and ECO mode sense level\n· Alarm relay\nMonitoring:\n· In- and output voltage, % load and alarms\nFR\nDE\nES\nVE.Direct communication port\nThe VE.Direct port can be connected to a computer (VE.Direct to USB interface cable\nneeded) to configure and monitor the same parameters.\nSE\nProven reliability\nThe full bridge plus toroidal transformer topology has proven its reliability over many\nyears.\nAppendix\nThe inverters are short circuit proof and protected against overheating, whether due to\noverload or high ambient temperature.\nHigh start-up power\nNeeded to start loads such as power converters for LED lamps, halogen lamps or electric\ntools.\nECO mode\nWhen in ECO mode, the inverter will switch to standby when the load decreases below a\npreset value (min load turn on level: 10VA; and min load turn off level: 0VA). Once in standby\nthe inverter will switch on for a short period (adjustable, default: every 3 seconds). If the load\nexceeds a preset level, the inverter will remain on.\nRemote on/off\nA remote on/off switch can be connected to a two pole connector, between battery plus and\nthe left hand contact of the two pole connector or between battery minus and the right hand\ncontact of the two pole connector\nLED diagnosis\nSee section 3.3\nTo transfer the load to another AC source: the automatic transfer switch\nFor our low power inverters we recommend our Filax Automatic Transfer Switch. The Filax\nfeatures a very short switchover time (less than 20 milliseconds) so that computers and other\nelectronic equipment will continue to operate without disruption. Alternatively use a MultiPlus\nwith built-in transfer switch.\nvictron energy\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "3. OPERATION\n3.1 On/Off Switch\nWhen switched to \"on\" with the push button, the product is fully functional. The inverter will\ncome into operation and the LED \"inverter\" will light up. By pushing the push button\nsubsequently, within a short period of time, the inverter toggles between \"on\", \"ECO\" and \"off\".\nApart from the pushbutton; the inverter can also be switched on (normal or ECO) and off with\nBluetooth on a mobile device running iOS or Android and the Victron Connect app. However\nwhen switched off via Bluetooth or the push button; the unit cannot be switched on and off\nagain via the wired VE.Direct port.\n3.2 Remote control\nRemote control is possible with a simple on/off switch or with a Phoenix Inverter Control\npanel. A switch for remote control (on/off) can be connected to a two pole connector. The\nswitch can also be connected between battery plus and the left hand contact of the two pole\nconnector (marked \"H\"; see appendix A) or between battery minus and the right hand contact\nof the two pole connector (marked \"L\"; see appendix A).\nFor safety purposes, this product can be turned off completely (i.e. the inverter\ncannot be switched on via the push button or Bluetooth) by removing the remote\nconnector and its default installed wire bridge (or swtich off the remote on/off\nswitch if installed). The user can then be certain that the inverter cannot be\nswitched on accidently via Bluetooth by an unexpected other user.\n!\n3.3 LED definitions\nGreen LED\nStatus\nTrouble shooting\nSolid on\nInverter on\nRed LED Off\nstatus OK\nRed LED On or blinking:\nThe Inverter is still on, but will shut down when the\ncondition gets worse. See red LED table for warning\nreason\nSlow\nsingle pulse\nECO mode\nIf the inverter keeps switching on and off while there is a\nload connected, the load may be too small compared to the\nactual ECO mode settings. Increase the load or change\nECO mode settings. (minimum ECO mode setting: 15W)\nFast\ndouble pulse\nOff and waiting\nInverter did shut down because of a protection. The\ninverter will restart automatically as soon as all alarm\nconditions are cleared. See red LED state for the shutdown\nreason.\nOff\nInverter off\nRed LED Off\nCheck Remote on/off connector.\nCheck DC cable connections and fuses.\nCheck operational mode by pushing push button one time.\nRed LED On or blinking\nThe inverter did shut down because of a protection. It will\nno longer automatically restart. The red LED indicates the\nreason for shutdown. Remove the cause and then restart\nthe inverter by switching it Off, and then back On.\nFast\nOff and\nRed LED Blinking (\n4\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Green LED",
+            "Status",
+            "Trouble shooting"
+          ],
+          [
+            "Solid on",
+            "Inverter on",
+            "Red LED Off status OK Red LED On or blinking: The Inverter is still on, but will shut down when the condition gets worse. See red LED table for warning reason"
+          ],
+          [
+            "Slow single pulse",
+            "ECO mode",
+            "If the inverter keeps switching on and off while there is a load connected, the load may be too small compared to the actual ECO mode settings. Increase the load or change ECO mode settings. (minimum ECO mode setting: 15W)"
+          ],
+          [
+            "Fast double pulse",
+            "Off and waiting",
+            "Inverter did shut down because of a protection. The inverter will restart automatically as soon as all alarm conditions are cleared. See red LED state for the shutdown reason."
+          ],
+          [
+            "Off",
+            "Inverter off",
+            "Red LED Off Check Remote on/off connector. Check DC cable connections and fuses. Check operational mode by pushing push button one time."
+          ],
+          [
+            "Red LED On or blinking The inverter did shut down because of a protection. It will no longer automatically restart. The red LED indicates the reason for shutdown. Remove the cause and then restart the inverter by switching it Off, and then back On."
+          ],
+          [
+            "Fast",
+            "Off and",
+            "Red LED Blinking ("
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "blink\nfrirmware\nupdate in\nprogress or\nfailed\nFirmware update in progress or firmware update failed.\nWhen failed; retry firmware update.\nEN\nYellow LED\nStatus\nTrouble shooting\nSolid on\nECO mode\nRed LED Off\nstatus OK\nRed LED On or blinking:\nThe Inverter is still on, but will shut down when the\ncondition gets worse. See red LED table for warning\nreason\nOff\nECO mode off\nRed LED Off\nCheck operational mode by pushing push button one time.\nCheck Remote on/off connector.\nCheck DC cable connections and fuses.\nRed LED On or blinking\nThe inverter did shut down because of a protection. It will\nno longer automatically restart. The red LED indicates the\nreason for shutdown. Remove the cause and then restart\nthe inverter by switching it Off, and then back On.\nNL\nFR\nDE\nES\nSE\nRed LED\nDefinition\nTrouble shooting\nSolid on\nOverload\nReduce load\nSlow\nblink\nLow batt.\nRecharge or replace battery\nCheck DC cable connections\nCheck cable cross section as it may be insufficient.\nSee section 4.2 Protections and automatic restarts for\nmanual and automatic restart behavior.\nFast\nblink\nHigh batt.\nReduce DC input voltage, check for faulty charger\nDouble\npulse\nHigh temp.\nReduce load and/or move inverter to better ventilated area\nFast\nsingle pulse\nHigh DC ripple\nCheck DC cable connections and cable cross section.\nAppendix\n3.4 Protections and automatic restarts\nOverload\nSome loads like motors or pumps draw large inrush currents in a start-up situation. In such\ncircumstances, it is possible that the start-up current exceeds the over current trip level of the\ninverter. In this case the output voltage will quickly decrease to limit the output current of the\ninverter. If the over current trip level is continuously exceeded, the inverter will shut down: wait\n30 seconds and then restart.\nAfter three restarts followed by another overload within 30 seconds of restarting, the inverter\nwill shutdown and remain off. The LEDs will signal shutdown due to overload. To restart the\ninverter, switch it Off, then On.\nLow battery voltage (adjustable)\nThe inverter will shut down when the DC input voltage drops below the low battery shutdown\nlevel. After a minimum delay of 30 seconds, the inverter will restart if the voltages rise above\nthe low battery restart level.\nvictron energy\n5",
+      "tablas": [
+        [
+          [
+            "Yellow LED",
+            "Status",
+            "Trouble shooting"
+          ],
+          [
+            "Solid on",
+            "ECO mode",
+            "Red LED Off status OK Red LED On or blinking: The Inverter is still on, but will shut down when the condition gets worse. See red LED table for warning reason"
+          ],
+          [
+            "Off",
+            "ECO mode off",
+            "Red LED Off Check operational mode by pushing push button one time. Check Remote on/off connector. Check DC cable connections and fuses."
+          ],
+          [
+            "Red LED On or blinking The inverter did shut down because of a protection. It will no longer automatically restart. The red LED indicates the reason for shutdown. Remove the cause and then restart the inverter by switching it Off, and then back On."
+          ]
+        ],
+        [
+          [
+            "Red LED",
+            "Definition",
+            "Trouble shooting"
+          ],
+          [
+            "Solid on",
+            "Overload",
+            "Reduce load"
+          ],
+          [
+            "Slow blink",
+            "Low batt.",
+            "Recharge or replace battery Check DC cable connections Check cable cross section as it may be insufficient. See section 4.2 Protections and automatic restarts for manual and automatic restart behavior."
+          ],
+          [
+            "Fast blink",
+            "High batt.",
+            "Reduce DC input voltage, check for faulty charger"
+          ],
+          [
+            "Double pulse",
+            "High temp.",
+            "Reduce load and/or move inverter to better ventilated area"
+          ],
+          [
+            "Fast single pulse",
+            "High DC ripple",
+            "Check DC cable connections and cable cross section."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "After three restarts followed by a low battery shutdown within 30 seconds of restarting, the\ninverter will shutdown and stop retrying. The LEDs will signal low battery shutdown. To restart\nthe inverter, switch it Off, and then On, or recharge the battery: as soon as the battery has\nrisen and then stays above the Charge detect level for 30 seconds, it will switch on.\nSee the Technical Data table for default low battery shutdown and restart levels. They can be\nchanged with the VictronConnect App.\nHigh battery voltage\nReduce DC input voltage and/or check for a faulty battery- or solar-charger in the system.\nAfter shutting down due to a high battery voltage, the inverter will first wait 30 seconds and\nthen retry operation as soon as the battery voltage has dropped to acceptable level. The\ninverter will not stay off after multiple retries.\nHigh temperature\nA high ambient temperature or enduring high load may result in shut down to over\ntemperature. The inverter will restart after 30 seconds. The inverter will not stay off after\nmultiple retries. Reduce load and/or move inverter to better ventilated area.\nHigh DC ripple\nHigh DC ripple is usually caused by loose DC cable connections and/or too thin DC wiring.\nAfter the inverter has switched off due to high DC ripple voltage, it waits 30 seconds and then\nrestarts.\nAfter three restarts followed by a shutdown due to high DC ripple within 30 seconds of\nrestarting, the inverter will shutdown and stops retrying. To restart the inverter, switch it Off\nand then On.\nContinuous high DC ripple reduces the inverter life expectancy.\n6\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "4. INSTALLATION\nThis product should be installed by a qualified electrician.\n?\nDuring installation ensure that the remote connector with wire bridge is removed\n(or swtich off the remote on/off switch if installed) to be sure that the inverter\ncannot be switched on unexpectedly.\n4.1 Location\nThe product must be installed in a dry and well-ventilated area, as close as possible to\nthe batteries. There should be a clear space of at least 10cm around the appliance for\ncooling.\nEN\nNL\nFR\nDE\nES\nSE\nExcessively high ambient temperature will result in the following:\nReduced service life.\nReduced charging current.\nReduced peak capacity, or shutdown of the inverter.\nNever mount the appliance directly above the batteries.\nAppendix\n!\nThe product is suitable for wall mounting. For mounting see appendix A.\nThe appliance can be mounted horizontally as well as vertically; vertical mounting is\npreferable. The vertical position offers optimum cooling.\n!\nThe interior of the product must remain accessible after installation.\nTry and keep the distance between the product and the battery to a minimum in order to\nminimize cable voltage losses.\nFor safety purposes, this product should be installed in a heat-resistant\nenvironment if it is used with equipment where a substantial amount of\npower is to be converted. You should prevent the presence of e.g.\nchemicals, synthetic components, curtains or other textiles, etc., in the\nimmediate vicinity.\n!\nvictron energy\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "4.2 Connection of Battery cables\nIn order to fully utilize the full capacity of the product, batteries with sufficient capacity and\nbattery cables with sufficient cross section should be used. See table.\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nRecommended\ncross section (mm2)\nlength up to 6 m\n50\n25\n25\n70\n35\n25\n12/3000\n24/3000\n48/3000\nRecommended\ncross section (mm2)\n0 - 5 m\n95\n50\n35\n5 -10 m\n120\n95\n70\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nRecommended\nbattery capacity\n(Ah)\n300 - 800\n150 - 400\n75 - 200\n350 - 1000\n200 - 500\n100 - 250\n12/3000\n24/3000\n48/3000\nRecommended\nbattery capacity\n(Ah)\n400 - 1200\n200 - 700\n100 - 400\nRemark: Internal resistance is the important factor when working with low capacity batteries.\nPlease consult your supplier or the relevant sections of our book \"electricity on board\",\ndownloadable from our website.\nProcedure\nProceed as follows to connect the battery cables:\nUse an insulated box spanner in order to avoid shorting the battery.\nAvoid shorting the battery cables.\n!\nConnect the battery cables: the + (red) and the - (black), to the battery see appendix A.\nReverse polarity connection (+ to - and - to +) will cause damage to the product.\nSecure the nuts tightly in order to reduce the contact resistance as much as possible.\n8\nvictron energy",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended cross section (mm2)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "length up to 6 m",
+            "50",
+            "25",
+            "25",
+            "70",
+            "35",
+            "25"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended cross section (mm2)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "0 - 5 m",
+            "95",
+            "50",
+            "35"
+          ],
+          [
+            "5 -10 m",
+            "120",
+            "95",
+            "70"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended battery capacity (Ah)",
+            "300 - 800",
+            "150 - 400",
+            "75 - 200",
+            "350 - 1000",
+            "200 - 500",
+            "100 - 250"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended battery capacity (Ah)",
+            "400 - 1200",
+            "200 - 700",
+            "100 - 400"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "EN\nNL\nFR\n4.3 DC safety fuse\nThere is no safety fuse inside the inverter; this should be installed externally. The\nrecommended safety fuses can be found in the table below\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nRecommended\nDC fuse\n250A\n125A\n60A\n300A\n150A\n80A\n12/3000\n24/3000\n48/3000\nRecommended\nDC fuse\n400A\n250A\n125A\nDE\nES\nSE\nAppendix\nvictron energy\n9",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended DC fuse",
+            "250A",
+            "125A",
+            "60A",
+            "300A",
+            "150A",
+            "80A"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Recommended DC fuse",
+            "400A",
+            "250A",
+            "125A"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "4.4 Connection of the AC cabling\nThis is a Safety Class I product (supplied with a protective grounding\nterminal).\nThe neutral wire of the AC output of this inverter is connected to the\nchassis (see appendix B for 1600VA/2000VA and appendix C for\n3000VA).\n?\nThis is to ensure proper functioning of a GFCI (or RCCB) to be installed in the\nAC output of the Inverter.\nThe chassis of the product must be connected to ground, to the frame (of a\nvehicle) or the ground plate or hull (of a boat).\nProcedure\nThe terminal points are indicated clearly. From left to right: \"L\" (phase), \"N\" (neutral) and \"PE\"\n(earth).\n4.5 Optional Connections\nA number of optional connections are possible:\n4.5.1 Remote on/off switch & remote Control panel\nThe product can be remotely controlled in three ways.\n-\nWith a smart phone (iOS or Android) and the Victron Connect app.\n-\nWith an external switch (connected to the two pole remote connector). Operates only if\nthe switch on the Inverter is set to \"on\".\n-\nWith a Phoenix Inverter Control VE.Direct panel (connected to the two pole remote\nconnector; see appendix A). Operates only if the switch on the inverter is set to \"on\".\n4.5.2. Programmable relay\nThe inverters are equipped with a multi-functional relay that by default is programmed in the\nnormal operation mode. (VictronConnect software needed to change relay functionality). The\ndifferent relay modes can be summerized as follows:\n-\nNormal operation (\"inverter\" in VictronConnect app) - default\nRelay closed during normal operation, and open when the inverter has switched off itself\nin alarm, has been switched off by a user and also open (of course) when there is no\npower available on the terminals, ie. battery disconnected. In ECO mode, the relay will\nbe closed both when searching for a load and when fully on, ie. load detected.\nUse this option when you want the relay to signal that there is power available on the\noutput of the inverter.\n-\nWarnings and alarms (\"alarm\" in VictronConnect app)\nSimilar to above, but then the relay will also open when there is a warning. For example\nbecause the battery voltage dropped to the cut-off value, or when loaded to the point\nwhere it will almost shut down due to overload. In ECO mode, the relay will be closed\nboth when searching (no load) and when fully on (load detected), except when there is a\nwarning.\n-\nUse this option when you want the relay to signal that it is time to do something (charge\nthe battery, reduce the load, and-so-forth), in order to prevent a power outage.\nLow battery (\"Low battery\" in VictronConnect app)\n10\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Relay on during normal operation. The relay will switch off once there is a low\nbattery warning. It will remain off in case the inverter shuts down due to low voltage,\nand will only switch back on again once the inverter is operational and the battery\nvoltage is above the pre-alarm reset level. Use this option for load shedding, or to\nautomatically start a generator. Note that this can only be considered a poor-mans\ngenerator start/stop. For more and better options, see here.\n-\nExternal fan (\"fan\" in VictronConnect app)\nRelay is off, unless the fan inside the inverter is running. Use this option to switch an\nexternal fan, for situations when the inverter is in a small enclosed space.\nDisabled relay (\"off\" in VictronConnect app)\n-\nThis option sets the relay in the OPEN position. Use this option if you do not plan to\nuse the relay function.\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\nvictron energy\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "5. CONFIGURATION\nSettings may only be changed by a qualified engineer.\nCarefully read the instructions before changes are made.\nBatteries should be placed in a dry and well-ventilated area during charging.\n!\n5.1 Standard settings: ready for use\nOn delivery, the Phoenix inverter is set to standard factory values. In general, these settings\nare suitable for stand-alone operation.\nStandard factory settings\nInverter frequency\n50 Hz\n230 VAC\nInverter voltage\nSearch mode\noff\nProgrammable relay\nalarm function\nDynamic cut-off\noff\n5.2 Explanation of settings\nInverter frequency\nOutput frequency\nAdjustability: 50Hz; 60Hz\nInverter voltage\nAdjustability: 210 - 245V\nECO Mode\nIf ECO mode is 'on', the power consumption in no-load operation is decreased by approx.\n80 ... 90%. In this mode the Phoenix Inverter Smart, when operating in inverter mode, is\nswitched off in case of no load or very low load, and switches on every two and a half seconds\nfor a short period (adjustable). If the output current exceeds a set level, the inverter will\ncontinue to operate. If not, the inverter will shut down again.\nThe ECO Mode can be set with the push button on the front of the inverter.\nThe ECO Mode \"shut down\" and \"remain on\" load levels can be set with Victron Connect .\nThe factory settings are:\nShut down: 50 Watt (linear load).\nTurn on: 100 Watt (linear load).\nProgrammable relay\nBy default, the programmable relay is set as an alarm relay, i.e. the relay will de-energise in\nthe event of an alarm or a pre-alarm (inverter almost too hot, ripple on the input almost too\nhigh, battery voltage almost too low).\n12\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Dynamic Cut-off\nUse VictronConnect to enable and configure Dynamic Cut-off (see\nEN\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-dynamic-cutoff for details).\nDo not use Dynamic Cut-off in an installation that also has other loads connected to the\nsame battery: the battery voltage will drop because of the extra load, but the Dynamic\nCut-off algorithm in the Inverter is not aware of that load: hence the Inverter will shut\ndown too early with an under voltage alarm.\nNL\n5.3 Configuration by computer\nFR\nAll settings can be changed by means of a smartphone, tablet or computer\nDE\nFor changing settings with a smartphone or tablet, the following is required:\n- VictronConnect software: can be downloaded free of charge at www.victronenergy.com.\nFor changing settings with the computer, the following is required:\n- VictronConnect software: can be downloaded free of charge at www.victronenergy.com.\nES\n- A VE.Direct to USB interface.\nSE\n6. MAINTENANCE\nThe Phoenix Inverter Smart does not require specific maintenance. It will suffice to check\nall connections once a year. Avoid moisture and oil/soot/vapours, and keep the device\nclean.\nAppendix\nvictron energy\n13",
+      "tablas": [
+        [
+          [
+            "Dynamic Cut-off",
+            ""
+          ],
+          [
+            "Use VictronConnect to enable and configure Dynamic Cut-off (see",
+            "EN"
+          ],
+          [
+            "https://www.victronenergy.com/live/ve.direct:phoenix-inverters-dynamic-cutoff for details).",
+            ""
+          ],
+          [
+            "Do not use Dynamic Cut-off in an installation that also has other loads connected to the same battery: the battery voltage will drop because of the extra load, but the Dynamic Cut-off algorithm in the Inverter is not aware of that load: hence the Inverter will shut down too early with an under voltage alarm.",
+            "NL"
+          ],
+          [
+            "5.3 Configuration by computer",
+            "FR"
+          ],
+          [
+            "All settings can be changed by means of a smartphone, tablet or computer",
+            ""
+          ],
+          [
+            "For changing settings with a smartphone or tablet, the following is required:",
+            "DE"
+          ],
+          [
+            "- VictronConnect software: can be downloaded free of charge at www.victronenergy.com.",
+            ""
+          ],
+          [
+            "For changing settings with the computer, the following is required: - VictronConnect software: can be downloaded free of charge at www.victronenergy.com.",
+            "ES"
+          ],
+          [
+            ""
+          ],
+          [
+            "- A VE.Direct to USB interface.",
+            ""
+          ],
+          [
+            "SE"
+          ],
+          [
+            ""
+          ],
+          [
+            "6. MAINTENANCE",
+            ""
+          ],
+          [
+            "The Phoenix Inverter Smart does not require specific maintenance. It will suffice to check all connections once a year. Avoid moisture and oil/soot/vapours, and keep the device",
+            "Appendix"
+          ],
+          [
+            "clean."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "7. Technical data\n12 Volt\nPhoenix Inverter Smart\n24 Volt\n48 Volt\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\n12/3000\n24/3000\n48/3000\nParallel and 3-phase operation\nNo\nINVERTER\nInput voltage range (1)\n9,3 - 17V\n18,6 - 34V\n37,2 - 68V\nOutput\nOutput voltage: 230VAC +2% 50 Hz or 60Hz + 0,1% (1)\nCont. output power at 25ºC (2)\n1600VA\n2000VA\n3000VA\nCont. output power at 25ºC\n1300W\n1600W\n2400W\nCont. output power at 40ºC\n1200W\n1450W\n2200W\nCont. output power at 65ºC\n800W\n1000W\n1700W\nPeak power\n3000VA\n4000VA\n6000VA\nDynamic (load dependent) DC low shut down\n(fully configurable)\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-\nDynamic cut-off, see\ndynamic-cutoff\nMax. efficiency 12/ 24 /48 V\n92/94/94 %\n92/94/94 %\n93/94/95%\nZero load power 12 / 24 / 48 V\n8/9/11 W\n8/9/11 W\n12/13/15 W\nZero load power in ECO mode\n0,6/1,3/2,1 W\n0,6/1,3/2,1 W\n1,5/1,9/2,8 W\nGENERAL\nProgrammable relay (2)\nYes\nStop & start power ECO-mode\nadjustable\nProtection (3)\na - g\nBluetooth wireless communication\nFor remote monitoring and system integration\nVE.Direct communication port\nFor remote monitoring and system integration\nRemote on-off\nYes\nCommon Characteristics\nOperating temperature range: - 40 to +65ºC (fan assisted cooling)\nHumidity (non-condensing): max 95%\nENCLOSURE\nCommon Characteristics\nMaterial & Colour: steel (blue RAL 5012; and black RAL 9017)\nProtection category: IP 21\nBattery-connection\nM8 bolts\nM8 bolts\n2+2 M8 bolts\n230 V AC-connection\nScrew terminals\nWeight\n12kg\n13kg\n19kg\nDimensions (hxwhd)\n485 x 219 × 125mm\n485 x 219 x 125mm\n533x285x150mm (12V)\n485×285×150mm (24/28V)\nSTANDARDS\nSafety\nEN-IEC 60335-1\nEmission Immunity\nEN 55014-1 / EN 55014-2 / EN-IEC 61000-6-1\nEN-IEC 61000-6-2 / EN-IEC 61000-6-3\nAutomotive Directive\nECE R10-5\n1) Non-linear load, crest factor 3:1\n3) Protection key:\n2) Programmable relay that can a.o. be set for general\nalarm, DC under voltage or genset start/stop function.\na) output short circuit\nb) overload\nc) battery voltage too high\nAC rating: 230 V / 3 A\nd) battery voltage too low\nDC rating: 3 A up to 30 VDC, 0.2A up to 70 VDC\ne) temperature too high\nf) 230 V AC on inverter output\ng) input voltage ripple too high\n14\nvictron energy",
+      "tablas": [
+        [
+          [
+            "12 Volt Phoenix Inverter Smart 24 Volt 48 Volt",
+            "12/1600 24/1600 48/1600",
+            "12/2000 24/2000 48/2000",
+            "12/3000 24/3000 48/3000"
+          ],
+          [
+            "Parallel and 3-phase operation",
+            "",
+            "No",
+            ""
+          ],
+          [
+            "INVERTER",
+            ""
+          ],
+          [
+            "Input voltage range (1)",
+            "9,3 - 17V",
+            "18,6 - 34V 37,2",
+            "- 68V"
+          ],
+          [
+            "Output",
+            "Output voltage: 230VAC +2% 50 Hz or 60Hz + 0,1% (1)"
+          ],
+          [
+            "Cont. output power at 25ºC (2)",
+            "1600VA",
+            "2000VA",
+            "3000VA"
+          ],
+          [
+            "Cont. output power at 25ºC",
+            "1300W",
+            "1600W",
+            "2400W"
+          ],
+          [
+            "Cont. output power at 40ºC",
+            "1200W",
+            "1450W",
+            "2200W"
+          ],
+          [
+            "Cont. output power at 65ºC",
+            "800W",
+            "1000W",
+            "1700W"
+          ],
+          [
+            "Peak power",
+            "3000VA",
+            "4000VA",
+            "6000VA"
+          ],
+          [
+            "Dynamic (load dependent) DC low shut down (fully configurable)",
+            "",
+            "https://www.victronenergy.com/live/ve.direct:phoenix-inverters- Dynamic cut-off, see dynamic-cutoff"
+          ],
+          [
+            "Max. efficiency 12/ 24 /48 V",
+            "92/94/94 %",
+            "92/94/94 %",
+            "93/94/95%"
+          ],
+          [
+            "Zero load power 12 / 24 / 48 V",
+            "8/9/11 W",
+            "8/9/11 W",
+            "12/13/15 W"
+          ],
+          [
+            "Zero load power in ECO mode",
+            "0,6/1,3/2,1 W",
+            "0,6/1,3/2,1 W",
+            "1,5/1,9/2,8 W"
+          ]
+        ],
+        [
+          [
+            "",
+            "GENERAL",
+            "",
+            ""
+          ],
+          [
+            "Programmable relay (2)",
+            "",
+            "Yes",
+            ""
+          ],
+          [
+            "Stop & start power ECO-mode",
+            "",
+            "adjustable",
+            ""
+          ],
+          [
+            "Protection (3)",
+            "",
+            "a - g",
+            ""
+          ],
+          [
+            "Bluetooth wireless communication",
+            "For remote monitoring and system integration"
+          ],
+          [
+            "VE.Direct communication port",
+            "For remote monitoring and system integration"
+          ],
+          [
+            "Remote on-off",
+            "Yes"
+          ],
+          [
+            "Common Characteristics",
+            "Operating temperature range: - 40 to +65ºC (fan assisted cooling) Humidity (non-condensing): max 95%"
+          ],
+          [
+            "",
+            "ENCLOSURE"
+          ],
+          [
+            "Common Characteristics",
+            "Material & Colour: steel (blue RAL 5012; and black RAL 9017) Protection category: IP 21"
+          ],
+          [
+            "Battery-connection",
+            "M8 bolts",
+            "M8 bolts",
+            "2+2 M8 bolts"
+          ],
+          [
+            "230 V AC-connection",
+            "",
+            "Screw terminals",
+            ""
+          ],
+          [
+            "Weight",
+            "12kg",
+            "13kg",
+            "19kg"
+          ],
+          [
+            "Dimensions (hxwhd)",
+            "485 x 219 × 125mm",
+            "485 x 219 x 125mm",
+            "533x285x150mm (12V) 485×285×150mm (24/28V)"
+          ]
+        ],
+        [
+          [
+            "STANDARDS"
+          ],
+          [
+            "Safety",
+            "EN-IEC 60335-1"
+          ],
+          [
+            "Emission Immunity",
+            "EN 55014-1 / EN 55014-2 / EN-IEC 61000-6-1 EN-IEC 61000-6-2 / EN-IEC 61000-6-3"
+          ],
+          [
+            "Automotive Directive",
+            "ECE R10-5"
+          ],
+          [
+            "1) Non-linear load, crest factor 3:1",
+            "3) Protection key:"
+          ],
+          [
+            "2) Programmable relay that can a.o. be set for general alarm, DC under voltage or genset start/stop function.",
+            "a) output short circuit b) overload"
+          ],
+          [
+            "AC rating: 230 V / 3 A",
+            "c) battery voltage too high"
+          ],
+          [
+            "DC rating: 3 A up to 30 VDC, 0.2A up to 70 VDC",
+            "d) battery voltage too low\ne) temperature too high f) 230 V AC on inverter output g) input voltage ripple too high"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "1. VEILIGHEIDSINSTRUCTIES\nAlgemeen\nEN\nGelieve op de hoogte te zijn van deze veiligheidskenmerken en instructies door eerst de\nmeegeleverde documentatie bij dit product goed te lezen voordat u de apparatuur in\ngebruik gaat nemen. Dit product is ontworpen en getest in overeenstemming met\ninternationale normen. De apparatuur mag uitsluitend worden gebruikt voor het doel\nwaarvoor deze is ontworpen.\nNL\nFR\nWAARSCHUWING: GEVAAR VOOR ELEKTRISCHE SCHOKKEN.\nHet product wordt in combinatie met een permanente energiebron (batterij) gebruikt.\nIngangs- en / of uitgangsklemmen kunnen nog steeds gevaarlijk onder stroom staan,\nzelfs als de apparatuur is uitgeschakeld. Altijd de AC-voeding en de accu uitschakelen\nalvorens onderhouds- of reparatiewerkzaamheden aan de batterij uit te voeren.\nHet product is niet uitgerust met interne onderdelen die door de gebruiker kunnen worden\nonderhouden. De voorplaat niet verwijderen en bedien het product niet als er panelen zijn\nverwijderd. Alle onderhoudswerkzaamheden moeten door gekwalificeerd personeel\nworden uitgevoerd.\nDE\nES\nSE\nHet product nooit gebruiken op plaatsen waar gas- of stofexplosies kunnen optreden.\nRaadpleeg de informatie van de batterijfabrikant om te controleren of het product is\nbestemd voor gebruik in combinatie met de accu. Altijd de veiligheidsinstructie van de\nbatterijfabrikant opvolgen.\nAppendix\nWAARSCHUWING: Geen zware lasten zonder hulp optillen.\nInstallatie\nLees de installatie-instructies in de installatiehandleiding alvorens u de apparatuur gaat installeren.\nDit is een product van Veiligheidsklasse I (geleverd met een beschermende aardingsterminal). Het\nchassis moet worden geaard. Een aardingspunt bevindt zich aan de buitenzijde van het product.\nWanneer het waarschijnlijk is dat de aardbeveiliging is beschadigd, moet het product worden\nuitgeschakeld en beveiligd tegen onbedoeld gebruik; gelieve contact op te nemen met\ngekwalificeerd onderhoudspersoneel.\nZorg ervoor dat de DC- en AC-ingangskabels zijn beveiligd en voorzien zijn van\nstroomonderbrekers. Dit product is niet uitgerust met een interne zekering. Vervang nooit een\nveiligheidscomponent door een ander type. Raadpleeg de handleiding om het correcte onderdeel\nte bepalen.\nTijdens de installatie moet u controleren of de externe connector met draadbrug is verwijderd (of\nschakel de externe aan / uit-schakelaar uit indien geinstalleerd) teneinde er zeker van te zijn dat de\nomvormer niet onverwacht kan worden ingeschakeld.\nZorg ervoor dat de apparatuur wordt gebruikt onder de juiste omgevingsomstandigheden. Het\nproduct nooit bedienen in een natte of stoffige omgeving. U moet ervoor zorgen dat er\nvoldoende vrije ruimte voor ventilatie rondom het product aanwezig is en controleren of de\nventilatieopeningen niet zijn geblokkeerd.\nvictron energy\n1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Zorg ervoor dat de vereiste systeemspanning de capaciteit van het product niet overschrijdt.\nTransport en Opslag\nZorg ervoor dat de netspanning en batterijkabels zijn losgekoppeld voordat u het product gaat\nopslaan of vervoeren.\nEr wordt geen aansprakelijkheid worden aanvaard voor transportschade als de apparatuur\nwordt verscheept in een niet-originele verpakking.\nHet product opslaan in een droge omgeving; en de opslagtemperatuur moet tussen -20℃ en\n60°℃ zijn.\nRaadpleeg de handleiding van de batterijfabrikant voor transport, opslag, laden, opnieuw\nladen en verwijderen van de batterij.\n2\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "2. BESCHRIJVING\n2.1 Algemeen\nEN\nGeintegreerde Bluetooth: volledig configureerbaar met een tablet of smartphone\n· Lage batterijspanning alarmuitschakeling en resetniveaus\n· Lage batterijspanning-uitschakeling en herstartniveaus\n· Dynamische cut-off: belastingafhankelijk cut-off-niveau\n· Uitgangsspanning: 210 - 245V\n· Frequentie: 50 Hz of 60 Hz\n· ECO modus aan/uit en ECO modus gevoelsniveau\n· Alarmrelais\nBewaking\n· In- en uitgangsspanning,% belasting en alarmen\nVE.Direct communicatiepoort\nDe VE.Direct poort kan op een computer worden verbonden (VE.Direct naar USB\ninterfacekabel nodig) teneinde dezelfde parameters te configureren en te bewaken.\nNL\nFR\nDE\nES\nSE\nBewezen betrouwbaarheid\nDe volledige bridge plus toroïdale transformatortopologie heeft zijn betrouwbaarheid\ngedurende vele jaren bewezen.\nDe omvormers zijn kortsluitvast en beschermd tegen oververhitting, hetzij door\noverbelasting of hoge omgevingstemperatuur.\nAppendix\nHoog startvermogen\nNodig om belastingen te starten, zoals stroomomzetters voor LED-lampen,\nhalogeenlampen of elektrische gereedschappen.\nECO-modus\nIn de ECO-modus schakelt de omvormer naar stand-by wanneer de belasting daalt tot onder\neen vooraf ingestelde waarde (min. ladingniveau inschakelen: 10VA; en min. ladingniveau\nuitschakelen: 0VA). Eenmaal in stand-by schakelt de omvormer voor een korte periode in\n(instelbaar, standaard: elke 3,0 seconden). Indien de belasting een vooraf ingesteld niveau\noverschrijdt, blijft de omvormer ingeschakeld\n.\nAfstandsbediening aan/uit\nEen aan/uit-schakelaar voor afstandsbediening of relaiscontact kan verbonden worden met\neen 2-polige connector.\nAls alternatief kan de H-terminal (links) van de 2-polige connector geschakeld worden aan\nbatterij-plus, of de L-terminal (rechts) van de 2-polige connector kan geschakeld worden aan\nbattery-minus (of het chassis van een voertuig bijvoorbeeld\nLED diagnose\nZie paragraaf 3.3\nRaadpleeg de handleiding voor een beschrijving.\nvictron energy\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Om de belasting over te dragen naar een andere AC-bron: de schakelaar voor\nautomatische overdracht\nVoor onze low-power omvormers raden we onze Filax Automatic Transfer Switch aan. De\nFilax heeft een zeer korte omschakelingstijd (minder dan 20 milliseconden), zodat computers\nen andere elektronische apparatuur zonder onderbreking kunnen blijven werken. Gebruik als\nalternatief een MultiPlus met ingebouwde schakelaar voor overdracht.\n4\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "3. BEDIENING\n3.1 Aan-/Uitschakelaar\nEN\nWanneer geschakeld op \"on\" met de drukknop,is het product volledig functioneel. De\nomvormer zal gaan functioneren en de LED \"omvormer\" zal gaan branden. Door\nvervolgens op de drukknop te drukken, binnen een korte tijdsperiode, zal de omvormer\nschakelen tussen \"on\", \"ECO\" en \"off\"\nBuiten de drukknop om; de omvormer kan tevens worden in- en uitgeschakeld (normaal\nof ECO) met Bluetooth op een mobiel apparaat met iOS of Android en de Victron\nConnect-app. Echter wanneer uitgeschakeld via Bluetooth of de drukknop; het apparaat\nkan niet opnieuw worden in- en uitgeschakeld via de bedrade VE.Direct-poort.\nNL\nFR\nDE\n3.2 Afstandsbediening\nES\nAfstandsbediening is mogelijk met een simpele aan-/uitschakelaar of met een Phoenix\nOmvormer bedieningspaneel. Een schakelaar voor afstandsbediening (aan/uit) kan\nworden aangesloten op een tweepolige connector (gemarkeerd met \"H\"; zie bijlage A).\nDe schakelaar kan worden aangesloten tussen batterij plus en het linkercontact van de\ntweepolige connector of tussen batterij minus en het rechtercontact van de tweepolige\nconnector (gemarkeerd met \"L\", zie bijlage A).\nSE\nAppendix\nVanwege veiligheidsredenen kan dit product volledig worden uitgeschakeld (dat\nwil zeggen, de omvormer kan niet worden ingeschakeld via de drukknop of\nBluetooth) door de externe connector te verwijderen en de standaard\ngeïnstalleerde draadbrug (of schakel de externe aan / uit-schakelaar uit indien\ngeinstalleerd). De gebruiker kan er dan zeker van zijn dat de omvormer niet per\nongeluk via Bluetooth kan worden ingeschakeld door een onverwachte andere\ngebruiker.\n!\n3.3 LED definities\nGroen LED\nStatus\nProbleemoplossing\nBrandt\nstabiel\nOmvormer\ningeschakeld\nRode LED Uitgeschakeld\nStatus INGESCHAKELD\nRode LED INGESCHAKELD of knippert:\nDe omvormer is nog steeds ingeschakeld, maar wordt\nuitgeschakeld als de toestand verslechtert. Zie rode LED-\ntabel voor waarschuwingsreden\nLangzame enkele puls\nECO-modus\nWanneer de omvormer blijft in- en uitschakelen terwijl er\neen belasting is aangesloten, kan de belasting te klein zijn\nin vergelijking met de werkelijke ECO-modusinstellingen.\nVerhoog de belasting of verander de instellingen van de\nECO-modus. (minimum ECO-modusinstelling: 15W)\nSnelle\ndubbele puls\nUitgeschakeld\nen wachten\nOmvormer is uitgeschakeld vanwege een beveiliging. De\nomvormer start automatisch opnieuw zodra alle\nalarmcondities zijn gewist. Zie rode LED-status voor de\nreden van de uitschakeling.\nvictron energy\n5",
+      "tablas": [
+        [
+          [
+            "Groen LED",
+            "Status",
+            "Probleemoplossing"
+          ],
+          [
+            "Brandt stabiel",
+            "Omvormer ingeschakeld",
+            "Rode LED Uitgeschakeld Status INGESCHAKELD Rode LED INGESCHAKELD of knippert: De omvormer is nog steeds ingeschakeld, maar wordt uitgeschakeld als de toestand verslechtert. Zie rode LED- tabel voor waarschuwingsreden"
+          ],
+          [
+            "Langzame enkele puls",
+            "ECO-modus",
+            "Wanneer de omvormer blijft in- en uitschakelen terwijl er een belasting is aangesloten, kan de belasting te klein zijn in vergelijking met de werkelijke ECO-modusinstellingen. Verhoog de belasting of verander de instellingen van de ECO-modus. (minimum ECO-modusinstelling: 15W)"
+          ],
+          [
+            "Snelle dubbele puls",
+            "Uitgeschakeld en wachten",
+            "Omvormer is uitgeschakeld vanwege een beveiliging. De omvormer start automatisch opnieuw zodra alle alarmcondities zijn gewist. Zie rode LED-status voor de reden van de uitschakeling."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "Uitgeschakeld\nomvormer\nuitgeschakeld\nRode LED Uitgeschakeld\nControleer de op afstand bedienbare aan/uit-connector\nControleer de DC-kabelaansluitingen en zekeringen.\nControleer de bedieningsmodus door eenmaal op de\ndrukknop te drukken.\nRode LED INGESCHAKELD of knippert:\nDe omvormer is uitgeschakeld vanwege een beveiliging.\nHet zal niet meer opnieuw automatisch worden gestart. De\nrode LED geeft de reden voor het uitschakelen aan. De\noorzaak oplossen en start de omvormer opnieuw op door\ndeze uit en weer in te schakelen.\nSnel\nknipperen\nUitschakelen\nen firmware\nupdate wordt\nuitgevoerd of\nmislukt\nRode LED Knippert (-\nFirmware update wordt uitgevoerd firmware update mislukt.\nWanneer misluk, de firmware update opnieuw proberen.\nGele LED\nStatus\nProbleemoplossing\nBlijft\nbranden\nECO-modus\nRode LED Uitgeschakeld\nStatus INGESCHAKELD\nRode LED INGESCHAKELD of knippert:\nDe omvormer is nog steeds ingeschakeld, maar wordt\nuitgeschakeld als de toestand verslechtert. Zie rode LED-\ntabel voor waarschuwingsreden\nUitgeschakeld\nECO-modus\nuitgeschakeld\nRode LED Uitgeschakeld\nControleer de bedieningsmodus door eenmaal op de\ndrukknop te drukken.\nControleer de op afstand bedienbare aan/uit-connector.\nControleer de DC-kabelaansluitingen en zekeringen.\nRode LED INGESCHAKELD of knippert:\nDe omvormer is uitgeschakeld vanwege een beveiliging.\nHet zal niet meer opnieuw automatisch worden gestart. De\nrode LED geeft de reden voor het uitschakelen aan. De\noorzaak oplossen en start de omvormer opnieuw op door\ndeze uit en weer in te schakelen.\nRode LED\nDefinitie\nProbleemoplossing\nBlijft\nbranden\nOverbelasting\nBelasting reduceren\nLangzaam knipperen\nBatterij bijna\nleeg\nLaad de batterij op of vervang deze\nControleer de DC-kabelaansluitingen\nControleer de kabeldoorsnede aangezien deze mogelijk\nonvoldoende is.\nZie paragraaf 4.2 Beveiligingen en automatische herstarten\nvoor handmatig en automatisch herstartgedrag.\nSnel\nknipperen\nVolle batterij\nVerlaag de DC-ingangsspanning, controleer op defecte\nacculader\nDubbele\npuls\nHoge\ntemperatuur.\nReduceer de belasting en/of verplaats de omvormer naar\neen beter geventileerde ruimte\nSnelle\nenkelvoudige puls\nHoge DC-\nrimpel\nControleer de DC-kabelverbindingen en de\nkabeldoorsnede.\n6\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Uitgeschakeld",
+            "omvormer uitgeschakeld",
+            "Rode LED Uitgeschakeld Controleer de op afstand bedienbare aan/uit-connector Controleer de DC-kabelaansluitingen en zekeringen. Controleer de bedieningsmodus door eenmaal op de drukknop te drukken."
+          ],
+          [
+            "Rode LED INGESCHAKELD of knippert: De omvormer is uitgeschakeld vanwege een beveiliging. Het zal niet meer opnieuw automatisch worden gestart. De rode LED geeft de reden voor het uitschakelen aan. De oorzaak oplossen en start de omvormer opnieuw op door deze uit en weer in te schakelen."
+          ],
+          [
+            "Snel knipperen",
+            "Uitschakelen en firmware update wordt uitgevoerd of mislukt",
+            "Rode LED Knippert (- Firmware update wordt uitgevoerd firmware update mislukt. Wanneer misluk, de firmware update opnieuw proberen."
+          ]
+        ],
+        [
+          [
+            "Gele LED",
+            "Status",
+            "Probleemoplossing"
+          ],
+          [
+            "Blijft branden",
+            "ECO-modus",
+            "Rode LED Uitgeschakeld Status INGESCHAKELD Rode LED INGESCHAKELD of knippert: De omvormer is nog steeds ingeschakeld, maar wordt uitgeschakeld als de toestand verslechtert. Zie rode LED- tabel voor waarschuwingsreden"
+          ],
+          [
+            "Uitgeschakeld",
+            "ECO-modus uitgeschakeld",
+            "Rode LED Uitgeschakeld"
+          ],
+          [
+            "Controleer de bedieningsmodus door eenmaal op de drukknop te drukken. Controleer de op afstand bedienbare aan/uit-connector. Controleer de DC-kabelaansluitingen en zekeringen."
+          ],
+          [
+            "Rode LED INGESCHAKELD of knippert: De omvormer is uitgeschakeld vanwege een beveiliging. Het zal niet meer opnieuw automatisch worden gestart. De rode LED geeft de reden voor het uitschakelen aan. De oorzaak oplossen en start de omvormer opnieuw op door deze uit en weer in te schakelen."
+          ]
+        ],
+        [
+          [
+            "Rode LED",
+            "Definitie",
+            "Probleemoplossing"
+          ],
+          [
+            "Blijft branden",
+            "Overbelasting",
+            "Belasting reduceren"
+          ],
+          [
+            "Langzaam knipperen",
+            "Batterij bijna leeg",
+            "Laad de batterij op of vervang deze Controleer de DC-kabelaansluitingen Controleer de kabeldoorsnede aangezien deze mogelijk onvoldoende is. Zie paragraaf 4.2 Beveiligingen en automatische herstarten voor handmatig en automatisch herstartgedrag."
+          ],
+          [
+            "Snel knipperen",
+            "Volle batterij",
+            "Verlaag de DC-ingangsspanning, controleer op defecte acculader"
+          ],
+          [
+            "Dubbele puls",
+            "Hoge temperatuur.",
+            "Reduceer de belasting en/of verplaats de omvormer naar een beter geventileerde ruimte"
+          ],
+          [
+            "Snelle enkelvoudige puls",
+            "Hoge DC- rimpel",
+            "Controleer de DC-kabelverbindingen en de kabeldoorsnede."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "3.4 Beveiligingen en automatische herstarten\nOverbelasting\nSommige belastingen zoals motoren of pompen trekken grote inschakelstromen in een\nopstartsituatie. In dergelijke omstandigheden is het mogelijk dat de startstroom hoger is\ndan het overstroomniveau van de omvormer. In dit geval zal de uitgangsspanning snel\nafnemen om de uitgangsstroom van de omvormer te begrenzen. Indien te hoge\nstroomniveau overschreden wordt, wordt de omvormer uitgeschakeld: wacht 30\nseconden herstart vervolgens.\nEN\nNL\nFR\nNa drie herstarts gevolgd door een nieuwe overbelasting binnen 30 seconden na het\nherstarten, zal de omvormer worden uitgeschakeld en uitgeschakeld blijven. De LED's\nsignaleren uitschakeling vanwege overbelasting. Om de omvormer opnieuw te starten,\ndeze uitschakelen en vervolgens weer inschakelen.\nLage batterijspanning (instelbaar)\nDe omvormer wordt uitgeschakeld als de DC-ingangsspanning daalt tot onder het\nuitschakelingsniveau van de batterij. Na een minimale vertraging van 30 seconden zal de\nomvormer herstarten wanneer de spanningen boven het herstartniveau van de bijna lege\nbatterij komen.\nDE\nES\nSE\nNa drie herstarts gevolgd door een bijna lege batterij binnen 30 seconden na het\nherstarten, zal de omvormer uitschakelen en opnieuw proberen te stoppen. De LED's\nduiden aan dat de batterij bijna leeg is. Als u de omvormer wilt herstarten, schakelt u\ndeze uit en vervolgens weer in, of laad de batterij op: zodra de batterij wordt geladen en\nhet niveau stijgt en vervolgens gedurende 30 seconden boven het ladingsdetectieniveau\nblijft, schakelt deze in.\nAppendix\nZie de tabel Technische gegevens voor standaardinstellingen voor het afsluiten en herstarten\nvan de batterij. Ze kunnen worden gewijzigd met de VictronConnect-app.\nHoge batterijspanning\nVerlaag de DC-ingangsspanning en/of controleer op een defecte batterij- of zonne-lader in het\nsysteem. Na het uitschakelen vanwege een hoge batterijspanning, wacht de omvormer eerst\n30 seconden en probeert te herstarten zodra de batterijspanning is gedaald tot een\nacceptabel niveau. De omvormer blijft niet uitgeschakeld na meerdere pogingen.\nHoge temperatuur\nEen hoge omgevingstemperatuur of een blijvende hoge belasting kan ertoe leiden dat de\ntemperatuur te hoog wordt. De omvormer zal na 30 seconden herstarten. De omvormer blijft\nniet uitgeschakeld na meerdere pogingen. Reduceer de belasting en/of verplaats de\nomvormer naar een beter geventileerde ruimte.\nHoge DC-rimpel\nHoge DC-rimpel wordt meestal veroorzaakt door losse DC-kabelverbindingen en / of te dunne\nDC-bedrading. Nadat de omvormer is uitgeschakeld wegens een hoge\ngelijkstroomrimpelspanning, wacht deze 30 seconden en herstart vervolgens.\nNa drie herstarts gevolgd door een uitschakeling vanwege een hoge DC-rimpel binnen 30\nseconden na het opnieuw opstarten, zal de omvormer worden uitgeschakeld en zal het\nvictron energy\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "opnieuw proberen te stoppen. Om de omvormer te herstarten, schakelt u hem uit en\nvervolgens weer in.\nContinue hoge DC-rimpel vermindert de levensduur van de omvormer.\n4. INSTALLATIE\n!\nDit product moet door een gekwalificeerde elektricien worden geïnstalleerd.\nTijdens de installatie controleert u of de externe connector met draadbrug is\nverwijderd (of schakel de externe aan/uit-schakelaar uit indien geinstalleerd)\nteneinde er zeker van te zijn dat de omvormer niet onverwacht kan worden\ningeschakeld.\n?\n4.1 Locatie\nHet product moet worden geinstalleerd in een droge en goed geventileerde ruimte, en zo\ndicht mogelijk bij de batterijen. Er moet een vrije ruimte van minimaal 10 cm rond het\napparaat blijven om te koelen.\nEen hoge omgevingstemperatuur resulteert in het volgende:\nKortere levensduur.\nGereduceerde laadstroom.\nVerminderde piekvermogen, of uitschakelen van de omvormer.\nHet apparaat nooit direct boven de batterijen monteren.\n?\nHet product is geschikt voor wandmontage. Voor de montage zie bijlage A.\nHet apparaat kan zowel horizontaal als verticaal worden gemonteerd; verticale montage heeft\nechter de voorkeur. De verticale positie biedt optimale koeling.\n!\nDe binnenkant van het product moet na installatie toegankelijk blijven.\nProbeer de afstand tussen het product en de batterij tot een minimum te beperken teneinde\nkabelspanningsverliezen tot een minimum te houden.\n8\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "4.2 Aansluiting van batterijkabels\nTeneinde de volledige capaciteit van het product volledig te benutten, moeten batterijen\nmet voldoende capaciteit en batterijkabels met geschikte doorsnede worden gebruikt. Zie\ntabel.\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nAanbevolen\ndoorsnede (mm2)\nlengte tot 6 m\n50\n25\n25\n70\n35\n25\n12/3000\n24/3000\n48/3000\nAanbevolen\ndoorsnede (mm2)\n0-5 m\n95\n50\n35\n5 - 10 m\n120\n95\n70\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nAanbevolen\nbatterijcapaciteit\n(Ah)\n300 - 800\n150 - 400\n75 - 200\n350 - 1000\n200 - 500\n100 - 250\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\n12/3000\n24/3000\n48/3000\nAanbevolen\nbatterijcapaciteit\n(Ah)\n400 - 1200\n200 - 700\n100 - 400\nOpmerking: Interne weerstand is de belangrijkste factor bij het werken met batterijen met een\nlage capaciteit. Gelieve uw leverancier of de relevante paragrafen van ons boek \"elektriciteit\naan boord\", raadplegen, welke is te downloaden van onze website.\nProcedure\nGa als volgt te werk om de batterijkabels aan te sluiten:\nGebruik een geïsoleerde pijpsleutel om kortsluiting van de batterij te voorkomen.\nVermijd het inkorten van de batterijkabels.\n!\nDe batterijkabels aansluiten: de + (rode) en de - (zwarte), op de batterij zie bijlage A.\nVerbinding met omgekeerde polariteit (+ naar - en - naar +) veroorzaakt schade aan het\nproduct.\nDe moeren stevig vastzetten om de contactweerstand zoveel mogelijk te verminderen.\nvictron energy\n9",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen doorsnede (mm2)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "lengte tot 6 m",
+            "50",
+            "25",
+            "25",
+            "70",
+            "35",
+            "25"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen doorsnede (mm2)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "0-5 m",
+            "95",
+            "50",
+            "35"
+          ],
+          [
+            "5 - 10 m",
+            "120",
+            "95",
+            "70"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen batterijcapaciteit (Ah)",
+            "300 - 800",
+            "150 - 400",
+            "75 - 200",
+            "350 - 1000",
+            "200 - 500",
+            "100 - 250"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen batterijcapaciteit (Ah)",
+            "400 - 1200",
+            "200 - 700",
+            "100 - 400"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "4.3 DC-veiligheidszekering\nEr zit geen veiligheidszekering in de omvormer; dit moet extern worden geinstalleerd. De\naanbevolen veiligheidszekeringen zijn te vinden in de onderstaande tabel\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nAanbevolen DC-\nzekering\n250A\n125A\n60A\n300A\n150A\n80A\n12/3000\n24/3000\n48/3000\nAanbevolen DC-\nzekering\n400A\n250A\n125A\n4.4 Aansluiting van de AC-bekabeling\nDit is een product van Veiligheidsklasse I (geleverd met een beschermende\naardingsterminal).\nDe neutrale draad van de AC-uitgang van deze omvormer is verbonden\nmet het chassis (zie bijlage B voor 1600VA / 2000VA en bijlage C voor\n3000VA).\n!\nDit is om te zorgen voor een goede werking van een GFCI (of RCCB) die\nmoet worden geinstalleerd in de AC-uitgang van de omvormer.\nHet chassis van het product moet worden aangesloten op de grond, op het\nframe (van een voertuig) of de grondplaat of romp (van een boot).\nProcedure\nDe eindpunten zijn duidelijk aangegeven. Van links naar rechts: \"L\" (fase), \"N\" (neutraal) en\n\"PE\" (aarding).\n4.5 Optionele Verbindingen\nEen aantal optionele verbindingen zijn mogelijk:\n4.5.1 Op afstand bedienbare aan-/uitschakelaar & afstandsbedieningspaneel\nHet product kan op drie manieren op afstand worden bestuurd.\n-\nMet een smartphone (iOS of Android) en de Victron Connect-app.\n-\nMet een externe schakelaar (aangesloten op de tweepolige externe connector).\nFunctioneert alleen als de schakelaar op de omvormer is ingesteld op \"on\".\n-\nMet een Phoenix Omvormer Control VE.Direct-paneel (aangesloten op de tweepolige\nafstandsconnector, zie bijlage A). Functioneert alleen als de schakelaar op de omvormer\nis ingesteld op \"on\".\n4.5.2. Programmable relay\nDe omvormers zijn uitgerust met een multifunctioneel relais dat standaard is geprogrammeerd\nin de normale bedrijfsmodus. (VictronConnect software is nodig om de relay functionaliteit te\nwijzigen). De verschillende relaismodi kunnen zoals hieronder beschreven worden\nsamengevat:\n10\nvictron energy",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen DC- zekering",
+            "250A",
+            "125A",
+            "60A",
+            "300A",
+            "150A",
+            "80A"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Aanbevolen DC- zekering",
+            "400A",
+            "250A",
+            "125A"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "-\nNormale werking (\"omvormer\" in VictronConnect app) - standaard\nRelais gesloten tijdens normale werking, en open als de omvormer zichzelf in alarm\nheeft uitgeschakeld, of is uitgeschakeld door een gebruiker en tevens geopend\n(natuurlijk) als er geen stroom beschikbaar is op de terminals, d.w.z. batterij\nontkoppeld. In de ECO modus, het relais zal zowel worden gesloten wanneer een\nlading wordt gezocht en als deze volledig is ingeschakeld, d.w.z. belasting\ngedetecteerd.\nGebruik deze optie als u wilt dat het relais aanduidt dat er stroom beschikbaar is op\nde uitgang van de omvormer.\n-\nWaarschuwingen en alarmen (\"alarm\" in VictronConnect app)\nNet als bij bovenstaande, maar dan wordt het relais ook geopend als er een\nwaarschuwing is. Bijvoorbeeld, omdat de batterij spanning gedaald is tot de\ngrenswaarde, of wanneer het wordt geladen tot het punt waarop het bijna wordt\nafgesloten als gevolg van overbelasting. In de ECO modus, wordt het relais zowel\ntijdens het zoeken (zonder ladingt) als volledig ingeschakeld (laden gedetecteerd)\ngesloten, behalve wanneer er een waarschuwing is.\nGebruik deze optie als u wilt dat het relais aanduidt dat het tijd is om actie te\nondernemen (laden van de batterij, lading verminderen, enzovoort), teneinde\nstroomuitval te voorkomen.\n-\nBatterij bijna leeg (\"Batterij bijna leeg\" in VictronConnect app)\nRelais ingeschakeld tijdens normaal bedrijf. Het relais schakelt uit zodra er een\nwaarschuwing voor bijna lege batterij is. Het blijft uitgeschakeld wanneer de\nfrequentieregelaar wordt uitgeschakeld als gevolg van lage spanning, en zal slechts\nweer inschakelen als de omvormer in werking is en de batterijspanning boven het\nvooringstelde-alarm reset-niveau is. Gebruik deze optie voor load shedding of om\neen generator automatisch te starten. Houd er rekening mee dat dit uitsluitend kan\nworden beschouwd als een start /stop van een poor-mans generator. Voor meer en\nbetere opties, zie hier.\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\n-\nExterne ventilator (\"ventilator\" in VictronConnect app)\nRelais is uitgeschakeld, tenzij de ventilator in de omvormer in bedrijf is. Gebruik deze\noptie om een externe ventilator in te schakelen, voor situaties waarin de omvormer zich\nin een kleine afgesloten ruimte bevindt.\n-\nUitgeschakeld relais (\"uitgeschakeld\" in VictronConnect app)\nMet deze optie wordt het relais in de OPEN-positie gezet. Gebruik deze optie als u niet\nvan plan bent om de relais-functie te gebruiken.\nvictron energy\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "5. CONFIGURATIE\nInstellingen kunnen slechts door een gekwalificeerde technicus worden\ngewijzigd.\n!\nLees de instructies zorgvuldig door alvorens u wijzigingen aanbrengt.\nBatterijen moeten tijdens het laden in een droge en goed geventileerde ruimte\nworden geplaatst.\n5.1 Standaardinstellingen: klaar voor gebruik\nBij levering is de Phoenix omvormer ingesteld op standaard fabriekswaarden. Over het\nalgemeen zijn deze instellingen geschikt voor stand-alone bediening.\nStandaard fabrieksinstellingen\nOmvormer frequentie\n50 Hz\nOmvormerspanning\n230 VAC\nZoekmodus\nuitgeschakeld\nProgrammeerbaar relais\nalarmfunctie\nDynamische cut-off\nuitgeschakeld\n5.2 Verklaring van instellingen\nOmvormer frequentie\nUitgangsfrequentie\nAanpasbaarheid: 50Hz; 60Hz\nOmvormerspanning\nAanpasbaarheid: 210 - 245V\nECO Modus\nIndien de ECO modus is 'on', zal het stroomverbruik in nullast worden verlaagd met circa\n80 ... 90%. In deze modus de Phoenix Omvormer Smart, Wanneer werkende in de\nomvormermodus, is uitgeschakeld bij onbelaste of zeer lage belasting en schakelt om de twee\nen een halve seconde voor een korte periode (aanpasbaar). Indien de uitgangsstroom een\ningesteld niveau overschrijdt, blijft de omvormer werken. Wanneer dit niet het geval is, wordt\nde omvormer opnieuw uitgeschakeld.\nDe ECO-modus kan worden ingesteld met de drukknop aan de voorkant van de omvormer.\nDe ECO-modus \"shut down\" en \"remain on\" laadniveaus kunnen worden ingesteld met\nVictron Connect.\nDe fabrieksinstellingen zijn:\nUitschakelen: 50 Watt (lineaire belasting).\nInschakelen: 100 Watt (lineaire belasting).\nProgrammeerbaar relais\nStandaard is het programmeerbare relais ingesteld als een alarmrelais, d.w.z. het relais zal\nspanningsloos worden in geval van een alarm of een vooralarm (omvormer bijna te heet,\nrimpel op de ingang bijna te hoog, batterijspanning bijna te laag).\n12\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Standaard fabrieksinstellingen",
+            ""
+          ],
+          [
+            "Omvormer frequentie",
+            "50 Hz"
+          ],
+          [
+            "Omvormerspanning",
+            "230 VAC"
+          ],
+          [
+            "Zoekmodus",
+            "uitgeschakeld"
+          ],
+          [
+            "Programmeerbaar relais",
+            "alarmfunctie"
+          ],
+          [
+            "Dynamische cut-off",
+            "uitgeschakeld"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Appendix\nDynamische Cut-off\nGebruik VictronConnect voor activeren en Dynamische Cut-off configureren (zie\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-dynamic-cutoff voor\ndetails).\nGebruik de Dynamische Cut-off niet in een installatie die ook andere belastingen op\ndezelfde batterij heeft aangesloten: de batterijspanning zal dalen vanwege de extra\nbelasting, maar de Dynamische Cut-off algoritme in de omvormer neemt die belasting\nnier waar: daarom wordt de omvormer te vroeg uitgeschakeld met een\nonderspanningsalarm.\nEN\nNL\nFR\n5.3 Configuratie per computer\nAlle instellingen kunnen worden gewijzigd door middel van een smartphone, tablet of\ncomputer.\nVoor het wijzigen van instellingen met een smartphone of tablet, is het volgende vereist:\n- VictronConnect software: kan gratis worden gedownload op www.victronenergy.com.\nVoor het wijzigen van instellingen met een computer, is het volgende vereist:\n- VictronConnect software: kan gratis worden gedownload op www.victronenergy.com.\n- Een VE.Direct to USB interface.\nDE\nES\nSE\n6. ONDERHOUD\nDe Phoenix Omvormer Smart vereist geen specifiek onderhoud. Het is voldoende om alle\nverbindingen eenmaal per jaar te controleren. Vermijd vocht en olie/roet/dampen en houd het\napparaat schoon.\nvictron energy\n13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "7. Technische gegevens\nPhoenix-omvormer Smart\n12 Volt\n24 Volt\n48 Volt\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\n12/3000\n24/3000\n48/3000\nParallel en driefasig werking\nGeen\nOMVORMER\nIngangsspanningsbereik: (1)\n9,3 - 17V\n18,6 - 34V\n37,2 - 68V\nUitgang\nUitgangsspanning: 230VAC +2% 50 Hz of 60 Hz + 0,1% (1)\nCont. uitgangsvermogen bij 25℃ (2)\n1600VA\n2000VA\n3000VA\nCont. uitgangsvermogen bij 25℃\n1300W\n1600W\n2400W\nCont. uitgangsvermogen bij 40℃\n1200W\n1450W\n2200W\nCont. uitgangsvermogen bij 65℃\n800W\n1000W\n1700W\nPiekvermogen\n3000VA\n4000VA\n6000VA\nDynamisch (belastingafhankelijk) DC-\nlaag uit (volledig configureerbaar)\nDynamic cut-off, zie\ndynamic-cutoff\nMax.rendement 12/ 24 /48 V\n92/94/94 %\n92/94/94 %\n93/94/95%\nNullast in 12 / 24 / 48 V\n8/9/11 W\n8/9/11 W\n12/13/15W\nNullast in ECO modus\n0,6/1,3/2,1 W\n0,6/1,3/2,1 W\n1,5/1,9/2,8W\nALGEMEEN\nProgrammeerbaar relais (2)\nJa\nStop & start vermogen ECO-modus\naanpasbaar\nBeveiliging (3)\na - g\nBluetooth draadloze communicatie\nVoor monitoring op afstand en systeemintegratie\nVE.Direct communicatiepoort\nVoor monitoring op afstand en systeemintegratie\nOp afstand bediende aan/uit-functie\nJa\nGemeenschappelijke kenmerken\nMaximale gebruikstemperatuur -40 tot +65℃ (Ventilator\nondersteunde koeling)\nVochtigheid (niet-condenserend): max 95%\nBEHUIZING\nGemeenschappelijke kenmerken\nMateriaal & kleur: staal (blauw RAL 5012; zwart RAL 9017)\nBeschermingsklasse: IP 21\nAccu-aansluiting\nM8 bouten\nM8 bouten\n2+2 M8 bouten\n230V AC-connectie\nSchroefklemmen\nGewicht\n12kg\n13kg\n19kg\nAfmetingen (hxbxd)\n485 x 219 × 125 mm\n485 × 219 × 125 mm\n533 x 285 × 150mm\n(12V)\n485 × 285 × 150mm\n(24V/48V)\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-\nNORMEN\nVeiligheid\nEN 60335-1\nEmissie, immuniteit\nEN 55014-1 / EN 55014-2/ IEC 61000-6-1 / IEC 61000-6-2 /\nIEC 61000-6-3\nAutomotive richtlijn\nECE R10-5\n1) Niet-lineaire belasting, topfactor 3:1\n3) Beveiligingsmethoden:\n2) Programmeerbaar relais dat o.a. worden\nA) kortsluiting\ningesteld voor algemeen alarm, DC onder\nb) overbelasting\nspanning of generatorset start/stop functie.\nc) batterijspanning te hoog\nd) batterijspanning te laag\nAC-rating: 230V / 3A\ne) temperatuur te hoog\nDC-rating: 3A tot 30VDC, 0.2A tot 70VDC\nf) 230 V AC op omvormer uitgang\ng) ingangsspanning met een te hoge rimpel\n14\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Phoenix-omvormer Smart",
+            "12 Volt 24 Volt 48 Volt",
+            "12/1600 24/1600 48/1600",
+            "12/2000 24/2000 48/2000",
+            "12/3000 24/3000 48/3000"
+          ],
+          [
+            "Parallel en driefasig werking",
+            "",
+            "Geen",
+            ""
+          ],
+          [
+            "",
+            "",
+            "OMVORMER"
+          ],
+          [
+            "Ingangsspanningsbereik: (1)",
+            "9,3 - 17V 18,6 - 34V 37,2",
+            "- 68V"
+          ],
+          [
+            "Uitgang",
+            "Uitgangsspanning: 230VAC +2% 50 Hz of 60 Hz + 0,1% (1)"
+          ],
+          [
+            "Cont. uitgangsvermogen bij 25℃ (2)",
+            "1600VA",
+            "2000VA",
+            "3000VA"
+          ],
+          [
+            "Cont. uitgangsvermogen bij 25℃",
+            "1300W",
+            "1600W",
+            "2400W"
+          ],
+          [
+            "Cont. uitgangsvermogen bij 40℃",
+            "1200W",
+            "1450W",
+            "2200W"
+          ],
+          [
+            "Cont. uitgangsvermogen bij 65℃",
+            "800W",
+            "1000W",
+            "1700W"
+          ],
+          [
+            "Piekvermogen",
+            "3000VA",
+            "4000VA",
+            "6000VA"
+          ],
+          [
+            "Dynamisch (belastingafhankelijk) DC- laag uit (volledig configureerbaar)",
+            "",
+            "Dynamic cut-off, zie dynamic-cutoff\nhttps://www.victronenergy.com/live/ve.direct:phoenix-inverters-",
+            ""
+          ],
+          [
+            "Max.rendement 12/ 24 /48 V",
+            "92/94/94 %",
+            "92/94/94 %",
+            "93/94/95%"
+          ],
+          [
+            "Nullast in 12 / 24 / 48 V",
+            "8/9/11 W",
+            "8/9/11 W",
+            "12/13/15W"
+          ],
+          [
+            "Nullast in ECO modus",
+            "0,6/1,3/2,1 W",
+            "0,6/1,3/2,1 W",
+            "1,5/1,9/2,8W"
+          ],
+          [
+            "",
+            "ALGEMEEN",
+            "",
+            ""
+          ],
+          [
+            "Programmeerbaar relais (2)",
+            "",
+            "Ja",
+            ""
+          ],
+          [
+            "Stop & start vermogen ECO-modus",
+            "aanpasbaar",
+            ""
+          ],
+          [
+            "Beveiliging (3)",
+            "",
+            "a - g",
+            ""
+          ],
+          [
+            "Bluetooth draadloze communicatie",
+            "Voor monitoring op afstand en systeemintegratie"
+          ],
+          [
+            "VE.Direct communicatiepoort",
+            "Voor monitoring op afstand en systeemintegratie"
+          ],
+          [
+            "Op afstand bediende aan/uit-functie",
+            "Ja"
+          ],
+          [
+            "Gemeenschappelijke kenmerken",
+            "Maximale gebruikstemperatuur -40 tot +65℃ (Ventilator ondersteunde koeling) Vochtigheid (niet-condenserend): max 95%"
+          ],
+          [
+            "",
+            "BEHUIZING"
+          ],
+          [
+            "Gemeenschappelijke kenmerken",
+            "Materiaal & kleur: staal (blauw RAL 5012; zwart RAL 9017) Beschermingsklasse: IP 21"
+          ],
+          [
+            "Accu-aansluiting",
+            "M8 bouten",
+            "M8 bouten",
+            "2+2 M8 bouten"
+          ],
+          [
+            "230V AC-connectie",
+            "Schroefklemmen",
+            ""
+          ],
+          [
+            "Gewicht",
+            "12kg",
+            "13kg",
+            "19kg"
+          ],
+          [
+            "Afmetingen (hxbxd)",
+            "485 x 219 × 125 mm",
+            "485 × 219 × 125 mm",
+            "533 x 285 × 150mm (12V) 485 × 285 × 150mm (24V/48V)"
+          ]
+        ],
+        [
+          [
+            "NORMEN"
+          ],
+          [
+            "Veiligheid",
+            "EN 60335-1"
+          ],
+          [
+            "Emissie, immuniteit",
+            "EN 55014-1 / EN 55014-2/ IEC 61000-6-1 / IEC 61000-6-2 / IEC 61000-6-3"
+          ],
+          [
+            "Automotive richtlijn",
+            "ECE R10-5"
+          ],
+          [
+            "1) Niet-lineaire belasting, topfactor 3:1",
+            "3) Beveiligingsmethoden:"
+          ],
+          [
+            "2) Programmeerbaar relais dat o.a. worden",
+            "A) kortsluiting"
+          ],
+          [
+            "ingesteld voor algemeen alarm, DC onder",
+            "b) overbelasting"
+          ],
+          [
+            "spanning of generatorset start/stop functie.",
+            "c) batterijspanning te hoog\n:unselected:"
+          ],
+          [
+            "AC-rating: 230V / 3A",
+            "d) batterijspanning te laag"
+          ],
+          [
+            "DC-rating: 3A tot 30VDC, 0.2A tot 70VDC",
+            "e) temperatuur te hoog\nf) 230 V AC op omvormer uitgang g) ingangsspanning met een te hoge rimpel\n:unselected: :unselected: :unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "1) Kan worden aangepast tot 60Hz en tot 240V\n2) Bescherming\na. Uitgang kortsluiting\nb. Overbelasting\nc. Batterijspanning te hoog\nd. Batterijspanning te laag\ne. Temperatuur te hoog\nf. 230VAC op omvormer uitgang\ng. Ingangsspanningsrimpel te hoog\n3) Niet-lineaire belasting, topfactor 3:1\n4) Programmeerbaar relais dat kan worden ingesteld voor algemeen alarm, DC-onderspanning of\ngenset-startsignaalfunctie\nEN\nNL\nFR\nDE\nES\nSE\nAppendix\nvictron energy\n15",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "1. CONSIGNES DE SÉCURITÉ\nEN\nGénéral\nLisez toute la documentation fournie avec l'appareil afin de vous familiariser avec les\nrègles de sécurité avant toute utilisation. Cet appareil a été conçu et testé selon les\nstandards internationaux. Cet appareil ne doit être utilisé que pour l'application à laquelle\nil est destiné.\nNL\nATTENTION : RISQUE D'ÉLECTROCUTION.\nFR\nLe produit est utilisé avec une source d'énergie permanente (batterie). Même s'il est hors\ntension, les bornes d'entrée et/ou de sortie peuvent encore présenter une tension\nélectrique dangereuse. Toujours débrancher la batterie avant d'effectuer toute activité\nmaintenance.\nDE\nES\nL'appareil ne contient aucun élément interne pouvant être réparé par l'utilisateur. Ne\njamais retirer le panneau frontal et ne jamais mettre l'appareil en service si tous les\npanneaux ne sont pas montés. Tout entretien doit être effectué par du personnel qualifié.\nNe pas utiliser l'appareil dans un endroit présentant un risque d'explosion de gaz ou de\npoussière. Consulter les indications du fabriquant des batteries pour vous assurer de la\ncompatibilité des batteries avec l'appareil. Respectez les instructions de sécurité du\nfabricant de la batterie.\nSE\nATTENTION : Ne jamais soulever de charges lourdes sans aide.\nAppendix\nInstallation\nLire attentivement les consignes d'installation avant de mettre l'appareil en service.\nCet appareil est un produit de classe de sécurité I (livré avec une borne de mise à la terre de\nprotection). Le châssis doit être mis à la masse. Un point de mise à la terre est situé à\nl'extérieur du boîtier de l'appareil Si vous suspectez la protection par prise de terre d'être\nendommagée, l'appareil doit être mis hors tension et protégé contre toute mise en service\ninvolontaire ; faire appel à du personnel qualifié.\nAssurez-vous que tous les câbles de raccordement CC et CA sont équipés de fusibles et\ndisjoncteurs. Il n'y a pas de fusible interne à l'intérieur de ce produit. Ne jamais remplacer\nles protections par d'autres d'un type différent. Consultez les manuels pour utiliser les\nprotections appropriées.\nPendant l'installation, assurez-vous de retirer le connecteur à distance avec le fil de point (ou\nbien éteignez l'interrupteur d'allumage/arrêt à distance s'il est installé) afin de vous assurer\nque le convertisseur ne puisse pas s'allumer de manière inattendue.\nAvant de mettre l'appareil en service, contrôlez que la source d'alimentation corresponde à la\nconfiguration de l'appareil tel que décrite dans le manuel.\nAssurez-vous que l'appareil est utilisé dans des conditions d'exploitation appropriées. Ne\njamais l'utiliser dans un environnement humide ou poussiéreux. Conservez toujours\nsuffisamment d'espace libre autour de l'appareil pour la ventilation et assurez-vous que les\norifices de ventilation ne sont pas obstrués.\nAssurez-vous que la puissance souhaitée ne soit pas supérieure à la capacité de l'appareil.\nvictron energy\n1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "Transport et stockage\nAssurez-vous que les câbles de secteur et de batterie sont déconnectés pour le transport et\nle stockage.\nNous n'acceptons aucune responsabilité pour des dommages liés au transport lorsque\nl'appareil n'est pas transporté dans son emballage d'origine.\nStocker l'appareil dans un endroit sec ; la température de stockage doit être comprise entre -\n20°C et +60℃\nSe référer au manuel du fabricant de la batterie pour tout ce qui concerne le transport, le\nstockage, la charge, la décharge et l'élimination de la batterie.\n2\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "2. DESCRIPTION\n2.1 Généralités\nEN\nBluetooth intégré : entièrement configurable à l'aide d'une tablette ou d'un\nsmartphone\n•\nNiveaux de réinitialisation et de déclenchement de l'alarme en cas de tension de\nbatterie faible.\n. Niveaux de redémarrage et de coupure en cas de tension de batterie faible.\n.\n. Coupure dynamique : niveau de coupure en fonction de la charge\n.\n. Tension de sortie : 210 - 245 V\n•\nFréquence : 50 Hz ou 60 Hz\n•\nNiveau de détection du mode ECO et Allumage/arrêt du mode ECO\n•\nRelais d'alarme\nNL\nFR\nDE\nSurveillance :\n•\nTension d'entrée et de sortie, % de charge et alarmes\nES\nPort de communication VE.Direct\nLe port VE.Direct peut être connecté à un ordinateur (câble d'interface VE.Direct-USB\nnécessaire) pour configurer et surveiller les mêmes paramètres.\nSE\nFiabilité reconnue\nLa topologie de pont complet avec un transformateur toroïdal a démontré sa fiabilité\ndepuis des années.\nLes convertisseurs sont protégés contre les courts-circuits et la surchauffe, que ce soit en\ncas de surcharge ou de température ambiante élevée.\nAppendix\nForte puissance de démarrage\nNécessaire pour démarrer des charges telles que des convertisseurs de puissance pour\ndes ampoules LED, halogènes ou des outils électriques.\nMode ECO\nEn mode ECO, le convertisseur commutera sur pause si la charge chute en dessous d'une\nvaleur prédéterminée (charge minimale pour qu'il s'allume : 10 VA et charge minimale pour\nqu'il s'éteigne :0 VA). Une fois sur pause, le convertisseur s'allumera une courte période de\ntemps (réglable ; par défaut : toutes les 3 secondes). Si la charge dépasse un niveau\npréconfiguré, le convertisseur restera allumé.\nAllumage/Arrêt à distance.\nUn interrupteur d'allumage/arrêt à distance ou un contact de relais peut être raccordé à un\nconnecteur à deux pôles.\nAutrement, la borne H (à gauche) du connecteur à deux pôles peut être commutée sur la\nborne positive de la batterie ; ou bien la borne L (à droite) du connecteur à deux pôles peut\nêtre commutée sur la borne négative de la batterie (ou du châssis d'un véhicule par exemple.)\nLED de diagnostic\nVeuillez consulter la section 3.3.\nPour transférer la charge vers une autre source CA : le commutateur de transfert\nautomatique\nPour nos convertisseurs de faible puissance, nous recommandons l'utilisation de notre\ncommutateur de transfert automatique Filax. Le Filax bénéficie d'un temps de transfert très\nrapide (inférieur à 20 millisecondes) afin que les ordinateurs et les autres équipements\nélectroniques puissent continuer de fonctionner sans interruption. Sinon, veuillez utiliser un\nMultiPlus équipé d'un commutateur de transfert intégré.\nvictron energy\n3",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "3. FONCTIONNEMENT\n3.1 Commutateur on/off\nLorsque le commutateur est positionné sur « on » à l'aide du bouton-poussoir, l'appareil est\nentièrement fonctionnel. Le convertisseur se met en marche et le voyant LED « inverter »\ns'allume. En appuyant ensuite sur le bouton-poussoir, au bout d'un court instant, le\nconvertisseur bascule entre « On », « ECO > et « Off ».\nEn dehors du bouton-poussoir, le convertisseur peut également être allumé (normal ou ECO)\net éteint via Bluetooth depuis un dispositif mobile fonctionnant sous iOS ou Android et avec\nl'application Victron Connect. Cependant, lorsqu'il est éteint via Bluetooth ou le bouton-\npoussoir, l'unité ne peut pas être à nouveau éteinte ou allumée au moyen du câble du port\nVE.Direct.\n3.2 Commande à distance\nIl est possible de piloter l'appareil à distance avec un simple interrupteur marche/arrêt ou avec\nun tableau de commande Phoenix Inverter Control. Un interrupteur d'allumage/arrêt à\ndistance peut être connecté à un connecteur à deux pôles. L'interrupteur peut également être\nconnecté entre le pôle positif de la batterie et le contact de gauche du connecteur à deux\npôles (signalé par « H » ; voir Annexe A), ou entre le pôle négatif de la batterie et le contact\nde droite du contact du connecteur à deux pôles (signalé par « L » ; voir Annexe A).\nPour des raisons de sécurité, ce produit peut être complètement éteint (c.à.d. le\nconvertisseur ne peut pas être allumé à l'aide du bouton-poussoir, ni par\nBluetooth) en retirant le connecteur à distance et son fil de pont installé par\ndéfaut (ou en éteignant l'interrupteur d'allumage/arrêt à distance s'il est installé).\nL'utilisateur peut être sûr que le convertisseur ne pourra pas être allumé\naccidentellement par Bluetooth par un autre utilisateur.\n!\n3.3 Définitions des voyants LED\nVoyant LED Vert\nÉtat\nRésolutions des problèmes\nAllumé\nfixe\nConvertisseur\nallumé\nVoyant LED rouge éteint\nétat OK\nVoyant LED rouge allumé ou clignotant :\nLe convertisseur est encore allumé, mais il s'arrêtera si les\nconditions empirent. Voir le tableau des LED rouges pour\nles causes d'avertissement\nClignotement simple\nlent\nMode ECO\nSi le convertisseur continue de s'allumer et de s'éteindre,\nalors qu'une charge est connectée, la charge peut être trop\npetite par rapport aux paramètres réels du mode ECO.\nAugmentez la charge ou modifiez les paramètres du Mode\nECO. (Paramètre minimal du mode ECO : 15 W\nClignotement double\nrapide\nÉteint et en\nattente\nLe convertisseur s'est éteint suite à l'activation d'une\nprotection. Le convertisseur redémarrera automatiquement\ndès que toutes les conditions d'alarme auront été\nsupprimées. Voir le tableau de l'état des LED rouges pour\nles causes d'avertissement.\nOff\nConvertisseur\nLED rouge éteinte\n4\nvictron energy",
+      "tablas": [
+        [
+          [
+            "Voyant LED Vert",
+            "État",
+            "Résolutions des problèmes"
+          ],
+          [
+            "Allumé fixe",
+            "Convertisseur allumé",
+            "Voyant LED rouge éteint état OK Voyant LED rouge allumé ou clignotant : Le convertisseur est encore allumé, mais il s'arrêtera si les conditions empirent. Voir le tableau des LED rouges pour les causes d'avertissement"
+          ],
+          [
+            "Clignotement simple lent",
+            "Mode ECO",
+            "Si le convertisseur continue de s'allumer et de s'éteindre, alors qu'une charge est connectée, la charge peut être trop petite par rapport aux paramètres réels du mode ECO. Augmentez la charge ou modifiez les paramètres du Mode ECO. (Paramètre minimal du mode ECO : 15 W"
+          ],
+          [
+            "Clignotement double rapide",
+            "Éteint et en attente",
+            "Le convertisseur s'est éteint suite à l'activation d'une protection. Le convertisseur redémarrera automatiquement dès que toutes les conditions d'alarme auront été supprimées. Voir le tableau de l'état des LED rouges pour les causes d'avertissement."
+          ],
+          [
+            "Off",
+            "Convertisseur",
+            "LED rouge éteinte"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "éteint\nVérifiez l'interrupteur on/off à distance.\nVérifiez les fusibles et les connexions du câble CC.\nVérifiez le mode opérationnel en appuyant une fois sur le\nbouton-poussoir.\nLED rouge allumée ou clignotante\nLe convertisseur s'est éteint suite à l'activation d'une\nprotection. Il ne redémarrera plus automatiquement. La\nLED rouge indique la raison de l'arrêt. Supprimez la cause\net redémarrez ensuite le convertisseur en l'éteignant puis\nen le rallumant.\n-.-\nClignotement rapide\nÉteint ou mise\nà jour\nmicrologicielle\nen cours ou\nratée\nClignotement LED rouge ( -.-\nMise à jour micrologicielle en cours ou ratée. En cas\nd'échec, essayez à nouveau la mise à jour micrologicielle.\nEN\nNL\nFR\nDE\nLED jaune\nÉtat\nRésolutions des problèmes\nAllumé\nFixe\nMode ECO\nVoyant LED rouge éteint\nétat OK\nVoyant LED rouge allumé ou clignotant :\nLe convertisseur est encore allumé, mais il s'arrêtera si les\nconditions empirent. Voir le tableau des voyants LED\nrouges indiquant les causes d'avertissement\nOff\nMode ECO\néteint\nVoyant LED rouge éteint\nVérifiez le mode opérationnel en appuyant une fois sur le\nbouton-poussoir.\nVérifiez l'interrupteur on/off à distance.\nVérifiez les fusibles et les connexions du câble CC.\nLED rouge allumée ou clignotante\nLe convertisseur s'est éteint suite à l'activation d'une\nprotection. Il ne redémarrera plus automatiquement. La\nLED rouge indique la raison de l'arrêt. Supprimez la cause\net redémarrez ensuite le convertisseur en l'éteignant puis\nen le rallumant.\nES\nSE\nAppendix\nVoyant LED rouge\nDéfinition\nRésolutions des problèmes\nAllumé\nFixe\nSurcharge\nRéduisez la charge\nClignotement lent\nNiveau de\nbatterie bas\nRechargez ou remplacez la batterie\nVérifiez les connexions du câble CC\nVérifiez la section efficace de câble car elle peut être\ninsuffisante.\nVoir la section 4.2 Protections et redémarrages\nautomatiques pour un comportement de redémarrage\nautomatique et manuel.\nClignotement rapide\nNiveau de\nbatterie élevé\nRéduisez la tension d'entrée CC. Contrôlez le chargeur\ndéfaillant.\nDouble\nclignotement\nTemp.élevée\nRéduisez la charge et/ou déplacez le convertisseur vers\nune zone mieux aérée\nClignotement unique\nrapide\nOndulation CC\nélevée\nVérifiez les connexions du câble CC et la section de câble.\nvictron energy\n5",
+      "tablas": [
+        [
+          [
+            "",
+            "éteint",
+            "Vérifiez l'interrupteur on/off à distance. Vérifiez les fusibles et les connexions du câble CC. Vérifiez le mode opérationnel en appuyant une fois sur le bouton-poussoir."
+          ],
+          [
+            "LED rouge allumée ou clignotante Le convertisseur s'est éteint suite à l'activation d'une protection. Il ne redémarrera plus automatiquement. La LED rouge indique la raison de l'arrêt. Supprimez la cause et redémarrez ensuite le convertisseur en l'éteignant puis en le rallumant."
+          ],
+          [
+            "-.- Clignotement rapide",
+            "Éteint ou mise à jour micrologicielle en cours ou ratée",
+            "Clignotement LED rouge ( -.- Mise à jour micrologicielle en cours ou ratée. En cas d'échec, essayez à nouveau la mise à jour micrologicielle."
+          ]
+        ],
+        [
+          [
+            "LED jaune",
+            "État",
+            "Résolutions des problèmes"
+          ],
+          [
+            "Allumé Fixe",
+            "Mode ECO",
+            "Voyant LED rouge éteint état OK Voyant LED rouge allumé ou clignotant : Le convertisseur est encore allumé, mais il s'arrêtera si les conditions empirent. Voir le tableau des voyants LED rouges indiquant les causes d'avertissement"
+          ],
+          [
+            "Off",
+            "Mode ECO éteint",
+            "Voyant LED rouge éteint Vérifiez le mode opérationnel en appuyant une fois sur le bouton-poussoir. Vérifiez l'interrupteur on/off à distance. Vérifiez les fusibles et les connexions du câble CC. LED rouge allumée ou clignotante Le convertisseur s'est éteint suite à l'activation d'une protection. Il ne redémarrera plus automatiquement. La LED rouge indique la raison de l'arrêt. Supprimez la cause et redémarrez ensuite le convertisseur en l'éteignant puis en le rallumant."
+          ]
+        ],
+        [
+          [
+            "Voyant LED rouge",
+            "Définition",
+            "Résolutions des problèmes"
+          ],
+          [
+            "Allumé Fixe",
+            "Surcharge",
+            "Réduisez la charge"
+          ],
+          [
+            "Clignotement lent",
+            "Niveau de batterie bas",
+            "Rechargez ou remplacez la batterie Vérifiez les connexions du câble CC Vérifiez la section efficace de câble car elle peut être insuffisante. Voir la section 4.2 Protections et redémarrages automatiques pour un comportement de redémarrage automatique et manuel."
+          ],
+          [
+            "Clignotement rapide",
+            "Niveau de batterie élevé",
+            "Réduisez la tension d'entrée CC. Contrôlez le chargeur défaillant."
+          ],
+          [
+            "Double clignotement",
+            "Temp.élevée",
+            "Réduisez la charge et/ou déplacez le convertisseur vers une zone mieux aérée"
+          ],
+          [
+            "Clignotement unique rapide",
+            "Ondulation CC élevée",
+            "Vérifiez les connexions du câble CC et la section de câble."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "3.4 Protection et redémarrages automatiques\nSurcharge\nCertaines charges, telles que des moteurs ou des pompes, font appel à de grandes quantités\nde courants lors des démarrages. Dans de telles circonstances, il est possible que le courant\nde démarrage dépasse le niveau de déclenchement de surintensité du convertisseur. Dans\nce cas, la tension de sortie baissera rapidement pour limiter le courant de sortie du\nconvertisseur. Si le niveau de déclenchement de surintensité est dépassé continuellement, le\nconvertisseur s'éteindre, attendra 30 secondes et il redémarrera.\nAprès trois redémarrages suivis d'une autre surcharge dans les 30 secondes suivant le\nredémarrage, le convertisseur s'arrêtera et il restera éteint. Les voyants LED indiqueront un\narrêt dû à une surcharge. Pour redémarrer le convertisseur, éteignez-le, et ensuite allumez-le.\nTension de batterie faible (réglable)\nLe convertisseur s'éteindre, puis la tension d'entrée CC descendra en dessous du niveau\nd'arrêt en cas de batterie basse. Après un délai minimal de 30 secondes, le convertisseur\nredémarrera si la tension dépasse le niveau de redémarrage en cas de batterie basse.\nAprès trois redémarrages suivis d'un arrêt dû à un niveau de batterie bas dans les 30\nsecondes suivant le redémarrage, le convertisseur s'arrêtera et il restera éteint. Les LED\nsignaleront un arrêt dû à un niveau de batterie bas. Pour redémarrer le convertisseur,\néteignez-le puis rallumez-le. Sinon, rechargez la batterie : dès que le niveau de la batterie\nmontera et qu'il restera au-dessus du niveau de détection de charge pendant 30 secondes, le\nconvertisseur s'allumera.\nConsultez le tableau des spécifications techniques pour les seuils par défaut d'arrêt et de\nredémarrage en cas de niveau de batterie bas. Ils peuvent être modifiés à l'aide de l'App.\nVictronConnect.\nTension de batterie élevée\nRéduisez la tension d'entrée CC et/ou recherchez la batterie ou le chargeur solaire défaillant\ndans le système. Après un arrêt dû à une tension élevée, le convertisseur attendra d'abord 30\nsecondes, et il essayera à nouveau de démarrer dès que la tension de batterie descendra à\nun niveau acceptable. Le convertisseur ne restera pas éteint après plusieurs tentatives.\nTempérature élevée\nUne température ambiante élevée ou une charge élevée durable peut entraîner un arrêt dû à\nune surchauffe. Le convertisseur redémarrera au bout de 30 secondes. Le convertisseur ne\nrestera pas éteint après plusieurs tentatives. Réduisez la charge et/ou déplacez le\nconvertisseur vers une zone mieux aérée.\nOndulation CC élevée\nUne ondulation CC élevée est généralement causée par des pertes sur les connexions du\ncâble CC et/ou des fils CC trop fins. Si le convertisseur s'est éteint à cause d'une tension\nd'ondulation CC élevée, il attendra 30 secondes, et il redémarrera.\nAprès trois redémarrages suivis d'un arrêt dû à une ondulation CC élevée dans les 30\nsecondes suivant le redémarrage, le convertisseur s'arrêtera et il arrêtera d'essayer. Pour\nredémarrer le convertisseur, éteignez-le, et ensuite allumez-le.\nUne ondulation CC élevée constante réduit la durée de vie du convertisseur.\n6\nvictron energy",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "4. INSTALLATION\nEN\nCe produit doit être installé par un technicien qualifié.\n?\nNL\n!\nPendant l'installation, assurez-vous de retirer le connecteur à distance avec le fil\nde pont (ou bien éteignez l'interrupteur d'allumage/arrêt à distance s'il est\ninstallé) afin de vous assurer que le convertisseur ne puisse pas s'allumer de\nmanière inattendue.\nFR\nDE\n4.1 Emplacement\nLe produit doit être installé dans un endroit sec et bien ventilé, aussi près que possible\ndes batteries. Conservez un espace d'au moins 10 cm autour de l'appareil pour son\nrefroidissement.\nES\nSE\nUne température ambiante trop élevée aura les conséquences suivantes :\nRéduction de la longévité.\n!\nCourant de charge réduit.\nPuissance de crête réduite ou arrêt total du convertisseur.\nNe jamais placer l'appareil directement au-dessus des batteries.\nAppendix\nLe produit peut être fixé au mur. Pour l'installation, voir l'annexe A.\nL'appareil peut être monté horizontalement ou verticalement, mais le montage vertical est\npréférable. Le refroidissement est meilleur dans cette position.\n!\nL'intérieur de l'appareil doit rester accessible après l'installation.\nConservez une distance minimale entre l'appareil et les batteries afin de réduire les pertes de\ntension dans les câbles.\nPour des raisons de sécurité cet appareil doit être installé dans un\nenvironnement résistant à la chaleur s'il va être utilisé avec un équipement dont\nune quantité importante d'énergie va être convertie. Évitez la présence de\nproduits tels que des produits chimiques, des composants synthétiques, des\nrideaux ou d'autres textiles, à proximité de l'appareil.\n!\nvictron energy\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "4.2 Raccordement des câbles de batterie\nPour bénéficier de la puissance maximale de l'appareil, il est nécessaire d'utiliser des\nbatteries de capacité suffisante et des câbles de section suffisante. Voir tableau.\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nSection de câbles\nrecommandée (mm2)\nLongueur de câble\njusqu'à 6 m\n50\n25\n25\n70\n35\n25\n12/3000\n24/3000\n48/3000\nSection de câbles\nrecommandée (mm2)\nLongueur de câble\n0 - 5 m\n95\n50\n35\n5 - 10 m\n120\n95\n70\n12/1600\n24/1600\n48/1600\n12/2000\n24/2000\n48/2000\nCapacité de\nbatterie\nrecommandée\n(Ah)\n300 - 800\n150 - 400\n75 - 200\n350 - 1000\n200 - 500\n100 - 250\n12/3000\n24/3000\n48/3000\nCapacité de\nbatterie\nrecommandée\n(Ah)\n400 - 1200\n200 - 700\n100 - 400\nRemarque : la résistance interne est un facteur important si vous utilisez des batteries de\nfaible capacité. Veuillez consulter votre fournisseur ou les chapitres appropriés de notre livre\n« Électricité à bord », en téléchargement sur notre site web.\nProcédure\nProcédez comme suit pour raccorder les câbles de batterie :\nUtilisez une clé à pipe isolante afin d'éviter de court-circuiter la batterie.\nÉvitez de court-circuiter les câbles de batterie.\n!\nConnectez les câbles de batterie : le + (rouge) et le - (noir) à la batterie, voir l'annexe A.\nInverser la polarité (le + au -, et le - au +) pourrait endommager l'appareil.\nSerrez fermement les écrous afin de réduire la résistance de contact autant que possible.\n8\nvictron energy",
+      "tablas": [
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Section de câbles recommandée (mm2)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Longueur de câble jusqu'à 6 m",
+            "50",
+            "25",
+            "25",
+            "70",
+            "35",
+            "25"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Section de câbles recommandée (mm2)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Longueur de câble 0 - 5 m",
+            "95",
+            "50",
+            "35"
+          ],
+          [
+            "5 - 10 m",
+            "120",
+            "95",
+            "70"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/1600",
+            "24/1600",
+            "48/1600",
+            "12/2000",
+            "24/2000",
+            "48/2000"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Capacité de batterie recommandée (Ah)",
+            "300 - 800",
+            "150 - 400",
+            "75 - 200",
+            "350 - 1000",
+            "200 - 500",
+            "100 - 250"
+          ]
+        ],
+        [
+          [
+            "",
+            "12/3000",
+            "24/3000",
+            "48/3000"
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Capacité de batterie recommandée (Ah)",
+            "400 - 1200",
+            "200 - 700",
+            "100 - 400"
+          ]
+        ]
+      ]
+    }
+  ]
+}

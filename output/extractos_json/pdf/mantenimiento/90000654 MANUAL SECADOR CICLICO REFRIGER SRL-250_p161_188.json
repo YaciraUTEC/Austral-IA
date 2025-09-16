@@ -1,0 +1,2024 @@
+{
+  "archivo": "90000654 MANUAL SECADOR CICLICO REFRIGER SRL-250_p161_188",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Controller\nRF-A Series Digital Refrigerated Dryers\nIn the first 3 screens the sensor temperatures are\ndisplayed. If the measured temperatures are\nbetween their low and high limits, only the\ntemperature value is displayed, otherwise 'LOW' or\n'HIGH' message is added in the end of the line. In\ncase of sensor break, only 'SENSOR BREAK'\nmessage is displayed.\nThe fourth screen displays the states of the\ncompressor motor, fan motor, the phase sequence\nand remote disable. This information is compiled\nfrom the digital inputs. (Digital Inputs 3 to 8)\nIn the first two line of the fifth screen the total and\nECO operation durations of the dryer are\ndisplayed. These values can not be reset. The third\nline displays the run time since the last\nmaintenance. The fourth line indicates the filter\nusage time. If these times exceed their set values\n(see section 2.3.3.), i.e. general maintenance\nperiod and filter change period, a flashing warning\nwith a message 'MAINTENANCE' or 'REPLACE\nFILTER' is displayed in the fourth line of the\ndisplay.\nThe sixth screen displays the last four events that\ncaused the dryer to be stopped automatically.\nThe seventh screen displays the date and time.\nThe eighth screen displays the states of the digital\ninputs and digital outputs. The letters 'L' and 'H'\nstands for 'not activated' and 'activated' states\nrespectively.\nIn order to start the dryer, all the temperatures\nexcept the exchanger temperature must be\nbetween their low and high limits. The low\npressure line temperature can be 'HIGH'. Digital\ninputs 3 to 8 should not be activated. If this is not\nthe case,\ninstead\nof\n‘READY'\nmessage,\n'DISABLED' message is displayed in the normal\noperation screen.\nWhen the dryer is started, the normal operation\nscreen is displayed as shown below ..\nSULLAIR\nDEW POINT\nREADY\n16°℃\nIf the drain output is activated, 'DRAIN ON'\nmessage is displayed at the end of the last line.\nWhile the fan motor is running, 'FAN MOTOR IS\nON' message is displayed in the second line. In\nECO mode the appearance of the display is\ngiven below.\nSULLAIR\nECO (SEC. )\n:\n234\nDEW POINT\n8℃\nRUNNING\nThe value at the end of the second row indicates\nthe time in seconds since beginning of the ECO\nmode.\nIf the dryer is stopped automatically because of\nan anomaly, or manually by using\nbutton, the\nnormal operating screen is displayed as shown\nbelow.\nSULLAIR\nDEW POINT\nDISABLED\n127\n16°℃\nThe number at the end of the last line indicates\nthe remaining time in seconds from the restart\ndelay. If this number becomes zero and there is\nno anomaly, the dryer can be restarted.\nbutton is used to change the temperature\nunit from ºC to OF or vice versa. When this button\nis pressed, the control operation stops about 3\nseconds and all the temperature values are\nconverted to the selected unit.\nThe first line in the normal operation display\n(SULLAIR) is user configurable.\n0\n0\n0\n0\n1\n1\n)\n02250201-297 R01\nSULLAIR®\n2\n27\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "7\n7\n7\n)\n)\n)\n0000000000000000000\nOperation\nRF-A Series Digital Refrigerated Dryers\nINLET AIR TEMP.\n20℃\nEXCHANGER. TEMP.\n18°℃\nHIGH\nTOTAL TIME\n22.2\nECO TIME\n:\n8.1\nRUN TIME\n:\n22.2\nFILTER TIME :\n22.2\nLOW PRES. LINE\nTEMP.\n18℃\nHIGH PRES. LINE TEMP.\n1. REMOTE DISABLE\n2. INLET AIR TEMP. HI\n3. EXCH TEMP. LO\n4. COMPRESSOR FAULT\n000\nAMBIENT TEMPERATURE\n19℃\nAUXILIARY TEMP.\n18°\nCOMPRESSOR OK\nFAN MOTOR OK\nPHASE SEQUENCE OK\nREMOTE CONTROL OK\n2020232222222222223\n)\n)\n26\n02250201-297 R01\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\nDATE\n22.03.10\nTIME\n:\n12.30.45\nDAY\n:\nMONDAY\nD. INPUT1 :\nD. INPUT2 :\nD. OUTPUT :\nLLLLLLLL\nLLLLLLLL\nLLLHHLLL\nSULLAIR®",
+      "tablas": [
+        [
+          [
+            ""
+          ],
+          [
+            "TOTAL TIME",
+            "22.2"
+          ],
+          [
+            "ECO TIME :",
+            "8.1"
+          ],
+          [
+            "RUN TIME :",
+            "22.2"
+          ],
+          [
+            "FILTER TIME :",
+            "22.2"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "RF-A Series Digital Refrigerated Dryers\nT.No\nName\nFunction\n13\nD. OUTPUT 8\nAlarm Output (Horn)\n14\n-\n15\nCOMM. For D. INPUTS\n16\nCOMM. For D. INPUTS\n17\nCOMM. For D. INPUTS\n18\nD. INPUT 1\nRemote Start (Press and\nRelease)\n19\nD. INPUT 2\nRemote Stop (Press and\nRelease)\n20\nD. INPUT 3\nCompressor Fault\n21\nD. INPUT 4\nCompressor Overload\n22\nD. INPUT 5\nFan Fault\n23\nD. INPUT 6\nFan Overload\n24\nD. INPUT 7\nPhase Sequence Error\n25\nD. INPUT 8\nRemote Disable\n26\nD. INPUT 9\nFan Motor is On\n27\nD. INPUT 10\nConfiguration Enable\n28\nD. INPUT 11\nSpare\n29\nD. INPUT 12\nSpare\n30\nD. INPUT 13\nSpare\n31\nD. INPUT 14\nSpare\n32\nD. INPUT 15\nSpare\n33\nD. INPUT 16\nSpare\nThe contact rating of each output relay is 10A at 250\nVAC.\nDigital inputs are activated by 24V DC or AC.\nOperation\nTERMINALS IN THE LOWER ROW\nThe first 3 terminals are for operating voltage.\n(Phase, Neutral and Ground) The ground terminal\nshould be connected to the chassis of the dryer.\nThe last 3 terminals are for RS-485 communication\nline.\n6.2.2 NORMAL OPERATION\nWhen the controller is powered on it displays the\ntype and version message and then normal\noperation screen is displayed as shown below.\nSULLAIR\nDEW POINT\nREADY\n16°℃\nThe exchanger temperature and operation state of\nthe dryer is displayed in this screen. Sequentially\npressing\nbutton display other info related to the\ndryer in 8 different screens. While one screen is\ndisplayed, pressing\nP button reverts to the normal\noperation screen. The views of the screens in\nsequence of the appearance are shown below.\n25\n)\n)\n1\n1\nSULLAIR\n02250201-297 R01\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": [
+        [
+          [
+            "T.No",
+            "Name",
+            "Function"
+          ],
+          [
+            "13",
+            "D. OUTPUT 8",
+            "Alarm Output (Horn)"
+          ],
+          [
+            "14",
+            "-",
+            ""
+          ],
+          [
+            "15",
+            "COMM. For D. INPUTS",
+            ""
+          ],
+          [
+            "16",
+            "COMM. For D. INPUTS",
+            ""
+          ],
+          [
+            "17",
+            "COMM. For D. INPUTS",
+            ""
+          ],
+          [
+            "18",
+            "D. INPUT 1",
+            "Remote Start (Press and Release)"
+          ],
+          [
+            "19",
+            "D. INPUT 2",
+            "Remote Stop (Press and Release)"
+          ],
+          [
+            "20",
+            "D. INPUT 3",
+            "Compressor Fault"
+          ],
+          [
+            "21",
+            "D. INPUT 4",
+            "Compressor Overload"
+          ],
+          [
+            "22",
+            "D. INPUT 5",
+            "Fan Fault"
+          ],
+          [
+            "23",
+            "D. INPUT 6",
+            "Fan Overload"
+          ],
+          [
+            "24",
+            "D. INPUT 7",
+            "Phase Sequence Error"
+          ],
+          [
+            "25",
+            "D. INPUT 8",
+            "Remote Disable"
+          ],
+          [
+            "26",
+            "D. INPUT 9",
+            "Fan Motor is On"
+          ],
+          [
+            "27",
+            "D. INPUT 10",
+            "Configuration Enable"
+          ],
+          [
+            "28",
+            "D. INPUT 11",
+            "Spare"
+          ],
+          [
+            "29",
+            "D. INPUT 12",
+            "Spare"
+          ],
+          [
+            "30",
+            "D. INPUT 13",
+            "Spare"
+          ],
+          [
+            "31",
+            "D. INPUT 14",
+            "Spare"
+          ],
+          [
+            "32",
+            "D. INPUT 15",
+            "Spare"
+          ],
+          [
+            "33",
+            "D. INPUT 16",
+            "Spare"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "1\n7\n3\nRF-A Series Digital Refrigerated Dryers\n)\n)\n)\n7\n00000000000000\n)\n0\nOperation\nThe dryer is automatically stopped if an anomaly is\ndetected. In that case, the alarm output and the alarm\nindicator LED on the front panel become activated. In\norder to restart the dryer, alarm should be\nacknowledged and \"restart delay\" period should be\ntimed out. Pressing\nbutton acknowledges the\nalarm and de-energizes the alarm output and alarm\nLED.\nand\nbuttons are used for starting and stopping\nthe dryer respectively. If the dryer is stopped\nmanually, it can not be started before \"restart delay\"\nperiod is timed out.\n1\n6.2.1 EXTERNAL CONNECTIONS\nThe back panel view and the connection terminals of\nE-680 controller are given in Figure 6-2.\nC -01+-02+\n-03+\n-04+-05+ -06+\n-07+ -08+\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33\n0\n0\n)\n1\nFN\nFigure 6-2: The Backpanel View of E-680 Controller\n1\n1\n1\nTERMINALS IN THE UPPER ROW\nThese terminals are used for temperature sensors\n(Pt-100).\n1\nInlet Air Temperature.\n2\nExchanger Temperature.\n3\nLow Pressure Line Temperature.\n4\nHigh Pressure Line Temperature.\n5\nAmbient Temperature.\n6\nAuxiliary Channel Temperature. This tempera-\nture can be monitored, but sensor break has no\neffect on the operation of the controller.\n7\nSpare Channel 1.\n8\nSpare Channel 2.\nSpare channels are measured by the controller, but\ncan not be monitored and sensor break for these\nchannels has no effect on the operation of the\ncontroller.\n02250201-297 R01\n24\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\nTERMINALS IN THE MIDDLE ROW\nThese terminals are used for digital outputs and\ndigital inputs. The names and the functions in the\norder of the terminal numbers are given in the\nfollowing table.\nT.No\nName\nFunction\n1\nCOMM. For D. Out 1-4\n2\nCOMM. For D. Out 1-4\n3\nD. OUTPUT 1\nCompressor Motor\n4\nD. OUTPUT 2\nDrain Output (Normal)\n5\nD. OUTPUT 3\nDryer is Running.\n6\nD. OUTPUT 4\nDryer is Stopped. In case of\nfault, the output flashes.\n7\n8\nCOMM. For D. Out 5-8\n9\nCOMM. For D. Out 5-8\n10\nD. OUTPUT 5\nDrain Output (Inverted)\n11\nD. OUTPUT 6\nSpare\n12\nD. OUTPUT 7\nSpare\nSULLAIR",
+      "tablas": [
+        [
+          [
+            "",
+            "C",
+            "",
+            "-01+-02+",
+            "-03+",
+            "",
+            "-04+-05+",
+            "-06+",
+            "-07+",
+            "",
+            "-08+"
+          ],
+          [
+            ":unselected:",
+            ":unselected: :unselected:",
+            ":unselected: :unselected:",
+            ":unselected: :unselected:",
+            ":unselected: :unselected:",
+            ":unselected: :unselected:",
+            ":unselected: :unselected:",
+            ":unselected: :unselected:",
+            ":unselected:",
+            ":unselected:"
+          ]
+        ],
+        [
+          [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33"
+          ],
+          [
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:"
+          ]
+        ],
+        [
+          [
+            "T.No",
+            "Name",
+            "Function"
+          ],
+          [
+            "1",
+            "COMM. For D. Out 1-4",
+            ""
+          ],
+          [
+            "2",
+            "COMM. For D. Out 1-4",
+            ""
+          ],
+          [
+            "3",
+            "D. OUTPUT 1",
+            "Compressor Motor"
+          ],
+          [
+            "4",
+            "D. OUTPUT 2",
+            "Drain Output (Normal)"
+          ],
+          [
+            "5",
+            "D. OUTPUT 3",
+            "Dryer is Running."
+          ],
+          [
+            "6",
+            "D. OUTPUT 4",
+            "Dryer is Stopped. In case of fault, the output flashes."
+          ],
+          [
+            "7",
+            "",
+            ""
+          ],
+          [
+            "8",
+            "COMM. For D. Out 5-8",
+            ""
+          ],
+          [
+            "9",
+            "COMM. For D. Out 5-8",
+            ""
+          ],
+          [
+            "10",
+            "D. OUTPUT 5",
+            "Drain Output (Inverted)"
+          ],
+          [
+            "11",
+            "D. OUTPUT 6",
+            "Spare"
+          ],
+          [
+            "12",
+            "D. OUTPUT 7",
+            "Spare"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Operation\nRF-A Series Digital Refrigerated Dryers\n)\nDIGITAL CONTROLLER E-680\n(RF-A-3000 to RF-A-7300)\nE-680 is designed as a controller for refrigerant type\ncompressed air dryers. The controller has 8\ntemperature sensor inputs. Each channel can be\nconfigured for type J, type K thermocouple or Pt-100\nresistance thermometer. These inputs are used to\nmeasure the temperatures at various points in the\ndryer. The controller has also 8 digital (relay) outputs\nand 16 digital inputs. The digital outputs are taken\nthrough the normally open contacts of the output\nrelays. The contact rating of the output relays are\n10A at 250 V AC Digital inputs are activated by 24V\nDC or AC.\nThe controller has an RS-485 communication\ninterface that can be used for remotely monitoring\nchannel temperatures, set points, input and output\nstates.\nRTU\nModbus\nprotocol\nis used\nfor\ncommunication.\nSULLAIR\nP\nThe front panel of the controller contains a four line\n20 character LCD display and 10 buttons that are\nused in configuration and manual control operations.\nThe dimensions of the controller are 3.8 x 7.6 in / 96\nx 192 mm (front panel) with a depth of 4.3 in / 110\nmm. The panel cutout should be 3.5 x 7.2 in / 90x185\nmm. The operating voltage of the controller is 20 -\n60V AC or 20 - 85V DC.\n6.2 Operation for E-680\nThe front panel view of E-680 controller is given in\nFigure 6-1. The front panel of the controller contains\na four line 20 character LCD display, 9 buttons and\none alarm indicator LED.\nECO\nTST\nAL\nCPF\n0\n)\n0\n7\n)\n)\n0\n0\n0\n1\n)\n1\n1\nFigure 6-1: The Front Panel View of E-680 Controller\nThe buttons below the LCD display (\nand\n) are used in configuration\noperations.\nA\noutput. While in normal operation, the drain output is\ncontrolled according to the configured \"drain on\" and\n\"drain off\" periods. When\nbutton is pressed the\ndrain output is activated even if the dryer is in off state.\nbutton is used for manual control of the\ndrain\nSULLAIR.\n02250201-297 R01\n23\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "7\n7\nRF-A Series Digital Refrigerated Dryers\nOperation\n7\n)\n0\n7\n1000000\nC\nCelcius Unit Mode\nIndicates that Celsius temperature unit\nis selected.\nOF\nFahrenheit Unit Mode\nEnergy Saving Mode\nShows if the drain system is activated\nIndicates that Fahrenheit temperature\nunit is selected.\nCompressor Standby Mode\nThis mode shows that the dryer is ready for drying\noperation.\nService Standby Mode\nThis mode shows that the dryer\nIs ready for drying operation.\n)\n)\n00000000\n00\n0\n)\n)\nAlarm\nCode\nAlarm Description\nReason for Alarm\ntAL\nLow Temperature Alarm\nRefrigerant line temperature is lower than specified set\nvalues\ntAH\nHigh Temperature Alarm\nRefrigerant line temperature is higher than specified set\nvalues\nFIL\nFilter Change Alarm\nFilter element needs to be replaced\nSEr\nGeneral Service Alarm\nGeneral service time of the dryer\nHPr\nHigh Pressure Alarm\nRefrigerant high line pressure is higher than specified\nset values\nPr1\nTemperature Probe Alarm\nTemperature sensor is faulty.\nhFI\nWorking Hours Alarm\nThe dryer working hours allowed has been reached.\n)\n)\n22\n02250201-297 R01\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\nSULLAIR®",
+      "tablas": [
+        [
+          [
+            "Alarm Code",
+            "Alarm Description",
+            "Reason for Alarm"
+          ],
+          [
+            "tAL",
+            "Low Temperature Alarm",
+            "Refrigerant line temperature is lower than specified set values"
+          ],
+          [
+            "tAH",
+            "High Temperature Alarm",
+            "Refrigerant line temperature is higher than specified set values"
+          ],
+          [
+            "FIL",
+            "Filter Change Alarm",
+            "Filter element needs to be replaced"
+          ],
+          [
+            "SEr",
+            "General Service Alarm",
+            "General service time of the dryer"
+          ],
+          [
+            "HPr",
+            "High Pressure Alarm",
+            "Refrigerant high line pressure is higher than specified set values"
+          ],
+          [
+            "Pr1",
+            "Temperature Probe Alarm",
+            "Temperature sensor is faulty."
+          ],
+          [
+            "hFI",
+            "Working Hours Alarm",
+            "The dryer working hours allowed has been reached."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "RF-A Series Digital Refrigerated Dryers\nOperation\nCONTROLLERS\n6.1 DIGITAL CONTROLLER (Digi-Pro)\n(RF-A-10 to RF-A-2300)\nWith the Digi-Pro series controllers, air dryers have\noutstanding technology for both functionality and\ndynamism, as well as appearance. The multi-functional\ndisplay provides an accurate digital dew point display\nas well as coded alarm monitoring of the refrigerant\ndryer.\n* Dryer Active\nAutomatic Dran\nO\n. Energy Saving\nºC . Celsius Degrees\nOF . Fahrenheit Degrees\n() . Compressor Stand-By\nDigital controller advantages;\n· Digital dew point monitoring\n\" Energy-saving mode display\nPeriodic maintenance interval\ndisplay\nStatus report\n· Run time meter\nFahrenheit and Centigrade selection\nAV\n3.1.1 OPERATION\nUsing the Digi-Pro controller as shown in\nthe picture here is the menu below;\n256 |0 |V\n1\n2 . Service\nPROGRAM\nPOWER\nMENU\nMANUAL\nDRAIN\nDigital Controller (Digi-Pro)\nMenu\nThese buttons are used to navigate\nbetween screens and adjust values.\nManual Drain\nThis button is used for manual control of the\ndrain output. Press and hold for 4 seconds to\ndrain manually.\n7\n7\n2\n0\n3.1.2 MODE DISPLAY\n)\nA SET\nProgram\nTo modify the parameter, press and\nrelease button set. The menu is used\nby service team.\nPower\nThis button is used for starting and stopping\nthe dryer. Press and hold for 4 seconds to\nstart or stop.\nSULLAIR.\nDryer Active Mode\nThis mark indicates that the dryer is\nperformed in active state and drying.\nAutomatic Drain Mode\nShows if the drain system is activated.\n02250201-297 R01\n21\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "7\n7\n0\n)\n)\n1\n1\n20\nRF-A Series Digital Refrigerated Dryers\n7\n7\n7\n7\n7\n7\nOperation\n5.3 STARTUP AND SHUT DOWN\nPROCEDURE\n!\nWARNING\nFor short periods of inactivity, (max 2-3\ndays) we recommend that power is main-\ntained to the dryer and the control panel.\nOtherwise, before re-starting the dryer, it is\nnecessary to wait at least 2-3 hours for the\ncompressor crankcase heater to heat the oil\nof the compressor.\nSEC 5.3.1 START-UP:\n1. Check the condenser for cleanliness (Air-\nCooled).\n2. Ensure the cooling water flow and tempera-\nture is adequate (Water-Cooled).\n3. Check that the mains Disconnect ON/OFF\nswitch is ON.\n4. Switch ON the dryer pressing the button \"I -\nON\" of the ON/OFF switch\n5. Ensure that electronic Monitor is ON.\n6. Wait a few minutes; verify that the Dew\nPoint temperature displayed on electronic\ninstru- ment is dropping and condensate\ndrain is discharging .\n02250201-297 R01\nSEC 5.3.2 SHUT DOWN\n1. Shut down the air compressor.\n2. After few minutes, shut down the dryer\npressing the button \"0 - OFF\" of the\ndigital controller\nNOTE\nA Dew Point within 32º F and 50ºF/0℃ and\n+10℃ displayed on Air Dryer Controller is\ncorrect according to the possible working\nconditions (flow-rate, temperature of the\nincoming air, ambient temperature, etc.).\nDuring\nthe\noperation,\nthe\nrefrigeration\ncompressor will cycle ON/OFF on RF-A series.\nThe dryer must remain ON during the full usage\nperiod of the compressed air, even if the air\ncompressor works\n!\nWARNING\nThe number of start/stop must be no more\nthan 6 time per hour. The dryer must stop\nrunning for at least 5 minutes before being\nstarted up again.\nThe user is responsible for compliance with\nthese rules. Frequent start/Stop may cause\nirreparable damage to refrigeration com-\npressor.\n>\nSULLAIR®\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "RF-A Series Digital Refrigerated Dryers\nOperation\n7\n7\nOPERATION\n7\n5.1 STEPS TO UNDERTAKE\nBEFORE OPERATING\n1.\nRead this manual completely.\n2. Review all safety precautions.\n3. Use recommended pipe sizes as per specifi-\ncations.\n4. DO NOT operate the dryer at pressures\nabove the maximum specified on the dryer\nlabel (check the technical specifications).\n5. DO NOT operate the dryer in temperatures\nabove 120°F / 50℃ degrees\n6. DO NOT operate the dryer with inlet air tem-\nperatures above 150°F / 65°C.\n5.2 OPERATING PROCEDURES\nThis procedure should be followed on first start-up,\nafter periods of extended shutdown or following\nmaintenance procedures. Qualified personnel must\nperform the start-up.\nSEQUENCE OF OPERATIONS\n1. Ensure that all the steps of the \"Installation\"\nchapter have been observed.\n2. Ensure that the connection to the com-\npressed air system is correct and that the\npiping is suitably fixed and supported.\n3. Ensure that the condensate drain pipe is\nproperly fastened and connected to a collec-\ntion system.\n4. Ensure that the by-pass system (if installed)\nis closed and the dryer is isolated.\n5. Ensure that the manual valve of the conden-\nsate drain circuit is open.\nSULLAIR.\n6. Remove any packaging and other material\nwhich could obstruct the area around the\ndryer.\n7. Activate the mains switch.\n8. Turn on the main switch - pos. 1 on the con-\ntrol panel.\n9. Check that the mains power light of the ON/\nOFF button is ON.\n10. Wait at least two hours before starting the\ndryer (compressor crankcase heater must\nheat the oil of the compressor)\n11. Ensure the cooling water flow and tempera-\nture is adequate (Water-Cooled).\n12. Switch ON the dryer pressing the button \"I -\nON\" of the ON/OFF switch on the digital con-\ntroller\n13. Ensure the data plate flow rate match with\nplant consumption.\n14. If the dryer does not start to run check the\nmonitor on the Microprocessor. If the Phase\nerror is mentioned on the screen change the\nPhases and re-start the dryer.\n15. Allow the dryer temperature to stabilize\n10- 15 minutes\n16. Slowly open the air inlet valve.\n17. Slowly open the air outlet valve.\n18. Slowly close the central by-pass valve of the\nsystem (if optional By-pass valves are\ninstalled).\n19. Check the piping for air leakage.\n20. Ensure the drain is regularly cycling - wait for\nits first interventions.\n0\n00\n)\n-\n02250201-297 R01\n19\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "7\nRF-A Series Digital Refrigerated Dryers\n7\n7\n1000000000000\n7\n7\nInstallation\nThe installer shall obtain all permits and\ninspections required for the work, and shall pay all\ncosts and fees thereof.\n4.6 OPERATING PRECAUTIONS\nD\n00\n)\n)\n1\n1\n!\nWARNING\nVerify that the operating parameters match\nwith the nominal values stated on the data\nnameplate of the dryer (voltage, frequency,\nair pressure, air temperature, ambient tem-\nperature, etc.).\nThis dryer has been thoroughly tested, packaged\nand inspected prior to shipment. Nevertheless, the\nunit could be damaged during transportation,\ncheck the integrity of the dryer during first start-up\nand monitor operation during the first hours of\noperation. Qualified personnel must perform the\nfirst start-up. When installing and operating this\nequipment, comply with all National Electrical\nCode and any applicable federal, state and local\ncodes. Who is operating the unit is responsible for\nthe proper and safe operation of the dryer. Never\noperate equipment with panels removed.\n4.7 INSTALLATION\nIn\naddition\nto\nthe\ngeneral mechanical\nconstruction procedures and local regulations,\nthe following instructions need to be emphasized:\n1. Only authorized, trained and skilled engi-\nneers should install the compressed air\ndryer.\n2. Safety devices, protecting covers or insula-\ntions in the dryer are never to be removed\nor modified. Each pressure vessel or\naccessory installed outside the dryer with\ncompressed air (Any pressure above\natmospheric pres- sure) must be fitted with\nindividual pressure relief safety valves.\n3. Install one (1) air by-pass valve and two (2)\nswitch off valves in the line to isolate the\ndryer to allow easy maintenance and for\npossible isolation of the dryer without\ninterrupt- ing the compressed air flow.\nIn Line Filters: install one compressed air filter in\nline (particulate filter) before the dryer to protect\nit against dirt and possible clogging of heat\n18\n02250201-297 R01\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\nexchanger. Install an After-filter (coalescing filter)\nthat can act as a backup during short periods when\nthe by-pass valve is open to perform maintenance\non\nthe\ndryer.\nyour\nContact\nSullair\nrepresentative/dealer for suitable filters.\n5. Water Filter: For dryers with water cooled\ncondensers, a water filter should be installed in the\nsupply water piping. (Water Cooled Units Only)\nPRE FILTER\nAFTER FILTER\nDRAIN\nVALVE\nDRAIN\nVALVE\nDIGITAL NON-CYCLING\nREFRIGERATED AIR DRYER\n6. The interconnecting piping must be of the\ncorrect size, pressure rating and match that\nof the dryer Inlet and Outlet pipe sizes. DO\nNOT use pipes of lesser diameter as this will\nlead to additional pressure loss and will\naffect the performance of your air dryer. If\nyou are in doubt, contact your Sullair distrib-\nutor. It is recommended to use the same pipe\nsize as that of the dryer Inlet and Outlet.\nPRE FILTER\nAFTER FILTER\nDRAIN\nVALVE\nDRAIN\nVALVE\nDIGITAL NON-CYCLING\nREFRIGERATED AIR DRYER\n*\nSULLAIR.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "RF-A Series Digital Refrigerated Dryers\nInstallation\nINSTALLATION\n4.1 RECEVING AND INSPECTION\nSullair dryers are factory tested prior to shipment.\nHowever, during shipment, there are chances\nthat the dryer was mishandled or certain parts\nwere broken or might have come loose. In order\nto ensure that the dryer you have received is fit\nfor installation and operation, we recommend you\ntake a few minutes to inspect the dryer for any\nphysical abuse or damage during shipment.\nIf you notice any damage to the shipment, or if\nthe blue beads in the Tip-n-Tell label are in the\narrow (read instructions on the label attached to\nthe box) we recommend you take the\nfollowing steps to ensure proper arrangements\ncan be made to address the issue.\n1. Immediately file a complaint with the\nshipping company.\n2. Contact Sullair or Sullair distributor and\ninform them of the damage. (Email or fax\nthe copy of the shipper claim and\nacknowledgement)\nIf there is no physical damage to the dryer -\n1. Remove all the crating and packaging.\n2. Inspect the dryer for electrical and piping\nconnection and make sure that they are\nall tight.\n3. Check the data label, your packing slip\nand make sure that it is the correct unit\nyou had ordered.\n4. Follow\nthe\nrecommended\nsafety\nprocedures and get the dryer ready for\ninstallation.\n4.2 TRANSPORTATION\n1. Use care and caution when transporting\nthe dryer. Avoid sudden jerks, tilting,\ndropping and other physical abuse.\nSULLAIR®\n2. A forklift can be used to transport the dryer\nprovided the forks are long enough to sup-\nport the full width or length. Caution must be\nused throughout the move.\n4.3 INSTALLATION LAYOUT\nREQUIREMENTS\n1. The dryer must be installed horizontally. A\nminimum of at least 1.5 feet / 0.5 meters\nclearance around the dryer is necessary to\nallow free air circulation and easy access for\nservicing.\n2. The ambient temperature in the room should\nnot exceed 120ºF / 49°C and should not be\nbelow 40ºF / 4ºC, taking into account the heat\nradiated by the dryer. (About 18 watts for\neach SCFM under ISO 7183-5 condition or 40\nwatt for each liter/sec under ISO 7183- A\ncondition).\n4.4 PIPE/CONNECTION\nREQUIREMENTS\nRefer to Product Models and Specifications-\nTable 2-2, Table 2-3, Table 2-4, Table 2-5.\n4.5 ELECTRICAL CONNECTION\nREQUIREMENTS\nThe owner shall furnish all labor, materials,\nequipment and services\nnecessary for and\nreasonably incidental to complete the installation of\nall electrical as shown on the drawings. The electrical\ninstallation and connection shall be made in strict\naccordance with the requirements of any and all\nCity, County, State or Federal codes of Law having\njurisdiction, the requirements and recommendations\nof the Board of Fire Underwriters, including all\namendments and / or additions to the said codes,\nlaws, requirements, and recommendations, the\nrequirements and recommendations of the local\nutility, the Owner, and the Standard Building Code.\n02250201-297 R01\n17\n1\n7\n)\n)\n)\n)\n7\n0\n)\n)\n1\n1\n)\n1\n1\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": ")\n)\n0\n0\n0000000000000202\n16\n02250201-297 R01\nAIR COOLED\nMODEL NUMBER\nSULLAIR PART\nNUMBER\nWidth\nDepth\nHeight\nWeight\nin\nmm\nin\nmm\nin\nmm\nlbs\nkg\nRF-A-800-400-3-50-AC-NPT\n02250225-588\n31.44\n798\n37.32\n948\n57.45\n1459,5\n595\n270\nRF-A-1000-400-3-50-AC-NPT\n02250225-589\n31.44\n798\n37.32\n948\n57.45\n1459,5\n629\n285\nRF-A-1460-400-3-50-AC-NPT\n02250225-590\n30.63\n778\n45.79\n1163\n67.81\n1722\n864\n392\nRF-A-1600-400-3-50-AC-NPT\n02250225-591\n30.63\n778\n45.79\n1163\n67.81\n1722\n904\n410\nRF-A-2000-400-3-50-AC-FLANGE\n02250225-592\n33.35\n847\n55\n1397\n69.65\n1769\n1085\n492\nRF-A-2300-400-3-50-AC-FLANGE\n02250225-593\n33.35\n847\n55\n1397\n69.65\n1769\n1146\n520\nRF-A-3000-400-3-50-AC-FLANGE\n02250225-594\n42.40\n1077\n57.76\n1467\n75.83\n1926\n1535\n696\nRF-A-3460-400-3-50-AC-FLANGE\n02250225-595\n42.40\n1077\n57.76\n1467\n75.83\n1926\n1583\n718\nRF-A-4000-400-3-50-AC-FLANGE\n02250225-596\n41.81\n1062\n86.13\n2188\n75.75\n1924\n1984\n900\nRF-A-4600-400-3-50-AC-FLANGE\n02250225-597\n41.81\n1062\n86.13\n2188\n75.75\n1924\n2035\n923\nRF-A-5200-400-3-50-AC-FLANGE\n02250225-598\n47.24\n1200\n88.46\n2247\n80.46\n2044\n2150\n975\nRF-A-6100-400-3-50-AC-FLANGE\n02250225-599\n47.24\n1200\n88.46\n2247\n80.46\n2044\n2450\n1111\nRF-A-7300-400-3-50-AC-FLANGE\n02250225-600\n61.02\n1550\n104.33\n2650\n82.68\n2100\n3090\n1402\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\nSpecifications\nRF-A Series Digital Refrigerated Dryers\nSULLAIR®",
+      "tablas": [
+        [
+          [
+            "AIR COOLED MODEL NUMBER",
+            "SULLAIR PART NUMBER",
+            "Width",
+            "Depth",
+            "Height",
+            "Weight"
+          ],
+          [
+            "",
+            "",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "lbs",
+            "kg"
+          ],
+          [
+            "RF-A-800-400-3-50-AC-NPT",
+            "02250225-588",
+            "31.44",
+            "798",
+            "37.32",
+            "948",
+            "57.45",
+            "1459,5",
+            "595",
+            "270"
+          ],
+          [
+            "RF-A-1000-400-3-50-AC-NPT",
+            "02250225-589",
+            "31.44",
+            "798",
+            "37.32",
+            "948",
+            "57.45",
+            "1459,5",
+            "629",
+            "285"
+          ],
+          [
+            "RF-A-1460-400-3-50-AC-NPT",
+            "02250225-590",
+            "30.63",
+            "778",
+            "45.79",
+            "1163",
+            "67.81",
+            "1722",
+            "864",
+            "392"
+          ],
+          [
+            "RF-A-1600-400-3-50-AC-NPT",
+            "02250225-591",
+            "30.63",
+            "778",
+            "45.79",
+            "1163",
+            "67.81",
+            "1722",
+            "904",
+            "410"
+          ],
+          [
+            "RF-A-2000-400-3-50-AC-FLANGE",
+            "02250225-592",
+            "33.35",
+            "847",
+            "55",
+            "1397",
+            "69.65",
+            "1769",
+            "1085",
+            "492"
+          ],
+          [
+            "RF-A-2300-400-3-50-AC-FLANGE",
+            "02250225-593",
+            "33.35",
+            "847",
+            "55",
+            "1397",
+            "69.65",
+            "1769",
+            "1146",
+            "520"
+          ],
+          [
+            "RF-A-3000-400-3-50-AC-FLANGE",
+            "02250225-594",
+            "42.40",
+            "1077",
+            "57.76",
+            "1467",
+            "75.83",
+            "1926",
+            "1535",
+            "696"
+          ],
+          [
+            "RF-A-3460-400-3-50-AC-FLANGE",
+            "02250225-595",
+            "42.40",
+            "1077",
+            "57.76",
+            "1467",
+            "75.83",
+            "1926",
+            "1583",
+            "718"
+          ],
+          [
+            "RF-A-4000-400-3-50-AC-FLANGE",
+            "02250225-596",
+            "41.81",
+            "1062",
+            "86.13",
+            "2188",
+            "75.75",
+            "1924",
+            "1984",
+            "900"
+          ],
+          [
+            "RF-A-4600-400-3-50-AC-FLANGE",
+            "02250225-597",
+            "41.81",
+            "1062",
+            "86.13",
+            "2188",
+            "75.75",
+            "1924",
+            "2035",
+            "923"
+          ],
+          [
+            "RF-A-5200-400-3-50-AC-FLANGE",
+            "02250225-598",
+            "47.24",
+            "1200",
+            "88.46",
+            "2247",
+            "80.46",
+            "2044",
+            "2150",
+            "975"
+          ],
+          [
+            "RF-A-6100-400-3-50-AC-FLANGE",
+            "02250225-599",
+            "47.24",
+            "1200",
+            "88.46",
+            "2247",
+            "80.46",
+            "2044",
+            "2450",
+            "1111"
+          ],
+          [
+            "RF-A-7300-400-3-50-AC-FLANGE",
+            "02250225-600",
+            "61.02",
+            "1550",
+            "104.33",
+            "2650",
+            "82.68",
+            "2100",
+            "3090",
+            "1402"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Kogo\nTable 2-4: Models 60HZ\nAIR COOLED\nMODEL NUMBER\nSULLAIR PART NUMBER\nWidth\nDepth\nHeight\nWeight\nin\nmm\nin\nmm\nin\nmm\nIbs\nkg\nRF-A-4600-460-3-60-AC-FLANGE\n02250225-571\n41.81\n1062\n86.13\n2188\n75.75\n1924\n2035\n923\nRF-A-5200-460-3-60-AC-FLANGE\n02250225-572\n47.24\n1200\n88.46\n2247\n80.46\n2044\n2150\n975\nRF-A-6100-460-3-60-AC-FLANGE\n02250225-573\n47.24\n1200\n88.46\n2247\n80.46\n2044\n2450\n1111\nRF-A-7300-460-3-60-AC-FLANGE\n02250225-574\n61.02\n1550\n104.33\n2650\n82.68\n2100\n3090\n1402\nSULLAIR®\nRF-A Series Digital Refrigerated Dryers\n02250201-297 R01\nTable 2-5: Models 50Hz\nAIR COOLED\nMODEL REF\nSULLAIR PART\nNUMBER\nWidth\nDepth\nHeight\nWeight\nin\nmm\nin\nmm\nin\nmm\nlbs\nkg\nRF-A-10-230-1-50-AC-NPT\n02250225-575\n13.91\n353\n16.65\n423\n21.93\n557\n72\n33\nRF-A-20-230-1-50-AC-NPT\n02250225-576\n13.91\n353\n16.65\n423\n21.93\n557\n72\n33\nRF-A-30-230-1-50-AC-NPT\n02250225-577\n13.91\n353\n16.65\n423\n21.93\n557\n72\n33\nRF-A-50-230-1-50-AC-NPT\n02250225-578\n17.85\n453\n18.64\n473\n32.75\n832\n113\n51\nRF-A-75-230-1-50-AC-NPT\n02250225-579\n17.85\n453\n18.64\n473\n32.75\n832\n117\n53\nRF-A-100-230-1-50-AC-NPT\n02250225-580\n17.85\n453\n18.64\n473\n32.75\n832\n122\n55\nRF-A-125-230-1-50-AC-NPT\n02250225-581\n19.84\n504\n21.81\n554\n34.40\n874\n172\n78\nRF-A-175-230-1-50-AC-NPT\n02250225-582\n19.84\n504\n21.81\n554\n34.40\n874\n183\n83\nRF-A-210-230-1-50-AC-NPT\n02250225-583\n19.84\n504\n21.81\n554\n34.40\n874\n190\n86\nRF-A-275-230-1-50-AC-NPT\n02250225-584\n25.51\n648\n26.69\n678\n45.56\n1157.5\n354\n161\nRF-A-350-230-1-50-AC-NPT\n02250225-585\n25.51\n648\n26.69\n678\n45.56\n1157.5\n364\n165\nRF-A-500-230-1-50-AC-NPT\n02250225-586\n28.66\n728\n37.32\n948\n53.91\n1369,5\n485\n220\nRF-A-650-230-1-50-AC-NPT\n02250225-587\n28.66\n728\n37.32\n948\n53.91\n1369,5\n507\n230\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\nSpecifications\n15\n0\n)\n1\n1\n1\n)\n0\n0\n)\n)",
+      "tablas": [
+        [
+          [
+            "Table 2-4: Models 60HZ"
+          ],
+          [
+            "AIR COOLED MODEL NUMBER",
+            "SULLAIR PART NUMBER",
+            "Width",
+            "Depth",
+            "Height",
+            "Weight"
+          ],
+          [
+            "",
+            "",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "Ibs",
+            "kg"
+          ],
+          [
+            "RF-A-4600-460-3-60-AC-FLANGE",
+            "02250225-571",
+            "41.81",
+            "1062",
+            "86.13",
+            "2188",
+            "75.75",
+            "1924",
+            "2035",
+            "923"
+          ],
+          [
+            "RF-A-5200-460-3-60-AC-FLANGE",
+            "02250225-572",
+            "47.24",
+            "1200",
+            "88.46",
+            "2247",
+            "80.46",
+            "2044",
+            "2150",
+            "975"
+          ],
+          [
+            "RF-A-6100-460-3-60-AC-FLANGE",
+            "02250225-573",
+            "47.24",
+            "1200",
+            "88.46",
+            "2247",
+            "80.46",
+            "2044",
+            "2450",
+            "1111"
+          ],
+          [
+            "RF-A-7300-460-3-60-AC-FLANGE",
+            "02250225-574",
+            "61.02",
+            "1550",
+            "104.33",
+            "2650",
+            "82.68",
+            "2100",
+            "3090",
+            "1402"
+          ]
+        ],
+        [
+          [
+            "Table 2-5: Models 50Hz"
+          ],
+          [
+            "AIR COOLED MODEL REF",
+            "SULLAIR PART NUMBER",
+            "Width",
+            "Depth",
+            "Height",
+            "Weight"
+          ],
+          [
+            "",
+            "",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "lbs",
+            "kg"
+          ],
+          [
+            "RF-A-10-230-1-50-AC-NPT",
+            "02250225-575",
+            "13.91",
+            "353",
+            "16.65",
+            "423",
+            "21.93",
+            "557",
+            "72",
+            "33"
+          ],
+          [
+            "RF-A-20-230-1-50-AC-NPT",
+            "02250225-576",
+            "13.91",
+            "353",
+            "16.65",
+            "423",
+            "21.93",
+            "557",
+            "72",
+            "33"
+          ],
+          [
+            "RF-A-30-230-1-50-AC-NPT",
+            "02250225-577",
+            "13.91",
+            "353",
+            "16.65",
+            "423",
+            "21.93",
+            "557",
+            "72",
+            "33"
+          ],
+          [
+            "RF-A-50-230-1-50-AC-NPT",
+            "02250225-578",
+            "17.85",
+            "453",
+            "18.64",
+            "473",
+            "32.75",
+            "832",
+            "113",
+            "51"
+          ],
+          [
+            "RF-A-75-230-1-50-AC-NPT",
+            "02250225-579",
+            "17.85",
+            "453",
+            "18.64",
+            "473",
+            "32.75",
+            "832",
+            "117",
+            "53"
+          ],
+          [
+            "RF-A-100-230-1-50-AC-NPT",
+            "02250225-580",
+            "17.85",
+            "453",
+            "18.64",
+            "473",
+            "32.75",
+            "832",
+            "122",
+            "55"
+          ],
+          [
+            "RF-A-125-230-1-50-AC-NPT",
+            "02250225-581",
+            "19.84",
+            "504",
+            "21.81",
+            "554",
+            "34.40",
+            "874",
+            "172",
+            "78"
+          ],
+          [
+            "RF-A-175-230-1-50-AC-NPT",
+            "02250225-582",
+            "19.84",
+            "504",
+            "21.81",
+            "554",
+            "34.40",
+            "874",
+            "183",
+            "83"
+          ],
+          [
+            "RF-A-210-230-1-50-AC-NPT",
+            "02250225-583",
+            "19.84",
+            "504",
+            "21.81",
+            "554",
+            "34.40",
+            "874",
+            "190",
+            "86"
+          ],
+          [
+            "RF-A-275-230-1-50-AC-NPT",
+            "02250225-584",
+            "25.51",
+            "648",
+            "26.69",
+            "678",
+            "45.56",
+            "1157.5",
+            "354",
+            "161"
+          ],
+          [
+            "RF-A-350-230-1-50-AC-NPT",
+            "02250225-585",
+            "25.51",
+            "648",
+            "26.69",
+            "678",
+            "45.56",
+            "1157.5",
+            "364",
+            "165"
+          ],
+          [
+            "RF-A-500-230-1-50-AC-NPT",
+            "02250225-586",
+            "28.66",
+            "728",
+            "37.32",
+            "948",
+            "53.91",
+            "1369,5",
+            "485",
+            "220"
+          ],
+          [
+            "RF-A-650-230-1-50-AC-NPT",
+            "02250225-587",
+            "28.66",
+            "728",
+            "37.32",
+            "948",
+            "53.91",
+            "1369,5",
+            "507",
+            "230"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": ")\n0000000000000000\n7\n1\n14\nTable 2-4: Models 60HZ\n02250201-297 R01\nAIR COOLED\nMODEL NUMBER\nSULLAIR PART\nNUMBER\nWidth\nDepth\nHeight\nWeight\nin\nmm\nin\nmm\nin\nmm\nbs\nkg\nRF-A-10-230-1-60-AC-NPT\n02250225-548\n13.91\n353\n16.65\n423\n21.93\n557\n72\n33\nRF-A-20-230-1-60-AC-NPT\n02250225-549\n13.91\n353\n16.65\n423\n21.93\n557\n72\n33\nRF-A-30-230-1-60-AC-NPT\n02250225-551\n13.91\n353\n16.65\n423\n21.93\n557\n72\n33\nRF-A-50-230-1-60-AC-NPT\n02250225-552\n17.85\n453\n18.64\n473\n32.75\n832\n113\n51\nRF-A-75-230-1-60-AC-NPT\n02250225-553\n17.85\n453\n18.64\n473\n32.75\n832\n117\n53\nRF-A-100-230-1-60-AC-NPT\n02250225-554\n17.85\n453\n18.64\n473\n32.75\n832\n122\n55\nRF-A-125-230-1-60-AC-NPT\n02250225-555\n19.84\n504\n21.81\n554\n34.40\n874\n172\n78\nRF-A-175-230-1-60-AC-NPT\n02250225-556\n19.84\n504\n21.81\n554\n34.40\n874\n183\n83\nRF-A-210-230-1-60-AC-NPT\n02250225-557\n19.84\n504\n21.81\n554\n34.40\n874\n190\n86\nRF-A-275-230-1-60-AC-NPT\n02250225-558\n25.51\n648\n26.69\n678\n45.56\n1157.5\n354\n161\nRF-A-350-230-1-60-AC-NPT\n02250225-559\n25.51\n648\n26.69\n678\n45.56\n1157.5\n364\n165\nRF-A-500-230-1-60-AC-NPT\n02250225-560\n28.66\n728\n37.32\n948\n53.91\n1369,5\n485\n220\nRF-A-650-230-1-60-AC-NPT\n02250225-561\n28.66\n728\n37.32\n948\n53.91\n1369,5\n507\n230\nRF-A-800-460-3-60-AC-NPT\n02250225-562\n31.44\n798\n37.32\n948\n57.45\n1459,5\n595\n270\nRF-A-1000-460-3-60-AC-NPT\n02250225-563\n31.44\n798\n37.32\n948\n57.45\n1459,5\n629\n285\nRF-A-1460-460-3-60-AC-NPT\n02250225-564\n30.63\n778\n45.79\n1163\n67.81\n1722\n864\n392\nRF-A-1600-460-3-60-AC-NPT\n02250225-565\n30.63\n778\n45.79\n1163\n67.81\n1722\n904\n410\nRF-A-2000-460-3-60-AC-FLANGE\n02250225-566\n33.35\n847\n55\n1397\n69.65\n1769\n1085\n492\nRF-A-2300-460-3-60-AC-FLANGE\n02250225-567\n33.35\n847\n55\n1397\n69.65\n1769\n1146\n520\nRF-A-3000-460-3-60-AC-FLANGE\n02250225-568\n42.40\n1077\n57.76\n1467\n75.83\n1926\n1535\n696\nRF-A-3460-460-3-60-AC-FLANGE\n02250225-569\n42.40\n1077\n57.76\n1467\n75.83\n1926\n1583\n718\nRF-A-4000-460-3-60-AC-FLANGE\n02250225-570\n41.81\n1062\n86.13\n2188\n75.75\n1924\n1984\n900\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\nRF-A Series Digital Refrigerated Dryers\nSULLAIR\nSpecifications",
+      "tablas": [
+        [
+          [
+            "AIR COOLED MODEL NUMBER",
+            "SULLAIR PART NUMBER",
+            "Width",
+            "Depth",
+            "Height",
+            "Weight"
+          ],
+          [
+            "",
+            "",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "in",
+            "mm",
+            "bs",
+            "kg"
+          ],
+          [
+            "RF-A-10-230-1-60-AC-NPT",
+            "02250225-548",
+            "13.91",
+            "353",
+            "16.65",
+            "423",
+            "21.93",
+            "557",
+            "72",
+            "33"
+          ],
+          [
+            "RF-A-20-230-1-60-AC-NPT",
+            "02250225-549",
+            "13.91",
+            "353",
+            "16.65",
+            "423",
+            "21.93",
+            "557",
+            "72",
+            "33"
+          ],
+          [
+            "RF-A-30-230-1-60-AC-NPT",
+            "02250225-551",
+            "13.91",
+            "353",
+            "16.65",
+            "423",
+            "21.93",
+            "557",
+            "72",
+            "33"
+          ],
+          [
+            "RF-A-50-230-1-60-AC-NPT",
+            "02250225-552",
+            "17.85",
+            "453",
+            "18.64",
+            "473",
+            "32.75",
+            "832",
+            "113",
+            "51"
+          ],
+          [
+            "RF-A-75-230-1-60-AC-NPT",
+            "02250225-553",
+            "17.85",
+            "453",
+            "18.64",
+            "473",
+            "32.75",
+            "832",
+            "117",
+            "53"
+          ],
+          [
+            "RF-A-100-230-1-60-AC-NPT",
+            "02250225-554",
+            "17.85",
+            "453",
+            "18.64",
+            "473",
+            "32.75",
+            "832",
+            "122",
+            "55"
+          ],
+          [
+            "RF-A-125-230-1-60-AC-NPT",
+            "02250225-555",
+            "19.84",
+            "504",
+            "21.81",
+            "554",
+            "34.40",
+            "874",
+            "172",
+            "78"
+          ],
+          [
+            "RF-A-175-230-1-60-AC-NPT",
+            "02250225-556",
+            "19.84",
+            "504",
+            "21.81",
+            "554",
+            "34.40",
+            "874",
+            "183",
+            "83"
+          ],
+          [
+            "RF-A-210-230-1-60-AC-NPT",
+            "02250225-557",
+            "19.84",
+            "504",
+            "21.81",
+            "554",
+            "34.40",
+            "874",
+            "190",
+            "86"
+          ],
+          [
+            "RF-A-275-230-1-60-AC-NPT",
+            "02250225-558",
+            "25.51",
+            "648",
+            "26.69",
+            "678",
+            "45.56",
+            "1157.5",
+            "354",
+            "161"
+          ],
+          [
+            "RF-A-350-230-1-60-AC-NPT",
+            "02250225-559",
+            "25.51",
+            "648",
+            "26.69",
+            "678",
+            "45.56",
+            "1157.5",
+            "364",
+            "165"
+          ],
+          [
+            "RF-A-500-230-1-60-AC-NPT",
+            "02250225-560",
+            "28.66",
+            "728",
+            "37.32",
+            "948",
+            "53.91",
+            "1369,5",
+            "485",
+            "220"
+          ],
+          [
+            "RF-A-650-230-1-60-AC-NPT",
+            "02250225-561",
+            "28.66",
+            "728",
+            "37.32",
+            "948",
+            "53.91",
+            "1369,5",
+            "507",
+            "230"
+          ],
+          [
+            "RF-A-800-460-3-60-AC-NPT",
+            "02250225-562",
+            "31.44",
+            "798",
+            "37.32",
+            "948",
+            "57.45",
+            "1459,5",
+            "595",
+            "270"
+          ],
+          [
+            "RF-A-1000-460-3-60-AC-NPT",
+            "02250225-563",
+            "31.44",
+            "798",
+            "37.32",
+            "948",
+            "57.45",
+            "1459,5",
+            "629",
+            "285"
+          ],
+          [
+            "RF-A-1460-460-3-60-AC-NPT",
+            "02250225-564",
+            "30.63",
+            "778",
+            "45.79",
+            "1163",
+            "67.81",
+            "1722",
+            "864",
+            "392"
+          ],
+          [
+            "RF-A-1600-460-3-60-AC-NPT",
+            "02250225-565",
+            "30.63",
+            "778",
+            "45.79",
+            "1163",
+            "67.81",
+            "1722",
+            "904",
+            "410"
+          ],
+          [
+            "RF-A-2000-460-3-60-AC-FLANGE",
+            "02250225-566",
+            "33.35",
+            "847",
+            "55",
+            "1397",
+            "69.65",
+            "1769",
+            "1085",
+            "492"
+          ],
+          [
+            "RF-A-2300-460-3-60-AC-FLANGE",
+            "02250225-567",
+            "33.35",
+            "847",
+            "55",
+            "1397",
+            "69.65",
+            "1769",
+            "1146",
+            "520"
+          ],
+          [
+            "RF-A-3000-460-3-60-AC-FLANGE",
+            "02250225-568",
+            "42.40",
+            "1077",
+            "57.76",
+            "1467",
+            "75.83",
+            "1926",
+            "1535",
+            "696"
+          ],
+          [
+            "RF-A-3460-460-3-60-AC-FLANGE",
+            "02250225-569",
+            "42.40",
+            "1077",
+            "57.76",
+            "1467",
+            "75.83",
+            "1926",
+            "1583",
+            "718"
+          ],
+          [
+            "RF-A-4000-460-3-60-AC-FLANGE",
+            "02250225-570",
+            "41.81",
+            "1062",
+            "86.13",
+            "2188",
+            "75.75",
+            "1924",
+            "1984",
+            "900"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Table 2-3: DP Power 50H\nGROUP\nSTANDARD\nVOLTAGE\nCapacity\nSCFM @ Rated\nConditions\nAIR COOLED\nMODEL NUMBER\nSULLAIR PART\nNUMBER\nRated Flow\nPressure\nDrop\nAbsorbed\nPower\nPort Size\n(scfm)\n(psig)\n(kW)\n(in)\nNon- Cycling\n230/1/50\n13\nRF-A-10-230-1-50-AC-NPT\n02250225-575\n13\n<3\n0,32\n1/2\" NPT\nNon- Cycling\n230/1/50\n22\nRF-A-20-230-1-50-AC-NPT\n02250225-576\n22\n<3\n0,33\n1/2\" NPT\nNon- Cycling\n230/1/50\n31\nRF-A-30-230-1-50-AC-NPT\n02250225-577\n31\n<3\n0,36\n1/2\" NPT\nNon- Cycling\n230/1/50\n59\nRF-A-50-230-1-50-AC-NPT\n02250225-578\n59\n<3\n0,37\n3/4\" NPT\nNon- Cycling\n230/1/50\n91\nRF-A-75-230-1-50-AC-NPT\n02250225-579\n91\n<3\n0,59\n3/4\" NPT\nNon- Cycling\n230/1/50\n112\nRF-A-100-230-1-50-AC-NPT\n02250225-580\n112\n<3\n0,68\n3/4\" NPT\nNon-Cycling\n230/1/50\n124\nRF-A-125-230-1-50-AC-NPT\n02250225-581\n124\n<3\n0,82\n1 1/2\" NPT\nNon- Cycling\n230/1/50\n179\nRF-A-175-230-1-50-AC-NPT\n02250225-582\n179\n<3\n1,07\n1 1/2\" NPT\nNon- Cycling\n230/1/50\n221\nRF-A-210-230-1-50-AC-NPT\n02250225-583\n221\n<3\n1,19\n1 1/2\" NPT\nNon- Cycling\n230/1/50\n291\nRF-A-275-230-1-50-AC-NPT\n02250225-584\n291\n<3\n1,23\n2\" NPT\nNon- Cycling\n230/1/50\n366\nRF-A-350-230-1-50-AC-NPT\n02250225-585\n366\n<3\n1,32\n2\" NPT\nNon- Cycling\n230/1/50\n547\nRF-A-500-230-1-50-AC-NPT\n02250225-586\n547\n<3\n1,84\n2\" NPT\nNon- Cycling\n230/1/50\n706\nRF-A-650-230-1-50-AC-NPT\n02250225-587\n706\n<3\n2,35\n2\" NPT\nNon- Cycling\n400/3/50\n816\nRF-A-800-400-3-50-AC-NPT\n02250225-588\n816\n<3\n2,97\n3\" NPT\nNon- Cycling\n400/3/50\n1059\nRF-A-1000-400-3-50-AC-NPT\n02250225-589\n1059\n<3\n3,38\n3\" NPT\nNon- Cycling\n400/3/50\n1471\nRF-A-1460-400-3-50-AC-NPT\n02250225-590\n1471\n<3\n4,85\n3\" NPT\nNon- Cycling\n400/3/50\n1632\nRF-A-1600-400-3-50-AC-NPT\n02250225-591\n1632\n<3\n4,86\n3\" NPT\nNon- Cycling\n400/3/50\n1959\nRF-A-2000-400-3-50-AC-FLANGE\n02250225-592\n1959\n<3\n5,61\nDN100\nNon- Cycling\n400/3/50\n2303\nRF-A-2300-400-3-50-AC-FLANGE\n02250225-593\n2303\n<3\n6,33\nDN100\nNon- Cycling\n400/3/50\n2991\nRF-A-3000-400-3-50-AC-FLANGE\n02250225-594\n2991\n<3\n7,92\nDN100\nNon- Cycling\n400/3/50\n3441\nRF-A-3460-400-3-50-AC-FLANGE\n02250225-595\n3441\n<3\n9,22\nDN100\nNon- Cycling\n400/3/50\n4103\nRF-A-4000-400-3-50-AC-FLANGE\n02250225-596\n4103\n<3\n11,66\nDN150\nNon- Cycling\n400/3/50\n4632\nRF-A-4600-400-3-50-AC-FLANGE\n02250225-597\n4632\n<3\n12,27\nDN150\nNon- Cycling\n400/3/50\n5294\nRF-A-5200-400-3-50-AC-FLANGE\n02250225-598\n5294\n<3\n14,71\nDN150\nNon- Cycling\n400/3/50\n6176\nRF-A-6100-400-3-50-AC-FLANGE\n02250225-599\n6176\n<3\n15,32\nDN200\nNon- Cycling\n400/3/50\n7353\nRF-A-7300-400-3-50-AC-FLANGE\n02250225-600\n7353\n<3\n18,57\nDN200\nSULLAIR.\nRF-A Series Digital Refrigerated Dryers\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\n02250201-297 R01\nSpecifications\n13\n1\n0\n)\n3\n00\n)\n7\n2\n7\n)\n7",
+      "tablas": [
+        [
+          [
+            "GROUP",
+            "STANDARD VOLTAGE",
+            "Capacity SCFM @ Rated Conditions",
+            "AIR COOLED MODEL NUMBER",
+            "SULLAIR PART NUMBER",
+            "Rated Flow",
+            "Pressure Drop",
+            "Absorbed Power",
+            "Port Size"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "(scfm)",
+            "(psig)",
+            "(kW)",
+            "(in)"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "13",
+            "RF-A-10-230-1-50-AC-NPT",
+            "02250225-575",
+            "13",
+            "<3",
+            "0,32",
+            "1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "22",
+            "RF-A-20-230-1-50-AC-NPT",
+            "02250225-576",
+            "22",
+            "<3",
+            "0,33",
+            "1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "31",
+            "RF-A-30-230-1-50-AC-NPT",
+            "02250225-577",
+            "31",
+            "<3",
+            "0,36",
+            "1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "59",
+            "RF-A-50-230-1-50-AC-NPT",
+            "02250225-578",
+            "59",
+            "<3",
+            "0,37",
+            "3/4\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "91",
+            "RF-A-75-230-1-50-AC-NPT",
+            "02250225-579",
+            "91",
+            "<3",
+            "0,59",
+            "3/4\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "112",
+            "RF-A-100-230-1-50-AC-NPT",
+            "02250225-580",
+            "112",
+            "<3",
+            "0,68",
+            "3/4\" NPT"
+          ],
+          [
+            "Non-Cycling",
+            "230/1/50",
+            "124",
+            "RF-A-125-230-1-50-AC-NPT",
+            "02250225-581",
+            "124",
+            "<3",
+            "0,82",
+            "1 1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "179",
+            "RF-A-175-230-1-50-AC-NPT",
+            "02250225-582",
+            "179",
+            "<3",
+            "1,07",
+            "1 1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "221",
+            "RF-A-210-230-1-50-AC-NPT",
+            "02250225-583",
+            "221",
+            "<3",
+            "1,19",
+            "1 1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "291",
+            "RF-A-275-230-1-50-AC-NPT",
+            "02250225-584",
+            "291",
+            "<3",
+            "1,23",
+            "2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "366",
+            "RF-A-350-230-1-50-AC-NPT",
+            "02250225-585",
+            "366",
+            "<3",
+            "1,32",
+            "2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "547",
+            "RF-A-500-230-1-50-AC-NPT",
+            "02250225-586",
+            "547",
+            "<3",
+            "1,84",
+            "2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/50",
+            "706",
+            "RF-A-650-230-1-50-AC-NPT",
+            "02250225-587",
+            "706",
+            "<3",
+            "2,35",
+            "2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "816",
+            "RF-A-800-400-3-50-AC-NPT",
+            "02250225-588",
+            "816",
+            "<3",
+            "2,97",
+            "3\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "1059",
+            "RF-A-1000-400-3-50-AC-NPT",
+            "02250225-589",
+            "1059",
+            "<3",
+            "3,38",
+            "3\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "1471",
+            "RF-A-1460-400-3-50-AC-NPT",
+            "02250225-590",
+            "1471",
+            "<3",
+            "4,85",
+            "3\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "1632",
+            "RF-A-1600-400-3-50-AC-NPT",
+            "02250225-591",
+            "1632",
+            "<3",
+            "4,86",
+            "3\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "1959",
+            "RF-A-2000-400-3-50-AC-FLANGE",
+            "02250225-592",
+            "1959",
+            "<3",
+            "5,61",
+            "DN100"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "2303",
+            "RF-A-2300-400-3-50-AC-FLANGE",
+            "02250225-593",
+            "2303",
+            "<3",
+            "6,33",
+            "DN100"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "2991",
+            "RF-A-3000-400-3-50-AC-FLANGE",
+            "02250225-594",
+            "2991",
+            "<3",
+            "7,92",
+            "DN100"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "3441",
+            "RF-A-3460-400-3-50-AC-FLANGE",
+            "02250225-595",
+            "3441",
+            "<3",
+            "9,22",
+            "DN100"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "4103",
+            "RF-A-4000-400-3-50-AC-FLANGE",
+            "02250225-596",
+            "4103",
+            "<3",
+            "11,66",
+            "DN150"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "4632",
+            "RF-A-4600-400-3-50-AC-FLANGE",
+            "02250225-597",
+            "4632",
+            "<3",
+            "12,27",
+            "DN150"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "5294",
+            "RF-A-5200-400-3-50-AC-FLANGE",
+            "02250225-598",
+            "5294",
+            "<3",
+            "14,71",
+            "DN150"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "6176",
+            "RF-A-6100-400-3-50-AC-FLANGE",
+            "02250225-599",
+            "6176",
+            "<3",
+            "15,32",
+            "DN200"
+          ],
+          [
+            "Non- Cycling",
+            "400/3/50",
+            "7353",
+            "RF-A-7300-400-3-50-AC-FLANGE",
+            "02250225-600",
+            "7353",
+            "<3",
+            "18,57",
+            "DN200"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "1\n10\n8000000000000000\n7\n7\n1\n12\nTable 2-2: DP Power 60H\n02250201-297 R01\n-\nGROUP\nSTANDARD\nVOLTAGE\nCapacity\nSCFM @ Rated\nConditions\nAIR COOLED\nMODEL NUMBER\nSULLAIR PART\nNUMBER\nRated Flow\nPressure\nDrop\nAbsorbed\nPower\nPort Size\n(scfm)\n(psig)\n(kW)\n(in)\nNon- Cycling\n230/1/60\n13\nRF-A-10-230-1-60-AC-NPT\n02250225-548\n13\n<3\n0,37\n1/2\" NPT\nNon- Cycling\n230/1/60\n22\nRF-A-20-230-1-60-AC-NPT\n02250225-549\n22\n<3\n0,38\n1/2\" NPT\nNon- Cycling\n230/1/60\n31\nRF-A-30-230-1-60-AC-NPT\n02250225-551\n31\n<3\n0,44\n1/2\" NPT\nNon- Cycling\n230/1/60\n59\nRF-A-50-230-1-60-AC-NPT\n02250225-552\n59\n<3\n0,45\n3/4\" NPT\nNon- Cycling\n230/1/60\n91\nRF-A-75-230-1-60-AC-NPT\n02250225-553\n91\n<3\n0,67\n3/4\" NPT\nNon- Cycling\n230/1/60\n112\nRF-A-100-230-1-60-AC-NPT\n02250225-554\n112\n<3\n0,77\n3/4\" NPT\nNon-Cycling\n230/1/60\n124\nRF-A-125-230-1-60-AC-NPT\n02250225-555\n124\n<3\n1,00\n1 1/2\" NPT\nNon- Cycling\n230/1/60\n179\nRF-A-175-230-1-60-AC-NPT\n02250225-556\n179\n<3\n1,28\n1 1/2\" NPT\nNon- Cycling\n230/1/60\n221\nRF-A-210-230-1-60-AC-NPT\n02250225-557\n221\n<3\n1,48\n1 1/2\" NPT\nNon- Cycling\n230/1/60\n291\nRF-A-275-230-1-60-AC-NPT\n02250225-558\n291\n<3\n1,53\n2\" NPT\nNon- Cycling\n230/1/60\n366\nRF-A-350-230-1-60-AC-NPT\n02250225-559\n366\n<3\n2,05\n2\" NPT\nNon- Cycling\n230/1/60\n547\nRF-A-500-230-1-60-AC-NPT\n02250225-560\n547\n<3\n2,30\n2\" NPT\nNon- Cycling\n230/1/60\n706\nRF-A-650-230-1-60-AC-NPT\n02250225-561\n706\n<3\n3,03\n2\" NPT\nNon- Cycling\n460/3/60\n816\nRF-A-800-460-3-60-AC-NPT\n02250225-562\n816\n<3\n3,64\n3\" NPT\nNon- Cycling\n460/3/60\n1059\nRF-A-1000-460-3-60-AC-NPT\n02250225-563\n1059\n<3\n4,09\n3\" NPT\nNon- Cycling\n460/3/60\n1471\nRF-A-1460-460-3-60-AC-NPT\n02250225-564\n1471\n<3\n6,14\n3\" NPT\nNon- Cycling\n460/3/60\n1632\nRF-A-1600-460-3-60-AC-NPT\n02250225-565\n1632\n<3\n6,17\n3\" NPT\nNon- Cycling\n460/3/60\n1959\nRF-A-2000-460-3-60-AC-FLANGE\n02250225-566\n1959\n<3\n6,77\nDN100\nNon- Cycling\n460/3/60\n2303\nRF-A-2300-460-3-60-AC-FLANGE\n02250225-567\n2303\n<3\n8,44\nDN100\nNon- Cycling\n460/3/60\n2991\nRF-A-3000-460-3-60-AC-FLANGE\n02250225-568\n2991\n<3\n10,83\nDN100\nNon- Cycling\n460/3/60\n3441\nRF-A-3460-460-3-60-AC-FLANGE\n02250225-569\n3441\n<3\n12,37\nDN100\nNon- Cycling\n460/3/60\n4103\nRF-A-4000-460-3-60-AC-FLANGE\n02250225-570\n4103\n<3\n15,37\nDN150\nNon- Cycling\n460/3/60\n4632\nRF-A-4600-460-3-60-AC-FLANGE\n02250225-571\n4632\n<3\n16,62\nDN150\nNon- Cycling\n460/3/60\n5294\nRF-A-5200-460-3-60-AC-FLANGE\n02250225-572\n5294\n<3\n19,84\nDN150\nNon- Cycling\n460/3/60\n6176\nRF-A-6100-460-3-60-AC-FLANGE\n02250225-573\n6176\n<3\n19,94\nDN200\nNon- Cycling\n460/3/60\n7353\nRF-A-7300-460-3-60-AC-FLANGE\n02250225-574\n7353\n<3\n26,17\nDN200\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\nRF-A Series Digital Refrigerated Dryers\nSpecifications\nSULLAIR®",
+      "tablas": [
+        [
+          [
+            "GROUP",
+            "STANDARD VOLTAGE",
+            "Capacity SCFM @ Rated Conditions",
+            "AIR COOLED MODEL NUMBER",
+            "SULLAIR PART NUMBER",
+            "Rated Flow",
+            "Pressure Drop",
+            "Absorbed Power",
+            "Port Size"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "(scfm)",
+            "(psig)",
+            "(kW)",
+            "(in)"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "13",
+            "RF-A-10-230-1-60-AC-NPT",
+            "02250225-548",
+            "13",
+            "<3",
+            "0,37",
+            "1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "22",
+            "RF-A-20-230-1-60-AC-NPT",
+            "02250225-549",
+            "22",
+            "<3",
+            "0,38",
+            "1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "31",
+            "RF-A-30-230-1-60-AC-NPT",
+            "02250225-551",
+            "31",
+            "<3",
+            "0,44",
+            "1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "59",
+            "RF-A-50-230-1-60-AC-NPT",
+            "02250225-552",
+            "59",
+            "<3",
+            "0,45",
+            "3/4\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "91",
+            "RF-A-75-230-1-60-AC-NPT",
+            "02250225-553",
+            "91",
+            "<3",
+            "0,67",
+            "3/4\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "112",
+            "RF-A-100-230-1-60-AC-NPT",
+            "02250225-554",
+            "112",
+            "<3",
+            "0,77",
+            "3/4\" NPT"
+          ],
+          [
+            "Non-Cycling",
+            "230/1/60",
+            "124",
+            "RF-A-125-230-1-60-AC-NPT",
+            "02250225-555",
+            "124",
+            "<3",
+            "1,00",
+            "1 1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "179",
+            "RF-A-175-230-1-60-AC-NPT",
+            "02250225-556",
+            "179",
+            "<3",
+            "1,28",
+            "1 1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "221",
+            "RF-A-210-230-1-60-AC-NPT",
+            "02250225-557",
+            "221",
+            "<3",
+            "1,48",
+            "1 1/2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "291",
+            "RF-A-275-230-1-60-AC-NPT",
+            "02250225-558",
+            "291",
+            "<3",
+            "1,53",
+            "2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "366",
+            "RF-A-350-230-1-60-AC-NPT",
+            "02250225-559",
+            "366",
+            "<3",
+            "2,05",
+            "2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "547",
+            "RF-A-500-230-1-60-AC-NPT",
+            "02250225-560",
+            "547",
+            "<3",
+            "2,30",
+            "2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "230/1/60",
+            "706",
+            "RF-A-650-230-1-60-AC-NPT",
+            "02250225-561",
+            "706",
+            "<3",
+            "3,03",
+            "2\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "816",
+            "RF-A-800-460-3-60-AC-NPT",
+            "02250225-562",
+            "816",
+            "<3",
+            "3,64",
+            "3\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "1059",
+            "RF-A-1000-460-3-60-AC-NPT",
+            "02250225-563",
+            "1059",
+            "<3",
+            "4,09",
+            "3\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "1471",
+            "RF-A-1460-460-3-60-AC-NPT",
+            "02250225-564",
+            "1471",
+            "<3",
+            "6,14",
+            "3\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "1632",
+            "RF-A-1600-460-3-60-AC-NPT",
+            "02250225-565",
+            "1632",
+            "<3",
+            "6,17",
+            "3\" NPT"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "1959",
+            "RF-A-2000-460-3-60-AC-FLANGE",
+            "02250225-566",
+            "1959",
+            "<3",
+            "6,77",
+            "DN100"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "2303",
+            "RF-A-2300-460-3-60-AC-FLANGE",
+            "02250225-567",
+            "2303",
+            "<3",
+            "8,44",
+            "DN100"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "2991",
+            "RF-A-3000-460-3-60-AC-FLANGE",
+            "02250225-568",
+            "2991",
+            "<3",
+            "10,83",
+            "DN100"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "3441",
+            "RF-A-3460-460-3-60-AC-FLANGE",
+            "02250225-569",
+            "3441",
+            "<3",
+            "12,37",
+            "DN100"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "4103",
+            "RF-A-4000-460-3-60-AC-FLANGE",
+            "02250225-570",
+            "4103",
+            "<3",
+            "15,37",
+            "DN150"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "4632",
+            "RF-A-4600-460-3-60-AC-FLANGE",
+            "02250225-571",
+            "4632",
+            "<3",
+            "16,62",
+            "DN150"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "5294",
+            "RF-A-5200-460-3-60-AC-FLANGE",
+            "02250225-572",
+            "5294",
+            "<3",
+            "19,84",
+            "DN150"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "6176",
+            "RF-A-6100-460-3-60-AC-FLANGE",
+            "02250225-573",
+            "6176",
+            "<3",
+            "19,94",
+            "DN200"
+          ],
+          [
+            "Non- Cycling",
+            "460/3/60",
+            "7353",
+            "RF-A-7300-460-3-60-AC-FLANGE",
+            "02250225-574",
+            "7353",
+            "<3",
+            "26,17",
+            "DN200"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "RF-A Series Digital Refrigerated Dryers\nSpecifications\n10\nSPECIFICATIONS\n3.1 SPECIFICATIONS\nPay attention to the Minimum and Maximum\noperating conditions before installing and\noperating the dryer.\nRF-A dryer capacities are designed in\naccordance to CAGI standards. Variances from\nstandards will directly affect performance.\nIf your application does not match the above\ncriteria, contact your Sullair distributor and they\nwill be able to provide the right dryer for your\napplication.\nNormal Operating Pressure\n100 PSIG / 6.89 Bar\nNormal Operating Temperature\n95°F / 35°C\nNormal Ambient Temperature\n77ºF / 25°℃\nMaximum Operating Pressure\n230 PSIG / 16 Bar\nMinimum Operating Pressure\n58 PSIG / 4 Bar\nMaximum Ambient Temperature\n113ºF / 45°℃\nMinimum Ambient Temperature\n40°F / 4°C\nMaximum Operating Temperature\n122°F / 50°℃\n11\n)\n)\nD\n)\n0\n)\n1\n1\n1\n1\nSULLAIR®\n02250201-297 R01\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": [
+        [
+          [
+            "Normal Operating Pressure",
+            "100 PSIG / 6.89 Bar"
+          ],
+          [
+            "Normal Operating Temperature",
+            "95°F / 35°C"
+          ],
+          [
+            "Normal Ambient Temperature",
+            "77ºF / 25°℃"
+          ],
+          [
+            "Maximum Operating Pressure",
+            "230 PSIG / 16 Bar"
+          ],
+          [
+            "Minimum Operating Pressure",
+            "58 PSIG / 4 Bar"
+          ],
+          [
+            "Maximum Ambient Temperature",
+            "113ºF / 45°℃"
+          ],
+          [
+            "Minimum Ambient Temperature",
+            "40°F / 4°C"
+          ],
+          [
+            "Maximum Operating Temperature",
+            "122°F / 50°℃"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "1\n7\n7\n)\n)\nRF-A Series Digital Refrigerated Dryers\n7\n7\n7\n7\n7\nRF-A Series Dryer\nThe Microprocessor allows the dryer to save\nenergy when there is no flow in the dryer. It is\npossible to monitor major dryer failures on the\nMicroprocessor. It allows the operators to monitor\nthe following:\n· Evaporation temperature\n· Inlet air temperature\n· Ambient temperature\n· Refrigerant gas high and low temperatures\n· Fan is working properly\n· Compressor is working properly\n0\n0\n000000000000\n0\n0\n· Condenser is blocked\n· Power Phases are correctly connected\n· Drain function\n· Total working hours\n· Total economy hours\n· Real date and time\nMicroprocessor can be remotely controlled and any\nalarm contacts can be connected to any external\ndevices.\n2.5 PRINCIPLE OF OPERATION\nThe refrigerant circuit can be divided in 3 parts:\n1. Low pressure section with an evaporator\n(heat exchanger)\n2. High pressure section including:\nCondenser, liquid receiver, (if installed)\nand the filter dryer.\n3. Control circuit including: Compressor, meter-\ning device, hot gas by-pass valve\ninstalled), fan pressure switch,\n(if\n)\nFigure 2-1: Typical Installation Diagram\nAIR RECEIVER\nPRE FILTER\nsafety high/ low pressure switch. Water cooled\ndryers are equipped with a water flow control valve\nRefrigeration Heat Exchanger\nThe compressor compresses gaseous refrigerant.\nThe hot refrigerant gas condenses in the\ncondenser and once liquefied it passes through the\nliquid receiver (optional)\nThe liquid refrigerant leaves the liquid receiver and\nis injected into the evaporator (heat exchanger) by\na metering device (expansion valve).\nThis metering device is protected by a filter dryer,\nthat retains particles and humidity that could be in\nthe circuit\nThe injected liquid evaporates (changes states\nfrom liquid to gas) by absorbing heat from the\ncompressed air. The gaseous refrigerant is sucked\ninto the compressor and the cycle carries on.\nIn order to keep the evaporation pressure steady,\nand maintain the refrigerant temperature in the\nheat exchanger, a hot gas by-pass valve injects\nhot gaseous refrigerant into the low pressure\nrefrigerant circuit.\n2.6 COMPRESSED AIR HEAT\nEXCHANGER\n1. The saturated, hot compressed air flows into\nthe air/air heat exchanger where it is pre\ncooled by the out going chilled air.\n2. The compressed air then enters the evapo-\nrator where it is cooled to the desired dew\npoint.\n3. The cooled compressed air passes through\nthe air/water separator where the liquid con-\ndensate is removed by the centrifugal sepa-\nration and drained away by the automatic\ntrap. The outgoing, chilled air is then warmed\nup in the air/air heat exchanger by the hot\nincoming air. This energy efficient air-to-air\nheat exchanger significantly reduces the load\non the compressor.\nAFTER FILTER\nDRAIN\nVALVE\nSEPARATOR\nDRAIN VALVE\nCOMPRESSOR\nDRAIN VALVE\nDRAIN\nVALVE\nDIGITAL NON-CYCLING\nREFRIGERATED AIR DRYER\n02250201-297 R01\n10\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\n4. As long as the compressed air temperature\ndoes not drop below dew point, there will be\nno further condensation in the compressed air\npiping.\n7\n1\n0\n1\nSULLAIR®",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "RF-A Series Dryer\nRF-A Series Digital Refrigerated Dryers\n2.4 PRODUCT FEATURES\n2.4.1 REFRIGERANT COMPRESSOR\nThe refrigerant compressor is fully hermetically\nsealed and requires no maintenance.\n2.4.6 REFRIGERANT CIRCUIT REGULATION IN\n(RF-A-10 - RF-A-7300)\n1. The liquid refrigerant is injected into the evaporator\nthrough a metering device trying to maintain the\nrefrigerant in the evaporator at a constant pressure\n2. The evaporating pressure is kept constant by a\ncontrolled injection of hot gas from the high-pressure\nside into the low-pressure section of the circuit through\na hot gas by- pass valve. This constant pressure\ncorresponds to a stable evaporating temperature\nadjusted as close to 32ºF / 0℃ as possible.\n2.4.2 CONDENSER\n1. Air cooled models: The refrigerant con- denser is\nequipped with fans that are cycled on and off to\nmaintain a minimum high side pressure.\n2. Water-cooled dryers Utilize a water control valve\npiloted by a sensing bulb that reacts to the high side\nrefrigerant pressure controlling the water flow\nMaintain a minimum high side pressure.\n3. The mixture of hot gas from the by-pass valve and cold\ngas from the evaporator is called superheat and is\nadjusted at 50 + 5°F / 10+ 5°C.\n2.4.3 REFRIGERANT CIRCUIT PROTECTION\n1. High / Low pressure safety switch:\nRefrigerant circuits are protected against excessive\npressure by a safety switch that stops the\ncompressor in cases of high or low refrigerant\npressure. If this safety switch has tripped out on high\nrefrigerant pressure, it has to be manually reset\nbefore the dryer can be restarted. A low pressure\ntrip will automatically reset.\n2.4.4 FILTER DRIER\nTotal water removal in the refrigerant circuit is\nachieved by a filter drier who also traps any solid\nparticles that may have migrated into the circuit\nduring assembly.\n2.4.7 CONDENSATE DRAIN - TRAP ASSEMBLY\nDismantling the drain is easy because it can be\nisolated from the air circuit under pressure with a ball\nvalve. Always isolate the drain before disassembly.\nMEMBRANEe disc may need to be replaced time to\ntime due to contamination in the air circuit. Contact\nSullair or its distributer if there is any drain blockage\nissues.\n)\n2.4.8 HEAT EXCHANGER, MODULAR DESIGN\nThe dryers are equipped with compact, modular design\nheat exchangers. This assembly has been specially\ndesigned to dry compressed air and consists of:\n1. An air/air heat exchanger which pre-cools the entering\nhot air with the exiting chilled air.\n2. An evaporator which is an air/refrigerant heat\nexchanger which cools down the com- pressed air.\n)\n3. An integral separator that separates the moisture from\nthe air stream at the coldest\n2.4.5 CRANKCASE HEATER\n1\n3-Phase dryers are equipped with an electric\ncrankcase heater. The heater provides preliminary\npre-heating of the refrigerant compressor to\nevaporate liquid refrigerant possibly condensed in\nthe crankcase. This will prevent liquid shock that can\ndamage the compressor.\nWARNING\nNever run the dryer before heating the\ncrankcase. Allow 2 hours the heater to heat\nthe compressor of the dryers after a long\nshut-down period.\nSULLAIR®\npoint. Maximum condensation of moisture occurs at the\ncoldest point and it is at that exact junction that the\nmoisture is removed and drained.\n1\n2.4.9 DEW POINT INDICATOR\nThe Dew point indicator is a standard on all dryer\nmodels and is located in the control panel and provides\nan idea for the pressure dew point (PDP)\n0\n2.4.10 HIGH TEMPERATURE SWITCH\nLocated inside the dryer, this high temperature switch\nstops the dryers if the compressor suction line\ntemperature is above 113ºF / 45°C.\n2.4.11 MICROPROCESSOR DEVICE\nThis device is supplied on all models.\n02250201-297 R01\n2\n9\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "7\n7\n7\n7\nRF-A Series Digital Refrigerated Dryers\nRF-A Series Dryer\nRF-A SERIES DRYER\n)\n0\n0\n)\n)\n)\n)\n)\n1\n)\n2.1 INTRODUCTION\nThe Sullair Non-cycling Refrigerated air dryers are\ndesigned for constant full load operation. They use\nspecially designed heat exchangers with integrated\ncomponents to provide consistent dewpoint and\ntrouble-free service for years to come.\nThe dryers remove the moisture, from the\ncompressed air stream. By using basic refrigeration,\nthe hot saturated air is cooled in the highly efficient\nheat-exchangers and the moisture is condensed and\nremoved. Additional filtration eliminates other\ncontaminants and particles.\nWater (moisture) is one of the greatest enemies of air\ntools and piping. Left untreated in the compressed air\nstream, this moisture will deteriorate the tools,\nequipment and piping with corrosion, pipe scaling,\nfreezing and a host of other problems that will\ndiminish the life of your entire compressed air\nsystem. With a Sullair refrigerant dryer, you can be\nassured of clean, dry air with consistent dewpoint\nbetween 36 and 40°F / 2 and 4°C. The unique three-\nin-one heat exchanger combination.\n· Air to Air (Pre-cooler/re-heater Heat Exchanger)\n· Air to Refrigerant (High efficiency Heat\nExchanger)\n· Integrated Separator (located at the coldest point\nto maximize moisture extraction)\nheats up the exiting air, thereby eliminating the\nchances of freezing even in relatively cooler ambient\nconditions. Warm dry air will not affect the piping\nnor the tools and the result is extended tool life. In\naddition, applications that require clean dry air can\nrely upon Sullair's non-cycling refrigerated air\ndryers to provide dry air at full load continuously.\n02250201-297 R01\n8\n2.2 ENVIRONMENTAL PROTECTION\n1. US/EU laws protect the environment against\nrefrigerant being released into the atmo-\nsphere.\n2. An annual leak control test at less than 5.0\ngr/year should be performed by a qualified\nengineer if the refrigerant dryer contains more\nthan 4.4 lbs / 2 kg of refrigerant. This control\ntest has to be done twice a year if the dryer\ncontains more than 66 lbs / 30 kg.\n3. Prior to dryer disposal, the refrigerant must be\nproperly recovered by a qualified engineer.\n2.3 PRODUCT DESCRIPTION\nThis refrigerated compressed air dryer has been\ndesigned to remove water vapor from industrial\ncompressed air that is free of any aggressive\ncontaminants like ammonia, gaseous acid, dust, rust,\nliquid condensate, any other chemical or mineral\nsubstances capable of attacking or clogging the heat\nexchanger(s).\nThe optional, water-cooled condenser is not designed\nfor use with seawater or water containing aggressive\ncontaminants.\nPlease contact your factory representative for further\nquestions on this issue. This dryer has been designed\nfor indoor operation only.\nThe minimum and maximum values stated must be\nobserved, as well as the safety precautions described\nin this manual.\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\nKogo\nSULLAIR®",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "NOTES\n0\n0\n3\n1\n1\n0\nKog\nSULLAIR.\n02250201-297 R01\n7\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "7\nRF-A Series Digital Refrigerated Dryers\n7\n7\n7\n1000000000\n7\n0\nSAFETY\n00\nD\n0\n0\n)\n)\n)\n5. The minimum and maximum values listed on\nthe data label must be strictly followed. If your\napplication does not fall within the parameters\nindicated on the data label- STOP. Contact\nyour Sullair representative/ distributor and\nclarify the issue before proceeding or\noperating the dryer.\n6. All safety procedures and practices mentioned\nin this manual must be observed, as well as\nall of the federal, state and local safety\nprecautions.\n7. If any statement in this manual does not\ncomply with the local legislation, the strongest\nstandard is to be applied.\n1.3 ISSUES TO AVOID\n1. Any structural changes made to the dryer\nwithout the advise of Sullair or Sullair repre-\nsentatives will void all warranty.\n2. Compressed air from this dryer does not meet\nthe OSHA standards for breathing and hence\nit should not be used for breathing purposes.\nNone of the protective alarms, equipment or\ndevices should be tampered with. These pro-\ntective items have been designed and\ninstalled on this dryer for your safety.\n3. Do not operate the dryer at pressures\ntemperatures of flow other than the ones\nmentioned on the data label.\n02250201-297 R01\n6\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\nSULLAIR®",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "RF-A Series Digital Refrigerated Dryers\nSAFETY\nSAFETY\nThe dryer has been designed and constructed in\naccordance with the generally recognized rules\npertaining to refrigeration technology as well as\nindustrial safety and accident prevention regulations.\nThe equipment design, development, production,\nassembly and customer service fall under the Sullair\nquality control system.\nThe dryer is state of the art. There are, however,\nhazards to the body, equipment and life\naccompanying this type of product if it is not operated\nfor the purpose which it is intended by trained and\nspecialized personnel.\nThe equipment supplied is intended exclusively for\ndrying compressed air. Any other use or one\nexceeding this is considered unauthorized. Sullair\ncannot be held liable for damages resulting from\nincorrect or unauthorized use of the equipment. Any\nsuch risk is carried solely by the end user.\nAuthorized use means complete compliance with all\nof the conditions of operation, servicing and\nmaintenance prescribed by Sullair in this Instruction\nand Operation Manual.\nThe dryer is only to be operated, serviced and\nrepaired by trained personnel who are familiar with\nthis type of equipment and understand fully its\noperation and any potential dangers.\n1.1 SAFETY INFORMATION\nThe end user and operator must observe all National,\nState, and Local industrial and safety regulations\ndealing with the operation of pressure vessels under\ncompressed air service. Also all \"end user\" safety\nrules for the same type of service must be adhered\nto. The following points list some of the important\nfactors dealing with this type of equipment.\nSULLAIR®\n· Never make any constructional changes to\nthe equipment.\n· Use only original spare parts and accessories\n· Never weld on any pressure vessel or mod-\nify it in any way.\n· All maintenance on \"pressure parts\" must\nbe carried out with the equipment shut-\ndown, depressurized and locked out. Any\nin plant procedures or work permits regard-\ning pressure vessels are to be adhered to.\n. Do not operate the equipment with the con-\ntrol panel door open, the electrical system\nenergized and live parts exposed.\n· Disconnect the dryer from the electrical\nsupply when any electrical work is per-\nformed. Lock out the safety disconnect and\nobtain any required work permits.\n1.2 SAFETY INSTRUCTIONS\nSAFETY REGULATIONS:\n1. When operating the air dryer, the operator must\nadopt safe working methods and observe all\nlocal\ninstructions\nand\nrelevant\nsafety\nregulations.\n2. Prior to installation, the dryer and the com-\npressed air system are to be depressurized\nand disconnected from the electrical main\nsupply.\n3. The user is responsible for safe operating\nconditions. Parts and accessories must be\nreplaced if inspection shows that it is unsafe to\noperate the dryer.\n4. Installation, operation, maintenance and repair\nare only to be performed by authorized, trained\nand skilled technicians.\n5\n)\n)\n0\n)\n)\n1\n1\n)\n)\n1\n1\n1\n02250201-297 R01\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": ")\n7\n7\n0\n0\n10000000000000000\n)\n7\n0\n)\n119\n9.1\nID- RF-A-10-20-30\n121\n9.2\nID- RF-A-50-75-100\n123\n9.3\nID- RF-A-125-175-210\n125\n9.4\nID- RF-A-275-350\n127\n9.5\nID- RF-A-500-650\n129\n9.6\nID- RF-A-800-1000\n131\n9.7\nID- RF-A-1460-1600\n133\n9.8\nID- RF-A-2000-2300\n135\n9.9\nID- RF-A-3000-3460\n137\n9.10\nID- RF-A-4000-4600\n139\n9.11\nID- RF-A-5200-6100\n141\n9.12\nID- RF-A-7300\n143\n10.19\nP&I-RF-A-10 - RF-A-210\n145\n10.20\nP&I-RF-A-275 - RF-A-7300\n148\n11.14\nWIRING DIAGRAM-RF-A-10 - RF-A-30 (230-1-60, 230-1-50)\n150\n11.24\nWIRING DIAGRAM- RF-A-50 - RF-A-100 (230-1-60, 230-1-50)\n152\n11.35\nWIRING DIAGRAM- RF-A-125 - RF-A-650 (230-1-60, 230-1-50)\n154\n11.46\nWIRING DIAGRAM- RF-A-800- RF-A-2300 (460-3-60, 400-3-50) POWER\n156\n11.5\nWIRING DIAGRAM- RF-A-800- RF-A-2300 (460-3-60, 400-3-50) CONTROL\n158\n11.6\nWIRING DIAGRAM- RF-A-3000- RF-A-4000 (460-3-60, 400-3-50) POWER\n160\n11.7\nWIRING DIAGRAM- RF-A-3000- RF-A-4000 (460-3-60, 400-3-50) CONTROL\n162\n11.8\nWIRING DIAGRAM-RF-A-4600 (460-3-60, 400-3-50) POWER\n164\n11.9\nWIRING DIAGRAM- RF-A-4600 (460-3-60, 400-3-50) CONTROL\n166\n11.10\nWIRING DIAGRAM- RF-A-5200 - RF-A-6100 (460-3-60, 400-3-50) POWER\n168\n11.11\nWIRING DIAGRAM- RF-A-5200 - RF-A-6100 (460-3-60, 400-3-50) CONTROL\n170\n11.12\nWIRING DIAGRAM- RF-A-7300 (460-3-60, 400-3-50) POWER\n172\n11.13\nWIRING DIAGRAM- RF-A-7300 (460-3-60, 400-3-50) CONTROL\n02250201-297 R01\n4\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\n*\nSULLAIR®",
+      "tablas": [
+        [
+          [
+            "119",
+            "9.1",
+            "ID- RF-A-10-20-30"
+          ],
+          [
+            "121",
+            "9.2",
+            "ID- RF-A-50-75-100"
+          ],
+          [
+            "123",
+            "9.3",
+            "ID- RF-A-125-175-210"
+          ],
+          [
+            "125",
+            "9.4",
+            "ID- RF-A-275-350"
+          ],
+          [
+            "127",
+            "9.5",
+            "ID- RF-A-500-650"
+          ],
+          [
+            "129",
+            "9.6",
+            "ID- RF-A-800-1000"
+          ],
+          [
+            "131",
+            "9.7",
+            "ID- RF-A-1460-1600"
+          ],
+          [
+            "133",
+            "9.8",
+            "ID- RF-A-2000-2300"
+          ],
+          [
+            "135",
+            "9.9",
+            "ID- RF-A-3000-3460"
+          ],
+          [
+            "137",
+            "9.10",
+            "ID- RF-A-4000-4600"
+          ],
+          [
+            "139",
+            "9.11",
+            "ID- RF-A-5200-6100"
+          ],
+          [
+            "141",
+            "9.12",
+            "ID- RF-A-7300"
+          ],
+          [
+            "143",
+            "10.19",
+            "P&I-RF-A-10 - RF-A-210"
+          ],
+          [
+            "145",
+            "10.20",
+            "P&I-RF-A-275 - RF-A-7300"
+          ],
+          [
+            "148",
+            "11.14",
+            "WIRING DIAGRAM-RF-A-10 - RF-A-30 (230-1-60, 230-1-50)"
+          ],
+          [
+            "150",
+            "11.24",
+            "WIRING DIAGRAM- RF-A-50 - RF-A-100 (230-1-60, 230-1-50)"
+          ],
+          [
+            "152",
+            "11.35",
+            "WIRING DIAGRAM- RF-A-125 - RF-A-650 (230-1-60, 230-1-50)"
+          ],
+          [
+            "154",
+            "11.46",
+            "WIRING DIAGRAM- RF-A-800- RF-A-2300 (460-3-60, 400-3-50) POWER"
+          ],
+          [
+            "156",
+            "11.5",
+            "WIRING DIAGRAM- RF-A-800- RF-A-2300 (460-3-60, 400-3-50) CONTROL"
+          ],
+          [
+            "158",
+            "11.6",
+            "WIRING DIAGRAM- RF-A-3000- RF-A-4000 (460-3-60, 400-3-50) POWER"
+          ],
+          [
+            "160",
+            "11.7",
+            "WIRING DIAGRAM- RF-A-3000- RF-A-4000 (460-3-60, 400-3-50) CONTROL"
+          ],
+          [
+            "162",
+            "11.8",
+            "WIRING DIAGRAM-RF-A-4600 (460-3-60, 400-3-50) POWER"
+          ],
+          [
+            "164",
+            "11.9",
+            "WIRING DIAGRAM- RF-A-4600 (460-3-60, 400-3-50) CONTROL"
+          ],
+          [
+            "166",
+            "11.10",
+            "WIRING DIAGRAM- RF-A-5200 - RF-A-6100 (460-3-60, 400-3-50) POWER"
+          ],
+          [
+            "168",
+            "11.11",
+            "WIRING DIAGRAM- RF-A-5200 - RF-A-6100 (460-3-60, 400-3-50) CONTROL"
+          ],
+          [
+            "170",
+            "11.12",
+            "WIRING DIAGRAM- RF-A-7300 (460-3-60, 400-3-50) POWER"
+          ],
+          [
+            "172",
+            "11.13",
+            "WIRING DIAGRAM- RF-A-7300 (460-3-60, 400-3-50) CONTROL"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "CONTROLLER\n21\n6.1\nCONTROLLER\nMAINTENANCE\n30\n7.1\nMAINTENANCE\n31\n7.2\nTROUBLESHOOTING\n37\n7.3\nSETTINGS\nTECHNICAL DRAWINGS\n39\n8.1\nED/SPARE PARTS-RF-A-10\n42\n8.2\nED/SPARE PARTS- RF-A-20\n45\n8.3\nED/SPARE PARTS- RF-A-30\n48\n8.4\nED/SPARE PARTS- RF-A-50\n51\n8.5\nED/SPARE PARTS- RF-A-75\n54\n8.6\nED/SPARE PARTS- RF-A-100\n57\n8.7\nED/SPARE PARTS- RF-A-125\n60\n8.8\nED/SPARE PARTS- RF-A-175\n63\n8.9\nED/SPARE PARTS- RF-A-210\n66\n8.10\nED/SPARE PARTS- RF-A-275\n69\n8.11\nED/SPARE PARTS- RF-A-350\n73\n8.12\nED/SPARE PARTS- RF-A-500\n76\n8.13\nED/SPARE PARTS- RF-A-650\n79\n8.14\nED/SPARE PARTS- RF-A-800\n82\n8.15\nED/SPARE PARTS- RF-A-1000\n85\n8.16\nED/SPARE PARTS- RF-A-1460\n88\n8.17\nED/SPARE PARTS- RF-A-1600\n91\n8.18\nED/SPARE PARTS- RF-A-2000\n94\n8.19\nED/SPARE PARTS- RF-A-2300\n97\n8.20\nED/SPARE PARTS- RF-A-3000\n100\n8.21\nED/SPARE PARTS- RF-A-3460\n103\n8.22\nED/SPARE PARTS- RF-A-4000\n106\n8.23\nED/SPARE PARTS- RF-A-4600\n110\n8.24\nED/SPARE PARTS- RF-A-5200\n113\n8.25\n116\n8.26\n)\n)\n)\n)\n1\nED/SPARE PARTS- RF-A-6100\nED/SPARE PARTS- RF-A-7300\nSULLAIR®\n3\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": [
+        [
+          [
+            "30",
+            "7.1",
+            "MAINTENANCE"
+          ],
+          [
+            "31",
+            "7.2",
+            "TROUBLESHOOTING"
+          ],
+          [
+            "37",
+            "7.3",
+            "SETTINGS"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "7\n7\n)\n1000000000000000000\n)\nSULLAIR\n®\n®\nTABLE OF CONTENTS\n0\n00\n)\n5\nSAFETY\n1.1\nSAFETY INFORMATION\nRF-A SERIES DRYER\n8\n2.1\nINTRODUCTION\n8\n2.2\nENVIRONMENTAL PROTECTION\n8\n2.3\nPRODUCT DESCRIPTION\n9\n2.4\nPRODUCT FEATURES\n10\n2.5\nPRINCIPLE OF OPERATION\n10\n2.6\nCOMPRESSED AIR HEAT EXCHANGER\nSPECIFICATIONS\n11\n3.1\nSPECIFICATIONS\nINSTALLATION\n1\n1\n17\n4.1\nRECEIVING AND INSPECTION\n)\n17\n4.2\nTRANSPORTATION\n17\n4.3\nINSTALLATION LAYOUT REQUIREMENTS\n17\n4.4\nPIPE/CONNECTION REQUIREMENTS\n)\n17\n4.5\nELECTRICAL CONNECTION REQUIREMENTS\n)\n18\n4.6\nOPERATING PRECAUTIONS\n18\n4.17\nINSTALLATION\nOPERATING\n19\n5.1\nSTEPS TO UNDERTAKE BEFORE OPERATING\n19\n5.2\nOPERATING PROCEDURES\n20\n5.3\nSTARTUP AND SHUT DOWN PROCEDURE\n2\n02250201-297 R01\nSULLAIR®\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "0\nSULLAIR®\nAIR CARE SEMINAR TRAINING\nSullair Air Care Seminars are courses that provide hands-on instruction for the proper operation, maintenance,\nand servicing of Sullair products. Individual seminars on Stationary compressors and compressor electrical\nsystems are offered at regular intervals throughout the year at Sullair's training facility located at Michigan\nCity, Indiana.\nInstruction includes training on the function and installation of Sullair service parts, troubleshooting common\nfaults and malfunctions, and actual equipment operation. These seminars are recommended for maintenance,\ncontractor maintenance, and service personnel.\nFor detailed course outlines, schedule, and cost information contact:\nSULLAIR TRAINING DEPARTMENT\n1-888-SULLAIR or\n219-879-5451 (ext. 5623)\nwww.sullair.com\ntraining@sullair.com\n- Or Write -\nSullair\n3700 E. Michigan Blvd.\nMichigan City, IN 46360\nAttn: Service Training Department.\n)\n()\n0\n0\n0000000\n0\n1\nCCCCCCCCC\nSULLAIR®\n02250201-297 R01\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": ")\n)\n2000000\n®\nSULLAIR\n®\nUSER MANUAL\nREFRIGERATED DRYERS\nRF-A-DIGITAL CYCLING\n0\n7\n)\n0\n)\n)\n)\nSAFETY WARNING\nUsers are required to read the\nentire User Manual before handling\nor using the product.\n)\n)\n)\nWARRANTY NOTICE\nFailure to follow the instructions\nand procedures in this manual, or\nmisuse of this equipment, will void\nits warranty.\n)\n)\n02250201-297 R01\nSubject to EAR, ECCN EAR99 and related export control restrictions.\"\n)\n)\nThe information in this manual is current as\nof its publication date and applies to Dryers\nmanufactured after October 1, 2017 as\nindicated by\nSERIAL NUMBER:\n(RF-A) 1017MA00001\nPublication Date: 10/01/2017\nCopyright @ 2017 Sullair, LLC.\nAll rights reserved.",
+      "tablas": []
+    }
+  ]
+}

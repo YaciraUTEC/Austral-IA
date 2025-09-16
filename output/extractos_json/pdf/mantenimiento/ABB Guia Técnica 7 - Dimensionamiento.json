@@ -1,0 +1,644 @@
+{
+  "archivo": "ABB Guia Técnica 7 - Dimensionamiento",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Guía técnica nº 7\nDimensionado de un sistema de accionamiento\nABB",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "2\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Índice\n1.\nIntroducción\n5\n2.\nSistema de accionamiento\n6\n3.\nDescripción general de un\nprocedimiento de dimensionado\n7\n4.\nMotor de inducción (CA)\n9\n4.1\nFundamentos\n9\n4.2\nIntensidad de motor\n11\n4.2.1 Rango de flujo constante\n12\n4.2.2 Rango de debilitamiento del campo\n13\n4.3\nPotencia de motor\n14\n5.\nLeyes mecánicas básicas\n15\n5.1\nMovimiento de rotación\n15\n5.2\nEngranajes y momento de inercia\n18\n6.\nTipos de cargas\n20\n7.\nCapacidad de carga del motor\n23\n8.\nSelección del convertidor de\nfrecuencias y del motor\n24\n8.1\nAplicación de bomba y ventilador\n(Ejemplo)\n24\n8.2\nAplicación a par constante (Ejemplo)\n27\n8.3\nAplicación a potencia constante\n(Ejemplo)\n29\n9.\nTransformador y rectificador de\nentrada\n33\n9.1\nRectificador\n33\n9.2\nTransformador\n34\n10. Índice\n36\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n3",
+      "tablas": [
+        [
+          [
+            "1.",
+            "Introducción",
+            "5"
+          ],
+          [
+            "2.",
+            "Sistema de accionamiento",
+            "6"
+          ],
+          [
+            "3.",
+            "Descripción general de un procedimiento de dimensionado",
+            ""
+          ],
+          [
+            "7"
+          ],
+          [
+            "4.",
+            "Motor de inducción (CA)",
+            "9"
+          ],
+          [
+            "4.1",
+            "Fundamentos",
+            "9"
+          ],
+          [
+            "4.2",
+            "Intensidad de motor",
+            "11"
+          ],
+          [
+            "",
+            "4.2.1 Rango de flujo constante",
+            "12"
+          ],
+          [
+            "4.2.2 Rango de debilitamiento del campo",
+            "13"
+          ],
+          [
+            "4.3",
+            "Potencia de motor",
+            "14"
+          ],
+          [
+            "5.",
+            "Leyes mecánicas básicas",
+            "15"
+          ],
+          [
+            "5.1",
+            "Movimiento de rotación",
+            "15"
+          ],
+          [
+            "5.2",
+            "Engranajes y momento de inercia",
+            "18"
+          ],
+          [
+            "6.",
+            "Tipos de cargas",
+            "20"
+          ],
+          [
+            "7.",
+            "Capacidad de carga del motor",
+            "23"
+          ],
+          [
+            "8.",
+            "Selección del convertidor de frecuencias y del motor",
+            "24"
+          ],
+          [
+            "8.1",
+            "Aplicación de bomba y ventilador (Ejemplo)",
+            "24"
+          ],
+          [
+            "8.2",
+            "Aplicación a par constante (Ejemplo)",
+            "27"
+          ],
+          [
+            "8.3",
+            "Aplicación a potencia constante (Ejemplo)",
+            ""
+          ],
+          [
+            "29"
+          ],
+          [
+            "9.",
+            "Transformador y rectificador de entrada",
+            "33"
+          ],
+          [
+            "9.1",
+            "Rectificador",
+            "33"
+          ],
+          [
+            "9.2",
+            "Transformador",
+            "34"
+          ],
+          [
+            "10.",
+            "Índice",
+            "36"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "4\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Capítulo 1 - Introducción\nGeneral\nEl dimensionado de un sistema de accionamiento es una\ntarea en la que todos y cada uno de los factores deberán\nser tenidos en cuenta detenidamente. El dimensionado\nrequiere el conocimiento íntegro del sistema, incluyendo el\nsuministro eléctrico, la máquina impulsada mediante\naccionamiento, las condiciones ambientales, los motores\ny accionamientos, etc. El tiempo invertido en la fase de\ndimensionado puede traducirse en considerables ahorros\nde costes.\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n5",
+      "tablas": [
+        [
+          [
+            "General",
+            "El dimensionado de un sistema de accionamiento es una"
+          ],
+          [
+            "",
+            "tarea en la que todos y cada uno de los factores deberán ser tenidos en cuenta detenidamente. El dimensionado requiere el conocimiento íntegro del sistema, incluyendo el suministro eléctrico, la máquina impulsada mediante accionamiento, las condiciones ambientales, los motores y accionamientos, etc. El tiempo invertido en la fase de dimensionado puede traducirse en considerables ahorros de costes."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Capítulo 2 - Sistema de accionamiento\nUn sistema de accionamiento de CA único consta, por lo\ngeneral, de un transformador de entrada o suministro\neléctrico, un convertidor de frecuencia, un motor de CA y\nuna carga. En el interior del convertidor de\nmonofrecuencias hay un rectificador, un enlace de CC y\nuna unidad inversora.\n1)\n2)\n3)\n4)\nT\nI\nN\n=\nM\n2\nFigura 2.1 Un convertidor de monofrecuencias consta de\n1) rectificador, 2) enlace de CC, 3) unidad inversora y 4) suministro\neléctrico.\nEn los sistemas de multiaccionamiento se utiliza\nnormalmente una unidad rectificadora independiente. Las\nunidades de inversores se conectan directamente a un\nenlace de CC común.\n1)\n2)\nN\n4)\n-\n3)\n=\n=\n2\n=\n2\nM\nM\nM\nFigura 2.2 Sistema de accionamiento dotado de 1) una sección de\nalimentación independiente, 2) un enlace común de CC, 3) secciones\nde accionamiento y 4) suministro eléctrico.\n6\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Capítulo 3 - Descripción general de un\nprocedimiento de dimensionado\nEn este capítulo se indican los pasos generales a seguir\npara el dimensionado del motor y convertidor de\nfrecuencia.\n1) En primer lugar, comprobar las condiciones iniciales.\nPara seleccionar el convertidor de frecuencia y el motor\ncorrectos, comprobar el nivel de red (380 V ... 690 V) y la\nfrecuencia (50 Hz ... 60 Hz). La frecuencia de red no limita\nel rango de velocidad de la aplicación.\n2) Comprobar los requisitos del proceso. ¿ Es preciso\ndisponer de par de arranque? ¿ Cuál es el rango de\nvelocidad utilizado? ¿ Qué tipo de carga habrá? Más\nadelante se describen algunos de los tipos de cargas\ntípicos.\n3) Seleccionar el motor.\nUn motor eléctrico debe considerarse como una fuente\ndel par. El motor deberá admitir sobrecargas del proceso\ny ser capaz de producir una cantidad de par concreta. No\ndeberá superarse la capacidad de sobrecarga térmica del\nmotor. Asimismo, en el momento de considerar el par\nmáximo disponible en la fase de dimensionado, es\nnecesario dejar un margen de alrededor del 30% para el\npar máximo del motor.\n4) Seleccionar el convertidor de frecuencia.\nEl convertidor de frecuencia se selecciona según las\ncondiciones iniciales y el motor elegido. Será necesario\ncomprobar la capacidad del convertidor de frecuencia de\nproducir la intensidad y potencia precisas. Debería sacarse\nel máximo partido de la capacidad de sobrecarga potencial\ndel convertidor de frecuencia en caso de carga cíclica a\ncorto plazo.\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Descripción general de un procedimiento de dimensionado\nFase de dimensionado\nRed\nConvertidor\nMotor\nCarga\n1) Comprobar las\nondiciones iniciales\nde la red y la carga\nfy=50Hz, 60Hz\nUN=380 ... 690V\nT\n1\nT.\nT\ncarga\nn min n max\n2) Elegir un motor\nen función de:\n· Capacidad de carga\ntérmica\n· Rango de velocidad\n· Par máximo necesario\nT1\nS\nT\ncarga\nn min\nn max\n3) Elegir un convertidor de\nfrecuencia en función de:\n· Tipo de carga\n· Corriente continua y\nmáxima\n. Condiciones de la red\n\"max\nN\nn min n max\n>\nFigura 3.1 Descripción general de un procedimiento de dimensionado.\n8\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": [
+        [
+          [
+            "Fase de dimensionado",
+            "Red",
+            "Convertidor",
+            "Motor",
+            "Carga"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "1) Comprobar las ondiciones iniciales de la red y la carga",
+            "fy=50Hz, 60Hz UN=380 ... 690V",
+            "",
+            "",
+            "",
+            "T 1 T. T carga n min n max"
+          ],
+          [
+            "2) Elegir un motor en función de: · Capacidad de carga térmica · Rango de velocidad · Par máximo necesario",
+            "",
+            "",
+            "",
+            "T1 S T carga n min n max",
+            ""
+          ],
+          [
+            "3) Elegir un convertidor de frecuencia en función de: · Tipo de carga · Corriente continua y máxima . Condiciones de la red",
+            ":unselected:",
+            "\"max N n",
+            "min n max >",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Capítulo 4 - Motor de inducción (CC)\nLos motores de inducción son de uso generalizado en la\nindustria. En este capítulo, se describen algunas de sus\ncaracterísticas básicas.\n4.1\nUn motor de inducción convierte energía eléctrica en energía\nmecánica. La conversión de energía se basa en la inducción\nelectromagnética. Debido al fenomeno de la inducción, el\nmotor de inducción presenta un deslizamiento.\nFundamentos\nEl deslizamiento suele definirse como el punto nominal del\nmotor (frecuencia ( f ), velocidad ( n ), par ( Tn ), tensión ( Un ),\nintensidad\n( 1 ) y potencia ( P )). En el punto nominal, el deslizamiento es\nnominal:\nns -nn\n· * 100 %\n(4.1)\nSn =\nns\ndonde n es la velocidad síncrona:\nns =\npole number\n2 * fn * 60\n(4.2)\nCuando un motor está conectado a una fuente de alimentación\ncon tensión y frecuencia constantes, presenta la curva de par\nsiguiente:\nT / Tn\n2\na\nc)\nd)\n1\nM\nb)\n0\nG\n2\nn /ng\nFigura 4.1 Curva de par/velocidad típica de un motor de inducción\nconectado a la red de alimentación (D.O.L., Direct-On-Line). En el gráfico,\na) es el par del rotor bloqueado, b) es el par de actuación, c) es el par\nmáximo del motor, Ty d) es el punto nominal del motor.\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n9",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Motor de inducción (CA)\nEl par máximo de un motor de inducción estándar (T, llamado\ntambién par de actuación y par motor crítico) suele ser de 2 a 3\nveces el par nominal. El par máximo está disponible con\ndeslizamiento s\nmax,\nque es superior al deslizamiento nominal. Al\nobjeto de utilizar un motor de inducción eficiente, el deslizamiento\ndel motor deberá hallarse comprendido dentro del rango - s\nmax ***\ns . Ello es posible mediante el control de la tensión y la\nfrecuencia. Dicho control puede realizarse con un convertidor\nde frecuencia.\nPAR\nVELOCIDAD\n1\n1\n0\n-1\nFigura 4.2 Curvas de par/velocidad de un motor de inducción alimentado por\nun convertidor de frecuencia.T.\nma\nestá disponible para sobrecargas a corto\nplazo inferiores al punto de debilitamiento del campo. Los convertidores de\nfrecuencias, no obstante, suelen limitar el par máximo disponible al 70%\nde T\nmax\nEl rango de frecuencias situado por debajo de la frecuencia\nnominal se denomina rango de flujo constante. Por encima de\nla frecuencia/velocidad nominal, el motor funciona en el rango\nde debilitamiento del campo, donde puede operar a potencia\nconstante, razón por la cual el rango de debilitamiento del campo\na veces también recibe el nombre de rango de potencia\nconstante.\nEl par máximo de un motor de inducción es proporcional al\ncuadrado del flujo magnético ( T ~ 2). Ello significa que el\npar máximo es aproximadamente una constante en el rango de\nflujo constante. Por encima del punto de debilitamiento del\ncampo, la reducción del par máximo es inversamente\nproporcional al cuadrado de la frecuencia\n2\nfn\nf\n( Tmax ~\n1\n).\nact\n10\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Motor de inducción (CA)\n2.5\n2\nT max\n1.5\nFlujo\n1\n0.5\nTensión\n0\n0\n0.2\n0.4\n0.6\n0.8\nRango de flujo cte.\n1\n1.2\n1.4\n1.6\n1.8\n2\nVELOCIDAD\nRango de debilitamiento\ndel campo\nFigura 4.3 Par máximo, tensión y flujo en función de la velocidad\nrelativa.\n4.2 Intensidad\ndel motor\nLa intensidad de un motor de inducción posee dos\ncomponentes: intensidad reactiva ( isd ) e intensidad activa\n( isa ). El componente intensidad reactiva incluye la corriente\nimanante( imagn ) mientras que la intensidad activa es el\ncomponente del par encargado de la producción de\ncorriente. Los componentes intensidad reactiva y activa\nson perpendiculares entre sí.\nLa corriente imanante ( imagn ) permanece aproximadamente\nconstante en el rango de flujo constante (por debajo del\npunto de debilitamiento del campo). En el rango de\ndebilitamiento del campo, la disminución de la corriente\nimanante es proporcional a la velocidad.\nUna estimación bastante exacta de la corriente imanante\nen el rango de flujo constante es la intensidad reactiva\n( İsd ) en el punto nominal del motor.\nIsa\n'S\ni.\nsd\nFigura 4.4 La intensidad del estator ( i ) consta de componentes de\nintensidad reactiva ( i ) y de intensidad activa ( i ), los cuales son\nperpendiculares entre sí. El flujo del estator se indica como Vs.\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n11",
+      "tablas": [
+        [
+          [
+            "",
+            "Figura 4.3 Par máximo, tensión y flujo en función de la velocidad relativa."
+          ],
+          [
+            "4.2 Intensidad del motor",
+            "La intensidad de un motor de inducción posee dos componentes: intensidad reactiva ( isd ) e intensidad activa ( isa ). El componente intensidad reactiva incluye la corriente imanante( imagn ) mientras que la intensidad activa es el componente del par encargado de la producción de corriente. Los componentes intensidad reactiva y activa son perpendiculares entre sí. La corriente imanante ( imagn ) permanece aproximadamente constante en el rango de flujo constante (por debajo del punto de debilitamiento del campo). En el rango de debilitamiento del campo, la disminución de la corriente imanante es proporcional a la velocidad. Una estimación bastante exacta de la corriente imanante en el rango de flujo constante es la intensidad reactiva ( İsd ) en el punto nominal del motor."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Motor de inducción (CA)\n4.2.1 Rango\nde flujo\nconstante\nPor debajo del punto de debilitamiento del campo, los\ncomponentes de la intensidad pueden ser aproximadamente\nlos siguientes:\nIsd = In |sin(Pn) + cos(Pn)\n2\n2\nmax\n- 1 -\nmax\n-\ncarga\nT\nT.\nV\nTo\n1\n2\nT\nTo\n(4.3)\ncarga\nn\nT\nT.\nCOS(Cn)\n(4.4)\nLa intensidad de motor total es:\n(4.5)\n¡2\nsd\nm\n=\n+ ig\nPuede observarse que con el par motor cero, el componente\nintensidad activa es cero. Con unos valores de par más\nelevados, la intensidad de motor se vuelve bastante\nproporcional al par. Una buena aproximación a la intensidad\nde motor total es:\nin = Taux\nTo\n* In cuando: 0,8 * Tn ≤T ≤ 0.7 * T\nmax\n(4.6)\nT carga\nEjemplo 4.1:\nLa intensidad nominal de un motor de 15 KW es de 32 A y el\nfactor de potencia es de 0,83. ¿ Cuál es la corriente imanante\naproximada del motor en el punto nominal? ¿ Cuál es la\nintensidad aproximada total con un par del 120 % por debajo\ndel punto de debilitamiento del campo?\nSolución 4.1:\nEn el punto nominal, la estimación correspondiente a la\ncorriente imanante es:\nIsa = 1, sin() = 32 * \\ 1 - 0.832 = 17.8 A\nLa fórmula aproximada correspondiente a la intensidad de\nmotor total con un par del 120 % da como resultado:\nIm = To\ncarga I = 1.2 x 32 A = 38.4 A\nSe utilizó la fórmula aproximada, dado que el par cumplía la condición\nde 0,8 * Tn ≤ Tcarga ≤ 0,7 * T.\nmax\n12\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Motor de inducción (CA)\n4.2.2\nRango de\ndebilita-\nmiento\ndel campo\nnn\nsin(Pn) + cos(Pn).\nV\nn\nn\n) 2\nPor encima del punto de debilitamiento del campo, los\ncomponentes de la intensidad dependen asimismo de la\nvelocidad.\nI max\n-1\n)2\nn\n2- ( Tem ! )\nTn\nn\n1\nTn\nTmax M\nT\nTo\nn.\nCOS(Cn) = In\nP.\nP\ncarga\ncos(Pn)\n(4.8)\n(4.7)\nIsa = 1\ncarga\nn\n*\nn\nLa intensidad de motor total es:\nİm =1\nsd\n+ j2\nsq\n(4.9)\nLa intensidad de motor puede aproximarse con bastante exactitud\ndentro de determinada zona operativa. La intensidad de motor\nse vuelve proporcional a la potencia relativa. Una fórmula de\naproximación para la intensidad es:\ni. - Jag, ALI Pasa ,\n(4.10)\nLa aproximación puede utilizarse cuando:\nN\nmax\n(4.11)\n0.8 * * T ST carga 0.7 x ||*\ny\n0.8 * Pn ≤ Para ≤ 0.7 *\n50.7 x h x P.\nmax\n(4.12)\nEn el rango de debilitamiento del campo, la intensidad adicional\nnecesaria al objeto de mantener determinado nivel del par es\nproporcional a la velocidad relativa.\nEjemplo 4.2:\nLa intensidad de motor nominal es de 71 A. ¿ Cuánta intensidad\nhace falta para mantener el nivel del par al 100 % en 1,2 veces la\nvelocidad nominal (Tmax = 3 * Tn)?\nSolución 4.2:\nLa intensidad puede calcularse utilizando la fórmula de\naproximación:\nin - Tas 1- 1\n*- I = 1 * 1.2 * 71 = 85.2 A\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Motor de inducción (CC)\n4.3 Potencia\ndel motor\nLa potencia mecánica del motor (potencia de salida) puede\ncalcularse a partir de la velocidad y el par, mediante la fórmula:\nPout [W] = T [Nm] * @ [rad/s]\n(4.13)\nDado que con mucha frecuencia la potencia del motor se\nexpresa en kilovatios (1 kW = 1000 W) y la velocidad en rpm\n(revoluciones por minuto),\npm = 2\n60\n2 π\nrad/s), puede utilizarse la fórmula siguiente:\nPout [KW] =\nT [Nm] * n [rpm]\n9550\n(4.14)\nLa potencia de entrada al motor puede calcularse a partir de\nlos factores tensión, intensidad y potencia:\nPin=1 3* U *|* cos(q)\n(4.15)\nEl rendimiento del motor es igual al cociente entre la potencia\nde salida y la potencia de entrada:\nPout\n(4.16)\nn =\nin\nEjemplo 4.3:\nLa potencia nominal del motor es de 15 KW y la velocidad\nnominal es de 1480 rpm. ¿ Cuál es el par nominal del motor?\nSolución 4.3:\nEl par nominal del motor se calcula del modo siguiente:\nT =\n9550 * 15\nNm = 96.8 Nm\n1480\nEjemplo 4.4:\n¿Cuál es el rendimiento nominal de un motor de 37 kW\n(Pn = 37 KW, Un =380 V, In =71 A y cos(Pn) = 0,85)?\nSolución 4.4:\nEl rendimiento nominal es:\nPout\n3 * 380 * 71 * 0.85\n37000\n≥ 0.931\nnn- Pin\nV 3 x Un* I* cos(p)\nPn\n14\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Capítulo 5 - Leyes mecánicas básicas\n5.1\nMovimiento\nrotativo\nUna de las ecuaciones básicas de un motor de inducción\ndescribe la relación entre el momento de inercia ( J [kgm2]), la\nvelocidad angular ( @ [rad/s]) y el par (T [Nm]). La ecuación es la\nsiguiente:\ndt (Ja)=J do +@ du = T .\n(5.1)\ncarga\nEn la ecuación anterior, se parte de la premisa de que tanto la\nfrecuencia como el momento de inercia varían. La fórmula, no\nobstante, suele expresarse de tal modo que el momento de\ninercia se supone constante:\nJdo_T-Tcarga\n(5.2)\ndt\nLa Tcarga del par representa la carga del motor, que consta de\nfricción, inercia y de la propia carga. Cuando varía la velocidad\ndel motor, el par del motor difiere de Tcarga . Puede considerarse\nque el par del motor está integrado por un componente dinámico\ny un componente de carga:\nT = Tdin + T carga\n(5.3)\nSi la velocidad y el momento de inercia son constantes, el\ncomponente dinámico ( Tdin ) es cero.\nEl componente par dinámico producido por aceleración/\ndesaceleración de un momento constante de inercia (la velocidad\ndel motor se modifica en An [rpm] en el momento At [s], siendo J\nconstante) es:\ndin=J* 2 x + An\n(5.4)\nEl componente del par dinámico producido por un momento\nvariable de inercia a velocidad constante n[rpm] es:\nTan =n×2 x AJ\n(5.5)\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n15",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Leyes mecánicas básicas\nSi el momento de inercia varía y el motor acelera al mismo\ntiempo, el componente par dinámico puede calcularse\nutilizando cierto intervalo de muestreo discreto. Desde el punto\nde vista del dimensionado térmico, sin embargo, suele ser\nsuficiente con tener en cuenta el momento medio de inercia\ndurante la aceleración.\nEjemplo 5.1:\nEl momento total de inercia, 3 kgm2, sufre una aceleración,\npasando de una velocidad de 500 rpm a 1000 rpm en 10\nsegundos. ¿ Cuál es el par total necesario cuando el par de\ncarga constante es de 50 Nm?\n¿Con qué rapidez se desacelerará el motor hasta una velocidad\nde 0 rpm si se desconecta el suministro eléctrico del motor?\nSolución 5.1:\nEl momento total de inercia es constante. El componente par\ndinámico necesario para la aceleración es:\n2 T\n1000 - 500\nT din = 3*\n*\nNm = 15.7 Nm\n60\n10\nEl par total durante la aceleración es:\nT = Tdin + Tcarga= (15.7 + 50) Nm = 65.7 Nm\nSi el suministro eléctrico del motor se desconecta a 1000 rpm,\nel motor se desacelera debido al par de carga constante\n(50 Nm). La siguiente ecuación sostiene que:\n2 ₸\n0 - 1000\n3 *\n*\n= - T carga\n60\nAt\nTiempo de desaceleración de 1000 rpm a 0 rpm:\nAt = 3 *\n2 π\n*\n1000\n60\n50\nS = 6.28 s\nEjemplo 5.2:\nLa aceleración de un ventilador hasta la velocidad nominal se\nrealiza con un par nominal. A velocidad nominal, el par es del\n87 %. El momento de inercia del ventilador es de 1200 kgm2 y\nel momento de inercia del motor es de 11 kgm2. Las\ncaracterísticas de carga del ventilador, Tcarga se muestran en la\nfigura 5.1.\nLa potencia nominal del motor es de 200 kW y la velocidad\nnominal es de 991 rpm.\n16\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Leyes mecánicas básicas\n1\n0.9\n0.8\n0.7\n0.6\n0.5\n0.4\nPAR\n0.3\n0.2\n0.1\n1\n92 %\n99 %\n1\n1\n57 %\n78 %\n<\n29 %\n0\n0\n0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1\n₭\n>\nAn\nVELOCIDAD\nFigura 5.1 Características de par de un ventilador. La velocidad y el par se\nmuestran mediante valores relativos.\nCalcular el tiempo de arranque aproximado desde velocidad\ncero hasta velocidad nominal.\nSolución 5.2:\nEl par nominal del motor es:\nTn=\n9550 * 200\nNm = 1927 Nm\n991\nEl tiempo de arranque se calcula dividiendo el rango de\nvelocidad en cinco sectores. En cada sector (198,2 rpm) se parte\nde la premisa de que el par es constante. El par correspondiente\na cada sector se extrae de su punto medio. Ello resulta\nrazonablemente aceptable, ya que el comportamiento\ncuadrático se aproxima al lineal del sector.\nEl tiempo de aceleración del motor (ventilador) con par nominal\npuede calcularse mediante la fórmula:\n2 π tot * Δη\nAt - 2 Th , Ja\n60 Th - T carga\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n17",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Leyes mecánicas básicas\nLos tiempos de aceleración correspondientes a las distintas\nsecciones de velocidad son:\n0-198,2 rpm\nAt= 20 , 12\n1211 * 198.2\n0.99 * 1927\n198,2-396,4 rpm\nAt= 2T , 12\n1211 * 198.2\n0.92 * 1927\n396,4-594,6 rpm\n1= 21 .\n60\n1211 * 198.2\n0.78 * 1927\n594,6-792,8 rpm\nAt= 20 .\n1211 * 198.2\n60\n0.57 * 1927\n792.8-991 rpm\nAt= 2.0 .\n60\n1211 * 198.2\n0.29 * 1927\nS=13.2 s\nS= 14.3 s\nS= 16.7 s\nS=22.9 s\nS= 45.0 s\nEl tiempo total de arranque de 0-991 rpm es de\naproximadamente 112 segundos.\n5.2\nEngranajes y\nmomento de\ninercia\nLos engranajes son típicos de los sistemas de accionamiento.\nAl calcular el par del motor y el rango de velocidad, deberán\ntenerse en cuenta los engranajes, que se reducen desde el\nlado de la carga hasta el lado del motor mediante las\necuaciones siguientes (ver también la figura 5.2):\nT1= 12 + (12)\n(5.6)\nn2\n2\n(5.7)\nJ1 = J2 *|\nP\n2\nn\n(5.8)\nDirección de la energía\nn\nn\nT\nT\n2\nJ\n1\nn\nJ\n2\nFigura 5.2 Engranaje con rendimiento n. El coeficiente de engranaje es n1;n2\n18\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": [
+        [
+          [
+            "0-198,2 rpm",
+            "At= 20",
+            ", 12 1211 * 198.2"
+          ],
+          [
+            "",
+            "0.99 * 1927"
+          ],
+          [
+            "198,2-396,4 rpm",
+            "At= 2T",
+            ", 12 1211 * 198.2"
+          ],
+          [
+            "0.92 * 1927"
+          ],
+          [
+            "396,4-594,6 rpm",
+            "1= 21\n60",
+            ".\n1211 * 198.2"
+          ],
+          [
+            "0.78 * 1927"
+          ],
+          [
+            "594,6-792,8 rpm",
+            "At= 20",
+            ". 1211 * 198.2"
+          ],
+          [
+            "60",
+            "0.57 * 1927"
+          ],
+          [
+            "792.8-991 rpm",
+            "At= 2.0\n60",
+            ".\n1211 * 198.2 0.29 * 1927"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Leyes mecánicas básicas\nAsimismo, deberán conocerse todos los momentos de inercia\n( J [kgm2]) del sistema. De lo contrario, es posible calcularlos, lo\ncual resulta bastante difícil de hacer con exactitud. Los\nconstructores de las máquinas, por lo general, pueden facilitar\nlos datos necesarios.\nEjemplo 5.3:\nUn cilindro es una forma bastante común de carga (rodillos,\ntambores, acoplamientos, etc.). ¿ Cuál es la inercia de un cilindro\nrotatorio (masa=1600 kg, radio=0,7 m)?\nSolución 5.3:\nLa inercia de un cilindro rotatorio (con masa m [kg] y radio r [m])\nse calcula del modo siguiente:\nJ = 1 m2= 1\n* 1600 * 0.72 kgm2= 392 kgm2\nEn el caso de un engranaje, el momento de inercia del eje del\nmotor deberá reducirse. El ejemplo siguiente muestra cómo\nreducir los engranajes y elevadores. En los libros de ingeniería\nbásica, también se facilitan otras fórmulas.\nEjemplo 5.4:\nReducir el momento de inercia al eje del motor del sistema de\naccionamiento de elevadores siguiente.\nM\nJ2, n2 , r\nJ1, n,\nm\nFigura 5.3 Sistema de accionamiento de elevadores utilizado en el\nejemplo 5.4.\nSolución 5.4:\nEl momento total de inercia consta de J1=10 kgm2, J2=30 kgm2,\nr=0,2 m y m=100 kg.\nEl momento de inercia J2 y la masa m están detrás de una caja\nde engranajes con un coeficiente de engranaje n1:n2=2:1.\nEl momento de inercia J2 se reduce multiplicandolo por el\ncuadrado de la inversa del coeficiente de engranaje. La masa m\ndel elevador se reduce multiplicandola por el cuadrado del ra-\ndio ry dado que se halla detrás de la caja de engranajes, deberá\nmultiplicarse asimismo por el cuadrado de la inversa del\ncoeficiente de engranaje.\nSe deduce, por tanto, que el momento total de inercia del sistema\nes:\nJred =J1 +\nn2\n2\n[J2 + mr2] = 18.5 kgm2\nn,\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n19",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Capítulo 6 - Tipos de cargas\nDeterminados tipos de cargas son característicos del mundo\nindustrial. Es esencial conocer el perfil de carga (rango de\nvelocidad, par y potencia) al seleccionar un motor y un\nconvertidor de frecuencia adecuados para la aplicación.\nSe muestran algunos tipos de cargas comunes. Asimismo,\npueden efectuarse combinaciones de estos tipos.\n1. Par constante\nUn tipo de carga de par constante es típico cuando se están\nmanejando volúmenes fijos. Por ejemplo, compresores de\ntornillo, alimentadores y cintas transportadoras son\naplicaciones típicas a par constante. El par es constante y\nla potencia es linealmente proporcional a la velocidad.\nP\nT\nn (rpm)\nFigura 6.1 Curvas de par y potencia típicas en una aplicación a par\nconstante.\n2. Par cuadrático\nEl par cuadratico es el tipo de carga más común. Las\naplicaciones típicas son bombas y ventiladores centrífugos.\nEl par es cuadráticamente proporcional a la velocidad, y la\npotencia lo es cúbicamente.\nT\nP\nn (rpm)\nFigura 6.2 Curvas de par y potencia típicas en una aplicación a par\ncuadrático.\n20\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Tipos de carga\n3. Potencia constante\nUna carga a potencia constante es normal cuando el\nmaterial se enrolla y el diámetro cambia durante este\nproceso. La potencia es constante y el par es inversamente\nproporcional a la velocidad.\nP\nT\nn (rpm)\nFigura 6.3 Curvas de par y potencia típicas en una aplicación a\npotencia constante.\n4. Potencia/par constante\nEste tipo de carga es común en la industria papelera. Es\nuna combinación de tipos de cargas a potencia constante\ny a par constante. Este tipo de carga normalmente es\nconsecuencia del dimensionado del sistema según la\nnecesidad de determinada potencia a alta velocidad.\nP\nT\nn (rpm)\nFigura 6.4 Curvas de par y potencia típicas en una aplicación a\npotencia/par constante.\n5. Demanda de par de arranque\nEn algunas aplicaciones se precisa un par elevado a bajas\nfrecuencias. Ello deberá tenerse en cuenta en el\ndimensionado. Son aplicaciones típicas de este tipo de\ncarga, por ejemplo, las extrusoras y bombas espirales.\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n21",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "Tipos de cargas\nT\nT\nn (rpm)\nFigura 6.5 Curva de par típica en una aplicación en la que se precisa\nun par de arranque.\nNo obstante, también hay otros muchos tipos de cargas\ndifíciles de describir en una presentación general. A título\nilustrativo, existen distintas cargas simétricas (rodillos,\ngrúas, etc.) y asimétricas. La simetría/asimetría en el par\npuede ser función, por ejemplo, del ángulo o del tiempo.\nEstas modalidades de tipos de cargas deberán\ndimensionarse cuidadosamente, teniendo en cuenta los\nmárgenes de capacidad de sobrecarga del motor y del\nconvertidor de frecuencia, así como el par medio del motor.\n22\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Capítulo 7 - Capacidad de carga del motor\nLa capacidad de carga térmica del motor deberá tenerse en\ncuenta al dimensionar un sistema de accionamiento. La\ncapacidad de carga térmica define la capacidad de carga\nmáxima a largo plazo del motor.\nUn motor de inducción estándar está autoventilado, por lo cual\nla capacidad de carga térmica del mismo disminuye a medida\nque su velocidad se reduce. Este tipo de comportamiento limita\nel par continuo disponible a bajas velocidades.\nUn motor con refrigeración independiente también puede\ncargarse a bajas velocidades. La refrigeración suele\ndimensionarse, de modo que el efecto refrigerante sea idéntico\nal del punto nominal.\nCon ambos métodos -de autorefrigeración y de refrigeración\nindependiente- el par está limitado térmicamente en el rango\nde debilitamiento del campo.\nT/T\n120 %\n110 %\n2)\n100 %\n90 %\n80 %\n1)\n70 %\n60 %\n50 %\n40 %\n0\n0.2\n0.4\n0.6\n0.8\n1.0\n1.2\n1.4\n1.6\n1.8\n2.0\nVelocidad relativa\nFigura 7.1 Capacidad de carga típica de un motor de inducción por jaula\nestándar en un accionamiento controlado por frecuencias 1) sin refrigeración\nindependiente y 2) con refrigeración independiente.\nUn motor de CA puede sobrecargarse durante breves períodos\nde tiempo sin sufrir sobrecalentamiento. Las sobrecargas a\ncorto plazo están principalmente limitadas por Tmax (comprobar\nel margen de seguridad).\nEn términos generales, la capacidad de carga a corto plazo de\nun convertidor de frecuencia suele ser más crítica que la del\nmotor. Los tiempos de recuperación térmica del motor\nnormalmente oscilan entre 15 minutos (motores pequeños) y\nvarias horas (motores grandes) en función del tamaño del motor.\nLos tiempos de recuperación térmica del convertidor de\nfrecuencia (típicamente de unos minutos) se facilitan en los\nmanuales de los productos.\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Capítulo 8 - Selección del convertidor\nde frecuencia y del motor\nEl motor se selecciona según la información básica relativa al\nproceso. El rango de velocidad, las curvas del par, el método de\nventilación y la capacidad de carga del motor suministran unas\npautas para la selección del motor. A menudo vale la pena\ncomparar distintos motores, dado que el que se elija afectará al\ntamaño del convertidor de frecuencia.\nAl seleccionar un convertidor de frecuencia adecuado, deberán\ntenerse en cuenta varios puntos. Los fabricantes de\nconvertidores de frecuencias normalmente disponen de ciertas\ntablas de selección, donde se facilitan las potencias típicas de\nlos motores correspondientes a cada tamaño de convertidor.\nLa intensidad de dimensionado también puede calcularse cuando\nse conocen las características del par. Los correspondientes\nvalores de la intensidad pueden calcularse a partir del perfil del\npar y compararse con los límites de intensidad del convertidor.\nLa intensidad de motor nominal ofrece cierta orientación al\nrespecto, pero no siempre se configura como uno de los mejores\ncriterios de dimensionado posibles, ya que los motores pueden,\npor ejemplo, perder intensidad (temperatura ambiente, zona\npeligrosa, etc.).\nLa tensión de alimentación disponible deberá comprobarse antes\nde seleccionar el convertidor de frecuencia. Posibles variaciones\nen la tensión de alimentación afectarán a la potencia disponible\nen el eje del motor. Si la tensión de alimentación es inferior a la\nnominal, el punto de debilitamiento del campo pasa a una\nfrecuencia inferior y el par máximo disponible del motor se reduce\nen el rango de debilitamiento del campo.\nEl par máximo disponible suele estar limitado por el convertidor\nde frecuencia. Ello debe ser tenido en cuenta ya en la fase de\nselección del motor. El convertidor de frecuencia puede limitar\nel par del motor con anterioridad a lo que se declara en la hoja\nde datos del fabricante de motores.\nEl par máximo disponible también se ve afectado por los\ntransformadores, reactores, cables, etc. del sistema, ya que\nproducen una caída de tensión y, de este modo, el par máximo\ndisponible también puede caer. Los fallos momentáneos del\nsistema deberán compensarse también con el régimen nominal\ndel convertidor de frecuencia.\n8.1\nAplicación\nComo etapas del dimensionado de la aplicación de bomba y\nventilador cabe citar:\nde bomba\ny ventilador\n(Ejemplo)\n- Comprobar el rango de velocidad y calcular la potencia\ncon la velocidad más elevada.\n- Comprobar las necesidades del par de arranque.\n- Elegir el número de polos del motor. La frecuencia operativa\nmás económica suele situarse en el rango de debilitamiento\ndel campo.\n24\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": [
+        [
+          [
+            "",
+            "Capítulo 8 - Selección\nde frecuencia y del motor"
+          ],
+          [
+            "",
+            "El motor se selecciona según la información básica relativa al proceso. El rango de velocidad, las curvas del par, el método de ventilación y la capacidad de carga del motor suministran unas pautas para la selección del motor. A menudo vale la pena comparar distintos motores, dado que el que se elija afectará al tamaño del convertidor de frecuencia."
+          ],
+          [
+            "Al seleccionar un convertidor de frecuencia adecuado, deberán tenerse en cuenta varios puntos. Los fabricantes de convertidores de frecuencias normalmente disponen de ciertas tablas de selección, donde se facilitan las potencias típicas de los motores correspondientes a cada tamaño de convertidor. La intensidad de dimensionado también puede calcularse cuando se conocen las características del par. Los correspondientes valores de la intensidad pueden calcularse a partir del perfil del par y compararse con los límites de intensidad del convertidor. La intensidad de motor nominal ofrece cierta orientación al respecto, pero no siempre se configura como uno de los mejores criterios de dimensionado posibles, ya que los motores pueden, por ejemplo, perder intensidad (temperatura ambiente, zona peligrosa, etc.)."
+          ],
+          [
+            "La tensión de alimentación disponible deberá comprobarse antes de seleccionar el convertidor de frecuencia. Posibles variaciones en la tensión de alimentación afectarán a la potencia disponible en el eje del motor. Si la tensión de alimentación es inferior a la nominal, el punto de debilitamiento del campo pasa a una frecuencia inferior y el par máximo disponible del motor se reduce en el rango de debilitamiento del campo."
+          ],
+          [
+            "El par máximo disponible suele estar limitado por el convertidor de frecuencia. Ello debe ser tenido en cuenta ya en la fase de selección del motor. El convertidor de frecuencia puede limitar el par del motor con anterioridad a lo que se declara en la hoja de datos del fabricante de motores."
+          ],
+          [
+            "El par máximo disponible también se ve afectado por los transformadores, reactores, cables, etc. del sistema, ya que producen una caída de tensión y, de este modo, el par máximo disponible también puede caer. Los fallos momentáneos del sistema deberán compensarse también con el régimen nominal del convertidor de frecuencia."
+          ],
+          [
+            "8.1 Aplicación",
+            "Como etapas del dimensionado de la aplicación de bomba y ventilador cabe citar:"
+          ],
+          [
+            "de bomba y ventilador (Ejemplo)",
+            "- Comprobar el rango de velocidad y calcular la potencia con la velocidad más elevada. - Comprobar las necesidades del par de arranque. - Elegir el número de polos del motor. La frecuencia operativa más económica suele situarse en el rango de debilitamiento del campo."
+          ],
+          [
+            "24",
+            "Guía técnica nº 7 - Dimensionado de un sistema de accionamiento"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Selección del convertidor de frecuencia y del motor\n- Elegir la potencia del motor, de modo que ésta esté\ndisponible a la máxima velocidad. Deberá tenerse\npresente la capacidad de carga térmica.\n- Elegir el convertidor de frecuencia. Utilizar el régimen\nnominal de la bomba y el ventilador. Si no se halla\ndisponible, elegir el convertidor de frecuencia según el\nperfil de intensidad de motor.\nEjemplo 8.1:\nUna bomba tiene una carga de 150 KW a una velocidad de\n2000 rpm. No se precisa par de arranque.\nSolución 8.1:\nEl par necesario a 2000 rpm es:\nT =\n9550 * 150\n2000\nNm = 716 Nm\nParece ser que los motores de 2 6 4 polos se configuran como\nelecciones alternativas para esta aplicación.\n120%\nT/Tn\n110%\n100%\n90%\n80%\n1)\n70%\n60%\n2)\n50%\n40%\n30%\n20%\n10%\n0%\n0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n100\nF[Hz]\nP=2\nrpm\n0\n600\n1200\n1800\n2400 3000\n3600 4200\n4800 5400 6000\nP=4\nrpm\n0\n300\n600\n900\n1200\n1500\n1800 2100\n2400\n2700 3000\nP=6\nT\nrpm\n0\n200\n400\n600\n800\n1000\n1200\n1400\n1600\n1800\n2000\nFigura 8.1 Curvas de capacidad de carga del motor en una aplicación de\nbomba y ventilador. Comparación entre motores de 1) 2 polos y 2) 4 polos.\n1) motor p=2\nPara un motor de 2 polos, la capacidad de carga a 2000 rpm,\nsegún la curva de capacidad de carga, es de aproximadamente\nel 95 %. El par nominal del motor deberá ser, como mínimo, de:\nTn >.\n0.95\nNm= 754 Nm\n716\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n25",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Selección del convertidor de frecuencia y del motor\nLa correspondiente potencia nominal deberá ser, como mínimo:\nP,≥\n754 * 3000\nkW = 237 KW\n9550\nSe elige un motor de 250 KW (400 V, 431 A, 50 Hz, 2975 rpm y\n0,87). El par nominal del motor es:\nTn=\n250 * 9550\nNm= 803 Nm\n2975\nLa intensidad de motor a una velocidad de 2000 rpm (rango de\nflujo constante) es aproximadamente:\ncarga\n716\n*\n431 A = 384 A\n*| =\n803\nLa intensidad mínima continua correspondiente al convertidor\nde frecuencia es de 384 A.\n2) motor p=4\nPara un motor de 4 polos, la capacidad de carga a 2000 rpm es\ndel 75 %. El par nominal mínimo del motor es:\n716 Nm\n0.75\n955 Nm\nT, ≥\nLa potencia mínima de un motor de 4 polos es:\n955 * 1500\nkW = 150 KW\nPn ≥\n9550\nUn motor de 160 KW (400 V, 305 A, 50 Hz, 1480 rpm y 0,81) cumple\nlas condiciones. La intensidad aproximada a una velocidad de\n2000 rpm (66,7 Hz) es:\nIn Tame 1- Pas + 1 -150 +\n* 305 A = 286 A\nDeberá calcularse la intensidad exacta si la intensidad nominal\ndel convertidor de frecuencia está próxima a la intensidad\naproximada del motor.\nUn motor de 4 polos precisa menos intensidad en el punto de\nfuncionamiento de la bomba. Así, probablemente constituye una\nelección más económica que un motor de 2 polos.\n26\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Selección del convertidor de frecuencia y del motor\n8.2\nAplicación a\npar constante\n(Ejemplo)\nAlgunas de las etapas del dimensionado de una aplicación a\npar constante son:\n- Comprobar el rango de velocidad.\n- Comprobar el par constante necesario.\n- Comprobar las posibles aceleraciones. Si se precisan\naceleraciones, comprobar los momentos de inercia.\n- Comprobar el posible par de arranque necesario.\n- Elegir el motor, de modo que el par esté por debajo de\nla curva de capacidad de carga térmica (¿ventilación\nindependiente / autoventilación?). La velocidad nominal\ndel motor suele estar situada en la parte central del\nrango de velocidad utilizado.\n- Elegir un convertidor de frecuencia adecuado según\nla intensidad de dimensionado.\nEjemplo 8.2:\nUna extrusora tiene un rango de velocidad de 300-1200 rpm.\nLa carga a 1200 rpm es de 48 KW. El par de arranque\nrequerido es de 200 Nm. El tiempo de aceleración de\nvelocidad cero a 1200 rpm es de 10 segundos. El motor está\nautoventilado y la tensión nominal es de 400 V.\nSolución 8.2:\nEl par constante requerido es:\nT=\n9550 * 48\nNm= 382 Nm\n1200\nUn motor adecuado deberá tener 4 6 6 polos.\n120%\nT/TO\n110%\n100%\n90%\n2)\n80%\n1)\n70%\n60%\n50%\n40%\n30%\n20%\n10%\n0%\n0\n10\n20\n30\n40\n50\n60\n70\n80\n90\n100\nF[Hz]\nP=2\nrpm\n0\n600\n1200\n1800\n2400\n3000\n3600\n4200\n4800\n5400\n6000\nP=4\n0\n300\n600\nP=6\n0\n200\n400\nrpm\n900\n1200\n1500\n1800\n2100\n2400 2700 3000\nrpm\n600\n800\n1000\n1200\n1400\n1600 1800\n2000\nFigura 8.2 Curvas de capacidad de carga del motor en una aplicación a\npar constante. Comparación de motores de 1) 4 polos y 2) 6 polos.\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n27",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Selección del convertidor de frecuencia y del motor\n1) Motor p=4\nA una velocidad de 300 rpm, la capacidad de carga térmica es\ndel 80 %. El par nominal mínimo estimado es:\n382\nT 2.\n0.8\nNm = 478 Nm\nLa potencia nominal mínima del motor es:\nPn≥\n9550\nkW = 75 KW\n478 * 1500\nUn motor adecuado es, por ejemplo, uno de 75 KW (400 V,\n146 A, 50 Hz, 1473 rpm y 0,82). El par nominal del motor es:\nT=\n75 * 9550\nNm= 486 Nm\n1473\nLa intensidad de motor es de aproximadamente (T/T ~ 0.8):\nT carga\nTo\n486\n* 146 A = 115 A\nIn = To\n*\n382\nSegún la intensidad de motor calculada, puede elegirse un\nconvertidor de frecuencia adecuado para su uso a par\nconstante.\nEl par de arranque requerido (200 Nm) no representa ningún\nproblema para este motor.\nSi el momento de inercia del motor es de 0,72 kgm2, el par\ndinámico en aceleración es:\n21 +\n0.72 Nm = 9 Nm\nTam - 20 , 1200 .\nPor tanto, el par total durante la aceleración es de 391 Nm,\nque es inferior al par nominal del motor.\n2) Motor p=6\nA velocidades de 300 rpm y 1200 rpm, la capacidad de carga\ndel motor es del 84 %. Así, el par nominal mínimo del motor de\n6 polos es:\n382 Nm\n= 455 Nm\n0.84\nEl valor mínimo de la potencia nominal del motor es:\n455 * 1000\nkW = 48 KW\n9550\n28\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Selecting the frequency converter and motor\nUn motor adecuado podría ser, por ejemplo, uno de 55 kW\n(400 V, 110 A, 50 Hz, 984 rpm y 0,82). El par nominal del motor es:\nT1=\n55 * 9550\nNm = 534 Nm\n984\nLa intensidad de dimensionado puede aproximarse a una\nvelocidad de 1200 rpm:\n1. - Fas , 1 = Parco +1=48 + 1\n* 110 A = 96 A\nLa intensidad nominal (continua) del convertidor de frecuencia\ndeberá ser superior a 96 A.\nEl par de arranque requerido es inferior al par nominal del motor.\nSi la inercia del motor es de 1,2 kgm2, el par dinámico en\naceleración es:\nTon = 21 . 1200\n* 1.2 Nm = 15 Nm\nEl par total necesario durante la aceleración es de 397 Nm, que\nes inferior al par nominal del motor.\nLa intensidad de un motor de 6 polos es inferior en 19 A a la de\nun motor de 4 polos. El convertidor de frecuencia/la selección\ndel motor final depende de los tamaños y precios de los\nbastidores del motor y del convertidor de frecuencia.\n8.3\nAplicación\na potencia\nconstante\n(Ejemplo)\nAlgunas de las etapas del dimensionado de una aplicación\nconstante de potencia son:\n- Comprobar el rango de velocidad.\n- Calcular la potencia necesaria. Las bobinadoras son\naplicaciones típicas a potencia constante.\n- Dimensionar el motor, de modo que se utilice el rango de\ndebilitamiento del campo.\nEjemplo 8.3:\nUna máquina de trefilado de alambre está controlada por un\nconvertidor de frecuencia. La velocidad de la superficie de la\nbobina es de 12 m/s y la tensión es de 5700 N. Los diámetros\nde la bobina son: 630 mm (bobina vacía) y 1250 (bobina llena).\nExiste un engranaje con un cociente de engranaje n2 :n =1:7,12\ny el rendimiento del mismo es igual a 0,98.\nSeleccionar un motor y convertidor adecuados para esta\naplicación.\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n29",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Selección del convertidor de frecuencia y del motor\nSolución 8.3:\nLa idea básica de una bobinadora radica en mantener la\nvelocidad de la superficie y la tensión constantes a medida\nque el diámetro cambia.\nP = Fv\nr2\nr.\nP = TO\nFigura 8.3 Diagrama básico de una bobinadora.\nEn movimiento rectilíneo, la potencia es: P = Fv\nEn movimiento giratorio, la potencia es: P = To\nLa relación entre la velocidad de la superficie y la velocidad\nangular es:\nv [m/s] = @ * r =\nn [rpm] =\n60 * V\n60\n2 T * n [rpm] * r\n2 x * r\nEl par es el producto de la fuerza por el radio:\nT = Fr\nMediante el empleo de las fórmulas anteriores, puede\nseleccionarse el motor:\nP = 5700 N * 12 m/s = 68.4 KW\nT1 = 5700 N*\nm = 1796 Nm\n0.63\n2\nnj =\n12 * 60\nrpm = 363.8 rpm\nTT * 0.63\nT2= 5700 N *\n2\nm = 3563 Nm\n1.25\nn2 =\n12 * 60\n* 1.25\nrpm = 183.3 rpm\n30\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Selección del convertidor de frecuencia y el motor\nSe tendrá en cuenta el engranaje antes de elegir el motor.\nLas velocidades, pares y potencia deberán reducirse:\nP=\nP\n68.4\nkW = 69.8 KW\n‘engranaje\n0.98\n1796\n*\n7.12\nNm = 275 Nm\n1\nT1=\n0.98\nn= 363.8 * 7.12rpm = 2590 rpm\nT2=\n3563\n*\n1\n0.98\n7.12\nNm = 511 Nm\nn2=183.3 * 7.12rpm = 1305 rpm\n1) Motor p=2\nSi se elige un motor de 2 polos, la capacidad de carga a\nuna velocidad de 1305 rpm es de aproximadamente el\n88 % y el 97 % a 2590 rpm. La potencia nominal mínima\ndel motor es:\nP≥\n511 * 3000\nKW = 182 KW\n0.88 * 9550\nSe selecciona un motor de 200 KW (400 V, 353 A, 50 Hz,\n2975 rpm y 0,86). El par nominal del motor es:\nTn=\n200 * 9550\nNm = 642 Nm\n2975\nLa intensidad de dimensionado se calcula según un par de\n511 Nm:\nIm = _ carga + 1 =\n511\n* 353 A = 281 A\n642\n2) Motor p=4\nSi se elige un motor de 4 polos, puede observarse a partir\nde la curva de capacidad de carga que ésta, a una velocidad\nde 1305 rpm, es de aproximadamente el 98 %, y a 2590 rpm\nes del 60 %. La potencia nominal mínima del motor es:\n511 * 1500\nkW = 82 KW\n0.98 * 9550\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n31",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "Selección del convertidor de frecuencia y del motor\nSe elige un motor de 90 KW (400 V, 172 A, 50 Hz, 1473 rpm\ny 0,83). El par nominal del motor es:\nTn=\n90 * 9550\nNm = 584 Nm\n1473\nEl dimensionado, en este caso, se realiza según la\nintensidad de motor a 1305 rpm. La intensidad de motor\nes:\nF 1- 51\n584\n* 172 A = 151 A\nCon un motor de 2 polos, no se utilizó el rango de\ndebilitamiento del campo (potencia constante), lo que\nacarreó un sobredimensionado innecesario. Un motor de\n4 polos constituye una elección más óptima para esta\naplicación.\n32\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Capítulo 9 - Transformador y\nrectificador de entrada\nExisten diversos tipos de rectificadores de entrada. El tipo de\nrectificador en concreto podría limitar el funcionamiento.\nUn rectificador convencional es un rectificador de diodos de 6\nó 12 pulsos. Los rectificadores de diodos sólo soportan cargas\nde motorización en las que el flujo de potencia es unidireccional.\nEn determinados procesos en los que la carga puede ser\nasimismo generadora, la energía necesita ser absorbida. Para\ncargas de corta generación, la solución tradicional ha\nconsistido en una resistencia de frenado en la que la potencia\ngenerada ha sido transformada en pérdidas de calor. Sin\nembargo, si la carga se genera continuamente, se precisa un\nverdadero rectificador de 4 cuadrantes.\nTanto el transformador de entrada como el rectificador están\ndimensionados según la potencia del eje del motor y los fallos\nmomentáneos del sistema. Por ejemplo, si se suministra un\npar elevado a baja velocidad, la potencia mecánica nunca es\nlo suficientemente baja. Por lo tanto, no necesariamente\nsobrecargas elevadas son sinónimo de potencia elevada, desde\nel punto de vista del rectificador.\nI, T\n<\nPAR\nINTENSIDAD DE\nLÍNEA\nn\nFigura 9.1 Intensidad de línea en una aplicación a par constante.\nLa intensidad de línea es pequeña a baja velocidad.\n9.1\nRectificador\nLos rectificadores están dimensionados según la potencia del\neje del motor. Un unico rectificador de entrada del\naccionamiento puede seleccionarse utilizando la fórmula de\naproximación:\nmotor\nS\nrectificador\n(9.1)\n0.9\nEn sistemas de accionamiento en los que existe un enlace de\nCC común, puede producirse motorización y generación de\npotencia simultáneas. El cálculo aproximado de la potencia\ndel rectificador se realiza del modo siguiente:\nS\nrectificador\n0.9\n2 Pmotorización\n-0.92 generación\n(9.2)\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n33",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "Transformador y rectificador de entrada\n9.2\nTransformador\nLa potencia de entrada de un transformador puede\ncalcularse del modo siguiente:\nS\n= P\ntransformador\ntotal\n1.05\n1\n*\n1\n*\n1\n*\n1\n*\n1\nn\ncos(a)\n(9.3)\nEn las fórmulas anteriores:\nP.\nes la potencia total del eje del motor\nk es la capacidad de carga del transformador (factor k)\n1,05 significa la caída de tensión del transformador\n(impedancia)\nnr es el rendimiento del rectificador\ncos(a) es el ángulo de control del rectificador (=1,0 para\nel rectificador de diodos)\nn. es el rendimiento de la reactancia de CA (si existe)\nni es el rendimiento del inversor\nnm es el rendimiento del motor\nLa potencia del eje total suele multiplicarse por un\ncoeficiente de 1,2 - 1,35.\nEjemplo 9.1:\nEn una aplicación a par constante, la máxima potencia del\neje necesaria es de 48 KW a una velocidad de 1200 rpm. Se\neligió un motor de 55 KW y una unidad de inversor de\n70 kVA.\nEspecificar el rectificador y el transformador de entrada.\nSe utiliza una alimentación de diodos de 6 pulsos\n(rendimiento 0,985), hay una reactancia de CC en el enlace\nde CC, el rendimiento del inversor es de 0,97 y el del motor\nes de 0,95.\nSolución 9.1:\nLa potencia estimada del rectificador es:\nS\nrectificador\n0.9\n48\nKVA = 53.3 kVA\n34\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Transformador y rectificador de entrada\nEl rendimiento de la reactancia se incluye en el rendimiento\ndel inversor. Ya que la unidad de suministro de diodos es\ncos(a) =1, la potencia del transformador de entrada (k=0,95)\nes:\n1.05\n1\n1\nS\n= 48 *\ntransformador\n*\n*\n0.95\n0.985\n0.97\n*\n1\nKVA = 58.4 kVA\n0.95\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n35",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "Capítulo 10 - Índice\n4 cuadrantes 33\nM\nmecánico 14\nA\nmomento de inercia 15\naceleración 18\nmotor 9\nacoplamiento 19\nmotor de CA 6\nalimentación 6, 7\nmotor de inducción 9\nautoventilado 23\nmotorización 33\nB\nP\nbombas centrífugas 20\npar 9, 10\npar constante 20\nC\npar cuadrático 20\ncaja de engranajes 19\npar de actuación 9\ncapacidad de carga térmica 23\npar de arranque 7, 10, 21\ncapacidad de sobrecarga 7\npar del rotor bloqueado 9\ncarga 6\npar máximo 10\ncarga cíclica 7\npar motor crítico 10\nconvertidor de frecuencia 6\nperfil de carga 20\ncuadráticamente 20\npotencia 9, 14\ncúbicamente 20\npotencia constante 10, 21\npotencia en el eje 24\nD\npunto nominal 9, 12\ndebilitamiento del campo 10\ndesaceleración 16\nR\ndeslizamiento 9\nrango del flujo 10\nrango de frecuencia 7, 9\nE\nrango de velocidad 7\nengranaje 18\nrectificador 33\nenlace de CC 6\nrectificador de diodos 33\nrefrigeración independiente 23\nF\nrendimiento 14\nfactor de potencia 12\nrodillo 19\nfricción 14\nS\nG\nsuministro eléctrico 6\ngeneración 33\nT\nI\ntambor 19\ninducción 9\ntensión 9\nintensidad activa 11\ntensión de alimentación 7, 24\nintensidad reactiva 11\ntipo de carga 20\ninversor 34, 35\ntransformador 6\ntransformador de entrada 6\nK\nkilovatio 14\nU\nunidad de rectificador 6\n36\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": [
+        [
+          [
+            "4 cuadrantes 33",
+            "M"
+          ],
+          [
+            "",
+            "mecánico 14"
+          ],
+          [
+            "A",
+            "momento de inercia 15"
+          ],
+          [
+            "aceleración 18",
+            "motor 9"
+          ],
+          [
+            "acoplamiento 19",
+            "motor de CA 6"
+          ],
+          [
+            "alimentación 6, 7",
+            "motor de inducción 9"
+          ],
+          [
+            "autoventilado 23",
+            "motorización 33"
+          ],
+          [
+            "B",
+            "P"
+          ],
+          [
+            "bombas centrífugas 20",
+            "par 9, 10"
+          ],
+          [
+            "",
+            "par constante 20"
+          ],
+          [
+            "C",
+            "par cuadrático 20"
+          ],
+          [
+            "caja de engranajes 19",
+            "par de actuación 9"
+          ],
+          [
+            "capacidad de carga térmica 23",
+            "par de arranque 7, 10, 21"
+          ],
+          [
+            "capacidad de sobrecarga 7",
+            "par del rotor bloqueado 9"
+          ],
+          [
+            "carga 6",
+            "par máximo 10"
+          ],
+          [
+            "carga cíclica 7",
+            "par motor crítico 10"
+          ],
+          [
+            "convertidor de frecuencia 6",
+            "perfil de carga 20"
+          ],
+          [
+            "cuadráticamente 20",
+            "potencia 9, 14"
+          ],
+          [
+            "cúbicamente 20",
+            "potencia constante 10, 21 potencia en el eje 24"
+          ],
+          [
+            "D\n:unselected:",
+            "punto nominal 9, 12"
+          ],
+          [
+            "debilitamiento del campo 10",
+            ""
+          ],
+          [
+            "desaceleración 16",
+            "R"
+          ],
+          [
+            "deslizamiento 9",
+            "rango del flujo 10"
+          ],
+          [
+            "",
+            "rango de frecuencia 7, 9"
+          ],
+          [
+            "E",
+            "rango de velocidad 7"
+          ],
+          [
+            "engranaje 18",
+            "rectificador 33"
+          ],
+          [
+            "enlace de CC 6",
+            "rectificador de diodos 33"
+          ],
+          [
+            "refrigeración independiente 23"
+          ],
+          [
+            "F",
+            "rendimiento 14"
+          ],
+          [
+            "factor de potencia 12",
+            "rodillo 19"
+          ],
+          [
+            "fricción 14",
+            ""
+          ],
+          [
+            "",
+            "S"
+          ],
+          [
+            "G",
+            "suministro eléctrico 6"
+          ],
+          [
+            "generación 33",
+            "T"
+          ],
+          [
+            ""
+          ],
+          [
+            "I",
+            "tambor 19"
+          ],
+          [
+            "inducción 9",
+            "tensión 9"
+          ],
+          [
+            "intensidad activa 11",
+            "tensión de alimentación 7, 24"
+          ],
+          [
+            "intensidad reactiva 11",
+            "tipo de carga 20"
+          ],
+          [
+            "inversor 34, 35",
+            "transformador 6"
+          ],
+          [
+            "",
+            "transformador de entrada 6"
+          ],
+          [
+            "K\n:selected:",
+            ""
+          ],
+          [
+            "kilovatio 14",
+            "U"
+          ],
+          [
+            "",
+            "unidad de rectificador 6"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Índice\nV\nvelocidad 9\nvelocidad angular 14\nventilador 16, 20\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento\n37",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "38\nGuía técnica nº 7 - Dimensionado de un sistema de accionamiento",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Guía técnica nº 7 - Dimensionado de un sistema de accionamiento\n39",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "014\nImpresos\n441\nCopyright @ ABB Automation Group Ltd, 2000 3BFE 64401416 R0106 Especificaciones sujetas a modificación sin previo aviso\nES 31.10.2000\nABB\nABB Sistemas Industriales S.A.\nDivisión Accionamientos\nPolígono Industrial S.O.\n08192 Sant Quirze del Vallès\nBarcelona\nEspaña\nTeléfono\n93 728 87 00\nFax\n93 728 87 43\nInternet\nhttp://www.abb.com/motors&drives",
+      "tablas": []
+    }
+  ]
+}

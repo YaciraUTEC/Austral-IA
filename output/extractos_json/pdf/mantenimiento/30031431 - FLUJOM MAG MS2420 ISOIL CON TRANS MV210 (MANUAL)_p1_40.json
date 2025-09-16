@@ -1,0 +1,1723 @@
+{
+  "archivo": "30031431 - FLUJOM MAG MS2420 ISOIL CON TRANS MV210 (MANUAL)_p1_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "ISOMAG\nThe friendly magmeter\n®\nOPERATING AND MAINTENANCE\nMANUAL\nMV210\nCE\nISOIL\nINDUSTRIA\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Release number: 210_EN_IT_IS_R1_1.02.0\nThe characters of file name in bold type indicate the software version which the manual refers to; it is visualized at\nthe instrument start up, or by specific function on DIAGNOSTIC menu.\nThe reproduction of this manual and any supplied software is strictly forbidden.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "ISOMAG\nISOIL\nINDUSTRIA\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "ISOMAG\nINDICE\nMV210\n1\nSAFETY INFORMATION\n3\nINTRODUCTION\n3\nSAFETY CONVENTION\n4\nDATA PLATE\n5\nAMBIENT TEMPERATURE\n5\nTECHNICAL CHARACTERISTICS\n5\nDIMENSIONS\n6\nSEPARATE VERSION\n7\nHORIZONTAL VERSION\n8\nVERTICAL VERSION\n8\nMV210 CONSTRUCTION\n10\nINTERNAL LAYOUT\n11\nELECTRICAL CONNECTION AND GROUNDING INSTRUCTIONS\n12\nINTERNAL LITHIUM BATTERY\n13\nDIGITAL INPUT ON/OFF OPERATION\n15\nOUTPUTS WIRING\n16\nDIGITAL OUTPUTS\n16\nANALOG OUTPUTS\n16\nRS485 MODBUS MODULE (OPTIONAL)\n17\nCONNECTORS MIL\n18\nMEANING OF FLAGS\n21\nMEANING OF LED COLORS\n21\nACCESS VIA KEYPAD\n22\nACCESS VIA MCP INTERFACE (VIRTUAL DISPLAY)\n22\nACCESS TO THE CONFIGURATION MENU\n22\nFLOW RATE VISUALIZATION\n23\nFLOW RATE ALERT\n23\nQUICK START MENU\n23\nACCESS CODE SET : MENU 13 SYSTEM\n24\nRESTRICTED ACCESS SET : MENU 13 SYSTEM\n24\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n1 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "MV210",
+            "1"
+          ],
+          [
+            "SAFETY INFORMATION",
+            "3"
+          ],
+          [
+            "INTRODUCTION",
+            "3"
+          ],
+          [
+            "SAFETY CONVENTION",
+            "4"
+          ],
+          [
+            "DATA PLATE",
+            "5"
+          ],
+          [
+            "AMBIENT TEMPERATURE",
+            "5"
+          ],
+          [
+            "TECHNICAL CHARACTERISTICS",
+            "5"
+          ],
+          [
+            "DIMENSIONS",
+            "6"
+          ],
+          [
+            "SEPARATE VERSION",
+            "7"
+          ],
+          [
+            "HORIZONTAL VERSION",
+            "8"
+          ],
+          [
+            "VERTICAL VERSION",
+            "8"
+          ],
+          [
+            "MV210 CONSTRUCTION",
+            "10"
+          ],
+          [
+            "INTERNAL LAYOUT",
+            "11"
+          ],
+          [
+            "ELECTRICAL CONNECTION AND GROUNDING INSTRUCTIONS",
+            "12"
+          ],
+          [
+            "INTERNAL LITHIUM BATTERY",
+            "13"
+          ],
+          [
+            "DIGITAL INPUT ON/OFF OPERATION",
+            "15"
+          ],
+          [
+            "OUTPUTS WIRING",
+            "16"
+          ],
+          [
+            "DIGITAL OUTPUTS",
+            "16"
+          ],
+          [
+            "ANALOG OUTPUTS",
+            "16"
+          ],
+          [
+            "RS485 MODBUS MODULE (OPTIONAL)",
+            "17"
+          ],
+          [
+            "CONNECTORS MIL",
+            "18"
+          ],
+          [
+            "MEANING OF FLAGS",
+            "21"
+          ],
+          [
+            "MEANING OF LED COLORS",
+            "21"
+          ],
+          [
+            "ACCESS VIA KEYPAD",
+            "22"
+          ],
+          [
+            "ACCESS VIA MCP INTERFACE (VIRTUAL DISPLAY)",
+            "22"
+          ],
+          [
+            "ACCESS TO THE CONFIGURATION MENU",
+            "22"
+          ],
+          [
+            "FLOW RATE VISUALIZATION",
+            "23"
+          ],
+          [
+            "FLOW RATE ALERT",
+            "23"
+          ],
+          [
+            "QUICK START MENU",
+            "23"
+          ],
+          [
+            "ACCESS CODE SET : MENU 13 SYSTEM",
+            "24"
+          ],
+          [
+            "RESTRICTED ACCESS SET : MENU 13 SYSTEM",
+            "24"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "ISOMAG\nCONVERTER ACCESS CODE\n24\nFUNCTIONS MENU\n27\nFUNCTIONS DESCRIPTION\n32\nMENU 1 - SENSOR\n33\nMENU 2 - UNITS\n36\nMENU 3 - SCALE\n38\nMENU 4 - MEASURE\n40\nMENU 5 - ALARMS\n42\nMENU 6 - INPUTS\n43\nMENU 7 - OUTPUTS\n44\nBATCHING\n45\nMENU 8 - COMMUNICATION\n50\nMV210 MODBUS PROTOCOL\n50\nMENU 9 - DISPLAY\n53\nMENU 10 - DATA LOGGER\n54\nMENU 11 - FUNCTION\n61\nMENU 12 - DIAGNOSTIC\n62\nMENU 13 - SYSTEM\n65\nMENU 14 - FILE (ONLY MCP)\n71\nMENU 15 - PROCESS DATA (ONLY MCP)\n73\nMETER DATA\n75\nB.I.V. (BUILT-IN VERIFICATOR)\n76\nSOFTWARE ISOBIV\n79\nALARM MESSAGES (CAUSES AND ACTIONS TO BE TAKEN)\n80\nERROR CODE TEST SYSTEM OF SENSOR\n81\nMANUAL REVIEWS\n83\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nISOIL\nINDUSTRIA\n2 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "CONVERTER ACCESS CODE",
+            "24"
+          ],
+          [
+            "FUNCTIONS MENU",
+            "27"
+          ],
+          [
+            "FUNCTIONS DESCRIPTION",
+            "32"
+          ],
+          [
+            "MENU 1 - SENSOR",
+            "33"
+          ],
+          [
+            "MENU 2 - UNITS",
+            "36"
+          ],
+          [
+            "MENU 3 - SCALE",
+            "38"
+          ],
+          [
+            "MENU 4 - MEASURE",
+            "40"
+          ],
+          [
+            "MENU 5 - ALARMS",
+            "42"
+          ],
+          [
+            "MENU 6 - INPUTS",
+            "43"
+          ],
+          [
+            "MENU 7 - OUTPUTS",
+            "44"
+          ],
+          [
+            "BATCHING",
+            "45"
+          ],
+          [
+            "MENU 8 - COMMUNICATION",
+            "50"
+          ],
+          [
+            "MV210 MODBUS PROTOCOL",
+            "50"
+          ],
+          [
+            "MENU 9 - DISPLAY",
+            "53"
+          ],
+          [
+            "MENU 10 - DATA LOGGER",
+            "54"
+          ],
+          [
+            "MENU 11 - FUNCTION",
+            "61"
+          ],
+          [
+            "MENU 12 - DIAGNOSTIC",
+            "62"
+          ],
+          [
+            "MENU 13 - SYSTEM",
+            "65"
+          ],
+          [
+            "MENU 14 - FILE (ONLY MCP)",
+            "71"
+          ],
+          [
+            "MENU 15 - PROCESS DATA (ONLY MCP)",
+            "73"
+          ],
+          [
+            "METER DATA",
+            "75"
+          ],
+          [
+            "B.I.V. (BUILT-IN VERIFICATOR)",
+            "76"
+          ],
+          [
+            "SOFTWARE ISOBIV",
+            "79"
+          ],
+          [
+            "ALARM MESSAGES (CAUSES AND ACTIONS TO BE TAKEN)",
+            "80"
+          ],
+          [
+            "ERROR CODE TEST SYSTEM OF SENSOR",
+            "81"
+          ],
+          [
+            "MANUAL REVIEWS",
+            "83"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "ISOMAG\nINTRODUCTION\n\nThese operating instructions and description of device functions are provided as part of the scope\nof supply.\nThey could be modified without prior notice. The improper use, possible tampering of the instrument\nor parts of it and substitutions of any components not original, renders the warranty automatically void.\n\nThe flow meter realizes a measure with liquids of conductivity greater than 5uS/cm in closed\nconduits, and is composed of a converter (described in this manual) and a sensor (refer to the\nspecific manual).\nThe converter could be coupled directly on the sensor (compact version) or coupled to the sensor\nby cable supplied with it (remote version).\nCONVERTER\nSENSOR\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nC\n0\nC\n0\nC\nSAFETY INFORMATION\nAny use other than described in this manual affects the protection provided by the manufacturer\nand compromises the safety of people and the entire measuring system and is, therefore, not\npermitted. The manufacturer is not liable for damaged caused by improper or non-designated use.\nTransport the measuring device to the measuring point in the original packaging. Do not remove\ncovers or caps until immediately before installation. In case of cartons packaging it is possible to\nplace one above the other but no more than three cartons. In case of wooden packaging do not\nplace one above the other.\nDisposal of this product or parts of it must be carried out according to the local public or private\nwaste collection service regulations.\nThe converter must only be installed, connected and maintained by qualified and authorized\nspecialists (e.g. electrical technicians) in full compliance with the instructions in this Operating\nInstruction, the applicable norms, legal regulations and certificates (depending on the application).\n3 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "ISOMAG\nThe specialists must have read and understood these Operating Instructions and must follow the\ninstructions it contains. The Operating Instructions provide detailed information about the converter. If\nyou are unclear on anything in these Operating Instructions, you must call the ISOIL service department.\nO The converter should only be installed after have verified technical data provided in these operating\ninstructions and on the data plate.\nSpecialists must take care during installation and use personal protective equipment as provided\nby any related security plan or risk assessment.\nNever mount or wire the converter while it is connected to the power supply and avoid any liquid contact\nwith the instrument's internal components. To connect remove the terminals from the terminal block.\nBefore connecting the power supply check the functionality of the safety equipment.\nRepairs may only be performed if a genuine spare parts kit is available and this repair work is\nexpressly permitted.\nFor the cleaning of the device use only a damp cloth, and for the maintenance/repairs contact the\nservice center (for details see the last page).\nBefore starting up the equipment please verify the following:\nPower supply voltage must correspond to that specified on the data plate\nElectric connections must be completed as described\nGround (earth) connections must be completed as specified\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nVerify periodically (every 3-4 months):\nThe power supply cables integrity, wiring and other connected electrical parts\nThe converter housing integrity\nThe suitable tightness of the sealing elements\nThe front panel integrity (display and keyboard)\nThe mechanical fixing of the converter to the pipe or wall stand\nSAFETY CONVENTION\n4\n!\nDANGER ELECTRIC SHOCK\nWARNING\nPRECAUTIONS\nATTENTION\n4 / 85\n210_EN_IT_IS_R1_1.02.0\nISOIL\nINDUSTRIA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "ISOMAG\nTECHNICAL CHARACTERISTICS\nELECTRICAL CHARACTERISTIC\nConverter classification: class I, IP67/68 for aluminum and PA6 housing, installation category\n(overvoltage) II, rated pollution degree 2.\nPower\nsupply\nversions\nPower\nsupply\nvoltage\nPower\nsupply\nfrequency\nMin\nPower\nMax power\nHV\n100-240V~\n45-66HZ\n1,5 W\n(Sensor only)\n5 W\n(all Loads)\nLV\n24-36V ---\n24-36V~\n45-66HZ\nLLV\n12-48V ---\n=\nVoltage variations must not exceed #10% of the nominal one.\nInput/output insulated up to 500V.\nThe output 4-20mA (optional) is electrically connected to the ON/OFF outputs and the output\npower supply (24V --= ).\nVersion LV/LLV : inrush current < 20A\nVersion HV : inrush current < 25A\nENVIRONMENTAL USE CONDITIONS\nThe converter can be installed internally or externally\nAltitude: from -200m to 4000m (from -656 to 6560 feet)\nHumidity range: 0-100%\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nAMBIENT TEMPERATURE\nAluminium\nReinf. Nylon\nMin*\nMax\nMin*\nMax\n-20\n+ 60\n-10\n+ 50\nOF\n-4\n+140\n+14\n+122\nATTENTION\nThe battery will not be charged outside the\nbelow limits :\nT board MV210 < 0 ℃\nT board MV210 > 50 ℃\nIf the converter is supplied in compact version (converter over the sensor), consider the ambient\ntemperatures more restrictive, otherwise refer to the relevant manuals.\n* For discontinuous use, a thermostat heat source installation may be necessary.\nDATA PLATE\nThe instrument label contain the following information:\nMODEL: Convert Model\nS/N: Serial Number of the converter\nSUPPLY: Main power supply\nHz: Supply frequency (AC)\nPOWER: Maximum power consumption\nIP: Protection grade\nT: Operation temperature\nCOUPLING: Serial number of sensor coupled\nITEM: Free for user\n5 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Power supply versions",
+            "Power supply voltage",
+            "Power supply frequency",
+            "Min Power",
+            "Max power"
+          ],
+          [
+            "HV",
+            "100-240V~",
+            "45-66HZ",
+            "1,5 W (Sensor only)",
+            "5 W (all Loads)"
+          ],
+          [
+            "LV",
+            "24-36V ---",
+            ""
+          ],
+          [
+            "24-36V~",
+            "45-66HZ"
+          ],
+          [
+            "LLV",
+            "12-48V ---",
+            "="
+          ]
+        ],
+        [
+          [
+            "AMBIENT TEMPERATURE"
+          ],
+          [
+            "",
+            "Aluminium",
+            "Reinf. Nylon"
+          ],
+          [
+            "",
+            "Min*",
+            "Max",
+            "Min*",
+            "Max"
+          ],
+          [
+            "",
+            "-20",
+            "+ 60",
+            "-10",
+            "+ 50"
+          ],
+          [
+            "OF",
+            "-4",
+            "+140",
+            "+14",
+            "+122"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "DIMENSIONS\nISOMAG\n167\n200\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n180\n114\n164\nO\n114\n195\n290\n0\nISOIL\n6 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "ISOMAG\nSEPARATE VERSION\n142\n28\n295\nØ7\n120\n30\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n7 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "ISOMAG\nHORIZONTAL VERSION\n144\n56\n0\n200\nJUCTION BOX\nJUCTION BOX\nVERTICAL VERSION\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n87\n270\nJUCTION BOX\n75\nJUCTION BOX\n8 / 85\nISOIL\nINDUSTRIA\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "ISOMAG\nTORQUES\nTo guarantee the housing's IP degree the following torques are required:\nHOUSING\nMATERIAL\nHousing\nscrews\n(1)\nScrews\nTerminal block\ncover (2)\nFixing\nDisplay\nFrame\nPCB\nScrews\nVersion\nCap (3)\nCable\nGlands (4)\nCap\nUSB-B (5)\nALUMINIUM\nHOUSING\n6 Nm\n5.5 Nm\n3 Nm\n0.8 Nm\n8 Nm\n4 Nm\n4 Nm\nPLASTIC\nHOUSING\n2 Nm\n2 Nm\n2.5 Nm\n0.8 Nm\n7 Nm\n4 Nm\n4 Nm\n1\n1\n0\n3\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n3\n2\n2\n6\n2\n1\n5\n2\n4\n9 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "HOUSING MATERIAL",
+            "Housing screws (1)",
+            "Screws Terminal block cover (2)",
+            "Fixing Display Frame",
+            "PCB Screws",
+            "Version Cap (3)",
+            "Cable Glands (4)",
+            "Cap USB-B (5)"
+          ],
+          [
+            "ALUMINIUM HOUSING",
+            "6 Nm",
+            "5.5 Nm",
+            "3 Nm",
+            "0.8 Nm",
+            "8 Nm",
+            "4 Nm",
+            "4 Nm"
+          ],
+          [
+            "PLASTIC HOUSING",
+            "2 Nm",
+            "2 Nm",
+            "2.5 Nm",
+            "0.8 Nm",
+            "7 Nm",
+            "4 Nm",
+            "4 Nm"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "ISOMAG\nMV210 CONSTRUCTION\nTERMINAL BLOCK COVER\n1\n0\n2\n3\n4\nMAIN HOUSING COVER\n5\n6\n7\n8\n9\n26\n10\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n11\n1\n1\n1\nPCB MV210\n12\n-i\n13\n-\n1\nMAIN HOUSING\n14\n15\n16\n17\n0\n18\n19\n@\n20\n21\n22\n23\n25\n24\nPOS.\nDESCRIPTION\nPA6 VERSION\nALUMINIUM VERSION\n1\nSCREW M4x12\nSCREW M5x12\n2\nGROWER Ø4\nGROWER Ø5\n3\nTERMINAL BLOCK COVER\nTERMINAL BLOCK COVER\n4\nO-RING-4400\n5\nPROTECTION COVER\n6\nHOUSING COVER\nHOUSING COVER\n7\nORING-4700\n8\nORING-117x3\n9\nDISPLAY\n10\nFIXING DISPLAY FRAME (MATERIAL PA06)\n11\nSELF-TAPPING SCREW 4x10\nTRILOBO SCREW 4x10\n12\nSELF-TAPPING SCREW 4x10\nTRILOBO SCREW 4x10\n13\nPCB MV210\n14\nPG9 CAP\n15\nLITHIUM BATTERY\n16\nANTICONDESE CAP\n17\nPA6 MAIN HOUSING\nALUMINIUM MAIN HOUSING\n18\nGROWER Ø4\nGROWER Ø5\n19\nSCREW M4x12\nSCREW M5x12\n20\nO-RING-155\n21\nVERSION CAP (MATERIAL PA06)\n22\nSCREW M6x16\n23\nGROWER Ø6\n24\nPG11 CABLE GLAND\nCABLE DIAMETER: Ø5-Ø10mm\n25\nTERMINAL BLOCK\nSOLID WIRE: 26-16 AWG / 0.129-1.31 mm2\nSTRANDED WIRE: 26-16 AWG / 0.129-1.31 mm2\nTORQUE: 3.0 Lb.In / 0.34 Nm\n26\nFLAT CABLE\nISOIL\nINDUSTRIA\n10 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "POS.",
+            "DESCRIPTION"
+          ],
+          [
+            "PA6 VERSION",
+            "ALUMINIUM VERSION"
+          ],
+          [
+            "1",
+            "SCREW M4x12",
+            "SCREW M5x12"
+          ],
+          [
+            "2",
+            "GROWER Ø4",
+            "GROWER Ø5"
+          ],
+          [
+            "3",
+            "TERMINAL BLOCK COVER",
+            "TERMINAL BLOCK COVER"
+          ],
+          [
+            "4",
+            "O-RING-4400"
+          ],
+          [
+            "5",
+            "PROTECTION COVER"
+          ],
+          [
+            "6",
+            "HOUSING COVER",
+            "HOUSING COVER"
+          ],
+          [
+            "7",
+            "ORING-4700"
+          ],
+          [
+            "8",
+            "ORING-117x3"
+          ],
+          [
+            "9",
+            "DISPLAY"
+          ],
+          [
+            "10",
+            "FIXING DISPLAY FRAME (MATERIAL PA06)"
+          ],
+          [
+            "11",
+            "SELF-TAPPING SCREW 4x10",
+            "TRILOBO SCREW 4x10"
+          ],
+          [
+            "12",
+            "SELF-TAPPING SCREW 4x10",
+            "TRILOBO SCREW 4x10"
+          ],
+          [
+            "13",
+            "PCB MV210"
+          ],
+          [
+            "14",
+            "PG9 CAP"
+          ],
+          [
+            "15",
+            "LITHIUM BATTERY"
+          ],
+          [
+            "16",
+            "ANTICONDESE CAP"
+          ],
+          [
+            "17",
+            "PA6 MAIN HOUSING",
+            "ALUMINIUM MAIN HOUSING"
+          ],
+          [
+            "18",
+            "GROWER Ø4",
+            "GROWER Ø5"
+          ],
+          [
+            "19",
+            "SCREW M4x12",
+            "SCREW M5x12"
+          ],
+          [
+            "20",
+            "O-RING-155"
+          ],
+          [
+            "21",
+            "VERSION CAP (MATERIAL PA06)"
+          ],
+          [
+            "22",
+            "SCREW M6x16"
+          ],
+          [
+            "23",
+            "GROWER Ø6"
+          ],
+          [
+            "24",
+            "PG11 CABLE GLAND CABLE DIAMETER: Ø5-Ø10mm"
+          ],
+          [
+            "25",
+            "TERMINAL BLOCK SOLID WIRE: 26-16 AWG / 0.129-1.31 mm2 STRANDED WIRE: 26-16 AWG / 0.129-1.31 mm2 TORQUE: 3.0 Lb.In / 0.34 Nm"
+          ],
+          [
+            "26",
+            "FLAT CABLE"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "INTERNAL LAYOUT\nINTERNAL CONVERTER VIEWS\nISOMAG\nRemove the main housing cover by removing the 4 screws as shown here below.\n0\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nPOWER SUPPLY CABLE\n11 / 85\nQ\nPOWER SUPPLY BOARD\nMINI USB-B\nTERMINAL BLOCKS\nMAIN POWER\nSUPPLY\n4\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "ISOMAG\nELECTRICAL CONNECTION AND GROUNDING INSTRUCTIONS\n!\nAlways ensure that the converter and the sensor are grounded (earthed) correctly. The grounding\nof the sensor and converter must ensure that the instrument and liquid are equipotential.\nORING 4700\nL(+)\nN(-)\nT\n4\n0\nCOVER\nGROWER\nSCREW\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nBefore connecting the power supply, verify that the mains voltage is within the limits indicated on\ndata plate.\nFor the connections use only approved conductors, with fire-proof properties, whose section varies\nfrom 0.25mm2 to 1.50mm2, based on distance/power; additionally fix the power supply wires with\na additional fastening system located close to the terminal.\nThe power supply line must be equipped with an external protection for overload current (fuse or\nautomatic line breaker).\nProvide in close proximity the converter a circuit breaker easily accessible for the operator and clearly\nidentified; whose symbols must conform to the electrical safety and local electrical requirements.\nEnsure that the component complies with the requirements of the standard for electrical safety\ndistance.\n0\n0\nCheck chemical compatibility of materials used in the connection security systems in order to\nminimize electrochemical corrosion. In the aluminum housing it should avoid direct contact between\nthe ground connection cable and the aluminum housing. It is therefore recommended to connect\nthe safety ground cable, by placing it between the washer and the metal bracket on the related\nterminal or use an eyelet terminal crimped on the ground protection cable.\nThe sensor, hardwired inputs and outputs are connected to the converter through terminal blocks\nlocated inside the converter.\nTo locate the terminal block loosen the 4 screws on the terminal block cover. When the front cover\nis lifted, the terminal block is visible. The terminal block is the hardwire connection of the converter\nto external equipment, including the sensor.\nThe following pages give informations on the terminal block numbering, and the respective connecting\nof the sensor cables, and inputs/outputs.\nISOIL\n12 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "ISOMAG\nINTERNAL LITHIUM BATTERY\n00\n0\n....\nINTERNAL LITHIUM BATTERY\nThe internal lithium battery is rechargeable and should never be disconnected from the converter\ncard when it is powered by the mains voltage. If this operation should be carried out it could\nirreparably damage the converter board.\nThe internal lithium battery is recharged only when the converter is connected to the mains supply\n(LV, LLV, HV), battery charging condition, and not with the USB connection.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nDuring charging, the battery symbol appears on the MCP display and flashes blue; see \"MEANING\nOF FLAGS\" page 21 (the colors of the symbols can only be viewed in the virtual display of the MCP\ninterface)\nWhen the battery charge falls below the minimum potential, battery low, the fixed red battery\nsymbol appears; see \"MEANING OF FLAGS\" page 21 (the symbol colors can only be displayed in\nthe virtual display of the MCP interface). Furthermore, in this charging condition below the minimum\npotential, the measurement does not start when the USB cable is connected.\nThe thresholds that identify the condition of Battery low and battery charging are established by the\nsystem according to the use and settings assigned and therefore there is no fixed value ..\n0\nThe two Battery low and battery charging icons can both be present as each one indicates a\ndifferent condition.\nGENERAL OPERATING NOTES\nO If the mains voltage is disconnected from the converter with HV power supply, the flashing blue\nicon indicating the charging status can remain active for tens of seconds. This is due to the energy\nstored in the HV power supply and in the capacities of the circuit that discharge slowly.\nThe battery voltage during charging does not rise immediately but gradually. This is related to the\nparameters set in the converter and detected by the controller chip.\n0\nWhen the battery is physically disconnected the potential measured by the system is not true because\nthe charging circuit checks the battery status by emitting impulses. These load the capacities in the\ncircuit and the average value detected is not to be considered a reliable real value.\nThe MCP command [SBCHS] indicates the percentage of charge and is not linear with respect\nto the battery voltage, however approximately it reads 0% with a voltage equal to about 3.2 V,\nwhile 100% occurs with about 4.1 V. These values are influenced by the temperature and the total\noperating time that worked the battery.\n13 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "ELECTRICAL CONNECTION CONVERTER- SENSOR\n!\nSudden movements of the electrodes cable could introduce noise.\nSH = SHIELD OF CABLE internally connected to ground.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n12 3 4\nELECTRODES\nE1\nE2\nC\nSH\n29 28 27 26\nRS485\nB\nA\n0V\nSH\n25 24 23 22 21 20\n4-20 OUTPUTS\nISOMAG\nSH\nOUT2 (+) 4-20\nOUT1 (+) 4-20*\n+24V\nOUT1-2 (-) 4-20\n0V\n* If the option HART is enable\nHART\nREGISTERED\n19 18 17 16 15 14\nDIGITAL OUTPUTS\nOUT2 C\nOUT1 C\nOUT 1-2 E\nSH\n13 12 11\nCOILS\nC1\nC2\nSH\nPOWER SUPPLY\nL (+)\nN(-)\nDIGITAL\nINPUTS\nIN1 +\nIN1 -\nISOIL\nINDUSTRIA\n14 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "ISOMAG\nDIGITAL INPUT ON/OFF OPERATION\nEXTERNAL POWER SUPPLY\nRESET TOTALIZERS\n0-1.5V\nBlock\n3-40V\nT\n10ΚΩ\n15(+)\n3-40Vdc (ON)\n0/1.5Vdc (OFF)\nINTERNAL POWER SUPPLY\n21\n+24\nC\n-C\n15\n10ΚΩ\n16(+)\n16\n-0\n22\nReset\nNecessary conditions for enabling the function\nPOS. 6.1 see page 28 (T+; total direct positive set on)\n\nPOS. 6.2 see page 28 (P+; partial direct positive set on)\n\nPOS. 6.3 see page 28 (T -; total direct negative set on)\n\nPOS. 6.4 see page 28 (P -; total direct negative set on)\nTmin=100ms\nBLOCK TOTALIZERS\nBlock Totalizers\n0-1.5V\n3-40V\nTotalizers Active\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nRANGE CHANGE\n0-1.5V\nScale 2\n3-40V\nScale 1\nMEASURE LOCK\nNecessary conditions for enabling the function\n\nPOS. 6.5 see page 28 (Totalizer counting lock command set on)\nNecessary conditions for enabling the function\n\nPOS. 6.8 see page 28 (Range change set on)\nMeasure blocked\nY\n<18v\nBATCHING\n18-30V\n1\nMeasure\n3-40V\nStart/Stop\n0-1.5V\nNecessary conditions for enabling the function\n\nPOS. 6.6 see page 28 (Totalizer counting lock command set on)\nNecessary conditions for enabling the function\n\n7.1 Output 1 functions, Set to BATCHING\nT\nT > Measure min. time\n15 / 85\nMUST BE\nT > Tmin\n?\nMEASURE FREQ.\nT MIN\n50HZ\n20ms\n10HZ\n100ms\n5HZ\n200ms\n2HZ\n500ms\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "MEASURE FREQ.",
+            "T MIN"
+          ],
+          [
+            "50HZ",
+            "20ms"
+          ],
+          [
+            "10HZ",
+            "100ms"
+          ],
+          [
+            "5HZ",
+            "200ms"
+          ],
+          [
+            "2HZ",
+            "500ms"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "ISOMAG\nOUTPUTS WIRING\nDIGITAL OUTPUTS\n18 OUT 1(+)\n19 OUT 2(+)\nT\n17 (COM. OUT 1-2)\n\nOpto-insulated output with floating collector and emitter\nterminals freely connectable\n\nMaximum switching voltage: 40V -- -\n\nMaximum switching current: 150mA\n\nMaximum saturation voltage between collector and emitter\n@150mA: 1.2V\n\nMaximum switching frequency (load on the collector or emitter,\nRL=470, VOUT=24V =-= ): 1250Hz\n\nMaximum reverse current bearable on the input during and\naccidental polarity reversion (VEC): 100mA\n\nInsulation from other secondary circuits: 500V - --\nANALOG OUTPUTS\nmA\n24 OUT 1(+)\n25 OUT 2(+)\n23 (COM. 4-20 OUT 1-2)\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n\nOpto-insulated output\n\nMaximum load: 100052\n\nMaximum voltage without load: 27V\n\nRefresh frequency is the same of the sample frequency of the\nconnected sensor\n\nProtected against persistent over voltages to maximum 30V\nISOIL\nINDUSTRIA\n16 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "ISOMAG\nRS485 MODBUS MODULE (OPTIONAL)\nPositioning to 'ON' the termination switches 1 and 2, a 12002 résistance is activated in the RS458 circuit (see\nterminal block).\n1 2\nON\nTERMINATION\nSWITCH\nO\n29 28 27 26\nTERMINAL BLOCK\nSH\n0V\nA\nRS485\nB\nPC\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n17 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "CONNECTORS MIL\nTHE following are the links of the MIL connectors IP68\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nB\nC\nD\nSENSOR SIGNALS\nF\nA\nA contact from terminal 1 of the converter (electrode 1)\nContact F from terminal 2 of the converter (electrode 2)\nContact And from terminal 3 of the converter (COM. Elec.)\nContact B from terminal 13 of the converter (COIL 1)\nContact C from terminal 12 of the converter (COIL 2)\nContact D from terminal 4 and 11 of converter\n(SHIELD electrodes - COILS)\nE\nINPUT/OUTPUT\n1. Contact B from terminal 24 of the converter (Out1 4-20 +)\n2. Contact A from terminal 25 of the converter (Out2 4-20 +)\n3. Contact H from terminal 23 of the converter (Out1-2 4-20 -)\n4. Contact C from terminal 21 of the converter (+ 24V)\n5. Contact J from terminal 22 of the converter (0V)\n6. Contact K from terminal 15 of the inverter (IN1 +)\n7. Contact G from terminal 16 of the converter (IN1-)\nB\nA\nH\nC\nJ\nK\nG\nD\nE\nF\n8. Contact D from terminal 19 of the converter (C Out2)\n9. Contact E from terminal 18 of the converter (Out1 C)\n10. Contact F from terminal 17 of the converter (Out1-2 E)\n11. Contact C from terminal 28 of the converter (RS485 A)\n12. Contact J from terminal 29 of the converter (RS485 B)\nNB: the connections 4 and 5 exclude the use\nconnections 11 and 12.\nA\nD\nB\nC\nISOMAG\nConnector\n6 poles\nConnector\n10 poles\nC\nPOWER SUPPLY\nConnector\n4 poles\nC from terminal L power converter (+ dc)\nA from terminal N power converter (-dc)\n0\nB from terminal GROUND Power Converter\nNOTE: Military Connector 6 poles for sensor converter only provided in the separate version of the converter.\nISOIL\nINDUSTRIA\n18 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "connections\nand 12.\nPOWER SUPPLY",
+            "Connector 4 poles"
+          ],
+          [
+            "C from terminal L power converter (+ dc)",
+            ""
+          ],
+          [
+            "A from terminal N power converter (-dc)",
+            "0"
+          ],
+          [
+            "B from terminal GROUND Power Converter"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "ISOMAG\nSTART VISUALIZATION PAGES\nThe direct exposure of the converter to the solar rays, could damage the liquid crystal display.\nThe visualization pages can be change according to instrument's setup.\nPush to change visualization\n10.000\n100.\n75\n+\n25.\nM/S\n+1.273+\n0.0000\ndMB /s\n5 ALARM(S)\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n!\ntam3\nP+\ndm3\nL\n5 ALARM(S)\nT- am3\nP-am3\n5 ALARM(S)\nFlow rate direction +/-\nUnit of measure\nFlag\nFlow rate value\nFlow rate trend\nFlow Speed\nFlow rate value\n% Full Scale\nnº ALARM\nFlow rate value\nDirect Total Totalizer\nDirect Partial Totalizer\nFlow rate value\nReverse Total Totalizer\nReverse Partial Totalizer\nL\nFlow rate value\nTham=\n+0,000\nPNAME\n+0.000\n5 ALARM(S)\nT+dm3\nP+dm3\nMMMM\nT-dm3\nP-dm3\n4 ALARM(S)\nFTF\n19 / 85\nTotalizer Total Net\nTotalizer Partial Net\nFlow rate value\nDirect Total Totalizer\nDirect Partial Totalizer\nInverse Total Totalizer\nInverse Partial Totalizer\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "ISOMAG\nPush to change visualization\n+dm3\nTotalizer Total +\nF\nTotalizer Partial +\nT-dm3\nF\nP\n4 ALARM (S)\nTotalizer Total -\nE1\n!\nE2 0\nEIR Kt\nE2R kf\n1 ALARM(S)\n4 ALARM(S)\nCLOCK NOT SET\nEXCITATION ERROR\nSIGNAL ERROR\nFL. SENSOR ERROR\n2000/01/01-01:14\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nT+ am3\n233627.258\nPtam3\n233633.381\nT-\naM3\n14617.888\nP-\n'am3\n14617.888\nTotalizer Partial -\nElectrodes Voltage\nElectrodes Resistance\nnºAlarm\nDate and Time\nAlarm List\nDirect Total Totalizer\nDirect Partial Totalizer\nReverse Total Totalizer\nReverse Partial Totalizer\nThe visualitation page about batching is described in the dedicated section \"BATCHING\" pag45\n20 / 85\n210_EN_IT_IS_R1_1.02.0\nISOIL\nINDUSTRIA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "ISOMAG\nMEANING OF FLAGS\nFLAG\nDESCRIPTION\nFLAG\nDESCRIPTION\nEMPTY PIPE\nMIN FLOW ALARM\nL\nFILE UPLOAD\nMAX FLOW ALARM\nFILE DOWNLOAD\nVIDEO TERMINAL CONNECTED\nBATTERY RECHARGE (FLASHING)\nLOW BATTERY (FIXED)\n2!\nFLOW RATE OVERFLOW\nFLOW RATE SIMULATION (FLASHING)\n1\nPULSE 1 OVERFLOW\nCALIBRATION (FLASHING)\n2\nPULSE 2 OVERFLOW\nGENERIC ALARM (FLASHING)\nPOWERED DEVICE WITH ONE\nCHARGERS BATTERY (MID-DIRECTIVE)\n!\nGENERAL ALARM ONLY ON PHYSICAL\nDISPLAY (FLASHING)\nSIGNAL ERROR\noppure\nBATCHING IN PROGRESS\nEXCITATION ERROR\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nMEANING OF LED COLORS\nLED\nLED Red: Alarm signal\nLED Blue: Usb communication enable\nLED Green: Functioning system correctly\n21 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "FLAG",
+            "DESCRIPTION",
+            "FLAG",
+            "DESCRIPTION"
+          ],
+          [
+            ":selected:",
+            "EMPTY PIPE",
+            "",
+            "MIN FLOW ALARM"
+          ],
+          [
+            "L",
+            "FILE UPLOAD",
+            "",
+            "MAX FLOW ALARM"
+          ],
+          [
+            "",
+            "FILE DOWNLOAD",
+            "",
+            "VIDEO TERMINAL CONNECTED"
+          ],
+          [
+            ":unselected:",
+            "BATTERY RECHARGE (FLASHING) LOW BATTERY (FIXED)",
+            "2!",
+            "FLOW RATE OVERFLOW"
+          ],
+          [
+            "",
+            "FLOW RATE SIMULATION (FLASHING)",
+            "1",
+            "PULSE 1 OVERFLOW"
+          ],
+          [
+            "",
+            "CALIBRATION (FLASHING)",
+            "2",
+            "PULSE 2 OVERFLOW"
+          ],
+          [
+            "",
+            "GENERIC ALARM (FLASHING)",
+            "",
+            "POWERED DEVICE WITH ONE CHARGERS BATTERY (MID-DIRECTIVE)"
+          ],
+          [
+            "!",
+            "GENERAL ALARM ONLY ON PHYSICAL DISPLAY (FLASHING)",
+            ":selected:"
+          ],
+          [
+            "",
+            "SIGNAL ERROR",
+            "",
+            "oppure BATCHING IN PROGRESS"
+          ],
+          [
+            "",
+            "EXCITATION ERROR",
+            ":selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "ISOMAG\nACCESS TO THE CONFIGURATION MENU\nThe configuration can be done in two different ways:\nBy keypad of converter\nBy MCP interface (Virtual display of instrument)\nACCESS VIA KEYPAD\nSHORT PRESSING (< 1 SECOND):\nIncreases the numeric figure or the\nparameter selected by the cursor\nReturns to the previous subject on the\nmenu.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nLONG PRESSING (> 1 SECOND):\nDecreases the numeric figure or the\nparameter selected by the cursor.\nProceeds to the next subject on the menu.\nSHORT PRESSING (< 1 SECOND):\nMoves/positions the cursor rightward\non the input field. Proceeds to the\nfollowing subject of the menu. Change\nthe display of the process data\nLONG PRESSING (> 1 SECOND):\nMoves/positions the cursor leftward\non the input field. Returns to the\nprevious subject on the menu\nENTER\nESC\nSHORT PRESSING (< 1 SECOND):\nEnter /leave the selected function\nEnables the main menu for the\ninstrument configuration Cancels the\nselected function under progress\nLONG PRESSING (> 1 SECOND):\nLeaves the current menu\nEnables the totalizer reset request\n(when enabled) Confirms the selected\nfunction.\nACCESS VIA MCP INTERFACE (VIRTUAL DISPLAY)\nMCP is a Windows® software that allows to set all the converter functions and personalize the menu.\nThe MCP program is required for the blind version of the converter. To use MCP interface consult the\nrelevant user manual.\nPG9 CAP\nUSB CABLE\nType-A\n54321\nMini-B\n210_EN_IT_IS_R1_1.02.0\nMCP INTERFACE\nISOIL\n22 / 85\nINDUSTRIA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "ISOMAG\nFLOW RATE VISUALIZATION\nV:2.5000\n+\nThis symbol appears (red color on the\nvirtual display) only when the overall\nnoise is over 2.5% of flow rate.\nM/S\n+5.093+\nThe MV 210 can show a 5 digits display for flow rate units; this mean the maximum flow rate value\nthat can be represented on the display is 99999 (no matter the positioning of the decimal point). The\nminimum is 0.0025. The representable measure unit depends on sensor flow rate and diameter; the\npermitted units are those, that permits the instrument full scale value not exceeding 99999.\nExample for DN 300, Full scale value: 3m/s:\nPERMITTED measure unit (example): l/s (216.00); m3/h (777.60); m3/s (0.2160)\nNOT PERMITTED measure unit (example): l/h (777600)\nFLOW RATE ALERT\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n0.0000\ndm3 /5\n+0.001\n5 ALARM(S)\nThis FLAG becomes active when there is a flow variation (flow rate not stable).\nQUICK START MENU\nThe QUICK START MENU allows to user immediate access to some of the most commonly used functions;\nthrough MCP software it possible customize this menu to make it suitable for the specific application.\nQUICK START\nMain Menu\nAccess to all functions\nSee programming\nfunctions section\nThe user has immediate access to the Quick Start menu when the converter is powered up by pressing\nthe Enter key. If access to the quick start menu does not occur, then it could be disabled using the\nfunction \"9.11\" page 29 .\n23 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "ISOMAG\nCONVERTER ACCESS CODE\nThe access for programming the instrument is regulated by six access levels logically grouped.\nEvery level is protected by a different code.\nAccess Level 1-2-3-4 Freely programmable by user\nACCESS CODE SET : MENU 13 SYSTEM\nSYSTEM\nDayl . saving=\nON\nTime zone=h+ 01.00\n2016/04/04-16:07\nL1 code =********\nL2 code=\nL3 code =*****:\nL4 code =****:\nL5 code =****\nL6 code=#\nRestr. access= ON\n010. 011 . 012 . 013\n010. 011. 012. 014\n255 . 255 . 255. 000\nM\nKT=\nKS=\n1. 00000\n0.96469\nKR=\n1. 00000\nDAC1 4MA= 02460\nDAC1 20MA= 11050\nDAC2 4MA= 02460\nDAC2 20MA=\n11050\n1 Stand-by\nFW update\n13-System\nSYSTEM\nL1 code:\nL2 code =**\nL3 code =***\ncode =*****\nL4 C\nL5 code =**\nE3E3E3 E3 E\nL6 code=\n0-+99999999\nThe CODE is Settable by keyboard or MCP interface.\nDepending on the level of access different display functions will be\nvisible. (See section \"FUNCTIONS DESCRIPTION\" page 32)\nThese access levels interact with the \"Restricted access\"\nRESTRICTED ACCESS SET : MENU 13 SYSTEM\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nSYSTEM\nL1 code\nL2 code =*\nL3 code =*\nL4 code:\nL5 code\nL6 code =*\nRestr . access =OFF\nSettable Values\nON\nOFF\nRestrict = ON: Access permitted only to functions provided for a specific level;\nExample: If the operator has a code of access level 3, after having set it, he can change only the\nfunctions with level 3 access.\nRestict = OFF: It enables to change functions for the selected level and ALL the functions with lower\naccess level.\nExample: If the operator has the code of level 3, after having set it, he can change all the functions at\nlevel 3 and those at lower levels.\n* WARNING: take careful note of the customized code, since there is no way for the user to retrieve\nor reset it if lost.\nFactory preset access codes:\nL1: 10000000\nL2: 20000000\nL3: 30000000\nL4: 40000000\n210_EN_IT_IS_R1_1.02.0\nISOIL\nINDUSTRIA\n24 / 85",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "ISOMAG\nThe following example shows how to change the Full scale by Quick Start menu; the second illustrates\nhow to change the function by the Main menu.\nEXAMPLE: modifying the full scale value from 4dm3/s to 5dm3/s,\nfrom the \"Quick start menu\"\n1+\n2.200\n1\n100\n+0.280+\nENTER\nESC\nPress the ENTER button to access the\nQuick Start menu\nQUICK START\n$ . model=\nFS1=aM /s 04. 000\nFSZEdM /s 04. 000\nMain Menu\n3\nENTER\nESC\nPress the ENTER button to select the function.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nQUICK START\nS. Model=\nC\nFS1=am3 /s 04.000\nFS2=dMB /s 04. 000\nMain Menu\n5\nChange the value\nQUICK START\nS . model=\n7\nFSZEaM /s 05. 000\nMain Menu\nLong Push\n25 / 85\nENTER\nESC\nENTER\nESC\nQUICK START\n. Model=\nFS1=ar3 /s 04. 000\nFS2=am3 /s 04. 000\nMain Menu\n2\nENTER\nESC\nSelect this function in the list to be edited\nQUICK START\n$ . Model=\nFS1=UMI'S 04. 000\nFS2=aM /s 04. 000\nMain Menu\n4\nENTER\nESC\nSelect the value to be changed\nQUICK START\nS . Model=\n'$1=dMB /s 05.000\nFS2=dMB /s 04. 000\nMain Menu\n6\nENTER\nESC\nConfirm the new value\n2.000\n1+\n7\nt\nENTER\nESC\n+2.280+\nMain Page\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "ISOMAG\nEXAMPLE: modifying the full scale value from 4dm3/s to\n5dm3/s, from the \"Main Menu\" (quick start menu enabled)\ndm3 /5\n1+\n2.200\n1\n100\n+\nACCESS CODE\nCode :\n`E ** * * * * *\n2\nM/S\n+0.280+\nENTER\nESC\nENTER\nESC\nPress the ENTER button to access the\nQuick Start menu\nPress arrow keys to select the cell in which\nto insert the number of the access code.\nACCESS CODE\nCode :\n******* |\n3\nQUICK START\nS . Model=\nMain Menu\n4\nENTER\nESC\nENTER\nESC\nPress ENTER button to confirm value.\nSelect \"Main Menu\"\nQUICK START\nS . Model=\nMain Menu\n5\nENTER\nESC\nMAIN MENU\n1-Sensor\n2-Units\n3-Scales\n4-Measure\n5-Alarms\n6-Inputs\n6\nENTER\nESC\nPress the ENTER button to access the Main Menu\nSelect function\nMAIN MENU\n1-Sensor\n2-Units\n#-Scales\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n1\n4-Measure\n5-Alarms\n6-Inputs\nENTER\nESC\nSCALES\nFS1EM /$ 04. 000\nFSZEaM /s 04. 000\n1\nENTER\nESC\nPress the ENTER button to access the\"Scale Menu\"\nPress the ENTER button to access the \"Fs1\"\nSCALES\nFS1=4M /S 94.000\nFS2=aMB /3 64.666\n1\nSCALES\nFS1=dM3 /\nFSEEAPS = 44.000\n= 04.000\n10\nENTER\nESC\nENTER\nESC\nSelect the value to be changed\nChange the value\nSCALES\nFS1=dr3 /5\nFS2=AM3 /3\n11\nSCALES\nFS2=am >> >2.000\n.\n05. 000\n12\nENTER\nESC\nENTER\nESC\nPress the ENTER button Confirm the new value\nPress Esc\nMAIN MENU\n1-Sensor\n2-Units\n13\n4-Measure\n5-Alarms\n6-Inputs\n3-Scales\n14\n1001\n25\nENTER\nESC\n2.000\n+\n+2.280+\nENTER\nESC\n26 / 85\nMain page\nISOIL\nINDUSTRIA\nPress Esc\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "ISOMAG\nFUNCTIONS MENU\nThe main menu is selected from the Quick start menu by pressing the\nESC\nkey and entering the access\ncode; enter the access code if required. Note: Some functions are displayed only with other functions\nactive, or with optional modules.\n/ENTER\nSENSOR\nMAIN MENU\n1-Sensor\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n5\n6\n8\n9\n10\n12\n13\nSENSOR\nS. model =\n0\nLining =\nUNSPEC.\nS. type =\nFULL BORE\nu type =\nMETRIC\nDiam\nmm\n00025.0\nHA =\n+00.9637\nHA- =\n-04.4904\nHZ =\n+0000000\nHD=\n+ 0000000\nIns. position=\n0\nKP DinaWmic=\nOFF\nKi=\n01.8727\nKp=\n01.0000\nKC=\n1.00000\nC.curr =\n025.0\nC.Reg.PB=\n004\nC.Reg.DK=\n008\nS. Freq .= Hz\n50\nPreamplif.\nOFF\nE.P Detect=\nON\nR max= kohm\n0500\nEl. Cleaning=\nOFF\ns. cable=\nm\n000\nS. err. delay=\n010\nSens. verify=\nOFF\nZero point cal.\nKL\n00.00000000\n1.1\nSensors model: Enter the first two characters of the serial number of the sensor\n1.2\nFlow sensor lining material type\n1.3\nType of sensor: fullbore or insertion\n1.4\nType of measure units for sensor parameter: metric or imperial\n1.5\nInsert ND of sensor (0-2500)\n1.6\nCalibration data of sensor visualized on sensor's label\n1.7\nCalibration data of sensor for negative flow\n1.8\nSensor coefficient KZ (zero point)\n1.9\nSensor coefficient KD\n1.10\nInsertion position\n1.11\nKP dynamic, coefficient for insertion\n1.12\nSensor coefficient Ki\n1.13\nSensor coefficient Kp\n1.14\nSensor coefficient KC\n1.15\nCW volume total. decimal point position\n1.16\nCurrent regulator proportional band\n1.17\nCurrent regulator derivation constant\n1.18\nMeasure sampling frequency\n1.19\nEnables the preamplifier\n1.20\nEnables the empty pipe detection feature\n1.21 Empty pipe detection threshold\n1.22 Electrode cleaning\n1.23\nSensor connecting cable length\n1.24\nSignal error delay (n. sample)\n1.25\nAutomatic sensor verify enable\n1.26\nPipe hydraulic zero calibration\n1.27\nLinearization coefficient\nUNITS\n27 / 85\nMAIN MENU\n1-Sensor\n2-Units\n3-Scales\nUNITS\n5-\n6-\nDiam.\nS.cable\nFR.unit\nMETRIC\n10-\nPl1 unit\nMETRIC\nPl2 unit\nMETRIC\nT+ unit\nMETRIC\nT+ unit\ng\nii-\n2-\n13-\nT + D.P\nP+ unit\nMETRIC\nP+ unit\ng\n2.10\nP+ D.P\n3\n2.11\nT- unit\nMETRIC\nT- unit\ng\n2.13\nT - D.P\n3\nP- unit\nMETRIC\nP- unit\ng\nP- D.P\n3\n2.17\nPartial reverse totalizer decimal point position\nTemp.unit\nºC\nMass units\nON\nSg=kg/dm3\n1.0000\nmm\nm\n3\n2.1\nNominal diameter measure unit\n2.2\nCable length on separate version\n2.3\nFlowrate type measure unit: metric or not metric\n2.4\nPulse 1 type measure unit: metric or not metric\n2.5\nPulse 2 type measure unit: metric or not metric\n2.6\nTotal direct totalizer measure unit type: metric or not metric\n2.7\nTotal direct totalizer measure unit\n2.8\nTotal direct totalizer decimal point position\n2.9\nPartial direct totalizer measure unit type: metric or not metric\nPartial direct totalizer measure unit\nPartial direct totalizer decimal point position\n2.12\nTotal reverse totalizer measure unit type: metric or not metric\nTotal reverse totalizer measure unit\n2.14\nTotal reverse totalizer decimal point position\n2.15\nPartial reverse totalizer measure unit type: metric or not metric\n2.16\nPartial reverse totalizer measure unit\n2.18\nTemperature measure unit\n2.19\nEnable/disable the selection of mass units on full scale set\n2.20\nSpecific gravity coefficient\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "SENSOR S. model =",
+            "0"
+          ],
+          [
+            "Lining =",
+            "UNSPEC."
+          ],
+          [
+            "S. type =",
+            "FULL BORE"
+          ],
+          [
+            "u type =",
+            "METRIC"
+          ],
+          [
+            "Diam",
+            "mm 00025.0"
+          ],
+          [
+            "HA =",
+            "+00.9637"
+          ],
+          [
+            "HA- =",
+            "-04.4904"
+          ],
+          [
+            "HZ =",
+            "+0000000"
+          ],
+          [
+            "HD=",
+            "+ 0000000"
+          ],
+          [
+            "Ins. position=",
+            "0"
+          ],
+          [
+            "KP DinaWmic=",
+            "OFF"
+          ],
+          [
+            "Ki=",
+            "01.8727"
+          ],
+          [
+            "Kp=",
+            "01.0000"
+          ],
+          [
+            "KC=",
+            "1.00000"
+          ],
+          [
+            "C.curr =",
+            "025.0"
+          ],
+          [
+            "C.Reg.PB=",
+            "004"
+          ],
+          [
+            "C.Reg.DK=",
+            "008"
+          ],
+          [
+            "S. Freq .= Hz",
+            "50"
+          ],
+          [
+            "Preamplif.",
+            "OFF"
+          ],
+          [
+            "E.P Detect=",
+            "ON"
+          ],
+          [
+            "R max= kohm",
+            "0500"
+          ],
+          [
+            "El. Cleaning=",
+            "OFF"
+          ],
+          [
+            "s. cable=",
+            "m 000"
+          ],
+          [
+            "S. err. delay=",
+            "010"
+          ],
+          [
+            "Sens. verify=",
+            "OFF"
+          ],
+          [
+            "Zero point cal.",
+            ""
+          ],
+          [
+            "KL",
+            "00.00000000"
+          ]
+        ],
+        [
+          [
+            "1.1",
+            "Sensors model: Enter the first two characters of the serial number of the sensor"
+          ],
+          [
+            "1.2",
+            "Flow sensor lining material type"
+          ],
+          [
+            "1.3",
+            "Type of sensor: fullbore or insertion"
+          ],
+          [
+            "1.4",
+            "Type of measure units for sensor parameter: metric or imperial"
+          ],
+          [
+            "1.5",
+            "Insert ND of sensor (0-2500)"
+          ],
+          [
+            "1.6",
+            "Calibration data of sensor visualized on sensor's label"
+          ],
+          [
+            "1.7",
+            "Calibration data of sensor for negative flow"
+          ],
+          [
+            "1.8",
+            "Sensor coefficient KZ (zero point)"
+          ],
+          [
+            "1.9",
+            "Sensor coefficient KD"
+          ],
+          [
+            "1.10",
+            "Insertion position"
+          ],
+          [
+            "1.11",
+            "KP dynamic, coefficient for insertion"
+          ],
+          [
+            "1.12",
+            "Sensor coefficient Ki"
+          ],
+          [
+            "1.13",
+            "Sensor coefficient Kp"
+          ],
+          [
+            "1.14",
+            "Sensor coefficient KC"
+          ],
+          [
+            "1.15",
+            "CW volume total. decimal point position"
+          ],
+          [
+            "1.16",
+            "Current regulator proportional band"
+          ],
+          [
+            "1.17",
+            "Current regulator derivation constant"
+          ],
+          [
+            "1.18",
+            "Measure sampling frequency"
+          ],
+          [
+            "1.19",
+            "Enables the preamplifier"
+          ],
+          [
+            "1.20",
+            "Enables the empty pipe detection feature"
+          ],
+          [
+            "1.21",
+            "Empty pipe detection threshold"
+          ],
+          [
+            "1.22",
+            "Electrode cleaning"
+          ],
+          [
+            "1.23",
+            "Sensor connecting cable length"
+          ],
+          [
+            "1.24",
+            "Signal error delay (n. sample)"
+          ],
+          [
+            "1.25",
+            "Automatic sensor verify enable"
+          ],
+          [
+            "1.26",
+            "Pipe hydraulic zero calibration"
+          ],
+          [
+            "1.27",
+            "Linearization coefficient"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "SCALES\nMEASURES\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nALARMS\nINPUTS\n28 / 85\nMAIN MENU\n1-Sensor\n2-Units\n3-Scales\n4-Measure\n5-\nSCALES\nFS1 g/s\n4908.7\nB.qty dm3\n1.00000\nFS2 g/s\n4908.7\nPls1=g\n1000.00\n12\n13\nTpls1=ms\n0050.0\nPls2=g\n1000.00\nTpls2=g\n0050.0\nFrq1=Hz\n1000.00\nFrq2=Hz\n1000.00\nMAIN MENU\n1-Sensor\n2-Units\n-Scales\n4-Measure\nstAlarms\n6-Inputs\n8-\n9-\n10-\nMEASURES\nDamping\nSMART\n11-\nCut-OFF= %\n00.1\n12\n13\nDT Min.\nON\nT1HC enable\nON\nT1HC\nOFF\nMAIN MENU\n1-Sensor\n2-Units\n3-Scales\n4-Measure\n5-Alarms\n6-Inputs\n8-\nALARMS\n10-\n11\nMax- = dm3/s\nOFF\nMax+ = dm3/s\nOFF\n12\nMin+= dm3/s\nOFF\n1\nMin -= dm3/s\nOFF\n03\nHysterisis=%\nmA v.alarm=%\n000\nHz v.alarm=%\n000\nMAIN MENU\n1-Sensor\n2-Units\n3-Scales\n4-Measure\n5-Alarms\n6-Inputs\n8-\nINPUTS\n10-\n11-\nT+ reset\nP+ reset\nOFF\n12\n13\nT- reset\nOFF\nP- reset\nOFF\nCount lock\nOFF\nMeas.lock\nOFF\nCalibration\nOFF\nRange change\nOFF\nOFF\nISOMAG\n3.1\nFull scale flow rate 1\n3.2\nBatching quantity\n3.3\nFull scale flow rate 2\n3.4\nPulse value on channel 1\n3.5\nDuration of the pulse generated on channel 1\n3.6\nPulse value on channel 2\n3.7\nDuration of the pulse generated on channel 2\n3.8\nFull scale frequency for channel 1 (0.1Hz-1000.0Hz)\n3.9\nFull scale frequency for channel 2 (0.1Hz-1000.0Hz)\n4.1\nMeasure filter\n4.2\nLow flow zero threshold: 0-25% of full scale value\n4.3\nAutomatic calibration verify\n4.4\nAutomatic change of measurement range\n4.5\nHigh immunity inputs\n5.1\nMaximum value alarm set for direct flow rate\n5.2\nMaximum value alarm set for reverse flow rate\n5.3\nMinimum value alarm set for direct flow rate\n5.4\nMinimum value alarm set for reverse flow rate\n5.5\nHysteresis threshold set for the minimum and maximum flow rate alarms\n5.6\nCurrent output value in case of failure\n5.7\nFrequency output value in case of alarms\n6.1\nTotal direct (positive) flow totalizer reset enable\n6.2\nPartial direct (positive) flow totalizer reset enable\n6.3\nTotal reverse (negative) flow totalizer reset enable\n6.4\nPartial reverse (negative) flow totalizer reset enable\n6.5\nTotalizer counting lock command\n6.6\nMeasure zero lock command\n6.7\nCalibration external command\n6.8\nRange change external command\n210_EN_IT_IS_R1_1.02.0\nISOIL\nINDUSTRIA",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "OUTPUTS\nMAIN MENU\n1-Sensor\n2-Units\n3-Scales\n4-Measure\n-Alarms\n6-Inputs\n7-Outputs\n8-Communicafiar\n9 OUTPUTS\n10\nOut1\nPULSES+\nOut2\nPULSES-\nOut mA1\n4_22 +/-\nOut mA2\n4_22 +/-\nA1S\n4.9087\nA2S\n4.9087\n12\n1\nISOMAG\n7.1\nOutput 1 functions\n7.2\nOutput 2 functions\n7.3\nChoice of the function and the range of current output n. 1\n7.4\nChoice of the function and the range of current output n.2\n7.5\nFull Scale value for analog out1\n7.6\nFull Scale value for analog out2\nCOMMUN.\nMAIN MENU\n1-Sensor\n-Units\n3-Scales\n4-Measure\n5-Alarms\n6-Inputs\n7-Outputs\n8-Communication\n10\n1111\nCOMMUNICATION\nHART pr.\n05\nHART O. C.\nON\nDev. Addr\n001\nSpeed=bps\n9600\nParity=\nNO\nDelay=ms\n00\nC. timeout\n2\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n8.1\nHART packet byte preambles\nHART\nREGISTERED\n8.2\nHART bus output control\n8.3\nDevice communication address number\n8.4\nMODBUS link speed\n8.5\nMODBUS link parity\n8.6\nMODBUS reply delay\n8.7\nMaximum delay between chars (frames) MODBUS\nDISPLAY\n29 / 85\nMAIN MENU\n1-Sensor\n2-Units\n3-Scales\n4-Measure\n5-Alarms\n6-Inputs\n7-Outputs\n8-Communication\n9-Display\n10-Data logger\n11-Functions\n12-DISPLAY\n13\nLanguage\nEN\nContrast\n5\nDisp.time=s\n020\nD.rate=Hz\n5\nDisp. Fn.\n1\nDisp.lock\nON\nPart. Tot\nON\nNeg. Tot.\nON\nNet tot.\nON\nDisp.date\nON\nQuick start\nON\n9.1\nChoice of the language\n9.2\nDisplay contrast\n9.3\nDisplay/keyboard inactivity time\n9.4\nDisplay updating frequency: 1-2-5-10 Hz\n9.5\nDisplay function number\n9.6\nDisplay function selection lock\n9.7\nPartial totalizer enable\n9.8\nNegative totalizer enable\n9.9\nNet totalizer enable\n9.10\nTime and date display enable\n9.11\nQuick start menu visualization\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Out1",
+            "PULSES+"
+          ],
+          [
+            "Out2",
+            "PULSES-"
+          ],
+          [
+            "Out mA1",
+            "4_22 +/-"
+          ],
+          [
+            "Out mA2",
+            "4_22 +/-"
+          ],
+          [
+            "A1S",
+            "4.9087"
+          ],
+          [
+            "A2S",
+            "4.9087"
+          ]
+        ],
+        [
+          [
+            "Language",
+            "EN"
+          ],
+          [
+            "Contrast",
+            "5"
+          ],
+          [
+            "Disp.time=s",
+            "020"
+          ],
+          [
+            "D.rate=Hz",
+            "5"
+          ],
+          [
+            "Disp. Fn.",
+            "1"
+          ],
+          [
+            "Disp.lock",
+            "ON"
+          ],
+          [
+            "Part. Tot",
+            "ON"
+          ],
+          [
+            "Neg. Tot.",
+            "ON"
+          ],
+          [
+            "Net tot.",
+            "ON"
+          ],
+          [
+            "Disp.date",
+            "ON"
+          ],
+          [
+            "Quick start",
+            "ON"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "DATA\nLOGGER\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nFUNCTIONS\nDIAGNOSTIC\nDATA LOGGER\nD.logger en.\nON\nMeas. units\nON\nField separat.\n;\nDecimal separ.\n.\nInterv.\n01:01:00\nLog T+\nON\nLog P+\nON\nLog T-\nON\nLog P-\nON\nLog TN\nON\nLog PN\nON\nLog Q (UM)\nON\nLog Q (%)\nON\nLog AL.EV\nON\nLog STR\nON\nLog BTS\nON\nLog IBU\nON\nLog EDC\nON\nLog EAC\nON\nLog EIZ\nON\nLog SCV\nON\nMA\n2\n4\n6\nOutputs\n8-Communication\n9-Display\n10-Data logger\n11-Functions\n12-Diagnostic\n13-System\nFUNCTIONS\nT+ reset\nP+ reset\nMAIT- reset\n1\nP- reset\n3\nLoad Sens. F. def\nLoad Conu. F. def\n5\nSave Sens. F. def\n6\n7\nSave Conu. F. def\n8\nCalibration\n9-\nDisplay\n10-Data logger\nIII-Functions\n12-Diagnostic\n13-System\nDIAGNOSTIC\nSelf test\nTest display\nSens. verify\nFlow sim. =\nON\nDisplay measures\nDisp. Coom. Vars\nDisplay graphs\nMAI\nGen. sens. set\n1\nSD card info\n3\nFirmware info\n5\nS/N=\n999001\n002:21:00 : 22\n6\nWT=\nOutputs\n9-Display\n10-Data logger\n11-Functions\n12-Diagnostic\n13-System\nISOMAG\n10.1\nData logger enabling\n10.2\nMeasure units recording enable\n10.3\nField separator character\n10.4\nDecimal separator character\n10.5\nSampling interval\n10.6\nEnable logging of total direct totalizer\n10.7\nEnable logging of partial direct totalizer\n10.8\nEnable logging of total reverse totalizer\n10.9\nEnable logging of partial reverse totalizer\n10.10\nEnable logging of total net totalizer\n10.11\nEnable logging of partial net totalizer\n10.12\nEnable logging of flow rate in measure unit\n10.13\nEnable logging of flow rate in percentage\n10.14\nEnable logging of alarm events\n10.15\nEnable logging of sensor test results\n10.16\nEnable logging of board temperature\n10.17\nEnable logging of internal board voltage\n10.18\nEnable logging of electrodes DC voltage\n10.19\nEnable logging of electrodes AC voltage\n10.20\nEnable logging of electrodes impedance\n10.21\nEnable logging of sensor coils value\n11.1\nExecute immediate reset of total direct totalizer\n11.2\nExecute immediate reset of partial direct totalizer\n11.3\nExecute immediate reset of total reverse totalizer\n11.4\nExecute immediate reset of partial reverse totalizer\n11.5\nLoad sensor factory default\n11.6\nLoad converter factory default\n11.7\nSave sensor factory default values\n11.8\nSave converter factory default values\n11.9\nExecute immediate internal circuit calibration\n12.1\nSelf test diagnostic function\n12.2\nFunction tests physical display\n12.3\nSensor verify diagnostic function\n12.4\nFlow rate simulation enabling\n12.5\nDisplay internal measured value\n12.6\nDisplay comm. diagnostic values\n12.7\nDisplay measure as graphs\n12.8\nGeneric sensor parameters set\n12.9\nSd card status informations\n12.10\nFirmware version/revision\n12.11\nBoard serial number\n12.12\nTotal working time\n210_EN_IT_IS_R1_1.02.0\nISOIL\nINDUSTRIA\n30 / 85",
+      "tablas": [
+        [
+          [
+            "D.logger en.",
+            "ON"
+          ],
+          [
+            "Meas. units",
+            "ON"
+          ],
+          [
+            "Field separat.",
+            ";"
+          ],
+          [
+            "Decimal separ.",
+            "."
+          ],
+          [
+            "Interv.",
+            "01:01:00"
+          ],
+          [
+            "Log T+",
+            "ON"
+          ],
+          [
+            "Log P+",
+            "ON"
+          ],
+          [
+            "Log T-",
+            "ON"
+          ],
+          [
+            "Log P-",
+            "ON"
+          ],
+          [
+            "Log TN",
+            "ON"
+          ],
+          [
+            "Log PN",
+            "ON"
+          ],
+          [
+            "Log Q (UM)",
+            "ON"
+          ],
+          [
+            "Log Q (%)",
+            "ON"
+          ],
+          [
+            "Log AL.EV",
+            "ON"
+          ],
+          [
+            "Log STR",
+            "ON"
+          ],
+          [
+            "Log BTS",
+            "ON"
+          ],
+          [
+            "Log IBU",
+            "ON"
+          ],
+          [
+            "Log EDC",
+            "ON"
+          ],
+          [
+            "Log EAC",
+            "ON"
+          ],
+          [
+            "Log EIZ",
+            "ON"
+          ],
+          [
+            "Log SCV",
+            "ON"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "SYSTEM\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n31 / 85\nSYSTEM\nDayl. Saving =\nON\nTime zone =\nh + 01.00\n2016/04/04-16:07\nL1 code =\nL2 code =\nL3 code =\nL4 code =\nLS code =\nL6 code =\nRestr. Access=\nON\n010.011.012. 013\n010.011.012.014\n255.255.255.000\nHT\n0.96469\nKS\n1.00000\nHR\n1.00000\nDAC1\n(°C)\nDAC1\n(ºC)\nDAC2\n661\nDAC2\n3327\nStand-by\n3453\nFW update\n14718\nMAI\n1\n2\n4\n8\nDisplay\n10-Data logger\n11-Functions\n12-Diagnostic\n13-System\nISOMAG\n13.1\nDaylight saving time change\n13.2\nLocalized time zone\n13.3\nSystem date and time\n13.4\nAccess level 1 code\n13.5\nAccess level 2 code\n13.6\nAccess level 3 code\n13.7\nAccess level 4 code\n13.8\nAccess level 5 code\n13.9\nAccess level 6 code\n13.10\nRestricted access level\nDevice IP network address\n13.11\n13.12\nClient IP network address\n13.13\nNetwork mask\n13.14\nCalibration coefficient KT\n13.15\nCalibration coefficient KF\n13.16\nCalibration coefficient KR\n13.17\nDAC1 out 4mA calibration point\n13.18\nDAC1 out 20mA calibration point\n13.19\nDAC2 out 4mA calibration point\n13.20\nDAC2 out 20mA calibration point\n13.21\nStand-by\n13.22\nfirmware update\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Dayl. Saving =",
+            "ON"
+          ],
+          [
+            "Time zone =",
+            "h + 01.00"
+          ],
+          [
+            "2016/04/04-16:07"
+          ],
+          [
+            "L1 code =",
+            "",
+            ""
+          ],
+          [
+            "L2 code =",
+            "",
+            ""
+          ],
+          [
+            "L3 code =",
+            "",
+            ""
+          ],
+          [
+            "L4 code =",
+            "",
+            ""
+          ],
+          [
+            "LS code =",
+            "",
+            ""
+          ],
+          [
+            "L6 code =",
+            "",
+            ""
+          ],
+          [
+            "Restr. Access=",
+            "ON"
+          ],
+          [
+            "",
+            "010.011.012. 013"
+          ],
+          [
+            "010.011.012.014 255.255.255.000"
+          ],
+          [
+            "HT",
+            "",
+            "0.96469"
+          ],
+          [
+            "KS",
+            "",
+            "1.00000"
+          ],
+          [
+            "HR",
+            "",
+            "1.00000"
+          ],
+          [
+            "DAC1",
+            "",
+            "(°C)"
+          ],
+          [
+            "DAC1",
+            "",
+            "(ºC)"
+          ],
+          [
+            "DAC2",
+            "",
+            "661"
+          ],
+          [
+            "DAC2",
+            "",
+            "3327"
+          ],
+          [
+            "Stand-by",
+            "",
+            "3453"
+          ],
+          [
+            "FW update",
+            "",
+            "14718"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "ISOMAG\nFUNCTIONS DESCRIPTION\nHere below the explanation on how the rows of menu are described.\nMenu visualized on the converter (from 1 to 13)\nMENU 1 - SENSOR\n(POS. 1.1) Sensor Model\n[S. model xxx]\nAL4\n[SMODL]\nAccess level\nMCP command\nConvert request1\nSynthetic description of the function\nThe following picture describes where to find the name of the MCP functions in MCP-software.\nMore info see MCP manual.\nMcpPro - 1.0.0.46\n1x\nConnection\nOptions\nShow\nView\nTools\n?\nAccess\nFunction list:\nMenu\nSensor\nUnits\nScales\n[Flow Rate Full Scale 1]\n[Flow Rate Full Scale 2]\n[Output 1 Pulse Value]\n0-0 [Channel 1 pulse volume value]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n. OP1PV? : 1,104:MCPI ACCESS LEVEL NOT VALID\n. . OP1PV =? : 1,104:MCPI ACCESS LEVEL NOT VALID\nOP1PV=\n[Output 1 Pulse Time]\n[Output 1 Full scale Frequency]\n[Output 2 Pulse Value]\n4\n[Output 2 Pulse Time]\nTOUltout 2 Full scale Frequency]\nMCP> OP1PV=\n6 char\nConfig. Files |Datalogger\nLog\nConfiguration Files Commands:\nREAD and SAVE:\n0.00\n+0.00%\nft/s\n+0.000+in3/s\nT1\nO\n32\n34\nT2\n0\n3 ALARM(S)\nEXCITATION ERROR\nSIGNAL ERROR\nSDC ALMOST FULL\nFunction list:\nMenu\nLOAD and WRITE:\nConfiguration\nList\nShow\nEnabled\nFuncitons List\nShow\nQuick Start\nFuncitons List\nShow\nPath:\nC: \\Users \\prabacchin \\AppData \\Roaming \\McpPro\\ConfigFiles\nSelect\nConfig. , Enabled\nor Quick St. list\nMV110\nV.0.00.1415.FFFF May 10 2016 11:24:27 SN:999777\nSensor\n1\nUnits\nScales\n[Flow Rate Full Scale 1]\n[Flow Rate Full Scale 2]\nE\n[Output 1 Pulse Value]\n[Channel 1 pulse volume value]\nOP1PV? : 1,104:MCPI ACCESS LEVEL NOT VALID\nOP1PV =? : 1,104:MCPI ACCESS LEVEL NOT VALID\n· OP1PV=\n[Output 1 Pulse Time]\n[Output 1 Full scale Frequency]\n[Output 2 Pulse Value]\n[Output 2 Pulse Time]\nTOUtout ? Full scale Frequency]\n1\nLine editor for the insertion\nand execution of MCP commands.\nMCP>\nOP1PV=\nI\n6 char\nISOIL\nINDUSTRIA\n32 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "ISOMAG\nMENU 1 - SENSOR\n(POS. 1.1) Sensor model\n[S. model xxx]\nAL4\nEnter the first two characters of the serial number of the sensor as on the sensor label.\n[SMODL]\n(POS. 1.2) Lining Type\n[Lining= UNSPEC.]\nAL4\n[LIMAT]\nFlow sensor lining material type. (PFA; PU-TDI; ALON; PEEK; HR; PP; PA-11; PTFE-HT; PTFE)\n(POS. 1.3) Type of sensor\n[S. type= FULL BORE]\nAL4\n[STYPE]\nSelect the sensor type of full-bore or insertion.\n(POS. 1.4) Unit type\n[U.type= METRIC]\nAL4\n[SUTYP]\nSelect type of measure unit of sensor's parameter. Values metric or imperial (inch).\n(POS. 1.5) Diameter\n[Diam .= mm xxx]\nAL4\n[PDIMV]\nSelect the nominal diameter of the sensor (0-2500). ND is written on the sensor label.\n(POS. 1.6) KA\n[KA= + xx.xxx]\nAL4\n[CFFKA]\nKA factor: calibration coefficient\n(POS. 1.7) KA -\n[KA= - xx.xxx]\nAL4\n[CFKAN]\nKA factor: calibration coefficient for negative flow. This function is showed only if at least 1 negative KL value is set.\n(POS. 1.8) KZ\n[KZ= +/- xxxxx]\nAL4\n[CFFKZ]\nCalibration Factor. KZ\n(POS. 1.9) KD\n[KD= +/- xxxxx]\nAL4\n[CFFKD]\nCalibration Dynamic Factor.\n(POS. 1.10) Insertion position\n[Ins.position= x]\nAL4\n[SIPOS]\n(POS. 1.11) KP dynamic\n[KP dynamic= ON/OFF]\nAL4\n[CFFKP]\nThis function is active with POS.POS. 1.3 see page 27 set on insertion. See manual of insertion\nsensor for more details\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nThis function is active with POS.1.3 on \"Insertion\". See the insertion sensor manual for more details\n(POS. 1.12) Ki\n[Ki= +/- xx.xxx]\nAL4\n[CFFKI]\nThis function is active with POS. 1.3 see page 27 set on insertion. See manual of insertion sensor\nfor more details\n33 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 1.2) Lining Type",
+            "[Lining= UNSPEC.]",
+            "AL4",
+            "[LIMAT]"
+          ],
+          [
+            "Flow sensor lining material type. (PFA; PU-TDI; ALON; PEEK; HR; PP; PA-11; PTFE-HT; PTFE)"
+          ],
+          [
+            "(POS. 1.3) Type of sensor",
+            "[S. type= FULL BORE]",
+            "AL4",
+            "[STYPE]"
+          ],
+          [
+            "Select the sensor type of full-bore or insertion.",
+            "",
+            ""
+          ],
+          [
+            "(POS. 1.4) Unit type",
+            "[U.type= METRIC]",
+            "AL4",
+            "[SUTYP]"
+          ],
+          [
+            "Select type of measure unit of sensor's parameter. Values metric or imperial (inch).",
+            ""
+          ],
+          [
+            "(POS. 1.5) Diameter",
+            "[Diam .= mm xxx]",
+            "AL4",
+            "[PDIMV]"
+          ],
+          [
+            "Select the nominal diameter of the sensor (0-2500). ND is written on the sensor label."
+          ],
+          [
+            "(POS. 1.6) KA",
+            "[KA= + xx.xxx]",
+            "AL4",
+            "[CFFKA]"
+          ],
+          [
+            "KA factor: calibration coefficient",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 1.7) KA -",
+            "[KA= - xx.xxx]",
+            "AL4",
+            "[CFKAN]"
+          ],
+          [
+            "KA factor: calibration coefficient for negative flow. This function is showed only if at least 1 negative KL value is set."
+          ],
+          [
+            "(POS. 1.8) KZ",
+            "[KZ= +/- xxxxx]",
+            "AL4",
+            "[CFFKZ]"
+          ],
+          [
+            "Calibration Factor. KZ",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 1.9) KD",
+            "[KD= +/- xxxxx]",
+            "AL4",
+            "[CFFKD]"
+          ],
+          [
+            "Calibration Dynamic Factor.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 1.10) Insertion position",
+            "[Ins.position= x]",
+            "AL4",
+            "[SIPOS]"
+          ],
+          [
+            "This function is active with POS.1.3",
+            "on \"Insertion\". See the insertion",
+            "sensor manual for more details"
+          ],
+          [
+            "(POS. 1.11) KP dynamic",
+            "[KP dynamic= ON/OFF]",
+            "AL4",
+            "[CFFKP]"
+          ],
+          [
+            "This function is active with POS.POS. 1.3 see page 27 set on insertion. See manual of insertion sensor for more details"
+          ]
+        ],
+        [
+          [
+            "(POS. 1.12) Ki [Ki= +/- xx.xxx]",
+            "AL4",
+            "[CFFKI]"
+          ],
+          [
+            "This function is active with POS. 1.3 see page 27 set on insertion.\nfor more details",
+            "See manual of",
+            "insertion sensor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "ISOMAG\n(POS. 1.13) Kp\n[Kp = +/- xxxxx]\nAL4\n[SIDKP]\nThis function is active with POS. 1.3 see page 27 set on insertion. See manual of insertion sensor\nfor more details\n(POS. 1.14) KC\n[KC= +/- xx.xxx]\nAL4\n[CFFKC]\nCalibration Factor. This function is activated if the sensor model is NOT present on the sensors table standard\nparameters\n(POS. 1.15) Coils Ex.Current\n[C.Curr .= mA xxx.x]\nAL4\n[CEXCC]\nExcitation coils current. This function is activated if the sensor model is NOT present on the sensors table\nstandard parameters\n(POS. 1.16) C. Reg. PB\n[C.Reg.PB= xxx]\nAL4\n[CRPRB]\nCurrent regulator parameter. This function is activated if the sensor model is NOT present on the sensors\ntable standard parameters\n(POS. 1.17) C. Reg. DK\n[C.Reg. DK = xxx]\nAL4\n[CRDER]\nCurrent regulator parameter. This function is activated if the sensor model is NOT present on the sensors\ntable standard parameters\n(POS. 1.18) Preamplifier\n[Preamplif .= ON]\nAL4\n[PREIN]\nThis function enable/disable the presence of the preamplifier. The use of the preamplifier inhibit the\npossibility to use BIV and Empty Pipe Detection.\n(POS. 1.19) S. Freq.\n[S.Freq .= Hz xx]\nAL4\n[SFREQ]\nMeasure sampling frequency. This function is activated if the sensor model is NOT present on the sensors\ntable standard parameters.\n(POS. 1.20) Empty Pipe Detection\n[E.P.Detect= ON]\nAL4\n[EPDEN]\nEnables the empty pipe detection function. This function is useful to keep the meter lock to zero when\nthe pipe become empty.\n(POS. 1.21) Empty pipe thr.\n[R max= Kohm xxxx]\nAL4\n[EPDTH]\nMaximum resistance value at the inputs (electrodes) determine the empty pipe condition. This feature is\nenabled only if the \"1.19\" page 27 Empty Pipe Detection is ON.\n(POS. 1.22) Electrodes cleaning\n[El. cleaning=AVG]\nAL4\n[ELCLN]\nThis function is useful to keep the electrodes clean; the allowed values are: OFF, minimum, average\nand maximum. It is not recommended to use this function when the liquid has a conductivity less\nthan 100uS/cm (set to OFF).\n(POS. 1.23) Sensor Cable\n[S.cable=m xxx]\nAL4\n[SCALN]\nLenght of cable between sensor and converter on separate version.\n(POS. 1.24) Signal error delay\n[S.err.delay=m xxx]\nAL4\n[SEALT]\nDelay before generating error. This function is useful to prevent unexpected lock to zero of measure\ncaused by sporadic events (empty pipe, excitation error, signal error)\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 1.25) Sensor verify\n[Sens. verify= OFF]\nAL3\n[ASVFE]\nEnable the Automatic sensor verification (see BIV optional function).\nISOIL\n34 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "(POS. 1.17) C. Reg. DK",
+            "[C.Reg. DK = xxx]",
+            "AL4",
+            "[CRDER]"
+          ],
+          [
+            "Current regulator parameter. This function is activated if the sensor model is NOT present on the sensors table standard parameters"
+          ],
+          [
+            "(POS. 1.18) Preamplifier",
+            "[Preamplif .= ON]",
+            "AL4",
+            "[PREIN]"
+          ],
+          [
+            "This function enable/disable the presence of the preamplifier. The use of the preamplifier inhibit the possibility to use BIV and Empty Pipe Detection."
+          ],
+          [
+            "(POS. 1.19) S. Freq.",
+            "[S.Freq .= Hz xx]",
+            "AL4",
+            "[SFREQ]"
+          ],
+          [
+            "Measure sampling frequency. This function is activated if the sensor model is NOT present on the sensors table standard parameters."
+          ],
+          [
+            "(POS. 1.20) Empty Pipe Detection",
+            "[E.P.Detect= ON]",
+            "AL4",
+            "[EPDEN]"
+          ],
+          [
+            "Enables the empty pipe detection function. This function is useful to keep the meter lock\nthe pipe become empty.",
+            "to zero when"
+          ],
+          [
+            "(POS. 1.21) Empty pipe thr.",
+            "[R max= Kohm xxxx]",
+            "AL4",
+            "[EPDTH]"
+          ],
+          [
+            "Maximum resistance value at the inputs (electrodes) determine the empty pipe condition. This feature is enabled only if the \"1.19\" page 27 Empty Pipe Detection is ON."
+          ],
+          [
+            "(POS. 1.22) Electrodes cleaning",
+            "[El. cleaning=AVG]",
+            "AL4",
+            "[ELCLN]"
+          ],
+          [
+            "This function is useful to keep the electrodes clean; the allowed values are: OFF, minimum, average and maximum. It is not recommended to use this function when the liquid has a conductivity less than 100uS/cm (set to OFF)."
+          ],
+          [
+            "(POS. 1.23) Sensor Cable",
+            "[S.cable=m xxx]",
+            "AL4",
+            "[SCALN]"
+          ],
+          [
+            "Lenght of cable between sensor and converter on separate version.",
+            "",
+            ""
+          ],
+          [
+            "(POS. 1.24) Signal error delay",
+            "[S.err.delay=m xxx]",
+            "AL4",
+            "[SEALT]"
+          ],
+          [
+            "Delay before generating error. This function is useful to prevent unexpected lock to zero of measure caused by sporadic events (empty pipe, excitation error, signal error)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "ISOMAG\n(POS. 1.26) Zero point calibration\n[Zero point cal.]\nThis feature appears only when the process conditions are as follow:\n· measure filters recommended (Damping) set to SMART 2 second / 5 second\n· stable flow rate and lower than 0.1% of the absolute scale (10 m/s)\n. It must have elapsed at least 10 minutes after the last significant change of flow rate\nWhen the above conditions are met, the zero point calibration function will appears on the display,\npress the \"Enter / ESC\" and automatically the procedure will start.\nNOTICE: Be sure that the the sensor is completely full of liquid and perfectly still. Even subtle movements\nof the fluid can cause significant errors, therefore proceed with great care.\n(POS. 1.27) Coefficient KL\n[KL=XX +/- xxxxxxxxx]\nAL4\n[SETKL]\nLinearization coefficient for negative flow, reserved to the service. This command is only showed if\nSMODL = 000.\nMENU 1 - SENSOR: ONLY MCP FUNCTIONS\nSensor Coils Time A\n[MCP ONLY]\nAL4\n[SCTMA]\nReference sensor coil time A\nSensor Coils Time B\n[MCP ONLY]\nAL4\n[SCTMB]\nReference sensor coil time B\nSensor Coils Resistance\n[MCP ONLY]\nAL4\n[SCRES]\nReference sensor coil resistance\nResistance E1\n[MCP ONLY]\nAL4\n[SE1RR]\nResistance value of E1 electrodes\nResistance E2\n[MCP ONLY]\nAL4\n[SE2RR]\nResistance value E2 electrodes\nSensor Coils Temperature Reference\n[MCP ONLY]\nAL4\n[SCTRF]\nThe manufacturer guarantees only English text available on our web site www.isoil.com\nsensor data reference temperature. Temperature measured on the coils of the sensor at the time of\nsaving the instrument reference data for B.I.V. function The temperature value in degrees Celsius,\nwhich owns the sensor.\nNote: the temperature must be estimated on the basis of the place of the sensor installation.\n35 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "Sensor Coils Time A",
+            "[MCP ONLY]",
+            "AL4",
+            "[SCTMA]"
+          ],
+          [
+            "Reference sensor coil time A",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Sensor Coils Time B",
+            "[MCP ONLY]",
+            "AL4",
+            "[SCTMB]"
+          ],
+          [
+            "Reference sensor coil time B",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Sensor Coils Resistance",
+            "[MCP ONLY]",
+            "AL4",
+            "[SCRES]"
+          ],
+          [
+            "Reference sensor coil resistance",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Resistance E1",
+            "[MCP ONLY]",
+            "AL4",
+            "[SE1RR]"
+          ],
+          [
+            "Resistance value of E1 electrodes",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Resistance E2",
+            "[MCP ONLY]",
+            "AL4",
+            "[SE2RR]"
+          ],
+          [
+            "Resistance value E2 electrodes",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Sensor Coils Temperature Reference",
+            "[MCP ONLY]",
+            "AL4",
+            "[SCTRF]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "ISOMAG\nMENU 2 - UNITS\nWARNING: The totalizer value is updated and changed depending on the setting of unit value.\nThe scale change may cause accuracy loss depending of rounding up.\nFor example, if T +=0,234 liters with 3 decimals, it become T +=0.001 m3 losing 0.234 liters in rounding\nup.\n(POS. 2.1) Diameter\n[Diam .= mm]\nAL2\n[SDIUM]\nSensor diameter unit of measure (mm or inch)\n(POS. 2.2) S.cable length unit of m. type\n[S.Cable= m]\nAL2\n[SCAUM]\nSensor cable length for separate version. Select m or foot.\n(POS. 2.3) Flow rate unit of m. type\n[FR unit= METRIC]\nAL2\n[FRMUT]\nFlow rate type measure unit. Select metric or not metric (Imperial units)\n(POS. 2.4) Pulse 1 unit of m. type\n[PL1 unit= METRIC]\nAL2\n[PL1UT]\nThis function is active with POS. 7.1 see page 29 enable.\nThis function changes the choice of measure unit POS. 3.4 see page 28\nPulse 1 type measure unit: metric or not metric (Imperial units).\n(POS. 2.5) Pulse 2 unit of m. type\n[PL2 unit= METRIC]\nAL2\n[PL2UT]\nThis function is active with POS. 7.2 see page 29 enable.\nThis function changes the choice of measure unit POS. 3.6 see page 28\nPulse 2 type measure unit: metric or not metric Imperial units).\n(POS. 2.6) Totalizer direct unit of m. type\n[T+ unit= METRIC]\nAL2\n[TTPUT]\nSetting total direct totalizer measure unit type: metric or not metric Imperial units).\nThis function changes the values measure unit on POS. 2.7 see page 27\n(POS. 2.7) Totalizer direct unit of measure\n[T+ unit= dm3]\nAL2\n[TTPUM]\nSetting total direct totalizer measure unit.\nThis function visualized on visualization pages.\n(POS. 2.8) Totalizer direct Deci.Point pos.\n[T+ D.P .= x]\nAL2\n[TTPDP]\nSetting total direct totalizer decimal point position.\nExample: T+D.P .= 3 visualized value T+dm3\n0.000 / T+D.P .= 2 visualized value T+dm3\n0.00\n(POS. 2.9) Total. Part drect unit of m. type\n[P+ unit= METRIC]\nAL2\n[TPPUT]\nThis function is active with POS. 9.7 see page 29 enable.\nSetting partial direct totalizer measure unit type: metric or not metric (Imperial units).\nThis function changes the values measure unit on POS. 2.10 see page 27 .\nIt is visualized on visualization pages.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 2.10) Total. Partial+ unit of measure\nSetting partial direct totalizer measure unit.\nThis function visualized on visualization pages.\n[P+ unit= dm3]\nAL2\n[TPPUM]\nISOIL\n36 / 85\n210_EN_IT_IS_R1_1.02.0\nINDUSTRIA",
+      "tablas": [
+        [
+          [
+            "up.",
+            ""
+          ],
+          [
+            "(POS. 2.1) Diameter [Diam .= mm]",
+            "AL2",
+            "[SDIUM]"
+          ],
+          [
+            "Sensor diameter unit of measure (mm or inch)",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.2) S.cable length unit of m. type [S.Cable= m]",
+            "AL2",
+            "[SCAUM]"
+          ],
+          [
+            "Sensor cable length for separate version. Select m or foot.",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.3) Flow rate unit of m. type [FR unit= METRIC]",
+            "AL2",
+            "[FRMUT]"
+          ],
+          [
+            "Flow rate type measure unit. Select metric or not metric (Imperial units)",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.4) Pulse 1 unit of m. type [PL1 unit= METRIC]",
+            "AL2",
+            "[PL1UT]"
+          ],
+          [
+            "This function is active with POS. 7.1 see page 29 enable. This function changes the choice of measure unit POS. 3.4 see page 28 Pulse 1 type measure unit: metric or not metric (Imperial units).",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.5) Pulse 2 unit of m. type [PL2 unit= METRIC]",
+            "AL2",
+            "[PL2UT]"
+          ],
+          [
+            "This function is active with POS. 7.2 see page 29 enable. This function changes the choice of measure unit POS. 3.6 see page 28 Pulse 2 type measure unit: metric or not metric Imperial units).",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.6) Totalizer direct unit of m. type [T+ unit= METRIC]",
+            "AL2",
+            "[TTPUT]"
+          ],
+          [
+            "Setting total direct totalizer measure unit type: metric or not metric Imperial units). This function changes the values measure unit on POS. 2.7 see page 27",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.7) Totalizer direct unit of measure [T+ unit= dm3]",
+            "AL2",
+            "[TTPUM]"
+          ],
+          [
+            "Setting total direct totalizer measure unit. This function visualized on visualization pages.",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.8) Totalizer direct Deci.Point pos. [T+ D.P .= x]",
+            "AL2",
+            "[TTPDP]"
+          ],
+          [
+            "Setting total direct totalizer decimal point position. Example: T+D.P .= 3 visualized value T+dm3 0.000 / T+D.P .= 2 visualized value",
+            "T+dm3",
+            ""
+          ],
+          [
+            "0.00"
+          ],
+          [
+            "(POS. 2.9) Total. Part drect unit of m. type [P+ unit= METRIC]",
+            "AL2",
+            "[TPPUT]"
+          ],
+          [
+            "This function is active with POS. 9.7 see page 29 enable. Setting partial direct totalizer measure unit type: metric or not metric (Imperial units). This function changes the values measure unit on POS. 2.10 see page 27 . It is visualized on visualization pages.",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "ISOMAG\n(POS. 2.11) Total.Part direct Dec. Point pos.\n[P+ D.P .= x]\nAL2\nSetting partial direct totalizer decimal point position.\nExample: P+D.P .= 3 visualized value P+dm3\n0.000 / P+D.P .= 2 visualized value P+dm3\n[TPPDP]\n0.00\n(POS. 2.12) Total. T reverse unit of m. type\n[T- unit= METRIC]\nAL2\n[TTNUT]\nThis function is active with POS. 9.8 see page 29, enabled.\nSetting total reverse totalizer measure unit type: metric or not metric (Imperial units).\nThis function changes the values measure unit on POS. 2.13 see page 27.\nIt is visualized on visualization pages.\n(POS. 2.13) Total. T reverse unit of meas.\n[T- unit= dm3]\nAL2\n[TTNUM]\nSetting total reverse totalizer measure unit.\nThis function visualized on visualization pages.\n(POS. 2.14) Total. T reverse Dec.Point Pos.\n[T- D.P .= x]\nAL2\n[TTNDP]\nSetting total reverse totalizer decimal point position.\nExample: T- D.P .= 3 visualized value T- dm3\n0.000\nT- D.P .= 2 visualized value T- dm3\n0.00\n(POS. 2.15) Total. Part reverse unit of m. type\n[P- unit= METRIC]\nAL2\n[TPNUT]\nThis function is active with POS. 9.8 see page 29, enable.\nSetting partial reverse totalizer measure unit type: metric or not metric (Imperial units).\nThis function changes the values measure unit on POS. 2.16 see page 27\nIt is visualized on visualization pages.\nThe manufacturer guarantees only English text available on our web site www.isoil.com\n(POS. 2.16) Total. Part reverse unit of measure\n[P- unit= dm3]\nAL2\n[TPNUM]\nSetting partial reverse totalizer measure unit.\nThis function visualized on visualization pages.\n(POS. 2.17) Tot Part reverse Deci. Point Pos.\n[P- D.P .= x]\nAL2\n[TPNDP]\nSetting partial reverse totalizer decimal point position.\nExample: P- D.P .= 3 visualized value P-dm3\nP- D.P .= 2 visualized value P-dm3\n0.000\n0.00\n(POS. 2.18) Temperature unit of measure\n[Temp. unit= C°]\nAL2\n[TMPUT]\nSetting temperature measure unit.\n(POS. 2.19) Mass units enable\n[Mass units= ON/OFF]\nAL2\n[MSSUE]\nEnable or Disable the selection of mass unit of full scale set.\n(POS. 2.20) Specific Gravity coeffic.\n[Sg= Kg/dm3\nx.xxxx]\nAL2\n[VMSGC]\nSetting specific gravity coefficient. This Function is active with POS. 2.19 see page 27, enable.\n37 / 85\n210_EN_IT_IS_R1_1.02.0",
+      "tablas": [
+        [
+          [
+            "(POS. 2.13) Total. T reverse unit of meas.",
+            "[T- unit= dm3]",
+            "AL2",
+            "[TTNUM]"
+          ],
+          [
+            "Setting total reverse totalizer measure unit. This function visualized on visualization pages.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.14) Total. T reverse Dec.Point Pos.",
+            "[T- D.P .= x]",
+            "AL2",
+            "[TTNDP]"
+          ],
+          [
+            "Setting total reverse totalizer decimal point position.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Example: T- D.P .= 3 visualized value T- dm3 0.000",
+            "",
+            "",
+            ""
+          ],
+          [
+            "T- D.P .= 2 visualized value T- dm3 0.00",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "(POS. 2.16) Total. Part reverse unit of measure",
+            "[P- unit= dm3]",
+            "AL2",
+            "[TPNUM]"
+          ],
+          [
+            "Setting partial reverse totalizer measure unit. This function visualized on visualization pages.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.17) Tot Part reverse Deci. Point Pos.",
+            "[P- D.P .= x]",
+            "AL2",
+            "[TPNDP]"
+          ],
+          [
+            "Setting partial reverse totalizer decimal point position.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Example: P- D.P .= 3 visualized value P-dm3 P- D.P .= 2 visualized value P-dm3",
+            "0.000",
+            "",
+            ""
+          ],
+          [
+            "0.00",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.18) Temperature unit of measure",
+            "[Temp. unit= C°]",
+            "AL2",
+            "[TMPUT]"
+          ],
+          [
+            "Setting temperature measure unit.",
+            "",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.19) Mass units enable",
+            "[Mass units= ON/OFF]",
+            "AL2",
+            "[MSSUE]"
+          ],
+          [
+            "Enable or Disable the selection of mass unit of full scale set.",
+            "",
+            ""
+          ],
+          [
+            "(POS. 2.20) Specific Gravity coeffic.",
+            "[Sg= Kg/dm3 x.xxxx]",
+            "AL2",
+            "[VMSGC]"
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3918 @@
+{
+  "archivo": "VACON-100-FLOW-Application-Guide-DPD01083H-EN (1)_p121_160",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameters Menu\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.15.15\nConstant ProductionSpeed\n0.0\n100.0\n%\n80.0 (1)\n1513\nP3.15.16\nRunning PumpsLimit\n1\nP3.15.2\n3(1)\n1187\nM3.15.17\nInterlock Signals\nSee Table 91.\nM3.15.18\nOverpressure Supervision\nSee Table 92.\nM3.15.19\nPump Running Time\nSee Table 93.\nM3.15.20\nAdvanced Settings\nSee Table 94.\n1 The selection of the application with parameter P1.2 Application gives the default value. See the default values in 11.25 Default Values of Parame-\nters in the Different Applications.\nTable 91: Interlock Signals\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.15.17.1\nPump 1 interlock\nVaries\nVaries\nDigINSlot0.1\n426\nOPEN = Not active\nCLOSED = Active\nP3.15.17.2\nPump 2 interlock\nVaries\nVaries\nDigINSlot0.1\n427\nOPEN = Not active\nCLOSED = Active\nP3.15.17.3\nPump 3 interlock\nVaries\nVaries\nDigINSlot0.1\n428\nOPEN = Not active\nCLOSED = Active\nP3.15.17.4\nPump 4 interlock\nVaries\nVaries\nDigINSlot0.1\n429\nOPEN = Not active\nCLOSED = Active\nP3.15.17.5\nPump 5 interlock\nVaries\nVaries\nDigINSlot0.1\n430\nOPEN = Not active\nCLOSED = Active\nP3.15.17.6\nPump 6 interlock\nVaries\nVaries\nDigINSlot0.1\n486\nOPEN = Not active\nCLOSED = Active\nP3.15.17.7\nPump 7 interlock\nVaries\nVaries\nDigINSlot0.1\n487\nOPEN = Not active\nCLOSED = Active\nP3.15.17.8\nPump 8 interlock\nVaries\nVaries\nDigINSlot0.1\n488\nOPEN = Not active\nCLOSED = Active\nTable 92: Overpressure Supervision Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.15.18.1\nEnable Overpressure Supervision\n0\n1\n0\n1698\n0 = Disabled\n1 = Enabled\nP3.15.18.2\nSupervision Alarm Level\nP3.13.1.5\nP3.13.1.6\nP3.13.1.4\n0.00\n1699\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 121",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.15.15",
+            "Constant ProductionSpeed",
+            "0.0",
+            "100.0",
+            "%",
+            "80.0 (1)",
+            "1513",
+            ""
+          ],
+          [
+            "P3.15.16",
+            "Running PumpsLimit",
+            "1",
+            "P3.15.2",
+            "",
+            "3(1)",
+            "1187",
+            ""
+          ],
+          [
+            "M3.15.17",
+            "Interlock Signals",
+            "See Table 91."
+          ],
+          [
+            "M3.15.18",
+            "Overpressure Supervision",
+            "See Table 92."
+          ],
+          [
+            "M3.15.19",
+            "Pump Running Time",
+            "See Table 93."
+          ],
+          [
+            "M3.15.20",
+            "Advanced Settings",
+            "See Table 94.",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.15.17.1",
+            "Pump 1 interlock",
+            "Varies",
+            "Varies",
+            "",
+            "DigINSlot0.1",
+            "426",
+            "OPEN = Not active CLOSED = Active"
+          ],
+          [
+            "P3.15.17.2",
+            "Pump 2 interlock",
+            "Varies",
+            "Varies",
+            "",
+            "DigINSlot0.1",
+            "427",
+            "OPEN = Not active CLOSED = Active"
+          ],
+          [
+            "P3.15.17.3",
+            "Pump 3 interlock",
+            "Varies",
+            "Varies",
+            "",
+            "DigINSlot0.1",
+            "428",
+            "OPEN = Not active CLOSED = Active"
+          ],
+          [
+            "P3.15.17.4",
+            "Pump 4 interlock",
+            "Varies",
+            "Varies",
+            "",
+            "DigINSlot0.1",
+            "429",
+            "OPEN = Not active CLOSED = Active"
+          ],
+          [
+            "P3.15.17.5",
+            "Pump 5 interlock",
+            "Varies",
+            "Varies",
+            "",
+            "DigINSlot0.1",
+            "430",
+            "OPEN = Not active CLOSED = Active"
+          ],
+          [
+            "P3.15.17.6",
+            "Pump 6 interlock",
+            "Varies",
+            "Varies",
+            "",
+            "DigINSlot0.1",
+            "486",
+            "OPEN = Not active CLOSED = Active"
+          ],
+          [
+            "P3.15.17.7",
+            "Pump 7 interlock",
+            "Varies",
+            "Varies",
+            "",
+            "DigINSlot0.1",
+            "487",
+            "OPEN = Not active CLOSED = Active"
+          ],
+          [
+            "P3.15.17.8",
+            "Pump 8 interlock",
+            "Varies",
+            "Varies",
+            "",
+            "DigINSlot0.1",
+            "488",
+            "OPEN = Not active CLOSED = Active"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.15.18.1",
+            "Enable Overpressure Supervision",
+            "0",
+            "1",
+            "",
+            "0",
+            "1698",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "P3.15.18.2",
+            "Supervision Alarm Level",
+            "P3.13.1.5",
+            "P3.13.1.6",
+            "P3.13.1.4",
+            "0.00",
+            "1699",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nParameters Menu\nTable 93: Pump Running Time Counter Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.15.19.1\nSet Run-time Counter\n0\n1\n1\n0\n1673\n0 = No action\n1 = Set the value that is specified by P3.15.19.2\nto the run-time counter of the selected pump.\nP3.15.19.2\nSet Run-time Counter:\nValue\n0\n300 000\nh\n0\n1087\nP3.15.19.3\nSet Run-time Counter:\nPump Selection\n0\n8\n1\n1088\n0 = All Pumps\n1 = Pump (1)\n2 = Pump 2\n3 = Pump 3\n4 = Pump 4\n5 = Pump 5\n6 = Pump 6\n7 = Pump 7\n8 = Pump 8\nP3.15.19.4\nPump RuntimeAlarm\nLimit\n0\n300 000\nh\n0\n1109\n0 = Not Used\nP3.15.19.5\nPump Run-time FaultLi-\nmit\n0\n300 000\nh\n0\n1110\n0 = Not Used\nTable 94: Advanced Settings\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.15.22.1\nStaging Frequency\nP3.3.1.1\n320.0\nHz\n320.0\n15545\nP3.15.22.2\nDe-staging Frequency\n0.0\nP3.3.1.2\nHz\n0.00\n15546\nP3.15.22.3\nStaging Delay\n0\n3600\ns\n15588\n0\n0 = bandwidth delay used\nP3.15.22.4\nDe-staging Delay\n0\n3600\ns\n15589\n0\n0 = bandwidth delay used\n6.16 Group 3.16: Maintenance Counters\nTable 95: Maintenance Counters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.16.1\nCounter 1 Mode\n0\n2\n0\n1104\n0 = Not used\n1 = Hours\n2 = Revolutions * 1000\nP3.16.2\nCounter 1 Alarm Limit\n0\n2147483647\nh/kRev\n0\n1105\n0 = Not used\nP3.16.3\nCounter 1 Fault Limit\n0\n2147483647\nh/kRev\n0\n1106\n0 = Not used\nP3.16.4\nCounter 1 Reset\n0\n1107\nP3.16.5\nCounter 1 DI Reset\n0\n490\nCLOSED = Reset\n122 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.15.19.1",
+            "Set Run-time Counter",
+            "0",
+            "1 1",
+            "",
+            "0",
+            "1673",
+            "0 = No action 1 = Set the value that is specified by P3.15.19.2 to the run-time counter of the selected pump."
+          ],
+          [
+            "P3.15.19.2",
+            "Set Run-time Counter: Value",
+            "0",
+            "300 000",
+            "h",
+            "0",
+            "1087",
+            ""
+          ],
+          [
+            "P3.15.19.3",
+            "Set Run-time Counter: Pump Selection",
+            "0",
+            "8",
+            "",
+            "1",
+            "1088",
+            "0 = All Pumps 1 = Pump (1) 2 = Pump 2 3 = Pump 3 4 = Pump 4 5 = Pump 5 6 = Pump 6 7 = Pump 7 8 = Pump 8"
+          ],
+          [
+            "P3.15.19.4",
+            "Pump RuntimeAlarm Limit",
+            "0",
+            "300 000",
+            "h",
+            "0",
+            "1109",
+            "0 = Not Used"
+          ],
+          [
+            "P3.15.19.5",
+            "Pump Run-time FaultLi- mit",
+            "0",
+            "300 000",
+            "h",
+            "0",
+            "1110",
+            "0 = Not Used"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.15.22.1",
+            "Staging Frequency",
+            "P3.3.1.1",
+            "320.0",
+            "Hz",
+            "320.0",
+            "15545",
+            ""
+          ],
+          [
+            "P3.15.22.2",
+            "De-staging Frequency",
+            "0.0",
+            "P3.3.1.2",
+            "Hz",
+            "0.00",
+            "15546",
+            ""
+          ],
+          [
+            "P3.15.22.3",
+            "Staging Delay",
+            "0",
+            "3600",
+            "s",
+            "15588",
+            "0",
+            "0 = bandwidth delay used"
+          ],
+          [
+            "P3.15.22.4",
+            "De-staging Delay",
+            "0",
+            "3600",
+            "s",
+            "15589",
+            "0",
+            "0 = bandwidth delay used"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.16.1",
+            "Counter 1 Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "1104",
+            "0 = Not used 1 = Hours 2 = Revolutions * 1000"
+          ],
+          [
+            "P3.16.2",
+            "Counter 1 Alarm Limit",
+            "0",
+            "2147483647",
+            "h/kRev",
+            "0",
+            "1105",
+            "0 = Not used"
+          ],
+          [
+            "P3.16.3",
+            "Counter 1 Fault Limit",
+            "0",
+            "2147483647",
+            "h/kRev",
+            "0",
+            "1106",
+            "0 = Not used"
+          ],
+          [
+            "P3.16.4",
+            "Counter 1 Reset",
+            "",
+            "",
+            "",
+            "0",
+            "1107",
+            ""
+          ],
+          [
+            "P3.16.5",
+            "Counter 1 DI Reset",
+            "",
+            "",
+            "",
+            "0",
+            "490",
+            "CLOSED = Reset"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "VACON® 100 FLOW\nApplication Guide\n6.17 Group 3.17: Fire Mode\nDanfoss\nParameters Menu\nTable 96: Fire Mode Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.17.1\nFire Mode Password\n0\n9999\n0\n1599\n1001 = Enabled\n1234 = Test mode\nP3.17.2\nFire Mode Frequency Source\n0\n18\n0\n1617\n0 = Fire Mode frequency\n1 = Preset speeds\n2 = Keypad\n3 = Fieldbus\n4 = AI1\n5 = AI2\n6 = AI1 + AI2\n7 = PID1\n8 = Motor potentiometer\n9 = Block Out. 1\n10 = Block Out.2\n11 = Block Out.3\n12 = Block Out.4\n13 = Block Out.5\n14 = Block Out.6\n15 = Block Out.7\n16 = Block Out.8\n17 = Block Out.9\n18 = Block Out. 10\nP3.17.3\nFire Mode Frequency\n0.00\nP3.3.1.2\nHz\n50.00\n1598\nP3.17.4\nFire Mode Activation on\nOPEN\nDigIN Slot0.2\n1596\nOPEN = Fire Mode active\nCLOSED = No action\nP3.17.5\nFire Mode Activation on\nCLOSE\nDigIN Slot0.1\n1619\nOPEN = No action\nCLOSED = Fire Mode active\nP3.17.6\nFire Mode Reverse\nDigIN Slot0.1\n1618\nOPEN = Forward\nCLOSED = Reverse\nDigIN Slot0.1 = Forward\nDigIN Slot0.2 = Reverse\nV3.17.7\nFire Mode Status\n0\n3\n1597\n0 = Disabled\n1 = Enabled\n2 = Activated (Enabled + DI Open)\n3 = Test Mode\nSee 5.4.2 Basic Monitoring Parameters.\nV3.17.8\nFire Mode Counter\n0\n65535\n1679\nP3.17.9\nFire Mode Run Indication\nCurrent\n0\n100\n%\n10\n15580\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 123",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.17.1",
+            "Fire Mode Password",
+            "0",
+            "9999",
+            "",
+            "0",
+            "1599",
+            "1001 = Enabled 1234 = Test mode"
+          ],
+          [
+            "P3.17.2",
+            "Fire Mode Frequency Source",
+            "0",
+            "18",
+            "",
+            "0",
+            "1617",
+            "0 = Fire Mode frequency 1 = Preset speeds 2 = Keypad 3 = Fieldbus 4 = AI1 5 = AI2 6 = AI1 + AI2 7 = PID1 8 = Motor potentiometer 9 = Block Out. 1 10 = Block Out.2 11 = Block Out.3 12 = Block Out.4 13 = Block Out.5 14 = Block Out.6 15 = Block Out.7 16 = Block Out.8 17 = Block Out.9 18 = Block Out. 10"
+          ],
+          [
+            "P3.17.3",
+            "Fire Mode Frequency",
+            "0.00",
+            "P3.3.1.2",
+            "Hz",
+            "50.00",
+            "1598",
+            ""
+          ],
+          [
+            "P3.17.4",
+            "Fire Mode Activation on OPEN",
+            "",
+            "",
+            "",
+            "DigIN Slot0.2",
+            "1596",
+            "OPEN = Fire Mode active CLOSED = No action"
+          ],
+          [
+            "P3.17.5",
+            "Fire Mode Activation on CLOSE",
+            ":unselected:",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "1619",
+            "OPEN = No action CLOSED = Fire Mode active"
+          ],
+          [
+            "P3.17.6",
+            "Fire Mode Reverse",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "1618",
+            "OPEN = Forward CLOSED = Reverse DigIN Slot0.1 = Forward DigIN Slot0.2 = Reverse"
+          ],
+          [
+            "V3.17.7",
+            "Fire Mode Status",
+            "0",
+            "3",
+            "",
+            "",
+            "1597",
+            "0 = Disabled 1 = Enabled 2 = Activated (Enabled + DI Open) 3 = Test Mode See 5.4.2 Basic Monitoring Parameters."
+          ],
+          [
+            "V3.17.8",
+            "Fire Mode Counter",
+            "0",
+            "65535",
+            "",
+            "",
+            "1679",
+            ""
+          ],
+          [
+            "P3.17.9",
+            "Fire Mode Run Indication Current",
+            "0",
+            "100",
+            "%",
+            "10",
+            "15580",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameters Menu\n6.18 Group 3.18: Motor Preheat Parameters\nTable 97: Motor Preheat Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.18.1\nMotor Preheat Function\n0\n3\n0\n1225\n0 = Not used\n1 = Always in stop state\n2 = Controlled by DI\n3 = Temperature limit, heatsink\nP3.18.2\nPreheat Temperature Limit\n-20\n100\n°C/F\n0\n1226\nP3.18.3\nMotor Preheat Current\n0\n0.5*IL\nA\nVaries\n1227\nP3.18.4\nMotor Preheat ON\nVaries\nVaries\nDigIN Slot0.1\n1044\nOPEN = No action\nCLOSED = Preheat activated in Stop state\nP3.18.5\nPreheat Motor Temperature\n0\n6\n0\n1045\n0 = Not Used\n1 = Temperature Input 1\n2 = Temperature Input 2\n3 = Temperature Input 3\n4 = Temperature Input 4\n5 = Temperature Input 5\n6 = Temperature Input 6\n6.19 Group 3.19: Drive Customizer\nTable 98: Drive Customizer Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.19.1\nOperation Mode\n0\n1\n1\n15001\n0 = Execute Program\n1 = Programming\n6.20 Group 3.21: Pump Control\nTable 99: Auto-cleaning Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.21.1.1\nCleaning Function\n0\n3\n0\n1714\n0 = Disabled\n1 = Enabled (DIN)\n2 = Enabled (current)\n3 = Enabled (weekdays)\nP3.21.1.2\nCleaning Activation\nDigINSlot0.1\n1715\nP3.21.1.3\nCleaning Current Limit\n0.0\n200.0\n%\n120.0\n1712\nP3.21.1.4\nCleaning CurrentDelay\n0.0\n300.0\ns\n60.0\n1713\nP3.21.1.5\nCleaning Weekdays\n0\n127\n0\n1723\nB0 = Sunday\nB1 = Monday\nB2 = Tuesday\nB3 = Wednesday\nB4 = Thursday\n124 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.18.1",
+            "Motor Preheat Function",
+            "0",
+            "3",
+            "",
+            "0",
+            "1225",
+            "0 = Not used 1 = Always in stop state 2 = Controlled by DI 3 = Temperature limit, heatsink"
+          ],
+          [
+            "P3.18.2",
+            "Preheat Temperature Limit",
+            "-20",
+            "100",
+            "°C/F",
+            "0",
+            "1226",
+            ""
+          ],
+          [
+            "P3.18.3",
+            "Motor Preheat Current",
+            "0",
+            "0.5*IL",
+            "A",
+            "Varies",
+            "1227",
+            ""
+          ],
+          [
+            "P3.18.4",
+            "Motor Preheat ON",
+            "Varies",
+            "Varies",
+            "",
+            "DigIN Slot0.1",
+            "1044",
+            "OPEN = No action CLOSED = Preheat activated in Stop state"
+          ],
+          [
+            "P3.18.5",
+            "Preheat Motor Temperature",
+            "0",
+            "6",
+            "",
+            "0",
+            "1045",
+            "0 = Not Used 1 = Temperature Input 1 2 = Temperature Input 2 3 = Temperature Input 3 4 = Temperature Input 4 5 = Temperature Input 5 6 = Temperature Input 6"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.19.1",
+            "Operation Mode",
+            "0",
+            "1",
+            "",
+            "1",
+            "15001",
+            "0 = Execute Program 1 = Programming"
+          ],
+          [
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.21.1.1",
+            "Cleaning Function",
+            "0",
+            "3",
+            "",
+            "0",
+            "1714",
+            "0 = Disabled 1 = Enabled (DIN) 2 = Enabled (current) 3 = Enabled (weekdays)"
+          ],
+          [
+            "P3.21.1.2",
+            "Cleaning Activation",
+            "",
+            "",
+            "",
+            "DigINSlot0.1",
+            "1715",
+            ""
+          ],
+          [
+            "P3.21.1.3",
+            "Cleaning Current Limit",
+            "0.0",
+            "200.0",
+            "%",
+            "120.0",
+            "1712",
+            ""
+          ],
+          [
+            "P3.21.1.4",
+            "Cleaning CurrentDelay",
+            "0.0",
+            "300.0",
+            "s",
+            "60.0",
+            "1713",
+            ""
+          ],
+          [
+            "P3.21.1.5",
+            "Cleaning Weekdays",
+            "0",
+            "127",
+            "",
+            "0",
+            "1723",
+            "B0 = Sunday B1 = Monday B2 = Tuesday B3 = Wednesday B4 = Thursday"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameters Menu\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nB5 = Friday\nB6 = Saturday\nP3.21.1.6\nCleaning Time of Day\n00:00:00\n23:59:59\n00:00:00\n1700\nP3.21.1.7\nCleaning Cycles\n1\n100\n5\n1716\nP3.21.1.8\nClean Forward Frequency\n0.00\n50.00\nHz\n45.00\n1717\nP3.21.1.9\nClean Forward Time\n0.00\n320.00\ns\n2.00\n1718\nP3.21.1.10\nClean Reverse Frequency\n0.00\n50.00\nHz\n45.00\n1719\nP3.21.1.11\nClean Reverse Time\n0.00\n320.00\ns\n0.00\n1720\nP3.21.1.12\nCleaning Acceleration Time\n0.1\n300.0\ns\n0.1\n1721\nP3.21.1.13\nCleaning Deceleration Time\n0.1\n300.0\ns\n0.1\n1722\nTable 100: Jockey Pump Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.21.2.1\nJockey Function\n0\n2\n0\n1674\n0 = Not used\n1 = PID sleep\n2 = PID sleep (level)\nP3.21.2.2\nJockey Start Level\nVaries\nVaries\nVaries\n0.00\n1675\nP3.21.2.3\nJockey Stop Level\nVaries\nVaries\nVaries\n0.00\n1676\nTable 101: Priming Pump Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.21.3.1\nPriming Function\n0\n1\n0\n1677\n0 = Disabled\n1 = Enabled\nP3.21.3.2\nPriming Time\n0.0\n320.00\n3.0\n1678\nTable 102: Anti-blocking Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.21.4.1\nAnti-blocking Interval\n0\n96.0\nh\n0\n1696\nP3.21.4.2\nAnti-blocking run-time\n0\n300\ns\n20\n1697\nP3.21.4.3\nAnti-blocking frequency\nP3.3.1.1\nP3.3.1.2\nHz\n15.0\n1504\nTable 103: Frost Protection Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\nP3.21.5.1\nFrost Protec-\ntion\n0\n1\n0\n1704\n0 = Disabled\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 125",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "B5 = Friday B6 = Saturday"
+          ],
+          [
+            "P3.21.1.6",
+            "Cleaning Time of Day",
+            "00:00:00",
+            "23:59:59",
+            "",
+            "00:00:00",
+            "1700",
+            ""
+          ],
+          [
+            "P3.21.1.7",
+            "Cleaning Cycles",
+            "1",
+            "100",
+            "",
+            "5",
+            "1716",
+            ""
+          ],
+          [
+            "P3.21.1.8",
+            "Clean Forward Frequency",
+            "0.00",
+            "50.00",
+            "Hz",
+            "45.00",
+            "1717",
+            ""
+          ],
+          [
+            "P3.21.1.9",
+            "Clean Forward Time",
+            "0.00",
+            "320.00",
+            "s",
+            "2.00",
+            "1718",
+            ""
+          ],
+          [
+            "P3.21.1.10",
+            "Clean Reverse Frequency",
+            "0.00",
+            "50.00",
+            "Hz",
+            "45.00",
+            "1719",
+            ""
+          ],
+          [
+            "P3.21.1.11",
+            "Clean Reverse Time",
+            "0.00",
+            "320.00",
+            "s",
+            "0.00",
+            "1720",
+            ""
+          ],
+          [
+            "P3.21.1.12",
+            "Cleaning Acceleration Time",
+            "0.1",
+            "300.0",
+            "s",
+            "0.1",
+            "1721",
+            ""
+          ],
+          [
+            "P3.21.1.13",
+            "Cleaning Deceleration Time",
+            "0.1",
+            "300.0",
+            "s",
+            "0.1",
+            "1722",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.21.2.1",
+            "Jockey Function",
+            "0",
+            "2",
+            "",
+            "0",
+            "1674",
+            "0 = Not used 1 = PID sleep 2 = PID sleep (level)"
+          ],
+          [
+            "P3.21.2.2",
+            "Jockey Start Level",
+            "Varies",
+            "Varies",
+            "Varies",
+            "0.00",
+            "1675",
+            ""
+          ],
+          [
+            "P3.21.2.3",
+            "Jockey Stop Level",
+            "Varies",
+            "Varies",
+            "Varies",
+            "0.00",
+            "1676",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.21.3.1",
+            "Priming Function",
+            "0",
+            "1",
+            "",
+            "0",
+            "1677",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "P3.21.3.2",
+            "Priming Time",
+            "0.0",
+            "320.00",
+            "",
+            "3.0",
+            "1678",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.21.4.1",
+            "Anti-blocking Interval",
+            "0",
+            "96.0",
+            "h",
+            "0",
+            "1696",
+            ""
+          ],
+          [
+            "P3.21.4.2",
+            "Anti-blocking run-time",
+            "0",
+            "300",
+            "s",
+            "20",
+            "1697",
+            ""
+          ],
+          [
+            "P3.21.4.3",
+            "Anti-blocking frequency",
+            "P3.3.1.1",
+            "P3.3.1.2",
+            "Hz",
+            "15.0",
+            "1504",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.21.5.1",
+            "Frost Protec- tion",
+            "0",
+            "1",
+            "",
+            "0",
+            "1704",
+            "0 = Disabled"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameters Menu\nIndex\nParameter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\n1 = Enabled\nP3.21.5.2\nTemperature\nSignal\n0\n29\n6\n1705\n0 = Temperature Input1 (-50 ... 200° ℃)\n1 = Temperature Input2 (-50 ... 200° C)\n2 = Temperature Input3 (-50 ... 200° C)\n3 = Temperature Input4 (-50 ... 200° C)\n4 = Temperature Input5 (-50 ... 200° C)\n5 = Temperature Input6 (-50 ... 200° C)\n6 = Analog input 1\n7 = Analog input 2\n8 = Analog input 3\n9 = Analog input 4\n10 = Analog input 5\n11 = Analog input 6\n12 = ProcessDataln1 (0-100%)\n13 = ProcessDataln2 (0-100%)\n14 = ProcessDataln3 (0-100%)\n15 = ProcessDataln4 (0-100%)\n16 = ProcessDataln5 (0-100%)\n17 = ProcessDataln6 (0-100%)\n18 = ProcessDataln7 (0-100%)\n19 = ProcessDataln8 (0-100%)\n20 = Block Out. 1\n21 = Block Out.2\n22 = Block Out.3\n23 = Block Out.4\n24 = Block Out.5\n25 = Block Out.6\n26 = Block Out.7\n27 = Block Out.8\n28 = Block Out.9\n29 = Block Out.10\nP3.21.5.3\nTemperature\nSignalMini-\nmum\n-50.0 (℃)\nP3.21.5.4.4\n°C/ºF\n-50.0\n(℃)\n1706\nP3.21.5.4\nTemperature\nSignalMaxi-\nmum\nP3.21.5.3\n200.0 (℃)\n°C/ºF\n200.0\n(°℃)\n1707\nP3.21.5.5\nFrost Protec-\ntionTempera-\nture Limit\nP3.21.5. 3\nP3.21.5.4\n°C/ºF\n5.00\n(°C)\n1708\nP3.21.5.6\nFrost Protec-\ntion Frequen-\ncy\n0.0\nP3.3.1.2\nHz\n10.0\n1710\nP3.21.5.7\nFrost Temper-\natureMonitor-\ning\nVaries\nVaries\n°C/ºF\n1711\nThis monitoring value shows the value of the tem-\nperature signal that is used for Frost Protection\nfunction.\n126 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "1 = Enabled"
+          ],
+          [
+            "P3.21.5.2",
+            "Temperature Signal",
+            "0",
+            "29",
+            "",
+            "6",
+            "1705",
+            "0 = Temperature Input1 (-50 ... 200° ℃) 1 = Temperature Input2 (-50 ... 200° C) 2 = Temperature Input3 (-50 ... 200° C) 3 = Temperature Input4 (-50 ... 200° C) 4 = Temperature Input5 (-50 ... 200° C) 5 = Temperature Input6 (-50 ... 200° C) 6 = Analog input 1 7 = Analog input 2 8 = Analog input 3 9 = Analog input 4 10 = Analog input 5 11 = Analog input 6 12 = ProcessDataln1 (0-100%) 13 = ProcessDataln2 (0-100%) 14 = ProcessDataln3 (0-100%) 15 = ProcessDataln4 (0-100%) 16 = ProcessDataln5 (0-100%) 17 = ProcessDataln6 (0-100%) 18 = ProcessDataln7 (0-100%) 19 = ProcessDataln8 (0-100%) 20 = Block Out. 1 21 = Block Out.2 22 = Block Out.3 23 = Block Out.4 24 = Block Out.5 25 = Block Out.6 26 = Block Out.7 27 = Block Out.8 28 = Block Out.9 29 = Block Out.10\n:unselected: :unselected: :unselected: :unselected: :unselected: :unselected:"
+          ],
+          [
+            "P3.21.5.3",
+            "Temperature SignalMini- mum",
+            "-50.0 (℃)",
+            "P3.21.5.4.4",
+            "°C/ºF",
+            "-50.0 (℃)",
+            "1706",
+            ""
+          ],
+          [
+            "P3.21.5.4",
+            "Temperature SignalMaxi- mum",
+            "P3.21.5.3",
+            "200.0 (℃)",
+            "°C/ºF",
+            "200.0 (°℃)",
+            "1707",
+            ""
+          ],
+          [
+            "P3.21.5.5",
+            "Frost Protec- tionTempera- ture Limit",
+            "P3.21.5. 3",
+            "P3.21.5.4",
+            "°C/ºF",
+            "5.00 (°C)",
+            "1708",
+            ""
+          ],
+          [
+            "P3.21.5.6",
+            "Frost Protec- tion Frequen- cy",
+            "0.0",
+            "P3.3.1.2",
+            "Hz",
+            "10.0",
+            "1710",
+            ""
+          ],
+          [
+            "P3.21.5.7",
+            "Frost Temper- atureMonitor- ing",
+            "Varies",
+            "Varies",
+            "°C/ºF",
+            "",
+            "1711",
+            "This monitoring value shows the value of the tem- perature signal that is used for Frost Protection function."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Parameters Menu\nVACON® 100 FLOW\nDanfoss\nApplication Guide\nTable 104: Flow Switch Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.21.6.1\nFlow Switch\nDigINSlot0.2\n15590\nP3.21.6.2\nFlow Switch FaultDelay\n0.0\n3000.0\ns\n20.0\n15585\nP3.21.6.3\nFlow Switch Bypass at Start\n0.0\n3000.0\ns\n20.0\n15586\nP3.21.6.4\nFlow Switch Minimum Frequency\nVaries\nVaries\nHz\n0.0\n15587\n6.21 Group 3.23: Advanced Harmonic Filter\nTable 105: Advanced Harmonic Filter Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.23.1\nCap Disconnect Limit\n0\n100\n%\n10\n15510\nP3.23.2\nCap Disconnect Hyst\n0\n100\n%\n10\n15511\nP3.23.3\nAHF overtemperature\nDigIN Slot0.1\n15513\nP3.23.4\nAHF Fault Response\n0\n3\n3\n15512\n0 = No Action\n1 = Alarm\n2 = Fault\n3 = Fault, Coast\n6.22 Group 3.24: Condition-based Monitoring\nTable 106: Condition-based Monitoring Parameters\nIndex\nName\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.24.1\nCondition Based Monitoring Fault Mode\n0\n2\n1\n3540\n0=No Action\n1=Warnings\n2=Fault + Warnings\nP3.24.2 Baseline Settings\nP3.24.2.1\nBaselineRun Start\n0\n1\n0\n3501\n0=Disabled\n1=Enabled\nP3.24.2.2\nBaselineRun MinFreq\nVaries\nVaries\nHz\n0.00\n3502\nP3.24.2.3\nBaselineRun MaxFreq\nVaries\nVaries\nHz\n50.00\n3503\nP3.24.2.4\nBaselineRun Duration\n30\n7200\ns\n120\n3504\nP3.24.2.5\nModified Array\n0\n12\n0\n3505\n0=Freq Points\n1=Cur Max Steady\n2=Cur Min Steady\n3=Cur Mean Steady\n4=Cur Std Steady\n5=Vibr Max Ramp\n6=Vibr Min Ramp\n7=Vibr Mean Ramp\n8=Vibr Std Ramp\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 127",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.21.6.1",
+            "Flow Switch",
+            "",
+            "",
+            "",
+            "DigINSlot0.2",
+            "15590",
+            ""
+          ],
+          [
+            "P3.21.6.2",
+            "Flow Switch FaultDelay",
+            "0.0",
+            "3000.0",
+            "s",
+            "20.0",
+            "15585",
+            ""
+          ],
+          [
+            "P3.21.6.3",
+            "Flow Switch Bypass at Start",
+            "0.0",
+            "3000.0",
+            "s",
+            "20.0",
+            "15586",
+            ""
+          ],
+          [
+            "P3.21.6.4",
+            "Flow Switch Minimum Frequency",
+            "Varies",
+            "Varies",
+            "Hz",
+            "0.0",
+            "15587",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.23.1",
+            "Cap Disconnect Limit",
+            "0",
+            "100",
+            "%",
+            "10",
+            "15510",
+            ""
+          ],
+          [
+            "P3.23.2",
+            "Cap Disconnect Hyst",
+            "0",
+            "100",
+            "%",
+            "10",
+            "15511",
+            ""
+          ],
+          [
+            "P3.23.3",
+            "AHF overtemperature",
+            "",
+            "",
+            "",
+            "DigIN Slot0.1",
+            "15513",
+            ""
+          ],
+          [
+            "P3.23.4",
+            "AHF Fault Response",
+            "0",
+            "3",
+            "",
+            "3",
+            "15512",
+            "0 = No Action 1 = Alarm 2 = Fault 3 = Fault, Coast"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Name",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.24.1",
+            "Condition Based Monitoring Fault Mode",
+            "0",
+            "2",
+            "",
+            "1",
+            "3540",
+            "0=No Action 1=Warnings 2=Fault + Warnings"
+          ],
+          [
+            "P3.24.2 Baseline Settings"
+          ],
+          [
+            "P3.24.2.1",
+            "BaselineRun Start",
+            "0",
+            "1",
+            "",
+            "0",
+            "3501",
+            "0=Disabled 1=Enabled"
+          ],
+          [
+            "P3.24.2.2",
+            "BaselineRun MinFreq",
+            "Varies",
+            "Varies",
+            "Hz",
+            "0.00",
+            "3502",
+            ""
+          ],
+          [
+            "P3.24.2.3",
+            "BaselineRun MaxFreq",
+            "Varies",
+            "Varies",
+            "Hz",
+            "50.00",
+            "3503",
+            ""
+          ],
+          [
+            "P3.24.2.4",
+            "BaselineRun Duration",
+            "30",
+            "7200",
+            "s",
+            "120",
+            "3504",
+            ""
+          ],
+          [
+            "P3.24.2.5",
+            "Modified Array",
+            "0",
+            "12",
+            "",
+            "0",
+            "3505",
+            "0=Freq Points 1=Cur Max Steady 2=Cur Min Steady 3=Cur Mean Steady 4=Cur Std Steady 5=Vibr Max Ramp 6=Vibr Min Ramp 7=Vibr Mean Ramp 8=Vibr Std Ramp"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameters Menu\nIndex\nName\nMin\nMax\nUnit\nDefault\nID\nDescription\n9=Load Max Steady\n10=Load Min Steady\n11=Load Mean Steady\n12=Load Std Steady\nP3.24.2.6\nModified Point\n0\n9\n0\n3506\nP3.24.2.7\nModified Value\n-300.00\n320.00\nvarious\n0.00\n3507\nB3.24.2.8\nModified Activation\n0\n1\n0\n3508\n0=Disabled\n1=Enabled\nP3.24.2.9\nBaseline Data Selector\n0\n12\n0\n3509\n0=Freq Points\n1=Cur Max Steady\n2=Cur Min Steady\n3=Cur Mean Steady\n4=Cur Std Steady\n5=Vibr Max Ramp\n6=Vibr Min Ramp\n7=Vibr Mean Ramp\n8=Vibr Std Ramp\n9=Load Max Steady\n10=Load Min Steady\n11=Load Mean Steady\n12=Load Std Steady\nP3.24.3 Stator Winding\nP3.24.3.1\nLine Freq\n0.00\n100.00\nHz\n50.00\n1913\nP3.24.3.2\nLine Freq Hyst\n0.00\n10.00\nHz\n1.00\n1914\nP3.24.3.3 Current Unbalance\nP3.24.3.3.1 Threshold Value\nP3.24.3.3.1.1\nMean Factor\n-10.0\n10.0.0\n1.0\n3511\nP3.24.3.3.1.2\nMin Factor\n-10.0\n10.0.0\n0.0\n3512\nP3.24.3.3.1.3\nMax Factor\n-10.0\n10.0.0\n0.0\n3513\nP3.24.3.3.1.4\nStd Factor\n-10.0\n10.0.0\n0.0\n3514\nP3.24.3.3.1.5\nInterpolation Type\n0\n1\n1\n3515\n0=Constant\n1=Linear\nP3.24.3.3.2 Limits\nP3.24.3.3.2.1\nWarning S1 Mode\n0\n2\n0\n3516\n0=Abs. Value\n1=Baseline Offset\n2=Baseline Factor\nP3.24.3.3.2.2\nWarning S1 High\n0.00\n100.00\n%\n0.00\n3517\nP3.24.3.3.2.3\nWarning S1 Delay\n0\n3600\ns\n0\n3518\n128 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Name",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "9=Load Max Steady 10=Load Min Steady 11=Load Mean Steady 12=Load Std Steady"
+          ],
+          [
+            "P3.24.2.6",
+            "Modified Point",
+            "0",
+            "9",
+            "",
+            "0",
+            "3506",
+            ""
+          ],
+          [
+            "P3.24.2.7",
+            "Modified Value",
+            "-300.00",
+            "320.00",
+            "various",
+            "0.00",
+            "3507",
+            ""
+          ],
+          [
+            "B3.24.2.8",
+            "Modified Activation",
+            "0",
+            "1",
+            "",
+            "0",
+            "3508",
+            "0=Disabled 1=Enabled"
+          ],
+          [
+            "P3.24.2.9",
+            "Baseline Data Selector",
+            "0",
+            "12",
+            "",
+            "0",
+            "3509",
+            "0=Freq Points 1=Cur Max Steady 2=Cur Min Steady 3=Cur Mean Steady 4=Cur Std Steady 5=Vibr Max Ramp 6=Vibr Min Ramp 7=Vibr Mean Ramp 8=Vibr Std Ramp 9=Load Max Steady 10=Load Min Steady 11=Load Mean Steady 12=Load Std Steady"
+          ],
+          [
+            "P3.24.3 Stator Winding"
+          ],
+          [
+            "P3.24.3.1",
+            "Line Freq",
+            "0.00",
+            "100.00",
+            "Hz",
+            "50.00",
+            "1913",
+            ""
+          ],
+          [
+            "P3.24.3.2",
+            "Line Freq Hyst",
+            "0.00",
+            "10.00",
+            "Hz",
+            "1.00",
+            "1914",
+            ""
+          ],
+          [
+            "P3.24.3.3 Current Unbalance"
+          ],
+          [
+            "P3.24.3.3.1 Threshold Value"
+          ],
+          [
+            "P3.24.3.3.1.1",
+            "Mean Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "1.0",
+            "3511",
+            ""
+          ],
+          [
+            "P3.24.3.3.1.2",
+            "Min Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "0.0",
+            "3512",
+            ""
+          ],
+          [
+            "P3.24.3.3.1.3",
+            "Max Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "0.0",
+            "3513",
+            ""
+          ],
+          [
+            "P3.24.3.3.1.4",
+            "Std Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "0.0",
+            "3514",
+            ""
+          ],
+          [
+            "P3.24.3.3.1.5",
+            "Interpolation Type",
+            "0",
+            "1",
+            "",
+            "1",
+            "3515",
+            "0=Constant 1=Linear"
+          ],
+          [
+            "P3.24.3.3.2 Limits"
+          ],
+          [
+            "P3.24.3.3.2.1",
+            "Warning S1 Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "3516",
+            "0=Abs. Value 1=Baseline Offset 2=Baseline Factor"
+          ],
+          [
+            "P3.24.3.3.2.2",
+            "Warning S1 High",
+            "0.00",
+            "100.00",
+            "%",
+            "0.00",
+            "3517",
+            ""
+          ],
+          [
+            "P3.24.3.3.2.3",
+            "Warning S1 Delay",
+            "0",
+            "3600",
+            "s",
+            "0",
+            "3518",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameters Menu\nIndex\nName\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.24.3.3.2.4\nWarning S2 Mode\n0\n2\n0\n3519\n0=Abs. Value\n1=Baseline Offset\n2=Baseline Factor\nP3.24.3.3.2.5\nWarning S2 High\n0.00\n100.00\n%\n0.00\n3520\nP3.24.3.2.2.6\nWarning S2 Delay\n0\n3600\ns\n0\n3521\nP3.24.3.2.2.7\nAlarm/Fault Mode\n0\n2\n0\n3522\n0=Abs. Value\n1=Baseline Offset\n2=Baseline Factor\nP3.24.3.2.2.8\nAlarm/Fault High\n0.00\n100.00\n%\n0.00\n3523\nP3.24.3.2.2.9\nAlarm/Fault Delay\n0\n3600\ns\n0\n3524\nP3.24.3.3.3 Counters\nP3.24.3.3.3.1\nWarning S1 Counter\n0.0\n360.0\ns\n0.0\n3541\nP3.24.3.3.3.2\nWarning S2 Counter\n0.0\n360.0\ns\n0.0\n3542\nP3.24.3.3.3.3\nAlarm/Fault Counter\n0.0\n360.0\ns\n0.0\n3543\nP3.24.3.3.3.4\nStop Counter Delay\n0.0\n320.0\ns\n0.0\n3549\nP3.24.4 Vibration\nP3.24.4.1\nVibration Input\n0\n4\n0\n3587\n0=Not Used\n1=AI1\n2=AI2\n3=AI3\n4=AI4\nP3.24.4.2 Threshold Value\nP3.24.4.2.1\nMean Factor\n-10.0\n10.0.0\n0.0\n3550\nP3.24.4.2.2\nMin Factor\n-10.0\n10.0.0\n0.0\n3551\nP3.24.4.2.3\nMax Factor\n-10.0\n10.0.0\n1.0\n3552\nP3.24.4.2.4\nStd Factor\n-10.0\n10.0.0\n0.0\n3553\nP3.24.4.2.5\nInterpolation Type\n0\n1\n0\n3554\n0=Constant\n1=Linear\nP3.24.4.3 Limits\nP3.24.4.3.1\nWarning S1 Mode\n0\n2\n0\n3555\n0=Abs. Value\n1=Baseline Offset\n2=Baseline Factor\nP3.24.4.3.2\nWarning S1 High\n0.00\n100.00\n%\n0.00\n3556\nP3.24.4.3.3\nWarning S1 Delay\n0\n3600\ns\n0\n3557\nP3.24.4.3.4\nWarning S2 Mode\n0\n2\n0\n3558\n0=Abs. Value\n1=Baseline Offset\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 129",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Name",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.24.3.3.2.4",
+            "Warning S2 Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "3519",
+            "0=Abs. Value 1=Baseline Offset 2=Baseline Factor"
+          ],
+          [
+            "P3.24.3.3.2.5",
+            "Warning S2 High",
+            "0.00",
+            "100.00",
+            "%",
+            "0.00",
+            "3520",
+            ""
+          ],
+          [
+            "P3.24.3.2.2.6",
+            "Warning S2 Delay",
+            "0",
+            "3600",
+            "s",
+            "0",
+            "3521",
+            ""
+          ],
+          [
+            "P3.24.3.2.2.7",
+            "Alarm/Fault Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "3522",
+            "0=Abs. Value 1=Baseline Offset 2=Baseline Factor"
+          ],
+          [
+            "P3.24.3.2.2.8",
+            "Alarm/Fault High",
+            "0.00",
+            "100.00",
+            "%",
+            "0.00",
+            "3523",
+            ""
+          ],
+          [
+            "P3.24.3.2.2.9",
+            "Alarm/Fault Delay",
+            "0",
+            "3600",
+            "s",
+            "0",
+            "3524",
+            ""
+          ],
+          [
+            "P3.24.3.3.3 Counters"
+          ],
+          [
+            "P3.24.3.3.3.1",
+            "Warning S1 Counter",
+            "0.0",
+            "360.0",
+            "s",
+            "0.0",
+            "3541",
+            ""
+          ],
+          [
+            "P3.24.3.3.3.2",
+            "Warning S2 Counter",
+            "0.0",
+            "360.0",
+            "s",
+            "0.0",
+            "3542",
+            ""
+          ],
+          [
+            "P3.24.3.3.3.3",
+            "Alarm/Fault Counter",
+            "0.0",
+            "360.0",
+            "s",
+            "0.0",
+            "3543",
+            ""
+          ],
+          [
+            "P3.24.3.3.3.4",
+            "Stop Counter Delay",
+            "0.0",
+            "320.0",
+            "s",
+            "0.0",
+            "3549",
+            ""
+          ]
+        ],
+        [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "P3.24.4 Vibration",
+            ""
+          ],
+          [
+            "P3.24.4.1",
+            "Vibration Input",
+            "0",
+            "4",
+            "",
+            "0",
+            "3587",
+            "0=Not Used 1=AI1 2=AI2 3=AI3 4=AI4"
+          ],
+          [
+            "P3.24.4.2 Threshold Value"
+          ],
+          [
+            "P3.24.4.2.1",
+            "Mean Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "0.0",
+            "3550",
+            ""
+          ],
+          [
+            "P3.24.4.2.2",
+            "Min Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "0.0",
+            "3551",
+            ""
+          ],
+          [
+            "P3.24.4.2.3",
+            "Max Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "1.0",
+            "3552",
+            ""
+          ],
+          [
+            "P3.24.4.2.4",
+            "Std Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "0.0",
+            "3553",
+            ""
+          ],
+          [
+            "P3.24.4.2.5",
+            "Interpolation Type",
+            "0",
+            "1",
+            "",
+            "0",
+            "3554",
+            "0=Constant 1=Linear"
+          ],
+          [
+            "P3.24.4.3 Limits",
+            ""
+          ],
+          [
+            "P3.24.4.3.1",
+            "Warning S1 Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "3555",
+            "0=Abs. Value 1=Baseline Offset 2=Baseline Factor"
+          ],
+          [
+            "P3.24.4.3.2",
+            "Warning S1 High",
+            "0.00",
+            "100.00",
+            "%",
+            "0.00",
+            "3556",
+            ""
+          ],
+          [
+            "P3.24.4.3.3",
+            "Warning S1 Delay",
+            "0",
+            "3600",
+            "s",
+            "0",
+            "3557",
+            ""
+          ],
+          [
+            "P3.24.4.3.4",
+            "Warning S2 Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "3558",
+            "0=Abs. Value 1=Baseline Offset"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameters Menu\nIndex\nName\nMin\nMax\nUnit\nDefault\nID\nDescription\n2=Baseline Factor\nP3.24.4.3.5\nWarning S2 High\n0.00\n100.00\n%\n0.00\n3559\nP3.24.4.3.6\nWarning S2 Delay\n0\n3600\ns\n0\n3560\nP3.24.4.3.7\nAlarm/Fault Mode\n0\n2\n0\n3561\n0=Abs. Value\n1=Baseline Offset\n2=Baseline Factor\nP3.24.4.3.8\nAlarm/Fault High\n0.00\n100.00\n%\n0.00\n3562\nP3.24.4.3.9\nAlarm/Fault Delay\n0\n3600\ns\n0\n3563\nP3.24.4.4 Counters\nP3.24.4.4.1\nWarning S1 Counter\n0.0\n360.0\ns\n0.0\n3564\nP3.24.4.4.2\nWarning S2 Counter\n0.0\n360.0\ns\n0.0\n3565\nP3.24.4.4.3\nAlarm/Fault Counter\n0.0\n360.0\ns\n0.0\n3566\nP3.24.4.4.4\nStop Counter Delay\n0.0\n320.0\ns\n0.0\n3549\nP3.24.5 Load\nP3.24.5.1 Threshold Value\nP3.24.5.1.1\nMean Factor\n-10.0\n10.0.0\n1.0\n3567\nP3.24.5.1.2\nMin Factor\n-10.0\n10.0.0\n0.0\n3568\nP3.24.5.1.3\nMax Factor\n-10.0\n10.0.0\n0.0\n3569\nP3.24.5.1.4\nStd Factor\n-10.0\n10.0.0\n0.0\n3570\nP3.24.5.1.5\nInterpolation Type\n0\n1\n1\n3571\n0=Constant\n1=Linear\nP3.24.5.2 Limits\nP3.24.5.2.1\nWarning S1 Mode\n0\n2\n0\n3572\n0=Abs. Value\n1=Baseline Offset\n2=Baseline Factor\nP3.24.5.2.2\nWarning S1 Low\n-300.0\n300.0\n%\n0.00\n3584\nP3.24.5.2.3\nWarning S1 High\n-300.0\n300.0\n%\n0.00\n3573\nP3.24.5.2.4\nWarning S1 Delay\n0\n3600\ns\n0\n3574\nP3.24.5.2.5\nWarning S2 Mode\n0\n2\n0\n3575\n0=Abs. Value\n1=Baseline Offset\n2=Baseline Factor\nP3.24.5.2.6\nWarning S2 Low\n-300.0\n300.0\n%\n0.00\n3585\nP3.24.5.2.7\nWarning S2 High\n-300.0\n300.0\n%\n0.00\n3576\nP3.24.5.2.8\nWarning S2 Delay\n0\n3600\ns\n0\n3577\n130 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Name",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "2=Baseline Factor"
+          ],
+          [
+            "P3.24.4.3.5",
+            "Warning S2 High",
+            "0.00",
+            "100.00",
+            "%",
+            "0.00",
+            "3559",
+            ""
+          ],
+          [
+            "P3.24.4.3.6",
+            "Warning S2 Delay",
+            "0",
+            "3600",
+            "s",
+            "0",
+            "3560",
+            ""
+          ],
+          [
+            "P3.24.4.3.7",
+            "Alarm/Fault Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "3561",
+            "0=Abs. Value 1=Baseline Offset 2=Baseline Factor"
+          ],
+          [
+            "P3.24.4.3.8",
+            "Alarm/Fault High",
+            "0.00",
+            "100.00",
+            "%",
+            "0.00",
+            "3562",
+            ""
+          ],
+          [
+            "P3.24.4.3.9",
+            "Alarm/Fault Delay",
+            "0",
+            "3600",
+            "s",
+            "0",
+            "3563",
+            ""
+          ],
+          [
+            "P3.24.4.4 Counters"
+          ],
+          [
+            "P3.24.4.4.1",
+            "Warning S1 Counter",
+            "0.0",
+            "360.0",
+            "s",
+            "0.0",
+            "3564",
+            ""
+          ],
+          [
+            "P3.24.4.4.2",
+            "Warning S2 Counter",
+            "0.0",
+            "360.0",
+            "s",
+            "0.0",
+            "3565",
+            ""
+          ],
+          [
+            "P3.24.4.4.3",
+            "Alarm/Fault Counter",
+            "0.0",
+            "360.0",
+            "s",
+            "0.0",
+            "3566",
+            ""
+          ],
+          [
+            "P3.24.4.4.4",
+            "Stop Counter Delay",
+            "0.0",
+            "320.0",
+            "s",
+            "0.0",
+            "3549",
+            ""
+          ],
+          [
+            "P3.24.5 Load"
+          ],
+          [
+            "P3.24.5.1 Threshold Value"
+          ],
+          [
+            "P3.24.5.1.1",
+            "Mean Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "1.0",
+            "3567",
+            ""
+          ],
+          [
+            "P3.24.5.1.2",
+            "Min Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "0.0",
+            "3568",
+            ""
+          ],
+          [
+            "P3.24.5.1.3",
+            "Max Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "0.0",
+            "3569",
+            ""
+          ],
+          [
+            "P3.24.5.1.4",
+            "Std Factor",
+            "-10.0",
+            "10.0.0",
+            "",
+            "0.0",
+            "3570",
+            ""
+          ],
+          [
+            "P3.24.5.1.5",
+            "Interpolation Type",
+            "0",
+            "1",
+            "",
+            "1",
+            "3571",
+            "0=Constant 1=Linear"
+          ],
+          [
+            "P3.24.5.2 Limits"
+          ],
+          [
+            "P3.24.5.2.1",
+            "Warning S1 Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "3572",
+            "0=Abs. Value 1=Baseline Offset 2=Baseline Factor"
+          ],
+          [
+            "P3.24.5.2.2",
+            "Warning S1 Low",
+            "-300.0",
+            "300.0",
+            "%",
+            "0.00",
+            "3584",
+            ""
+          ],
+          [
+            "P3.24.5.2.3",
+            "Warning S1 High",
+            "-300.0",
+            "300.0",
+            "%",
+            "0.00",
+            "3573",
+            ""
+          ],
+          [
+            "P3.24.5.2.4",
+            "Warning S1 Delay",
+            "0",
+            "3600",
+            "s",
+            "0",
+            "3574",
+            ""
+          ],
+          [
+            "P3.24.5.2.5",
+            "Warning S2 Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "3575",
+            "0=Abs. Value 1=Baseline Offset 2=Baseline Factor"
+          ],
+          [
+            "P3.24.5.2.6",
+            "Warning S2 Low",
+            "-300.0",
+            "300.0",
+            "%",
+            "0.00",
+            "3585",
+            ""
+          ],
+          [
+            "P3.24.5.2.7",
+            "Warning S2 High",
+            "-300.0",
+            "300.0",
+            "%",
+            "0.00",
+            "3576",
+            ""
+          ],
+          [
+            "P3.24.5.2.8",
+            "Warning S2 Delay",
+            "0",
+            "3600",
+            "s",
+            "0",
+            "3577",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nParameters Menu\nIndex\nName\nMin\nMax\nUnit\nDefault\nID\nDescription\nP3.24.5.2.9\nAlarm/Fault Mode\n0\n2\n0\n3578\n0=Abs. Value\n1=Baseline Offset\n2=Baseline Factor\nP3.24.5.2.10\nAlarm/Fault Low\n-300.0\n300.0\n%\n0.00\n3586\nP3.24.5.2.11\nAlarm/Fault High\n-300.0\n300.0\n%\n0.00\n3579\nP3.24.5.2.10\nAlarm/Fault Delay\n0\n3600\ns\n0\n3580\nP3.24.5.3 Counters\nP3.24.5.3.1\nWarning S1 Counter\n0.0\n360.0\ns\n0.0\n3581\nP3.24.5.3.2\nWarning S2 Counter\n0.0\n360.0\ns\n0.0\n3582\nP3.24.5.3.3\nAlarm/Fault Counter\n0.0\n360.0\ns\n0.0\n3583\nP3.24.5.3.4\nStop Counter Delay\n0.0\n320.0\ns\n0.0\n3549\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 131",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Name",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P3.24.5.2.9",
+            "Alarm/Fault Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "3578",
+            "0=Abs. Value 1=Baseline Offset 2=Baseline Factor"
+          ],
+          [
+            "P3.24.5.2.10",
+            "Alarm/Fault Low",
+            "-300.0",
+            "300.0",
+            "%",
+            "0.00",
+            "3586",
+            ""
+          ],
+          [
+            "P3.24.5.2.11",
+            "Alarm/Fault High",
+            "-300.0",
+            "300.0",
+            "%",
+            "0.00",
+            "3579",
+            ""
+          ],
+          [
+            "P3.24.5.2.10",
+            "Alarm/Fault Delay",
+            "0",
+            "3600",
+            "s",
+            "0",
+            "3580",
+            ""
+          ],
+          [
+            "P3.24.5.3 Counters"
+          ],
+          [
+            "P3.24.5.3.1",
+            "Warning S1 Counter",
+            "0.0",
+            "360.0",
+            "s",
+            "0.0",
+            "3581",
+            ""
+          ],
+          [
+            "P3.24.5.3.2",
+            "Warning S2 Counter",
+            "0.0",
+            "360.0",
+            "s",
+            "0.0",
+            "3582",
+            ""
+          ],
+          [
+            "P3.24.5.3.3",
+            "Alarm/Fault Counter",
+            "0.0",
+            "360.0",
+            "s",
+            "0.0",
+            "3583",
+            ""
+          ],
+          [
+            "P3.24.5.3.4",
+            "Stop Counter Delay",
+            "0.0",
+            "320.0",
+            "s",
+            "0.0",
+            "3549",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "VACON® 100 FLOW\nDanfoss\nDiagnostics Menu\nApplication Guide\n7 Diagnostics Menu\n7.1 Faults\n7.1.1 Uses of the Active Faults Submenu\nWhen there is a fault or many faults, the display shows the name of the fault and blinks. Push [OK] to go back to the Diagnostics\nmenu. The submenu Active faults shows the number of faults. To see the fault-time data, select a fault and push [OK].\nThe Active faults submenu can keep storage of maximum 10 faults. The submenu shows the faults in the sequence in which they\noccurred.\n7.1.2 Reset Faults\nWhen the drive shows a fault and stops, examine the cause of fault, and reset the fault. The fault stays active until it is reset.\nThere are 2 procedures to reset a fault in the local control place: with the [BACK/RESET] button and with a parameter. It is also possi-\nble to reset faults by using I/O, a fieldbus, or a PC tool.\nNOTICE\nBefore resetting the fault, remove the external control signal to prevent restarting the drive accidentally.\n7.1.2.1 Resetting Faults with the [BACK/RESET] Button\nProcedure\n1.\nPush the [BACK/RESET] button on the keypad of the control panel for 2 seconds.\n7.1.2.2 Resetting Faults with a Parameter on the Graphical Display\nFaults can be reset with the parameter Reset Faults.\nProcedure\n1. Go to the Diagnostics Menu.\n2.\nGo to the submenu Reset faults.\n3. Select the parameter Reset Faults.\nSTOP\n00\nID:\nREADY\nReset faults\nM4.2\nI/O\ne30bg663.10\nReset faults\ni\nHelp\n7.1.2.3 Resetting Faults with a Parameter on the Text Display\nFaults can be reset with the parameter Reset Faults.\nProcedure\n1. Go to the Diagnostics menu.\n2. Use the arrow buttons Up and Down to find the parameter Reset Faults.\n132 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nDiagnostics Menu\n3. Select the value Yes and push [OK].\nREADY\nRUN\nSTOP\nALARM\nFAULT\ne30bg664.10\n/\nRESET FAUL\nFWD\nREV\nI/O\nKEYPAD\nBUS\n7.1.3 Uses of the Fault History\nThe Fault history shows more data on the faults. There is a maximum number of 40 faults in the Fault history.\n7.1.3.1 Examining the Fault History on the Graphical Display\nProcedure\n1. To see more data on a fault, go to Fault history.\nC\nSTOP\nI/O\ne30bg665.10\nDiagnostics\nREADY\nID:\nM4.1\nActive faults\n(0)\nReset faults\nFault history\n(39 )\n2. To examine the data of a fault, push the Arrow button Right.\n3. Examine the data in a list.\n1\nSTOP\nREADY\nI/O\nFault history\nID:\nM4.3.3.2\nCode\n39\nID\n380\nState\nInfo old\nDate\n7.12.2009\nTime\n04:46:33\nOperating time\n862537s\nSource 1\nSource 2\nSource 3\ne30bg666.1C\n7.1.3.2 Examining the Fault History on the Text Display\nProcedure\n1. Push [OK] to go to Fault history.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 133",
+      "tablas": [
+        [
+          [
+            "STOP",
+            ":unselected:",
+            "READY",
+            "I/O"
+          ],
+          [
+            ":selected: Fault history ID:",
+            ""
+          ],
+          [
+            "M4.3.3.2"
+          ],
+          [
+            "Code",
+            "",
+            "39"
+          ],
+          [
+            "ID",
+            "",
+            "",
+            "380"
+          ],
+          [
+            "State",
+            "",
+            "",
+            "Info old"
+          ],
+          [
+            "Date",
+            "",
+            "",
+            "7.12.2009"
+          ],
+          [
+            "Time",
+            "",
+            "",
+            "04:46:33"
+          ],
+          [
+            "",
+            "Operating time",
+            "",
+            "862537s"
+          ],
+          [
+            "Source 1",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Source 2",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Source 3",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nDiagnostics Menu\n1\nREADY\nRUN\nSTOP\nALARM\nFAULT\ne30bg667.10\nFAULT HIST\nM4.3\nFWD\nREV\n1/O\nKEYPAD\nBUS\n2. To examine the data of a fault, push [OK] again.\n3. Use the arrow button down to examine all the data.\nREADY\nRUN\nSTOP\nALARM\nFAULT\ne30bg668.10\nCODE\n65\nFWD\nREV\n1/O\nKEYPAD\nBUS\n7.2 Counters\n7.2.1 Using the Counters\nIt is possible to monitor all the counter values from the PC, control panel, or fieldbus.\nIn the PC or the control panel, the counter values can be monitored in the Diagnostics menu. In fieldbus, see 12.4 Total and Trip\nCounters.\n7.2.2 Total Counters\nTable 107: The Total Counter Parameters in the Diagnostics Menu\nIndex\nParameter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\nV4.4.1\nEnergy Counter\nVaries\n2291\nThe quantity of energy taken from the supply\nnetwork. The counter cannot be reset. In the\ntext display: the highest energy unit that the dis-\nplay shows is MW. If the counted energy be-\ncomes more than 999.9 MW, no unit shows on\nthe display.\nV4.4.3\nOperating Time (graphi-\ncal keypad)\na d hh:min\n2298\nThe operating time of the control unit.\nV4.4.4\nOperating Time (text\nkeypad)\na\nThe operating time of the control unit in total\nyears.\nV4.4.5\nOperating Time (text\nkeypad)\nd\nThe operating time of the control unit in total\ndays.\nV4.4.6\nOperating Time (text\nkeypad)\nhh:min:ss\nThe operating time of the control unit in hours,\nminutes, and seconds.\n134 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "V4.4.1",
+            "Energy Counter",
+            ":unselected:",
+            ":unselected:",
+            "Varies",
+            "",
+            "2291",
+            "The quantity of energy taken from the supply network. The counter cannot be reset. In the text display: the highest energy unit that the dis- play shows is MW. If the counted energy be- comes more than 999.9 MW, no unit shows on the display."
+          ],
+          [
+            "V4.4.3",
+            "Operating Time (graphi- cal keypad)",
+            ":unselected:",
+            ":unselected:",
+            "a d hh:min",
+            ":unselected:",
+            "2298",
+            "The operating time of the control unit."
+          ],
+          [
+            "V4.4.4",
+            "Operating Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "a",
+            ":unselected:",
+            ":unselected:",
+            "The operating time of the control unit in total years."
+          ],
+          [
+            "V4.4.5",
+            "Operating Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "d",
+            ":unselected:",
+            ":unselected:",
+            "The operating time of the control unit in total days."
+          ],
+          [
+            "V4.4.6",
+            "Operating Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "hh:min:ss",
+            ":unselected:",
+            ":unselected:",
+            "The operating time of the control unit in hours, minutes, and seconds."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nDiagnostics Menu\nIndex\nParameter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\nV4.4.7\nRun Time (graphical key-\npad)\na d hh:min\n2293\nThe motor run time.\nV4.4.8\nRun Time (text keypad)\na\nThe motor run time in total years.\nV4.4.9\nRun Time (text keypad)\nd\nThe motor run time in total days.\nV4.4.10\nRun Time (text keypad)\nhh:min:ss\nThe motor run time in hours, minutes, and sec-\nonds.\nV4.4.11\nPower On Time (graphi-\ncal keypad)\na d hh:min\n2294\nThe quantity of time that the power unit has\nbeen powered on. The counter cannot be reset.\nV4.4.12\nPower On Time (text\nkeypad)\na\nThe power on time in total years.\nV4.4.13\nPower On Time (text\nkeypad)\nd\nThe power on time in total days.\nV4.4.14\nPower On Time (text\nkeypad)\nhh:min:ss\nThe power on time in hours, minutes, and sec-\nonds.\nV4.4.15\nStart Command Counter\n2295\nThe number of times that the power unit has\nbeen started.\n7.2.3 Trip Counters\nTable 108: The Trip Counter Parameters in the Diagnostics Menu\nIndex\nParameter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\nP4.5.1\nEnergy Trip Counter\nVaries\n2296\nThis counter can be reset. In the text display: the high-\nest energy unit that the display shows is MW. If the\ncounted energy becomes more than 999.9 MW, no\nunit shows on the display.\nResetting the counter:\n. In the text display: Push the [OK] button for 4 s.\n· In the graphical display: Push [OK]. A Reset coun-\nter page shows. Push [OK] again.\nP4.5.3\nOperating Time\n(graphical keypad)\na d hh:min\n2299\nThis counter can be reset. See instructions in P4.5.1.\nP4.5.4\nOperating Time\n(text keypad)\na\nThe operating time in total years.\nP4.5.5\nOperating Time\n(text keypad)\nd\nThe operating time in total days.\nP4.5.6\nOperating Time\n(text keypad)\nhh:min:ss\nThe operating time in hours, minutes, and seconds.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 135",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "V4.4.7",
+            "Run Time (graphical key- pad)",
+            ":unselected:",
+            ":unselected:",
+            "a d hh:min",
+            "",
+            "2293",
+            "The motor run time."
+          ],
+          [
+            "V4.4.8",
+            "Run Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "a",
+            "",
+            ":unselected:",
+            "The motor run time in total years."
+          ],
+          [
+            "V4.4.9",
+            "Run Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "d",
+            "",
+            ":unselected:",
+            "The motor run time in total days."
+          ],
+          [
+            "V4.4.10",
+            "Run Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "hh:min:ss",
+            ":unselected:",
+            ":unselected:",
+            "The motor run time in hours, minutes, and sec- onds."
+          ],
+          [
+            "V4.4.11",
+            "Power On Time (graphi- cal keypad)",
+            ":unselected:",
+            ":unselected:",
+            "a d hh:min",
+            ":unselected:",
+            "2294\n:unselected:",
+            "The quantity of time that the power unit has been powered on. The counter cannot be reset."
+          ],
+          [
+            "V4.4.12",
+            "Power On Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "a",
+            ":unselected:",
+            ":unselected:",
+            "The power on time in total years."
+          ],
+          [
+            "V4.4.13",
+            "Power On Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "d",
+            ":unselected:",
+            ":unselected:",
+            "The power on time in total days."
+          ],
+          [
+            "V4.4.14",
+            "Power On Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "hh:min:ss",
+            ":unselected:",
+            ":unselected:",
+            "The power on time in hours, minutes, and sec- onds."
+          ],
+          [
+            "V4.4.15",
+            "Start Command Counter",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "",
+            "2295",
+            "The number of times that the power unit has been started."
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "P4.5.1",
+            "Energy Trip Counter",
+            "",
+            "",
+            "Varies",
+            "",
+            "2296",
+            "This counter can be reset. In the text display: the high- est energy unit that the display shows is MW. If the counted energy becomes more than 999.9 MW, no unit shows on the display. Resetting the counter:"
+          ],
+          [
+            ". In the text display: Push the [OK] button for 4 s. · In the graphical display: Push [OK]. A Reset coun- ter page shows. Push [OK] again."
+          ],
+          [
+            "P4.5.3",
+            "Operating Time (graphical keypad)",
+            ":unselected:",
+            ":unselected:",
+            "a d hh:min",
+            ":unselected:",
+            "2299",
+            "This counter can be reset. See instructions in P4.5.1."
+          ],
+          [
+            "P4.5.4",
+            "Operating Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "a",
+            ":unselected:",
+            ":unselected:",
+            "The operating time in total years."
+          ],
+          [
+            "P4.5.5",
+            "Operating Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "d",
+            ":unselected:",
+            ":unselected:",
+            "The operating time in total days."
+          ],
+          [
+            "P4.5.6",
+            "Operating Time (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            "hh:min:ss",
+            ":unselected:",
+            ":unselected:",
+            "The operating time in hours, minutes, and seconds."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nDiagnostics Menu\n7.3 Software Info\nTable 109: The Software Info Parameters in the Diagnostics Menu\nIndex\nParameter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\nV4.6.1\nSoftware Package (graphical keypad)\n2524\nThe code for the software identification\nV4.6.2\nSoftware Package ID (text keypad)\nThe code for the software identification\nV4.6.3\nSoftware Package Version (text key-\npad)\nThe code for the software identification\nV4.6.4\nSystem Load\n0\n100\n%\n2300\nThe load on the control unit CPU\nV4.6.5\nApplication Name (graphical keypad)\n2525\nThe name of the application\nV4.6.6\nApplication ID\n837\nThe code of the application\nV4.6.7\nApplication Version\n838\nV4.6.8\nLanguage Selections\nSelected language package in software\nloading\nV4.6.9\nKeypad Software Version\n7.4 Drive Info\nTable 110: The Drive Info Parameters in the Diagnostics Menu\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nV4.7.1\nPower Size\n7.5 Unit Status\nTable 111: The Unit Status Parameters in the Diagnostics Menu\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nV4.8.1\nControl Unit ID\n2540\nStatus of the control unit\nV4.8.2\nPower Unit ID\n2541\nStatus of the power unit\n136 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "V4.6.1",
+            "Software Package (graphical keypad)",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "2524",
+            "The code for the software identification"
+          ],
+          [
+            "V4.6.2",
+            "Software Package ID (text keypad)",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "The code for the software identification"
+          ],
+          [
+            "V4.6.3",
+            "Software Package Version (text key- pad)",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "The code for the software identification"
+          ],
+          [
+            "V4.6.4",
+            "System Load",
+            "0",
+            "100",
+            "%\n:selected:",
+            ":unselected:",
+            "2300",
+            "The load on the control unit CPU"
+          ],
+          [
+            "V4.6.5",
+            "Application Name (graphical keypad)",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "2525",
+            "The name of the application"
+          ],
+          [
+            "V4.6.6",
+            "Application ID",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "837",
+            "The code of the application"
+          ],
+          [
+            "V4.6.7",
+            "Application Version",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "838",
+            ""
+          ],
+          [
+            "V4.6.8",
+            "Language Selections",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "Selected language package in software loading"
+          ],
+          [
+            "V4.6.9",
+            "Keypad Software Version",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "V4.7.1",
+            "Power Size",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "V4.8.1",
+            "Control Unit ID",
+            ":unselected:",
+            "",
+            "",
+            "",
+            "2540",
+            "Status of the control unit"
+          ],
+          [
+            "V4.8.2",
+            "Power Unit ID",
+            ":unselected:",
+            "",
+            "",
+            "",
+            "2541",
+            "Status of the power unit"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "I/O and Hardware Menu\nVACON® 100 FLOW\nApplication Guide\n8 I/O and Hardware Menu\n8.1 Basic I/O\nDanfoss\nTable 112: The Basic I/O Parameters in the I/O and Hardware Menu\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nV5.1.1\nDigital Input 1\n0\n1\n0\n2502\nStatus of the digital input signal\nV5.1.2\nDigital Input 2\n0\n1\n0\n2503\nStatus of the digital input signal\nV5.1.3\nDigital Input 3\n0\n1\n0\n2504\nStatus of the digital input signal\nV5.1.4\nDigital Input 4\n0\n1\n0\n2505\nStatus of the digital input signal\nV5.1.5\nDigital Input 5\n0\n1\n0\n2506\nStatus of the digital input signal\nV5.1.6\nDigital Input 6\n0\n1\n0\n2507\nStatus of the digital input signal\nV5.1.7\nAnalog Input 1 Mode\n1\n3\n3\n2508\nShows the mode that is set for the analog input signal.\nThe selection is made with a DIP switch on the control\nboard.\n1 = 0 ... 20mA\n3 = 0 ... 10V\nV5.1.8\nAnalog Input 1\n0\n100\n%\n0.00\n2509\nStatus of the analog input signal\nV5.1.9\nAnalog Input 2 Mode\n1\n3\n3\n2510\nShows the mode that is set for the analog input signal.\nThe selection is made with a DIP switch on the control\nboard.\n1 = 0 ... 20mA\n3 = 0 ... 10V\nV5.1.10\nAnalog Input 2\n0\n100\n%\n0.00\n2511\nStatus of the analog input signal\nV5.1.11\nAnalog Output 1\nMode\n1\n3\n1\n2512\nShows the mode that is set for the analog input signal.\nThe selection is made with a DIP switch on the control\nboard.\n1 = 0 ... 20mA\n3 = 0 ... 10V\nV5.1.12\nAnalog Output 1\n0\n100\n%\n0.00\n2513\nStatus of the analog output signal\nV5.1.13\nRelay Output 1\n0\n1\n0\n2514\nStatus of the relay output signal\nV5.1.14\nRelay Output 2\n0\n1\n0\n2515\nStatus of the relay output signal\nV5.1.15\nRelay Output 3\n0\n1\n0\n2516\nStatus of the relay output signal\n8.2 Option Board Slots\nThe parameters in this menu are different for all the option boards. The parameters of the installed option board is shown. If there is\nno option board in the slots C, D or E, no parameters are shown. See more about the location of the slots in chapter 11.7.1.1 General\nInformation on the Programming.\nWhen an option board is removed, the fault code 39 and the fault name Device removed show on the display.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 137",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "V5.1.1",
+            "Digital Input 1",
+            "0",
+            "1",
+            "",
+            "0",
+            "2502",
+            "Status of the digital input signal"
+          ],
+          [
+            "V5.1.2",
+            "Digital Input 2",
+            "0",
+            "1",
+            "",
+            "0",
+            "2503",
+            "Status of the digital input signal"
+          ],
+          [
+            "V5.1.3",
+            "Digital Input 3",
+            "0",
+            "1",
+            "",
+            "0",
+            "2504",
+            "Status of the digital input signal"
+          ],
+          [
+            "V5.1.4",
+            "Digital Input 4",
+            "0",
+            "1",
+            "",
+            "0",
+            "2505",
+            "Status of the digital input signal"
+          ],
+          [
+            "V5.1.5",
+            "Digital Input 5",
+            "0",
+            "1",
+            "",
+            "0",
+            "2506",
+            "Status of the digital input signal"
+          ],
+          [
+            "V5.1.6",
+            "Digital Input 6",
+            "0",
+            "1",
+            "",
+            "0",
+            "2507",
+            "Status of the digital input signal"
+          ],
+          [
+            "V5.1.7",
+            "Analog Input 1 Mode",
+            "1",
+            "3",
+            "",
+            "3",
+            "2508",
+            "Shows the mode that is set for the analog input signal. The selection is made with a DIP switch on the control board. 1 = 0 ... 20mA 3 = 0 ... 10V"
+          ],
+          [
+            "V5.1.8",
+            "Analog Input 1",
+            "0",
+            "100",
+            "%",
+            "0.00",
+            "2509",
+            "Status of the analog input signal"
+          ],
+          [
+            "V5.1.9",
+            "Analog Input 2 Mode",
+            "1",
+            "3",
+            "",
+            "3",
+            "2510",
+            "Shows the mode that is set for the analog input signal. The selection is made with a DIP switch on the control board. 1 = 0 ... 20mA 3 = 0 ... 10V"
+          ],
+          [
+            "V5.1.10",
+            "Analog Input 2",
+            "0",
+            "100",
+            "%",
+            "0.00",
+            "2511",
+            "Status of the analog input signal"
+          ],
+          [
+            "V5.1.11",
+            "Analog Output 1 Mode",
+            "1",
+            "3",
+            "",
+            "1",
+            "2512",
+            "Shows the mode that is set for the analog input signal. The selection is made with a DIP switch on the control board. 1 = 0 ... 20mA 3 = 0 ... 10V"
+          ],
+          [
+            "V5.1.12",
+            "Analog Output 1",
+            "0",
+            "100",
+            "%",
+            "0.00",
+            "2513",
+            "Status of the analog output signal"
+          ],
+          [
+            "V5.1.13",
+            "Relay Output 1",
+            "0",
+            "1",
+            "",
+            "0",
+            "2514",
+            "Status of the relay output signal"
+          ],
+          [
+            "V5.1.14",
+            "Relay Output 2",
+            "0",
+            "1",
+            "",
+            "0",
+            "2515",
+            "Status of the relay output signal"
+          ],
+          [
+            "V5.1.15",
+            "Relay Output 3",
+            "0",
+            "1",
+            "",
+            "0",
+            "2516",
+            "Status of the relay output signal"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nI/O and Hardware Menu\nTable 113: Option Board Related Parameters\nMenu\nFunction\nDescription\nSlot C\nSettings\nThe settings that are related to the option board.\nMonitoring\nMonitor the data that is related to the option board.\nSlot D\nSettings\nThe settings that are related to the option board.\nMonitoring\nMonitor the data that is related to the option board.\nSlot E\nSettings\nThe settings that are related to the option board.\nMonitoring\nMonitor the data that is related to the option board.\n8.3 Real-time Clock\nTable 114: The Real-time Clock Parameters in the I/O and Hardware Menu\nIndex\nParameter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\nV5.5.1\nBattery\nState\n1\n3\n2205\nStatus of the battery.\n1 = Not installed\n2 = Installed\n3 = Replace the battery\nP5.5.2\nTime\nhh:mm:ss\n2201\nThe current time of the day\nP5.5.3\nDate\ndd.mm.\n2202\nThe current date\nP5.5.4\nYear\nyyyy\n2203\nThe current year\nP5.5.5\nDaylight\nSaving\n1\n4\n2204\nThe daylight saving rule\n1 = Off\n2 = EU: starts on the last Sunday in March, ends on the last\nSunday in October\n3 = US: starts on the 2nd Sunday in March, ends on the 1st\nSunday in November\n4 = Russia (permanent)\n8.4 Simple Network Time Protocol (SNTP)\nThe simple network time protocol (SNTP) allows devices connected to a TCP/IP network receive precise time information from des-\nignated time servers. The time information can be received either by the client device polling the time servers or the time servers\nbroadcasting the time.\nTable 115: SNTP parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nV5.5.7.1.1\nSNTP Mode\n3162\nV5.5.7.1.2\nServer 1 IP\n3163\nV5.5.7.1.3\nServer 2 IP\n3164\nV5.5.7.1.4\nSNTP Port\n3165\nV5.5.7.1.5\nTime Interval\n3166\n138 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Menu",
+            "Function",
+            "Description"
+          ],
+          [
+            "Slot C",
+            "Settings",
+            "The settings that are related to the option board."
+          ],
+          [
+            "Monitoring",
+            "Monitor the data that is related to the option board."
+          ],
+          [
+            "Slot D",
+            "Settings",
+            "The settings that are related to the option board."
+          ],
+          [
+            "Monitoring",
+            "Monitor the data that is related to the option board."
+          ],
+          [
+            "Slot E",
+            "Settings",
+            "The settings that are related to the option board."
+          ],
+          [
+            "",
+            "Monitoring",
+            "Monitor the data that is related to the option board."
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "V5.5.1",
+            "Battery State",
+            "1",
+            "3",
+            "",
+            "",
+            "2205",
+            "Status of the battery. 1 = Not installed 2 = Installed 3 = Replace the battery"
+          ],
+          [
+            "P5.5.2",
+            "Time",
+            "",
+            "",
+            "hh:mm:ss",
+            "",
+            "2201",
+            "The current time of the day"
+          ],
+          [
+            "P5.5.3",
+            "Date",
+            "",
+            "",
+            "dd.mm.",
+            "",
+            "2202",
+            "The current date"
+          ],
+          [
+            "P5.5.4",
+            "Year",
+            "",
+            "",
+            "yyyy",
+            "",
+            "2203",
+            "The current year"
+          ],
+          [
+            "P5.5.5",
+            "Daylight Saving",
+            "1",
+            "4",
+            "",
+            "",
+            "2204",
+            "The daylight saving rule 1 = Off 2 = EU: starts on the last Sunday in March, ends on the last Sunday in October 3 = US: starts on the 2nd Sunday in March, ends on the 1st Sunday in November 4 = Russia (permanent)"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "V5.5.7.1.1",
+            "SNTP Mode",
+            "",
+            "",
+            "",
+            "",
+            "3162",
+            ""
+          ],
+          [
+            "V5.5.7.1.2",
+            "Server 1 IP",
+            "",
+            "",
+            "",
+            "",
+            "3163",
+            ""
+          ],
+          [
+            "V5.5.7.1.3",
+            "Server 2 IP",
+            "",
+            "",
+            "",
+            "",
+            "3164",
+            ""
+          ],
+          [
+            "V5.5.7.1.4",
+            "SNTP Port",
+            "",
+            "",
+            "",
+            "",
+            "3165",
+            ""
+          ],
+          [
+            "V5.5.7.1.5",
+            "Time Interval",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "",
+            "3166",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "VACON® 100 FLOW\nI/O and Hardware Menu\nDanfoss\nApplication Guide\n8.5 Power Unit Settings\nIn this menu, the settings of the fan, the brake chopper, the sine filter, and the harmonic filter can be changed.\nThe fan operates in the optimized or the always on mode. In the optimized mode, the internal logic of the drive receives data about\nthe temperature and controls the fan speed. After the drive goes in the Ready state, the fan stops in 5 minutes. In the always on\nmode, the fan operates in full speed, and does not stop.\nThe sine filter keeps the overmodulation depth in limits and does not let the thermal management functions decrease the switching\nfrequency.\nThe harmonic filter can be enabled to avoid possible resonances in the DC link of the AC drive.\nTable 116: Power Unit Settings\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP5.6.1.1\nFan Control Mode\n0\n1\n1\n2377\n0 = Always on\n1 = Optimized\nV5.6.1.5\nFan Lifetime ID\n849\nLifetime of the fan of the drive\nP5.6.1.6\nFan lifetime alarm limit\n0\n200000\nh\n50000\n824\nAlarm limit of the fan lifetime\nB5.6.1.7\nFan lifetime reset ID\n823\nReset the fan lifetime counter with this button.\nP5.6.2.1\nBrake Chopper Mode\n0\n3\n0\n2526\n0 = Disabled\n1 = Enabled (Run)\n2 = Enabled (Run & Stop)\n3 = Enabled (Run, no testing)\nP5.6.3.1\nMax Switching Freq\n1.5\nVaries\nkHz\n2620\nP5.6.5.1\nSine Filter\n0\n1\n0\n2527\n0 = Disabled\n1 = Enabled\nP5.6.6.1\nHarmonic Filter\n0\n1\n0\n2497\n0 = Disabled\n1 = Enabled\n8.6 Keypad\nTable 117: The Keypad Parameters in the I/O and Hardware Menu\nIndex\nParameter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\nP5.7.1\nTimeout\nTime\n0\n60\nmin\n0\n804\nThe time after which the display goes back to the page that is set\nwith parameter P5.7.2.\n0 = Not used\nP5.7.2\nDefault Page\n0\n4\n0\n2318\nThe page that the display shows when the drive is powered up, or\nwhen the time that is set with P5.7.1 is expired. If the value is set to\n0, the display shows the last page that it showed.\n0 = None\n1 = A menu index\n2 = Main menu\n3 = Control page\n4 = Multimonitor\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 139",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P5.6.1.1",
+            "Fan Control Mode",
+            "0",
+            "1",
+            "",
+            "1",
+            "2377",
+            "0 = Always on 1 = Optimized"
+          ],
+          [
+            "V5.6.1.5",
+            "Fan Lifetime ID",
+            "",
+            "",
+            "",
+            "",
+            "849",
+            "Lifetime of the fan of the drive"
+          ],
+          [
+            "P5.6.1.6",
+            "Fan lifetime alarm limit",
+            "0",
+            "200000",
+            "h",
+            "50000",
+            "824",
+            "Alarm limit of the fan lifetime"
+          ],
+          [
+            "B5.6.1.7",
+            "Fan lifetime reset ID",
+            "",
+            "",
+            "",
+            "",
+            "823",
+            "Reset the fan lifetime counter with this button."
+          ],
+          [
+            "P5.6.2.1",
+            "Brake Chopper Mode",
+            "0",
+            "3",
+            "",
+            "0",
+            "2526",
+            "0 = Disabled 1 = Enabled (Run) 2 = Enabled (Run & Stop) 3 = Enabled (Run, no testing)"
+          ],
+          [
+            "P5.6.3.1",
+            "Max Switching Freq",
+            "1.5",
+            "Varies",
+            "kHz",
+            "",
+            "2620",
+            ""
+          ],
+          [
+            "P5.6.5.1",
+            "Sine Filter",
+            "0",
+            "1",
+            "",
+            "0",
+            "2527",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "P5.6.6.1",
+            "Harmonic Filter",
+            "0",
+            "1",
+            "",
+            "0",
+            "2497",
+            "0 = Disabled 1 = Enabled"
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "P5.7.1",
+            "Timeout Time",
+            "0",
+            "60",
+            "min",
+            "0",
+            "804",
+            "The time after which the display goes back to the page that is set with parameter P5.7.2. 0 = Not used"
+          ],
+          [
+            "P5.7.2",
+            "Default Page",
+            "0",
+            "4",
+            "",
+            "0",
+            "2318",
+            "The page that the display shows when the drive is powered up, or when the time that is set with P5.7.1 is expired. If the value is set to 0, the display shows the last page that it showed. 0 = None 1 = A menu index 2 = Main menu 3 = Control page 4 = Multimonitor"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nI/O and Hardware Menu\nIndex\nParameter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\nP5.7.3\nMenu Index\n2499\nSet a page to be the menu index. (The selection 1 in P5.7.2.)\nP5.7.4\nContrast(1)\n30\n70\n%\n50\n830\nSet the contrast of the display.\nP5.7.5\nBacklight\nTime\n0\n60\nmin\n5\n818\nSet the time after which the backlight of the display turns off. If the\nvalue is set to 0, the backlight is always on.\n1 Only available with the graphical keypad.\n8.7 Fieldbus\nIn the I/O and Hardware menu, there are the parameters that are related to fieldbus boards. Find the instructions on how to use\nthese parameters in the related fieldbus manual.\nTable 118: Fieldbus Menu Structure\nSubmenu level 1\nSubmenu level 2\nSubmenu level 3\nSubmenu level 4\nRS-485\nCommon settings\nProtocol\nModbus RTU\nN2\nBACnet MSTP\nRS-485\nModbus RTU\nParameters\nSlave address\nBaud rate\nParity type\nStop bits\nCommunication timeout\nOperate mode\nMonitoring\nFieldbus protocol status\nCommunication status\nIllegal functions\nIllegal data addresses\nIllegal data values\nSlave device busy\nMemory parity error\nSlave device failure\nLast fault response\nControl Word\nStatus Word\nRS-485\nN2\nParameters\nSlave address\nCommunication timeout\n140 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "P5.7.3",
+            "Menu Index",
+            "",
+            "",
+            "",
+            "",
+            "2499",
+            "Set a page to be the menu index. (The selection 1 in P5.7.2.)"
+          ],
+          [
+            "P5.7.4",
+            "Contrast(1)",
+            "30",
+            "70",
+            "%",
+            "50",
+            "830",
+            "Set the contrast of the display."
+          ],
+          [
+            "P5.7.5",
+            "Backlight Time",
+            "0",
+            "60",
+            "min",
+            "5",
+            "818",
+            "Set the time after which the backlight of the display turns off. If the value is set to 0, the backlight is always on."
+          ]
+        ],
+        [
+          [
+            "Submenu level 1",
+            "Submenu level 2",
+            "Submenu level 3",
+            "Submenu level 4"
+          ],
+          [
+            "RS-485",
+            "Common settings",
+            "Protocol",
+            "Modbus RTU"
+          ],
+          [
+            "N2"
+          ],
+          [
+            "BACnet MSTP"
+          ],
+          [
+            "RS-485",
+            "Modbus RTU",
+            "Parameters",
+            "Slave address"
+          ],
+          [
+            "Baud rate"
+          ],
+          [
+            "Parity type"
+          ],
+          [
+            "Stop bits"
+          ],
+          [
+            "Communication timeout"
+          ],
+          [
+            "Operate mode"
+          ],
+          [
+            "Monitoring",
+            "Fieldbus protocol status"
+          ],
+          [
+            "Communication status"
+          ],
+          [
+            "Illegal functions"
+          ],
+          [
+            "Illegal data addresses"
+          ],
+          [
+            "Illegal data values"
+          ],
+          [
+            "Slave device busy"
+          ],
+          [
+            "Memory parity error"
+          ],
+          [
+            "Slave device failure"
+          ],
+          [
+            "Last fault response"
+          ],
+          [
+            "Control Word"
+          ],
+          [
+            "Status Word"
+          ],
+          [
+            "RS-485",
+            "N2",
+            "Parameters",
+            "Slave address"
+          ],
+          [
+            "",
+            "",
+            "Communication timeout"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nI/O and Hardware Menu\nSubmenu level 1\nSubmenu level 2\nSubmenu level 3\nSubmenu level 4\nMonitoring\nFieldbus protocol status\nCommunication status\nInvalid data\nInvalid commands\nCommand not accepted\nControl word\nStatus word\nRS-485\nBACnet MSTP\nParameters\nBaud rate\nAutobauding\nMAC address\nInstance number\nCommunication timeout\nMonitoring\nFieldbus protocol status\nCommunication status\nActual instance number\nFault code\nControl word\nStatus word\nEthernet\nCommon settings\nIP address mode\nDuplicate IP Detection\nSpeed/Duplex\nEthernet Fieldbus 1\nEthernet Fieldbus 2\nIP Port Filter\nDrive PC Tool\nFixed IP\nIP address\nSubnet mask\nDefault gateway\nIP address\nSubnet mask\nDefault gateway\nMAC address\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 141",
+      "tablas": [
+        [
+          [
+            "Submenu level 1",
+            "Submenu level 2",
+            "Submenu level 3",
+            "Submenu level 4"
+          ],
+          [
+            "",
+            "",
+            "Monitoring",
+            "Fieldbus protocol status"
+          ],
+          [
+            "Communication status"
+          ],
+          [
+            "Invalid data"
+          ],
+          [
+            "Invalid commands"
+          ],
+          [
+            "Command not accepted"
+          ],
+          [
+            "Control word"
+          ],
+          [
+            "Status word"
+          ],
+          [
+            "RS-485",
+            "BACnet MSTP",
+            "Parameters",
+            "Baud rate"
+          ],
+          [
+            "Autobauding"
+          ],
+          [
+            "MAC address"
+          ],
+          [
+            "Instance number"
+          ],
+          [
+            "Communication timeout"
+          ],
+          [
+            "Monitoring",
+            "Fieldbus protocol status"
+          ],
+          [
+            "Communication status"
+          ],
+          [
+            "Actual instance number"
+          ],
+          [
+            "Fault code"
+          ],
+          [
+            "Control word"
+          ],
+          [
+            "Status word"
+          ],
+          [
+            "Ethernet",
+            "Common settings",
+            "IP address mode",
+            ""
+          ],
+          [
+            "Duplicate IP Detection",
+            ""
+          ],
+          [
+            "Speed/Duplex",
+            ""
+          ],
+          [
+            "Ethernet Fieldbus 1",
+            ""
+          ],
+          [
+            "Ethernet Fieldbus 2",
+            ""
+          ],
+          [
+            "IP Port Filter",
+            ""
+          ],
+          [
+            "Drive PC Tool",
+            ""
+          ],
+          [
+            "Fixed IP",
+            "IP address"
+          ],
+          [
+            "Subnet mask"
+          ],
+          [
+            "Default gateway"
+          ],
+          [
+            "IP address",
+            ""
+          ],
+          [
+            "Subnet mask",
+            ""
+          ],
+          [
+            "Default gateway",
+            ""
+          ],
+          [
+            "MAC address",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nI/O and Hardware Menu\nSubmenu level 1\nSubmenu level 2\nSubmenu level 3\nSubmenu level 4\nEthernet\nModbus TCP(1)\nEthernet\nBACnet IP(2)\nEthernet\nEtherNet/IP(3)\nEthernet\nPROFINET I/O(4)\n1 For details, see VACON 100 Modbus User Manual.\n2 For details, see VACON 100 BACnet Installation Manual.\n3 For details, see VACON 100 EtherNet IP Installation Manual.\n4 For details, see VACON 100 Profinet IO Installation Manual.\n8.8 Fieldbus General\nEnabling Ethernet Fieldbus Protocol\nNeeded internal Ethernet based fieldbus protocols can be enabled with parameters \"Ethernet Fieldbus 1\", 5.9.1.4 (ID 2622) and\n\"Ethernet Fieldbus 2\", 5.9.1.5 (ID 2623). The parameters are included since VACON® 100 INDUSTRIAL V030 and VACON® 100 FLOW\nV022 firmware.\nBoth parameters contain the same list with \"PROFINET I/O, EtherNet/IP, BACnet/IP and Modbus TCP\" protocols. PROFINET I/O and\nEtherNet/IP are visible only if included in drive configuration. By default Modbus TCP is enabled, but if not used, it is recommended\nto turn it off.\nIf the same fieldbus is selected to both parameters, the fieldbus protocol is still activated only once. Protocol specific menu tree\nbecomes visible only after enabling it from these parameters. When using VACON® Live, to see protocol specific menus, the \"5.9\nEthernet\" menu tree must be reloaded after enabling the protocols.\nWhen restoring parameters from older firmware version, drive checks on start-up which protocols were enabled in old firmware and\nsets up these new parameters accordingly. After having restored parameters, restart the drive. If more than two Ethernet fieldbuses\nwere activated in old firmware, new firmware allows it. In this case, these two new parameters show \"None\", but when the values\nare changed, all Ethernet fieldbuses are stopped, and only the enabled ones are started.\nTable 119: Fieldbus Common Settings\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP5.9.1.4\nEthernet Field-\nbus 1\nNone\nBACnet/\nIP(1)\nNone\n2622\n2 Ethernet-based internal fieldbuses can be\nenabled at a time. Select fieldbus from the list.\nP5.9.1.5\nEthernet Field-\nbus 2\nNone\nBACnet/\nIP(1)\nModbus\nTCP\n2623\nP5.9.1.6\nIP Port Filter\n0\n65535\n0\n2641\nUse this parameter to block IP ports/protocols.\nP5.9.1.7\nDrive PC Tool\nConfigu-\nration\nDisabled\nConfigu-\nration\n2642\nUse this parameter to block VACON® PC Tools\nover Ethernet, for example, VACON® Live.\n1 Depends on fieldbuses included in drive configuration\nTable 120: Fieldbus General\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP5.13.1\nControlling Fieldbus\n2539\nV5.13.2\nControlling Fieldbus\n2610\n142 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Submenu level 1",
+            "Submenu level 2",
+            "Submenu level 3",
+            "Submenu level 4"
+          ],
+          [
+            "Ethernet",
+            "Modbus TCP(1)",
+            "",
+            ""
+          ],
+          [
+            "Ethernet",
+            "BACnet IP(2)",
+            "",
+            ""
+          ],
+          [
+            "Ethernet",
+            "EtherNet/IP(3)",
+            "",
+            ""
+          ],
+          [
+            "Ethernet",
+            "PROFINET I/O(4)",
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P5.9.1.4",
+            "Ethernet Field- bus 1",
+            "None",
+            "BACnet/ IP(1)",
+            "",
+            "None",
+            "2622",
+            "2 Ethernet-based internal fieldbuses can be enabled at a time. Select fieldbus from the list."
+          ],
+          [
+            "P5.9.1.5",
+            "Ethernet Field- bus 2",
+            "None",
+            "BACnet/ IP(1)",
+            "",
+            "Modbus TCP",
+            "2623",
+            ""
+          ],
+          [
+            "P5.9.1.6",
+            "IP Port Filter",
+            "0",
+            "65535",
+            ":unselected:",
+            "0",
+            "2641",
+            "Use this parameter to block IP ports/protocols."
+          ],
+          [
+            "P5.9.1.7",
+            "Drive PC Tool",
+            "Configu- ration",
+            "Disabled",
+            "",
+            "Configu- ration",
+            "2642",
+            "Use this parameter to block VACON® PC Tools over Ethernet, for example, VACON® Live."
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P5.13.1",
+            "Controlling Fieldbus",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "2539",
+            ""
+          ],
+          [
+            "V5.13.2",
+            "Controlling Fieldbus",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "2610",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nI/O and Hardware Menu\n8.9 STO\nTable 121: STO Parameters\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nV5.12.1.1\nChannel 1\n0\n1\n0\nSee VACON® 100 OPTBJ STO Option Board User\nManual.\nV5.12.1.2\nChannel 2\n0\n1\n0\nP5.12.2.1\nFan Stop on STO\nDisabled\nEnabled\nDisabled\n2616\nNOTICE\nThese parameters are only visible when an STO option board is connected.\n8.10 Fieldbus Redundancy\nsupports the usage of two fieldbus connections. The drive accepts control data only from the primary fieldbus. If the primary field-\nbus connection fails, the control can be automatically switched to a secondary fieldbus using the fieldbus redundancy control. built-\nin fieldbus protocols support fieldbus redundancy control. The only exception is RS485 N2, which does not support fieldbus redun-\ndancy. Recent firmware versions of fieldbus option boards also support fieldbus redundancy.\nWhen switch on failing mode is selected, and the current fieldbus connection detects missing communication from the controller,\nthe switchover command is given to change to the other fieldbus connection. When switch on faulted mode is selected, and the\ncurrent fieldbus connection gets a timeout, the switchover command is given to change to the other fieldbus connection.\nThe switchback functionality forces a change back to the primary fieldbus connection when it is in operational state and when the\ngiven time delay has elapsed. If the switchback functionality is deactivated, the switchover between the fieldbus connections is only\nperformed when the currently controlling fieldbus begins to fail or becomes faulted.\nThe currently controlling fieldbus protocol can be checked from the monitoring value V5.13.2 Controlling Fieldbus (ID 2610).\nTable 122: Fieldbus Redundancy\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP5.13.3.1\nRedundancy Mode\n0\n2\n0\n2606\n0 = Disabled\n1 = Switch on failing\n2 = Switch on faulted\nP5.13.3.2\nPrimary Fieldbus Connection\n0\n2607\nP5.13.3.3\nSecondary Fieldbus Connection\n0\n2608\nP5.13.3.4\nSwitchover Timeout\n0\n65535\nms\n0\n2609\nP5.13.3.5\nSwitchback Timeout\n0\n65535\ns\n10\n2612\nV5.13.3.6\nSwitchover Counter\n2611\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 143",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "V5.12.1.1",
+            "Channel 1",
+            "0",
+            "1",
+            "",
+            "0",
+            "",
+            "See VACON® 100 OPTBJ STO Option Board User"
+          ],
+          [
+            "V5.12.1.2",
+            "Channel 2",
+            "0",
+            "1",
+            "",
+            "0",
+            "",
+            "Manual."
+          ],
+          [
+            "P5.12.2.1",
+            "Fan Stop on STO",
+            "Disabled",
+            "Enabled",
+            "",
+            "Disabled",
+            "2616",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P5.13.3.1",
+            "Redundancy Mode",
+            "0",
+            "2",
+            "",
+            "0",
+            "2606",
+            "0 = Disabled 1 = Switch on failing 2 = Switch on faulted"
+          ],
+          [
+            "P5.13.3.2",
+            "Primary Fieldbus Connection",
+            "",
+            "",
+            "",
+            "0",
+            "2607",
+            ""
+          ],
+          [
+            "P5.13.3.3",
+            "Secondary Fieldbus Connection",
+            "",
+            "",
+            "",
+            "0",
+            "2608",
+            ""
+          ],
+          [
+            "P5.13.3.4",
+            "Switchover Timeout",
+            "0",
+            "65535",
+            "ms",
+            "0",
+            "2609",
+            ""
+          ],
+          [
+            "P5.13.3.5",
+            "Switchback Timeout",
+            "0",
+            "65535",
+            "s",
+            "10",
+            "2612",
+            ""
+          ],
+          [
+            "V5.13.3.6",
+            "Switchover Counter",
+            "",
+            "",
+            "",
+            "",
+            "2611",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nUser Settings, Favourites, and User\nLevel Menus\n9 User Settings, Favourites, and User Level Menus\n9.1 User Settings\n9.1.1 User Settings Parameters\nTable 123: General Settings in the User Settings Menu\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP6.1\nLanguage selection\nVaries\nVaries\nVaries\n802\nThe selection is different in all the language packages.\nP6.2\nApplication Selection\n801\nSelect the application.\nM6.5\nParameter back-up\nSee 9.1.2 Parameter Back-up Parameters.\nM6.6\nParameter compare\nSee 9.1.3 Parameter Compare Parameters.\nP6.7\nDrive name\n2528\nUse VACON® Live PC tool to give a name to the drive if\nnecessary.\nM6.8\nLicenses\nSee 9.1.4 License Parameters.\n9.1.2 Parameter Back-up Parameters\nTable 124: The Parameter Back-up Parameters in the User Settings menu\nIndex\nParameter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\nB6.5.1\nRestore Factory\nDefaults\n831\nRestores the default parameter values and starts the Startup\nwizard.\nP6.5.2\nSave to Keypad(1)\n0\n1\n0\n2478\nSaves the parameter values to the control panel, for example\nto copy them to another drive.\n0 = No\n1 = Yes\nP6.5.3\nRestore from Key-\npad(1)\n2488\nLoads the parameter values from the control panel to the\ndrive.\nB6.5.4\nSave to Set 1\n2489\nKeeps a customized parameter set (that is, all the parameters\nincluded in the application).\nB6.5.5\nRestore from Set 1\n2490\nLoads the customized parameter set to the drive.\nB6.5.6\nSave to Set 2\n2491\nKeeps another customized parameter set (that is, all the pa-\nrameters included in the application).\nB6.5.7\nRestore from Set 2\n2492\nLoads the customized parameter set 2 to the drive.\n1 Only available with the graphical display.\n144 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P6.1",
+            "Language selection",
+            "Varies",
+            "Varies",
+            "",
+            "Varies",
+            "802",
+            "The selection is different in all the language packages."
+          ],
+          [
+            "P6.2",
+            "Application Selection",
+            "",
+            "",
+            "",
+            "",
+            "801",
+            "Select the application."
+          ],
+          [
+            "M6.5",
+            "Parameter back-up",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "See 9.1.2 Parameter Back-up Parameters."
+          ],
+          [
+            "M6.6",
+            "Parameter compare",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "See 9.1.3 Parameter Compare Parameters."
+          ],
+          [
+            "P6.7",
+            "Drive name",
+            "",
+            "",
+            "",
+            "",
+            "2528",
+            "Use VACON® Live PC tool to give a name to the drive if necessary."
+          ],
+          [
+            "M6.8",
+            "Licenses",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "See 9.1.4 License Parameters."
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "B6.5.1",
+            "Restore Factory Defaults",
+            "",
+            "",
+            ":unselected:",
+            "",
+            "831",
+            "Restores the default parameter values and starts the Startup wizard."
+          ],
+          [
+            "P6.5.2",
+            "Save to Keypad(1)",
+            "0",
+            "1",
+            "",
+            "0",
+            "2478",
+            "Saves the parameter values to the control panel, for example to copy them to another drive. 0 = No 1 = Yes"
+          ],
+          [
+            "P6.5.3",
+            "Restore from Key- pad(1)",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "2488",
+            "Loads the parameter values from the control panel to the drive."
+          ],
+          [
+            "B6.5.4",
+            "Save to Set 1",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "2489",
+            "Keeps a customized parameter set (that is, all the parameters included in the application)."
+          ],
+          [
+            "B6.5.5",
+            "Restore from Set 1",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "2490",
+            "Loads the customized parameter set to the drive."
+          ],
+          [
+            "B6.5.6",
+            "Save to Set 2",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "2491",
+            "Keeps another customized parameter set (that is, all the pa- rameters included in the application)."
+          ],
+          [
+            "B6.5.7",
+            "Restore from Set 2",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            ":unselected:",
+            "2492",
+            "Loads the customized parameter set 2 to the drive."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nUser Settings, Favourites, and User\nLevel Menus\n9.1.3 Parameter Compare Parameters\nTable 125: Parameter Compare Parameters in the User Settings Menu\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nB6.6.1\nActive set - Set 1\n2493\nB6.6.2\nActive set - Set 2\n2494\nB6.6.3\nActive set - Defaults\n2495\nB6.6.4\nActive set - Keypad Set\n2496\n9.1.4 License Parameters\nTable 126: License Parameters in the User Settings Menu\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\nP6.8.1\nInsert License\nInsert a drive-specific license to enable new features or remove add-\ned features.\n9.2 Favourites\n9.2.1 Using the Favourites Menu\nThis menu is available on the control panel with the graphical display, but not on the control panel with the text display.\nThis menu is not available in the VACON® Live tool.\nIf the same items are used frequently, they can be added into Favourites. Collect a set of parameters or monitoring signals from all\nthe control panel menus. It is not necessary to find them in the menu structure one by one. As an alternative, add them into the\nFavourites folder where it is easy to find them.\n9.2.2 Adding an Item to the Favourites\nIt is possible to add frequently used items into Favourites where they are easily accessible.\nProcedure\n1. Find the item to be added to Favourites. Push the [OK] button.\n2. Select Add to favourites and push the [OK] button.\nThe steps are now completed.\nT\nSTOP\nREADY\nOOC\nMotor Nom Freq\nI/O\ne30bg659.10\nOO\nEdit\nHelp\nAdd to favourites\n3. To continue, read the instructions on the display.\n9.2.3 Removing an Item from the Favourites\nProcedure\n1.\nGo to the Favourites\n2. Find the item to be removed. Push the [OK] button.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 145",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "B6.6.1",
+            "Active set - Set 1",
+            "",
+            "",
+            "",
+            "",
+            "2493",
+            ""
+          ],
+          [
+            "B6.6.2",
+            "Active set - Set 2",
+            "",
+            "",
+            "",
+            "",
+            "2494",
+            ""
+          ],
+          [
+            "B6.6.3",
+            "Active set - Defaults",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "",
+            "2495",
+            ""
+          ],
+          [
+            "B6.6.4",
+            "Active set - Keypad Set",
+            ":unselected:",
+            ":unselected:",
+            "",
+            "",
+            "2496",
+            ""
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "P6.8.1",
+            "Insert License",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Insert a drive-specific license to enable new features or remove add- ed features."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nUser Settings, Favourites, and User\nLevel Menus\n3. Select Rem from favourites.\n1\nSTOP\nC\nREADY\n000\nMotor Nom Freq\nI/O\ne30bg660.10\nMonitor\nHelp\nRem from favourites\n4. To remove the item, push the [OK] button again.\n9.3 User Levels\n9.3.1 Using the User Levels Menu\nUse the User level parameters to keep the personnel who are not approved from changing the parameters. Also accidental changes\nin the parameters can be prevented.\nWhen a user level is selected, the user cannot see all the parameters on the display of the control panel.\n9.3.2 The User Level Parameters\nTable 127: The User Level Parameters\nIn-\ndex\nParam-\neter\nMin\nMax\nUnit\nDe-\nfault\nID\nDescription\nP8.1\nUser\nLevel\n1\n3\n1\n1194\n1 = Normal. All the menus are visible in the main menu.\n2 = Monitoring. Only the monitoring and user level menus are visible in\nthe main menu.\n3 = Favourites. Only the favourites and user level menus are visible in\nthe main menu.\n4 = Monitoring & Favourites. Monitoring, favourites and user level me-\nnus are visible in the main menu.\nP8.2\nAccess\nCode\n0\n99999\n0\n2362\nIf the value is set to be other than 0 before going to Monitoring from,\nfor example, Normal, the access code has to be given when going back\nto Normal. This prevents personnel who are not approved from mak-\ning changes in the parameters on the control panel.\nNOTE! Do not lose the access code. If the access code is lost, contact\nyour nearest service center or partner.\n9.3.3 Changing the Access Code of the User Levels\nProcedure\n1. Go to the User levels.\n146 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "In- dex",
+            "Param- eter",
+            "Min",
+            "Max",
+            "Unit",
+            "De- fault",
+            "ID",
+            "Description"
+          ],
+          [
+            "P8.1",
+            "User Level",
+            "1",
+            "3",
+            "",
+            "1",
+            "1194",
+            "1 = Normal. All the menus are visible in the main menu. 2 = Monitoring. Only the monitoring and user level menus are visible in the main menu."
+          ],
+          [
+            "3 = Favourites. Only the favourites and user level menus are visible in the main menu. 4 = Monitoring & Favourites. Monitoring, favourites and user level me- nus are visible in the main menu."
+          ],
+          [
+            "P8.2",
+            "Access Code",
+            "0",
+            "99999",
+            "",
+            "0",
+            "2362",
+            "If the value is set to be other than 0 before going to Monitoring from, for example, Normal, the access code has to be given when going back to Normal. This prevents personnel who are not approved from mak- ing changes in the parameters on the control panel. NOTE! Do not lose the access code. If the access code is lost, contact your nearest service center or partner."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nUser Settings, Favourites, and User\nLevel Menus\n2. Go to the item Access code and push the arrow button Right.\nSTOP\nC\nREADY\nALARM\nKeypad\ne30bg661.10\nMain Menu\nID:2362\nP8.2\nUser level\nNormal\nAccess code\n00000\nOOO\n3. To change the digits of the Access code, use all the arrow buttons.\nSTOP\nC\nREADY\nALARM\nI/O\nAccess code\nID:2362\nP8.2\ne30bg662.10\nOOO\n00000\nMin:0\nMax:9\n4. Accept the change with the [OK] button.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 147",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nMonitoring Value Descriptions\n10 Monitoring Value Descriptions\n10.1 Multimonitor\n10.1.1 (ID 25) Frequency Reference\n· Location in the menu with default settings: V2.1.1 (In Multimonitor menu)\n· Location in the menu: V2.3.2 (In Basic menu)\nThis monitoring value shows the actual frequency reference to the motor control.\nThe value is updated at 10 ms interval.\n10.1.2 (ID 1) Output Frequency\n· Location in the menu with default settings: V2.1.2 (In Multimonitor menu)\n· Location in the menu: V2.3.1 (In Basic menu)\nThis monitoring value shows the actual output frequency to the motor.\n10.1.3 (ID 3) Motor Current\n· Location in the menu with default settings: V2.1.3 (In Multimonitor menu)\n· Location in the menu: V2.3.4 (In Basic menu)\nThis monitoring value shows the measured current of the motor.\nThe scaling of the value is different for different drive sizes.\n10.1.4 (ID 2) Motor Speed\n· Location in the menu with default settings: V2.1.4 (In Multimonitor menu)\n· Location in the menu: V2.3.3 (In Basic menu)\nThis monitoring value shows the actual speed of the motor in RPM (calculated value).\n10.1.5 (ID 5) Motor Shaft Power\n· Location in the menu with default settings: V2.1.5 (In Multimonitor menu)\n· Location in the menu: V2.3.7 (In Basic menu)\nThis monitoring value shows the actual shaft power of the motor (calculated value) as a percentage of the motor nominal power.\n10.1.6 (ID 8) Unit Temperature\n· Location in the menu with default settings: V2.1.6 (In Multimonitor menu)\n· Location in the menu: V2.3.11 (In Basic menu)\nThis monitoring value shows the measured heat sink temperature of the drive.\nThe unit of measurement is degrees Celsius or Fahrenheit, depending on parameter C/F Selection (ID 1197) value.\n10.1.7 (ID 7) DC Link Voltage\n· Location in the menu with default settings: V2.1.7 (In Multimonitor menu)\n· Location in the menu: V2.3.10 (In Basic menu)\nThis monitoring value shows the measured voltage in the DC link of the drive.\n10.1.8 (ID 4) Motor Torque\n· Location in the menu with default settings: V2.1.8 (In Multimonitor menu)\n· Location in the menu: V2.3.5 (In Basic menu)\nThis monitoring value shows the actual torque of the motor (calculated value).\n148 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\n10.1.9 (ID 6) Motor Voltage\n· Location in the menu with default settings: V2.1.9 (In Multimonitor menu)\n· Location in the menu: V2.3.9 (In Basic menu)\nThis monitoring value shows the actual output voltage to the motor.\n10.2 Basic\n10.2.1 (ID 1) Output Frequency\n· Location in the menu with default settings: V2.1.2 (In Multimonitor menu)\n· Location in the menu: V2.3.1 (In Basic menu)\nThis monitoring value shows the actual output frequency to the motor.\n10.2.2 (ID 25) Frequency Reference\n· Location in the menu with default settings: V2.1.1 (In Multimonitor menu)\n· Location in the menu: V2.3.2 (In Basic menu)\nThis monitoring value shows the actual frequency reference to the motor control.\nThe value is updated at 10 ms interval.\n10.2.3 (ID 2) Motor Speed\n· Location in the menu with default settings: V2.1.4 (In Multimonitor menu)\n· Location in the menu: V2.3.3 (In Basic menu)\nThis monitoring value shows the actual speed of the motor in RPM (calculated value).\n10.2.4 (ID 3) Motor Current\n· Location in the menu with default settings: V2.1.3 (In Multimonitor menu)\n· Location in the menu: V2.3.4 (In Basic menu)\nThis monitoring value shows the measured current of the motor.\nThe scaling of the value is different for different drive sizes.\n10.2.5 (ID 4) Motor Torque\n· Location in the menu with default settings: V2.1.8 (In Multimonitor menu)\n· Location in the menu: V2.3.5 (In Basic menu)\nThis monitoring value shows the actual torque of the motor (calculated value).\n10.2.6 (ID 5) Motor Shaft Power\n· Location in the menu with default settings: V2.1.5 (In Multimonitor menu)\n· Location in the menu: V2.3.7 (In Basic menu)\nThis monitoring value shows the actual shaft power of the motor (calculated value) as a percentage of the motor nominal power.\n10.2.7 (ID 73) Motor Shaft Power\nLocation in the menu: V2.3.8\nThis monitoring value shows the actual shaft power of the motor (calculated value). The unit of measurement is kW or hp, depend-\ning on parameter kW/hp Selection (ID 1198) value.\nThe number of decimals in the value of this monitoring value varies depending on the size of the AC drive. In fieldbus control, ID\n15592 can be mapped as Process Data Out to determine how many decimals are used. The last significant digit tells the amount of\ndecimals.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 149",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\n10.2.8 (ID 6) Motor Voltage\n· Location in the menu with default settings: V2.1.9 (In Multimonitor menu)\n· Location in the menu: V2.3.9 (In Basic menu)\nThis monitoring value shows the actual output voltage to the motor.\n10.2.9 (ID 7) DC Link Voltage\n· Location in the menu with default settings: V2.1.7 (In Multimonitor menu)\n· Location in the menu: V2.3.10 (In Basic menu)\nThis monitoring value shows the measured voltage in the DC link of the drive.\n10.2.10 (ID 8) Unit Temperature\n· Location in the menu with default settings: V2.1.6 (In Multimonitor menu)\n· Location in the menu: V2.3.11 (In Basic menu)\nThis monitoring value shows the measured heat sink temperature of the drive.\nThe unit of measurement is degrees Celsius or Fahrenheit, depending on parameter C/F Selection (ID 1197) value.\n10.2.11 (ID 9) Motor Temperature\nLocation in the menu: V2.3.12\nThis monitoring value shows the calculated motor temperature in percentage of the nominal working temperature.\nWhen the value rises above 105%, motor thermal protection fault occurs.\n10.2.12 (ID 1228) Motor Preheat\nLocation in the menu: V2.3.13\nThis monitoring value shows the status of the motor preheat function.\n10.2.13 (ID 1054) kWh Trip Counter Low\nLocation in the menu: V2.3.15\nThis monitoring value shows the actual value of the kWh counter (energy counter). When the value of the counter goes higher than\n65535, the counter is restarted from 0.\n10.2.14 (ID 1067) kWh Trip Counter High\nLocation in the menu: V2.3.16\nThis monitoring value shows how many times the kWh counter (energy counter) has spun around.\n10.3 I/O\n10.3.1 (ID 15) SlotA DIN 1,2,3\nLocation in the menu: V2.4.1\nThis monitoring value shows the status of the digital inputs 1-3 in slot A (standard I/O).\n10.3.2 (ID 16) SlotA DIN 4,5,6\nLocation in the menu: V2.4.2\nThis monitoring value shows the status of the digital inputs 4-6 in slot A (standard I/O).\n10.3.3 (ID 17) SlotB RO 1,2,3\nLocation in the menu: V2.4.3\nThis monitoring value shows the status of the relay outputs 1-3 in slot B.\n10.3.4 (ID 59) Analog Input 1\nLocation in the menu: V2.4.4\nThis monitoring value shows the value of the analog input signal as a percentage of the used range.\n150 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nMonitoring Value Descriptions\n10.3.5 (ID 60) Analog Input 2\nLocation in the menu: V2.4.5\nThis monitoring value shows the value of the analog input signal as a percentage of the used range.\n10.3.6 (ID 61) Analog Input 3\nLocation in the menu: V2.4.6\nThis monitoring value shows the value of the analog input signal as a percentage of the used range.\n10.3.7 (ID 62) Analog Input 4\nLocation in the menu: V2.4.7\nThis monitoring value shows the value of the analog input signal as a percentage of the used range.\n10.3.8 (ID 75) Analog Input 5\nLocation in the menu: V2.4.8\nThis monitoring value shows the value of the analog input signal as a percentage of the used range.\n10.3.9 (ID 76) Analog Input 6\nLocation in the menu: V2.4.9\nThis monitoring value shows the value of the analog input signal as a percentage of the used range.\n10.3.10 (ID 81) SlotA AO 1\nLocation in the menu: V2.4.10\nThis monitoring value shows the value of the analog output as a percentage of the used range.\n10.4 Temperature Inputs\nThe monitoring values related to temperature input settings are only available if a B8 or BH option board is installed.\n10.4.1 (ID 50) Temperature Input 1\nLocation in the menu: V2.5.1i\nThis monitoring value shows the measured value of the temperature. The unit of the monitoring value is degrees Celsius or Fahren-\nheit, depending on parameter C/F Selection (ID 1197) value.\nThe list of temperature inputs is made of the first 6 available temperature inputs. The list starts from slot A and ends in slot E. If an\ninput is available but no sensor is connected, the list shows the maximum value because the measured resistance is endless. To\nmake the value go to its minimum value, hardwire the input.\n10.4.2 (ID 51) Temperature Input 2\nLocation in the menu: V2.5.2\nThis monitoring value shows the measured value of the temperature. The unit of the monitoring value is degrees Celsius or Fahren-\nheit, depending on parameter C/F Selection (ID 1197) value.\n10.4.3 (ID 52) Temperature Input 3\nLocation in the menu: V2.5.3\nThis monitoring value shows the measured value of the temperature. The unit of the monitoring value is degrees Celsius or Fahren-\nheit, depending on parameter C/F Selection (ID 1197) value.\n10.4.4 (ID 69) Temperature Input 4\nLocation in the menu: V2.5.4\nThis monitoring value shows the measured value of the temperature. The unit of the monitoring value is degrees Celsius or Fahren-\nheit, depending on parameter C/F Selection (ID 1197) value.\n10.4.5 (ID 70) Temperature Input 5\nLocation in the menu: V2.5.5\nThis monitoring value shows the measured value of the temperature. The unit of the monitoring value is degrees Celsius or Fahren-\nheit, depending on parameter C/F Selection (ID 1197) value.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 151",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\n10.4.6 (ID 71) Temperature Input 6\nLocation in the menu: V2.5.6\nThis monitoring value shows the measured value of the temperature. The unit of the monitoring value is degrees Celsius or Fahren-\nheit, depending on parameter C/F Selection (ID 1197) value.\n10.5 Extras and Advanced\n10.5.1 (ID 43) Drive Status Word\nLocation in the menu: V2.6.1\nThis monitoring value shows the bit-coded status of the drive.\n10.5.2 (ID 78) Ready Status\nLocation in the menu: V2.6.2\nThis monitoring value shows the bit-coded data about the Ready criteria of the drive. This data is useful for monitoring when the\ndrive is not in the Ready state.\nNOTICE\nThe values are visible as checkboxes on the graphical display. If a box is selected, the value is active.\n10.5.3 (ID 89) Application Status Word 1\nLocation in the menu: V2.6.3\nThis monitoring value shows the bit-coded statuses of the application.\nNOTICE\nThe values are visible as checkboxes on the graphical display. If a box is selected, the value is active.\n10.5.4 (ID 90) Application Status Word 2\nLocation in the menu: V2.6.4\nThis monitoring value shows the bit-coded statuses of the application.\nNOTICE\nThe values are visible as checkboxes on the graphical display. If a box is selected, the value is active.\n10.5.5 (ID 56) DIN Status Word 1\nLocation in the menu: V2.6.5\nThis monitoring value shows the bit-coded status of the digital input signals.\nThe monitoring value is a 16-bit word, where each bit shows the status of 1 digital input. From each slot, 6 digital inputs are read.\nWord 1 starts from the input 1 in slot A (bit0) and ends with input 4 in slot C (bit15).\n10.5.6 (ID 57) DIN Status Word 2\nLocation in the menu: V2.6.6\nThis monitoring value shows the bit-coded status of the digital input signals.\nThe monitoring value is a 16-bit word, where each bit shows the status of 1 digital input. From each slot, 6 digital inputs are read.\nWord 2 starts from the input 5 in slot C (bit0) and ends with input 6 in slot E (bit13).\n10.5.7 (ID 45) Motor Current 1 Deci\nLocation in the menu: V2.6.7\nThis monitoring value shows the measured current of the motor with the fixed number of decimals and that is less filtered. This\nmonitoring value can be used, for example, with fieldbus to get the correct value so that the enclosure size does not have an effect.\nIt can also be used for monitoring when less filtering time is needed for the motor current.\n152 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\n10.5.8 (ID 1495) Frequency Reference Source\nLocation in the menu: V2.6.8\nThis monitoring value shows the momentary frequency reference source.\n10.5.9 (ID 37) Last Active Fault Code\nLocation in the menu: V2.6.9\nThis monitoring value shows the fault code of latest activated fault that is not reset.\n10.5.10 (ID 95) Last Active Fault ID\nLocation in the menu: V2.6.10\nThis monitoring value shows the fault ID of latest activated fault that is not reset.\n10.5.11 (ID 74) Last Active Alarm Code\nLocation in the menu: V2.6.11\nThis monitoring value shows the alarm code of latest activated alarm that is not reset.\n10.5.12 (ID 94) Last Active Alarm ID\nLocation in the menu: V2.6.12\nThis monitoring value shows the alarm ID of latest activated alarm that is not reset.\n10.5.13 (ID 77) Motor Regulator Status\nLocation in the menu: V2.6.13\nThis monitoring value shows the bit-coded status of the motor limit controllers.\nNOTICE\nThe values are visible as checkboxes on the graphical display. If a box is selected, the limit controller is active.\n10.5.14 (ID 98) Motor Shaft Power 1 Decimal\nLocation in the menu: V2.6.14\nThis monitoring value shows the actual shaft power of the motor (calculated value with one decimal). The unit of measurement is\nkW or hp, depending on parameter kW/hp Selection (ID 1198) value.\n10.6 Timer Functions\n10.6.1 (ID 1441) TC 1, TC 2, TC 3\nLocation in the menu: V2.7.1\nThis monitoring value shows the status of the time channels 1, 2 and 3.\n10.6.2 (ID 1442) Interval 1\nLocation in the menu: V2.7.2\nThis monitoring value shows the status of the interval function.\n10.6.3 (ID 1443) Interval 2\nLocation in the menu: V2.7.3\nThis monitoring value shows the status of the interval function.\n10.6.4 (ID 1444) Interval 3\nLocation in the menu: V2.7.4\nThis monitoring value shows the status of the interval function.\n10.6.5 (ID 1445) Interval 4\nLocation in the menu: V2.7.5\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 153",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\nThis monitoring value shows the status of the interval function.\n10.6.6 (ID 1446) Interval 5\nLocation in the menu: V2.7.6\nThis monitoring value shows the status of the interval function.\n10.6.7 (ID 1447) Timer 1\nLocation in the menu: V2.7.7\nThe monitoring value shows the remaining time on the timer if the timer is active.\n10.6.8 (ID 1448) Timer 2\nLocation in the menu: V2.7.8\nThe monitoring value shows the remaining time on the timer if the timer is active.\n10.6.9 (ID 1449) Timer 3\nLocation in the menu: V2.7.9\nThe monitoring value shows the remaining time on the timer if the timer is active.\n10.6.10 (ID 1450) Real-time Clock\nLocation in the menu: V2.7.10\nThis monitoring value shows the actual time of the real-time clock in a format of hh:mm:ss.\n10.7 PID Controller\n10.7.1 (ID 20) PID Setpoint\nLocation in the menu: V2.8.1\nThis monitoring value shows the value of the PID setpoint signal in process units. Use the parameter P3.13.1.7 to select the process\nunit (See 11.15.1.4 (ID 1036) Process Unit Selection).\n10.7.2 (ID 21) PID Feedback\nLocation in the menu: V2.8.2\nThis monitoring value shows the value of the PID feedback signal in process units. Use the parameter P3.13.1.7 to select the process\nunit (See 11.15.1.4 (ID 1036) Process Unit Selection).\n10.7.3 (ID 15541) PID Feedback (1)\nLocation in the menu: V2.8.3\nThis monitoring value shows the value of the PID feedback signal 1 in process units.\n10.7.4 (ID 15542) PID Feedback (2)\nLocation in the menu: V2.8.4\nThis monitoring value shows the value of the PID feedback signal 2 in process units.\n10.7.5 (ID 22) PID Error\nLocation in the menu: V2.8.5\nThis monitoring value shows the error value of the PID controller.\nThe error value is the deviation of PID feedback from the PID setpoint in process unit. Use the parameter P3.13.1.7 to select the\nprocess unit (See 11.15.1.4 (ID 1036) Process Unit Selection).\n10.7.6 (ID 23) PID Output\nLocation in the menu: V2.8.6\nThis monitoring value shows the output of the PID controller as a percentage (0-100%).\nGive this value to the motor control (frequency reference) or to an analog output.\n154 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\n10.7.7 (ID 24) PID Status\nLocation in the menu: V2.8.7\nThis monitoring value shows the state of the PID controller.\n10.8 External PID Controller\n10.8.1 (ID 83) EXTPID Setpoint\nLocation in the menu: V2.9.1\nThis monitoring value shows the value of the PID setpoint signal in process units. Use the parameter P3.14.1.10 to select the process\nunit (See 11.15.1.7 (ID 1035) Process Unit Decimals).\n10.8.2 (ID 85) EXTPID Error\nLocation in the menu: V2.9.3\nThis monitoring value shows the error value of the PID controller. The error value is the deviation of PID feedback from the PID\nsetpoint in process unit. Use the parameter P3.14.1.10 to select the process unit (See 11.15.1.7 (ID 1035) Process Unit Decimals).\n10.8.3 (ID 84) EXTPID Feedback\nLocation in the menu: V2.9.2\nThis monitoring value shows the value of the PID feedback signal in process units. Use the parameter P3.14.1.10 to select the proc-\ness unit (See 11.15.1.7 (ID 1035) Process Unit Decimals).\n10.8.4 (ID 86) EXTPID Output\nLocation in the menu: V2.9.4\nThis monitoring value shows the output of the PID controller as a percentage (0-100%). Give this value to, for example, the analog\noutput.\n10.8.5 (ID 87) EXTPID Status\nLocation in the menu: V2.9.5\nThis monitoring value shows the state of the PID controller.\n10.9 Multi-pump\n10.9.1 (ID 30) Motors Running\nLocation in the menu: V2.10.1\nThis monitoring value shows the actual number of motors that operate in the Multi-pump system.\n10.9.2 (ID 1114) Autochange\nLocation in the menu: V2.10.2\nThis monitoring value shows the status of the autochange requested.\n10.9.3 (ID 1503) Next Autochange\nLocation in the menu: V2.10.3\nThis monitoring value shows the time that remains to next autochange.\n10.9.4 (ID 1505) Operate Mode\nLocation in the menu: V2.10.4\nThis monitoring value shows the operation mode of the drive in the Multi-pump system.\n10.9.5 (ID 1628) Multi-pump Status\nLocation in the menu: V2.10.5\nThis monitoring value shows the status of the drive in the Multi-pump system.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 155",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\n10.9.6 (ID 1629) Communication Status\nLocation in the menu: V2.10.6\nThis monitoring value shows status of the communication between the drives in the Multi-pump system.\n10.9.7 (ID 1620) Pump (1) Running Time\nLocation in the menu: V2.10.7\nThis monitoring value shows the operating hours of the pump in Multi-pump system.\n10.9.8 (ID 1621) Pump (2) Running Time\nLocation in the menu: V2.10.8\nThis monitoring value shows the operating hours of the pump in Multi-pump system.\n10.9.9 (ID 1622) Pump (3) Running Time\nLocation in the menu: V2.10.9\nThis monitoring value shows the operating hours of the pump in Multi-pump system.\n10.9.10 (ID 1623) Pump (4) Running Time\nLocation in the menu: V2.10.10\nThis monitoring value shows the operating hours of the pump in Multi-pump system.\n10.9.11 (ID 1624) Pump (5) Running Time\nLocation in the menu: V2.10.11\nThis monitoring value shows the operating hours of the pump in Multi-pump system.\n10.9.12 (ID 1625) Pump (6) Running Time\nLocation in the menu: V2.10.12\nThis monitoring value shows the operating hours of the pump in Multi-pump system.\n10.9.13 (ID 1626) Pump (7) Running Time\nLocation in the menu: V2.10.13\nThis monitoring value shows the operating hours of the pump in Multi-pump system.\n10.9.14 (ID 1627) Pump (8) Running Time\nLocation in the menu: V2.10.14\nThis monitoring value shows the operating hours of the pump in Multi-pump system.\n10.10 Maintenance Counters\n10.10.1 (ID 1101) Maintenance Counter 1\nLocation in the menu: V2.11.1\nThis monitoring value shows the status of the maintenance counter. The status of the maintenance counter is shown as revolutions\nmultiplied by 1000, or in hours. For the configuration and activation of this counter, see 11.18.1 The Maintenance Counters.\n10.11 Fieldbus Data\n10.11.1 (ID 874) FB Control Word\nLocation in the menu: V2.12.1\nThis monitoring value shows the status of the fieldbus control word that the application uses in bypass mode. Depending on the\nfieldbus type or profile, the data that is received from the fieldbus can be modified before it is sent to the application.\n156 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Monitoring Value Descriptions\nVACON® 100 FLOW\nDanfoss\nApplication Guide\nBit\nValue = 0 (FALSE)\nValue = 1 (TRUE)\nBit 0\nStop request from Fieldbus\nStart request from Fieldbus\nBit 1\nForward direction request\nReverse direction request\nBit 2\nNo action\nReset active faults and alarms (on rising edge 0->1)\nBit 3\nNo action\nForce stop mode to Coasting\nBit 4\nNo action\nForce stop mode to Ramping\nBit 5\nNo action (normal deceleration ramp\ntime)\nForce drive to use fast deceleration ramp time (1/3 of normal deceleration\ntime)\nBit 6\nNo action\nFreeze drive frequency reference\nBit 7\nNo action\nForce Fieldbus frequency reference to zero\nBit 8\nNo action\nForce drive control place to Fieldbus control\nBit 9\nNo action\nForce drive reference source to Fieldbus reference\nBit 10\nReserved\nReserved\nBit 11\nReserved\nReserved\nBit 12\nNo action\nActivate Quick Stop function\nNOTE! This stops the drive according to setting in parameter menu M3.9.5.\nBit 13\nReserved\nReserved\nBit 14\nReserved\nReserved\nBit 15\nReserved\nReserved\n10.11.2 (ID 875) FB Speed Reference\nLocation in the menu: V2.12.2\nThis monitoring value shows the fieldbus frequency reference as a percentage of minimum frequency to maximum frequency.\nThe speed reference information is scaled between the minimum and the maximum frequency at the moment when the applica-\ntion received it. The minimum and the maximum frequencies can be changed after the application received the reference without\nan effect on the reference.\n10.11.3 (ID 876) FB Data IN 1\nLocation in the menu: V2.12.3\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.4 (ID 877) FB Data IN 2\nLocation in the menu: V2.12.4\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.5 (ID 878) FB Data IN 3\nLocation in the menu: V2.12.5\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.6 (ID 879) FB Data IN 4\nLocation in the menu: V2.12.6\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 157",
+      "tablas": [
+        [
+          [
+            "Bit",
+            "Value = 0 (FALSE)",
+            "Value = 1 (TRUE)"
+          ],
+          [
+            "Bit 0",
+            "Stop request from Fieldbus",
+            "Start request from Fieldbus"
+          ],
+          [
+            "Bit 1",
+            "Forward direction request",
+            "Reverse direction request"
+          ],
+          [
+            "Bit 2",
+            "No action",
+            "Reset active faults and alarms (on rising edge 0->1)"
+          ],
+          [
+            "Bit 3",
+            "No action",
+            "Force stop mode to Coasting"
+          ],
+          [
+            "Bit 4",
+            "No action",
+            "Force stop mode to Ramping"
+          ],
+          [
+            "Bit 5",
+            "No action (normal deceleration ramp time)",
+            "Force drive to use fast deceleration ramp time (1/3 of normal deceleration time)"
+          ],
+          [
+            "Bit 6",
+            "No action",
+            "Freeze drive frequency reference"
+          ],
+          [
+            "Bit 7",
+            "No action",
+            "Force Fieldbus frequency reference to zero"
+          ],
+          [
+            "Bit 8",
+            "No action",
+            "Force drive control place to Fieldbus control"
+          ],
+          [
+            "Bit 9",
+            "No action",
+            "Force drive reference source to Fieldbus reference"
+          ],
+          [
+            "Bit 10",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 11",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 12",
+            "No action",
+            "Activate Quick Stop function NOTE! This stops the drive according to setting in parameter menu M3.9.5."
+          ],
+          [
+            "Bit 13",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 14",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 15",
+            "Reserved",
+            "Reserved"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\n10.11.7 (ID 880) FB Data IN 5\nLocation in the menu: V2.12.7\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.8 (ID 881) FB Data IN 6\nLocation in the menu: V2.12.8\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.9 (ID 882) FB Data IN 7\nLocation in the menu: V2.12.9\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.10 (ID 883) FB Data IN 8\nLocation in the menu: V2.12.10\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.11 (ID 864) FB Status Word\nLocation in the menu: V2.12.11\nThis monitoring value shows the status of the fieldbus status word that the application uses in bypass mode. Depending on the\nfieldbus type or profile, the data can be modified before it is sent to the fieldbus.\nBit\nValue = 0 (FALSE)\nValue = 1 (TRUE)\nBit 0\nNot ready to operate\nReady to operate\nBit 1\nNot running\nRunning\nBit 2\nBehavior depends on P3.6.17.\nBehavior depends on P3.6.17.\nBit 3\nNo fault\nFault is active\nBit 4\nNo alarm\nAlarm is active\nBit 5\nRequested speed not reached\nRunning at requested speed\nBit 6\nActual speed of the drive not zero\nActual speed of the drive is zero\nBit 7\nMotor not magnetized (flux not ready)\nMotor magnetized (flux ready)\nBit 8\nReserved\nReserved\nBit 9\nReserved\nReserved\nBit 10\nReserved\nReserved\nBit 11\nReserved\nReserved\nBit 12\nReserved\nReserved\nBit 13\nReserved\nReserved\nBit 14\nReserved\nReserved\nBit 15\nReserved\nReserved\n10.11.12 (ID 865) FB Speed Actual\nLocation in the menu: V2.12.12\nThis monitoring value shows the actual speed of the drive as a percentage of minimum frequency and maximum frequency. The\nvalue 0% indicates the minimum frequency and the value 100% indicates the maximum frequency. This monitoring value is contin-\nuously updated depending on the momentary min and max frequencies and the output frequency.\n158 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Bit",
+            "Value = 0 (FALSE)",
+            "Value = 1 (TRUE)"
+          ],
+          [
+            "Bit 0",
+            "Not ready to operate",
+            "Ready to operate"
+          ],
+          [
+            "Bit 1",
+            "Not running",
+            "Running"
+          ],
+          [
+            "Bit 2",
+            "Behavior depends on P3.6.17.",
+            "Behavior depends on P3.6.17."
+          ],
+          [
+            "Bit 3",
+            "No fault",
+            "Fault is active"
+          ],
+          [
+            "Bit 4",
+            "No alarm",
+            "Alarm is active"
+          ],
+          [
+            "Bit 5",
+            "Requested speed not reached",
+            "Running at requested speed"
+          ],
+          [
+            "Bit 6",
+            "Actual speed of the drive not zero",
+            "Actual speed of the drive is zero"
+          ],
+          [
+            "Bit 7",
+            "Motor not magnetized (flux not ready)",
+            "Motor magnetized (flux ready)"
+          ],
+          [
+            "Bit 8",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 9",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 10",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 11",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 12",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 13",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 14",
+            "Reserved",
+            "Reserved"
+          ],
+          [
+            "Bit 15",
+            "Reserved",
+            "Reserved"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\n10.11.13 (ID 866) FB Data OUT 1\nLocation in the menu: V2.12.13\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.14 (ID 867) FB Data OUT 2\nLocation in the menu: V2.12.13\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.15 (ID 868) FB Data OUT 3\nLocation in the menu: V2.12.15\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.16 (ID 869) FB Data OUT 4\nLocation in the menu: V2.12.16\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.17 (ID 870) FB Data OUT 5\nLocation in the menu: V2.12.17\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.18 (ID 871) FB Data OUT 6\nLocation in the menu: V2.12.18\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.19 (ID 872) FB Data OUT 7\nLocation in the menu: V2.12.19\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.11.20 (ID 873) FB Data OUT 8\nLocation in the menu: V2.12.20\nThis monitoring value shows the raw value of process data in a 32-bit signed format.\n10.12 Drive Customizer\n10.12.1 (ID 15020) Block Out.1\nLocation in the menu: V2.13.2\nThis monitoring value shows the value of the function block output in the Drive customizer function.\n10.12.2 (ID 15040) Block Out.2\nLocation in the menu: V2.13.3\nThis monitoring value shows the value of the function block output in the Drive customizer function.\n10.12.3 (ID 15060) Block Out.3\nLocation in the menu: V2.13.4\nThis monitoring value shows the value of the function block output in the Drive customizer function.\n10.12.4 (ID 15080) Block Out.4\nLocation in the menu: V2.13.5\nThis monitoring value shows the value of the function block output in the Drive customizer function.\n10.12.5 (ID 15100) Block Out.5\nLocation in the menu: V2.13.6\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 159",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nMonitoring Value Descriptions\nThis monitoring value shows the value of the function block output in the Drive customizer function.\n10.12.6 (ID 15120) Block Out.6\nLocation in the menu: V2.13.7\nThis monitoring value shows the value of the function block output in the Drive customizer function.\n10.12.7 (ID 15140) Block Out.7\nLocation in the menu: V2.13.8\nThis monitoring value shows the value of the function block output in the Drive customizer function.\n10.12.8 (ID 15160) Block Out.8\nLocation in the menu: V2.13.9\nThis monitoring value shows the value of the function block output in the Drive customizer function.\n10.12.9 (ID 15180) Block Out.9\nLocation in the menu: V2.13.10\nThis monitoring value shows the value of the function block output in the Drive customizer function.\n10.12.10 (ID 15200) Block Out.10\nLocation in the menu: V2.13.11\nThis monitoring value shows the value of the function block output in the Drive customizer function.\n10.13 Condition-based Monitoring\n10.13.1 Baseline Data\n10.13.1.1 (ID 3601) Baseline Data Element 1\nLocation in the menu: V2.16.1.1\nThis monitoring value shows the baseline data. The baseline data is selected using the baseline data selector.\n10.13.1.2 (ID 3602) Baseline Data Element 2\nLocation in the menu: V2.16.1.2\nThis monitoring value shows the baseline data. The baseline data is selected using the baseline data selector.\n10.13.1.3 (ID 3603) Baseline Data Element 3\nLocation in the menu: V2.16.1.3\nThis monitoring value shows the baseline data. The baseline data is selected using the baseline data selector.\n10.13.1.4 (ID 3604) Baseline Data Element 4\nLocation in the menu: V2.16.1.4\nThis monitoring value shows the baseline data. The baseline data is selected using the baseline data selector.\n10.13.1.5 (ID 3605) Baseline Data Element 5\nLocation in the menu: V2.16.1.5\nThis monitoring value shows the baseline data. The baseline data is selected using the baseline data selector.\n10.13.1.6 (ID 3606) Baseline Data Element 6\nLocation in the menu: V2.16.1.6\nThis monitoring value shows the baseline data. The baseline data is selected using the baseline data selector.\n10.13.1.7 (ID 3607) Baseline Data Element 7\nLocation in the menu: V2.16.1.7\nThis monitoring value shows the baseline data. The baseline data is selected using the baseline data selector.\n160 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "archivo": "Modem Mitech - GP3",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "GP3-V1-LTE\nSMART MODEM\nGP3-V1-LTE SERIAL\nCa ca ca\n....\nULP Smart Modem\nReset\nwiech\nPower Tx/Rx Link\n4G\nData Signal\nBusy\nCOMUNICACIÓN Y DISPONIBILIDAD\nCONTINUA DE DATOS\n4G L\nAUX CONNECTOR\nUSB\nWireless Technologies USA\nWitech USA Corp",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "WI\n+\nBENEFICIOS\n4G\nLTE\nTecnología 4G LTE para un\ndesempeño superior con\nrespecto a equipos 3G y\nGPRS.\nUltra bajo consumo, especial\npara aplicaciones remotas\ncon panel solar y baterías.\nGP3-V1-LTE\nSMART MODEM\nConexión RS232, RS485 e I2C\npara la telemedida de equi-\npos industriales.\nBajo costo y diseño compacto\npara reducción en inversio-\nnes de infraestructura de\nequipos Scada.\n$\nConversor de protocolo\nModbus RTU a Modbus\nTCP/IP para la integración de\nequipos seriales a sistemas\nScada.\nConexión auxiliar con I/O\ndigitales, entradas de pulso y\nentradas analógicas para el\nmonitoreo remoto Scada de\nseñales 0-5Vdc, 4-20mA y tipo\nON/OFF.\nCry-out (llamada por excep-\nción) capable. Opera con con-\nfiguración de cliente o servi-\ndor.\nMúltiples conexiones TCP\nsimultáneas para el monito-\nreo de las variables internas\ndel modem y variables de\nequipos externos.\nIP\nFácil configuración local o\nremota, mediante software\nWT Config® en ambiente\nWindows. Permite actualiza-\nción remota de firmware.\nCompatibilidad con servicio\nWiserver para la asignacion\nde dirección IP fija indepen-\ndientemente del operador\ncelular utilizado.\nEquipado con sistema anti-\nbloqueo. Verificación conti-\nnua del estado de la red celu-\nlar, detecta y restablece cual-\nquier interrupción sobre la\nred.\nSu modo ultra bajo consumo\npermite activarse en interva-\nlos. Si la conexión está hecha\ncon el servidor Scada, la\nunidad puede activar RTU's,\nPLC's, etc; requiriendo muy\npoca energía para la locación\nremota.\nwiech",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "WT CONFIG\nSOFTWARE\nw( WT Config - V1.1.5\nA Home\nGeneral settings\nm Modbus Map\nReset\nTCP Idle timeout:\n12\nMin\nReboot timer:\n60\nMin\nWatchdog:\n240\nMin\nReset command:\nINACTIVE\nForced connection:\nACTIVE\nSe\n---\nTest\nWT Config - V115\nHome Alf General settings ITI Modbus Map\nDevice:\nAIRCON WT GP3\nResponse timeOut\nRefresh data every\nCommand\nComm port: COM1\nBaudrate:\n9600\nCommand:\nSelect a command\n-> Send\nCommand:\n-Send\n100.65.18.138-AT Command Ready-\nAT\nLISTEN\n27/10/2015 09:11:50 >> Update settings has ended\n27/10/2015 09:11:50 >> Testing communication successful.\nOK\n27/10/2015 09:11:49 >> Read Packet Data protocol setings successful.\nAT+CGDCONT? +CGDCONT: 3,7\n09:11:49 39 Read device name successful.\nAT-CDEVICE? - CDEVICE: AIRCON GPS\nOK\n27/10/2015 09:11:49 >> Read device information successful ..\nAT&V WITECH USA\nAIRCON GPS\n11-08-2015 WITTICH\n+GSN:013949000575574\nseconds\nData received\nGeneral information\nManufacter ID\nDevice model\nDevice name\nFirmware version\nSerial / IME\nLocal IP address\nLocal TCP port\nRemote IP address\nRemote TCP port\nConnection settings\nRemote IP\nRemote port\nLocal port\n2\nConnection status: NO\nTest # 1 - Serial - Flash:\nConnect device to computer\nand turn it ON.\nx\nSerial Reception\nx\nFlash\nAnalog Input Test\nPPP Protocol - Packed data protocol\nContext identifier:\n1\nProtocol type:\nAccess Point Name:\nSelect\nIP Address:\n0.0.0.0\nData compression\nHeader compression\nSe\nx\nPPP status - PDP NOT CONFIGURED\n×\nDigital Input Test\nDigital input: OFF\n-Start\nDigital Output Test\nDigital output: OFF\nStart\nGeneral Purpose Pin Test\nGPIO data: OFF\nStart\nUSB Test\nCommunication Port:\nBaudrate:\nSelect\nSelect\n-\nStart\nx\nUSB Transmission and Reception\n-CSQ: 14.0\nDATE:1\nDevice status:\nWitech USA Driver verification status: X - Info: Port open ...\nAT Command Ready\n+ANALOG D.DOD\n+CPCSGP.1.\n+CIFSR:\n100.85.18.138\n. PREMOTE\n+PR: 9600\nx\nSIM status:\nDevice Baudrate: 9600\nAPN information\nAccess point name:\nÜber\nWitech USA Driver verification status: > . Infor Read Packet Data protocol settings successful\nGP3-V1-LTE SERIAL\n0\n.....\n....\nULP Smart Modem\nReset\n1\nMaster ID\nbert IC\n1\nSe\nwap.cingular\nPassword:\nPower Tx/Rx Link\nLG\nData Signal\n4G L\nAUX CONNECTOR\nUSB\nGP3-V1-LTE\nSMART MODEM\n0000120 Seconds to update\nwiech\nwireless technologies\nTCP/IP\nConnection verfication time:\n15\nSec\n>Set\n3G+ Module Test\nWait 10 seconds ...\n3G+ signal: No data\nx\nOperator: No data\nProgram GP3\nStart programming process\nx\nStatus of network registration\nModule/PIC control flow\nDefault baudrate\nSave data\n- Finish\nwiech",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "O\nESPECIFICACIONES TÉCNICAS\nGP3-V1-LTE\nSMART MODEM\nEspecificaciones Smart Modem® GP3-V1-LTE\nAmbientes peligrosos:\nDimensiones:\nMaterial de carcasa:\nConector de interfaz:\nAntena:\nFrecuencia de radio:\nPotencia de transmisión:\nLEDS:\nProtocolos soportados:\nActualización de software:\nPaquete de Datos 3G/4G LTE\nMódulo de radio:\nInterfaz de aplicación:\nProtocolo host:\nAcceso de SIM:\nCifrado de datos:\nAprobado UL para Clase 1, Div. 2\n70 × 53.5 × 32 mm\nABS\nConector principal de 10 pines\nConector hembra SMA, 50 Ohm\n3G - UMTS B2 (1900MHZ), B5 (850MHz)\n4G LTE - LTE B2 (1900MHZ),\nB4 (1700/2100MHZ),\nB5(850MHz), B13 (700MHz - Verizon, CDMA),\nB17 (700MHZ - AT&T)\n23 dBm +- 2 dB\nPower, RSSI, Tx/Rx data, Data, Link Status\nModbus RTU, ASCII, RTU TCP/IP Client, ENRON\nEn el aire y actualizaciones locales de firmware\nHL7588\nRS232, RS485, USB and I2C\nTCP/IP(3G/4G LTE), UDP,AT, USB(CDC)\nExterno -3V, MicroSim\nAES-128 (Advanced Encryption Standard)\npara seguridad en comunicación de datos\nwiech",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "GP3-V1-LTE\nSMART MODEM\nO\nESPECIFICACIONES TÉCNICAS\nControl en el Aire\nMonitoreando fuerza de señal nivel RSSI, entradas análogas, entradas digitales y salidas,\ncontador de pulso, configuraciones y parámetros de los modems. Controlando entradas\ndigitales, configurando registros, etc.\nEnergía\nVoltaje DC:\nModo Sleep:\nModo TX:\nModo RX:\n5 - 30Vdc*\n13uA@ 12V\nProgrammable ultra low power sleep control,\ndespierto via cronómetro o entrada digital\n150 mA (Maximum)\n100 mA (Maximum)\n* Verifique las opciones de fuente de alimentación y los rangos de voltaje en la guía de inicio rápido antes de conectar\nel módem.\nEntradas Análogas\n2 entradas análogas:\n0-5Vdc, 4-20mA\nControl y Entradas/Salidas Digitales\n2 salidas digitales:\n2 entradas digitales:\nAmbiente\nTemperatura de operación:\nHumedad:\nmax 100mA, max 50Vdc\nmax 10mA, 3.6Vdc\n-30°C to +60℃\nHasta 95% sin condensación\nwiech",
+      "tablas": [
+        [
+          [
+            "Entradas Análogas",
+            ""
+          ],
+          [
+            "2 entradas análogas:",
+            "0-5Vdc, 4-20mA"
+          ],
+          [
+            "Control y Entradas/Salidas Digitales",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "GP3-V1-LTE\nSMART MODEM\nO\nESPECIFICACIONES TÉCNICAS\nConsumo de Energía @12VDC Entrada (Estimado)\nEstado\nMin\nTípico\nMax\nUnid.\nMin\nTípico\nMax\nUnid.\nModo Sleep:\n54\n72\n120\nuW\n4.5\n6\n10\nuA\nStandby:\n247.2\n276\n312\nmW\n20.6\n23\n26\nmA\nModo TX:\n276\n300\n960\nmW\n23\n25\n80\nmA\nCertificaciones y Ambiental\nCumplimiento Directiva RoHS:\nEliminación del producto:\nFCC ID:\nFCC IC:\n2011/65/EU\n2012/19/EU (WEEE)\nN7NHL7588\n2417C-HL7588",
+      "tablas": [
+        [
+          [
+            "Estado",
+            "Min",
+            "Típico",
+            "Max",
+            "Unid.",
+            "Min",
+            "Típico",
+            "Max",
+            "Unid."
+          ],
+          [
+            "Modo Sleep:",
+            "54",
+            "72",
+            "120",
+            "uW",
+            "4.5",
+            "6",
+            "10",
+            "uA"
+          ],
+          [
+            "Standby:",
+            "247.2",
+            "276",
+            "312",
+            "mW",
+            "20.6",
+            "23",
+            "26",
+            "mA"
+          ],
+          [
+            "Modo TX:",
+            "276",
+            "300",
+            "960",
+            "mW",
+            "23",
+            "25",
+            "80",
+            "mA"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "wiech\nWireless Technologies USA\nWitech USA Corp\n20283 State road 7. suite 400\nBoca Raton, FL 33498\nEstados Unidos de América\nTeléfono: (561) 883 8129\nwww.witechusa.com",
+      "tablas": []
+    }
+  ]
+}

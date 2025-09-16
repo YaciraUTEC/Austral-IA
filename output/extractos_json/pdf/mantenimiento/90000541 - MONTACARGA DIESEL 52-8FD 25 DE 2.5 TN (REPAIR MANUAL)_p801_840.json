@@ -1,0 +1,884 @@
+{
+  "archivo": "90000541 - MONTACARGA DIESEL 52-8FD 25 DE 2.5 TN (REPAIR MANUAL)_p801_840",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "21-104\n· Código de error 08-1 (Anormalidad de baja tensión)\nParte relacionada\nA36\nControlador\ndel motor\n3 (BATT)\nPosible causa\n1 Mazo de cables defectuoso\n2 Controlador del motor defectuoso\nCódigo de error 08-1\nDesconecte el terminal negativo de la batería\n(durante más de 10 segundos), después de\ninspeccionar y corregir la desconexión de A36 y la\nhumidificación interior, vuelva a conectar todos los\nconectores y el terminal negativo de la batería,\nponga en ON el interruptor de la llave de\nencendido (arranque el motor), y compruebe si\nhay o no un error.\nError\nInspección 1:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nBIEN\nControlador del motor defectuoso\nNingún error\nMAL\n>\nMazo de cables defectuoso\nEFI\n> Contacto del conector cefectuoso\nInspección 1:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A36.\nEstándar:\nA36-3 - EFI\nHay continuidad\nA36-3 - Bastidor\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "A36-3 - EFI",
+            "Hay continuidad"
+          ],
+          [
+            "A36-3 - Bastidor",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "· Código de error 09-1 (Anormalidad de señal de encendido)\nParte relacionada\nIGN\nG27\nG25\nControlador\ndel motor\n33 (IGT)\n32 (IGF)\n2 (IGT)\n1 (IGF)\nPosible causa\n@ Bobina de encendido\nEncendedor defectuoso\n€ Mazo de cables defectuoso\n@ Controlador del motor defectuoso\nEncendedor\nBobina de\nencendido\n21-105\nG25\n3 (IG2)\n5 (EN1)\n1\n1\n1\n1\n1\n1\nG21\n1\n1\n1\n1\n2 (IG-)\n1\n1\n1 (IG+)",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "21-106\nCódigo de error 09-1\nDesconecte el terminal negativo\nde la batería (durante más de 10\nsegundos), después de\ninspeccionar y corregir la\ndesconexión de G21 y G25 y la\nfuga interna, vuelva a conectar\ntodos los conectores y el terminal\nnegativo de la batería, ponga en\nON el interruptor de la llave de\nencendido para arrancar el motor.\nEl motor no arrancará\nEl motor\narranca\nAccione el pedal del acelerador y\ncompruebe si hay un error.\nNingún error\n> Contacto del conector defectuoso\nError\nV\nInspección 1:\nInspección de la señal de\nanormalidad del encendido (IGF)\nBIEN\nMAL\nInspección 2:\nInspección de cortocircuitos y\ncontinuidad del mazo de cables\nBIEN\nMAL\nMazo de cables\ndefectuoso\nEncendedor defectuoso\nControlador del motor defectuoso\nInspección 3:\nInspección individual de la bobina\nde encendido\nMAL\nBobina de encendido defectuosa\nBIEN\nInspección 4:\nInspección de cortocircuitos y\ncontinuidad del mazo de cables\nMAL\nMazo de cables defectuoso\nBIEN\nInspección 5:\nInspección de la señal IGT del\nencendedor\nMAL\n> Controlador del motor defectuoso\nBIEN\nEncendedor defectuoso\nInspección 1:\nRealice una inspección de la señal del encendido (IGF).\nInterruptor de la llave de encendido en OFF, desconecte G25, conecte G27, interruptor\nde la llave de encendido en ON, motor parado\nG25\n5 4 3 2 1\nEstándar:\nG25-1 - Bastidor\n4,0 - 5,5 V",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": ".. ... ......\n21-107\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte G27 y G25\nEstándar:\nG27-32 - G25-1\nHay continuidad\nG27-32 - Bastidor\nNo hay continuidad\nInspección 3:\nRealice una inspección individual del distribuidor.\n2×1\nInterruptor de la llave de encendido en OFF, desconecte G21 y G25,\nconecte G27\nG21\nEstándar:\nLado primario (G21-1 - G21-2)\n1,2 - 1,5 (\nLado secundario (terminal interno IIA)\n7,7 - 10,4 £2\nInspección 4:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte G27, G21 y G25\nEstándar:\nG27-33 - G25-2\nHay continuidad\nG27-32 - G25-1\nHay continuidad\nG27-33 - G27-32\nNo hay continuidad\nG27-33 - Bastidor\nNo hay continuidad\nG27-32 - Bastidor\nNo hay continuidad\nG25-5 - G21-2\nHay continuidad\nG25-3 - G21-1\nHay continuidad\nG25-5 - G25-3\nNo hay continuidad\nG25-5 - bastidor\nNo hay continuidad\nG25-3 - bastidor\nNo hay continuidad\nInspección 5:\nRealice una inspección de la señal del encendedor (IGT).\nInterruptor de la llave de encendido en OFF, desconecte G21 y G25, conecte G27,\ninterruptor de la llave de encendido en ON (arranque del motor por medio de\nmanivela)\nG25\n5 4 3 2 1\nEstándar:\nG25-2 - Bastidor\nNo 0 V",
+      "tablas": [
+        [
+          [
+            "G27-32 - G25-1",
+            "Hay continuidad"
+          ],
+          [
+            "G27-32 - Bastidor",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "Lado primario (G21-1 - G21-2)",
+            "1,2 - 1,5 ("
+          ],
+          [
+            "Lado secundario (terminal interno IIA)",
+            "7,7 - 10,4 £2"
+          ]
+        ],
+        [
+          [
+            "G27-33 - G25-2",
+            "Hay continuidad"
+          ],
+          [
+            "G27-32 - G25-1",
+            "Hay continuidad"
+          ],
+          [
+            "G27-33 - G27-32",
+            "No hay continuidad"
+          ],
+          [
+            "G27-33 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "G27-32 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "G25-5 - G21-2",
+            "Hay continuidad"
+          ],
+          [
+            "G25-3 - G21-1",
+            "Hay continuidad"
+          ],
+          [
+            "G25-5 - G25-3",
+            "No hay continuidad"
+          ],
+          [
+            "G25-5 - bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "G25-3 - bastidor",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "21-108\n· Código de error 0A-1, 0A-2, 0A-3 (Anormalidad de la determinación de la especificación de combustible)\nParte relacionada\nControlador\ndel motor\n14 (SEL2)\nG28\n14 (GAS)\n13 (LPG)\nG27\n15 (SEL1)\n13 (SEL3)\n12 (SEL4)\n10 (ESEL)\nT6\n6 (GAS)\n3 (LPG)\nConmutador\nde\ncombustible\nT6\n4 (EN)\nRelé principal R/B EFI\n3 (L)\nRelé principal\nEFI\nEl estado de conexión de SEL1 a 4\ndepende de la especificación del vehículo (consulte la inspección 3).\nPosible causa\n1 Conmutador de combustible defectuoso\nMazo de cables defectuoso\n3 Controlador del motor defectuoso\nCódigos de error 0A-1, 0A-2, 0A-3\nDesconecte el terminal negativo de la batería\n(durante más de 10 segundos), después de\ninspeccionar y corregir la desconexión de T6 y\nla humidificación interior, vuelva a conectar\ntodos los conectores y el terminal negativo de la\nbatería, ponga en ON el interruptor de la llave de\nencendido (arranque el motor), y compruebe si\nhay o no un error.\nNingún error\n>\nContacto del conector defectuoso\nError\nInspección 1:\nInspección de la señal de entrada del interruptor\nANL .: I/O ENGINE CTRL 1/10\nBIEN\nInspección 2:\nInspección individual del conmutador de\ncombustible\nMAL\nConmutador de combustible defectuoso\nBIEN\nInspección 3:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nMAL\nMazo de cables defectuoso\nBIEN\nV\nControlador del motor defectuoso",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "21-109\nInspección 1:\nRealice una inspección de la señal de entrada del interruptor.\nInterruptor de la llave de encendido en ON\nSeñal de entrada del interruptor (control de E/S: G/LP, SEL1-4)\nEstándar:\nEspecificación del vehículo\nConmutador de combustible\nG/LP\nSEL\nEspecificación de gasolina\n-\n10\n1100\nExclusivo LPG\n01\n0101\nConvertible LPG/gasolina\nSelección de gasolina\n10\n0110\nSelección de LPG\n01\nPosición neutral\n00\nConvertible gasolina/CNG\nSelección de gasolina\n10\n0011\nSelección de LPG\n01\nPosición neutral\n00\nInspección 2:\nRealice la inspección individual del conmutador de combustible.\n(Realicela sólo para vehículos convertibles, y sólo cuando la entrada G/LP en la inspección 1\nesté fuera del valor estándar)\n6 43\nT6\nInterruptor de la llave de encendido en OFF, desconecte T6, conecte G28 y G27\nEstándar: (Lado del interruptor)\nConmutador de combustible\nGasolina\nLPG/CNG\nPosición neutral\nT6-4 - T6-6\nHay continuidad\nNo hay\ncontinuidad\nNo hay\ncontinuidad\nT6-4 - T6-3\nNo hay\ncontinuidad\nHay continuidad\nNo hay\ncontinuidad\nInspección 3:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables. (Comience con el lugar que estaba fuera\ndel valor estándar en la inspección 1)\nInterruptor de la llave de encendido en OFF, desconecte G28, G27 y T6\nEspecificación del vehículo\nMazo de cables\nSEL1\nSEL2\nSEL3\nSEL4\nEspecificación de gasolina\nCortocircuito a\nESEL\nCortocircuito a\nESEL\n-\n-\nExclusivo LPG\nCortocircuito a\nESEL\nCortocircuito a\nESEL\nCortocircuito a\nESEL\n-\nConvertible LPG/gasolina\n-\nCortocircuito a\nESEL\nCortocircuito a\nESEL\n-\nConvertible gasolina/CNG\n-\nCortocircuito a\nESEL\n-\nCortocircuito a\nESEL",
+      "tablas": [
+        [
+          [
+            "Especificación del vehículo",
+            "Conmutador de combustible",
+            "G/LP",
+            "SEL"
+          ],
+          [
+            "Especificación de gasolina",
+            "-",
+            "10",
+            "1100"
+          ],
+          [
+            "Exclusivo LPG",
+            "",
+            "01",
+            "0101"
+          ],
+          [
+            "Convertible LPG/gasolina",
+            "Selección de gasolina",
+            "10",
+            "0110"
+          ],
+          [
+            "Selección de LPG",
+            "01"
+          ],
+          [
+            "Posición neutral",
+            "00"
+          ],
+          [
+            "Convertible gasolina/CNG",
+            "Selección de gasolina",
+            "10",
+            "0011"
+          ],
+          [
+            "Selección de LPG",
+            "01"
+          ],
+          [
+            "Posición neutral",
+            "00"
+          ]
+        ],
+        [
+          [
+            "",
+            "Conmutador de combustible"
+          ],
+          [
+            "Gasolina",
+            "LPG/CNG",
+            "Posición neutral"
+          ],
+          [
+            "T6-4 - T6-6",
+            "Hay continuidad",
+            "No hay continuidad",
+            "No hay continuidad"
+          ],
+          [
+            "T6-4 - T6-3",
+            "No hay continuidad",
+            "Hay continuidad",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "Especificación del vehículo",
+            "Mazo de cables"
+          ],
+          [
+            "SEL1",
+            "SEL2",
+            "SEL3",
+            "SEL4"
+          ],
+          [
+            "Especificación de gasolina",
+            "Cortocircuito a ESEL",
+            "Cortocircuito a ESEL",
+            "-",
+            "-"
+          ],
+          [
+            "Exclusivo LPG",
+            "Cortocircuito a ESEL",
+            "Cortocircuito a ESEL",
+            "Cortocircuito a ESEL",
+            "-"
+          ],
+          [
+            "Convertible LPG/gasolina",
+            "-",
+            "Cortocircuito a ESEL",
+            "Cortocircuito a ESEL",
+            "-"
+          ],
+          [
+            "Convertible gasolina/CNG",
+            "-",
+            "Cortocircuito a ESEL",
+            "-",
+            "Cortocircuito a ESEL"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "21-110\n· Código de error 0A-4 (Anormalidad de la determinación de la especificación del motor)\nParte relacionada\nPosible causa\n1 Controlador del motor defectuoso\nCódigo de error 0A-4\nDesconecte el terminal negativo de la batería\n(durante 10 segundos o más), vuelva a conectar\nel terminal negativo de la batería, a continuación\nponga en ON el interruptor de la llave de\nencendido (arranque el motor) y compruebe si\nhay un error o no.\nError\nV\nControlador\ndel motor\nNingún error\n>\nNormal\nControlador del motor defectuoso",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "· Códigos de error 13-1, 13-2, 13-3 (Anormalidad del relé)\nParte relacionada\n1\nA IG SW\nIGN\nG39\n5 (SRLY)\n13 (E01)\nControlador ASC\n2 (MEN+)\n21-111\nRelé R/B ASC\n1\n2\n3\nRelé ASC\n5\n1\nG37\nL\nPosible causa\n1 Contacto del conector defectuoso\n2 Relé ASC defectuoso\n3 Mazo de cables defectuoso\n4 Controlador ASC defectuoso\nCódigos de error 13-1, 13-2, 13-3\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de G39 y el relé ASC y la\nhumidificación interior, vuelva a conectar todos\nlos conectores y el terminal negativo de la\nbateria, ponga en ON el interruptor de la llave de\nencendido, y compruebe si hay o no un error.\nNingún error\nMotor paso a paso\nContacto del conector defectuoso\n>\nEl relé ASC no está bien enchufado\nError\nInspección 1:\nInspección individual del relé ASC\nBIEN\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nMAL\nMAL\nRelé ASC defectuoso\n>\nMazo de cables defectuoso\nBIEN\nControlador ASC defectuoso",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "21-112\nInspección 1:\nRealice una inspección individual del relé ASC.\nInterruptor de la llave de encendido en OFF, extraiga el relé ASC\nEstándar: (Lado del relé)\nTodas las veces\nTerminales 1 - 2\nHay continuidad\nTerminales 3 - 5\nNo hay continuidad\nCuando la tensión de batería se\naplica entre los terminales 1 - 2\nTerminales 3 - 5\nHay continuidad\n1 1/2\n5\n3\nRelé ASC\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte G39, extraiga el relé ASC\nEstándar:\nG39-2 - terminal 3 del relé ASC\nHay continuidad\nTerminal 5 del relé ASC - IGN\nHay continuidad\nG39-2 - BATT\nNo hay continuidad\nG39-5 - terminal 1 del relé ASC\nHay continuidad\nG39-5 - G39-13\nNo hay continuidad\nG39-5 - Bastidor\nNo hay continuidad\nG39-5 - BATT\nNo hay continuidad\nTerminal 2 del relé ASC - Bastidor\nHay continuidad",
+      "tablas": [
+        [
+          [
+            "Todas las veces",
+            "Terminales 1 - 2",
+            "Hay continuidad"
+          ],
+          [
+            "Terminales 3 - 5",
+            "No hay continuidad"
+          ],
+          [
+            "Cuando la tensión de batería se aplica entre los terminales 1 - 2",
+            "Terminales 3 - 5",
+            "Hay continuidad"
+          ]
+        ],
+        [
+          [
+            "G39-2 - terminal 3 del relé ASC",
+            "Hay continuidad"
+          ],
+          [
+            "Terminal 5 del relé ASC - IGN",
+            "Hay continuidad"
+          ],
+          [
+            "G39-2 - BATT",
+            "No hay continuidad"
+          ],
+          [
+            "G39-5 - terminal 1 del relé ASC",
+            "Hay continuidad"
+          ],
+          [
+            "G39-5 - G39-13",
+            "No hay continuidad"
+          ],
+          [
+            "G39-5 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "G39-5 - BATT",
+            "No hay continuidad"
+          ],
+          [
+            "Terminal 2 del relé ASC - Bastidor",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "· Códigos de error 15-1 y 15-2 (Anormalidad del interruptor NMR)\nParte relacionada\n-.....\nA IG SW\nIGN\nG39\n12 (NMR)\nControlador\nASC\n2 (STA)\n21-113\nG36\n2\n1\nInterruptor NMR\nRelé del motor de arranque R/B\n1\nRelé del motor\nde arranque\nPosible causa\n1 Contacto del conector defectuoso\n2 Interruptor NMR defectuoso\n3 Mazo de cables defectuoso\n4 Controlador ASC defectuoso\n5 Sistema mecánico defectuoso (captación de articulaciones, ajuste de la posición del interruptor, motor paso a\npaso defectuoso, etc.)",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "21-114\nCódigos de error 15-1, 15-2\nDesconecte el terminal negativo de la batería,\ndespués inspeccione y repare la desconexión de\nG36, G39 y el relé del motor de arranque y\ncualquier fuga interna.\nVuelva a conectar los conectores y el terminal\nnegativo de la batería, después repita las siguientes\noperaciones 1 a @ varias veces, y compruebe si se\nproduce un error.\n® Ponga el interruptor de la llave de encendido en\nON (motor parado)\nNingún error\n> Contacto del conector defectuoso\n2 Accione el pedal del acelerador ON/OFF (varias\nveces)\n3 Arranque el motor con el acelerador pisado\na fondo\n€ Suelte el pedal del acelerador y ponga el\ninterruptor de la llave de encendido en OFF\nError\nInspección 1:\nInspección individual del interruptor NMR\nMAL\nInterruptor NMR defectuoso\nBIEN\nInspección 2:\nInspección de cortocircuitos y continuidad del mazo\nde cables\nBIEN\nMAL\nMazo de cables defectuoso\nInspección 3:\nInspección del estado del interruptor NMR en el\ncontrolador ASC\nANL .: I/O ENGINE CTRL 1/3\nMAL\n>\nControlador ASC defectuoso\nBIEN\nConsulte y realice inspecciones del sistema\nmecánico como captación de articulaciones o ajuste\nde la posición de los interruptores.\nInspección 1:\nRealice una inspección individual del interruptor NMR.\n2 1\nInterruptor de la llave de encendido en OFF, desconecte G36, conecte G39\n4||3\nEstándar: (Lado del interruptor)\nG36\nInterruptor OFF\nInterruptor ON\nG36-1 - G36-2\nNo hay continuidad\nHay continuidad",
+      "tablas": [
+        [
+          [
+            "",
+            "Interruptor OFF",
+            "Interruptor ON"
+          ],
+          [
+            "G36-1 - G36-2",
+            "No hay continuidad",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Inspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte G36, G39 y el relé del motor de arranque\nEstándar:\nG39-12 - G36-1\nHay continuidad\nIGN - G36-2\nHay continuidad\nG39-2 - terminal 1 del relé\ndel motor de arranque\nHay continuidad\nG39-12 - IGN\nNo hay continuidad\nInspección 3:\nRealice la inspección del estado del interruptor NMR en el controlador.\n21-115\nInterruptor de la llave de encendido en OFF, extraiga el interruptor NMR de modo que pueda ponerse en ON y\nOFF de forma manual,\nconecte G39 y G36, interruptor de la llave de encendido en ON\nInterruptor NMR (control de E/S: NMR)\nEstándar:\nVisualizador del\nanalizador\nInterruptor OFF\nInterruptor ON\nNMR\n0\n1",
+      "tablas": [
+        [
+          [
+            "G39-12 - G36-1",
+            "Hay continuidad"
+          ],
+          [
+            "IGN - G36-2",
+            "Hay continuidad"
+          ],
+          [
+            "G39-2 - terminal 1 del relé del motor de arranque",
+            "Hay continuidad"
+          ],
+          [
+            "G39-12 - IGN",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "Visualizador del analizador",
+            "Interruptor OFF",
+            "Interruptor ON"
+          ],
+          [
+            "NMR",
+            "0",
+            "1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "21-116\n· Código de error 15-3 (Anormalidad del interruptor NMR)\nParte relacionada\nA IG SW\n/\nIGN\nG39\n12 (NMR)\nG36\n2\n1\nInterruptor NMR\nControlador\nASC\n15 (ZERO)\nG36\n4\nInterruptor de\nmarcha lenta\n3\nPosible causa\n1) Contacto del conector defectuoso\n2 Interruptor NMR defectuoso\n3 Interruptor de marcha lenta defectuoso\nMazo de cables defectuoso\n5 Controlador ASC defectuoso\n6 Sistema mecánico defectuoso (captación de articulaciones, ajuste de la posición del interruptor, motor paso a\npaso defectuoso, etc.)",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Código de error 15-3\nDesconecte el terminal negativo de la batería,\ndespués inspeccione y repare la desconexión de\nG39 y G36 y cualquier fuga interna.\nVuelva a conectar los conectores y el terminal\nnegativo de la batería, después repita las siguientes\noperaciones 1 a 3 varias veces, y compruebe si se\nproduce un error.\n1 Ponga el interruptor de la llave de encendido en\n: ON (motor parado)\n2 Accione el pedal del acelerador ON/OFF (varias\nveces)\n3 Ponga el interruptor de la llave de encendido en\nOFF\nError\nInspección 1:\nInspección individual del interruptor de marcha lenta\ny NMR\nBIEN\nInspección 2:\nRealice una inspección de cortocircuitos y\ncontinuidad del mazo de cables\nBIEN\nInspección 3:\nInspección del estado de los interruptores NMR y de\nmarcha lenta en el controlador\nANL .: I/O ENGINE CTRL 1/3\nBIEN\n1\nV\nConsulte y realice inspecciones del sistema mecánico\ncomo captación de articulaciones o ajuste de la\nposición de los interruptores.\nNingún error\nMAL\nMAL\nMAL\n21-117\n>\nContacto del conector defectuoso\nInterruptor NMR defectuoso\nInterruptor de marcha lenta defectuoso\n> Mazo de cables defectuoso\n>\nControlador ASC defectuoso\nInspección 1:\nRealice una inspección individual del interruptor NMR y de marcha lenta.\n2 1\nInterruptor de la llave de encendido en OFF, desconecte G36, conecte G39\n4 3\nEstándar: (Lado del interruptor)\nG36\nInterruptor OFF\nInterruptor ON\nG36-1 - G36-2\nNo hay continuidad\nHay continuidad\nG36-3 - G36-4\nNo hay continuidad\nHay continuidad\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte G36 y G39\nEstándar:\nG39-12 - EN\nNo hay continuidad\nG39-15 - EN\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "",
+            "Interruptor OFF",
+            "Interruptor ON"
+          ],
+          [
+            "G36-1 - G36-2",
+            "No hay continuidad",
+            "Hay continuidad"
+          ],
+          [
+            "G36-3 - G36-4",
+            "No hay continuidad",
+            "Hay continuidad"
+          ]
+        ],
+        [
+          [
+            "G39-12 - EN",
+            "No hay continuidad"
+          ],
+          [
+            "G39-15 - EN",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "21-118\nInspección 3:\n1\nRealice la inspección del estado de los interruptores NMR y de marcha lenta en el controlador.\nInterruptor de la llave de encendido en OFF, extraiga los interruptores NMR y de marcha lenta de modo que\npuedan ponerse en ON y OFF de forma manual, conecte G36 y G39, interruptor de la llave de encendido en ON\nInterruptores NMR y de marcha lenta (control de E/S: NMR, IDLE)\nEstándar:\nVisualizador del\nanalizador\nInterruptor OFF\nInterruptor ON\nNMR\n0\n1\nIDLE\n0\n1\n......",
+      "tablas": [
+        [
+          [
+            "Visualizador del analizador",
+            "Interruptor OFF",
+            "Interruptor ON"
+          ],
+          [
+            "NMR",
+            "0",
+            "1"
+          ],
+          [
+            "IDLE",
+            "0",
+            "1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "21-119\n· Códigos de error 16-1 y 16-2 (Anormalidad del interruptor de marcha lenta)\nParte relacionada\nA IG SW\nIGN\nG39\nG36\nControlador\nASC\n15 (ZERO)\n4\n3\nG38\nG37\n11 (NINA)\n2\n12 (NINB)\n1\n3 (INA)\n5\n4 (INB)\n4\nInterruptor de\nmarcha lenta\nMotor paso a paso\nPosible causa\n1 Contacto del conector defectuoso\n2 Interruptor de marcha lenta defectuoso\n3 Mazo de cables defectuoso\n4 Controlador ASC defectuoso\n5 Sistema mecánico defectuoso (captación de articulaciones, ajuste de la posición del interruptor, motor paso a\npaso defectuoso, etc.)\nNota:\nCuando haya un error 13-1 presente, revise ese error primero antes de ocuparse de éste.",
+      "tablas": [
+        [
+          [
+            "Controlador ASC",
+            "15 (ZERO)",
+            "4"
+          ],
+          [
+            "3"
+          ],
+          [
+            "G38",
+            "G37"
+          ],
+          [
+            "11 (NINA)",
+            "2"
+          ],
+          [
+            "12 (NINB)",
+            "1"
+          ],
+          [
+            "3 (INA)",
+            "5"
+          ],
+          [
+            "4 (INB)",
+            "4"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "21-120\nCódigos de error 16-1, 16-2\nDesconecte el terminal negativo de la batería,\ndespués inspeccione y repare la desconexión de\nG39, G36 y G37 y cualquier humedecimiento interno.\nVuelva a conectar los conectores y el terminal\nnegativo de la batería, después repita las siguientes\noperaciones 1 a 3 varias veces, y compruebe si se\nproduce un error.\nNingún error\nContacto del conector defectuoso\n1 Ponga el interruptor de la llave de encendido en\nON (motor parado)\n2 Accione el pedal del acelerador ON/OFF (varias\nveces)\n3 Ponga el interruptor de la llave de encendido en\nOFF\nError\nInspección 1:\nInspección individual del interruptor de marcha lenta\nMAL\nInterruptor de marcha lenta defectuoso\nBIEN\nInspección 2:\nRealice una inspección de cortocircuitos y\ncontinuidad del mazo de cables\nMAL\nMazo de cables defectuoso\nBIEN\nInspección 3:\nInspección del estado del interruptor de marcha lenta\nen el controlador\nANL .: I/O ENGINE CTRL 1/3\nMAL\n>\nControlador ASC defectuoso\nBIEN\nConsulte y realice inspecciones del sistema mecánico\ncomo captación de articulaciones o ajuste de la\nposición de los interruptores.\nInspección 1:\nRealice una inspección individual del interruptor de marcha lenta.\n2 1\nInterruptor de la llave de encendido en OFF, desconecte G36, conecte G39\n4 3\nEstándar: (Lado del interruptor)\nG36\nInterruptor OFF\nInterruptor ON\nG36-3 - G36-4\nNo hay continuidad\nHay continuidad",
+      "tablas": [
+        [
+          [
+            "",
+            "Interruptor OFF",
+            "Interruptor ON"
+          ],
+          [
+            "G36-3 - G36-4",
+            "No hay continuidad",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "21-121\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte G36, G37, G38 y G39\nEstándar:\nG39-15 - G36-3\nHay continuidad\nIGN - G36-4\nHay continuidad\nG39-15 - IGN\nNo hay continuidad\nG38-11 - G37-2\nHay continuidad\nG38-12 - G37-1\nHay continuidad\nG38-3 - G37-5\nHay continuidad\nG38-4 - G37-4\nHay continuidad\nG38-11 - G38-12\nNo hay continuidad\nG38-11 - G38-3\nNo hay continuidad\nG38-11 - G38-4\nNo hay continuidad\nG38-12 - G38-3\nNo hay continuidad\nG38-12 - G38-4\nNo hay continuidad\nG38-3 - G38-4\nNo hay continuidad\nG38-11 - IGN\nNo hay continuidad\nG38-12 - IGN\nNo hay continuidad\nG38-3 - IGN\nNo hay continuidad\nG38-4 - IGN\nNo hay continuidad\nInspección 3:\nRealice la inspección del estado del interruptor de marcha lenta en el controlador.\nInterruptor de la llave de encendido en OFF, extraiga el interruptor de marcha lenta de modo que pueda ponerse\nen ON y OFF de forma manual, conecte G36 y G39, interruptor de la llave de encendido en ON\nInterruptor de marcha lenta (control de E/S: IDLE)\nEstándar:\nVisualizador del\nanalizador\nInterruptor OFF\nInterruptor ON\nIDLE\n0\n1",
+      "tablas": [
+        [
+          [
+            "G39-15 - G36-3",
+            "Hay continuidad"
+          ],
+          [
+            "IGN - G36-4",
+            "Hay continuidad"
+          ],
+          [
+            "G39-15 - IGN",
+            "No hay continuidad"
+          ],
+          [
+            "G38-11 - G37-2",
+            "Hay continuidad"
+          ],
+          [
+            "G38-12 - G37-1",
+            "Hay continuidad"
+          ],
+          [
+            "G38-3 - G37-5",
+            "Hay continuidad"
+          ],
+          [
+            "G38-4 - G37-4",
+            "Hay continuidad"
+          ],
+          [
+            "G38-11 - G38-12",
+            "No hay continuidad"
+          ],
+          [
+            "G38-11 - G38-3",
+            "No hay continuidad"
+          ],
+          [
+            "G38-11 - G38-4",
+            "No hay continuidad"
+          ],
+          [
+            "G38-12 - G38-3",
+            "No hay continuidad"
+          ],
+          [
+            "G38-12 - G38-4",
+            "No hay continuidad"
+          ],
+          [
+            "G38-3 - G38-4",
+            "No hay continuidad"
+          ],
+          [
+            "G38-11 - IGN",
+            "No hay continuidad"
+          ],
+          [
+            "G38-12 - IGN",
+            "No hay continuidad"
+          ],
+          [
+            "G38-3 - IGN",
+            "No hay continuidad"
+          ],
+          [
+            "G38-4 - IGN",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "Visualizador del analizador",
+            "Interruptor OFF",
+            "Interruptor ON"
+          ],
+          [
+            "IDLE",
+            "0",
+            "1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "21-122\n· Códigos de error 18-1, 18-2 (Motor 4Y: Anormalidad del sensor de ángulo de leva)\nParte relacionada\nIGN\nG25\nControlador\ndel motor\nG27\nG19\n31 (NE+)\n1 (NE+)\n30 (NE-)\n2 (NE-)\nEncendedor\nDistribuidor\n3 (IG2)\n5 (IG1)\n1\n1\n1\n1\n1\n1\n1\nG21\n1\n1\n1\n1\n2 (IG-)\n1\n1\n1 (IG+)\nPosible causa\n1 Distribuidor (sensor de ángulo de leva) defectuoso\n2 Motor de arranque defectuoso\n3 Defecto en la parte que conecta el motor de arranque y el motor\n4 Mazo de cables defectuoso\n5 Controlador del motor defectuoso\nPrecaución:\nSi el motor no arranca por medio de manivela, vaya a la localización y reparación de averías \"No arranca por\nmedio de manivela (vea 21-217)\" primero.\nCódigos de error 18-1, 18-2\nDesconecte el terminal negativo de la batería\n(durante más de 10 segundos), después de\ninspeccionar y corregir la desconexión de G19 y\nla humidificación interior, vuelva a conectar\ntodos los conectores y el terminal negativo de la\nbatería, ponga en ON el interruptor de la llave de\nencendido (arranque el motor), y compruebe si\nhay o no un error.\nNingún error\nContacto del conector defectuoso\nError\nInspección 1:\nInspección individual del distribuidor\nBIEN\nInspección 2:\nInspección de: funcionamiento del rotor de\npuesta a punto\nMAL\n> Distribuidor (sensor de ángulo de leva) defectuoso\nMAL\nMotor de arranque defectuoso\n> Defecto en la parte que conecta el motor de arranque\ny el motor\nBIEN\nInspección 3:\nInspección de cortocircuitos y continuidad del\nmazo de cabies\nMAL\n> Mazo de cables defectuoso\nBIEN\nV\nControlador del motor defectuoso",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "21-123\nInspección 1:\nRealice una inspección individual del distribuidor.\nInterruptor de la llave de encendido en OFF, desconecte G19 y G21, conecte G27\n2 ×1\nG19\n(1) Medición de la resistencia de la bobina de captación (2 en serie)\nEstándar: (Lado del distribuidor)\nG19-1 - G19-2\n460 + 50 Q\n(2) Inspección del entrehierro entre las bobinas de captación y el rotor de puesta a punto\nEstándar: 0,2 - 0,4 mm\nInspección 2:\nInspeccione el funcionamiento del rotor de puesta a punto.\nDesconecte G19 y G21, conecte G27, interruptor de la llave de encendido ON\nEstándar: El rotor de puesta a punto gira durante el arranque del motor por medio de manivela\nInspección 3:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte G19, G21 y G27\nEstándar:\nG27-31 - G19-1\nHay continuidad\nG27-30 - G19-2\nHay continuidad\nG27-31 - G27-30\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "G27-31 - G19-1",
+            "Hay continuidad"
+          ],
+          [
+            "G27-30 - G19-2",
+            "Hay continuidad"
+          ],
+          [
+            "G27-31 - G27-30",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "21-124\n· Código de error 18-3 (Motor 4Y: Anormalidad del sensor de ángulo del cigüeñal)\nParte relacionada\nG27\nG18\nControlador\ndel motor\n11 (G2)\n1 (G2)\n22 (G-)\n2 (G-)\nPosible causa\n1) Sensor de ángulo del cigüeñal defectuoso\n2 Mazo de cables defectuoso\n3 Controlador del motor defectuoso\nCódigo de error 18-3\nDesconecte el terminal negativo de la batería\n(durante más de 10 segundos), después de\ninspeccionar y corregir la desconexión de G18 y\nla humidificación interior, vuelva a conectar\ntodos los conectores y el terminal negativo de la\nbatería, ponga en ON el interruptor de la llave de\nencendido (arranque el motor), y compruebe si\nhay o no un error.\nNingún error\nError\nMAL\n>\nMazo de cables defectuoso\nV\nInspección 1:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nBIEN\nInspección 2:\nInspección individual del sensor de ángulo del\ncigüeñal\nBIEN\nMAL\nInspección 3:\nInspección de la instalación del sensor de\nángulo del cigüeñal\nInstale el sensor de ángulo del cigüeñal, conecte\nG27, G18 y el terminal negativo de la batería,\narranque el motor.\nCompruebe si se produce un error.\nNingún error\nError\nV\nSensor de\nángulo del\ncigüeñal\n> Contacto del conector defectuoso\n---\nSensor de ángulo del cigüeñal defectuoso\nNormal\n(Entrada de materia extraña, etc.)\nControlador del motor defectuoso",
+      "tablas": [
+        [
+          [
+            "Controlador del motor",
+            "11 (G2)",
+            "1 (G2)"
+          ],
+          [
+            "22 (G-)",
+            "2 (G-)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "21-125\nInspección 1:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte G27 y G18\nEstándar:\nG27-11 - G18-1\nHay continuidad\nG27-22 - G18-2\nHay continuidad\nG27-11 - G27-22\nNo hay continuidad\nInspección 2:\nRealice una inspección individual del sensor de ángulo del cigüeñal.\nInterruptor de la llave de encendido en OFF, desconecte G27 y G18\n2\n1\nEstándar: (Lado del sensor)\nG18-1 - G18-2\n1100 + 150 Q\nG18\nInspección 3:\nRealice una inspección de la instalación del sensor de ángulo del cigüeñal.\nInterruptor de la llave de encendido en OFF, desconecte G27 y G18\nEstándar:\nExtraiga el sensor de ángulo del cigüeñal, asegúrese de que no hay materia extraña, etc., adherida a la\nparte del sensor. Si la hay, quitela.",
+      "tablas": [
+        [
+          [
+            "G27-11 - G18-1",
+            "Hay continuidad"
+          ],
+          [
+            "G27-22 - G18-2",
+            "Hay continuidad"
+          ],
+          [
+            "G27-11 - G27-22",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "21-126\n· Códigos de error 18-1, 18-2 (Motores 1DZ-II, 2Z: Anormalidad del sensor NE)\nParte relacionada\nControlador ASC\nG39\n9 (NE+)\n22 (NE-)\nG31\n2\nSensor de\nvelocidad del\nmotor (sensor NE)\n1\nPosible causa\n1 Defecto del contacto del conector\n2 Sensor de velocidad del motor defectuoso\n3 Mazo de cables defectuoso\n4 ASC defecto del controlador\nPrecaución:\nSi el motor se para durante el desplazamiento, cuando el interruptor de la llave de encendido se pone de\nOFF a ON, puede detectarse un error 18-2, pero no es una avería.\nDetenga el vehículo, ponga el interruptor de la llave de encendido en OFF y vuelva a arrancar el motor.\nCódigos de error 18-1, 18-2\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de G31 y G39 y la humidificación\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido, y\ncompruebe si hay o no un error.\nError\n>\nInspección 1:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nBIEN\nInspección 2:\nInspección individual del sensor de velocidad\ndel motor\nNingún error\nMAL\nMAL\n> Defecto del contacto del conector\n> Mazo de cables defectuoso\n>\nSensor de velocidad del motor defectuoso\nBIEN\nASC defecto del controlador\nInspección 1:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte G31 y G39\nEstándar:\nG39-9 - G31-2\nHay continuidad\nG39-22 - G31-1\nHay continuidad\nG39-9 - G39-22\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "G39-9 - G31-2",
+            "Hay continuidad"
+          ],
+          [
+            "G39-22 - G31-1",
+            "Hay continuidad"
+          ],
+          [
+            "G39-9 - G39-22",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "21-127\nInspección 2:\nRealice una inspección individual del sensor de velocidad del motor.\nInterruptor de la llave de encendido en OFF, desconecte G31 y G39\n1\n2 1\n3\nEstándar: (Lado del sensor)\nG31-1 - G31-2\nG31\nAprox. 1 kQ",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "21-128\n· Códigos de error 1F-1, 1F-2, 1F-3, 1F-4, 1F-5, 1F-6, 1F-7, 1F-8 (Anormalidad de la CPU)\nParte relacionada\nControlador ASC\nPosible causa\n1 ASC defecto del controlador",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "21-129\n· Código de error 41-1 (Anormalidad del conector de adaptación)\nParte relacionada\nControlador\nSAS/OPS\nA20\n1 (E3)\n2\nA45\n24 (MAT)\n1\nConector de\nadaptación\nPosible causa\n1) Defecto del contacto del conector\n2 Mazo de cables del conector de adaptación defectuoso\n3 SAS/OPS defecto del controlador\nCódigo de error 41-1\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A20 y A45 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido (motor\nparado), y compruebe si hay o no un error.\nNingún error\nDefecto del contacto del conector\nError\nInspección 1:\nInspección individual del conector de adaptación\nMAL\nConector de adaptación defectuoso\nBIEN\nInspección 2:\nComprobación de la continuidad del mazo de\ncables\nBIEN\nMAL\n>\nMazo de cables defectuoso\nSAS/OPS defecto del controlador\nInspección 1:\nInspeccione si hay continuidad del conector de adaptación.\n123\nInterruptor de la llave de encendido en OFF, desconecte A45 y A46\n456\nA45\nEstándar: (Lado del conector de adaptación)\nA45-1 - A46-1\nHay continuidad\nInspección 2:\nInspeccione si hay continuidad del mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A20, A45 y A46\nEstándar:\nA20-24 - A45-1\nHay continuidad\nA20-1 - A46-1\nHay continuidad",
+      "tablas": [
+        [
+          [
+            "A20-24 - A45-1",
+            "Hay continuidad"
+          ],
+          [
+            "A20-1 - A46-1",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "21-130\n· Códigos de error 51-1, 51-2 (Anormalidad del sensor de velocidad)\nParte relacionada\nControlador\nSAS/OPS\nA20\n22 (SPD+)\n23 (SPD-)\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables defectuoso\n3 Sensor de velocidad defectuoso\n4 SAS/OPS defecto del controlador\nCódigo de error 51-1\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A19 y A20 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido (motor\nparado), y compruebe si hay o no un error.\nError\nInspección 1:\nInspección del sensor de velocidad\nError\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nBIEN\nSAS/OPS defecto del controlador\nNingún error\nNingún error\n>\nSensor de velocidad defectuoso\nMAL\nA19\n1\nSensor de\nvelocidad\n2\n> Defecto del contacto del conector\nMazo de cables defectuoso\nInspección 1:\nRealice una inspección individual del sensor de velocidad.\nInterruptor de la llave de encendido en OFF, desconecte A19, utilice la SST 09236-13900-71 para cortocircuitar\nA19, interruptor de la llave de encendido en ON, motor parado\n51-1, 51-2 visualizados -> para la inspección 2\nNingún error visualizado -> Error del sensor de velocidad",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "21-131\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A19 y A20\nEstándar:\nA20-22 - A19-1\nHay continuidad\nA20-23 - A19-2\nHay continuidad\nA20-22 - Bastidor\nNo hay continuidad\nA20-23 - Bastidor\nNo hay continuidad\nCódigo de error 51-2\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A19 y A20 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido (motor\nparado), y compruebe si hay o no un error.\nError\ninspección 1:\nInspección del sensor de velocidad\nError\nV\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nNingún error\nNingún error\nMAL\n> Defecto del contacto del conector\nSensor defectuoso\n>\nMazo de cables defectuoso\nBIEN\nV\nSAS/OPS defecto del controlador\nInspección 1:\nRealice una inspección individual del sensor de velocidad.\nInterruptor de la llave de encendido en OFF, desconecte A19, utilice la SST 09236-13900-71 para cortocircuitar\nA19, interruptor de la llave de encendido en ON, motor parado\n51-2 visualizado -> para la próxima inspección\nNingún código de error -> Sensor de velocidad defectuoso\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A19 y A20\nEstándar:\nA20-22 - A19-1\nHay continuidad\nA20-23 - A19-2\nHay continuidad\nA20-22 - Bastidor\nNo hay continuidad\nA20-23 - Bastidor\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "A20-22 - A19-1",
+            "Hay continuidad"
+          ],
+          [
+            "A20-23 - A19-2",
+            "Hay continuidad"
+          ],
+          [
+            "A20-22 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "A20-23 - Bastidor",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "A20-22 - A19-1",
+            "Hay continuidad"
+          ],
+          [
+            "A20-23 - A19-2",
+            "Hay continuidad"
+          ],
+          [
+            "A20-22 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "A20-23 - Bastidor",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "21-132\n· Códigos de error 52-1, 52-2, 52-3 (Anormalidad del sensor de proporción de guiñada)\nParte relacionada\nA21\nControlador\nSAS/OPS\n24 (YRS+)\n01\n1\n25 (YRS)\n2\n26 (YRS-)\n3\nSensor de\nproporción\nde guiñada\nPosible causa\n11 Defecto del contacto del conector\n2 Mazo de cables del sensor de proporción de guiñada defectuoso\n3 Sensor de proporción de guiñada defectuoso\n4 SAS/OPS defecto del controlador\nCódigo de error 52-1\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de 01 y A21 y la humedad interior,\nvuelva a conectar todos los conectores y el\nterminal negativo de la batería, ponga en ON el\ninterruptor de la llave de encendido (motor\nparado), y compruebe si hay o no un error.\nError\nInspección 1:\nInspección del sensor de proporción de guiñada\nSe visualiza 52-1\n>\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nBIEN\nNingún error\nSe visualiza 52-2\nMAL\n> Defecto del contacto del conector\n>\nSensor de proporción de guiñada defectuoso\n> Mazo de cables defectuoso\nSAS/OPS defecto del controlador\nInspección 1:\nRealice una inspección individual del sensor de proporción de guiñada.\nInterruptor de la llave de encendido en OFF, desconecte 01, utilice la SST 09232-13130-71 para cortocircuitar\nO1-1 y 01-2, interruptor de la llave de encendido en ON, motor parado\n52-1 visualizado -> para la inspección 2\n52-2 visualizado -> Sensor de proporción de guiñada defectuoso",
+      "tablas": [
+        [
+          [
+            "Controlador SAS/OPS",
+            "24 (YRS+)",
+            "01 1"
+          ],
+          [
+            "25 (YRS)",
+            "2"
+          ],
+          [
+            "26 (YRS-)",
+            "3"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "21-133\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte 01 y A21\nEstándar:\nA21-25 - 01-3\nHay continuidad\nA21-26 - 01-2\nHay continuidad\nA21-25 - Bastidor\nNo hay continuidad\nA21-26 - Bastidor\nNo hay continuidad\nCódigos de error 52-2, 52-3\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de 01 y A21 y la humedad interior,\nvuelva a conectar todos los conectores y el\nterminal negativo de la batería, ponga en ON el\ninterruptor de la llave de encendido (motor\nparado), y compruebe si hay o no un error.\nNingún error\nDefecto del contacto del conector\nError\nPonga el interruptor de la llave de encendido en\nOFF, desconecte el terminal negativo de la\nbatería, desconecte 01, conecte el terminal\nnegativo de la batería, ponga en ON el\ninterruptor de la llave de encendido (motor\nparado), compruebe si cambia el error.\n52-1\nSensor de proporción de guiñada defectuoso\n52-2 o 52-3\nInspección 1:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nBIEN\nMAL\nMazo de cables defectuoso\nSAS/OPS defecto del controlador\nInspección 1:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte 01 y A21\nEstándar:\n1\nA21-25 - 01-3\nHay continuidad\nA21-26 - 01-2\nHay continuidad\nA21-25 - Bastidor\nNo hay continuidad\nA21-26 - Bastidor\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "A21-25 - 01-3",
+            "Hay continuidad"
+          ],
+          [
+            "A21-26 - 01-2",
+            "Hay continuidad"
+          ],
+          [
+            "A21-25 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "A21-26 - Bastidor",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "A21-25 - 01-3",
+            "Hay continuidad"
+          ],
+          [
+            "A21-26 - 01-2",
+            "Hay continuidad"
+          ],
+          [
+            "A21-25 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "A21-26 - Bastidor",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "21-134\n· Código de error 54-1 (Anormalidad del solenoide de bloqueo de oscilación)\nParte relacionada\nControlador\nSAS/OPS\nA20\nZ1\n3 (SWN+)\n1\n2 (SWN-)\n1\n8 (E01)\n9 (E02)\n. Solenoide de\nbloqueo de\noscilación\nTT\n7\nPosible causa\n1) Defecto del contacto del conector\n2 Mazo de cables defectuoso\n3 Solenoide de bloqueo de oscilación defectuoso\n4 SAS/OPS defecto del controlador\nCódigo de error 54-1\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A20 y Z1 y la humedad interior,\nvuelva a conectar todos los conectores y el\nterminal negativo de la batería, ponga en ON el\ninterruptor de la llave de encendido (arranque el\nmotor), y compruebe si hay o no un error.\nNingún error\nDefecto del contacto del conector\nError\nInspección 1:\nInspección individual del solenoide de bloqueo\nde oscilación\nBIEN\nMAL\n>\nSolenoide de bloqueo de oscilación defectuoso\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nBIEN\nMAL\nMazo de cables defectuoso\nSAS/OPS defecto del controlador\n*: Asegúrese de que no se visualiza ningún error cuando se conduce en círculo o durante giros a la izquierda y a la\nderecha repetidos.\nInspección 1:\nA\nRealice una inspección individual del solenoide de bloqueo de oscilación.\nInterruptor de la llave de encendido en OFF, desconecte Z1.\n2 1\nZ1\nEstándar: (Lado del solenoide)\nZ1-1 - Z1-2\nAprox. 6 92 (20℃)",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "21-135\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte Z1y A20\nEstándar:\nA20-3 - Z1-1\nHay continuidad\nA20-2 - Z1-2\nHay continuidad\nA20-3 - Bastidor\nNo hay continuidad\nA20-2 - Bastidor\nNo hay continuidad\n... ...",
+      "tablas": [
+        [
+          [
+            "A20-3 - Z1-1",
+            "Hay continuidad"
+          ],
+          [
+            "A20-2 - Z1-2",
+            "Hay continuidad"
+          ],
+          [
+            "A20-3 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "A20-2 - Bastidor",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "21-136\n· Códigos de error 61-1, 61-2 (Anormalidad del sensor de carga)\nParte relacionada\nControlador\nSAS/OPS\nA21\n19 (5PRS)\n27 (PRES)\n5 (E2)\nA18\n1\n2\nSensor de\ncarga\n3\nPosible causa\n1 Defecto del contacto del conector\n2 Sensor de carga defectuoso\n3 Mazo de cables defectuoso\n4 SAS/OPS defecto del controlador\nCódigo de error 61-1\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A18 y A21 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido (motor\nparado), y compruebe si hay o no un error.\nError\n>\nInspección 1:\nInspección individual del sensor de carga\nNingún error\nSe visualiza\n61-2\nDefecto del contacto del conector\n> Sensor de carga defectuoso\nSe visualiza 61-1\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nHay continuidad\nInspección 3:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nHay continuidad\nNo hay\ncontinuidad\nMazo de cables principal defectuoso\nNo hay\ncontinuidad\nSAS/OPS defecto del controlador\nMazo de cables principal defectuoso\nInspección 1:\nRealice una inspección individual del sensor de carga.\nInterruptor de la llave de encendido en OFF, desconecte A18,\nutilice la SST 09230-13700-71 para cortocircuitar A18-1 y A18-2\n(lado del mazo de cables principal), interruptor de la llave de\nencendido en ON, motor parado\n61-1 visualizado -> para la inspección 2\n61-2 visualizado -> Sensor de carga defectuoso\nSST",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "21-137\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A21 (con la SST utilizada en la inspección 1 aún\nconectada)\nEstándar:\nA21-19 - A21-27\nHay continuidad\nInspección 3:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nEn el mismo estado que para la inspección 2\nEstándar:\nA21-27 - A21-5\nNo hay continuidad\nCódigo de error 61-2\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A18 y A21 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido (motor\nparado), y compruebe si hay o no un error.\nNingún error\nDefecto del contacto del conector\nError\nDesconecte A18, interruptor de la llave de\nencendido en ON (motor parado), inspeccione el\ncódigo de error visualizado.\n61-1\n61-2\nInspección 1:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nHay continuidad\nNo hay\ncontinuidad\nSAS/OPS\ndefecto del controlador\nMazo de cables principal defectuoso\nNo hay continuidad\nInspección 2:\nInspección individual del sensor de carga\nHay continuidad\n· Cableado secundario defectuoso\n· Sensor de carga defectuoso\nInspección 1:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A21\nEstándar:\nA21-19 - A21-27\nNo hay continuidad",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "21-138\nInspección 2:\nRealice una inspección individual del sensor de carga.\nInterruptor de la llave de encendido en OFF, desconecte el terminal negativo de la batería, desconecte A18 y\nA21, utilice la SST 09230-13700-71 para cortocircuitar A18-2 a A18-3 (lado del cableado principal)\nEstándar:\nA21-27 - A21-5\nHay continuidad",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "21-139\n· Códigos de error 62-1, 62-2 (Anormalidad del sensor de ángulo de inclinación)\nParte relacionada\nControlador\nSAS/OPS\nA21\n28 (5MA)\n32 (MA)\n5 (E2)\nA42\n1\n2\nSensor del ángulo\nde inclinación\n3\n111\n7\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables del sensor de ángulo de inclinación defectuoso\n3 Sensor del ángulo de inclinación defectuoso\n4 SAS/OPS defecto del controlador\nCódigo de error 62-1\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A21 y A42 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido (motor\nparado), y compruebe si hay o no un error.\nError\nInspección 1:\nInspección individual del sensor de ángulo de\ninclinación\nSe visualiza 62-1\nNingún error\nSe visualiza\n62-2\n> Defecto del contacto del conector\n> Sensor del ángulo de inclinación defectuoso\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nHay continuidad\nNo hay\ncontinuidad\nMazo de cables principal defectuoso\nInspección 3:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nHay continuidad\nNo hay\ncontinuidad\nSAS/OPS defecto del controlador\nMazo de cables principal defectuoso\nInspección 1:\nRealice una inspección individual del sensor de ángulo de inclinación.\nInterruptor de la llave de encendido en OFF, desconecte A42, utilice la SST 09232-13130-71 para cortocircuitar\nA42-1 y A42-2 (lado del mazo de cables principal), interruptor de la llave de encendido en ON (motor parado)\n62-1 visualizado -> para la inspección 2\n62-2 no visualizado -> sensor de ángulo de inclinación defectuoso",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "21-140\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A21 (con la SST utilizada en la inspección 1 aún\nconectada)\nEstándar:\nA21-28 - A21-32\nHay continuidad\nInspección 3:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nEn el mismo estado que para la inspección 2\nEstándar:\nA21-32 - A21-5\nNo hay continuidad\nCódigo de error 62-2\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A21 y A42 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la bateria, ponga en ON\nel interruptor de la llave de encendido (motor\nparado), y compruebe si hay o no un error.\nError\n>\nInspección 1:\nInspección individual del sensor de ángulo de\ninclinación\nSe visualiza 62-2\nNingún error\nDefecto del contacto del conector\nSe visualiza 62-1\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nHay continuidad\nNo hay\ncontinuidad\nSAS/OPS\ndefecto del controlador\nInspección 3:\nInspección individual del sensor de ángulo de\ninclinación\nMazo de cables principal defectuoso\n€\nNo hay continuidad\nHay continuidad\nV\nSensor del ángulo de inclinación defectuoso\nInspección 1:\nRealice una inspección individual del sensor de ángulo de inclinación.\nInterruptor de la llave de encendido en OFF, desconecte A42, interruptor de la llave de encendido en ON, motor\nparado\n62-1 visualizado -> para la inspección 3\n62-2 visualizado -> para la inspección 2\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A21\nEstándar:\nA21-28 - A21-32\nNo hay continuidad",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "21-141\nInspección 3:\n1\nRealice una inspección individual del sensor de ángulo de inclinación.\nInterruptor de la llave de encendido en OFF, desconecte A21 y A42, utilice la SST 09232-13130-71 para\ncortocircuitar A21-2 y A42-3 (lado del mazo de cables principal)\nEstándar:\nA42-32 - A21-5\nHay continuidad",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "21-142\n· Códigos de error 63-1, 63-2, 63-3 (Anormalidad del interruptor de la palanca de inclinación)\nParte relacionada\nA20\nA13\nControlador\nSAS/OPS\n20 (MF)\n1\n1 (E3)\n2\n21 (MR)\n3\n4\nPosible causa\n1 Defecto del contacto del conector\n2 Interruptor de inclinación hacia delante defectuoso\n3 Interruptor de inclinación hacia atrás defectuoso\nInterruptor de\ninclinación\nhacia delante\nInterruptor de\ninclinación\nhacia atrás\n4 Mazo de cables defectuoso\n5 Instalación defectuosa del interruptor de inclinación\n6\nSAS/OPS defecto del controlador",
+      "tablas": [
+        [
+          [
+            "",
+            "",
+            "A20",
+            "A13"
+          ],
+          [
+            "",
+            "Controlador SAS/OPS",
+            "20 (MF)",
+            "1"
+          ],
+          [
+            "1 (E3)",
+            "2"
+          ],
+          [
+            "21 (MR)",
+            "3"
+          ],
+          [
+            "",
+            "4"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "21-143\nCódigos de error 63-1, 63-2, 63-3\nDesconecte el terminal negativo\nde la batería, después de\ninspeccionar y corregir la\ndesconexión de A13 y A20 y la\nhumedad interior, vuelva a\nconectar todos los conectores y el\nterminal negativo de la batería,\nponga en ON el interruptor de la\nllave de encendido, y compruebe\nsi hay o no un error .*\nNingún\nerror\nDefecto del contacto del conector\nError\nInspección 1:\nCompruebe la condición del\ninterruptor\nANL .: I/O M.HANDLING 1/6\nInspección 2:\nInspección individual de la\ncontinuidad de el/los interruptor/es\nde la palanca de inclinación que\nfue anormal en la inspección 1\n(mientras aún están instalados en\nel vehículo).\nMAL\nBIEN\nInspección 4:\nInspección de cortocircuitos y\ncontinuidad del mazo de cables\nMAL\nBIEN\nV\nSAS/OPS defecto del controlador\nV\nInspección 3:\nInspección individual de la\ncontinuidad del interruptor de la\npalanca de inclinación (extraído\ndel vehículo).\nMAL\nInterruptor de inclinación defectuoso\nBIEN\nInspección 4:\nInspección de cortocircuitos y.\ncontinuidad del mazo de cables\nMAL\nBIEN\nInstalación defectuosa del interruptor\nde inclinación\nV\nMazo de cables defectuoso\n*: Asegúrese de que no hay ningún error visualizado después de poner en ON el interruptor de la llave de\nencendido, y moviendo hacia delante y hacia atrás la palanca de inclinación. Asegúrese también de que no se\nvisualiza ningún error cuando la palanca de inclinación se deja en posición neutral durante 2 minutos.\nInspección 1:\nCompruebe la condición del interruptor.\nInterruptor de la llave de encendido en ON, motor parado\nInterruptor de inclinación (control de E/S: MF·MR)\nEstándar:\nPalanca en\nposición neutra\nPalanca en\nposición de\ninclinación hacia\ndelante\nPalanca en\nposición de\ninclinación hacia\natrás\nMF (Interruptor de\ninclinación hacia delante)\n0\n1\n0\nMR (Interruptor de\ninclinación hacia atrás)\n0\n0\n1",
+      "tablas": [
+        [
+          [
+            "",
+            "Palanca en posición neutra",
+            "Palanca en posición de inclinación hacia delante",
+            "Palanca en posición de inclinación hacia atrás"
+          ],
+          [
+            "MF (Interruptor de inclinación hacia delante)",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "MR (Interruptor de inclinación hacia atrás)",
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      ]
+    }
+  ]
+}

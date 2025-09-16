@@ -1,0 +1,993 @@
+{
+  "archivo": "90000541 - MONTACARGA DIESEL 52-8FD 25 DE 2.5 TN (REPAIR MANUAL)_p881_920",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "21-184\n· Códigos de error C4-1, C4-2, C4-3, C4-4, C4-5 (espec. ASC) (Anormalidad del sensor del acelerador)\nParte relacionada\nG39\na1\nControlador\nASC\n19 (VCPA)\n5\n6 (VPA)\n4\n7 (EPA)\n6\n18 (VCP2)\n1\n5 (VPA2)\n3\n17 (EPA2)\n2\nSensor del\nacelerador\nPosible causa\n1 Defecto del contacto del conector\n2 Sensor del acelerador defectuoso\n3 Mazo de cables defectuoso\n4 ASC defecto del controlador\nCódigos de error C4-1, C4-2, C4-3, C4-4, C4-5\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de G39 y a1 y la humedad interior,\nvuelva a conectar todos los conectores y el\nterminal negativo de la batería, ponga en ON el\ninterruptor de la llave de encendido (arranque el\nmotor), y compruebe si hay o no un error .*\nNingún error\nDefecto del contacto del conector\nError\nInspección 1:\nInspección individual del sensor del acelerador\nBIEN\ninspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nBIEN\nInspección 3:\nInspección de la tensión del sensor del\nacelerador\nANL: I/O ENGINE CTRL 1/3\nMAL\n> Sensor del acelerador defectuoso\nMAL\n>\nMazo de cables defectuoso\nMAL\n> Sensor del acelerador defectuoso\n(\nBIEN\nV\nASC defecto del controlador\n*: Asegúrese de que no se visualiza ningún código de error cuando se acciona el pedal del acelerador.",
+      "tablas": [
+        [
+          [
+            "",
+            "",
+            "G39",
+            "a1"
+          ],
+          [
+            "",
+            "Controlador ASC",
+            "19 (VCPA)",
+            "5"
+          ],
+          [
+            "6 (VPA)",
+            "4"
+          ],
+          [
+            "7 (EPA)",
+            "6"
+          ],
+          [
+            "18 (VCP2)",
+            "1"
+          ],
+          [
+            "5 (VPA2)",
+            "3"
+          ],
+          [
+            "17 (EPA2)",
+            "2"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Inspección 1:\nRealice una inspección individual del sensor del acelerador.\nInterruptor de la llave de encendido en OFF, desconecte a1, conecte G39\n(1) Medición de la resistencia del sensor del acelerador\nEstándar: (Lado del sensor)\na1-5 - a1-6\nAprox. 1,8 - 3,5 k≤2\na1-1 - a1-2\n(soltado)\n(2) Medición de la resistencia del circuito de salida del sensor del acelerador\nEstándar: (Lado del sensor)\n21-185\n65 4 3 2 1\na1\na1-4 - a1-6\nAsegúrese de que el valor de la resistencia aumenta de forma\nproporcional a la rotación del potenciómetro cuando se gira la sección.\na1-3 - a1-2\n.... .\n:",
+      "tablas": [
+        [
+          [
+            "a1-5 - a1-6",
+            "Aprox. 1,8 - 3,5 k≤2"
+          ],
+          [
+            "a1-1 - a1-2",
+            "(soltado)"
+          ]
+        ],
+        [
+          [
+            "a1-4 - a1-6",
+            "Asegúrese de que el valor de la resistencia aumenta de forma"
+          ],
+          [
+            "a1-3 - a1-2",
+            "proporcional a la rotación del potenciómetro cuando se gira la sección."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "21-186\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte G39 y a1\nEstándar:\nG39-6 - a1-4\nHay continuidad\nG39-19 - a1-5\nHay continuidad\nG39-6 - Bastidor\nNo hay continuidad\nG39-7 - a1-6\nHay continuidad\nG39-19 - G39-6\nNo hay continuidad\nG39-6 - G39-18\nNo hay continuidad\nG39-5 - a1-3\nHay continuidad\nG39-18 - a1-1\nHay continuidad\nG39-5 - Bastidor\nNo hay continuidad\nG39-5 - G39-19\nNo hay continuidad\nG39-5 - G39-18\nNo hay continuidad\nG39-6 - G39-5\nNo hay continuidad\nInspección 3:\nInspeccione la tensión del sensor del acelerador.\nInterruptor de la llave de encendido en OFF, desconecte a1, conecte G39, interruptor de la llave de encendido\nen ON\nSensor del acelerador (control de E/S: VPA1, VPA2)\nEstándar:\nVPA1\n0,20 V o menos\nVPA2\n0,20 V o menos",
+      "tablas": [
+        [
+          [
+            "G39-6 - a1-4",
+            "Hay continuidad"
+          ],
+          [
+            "G39-19 - a1-5",
+            "Hay continuidad"
+          ],
+          [
+            "G39-6 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "G39-7 - a1-6",
+            "Hay continuidad"
+          ],
+          [
+            "G39-19 - G39-6",
+            "No hay continuidad"
+          ],
+          [
+            "G39-6 - G39-18",
+            "No hay continuidad"
+          ],
+          [
+            "G39-5 - a1-3",
+            "Hay continuidad"
+          ],
+          [
+            "G39-18 - a1-1",
+            "Hay continuidad"
+          ],
+          [
+            "G39-5 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "G39-5 - G39-19",
+            "No hay continuidad"
+          ],
+          [
+            "G39-5 - G39-18",
+            "No hay continuidad"
+          ],
+          [
+            "G39-6 - G39-5",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "VPA1",
+            "0,20 V o menos"
+          ],
+          [
+            "VPA2",
+            "0,20 V o menos"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "21-187\n· Códigos de error C7-1 y C7-2 (Anormalidad del interruptor de la palanca de cambios)\nParte relacionada\nSFT\n/\nA41\n6\nControlador\nSAS/OPS\n19 (DRR)\nA20\n18 (DRF)\n5\nInterruptor\nde cambio\n1\nEl gráfico de arriba es para vehículos de la especificación del bastidor vertical de la palanca de cambios izquierda.\nPara vehículos de la especificación del bastidor vertical de la palanca de cambios derecha, deberían utilizarse\nA43-4, A43-5 y A43-9.\nPara vehículos de la especificación de reposabrazos, deberían utilizarse Y4-7, Y4-6 y Y4-1.\nPosible causa\n1 Defecto del contacto del conector\n2 Interruptor de cambio de desplazamiento\nhacia delante defectuoso\n3 Interruptor de cambio de desplazamiento\nhacia atrás defectuoso\n4 Mazo de cables defectuoso\n5 Instalación defectuosa del interruptor de cambio\n6 SAS/OPS defecto del controlador\nPrecaución:\nSi el motor se para durante el desplazamiento, cuando el interruptor de la llave de encendido se pone de\nOFF a ON, puede detectarse un error C7-1, pero no es una avería.\nDetenga el vehículo, ponga el interruptor de la llave de encendido en OFF y vuelva a arrancar el motor.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "21-188\nCódigo de error C7-1\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A20 y A41 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido (arranque\nel motor), y compruebe si hay o no un error .*\nError\nInspección 1:\nCompruebe la condición del interruptor\nANL .: I/O TRAVELING 2/3\nBIEN\nInspección 2:\nInspección individual de la continuidad de el/los\ninterruptor/es de la palanca de dirección que fue\nanormal en la inspección 1 (mientras aún están\ninstalados en el vehiculo).\nBIEN\nInspección 3:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nBIEN\nNingún error\nMAL\nMAL\n>\nDefecto del contacto del conector\n>\nInterruptor de cambio defectuoso\nMazo de cables defectuoso\nSAS/OPS defecto del controlador\n*: Compruebe si se produce in error después de poner en ON el interruptor de la llave de encendido, moviendo la\npalanca de cambios del estado parado a más de 10 km/h en 3 segundos.\nCódigo de error C7-2\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A20 y A41. y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido (arranque\nel motor), y compruebe si hay o no un error .*\nError\nInspección 4:\nCompruebe la condición del interruptor\nANL .: I/O TRAVELING 2/3\nMAL\nInspección 3:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nMAL\nNingún error\n>\nDefecto del contacto del conector\nBIEN\n>\nInterruptor de cambio defectuoso\nBIEN\n>\nMazo de cables defectuoso\nV\nSAS/OPS defecto del controlador\n*: Asegúrese de que no hay ningún error visualizado después de poner en ON el interruptor de la llave de\nencendido, y mueva la palanca de cambios a desplazamiento hacia delante y hacia atrás.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "21-189\nInspección 1:\nCompruebe la condición del interruptor.\n)\nInterruptor de la llave de encendido en ON\nConmutador inversor de marcha (control de E/S: DRF - DRR)\nEstándar:\nPalanca en\nposición neutra\nPalanca en\nposición de avance\nPalanca en\nposición de\nretroceso\nDRF (para avance)\n0\n1\n0\nDRR (para retroceso)\n0\n0\n1\nInspección 2:\nInspección individual de la continuidad del/los interruptor/es de la palanca de dirección\n(aún instalado en el vehículo).\nInterruptor de la llave de encendido en OFF, desconecte A41\nEstándar: (Lado del interruptor)\nPalanca en\nposición neutra\nPalanca en\nposición de avance\nPalanca en\nposición de\nretroceso\nA41-6 - A41-5\nNo hay continuidad\nHay continuidad\nNo hay continuidad\nA41-6 - A41-1\nNo hay continuidad\nNo hay continuidad\nHay continuidad\n987654321\n181716151413121110\nA41\nInspección 3:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A20 y A41.\nEstándar:\nA20-18 - A41-5\nHay continuidad\nA20-18 - Bastidor\nNo hay continuidad\nA20-19 - A41-1\nHay continuidad\nA20-19 - Bastidor\nNo hay continuidad\nA20-18 - A41-6\nNo hay continuidad\nA20-19 - A41-6\nNo hay continuidad\nA20-18 - A20-19\nNo hay continuidad\nInspección 4:\nCompruebe la condición del interruptor.\nDesconecte A41, interruptor de la llave de encendido en ON (motor parado, conmutador inversor de marcha\n(control de E/S: DRF·DRR))\nEstándar:\nVisualizador del\nanalizador\nDRF (para avance)\n0\nDRR (para retroceso)\n0",
+      "tablas": [
+        [
+          [
+            "",
+            "Palanca en posición neutra",
+            "Palanca en posición de avance",
+            "Palanca en posición de retroceso"
+          ],
+          [
+            "DRF (para avance)",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "DRR (para retroceso)",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "",
+            "Palanca en posición neutra",
+            "Palanca en posición de avance",
+            "Palanca en posición de retroceso"
+          ],
+          [
+            "A41-6 - A41-5",
+            "No hay continuidad",
+            "Hay continuidad",
+            "No hay continuidad"
+          ],
+          [
+            "A41-6 - A41-1",
+            "No hay continuidad",
+            "No hay continuidad",
+            "Hay continuidad"
+          ]
+        ],
+        [
+          [
+            "A20-18 - A41-5",
+            "Hay continuidad"
+          ],
+          [
+            "A20-18 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "A20-19 - A41-1",
+            "Hay continuidad"
+          ],
+          [
+            "A20-19 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "A20-18 - A41-6",
+            "No hay continuidad"
+          ],
+          [
+            "A20-19 - A41-6",
+            "No hay continuidad"
+          ],
+          [
+            "A20-18 - A20-19",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "",
+            "Visualizador del analizador"
+          ],
+          [
+            "DRF (para avance)",
+            "0"
+          ],
+          [
+            "DRR (para retroceso)",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "21-190\n· Código de error CA-1 (Anormalidad de la palanca de avance-retroceso)\nParte relacionada\nA20\n17 (RYF)\n43 (E01)\n44 (E02)\nControlador\nSAS/OPS\n1\n2\nRelé de\navance\n1\n77\n2\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables del relé de avance defectuoso\n3 Relé de avance defectuoso\nCódigo de error CA-1\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A20 y la humedad interior,\nvuelva a conectar todos los conectores y el\nterminal negativo de la batería, ponga en ON el\ninterruptor de la llave de encendido, y\ncompruebe si hay o no un error.\nError\nRelé de\nretroceso\n4 Mazo de cables de retroceso defectuoso\n5 Relé de retroceso defectuoso\n6 SAS/OPS defecto del controlador\nNingún error\n>\nDefecto del contacto del conector\nInspección 1:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nMAL\nBIEN\nInspección 2:\nInspección individual del relé\nMAL\nBIEN\nSAS/OPS defecto del controlador\n> Mazo de cables defectuoso\nRelé defectuoso\nInspección 1:\nRealice una inspección individual del relé.\nInterruptor de la llave de encendido en OFF, desconecte el relé de avance/retroceso,\nconecte A20\nEstándar: (Lado del relé)\nTerminal 1 del relé de avance R/B -\nterminal 2 del relé de avance R/B\n91 + 15 Ω (20°C)\nTerminal 1 del relé de retroceso R/B -\nterminal 2 del relé de retroceso R/B\n3\n5\n2 41\nV\nRelé de\navance/retroceso",
+      "tablas": [
+        [
+          [
+            "Terminal 1 del relé de avance R/B - terminal 2 del relé de avance R/B",
+            "91 + 15 Ω (20°C)"
+          ],
+          [
+            "Terminal 1 del relé de retroceso R/B - terminal 2 del relé de retroceso R/B"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "21-191\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A20 y el relé de avance/retroceso\nEstándar:\nA20-17 - Terminal 1 del relé de avance\nR/B\nHay continuidad\nTerminal 2 del relé de retroceso R/B -\nBastidor\nHay continuidad\nA20-44 - Bastidor\nHay continuidad\nA20-43 - Bastidor\nHay continuidad\nA20-17 - Bastidor\nNo hay continuidad\n-",
+      "tablas": [
+        [
+          [
+            "A20-17 - Terminal 1 del relé de avance R/B",
+            "Hay continuidad"
+          ],
+          [
+            "Terminal 2 del relé de retroceso R/B - Bastidor",
+            "Hay continuidad"
+          ],
+          [
+            "A20-44 - Bastidor",
+            "Hay continuidad"
+          ],
+          [
+            "A20-43 - Bastidor",
+            "Hay continuidad"
+          ],
+          [
+            "A20-17 - Bastidor",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "21-192\n· Código de error EC-1 (Anormalidad del solenoide de descarga)\nParte relacionada\nA20\n5 (USOL)\n9 (E02)\nControlador\nSAS/OPS\n8 (E01)\n711\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables defectuoso\n3 Solenoide de descarga defectuoso\n4 SAS/OPS defecto del controlador\nCódigo de error EC-1\nA12\n1\nSolenoide de\ndescarga\n2\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A12 y A20 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido (arranque\nel motor), y compruebe si hay o no un error .*\nNingún error\nDefecto del contacto del conector\nError\nInspección 1:\nInspección individual del solenoide de descarga\nMAL\nSolenoide de descarga defectuoso\nBIEN\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nMAL\nMazo de cables defectuoso\nBIEN\nSAS/OPS defecto del controlador\n*: Compruebe si se produce un error después de poner en ON el interruptor de la llave de encendido y dejar el\nasiento (durante al menos 2 segundos).\nInspección 1:\nRealice una inspección individual del solenoide de descarga.\n12\nInterruptor de la llave de encendido en OFF, desconecte A12\nA12\nEstándar: (Lado del solenoide)\nA12-1 - A12-2\n9,9 + 0,5 (2 (20℃)",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "21-193\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A20 y A12\nEstándar:\nA20-5 - A12-1\nHay continuidad\nA12-2 - Bastidor\nHay continuidad\nA20-8 - Bastidor\nHay continuidad\nA20-9 - Bastidor\nHay continuidad\nA20-5 - Bastidor\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "A20-5 - A12-1",
+            "Hay continuidad"
+          ],
+          [
+            "A12-2 - Bastidor",
+            "Hay continuidad"
+          ],
+          [
+            "A20-8 - Bastidor",
+            "Hay continuidad"
+          ],
+          [
+            "A20-9 - Bastidor",
+            "Hay continuidad"
+          ],
+          [
+            "A20-5 - Bastidor",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "21-194\n1\n· Códigos de error F1-1, F1-2 (Anormalidad de comunicación del controlador al medidor combinado)\nParte relacionada\nControlador\nSAS/OPS\nA20\n14 (SIL)\nN.C.\nQ1\n3 (SIL)\n9 (SIN SAS)\nMedidor\ncombinado\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables del contador de horas defectuoso\n3 Contador de horas defectuosos\nSAS/OPS defecto del controlador\nCódigos de error F-1, F-2\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A20 y Q1 y la humedad interior,\nvuelva a conectar todos los conectores y el\nterminal negativo de la batería, ponga en ON el\ninterruptor de la llave de encendido, y\ncompruebe si hay o no un error.\nNingún error\nDefecto del contacto del conector\nF1-1\nF1-2\n-\nMedidor combinado defectuoso\nInspección 1:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nMAL\nMazo de cables defectuoso\nBIEN\n.: )\nControlador SAS/OPS o medidor\ncombinado defectuoso\nInspección 1:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A20 y Q1\nEstándar:\nQ1-9 - Bastidor\nNo hay continuidad\nQ1-3 - Bastidor\nNo hay continuidad\nA20-14 - Q1-3\nHay continuidad",
+      "tablas": [
+        [
+          [
+            "Q1-9 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "Q1-3 - Bastidor",
+            "No hay continuidad"
+          ],
+          [
+            "A20-14 - Q1-3",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "21-195\n· Códigos de error F4-1, F4-2, F4-3, F4-4, F4-5, F4-7, F4-8 (Anormalidad de la CPU)\nParte relacionada\nVisualizador\nmultifuncional\nPosible causa\n1 Tablero del visualizador multifuncional defectuoso",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "21-196\n· Códigos de error H1-1, H1-2, H1-3, H1-4, H1-5 (Anormalidad del potenciómetro de la palanca de elevación)\nParte relacionada\nControlador\nSAS/OPS/\n28 (LIF2)\nminipalanca\n26 (E2)\nA23\n7 (IG1)\n8 (IG2)\n29 (LIF+)\n27 (LIF1)\n9 (E43)\n10 (E44)\nA21\n10 (E42)\n9 (E41)\n3 (E11)\n4 (E12)\n®-\nY6\n4\n3\nPotenciómetro\nde la palanca\nde elevación\n2\n1\n777\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables del potenciómetro de la palanca de elevación defectuoso\n3 Potenciómetro de la palanca de elevación defectuoso\n4 SAS/OPS defecto del controlador\n5 Fusible defectuoso\nD",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Códigos de error H1-1, H1-2, H1-3, H1-4\nDesconecte el terminal negativo\nde la batería, después de\ninspeccionar y corregir la\ndesconexión de A21, A23 y Y6 y la\nhumedad interior, vuelva a\nconectar todos los conectores y el\nterminal negativo de la batería,\nponga en ON el interruptor de la\nllave de encendido, y compruebe\nsi hay o no un error.\nNingún\nerror\nError\nV\nPonga en OFF el interruptor de la\nllave de encendido, desconecte el\nterminal negativo de la batería,\nreemplace el potenciómetro de la\npalanca de elevación por el\npotenciómetro de la palanca de\ninclinación, y compruebe si hay\nalgún cambio en el error.\n21-197\n> Defecto del contacto del conector\nH2-4\nInspección 1:\nInspección del potenciómetro de la\npalanca de elevación\nH1 -*\nH2-1.H2-2-H2-3\nInspección 2:\nInspección de cortocircuitos y\ncontinuidad del mazo de cables\nMAL\nBIEN\nInspección del fusible\nMAL\nBIEN\nControlador SAS/OPS/minipalanca\ndefectuoso\nBIEN\nInstalación defectuosa\nMAL\n> Anormalidad del potenciómetro de la palanca de elevación\nMazo de cables defectuoso\n> Reemplace el fusible\nNota:\nSi se ha extraído la palanca, asegúrese de realizar la adaptación una vez la palanca se haya reinstalado.\nInspección 1:\nRealice la inspección del potenciómetro de la palanca de elevación.\nInterruptor de la llave de encendido en OFF, ponga el potenciómetro de la palanca de elevación y el\npotenciómetro de la palanca de inclinación en sus posiciones originales, compruebe la instalación del\npotenciómetro de la palanca de elevación (consulte la sección 20), interruptor de la llave de encendido en ON,\nadapte el potenciómetro de la palanca de elevación\n1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "21-198\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A21, A23 y Y6\nEstándar:\nA23-29 - Y6-4\nHay continuidad\nA23-27 - Y6-3\nHay continuidad\nA23-28 - Y6-2\nHay continuidad\nA23-26 - Y6-1\nHay continuidad\nCódigo de error H1-5\nAdaptar el potenciómetro de la palanca de\nelevación\nMAL\nBIEN\nDesalineamiento del valor de adaptación\n->\nControlador SAS/OPS/minipalanca\ndefectuoso",
+      "tablas": [
+        [
+          [
+            "A23-29 - Y6-4",
+            "Hay continuidad"
+          ],
+          [
+            "A23-27 - Y6-3",
+            "Hay continuidad"
+          ],
+          [
+            "A23-28 - Y6-2",
+            "Hay continuidad"
+          ],
+          [
+            "A23-26 - Y6-1",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "21-199\n· Códigos de error H2-1, H2-2, H2-3, H2-4, H2-5 (Anormalidad del potenciómetro de la palanca de inclinación)\nParte relacionada\nControlador\nSAS/OPS/\nminipalanca\n26 (E2)\nA23\n7 (IG1)\n8 (IG2)\n30 (TIL+)\n11 (TIL1)\n12 (TIL2)\n9 (E43)\n10 (E44)\nA21\n10 (E42)\n9 (E41)\n3 (E11)\n4 (E12)\nY5\n4\n3\nPotenciómetro\nde la palanca\nde inclinación\n2\n1\n77\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables del potenciómetro de la palanca de inclinación defectuoso\n3 Potenciómetro de la palanca de inclinación defectuoso\n4 SAS/OPS defecto del controlador\n5 Fusible defectuoso",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "21-200\nCódigos de error H2-1, H2-2, H2-3, H2-4\nDesconecte el terminal negativo\nde la batería, después de\ninspeccionar y corregir la\ndesconexión de A21, A23 y Y5 y la\nhumedad interior, vuelva a\nconectar todos los conectores y el\nterminal negativo de la batería,\nponga en ON el interruptor de la\nllave de encendido, y compruebe\nsi hay o no un error.\nError\nPonga en OFF el interruptor de la\nllave de encendido, desconecte el\nterminal negativo de la batería,\nreemplace el potenciómetro de la\npalanca de elevación por el\npotenciómetro de la palanca de\ninclinación, y compruebe si hay\nalgún cambio en el error.\nH2 -*\nNingún\nerror\n> Defecto del contacto del conector\nH1-4\nInspección 1:\nInspección del potenciómetro de la\npalanca de inclinación\nBIEN\nInstalación defectuosa\nMAL\nH1-1.H1-2.H1-3\nInspección 2:\nInspección de cortocircuitos y\ncontinuidad del mazo de cables\nBIEN\nInspección del fusible\nBIEN\nV\nControlador SAS/OPS/minipalanca\ndefectuoso\nAnormalidad del potenciómetro de la palanca de inclinación\nMAL\nMazo de cables defectuoso\nMAL\n> Reemplace el fusible\nNota:\nSi se ha extraído la palanca, asegúrese de realizar la adaptación una vez la palanca se haya reinstalado.\nInspección 1:\nRealice la inspección del potenciómetro de la palanca de inclinación.\nInterruptor de la llave de encendido en OFF, ponga el potenciómetro de la palanca de inclinación y el\npotenciómetro de la palanca de elevación en sus posiciones originales, compruebe la instalación del\npotenciómetro de la palanca de inclinación (consulte la sección 20), interruptor de la llave de encendido en ON,\nadapte el potenciómetro de la palanca de inclinación",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "21-201\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A21, A23 y Y5\nEstándar:\nA23-30 - Y5-4\nHay continuidad\nA23-11 - Y5-3\nHay continuidad\nA23-12 - Y5-2\nHay continuidad\nA23-26 - Y5-1\nHay continuidad\nCódigo de error H2-5\nAdapte el potenciómetro de la palanca de\nBIEN\n>\nDesalineamiento del valor de adaptación\ninclinación\nMAL\nV\nControlador SAS/OPS/minipalanca\ndefectuoso",
+      "tablas": [
+        [
+          [
+            "A23-30 - Y5-4",
+            "Hay continuidad"
+          ],
+          [
+            "A23-11 - Y5-3",
+            "Hay continuidad"
+          ],
+          [
+            "A23-12 - Y5-2",
+            "Hay continuidad"
+          ],
+          [
+            "A23-26 - Y5-1",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "21-202\n· Códigos de error H3-1, H3-2, H3-3, H3-4, H3-5 (Anormalidad del potenciómetro de la palanca de enganche 1)\nParte relacionada\nControlador\nSAS/OPS/\n9 (E43)\nminipalanca\n10 (E44)\nA23\n7 (IG1)\n8 (IG2)\n31 (AT1+)\n13 (AT11)\n14 (AT12)\n26 (E2)\nA21\n10 (E42)\n9 (E41)\n3 (E11)\n4 (E12)\n7\nPosible causa\n1) Defecto del contacto del conector\n2 Mazo de cables del potenciómetro de la palanca de enganche 1 defectuoso\n3 Potenciómetro de la palanca de enganche 1 defectuoso\n4 SAS/OPS defecto del controlador\n5 Fusible defectuoso\nY2\n4\n3\nPotenciómetro de\nla palanca de\n2\n1\nenganche 1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Códigos de error H3-1, H3-2, H3-3, H3-4\nDesconecte el terminal negativo\nde la batería, después de\ninspeccionar y corregir la\ndesconexión de A21, A23 y Y2 y la\nhumedad interior, vuelva a\nconectar todos los conectores y el\nterminal negativo de la batería,\nponga en ON el interruptor de la\nllave de encendido, y compruebe\nsi hay o no un error.\nNingún\nerror\nError\nPonga en OFF el interruptor de la\nllave de encendido, desconecte el\nterminal negativo de la batería,\nreemplace el potenciómetro de la\npalanca de enganche 1 con el\npotenciómetro de la palanca de\ninclinación, y compruebe si hay\nalgún cambio en el error.\n21-203\n> Defecto del contacto del conector\nH2-4\nInspección 1:\nInspección del potenciómetro de la\npalanca de enganche 1\nH3 -*\nH2-1.H2-2·H2-3\nInspección 2:\nInspección de cortocircuitos y\ncontinuidad del mazo de cables\nMAL\nBIEN\n>\nInspección del fusible\nMAL\nBIEN\n>\nControlador SAS/OPS/minipalanca\ndefectuoso\nMAL\nInstalación defectuosa\nBIEN\nAnormalidad del potenciómetro de\nla palanca de enganche 1\n>\nMazo de cables defectuoso\nReemplace el fusible\nNota:\nSi se ha extraído la palanca, asegúrese de realizar la adaptación una vez la palanca se haya reinstalado.\nInspección 1:\nRealice la inspección del potenciómetro de la palanca de enganche 1.\nInterruptor de la llave de encendido en OFF, devuelva el potenciómetro de la palanca de enganche 1 y el\npotenciómetro de la palanca de inclinación a sus posiciones originales\nCompruebe la instalación del potenciómetro de la palanca de enganche 1 (consulte la sección 20), interruptor\nde la llave de encendido en ON, adapte el potenciómetro de la palanca de desenganche 1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "21-204\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A21, A23 y Y2\nEstándar:\nA23-31 - Y2-4\nHay continuidad\nA23-13 - Y2-3\nHay continuidad\nA23-14 - Y2-2\nHay continuidad\nA23-26 - Y2-1\nHay continuidad\nCódigo de error H3-5\nAdapte el potenciómetro de la palanca de\nenganche 1\nMAL\nBIEN\nDesalineamiento del valor de adaptación\nControlador SAS/OPS/minipalanca\ndefectuoso",
+      "tablas": [
+        [
+          [
+            "A23-31 - Y2-4",
+            "Hay continuidad"
+          ],
+          [
+            "A23-13 - Y2-3",
+            "Hay continuidad"
+          ],
+          [
+            "A23-14 - Y2-2",
+            "Hay continuidad"
+          ],
+          [
+            "A23-26 - Y2-1",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "21-205\n· Códigos de error H4-1, H4-2, H4-3, H4-4, H4-5 (Anormalidad del potenciómetro de la palanca de enganche 2)\nParte relacionada\nControlador\nSAS/OPS/\n26 (E2)\nminipalanca\n9. (E43)\nA23\n7 (IG1)\n8 (IG2)\n32 (AT2+)\n15 (AT21)\n16 (AT22)\n10 (E44)\nA21\n10 (E42)\n9 (E41)\n3 (E11)\n4 (E12)\n7\nPosible causa\n1) Defecto del contacto del conector\n2 Mazo de cables del potenciómetro de la palanca de enganche 2 defectuoso\n3 Potenciómetro de la palanca de enganche 2 defectuoso\n4 SAS/OPS defecto del controlador\n5 Fusible defectuoso\nY3\n4\n3\nPotenciómetro\nde la palanca\nde enganche 2\n2\n1",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "21-206\nCódigos de error H4-1, H4-2, H4-3,\nH4-4\nDesconecte el terminal negativo\nde la batería, después de\ninspeccionar y corregir la\ndesconexión de A21, A23 y Y3 y la\nhumedad interior, vuelva a\nconectar todos los conectores y el\nterminal negativo de la batería,\nponga en ON el interruptor de la\nllave de encendido, y compruebe\nsi hay o no un error.\nError\nPonga en OFF el interruptor de la\nllave de encendido, desconecte el\nterminal negativo de la batería,\nreemplace el potenciómetro de la\npalanca de enganche 1 con el\npotenciómetro de la palanca de\nenganche 2, y compruebe si hay\nalgún cambio en el error.\nNingún\nerror\n> Defecto del contacto del conector\nInspección 1:\nInspección del potenciómetro de la\npalanca de enganche 2\nH3-4\nMAL\nInstalación defectuosa\nH4 -*\nH3-1.H3-2.H3-3\nInspección 2:\nInspección de cortocircuitos y\ncontinuidad del mazo de cables\nBIEN\nInspección del fusible\nBIEN\nControlador SAS/OPS/minipalanca\ndefectuoso\nMAL\nMAL\nBIEN\nAnormalidad del potenciómetro de\nla palanca de enganche 2\nMazo de cables defectuoso\n>\nReemplace el fusible\nNota:\nSi se ha extraído la palanca, asegúrese de realizar la adaptación una vez la palanca se haya reinstalado.\nInspección 1:\nRealice la inspección del potenciómetro de la palanca de enganche 2.\nInterruptor de la llave de encendido en OFF, devuelva el potenciómetro de la palanca de enganche 2 y el\npotenciómetro de la palarica de inclinación a sus posiciones originales\nCompruebe la instalación del potenciómetro de la palanca de enganche 2 (consulte la sección 20), interruptor\nde la llave de encendido en ON, adapte el potenciómetro de la palanca de desenganche 2",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "21-207\nInspección 2:\n......\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A21, A23 y Y3\nEstándar:\nA23-32 - Y3-4\nHay continuidad\nA23-15 - Y3-3\nHay continuidad\nA23-16 - Y3-2\nHay continuidad\nA23-26 - Y3-1\nHay continuidad\nCódigo de error H4-5\nAdaptación del potenciómetro de la palanca de\nenganche 2\nMAL\nBIEN\nDesalineamiento del valor de adaptación\nControlador SAS/OPS/minipalanca\ndefectuoso",
+      "tablas": [
+        [
+          [
+            "A23-32 - Y3-4",
+            "Hay continuidad"
+          ],
+          [
+            "A23-15 - Y3-3",
+            "Hay continuidad"
+          ],
+          [
+            "A23-16 - Y3-2",
+            "Hay continuidad"
+          ],
+          [
+            "A23-26 - Y3-1",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "21-208\n· Códigos de error H5-1 y H5-2 (Anormalidad del solenoide de elevación)\nParte relacionada\nControlador\nSAS/OPS/\nminipalanca\nA23\nA51\n17 (LSO+)\n5\n18 (LPSH)\n1\nA52\n5\n19 (LPLL)\n1\nSolenoide\nPUSH de\nelevación\nSolenoide\nPULL de\nelevación\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables del solenoide PUSH de\nelevación defectuoso\n3 Solenoide PUSH de elevación defectuoso\n4 Mazo de cables del solenoide PULL de elevación defectuoso\n5 Solenoide PULL de elevación defectuoso\n6 Controlador SAS/OPS/minipalanca defectuoso\nCódigos de error H5-1, H5-2\nAhora se describe H5-1. Para H5-2, sustituya A52 por A51 y PULL por PUSH en lo siguiente.\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A23 y A51 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido, accione\nla palanca de elevación y compruebe si hay o no\nun error.\nError\nInspección 1:\nInspección individual del solenoide de elevación\nNingún error\nMAL\n> Solenoide PUSH de elevación defectuoso\n> Defecto del contacto del conector\nBIEN\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nMAL\nMazo de cables defectuoso\nBIEN\nControlador SAS/OPS/minipalanca defectuoso\nInspección 1:\nA\nRealice una inspección individual del solenoide de elevación.\n1 2)\n3/4\nInterruptor de la llave de encendido en OFF, desconecte el terminal negativo de la batería,\ndesconecte A51\n5678\nA51\nEstándar: (Lado del solenoide)\nA51-5 - A51-1\n7,2 + 0,36 Ω (20°C)",
+      "tablas": [
+        [
+          [
+            "Inspección 1:",
+            "A"
+          ],
+          [
+            "Realice una inspección individual del solenoide de elevación.",
+            "1 2) 3/4"
+          ],
+          [
+            "Interruptor de la llave de encendido en OFF, desconecte el terminal negativo de la batería, desconecte A51",
+            "5678 A51\n:selected: :selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Inspección 2:\n21-209\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\n7\nInterruptor de la llave de encendido en OFF, desconecte el terminal negativo de la batería,\ndesconecte A23 y A51\nEstándar:\nA23-17 - A51-5\nHay continuidad\nA23-18 - A51-1\nHay continuidad\nA23-17 - A23-18\nNo hay continuidad\nA23-17 - A23-19\nNo hay continuidad\n1234\n56 78\nA52",
+      "tablas": [
+        [
+          [
+            "A23-17 - A51-5",
+            "Hay continuidad"
+          ],
+          [
+            "A23-18 - A51-1",
+            "Hay continuidad"
+          ],
+          [
+            "A23-17 - A23-18",
+            "No hay continuidad"
+          ],
+          [
+            "A23-17 - A23-19",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "21-210\n· Códigos de error H6-1 y H6-2 (Anormalidad del solenoide de inclinación)\nParte relacionada\nControlador\nSAS/OPS/\nminipalanca\nA23\nA51\n1 (TSO+)\n6\n2 (TPSH)\n2\nA52\n6\n3 (TPLL)\n2\nSolenoide\nPUSH de\ninclinación\nSolenoide\nPULL de\ninclinación\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables del solenoide PUSH de\ninclinación defectuoso\n3 Solenoide PUSH de inclinación defectuoso\n4 Mazo de cables del solenoide PULL de inclinación\ndefectuoso\n5 Solenoide PULL de inclinación defectuoso\n6 Controlador SAS/OPS/minipalanca defectuoso\nCódigos de error H6-1 y H6-2\nAhora se describe H6-1. Para H6-2, sustituya A52 por A51 y PULL por PUSH en lo siguiente\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A23 y A51 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido, accione\nla palanca de inclinación y compruebe si hay o\nno un error.\nError\nInspección 1:\nInspección individual del solenoide de inclinación\nBIEN\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nNingún error\nMAL\nSolenoide PUSH de inclinación defectuoso\nMAL\n>\nMazo de cables defectuoso\n> Defecto del contacto del conector\nBIEN\nControlador SAS/OPS/minipalanca defectuoso\nInspección 1:\nD\nRealice una inspección individual del solenoide de inclinación.\n1234\nInterruptor de la llave de encendido en OFF, desconecte A51\n5678\nEstándar: (Lado del solenoide)\nA51-6 - A51-2\nA51\n7,2 + 0,36 (2 (20℃)",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Inspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A23 y A51\nEstándar:\nA23-1 - A51-6\nHay continuidad\nA23-2 - A51-2\nHay continuidad\nA23-1 - A23-2\nNo hay continuidad\nA23-1 - A23-3\nNo hay continuidad\n21-211\n7\n123 4\n56×7×8\nA52",
+      "tablas": [
+        [
+          [
+            "A23-1 - A51-6",
+            "Hay continuidad"
+          ],
+          [
+            "A23-2 - A51-2",
+            "Hay continuidad"
+          ],
+          [
+            "A23-1 - A23-2",
+            "No hay continuidad"
+          ],
+          [
+            "A23-1 - A23-3",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "21-212\n· Códigos de error H7-1, H7-2 (Anormalidad del solenoide de enganche 1)\nParte relacionada\nA23\nA51\nControlador\nSAS/OPS/\nminipalanca\n20 (3SO+)\n7\n21 (3PSH)\n3\nA52\n7\n22 (3PLL)\n3\nPosible causa\n1) Defecto del contacto del conector\n2 Mazo de cables del solenoide PUSH de enganche 1 defectuoso\n3 Solenoide PUSH de enganche 1 defectuoso\n4 Mazo de cables del solenoide PULL de enganche 1 defectuoso\n5 Solenoide PULL de enganche 1 defectuoso\n6 Controlador SAS/OPS/minipalanca defectuoso\nSolenoide PUSH\nde enganche 1\nSolenoide PULL\nde enganche 1\nCódigos de error H7-1, H7-2\nAhora se describe H7-1. Para H7-2, sustituya A52 por A51 y PULL por PUSH en lo siguiente\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A23 y A51 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido, accione\nla palanca de enganche 1 y compruebe si hay o\nno un error.\nNingún error\n> Defecto del contacto del conector\nError\nInspección 1:\nInspección individual del solenoide de enganche 1\nMAL\nSolenoide PUSH de\nenganche 1 defectuoso\nBIEN\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nMAL\n> Mazo de cables defectuoso\nBIEN\nControlador SAS/OPS/minipalanca defectuoso",
+      "tablas": [
+        [
+          [
+            "",
+            "",
+            "A23",
+            "A51"
+          ],
+          [
+            "",
+            "Controlador SAS/OPS/ minipalanca",
+            "20 (3SO+)",
+            "7"
+          ],
+          [
+            "21 (3PSH)",
+            "3"
+          ],
+          [
+            "",
+            "A52"
+          ],
+          [
+            "7"
+          ],
+          [
+            "22 (3PLL)",
+            "3"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "21-213\nInspección 1:\n1\n7\nRealice una inspección individual del solenoide de enganche 1.\nInterruptor de la llave de encendido en OFF, desconecte A51\n1234\n5)\nX78\nEstándar: (Lado del solenoide)\nA51\nA51-7 - A51-3\n7,2 + 0,36 £2 (20℃)\nInspección 2:\n7\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A23 y A51\n1234\n5678\nEstándar:\nA52\nA23-4 - A51-8\nHay continuidad\nA23-5 - A51-4\nHay continuidad\nA23-4 - A23-5\nNo hay continuidad\nA23-4 - A23-6\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "A23-4 - A51-8",
+            "Hay continuidad"
+          ],
+          [
+            "A23-5 - A51-4",
+            "Hay continuidad"
+          ],
+          [
+            "A23-4 - A23-5",
+            "No hay continuidad"
+          ],
+          [
+            "A23-4 - A23-6",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "21-214\n· Códigos de error H8-1, H8-2 (Anormalidad del solenoide de enganche 2)\nParte relacionada\nControlador\nSAS/OPS/\nminipalanca\nA23\n4 (4SO+)\n5 (4PSH)\n6 (4PLL)\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables del solenoide PUSH de enganche 2 defectuoso\n3 Solenoide PUSH de enganche 2 defectuoso\n4 Mazo de cables del solenoide PULL de enganche 2 defectuoso\n5 Solenoide PULL de enganche 2 defectuoso\n6 Controlador SAS/OPS/minipalanca defectuoso\nA51\n8\nSolenoide PUSH\n4\nde enganche 2\nA52\n8\nSolenoide PULL\nde enganche 2\n4\nCódigos de error H8-1, H8-2\nAhora se describe H8-1. Para H8-2, sustituya A52 por A51 y PULL por PUSH en lo siguiente.\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A23 y A51 y la humedad\ninterior, vuelva a conectar todos los conectores y\nel terminal negativo de la batería, ponga en ON\nel interruptor de la llave de encendido, accione\nla palanca de enganche 2 y compruebe si hay o\nno un error.\nNingún error\nDefecto del contacto del conector\nError\nInspección 1:\nInspección individual del solenoide de enganche 2\nMAL\nSolenoide PUSH de\nenganche 2 defectuoso\nBIEN\nInspección 2:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nMAL\n> Mazo de cables defectuoso\nBIEN\nControlador SAS/OPS/minipalanca defectuoso",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "Inspección 1:\n21-215\nRealice una inspección individual del solenoide de enganche 2.\n7\n1234\nInterruptor de la llave de encendido en OFF, desconecte el terminal negativo de la batería y\nA51\nEstándar: (Lado del solenoide)\nA51-8 - A51-4\n7,2 + 0,36 Ω (20°C)\nInspección 2:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A23 y A51\nEstándar:\nA23-4 - A51-8\nHay continuidad\nA23-5 - A51-4\nHay continuidad\nA23-4 - A23-5\nNo hay continuidad\nA23-4 - A23-6\nNo hay continuidad\n56 78\nA51\nA\n1 23 4\n5 6\n78\nA52\n.",
+      "tablas": [
+        [
+          [
+            "A23-4 - A51-8",
+            "Hay continuidad"
+          ],
+          [
+            "A23-5 - A51-4",
+            "Hay continuidad"
+          ],
+          [
+            "A23-4 - A23-5",
+            "No hay continuidad"
+          ],
+          [
+            "A23-4 - A23-6",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "21-216\n· Código de error HA-1 (Anormalidad del relé de cambio de 3/4 vías)\nParte relacionada\nIG\nA21\n12 (ATSO)\n1\nRelé 1 de cambio\nde 3/4 vías\n2\nControlador\nSAS/OPS/\nminipalanca\n3\nRelé 2 de cambio\nde 3/4 vías\n4\nPosible causa\n1 Defecto del contacto del conector\n2 Mazo de cables del relé 1 de cambio de 3/4 vías defectuoso\n3 Relé 1 de cambio de 3/4 vías defectuoso\n4 Mazo de cables del relé 2 de cambio de 3/4 vías defectuoso\n5 Relé 2 de cambio de 3/4 vías defectuoso\n6 SAS/OPS defecto del controlador\nCódigo de error HA-1\n---\nDesconecte el terminal negativo de la batería,\ndespués de inspeccionar y corregir la\ndesconexión de A21 y la humedad interior,\nvuelva a conectar A21 y el terminal negativo de\nla batería (deje desconectado el relé), ponga el\nconmutador en el lado de 3 vías, ponga en ON\nel interruptor de la llave de encendido, y\ncompruebe si hay o no un error.\nError\nInspección 1:\nInspección de cortocircuitos y continuidad del\nmazo de cables\nNingún error\n>\nRelé de cambio de 3/4 vías defectuoso\nMAL\n> Mazo de cables defectuoso\nBIEN\nControlador SAS/OPS/minipalanca defectuoso\nInspección 1:\nInspeccione si hay continuidad y cortocircuitos en el mazo de cables.\nInterruptor de la llave de encendido en OFF, desconecte A21 y el relé de cambio\nEstándar:\nA21-12 - Terminal 2 del relé\nHay continuidad\nA21-12 - Terminal 4 del relé\nHay continuidad\nA21-12 - Bastidor\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "A21-12 - Terminal 2 del relé",
+            "Hay continuidad"
+          ],
+          [
+            "A21-12 - Terminal 4 del relé",
+            "Hay continuidad"
+          ],
+          [
+            "A21-12 - Bastidor",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "21-217\nLOCALIZACIÓN Y REPARACIÓN DE AVERÍAS CUANDO NO HAY CÓDIGO DE\nERROR\nLista de motores 4Y-E por síntoma\nSíntoma\nParte a inspeccionar\nPágina para referencia\nNo arranca con manivela\n1.\nRelé del motor de arranque y motor de arranque\n21-218\n2.\nInterruptor de arranque neutro\n-\nNo se puede arrancar\n(no hay combustión de arranque)\n1.\nSistema de alimentación de energía ECU\n21-220\n2.\nSistema del encendedor\n21-105\n3.\nCircuito de la bomba de combustible\n21-222\n4.\nInyector de combustible\nConsulte el manual de reparaciones del motor\nNo se puede arrancar\n(no hay combustión completa)\n1. Circuito de la bomba de combustible\n21-222\n2.\nSistema del encendedor\n21-105\n3.\nInyector de combustible\nConsulte el manual de reparaciones del motor\nNo arranca bien\n1.\nMariposa electrónica\nConsulte el manual de reparaciones del motor\n2.\nCircuito de la bomba de combustible\n21-222\n3.\nSistema del encendedor\n21-105\n4. Bujías de encendido\nConsulte el manual de reparaciones del motor\n5.\nInyector de combustible\nConsulte el manual de reparaciones del motor\n6.\nCompresión\nConsulte el manual de reparaciones del motor\nMarcha lenta rápida y brusca\n1.\nMariposa electrónica\nConsulte el manual de reparaciones del motor\nRégimen mínimo alto\n1.\nMariposa electrónica\nConsulte el manual de reparaciones del motor\n2.\nSistema de alimentación de energía ECU\n21-220\n3.\nInterruptor de arranque neutro\nRégimen mínimo bajo\n1.\nMariposa electrónica\nConsulte el manual de reparaciones del motor\n2. Inyector de combustible\nConsulte el manual de reparaciones del motor\n3.\nSistema del encendedor\n21-105\n4.\nCompresión\nConsulte el manual de reparaciones del motor\n5.\nCircuito de la bomba de combustible\n21-222\nMarcha lenta inestable\n1.\nMariposa electrónica\nConsulte el manual de reparaciones del motor\n2.\nSistema de alimentación de energía ECU\n21-220\n3. Circuito de la bomba de combustible\n21-222\nPenduleo\n1.\nInyector de combustible\nConsulte el manual de reparaciones del motor\n2.\nCircuito de la bomba de combustible\n21-222\n3.\nSistema del encendedor\n21-105\nIndecisión, mala aceleración\n1.\nSistema del encendedor\n21-105\n2.\nBujías de encendido\nConsulte el manual de reparaciones del motor\n3. Inyector de combustible\nConsulte el manual de reparaciones del motor\nDespués del encendido\n1. Circuito de la bomba de combustible\n21-222\n2.\nBujías de encendido\nConsulte el manual de reparaciones del motor\n3.\nInyector de combustible\nConsulte el manual de reparaciones del motor\nCalado del motor (inmediatamente\ndespués del arranque)\n1.\nCircuito de la bomba de combustible\n21-222\nCalado del motor (inmediatamente\ndespués de la desaceleración)\n1. Inyector de combustible\nConsulte el manual de reparaciones del motor\n2.\nOrdenador de control del motor\n-",
+      "tablas": [
+        [
+          [
+            "Síntoma",
+            "Parte a inspeccionar",
+            "Página para referencia"
+          ],
+          [
+            "No arranca con manivela",
+            "1. Relé del motor de arranque y motor de arranque",
+            "21-218"
+          ],
+          [
+            "2. Interruptor de arranque neutro",
+            "-"
+          ],
+          [
+            "No se puede arrancar (no hay combustión de arranque)",
+            "1. Sistema de alimentación de energía ECU",
+            "21-220"
+          ],
+          [
+            "2. Sistema del encendedor",
+            "21-105"
+          ],
+          [
+            "3. Circuito de la bomba de combustible",
+            "21-222"
+          ],
+          [
+            "4. Inyector de combustible",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "No se puede arrancar (no hay combustión completa)",
+            "1. Circuito de la bomba de combustible",
+            "21-222"
+          ],
+          [
+            "2. Sistema del encendedor",
+            "21-105"
+          ],
+          [
+            "3. Inyector de combustible",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "No arranca bien",
+            "1. Mariposa electrónica",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "2. Circuito de la bomba de combustible",
+            "21-222"
+          ],
+          [
+            "3. Sistema del encendedor",
+            "21-105"
+          ],
+          [
+            "4. Bujías de encendido",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "5. Inyector de combustible",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "6. Compresión",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "Marcha lenta rápida y brusca",
+            "1. Mariposa electrónica",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "Régimen mínimo alto",
+            "1. Mariposa electrónica",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "2. Sistema de alimentación de energía ECU",
+            "21-220"
+          ],
+          [
+            "3. Interruptor de arranque neutro",
+            ""
+          ],
+          [
+            "Régimen mínimo bajo",
+            "1. Mariposa electrónica",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "2. Inyector de combustible",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "3. Sistema del encendedor",
+            "21-105"
+          ],
+          [
+            "4. Compresión",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "5. Circuito de la bomba de combustible",
+            "21-222"
+          ],
+          [
+            "Marcha lenta inestable",
+            "1. Mariposa electrónica",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "2. Sistema de alimentación de energía ECU",
+            "21-220"
+          ],
+          [
+            "3. Circuito de la bomba de combustible",
+            "21-222"
+          ],
+          [
+            "Penduleo",
+            "1. Inyector de combustible",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "2. Circuito de la bomba de combustible",
+            "21-222"
+          ],
+          [
+            "3. Sistema del encendedor",
+            "21-105"
+          ],
+          [
+            "Indecisión, mala aceleración",
+            "1. Sistema del encendedor",
+            "21-105"
+          ],
+          [
+            "2. Bujías de encendido",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "3. Inyector de combustible",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "Después del encendido",
+            "1. Circuito de la bomba de combustible",
+            "21-222"
+          ],
+          [
+            "2. Bujías de encendido",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "3. Inyector de combustible",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "Calado del motor (inmediatamente después del arranque)",
+            "1. Circuito de la bomba de combustible",
+            "21-222"
+          ],
+          [
+            "Calado del motor (inmediatamente después de la desaceleración)",
+            "1. Inyector de combustible",
+            "Consulte el manual de reparaciones del motor"
+          ],
+          [
+            "2. Ordenador de control del motor",
+            "-"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "21-218\n· Relé del motor de arranque y motor de arranque\nParte relacionada\nSTA\na circuito relacionado\ncon el contador\n0\n0\nInterruptor de\nencendido\n0\nO\nInterruptor\nneutro\n5\n0\n1\n3\nMotor de\narranque\n0\n2\nRelé de arranque\nG27-24 (STA)\nControlador\ndel motor\n777\nPosible causa\n1 Interruptor neutro defectuoso\n2 Relé del motor de arranque defectuoso\n3 Motor de arranque defectuoso\n4\nMazo de cables, conector defectuoso\nInspección 1:\nInspección de la señal del motor de arranque\nANL .: I/O ENGINE CTRL 1/10\nBIEN\nTIT TIT\nInterruptor neutro defectuoso\nRelé del motor de arranque defectuoso\nMAL\nInspección 2:\nInspección del mazo de cables y el conector\nBIEN\nMotor de arranque defectuoso\nMAL\nMazo de cables, conector defectuoso\nInspección 1:\nRealice una inspección de la señal del motor de arranque.\nInterruptor de la llave de encendido en ON\nSeñal del motor de arranque (motor de E/S: STA)\nEstándar:\nMotor de arranque parado\nMotor de arranque en\nfuncionamiento\nSTA\n0\n1",
+      "tablas": [
+        [
+          [
+            "",
+            "Motor de arranque parado",
+            "Motor de arranque en funcionamiento"
+          ],
+          [
+            "STA",
+            "0",
+            "1"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "21-219\nInspección 2:\nRealice una inspección del mazo de cables.\nInterruptor de la llave de encendido en OFF, extraiga el relé del motor de arranque, arranque con manivela el\nmotor y compruebe la tensión\nEstándar:\nTerminal 1 del relé - bastidor\n9 - 14 V\nTerminal 2 del relé - bastidor\n0 V\nTerminal 3 del relé - bastidor\n0 V\nTerminal 5 del relé - bastidor\n9 - 14 V",
+      "tablas": [
+        [
+          [
+            "Terminal 1 del relé - bastidor",
+            "9 - 14 V"
+          ],
+          [
+            "Terminal 2 del relé - bastidor",
+            "0 V\n:selected:"
+          ],
+          [
+            "Terminal 3 del relé - bastidor",
+            "0 V\n:selected:"
+          ],
+          [
+            "Terminal 5 del relé - bastidor",
+            "9 - 14 V"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "21-220\n· Sistema de alimentación de energía ECU\nParte relacionada\nIGN\nEFI\n5\n0\n3\n1 (+B)\n0\n1\ne\n2\nRelé principal EFI\n...\nG28\nA36\n3 (BATT)\nBATT\n3 (E1)\nControlador\ndel motor\n2 (E01)\n2 (+B1)\n19 (MREL)\n1 (E02)\n777\nTIT TIT\nPosible causa\n1 Fusible fundido\n2 Relé principal EFI defectuoso\n3 Mazo de cables, conector defectuoso\nInspección 1:\nInspección del fusible EFI e IGN\nMAL\n>\nReemplace el fusible\nBIEN\nMAL\nInspección 2:\nInspección de la continuidad y el funcionamiento\ndel relé principal EFI\nBIEN\nInspección 3:\nInspección de la continuidad del mazo de cables\nMAL\nBIEN\nControlador del motor defectuoso\nInspección 1:\nRealice una inspección de la continuidad del fusible.\nExtraiga el fusible EFI y el fusible IGN.\nEstándar: Hay continuidad.\n> Relé principal EFI defectuoso\nMazo de cables, conector defectuoso",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "21-221\nInspección 2:\nInspeccione el relé principal. EFI.\n(1) Inspeccione el funcionamiento del relé principal EFI.\nInterruptor de la llave de encendido en ON, accione el relé principal EFI\nEstándar:\nEl relé principal EFI hace un sonido de funcionamiento en coordinación con el interruptor de la llave de\nencendido.\n(2) Inspeccione la continuidad entre cada uno de los terminales del relé.\nInterruptor de la llave de encendido en OFF, extraiga el relé principal EFI\nEstándar:\nTerminales 1 - 2 del relé\nHay continuidad\nTerminales 3 - 5 del relé\nNo hay continuidad\n(3) Inspeccione si hay continuidad entre los terminales 3 y 5 del relé cuando se aplica la tensión de\nbatería en los terminales 1 a 2.\nEstándar: Hay continuidad.\n1 ×2\n5\n3\nRelé EFI\nInspección 3:\nInspeccione si hay continuidad del mazo de cables.\nInterruptor de la llave de encendido en OFF\nEstándar:\nIGN - Interruptor IG\nHay continuidad\nMREL - Relé principal EFI (N18)\nHay continuidad\nRelé principal EFI (Z23) - bastidor\nHay continuidad\nEFI - +B\nHay continuidad\nEFI - +B1\nHay continuidad\nEFI - BATT\nHay continuidad\nE01 - bastidor\nHay continuidad\nE02 - bastidor\nHay continuidad\nE1 - bastidor\nHay continuidad",
+      "tablas": [
+        [
+          [
+            "Terminales 1 - 2 del relé",
+            "Hay continuidad"
+          ],
+          [
+            "Terminales 3 - 5 del relé",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "IGN - Interruptor IG",
+            "Hay continuidad"
+          ],
+          [
+            "MREL - Relé principal EFI (N18)",
+            "Hay continuidad"
+          ],
+          [
+            "Relé principal EFI (Z23) - bastidor",
+            "Hay continuidad"
+          ],
+          [
+            "EFI - +B",
+            "Hay continuidad"
+          ],
+          [
+            "EFI - +B1",
+            "Hay continuidad"
+          ],
+          [
+            "EFI - BATT",
+            "Hay continuidad"
+          ],
+          [
+            "E01 - bastidor",
+            "Hay continuidad"
+          ],
+          [
+            "E02 - bastidor",
+            "Hay continuidad"
+          ],
+          [
+            "E1 - bastidor",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "21-222\nSistema de control de la bomba de combustible\nParte relacionada\nConmutador de combustible\n6 (GAS)\nT6\n0\n4 (IG) 3\n5\n3 (LPG)\n0\nO\n0\n1\n2\nControlador\ndel motor\n5\nFC\n1\n3\n0\n2\nle\nRelé de\napertura\nde circuito\n77\nPosible causa\n1 Fusible fundido\n2 Relé principal EFI defectuoso\n3 Mazo de cables, conector defectuoso\n4 Bomba de combustible defectuosa\nInspección 1:\nInspección del fusible\nMAL\nReemplace el fusible\nBIEN\nInspección 2:\nInspección de la continuidad y el funcionamiento\ndel relé principal EFI\nMAL\nBIEN\nInspección 3:\nInspección de la continuidad del mazo de cables\nMAL\nBIEN\nV\nBomba de combustible defectuosa\nInspección 1:\nRealice una inspección de la continuidad del fusible.\nExtraiga el fusible EFI y el fusible IGN.\nEstándar: Hay continuidad.\nRelé EFI\nO2\n4\nBomba de\ncombustible\n5\n717\n711\n> Relé principal EFI defectuoso\nMazo de cables, conector defectuoso",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "21-223\nInspección 2:\nInspeccione el relé principal EFI.\n(1) Inspeccione el funcionamiento del relé principal EFI.\nInterruptor de la llave de encendido en ON, inspeccione el funcionamiento del relé principal EFI\nEstándar: El relé principal EFI hace un sonido de funcionamiento en coordinación con el interruptor de\nla llave de encendido\n(2) Inspeccione la continuidad entre cada uno de los terminales del relé\nInterruptor de la llave de encendido en OFF, extraiga el relé principal EFI\nEstándar:\nTerminales 1 - 2 del relé\nHay continuidad\nTerminales 3 - 5 del relé\nNo hay continuidad\n(3) Inspeccione si hay continuidad entre los terminales 3 y 5 del relé cuando se aplica la tensión de\nbatería en los terminales 1 a 2.\nEstándar: Hay continuidad.\n1 ×2\n5\n3\nRelé EFI\nInspección 3:\nInspeccione si hay continuidad del mazo de cables.\nInterruptor de la llave de encendido en OFF\nEstándar:\nRelé principal - conmutador de combustible\nHay continuidad\nConmutador de combustible - GAS\nHay continuidad\nFC - Relé de apertura de circuito\nHay continuidad\nRelé de apertura de circuito - GND\nHay continuidad\nConmutador de combustible - Relé de apertura\ndel circuito\nHay continuidad\nRelé de apertura del circuito - Bomba de\ncombustible\nHay continuidad\nBomba de combustible - GND\nHay continuidad",
+      "tablas": [
+        [
+          [
+            "Terminales 1 - 2 del relé",
+            "Hay continuidad"
+          ],
+          [
+            "Terminales 3 - 5 del relé",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "Relé principal - conmutador de combustible",
+            "Hay continuidad"
+          ],
+          [
+            "Conmutador de combustible - GAS",
+            "Hay continuidad"
+          ],
+          [
+            "FC - Relé de apertura de circuito",
+            "Hay continuidad"
+          ],
+          [
+            "Relé de apertura de circuito - GND",
+            "Hay continuidad"
+          ],
+          [
+            "Conmutador de combustible - Relé de apertura del circuito",
+            "Hay continuidad"
+          ],
+          [
+            "Relé de apertura del circuito - Bomba de combustible",
+            "Hay continuidad"
+          ],
+          [
+            "Bomba de combustible - GND",
+            "Hay continuidad"
+          ]
+        ]
+      ]
+    }
+  ]
+}

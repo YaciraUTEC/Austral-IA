@@ -1,0 +1,1792 @@
+{
+  "archivo": "90005262 - ARRANCADOR ATS480D32Y SCHNEIDER ELECTRIC_p41_80",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Control Terminals Wiring\nFor 2-Wire Sensors\n3 serial PTC\nSingle PTC or PT100\nFor 3-Wire Sensors\nSingle PT100\nATS\nPTC1/AI1\nPTC2\nATS\nPTC1/AI1\nPTC2\nO\nPTC3\nATS\nPTC1/AI1\nPTC2\nNNZ85529.02 - 05/2025\n41",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Checking Installation\nCheck List: Before Switching On\nUnsuitable settings or unsuitable data or unsuitable wiring may trigger unintended\nmovements, trigger signals, damage parts and disable monitoring functions.\nA WARNING\nUNANTICIPATED EQUIPMENT OPERATION\n. Only start the system if there are no persons or obstructions in the zone of\noperation.\n· Verify that a functioning emergency stop push-button is within reach of all\npersons involved in the operation.\n· Do not operate the product with unknown settings or data.\n· Verify that the wiring is appropriate for the settings.\n· Never modify a parameter unless you fully understand the parameter and all\neffects of the modification.\n· When commissioning, carefully run tests for all operating states, operating\nconditions and potential error situations.\n· Anticipate movements in unintended directions or oscillation of the motor.\nFailure to follow these instructions can result in death, serious injury, or\nequipment damage.\nCheck List: Mechanical Installation\nVerify the mechanical installation of the entire soft starter system:\nStep\nAction\n✔\n1\nDoes the installation meet the specified distance\nrequirements?\n2\nDid you tighten all fastening screws according to the specified\ntightening torque?\n42\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Step",
+            "Action",
+            "✔\n:selected:"
+          ],
+          [
+            "1",
+            "Does the installation meet the specified distance requirements?",
+            ":unselected:"
+          ],
+          [
+            "2",
+            "Did you tighten all fastening screws according to the specified tightening torque?",
+            ":unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Check List: Electrical Installation\nVerify the electrical connections and the wiring:\nStep\nAction\n✔\n1\nDid you connect all protective Ground conductors?\n2\nThe correct tightening of the screws may be altered during\nassembly and wiring phases of the soft starter. Verify and\nadjust the tightening of all terminal screws to the specified\nnominal torque.\n3\nDo all fuses and circuit breaker have the correct rating; are the\nfuses of the specified type? Refer to the information provided\nin the catalog.\n4\nDid you connect or insulate all wires at the cable ends?\n5\nDid you properly separate and insulate the control and power\nwiring?\n6\nDid you properly connect and install all cables and\nconnectors?\n7\nDid you properly connect the signal wires?\n8\nAre the required shield connections EMC-compliant?\n9\nDid you take all measures for EMC compliance?\n10\nDid you confirm that CL1/CL2 terminals are only supplied with\n110 ... 230 Vac?\n11\nDid you confirm that the output of the relays R1 R2 and R3 are\nonly connected to a maximum voltage of 250Vac / 30Vdc?\nCheck List: Covers and Seals\nVerify that all devices, doors and covers of cabinet are properly installed to meet\nthe required degree of protection.\nNNZ85529.02 - 05/2025\n43",
+      "tablas": [
+        [
+          [
+            "Step",
+            "Action",
+            "✔\n:selected:"
+          ],
+          [
+            "1",
+            "Did you connect all protective Ground conductors?",
+            ":unselected:"
+          ],
+          [
+            "2",
+            "The correct tightening of the screws may be altered during assembly and wiring phases of the soft starter. Verify and adjust the tightening of all terminal screws to the specified nominal torque.",
+            ":unselected:"
+          ],
+          [
+            "3",
+            "Do all fuses and circuit breaker have the correct rating; are the fuses of the specified type? Refer to the information provided in the catalog.",
+            ":unselected:"
+          ],
+          [
+            "4",
+            "Did you connect or insulate all wires at the cable ends?",
+            ":unselected:"
+          ],
+          [
+            "5",
+            "Did you properly separate and insulate the control and power wiring?",
+            ":unselected:"
+          ],
+          [
+            "6",
+            "Did you properly connect and install all cables and connectors?",
+            ":unselected:"
+          ],
+          [
+            "7",
+            "Did you properly connect the signal wires?",
+            ":unselected:"
+          ],
+          [
+            "8",
+            "Are the required shield connections EMC-compliant?",
+            ":unselected:"
+          ],
+          [
+            "9",
+            "Did you take all measures for EMC compliance?",
+            ":unselected:"
+          ],
+          [
+            "10",
+            "Did you confirm that CL1/CL2 terminals are only supplied with 110 ... 230 Vac?",
+            ":unselected:"
+          ],
+          [
+            "11",
+            "Did you confirm that the output of the relays R1 R2 and R3 are only connected to a maximum voltage of 250Vac / 30Vdc?",
+            ":unselected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "Initial Setup\nThe [LANGUAGE] LNG menu is displayed at the first power-up of the ATS480.\nRefer to the following steps to prepare the ATS480 for the migration procedure.\nStep\nAction\n1\nIn the [LANGUAGE] LNG menu, scroll to the desired device language and press OK to validate or\npress ESC to skip this step and keep the labels in English.\nResult: The device labels are now displayed in the selected language.\n2\n1. In the [Time Zone] TOP menu, set the local UTC offset and press OK to validate or press ESC to\nskip.\n2. In the [Set Date/Time] DTO, set the local date and time and press OK to confirm or press ESC to\nskip.\nResult: The device is now set on the local time and date.\n3\n1. In the [Initial Setup] ROOT menu, select [Go to product] PRDM and press OK.\n2. Choose a cybersecurity policy:\n· To set no credentials to access this device, refer to step 4.\n. To set credentials or load an existing cybersecurity policy, refer to the ATS480 User\nManual, page 13.\n4\n1. Select [Minimum Cybersec] CSE and press OK.\n2. Read the message explaining the functionalities of this profile and press OK to validate and\naccess the main menu or ESC to cancel the selection.\nResult: The cybersecurity policy is set with no credentials and the device is ready to be\ncommissioned. Refer to Configuration Migration, page 45 to migrate an ATS48 configuration to an\nATS480.\nSelecting the profile [Minimum Cybersec] CSE, no credentials will be required to access your process\nor machine. This setting is saved with the configuration and will be active if a configuration is loaded or\ncopied.\nA WARNING\nUNAUTHENTICATED ACCESS AND MACHINE OPERATION\nDo not select the profile [Minimum Cybersec] CSE if your machine or process is accessible to\nunauthorized personnel either directly or via a network.\nFailure to follow these instructions can result in death, serious injury, or equipment damage.\n44\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Step",
+            "Action"
+          ],
+          [
+            "1",
+            "In the [LANGUAGE] LNG menu, scroll to the desired device language and press OK to validate or press ESC to skip this step and keep the labels in English."
+          ],
+          [
+            "Result: The device labels are now displayed in the selected language."
+          ],
+          [
+            "2",
+            "1. In the [Time Zone] TOP menu, set the local UTC offset and press OK to validate or press ESC to skip."
+          ],
+          [
+            "2. In the [Set Date/Time] DTO, set the local date and time and press OK to confirm or press ESC to skip."
+          ],
+          [
+            "Result: The device is now set on the local time and date."
+          ],
+          [
+            "3",
+            "1. In the [Initial Setup] ROOT menu, select [Go to product] PRDM and press OK."
+          ],
+          [
+            "2. Choose a cybersecurity policy:"
+          ],
+          [
+            "· To set no credentials to access this device, refer to step 4."
+          ],
+          [
+            ". To set credentials or load an existing cybersecurity policy, refer to the ATS480 User Manual, page 13."
+          ],
+          [
+            "4",
+            "1. Select [Minimum Cybersec] CSE and press OK."
+          ],
+          [
+            "2. Read the message explaining the functionalities of this profile and press OK to validate and access the main menu or ESC to cancel the selection."
+          ],
+          [
+            "Result: The cybersecurity policy is set with no credentials and the device is ready to be commissioned. Refer to Configuration Migration, page 45 to migrate an ATS48 configuration to an ATS480."
+          ],
+          [
+            "Selecting the profile [Minimum Cybersec] CSE, no credentials will be required to access your process or machine. This setting is saved with the configuration and will be active if a configuration is loaded or copied."
+          ],
+          [
+            "A WARNING"
+          ],
+          [
+            "UNAUTHENTICATED ACCESS AND MACHINE OPERATION"
+          ],
+          [
+            "Do not select the profile [Minimum Cybersec] CSE if your machine or process is accessible to unauthorized personnel either directly or via a network."
+          ],
+          [
+            "Failure to follow these instructions can result in death, serious injury, or equipment damage."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Configuration Migration\nWhat's in This Part\nRequirements\n46\nMigration Procedure\n47\nATS48 Code Equivalence With ATS480 Parameters\n51\nATS48 Parameter Changes\n54\nNNZ85529.02 - 05/2025\n45",
+      "tablas": [
+        [
+          [
+            "Requirements",
+            "46"
+          ],
+          [
+            "Migration Procedure",
+            "47"
+          ],
+          [
+            "ATS48 Code Equivalence With ATS480 Parameters",
+            "51"
+          ],
+          [
+            "ATS48 Parameter Changes",
+            "54"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Requirements\nRequirements\nDescription\nCatalog number and link\nIn the menu [Complete settings] CST -> [Command channel] CCP:\n· Set the parameter [Control Mode] CHCF to [SE8 Profile] SE8 (factory setting)\nThis setting is necessary to migrate the ATS48 configuration to the ATS480.\nSoMove setup software\nIncludes:\nSoMove software can be downloaded from the Schneider\nElectric website:\n· SoMove setup software for\nPC in English, French,\nGerman, Italian, Spanish and\nChinese.\n· SoMove FDT (English, French, German, Spanish,\nItalian, Chinese)\nSchneider\nATS480 DTM\nDTMs (Device Type Managers) can be downloaded from the Schneider\nElectric website:\n· DTM: ATS480 DTM Library EN (English - to be installed first),\nATS480 DTM Lang FR (French), ATS480 DTM Lang SP (Spanish),\nATS480 DTM Lang IT (Italian), ATS480 DTM Lang DE (German),\nATS480 DTM Lang CN (Chinese)\nUSB/RJ45 cable\nTCSMCNAM3M002P\n. Used to connect a PC to the\ndevice.\n· This cable is 2.5 m / 8.20 ft\nlong, has a USB connection\n(PC end) and an RJ45\nconnector (device end).\nConnect the ATS48 to a computer with SoMove installed and power-up the\nATS48.\nO\nO\n1\n4\n5\n3\nO\n2\n1. ATS48\n2. ATS48 Serial Modbus RJ45 port\n3. RJ45/USB communication cable TCSMCNAM3M002P\n4. PC USB port\n5. PC with SoMove installed and the ATS480 DTM\n46\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Description",
+            "Catalog number and link"
+          ],
+          [
+            "In the menu [Complete settings] CST -> [Command channel] CCP: · Set the parameter [Control Mode] CHCF to [SE8 Profile] SE8 (factory setting) This setting is necessary to migrate the ATS48 configuration to the ATS480."
+          ],
+          [
+            "SoMove setup software",
+            "SoMove software can be downloaded from the Schneider Electric website:"
+          ],
+          [
+            "Includes:\n· SoMove setup software for PC in English, French, German, Italian, Spanish and Chinese.",
+            "· SoMove FDT (English, French, German, Spanish, Italian, Chinese) Schneider"
+          ],
+          [
+            "ATS480 DTM",
+            "DTMs (Device Type Managers) can be downloaded from the Schneider Electric website: · DTM: ATS480 DTM Library EN (English - to be installed first), ATS480 DTM Lang FR (French), ATS480 DTM Lang SP (Spanish), ATS480 DTM Lang IT (Italian), ATS480 DTM Lang DE (German), ATS480 DTM Lang CN (Chinese)"
+          ],
+          [
+            "USB/RJ45 cable",
+            "TCSMCNAM3M002P"
+          ],
+          [
+            ". Used to connect a PC to the device. · This cable is 2.5 m / 8.20 ft long, has a USB connection (PC end) and an RJ45 connector (device end).",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Migration Procedure\nMigration Procedure\nStep\nAction\n1\n1. Connect a computer with SoMove and ATS480 DTM to the ATS48 to substitute. Refer to\nRequirements, page 46.\n2. Start the SoMove application.\n3. In the SoMove home page, do one of the following:\n. Click the Device Conversion button\n. Press CTRL + ALT + Q keys, on the menu bar, click File -> Device Conversion\nSoMove\nProject\nCreate a Project OFF-line\nOpen a Project\nConnect\nTransfer (back-up / clone configuration)\nLoad from Device\nStore to Device\nTools\nEdit Connection / Scan\nImport / Export\nDevice Conversion\n?\nHelp\nLanguage\nEnglish\nResult: Opening of the Device Conversion dialog box.\nNOTE: The following table shows the default Modbus format:\nSoft Starter ATS 48\nSoft Starter ATS 480\nDefault Modbus Format\n8n1\n8e1\n2\nIn the Device Conversion dialog box:\n1. Click on\n2. Select the configuration file (.psx) to convert and click Open\n3. Click Continue\nNNZ85529.02 - 05/2025\n47",
+      "tablas": [
+        [
+          [
+            "Step",
+            "Action"
+          ],
+          [
+            "1",
+            "1. Connect a computer with SoMove and ATS480 DTM to the ATS48 to substitute. Refer to Requirements, page 46."
+          ],
+          [
+            "2. Start the SoMove application."
+          ],
+          [
+            "3. In the SoMove home page, do one of the following:"
+          ],
+          [
+            ". Click the Device Conversion button"
+          ],
+          [
+            ". Press CTRL + ALT + Q keys, on the menu bar, click File -> Device Conversion"
+          ],
+          [
+            "SoMove",
+            ""
+          ],
+          [
+            "Project :unselected: Create a Project OFF-line",
+            ""
+          ],
+          [
+            "Open a Project",
+            ""
+          ],
+          [
+            "Connect"
+          ],
+          [
+            "Transfer (back-up / clone configuration)",
+            "",
+            ""
+          ],
+          [
+            "Load from Device"
+          ],
+          [
+            "Store to Device"
+          ],
+          [
+            "Tools Edit Connection / Scan"
+          ],
+          [
+            "Import / Export",
+            ""
+          ],
+          [
+            "Device Conversion",
+            ""
+          ],
+          [
+            "? Help Language",
+            ""
+          ],
+          [
+            "English"
+          ],
+          [
+            "",
+            "Result: Opening of the Device Conversion dialog box. NOTE: The following table shows the default Modbus format:"
+          ],
+          [
+            "",
+            "Soft Starter ATS 48",
+            "Soft Starter ATS 480"
+          ],
+          [
+            "Default Modbus Format",
+            "8n1",
+            "8e1"
+          ],
+          [
+            "2",
+            "In the Device Conversion dialog box:"
+          ],
+          [
+            "1. Click on",
+            ""
+          ],
+          [
+            "",
+            "2. Select the configuration file (.psx) to convert and click Open"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Migration Procedure\nStep\nAction\nDevice Conversion\nX\nThe device conversion allows to convert a .psx file from one device to another device. Below are the currently available\ndevices for conversions:\nInput Type:\nOutput Type:\nAdditional information:\nATV32, ATV312\nATV320\nATV31\nATV312\nATS48\nATS480\nUpload .psx file\n.psx file\n®\nPlease close the application before installing any DTMs\nCancel\nResult: Opening of the Currently available device for conversions dialog box\n3\nIn the Currently available device for conversions dialog box:\n1. Select the target device reference in the Output Device Type list\n2. Click Continue\nA\nContinue\nDevice Conversion\nX\nCurrently available device for conversions.\nInput Device Type:\nC:\\Users\\SESA570047\\Desktop\\ATS48.psx\nOutput Device Type:\nATS480\nATS48\nATS480\nBack\nResult: Opening of the Select reference in output device type dialog box\nSingle Found\nContinue\n48\nNNZ85529.02 - 05/2025",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Migration Procedure\nStep\nAction\n4\nIn the Select reference in output device type dialog box:\n1. Select the output device reference\n2. Select the latest output device firmware version available\n3. Check the output device current rating\n4. Click Convert Now\nDevice Conversion\nX\nSelect reference in output device type.\nInput Device Type:\nOutput Device Type:\nATS48\nATS480\nReference\nATS480D17Y\nFirmware\nV1.0\nMax Current\n17A\nCancel\nConvert Now\nResult: Opening of the list of converted parameters and their value in the ATS480 project\n5\nIn the Successfully psx file conversion dialog box:\n1. Check the input and output devices\n2. Click Open\nDevice Conversion\nX\nSuccessful. Your .psx conversion file is success to ATS480.\nInput Device Type:\nATS48\nATS480.\nOutput Device Type:\nATS480\nSave\nOpen\nResult: Opening of the new ATS480 project with the converted .psx file\nNNZ85529.02 - 05/2025\n49",
+      "tablas": [
+        [
+          [
+            "Step",
+            "Action"
+          ],
+          [
+            "4",
+            "In the Select reference in output device type dialog box: 1. Select the output device reference"
+          ],
+          [
+            "2. Select the latest output device firmware version available 3. Check the output device current rating 4. Click Convert Now"
+          ],
+          [
+            "",
+            ":selected: Device Conversion X\n:selected:"
+          ],
+          [
+            "",
+            "Select reference in output device type."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Migration Procedure\nStep\nAction\n6\nIn the toolbar click Store to Device\nSoMove 2.8 - Untitled Project.psx*\nFile View\nCommunication\nDevice Tools Help\nO\n×\n0\n?\nx\ndevic\nnot connected\n@ No Error\nO No Warning\nMy Device\nMy Dashbe\nParameters List\nDiagnostics\nDisplay\nDebug PMs\nX\nServices\n1Q, Altivar Soft Starter\nDTM Version 1.0.101.0\nATS480\nTopology Characteristics\nQR Code\nP Locate Device\nReference :\nATS480D17Y\n208 .. 690V\nSupply Voltage :\nDevice Name :\nMax Current :\n17A\nModify Topology\nExport Topology\nClick or scan to access device-specific web based product information\nStructure\nCard\nReference\nSerial Number\nFieldbus\nAddress\nVersion\nManual\nP\nDevice\nATS480D17Y\nV1.0\nControl Board\nPower Board\nA None\nX\nPress F1 key for DTM help\n<p> Disconnected\n0 Data Set\nModbus Serial: COM4:248 | Project Loaded\nResult: Opening of the Store to Device dialog box, loads the converted .psx file to the output\ndevice\nStore to Device\nStore to device, Please Wait ...\n50%\n7\nIf the transfer is successful:\nResult: Opening of the Store to device is Successful dialog box\nStore to Device\nX\ni\nStore to device is Successful.\nOK\nIf the transfer is not successful, verify the connection with the output device.\nWhen the transfer is successful, restart the device to take the new Modbus communication values\ninto account.\nThis conclude the configuration transfer from the ATS48 to the ATS480.\nTo modify the migrated configuration, refer to the ATS480 User Manual, page 13.\n50\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Card\n:unselected:",
+            "Reference",
+            "Serial Number",
+            "Fieldbus",
+            "Address",
+            "Version",
+            "Manual"
+          ],
+          [
+            "Device\n:unselected:",
+            "ATS480D17Y",
+            "",
+            "",
+            "",
+            "V1.0",
+            "P"
+          ],
+          [
+            "Control Board\n:unselected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Power Board\n:unselected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "A None",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "ATS48 Code Equivalence With ATS480 Parameters\nATS48 Code Equivalence With ATS480 Parameters\nThis table presents the equivalence between the ATS48 codes and the ATS480\nparameters visible on the display terminal.\nATS48\nATS480\nCode\nHMI\naccess\npath\nHMI access path\nParameter\nSEE\nMain menu\n1 [Simply Start] sys -> [Simply start] SIM\n[Simply Start] SYS\nSEE\n1 [Simply Start] sYs -> [Simply start] SIM\n[Motor Nom Current] IN\nSEE\n[Current Limit] ILT\nuLn\ndr D\n[Mains Voltage] ULN\nACC\nSEE\n[Acceleration] ACC\n190\nSEE\n[Init Starting Torque] TQ0\nSEY\nSEE\n[Type Of Stop] STY\ndEC\nSEE\n[Deceleration] DEC\nEd C\nSEE\n[End Of Deceleration] EDC\nSEE\n[Braking Level] BRC\nE 6A\nSEE\n[DC Braking Time] EBA\nPrO\nMain menu\nMain menu\n[Monitoring] PROT\nEHP\nPrO\n2 [Monitoring] PROT\n[Motor Class] THP\nULL\nPro\n2 [Monitoring] PROT\n>[Process underload] ULD\n[Underload Activation] UDLA\nEuL\nPro\n[Unld Detect Delay] ULT\nLUL\nPrO\n[Unld.Thr.0.Speed] LUL\nULL\nPrO\n[Underload ErrorResp] UDL\nELS\nPrO\n2 [Monitoring] PROT\n[Too Long Start] TLS\nPrO\n2 [Monitoring] PROT\n>[Process overload] OLD\n[Overload Activation] ODLA\nLOL\nPrO\n[Ovld Detection Delay] TOL\nLOC\nPrO\n[Overload Threshold] LOC\nPrO\n[Overload ErrorResp] ODL\nPHr\nPrO\n2 [Monitoring] PROT\n[Phase Inversion Mon] PHR\nPrO\n[Time Before Restart] TBS\nPHL\nPrO\n[Phase Loss Cur Thd] PHL\nFEH\nPrO\n[Mot Th State Reset] RTHR\nPEC\nPrO\n2 [Monitoring] PROT\n>[Thermal monitoring] TPP\n[AI1 Th Monitoring] TH1S\n[Al1 Type] AI1T\n[Al1 Th Error Resp] TH1B\nMain menu\nMain menu\n[Complete settings] CST\nFFC\n3 [Complete settings] CST\n>[Motor parameters] MPA\n[Mains Frequency] FRC\ndLE\ndr C\n[Inside Delta] DLT\nSSE\ndr C\n[Small Motor Test] SST\nNNZ85529.02 - 05/2025\n51",
+      "tablas": [
+        [
+          [
+            "ATS48",
+            "ATS480"
+          ],
+          [
+            "Code",
+            "HMI access path",
+            "HMI access path",
+            "Parameter"
+          ],
+          [
+            "SEE",
+            "Main menu",
+            "1 [Simply Start] sys -> [Simply start] SIM",
+            "[Simply Start] SYS"
+          ],
+          [
+            "",
+            "SEE",
+            "1 [Simply Start] sYs -> [Simply start] SIM",
+            "[Motor Nom Current] IN"
+          ],
+          [
+            "",
+            "SEE",
+            "[Current Limit] ILT"
+          ],
+          [
+            "uLn",
+            "dr D",
+            "[Mains Voltage] ULN"
+          ],
+          [
+            "ACC",
+            "SEE",
+            "[Acceleration] ACC"
+          ],
+          [
+            "190",
+            "SEE",
+            "[Init Starting Torque] TQ0"
+          ],
+          [
+            "SEY",
+            "SEE",
+            "[Type Of Stop] STY"
+          ],
+          [
+            "dEC",
+            "SEE",
+            "[Deceleration] DEC"
+          ],
+          [
+            "Ed C",
+            "SEE",
+            "[End Of Deceleration] EDC"
+          ],
+          [
+            "",
+            "SEE",
+            "[Braking Level] BRC"
+          ],
+          [
+            "E 6A",
+            "SEE",
+            "[DC Braking Time] EBA"
+          ],
+          [
+            "PrO",
+            "Main menu",
+            "Main menu",
+            "[Monitoring] PROT"
+          ],
+          [
+            "EHP",
+            "PrO",
+            "2 [Monitoring] PROT",
+            "[Motor Class] THP"
+          ],
+          [
+            "ULL",
+            "Pro",
+            "2 [Monitoring] PROT >[Process underload] ULD",
+            "[Underload Activation] UDLA"
+          ],
+          [
+            "EuL",
+            "Pro",
+            "[Unld Detect Delay] ULT"
+          ],
+          [
+            "LUL",
+            "PrO",
+            "[Unld.Thr.0.Speed] LUL"
+          ],
+          [
+            "ULL :unselected:",
+            "PrO",
+            "[Underload ErrorResp] UDL"
+          ],
+          [
+            "ELS",
+            "PrO\n:unselected:",
+            "2 [Monitoring] PROT",
+            "[Too Long Start] TLS"
+          ],
+          [
+            "",
+            "PrO\n:unselected:",
+            "2 [Monitoring] PROT >[Process overload] OLD",
+            "[Overload Activation] ODLA"
+          ],
+          [
+            "LOL",
+            "PrO",
+            "[Ovld Detection Delay] TOL"
+          ],
+          [
+            "LOC",
+            "PrO\n:unselected:",
+            "[Overload Threshold] LOC"
+          ],
+          [
+            "",
+            "PrO\n:unselected:",
+            "[Overload ErrorResp] ODL"
+          ],
+          [
+            "PHr",
+            "PrO",
+            "2 [Monitoring] PROT",
+            "[Phase Inversion Mon] PHR"
+          ],
+          [
+            "",
+            "PrO",
+            "[Time Before Restart] TBS"
+          ],
+          [
+            "PHL",
+            "PrO",
+            "[Phase Loss Cur Thd] PHL"
+          ],
+          [
+            "FEH",
+            "PrO",
+            "[Mot Th State Reset] RTHR"
+          ],
+          [
+            "PEC",
+            "PrO",
+            "2 [Monitoring] PROT >[Thermal monitoring] TPP",
+            "[AI1 Th Monitoring] TH1S [Al1 Type] AI1T [Al1 Th Error Resp] TH1B"
+          ],
+          [
+            "",
+            "Main menu",
+            "Main menu",
+            "[Complete settings] CST"
+          ],
+          [
+            "FFC",
+            "",
+            "3 [Complete settings] CST >[Motor parameters] MPA",
+            "[Mains Frequency] FRC"
+          ],
+          [
+            "dLE",
+            "dr C :unselected:",
+            "[Inside Delta] DLT"
+          ],
+          [
+            "SSE",
+            "dr C :selected:",
+            "[Small Motor Test] SST"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "ATS48 Code Equivalence With ATS480 Parameters\nATS48\nATS480\nCode\nHMI\naccess\npath\nHMI access path\nParameter\n6SE\ndr C\n3 [Complete settings] CST\n>[Motor wiring] MWMT\n[Boost] BST\n[Init Starting Voltage] vo\nCLP\ndr C\n[Control Mode] CLP\nIPr\nIO\n3[Complete settings] CST\n>[Preheating] PRF\n[Preheat Level] IPR\nE Pr\nIO\n[Time Before Preheat] TPR\ndr C\n3 [Complete settings] CST\n>[Start & Stop] SSP\n[Deceleration Gain] TIG\nEL ,\ndr C\n[Torque Limit] TLI\nL SC\ndr C\n[Stator Loss Comp] LSC\ndr C\n3 [Complete settings] CST\n[Cascade] csc\n[Cascade Activation] csc\nPrO\n3 [Complete settings] CST\n>[Error/Warning handling] CSWM\n[Auto Fault Reset] ATR\nIO\nMain Menu\nMain Menu\n[Input/Output] IO\nL .3\n4 [Input/Output] IO\n[DI3 High Assignment] L3H\nL , 4\nIO\n[DI4 High Assignment] L4H\nLO1\nIO\n4 [Input/Output] IO\n[DQ1 configuration] DO1\n[DQ1 Assignment] DO1\nLO2\nIO\n4 [Input/Output] IO\n>[DQ2 Configuration] DO2\n[DQ2 Assign] DO2\nAO\nIO\n4 [Input/Output] IO\n>[AQ1 configuration] A01\n[AQ1 assignment] AO1\n04\nIO\n[AQ1 Type] AO1T\n[AQ1 min output] AOL1\n[AQ1 max output] AOH1\nASC\n0\n[AQ1 Scaling] AO1S\n-\n4 [Input/Output] 10 => [R1 configuration] R1\n[R1 Assignment] R1\n7 3\nIO\n4 [Input/Output] 10 =>[R3 configuration] R3\n[R3 Assignment] R3\nSE2\nMain menu\nMain menu\n[2nd Mot Parameters] ST2\n102\nSE2\n5 [2nd Mot Parameters] ST2\n[Nom Current Motor 2] INM2\nIL2\nSE2\n[Current Limit Motor 2] ILM2\nAC2\n5E2\n[Acceleration Motor 2] ACM2\nŁ92\n5E2\n[Init Start Torque Mot 2] TQM2\nd E 2\n5E2\n[Deceleration Motor 2] DEM2\nEd2\nSE2\n[End Of Dec Motor 2] EDM2\nEL 2\nSE2\n[Torque Limit Motor 2] TLM2\nE 12\n5E2\n[Dec Gain Motor 2] TIM2\nCOP\nMain menu\nMain menu\n[Communication] COM\n52\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "ATS48",
+            "ATS480"
+          ],
+          [
+            "Code",
+            "HMI access path",
+            "HMI access path",
+            "Parameter"
+          ],
+          [
+            "6SE",
+            "dr C :unselected:",
+            "3 [Complete settings] CST >[Motor wiring] MWMT",
+            "[Boost] BST [Init Starting Voltage] vo"
+          ],
+          [
+            "CLP",
+            "dr C",
+            "[Control Mode] CLP"
+          ],
+          [
+            "IPr",
+            "IO :unselected:",
+            "3[Complete settings] CST >[Preheating] PRF",
+            "[Preheat Level] IPR"
+          ],
+          [
+            "E Pr",
+            "IO :unselected:",
+            "[Time Before Preheat] TPR"
+          ],
+          [
+            "",
+            "dr C",
+            "3 [Complete settings] CST >[Start & Stop] SSP",
+            "[Deceleration Gain] TIG"
+          ],
+          [
+            "EL ,",
+            "dr C :unselected:",
+            "[Torque Limit] TLI"
+          ],
+          [
+            "L SC",
+            "dr C",
+            "[Stator Loss Comp] LSC"
+          ],
+          [
+            "",
+            "dr C :unselected:",
+            "3 [Complete settings] CST [Cascade] csc",
+            "[Cascade Activation] csc"
+          ],
+          [
+            "",
+            "PrO",
+            "3 [Complete settings] CST >[Error/Warning handling] CSWM",
+            "[Auto Fault Reset] ATR"
+          ],
+          [
+            "IO",
+            "Main Menu",
+            "Main Menu",
+            "[Input/Output] IO"
+          ],
+          [
+            "L .3",
+            ":unselected:",
+            "4 [Input/Output] IO",
+            "[DI3 High Assignment] L3H"
+          ],
+          [
+            "L , 4",
+            "IO :unselected:",
+            "[DI4 High Assignment] L4H"
+          ],
+          [
+            "LO1",
+            "IO :unselected:",
+            "4 [Input/Output] IO [DQ1 configuration] DO1",
+            "[DQ1 Assignment] DO1"
+          ],
+          [
+            "LO2 :unselected:",
+            "IO :unselected:",
+            "4 [Input/Output] IO >[DQ2 Configuration] DO2",
+            "[DQ2 Assign] DO2"
+          ],
+          [
+            "AO :unselected:",
+            "IO :unselected:",
+            "4 [Input/Output] IO >[AQ1 configuration] A01",
+            "[AQ1 assignment] AO1"
+          ],
+          [
+            "04",
+            "IO :unselected:",
+            "[AQ1 Type] AO1T [AQ1 min output] AOL1 [AQ1 max output] AOH1"
+          ],
+          [
+            "ASC",
+            "0 :unselected:",
+            "[AQ1 Scaling] AO1S"
+          ],
+          [
+            "-",
+            ":unselected:",
+            "4 [Input/Output] 10 => [R1 configuration] R1",
+            "[R1 Assignment] R1"
+          ],
+          [
+            "7 3",
+            "IO :unselected:",
+            "4 [Input/Output] 10 =>[R3 configuration] R3",
+            "[R3 Assignment] R3"
+          ],
+          [
+            "SE2",
+            "Main menu",
+            "Main menu",
+            "[2nd Mot Parameters] ST2"
+          ],
+          [
+            "102",
+            "SE2",
+            "5 [2nd Mot Parameters] ST2",
+            "[Nom Current Motor 2] INM2"
+          ],
+          [
+            "IL2",
+            "SE2",
+            "[Current Limit Motor 2] ILM2"
+          ],
+          [
+            "AC2",
+            "5E2",
+            "[Acceleration Motor 2] ACM2"
+          ],
+          [
+            "Ł92",
+            "5E2",
+            "[Init Start Torque Mot 2] TQM2"
+          ],
+          [
+            "d E 2",
+            "5E2",
+            "[Deceleration Motor 2] DEM2"
+          ],
+          [
+            "Ed2",
+            "SE2",
+            "[End Of Dec Motor 2] EDM2"
+          ],
+          [
+            "EL 2",
+            "SE2",
+            "[Torque Limit Motor 2] TLM2"
+          ],
+          [
+            "E 12",
+            "5E2",
+            "[Dec Gain Motor 2] TIM2"
+          ],
+          [
+            "COP",
+            "Main menu",
+            "Main menu",
+            "[Communication] COM"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "ATS48 Code Equivalence With ATS480 Parameters\nATS48\nATS480\nCode\nHMI\naccess\npath\nHMI access path\nParameter\nAdd\nCOP\n6 [Communication] COM\n>[Modbus Fieldbus] MD1\n[Modbus Address] ADD\nEbr\nCOP\n[Modbus Baud Rate] TBR\nFOr\nCOP\n[Modbus Format] TFO\nELP\nCOP\n[Modbus Timeout] TTO\nSuP\nMain menu\nMain menu\n[Display] MON\nSuP\n7 [Display] MON => [Motor parameters] MMO\n[Power Factor] cos\nLCr\nSuP\n[Motor Current] LCR\nL Pr\nSuP\n[Acv Elc Out Pwr in %] EPR\nLEr\nSuP\n[Motor Torque] LTR\nPHE\nSuP\n[Phase Direction] PHE\nE Hr\nSuP\n7 [Display] MON >[Thermal Monitoring] TPM\n[Motor Therm State] THR\nrPr\ndr D\n7 [Display] MON > [Counter Management] ELT\n[Counter Reset] RPR\nrnE\nSuP\n7 [Display] SUP >[Counter Management] ELT\n[Motor Run Time] RTHH\nLAP\nSuP\n7 [Display] MON ->[Energy parameters] ENP\n[Acv Elc Out Pwr in kW] EPRW\nLFE\nSuP\n8 [Diagnostics] DIA -> [Diag. data] DDT\n[Last Error] LFT\nFCS\ndr C\n9 [Device Management] DMT\n>[Factory settings] FCS\n[Factory settings] FCS\nE ER\nSuP\nNot migrated.\nCOd\nNot migrated\nNNZ85529.02 - 05/2025\n53",
+      "tablas": [
+        [
+          [
+            "ATS48",
+            "ATS480"
+          ],
+          [
+            "Code",
+            "HMI access path",
+            "HMI access path",
+            "Parameter"
+          ],
+          [
+            "Add",
+            "COP",
+            "6 [Communication] COM >[Modbus Fieldbus] MD1",
+            "[Modbus Address] ADD"
+          ],
+          [
+            "Ebr",
+            "COP",
+            "[Modbus Baud Rate] TBR"
+          ],
+          [
+            "FOr",
+            "COP",
+            "[Modbus Format] TFO"
+          ],
+          [
+            "ELP",
+            "COP",
+            "[Modbus Timeout] TTO"
+          ],
+          [
+            "SuP",
+            "Main menu",
+            "Main menu",
+            "[Display] MON"
+          ],
+          [
+            "",
+            "SuP",
+            "7 [Display] MON => [Motor parameters] MMO",
+            "[Power Factor] cos"
+          ],
+          [
+            "LCr",
+            "SuP",
+            "[Motor Current] LCR"
+          ],
+          [
+            "L Pr",
+            "SuP",
+            "[Acv Elc Out Pwr in %] EPR"
+          ],
+          [
+            "LEr",
+            "SuP",
+            "[Motor Torque] LTR"
+          ],
+          [
+            "PHE",
+            "SuP",
+            "[Phase Direction] PHE"
+          ],
+          [
+            "E Hr",
+            "SuP",
+            "7 [Display] MON >[Thermal Monitoring] TPM",
+            "[Motor Therm State] THR"
+          ],
+          [
+            "rPr",
+            "dr D",
+            "7 [Display] MON > [Counter Management] ELT",
+            "[Counter Reset] RPR"
+          ],
+          [
+            "rnE",
+            "SuP",
+            "7 [Display] SUP >[Counter Management] ELT",
+            "[Motor Run Time] RTHH"
+          ],
+          [
+            "LAP",
+            "SuP",
+            "7 [Display] MON ->[Energy parameters] ENP",
+            "[Acv Elc Out Pwr in kW] EPRW"
+          ],
+          [
+            "LFE",
+            "SuP",
+            "8 [Diagnostics] DIA -> [Diag. data] DDT",
+            "[Last Error] LFT"
+          ],
+          [
+            "FCS",
+            "dr C",
+            "9 [Device Management] DMT >[Factory settings] FCS",
+            "[Factory settings] FCS"
+          ],
+          [
+            "E ER",
+            "SuP",
+            "Not migrated."
+          ],
+          [
+            "COd",
+            "",
+            "Not migrated",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "ATS48 Parameter Changes\nATS48 Parameter Changes\nCompatible\nThe following parameters has been modified from ATS48 to ATS480.\n. The soft starter behavior is identical between ATS48 and ATS480\n· The following changes do not affect the migration procedure\n. To access to all parameters, set [Access Level] LAC in the [My\npreferences] MYP menu to [Expert] EPR.\n0 4 - Configuration of the type of signal supplied by\noutput AO\nThe 0 4 ATS48 parameter set the type of signal supplied by the control terminal\nAO1:\n· 020: 0 - 20 mA signal\n· 040: 4 - 20 mA signal\nFor ATS480 this functionality is split into the 3 following parameters:\n· [AQ1 Type] A01T for setting the type of signal supplied by the terminal AQ1\n. [AQ1 min output] AOL1 for setting the lower limit of the current output from\nAQ1\n. [AQ1 max output] AOH1 for setting the upper limit of the current output from\nAQ1\nWith ATS48 the scaling of the value measured by AO1 is assured by the\nparameter A S C . This functionality is identical for ATS480 with the parameter\n[AQ1 Scaling] A01S.\nATS48 parameters\nCode\nSetting\nFactory setting\n04\n020 - 420\n020\n· 020: 0 - 20 mA signal\n· 040: 4 - 20 mA signal\nASC\n50 ... 500%\n200\n. Motor current scaling: A S C percentage multiplied by the nominal motor current\n· Motor torque scaling: A S C percentage multiplied by the nominal motor torque\n· Motor thermal state: A 5 [ percentage multiplied by 100%\n. Power factor: A 5 [ between 0 and 1.\n· Motor electrical active power: A 5 [ percentage multiplied by the nominal motor power\n54\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Compatible",
+            "The following parameters has been modified from ATS48 to ATS480. . The soft starter behavior is identical between ATS48 and ATS480"
+          ],
+          [
+            "· The following changes do not affect the migration procedure"
+          ],
+          [
+            ". To access to all parameters, set [Access Level] LAC in the [My preferences] MYP menu to [Expert] EPR."
+          ]
+        ],
+        [
+          [
+            "Code",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "04",
+            "020 - 420",
+            "020"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "ATS48 Parameter Changes\nATS480 parameters\nParameter\nSetting\nFactory setting\n[AQ1 Type] AO1T\n–\n[Current] 0A\nAQ1 Type\nThis parameter set the type of analogue output.\n· [Voltage] 10U: voltage output\n· [Current] OA: current output\nAccess path: [Input/Output] => [AI/AQ] > [AQ1 configuration]\n[AQ1 min output] AOL1\n0.0 ... 20.0 mA\n0.0 mA\nAQ1 min output value\nThis parameter set the minimum current output from AQ1\nThis parameter is visible only if [AQ1 Type] AO1T is set to [Current] 0A.\nAccess path: [Input/Output] => [AI/AQ] > [AQ1 configuration]\n[AQ1 max output] AOH1\n0.0 ... 20.0 mA\n20.0 mA\nAQ1 max output value\nThis parameter set the maximum current output from AQ1\nThis parameter is visible only if [AQ1 Type] AO1T is set to [Current] 0A.\nAccess path: [Input/Output] > [AI/AQ] > [AQ1 configuration]\n[AQ1 Scaling] AO1S\n50 ... 500%\n200\nAnalog output AQ1 scaling\n. Motor current scaling: [AQ1 Scaling] percentage multiplied by the nominal motor current\n· Motor torque scaling: [AQ1 Scaling] percentage multiplied by the nominal motor torque\n· Motor thermal state: [AQ1 Scaling] percentage multiplied by 100%\n. Power factor: [AQ1 Scaling] between 0 and 1.\n· Motor electrical active power: [AQ1 Scaling] percentage multiplied by the nominal motor power\n· Access path: [Input/Output] > [AI/AQ] > [AQ1 configuration]\nNNZ85529.02 - 05/2025\n55",
+      "tablas": [
+        [
+          [
+            "Parameter",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "[AQ1 Type] AO1T",
+            "–",
+            "[Current] 0A"
+          ],
+          [
+            "AQ1 Type This parameter set the type of analogue output. · [Voltage] 10U: voltage output · [Current] OA: current output Access path: [Input/Output] => [AI/AQ] > [AQ1 configuration]"
+          ],
+          [
+            "[AQ1 min output] AOL1",
+            "0.0 ... 20.0 mA",
+            "0.0 mA"
+          ],
+          [
+            "AQ1 min output value This parameter set the minimum current output from AQ1"
+          ],
+          [
+            "This parameter is visible only if [AQ1 Type] AO1T is set to [Current] 0A. Access path: [Input/Output] => [AI/AQ] > [AQ1 configuration]"
+          ],
+          [
+            "[AQ1 max output] AOH1",
+            "0.0 ... 20.0 mA",
+            "20.0 mA"
+          ],
+          [
+            "AQ1 max output value This parameter set the maximum current output from AQ1"
+          ],
+          [
+            "This parameter is visible only if [AQ1 Type] AO1T is set to [Current] 0A."
+          ],
+          [
+            "Access path: [Input/Output] > [AI/AQ] > [AQ1 configuration]"
+          ],
+          [
+            "[AQ1 Scaling] AO1S",
+            "50 ... 500%",
+            "200"
+          ],
+          [
+            "Analog output AQ1 scaling"
+          ],
+          [
+            ". Motor current scaling: [AQ1 Scaling] percentage multiplied by the nominal motor current"
+          ],
+          [
+            "· Motor torque scaling: [AQ1 Scaling] percentage multiplied by the nominal motor torque · Motor thermal state: [AQ1 Scaling] percentage multiplied by 100% . Power factor: [AQ1 Scaling] between 0 and 1."
+          ],
+          [
+            "· Motor electrical active power: [AQ1 Scaling] percentage multiplied by the nominal motor power · Access path: [Input/Output] > [AI/AQ] > [AQ1 configuration]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "ATS48 Parameter Changes\nCLP - Torque control\nATS48 parameter\nThe C L P ATS48 parameter set the torque control to On or OFF.\nThe ATS480 parameter [Control Mode] CLP behave identically, the difference\nbeing the name of the settings:\n. On is changed to [Torque Control] TC\n· OFF is changed to [Voltage Control] vc\nATS48 Code\nSetting\nFactory setting\nCLP\nOn - OFF\nOn\n· On: Torque control active\n· OFF: Torque control inactive\nWhen the torque control is inactive, acceleration and deceleration are controlled by voltage variation.\nATS480 parameter\nParameter\nSetting\nFactory setting\n[Control Mode] CLP\n–\n[Torque Control] TC\nControl mode\n. [Torque Control] TC: enable torque control.\n· [Voltage Control] vc: enable voltage control\nAccess path: [Complete settings] =>[Start & Stop]\n56\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "ATS48 Code",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "CLP",
+            "On - OFF",
+            "On"
+          ]
+        ],
+        [
+          [
+            "Parameter",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "[Control Mode] CLP",
+            "–",
+            "[Torque Control] TC"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "ATS48 Parameter Changes\n6 5 E - Voltage boost level\nWith [Control Mode] CLP set to [Torque Control] TC (factory setting):\n· The ATS480 [Boost] BST parameter is identical to the ATS48 6 5 E\nparameter.\nATS48 and ATS480 parameter\nATS48 Code\nSetting\nFactory setting\n759\n50 ... 100% or OFF\nOFF\nThe ATS48 b 5 E parameter provide a boost of 100 ms at the start to overcome a mechanical hard point. The\nlevel of the starting boost can be set between 50% and 100% of [Mains Voltage] ULN. At the end of boost, the\nstarting ramp follow the start profile set by A C C and E 90.\nThe ATS480 [Boost] BST parameter is identical.\n· OFF: Function inactive\n· 50% ... 100%: setting as a % of nominal motor voltage during boost\nU\n100% ULN\na\nBST x ULN\n50% ULN\n100 ms\nt\n· U: Voltage\n· t: Time\n· a: Voltage generated by the torque control\n· ULN: [Mains Voltage] ULN, mains supply set in [Simply Start] SYS.\nNOTE: Setting the value of this parameter too high can cause overcurrent and trigger error such as\n[Overcurrent] OCF\nWith [Control Mode] CLP set to [Voltage Control] vc:\n. The ATS48 b 5 E parameter can be set between 25% and 100% of [Mains\nVoltage] ULN. This range regroups two different behaviors:\n· Between 25% and 49%, b 5 E set the initial voltage of the starting ramp\n◦\nBetween 50% and 100%, 6 5 E set the level of the starting boost for 100\nms before following the starting ramp\nTo clarify, the b 5 E parameter has been split into the 2 following parameters:\n. [Boost] BST restricted between 50% and 100% which set the level of the\nboost for 100 ms before following the starting ramp\n. [Init Starting Voltage] vo restricted between 25% and 49% which set the\ninitial voltage of the starting ramp\nWhen [Boost] BST is active, [Init Starting Voltage] vo is ignored and not visible.\nNNZ85529.02 - 05/2025\n57",
+      "tablas": [
+        [
+          [
+            "ATS48 Code",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "759",
+            "50 ... 100% or OFF",
+            "OFF"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "ATS48 Parameter Changes\nATS480 parameter - Boost with voltage control\nParameter\nSetting range\nFactory setting\n[Boost] BST\n50 ... 100% of [Mains Voltage] ULN\nor [No] NO\n[No] NO\nWhen [Control Mode] CLP is set to [Voltage Control] vc the starting ramp initialized with [Boost] BST follow\nthis curve:\nU\nb\n100% ULN\nBST x ULN\n50% ULN\nc\n100 ms\nt\n· U: Voltage\n· t: Time\n· b: Voltage ramp initialized to [Boost] BST level\n· c: Voltage ramp in case of current limitation\n· ULN: [Mains Voltage] ULN, mains supply set in [Simply Start] SYS.\nAccess path: [Complete settings] >[Start & Stop]\nATS480 parameters - Initial voltage\nParameter\nSetting range\nFactory setting\n[Init Starting Voltage] vo\n25 ... 49% of [Mains Voltage] ULN\n49%\nSet the initial voltage of the starting ramp.\nUZ\n100% ULN+\nd\n49% ULN-\nVO x ULN-\n25% ULN+\nt\n· U: Voltage\n· t: Time\n· d: Voltage starting ramp\nThis parameter is visible if:\n. [Control Mode] CLP is set to [Voltage Control] vc\n· [Boost] BST is set to [No] NO\nAccess path: [Complete settings] =>[Start & Stop]\n58\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Parameter",
+            "Setting range",
+            "Factory setting"
+          ],
+          [
+            "[Boost] BST",
+            "50 ... 100% of [Mains Voltage] ULN or [No] NO",
+            "[No] NO"
+          ]
+        ],
+        [
+          [
+            "Parameter",
+            "Setting range",
+            "Factory setting"
+          ],
+          [
+            "[Init Starting Voltage] vo",
+            "25 ... 49% of [Mains Voltage] ULN",
+            "49%"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "ATS48 Parameter Changes\no IL - Activation of current overload\nThe o , L ATS48 parameter enables the motor overload monitoring and the soft\nstarter behavior when the measured motor current exceeds the set threshold:\nFor ATS480 the activation of this function is splitted into the 2 following\nparameters:\n. [Overload Activation] ODLA to enable or disable the motor overload\nmonitoring\n. [Overload ErrorResp] ODL to set the soft starter behavior when the\nmeasured motor current exceeds the set threshold. The definition of the\nthreshold and detection time is same as ATS48.\nATS48 parameter\nATS48 Code\nSetting\nFactory setting\n–\nOFF\nIf the motor current exceeds an adjustable threshold L & C for a period of time longer than an adjustable value\ntol:\n· AL A: an alarm is activated (internal bit and configurable logic output)\n. d E F : the soft starter is locked and the o L C fault is triggered\n. o F F : deactivate this functionality\nI\n300 %\n(hysteresis)\nLOC\n-10 %\n50 % + -\n-\n< TOL\nTOL\nt\ndetection\nOIL\n. I: Current\n•\nt: Time\nNNZ85529.02 - 05/2025\n59",
+      "tablas": [
+        [
+          [
+            "ATS48 Code",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "",
+            "–",
+            "OFF"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "ATS48 Parameter Changes\nATS480 parameters\nParameter\nSetting\nFactory setting\n[Overload Activation] ODLA\n–\n[No] NO\nOverload activation\nThis parameter enable overload monitoring. The monitoring is active when the soft starter displays [Running]\nRUN.\nIf the motor current exceeds the threshold set in [Overload Threshold] Loc for a duration longer than the\nvalue set in [Ovld Detection Delay] TOL, the soft starter behave according to the value set in [Overload\nErrorResp] ODL.\n· [Yes] YES: Activate overload monitoring\n· [No] NO: Deactivate overload monitoring\nI\n300 %\n(hysteresis)\nLOC\n-10 %\n50 % -\n· I: Current\n· t: Time\n< TOL\nTOL\n-t\ndetection ODLA\nAccess path: [Monitoring] =>[Process overload]\n[Overload ErrorResp] ODL\n–\n[No] NO\nResponse to overload error\nThis parameter set the soft starter behavior when the motor current exceeds the threshold set in [Overload\nThreshold] Loc for a duration longer than the value set in [Ovld Detection Delay] TOL.\n· [No] NO: trigger a warning (internal bit and configurable digital output)\n. [Yes] YES: trigger the [Process Overload] OLC error\nThis parameter can be accessed if [Overload Activation] ODLA is set to [Yes] YES.\nAccess path: [Monitoring] =>[Process overload]\n60\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Parameter",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "[Overload Activation] ODLA",
+            "–",
+            "[No] NO"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "ATS48 Parameter Changes\nu L L - Activation of motor underload\nThe u L L ATS48 parameter enables the motor underload monitoring and the soft\nstarter behavior when the measured motor torque is lower than the set threshold:\nFor ATS480 the activation of this function is splitted into the 2 following\nparameters:\n. [Underload Activation] UDLA to enable of disable the motor underload\nmonitoring\n. [Underload ErrorResp] UDL to set the soft starter behavior when the\nmeasured torque is below the set threshold. The definition of the threshold\nand detection time is same as ATS48.\nATS48 parameter\nATS48 Code\nSetting\nFactory setting\nULL\n–\nOFF\nIf the motor torque is less than an adjustable threshold L u L for a period of time longer than an adjustable\nvalue E u L :\n· AL A: an alarm is activated (internal bit and configurable logic output)\n. d E F : the soft starter is locked and the u L F fault is triggered\n. o F F : deactivate this functionality\n(Tn) 100 %\nT\n+10 %\n(hysteresis)\nLUL\n< TUL\nTUL\n20 %\ndetection\n· T: Torque\n· t: Time\n-\nULL\nt\nATS480 parameters\nParameter\nSetting\nFactory setting\n[Underload Activation] UDLA\n[Yes] YES or [No] NO\n[No] NO\nUnderload activation\nThis parameter enable underload monitoring.\nIf the motor torque is inferior to the threshold set in [Underload Threshold] LUL for a duration longer than the\nvalue set in [Unld Detect Delay] ULT, the soft starter behave according to the value set in [Underload\nErrorResp] UDL.\nTI\n(Tn) 100 %\n+10 %\n11\nLUL\n< ULT\nULT\n20 %\n1\nt\n· T: Torque\n· t: Time\nNNZ85529.02 - 05/2025\n61",
+      "tablas": [
+        [
+          [
+            "ATS48 Code",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "ULL",
+            "–",
+            "OFF"
+          ]
+        ],
+        [
+          [
+            "Parameter",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "[Underload Activation] UDLA",
+            "[Yes] YES or [No] NO",
+            "[No] NO"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "ATS48 Parameter Changes\nATS480 parameters (Continued)\nAccess path: [Monitoring] =>[Process underload]\n[Underload ErrorResp] UDL\n[Yes] YES or [No] NO\n[OFF] OFF\nResponse to underload error\nThis parameter set the soft starter behavior when the motor torque is inferior to the threshold set in [Underload\nThreshold] LUL for a duration longer than the value set in [Unld Detect Delay] ULT.\n. [Yes] YES: trigger the [Process Underload] ULF error\n· [No] NO: trigger a warning (internal bit and configurable digital output)\nThis parameter can be accessed if [Underload Activation] UDLA is set to [Yes] YES.\nAccess path: [Monitoring] =>[Process underload]\nPEC - Activation of motor monitoring by PTC probes\nThe P & C ATS48 parameter provides motor thermal monitoring with PTC probes\nand set the soft starter behavior when the measured motor temperature trigger the\nwarning o E F :\nATS48 parameter\nATS48 Code\nSetting\nFactory setting\nPEC\n–\nOFF\nThe PTC probes on the motor must be connected to the AI1 input on the soft starter. This monitoring is\nindependent of the calculated thermal protection (tHP parameter). Both types of protection can be used\nsimultaneously.\n· AL A: an alarm is activated (internal bit and configurable logic output)\n. d E F : the soft starter is locked and the o E F error is trigered\n. o F F : deactivate this functionality\nBecause the ATS480 allows the use of PTC and PT100 probes this functionality is\nsplitted into the 5 following parameters:\n. [Al1 Th Monitoring] THIS to enable or disable the thermal probe monitoring\non the terminal AI1\n· [Al1 Type] AI1T to set the type of thermal probe used on Al1\n. [Al1 Th Error Resp] TH1B to set the soft starter behavior when the Al1\nmonitoring triggers an error\n· [Al1 Th Error Level] TH1F\n· [Al1 Th Warn Level] THIA\n62\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "[Underload ErrorResp] UDL",
+            "[Yes] YES or [No] NO",
+            "[OFF] OFF"
+          ],
+          [
+            "Response to underload error"
+          ],
+          [
+            "This parameter set the soft starter behavior when the motor torque is inferior to the threshold set in [Underload Threshold] LUL for a duration longer than the value set in [Unld Detect Delay] ULT. . [Yes] YES: trigger the [Process Underload] ULF error · [No] NO: trigger a warning (internal bit and configurable digital output) This parameter can be accessed if [Underload Activation] UDLA is set to [Yes] YES. Access path: [Monitoring] =>[Process underload]"
+          ]
+        ],
+        [
+          [
+            "ATS48 Code",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "PEC",
+            "–",
+            "OFF"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "ATS48 Parameter Changes\nATS480 parameters\nParameter\nSetting\nFactory setting\n[AI1 Th Monitoring] TH1S\n–\n[No] NO\nActivation of the thermal monitoring on AI1\nThis parameter activates the thermal monitoring with thermal probes on AI1\n. [Not Configured] NO: Thermal monitoring on PTC1/Al1 disabled\n· [Al1] AI1: Thermal monitoring on PTC1/Al1 enabled\nAccess path: [Monitoring] =>[Thermal monitoring]\n[AI1 Type] AI1T\n–\n[PTC] PTC\nConfiguration of AI1\nThis parameter sets the type of probe on Al1.\n· [PTC] PTC: PTC\n· [PT100] 1 PT2: PT100\n· [PT100 in 3 wires] 1PT23: PT100 in 3 wires\nThis parameter is visible only if [AI1 Th Monitoring] TH1S is not set to [Not Configured] NO.\nAccess path: [Monitoring] =>[Thermal monitoring]\n[AI1 Th Error Resp] TH1B\n–\n[Freewheel Stop] YES\nResponse to thermal error for AI1\nThis parameter sets the behavior of the soft starter when an error is triggered by Al1 input.\n. [Ignore] NO: Soft starter ignore the error\n. [Freewheel Stop] YES: Error is triggered and motor stop in freewheel\n. [Configured Stop] STT: Error is triggered and motor stop according to the value set in [Type of stop] STT\nAccess path: [Monitoring] >[Thermal monitoring]\n[AI1 Th Error Level] TH1F\n-15°C/5°F ... 200°C/392°F\n110°C/230°F\nThermal error level for AI1\nThis parameter sets the temperature threshold to trigger the [AI1 Th Level Error] TH1F.\nThis parameter is visible when [AI1 Th Monitoring] TH1S is set to [AI1] AI1.\nAccess path: [Monitoring] => [Thermal monitoring]\n[AI1 Th Warn Level] TH1A\n-15°C/5°F ... 200°C/392°F\n90°C/194°F\nThermal warning level for AI1\nThis parameter sets the temperature threshold to trigger the [Al1 Th Warning] TP1A warning.\nThis parameter is visible when [AI1 Th Monitoring] TH1S is set to [AI1] AI1.\nAccess path: [Monitoring] > [Thermal monitoring]\nAbout [Current Limit] ILT\nNOTE:\nI L E on ATS48 is similar to [Current Limit] ILT on ATS480.\nIn general, using the same setting for ILT do not affect the starting behavior of your\napplication.\nNevertheless, on ATS480, if a difference in the starting behavior has been\ndetected, adjust the [Current Limit] ILT parameter by decreasing its value\n(1 ... 10%).\nNNZ85529.02 - 05/2025\n63",
+      "tablas": [
+        [
+          [
+            "Parameter",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "[AI1 Th Monitoring] TH1S",
+            "–",
+            "[No] NO"
+          ],
+          [
+            "Activation of the thermal monitoring on AI1 This parameter activates the thermal monitoring with thermal probes on AI1 . [Not Configured] NO: Thermal monitoring on PTC1/Al1 disabled · [Al1] AI1: Thermal monitoring on PTC1/Al1 enabled"
+          ],
+          [
+            "Access path: [Monitoring] =>[Thermal monitoring]"
+          ],
+          [
+            "[AI1 Type] AI1T",
+            "–",
+            "[PTC] PTC"
+          ],
+          [
+            "Configuration of AI1 This parameter sets the type of probe on Al1."
+          ],
+          [
+            "· [PTC] PTC: PTC · [PT100] 1 PT2: PT100",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "· [PT100 in 3 wires] 1PT23: PT100 in 3 wires"
+          ],
+          [
+            "This parameter is visible only if [AI1 Th Monitoring] TH1S is not set to [Not Configured] NO. Access path: [Monitoring] =>[Thermal monitoring]"
+          ],
+          [
+            "[AI1 Th Error Resp] TH1B",
+            "–",
+            "[Freewheel Stop] YES"
+          ],
+          [
+            "Response to thermal error for AI1 This parameter sets the behavior of the soft starter when an error is triggered by Al1 input. . [Ignore] NO: Soft starter ignore the error"
+          ],
+          [
+            ". [Freewheel Stop] YES: Error is triggered and motor stop in freewheel . [Configured Stop] STT: Error is triggered and motor stop according to the value set in [Type of stop] STT Access path: [Monitoring] >[Thermal monitoring]"
+          ],
+          [
+            "[AI1 Th Error Level] TH1F",
+            "-15°C/5°F ... 200°C/392°F",
+            "110°C/230°F"
+          ],
+          [
+            "Thermal error level for AI1 This parameter sets the temperature threshold to trigger the [AI1 Th Level Error] TH1F. This parameter is visible when [AI1 Th Monitoring] TH1S is set to [AI1] AI1."
+          ],
+          [
+            "Access path: [Monitoring] => [Thermal monitoring]"
+          ],
+          [
+            "[AI1 Th Warn Level] TH1A",
+            "-15°C/5°F ... 200°C/392°F",
+            "90°C/194°F"
+          ],
+          [
+            "Thermal warning level for AI1 This parameter sets the temperature threshold to trigger the [Al1 Th Warning] TP1A warning. This parameter is visible when [AI1 Th Monitoring] TH1S is set to [AI1] AI1. Access path: [Monitoring] > [Thermal monitoring]"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Modbus Communication\nWhat's in This Part\nATS480 Embedded Modbus Wiring\n65\nModbus Configuration\n66\n64\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "ATS480 Embedded Modbus Wiring",
+            "65"
+          ],
+          [
+            "Modbus Configuration",
+            "66"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "ATS480 Embedded Modbus Wiring\nATS480 Embedded Modbus Wiring\nCompatible\nIt is possible to use the ATS48 communication architecture with the ATS480\n· Use the same PLC, splitter boxes, and T-junction boxes.\nThe ATS48 communication wiring recommendations apply to the ATS480\n. Use the same communication cable VW3A8306 on the embedded Modbus\nport.\nModbus VP12S\n1. Optional communication module\nslot\n2. Modbus RTU VP12S\n1\n2\nThe following optional communication modules offer new communication\nprotocols with the ATS480:\n. Ethernet IP and Modbus TCP: VW3A3720 and VW3A3721\n· Profibus DP: VW3A3607\n· CANopen: VW3A3608, VW3A3618 and VW3A3628\nRefer to the fieldbus manuals in Related Documents, page 13 for further\ninstructions.\nNNZ85529.02 - 05/2025\n65",
+      "tablas": [
+        [
+          [
+            "Compatible",
+            "It is possible to use the ATS48 communication architecture with the ATS480 · Use the same PLC, splitter boxes, and T-junction boxes."
+          ],
+          [
+            "The ATS48 communication wiring recommendations apply to the ATS480"
+          ],
+          [
+            ". Use the same communication cable VW3A8306 on the embedded Modbus port."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Modbus Configuration\nModbus Configuration\nModbus Compatibility\nCompatible\n. The ATS480 embedded Modbus is compatible with the ATS48 embedded\nModbus.\n. The parameter [Control Mode] CHCF must be set to [SE8 Profile] SE8\n(factory setting).\nAdapt to your installation the value set to [Modbus Format] TFO in the\nmenu [Communication] COM > [Modbus Fieldbus] MD1\n. The ATS48 Modbus addresses, ETA words, CMD words and frame format\nare functional with ATS480. No change required.\n. Use the configuration transfer tool, refer to Configuration Migration,\npage 45.\n. For a new configuration refer to the ATS480 User Manual on www.se.\ncom.\n[Control Mode] CHCF\nParameter\nSetting\nFactory setting\n[Control Mode] CHCF\n–\n[SE8 Profile] SE8\nAccess path: [Complete settings] => [Command channel]\nThis parameter is relevant if the soft starter is used with a fieldbus.\n. Set [Control Mode] CHCF to [SE8 Profile] SE8 to substitute the ATS48 fieldbus architecture. This setting\nenables the reuse of the same gateways, parameter mapping, command words and status words as\nATS48.\nAvailable only in Modbus RTU.\n. Set [Control Mode] CHCF to [Standard Profile] STD to use the latest evolutions of the embedded Modbus\nand the fieldbus modules.\nThe [Standard Profile] STD is based on CIA402.\nPlugging or unplugging a fieldbus module does not automatically change the value set in [Control Mode] CHCF\n. Set manually [Control Mode] CHCF to [Standard Profile] STD to use a fieldbus module.\nTo access this parameter you must set [Access Level] LAC in the menu [My preferences] MYP>\n[Parameter access] PAC to [Expert] EPR .\nHMIS status\nDifferent HMIS status between ATS480 and ATS48 in Modbus command\n([Control Mode] CHCF = [SE8 Profile] SE8) and Stop command = 1 and [Mains\nVoltage] ULN are present.\nSoft Starter ATS 48\nSoft Starter ATS 480\nCMD = 0\nHMIS = NST\nHMIS = NST\nCMD = 6\nHMIS = NST\nHMIS = RDY\nCMD = 15\nHMIS = RUN\nHMIS = RUN\n66\nNNZ85529.02 -05/2025",
+      "tablas": [
+        [
+          [
+            "Compatible",
+            ". The ATS480 embedded Modbus is compatible with the ATS48 embedded Modbus."
+          ],
+          [
+            ". The parameter [Control Mode] CHCF must be set to [SE8 Profile] SE8 (factory setting)."
+          ],
+          [
+            "Adapt to your installation the value set to [Modbus Format] TFO in the menu [Communication] COM > [Modbus Fieldbus] MD1"
+          ],
+          [
+            ". The ATS48 Modbus addresses, ETA words, CMD words and frame format are functional with ATS480. No change required."
+          ],
+          [
+            ". Use the configuration transfer tool, refer to Configuration Migration, page 45."
+          ],
+          [
+            ". For a new configuration refer to the ATS480 User Manual on www.se. com."
+          ]
+        ],
+        [
+          [
+            "Parameter",
+            "Setting",
+            "Factory setting"
+          ],
+          [
+            "[Control Mode] CHCF",
+            "–",
+            "[SE8 Profile] SE8"
+          ],
+          [
+            "Access path: [Complete settings] => [Command channel]"
+          ],
+          [
+            "This parameter is relevant if the soft starter is used with a fieldbus. . Set [Control Mode] CHCF to [SE8 Profile] SE8 to substitute the ATS48 fieldbus architecture. This setting enables the reuse of the same gateways, parameter mapping, command words and status words as ATS48. Available only in Modbus RTU."
+          ],
+          [
+            ". Set [Control Mode] CHCF to [Standard Profile] STD to use the latest evolutions of the embedded Modbus and the fieldbus modules. The [Standard Profile] STD is based on CIA402."
+          ],
+          [
+            "Plugging or unplugging a fieldbus module does not automatically change the value set in [Control Mode] CHCF . Set manually [Control Mode] CHCF to [Standard Profile] STD to use a fieldbus module. To access this parameter you must set [Access Level] LAC in the menu [My preferences] MYP> [Parameter access] PAC to [Expert] EPR ."
+          ]
+        ],
+        [
+          [
+            "",
+            "Soft Starter ATS 48",
+            "Soft Starter ATS 480"
+          ],
+          [
+            "CMD = 0",
+            "HMIS = NST",
+            "HMIS = NST"
+          ],
+          [
+            "CMD = 6",
+            "HMIS = NST",
+            "HMIS = RDY"
+          ],
+          [
+            "CMD = 15",
+            "HMIS = RUN",
+            "HMIS = RUN"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Modbus Configuration\nModbus Broadcast\nSoft Starter ATS 48\nSoft Starter ATS 480\nClient Configured at @248 (\nBroadcast)\noff\noff\nClient Configured at @248 (\nBroadcast)\n1\n1\nClient Configured at @1\n1\n1\nDoesn't answer to the client\nAnswer to the client\nNNZ85529.02 - 05/2025\n67",
+      "tablas": [
+        [
+          [
+            "",
+            "Soft Starter ATS 48",
+            "Soft Starter ATS 480"
+          ],
+          [
+            "Client Configured at @248 ( Broadcast)\n:unselected:",
+            "off",
+            "off"
+          ],
+          [
+            "Client Configured at @248 ( Broadcast)\n:unselected:",
+            "1",
+            "1"
+          ],
+          [
+            "Client Configured at @1",
+            "1",
+            "1"
+          ]
+        ],
+        [
+          [
+            "",
+            "Doesn't answer to the client"
+          ],
+          [
+            "",
+            "Answer to the client"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Product HMI\nWhat's in This Part\nDisplay Terminals\n69\nMounting display terminal on the door of the enclosure\n73\nSoft Starter State\n74\nFront Product LEDs\n75\n68\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Display Terminals",
+            "69"
+          ],
+          [
+            "Mounting display terminal on the door of the enclosure",
+            "73"
+          ],
+          [
+            "Soft Starter State",
+            "74"
+          ],
+          [
+            "Front Product LEDs",
+            "75"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Display Terminals\nDisplay Terminals\nPlain Text Display Terminal VW3A1113\nThis Plain Text Display Terminal is a local control unit plugged on the soft starter.\nThe Display Terminal can be removed to be mounted on the door of the wall-\nmounted or floor-standing enclosure, using a dedicated door-mounting kit, refer to\nMounting display terminal on the door of the enclosure, page 73. The Display\nTerminal communicates with the soft starter using Modbus serial link. Both\nembedded Modbus connections (Modbus HMI & Modbus Fieldbus) can be used\nbut only one Display Terminal must be connected at the same time.\n1 .\nESC\n4\nA\n2\n<\nOK\n>\n3\nSTOP\nRESET\nV\nRUN\n-5\n1. ESC: used to quit a menu/parameter, to clear the display of the triggered\nerror or remove the currently displayed value in order to revert to the previous\nvalue retained in the memory\n2. Touch wheel / OK: used to save the current value or access the selected\nmenu/parameter. The touch wheel is used to scroll fast into the menus. Up/\ndown arrows are used for precise selections, right/left arrows are used to\nselect digits when setting a numerical value of a parameter.\n3. STOP / RESET: stop command / apply a Fault Reset (a).\n4. Home: used to access the home page.\n5. RUN: executes the function (a).\n(a) The function RUN of the RUN button and RESET of the STOP / RESET button\nare active only if the active command channel is the Display Terminal.\n. [Control Mode] CHCF is set to [Standard Profile] STD\n· [Command Switching] ccs is set to the channel commanding the display\nterminal\nExample: Control via display terminal is active when [Command Switching] ccs\nis set to [Cmd channel 1] CD1 and [Cmd channel 1] CD1 is set to [HMI] LCC.\nNNZ85529.02 - 05/2025\n69",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "2\n3\n4\n1-ADY\n0.0A\nMain menu\n+4+1 Simply start\n4\n>2 Monitoring\nTerm!\nDisplay Terminals\n5\n6\nKey\n1\nDisplay line.\n2\nSoft starter state, refer to Soft Starter State, page 74\n3\nMonitored parameter user defined.\nCan be configured in [My preferences].\n4\nActive control channel\n· TERM: terminals\n· HMI: plain text display terminal\n. MDB: embedded Modbus serial\n· CAN: CANopen®\n· NET: Fieldbus module\n· PWS: DTM based commissioning software\n5\nMenu line: indicates the name of the current menu or submenu.\n6\nMenus, submenus, parameters, values, bar charts, and so on, are\ndisplayed in drop-down window format on a maximum of 2 lines. The\nline or value selected by the navigation button is displayed in reverse\nvideo.\n70\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Key"
+          ],
+          [
+            "1",
+            "Display line."
+          ],
+          [
+            "2",
+            "Soft starter state, refer to Soft Starter State, page 74"
+          ],
+          [
+            "3",
+            "Monitored parameter user defined."
+          ],
+          [
+            "Can be configured in [My preferences]."
+          ],
+          [
+            "4",
+            "Active control channel"
+          ],
+          [
+            "· TERM: terminals"
+          ],
+          [
+            "· HMI: plain text display terminal"
+          ],
+          [
+            ". MDB: embedded Modbus serial"
+          ],
+          [
+            "· CAN: CANopen®"
+          ],
+          [
+            "· NET: Fieldbus module"
+          ],
+          [
+            "· PWS: DTM based commissioning software"
+          ],
+          [
+            "5",
+            "Menu line: indicates the name of the current menu or submenu."
+          ],
+          [
+            "6",
+            "Menus, submenus, parameters, values, bar charts, and so on, are displayed in drop-down window format on a maximum of 2 lines. The line or value selected by the navigation button is displayed in reverse video."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Display Terminals\nGraphic Display Terminal VW3A1111\nThe Graphic Display Terminal is available as an optional Display Terminal and can\nbe plugged like the Plain Text Display Terminal, using the Modbus HMI serial link\nconnection. This Display Terminal can also be mounted on the door of the wall-\nmounted or floor-standing enclosure, refer to Mounting display terminal on the\ndoor of the enclosure, page 73. Both embedded Modbus connections (Modbus\nHMI & Modbus Fieldbus) can be used but only one Graphic Display Terminal must\nbe connected at the same time.\nSchneider\n&Electric\n5 -\n4\n3\nESC\n6\nLOCAL\nREMOTE\n2\n<\nOK\n>\ni\n7\n1\nSTOP\nRESET\nV\nRUN\n8\n9\n10\n11\n12-\n1. STOP / RESET: stop command / apply a Fault Reset (a).\n2. LOCAL / REMOTE: used to switch between local and remote control of the\nsoft starter. This button is disabled if [HMI L/R cmd] BMP is set to [Disabled]\nDIS, in the menu [My preferences] MYP =>[Customization] cus.\n3. ESC: used to quit a menu/parameter, to clear the display of the triggered\nerror or remove the currently displayed value in order to revert to the previous\nvalue retained in the memory\n4. F1 to F4: function keys used to access soft starter id, QR code, quick view,\nand submenus. Simultaneous press of F1 and F4 keys generates a\nscreenshot file in the Graphic Display Terminal internal memory.\n5. Graphic display.\n6. Home: used to access the home page.\n7. Information: used to have more information about menus, submenus, and\nparameters. The selected parameter or menu code is displayed on the first\nline of the information page.\n8. RUN: executes the function (a).\n9. Touch wheel / OK: used to save the current value or access the selected\nmenu/parameter. The touch wheel is used to scroll fast into the menus. Up/\ndown arrows are used for precise selections, right/left arrows are used to\nselect digits when setting a numerical value of a parameter.\n10. RJ45 Modbus serial port: used to connect the Graphic Display Terminal to\nthe soft starter in remote control.\n11. MiniB USB port: used to connect the Graphic Display Terminal to a\ncomputer.\n12. Battery: The battery have no use for the soft starter and there is no alarm for\ndisplay terminal low battery level.\nNNZ85529.02 -05/2025\n71",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "NLP\n0.0A\nTerm\n-13:53\nMain menu\nDisplay Terminals\n(a) The function RUN of the RUN button and RESET of the STOP / RESET button\nare active only if the active command channel is the Display Terminal.\n. [Control Mode] CHCF is set to [Standard Profile] STD\n. [Command Switching] ccs is set to the channel commanding the display\nterminal\n1 Simply Start\n2 Monitoring\n3 Complete settings\n4 Inputs/Outputs\n5 2nd Mot Parameters\nDevice Id\n1\nNLP\n2\n3\n0.0A\n0.0A\n1\n2\n3\n-4\nKey\n1\nDisplay line.\n2\nMenu line: indicates the name of the current menu or submenu.\n3\nMenus, submenus, parameters, values, bar charts, and so on, are\ndisplayed in drop-down window format on a maximum of five lines. The\nline or value selected by the navigation button is displayed in reverse\nvideo.\n4\nSection displaying tabs (1 to 4 by menu), these tabs can be accessed\nusing F1 to F4 keys\n4\nTerm\n-13:53\n0-6\n5\nKey\n1\nSoft starter state, refer to Soft Starter State, page 74.\n2\nMonitored parameter user defined, can be modified in [My\npreferences].\n3\nMonitored parameter user defined, can be modified in [My\npreferences].\n4\nActive control channel:\n· TERM: terminals\n· HMI: Graphic display terminal\n. MDB: integrated Modbus serial\n· CAN: CANopen®\n. NET: Fieldbus module\n· PWS: DTM based commissioning software\n5\nPresent time.\n6\nBattery level. Level of battery embedded in the soft starter.\nGraphic display terminal connected to a computer\nThe graphic display terminal is recognized as a USB storage device named SE_\nVW3A1111 while plugged into a computer.\nThis allows to access the saved soft starter configurations (DRVCONF folder) and\nthe graphic display terminal screenshots (PRTSCR folder).\nScreenshots can be stored by a simultaneous press on F1 and F4 functions keys.\n72\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Key"
+          ],
+          [
+            "1",
+            "Display line."
+          ],
+          [
+            "2",
+            "Menu line: indicates the name of the current menu or submenu."
+          ],
+          [
+            "3",
+            "Menus, submenus, parameters, values, bar charts, and so on, are displayed in drop-down window format on a maximum of five lines. The line or value selected by the navigation button is displayed in reverse video."
+          ],
+          [
+            "4",
+            "Section displaying tabs (1 to 4 by menu), these tabs can be accessed using F1 to F4 keys"
+          ]
+        ],
+        [
+          [
+            "Key"
+          ],
+          [
+            "1",
+            "Soft starter state, refer to Soft Starter State, page 74."
+          ],
+          [
+            "2",
+            "Monitored parameter user defined, can be modified in [My preferences]."
+          ],
+          [
+            "3",
+            "Monitored parameter user defined, can be modified in [My preferences]."
+          ],
+          [
+            "4",
+            "Active control channel: · TERM: terminals · HMI: Graphic display terminal"
+          ],
+          [
+            ". MDB: integrated Modbus serial"
+          ],
+          [
+            "· CAN: CANopen®"
+          ],
+          [
+            ". NET: Fieldbus module · PWS: DTM based commissioning software"
+          ],
+          [
+            "5",
+            "Present time."
+          ],
+          [
+            "6",
+            "Battery level. Level of battery embedded in the soft starter."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Mounting display terminal on the door of the enclosure\nMounting display terminal on the door of the\nenclosure\nThe ATS480 is delivered with the VW3A1113 Plain Text Display Terminal.\nThe VW3A1111 Graphic Display Terminal is available as an option to replace the\nPlain Text Display Terminal.\nDoor mounting kits are available as options to mount the display terminal on the\ndoor of the enclosure.\nRefer to the following table to choose a display terminal and its door mounting kit.\nDoor Mounting Kit\nprotection degree\nDisplay terminal\nDoor mounting kit\nIP43\nVW3A1113 Plain Text Display Terminal\nVW3A1114 door mounting kit.\nAvailable as option\nDelivered with the soft starter\nSchneider\nESC\nOK\nSchneider\nRefer to the instruction sheet EAV91355.\nIP65\nVW3A1111 Graphic Display Terminal\nAvailable as option\nVW3A1112 door mounting kit.\nAvailable as option\nSchneider\nWSATTEP\nRefer to the instruction sheet EAV76406.\nESC\n0\nOK\nSelect one of the following RJ45 cables to connect the remote\nmounting kit to the soft starter:\n· 1 meter: VW3A1104R10\n· 3 meters: VW3A1104R30\n· 5 meters: VW3A1104R50\n· 10 meters: VW3A1104R100\nNot included with the remote kit\nNNZ85529.02 - 05/2025\n73",
+      "tablas": [
+        [
+          [
+            "Door Mounting Kit protection degree",
+            "Display terminal",
+            "Door mounting kit"
+          ],
+          [
+            "IP43",
+            "VW3A1113 Plain Text Display Terminal",
+            "VW3A1114 door mounting kit. Available as option"
+          ],
+          [
+            "Delivered with the soft starter"
+          ],
+          [
+            "Schneider ESC OK",
+            "Schneider Refer to the instruction sheet EAV91355."
+          ],
+          [
+            "IP65",
+            "VW3A1111 Graphic Display Terminal Available as option",
+            "VW3A1112 door mounting kit. Available as option"
+          ],
+          [
+            "Schneider",
+            "WSATTEP Refer to the instruction sheet EAV76406."
+          ],
+          [
+            "ESC 0 OK\n:unselected: :unselected:"
+          ],
+          [
+            "Select one of the following RJ45 cables to connect the remote mounting kit to the soft starter:",
+            ""
+          ],
+          [
+            "· 1 meter: VW3A1104R10",
+            ""
+          ],
+          [
+            "· 3 meters: VW3A1104R30",
+            ""
+          ],
+          [
+            "· 5 meters: VW3A1104R50"
+          ],
+          [
+            "· 10 meters: VW3A1104R100"
+          ],
+          [
+            "Not included with the remote kit"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "Soft Starter State\nSoft Starter State\nList of possible soft starter states, visible on the Display Terminal.\nState\nCondition\nDisplayed error label\nDetected error. The soft starter is in operating state\nFault.\nMonitoring parameter selected by the user with the\n[Display] SUP menu.\nFactory setting: [Motor Current] LCR\nDisplayed value on the display terminal when the soft\nstarter is running.\n[Ready] RDY\nNo RUN command and mains supplied.\n[No Mains Voltage] NLP\nNo RUN command and mains not supplied.\n[Control Supply Loss] CLA\nThe warning [Control Supply Loss] CLA triggers\nwhen control supply is lost, the soft starter is not\nrunning and [Control Supply Loss] CLB is set to\n[Warning] 2\n[Running] RUN\nSoft starter running.\n[Bypassed] BYP\nBypass active\n[Accelerating] ACC\nSoft starter in acceleration phase.\n[Decelerating] DEC\nSoft starter in deceleration phase.\n[Wait for Restart] TBS\nStarting time delay not elapsed.\n[Operating State \"Fault\"] FLT\nDetected error. The soft starter is in operating state\nFault.\n[Freewheel] NST\nSoft starter forced to freewheel stop by serial link.\n[Braking In Progress] BRL\nSoft starter in braking phase.\n[Cascade Waiting] STB\nWaiting for a command (RUN or STOP) in cascade\nmode.\n[Current Limitation] CLI\nSoft starter in current limitation.\n[Motor Preheating] HEA\nMotor preheating, correspond to one of the following\nstep of the preheating sequence:\n· Preheating order applied but [Time Before\nPreheat] TPR not elapsed, no preheating current\ninjected yet\n· Preheating order applied and [Time Before\nPreheat] TPR elapsed, preheating current is\ninjected\n[Small Motor Test] SST\nSmall motor test in progress\n[Firmware Update] FWUP\nFirmware update mode\n[Demo Mode] DEMO\nDemonstration mode active\nWhen current limitation is active, the displayed value flashes.\nIt is still possible to modify the parameters if the soft starter detects an error.\n74\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "State",
+            "Condition"
+          ],
+          [
+            "Displayed error label",
+            "Detected error. The soft starter is in operating state Fault."
+          ],
+          [
+            "Monitoring parameter selected by the user with the [Display] SUP menu. Factory setting: [Motor Current] LCR",
+            "Displayed value on the display terminal when the soft starter is running."
+          ],
+          [
+            "[Ready] RDY",
+            "No RUN command and mains supplied."
+          ],
+          [
+            "[No Mains Voltage] NLP",
+            "No RUN command and mains not supplied."
+          ],
+          [
+            "[Control Supply Loss] CLA",
+            "The warning [Control Supply Loss] CLA triggers when control supply is lost, the soft starter is not running and [Control Supply Loss] CLB is set to [Warning] 2"
+          ],
+          [
+            "[Running] RUN",
+            "Soft starter running."
+          ],
+          [
+            "[Bypassed] BYP",
+            "Bypass active"
+          ],
+          [
+            "[Accelerating] ACC",
+            "Soft starter in acceleration phase."
+          ],
+          [
+            "[Decelerating] DEC",
+            "Soft starter in deceleration phase."
+          ],
+          [
+            "[Wait for Restart] TBS",
+            "Starting time delay not elapsed."
+          ],
+          [
+            "[Operating State \"Fault\"] FLT",
+            "Detected error. The soft starter is in operating state Fault."
+          ],
+          [
+            "[Freewheel] NST",
+            "Soft starter forced to freewheel stop by serial link."
+          ],
+          [
+            "[Braking In Progress] BRL",
+            "Soft starter in braking phase."
+          ],
+          [
+            "[Cascade Waiting] STB",
+            "Waiting for a command (RUN or STOP) in cascade mode."
+          ],
+          [
+            "[Current Limitation] CLI",
+            "Soft starter in current limitation."
+          ],
+          [
+            "[Motor Preheating] HEA",
+            "Motor preheating, correspond to one of the following step of the preheating sequence: · Preheating order applied but [Time Before Preheat] TPR not elapsed, no preheating current injected yet · Preheating order applied and [Time Before Preheat] TPR elapsed, preheating current is injected"
+          ],
+          [
+            "[Small Motor Test] SST",
+            "Small motor test in progress"
+          ],
+          [
+            "[Firmware Update] FWUP",
+            "Firmware update mode"
+          ],
+          [
+            "[Demo Mode] DEMO",
+            "Demonstration mode active"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "Front Product LEDs\nFront Product LEDs\nAltivar\nSoft Starter\n1\nSTATUS\n2\n!\nCOM\n3\n4\n1\n5\n2\nNET\n6\n3\n7\n4\n8\nItem\nLED\nColor & status\nDescription\n1\nSTATUS\nOFF\nIndicates that the soft starter is not ready to start\nGreen flashing\nIndicates that the soft starter is not running, ready to start\nGreen blinking\nIndicates that the soft starter is in transitory status (acceleration,\ndeceleration, and so on)\nGreen on\nIndicates that the soft starter is running\nYellow on\nIndicates that the soft starter localization is in progress\n2\nWarning/Error\nRed flashing\nIndicates that the soft starter has detected a warning\nRed on\nIndicates that the soft starter has detected an error\n3\nCOM\nYellow flashing\nIndicates embedded Modbus serial activity\n4\nNET 1\nGreen/Yellow\nFor details, refer to the fieldbus manual\n5\nNET 2\nGreen/Red\n6\nNET 3\nGreen/Red\n7\nNET 4\nGreen/Yellow\n8\nReserved\nNNZ85529.02 - 05/2025\n75",
+      "tablas": [
+        [
+          [
+            "Item",
+            "LED",
+            "Color & status",
+            "Description"
+          ],
+          [
+            "1",
+            "STATUS",
+            "OFF",
+            "Indicates that the soft starter is not ready to start"
+          ],
+          [
+            "Green flashing",
+            "Indicates that the soft starter is not running, ready to start"
+          ],
+          [
+            "Green blinking",
+            "Indicates that the soft starter is in transitory status (acceleration, deceleration, and so on)"
+          ],
+          [
+            "Green on",
+            "Indicates that the soft starter is running"
+          ],
+          [
+            "Yellow on",
+            "Indicates that the soft starter localization is in progress"
+          ],
+          [
+            "2",
+            "Warning/Error",
+            "Red flashing",
+            "Indicates that the soft starter has detected a warning"
+          ],
+          [
+            "Red on",
+            "Indicates that the soft starter has detected an error"
+          ],
+          [
+            "3",
+            "COM",
+            "Yellow flashing",
+            "Indicates embedded Modbus serial activity"
+          ],
+          [
+            "4",
+            "NET 1",
+            "Green/Yellow",
+            "For details, refer to the fieldbus manual"
+          ],
+          [
+            "5",
+            "NET 2",
+            "Green/Red"
+          ],
+          [
+            "6",
+            "NET 3",
+            "Green/Red"
+          ],
+          [
+            "7",
+            "NET 4",
+            "Green/Yellow"
+          ],
+          [
+            "8",
+            "Reserved",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Glossary\nA\nAC:\nAlternating Current\nD\nDC:\nDirect Current\nE\nError :\nDiscrepancy between a detected (computed, measured, or signaled) value or\ncondition and the specified or theoretically correct value or condition.\nF\nFactory setting:\nMachine status in factory settings when the product was shipped.\nFault Reset:\nA function used to restore the soft starter to an operational state after a detected\nerror is cleared by removing the cause of the error so that the error is no longer\nactive.\nFault:\nFault is an operating state. If the monitoring functions detect an error, a transition\nto this operating state is triggered, depending on the error class. A \"Fault reset\" is\nrequired to exit this operating state after the cause of the detected error has been\nremoved. Further information can be found in the pertinent standards such as IEC\n61800-7, ODVA Common Industrial Protocol (CIP).\nN\nNC contact:\nNormally Closed contact\nNO contact:\nNormally Open contact\nO\nOEM:\nOriginal Equipment Manufacturer\nOVCII:\nOvervoltage Category II, according IEC 61800-5-1\nP\nPTC:\nPositive Temperature Coefficient. PTC thermistor probes integrated in the motor\nor application to measure its temperature\nNNZ85529.02 - 05/2025\n77",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "W\nWarning:\nIf the term is used outside the context of safety instructions, a warning alerts to a\npotential error that was detected by a monitoring function. A warning does not\ncause a transition of the operating state.\n78\nNNZ85529.02 - 05/2025",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "Schneider Electric\n35 rue Joseph Monier\n92500 Rueil Malmaison\nFrance\n+ 33 (0) 1 41 29 70 00\nwww.se.com\nAs standards, specifications, and design change from time to time, please ask for confirmation\nof the information given in this publication.\n@ 2022 - 2025 Schneider Electric. All rights reserved.\nNNZ85529.02 - 05/2025",
+      "tablas": []
+    }
+  ]
+}

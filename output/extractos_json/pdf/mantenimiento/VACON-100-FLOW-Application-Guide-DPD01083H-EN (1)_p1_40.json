@@ -1,0 +1,3985 @@
+{
+  "archivo": "VACON-100-FLOW-Application-Guide-DPD01083H-EN (1)_p1_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "ENGINEERING\nTOMORROW\nDanfoss\nApplication Guide\nVACON® 100 FLOW\nVACON\n5\nMAIN SWITCH\n.\nSOON\nVACON\nI VACON\ndrives.danfoss.com",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nContents\nContents\n1\nIntroduction\n11\n1.1 Purpose of this Application Guide\n11\n1.2\nManual and Software Version\n11\n1.3\nAdditional Resources\n11\n1.4\nParameter Table Reading Guide\n11\n1.5\nFunctions of the AC Drive\n12\n1.6\nStart-up Quick Guide\n13\n1.6.1\nStart-Up Wizard\n13\n2 User Interfaces\n14\n2.1\nDescription of the Control Panel\n14\n2.1.1 Control Panel and the Keypad\n14\n2.1.2 Displays of the Control Panel\n14\n2.2\nMenu Structure\n15\n2.3\nGraphical Display\n18\n2.3.1\nEditing the Text Values\n18\n2.3.2\nEditing the Numerical Values\n18\n2.3.3\nSelecting More than 1 Value\n19\n2.3.4\nResetting a Fault\n19\n2.3.5\n[FUNCT] Button\n19\n2.3.5.1\nDifferent Control Places\n19\n2.3.5.2\nChanging the Control Place\n20\n2.3.5.3\nGoing into the Control Page\n20\n2.3.5.4\nChanging the Rotation Direction\n21\n2.3.5.5\nUsing the Quick Edit Function\n21\n2.3.6\nCopying the Parameters of an AC Drive\n22\n2.3.7\nComparing the Parameters\n22\n2.3.8\nReading Help Texts\n23\n2.3.9\nUsing the Favourites Menu\n24\n2.4\nText Display\n24\n2.4.1\nEditing the Text Values\n24\n2.4.2\nEditing the Numerical Values\n24\n2.4.3\nResetting a Fault\n19\n2.4.4\n[FUNCT] Button\n25\n2.4.4.1\nDifferent Control Places\n19\n2.4.4.2\nChanging the Control Place\n25\n2.4.4.3\nGoing into the Control Page\n26\nDanfoss A/S @ 2021.05\nAB298035655957en-000101/DPD01083 | 3",
+      "tablas": [
+        [
+          [
+            "Application Guide",
+            "Contents"
+          ],
+          [
+            "Contents",
+            ""
+          ],
+          [
+            "1 Introduction",
+            "11"
+          ],
+          [
+            "1.1",
+            "Purpose of this Application Guide",
+            "11"
+          ],
+          [
+            "1.2",
+            "Manual and Software Version",
+            "11"
+          ],
+          [
+            "1.3",
+            "Additional Resources",
+            "11"
+          ],
+          [
+            "1.4",
+            "Parameter Table Reading Guide",
+            "11"
+          ],
+          [
+            "1.5",
+            "Functions of the AC Drive",
+            "12"
+          ],
+          [
+            "1.6",
+            "Start-up Quick Guide",
+            "13"
+          ],
+          [
+            "",
+            "1.6.1 Start-Up Wizard",
+            "13"
+          ],
+          [
+            "2 User Interfaces",
+            "14"
+          ],
+          [
+            "2.1",
+            "Description of the Control Panel",
+            "14"
+          ],
+          [
+            "",
+            "2.1.1 Control Panel and the Keypad",
+            "14"
+          ],
+          [
+            "",
+            "2.1.2 Displays of the Control Panel",
+            "14"
+          ],
+          [
+            "2.2",
+            "Menu Structure",
+            "15"
+          ],
+          [
+            "2.3",
+            "Graphical Display",
+            "18"
+          ],
+          [
+            "",
+            "2.3.1 Editing the Text Values",
+            "18"
+          ],
+          [
+            "",
+            "2.3.2 Editing the Numerical Values",
+            "18"
+          ],
+          [
+            "",
+            "2.3.3 Selecting More than 1 Value",
+            "19"
+          ],
+          [
+            "",
+            "2.3.4 Resetting a Fault",
+            "19"
+          ],
+          [
+            "",
+            "2.3.5 [FUNCT] Button",
+            "19"
+          ],
+          [
+            "",
+            "2.3.5.1 Different Control Places",
+            "19"
+          ],
+          [
+            "",
+            "2.3.5.2 Changing the Control Place",
+            "20"
+          ],
+          [
+            "",
+            "2.3.5.3 Going into the Control Page",
+            "20"
+          ],
+          [
+            "",
+            "2.3.5.4 Changing the Rotation Direction",
+            "21"
+          ],
+          [
+            "",
+            "2.3.5.5 Using the Quick Edit Function",
+            "21"
+          ],
+          [
+            "",
+            "2.3.6 Copying the Parameters of an AC Drive",
+            "22"
+          ],
+          [
+            "",
+            "2.3.7 Comparing the Parameters",
+            "22"
+          ],
+          [
+            "",
+            "2.3.8 Reading Help Texts",
+            "23"
+          ],
+          [
+            "",
+            "2.3.9 Using the Favourites Menu",
+            "24"
+          ],
+          [
+            "2.4",
+            "Text Display",
+            "24"
+          ],
+          [
+            "",
+            "2.4.1 Editing the Text Values",
+            "24"
+          ],
+          [
+            "",
+            "2.4.2 Editing the Numerical Values",
+            "24"
+          ],
+          [
+            "",
+            "2.4.3 Resetting a Fault",
+            "19"
+          ],
+          [
+            "",
+            "2.4.4 [FUNCT] Button",
+            "25"
+          ],
+          [
+            "",
+            "2.4.4.1 Different Control Places",
+            "19"
+          ],
+          [
+            "",
+            "2.4.4.2 Changing the Control Place",
+            "25"
+          ],
+          [
+            "",
+            "2.4.4.3 Going into the Control Page",
+            "26"
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nContents\n2.4.4.4 Changing the Rotation Direction\n26\n2.4.4.5 Using the Quick Edit Function\n21\n2.5\nVACON® Live PC Tool\n27\n3 Applications\n28\n3.1\nUsing the Applications\n28\n3.2\nStandard and HVAC Applications\n28\n3.3\nPID Control Application\n32\n3.4\nMulti-pump (Single Drive) Application\n36\n3.5\nMulti-pump (Multidrive) Application\n43\n4 Wizards\n67\n4.1\nApplication Wizards\n67\n4.1.1\nStandard Application Wizard\n67\n4.1.2\nHVAC Application Wizard\n67\n4.1.3\nPID Control Application Wizard\n68\n4.1.4\nMulti-pump (Single Drive) Application Wizard\n69\n4.1.5\nMulti-pump (Multidrive) Application Wizard\n70\n4.2\nFunction Wizards\n72\n4.2.1\nWizards in Menu 1.1\n72\n4.2.2\nFire Mode Wizard\n72\n5 Monitor Menu\n73\n5.1\nUses of the Monitor Menu\n73\n5.2\nMultimonitor Monitoring\n73\n5.2.1\nChanging the Items to Monitor\n73\n5.3\nTrend Curve Monitoring\n73\n5.3.1\nUses of the Trend Curve\n73\n5.3.2\nChanging the Values in Trend Curve Monitoring\n73\n5.3.3\nStopping the Progression of the Curve\n74\n5.3.4\nTrend Curve Parameters\n75\n5.4\nBasic Monitoring\n75\n5.4.1\nUses of the Basic Monitoring\n75\n5.4.2\nBasic Monitoring Parameters\n75\n5.5\nI/O Monitoring\n76\n5.6\nTemperature Inputs\n76\n5.7\nExtras and Advanced\n77\n5.8\nTimer Functions Monitoring\n79\n5.9\nPID Controller Monitoring\n79\n4 | Danfoss A/S @ 2021.05\nAB298035655957en-000101/DPD01083",
+      "tablas": [
+        [
+          [
+            "Application Guide",
+            "Contents"
+          ],
+          [
+            "",
+            "2.4.4.4 Changing the Rotation Direction",
+            "26"
+          ],
+          [
+            "",
+            "2.4.4.5 Using the Quick Edit Function",
+            "21"
+          ],
+          [
+            "2.5",
+            "VACON® Live PC Tool",
+            "27"
+          ],
+          [
+            "3 Applications",
+            "28"
+          ],
+          [
+            "3.1",
+            "Using the Applications",
+            "28"
+          ],
+          [
+            "3.2",
+            "Standard and HVAC Applications",
+            "28"
+          ],
+          [
+            "3.3",
+            "PID Control Application",
+            "32"
+          ],
+          [
+            "3.4",
+            "Multi-pump (Single Drive) Application",
+            "36"
+          ],
+          [
+            "3.5",
+            "Multi-pump (Multidrive) Application",
+            "43"
+          ],
+          [
+            "4 Wizards",
+            "67"
+          ],
+          [
+            "4.1",
+            "Application Wizards",
+            "67"
+          ],
+          [
+            "",
+            "4.1.1 Standard Application Wizard",
+            "67"
+          ],
+          [
+            "",
+            "4.1.2 HVAC Application Wizard",
+            "67"
+          ],
+          [
+            "",
+            "4.1.3 PID Control Application Wizard",
+            "68"
+          ],
+          [
+            "",
+            "4.1.4 Multi-pump (Single Drive) Application Wizard",
+            "69"
+          ],
+          [
+            "",
+            "4.1.5 Multi-pump (Multidrive) Application Wizard",
+            "70"
+          ],
+          [
+            "4.2",
+            "Function Wizards",
+            "72"
+          ],
+          [
+            "",
+            "4.2.1 Wizards in Menu 1.1",
+            "72"
+          ],
+          [
+            "",
+            "4.2.2 Fire Mode Wizard",
+            "72"
+          ],
+          [
+            "5 Monitor Menu",
+            "73"
+          ],
+          [
+            "5.1",
+            "Uses of the Monitor Menu",
+            "73"
+          ],
+          [
+            "5.2",
+            "Multimonitor Monitoring",
+            "73"
+          ],
+          [
+            "",
+            "5.2.1 Changing the Items to Monitor",
+            "73"
+          ],
+          [
+            "5.3",
+            "Trend Curve Monitoring",
+            "73"
+          ],
+          [
+            "",
+            "5.3.1 Uses of the Trend Curve",
+            "73"
+          ],
+          [
+            "",
+            "5.3.2 Changing the Values in Trend Curve Monitoring",
+            "73"
+          ],
+          [
+            "",
+            "5.3.3 Stopping the Progression of the Curve",
+            "74"
+          ],
+          [
+            "",
+            "5.3.4 Trend Curve Parameters",
+            "75"
+          ],
+          [
+            "5.4",
+            "Basic Monitoring",
+            "75"
+          ],
+          [
+            "",
+            "5.4.1 Uses of the Basic Monitoring",
+            "75"
+          ],
+          [
+            "",
+            "5.4.2 Basic Monitoring Parameters",
+            "75"
+          ],
+          [
+            "5.5",
+            "I/O Monitoring",
+            "76"
+          ],
+          [
+            "5.6",
+            "Temperature Inputs",
+            "76"
+          ],
+          [
+            "5.7",
+            "Extras and Advanced",
+            "77"
+          ],
+          [
+            "5.8",
+            "Timer Functions Monitoring",
+            "79"
+          ],
+          [
+            "5.9",
+            "PID Controller Monitoring",
+            "79"
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nContents\n5.10 External PID Controller Monitoring\n80\n5.11 Multi-pump Monitoring\n80\n5.12 Monitoring of Maintenance Counters\n81\n5.13 Fieldbus Process Data Monitoring\n81\n5.14 Drive Customizer Monitoring\n82\n5.15 Condition-based Monitoring\n83\n6 Parameters Menu\n85\n6.1 Group 3.1: Motor Settings\n85\n6.2 Group 3.2: Start/Stop Setup\n87\n6.3\nGroup 3.3: References\n88\n6.4\nGroup 3.4: Ramps and Brakes Setup\n91\n6.5\nGroup 3.5: I/O Configuration\n92\n6.6\nGroup 3.6: Fieldbus Data\n99\n6.7\nGroup 3.7: Prohibit Frequencies\n101\n6.8\nGroup 3.8 Supervisions\n101\n6.9\nGroup 3.9: Protections\n102\n6.10 Group 3.10: Automatic Reset\n105\n6.11 Group 3.11: Application Settings\n106\n6.12 Group 3.12: Timer Functions\n107\n6.13 Group 3.13: PID Controller\n109\n6.14 Group 3.14: External PID Controller\n117\n6.15 Group 3.15: Multi-pump\n120\n6.16 Group 3.16: Maintenance Counters\n122\n6.17 Group 3.17: Fire Mode\n123\n6.18 Group 3.18: Motor Preheat Parameters\n124\n6.19 Group 3.19: Drive Customizer\n124\n6.20 Group 3.21: Pump Control\n124\n6.21 Group 3.23: Advanced Harmonic Filter\n127\n6.22 Group 3.24: Condition-based Monitoring\n127\n7 Diagnostics Menu\n132\n7.1\nFaults\n132\n7.1.1\nUses of the Active Faults Submenu\n132\n7.1.2\nReset Faults\n132\n7.1.2.1\nResetting Faults with the [BACK/RESET] Button\n132\n7.1.2.2\nResetting Faults with a Parameter on the Graphical Display\n7.1.2.3\nResetting Faults with a Parameter on the Text Display\n132\n132\n7.1.3\nUses of the Fault History\n133\nDanfoss A/S @ 2021.05\nAB298035655957en-000101/DPD01083 | 5",
+      "tablas": [
+        [
+          [
+            "Application Guide",
+            "Contents"
+          ],
+          [
+            "5.10 External PID Controller Monitoring",
+            "80"
+          ],
+          [
+            "5.11 Multi-pump Monitoring",
+            "80"
+          ],
+          [
+            "5.12 Monitoring of Maintenance Counters",
+            "81"
+          ],
+          [
+            "5.13 Fieldbus Process Data Monitoring",
+            "81"
+          ],
+          [
+            "5.14 Drive Customizer Monitoring",
+            "82"
+          ],
+          [
+            "5.15 Condition-based Monitoring",
+            "83"
+          ],
+          [
+            "6 Parameters Menu",
+            "85"
+          ],
+          [
+            "6.1 Group 3.1: Motor Settings",
+            "85"
+          ],
+          [
+            "6.2 Group 3.2: Start/Stop Setup",
+            "87"
+          ],
+          [
+            "6.3",
+            "Group 3.3: References",
+            "88"
+          ],
+          [
+            "6.4",
+            "Group 3.4: Ramps and Brakes Setup",
+            "91"
+          ],
+          [
+            "6.5",
+            "Group 3.5: I/O Configuration",
+            "92"
+          ],
+          [
+            "6.6",
+            "Group 3.6: Fieldbus Data",
+            "99"
+          ],
+          [
+            "6.7",
+            "Group 3.7: Prohibit Frequencies",
+            "101"
+          ],
+          [
+            "6.8",
+            "Group 3.8 Supervisions",
+            "101"
+          ],
+          [
+            "6.9",
+            "Group 3.9: Protections",
+            "102"
+          ],
+          [
+            "6.10 Group 3.10: Automatic Reset",
+            "105"
+          ],
+          [
+            "6.11 Group 3.11: Application Settings",
+            "106"
+          ],
+          [
+            "6.12 Group 3.12: Timer Functions",
+            "107"
+          ],
+          [
+            "6.13 Group 3.13: PID Controller",
+            "109"
+          ],
+          [
+            "6.14 Group 3.14: External PID Controller",
+            "117"
+          ],
+          [
+            "6.15 Group 3.15: Multi-pump",
+            "120"
+          ],
+          [
+            "6.16 Group 3.16: Maintenance Counters",
+            "122"
+          ],
+          [
+            "6.17 Group 3.17: Fire Mode",
+            "123"
+          ],
+          [
+            "6.18 Group 3.18: Motor Preheat Parameters",
+            "124"
+          ],
+          [
+            "6.19 Group 3.19: Drive Customizer",
+            "124"
+          ],
+          [
+            "6.20 Group 3.21: Pump Control",
+            "124"
+          ],
+          [
+            "6.21 Group 3.23: Advanced Harmonic Filter",
+            "127"
+          ],
+          [
+            "6.22 Group 3.24: Condition-based Monitoring",
+            "127"
+          ],
+          [
+            "7 Diagnostics Menu",
+            "132"
+          ],
+          [
+            "7.1 Faults",
+            "132"
+          ],
+          [
+            "7.1.1 Uses of the Active Faults Submenu",
+            "132"
+          ],
+          [
+            "7.1.2 Reset Faults",
+            "132"
+          ],
+          [
+            "",
+            "7.1.2.1 Resetting Faults with the [BACK/RESET] Button",
+            "132"
+          ],
+          [
+            "7.1.2.2 Resetting Faults with a Parameter on the Graphical Display 7.1.2.3 Resetting Faults with a Parameter on the Text Display",
+            "132"
+          ],
+          [
+            "132"
+          ],
+          [
+            "7.1.3 Uses of the Fault History",
+            "133"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nContents\n7.1.3.1\nExamining the Fault History on the Graphical Display\n133\n7.1.3.2\nExamining the Fault History on the Text Display\n133\n7.2\nCounters\n134\n7.2.1\nUsing the Counters\n134\n7.2.2\nTotal Counters\n134\n7.2.3\nTrip Counters\n135\n7.3\nSoftware Info\n136\n7.4\nDrive Info\n136\n7.5\nUnit Status\n136\n8 I/O and Hardware Menu\n137\n8.1\nBasic I/O\n137\n8.2\nOption Board Slots\n137\n8.3\nReal-time Clock\n138\n8.4\nSimple Network Time Protocol (SNTP)\n138\n8.5\nPower Unit Settings\n139\n8.6\nKeypad\n139\n8.7\nFieldbus\n140\n8.8\nFieldbus General\n142\n8.9\nSTO\n143\n8.10 Fieldbus Redundancy\n143\n9 User Settings, Favourites, and User Level Menus\n144\n9.1\nUser Settings\n144\n9.1.1\nUser Settings Parameters\n144\n9.1.2\nParameter Back-up Parameters\n144\n9.1.3\nParameter Compare Parameters\n145\n9.1.4\nLicense Parameters\n145\n9.2\nFavourites\n145\n9.2.1\nUsing the Favourites Menu\n145\n9.2.2\nAdding an Item to the Favourites\n145\n9.2.3\nRemoving an Item from the Favourites\n145\n9.3\nUser Levels\n146\n9.3.1\nUsing the User Levels Menu\n146\n9.3.2\nThe User Level Parameters\n146\n9.3.3\nChanging the Access Code of the User Levels\n146\n10 Monitoring Value Descriptions\n148\n10.1 Multimonitor\n148\n6 | Danfoss A/S @ 2021.05\nAB298035655957en-000101/DPD01083",
+      "tablas": [
+        [
+          [
+            "Application Guide",
+            "Contents"
+          ],
+          [
+            "",
+            "7.1.3.1 Examining the Fault History on the Graphical Display",
+            "133"
+          ],
+          [
+            "",
+            "7.1.3.2 Examining the Fault History on the Text Display",
+            "133"
+          ],
+          [
+            "7.2",
+            "Counters",
+            "134"
+          ],
+          [
+            "",
+            "7.2.1 Using the Counters",
+            "134"
+          ],
+          [
+            "",
+            "7.2.2 Total Counters",
+            "134"
+          ],
+          [
+            "",
+            "7.2.3 Trip Counters",
+            "135"
+          ],
+          [
+            "7.3",
+            "Software Info",
+            "136"
+          ],
+          [
+            "7.4",
+            "Drive Info",
+            "136"
+          ],
+          [
+            "7.5",
+            "Unit Status",
+            "136"
+          ],
+          [
+            "8 I/O and Hardware Menu",
+            "137"
+          ],
+          [
+            "8.1",
+            "Basic I/O",
+            "137"
+          ],
+          [
+            "8.2",
+            "Option Board Slots",
+            "137"
+          ],
+          [
+            "8.3",
+            "Real-time Clock",
+            "138"
+          ],
+          [
+            "8.4",
+            "Simple Network Time Protocol (SNTP)",
+            "138"
+          ],
+          [
+            "8.5",
+            "Power Unit Settings",
+            "139"
+          ],
+          [
+            "8.6",
+            "Keypad",
+            "139"
+          ],
+          [
+            "8.7",
+            "Fieldbus",
+            "140"
+          ],
+          [
+            "8.8",
+            "Fieldbus General",
+            "142"
+          ],
+          [
+            "8.9",
+            "STO",
+            "143"
+          ],
+          [
+            "8.10",
+            "Fieldbus Redundancy",
+            "143"
+          ],
+          [
+            "9 User Settings, Favourites, and User Level Menus",
+            "144"
+          ],
+          [
+            "9.1",
+            "User Settings",
+            "144"
+          ],
+          [
+            "",
+            "9.1.1 User Settings Parameters",
+            "144"
+          ],
+          [
+            "",
+            "9.1.2 Parameter Back-up Parameters",
+            "144"
+          ],
+          [
+            "",
+            "9.1.3 Parameter Compare Parameters",
+            "145"
+          ],
+          [
+            "",
+            "9.1.4 License Parameters",
+            "145"
+          ],
+          [
+            "9.2",
+            "Favourites",
+            "145"
+          ],
+          [
+            "",
+            "9.2.1 Using the Favourites Menu",
+            "145"
+          ],
+          [
+            "",
+            "9.2.2 Adding an Item to the Favourites",
+            "145"
+          ],
+          [
+            "",
+            "9.2.3 Removing an Item from the Favourites",
+            "145"
+          ],
+          [
+            "9.3",
+            "User Levels",
+            "146"
+          ],
+          [
+            "",
+            "9.3.1 Using the User Levels Menu",
+            "146"
+          ],
+          [
+            "",
+            "9.3.2 The User Level Parameters",
+            "146"
+          ],
+          [
+            "",
+            "9.3.3 Changing the Access Code of the User Levels",
+            "146"
+          ],
+          [
+            "10 Monitoring Value Descriptions",
+            "148"
+          ],
+          [
+            "10.1 Multimonitor",
+            "148"
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nContents\n10.2 Basic\n149\n10.3 I/O\n150\n10.4 Temperature Inputs\n151\n10.5 Extras and Advanced\n152\n10.6 Timer Functions\n153\n10.7 PID Controller\n154\n10.8 External PID Controller\n155\n10.9 Multi-pump\n155\n10.10 Maintenance Counters\n156\n10.11 Fieldbus Data\n156\n10.12 Drive Customizer\n159\n10.13 Condition-based Monitoring\n160\n10.13.1 Baseline Data\n160\n10.13.2 Stator Winding Monitor\n161\n10.13.3 Vibration\n161\n10.13.4 Load\n162\n11 Parameter Descriptions\n163\n11.2 Trend Curve\n163\n11.3 Motor Settings\n164\n11.3.1 Motor Nameplate Parameters\n164\n11.3.2 Motor Control Parameters\n164\n11.3.3 Motor Limits\n168\n11.3.4 Open Loop Parameters\n168\n11.3.5 I/f Start Function\n171\n11.3.6 Torque Stabilator Function\n172\n11.4 Start/Stop Setup\n173\n11.4.1 Start and Stop Commands in Different Control Places\n173\n11.5 References\n181\n11.5.1 Frequency Reference\n181\n11.5.2 Preset Frequencies\n182\n11.5.3 Motor Potentiometer Parameters\n185\n11.5.4 Flushing Parameters\n186\n11.6 Ramps and Brakes Setup\n186\n11.6.1 Ramp 1\n186\n11.6.2 Ramp 2\n187\n11.6.3 Start Magnetizing\n189\n11.6.4 DC Brake\n189\nDanfoss A/S @ 2021.05\nAB298035655957en-000101/DPD01083 | 7",
+      "tablas": [
+        [
+          [
+            "Application Guide",
+            "Contents"
+          ],
+          [
+            "10.2 Basic",
+            "149"
+          ],
+          [
+            "10.3 I/O",
+            "150"
+          ],
+          [
+            "10.4 Temperature Inputs",
+            "151"
+          ],
+          [
+            "10.5 Extras and Advanced",
+            "152"
+          ],
+          [
+            "10.6 Timer Functions",
+            "153"
+          ],
+          [
+            "10.7 PID Controller",
+            "154"
+          ],
+          [
+            "10.8 External PID Controller",
+            "155"
+          ],
+          [
+            "10.9 Multi-pump",
+            "155"
+          ],
+          [
+            "10.10 Maintenance Counters",
+            "156"
+          ],
+          [
+            "10.11 Fieldbus Data",
+            "156"
+          ],
+          [
+            "10.12 Drive Customizer",
+            "159"
+          ],
+          [
+            "10.13 Condition-based Monitoring",
+            "160"
+          ],
+          [
+            "10.13.1 Baseline Data",
+            "160"
+          ],
+          [
+            "10.13.2 Stator Winding Monitor",
+            "161"
+          ],
+          [
+            "10.13.3 Vibration",
+            "161"
+          ],
+          [
+            "10.13.4 Load",
+            "162"
+          ],
+          [
+            "11 Parameter Descriptions",
+            "163"
+          ],
+          [
+            "11.2 Trend Curve",
+            "163"
+          ],
+          [
+            "11.3 Motor Settings",
+            "164"
+          ],
+          [
+            "11.3.1 Motor Nameplate Parameters",
+            "164"
+          ],
+          [
+            "11.3.2 Motor Control Parameters",
+            "164"
+          ],
+          [
+            "11.3.3 Motor Limits",
+            "168"
+          ],
+          [
+            "11.3.4 Open Loop Parameters",
+            "168"
+          ],
+          [
+            "11.3.5 I/f Start Function",
+            "171"
+          ],
+          [
+            "11.3.6 Torque Stabilator Function",
+            "172"
+          ],
+          [
+            "11.4 Start/Stop Setup",
+            "173"
+          ],
+          [
+            "11.4.1 Start and Stop Commands in Different Control Places",
+            "173"
+          ],
+          [
+            "11.5 References",
+            "181"
+          ],
+          [
+            "11.5.1 Frequency Reference",
+            "181"
+          ],
+          [
+            "11.5.2 Preset Frequencies",
+            "182"
+          ],
+          [
+            "11.5.3 Motor Potentiometer Parameters",
+            "185"
+          ],
+          [
+            "11.5.4 Flushing Parameters",
+            "186"
+          ],
+          [
+            "11.6 Ramps and Brakes Setup",
+            "186"
+          ],
+          [
+            "11.6.1 Ramp 1",
+            "186"
+          ],
+          [
+            "11.6.2 Ramp 2",
+            "187"
+          ],
+          [
+            "11.6.3 Start Magnetizing",
+            "189"
+          ],
+          [
+            "11.6.4 DC Brake",
+            "189"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nContents\n11.6.5 Flux Braking\n189\n11.7 I/O Configuration\n190\n11.7.1 Programming of Digital and Analog Inputs\n190\n11.7.1.1 General Information on the Programming\n190\n11.7.1.2 Programming of Digital Inputs\n191\n11.7.1.3 Programming of Digital Inputs in the Graphical Display\n193\n11.7.1.4 Programming of Digital Inputs in the Text Display\n193\n11.7.1.5 Programming of Analog Inputs\n194\n11.7.1.6 Programming of Analog Inputs in the Graphical Display\n195\n11.7.1.7 Programming of Analog Inputs in the Text Display\n196\n11.7.2 Descriptions of Signal Sources\n196\n11.7.3 Default Functions of Programmable Inputs\n197\n11.7.4 Digital Inputs\n197\n11.7.5 Analog Inputs\n202\n11.7.6 Digital Outputs\n206\n11.7.7 Analog Outputs\n209\n11.8 Fieldbus Data\n212\n11.9 Prohibit Frequencies\n214\n11.10 Supervisions\n216\n11.11 Protections\n216\n11.11.1 General\n216\n11.11.2 Motor Thermal Protections\n218\n11.11.3 Motor Stall Protection\n221\n11.11.4 Underload (Dry Pump) Protection\n222\n11.11.5 Quick Stop\n224\n11.11.6 AI Low Protection\n225\n11.12 Automatic Reset\n226\n11.13 Application Settings\n229\n11.14 Timer Functions\n229\n11.14.1 Introduction to Timer Functions\n229\n11.14.2 Time Channels, Intervals, and Timers\n230\n11.14.3 Editing an Interval\n232\n11.15 PID Controller\n233\n11.15.1 Basic Settings\n233\n11.15.2 Setpoints\n235\n11.15.3 Feedback\n236\n11.15.4 Feedforward\n11.15.5 Sleep Function\n236\n237\n8 | Danfoss A/S @ 2021.05\nAB298035655957en-000101/DPD01083",
+      "tablas": [
+        [
+          [
+            "Application Guide",
+            "Contents"
+          ],
+          [
+            "",
+            "11.6.5 Flux Braking",
+            "189"
+          ],
+          [
+            "",
+            "11.7 I/O Configuration",
+            "190"
+          ],
+          [
+            "11.7.1 Programming of Digital and Analog Inputs",
+            "190"
+          ],
+          [
+            "11.7.1.1 General Information on the Programming",
+            "190"
+          ],
+          [
+            "11.7.1.2 Programming of Digital Inputs",
+            "191"
+          ],
+          [
+            "11.7.1.3 Programming of Digital Inputs in the Graphical Display",
+            "193"
+          ],
+          [
+            "11.7.1.4 Programming of Digital Inputs in the Text Display",
+            "193"
+          ],
+          [
+            "",
+            "11.7.1.5 Programming of Analog Inputs",
+            "194"
+          ],
+          [
+            "11.7.1.6 Programming of Analog Inputs in the Graphical Display",
+            "195"
+          ],
+          [
+            "11.7.1.7 Programming of Analog Inputs in the Text Display",
+            "196"
+          ],
+          [
+            "11.7.2 Descriptions of Signal Sources",
+            "196"
+          ],
+          [
+            "11.7.3 Default Functions of Programmable Inputs",
+            "197"
+          ],
+          [
+            "11.7.4 Digital Inputs",
+            "197"
+          ],
+          [
+            "11.7.5 Analog Inputs",
+            "202"
+          ],
+          [
+            "11.7.6 Digital Outputs",
+            "206"
+          ],
+          [
+            "11.7.7 Analog Outputs",
+            "209"
+          ],
+          [
+            "11.8 Fieldbus Data",
+            "212"
+          ],
+          [
+            "11.9 Prohibit Frequencies",
+            "214"
+          ],
+          [
+            "11.10 Supervisions",
+            "216"
+          ],
+          [
+            "11.11 Protections",
+            "216"
+          ],
+          [
+            "11.11.1 General",
+            "216"
+          ],
+          [
+            "11.11.2 Motor Thermal Protections",
+            "218"
+          ],
+          [
+            "11.11.3 Motor Stall Protection",
+            "221"
+          ],
+          [
+            "11.11.4 Underload (Dry Pump) Protection",
+            "222"
+          ],
+          [
+            "11.11.5 Quick Stop",
+            "224"
+          ],
+          [
+            "11.11.6 AI Low Protection",
+            "225"
+          ],
+          [
+            "11.12 Automatic Reset",
+            "226"
+          ],
+          [
+            "11.13 Application Settings",
+            "229"
+          ],
+          [
+            "11.14 Timer Functions",
+            "229"
+          ],
+          [
+            "11.14.1 Introduction to Timer Functions",
+            "229"
+          ],
+          [
+            "11.14.2 Time Channels, Intervals, and Timers",
+            "230"
+          ],
+          [
+            "11.14.3 Editing an Interval",
+            "232"
+          ],
+          [
+            "11.15 PID Controller",
+            "233"
+          ],
+          [
+            "11.15.1 Basic Settings",
+            "233"
+          ],
+          [
+            "11.15.2 Setpoints",
+            "235"
+          ],
+          [
+            "11.15.3 Feedback",
+            "236"
+          ],
+          [
+            "11.15.4 Feedforward 11.15.5 Sleep Function",
+            "236"
+          ],
+          [
+            "237"
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nContents\n11.15.6 Feedback Supervision\n240\n11.15.7 Pressure Loss Compensation\n242\n11.15.8 Soft Fill\n243\n11.15.9 Input Pressure Supervision\n244\n11.15.10leep Function When No Demand Is Detected\n246\n11.15.1 Multi-setpoint\n248\n11.16 External PID Controller\n249\n11.17 Multi-pump Function\n250\n11.17.1 The Multi-pump Function\n250\n11.17.1.1 Commissioning Multi-pump (Multidrive)\n250\n11.17.2 System Configuration\n251\n11.17.3 Interlocks\n256\n11.17.4 Feedback Sensor Connection in a Multi-pump System\n256\n11.17.5 Overpressure Supervision\n263\n11.17.6 Pump Run-time Counters\n264\n11.17.7 Advanced Settings\n265\n11.18 Maintenance Counters\n266\n11.18.1 The Maintenance Counters\n266\n11.19 Fire Mode\n267\n11.19.1 The Fire Mode Function\n267\n11.20 Motor Preheat Function\n270\n11.21 Drive Customizer\n271\n11.22 Pump Control\n271\n11.22.1 Auto-Cleaning\n271\n11.22.2 Jockey Pump\n273\n11.22.3 Priming Pump\n274\n11.22.4 Anti-blocking Function\n275\n11.22.5 Frost Protection\n275\n11.22.6 Flow Switch\n276\n11.23 Advanced Harmonic Filter\n277\n11.24 Condition-based Monitoring\n277\n11.24.1 Introduction to Condition-based Monitoring\n277\n11.24.1.1 Stages of Condition-based Monitoring\n278\n11.24.6 Manual Run\n279\n11.24.7 Stator Winding Monitoring\n280\n11.24.8 Threshold Value\n280\n11.24.9 Warning and Alarm/Fault Stages\n281\n11.25 Default Values of Parameters in the Different Applications\n286\nDanfoss A/S @ 2021.05\nAB298035655957en-000101/DPD01083 | 9",
+      "tablas": [
+        [
+          [
+            "Application Guide",
+            "Contents"
+          ],
+          [
+            "11.15.6 Feedback Supervision",
+            "240"
+          ],
+          [
+            "11.15.7 Pressure Loss Compensation",
+            "242"
+          ],
+          [
+            "11.15.8 Soft Fill",
+            "243"
+          ],
+          [
+            "11.15.9 Input Pressure Supervision",
+            "244"
+          ],
+          [
+            "11.15.10leep Function When No Demand Is Detected",
+            "246"
+          ],
+          [
+            "11.15.1 Multi-setpoint",
+            "248"
+          ],
+          [
+            "11.16 External PID Controller",
+            "249"
+          ],
+          [
+            "11.17 Multi-pump Function",
+            "250"
+          ],
+          [
+            "11.17.1 The Multi-pump Function",
+            "250"
+          ],
+          [
+            "11.17.1.1 Commissioning Multi-pump (Multidrive)",
+            "250"
+          ],
+          [
+            "11.17.2 System Configuration",
+            "251"
+          ],
+          [
+            "11.17.3 Interlocks",
+            "256"
+          ],
+          [
+            "11.17.4 Feedback Sensor Connection in a Multi-pump System",
+            "256"
+          ],
+          [
+            "11.17.5 Overpressure Supervision",
+            "263"
+          ],
+          [
+            "11.17.6 Pump Run-time Counters",
+            "264"
+          ],
+          [
+            "11.17.7 Advanced Settings",
+            "265"
+          ],
+          [
+            "11.18 Maintenance Counters",
+            "266"
+          ],
+          [
+            "11.18.1 The Maintenance Counters",
+            "266"
+          ],
+          [
+            "11.19 Fire Mode",
+            "267"
+          ],
+          [
+            "11.19.1 The Fire Mode Function",
+            "267"
+          ],
+          [
+            "11.20 Motor Preheat Function",
+            "270"
+          ],
+          [
+            "11.21 Drive Customizer",
+            "271"
+          ],
+          [
+            "11.22 Pump Control",
+            "271"
+          ],
+          [
+            "11.22.1 Auto-Cleaning",
+            "271"
+          ],
+          [
+            "11.22.2 Jockey Pump",
+            "273"
+          ],
+          [
+            "11.22.3 Priming Pump",
+            "274"
+          ],
+          [
+            "11.22.4 Anti-blocking Function",
+            "275"
+          ],
+          [
+            "11.22.5 Frost Protection",
+            "275"
+          ],
+          [
+            "11.22.6 Flow Switch",
+            "276"
+          ],
+          [
+            "11.23 Advanced Harmonic Filter",
+            "277"
+          ],
+          [
+            "11.24 Condition-based Monitoring",
+            "277"
+          ],
+          [
+            "11.24.1 Introduction to Condition-based Monitoring",
+            "277"
+          ],
+          [
+            "11.24.1.1 Stages of Condition-based Monitoring",
+            "278"
+          ],
+          [
+            "11.24.6 Manual Run",
+            "279"
+          ],
+          [
+            "11.24.7 Stator Winding Monitoring",
+            "280"
+          ],
+          [
+            "11.24.8 Threshold Value",
+            "280"
+          ],
+          [
+            "11.24.9 Warning and Alarm/Fault Stages",
+            "281"
+          ],
+          [
+            "11.25 Default Values of Parameters in the Different Applications",
+            "286"
+          ],
+          [
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nContents\n12 Fault Tracing\n292\n12.1 Fault Types\n292\n12.2 Alarms and Warnings\n292\n12.3 Fault Codes\n292\n12.4 Total and Trip Counters\n317\n12.4.1 Operating Time Counter\n317\n12.4.2 Operating Time Trip Counter\n318\n12.4.3 Run Time Counter\n318\n12.4.4 Power on Time Counter\n319\n12.4.5 Energy Counter\n319\n12.4.6 Energy Trip Counter\n320\n10 | Danfoss A/S @ 2021.05\nAB298035655957en-000101/DPD01083",
+      "tablas": [
+        [
+          [
+            "Application Guide",
+            "Contents"
+          ],
+          [
+            "12 Fault Tracing",
+            "292"
+          ],
+          [
+            "12.1 Fault Types",
+            "292"
+          ],
+          [
+            "12.2 Alarms and Warnings",
+            "292"
+          ],
+          [
+            "12.3 Fault Codes",
+            "292"
+          ],
+          [
+            "12.4 Total and Trip Counters",
+            "317"
+          ],
+          [
+            "12.4.1 Operating Time Counter",
+            "317"
+          ],
+          [
+            "12.4.2 Operating Time Trip Counter",
+            "318"
+          ],
+          [
+            "12.4.3 Run Time Counter",
+            "318"
+          ],
+          [
+            "12.4.4 Power on Time Counter",
+            "319"
+          ],
+          [
+            "12.4.5 Energy Counter",
+            "319"
+          ],
+          [
+            "12.4.6 Energy Trip Counter",
+            "320"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "VACON® 100 FLOW\nDanfoss\nIntroduction\nApplication Guide\n1 Introduction\n1.1 Purpose of this Application Guide\nThis Application Guide provides information for configuring the system, controlling the AC drive, accessing parameters, program-\nming, and troubleshooting of the AC drive. It is intended for use by qualified personnel. Read and follow the instructions to use the\ndrive safely and professionally. Pay particular attention to the safety instructions and general warnings that are provided in this\nmanual and other documentation delivered with the drive.\n1.2 Manual and Software Version\nThis manual is regularly reviewed and updated. All suggestions for improvement are welcome.\nThe original language of this manual is English.\nTable 1: Manual and Software Version\nEdition\nSoftware version\nDPD01083H\nFW0159V024\n1.3 Additional Resources\nOther resources are available to understand advanced AC drive functions and operation.\n· VACON® 100 Wall-mounted Drives Operating Guide\n· VACON® 100 Enclosed Drives Installation Manual\n· VACON® 100 IP00 Drive Modules Installation Manual\n· VACON® 100 X Installation Manual\n· Instructions for operation with option boards and other optional equipment.\nSupplementary publications and manuals are available from Danfoss.\nFor US and Canadian markets:\nNOTE! Download the English and French product guides with applicable safety, warning and caution information from https://\nwww.danfoss.com/en/service-and-support/.\nREMARQUE Vous pouvez télécharger les versions anglaise et française des guides produit contenant l'ensemble des informations\nde sécurité, avertissements et mises en garde applicables sur le site https://www.danfoss.com/en/service-and-support/.\n1.4 Parameter Table Reading Guide\nThis manual includes a large quantity of parameter tables. These instructions tell you how to read the tables.\nA\nB\nParameter\nC\nD\nE\nF\nG\nH\ne30bg858.10\nIndex\nMin\nMax\nUnit\nDefault\nID\nDescription\nIllustration 1: Parameter Table Reading Guide\nA\nThe location of the parameter in the menu, that is,\nthe parameter number.\nE\nThe unit of the value of the parameter. The unit\nshows if it is available.\nB\nThe name of the parameter.\nF\nThe value that was set in the factory.\nC\nThe minimum value of the parameter.\nG\nThe ID number of the parameter.\nD\nThe maximum value of the parameter.\nH\nA short description of the values of the parameter\nand/or its function.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 11",
+      "tablas": [
+        [
+          [
+            "Edition",
+            "Software version"
+          ],
+          [
+            "DPD01083H",
+            "FW0159V024"
+          ]
+        ],
+        [
+          [
+            "A",
+            "The location of the parameter in the menu, that is, the parameter number.",
+            "E The unit of the value of the parameter. The unit shows if it is available."
+          ],
+          [
+            "B",
+            "The name of the parameter.",
+            "F The value that was set in the factory."
+          ],
+          [
+            "C",
+            "The minimum value of the parameter.",
+            "G The ID number of the parameter."
+          ],
+          [
+            "D",
+            "The maximum value of the parameter.",
+            "H A short description of the values of the parameter and/or its function."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nIntroduction\n1.5 Functions of the AC Drive\n· Easy setup functions\n- Applications with preset parameters and I/O configuration for your process: Standard, HVAC, PID control, Multi-pump\n-\nStart-up wizards for fast and easy parameterization\n· Navigation functions\n- The [FUNCT] button for an easy change between the local and the remote control place (I/O or fieldbus)\n- A control page to operate and monitor of the most important values quickly\n· Advanced monitoring functions\n-\nMultimonitor\n-\nTrend curve\n· Fieldbus and I/O control\n· Motor control\n- Open loop control with frequency reference\n- Support for induction, permanent magnet, and synchronous reluctance motors\n- Identification run for setup of motor parameters\n- Flux and DC brake\n· Start and stop logic configuration\n•\nReference selection and handling\n- 8 preset frequencies\n- Motor potentiometer functions\n- A flush function\n- 2 programmable ramp times\n-\n2 supervisions\n•\nPID control\n- 3 ranges of prohibited frequencies\n- A forced stop\n- An external PID controller is available. Use it, for example, to control a valve with the I/O of the AC drive.\n- A sleep mode function that automatically enables and disables the operation of the drive to save energy\n- A 2-zone PID controller with 2 different feedback signals: minimum and maximum control\n-\n2 setpoint sources for the PID control. Selection to be made with a digital input.\n- A function for PID setpoint boost\n-\nA feedforward function to make the response to the process changes better\n· Pump control\n- A multi-pump control for the single drive and multidrive systems\n- The multimaster and multifollower modes in the multidrive system\n- A multi-pump system that uses a real time clock to autochange the pumps\n- Priming pump control, jockey pump control, pump impeller auto-cleaning, pump input pressure supervision, and frost pro-\ntection function\n· Mechanical brake control\n· Timer functions and a real-time clock and (an optional battery is necessary)\n· Fire mode\n· Diagnostic and maintenance functions\n- Variety of configurable protection functions including user-defined faults\n- Supervision functions for frequency and motor variables and analog inputs\n- Motor overload protections\n12 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nIntroduction\n- An automatic reset\n- Different preheat modes to prevent condensation problems\n- Maintenance counters\n· Drive Customizer for custom logic programming\n· Control, parametrization, and diagnostics via PC-tools\n1.6 Start-up Quick Guide\nThere are 5 applications available for the product. When an application is selected, a group of parameters get their preset values.\nThe selection of the application makes the commissioning of the drive easy and reduces the manual work with the parameters. It is\nalso possible to edit these parameters later.\nACCIDENTAL START BECAUSE OF CHANGE OF SETTINGS\nWARNING À\nRunning the Startup wizard, changing the application or the software can cause the I/O functions to change.\n-\nDisconnect the motor from the drive if an accidental start can be dangerous.\nThe available applications:\n· Standard application (3.2 Standard and HVAC Applications)\n· HVAC application (3.2 Standard and HVAC Applications)\n· PID control application (3.3 PID Control Application)\n· Multi-pump (single drive) application (3.4 Multi-pump (Single Drive) Application)\n· Multi-pump (double drive) application (3.5 Multi-pump (Multidrive) Application)\nWizards make it more convenient to use the AC drive. There is a start-up wizard (see 1.6.1 Start-Up Wizard), 5 applications wizards\n(see 4.1 Application Wizards), and 1 function wizard (see 4.2.2 Fire Mode Wizard).\n1.6.1 Start-Up Wizard\nThe Start-up wizard asks for necessary data for the drive to control the procedure.\nProcedure\n1. Select language (P6.1).\nIf a battery is installed, the steps 2-5 are shown.\n2. Set daylight saving time (P5.5.5). (Russia, US, EU, or OFF)\n3.\nSet time (P5.5.2).\n4.\nSet year (P5.5.4).\n5.\nSet date (P5.5.3).\n6.\nRun Startup wizard?\nIf the selection is No, the Start-up wizard ends.\n7. Select an application (P1.2 Application, ID 212).\n8.\nRun the Application wizard?\na. To continue to the application wizard, set the selection to Yes and push the [OK] button. See the description of the\ndifferent application wizards in chapter 4.1 Application Wizards.\nAfter these selections, the Start-up wizard is completed. To start the Start-up wizard again, there are 2 alternatives.\nGo to the parameter P6.5.1 Restore Factory Defaults or to the parameter B1.1.1 Start-up Wizard. Then set the value\nto Activate.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "VACON® 100 FLOW\nDanfoss\nUser Interfaces\nApplication Guide\n2 User Interfaces\n2.1 Description of the Control Panel\n2.1.1 Control Panel and the Keypad\nThe control panel is the interface between the AC drive and the user. With the control panel, it is possible to control the speed of a\nmotor and monitor the status of the AC drive. It is also possible to set the parameters of the AC drive.\nA\nBACK\nRESET\nB\nC\ne30bu012\nI\nFUNCT\nH\nOK\nD\n0\nG\nF\nE\nIllustration 2: Buttons of the VACON® 100 Keypad\nA\nThe [BACK/RESET] button. Use it to move back in the\nmenu, exit the Edit mode, reset a fault.\nF\nThe arrow button DOWN. Use it to scroll the menu\ndown and to decrease a value.\nB\nThe arrow button UP. Use it to scroll up the menu\nand to increase a value.\nG\nThe STOP button.\nH\nThe arrow button LEFT. Use it to move the cursor\nC\nThe [FUNCT] button. Use it to change the rotation\ndirection of the motor, access the control page, and\nchange the control place.\nleft.\nI\nThe [OK] button. Use it to go into an active level or\nitem, or to accept a selection.\nD\nThe arrow button RIGHT.\nE\nThe START button.\n2.1.2 Displays of the Control Panel\nThere are 2 display types: the graphical display and the text display. The control panel always has the same keypad and buttons.\nThe display shows this data.\n. The status of the motor and the drive.\n· Faults in the motor and in the drive.\n· Your location in the menu structure.\nIf the text in the text display is too long for the display, the text scrolls to show the full text string. Some functions are only available\nin the graphical display.\n14 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "A",
+            "The [BACK/RESET] button. Use it to move back in the menu, exit the Edit mode, reset a fault.",
+            "F",
+            "The arrow button DOWN. Use it to scroll the menu down and to decrease a value."
+          ],
+          [
+            "B",
+            "The arrow button UP. Use it to scroll up the menu and to increase a value.",
+            "G The STOP button. H The arrow button LEFT. Use it to move the cursor"
+          ],
+          [
+            "C",
+            "The [FUNCT] button. Use it to change the rotation direction of the motor, access the control page, and change the control place.",
+            "left. I The [OK] button. Use it to go into an active level or item, or to accept a selection."
+          ],
+          [
+            "D",
+            "The arrow button RIGHT.",
+            "",
+            ""
+          ],
+          [
+            "E",
+            "The START button.",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nUser Interfaces\nA)\nB\nC\nD\nE\nI/O\ne30bu013.10\nSTOP\n8₸\nREADY\nMain Menu\nID:\nQuick Setup\n( 17 )\nMonitor\n(5)\nParameters\n(12)\nF\nM1\nG\nH\nIllustration 3: Graphical Display of the Control Panel\nA\nThe first status field: STOP/RUN\nB\nThe rotation direction of the motor\nC\nThe second status field: READY/NOT READY/FAULT\nD\nThe alarm field: ALARM/-\nE\nThe control place field: PC/I/O/KEYPAD/ FIELDBUS\nF\nThe location field: the ID number of the parameter\nand the current location in the menu\nG\nAn activated group or item\nH\nThe number of items in the group in question\nA\nREADY\nRUN\nSTOP\nB\nALARM\nFAULT\ne30bu014.10\nC\nQUICK SETU\nM\n!\nIII\nD\nFWD\nREV\nI/O\nKEYPAD\nBUS\nF\nE\nIllustration 4: Text Display of the Control Panel\nA\nThe indicators of status\nD\nThe current location in the menu\nB\nThe indicators of alarm and fault\nE\nThe indicators of the control place\nC\nThe name of the group or item of the current loca-\ntion\nF\nThe indicators of the rotation direction\n2.2 Menu Structure\nThe data of the AC drive is in menus and submenus. To move between the menus, use the arrow buttons Up and Down in the\nkeypad. To go into a group or an item, push the [OK] button. To go back to the previous level, push the [BACK/RESET] button.\nOn the display, current location in the menu shows, for example M3.2.1. The display also shows the name of the group or item in the\ncurrent location.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 15",
+      "tablas": [
+        [
+          [
+            "E",
+            "The control place field: PC/I/O/KEYPAD/ FIELDBUS"
+          ],
+          [
+            "F",
+            "The location field: the ID number of the parameter and the current location in the menu"
+          ],
+          [
+            "G",
+            "An activated group or item"
+          ],
+          [
+            "H",
+            "The number of items in the group in question"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nUser Interfaces\nTable 2: Menu Structure\nMenu\nFunction\nM1 Quick setup\nWizards (Content depends on P1.2 Application.)\nM2 Monitor\nMultimonitor\nTrend curve\nBasic\nI/O\nTemperature inputs\nExtras/Advanced\nTimer functions\nPID controller\nExternal PID controller\nMulti-pump\nMaintenance counters\nFieldbus data\nDrive customizer\nCondition-based monitoring\nM3 Parameters\nMotor settings\nStart/Stop setup\nReferences\nRamps and brakes\nI/O Configuration\nFieldbus data\nProhibit frequencies\nSupervisions\nProtections\nAutomatic reset\nApplication settings\nTimer functions\nPID controller\nExternal PID controller\nMulti-Pump\nMaintenance counters\nFire mode\n16 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Menu",
+            "Function"
+          ],
+          [
+            "M1 Quick setup",
+            "Wizards (Content depends on P1.2 Application.)"
+          ],
+          [
+            "M2 Monitor",
+            "Multimonitor"
+          ],
+          [
+            "Trend curve"
+          ],
+          [
+            "Basic"
+          ],
+          [
+            "I/O"
+          ],
+          [
+            "Temperature inputs"
+          ],
+          [
+            "Extras/Advanced"
+          ],
+          [
+            "Timer functions"
+          ],
+          [
+            "PID controller"
+          ],
+          [
+            "External PID controller"
+          ],
+          [
+            "Multi-pump"
+          ],
+          [
+            "Maintenance counters"
+          ],
+          [
+            "Fieldbus data"
+          ],
+          [
+            "Drive customizer"
+          ],
+          [
+            "Condition-based monitoring"
+          ],
+          [
+            "M3 Parameters",
+            "Motor settings"
+          ],
+          [
+            "Start/Stop setup"
+          ],
+          [
+            "References"
+          ],
+          [
+            "Ramps and brakes"
+          ],
+          [
+            "I/O Configuration"
+          ],
+          [
+            "Fieldbus data"
+          ],
+          [
+            "Prohibit frequencies"
+          ],
+          [
+            "Supervisions"
+          ],
+          [
+            "Protections"
+          ],
+          [
+            "Automatic reset"
+          ],
+          [
+            "Application settings"
+          ],
+          [
+            "Timer functions"
+          ],
+          [
+            "PID controller"
+          ],
+          [
+            "External PID controller"
+          ],
+          [
+            "Multi-Pump"
+          ],
+          [
+            "Maintenance counters"
+          ],
+          [
+            "Fire mode"
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nUser Interfaces\nMenu\nFunction\nMotor preheat\nDrive customizer\nPump control\nAdvanced harmonic filter\nCondition-based monitoring\nM4 Diagnostics\nActive faults\nReset faults\nFault history\nTotal counters\nTrip counters\nSoftware info\nDrive info\nUnit status\nM5 I/O and Hardware\nBasic I/O\nSlot C\nSlot D\nSlot E\nReal-time clock\nPower unit settings\nKeypad\nRS485\nEthernet\nFieldbus general\nM6 User settings\nLanguage selections\nParameter back-up\nDrive name\nParameter compare\nLicenses\nM7 Favourites\nSee 9.2.1 Using the Favourites Menu.\nM8 User levels\nSee 9.3.1 Using the User Levels Menu.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 17",
+      "tablas": [
+        [
+          [
+            "Menu",
+            "Function"
+          ],
+          [
+            "",
+            "Motor preheat"
+          ],
+          [
+            "Drive customizer"
+          ],
+          [
+            "Pump control"
+          ],
+          [
+            "Advanced harmonic filter"
+          ],
+          [
+            "Condition-based monitoring"
+          ],
+          [
+            "M4 Diagnostics",
+            "Active faults"
+          ],
+          [
+            "Reset faults"
+          ],
+          [
+            "Fault history"
+          ],
+          [
+            "Total counters"
+          ],
+          [
+            "Trip counters"
+          ],
+          [
+            "Software info"
+          ],
+          [
+            "Drive info"
+          ],
+          [
+            "Unit status"
+          ],
+          [
+            "M5 I/O and Hardware",
+            "Basic I/O"
+          ],
+          [
+            "Slot C"
+          ],
+          [
+            "Slot D"
+          ],
+          [
+            "Slot E"
+          ],
+          [
+            "Real-time clock"
+          ],
+          [
+            "Power unit settings"
+          ],
+          [
+            "Keypad"
+          ],
+          [
+            "RS485"
+          ],
+          [
+            "Ethernet"
+          ],
+          [
+            "Fieldbus general"
+          ],
+          [
+            "M6 User settings",
+            "Language selections"
+          ],
+          [
+            "Parameter back-up"
+          ],
+          [
+            "Drive name"
+          ],
+          [
+            "Parameter compare"
+          ],
+          [
+            "Licenses"
+          ],
+          [
+            "M7 Favourites",
+            "See 9.2.1 Using the Favourites Menu."
+          ],
+          [
+            "M8 User levels",
+            "See 9.3.1 Using the User Levels Menu."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "VACON® 100 FLOW\nApplication Guide\n2.3 Graphical Display\nDanfoss\nUser Interfaces\n2.3.1 Editing the Text Values\nThis topic gives instructions on how to edit the text values on the graphical display.\nProcedure\n1. Find the parameter with the arrow buttons.\n2. To go to the Edit mode, push the [OK] button 2 times or push the arrow button Right.\nSTOP\nREADY\nI/O\ne30bu017.10\nRem Control Place\nID:\nEdit\nM3.2.1\nOOO\ni\nHelp\nAdd to favourites\n3. To set a new value, push the arrow buttons Up and Down.\n1\nSTOP\nREADY\nI/O\ne30bu018.10\nRem Control Place\nM3.2.1\n8+\nID:\nFieldbusCTRL\nI/O Control\n4. To accept the change, push the [OK] button. To ignore the change, use the [BACK/RESET] button.\n2.3.2 Editing the Numerical Values\nThis topic gives instructions on how to edit the numerical values on the graphical display.\nProcedure\n1. Find the parameter with the arrow buttons.\n2. To go to the Edit mode, push the [OK] button 2 times or push the arrow button Right.\n3. Move from digit to digit with the arrow buttons Left and Right. Change the digits with the arrow buttons Up and Down.\nSTOP\nREADY\nI/O\ne30bu020.10\nOOO\nMinFreqReference\nID:101\nP3.3.1.1\n-\n/\n<>\n-\n0.00 Hz -\n1\n/\n-\nMin: 0.00Hz\nMax: 50.00Hz\n4. To accept the change, push the [OK] button. To ignore the change, use the [BACK/RESET] button.\n18 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nUser Interfaces\n2.3.3 Selecting More than 1 Value\nWith some parameters, more than 1 value can be selected. Select a checkbox at each necessary value.\nProcedure\n1. Find the parameter. There is a symbol on the display when a checkbox selection is possible.\nSTOP\nC\nREADY\nI/O\ne30bu023.10\nID:1466\nInterval 1\nP3.12.1.3\nOO\nON Time\n00:00:00\nOFF Time\n00:00:00\nDays\n0\nA\nA\nThe symbol of the checkbox selection\n2. To move in the list of values, use the arrow buttons Up and Down.\n3.\nTo add a value into your selection, select the box that is next to it with the arrow button Right.\n>\nSTOP\nC\nREADY\nI/O\ne30bu025.10\nDays\nOOC\nID:\nM 3.12.1.3.1\nSunday\nMonday\nTuesday\nWednesday\nThursday\nFriday\n2.3.4 Resetting a Fault\nTo reset a fault, use the [BACK/RESET] button or the parameter Reset Faults. See 7.1.2 Reset Faults.\n2.3.5 [FUNCT] Button\nThe [FUNCT] button can be used for 4 functions.\n· To have access to the Control page.\n· To change easily between the Local and Remote control places.\n· To change the rotation direction.\n· To edit quickly a parameter value.\n2.3.5.1 Different Control Places\nThe selection of the control place determines from where the AC drive takes the start and stop commands. All the control places\nhave a parameter for the selection of the frequency reference source. The Local control place is always Keypad. The Remote control\nplace is I/O or Fieldbus. The status bar of the display shows the current control place.\nIt is possible to use I/O A, I/O B, and Fieldbus as Remote control places. I/O A and Fieldbus have the lowest priority. Select them with\nP3.2.1 (Remote Control Place). I/O B can bypass the Remote control places I/O A and Fieldbus with a digital input. Select the digital\ninput with parameter P3.5.1.7 (I/O B Control Force).\nKeypad is always used as a control place when the control place is Local. Local control has higher priority than Remote control. For\nexample, if parameter P3.5.1.7 bypasses the control place with a digital input, and Local is selected in Remote control, Keypad be-\ncomes the control place. Use the [FUNCT] button or P3.2.2 Local/Remote to change between the Local and Remote control.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 19",
+      "tablas": [
+        [
+          [
+            ":selected:",
+            "Sunday"
+          ],
+          [
+            ":unselected:",
+            "Monday"
+          ],
+          [
+            ":unselected:",
+            "Tuesday"
+          ],
+          [
+            ":unselected:",
+            "Wednesday"
+          ],
+          [
+            ":unselected:",
+            "Thursday"
+          ],
+          [
+            ":unselected:",
+            "Friday"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nUser Interfaces\n2.3.5.2 Changing the Control Place\nThis topic gives instructions on how to change the control place on the control panel.\nProcedure\n1. Anywhere in the menu structure, push the [FUNCT] button.\n2. To select Local/Remote, use the arrow buttons Up and Down. Push the [OK] button.\nSTOP\nC\nREADY\nKeypad\nChoose action\nID:1805\ne30bu027.10\nChange direction\nControl page\nLocal/Remote\n3. To select Local or Remote, use the arrow buttons Up and Down again. To accept the selection, push the [OK] button.\n1\nC\nSTOP\nREADY\nKeypad\n?\nLocal/Remote\nID:211\ne30bu028.10\nLocal\nRemote\n4. If Remote control place is changed to Local, that is, Keypad, give a keypad reference.\n1\nAfter the selection, the display goes back into the same location where it was when the [FUNCT] button was push-\ned.\n2.3.5.3 Going into the Control Page\nIt is easy to monitor the most important values in the Control page.\nSee more information about Keypad Reference in 6.3 Group 3.3: References. If other control places or reference values are used, the\ndisplay shows the frequency reference, which cannot be edited. The other values on the page are Multimonitor values. These values\ncan be selected (see 5.2.1 Changing the Items to Monitor).\nProcedure\n1. Anywhere in the menu structure, push the [FUNCT] button.\n2. To select the Control page, push the arrow buttons Up and Down. Go in with the [OK] button.\n1\nThe Control page opens.\n3. With the Local control place and the keypad reference selected, P3.3.1.8 Keypad Reference can be set with the [OK] button.\n20 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nUser Interfaces\n4. To change the digits in the value, push the arrow buttons Up and Down. Accept the change with the [OK] button.\n1\nSTOP\nREADY\nC\nKeypad\ne30bg671.10\nKeypad Reference\nID: 168\n- 0.00Hz\nOutput Frequency\n0.00Hz\nMotor Torque\nMotor Current\n0.00A\n0.00%\nMotor Power\n0.00%\n2.3.5.4 Changing the Rotation Direction\nThe rotation direction of the motor can be changed quickly with the [FUNCT] button.\nNOTICE\nThe command Change direction is available in the menu only if the current control place is Local.\nProcedure\n1. Anywhere in the menu structure, push the [FUNCT] button.\n2. To select Change direction, push the arrow buttons Up and Down. Push the [OK] button.\n3. Select a new rotation direction.\n>\nThe current rotation direction blinks.\nRUN\nC\nREADY\nKeypad\nChoose action\ne30bg672.10\n000\nID:1805\nReverse\nForward\n<>\n4. Push the [OK] button.\nT\nThe rotation direction changes immediately. The arrow indication in the status field of the display changes.\nSTOR\nREADY\nID:\nMain Menu\nM1\nI/O\ne30bg673.10\nMonitor\n(7)\nParameters\n(15)\nDiagnostics\n(6)\n2.3.5.5 Using the Quick Edit Function\nWith the Quick Edit function, a parameter can be accessed quickly by typing the ID number of the parameter.\nProcedure\n1. Anywhere in the menu structure, push the [FUNCT] button.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 21",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nUser Interfaces\n2. Push the arrow buttons Up and Down to select Quick Edit and accept with the [OK] button.\n3. Write the ID number of a parameter or monitoring value. Push [OK].\n1\nThe display shows the parameter value in the edit mode and the monitoring value in the monitoring mode.\n2.3.6 Copying the Parameters of an AC Drive\nUse this function to copy parameters from a drive to another. Before downloading parameters from the control panel to the drive,\nstop the drive.\nNOTICE\nThis function is available only in the graphical display.\nProcedure\n1. Save the parameters to the control panel.\na. Go into the User settings menu.\nb. Go into the Parameter backup submenu.\nSTOP\nREADY\nKeypad\nUser settings\nM6.5\ne30bg674.10\n00\nID:\nLanguage selection\nEnglish\nOOO\nParameter backup\n(7)\nDrive name\nDrive\nOOC\nc. Use the arrow buttons Up and Down to select a function. Accept the selection with the [OK] button.\nSTOP\n1\nREADY\nKeypad\ne30bg675.10\nParameter backup\nM6.5.1\nID:\nOC\nRestore factory defaults\nOoc\nSave to keypad\nOOC\nRestore from keypad\nThe command Restore factory defaults brings back the parameter settings that were made at the factory. Use the com-\nmand Save to keypad to copy all the parameters to the control panel. The command Restore from keypad copies all the\nparameters from the control panel to the drive.\n2. Detach the control panel and connect it to another drive.\n3.\nDownload the parameters to the new drive with the command Restore from keypad.\n2.3.7 Comparing the Parameters\nUse this function to compare the current parameter set with one of these 4 sets. See more about these parameters in 9.1.2 Parame-\nter Back-up Parameters.\n· Set 1 (P6.5.4 Save to Set 1)\n· Set 2 (P6.5.6 Save to Set 2)\n· Defaults (P6.5.1 Restore Factory Defaults)\n· Keypad set (P6.5.2 Save to Keypad)\n22 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nUser Interfaces\nNOTICE\nIf the parameter set with which the current set is compared was not saved, the display shows the text Comparing failed.\nProcedure\n1. Go into the User settings menu.\n2. Go into the Parameter Compare function.\nSTOP\nT\nC\nREADY\nUser Settings\nID:\nM6.6\n8+\nI/O\ne30bg676.10\nOOC\nLanguage Selection\nEnglish\nParameter Backup\n(7)\n(4)\nParameter Compare\n3.\nSelect the pair of sets. Push [OK] to accept the selection.\nC\nSTOP\nREADY\nI/O\nParameter Compare\nID:\nB6.6.1\ne30bg677.10\n8+\nActive set-Set 1\nActive set-Set 2\nActive set-Defaults\n4.\nSelect Active and push [OK].\n5.\nExamine the comparing between the current values and the values of the other set.\nSTOP\nREADY\nActive set-Set 1\nID:113\nI/O\ne30bg678.10\nMotor Nom Currnt\n0.56A\n1.90A\nMotor Cos Phi\n0.68\n1.74\nA\nBCD\nA\nThe current value\nC\nThe current value\nB\nThe value of the other set\nD\nThe value of the other set\n2.3.8 Reading Help Texts\nThe graphical display can show help texts on many topics. All the parameters have a help text. The help texts are also available for\nthe faults, alarms, and the start-up wizard.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nUser Interfaces\nThe help texts are always in English.\nNOTICE\nProcedure\n1. Find the item to read.\n2.\nUse the arrow buttons Up and Down to select Help.\nSTOP\nREADY\nI/O\nCtrl signal 1 A\nID:403\nM3.5.1.1\ne30bg679.10\nO\nEdit\ni\nHelp\nAdd to favourites\n3. To open the help text, push the [OK] button.\n2.3.9 Using the Favourites Menu\nIf the same items are used frequently, add them into Favourites. Collect a set of parameters or monitoring signals from all the con-\ntrol panel menus. See 9.2.2 Adding an Item to the Favourites.\n2.4 Text Display\n2.4.1 Editing the Text Values\nThis topic gives instructions on how to edit text values on the text display.\nProcedure\n1. Find the parameter with the arrow buttons.\n2. To go to the Edit mode, push the [OK] button.\n3. To set a new value, push the arrow buttons Up and Down.\n1\nREADY\nRUN\nSTOP\nALARM\nFAULT\n1\ne30bg680.10\n-170 CONTRO-\n-\nFWD\nREV\nI/O\nKEYPAD\nBUS\n4. Accept the change with the [OK] button. To ignore the change, use the [BACK/RESET] button.\n2.4.2 Editing the Numerical Values\nThis topic gives instructions on how to edit the numerical values on the text display.\nProcedure\n1. Find the parameter with the arrow buttons.\n2. Go to the Edit mode.\n3. Move from digit to digit with the arrow buttons Left and Right. Change the digits with the arrow buttons Up and Down.\n4. Accept the change with the [OK] button. To ignore the change, use the [BACK/RESET] button.\n24 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nUser Interfaces\n2.4.3 Resetting a Fault\nTo reset a fault, use the [BACK/RESET] button or the parameter Reset Faults. See 7.1.2 Reset Faults.\n2.4.4 [FUNCT] Button\nThe [FUNCT] button can be used for 4 functions.\n· To have access to the Control page.\n· To change easily between the Local and Remote control places.\n· To change the rotation direction.\n· To edit quickly a parameter value.\n2.4.4.1 Different Control Places\nThe selection of the control place determines from where the AC drive takes the start and stop commands. All the control places\nhave a parameter for the selection of the frequency reference source. The Local control place is always Keypad. The Remote control\nplace is I/O or Fieldbus. The status bar of the display shows the current control place.\nIt is possible to use I/O A, I/O B, and Fieldbus as Remote control places. I/O A and Fieldbus have the lowest priority. Select them with\nP3.2.1 (Remote Control Place). I/O B can bypass the Remote control places I/O A and Fieldbus with a digital input. Select the digital\ninput with parameter P3.5.1.7 (I/O B Control Force).\nKeypad is always used as a control place when the control place is Local. Local control has higher priority than Remote control. For\nexample, if parameter P3.5.1.7 bypasses the control place with a digital input, and Local is selected in Remote control, Keypad be-\ncomes the control place. Use the [FUNCT] button or P3.2.2 Local/Remote to change between the Local and Remote control.\n2.4.4.2 Changing the Control Place\nThis topic gives instructions on how to change the control place on the control panel.\nProcedure\n1. Anywhere in the menu structure, push the [FUNCT] button.\n2. To select Local/Remote, use the arrow buttons Up and Down. Push the [OK] button.\nT\nREADY\nRUN\nSTOP\nALARM\nFAULT\ne30bg681.10\nLOCAL/REMO\nFWD\nREV\nI/O\nKEYPAD\nBUS\n3. To select Local or Remote, use the arrow buttons Up and Down again. To accept the selection, push the [OK] button.\nREADY\nRUN\nSTOP\nALARM\nFAULT\ne30bg682.10\nREMOTE\n0\n1\nFWD\nREV\nI/O\nKEYPAD\nBUS\n4. If Remote control place is changed to Local, that is, the keypad, give a keypad reference.\nAfter the selection, the display goes back into the same location where it was when the [FUNCT] button was push-\ned.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 25",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nUser Interfaces\n2.4.4.3 Going into the Control Page\nIt is easy to monitor the most important values in the Control page.\nSee more information about Keypad Reference in 6.3 Group 3.3: References. If other control places or reference values are used, the\ndisplay shows the frequency reference that cannot be edited. The other values on the page are Multimonitor values. These values\ncan be selected (see 5.2.1 Changing the Items to Monitor).\nProcedure\n1. Anywhere in the menu structure, push the [FUNCT] button.\n2. To select the Control page, push the arrow buttons Up and Down. Go in with the [OK] button.\n>\nThe Control page opens.\nREADY\nRUN\nSTOP\nALARM\nFAULT\ne30bg683.10\n-CONTROL PR?\nFWD\nREV\nI/O\nKEYPAD\nBUS\n3. If the Local control place and the keypad reference are used, P3.3.1.8 Keypad Reference can be set with the [OK] button.\nREADY\nRUN\nSTOP\nALARM\nFAULT\ne30bg684.10\nKEYPRI REF\n45.00\nHz\nFWD\nREV\nI/O\nKEYPAD\nBUS\n2.4.4.4 Changing the Rotation Direction\nThe rotation direction of the motor can be changed quickly with the [FUNCT] button.\nNOTICE\nThe command Change direction is available in the menu only if the current control place is Local.\nProcedure\n1. Anywhere in the menu structure, push the [FUNCT] button.\n2. To select Change direction, push the arrow buttons Up and Down. Push the [OK] button.\n3.\nSelect a new rotation direction.\n1\nThe current rotation direction blinks.\n4.\nPush the [OK] button.\nThe rotation direction changes immediately. The arrow indication in the status field of the display changes.\n2.4.4.5 Using the Quick Edit Function\nWith the Quick Edit function, a parameter can be accessed quickly by typing the ID number of the parameter.\nProcedure\n26 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nUser Interfaces\n1. Anywhere in the menu structure, push the [FUNCT] button.\n2. Push the arrow buttons Up and Down to select Quick Edit and accept with the [OK] button.\n3. Write the ID number of a parameter or monitoring value. Push [OK].\n1\nThe display shows the parameter value in the edit mode and the monitoring value in the monitoring mode.\n2.5 VACON® Live PC Tool\nVACON® Live is a PC tool for commissioning and maintenance of the VACON® AC drives. VACON® Live can be downloaded from\nhttps://www.danfoss.com.\nThe VACON® Live PC tool includes these functions.\n· Parameterization, monitoring, drive info, data logger, and so on.\n· The software download tool VACON® Loader\n· Serial communication and Ethernet support\n· Windows XP, Vista, 7, 8, and 10 support\n· 17 languages: English, German, Spanish, Finnish, French, Italian, Russian, Swedish, Chinese, Czech, Danish, Dutch, Polish, Portu-\nguese, Romanian, Slovak and Turkish\nMake the connection between the AC drive and the PC tool with the VACON® serial communication cable. The serial communica-\ntion drivers are installed automatically during the installation of VACON® Live. After the cable is installed, VACON® Live finds the\nconnected drive automatically.\nSee more on how to use VACON® Live in the help menu of the program.\nVACON Live 1.1.18.0\n×\nFile\nEdit View Drive Tools Help\nDrives\nDrive1\nFiles\nViews\nParameter Browser *\nTOMORROW\ne30bg685.10\nSearc\nMenu\n4 1. Quick Setup\nIndex\nVariable Text\nValue\nMin\nMax\nUnit\nDefault\n0\nHelp\n1.31. Standard\n4 2. Monitor\n1. Quick Setup ( 29)\nP 12\nApplication\n2.1. Multimonitor\nP 13\nMinFreqReference\nStandard\n0.00\nStandard\n0,00\nMotor Potentiometer\n50,00\nHz\nStandard\n0.00\n212\n101\nUse this parameter to select the application configuration for the drive.\n2.3. Basic\nUse this parameter to set the minimum frequency reference.\n24. 1/0\nP 14 MaxFreqReference\nP 1.5\n50,00\n0,00\n320,00\nHz\n0,00\n102\nUse this parameter to set the maximum frequency reference.\n2.6. Extras/Advanced\nP 16\nAccel Time 1\n5,0\n50\n0,1\n0.1\n3000,0\n$\n5,0\n5.0\n103\n104\nUse this parameter to set the time that is necessary for the output frequency to increase from zero frequency to maximum frequency.\n2.7. Timer Functions\n2.8. PID Controller\nP 1.7\nDecel Time 1\n3000,0\n5.20\nA\n0.00\nUse this parameter to set the time that is necessary for the output frequency to decrease from maximum frequency to zero frequency.\n2.9. ExtPID Controller\nT\nP 1.8\nCurrent Limit\nMotor Type\n3,70\n0,26\n107\nUse this parameter to set the maximum motor current from the AC drive.\n2.10. Multi-Pump\nP 19\nInduction Motor\nInduction Motor\n180\nReluctance Motor\n240\nV\nInduction Motor 650\n110\nUse this parameter to set the type of motor in your process.\n2.11. Mainten. Counters\nMotor Nom Voltg\n230\n111\nFind the value Un on the nameplate of the motor.\n2.12. Fieldbus Data\nP 1.10 Motor Nom Freq\n50,00\n8,00\n320.00\nHx\n0.00\nFind the value fn on the nameplate of the motor\n2.12.5. Data In\n2.12.6. Data Out\nP 1.11 Motor Nom Speed\n1370\n24\n0,26\n1920\nrpm\nA\n112\nFind the value nn on the nameplate of the motor.\n2.13. Drive Customizer\nP 1.12 Motor Nom Curent\n1,90\n0,30\n5,20\n1.00\n0,00\n0,00\n113\n120\nFind the value In on the nameplate of the motor.\n3. Parameters\nP 1.13 Motor Cos Phi\n0.74\nFind the value on the nameplate of the motor.\n3.1. Motor Settings\nP 1.14 Energy Optimization Disabled\nDisabled\nEnabled\nDisabled\n666\nUse this parameter to enable the Energy Optimization function.\n3.1.1. Motor Nameplate\nP 1.15 Identification\nNo Action\nNo Action\nWith Rotation\nNo Action\n631\n505\nUse this parameter to find the parameter values that are optimal for the operation of the drive.\n4 3.1.2. Motor Control\n3.1.3. Limits\nP 1.16 Start Function\nRamping\nRamping\nFlying Start\nRamping\nUse this parameter to select the type of the start function.\n3.1.4. Open Loop\nP 1.17 Stop Function\nCoasting\nCoasting\nRamping\nCoasting\nDisabled\n506\nUse this parameter to select the type of the stop function.\n3.1.4.12. M/f Start\nP 1.18 Automatic Reset\nDisabled\nDisabled\nEnabled\nFault\n731\nUse this parameter to enable the Automatic reset function.\n3.1.4.13. Stabilators\n3.1.6. Sensorless Ctrl\nP 1.19 External Fault\nFault\nNo Action\nFault, Coast\n701\nUse this parameter to select the response of the drive to an 'External Fault'.\n3.2. Start/Stop Setup\nP 1.20 Al Low Fault\nNo Action\nNo Action\nFault, Coast\nNo Action\n700\nUse this parameter to select the response of the drive to an 'Al Low' fault.\n3.3. References\n3.3.1. Frequency Ref\nP 1.21 Rem. Ctrl. Place\nVO Control\nAl1+AI2\nV/O Control\nFieldbusCTRL\nV/O Control\nAl1.AIZ\n172\nUse this parameter to select the remote control place (start/stop).\n332. Torque Ref\nP 1.22 VO A Ref sel\nPresetFreqO\nBlock Out. 10\n117\nUse this parameter to select the reference source when the control place is I/O A.\n3.3.2.8. Torque Ctrl Open Loop\nP 1.23 Keypad Ref Sel\nKeypad Ref\nPresetFreq0\nBlock Out. 10\nKeypad Ref\n121\nUse this parameter to select the reference source when the control place is keypad.\n3.3.2.9. Torque Ctrl Sensorless\nP 1.24 FieldBus Ref Sel\nFieldbus\nPresetFreq0\nBlock Out. 10\nFieldbu\n122\n379\nUse this parameter to select the reference source when the control place is Fieldbus.\n3.3.3. Preset Freqs\n3.3.4. Motor Potentiom.\nP 1.25 All Signal Range\n0-10V/0-20mA\n0-10V/0-20mA\n2-10V/4-20mA\n0-10V/0-20mA\nUse this parameter to change the range of the analogue signal.\n3.3.5. Joystick\nP 1.26 A12 Signal Range\n2-10V/4-20mA\nRun\n0-10V/0-20mA\n2-10V/4-20mA\n2-10V/4-20mA\n390\nUse this parameter to change the range of the analogue signal.\n3.3.6. Jogging\nP 1.27 RO1 Function\nNot Used\nSelected Param.Set\nRun\n11001\nUse this parameter to select a function or a signal that is connected to the relay output.\n3.4. Ramps And Brakes\nP 1.28 RO2 Function\nFault\nNot Used\nNot Used\nSelected Param.Set\nFault\n11004\nUse this parameter to select a function or a signal that is connected to the relay output.\n3.4.1. Ramp 1\nP 1.29 RO3 Function\nRead\nSelected Param.Set\nReady\n11007\n10050\nUse this parameter to select a function or a signal that is connected to the relay output.\n3.4.2. Ramp 2\n3.4.3. Start Magnetizat.\nP 1.30 AO1 Function\nOutput Freq\n0% TEST\nBlock Out. 10\nOutput Freq\nUse this parameter to select a function or a signal that is connected to the analogue output.\n3.4.4. DC Brake\n1.31. Standard (3)\n10,00\n0,00\nHz\n10,00\n105\n3.4.5. Flux Braking\nP 1.31 Preset Freq 1\n0.00\n50,00\n106\nUse this parameter to set the preset frequency reference when the preset frequencies function is used.\n3.5. V/O Config\nP 1.31 Preset Freq 2\n15,00\n50,00\nHz\n15,00\nUse this parameter to set the preset frequency reference when the preset frequencies function is used.\n3.5.1. Digital inputs\n3.5.2. Analog inputs\nP 1.31 Preset Freq 3\n20,00\n0,00\n50,00\nHz\n20,00\n126\nUse this parameter to set the preset frequency reference when the preset frequencies function is used.\n3.5.2.1. Analog Input 1\n3.5.2.2. Analog Input 2\n2.1. Multimonitor ( 18 )\nV 2.1.\" FreqReference\n9.06\n-320,00\n320.00\nHz\n0,00\n25\n3.5.2.3. Analog Input 3\n0,00\n-320,00\nHz\n0,00\n1\nThis monitoring value shows the actual frequency reference to the motor control.\n3.5.2.4. Analog Input 4\nV 2.1 .: Output frequency\n0,00\n320,00\nA\n3\nThis monitoring value shows the actual output frequency to the motor.\n3.5.2.5. Analog Input 5\nV 2.1.5 Motor Current\n0.00\n5,20\n0,00\n2\nThis monitoring value shows the measured current of the motor.\n3.5.2.6. Analog Input 6\nV 2.1/ Motor Speed\n00\n-1920\n1920\nrpm 0\n%\n4\nThis monitoring value shows the actual speed of the motor in rpm (calculated value).\n4 3.5.3. Digital outputs\n3.5.3.2. Slot B Basic\nV 2.1.5 Motor Torque\n-300,0\n300,0\n%\n0,0\nThis monitoring value shows the actual torque of the motor (calculated value).\n3.5.4. Analog outputs\nV 2.1.€ Motor Power\n0,0\n-300,0\n300,0\nV\n0,0\nThis monitoring value shows the actual shaft power of the motor (calculated value) as a percentage of the motor nominal power.\n3.5.4.1. Slot A Basic\nV 2.1 .: Motor Voltage\n0,0\n329\n0,0\n0\n700,0\n1200\n0,0\n0\n7\nThis monitoring value shows the actual output voltage to the motor.\n3.6. Fieldbus DataMap\nV 2.1.1 DC-link Voltage\n-15.0\n90.0\nV\nThis monitoring value shows the measured voltage in the DC-link of the drive.\n3.7. Prohibit Freq\nV 2.1.5 Unit Temperature\n21,0\n0,0\nThis monitoring value shows the measured heatsink temperature of the drive.\n3.8. Supervisions\n3.9. Protections\n2.3. Basic ( 18)\nV 2.3.\" Output frequency\n0.00\n-320,00\n320,00\nHz\n0,00\n1\n3.9.1. General\nHz\n0.00\n2\nThis monitoring value shows the actual output frequency to the motor.\n3.9.2. Motor Therm Prot\n303 Motor Stall\nV 2.3.2 FreqReference\n9,06\n-320,00\n320,00\nThis monitoring value shows the actual frequency reference to the motor control.\nTL:\nVO\nDatalogger\nClockwise\nOnline\nReady\nRun O\nFault Q\nAlarm\nO\nC\nIllustration 5: The VACON® Live PC Tool\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 27",
+      "tablas": [
+        [
+          [
+            "Searc"
+          ],
+          [
+            "Menu",
+            "Index Variable Text",
+            "Value",
+            "Min",
+            "Max",
+            "Unit Default",
+            "0",
+            "Help"
+          ],
+          [
+            "4 1. Quick Setup\n1.31. Standard",
+            "1. Quick Setup ( 29)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "4 2. Monitor",
+            "P 12",
+            "Application",
+            "Standard",
+            "Standard",
+            "Motor Potentiometer",
+            "",
+            "Standard",
+            "212",
+            "Use this parameter to select the application configuration for the drive."
+          ],
+          [
+            "2.1. Multimonitor",
+            "P 13",
+            "MinFreqReference",
+            "0.00",
+            "0,00",
+            "50,00",
+            "Hz",
+            "0.00",
+            "101",
+            "Use this parameter to set the minimum frequency reference."
+          ],
+          [
+            "2.3. Basic\n24. 1/0",
+            "P 14",
+            "MaxFreqReference",
+            "50,00",
+            "0,00",
+            "320,00",
+            "Hz",
+            "0,00",
+            "102",
+            "Use this parameter to set the maximum frequency reference."
+          ],
+          [
+            ":unselected:\n2.6. Extras/Advanced",
+            "P 1.5",
+            "Accel Time 1",
+            "5,0",
+            "0,1",
+            "3000,0",
+            "$",
+            "5,0",
+            "103",
+            "Use this parameter to set the time that is necessary for the output frequency to increase from zero frequency to maximum frequency."
+          ],
+          [
+            ":unselected: 2.7. Timer Functions",
+            "P 16",
+            "Decel Time 1",
+            "50",
+            "0.1",
+            "3000,0",
+            "",
+            "5.0",
+            "104",
+            "Use this parameter to set the time that is necessary for the output frequency to decrease from maximum frequency to zero frequency."
+          ],
+          [
+            "2.8. PID Controller\n:unselected:",
+            "P 1.7",
+            "Current Limit",
+            "3,70",
+            "0,26",
+            "5.20",
+            "A",
+            "0.00",
+            "107",
+            "Use this parameter to set the maximum motor current from the AC drive."
+          ],
+          [
+            ":unselected: 2.9. ExtPID Controller T",
+            "P 1.8",
+            "Motor Type",
+            "Induction Motor",
+            "Induction Motor",
+            "Reluctance Motor",
+            "",
+            "Induction Motor",
+            "650",
+            "Use this parameter to set the type of motor in your process."
+          ],
+          [
+            ":unselected: 2.10. Multi-Pump\n2.11. Mainten. Counters",
+            "P 19",
+            "Motor Nom Voltg",
+            "230",
+            "180",
+            "240",
+            "V",
+            "",
+            "110",
+            "Find the value Un on the nameplate of the motor."
+          ],
+          [
+            "2.12. Fieldbus Data",
+            "P 1.10",
+            "Motor Nom Freq",
+            "50,00",
+            "8,00",
+            "320.00",
+            "Hx",
+            "0.00",
+            "111",
+            "Find the value fn on the nameplate of the motor"
+          ],
+          [
+            "2.12.5. Data In",
+            "P 1.11",
+            "Motor Nom Speed",
+            "1370",
+            "24",
+            "1920",
+            "rpm",
+            "",
+            "112",
+            "Find the value nn on the nameplate of the motor."
+          ],
+          [
+            "2.12.6. Data Out",
+            "P 1.12",
+            "Motor Nom Curent",
+            "1,90",
+            "0,26",
+            "5,20",
+            "A",
+            "0,00",
+            "113",
+            "Find the value In on the nameplate of the motor."
+          ],
+          [
+            "2.13. Drive Customizer",
+            "P 1.13",
+            "Motor Cos Phi",
+            "0.74",
+            "0,30",
+            "1.00",
+            "",
+            "0,00",
+            "120",
+            "Find the value on the nameplate of the motor."
+          ],
+          [
+            "3. Parameters\n3.1. Motor Settings\n:selected:",
+            "P 1.14",
+            "Energy Optimization",
+            "Disabled",
+            "Disabled",
+            "Enabled",
+            "",
+            "Disabled",
+            "666",
+            "Use this parameter to enable the Energy Optimization function."
+          ],
+          [
+            "3.1.1. Motor Nameplate",
+            "P 1.15",
+            "Identification",
+            "No Action",
+            "No Action",
+            "With Rotation",
+            "",
+            "No Action",
+            "631",
+            "Use this parameter to find the parameter values that are optimal for the operation of the drive."
+          ],
+          [
+            "4 3.1.2. Motor Control",
+            "P 1.16",
+            "Start Function",
+            "Ramping",
+            "Ramping",
+            "Flying Start",
+            "",
+            "Ramping",
+            "505",
+            "Use this parameter to select the type of the start function."
+          ],
+          [
+            "3.1.3. Limits",
+            "P 1.17",
+            "Stop Function",
+            "Coasting",
+            "Coasting",
+            "Ramping",
+            "",
+            "Coasting",
+            "506",
+            "Use this parameter to select the type of the stop function."
+          ],
+          [
+            "3.1.4. Open Loop\n3.1.4.12. M/f Start\n:selected:",
+            "P 1.18",
+            "Automatic Reset",
+            "Disabled",
+            "Disabled",
+            "Enabled",
+            "",
+            "Disabled",
+            "731",
+            "Use this parameter to enable the Automatic reset function."
+          ],
+          [
+            "3.1.4.13. Stabilators 3.1.6. Sensorless Ctrl",
+            "P 1.19",
+            "External Fault",
+            "Fault",
+            "No Action",
+            "Fault, Coast",
+            "",
+            "Fault",
+            "701",
+            "Use this parameter to select the response of the drive to an 'External Fault'."
+          ],
+          [
+            "3.2. Start/Stop Setup",
+            "P 1.20",
+            "Al Low Fault",
+            "No Action",
+            "No Action",
+            "Fault, Coast",
+            "",
+            "No Action",
+            "700",
+            "Use this parameter to select the response of the drive to an 'Al Low' fault."
+          ],
+          [
+            ":selected: 3.3. References",
+            "P 1.21",
+            "Rem. Ctrl. Place",
+            "VO Control",
+            "V/O Control",
+            "FieldbusCTRL",
+            "",
+            "V/O Control",
+            "172",
+            "Use this parameter to select the remote control place (start/stop)."
+          ],
+          [
+            "3.3.1. Frequency Ref",
+            "P 1.22",
+            "VO A Ref sel",
+            "Al1+AI2",
+            "PresetFreqO",
+            "Block Out. 10",
+            "",
+            "Al1.AIZ",
+            "117",
+            "Use this parameter to select the reference source when the control place is I/O A."
+          ],
+          [
+            "332. Torque Ref",
+            "P 1.23",
+            "Keypad Ref Sel",
+            "Keypad Ref",
+            "PresetFreq0",
+            "Block Out. 10",
+            "",
+            "Keypad Ref",
+            "121",
+            "Use this parameter to select the reference source when the control place is keypad."
+          ],
+          [
+            "3.3.2.8. Torque Ctrl Open Loop\n3.3.2.9. Torque Ctrl Sensorless",
+            "P 1.24",
+            "FieldBus Ref Sel",
+            "Fieldbus",
+            "PresetFreq0",
+            "Block Out. 10",
+            "",
+            "Fieldbu",
+            "122",
+            "Use this parameter to select the reference source when the control place is Fieldbus."
+          ],
+          [
+            "3.3.3. Preset Freqs",
+            "P 1.25",
+            "All Signal Range",
+            "0-10V/0-20mA",
+            "0-10V/0-20mA",
+            "2-10V/4-20mA",
+            "",
+            "0-10V/0-20mA",
+            "379",
+            "Use this parameter to change the range of the analogue signal."
+          ],
+          [
+            "3.3.4. Motor Potentiom.",
+            "P 1.26",
+            "A12 Signal Range",
+            "2-10V/4-20mA",
+            "0-10V/0-20mA",
+            "2-10V/4-20mA",
+            "",
+            "2-10V/4-20mA",
+            "390",
+            "Use this parameter to change the range of the analogue signal."
+          ],
+          [
+            "3.3.5. Joystick",
+            "P 1.27",
+            "RO1 Function",
+            "Run",
+            "Not Used",
+            "Selected Param.Set",
+            "",
+            "Run",
+            "11001",
+            "Use this parameter to select a function or a signal that is connected to the relay output."
+          ],
+          [
+            "3.3.6. Jogging\n3.4. Ramps And Brakes :selected:",
+            "P 1.28",
+            "RO2 Function",
+            "Fault",
+            "Not Used",
+            "Selected Param.Set",
+            "",
+            "Fault",
+            "11004",
+            "Use this parameter to select a function or a signal that is connected to the relay output."
+          ],
+          [
+            "3.4.1. Ramp 1",
+            "P 1.29",
+            "RO3 Function",
+            "Read",
+            "Not Used",
+            "Selected Param.Set",
+            "",
+            "Ready",
+            "11007",
+            "Use this parameter to select a function or a signal that is connected to the relay output."
+          ],
+          [
+            "3.4.2. Ramp 2",
+            "P 1.30",
+            "AO1 Function",
+            "Output Freq",
+            "0% TEST",
+            "Block Out. 10",
+            "",
+            "Output Freq",
+            "10050",
+            "Use this parameter to select a function or a signal that is connected to the analogue output."
+          ],
+          [
+            "3.4.3. Start Magnetizat.\n3.4.4. DC Brake",
+            "1.31. Standard (3)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3.4.5. Flux Braking",
+            "P 1.31",
+            "Preset Freq 1",
+            "10,00",
+            "0,00",
+            "50,00",
+            "Hz",
+            "10,00",
+            "105",
+            "Use this parameter to set the preset frequency reference when the preset frequencies function is used."
+          ],
+          [
+            ":selected:\n3.5. V/O Config",
+            "P 1.31",
+            "Preset Freq 2",
+            "15,00",
+            "0.00",
+            "50,00",
+            "Hz",
+            "15,00",
+            "106",
+            "Use this parameter to set the preset frequency reference when the preset frequencies function is used."
+          ],
+          [
+            "3.5.1. Digital inputs",
+            "P 1.31",
+            "Preset Freq 3",
+            "20,00",
+            "0,00",
+            "50,00",
+            "Hz 20,00",
+            "126",
+            "Use this parameter to set the preset frequency reference when the preset frequencies function is used."
+          ],
+          [
+            "3.5.2. Analog inputs\n3.5.2.1. Analog Input 1",
+            "2.1. Multimonitor ( 18 )",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3.5.2.2. Analog Input 2",
+            "V 2.1.\"",
+            "FreqReference",
+            "9.06",
+            "-320,00",
+            "320.00",
+            "Hz",
+            "0,00",
+            "25",
+            "This monitoring value shows the actual frequency reference to the motor control."
+          ],
+          [
+            "3.5.2.3. Analog Input 3",
+            "V 2.1 .:",
+            "Output frequency",
+            "0,00",
+            "-320,00",
+            "320,00",
+            "Hz",
+            "0,00",
+            "1",
+            "This monitoring value shows the actual output frequency to the motor."
+          ],
+          [
+            "3.5.2.4. Analog Input 4\n3.5.2.5. Analog Input 5",
+            "V 2.1.5",
+            "Motor Current",
+            "0.00",
+            "0,00",
+            "5,20",
+            "A",
+            "0,00",
+            "3",
+            "This monitoring value shows the measured current of the motor."
+          ],
+          [
+            "3.5.2.6. Analog Input 6",
+            "V 2.1/",
+            "Motor Speed",
+            "",
+            "-1920",
+            "1920",
+            "rpm",
+            "0",
+            "2",
+            "This monitoring value shows the actual speed of the motor in rpm (calculated value)."
+          ],
+          [
+            "4 3.5.3. Digital outputs",
+            "V 2.1.5",
+            "Motor Torque",
+            "00",
+            "-300,0",
+            "300,0",
+            "%",
+            "0,0",
+            "4",
+            "This monitoring value shows the actual torque of the motor (calculated value)."
+          ],
+          [
+            "3.5.3.2. Slot B Basic",
+            "V 2.1.€",
+            "Motor Power",
+            "0,0",
+            "-300,0",
+            "300,0",
+            "%",
+            "0,0",
+            "",
+            "This monitoring value shows the actual shaft power of the motor (calculated value) as a percentage of the motor nominal power."
+          ],
+          [
+            "3.5.4. Analog outputs",
+            "V 2.1 .:",
+            "Motor Voltage",
+            "0,0",
+            "0,0",
+            "700,0",
+            "V",
+            "0,0",
+            "",
+            "This monitoring value shows the actual output voltage to the motor."
+          ],
+          [
+            "3.5.4.1. Slot A Basic\n3.6. Fieldbus DataMap",
+            "V 2.1.1",
+            "DC-link Voltage",
+            "329",
+            "0",
+            "1200",
+            "V",
+            "0",
+            "7",
+            "This monitoring value shows the measured voltage in the DC-link of the drive."
+          ],
+          [
+            "3.7. Prohibit Freq\n:selected:",
+            "V 2.1.5",
+            "Unit Temperature",
+            "21,0",
+            "-15.0",
+            "90.0",
+            "",
+            "0,0",
+            "",
+            "This monitoring value shows the measured heatsink temperature of the drive."
+          ],
+          [
+            "3.8. Supervisions 3.9. Protections",
+            "2.3. Basic ( 18)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3.9.1. General",
+            "V 2.3.\"",
+            "Output frequency",
+            "0.00",
+            "-320,00",
+            "320,00",
+            "Hz",
+            "0,00",
+            "1",
+            "This monitoring value shows the actual output frequency to the motor."
+          ],
+          [
+            "3.9.2. Motor Therm Prot",
+            "V 2.3.2",
+            "FreqReference",
+            "9,06",
+            "-320,00",
+            "320,00",
+            "Hz",
+            "0.00",
+            "2",
+            "This monitoring value shows the actual frequency reference to the motor control."
+          ],
+          [
+            "303 Motor Stall\n:selected:",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "TL:"
+          ],
+          [
+            "VO Datalogger Clockwise",
+            "",
+            "Online :selected: Ready",
+            "Run O :selected: Fault",
+            "Q :unselected: Alarm O :unselected:",
+            ":selected: C",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "VACON® 100 FLOW\nApplication Guide\n3 Applications\nDanfoss\nApplications\n3.1 Using the Applications\nUse the parameter P1.2 (Application) to select an application for the drive. Immediately when the parameter P1.2 changes, parame-\nter groups get their preset values.\n3.2 Standard and HVAC Applications\nUse the Standard and HVAC applications to control pumps or fans, for example.\nIt is possible to control the drive from the control panel (keypad), Fieldbus, or I/O terminal.\nWhen the drive is controlled with the I/O terminal, the frequency reference signal is connected to Al1 (0 ... 10 V) or Al2 (4 ... 20 mA).\nThe connection depends the type of the signal. There are also 3 preset frequency references available. The preset frequency referen-\nces can be activated with DI4 and DI5. The start/stop signals of the drive are connected to DI1 (start forward) and DI2 (start reverse).\nIt is possible to configure all the drive outputs freely in all the applications. There is 1 analog output (Output Frequency) and 3 relay\noutputs (Run, Fault, Ready) available on the basic I/O board.\n28 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplications\nApplication Guide\nStandard I/O board\nReference-\npotentiome-\nI\nter\n1 ... 10 kQ\n1\n1\n1\n1\n1\nRUN\nFAULT\n1\nmA\nTerminal\nSignal\nDescription\n1\n+10 Vref\nReference output\n2\nAI1+\nAnalog input 1 +\nFrequency reference\n(default 0 ... 10 V)\n3\nAI1-\nAnalog input 1 -\n4\nAI2+\nAnalog input 2 +\nFrequency reference\n(Default 4 ... 20 mA)\n5\nAI2-\nAnalog input 2 -\n6\n24Vout\n24 V auxiliary voltage\n7\nGND\nI/O ground\n8\nDI1\nDigital input 1\nStart forward\n9\nDI2\nDigital input 2\nStart reverse\n10\nDI3\nDigital input 3\nExternal fault\n11\nCM\nCommon for DI1-DI6\n12\n24 V out\n24 V auxiliary voltage\n13\nGND\nI/O ground\n14\nDI4\nDigital input 4\nDI4\nDI5\nOpen\nOpen\nClosed Open\nOpen\nClosed\nClosed | Closed | Preset Freq. 3\nFreq. ref.\nAnalog input 1\nPreset Freq. 1\nPreset Freq. 2\n15\nDI5\nDigital input 5\n16\nDI6\nDigital input 6\nFault reset\n17\nCM\nCommon for DI1-DI6\n18\nAO1+\nAnalog output 1 +\nOutput\nfrequency\n0 ... 20 mA)\n19\nAO1-\nAnalog output 1 -\n30\n+24 Vin\n24V auxiliary\ninput voltage\nA\nRS485\nSerial bus, negative\nModbus RTU,\nN2, BACnet\nB\nRS485\nSerial bus, positive\n21\nRO1/1 NC\nRelay output 1\nRUN\n22\nRO1/2 CM\n23\nRO1/3 NO\n24\nRO2/1 NC\nRelay output 2\nFAULT\n25\nRO2/2 CM\n26\nRO2/3 NO\n28\nTI1+\nThermistor input\n*\n29\nTI1-\n32\nRO3/2 CM\nRelay output 3\n** )\nREADY\n33\nRO3/3 NO\ne30bg590.10\nIllustration 6: The Default Control Connections of the Standard and HVAC Applications\n*) Available only in VACON® 100 X. ** ) For the DIP switch configurations in VACON® 100 X, see the VACON® 100 X Installation man-\nual.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 29",
+      "tablas": [
+        [
+          [
+            "",
+            "Terminal",
+            "",
+            "",
+            "Signal",
+            "Description"
+          ],
+          [
+            "1",
+            "+10 Vref",
+            "",
+            "",
+            "Reference output",
+            ""
+          ],
+          [
+            "2",
+            "AI1+",
+            "",
+            "",
+            "Analog input 1 +",
+            "Frequency reference (default 0 ... 10 V)"
+          ],
+          [
+            "3",
+            "AI1-",
+            "",
+            "",
+            "Analog input 1 -"
+          ],
+          [
+            "4",
+            "AI2+",
+            "",
+            "",
+            "Analog input 2 +",
+            "Frequency reference (Default 4 ... 20 mA)"
+          ],
+          [
+            "5",
+            "AI2-",
+            "",
+            "",
+            "Analog input 2 -"
+          ],
+          [
+            "6",
+            "24Vout",
+            "",
+            "",
+            "24 V auxiliary voltage",
+            "",
+            ""
+          ],
+          [
+            "7",
+            "GND",
+            ":selected:",
+            "",
+            "I/O ground",
+            ""
+          ],
+          [
+            "8",
+            "DI1",
+            ":unselected:",
+            "",
+            "Digital input 1",
+            "Start forward"
+          ],
+          [
+            "9",
+            "DI2",
+            ":unselected:",
+            "",
+            "Digital input 2",
+            "Start reverse"
+          ],
+          [
+            "10",
+            "DI3",
+            ":unselected: :unselected:",
+            "",
+            "Digital input 3",
+            "External fault"
+          ],
+          [
+            "11",
+            "CM",
+            ":selected:\n:unselected:",
+            "",
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "12",
+            "24 V out",
+            ":unselected: :unselected:",
+            "",
+            "24 V auxiliary voltage",
+            ""
+          ],
+          [
+            "13",
+            "GND",
+            ":selected:",
+            "",
+            "I/O ground",
+            ""
+          ],
+          [
+            "14",
+            "DI4",
+            ":unselected: :unselected:",
+            "",
+            "Digital input 4",
+            "DI4 DI5 Open Open Closed Open Open Closed Closed | Closed |",
+            "Preset Freq. 3 Freq. ref. Analog input 1 Preset Freq. 1 Preset Freq. 2"
+          ],
+          [
+            "15",
+            "DI5",
+            ":unselected: :unselected:",
+            "",
+            "Digital input 5"
+          ],
+          [
+            "16",
+            "DI6",
+            ":unselected: :unselected:",
+            "",
+            "Digital input 6",
+            "Fault reset"
+          ],
+          [
+            "17",
+            "CM",
+            ":unselected:",
+            "",
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "18",
+            "AO1+",
+            ":unselected:",
+            "",
+            "Analog output 1 +",
+            "Output frequency 0 ... 20 mA)"
+          ],
+          [
+            "19",
+            "AO1-",
+            ":selected:",
+            "",
+            "Analog output 1 -"
+          ],
+          [
+            "30",
+            "+24 Vin",
+            "",
+            "",
+            "24V auxiliary input voltage",
+            ""
+          ],
+          [
+            "A",
+            "RS485",
+            "",
+            "",
+            "Serial bus, negative",
+            "Modbus RTU, N2, BACnet"
+          ],
+          [
+            "B",
+            "RS485",
+            "",
+            "",
+            "Serial bus, positive"
+          ],
+          [
+            "21",
+            "RO1/1 NC",
+            "",
+            "",
+            ":unselected: Relay output 1",
+            "RUN"
+          ],
+          [
+            "22",
+            "RO1/2 CM",
+            "",
+            "",
+            ""
+          ],
+          [
+            "23",
+            "RO1/3 NO",
+            "",
+            "",
+            ""
+          ],
+          [
+            "24",
+            "RO2/1 NC",
+            "",
+            "",
+            ":unselected: Relay output 2",
+            "FAULT"
+          ],
+          [
+            "25",
+            "RO2/2 CM",
+            "",
+            "",
+            ""
+          ],
+          [
+            "26",
+            "RO2/3 NO",
+            "",
+            "",
+            ""
+          ],
+          [
+            "28",
+            "TI1+",
+            "",
+            "",
+            "Thermistor input",
+            "*"
+          ],
+          [
+            "29",
+            "TI1-",
+            "",
+            "",
+            ""
+          ],
+          [
+            "32",
+            "RO3/2 CM",
+            "",
+            "",
+            "Relay output 3",
+            "** ) READY"
+          ],
+          [
+            "33",
+            "RO3/3 NO",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nAl1\nA\nB\ne30bg589.10\nAI2\nDIO's\nFLOAT\nDIO's\nFLOAT\nGND\nGND\nØ\nC\nIllustration 7: The DIP Switch\nA\nDigital input DIP switch\nC\nConnected to GND (Default)\nB\nFloating\nSee information on the Startup, and Fire mode wizards in 4.2.1 Wizards in Menu 1.1.\nTable 3: M1 Quick Setup\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.2\nApplication\n0\n4\n0\n212\n0 = Standard\n1 = HVAC\n2 = PID Control\n3 = Multi-pump (single drive)\n4 = Multi-pump (multidrive)\n1.3\nMinimum Frequency\nReference\n0.00\nP1.4\nHz\n0.0\n101\n1.4\nMaximum Frequency\nReference\nP1.3\n320.0\nHz\n50.0/60.0\n102\n1.5\nAcceleration Time 1\n0.1\n3000.0\ns\n5.0\n103\n1.6\nDeceleration Time 1\n0.1\n3000.0\ns\n5.0\n104\n1.7\nMotor Current Limit\nIH*0.1\nIs\nA\nVaries\n107\n1.8\nMotor Type\n0\n2\n0\n650\n0 = Induction Motor\n1 = Permanent Magnet Motor\n2 = Reluctance Motor\n1.9\nMotor Nominal Volt-\nage\nVaries\nVaries\nV\nVaries\n110\nFind this value Un on the nameplate of the mo-\ntor.\nNOTE! Find out if the motor connection is Delta\nor Star.\n1.10\nMotor Nominal Fre-\nquency\n8.0\n320.0\nHz\n50/60\n111\nFind this value fn on the nameplate of the mo-\ntor.\n30 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.2",
+            "Application",
+            "0",
+            "4",
+            "",
+            "0",
+            "212",
+            "0 = Standard 1 = HVAC 2 = PID Control 3 = Multi-pump (single drive) 4 = Multi-pump (multidrive)"
+          ],
+          [
+            "1.3",
+            "Minimum Frequency Reference",
+            "0.00",
+            "P1.4",
+            "Hz",
+            "0.0",
+            "101",
+            ""
+          ],
+          [
+            "1.4",
+            "Maximum Frequency Reference",
+            "P1.3",
+            "320.0",
+            "Hz",
+            "50.0/60.0",
+            "102",
+            ""
+          ],
+          [
+            "1.5",
+            "Acceleration Time 1",
+            "0.1",
+            "3000.0",
+            "s",
+            "5.0",
+            "103",
+            ""
+          ],
+          [
+            "1.6",
+            "Deceleration Time 1",
+            "0.1",
+            "3000.0",
+            "s",
+            "5.0",
+            "104",
+            ""
+          ],
+          [
+            "1.7",
+            "Motor Current Limit",
+            "IH*0.1",
+            "Is",
+            "A",
+            "Varies",
+            "107",
+            ""
+          ],
+          [
+            "1.8",
+            "Motor Type",
+            "0",
+            "2",
+            "",
+            "0",
+            "650",
+            "0 = Induction Motor 1 = Permanent Magnet Motor 2 = Reluctance Motor"
+          ],
+          [
+            "1.9",
+            "Motor Nominal Volt- age",
+            "Varies",
+            "Varies",
+            "V",
+            "Varies",
+            "110",
+            "Find this value Un on the nameplate of the mo- tor. NOTE! Find out if the motor connection is Delta or Star."
+          ],
+          [
+            "1.10",
+            "Motor Nominal Fre- quency",
+            "8.0",
+            "320.0",
+            "Hz",
+            "50/60",
+            "111",
+            "Find this value fn on the nameplate of the mo- tor."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.11\nMotor Nominal Speed\n24\n19200\nRPM\nVaries\n112\nFind this value nn on the nameplate of the mo-\ntor.\n1.12\nMotor Nominal Cur-\nrent\nIH * 0.1\nIH * 2\nA\nVaries\n113\nFind this value In on the nameplate of the mo-\ntor.\n1.13\nMotor Cos Phi (Power\nFactor)\n0.30\n1.00\nVaries\n120\nFind this value on the nameplate of the motor.\n1.14\nEnergy Optimization\n0\n1\n0\n666\n0 = Disabled\n1 = Enabled\n1.15\nIdentification\n0\n2\n0\n631\n0 = No action\n1 = At standstill\n2 = With rotation\n1.16\nStart Function\n0\n1\n0\n505\n0 = Ramping\n1 = Flying Start\n1.17\nStop Function\n0\n1\n0\n506\n0 = Coasting\n1 = Ramping\n1.18\nAutomatic Reset\n0\n1\n0\n731\n0 = Disabled\n1 = Enabled\n1.19\nResponse to External\nFault\n0\n3\n2\n701\n0 = No action\n1 = Alarm\n2 = Fault (Stop according to stop mode)\n3 = Fault (Stop by coasting)\n1.20\nResponse to AI Low\nFault\n0\n5\n0\n700\n0 = No action\n1 = Alarm\n2 = Alarm+preset fault frequency (P3.9.1.13)\n3 = Alarm + previous frequency\n4 = Fault (Stop according to stop mode)\n5 = Fault (Stop by coasting)\n1.21\nRemote Control Place\n0\n1\n0\n172\n0 = I/O control\n1 = Fieldbus control\n1.22\nI/O Control Reference\nA Selection\n1\n20\n5\n117\n1 = Preset Frequency 0\n2 = Keypad reference\n3 = Fieldbus\n4 = AI1\n5 = AI2\n6 = AI1+AI2\n7 = PID reference\n8 = Motor potentiometer\n11 = Block Out. 1\n12 = Block Out.2\n13 = Block Out.3\n14 = Block Out.4\n15 = Block Out.5\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 31",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.11",
+            "Motor Nominal Speed",
+            "24",
+            "19200",
+            "RPM",
+            "Varies",
+            "112",
+            "Find this value nn on the nameplate of the mo- tor."
+          ],
+          [
+            "1.12",
+            "Motor Nominal Cur- rent",
+            "IH * 0.1",
+            "IH * 2",
+            "A",
+            "Varies",
+            "113",
+            "Find this value In on the nameplate of the mo- tor."
+          ],
+          [
+            "1.13",
+            "Motor Cos Phi (Power Factor)",
+            "0.30",
+            "1.00",
+            "",
+            "Varies",
+            "120",
+            "Find this value on the nameplate of the motor."
+          ],
+          [
+            "1.14",
+            "Energy Optimization",
+            "0",
+            "1",
+            "",
+            "0",
+            "666",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "1.15",
+            "Identification",
+            "0",
+            "2",
+            "",
+            "0",
+            "631",
+            "0 = No action 1 = At standstill 2 = With rotation"
+          ],
+          [
+            "1.16",
+            "Start Function",
+            "0",
+            "1",
+            "",
+            "0",
+            "505",
+            "0 = Ramping 1 = Flying Start"
+          ],
+          [
+            "1.17",
+            "Stop Function",
+            "0",
+            "1",
+            "",
+            "0",
+            "506",
+            "0 = Coasting 1 = Ramping"
+          ],
+          [
+            "1.18",
+            "Automatic Reset",
+            "0",
+            "1",
+            "",
+            "0",
+            "731",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "1.19",
+            "Response to External Fault",
+            "0",
+            "3",
+            "",
+            "2",
+            "701",
+            "0 = No action 1 = Alarm 2 = Fault (Stop according to stop mode) 3 = Fault (Stop by coasting)"
+          ],
+          [
+            "1.20",
+            "Response to AI Low Fault",
+            "0",
+            "5",
+            "",
+            "0",
+            "700",
+            "0 = No action 1 = Alarm 2 = Alarm+preset fault frequency (P3.9.1.13) 3 = Alarm + previous frequency 4 = Fault (Stop according to stop mode) 5 = Fault (Stop by coasting)"
+          ],
+          [
+            "1.21",
+            "Remote Control Place",
+            "0",
+            "1",
+            "",
+            "0",
+            "172",
+            "0 = I/O control 1 = Fieldbus control"
+          ],
+          [
+            "1.22",
+            "I/O Control Reference A Selection",
+            "1",
+            "20",
+            "",
+            "5",
+            "117",
+            "1 = Preset Frequency 0 2 = Keypad reference 3 = Fieldbus 4 = AI1 5 = AI2 6 = AI1+AI2 7 = PID reference 8 = Motor potentiometer 11 = Block Out. 1 12 = Block Out.2 13 = Block Out.3 14 = Block Out.4 15 = Block Out.5"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n16 = Block Out.6\n17 = Block Out.7\n18 = Block Out.8\n19 = Block Out.9\n20 = Block Out. 10\n1.23\nKeypad Control Refer-\nence Selection\n1\n20\n1\n121\nSee P1.22.\n1.24\nFieldbus Control Ref-\nerence Selection\n1\n20\n2\n122\nSee P1.22.\n1.25\nAI1 Signal Range\n0\n1\n0\n379\n0= 0 ... 10 V/0 ... 20 mA\n1= 2 ... 10 V/4 ... 20 mA\n1.26\nAI2 Signal Range\n0\n1\n1\n390\n0= 0 ... 10 V/0 ... 20 mA\n1= 2 ... 10 V/4 ... 20 mA\n1.27\nRO1 Function\n0\n74\n2\n11001\nSee P3.5.3.2.1.\n1.28\nRO2 Function\n0\n74\n3\n11004\nSee P3.5.3.2.1.\n1.29\nRO3 Function\n0\n74\n1\n11007\nSee P3.5.3.2.1.\n1.30\nAO1 Function\n0\n31\n2\n10050\nSee P3.5.4.1.1.\nTable 4: M1.31 Standard/M1.32 HVAC\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.31.1\nPreset Frequency 1\nP1.3\nP1.4\nHz\n10.0\n105\n1.31.2\nPreset Frequency 2\nP1.3\nP1.4\nHz\n15.0\n106\n1.31.3\nPreset Frequency 3\nP1.3\nP1.4\nHz\n20.0\n126\n3.3 PID Control Application\nUse the PID control application with processes where the process variable (for example pressure) is controlled through control of\nthe speed of the motor.\nIn this application, the internal PID controller of the drive is configured for 1 setpoint and 1 feedback signal.\nIt is possible to use 2 control places. Make the selection of the control place A or B with DI6. When control place A is active, the start/\nstop commands are given by DI1, and the PID controller gives the frequency reference. When control place B is active, start/stop\ncommands are given by DI4, and AI1 gives the frequency reference.\nIt is possible to configure all the drive outputs freely in all the applications. There are 1 analog output (Output Frequency) and 3\nrelay outputs (Run, Fault, Ready) available on the basic I/O board.\n32 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "16 = Block Out.6 17 = Block Out.7 18 = Block Out.8 19 = Block Out.9 20 = Block Out. 10"
+          ],
+          [
+            "1.23",
+            "Keypad Control Refer- ence Selection",
+            "1",
+            "20",
+            "",
+            "1",
+            "121",
+            "See P1.22."
+          ],
+          [
+            "1.24",
+            "Fieldbus Control Ref- erence Selection",
+            "1",
+            "20",
+            "",
+            "2",
+            "122",
+            "See P1.22."
+          ],
+          [
+            "1.25",
+            "AI1 Signal Range",
+            "0",
+            "1",
+            "",
+            "0",
+            "379",
+            "0= 0 ... 10 V/0 ... 20 mA 1= 2 ... 10 V/4 ... 20 mA"
+          ],
+          [
+            "1.26",
+            "AI2 Signal Range",
+            "0",
+            "1",
+            "",
+            "1",
+            "390",
+            "0= 0 ... 10 V/0 ... 20 mA 1= 2 ... 10 V/4 ... 20 mA"
+          ],
+          [
+            "1.27",
+            "RO1 Function",
+            "0",
+            "74",
+            "",
+            "2",
+            "11001",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.28",
+            "RO2 Function",
+            "0",
+            "74",
+            "",
+            "3",
+            "11004",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.29",
+            "RO3 Function",
+            "0",
+            "74",
+            "",
+            "1",
+            "11007",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.30",
+            "AO1 Function",
+            "0",
+            "31",
+            "",
+            "2",
+            "10050",
+            "See P3.5.4.1.1."
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.31.1",
+            "Preset Frequency 1",
+            "P1.3",
+            "P1.4",
+            "Hz",
+            "10.0",
+            "105",
+            ""
+          ],
+          [
+            "1.31.2",
+            "Preset Frequency 2",
+            "P1.3",
+            "P1.4",
+            "Hz",
+            "15.0",
+            "106",
+            ""
+          ],
+          [
+            "1.31.3",
+            "Preset Frequency 3",
+            "P1.3",
+            "P1.4",
+            "Hz",
+            "20.0",
+            "126",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nReferencepo-\ntentiometer\n1 ... 10 kQ\n2-wire\ntransmitter\nActual\nvalue\nI =\n(0)4 ... 20 mA\n1\nApplications\nStandard I/O board\ne30bi987.10\n1\n-\n+\n1\n1\nRUN\nmA\nFAULT\nTerminal\n1\n+10Vref\n2\nAI1+\n3\nAI1-\n4\nAI2+\n5\nAI2-\n6\n24 Vout\n7\nGND\n8\nDI1\n9\nDI2\n10\nDI3\n11\nCM\n12\n24 v out\n13\nGND\n14\nDI4\n15\nDIS\n16\nDI6\n17\nCM\n18\nAO1+\n19\nAO1-/GND\n30\n+24 Vin\nA\nRS485\nB\nRS485\n21\nRO1/1 NC\n22\nRO1/2 CM\n23\nRO1/3 NO\n24\nRO2/1 NC\n25\nRO2/2 CM\n26\nRO2/3 NO\n28\nTI1+\n29\nTI1-\n32\nRO3/2 CM\n33\nRO3/3 NO\nSignal\nDescription\nReference output\nAnalog input 1 +\nPlace A: PID setpoint (reference)\nPlace B: Frequency reference\n(default: 0 ... 10 V)\nAnalog input 1 -\nAnalog input 2 +\nPID feedback\n(actual value)\n(default: 4 ... 20 mA)\nAnalog input 2 -\n24 V auxiliary voltage\nI/O ground\nDigital input 1\nPlace A: Start forward\n(PID controller)\nDigital input 2\nExternal fault\nDigital input 3\nFault reset\nCommon for DI1-DI6\n24 V auxiliary voltage\nI/O ground\nDigital input 4\nPlace B: Start forward\n(Freq. reference P3.3.1.6)\nDigital input 5\nPreset frequency 1\nDigital input 6\nControl place A/B selection\nCommon for DI1-DI6\nAnalog output 1 +\nOutput\nfrequency\n0 ... 20 mA)\nAnalog output 1 -\n24 V auxiliary\ninput voltage\nSerial bus, negative\nModbus RTU\nSerial bus, positive\nRelay output 1\nRUN\nRelay output 2\nFAULT\nThermistor input\n*)\nRelay output 3\nREADY\n** )\nIllustration 8: The Default Control Connections of the PID Control Application\n*) Available only in VACON® 100 X. ** ) For the DIP switch configurations in VACON® 100 X, see the VACON® 100 X Installation man-\nual.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 33",
+      "tablas": [
+        [
+          [
+            "Terminal"
+          ],
+          [
+            ""
+          ],
+          [
+            "1",
+            "",
+            "+10Vref"
+          ],
+          [
+            "2",
+            "AI1+"
+          ],
+          [
+            "3",
+            "AI1-"
+          ],
+          [
+            "4",
+            "AI2+"
+          ],
+          [
+            "5",
+            "",
+            "AI2-"
+          ],
+          [
+            "6",
+            "",
+            "24 Vout"
+          ],
+          [
+            "7",
+            "",
+            "GND\n:selected:"
+          ],
+          [
+            "8",
+            "",
+            "DI1\n:unselected:"
+          ],
+          [
+            "9",
+            "",
+            "DI2\n:unselected:"
+          ],
+          [
+            "10",
+            "",
+            "DI3\n:unselected:"
+          ],
+          [
+            "11",
+            "",
+            "CM\n:selected:\n:unselected:"
+          ],
+          [
+            "12",
+            "",
+            "24 v out\n:unselected: :unselected:"
+          ],
+          [
+            "13",
+            "",
+            "GND\n:selected:"
+          ],
+          [
+            "14",
+            "",
+            "DI4\n:unselected: :unselected:"
+          ],
+          [
+            "15",
+            "",
+            "DIS\n:unselected: :unselected:"
+          ],
+          [
+            "16",
+            "",
+            "DI6\n:unselected: :unselected:"
+          ],
+          [
+            "17",
+            "",
+            "CM\n:unselected:"
+          ],
+          [
+            "18",
+            "",
+            "AO1+\n:unselected:"
+          ],
+          [
+            "19",
+            "",
+            "AO1-/GND :selected:"
+          ],
+          [
+            "30",
+            "",
+            "+24 Vin"
+          ],
+          [
+            "A",
+            "",
+            "RS485"
+          ],
+          [
+            "B",
+            "",
+            "RS485"
+          ],
+          [
+            "21",
+            "",
+            "RO1/1 NC"
+          ],
+          [
+            "22",
+            "RO1/2 CM"
+          ],
+          [
+            "23",
+            "RO1/3 NO"
+          ],
+          [
+            "24",
+            "RO2/1 NC"
+          ],
+          [
+            "25",
+            "RO2/2 CM"
+          ],
+          [
+            "26",
+            "RO2/3 NO"
+          ],
+          [
+            "28",
+            "",
+            "TI1+"
+          ],
+          [
+            "29",
+            "",
+            "TI1-"
+          ],
+          [
+            "32",
+            "RO3/2 CM"
+          ],
+          [
+            "33",
+            "RO3/3 NO"
+          ]
+        ],
+        [
+          [
+            "Signal",
+            "Description"
+          ],
+          [
+            "Reference output",
+            ""
+          ],
+          [
+            "Analog input 1 +",
+            "Place A: PID setpoint (reference) Place B: Frequency reference (default: 0 ... 10 V)"
+          ],
+          [
+            "Analog input 1 -"
+          ],
+          [
+            "Analog input 2 +",
+            "PID feedback (actual value) (default: 4 ... 20 mA)"
+          ],
+          [
+            "Analog input 2 -"
+          ],
+          [
+            "24 V auxiliary voltage",
+            ""
+          ],
+          [
+            "I/O ground",
+            ""
+          ],
+          [
+            "Digital input 1",
+            "Place A: Start forward (PID controller)"
+          ],
+          [
+            "Digital input 2",
+            "External fault"
+          ],
+          [
+            "Digital input 3",
+            "Fault reset"
+          ],
+          [
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "24 V auxiliary voltage",
+            ""
+          ],
+          [
+            "I/O ground",
+            ""
+          ],
+          [
+            "Digital input 4",
+            "Place B: Start forward (Freq. reference P3.3.1.6)"
+          ],
+          [
+            "Digital input 5",
+            "Preset frequency 1"
+          ],
+          [
+            "Digital input 6",
+            "Control place A/B selection"
+          ],
+          [
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "Analog output 1 +",
+            "Output frequency 0 ... 20 mA)"
+          ],
+          [
+            "Analog output 1 -"
+          ],
+          [
+            "24 V auxiliary input voltage",
+            ""
+          ],
+          [
+            "Serial bus, negative",
+            "Modbus RTU"
+          ],
+          [
+            "Serial bus, positive"
+          ],
+          [
+            "Relay output 1",
+            "RUN"
+          ],
+          [
+            "Relay output 2",
+            "FAULT"
+          ],
+          [
+            "Thermistor input",
+            "*)"
+          ],
+          [
+            "Relay output 3",
+            "READY ** )"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nAl1\nA\nB\ne30bg589.10\nAI2\nDIO's\nFLOAT\nDIO's\nFLOAT\nGND\nGND\nØ\nC\nIllustration 9: The DIP Switch\nA\nDigital input DIP switch\nC\nConnected to GND (Default)\nB\nFloating\nSee information on the Startup, and Fire mode wizards in 4.2.1 Wizards in Menu 1.1.\nTable 5: M1 Quick Setup\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.2\nApplication\n0\n4\n2\n212\n0 = Standard\n1 = HVAC\n2 = PID Control\n3 = Multi-pump (single drive)\n4 = Multi-pump (multidrive)\n1.3\nMinimum Frequency\nReference\n0.00\nP1.4\nHz\n0.0\n101\n1.4\nMaximum Frequency\nReference\nP1.3\n320.0\nHz\n50.0/60.0\n102\n1.5\nAcceleration Time 1\n0.1\n3000.0\ns\n5.0\n103\n1.6\nDeceleration Time 1\n0.1\n3000.0\ns\n5.0\n104\n1.7\nMotor Current Limit\nIH*0.1\nIs\nA\nVaries\n107\n1.8\nMotor Type\n0\n2\n0\n650\n0 = Induction Motor\n1 = Permanent Magnet Motor\n2 = Reluctance Motor\n1.9\nMotor Nominal Volt-\nage\nVaries\nVaries\nV\nVaries\n110\nFind this value Un on the nameplate of the mo-\ntor.\nNOTE! Find out if the motor connection is Delta\nor Star.\n1.10\nMotor Nominal Fre-\nquency\n8.0\n320.0\nHz\n50/60\n111\nFind this value fn on the nameplate of the mo-\ntor.\n34 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.2",
+            "Application",
+            "0",
+            "4",
+            "",
+            "2",
+            "212",
+            "0 = Standard 1 = HVAC 2 = PID Control 3 = Multi-pump (single drive) 4 = Multi-pump (multidrive)"
+          ],
+          [
+            "1.3",
+            "Minimum Frequency Reference",
+            "0.00",
+            "P1.4",
+            "Hz",
+            "0.0",
+            "101",
+            ""
+          ],
+          [
+            "1.4",
+            "Maximum Frequency Reference",
+            "P1.3",
+            "320.0",
+            "Hz",
+            "50.0/60.0",
+            "102",
+            ""
+          ],
+          [
+            "1.5",
+            "Acceleration Time 1",
+            "0.1",
+            "3000.0",
+            "s",
+            "5.0",
+            "103",
+            ""
+          ],
+          [
+            "1.6",
+            "Deceleration Time 1",
+            "0.1",
+            "3000.0",
+            "s",
+            "5.0",
+            "104",
+            ""
+          ],
+          [
+            "1.7",
+            "Motor Current Limit",
+            "IH*0.1",
+            "Is",
+            "A",
+            "Varies",
+            "107",
+            ""
+          ],
+          [
+            "1.8",
+            "Motor Type",
+            "0",
+            "2",
+            "",
+            "0",
+            "650",
+            "0 = Induction Motor 1 = Permanent Magnet Motor 2 = Reluctance Motor"
+          ],
+          [
+            "1.9",
+            "Motor Nominal Volt- age",
+            "Varies",
+            "Varies",
+            "V",
+            "Varies",
+            "110",
+            "Find this value Un on the nameplate of the mo- tor. NOTE! Find out if the motor connection is Delta or Star."
+          ],
+          [
+            "1.10",
+            "Motor Nominal Fre- quency",
+            "8.0",
+            "320.0",
+            "Hz",
+            "50/60",
+            "111",
+            "Find this value fn on the nameplate of the mo- tor."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.11\nMotor Nominal Speed\n24\n19200\nRPM\nVaries\n112\nFind this value nn on the nameplate of the mo-\ntor.\n1.12\nMotor Nominal Cur-\nrent\nIH * 0.1\nIH * 2\nA\nVaries\n113\nFind this value In on the nameplate of the mo-\ntor.\n1.13\nMotor Cos Phi (Power\nFactor)\n0.30\n1.00\nVaries\n120\nFind this value on the nameplate of the motor.\n1.14\nEnergy Optimization\n0\n1\n0\n666\n0 = Disabled\n1 = Enabled\n1.15\nIdentification\n0\n2\n0\n631\n0 = No action\n1 = At standstill\n2 = With rotation\n1.16\nStart Function\n0\n1\n0\n505\n0 = Ramping\n1 = Flying Start\n1.17\nStop Function\n0\n1\n0\n506\n0 = Coasting\n1 = Ramping\n1.18\nAutomatic Reset\n0\n1\n0\n731\n0 = Disabled\n1 = Enabled\n1.19\nResponse to External\nFault\n0\n3\n2\n701\n0 = No action\n1 = Alarm\n2 = Fault (Stop according to stop mode)\n3 = Fault (Stop by coasting)\n1.20\nResponse to AI Low\nFault\n0\n5\n0\n700\n0 = No action\n1 = Alarm\n2 = Alarm+preset fault frequency (P3.9.1.13)\n3 = Alarm + previous frequency\n4 = Fault (Stop according to stop mode)\n5 = Fault (Stop by coasting)\n1.21\nRemote Control Place\n0\n1\n0\n172\n0 = I/O control\n1 = Fieldbus control\n1.22\nI/O Control Reference\nA Selection\n1\n20\n6\n117\n1 = Preset Frequency 0\n2 = Keypad reference\n3 = Fieldbus\n4 = AI1\n5 = AI2\n6 = AI1+AI2\n7 = PID reference\n8 = Motor potentiometer\n11 = Block Out. 1\n12 = Block Out.2\n13 = Block Out.3\n14 = Block Out.4\n15 = Block Out.5\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 35",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.11",
+            "Motor Nominal Speed",
+            "24",
+            "19200",
+            "RPM",
+            "Varies",
+            "112",
+            "Find this value nn on the nameplate of the mo- tor."
+          ],
+          [
+            "1.12",
+            "Motor Nominal Cur- rent",
+            "IH * 0.1",
+            "IH * 2",
+            "A",
+            "Varies",
+            "113",
+            "Find this value In on the nameplate of the mo- tor."
+          ],
+          [
+            "1.13",
+            "Motor Cos Phi (Power Factor)",
+            "0.30",
+            "1.00",
+            "",
+            "Varies",
+            "120",
+            "Find this value on the nameplate of the motor."
+          ],
+          [
+            "1.14",
+            "Energy Optimization",
+            "0",
+            "1",
+            "",
+            "0",
+            "666",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "1.15",
+            "Identification",
+            "0",
+            "2",
+            "",
+            "0",
+            "631",
+            "0 = No action 1 = At standstill 2 = With rotation"
+          ],
+          [
+            "1.16",
+            "Start Function",
+            "0",
+            "1",
+            "",
+            "0",
+            "505",
+            "0 = Ramping 1 = Flying Start"
+          ],
+          [
+            "1.17",
+            "Stop Function",
+            "0",
+            "1",
+            "",
+            "0",
+            "506",
+            "0 = Coasting 1 = Ramping"
+          ],
+          [
+            "1.18",
+            "Automatic Reset",
+            "0",
+            "1",
+            "",
+            "0",
+            "731",
+            "0 = Disabled 1 = Enabled"
+          ],
+          [
+            "1.19",
+            "Response to External Fault",
+            "0",
+            "3",
+            "",
+            "2",
+            "701",
+            "0 = No action 1 = Alarm 2 = Fault (Stop according to stop mode) 3 = Fault (Stop by coasting)"
+          ],
+          [
+            "1.20",
+            "Response to AI Low Fault",
+            "0",
+            "5",
+            "",
+            "0",
+            "700",
+            "0 = No action 1 = Alarm 2 = Alarm+preset fault frequency (P3.9.1.13) 3 = Alarm + previous frequency 4 = Fault (Stop according to stop mode) 5 = Fault (Stop by coasting)"
+          ],
+          [
+            "1.21",
+            "Remote Control Place",
+            "0",
+            "1",
+            "",
+            "0",
+            "172",
+            "0 = I/O control 1 = Fieldbus control"
+          ],
+          [
+            "1.22",
+            "I/O Control Reference A Selection",
+            "1",
+            "20",
+            "",
+            "6",
+            "117",
+            "1 = Preset Frequency 0 2 = Keypad reference 3 = Fieldbus 4 = AI1 5 = AI2 6 = AI1+AI2 7 = PID reference 8 = Motor potentiometer 11 = Block Out. 1 12 = Block Out.2 13 = Block Out.3 14 = Block Out.4 15 = Block Out.5"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n16 = Block Out.6\n17 = Block Out.7\n18 = Block Out.8\n19 = Block Out.9\n20 = Block Out. 10\n1.23\nKeypad Control Refer-\nence Selection\n1\n20\n1\n121\nSee P1.22.\n1.24\nFieldbus Control Ref-\nerence Selection\n1\n20\n2\n122\nSee P1.22.\n1.25\nAI1 Signal Range\n0\n1\n0\n379\n0= 0 ... 10 V/0 ... 20 mA\n1= 2 ... 10 V/4 ... 20 mA\n1.26\nAI2 Signal Range\n0\n1\n1\n390\n0= 0 ... 10 V/0 ... 20 mA\n1= 2 ... 10 V/4 ... 20 mA\n1.27\nRO1 Function\n0\n74\n2\n11001\nSee P3.5.3.2.1.\n1.28\nRO2 Function\n0\n74\n3\n11004\nSee P3.5.3.2.1.\n1.29\nRO3 Function\n0\n74\n1\n11007\nSee P3.5.3.2.1.\n1.30\nAO1 Function\n0\n31\n2\n10050\nSee P3.5.4.1.1.\nTable 6: M1.33 PID Control\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.33.1\nPID Gain\n0.00\n100.00\n%\n100.00\n118\n1.33.2\nPID Integration Time\n0.00\n600.00\ns\n1.00\n119\n1.33.3\nPID Derivation Time\n0.00\n100.00\ns\n0.00\n132\n1.33.4\nProcess Unit Selection\n1\n44\n1\n1036\nSee P3.13.1.4\n1.33.5\nProcess Unit Min\nVaries\nVaries\nVaries\n1033\nSee P3.13.2.6.\n1.33.6\nProcess Unit Max\nVaries\nVaries\nVaries\n1034\n1.33.7\nFeedback 1 Source Selection\n0\n30\n2\n334\nSee P3.13.3.3\n1.33.8\nSetpoint 1 Source Selection\n0\n32\n1\n332\nSee P3.13.2.6\n1.33.9\nKeypad Setpoint 1\nVaries\nVaries\nVaries\n0\n167\n1.33.10\nSP1 Sleep Frequency Limit\n0.0\n320.0\nHz\n0.0\n1016\n1.33.11\nSP1 Sleep Delay\n0\n3000\ns\n0\n1017\n0 = Not used\n1.33.12\nSP1 Wake Up Level\nVaries\nVaries\nVaries\nVaries\n1018\n0 = Not used\n1.33.13\nPreset Frequency 1\nP1.3\nP1.4\nHz\n10.0\n105\n3.4 Multi-pump (Single Drive) Application\nUse the Multi-pump (single drive) application in applications, where 1 drive controls a system that has the maximum of 8 parallel\nmotors, for example, pumps, fans or compressors. By default, Multi-pump (single drive) application is configured for 3 parallel mo-\ntors.\n36 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "16 = Block Out.6 17 = Block Out.7 18 = Block Out.8 19 = Block Out.9 20 = Block Out. 10"
+          ],
+          [
+            "1.23",
+            "Keypad Control Refer- ence Selection",
+            "1",
+            "20",
+            "",
+            "1",
+            "121",
+            "See P1.22."
+          ],
+          [
+            "1.24",
+            "Fieldbus Control Ref- erence Selection",
+            "1",
+            "20",
+            "",
+            "2",
+            "122",
+            "See P1.22."
+          ],
+          [
+            "1.25",
+            "AI1 Signal Range",
+            "0",
+            "1",
+            "",
+            "0",
+            "379",
+            "0= 0 ... 10 V/0 ... 20 mA 1= 2 ... 10 V/4 ... 20 mA"
+          ],
+          [
+            "1.26",
+            "AI2 Signal Range",
+            "0",
+            "1",
+            "",
+            "1",
+            "390",
+            "0= 0 ... 10 V/0 ... 20 mA 1= 2 ... 10 V/4 ... 20 mA"
+          ],
+          [
+            "1.27",
+            "RO1 Function",
+            "0",
+            "74",
+            "",
+            "2",
+            "11001",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.28",
+            "RO2 Function",
+            "0",
+            "74",
+            "",
+            "3",
+            "11004",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.29",
+            "RO3 Function",
+            "0",
+            "74",
+            "",
+            "1",
+            "11007",
+            "See P3.5.3.2.1."
+          ],
+          [
+            "1.30",
+            "AO1 Function",
+            "0",
+            "31",
+            "",
+            "2",
+            "10050",
+            "See P3.5.4.1.1."
+          ]
+        ],
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.33.1",
+            "PID Gain",
+            "0.00",
+            "100.00",
+            "%",
+            "100.00",
+            "118",
+            ""
+          ],
+          [
+            "1.33.2",
+            "PID Integration Time",
+            "0.00",
+            "600.00",
+            "s",
+            "1.00",
+            "119",
+            ""
+          ],
+          [
+            "1.33.3",
+            "PID Derivation Time",
+            "0.00",
+            "100.00",
+            "s",
+            "0.00",
+            "132",
+            ""
+          ],
+          [
+            "1.33.4",
+            "Process Unit Selection",
+            "1",
+            "44",
+            "",
+            "1",
+            "1036",
+            "See P3.13.1.4"
+          ],
+          [
+            "1.33.5",
+            "Process Unit Min",
+            "Varies",
+            "Varies",
+            "",
+            "Varies",
+            "1033",
+            "See P3.13.2.6."
+          ],
+          [
+            "1.33.6",
+            "Process Unit Max",
+            "Varies",
+            "Varies",
+            "",
+            "Varies",
+            "1034",
+            ""
+          ],
+          [
+            "1.33.7",
+            "Feedback 1 Source Selection",
+            "0",
+            "30",
+            "",
+            "2",
+            "334",
+            "See P3.13.3.3"
+          ],
+          [
+            "1.33.8",
+            "Setpoint 1 Source Selection",
+            "0",
+            "32",
+            "",
+            "1",
+            "332",
+            "See P3.13.2.6"
+          ],
+          [
+            "1.33.9",
+            "Keypad Setpoint 1",
+            "Varies",
+            "Varies",
+            "Varies",
+            "0",
+            "167",
+            ""
+          ],
+          [
+            "1.33.10",
+            "SP1 Sleep Frequency Limit",
+            "0.0",
+            "320.0",
+            "Hz",
+            "0.0",
+            "1016",
+            ""
+          ],
+          [
+            "1.33.11",
+            "SP1 Sleep Delay",
+            "0",
+            "3000",
+            "s",
+            "0",
+            "1017",
+            "0 = Not used"
+          ],
+          [
+            "1.33.12",
+            "SP1 Wake Up Level",
+            "Varies",
+            "Varies",
+            "Varies",
+            "Varies",
+            "1018",
+            "0 = Not used"
+          ],
+          [
+            "1.33.13",
+            "Preset Frequency 1",
+            "P1.3",
+            "P1.4",
+            "Hz",
+            "10.0",
+            "105",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nThe drive is connected to 1 of the motors, which becomes the regulating motor. The internal PID controller of the drive controls the\nspeed of the regulating motor and gives control signals by relay outputs to start or stop the auxiliary motors. External contactors\n(switch) set the auxiliary motors to the mains.\nIt is possible to control a process variable, the pressure, for example, by the control of the speed of the regulating motor and by the\nnumber of motors that operate.\n3 ~\ne30bi974.10\nA\nRO2\n0\nRO3\nM1\nM2\nM3\nM1\nM2\nB\nM3\nIllustration 10: Multi-pump (Single Drive) Configuration\nA\nStart / Stop\nB\nPressure sensor\nAutochange function (change of start order) makes the wear of the motors in the system more equal. Autochange function moni-\ntors the running hours and sets the start order of each motor. The motor that has the lowest running hours starts first and the motor\nthat has the highest running hours starts last. It is possible to configure the autochange to start based on the autochange interval\ntime set by the internal real-time clock (an RTC battery needed) of the drive.\nIt is possible to configure the autochange for all the motors in the system or only the auxiliary motors.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 37",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\n3~\ne30bi975.10\nO\nK2\nK3\nM1\nM2\nM3\nIllustration 11: Control Diagram with Only the Auxiliary Motors Configured to Autochange\n-\n-\ne30bi976.10\nK1\nK1.1\nK2\nK2.1\nK3.1\nK2\nM1\nM2\nM3\nIllustration 12: Control Diagram with All the Motors Configured to Autochange\nIt is possible to use 2 control places. Make the selection of the control place A or B with DI6. When control place A is active, DI1 gives\nthe start and stop commands, and the PID controller gives the frequency reference. When control place B is active, DI4 gives the\nstart and stop commands, and AI1 gives the frequency reference.\nIt is possible to configure all the drive outputs freely in all the applications. There is 1 analog output (Output Frequency) and 3 relay\noutputs (Run, Fault, Ready) available on the basic I/O board.\n38 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "VACON® 100 FLOW\nApplication Guide\nDanfoss\nApplications\nStandard I/O board\nReference-\npotentiome-\nter\n1 ... 10 kQ\n2-wire\ntransmitter\n1\n1\n1\n2\nActual\n-\nvalue\n+\n(0)4 ... 20 mA\n-\nT\nT\nmA\nA1\nA2\nA1\nA2\nA1\nA2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n30\nA\nB\n21\n22\n23\n24\n25\n26\n28\n29\n32\n33\nTerminal\n+10Vref\nAI1+\nAI1-\nAI2+\nAI2-\n24 V\nGND\nDI1\nDI2\nDI3\nCM\n24 V\nout\nGND\nDI4\nDI5\nDI6\nCM\nAO1+\nAO1-/GND\n+24 V.\nin\nRS485\nRS485\nRO1/1 NC\nRO1/2 CM\nRO1/3 NO\nRO2/1 NC\nRO2/2 CM\nRO2/3 NO\nTI1+\nTI1-\nRO3/2 CM\nRO3/3 NO\ne30bj008.10\nSignal\nDescription\nReference output\nAnalog input 1 +\nPlace A: Not used\nPlace B: Frequency reference\n(default: 0 ... 10 V)\nAnalog input 1 -\nAnalog input 2 +\nPID feedback\n(actual value)\n(default: 4 ... 20 mA)\nAnalog input 2 -\n24V auxiliary voltage\nI/O ground\nDigital input 1\nPlace A: Start forward\n(PID controller)\nDigital input 2\nPlace B: Start forward\n(Freq. ref. P3.3.1.6 )\nDigital input 3\nControl place A/B selection\nCommon for DI1-DI6\n24V auxiliary voltage\nI/O ground\nDigital input 4\nMotor 1 interlock\nDigital input 5\nMotor 2 interlock\nDigital input 6\nMotor 3 interlock\nCommon for DI1-DI6\nAnalog output 1 +\nOutput\nfrequency\n( default 0 ... 20 mA)\nAnalog output 1 -\n24 V auxiliary\ninput voltage\nSerial bus, negative\nModbus RTU\nSerial bus, positive\nRelay output 1\nMotor 1 control\n(Multi-pump K2 contactor)\nRelay output 2\nMotor 2 control\n(Multi-pump K2 contactor)\nThermistor input\n*)\nRelay output 3\nMotor 3 control\n***\n(Multi-pump K2 contactor)\nIllustration 13: The Default Control Connections of the Multi-pump (Single Drive) Application\n*) Available only in VACON® 100 X. ** ) For the DIP switch configurations in VACON® 100 X, see the VACON® 100 X Installation man-\nual.\nDanfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083 | 39",
+      "tablas": [
+        [
+          [
+            "Signal",
+            "Description"
+          ],
+          [
+            "Reference output",
+            ""
+          ],
+          [
+            "Analog input 1 +",
+            "Place A: Not used Place B: Frequency reference (default: 0 ... 10 V)"
+          ],
+          [
+            "Analog input 1 -"
+          ],
+          [
+            "Analog input 2 +",
+            "PID feedback (actual value) (default: 4 ... 20 mA)"
+          ],
+          [
+            "Analog input 2 -"
+          ],
+          [
+            "24V auxiliary voltage",
+            ""
+          ],
+          [
+            "I/O ground",
+            ""
+          ],
+          [
+            "Digital input 1",
+            "Place A: Start forward (PID controller)"
+          ],
+          [
+            "Digital input 2",
+            "Place B: Start forward (Freq. ref. P3.3.1.6 )"
+          ],
+          [
+            "Digital input 3",
+            "Control place A/B selection"
+          ],
+          [
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "24V auxiliary voltage",
+            ""
+          ],
+          [
+            "I/O ground",
+            ""
+          ],
+          [
+            "Digital input 4",
+            "Motor 1 interlock"
+          ],
+          [
+            "Digital input 5",
+            "Motor 2 interlock"
+          ],
+          [
+            "Digital input 6",
+            "Motor 3 interlock"
+          ],
+          [
+            "Common for DI1-DI6",
+            ""
+          ],
+          [
+            "Analog output 1 +",
+            "Output frequency ( default 0 ... 20 mA)"
+          ],
+          [
+            "Analog output 1 -"
+          ],
+          [
+            "24 V auxiliary input voltage",
+            ""
+          ],
+          [
+            "Serial bus, negative",
+            "Modbus RTU"
+          ],
+          [
+            "Serial bus, positive"
+          ],
+          [
+            "Relay output 1",
+            "Motor 1 control (Multi-pump K2 contactor)"
+          ],
+          [
+            "Relay output 2",
+            "Motor 2 control (Multi-pump K2 contactor)"
+          ],
+          [
+            "Thermistor input",
+            "*)"
+          ],
+          [
+            "Relay output 3",
+            "Motor 3 control *** (Multi-pump K2 contactor)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "VACON® 100 FLOW\nDanfoss\nApplication Guide\nApplications\nAl1\nA\nB\ne30bg589.10\nAI2\nDIO's\nFLOAT\nDIO's\nFLOAT\nGND\nGND\nØ\nC\nIllustration 14: The DIP Switch\nA\nDigital input DIP switch\nC\nConnected to GND (Default)\nB\nFloating\nSee information on the Startup, and Fire mode wizards in 4.2.1 Wizards in Menu 1.1.\nTable 7: M1 Quick Setup\nIndex\nParameter\nMin\nMax\nUnit\nDefault\nID\nDescription\n1.2\nApplication\n0\n4\n2\n212\n0 = Standard\n1 = HVAC\n2 = PID Control\n3 = Multi-pump (single drive)\n4 = Multi-pump (multidrive)\n1.3\nMinimum Frequency\nReference\n0.00\nP1.4\nHz\n0.0\n101\n1.4\nMaximum Frequency\nReference\nP1.3\n320.0\nHz\n50.0/60.0\n102\n1.5\nAcceleration Time 1\n0.1\n3000.0\ns\n5.0\n103\n1.6\nDeceleration Time 1\n0.1\n3000.0\ns\n5.0\n104\n1.7\nMotor Current Limit\nIH*0.1\nIs\nA\nVaries\n107\n1.8\nMotor Type\n0\n2\n0\n650\n0 = Induction Motor\n1 = Permanent Magnet Motor\n2 = Reluctance Motor\n1.9\nMotor Nominal Volt-\nage\nVaries\nVaries\nV\nVaries\n110\nFind this value Un on the nameplate of the mo-\ntor.\nNOTE! Find out if the motor connection is Delta\nor Star.\n1.10\nMotor Nominal Fre-\nquency\n8.0\n320.0\nHz\n50/60\n111\nFind this value fn on the nameplate of the mo-\ntor.\n40 | Danfoss A/S @ 2021.05\nAB298035655957en-000101 / DPD01083",
+      "tablas": [
+        [
+          [
+            "Index",
+            "Parameter",
+            "Min",
+            "Max",
+            "Unit",
+            "Default",
+            "ID",
+            "Description"
+          ],
+          [
+            "1.2",
+            "Application",
+            "0",
+            "4",
+            "",
+            "2",
+            "212",
+            "0 = Standard 1 = HVAC 2 = PID Control 3 = Multi-pump (single drive) 4 = Multi-pump (multidrive)"
+          ],
+          [
+            "1.3",
+            "Minimum Frequency Reference",
+            "0.00",
+            "P1.4",
+            "Hz",
+            "0.0",
+            "101",
+            ""
+          ],
+          [
+            "1.4",
+            "Maximum Frequency Reference",
+            "P1.3",
+            "320.0",
+            "Hz",
+            "50.0/60.0",
+            "102",
+            ""
+          ],
+          [
+            "1.5",
+            "Acceleration Time 1",
+            "0.1",
+            "3000.0",
+            "s",
+            "5.0",
+            "103",
+            ""
+          ],
+          [
+            "1.6",
+            "Deceleration Time 1",
+            "0.1",
+            "3000.0",
+            "s",
+            "5.0",
+            "104",
+            ""
+          ],
+          [
+            "1.7",
+            "Motor Current Limit",
+            "IH*0.1",
+            "Is",
+            "A",
+            "Varies",
+            "107",
+            ""
+          ],
+          [
+            "1.8",
+            "Motor Type",
+            "0",
+            "2",
+            "",
+            "0",
+            "650",
+            "0 = Induction Motor 1 = Permanent Magnet Motor 2 = Reluctance Motor"
+          ],
+          [
+            "1.9",
+            "Motor Nominal Volt- age",
+            "Varies",
+            "Varies",
+            "V",
+            "Varies",
+            "110",
+            "Find this value Un on the nameplate of the mo- tor. NOTE! Find out if the motor connection is Delta or Star."
+          ],
+          [
+            "1.10",
+            "Motor Nominal Fre- quency",
+            "8.0",
+            "320.0",
+            "Hz",
+            "50/60",
+            "111",
+            "Find this value fn on the nameplate of the mo- tor."
+          ]
+        ]
+      ]
+    }
+  ]
+}

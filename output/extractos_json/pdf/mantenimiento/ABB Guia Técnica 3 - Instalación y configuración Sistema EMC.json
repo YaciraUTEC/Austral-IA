@@ -1,0 +1,918 @@
+{
+  "archivo": "ABB Guia Técnica 3 - Instalación y configuración Sistema EMC",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Guía técnica Nº 3\nInstalación y configuración de\nun sistema de transmisión de\nenergía en conformidad con EMC\nABB",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "2\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Índice\n1\nIntroducción\n5\nGeneralidades\n5\nObjeto de esta guía\n5\nLas directivas relativas a convertidores\n5\n¿Quién es el fabricante?\n5\nLa responsabilidad del fabricante\n5\nCliente OEM como fabricante\n5\nConstructor de paneles o integrador de sistemas\ncomo fabricante\n6\nDefiniciones\n6\nInstalaciones y sistemas prácticos\n6\nPrincipios de conexión a tierra\n6\nManuales específicos para productos\n7\n2\nDefiniciones\n8\nCompatibilidad electromagnética (EMC) del PDS\n8\nInmunidad\n8\nEmisión\n8\nSistema de accionamiento de potencia\n8\nTipo de equipo\n9\nComponente\n10\nComponentes con función directa\n10\nComponentes sin función directa\n11\nAparatos y sistemas\n11\nInstalación\n11\nEtiquetaje CE para EMC\n11\nEntornos de instalación\n11\nPrimer entorno\n12\nSegundo entorno\n12\nPropagación\n12\nLa ruta del convertidor al mercado\n12\nDistribución sin restricciones\n13\nDistribución restringida\n13\nLímites de emisión EMC\n13\n3\nSoluciones de EMC\n15\nGeneralidades\n15\nSoluciones para compatibilidad EMC\n15\nEmisiones\n15\nEmisión conducida\n15\nEmisión radiada\n16\nParte limpia y sucia\n17\nFiltrado RFI\n17\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n3",
+      "tablas": [
+        [
+          [
+            "",
+            "1",
+            "Introducción",
+            "5"
+          ],
+          [
+            "",
+            "",
+            "Generalidades",
+            "5"
+          ],
+          [
+            "",
+            "Objeto de esta guía",
+            "5"
+          ],
+          [
+            "",
+            "",
+            "Las directivas relativas a convertidores",
+            "5"
+          ],
+          [
+            "",
+            "",
+            "¿Quién es el fabricante?",
+            "5"
+          ],
+          [
+            "",
+            "",
+            "La responsabilidad del fabricante",
+            "5"
+          ],
+          [
+            "",
+            "",
+            "Cliente OEM como fabricante\n:unselected:",
+            "5"
+          ],
+          [
+            "",
+            "",
+            "Constructor de paneles o integrador de sistemas como fabricante\n:unselected: :unselected:",
+            "6"
+          ],
+          [
+            "",
+            "",
+            "Definiciones\n:unselected:",
+            "6"
+          ],
+          [
+            "",
+            "",
+            "Instalaciones y sistemas prácticos",
+            "6"
+          ],
+          [
+            "",
+            "",
+            "Principios de conexión a tierra",
+            "6"
+          ],
+          [
+            "",
+            "",
+            "Manuales específicos para productos",
+            "7"
+          ],
+          [
+            "",
+            "2",
+            "Definiciones",
+            "8"
+          ],
+          [
+            "",
+            "",
+            "Compatibilidad electromagnética (EMC) del PDS",
+            "8"
+          ],
+          [
+            "",
+            "",
+            "Inmunidad",
+            "8"
+          ],
+          [
+            "",
+            "",
+            "Emisión",
+            "8"
+          ],
+          [
+            "",
+            "",
+            "Sistema de accionamiento de potencia",
+            "8"
+          ],
+          [
+            "",
+            "",
+            "Tipo de equipo",
+            "9"
+          ],
+          [
+            "",
+            "",
+            "Componente\n:unselected:",
+            "10"
+          ],
+          [
+            "",
+            "",
+            "Componentes con función directa\n:unselected:",
+            "10"
+          ],
+          [
+            "",
+            "",
+            "Componentes sin función directa\n:unselected:",
+            "11"
+          ],
+          [
+            "",
+            "",
+            "Aparatos y sistemas",
+            "11"
+          ],
+          [
+            "",
+            "",
+            "Instalación",
+            "11"
+          ],
+          [
+            "",
+            "",
+            "Etiquetaje CE para EMC",
+            "11"
+          ],
+          [
+            "",
+            "",
+            "Entornos de instalación",
+            "11"
+          ],
+          [
+            "",
+            "",
+            "Primer entorno",
+            "12"
+          ],
+          [
+            "",
+            "",
+            "Segundo entorno",
+            "12"
+          ],
+          [
+            "",
+            "",
+            "Propagación",
+            "12"
+          ],
+          [
+            "",
+            "",
+            "La ruta del convertidor al mercado",
+            "12"
+          ],
+          [
+            "",
+            "",
+            "Distribución sin restricciones",
+            "13"
+          ],
+          [
+            "",
+            "",
+            "Distribución restringida",
+            "13"
+          ],
+          [
+            "",
+            "",
+            "Límites de emisión EMC",
+            "13"
+          ],
+          [
+            "",
+            "3",
+            "Soluciones de EMC",
+            "15"
+          ],
+          [
+            "",
+            "",
+            "Generalidades",
+            "15"
+          ],
+          [
+            "",
+            "Soluciones para compatibilidad EMC",
+            "15"
+          ],
+          [
+            "",
+            "",
+            "Emisiones",
+            "15"
+          ],
+          [
+            "",
+            "Emisión conducida",
+            "15"
+          ],
+          [
+            "",
+            "Emisión radiada",
+            "16"
+          ],
+          [
+            "",
+            "Parte limpia y sucia",
+            "17"
+          ],
+          [
+            "",
+            "",
+            "Filtrado RFI",
+            "17"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "4\n5\n6\nSelección del filtro RFI\n18\nInstalación del filtro RFI\n18\nConvertidores en redes IT\n19\nSupresores de arco\n19\nSelección de una protección secundaria\n19\nOrificios en las protecciones\n21\nConexión a tierra de AF\n22\nConexión a tierra de AF con casquillos para paso\nde cable\n22\nConexión a tierra de AF con manguito conductor.\n23\nConexión a tierra de 360º en el motor\n24\nJuntas conductoras con cables de control\n24\nInstalación de accesorios\n25\nCableado interno\n26\nCableado y cables de control\n27\nCables de alimentación\n28\nImpedancia de transferencia\n30\nEmpleo de anillos de ferrita\n30\nEjemplos prácticos\n32\nInstalación simple\n32\nEjemplo de sistema de derivación <100kVA\n33\nEjemplo típico de convertidor de 12 pulsos\n34\nEjemplo de convertidor de secciones común\nalimentado por bus de CC\n36\nBibliografía\n37\nÍndice\n38\n4\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": [
+        [
+          [
+            "Selección del filtro RFI",
+            "18"
+          ],
+          [
+            "Instalación del filtro RFI",
+            "18"
+          ],
+          [
+            "Convertidores en redes IT",
+            "19"
+          ],
+          [
+            "Supresores de arco",
+            "19"
+          ],
+          [
+            "Selección de una protección secundaria",
+            "19"
+          ],
+          [
+            "Orificios en las protecciones",
+            "21"
+          ],
+          [
+            "Conexión a tierra de AF",
+            "22"
+          ],
+          [
+            "Conexión a tierra de AF con casquillos para paso de cable\n:unselected: :unselected:",
+            "22"
+          ],
+          [
+            "Conexión a tierra de AF con manguito conductor.",
+            "23"
+          ],
+          [
+            "Conexión a tierra de 360º en el motor\n:unselected:",
+            "24"
+          ],
+          [
+            "Juntas conductoras con cables de control",
+            "24"
+          ],
+          [
+            "Instalación de accesorios",
+            "25"
+          ],
+          [
+            "Cableado interno",
+            "26"
+          ],
+          [
+            "Cableado y cables de control",
+            "27"
+          ],
+          [
+            "Cables de alimentación",
+            "28"
+          ],
+          [
+            "Impedancia de transferencia",
+            "30"
+          ],
+          [
+            "Empleo de anillos de ferrita",
+            "30"
+          ],
+          [
+            "Ejemplos prácticos",
+            "32"
+          ],
+          [
+            "Instalación simple",
+            "32"
+          ],
+          [
+            "Ejemplo de sistema de derivación <100kVA",
+            "33"
+          ],
+          [
+            "Ejemplo típico de convertidor de 12 pulsos",
+            "34"
+          ],
+          [
+            "Ejemplo de convertidor de secciones común",
+            ""
+          ],
+          [
+            "alimentado por bus de CC",
+            "36"
+          ],
+          [
+            "Bibliografía",
+            "37"
+          ],
+          [
+            "Índice",
+            "38"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Capítulo 1 - Introducción\nGeneralidades\nEsta guía constituye una ayuda para el personal encargado\ndel diseño y la instalación en el momento de tratar de garantizar\nel cumplimiento de los requisitos de la Directiva EMC en los\nsistemas e instalaciones del usuario al emplear accionamientos\nde CA.\nObjeto de esta\nguía\nEl objeto de esta guía es orientar a los fabricantes de equipos\noriginales (OEM), integradores de sistemas y constructores\nde paneles en el diseño o la instalación de productos de\naccionamiento de CA y sus componentes auxiliares en sus\npropios sistemas e instalaciones. Los elementos auxiliares\nincluyen contactores, conmutadores, fusibles, etc. Al seguir\nestas instrucciones es posible cumplir los requisitos de EMC\ny proporcionar el Etiquetaje CE en los casos en los que es\nnecesario.\nLas directivas\nrelativas a\nconvertidores\nExisten tres directivas relativas a los convertidores de\nvelocidad variable. Son la Directiva para maquinaria, la Directiva\nde baja tensión y la Directiva EMC. Los requisitos y principios\nde las directivas y el empleo del etiquetaje CE se describen\nen la Guía técnica Nº 2 \"Directivas del Consejo de la UE y\nconvertidores de velocidad variable\". Este documento sólo\nrecoge la Directiva EMC.\n¿Quién es el\nfabricante?\nLa Comisión Europea ha publicado pautas sobre la aplicación\nde la Directiva EMC, que proporcionan la siguiente definición\nsobre fabricante: \"Es la persona responsable del diseño y la\nconstrucción de un aparato que contempla la Directiva y que\nse destina a una comercialización en el mercado del AEE en\nsu nombre. Cualquier persona que modifique sustancialmente\nun aparato para convertirlo en un producto nuevo con vistas a\ncomercializarlo en el mercado del AEE también se convierte\nen el fabricante.\"\nLa\nresponsabilidad\ndel fabricante\nDe conformidad con la Directiva EMC (89/336/EEC), artículo\n10, parte 1, el fabricante es el responsable de adjuntar el\netiquetaje CE en cada unidad. De conformidad con la parte 2\nel fabricante es el responsable de escribir y actualizar el archivo\nde construcción técnica (TCF) si se emplea la vía TCF.\nCliente OEM como\nfabricante\nEs de dominio público que los clientes OEM venden equipo\nempleando sus propias marcas registradas y marcas\ncomerciales. El cambio de la marca registrada, la marca\ncomercial o el etiquetaje de tipo es un ejemplo de modificación\nque da como resultado un equipo nuevo.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n5",
+      "tablas": [
+        [
+          [
+            "Generalidades",
+            "Esta guía constituye una ayuda para el personal encargado del diseño y la instalación en el momento de tratar de garantizar el cumplimiento de los requisitos de la Directiva EMC en los sistemas e instalaciones del usuario al emplear accionamientos de CA."
+          ],
+          [
+            "Objeto de esta guía",
+            "El objeto de esta guía es orientar a los fabricantes de equipos originales (OEM), integradores de sistemas y constructores de paneles en el diseño o la instalación de productos de accionamiento de CA y sus componentes auxiliares en sus propios sistemas e instalaciones. Los elementos auxiliares incluyen contactores, conmutadores, fusibles, etc. Al seguir estas instrucciones es posible cumplir los requisitos de EMC y proporcionar el Etiquetaje CE en los casos en los que es necesario."
+          ],
+          [
+            "Las directivas relativas a convertidores",
+            "Existen tres directivas relativas a los convertidores de velocidad variable. Son la Directiva para maquinaria, la Directiva de baja tensión y la Directiva EMC. Los requisitos y principios de las directivas y el empleo del etiquetaje CE se describen en la Guía técnica Nº 2 \"Directivas del Consejo de la UE y convertidores de velocidad variable\". Este documento sólo recoge la Directiva EMC."
+          ],
+          [
+            "¿Quién es el fabricante?",
+            "La Comisión Europea ha publicado pautas sobre la aplicación de la Directiva EMC, que proporcionan la siguiente definición sobre fabricante: \"Es la persona responsable del diseño y la construcción de un aparato que contempla la Directiva y que se destina a una comercialización en el mercado del AEE en su nombre. Cualquier persona que modifique sustancialmente un aparato para convertirlo en un producto nuevo con vistas a comercializarlo en el mercado del AEE también se convierte en el fabricante.\""
+          ],
+          [
+            "La responsabilidad del fabricante",
+            "De conformidad con la Directiva EMC (89/336/EEC), artículo 10, parte 1, el fabricante es el responsable de adjuntar el etiquetaje CE en cada unidad. De conformidad con la parte 2 el fabricante es el responsable de escribir y actualizar el archivo de construcción técnica (TCF) si se emplea la vía TCF."
+          ],
+          [
+            "Cliente OEM como fabricante",
+            "Es de dominio público que los clientes OEM venden equipo empleando sus propias marcas registradas y marcas comerciales. El cambio de la marca registrada, la marca comercial o el etiquetaje de tipo es un ejemplo de modificación que da como resultado un equipo nuevo."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Introducción\nFabricante de\npaneles o\nintegrador de\nsistemas como\nfabricante\nLos convertidores de frecuencia vendidos como productos\nOEM se considerarán componentes (Módulo de accionamiento\ncompleto CDM o Módulo de accionamiento básico BDM). Un\naparato es una entidad e incluye toda la documentación\n(manuales) destinada al cliente final. Por ello, el cliente OEM\ntiene la responsabilidad exclusiva y final en relación con la\nEMC del equipo, y deberá emitir una Declaración de\nconformidad y un Archivo de construcción técnica para el\nequipo.\nABB Industry Oy ofrece servicios para ayudar a los clientes\nOEM a emitir un TCF y una Declaración de conformidad de\nacuerdo con la Directiva EMC.\nDe acuerdo con la Directiva EMC, un sistema se define como\nuna combinación de varios tipos de equipo, productos acabados\ny/o componentes combinados, diseñados y/o ensamblados\npor la misma persona (el fabricante del sistema) con vistas\na su lanzamiento al mercado para su distribución como una\nunidad funcional independiente para un usuario final y que se\ndestina a instalarse y manejarse en su conjunto para llevar a\ncabo una tarea determinada.\nUn constructor de paneles o un integrador de sistemas suele\nser el encargado de llevar a cabo esta tarea. Por ello, el\nconstructor de paneles o el integrador de sistemas tiene la\nresponsabilidad exclusiva y final en cuanto a la EMC del\nsistema. No puede delegar esta responsabilidad en un\ndistribuidor.\nPara ayudar al constructor de paneles/integrador de sistemas,\nABB Industry Oy ofrece pautas de instalación relacionadas\ncon cada producto así como pautas de EMC generales (este\ndocumento).\nDefiniciones\nLa Norma de productos EMC para sistemas de\naccionamiento de potencia, EN 61800-3 (o IEC 61800-3) se\nemplea como la norma principal para convertidores de\nvelocidad variable. Los términos y definiciones que se definen\nen la norma se emplean también en esta guía.\nInstalaciones y\nsistemas\nprácticos\nEsta guía proporciona ejemplos prácticos y soluciones de EMC\nque no se describen en los manuales específicos de productos.\nLas soluciones pueden emplearse directamente o pueden ser\naplicadas por el OEM o el constructor de paneles.\nPrincipios de\nconexión a tierra\nLos principios de conexión a tierra y de cableado se describen\nen el manual \"Conexión a tierra y cableado del sistema de\naccionamiento\", código 3AFY 61201998. También incluye una\nbreve descripción de los fenómenos de interferencia.\n6\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": [
+        [
+          [
+            "Fabricante de paneles o integrador de sistemas como fabricante",
+            "Los convertidores de frecuencia vendidos como productos OEM se considerarán componentes (Módulo de accionamiento completo CDM o Módulo de accionamiento básico BDM). Un aparato es una entidad e incluye toda la documentación (manuales) destinada al cliente final. Por ello, el cliente OEM tiene la responsabilidad exclusiva y final en relación con la EMC del equipo, y deberá emitir una Declaración de conformidad y un Archivo de construcción técnica para el equipo. ABB Industry Oy ofrece servicios para ayudar a los clientes OEM a emitir un TCF y una Declaración de conformidad de acuerdo con la Directiva EMC."
+          ],
+          [
+            "De acuerdo con la Directiva EMC, un sistema se define como una combinación de varios tipos de equipo, productos acabados y/o componentes combinados, diseñados y/o ensamblados por la misma persona (el fabricante del sistema) con vistas a su lanzamiento al mercado para su distribución como una unidad funcional independiente para un usuario final y que se destina a instalarse y manejarse en su conjunto para llevar a cabo una tarea determinada."
+          ],
+          [
+            "Un constructor de paneles o un integrador de sistemas suele ser el encargado de llevar a cabo esta tarea. Por ello, el constructor de paneles o el integrador de sistemas tiene la responsabilidad exclusiva y final en cuanto a la EMC del sistema. No puede delegar esta responsabilidad en un distribuidor."
+          ],
+          [
+            "Para ayudar al constructor de paneles/integrador de sistemas, ABB Industry Oy ofrece pautas de instalación relacionadas con cada producto así como pautas de EMC generales (este documento)."
+          ],
+          [
+            "Definiciones",
+            "La Norma de productos EMC para sistemas de accionamiento de potencia, EN 61800-3 (o IEC 61800-3) se emplea como la norma principal para convertidores de velocidad variable. Los términos y definiciones que se definen en la norma se emplean también en esta guía."
+          ],
+          [
+            "Instalaciones y sistemas prácticos",
+            "Esta guía proporciona ejemplos prácticos y soluciones de EMC que no se describen en los manuales específicos de productos. Las soluciones pueden emplearse directamente o pueden ser aplicadas por el OEM o el constructor de paneles."
+          ],
+          [
+            "Principios de conexión a tierra",
+            "Los principios de conexión a tierra y de cableado se describen en el manual \"Conexión a tierra y cableado del sistema de accionamiento\", código 3AFY 61201998. También incluye una breve descripción de los fenómenos de interferencia."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "Manuales\nespecíficos para\nproductos\nIntroducción\nPuede hallarse información detallada acerca de la instalación\ny el empleo de los productos, dimensiones de los cables, etc.,\nen los manuales específicos para los productos. Esta guía\ndebe emplearse conjuntamente con este tipo de manuales.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Compatibilidad\nelectromagnética\n(EMC) del PDS\nInmunidad\nEmisión\nSistema de\naccionamiento\nde potencia\nCapítulo 2 - Definiciones\nEMC significa compatibilidad electromagnética. Es la\ncapacidad del equipo eléctrico/electrónico de funcionar sin\nproblemas dentro de un entorno electromagnético. Igualmente,\nel equipo no debe alterar ni interferir con cualquier otro producto\no sistema próximo. Este es un requisito legal para todos los\nequipos que entren en servicio dentro del AEE. Los términos\nempleados para definir la compatibilidad se muestran en la\nfigura 2-1.\nó\ní\nĺ\nFigura 2-1 Compatibilidad de inmunidad y emisiones.\nDado que los convertidores de velocidad variable se describen\ncomo una fuente de interferencia, es natural que todas las\npiezas que estén en conexión eléctrica o aérea dentro del\nPDS formen parte del cumplimiento de la EMC. El concepto\nde que un sistema es débil en su punto más débil es válido en\neste caso.\nEl equipo eléctrico debería ser inmune a los fenómenos de\nalta y baja frecuencia. Los fenómenos de alta frecuencia\nincluyen descargas electrostáticas, incrementos transitorios\nrápidos, campos radiantes electromagnéticos, perturbaciones\nde radiofrecuencia conductora y sobretensiones eléctricas\ntransitorias. Los fenómenos típicos de baja tensión incluyen\nlos armónicos en la tensión de red, las muescas y los\ndesequilibrios.\nLa fuente de las emisiones de alta frecuencia de convertidores\nde frecuencia es la conmutación rápida de los componentes\nde potencia como los IGBT y la electrónica de control. Esta\nemisión de alta frecuencia puede propagarse por conducción\ny por radiación.\nLas partes de un convertidor de velocidad variable que controla\nequipo accionado como parte de una instalación se describen\nen la Norma de producto EMC EN 61800-3. Un convertidor\npuede considerarse un Módulo de accionamiento básico (BDM)\no un Módulo de accionamiento completo (CDM) de conformidad\ncon la norma.\n8\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "Definiciones\nSe recomienda que el personal encargado de la instalación\ny del diseño tenga a su disposición esta norma y que esté\nfamiliarizado con ella. Todas las normas están disponibles\npor parte de los organismos nacionales y de CENELEC, rue\nde Stassart, 35, 1050 Bruselas.\nLos sistemas fabricados por un OEM o un constructor de\npaneles pueden constar más o menos únicamente de las\npiezas del PDS o puede haber diversos PDS en una\nconfiguración.\nLas soluciones detalladas en esta guía se emplean dentro\ndel ámbito de la definición del Sistema de accionamiento de\npotencia, pero las mismas soluciones pueden, o incluso\ndeben, ampliarse a todas las instalaciones. Esta guía facilita\nprincipios y ejemplos prácticos de EMC que pueden aplicarse\nal sistema de un usuario.\nInstalación o parte\nde la instalación\n-\n-\n-\nSistema de accionamiento de potencia PDS\nMódulo de accionamiento\ncompleto CDM\nControl y secuenciación\ndel sistema\nMódulo de accionamiento\nbásico BDM\nControl, convertidor y protección\nSección de alimentación\nElementos auxiliares y otros\nMotores y sensores\nEquipo accionado\nFigura 2-2 Abreviaturas empleadas en los\nconvertidores.\nTipos de\nequipo\nLa Directiva EMC se aplica a \"todos los equipos eléctricos y\nelectrónicos junto con las instalaciones que contienen\ncomponentes eléctricos y/o electrónicos que pueden provocar\nperturbaciones electromagnéticas o cuyo funcionamiento\npuede verse afectado por tales perturbaciones\". La\ninterpretación de la Directiva EMC para distintas\nconfiguraciones en el área de los convertidores puede dividirse\nen distintos niveles:\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n9",
+      "tablas": [
+        [
+          [
+            "Tipos de equipo",
+            "La Directiva EMC se aplica a \"todos los equipos eléctricos y electrónicos junto con las instalaciones que contienen componentes eléctricos y/o electrónicos que pueden provocar perturbaciones electromagnéticas o cuyo funcionamiento puede verse afectado por tales perturbaciones\". La interpretación de la Directiva EMC para distintas configuraciones en el área de los convertidores puede dividirse en distintos niveles:"
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Definiciones\nComponente\nEn este contexto la interpretación de componente puede\ndividirse en dos categorías principales. El componente puede\nproporcionar una \"función directa\" o no.\nComponentes con\nfunción directa\nFunción directa:\nCualquier función del componente que cumple el uso previsto\nespecificado por el fabricante en las instrucciones para el uso\npor parte de un usuario final.\nLos componentes con una función directa pueden dividirse en\ndos subgrupos:\n1) La función directa está disponible sin ningún ajuste\nadicional o conexiones que no sean simples, que pueden\nser llevadas a cabo por cualquier persona que no sea\nplenamente consciente de las implicaciones propias de la\nEMC. Este componente es un \"aparato\" y está sujeto a\ntodas las disposiciones de la Directiva EMC.\n2) La función directa no está disponible sin ajustes o\nconexiones adicionales que no sean de tipo simple, que\npueden ser llevadas a cabo por cualquier persona que no\nsea plenamente consciente de las implicaciones propias\nde la EMC. Este componente no es un aparato. El único\nrequisito para este componente es proporcionar\ninstrucciones para el empleo para un montador profesional\no fabricante del aparato final en el que deba incorporarse\nel componente. Estas instrucciones deberían ayudar a esta\npersona a resolver cualquier problema de EMC con su\naparato final.\nSi un componente desempeña una función directa sin que se\nrequieran ajustes adicionales que no sean los simples, se\nconsidera que el componente es equivalente a un aparato\n(Caso 1). Algunos productos de accionamiento de potencia de\nvelocidad variable caen dentro de esta categoría, por ejemplo\nun convertidor instalado dentro de un armario o un convertidor\ncon protección vendido como una unidad completa (CDM).\nTodas las disposiciones de la Directiva EMC son aplicables\n(Etiquetaje CE, Declaración de conformidad).\nSi un componente desempeña una función directa que no está\ndisponible sin ajustes adicionales que no sean simples, se\nconsidera un componente (Caso 2). Algunos productos de\naccionamiento de potencia de velocidad variable caen dentro\nde esta categoría, por ejemplo los módulos de accionamiento\nbásicos (BDM). Tienen que ser montados por un montador\nprofesional (por ejemplo un constructor de paneles o un\nfabricante de sistemas) dentro de un armario que no se recoja\nen los términos de entrega del fabricante del BDM. De\nconformidad con la Directiva EMC, el requisito para el\nproveedor del BDM es facilitar instrucciones para la\ninstalación y el empleo.\nDe conformidad con la Directiva EMC, el fabricante de sistemas\no el constructor de paneles es el responsable del Etiquetaje\nCE, la Declaración de conformidad y el Archivo de construcción\ntécnica.\n10\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "Definiciones\nComponentes sin\nfunción directa\nLos componentes sin función directa no se consideran aparatos\ndentro del significado de la Directiva EMC, que no puede\naplicarse a ellos. Estos componentes incluyen resistencias,\ncables, bloques de terminales, etc.\nAparatos y\nsistemas\nUn producto acabado que contiene componentes eléctricos y/\no electrónicos y que se comercializará o se pondrá en servicio\ncomo una unidad comercial única.\nDiversos elementos de un aparato combinados para cumplir\nun determinado propósito y que saldrán al mercado como una\nsola unidad funcional.\nInstalación\nUna combinación de elementos de aparatos, equipo y/o\ncomponentes reunidos en un determinado lugar para cumplir\nun determinado objetivo pero que no se comercializarán como\nuna sola unidad funcional.\nEtiquetaje CE\npara EMC\nUn componente con una función directa sin más ajustes que\nlos ajustes simples requeridos para llevar el Etiquetaje CE\npara EMC (Caso 1).\nUn componente con una función directa que no está disponible\nsin más ajustes que los simples no tiene que llevar el Etiquetaje\nCE para EMC (caso 2) .\nNota: Los productos pueden llevar el Etiquetaje CE para otras\ndirectivas que no sean la EMC.\nLos aparatos y los sistemas deben llevar el Etiquetaje CE.\nLas instalaciones deben satisfacer diversas partes de las\nDirectivas, pero no es necesario que lleven el Etiquetaje CE.\nCE\nFigura 2-3 El etiquetaje CE.\nEntornos de\ninstalación\nLos PDS pueden conectarse a redes de distribución públicas\no industriales. La clase de entorno depende del modo en el\nque el PDS está conectado a la fuente de alimentación. Las\ncalases de entorno son Primer y Segundo entorno.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n11",
+      "tablas": [
+        [
+          [
+            "Componentes sin función directa",
+            "Los componentes sin función directa no se consideran aparatos dentro del significado de la Directiva EMC, que no puede aplicarse a ellos. Estos componentes incluyen resistencias, cables, bloques de terminales, etc."
+          ],
+          [
+            "Aparatos y sistemas",
+            "Un producto acabado que contiene componentes eléctricos y/ o electrónicos y que se comercializará o se pondrá en servicio como una unidad comercial única."
+          ],
+          [
+            "Diversos elementos de un aparato combinados para cumplir un determinado propósito y que saldrán al mercado como una sola unidad funcional."
+          ],
+          [
+            "Instalación",
+            "Una combinación de elementos de aparatos, equipo y/o componentes reunidos en un determinado lugar para cumplir un determinado objetivo pero que no se comercializarán como una sola unidad funcional."
+          ],
+          [
+            "Etiquetaje CE para EMC",
+            "Un componente con una función directa sin más ajustes que los ajustes simples requeridos para llevar el Etiquetaje CE para EMC (Caso 1)."
+          ],
+          [
+            "Un componente con una función directa que no está disponible sin más ajustes que los simples no tiene que llevar el Etiquetaje CE para EMC (caso 2) ."
+          ],
+          [
+            "Nota: Los productos pueden llevar el Etiquetaje CE para otras directivas que no sean la EMC. Los aparatos y los sistemas deben llevar el Etiquetaje CE. Las instalaciones deben satisfacer diversas partes de las Directivas, pero no es necesario que lleven el Etiquetaje CE. CE Figura 2-3 El etiquetaje CE."
+          ],
+          [
+            "Entornos de instalación",
+            "Los PDS pueden conectarse a redes de distribución públicas o industriales. La clase de entorno depende del modo en el que el PDS está conectado a la fuente de alimentación. Las calases de entorno son Primer y Segundo entorno."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "Definiciones\nPrimer entorno\n\"El primer entorno incluye las instalaciones domésticas, así\ncomo los establecimientos directamente conectados sin un\ntransformador intermedio a una red de alimentación de baja\ntensión que alimenta a los edificios empleados con fines\ndomésticos.\"\nSegundo entorno\n\"El segundo entorno incluye todos los establecimientos que\nno son los que están directamente conectados a la red de\nalimentación de baja tensión que alimenta a los edificios\nempleados con fines domésticos\"\nRed de media tensión\nPropagación de las emisiones conducidas\nI\nRed de baja tensión pública\nRed de baja tensión industrial\nPunto de medición para la emisión conducida\nPunto de medición\nPrimer entorno\nSegundo entorno\n11\nLímite de la\ninstalación\n10 m\nEquipo\n(víctima)\nPunto de medición para la\nemisión radiada, ver figura 2-6\nPDS\n(emisor)\nFigura 2-4 Ilustración de las clases de entorno y de la propagación\nde las perturbaciones.\nPropagación\n\"Para los PDS en el segundo entorno, el usuario deberá\nasegurarse de que no se induzcan demasiadas perturbaciones\nen la red de baja tensión, incluso si la propagación se da a\ntravés de una red de media tensión.\"\nNota: La figura 2-4 muestra el caso de una victima en el\nprimer entorno. La situación es la misma si la víctima\nse halla en el segundo entorno en otra instalación. Las\nmediciones se efectúan sólo en caso de disputa (véase\nla figura 2-5).\nLa ruta del\nconvertidor al\nmercado\nLa Norma de producto EMC para PDS divide las rutas del\nconvertidor al mercado en clases de distribución restringida y\nsin restricciones.\n12\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Definiciones\nDistribución sin\nrestricciones\nDistribución\nrestringida\nLímites de\nemisión EMC\n\"La distribución sin restricciones es un modo de distribución\npara la venta en el que el suministro de equipos no depende\nde la competencia EMC del cliente o el usuario para la\naplicación de los convertidores\".\nLos equipos pueden ser puestos en servicio por una persona\ncompetente en el manejo de equipos pero sin experiencia EMC\nespecífica.\n\"La distribución restringida es un modo de distribución para la\nventa en el que el fabricante restringe el suministro de equipo\na los distribuidores, clientes o usuarios que, por separado o\nconjuntamente, tienen competencia técnica en cuanto a los\nrequisitos de EMC de la aplicación de los convertidores.\"\nEllo implica que los equipos requieren competencia EMC para\nser puestos en servicio.\nLos límites de emisión EMC para PDS dependen del entorno\nde instalación, del tipo de red de alimentación y de la potencia\ndel convertidor. Los límites para determinados estados pueden\nseleccionarse empleando el siguiente diagrama de flujo (véase\nla figura 2-5).\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n13",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Definiciones\nEN 61800-3\nNorma de producto EMC para PDS\n1ª' entorno\n(red de baja tensión pública)\n2º entorno\n(red industrial)\nDistribución sin\nrestricciones\nDistribución\nrestringida\nDistrib. restringida\no sin restricciones\nBaja potencia\n1 < 25 A\nSin diferencia\npor potencia\nMedia potencia\n1 > 25 A\nPerturbación\nen potencia\ndBuV\nC\nO\nN\nD\n66\n100\n79 80\nCuasi pico\n73\nCuasi pico\n60\n56\nU\nC\nI\n40\nTodas las potencias\nLÍMITES EN CONSIDERACIÓN\nNota: En caso de disputa, fuera del límite de la\ninstalación, los límites para la perturbación\npropagada son como los de la tabla al lado:\n-, si \"fuera\" está en el primer entorno\n, si \"fuera\" está en el segundo entorno\nD\n20\nA\n0\n0.15\n0.5\n1\n5\nFrecuencia (MHz)\nPerturbación\ndBuV/m\n50\n10\n30\n0.15\n0.5\n1\n5\n30\n10\nFrecuencia (MHz)\nR\n>25A (10 m)\n47\nA\n45\nD\nEn caso de disputa, fuera del límite de la\ninstalación, los límites para la perturbación\npropagada son como los de la tabla al lado. Se\nefectuarán mediciones in situ fuera del edificio\nen el que se halla el PDS\n40\nI\n<25A (10 m)\nA\nD\n37\n35\n30\nA\n25\n0\n200\n400\n600\n30\n230\nFrecuencia (MHz)\n800\n1000\n0\n200\n400\n600\n800\n1000\nFrecuencia (MHz)\nDISPUTA\nEl elemento\ncontaminador resuelve\nFigura 2-5 Límites de emisión para PDS.\n14\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Capítulo 3 - Soluciones de EMC\nGeneralidades\nLas soluciones empleadas para lograr la inmunidad y los\nrequisitos de emisiones radiadas y conducidas se describen\nen este capítulo.\nSoluciones para\nla\ncompatibilidad\nEMC\nExisten algunos principios básicos que deben respetarse al\ndiseñar y emplear sistemas de accionamiento que incorporen\nproductos de accionamiento de CA. Estos mismos principios\nse emplearon cuando estos productos se diseñaron y\nconstruyeron, momento en el que se dio gran consideración a\naspectos como la estructura de la tarjeta de circuitos impresa,\nel diseño mecánico, el recorrido de los cables, las entradas de\ncable y otros puntos especiales.\nTodo ello se denomina EMC plenamente integrada.\nEmisiones\nLos productos de accionamiento son normalmente inmunes a\nla mayoría de perturbaciones, o se verían afectados por sus\npropias perturbaciones. En este contexto, sólo deben tratarse\nlas emisiones.\nLas emisiones pueden dividirse en dos partes, la emisión\nconducida y la radiada. Las perturbaciones pueden emitirse\nde varios modos como muestra la figura:\nEmisión radiada\nPDS\nControl\nRed de alimentación\nProceso\nEmisión\nconducida\nTierra\nBasis-\nantriebs-\nmodul\nConexión a motor\nMotor\nFigura 3-1 Emisiones.\nEmisión\nconducida\nLas perturbaciones conducidas pueden propagarse a otros\nequipos a través de todas las partes conductoras incluyendo\nel cableado, la conexión a tierra y el bastidor de metal de la\nprotección.\nLas emisiones conductoras pueden reducirse así:\n· Mediante filtrado RFI para perturbaciones de AF\n· Empleando supresores de chispa en relés, contactores,\nválvulas, etc. para atenuar las chispas de conmutación\n· Con anillos de ferrita en los puntos de conexión de potencia\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n15",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Soluciones de EMC\nEmisión radiada\nPara poder evitar las perturbaciones a través del aire, todas las\npiezas del Sistema de accionamiento de potencia deberían formar\nuna jaula de Faraday contra las emisiones radiadas. EI PDS\nincluye armarios, cajas auxiliares, cableado, motores, etc.\nAlgunos métodos para garantizar la continuidad de la jaula de\nFaraday son los siguientes:\nProtección:\n· La protección debe tener un acabado de superficie sin pintar y\nno corrosivo en cada punto en el que contacten otros paneles,\npuertas, etc.\n· Deben emplearse siempre contactos entre metal con juntas\nconductoras en los casos en los que sea apropiado.\n· Emplee paneles de instalación sin pintar, unidos a un punto de\ntierra común, asegurándose de que todos los elementos de\nmetal separados estén unidos firmemente para disponer de\nun solo camino a tierra.\n· Emplee juntas conductoras en las puertas y las cubiertas. Las\ncubiertas deberían fijarse a iintervalos no superiores a 100 m\nen los puntos en los que pueda escapar la radiación.\n· Separe la etapa radiativa, es decir, \"sucia\" de la \"parte limpia\"\nmediante cubiertas de metal y diseño.\n· Deberían minimizarse los orificios en la protección.\n· Emplee materiales con una buena atenuación, por ejemplo\nplástico con una capa conductora si no se puede emplear\nuna protección de metal.\nCableado e hilos:\n· Emplee entradas de cable de AF especiales para la conexión\na tierra de alta frecuencia de los apantallamientos de cables\nde alimentación.\n· Emplee juntas conductoras para conexión a tierra de AF del\napantallamiento del cable de control.\n· Emplee cables de control y alimentación apantallados. Véanse\nlos manuales específicos para el producto.\n· Disponga los cables de control y alimentación por separado.\n· Emplee pares apantallados para evitar las perturbaciones de\nmodo común.\n· Emplee anillos de ferrita para las perturbaciones de modo\ncomún, si es necesario.\n· Seleccione y coloque los cables internos de forma correcta.\nInstalación:\n· Los elementos auxiliares empleados con CDM deberían ser\nproductos con Etiquetaje CE para las Directivas EMC y de\nbaja tensión, NO SOLO la Directiva de baja tensión, a menos\nque no intervengan, por ejemplo un componente sin una\nfunción directa.\n· Selección e instalación de accesorios de conformidad con las\ninstrucciones del fabricante.\n· Conexión a tierra de 360º en el extremo del motor. Véanse\nlos manuales específicos del producto.\n· Métodos de cableado interno correctos.\n· Debe prestarse una atención especial a la conexión a tierra.\n16\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "Soluciones de EMC\nNota: Al seleccionar equipo para una configuración es\nesencial comprobar que las emisiones radiadas y\nconducidas se hayan tenido en cuenta.\nParte limpia y\nsucia\nEl circuito antes del punto en el que se conecta la alimentación\nal CDM y en el que se inicia el filtrado se denomina la parte\nlimpia. Las partes del BDM que pueden provocar\nperturbaciones se describen como la parte sucia.\nLos convertidores adjuntos montados en pared se han diseñado\npara que el circuito seguido de la conexión de salida sea la\núnica parte sucia. Este es el caso si se siguen las instrucciones\nde instalación del convertidor.\nPara mantener la parte limpia en estado \"limpio\" las partes\nsucias se separan en una jaula de Faraday. Ello puede hacerse\ncon paneles de separación o cableado.\nAl emplear paneles de separación las reglas para los orificios\nde la protección son aplicables (véase la sección Orificios en\nprotecciones más adelante en este capítulo).\nCuando la jaula de Faraday se forma con cableado, las reglas\npara el cableado deben aplicarse (véanse las secciones sobre\ncableado e hilos en este capítulo y siga las instrucciones\nespecíficas para el producto relativas al convertidor).\nEl empleo de componentes adicionales como contactores,\naisladores, fusibles, etc., dificulta en algunos casos mantener\nla parte limpia y la sucia separadas.\nEllo puede ocurrir cuando los contactores o conmutadores se\nemplean en circuitos para cambiar de la parte limpia a la sucia\n(por ejemplo derivación).\nAlgunos ejemplos de las soluciones se describen en el capítulo\n4, Ejemplos prácticos.\nFiltrado RFI\nLos filtros RFI se emplean para atenuar las perturbaciones\nconducidas en un punto de conexión de línea en el que el filtro\nconduce las perturbaciones a tierra.\nLos filtros RFI se requieren cuando un PDS está conectado a\nla red de baja tensión pública (Primer entorno, véase el capítulo\n2, Definiciones).\nTambién se recomienda emplear filtros en situaciones\nindustriales (Segundo entorno), si hay víctimas potenciales\nen el entorno y por lo tanto posibles problemas de EMC, aunque\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n17",
+      "tablas": [
+        [
+          [
+            "Parte limpia y sucia",
+            "El circuito antes del punto en el que se conecta la alimentación al CDM y en el que se inicia el filtrado se denomina la parte limpia. Las partes del BDM que pueden provocar perturbaciones se describen como la parte sucia."
+          ],
+          [
+            "Los convertidores adjuntos montados en pared se han diseñado para que el circuito seguido de la conexión de salida sea la única parte sucia. Este es el caso si se siguen las instrucciones de instalación del convertidor."
+          ],
+          [
+            "Para mantener la parte limpia en estado \"limpio\" las partes sucias se separan en una jaula de Faraday. Ello puede hacerse con paneles de separación o cableado."
+          ],
+          [
+            "Al emplear paneles de separación las reglas para los orificios de la protección son aplicables (véase la sección Orificios en protecciones más adelante en este capítulo)."
+          ],
+          [
+            "Cuando la jaula de Faraday se forma con cableado, las reglas para el cableado deben aplicarse (véanse las secciones sobre cableado e hilos en este capítulo y siga las instrucciones específicas para el producto relativas al convertidor)."
+          ],
+          [
+            "El empleo de componentes adicionales como contactores, aisladores, fusibles, etc., dificulta en algunos casos mantener la parte limpia y la sucia separadas."
+          ],
+          [
+            "Ello puede ocurrir cuando los contactores o conmutadores se emplean en circuitos para cambiar de la parte limpia a la sucia (por ejemplo derivación)."
+          ],
+          [
+            "Algunos ejemplos de las soluciones se describen en el capítulo 4, Ejemplos prácticos."
+          ],
+          [
+            "Filtrado RFI",
+            "Los filtros RFI se emplean para atenuar las perturbaciones conducidas en un punto de conexión de línea en el que el filtro conduce las perturbaciones a tierra."
+          ],
+          [
+            "Los filtros RFI se requieren cuando un PDS está conectado a la red de baja tensión pública (Primer entorno, véase el capítulo 2, Definiciones)."
+          ],
+          [
+            "También se recomienda emplear filtros en situaciones industriales (Segundo entorno), si hay víctimas potenciales en el entorno y por lo tanto posibles problemas de EMC, aunque"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Soluciones de EMC\nla norma de producto no proporciona en la actualidad ningún\nlímite para las emisiones conducidas. Este es el caso en\ninstalaciones industriales en las que radican oficinas e industria\nligera y pesada.\nNota: Los filtros no pueden emplearse en redes flotantes\n(red IT) en las que hay una elevada impedancia o sin\nconexión física entre las fases y tierra.\n+\nANILLO DE FERRITA\nO\nTerminales\nde\nO\nentrada\nde línea\nN=2\n1\nN=2\nTYY\nN=2\n...\nr\n7\n本本本\nTierra\nO\nTARJETA\nDE\nFILTRO\nO\n-\n\"\nFigura 3-2 Ejemplo de filtrado integrado en módulo de\naccionamiento.\nLa Figura 3-2 muestra un ejemplo de filtrado integral y\ndistribuido. Algunos productos de accionamiento requieren un\nfiltro separado (véanse las instrucciones específicas para el\nproducto).\nSelección del\nfiltro RFI\nUn filtro RFI se selecciona para atenuar las perturbaciones\nconducidas. No es posible comparar las perturbaciones\nmedidas de una fuente y la pérdida de inserción para un filtro,\nya que la base de medición para los dos elementos de\ninformación no corresponderá.\nSiempre es necesario comprobar un filtro junto con la fuente\nde perturbación para garantizar una atenuación adecuada.\nInstalación del\nfiltro RFI\nLas conexiones fiables de AF/baja impedancia son esenciales\npara garantizar un buen funcionamiento del filtro, por lo que\ndeben seguirse las siguientes instrucciones.\n· El filtro debe montarse sobre un panel de metal con puntos\nde conexión sin pintar de conformidad con las instrucciones\nde su fabricante.\n· Los bastidores del armario del filtro y del convertidor (si están\nseparados) deberán fijarse con tornillos en diversos puntos.\nLa pintura deberá eliminarse de todos los puntos de conexión.\n· Los cables de entrada y salida del filtro no deberán ser\nparalelos, y deberán separarse entre sí.\n18\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Soluciones de EMC\n· La longitud máxima del cable entre el filtro y el convertidor\ndebe ajustarse a las instrucciones del fabricante del filtro\nRFI.\n· El filtro debe conectarse a tierra de conformidad con las\ninstrucciones del fabricante. El tipo y tamaño del cable son\nde importancia clave.\nConvertidores en\nredes IT\nCompruebe con un medidor que no haya\ncondensadores de filtro conectados a tierra.\nSupresores de\narco\nDispositivo, por\nejemplo\nconvertidor\nFigura 3-3 Ejemplos de supresión.\nVaristor\n230 V CA\nFiltro RC\nDiodo\n230 V CA\n+\n24 V CC\nO\n-\nLos relés, contactores y válvulas magnéticas deben equiparse\ncon supresores de chispa. Ello también es necesario cuando\nestas piezas se montan fuera del armario del convertidor de\nfrecuencia.\nSelección de una\nprotección\nsecundaria\nSiempre es necesario proporcionar una protección EMC don-\nde debe instalarse el BDM (por ejemplo un convertidor de cha-\nsis abierto IP 100) o si deben conectarse componentes adi-\ncionales a la parte sucia de una unidad que cumple las nor-\nmas en todos los aspectos restantes.\nPara los módulos de chasis adjuntos en los que las conexiones\na motor se realizan directamente a los terminales de salida\ndel convertidor, y todas las piezas de apantallamiento internas\nse han instalado, no existen requerimientos para protecciones\nespeciales.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n19",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Soluciones de EMC\nSi los convertidores cuentan con dispositivos de conmutación\nde salida, por ejemplo, se requerirá una protección EMC, dado\nque la jaula de Faraday integral no será aplicable.\nA modo de recordatorio, la EMC sólo es una de las partes de la\nselección de la protección. La protección se dimensiona de\nconformidad con diversos criterios:\n· Seguridad\n· Grado de protección (Grado IP)\n· Capacidad de rechazo de calor\n· Espacio para el equipo accesorio\n· Aspectos cosméticos\n· Acceso a cables\n· Cumplimiento de EMC\n· Requisitos generales para compatibilidad EMC\nLa seguridad de las personas y animales junto con los requisitos\nde grado de protección (grado IP) se describen principalmente\nen la norma de Seguridad para la maquinaria EN 60204-1, norma\npara Seguridad eléctrica EN 50178 o norma para Producto EN\n61800-2 y no se describen aquí. En este documento sólo se\ntrata el aspecto EMC.\nDesde el punto de vista de la EMC significa que la protección es\nfirme y lo suficientemente segura para formar parte de la jaula\nde Faraday. En sistemas pequeños, también pueden emplearse\ncajas de plástico si se han pintado en el interior con pintura\nconductora. La pintura debe tener contacto metal con metal en\ncada división con otras partes de la protección de metal.\nLos conmutadores de seguridad externos también pueden hallarse\nen cajas de plástico si forman una buena jaula de Faraday y\nconducen en el interior; en caso contrario deben emplearse cajas\nde metal.\nLa protección debe adherirse a los siguientes parámetros como\nmínimo:\n· Grosor: Acero inoxidable de 0,75 mm (galvanizado)\n(recomendado normalmente ≤1,5 mm para rigidez).\n· Superficie externa: Capa de granulado electrostático, por\nejemplo pintura de granulado de poliester (TGIC). Grosor de\n60mm, u otro acabado cosmético.\n· Superficie interna: Acero cromado y galvanizado en caliente.\nNo pintada. Las superficies que constituyen el contacto\nmetal a metal no deben pintarse.\n· Persianas: Orificios en el acero ≤ 21 mm de ancho o de tipo\nespecial a prueba de RFI.\n· Puerta: Sellada con juntas conductoras y conectada a tierra\nadecuadamente. Cierres suficientes para la conexión a tierra\nde alta frecuencia.\n20\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Soluciones de EMC\n· Paneles de cubierta: Metal contra metal (no pintado), todos\nconectados a tierra.\nEstán disponibles diversos tipos de protección específicos,que\nemplean una gran variedad de materiales y métodos de\napantallamiento contra las emisiones radiadas.\nDeben observarse las pautas del fabricante para la\nconstrucción y la conexión a tierra.\nJAULA DE FARADAY\nCierres suficientes en\nla puerta\nPaneles posteriores sin pintar\nO\nTamaño de orificio limitado\nSellado conductor en\nla puerta\nPaneles laterales extra\nPaneles inferiores/\nde casquillo\nManguitos conductores\nJunta conductora para cables de control\nFigura 3-4 Detalle de la protección.\nOrificios en las\nprotecciones\nEn la mayoría de los casos, deben realizarse algunos orificios\nen las protecciones, por ejemplo para los dispositivos de\npuerta, las persianas, los cierres, los cables, etc.\nCuando debe emplearse una protección EMC, el diámetro o\ndiagonal máxima para cualquier orificio es de 100 mm, que es\nigual a 1/10\"de la longitud de onda de una frecuencia de 300\nMHz. Estas dimensiones se han determinado aceptables en\nlas comprobaciones de EMC.\nTambién se recomienda emplear dispositivos con bastidores\nde metal si sus orificios de montaje están entre 30 mm a 100\nmm, si existe alguna duda sobre los problemas con\nperturbaciones de AF.\nLos orificios mayores de 100 mm deben cubrirse con un bastidor\nde metal rodeando la abertura y conectado a tierra a la\nprotección.\nLos orificios para observación mayores pueden cubrirse con\nbarnizado específico con capa conductora.\nEl barnizado debe conectarse a cercos de metal no pintados\ncon cinta conductora de dos caras o junta conductora.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n21",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "Soluciones de EMC\nTamaño máx. enrejado\n21\nTamaño máximo 72 x 72 mm\ninstrumento\npar trenzado\n<100 mm\nCristal para\nobservación\n10\nCubierta de metal\npara orificios\n> 100 mm\n0\nCompruebe\nque no haya\norificios\n> 100 mm\n30\n21\nNota IP2x = 12 mm\nInstale los cierres\nen la puerta sin\npintar\nNota: Si el panel frontal del dispositivo de puerta es de plástico, efectúe\nla conexión a tierra de 360° para cable, en caso contrario se acepta par trenzado\nFigura 3-5 Detalle de la abertura de una protección típica.\nConexión a tierra\nde 360° de AF\nLa conexión a tierra de 360º de AF debe llevarse a cabo en\ntodos los puntos en los que los cables entren en la protección\ndel convertidor, la caja de conexión auxiliar o el motor. Existen\ndiversos métodos para implementar la conexión a tierra de AF.\nLas soluciones empleadas en los productos CDM/BDM de ABB\nse describen aquí.\nConexión a tierra\nde AF con\ncasquillos para\npaso de cable\nLos casquillos para paso de cable que se han diseñado\nespecialmente para la conexión a tierra de 360° de AF son\nadecuados para cables de alimentación con un diámetro inferior\na 50 mm.\nLos casquillos para paso de cable no se emplean normalmente\npara los cables de control debido al hecho de que la distancia\nde las conexiones de control a los casquillos para paso de\ncable suele ser demasiado larga para una conexión a tierra de\nAF fiable. Si los casquillos se emplean con cables de control,\nel apantallamiento de cable debe continuar tan cerca de las\nconexiones de control comos sea posible. Sólo debería retirarse\nel aislamiento exterior del cable para exponer el apantallamiento\nde cable para la longitud del casquillo de cable.\nPara obtener el resultado óptimo de la conexión a tierra de AF,\nel apantallamiento del cable debería cubrirse con cinta\nconductora. La cinta debe cubrir toda la superficie del\napantallamiento, incluyendo el cable flexible, y debería\npresionarse fuertemente con los dedos después de cada vuelta.\nLa cola debe ser conductora.\n22\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Soluciones de EMC\nCABLE DE ALIMENTACIÓN\nApantallamiento de cable\ncubierto con cinta\nconductora\nCABLE A MOTOR\nCables no apantallados\ntan cortos como sea\nposible\nCable flexible corto\nPanel de casquillo\nsin pintar\nCasquillo para\npaso de cable EMC\nTuerca de fijación\nApantallamiento\nconductor y sello\nde compresión\nCable\nContinuidad de la jaula\nde Faraday\nFigura 3-6 Puntos esenciales de las conexiones de alimentación.\nConexión a tierra\nde AF con\nmanguito\nconductor\nLa conexión a tierra de 360º de AF en las entradas de los\ncables de alimentación puede efectuarse empleando un\nmanguito conductor alrededor del apantallamiento de cable.\nEl manguito se conecta a la jaula de Faraday fijándolo al collar\nespecialmente diseñado en el panel de casquillo.\n0\nPE\nCable flexible corto\nObserve la cinta conductora en el apantallamiento\ndel cable\nManguito\nconductor\nPanel de casquillo\nsin pintar con collares\nPanel inferior sin pintar\nCable\nContinuidad de la jaula\nde Faraday\nFigura 3-7 Conexión a tierra de 360° con manguito conductor.\nLa ventaja de esta solución es que el mismo manguito puede\nemplearse para cables con distintos diámetros.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n23",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Soluciones de EMC\nEl cable puede sostenerse de forma mecánica con grapas, y\nno se requiere un casquillo para paso de cable específico.\nObserve que el manguito no actúa como grapa de liberación\nde tensión.\nConexión de 360°\nen el motor\nLa continuidad de la jaula de Faraday en el extremo del motor\ndebe garantizarse con los mismos métodos que en la entrada\ndel armario, es decir:\n· Debe emplearse casquillo para paso de cable para fijarlo.\n· El apantallamiento de cable debería sellarse con cinta\nconductora.\n· Las juntas conductoras deberían emplearse para sellar el\npanel de casquillo para paso de cable y la cubierta de la\ncaja de terminales para la jaula de Faraday y el grado de\nprotección IP 55.\n· La conexión de los conductores de cable flexible debería\nser lo más corta posible.\nLa Figura 3-8 muestra una solución de jaula de Faraday en el\nextremo del motor.\nPara motores no protegidos completamente, como en el\nformato de refrigeración IC01, IC06, etc. la continuidad de la\njaula de Faraday debe garantizarse igual que para la protección\ndel convertidor.\nApantallamiento de cable\ncubierto con cinta conductora\nCable flexible corto\nCasquillo para paso\nde cable EMC\nJunta conductora\nContinuidad de\nla jaula de Faraday\nFigura 3-8 Puntos esenciales en el cableado de motor.\nJuntas\nconductoras con\ncables de control\nLa conexión a tierra de 360º de AF para cables de control\npuede llevarse a cabo con juntas conductoras. En este método\nel cable de control apantallado se conduce a través de dos\njuntas y se comprime como se muestra en la figura 3-9.\nCuando se montan juntas en un panel de casquillos, el\napantallamiento del cable debe continuar tan cerca de las\nconexiones de control como sea posible. En este caso, el\naislamiento externo del cable debería retirarse para toda la\nlongitud del paso del casquillo.\nEl apantallamiento debería cubrirse con cinta conductora.\n24\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Soluciones de EMC\nLa mejor conexión a tierra de AF se logra si las juntas se\nmontan lo más cerca posible de las conexiones de control.\nLas juntas deben instalarse para conectar con las superficies\nsin pintar conectadas a tierra del panel de casquillo en el que\nse han montado.\nTodas las colas de conexión deberían ser lo más cortas\nposibles y retorcerse en pares en los casos en los que sea\napropiado. El apantallamiento de cable debería conectarse a\ntierra con el extremo de conexión empleando un cable corto\nflexible.\nEl tamaño de orificio en un panel de casquillo requerido por\nestas juntas suele ser de 200 x 50 mm.\nCable\nRetuerza los pares\nhasta los terminales\n₡\n0\n0\nConexiones de\n0\n0\ncontrol\nQ\nQ\nQ\nCable flexible corto\nPE\nTire del aislamiento externo\nrequerido por la junta\n(unos 3 cm)\nPresione para unir\nlas juntas\nApantallamiento de cable\ncubierto de cinta conductora\nPanel de casquillo para paso de cables sin pintar\nJunta conductora\nContinuidad de\nla jaula de Faraday\nGrapa\né\nCables de\ncontrol\nØ\nFigura 3-9 Puntos esenciales para el paso del cableado de control.\nInstalación de\naccesorios\nLa variedad de accesorios que pueden instalarse es tan grande\nque sólo pueden facilitarse principios básicos para su selección\ne instalación.\nDe todas formas, los accesorios pueden dividirse en dos\ncategorías dependiendo de lo inmunes/sensibles que sean.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n25",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Soluciones de EMC\nEl dispositivo protegido en este contexto implica su capacidad\nde mantener la jaula de Faraday cerrada. Por ello se recomienda\nel uso de dispositivos protegidos/apantallados con metal en los\ncasos en los que estos dispositivos estén disponibles.\nLas reglas para los orificios en la protección deben aplicarse si\nhay dispositivos\nque forman un puente entre la parte limpia\ny la sucia que pueden ser perturbados.\nLos dispositivos abiertos típicos son los fusibles, seccionadores,\ncontactores, etc., que no tienen una cobertura de metal\nalrededor.\nEn general, estos dispositivos no pueden instalarse en la parte\nlimpia sin paneles de apantallamiento metálicos de protección.\nDeben aplicarse las reglas para los orificios en la protección.\nEn algunos casos es posible que exista una cierta confusión\nentre los requisitos de seguridad y EMC. Por ello es importante\nrecordar la siguiente regla básica:\nLa seguridad es siempre la primera prioridad y toma\nprecedencia sobre los requisitos de EMC.\nCableado interno\nEn el capítulo Ejemplos prácticos se facilitan algunos ejemplos\nde dispositivos abiertos y protegidos.\nExisten ciertas reglas básicas para el cableado interno:\n. Mantenga siempre los cables de la parte limpia y la sucia\nseparados y apantallados entre sí.\n· Las conexiones de alimentación internas limpias con unidades\nde accionamiento filtradas integralmente, por ejemplo del\ncontactor a la entrada del convertidor, no requieren cables\napantallados pero pueden requerir anillos de ferrita de\ndesacoplamiento en los lugares en los que entran en la entrada\ndel convertidor.\n· Emplee hilos de par trenzado cuando sea posible.\n· Emplee pares trenzados apantallados para el nivel de señal\nhacia afuera e hilos de retorno que salgan de la protección\nglobal.\n· Évite mezclar pares con distintos tipos de señal, por ejemplo\n110 V CA, 230 V CA, 24 V CC, analógico, digital.\n· Coloque los cables a lo largo de la superficie de metal y evite\nque cuelguen en el aire, ya que pueden convertirse en una\nantena.\n· Si se emplean canalizaciones de plástico, fíjelas directamente\na los paneles de instalación o al bastidor. No deje tramos en el\naire, ya que podrían actuar como antenas.\n· Mantenga el cableado de alimentación y control separado.\n· Emplee señales aisladas galvánicamente (libres de potencial).\n. Mantenga los hilos retorcidos tan cerca del terminal como sea\nposible\n· Mantenga los cables flexibles tan cortos como sea posible.\n· Las conexiones a tierra deberían ser lo más cortas posibles\ncon conductores de tira plana, multitrenzados o trenzados\nflexibles para una baja impedancia RFI.\n26\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "Soluciones de EMC\nSEÑALES ANALÓGICAS\nDISPOSITIVO\nDE PUERTA\n+10V ref.\nGND\nDISPOSITIVO DE\nARMARIO\nRetuerza estos\npares de pares\nEmplee cables apantallados para señales analógicas\nen mA. Para las reglas de conexión a tierra vea la\nparte Cableado de control.\nAl1+ (0 .. 10V)\nAl1- (\n0\nØ\n+\n0\nmA\nØ\nPE\nA13+14\nAl3- (4 .. 20mA)\nAO1+\nAO1-\nAO2+\nAO2-\n6\n:\nSeñal\nanalógica\n(V)\nSeñal\nanalógica\n(mA)\nSALIDA DIGITAL\nLIBRE DE\nPOTENCIAL\nDO\nCables de control\ny cableado\nNo mezcle distintos\nniveles de señal\nPE\nSEÑALES DIGITALES\nDI1\nDO\nDI3\n00000\nDI6\n+24V c.c.\n+24Vc.c.\nGND\nSALIDAS DE RELÉ\n(libres de pot.)\n+24V c.c.\nGND\nNC\nComún\nNO\nDiodo para\nrelé CC\nNo mezcle distintos niveles de señal\n230V c.a.\nN\nFiltro RC o\nvaristor para\nrelé CA\nNC\n000\nComún\nNO\n0\nNC\nComún\nQ\nNO\nRetuerza los pares\nhasta los terminales\nPARTE LIMPIA\nEvite la circulación en paralelo con cables\nde control. Cruce en ángulo de 90°\nU1 CONEXIÓN DE\nV1 ALIMENTACIÓN\nW1\n4\nMantengalas separadas (ver la figura 3-11)\nØØ\n0\nPARTE SUCIA +\nU2\nEvite la circulación en paralelo con cables\nde control. Cruce en ángulo de 90°\n000\nV2 SALIDA DE MOTOR\nW2\nFigura 3-10 Principios de cableado dentro de un CDM.\nEl cableado de control forma parte de la jaula de Faraday como\nse describe en la sección Juntas conductoras con cables de\ncontrol.\nAdemás de la correcta conexión a tierra de AF existen algunas\nreglas básicas para el cableado de control:\n· Emplee siempre cables de par trenzado apantallado:\n- cable con apantallamiento doble para señales analógicas\n- el apantallamiento sencillo para otras señales es aceptable\npero se recomienda cable con apantallamiento doble.\n· No haga circular señales de 110/230 V en el mismo cable\ncon los cables de menor nivel de señal.\n· Mantenga los pares trenzados individuales para cada\nseñal.\n· Lleve a cabo la conexión a tierra directamente en la parte\ndel convertidor de frecuencia.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n27",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Soluciones de EMC\nSi las instrucciones para el dispositivo en el otro extremo del\ncable indican una conexión a tierra en ese extremo, conecte\na tierra los apantallamientos internos en el extremo del\ndispositivo más sensible y el apantallamiento externo en el\notro.\n· Coloque los cables de señal según la figura 3-11 en los casos\nen los que sea posible y siga las instrucciones proporcionadas\npor los manuales específicos para el producto.\nManual\nespecífico de producto\nCable Motor\n> 50 cm\n> 30 cm\nCable alimentación\n> 20 cm\nCables de Señal / Control\nFigura 3-11 Principios de colocación de cables de los cables de\ncontrol.\nHay más información acerca del cableado de control en los\ndocumentos \"Conexión a tierra y cableado de los sistemas\nde accionamiento\" y en los manuales específicos para el\nproducto.\nCables de\nalimentación\nDado que los cables forman parte del PDS, también forman\nparte de la jaula de Faraday. Para poder satisfacer los requisitos\nde EMC, deben emplearse cables de alimentación con una buena\neficacia en cuanto a apantallamiento.\nEl objetivo del apantallamiento es reducir las emisiones radiadas.\nPara que sea eficaz, el apantallamiento debe tener una buena\nconductividad y cubrir la mayoría de la superficie del cable. Si el\napantallamiento del cable se emplea como una conexión a tierra\nde protección, el área de sección transversal del apantallamiento\n(o la conductividad equivalente) debe ser al menos un 50% del\nárea de sección transversal del conductor de fase.\n28\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Soluciones de EMC\nLos manuales específicos del producto describen algunos tipos\nde cables que pueden emplearse en la alimentación de red y en\nla salida de motor.\nSi estos tipos de cables no están disponibles localmente, y\ndado que los fabricantes de cables tienen distintas\nconstrucciones de apantallamientos, los tipos pueden\nevaluarse en virtud de la impedancia de transferencia del cable.\nLa impedancia de transferencia define la eficacia del\napantallamiento del cable. Se emplea de forma común con los\ncables de comunicación.\nEl cable puede constar de un apantallamiento trenzado o en\nespiral, y el material del apantallamiento debería ser\npreferiblemente de cobre o de aluminio.\nLa idoneidad para determinados tipos de convertidores se\nmenciona en los manuales específicos para el producto.\n1\n3\n2\nCi\nFigura 3-12 Hilo de acero galvanizado o cobre estañado con\napantallamiento trenzado.\n20\n3\nFigura 3-13 Capa de cinta de cobre con capa concentrica de hilos de\ncobre.\n3\n3\n2\n3\nFigura 3-14 Capa concentrica de hilos de cobre con una hélice\nabierta de cinta de cobre.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n29",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Soluciones de EMC\nImpedancia de\ntransferencia\n10000 1\nImpedancia de\ntransferencia\n[mOhm/m]\n1000 -\nCable no recomendado\n100\nLimite\nHilo de acero galvanizado o cobre\nestañado con apantallamiento trenzado(3-12)\n10\n1\nCapa de cinta de cobre con capa\nconcéntrica de hilos de cobre(3-13)\n0.1\nApantallamiento ondulado\n0.01\n0.1\n1\n10\n100\n1000\nFrecuencia (MHz)\nFigura 3-15 Impedancia de transferencia de los\ncables de alimentación.\nPara satisfacer los requisitos para emisión radiada la impedancia\nde transferencia debe ser menor que 100 m22/m en el rango\nde frecuencia de hasta 100 MHz. La mayor eficacia del\napantallamiento se logra con un conductor de metal o un\napantallamiento de aluminio ondulado. La figura 3-15 muestra\nlos valores de impedancia de transferencia típicos de distintas\nconstrucciones de cable. Cuanto mayor es el recorrido del\ncable, menor es la impedancia de transferencia requerida.\nEmpleo de anillos\nde ferrita\nEn determinados casos y debido a niveles de emisión elevados,\npueden emplearse inductores de modo común en los cables de\nseñal para evitar problemas de interfaz entre distintos sistemas.\nLas perturbaciones de modo común pueden suprimirse\nconectando conductores a través del núcleo de ferrita del\ninductor de modo común (figura 3-16).\nEl núcleo de ferrita incrementa la inductancia de los conductores\ny la inductancia mutua, por lo que las señales de perturbación\nde modo común por encima de una determinada frecuencia se\nsuprimen. Un inductor de modo común ideal no suprime una\nseñal de modo diferencial.\nFigura 3-16 Anillo de\nferrita en un cable de\nseñal.\n30\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Soluciones de EMC\nLa inductancia (es decir, la capacidad de suprimir perturbaciones\nde AF) puede incrementarse dando varias vueltas al cable de\nseñal.\nCuando se emplee un anillo de ferrita con un cable de\nalimentación, todos los conductores de fase deberían pasarse a\ntravés del anillo. El apantallamiento y el posible cable de conexión\na tierra deben conectarse fuera del anillo para mantener el efecto\nde inductor de modo común. Con los cables de alimentación no\nsuele ser posible dar varias vueltas a través del anillo. La\ninductancia puede incrementarse empleando diversos anillos\nsucesivos.\nSi por algún motivo las instrucciones para la instalación no pueden\nobservarse y por lo tanto se añaden ferritas o filtros adicionales\nposteriormente, se recomienda que se tomen mediciones para\nconfirmar su idoneidad.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n31",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "Capítulo 4 - Ejemplos prácticos\nInstalación\nsimple\nLos cables apantallados se muestran interconectando las\npartes principales, garantizando la atenuación de las emisiones\nradiadas. La alimentación se lleva a cabo a través del filtro\nRFI.\nLa jaula de Faraday se conecta a tierra y todas las emisiones\nse descargan a tierra.\nEn el caso de la figura 4-1 no se requiere que el armario sea a\nprueba de EMC, ya que las conexiones se efectúan\ndirectamente en un convertidor de frecuencia que cumple EMC.\nCaja de metal\nRESISTENCIA\nDE\nFRENADO\nCHOPPER\nDE\nFRENADO\nPara los detalles de conexión\nvéase el manual específico\ndel producto para el chopper\ny la resistencia\nTransformador\nConexión a tierra de 360°\nCable apantallado\nMCC\nArmario\nbastidor\nde metal\nPE\nPDS\nArmario\nPanel de\nmontaje sin\npintar\nConvertidor\nPE\nFILTRO\nRFI\nRectificador\nCaja de metal\n=\nCONTROL\nSalida del 2. PELINPE\n-----\nmotor\nPara más detalles, véase la sección\nacerca de la CONEXIÓN A TIERRA\nDE 360º EN EL EXTREMO DEL MOTOR\n3~\n1) Cable flexible\ncorto a PE,\napantallamiento\nde par y común\n2) Conexión a tierra\nde 360º\n3) Para las reglas\nvease la parte\nCABLEADO DE\nCONTROL\nFigura 4-1 Configuración básica del PDS.\n32\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": [
+        [
+          [
+            "Instalación simple",
+            "Los cables apantallados se muestran interconectando las partes principales, garantizando la atenuación de las emisiones radiadas. La alimentación se lleva a cabo a través del filtro RFI."
+          ],
+          [
+            "",
+            "La jaula de Faraday se conecta a tierra y todas las emisiones se descargan a tierra."
+          ],
+          [
+            "En el caso de la figura 4-1 no se requiere que el armario sea a prueba de EMC, ya que las conexiones se efectúan directamente en un convertidor de frecuencia que cumple EMC."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Ejemplos prácticos\nEjemplo de\nsistema de\nderivación\n<100kVA\nEn este caso es dificil garantizar que no ocurra un acoplamiento\ncruzado entre la parte sucia del convertidor y la parte limpia\nencima del contactor Directo en línea (DOL). Los contactores\nno son barreras RFI, y los circuitos de espira también son\nvulnerables.\nUn filtro RFI adecuado en las conexiones de la entrada de\nalimentación requeriría poder pasar la corriente de arranque\ndel DOL, que puede ser de seis a siete veces la intensidad de\ncarga plena normal, y estaría muy sobredimensionado, lo que\ndificultaría el diseño. Los núcleos de ferrita empleados en los\nalimentadores al contactor contribuirán a atenuar los ruidos\nacoplados como se muestra en la figura 4-2.\nTransformador\nConexión a tierra de 360º\nCable apantallado\nPARTE SUCIA O RADIATIVA\nMCC\nArmario\nbastidor\nde metal\nPE\nArmario 1\nConexión de\nalimentación\nPE\nAislador\nArmario 2\nPanel de montaje sin pintar\nPDS\nLa ferrita en el circuito DCL es para\nel acoplamiento cruzado de la salida\nde motor de la parte sucia y limpia\ndel PDS\nFerrita\nAislador\nCaja de metal\nCONTROL\nDE\nDERIVACIÓN\nPĒI\nRELÉS DE\nCONTROL\nO PLC\nMódulo\nde\nacciona-\nmiento\nFILTRO\nRFI\n2\nCaja de metal\nCONTROL\nContactor\nPĒI\nAislador\nContactor\n1) Cable flexible\ncorto a PE, apantallamiento\nde par y comun\n2) Conexión a tierra de 360º\n3) Para las reglas véase la parte\nCABLEADO\nDE CONTROL\nSalida del\nmotor\nTPE!\nCaja de metal\nInterruptor de IPE!\nseguridad\n℮\nPara más detalles, véase la sección acerca de la\nCONEXIÓN A TIERRA DE 360º EN EL EXTREMO DEL MOTOR\nM\n3~\nFigura 4-2 Esquema básico con derivación.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n33",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "Ejemplos prácticos\nEjemplo típico de\nconvertidor de\n12 pulsos\nEn este caso un rectificador de 12 pulsos es un sistema IT,\ndesconectado de tierra debido al bobinado delta, por lo que\ncualquier filtro en la línea debe estar en el primario del\ntransformador de variación de fase.\nLa experiencia ha demostrado que, en este caso, con\nconexiones cortas a las barras de distribución, el apantallamiento\nde tierra entre los bobinados del transformador no es adecuado\npara la atenuación de emisiones conducidas con vistas a su\nempleo en el primer entorno. Por ello, puede requerirse un filtro\nRFI en la parte primaria del transformador para el cumplimiento\nde la EMC. El filtro RFI no se requiere normalmente para un\nsegundo entorno.\nPara el equipo alimentado desde un sistema IT puede emplearse\nun procedimiento similar. Un transformador de aislamiento\npermite conectar a tierra el PDS y emplear un filtro adecuado\npara su uso en el primer entorno.\nEl punto de acoplamiento está a una tensión media y las\nemisiones pueden considerarse como el siguiente punto de baja\ntensión de acoplamiento en el sistema. El nivel de emisiones\ndebería corresponder a las pertinentes para el entorno apropiado.\nPara las definiciones, véase Entornos de instalación en el capítulo\n2.\nConexión a tierra de 360°\nCable apantallado\nAlimentación de baja tensión\nPunto de medición\nCables de control apantallados\nProtección con segregación\nControl y\nvisualización\nPDS\nCables de motor\napantallados\nFILTRO\nRFI\nx\n=\nM\n3~\ne\nTierra común\nDESCARGA PARA EMISIONES\nSeccionador de entrada Transformador\nRectificadores\nInversor Reactancia\nContactor\nde variación de\nde salida\nfase (si se ha\nintegrado)\n(ferrita)\nNota: Todo el equipo en el interior debe protegerse\nFigura 4-3 Sistema de accionamiento de 12 pulsos alimentado en BT.\n34\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": [
+        [
+          [
+            "Seccionador de entrada",
+            "Transformador",
+            "Rectificadores",
+            "Inversor",
+            "Reactancia"
+          ],
+          [
+            "Contactor",
+            "de variación de",
+            "",
+            "",
+            "de salida"
+          ],
+          [
+            "",
+            "fase (si se ha integrado)",
+            "",
+            "",
+            "(ferrita)"
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "= Conexión a tierra de 360°\n= Cable apantallado\nAlimentación de baja tensión\nCable de control apantallado\nPDS\nPunto de medición\nControl y visualización\nProtección con segregación\nCables de motor\napantallados\nFILTRO\nM\n3~\nRFI\nTierra común\nDESCARGA PARA EMISIONES\nSeccionador de\nentrada\nContactor\nTransformador de Rectificadores Inversor Reactancia de\nvariación de fase\nsalida (ferrita)\n(si se ha integrado)\nFigura 4-4 Sistema de convertidor de 12 pulsos alimentado en BT (CDM, transformador y\nseccionador con carcasa separada).\n= Conexión a tierra de 360º\n= Cable apantallado\nAlimentación de media o alta tensión\nCable de control apantallado\nPDS\nPunto de medición\nControl y visualización\nProtección con segregación\nCables de motor\napantallados\nM\n3~\nTierra común\nDESCARGA PARA EMISIONES\nSeccionador de\nentrada\nContactor\nTransformador de\nvariación de fase\n(si se ha integrado)\nRectificadores Inversor Reactancia\nde salida\n(ferrita)\nFigura 4-5 Sistema de convertidor de 12 pulsos alimentado a media o alta tensión.\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n35",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "Ejemplo de\nconvertidor de\nsecciones\ncomún\nalimentado\npor CC\nEste ejemplo muestra un convertidor de secciones común\nalimentado por bus de CC que se alimenta desde una red\nconectada a tierra a través de un filtro RFI.\nLa protección debe ser a prueba de EMC ya que los\ncomponentes internos no lo son. Las entradas de cable deben\nconectarse a tierra a 360º y AF. La protección se conecta a\ntierra para descargar todas las emisiones.\nConexión a tierra de 360º\nCable apantallado\nProtección con segregación\nArmario 1\nArmario 2\nFILTRO\nRF\n=\n1\nArmario 3\nArmario\n1\n2\nTierra común\nUnidad de\nentrada\n(seccionador,\ncontactor, etc.)\nUnidad de\nalimentación\n(rectificador)\n+ M\n3 ~\nUnidad de\naccionamiento\n(inversor)\n0 M\n3 -\n1\nUnidad de\naccionamiento\n(inversor)\nPDS\nControl y\nvisualización\nCables de\ncontrol\napantallados\nCables a\nmotor\napantallados\nFigura 4-6 Convertidor de secciones común alimentado por bus de CC en BT\n36\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Capítulo 5 - Bibliografía\nEn esta guía se hace referencia a varios textos, cuya lectura\nse recomienda para ayudarle a lograr unas instalaciones que\ncumplan las normas plenamente:\nEN 61800-3, Sistemas de accionamiento de potencia eléctrica\nde velocidad ajustable - punto 3, norma de producto EMC\nincluyendo comprobación específica (publicada por CENELEC,\nBruselas, Bélgica y las organizaciones de estandarización\ninternacionales en los países miembros de la UE).\nPautas de la Comisión acerca de la aplicación de la Directiva\ndel Consejo 89/336/EEC, publicada por la Comisión Europea\nDGIII - Industria.\nEquipo eléctronico sin interferencias por el Dr. Sten Benda\n(publicado por ABB Industry Ab, Västerås, Suecia)\nGuía técnica Nº 2 - Directivas del Consejo de la UE y Sistemas\nde accionamiento de potencia eléctrica de velocidad ajustable,\ncódigo 3BFE 61253980 RO125 REV B (publicado por ABB\nIndustry Oy, Helsinki, Finlandia)\nConexión a tierra y cableado del sistema de accionamiento,\ncódigo 3AFY 61201998 (publicado por ABB Industry Oy,\nHelsinki, Finlandia)\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n37",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "Capítulo 6 - Índice\nA\nacoplamiento cruzado 33\ndesequilibrio\n8\nDirectiva de baja tensión\n5\nAEE\n8\nDirectiva para maquinaria\n5\nAnillo de ferrita\n15, 16, 26, 30,\nDistribución restringida\n3, 12, 13\n31\nDistribución sin restricciones\n3,\nantena\n26\n13\napantallamiento metálico\n26\nDistribución para la venta 12, 13\naparato\n11\ndistribuidores\n13\narmario\n16, 24, 32\nDOL\n33\narmónicos\n8\nE\nB\nelectrónica de control\n8\nbobinado delta\n34\nemisión de alta frecuencia\n8\nC\nEntorno de instalación 3, 11, 13, 34\nconducción\n8\nentorno electromagnético\n8\nCable apantallado\n26, 32\nEtiquetaje CE 3, 5, 10, 11, 16\ncable con apantallamiento\nF\ndoble 27\nFabricantes de equipo original\nCable de control 16, 22, 24, 27,\n(OEM) 5, 6, 9\n28\nConstructor de paneles 5, 6, 9\ncable flexible\n24, 26\nfenómenos de alta frecuencia\n8\ncampo electromagnético\nfenómenos de baja\nradiante\n8\nfrecuencia\n8\ncanalización de plástico\n26\nFiltro RFI 15, 17, 18, 32, 33\ncasquillo para paso de cable 22,\nfunción directa\n16\n24\nfusible\n5, 17, 26\nCENELEC\n9, 37\nG\nClase de entorno 11, 12\ncliente\n13\ngrapa de liberación de tensión 24\nI\nCompatibilidad electromagnética\nIGBT\n8\n(EMC) 1, 3, 5, 6, 8, 9, 12, 13, 15,\nImpedanciaRF 26\n16, 17, 18, 19, 20, 21, 22, 23, 24,\nincremento transitorio rápido\n8\n25, 26, 27, 28, 29, 30, 31, 32, 34,\nIntegrador de sistemas\n5\nJ\n37\nComponente\n3, 5, 8, 9, 11, 16, 17,\nJaula de Faraday 16, 17, 19,\n19\n20, 23, 24, 26, 27, 28, 32\ncomponentes de potencia\n8\n22, 24, 25\nJunta conductora\n16, 20, 21,24, 27\nconexión de control\njunta 16, 20, 21, 24, 25, 27\nContactor\n5, 15, 17, 19, 26, 33\nM\nconvertidor\n8, 19, 24, 26, 27,\nMódulo de accionamiento básico\n33, 34, 35\n(BDM) 8, 17, 19\nconvertidor\n1, 3, 5, 6, 8, 9, 12,\nMódulo de accionamiento completo\n13, 15, 16,17, 18, 19, 22, 26, 28,\n(CDM)\n8, 27\n29, 37\nmotor\n24\nconvertidor de frecuencia\n8, 19,\nmuescas\n8\n27, 32\nN\nConvertidores de velocidad\nnúcleo de ferrita\n33\nP\n23, 24, 25\nvariable (VSD) 5, 6, 8, 16, 17,\n22, 37\npanel de casquillo\npar trenzado\n16, 22, 26, 27\nD\n8\ndescarga electrostática\nperturbación electromagnética 9\n38\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC",
+      "tablas": [
+        [
+          [
+            "A",
+            "desequilibrio 8"
+          ],
+          [
+            "acoplamiento cruzado 33",
+            "Directiva de baja tensión 5"
+          ],
+          [
+            "AEE 8",
+            "Directiva para maquinaria 5"
+          ],
+          [
+            "Anillo de ferrita 15, 16, 26, 30,",
+            "Distribución restringida 3, 12, 13"
+          ],
+          [
+            "31",
+            "Distribución sin restricciones 3,"
+          ],
+          [
+            "antena 26",
+            "13"
+          ],
+          [
+            "apantallamiento metálico 26",
+            "Distribución para la venta 12, 13"
+          ],
+          [
+            "aparato 11",
+            "distribuidores 13"
+          ],
+          [
+            "armario 16, 24, 32",
+            "DOL 33"
+          ],
+          [
+            "armónicos 8",
+            "E"
+          ],
+          [
+            "B",
+            "electrónica de control 8"
+          ],
+          [
+            "bobinado delta 34",
+            "emisión de alta frecuencia 8"
+          ],
+          [
+            "C",
+            "Entorno de instalación 3, 11, 13, 34"
+          ],
+          [
+            "conducción 8",
+            "entorno electromagnético 8"
+          ],
+          [
+            "Cable apantallado 26, 32",
+            "Etiquetaje CE 3, 5, 10, 11, 16"
+          ],
+          [
+            "cable con apantallamiento",
+            "F"
+          ],
+          [
+            "doble 27",
+            "Fabricantes de equipo original"
+          ],
+          [
+            "Cable de control 16, 22, 24, 27,",
+            "(OEM) 5, 6, 9"
+          ],
+          [
+            "28",
+            "Constructor de paneles 5, 6, 9"
+          ],
+          [
+            "cable flexible 24, 26",
+            "fenómenos de alta frecuencia 8"
+          ],
+          [
+            "campo electromagnético",
+            "fenómenos de baja"
+          ],
+          [
+            "radiante 8",
+            "frecuencia 8"
+          ],
+          [
+            "canalización de plástico 26",
+            "Filtro RFI 15, 17, 18, 32, 33"
+          ],
+          [
+            "casquillo para paso de cable 22,",
+            "función directa 16"
+          ],
+          [
+            "24",
+            "fusible 5, 17, 26"
+          ],
+          [
+            "CENELEC 9, 37",
+            "G"
+          ],
+          [
+            "Clase de entorno 11, 12 cliente 13",
+            "grapa de liberación de tensión 24 I"
+          ],
+          [
+            "Compatibilidad electromagnética",
+            "IGBT 8"
+          ],
+          [
+            "(EMC) 1, 3, 5, 6, 8, 9, 12, 13, 15,",
+            "ImpedanciaRF 26"
+          ],
+          [
+            "16, 17, 18, 19, 20, 21, 22, 23, 24,",
+            "incremento transitorio rápido 8"
+          ],
+          [
+            "25, 26, 27, 28, 29, 30, 31, 32, 34,",
+            "Integrador de sistemas 5 J"
+          ],
+          [
+            "37"
+          ],
+          [
+            "Componente 3, 5, 8, 9, 11, 16, 17,",
+            "Jaula de Faraday 16, 17, 19,"
+          ],
+          [
+            "19",
+            "20, 23, 24, 26, 27, 28, 32"
+          ],
+          [
+            "componentes de potencia 8",
+            "Junta conductora 16, 20, 21,24, 27"
+          ],
+          [
+            "22, 24, 25\nconexión de control",
+            "junta 16, 20, 21, 24, 25, 27"
+          ],
+          [
+            "Contactor 5, 15, 17, 19, 26, 33",
+            "M"
+          ],
+          [
+            "convertidor 8, 19, 24, 26, 27,",
+            "Módulo de accionamiento básico"
+          ],
+          [
+            "33, 34, 35",
+            "(BDM) 8, 17, 19"
+          ],
+          [
+            "convertidor 1, 3, 5, 6, 8, 9, 12,",
+            "Módulo de accionamiento completo"
+          ],
+          [
+            "13, 15, 16,17, 18, 19, 22, 26, 28,",
+            "(CDM) 8, 27"
+          ],
+          [
+            "29, 37",
+            "motor 24"
+          ],
+          [
+            "convertidor de frecuencia 8, 19,",
+            "muescas 8"
+          ],
+          [
+            "27, 32",
+            "N"
+          ],
+          [
+            "Convertidores de velocidad",
+            "núcleo de ferrita 33 P"
+          ],
+          [
+            "variable (VSD) 5, 6, 8, 16, 17,"
+          ],
+          [
+            "22, 37",
+            "23, 24, 25\npanel de casquillo par trenzado 16, 22, 26, 27"
+          ],
+          [
+            "D"
+          ],
+          [
+            "8 descarga electrostática",
+            "perturbación electromagnética 9"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Perturbación de radiofrecuencia\nconductora\n8\nPrimer entorno\n3, 12, 34\nprotección\n15, 16, 17, 19, 20,\n21, 22, 24, 26\nPunto de acoplamiento 34\nR\nradiación\n8, 16\nrectificador de 12 pulsos\n34\nred de alimentación\n12, 13\nred de baja tensión\n12, 17\nred de media tensión\n12\nredes de distribución de\nalimentación\n11\nS\nSegundo entorno\n3, 11, 12\nSin restricciones 3, 12, 13\nSistema de accionamiento de\npotencia (PDS)\n1, 3, 6, 8, 9, 11,\n12, 13, 14, 16, 17, 28, 32, 34, 37\nSistema IT 34\nsobretensión transitoria\neléctrica 8\nT\ntransformador 12, 34\ntransformador de\naislamiento\n34\ntransformador de variación de\nfase\n34\nU\nunidad comercial\nindependiente\n11\nunidad funcional\nindependiente 11\nusuario\n5, 9, 12, 13\nGuía técnica Nº 3 - Instalación y configuración de un PDS en conformidad con EMC\n39",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "014\nNORDICO\nKDO AMBIENTAL NO\nMARCADO A\nImpresos\n441\ncopyright@ ABB Automation Group Ltd, 2000 3BFE 64312391 R0206 Especificaciones sujetas a cambios sin notificación previa\nES 20.3.2000\nABB\nABB Sistemas Industriales, S.A.\nDivisión Accionamientos\nPolígono Industrial Suroeste, s/n\n08192 Sant Quirze del Vallès\nBarcelona\nTel:\n93 728 87 00\nFax:\n93 728 87 43\nInternet: http://www.abb.com/es",
+      "tablas": []
+    }
+  ]
+}

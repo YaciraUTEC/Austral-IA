@@ -1,0 +1,1474 @@
+{
+  "archivo": "90005262 - ARRANCADOR ATS480D32Y SCHNEIDER ELECTRIC_p1_40",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "Altivar Soft Starter ATS480\nATS48 to ATS480 Substitution Manual\nNNZ85529.02\n05/2025\nAltivar\nBott Marter\nSTATUE\nSchneider\nESC\nRUN\nSchneider\nAZ\n211\nwww.se.com\nSchneider\nElectric",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "Legal Information\nThe information provided in this document contains general descriptions, technical\ncharacteristics and/or recommendations related to products/solutions.\nThis document is not intended as a substitute for a detailed study or operational and\nsite-specific development or schematic plan. It is not to be used for determining\nsuitability or reliability of the products/solutions for specific user applications. It is the\nduty of any such user to perform or have any professional expert of its choice\n(integrator, specifier or the like) perform the appropriate and comprehensive risk\nanalysis, evaluation and testing of the products/solutions with respect to the relevant\nspecific application or use thereof.\nThe Schneider Electric brand and any trademarks of Schneider Electric SE and its\nsubsidiaries referred to in this document are the property of Schneider Electric SE or\nits subsidiaries. All other brands may be trademarks of their respective owner.\nThis document and its content are protected under applicable copyright laws and\nprovided for informative use only. No part of this document may be reproduced or\ntransmitted in any form or by any means (electronic, mechanical, photocopying,\nrecording, or otherwise), for any purpose, without the prior written permission of\nSchneider Electric.\nSchneider Electric does not grant any right or license for commercial use of the\ndocument or its content, except for a non-exclusive and personal license to consult it\non an \"as is\" basis.\nSchneider Electric reserves the right to make changes or updates with respect to or in\nthe content of this document or the format thereof, at any time without notice.\nTo the extent permitted by applicable law, no responsibility or liability is\nassumed by Schneider Electric and its subsidiaries for any errors or omissions\nin the informational content of this document, as well as any non-intended use\nor misuse of the content thereof.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "Table of Contents\nSafety Information\n5\nAbout the document\n7\nHow to substitute an ATS48 with an ATS480?\n17\nSubstitution Procedure Overview\n18\nInventory of the Existing ATS48 Installation.\n19\nIdentification of the ATS48 Commercial Reference\n20\nIdentification of the Accessories and Options Commercial\nReferences\n21\nATS480 Soft Starter Selection and Accessories\n22\nSoft Starter Selection\n23\nDisplay Terminal and Remote Mounting Kit Selection\n24\nProtective Covers for Power Terminals.\n25\nLine Chokes\n26\nDNV Kits\n27\nInstallation\n28\nHandling\n29\nClearances\n31\nMounting\n32\nDimension Differences\n33\nATS480 Remote Mounting Kits\n34\nWiring\n36\nPower and Ground Wiring\n37\nLayout And Characteristics Of Control Terminals\n38\nControl Terminals Wiring\n40\nChecking Installation\n42\nInitial Setup\n44\nConfiguration Migration\n45\nRequirements.\n46\nMigration Procedure\n47\nATS48 Code Equivalence With ATS480 Parameters\n51\nATS48 Parameter Changes\n54\nModbus Communication\n64\nATS480 Embedded Modbus Wiring\n65\nModbus Configuration\n66\nProduct HMI\n68\nDisplay Terminals\n69\nMounting display terminal on the door of the enclosure\n73\nSoft Starter State\n74\nFront Product LEDs\n75\nGlossary\n77\nNNZ85529.02 - 05/2025\n3",
+      "tablas": [
+        [
+          [
+            "Safety Information",
+            "5"
+          ],
+          [
+            "About the document",
+            "7"
+          ],
+          [
+            "How to substitute an ATS48 with an ATS480?",
+            "17"
+          ],
+          [
+            "Substitution Procedure Overview",
+            "18"
+          ],
+          [
+            "Inventory of the Existing ATS48 Installation.",
+            "19"
+          ],
+          [
+            "Identification of the ATS48 Commercial Reference",
+            "20"
+          ],
+          [
+            "Identification of the Accessories and Options Commercial References",
+            "21"
+          ],
+          [
+            "ATS480 Soft Starter Selection and Accessories",
+            "22"
+          ],
+          [
+            "Soft Starter Selection",
+            "23"
+          ],
+          [
+            "Display Terminal and Remote Mounting Kit Selection",
+            "24"
+          ],
+          [
+            "Protective Covers for Power Terminals.",
+            "25"
+          ],
+          [
+            "Line Chokes",
+            "26"
+          ],
+          [
+            "DNV Kits",
+            "27"
+          ],
+          [
+            "Installation",
+            "28"
+          ],
+          [
+            "Handling",
+            "29"
+          ],
+          [
+            "Clearances",
+            "31"
+          ],
+          [
+            "Mounting",
+            "32"
+          ],
+          [
+            "Dimension Differences",
+            "33"
+          ],
+          [
+            "ATS480 Remote Mounting Kits",
+            "34"
+          ],
+          [
+            "Wiring",
+            "36"
+          ],
+          [
+            "Power and Ground Wiring",
+            "37"
+          ],
+          [
+            "Layout And Characteristics Of Control Terminals",
+            "38"
+          ],
+          [
+            "Control Terminals Wiring",
+            "40"
+          ],
+          [
+            "Checking Installation",
+            "42"
+          ],
+          [
+            "Initial Setup",
+            "44"
+          ],
+          [
+            "Configuration Migration",
+            "45"
+          ],
+          [
+            "Requirements.",
+            "46"
+          ],
+          [
+            "Migration Procedure",
+            "47"
+          ],
+          [
+            "ATS48 Code Equivalence With ATS480 Parameters",
+            "51"
+          ],
+          [
+            "ATS48 Parameter Changes",
+            "54"
+          ],
+          [
+            "Modbus Communication",
+            "64"
+          ],
+          [
+            "ATS480 Embedded Modbus Wiring",
+            "65"
+          ],
+          [
+            "Modbus Configuration",
+            "66"
+          ],
+          [
+            "Product HMI",
+            "68"
+          ],
+          [
+            "Display Terminals",
+            "69"
+          ],
+          [
+            "Mounting display terminal on the door of the enclosure",
+            "73"
+          ],
+          [
+            "Soft Starter State",
+            "74"
+          ],
+          [
+            "Front Product LEDs",
+            "75"
+          ],
+          [
+            "Glossary",
+            "77"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "Safety Information\nImportant Information\nRead these instructions carefully, and look at the equipment to become familiar\nwith the device before trying to install, operate, service, or maintain it. The\nfollowing special messages may appear throughout this documentation or on the\nequipment to warn of potential hazards or to call attention to information that\nclarifies or simplifies a procedure.\nThe addition of this symbol to a \"Danger\" or \"Warning\" safety label indicates that an\nelectrical hazard exists which will result in personal injury if the instructions are not\nfollowed.\n4\nThis is the safety alert symbol. It is used to alert you to potential personal injury\nhazards. Obey all safety messages that follow this symbol to avoid possible injury or\ndeath.\n!\n!\nDANGER\nDANGER indicates a hazardous situation which, if not avoided, will result in death or serious\ninjury.\n!\nWARNING\nWARNING indicates a hazardous situation which, if not avoided, could result in death or\nserious injury.\n!\nCAUTION\nCAUTION indicates a hazardous situation which, if not avoided, could result in minor or\nmoderate injury.\nNOTICE\nNOTICE is used to address practices not related to physical injury.\nPlease Note\nElectrical equipment should be installed, operated, serviced, and maintained only\nby qualified personnel. No responsibility is assumed by Schneider Electric for any\nconsequences arising out of the use of this material.\nA qualified person is one who has skills and knowledge related to the construction\nand operation of electrical equipment and its installation, and has received safety\ntraining to recognize and avoid the hazards involved.\nNNZ85529.02 - 05/2025\n5",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "Qualification of Personnel\nOnly appropriately trained persons who are familiar with and understand the\ncontents of this manual and all other pertinent product documentation are\nauthorized to work on and with this product. In addition, these persons must have\nreceived safety training to recognize and avoid hazards involved. These persons\nmust have sufficient technical training, knowledge and experience and be able to\nforesee and detect potential hazards that may be caused by using the product, by\nchanging the settings and by the mechanical, electrical and electronic equipment\nof the entire system in which the product is used. All persons working on and with\nthe product must be fully familiar with all applicable standards, directives, and\naccident prevention regulations when performing such work.\nIntended Use\nThis product is intended for industrial use according to this manual.\nThe product may only be used in compliance with all applicable safety standard\nand local regulations and directives, the specified requirements and the technical\ndata. The product must be installed outside the hazardous ATEX zone. Prior to\nusing the product, you must perform a risk assessment in view of the planned\napplication. Based on the results, the appropriate safety measures must be\nimplemented. Since the product is used as a component in an entire system, you\nmust ensure the safety of persons by means of the design of this entire system (for\nexample, machine design). Any use other than the use explicitly permitted is\nprohibited and can result in hazards.\n6\nNNZ85529.02 - 05/2025",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "About the document\nDocument Scope\nThe purpose of this document is to:\n· Show you how to the Modbus RTU fieldbus on your soft starter.\n. Show you how to configure the soft starter to use the Modbus RTU for\nmonitoring and control.\n· Provide examples of setup using Modbus RTU communication.\nNOTE: Read and understand this document and all related documents (see\nbelow) before installing, operating, or maintaining your soft starter.\nValidity Note\nOriginal instructions and information given in the present document have\nbeen written in English (before optional translation).\nNOTE: The products listed in the document are not all available at the time of\npublication of this document online. The data, illustrations and product\nspecifications listed in the guide will be completed and updated as the product\navailabilities evolve. Updates to the guide will be available for download once\nproducts are released onto the market.\nThis documentation is valid only for ATS480.\nThe characteristics of the products described in this document are intended to\nmatch the characteristics that are available on www.se.com. As part of our\ncorporate strategy for constant improvement, we may revise the content over time\nto enhance clarity and accuracy. If you see a difference between the\ncharacteristics in this document and the characteristics on www.se.com, consider\nwww.se.com to contain the latest information.\nNNZ85529.02 - 05/2025\n7",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "Product Related Information\nRead and understand these instructions before performing any procedure\nwith this soft starter.\nA ADANGER\nHAZARD OF ELECTRIC SHOCK, EXPLOSION, OR ARC FLASH\n· Only appropriately trained persons who are familiar with and fully understand\nthe contents of the present manual and all other pertinent product\ndocumentation and who have received all necessary training to recognize\nand avoid hazards involved are authorized to work on and with this\nequipment.\n· Installation, adjustment, repair and maintenance must be performed by\nqualified personnel.\n· Verify compliance with all local and national electrical code requirements as\nwell as all other applicable regulations with respect to grounding of all\nequipment.\n· Only use properly rated, electrically insulated tools and measuring\nequipment.\n· Do not touch unshielded components or terminals with voltage present.\n. Prior to performing any type of work on the equipment, block the motor shaft\nto prevent rotation.\n· Insulate both ends of unused conductors of the motor cable.\nFailure to follow these instructions will result in death or serious injury.\nA ADANGER\nHAZARD OF ELECTRIC SHOCK, EXPLOSION, OR ARC FLASH\nBefore performing work on the equipment:\n· Use all required personal protective equipment (PPE).\n· Disconnect all power, including external control power that may be present.\nTake into account that the circuit breaker or main switch does not de-energize\nall circuits.\n. Place a \"Do Not Turn On\" label on all power switches related to the\nequipment.\n· Lock all power switches in the open position.\n· Verify the absence of voltage using a properly rated voltage sensing device.\nBefore applying voltage to the equipment:\n· Verify that the work has been completed and that the entire installation\ncannot cause hazards.\n. If the mains input terminals and the motor output terminals have been\ngrounded and short-circuited, remove the ground and the short circuits on the\nmains input terminals and the motor output terminals.\n· Verify proper grounding of all equipment.\n· Verify that all protective equipment such as covers, doors, grids is installed\nand/or closed.\nFailure to follow these instructions will result in death or serious injury.\n8\nNNZ85529.02 - 05/2025",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "A ADANGER\nHAZARD OF ELECTRIC SHOCK, EXPLOSION, OR ARC FLASH\n· Never operate energized switch with door open.\n· Turn off switch before removing or installing fuses or making load side\nconnections.\n· Do not use renewable link fuses in fused switches.\nFailure to follow these instructions will result in death or serious injury.\nDamaged products or accessories may cause electric shock or unanticipated\nequipment operation.\nA A DANGER\nELECTRIC SHOCK OR UNANTICIPATED EQUIPMENT OPERATION\nDo not use damaged products or accessories.\nFailure to follow these instructions will result in death or serious injury.\nContact your local Schneider Electric sales office if you detect any damage\nwhatsoever.\nThis equipment has been designed to operate outside of any hazardous location.\nOnly install this equipment in zones known to be free of a hazardous atmosphere.\nA DANGER\nPOTENTIAL FOR EXPLOSION\nInstall and use this equipment in non-hazardous locations only.\nFailure to follow these instructions will result in death or serious injury.\nNNZ85529.02 - 05/2025\n9",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "Your application consists of a whole range of different interrelated mechanical,\nelectrical, and electronic components, the device being just one part of the\napplication. The device by itself is neither intended to nor capable of providing the\nentire functionality to meet all safety-related requirements that apply to your\napplication. Depending on the application and the corresponding risk assessment\nto be conducted by you, a whole variety of additional equipment is required such\nas, but not limited to, external monitoring devices, guards, etc.\nAs a designer/manufacturer of machines, you must be familiar with and observe all\nstandards that apply to your machine. You must conduct a risk assessment and\ndetermine the appropriate Performance Level (PL) and/or Safety Integrity Level\n(SIL) and design and build your machine in compliance with all applicable\nstandards. In doing so, you must consider the interrelation of all components of the\nmachine. In addition, you must provide instructions for use that enable the user of\nyour machine to perform any type of work on and with the machine such as\noperation and maintenance in a safe manner.\nThe present document assumes that you are fully aware of all normative standards\nand requirements that apply to your application. Since the device cannot provide\nall safety-related functionality for your entire application, you must ensure that the\nrequired Performance Level and/or Safety Integrity Level is reached by installing\nall necessary additional equipment.\nA WARNING\nINSUFFICIENT PERFORMANCE LEVEL/SAFETY INTEGRITY LEVEL AND/\nOR UNINTENDED EQUIPMENT OPERATION\n· Conduct a risk assessment according to EN ISO 12100 and all other\nstandards that apply to your application.\n. Use redundant components and/or control paths for all critical control\nfunctions identified in your risk assessment.\n· Verify that the service life of all individual components used in your\napplication is sufficient for the intended service life of your overall application.\n· Perform extensive commissioning tests for all potential error situations to\nverify the effectiveness of the safety-related functions and monitoring\nfunctions implemented, for example, but not limited to, speed monitoring by\nmeans of encoders, short circuit monitoring for all connected equipment,\ncorrect operation of brakes and guards.\n· Perform extensive commissioning tests for all potential error situations to\nverify that the load can be brought to a safe stop under all conditions.\nFailure to follow these instructions can result in death, serious injury, or\nequipment damage.\nProduct may perform unexpected movements because of incorrect wiring,\nincorrect settings, incorrect data or other errors.\nA WARNING\nUNANTICIPATED EQUIPMENT OPERATION\n· Carefully install the wiring in accordance with the EMC requirements.\n· Do not operate the product with unknown or unsuitable settings or data.\n· Perform a comprehensive commissioning test.\nFailure to follow these instructions can result in death, serious injury, or\nequipment damage.\n10\nNNZ85529.02 - 05/2025",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "A WARNING\nLOSS OF CONTROL\n· The designer of any control scheme must consider the potential failure\nmodes of control paths and, for critical control functions, provide a means to\nachieve a safe state during and after a path failure. Examples of critical\ncontrol functions are emergency stop, overtravel stop, power outage and\nrestart.\n· Separate or redundant control paths must be provided for critical control\nfunctions.\n· System control paths may include communication links. Consideration must\nbe given to the implications of unanticipated transmission delays or failures of\nthe link.\n· Observe all accident prevention regulations and local safety guidelines (1).\n· Each implementation of the product must be individually and thoroughly\ntested for proper operation before being placed into service.\nFailure to follow these instructions can result in death, serious injury, or\nequipment damage.\n(1) For USA: Additional information, refer to NEMA ICS 1.1 (latest edition), Safety\nGuidelines for the Application, Installation and Maintenance of Solid State Control.\nMachines, controllers, and related equipment are usually integrated into networks.\nUnauthorized persons and malware may gain access to the machine as well as to\nother devices on the network/fieldbus of the machine and connected networks via\ninsufficiently secure access to software and networks.\nA WARNING\nUNAUTHORIZED ACCESS TO THE MACHINE VIA SOFTWARE AND\nNETWORKS\n· In your hazard and risk analysis, consider all hazards that result from access\nto and operation on the network/fieldbus and develop an appropriate cyber\nsecurity concept.\n. Verify that the hardware infrastructure and the software infrastructure into\nwhich the machine is integrated as well as all organizational measures and\nrules covering access to this infrastructure consider the results of the hazard\nand risk analysis and are implemented according to best practices and\nstandards covering IT security and cyber security (such as: ISO/IEC 27000\nseries, Common Criteria for Information Technology Security Evaluation,\nISO/ IEC 15408, IEC 62351, ISA/IEC 62443, NIST Cybersecurity Framework,\nInformation Security Forum - Standard of Good Practice for Information\nSecurity, SE recommended Cybersecurity Best Practices*).\n· Verify the effectiveness of your IT security and cyber security systems using\nappropriate, proven methods.\nFailure to follow these instructions can result in death, serious injury, or\nequipment damage.\n(*) : SE Recommended Cybersecurity Best Practices can be downloaded on SE.\ncom.\nA WARNING\nLOSS OF CONTROL\nPerform a comprehensive commissioning test to verify that communication\nmonitoring properly detects communication interruptions.\nFailure to follow these instructions can result in death, serious injury, or\nequipment damage.\nNNZ85529.02 - 05/2025\n11",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "This product meets the EMC requirements according to the standard IEC 60947-4-\n2. This device has been designed for environment A. Use of this product in a\ndomestic environment (B environment) may cause unwanted radio interference.\nA WARNING\nRADIO INTERFERENCE\n· In a domestic environment (B environment), this product may cause radio\ninterference in which case supplementary mitigation measures may be\nrequired.\n· The references from ATS480D17Y to ATS480C11Y can be adapted to a\ndomestic environment (B environment) by adding an external bypass\ncontactor. For other ATS480 references, you must consider other mitigation\nmeasures.\nFailure to follow these instructions can result in death, serious injury, or\nequipment damage.\nNOTICE\nDESTRUCTION DUE TO INCORRECT MAINS VOLTAGE\nBefore switching on and configuring the product, verify that it is approved for the\nmains voltage.\nFailure to follow these instructions can result in equipment damage.\nGeneral Cybersecurity Information\nIn recent years, the growing number of networked machines and production plants\nhas seen a corresponding increase in the potential for cyber threats, such as\nunauthorized access, data breaches, and operational disruptions. You must,\ntherefore, consider all possible cybersecurity measures to help protect assets and\nsystems against such threats.\nTo help keep your Schneider Electric products secure and protected, it is in your\nbest interest to implement the cybersecurity best practices as described in the\nCybersecurity Best Practices document.\nSchneider Electric provides additional information and assistance:\n· Subscribe to the Schneider Electric security newsletter.\n· Visit the Cybersecurity Support Portal web page to:\n· Find Security Notifications.\n· Report vulnerabilities and incidents.\n. Visit the Schneider Electric Cybersecurity and Data Protection Posture web\npage to:\n· Access the cybersecurity posture.\n· Learn more about cybersecurity in the cybersecurity academy.\n· Explore the cybersecurity services from Schneider Electric.\n12\nNNZ85529.02 - 05/2025",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "Environmental Data\nThe Environmental Data Program is a framework\nfor how we measure, categorize, and compare\nthe environmental attributes and footprint of our\nproducts.\nUsing a rigorous, fact-based methodology, the\nprogram provides environmental data from\nacross the product lifecycle.\nFive data categories across the product lifecycle\nMaterials & substances\nUse better\nUse Better: How sustainable a product is,\nincluding environmental footprint, materials and\nsubstances, packaging, and energy efficiency.\nUse Longer: How a product's life time can be\neffectively extended in terms of repairability and\nupdatability.\nUse Again: How a product can be reused, from\ndismantling and remanufacturing to recyclability\nand manufacturer take back.\nWith this transparent, verified data, customers\nand partners are empowered to make conscious\nenvironmental choices and accurately evaluate\nand report on sustainability performance.\nUse again\n.....\nRepack &\nremanufacture\nEnvironmental\nfootprint\nEnergy\nefficiency\nAll our hardware offers have an associated\nenvironmental data available on se.com product\npages.\nRefer to Environmental Data Program for more\ninformation.\nUse longer\n.....\n.....\nLife time extension\nRelated Documents\nUse your tablet or your PC to quickly access detailed and comprehensive\ninformation on all our products on www.se.com The Internet site provides the\ninformation you need for products and solutions:\n· The whole catalog for detailed characteristics and selection guides\n· The CAD files to help design your installation, available in over 20 different file\nformats\n· All software and firmware to maintain your installation up to date\n. A large quantity of White Papers, Environment documents, Application\nsolutions, Specifications ... to gain a better understanding of our electrical\nsystems and equipment or automation\n· And finally all the User Guides related to your soft starter, listed below:\nYou can download there technical publications and other technical information\nfrom our website at www.se.com/en/download.\nCatalog\nTitle of documentation\nReference number\nCatalog: Altivar Soft Starter ATS480\nDIA2ED2210602EN (English)\nDIA2ED2210602FR (French)\nECATA1172 (Chinese)\nDIA2ED2210602DE (German)\nNNZ85529.02 - 05/2025\n13",
+      "tablas": [
+        [
+          [
+            "Title of documentation",
+            "Reference number"
+          ],
+          [
+            "Catalog: Altivar Soft Starter ATS480",
+            "DIA2ED2210602EN (English)"
+          ],
+          [
+            "DIA2ED2210602FR (French)"
+          ],
+          [
+            "ECATA1172 (Chinese)"
+          ],
+          [
+            "DIA2ED2210602DE (German)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": "Documentations\nTitle of documentation\nReference number\nATS480 Getting Started Manual\nNNZ85504 (English), NNZ85505 (French)\nNNZ85506 (Spanish), NNZ85507 (Italian)\nNNZ85508 (German), NNZ85509 (Chinese)\nNNZ85510 (Portuguese), NNZ85511 (Turkish)\nATS480 Getting Started Manual Annex for UL\nNNZ86539 (English)\nATS480 User Manual\nNNZ85515 (English), NNZ85516 (French)\nNNZ85517 (Spanish), NNZ85518 (Italian)\nNNZ85519 (German), NNZ85520 (Chinese)\nNNZ85521 (Portuguese), NNZ85522 (Turkish)\nATS480 Embedded Modbus RTU Manual\nNNZ85539 (English)\nATS480 EtherNet/IP - Modbus TCP Manual\nNNZ85540 (English)\nATS480 PROFIBUS DP Manual\nNNZ85542 (English)\nATS480 Profinet Manual\nNNZ85541 (English)\nATS480 CANopen Manual\nNNZ85543 (English)\nATS480 Communication Parameter Addresses\nNNZ85544 (English)\nATS480 Cascade Function Application Note\nNNZ85564 (English)\nRecommended Cybersecurity Best Practices\nCS-Best-Practices-2019-340 (English)\nATS48 to ATS480 substitution\nTitle of documentation\nReference number\nATS48 to ATS480 Substitution Manual\nNNZ85529 (English), NNZ85530 (French)\nNNZ85531 (Spanish), NNZ85532 (Italian)\nNNZ85533 (German), NNZ85534 (Chinese)\nNNZ85535 (Portuguese), NNZ85536 (Turkish)\nVideo: How to substitute an ATS48 for an ATS480?\nFAQ000210049 (English)\nVideos\nTitle of documentation\nReference number\nGetting Started with ATS480\nFAQ000233342 (English)\nHow to update the firmware on ATS480 with\nEcoStruxure Automation Device Maintenance?\nFAQ000233943 (English)\nHow to configure the cybersecurity applied to\nATS480?\nFAQ000236206 (English)\nHow to Integrate ATS480 DFB with EcoStruxure\nControl Expert\nFAQ000244312 (English)\n14\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Title of documentation",
+            "Reference number"
+          ],
+          [
+            "ATS480 Getting Started Manual",
+            "NNZ85504 (English), NNZ85505 (French) NNZ85506 (Spanish), NNZ85507 (Italian) NNZ85508 (German), NNZ85509 (Chinese) NNZ85510 (Portuguese), NNZ85511 (Turkish)"
+          ],
+          [
+            "ATS480 Getting Started Manual Annex for UL",
+            "NNZ86539 (English)"
+          ],
+          [
+            "ATS480 User Manual",
+            "NNZ85515 (English), NNZ85516 (French) NNZ85517 (Spanish), NNZ85518 (Italian) NNZ85519 (German), NNZ85520 (Chinese) NNZ85521 (Portuguese), NNZ85522 (Turkish)"
+          ],
+          [
+            "ATS480 Embedded Modbus RTU Manual",
+            "NNZ85539 (English)"
+          ],
+          [
+            "ATS480 EtherNet/IP - Modbus TCP Manual",
+            "NNZ85540 (English)"
+          ],
+          [
+            "ATS480 PROFIBUS DP Manual",
+            "NNZ85542 (English)"
+          ],
+          [
+            "ATS480 Profinet Manual",
+            "NNZ85541 (English)"
+          ],
+          [
+            "ATS480 CANopen Manual",
+            "NNZ85543 (English)"
+          ],
+          [
+            "ATS480 Communication Parameter Addresses",
+            "NNZ85544 (English)"
+          ],
+          [
+            "ATS480 Cascade Function Application Note",
+            "NNZ85564 (English)"
+          ],
+          [
+            "Recommended Cybersecurity Best Practices",
+            "CS-Best-Practices-2019-340 (English)"
+          ]
+        ],
+        [
+          [
+            "Title of documentation",
+            "Reference number"
+          ],
+          [
+            "ATS48 to ATS480 Substitution Manual",
+            "NNZ85529 (English), NNZ85530 (French) NNZ85531 (Spanish), NNZ85532 (Italian) NNZ85533 (German), NNZ85534 (Chinese) NNZ85535 (Portuguese), NNZ85536 (Turkish)"
+          ],
+          [
+            "Video: How to substitute an ATS48 for an ATS480?",
+            "FAQ000210049 (English)"
+          ]
+        ],
+        [
+          [
+            "Title of documentation",
+            "Reference number"
+          ],
+          [
+            "Getting Started with ATS480",
+            "FAQ000233342 (English)"
+          ],
+          [
+            "How to update the firmware on ATS480 with EcoStruxure Automation Device Maintenance?",
+            "FAQ000233943 (English)"
+          ],
+          [
+            "How to configure the cybersecurity applied to ATS480?",
+            "FAQ000236206 (English)"
+          ],
+          [
+            "How to Integrate ATS480 DFB with EcoStruxure Control Expert",
+            "FAQ000244312 (English)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "Software\nTitle of documentation\nReference number\nSoMove: FDT\nSoMove FDT (English, French, German, Spanish,\nItalian, Chinese)\nATS480: DTM\nATS480 DTM Library EN (English - to be installed\nfirst)\nATS480 DTM Lang FR (French)\nATS480 DTM Lang SP (Spanish)\nATS480 DTM Lang IT (Italian)\nATS480 DTM Lang DE (German)\nATS480 DTM Lang CN (Chinese)\nEcoStruxure Automation Device Maintenance\nEADM (English)\nInformation on Non-Inclusive or Insensitive Terminology\nAs a responsible, inclusive company, Schneider Electric is constantly updating its\ncommunications and products that contain non-inclusive or insensitive terminology.\nHowever, despite these efforts, our content may still contain terms that are deemed\ninappropriate by some customers.\nTerminology used in this document\nThe technical terms, terminology, and the corresponding descriptions in this\nmanual normally use the terms or definitions in the relevant standards.\nAmong others, these standards include:\n· ISO 13849: The Foundation of Functional Safety in the Machinery\n· IEC 60204-1: Safety of machinery - Electrical equipment of machines - Part 1:\nGeneral requirements.\n· IEC 61158 series: Industrial communication networks - Fieldbus specifications\n· IEC 61508 Ed.2 series: Functional safety of electrical/electronic/\nprogrammable electronic safety-related.\n· IEC 61784 series: Industrial communication networks - Profiles.\n· IEC 61800 series: Adjustable speed electrical power drive systems.\n· IEC 62443: Security for industrial automation and control systems.\nIn the area of drive systems this includes, but is not limited to, terms such as error,\nerror message, failure, fault, fault reset, protection, safe state, safety\nfunction, warning, warning message, and so on.\nIn addition, the term zone of operation is used in conjunction with the description\nof specific hazards, and is defined as it is for a hazard zone or danger zone in the\nEC Machinery Directive (2006/42/EC) and in ISO 12100-1.\nNNZ85529.02 - 05/2025\n15",
+      "tablas": [
+        [
+          [
+            "Title of documentation",
+            "Reference number"
+          ],
+          [
+            "SoMove: FDT",
+            "SoMove FDT (English, French, German, Spanish, Italian, Chinese)"
+          ],
+          [
+            "ATS480: DTM",
+            "ATS480 DTM Library EN (English - to be installed first) ATS480 DTM Lang FR (French) ATS480 DTM Lang SP (Spanish) ATS480 DTM Lang IT (Italian) ATS480 DTM Lang DE (German) ATS480 DTM Lang CN (Chinese)"
+          ],
+          [
+            "EcoStruxure Automation Device Maintenance",
+            "EADM (English)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Structure of the Parameter Table\nPictogram\nDescription\nM\nThis parameter can be set during operation or when stopped.\nNOTE: It is advisable to stop the motor before modifying any of the settings\nM )STOP\nThe motor must be stopped to set this parameter.\n(1)\nPower cycle must be performed after setting this parameter.\nRead only parameter, mainly used for monitoring.\nExpert mode required to access this parameter.\nContact us\nSelect your country on www.se.com/contact.\nSchneider Electric Industries SAS\nHead Office\n35, rue Joseph Monier\n92500 Rueil-Malmaison\nFrance\n16\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Pictogram",
+            "Description"
+          ],
+          [
+            "M",
+            "This parameter can be set during operation or when stopped. NOTE: It is advisable to stop the motor before modifying any of the settings"
+          ],
+          [
+            "M )STOP\n:selected:",
+            "The motor must be stopped to set this parameter."
+          ],
+          [
+            "(1)\n:selected:",
+            "Power cycle must be performed after setting this parameter."
+          ],
+          [
+            "",
+            "Read only parameter, mainly used for monitoring."
+          ],
+          [
+            "",
+            "Expert mode required to access this parameter."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "How to substitute an ATS48 with an ATS480?\nIn complement of this manual a video presenting the substitution procedure is\navailable on the Schneider Electric FAQ (FAQ000210049).\nHow to Substitute®\nan ATS48 with\nan ATS480\nSchneider\nLife Is On\nchneider\nJElectric\n.....\nNNZ85529.02 - 05/2025\n17",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "Substitution Procedure Overview\nStep\nAction\n1\nMake the inventory of the existing ATS48 installation:\n. Note the ATS48 commercial reference to replace by the ATS480\n. Note the installed ATS48 options and accessories:\n· Remote display terminal VW3G48101\n· Protective covers for power terminals\n◦\nLine choke\n◦\nDNV kits\nFor more information refer to Inventory of the Existing ATS48 Installation, page 19.\n2\nSelect the ATS480 commercial reference to replace the ATS48:\n· Select the soft starter reference with the ATS480 catalog or selector on se.com\n. Select the display terminal and remote mounting kit to match the required IP protection degree\n. Keep the existing protective covers for power terminals, line chokes and DNV kits\nFor more information refer to ATS480 Soft Starter Selection and Accessories, page 22.\n3\nUninstall the ATS48 and install the ATS480 in the same environment:\n· Same enclosure\n· Same clearances\n. Consider the depth difference between ATS48 and ATS480\n· Install the new display terminal and the remote mounting kit if used\nFor more information refer to Installation, page 28.\n4\nWire the ground, supply mains and motor supply of the newly installed ATS480:\n. Reuse the cables from the ATS48\n· Same cables section, length and position\nFor more information refer to Power and Ground Wiring, page 37.\n5\nWire the control terminals of the newly installed ATS480:\n. Reuse the cables from the ATS48\n· Refer to the correspondence table between ATS48 and ATS480 control terminals\nNOTE: The ATS480 must be supplied with 110 ... 230 Vac only\nFor more information refer to Layout And Characteristics Of Control Terminals, page 38.\n6\nBefore switching On refer to Checking Installation, page 42.\n7\nInitialize the ATS480:\n· Set the language and date\n. Set the cybersecurity policy of the ATS480\nThis menu is displayed when the ATS480 is supplied for the first time.\nFor more information refer to Layout And Characteristics Of Control Terminals, page 38.\n8\nMigrate the ATS48 configuration to the newly installed ATS480:\n. The ATS480 must be supplied\n. Use the migration tool from SoMove\nFor more information refer to Configuration Migration, page 45.\nThis concludes the substitution from the ATS48 to the ATS480.\n18\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Step",
+            "Action"
+          ],
+          [
+            "1",
+            "Make the inventory of the existing ATS48 installation: . Note the ATS48 commercial reference to replace by the ATS480 . Note the installed ATS48 options and accessories: · Remote display terminal VW3G48101 · Protective covers for power terminals"
+          ],
+          [
+            "◦ Line choke ◦ DNV kits For more information refer to Inventory of the Existing ATS48 Installation, page 19."
+          ],
+          [
+            "2",
+            "Select the ATS480 commercial reference to replace the ATS48: · Select the soft starter reference with the ATS480 catalog or selector on se.com . Select the display terminal and remote mounting kit to match the required IP protection degree . Keep the existing protective covers for power terminals, line chokes and DNV kits For more information refer to ATS480 Soft Starter Selection and Accessories, page 22."
+          ],
+          [
+            "3",
+            "Uninstall the ATS48 and install the ATS480 in the same environment:"
+          ],
+          [
+            "· Same enclosure"
+          ],
+          [
+            "· Same clearances . Consider the depth difference between ATS48 and ATS480 · Install the new display terminal and the remote mounting kit if used For more information refer to Installation, page 28."
+          ],
+          [
+            "4",
+            "Wire the ground, supply mains and motor supply of the newly installed ATS480: . Reuse the cables from the ATS48 · Same cables section, length and position For more information refer to Power and Ground Wiring, page 37."
+          ],
+          [
+            "5",
+            "Wire the control terminals of the newly installed ATS480:"
+          ],
+          [
+            ". Reuse the cables from the ATS48"
+          ],
+          [
+            "· Refer to the correspondence table between ATS48 and ATS480 control terminals NOTE: The ATS480 must be supplied with 110 ... 230 Vac only For more information refer to Layout And Characteristics Of Control Terminals, page 38."
+          ],
+          [
+            "6",
+            "Before switching On refer to Checking Installation, page 42."
+          ],
+          [
+            "7",
+            "Initialize the ATS480:"
+          ],
+          [
+            "· Set the language and date"
+          ],
+          [
+            ". Set the cybersecurity policy of the ATS480 This menu is displayed when the ATS480 is supplied for the first time. For more information refer to Layout And Characteristics Of Control Terminals, page 38."
+          ],
+          [
+            "8",
+            "Migrate the ATS48 configuration to the newly installed ATS480: . The ATS480 must be supplied . Use the migration tool from SoMove"
+          ],
+          [
+            "For more information refer to Configuration Migration, page 45."
+          ],
+          [
+            "This concludes the substitution from the ATS48 to the ATS480."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "Inventory of the Existing ATS48 Installation\nWhat's in This Part\nIdentification of the ATS48 Commercial Reference.\nIdentification of the Accessories and Options Commercial References\n21\n20\nNNZ85529.02 - 05/2025\n19",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "Identification of the ATS48 Commercial Reference\nIdentification of the ATS48 Commercial Reference\nIdentify the commercial reference of the ATS48 to substitute with the ATS480.\nThe ATS48 reference can be found on its nameplate label localized on the right\nside or on the front of the product:\nAltistart 48\nATS48D75Y\nFor rating and protection refer to User\nXxxxxxxxxxx\n20\nNNZ85529.02 - 05/2025",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "Identification of the Accessories and Options Commercial\nReferences\nIdentification of the Accessories and Options\nCommercial References\nUse this table to write down each ATS48 and related options to substitute in the\nexisting installation.\nQuanti-\nties\nATS\nreference\nRemote\nterminal\nVW3G48101\n(Yes/No)\nProtective\ncovers\npower\nterminals\n(Yes/No)\nLine chokes\n(Yes/No)\nDNV kits\n(Yes/No)\nComments\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\nNNZ85529.02 - 05/2025\n21",
+      "tablas": [
+        [
+          [
+            "",
+            "Quanti- ties",
+            "ATS reference",
+            "Remote terminal VW3G48101 (Yes/No)",
+            "Protective covers power terminals (Yes/No)",
+            "Line chokes (Yes/No)",
+            "DNV kits (Yes/No)",
+            "Comments"
+          ],
+          [
+            "1",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "4",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "6",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "7",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "8",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "9",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "10",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "11",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "12",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "13",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "14",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "15",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "16",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "17",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "ATS480 Soft Starter Selection and Accessories\nWhat's in This Part\nSoft Starter Selection.\n23\nDisplay Terminal and Remote Mounting Kit Selection\n24\nProtective Covers for Power Terminals.\n25\nLine Chokes.\n26\nDNV Kits.\n27\n22\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Soft Starter Selection.",
+            "23"
+          ],
+          [
+            "Display Terminal and Remote Mounting Kit Selection",
+            "24"
+          ],
+          [
+            "Protective Covers for Power Terminals.",
+            "25"
+          ],
+          [
+            "Line Chokes.",
+            "26"
+          ],
+          [
+            "DNV Kits.",
+            "27"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "Soft Starter Selection\nSoft Starter Selection\nRefer to the following table to select the ATS480 compatible with the ATS48 to\nsubstitute.\nLegacy offers\nATS48 ··· Q\nATS48 ... Y\n230 ... 415 Vac\n208 ... 690 Vac\nATS48D17Q\nATS48D17Y\nATS48D22Q\nATS48D22Y\nATS48D32Q\nATS48D32Y\nATS48D38Q\nATS48D38Y\nATS48D47Q\nATS48D47Y\nATS48D62Q\nATS48D62Y\nATS48D75Q\nATS48D75Y\nATS48D88Q\nATS48D88Y\nATS48C11Q\nATS48C11Y\nATS48C14Q\nATS48C14Y\nATS48C17Q\nATS48C17Y\nATS48C21Q\nATS48C21Y\nATS48C25Q\nATS48C25Y\nATS48C32Q\nATS48C32Y\nATS48C41Q\nATS48C41Y\nATS48C48Q\nATS48C48Y\nATS48C59Q\nATS48C59Y\nATS48C66Q\nATS48C66Y\nATS48C79Q\nATS48C79Y\nATS48M10Q\nATS48M10Y\nATS48M12Q\nATS48M12Y\nNew offers\nATS480 ... Y\n208 ... 690 Vac\nATS480D17Y\nATS480D22Y\nATS480D32Y\nATS480D38Y\nATS480D47Y\nATS480D62Y\nATS480D75Y\nATS480D88Y\nATS480C11Y\nATS480C14Y\nATS480C17Y\nATS480C21Y\nATS480C25Y\nATS480C32Y\nATS480C41Y\nATS480C48Y\nATS480C59Y\nATS480C66Y\nATS480C79Y\nATS480M10Y\nATS480M12Y\nThe specific legacy references and their functionality are included in the\nsubstitution:\nSpecific legacy offers\nATS48 ... YS316,\nability to set in Delta up to 500 V\nATS48 ... YS338,\ntropicalization coating\nATS48 ··· QS338,\ntropicalization coating\nNew offers\nATS480 ... Y\nNNZ85529.02 - 05/2025\n23",
+      "tablas": [
+        [
+          [
+            "Legacy offers"
+          ],
+          [
+            "ATS48 ··· Q",
+            "ATS48 ... Y"
+          ],
+          [
+            "230 ... 415 Vac",
+            "208 ... 690 Vac"
+          ],
+          [
+            "ATS48D17Q",
+            "ATS48D17Y"
+          ],
+          [
+            "ATS48D22Q",
+            "ATS48D22Y"
+          ],
+          [
+            "ATS48D32Q",
+            "ATS48D32Y"
+          ],
+          [
+            "ATS48D38Q",
+            "ATS48D38Y"
+          ],
+          [
+            "ATS48D47Q",
+            "ATS48D47Y"
+          ],
+          [
+            "ATS48D62Q",
+            "ATS48D62Y"
+          ],
+          [
+            "ATS48D75Q",
+            "ATS48D75Y"
+          ],
+          [
+            "ATS48D88Q",
+            "ATS48D88Y"
+          ],
+          [
+            "ATS48C11Q",
+            "ATS48C11Y"
+          ],
+          [
+            "ATS48C14Q",
+            "ATS48C14Y"
+          ],
+          [
+            "ATS48C17Q",
+            "ATS48C17Y"
+          ],
+          [
+            "ATS48C21Q",
+            "ATS48C21Y"
+          ],
+          [
+            "ATS48C25Q",
+            "ATS48C25Y"
+          ],
+          [
+            "ATS48C32Q",
+            "ATS48C32Y"
+          ],
+          [
+            "ATS48C41Q",
+            "ATS48C41Y"
+          ],
+          [
+            "ATS48C48Q",
+            "ATS48C48Y"
+          ],
+          [
+            "ATS48C59Q",
+            "ATS48C59Y"
+          ],
+          [
+            "ATS48C66Q",
+            "ATS48C66Y"
+          ],
+          [
+            "ATS48C79Q",
+            "ATS48C79Y"
+          ],
+          [
+            "ATS48M10Q",
+            "ATS48M10Y"
+          ],
+          [
+            "ATS48M12Q",
+            "ATS48M12Y"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "Display Terminal and Remote Mounting Kit Selection\nDisplay Terminal and Remote Mounting Kit Selection\nNot compatible\n. The ATS48 remote terminal is not compatible with the ATS480. You\ncannot reuse it.\n. To reach IP65 or higher protection degree, use the Graphic Display\nTerminal and its door mounting kit.\n. For IP43, use the Plain Text Display Terminal and its door mounting kit.\nRefer to the following table to choose a display terminal and its door mounting kit.\nDoor\nMounting Kit\nprotection\ndegree\nDisplay terminal\nDoor mounting kit\nIP65\nVW3A1111 graphic display\nterminal\nAvailable as option\nVW3A1112 remote mounting\nkit\nAvailable as option\nSchneider\nOElectric\nESC\nLOCAL\nOK\ni\nVW3A1112\nCE\nRefer to the instruction sheet\nEAV7640603.\nIP43\nVW3A1113 plain text display\nterminal\nIncluded with the product\nVW3A1114 remote mounting\nkit\nAvailable as option\nSchneider\nESC\nOK\nRefer to the instruction sheet\nEAV91355.\nUse the cable VW3A1104R30 to replace the\nATS48 3 meters cable for remote mounting kit.\nNot included with the remote kit\n24\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Door Mounting Kit protection degree",
+            "Display terminal",
+            "Door mounting kit"
+          ],
+          [
+            "IP65",
+            "VW3A1111 graphic display terminal Available as option",
+            "VW3A1112 remote mounting kit Available as option"
+          ],
+          [
+            "",
+            "Schneider OElectric ESC LOCAL OK i\n:unselected: :unselected: :unselected: :unselected:",
+            "VW3A1112 CE"
+          ],
+          [
+            "Refer to the instruction sheet EAV7640603."
+          ],
+          [
+            "IP43",
+            "VW3A1113 plain text display terminal Included with the product",
+            "VW3A1114 remote mounting kit Available as option"
+          ],
+          [
+            "",
+            "Schneider ESC OK",
+            ""
+          ],
+          [
+            "Refer to the instruction sheet EAV91355."
+          ],
+          [
+            "Use the cable VW3A1104R30 to replace the ATS48 3 meters cable for remote mounting kit. Not included with the remote kit",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "Protective Covers for Power Terminals\nProtective Covers for Power Terminals\nThe ATS48 protective covers for power terminals\nare fully compatible with the ATS480 and can be\nreused.\nCompatible\nNNZ85529.02 - 05/2025\n25",
+      "tablas": [
+        [
+          [
+            "The ATS48 protective covers for power terminals are fully compatible with the ATS480 and can be reused. Compatible",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "Line Chokes\nLine Chokes\nThe ATS48 line chokes are fully compatible with the\nATS480 and can be reused.\nCompatible\nS3\nE3\nS2\nE2\nS1\nD\n26\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "",
+            "The ATS48 line chokes are fully compatible with the ATS480 and can be reused.",
+            ""
+          ],
+          [
+            "Compatible",
+            "",
+            "S3 E3 S2 E2 S1 D :selected:"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "DNV Kits\nDNV Kits\nPartially compatible\n. The ATS48 DNV kits are fully compatible with\nthe ATS480 for the references from\nATS480D17Y to ATS480C66Y\n. For the references from ATS480C79Y to\nATS480M12Y please refer to the ATS480\ncatalogue on SE.com to order the new kit\nO\nNNZ85529.02 - 05/2025\n27",
+      "tablas": [
+        [
+          [
+            "Partially compatible",
+            ". The ATS48 DNV kits are fully compatible with the ATS480 for the references from ATS480D17Y to ATS480C66Y",
+            ""
+          ],
+          [
+            ". For the references from ATS480C79Y to ATS480M12Y please refer to the ATS480 catalogue on SE.com to order the new kit",
+            "O"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "Installation\nWhat's in This Part\nHandling\n29\nClearances\n31\nMounting\n32\nDimension Differences.\n33\nATS480 Remote Mounting Kits\n34\nProduct related information\nConductive foreign objects may cause parasitic voltage.\nA ADANGER\nELECTRIC SHOCK AND/OR UNANTICIPATED EQUIPMENT OPERATION\n· Keep foreign objects such as chips, screws or wire clippings from getting into\nthe product.\n· Verify correct seat of seals and cable entries in order to avoid deposits and\nhumidity.\nFailure to follow these instructions will result in death or serious injury.\nThe temperature of the products described in this manual may exceed 80 ℃\n(176 °F) during operation.\nA WARNING\nHOT SURFACES\n· Ensure that any contact with hot surfaces is avoided.\n· Do not allow flammable or heat-sensitive parts in the immediate vicinity of hot\nsurfaces.\n· Verify that the product has sufficiently cooled down before handling it.\n· Verify that the heat dissipation is sufficient by performing a test run under\nmaximum load conditions.\nFailure to follow these instructions can result in death, serious injury, or\nequipment damage.\n28\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Handling",
+            "29"
+          ],
+          [
+            "Clearances",
+            "31"
+          ],
+          [
+            "Mounting",
+            "32"
+          ],
+          [
+            "Dimension Differences.",
+            "33"
+          ],
+          [
+            "ATS480 Remote Mounting Kits",
+            "34"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "Handling\nHandling\nCompatible\n. The ATS480 and ATS48 must be handled the same way according to the\nfollowing instructions.\n. The ATS480 and ATS48 weights are identical.\nWeight And Lifting Lugs Availability\n10\n0\n0\n0\nSee the weights, lifting lugs availability and packaging types in the following table\nbefore installing the soft starter.\nReferences\nWeight kg (lbs)\nLifting lugs\nPackaging\nATS480D17Y ... D47Y\n4.9 (10.8)\nNo\nCardboard box\nATS480D62Y ... C11Y\n8.3 (18.2)\nNo\nCardboard box\nATS480C14Y ... C17Y\n12.4 (27.3)\nYes\nCardboard box\nATS480C21Y ... C32Y\n18.2 (40.1)\nYes\nPallet\nATS480C41Y ... C66Y\n51.4 (113.3)\nYes\nPallet\nATS480C79Y ... M12Y\n115 (253.5)\nYes\nPallet\nUnpacking and Hoisting the References on Pallet\nThe references from ATS480C21Y to ATS480M12Y are mounted on pallet.\nA\nCAUTION\nSHARP EDGES\nUse all necessary personal protective equipment (PPE) such as gloves when\nremoving the components from the pallet.\nFailure to follow these instructions can result in injury or equipment\ndamage.\nA WARNING\nTOPPLING, SWINGING, OR FALLING EQUIPMENT\n· Take all measures necessary to keep the equipment from swinging, toppling\nand falling.\n. Follow the instructions provided to remove the equipment from the\npackaging and to mount it at its final position.\nFailure to follow these instructions can result in death, serious injury, or\nequipment damage.\nNNZ85529.02 - 05/2025\n29",
+      "tablas": [
+        [
+          [
+            "References",
+            "Weight kg (lbs)",
+            "Lifting lugs",
+            "Packaging"
+          ],
+          [
+            "ATS480D17Y ... D47Y",
+            "4.9 (10.8)",
+            "No",
+            "Cardboard box"
+          ],
+          [
+            "ATS480D62Y ... C11Y",
+            "8.3 (18.2)",
+            "No",
+            "Cardboard box"
+          ],
+          [
+            "ATS480C14Y ... C17Y",
+            "12.4 (27.3)",
+            "Yes",
+            "Cardboard box"
+          ],
+          [
+            "ATS480C21Y ... C32Y",
+            "18.2 (40.1)",
+            "Yes",
+            "Pallet"
+          ],
+          [
+            "ATS480C41Y ... C66Y",
+            "51.4 (113.3)",
+            "Yes",
+            "Pallet"
+          ],
+          [
+            "ATS480C79Y ... M12Y",
+            "115 (253.5)",
+            "Yes",
+            "Pallet"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "Handling\nSee the procedure for hoisting the references from ATS480C41Y to\nATS480M12Y:\nStep\nAction\n1\nLift the soft starter by means of a hoist by using the handling\nlugs of the soft starter to fasten the lifting equipment. The\nlifting bar is not supplied.\n2\nKeep the soft starter suspended by means of appropriate\nequipment until it is securely fastened in the final installation\nposition.\n3\nMove the soft starter to the final installation or on the back of\nthe enclosure in accordance with the instructions given in\nthis document.\n00\na\n70\nb\n0\n· a: 45° maximum\n· b: Lifting bar\n30\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Step",
+            "Action"
+          ],
+          [
+            "1",
+            "Lift the soft starter by means of a hoist by using the handling lugs of the soft starter to fasten the lifting equipment. The lifting bar is not supplied."
+          ],
+          [
+            "2",
+            "Keep the soft starter suspended by means of appropriate equipment until it is securely fastened in the final installation position."
+          ],
+          [
+            "3",
+            "Move the soft starter to the final installation or on the back of the enclosure in accordance with the instructions given in this document."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "Clearances\nClearances\nThe ATS48 and ATS480 have the same:\n. Minimum clearances\n· Maximum angle\nCompatible\nNo change is required.\nmm\nmm\nin.\nin.\n≥100\n(3.9)\n+\n¢\n=\n≥ 50\n(1.9)\n≥ 50\n(1.9)\n0000000000000\n0\n≥10\n00000000000000000000\n(0.4)\nC\n≥100\n(3.9)\n≤10°\n8\n000.000000000\ne\nC\n3\nC\nNNZ85529.02 - 05/2025\n31",
+      "tablas": [
+        [
+          [
+            "The ATS48 and ATS480 have the same:"
+          ],
+          [
+            "",
+            ". Minimum clearances"
+          ],
+          [
+            "",
+            "· Maximum angle"
+          ],
+          [
+            "Compatible",
+            "No change is required."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "Mounting\nMounting\nCompatible\n. The ATS480 use the same mounting plan as the ATS48.\n. Use the same mounting holes from the existing ATS48 installation.\n. Hole diameters, positions and mounting screws are identical.\n32\nNNZ85529.02 - 05/2025",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "Dimension Differences\nDimension Differences\n. The ATS480 and ATS48 have the same width and height.\n. The ATS480 is deeper than the ATS48 (dimension \"c\" on the figure).\nPartially compatible\n. Refer to the following table for the differences in depth.\nC\nC\nReferences\nATS480 depth\n(dimension \"c\")\nmm (inch)\nDepth difference with\nATS48\nmm (inch)\nATS480D17Y ... D47Y\n203 (8)\n+13 (0.51)\nATS480D62Y ... C11Y\n247 (9.72)\n+12 (0.47)\nATS480C14Y ... C17Y\n272 (10.7)\n+7 (0.27)\nATS480C21Y ... C32Y\n277 (10.9)\n+12 (0.47)\nATS480C41Y ... C66Y\n314 (12.3)\n+14 (0.55)\nATS480C79Y ... M12Y\n329 (12.95)\n+14 (0.55)\nRefer to the following table for possibilities to reduce the depth difference between\nthe ATS48 and the ATS480.\nRemovable parts for depth reduction\nDepth reduction if\nremoved\nmm (inch)\nPlain text display terminal\n0.5 (0.019)\nPlain text display terminal + control trap\n3 (0.11)\nPlain text display terminal + control trap +\ncasing\n5 (0.19)\n0\n1\n0\n2\n1. Casing\n2. Plain text display\nterminal\n3. Control trap\n3\nNOTE: To assure an IP20 protection degree on the front with the\nATS480D17Y ... C11Y it is necessary to keep the casing.\nNNZ85529.02 - 05/2025\n33",
+      "tablas": [
+        [
+          [
+            "References",
+            "ATS480 depth (dimension \"c\") mm (inch)",
+            "Depth difference with ATS48 mm (inch)"
+          ],
+          [
+            "ATS480D17Y ... D47Y",
+            "203 (8)",
+            "+13 (0.51)"
+          ],
+          [
+            "ATS480D62Y ... C11Y",
+            "247 (9.72)",
+            "+12 (0.47)"
+          ],
+          [
+            "ATS480C14Y ... C17Y",
+            "272 (10.7)",
+            "+7 (0.27)"
+          ],
+          [
+            "ATS480C21Y ... C32Y",
+            "277 (10.9)",
+            "+12 (0.47)"
+          ],
+          [
+            "ATS480C41Y ... C66Y",
+            "314 (12.3)",
+            "+14 (0.55)"
+          ],
+          [
+            "ATS480C79Y ... M12Y",
+            "329 (12.95)",
+            "+14 (0.55)"
+          ]
+        ],
+        [
+          [
+            "Removable parts for depth reduction",
+            "Depth reduction if removed mm (inch)"
+          ],
+          [
+            "Plain text display terminal",
+            "0.5 (0.019)"
+          ],
+          [
+            "Plain text display terminal + control trap",
+            "3 (0.11)"
+          ],
+          [
+            "Plain text display terminal + control trap + casing",
+            "5 (0.19)"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "ATS480 Remote Mounting Kits\nATS480 Remote Mounting Kits\nNot compatible\nThe drilling plans of the remote mounting kits for the Plain Text and Graphic\nDisplay Terminals are not compatible with the ATS48 door mounting kit\ndrilling plan:\n· The number and diameter of mounting holes is different\n. The remote mounting kits for ATS480 are 1.5mm deeper than the ATS48\nmounting kits\nRefer to the following plan to create a support for the Plain Text Terminal and\nGraphic Display Terminal remote mounting kits.\n1\nApply gasket for sealing\nmm (in.)\n80 (3.1)\n1\n-\n-\n-\n1\nØ 22.5 (0.9)\n79.6 (3.1)\n120 (4.7)\nT\n27.6 (1)\n1\n1\n1\n32.4 (1.2)\n1\n1\n24 (0.9)\n55.6 (2.2)\n16 (0.6)\nScale 1:1\n34\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Not compatible",
+            "The drilling plans of the remote mounting kits for the Plain Text and Graphic Display Terminals are not compatible with the ATS48 door mounting kit drilling plan:"
+          ],
+          [
+            "· The number and diameter of mounting holes is different"
+          ],
+          [
+            ". The remote mounting kits for ATS480 are 1.5mm deeper than the ATS48 mounting kits"
+          ],
+          [
+            "Refer to the following plan to create a support for the Plain Text Terminal and Graphic Display Terminal remote mounting kits."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "ATS480 Remote Mounting Kits\n2\n4 crimped stud FH M3 length 12mm (0.47 in.)\n2\n-\n1\n.\nC\nNNZ85529.02 - 05/2025\n35",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "Wiring\nWhat's in This Part\nPower and Ground Wiring\n37\nLayout And Characteristics Of Control Terminals\n38\nControl Terminals Wiring\n40\n36\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Power and Ground Wiring",
+            "37"
+          ],
+          [
+            "Layout And Characteristics Of Control Terminals",
+            "38"
+          ],
+          [
+            "Control Terminals Wiring",
+            "40"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "Power and Ground Wiring\nPower and Ground Wiring\n•\nThe ATS480 supply mains and ground wiring is identical to ATS48. The\nsupply mains terminals denomination is identical between the two\noffers.\nCompatible\n. The ATS48 electrical coordination elements, protections and contactors\ncan be reused with the ATS480.\nIdentify the position of the mains supply cables on the ATS48 and identically\nconnect the mains supply of the ATS480 with the same cables.\nA WARNING\nUNANTICIPATED EQUIPMENT OPERATION\nThe ATS480 wiring must be identical to the ATS48 wiring in order to avoid\nwrong direction of the motor rotation.\nFailure to follow these instructions can result in death, serious injury, or\nequipment damage.\nATS480 front view\nATS480 top view\n1\nL'\n2\nL2\n2\nL3\n601/L1\n€3/L2\n695/L3\n00800860\n1/L1\nL ...\n0080\n3\nD\n00\n@BA2692T1 (B264T2 (C2 6T3\n1\n10\nL1\nL2\nL3\nConnection characteristics\nATS480 bottom view\nReferences\nTightening torque\nPower\nconnections\nGround\nN·m\nlbf.in\nN·m\nlbf.in\nATS480D17Y ... D47Y\n3\n26\n1.7\n15\nATS480D62Y ... C11Y\n10\n89\n3\n26\nATS480C14Y ... C17Y\n34\n300\n4.5\n40\nATS480C21Y ... C32Y\n34\n300\n24\n212\nATS480C41Y ... C66Y\n57\n500\nATS480C79Y ... M12Y\n57\n500\nO\n0000\n00800\nA2\nD\n2/T1\n4/T2\n6/T3\n80\n(0)\n800 00000 °00° 09000 000\n9000000800 : 0080000000\nM\nNNZ85529.02 - 05/2025\n37",
+      "tablas": [
+        [
+          [
+            "References",
+            "Tightening torque"
+          ],
+          [
+            "Power connections",
+            "Ground"
+          ],
+          [
+            "N·m",
+            "lbf.in",
+            "N·m",
+            "lbf.in"
+          ],
+          [
+            "ATS480D17Y ... D47Y",
+            "3",
+            "26",
+            "1.7",
+            "15"
+          ],
+          [
+            "ATS480D62Y ... C11Y",
+            "10",
+            "89",
+            "3",
+            "26"
+          ],
+          [
+            "ATS480C14Y ... C17Y",
+            "34",
+            "300",
+            "4.5",
+            "40"
+          ],
+          [
+            "ATS480C21Y ... C32Y",
+            "34",
+            "300",
+            "24",
+            "212"
+          ],
+          [
+            "ATS480C41Y ... C66Y",
+            "57",
+            "500"
+          ],
+          [
+            "ATS480C79Y ... M12Y",
+            "57",
+            "500"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "Layout And Characteristics Of Control Terminals\nLayout And Characteristics Of Control Terminals\nR1A\nR1C\nR2A\nR2C\nR3A\nR3C\nSTOP\nRUN\nDI3\nDI4\nR1A\nR1C\nR2A\nR2C\nR3A\nR3C\nSTOP\nRUN\nDI3\nDI4\n230V MAX\nDQ1\nDQ2\nDQ+\nAQ1\nCOM\nPTC1\nAI1\nPTC2\nPTC3\n+24\n0V\nDQ1\nDQ2\nDQ+\nCOM\nAQ1\nPTC1\nAI1\nPTC2\nPTC3\n+24\nOV\nCL1\nCL2\nPTC shielded\ncable screw\nC\nD\nModbus VP12S\nThe control terminals are installed with one-way plug-in connectors and can be\nunplugged during the wiring.\nNot compatible\nThe ATS480 control is supplied in 110 ... 230 Vac +10% - 15%, 50/60 Hz ONLY.\n. The ATS48 ... Y control block is supplied with 110 ... 230 Vac. If the previous\nproduct is an ATS48 ... Y no change is required for the ATS480 .. . Y.\n. The ATS48 ... Q control block is supplied with 220 ... 415 Vac. If the previous\nproduct is an ATS48 ... Q you must adapt the supply voltage to 110 ... 230\nVac for the ATS480 .. . Y.\nYou can use an existing 230 Vac supply source or a transformer to adapt the\ntension to 110 - 230 Vac.\nNOTICE\nINCORRECT VOLTAGE\n· Supply the control supply terminals CL1 / CL2 within a range of 110 ... 230\nVac only\n. In case of migration from ATS48 ... Q to ATS480 ... Y, adapt the control\nsupply transformer\nFailure to follow these instructions can result in equipment damage.\nRefer to this table to select the upstream electrical protection of CL1 / CL2:\nReferences\nControl apparent power (VA)\nATS480D17Y ... D22Y\n60\nATS480D32Y ... C17Y\n90\nATS480C21Y ... C41Y\n106\nATS480C48Y ... C66Y\n125\nATS480C79Y ... M12Y\n200\nNot compatible\nThe ATS480 output relays allow for a maximum voltage of 230 Vac instead of\n400 Vac on ATS48.\n38\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "References",
+            "Control apparent power (VA)"
+          ],
+          [
+            "ATS480D17Y ... D22Y",
+            "60"
+          ],
+          [
+            "ATS480D32Y ... C17Y",
+            "90"
+          ],
+          [
+            "ATS480C21Y ... C41Y",
+            "106"
+          ],
+          [
+            "ATS480C48Y ... C66Y",
+            "125"
+          ],
+          [
+            "ATS480C79Y ... M12Y",
+            "200"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "Layout And Characteristics Of Control Terminals\nATS48 terminals\nname\nATS480 terminals\nname\nDescription\nDifferences between ATS48 and\nATS480\nCL1\nSame as ATS48\nControl power supply\n110 ... 250 Vac,\n-15% ... +10%\nRemove the sticker\nCL2\nR1A\nSame as ATS48\nProgrammable NO relay R1 - Assigned to\nOperating state Fault by default\nOutput relays allow for 230Vac\ninstead of 400Vac on ATS48.\nR1C\nR2A\nSame as ATS48\nNO relay R2 - Assigned to End of starting\nR2C\nR3A\nSame as ATS48\nProgrammable NO relay R3\nR3C\nSTOP\nSame as ATS48\nDigital Input 1 - Assigned to STOP\n–\nRUN\nDigital Input 2 - Assigned to RUN\nLI3\nDI3\nDigital Input 3\nLI4\nDI4\nDigital Input 4\nCOM\nSame as ATS48\nI/O common\n–\nLO+\nDQ+\nDigital output supply\n–\nLO1\nDQ1\nProgrammable digital output 1\nLO2\nDQ2\nProgrammable digital output 2\nAO1\nAQ1\nProgrammable analog output 1\n–\nPTC1\nPTC1/AI1\nMotor Thermal sensor connection\n+1 PTC terminal\nPTC2\nPTC2\nNot present\nPTC3\n+24\nSame as ATS48\nOutput: logic power supply / Input: device\nbloc control supply\n–\nNot present\n0V\n0V control\nNew terminal\nRJ45 Modbus\nModbus VP12S\nRS 485 Modbus\n–\nNNZ85529.02 - 05/2025\n39",
+      "tablas": [
+        [
+          [
+            "ATS48 terminals name",
+            "ATS480 terminals name",
+            "Description",
+            "Differences between ATS48 and ATS480"
+          ],
+          [
+            "CL1",
+            "Same as ATS48",
+            "Control power supply",
+            "110 ... 250 Vac, -15% ... +10% Remove the sticker"
+          ],
+          [
+            "CL2"
+          ],
+          [
+            "R1A",
+            "Same as ATS48",
+            "Programmable NO relay R1 - Assigned to Operating state Fault by default",
+            "Output relays allow for 230Vac instead of 400Vac on ATS48."
+          ],
+          [
+            "R1C"
+          ],
+          [
+            "R2A",
+            "Same as ATS48",
+            "NO relay R2 - Assigned to End of starting"
+          ],
+          [
+            "R2C"
+          ],
+          [
+            "R3A",
+            "Same as ATS48",
+            "Programmable NO relay R3"
+          ],
+          [
+            "R3C"
+          ],
+          [
+            "STOP",
+            "Same as ATS48",
+            "Digital Input 1 - Assigned to STOP",
+            "–"
+          ],
+          [
+            "RUN",
+            "Digital Input 2 - Assigned to RUN"
+          ],
+          [
+            "LI3",
+            "DI3",
+            "Digital Input 3"
+          ],
+          [
+            "LI4",
+            "DI4",
+            "Digital Input 4"
+          ],
+          [
+            "COM",
+            "Same as ATS48",
+            "I/O common",
+            "–"
+          ],
+          [
+            "LO+",
+            "DQ+",
+            "Digital output supply",
+            "–"
+          ],
+          [
+            "LO1",
+            "DQ1",
+            "Programmable digital output 1"
+          ],
+          [
+            "LO2",
+            "DQ2",
+            "Programmable digital output 2"
+          ],
+          [
+            "AO1",
+            "AQ1",
+            "Programmable analog output 1",
+            "–"
+          ],
+          [
+            "PTC1",
+            "PTC1/AI1",
+            "Motor Thermal sensor connection",
+            "+1 PTC terminal"
+          ],
+          [
+            "PTC2",
+            "PTC2"
+          ],
+          [
+            "Not present",
+            "PTC3"
+          ],
+          [
+            "+24",
+            "Same as ATS48",
+            "Output: logic power supply / Input: device bloc control supply",
+            "–"
+          ],
+          [
+            "Not present",
+            "0V",
+            "0V control",
+            "New terminal"
+          ],
+          [
+            "RJ45 Modbus",
+            "Modbus VP12S",
+            "RS 485 Modbus",
+            "–"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "Control Terminals Wiring\nControl Terminals Wiring\nCompatible\n•\nReuse the wires of the ATS48 control terminals for the ATS480 control\nterminals.\n. Wire the ATS480 control terminals identically to the ATS48 control\nterminals.\n. The maximum connecting capacity and tightening torque are the same\nbetween ATS48 and ATS480 control terminals.\nNOTE: The wires of the control part are 4.5 cm longer for the ATS480\nreferences from ATS480D17Y to ATS480C17Y.\nMaximum tightening\ntorque\nMinimum wires section\nMaximum connection\ncapacity\nExcept\nrelays\nRelays\nN.m (lbf.in)\nmm2 (AWG)\nmm2 (AWG)\n0.5 (4.4)\n0.5 (20)\n0.75 (18)\n1.5 (15)\nRefer to the following table of correspondence between the ATS48 to the ATS480\ncontrol terminals:\nATS48 terminals to unwire\nEquivalent ATS480 terminals to wire\nCL1\nCL1\nCL2\nCL2\nR1A\nR1A\nR1C\nR1C\nR2A\nR2A\nR2C\nR2C\nR3A\nR3A\nR3C\nR3C\nSTOP\nSTOP\nRUN\nRUN\nLI3\nDI3\nLI4\nDI4\nCOM\nCOM\n+24\n+24\nLO+\nDQ+\nLO1\nDQ1\nLO2\nDQ2\nAO1\nAQ1\nPTC1\nPTC1 AI1\nPTC2\nPTC2\nRJ45 Modbus\nModbus VP12S\n40\nNNZ85529.02 - 05/2025",
+      "tablas": [
+        [
+          [
+            "Maximum tightening torque",
+            "Minimum wires section",
+            "Maximum connection capacity"
+          ],
+          [
+            "Except relays",
+            "Relays"
+          ],
+          [
+            "N.m (lbf.in)",
+            "mm2 (AWG)",
+            "",
+            "mm2 (AWG)"
+          ],
+          [
+            "0.5 (4.4)",
+            "0.5 (20)",
+            "0.75 (18)",
+            "1.5 (15)"
+          ]
+        ],
+        [
+          [
+            "ATS48 terminals to unwire",
+            "Equivalent ATS480 terminals to wire"
+          ],
+          [
+            "CL1",
+            "CL1"
+          ],
+          [
+            "CL2",
+            "CL2"
+          ],
+          [
+            "R1A",
+            "R1A"
+          ],
+          [
+            "R1C",
+            "R1C"
+          ],
+          [
+            "R2A",
+            "R2A"
+          ],
+          [
+            "R2C",
+            "R2C"
+          ],
+          [
+            "R3A",
+            "R3A"
+          ],
+          [
+            "R3C",
+            "R3C"
+          ],
+          [
+            "STOP",
+            "STOP"
+          ],
+          [
+            "RUN",
+            "RUN"
+          ],
+          [
+            "LI3",
+            "DI3"
+          ],
+          [
+            "LI4",
+            "DI4"
+          ],
+          [
+            "COM",
+            "COM"
+          ],
+          [
+            "+24",
+            "+24"
+          ],
+          [
+            "LO+",
+            "DQ+"
+          ],
+          [
+            "LO1",
+            "DQ1"
+          ],
+          [
+            "LO2",
+            "DQ2"
+          ],
+          [
+            "AO1",
+            "AQ1"
+          ],
+          [
+            "PTC1",
+            "PTC1 AI1"
+          ],
+          [
+            "PTC2",
+            "PTC2"
+          ],
+          [
+            "RJ45 Modbus",
+            "Modbus VP12S"
+          ]
+        ]
+      ]
+    }
+  ]
+}

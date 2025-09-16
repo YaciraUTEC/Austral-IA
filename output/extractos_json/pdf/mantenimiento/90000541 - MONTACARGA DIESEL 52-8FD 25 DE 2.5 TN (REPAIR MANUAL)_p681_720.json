@@ -1,0 +1,1717 @@
+{
+  "archivo": "90000541 - MONTACARGA DIESEL 52-8FD 25 DE 2.5 TN (REPAIR MANUAL)_p681_720",
+  "paginas": [
+    {
+      "numero_pagina": 1,
+      "texto": "20-58\nAJUSTE\nGENERALIDADES\n· Para el ángulo de inclinación, los sensores de ángulo de neumáticos y de carga entre los sensores utilizados\npara funciones del SAS, los valores de tensión de la señal en las condiciones de mástil vertical, sin carga, eje\ntrasero horizontal y los neumáticos rectos, se almacenan en el controlador para un control basado en estos\nvalores. Al revisar o reemplazar estos sensores, la adaptación (actualización de la tensión de la señal del\nsensor en la condición de vehículo estándar) es necesaria. Además, la adaptación es necesaria para el sensor\nde ángulo de inclinación si la postura del vehículo cambia de forma considerable, y para el sensor de\nmanipulación de materiales, cuando la carga en estado sin carga cambia como resultado de la adición/\nextracción del enganche, sustitución del mástil o cambio de la longitud de la horquilla.\n· Cada sensor de ángulo de la palanca para la función de minipalanca o palanca de mando se controla en función\nde la memoria de los valores de tensión de la señal en posición neutral almacenados en el controlador en el\nmomento del envío. Al revisar estos sensores o reemplazar partes relacionadas, la MATCHING (actualización\ndel valor de tensión de la señal del sensor en la condición del vehículo estándar) es necesaria.\n· El medidor de carga almacena información de especificaciones del mástil y valores de tensión de la señal\ndurante el estado sin carga del sensor de carga al visualizador multifuncional, e indica en función de los\nmismos. Al revisar el\nmástil o el sensor de carga, o reemplazar partes relacionadas, la adaptación\n(actualización del valor de tensión y la información de especificaciones del mástil en la condición del vehículo\nestándar) es necesaria.\nPiezas de adaptación y requisitos previos para la implementación\n1.\nSAS\nN.º\nIndicación\nDescripción\nRequisito previo\npara la\nimplementación\n1\nTILTL\nAlmacenar el valor de salida del sensor del ángulo de inclinación con la\nhorquilla en posición horizontal en el controlador.\n*1, *2, \"3, '6, *7, *8\n2\nTILTF LOAD\nAlmacena en el controlador el valor de salida del sensor del ángulo de\ninclinación en la posición limite de inclinación hacia delante y el valor de\nsalida del sensor de carga sin carga.\n*1, *2, '3. \"4, *6, *7,\n3\nTIRE\nAlmacena el valor de salida del sensor del ángulo de neumáticos mientras el\nvehículo se desplaza en línea recta en el controlador.\n'1. * 5\n4\nSWING\nNo se utiliza\n-\n2.\nMINI LEVER (sólo vehículo con minipalanca o palanca de mando)\nN.º\nIndicación\nDescripción\nRequisito previo\npara la\nimplementación\n6\nLEVER1\nEl valor de salida del sensor de ángulo de la palanca de elevación con la\npalanca de elevación en posición neutra se almacena en el controlador.\n*1. \"9\n7\nLEVER2\nEl valor de salida del sensor de ángulo de la palanca de inclinación con la\npalanca de elevación en condición neutra se almacena en el controlador.\n*1. '10\n8\nLEVER3\nEl valor de salida del sensor de ángulo de la palanca de enganche (1) con la\npalanca de enganche (1) en posición neutra se almacena en el controlador.\n*1. * 11\n9\nLEVER4\nEl valor de salida del sensor de ángulo de la palanca de enganche (2) con la\npalanca de enganche (2) en posición neutra se almacena en el controlador.\n*1. '12",
+      "tablas": [
+        [
+          [
+            "N.º",
+            "Indicación",
+            "Descripción",
+            "Requisito previo para la implementación"
+          ],
+          [
+            "1",
+            "TILTL",
+            "Almacenar el valor de salida del sensor del ángulo de inclinación con la horquilla en posición horizontal en el controlador.",
+            "*1, *2, \"3, '6, *7, *8"
+          ],
+          [
+            "2",
+            "TILTF LOAD",
+            "Almacena en el controlador el valor de salida del sensor del ángulo de inclinación en la posición limite de inclinación hacia delante y el valor de salida del sensor de carga sin carga.",
+            "*1, *2, '3. \"4, *6, *7,"
+          ],
+          [
+            "3",
+            "TIRE",
+            "Almacena el valor de salida del sensor del ángulo de neumáticos mientras el vehículo se desplaza en línea recta en el controlador.",
+            "'1. * 5"
+          ],
+          [
+            "4",
+            "SWING",
+            "No se utiliza",
+            "-"
+          ]
+        ],
+        [
+          [
+            "N.º",
+            "Indicación",
+            "Descripción",
+            "Requisito previo para la implementación"
+          ],
+          [
+            "6",
+            "LEVER1",
+            "El valor de salida del sensor de ángulo de la palanca de elevación con la palanca de elevación en posición neutra se almacena en el controlador.",
+            "*1. \"9"
+          ],
+          [
+            "7",
+            "LEVER2",
+            "El valor de salida del sensor de ángulo de la palanca de inclinación con la palanca de elevación en condición neutra se almacena en el controlador.",
+            "*1. '10"
+          ],
+          [
+            "8",
+            "LEVER3",
+            "El valor de salida del sensor de ángulo de la palanca de enganche (1) con la palanca de enganche (1) en posición neutra se almacena en el controlador.",
+            "*1. * 11"
+          ],
+          [
+            "9",
+            "LEVER4",
+            "El valor de salida del sensor de ángulo de la palanca de enganche (2) con la palanca de enganche (2) en posición neutra se almacena en el controlador.",
+            "*1. '12"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 2,
+      "texto": "20-59\n3.\nLOAD METER (sólo modelo DX de vehículo con visualizador multifuncional)\n1\nN.º\nIndicación\nDescripción\nRequisito previo para\nla implementación\n10\nLIFT CYL. NUMBERS\nSe almacena el número del cilindro de elevación del mástil.\n(Número que incluye delanteros y traseros)\n*7, *13\n11\n| LIFT CYL. BORE\nSe almacena el diámetro interior del cilindro de elevación.\n*7,*13\n12\nLOADMETER 0 SET\nSe almacena el punto cero del medidor de carga.\n*4, \"6, *7, *13\n13\nCOMPENSATION\nSe ajusta la precisión del medidor de carga.\nCuando quiere ajustar\nla precisión\n.\nContenido que se requiere previamente para la implementación\n*1: Sustitución del controlador SAS/OPS\n*2: Extracción/instalación o sustitución del sensor de ángulo de inclinación\n*3: Cambio de longitud o sustitución del vástago del sensor del ángulo de inclinación\n*4: Al extraer/instalar o reemplazar el sensor de carga\n*5: Al extraer/instalar o reemplazar el sensor de ángulo de neumáticos o la cubierta del sensor\n*6: Al instalar o cambiar el enganche o la horquilla\n*7: Al extraer/instalar o reemplazar el mástil\n*8: Al extraer/instalar o reemplazar el cilindro de inclinación\n*9: Al reemplazar el sensor de ángulo de la palanca de elevación\n*10: Al reemplazar el sensor de ángulo de la palanca de inclinación\n*11: Al reemplazar el sensor de ángulo de la palanca de enganche (1)\n*12: Al reemplazar el sensor de ángulo de la palanca de enganche (2)\n*13: Al sustituir el visualizador multifuncional\nAntes de empezar la adaptación\nAntes de realizar la adaptación, debe poner el vehículo en \"condición estándar\". Para \"condición estándar del\nvehículo\", consulte la sección 18, \"SAS/OPS\".",
+      "tablas": [
+        [
+          [
+            "N.º",
+            "Indicación",
+            "Descripción",
+            "Requisito previo para la implementación"
+          ],
+          [
+            "10",
+            "LIFT CYL. NUMBERS",
+            "Se almacena el número del cilindro de elevación del mástil. (Número que incluye delanteros y traseros)",
+            "*7, *13"
+          ],
+          [
+            "11 |",
+            "LIFT CYL. BORE",
+            "Se almacena el diámetro interior del cilindro de elevación.",
+            "*7,*13"
+          ],
+          [
+            "12",
+            "LOADMETER 0 SET",
+            "Se almacena el punto cero del medidor de carga.",
+            "*4, \"6, *7, *13"
+          ],
+          [
+            "13",
+            "COMPENSATION",
+            "Se ajusta la precisión del medidor de carga.",
+            "Cuando quiere ajustar la precisión"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 3,
+      "texto": "20-60\nPantalla MATCHING MENU\n<MASK MENU>\n4. MATCHING\n5. WHEEL RADIUS\n6. IDLE ADJUSTMENT\n(1) Con control de\nmanipulación de carga\ny desplazamiento\nODO\n(1)\n(4)\n<MATCHING MENU>\n1. SAS\n2. MINI LEVER\n3.LOAD METER\n<MATCHING MENU>\n4.END\nProcedimiento de funcionamiento\n1.\nIntroduzca la contraseña en la pantalla general (Consulte la\npágina 20-14) para visualizar la pantalla del MASK MENU.\n2. Presione el interruptor (1) 3 veces para comprobar que\n\"4. MATCHING\" está seleccionado, y presione el interruptor\n(enter) (4) para visualizar la pantalla MATCHING MENU.\n3. Seleccione el menú con el interruptor (1), y presione el\ninterruptor (enter) (4) para pasar a la pantalla de configuración\nMATCHING del elemento seleccionado.\n4. Presione el interruptor (enter) (4) mientras selecciona el menú\n\"4. END\" para volver a la pantalla MASK MENU.\n\"1. SAS\"\nInterruptor (1): Cambiar selección al elemento siguiente\nInterruptor (4): A la pantalla MATCHING SET\n\"2. MINI LEVER\"\nInterruptor (1): Cambiar selección al elemento siguiente\nInterruptor (4): A la pantalla MATCHING SET\n\"3. LOAD METER\"\nInterruptor (1): Cambiar selección al elemento siguiente\nInterruptor (4): A la pantalla MATCHING SET\n\"4. END\"\nInterruptor (1): Regreso a la selección \"1. SAS\"\nInterruptor (4): Regreso a la pantalla MASK MENU\nNota:\n· \"2. MINI LEVER\" no se visualizará si no es en un vehículo\ncon minipalanca o palanca de mando.\n· \"3. LOAD METER\" no se visualizará en vehículos distintos\nal modelo DX.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 4,
+      "texto": "20-61\nSAS (ADAPTACIÓN DE SAS)\nLa adaptación se realiza para funciones estándar.\n<MATCHING MENU>\n2. MINI LEVER\n3. LOAD METER\n(1) Con control de\nmanipulación de carga\ny desplazamiento\nODO\n(1)\n(4)\nTILTL\n2.50\n(2.50)\n2SEC\nSET\nOK\nNEXT\nTILTF LOAD\n2.49\n0.83\n2SEC\nSET\n(2.49)\n(0.83)\nOK\nINEXT)\nProcedimiento de funcionamiento\n1. Visualice la pantalla MATCHING MENU.\n2. Compruebe que \"1. SAS\" está seleccionado, y presione el\ninterruptor (enter) (4) para visualizar la pantalla MATCHING\nSET.\nEn la pantalla MATCHING SET:\nLos valores entre paréntesis ( ) son valores almacenados\nactualmente.\nLos valores fuera de los paréntesis ( ) son valores de la\ncondición actual del vehículo.\nNota:\n· No puede pasar directamente de cada pantalla de\nadaptación de SAS a la pantalla de adaptación de los\notros elementos. Vuelva una vez a la pantalla MATCHING\nMENU, después vaya a la pantalla de adaptación de cada\nelemento.\n· En la condición estándar del vehículo, si el valor entre\nparéntesis ( ) y el valor fuera de los paréntesis ( ) son\ndiferentes, la adaptación es necesaria.\nPantalla \"TILTL\"\nSi se realiza la adaptación (presione el interruptor (1)), se\nindica \"OK\" en el visualizador.\nInterruptor (1): Si se presiona durante más de 2 segundos, se\nrealizará la adaptación\nInterruptor (4): A la pantalla \"TILTF LOAD\"\nPantalla \"TILTF LOAD\"\nSi se realiza la adaptación (presione el interruptor (1)), se\nindica \"OK\" en el visualizador.\nInterruptor (1): Si se presiona durante más de 2 segundos, se\nrealizará la adaptación\nInterruptor (4): A la pantalla \"TIRE\"",
+      "tablas": [
+        [
+          [
+            "TILTF LOAD"
+          ],
+          [
+            "2.49 0.83 2SEC SET",
+            "(2.49)"
+          ],
+          [
+            "(0.83)"
+          ],
+          [
+            "OK INEXT)"
+          ],
+          [
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 5,
+      "texto": "20-62\nTIRE\n2.23\n2SEC\nSET\n(2.23)\nOK\n[NEXT)\nSWING\n0.00\n(0.00)\n2SEC\nSET\nPantalla \"TIRE\"\nSi se realiza la adaptación (presione el interruptor (1)), se\nindica \"OK\" en el visualizador.\n1\nInterruptor (1): Si se presiona durante más de 2 segundos, se\nrealizará la adaptación.\nInterruptor (4): A la pantalla \"SWING\"\nPantalla \"SWING\"\nNo se utiliza.\nInterruptor (4): Regreso a la pantalla MATCHING MENU\nMINI LEVER (ADAPTACIÓN DE LA MINIPALANCA o PALANCA DE MANDO)\nLa adaptación se realiza para funciones de minipalanca o palanca de mando.\n<MATCHING MENU>\n1. SAS\n2. MINI LEVER\n3. LOAD METER\n(1) Con control de\nmanipulación de carga\ny desplazamiento\nODO\n(1)\n(4)\nProcedimiento de funcionamiento\n1. Visualice la pantalla MATCHING MENU.\n2. Presione el interruptor (1) para comprobar que \"2. MINI\nLEVER\" está seleccionado, y presione el interruptor (enter) (4)\npara visualizar la pantalla MATCHING SET.\nEn la pantalla MATCHING SET:\nLos valores entre paréntesis ( ) son valores almacenados\nactualmente.\nLos valores fuera de los paréntesis ( ) son valores de la\ncondición actual del vehículo.\nNota:\n· No puede pasar directamente de cada pantalla de\nadaptación de MINI LEVER a la pantalla de adaptación de\nlos otros elementos. Vuelva una vez a la pantalla\nMATCHING MENU, después vaya a la pantalla de\nadaptación de cada elemento.\n· En la condición estándar del vehículo, si el valor entre\nparéntesis ( ) y el valor fuera de los paréntesis ( ) son\ndiferentes, la adaptación es necesaria.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 6,
+      "texto": "LEVER1\n2.26\n2.22\n2SEC\nSET\nLEVER2\n2.25\n2.28\n2SEC\nSET ]\nLEVER3\n2.25\n2.28\n2SEC\nSET ]\nLEVER4\n2.25\n2.28\n2SEC\nSET\n(2.26)\n(2.22)\nOK\nNEXT\n(2.25)\n(2.28)\nOK\nNEXT\n(2.25)\n(2.28)\nOK\nNEXT\n(2.25)\n(2.28)\nOK\n(NEXT)\n20-63\nPantalla \"LEVER1\"\nSi se realiza la adaptación (presione el interruptor (1)), se\nindica \"OK\" en el visualizador.\nInterruptor (1): Si se presiona durante más de 2 segundos, se\nrealizará la adaptación\nInterruptor (4): A la pantalla \"LEVER2\"\nPantalla \"LEVER2\"\nSi se realiza la adaptación (presione el interruptor (1)), se\nindica \"OK\" en el visualizador.\nInterruptor (1): Si se presiona durante más de 2 segundos, se\nrealizará la adaptación.\n: Interruptor (4): A la pantalla \"LEVER3\"\nPantalla \"LEVER3\"\nSi se realiza la adaptación (presione el interruptor (1)), se\nindica \"OK\" en el visualizador.\nInterruptor (1): Si se presiona durante más de 2 segundos, se\nrealizará la adaptación.\nInterruptor (4): A la pantalla \"LEVER4\"\nNota:\nLa pantalla \"LEVER3\" se visualizará según el número de vías\nque se haya establecido.\nPantalla \"LEVER4\"\nSi se realiza la adaptación (presione. el interruptor (1)), se\nindica \"OK\" en el visualizador.\nInterruptor (1): Si se presiona durante más de 2 segundos, se\nrealizará la adaptación.\nInterruptor (4): Regreso a la pantalla MATCHING MENU\nNota:\nLa pantalla \"LEVER4\" se visualizará según el número de vías\nque se haya establecido.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 7,
+      "texto": "20-64\nLOAD METER (ADAPTACIÓN DEL MEDIDOR DE CARGA)\nPara optimizar el medidor de carga, es necesario introducir cada valor del \"número de cilindros de elevación\",\n\"calibre del cilindro de elevación\", \"ajuste del punto 0\", y \"ajuste de la precisión\" de acuerdo con el mástil acoplado,\nen el visualizador.\nEstos valores ya están establecidos en el momento del envío, pero cuando la sustitución del mástil o el reajuste\nsean necesarios para la precisión del medidor de carga, establezca de nuevo estos valores.\nProcedimiento de funcionamiento\n<MATCHING MENU>\n1. SAS\n2. MINI LEVER\n3. LOAD METER\nt\n1.\nVisualice la pantalla MATCHING MENU.\n2.\nPresione el interruptor (1) dos veces para comprobar que\n\"3. LOAD METER\" está seleccionado, y presione el interruptor\n(enter) (4) para visualizar la pantalla \"LIFT CYL. NUMBERS\".\n(1) Con control de\nmanipulación de carga\ny desplazamiento\nNota:\nNo puede pasar directamente de cada\npantalla de\nconfiguración de LOAD METER a la pantalla de adaptación de\nlos otros elementos. Vuelva una vez a la pantalla MATCHING\nMENU, después vaya a la pantalla de adaptación de cada\nelemento.\nODO\n(1)\n(2)\n(3)\n(4)\n1\nLIFT CYL. NUMBERS\n2\nNEXT\nLIFT CYL. BORE\n60\nmm\nNEXT\nPantalla \"LIFT CYL. NUMBERS\".\nInterruptor (2): Reducción del número de cilindros\nInterruptor (3): Aumento del número de cilindros\nInterruptor (4): A la pantalla \"LIFT CYL. BORE\"\nNúmero de cilindros de elevación\nTipo de mástil\nNúmero de cilindros de elevación\nV\n2\nFV, FSV\n3\nPantalla \"LIFT CYL. BORE\"\nInterruptor (2): Hacer más pequeño el calibre del cilindro\nInterruptor (3): Hacer más grande el calibre del cilindro\nInterruptor (4): A la pantalla \"LOADMETER 0 SET\"\nCalibre del cilindro de elevación delantero\nModelo de\nvehiculo\nCalibre del cilindro (mm)\nCilindro de elevación\nCilindro de elevación\ndelantero\n(Mástil FV/FSV)\nSeries de 1\ntonelada\n45\n70\nSeries de 2/K2\ntoneladas\n50\n75\nSeries de 3/K3\ntoneladas\n55\n85\nSeries de J3,5\ntoneladas\n60\n90",
+      "tablas": [
+        [
+          [
+            "Tipo de mástil",
+            "Número de cilindros de elevación"
+          ],
+          [
+            "V",
+            "2"
+          ],
+          [
+            "FV, FSV",
+            "3"
+          ]
+        ],
+        [
+          [
+            "Modelo de vehiculo",
+            "Calibre del cilindro (mm)"
+          ],
+          [
+            "Cilindro de elevación",
+            "Cilindro de elevación delantero (Mástil FV/FSV)"
+          ],
+          [
+            "Series de 1 tonelada",
+            "45",
+            "70"
+          ],
+          [
+            "Series de 2/K2 toneladas",
+            "50",
+            "75"
+          ],
+          [
+            "Series de 3/K3 toneladas",
+            "55",
+            "85"
+          ],
+          [
+            "Series de J3,5 toneladas",
+            "60",
+            "90"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 8,
+      "texto": "LOADMETER O SET\n0.00\n2 SEC\nOK\n[OSET)\nNEXT\nCOMPENSATION\n5\n20-65\nPantalla \"LOADMETER 0 SET\"\nSi se realiza la adaptación (presione el interruptor (1) durante\nmás de 2 segundos), se indica \"OK\" (o \"NG\") en el\nvisualizador.\nOK: Adaptación completada\nNG: El valor de tensión de la señal está fuera del rango de\nadaptación\nCuando se indique \"NG\", compruebe la condición del vehículo,\nanormalidades\ndel\nsensor de\ncarga, desconexión\ny\ncortocircuito del mazo de cables.\nNota:\nAsegúrese de realizar la adaptación con el vehículo en\n\"condición estándar del vehículo\".\nInterruptor (1): Realización de la adaptación\nInterruptor (4): A la pantalla \"COMPENSATION\"\nPantalla \"COMPENSATION\"\nEsta función corrige los valores indicados en el visualizador se\nacuerdo con la carga variable real.\nCuando realice una corrección, ponga el mástil vertical y tome\nel objeto de carga (objeto cuyo peso preciso se conoce),\ndespués, mientras sube la horquilla aprox. 1 m, ajuste el valor\nindicado en la esquina superior derecha de la pantalla al peso\nrepleto accionando el interruptor.\n1.09\nt\nInterruptor (2): Corrección negativa\nInterruptor (3): Corrección positiva\nInterruptor (4): Regreso a la pantalla MATCHING MENU\n.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 9,
+      "texto": "20-66\nTIRE CONSTANT SET\nGENERALIDADES\n-\nEs necesario introducir la constante del neumático en el controlador de acuerdo con el radio del neumático, para\noptimizar la lectura del velocímetro. Aunque la constante del neumático está establecida en el valor de neumáticos\nnuevos en el momento del envío, ajústela sea cual sea el tamaño o tipo del neumático de acuerdo con la \"Lista de\nconstantes de neumáticos\".\n<MASK MENU>\n4. MATCHING\n51 WHEEL * RADIUS\n6. IDLE ADJUSTMENT\n(1) Con control de\nmanipulación de carga\ny desplazamiento\nODO\n(1)\n(2)\n(3)\n(4)\nWHEEL RADIUS\n350\nProcedimiento de funcionamiento\n1. Introduzca la contraseña en la pantalla general (Consulte la\npágina 20-14) para visualizar la pantalla del MASK MENU.\n2. Presione el interruptor (1) 4 veces para comprobar que\n\"5. WHEEL RADIUS\" está seleccionado, y presione el\ninterruptor (enter) (4) para visualizar la pantalla TIRE\nCONSTANT.\n3. Cambie la constante del neumático al valor deseado con el\ninterruptor (2) y el interruptor (3), y presione el interruptor\n(enter) (4) para establecer el valor y volver a la pantalla MASK\nMENU.\nPantalla \"WHEEL RADIUS\"\nInterruptor (2): Reducción de la constante del neumático\nInterruptor (3): Aumento de la constante del neumático\nInterruptor (4): Introducción de la constante del neumático y\nregreso a la pantalla MASK MENU.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 10,
+      "texto": "20-67\nLista de constantes de neumáticos\nModelo de vehículo\nEspecificación\nTamaño del\nneumático\nTipo de neumático\nConstante del\nneumático\nModelo de\n1,0 tonelada\nSencillo\n6,00-9 10PR\nJ lag (STD)/larga duración\n278\n6,00-9\nSin pinchazos (J lag Blanco)\n278\n6,50-10 10PR\nJ lag/larga duración\n304\nDoble\n4,50-12 8PR\nJ lag/larga duración\n292\n4,50-12\nSin pinchazos (J lag)\n293\nModelo de\n1,5 toneladas\nSencillo\n6,50-10 10PR\nJ lag (STD)/larga duración\n301\n6,50-10\nSin pinchazos (J lag Blanco)\n303\n21×8-9 10PR\nJ lag\n270\nLarga duración\n278\n21×8-9\nSin pinchazos (J lag)\n278\nDoble\n4,50-12 8PR\nJ lag/larga duración\n293\n4,50-12\nSin pinchazos (J lag)\n294\nModelo de\n1,75 toneladas\nSencillo\n6,50-10 10PR\nJ lag (STD)/larga duración\n300\n6,50-10\nSin pinchazos (J lag Blanco)\n303\n21×8-9 10PR\nJ lag\n269\nLarga duración\n279\n21×8-9\nSin pinchazos (J lag)\n278\nDoble\n4,50-12 8PR\nJ lag/larga duración\n293\n4,50-12\nSin pinchazos (J lag)\n292\nModelo de\n2.0 y 2,5 toneladas\nSencillo\n7,00-12 12PR\nJ lag (STD)\n344\nLarga duración\n348\n7,00-12\nSin pinchazos (J lag Blanco)\n346\nDoble\n5,50-15 8PR\nJ lag/larga duración\n357\n5,50-15\nSin pinchazos (J lag)\n354\n7,00-12 12PR\nJ lag/larga duración\n358\n7,00-12\nSin pinchazos (J lag)\n350\nModelo de\nK2,0 y K2,5 toneladas\nSencillo\n21×8-9 14PR\nJ lag (STD)\n279\n21×8-9\nSin pinchazos (J lag Blanco)\n275\nModelo de\nK3.0 toneladas\nSencillo\n23X9-10 16PR\nJ lag (STD)\n298\n23X9-10\nSin pinchazos (J lag Blanco)\n306\nModelo de\n3.0 toneladas\nSencillo\n28X9-15 12PR\nJ lag (STD)/larga duración\n375\n28X9-15\nSin pinchazos (J lag Blanco)\n376\nDoble\n6,00-15 10PR\nJ lag/larga duración\n373\n6,00-15\nSin pinchazos (J lag)\n369\n28X8-15 12PR\nJ lag/larga duración\n380\n7,00-15\nSin pinchazos (J lag)\n395\nModelo de\nJ3.5 toneladas\nSencillo\n250-15 16PR\nJ lag (STD)/larga duración\n388\n250-15\nSin pinchazos (J lag Blanco)\n383\nDoble\n6,00-15 10PR\nJ lag/larga duración\n369\n6,00-15\nSin pinchazos (J lag)\n369\n28X8-15 12PR\nJ lag/larga duración\n380\n7,00-15\nSin pinchazos (J lag)\n393",
+      "tablas": [
+        [
+          [
+            "Modelo de vehículo",
+            "Especificación",
+            "Tamaño del neumático",
+            "Tipo de neumático",
+            "Constante del neumático"
+          ],
+          [
+            "Modelo de 1,0 tonelada",
+            "Sencillo",
+            "6,00-9 10PR",
+            "J lag (STD)/larga duración",
+            "278"
+          ],
+          [
+            "6,00-9",
+            "Sin pinchazos (J lag Blanco)",
+            "278"
+          ],
+          [
+            "6,50-10 10PR",
+            "J lag/larga duración",
+            "304"
+          ],
+          [
+            "Doble",
+            "4,50-12 8PR",
+            "J lag/larga duración",
+            "292"
+          ],
+          [
+            "4,50-12",
+            "Sin pinchazos (J lag)",
+            "293"
+          ],
+          [
+            "Modelo de 1,5 toneladas",
+            "Sencillo",
+            "6,50-10 10PR",
+            "J lag (STD)/larga duración",
+            "301"
+          ],
+          [
+            "6,50-10",
+            "Sin pinchazos (J lag Blanco)",
+            "303"
+          ],
+          [
+            "21×8-9 10PR",
+            "J lag",
+            "270"
+          ],
+          [
+            "Larga duración",
+            "278"
+          ],
+          [
+            "21×8-9",
+            "Sin pinchazos (J lag)",
+            "278"
+          ],
+          [
+            "Doble",
+            "4,50-12 8PR",
+            "J lag/larga duración",
+            "293"
+          ],
+          [
+            "4,50-12",
+            "Sin pinchazos (J lag)",
+            "294"
+          ],
+          [
+            "Modelo de 1,75 toneladas",
+            "Sencillo",
+            "6,50-10 10PR",
+            "J lag (STD)/larga duración",
+            "300"
+          ],
+          [
+            "6,50-10",
+            "Sin pinchazos (J lag Blanco)",
+            "303"
+          ],
+          [
+            "21×8-9 10PR",
+            "J lag",
+            "269"
+          ],
+          [
+            "Larga duración",
+            "279"
+          ],
+          [
+            "21×8-9",
+            "Sin pinchazos (J lag)",
+            "278"
+          ],
+          [
+            "Doble",
+            "4,50-12 8PR",
+            "J lag/larga duración",
+            "293"
+          ],
+          [
+            "4,50-12",
+            "Sin pinchazos (J lag)",
+            "292"
+          ],
+          [
+            "Modelo de 2.0 y 2,5 toneladas",
+            "Sencillo",
+            "7,00-12 12PR",
+            "J lag (STD)",
+            "344"
+          ],
+          [
+            "Larga duración",
+            "348"
+          ],
+          [
+            "7,00-12",
+            "Sin pinchazos (J lag Blanco)",
+            "346"
+          ],
+          [
+            "Doble",
+            "5,50-15 8PR",
+            "J lag/larga duración",
+            "357"
+          ],
+          [
+            "5,50-15",
+            "Sin pinchazos (J lag)",
+            "354"
+          ],
+          [
+            "7,00-12 12PR",
+            "J lag/larga duración",
+            "358"
+          ],
+          [
+            "7,00-12",
+            "Sin pinchazos (J lag)",
+            "350"
+          ],
+          [
+            "Modelo de K2,0 y K2,5 toneladas",
+            "Sencillo",
+            "21×8-9 14PR",
+            "J lag (STD)",
+            "279"
+          ],
+          [
+            "21×8-9",
+            "Sin pinchazos (J lag Blanco)",
+            "275"
+          ],
+          [
+            "Modelo de K3.0 toneladas",
+            "Sencillo",
+            "23X9-10 16PR",
+            "J lag (STD)",
+            "298"
+          ],
+          [
+            "23X9-10",
+            "Sin pinchazos (J lag Blanco)",
+            "306"
+          ],
+          [
+            "Modelo de 3.0 toneladas",
+            "Sencillo",
+            "28X9-15 12PR",
+            "J lag (STD)/larga duración",
+            "375"
+          ],
+          [
+            "28X9-15",
+            "Sin pinchazos (J lag Blanco)",
+            "376"
+          ],
+          [
+            "Doble",
+            "6,00-15 10PR",
+            "J lag/larga duración",
+            "373"
+          ],
+          [
+            "6,00-15",
+            "Sin pinchazos (J lag)",
+            "369"
+          ],
+          [
+            "28X8-15 12PR",
+            "J lag/larga duración",
+            "380"
+          ],
+          [
+            "7,00-15",
+            "Sin pinchazos (J lag)",
+            "395"
+          ],
+          [
+            "Modelo de J3.5 toneladas",
+            "Sencillo",
+            "250-15 16PR",
+            "J lag (STD)/larga duración",
+            "388"
+          ],
+          [
+            "250-15",
+            "Sin pinchazos (J lag Blanco)",
+            "383"
+          ],
+          [
+            "Doble",
+            "6,00-15 10PR",
+            "J lag/larga duración",
+            "369"
+          ],
+          [
+            "6,00-15",
+            "Sin pinchazos (J lag)",
+            "369"
+          ],
+          [
+            "28X8-15 12PR",
+            "J lag/larga duración",
+            "380"
+          ],
+          [
+            "7,00-15",
+            "Sin pinchazos (J lag)",
+            "393"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 11,
+      "texto": "20-68\nAJUSTE DEL RÉGIMEN MÍNIMO DEL MOTOR (VEHÍCULO CON MOTOR 4Y-E)\nGENERALIDADES\nAjusta el régimen mínimo del motor 4Y-E.\n<MASK MENU>\n4. MATCHING\n5. WHEEL RADIUS\nLIDLE ADJUSTMENT\n(1) Con control de\nmanipulación de carga\ny desplazamiento\nODO\n(1)\n(2)\n(3)\n(4)\nIDLE ADJUSTMENT\n850\nrpm\n+100\n5\nProcedimiento de funcionamiento\n1.\nIntroduzca la contraseña en la pantalla general (Consulte la\npágina 20-14) para visualizar la pantalla MASK MENU.\n2.\nPresione el interruptor (1) 5 veces para comprobar que\n\"6. IDLE ADJUSTMENT\" está seleccionado, y presione el\ninterruptor (enter) (4) para visualizar la pantalla IDLE\nADJUSTMENT.\n3. Cambie la velocidad al valor deseado con el interruptor (2) y el\ninterruptor (3), y presione el interruptor (enter) (4) para\nestablecer el valor y volver a la pantalla MASK MENU.\n----\nPantalla \"IDLE ADJUSTMENT\"\nInterruptor (2): Reducción de la velocidad\nInterruptor (3): Incremento de la velocidad\nInterruptor (4): Introducción del régimen mínimo y regreso a la\npantalla MASK MENU.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 12,
+      "texto": "20-69\nAJUSTE DEL CONTRASTE LCD\nGENERALIDADES\nAjusta el contraste LCD.\n<MASK MENU>\n7. CONTRAST\n8. METER START\n9. END\nProcedimiento de funcionamiento\n1.\nIntroduzca la contraseña en la pantalla general (Consulte la\npágina 20-14) para visualizar la pantalla del MASK MENU.\n2.\nVehiculo con motor 4Y-E\nPresione el interruptor (1) 6 veces para comprobar que\n\"7. CONTRAST\" está seleccionado, y presione el interruptor\n(enter) (4) para visualizar la pantalla de configuración\n\"CONTRAST ADJUSTMENT\".\n....\nVehículo con motor 1DZ-11/2Z\n<MASK MENU>\n4. MATCHING\n5. WHEEL RADIUS\n6. CONTRAST\n₹\n(1) Con control de\nmanipulación de carga\ny desplazamiento\nODO\n(1)\n(2)\n(3)\n(4)\nCONTRAST\n2345678\nPresione el interruptor (1) 5 veces para comprobar que\n\"6. CONTRAST\" está seleccionado, y presione el interruptor\n(enter) (4) para visualizar la pantalla de configuración\n\"CONTRAST ADJUSTMENT\".\n3.\nCambie el nivel de contraste al valor deseado con el\ninterruptor (2) y el interruptor (3), y presione el interruptor\n.\n(enter) (4) para establecer el valor y volver a la pantalla MASK\nMENU.\nPantalla \"CONTRAST\"\nInterruptor (2): Reducción del contraste\nInterruptor (3): Aumento del contraste\nInterruptor (4): Introducción del régimen mínimo y regreso a la\npantalla MASK MENU.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 13,
+      "texto": "20-70\nARRANQUE DEL CONTADOR\nGENERALIDADES\nEmpiezan a contar el cuentakilómetros, el contador y el contador de horas de mantenimiento.\n<MASK MENU>\n7. CONTRAST\nBEMETER START\n9.END\n<MASK MENU>\n7. METER START\n8. END\n(1) Con control de\nmanipulación de carga\ny desplazamiento\nODO\n(1)\n(2)\n(3)\n(4)\nMETER START\nYES / NO\nProcedimiento de funcionamiento\n1. Introduzca la contraseña en la pantalla general (Consulte la\npágina 20-14) para visualizar la pantalla del MASK MENU.\n2. Vehículo con motor 4Y\nPresione el interruptor (1) 7 veces para comprobar que .\n\"8. METER START\" está seleccionado. y presione el\ninterruptor (enter) (4) para visualizar la pantalla de\nconfiguración METER START.\nVehículo con motor 1DZ-11/2Z\nPresione el interruptor (1) 6 veces para comprobar que\n\"7. METER START\" está seleccionado, y presione el\ninterruptor (enter) (4) para visualizar la pantalla de\nconfiguración METER START.\nPantalla \"METER START\"\n3. Presione el interruptor (2) durante más de 2 segundos para\nvisualizar la flecha derecha en la pantalla.",
+      "tablas": [
+        [
+          [
+            "Vehículo con motor 1DZ-11/2Z Presione el interruptor (1) 6",
+            "veces para",
+            "comprobar",
+            "que"
+          ],
+          [
+            "\"7. METER START\" está seleccionado, y presione",
+            "el"
+          ],
+          [
+            "interruptor (enter) (4) para",
+            "visualizar",
+            "la pantalla",
+            "de"
+          ],
+          [
+            "configuración METER START.",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 14,
+      "texto": ".....\nMETER START\nYES / NO\nMETER START\nS/ NO\n<MASK MENU>\n7. CONTRAST\n8. END\n<MASK MENU>\n7.END\n$\n20-71\n4.\nMientras presiona el interruptor (2), si presiona el interruptor\n(3), el NO invertido en la pantalla se convierte en YES\ninvertido, y la configuración está completa.\n5.\nPresione el interruptor (4) para volver a la pantalla MASK\nMENU.\nNota:\nDespués de completar la configuración del arranque del\ncontador, \"METER START\" no se visualizará en la pantalla de\nMASK MENU.\nNota:\nSi el arranque del contador aún no se ha ajustado, en la\npantalla GENERAL se visualizará el símbolo que indica que el\ncontador de horas no está iniciado.\n0\nkm/h\nCON-\nTEMP'C\nH",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 15,
+      "texto": "20-72\nCONJUNTO DEL VISUALIZADOR MULTIFUNCIONAL\nDESMONTAJE·MONTAJE\n0\n0\nT = N·m (kgf·cm)\n1\nT = 0,6 - 0,8 (6 - 8)\n-- 3\n2\n-\nProcedimiento de extracción\n1\nExtraiga la caja\n2\nExtraiga el panel y el conjunto del panel LCD de la cubierta.\n3\nDesconecte el cable plano del conjunto del panel LCD del panel. [Punto 1]\nProcedimiento de instalación\nEl procedimiento de instalación es en el orden inverso al de la extracción.\n€\n2\n- --- -",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 16,
+      "texto": "Panel LCD\nAlojamiento\n(1)\n20-73\nOperaciones por puntos\n[Punto 1]\n1)\nMontaje:\nSiga el procedimiento que se expone a continuación para\ninstalar el panel LCD al alojamiento.\n1.\nExtraiga la lámina protectora de la cara posterior del panel\nLCD.\n2.\nInstale el panel LCD en el alojamiento de acuerdo con los\nsiguientes pasos.\n(1) Presione la parte superior del panel LCD con los\nganchos. Cuando presione el panel, no aplique una\nfuerza excesiva.\n(2) Presione la parte inferior del panel LCD para acoplar los\nganchos.\nNota:\nNo dañe el panel LCD.\n3.\nDespués de instalar el panel LCD, extraiga la lámina\nprotectora de la cara frontal del panel LCD.\nNota:\nUna vez extraída la lámina protectora, no toque la superficie\ndel panel LCD.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 17,
+      "texto": "",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 18,
+      "texto": "21-1\nLOCALIZACIÓN Y REPARACIÓN DE AVERÍAS DEL\nSISTEMA ELÉCTRICO\nPágina\nPágina\nANTES DE LA LOCALIZACIÓN\nLOCALIZACIÓN Y REPARACIÓN\nY REPARACIÓN DE\nDE AVERÍAS (VEHÍCULO\nAVERÍAS\n21-2\nEQUIPADO CON OPT) ...... 21-65\nMANIPULACIÓN DE\nANTES DE COMENZAR LA\nCONECTORES\n21-2\nLOCALIZACIÓN Y REPARACIÓN\nPROCEDIMIENTO DE\nDE AVERÍAS PARA EL\nMOTOR 4Y-E\n21-65\nINSPECCIÓN DE MAZOS DE\nCABLES Y CONECTORES ..... 21-2\nDIAGNOSIS (FUNCIÓN DE\nLOCALIZACIÓN Y REPARACIÓN\nAUTODIAGNOSIS)\n21-66\nDE AVERÍAS\nMÉTODO DE VISUALIZACIÓN\nDE DIAGNOSIS\n(MODELO SIN SAS)\n21-4\n21-66\nLISTA DE CÓDIGOS DE\nANALIZADOR\nDIAGNOSIS\n21-67\nENCHUFABLE OPS\n21-6\nLISTA DE AVISOS\n21-73\nCONFIGURACIÓN DE LA\nPANTALLA\n21-6\nVISUALIZACIÓN DE PARTES\nRELACIONADAS\n21-74\nFUNCIONAMIENTO BÁSICO ..\n.21-7\nMODO DE ACCIONAMIENTO\nANALIZADOR\n21-9\nDE LA CONFIRMACIÓN\nLOCALIZACIÓN Y REPARACIÓN\nDE ERRORES\n21-74\nDE AVERÍAS\n21-13\nLOCALIZACIÓN Y REPARACIÓN\nLOCALIZACIÓN Y\nDE AVERÍAS POR CÓDIGO\nDE ERROR\n21-75\nREPARACIÓN DE AVERÍAS\nLOCALIZACIÓN Y REPARACIÓN\nDE OPS\n21-15\nDE AVERÍAS CUANDO\nDIAGNOSIS\n21-15\nNO HAY CÓDIGO\nLISTA DE CÓDIGOS DE ERROR\nDE DIAGNOSIS\n21-16\nDE ERROR\n21-217\nLOCALIZACIÓN Y REPARACIÓN\nDE AVERÍAS POR CÓDIGO\nDE ERROR\n21-19\nLOCALIZACIÓN Y REPARACIÓN\nDE AVERÍAS POR\nFENÓMENO\n21-34\n\": Un vehículo equipado con OPT es un vehículo equipado con las siguientes opciones:\nMotor 4Y con control electrónico, minipalanca, palanca de mando sistema convertidor catalítico de tres\nvías, control de manipulación de carga y desplazamiento, visualizador multifuncional, y visualizador\nmultifuncional de lujo.\n2",
+      "tablas": [
+        [
+          [
+            "",
+            "Página",
+            "Página"
+          ],
+          [
+            "ANTES DE LA LOCALIZACIÓN",
+            "LOCALIZACIÓN Y REPARACIÓN"
+          ],
+          [
+            "Y REPARACIÓN DE",
+            "",
+            "DE AVERÍAS (VEHÍCULO"
+          ],
+          [
+            "AVERÍAS",
+            "21-2",
+            "EQUIPADO CON OPT) ...... 21-65"
+          ],
+          [
+            "MANIPULACIÓN DE",
+            "",
+            "ANTES DE COMENZAR LA"
+          ],
+          [
+            "CONECTORES",
+            "21-2",
+            "LOCALIZACIÓN Y REPARACIÓN"
+          ],
+          [
+            "PROCEDIMIENTO DE",
+            "",
+            "DE AVERÍAS PARA EL"
+          ],
+          [
+            "INSPECCIÓN DE MAZOS DE",
+            "MOTOR 4Y-E 21-65"
+          ],
+          [
+            "CABLES Y CONECTORES ..... 21-2",
+            "DIAGNOSIS (FUNCIÓN DE"
+          ],
+          [
+            "LOCALIZACIÓN Y REPARACIÓN",
+            "AUTODIAGNOSIS) 21-66"
+          ],
+          [
+            "DE AVERÍAS",
+            "",
+            "MÉTODO DE VISUALIZACIÓN"
+          ],
+          [
+            "(MODELO SIN SAS)",
+            "21-4",
+            "DE DIAGNOSIS\n21-66"
+          ],
+          [
+            "ANALIZADOR",
+            "",
+            "LISTA DE CÓDIGOS DE\nDIAGNOSIS 21-67"
+          ],
+          [
+            "ENCHUFABLE OPS",
+            "21-6",
+            "LISTA DE AVISOS 21-73"
+          ],
+          [
+            "CONFIGURACIÓN DE LA PANTALLA",
+            "21-6",
+            "VISUALIZACIÓN DE PARTES RELACIONADAS 21-74"
+          ],
+          [
+            "FUNCIONAMIENTO BÁSICO",
+            ".. .21-7",
+            "MODO DE ACCIONAMIENTO"
+          ],
+          [
+            "ANALIZADOR",
+            "21-9",
+            "DE LA CONFIRMACIÓN"
+          ],
+          [
+            "LOCALIZACIÓN Y REPARACIÓN",
+            "DE ERRORES 21-74"
+          ],
+          [
+            "DE AVERÍAS",
+            "21-13",
+            "LOCALIZACIÓN Y REPARACIÓN"
+          ],
+          [
+            "LOCALIZACIÓN Y",
+            "",
+            "DE AVERÍAS POR CÓDIGO"
+          ],
+          [
+            "REPARACIÓN DE AVERÍAS",
+            "DE ERROR 21-75"
+          ],
+          [
+            "DE OPS",
+            "21-15",
+            "LOCALIZACIÓN Y REPARACIÓN"
+          ],
+          [
+            "DIAGNOSIS",
+            "21-15",
+            "DE AVERÍAS CUANDO\nNO HAY CÓDIGO"
+          ],
+          [
+            "LISTA DE CÓDIGOS DE ERROR DE DIAGNOSIS 21-16",
+            "DE ERROR 21-217"
+          ],
+          [
+            ""
+          ],
+          [
+            "LOCALIZACIÓN Y REPARACIÓN DE AVERÍAS POR CÓDIGO DE ERROR 21-19",
+            ""
+          ],
+          [
+            "LOCALIZACIÓN Y REPARACIÓN DE AVERÍAS POR FENÓMENO 21-34",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 19,
+      "texto": "21-2\nANTES DE LA LOCALIZACIÓN Y\nREPARACIÓN DE AVERÍAS\nMANIPULACIÓN DE CONECTORES\n1. Desconecte el enchufe de la batería antes de conectar o\ndesconectar cada conector o terminal.\n2.\nCuando desconecte un conector, no debe tirar del mazo de\ncables, sino sujetar el conector en cuestión y tirar de él\ndespués de desbloquearlo.\nPara conectar, empuje el conector totalmente hasta que quede\nbloqueado en su posición.\n3. Ponga una sonda de probador en contacto con el terminal de\nun conector del lado trasero del conector (lado del mazo de\ncables).\n4. Si la inserción desde el lado trasero es imposible, como ocurre\ncon un conector impermeable, con cuidado ponga la sonda de\nprobador en contacto con el terminal de modo que no se\nproduzca deformación del terminal del conector.\n5. No toque los terminales de los conectores directamente con la\nmano.\n6. Al poner en contacto sondas de probador con terminales esa\ntensión se aplica para evitar que dos sondas de probador\nentren en contacto entre sí.\nPROCEDIMIENTO DE INSPECCIÓN DE\nMAZOS DE CABLES Y CONECTORES\nCuando surja algún problema, primero inspeccione los conectores\ny el mazo de cables del circuito relacionado según el siguiente\nprocedimiento:\nInspección de la continuidad\n1.\nDesconecte los conectores en ambos extremos del mazo de\ncables correspondiente.\n2.\nMida la resistencia entre los terminales correspondientes de\nlos conectores en ambos extremos.\nEstándar: 10 ( o menos\nNota:\n· Mida mientras sacude el mazo de cables hacia arriba y\nabajo, y a los lados.\n· Raramente se producen circuitos abiertos en el mazo de\ncables a través del cableado de un vehículo, pero sobre\ntodo en los conectores. Inspeccione especialmente los\nconectores de los sensores con detenimiento.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 20,
+      "texto": "21-3\nComprobación de cortocircuitos\n1.\nDesconecte los conectores en ambos extremos del mazo de\ncables correspondiente.\n2.\nMida la resistencia entre el terminal del conector\ncorrespondiente y el bastidor. Asegúrese de inspeccionar\nambos extremos de los conectores.\nEstandar: 1 ΜΩ o mas\n€\ne\nNota:\nMida mientras sacude el mazo de cables hacia arriba y abajo,\ny a los lados.\n3. Mida la resistencia entre los terminales del conector\ncorrespondiente. Asegúrese de inspeccionar ambos extremos\nde los conectores.\nEstandar: 1 ΜΩ o mas\nNota:\nX\nEl cableado puede cortocircuitarse porque la carrocería lo\npresione o la fijación sea defectuosa.\nComprobaciones de presión visuales y de contacto\n1. Desconecte los conectores en ambos extremos del mazo de\ncables correspondiente.\n2. Inspeccione visualmente si hay óxido o materia extraña\natrapada en los terminales del conector.\n3. Inspeccione que no haya aflojamiento ni daños en la parte\nondulada. Asimismo, tire suavemente del mazo de cables\ndesde el conector para comprobar que no se suelta.\n4. Inserte un terminal macho igual que el del terminal del\nconector en un conector hembra y compruebe la fuerza de\nextracción.\nPuede existir un contacto defectuoso en un terminal donde la\nfuerza de extracción sea inferior a la de otros terminales.\nNota:\nIncluso si hay óxido o materia extraña atrapada en el terminal,\no la presión por contacto entre los terminales macho y\nhembra es baja, la condición de contacto anormal puede\nconvertirse en normal desconectando y volviendo a conectar\nel conector. En este caso, desconecte y vuelva a conectar el\nconector varias veces, y si se produce un fallo aunque sea\nuna sola vez, entonces considere que el terminal puede tener\nun contacto defectuoso.\n2",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 21,
+      "texto": "21-4\nLOCALIZACIÓN Y REPARACIÓN DE AVERÍAS (MODELO SIN SAS)\nNOMBRE DE CADA PARTE\n...\n6\n(3) (4)\n(13)\n(2)\n(1) -\n(14)\n(7) (8) (9) (10)\n(11) (12) (16)\n0\n(5) (6)\n(15)\n(1)\nControlador OPS\n(9)\nInterruptor de inclinación hacia atrás\n(2)\nInterruptor del asiento\n(10)\nVálvula de descarga\n(3)\nInterruptor de marcha hacia delante\n(11)\nVálvula de bloqueo de elevación\n(4)\nInterruptor de marcha atrás\n(12)\nVálvula de control de inclinación\n(5)\nRelé de interrupción hacia delante\n(13)\nLámpara de OPS\n(6)\nRelé de interrupción de retroceso\n(14)\nZumbador OPS\n(7)\nInterruptor de descenso\n(15)\nAnalizador enchufable\n(8)\nInterruptor de inclinación hacia delante\n(16)\nVálvula de bloqueo de inclinación hacia atrás",
+      "tablas": [
+        [
+          [
+            "(1)",
+            "Controlador OPS",
+            "(9)",
+            "Interruptor de inclinación hacia atrás"
+          ],
+          [
+            "(2)",
+            "Interruptor del asiento",
+            "(10)",
+            "Válvula de descarga"
+          ],
+          [
+            "(3)",
+            "Interruptor de marcha hacia delante",
+            "(11)",
+            "Válvula de bloqueo de elevación"
+          ],
+          [
+            "(4)",
+            "Interruptor de marcha atrás",
+            "(12)",
+            "Válvula de control de inclinación"
+          ],
+          [
+            "(5)",
+            "Relé de interrupción hacia delante",
+            "(13)",
+            "Lámpara de OPS"
+          ],
+          [
+            "(6)",
+            "Relé de interrupción de retroceso",
+            "(14)",
+            "Zumbador OPS"
+          ],
+          [
+            "(7)",
+            "Interruptor de descenso",
+            "(15)",
+            "Analizador enchufable"
+          ],
+          [
+            "(8)",
+            "Interruptor de inclinación hacia delante",
+            "(16)",
+            "Válvula de bloqueo de inclinación hacia atrás"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 22,
+      "texto": "21-5\nFUNCIÓN DE CADA PARTE\nEntrada al controlador\nNombre\nFunción\n(2)\nInterruptor del asiento\nEstá montado debajo del asiento y detecta si el operador está sentado en\nel asiento.\n(3)\nInterruptor de marcha hacia delante\n(sólo vehículo con convertidor de par)\nAlimenta la tensión derivada desde la línea de alimentación de la válvula\nde tracción de avance del convertidor de par hasta el controlado OPS\npara detectar el funcionamiento del accionamiento de avance.\n(4)\nInterruptor de marcha atrás\n(sólo vehículo con convertidor de par)\nAlimenta la tensión derivada desde la línea de alimentación de la válvula\nde tracción de retroceso del convertidor de par hasta el controlado OPS\npara detectar el funcionamiento del accionamiento de retroceso.\n(7)\nInterruptor de descenso\nInstalado en el carrete de elevación de la válvula de control del aceite,\ndetecta la operación de descenso de la palanca de elevación.\n(8)\nInterruptor de inclinación hacia delante\nInstalado en el carrete de inclinación de la válvula de control del aceite,\ndetecta la operación de avance de la palanca de inclinación.\n(9)\nInterruptor de inclinación hacia atrás\nInstalado en el carrete de inclinación de la válvula de control del aceite,\ndetecta la operación de retroceso de la palanca de inclinación.\nSalida desde el controlador\nNombre\nFunción\n(5)\nRelé de interrupción hacia delante\nInterrumpe el suministro de tensión a la válvula de tracción de avance en\nel convertidor de par de acuerdo con la instrucción del controlador OPS.\n(6)\nRelé de interrupción de retroceso\nCorta el suministro de tensión a la válvula de tracción de retroceso en la\ntransmisión de acuerdo con la instrucción del controlador OPS.\n(10)\nVálvula de descarga\nProporciona una derivación al circuito del tanque para el aceite hidráulico\nsuministrado desde la bomba de aceite hasta la válvula de control del\naceite.\n(11)\nVálvula de bloqueo de elevación\nCorta el flujo de aceite desde el cilindro de elevación hasta el tanque de\naceite de acuerdo con la instrucción del controlador OPS para desactivar\nel descenso de la horquilla.\n(12)\nVálvula de control de inclinación\nCambia la ruta del aceite al cilindro de inclinación de acuerdo con la\ninstrucción del controlador OPS para desactivar la inclinación hacia\ndelante y para reducir la velocidad de inclinación hacia atrás.\n(13)\nLámpara de OPS\nSe ilumina cuando el interruptor del asiento está desactivado para indicar\nel funcionamiento de la OPS. Además, parpadea cuando el controlador\nOPS detecta una anormalidad.\n(14)\nZumbador OPS\n-\nSuena según el patrón predeterminado cuando se desactiva el interruptor\ndel asiento o cuando la palanca de cambios de avance/retroceso necesita\nvolver a punto muerto (alarma de regreso a punto a muerto).\n(15)\nAnalizador enchufable\nAñadido con las funciones del analizador OPS a las funciones de servicio\ndel analizador SAS convencional. Está conectado al mismo conector de\nservicio.\nFunciones del analizador OPS\n· Visualizador de diagnóstico (visualización más detallada que la\nfrecuencia de parpadeo de la lámpara OPS)\n· Visualizador de control de entrada/salida (acortando el tiempo\nnecesario para localización y reparación de averías)\n· Prueba de salida (acortando el tiempo de localización y reparación de\naverías poniendo cada salida en on y off de acuerdo con la instrucción\ndel controlador OPS)\n(16)\nVálvula de bloqueo de inclinación hacia\natrás\n(Vehículo con palanca estándar)\nCorta el flujo de aceite desde el lado inferior del cilindro de inclinación\nhasta el tanque de aceite de acuerdo con la instrucción del controlador\nOPS para desactivar la inclinación hacia atrás.\n21",
+      "tablas": [
+        [
+          [
+            "",
+            "Nombre",
+            "Función"
+          ],
+          [
+            "(2)",
+            "Interruptor del asiento",
+            "Está montado debajo del asiento y detecta si el operador está sentado en el asiento."
+          ],
+          [
+            "(3)",
+            "Interruptor de marcha hacia delante (sólo vehículo con convertidor de par)",
+            "Alimenta la tensión derivada desde la línea de alimentación de la válvula de tracción de avance del convertidor de par hasta el controlado OPS para detectar el funcionamiento del accionamiento de avance."
+          ],
+          [
+            "(4)",
+            "Interruptor de marcha atrás (sólo vehículo con convertidor de par)",
+            "Alimenta la tensión derivada desde la línea de alimentación de la válvula de tracción de retroceso del convertidor de par hasta el controlado OPS para detectar el funcionamiento del accionamiento de retroceso."
+          ],
+          [
+            "(7)",
+            "Interruptor de descenso",
+            "Instalado en el carrete de elevación de la válvula de control del aceite, detecta la operación de descenso de la palanca de elevación."
+          ],
+          [
+            "(8)",
+            "Interruptor de inclinación hacia delante",
+            "Instalado en el carrete de inclinación de la válvula de control del aceite, detecta la operación de avance de la palanca de inclinación."
+          ],
+          [
+            "(9)",
+            "Interruptor de inclinación hacia atrás",
+            "Instalado en el carrete de inclinación de la válvula de control del aceite, detecta la operación de retroceso de la palanca de inclinación."
+          ]
+        ],
+        [
+          [
+            "",
+            "Nombre",
+            "Función"
+          ],
+          [
+            "(5)",
+            "Relé de interrupción hacia delante",
+            "Interrumpe el suministro de tensión a la válvula de tracción de avance en el convertidor de par de acuerdo con la instrucción del controlador OPS."
+          ],
+          [
+            "(6)",
+            "Relé de interrupción de retroceso",
+            "Corta el suministro de tensión a la válvula de tracción de retroceso en la transmisión de acuerdo con la instrucción del controlador OPS."
+          ],
+          [
+            "(10)",
+            "Válvula de descarga",
+            "Proporciona una derivación al circuito del tanque para el aceite hidráulico suministrado desde la bomba de aceite hasta la válvula de control del aceite."
+          ],
+          [
+            "(11)",
+            "Válvula de bloqueo de elevación",
+            "Corta el flujo de aceite desde el cilindro de elevación hasta el tanque de aceite de acuerdo con la instrucción del controlador OPS para desactivar el descenso de la horquilla."
+          ],
+          [
+            "(12)",
+            "Válvula de control de inclinación",
+            "Cambia la ruta del aceite al cilindro de inclinación de acuerdo con la instrucción del controlador OPS para desactivar la inclinación hacia delante y para reducir la velocidad de inclinación hacia atrás."
+          ],
+          [
+            "(13)",
+            "Lámpara de OPS",
+            "Se ilumina cuando el interruptor del asiento está desactivado para indicar el funcionamiento de la OPS. Además, parpadea cuando el controlador OPS detecta una anormalidad."
+          ],
+          [
+            "(14)",
+            "Zumbador OPS -",
+            "Suena según el patrón predeterminado cuando se desactiva el interruptor del asiento o cuando la palanca de cambios de avance/retroceso necesita volver a punto muerto (alarma de regreso a punto a muerto)."
+          ],
+          [
+            "(15)",
+            "Analizador enchufable",
+            "Añadido con las funciones del analizador OPS a las funciones de servicio del analizador SAS convencional. Está conectado al mismo conector de servicio. Funciones del analizador OPS · Visualizador de diagnóstico (visualización más detallada que la frecuencia de parpadeo de la lámpara OPS) · Visualizador de control de entrada/salida (acortando el tiempo necesario para localización y reparación de averías) · Prueba de salida (acortando el tiempo de localización y reparación de averías poniendo cada salida en on y off de acuerdo con la instrucción del controlador OPS)"
+          ],
+          [
+            "(16)",
+            "Válvula de bloqueo de inclinación hacia atrás (Vehículo con palanca estándar)",
+            "Corta el flujo de aceite desde el lado inferior del cilindro de inclinación hasta el tanque de aceite de acuerdo con la instrucción del controlador OPS para desactivar la inclinación hacia atrás."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 23,
+      "texto": "21-6\nANALIZADOR ENCHUFABLE OPS\nPara el mantenimiento y revisión de las funciones OPS, se introduce un analizador enchufable por separado como\nuna SST (herramienta especial para revisión).\nEl analizador enchufable está diseñado para leer el estado de funcionamiento de sensores y actuadores utilizados\npara las funciones de OPS y la información de errores detectados por el controlador. Sirve para comprobar el estado\nde funcionamiento de las funciones de OPS y acorta el tiempo de reparación de un problema. Además, está\ninstalado con la función de guardar para archivar datos visualizados en la pantalla en la SST.\nSST 09240-23323-71\n1000,\nNombre del menú\nContenido de la función\nPágina de\nreferencia\nFunción de comunicación\ncon el controlador OPS en\nel lado del vehículo\nOPS\nDIAG MEMORY\nIndicación de diez códigos y subcódigos de error en el pasado.\n21-9\nIN/OUT MONITOR\nValores de la tensión de entrada del control de los sensores y la\nseñal de salida, etc. al solenoide, etc.\n21-10\nACTIVE TEST\nOperación forzada de solenoides y lámparas de aviso.\n21-11\nCONTROLLER DATA\nIndicación del número abreviado y la versión del controlador\nOPS\n21-12\nCONFIGURACIÓN DE LA PANTALLA\nMAIN MENU\n1. SAS\n2. OPS\nANALYZER MENU\n1. DIAG MEMORY\n2. IN/OUT MONITOR\n3. ACTIVE TEST\n4. CONTROLLER DATA\n7. END\nPágina\nDIAG MEMORY (1/1)\n21-9\nIN/OUT MONITOR (1/3)\n21-10\nIN/OUT MONITOR (2/3)\n21-10\nIN/OUT MONITOR (3/3)\n21-10\nACTIVE TEST (1/1)\n21-11\nCONTROLLER DATA (1/1)\n21-12\n7. TESTER SET",
+      "tablas": [
+        [
+          [
+            ":selected:",
+            "Nombre del menú",
+            "Contenido de la función",
+            "Página de referencia"
+          ],
+          [
+            "Función de comunicación con el controlador OPS en el lado del vehículo",
+            "OPS",
+            "DIAG MEMORY",
+            "Indicación de diez códigos y subcódigos de error en el pasado.",
+            "21-9"
+          ],
+          [
+            "IN/OUT MONITOR",
+            "Valores de la tensión de entrada del control de los sensores y la señal de salida, etc. al solenoide, etc.",
+            "21-10"
+          ],
+          [
+            "ACTIVE TEST",
+            "Operación forzada de solenoides y lámparas de aviso.",
+            "21-11"
+          ],
+          [
+            "CONTROLLER DATA",
+            "Indicación del número abreviado y la versión del controlador OPS",
+            "21-12"
+          ]
+        ],
+        [
+          [
+            "DIAG MEMORY (1/1)",
+            "21-9"
+          ],
+          [
+            "IN/OUT MONITOR (1/3)\n:unselected:",
+            "21-10"
+          ],
+          [
+            "IN/OUT MONITOR (2/3)",
+            "21-10"
+          ],
+          [
+            "IN/OUT MONITOR (3/3)",
+            "21-10"
+          ],
+          [
+            "ACTIVE TEST (1/1)",
+            "21-11"
+          ],
+          [
+            "CONTROLLER DATA (1/1)\n:unselected:",
+            "21-12"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 24,
+      "texto": "FUNCIONAMIENTO BÁSICO\n21-7\nNombre de las secciones y las funciones del interruptor\nNombre de la sección\nPosición de\nindicación\nMarca\nFunción\nInterruptor\nUnidad principal\n1000,\nA\n· Mueva el cursor al elemento de\narriba.\n· Pase a la página precedente.\nConmuta-\ndor selec-\ntor 1\n· Mueva el cursor a la derecha o a la\nizquierda.\nConector\nTitulo de la pantalla A\nInterruptor\n<En\nblanco>\n<Sin función>\nB\n· Seleccione el elemento de abajo.\n· Pase a la página siguiente.\nConmuta-\ndor selec-\ntor 3\nMAIN MENU\n1 SAS\n2OPS\n<En\nblanco>\n<Sin función>\n7TESTER SET\n3MENU\nB\nC\nIndicador de marcas\ndel interruptor\nC\n· Determine un elemento para su\nselección.\nInterrup-\ntor de\nmenú\n<En\nblanco>\n· Pase a la pantalla MENU.\nPrecaución en el uso:\n· Mantenga la unidad principal, mazo de cables, conector, etc., lejos del escape y otras secciones\ncalentadas.\n· Acciona el interruptor con la yema del dedo.\n· Evite que el analizador sufra golpes fuertes debido a caídas o colisiones.\n· No deje el analizador expuesto a rayos solares directos durante mucho tiempo.\nSST\nConector de\ndiagnosis\nPLUG IN\nANALYZER\nSYSTEM PROG\nVER 4.00\nConexión y funcionamiento de la SST\n1.\nPonga el interruptor de la llave de encendido en OFF.\n2. Abra la cubierta del conector de diagnosis del vehículo y\nconecte correctamente el conector en el lado de la SST.\nSST 09240-23323-71\nNota:\nDado que el conector no tiene dispositivo de cierre, conéctelo\nbien para evitar defectos por contacto al cerrar el capó del\nmotor con el conector en estado conectado.\n3. Ponga el interruptor de la llave de encendido en ON o\narranque el motor.\n4.\nVisualización de la pantalla de inicialización\nDespués de unos 15 segundos de visualización, aparece la\npantalla \"LANGUAGE SET\" o \"MAIN MENU\". La pantalla\npuede modificarse durante este periodo presionando el\ninterruptor MENU 3.",
+      "tablas": [
+        [
+          [
+            "Nombre de la sección",
+            "Posición de indicación",
+            "Marca",
+            "Función",
+            "Interruptor"
+          ],
+          [
+            "Unidad principal 1000,",
+            "A",
+            "",
+            "· Mueva el cursor al elemento de arriba. · Pase a la página precedente.",
+            "Conmuta- dor selec- tor 1"
+          ],
+          [
+            "",
+            "· Mueva el cursor a la derecha o a la izquierda."
+          ],
+          [
+            "Conector Titulo de la pantalla A Interruptor",
+            "<En blanco>",
+            "<Sin función>"
+          ],
+          [
+            "B",
+            "",
+            "· Seleccione el elemento de abajo. · Pase a la página siguiente.",
+            "Conmuta- dor selec- tor 3"
+          ],
+          [
+            "MAIN MENU 1 SAS :unselected: 2OPS",
+            "<En blanco>",
+            "<Sin función>"
+          ],
+          [
+            ":unselected:\n7TESTER SET 3MENU B C Indicador de marcas del interruptor\n:selected:",
+            "C",
+            "",
+            "· Determine un elemento para su selección.",
+            "Interrup- tor de menú"
+          ],
+          [
+            "<En blanco>",
+            "· Pase a la pantalla MENU."
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 25,
+      "texto": "21-8\nLANGUAGE SET\n1 ニホンゴ\n2 ENGLISH\nMAIN MENU\n1 SAS\n2OPS\n7TESTER SET\n2)\n3ME\nD\n2\n3ME\n5. Pantalla \"LANGUAGE SET\"\nDado que esta pantalla aparece sólo cuando el idioma está sin\ndefinir, determine el idioma que desee para la visualización.\n(1) Seleccione un idioma de visualización presionando el\nconmutador selector Do 3.\n· Japonés\nInglés\n(2) Presione el interruptor MENU 3 para determinar el ajuste\nde idioma.\nNota:\nUna vez definido el idioma de visualización, la pantalla\n\"LANGUAGE SET\" no se visualizará a partir de la próxima vez.\nPara cambiar el idioma, vaya a \"TESTER SET\" o \"MAIN\nMENU\".\n6. Pantalla \"MAIN MENU\"\n(1) Seleccione el menú utilizando el conmutador selector 0 y\n2 y determine presionando el interruptor MENU 3.\n· SAS: Pasa a la pantalla SAS MENU.\n· OPS: Pasa a la pantalla OPS ANALYZER MENU.\n· TESTER SET: Pasa a la pantalla TESTER SET.\nExtracción de la SST\n1. Compruebe que el título de la pantalla es para una de las\npantallas MENU.\n2.\nPonga el interruptor de la llave de encendido en OFF.\n3. Desconecte el conector.\nNota:\nPara desconectar, sujete el cuerpo del conector.\n4. Cierre la cubierta del conector de diagnosis.",
+      "tablas": [
+        [
+          [
+            "LANGUAGE SET 1 ニホンゴ 2 ENGLISH",
+            ""
+          ],
+          [
+            ""
+          ],
+          [
+            "",
+            ""
+          ]
+        ],
+        [
+          [
+            "MAIN MENU",
+            ""
+          ],
+          [
+            "1 SAS",
+            ""
+          ],
+          [
+            "2OPS",
+            ""
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "7TESTER SET",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 26,
+      "texto": "ANALIZADOR\n1\n21-9\nANALYZER MENU\nMuestra contenidos y función\nPágina\n1. DIAG MEMORY\nIndicación de códigos de error para los 10 errores más\nrecientes\n21-9\n2. IN OUT MONITOR\nIndicación de condiciones de funcionamiento del sistema\neléctrico del vehículo\n21-10\n3. ACTIVE TEST\nCapacidad de la señal de operación forzada para el elemento\nseleccionado\n21-11\n4. CONTROLLER DATA\nIndicación del número de parte y la versión del controlador\nOPS\n21-12\nMAIN MENU\n1 SAS\n20PS\n7TESTER SET\nANALYZER MENU\n1 DIAG MEMORY\n2 IN/OUT MONITOR\n3 ACTIVE TEST\n¿ CONTROLLER DATA\nZEND\nDIAG MEMORY (1/1)\n1 1-1\n2 3-2\n6\n-\n7\n-\n3 1-1\n8\n-\n4 3-2\n9\n-\n5\n-\n10 -\n(1)\n(2)\nCLR\n2\n3ME\n3ME\n1\n2\n3ME\nProcedimiento de la operación\n1. Seleccione e introduzca \"2OPS\" en la pantalla del menú\nprincipal para visualizar la pantalla OPS ANALYZER MENU.\n2. Pantalla \"ANALYZER MENU\"\n(1) Mueva el cursor al menú deseado accionando el\nconmutador selector 1 o 2, e introduzca accionando el\ninterruptor MENU 3.\n(2) Seleccione e introduzca \"END\" para volver a la pantalla\nMAIN MENU.\n\"1 DIAG MEMORY\"\nEsta pantalla muestra diez códigos de error desde el más reciente.\n[Explicación de los contenidos del visualizador]\n(1) Orden de incidencia de los errores\n(2) Códigos de error\n[Borrar memoria]\nPresione el conmutador selector 1 de forma continua durante\n2 segundos.\n[Fin]\nPresione el interruptor MENU @ para volver a la pantalla\nANALYZER MENU.\nNota:\n· Sólo aparece \"-\" al final del elemento, que implica que no\nse ha producido error.\n· Si no se ha completado la recepción, sólo el número\naparece sin indicación \"-\".",
+      "tablas": [
+        [
+          [
+            "ANALYZER MENU",
+            "Muestra contenidos y función",
+            "Página"
+          ],
+          [
+            "1. DIAG MEMORY",
+            "Indicación de códigos de error para los 10 errores más recientes",
+            "21-9"
+          ],
+          [
+            "2. IN OUT MONITOR",
+            "Indicación de condiciones de funcionamiento del sistema eléctrico del vehículo",
+            "21-10"
+          ],
+          [
+            "3. ACTIVE TEST",
+            "Capacidad de la señal de operación forzada para el elemento seleccionado",
+            "21-11"
+          ],
+          [
+            "4. CONTROLLER DATA",
+            "Indicación del número de parte y la versión del controlador OPS",
+            "21-12"
+          ]
+        ],
+        [
+          [
+            "MAIN MENU 1 SAS",
+            ""
+          ],
+          [
+            "20PS"
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "7TESTER SET",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 27,
+      "texto": "21-10\nIN/OUT MONITOR (1/3)\n(1)\n(2)\nSEAT\nON\nDIR FWD\nOFF\nREV\n(3)\nRLY FWD\nOFF\nOFF\nREV\n(4)\nVOLTAGE\n14.2V\n3ME\nOFF\nIN/OUT MONITOR (2/3)\nF\n(1)\n(5)\nLIFT LOWER\nOFF\nUNLOAD SOL\nOFF\nSEAT\nON\n(6)\n(7)\nLWR SOL\nOFF\n(8)|\nTILT SOL\nOFF\n(4)|\nVOLTAGE\n14.2V\nIN/OUT MONITOR (3/3)\n(1)\n(9)\nTILT FWD\nOFF\nSEAT\nON\nBWD\nOFF\n*\nCONT\nON\n(8)\nTILT SOL\nOFF\n(10)\nLSOPT\nOFF\n(4)\nVOLTAGE\n14.2V\n1\n2\n2\n3ME\nF\n2\n3ME\n*: \"CONT-\" aparece en el modelo de\nespecificación sin SAS.\n\"2 IN/OUT MONITOR\"\n[Explicación de los contenidos del visualizador]\n(1) SEAT: Señal de entrada del interruptor del asiento\n(2) DIR: Señal de entrada del conmutador inversor de\nmarcha (sólo vehículo con T/C)\nFWD: Señal de entrada del conmutador inversor de\nmarcha hacia delante\nREV: Señal de entrada del conmutador inversor de\nmarcha atrás\n(3) RLY: Señal de salida al relé de interrupción de avance/\nretroceso y solenoide de bloqueo de inclinación hacia\natrás (sólo vehículo con T/C)\nFWD: Señal de salida al relé de interrupción de avance/\nretroceso\nREV: Señal de salida al solenoide de bloqueo de\ninclinación hacia atrás\n(4) VOLTAGE: Tensión de alimentación del controlador OPS\n(5) LIFT LOWER: Señal de entrada del interruptor de\ndescenso de elevación\n(6) UNLOAD SOL: Señal de salida al solenoide de descarga\n(7) LWR SOL: Señal de salida al solenoide de bloqueo de\ndescenso\n(8) TILS SOL: Señal de salida al solenoide de inclinación\n(9) TILT: Señal de entrada del interruptor de la palanca de\ninclinación\nFWD: Señal de entrada del interruptor de inclinación\nhacia delante\nBWD: Señal de entrada del interruptor de inclinación\nhacia atrás\nCONT: Señal de entrada del comando de control de\ninclinación del SAS\n(10) LSOPT: Reservado.\n[Fin]\nPresione el interruptor MENU 3 para volver a la pantalla\nANALYZER MENU.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 28,
+      "texto": "(1)\nACTIVE TEST (1/1)\nRLY: FWD\nOFF / ON\n(2) RLY REV\nOFF / ON\n(3)\nUNLOAD SOLOFF / ON\n(4)\nLWR SOL\nOFF / ON\n(5) TILT SOL\nIOFF / ON\n(6)\nLAMP\nIOFF / ON\n(7) BUZZER\nOFF / ON\n2\n3ME\n21-11\n\"3 ACTIVE TEST\"\nNota:\nLa indicación ON en la pantalla muestra el estado de la\ncapacidad del controlador. El funcionamiento, por lo tanto,\ndebería comprobarse visualmente, escuchando el sonido de\nfuncionamiento, etc.\n1. Seleccione el elemento con el conmutador selector 2, y ajuste\n·OFF/ON con el conmutador selector 11.\n[Explicación de los contenidos del visualizador]\n(1) RLY FWD*\nEstablezca ON para salida forzada de la señal de\nactivación del relé de interrupción de avance/retroceso.\n(Estado desactivado de desplazamiento de avance/\nretroceso)\n(2) RLY REV*\nEstablezca ON para salida forzada de la señal de\nactivación del solenoide de bloqueo de inclinación hacia\natrás. (Estado desactivado de inclinación hacia atrás)\n(3) UNLOAD SOL\nEstablezca ON para salida forzada de la señal de\nactivación\ndel solenoide\nde descarga.\n(Estado\ndesactivado de manipulación de materiales)\n(4) LWR SOL\nEstablezca ON para salida forzada de la señal de\nactivación del solenoide de bloqueo de descenso.\n(Estado activado del descenso)\n(5) TILT SOL\nEstablezca ON para salida forzada de la señal de\nactivación del solenoide de inclinación. (Estado activado\nde la inclinación hacia delante con restricción de\nvelocidad de inclinación hacia atrás)\n(6) LAMP\nEstablezca ON para salida forzada de la señal de\niluminación de la lámpara OPS. (Estado iluminado de la\nlámpara OPS)\n(7) BUZZER\nEstablezca ON para salida forzada de la señal de sonido\ndel zumbador OPS. (Sonido continuo del zumbador OPS)\n* El vehículo con transmisión manual no incluye la función de\ninterrupción de la fuerza motriz.\n2. Después de reajustar todos los elementos a OFF, presione el\ninterruptor MENU 3 para volver al menú ANALYZER MENU.\n.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 29,
+      "texto": "21-12\nCONTROLLER (1/1)\nDATA\n(1)\nDATA\n(2)\nVER\n1.00\nXTS\n1\n2\n3ME\n\"4 CONTROLLER DATA\"\nEn esta pantalla pueden visualizarse el N.º de abreviatura y el N.º\nde versión de controlador OPS.\n[Explicación de los contenidos del visualizador]\n(1) DATA\nN.º de abreviatura del controlador\n(2) VER\nN.º de versión\n[Fin]\nPresione el interruptor MENU 3 para volver a la pantalla\nANALYZER MENU.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 30,
+      "texto": "LOCALIZACIÓN Y REPARACIÓN DE AVERÍAS\n· No se visualiza nada en la pantalla.\nParte relacionada\nECU-IG\n1C-14\nA IG SW\nREC\nTAB\n1C-6\n21-13\nA25-12\n(EN, fuente de alimentación)\n1\nA22-1\nControlador OPS\nTAB\nREC\nA25-1\n1E-14\nA25-3\nTAB\nREC\n1C-22\nREC\nTAB\n(E2, GND principal)\nCausas estimadas:\nREC\nTAB\n6\nREC\nTAB\nAnalizador\n13\nAnalizador CN\n1 Contacto del conector defectuoso\n2 Mazo de cables del analizador defectuoso (fuente de alimentación)\n3 Analizador enchufable defectuoso\nCompruebe el conector del analizador y A25 por si hay alguna\ndesconexión.\nMAL\nBIEN\nk\nInspección 1:\nMida la tensión entre A25-12 y A25-3.\nMAL\nMazo de cables defectuoso en el lado\ndel vehículo\nBIEN\nInspección 2:\nMida la tensión entre analizador CN-1 y analizador CN-13.\nMAL\nBIEN\n5\nAnalizador enchufable defectuoso\nInspección 1:\nMida la tensión entre A25-12 y A25-3.\nInterruptor de la llave de encendido en ON (motor parado)\nEstándar:\nA25-12 (+) - A25-3 (-)\nComprobación de la pantalla después\nde la corrección.\nMAL\nMazo de cables del analizador\ndefectuoso\n6 5 4 3 2 1\n11| 10\n987\n17| 16 15 14 13 12\nA25 (REC)\n8 - 16 V.\nInspección 2:\nMida la tensión entre analizador CN-1 y analizador CN-13.\nInterruptor de la llave de encendido en ON (motor parado)\nEstándar:\nAnalizador CN-1(+) - analizador CN-13 (-)\n1 | 2 | 3 | 4 |5 | 6 | 7 | 8 |9 |10\n11 12 13 14 15 16 17 18 19 20\nAnalizador CN (REC)\n8 - 16 V",
+      "tablas": [
+        [
+          [
+            "1 | 2 |",
+            "3",
+            "| 4",
+            "|5 |",
+            "6",
+            "| 7 |",
+            "8",
+            "|9",
+            "",
+            "|10"
+          ],
+          [
+            "11 12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "",
+            "20"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 31,
+      "texto": "21-14\nNo se visualizan datos en la pantalla de visualización de datos (DIAG MEMORY, valor de tensión, etc.)\nParte relacionada\nECU-IG\n1C-14\nA IG SW\nREC\nTAB\n1C-6\nA25-12\n(EN, fuente de alimentación)\n1\nA22-1\nControlador OPS\nTAB\nREC\nA25-1\nREC\nTAB\n1E-14\nREC\nTAB\nA25-3\nTAB\nREC\n1C-22\n6\nREC\nTAB\n13\nAnalizador\nAnalizador CN\n(E2, GND principal)\nCausas estimadas:\n1 Contacto del conector defectuoso\n2 Mazo de cables del analizador defectuoso (comunicación)\n3 Analizador enchufable defectuoso\n4 Controlador OPS defectuoso\nCompruebe el conector del analizador y A25 por si hay alguna\ndesconexión.\nMAL\nComprobación del visualizador de\ndatos después de la corrección.\nBIEN\n€\nInspección 1:\nCompruebe la continuidad entre A25-1 y A22-1.\nMAL\nMAL\nMazo de cables defectuoso en el lado\ndel vehículo\nBIEN\nInspección 2:\nCompruebe la continuidad entre el analizador CN-6 y A25-1.\nMAL\nMazo de cables del analizador\ndefectuoso\nBIEN\nCompruebe el visualizador de datos conectando el analizador a otro\nvehículo.\nBIEN\nMAL\nAnalizador enchufable defectuoso\nControlador OPS defectuoso\nInspección 1:\nCompruebe la continuidad entre A25-1 y A22-1.\nInterruptor de la llave de encendido OFF, desconexión entre A25 y A22.\nA22 (REC)\nEstándar:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32\nA25-1 - A22-1\nHay continuidad\nInspección 2:\nCompruebe la continuidad entre el analizador CN-6 y A25-1.\nInterruptor de la llave de encendido OFF, desconexión entre el\nanalizador CN y A25.\nEstándar:\nAnalizador CN-6 - A25-1\nHay continuidad\n1 2 3 4 5 6 7 8 9 10\n11 12 13 14 15 16 17 18 19 20\nAnalizador CN (REC)\n615\n4| 3 |2 | 1\n11|10\n987\n17 16 15 14 13 12\nA25 (REC)\n12 3 4\n516\n78|9\n10/ 11\n12/ 13 14\n15 16 |17\nA25 (TAB)",
+      "tablas": [
+        [
+          [
+            "1",
+            "2",
+            "3",
+            "4",
+            "",
+            "5",
+            "6 7",
+            "8",
+            "9",
+            "10"
+          ],
+          [
+            "11",
+            "12",
+            "13",
+            "14",
+            "",
+            "15",
+            "16 17",
+            "18",
+            "19",
+            "20"
+          ]
+        ],
+        [
+          [
+            "",
+            "",
+            "12",
+            "3",
+            "4",
+            "516",
+            ""
+          ],
+          [
+            "",
+            "",
+            "78|9",
+            "",
+            "",
+            "10/",
+            "11"
+          ],
+          [
+            "",
+            "12/",
+            "13",
+            "14",
+            "15",
+            "16",
+            "|17"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 32,
+      "texto": "21-15\nLOCALIZACIÓN Y REPARACIÓN DE AVERÍAS DE OPS\nDIAGNOSIS\nLa función de diagnosis informa al operador de la incidencia de una avería y la ubicación de dicha avería haciendo\nparpadear a la lámpara OPS en el medidor combinado cuando el controlador OPS detecta una anormalidad. La\nubicación de la avería viene indicada por el número de parpadeos de la lámpara OPS.\nNota:\n· La lámpara OPS se enciende durante 1 segundo cuando se pone en ON el interruptor de la llave de\nencendido para comprobar si la lámpara está rota.\n· La lámpara OPS se enciende cuando el operador se levanta del asiento.\n· Si se producen múltiples errores a la vez, sólo aparece el código de error más bajo. Cuando se corrija\nese error, aparecerá el siguiente código de error más bajo.\nEjemplo:\nEjemplo de visualización del código de error 3\nIndicación del punto\nde interrupción\nIndicación del código\nON\nOFF\n2 seg.\nDetección de una anormalidad\n(Código 3)\n*\n* *\n*\n*\n> >\n0,5 seg.\n0,5 seg.\n0,5 seg.\n0,5 seg.\n0,5 seg.\n0,5 seg.\n0,5 seg.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 33,
+      "texto": "21-16\nLISTA DE CÓDIGOS DE ERROR DE DIAGNOSIS\nLámpara\nCódigo\nde error\nEspec. del\nvehículo\nDescripción\ndel error\nPrincipal causa\nFenómeno en el vehículo\nVehículo con T/C\nVehículo con M/T\nON\n-\n-\nComprobación\nde lámpara\naveriada\n-\n-\nParpadeo\n(una señal de\nON corta)\n1-1\nSin SAS\nAnormalidad del\ninterruptor del\nasiento\nAvería de\nbloqueo GND\nLa OPS no funciona.\nParpadeo\n(dos ciclos de\nON cortos)\n2-1\nSin SAS\nAnormalidad del\ninterruptor de\ndescenso de\nelevación\nAvería de\nbloqueo GND\nNingún cambio especial del estado normal\n(pérdida excesiva durante el descenso)\n2-2\nSin SAS*\nAnormalidad del\ninterruptor de\ninclinación\n2-3\n2-4\nParpadeo\n(tres ciclos de\nON cortos)\n3-1\nSin SAS\nT/C\nAnormalidad del\nrelé de\ninterrupción de\navance/\nretroceso (RYF)\nDiscontinuidad\nEl desplazamiento\nhacia delante/hacia\natrás es posible\ncuando se acciona la\nOPS\nAvería GND\n1\nCortocircuito +B\nEl desplazamiento\nhacia delante/hacia\natrás siempre está\ndesactivado.\nParpadeo\n(cuatro ciclos\nde ON cortos)\n4-1\nSin SAS\nAnormalidad del\nsolenoide de\ndescarga\n(USOL)\nDiscontinuidad\nCuando se acciona la OPS, el descenso de\nla horquilla y la inclinación hacia atrás se\ndesactivan, pero son posibles todas las\ndemás operaciones de manipulación de\nmateriales.\nAvería GND\n1\nCortocircuito +B\nCuando se acciona la OPS, se desactivan\ntodas las operaciones de manipulación de\nmateriales. Cuando no se accionar la OPS,\nsólo es posible el descenso de la horquilla y\nse desactivan todas las demás operaciones\nde manipulación de materiales.\n4-2\nAnormalidad del\nsolenoide de\nbloqueo de\ndescenso\n(LSOL)\nDiscontinuidad\nCuando se acciona la OPS, se desactivan\ntodas las operaciones de manipulación de\nmateriales. Cuando no se accionar la OPS,\nse desactiva el descenso de la horquilla,\npero son posibles todas las demás\noperaciones de manipulación de materiales.\nAvería GND\n1\nCortocircuito +B\nCuando no se accionar la OPS, es posible el\ndescenso de la horquilla, pero se desactivan\ntodas las demás operaciones de\nmanipulación de materiales.\n4-3\nAnormalidad del\nsolenoide de\ninclinación\n(TSOL)\nDiscontinuidad\nCuando se acciona la OPS, se desactivan\ntodas las operaciones de manipulación de\nmateriales. Cuando no se accionar la OPS,\nsólo se desactiva la inclinación hacia\ndelante, pero son posibles todas las demás\noperaciones de manipulación de materiales.\nAveria GND\nT\nCortocircuito +B",
+      "tablas": [
+        [
+          [
+            "Lámpara",
+            "Código de error",
+            "Espec. del vehículo",
+            "Descripción del error",
+            "Principal causa",
+            "Fenómeno en el vehículo"
+          ],
+          [
+            "Vehículo con T/C",
+            "Vehículo con M/T"
+          ],
+          [
+            "ON",
+            "-",
+            "-",
+            "Comprobación de lámpara averiada",
+            "-",
+            "-"
+          ],
+          [
+            "Parpadeo (una señal de ON corta)",
+            "1-1",
+            "Sin SAS",
+            "Anormalidad del interruptor del asiento",
+            "Avería de bloqueo GND",
+            "La OPS no funciona."
+          ],
+          [
+            "Parpadeo (dos ciclos de ON cortos)",
+            "2-1",
+            "Sin SAS",
+            "Anormalidad del interruptor de descenso de elevación",
+            "Avería de bloqueo GND",
+            "Ningún cambio especial del estado normal (pérdida excesiva durante el descenso)"
+          ],
+          [
+            "2-2",
+            "Sin SAS*",
+            "Anormalidad del interruptor de inclinación"
+          ],
+          [
+            "2-3"
+          ],
+          [
+            "2-4"
+          ],
+          [
+            "Parpadeo (tres ciclos de ON cortos)",
+            "3-1",
+            "Sin SAS T/C",
+            "Anormalidad del relé de interrupción de avance/ retroceso (RYF)",
+            "Discontinuidad",
+            "El desplazamiento hacia delante/hacia atrás es posible cuando se acciona la OPS",
+            ""
+          ],
+          [
+            "Avería GND",
+            "1"
+          ],
+          [
+            "Cortocircuito +B",
+            "El desplazamiento hacia delante/hacia atrás siempre está desactivado."
+          ],
+          [
+            "Parpadeo (cuatro ciclos de ON cortos)",
+            "4-1",
+            "Sin SAS",
+            "Anormalidad del solenoide de descarga (USOL)",
+            "Discontinuidad",
+            "Cuando se acciona la OPS, el descenso de la horquilla y la inclinación hacia atrás se desactivan, pero son posibles todas las demás operaciones de manipulación de materiales."
+          ],
+          [
+            "Avería GND",
+            "1"
+          ],
+          [
+            "Cortocircuito +B",
+            "Cuando se acciona la OPS, se desactivan todas las operaciones de manipulación de materiales. Cuando no se accionar la OPS, sólo es posible el descenso de la horquilla y se desactivan todas las demás operaciones de manipulación de materiales."
+          ],
+          [
+            "4-2",
+            "Anormalidad del solenoide de bloqueo de descenso (LSOL)",
+            "Discontinuidad",
+            "Cuando se acciona la OPS, se desactivan todas las operaciones de manipulación de materiales. Cuando no se accionar la OPS, se desactiva el descenso de la horquilla, pero son posibles todas las demás operaciones de manipulación de materiales."
+          ],
+          [
+            "Avería GND",
+            "1"
+          ],
+          [
+            "Cortocircuito +B",
+            "Cuando no se accionar la OPS, es posible el descenso de la horquilla, pero se desactivan todas las demás operaciones de manipulación de materiales."
+          ],
+          [
+            "4-3",
+            "Anormalidad del solenoide de inclinación (TSOL)",
+            "Discontinuidad",
+            "Cuando se acciona la OPS, se desactivan todas las operaciones de manipulación de materiales. Cuando no se accionar la OPS, sólo se desactiva la inclinación hacia delante, pero son posibles todas las demás operaciones de manipulación de materiales."
+          ],
+          [
+            "Averia GND",
+            "T"
+          ],
+          [
+            "Cortocircuito +B",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 34,
+      "texto": "21-17\nLámpara\nCódigo\nde error\nEspec. del\nvehículo\nDescripción\ndel error\nPrincipal causa\nFenómeno en el vehículo\nVehículo con T/C\nVehículo con M/T\nParpadeo\n(cuatro ciclos\nde ON cortos)\n4-4\nSin SAS\nAnormalidad del\nsolenoide de\nbloqueo de\ninclinación hacia\natrás (BSOL)\nDiscontinuidad\nCuando se acciona la OPS, se desactivan\ntodas las operaciones de manipulación de\nmateriales. Cuando no se accionar la OPS,\nse desactiva la inclinación hacia atrás, pero\nson posibles todas las demás operaciones\nde manipulación de materiales.\nAvería GND\n1\nCortocircuito +B\nPuede inclinarse hacia atrás incluso cuando\nel sistema OPS está funcionando.\nParpadeo\n(cinco ciclos de\nON cortos)\n5-1\nSin SAS T/C\nAnormalidad de\nla palanca de\ncambios\nCortocircuito +B\nCuando se acciona la\nOPS, no puede\nreajustarse (estado\nbloqueado por el\nretorno a la función\nneutral).\nON\n7-1\nSin SAS\nAnormalidad de\nla CPU\nAnormalidad del\ncontrolador\nLa OPS de tracción no funciona. El\ndescenso de la horquilla siempre está\ndesactivado. La OPS de manipulación de\nmateriales no funciona.\n7-2\n7-3\nParpadeo\n(siete ciclos de\nON cortos)\n7-4\nNinguno en particular.\nON\n7-5\nAnormalidad de\nEEPROM\nLa OPS de tracción no funciona. El\ndescenso de la horquilla siempre está\ndesactivado. La OPS de manipulación de\nmateriales no funciona.\n7-6\n-\nSin SAS\nAlarma de baja\ntensión\nTensión de\nbatería baja\nSe produce la alarma antes del\nfuncionamiento de la OPS, pero la OPS de\ntracción/manipulación de materiales no\nfunciona.\n-\nFuncionamiento\nde la OPS\nPartida del\nasiento\n*: Modelo de espec. sin SAS sólo debido a la detección del controlado SAS aquí en los modelos de espec. SAS.",
+      "tablas": [
+        [
+          [
+            "Lámpara",
+            "Código de error",
+            "Espec. del vehículo",
+            "Descripción del error",
+            "Principal causa",
+            "Fenómeno en el vehículo"
+          ],
+          [
+            "Vehículo con T/C",
+            "Vehículo con M/T"
+          ],
+          [
+            "Parpadeo (cuatro ciclos de ON cortos)",
+            "4-4",
+            "Sin SAS",
+            "Anormalidad del solenoide de bloqueo de inclinación hacia atrás (BSOL)",
+            "Discontinuidad",
+            "Cuando se acciona la OPS, se desactivan todas las operaciones de manipulación de materiales. Cuando no se accionar la OPS, se desactiva la inclinación hacia atrás, pero son posibles todas las demás operaciones de manipulación de materiales."
+          ],
+          [
+            "Avería GND",
+            "1"
+          ],
+          [
+            "Cortocircuito +B",
+            "Puede inclinarse hacia atrás incluso cuando el sistema OPS está funcionando."
+          ],
+          [
+            "Parpadeo (cinco ciclos de ON cortos)",
+            "5-1",
+            "Sin SAS T/C",
+            "Anormalidad de la palanca de cambios",
+            "Cortocircuito +B",
+            "Cuando se acciona la OPS, no puede reajustarse (estado bloqueado por el retorno a la función neutral).",
+            ""
+          ],
+          [
+            "ON",
+            "7-1",
+            "Sin SAS",
+            "Anormalidad de la CPU",
+            "Anormalidad del controlador",
+            "La OPS de tracción no funciona. El descenso de la horquilla siempre está desactivado. La OPS de manipulación de materiales no funciona."
+          ],
+          [
+            "7-2"
+          ],
+          [
+            "7-3"
+          ],
+          [
+            "Parpadeo (siete ciclos de ON cortos)",
+            "7-4",
+            "Ninguno en particular."
+          ],
+          [
+            "ON",
+            "7-5",
+            "Anormalidad de EEPROM",
+            "La OPS de tracción no funciona. El descenso de la horquilla siempre está desactivado. La OPS de manipulación de materiales no funciona."
+          ],
+          [
+            "7-6"
+          ],
+          [
+            "-",
+            "Sin SAS",
+            "Alarma de baja tensión",
+            "Tensión de batería baja",
+            "Se produce la alarma antes del funcionamiento de la OPS, pero la OPS de tracción/manipulación de materiales no funciona."
+          ],
+          [
+            "-",
+            "Funcionamiento de la OPS",
+            "Partida del asiento",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 35,
+      "texto": "21-18\nLista de páginas de referencia para códigos de error y subcódigos de error\nSin analizador (SST)\nCon analizador (SST)\nCódigo\nde\nerror\nDescripción del error\nPágina\nCódigo\nde\nerror\nDescripción del error\nPágina\n1\nAnormalidad del interruptor del asiento\n21-19\n1-1\nAnormalidad del interruptor del asiento\n21-19\n2\nAnormalidad del interruptor de descenso\nAnormalidad del interruptor de inclinación\n(espec. sin SAS)\n21-22\n2-1\nAnormalidad del interruptor de descenso\n21-24\n2-2\nAnormalidad del interruptor de la palanca de\ninclinación en ON de forma simultánea\n21-25\n2-3\nAnormalidad de cortocircuito de 2 minutos del\ninterruptor de inclinación hacia delante\n21-25\n2-4\nAnormalidad de cortocircuito de 2 minutos del\ninterruptor de inclinación hacia atrás\n21-25\n3\nAnormalidad del relé de interrupción de\navance/retroceso (RYF)\n21-27\n3-1\nAnormalidad del relé de interrupción de\navance/retroceso (RYF)\n21-27\n4\nAnormalidad del solenoide (SOL)\n21-29\n4-1\nAnormalidad del solenoide de descarga\n(USOL)\n21-29\n4-2\nAnormalidad del solenoide de bloqueo de\ndescenso (LSOL)\n4-3\nAnormalidad del solenoide de inclinación\n(TSOL)\n4-4\nAnormalidad del solenoide de bloqueo de\ninclinación hacia atrás (BSOL)\n5\nAnormalidad de la palanca de cambios T/C\n21-31\n5-1\nAnormalidad de la palanca de cambios T/C\n21-32\n7\nAnormalidad del controlador OPS\n7-1\nAnormalidad de la CPU\n7-2\n7-3\n7-4\n7-5\nAnormalidad de EEPROM\n7-6\nLista de páginas a consultar por fenómeno\nDescripción\nPáginas a consultar\nSin\nanalizador\nCon\nanalizador\nEl zumbador OPS no suena, o sigue sonando.\n21-34\n21-34\nLa lámpara OPS no se enciende.\n21-38\n21-38\nLa lámpara OPS sigue iluminada. (Incluso cuando la manipulación de materiales y desplazamiento\nestán desactivadas)\n21-40\n21-43\nNo se puede bajar la horquilla.\n21-45\n21-48\nLa OPS de manipulación de materiales no funciona. (Incluso cuando la OPS para el descenso está\nfuncionando)\n21-50\n21-50\nFalla la manipulación de materiales. (Incluso cuando no falla el descenso de la horquilla)\n21-51\n21-51\nLa velocidad de inclinación hacia atrás del mástil es lenta.\n21-52\n21-52\nEl mástil no se inclina hacia delante.\n21-53\n21-53\nLa OPS de tracción no funciona. (Excluido el vehículo con M/T)\n21-55\n21-55\nFalla el desplazamiento. (Incluido el desplazamiento hacia delante solo, el desplazamiento hacia\natrás solo, y anormalidades esporádicas) (Excluyendo al vehiculo con M/T)\n21-58\n21-58\nEl mástil no se inclina hacia atrás.\n21-61\n21-63",
+      "tablas": [
+        [
+          [
+            "Sin analizador (SST)",
+            "Con analizador (SST)"
+          ],
+          [
+            "Código de error",
+            "Descripción del error",
+            "Página",
+            "Código de error",
+            "Descripción del error",
+            "Página"
+          ],
+          [
+            "1",
+            "Anormalidad del interruptor del asiento",
+            "21-19",
+            "1-1",
+            "Anormalidad del interruptor del asiento",
+            "21-19"
+          ],
+          [
+            "2",
+            "Anormalidad del interruptor de descenso Anormalidad del interruptor de inclinación (espec. sin SAS)",
+            "21-22",
+            "2-1",
+            "Anormalidad del interruptor de descenso",
+            "21-24"
+          ],
+          [
+            "2-2",
+            "Anormalidad del interruptor de la palanca de inclinación en ON de forma simultánea",
+            "21-25"
+          ],
+          [
+            "2-3",
+            "Anormalidad de cortocircuito de 2 minutos del interruptor de inclinación hacia delante",
+            "21-25"
+          ],
+          [
+            "2-4",
+            "Anormalidad de cortocircuito de 2 minutos del interruptor de inclinación hacia atrás",
+            "21-25"
+          ],
+          [
+            "3",
+            "Anormalidad del relé de interrupción de avance/retroceso (RYF)",
+            "21-27",
+            "3-1",
+            "Anormalidad del relé de interrupción de avance/retroceso (RYF)",
+            "21-27"
+          ],
+          [
+            "4",
+            "Anormalidad del solenoide (SOL)",
+            "21-29",
+            "4-1",
+            "Anormalidad del solenoide de descarga (USOL)",
+            "21-29"
+          ],
+          [
+            "4-2",
+            "Anormalidad del solenoide de bloqueo de descenso (LSOL)"
+          ],
+          [
+            "4-3",
+            "Anormalidad del solenoide de inclinación (TSOL)"
+          ],
+          [
+            "4-4",
+            "Anormalidad del solenoide de bloqueo de inclinación hacia atrás (BSOL)"
+          ],
+          [
+            "5",
+            "Anormalidad de la palanca de cambios T/C",
+            "21-31",
+            "5-1",
+            "Anormalidad de la palanca de cambios T/C",
+            "21-32"
+          ],
+          [
+            "7",
+            "Anormalidad del controlador OPS",
+            "",
+            "7-1",
+            "Anormalidad de la CPU",
+            ""
+          ],
+          [
+            "7-2"
+          ],
+          [
+            "7-3"
+          ],
+          [
+            "7-4"
+          ],
+          [
+            "7-5",
+            "Anormalidad de EEPROM"
+          ],
+          [
+            "7-6"
+          ]
+        ],
+        [
+          [
+            "Descripción",
+            "Páginas a consultar"
+          ],
+          [
+            "Sin analizador",
+            "Con analizador"
+          ],
+          [
+            "El zumbador OPS no suena, o sigue sonando.",
+            "21-34",
+            "21-34"
+          ],
+          [
+            "La lámpara OPS no se enciende.",
+            "21-38",
+            "21-38"
+          ],
+          [
+            "La lámpara OPS sigue iluminada. (Incluso cuando la manipulación de materiales y desplazamiento están desactivadas)",
+            "21-40",
+            "21-43"
+          ],
+          [
+            "No se puede bajar la horquilla.",
+            "21-45",
+            "21-48"
+          ],
+          [
+            "La OPS de manipulación de materiales no funciona. (Incluso cuando la OPS para el descenso está funcionando)",
+            "21-50",
+            "21-50"
+          ],
+          [
+            "Falla la manipulación de materiales. (Incluso cuando no falla el descenso de la horquilla)",
+            "21-51",
+            "21-51"
+          ],
+          [
+            "La velocidad de inclinación hacia atrás del mástil es lenta.",
+            "21-52",
+            "21-52"
+          ],
+          [
+            "El mástil no se inclina hacia delante.",
+            "21-53",
+            "21-53"
+          ],
+          [
+            "La OPS de tracción no funciona. (Excluido el vehículo con M/T)",
+            "21-55",
+            "21-55"
+          ],
+          [
+            "Falla el desplazamiento. (Incluido el desplazamiento hacia delante solo, el desplazamiento hacia atrás solo, y anormalidades esporádicas) (Excluyendo al vehiculo con M/T)",
+            "21-58",
+            "21-58"
+          ],
+          [
+            "El mástil no se inclina hacia atrás.",
+            "21-61",
+            "21-63"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 36,
+      "texto": "21-19\nLOCALIZACIÓN Y REPARACIÓN DE AVERÍAS POR CÓDIGO DE ERROR\n· Código de error 1 · 1-1 (Anormalidad del interruptor del asiento)\nParte relacionada\nA22-23 (DMI, SW del asiento)\nAO1-1\nREC\nTAB\nControlador OPS\nTAB\nREC\nA22-17 (E03, GND del\ninterruptor)\nXO4-1\nX1-2\nREC\n0\nTAB\nREC\n1B-24\nREC\nTAB\nCausas estimadas:\n1 Contacto del conector defectuoso\n2 Interruptor del asiento defectuoso\nMazo de cables defectuoso\n4 Defecto del controlador\nCódigo de error 1\nCompruebe si hay alguna desconexión o humedecimiento interno en\nlos conectores A22, 1B, 1E, XO4, AO1 y X1.\nBIEN\nMAL\nTAB\n1E-30\nREC\nXO4-2\nTAB\nX1-1\nInterruptor del\nasiento\nDespués de la corrección, compruebe\nla indicación de la lámpara OPS .*\nMAL\nInspección 1:\nCompruebe individualmente el interruptor del asiento para ver si hay\ncontinuidad.\nMAL\nInterruptor del asiento defectuoso\nBIEN\n-\nInspección 2:\nCompruebe la continuidad entre A22-23 y A22-17\nMAL\nMazo de cables defectuoso\nBIEN\nDefecto del controlador\n*: Después de la corrección, compruebe la indicación de la lámpara OPS.\nDespués de conectar todos los conectores, ponga el interruptor de la llave de encendido una vez en OFF,\ndespués en ON (durante 2 segundos o más), y de nuevo en OFF.\nDespués de esperar sin sentarse unos 15 minutos, ponga el interruptor de la llave de encendido en ON. La OPS\nno deben mostrar el código de error 1 parpadeando.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 37,
+      "texto": "21-20\nInspección 1:\nCompruebe si hay continuidad en el interruptor del asiente individual.\nInterruptor de la llave de encendido en OFF, X1 desconectado.\nEstándar:\nX1 (TAB)\nSentado\nNo sentado\nX1-1 - X1-2\nHay continuidad\nNo hay continuidad\nInspección 2:\nCompruebe la continuidad entre A22-23 y A22-17\nInterruptor de la llave de encendido en OFF, A22 desconectado. (AO1, 1B, 1E,\nXO4 y X1 deben mantenerse conectados.)\nEstándar:\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n17 18 19:20 21 |22 23/24|25 26 27 28 29 30 31|32\nA22 (REC)\nSentado\nNo sentado\nA22-23 - A22-17\nHay continuidad\nNo hay continuidad\nCódigo de error 1-1\nCompruebe si hay alguna desconexión o humedecimiento interno en\nlos conectores A22, AO1, 1B, 1E, XO4 y X1.\nMAL\nDespués de la corrección, compruebe\nla indicación de la lámpara OPS .*\nBIEN\nK\nInspección 1:\nCon X1 desconectado, compruebe la señal de entrada al controlador.\nBIEN\n>\nInterruptor del asiento defectuoso\nMAL\nMAL\nV\nInspección 2:\nCompruebe la continuidad entre A22-23 y A22-17.\nMAL\nMazo de cables defectuoso\nBIEN\nDefecto del controlador\n*: Después de la corrección, compruebe la indicación de la lámpara OPS.\nDespués de conectar todos los conectores, ponga el interruptor de la llave de encendido una vez en OFF,\ndespués en ON (durante 2 segundos o más), y de nuevo en OFF.\nDespués de esperar sin sentarse unos 15 minutos, ponga el interruptor de la llave de encendido en ON. La OPS\nno deben mostrar el código de error 1 parpadeando.",
+      "tablas": [
+        [
+          [
+            "",
+            "Sentado",
+            "No sentado"
+          ],
+          [
+            "X1-1 - X1-2\n:selected:",
+            "Hay continuidad",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "",
+            "Sentado",
+            "No sentado"
+          ],
+          [
+            "A22-23 - A22-17",
+            "Hay continuidad",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 38,
+      "texto": "Inspección 1:\nCon X04 desconectado, compruebe la señal de entrada al\ncontrolador.\nConector X04 desconectado, interruptor de la llave de encendido\nen OFF = ON\nAnalizador: MAIN MENU -> OPS -> ANALYZER MENU ->\nIN/OUT MONITOR\nEstándar:\nIN/OUT MONITOR (1/3)\nSEAT\nON\nDIR FWD\nOFF\nREV\nOFF\nRLY FWD\nREV\nOFF\nOFF\nVOLTAGE\n14.2V\nSentado\nNo sentado\nASIENTO\nOFF\nOFF\nInspección 2:\nCompruebe la continuidad entre A22-23 y A22-17\n21-21\n2\n3ME\n12 34 5 6 7 8:50 :1:12: 13:14:15 16\n17:18 19:20|21|22|23|24:25.26:27.25:29:30/31/32\nInterruptor de la llave de encendido en OFF, A22 desconectado. (AO1, 1B, 1E, XO4\ny X1 deben mantenerse conectados.)\nA22 (REC)\nEstándar:\nSentado\nNo sentado\nA22-23 - A22-17\nHay continuidad\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "IN/OUT MONITOR (1/3)",
+            ""
+          ],
+          [
+            "SEAT",
+            "ON :unselected:"
+          ],
+          [
+            "DIR FWD",
+            "OFF :unselected:"
+          ],
+          [
+            "REV",
+            "OFF :unselected:",
+            ""
+          ],
+          [
+            "RLY FWD",
+            "OFF",
+            ":selected:"
+          ],
+          [
+            "REV",
+            "OFF :unselected:",
+            ""
+          ],
+          [
+            "VOLTAGE",
+            "14.2V"
+          ]
+        ],
+        [
+          [
+            "",
+            "Sentado",
+            "No sentado"
+          ],
+          [
+            "ASIENTO",
+            "OFF",
+            "OFF"
+          ]
+        ],
+        [
+          [
+            "",
+            "Sentado",
+            "No sentado"
+          ],
+          [
+            "A22-23 - A22-17",
+            "Hay continuidad",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    },
+    {
+      "numero_pagina": 39,
+      "texto": "21-22\n· Código de error 2\n· Código de error 2-1 (Anormalidad del interruptor de descenso)\n· Código de error 2-2 (Anormalidad del interruptor de la palanca de inclinación el ON de forma simultánea)\n· Código de error 2-3 (Anormalidad de cortocircuito de 2 minutos del interruptor de inclinación hacia\ndelante)\n· Código de error 2-4 (Anormalidad de cortocircuito de 2 minutos del interruptor de inclinación hacia atrás)\nParte relacionada\nA22-25 (TFI, interruptor de inclinación hacia delante)\nA22-24 (TRI, interruptor de inclinación hacia atrás)\nControlador OPS\nTAB\nREC\nA22-26 (DOWN, interruptor de descenso)\n1C-19\n1C-20\nTAB\n1B-24\nREC\n1C-23\nA22-17 (E03, SW-GND)\nREC\nTAB\nCausas estimadas:\n1 Contacto del conector defectuoso\n2 Interruptor de descenso defectuoso\n3 Mazo de cables defectuoso\n4 Defecto del controlador\n...\nA13-1\nA13-2\nInterruptor de incli-\nnación hacia delante\nTAB\nREC\nA13-3\nA13-4\nA14-1\nInterruptor de incli-\nnación hacia atrás\nREC\nTAB\nInterruptor de\ndescenso\nA14-2\n5 Interruptor de inclinación hacia delante defectuoso\n6 Interruptor de inclinación hacia atrás defectuoso\n7 Instalación del interruptor de inclinación defectuosa\n8 Instalación del interruptor de descenso defectuosa\nCódigo de error 2\nCompruebe si hay alguna desconexión o humedecimiento interno en\nlos conectores A22, A13, A14, 1B, y 1C.\nBIEN\nK\nMAL\nDespués de la corrección, compruebe\nla indicación de la lámpara OPS .*\nMAL\nInspección 1:\nBIEN\nCompruebe si hay continuidad en el cableado del interruptor de\ndescenso de elevación y en el cableado del interruptor de la palanca\nde inclinación.\nDefecto del controlador\nMAL\nInspección 2:\nCompruebe si hay continuidad en el interruptor de descenso de\nelevación y en el interruptor de la palanca de inclinación individualmente\n(como están instalados en el vehículo).\nBIEN\nMazo de cables defectuoso\nMAL\nInspección 3:\nCompruebe si hay continuidad en el interruptor de la palanca de descenso\nde elevación y en el interruptor de la palanca de inclinación individualmente\n(como están extraídos del vehículo).\nMAL\nInterruptor defectuoso\nBIEN\nInstalación del interruptor de la palanca defectuosa\n*: Después de la corrección, compruebe la indicación de la lámpara OPS.\nDespués de poner en ON el interruptor de la llave de encendido, accione la palanca de inclinación hacia delante y\nhacia atrás si parpadea la lámpara OPS.\nO bien mantenga la palanca de inclinación en posición neutral durante 2 minutos y compruebe si parpadea la\nlámpara OPS.\nO bien mantenga la palanca de elevación en posición neutral durante 2 minutos y compruebe si parpadea la\nlámpara OPS.\nLa lámpara OPS no debe indicar el código de error 2 parpadeando.",
+      "tablas": []
+    },
+    {
+      "numero_pagina": 40,
+      "texto": "21-23\nInspección 1:\nCompruebe si hay continuidad en el cableado de la palanca descenso de elevación y\nen el cableado de la palanca de inclinación.\nInterruptor de la llave de encendido en OFF, A22 desconectado.\n1: 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16\n17118/19|20|21 22 23|24|25125127128 29|30|31|32\nA22 (REC)\nEstándar:\n· Interruptor de descenso de elevación\nPalanca en posición\nneutra\nPalanca en posición\nsubida\nPalanca en posición\nbajada\nA22-26 - A22-17\nNo hay continuidad\nNo hay continuidad\nHay continuidad\n· Interruptor de inclinación\nPalanca en posición\nneutra\nPalanca en posición de\ninclinación hacia delante\nPalanca en posición de\ninclinación hacia atrás\nA22-25 - A22-17\nNo hay continuidad\nHay continuidad\nNo hay continuidad\nA22-24 - A22-17\nNo hay continuidad\nNo hay continuidad\nHay continuidad\nInspección 2:\nCompruebe si hay continuidad en el interruptor de la palanca de descenso de\nelevación y en el interruptor de la palanca de inclinación (como están instalados en el\nvehículo).\nInterruptor de la llave de encendido en OFF, A14 y A13 desconectados.\n12\n34\nA13 (REC)\n2 X1)\n4 Y 3\nA14 (TAB)\nEstándar:\n· Interruptor de descenso de elevación\n]\nPalanca en posición\nneutra\nPalanca en posición\nsubida\nPalanca en posición\nbajada\nA14-1 - A14-2\nNo hay continuidad\nNo hay continuidad\nHay continuidad\n· Interruptor de inclinación\nPalanca en posición\nneutra\nPalanca en posición de\ninclinación hacia delante\nPalanca en posición de\ninclinación hacia atrás\nA13-1 - A13-2\nNo hay continuidad\nHay continuidad\nNo hay continuidad\nA13-3 - A13-4\nNo hay continuidad\nNo hay continuidad\nHay continuidad\n.\nInspección 3:\nCompruebe si hay continuidad en el interruptor de la palanca de descenso de\nelevación y en el interruptor de la palanca de inclinación (como están extraídos del\nvehículo).\nInterruptor de la llave de encendido en OFF, A14 y A13 desconectados.\n12\n4\nA13 (REC)\n2 × 1\n43\nA14 (TAB)\nEstándar:\n· Interruptor de descenso de elevación (interruptor en el lado superior cuando está instalado en el vehículo)\nInterruptor libre\nInterruptor presionado\nA14-1 - A14-2\nHay continuidad\nNo hay continuidad\n· Interruptor de inclinación hacia delante (interruptor en el lado superior cuando está instalado en el vehículo)\nInterruptor libre\nInterruptor presionado\nA13-1 - A13-2\nHay continuidad\nNo hay continuidad\n· Interruptor de inclinación hacia atrás (interruptor en el lado inferior cuando está instalado en el vehículo)\nInterruptor libre\nInterruptor presionado\nA13-3 - A13-4\nHay continuidad\nNo hay continuidad",
+      "tablas": [
+        [
+          [
+            "",
+            "Palanca en posición neutra",
+            "Palanca en posición subida",
+            "Palanca en posición bajada"
+          ],
+          [
+            "A22-26 - A22-17",
+            "No hay continuidad",
+            "No hay continuidad",
+            "Hay continuidad"
+          ]
+        ],
+        [
+          [
+            "",
+            "Palanca en posición neutra",
+            "Palanca en posición de inclinación hacia delante",
+            "Palanca en posición de inclinación hacia atrás"
+          ],
+          [
+            "A22-25 - A22-17",
+            "No hay continuidad",
+            "Hay continuidad",
+            "No hay continuidad"
+          ],
+          [
+            "A22-24 - A22-17",
+            "No hay continuidad",
+            "No hay continuidad",
+            "Hay continuidad"
+          ]
+        ],
+        [
+          [
+            "",
+            "Palanca en posición neutra",
+            "Palanca en posición subida",
+            "Palanca en posición bajada"
+          ],
+          [
+            "A14-1 - A14-2",
+            "No hay continuidad",
+            "No hay continuidad",
+            "Hay continuidad"
+          ]
+        ],
+        [
+          [
+            "",
+            "Palanca en posición neutra",
+            "Palanca en posición de inclinación hacia delante",
+            "Palanca en posición de inclinación hacia atrás"
+          ],
+          [
+            "A13-1 - A13-2",
+            "No hay continuidad",
+            "Hay continuidad",
+            "No hay continuidad"
+          ],
+          [
+            "A13-3 - A13-4",
+            "No hay continuidad",
+            "No hay continuidad",
+            "Hay continuidad"
+          ]
+        ],
+        [
+          [
+            "",
+            "Interruptor libre",
+            "Interruptor presionado"
+          ],
+          [
+            "A14-1 - A14-2",
+            "Hay continuidad",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "",
+            "Interruptor libre",
+            "Interruptor presionado"
+          ],
+          [
+            "A13-1 - A13-2",
+            "Hay continuidad",
+            "No hay continuidad"
+          ]
+        ],
+        [
+          [
+            "",
+            "Interruptor libre",
+            "Interruptor presionado"
+          ],
+          [
+            "A13-3 - A13-4",
+            "Hay continuidad",
+            "No hay continuidad"
+          ]
+        ]
+      ]
+    }
+  ]
+}
