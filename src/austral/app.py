@@ -15,6 +15,12 @@ app.add_middleware(
 # IMPORTANTE: agregar prefix="/api"
 app.include_router(asistente.router, prefix="/api")
 
+
+@app.get("/api/health")
+def health_check():
+    return {"status": "ok"}
+
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run("austral.app:app", host="127.0.0.1", port=8000, reload=True)
