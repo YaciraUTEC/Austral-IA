@@ -1,6 +1,6 @@
 // Configuración de la API
 const API_CONFIG = {
-  baseUrl: 'https://asistentepiloto-g7adazdncyfzahh4.brazilsouth-01.azurewebsites.net/api/asistente',
+  baseUrl: 'https://asistentepiloto-g7adazdncyfzahh4.brazilsouth-01.azurewebsites.net',
   endpoints: {
     asistente: '/api/asistente',
     reiniciar: '/api/asistente/reiniciar',
