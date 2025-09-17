@@ -33,7 +33,7 @@
       const password = document.getElementById('login-password').value;
 
       try {
-        const resp = await fetch('http://localhost:8000/api/login', {
+        const resp = await fetch('https://asistentepiloto-g7adazdncyfzahh4.brazilsouth-01.azurewebsites.net/api/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email, password })
