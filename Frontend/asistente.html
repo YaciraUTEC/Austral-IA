@@ -9,6 +9,12 @@
 </head>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <body>
+  <script>
+  // Redirige al login si no hay usuario autenticado
+  if (!localStorage.getItem('usuario_email')) {
+    window.location.href = 'login.html';
+  }
+  </script>
   <div class="container">
     <aside class="sidebar">
       <div class="menu-icon" style="cursor: pointer">☰</div> 
@@ -51,11 +57,12 @@
     <main class="main">
       <header class="header">
         <div class="user">Bienvenido a Austral IA 👤</div>
+        <button id="logout-btn" style="margin-left:20px;">Cerrar sesión</button>
       </header>
 
       <!-- Pantalla de bienvenida -->
       <section id="welcome" class="welcome">
-        <h1><span class="gradient-text">Hola Yacira Nicol</span></h1>
+        <h1><span class="gradient-text" id="nombre-usuario">Hola Usuario</span></h1>
         <p class="subtitle">Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</p>
         <p class="description">Consulta rápida acerca de mantenimiento y proyectos de energía.</p>
       </section>
@@ -103,5 +110,38 @@
 </div>
     </main>
   </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', async function() {
+    const email = localStorage.getItem('usuario_email');
+    console.log('Email en localStorage:', email); // Depuración
+
+    if (email) {
+      const normalizedEmail = email.trim().toLowerCase();
+      try {
+        const url = 'http://localhost:8000/api/usuario?email=' + encodeURIComponent(normalizedEmail);
+        console.log('Consultando backend:', url); // Depuración
+        const resp = await fetch(url);
+        if (resp.ok) {
+          const data = await resp.json();
+          console.log('Respuesta del backend:', data); // Depuración
+          document.getElementById('nombre-usuario').textContent = 'Hola ' + (data.nombre || normalizedEmail);
+        } else {
+          console.error('Error en la respuesta del backend:', resp.status);
+          document.getElementById('nombre-usuario').textContent = 'Hola ' + normalizedEmail;
+        }
+      } catch (e) {
+        console.error('Error en fetch:', e);
+        document.getElementById('nombre-usuario').textContent = 'Hola ' + normalizedEmail;
+      }
+    } else {
+      console.warn('No se encontró el correo en localStorage');
+    }
+
+    document.getElementById('logout-btn').addEventListener('click', function() {
+      localStorage.clear();
+      window.location.href = 'login.html';
+    });
+  });
+</script>
 </body>
 </html>

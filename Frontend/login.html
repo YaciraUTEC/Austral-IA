@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Austral IA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="assets/logo.png" alt="Austral Logo" class="login-logo">
+      <h1>Bienvenido a Austral IA</h1>
+      <p>Asistente de Mantenimiento y Proyectos</p>
+      <form id="login-form">
+        <div class="input-group">
+          <span class="input-icon">👤</span>
+          <input type="text" id="login-email" placeholder="USUARIO" required>
+        </div>
+        <div class="input-group">
+          <span class="input-icon">🔒</span>
+          <input type="password" id="login-password" placeholder="CONTRASEÑA" required>
+        </div>
+        <button type="submit" class="login-button">Ingresar</button>
+      </form>
+      <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+    </div>
+  </div>
+  <script>
+    document.getElementById('login-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const email = document.getElementById('login-email').value.trim().toLowerCase();
+      const password = document.getElementById('login-password').value;
+
+      try {
+        const resp = await fetch('http://localhost:8000/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+
+        if (resp.ok) {
+          const data = await resp.json();
+          localStorage.setItem('usuario_email', email);
+          localStorage.setItem('usuario_nombre', data.nombre);
+          window.location.href = 'asistente.html';
+        } else {
+          alert('Usuario o contraseña incorrectos');
+        }
+      } catch (err) {
+        alert('Error de conexión con el servidor');
+      }
+    });
+  </script>
+</body>
+</html>

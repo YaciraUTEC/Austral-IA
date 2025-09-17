@@ -109,7 +109,7 @@ body {
 .menu li {
   padding: 10px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px; /* Reducir tamaño de las palabras */
   border-radius: 8px;
   transition: background-color 0.2s;
 }
@@ -283,7 +283,7 @@ body {
   margin: 0 auto;
 }
 .welcome h1 {
-  font-size: 2.5em;
+  font-size: 2em; /* Reducir tamaño del título */
   margin-bottom: 20px;
   background: linear-gradient(45deg, #063970, #800080);
   -webkit-background-clip: text;
@@ -294,7 +294,7 @@ body {
 }
 
 .welcome2 h1 {
-  font-size: 2.5em;
+  font-size: 2em; /* Reducir tamaño del título */
   margin-bottom: 15px;
   background: linear-gradient(45deg, #063970, #800080);
   -webkit-background-clip: text;
@@ -308,7 +308,7 @@ body {
 
 
 .welcome .subtitle {
-  font-size: 1.2em;
+  font-size: 1em; /* Reducir tamaño de subtítulos y descripciones */
   color: var(--text-color);
   margin-bottom: 10px;
   max-width: 600px;
@@ -677,7 +677,7 @@ body {
 }
 
 .menu-text {
-  font-size: 14px; /* Más pequeño */
+  font-size: 12px; /* Reducir tamaño de las palabras */
   color: #e0e0e0;
   margin-left: 0;
   flex: 1;
@@ -695,7 +695,7 @@ body {
   display: flex;
   align-items: center;
   padding: 6px 0 6px 35px; /* Espacio interno solo para el punto */
-  font-size: 0.6rem; /* Disminuir el tamaño de la letra */
+  font-size: 0.5rem; /* Reducir aún más el tamaño de las palabras */
   cursor: pointer;
   color: #b0b0b0;
   background: none !important;
@@ -976,17 +976,18 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('assets/background.jpg') no-repeat center center;
-  background-size: cover;
+  background-color: #71b0ec; /* Fondo azul claro */
 }
 
 .login-box {
-  background-color: rgb(255, 255, 255);
-  padding: 40px;
+  background-color: #ffffff;
+  padding: 19px; /* Reducir el padding para disminuir la altura */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 300px;
+  width: 310px; /* Reducir el ancho del formulario */
+
+  border: 1px solid #ccc; /* Borde gris */
 }
 
 .login-logo {
@@ -995,29 +996,32 @@ body {
 }
 
 .login-box h1 {
-  font-size: 1.5em;
+  font-size: 0.85em; /* Reducir tamaño de "Bienvenidos" */
   color: var(--primary-color);
-  margin-bottom: 10px;
+  margin-bottom: 3px;
+  margin-top: -20px; /* Mover hacia arriba */
 }
 
 .login-box p {
-  font-size: 0.9em;
+  font-size: 0.7em; /* Reducir tamaño del texto */
   color: #666;
   margin-bottom: 20px;
+  margin-top: -3px; /* Mover hacia arriba */
 }
 
 .input-group {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc; /* Borde gris */
   border-radius: 4px;
-  margin-bottom: 15px;
+  margin-bottom: -18px; /* Reducir espacio entre Usuario y Contraseña */
   padding: 10px;
+  margin-top: 30px; /* Añadir espacio superior para mover más abajo */
 }
 
 .input-icon {
   margin-right: 10px;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #666;
 }
 
@@ -1025,7 +1029,7 @@ body {
   border: none;
   outline: none;
   flex: 1;
-  font-size: 14px;
+  font-size: 10px; /* Reducir tamaño de "Usuario" y "Contraseña" */
 }
 
 .login-button {
@@ -1036,6 +1040,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
+  margin-top: 40px; /* Aumentar el espacio superior para posicionarlo más abajo */
+  width: 100%; /* Ajustar el ancho al 100% del contenedor */
+  box-sizing: border-box; /* Asegurar que el padding no afecte el ancho */
 }
 
 .login-button:hover {

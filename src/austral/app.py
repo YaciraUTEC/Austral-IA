@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from austral.routers import asistente
+from austral.usuarios import router as usuarios_router  # <-- Cambia esto
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -14,6 +15,7 @@ app.add_middleware(
 
 # IMPORTANTE: agregar prefix="/api"
 app.include_router(asistente.router, prefix="/api")
+app.include_router(usuarios_router, prefix="/api")  # <-- Cambia esto
 
 
 @app.get("/api/health")
