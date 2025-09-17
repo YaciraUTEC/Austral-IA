@@ -118,7 +118,7 @@
     if (email) {
       const normalizedEmail = email.trim().toLowerCase();
       try {
-        const url = 'http://localhost:8000/api/usuario?email=' + encodeURIComponent(normalizedEmail);
+        const url = 'https://asistentepiloto-g7adazdncyfzahh4.brazilsouth-01.azurewebsites.net/api/usuario?email=' + encodeURIComponent(normalizedEmail);
         console.log('Consultando backend:', url); // Depuración
         const resp = await fetch(url);
         if (resp.ok) {
