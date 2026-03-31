@@ -29,12 +29,12 @@ with open(FRAGMENTOS_EXCEL_PATH, "r", encoding="utf-8") as f:
 # Configurar búsqueda para índice IVF si aplica
 if isinstance(index_pdf, faiss.IndexIVFFlat):
     if not index_pdf.is_trained:
-        raise RuntimeError("❌ El índice IVF de PDF no ha sido entrenado.")
+        raise RuntimeError("El índice IVF de PDF no ha sido entrenado.")
     index_pdf.nprobe = 30
 
 if isinstance(index_excel, faiss.IndexIVFFlat):
     if not index_excel.is_trained:
-        raise RuntimeError("❌ El índice IVF de Excel no ha sido entrenado.")
+        raise RuntimeError("El índice IVF de Excel no ha sido entrenado.")
     index_excel.nprobe = 30
 
 def detectar_hoja_en_pregunta(pregunta: str, hojas_disponibles: list) -> str | None:
