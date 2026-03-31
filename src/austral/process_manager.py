@@ -58,10 +58,10 @@ def run():
         ids_actuales.add(item_id)
 
         if item_id in registro_procesados and registro_procesados[item_id]["lastModified"] == ultima_fecha:
-            print(f"⏩ Saltando {nombre} (sin cambios)")
+            print(f"Saltando {nombre} (sin cambios)")
             continue
 
-        print(f"📂 Procesando {nombre}")
+        print(f"Procesando {nombre}")
         try:
             fragmentos = fragmentar_documento_memoria(nombre, contenido, output_dir=FRAGMENTS_FOLDER)
 
@@ -88,9 +88,9 @@ def run():
             }
 
         except Exception as e:
-            print(f"❌ Error al procesar {nombre}: {e}")
+            print(f"Error al procesar {nombre}: {e}")
 
-    # 🔁 Eliminar archivos locales de documentos eliminados de SharePoint
+    # Eliminar archivos locales de documentos eliminados de SharePoint
     ids_guardados = set(registro_procesados.keys())
     ids_eliminados = ids_guardados - ids_actuales
     for id_eliminado in ids_eliminados:
@@ -104,7 +104,7 @@ def run():
     guardar_json(metadatos_actualizados, METADATA_PATH)
 
     fin = time.perf_counter()
-    print(f"✅ Tiempo total: {fin - inicio:.2f} segundos")
+    print(f"Tiempo total: {fin - inicio:.2f} segundos")
 
 if __name__ == "__main__":
     run()
